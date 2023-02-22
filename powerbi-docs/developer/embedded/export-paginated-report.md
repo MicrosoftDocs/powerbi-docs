@@ -90,7 +90,7 @@ Here are two examples. The first is for exporting the first four pages of a repo
 
 ### Report parameters
 
-You can use the `exportToFile` API to programmatically export a report with a set of report parameters. This is done using [report parameter](../../paginated-reports/paginated-reports-parameters.md) capabilities.
+You can use the `exportToFile` API to programmatically export a report with a set of report parameters. This is done using [report parameter](../../paginated-reports/parameters/paginated-reports-create-parameters.md) capabilities.
 
 Here's an example for setting report parameter values.
 

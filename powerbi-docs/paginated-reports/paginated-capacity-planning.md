@@ -12,7 +12,7 @@ LocalizationGroup: Premium
 ---
 # Paginated reports capacity planning
 
-Learn how to plan your [Premium capacity](./../enterprise/service-premium-gen2-what-is.md) to get the best performance out of your [paginated reports](paginated-reports-report-builder-power-bi.md), at a minimum cost. If you're migrating to Power BI from a different business intelligence tool, consider reading the articles listed below before you decide which capacity to use.
+Learn how to plan your [Premium capacity](./../enterprise/service-premium-what-is.md) to get the best performance out of your [paginated reports](paginated-reports-report-builder-power-bi.md), at a minimum cost. If you're migrating to Power BI from a different business intelligence tool, consider reading the articles listed below before you decide which capacity to use.
 
 * [Power BI migration overview](./../guidance/powerbi-migration-overview.md).
 
@@ -22,7 +22,7 @@ Learn how to plan your [Premium capacity](./../enterprise/service-premium-gen2-w
 
 Calculating the type of capacity you need depends on several parameters such as the number of visuals in your reports, the complexity of queries against the report and the quality of your data source or data model. You should also consider the current use of your capacity during peak times, before you add paginated reports to it.
 
-Before you start planning which capacity you need, review the [Capacities and SKUs](./../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) table, to see which resources are offered by each capacity.
+Before you start planning which capacity you need, review the [Capacities and SKUs](./../enterprise/service-premium-what-is.md#capacities-and-skus) table, to see which resources are offered by each capacity.
 
 When you plan your capacity, consider the following:
 
@@ -46,7 +46,7 @@ To test paginated reports on different capacities, we executed three different t
 
 Our analysis for Power BI Premium shows that the number of concurrent users at any given time, including daily peak times, doesn't tend to exceed five percent of the total user base.  
 
-Based on the five percent concurrency ratio, the following table describes the approximate maximum number of users that a SKU can handle, before it's [overloaded](./../enterprise/service-premium-smoothing.md#how-to-detect-overload). When your capacity is overloaded, throttling will occur on your capacity. For more information, see [What happens to traffic during overload if I don't autoscale?](./../enterprise/service-premium-gen2-faq.yml#what-happens-to-traffic-during-overload-if-i-don-t-autoscale-)
+Based on the five percent concurrency ratio, the following table describes the approximate maximum number of users that a SKU can handle, before it's [overloaded](./../enterprise/service-premium-smoothing.md#how-to-detect-overload). When your capacity is overloaded, throttling will occur on your capacity. For more information, see [What happens to traffic during overload if I don't autoscale?](./../enterprise/service-premium-faq.yml#what-happens-to-traffic-during-overload-if-i-don-t-autoscale-)
 
 | Workload   | P1 SKU      | P2 SKU      |
 |------------|-------------|-------------|
@@ -66,7 +66,7 @@ Take into consideration that the numbers in the table refer to designated capaci
 
 ## Using the metrics app
 
-Using the [Gen2 metrics app](./../enterprise/service-premium-gen2-metrics-app.md) you can estimate the impact of your paginate report on your capacity. The app measures your CPU usage over time, allowing you to understand how your capacity is performing.
+Using the [Premium metrics app](./../enterprise/service-premium-metrics-app.md) you can estimate the impact of your paginate report on your capacity. The app measures your CPU usage over time, allowing you to understand how your capacity is performing.
 
 To test your paginated report, we suggest that you use a dedicated clean capacity. A clean capacity helps isolate results from the impact of other users and workloads. For this test, we suggest using an *A SKU*.
 
@@ -136,7 +136,7 @@ The formulas for a *P1 SKU* will be:
 ## Next steps
 
 >[!div class="nextstepaction"]
->[What is Power BI Premium Gen2?](./../enterprise/service-premium-gen2-what-is.md)
+>[What is Power BI Premium?](./../enterprise/service-premium-what-is.md)
 
 >[!div class="nextstepaction"]
 >[What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)

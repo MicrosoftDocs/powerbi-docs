@@ -78,13 +78,15 @@
       - name: "Connect to data sources"
         href: desktop-data-sources.md
       - name: "Use dynamic M query parameters"
-        href: desktop-dynamic-m-query-parameters.md        
+        href: desktop-dynamic-m-query-parameters.md
+      - name: "Create a dataset from Log Analytics"
+        href: create-dataset-log-analytics.md
+      - name: "Create a dataset from a SharePoint List"
+        href: create-dataset-sharepoint-online-list.md
       - name: "Create a report on a SharePoint List"
         href: desktop-sharepoint-online-list.md
       - name: "Connect to LinkedIn Sales Navigator"
         href: desktop-connect-linkedin-sales-navigator.md        
-      - name: "Get webpage data by providing examples"
-        href: desktop-connect-to-web-by-example.md
       - name: "Connect to datasets in the Power BI service"
         href: desktop-report-lifecycle-datasets.md
       - name: "Import Excel workbooks"
@@ -93,8 +95,6 @@
         href: desktop-connect-using-generic-interfaces.md
       - name: "Connect to PDF files"
         href: desktop-connect-pdf.md        
-      - name: "Connect to Adobe Analytics"
-        href: desktop-connect-adobe-analytics.md          
       - name: "Connect to an Oracle database"
         href: desktop-connect-oracle-database.md
       - name: Python
@@ -125,14 +125,10 @@
         href: desktop-ssas-multidimensional.md
       - name: "Connect to CSV files"
         href: desktop-connect-csv.md
-      - name: "Connect to a Google BigQuery database"
-        href: desktop-connect-bigquery.md        
       - name: "Connect to an Impala database"
         href: desktop-connect-impala.md
       - name: "Connect to OData feeds"
         href: desktop-connect-odata.md
-      - name: "Connect to an Amazon Redshift database"
-        href: desktop-connect-redshift.md
       - name: "Connect to webpages"
         href: desktop-connect-to-web.md
       - name: "Connect to a Snowflake computing warehouse"
@@ -141,8 +137,6 @@
         href: service-connect-snowflake.md        
       - name: "Create visuals with the Azure Cost Management connector"
         href: desktop-connect-azure-cost-management.md        
-      - name: "Connect to Azure Consumption Insights data"
-        href: desktop-connect-azure-consumption-insights.md
       - name: "Connect to SAP HANA databases"
         href: desktop-sap-hana.md
       - name: "Enable encryption for SAP HANA"

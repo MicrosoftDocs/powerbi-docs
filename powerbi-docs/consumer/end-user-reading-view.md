@@ -99,7 +99,7 @@ It's not necessary to open Power BI to monitor a dashboard.  You can subscribe i
 
 ![select the Subscribe icon](./media/end-user-reading-view/power-bi-subscribe-and-email.png)
 
- Learn more about [Power BI subscriptions](end-user-subscribe.md)
+ Learn more about [Power BI subscriptions](/power-bi/collaborate-share/end-user-subscribe)
 
 #### Get alerts when your data reaches a threshold
 Your data is live, and your visuals update automatically to reflect this. If you want to get notified when data changes above or below a threshold you set, use data alerts. Alerts work on gauges, KPIs, and cards.    

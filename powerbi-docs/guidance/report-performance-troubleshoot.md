@@ -14,7 +14,7 @@ ms.date: 03/17/2022
 
 This article provides guidance that enables developers and administrators to troubleshoot slow report performance. It applies to Power BI reports, and also Power BI paginated reports.
 
-Slow reports can be identified by report users who experience reports that are slow to load, or slow to update when interacting with slicers or other features. When reports are hosted on a Premium capacity, slow reports can also be identified by monitoring the [Power BI Premium Metrics app](../enterprise/service-admin-premium-monitor-capacity.md). This app helps you to monitor the health and capacity of your Power BI Premium subscription.
+Slow reports can be identified by report users who experience reports that are slow to load, or slow to update when interacting with slicers or other features. When reports are hosted on a Premium capacity, slow reports can also be identified by monitoring the [Power BI Premium Metrics app](/power-bi/enterprise/service-premium-metrics-app). This app helps you to monitor the health and capacity of your Power BI Premium subscription.
 
 ## Follow flowchart steps
 
@@ -39,7 +39,7 @@ The first consideration is to understand if the slow report is hosted on a Premi
 
 ### Premium capacity
 
-When the report is hosted on a Premium capacity, use the [Power BI Premium Metrics app](../enterprise/service-premium-gen2-metrics-app.md) to determine if the report-hosting capacity frequently exceeds capacity resources. When there's pressure on resources, it may be time to [manage or scale the capacity](../enterprise/service-admin-premium-manage.md) (flowchart terminator 1). When there are adequate resources, investigate capacity activity during typical report usage (flowchart terminator 2).
+When the report is hosted on a Premium capacity, use the [Power BI Premium Metrics app](../enterprise/service-premium-metrics-app.md) to determine if the report-hosting capacity frequently exceeds capacity resources. When there's pressure on resources, it may be time to [manage or scale the capacity](../enterprise/service-admin-premium-manage.md) (flowchart terminator 1). When there are adequate resources, investigate capacity activity during typical report usage (flowchart terminator 2).
 
 ### Shared capacity
 

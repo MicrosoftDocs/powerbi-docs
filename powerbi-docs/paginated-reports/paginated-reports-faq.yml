@@ -9,6 +9,7 @@ metadata:
   ms.subservice: report-builder
   ms.topic: faq
   ms.date: 01/18/2023
+
 title: "Paginated reports in Power BI: FAQ"
 summary: |
   [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
@@ -39,7 +40,7 @@ sections:
         answer: |
           A Gen1 Premium capacity admin can enable or disable the paginated reports workload in the capacity admin portal page.  By default, the workload will be on for any new capacities you create.
           
-          In a [Gen2 Premium capacity](../enterprise/service-premium-gen2-what-is.md#paginated-reports), the paginated report workload is always on.
+          In a [Premium capacity](../enterprise/service-premium-what-is.md#paginated-reports), the paginated report workload is always on.
 
       - question: |
           How can I monitor usage of paginated reports in my tenant?
@@ -58,11 +59,6 @@ sections:
           - Bound Power BI dataset to gateway
           - Discover Power BI Datasource
           - TakeOverDatasource
-          
-      - question: |
-          Can I monitor this workload through the Premium Capacity Monitoring App?
-        answer: |
-          Yes, monitoring is available as a new tab with the same relevant details you have for your Power BI datasets. This app is not supported in Power BI Premium Gen2.
 
       - question: |
           Do I need a Pro license to create and publish paginated reports?
@@ -85,9 +81,6 @@ sections:
           Power BI admins can modify the default maximum memory percentage in the Admin portal. See the **Paginated Reports** workload section under **Power BI Premium** on the **Capacity settings** tab.
           
           :::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Paginated reports Capacity settings tab":::
-          
-          > [!NOTE]
-          > **Premium Gen2** doesn't require you to change memory settings. The underlying system manages memory in Premium Gen2 automatically. Paginated reports workload is available on EM1-EM3 SKUs, P1-P3 SKUs and A1-A6 SKUs in **Premium Gen2**.
           
   - name: General
     questions:
@@ -217,7 +210,7 @@ sections:
       - question: |
           Do I need to set a query time-out for an embedded dataset in a paginated report?
         answer: |
-          Query time-out values are specified during report authoring when you define an embedded dataset. The time-out value is stored with the report, in the Timeout element of the report definition. By default, this value is set to 600 seconds. For longer running queries, set a large enough timeout value in the Dataset Properties dialog in Power BI Report Builder.
+          Query time-out values are specified during report authoring when you define an embedded dataset. The time-out value is stored with the report, in the Timeout element of the report definition. By default, this value is set to 600 seconds. For longer running queries, set a max timeout value of 2147483646 in the Dataset Properties dialog in Power BI Report Builder.
       - question: |
           What are globalization limitations related to DateTime parameters?
         answer: |
@@ -239,7 +232,8 @@ sections:
           "There was an error communicating with Analysis Services. Please verify that the data source is available and your credentials are correct. The connection either timed out or was lost." 
           
           For paginated reports running longer than 10 minutes, we recommend using  the XMLA endpoint to connect to the Power BI dataset.
-
+          
+     
 additionalContent: |
 
   ## Next steps

@@ -249,15 +249,15 @@ Customers can realize many benefits when they migrate from AAS to Power BI Premi
 
 - Customers can consolidate to a single platform that reduces cost duplication of paying for both AAS and Power BI Premium.
 - By using Premium for their entire BI stack, customers can unlock increased performance and features. They only need Pro licenses for developers and admins, but not for end users.
-- Customers can use Power BI Premium Gen2 scalability to reduce their capacity requirements, since memory is limited per dataset and isn't compared to total over the server as it is in AAS. For more information, see [Memory allocation](../enterprise/service-premium-gen2-what-is.md#dataset-memory-allocation).
-- For development and test environments, customers can take advantage of PPU licensing instead of having Premium capacities. PPU licenses provide users access to Premium features like [the XMLA endpoint](../enterprise/service-premium-connect-tools.md), [deployment pipelines](../create-reports/deployment-pipelines-overview.md), and [Premium dataflow features](../transform-model/dataflows/dataflows-premium-features.md?tabs=gen2). Furthermore, they can work with models that above 1 GB in size.
+- Customers can use Power BI Premium scalability to reduce their capacity requirements, since memory is limited per dataset and isn't compared to total over the server as it is in AAS. For more information, see [Memory allocation](../enterprise/service-premium-what-is.md#dataset-memory-allocation).
+- For development and test environments, customers can take advantage of PPU licensing instead of having Premium capacities. PPU licenses provide users access to Premium features like [the XMLA endpoint](../enterprise/service-premium-connect-tools.md), [deployment pipelines](../create-reports/deployment-pipelines-overview.md), and [Premium dataflow features](../transform-model/dataflows/dataflows-premium-features.md). Furthermore, they can work with models that above 1 GB in size.
 
 ## Next steps
 
 For more information about this article, check out the following resources:
 
 - [Migrate from Azure Analysis Services to Power BI Premium](migrate-azure-analysis-services-to-powerbi-premium.md)
-- [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md)
+- [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 - [Power BI pricing](https://powerbi.microsoft.com/pricing/)
 - [Azure Analysis Services pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
 - Questions? [Try asking the Power BI community](https://community.powerbi.com/)

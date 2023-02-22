@@ -102,11 +102,11 @@ When possible, it's recommended that the existing content creator or owner condu
 
 ### Power BI Premium licensing
 
-Power BI deployment pipelines are a Premium feature. There are various [ways to obtain licensing](../create-reports/deployment-pipelines-troubleshooting.yml#what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline-), depending on whether the content is used for development, test, or production purposes. The scenario diagram depicts use of a Premium [P SKUs](../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) such as P1, P2, P3, P4, or P5 for the production workspace, and a Power BI Premium Per User (PPU) [user-based Premium license](../enterprise/service-premium-per-user-faq.yml) for the development and test workspaces. Using PPU licensing for workspaces with very few users (as depicted in the scenario diagram) is a cost-effective way to use Premium features, while keeping them separate from the Premium capacity that's assigned for production workloads.
+Power BI deployment pipelines are a Premium feature. There are various [ways to obtain licensing](../create-reports/deployment-pipelines-troubleshooting.yml#what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline-), depending on whether the content is used for development, test, or production purposes. The scenario diagram depicts use of a Premium [P SKUs](../enterprise/service-premium-what-is.md#capacities-and-skus) such as P1, P2, P3, P4, or P5 for the production workspace, and a Power BI Premium Per User (PPU) [user-based Premium license](../enterprise/service-premium-per-user-faq.yml) for the development and test workspaces. Using PPU licensing for workspaces with very few users (as depicted in the scenario diagram) is a cost-effective way to use Premium features, while keeping them separate from the Premium capacity that's assigned for production workloads.
 
 ### Deployment settings
 
-[Data source rules and parameter rules](../create-reports/deployment-pipelines-get-started.md#step-4---create-deployment-rules) are available for dynamically managing values that differ between development, test, and production. Use of deployment settings are an effective way to reduce effort and the risk of errors.
+[Data source rules and parameter rules](../create-reports/deployment-pipelines-create-rules.md) are available for dynamically managing values that differ between development, test, and production. Use of deployment settings are an effective way to reduce effort and the risk of errors.
 
 ### Post-deployment activities
 
@@ -137,7 +137,7 @@ The scenario diagram depicts using OneDrive for storing the source Power BI Desk
 
 Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the scenario diagram).
 
-When working with multiple environments, it's common to configure development, test, and production connections to use different source systems. In this case, use [data source rules and parameter rules](../create-reports/deployment-pipelines-get-started.md#step-4---create-deployment-rules) to manage values that differ between environments.
+When working with multiple environments, it's common to configure development, test, and production connections to use different source systems. In this case, use [data source rules and parameter rules](../create-reports/deployment-pipelines-create-rules.md) to manage values that differ between environments.
 
 > [!NOTE]
 > A centralized [data gateway](../connect-data/service-gateway-personal-mode.md#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in *standard mode* is strongly recommended over gateways in *[personal mode](../connect-data/service-gateway-personal-mode.md)*. In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).

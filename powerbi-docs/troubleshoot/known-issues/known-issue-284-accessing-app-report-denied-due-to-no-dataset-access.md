@@ -16,7 +16,7 @@ As a Power BI app consumer, you may encounter access issues due to the underlyin
 
 **APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Power BI Service
 
-**Status:** Open
+**Status:** Fixed: February 9, 2023
 
 **Problem area:** Share and Collaborate
 

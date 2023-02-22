@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 07/20/2022
+ms.date: 02/20/2023
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -132,9 +132,9 @@ Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tm
 
 ## Email subscriptions
 
-Datasets that are refreshed using an XMLA endpoint don't trigger an [email subscription](./../consumer/end-user-subscribe.md).
+Datasets that are refreshed using an XMLA endpoint don't trigger an [email subscription](/power-bi/collaborate-share/end-user-subscribe).
 
-## Errors on Premium Gen 2 capacity
+## Errors on Premium capacity
 
 ### Connect to Server error in SSMS
 
@@ -162,7 +162,7 @@ When connecting to a Power BI workspace with SSMS, ensure the following:
 
 ### Query execution in SSMS
 
-When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2) or an [Embedded Gen2](.././developer/embedded/embedded-analytics-power-bi.md) capacity, SQL Server Management Studio may display the following error:
+When connected to a workspace in a [Power BI Premium](/power-bi/enterprise/service-premium-what-is#power-bi-premium-generation-2) or a [Power BI Embedded](.././developer/embedded/embedded-analytics-power-bi.md) capacity, SQL Server Management Studio may display the following error:
 
 ```
 Executing the query ...
@@ -171,9 +171,9 @@ Error -1052311437: We had to move the session with ID '<Session ID>' to another 
 
 This is an informational message that can be ignored in SSMS 18.8 and higher because the client libraries will reconnect automatically. Note that client libraries installed with SSMS v18.7.1 or lower do not support session tracing. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
-### Refresh operations in SSMS
+### Executing a large command using the XMLA endpoint
 
-When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Premium Gen2 or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SSMS may display an error like the following even though the refresh operation succeeds:
+When executing a large command using the XMLA endpoint, you may encounter the following error:
 
 ```
 Executing the query ...
@@ -186,11 +186,27 @@ Date (UTC): 11/13/2020 7:57:16 PM
 Run complete
 ```
 
-This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Power BI Premium or a [Power BI Embedded](/power-bi/developer/embedded/embedded-analytics-power-bi) capacity, SSMS may display this error even though the refresh operation succeeds. This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+
+This error can also occur when a very large request needs to be redirected to a different node in the Premium cluster. It's often seen when you try to create or alter a dataset using a large TMSL script. In such cases, the error can usually be avoided by specifying the Initial Catalog to the name of the database before executing the command.
+
+When creating a new database, you can create an empty dataset, for example:
+
+```json
+{   
+  "create": {   
+    "database": {   
+      "name": "DatabaseName"
+    }   
+  }   
+} 
+```
+
+After you create the new dataset, specify the Initial Catalog and then make changes to the dataset.
 
 ### Other client applications and tools
 
- Client applications and tools such as Excel, Power BI Desktop, SSMS, or external tools connecting to and working with datasets in Power BI Premium Gen2 capacities may cause the following error: **The remote server returned an error: (400) Bad Request.**. The error can be caused especially if an underlying DAX query or XMLA command is long running. To mitigate potential errors, be sure to use the most recent applications and tools that install recent versions of the [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true) with regular updates. Regardless of application or tool, the minimum required client library versions to connect to and work with datasets in a Premium Gen2 capacity through the XMLA endpoint are:
+ Client applications and tools such as Excel, Power BI Desktop, SSMS, or external tools connecting to and working with datasets in Power BI Premium capacities may cause the following error: **The remote server returned an error: (400) Bad Request.**. The error can be caused especially if an underlying DAX query or XMLA command is long running. To mitigate potential errors, be sure to use the most recent applications and tools that install recent versions of the [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true) with regular updates. Regardless of application or tool, the minimum required client library versions to connect to and work with datasets in a Premium capacity through the XMLA endpoint are:
 
 |Client Library | Version  |
 |---------|---------|
@@ -253,7 +269,7 @@ The DMV DISCOVER_M_EXPRESSIONS data management view (DMV) is currently not suppo
 
 ## Resource governing command memory limit in Premium Gen 2
 
-Premium Gen2 capacities use resource governing to ensure no single dataset operation can exceed the amount of available memory resources for the capacity - determined by SKU. For example, a P1 subscription has an *effective memory limit* per item of 25 GB, for a P2 subscription the limit is 50 GB, and for a P3 subscription the limit is 100 GB. In addition to dataset (database) size, the effective memory limit also applies to underlying dataset command operations like [Create](/analysis-services/tmsl/create-command-tmsl?view=power-bi-premium-current&preserve-view=true), [Alter](/analysis-services/tmsl/alter-command-tmsl?view=power-bi-premium-current&preserve-view=true), and [Refresh](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
+Premium capacities use resource governing to ensure no single dataset operation can exceed the amount of available memory resources for the capacity - determined by SKU. For example, a P1 subscription has an *effective memory limit* per item of 25 GB, for a P2 subscription the limit is 50 GB, and for a P3 subscription the limit is 100 GB. In addition to dataset (database) size, the effective memory limit also applies to underlying dataset command operations like [Create](/analysis-services/tmsl/create-command-tmsl?view=power-bi-premium-current&preserve-view=true), [Alter](/analysis-services/tmsl/alter-command-tmsl?view=power-bi-premium-current&preserve-view=true), and [Refresh](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
 
 The effective memory limit for a command is based on the lesser of the capacity's memory limit (determined by SKU) or the value of the [DbpropMsmdRequestMemoryLimit](/analysis-services/xmla/xml-elements-properties/dbpropmsmdrequestmemorylimit-element-xmla?view=asallproducts-allversions&preserve-view=true) XMLA property.
 
