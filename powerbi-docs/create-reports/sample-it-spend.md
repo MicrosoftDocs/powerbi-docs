@@ -7,12 +7,12 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/17/2023
+ms.date: 02/23/2023
 LocalizationGroup: Samples
 ---
 # IT Spend Analysis sample for Power BI: Take a tour
 
-The IT Spend Analysis built-in sample contains a dashboard, report, and dataset that analyzes the planned vs. actual costs of an IT department. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new latest estimate (LE) to help analyze changes in IT spend over the fiscal year.
+The IT Spend Analysis built-in sample contains a dashboard, report, and dataset that analyzes the planned vs. actual costs of an IT department. This comparison helps you understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new latest estimate (LE) to help analyze changes in IT spend over the fiscal year.
 
 :::image type="content" source="media/sample-it-spend/it1.png" alt-text="Screenshot shows the dashboard for the IT Spend Analysis sample.":::
 
@@ -36,7 +36,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
 1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
-1. On the Learning center page, under **Sample reports**, scroll until you see the **IT Spend Analysis sample**.
+1. On the **Learning center** page, under **Sample reports**, scroll until you see the **IT Spend Analysis Sample**.
 
 1. Select the sample. It opens in Reading mode.
 
@@ -50,13 +50,41 @@ Before you can use the sample, get the sample in one of the following ways:
 
 Alternatively, you can download the IT Spend Analysis sample as a [.pbix file](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
 
+1. After you open the file in Power BI Desktop, select **File** > **Publish** > **Publish to Power BI** or choose **Publish** in the **Home** ribbon.
+
+1. In the **Publish to Power BI** dialog, choose a workspace and then **Select**.
+
+1. In the Power BI service, in your workspace, scroll down to the **IT Spend Analysis Sample** report and select to open.
+
+1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
+
+The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
+
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot** > **Manage**. To download the eight original Excel files, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
+If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot** > **Manage**.
+
+If you want to get and use the Excel file in the Power BI service, follow these steps:
+
+1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *IT Spend Analysis Sample-no-PV.xlsx*.
+
+1. Open the file in Excel and then select File > Publish > Publish to Power BI.
+
+1. Select a workspace, such as **My workspace**, and choose **Export**.
+
+   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
+
+1. In the Power BI service, the exported data appears as a dataset in the selected workspace. Select** More options** (...) > **Auto-create report**.
+
+1. Select **Save**, enter a name for your report, and then choose **Save**.
+
+1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
+
+The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
 
 ## IT Spend Analysis Sample dashboard
 
-The two numbers tiles on the left of the dashboard, **Var Plan %** and **Variance Latest Estimate % Quarter 3**, give us an overview of how well we're doing against the plan and against the latest quarterly estimate (LE3 = latest estimate quarter 3). Overall, we're about 6% off the plan. Let's explore the cause of this variance: when, where, and in which category.
+If you used the built-in sample, the two numbers tiles on the left of the dashboard, **Var Plan %** and **Variance Latest Estimate % Quarter 3**, give you an overview of how well we're doing against the plan and against the latest quarterly estimate (LE3 = latest estimate quarter 3). Overall, we're about 6% off the plan. Let's explore the cause of this variance: when, where, and in which category.
 
 ## YTD IT Spend Trend Analysis page
 
@@ -133,7 +161,7 @@ Select **Edit** in the black **Power BI** header bar to explore in the editing v
 
 ## Next steps
 
-This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the Learning Center for a new copy of this sample.
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn. Connect to your own data.
 
