@@ -61,7 +61,7 @@ On top of the screen you'll see:
 1. Up and down arrows that take you to the previous or next difference in the file.
 1. A navigation bar on the right side with red or green bars highlighting where the changes are in the file.
 1. Buttons that toggle between a side-by-side view and an inline view of the changes.
-1. The change comparison area with a line by line comparison of the items.
+1. The change review window with a line by line comparison of the items.
 
 ### [Side-by-side view](#tab/browser)
 
@@ -94,7 +94,7 @@ In both comparison displays, whether inline or side-by-side, the differences are
 
 ### File modifications before comparison
 
-The two versions of the content shown in the file comparison area are modified in the following ways to make the comparison easier:
+The two versions of the content shown in the change review window are modified in the following ways to make the comparison easier:
 
 - Datasource and parameter rules are applied to the source item so that the datasource you see is the one that will be deployed.
 - Some fields that don't indicate differences (for example, timestamps and role membership) are removed from both items.
@@ -105,14 +105,14 @@ Close the window when you finish examining the differences and deploy to the nex
 
 ## Considerations and limitations
 
-- Change review only supports schema changes for textual item types. Currently it supports datasets, excluding data modeling format v1, and dataflows.
+- The *change review* feature only supports schema changes for textual item types. Currently it supports datasets, excluding data modeling format v1, and dataflows.
 
-- An item can be tagged as *Different*, but not be applicable for change review. In these cases, the **Change review** button is disabled. For example:
+- An item can be tagged as *Different*, but still not qualify for change review. In these cases, the **Change review** button is disabled. For example:
   - Settings changes such as name change.
   - Item type isn't yet supported.
   - Item has an unknown status because the comparison process wasn't completed.
 
-- The content in the change review window may look a bit different than the original version since it was [modified a bit before running the comparison](#file-modifications-before-comparison).
+- The content in the change review window may look a bit different than the original version since it was [modified before running the comparison](#file-modifications-before-comparison).
 
 ## Next steps
 
