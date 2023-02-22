@@ -1,5 +1,5 @@
 ---
-title: "Add filters when you author paginated reports in the Power BI service | Microsoft Docs"
+title: "Add filters when you create paginated reports in the Power BI service | Microsoft Docs"
 description:  Learn how to add filters while you author a paginated report on the service.
 ms.date: 02/21/2023
 ms.service: powerbi 
@@ -10,7 +10,7 @@ ms.author: maggies
 ms.reviewer: nirusrin
 ---
 
-# Add filters when you author paginated reports in the Power BI service
+# Add filters when you create paginated reports in the Power BI service
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)]
 
@@ -18,14 +18,14 @@ This article introduces you to filtering paginated reports that you author in th
 
 :::image type="content" source="../media/paginated-formatted-table/paginated-filter-pane.png" alt-text="Screenshot of filter pane for a paginated report.":::
 
-You can filter data at the *report* level. This means that the filter applies to all pages of the report. 
+You can filter data at the *report* level, which means that the filter applies to *all* the pages of the report. 
 
 ## Add a field/column to the Filters pane
 
 There are two ways to add a column to the Filters pane.
 
 - Add a column to the filter pane by selecting the column from the **Fields** pane. Adding the column in this way also adds the field to the editing canvas. 
-- Add the column to the **Add data fields** section of the **Filters** pane from the **Fields** pane by dragging the column, without selecting the column. Adding the column in this way won't add the field to the editing canvas, but you can still filter your report based on this column.
+- Add the column to the **Add data fields** section of the **Filters** pane from the **Fields** pane by dragging the column, without selecting the column. Adding the column in this way doesn't add the field to the editing canvas, but you can still filter your report based on this column.
 
 :::image type="content" source="../media/paginated-formatted-table/paginated-add-data-fields.png" alt-text="Screenshot of area to add data fields.":::
 
@@ -41,8 +41,8 @@ You can also search for the value that you are looking for.
 
 ## Considerations and limitations
 
-- Once filters are applied on a report authored on the service and you edit it on Power BI Report Builder, the report can't be edited on the service.
-- You can't specify conditions such as greater than, less than, date ranges, and so on to filter reports yet.
+- Once you apply filters on a report that you author in the service, and then you edit it on Power BI Report Builder, you can no longer edit the report in the service.
+- You can't specify conditions such as greater than, less than, date ranges, and so on, to filter reports yet.
 - You can't search within numeric and date fields in the Filters pane.
 - You can't search in fields that are numeric.
 - Authors can't make the Filters pane visible to consumers.
