@@ -18,13 +18,13 @@ Good reports present information that leads to actions or insights. To present a
 ##  <a name="MapPurpose"></a> Specify the purpose of the map  
  Good report design provides information that help users take actions to address issues. To create a useful, easily understood map display, decide what questions you want the map to help answer. For example, on a map you can visualize the following types of data to identify market opportunities:  
   
--   Relative sales for each store.  
+- Relative sales for each store.  
   
--   Sales categorized by customer demographics, based on customer location relative to store locations.  
+- Sales categorized by customer demographics, based on customer location relative to store locations.  
   
--   Comparative sales or other financial data by sales territory.  
+- Comparative sales or other financial data by sales territory.  
   
--   Comparative sales for different discount strategies across multiple stores.  
+- Comparative sales for different discount strategies across multiple stores.  
   
  After you identify the purpose of the map display, you must analyze what data you need. Analytical data comes from report datasets. Location data comes from spatial data sources that you must specify.  
   
@@ -35,22 +35,22 @@ Good reports present information that leads to actions or insights. To present a
   
  Spatial data comes in three forms: points, lines, and polygons.  
   
--   **Points.** Points specify locations, for example, a city or an address for a store, restaurant, or convention center. For every location that you want to display on a map, you must provide the spatial data for that location. After you add points to a map, you can display a marker at the point location and vary the marker type, size, and color.  
+- **Points.** Points specify locations, for example, a city or an address for a store, restaurant, or convention center. For every location that you want to display on a map, you must provide the spatial data for that location. After you add points to a map, you can display a marker at the point location and vary the marker type, size, and color.  
   
--   **Lines.** Lines specify paths or routes, for example, delivery routes or flight paths. After you add a line to a map, you can vary the line color and line width.  
+- **Lines.** Lines specify paths or routes, for example, delivery routes or flight paths. After you add a line to a map, you can vary the line color and line width.  
   
--   **Polygons.** Polygons specify areas, for example, territories, countries/regions, states, provinces, counties, cities, or areas covered by cities, postal codes, telephone exchanges, or census districts. After you add polygons to a map, in addition to displaying the outline, you can display a marker at the center point of the area of the polygon.  
+- **Polygons.** Polygons specify areas, for example, territories, countries/regions, states, provinces, counties, cities, or areas covered by cities, postal codes, telephone exchanges, or census districts. After you add polygons to a map, in addition to displaying the outline, you can display a marker at the center point of the area of the polygon.  
   
  After you identify which spatial data that you need, you must find a source for it.  
   
 ### Find a source for spatial data  
  To find spatial data to use in your map, you can use the following sources:  
   
--   Spatial data from SQL Server spatial data sources.  
+- Spatial data from SQL Server spatial data sources.  
   
--   Maps from reports in the Map Gallery.  
+- Maps from reports in the Map Gallery.  
     
--   Bing map tiles, which provide a background for the map view. 
+- Bing map tiles, which provide a background for the map view. 
   
  Spatial data can be politically sensitive and possibly copyrighted. Check the terms of use and privacy statements for spatial data sources to understand how you can use spatial data in your report.  
   
@@ -61,33 +61,33 @@ Good reports present information that leads to actions or insights. To present a
   
  Spatial data must contain the following fields:  
   
--   **Spatial data.** A spatial data field that has the sets of coordinates that define each point, line, or polygon.  
+- **Spatial data.** A spatial data field that has the sets of coordinates that define each point, line, or polygon.  
   
--   **Match fields.** One or more fields that uniquely identify each spatial data field. For example, for a store location point, you might use the name of the store. If the store name is not unique in the spatial data, you might include the name of the city as well as the store.  
+- **Match fields.** One or more fields that uniquely identify each spatial data field. For example, for a store location point, you might use the name of the store. If the store name is not unique in the spatial data, you might include the name of the city as well as the store.  
   
  The match fields are used to relate the spatial data with the analytical data.  
   
 ### Determine the analytical data and the analytical data match fields  
  After you identify the spatial data, you must identify the analytical data. Analytical data can come from the following sources:  
   
--   An existing report dataset. Fields are specified as simple field expressions, for example, [Sales] or =Fields!Sales.Value.  
+- An existing report dataset. Fields are specified as simple field expressions, for example, [Sales] or =Fields!Sales.Value.  
   
--   Data fields provided by the spatial data source. Fields are specified as keywords that begin with # followed the field name from the source of spatial data.  
+- Data fields provided by the spatial data source. Fields are specified as keywords that begin with # followed the field name from the source of spatial data.  
   
  You must then determine the names of the match fields:  
   
--   Match fields. One or more fields that specify the same information as the spatial data match fields to build a relationship between the spatial data and the analytical data. Match fields should match data type as well as formatting.  
+- Match fields. One or more fields that specify the same information as the spatial data match fields to build a relationship between the spatial data and the analytical data. Match fields should match data type as well as formatting.  
   
  When you have identified the spatial data source, the spatial data, the analytical data source, the analytical data, and the match fields, you are ready to decide which type of map to add to your report.  
   
 ##  <a name="MapType"></a> Choose a map type  
  When you run the Map wizard, you add a map and the first map layer to your report. The wizard enables you to add one of the following types of maps to your report:  
   
--   A basic map that displays locations without associated analytical data.  
+- A basic map that displays locations without associated analytical data.  
   
--   A map that has one analytical value associated with each map element, for example, sales total for each store location.  
+- A map that has one analytical value associated with each map element, for example, sales total for each store location.  
   
--   A map that has more than one analytical value associated with a map element, for example, number of customers and sales total for each store location.  
+- A map that has more than one analytical value associated with a map element, for example, number of customers and sales total for each store location.  
   
  The following table describes each map type. All map types allow you to select a theme that controls palette, border style, and font, and to display labels.  
   
@@ -109,13 +109,13 @@ Good reports present information that leads to actions or insights. To present a
 ##  <a name="Legend"></a> Plan for legends  
  To help your users interpret a map, you can add multiple map legends, a color scale, and a distance scale. When you design a map, plan where you want the legends to display. You can specify the following information about each legend:  
   
--   **Legend location.** For example, legends can display inside or outside the viewport, and in 12 discrete locations relative to the viewport.  
+- **Legend location.** For example, legends can display inside or outside the viewport, and in 12 discrete locations relative to the viewport.  
   
--   **Legend styles**. For example, you can specify the font style, border style, separator line, and fill properties.  
+- **Legend styles**. For example, you can specify the font style, border style, separator line, and fill properties.  
   
--   **Legend title.** For example, you can specify title text, and independently control whether to display the title for a map legend or the color scale.  
+- **Legend title.** For example, you can specify title text, and independently control whether to display the title for a map legend or the color scale.  
   
--   **Map legend layout.** For example, map legends can display as tall tables or wide tables.  
+- **Map legend layout.** For example, map legends can display as tall tables or wide tables.  
   
  The contents of the legend are created automatically during report processing based on rule options that you set for each layer.  
   
@@ -123,19 +123,20 @@ Good reports present information that leads to actions or insights. To present a
   
  For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data) and [Change Map Legends, Color Scale, and Associated Rules &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-map-legends-color-scale-and-associated-rules-report-builder-and-ssrs).  
   
-##  <a name="Embedding"></a> Balance report definition size and report processing time  
- Good report design for maps require that you balance the options that control report performance and report definition size. Map elements that are based on spatial data, or Bing map tiles, can be static and embedded in the report definition or dynamic and created every time the report is processed. You must assess the trade-offs for static or dynamic map data and find the balance that works for your circumstances. Consider the following information to make this decision:  
+##  <a name="Embedding"></a> Balance report definition size and report processing time
+
+ Good report design for maps requires that you balance the options that control report performance and report definition size. Map elements that are based on spatial data, or Bing map tiles, can be static and embedded in the report definition or dynamic and created every time the report is processed. You must assess the trade-offs for static or dynamic map data and find the balance that works for your circumstances. Consider the following information to make this decision:  
   
--   Embedded map elements can significantly increase the size of the report definition, but reduce the time that is required to view the map in the report. Your report server might have size limits that you need to work with.  
+- Embedded map elements can significantly increase the size of the report definition, but reduce the time that is required to view the map in the report. Your report server might have size limits that you need to work with.  
   
--   The report definition specifies limits to the number of spatial data points that can be processed and a separate value that specifies the number of map elements that can be included in the report definition.  
+- The report definition specifies limits to the number of spatial data points that can be processed and a separate value that specifies the number of map elements that can be included in the report definition.  
   
--   Dynamic map elements reduce the report definition size but increase the time that is required to process and render the map.  
+- Dynamic map elements reduce the report definition size but increase the time that is required to process and render the map.  
   
--   When the source of spatial data is located on the your computer, map elements are always embedded in the report definition. This includes spatial data from the Map Gallery that have been installed locally.  
-   
-  
-## Next steps  
+- When the source of spatial data is located on your computer, map elements are always embedded in the report definition. This includes spatial data from the Map Gallery that have been installed locally.  
+
+## Next steps
+
  [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs)   
  [Tutorial: Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-map-report-report-builder.md)   
  [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   

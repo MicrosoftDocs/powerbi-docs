@@ -13,7 +13,6 @@ ms.reviewer: saurkumar
 ---
 # Add, change, or delete a map or map layer in a Power BI paginated report (Power BI Report Builder)
 
-
   A map is a collection of layers. When you add a map to a Power BI paginated report, you define the first layer. You can create additional layers by using the map layer wizard.  
   
  The easiest way to add, remove, or change options for a layer is to use the map layer wizard. You can also change options manually from the Map pane. To display the **Map** pane, select in the map on the report design surface. The following figure displays the parts of the pane:  
@@ -41,13 +40,13 @@ The following table displays the toolbar icons for the **Map** pane.
   
 ##  <a name="AddLayer"></a> Add a layer from the map layer wizard  
   
--   From the Ribbon, on the **Insert** menu, select **Map**, and then select **Map Wizard.** The wizard enables you to add a layer to the existing map. Most wizard pages are identical between the map wizard and the map layer wizard.  
+- From the Ribbon, on the **Insert** menu, select **Map**, and then select **Map Wizard.** The wizard enables you to add a layer to the existing map. Most wizard pages are identical between the map wizard and the map layer wizard.  
   
      For more information, see [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](map-wizard-map-layer-wizard-report-builder.md).  
   
 ##  <a name="ChangeLayer"></a> Change options for a layer by using the map layer wizard  
   
--   Run the map layer wizard. This wizard enables you to change options for a layer that you created by using the map layer wizard. In the Map pane, right-click the layer, and on the toolbar, select the layer wizard button (![Screenshot showing how to add a layer using wizard.](../media/paginated-reports-maps/map-layer-wizard.gif)).  
+- Run the map layer wizard. This wizard enables you to change options for a layer that you created by using the map layer wizard. In the Map pane, right-click the layer, and on the toolbar, select the layer wizard button (![Screenshot showing how to add a layer using wizard.](../media/paginated-reports-maps/map-layer-wizard.gif)).  
   
      For more information, see [Map Wizard and Map Layer Wizard &#40;Report Builder&#41;](map-wizard-map-layer-wizard-report-builder.md).  
   
@@ -94,9 +93,9 @@ The following table displays the toolbar icons for the **Map** pane.
   
 1.  Select **General** on the **Map Point Properties** dialog box to change label, tooltip, and marker type options for the following map elements:  
   
-    -   All dynamic or embedded points on a point layer. Color rules, size rules, and marker type rules for points override these options. To override options for a specific embedded point, use the [Map Embedded Point Properties Dialog Box, Marker](/sql/reporting-services/report-design/maps-report-builder-and-ssrs) page.  
+    - All dynamic or embedded points on a point layer. Color rules, size rules, and marker type rules for points override these options. To override options for a specific embedded point, use the [Map Embedded Point Properties Dialog Box, Marker](/sql/reporting-services/report-design/maps-report-builder-and-ssrs) page.  
   
-    -   The center point for all dynamic or embedded polygons on a polygon layer. Color rules, size rules, and marker type rules for center points override these options. To override options for a specific center point, use the [Map Embedded Point Properties Dialog Box, Marker](/sql/reporting-services/report-design/maps-report-builder-and-ssrs) page.  
+    - The center point for all dynamic or embedded polygons on a polygon layer. Color rules, size rules, and marker type rules for center points override these options. To override options for a specific center point, use the [Map Embedded Point Properties Dialog Box, Marker](/sql/reporting-services/report-design/maps-report-builder-and-ssrs) page.  
   
 ##  <a name="Embedded"></a> Specify embedded data as a source of spatial data  
   
@@ -188,8 +187,8 @@ The following table displays the toolbar icons for the **Map** pane.
   
 1.  By default, for tile styles that display labels, the language is determined from the default locale for Report Builder. You can customize the language setting for tile labels in the following ways.  
   
-    -   Select the map outside the viewport to select the map. In the Properties pane, for the TileLanguage property, select a culture value from the drop-down list.   
-    -   Select the report background to select the report. In the Properties pane, from for the Language property, select a culture value from the drop-down list.  
+    - Select the map outside the viewport to select the map. In the Properties pane, for the TileLanguage property, select a culture value from the drop-down list.   
+    - Select the report background to select the report. In the Properties pane, from for the Language property, select a culture value from the drop-down list.  
 
      The order of precedence for setting the tile label language is: report property Language, default locale for Report Builder, and map property TileLanguage.  
   
@@ -200,12 +199,13 @@ The following table displays the toolbar icons for the **Map** pane.
     a.   In the Map Layers pane, right-click a layer to select it, and on the Map Layers toolbar, select Properties to open **Map Layer Properties**.   
     b.   Select **Visibility**.  
     c.   In Layer visibility, select **Show or hide based on zoom value**.  
-    d.   Enter minimum and maximum zoom values for when display the layer.  
+    d.   Enter minimum and maximum zoom values for when you display the layer.  
     e.   Optional. Enter a value for transparency.  
   
      You can also conditionally hide the layer. For more information, see [Hide an Item &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/hide-an-item-report-builder-and-ssrs).  
   
-## Next steps  
+## Next steps
+
  [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   
  [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md)  
   
