@@ -28,9 +28,9 @@ When a colleague shares a report with you, make sure to look for the **Filters**
 
  :::image type="content" source="media/end-user-report-filter/power-bi-expand-filters-pane.png" alt-text="Screenshot of a report open in the Power BI service with the Filters pane expanded.":::
 
-The **Filters** pane contains filters the report *designer* adds to the report. While *Business users* (like you) can interact with the existing filters and save changes, but you can't add new filters to the report. In the previous example, the designer added three page level filters: **Segment is All**, **Year is 2014**, and **Region is Central**. You can interact and change these filters but you can't add a fourth page level filter.
+The **Filters** pane contains filters that the report *designer* adds to the report. While *Business users* can interact with the existing filters and save changes. However, they can't add new filters to the report. In the previous example, the designer added three page-level filters: **Segment is All**, **Year is 2014**, and **Region is Central**. You can interact and change these filters, but you can't add a fourth page-level filter.
 
-Some of the filters are shaded, and some aren't. If a filter is shaded, it means a filter has been applied, and some data is being excluded. In the following example, the **Region** filter card is shaded and expanded. The **Central** option is the only option selected from the dropdown. Since Region is under the **Filters on this page** heading, all visuals on this page aren't displaying. The data from **West** and **East** regions are excluded.
+Some of the filters are shaded, and some aren't. If a filter is shaded, it means a filter has been applied, and some data is excluded. In the following example, the **Region** filter card is shaded and expanded. The **Central** option is the only option selected from the dropdown. Since Region is under the **Filters on this page** heading, all visuals on this page aren't displaying. The data from **West** and **East** regions are excluded.
 
 :::image type="content" source="media/end-user-report-filter/power-bi-filter-region.png" alt-text="Screenshot of the Region filter expanded, and the Central option selected.":::
 
@@ -38,7 +38,7 @@ In the Power BI service, reports keep any changes you make in the **Filters** pa
 
 To reset the **Filters** pane to the designer's defaults, select the **Reset** icon from the top menu bar.
 
-:::image type="content" source="media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Screenshot of the top menu bar with the Reset default icon selected.":::
+:::image type="content" source="media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Screenshot of the top menu bar with the Reset to default icon selected.":::
 
 > [!NOTE]
 > If you don't see the **Reset to default** option, the report *designer* might have disabled it. The *designer* can lock specific filters so that you can't change them.
@@ -96,22 +96,22 @@ Sometimes a filter can have a long list of values. Use the search box to find an
 
 ### Display filter details
 
-To understand a filter, expand it and look at the available values and counts.  To expand the filter, select the arrow next to the filter name.
+To understand a filter, expand it and look at the available values and counts. To expand the filter, select the arrow next to the filter name.
   
 :::image type="content" source="media/end-user-report-filter/power-bi-filters-expand.png" alt-text="Screenshot of an expanded filter and the arrow next to the filter name highlighted.":::
 
 ### Change filter selections
 
-One way to search for data insights is to interact with the filters. You can change filter selections using the drop-down arrow next to the field name. Depending on the filter and type of data that Power BI is filtering, your options range from simple selections from a list, to identifying ranges of dates or numbers. See the advanced filter example. Notice the change in the **Total Units YTD** filter on the treemap between 2,000 and 3,000. This change removes Pirum and VanArsdel from the treemap.
+One way to search for data insights is to interact with the filters. You can change filter selections by using the drop-down arrow next to the field name. Depending on the filter and type of data that Power BI is filtering, your options range from simple selections from a list, to identifying ranges of dates or numbers. See the advanced filter example. Notice the change in the **Total Units YTD** filter on the treemap between 2,000 and 3,000. This change removes Pirum and VanArsdel from the treemap.
   
- :::image type="content" source="media/end-user-report-filter/power-bi-treemap-filter.png" alt-text="Screenshot of a report with the filter that shows treemap visual selected.":::
+ :::image type="content" source="media/end-user-report-filter/power-bi-treemap-filter.png" alt-text="Screenshot of a report with the filter that shows the treemap visual selected.":::
 
 > [!TIP]
 > To select more than one filter value at a time, hold down the **CTRL** key. Most filters support multi-select.
 
 ### Reset filter to default
 
-If you don't want to keep the changes you've made to the filters, select the **Reset** icon from the top menu bar.  This selection reverts the filters to their original state, as set by the report designer.
+If you don't want to keep the changes you've made to the filters, select the **Reset** icon from the top menu bar. This selection reverts the filters to their original state, as set by the report designer.
 
 :::image type="content" source="media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Screenshot of the top menu bar with the Reset to default option selected.":::
 
