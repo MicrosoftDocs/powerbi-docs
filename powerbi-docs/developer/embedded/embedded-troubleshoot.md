@@ -176,7 +176,7 @@ User consent is disabled for the tenant.
 1. In the Azure portal, navigate to **Azure Active Directory** > **Users and groups** > **User settings**.
 2. Enable the **Users can consent to apps accessing company data on their behalf** setting and save the changes.
 
-:::image type="content" source="media/embedded-troubleshoot/consent-test-02.png" alt-text="Screenshot of the Azure portal ":::
+:::image type="content" source="media/embedded-troubleshoot/consent-test-02.png" alt-text="Screenshot of the Azure portal.":::
 
 * An admin can grant permissions to the application - either for the entire tenant or a specific user.
 
