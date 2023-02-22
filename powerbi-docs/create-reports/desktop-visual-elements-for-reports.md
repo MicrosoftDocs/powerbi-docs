@@ -56,7 +56,7 @@ When you set your page background to greater than 50% transparency, a dotted bor
 It's important to note that the dotted boundary *only* shows up when editing your report and does *not* appear for people who are viewing your published report, such as when it's viewed in the **Power BI service**.
 
 > [!NOTE]
-> If you use dark-colored backgrounds for wallpaper and set text color to white or very light, be mindful that the **Export to PDF** feature doesn't include wallpaper, so any exports with white fonts will be nearly invisible in the exported PDF file. For more information, see [export to PDF](../consumer/end-user-pdf.md).
+> If you use dark-colored backgrounds for wallpaper and set text color to white or very light, be mindful that the **Export to PDF** feature doesn't include wallpaper, so any exports with white fonts will be nearly invisible in the exported PDF file. For more information, see [export to PDF](../collaborate-share/end-user-pdf.md).
 
 ## Using improved visual headers in Power BI reports
 
@@ -87,13 +87,13 @@ For reports that only appear in the **Power BI service**, you can adjust the use
 
 ### Enabling improved visual headers for existing reports
 
-The new visual header is the default behavior for all new reports. For existing reports, you need to enable this behavior in **Power BI Desktop** by going to **File > Options and settings > Options** and then in the **Report settings** section, enable the **Use the modern visual header with updated styling options** checkbox.
+The new visual header is the default behavior for all new reports. For existing reports, you need to enable this behavior in Power BI Desktop by going to **File > Options and settings > Options** and then in the **Report settings** section, enable the **Use the modern visual header with updated styling options** checkbox.
 
 ![Screenshot of the Options menu, highlighting Report settings and the Use the modern visual header with updated styling options checkbox.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_06.png)
 
 ## Next steps
 
-For more information about **Power BI Desktop** and how to get started, see:
+For more information about Power BI Desktop and how to get started, see:
 
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
