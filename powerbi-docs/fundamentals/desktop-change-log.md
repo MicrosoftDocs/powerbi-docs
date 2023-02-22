@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 01/12/2023
+ms.date: 02/22/2023
 ---
 
 # Change log for Power BI Desktop
@@ -17,14 +17,26 @@ This change log is for Power BI Desktop and lists new items along with bug fixes
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
 
+## February 2023 QFE 1
+
+*Version:2.114.803.0, Released: February 21, 2023*
+
+Bug fixes/improvements:
+* Fix for Proxy models regression. Customers can now convert PBI Datasets and AS Live models with format strings to Direct Query and refresh existing models.
+* Fix for creating Power Apps and Power Automate visuals.
+* Fix for windows and dialogs rendering in some multimonitor configurations.
+* Filter pane regression fix. Filter card input will now show blank values as default when advanced filtering is selected.
+
+
+
 ## December 2022 QFE 1
+
 *Version: 2.112.1161.0, Released: January 10, 2023*
 
 Bug fixes/improvements:
 * AS Engine fix. DAX queries that contain query-scope calculated tables and send through external tools will not return error in certain cases.
 * DAX window functions fix. Now function will not return error in certain cases when the *relation* parameter use CalculateTable function.
 * Fix to data view filter menu.  Customers will see correct distinct values after applying filter/sort by another column.
-
 
 
 ## October 2022 QFE 2
