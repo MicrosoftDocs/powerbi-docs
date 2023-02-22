@@ -28,7 +28,8 @@ You must have a Power BI account to be able to use this functionality.
 ## Create a dataset from a SharePoint list
 
 To create a Power BI dataset from a SharePoint list:
-1. Open your SharePoint list
+
+1. Open your SharePoint list.
 
 1. In the actions bar, select **Export > Export to Power BI**.
 
