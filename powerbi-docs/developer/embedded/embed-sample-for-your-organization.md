@@ -1,6 +1,6 @@
 ---
 title: Embed content in your Power BI embedded analytics application for your organization
-description: Learn how to integrate Power BI into your application, enabling better embedded BI insightsfor your organization, using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
+description: Learn how to integrate Power BI into your application to provide insights for your organization by using embedded analytics software and tools.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: ''
-ms.date: 05/25/2022
+ms.date: 01/22/2023
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
 # Tutorial: Embed Power BI content using a sample *embed for your organization* application
 
-Power BI embedded analytics allows you to embed Power BI content such as reports, dashboards and tiles, into your application.
+Power BI embedded analytics allows you to embed Power BI content, such as reports, dashboards and tiles, into your application.
 
 In this tutorial, you'll learn how to:
 
@@ -25,7 +25,7 @@ In this tutorial, you'll learn how to:
 
 To use your application, your users will need to sign in to Power BI.
 
-The embed for your organization solution is usually used by enterprises and big organizations, and is intended for internal users.
+The embed for your organization solution is typically used by enterprises and large organizations, and is intended for internal users.
 
 > [!IMPORTANT]
 > If you are embedding content for a national cloud, the first few steps of this tutorial are different. See [Embed content for national clouds](embed-sample-for-customers-national-clouds.md) for details.
@@ -39,7 +39,7 @@ This tutorial includes instructions for configuring an *embed for your organizat
 * React TypeScript
 
 >[!NOTE]
->The *.NET Core* and the *.NET Framework* samples will allow the end user to view any Power BI dashboard, report or tile they have access to in Power BI service. The *React TypeScript* sample lets you embed only one report that your end user already has access to on Power BI service.
+>The *.NET Core* and the *.NET Framework* samples allow the end user to view any Power BI dashboard, report or tile they have access to in the Power BI service. The *React TypeScript* sample lets you embed only one report that your end user already has access to in the Power BI service.
 
 The code samples support the following browsers:
 
@@ -49,7 +49,7 @@ The code samples support the following browsers:
 
 ## Prerequisites
 
-Before you start this tutorial, verify that you have both the Power BI and code dependencies listed below:
+Before you start this tutorial, verify that you have both the following Power BI and code dependencies:
 
 * **Power BI dependencies**
 
@@ -73,7 +73,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
     * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
     
-    * An integrated development environment (IDE). We recommend using one of the following:
+    * An integrated development environment (IDE). We recommend using one of the following IDEs:
 
         * [Visual Studio](https://visualstudio.microsoft.com/)
 
@@ -123,40 +123,40 @@ Registering your application with Azure AD allows you to establish an identity f
 
 ## Step 4 - Get the embedding parameter values
 
-To embed your content, you'll need to obtain a few parameter values. The parameter values you'll need depend on the language of the sample application you want to use. The table below lists which parameter values are required for each sample.
+To embed your content, you'll need to obtain a few parameter values. The parameter values depend on the language of the sample application you want to use. The table below lists which parameter values are required for each sample.
 
 |Parameter  |.NET Core  |.NET Framework  |React TypeScript |
 |---------|---------|---------|---------|
-|[Client ID](#client-id) |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png)         |![Applies to.](../../media/yes.png) |
-|[Client secret](#workspace-id) |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
-|[Workspace ID]() |![Does not apply to.](../../media/no.png) |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
-|[Report ID]() |![Does not apply to.](../../media/no.png) |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
+|[Client ID](#client-id) |:::image type="icon" source="../../media/yes.png"::: |:::image type="icon" source="../../media/yes.png":::         |:::image type="icon" source="../../media/yes.png"::: |
+|[Client secret](#client-secret) |:::image type="icon" source="../../media/yes.png"::: |:::image type="icon" source="../../media/yes.png"::: |:::image type="icon" source="../../media/no.png"::: |
+|[Workspace ID](#workspace-id) |:::image type="icon" source="../../media/no.png"::: |:::image type="icon" source="../../media/no.png"::: |:::image type="icon" source="../../media/yes.png"::: |
+|[Report ID](#report-id) |:::image type="icon" source="../../media/no.png"::: |:::image type="icon" source="../../media/no.png"::: |:::image type="icon" source="../../media/yes.png"::: |
 
 ### Client ID
 
 >[!TIP]
->**Applies to:** ![Applies to.](../../media/yes.png).NET Core ![Applies to.](../../media/yes.png).NET Framework ![Applies to.](../../media/yes.png)React TypeScript
+>**Applies to:** :::image type="icon" source="../../media/yes.png":::.NET Core :::image type="icon" source="../../media/yes.png":::.NET Framework :::image type="icon" source="../../media/yes.png":::React TypeScript
 
 [!INCLUDE[Get the client ID](../../includes/embed-tutorial-client-id.md)]
 
 ### Client secret
 
 >[!TIP]
->**Applies to:** ![Applies to.](../../media/yes.png).NET Core ![Applies to.](../../media/yes.png).NET Framework ![Does not apply to.](../../media/no.png)React TypeScript
+>**Applies to:** :::image type="icon" source="../../media/yes.png":::.NET Core :::image type="icon" source="../../media/yes.png":::.NET Framework :::image type="icon" source="../../media/no.png":::React TypeScript
 
 [!INCLUDE[Get the client secret](../../includes/embed-tutorial-client-secret.md)]
 
 ### Workspace ID
 
 >[!TIP]
->**Applies to:** ![Does not apply to.](../../media/no.png).NET Core ![Does not apply to.](../../media/no.png).NET Framework ![Applies to.](../../media/yes.png)React TypeScript
+>**Applies to:** :::image type="icon" source="../../media/no.png":::.NET Core :::image type="icon" source="../../media/no.png":::.NET Framework :::image type="icon" source="../../media/yes.png":::React TypeScript
 
 [!INCLUDE[Get the workspace ID](../../includes/embed-tutorial-workspace-id.md)]
 
 ### Report ID
 
 >[!TIP]
->**Applies to:** ![Does not apply to.](../../media/no.png).NET Core ![Does not apply to.](../../media/no.png).NET Framework ![Applies to.](../../media/yes.png)ReactTypeScript
+>**Applies to:** :::image type="icon" source="../../media/no.png":::.NET Core :::image type="icon" source="../../media/no.png":::.NET Framework :::image type="icon" source="../../media/yes.png":::ReactTypeScript
 
 [!INCLUDE[Get the report ID](../../includes/embed-tutorial-report-id.md)]
 
@@ -168,14 +168,14 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 [!INCLUDE[Embedding steps](../../includes/embed-tutorial-embedding-steps.md)]
 
-4. Depending on the language you want your application to use, open one of these folders:
+4. Open one of the following folders depending on the language you want your application to use:
 
     * .NET Core
     * .NET Framework
     * React-TS
 
     >[!NOTE]
-    >The *embed for your organization* sample applications only support the frameworks listed above. The *Java*, *Node JS* and *Python* sample applications, only support the *[embed for your customers](embed-sample-for-customers.md)* solution.
+    >The *embed for your organization* sample applications only support the previously listed frameworks. The *Java*, *Node JS* and *Python* sample applications, only support the *[embed for your customers](embed-sample-for-customers.md)* solution.
 
 # [.NET Core](#tab/net-core)
 
@@ -186,11 +186,11 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 5. In *Platform configurations*, open your *Web* platform and in the **Redirect URIs** section, add `https://localhost:5000/signin-oidc`.
 
     > [!NOTE]
-    >If you don't have a **Web** platform, select **Add a platform** and in the *Configure platforms* window, select **Web**.
+    >If you don't have a **Web** platform, select **Add a platform** and in the *Configure platforms* window, choose **Web**.
 
 6. Save your changes.
 
-:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-net-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I for the .NET core app sample.":::
+:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-net-configurations.png" alt-text="Screenshot of the Azure portal window, which shows the app authentication configurations and the web redirect URI for the .NET core app sample.":::
 
 ### Configure the sample embedding app
 
@@ -224,7 +224,7 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 [!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
 
-5. In *Platform configurations*, configure the following:
+5. In *Platform configurations*, configure the following options:
 
     1. In your *Web* platform, in the **Redirect URIs** section, add `https://localhost:44300/`.
 
@@ -235,7 +235,7 @@ Follow these steps to modify the *embed for your organization* sample applicatio
     
 6. Save your changes.
 
-:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-framework-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET framework app sample.":::
+:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-framework-configurations.png" alt-text="Screenshot of the Azure portal window, which shows the app authentication configurations, the web redirect URI, and the selected access token option.":::
 
 ### Configure the sample embedding app
 
@@ -263,10 +263,10 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 5. In *Platform configurations*, configure your **Web** platform as follows:
 
-    1. In **Redirect URIs** add `https://localhost:3000` and select **Configure**.
+    1. In **Redirect URIs**, add `https://localhost:3000` and select **Configure**.
 
         > [!NOTE]
-        >If you don't have a **Web** platform, select **Add a platform** and in the *Configure platforms* window, select **Web**.
+        >If you don't have a **Web** platform, select **Add a platform**, and in the *Configure platforms* window, choose **Web**.
 
     2. In *Implicit grant and hybrid flows*, enable both options:
         * **Access tokens**
@@ -274,7 +274,7 @@ Follow these steps to modify the *embed for your organization* sample applicatio
     
 6. Save your changes.
 
-:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-react-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I set for localhost 3000.":::
+:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-react-configurations.png" alt-text="Screenshot of the Azure portal window, which shows the Azure AD app authentication configurations and the web redirect URI set for localhost 3000.":::
 
 ### Configure the sample embedding app
 
@@ -292,13 +292,13 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 ### Run the sample app
 
-1. Open a terminal in and navigate to **Embed for your organization** > **UserOwnsData**.
+1. Open a terminal and navigate to **Embed for your organization** > **UserOwnsData**.
 
-2. Install required dependencies by executing the following command:
+2. Install the required dependencies by entering the following command:
 
    `npm install`
 
-3. Run the application by executing the following command:
+3. Run the application by entering the following command:
 
    `npm run start`
 
@@ -313,12 +313,12 @@ After configuring and running the *embed for your customers* sample application,
 
 ## Update user permissions
 
-For anyone to access the report, they need permission to access the Power BI folder the report is in. When you grant someone permission to access a folder, the change usually takes effect only after the user logs in to the Power BI Portal. For the new permissions to take effect immediately, in the Embedded scenario, make an explicit call to the [RefreshUser Permissions REST API](/rest/api/power-bi/users/refresh-user-permissions) at startup. This API call will refresh the permissions and avoid authorization failures for users with newly granted permissions.
+Users need permission to access the Power BI folder the report is in. When you grant a user permission to access a folder, the change usually takes effect only after the user logs in to the Power BI Portal. For the new permissions to take effect immediately, in the Embedded scenario, make an explicit call to the [RefreshUser Permissions REST API](/rest/api/power-bi/users/refresh-user-permissions) at startup. This API call will refresh the permissions and avoid authorization failures for users with newly granted permissions.
 
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Embed for your customers](embed-sample-for-customers.md)
+>[Tutorial: Embed Power BI content using a sample embed for your customers' application](embed-sample-for-customers.md)
 
 > [!div class="nextstepaction"]
 >[Embed paginated reports](embed-paginated-reports.md)
