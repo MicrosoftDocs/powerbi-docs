@@ -63,7 +63,7 @@ The steps in the previous section do not include collection of mashup traces. To
 2. Ensure **Enable tracing** is enabled in Power BI Desktop, by navigating to **File > Options and settings > Options** then selecting **Diagnostics** from the sections in the left pane. Ensure **Enable tracing** is checked, as shown in the following image.
 
 
-:::image type="content" source="media/desktop-diagnostics/desktop-diagnostics-04.png" alt-text="Screen shot of diagnostic options":::
+:::image type="content" source="media/desktop-diagnostics/desktop-diagnostics-04.png" alt-text="Screenshot of diagnostic options.":::
 
 3. Reproduce the issue or situation for which you want to collect diagnostics and mashup traces.
 4. Close Power BI Desktop to ensure all traces are flushed to the disk.
