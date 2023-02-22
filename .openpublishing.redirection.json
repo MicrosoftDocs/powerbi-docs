@@ -4925,6 +4925,27 @@
             "source_path": "powerbi-docs/connect-data/desktop-sap-hana-encryption.md",
             "redirect_url": "/power-query/connectors/sap-hana/sap-hana-encryption",
             "redirect_document_id": false
-        }                                             
-  ]           
+        },                                             
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-pdf.md",
+            "redirect_url": "/power-query/connectors/pdf",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-csv.md",
+            "redirect_url": "/power-query/connectors/text-csv",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-impala.md",
+            "redirect_url": "/power-query/connectors/impala-database",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-using-generic-interfaces.md",
+            "redirect_url": "/power-query/connect-using-generic-interfaces",
+            "redirect_document_id": false
+        }                                                    
+  ]          
+
 }
