@@ -127,8 +127,6 @@
         href: desktop-ssas-multidimensional.md
       - name: "Connect to CSV files"
         href: desktop-connect-csv.md
-      - name: "Connect to a Google BigQuery database"
-        href: desktop-connect-bigquery.md        
       - name: "Connect to an Impala database"
         href: desktop-connect-impala.md
       - name: "Connect to OData feeds"

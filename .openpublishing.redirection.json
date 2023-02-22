@@ -4875,6 +4875,11 @@
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-dataflow-on-premium-gen2.md",
             "redirect_url": "/power-bi/troubleshoot/known-issues/known-issue-dataflow-on-premium",
             "redirect_document_id": false
-        }                                                                                                                                       
+        },                
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-bigquery.md",
+            "redirect_url": "/power-query/connectors/google-bigquery",
+            "redirect_document_id": false
+        }                                                                                                                          
   ]           
 }
