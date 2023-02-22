@@ -4877,7 +4877,7 @@
             "redirect_document_id": false
         },                
         {
-            "source_path": "power-bi/connect-data/desktop-connect-bigquery.md",
+            "source_path": "powerbi-docs/connect-data/desktop-connect-bigquery.md",
             "redirect_url": "/power-query/connectors/google-bigquery",
             "redirect_document_id": false
         }                                                                                                                          
