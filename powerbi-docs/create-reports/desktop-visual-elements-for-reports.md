@@ -87,13 +87,13 @@ For reports that only appear in the **Power BI service**, you can adjust the use
 
 ### Enabling improved visual headers for existing reports
 
-The new visual header is the default behavior for all new reports. For existing reports, you need to enable this behavior in **Power BI Desktop** by going to **File > Options and settings > Options** and then in the **Report settings** section, enable the **Use the modern visual header with updated styling options** checkbox.
+The new visual header is the default behavior for all new reports. For existing reports, you need to enable this behavior in Power BI Desktop by going to **File > Options and settings > Options** and then in the **Report settings** section, enable the **Use the modern visual header with updated styling options** checkbox.
 
 ![Screenshot of the Options menu, highlighting Report settings and the Use the modern visual header with updated styling options checkbox.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_06.png)
 
 ## Next steps
 
-For more information about **Power BI Desktop** and how to get started, see:
+For more information about Power BI Desktop and how to get started, see:
 
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
