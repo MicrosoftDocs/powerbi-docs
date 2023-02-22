@@ -25,11 +25,11 @@ In the *embed for your organization* solution, your web app users authenticate a
 
 ## Azure AD token
 
-For both embed for your customers and embed for your organization solutions, you need an [Azure AD token](/azure/databricks/dev-tools/api/latest/aad/). The Azure AD token is required for all [REST API](/rest/api/power-bi/) operations, and it expires after an hour.
+For both *embed for your customers* and *embed for your organization* solutions, you need an [Azure AD token](/azure/databricks/dev-tools/api/latest/aad/). The Azure AD token is required for all [REST API](/rest/api/power-bi/) operations, and it expires after an hour.
 
-* In the embed for your customers solution, the Azure AD token is used to generate the embed token.
+* In the *embed for your customers* solution, the Azure AD token is used to generate the embed token.
 
-* In the embed for your organization solution, the Azure AD token is used to access Power BI.
+* In the *embed for your organization* solution, the Azure AD token is used to access Power BI.
 
 You can acquire an Azure AD token in one of the following ways:
 
@@ -46,7 +46,7 @@ You can acquire an Azure AD token in one of the following ways:
 
 ## Embed token
 
-When you use the embed for your customers solution, your web app needs to know which Power BI content a user can access. Use the [embed token](/rest/api/power-bi/embedtoken) REST APIs to generate an embed token, which specifies the following information:
+When you use the *embed for your customers* solution, your web app needs to know which Power BI content a user can access. Use the [embed token](/rest/api/power-bi/embedtoken) REST APIs to generate an embed token, which specifies the following information:
 
 * The content your web app user can access
 
@@ -56,11 +56,11 @@ For more information, see [Considerations when generating an embed token](genera
 
 ## Authentication flows
 
-This section describes the different authentication flows for the embed for your customers and embed for your organization solutions.
+This section describes the different authentication flows for the *embed for your customer*s and *embed for your organization* solutions.
 
 ### [Embed for your customers](#tab/embed-for-customers)
 
-The embed for your customers solution uses a non-interactive authentication flow. In an embed for your customer solution, users don't sign in to Azure AD to access Power BI. Instead, your web app uses a reserved Azure AD identity to authenticate against Azure AD and generate the embed token. The reserved identity can be either a *service principal* or a *master user*:
+The *embed for your customers* solution uses a non-interactive authentication flow. In an *embed for your customers* solution, users don't sign in to Azure AD to access Power BI. Instead, your web app uses a reserved Azure AD identity to authenticate against Azure AD and generate the embed token. The reserved identity can be either a *service principal* or a *master user*:
 
 * **[Service principal](embed-service-principal.md)**
     Your web app uses the Azure AD [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) to authenticate against Azure AD and get an *app-only Azure AD token*. This *app-only* authentication method is recommended by Azure AD.
@@ -76,12 +76,12 @@ After successful authentication against Azure AD, your web app generates an [emb
 
 >[!NOTE]
 >
->* To embed by using the embed for your customers solution, you need a capacity with an A, EM, or P SKU.
+>* To embed by using the *embed for your customers* solution, you need a capacity with an A, EM, or P SKU.
 >* To [move to production](move-to-production.md), you need a capacity.
 
-The following diagram shows the authentication flow for the embed for your customers solution.
+The following diagram shows the authentication flow for the *embed for your customers* solution.
 
-:::image type="content" source="media\embed-tokens\paas-authentiction.png" alt-text="Diagram of the authentication flow in an embed for your customers Power BI embedded analytics solution.":::
+:::image type="content" source="media\embed-tokens\paas-authentiction.png" alt-text="Diagram of the authentication flow in an *embed for your customers* Power BI embedded analytics solution.":::
 
 1. The web app user authenticates against your web app with your authentication method.
 
@@ -99,22 +99,22 @@ The following diagram shows the authentication flow for the embed for your custo
 
 ### [Embed for your organization](#tab/embed-for-your-organization)
 
-The embed for your organization solution uses an interactive authentication flow. The web app users authenticate against Azure AD by using their own Power BI credentials. They need to consent to the API permissions that were set when the app was registered with Azure AD. A Microsoft **Permissions requested** dialog window asks users to grant these permissions. After consent is granted, the user can embed the Power BI content that the user has access to.
+The *embed for your organization* solution uses an interactive authentication flow. The web app users authenticate against Azure AD by using their own Power BI credentials. They need to consent to the API permissions that were set when the app was registered with Azure AD. A Microsoft **Permissions requested** dialog window asks users to grant these permissions. After consent is granted, the user can embed the Power BI content that the user has access to.
 
 :::image type="content" source="media/embed-tokens/requested-premissions.png" alt-text="Screenshot of the Microsoft permissions requested pop-up window, which asks customers to grant permissions for accessing Power BI.":::
 
 >[!NOTE]
 >
->* The embed for your organization solution doesn't support A SKUs.
+>* The *embed for your organization* solution doesn't support A SKUs.
 >* To [move to production](move-to-production.md), you'll need one of the following configurations:
 >
 >   * All users with Pro licenses.
 >   * All users with PPU licenses.
 >   * A [capacity](embedded-capacity.md). This configuration allows all users to have free licenses.
 
-This diagram shows an example of the authentication flow for the embed for your organization solution.
+This diagram shows an example of the authentication flow for the *embed for your organization* solution.
 
-:::image type="content" source="media/embed-tokens/saas-authentiction.png" alt-text="Diagram of the authentication flow in an embed for your organization Power BI embedded analytics solution.":::
+:::image type="content" source="media/embed-tokens/saas-authentiction.png" alt-text="Diagram of the authentication flow in an *embed for your organization* Power BI embedded analytics solution.":::
 
 1. The web app user accesses the web app.
 
