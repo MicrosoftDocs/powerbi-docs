@@ -67,7 +67,7 @@ The steps in the previous section do not include collection of mashup traces. To
 
 3. Reproduce the issue or situation for which you want to collect diagnostics and mashup traces.
 4. Close Power BI Desktop to ensure all traces are flushed to the disk.
-5. Open `C:\Users\{username}\AppData\Local\Microsoft\Power BI Desktop\Traces` and compress the contents into a ZIP or similar compressed file.
+5. Open `%localappdata%\Microsoft\Power BI Desktop\Traces` (or `%userprofile%\Microsoft\Power BI Desktop Store App\Traces` if you're using the Microsoft Store version of Power BI Desktop) and compress the contents into a ZIP or similar compressed file.
 6. Repeat this series of steps for any additional scenarios you want to capture.
 
 
