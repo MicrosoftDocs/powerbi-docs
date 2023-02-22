@@ -4880,6 +4880,21 @@
             "source_path": "powerbi-docs/connect-data/desktop-connect-bigquery.md",
             "redirect_url": "/power-query/connectors/google-bigquery",
             "redirect_document_id": false
-        }                                                                                                                          
+        },                                
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-to-web-by-example.md",
+            "redirect_url": "/power-query/connectors/web/web-by-example",
+            "redirect_document_id": false
+        },                                            
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-adobe-analytics.md",
+            "redirect_url": "/power-query/connectors/adobe-analytics",
+            "redirect_document_id": false
+        },                                
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-redshift.md",
+            "redirect_url": "/power-query/connectors/amazon-redshift",
+            "redirect_document_id": false
+        }                                                                 
   ]           
 }

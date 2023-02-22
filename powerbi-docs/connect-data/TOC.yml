@@ -87,8 +87,6 @@
         href: desktop-sharepoint-online-list.md
       - name: "Connect to LinkedIn Sales Navigator"
         href: desktop-connect-linkedin-sales-navigator.md        
-      - name: "Get webpage data by providing examples"
-        href: desktop-connect-to-web-by-example.md
       - name: "Connect to datasets in the Power BI service"
         href: desktop-report-lifecycle-datasets.md
       - name: "Import Excel workbooks"
@@ -97,8 +95,6 @@
         href: desktop-connect-using-generic-interfaces.md
       - name: "Connect to PDF files"
         href: desktop-connect-pdf.md        
-      - name: "Connect to Adobe Analytics"
-        href: desktop-connect-adobe-analytics.md          
       - name: "Connect to an Oracle database"
         href: desktop-connect-oracle-database.md
       - name: Python
@@ -133,8 +129,6 @@
         href: desktop-connect-impala.md
       - name: "Connect to OData feeds"
         href: desktop-connect-odata.md
-      - name: "Connect to an Amazon Redshift database"
-        href: desktop-connect-redshift.md
       - name: "Connect to webpages"
         href: desktop-connect-to-web.md
       - name: "Connect to a Snowflake computing warehouse"
