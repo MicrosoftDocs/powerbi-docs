@@ -28,7 +28,7 @@ When a colleague shares a report with you, make sure to look for the **Filters**
 
  :::image type="content" source="media/end-user-report-filter/power-bi-expand-filters-pane.png" alt-text="Screenshot of a report open in the Power BI service with the Filters pane expanded.":::
 
-The **Filters** pane contains filters that the report *designer* adds to the report. While *Business users* can interact with the existing filters and save changes. However, they can't add new filters to the report. In the previous example, the designer added three page-level filters: **Segment is All**, **Year is 2014**, and **Region is Central**. You can interact and change these filters, but you can't add a fourth page-level filter.
+The **Filters** pane contains filters that the report *designer* adds to the report. *Business users* can interact with the existing filters and save changes. However, they can't add new filters to the report. In the previous example, the designer added three page-level filters: **Segment is All**, **Year is 2014**, and **Region is Central**. You can interact and change these filters, but you can't add a fourth page-level filter.
 
 Some of the filters are shaded, and some aren't. If a filter is shaded, it means a filter has been applied, and some data is excluded. In the following example, the **Region** filter card is shaded and expanded. The **Central** option is the only option selected from the dropdown. Since Region is under the **Filters on this page** heading, all visuals on this page aren't displaying. The data from **West** and **East** regions are excluded.
 
