@@ -5,6 +5,7 @@ author: mihart
 ms.author: mihart
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
+ms.search.form: product-power-bi
 ms.topic: overview
 ms.date: 12/06/2022
 LocalizationGroup: Get started
