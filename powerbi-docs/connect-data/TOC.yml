@@ -80,13 +80,13 @@
       - name: "Use dynamic M query parameters"
         href: desktop-dynamic-m-query-parameters.md
       - name: "Create a dataset from Log Analytics"
-        href: create-dataset-log-analytics.md        
+        href: create-dataset-log-analytics.md
+      - name: "Create a dataset from a SharePoint List"
+        href: create-dataset-sharepoint-online-list.md
       - name: "Create a report on a SharePoint List"
         href: desktop-sharepoint-online-list.md
       - name: "Connect to LinkedIn Sales Navigator"
         href: desktop-connect-linkedin-sales-navigator.md        
-      - name: "Get webpage data by providing examples"
-        href: desktop-connect-to-web-by-example.md
       - name: "Connect to datasets in the Power BI service"
         href: desktop-report-lifecycle-datasets.md
       - name: "Import Excel workbooks"
@@ -95,8 +95,6 @@
         href: desktop-connect-using-generic-interfaces.md
       - name: "Connect to PDF files"
         href: desktop-connect-pdf.md        
-      - name: "Connect to Adobe Analytics"
-        href: desktop-connect-adobe-analytics.md          
       - name: "Connect to an Oracle database"
         href: desktop-connect-oracle-database.md
       - name: Python
@@ -121,34 +119,18 @@
         href: service-r-packages-support.md
       - name: "Enter data directly into Power BI Desktop"
         href: desktop-enter-data-directly-into-desktop.md
-      - name: "Connect to Excel workbooks"
-        href: desktop-connect-excel.md
       - name: "Connect to SSAS multidimensional models"
         href: desktop-ssas-multidimensional.md
       - name: "Connect to CSV files"
         href: desktop-connect-csv.md
-      - name: "Connect to a Google BigQuery database"
-        href: desktop-connect-bigquery.md        
       - name: "Connect to an Impala database"
         href: desktop-connect-impala.md
-      - name: "Connect to OData feeds"
-        href: desktop-connect-odata.md
-      - name: "Connect to an Amazon Redshift database"
-        href: desktop-connect-redshift.md
       - name: "Connect to webpages"
         href: desktop-connect-to-web.md
-      - name: "Connect to a Snowflake computing warehouse"
-        href: desktop-connect-snowflake.md
       - name: "Connect to Snowflake in the Power BI service"
         href: service-connect-snowflake.md        
       - name: "Create visuals with the Azure Cost Management connector"
         href: desktop-connect-azure-cost-management.md        
-      - name: "Connect to Azure Consumption Insights data"
-        href: desktop-connect-azure-consumption-insights.md
-      - name: "Connect to SAP HANA databases"
-        href: desktop-sap-hana.md
-      - name: "Enable encryption for SAP HANA"
-        href: desktop-sap-hana-encryption.md
       - name: "Edit SAP variables in the Power BI service"
         href: service-edit-sap-variables.md        
       - name: "Connect to Analysis Services tabular data"
@@ -165,8 +147,6 @@
         href: desktop-sap-bw-connector.md
       - name: "Use OneDrive for work or school links"
         href: desktop-use-onedrive-business-links.md
-      - name: "Third-party service: Use the Google Analytics connector"
-        href: service-google-analytics-connector.md
       - name: "Connect to Project Online data through Power BI Desktop"
         href: desktop-project-online-connect-to-data.md
     - name: Get data from files
