@@ -91,10 +91,6 @@
         href: desktop-report-lifecycle-datasets.md
       - name: "Import Excel workbooks"
         href: desktop-import-excel-workbooks.md
-      - name: "Connect to data with Power BI Desktop generic interfaces"
-        href: desktop-connect-using-generic-interfaces.md
-      - name: "Connect to PDF files"
-        href: desktop-connect-pdf.md        
       - name: "Connect to an Oracle database"
         href: desktop-connect-oracle-database.md
       - name: Python
@@ -121,10 +117,6 @@
         href: desktop-enter-data-directly-into-desktop.md
       - name: "Connect to SSAS multidimensional models"
         href: desktop-ssas-multidimensional.md
-      - name: "Connect to CSV files"
-        href: desktop-connect-csv.md
-      - name: "Connect to an Impala database"
-        href: desktop-connect-impala.md
       - name: "Connect to webpages"
         href: desktop-connect-to-web.md
       - name: "Connect to Snowflake in the Power BI service"
