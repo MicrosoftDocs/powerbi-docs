@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/29/2021
+ms.date: 02/22/2023
 LocalizationGroup: Model your data
 ---
 # Work with Model view in Power BI Desktop
