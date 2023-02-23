@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 02/20/2023
+ms.date: 02/23/2023
 ---
 
 # Add live Power BI data to PowerPoint
@@ -94,7 +94,7 @@ If you want to add a live visual to your presentation, you need to have it's URL
 
 1. In the Power BI service, open the report to the page that has the visual you want to insert. If desired, configure the visual to the desired state using filters, selection, slicers, etc.
 
-1. At the corner of the visual, select **More options (...)** and then choose **Share > Open in PowerPoint**.
+1. Right-click the visual and choose **Share > Open in PowerPoint**. Alternatively, use the **More options (...)** menu.
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/share-visual-option.png" alt-text="Screenshot of Power B I visual Share option.":::
 

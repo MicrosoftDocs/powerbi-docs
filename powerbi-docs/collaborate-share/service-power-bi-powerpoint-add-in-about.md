@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 09/22/2022
+ms.date: 02/23/2023
 ---
 
 # About storytelling with Power BI in PowerPoint
@@ -47,12 +47,12 @@ If you're a Power BI administrator, see [Information for Power BI administrators
 * The add-in currently supports Power BI report pages and visuals only. Other types of items such as dashboards and paginated reports aren't supported.
 * [Business-to-business (B2B)](../enterprise/service-admin-azure-ad-b2b.md) scenarios aren't supported.
 * The [add-in side pane options](./service-power-bi-powerpoint-add-in-view-present.md#add-in-side-pane) **Delete**, **Reload**, and **Show as Saved Image** are available only in the PowerPoint desktop application. This is because PowerPoint for the web doesn't support the add-in side menu.
-* In national clouds the add-in is supported as an admin managed add-in only, as the Office add-in store isn't accessible from national clouds. Admins should see [Deploying the add-in in sovereign clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-sovereign-clouds) for information about how to get the add-in.
+* The add-in is not supported in national clouds.
 
 ## Next Steps
 
 * [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
-* [View and present live Power BI report pages in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
+* [View and present live Power BI data in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
 * [Information for Power BI administrators](./service-power-bi-powerpoint-add-in-admin.md)
 * [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
