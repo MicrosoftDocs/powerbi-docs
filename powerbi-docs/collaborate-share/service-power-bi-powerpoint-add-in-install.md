@@ -27,7 +27,7 @@ To add live Power BI data to a PowerPoint slide, you first need to get the URL o
 
 ## Get the URL of a report page
 
-If you want to add a live report page to your presentation, you need to have it's URL. There are three ways to get the report page URL:
+If you want to add a live report page to your presentation, you need to have its URL. There are three ways to get the report page URL:
 
 * Through the **Share** option
 * Through the **Export** option
@@ -51,19 +51,19 @@ Choose how you want to get the report page URL.
 
 1. Choose **Share**.
 
-    ![Screenshot of Power B I report Share option.](media/service-power-bi-powerpoint-add-in-install/share-report-option.png)
+    ![Screenshot of Power BI report Share option.](media/service-power-bi-powerpoint-add-in-install/share-report-option.png)
 
 1. Choose the permissions you want to grant and who you want to grant them to, as described in the [sharing reports documentation](service-share-dashboards.md#share-a-report-via-link). Select **Apply**.
 
-    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/send-link-dialog.png" alt-text="Screenshot of Power B I report send link dialog.":::
+    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/send-link-dialog.png" alt-text="Screenshot of Power BI report send link dialog.":::
 
 1. Check the **Include my changes** box if you want to share the report pages current state, and then select **PowerPoint**.
 
-    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/include-my-changes-checkbox.png" alt-text="Screenshot of Power B I report include my changes checkbox.":::
+    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/include-my-changes-checkbox.png" alt-text="Screenshot of Power BI report include my changes checkbox.":::
 
 1. Copy the URL to paste into the Power BI PowerPoint add-in. Alternatively, if you want to create a new presentation with the report already loaded into the add-in, choose **Open in PowerPoint**.
 
-    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/copy-link-dialog.png" alt-text="Screenshot of Power B I report copy link dialog.":::
+    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/copy-link-dialog.png" alt-text="Screenshot of Power BI report copy link dialog.":::
 
 # [Export option](#tab/export)
 
@@ -71,7 +71,7 @@ Choose how you want to get the report page URL.
 
 1. Choose **Export > PowerPoint > Embed live data**.
 
-    ![Screenshot of Power B I report embed live data option.](media/service-power-bi-powerpoint-add-in-install/embed-live-data-option.png)
+    ![Screenshot of Power BI report embed live data option.](media/service-power-bi-powerpoint-add-in-install/embed-live-data-option.png)
 
 1. Check the **Embed report with the data filters you selected** box if you want to export the current state, and then copy the URL and [paste it into the Power BI PowerPoint add-in](#paste-the-url-of-a-report-or-visual-into-the-add-in). If you're creating a new presentation, you can just choose **Open in PowerPoint**. This opens a new PowerPoint presentation with the report already loaded into the add-in.
 
@@ -84,7 +84,7 @@ Choose how you want to get the report page URL.
 
 In the Power BI service, open the report to the page you want to insert, copy the URL from the browser's address bar, and then copy the URL to paste into the Power BI add-in in PowerPoint.
 
-![Screenshot of Power B I report URL in browser address bar.](media/service-power-bi-powerpoint-add-in-install/report-page-url-address-bar.png)
+![Screenshot of Power BI report URL in browser address bar.](media/service-power-bi-powerpoint-add-in-install/report-page-url-address-bar.png)
 
 ---
 
@@ -96,11 +96,11 @@ If you want to add a live visual to your presentation, you need to have its URL.
 
 1. Right-click the visual and choose **Share > Open in PowerPoint**. Alternatively, use the **More options (...)** menu.
 
-    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/share-visual-option.png" alt-text="Screenshot of Power B I visual Share option.":::
+    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/share-visual-option.png" alt-text="Screenshot of Power BI visual Share option.":::
 
 1. Copy the URL and then [paste it into the Power BI PowerPoint add-in](#paste-the-url-of-a-report-or-visual-into-the-add-in). If you're creating a new presentation, you can just choose **Open in PowerPoint**. This opens a new PowerPoint presentation with the visual already loaded into the add-in.
 
-    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/copy-visual-link-dialog.png" alt-text="Screenshot of Power B I visual copy link dialog.":::
+    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/copy-visual-link-dialog.png" alt-text="Screenshot of Power BI visual copy link dialog.":::
 
 ## Paste the URL of a report or visual into the add-in
 
@@ -122,7 +122,7 @@ When you have the report or visual URL you need, paste it into the Power BI add-
 
     The image below illustrates inserting the add-in into a slide and pasting in the URL.
 
-    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/inserting-power-bi-add-in.gif" alt-text="Screenshot of inserting the Power B I report page into the add-in.":::
+    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/inserting-power-bi-add-in.gif" alt-text="Screenshot of inserting the Power BI report page into the add-in.":::
 
     Once the report or visual has loaded, it's live and you can select the data as desired. Any changes you make while editing the presentation will be saved. The next time you open the presentation, the report or visual will appear in the state you last left it in. For more information, see [View and present live Power BI data in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md).
 
