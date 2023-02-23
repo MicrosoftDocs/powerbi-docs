@@ -97,7 +97,7 @@ But you can tell Power BI which visual type to use by adding it to your natural 
 
 If you're unsure what type of questions to ask or terminology to use, expand **Show all suggestions** or look through the other visuals in the report. These techniques get you familiar with the terms and content of the dataset.
 
-:::image type="content" source="media/end-user-q-and-a/power-bi-show-all.png" alt-text="Screenshot shows Q&A with Show all suggestions selected.":::
+:::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-show-all.png" alt-text="Screenshot shows Q&A with Show all suggestions selected.":::
 
 ### Create a visual using your own Q&A question
 
@@ -105,7 +105,7 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
     **Autocomplete**. As you type your question, Power BI Q&A shows relevant and contextual suggestions to help you quickly become productive with natural language. As you type, you get immediate feedback and results. The experience is similar to typing in a search engine.
 
-    :::image type="content" source="media/end-user-q-and-a/power-bi-autocomplete.png" alt-text="Screenshot shows Q&A with a blue underlined word.":::
+    :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-autocomplete.png" alt-text="Screenshot shows Q&A with a blue underlined word.":::
 
     **Visual cues and feedback**. Power BI Q&A shows words with solid and dotted underlines to identify which words Power BI did or didn't recognize.
 
@@ -119,7 +119,7 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
     Sometimes, none of the suggestions make sense, or Power BI doesn't recognize the word at all. An example could be using the word 'geo' even though it doesn't exist anywhere in the data. The word is in the English dictionary, but Q&A marks this term with a double underline. Power BI might make some suggestions or it might suggest that you ask the report designer to add the term.  
 
-    :::image type="content" source="media/end-user-q-and-a/power-bi-qna-stores.png" alt-text="Screenshot shows a Dropdown with suggestions for Q&A.":::
+    :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-qna-stores.png" alt-text="Screenshot shows a Dropdown with suggestions for Q&A.":::
 
     Power BI Q&A recognizes words that mean the same thing, thanks to the integration with Bing and Office. Q&A underlines the word so you know it's not a direct match.
 
