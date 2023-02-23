@@ -53,11 +53,11 @@ How would we go about creating this line chart using Q&A?
 
 1. Open Power BI Desktop and load the Retail Analysis Sample. You can get this sample from [Download original sample Power BI files](sample-datasets.md#download-original-sample-power-bi-files).
 
-2. Select the **Report** icon to open the Reports view.
+1. Select the **Report** icon to open the Reports view.
 
     :::image type="content" source="media/power-bi-visualization-introduction-to-q-and-a/power-bi-report-view-2.png" alt-text="Screenshot showing the Report icon to open the Reports view.":::
 
-3. At the bottom of the page, select **District Monthly Sales**.
+1. At the bottom of the page, select **District Monthly Sales**.
 
     :::image type="content" source="media/power-bi-visualization-introduction-to-q-and-a/power-bi-desktop-report-visual-2.png" alt-text="Screenshot showing the chart tile for Last Year Sales and This Year Sales in Reports view.":::
 
@@ -65,17 +65,17 @@ How would we go about creating this line chart using Q&A?
 
 1. Go back to the Retail Analysis Sample dashboard.
 
-2. The dashboard contains the same area chart tile for "Last Year Sales and This Year Sales." Select this tile. Don't select the tile you created with Q&A. Selecting it opens Q&A. The original area chart tile was created in a report, so the report opens to the page that contains this visualization.
+1. The dashboard contains the same area chart tile for "Last Year Sales and This Year Sales." Select this tile. Don't select the tile you created with Q&A. Selecting it opens Q&A. The original area chart tile was created in a report, so the report opens to the page that contains this visualization.
 
     :::image type="content" source="media/power-bi-visualization-introduction-to-q-and-a/power-bi-dashboard.png" alt-text="Screenshot showing the Retail Analysis sample dashboard.":::
 
-3. Open the report in Editing view by selecting **Edit**. If you aren't the owner of a report, you can't open the report in Editing view.
+1. Open the report in Editing view by selecting **Edit**. If you aren't the owner of a report, you can't open the report in Editing view.
 
     :::image type="content" source="media/power-bi-visualization-introduction-to-q-and-a/power-bi-edit-report.png" alt-text="Screenshot showing the Edit report button.":::
 
 ---
 
-4. Select the area chart and review the settings in the **Fields** pane. The report creator built this chart by selecting these three values (**Last Year Sales** and **This Year Sales > Value** from the **Sales** table, and **FiscalMonth** from the **Time** table) and organizing them in the **Axis** and **Values** wells of the **Visualizations** pane.
+1. Select the area chart and review the settings in the **Fields** pane. The report creator built this chart by selecting these three values (**Last Year Sales** and **This Year Sales > Value** from the **Sales** table, and **FiscalMonth** from the **Time** table) and organizing them in the **Axis** and **Values** wells of the **Visualizations** pane.
 
     :::image type="content" source="media/power-bi-visualization-introduction-to-q-and-a/power-bi-desktop-visualizations-2.png" alt-text="Screenshot showing the Visualization pane.":::
 
