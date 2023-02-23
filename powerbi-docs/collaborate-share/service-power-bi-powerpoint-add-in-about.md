@@ -16,7 +16,7 @@ ms.date: 09/22/2022
 
 With the Power BI add-in for PowerPoint, you can enhance your data storytelling in PowerPoint with live, interactive Power BI data. Not only will the data shown in your presentations be always up to date, but also, while you're presenting, you'll be able to filter and drill down on data in response to questions and feedback from your audience without having to switch contexts.
 
-![Screenshot of the Power BI add-in in PowerPoint](media/service-power-bi-powerpoint-add-in-about/power-bi-powerpoint-addin-storytelling.gif)
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-about/power-bi-powerpoint-addin-storytelling.gif" alt-text="Screenshot of the Power BI add-in in PowerPoint.":::
 
 The add-in currently supports adding individual report pages and individual visuals to PowerPoint slides.
 
