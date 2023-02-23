@@ -68,13 +68,13 @@ If you want to get and use the Excel file in the Power BI service, follow these 
 
 1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *IT Spend Analysis Sample-no-PV.xlsx*.
 
-1. Open the file in Excel and then select File > Publish > Publish to Power BI.
+1. Open the file in Excel and then select **File** > **Publish** > **Publish to Power BI**.
 
 1. Select a workspace, such as **My workspace**, and choose **Export**.
 
    There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
 
-1. In the Power BI service, the exported data appears as a dataset in the selected workspace. Select** More options** (...) > **Auto-create report**.
+1. In the Power BI service, the exported data appears as a dataset in the selected workspace. Select **More options** (...) > **Auto-create report**.
 
 1. Select **Save**, enter a name for your report, and then choose **Save**.
 
@@ -163,6 +163,4 @@ Select **Edit** in the black **Power BI** header bar to explore in the editing v
 
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
-We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn. Connect to your own data.
-
-With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started creating in the Power BI service](../fundamentals/service-get-started.md).
+We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn. Connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started creating in the Power BI service](../fundamentals/service-get-started.md).
