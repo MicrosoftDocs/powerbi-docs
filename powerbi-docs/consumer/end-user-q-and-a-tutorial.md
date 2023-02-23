@@ -1,13 +1,13 @@
 ---
 title: Q&A tutorial for Power BI business users
-description: How to use Power BI Q&A natural language queries.
+description: Learn how to explore a sample in the Power BI service and create a visual by using natural language in Q&A.
 author: mihart
 ms.author: mihart
 ms.reviewer: mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 09/01/2021
+ms.date: 02/24/2023
 LocalizationGroup: Ask questions of your data
 ---
 
@@ -15,79 +15,61 @@ LocalizationGroup: Ask questions of your data
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-This tutorial shows you how to: 
+This tutorial shows you how to:
 
 > [!div class="checklist"]
-> * Import the Retail Analysis sample and and the Sales and Marketing sample and add them to the Power BI service.
-> * Explore the samples in the service.
-> * Create a visual by using natural language in *Q&A*.
+> - Import the Retail Analysis sample in the Power BI service.
+> - Explore the sample in the service.
+> - Create a visual by using natural language in *Q&A*.
 
-If you'd like more background information, see [Introduction to Q&A](end-user-q-and-a.md). In that article you learn about Q&A, where to use it, and the difference between Power BI Q&A on a dashboard and the Power BI Q&A visual for reports.  
+If you'd like more background information, see [Q&A for Power BI business users](end-user-q-and-a.md). In that article you learn about Q&A, where to use it, and the difference between Power BI Q&A on a dashboard and the Power BI Q&A visual for reports.  
 
-If you want to familiarize yourself with the built-in samples in this tutorial and their scenarios, see [Retail Analysis sample for Power BI: Take a tour](../create-reports/sample-retail-analysis.md) and [Sales and Marketing sample for Power BI:  Take a tour](../create-reports/sample-sales-and-marketing.md) before you begin.
+If you want to familiarize yourself with the built-in sample in this article, see [Retail Analysis sample for Power BI: Take a tour](../create-reports/sample-retail-analysis.md).
 
 ## Prerequisites
 
-- To download a sample in the Power BI service, you can sign up for a [free or trial license](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
-- **Power BI Q&A** is available with a Pro or Premium license.  [Q&A in the Power BI mobile apps](mobile/mobile-apps-ios-qna.md) and [Q&A with Power BI Embedded](../developer/embedded/qanda.md) are covered in separate articles. 
-- At the current time, **Power BI Q&A** only supports answering natural language queries asked in English, although there is a preview available for Spanish that can be enabled by your Power BI administrator.
+*Power BI Q&A* is available with a Pro or Premium license. For more information, see [Q&A virtual analyst in iOS apps](mobile/mobile-apps-ios-qna.md) and [Q&A in Power BI embedded analytics](../developer/embedded/qanda.md).
 
-## Import the samples in the Power BI service
+At the current time, Power BI Q&A only supports answering natural language queries asked in English, although there is a preview available for Spanish that can be enabled by your Power BI administrator.
 
+## Import the sample in the Power BI service
 
-1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample. 
+1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
-    If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
+1. On the **Learning center** page, under **Sample reports**, scroll until you see the **Retail Analysis Sample**.
 
-    
+1. Select the sample. It opens in Reading mode.
 
-2. Select **Get data** at the bottom of the nav pane. 
-
-    :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-get-samples.png" alt-text="Select Get data.":::
-
-
-1. On the **Get Data** page that appears, select **Samples**.
-
-    :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-get-sample.png" alt-text="Select Samples.":::
-
-1. Select **Retail Analysis Sample** > **Connect**.
-
-   :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-retail.png" alt-text="Select Retail Analysis Sample.":::
-
-1. Repeat steps 2-4 for the Sales and Marketing Sample. 
-
-## What was imported?
-
-With the built-in samples, when you select **Connect**, Power BI gets a copy of that built-in sample and stores it for you in the cloud.
-
-1. Power BI creates the new dashboard, report, and dataset in your workspace. 
+1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
 
    ![Retail Analysis Sample entry](media/end-user-q-and-a-tutorial/retail-entry.png)
-2. On the **Content** tab, you see the dashboard and the report, both named *Retail Analysis Sample*.
+
+   On the **Content** tab, you see the dashboard and the report, both named *Retail Analysis Sample*.
 
    ![Screenshot showing the Retail Analysis Sample Content tab with dashboard and report entries.](media/end-user-q-and-a-tutorial/power-bi-new-report.png)
 
-
-
 ## Use Q&A on a dashboard in the Power BI service
-In the Power BI service (app.powerbi.com), a dashboard contains tiles pinned from one or more datasets, so you can ask questions about any of the data contained in any of those datasets. To see which reports and datasets were used to create the dashboard, select **See related content** from the **More actions** dropdown.
+
+In the Power BI service, a dashboard contains tiles pinned from one or more datasets, so you can ask questions about any of the data contained in any of those datasets. To see which reports and datasets were used to create the dashboard, select **See related content** from the **More actions** dropdown.
 
 :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-see-related.png" alt-text="See related from the menu bar.":::
 
-## How do I start?
-First, get familiar with the content. Take a look at the visuals on the dashboard and in the report. Get a feel for the type and range of data that is available to you. 
+## Get started
+
+First, get familiar with the content. Take a look at the visuals on the dashboard and in the report. Get a feel for the type and range of data that is available to you.
 
 > [!NOTE]
-> If you already feel comfortable with the data, just place your cursor in the question box to open the Q&A screen. 
+> If you already feel comfortable with the data, just place your cursor in the question box to open the Q&A screen.
 
 For example:
 
-* If a visual's axis labels and values include "sales",  "account", "month", and "opportunities", then you can confidently ask questions such as: "Which *account* has the highest *opportunity*, or show *sales* by month as a bar chart."
+- If a visual's axis labels and values include "sales",  "account", "month", and "opportunities", then you can confidently ask questions such as: "Which *account* has the highest *opportunity*" or "show *sales* by month as a bar chart."
 
-* If you have website performance data in Google Analytics, you can ask Q&A about time spent on a web page, number of unique page visits, and user engagement rates. Or, if you're querying demographic data, you might ask questions about age and household income by location.
+- If you have website performance data in Google Analytics, you can ask Q&A about time spent on a web page, number of unique page visits, and user engagement rates. Or, if you're querying demographic data, you might ask questions about age and household income by location.
 
-Once you're familiar with the data, head back to the dashboard  and place your cursor in the question box. This opens the Q&A screen.
+Once you're familiar with the data, head back to the dashboard and place your cursor in the question box. The Q&A screen opens.
 
 :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-suggestion.png" alt-text="Screenshot of the Q&A screen."::: 
 
@@ -97,10 +79,11 @@ You can select any of these to add them to the question box and then refine the 
 
 :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-results.png" alt-text="Q&A screen with query":::
 
-Another way Power BI helps you ask questions is with features such as: prompts, autocomplete, and visual cues. Power BI provides this help for Q&A on dashboards and with the Q&A visual in reports. We'll discuss these features in detail below, in the section [Create a Q&A visual by typing your own natural language query](#create-a-visual-using-your-own-qa-question)
+Another way Power BI helps you ask questions is with features such as: prompts, autocomplete, and visual cues. Power BI provides this help for Q&A on dashboards and with the Q&A visual in reports. We'll discuss these features in detail below, in the section [Create a visual using your own Q&A question](#create-a-visual-using-your-own-qa-question).
 
-## Use Q&A to ask natural language questions 
-Open the "Sales and Marketing Sample" dashboard. To use Q&A on a dashboard or to use the Q&A visual in a report, select one of the suggested questions or type your own natural language question. 
+## Use Q&A to ask natural language questions
+
+To use Q&A on a dashboard or to use the Q&A visual in a report, select one of the suggested questions or type your own natural language question.
 
 ### Create a visual by using a suggested question
 
