@@ -124,7 +124,7 @@ When you have the report or visual URL you need, paste it into the Power BI add-
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/inserting-power-bi-add-in.gif" alt-text="Screenshot of inserting the Power B I report page into the add-in.":::
 
-    Once the report or visual has loaded, it is live and you can select the data as desired. Any changes you make while editing the presentation will be saved. The next time you open the presentation, the report or visual will appear in the state you last left it in.
+    Once the report or visual has loaded, it is live and you can select the data as desired. Any changes you make while editing the presentation will be saved. The next time you open the presentation, the report or visual will appear in the state you last left it in. For more information, see [View and present live Power BI data in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md).
 
 ## Next steps
 
