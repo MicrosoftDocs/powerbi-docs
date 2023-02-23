@@ -12,7 +12,7 @@ LocalizationGroup: Reports
 ---
 # Identify and use buttons in the Power BI service
 
-In the reports you receive from colleagues, you may have noticed buttons and wondered how to use them. Some buttons have words, some have arrows, others have graphics, and some even have dropdown menus. This article will teach you how to recognize buttons what to do with them.
+In the reports you receive from colleagues, you may have noticed buttons and wondered how to use them. Some buttons have words, some have arrows, others have graphics, and some even have dropdown menus. This article shows you how to recognize buttons what to do with them.
 
 For more information, see [Create buttons in Power BI reports](../create-reports/desktop-buttons.md).
 
@@ -34,13 +34,13 @@ A back button can have an arrow icon. When you select it, Power BI takes to the 
 
 1. Power BI opens the *Market basket analysis* report page and uses the selections made on the source page to filter what displays on the destination page. In this example, the **Market basket analysis** report page is filtered for **Word**.
 
-1. To return to the previous page, select the back button that is labeled **Go back**.
+1. To return to the previous page, select the back button labeled **Go back**.
 
     :::image type="content" source="media/end-user-buttons/power-bi-back.png" alt-text="Screenshot of the Market basket analysis report page with the back button highlighted.":::
 
 ## Bookmark buttons
 
-Report *designers* often include bookmarks with their reports. You can view the list of report bookmarks by selecting **Bookmarks** from the upper right corner. When a report designer adds a bookmark *button*, it's just an alternate way to navigate to the particular report page associated with that bookmark. The page will have the applied filters and settings captured by the bookmark. For more information, see [Bookmarks in the Power BI service](end-user-bookmarks.md).
+Report *designers* often include bookmarks with their reports. You can view the list of report bookmarks by selecting **Bookmarks** from the upper right corner. When a report designer adds a bookmark *button*, it's just an alternate way to navigate to a particular report page associated with that bookmark. The page has the applied filters and settings captured by the bookmark. For more information, see [Bookmarks in the Power BI service](end-user-bookmarks.md).
 
 In the following example, the button has a bookmark icon and the bookmark name *Urban*.
 
@@ -48,25 +48,25 @@ In the following example, the button has a bookmark icon and the bookmark name *
 
 When selected, the bookmark button takes you to the location and settings defined for that bookmark.  In this example, the bookmark is on the *Growth opportunities* report page that is cross-filtered for **Urban**.
 
-:::image type="content" source="media/end-user-buttons/power-bi-urban.png" alt-text="Screenshot of the report page filtered for Urban.":::
+:::image type="content" source="media/end-user-buttons/power-bi-urban.png" alt-text="Screenshot of a report page filtered for Urban.":::
 
 ## Drillthrough buttons
 
 There are two ways to drill through in the Power BI service. Drilling through takes you to a different report page. The data on that destination page displays according to the filters and selections you've made on the source page.
 
-One way to drill through in a report is to right-click a data point in a visual, select **Drill through**, and choose the destination. For more information on this method, see [Back buttons](#back-buttons).The second method report designers use is to add a drillthrough *button*. The button makes the action more obvious and calls attention to important insights.  
+One way to drill through in a report is to right-click a data point in a visual, select **Drill through**, and choose the destination. For more information on this method, see [Back buttons](#back-buttons). The second method report designers use is to add a drillthrough *button*. The button makes the action more obvious and calls attention to important insights.  
 
 Drillthrough buttons can have more than one prerequisite. If you don't fulfill all the prerequisites, the button won't work. Let's look at an example.
 
-Here the drillthrough button is designed to take you to the *Store details* page. Hovering over the button reveals a tooltip with the prequisites&mdash;both a store and a product need to be selected. Until you select one of each, the button remains inactive.
+Here the drillthrough button is designed to take you to the *Store details* page. Hovering over the button reveals a tooltip with the prerequisites. You need to select both a store and a product. Until you select one of each, the button remains inactive.
 
 :::image type="content" source="media/end-user-buttons/power-bi-drill-two-selections.png" alt-text="Screenshot of an inactive drillthrough button with hover tooltip.":::
 
-After selecting one product (**Word**) and one store (**Leo**), the button changes color, signifying it's now active.
+After you select one product (**Word**) and one store (**Leo**), the button changes color, signifying it's now active.
 
 :::image type="content" source="media/end-user-buttons/power-bi-select-both.png" alt-text="Screenshot of an active drillthrough button.":::
 
-After selecting the drillthrough button, it takes you to the *Store* report page. The *Store* page displays according to your filters of **Word** and **Leo**.
+Select the drillthrough button, it takes you to the *Store* report page. The *Store* page displays according to your filters of **Word** and **Leo**.
 
 :::image type="content" source="media/end-user-buttons/power-bi-store.png" alt-text="Screenshot of the Store reports page filtered by Word and Leo.":::
 
@@ -78,23 +78,23 @@ Drillthrough buttons can also have dropdown menus that offer a choice of destina
 
 Page navigation buttons take you to a different page in the same report. Report designers often create navigation buttons to tell a story or guide you through the report insights. In the following example, the report designer added a button on each report page that takes you back to the first page (the top-level summary page) of the report. The page navigation button is helpful when there are many pages in a report.
 
-:::image type="content" source="media/end-user-buttons/power-bi-nav-button.png" alt-text="Screenshot of a report with the page navigation button highlighted.":::
+:::image type="content" source="media/end-user-buttons/power-bi-nav-button.png" alt-text="Screenshot of a report with a page navigation button highlighted.":::
 
 ## Q&A buttons
 
-Selecting a Q&A button opens the Power BI Q&A Explorer window. The Q&A window displays on top of the report page and can be closed by selecting the X. [Learn about Q&A](end-user-q-and-a.md)
+If you select a Q&A button. it opens the Power BI Q&A Explorer window. The Q&A window displays on top of the report page and closes when you select the X. For more information, see [Q&A for Power BI business users](end-user-q-and-a.md).
 
-![Screenshot of the Power B I Q&A Explorer window with the text Ask a question about your data.](media/end-user-buttons/power-bi-qna.png)
+:::image type="content" source="media/end-user-buttons/power-bi-qna.png" alt-text="Screenshot of an open Power BI Q&A Explorer window with suggested questions.":::
 
 ## Web URL
 
-Web URL buttons open a new browser window. Report designers might add this type of button as a reference source, to link to the corporate website or a help page, or even as a link to a different report or dashboard. In the example below, the Web URL button lets you download the source file for the report.
+Web URL buttons open a new browser window. Report designers might add this type of button as a reference source, to link to the corporate website or a help page, or even as a link to a different report or dashboard. In the following example, the Web URL button lets you download the source file for the report.
 
-Since the page opens in a separate window, close the window or select your Power BI tab to return to the Power BI report.
+Since the page opens in a separate window, close the window, or select your Power BI tab to return to the Power BI report.
 
-![screenshot of Download PBIX button and new browser window with download link](media/end-user-buttons/power-bi-url.png)
+:::image type="content" source="media/end-user-buttons/power-bi-url.png" alt-text="Screenshot of a WEb URL button highlighted, and a new browser window open with a download link.":::
 
 ## Next step
 
-[Bookmarks](end-user-bookmarks.md)
-[Drill up, drill down](end-user-drill.md)
+- [Bookmarks in the Power BI service](end-user-bookmarks.md)
+- [Drill mode in the Power BI service](end-user-drill.md)
