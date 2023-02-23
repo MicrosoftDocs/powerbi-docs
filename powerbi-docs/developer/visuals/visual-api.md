@@ -138,6 +138,6 @@ public destroy(): void
 
 ## Next steps
 
-* *[Visual project structure](visual-project-structure.md)
+* [Visual project structure](visual-project-structure.md)
 
 * [Local storage API](local-storage.md)
