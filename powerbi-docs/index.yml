@@ -131,7 +131,7 @@ conceptualContent:
           text: What is Power BI embedded analytics?
         - url: /power-bi/developer/embedded/embedded-analytics-power-bi
           itemType: overview
-          text: Power BI Embedded Generation 2
+          text: Power BI Embedded
         - url: developer/visuals/develop-power-bi-visuals.md
           itemType: overview
           text: Develop your own Power BI visual

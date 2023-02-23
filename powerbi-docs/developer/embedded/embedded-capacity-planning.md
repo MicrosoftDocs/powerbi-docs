@@ -66,7 +66,7 @@ To test or assess your capacity load:
 4. Use the [Power BI Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/) to assess your capacity needs. This GitHub repository also includes a [video walk-through](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/#video-walk-through). Use this tool carefully: test with up to a few dozen concurrent simulated users and extrapolate for higher concurrent loads (hundreds or thousands, depending on your needs.) For more information, see [Assess your capacity load](./load-assessment-planning-tool.md).
 Alternatively, use other load testing tools, but treat the iFrame as a black box and simulate user activity via JavaScript code.
 
-5. Use the [Gen 2 metrics app](../../enterprise/service-premium-metrics-app.md) that you​ installed in step 3 to monitor the capacity utilization incurred via the load testing tool. Alternatively, you can monitor the capacity by checking the [Premium metrics](./monitor-power-bi-embedded-reference.md) by using [alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-overview).
+5. Use the [metrics app](../../enterprise/service-premium-metrics-app.md) that you​ installed in step 3 to monitor the capacity utilization incurred via the load testing tool. Alternatively, you can monitor the capacity by checking the [Premium metrics](./monitor-power-bi-embedded-reference.md) by using [alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-overview).
 
 Consider using a larger SKU for your capacity if the actual CPU incurred on your capacity by the load testing is approaching the capacity limit.
 
