@@ -14,7 +14,7 @@ LocalizationGroup: Reports
 
 In the reports you receive from colleagues, you may have noticed buttons and wondered how to use them. Some buttons have words, some have arrows, others have graphics, and some even have dropdown menus. This article shows you how to recognize buttons what to do with them.
 
-For more information, see [Create buttons in Power BI reports](../create-reports/desktop-buttons.md).
+For information on how to add buttons to reports, see [Create buttons in Power BI reports](../create-reports/desktop-buttons.md).
 
 ## How to recognize a button
 
@@ -22,11 +22,11 @@ A button can resemble a shape, image, or icon from a report page, but if an acti
 
 ## Types of buttons
 
-Report creators add buttons on reports to help you with navigation and exploration. Here are some button types: back, bookmark, arrows, Q&A, help, and blank.
+Report creators add buttons on reports to help you with navigation and exploration. Here are some button types: back, bookmark, arrow, Q&A, help, and blank.
 
 ### Back buttons
 
-A back button can have an arrow icon. When you select it, Power BI takes to the previous page.  Back buttons are often used with drillthrough. Here's an example of a back button used with drillthrough.
+A back button can have an arrow icon. When you select it, Power BI takes you to the previous page.  Back buttons are often used with drillthrough. Here's an example of the steps of a back button used with drillthrough.
 
 1. Select **Word** in the bar chart and drill through to  **Market basket analysis**.
 
@@ -34,7 +34,7 @@ A back button can have an arrow icon. When you select it, Power BI takes to the 
 
 1. Power BI opens the *Market basket analysis* report page and uses the selections made on the source page to filter what displays on the destination page. In this example, the **Market basket analysis** report page is filtered for **Word**.
 
-1. To return to the previous page, select the back button labeled **Go back**.
+1. Select the back button labeled **Go back** to return to the previous page.
 
     :::image type="content" source="media/end-user-buttons/power-bi-back.png" alt-text="Screenshot of the Market basket analysis report page with the back button highlighted.":::
 
@@ -66,7 +66,7 @@ After you select one product (**Word**) and one store (**Leo**), the button chan
 
 :::image type="content" source="media/end-user-buttons/power-bi-select-both.png" alt-text="Screenshot of an active drillthrough button.":::
 
-Select the drillthrough button, it takes you to the *Store* report page. The *Store* page displays according to your filters of **Word** and **Leo**.
+Selecting the drillthrough button takes you to the *Store* report page. The *Store* page displays according to your filters of **Word** and **Leo**.
 
 :::image type="content" source="media/end-user-buttons/power-bi-store.png" alt-text="Screenshot of the Store reports page filtered by Word and Leo.":::
 
@@ -76,13 +76,13 @@ Drillthrough buttons can also have dropdown menus that offer a choice of destina
 
 ## Page navigation
 
-Page navigation buttons take you to a different page in the same report. Report designers often create navigation buttons to tell a story or guide you through the report insights. In the following example, the report designer added a button on each report page that takes you back to the first page (the top-level summary page) of the report. The page navigation button is helpful when there are many pages in a report.
+Page navigation buttons take you to a different page in the same report. Report designers often create navigation buttons to tell a story or guide you through the report insights. In the following example, the report designer added a button on each report page. The button takes you back to the first page (the top-level summary page) of the report. The page navigation button is helpful when there are multiple pages in a report.
 
 :::image type="content" source="media/end-user-buttons/power-bi-nav-button.png" alt-text="Screenshot of a report with a page navigation button highlighted.":::
 
 ## Q&A buttons
 
-If you select a Q&A button. it opens the Power BI Q&A Explorer window. The Q&A window displays on top of the report page and closes when you select the X. For more information, see [Q&A for Power BI business users](end-user-q-and-a.md).
+If you select a Q&A button it opens the Power BI Q&A Explorer window. The Q&A window displays on top of the report page and closes when you select the X. For more information, see [Q&A for Power BI business users](end-user-q-and-a.md).
 
 :::image type="content" source="media/end-user-buttons/power-bi-qna.png" alt-text="Screenshot of an open Power BI Q&A Explorer window with suggested questions.":::
 
