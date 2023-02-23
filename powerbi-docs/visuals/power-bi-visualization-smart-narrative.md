@@ -21,6 +21,12 @@ The smart narrative visualization helps you provide a quick text summary of visu
 
 Use smart narrative summaries in your reports to address key takeaways, to point out trends, and to edit the language and format for a specific audience. When you [add a live Power BI report page to PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-view-present.md), instead of pasting a screenshot of your report's key takeaways, you can add narratives that update with every refresh. Your audience can use the summaries to understand the data, get to key points faster, and explain the data to others.
 
+This article describes how to add:
+
+- [A smart narrative for a page](#smart-narrative-for-a-page)
+- [A smart narrative for a visual](#smart-narrative-for-a-visual)
+- [A smart narrative *icon* to a visual](#add-a-smart-narrative-icon-to-a-visual)
+
 ## Watch the video
 
 Watch Justyna show how to use smart narratives, then try it out yourself using the sample file, below the video.
