@@ -67,7 +67,7 @@ To generate data insights:
 
 1. Select **Data options > Data insights**.
 
-    :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-data-insights-option.png" alt-text="Screenshot showing Data insights pasted into slide and notes.":::
+    :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-data-insights-option.gif" alt-text="Screenshot showing Data insights pasted into slide and notes.":::
 
 1. The insight appears in the **Data insights** dialog. The text is editable and you can change it as desired. When you are satisfied with the text, you can either paste it directly onto the slide as a PowerPoint textbox, or you can copy it onto the clipboard, from where you paste it wherever you like - into the slide notes, for example. 
 
@@ -90,7 +90,7 @@ When you share the presentation with others, to be able to view the data in the 
 
 To make sure people in your organization can access the report or visual and take advantage of the live data experience, when you add a live report page or visual to a presentation, be sure to use the link generated in Power BI by the [Share > PowerPoint option](./service-power-bi-powerpoint-add-in-install.md?tabs=share#get-the-report-page-url). This ensures that the people in your org who you shared the presentation with will be able to see the live data when they open the presentation.
 
-![Animated gif showing how to use the Share option in Power BI to get a link for sharing.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-share-option.gif)
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-share-option.gif" alt-text="Animated gif showing how to use the Share option in Power BI to get a link for sharing.":::
 
 Users who don't have permission to view the report or visual can request access directly from the presentation, and will be able to view the data once they've received access.
 
