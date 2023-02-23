@@ -41,10 +41,10 @@ Once you have the data gateway set up, connect to your data from Power BI. Eithe
 1. In Power BI, select the cog icon :::image type="icon" source="media/service-q-and-a-direct-query/power-bi-cog-2.png"::: and choose **Settings**.
 
    :::image type="content" source="media/service-q-and-a-direct-query/powerbi-settings-2.png" alt-text="Screenshot of Settings menu, highlighting the Settings option.":::
-2. Select **Datasets** and choose the dataset to enable for Q&A.
+1. Select **Datasets** and choose the dataset to enable for Q&A.
 
    :::image type="content" source="media/service-q-and-a-direct-query/power-bi-q-and-a-settings-2.png" alt-text="Screenshot of Datasets in Settings menu.":::
-3. Expand **Q&A**, select the checkbox for **Turn on Q&A to ask natural language questions about your data**, and choose **Apply**.
+1. Expand **Q&A**, select the checkbox for **Turn on Q&A to ask natural language questions about your data**, and choose **Apply**.
 
    :::image type="content" source="media/service-q-and-a-direct-query/power-bi-qna-dataset-direct-query-2.png" alt-text="Screenshot highlighting the expanded Q&A area.":::
 
@@ -63,9 +63,9 @@ The feature has some limitations:
 
 ## Next steps
 
-- [On-premises data gateway](../connect-data/service-gateway-onprem.md)
-- [Manage your data source - Analysis Services](../connect-data/service-gateway-enterprise-manage-ssas.md)
-- [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
-- [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
+* [On-premises data gateway](../connect-data/service-gateway-onprem.md)
+* [Manage your data source - Analysis Services](../connect-data/service-gateway-enterprise-manage-ssas.md)
+* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+* [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
