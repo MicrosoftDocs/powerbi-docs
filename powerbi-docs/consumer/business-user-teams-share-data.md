@@ -27,7 +27,7 @@ Data helps everyone get on the same page before important decisions. Sharing dat
 
     :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-save-tab-new.png" alt-text="Screenshot showing the Power BI dialog in Teams with Save highlighted.":::
 
-This works in channels, meetings, and even in chats.
+You can share in channels, meetings, and even in chats.
 
 ## Give team members permission
 
@@ -35,21 +35,21 @@ Make sure your team has permission to the report or scorecard by sharing it with
 
 1. Open the item in Power BI in Teams, or in the Power BI service, and select **File** > **Manage Permissions**.
 
-    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-file-manage-permissions-new.png" alt-text="Screenshot of a Power BI visual. Manage permissions is selected from the File dropdown.":::
+    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-file-manage-permissions-new.png" alt-text="Screenshot of a Power BI visual. Manage permissions is selected from the File dropdown." lightbox="media/business-user-teams-share-data/teams-power-bi-file-manage-permissions-new.png":::
 
     If you don't see this option, you might not have permission to share the item. If you do not, don’t worry. The attendees can request access themselves when they try to view the report.
 
 1. Select **Direct access**.
 
-    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-direct-access-new.png" alt-text="Screenshot of the Manage Permissions window with Direct access highlighted.":::
+    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-direct-access-new.png" alt-text="Screenshot of the Manage Permissions window with Direct access highlighted." lightbox="media/business-user-teams-share-data/teams-power-bi-direct-access-new.png":::
 
 1. Select **Add user**.
 
-    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-add-user-new.png" alt-text="Screenshot of the Manage Permissions window with the Add user button highlighted.":::
+    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-add-user-new.png" alt-text="Screenshot of the Manage Permissions window with the Add user button highlighted." lightbox="media/business-user-teams-share-data/teams-power-bi-add-user-new.png":::
 
 1. Add the names of your colleagues. Decide what permissions you want them to have, whether to send them an email, and select **Grant access**.
 
-    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-grant-access-new.png" alt-text="Screenshot of Grant people access dialog.":::
+    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-grant-access-new.png" alt-text="Screenshot of Grant people access dialog." lightbox="media/business-user-teams-share-data/teams-power-bi-grant-access-new.png":::
 
 ## Chat about data with rich links and cards
 
