@@ -21,7 +21,7 @@ The visual class should implement the following methods as shown in the sample b
 
 * [`constructor`](#constructor), a standard constructor that initializes the visual's state
 * [`update`](#update), updates the visual's data
-* [`getFormattingModel`](#getformattingmodel-optional), returns formatting model that populate the property pane (formatting options) where you can modify them as needed
+* [`getFormattingModel`](#getformattingmodel-optional), returns a formatting model that populates the property pane (formatting options) where you can modify properties as needed
 * [`destroy`](#destroy-optional), a standard destructor for cleanup
 
 ```typescript
@@ -73,7 +73,7 @@ constructor(options: VisualConstructorOptions)
   * `locale`, returns a locale string, see [Localization](./localization.md)
   * `instanceId`, returns a string to identify the current visual instance
   * `colorPalette`, returns the colorPalette required to apply colors to your data
-  * `fetchMoreData`, supports using more data than the standard limit (1K rows)
+  * `fetchMoreData`, supports using more data than the standard limit (1K rows), , see [Fetch more data](./fetch-more-data.md)
   * `switchFocusModeState`, helps to change the focus mode state
 
  ```typescript
@@ -119,7 +119,7 @@ public update(options: VisualUpdateOptions): void
 
 ## getFormattingModel *(optional)*
 
-This method is called once every time we open properties pane or when the user edit any format property in this pane. It returns `FormattingModel` with all information on the properties pane design, hierarchy, properties and latest formatting values.
+This method is called once each time we open the properties pane or the user edits any of the properties in the pane. It returns [`FormattingModel`](./format-pane.md) with all information on the properties pane design, hierarchy, properties and latest formatting values.
 
 ```typescript
 getFormattingModel(): visuals.FormattingModel;
@@ -133,13 +133,11 @@ The destroy function is called when your visual is unloaded and can be used for 
 public destroy(): void
 ```
 
-> [!NOTE]
+> [!TIP]
 > Power BI generally doesn't call `destroy` since it's faster to remove the entire IFrame that contains the visual.
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Visual project structure](visual-project-structure.md)
+* *[Visual project structure](visual-project-structure.md)
 
->[!div class="nextstepaction"]
->[Local storage API](local-storage.md)
+* [Local storage API](local-storage.md)
