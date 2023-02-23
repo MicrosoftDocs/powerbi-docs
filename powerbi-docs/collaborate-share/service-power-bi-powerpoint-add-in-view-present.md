@@ -38,13 +38,7 @@ To get a cleaner view and more space for the report page, you can collapse the b
 
 You interact with the data just as you would in the Power BI service. You can apply filters and slicers, select data points, and drill down on data.
 
-![Animated gif that shows interacting with the report](media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-interact-report.gif)
-
-![Animated gif2 that shows interacting with the report](media/service-power-bi-powerpoint-add-in-view-present/export-import.gif)
-
-![Animated gif1 that shows interacting with the report](media/service-power-bi-powerpoint-add-in-view-present/export-import1.gif)
-
-:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/export-import4a.gif" alt-text="Animated gif4a that shows interacting with the report":::
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-interact-report.gif" alt-text="Animated gif that shows interacting with the report.":::
 
 The live report page or visual is interactive in both edit and slide-show modes. Changes you make to the report or visual's state (via filtering, selection, slicing, etc.) in edit mode while setting up your slides are saved. By contrast, changes you make to the report or visual's state in slide show mode aren't saved. When you exit the show, the report or visual returns to the state it was in when you left edit mode.
 
