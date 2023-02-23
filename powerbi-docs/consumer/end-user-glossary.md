@@ -189,7 +189,7 @@ The mode in which report *designers* can explore, design, build, and share a rep
 
 **ellipsis**
 
-(...) menu. Selecting an ellipsis displays additional menu options. Also referred to as the **More actions** menu.
+(...) menu. Selecting an ellipsis displays additional menu options. Also referred to as the **More actions** or **More options** menu, depending on the menu options.
 
 **embed code**
 
