@@ -23,26 +23,26 @@ To follow along, open the [Retail Analysis sample dashboard](sample-retail-analy
 ## How to pin a tile from Q&A
 
 1. Open a dashboard that has at least one tile pinned from a report. When you ask a question, Power BI looks for the answer in any dataset that has a tile pinned to that dashboard.
-2. In the question box at the top of your dashboard, start typing what you want to know about your data.
+1. In the question box at the top of your dashboard, start typing what you want to know about your data.
    :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png" alt-text="Screenshot of the Q&A question box.":::
-3. For example, as you type "year over year revenue", the question box gives you suggestions. Select a suggestion or press Enter.
+1. For example, as you type "year over year revenue", the question box gives you suggestions. Select a suggestion or press Enter.
    :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-type-q-and-a.png" alt-text="Screenshot of a question in the question box.":::
 
-4. To add the chart to your dashboard as a tile, select **Pin visual** in the upper right corner. If the dashboard has been shared with you, you aren't able to pin any visualizations.
+1. To add the chart to your dashboard as a tile, select **Pin visual** in the upper right corner. If the dashboard has been shared with you, you aren't able to pin any visualizations.
 
-5. Pin the tile to an existing dashboard or to a new dashboard.
+1. Pin the tile to an existing dashboard or to a new dashboard.
 
    :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-to-dashboard-2.png" alt-text="Screenshot of the Pin to dashboard dialog.":::
 
    * Existing dashboard: select the name of the dashboard from the dropdown. Your choices are limited to only those dashboards within the current workspace.
    * New dashboard: type the name of the new dashboard, and it will be added to your current workspace.
 
-6. Select **Pin**.
+1. Select **Pin**.
 
    A success message lets you know the visualization was added as a tile to your dashboard.
 
    :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-success.png" alt-text="Screenshot of the pinned to dashboard dialog.":::
-7. Select **Go to dashboard** to see the new tile. There, you can [rename, resize, add a hyperlink, reposition the tile, and more](service-dashboard-edit-tile.md) on your dashboard.
+1. Select **Go to dashboard** to see the new tile. There, you can [rename, resize, add a hyperlink, reposition the tile, and more](service-dashboard-edit-tile.md) on your dashboard.
 
    :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned-2.png" alt-text="dashboard with tiles":::
 
