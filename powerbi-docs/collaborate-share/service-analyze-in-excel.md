@@ -1,104 +1,121 @@
 ---
-title: Start in Power BI with Analyze in Excel
-description: Learn how to bring Power BI datasets into Excel, view, and interact with them using Analyze in Excel.
+title: Create Excel workbooks with refreshable Power BI data
+description: Learn how to build refreshable reports in Excel with Power BI datasets so you can analyze the data like you would with a dataset that is local to Excel.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ikedeagu
-ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.topic: how-to
-ms.date: 10/18/2022
-LocalizationGroup: Reports
+ms.topic: conceptual
+ms.date: 02/13/2023
+LocalizationGroup: Share your work
 ---
-# Start in Power BI with Analyze in Excel
+# Create Excel workbooks with refreshable Power BI data
 
-With **Analyze in Excel**, you can bring Power BI datasets into Excel, view, and interact with them using PivotTables, charts, slicers, and other Excel features. For more information, See the **Prerequisites** section of [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md#prerequisites) before you get started.
+When you view reports in the Power BI service (`https://app.powerbi.com`), you might want to further enrich the report data with additional assumptions, perform what-if analysis, or validate the numbers in a specific Power BI visual or an entire Power BI report.
 
-## Connect to Power BI data with Analyze in Excel
+In this article, you learn how to create Excel workbooks containing connected Power BI data that you can refresh directly inside the workbook. That way, you can focus on your analysis in Excel and be confident that you are working with up-to-date data.
 
-In the Power BI service, go to the workspace that contains the dataset or report you want to analyze in Excel and use any of the following options:
+## Prerequisites
 
-- Select **More options (...)** next to the dataset or report name and select **Analyze in Excel**.
+- Your organization’s tenant administrator must enable the **Users can work with Power BI datasets in Excel using a live connection** tenant setting. Learn more about the [Excel live connection](../admin/service-admin-portal-export-sharing.md#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
+- For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
+- You must have **Build** permission to the Power BI dataset or have at least a **Contributor** role in the Power BI workspace containing your dataset.
+- You must have a Power BI license: Free, Pro or Premium Per User (PPU). Power BI Free license users can only work with datasets in My workspace or a Power BI Premium capacity. Learn more about [Power BI licenses](../fundamentals/service-features-license-type.md).
+- You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
 
-    :::image type="content" source="media/service-analyze-in-excel/start-powerbi-analyze-in-excel-more-options.png" alt-text="Screenshot of My workspace showing Analyze in Excel action from more options dropdown menu selected.":::  
-    
-- Open the report and select **Export** > **Analyze in Excel** from the top ribbon.
+## Choose Power BI data to evaluate in Excel
 
-    :::image type="content" source="media/service-analyze-in-excel/start-powerbi-export-analyze-excel.png" alt-text="Start from a report, select Export, then Analyze in Excel.":::
+Power BI provides you with options to ensure that you can extract the right granularity of data depending on how you want to analyze that data in Excel, either with Excel PivotTables or Excel tables. In the Power BI service, use the following two features to create an Excel workbook:
 
-- Select a dataset. In the **Dataset details** pane, select **Analyze in Excel** on the menu bar.
+- [Analyze in Excel](#analyze-in-excel)
+- [Export to Excel with live connection ](#export-to-excel-with-live-connection)
 
-    :::image type="content" source="media/service-analyze-in-excel/start-powerbi-dataset-analyze-excel.png" alt-text="Start from a dataset, then select Analyze in Excel."  lightbox="media/service-analyze-in-excel/start-powerbi-dataset-analyze-excel-expanded.png":::
+### Analyze in Excel
 
-    >[!NOTE]
-    >If you select **Analyze in Excel** for a report, it's the report's underlying dataset that's brought into Excel.
+With Analyze in Excel, you can create an Excel workbook containing the entire dataset for a specific Power BI report and analyze that dataset in Excel using PivotTables, Pivot Charts, and other Excel features.
 
-The Power BI service generates an Excel workbook that contains an OLAP connection to the Power BI dataset, and automatically saves this Excel workbook to your OneDrive for work or school. You can open the Excel workbook by selecting **Open in Excel for the web**. The workbook opens in a new browser tab.
+In the Power BI service, you can use any of the following Analyze in Excel entry points to create an Excel workbook:
 
-:::image type="content" source="media/service-analyze-in-excel/open-workbook-excel-web-app.png" alt-text="Screenshot of Analyze in Excel dialog.":::
-    
->[!NOTE]
->If you don't have OneDrive for work or school in your environment, select **Analyze in Excel** to download the Excel workbook to your computer's local Downloads folder.
-    
-The workbook file name matches the dataset (or report, or other data source) from which it was derived. So if the report was called *Sales Analysis*, the file name would be **Sales Analysis.xlsx**.
-    
-When you open the workbook in Excel for the web, you may have to enable the Power BI query by selecting **Yes** so you can start building your PivotTable reports.
-    
-:::image type="content" source="media/service-analyze-in-excel/excel-web-query-warning-dialog.png" alt-text="Screenshot of Excel for the web warning dialog.":::
-    
-You can also open the workbook file in Excel Desktop by selecting **Open in Desktop App** in the Excel for the web ribbon.
+- Open a Power BI report. Select **Export** > **Analyze in Excel** from the top ribbon.
 
-:::image type="content" source="media/service-analyze-in-excel/open-workbook-excel-desktop-app.png" alt-text="Screenshot of Open Excel Desktop App button in Excel for the web.":::
-    
-The first time you open the file in Excel Desktop, you might need to select **Enable Editing**, depending on your [Protected view](https://support.microsoft.com/en-gb/office/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ui=en-us&rs=en-gb&ad=gb).
-![Screenshot of Protected view enable editing banner](media/service-analyze-in-excel/protected-view-enable-editing-banner.png)
+     :::image type="content" source="media/service-analyze-in-excel/analyze-excel-ribbon.png" alt-text="Screenshot showing selecting Export, then Analyze in Excel on the ribbon." lightbox="media/service-analyze-in-excel/analyze-excel-ribbon.png":::
 
-You might also have to select **Enable Content**, depending on your [Trusted document](https://support.microsoft.com/en-us/office/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53) settings.
+- Go to the workspace containing your Power BI dataset or report, select **More options** (**...**) next to the dataset or report name and select **Analyze in Excel**.
 
-![Screenshot of Trusted document enable content banner](media/service-analyze-in-excel/trusted-document-enable-content-banner.png)
+    :::image type="content" source="media/service-analyze-in-excel/analyze-excel-datahub.png" alt-text="Screenshot showing selecting More options, then Analyze in Excel." lightbox="media/service-analyze-in-excel/analyze-excel-datahub.png":::
 
-When you use Analyze in Excel, any sensitivity label that's applied to a Power BI dataset is automatically applied to the Excel file. If the sensitivity label on the dataset later changes to be more restrictive, when you refresh the data in Excel, the label applied to the Excel file gets updated automatically. If the dataset changes to become less restrictive, no label inheritance or update occurs.
+- Select a dataset in a Power BI workspace. In the **Dataset details** page, select **Analyze in Excel** on the menu bar.
 
-If you manually set sensitivity labels in Excel, they aren’t automatically overwritten by the dataset's sensitivity label. Instead, a policy tip appears with a recommendation to upgrade the label.
+    :::image type="content" source="media/service-analyze-in-excel/analyze-excel-datahub-details.png" alt-text="Screenshot showing Analyze on Excel in the Dataset details page." lightbox="media/service-analyze-in-excel/analyze-excel-datahub-details.png":::
 
-For more information, see [How to apply sensitivity labels in Power BI](../enterprise/service-security-apply-data-sensitivity-labels.md).
+After you select Analyze in Excel, Power BI generates an Excel workbook and saves it to your OneDrive SharePoint account. It has the same name as the Power BI report, so you can open the workbook directly in Excel for the web.
 
-
-## Save and share your new workbook
-
-You can save the Excel workbook you create with the Power BI dataset, just like any other workbook. However, you can't publish or import the workbook back into Power BI. You can only publish or import workbooks into Power BI that have data in tables, or a data model. Because the new workbook has a connection to the dataset in Power BI, publishing or importing it into Power BI would be going in circles.
-
-After you save your workbook, you can share it with other Power BI users in your organization. 
-
-When a user opens your workbook, the data might not be the latest version. They see your PivotTables, and data as they were when you last saved the workbook.To get the latest data, users must use the **Refresh** button on the **Data** ribbon. And because the workbook connects to a dataset in Power BI, the first time users try to refresh the workbook, they must sign in to Power BI and install the Excel updates.
-
-Refreshing for external connections isn't supported in Excel Online. Because users need to refresh the dataset, we recommend that they open the workbook in the desktop version of Excel.
+:::image type="content" source="media/service-analyze-in-excel/open-excel-web.png" alt-text="Screenshot showing the Excel file saved to SharePoint." lightbox="media/service-analyze-in-excel//open-excel-web.png":::
 
 > [!NOTE]
-> Administrators for Power BI tenants can use the *Power BI admin portal* to disable the use of **Analyze in Excel** with on-premises datasets that are housed in Analysis Services (AS) databases. When that option is disabled, **Analyze in Excel** is disabled for AS databases, but continues to be available for other datasets.
+> If you don't have a OneDrive SharePoint account, Power BI downloads the Excel workbook to your local computer.
+
+When you choose **Open in Excel for the web**, your Excel workbook opens in a separate browser tab. To enable the Power BI query in Excel, select **Yes** on the **Query and Refresh Data** dialog.
+
+:::image type="content" source="media/service-analyze-in-excel/excel-web-unsafe-dialog.png" alt-text="Screenshot showing the Query and Refresh Data dialog."::: 
+
+After you select **Yes** in the dialog, you can see the tables and measures from your Power BI dataset in the PivotTable Fields. You can start building your PivotTable reports in Excel.
+
+:::image type="content" source="media/service-analyze-in-excel/analyze-excel-web-workbook.png" alt-text="Screenshot showing PivotTable Fields in Excel." lightbox="media/service-analyze-in-excel/analyze-excel-web-workbook.png"::: 
+
+If you want to work with your data in the Excel Desktop app, select the **Editing** button in the ribbon and select **Open in Desktop app**. 
+
+:::image type="content" source="media/service-analyze-in-excel/open-workbook-excel-desktop.png" alt-text="Screenshot showing Open the Desktop app." lightbox="media/service-analyze-in-excel/open-workbook-excel-desktop.png":::
+
+## Export to Excel with live connection
+
+While viewing a Power BI visual, you may want to further explore the visual data in Excel and keep the data connected. You can export a table of refreshable data from a Power BI visual to Excel:
+
+1. Choose a visual in a Power BI report, select **More options** (**…**).
+ 
+    :::image type="content" source="media/service-analyze-in-excel/more-options-power-bi-visual.png" alt-text="Screenshot showing More options." lightbox="media/service-analyze-in-excel/more-options-power-bi-visual.png":::
+
+1. On the **Options** menu, select **Export data**. You have different options to select what type of data you want to export to Excel.
+
+    :::image type="content" source="media/service-analyze-in-excel/export-data-menu.png" alt-text="Screenshot showing Export options." lightbox="media/service-analyze-in-excel/export-data-menu.png"::: 
+
+1. Select the **Summarized data** card, and choose the **.xslx (Excel) with live connection (500,000 row max)** option under **File format**.
+
+    :::image type="content" source="media/service-analyze-in-excel/export-excel-dialog.png" alt-text="Screenshot showing the Which data do you want to export dialog." lightbox="media/service-analyze-in-excel/export-excel-dialog.png"::: 
+
+1. After you select **Export**, Power BI downloads an Excel workbook containing the live Power BI data to your computer.
+
+    The first time you open the Excel workbook, it might open in read-only mode until you select **Enable Editing**, depending on your Protected View settings in Office.
+
+    :::image type="content" source="media/service-analyze-in-excel/protected-view-excel.png" alt-text="Screenshot showing Enable editing.":::
+
+1. Depending on your [Trusted document](https://support.microsoft.com/office/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53) settings, you might also need to select **Enable Content** to load the Power BI data to the Excel grid.
+
+    :::image type="content" source="media/service-analyze-in-excel/security-warning-excel.png" alt-text="Screenshot showing the security warning.":::
+
+    The data from the Power BI visual is now visible as an Excel table that can be refreshed against Power BI.
+
+    :::image type="content" source="media/service-analyze-in-excel/connected-excel-table.png" alt-text="Screenshot showing connected data in Excel." lightbox="media/service-analyze-in-excel/connected-excel-table.png":::
+
+    > [!NOTE]
+    > The **ExportHeaders** worksheet in the Excel workbook contains details about the filters applied to the Power BI visual that the data was exported from.
 
 ## Considerations and limitations
 
-- Some organizations might have Group Policy rules that prevent you from installing the required updates to Excel. If you can't install the updates, check with your administrator.
-- Row-level security (RLS) is supported for Analyze in Excel. RLS is enforced at the data-model level, and is always applied to all users who access data in the report. Read more about [row-level security](../enterprise/service-admin-rls.md).
-- There may be times when you use Analyze in Excel and you get an unexpected result, or the feature doesn't work as you expect. For solutions to common issues, see [Troubleshoot Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md).
-- Only Power BI datasets that use Import mode preserve hierarchies in Analyze in Excel workbooks. Power BI datasets that are built on DirectQuery or composite models don't retain their hierarchies when you use Analyze in Excel.
-- Analyze in Excel doesn't support specifying a locale by modifying the connection string after workbook has been generated.
+- Row-level security (RLS) and object-level security (OLS) are supported for Analyze in Excel and Export with Live Connection. RLS is enforced at the data-model level while OLS is enforced at the table or column level and both security layers apply to all users who access data in a specific Power BI report. Read more about [row-level security](../enterprise/service-admin-rls.md) and [object-level security](../enterprise/service-admin-ols.md).
+- For Analyze in Excel, only Power BI datasets that use Import mode preserve hierarchies in the PivotTable Fields in the Excel workbook. Power BI datasets that are built on DirectQuery or composite models don't retain their hierarchies when you use Analyze in Excel.
+- Analyze in Excel doesn't support specifying a locale by modifying the connection string after the workbook has been generated.
 - You might see an error message if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. For more information, see [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
-- Guest users can't analyze Power BI data in Excel for datasets that are sent from a tenant that's different from the one that hosts the datasets. 
-- Analyzing Power BI data in Excel is a Power BI service feature. You can't analyze Power BI data in Excel from Power BI Report Server or Power BI Embedded.
+- Users external to the tenant hosting the Power BI dataset can't analyze Power BI data in Excel.
+- Analyze in Excel and Export with live connection aren't supported in Power BI Report Server or Power BI PaaS Embedded.
 - Analyze in Excel might not work as expected if field parameters are used in the underlying Power BI dataset.
-
-
-When you connect to Power BI data in Excel, see the **Prerequisites** section of [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md#prerequisites) for other requirements.
+- Analyze in Excel and Export with live connection aren't available for Power BI datasets with a live connection to Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS).
+- Mac users can only use Excel for the web to explore Excel workbooks containing Power BI datasets.
+- The column name and order in a Power BI visual may not be preserved when data is exported to Excel from that visual.
 
 ## Next steps
 
-You might also be interested in the following articles:
-
-* [Use cross-report drillthrough in Power BI Desktop](../create-reports/desktop-cross-report-drill-through.md)
-* [Using slicers Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
-* [Troubleshoot connecting Excel to Power BI data](desktop-troubleshooting-analyze-in-excel.md)
-* [Access Power BI featured tables in Excel (preview)](service-excel-featured-tables.md).
-* [How to apply sensitivity labels in Power BI](../enterprise/service-security-apply-data-sensitivity-labels.md)
+- Now that you've created the Excel workbook with refreshable Power BI data, it's time to [design a report in Excel with that Power BI data](service-analyze-power-bi-datasets-excel.md)
+- [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md)
+- Questions? [Try the Power BI Community](https://community.powerbi.com/)

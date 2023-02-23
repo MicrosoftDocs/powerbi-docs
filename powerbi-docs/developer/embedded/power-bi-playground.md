@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 02/16/2022
+ms.date: 11/16/2022
 ms.custom: intro-overview
 ---
 
 # What is the Power BI embedded analytics playground?
 
-**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/no-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data
+[!INCLUDE[Customers no Org yes](../../includes/applies-embedded-app-no-user-yes.md)]
 
 The [Power BI embedded analytics playground](https://go.microsoft.com/fwlink/?linkid=848279) makes it easy for you to learn, explore, and try out Power BI embedded analytics. It’s also where you can keep up with all the new features and updates of Power BI embedded.
 
@@ -36,6 +36,10 @@ Go to the developer sandbox for hands-on experience using our client APIs. You c
 Drag and drop code snippets into the report, or type them directly into the code editor area to see how they work.
 
 :::image type="content" source="media/power-bi-playground/sandbox-add-code.png" alt-text="A screenshot of the developer sandbox in use.":::
+
+You can choose between JavaScript and TypeScript for writing your code. All API code snippets will be updated based on your selection, and the last language used is saved for next time.
+
+:::image type="content" source="./media/power-bi-playground/select-languages.png" alt-text="Screenshot of menu to select either JavaScript or TypeScript.":::
 
 ## Explore our APIs
 
