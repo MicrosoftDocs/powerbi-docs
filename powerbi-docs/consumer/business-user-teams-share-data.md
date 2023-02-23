@@ -7,7 +7,7 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 01/31/2023
+ms.date: 02/22/2023
 LocalizationGroup: Get started
 
 ---
@@ -21,9 +21,9 @@ Data helps everyone get on the same page before important decisions. Sharing dat
 ## Share in channels, chats, and meetings
 
 1. Open the channel, chat, or meeting where you’d like to share.
-2. Select the **+ Add a tab** button and add the Power BI tab.
-3. Pick the Power BI item you’d like to share.
-4. Select **Save**.
+1. Select the **+ Add a tab** button and add the Power BI tab.
+1. Pick the Power BI item you’d like to share.
+1. Select **Save**.
 
     :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-save-tab-new.png" alt-text="Screenshot showing the Power BI dialog in Teams with Save highlighted.":::
 
@@ -39,15 +39,15 @@ Make sure your team has permission to the report or scorecard by sharing it with
 
     If you don't see this option, you might not have permission to share the item. If you do not, don’t worry. The attendees can request access themselves when they try to view the report.
 
-2. Select **Direct access**.
+1. Select **Direct access**.
 
     :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-direct-access-new.png" alt-text="Screenshot of the Manage Permissions window with Direct access highlighted.":::
 
-3. Select **Add user**.
+1. Select **Add user**.
 
     :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-add-user-new.png" alt-text="Screenshot of the Manage Permissions window with the Add user button highlighted.":::
 
-4. Add the names of your colleagues. Decide what permissions you want them to have, whether to send them an email, and select **Grant access**.
+1. Add the names of your colleagues. Decide what permissions you want them to have, whether to send them an email, and select **Grant access**.
 
     :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-grant-access-new.png" alt-text="Screenshot of Grant people access dialog.":::
 
@@ -58,25 +58,25 @@ When discussing data, it’s important that your colleagues can open the underly
 ### Discussing data is easy
 
 1. Open a report in the Power BI app in Teams, or in the Power BI service.
-2. (Optionally) If you want, select a specific visualization, and then click **Chat in Teams**.
+1. (Optionally) If you want, select a specific visualization, and then click **Chat in Teams**.
 
-    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-visual-report-chat.png" alt-text="Screenshot of selecting Chat in Teams on a visual.":::
+    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-visual-report-chat.png" alt-text="Screenshot of selecting Chat in Teams on a visual." lightbox="media/business-user-teams-share-data/teams-power-bi-visual-report-chat.png":::
 
-3. Send a message to a channel where you work with your team.
+1. Send a message to a channel where you work with your team.
 
 The link will include the full context of the data you were looking at, including the page, the visual, and any filters you applied. When your colleagues open the link, they quickly see the data you’re referring to.
 
 ### Send your colleagues links to reports
 
 1. In the Teams channel or chat, start a new conversation.
-2. In the command bar for the editor, select **Messaging extensions (...)**.
+1. In the command bar for the editor, select **Messaging extensions (...)**.
 
     :::image type="content" source="media/business-user-teams-meetings/teams-chat-meeting-messaging-extensions.png" alt-text="Screenshot of a Teams chat window with the Messaging extensions button highlighted.":::
 
-3. Select **Power BI**.
-4. Search for the content you want to share, or select from your list of recent items.
-5. Pick a Power BI item.
-6. Select **Send**.
+1. Select **Power BI**.
+1. Search for the content you want to share, or select from your list of recent items.
+1. Pick a Power BI item.
+1. Select **Send**.
 
     :::image type="content" source="media/business-user-teams-meetings/teams-power-bi-meeting-chat-send.png" alt-text="Screenshot of selecting Send to send the message in chat.":::
 
@@ -92,14 +92,14 @@ If you use Power BI in a web browser, it’s easy to send a link to a colleague.
 
 1. Open a report in the Power BI service in the browser, and copy the link.
 
-    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-copy-link-new.png" alt-text="Screenshot of a browser window with the link highlighted.":::
+    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-copy-link-new.png" alt-text="Screenshot of a browser window with the link highlighted." lightbox="media/business-user-teams-share-data/teams-power-bi-copy-link-new.png":::
 
-2. Start a conversation and paste the link.
+1. Start a conversation and paste the link.
    Teams automatically creates a rich card.
-3. Select **Send**.
-4. Your colleague sees a rich card with a link to open the report.
+1. Select **Send**.
+1. Your colleague sees a rich card with a link to open the report.
 
-    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-rich-card-chat.png" alt-text="Screenshot of a rich card sent in a Teams chat message.":::
+    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-rich-card-chat.png" alt-text="Screenshot of a rich card sent in a Teams chat message." lightbox="media/business-user-teams-share-data/teams-power-bi-rich-card-chat.png":::
 
 ## Next steps
 
