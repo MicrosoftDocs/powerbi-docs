@@ -22,7 +22,7 @@ For example, consider the following visual that shows *Total units* by *Month* a
 
 You can ask the Power BI service to explain increases, decreases, or unusual distributions in visuals, and get fast, automated, insightful analysis about your data. Right-click on a data point, select **Analyze > Explain the decrease** (or increase if the previous bar was lower), or **Analyze > Find where this distribution is different**. Then the insight is displayed in an easy-to-use window.
 
-:::image type="content" source="media/end-user-analyze-visuals/power-bi-decrease.png" alt-text="Screenshot of a line chart visual with the Analyze feature open and selected":::
+:::image type="content" source="media/end-user-analyze-visuals/power-bi-decrease.png" alt-text="Screenshot of a line chart visual with the Analyze feature open and selected.":::
 
 The Analyze feature is contextual, and is based on the immediately previous data point&mdash;such as the previous bar or column.
 
