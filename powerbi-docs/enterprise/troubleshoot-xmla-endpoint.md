@@ -162,7 +162,7 @@ When connecting to a Power BI workspace with SSMS, ensure the following:
 
 ### Query execution in SSMS
 
-When connected to a workspace in a [Power BI Premium](/power-bi/enterprise/service-premium-what-is#power-bi-premium-generation-2) or a [Power BI Embedded](.././developer/embedded/embedded-analytics-power-bi.md) capacity, SQL Server Management Studio may display the following error:
+When connected to a workspace in a [Power BI Premium](../enterprise/service-premium-what-is.md) or a [Power BI Embedded](.././developer/embedded/embedded-analytics-power-bi.md) capacity, SQL Server Management Studio may display the following error:
 
 ```
 Executing the query ...
@@ -267,7 +267,7 @@ Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/a
 
 The DMV DISCOVER_M_EXPRESSIONS data management view (DMV) is currently not supported in Power BI using the XMLA Endpoint. Applications can use the Tabular object model (TOM) to obtain M expressions used by the data model.
 
-## Resource governing command memory limit in Premium Gen 2
+## Resource governing command memory limit in Premium
 
 Premium capacities use resource governing to ensure no single dataset operation can exceed the amount of available memory resources for the capacity - determined by SKU. For example, a P1 subscription has an *effective memory limit* per item of 25 GB, for a P2 subscription the limit is 50 GB, and for a P3 subscription the limit is 100 GB. In addition to dataset (database) size, the effective memory limit also applies to underlying dataset command operations like [Create](/analysis-services/tmsl/create-command-tmsl?view=power-bi-premium-current&preserve-view=true), [Alter](/analysis-services/tmsl/alter-command-tmsl?view=power-bi-premium-current&preserve-view=true), and [Refresh](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
 
