@@ -2,7 +2,7 @@
 title: Interacting with an ArcGIS map that has been shared with you
 description: Learn how to use the many features of an ArcGIS map combined with data layers and spatial analysis to provide insights into your Power BI data.
 author: mihart
-manager: kvivek
+manager: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
