@@ -75,7 +75,7 @@ Choose how you want to get the report page URL.
 
 1. Check the **Embed report with the data filters you selected** box if you want to export the current state, and then copy the URL and [paste it into the Power BI PowerPoint add-in](#paste-the-url-of-a-report-or-visual-into-the-add-in). If you're creating a new presentation, you can just choose **Open in PowerPoint**. This opens a new PowerPoint presentation with the report already loaded into the add-in.
 
-    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/embed-live-data-dialog.png" alt-text="Screenshot of Power B I report embed live data dialog.":::
+    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/embed-live-data-dialog.png" alt-text="Screenshot of Power BI report embed live data dialog.":::
 
     >[!NOTE]
     > Although this option is located in the Export menu and is labeled "Embed live data", no data actually becomes part of the PowerPoint file. The data remains secure in Power BI.
