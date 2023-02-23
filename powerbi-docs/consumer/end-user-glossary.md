@@ -27,7 +27,10 @@ Use your work or school account to sign in to Power BI. Administrators manage wo
 
 **Admin portal**
 
-The location where Power BI admins manage users, features, and settings for Power BI in their organization. (Note: Microsoft 365, Azure, and PowerApps use Admin center.)
+The location where Power BI admins manage users, features, and settings for Power BI in their organization.
+
+  > [!NOTE]
+  > Microsoft 365, Azure, and PowerApps use Admin center.)
 
 **aggregates**
 
