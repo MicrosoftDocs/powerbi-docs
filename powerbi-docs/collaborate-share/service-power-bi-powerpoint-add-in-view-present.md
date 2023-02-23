@@ -28,11 +28,12 @@ As soon as you add a live Power BI report page or visual to PowerPoint, you can 
 
 In the add-in, you see:
 
-* The report page or visual. The report page or visual is fully interactive, in both edit and slideshow modes, unless it has been [frozen as a static image](#freeze-the-current-view). The left-hand report page navigation pane that you see in the Power BI service isn't included. If there are page navigation visuals in the report itself, you can use them to navigate to other pages in the report.
-* A toolbar across the bottom of the report page. The toolbar contains info and menus with controls that help you work with the data and set up your presentations. See the [Controls](#controls) section for more detail.
-* A Show/Hide arrow at the upper right side that opens the add-in side pane (desktop application only). The add-in side pane contains additional controls for working with the add-in, such as freezing the page or visual as a static image. See [Add-in side pane](#add-in-side-pane) for more detail.
+* **The report page or visual**. The report page or visual is fully interactive, in both edit and slideshow modes, unless it has been [frozen as a static image](#freeze-the-current-view). The left-hand report page navigation pane that you see in the Power BI service isn't included. If there are page navigation visuals in the report itself, you can use them to navigate to other pages in the report.
+* **A toolbar across the bottom of the report page**. The toolbar contains info and menus with controls that help you work with the data and set up your presentations. See the [Controls](#controls) section for more detail.
+* **A Show/Hide arrow at the upper right side** that opens the add-in side pane (desktop application only). The add-in side pane contains additional controls for working with the add-in, such as freezing the page or visual as a static image. See [Add-in side pane](#add-in-side-pane) for more detail.
 
-To get a cleaner view and more space, you can collapse the bottom toolbar by toggling the **Expand/Collapse the toolbar** in the bottom right corner of the add-in.
+>{!TIP]
+>To get a cleaner view and more space, you can collapse the bottom toolbar by toggling the **Expand/Collapse the toolbar** in the bottom right corner of the add-in.
 
 ## Interact with data
 
