@@ -86,7 +86,7 @@ Reports can be printed one page at a time.
 
     :::image type="content" source="./media/end-user-print/power-bi-print-report.png" alt-text="Screenshot of the file menu open and Print this page selected.":::
 
-1. After the Print window for your browser opens, select the settings to fit your pint job. For example, if your report is wider than it's long, you might want to change the layout to **Landscape**.
+1. After the Print window for your browser opens, select the settings to fit your print job. For example, if your report is wider than it's long, you might want to change the layout to **Landscape**.
 1. Select **Print**.
 
 ## Print a report visual
@@ -108,7 +108,7 @@ Q: Why can't I print all the report pages at once?</br>
 A: Report pages can only be printed one page at a time.
 
 Q: Why can't I print to PDF?</br>
-A: You'll see this option only if you've already configured the PDF driver in your browser.
+A: You'll see this option only if you've already configured the PDF driver in your browser. If you don't see this option, your administrator might have disabled print to PDF.
 
 Q: Why doesn't my browser match the screenshots when I select **Print**?</br>
 A: The Print screens vary by browser and software version.
