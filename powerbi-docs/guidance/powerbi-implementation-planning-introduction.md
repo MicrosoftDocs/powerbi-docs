@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.custom: video-RWUWA9
 ms.topic: conceptual
-ms.date: 12/12/2022
+ms.date: 02/19/2023
 ---
 
 # Power BI implementation planning
@@ -45,6 +45,16 @@ When you implement Power BI, there are many subject areas to consider. The follo
 
 > [!NOTE]
 > The series is a work in progress. We will gradually release new and updated articles over time.
+
+## Usage scenarios
+
+The series includes usage scenarios that illustrate different ways that creators and consumers can deploy and use Power BI:
+
+- [Content collaboration and delivery](powerbi-implementation-planning-usage-scenario-overview.md#content-collaboration-and-delivery-scenarios)
+- [Self-service BI](powerbi-implementation-planning-usage-scenario-overview.md#self-service-bi-scenarios)
+- [Content management and deployment](powerbi-implementation-planning-usage-scenario-overview.md#content-management-and-deployment-scenarios)
+- [Real-time](powerbi-implementation-planning-usage-scenario-overview.md#real-time-scenarios)
+- [Embedding and hybrid](powerbi-implementation-planning-usage-scenario-overview.md#embedding-and-hybrid-scenarios)
 
 ## Purpose
 
