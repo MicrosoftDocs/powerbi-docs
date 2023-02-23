@@ -16,9 +16,9 @@ The IT Spend Analysis built-in sample contains a dashboard, report, and dataset 
 
 :::image type="content" source="media/sample-it-spend/it1.png" alt-text="Screenshot shows the dashboard for the IT Spend Analysis sample.":::
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created this sample using real, anonymized data. The data is available in several formats: built-in sample in the Power BI service, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created this sample using real, anonymized data. The data is available in several formats: built-in sample in the Power BI service, *.pbix* Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
 
-This tour explores the IT Spend Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the Power BI service, you can also follow along by using the sample .pbix file in Power BI Desktop.
+This tour explores the IT Spend Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the Power BI service, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
 
 ## Prerequisites
 
