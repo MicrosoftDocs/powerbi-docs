@@ -1,6 +1,6 @@
 ---
-title: View and present live Power BI report pages in PowerPoint
-description: Learn how to work with a live Power BI report page in PowerPoint.
+title: View and present live Power BI data in PowerPoint
+description: Learn how to work with live Power BI data in PowerPoint.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 02/13/2023
+ms.date: 02/23/2023
 ---
 
-# View and present live Power BI report pages in PowerPoint
+# View and present live Power BI data in PowerPoint
 
-As soon as you add a live Power BI report page or visual to PowerPoint, you can start interacting with your data just as you would in Power BI. The initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md#get-the-report-page-url) you used.
+As soon as you add a live Power BI report page or visual to PowerPoint, you can start interacting with your data just as you would in Power BI. The initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md#get-the-report-page-url) you used. The following image shows a report page loaded into the add-in, with the add-in features labeles. The same add-in features are available when an individual visual is loaded.
 
 ![Screenshot of Power B I report page in PowerPoint, with controls labeled.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-report-page-controls.png)
 
@@ -29,10 +29,10 @@ As soon as you add a live Power BI report page or visual to PowerPoint, you can 
 In the add-in, you see:
 
 * The report page or visual. The report page or visual is fully interactive, in both edit and slideshow modes, unless it has been [frozen as a static image](#freeze-the-current-view). The left-hand report page navigation pane that you see in the Power BI service isn't included. If there are page navigation visuals in the report itself, you can use them to navigate to other pages in the report.
-* A toolbar across the bottom of the report page. The toolbar contains report info and menus with controls that help you work with the data and set up your presentations. See the [Controls](#controls) section for more detail.
-* A Show/Hide arrow at the upper right side that opens the add-in side pane (desktop application only). The add-in side pane contains additional controls for working with the add-in, such as freezing the page as a static image. See [Add-in side pane](#add-in-side-pane) for more detail.
+* A toolbar across the bottom of the report page. The toolbar contains info and menus with controls that help you work with the data and set up your presentations. See the [Controls](#controls) section for more detail.
+* A Show/Hide arrow at the upper right side that opens the add-in side pane (desktop application only). The add-in side pane contains additional controls for working with the add-in, such as freezing the page or visual as a static image. See [Add-in side pane](#add-in-side-pane) for more detail.
 
-To get a cleaner view and more space for the report page, you can collapse the bottom toolbar by toggling the **Expand/Collapse the toolbar** in the bottom right corner of the add-in.
+To get a cleaner view and more space, you can collapse the bottom toolbar by toggling the **Expand/Collapse the toolbar** in the bottom right corner of the add-in.
 
 ## Interact with data
 
@@ -52,9 +52,9 @@ If you need to present a slide show multiple times, you most likely want to set 
 
 ## Enrich your presentation with data insights
 
-Data insights help you explore and find insights such as anomalies and trends as you consume and interact with your data. With the add-in, you can easily generate insights which you can then paste directly onto your slide or copy to the clipboard for pasting elsewhere, such as in the slide's notes.
+Data insights help you explore and find insights such as anomalies and trends as you consume and interact with your data. With the add-in, you can easily generate insights which you can then paste directly into your slide or copy to the clipboard for pasting elsewhere, such as in the slide's notes.
 
-The following animation shows how you can generate data insights, edit them in the dialog, and then paste them directly into the slide or copy them into the notes.
+The following animation shows how you can generate data insights, edit them in the **Data insights** dialog, and then paste them directly into the slide or copy them into the notes.
 
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-insights-pasted-in.gif" alt-text="Screenshot showing presentation with insight next to a visual.":::
 
