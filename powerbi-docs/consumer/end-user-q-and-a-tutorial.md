@@ -117,7 +117,7 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
     :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-location.png" alt-text="Screenshot shows a word that Q&A doesn't understand.":::
 
-    Sometimes, none of the suggestions make sense, or Power BI doesn't recognize the word at all. An example could be using the word 'geo' even though it doesn't exist anywhere in the data. The word is in the English dictionary, but Q&A marks this term with a double underline. Power BI might make some suggestions or it might suggest that you ask the report designer to add the term.  
+    Sometimes, none of the suggestions make sense, or Power BI doesn't recognize the word at all. An example could be using the word "geo" even though it doesn't exist anywhere in the data. The word is in the English dictionary, but Q&A marks this term with a double underline. Power BI might make some suggestions or it might suggest that you ask the report designer to add the term.  
 
     :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-qna-stores.png" alt-text="Screenshot shows a Dropdown with suggestions for Q&A.":::
 
