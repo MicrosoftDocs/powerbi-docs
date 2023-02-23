@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 09/19/2022
+ms.date: 02/23/2023
 ---
 
 # Troubleshoot the Power BI add-in for PowerPoint
@@ -106,6 +106,6 @@ If you get the **Cannot run Power BI** error even though you are sure that WebVi
 ## Next Steps
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
-* [Add live Power BI report pages to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
-* [View and present live Power BI report pages in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
+* [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
+* [View and present live Power BI data in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

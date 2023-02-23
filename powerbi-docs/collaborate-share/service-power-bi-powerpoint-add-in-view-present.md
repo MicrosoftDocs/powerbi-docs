@@ -12,7 +12,7 @@ LocalizationGroup: Share your work
 ms.date: 02/23/2023
 ---
 
-# View and present live Power BI data in PowerPoint
+# View and present live Power BI data in PowerPoint (preview)
 
 As soon as you add a live Power BI report page or visual to PowerPoint, you can start interacting with your data just as you would in Power BI. The initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md) you used. The following image shows a report page loaded into the add-in, with the add-in features labeled. The same add-in features are available when you load an individual visual.
 

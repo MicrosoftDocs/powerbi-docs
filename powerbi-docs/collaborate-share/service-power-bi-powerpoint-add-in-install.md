@@ -12,7 +12,7 @@ LocalizationGroup: Share your work
 ms.date: 02/23/2023
 ---
 
-# Add live Power BI data to PowerPoint
+# Add live Power BI data to PowerPoint (preview)
 
 With the Power BI add-in for PowerPoint, you can add both individual visuals and whole report pages to your PowerPoint slides.
 
