@@ -14,7 +14,7 @@ ms.date: 02/23/2023
 
 # View and present live Power BI data in PowerPoint
 
-As soon as you add a live Power BI report page or visual to PowerPoint, you can start interacting with your data just as you would in Power BI. The initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md) you used. The following image shows a report page loaded into the add-in, with the add-in features labeles. The same add-in features are available when an individual visual is loaded.
+As soon as you add a live Power BI report page or visual to PowerPoint, you can start interacting with your data just as you would in Power BI. The initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md) you used. The following image shows a report page loaded into the add-in, with the add-in features labeled. The same add-in features are available when you load an individual visual.
 
 ![Screenshot of Power B I report page in PowerPoint, with controls labeled.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-report-page-controls.png)
 
@@ -30,7 +30,7 @@ In the add-in, you see:
 
 * **The report page or visual**. The report page or visual is fully interactive, in both edit and slideshow modes, unless it has been [frozen as a static image](#freeze-the-current-view). The left-hand report page navigation pane that you see in the Power BI service isn't included. If there are page navigation visuals in the report itself, you can use them to navigate to other pages in the report.
 * **A toolbar across the bottom of the report page**. The toolbar contains info and menus with controls that help you work with the data and set up your presentations. See the [Controls](#controls) section for more detail.
-* **A Show/Hide arrow at the upper right side** that opens the add-in side pane (desktop application only). The add-in side pane contains additional controls for working with the add-in, such as freezing the page or visual as a static image. See [Add-in side pane](#add-in-side-pane) for more detail.
+* **A Show/Hide arrow at the upper right side** that opens the add-in side pane (desktop application only). The add-in side pane contains more controls for working with the add-in, such as freezing the page or visual as a static image. See [Add-in side pane](#add-in-side-pane) for more detail.
 
 >{!TIP]
 >To get a cleaner view and more space, you can collapse the bottom toolbar by toggling the **Expand/Collapse the toolbar** in the bottom right corner of the add-in.
@@ -49,11 +49,11 @@ As you work with the report or visual in edit mode, you can always restore the i
 
 To get more space and a cleaner display for your slide show, you can collapse the toolbar across the bottom of the report page or visual using the [Expand/collapse toolbar](#expandcollapse-toolbar) control.
 
-If you need to present a slide show multiple times, you most likely want to set it up just once, and have it automatically return to its beginning state when it's finished, so you're ready to go for the next time. The add-in makes this easy. Since data selections you make in edit mode are saved, while selections you make in slide show mode are not, you can set up the presentation just once in advance in edit mode, and then present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page or visual goes back to the state it was in at the beginning of the slide show.
+If you need to present a slide show multiple times, you most likely want to set it up just once, and have it automatically return to its beginning state when it's finished, so you're ready to go for the next time. The add-in makes this easy. Since data selections you make in edit mode are saved, while selections you make in slide show mode aren't, you can set up the presentation just once in advance in edit mode, and then present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page or visual goes back to the state it was in at the beginning of the slide show.
 
 ## Enrich your presentation with data insights
 
-Data insights help you explore and find insights such as anomalies and trends as you consume and interact with your data. With the add-in, you can easily generate insights which you can then paste directly into your slide or copy to the clipboard for pasting elsewhere, such as in the slide's notes.
+Data insights help you explore and find insights such as anomalies and trends as you consume and interact with your data. With the add-in, you can easily generate insights, which you can then paste directly into your slide or copy to the clipboard for pasting elsewhere, such as in the slide's notes.
 
 The following animation shows how you can generate data insights, edit them in the **Data insights** dialog, and then paste them directly into the slide or copy them into the notes.
 
@@ -65,7 +65,7 @@ To generate data insights:
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-data-insights-option.png" alt-text="Screenshot showing Data insights pasted into slide and notes.":::
 
-1. The insight appears in the **Data insights** dialog. The text is editable and you can change it as desired. When you are satisfied with the text, you can either paste it directly onto the slide as a PowerPoint textbox, or you can copy it onto the clipboard, from where you paste it wherever you like - into the slide notes, for example. 
+1. The insight appears in the **Data insights** dialog. The text is editable and you can change it as desired. When you're satisfied with the text, you can either paste it directly onto the slide as a PowerPoint textbox, or you can copy it onto the clipboard, from where you paste it wherever you like - into the slide notes, for example. 
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-insights-dialog.png" alt-text="Screenshot of insights dialog.":::
 
@@ -108,7 +108,7 @@ Controls that help you work with your data in PowerPoint are described below.
 
 * **Filter**: Shows or hides the filters pane, where you can filter your data, just like in the Power BI service. This option is available only if filters have been defined on the page or visual.
 * **Data Insights**: Generates [insights](../create-reports/insights.md) displays them in a dialog as editable text. You can then either paste them directly onto the slide or copy them to the clipboard for use elsewhere.
-* **Refresh**: Refreshes the report page or visual with the latest data from the Power BI service. Note: Refresh does not trigger getting data from the data sources.
+* **Refresh**: Refreshes the report page or visual with the latest data from the Power BI service. Note: Refresh doesn't trigger getting data from the data sources.
 * **Reset**: Restores the state of the report page or visual to the state it was in when it was first added to the PowerPoint presentation.
 
 ### Add-in options
@@ -122,7 +122,7 @@ Controls that help you work with your data in PowerPoint are described below.
 
 ![Screenshot of Power B I add-in for PowerPoint expand/collapse toolbar control.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-expand-collapse-toolbar.png)
 
-Expands or collapses the toolbar across the bottom of the report or visual. This feature is particularly useful in Slide Show mode, when you need more space and want a cleaner display.
+Expands or collapses the toolbar across the bottom of the report or visual. This feature is useful in Slide Show mode, when you need more space and want a cleaner display.
 
 ### Add-in side pane
 
@@ -132,7 +132,7 @@ Expands or collapses the toolbar across the bottom of the report or visual. This
 
     If all you want to do is refresh the data, use the **Refresh** option in the [Data options](#data-options) menu instead.
 
-* **Show as Saved Image**: Converts the current state as a saved, static image. You can't interact with this image. Data is not updated. You can copy and paste this image wherever you want. Select **Show as Saved Image** again to restore the live current view. The report or visual will reload. Note: If you select **Show as Saved Image** and then share the PowerPoint file, other users will be able to restore the live current view.
+* **Show as Saved Image**: Converts the current state as a saved, static image. You can't interact with this image. Data isn't updated. You can copy and paste this image wherever you want. Select **Show as Saved Image** again to restore the live current view. The report or visual will reload. Note: If you select **Show as Saved Image** and then share the PowerPoint file, other users will be able to restore the live current view.
 
 > [!NOTE]
 > The add-in side pane is available only in the PowerPoint desktop application. It isn't supported in PowerPoint for the web.

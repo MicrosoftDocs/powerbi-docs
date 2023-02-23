@@ -31,7 +31,7 @@ To start adding live Power BI data to your presentations, see [Add live Power BI
 
 To use the Power BI add-in for PowerPoint, you must have access to the Office add-in store, or the add-in must be available to you as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
-To be able to view live Power BI data in PowerPoint, you must have an active Power BI account and a Power BI Free license, as well as access to the data. If the Power BI report isn't located in a Premium capacity, a Power BI Pro license is needed.
+To be able to view live Power BI data in PowerPoint, you must have an active Power BI account and a Power BI Free license, and access to the data. If the Power BI report isn't located in a Premium capacity, a Power BI Pro license is needed.
 
 ## Security
 
@@ -47,7 +47,7 @@ If you're a Power BI administrator, see [Information for Power BI administrators
 * The add-in currently supports Power BI report pages and visuals only. Other types of items such as dashboards and paginated reports aren't supported.
 * [Business-to-business (B2B)](../enterprise/service-admin-azure-ad-b2b.md) scenarios aren't supported.
 * The [add-in side pane options](./service-power-bi-powerpoint-add-in-view-present.md#add-in-side-pane) **Delete**, **Reload**, and **Show as Saved Image** are available only in the PowerPoint desktop application. This is because PowerPoint for the web doesn't support the add-in side menu.
-* The add-in is not supported in national clouds.
+* The add-in isn't supported in national clouds.
 
 ## Next Steps
 
