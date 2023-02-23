@@ -159,6 +159,26 @@ Now that you've created the workspace, you'll want to add other users to *roles*
 - [Give users access to a workspace](service-give-access-new-workspaces.md)
 - [Roles in workspaces in Power BI](service-roles-new-workspaces.md)
 
+## Pin workspaces
+
+You can pin workspaces on top of the list in workspace flyout. This feature enables you to easily access frequently used workspaces.
+
+1.	Open workspace flyout from left nav and find the workspace you want to pin, select the pin to top button.
+
+    ![Screenshot of pin workspace](media/service-create-the-new-workspaces/pin-workspace.png)
+
+2.	The workspace is pinned in the ‘Pinned’ list.
+
+    ![Screenshot of pinned list](media/service-create-the-new-workspaces/pinned-list.png)
+
+3.	To unpin a workspace, select the unpin button, the workspace is unpinned.
+
+    ![Screenshot of unpin workspace](media/service-create-the-new-workspaces/unpin-workspace.png)
+
+4.	Search works for both ‘Pinned’ and ‘All’ lists.
+
+    ![Screenshot of search workspaces in workspace flyout](media/service-create-the-new-workspaces/serach-workspace-flyout.png)
+
 ## Next steps
 * Read about [workspaces in Power BI](service-new-workspaces.md)
 * [Publish an app from a workspace in Power BI](service-create-distribute-apps.md)
