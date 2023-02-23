@@ -19,8 +19,8 @@ This tutorial shows you how to:
 
 > [!div class="checklist"]
 > - Import the Retail Analysis sample in the Power BI service.
-> - Explore the sample in the service.
-> - Create a visual by using natural language in *Q&A*.
+> - Explore the sample in the service by using *Q&A*.
+> - Create a visual by using natural language in Q&A.
 
 If you'd like more background information, see [Q&A for Power BI business users](end-user-q-and-a.md). In that article you learn about Q&A, where to use it, and the difference between Power BI Q&A on a dashboard and the Power BI Q&A visual for reports.  
 
@@ -52,7 +52,7 @@ At the current time, Power BI Q&A only supports answering natural language queri
 
 ## Use Q&A on a dashboard in the Power BI service
 
-In the Power BI service, a dashboard contains tiles pinned from one or more datasets, so you can ask questions about any of the data contained in any of those datasets. To see which reports and datasets that the report creator used for the dashboard, select **See related content** from the **More actions** dropdown.
+In the Power BI service, a dashboard contains tiles pinned from one or more datasets, so you can ask questions about any of the data contained in any of those datasets. To see which reports and datasets that the report creator used for the dashboard, select **See related content** from the **More actions** menu.
 
 :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-see-related.png" alt-text="Screenshot shows See related content from the menu bar.":::
 
@@ -109,7 +109,7 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
     **Visual cues and feedback**. Power BI Q&A shows words with solid and dotted underlines to identify which words Power BI did or didn't recognize.
 
-    A solid underline indicates that Power BI recognized the word. The example below shows that Q&A recognized the term **sales** but not the term **geo**.
+    A solid underline indicates that Power BI recognized the word. The example below shows that Q&A recognized the term **sales** but not the term **region**.
 
     :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-underline-word.png" alt-text="Screenshot shows Q&A question with a word solid underlined and a word double underlined.":::
 
