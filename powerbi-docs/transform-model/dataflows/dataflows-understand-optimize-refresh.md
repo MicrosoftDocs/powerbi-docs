@@ -25,13 +25,13 @@ There are two types of refreshes applicable to dataflows:
 * **Incremental (Premium only)**, which processes a subset of your data based on time-based rules, expressed as a filter, that you configure. The filter on the date column dynamically partitions the data into ranges in the Power BI service. After you configure the incremental refresh, the dataflow automatically alters your query to include filtering by date. You can edit the automatically generated query by using the **Advanced Editor** in Power Query to fine-tune or customize your refresh. If you bring your own Azure Data Lake Storage, you can see time slices of your data based on the refresh policy you've set.
 
     > [!NOTE]
-    > You can read more about [incremental refresh](/power-query/dataflows/incremental-refresh) and how it works.
+    > To learn more about incremental refresh and how it works, see [Using incremental refresh with dataflows](/power-query/dataflows/incremental-refresh).
 
 Incremental refresh enables large dataflows in Power BI with the following benefits:
 
 * Refreshes are faster after the first refresh, due to the following facts:
 
-  * Power BI refreshes the last *N* partitions specified by the user (where partition is day/week/month, and so on), or:
+  * Power BI refreshes the last *N* partitions specified by the user (where partition is day/week/month, and so on), or
   * Power BI refreshes only data that needs to be refreshed. For example, refreshing only the last five days of a 10-year dataset.
   * Power BI only refreshes data that has changed, as long as you specify the column you want to check for changes.
 
@@ -39,11 +39,11 @@ Incremental refresh enables large dataflows in Power BI with the following benef
 * Resource consumption is reduced - less data to refresh reduces overall consumption of memory and other resources.
 * Wherever possible, Power BI employs parallel processing on partitions, which can lead to faster refreshes.
 
-In any of these refresh scenarios, if a refresh fails, the data doesn't update. Your data might be stale until the latest refresh completes, or you refresh it manually and it completes without error. Refresh occurs at a partition or entity, so if an incremental refresh fails, or an entity has an error, then the entire refresh transaction doesn't occur. Said another way, if a partition (incremental refresh policy) or entity fails for a dataflow, the entire refresh operation fails, and no data gets updated.
+In any of these refresh scenarios, if a refresh fails, the data doesn't update. Your data might be stale until the latest refresh completes, or you can refresh it manually and it can then complete without error. Refresh occurs at a partition or entity, so if an incremental refresh fails, or an entity has an error, then the entire refresh transaction doesn't occur. Said another way, if a partition (incremental refresh policy) or entity fails for a dataflow, the entire refresh operation fails, and no data gets updated.
 
 ## Understand and optimize refreshes
 
-To better understand how a dataflow refresh operation performs, review the **Refresh History** for the dataflow by navigating to one of your dataflows. Select the **More options** icon for the dataflow. Then choose **Settings > Refresh history**. You can also select the dataflow in the **Workspace**. Then choose **More options (…) > Refresh History**.
+To better understand how a dataflow refresh operation performs, review the **Refresh History** for the dataflow by navigating to one of your dataflows. Select **More options (...)** for the dataflow. Then choose **Settings > Refresh history**. You can also select the dataflow in the **Workspace**. Then choose **More options (…) > Refresh History**.
 
 :::image type="content" source="media/dataflows-understand-optimize-refresh/dataflows-understand-optimize-refresh-01.png" alt-text="Screenshot of dataflows refresh history.":::
 
@@ -52,9 +52,9 @@ The **Refresh History** provides an overview of refreshes, including the type �
 | Item | Description | Pro | Premium |
 | --- | --- | --- | --- |
 | Requested on | Time refresh was scheduled or refresh now was clicked, in local time. | ✔ | ✔ |
-| Dataflow name | Name of your Dataflow | ✔ | ✔ |
-| Dataflow refresh status | Completed, Failed, Skipped (for an entity) are possible statuses. Use cases like Linked Entities are reasons why one might see skipped. | ✔ | ✔ |
-| Entity name | Table name | ✔ | ✔ |
+| Dataflow name | Name of your Dataflow. | ✔ | ✔ |
+| Dataflow refresh status | Completed, Failed, or Skipped (for an entity) are possible statuses. Use cases like Linked Entities are reasons why one might see skipped. | ✔ | ✔ |
+| Entity name | Table name. | ✔ | ✔ |
 | Partition name | This item is dependent on if the dataflow is premium or not, and if Pro shows as NA because it doesn't support incremental refreshes. Premium shows either FullRefreshPolicyPartition or IncrementalRefreshPolicyPartition-[DateRange]. |  | ✔ |
 | Refresh status | Refresh status of the individual entity or partition, which provides status for that time slice of data being refreshed. | ✔ | ✔ |
 | Start time | In Premium, this item is the time the dataflow was queued up for processing for the entity or partition. This time can differ if dataflows have dependencies and need to wait for the result set of an upstream dataflow to begin processing. | ✔ | ✔ |
@@ -74,7 +74,7 @@ The refresh statistics provide valuable information you can use to optimize and 
 
 ### Orchestration
 
-Using dataflows in the same workspace allows straightforward orchestration. In an example, you might have dataflows A, B and C in a single workspace, and chaining like A > B > C. Ff you refresh the source (A), the downstream entities also get refreshed. However, if you refresh C, then you have to refresh others independently. Also, if you add a new data source in dataflow B (which isn't included in A) that data isn't refreshed as a part of orchestration.
+Using dataflows in the same workspace allows straightforward orchestration. As an example, you might have dataflows A, B and C in a single workspace, and chaining like A > B > C. If you refresh the source (A), the downstream entities also get refreshed. However, if you refresh C, then you have to refresh others independently. Also, if you add a new data source in dataflow B (which isn't included in A) that data isn't refreshed as a part of orchestration.
 
 You might want to chain items together that don't fit the managed orchestration Power BI performs. In these scenarios, you can use the APIs and/or use PowerAutomate. You can refer to the [API documentation](/rest/api/power-bi/dataflows/getdataflowtransactions) and the [PowerShell script](https://github.com/microsoft/powerbi-powershell/tree/master/examples/dataflows) for programmatic refresh. There's a Power Automate connector that enables doing this procedure without writing any code. You can see [detailed samples](/power-query/dataflows/dataflow-power-automate-connector-templates), with specific walk-throughs for [sequential refreshes](/power-query/dataflows/trigger-dataflows-and-power-bi-dataset-sequentially).
 
@@ -110,11 +110,11 @@ Complex or large dataflows can take more time to refresh, as can poorly optimize
 
 The first step to improve long refresh durations for dataflows is to build dataflows according to our [best practices](dataflows-best-practices.md). Notable patterns include:
 
-* Use [linked entities](/power-query/dataflows/linked-entities) for data that can be used later in other transformations
-* [Use computed entities](/power-query/dataflows/computed-entities-scenarios) to cache data, reducing data loading and data ingestion burden on source systems
-* Split data into [staging dataflows](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#staging-dataflows) and [transformation dataflows](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#transformation-dataflows), separating the ETL (extract, transform, load) into different dataflows
-* [Optimize expanding table operations](/power-query/optimize-expanding-table-columns)
-* Follow [guidance for complex dataflows](/power-query/dataflows/best-practices-developing-complex-dataflows)
+* Use [linked entities](/power-query/dataflows/linked-entities) for data that can be used later in other transformations.
+* [Use computed entities](/power-query/dataflows/computed-entities-scenarios) to cache data, reducing data loading and data ingestion burden on source systems.
+* Split data into [staging dataflows](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#staging-dataflows) and [transformation dataflows](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#transformation-dataflows), separating the ETL (extract, transform, load) into different dataflows.
+* [Optimize expanding table operations](/power-query/optimize-expanding-table-columns).
+* Follow [guidance for complex dataflows](/power-query/dataflows/best-practices-developing-complex-dataflows).
 
 Next, it can help to evaluate whether you can use incremental refresh.
 
@@ -130,8 +130,8 @@ Finally, consider optimizing your environment. You can optimize the Power BI env
 
 * A gateway is required whenever Power BI needs to access data that isn't available directly over the Internet. You can install the [on-premises data gateway](../../connect-data/service-gateway-onprem.md) on an on-premises server, or on a virtual machine.
 
-      * To understand gateway workloads and sizing recommendations, see [On-premises data gateway sizing](../../guidance/gateway-onprem-sizing.md).
-      * Also evaluate bringing the data first into a staging dataflow, and referencing it downstream by using linked and computed entities.
+  * To understand gateway workloads and sizing recommendations, see [On-premises data gateway sizing](../../guidance/gateway-onprem-sizing.md).
+  * Also evaluate bringing the data first into a staging dataflow, and referencing it downstream by using linked and computed entities.
 
 * Network latency can affect refresh performance by increasing the time required for requests to reach the Power BI service, and for responses to be delivered. Tenants in Power BI are assigned to a specific region. To determine where your tenant is located, see [Find the default region for your organization](../../admin/service-admin-where-is-my-tenant-located.md). When users from a tenant access the Power BI service, their requests always route to that region. As requests reach the Power BI service, the service might then send extra requests, for example, to the underlying data source, or a data gateway—which are also subject to network latency.
   * Tools such as [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI cluster as close as possible. Residing in the same region is preferable. If network latency is an issue, try locating gateways and data sources closer to your Power BI cluster by placing them inside cloud-hosted virtual machines.
@@ -184,7 +184,7 @@ Folded status appears if, when you're using on-premises or cloud data sources, y
 
 ### Guidance for Compute Engine performance optimization
 
-The following steps enable workloads to trigger the Compute Engine, and thereby, always improve performance:
+The following steps enable workloads to trigger the Compute Engine, and thereby, always improve performance.
 
 **Computed and Linked Entities in the same workspace:**
 
@@ -204,7 +204,7 @@ Take the following steps when investigating scenarios where the Compute Engine i
 
 ## Considerations and limitations
 
-A Power BI Pro license has dataflows refresh limit of 8 refreshes per day.
+A Power BI Pro license has a dataflows refresh limit of 8 refreshes per day.
 
 ## Next steps
 
