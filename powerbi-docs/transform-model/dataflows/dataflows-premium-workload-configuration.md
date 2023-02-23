@@ -17,7 +17,7 @@ You can create dataflow workloads in your Power BI Premium subscription. Power B
 
 The following sections describe how to enable dataflows in your organization, how to refine their settings in your Premium capacity, and guidance for common usage.
 
-## Enabling dataflows in Power BI premium
+## Enabling dataflows in Power BI Premium
 
 The first requirement for using dataflows in your Power BI premium subscription is to enable the creation and use of dataflows for your organization. In the **Admin portal**, select **Tenant Settings** and switch the slider under **Dataflow settings** to **Enabled**, as shown in the following image.
 
@@ -25,7 +25,7 @@ The first requirement for using dataflows in your Power BI premium subscription 
 
 After enabling the dataflows workload, it is configured with default settings. You might want to tweak these settings as you see fit. Next, we'll describe where these settings live, describe each, and help you understand when you might want to change the values to optimize your dataflow performance.
 
-## Refining dataflow settings in Premium Gen1
+## Refining dataflow settings in Premium
 
 Once dataflows are enabled, you can use the **Admin portal** to change, or refine, how dataflows are created and how they use resources in your Power BI Premium subscription. Power BI Premium doesn't require memory settings to be changed. Memory in Power BI Premium is automatically managed by the underlying system. The following steps show how to adjust your dataflow settings.
 
