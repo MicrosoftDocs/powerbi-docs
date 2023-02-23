@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/01/2023
+ms.date: 02/22/2023
 LocalizationGroup: Dashboards
 ---
 # Optimize a dashboard for mobile phones with Power BI
@@ -26,7 +26,7 @@ Are you looking for information about viewing dashboards on a mobile device? Try
 ## Create a phone view of a dashboard
 
 1. In the Power BI service, open a dashboard.
-2. Select the arrow next to **Edit** on the top menu, and then select **Mobile layout**.
+1. Select the arrow next to **Edit** on the top menu, and then select **Mobile layout**.
 
     :::image type="content" source="media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-dashboard.png" alt-text="Screenshot of the Edit dropdown menu, highlighting Mobile layout.":::
 
@@ -43,13 +43,13 @@ Are you looking for information about viewing dashboards on a mobile device? Try
     The unpinned tiles go in the **Unpinned tiles** pane, where they stay unless you add them back.
 
     :::image type="content" source="media/service-create-dashboard-mobile-phone-view/power-bi-mobile-edit-phone-view-post-edit.png" alt-text="Screenshot of a phone dashboard, showing tiles in the Unpinned tiles pane.":::
-2. If you change your mind, select **Reset tiles** to return them to their previous size and order.
+1. If you change your mind, select **Reset tiles** to return them to their previous size and order.
 
     :::image type="content" source="media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-reset-tiles.png" alt-text="Screenshot highlighting Reset tiles in the menu bar.":::
 
     Opening **Mobile layout** view in the Power BI service slightly changes the size and shape of the tiles on a phone. To return the dashboard to its exact state before you opened it in Mobile layout view, select **Reset tiles**.
 
-3. When you're satisfied with the phone dashboard layout, switch back to web view by selecting **Web layout** in the top menu.
+1. When you're satisfied with the phone dashboard layout, switch back to web view by selecting **Web layout** in the top menu.
 
     Power BI saves the phone layout automatically.
 
