@@ -32,8 +32,7 @@ In the add-in, you see:
 * **A toolbar across the bottom of the report page**. The toolbar contains info and menus with controls that help you work with the data and set up your presentations. See the [Controls](#controls) section for more detail.
 * **A Show/Hide arrow at the upper right side** that opens the add-in side pane (desktop application only). The add-in side pane contains more controls for working with the add-in, such as freezing the page or visual as a static image. See [Add-in side pane](#add-in-side-pane) for more detail.
 
->{!TIP]
->To get a cleaner view and more space, you can collapse the bottom toolbar by toggling the **Expand/Collapse the toolbar** in the bottom right corner of the add-in.
+**Tip**: To get a cleaner view and more space, you can collapse the bottom toolbar by toggling the **Expand/Collapse the toolbar** in the bottom right corner of the add-in.
 
 ## Interact with data
 
