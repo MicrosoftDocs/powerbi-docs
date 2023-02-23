@@ -100,6 +100,7 @@ When you add a Power BI report tab to Microsoft Teams, Microsoft Teams automatic
 - After you save the tab, you don't change the tab name through the tab settings. Use the **Rename** option to change it.
 - When you view Power BI tabs in Teams mobile, the best viewing experience is through the [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md). In the Teams Mobile tabs list, select **More options (...)** > **Open in browser**. When you have the Power BI mobile app installed on your device, the report opens in the Power BI mobile app. 
 - For other issues, see "Known issues and limitations" in [Collaborate in Microsoft Teams](service-collaborate-microsoft-teams.md#known-issues-and-limitations).
+- Cross-tenant links are not supported.
 
 ## Next steps
 
