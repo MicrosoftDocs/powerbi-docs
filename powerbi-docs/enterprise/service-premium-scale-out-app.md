@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/18/2023
+ms.date: 01/19/2023
 LocalizationGroup: Premium
 ---
 
 # Compare scale-out dataset copies
 
-After enabling [Power BI Dataset Scale-Out](service-premium-auto-scale.md), you might want to compare dataset replicas. The `syncStatus` REST API shows if the *read/write* and *read-only* dataset copies are in sync. You can also use the Tabular Object Model (TOM) to build a custom application that connects to both datasets and compares timestamps, metadata, and query results between them.
+After enabling [Power BI Dataset Scale-Out](service-premium-scale-out.md), you might want to compare dataset replicas. The `syncStatus` REST API shows if the *read/write* and *read-only* dataset copies are in sync. You can also use the Tabular Object Model (TOM) to build a custom application that connects to both datasets and compares timestamps, metadata, and query results between them.
 
 This section provides a few Visual Studio app examples for comparing dataset properties when Power BI Dataset Scale-Out is enabled.
 
@@ -28,22 +28,22 @@ string workspaceUrl = "<WorkspaceUrl>";  // Replace <WorkspaceUrl> with the URL 
 string datasetName = "<DatasetName>";  // Replace <DatasetName> with the name of your dataset 
 using (var workspace_readwrite = new Microsoft.AnalysisServices.Tabular.Server()) 
 using (var workspace_readonly = new Microsoft.AnalysisServices.Tabular.Server()) 
-    { 
-        workspace_readwrite.Connect(workspaceUrl + "?readwrite"); 
-        workspace_readonly.Connect(workspaceUrl + "?readonly"); 
-        var datasetRW = workspace_readwrite.Databases.FindByName(datasetName); 
-        var datasetRO = workspace_readonly.Databases.FindByName(datasetName); 
+{
+    workspace_readwrite.Connect(workspaceUrl + "?readwrite"); 
+    workspace_readonly.Connect(workspaceUrl + "?readonly"); 
+    var datasetRW = workspace_readwrite.Databases.FindByName(datasetName); 
+    var datasetRO = workspace_readonly.Databases.FindByName(datasetName); 
 
-        if (datasetRW == null || datasetRO == null) 
-        { 
-            throw new ApplicationException("Database cannot be found!"); 
-        } 
-        datasetRW.Refresh(); 
-        datasetRO.Refresh(); 
-        Console.WriteLine($"LastUpdated: {datasetRW.LastUpdate} (readwrite) {datasetRO.LastUpdate} (readonly)"); 
-        Console.WriteLine($"LastProcessed: {datasetRW.LastProcessed} (readwrite) {datasetRO.LastProcessed} (readonly)"); 
-        Console.WriteLine($"LastSchemaUpdate: {datasetRW.LastSchemaUpdate} (readwrite) {datasetRO.LastSchemaUpdate} (readonly)\n"); 
-     } 
+    if (datasetRW == null || datasetRO == null) 
+    { 
+        throw new ApplicationException("Database cannot be found!"); 
+    }
+    datasetRW.Refresh(); 
+    datasetRO.Refresh(); 
+    Console.WriteLine($"LastUpdated: {datasetRW.LastUpdate} (readwrite) {datasetRO.LastUpdate} (readonly)"); 
+    Console.WriteLine($"LastProcessed: {datasetRW.LastProcessed} (readwrite) {datasetRO.LastProcessed} (readonly)"); 
+    Console.WriteLine($"LastSchemaUpdate: {datasetRW.LastSchemaUpdate} (readwrite) {datasetRO.LastSchemaUpdate} (readonly)\n"); 
+} 
 Console.WriteLine("Test completed. Press any key to exit."); 
 Console.Read(); 
 ```
@@ -71,7 +71,7 @@ using (var workspace_readonly = new Microsoft.AnalysisServices.Tabular.Server())
     string tmslRW = Microsoft.AnalysisServices.Tabular.JsonSerializer.SerializeDatabase(datasetRW); 
     string tmslRO = Microsoft.AnalysisServices.Tabular.JsonSerializer.SerializeDatabase(datasetRO); 
 
-    if(tmslRW != tmslRO) 
+    if (tmslRW != tmslRO) 
     { 
         Console.WriteLine("The replicas are out of sync.\n"); 
     } 
@@ -107,7 +107,7 @@ using (var connectionRO = new Microsoft.AnalysisServices.AdomdClient.AdomdConnec
     { 
         while (reader.Read()) 
         { 
-        resultRW = reader.GetString(0); 
+            resultRW = reader.GetString(0); 
         } 
     } 
 

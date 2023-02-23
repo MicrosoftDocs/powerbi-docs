@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 09/19/2022
+ms.date: 02/03/2023
 LocalizationGroup: Administration
 ---
 
@@ -62,7 +62,7 @@ For dataset owners to be able to enable single sign-on for DirectQuery connectio
 
 ![Screenshot of Snowflake (SSO)tenant switch.](media/service-admin-portal-integration/powerbi-admin-portal-snowflake-sso-setting.png)
 
-## Azure AD Single Sign-On (SSO) for Gateway
+## Azure AD single sign-on (SSO) for Gateway
 
 This setting enables Azure Active Directory (Azure AD) single sign-on (SSO) through on-premises data gateways to cloud data sources that rely on Azure AD-based authentication. It gives seamless Azure AD SSO connectivity to Azure-based data sources, such as Azure Synapse Analytics (SQL DW), Azure Data Explorer, Snowflake on Azure, and Azure Databricks through an on-premises data gateway.
 

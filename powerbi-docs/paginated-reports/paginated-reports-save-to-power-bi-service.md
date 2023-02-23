@@ -50,6 +50,9 @@ This article explains how to publish a paginated report to the Power BI service 
 
 You can also start from the Power BI service and upload a paginated report.
 
+> [!NOTE]
+> Currently, you can't import a paginated report from OneDrive or SharePoint.
+
 1. Create your paginated report in Report Builder and save it to your local computer.
 
 1. Open the Power BI service in a browser and find the workspace where you want to publish the report.
@@ -91,3 +94,4 @@ As with any other Power BI report, if the paginated report data source is on pre
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
 - [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md)
+

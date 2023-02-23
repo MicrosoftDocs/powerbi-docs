@@ -8,7 +8,7 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc, intro-overview
-ms.date: 08/12/2022
+ms.date: 01/30/2023
 #Customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
 ---
 
@@ -42,8 +42,8 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Real-time streaming | No | Yes | [Real-time streaming in Power BI](../connect-data/service-real-time-streaming.md) |
 | Automatic page refresh for DirectQuery models | No | Yes | [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) |
 | ArcGIS for Power BI | Yes | Yes | [ArcGIS for Power BI](../visuals/power-bi-visualizations-arcgis.md) |
-| Email subscriptions for Power BI reports | No | Yes | [Subscribe yourself or others](../consumer/end-user-subscribe.md) to a report or dashboard in the Power BI service |
-| Email subscriptions for paginated reports | Yes | Yes | [Subscribe yourself and others to paginated reports in the Power BI service](../consumer/end-user-subscribe.md)<br><br>[Email delivery in Reporting Services](/sql/reporting-services/working-with-subscriptions-web-portal)  |
+| Email subscriptions for Power BI reports | No | Yes | [Subscribe yourself or others](/power-bi/collaborate-share/end-user-subscribe) to a report or dashboard in the Power BI service |
+| Email subscriptions for paginated reports | Yes | Yes | [Subscribe yourself and others to paginated reports in the Power BI service](/power-bi/collaborate-share/end-user-subscribe)<br><br>[Email delivery in Reporting Services](/sql/reporting-services/working-with-subscriptions-web-portal)  |
 | Data alerts | No | Yes | [Data alerts](../create-reports/service-set-data-alerts.md) in the Power BI service
 | Row-level security (RLS) | Yes | Yes | Available in both DirectQuery (data source) & Import mode <br><br>Row-level security in the [Power BI service](../enterprise/service-admin-rls.md) <br><br>Row-level security in [Power BI Report Server](row-level-security-report-server.md) |
 | Many-to-many relationships | No | Yes | [Apply many-to-many relationships](../transform-model/desktop-many-to-many-relationships.md) in Power BI Desktop |
@@ -54,6 +54,8 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Preview features | No | Yes | [Opt in for Power BI service preview](../consumer/end-user-preview-features.md) features |
 | Power BI visuals | Yes | Yes | [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) |
 | Power BI Desktop | Version optimized for Report Server, available for download with Report Server | Version optimized for Power BI Service, available from the Windows Store | [Power BI Desktop for the report server](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop for the Power BI service](https://aka.ms/pbidesktopstore) |
+| Data Privacy Levels | No | Yes | [Data Privacy Levels](../enterprise/desktop-privacy-levels.md) are available for reports in the Power BI service. In Power BI Report Server, use [Role definitions](/sql/reporting-services/security/role-definitions-predefined-roles). |
+| Sensitivity Labels | No | Yes | [Sensitivity Labels](../enterprise/service-security-sensitivity-label-overview.md) |
 | Template apps | No | Yes | [Install and distribute template apps in your organization](../connect-data/service-template-apps-install-distribute.md) |
 
 

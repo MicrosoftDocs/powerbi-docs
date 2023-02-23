@@ -66,7 +66,7 @@ See the article [Roles in workspaces](service-roles-new-workspaces.md) for more 
 
 ## Administering and auditing workspaces
 
-Administration for workspaces is in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Read about [managing users' ability to create workspaces](../admin/service-admin-portal-workspace.md#create-the-new-workspaces) in the "Workspace settings" article.
+Administration for workspaces is in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Read about [managing users' ability to create workspaces](../admin/service-admin-portal-workspace.md#create-workspaces-new-workspace-experience) in the "Workspace settings" article.
 
 Admins can also see the state of all the workspaces in their organization. They can manage, recover, and even delete workspaces. Read about [managing the workspaces themselves](../admin/service-admin-portal-workspaces.md) in the "Admin portal" article.
 

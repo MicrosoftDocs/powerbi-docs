@@ -7,16 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 02/13/2023
 LocalizationGroup: Connect to data
 ---
 # Use Python in Power Query Editor
 
 You can use *Python*, a programming language widely used by statisticians, data scientists, and data analysts, in the Power BI Desktop **Power Query Editor**. This integration of Python into **Power Query Editor** lets you perform data cleansing using Python, and perform advanced data shaping and analytics in datasets, including completion of missing data, predictions, and clustering, just to name a few. Python is a powerful language, and can be used in **Power Query Editor** to prepare your data model and create reports.
 
-## Install Python
+## Prerequisites
 
-To use Python in Power BI Desktop's **Power Query Editor**, you need to install Python on your local machine. You can download and install Python for free from many locations, including the [Official Python download page](https://www.python.org/), and the [Anaconda](https://anaconda.org/anaconda/python/).
+You'll need to install Python and pandas before you begin.
+
+ * **Install Python** - To use Python in Power BI Desktop's *Power Query Editor*, you need to install Python on your local machine. You can download and install Python for free from many locations, including the [Official Python download page](https://www.python.org/), and the [Anaconda](https://anaconda.org/anaconda/python/).
+
+* **Install pandas** - To use Python with the Power Query Editor, you'll also need to install [pandas](https://pandas.pydata.org/). Pandas is used to move data between Power BI and the Python environment.
 
 ## Use Python with Power Query Editor
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/18/2023
+ms.date: 02/07/2023
 LocalizationGroup: Premium
 ---
 
@@ -31,7 +31,7 @@ Only XMLA endpoints and advanced APIs connect to the *read/write* dataset copy. 
 
 Before you enable Power BI Dataset Scale-Out, verify that the following Prerequisites are met.
 
-* Your workspace resides on a Power BI Premium [capacity](service-premium-gen2-what-is.md#capacities-and-skus):
+* Your workspace resides on a Power BI Premium [capacity](service-premium-what-is.md#capacities-and-skus):
     * P SKUs
     * A SKUs for Power BI Embedded (also known as [embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers)).
 
@@ -52,7 +52,7 @@ Before you enable Power BI Dataset Scale-Out, verify that the following Prerequi
     | Microsoft Analysis Services OLE DB Provider for Microsoft SQL Server (MSOLAP) | 16.0.20.201 (March 2022) |
     | Microsoft.AnalysisServices.AdomdClient (ADOMD.NET) | 19.36.0 (March 2022) |
     | Power BI Desktop         | June 2022 |
-    | SQL Server Management Studio (SSMS) | 18.12.1 |
+    | SQL Server Management Studio (SSMS) | 19.0 Preview 4 |
     | Tabular Editor 2         | 2.16.6   |
     | Tabular Editor 3         | 3.2.3    |
     | DAX Studio               | 3.0.0    |
@@ -63,7 +63,7 @@ Power BI Dataset Scale-Out is enabled by default for your tenant. However, you'l
 
 ### Enable Scale-Out for your workspace
 
-Use the XMLA endpoint to turn on Scale-Out for each workspace you want to enable it for.
+Use the XMLA endpoint to turn on Scale-Out for each workspace you want to enable it for. Make sure that the XMLA endpoint has been [enabled for read-write](service-premium-connect-tools.md#enable-xmla-read-write).
 
 1. Start SQL Server Management Studio (SSMS) and in the **Connect to Server** dialog box, fill in the fields as listed below.
 
@@ -80,7 +80,7 @@ Use the XMLA endpoint to turn on Scale-Out for each workspace you want to enable
 
 4. In the toolbar, select **XMLA**. If a *Connect to Analysis Services* dialog box appears, select *Connect*.
 
-5. Paste the following request into the XMLA window. Replace `<WorkspaceName>` with the name of your workspace.  
+5. Paste the following request into the XMLA window. Replace `[WorkspaceName]` with the name of your workspace.  
 
     ```xml
     <Execute xmlns="urn:schemas-microsoft-com:xml-analysis"> 
@@ -88,7 +88,8 @@ Use the XMLA endpoint to turn on Scale-Out for each workspace you want to enable
             <Batch xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"> 
                 <Alter ObjectExpansion="ObjectProperties" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"> 
                     <Object /> 
-                    <ObjectDefinition><Server xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+                    <ObjectDefinition>
+                       <Server xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                                 xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" 
                                 xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" 
@@ -101,7 +102,7 @@ Use the XMLA endpoint to turn on Scale-Out for each workspace you want to enable
                                 xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" 
                                 xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" 
                                 xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500"> 
-                            <Name><WorkspaceName></Name> 
+                            <Name>[WorkspaceName]</Name> 
                             <ServerProperties> 
                                 <ServerProperty> 
                                     <Name>Feature\PBIP\QueryScaleOut</Name> 
@@ -170,7 +171,9 @@ You can connect to specific type of dataset copy by appending one of the followi
 
 * XMLA updates and refreshes must be synced with the *read-only* dataset copies using the Sync REST API.
 
-* When deleting a Power BI Dataset Scale-Out dataset, and creating another dataset with the same name. Allow five minutes to pass before creating the new dataset. It might take Power BI a short while to remove the copies of the original dataset.
+* When deleting a Power BI Scale-Out dataset, and creating another dataset with the same name. Allow five minutes to pass before creating the new dataset. It might take Power BI a short while to remove the copies of the original dataset.
+
+* Backup and restore operations are not supported for Power BI Scale-Out datasets. If you want to restore a dataset, disable Scale-Out before you restore the dataset. After the restore operation ends, you can enable Scale-Out again.
 
 * When Power BI Dataset Scale-Out is turned on, changes to the following features, are not supported:
     * Model roles for RLS and OLS
