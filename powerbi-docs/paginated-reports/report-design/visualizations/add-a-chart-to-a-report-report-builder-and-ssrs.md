@@ -5,6 +5,7 @@ ms.date: 02/23/2023
 ms.service: powerbi
 ms.subservice: report-design
 
+
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
@@ -49,9 +50,9 @@ When you want to summarize data in a visual format in a paginated report, use a 
  On charts with axes, such as bar and column charts, the category axis may not display all the category labels. For more information about how to change the axis labels, see [Specify an Axis Interval &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-an-axis-interval-report-builder-and-ssrs).  
   
 ## Next steps  
- [Charts &#40;Power BI Report Builder&#41;](../paginated-reports/report-design/visualizations/charts-report-builder-and-ssrs)   
- [Chart Types &#40;Power BI Report Builder&#41;](../paginated-reports/report-design/visualizations/chart-types-report-builder-and-ssrs)   
- [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](../paginated-reports/report-design/visualizations/empty-and-null-data-points-in-charts-report-builder-and-ssrs)   
- [Tutorial: Adding a Bar Chart to Your Report (Power BI Report Builder)](../paginated-reports/tutorials/tutorial-add-a-bar-chart-to-your-report-report-builder.md)   
- [Tutorial: Adding a Pie Chart to Your Report (Power BI Report Builder)](../paginated-reports/tutorials/tutorial-add-a-pie-chart-to-your-report-report-builder.md)   
+ [Charts &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/charts-report-builder-and-ssrs)   
+ [Chart Types &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/chart-types-report-builder-and-ssrs)   
+ [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/empty-and-null-data-points-in-charts-report-builder-and-ssrs)   
+ [Tutorial: Adding a Bar Chart to Your Report (Power BI Report Builder)](/paginated-reports/tutorials/tutorial-add-a-bar-chart-to-your-report-report-builder)   
+ [Tutorial: Adding a Pie Chart to Your Report (Power BI Report Builder)](/paginated-reports/tutorials/tutorial-add-a-pie-chart-to-your-report-report-builder)   
  

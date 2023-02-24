@@ -6,6 +6,7 @@ ms.service: powerbi
 ms.subservice: report-design
 
 
+ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: monaraya
