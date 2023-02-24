@@ -16,9 +16,9 @@ The Customer Profitability sample contains a dashboard, report, and dataset for 
 
 :::image type="content" source="media/sample-customer-profitability/power-bi-dash.png" alt-text="Screenshot shows the Dashboard for the Customer Profitability sample.":::
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created this sample using real, anonymized data. The data is available in several formats: a built-in sample in the service, a .pbix Power BI Desktop file, or an Excel workbook. See [Samples for Power BI](sample-datasets.md).
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created this sample using real, anonymized data. The data is available in several formats: a built-in sample in the service, a *.pbix* Power BI Desktop file, or an Excel workbook. See [Samples for Power BI](sample-datasets.md).
 
-This tour explores the built-in Customer Profitability sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop.
+This tour explores the built-in Customer Profitability sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
 
 ## Prerequisites
 
@@ -219,6 +219,6 @@ Take a look at the Distribution industry.
 
 ## Next steps
 
-This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the learning center for a new copy of this sample.
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn. Connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md).
