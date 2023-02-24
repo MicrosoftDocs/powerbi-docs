@@ -23,13 +23,13 @@ Power BI evaluates throughput every **30 seconds**. It allows operations to comp
 
 The following image illustrates how Premium evaluates and completes queries.
 
-:::image type="content" source="media/service-premium-concepts/service-premium-concepts-01.png" alt-text="Diagram showing Premium generation two evaluates and processes queries. "lightbox="media/service-premium-concepts/service-premium-concepts-01.png":::
+:::image type="content" source="media/service-premium-concepts/service-premium-concepts-01.png" alt-text="Diagram showing Premium evaluates and processes queries. "lightbox="media/service-premium-concepts/service-premium-concepts-01.png":::
 
 Let's look at an example: A P1 with eight v-cores can support $8\times{30}=240$ seconds of v-core execution time, also known as *CPU time*.
 
 The aggregation is complex. It uses specialized algorithms for different workloads, and for different types of operations, as described in the following points:
 
-* **Slow-running operations**, such as dataset and dataflow refresh, are considered *background operations* since they typically run in the background and users don’t actively monitor them or look at them visually. Background operations are lengthy and require significant CPU power to complete during the long process. Power BI spreads CPU costs of background operations over 24 hours, so that capacities don't hit maximum resource usage due to too many refreshes running simultaneously. This allows Power BI Premium subscribers to run as many background operations as allowed by their purchased capacity SKU, and doesn’t limit them like the original Premium generation.
+* **Slow-running operations**, such as dataset and dataflow refresh, are considered *background operations* since they typically run in the background and users don’t actively monitor them or look at them visually. Background operations are lengthy and require significant CPU power to complete during the long process. Power BI spreads CPU costs of background operations over 24 hours, so that capacities don't hit maximum resource usage due to too many refreshes running simultaneously. This allows Power BI Premium subscribers to run as many background operations as allowed by their purchased capacity SKU.
 
 * **Fast operations** like queries, report loads, and others are considered *interactive operations*. The CPU time required to complete those operations is aggregated, to minimize the number of 30-seconds windows that are impacted following that operation's completion.
 
@@ -54,13 +54,13 @@ Each capacity consists of an defined number of v-cores. The CPU time measured in
 
 If you have a P1 subscription with eight v-cores, each evaluation cycle quota equates to $8\times{30}=240$ seconds of CPU utilization. If the sum of both interactive and background utilizations *exceeds* the total v-core quote in your capacity, and you have *not* optionally enabled autoscale, the workload for your Premium capacity will exceed your available resources, also called your *capacity threshold*. The following image illustrates this condition, called *overload*, when autoscale is *not* enabled.
 
-:::image type="content" source="media/service-premium-concepts/service-premium-concepts-02.png" alt-text="Diagram showing overload condition in premium generation two capacity." lightbox="media/service-premium-concepts/service-premium-concepts-02.png":::
+:::image type="content" source="media/service-premium-concepts/service-premium-concepts-02.png" alt-text="Diagram showing overload condition in a premium  capacity." lightbox="media/service-premium-concepts/service-premium-concepts-02.png":::
 
 In contrast, if autoscale is optionally enabled, if your CPU utilizations exceeds the total v-core quota in your capacity, your capacity is automatically autoscaled (raised) by one v-core for the next 24 hours.
 
 The following image shows how autoscale works.
 
-:::image type="content" source="media/service-premium-concepts/service-premium-concepts-03.png" alt-text="Diagram showing auto scale operation in premium generation two capacity." lightbox="media/service-premium-concepts/service-premium-concepts-03.png":::
+:::image type="content" source="media/service-premium-concepts/service-premium-concepts-03.png" alt-text="Diagram showing auto scale operation in a premium capacity." lightbox="media/service-premium-concepts/service-premium-concepts-03.png":::
 
 Autoscale always considers your current capacity size to evaluate how much you use. When you autoscale, one v-core is added to your capacity. This means that if you're using a P1 SKU with eight v-cores, your maximum capacity is now at 270 seconds ($8\times{30}+1\times{30}$) of CPU time in an evaluation cycle.
 
@@ -79,7 +79,7 @@ To configure autoscale on a Power BI Premium capacity, follow the instructions i
 ## Next steps
 
 >[!div class="nextstepaction"]
->[What is Power BI Premium?](service-premium-gen2-what-is.md)
+>[What is Power BI Premium?](service-premium-what-is.md)
 
 >[!div class="nextstepaction"]
 >[Power BI Premium architecture](service-premium-architecture.md)
@@ -88,7 +88,7 @@ To configure autoscale on a Power BI Premium capacity, follow the instructions i
 >[Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
 
 >[!div class="nextstepaction"]
->[Power BI Premium FAQ](service-premium-gen2-faq.yml)
+>[Power BI Premium FAQ](service-premium-faq.yml)
 
 >[!div class="nextstepaction"]
 >[Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)

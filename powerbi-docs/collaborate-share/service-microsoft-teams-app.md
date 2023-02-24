@@ -37,7 +37,7 @@ Ensure the following elements are in place to install the Power BI app in Micros
 
 - Power BI app is enabled in the Teams Admin center apps list.
 - Your users with a Power BI (Free) license can access personal analytics. They can use the built-in Teams analytics report and create reports in their My workspace.
-- Your users with Power BI (Free) licenses can also access content that's shared with them from a workspace that's part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-gen2-what-is.md).
+- Your users with Power BI (Free) licenses can also access content that's shared with them from a workspace that's part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-what-is.md).
 - Your users with a Power BI Pro or Premium Per User (PPU) license can share content with others or build content in workspaces.
 - Users have signed in within the Power BI app for Teams or the Power BI service and activated their Power BI license.
 - Users meet the requirements to use the **Power BI** tab in Microsoft Teams.

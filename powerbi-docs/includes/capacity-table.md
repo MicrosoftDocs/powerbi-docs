@@ -21,11 +21,11 @@ ms.custom: include file
 | P4/A7<sup>4</sup> |  64 | 200 | 240    | 10  | 320  | 64 | 200 |
 | P5/A8<sup>4</sup> | 128 | 400 | 480    | 10  | 640  | 64 | 200 |
 
-<sup>1</sup> The [Power BI Premium Utilization and Metrics app](./../enterprise/service-premium-install-gen2-app.md) doesn't currently expose these metrics.
+<sup>1</sup> The [Power BI Premium Utilization and Metrics app](./../enterprise/service-premium-install-app.md) doesn't currently expose these metrics.
 
 <sup>2</sup> These limits only apply to the dataset workload per capacity.
 
-<sup>3</sup> The *Max memory (GB)* column under the *Dataset* header represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity might be smaller than the numbers in this column. For more information, see [Memory allocation](./../enterprise/service-premium-gen2-what-is.md#dataset-memory-allocation).
+<sup>3</sup> The *Max memory (GB)* column under the *Dataset* header represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity might be smaller than the numbers in this column. For more information, see [Memory allocation](./../enterprise/service-premium-what-is.md#dataset-memory-allocation).
 
 <sup>4</sup> These SKUs aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 

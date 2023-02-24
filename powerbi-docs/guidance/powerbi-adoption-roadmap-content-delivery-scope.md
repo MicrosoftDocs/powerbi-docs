@@ -100,7 +100,7 @@ Content is often shared among the team more informally as compared to department
 
 Content is delivered to members of a department or business unit. Content distribution to a larger number of consumers is a priority for [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md).
 
-Usually there's a much larger number of consumers who are content viewers (versus a much smaller number of content creators). Therefore, a combination of [Power BI Pro](/power-bi/enterprise/service-admin-purchasing-power-bi-pro) licenses, [Premium Per User](/power-bi/enterprise/service-premium-per-user-faq) licenses, and/or [Premium capacity](/power-bi/enterprise/service-premium-gen2-what-is#subscriptions-and-licensing) licenses may be used.
+Usually there's a much larger number of consumers who are content viewers (versus a much smaller number of content creators). Therefore, a combination of [Power BI Pro](/power-bi/enterprise/service-admin-purchasing-power-bi-pro) licenses, [Premium Per User](/power-bi/enterprise/service-premium-per-user-faq) licenses, and/or [Premium capacity](/power-bi/enterprise/service-premium-what-is#subscriptions-and-licensing) licenses may be used.
 
 **Characteristics of departmental BI delivery:**
 
@@ -127,7 +127,7 @@ Usually there's a much larger number of consumers who are content viewers (versu
 
 [Enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) content is typically managed by a centralized team and is subject to additional governance requirements. Content is delivered broadly across organizational boundaries.
 
-Enterprise BI usually has a significantly larger number of consumers versus content creators. Therefore, a combination of [Power BI Pro](/power-bi/enterprise/service-admin-purchasing-power-bi-pro) licenses, [Premium Per User](/power-bi/enterprise/service-premium-per-user-faq) licenses, and/or [Premium capacity](/power-bi/enterprise/service-premium-gen2-what-is#subscriptions-and-licensing) licenses may be used.
+Enterprise BI usually has a significantly larger number of consumers versus content creators. Therefore, a combination of [Power BI Pro](/power-bi/enterprise/service-admin-purchasing-power-bi-pro) licenses, [Premium Per User](/power-bi/enterprise/service-premium-per-user-faq) licenses, and/or [Premium capacity](/power-bi/enterprise/service-premium-what-is#subscriptions-and-licensing) licenses may be used.
 
 **Characteristics of enterprise BI delivery:**
 
@@ -142,7 +142,7 @@ Enterprise BI usually has a significantly larger number of consumers versus cont
 **Guidelines for being successful with enterprise BI delivery:**
 
 - Governance and oversight techniques described in the [governance](powerbi-adoption-roadmap-governance.md) article are relevant for managing an enterprise BI solution. Techniques primarily include change management and application lifecycle management.
-- Plan for how to effectively use [Premium Per User](/power-bi/enterprise/service-premium-per-user-faq) or [Premium capacity](/power-bi/enterprise/service-premium-gen2-what-is#subscriptions-and-licensing) licensing per workspace. Align your workspace management strategy, like how [workspaces](/power-bi/collaborate-share/service-create-the-new-workspaces) will be organized and secured, to the planned [licensing](/power-bi/enterprise/service-admin-licensing-organization) strategy.
+- Plan for how to effectively use [Premium Per User](/power-bi/enterprise/service-premium-per-user-faq) or [Premium capacity](/power-bi/enterprise/service-premium-what-is#subscriptions-and-licensing) licensing per workspace. Align your workspace management strategy, like how [workspaces](/power-bi/collaborate-share/service-create-the-new-workspaces) will be organized and secured, to the planned [licensing](/power-bi/enterprise/service-admin-licensing-organization) strategy.
 - Plan how Power BI apps will distribute enterprise BI content. An app can provide a significantly better user experience for consuming content. Align the app distribution strategy with your workspace management strategy.
 - Consider enforcing the use of [sensitivity labels](/power-bi/enterprise/service-security-data-protection-overview) to implement information protection on all content.
 - Implement a rigorous process for use of the [certified endorsement](/power-bi/collaborate-share/service-endorse-content#certify-content) for enterprise BI reports and apps. Datasets and dataflows can be certified, too, when there's the expectation that self-service creators will build solutions based on them. Not all enterprise BI content needs to be certified, but much of it probably will be.
@@ -165,7 +165,7 @@ Enterprise BI usually has a significantly larger number of consumers versus cont
 >     - Will it require the content be owned and managed by a centralized team? For more information, see the [Content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article, which describes an inter-related concept with content delivery scope.
 >     - Will there be an approval process? [Governance](powerbi-adoption-roadmap-governance.md) can become more complicated when the content delivery scope is broader than the owner of the content. For example, when an app that's owned by a divisional sales team is distributed to the entire organization.
 > - **Create helpful documentation:** Ensure that you have sufficient training documentation and support so that your content creators understand when it's appropriate to use [workspaces](/power-bi/collaborate-share/service-create-the-new-workspaces), [apps](/power-bi/collaborate-share/service-create-distribute-apps), or [per-item sharing (direct access or link)](https://powerbi.microsoft.com/blog/announcing-the-new-sharing-experience/).
-> - **Create a licensing strategy:** Ensure that you have a specific strategy in place to handle user licensing considerations for [Power BI Pro](/power-bi/enterprise/service-admin-purchasing-power-bi-pro), [Premium Per User](/power-bi/enterprise/service-premium-per-user-faq), and [Premium capacity](/power-bi/enterprise/service-premium-gen2-what-is#subscriptions-and-licensing). Create a process for how workspaces may be assigned each license type, and the prerequisites required for the type of content that may be assigned to Premium.
+> - **Create a licensing strategy:** Ensure that you have a specific strategy in place to handle user licensing considerations for [Power BI Pro](/power-bi/enterprise/service-admin-purchasing-power-bi-pro), [Premium Per User](/power-bi/enterprise/service-premium-per-user-faq), and [Premium capacity](/power-bi/enterprise/service-premium-what-is#subscriptions-and-licensing). Create a process for how workspaces may be assigned each license type, and the prerequisites required for the type of content that may be assigned to Premium.
 
 ## Maturity levels
 

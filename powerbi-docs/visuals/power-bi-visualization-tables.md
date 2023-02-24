@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/08/2022
+ms.date: 02/17/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -110,6 +110,8 @@ There are many ways to format a table. Only a few are covered here. A great way 
 
 There are other ways to format tables too. You can apply conditional formatting for subtotals and totals, by selecting the conditional formatting you want then using the **Apply to** drop-down menu in the conditional formatting advanced controls dialog. You'll have to manually set the thresholds or ranges for your conditional formatting rules, and for matrices the **Values** still refer to the lowest visible level of the matrix hierarchy.
 
+The following section describes conditional formatting you can apply to tables. You can also learn more in the article dedicated to [conditional formatting](../create-reports/desktop-conditional-table-formatting.md). 
+
 ### Conditional formatting
 
 Power BI can apply conditional formatting to any of the fields that you added to the **Columns** well of the **Visualizations** pane.
@@ -151,6 +153,8 @@ With conditional formatting for tables, you can specify icons, URLs, cell backgr
 1. Add visual cues to your table with conditional icons. Open the **Conditional formatting** card next to **This year sales**, then select **Icons**.
 
     :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-icons.png" alt-text="Screenshot of table with icons added to column.":::
+
+For additional information about conditional formatting, including [totals and subtotals](../create-reports/desktop-conditional-table-formatting.md#totals-and-subtotals), see the article on [conditional formatting](../create-reports/desktop-conditional-table-formatting.md). 
 
 
 ## Copy values from Power BI tables for use in other applications
@@ -196,5 +200,5 @@ Sometimes Power BI will truncate a column heading in a report and on a dashboard
 ## Next steps
 
 * [Tree maps in Power BI](power-bi-visualization-treemaps.md)
-
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Apply conditional formatting in tables and matrixes](../create-reports/desktop-conditional-table-formatting.md)

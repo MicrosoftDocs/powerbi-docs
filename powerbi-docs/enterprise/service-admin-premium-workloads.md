@@ -57,7 +57,7 @@ You can tune the behavior of the workloads, by configuring workload settings for
 
 ### Monitor workloads
 
-Use the [Power BI Premium utilization and metrics app](../enterprise/service-premium-gen2-metrics-app.md) to monitor your capacity's activity.
+Use the [Power BI Premium utilization and metrics app](../enterprise/service-premium-metrics-app.md) to monitor your capacity's activity.
 
 > [!IMPORTANT]
 > If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. For more information, see [capacity and reliability notifications](../support/service-interruption-notifications.md#capacity-and-reliability-notifications).
@@ -86,9 +86,6 @@ This section describes the following datasets workload settings:
 ### Power BI settings
 
 Use the settings in the table below to control workload behavior. Settings with a link have additional information that you can review in designated sections below the table.
-
->[!NOTE]
->In Premium Gen1, the datasets workload is enabled by default and cannot be disabled.
 
 | Setting Name | Description |
 |---------------------------------|----------------------------------------|
@@ -208,15 +205,7 @@ The Analysis Services XMLA-based server properties setting is enabled by default
 
 ## Dataflows
 
-The dataflows workload lets you use dataflows self-service data prep, to ingest, transform, integrate, and enrich data. Use the following settings to control workload behavior in Premium Gen1.
-
-| Setting Name | Description |
-|---------------------------------|----------------------------------------|
-| **Max Memory (%)**<sup>1</sup> | The maximum percentage of available memory that dataflows can use in a capacity. |
-| **Enhanced Dataflows Compute Engine (Preview)** | Enable this option for up to 20x faster calculation of computed entities when working with large scale data volumes. **You must restart the capacity to activate the new engine.** For more information, see [Enhanced dataflows compute engine](#enhanced-dataflows-compute-engine). |
-| **Container Size** | The maximum size of the container that dataflows use for each entity in the dataflow. The default value is 700 MB. For more information, see [Container size](#container-size). |
-
-<sup>1</sup> *Premium* doesn't require memory settings to be changed. Memory in Premium is automatically managed by the underlying system.
+The dataflows workload lets you use dataflows self-service data prep, to ingest, transform, integrate, and enrich data. Use the following settings to control workload behavior in Premium. Power BI Premium doesn't require memory settings to be changed. Memory in Premium is automatically managed by the underlying system.
 
 ### Enhanced dataflows compute engine
 
@@ -229,7 +218,7 @@ When refreshing a dataflow, the dataflow workload spawns a container for each en
 * Dataflows take too long to refresh, or dataflow refresh fails on a timeout.
 * Dataflow entities include computation steps, for example, a join.  
 
-It's recommended you use the [Power BI Premium Capacity Metrics](service-premium-gen2-metrics-app.md) app to analyze Dataflow workload performance.
+It's recommended you use the [Power BI Premium Capacity Metrics](service-premium-metrics-app.md) app to analyze Dataflow workload performance.
 
 In some cases, increasing container size may not improve performance. For example, if the dataflow is getting data only from a source without performing significant calculations, changing container size probably won't help. Increasing container size might help if it will enable the Dataflow workload to allocate more memory for entity refresh operations. By having more memory allocated, it can reduce the time it takes to refresh heavily computed entities.
 
@@ -240,9 +229,6 @@ The Container Size value can't exceed the maximum memory for the Dataflows workl
 The paginated reports workload lets you run paginated reports, based on the standard SQL Server Reporting Services format, in the Power BI service.
 
 Paginated reports offer the same capabilities that SQL Server Reporting Services (SSRS) reports do today, including the ability for report authors to add custom code.  This allows authors to dynamically change reports, such as changing text colors based on code expressions.
-
->[!NOTE]
->You need to enable this workload with Power BI Premium Gen1 capacities.
 
 ### Outbound connectivity
 
@@ -271,7 +257,7 @@ The paginated reports workload is enabled automatically, and is always enabled.
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Power BI Premium](service-premium-gen2-what-is.md)
+>[Power BI Premium](service-premium-what-is.md)
 
 >[!div class="nextstepaction"]
 >[Self-service data prep in Power BI with Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)

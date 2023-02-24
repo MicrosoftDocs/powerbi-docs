@@ -28,11 +28,7 @@ To get started, you're required to have:
 
 * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup
 
-* A [capacity](#step-2---create-a-capacity), with [paginated reports workload](../../enterprise/service-admin-premium-workloads.md#paginated-reports) enabled
-
-    >[!NOTE]
-    >You only need to enable this workload with Power BI Premium Gen1 capacities.
-
+* A [capacity](#step-2---create-a-capacity)
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
@@ -58,11 +54,9 @@ To embed a paginated report using the sample app, follow these steps:
 
 3. [Assign a workspace to a capacity](#step-3---assign-a-workspace-to-a-capacity).
 
-4. [Enable paginated reports workload](#step-4---enable-paginated-reports-workload).
+4. [Create and upload your paginated report](#step-4---create-and-upload-your-paginated-report).
 
-5. [Create and upload your paginated report](#step-5---create-and-upload-your-paginated-report).
-
-6. [Embed content using the sample application](#step-6---embed-content-using-the-sample-application).
+5. [Embed content using the sample application](#step-5---embed-content-using-the-sample-application).
 
 ## Step 1 - Create a workspace
 
@@ -84,7 +78,7 @@ In Power BI service, create a workspace for your paginated report.
 
 Before you import or upload a paginated report to embed, the workspace containing the report must be assigned to a capacity. There are two types of capacity you can choose from:
 
-* **Power BI Premium** - For embedding a paginated report, an *EM* or *P* SKU is required. For more information about this subscription, see [What is Power BI Premium?](../../enterprise/service-premium-gen2-what-is.md)
+* **Power BI Premium** - For embedding a paginated report, an *EM* or *P* SKU is required. For more information about this subscription, see [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
 * **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
 The following table describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.yml#which-solution-should-i-choose-) table.
@@ -100,7 +94,7 @@ The following table describes the resources and limits of each SKU. To determine
 
 ### [Embed for your organization](#tab/organization)
 
-By creating a capacity, you can take advantage of having a resource for the content in your app workspace. For paginated reports, you must back your app workspace with an *EM* or a *P* capacity. You can create a capacity by using [Power BI Premium](../../enterprise/service-premium-gen2-what-is.md).
+By creating a capacity, you can take advantage of having a resource for the content in your app workspace. For paginated reports, you must back your app workspace with an *EM* or a *P* capacity. You can create a capacity by using [Power BI Premium](../../enterprise/service-premium-what-is.md).
 
 The following table lists the Power BI Premium SKUs that can be used to create a capacity for paginated reports in [Microsoft Office 365](../../enterprise/service-admin-premium-purchase.md):
 
@@ -146,35 +140,14 @@ After you create a capacity, you need to assign your workspace to that capacity.
 
 ---
 
-## Step 4 - Enable paginated reports workload
-
->[!NOTE]
->This step is only necessary for **Embedded Gen1**. If your capacity is Gen2, continue to [Step 5](#step-5---create-and-upload-your-paginated-report).
-
-After creating a capacity and assigning your workspace to it, you need to enable the paginated report workload on your capacity.
-
-1. Sign into [Power BI > Admin portal > Capacity settings](https://app.powerbi.com/admin-portal/capacities).
-
-2. Select the capacity that has the workspace you want to add a paginated report to.
-
-    ![Select capacity](media/embed-paginated-reports/select-capacity.png)
-
-3. Expand **Workloads**.
-
-    ![Expand workloads](media/embed-paginated-reports/expand-workloads.png)
-
-4. Activate the paginated reports workload.
-
-    ![Paginated reports workload](media/embed-paginated-reports/paginated-reports-workload.png)
-
-## Step 5 - Create and upload your paginated report
+## Step 4 - Create and upload your paginated report
 
 You can create your paginated report using [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), and then [upload the report to the service](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
 
 >[!NOTE]
 >The user uploading the paginated report needs a Power BI Pro or Premium Per User (PPU) license to publish to a workspace.
 
-## Step 6 - Embed content using the sample application
+## Step 5 - Embed content using the sample application
 
 ### [Embed for your customers](#tab/customers)
 
