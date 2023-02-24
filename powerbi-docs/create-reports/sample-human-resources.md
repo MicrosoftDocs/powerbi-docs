@@ -20,9 +20,9 @@ The Human Resources built-in sample contains a dashboard, report, and dataset fo
 
 :::image type="content" source="media/sample-human-resources/hr1.png" alt-text="Screenshot shows the dashboard for the Human Resources sample." lightbox="media/sample-human-resources/hr1.png":::
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created this sample using real, anonymized data. The data is available in several formats: built-in sample in the Power BI service, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created this sample using real, anonymized data. The data is available in several formats: built-in sample in the Power BI service, *.pbix* Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
 
-This tutorial explores the Human Resources built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop.
+This tutorial explores the Human Resources built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
 
 ## Prerequisites
 
@@ -165,6 +165,6 @@ In the [Q&A question box](power-bi-tutorial-q-and-a.md) in the dashboard, you ca
 
 ## Next steps
 
-This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the Learning center for a new copy of this sample.
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn. Connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md).
