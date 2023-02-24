@@ -19,11 +19,9 @@ Print an entire dashboard, a dashboard tile, a report page, or a report visual f
 
 ## Print considerations
 
-Most Power BI dashboards and reports are created by report *designers* for use online and to look amazing when displayed on various devices. When you print a report, your browser controls how the content looks on paper.
+Report *designers* create most Power BI dashboards and reports for use online. They look amazing on any device being used to view them. However, when you are ready to print, you might not get the results you want.
 
-Most Power BI dashboards and reports are created by report *designers* to be used online and to look amazing when displayed on a variety of devices. When you print a report, how that content displays on paper is controlled by your browser. 
-
-There are browser settings you can use to adjust the printout, but even then you still may not get the result you want. Consider [exporting to PDF](../collaborate-share/end-user-pdf.md) first and printing the PDF instead.
+You can make changes to your browser and print settings to adjust the print job, but to ensure your printouts match what you see in your browser, consider [exporting your report to PDF](../collaborate-share/end-user-pdf.md) instead.
 
 ## Adjust your browser print settings
 
@@ -36,7 +34,7 @@ Here are a few quick tips you can use to format your printout.
 
    :::image type="content" source="./media/end-user-print/power-bi-landscape-layout.png" alt-text="Screenshot of the print settings with Layout as Landscape selected.":::
 
-1. Adjust the margins and scale settings to fit more onto a printed page.
+1. Adjust the margins and scale settings to fit more onto a printed page. For example, if your tile doesn't fit on the page, you might want to change the scale to 75%.
 
     :::image type="content" source="./media/end-user-print/power-bi-margins.png" alt-text="Screenshot of print settings with Margins and Scale options selected.":::
 
@@ -46,11 +44,11 @@ Experiment with your browser's settings until you get the look you like. Some br
 
 1. Open the dashboard that you'd like to print.
 
-1. In the upper left corner, select **File** and choose **Print this page**.
+1. In the upper left corner, select **File** > **Print this page**.
 
    :::image type="content" source="./media/end-user-print/power-bi-dashboard-print-options.png" alt-text="Screenshot of the dropdown File menu expanded, and Print the page selected.":::
 
-1. After the Print window for your browser opens, select the settings to fit your pint job. For example, if your dashboard is wider than it's long, you might want to change the layout to **Landscape**.
+1. Adjust your [print settings](#adjust-your-browser-print-settings).
 1. Select **Print**.
 
     :::image type="content" source="./media/end-user-print/power-bi-print-dash.png" alt-text="Screenshot of the Print Window open and the print options displayed.":::
@@ -69,7 +67,7 @@ Experiment with your browser's settings until you get the look you like. Some br
 
     :::image type="content" source="./media/end-user-print/power-bi-focus.png" alt-text="Screenshot of a tile in full screen mode with the Options menu.":::
 
-1. After the Print window for your browser opens, select the settings to fit your print job. For example, if your tile doesn't fit on the page, you might want to change the scale to 75%.
+1. Adjust your [print settings](#adjust-your-browser-print-settings).
 1. Select **Print**.
 
    :::image type="content" source="./media/end-user-print/power-bi-scale.png" alt-text="Screenshot of Print window with print settings displayed.":::
@@ -88,7 +86,7 @@ Reports can be printed one page at a time.
 
     :::image type="content" source="./media/end-user-print/power-bi-print-report.png" alt-text="Screenshot of the file menu open and Print this page selected.":::
 
-1. After the Print window for your browser opens, select the settings to fit your print job. For example, if your report is wider than it's long, you might want to change the layout to **Landscape**.
+1. Adjust your [print settings](#adjust-your-browser-print-settings).
 1. Select **Print**.
 
 ## Print a report visual
@@ -101,7 +99,7 @@ Reports can be printed one page at a time.
 
     :::image type="content" source="./media/end-user-print/power-bi-visual-print.png" alt-text="Screenshot of the Power Bi service File menu open and Print this page selected.":::
 
-1. After the Print window for your browser opens, select the settings to fit your pint job. For example, if your report visual is wider than it's long, you might want to change the layout to **Landscape**.
+1. Adjust your [print settings](#adjust-your-browser-print-settings).
 1. Select **Print**.
 
 ## Considerations and troubleshooting
