@@ -61,7 +61,7 @@ The **Refresh History** provides an overview of refreshes, including the type �
 | End time | End time is the time the dataflow entity or partition completed, if applicable. | ✔ | ✔ |
 | Duration | Total elapsed time for the dataflow to refresh expressed in HH:MM:SS. | ✔ | ✔ |
 | Rows processed | For a given entity or partition, the number of rows scanned or written by the dataflows engine. This item might not always contain data based on the operation you performed. Data might be omitted when the compute engine isn't used, or when you use a gateway as the data is processed there. |  | ✔ |
-| Bytes processed | For a given entity or partition, Data written by the dataflows engine, expressed in bytes.<br><br>When using a gateway on this particular dataflow this information isn't provided. |  | ✔ |
+| Bytes processed | For a given entity or partition, Data written by the dataflows engine, expressed in bytes.<br><br>When using a gateway on this particular dataflow, this information isn't provided. |  | ✔ |
 | Max commit (KB) | Max Commit is the peak commit memory useful for diagnosing out-of-memory failures when the M query isn't optimized.<br><br>When you use a gateway on this particular dataflow, this information isn't provided. |  | ✔ |
 | Processor Time | For a given entity or partition, time, expressed in HH:MM:SS that the dataflows engine spent performing transformations.<br><br>When you use a gateway on this particular dataflow, this information isn't provided. |  | ✔ |
 | Wait time | For a given entity or partition, the time that an entity spent in wait status, based on workload on the Premium capacity. |  | ✔ |
