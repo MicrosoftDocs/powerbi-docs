@@ -15,7 +15,7 @@ The Artificial Intelligence sample contains a report for a fictitious company na
 
 :::image type="content" source="media/sample-artificial-intelligence/power-bi-ai-sample-report.png" alt-text="Screenshot of opened Artificial Intelligence Sample." lightbox="media/sample-artificial-intelligence/power-bi-ai-sample-report-large.png":::
 
-This tutorial explores the Artificial Intelligence Sample in the Power BI service. Because the report experience might be similar in Power BI Desktop and in the service, you can also follow along by downloading the sample .pbix file in Power BI Desktop.
+This tutorial explores the Artificial Intelligence Sample in the Power BI service. Because the report experience might be similar in Power BI Desktop and in the service, you can also follow along by downloading the sample *.pbix* file in Power BI Desktop.
 
 ## Prerequisites
 
@@ -44,15 +44,17 @@ Before you can use the sample, get the sample in one of the following ways:
 
 ### Get the .pbix file for this sample
 
-Alternatively, after you've saved it to My workspace, you can download the report from the service and save it as a .pbix file. Then you can open it in Power BI Desktop.
+Alternatively, after you've saved it to My workspace, you can download the report from the service and save it as a *.pbix* file. Then you can open it in Power BI Desktop.
 
 1. Open the report in the Power BI service.
 
-1. On the **File** menu, select **Download the .pbix file**.
+1. On the **File** menu, select **Download this file**.
 
-    :::image type="content" source="media/sample-artificial-intelligence/download-pbix-file.png" alt-text="Screenshot of Download the .pbix file.":::
+   :::image type="content" source="media/sample-artificial-intelligence/download-pbix-file.png" alt-text="Screenshot of Download this file menu item.":::
 
-    It's saved to your Downloads folder, and you can open it with Power BI Desktop.
+1. In the **What do you want to download?** dialog, select *A copy of your report and data (.pbix)* and choose **Download**.
+
+   It's saved to your Downloads folder, and you can open it with Power BI Desktop.
 
 For more information, see [Download a report from the service to Power BI Desktop](service-export-to-pbix.md).
 
@@ -74,11 +76,11 @@ The first report page to explore is **Key Influencers**, where you analyze your 
 
 1. By interacting with slicers, filters, and other visuals, the Key influencers visual reruns its analysis based on the updated choice. From the **Close % by Product category** stacked bar chart, select the **Furniture** category to generate new insights based upon the updated selection. You see that when the **Product category** is **Furniture** and when the **Sales owner** is **Molly Clark**, you're **1.50x** more likely to win new revenue.
 
-    :::image type="content" source="media/sample-artificial-intelligence/power-bi-key-influencers-update.png" alt-text="Screenshot of Updated analysis for Key influencers.":::
+   :::image type="content" source="media/sample-artificial-intelligence/power-bi-key-influencers-update.png" alt-text="Screenshot of Updated analysis for Key influencers.":::
 
 1. To review the top contributors for when your **Status** changes, from the dropdown, select the **Lost** option to generate new insights based upon the updated selection. You can now answer the question, **“What is the top contributor when a loss occurs?"**
 
-    :::image type="content" source="media/sample-artificial-intelligence/power-bi-key-influencers-status-change.png" alt-text="Screenshot of Status change for Key influencers.":::
+   :::image type="content" source="media/sample-artificial-intelligence/power-bi-key-influencers-status-change.png" alt-text="Screenshot of Status change for Key influencers.":::
 
 To learn more, see [Key influencers visuals](../visuals/power-bi-visualization-influencers.md).
 
@@ -90,15 +92,15 @@ The second report page to explore is **Decomposition Tree**, where you conduct r
 
 1. From the **Decomposition tree** visual in the center of your report, select the **Computers** option within the **Category** breakdown to rerun the analysis.
 
-    :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-selection.png" alt-text="Screenshot of Decomposition tree rerun analysis.":::
+   :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-selection.png" alt-text="Screenshot of Decomposition tree rerun analysis.":::
 
 1. With your updated analysis, you can use *artificial intelligence splits* to determine the path to the next highest sales opportunities in your data. Select the **+** symbol next to **Tablets** and the **High value** option.
 
-    :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-ai-split.png" alt-text="Screenshot of Decomposition tree AI split path.":::
+   :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-ai-split.png" alt-text="Screenshot of Decomposition tree AI split path.":::
 
 1. The tree determines that the **Territory** field as the next path for sales opportunity, with the **US-SOUTH** being the largest. Select the **+** symbol next to **US-SOUTH**, then select the **High value** option. From the updated selection, you can now answer the question, **"Who is the top sales owner?"**
 
-    :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-ai-split-sales-owner.png" alt-text="Screenshot of Decomposition tree AI split path to highest value.":::
+   :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-ai-split-sales-owner.png" alt-text="Screenshot of Decomposition tree AI split path to highest value.":::
 
 To learn more, see [Decomposition tree visuals](../visuals/power-bi-visualization-decomposition-tree.md).
 
@@ -110,15 +112,15 @@ The final report page to explore is **Anomaly Detection**, where you combine sev
 
 1. The clustered bar chart in the top right of the page is divided into multiple versions of itself (*small multiples*) to compare data across the **Manager** and **Product category** fields. In the **Software** multiple, select the bar for **Low, Spencer** to dynamically filter the rest of the page to Spencer's specific results.
 
-    :::image type="content" source="media/sample-artificial-intelligence/power-bi-small-multiple.png" alt-text="Screenshot of Small multiple for Product category.":::
+   :::image type="content" source="media/sample-artificial-intelligence/power-bi-small-multiple.png" alt-text="Screenshot of Small multiple for Product category.":::
 
 1. On the right side of the page, Power BI has generated a dynamic summary based on the updated selection. The text summary describes the highest and lowest calendar months for **Revenue Won**.
 
-    :::image type="content" source="media/sample-artificial-intelligence/power-bi-smart-narrative.png" alt-text="Screenshot of Smart narrative summary.":::
+   :::image type="content" source="media/sample-artificial-intelligence/power-bi-smart-narrative.png" alt-text="Screenshot of Smart narrative summary.":::
 
 1. Within the line chart in the center of the page, right-click the **December 2020** data point. Within the menu options, select **Analyze** > **Explain the decrease** to answer **"Why the sharp decline in revenue in December 2020?"** using quick insights.
 
-    :::image type="content" source="media/sample-artificial-intelligence/power-bi-quick-insights.png" alt-text="Screenshot of Quick insights to explain the decrease.":::
+   :::image type="content" source="media/sample-artificial-intelligence/power-bi-quick-insights.png" alt-text="Screenshot of Quick insights to explain the decrease.":::
 
 To learn more, see [Smart narratives](../visuals/power-bi-visualization-smart-narrative.md) and [Apply insights to explain fluctuations in visuals](desktop-insights.md).
 
@@ -126,15 +128,15 @@ To learn more, see [Smart narratives](../visuals/power-bi-visualization-smart-na
 
 1. In the top right of the page, select the **Last 90 days** to view **Revenue Won** displayed as individual days.
 
-    :::image type="content" source="media/sample-artificial-intelligence/power-bi-button.png" alt-text="Screenshot of Power B I button selection.":::
+   :::image type="content" source="media/sample-artificial-intelligence/power-bi-button.png" alt-text="Screenshot of Power B I button selection.":::
 
 1. The button has preserved the **Low, Spencer** and **Software** selections from earlier steps. It has also rewritten the **Revenue Summary** based upon the last 90 days filter, which you can review for new insights. In the line chart, there are also visual **anomaly** indicators. Select the **April 25th** indicator for a possible explanation as to **"Why?"** an anomaly was detected.
 
-    :::image type="content" source="media/sample-artificial-intelligence/power-bi-anomaly-detection.png" alt-text="Screenshot of Anomaly detection.":::
+   :::image type="content" source="media/sample-artificial-intelligence/power-bi-anomaly-detection.png" alt-text="Screenshot of Anomaly detection.":::
 
 1. The **Anomalies** pane is now displayed on the right side of your report page. It includes **Possible explanations**, a **Strength score**, which means that higher scores might have had a greater effect, and possibly more explanations if you scroll down. From your highest possible explanation score, you can answer the question, **"Why the increase in revenue?"**. When finished, collapse the Anomalies pane using the double arrows **>>** at the top of the pane.
 
-    :::image type="content" source="media/sample-artificial-intelligence/power-bi-anomalies-pane.png" alt-text="Screenshot of Anomalies pane.":::
+   :::image type="content" source="media/sample-artificial-intelligence/power-bi-anomalies-pane.png" alt-text="Screenshot of Anomalies pane.":::
 
 To learn more, see [Anomaly detection](../visuals/power-bi-visualization-anomaly-detection.md).
 
@@ -142,7 +144,7 @@ To learn more, see [Anomaly detection](../visuals/power-bi-visualization-anomaly
 
 1. In the bottom right of the page, type the question *close %* in the **Ask a question about your data** field to return a single value.
 
-    :::image type="content" source="media/sample-artificial-intelligence/ask-a-question.png" alt-text="Screenshot of Ask a question.":::
+   :::image type="content" source="media/sample-artificial-intelligence/ask-a-question.png" alt-text="Screenshot of Ask a question.":::
 
 2. To segment the **close %** results by month, modify the current question to *close % by month* to visually display the results in a clustered column chart.
 
@@ -158,6 +160,6 @@ To learn more, see [Anomaly detection](../visuals/power-bi-visualization-anomaly
 
 ## Next steps
 
-This environment is a safe one to play in, because you can choose not to save your changes. If you do save them, you can always visit the **Learn** section's **Sample reports** for a new copy of this sample.
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
 We hope this tour has shown how the artificial intelligence capabilities in Power BI can provide insights into data. Now it's your turn. Connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md).
