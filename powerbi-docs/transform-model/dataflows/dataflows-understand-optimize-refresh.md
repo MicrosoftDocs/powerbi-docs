@@ -60,12 +60,12 @@ The **Refresh History** provides an overview of refreshes, including the type �
 | Start time | In Premium, this item is the time the dataflow was queued up for processing for the entity or partition. This time can differ if dataflows have dependencies and need to wait for the result set of an upstream dataflow to begin processing. | ✔ | ✔ |
 | End time | End time is the time the dataflow entity or partition completed, if applicable. | ✔ | ✔ |
 | Duration | Total elapsed time for the dataflow to refresh expressed in HH:MM:SS. | ✔ | ✔ |
-| Rows processed | For a given entity or partition, # of rows scanned or written by the dataflows engine. This item might not always contain data based on the operation you performed. Data might be omitted when the Compute Engine isn't used, or when you use a gateway as the data is processed there. |  | ✔ |
-| Bytes processed | For a given entity or partition, Data written by the dataflows engine, expressed in bytes.<br><br>Note, when using a gateway on this particular dataflow this information isn't provided. |  | ✔ |
+| Rows processed | For a given entity or partition, the number of rows scanned or written by the dataflows engine. This item might not always contain data based on the operation you performed. Data might be omitted when the compute engine isn't used, or when you use a gateway as the data is processed there. |  | ✔ |
+| Bytes processed | For a given entity or partition, Data written by the dataflows engine, expressed in bytes.<br><br>When using a gateway on this particular dataflow this information isn't provided. |  | ✔ |
 | Max commit (KB) | Max Commit is the peak commit memory useful for diagnosing out-of-memory failures when the M query isn't optimized.<br><br>When you use a gateway on this particular dataflow, this information isn't provided. |  | ✔ |
 | Processor Time | For a given entity or partition, time, expressed in HH:MM:SS that the dataflows engine spent performing transformations.<br><br>When you use a gateway on this particular dataflow, this information isn't provided. |  | ✔ |
 | Wait time | For a given entity or partition, the time that an entity spent in wait status, based on workload on the Premium capacity. |  | ✔ |
-| Compute engine | For a given entity or partition, details on how the refresh operation uses the Compute Engine. The values are:<br>- NA<br>- Folded<br>- Cached<br>- Cached + Folded<br><br>These elements are described in more detail later in this article. |  | ✔ |
+| Compute engine | For a given entity or partition, details on how the refresh operation uses the compute engine. The values are:<br>- NA<br>- Folded<br>- Cached<br>- Cached + Folded<br><br>These elements are described in more detail later in this article. |  | ✔ |
 | Error | If applicable, the detailed error message is described per entity or partition. | ✔ | ✔ |
 
 ## Dataflow refresh guidance
@@ -76,15 +76,15 @@ The refresh statistics provide valuable information you can use to optimize and 
 
 Using dataflows in the same workspace allows straightforward orchestration. As an example, you might have dataflows A, B and C in a single workspace, and chaining like A > B > C. If you refresh the source (A), the downstream entities also get refreshed. However, if you refresh C, then you have to refresh others independently. Also, if you add a new data source in dataflow B (which isn't included in A) that data isn't refreshed as a part of orchestration.
 
-You might want to chain items together that don't fit the managed orchestration Power BI performs. In these scenarios, you can use the APIs and/or use PowerAutomate. You can refer to the [API documentation](/rest/api/power-bi/dataflows/getdataflowtransactions) and the [PowerShell script](https://github.com/microsoft/powerbi-powershell/tree/master/examples/dataflows) for programmatic refresh. There's a Power Automate connector that enables doing this procedure without writing any code. You can see [detailed samples](/power-query/dataflows/dataflow-power-automate-connector-templates), with specific walk-throughs for [sequential refreshes](/power-query/dataflows/trigger-dataflows-and-power-bi-dataset-sequentially).
+You might want to chain items together that don't fit the managed orchestration Power BI performs. In these scenarios, you can use the APIs and/or use Power Automate. You can refer to the [API documentation](/rest/api/power-bi/dataflows/getdataflowtransactions) and the [PowerShell script](https://github.com/microsoft/powerbi-powershell/tree/master/examples/dataflows) for programmatic refresh. There's a Power Automate connector that enables doing this procedure without writing any code. You can see [detailed samples](/power-query/dataflows/dataflow-power-automate-connector-templates), with specific walk-throughs for [sequential refreshes](/power-query/dataflows/trigger-dataflows-and-power-bi-dataset-sequentially).
 
 ### Monitoring
 
 Using the enhanced refresh statistics described earlier in this article, you can get detailed per-dataflow refresh information. But if you would like to see dataflows with tenant-wide or workspace-wide overview of refreshes, perhaps to build a monitoring dashboard, you can use [the APIs](/rest/api/power-bi/dataflows) or [PowerAutomate templates](/power-query/dataflows/dataflow-power-automate-connector-templates). Similarly, for use cases such as [sending simple or complex notifications](/power-query/dataflows/send-notification-when-dataflow-refresh-completes), you can use the PowerAutomate connector or build your own custom application by using our APIs.
 
-### Timeout Errors
+### Timeout errors
 
-Optimizing the time it takes to perform extract, transform, and load scenarios is ideal. In Power BI, the following cases apply:
+Optimizing the time it takes to perform extract, transform, and load (ETL) scenarios is ideal. In Power BI, the following cases apply:
 
 * Some connectors have explicit timeout settings you can configure. For more information, see [Connectors in Power Query](/power-query/connectors/).
 * Power BI dataflows, using Power BI Pro, can also experience timeouts for long running queries within an entity or dataflows themselves. That limitation doesn't exist in Power BI Premium workspaces.
@@ -112,7 +112,7 @@ The first step to improve long refresh durations for dataflows is to build dataf
 
 * Use [linked entities](/power-query/dataflows/linked-entities) for data that can be used later in other transformations.
 * [Use computed entities](/power-query/dataflows/computed-entities-scenarios) to cache data, reducing data loading and data ingestion burden on source systems.
-* Split data into [staging dataflows](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#staging-dataflows) and [transformation dataflows](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#transformation-dataflows), separating the ETL (extract, transform, load) into different dataflows.
+* Split data into [staging dataflows](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#staging-dataflows) and [transformation dataflows](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#transformation-dataflows), separating the ETL into different dataflows.
 * [Optimize expanding table operations](/power-query/optimize-expanding-table-columns).
 * Follow [guidance for complex dataflows](/power-query/dataflows/best-practices-developing-complex-dataflows).
 
@@ -136,7 +136,7 @@ Finally, consider optimizing your environment. You can optimize the Power BI env
 * Network latency can affect refresh performance by increasing the time required for requests to reach the Power BI service, and for responses to be delivered. Tenants in Power BI are assigned to a specific region. To determine where your tenant is located, see [Find the default region for your organization](../../admin/service-admin-where-is-my-tenant-located.md). When users from a tenant access the Power BI service, their requests always route to that region. As requests reach the Power BI service, the service might then send extra requests, for example, to the underlying data source, or a data gateway—which are also subject to network latency.
   * Tools such as [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI cluster as close as possible. Residing in the same region is preferable. If network latency is an issue, try locating gateways and data sources closer to your Power BI cluster by placing them inside cloud-hosted virtual machines.
 
-### High Processor Time
+### High processor time
 
 If you see high processor time, you likely have expensive transformations that aren't being folded. The high processor time is either because of the number of applied steps you have, or the type of transformations you're making. Each of these possibilities can result in higher refresh times.
 
@@ -144,62 +144,62 @@ If you see high processor time, you likely have expensive transformations that a
 
 There are two options for optimizing high processor time.
 
-First, use query folding within the data source itself, which should reduce the load on the dataflow Compute Engine directly. Query folding within the data source allows the source system to do most of the work. The dataflow can then pass through queries in the native language of the source, rather than having to perform all the computations in memory after the initial query.
+First, use query folding within the data source itself, which should reduce the load on the dataflow compute engine directly. Query folding within the data source allows the source system to do most of the work. The dataflow can then pass through queries in the native language of the source, rather than having to perform all the computations in memory after the initial query.
 
-Not all data sources can perform query folding, and even when query folding is possible there might be dataflows that perform certain transformations that can't fold to the source. In such cases, the [enhanced Compute Engine](./dataflows-premium-workload-configuration.md#guidance-for-common-scenarios) is a capability introduced by Power BI to potentially improve performance by up to 25 times, for transformations specifically.
+Not all data sources can perform query folding, and even when query folding is possible there might be dataflows that perform certain transformations that can't fold to the source. In such cases, the [enhanced compute engine](./dataflows-premium-workload-configuration.md#guidance-for-common-scenarios) is a capability introduced by Power BI to potentially improve performance by up to 25 times, for transformations specifically.
 
-### Use the Compute Engine to maximize performance
+### Use the compute engine to maximize performance
 
-While Power Query has design-time visibility into query folding, the Compute Engine column provides details about whether the internal engine itself is used. The Compute Engine is helpful when you have a complex dataflow and you're performing transformations in memory. This situation is where the enhanced refresh statistics can be helpful, since the Compute Engine column provides details about whether or not the engine itself was used.
+While Power Query has design-time visibility into query folding, the compute engine column provides details about whether the internal engine itself is used. The compute engine is helpful when you have a complex dataflow and you're performing transformations in memory. This situation is where the enhanced refresh statistics can be helpful, since the compute engine column provides details about whether or not the engine itself was used.
 
-The following sections provide guidance about using the Compute Engine, and its statistics.
+The following sections provide guidance about using the compute engine, and its statistics.
 
 > [!WARNING]
 > During design time the folding indicator in the editor might show that the query does not fold when consuming data from another dataflow. Check the source dataflow if enhanced compute is enabled to ensure folding on the source dataflow is enabled.
 
-#### Guidance on Compute Engine Statuses
+#### Guidance on compute engine Statuses
 
-Turning on the Enhanced Compute Engine and understanding the various statuses is helpful. Internally, the enhanced Compute Engine uses an SQL database to read and store data. It's best to have your transformations execute against the query engine here. The following paragraphs provide various situations, and guidance about what to do for each.
+Turning on the Enhanced compute engine and understanding the various statuses is helpful. Internally, the enhanced compute engine uses an SQL database to read and store data. It's best to have your transformations execute against the query engine here. The following paragraphs provide various situations, and guidance about what to do for each.
 
-**NA** - This status means that the Compute Engine wasn't used, either because:
+**NA** - This status means that the compute engine wasn't used, either because:
 
 * You're using Power BI Pro dataflows.
-* You explicitly turned off the Compute Engine.
+* You explicitly turned off the compute engine.
 * You're using query folding on the data source.
 * You're performing complex transformations that can't make use of the SQL engine used to speed up queries.
 
-If you're experiencing long durations and still get a status of **NA**, make sure that it's [turned on](dataflows-premium-workload-configuration.md) and not accidentally turned off. One recommended pattern is to use [staging dataflows to initially get your data into the Power BI service, then build dataflows on top of this data, after it is in a staging dataflow](/power-query/dataflows/best-practices-developing-complex-dataflows#split-data-transformation-dataflows-from-stagingextraction-dataflows). That pattern can reduce load on source systems and, together with the Compute Engine, provide a speed boost for transformations and improve performance.
+If you're experiencing long durations and still get a status of **NA**, make sure that it's [turned on](dataflows-premium-workload-configuration.md) and not accidentally turned off. One recommended pattern is to use [staging dataflows](/power-query/dataflows/best-practices-developing-complex-dataflows#split-data-transformation-dataflows-from-stagingextraction-dataflows) to initially get your data into the Power BI service, then build dataflows on top of this data, after it is in a staging dataflow. That pattern can reduce load on source systems and, together with the compute engine, provide a speed boost for transformations and improve performance.
 
-**Cached** - If you see **cached** status, the dataflow data was stored in the Compute Engine and available to be referenced as part of another query. This situation is ideal if you're using it as a Linked Entity, because the Compute Engine caches that data for use downstream. The cached data doesn't need to be refreshed multiple times in the same dataflow. This situation is also potentially ideal if you want to use it for DirectQuery.
+**Cached** - If you see the **cached** status, the dataflow data was stored in the compute engine and available to be referenced as part of another query. This situation is ideal if you're using it as a linked entity, because the compute engine caches that data for use downstream. The cached data doesn't need to be refreshed multiple times in the same dataflow. This situation is also potentially ideal if you want to use it for DirectQuery.
 
-When cached, the performance impact on initial ingestion pays off later, in the same dataflow or different dataflow in same workspace.
+When cached, the performance impact on initial ingestion pays off later, in the same dataflow or in a different dataflow in the same workspace.
 
-If you have a large duration for the entity, consider turning off the Compute Engine. To cache the entity, Power BI writes it to storage and to SQL. If it's a single-use entity, the performance benefit for users might not be worth the penalty of the double-ingestion.
+If you have a large duration for the entity, consider turning off the compute engine. To cache the entity, Power BI writes it to storage and to SQL. If it's a single-use entity, the performance benefit for users might not be worth the penalty of the double-ingestion.
 
-**Folded** - Folded means that the dataflow was able to use SQL Compute to read data. The calculated entity used the table from SQL to read data, and the SQL used is related to the constructs of their query.
+**Folded** - Folded means that the dataflow was able to use SQL compute to read data. The calculated entity used the table from SQL to read data, and the SQL used is related to the constructs of their query.
 
 Folded status appears if, when you're using on-premises or cloud data sources, you first loaded data into a staging dataflow and referenced that in this dataflow. This status applies only to entities that reference another entity. It means your queries were run on top of the SQL engine, and they have the potential to be improved with SQL compute. To ensure the SQL engine processes your transformations, use transformations that support SQL folding, such as merge (join), group by (aggregation), and append (union) actions in the Query Editor.
 
 **Cached + Folded** - When you see **cached + folded**, it's likely that the data refresh is optimized, as you have an entity that both references another entity and is referred to by another entity upstream. This operation also runs on top of the SQL and, as such, also has the potential for improvement with SQL compute. To be sure you're getting the best performance possible, use transformations that support SQL folding, like merge (join), group by (aggregation), and append (union) actions in the Query Editor.
 
-### Guidance for Compute Engine performance optimization
+### Guidance for compute engine performance optimization
 
-The following steps enable workloads to trigger the Compute Engine, and thereby, always improve performance.
+The following steps enable workloads to trigger the compute engine, and thereby, always improve performance.
 
-**Computed and Linked Entities in the same workspace:**
+**Computed and linked entities in the same workspace:**
 
-For *ingestion*, focus on getting the data into the storage as fast as possible, by using filters only if they reduce the overall dataset size. Keep your transformation logic separate from this step. Next, separate your transformation and business logic into a separate dataflow in the same workspace. Use linked or computed entities. Doing so allows for the engine to activate and accelerate your computations. For a simple analogy, it's like food preparation in a kitchen: food preparation is typically a separate and distinct step from gathering your raw ingredients, and a pre-requisite for putting the food in the oven. Similarly, you need to prepare your logic separately before it can take advantage of the Compute Engine.
+For *ingestion*, focus on getting the data into the storage as fast as possible, use filters only if they reduce the overall dataset size. Keep your transformation logic separate from this step. Next, separate your transformation and business logic into a separate dataflow in the same workspace. Use linked or computed entities. Doing so allows for the engine to activate and accelerate your computations. For a simple analogy, it's like food preparation in a kitchen: food preparation is typically a separate and distinct step from gathering your raw ingredients, and a pre-requisite for putting the food in the oven. Similarly, you need to prepare your logic separately before it can take advantage of the compute engine.
 
 Ensure you perform the operations that fold, such as merges, joins, conversion, and [others](/power-query/power-query-folding#transformations-that-can-achieve-folding).
 
 Also, build dataflows [within published guidelines and limitations](dataflows-features-limitations.md#dataflows-in-premium).
 
-**When the Compute engine is on, but performance is slow:**
+**When the compute engine is on, but performance is slow:**
 
-Take the following steps when investigating scenarios where the Compute Engine is on, but you're seeing poor performance:
+Take the following steps when investigating scenarios where the compute engine is on, but you're seeing poor performance:
 
 * Limit computed and linked entities that exist across the workspace.
-* If your initial refresh is with the Compute Engine turned on, data gets written in the lake *and* in the cache. This double-write results in refreshes being slower.
+* If your initial refresh is with the compute engine turned on, data gets written in the lake *and* in the cache. This double-write results in refreshes being slower.
 * If you have a dataflow linking to multiple dataflows, make sure you schedule refreshes of the source dataflows so that they don't all refresh at the same time.
 
 ## Considerations and limitations
