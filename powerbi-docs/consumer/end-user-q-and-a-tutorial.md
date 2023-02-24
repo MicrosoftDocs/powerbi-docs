@@ -32,7 +32,7 @@ You don't need a Power BI license to explore the samples in Power BI Desktop. Yo
 
 *Power BI Q&A* is available with a Pro or Premium license. For more information, see [Q&A virtual analyst in iOS apps](mobile/mobile-apps-ios-qna.md) and [Q&A in Power BI embedded analytics](../developer/embedded/qanda.md).
 
-At the current time, Power BI Q&A only supports answering natural language queries asked in English, although there's a preview available for Spanish that your Power BI administrator can enable.
+At the current time, Power BI Q&A only supports answering natural language queries asked in English. There's a preview available for Spanish that your Power BI administrator can enable.
 
 ## Import the sample in the Power BI service
 
@@ -91,7 +91,7 @@ This example uses **top states by total sales**. Power BI does its best to selec
 
 :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-qna-suggest.png" alt-text="Screenshot shows Q&A with a map visual.":::
 
-But you can tell Power BI which visual type to use by adding it to your natural language query. Keep in mind that not all visual types work or make sense with your data. For example, this data wouldn't produce a meaningful scatter chart. But it works as a filled map.
+You can tell Power BI which visual type to use by adding it to your natural language query. Keep in mind that not all visual types work or make sense with your data. For example, this data wouldn't produce a meaningful scatter chart. But it works as a filled map.
 
 :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-filled-map.png" alt-text="Screenshot shows Q&A visual as a filled map.":::
 
