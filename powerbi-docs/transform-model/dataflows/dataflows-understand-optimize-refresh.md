@@ -80,7 +80,7 @@ You might want to chain items together that don't fit the managed orchestration 
 
 ### Monitoring
 
-Using the enhanced refresh statistics described earlier in this article, you can get detailed per-dataflow refresh information. But if you would like to see dataflows with tenant-wide or workspace-wide overview of refreshes, perhaps to build a monitoring dashboard, you can use [the APIs](/rest/api/power-bi/dataflows) or [PowerAutomate templates](/power-query/dataflows/dataflow-power-automate-connector-templates). Similarly, for use cases such as [sending simple or complex notifications](/power-query/dataflows/send-notification-when-dataflow-refresh-completes), you can use the PowerAutomate connector or build your own custom application by using our APIs.
+Using the enhanced refresh statistics described earlier in this article, you can get detailed per-dataflow refresh information. But if you would like to see dataflows with tenant-wide or workspace-wide overview of refreshes, perhaps to build a monitoring dashboard, you can use [the APIs](/rest/api/power-bi/dataflows) or [PowerAutomate templates](/power-query/dataflows/dataflow-power-automate-connector-templates). Similarly, for use cases such as [sending simple or complex notifications](/power-query/dataflows/send-notification-when-dataflow-refresh-completes), you can use the PowerAutomate connector or build your own custom application by using the APIs.
 
 ### Timeout errors
 
@@ -108,7 +108,7 @@ Complex or large dataflows can take more time to refresh, as can poorly optimize
 
 #### Guidance for long refresh durations
 
-The first step to improve long refresh durations for dataflows is to build dataflows according to our [best practices](dataflows-best-practices.md). Notable patterns include:
+The first step to improve long refresh durations for dataflows is to build dataflows according to the [best practices](dataflows-best-practices.md). Notable patterns include:
 
 * Use [linked entities](/power-query/dataflows/linked-entities) for data that can be used later in other transformations.
 * [Use computed entities](/power-query/dataflows/computed-entities-scenarios) to cache data, reducing data loading and data ingestion burden on source systems.
@@ -159,7 +159,7 @@ The following sections provide guidance about using the compute engine, and its 
 
 #### Guidance on compute engine Statuses
 
-Turning on the Enhanced compute engine and understanding the various statuses is helpful. Internally, the enhanced compute engine uses an SQL database to read and store data. It's best to have your transformations execute against the query engine here. The following paragraphs provide various situations, and guidance about what to do for each.
+Turning on the enhanced compute engine and understanding the various statuses is helpful. Internally, the enhanced compute engine uses an SQL database to read and store data. It's best to have your transformations execute against the query engine here. The following paragraphs provide various situations, and guidance about what to do for each.
 
 **NA** - This status means that the compute engine wasn't used, either because:
 
