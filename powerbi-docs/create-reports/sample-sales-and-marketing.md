@@ -18,9 +18,9 @@ VanArsdel has many competitors but is the market leader in its industry. The CMO
 
 :::image type="content" source="media/sample-sales-and-marketing/sales1.png" alt-text="Screenshot of the dashboard for the Sales and Marketing sample." lightbox="media/sample-sales-and-marketing/sales1.png":::
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created this sample using real, anonymized data. The data is available in the following formats: .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created this sample using real, anonymized data. The data is available in the following formats: *.pbix* Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
 
-This tutorial explores the Sales and Marketing sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop.
+This tutorial explores the Sales and Marketing sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
 
 ## Prerequisites
 
@@ -178,6 +178,6 @@ By filtering the visualizations by VanArsdel, by segment, by month, and by regio
 
 ## Next steps
 
-After experimenting with this report, you can choose not to save your changes. If you do save them, you can always get a new copy of this sample.
+After experimenting with this report, you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
 Now that you've seen how Power BI dashboards, Q&A, and reports can provide insights into data, try connecting to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md).
