@@ -131,13 +131,13 @@ After you create a capacity, assign your workspace to that capacity. To complete
 
 1. Within the Power BI service, expand workspaces and select **More** for the workspace you're using to embed your content. Then select **Workspace settings**.
 
-    ![Edit a workspace](media/embed-paginated-reports/workspace-settings.png)
+    :::image type="content" source="media/embed-paginated-reports/workspace-settings.png" alt-text="A screenshot that shows how to select Workspace settings.":::
 
 1. Select **Premium** and the license mode for the capacity you created. Then select **Save**.
 
 1. After you save the changes, a diamond icon appears next to the app workspace name.
 
-    ![App workspace tied to a capacity](media/embed-paginated-reports/diamond.png)
+    :::image type="content" source="media/embed-paginated-reports/diamond.png" alt-text="A screenshot that shows the diamond icon next to the app workspace name.":::
 
 ---
 
