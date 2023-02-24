@@ -1,6 +1,6 @@
 ---
 title: Power BI Premium support for China North
-description: Learn which Premium Gen1 features aren't supported in China North.
+description: Learn which Premium features aren't supported in China North.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -28,7 +28,7 @@ This section lists the Power BI features that aren't supported for *China North*
 
 * [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 
-* Export Power BI reports to [PDF](../consumer/end-user-pdf.md) and [PowerPoint](../collaborate-share/end-user-powerpoint.md)
+* Export Power BI reports to [PDF](../collaborate-share/end-user-pdf.md) and [PowerPoint](../collaborate-share/end-user-powerpoint.md) 
 
 * [Email subscriptions](../collaborate-share/end-user-subscribe.md)
 

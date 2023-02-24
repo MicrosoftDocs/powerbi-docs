@@ -492,16 +492,36 @@
         href: ../paginated-reports/paginated-reports-change-log.md
       - name: Get around Report Design View
         href: ../paginated-reports/paginated-reports-report-design-view.md
-      - name: Previewing reports
+      - name: Preview reports
         href: ../paginated-reports/report-builder-previewing-reports.md
       - name: Keyboard shortcuts in Power BI Report Builder
         href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
     - name: Design paginated reports
       items: 
-      - name: Planning a report
+      - name: Plan a report
         href: ../paginated-reports/report-builder-planning-report.md
       - name: Design tips
         href: ../paginated-reports/report-builder-design-tips.md
+      - name: Add filters to a paginated report
+        href: ../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md
+      - name: Commonly used filters
+        href: ../paginated-reports/report-design/commonly-used-filters-report-builder-and-service.md
+      - name: Format numbers and dates
+        href: ../paginated-reports/report-design/formatting-numbers-and-dates-report-builder-and-service.md
+      - name: Tables, matrixes, lists
+        href: ../paginated-reports/report-builder-tables-matrices-lists.md
+      - name: Text boxes
+        items:
+        - name: Text boxes in paginated reports
+          href: ../paginated-reports/report-design/textbox/text-boxes-report-builder-and-service.md
+        - name: Add or move a text box
+          href: ../paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service.md
+        - name: Allow a text box to grow or shrink
+          href: ../paginated-reports/report-design/textbox/allow-a-text-box-to-grow-or-shrink-report-builder-and-service.md
+        - name: Format text in a text box
+          href: ../paginated-reports/report-design/textbox/format-text-in-a-text-box-report-builder-and-service.md
+        - name: Set text box orientation
+          href: ../paginated-reports/report-design/textbox/set-text-box-orientation-report-builder-and-service.md
       - name: Subreports
         href: ../paginated-reports/subreports.md
       - name: Troubleshoot subreports
@@ -516,6 +536,16 @@
         href: ../paginated-reports/report-builder/change-map-legends-color-scale-associated-rules-report-builder.md
       - name: Customize the display of a map or map layer
         href: ../paginated-reports/report-builder/customize-data-display-map-map-layer-report-builder.md
+      - name: Add or change a map or map layer
+        href: ../paginated-reports/report-builder/add-change-delete-map-map-layer-report-builder.md
+      - name: Add custom locations to a map
+        href: ../paginated-reports/report-builder/add-custom-locations-map-report-builder.md
+      - name: Plan for adding a map
+        href: ../paginated-reports/report-builder/plan-map-report-report-builder.md
+      - name: Troubleshoot map reports
+        href: ../paginated-reports/report-builder/troubleshoot-reports-map-reports-report-builder.md
+      - name: Map Wizard and Map Layer Wizard
+        href: ../paginated-reports/report-builder/map-wizard-map-layer-wizard-report-builder.md
     - name: Data sources and datasets
       items: 
       - name: Understand paginated report data
@@ -572,18 +602,8 @@
       href: ../paginated-reports/paginated-reports-samples.md
     - name: Plan to migrate .rdl reports to Power BI
       href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
-    - name: Publish .rdl files to Power BI
-      href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
-    - name: Tables, matrixes, lists
-      href: ../paginated-reports/report-builder-tables-matrices-lists.md
     - name: Process large reports
       href: ../paginated-reports/report-design/process-large-reports.md      
-    - name: Sample Power BI paginated reports
-      href: ../paginated-reports/paginated-reports-samples.md
-    - name: Plan to migrate .rdl reports to Power BI
-      href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
-    - name: Publish .rdl files to Power BI
-      href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
     - name: Expression examples
       href: ../paginated-reports/report-builder-expression-examples.md
     - name: Report pagination
@@ -604,52 +624,14 @@
       href: ../paginated-reports/paginated-reports-rls.md
     - name: Set report views
       href: ../paginated-reports/page-view.md
-    - name: Subreports
-      href: ../paginated-reports/subreports.md
-    - name: Troubleshoot subreports
-      href: ../paginated-reports/subreports-troubleshoot.md
     - name: Publish a paginated report
       href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
+    - name: Publish .rdl files to Power BI
+      href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
     - name: Embed a paginated report
       href: ../paginated-reports/paginated-reports-embed.md      
     - name: PDF Rendering Extension conformance to ISO 14289-1
       href: ../report-server/rendering-extension-support.md
-    - name: Paginated report design
-      items: 
-      - name: Report Builder in Power BI
-        href: ../paginated-reports/report-builder-power-bi.md
-      - name: Planning a report
-        href: ../paginated-reports/report-builder-planning-report.md
-      - name: Add filters to a paginated report
-        href: ../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md
-      - name: Commonly used filters
-        href: ../paginated-reports/report-design/commonly-used-filters-report-builder-and-service.md
-      - name: Format numbers and dates
-        href: ../paginated-reports/report-design/formatting-numbers-and-dates-report-builder-and-service.md
-      - name: Report Builder change log
-        href: ../paginated-reports/paginated-reports-change-log.md
-      - name: Get around Report Design View
-        href: ../paginated-reports/paginated-reports-report-design-view.md
-      - name: Preview reports
-        href: ../paginated-reports/report-builder-previewing-reports.md
-      - name: Design tips
-        href: ../paginated-reports/report-builder-design-tips.md
-      - name: Tables, matrixes, lists
-        href: ../paginated-reports/report-builder-tables-matrices-lists.md
-      - name: Text boxes
-        items:
-        - name: Text boxes in paginated reports
-          href: ../paginated-reports/report-design/textbox/text-boxes-report-builder-and-service.md
-        - name: Add or move a text box
-          href: ../paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service.md
-        - name: Allow a text box to grow or shrink
-          href: ../paginated-reports/report-design/textbox/allow-a-text-box-to-grow-or-shrink-report-builder-and-service.md
-        - name: Format text in a text box
-          href: ../paginated-reports/report-design/textbox/format-text-in-a-text-box-report-builder-and-service.md
-        - name: Set text box orientation
-          href: ../paginated-reports/report-design/textbox/set-text-box-orientation-report-builder-and-service.md
-      - name: Keyboard shortcuts in Power BI Report Builder
-        href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
     - name: "Device information settings"  
       items:
       - name: Device information settings for rendering extensions

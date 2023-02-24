@@ -1,6 +1,6 @@
 ---
 title: Power BI embedded analytics assess load for capacity planning
-description: Learn how to plan your gen1 capacity in Power BI embedded analytics.
+description: Learn how to plan your Premium capacity in Power BI embedded analytics.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''

@@ -28,10 +28,7 @@ To get started, you need:
 
 * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup
 
-* A [capacity](#step-2---create-a-capacity), with [paginated reports workload](../../enterprise/service-admin-premium-workloads.md#paginated-reports) enabled
-
-    >[!NOTE]
-    >You only need to enable this workload with Power BI Premium Gen1 capacities.
+* A [capacity](#step-2---create-a-capacity)
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
