@@ -18,7 +18,7 @@ ms.reviewer: monaraya
   
 ### Display data point labels inside a pie chart  
   
-1.  Add a pie chart to your report. For more information, see [Add a Chart to a Report &#40;Power BI Report Builder&#41;](../paginated-reports/report-design/visualizations/add-a-chart-to-a-report-report-builder-and-ssrs).  
+1.  Add a pie chart to your report. For more information, see [Add a Chart to a Report &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/add-a-chart-to-a-report-report-builder-and-ssrs).  
   
 2.  On the design surface, right-click on the chart and select **Show Data Labels**.  
   
@@ -47,8 +47,8 @@ ms.reviewer: monaraya
 4.  If you want the chart to have more room for labels but still appear two-dimensional, set the **Rotation** and **Inclination** properties to **0**.  
   
 ## Next steps  
- [Pie Charts &#40;Power BI Report Builder&#41;](../paginated-reports/report-design/visualizations/pie-charts-report-builder-and-ssrs)   
- [Collect Small Slices on a Pie Chart &#40;Power BI Report Builder&#41;](../paginated-reports/report-design/visualizations/collect-small-slices-on-a-pie-chart-report-builder-and-ssrs)   
- [Display Percentage Values on a Pie Chart &#40;Power BI Report Builder&#41;](../paginated-reports/report-design/visualizations/display-percentage-values-on-a-pie-chart-report-builder-and-ssrs)  
+ [Pie Charts &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/pie-charts-report-builder-and-ssrs)   
+ [Collect Small Slices on a Pie Chart &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/collect-small-slices-on-a-pie-chart-report-builder-and-ssrs)   
+ [Display Percentage Values on a Pie Chart &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/display-percentage-values-on-a-pie-chart-report-builder-and-ssrs)  
   
   

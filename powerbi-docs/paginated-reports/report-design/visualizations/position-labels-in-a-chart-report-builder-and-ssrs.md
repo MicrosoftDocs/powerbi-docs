@@ -89,11 +89,11 @@ ms.reviewer: monaraya
 6.  Select a value for the Position property.  
   
 ## Next steps  
- [Pie Charts &#40;Power BI Report Builder&#41;](../paginated-reports/report-design/visualizations/pie-charts-report-builder-and-ssrs)   
- [Bar Charts &#40;Power BI Report Builder&#41;](../paginated-reports/report-design/visualizations/bar-charts-report-builder-and-ssrs)   
- [Formatting Axis Labels on a Chart &#40;Power BI Report Builder&#41;](../paginated-reports/report-design/visualizations/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
- [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](../paginated-reports/report-design/visualizations/format-axis-labels-as-dates-or-currencies-report-builder-and-ssrs)   
- [Display Data Point Labels Outside a Pie Chart &#40;Power BI Report Builder&#41;](../paginated-reports/report-design/visualizations/display-data-point-labels-outside-a-pie-chart-report-builder-and-ssrs)   
- [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](../paginated-reports/report-design/visualizations/formatting-data-points-on-a-chart-report-builder-and-ssrs)  
+ [Pie Charts &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/pie-charts-report-builder-and-ssrs)   
+ [Bar Charts &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/bar-charts-report-builder-and-ssrs)   
+ [Formatting Axis Labels on a Chart &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
+ [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/format-axis-labels-as-dates-or-currencies-report-builder-and-ssrs)   
+ [Display Data Point Labels Outside a Pie Chart &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/display-data-point-labels-outside-a-pie-chart-report-builder-and-ssrs)   
+ [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/formatting-data-points-on-a-chart-report-builder-and-ssrs)  
   
   
