@@ -81,9 +81,11 @@ The dashboard that you create this way isn't the same as the sample dashboard cr
 
 First, let's look for trends in spending by category and location.  
 
-1. In the workspace where you saved the sample, find the **Procurement Analysis Sample** dashboard and select it.
+1. In the Power BI service, find the workspace where you saved the sample, then select the **Procurement Analysis Sample** dashboard.
 
-1. Select the dashboard tile, **Total Invoice by Country/Region**, which opens to the **Spend Overview** page of the **Procurement Analysis Sample** report.
+1. Select the dashboard tile, **Total Invoice by Country/Region**, which opens the **Spend Overview** page of the **Procurement Analysis Sample** report.
+
+    If you're using Power BI Desktop, open the *.pbix file* and select the **Spend Overview** tab.
 
     :::image type="content" source="media/sample-procurement/spend-overview.png" alt-text="Screenshot that shows the Spend Overview page.":::
 
@@ -125,6 +127,9 @@ Let's explore the spending areas in Mexico.
 We can use highlighting to evaluate different cities.
 
 1. Select the dashboard tile, **Total Invoice, Discount % By Month**, which opens the **Discount Analysis** page of the **Procurement Analysis Sample** report.
+
+    If you're using Power BI Desktop, select the **Discount Analysis** tab.
+
 2. In the **Total Invoice by City** tree map, select each city in turn to see how they compare. Notice that almost all of Miami's invoices are from tier 1 vendors.
 
    :::image type="content" source="media/sample-procurement/sample-discount-miami.png" alt-text="Screenshot of discount percentage by tier for Miami.":::
