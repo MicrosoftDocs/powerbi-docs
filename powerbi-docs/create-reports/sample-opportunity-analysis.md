@@ -1,15 +1,16 @@
 ---
 title: 'Opportunity Analysis sample for Power BI: Take a tour'
-description: 'Opportunity Analysis sample for Power BI: Take a tour'
+description: Learn how to get the Opportunity Analysis sample for Power BI, and take a tour of the features used in this sample.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 06/03/2022
+ms.date: 02/24/2023
 LocalizationGroup: Samples
 ---
+
 # Opportunity Analysis sample for Power BI: Take a tour
 
 The Opportunity Analysis built-in sample contains a dashboard, report, and dataset for a software company that has two sales channels: *direct* and *partner*. The sales manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
@@ -24,36 +25,37 @@ This sample relies on two measures of revenue:
   * Proposal: 60%  
   * Finalize: 80%
 
-![Dashboard for the Opportunity Analysis sample](media/sample-opportunity-analysis/opportunity1.png)
+:::image type="content" source="media/sample-opportunity-analysis/opportunity-1.png" alt-text="Screenshot that shows the dashboard for the Opportunity Analysis sample.":::
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: built-in sample, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com) created this sample using real, anonymized data. The data is available in several formats: built-in sample in the Power BI service, *.pbix* Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
 
-This tutorial explores the Opportunity Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
+This tutorial explores the Opportunity Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service. 
+## Prerequisites
+
+You don't need a Power BI license to explore the sample in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the sample
 
-Before you can use the sample, you must first [download it in the service](#get-the-built-in-sample), or get the [.pbix file](#get-the-pbix-file-for-this-sample) or [Excel workbook](#get-the-excel-workbook-for-this-sample).
+Before you can use the sample, you must first get the sample in one of the following ways:
+
+- Get the [built-in sample in the Power BI service](#get-the-built-in-sample).
+- Download the [.pbix file](#get-the-pbix-file-for-this-sample).
+- Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the built-in sample
 
-1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample. 
+1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
-    If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
+1. On the **Learning center** page, under **Sample reports**, scroll until you see the **Opportunity Analysis Sample**.
 
-2. In the bottom-left corner, select **Get data**.
+    :::image type="content" source="media/sample-opportunity-analysis/opportunity-sample-report.png" alt-text="Screenshot that shows the Opportunity Analysis sample under Sample Reports.":::
 
-   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
+1. Select the sample. It opens in Reading mode.
 
-3. On the **Get Data** page that appears, select **Samples**.
+1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
 
-4. Select **Opportunity Analysis Sample**, and then choose **Connect**.  
-
-   ![Connect to sample](media/sample-opportunity-analysis/opportunity-connect.png)
-5. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
-
-   ![Opportunity Analysis Sample entry](media/sample-opportunity-analysis/opportunity-entry.png)
+    :::image type="content" source="media/sample-opportunity-analysis/opportunity-entry.png" alt-text="Screenshot that shows the Opportunity Analysis sample entries in the workspace.":::
 
 ### Get the .pbix file for this sample
 
@@ -61,9 +63,28 @@ Alternatively, you can download the Opportunity Analysis sample as a [.pbix file
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To download the eight original Excel files, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
+If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. 
+
+If you want to get and use the Excel file in the Power BI service, follow these steps:
+
+1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *Opportunity Tracking Sample no PV.xlsx*.
+
+1. Open the file in Excel and then select **File** > **Publish** > **Publish to Power BI**.
+
+1. Select a workspace, such as **My workspace**, and choose **Export**.
+
+   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
+
+1. In the Power BI service, the exported data appears as a dataset in the selected workspace. Select **More options** (...) > **Auto-create report**.
+
+1. Select **Save**, enter a name for your report, and then choose **Save**.
+
+1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
+
+The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
 
 ## What is our dashboard telling us?
+
 Our sales manager has created a dashboard to track those metrics most important to them. When they see something interesting, they can select a tile to look into the data:
 
 - Company revenue is $2 billion and factored revenue is $461 million.
@@ -74,18 +95,21 @@ Our sales manager has created a dashboard to track those metrics most important 
 
 Because the effort to land a deal is the same whether the deal is classified as large, medium, or small, our company should analyze the data to learn more about large opportunities.
 
-1. In the workspace where you saved the sample, open the **Dashboards** tab, then find the **Opportunity Analysis Sample** dashboard and select it.
+1. In the Power BI service, find the workspace where you saved the sample, then select the **Opportunity Analysis Sample** dashboard.
 
 2. Select the **Opportunity Count by Partner Driven, Sales Stage** tile to open the first page of the Opportunity Analysis Sample report. 
 
-    ![Opportunity Count by Partner Driven, Sales Stage tile](media/sample-opportunity-analysis/opportunity2.png)
+    If you're using Power BI Desktop, open the *.pbix file* and select the **Opportunity Count** tab.
+
+    :::image type="content" source="media/sample-opportunity-analysis/opportunity-2.png" alt-text="Screenshot that shows the tile for Opportunity Count by Partner Driven, Sales Stage.":::
 
 ## Explore the pages in the report
 
-View each page in the report by selecting the page tabs at the bottom.
+View each page in the report by selecting the page tabs on the side navigation.
 
 ### Opportunity Count Overview page
-![Opportunity Count page](media/sample-opportunity-analysis/opportunity3.png)
+
+:::image type="content" source="media/sample-opportunity-analysis/opportunity-3.png" alt-text="Screenshot that shows the Opportunity Count Overview page.":::
 
 Note the following details:
 * East is our biggest region in terms of opportunity counts.  
@@ -96,7 +120,7 @@ Note the following details:
 ### Revenue Analysis page
 This page takes a similar look at the data, but uses a revenue perspective instead of count.  
 
-![Revenue Overview page](media/sample-opportunity-analysis/opportunity4.png)
+:::image type="content" source="media/sample-opportunity-analysis/opportunity-4.png" alt-text="Screenshot that shows the Revenue Overview page.":::
 
 Note the following details:
 * East is our biggest region, not only in opportunity count but also in revenue.  
@@ -110,16 +134,16 @@ Clearly our partners are doing a better job than non-partners selling to custome
 ### Opportunity Count by Region and Stage
 This page of the report looks at data similar to the data on the previous page but breaks it down by region and stage. 
 
-![Region Stage Counts page](media/sample-opportunity-analysis/opportunity5.png)
+:::image type="content" source="media/sample-opportunity-analysis/opportunity-5.png" alt-text="Screenshot that shows the Opportunity Count by Region and Stage.":::
 
 Note the following details:
 * If you select **East** in the **Opportunity Count by Region** pie chart to filter by the East region, you see that the opportunities in this region are split almost equally between partner driven and non-partner driven.
 * Large opportunities are most common in the Central region, small opportunities are most common in the East region, and medium opportunities are most common in the West region.
 
 ### Upcoming Opportunities by Month page
-For this page we're looking at similar factors, but from a date and time perspective. 
+This page looks at similar factors, but from a date and time perspective. 
  
-![Upcoming Opportunities page](media/sample-opportunity-analysis/opportunity6.png)
+:::image type="content" source="media/sample-opportunity-analysis/opportunity-6.png" alt-text="Screenshot that shows Upcoming Opportunities.":::
 
 Our CFO uses this page to manage workload. By looking at the revenue opportunities by sales stage and month, they can plan accordingly.
 
@@ -128,7 +152,8 @@ Note the following details:
 * If you filter by month (by selecting a month in the **Month** slicer), you see that January has a high proportion of large deals in the Finalize sales stage with a factored revenue of $75 million. February, on the other hand, has mostly medium deals in the Solution and Proposal sales stages.
 * In general, the factored revenue numbers fluctuate based on sales stage, number of opportunities, and deal size. Add filters for these factors by using the **Filter** pane on the right to discover further insights.
 
-## Next steps: Connect to your data
-This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get data** for a new copy of this sample.
+## Next steps
 
-We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md).
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
+
+We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn. Connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started creating in the Power BI service](../fundamentals/service-get-started.md).
