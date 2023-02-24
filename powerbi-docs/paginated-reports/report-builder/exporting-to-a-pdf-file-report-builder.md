@@ -15,7 +15,7 @@ ms.reviewer: saurkumar
 
 The PDF rendering extension renders paginated reports to files that can be opened in Adobe Acrobat and other third-party PDF viewers that support PDF 1.3. Although PDF 1.3 is compatible with Adobe Acrobat 4.0 and later versions, Reporting Services supports Adobe Acrobat 11.0 or later. The rendering extension does not require Adobe software to render the report. However, PDF viewers such as Adobe Acrobat are required to view or print a report in PDF format.  
   
- The PDF rendering extension supports ANSI characters and can translate Unicode characters from Japanese, Korean, Traditional Chinese, Simplified Chinese, Cyrillic, Hebrew, and Arabic with certain limitations. For more information about the limitations, see [Export Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/export-reports-report-builder-and-ssrs). The PDF rendering extension also conforms to  ISO 14289-1 (PDF/UA) standards for Accessible PDF. See [PDF Rendering Extension conformance to ISO 14289-1, Power BI Report Server](/power-bi/report-server/rendering-extension-support) for details.
+ The PDF rendering extension supports ANSI characters and can translate Unicode characters from Japanese, Korean, Traditional Chinese, Simplified Chinese, Cyrillic, Hebrew, and Arabic with certain limitations. For more information about the limitations, see [Export Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/export-reports-report-builder-and-ssrs). The PDF rendering extension also conforms to  ISO 14289-1 (PDF/UA) standards for Accessible PDF. See [PDF Rendering Extension conformance to ISO 14289-1, Power BI Report Server](/power-bi/report-server/rendering-extension-support) for details. Accessible PDF is supported only on Power BI service.
   
  The PDF renderer is a physical page renderer and, therefore, has pagination behavior that differs from other renderers such as HTML and Excel. This topic provides PDF renderer-specific information and describes exceptions to the rules.  
   
@@ -23,7 +23,7 @@ The PDF rendering extension renders paginated reports to files that can be opene
 >  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder
   
 ##  <a name="FontRequirements"></a> Font Embedding  
- When possible, the PDF rendering extension embeds the subset of each font that is needed to display the report in the PDF file. Fonts that are used in the report must be installed on the report server. When the report server generates a report in PDF format, it uses the information stored in the font referenced by the report to create character mappings within the PDF file. If the referenced font is not installed on the report server, the resulting PDF file might not contain the correct mappings and might not display correctly when viewed.  
+ When possible, the PDF rendering extension embeds the subset of each font that is needed to display the report in the PDF file. When the Power BI service generates a report in PDF format, it uses the information stored in the font referenced by the report to create character mappings within the PDF file. If the referenced font is not available in the default set that comes with Windows 11 server OS, the resulting PDF file might not contain the correct mappings and might not display correctly when viewed.  
   
  Fonts are embedded in the PDF file when the following conditions apply:  
   
@@ -45,9 +45,9 @@ The PDF rendering extension renders paginated reports to files that can be opene
  When a font is not embedded in the PDF file, the client computer must have the correct font installed for the report to display correctly. If the font is not installed on the client computer, the PDF file displays a question mark character (?) for unsupported characters.  
   
 ### Verifying Fonts in a PDF File  
- Differences in PDF output occur most often when a font that does not support non-Latin characters is used in a report and then non-Latin characters are added to the report. You should test the PDF rendering output on both the report server and the client computers to verify that the report renders correctly.  
+ Differences in PDF output occur most often when a font that does not support non-Latin characters is used in a report and then non-Latin characters are added to the report. You should test the PDF rendering output on both the Power BI service and the client computers to verify that the report renders correctly.  
   
- Don't rely on viewing the report in Preview or exporting to HTML. The report will look correct due to automatic font substitution performed by Power BI Report Builder or by the browser, respectively. If Unicode Glyphs are missing on the server, you may see characters replaced with a question mark (?). If a font is missing on the client, you may see characters replaced with boxes (□).  
+ Don't rely on viewing the report in Preview or exporting to HTML. The report will look correct due to automatic font substitution performed by Power BI Report Builder or by the browser, respectively. If Unicode Glyphs are missing in the default set that comes with Windows 11 server OS, you may see characters replaced with a question mark (?). If a font is missing on the client, you may see characters replaced with boxes (□).  
   
  The fonts that are embedded in the PDF file are included in the Fonts property that is saved with the file, as metadata.
  
