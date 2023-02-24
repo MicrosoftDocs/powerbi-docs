@@ -1,6 +1,6 @@
 ---
 title: Model view in Power BI Desktop
-description: Learn about Model view in Power BI Desktop and how to use it to visualize the relationships in your data.
+description: Learn how you can use Model view in Power BI Desktop to visualize the tables, column, and complex relationships in your model.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -16,11 +16,11 @@ LocalizationGroup: Model your data
 
 Select the **Model view** icon near the side of the window to see a view of the existing model. Hover your cursor over a **relationship line** to show the columns used.
 
-:::image type="content" source="media/desktop-relationship-view/model-view-03.png" alt-text="Screenshot of Model view showing relationships." lightbox="media/desktop-relationship-view/model-view-03.png":::
+:::image type="content" source="media/desktop-relationship-view/model-view-03.png" alt-text="Screenshot of Model view, the model view icon, and relationship details are highlighted." lightbox="media/desktop-relationship-view/model-view-03.png":::
 
 In the image, the *Connections* table has a *Seat ID* column that’s related to the *Unique Seats* table, which also has a *seatId* column. The two tables have a *Many to One* (\*:1) relationship. An arrow in the middle of the line shows the direction of the filter context flow. Double arrows would mean the cross-filter direction is set to *Both*.
 
-You can double-click a relationship to open it in the **Edit relationship** dialog box. To learn more about relationships, see [Create and manage relationships in Power BI Desktop](desktop-create-and-manage-relationships.md).
+You can double-click a relationship to open it in the **Edit relationship** dialog box. For more information about relationships, see [Create and manage relationships in Power BI Desktop](desktop-create-and-manage-relationships.md).
 
 ## Updated Model View
 
@@ -32,7 +32,7 @@ The colors in the table card headers automatically match the colors you've selec
 
 If your model has fewer than 75 tables, Model view shows all of your tables. If your model has more than 75 tables, instead of showing all tables you see the following image:
 
-:::image type="content" source="media/desktop-relationship-view/model-view-04.png" alt-text="Screenshot of the Power BI slowdown warning after creating more than 75 tables.":::
+:::image type="content" source="media/desktop-relationship-view/model-view-04.png" alt-text="Screenshot of the Power BI slowdown warning for a model that has more than 75 tables.":::
 
  When your model has more than 75 tables, Power BI Desktop warns you that slowdowns might occur. Create a custom layout (select the *Create a custom layout* button) to reduce the significant CPU and memory used when Model view shows more than 75 tables.
 
