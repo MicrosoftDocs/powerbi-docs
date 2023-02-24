@@ -17,7 +17,7 @@ LocalizationGroup: Samples
 
 Power BI has several samples that you can either download in the Power BI service or open in Power BI Desktop. In a *built-in sample*, the report is bundled with a dashboard and dataset, and built into the Power BI service. The *.pbix file* that you can view in Power BI Desktop contains a report and dataset.
 
-:::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-report-overview.png" alt-text="Screenshot showing the Overview page of the Retail Analysis Sample.":::
+:::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-report-overview.png" alt-text="Screenshot showing the Overview page of the Retail Analysis Sample." lightbox="media/sample-tutorial-connect-to-the-samples/retail-report-overview.png":::
 
 This tutorial shows you how to:
 
@@ -46,7 +46,7 @@ To open a Power BI *.pbix* file, you need to [get Power BI Desktop](../fundament
 
 1. On the **Learning center** page, under **Sample reports**, scroll until you see the **Retail Analysis Sample**.
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-learn.png" alt-text="Screenshot shows the Power BI Learning center where you can import samples.":::
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-learn.png" alt-text="Screenshot shows the Power BI Learning center where you can import samples." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-learn.png":::
 
 1. Select the sample. It opens in Reading mode.
 
@@ -58,15 +58,15 @@ With the built-in samples, Power BI gets a copy of that built-in sample and stor
 
 1. Power BI creates the new dashboard, report, and dataset in your workspace.
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-entry.png" alt-text="Screenshot showing the Retail Analysis Sample entry in your workspace.":::
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-entry.png" alt-text="Screenshot showing the Retail Analysis Sample entry in your workspace." lightbox="media/sample-tutorial-connect-to-the-samples/retail-entry.png":::
 
 1. On the **Content** tab, you see the dashboard and the report, both named *Retail Analysis Sample*.
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png" alt-text="Screenshot showing the Retail Analysis Sample Content tab with dashboard and report entries.":::
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png" alt-text="Screenshot showing the Retail Analysis Sample Content tab with dashboard and report entries." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png":::
 
 1. On the **Datasets + dataflows** tab, you see the dataset, also named *Retail Analysis Sample*.
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot showing the Retail Analysis Sample Datasets + dataflows tab with the dataset entry.":::
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot showing the Retail Analysis Sample Datasets + dataflows tab with the dataset entry." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png":::
 
 ## Explore your new content
 
