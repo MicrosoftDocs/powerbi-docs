@@ -23,9 +23,12 @@ If you have a Power BI template app in production, you can start over in the tes
    
 
    - If the *.pbix* file you're uploading has the same name as the dataset and report the app uses, uploading overwrites the existing dataset.
-   - If you changed the name of the dataset and report the app uses, and the *.pbix* file you upload has a different name than the previous dataset and report, first rename the dataset and report in the app to exactly match the name of the updated *.pbix* file. Then upload the *.pbix* file to overwrite the existing dataset and report that you just renamed.
+   - If you changed the name of the dataset and report the app uses, and the *.pbix* file you upload has a different name than the previous dataset and report, follow these steps:
    
-   In either case, to upload a local *.pbix* file to the service, select **Upload** > **Browse**, navigate to the file, and select **Open**. You get a dialog that asks for your permission to overwrite the dataset the app uses. If you don't overwrite the existing dataset, customers can't install your updated app.
+     1. Rename the dataset and report in the app to match the name of the updated *.pbix* file exactly.
+     1. Upload the *.pbix* file to overwrite the existing dataset and report that you just renamed.
+   
+   In either case, to upload a local *.pbix* file to the service, select **Upload** > **Browse**, navigate to the file, and select **Open**. A dialog asks for your permission to overwrite the dataset the app uses. If you don't overwrite the existing dataset, customers can't install your updated app.
 
    ![Screenshot that shows the dialog requesting permission to overwrite the dataset with the same name.](media/service-template-apps-update-extract-delete/overwrite-dialog.png)
    
@@ -33,9 +36,9 @@ If you have a Power BI template app in production, you can start over in the tes
    > Never delete the dataset the app uses. Deleting the dataset makes it impossible for customers to update their copies of the app.
 
 1. In the **Release management** pane for the app, select **Create app**.
-1. Repeat the [app creation process](service-template-apps-create.md). If you changed the name of the dataset and report the app uses, you might want to also rename the app.
+1. Repeat the [app creation process](service-template-apps-create.md). If you changed the name of the dataset and report that the app uses, you might want to also rename the app.
 1. After you set **Branding**, **Navigation**, **Control**, **Parameters**, **Authentication**, and **Access**, select **Create app** again to save your changes, and then select **Close**.
-1. Select **Release management**.
+1. Select **Release management** again.
 
    In the **Release management** pane, you now see two versions of the app: The version in **Production**, plus a new version in **Testing**.
 
@@ -47,7 +50,10 @@ If you have a Power BI template app in production, you can start over in the tes
 
    ![Screenshot that shows two versions of a template app with Promote app greyed out.](media/service-template-apps-update-extract-delete/power-bi-template-app-update2.png)
 
-   Your link is now live. Note that the **Promote app** button at the pre-production stage is disabled. Disabling the button prevents accidentally overwriting the live production link with the current app version before the Cloud Partner Portal (CPP) validates and approves the new app version.
+   Your link is now live. 
+   
+   >[!NOTE]
+   >The **Promote app** button at the pre-production stage is disabled. Disabling the button prevents accidentally overwriting the live production link with the current app version before the Cloud Partner Portal (CPP) validates and approves the new app version.
 
 1. Submit your link again to the CPP by following the steps at [Power BI App offer update](/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). In the CPP, you must publish your offer again and have it validated and approved. If you've changed the name of the app, be sure to also change the name in the CPP. When your offer is approved, the **Promote app** button becomes active again.
    
@@ -55,7 +61,7 @@ If you have a Power BI template app in production, you can start over in the tes
    
 ### Update behavior
 
-- Updating the app lets template app installers [update their template app](service-template-apps-install-distribute.md#update-a-template-app) in the already installed workspace without losing the connection configuration.
+- Updating the app lets template app installers [update their template app](service-template-apps-install-distribute.md#update-a-template-app) in their already installed workspaces without losing the connection configuration.
 - To learn how changes in the dataset affect the installed template app, see [Overwrite behavior](service-template-apps-install-distribute.md#overwrite-behavior).
 - When a template app is overwritten and updates, it first reverts back to using sample data, and automatically reconnects by using the installer's configuration parameters and authentication. Until refresh is complete, the reports, dashboards, and organizational app display the sample data banner.
 - If you added a new query parameter to the updated dataset that requires user input, you must select the **Required** checkbox. This selection prompts the installer with the connection string after updating the app.
@@ -81,6 +87,7 @@ Your new workspace versioning resets, and you can continue to develop and distri
 A template workspace is the source of an active distributed template app. To protect the template app users, you can't delete a workspace unless you first remove all the created app versions in the workspace. Deleting an app version also deletes the app URL, which no longer works.
 
 1. In the **Release Management** pane, next to the app version you want to delete, select **More options (...)** and then select **Delete**.
+
    ![Screenshot that shows the Release Management pane with Delete selected.](media/service-template-apps-update-extract-delete/power-bi-template-app-delete.png)
 
 1. In the confirmation dialog box, select **Delete**.
