@@ -11,7 +11,7 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Tutorial: Add a Bar Chart to Your Report (Report Builder)
-In this tutorial, you use a wizard in [!INCLUDE[ssRBnoversion_md](../includes/ssrbnoversion.md)] to create a bar chart in a [!INCLUDE[ssRSnoversion_md](../includes/ssrsnoversion-md.md)] paginated report. Then you add a filter and enhance the chart. 
+In this tutorial, you use a wizard in Report Builder to create a bar chart in a paginated report. Then you add a filter and enhance the chart. 
 
 A bar chart displays category data horizontally. This can help to:  
   
@@ -21,16 +21,16 @@ A bar chart displays category data horizontally. This can help to:
   
 The following illustration shows the bar chart that you will create, with sales for 2014 and 2015 for the top five salespeople, from most to least 2015 sales.  
   
-![Screenshot of a report builder bar chart.](../reporting-services/media/report-builder-bar-chart.png) 
+![Screenshot of a report builder bar chart.](../media/tutorials/bar-chart.png "Screenshot of a report builder bar chart.") 
   
  
 > [!NOTE]  
-> In this tutorial, the steps for the wizard are consolidated into one procedure. For step-by-step instructions about how to browse to a report server, create a dataset, and choose a data source, see the first tutorial in this series: [Tutorial: Creating a Basic Table Report &#40;Report Builder&#41;](../reporting-services/tutorial-creating-a-basic-table-report-report-builder.md).  
+> In this tutorial, the steps for the wizard are consolidated into one procedure. For step-by-step instructions about how to browse to a report server, create a dataset, and choose a data source, see the first tutorial in this series: [Tutorial: Creating a Basic Table Report &#40;Report Builder&#41;](/sql/reporting-services/tutorial-creating-a-basic-table-report-report-builder).  
   
 Estimated time to complete this tutorial: 15 minutes.  
   
 ## Requirements  
-For more information about requirements, see [Prerequisites for Tutorials &#40;Report Builder&#41;](../reporting-services/prerequisites-for-tutorials-report-builder.md).  
+For more information about requirements, see [Prerequisites for Tutorials &#40;Report Builder&#41;](/sql/reporting-services/prerequisites-for-tutorials-report-builder).  
   
 ## <a name="Chart"></a>1. Create a Chart Report from the Chart Wizard  
 In which you create an embedded dataset, choose a shared data source, and create a bar chart by using the Chart Wizard.  
@@ -38,11 +38,11 @@ In which you create an embedded dataset, choose a shared data source, and create
 > [!NOTE]  
 > In this tutorial, the query contains the data values so that it does not need an external data source. This makes the query quite long. In a business environment, a query would not contain the data. This is for learning purposes only.  
   
-1.  [Start Report Builder](../reporting-services/report-builder/start-report-builder.md) from the [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] web portal, from the report server in SharePoint integrated mode, or from your computer.  
+1.  [Start Report Builder](/sql/reporting-services/report-builder/start-report-builder) from the report server web portal, from the report server in SharePoint integrated mode, or from your computer.  
   
      The **Getting Started** dialog box appears.  
   
-     ![Report Builder Get Started](../reporting-services/media/rb-getstarted.png "Report Builder Get Started")  
+     ![Report Builder Get Started](../media/tutorials/getstarted.png "Report Builder Get Started")  
   
      If you don't see the **Getting Started** dialog box, click **File** >**New**. The **New Report or Dataset** dialog box has most of the same contents as the **Getting Started** dialog box. 
       
@@ -55,7 +55,7 @@ In which you create an embedded dataset, choose a shared data source, and create
 5.  On the **Choose a connection to a data source** page, select an existing data source or browse to the report server and select a data source, and then click **Next**. You may need to enter a user name and password.  
   
     > [!NOTE]  
-    > The data source you choose is unimportant, as long as you have adequate permissions. You will not be getting data from the data source. For more information, see [Alternative Ways to Get a Data Connection &#40;Report Builder&#41;](../reporting-services/alternative-ways-to-get-a-data-connection-report-builder.md).  
+    > The data source you choose is unimportant, as long as you have adequate permissions. You will not be getting data from the data source. For more information, see [Alternative Ways to Get a Data Connection &#40;Report Builder&#41;](/sql/reporting-services/alternative-ways-to-get-a-data-connection-report-builder).  
   
 6.  On the **Design a query** page, click **Edit as Text**.  
   
@@ -290,10 +290,10 @@ The chart shows the top five salesperson names from the 2015 sales data.
 4.  Click **Save**.   
   
 ## Next Steps  
-You have successfully completed the Adding a Bar Chart to Your Report tutorial. To learn more about charts, see [Charts](../reporting-services/report-design/charts-report-builder-and-ssrs.md) and [Bar Charts](../reporting-services/report-design/bar-charts-report-builder-and-ssrs.md).  
+You have successfully completed the Adding a Bar Chart to Your Report tutorial. To learn more about charts, see [Charts](/sql/reporting-services/report-design/charts-report-builder-and-ssrs) and [Bar Charts](/sql/reporting-services/report-design/bar-charts-report-builder-and-ssrs).  
   
 ## See Also  
-[Report Builder Tutorials](../reporting-services/report-builder-tutorials.md)  
-[Report Builder in SQL Server](../reporting-services/report-builder/report-builder-in-sql-server-2016.md)  
+[Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials)  
+[Report Builder in SQL Server](/sql/reporting-services/report-builder/report-builder-in-sql-server-2016)  
   
 

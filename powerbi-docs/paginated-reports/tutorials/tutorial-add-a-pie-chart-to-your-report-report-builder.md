@@ -17,23 +17,23 @@ Pie and doughnut charts display data as a proportion of the whole. They have no 
 
 This illustration shows the pie chart you will create. 
  
-![Screenshot of the report builder pie chart.](../reporting-services/media/report-builder-pie-chart-final.png)
+![Screenshot of the report builder pie chart.](../media/tutorials/pie-chart-final.png "Report builder pie chart")
   
 If there are too many data points on a pie chart, your data point labels might be too crowded to read. In that case, consider combining a number of small slices into one larger slice. Pie charts are more readable when you have aggregated your data into a few data points.  
  
 > [!NOTE]  
-> In this tutorial, the steps for the wizard are consolidated into two procedures. For step-by-step instructions about how to browse to a report server, add a data source, and add a dataset, see the first tutorial in this series: [Tutorial: Creating a Basic Table Report &#40;Report Builder&#41;](../reporting-services/tutorial-creating-a-basic-table-report-report-builder.md).  
+> In this tutorial, the steps for the wizard are consolidated into two procedures. For step-by-step instructions about how to browse to a report server, add a data source, and add a dataset, see the first tutorial in this series: [Tutorial: Creating a Basic Table Report &#40;Report Builder&#41;](/sql/reporting-services/tutorial-creating-a-basic-table-report-report-builder).  
   
 Estimated time to complete this tutorial: 10 minutes  
   
 ## Requirements  
-For information about requirements, see [Prerequisites for Tutorials &#40;Report Builder&#41;](../reporting-services/prerequisites-for-tutorials-report-builder.md).  
+For information about requirements, see [Prerequisites for Tutorials &#40;Report Builder&#41;](/sql/reporting-services/prerequisites-for-tutorials-report-builder).  
   
 ## <a name="Chart"></a>1. Create a Pie Chart from the Chart Wizard  
 In this section, you use the Chart Wizard to create an embedded dataset, choose a shared data source, and create a pie chart.  
 
   
-1.  [Start Report Builder](../reporting-services/report-builder/start-report-builder.md) either from your computer, the [!INCLUDE[ssRSnoversion_md](../includes/ssrsnoversion-md.md)] web portal, or SharePoint integrated mode.  
+1.  [Start Report Builder](/sql/reporting-services/report-builder/start-report-builder) either from your computer, the web portal, or SharePoint integrated mode.  
   
     The **New Report or Dataset** dialog box opens.  
   
@@ -48,7 +48,7 @@ In this section, you use the Chart Wizard to create an embedded dataset, choose 
 5.  On the **Choose a connection to a data source** page, select an existing data source or browse to the report server and select a data source, and then click **Next**. You may need to enter a user name and password.  
   
     > [!NOTE]  
-    > The data source you choose is unimportant, as long as you have adequate permissions. You will not be getting data from the data source. For more information, see [Alternative Ways to Get a Data Connection &#40;Report Builder&#41;](../reporting-services/alternative-ways-to-get-a-data-connection-report-builder.md).  
+    > The data source you choose is unimportant, as long as you have adequate permissions. You will not be getting data from the data source. For more information, see [Alternative Ways to Get a Data Connection &#40;Report Builder&#41;](/sql/reporting-services/alternative-ways-to-get-a-data-connection-report-builder).  
   
 6.  On the **Design a Query** page, click **Edit as Text**.  
   
@@ -88,7 +88,7 @@ You can choose from a variety of predefined chart types.
   
     The chart is added to the design surface. You don't see the actual values of the pie chart -- you see Product 1, Product 2, etc., to give an idea of how the chart will look.  
     
-    ![Screenshot of the report builder pie chart in the design view.](../reporting-services/media/report-builder-pie-chart-first-design.png)
+    ![Screenshot of the report builder pie chart in the design view.](../media/tutorials/pie-chart-first-design.png "Report builder pie chart in the design view")
   
 6.  Click the chart to display the chart handles. Drag the bottom-right corner of the chart to make it bigger. Note that the report design surface also gets bigger, to accommodate the chart size.  
   
@@ -96,7 +96,7 @@ You can choose from a variety of predefined chart types.
   
 The report displays the pie chart with eight slices, one for each product. Now you see the actual products and the size of each slice represents the sales for that product. Three of the slices are quite thin.  
 
-![Screenshot showing a preview of the report builder pie chart.](../reporting-services/media/report-builder-pie-chart-first-preview.png)
+![Screenshot showing a preview of the report builder pie chart.](../media/tutorials/pie-chart-first-preview.png "Preview of the report builder pie chart")
   
 ## <a name="Percentages"></a>3. Display Percentages in Each Slice  
 On each slice of the pie, you can display a percentage for this slice compared to the whole pie.  
@@ -123,7 +123,7 @@ On each slice of the pie, you can display a percentage for this slice compared t
   
 The report displays the percentage of the whole for each pie slice.  
 
-![Screenshot showing a preview of the report builder pie chart with percentages in each slice.](../reporting-services/media/report-builder-pie-chart-preview-percents.png)
+![Screenshot showing a preview of the report builder pie chart with percentages in each slice.](../media/tutorials/pie-chart-preview-percents.png "Preview of the report builder pie chart with percentages in each slice")
   
 ## <a name="CombineSlices"></a>4. Combine Small Slices into One Slice  
 Three of the slices in the pie are quite small. You can combine multiple small slices into one larger "Other" slice that represents all three.  
@@ -138,7 +138,7 @@ Three of the slices in the pie are quite small. You can combine multiple small s
   
 5.  Set the **CollectedStyle** property to **SingleSlice**.  
 
-    ![Screenshot showing how to set a property of a single slice in the report builder pie chart.](../reporting-services/media/report-builder-pie-chart-single-slice-property.png)
+    ![Screenshot showing how to set a property of a single slice in the report builder pie chart.](../media/tutorials/pie-chart-single-slice-property.png "How to set a property of a single slice in the report builder pie chart")
  
 6.  Verify that the **CollectedThreshold** property is set to 5.  
   
@@ -148,7 +148,7 @@ Three of the slices in the pie are quite small. You can combine multiple small s
   
 In the legend, you now see the category "Other". The new pie slice combines all the slices that were under 5% into one slice that is 6% of the whole pie.  
 
-![Screenshot showing how the report builder pie chart starts at 90 degrees from the top of the chart.](../reporting-services/media/report-builder-pie-chart-start-at-90.png)
+![Screenshot showing how the report builder pie chart starts at 90 degrees from the top of the chart.](../media/tutorials/pie-chart-start-at-90.png "Report builder pie chart starts at 90 degrees")
  
 ## <a name="DrawingEffect"></a>5. Start pie chart values at the top 
 
@@ -166,7 +166,7 @@ In this section, we'll make the first value start at the top.
 
 Now the pie chart slices are in alphabetical order, starting at the top, and ending with the "Other" slice.
 
-![Screenshot showing how the report builder pie chart starts at the top.](../reporting-services/media/report-builder-pie-chart-start-at-top.png)
+![Screenshot showing how the report builder pie chart starts at the top.](../media/tutorials/pie-chart-start-at-top.png "Report builder pie chart starts at the top")
   
 ## <a name="Title"></a>6. Add a Report Title  
   
@@ -207,10 +207,10 @@ Because the pie chart is the only visualization in the report, the chart doesn't
 Your report is saved on the report server.  
   
 ## Next Steps  
-You have successfully completed the Adding a Pie Chart to Your Report tutorial. To learn more about charts, see [Charts &#40;Report Builder and SSRS&#41;](../reporting-services/report-design/charts-report-builder-and-ssrs.md) and [Sparklines and Data Bars &#40;Report Builder and SSRS&#41;](../reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs.md).  
+You have successfully completed the Adding a Pie Chart to Your Report tutorial. To learn more about charts, see [Charts &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs) and [Sparklines and Data Bars &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs).  
   
 ## See Also  
-[Report Builder Tutorials](../reporting-services/report-builder-tutorials.md)  
-[Report Builder in SQL Server](../reporting-services/report-builder/report-builder-in-sql-server-2016.md)  
+[Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials)  
+[Report Builder in SQL Server](/sql/reporting-services/report-builder/report-builder-in-sql-server-2016)  
   
 
