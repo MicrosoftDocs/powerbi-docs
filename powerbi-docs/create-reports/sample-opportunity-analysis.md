@@ -87,11 +87,11 @@ The dashboard that you create this way isn't the same as the sample dashboard cr
 
 Our sales manager has created a dashboard to track those metrics most important to them. When they see something interesting, they can select a tile to look into the data:
 
-- Company revenue is $2 billion and factored revenue is $461 million.
+- Company revenue is \$2 billion and factored revenue is \$461 million.
 - Opportunity count and revenue follow a familiar funnel pattern, with totals decreasing with each subsequent stage.
 - Most of our opportunities are in the East region.
 - Large opportunities generate more revenue than medium or small opportunities.
-- Large partner deals generate more revenue: $8 million on average versus $6 million for direct sales.
+- Large partner deals generate more revenue: \$8 million on average versus \$6 million for direct sales.
 
 Because the effort to land a deal is the same whether the deal is classified as large, medium, or small, our company should analyze the data to learn more about large opportunities.
 
@@ -124,8 +124,8 @@ This page takes a similar look at the data, but uses a revenue perspective inste
 
 Note the following details:
 * East is our biggest region, not only in opportunity count but also in revenue.  
-* If you filter the **Revenue by Sales Stage and Partner Driven** chart by selecting **Yes** for **Partner Driven**, you see a revenue of $1.5 billion and a factored revenue of $294 million. Compare these amounts to $644 million and $166 million for non-partner driven revenue. 
-* Average revenue for large accounts is larger at 8 million if the opportunity is partner driven, compared to 6 million for non-partner driven business.  
+* If you filter the **Revenue by Sales Stage and Partner Driven** chart by selecting **Yes** for **Partner Driven**, you see a revenue of \$1.5 billion and a factored revenue of \$294 million. Compare these amounts to \$644 million and \$166 million for non-partner driven revenue. 
+* Average revenue for large accounts is larger at \$8 million if the opportunity is partner driven, compared to \$6 million for non-partner driven business.  
 * For partner driven businesses, average revenue for large-sized opportunities is almost double that of medium-sized opportunities.  
 * Average revenue for small and medium businesses is comparable for both partner driven and non-partner driven business.   
 
@@ -149,7 +149,7 @@ Our CFO uses this page to manage workload. By looking at the revenue opportuniti
 
 Note the following details:
 * Average revenue for the Finalize sales stage is the highest. Closing these deals is a top priority.
-* If you filter by month (by selecting a month in the **Month** slicer), you see that January has a high proportion of large deals in the Finalize sales stage with a factored revenue of $75 million. February, on the other hand, has mostly medium deals in the Solution and Proposal sales stages.
+* If you filter by month (by selecting a month in the **Month** slicer), you see that January has a high proportion of large deals in the Finalize sales stage with a factored revenue of \$75 million. February, on the other hand, has mostly medium deals in the Solution and Proposal sales stages.
 * In general, the factored revenue numbers fluctuate based on sales stage, number of opportunities, and deal size. Add filters for these factors by using the **Filter** pane on the right to discover further insights.
 
 ## Next steps
