@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 10/11/2022
+ms.date: 02/19/2023
 ---
 
 # Visual API
@@ -17,7 +17,7 @@ All visuals start with a class that implements the `IVisual` interface. You can 
 > [!NOTE]
 > The visual class name must be the same as the `visualClassName` in the `pbiviz.json` file.
 
-The visual class should implement the following methods as shown in the sample below:
+The visual class should implement the following methods as shown in the following sample:
 
 * [`constructor`](#constructor), a standard constructor that initializes the visual's state
 * [`update`](#update), updates the visual's data
@@ -55,7 +55,7 @@ constructor(options: VisualConstructorOptions)
 
 ### VisualConstructorOptions
 
-* `element: HTMLElement`, a reference to the DOM element that will contain your visual
+* `element: HTMLElement`, a reference to the DOM element that contains your visual
 * `host: IVisualHost`, a collection of properties and services that can be used to interact with the visual host (Power BI)
 
    `IVisualHost` contains the following services:
@@ -68,7 +68,6 @@ constructor(options: VisualConstructorOptions)
   * `persistProperties`, allows users to create persistent settings and save them along with the visual definition, so they're available on the next reload
   * `eventService`, returns an [event service](./event-service.md) to support **Render** events
   * `storageService`, returns a service to help use [local storage](./local-storage.md) in the visual
-  * `authenticationService`, generates a service to help with user authentication
   * `tooltipService`, returns a [tooltip service](./add-tooltips.md) to help use tooltips in the visual
   * `launchUrl`, helps to [launch URL](./launch-url.md) in next tab
   * `locale`, returns a locale string, see [Localization](./localization.md)
@@ -77,28 +76,27 @@ constructor(options: VisualConstructorOptions)
   * `fetchMoreData`, supports using more data than the standard limit (1K rows), see [Fetch more data](./fetch-more-data.md)
   * `switchFocusModeState`, helps to change the focus mode state
 
-    ```typescript
-     export interface IVisualHost extends extensibility.IVisualHost {
-         createSelectionIdBuilder: () => visuals.ISelectionIdBuilder;
-         : () => ISelectionManager;
-         colorPalette: ISandboxExtendedColorPalette;
-         persistProperties: (changes: VisualObjectInstancesToPersist) => void;
-         applyJsonFilter: (filter: IFilter[] | IFilter, objectName: string, propertyName: string, action: FilterAction) => void;
-         tooltipService: ITooltipService;
-         telemetry: ITelemetryService;
-         authenticationService: IAuthenticationService;
-         locale: string;
-         allowInteractions: boolean;
-         launchUrl: (url: string) => void;
-         fetchMoreData: () => boolean;
-         instanceId: string;
-         refreshHostData: () => void;
-         createLocalizationManager: () => ILocalizationManager;
-         storageService: ILocalVisualStorageService;
-         eventService: IVisualEventService;
-         switchFocusModeState: (on: boolean) => void;
-     }
-     ```
+ ```typescript
+   export interface IVisualHost extends extensibility.IVisualHost {
+       createSelectionIdBuilder: () => visuals.ISelectionIdBuilder;
+       : () => ISelectionManager;
+       colorPalette: ISandboxExtendedColorPalette;
+       persistProperties: (changes: VisualObjectInstancesToPersist) => void;
+       applyJsonFilter: (filter: IFilter[] | IFilter, objectName: string, propertyName: string, action: FilterAction) => void;
+       tooltipService: ITooltipService;
+       telemetry: ITelemetryService;
+       locale: string;
+       allowInteractions: boolean;
+       launchUrl: (url: string) => void;
+       fetchMoreData: () => boolean;
+       instanceId: string;
+       refreshHostData: () => void;
+       createLocalizationManager: () => ILocalizationManager;
+       storageService: ILocalVisualStorageService;
+       eventService: IVisualEventService;
+       switchFocusModeState: (on: boolean) => void;
+   }
+   ```
 
 ## update
 
@@ -111,7 +109,7 @@ public update(options: VisualUpdateOptions): void
 ### VisualUpdateOptions
 
 * `viewport: IViewport`, dimensions of the viewport that the visual should be rendered within
-* `dataViews: DataView[]`, the dataview object that contains all data needed to render your visual (your visual will typically use the categorical property under DataView)
+* `dataViews: DataView[]`, the dataview object that contains all data needed to render your visual (a visual generally uses the categorical property under DataView)
 * `type: VisualUpdateType`, flags indicating the type(s) of data being updated (**Data** | **Resize** | **ViewMode** | **Style** | **ResizeEnd**)
 * `viewMode: ViewMode`, flags indicating the view mode of the visual (**View** | **Edit** | **InFocusEdit**)
 * `editMode: EditMode`, flag indicating the edit mode of the visual (**Default** | **Advanced**) (if the visual supports **AdvancedEditMode**, it should render its advanced UI controls only when **editMode** is set to **Advanced**, see [AdvancedEditMode](./advanced-edit-mode.md))
@@ -141,4 +139,5 @@ public destroy(): void
 ## Next steps
 
 * [Visual project structure](visual-project-structure.md)
+
 * [Local storage API](local-storage.md)
