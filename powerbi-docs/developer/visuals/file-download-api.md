@@ -21,6 +21,7 @@ The **file download API** lets users download data from a custom visual into a f
 >
 > * [`exportVisualsContent`](#the-exportvisualscontent-method) is available from API version 4.5
 > * [`exportVisualsContentExtended`](#the-exportvisualscontentextended-method) is available from API version 5.3.
+> * To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 Use the **file download API** to export to files of the following types:
 
