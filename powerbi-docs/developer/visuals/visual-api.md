@@ -17,7 +17,7 @@ All visuals start with a class that implements the `IVisual` interface. You can 
 > [!NOTE]
 > The visual class name must be the same as the `visualClassName` in the `pbiviz.json` file.
 
-The visual class should implement the following methods as shown in the sample below:
+The visual class should implement the following methods as shown in the following sample:
 
 * [`constructor`](#constructor), a standard constructor that initializes the visual's state
 * [`update`](#update), updates the visual's data
@@ -55,7 +55,7 @@ constructor(options: VisualConstructorOptions)
 
 ### VisualConstructorOptions
 
-* `element: HTMLElement`, a reference to the DOM element that will contain your visual
+* `element: HTMLElement`, a reference to the DOM element that contains your visual
 * `host: IVisualHost`, a collection of properties and services that can be used to interact with the visual host (Power BI)
 
    `IVisualHost` contains the following services:
@@ -73,7 +73,7 @@ constructor(options: VisualConstructorOptions)
   * `locale`, returns a locale string, see [Localization](./localization.md)
   * `instanceId`, returns a string to identify the current visual instance
   * `colorPalette`, returns the colorPalette required to apply colors to your data
-  * `fetchMoreData`, supports using more data than the standard limit (1K rows), , see [Fetch more data](./fetch-more-data.md)
+  * `fetchMoreData`, supports using more data than the standard limit (1K rows), see [Fetch more data](./fetch-more-data.md)
   * `switchFocusModeState`, helps to change the focus mode state
 
  ```typescript
@@ -109,7 +109,7 @@ public update(options: VisualUpdateOptions): void
 ### VisualUpdateOptions
 
 * `viewport: IViewport`, dimensions of the viewport that the visual should be rendered within
-* `dataViews: DataView[]`, the dataview object that contains all data needed to render your visual (your visual will typically use the categorical property under DataView)
+* `dataViews: DataView[]`, the dataview object that contains all data needed to render your visual (a visual generally uses the categorical property under DataView)
 * `type: VisualUpdateType`, flags indicating the type(s) of data being updated (**Data** | **Resize** | **ViewMode** | **Style** | **ResizeEnd**)
 * `viewMode: ViewMode`, flags indicating the view mode of the visual (**View** | **Edit** | **InFocusEdit**)
 * `editMode: EditMode`, flag indicating the edit mode of the visual (**Default** | **Advanced**) (if the visual supports **AdvancedEditMode**, it should render its advanced UI controls only when **editMode** is set to **Advanced**, see [AdvancedEditMode](./advanced-edit-mode.md))
