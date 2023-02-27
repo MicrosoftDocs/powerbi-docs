@@ -1,8 +1,8 @@
 ---
 title: "Power BI adoption roadmap: Content ownership and management"
 description: Develop strategies about how BI content is owned and managed to drive strong and successful adoption of Power BI.
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
