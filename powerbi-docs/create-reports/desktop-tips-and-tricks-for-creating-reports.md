@@ -1,6 +1,6 @@
 ---
 title: Tips and tricks for creating reports in Power BI
-description: Learn the best practices for building reports in the Power BI service and Power BI Desktop.
+description: Learn the best practices, tips, and tricks for building reports in the Power BI service and Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: willthom
@@ -26,7 +26,7 @@ You can also view the [Formula Reference](https://support.office.com/Article/Lea
 
 When we use Query Editor in Power BI Desktop to load data, we do a best guess data type detection. When we use formulas, sometimes data type settings on columns aren't preserved. You can ensure the data type of columns are correct after doing the following operations: Load data initially to the query tab, First Row as Header, Add column, Group by, Merge, Append, and before pressing loading the data for the first time.
 
-One key thing to remember: italics in the data grid don't mean the data type is correctly set, they just means the data isn't considered as Text.
+One key thing to remember: italics in the data grid don't mean the data type is correctly set, they just mean the data isn't considered as Text.
 
 ## Reference queries in the Query Editor
 
@@ -42,7 +42,7 @@ Take an example of a simple table of Temperatures and the Time the reading was t
 
 ## Reference lines in your report
 
-You can use a calculated column in Power BI Desktop to define a reference line. Identify the table and column on which you want to create a reference line. Select "New Column" in the ribbon, and in the formula bar, type the following formula:
+You can use a calculated column in Power BI Desktop to define a reference line. Identify the table and column on which you want to create a reference line. Select *New Column* in the ribbon, and in the formula bar, type the following formula:
 
 ```console
 Target Value = 100
@@ -52,7 +52,7 @@ This calculated column returns the value *100* regardless of where it's used. Yo
 
 ## Sort by another column
 
-When you use a categorical (string) value in Power BI for chart axes or in a slicer or filter, the default order is alphabetical. If you need to override this order&mdash;for example, for things like days of the week or months&mdash;then you can tell Power BI Desktop to sort by a different column. For more information, see [Sort by Column in Power BI Desktop](desktop-sort-by-column.md).
+When you use a categorical (string) value in Power BI for chart axes or in a slicer or filter, the default order is alphabetical. If you need to override this order&mdash;for example, for things like days of the week or months&mdash;then you can tell Power BI Desktop to sort by a different column. For more information, see [Sort by column in Power BI Desktop](desktop-sort-by-column.md).
 
 ## Build maps more easily with hints to Bing
 
@@ -98,7 +98,7 @@ Ensure the data type is a number for the resulting aggregate column. Now you can
 
 Defining a histogram that supports brushing: Brushing is when visuals are linked together so that when a user selects a data point in one visual, other visuals on the report page highlight or filter data points related to the selected data point. Since we're manipulating data at query time, we need to create a relationship between tables and ensure we know which detail item relates to the bucket in the histogram and vice-versa.
 
-Start the process by using the "Reference" option on the query that has the field you want to build a histogram on. Name the new query "Buckets". For this example, let's call the original query "Details". Next remove all columns except the column you want to use as the bucket for the histogram. Now use the "Remove Duplicates" feature in query. The feature is on the right+click menu when you select the column, so the remaining values are the unique values in the column. If you have decimal numbers, you can first use the tip for defining buckets to build a histogram to get a manageable set of buckets. Now, check the data shown in the query preview. If you see blank values or null, you need to fix those before creating a relationship. See "Creating a relationship if my data has null or blank values". The use of this approach can be problematic due to the need to sort. To get the buckets to sort correctly, see "Sorting order: make categories appear in the order I want".
+Start the process by using the "Reference" option on the query that has the field you want to build a histogram on. Name the new query "Buckets". For this example, let's call the original query "Details". Next remove all columns except the column you want to use as the bucket for the histogram. Now use the "Remove Duplicates" feature in query. The feature is on the right+click menu when you select the column, so the remaining values are the unique values in the column. If you have decimal numbers, you can first use the tip for defining buckets to build a histogram to get a manageable set of buckets. Now, check the data shown in the query preview. If you see blank values or null, you need to fix those before creating a relationship. The use of this approach can be problematic due to the need to sort.
 
 >[!NOTE]
 >It's useful to think about the sort order before building any visuals.
@@ -121,9 +121,7 @@ Save your changes and return to your report. Add the \<Column Name\> and the Fre
 
 Often, when you load detail data sets from multiple sources, issues like null values, blank values, or duplicate values prevent you from creating relationships.
 
-Let's look at an example:
-
-If we load data sets from of active customer support requests and another data set of work items that have schemas as follows:
+Let's look at an example where we load data sets of active customer support requests and another data set of work items that have schemas as follows:
 
 > CustomerIncidents: {IncidentID, CustomerName, IssueName, OpenedDate, Status}
 > WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName }
@@ -139,7 +137,7 @@ Often, data sets contain columns with null or blank values. This can cause probl
 1. You can remove the rows that have null or blank values. You can do this by using either the filter feature in the query tab or, if you're merging queries, by selecting the "keep only matching rows" option.
 1. Alternatively, you can replace the null or blank values with values that work in relationships, typically strings like "NULL" and "(Blank)".
 
-There's no right approach here. Filtering out rows at the query stage removes rows and can affect summary statistics and calculations. Option two preserves data rows but can make unrelated rows appear related in the model leading to miscalculations. If you adopt option two, ensure you use filters at the View/Chart where appropriate to ensure you're getting accurate results. Most importantly, evaluate which rows are kept/removed, and understand the overall effect on the analysis.
+There's no right approach here. Filtering out rows at the query stage removes rows and can affect summary statistics and calculations. Replacing values preserves data rows but can make unrelated rows appear related in the model leading to miscalculations. If you adopt this second option, ensure you use filters at the View/Chart where appropriate to ensure you're getting accurate results. Most importantly, evaluate which rows are kept/removed, and understand the overall effect on the analysis.
 
 ### Create relationships in Power BI Desktop when the data has duplicate values
 
@@ -152,15 +150,15 @@ Let's look at an example where we load data sets of active customer support requ
 >
 >
 
-When we want to track all incidents and work items that relate to a specific CustomerName, we can't just create a relationship between these two data sets. Some WorkItems might not be related to a CustomerName, so that field would be blank or NULL. If you have any blank values or null in the CustomerNames table, you might still not be able to create a relationship. For more information, see [Creating relationships if my data has null or blank values](). There might be multiple WorkItems and CustomerIncidents for a single CustomerName.
+When we want to track all incidents and work items that relate to a specific CustomerName, we can't just create a relationship between these two data sets. Some WorkItems might not be related to a CustomerName, so that field would be blank or NULL. If you have any blank values or null in the CustomerNames table, you might still not be able to create a relationship. There might be multiple WorkItems and CustomerIncidents for a single CustomerName.
 
 To create a relationship in this case, we need to create a logical data set of all the CustomerNames across the two data sets. In the Query tab, you can use the following sequence to create the logical data set:
 
 1. Duplicate both queries, naming the first **Temp** and the second **CustomerNames**.
-2. In each query, remove all columns *except* the CustomerName column
-3. In each query, use **Remove Duplicate**.
-4. In the **CustomerNames** query, select the **Append** option in the ribbon, select the query **Temp**.
-5. In the **CustomerNames** query, select **Remove Duplicates**.
+1. In each query, remove all columns *except* the CustomerName column
+1. In each query, use **Remove Duplicate**.
+1. In the **CustomerNames** query, select the **Append** option in the ribbon, select the query **Temp**.
+1. In the **CustomerNames** query, select **Remove Duplicates**.
 
 Now you have a dimension table that you can use to relate to CustomerIncidents and WorkItems that contains all the values of each.
 
@@ -236,7 +234,7 @@ Avoid visualization variety for the sake of variety. Visualizations should paint
 * Be consistent with chart scales on axes, chart dimension ordering and also the colors used for dimension values within charts.
 * Be sure to encode quantitative data nicely. Don’t exceed three or four numerals when displaying numbers. Display measures to one or two numerals left of the decimal point and scale for thousands or millions. For example, 3.4 million not 3,400,000.
 * Try to avoid mixing levels of precision and time. Make sure that time frames are well understood. Don’t have one chart that has last month next to filtered charts from a specific month of the year.
-* Also try to avoid mixing large and small measures on the same scale, such as on a line or bar chart. For example, one measure can be in the millions and the other measure in the thousands. With such a large scale, it is difficult to see the differences of the measure that's in the thousands. If you need to mix, choose a visualization like a combo chart that allows the use of a second axis.
+* Also try to avoid mixing large and small measures on the same scale, such as on a line or bar chart. For example, one measure can be in the millions and the other measure in the thousands. With such a large scale, it's difficult to see the differences of the measure that's in the thousands. If you need to mix, choose a visualization like a combo chart that allows the use of a second axis.
 * Avoid cluttering your charts with data labels that aren't needed. The values in bar charts, if large enough, are usually understood without displaying the actual number.
 * Pay attention to how [charts are sorted](../consumer/end-user-change-sort.md). If you want to draw attention to the highest or lowest number, sort by the measure. If you want people to be able to quickly find a particular category within many other categories, sort by the axis.
 * Pie charts are best if they have fewer than eight categories. Because you can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts. Gauge charts are great for displaying the current status in the context of a goal.
