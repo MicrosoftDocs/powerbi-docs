@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/02/2023
+ms.date: 02/27/2023
 LocalizationGroup: Dashboards
 ---
 # Create a copy of a dashboard in the Power BI service
@@ -20,6 +20,8 @@ LocalizationGroup: Dashboards
  There are many different reasons to make a copy of a dashboard. Maybe you want to make changes and test its performance against the original; or create slightly different versions to distribute by colleague, region, or team. Perhaps a colleague admires your dashboard design and wants to use it for reporting out to their managers. Another reason would be if you have a new database with the same data structure and data types and want to reuse the dashboard you've already created. This can be done but would require work in Power BI Desktop.
 
 Dashboards are created and copied using the Power BI service and can be viewed in Power BI mobile and Power BI Embedded. Dashboards aren't available in Power BI Desktop.
+
+## Copy a dashboard
 
 To make a copy of a dashboard, you must be the dashboard *creator*. Dashboards that have been shared with you as an app can't be duplicated.
 
