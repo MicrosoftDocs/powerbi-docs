@@ -97,7 +97,7 @@ This dashboard has tiles that link to a report and to an Excel workbook.
 
 Two tiles on this dashboard, **Target vs Actual** and **Year Over Year Revenue Growth**, were pinned from an Excel workbook. When you select either of these tiles, Power BI opens the data source, in this case, Excel Online.
 
-:::image type="content" source="media/sample-customer-profitability/power-bi-excel-online.png" alt-text="Screenshot shows the sample as viewed in Excel Online.":::
+:::image type="content" source="media/sample-customer-profitability/power-bi-excel-online.png" alt-text="Screenshot shows the sample as viewed in Excel Online." lightbox="media/sample-customer-profitability/power-bi-excel-online.png":::
 
 1. Select **Target vs Actual**. Excel Online opens within the Power BI service.
 1. The workbook has three tabs worth of data. Open **COGS**.
@@ -108,7 +108,7 @@ Two tiles on this dashboard, **Target vs Actual** and **Year Over Year Revenue G
 
    1. From the **Industry** slicer, select **Retail**.
 
-   :::image type="content" source="media/sample-customer-profitability/power-bi-retails.png" alt-text="Screenshot shows the Retail industry selected.":::
+   :::image type="content" source="media/sample-customer-profitability/power-bi-retails.png" alt-text="Screenshot shows the Retail industry selected." lightbox="media/sample-customer-profitability/power-bi-retails.png":::
 
    1. You see that only two district managers cover the retail industry: Andrew and Carlos.  
 
@@ -136,7 +136,7 @@ Many of the tiles on the Customer Profitability sample dashboard were pinned fro
 
 ### Team Scorecard page
 
-:::image type="content" source="media/sample-customer-profitability/customer2.png" alt-text="Screenshot shows the Team scorecard report page.":::
+:::image type="content" source="media/sample-customer-profitability/customer2.png" alt-text="Screenshot shows the Team scorecard report page." lightbox="media/sample-customer-profitability/customer2.png":::
 
 Look at two of the team members in detail and see what insights you can gain:
 
@@ -148,7 +148,7 @@ Look at two of the team members in detail and see what insights you can gain:
 
 1. Now on to Valery. In the **Executive** slicer, select Valery's name to filter the report page to display data only about Valery.
 
-   :::image type="content" source="media/sample-customer-profitability/customer3.png" alt-text="Screenshot shows Valery's data.":::
+   :::image type="content" source="media/sample-customer-profitability/customer3.png" alt-text="Screenshot shows Valery's data." lightbox="media/sample-customer-profitability/customer3.png":::
 
    - Notice the red KPI for **Revenue Status (Total Year)**. This item definitely needs further investigation.
    - Valery's revenue variance also paints a worrying picture. Valery isn't meeting set revenue margins.
@@ -205,7 +205,7 @@ Take a look at the Distribution industry.
 
 1. Locate the filter for **Industry** and select the arrow to expand the list. Add a page filter for the Distribution industry. First, clear all selections by clearing the **Select All** checkbox. Then select **Distribution** only.  
 
-   :::image type="content" source="media/sample-customer-profitability/customer7.png" alt-text="Screenshot shows the filter for Distribution.":::
+   :::image type="content" source="media/sample-customer-profitability/customer7.png" alt-text="Screenshot shows the filter for Distribution." lightbox="media/sample-customer-profitability/customer7.png":::
 
 1. The **Gross Margin % by Month and Executive** chart tells you that only Valery and Tina have customers in this industry and Valery worked with this industry only from June to November.
 
@@ -213,7 +213,7 @@ Take a look at the Distribution industry.
 
 1. To see actual revenue, select the Q&A box in the dashboard and enter *total revenue by executive for distribution by scenario*.  
 
-   :::image type="content" source="media/sample-customer-profitability/power-bi-qna2.png" alt-text="Screenshot shows where you can type a question in the Q&A page.":::
+   :::image type="content" source="media/sample-customer-profitability/power-bi-qna2.png" alt-text="Screenshot shows where you can type a question in the Q&A page." lightbox="media/sample-customer-profitability/power-bi-qna2.png":::
 
    You can similarly explore other industries and even add customers to your visuals to understand causes for Valery's performance.
 
