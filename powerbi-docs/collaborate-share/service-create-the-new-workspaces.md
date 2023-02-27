@@ -171,7 +171,7 @@ Quickly access your favorite workspaces by pinning them to the top of the worksp
 
     ![Screenshot of pinned list.](media/service-create-the-new-workspaces/pinned-list.png)
 
-3.	To unpin a workspace, select the unpin button. The workspace is unpinned.
+1. To unpin a workspace, select the unpin button. The workspace is unpinned.
 
     ![Screenshot of unpin workspace.](media/service-create-the-new-workspaces/unpin-workspace.png)
 
