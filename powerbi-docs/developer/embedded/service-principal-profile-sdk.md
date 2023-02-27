@@ -1,6 +1,6 @@
 ---
 title: Use the Power BI SDK with service principal profiles
-description: Learn how to use the Power BI SDK to create and set the Power BI Client when using a service principal profile.
+description: Learn how to use the Power BI SDK to create and set the Power BI client when using a service principal profile.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: mshmordo
@@ -29,7 +29,7 @@ var powerBIclient = new PowerBIClient(credentials, profileObjectId: profileObjec
 
 When you create a Power BI client with the profile object ID, every API call that uses the client has the `X-PowerBI-profile-id` in the request header.
 
-For example,
+For example:
 
 ```rest
 GET https://powerbiapi.analysis-df.windows.net/v1.0/myorg/groups
@@ -73,7 +73,7 @@ var powerBIclient = new PowerBIClient(credentials, profileObjectId: profileObjec
 var currentProfileObjectId = powerBIclient.GetServicePrincipalProfileObjectId(); 
 ```
 
-## Considerations and Limitations
+## Considerations and limitations
 
 There's no support for service principal profiles with Azure Analysis Services (AAS) in live connection mode.
 
