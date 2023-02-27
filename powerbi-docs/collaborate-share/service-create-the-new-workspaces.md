@@ -167,7 +167,7 @@ Quickly access your favorite workspaces by pinning them to the top of the worksp
 
     ![Screenshot of pin workspace](media/service-create-the-new-workspaces/pin-workspace.png)
 
-2.	The workspace is added in the ‘Pinned’ list.
+1. The workspace is added in the **Pinned** list.
 
     ![Screenshot of pinned list.](media/service-create-the-new-workspaces/pinned-list.png)
 
