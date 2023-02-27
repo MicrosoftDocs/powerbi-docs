@@ -175,9 +175,6 @@ Quickly access your favorite workspaces by pinning them to the top of the worksp
 
     ![Screenshot of unpin workspace.](media/service-create-the-new-workspaces/unpin-workspace.png)
 
-4.	When using Search, it finds ‘Pinned’ and ‘All’ lists.
-
-    ![Screenshot of search workspaces in workspace flyout](media/service-create-the-new-workspaces/serach-workspace-flyout.png)
 
 ## Next steps
 * Read about [workspaces in Power BI](service-new-workspaces.md)
