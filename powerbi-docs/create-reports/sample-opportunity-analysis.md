@@ -97,9 +97,9 @@ Because the effort to land a deal is the same whether the deal is classified as 
 
 1. In the Power BI service, find the workspace where you saved the sample, then select the **Opportunity Analysis Sample** dashboard.
 
-2. Select the **Opportunity Count by Partner Driven, Sales Stage** tile to open the first page of the Opportunity Analysis Sample report. 
-
     If you're using Power BI Desktop, open the *.pbix file* and select the **Opportunity Count** tab.
+
+2. Select the **Opportunity Count by Partner Driven, Sales Stage** tile to open the first page of the Opportunity Analysis Sample report. 
 
     :::image type="content" source="media/sample-opportunity-analysis/opportunity-2.png" alt-text="Screenshot that shows the tile for Opportunity Count by Partner Driven, Sales Stage.":::
 
