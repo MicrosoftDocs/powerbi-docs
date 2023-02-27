@@ -163,7 +163,7 @@ Now that you've created the workspace, you'll want to add other users to *roles*
 
 Quickly access your favorite workspaces by pinning them to the top of the workspace flyout list. 
 
-1.	Open the workspace flyout from the nav pane and hover over the workspace you want to pin. Select the **Pin to top** icon.
+1. Open the workspace flyout from the nav pane and hover over the workspace you want to pin. Select the **Pin to top** icon.
 
     ![Screenshot of pin workspace](media/service-create-the-new-workspaces/pin-workspace.png)
 
