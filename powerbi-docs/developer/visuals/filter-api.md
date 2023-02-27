@@ -40,7 +40,7 @@ To enable filtering for the visual, the *capabilities.json* file should contain 
 >    npm install powerbi-models --save
 >    ```
 >
-> * If you're using an older (earlier than 3.x.x) version of the tools, include `powerbi-models` in the visuals package. For more information, see the short guide, [Add the Advanced Filter API to the custom visual](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/AddingAdvancedFilterAPI.md).
+> * If you're using an older (earlier than 3.x.x) version of the tools, include `powerbi-models` in the visuals package. For more information, see the short guide, [Add the Advanced Filter API to the custom visual](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/AddingAdvancedFilterAPI.md). To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 All filters use the [`IFilter` interface](/azure/machine-learning/studio-module-reference/ifilter-interface), as shown in the following code:
 

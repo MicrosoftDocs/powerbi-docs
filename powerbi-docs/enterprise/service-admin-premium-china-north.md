@@ -1,6 +1,6 @@
 ---
 title: Power BI Premium support for China North
-description: Learn which Premium Gen1 features aren't supported in China North.
+description: Learn which Premium features aren't supported in China North.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''

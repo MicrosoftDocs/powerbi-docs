@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.custom: video-ZqhmaiORLw0
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/01/2023
+ms.date: 02/22/2023
 LocalizationGroup: Connect to data
 ---
 # Connect to LinkedIn Sales Navigator in Power BI Desktop
@@ -28,29 +28,8 @@ The following video provides a quick tour and tutorial for using the **LinkedIn 
 
 ## Connect to LinkedIn Sales Navigator
 
-To connect to LinkedIn Sales Navigator data, select **Get data** from the **Home** ribbon in Power BI Desktop. Select **Online Services** from the categories on the left, then scroll until you see **LinkedIn Sales Navigator (Beta)**.
+To connect to LinkedIn Sales Navigator data, follow the instructions in the [Power Query LinkedIn Sales Navigator article](/power-query/connectors/linkedin-sales-navigator). 
 
-![Get Data in Power BI Desktop](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-02.png)
-
-You're advised that you're connecting to a third-party connecter that's still under development.
-
-![Screenshot shows a Third-party warning dialog.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-03.png)
-
-When you select **Continue**, you're prompted to specify which data you want.
-
-In the **LinkedIn Sales Navigator** window that appears, select which data you want to return, either *All contacts* or *Selected contacts* from the first drop-down selector. You can then specify the start and end dates to constrain the data it receives to a particular time window.
-
-![Screenshot shows a prompt dialog for which information to provide.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-04.png)
-
-Once you've provided the information, Power BI Desktop connects to the data associated with your LinkedIn Sales Navigator contract. Use the same email address you use to sign in to LinkedIn Sales Navigator through the website.
-
-:::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-05.png" alt-text="Screenshot shows a LinkedIn dialog where you can sign in." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-05.png":::
-
-When you connect successfully, you're prompted to select which data from your LinkedIn Sales Navigator contract from a **Navigator** window.
-
-:::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-09.png" alt-text="Screenshot shows the Navigator window, where you can select data." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-09.png":::
-
-You can create whatever reports you like with your LinkedIn Sales Navigator data.
 
 ## Using the LinkedIn Sales Navigator template app
 
