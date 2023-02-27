@@ -17,7 +17,7 @@ LocalizationGroup: Samples
 
 In this tutorial, you start with a built-in Power BI sample dataset and create a report with a *decomposition tree*. A decomposition tree is an interactive visual for ad hoc exploration and conducting root cause analysis. It's also an artificial intelligence (AI) visualization. You can ask it to find the next category, or *dimension*, to drill down into based on certain criteria. For more information, see [Create and view decomposition tree visuals in Power BI](../visuals/power-bi-visualization-decomposition-tree.md).
 
-:::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-final.png" alt-text="Screenshot shows the completed decomposition tree." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-final.png:::
+:::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-final.png" alt-text="Screenshot shows the completed decomposition tree." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-final.png":::
 
 This tutorial shows you how to:
 
