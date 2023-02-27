@@ -2,7 +2,7 @@
 title: "Bi-directional relationship guidance"
 description: Guidance for developing bi-directional filtering model relationships.
 author: davidiseminger
-ms.author: davidiseminger
+ms.author: davidi
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
