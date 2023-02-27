@@ -7,7 +7,7 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/23/2023
+ms.date: 02/27/2023
 LocalizationGroup: Share your work
 ---
 # Create Excel workbooks with refreshable Power BI data
