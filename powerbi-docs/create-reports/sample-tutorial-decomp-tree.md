@@ -52,7 +52,7 @@ To open a Power BI *.pbix* file, you need to [get Power BI Desktop](../fundament
 
 On the **Datasets + dataflows** tab, you have several options for exploring your dataset. In this tutorial, you're going to explore the dataset by creating your own report from scratch.
 
-:::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot shows the Retail Analysis Sample dataset entry.":::
+:::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot shows the Retail Analysis Sample dataset entry." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png":::
 
 1. Select **More options** (**...**) > **Create report**.
 
@@ -60,7 +60,7 @@ On the **Datasets + dataflows** tab, you have several options for exploring your
 
    The dataset opens in report editing mode.
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png" alt-text="Screenshot shows a brand-new report in edit mode.":::
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png" alt-text="Screenshot shows a brand-new report in edit mode." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png":::
 
 ## Create a decomp tree
 
@@ -78,7 +78,7 @@ Let's add a decomposition tree, or *decomp* tree, to our report for ad hoc analy
 
 1. Decomp trees analyze one value by many categories, or *dimensions*. Expand **Sales** > **This Year Sales** and select **Value**. Power BI adds **Value** to the **Analyze** box.
 
-    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-analyze-sales-desktop.png" alt-text="Screenshot shows Value for This Year Sales added to the Analyze box for the decomposition tree.":::
+    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-analyze-sales-desktop.png" alt-text="Screenshot shows Value for This Year Sales added to the Analyze box for the decomposition tree." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-analyze-sales-desktop.png":::
 
 1. Next, select dimension fields and add them to the **Explain by** box. Add as many as you want, in any order. You can use them or not, in any order, in the decomp tree. We added:
 
