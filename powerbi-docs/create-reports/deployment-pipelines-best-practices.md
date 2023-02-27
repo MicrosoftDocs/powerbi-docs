@@ -77,7 +77,7 @@ A production database should always be stable and available. It's better not to 
 
 As you can't edit datasets data sources in Power BI service, we recommend using [parameters](/power-query/power-query-query-parameters) to store connection details such as instance names and database names. By using parameters instead of static connection strings, you can manage the connections through the Power BI service web portal, or [use APIs](/rest/api/power-bi/datasets/updateparametersingroup), at a later stage.
 
-In deployment pipelines, you can configure parameter rules to set specific values for the development, test, and production stages.
+In deployment pipelines, you can configure parameter rules to set different values for the each deployment stage. You can also set rules for paginated reports.
 
 If you don’t use parameters for your connection string, you can define data source rules to specify a connection string for a given dataset. However, rules aren't supported in deployment pipelines for all data sources. To verify that you can configure rules for your data source, see [deployment rules limitations](deployment-pipelines-create-rules.md#considerations-and-limitations).
 
@@ -184,6 +184,8 @@ In addition, limit access to the pipeline by only enabling pipeline permissions 
 [Deployment rules](deployment-pipelines-create-rules.md) are a powerful way to ensure the data in production is always connected and available to users. With deployment rules applied, deployments can run while you have the assurance that end users can see the relevant info without disturbance.
 
 Make sure that you set production deployment rules for data sources and parameters defined in the dataset.
+
+In case of major dataset change, [refresh the dataset](../connect-data/refresh-data.md).
 
 ### Update the production app
 
