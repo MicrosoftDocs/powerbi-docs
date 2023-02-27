@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/23/2023
+ms.date: 02/28/2023
 LocalizationGroup: Samples
 ---
 # IT Spend Analysis sample for Power BI: Take a tour
@@ -86,7 +86,7 @@ The dashboard that you create this way isn't the same as the sample dashboard cr
 
 If you used the built-in sample, the two numbers tiles on the left of the dashboard, **Var Plan %** and **Variance Latest Estimate % Quarter 3**, give you an overview of how well we're doing against the plan and against the latest quarterly estimate (LE3 = latest estimate quarter 3). Overall, we're about 6% off the plan. Let's explore the cause of this variance: when, where, and in which category.
 
-## YTD IT Spend Trend Analysis page
+### YTD IT Spend Trend Analysis page
 
 When you select the **Var Plan % by Sales Region** dashboard tile, it displays the **YTD IT Spend Trend Analysis** page of the IT Spend Analysis Sample report. At a glance, we see that there's positive variance in the United States and Europe and negative variance in Canada, Latin America, and Australia. The United States has about 6% +LE variance and Australia has about 7% -LE variance.
 
@@ -102,23 +102,7 @@ However, just looking at this chart and drawing conclusions can be misleading. W
 
    Next, explore which category in the USA is causing the variance.
 
-## Ask questions of the data
-
-1. In the dashboard, select **Ask a question about your data**.
-
-   :::image type="content" source="media/sample-it-spend/it-area-chart.png" alt-text="Screenshot that shows selecting Top cost element groups by plan.":::
-
-1. From the **Try one of these to get started** list on the left side, select **top cost element groups by plan**.
-
-   :::image type="content" source="media/sample-it-spend/question-results.png" alt-text="Screenshot that shows the results of selecting Top cost element groups by plan.":::
-
-1. In the Q&A box, clear the previous entry and enter *show IT areas, var plan % and var le3 % bar chart*.
-
-   :::image type="content" source="media/sample-it-spend/it4.png" alt-text="Screenshot shows the result of the entry in the Q&A box described here.":::
-
-   In the first IT area, **Infrastructure**, the percentage has changed drastically between the initial variance plan and the variance plan latest estimate.
-
-## YTD Spend by Cost Elements page
+### YTD Spend by Cost Elements page
 
 1. Return to the dashboard and look at the **Variance Plan %, Variance Latest Estimate % - Quarter 3** dashboard tile.
 
@@ -137,6 +121,22 @@ However, just looking at this chart and drawing conclusions can be misleading. W
 1. With **Other** selected, select **Infrastructure** in the **IT Area** slicer and select subareas in the **IT Sub Area** slicer to find the subarea with the largest variance.  
 
    Notice the large variance for **Networking**. Apparently the company decided to give its employees phone services as a benefit, even though this move wasn't planned for.
+
+## Ask questions of the data
+
+1. In the dashboard, select **Ask a question about your data**.
+
+   :::image type="content" source="media/sample-it-spend/it-area-chart.png" alt-text="Screenshot that shows selecting Top cost element groups by plan.":::
+
+1. From the **Try one of these to get started** list on the left side, select **top cost element groups by plan**.
+
+   :::image type="content" source="media/sample-it-spend/question-results.png" alt-text="Screenshot that shows the results of selecting Top cost element groups by plan.":::
+
+1. In the Q&A box, clear the previous entry and enter *show IT areas, var plan % and var le3 % bar chart*.
+
+   :::image type="content" source="media/sample-it-spend/it4.png" alt-text="Screenshot shows the result of the entry in the Q&A box described here.":::
+
+   In the first IT area, **Infrastructure**, the percentage has changed drastically between the initial variance plan and the variance plan latest estimate.
 
 ## Plan Variance Analysis page
 
