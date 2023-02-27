@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Content creator security planning"
 description: "Learn about content creator security planning for Power BI."
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

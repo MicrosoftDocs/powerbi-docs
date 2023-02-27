@@ -1,8 +1,8 @@
 ---
 title: "Develop scalable multitenancy applications with Power BI embedding"
 description: "Learn how to embed Power BI content for multitenancy applications and achieve the highest levels of scalability, performance, and security."
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-developer
