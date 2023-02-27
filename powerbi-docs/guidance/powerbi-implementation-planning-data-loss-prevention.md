@@ -1,7 +1,7 @@
 ---
 title: "Power BI implementation planning: Data loss prevention for Power BI"
 description: "Learn about data loss prevention for Power BI."
-author: painbar
+author: paulinbar
 ms.author: painbar
 ms.reviewer: maroche
 ms.service: powerbi

@@ -1,7 +1,7 @@
 ---
 title: "Power BI implementation planning: Information protection and data loss prevention"
 description: "An introduction to the information protection and data loss prevention for Power BI articles."
-author: painbar
+author: paulinbar
 ms.author: painbar
 ms.reviewer: maroche
 ms.service: powerbi
