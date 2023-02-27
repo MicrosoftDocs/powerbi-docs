@@ -1,13 +1,13 @@
 ---
 title: Create reports from data in Microsoft Teams
-description: It’s easy to create Power BI reports in Microsoft Teams with just a few clicks. 
+description: Learn to create, explore, and enhance Power BI reports from a dataset in your organization in Microsoft Teams. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 10/22/2021
+ms.date: 02/27/2023
 LocalizationGroup: Get started
 
 ---
@@ -16,7 +16,7 @@ LocalizationGroup: Get started
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-It’s easy to create Power BI reports with just a few clicks in Microsoft Teams. This article gives a few examples of those quick reports you can create. When you’re ready you can also use tools like Power BI Desktop for more advanced report authoring.
+It’s easy to create Power BI reports in Microsoft Teams. This article has a few examples of reports you can create. When you’re ready, you can also use tools like Power BI Desktop for more advanced report authoring.
 
 ## Create an automatic report from data you have
 
@@ -27,12 +27,12 @@ Say you have a table with data that you'd like to try visualizing in Power BI, m
 
     Need to install the Power BI app first? [install the app and then pin it](../collaborate-share/service-microsoft-teams-app.md#install-the-power-bi-app) to the Teams navigation pane.
 
-2. Select the **Create** tab.
-3. Select **Paste or manually enter data**.
+1. Select the **Create** tab.
+1. Select **Paste or manually enter data**.
 
     :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-create-paste-manually.png" alt-text="Paste or manually enter data.":::
 
-4. Select the first cell and paste the data.
+1. Select the first cell and paste the data.
 1. Select **Use first row as headers** if appropriate, give the table a name, then select **Auto-create report**.
 
     :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-paste-auto-create.png" alt-text="Select Auto-create report.":::
@@ -56,40 +56,40 @@ When you’re done, save and share the report with your colleagues in Teams.
 
 ## Create a report from a dataset in your organization
 
-Many organizations share datasets that you can use to build your reports. These datasets are great because they offer up-to-date authoritative data. Datasets that are marked *certified* or *promoted* are likely to be higher quality and better maintained, so your reports will keep working longer.
+Many organizations share datasets that you can use to build your reports. These datasets are great because they offer up-to-date authoritative data. Datasets marked *certified* or *promoted* are likely to be higher quality and better maintained, so your reports will keep working longer.
 
 To build a report from a dataset shared with you, follow these steps.
 
 1. Open the Power BI app for Microsoft Teams.
-2. Select the **Create** tab > **Pick a published dataset**.
+1. Select the **Create** tab > **Pick a published dataset**.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-create-published-dataset.png" alt-text="Pick a published dataset.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-create-published-dataset.png" alt-text="Screenshot of Power BI app open in Teams with the Create tab and Pick a published dataset option highlighted.":::
 
-4. Select a dataset > **Create**.
+1. Select a dataset > **Create**.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-select-dataset.png" alt-text="Select a dataset and Create.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-select-dataset.png" alt-text="Screenshot of a window open to select a dataset to create a report with the report and create button highlighted.":::
 
-6. Start exploring the data. 
+1. Start exploring the data.
 
-    - Use visualizations like charts, tables, and maps to show data in various ways. 
-    - Select data points to see other visuals update to filter data to your selection. Change formatting to make the report useful and readable by your colleagues. 
+    - Use visualizations like charts, tables, and maps to show data in various ways.
+    - Select data points to see other visuals update to filter data to your selection. Change formatting to make the report useful and readable by your colleagues.
 
-1. When you’re done, save and then share the report.
+1. Save and share the report after you complete your work.
 
 ## Explore datasets and reports shared with you
 
-It's easy to find all the datasets your organization has shared with you. They’re in the Datasets hub in the Power BI app for Microsoft Teams. Again, datasets that are marked *certified* or *promoted* are likely to be higher quality and better maintained.
+It's easy to find all the datasets your organization has shared with you. They’re in the Datasets hub in the Power BI app for Microsoft Teams. Again, datasets marked *certified* or *promoted* are likely to be higher quality and better maintained.
 
 1. Open the Power BI app for Microsoft Teams.
 
-    Need to install the Power BI app first? [install the app and then pin it](../collaborate-share/service-microsoft-teams-app.md#install-the-power-bi-app) to the Teams navigation pane.
+    Need to install the Power BI app? [Install the app, then pin it](../collaborate-share/service-microsoft-teams-app.md#install-the-power-bi-app) to the Teams navigation pane.
 
-2. Go to the **Datasets** tab.
-3. Select a dataset from the list or from recommended datasets.
+1. Go to the **Data hub** tab.
+1. Select a dataset from the list or from the recommended datasets.
 
     :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-tab.png" alt-text="Select a dataset from the list or from recommended datasets.":::
 
-4. Explore the **Dataset details** page.
+1. Explore the **Dataset details** page.
 
     :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-details.png" alt-text="Explore the Dataset details page.":::
 
@@ -97,11 +97,11 @@ It's easy to find all the datasets your organization has shared with you. They�
     - Create a report in Power BI from the dataset with **Create from scratch**.
     - Create an Excel workbook connected to the dataset with Analyze in Excel.
 
-When you find interesting reports that are relevant to your team, bring them into your collaboration by adding them to channels, meetings, and chats as tabs or in a conversation.
+When you find interesting reports relevant to your team, bring them into your collaboration by adding them to channels, meetings, and chats as tabs or in a conversation.
 
 ## Enhance reports in the Power BI service and in Teams
 
-It’s easy to keep working on your reports, right in the Power BI service and in Power BI in Teams. Take advantage of the artificial intelligence capabilities built into Power BI. 
+It’s easy to keep working on your reports, right in the Power BI service and in Power BI in Teams. Take advantage of the artificial intelligence capabilities built into Power BI.
 
 ### Q&A visual
 
