@@ -90,7 +90,7 @@ ms.reviewer: saurkumar
   
 -   Peer data regions are data regions or dynamic groups that share a common data region or dynamic ancestor. Peer data is identified by branching of the flattened tree.  
   
- For more information, see [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs).  
+ For more information, see [Tables, matrices, and lists &#40;Power BI Report Builder&#41;](../report-builder-tables-matrices-lists.md).  
   
   
 ##  <a name="RenderingModes"></a> Renderer Modes  
