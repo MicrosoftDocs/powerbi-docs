@@ -146,7 +146,7 @@ The Word rendering extension renders Power BI paginated reports to the Microsoft
  Reports, rendered by using the Word or Word 2003 renderers tend to be visually indistinguishable. However, you might notice minor differences between the two the Word or Word 2003 formats.  
   
 ##  <a name="DeviceInfo"></a> Device information settings  
- You can change some default settings for this renderer, such as omit hyperlinks and drillthrough links or expand all items that can be toggled regardless of the original state of the item when rendered, by changing the device information settings. For more information, see [Word device information settings](/sql/reporting-services/word-device-information-settings).  
+ You can change some default settings for this renderer, such as omit hyperlinks and drillthrough links or expand all items that can be toggled regardless of the original state of the item when rendered, by changing the device information settings. For more information, see [Word device information settings](../device-info/word-device-information-settings).  
 
 ## Next steps
 
