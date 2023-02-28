@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios"
 description: "An overview of the Power BI implementation planning usage scenario articles."
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

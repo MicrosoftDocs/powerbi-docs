@@ -1,8 +1,8 @@
 ﻿---
 title: Deploy to Power BI
 description: Guidance on deploying, supporting, and monitoring content when migrating to Power BI.
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

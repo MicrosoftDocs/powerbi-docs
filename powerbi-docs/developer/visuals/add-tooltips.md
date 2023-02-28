@@ -221,7 +221,7 @@ An example of sending the selectionId to tooltip display calls is shown in the f
 
 ## Add modern tooltips support to the report page
 
-From API version 3.8.3 you can also create [*modern* visual tooltips](../../create-reports/desktop-visual-tooltips.md). Modern visual tooltips add data point drill actions to your tooltips, and update the style to match your report theme.
+From API version 3.8.3 you can also create [*modern* visual tooltips](../../create-reports/desktop-visual-tooltips.md). Modern visual tooltips add data point drill actions to your tooltips, and update the style to match your report theme. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 :::image type="content" source="media/add-tooltips/modern-tooltip.png" alt-text="Screenshot that shows a modern tooltip.":::
 

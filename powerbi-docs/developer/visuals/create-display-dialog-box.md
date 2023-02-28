@@ -134,7 +134,7 @@ In this example, the dialog box is invoked by clicking a visual button. The visu
 
 ## Define the size and position of the dialog box
 
-From API version 4.0 or later, you can define the size and position of the dialog box using the `DialogOpenOptions` parameter of `openModalDialog`.
+From API version 4.0 or later, you can define the size and position of the dialog box using the `DialogOpenOptions` parameter of `openModalDialog`. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 ```javascript
     export interface RectSize {
