@@ -24,7 +24,7 @@ You can also view the [Formula Reference](https://support.office.com/Article/Lea
 
 ## Data types in Query Editor
 
-Query Editor in Power BI Desktop loads data by doing a best guess data type detection. With formulas, sometimes data type settings on columns aren't preserved. You can ensure the data type of columns are correct after doing the following operations: Load data initially to the Power Query Editor, First Row as Header, Add column, Group by, Merge, Append, and before pressing loading the data for the first time.
+Query Editor in Power BI Desktop loads data by doing a best guess data type detection. With formulas, sometimes data type settings on columns aren't preserved. Ensure the data type of columns are correct after doing the following operations: Load data initially to the Power Query Editor, First Row as Header, Add column, Group by, Merge, Append, and before pressing loading the data for the first time.
 
 One key thing to remember: italics in the data grid don't mean the data type is correctly set, they just mean the data isn't considered as Text.
 
