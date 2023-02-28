@@ -16,7 +16,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 ## API v5.2.0
 
-* **[Customized data reduction](./fetch-more-data.md#customized-data-reduction)** feature added to *capabilities.json* schema. This capability allows the [data fetch window](./fetch-more-data.md) to be modified dynamically by the Custom Visual code or by the report author.
+* **[Customized data reduction](./fetch-more-data.md#customized-data-reduction)** - This feature added to *capabilities.json* schema allows the [data fetch window](./fetch-more-data.md) to be modified dynamically by the custom visual code the report author.
 * Supports Desktop December 2022
 
 ## API v5.1.0
