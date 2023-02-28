@@ -101,9 +101,9 @@
     items: 
     - name: "About storytelling with Power BI in PowerPoint"
       href: service-power-bi-powerpoint-add-in-about.md
-    - name: "Add a live report page to PowerPoint"
+    - name: "Add live data to PowerPoint"
       href: service-power-bi-powerpoint-add-in-install.md
-    - name: "View and present live report pages in PowerPoint"
+    - name: "View and present live data in PowerPoint"
       href: service-power-bi-powerpoint-add-in-view-present.md
     - name: "Information for the Power BI admin"
       href: service-power-bi-powerpoint-add-in-admin.md

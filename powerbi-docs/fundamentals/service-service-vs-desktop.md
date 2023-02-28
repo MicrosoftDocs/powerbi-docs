@@ -5,6 +5,7 @@ author: mihart
 ms.author: mihart
 ms.reviewer: ''
 ms.custom: video-IkJda4O7oGs
+ms.search.form: product-power-bi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
