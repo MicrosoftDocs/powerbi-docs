@@ -66,9 +66,9 @@ To create the entities in your dataflow, sign into the Power BI service and navi
 
    [ ![Screenshot of selecting Transform data on the Preview file data screen.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-07.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-07.png#lightbox)
 
-1. You can rename the query to a friendlier name by changing the value in the **Name** box in the right pane. Change the query name to *Online visitors*.
-
 1. Power Query automatically infers the data types of the columns. You can change the data types by selecting the attribute type icon at the tops of the column headers. Change the type of the **Revenue** column to **True/False**.
+
+   You can rename the query to a friendlier name by changing the value in the **Name** box in the right pane. Change the query name to *Online visitors*.
 
    [ ![Screenshot of changing the query name and Revenue column data type.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-08.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-08.png#lightbox)
 
@@ -84,13 +84,13 @@ To add a machine learning model:
 
    [ ![Screenshot that shows adding a machine learning model.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-10.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-10.png#lightbox)
 
-1. The first step to create your machine learning model is to identify the historical data, including the outcome field that you want to predict. The model is created by learning from this data. In this case, you want to predict whether or not visitors will make a purchase. The outcome you want to predict is in the **Revenue** field. Select **Revenue** as the **Outcome column** value, and then select **Next**.
+1. The first step to create your machine learning model is to identify the historical data, including the outcome field that you want to predict. The model is created by learning from this data. In this case, you want to predict whether or not visitors are going to make a purchase. The outcome you want to predict is in the **Revenue** field. Select **Revenue** as the **Outcome column** value, and then select **Next**.
 
    [ ![Screenshot that shows selecting a historical data field.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-11.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-11.png#lightbox)
 
 1. Next, you select the type of machine learning model to create. Power BI analyzes the values in the outcome field that you identified, and suggests the types of machine learning models that it can create to predict that field.
 
-   In this case, since you want to predict a binary outcome of whether or not a visitor will make a purchase, Power BI recommends **Binary Prediction**. Because you're interested in predicting visitors who will make a purchase, select **true** under **Choose a target outcome**. You can also provide different labels to use for the outcomes in the automatically generated report that summarizes the model validation results. Then select **Next**.
+   In this case, since you want to predict a binary outcome of whether or not a visitor is going to make a purchase, Power BI recommends **Binary Prediction**. Because you're interested in predicting visitors who are going to make a purchase, select **true** under **Choose a target outcome**. You can also provide different labels to use for the outcomes in the automatically generated report that summarizes the model validation results. Then select **Next**.
 
    [ ![Screenshot that shows the Binary prediction screen.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-12.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-12.png#lightbox)
 
@@ -102,11 +102,11 @@ To add a machine learning model:
 
    [ ![Screenshot that shows naming the model and choosing the training time.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-14.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-14.png#lightbox)
 
-If you get an error similar to **Credentials not found for data source**, you need to update your credentials so Power BI can score the data. To update your credentials, select **More options ...** > **Settings** > **Settings** in the header bar.
+If you get an error similar to **Credentials not found for data source**, you need to update your credentials so Power BI can score the data. To update your credentials, select **More options ...** in the header bar and then select **Settings** > **Settings**.
 
 [ ![Screenshot that shows selecting Settings.](media/service-tutorial-build-machine-learning-model/settings.png)](media/service-tutorial-build-machine-learning-model/settings.png#lightbox)
 
-Select **Dataflows**, expand **Data source credentials**, and then select **Edit credentials**.
+Select your dataflow under **Dataflows**, expand **Data source credentials**, and then select **Edit credentials**.
 
 [ ![Screenshot that shows editing Dataflow credentials.](media/service-tutorial-build-machine-learning-model/dataflow-credentials.png)](media/service-tutorial-build-machine-learning-model/dataflow-credentials.png#lightbox)
 
@@ -114,13 +114,11 @@ Select **Dataflows**, expand **Data source credentials**, and then select **Edit
 
 The training process begins by sampling and normalizing your historical data and splitting your dataset into two new entities: **Purchase Intent Prediction Training Data** and **Purchase Intent Prediction Testing Data**.
 
-Depending on the size of the dataset, the training process can take anywhere from a few minutes up to the training time you selected. You can see the model in the **Machine learning models** tab of the dataflow. The **Status** indicates that the model has been queued for training or is under training.
-
-You can confirm that the model is being trained and validated through the status of the dataflow. The status appears as a data refresh in progress in the **Datasets + dataflows** tab of the workspace.
+Depending on the size of the dataset, the training process can take anywhere from a few minutes up to the training time you selected. You can confirm that the model is being trained and validated through the status of the dataflow. The status appears as a data refresh in progress in the **Datasets + dataflows** tab of the workspace.
 
 [ ![Screenshot that shows the model under training.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-15.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-15.png#lightbox)
 
-Once the model training is completed, the dataflow displays an updated refresh time. You can confirm that the model is trained in the **Machine learning models** tab of the dataflow. The model you created shows status as **Trained** and the **Last Trained time** is updated.
+You can see the model in the **Machine learning models** tab of the dataflow. **Status** indicates whether the model has been queued for training, is under training, or is trained. Once the model training is completed, the dataflow displays an updated **Last Trained time** and a status of **Trained**.
 
 [ ![Screenshot that shows the Trained status and Last trained time.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-16.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-16.png#lightbox)
 
@@ -132,7 +130,7 @@ In the **Model Performance** page of the report, select **See top predictors** t
 
 [ ![Screenshot that shows the Model performance page.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-18.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-18.png#lightbox)
 
-You can use the **Probability Threshold** slicer on the **Model Performance** page to examine its influence on the model **Precision** and **Recall** for the model.
+You can use the **Probability Threshold** slicer on the **Model Performance** page to examine the influence of model **Precision** and **Recall** on the model.
 
 [ ![Screenshot that shows the Probability Threshold slicer.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-17.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-17.png#lightbox)
 
@@ -185,7 +183,7 @@ To use the scored output from your machine learning model, you can connect to yo
 
 ## Limitations
 
-There are some known issues with using gateways with automated machine learning. If you need to use a gateway, we recommend creating a dataflow that imports the necessary data via the gateway first. Then create another dataflow that references the first dataflow to create or apply these models.
+There are some known issues with using gateways with automated machine learning. If you need to use a gateway, it's best to create a dataflow that imports the necessary data via the gateway first. Then create another dataflow that references the first dataflow to create or apply these models.
 
 ## Next steps
 
