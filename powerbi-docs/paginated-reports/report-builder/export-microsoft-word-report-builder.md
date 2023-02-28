@@ -100,7 +100,7 @@ The Word rendering extension renders Power BI paginated reports to the Microsoft
 ### Border  
  Borders for report items, other than the page border, are rendered as Word table cell borders.  
   
-##  <a name="SquigglyLines"></a> Squiggly iines in exported reports  
+##  <a name="SquigglyLines"></a> Squiggly lines in exported reports  
  When exported and viewed in Word, report data or constants might be underlined by red or green squiggly lines. The red squiggly lines identify spelling errors. The green squiggly lines identify grammar errors. This occurs when the report includes words that do not comply with the proofing (spelling and grammar) of the editing language that is specified in Word. For example, English report column titles will likely be underlined by red squiggly lines when the report is rendered in a Spanish version of Word. Perceived spelling errors are more common in reports than perceived grammar errors because reports typically include only short text, not complete sentences or paragraphs.  
   
  The presence of squiggly lines in reports implies the report has errors, which it likely does not. You can remove the squiggly lines by changing the proofing language for the report. To change the proofing language, select the content of the report and then specify the appropriate language for the content. You can select all or part of the content. In Word, the language option **Set proofing language** is in the **Language** area on the **Review** tab. After you update the content, you need to resave the document.  
