@@ -17,7 +17,7 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
 > [!NOTE]  
 >  You can create and modify paginated report definition (.rdl) files in Power BI Report Builder.
   
-##  <a name="ReportItems"></a> Report Items  
+##  <a name="ReportItems"></a> Report items  
  The following table describes how report items are rendered.  
   
 |Item|Rendering behavior|  
@@ -48,7 +48,7 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
 -   **Images, lines, and custom report items** are ignored.  
   
   
-##  <a name="DataTypes"></a> Data Types  
+##  <a name="DataTypes"></a> Data types  
  The text box element or attribute is assigned an XSD data type based on the values that the text box displays.  
   
 |If all text box values are|Assigned data type is|  
@@ -64,10 +64,10 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
 |Other|**xsd:string**|  
   
   
-##  <a name="XMLSpecificRenderingRules"></a> XML-Specific Rendering Rules  
+##  <a name="XMLSpecificRenderingRules"></a> XML-specific rendering rules  
  The following sections describe how the XML rendering extensions interpret the items within the report.  
   
-### Report Body  
+### Report body  
  A report is rendered as the root element of the XML document. The name of the element comes from the DataElementName property set in the Properties pane.  
   
  XML namespace definitions and schema reference attributes are also included in the report element. Variables are noted in bold face type:  
@@ -86,10 +86,10 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
 ### Text boxes  
  Text boxes are rendered as elements or attributes according to the DataElementStyle RDL property. The name of the element or attribute comes from the TextBox.DataElementName RDL property.  
   
-### Charts, Data Bars, and Sparklines  
+### Charts, data bars, and sparklines  
  Charts, data bars, and sparklines are rendered in XML. The data is structured.  
   
-### Gauges and Indicators  
+### Gauges and indicators  
  Gauges and indicators are rendered in XML. The data is structured.  
   
 ### Subreports  
@@ -98,7 +98,7 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
 ### Rectangles  
  A rectangle is rendered as an element. The name of the element is taken from the DataElementName RDL property.  
   
-### Custom Report Items  
+### Custom report items  
  CustomReportItems (CRI) aren't visible to the rendering extension. If a custom report item exists in the report, the rendering extension renders it as a conventional report item.  
   
 ### Images  
@@ -108,22 +108,22 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
  Lines aren't rendered.  
   
   
-### Tables, Matrices, and Lists  
+### Tables, matrices, and lists  
  Tables, matrices, and lists, are rendered as an element. The name of the element comes from the Tablix DataElementName RDL property.  
   
-#### Rows and Columns  
+#### Rows and columns  
  Columns are rendered within rows.  
   
-#### Tablix Corner  
+#### Tablix corner  
  The corner isn't rendered. Only the contents of the corner are rendered.  
   
-#### Tablix Cells  
+#### Tablix cells  
  Tablix cells are rendered as elements. The name of the element is taken from the cell's DataElementName RDL property.  
   
-#### Automatic Subtotals  
+#### Automatic subtotals  
  Tablix automatic subtotals aren't rendered.  
   
-#### Row and Column Items that Do Not Repeat with a Group  
+#### Row and column items that do not repeat with a group  
  Items that do not repeat with a group, such as labels, subtotals and totals, are rendered as elements. The name of the element comes from the TablixMember.DataElementName RDL property.  
   
  The TablixMember.DataElementOutput RDL property controls whether a non-repeating item is rendered.  
@@ -138,7 +138,7 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
   
  If a non-repeating member has no corresponding Tablix cells, it isn't rendered. This may occur in the case of a Tablix cell where it spans more than one column.  
   
-#### Rows and Columns that Repeat with a Group  
+#### Rows and columns that repeat with a group  
  Rows and columns that repeat within a group are rendered according to Tablix.DataElementOutput rules. The name for the element is taken from the DataElementName property.  
   
  Each unique value within a group is rendered as a child element of the group. The name for the element is taken from the Group.DataElementName property.  
@@ -146,15 +146,15 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
  If the DataElementOutput property value equals Output, a repeating item's header is rendered as a child of the detail element.  
   
   
-##  <a name="CustomFormatsXSLTransformations"></a> Custom Formats and XSL Transformations  
+##  <a name="CustomFormatsXSLTransformations"></a> Custom formats and XSL Transformations  
  XML files produced by the XML rendering extension can be transformed into almost any format using XSL Transformations (XSLT). This functionality can be used to produce data in formats not already supported by existing rendering extensions. Consider using the XML rendering extension and XSLT before attempting to create your own rendering extension.  
   
   
-##  <a name="DuplicateName"></a> Duplicate Names  
+##  <a name="DuplicateName"></a> Duplicate names  
  If there are duplicate data element names within the same scope, the renderer displays an error message.  
   
   
-##  <a name="XSLTTransformations"></a> XSLT Transformations  
+##  <a name="XSLTTransformations"></a> XSLT transformations  
  The XML renderer can apply a server-side XSLT transformation to the original XML data. When an XSLT is applied, the renderer outputs the transformed content instead of the original XML data. The transformation occurs on the server, not on the client.  
   
  The XSLT to apply to the output is defined either in the report definition file with the DataTransform property of the report or with the XSLT *DeviceInfo* parameter. If either of these values are set, the transform occurs each time the XML renderer is used. When using subscriptions, the XSLT must be defined in the RDL DataTransform property.  
@@ -162,7 +162,7 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
  If an XSLT file is specified, by both the DataTransform definition property and the device information setting, the XSLT specified in DataTransform occurs first, followed by the XSLT set by the device information settings.  
   
   
-###  <a name="DeviceInfo"></a> Device Information Settings  
+###  <a name="DeviceInfo"></a> Device information settings  
  You can change some default settings for this renderer by changing the device information settings, including the following:  
   
 -   A transformation (XSLT) to apply to the XML.  
@@ -179,7 +179,7 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
   
 -   The file extension of the XML document.  
   
- For more information, see [XML Device Information Settings](/sql/reporting-services/xml-device-information-settings).  
+ For more information, see [XML device information settings](../device-info/xml-device-information-settings.md).  
   
   
 ## Next steps  
@@ -187,6 +187,6 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
  [Rendering Behaviors &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
  [Interactive Functionality for Different Report Rendering Extensions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
  [Rendering Report Items &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)  
+ [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../report-builder-tables-matrices-lists.md)  
   
   
