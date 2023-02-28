@@ -22,11 +22,11 @@ Ever want to put just a single live visual on a slide? Well, now it's super easy
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/share-visual-option.png" alt-text="Screenshot showing the share options for adding a visual to a PowerPoint slide.":::
 
-Check out the [documentation](./service-power-bi-powerpoint-add-in-install.md#get-the-url-of-a-visual) for more detail.
+Check out the [documentation](./service-power-bi-powerpoint-add-in-install.md#get-the-url-of-a-visual) for more detail!
 
 ### Enhance your presentations with Power BI data insights
 
-Power BI's data insights help you explore and find insights such as anomalies and trends as you consume and interact with your data. Now with the add-in, you can easily generate insights, which you can then either paste directly into your slide or copy to the clipboard for pasting elsewhere, such as in the slide's notes. [Learn more](./service-power-bi-powerpoint-add-in-view-present.md#enrich-your-presentation-with-data-insights).
+Power BI's data insights help you explore and find insights such as anomalies and trends as you consume and interact with your data. Now with the add-in, you can easily generate insights, which you can then either paste directly into your slide or copy to the clipboard for pasting elsewhere, such as in the slide's notes. [Learn more!](./service-power-bi-powerpoint-add-in-view-present.md#enrich-your-presentation-with-data-insights).
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/single-visual-and-insights-demo.gif" alt-text="Animated image showing how to add a data insight to a PowerPoint presentation":::
 
