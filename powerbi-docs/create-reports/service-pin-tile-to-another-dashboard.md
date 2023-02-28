@@ -22,7 +22,7 @@ One way to add a new [dashboard tile](../consumer/end-user-tiles.md) to a dashbo
 ## Prerequisites
 
 - You just need a [Power BI free license](../consumer/end-user-features.md) to edit dashboards in My Workspace in the Power BI service.
-- You need a Power BI Pro license to edit dashboards in other workspaces in the Power BI service. Read more about [Power BI Pro licenses](../fundamentals/service-self-service-signup-purchase-for-power-bi).
+- You need a Power BI Pro license to edit dashboards in other workspaces in the Power BI service. Read more about [Power BI Pro licenses](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
 - You also need at least a Contributor role in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - If you want to follow along, get the [IT Spend Analysis sample](sample-it-spend.md#get-the-built-in-sample) in the Power BI service.
 
