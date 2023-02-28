@@ -1,7 +1,7 @@
 ---
 title: "Export Power BI paginated report to XML (Power BI Report Builder) | Microsoft Docs"
 description: In Power BI Report Builder, the XML rendering extension renders a Power BI paginated report to XML format. Import XML into a database, use as a message, or send to applications.
-ms.date: 02/14/2023
+ms.date: 02/27/2023
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -43,7 +43,7 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
   
 -   Page headers and footers are not rendered.  
   
--   Hidden items that cannot be made visible by toggling are not rendered. Initially visible items and hidden items that can be made visible through a toggle are rendered.  
+-   Hidden items that can't be made visible by toggling aren't rendered. Initially visible items and hidden items that can be made visible through a toggle are rendered.  
   
 -   **Images, lines, and custom report items** are ignored.  
   
@@ -65,7 +65,7 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
   
   
 ##  <a name="XMLSpecificRenderingRules"></a> XML-Specific Rendering Rules  
- The following sections describe how the XML rendering extensions interprets the items within the report.  
+ The following sections describe how the XML rendering extensions interpret the items within the report.  
   
 ### Report Body  
  A report is rendered as the root element of the XML document. The name of the element comes from the DataElementName property set in the Properties pane.  
@@ -87,25 +87,25 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
  Text boxes are rendered as elements or attributes according to the DataElementStyle RDL property. The name of the element or attribute comes from the TextBox.DataElementName RDL property.  
   
 ### Charts, Data Bars, and Sparklines  
- Charts ,data bars, and sparklines are rendered in XML. The data is structured.  
+ Charts, data bars, and sparklines are rendered in XML. The data is structured.  
   
 ### Gauges and Indicators  
  Gauges and indicators are rendered in XML. The data is structured.  
   
 ### Subreports  
- A subreport is rendered as an element. The name of the element is taken from the DataElementName RDL property. The TextBoxesAsElements property setting of the report overrides that of the subreport. Namespace and XSLT attributes are not added to the subreport element.  
+ A subreport is rendered as an element. The name of the element is taken from the DataElementName RDL property. The TextBoxesAsElements property setting of the report overrides that of the subreport. Namespace and XSLT attributes aren't added to the subreport element.  
   
 ### Rectangles  
  A rectangle is rendered as an element. The name of the element is taken from the DataElementName RDL property.  
   
 ### Custom Report Items  
- CustomReportItems (CRI) are not visible to the rendering extension. If a custom report item exists in the report, the rendering extension renders it as a conventional report item.  
+ CustomReportItems (CRI) aren't visible to the rendering extension. If a custom report item exists in the report, the rendering extension renders it as a conventional report item.  
   
 ### Images  
- Images are not rendered.  
+ Images aren't rendered.  
   
 ### Lines  
- Lines are not rendered.  
+ Lines aren't rendered.  
   
   
 ### Tables, Matrices, and Lists  
@@ -115,20 +115,20 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
  Columns are rendered within rows.  
   
 #### Tablix Corner  
- The corner is not rendered. Only the contents of the corner are rendered.  
+ The corner isn't rendered. Only the contents of the corner are rendered.  
   
 #### Tablix Cells  
  Tablix cells are rendered as elements. The name of the element is taken from the cell's DataElementName RDL property.  
   
 #### Automatic Subtotals  
- Tablix automatic subtotals are not rendered.  
+ Tablix automatic subtotals aren't rendered.  
   
 #### Row and Column Items that Do Not Repeat with a Group  
  Items that do not repeat with a group, such as labels, subtotals and totals, are rendered as elements. The name of the element comes from the TablixMember.DataElementName RDL property.  
   
  The TablixMember.DataElementOutput RDL property controls whether a non-repeating item is rendered.  
   
- If the DataElementName property of the Tablix member is not provided, a name for the non-repeating item is dynamically generated in this form:  
+ If the DataElementName property of the Tablix member isn't provided, a name for the non-repeating item is dynamically generated in this form:  
   
  RowX   For non-repeating rows, where X is a zero-based row index within the current parent.  
   
@@ -136,7 +136,7 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
   
  A non-repeating header is rendered as a child of the row or column that does not repeat with a group.  
   
- If a non-repeating member has no corresponding Tablix cells, it is not rendered. This may occur in the case of a Tablix cell where it spans more than one column.  
+ If a non-repeating member has no corresponding Tablix cells, it isn't rendered. This may occur in the case of a Tablix cell where it spans more than one column.  
   
 #### Rows and Columns that Repeat with a Group  
  Rows and columns that repeat within a group are rendered according to Tablix.DataElementOutput rules. The name for the element is taken from the DataElementName property.  
