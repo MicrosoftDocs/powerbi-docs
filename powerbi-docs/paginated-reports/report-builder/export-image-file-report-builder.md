@@ -58,7 +58,7 @@ ms.reviewer: saurkumar
   
   
 ##  <a name="DeviceInfo"></a> Device information settings  
- You can change some default settings for this renderer by changing the device information settings. For more information, see [Image device information settings](/sql/reporting-services/image-device-information-settings).  
+ You can change some default settings for this renderer by changing the device information settings. For more information, see [Image device information settings](../device-info/image-device-information-settings).  
   
   
 ## Next steps  
