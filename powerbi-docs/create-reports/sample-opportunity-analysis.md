@@ -1,13 +1,13 @@
 ---
 title: 'Opportunity Analysis sample for Power BI: Take a tour'
-description: Learn how to get the Opportunity Analysis sample for Power BI, and take a tour of the features used in this sample.
+description: Learn how to get the Opportunity Analysis sample for Power BI. Take a tour of the features used in this sample.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/24/2023
+ms.date: 02/28/2023
 LocalizationGroup: Samples
 ---
 
@@ -49,17 +49,27 @@ Before you can use the sample, you must first get the sample in one of the follo
 
 1. On the **Learning center** page, under **Sample reports**, scroll until you see the **Opportunity Analysis Sample**.
 
-    :::image type="content" source="media/sample-opportunity-analysis/opportunity-sample-report.png" alt-text="Screenshot that shows the Opportunity Analysis sample under Sample Reports.":::
-
 1. Select the sample. It opens in Reading mode.
 
 1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
 
     :::image type="content" source="media/sample-opportunity-analysis/opportunity-entry.png" alt-text="Screenshot that shows the Opportunity Analysis sample entries in the workspace.":::
 
+    Select the dashboard to view the sample dashboard.
+
 ### Get the .pbix file for this sample
 
 Alternatively, you can download the Opportunity Analysis sample as a [.pbix file](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
+
+1. After you open the file in Power BI Desktop, select **File** > **Publish** > **Publish to Power BI** or choose **Publish** in the **Home** ribbon.
+
+1. In the **Publish to Power BI** dialog, choose a workspace and then **Select**.
+
+1. In the Power BI service, in your workspace, scroll down to the **Opportunity Analysis Sample** report and select to open.
+
+1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
+
+The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
 
 ### Get the Excel workbook for this sample
 
@@ -118,6 +128,7 @@ Note the following details:
 * In the **Opportunity Count by Sales Stage** bar chart, select each **Sales Stage** in turn to see the difference in regional count. Notice that although the East region has the largest opportunity count, all three regions in the Solution, Proposal, and Finalize sales stages have comparable counts. This result means we close a higher percent of deals in the Central and West regions.
 
 ### Revenue Analysis page
+
 This page takes a similar look at the data, but uses a revenue perspective instead of count.  
 
 :::image type="content" source="media/sample-opportunity-analysis/opportunity-4.png" alt-text="Screenshot that shows the Revenue Overview page.":::
@@ -132,6 +143,7 @@ Note the following details:
 Clearly our partners are doing a better job than non-partners selling to customers. It might make sense to funnel more deals through our partners.
 
 ### Opportunity Count by Region and Stage
+
 This page of the report looks at data similar to the data on the previous page but breaks it down by region and stage. 
 
 :::image type="content" source="media/sample-opportunity-analysis/opportunity-5.png" alt-text="Screenshot that shows the Opportunity Count by Region and Stage.":::
@@ -141,6 +153,7 @@ Note the following details:
 * Large opportunities are most common in the Central region, small opportunities are most common in the East region, and medium opportunities are most common in the West region.
 
 ### Upcoming Opportunities by Month page
+
 This page looks at similar factors, but from a date and time perspective. 
  
 :::image type="content" source="media/sample-opportunity-analysis/opportunity-6.png" alt-text="Screenshot that shows Upcoming Opportunities.":::
@@ -151,6 +164,15 @@ Note the following details:
 * Average revenue for the Finalize sales stage is the highest. Closing these deals is a top priority.
 * If you filter by month (by selecting a month in the **Month** slicer), you see that January has a high proportion of large deals in the Finalize sales stage with a factored revenue of $75 million. February, on the other hand, has mostly medium deals in the Solution and Proposal sales stages.
 * In general, the factored revenue numbers fluctuate based on sales stage, number of opportunities, and deal size. Add filters for these factors by using the **Filter** pane on the right to discover further insights.
+
+## Edit the report
+
+Select **Edit** in the **Power BI** header bar to explore in the editing view:
+
+- See how the pages are made, the fields in each chart, and the filters on the pages.
+- Add pages and charts, based on the same data.
+- Change the visualization type for each chart.
+- Pin charts of interest to your dashboard.
 
 ## Next steps
 
