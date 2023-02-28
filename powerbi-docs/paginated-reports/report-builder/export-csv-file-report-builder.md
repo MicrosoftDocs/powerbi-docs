@@ -20,7 +20,7 @@ ms.reviewer: saurkumar
   
  If you want to work with data related to charts, data bars, sparklines, gauges, and indicators in Microsoft Excel, export the report to a CSV file, and then open the file in Microsoft Excel.  
   
- See [Export Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/export-reports-report-builder-and-ssrs) for details on how to export to CSV format.  
+ See [Export reports &#40;Power BI Report Builder&#41;](../export-reports-report-builder.md) for details on how to export to CSV format.  
   
 > [!NOTE]  
 >  You can create and modify paginated report definition (.rdl) files in Power BI Report Builder.
