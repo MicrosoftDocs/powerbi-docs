@@ -97,9 +97,9 @@ The following table describes the resources and limits of each SKU. To determine
 
 ### [Embed for your organization](#tab/organization)
 
-By creating a capacity, you can take advantage of having a resource for the content in your app workspace. For paginated reports, you must back your app workspace with an *EM* or a *P* capacity. You can create a capacity by using [Power BI Premium](../../enterprise/service-premium-what-is.md).
+By creating a capacity, you can take advantage of having a resource for the content in your app workspace. For paginated reports, you must back your app workspace with an *EM* or a *P* capacity. You can create a capacity with [Power BI Premium](../../enterprise/service-premium-what-is.md).
 
-The following table lists the Power BI Premium SKUs that you can use to create a capacity for paginated reports in [Microsoft Office 365](../../enterprise/service-admin-premium-purchase.md):
+The following table lists the Power BI Premium SKUs that create a capacity for paginated reports in [Microsoft Office 365](../../enterprise/service-admin-premium-purchase.md):
 
 | Capacity node | V-cores | RAM (GB) | DirectQuery/live connection limits (per sec) |
 | --- | --- | --- | --- |
@@ -120,7 +120,7 @@ The following table lists the Power BI Premium SKUs that you can use to create a
 
 Once you create a capacity, assign your app workspace to that capacity.
 
-To assign a capacity to a workspace using a [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you're using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
+To assign a capacity to a workspace using a [service principal](embed-service-principal.md), work with the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you're using the Power BI REST APIs, make sure to work with the [service principal object ID](embed-service-principal.md).
 
 >[!NOTE]
 >You can also import paginated reports into a workspace using the [Power BI REST APIs](/rest/api/power-bi/imports/postimportingroup).
@@ -146,13 +146,13 @@ After you create a capacity, assign your workspace to that capacity. To complete
 You can create your paginated report using [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), and then [upload the report to the service](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
 
 >[!NOTE]
->The user who uploads the paginated report needs a Power BI Pro or Premium Per User (PPU) license to publish to a workspace.
+>The person who uploads the paginated report needs a Power BI Pro or Premium Per User (PPU) license to publish to a workspace.
 
 ## Step 5 - Embed content using the sample application
 
 ### [Embed for your customers](#tab/customers)
 
-Follow the steps in the [embed content for your customers](embed-sample-for-customers.md) tutorial. Skip [Step 4 - Create and publish a Power BI report](embed-sample-for-customers.md#step-4---create-and-publish-a-power-bi-report) and use the paginated report you uploaded, instead of the sample report suggested in the tutorial.
+Follow the steps in the [embed content for your customers](embed-sample-for-customers.md) tutorial. Skip [Step 4 - Create and publish a Power BI report](embed-sample-for-customers.md#step-4---create-and-publish-a-power-bi-report) and work with the paginated report you uploaded, instead of the sample report suggested in the tutorial.
 
 * To use a **Power BI dataset** as a data source:
 
@@ -168,7 +168,7 @@ Follow the steps in the [embed content for your customers](embed-sample-for-cust
 
 Follow the steps in the [embed content for your organization](embed-sample-for-your-organization.md) tutorial.
 
-Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organization.md#step-3---create-and-publish-a-power-bi-report) and use the paginated report you uploaded, instead of the sample report suggested in the tutorial.
+Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organization.md#step-3---create-and-publish-a-power-bi-report) and work with the paginated report you uploaded, instead of the sample report suggested in the tutorial.
 
 ---
 
@@ -176,16 +176,16 @@ Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organ
 
 ### [Embed for your customers limitations](#tab/customers)
 
-* You must use a **service principal**. You can't use a Master user.
-* You can't use [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
-* When you embed a paginated report with a Power BI dataset, two conditions apply. The paginated report and the Power BI dataset must reside in a Premium per capacity or Embedded workspace (they can reside in two different workspaces). The user who generates the embed token must have *Write* permissions in the workspaces of both the report and the dataset.
+* You must use a **service principal**. You can't have a master user.
+* You can't work with a [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
+* When you embed a paginated report with a Power BI dataset, two conditions apply. The paginated report and the Power BI dataset must reside in a Premium per capacity or Embedded workspace (they can reside in two different workspaces). The person who generates the embed token must have *Write* permissions in the workspaces of both the report and the dataset.
 * You can't currently embed a paginated report connected to Azure Analysis Services with single sign-on (SSO) enabled.
 
 For a full list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md#natively-supported-data-sources).
 
 ### [Embed for your organization limitations](#tab/organization)
 
-You can use [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml). But if you're using PPU, only PPU users in your organization are able to access your solution.
+You can work with a [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml), but if you do, only PPU users in your organization are able to access your solution.
 
 ---
 
