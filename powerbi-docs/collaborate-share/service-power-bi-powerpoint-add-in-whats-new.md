@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 02/26/2023
+ms.date: 02/28/2023
 ---
 
 # What's new in the Power BI add-in for PowerPoint
@@ -18,15 +18,17 @@ ms.date: 02/26/2023
 
 ### Add individual live Power BI visuals to your PowerPoint slides
 
-Ever want to put just a single live visual on a slide? Well, now it's super easy. [Check out how!](./service-power-bi-powerpoint-add-in-install.md#get-the-url-of-a-visual).
+Ever want to put just a single live visual on a slide? Well, now it's super easy. Just right click on the visual you want to insert and choose **Share > Open in PowerPoint**, or do the same from the **More options (...)** menu.
+
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/share-visual-option.png" alt-text="Screenshot showing the share options for adding a visual to a PowerPoint slide.":::
+
+Check out the [documentation](./service-power-bi-powerpoint-add-in-install.md#get-the-url-of-a-visual) for more detail.
 
 ### Enhance your presentations with Power BI data insights
 
 Power BI's data insights help you explore and find insights such as anomalies and trends as you consume and interact with your data. Now with the add-in, you can easily generate insights, which you can then either paste directly into your slide or copy to the clipboard for pasting elsewhere, such as in the slide's notes. [Learn more](./service-power-bi-powerpoint-add-in-view-present.md#enrich-your-presentation-with-data-insights).
 
-### National cloud support
-
-The Power BI add-in for PowerPoint is now supported in national clouds as an admin-managed add-in. Admin's should see [Deploying the add-in in national clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-national-clouds) for further details.
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/single-visual-and-insights-demo.gif" alt-text="Animated image showing how to add a data insight to a PowerPoint presentation":::
 
 ## Next Steps
 

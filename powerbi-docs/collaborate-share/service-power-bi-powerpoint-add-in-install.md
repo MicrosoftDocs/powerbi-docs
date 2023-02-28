@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 02/26/2023
+ms.date: 02/28/2023
 ---
 
 # Add live Power BI data to PowerPoint
