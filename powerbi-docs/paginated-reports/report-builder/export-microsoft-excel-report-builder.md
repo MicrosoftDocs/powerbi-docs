@@ -19,7 +19,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
  You can change some default settings for this renderer by changing the device information settings. For more information, see [Excel device information settings](../device-info/excel-device-information-settings.md).  
   
- See [Export reports &#40;Power BI Report Builder&#41;](../export-reports-report-builder.md) for details on how to export to Excel.  
+ See [Export reports &#40;Power BI Report Builder&#41;](export-reports-report-builder.md) for details on how to export to Excel.  
   
 > [!IMPORTANT]  
 >  When you define a parameter of type **String**, the user is presented with a text box that can take any value. If a report parameter is not tied to a query parameter and the parameter values are included in the report, it is possible for a report user to type expression syntax, script, or a URL into the parameter value, and render the report to Excel. If another user then views the report and selects the rendered parameter contents, the user may inadvertently execute the malicious script or link.  
@@ -139,7 +139,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
  Charts, sparklines, data bars, maps, gauges, and indicators are exported as pictures. The data they depict, such as the value and member labels for a chart, is not exported with them and is not available in the Excel workbook unless it is included in a column or row in a data region within a report.  
   
- If you want to work with chart, sparkline, data bar, maps, gauge, and indicator data, export the report to a .csv file from the report. For more information, see [Exporting to a CSV file &#40;Power BI Report Builder&#41;](../export-csv-file-report-builder.md).  
+ If you want to work with chart, sparkline, data bar, maps, gauge, and indicator data, export the report to a .csv file from the report. For more information, see [Exporting to a CSV file &#40;Power BI Report Builder&#41;](export-csv-file-report-builder.md).  
   
 ## Page sizing  
  The Excel rendering extension uses the page height and width settings to determine what paper setting to define in the Excel worksheet. Excel tries to match the PageHeight and PageWidth property settings to one of the most common paper sizes.  
