@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Workspace-level workspace planning"
 description: "This article introduces the Power BI workspace tactical planning decisions you should make at the workspace level."
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
