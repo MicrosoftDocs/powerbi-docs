@@ -20,12 +20,12 @@ It’s easy to create Power BI reports in Microsoft Teams. This article has a fe
 
 ## Create an automatic report from data you have
 
-Say you have a table with data that you'd like to try visualizing in Power BI, maybe from Excel. To create your first report, follow these steps.
+If you have a table with data, such as an Excel spreadsheet, you'd like to try visualizing in Power BI, follow these steps to create your report.
 
 1. Copy the table of data.
 1. Open the Power BI app for Microsoft Teams.
 
-    Need to install the Power BI app first? [install the app and then pin it](../collaborate-share/service-microsoft-teams-app.md#install-the-power-bi-app) to the Teams navigation pane.
+    Need to install the Power BI app? [Install the app, then pin it](../collaborate-share/service-microsoft-teams-app.md#install-the-power-bi-app) to the Teams navigation pane.
 
 1. Select the **Create** tab.
 1. Select **Paste or manually enter data**.
@@ -87,39 +87,40 @@ It's easy to find all the datasets your organization has shared with you. They�
 1. Go to the **Data hub** tab.
 1. Select a dataset from the list or from the recommended datasets.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-tab.png" alt-text="Select a dataset from the list or from recommended datasets.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-tab.png" alt-text="Screenshot showing the Data hHub tab selected with the recommended datasets and a list of datasets.":::
 
 1. Explore the **Dataset details** page.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-details.png" alt-text="Explore the Dataset details page.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-details.png" alt-text="Screenshot of the Dataset details page and related reports.":::
 
     - Discover pre-built reports that use the dataset.
-    - Create a report in Power BI from the dataset with **Create from scratch**.
-    - Create an Excel workbook connected to the dataset with Analyze in Excel.
+    - Create a report in Power BI from the dataset with **Create a report**.
+    - Share data and give people access to the dataset to work.
+    - Select a table or column to export data or select more than one table to create a paginated report.
 
 When you find interesting reports relevant to your team, bring them into your collaboration by adding them to channels, meetings, and chats as tabs or in a conversation.
 
 ## Enhance reports in the Power BI service and in Teams
 
-It’s easy to keep working on your reports, right in the Power BI service and in Power BI in Teams. Take advantage of the artificial intelligence capabilities built into Power BI.
+It’s easy to keep working on your reports right in the Power BI service and Power BI in Teams. Take advantage of the artificial intelligence capabilities built into Power BI.
 
 ### Q&A visual
 
-For example, ask a question of your data by adding a *Q&A visual*, where you can ask natural language questions and get answers in the form of a visual.
+For example, ask a question about your data by adding a *Q&A visual*, where you can ask natural language questions and get answers in the form of a visual.
 
 1. In the Visualizations pane, select the **Q&A** icon.
 
-    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-qna-visual-icon.png" alt-text="Select the Q&A visual icon.":::
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-qna-visual-icon.png" alt-text="Screenshot of Visualization pane with Q&A visual icon selected.":::
 
-    Power BI generates a list of suggested questions you can choose from, or type your own.
+    Power BI generates a list of suggested questions you can choose from or type your own.
 
-    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-qna-visual.png" alt-text="Q&A visual with list of suggested questions.":::
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-qna-visual.png" alt-text="Screenshot of a Visualization pane with the Q&A visual selected and a list of suggested questions.":::
 
 1. If you like the visual that Power BI created, you can convert it from a Q&A visual to a standard visual on the page.
 
-    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-pin-qna-visual.png" alt-text="Convert it from a Q&A visual to a standard visual on the page.":::
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-pin-qna-visual.png" alt-text="Screenshot of a Q&A result with the Convert Q&A visual icon highlighted.":::
 
-Read more about [creating Q&A visuals](../visuals/power-bi-visualization-q-and-a.md).
+For more information, see [Create a Q&A visual in a report in Power BI](../visuals/power-bi-visualization-q-and-a.md).
 
 ### Smart narrative visual
 
@@ -127,24 +128,28 @@ You can also easily create a *smart narrative* visual, a dynamically generated t
 
 1. In the Visualizations pane, select the **Smart narrative** visual icon.
 
-    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-smart-narrative-visual-icon.png" alt-text="Select the Smart narrative visual icon.":::
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-smart-narrative-visual-icon.png" alt-text="Screenshot of a Visualization pane with the Smart narrative visual icon selected.":::
 
     Power BI generates a text description of key takeaways in your report.
 
-    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-smart-narrative-visual.png" alt-text="Power BI generates a text description of key takeaways in your report.":::
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-smart-narrative-visual.png" alt-text="Screenshot of visuals and the text description dialog box generated wit the Smart narrative.":::
 
-1. You can edit the visual, changing the way it looks and also the inline values it generates.
+1. You can edit the visual, change the way it looks, and the inline values it generates.
 
-Here's a tutorial about [creating smart narrative visuals](../visuals/power-bi-visualization-smart-narrative.md).
+For more information, see [Create smart narrative summaries](../visuals/power-bi-visualization-smart-narrative.md).
 
 ## Create sophisticated reports in Power BI Desktop
 
-Power BI Desktop is a downloadable Windows app you can use to make more sophisticated reports. It's like PowerPoint, but it uses data visualizations to help you find insights in your data. Power BI Desktop also has powerful capabilities like data import, cleaning, modeling, and much more.
+Power BI Desktop is a downloadable Windows app to make sophisticated reports. It's like PowerPoint, but it uses data visualizations to help you find insights into your data. Power BI Desktop has powerful capabilities like data import, cleaning, modeling, and much more.
 
 To get started with Power BI Desktop, follow these steps.
 
-1. To install Power BI Desktop, this link takes you directly to the [Power BI Desktop page](https://aka.ms/pbidesktopstore) of the Microsoft Store.
-1. Create a report in Power BI Desktop. In this sample tutorial, you prepare and model your data, both tasks you can't do in a report in the Power BI service. Then you create a report based on the model you've created.
+1. Install Power BI Desktop. You can download it from the Microsoft Store.
+
+   > [!div class="nextstepaction"]
+   > [Get Power BI Desktop](https://aka.ms/pbidesktopstore)
+
+1. Create a report in Power BI Desktop. In the following sample tutorial, you prepare and model your data. Then create a report based on the model you've created. Note that you can't do both of the tasks in a report in the Power BI service.
 
     [From dimensional model to stunning report in Power BI Desktop](../create-reports/desktop-dimensional-model-report.md)
 
@@ -154,7 +159,7 @@ To get started with Power BI Desktop, follow these steps.
 ## Next steps
 
 - [Add the Power BI app to Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md)
-- [Use data to make better meetings in Microsoft Teams](business-user-teams-meetings.md)
+- [Use data to make meetings productive in Microsoft Teams](business-user-teams-meetings.md)
 - [Use Power BI metrics to improve results in Microsoft Teams](business-user-teams-goals.md)
-- [Share a data-driven discussion in Microsoft Teams](business-user-teams-share-data.md)
+- [Lead data-driven discussions in Microsoft Teams](business-user-teams-share-data.md)
 - [Analyze your Teams collaboration data](business-user-teams-collaboration-data.md)
