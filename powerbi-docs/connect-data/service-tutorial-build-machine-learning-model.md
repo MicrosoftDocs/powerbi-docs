@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Build a machine learning model in Power BI'
-description: In this tutorial you build a Machine Learning model in Power BI.
+description: Follow this tutorial to learn how to build and use a machine learning model in Power BI.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -28,23 +28,23 @@ This tutorial consists of the following steps:
 
 ## Create a dataflow with the input data
 
-First, create a dataflow with input data by taking the following steps.
+Create a dataflow with input data by taking the following steps.
 
 ### Get data
 
 The first step in creating a dataflow is to have your data sources ready. In this case, you use a machine learning dataset from a set of online sessions, some of which culminated in a purchase. The dataset contains a set of attributes about these sessions, which you use to train your model.
 
-You can download the dataset from the UC Irvine website or by downloading the [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv). Later in this tutorial, you import the dataset by specifying its URL.
+You can download the dataset from the UC Irvine website or by downloading the [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv). Later in this tutorial, you connect to the dataset by specifying its URL.
 
 ### Create the entities
 
 To create the entities in your dataflow, sign into the Power BI service and navigate to a workspace on your capacity that has AI enabled.
 
-1. If you don't have a workspace, create one by selecting **Workspaces** in the Power BI left navigation pane and selecting **New workspace**. In the **Create a workspace** panel, enter a workspace name and select **Advanced**. Under **License mode**, select **Premium per capacity** and confirm that the workspace uses a capacity instance that has the AI preview turned on. Then select **Save**.
+1. If you don't have a workspace, create one by selecting **Workspaces** in the Power BI left navigation pane and selecting **Create a workspace**. In the **Create a workspace** panel, enter a workspace name and select **Save**.
 
    ![Screenshot of how to create a workspace.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-01.png)
 
-1. Select **New** at the top of the workspace, and then select **Dataflow**.
+1. Select **New** at the top of the new workspace, and then select **Dataflow**.
 
    ![Screenshot of how to create a dataflow.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-03.png)
 
