@@ -1,13 +1,13 @@
 ---
 title: 'Supplier Quality Analysis sample for Power BI: Take a tour'
-description: Learn how to get the Supplier Quality Analysis sample for Power BI, and take a tour of the features used in this sample.
+description: Learn how to get the Supplier Quality Analysis sample for Power BI. Take a tour of the features used in this sample.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/27/2023
+ms.date: 02/28/2023
 LocalizationGroup: Samples
 ---
 
@@ -32,7 +32,7 @@ You don't need a Power BI license to explore the sample in Power BI Desktop. You
 
 ## Get the sample
 
-Before you can use the sample, you must first get the sample in one of the following ways:
+Before you can use the sample, get the sample in one of the following ways:
 
 - Get the [built-in sample in the Power BI service](#get-the-built-in-sample).
 - Download the [.pbix file](#get-the-pbix-file-for-this-sample).
@@ -44,17 +44,27 @@ Before you can use the sample, you must first get the sample in one of the follo
 
 1. On the **Learning center** page, under **Sample reports**, scroll until you see the **Supplier Quality Analysis Sample**.
 
-    :::image type="content" source="media/sample-supplier-quality/supplier-quality-sample-report.png" alt-text="Screenshot that shows the Supplier Quality Analysis sample under Sample Reports.":::
-
 1. Select the sample. It opens in Reading mode.
 
 1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
 
     :::image type="content" source="media/sample-supplier-quality/supplier-quality-entry.png" alt-text="Screenshot that shows the Opportunity Analysis sample entries in the workspace.":::
 
+    Select the dashboard to view the sample dashboard.
+
 ### Get the .pbix file for this sample
 
 Alternatively, you can download the Supplier Quality Analysis sample as a [.pbix file](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), which is designed for use with Power BI Desktop.
+
+1. After you open the file in Power BI Desktop, select **File** > **Publish** > **Publish to Power BI** or choose **Publish** in the **Home** ribbon.
+
+1. In the **Publish to Power BI** dialog, choose a workspace and then **Select**.
+
+1. In the Power BI service, in your workspace, scroll down to the **Supplier Quality Analysis Sample** report and select to open.
+
+1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
+
+The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
 
 ### Get the Excel workbook for this sample
 
@@ -195,7 +205,7 @@ Let's look at another dashboard tile related to total defective quantity.
 
    Other than a jump in downtime minutes during June and October, the number of defects didn't result in significantly more downtime. This result shows we're managing defects well.  
 
-3. To pin this chart to your dashboard, select the pin icon ![Pin icon.](media/sample-supplier-quality/pin.png) above the question box.  
+3. To pin this chart to your dashboard, select the pin icon :::image type="icon" source="media/sample-supplier-quality/pin.png"::: above the question box.
 
 4. To explore the outlier months, check out the downtime minutes during October by material type, plant location, category, and so on, by asking questions such as *total downtime minutes in October by plant*.
 
