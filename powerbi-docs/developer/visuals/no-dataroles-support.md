@@ -41,7 +41,7 @@ With the *no data binding* feature, the formatting settings are enabled even if 
 ## How to create a visual that doesn't require data binding
 
 > [!NOTE]
-> This feature is available from [API version 3.6.0](changelog.md#api-v360) and above.
+> This feature is available from [API version 3.6.0](changelog.md#api-v360) and above. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 To enable the No data binding feature, set the following two parameters in the *capabilities.json* file to `true`.
 

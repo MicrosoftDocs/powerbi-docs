@@ -28,6 +28,7 @@ To help organizations detect and protect their sensitive data, Power BI supports
 * Custom sensitive info types of the type *Keyword list* and *Keyword dictionary* are currently not supported when using DLP policies for the Power BI location.
 * [Exact data match (EDM) classifiers](/microsoft-365/compliance/sit-learn-about-exact-data-match-based-sits) are not supported by DLP for Power BI. If you select an EDM classifier in the condition of a policy, the policy will yield no results even if the dataset does in fact contain data that satisfies the EDM classifier.
 * Currently, DLP policies for Power BI don't support scanning for sensitive info types in data stored in the Southeast Asia region. See [How to find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#how-to-find-the-default-region-for-your-organization) to learn how to find your organization's default data region.
+* DLP policies for Power BI aren't supported in the China North region.
 
 ## Licensing and permissions
 

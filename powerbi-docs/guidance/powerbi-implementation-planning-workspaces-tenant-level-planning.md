@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Tenant-level workspace planning"
 description: "This article introduces the Power BI workspace strategic planning decisions you should make at the tenant level."
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
