@@ -17,7 +17,10 @@ The **file download API** lets users download data from a custom visual into a f
 :::image type="content" source="./media/file-download-api/custom-visuals-download-admin-setting.png" alt-text="Screenshot of admin setting enabling custom visual downloads.":::
 
 >[!NOTE]
->The **file download API** is available from API version 4.5.
+>The **file download API** has two methods:
+>
+> * [`exportVisualsContent`](#the-exportvisualscontent-method) is available from API version 4.5
+> * [`exportVisualsContentExtended`](#the-exportvisualscontentextended-method) is available from API version 5.3.
 
 Use the **file download API** to export to files of the following types:
 

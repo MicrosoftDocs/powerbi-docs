@@ -1,22 +1,22 @@
 ---
 title: High-contrast mode support in Power BI visuals
-description: This article describes how to add high-contrast mode support to Power BI visuals.
+description: Learn how to add high-contrast mode support to Power BI visuals, and see implemented image and code examples.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/06/2022
+ms.date: 01/11/2023
 ---
 
 # High-contrast mode support in Power BI visuals
 
-The Windows *high-contrast* setting makes text and graphics easier to see by displaying more distinct colors. This article discusses how to add high-contrast mode support to Power BI visuals. For more information, see [high-contrast support in Power BI](../../create-reports/desktop-accessibility-creating-reports.md#high-contrast-color-view).
+The Windows *high-contrast* setting makes text and graphics easier to see by displaying more distinct colors. This article discusses how to add high-contrast mode support to Power BI visuals. For more information, see [High-contrast support in Power BI](../../create-reports/desktop-accessibility-creating-reports.md#high-contrast-color-view).
 
-To view an implementation of high-contrast support, go to the [`PowerBI-visuals-sampleBarChart` visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6).
+To view an implementation of high-contrast support, go to the [PowerBI-visuals-sampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6).
 
-To display a visual in high-contrast mode you have to:
+To display a visual in high-contrast mode, you have to:
 
 * Detect high-contrast mode and colors upon [initialization](#initialization).
 * Draw the visual correctly on [implementation](#implementation).
@@ -27,7 +27,7 @@ The *colorPalette* member of `options.host` has several properties for high-cont
 
 * Detect that Power BI is in high-contrast mode
 
-    If `host.colorPalette.isHighContrast` is `true`, high-contrast mode is active and the visual should draw itself accordingly.
+    If `host.colorPalette.isHighContrast` is `true`, high-contrast mode is active, and the visual should draw itself accordingly.
 
 * Get high-contrast colors
 
@@ -35,11 +35,11 @@ The *colorPalette* member of `options.host` has several properties for high-cont
 
   * **Foreground** color is used to draw any lines, icons, text, and outline or fill of shapes.
   * **Background** color is used for background, and as the fill color of outlined shapes.
-  * **Foreground - selected** color is used to indicate a selected or active element.
+  * **Foreground-selected** color is used to indicate a selected or active element.
   * **Hyperlink** color is used only for hyperlink text.
 
     > [!NOTE]
-    > If a secondary color is needed, foreground color may be used with some opacity (Power BI native visuals use 40% opacity). Use this sparingly to keep the visual details easy to see.
+    > If a secondary color is needed, the foreground color can be used with some opacity (Power BI native visuals use 40% opacity). Use this sparingly to keep the visual details easy to see.
 
 During initialization, you can store the following values in your `constructor` method:
 
@@ -65,7 +65,7 @@ constructor(options: VisualConstructorOptions) {
     }
 ```
 
-Or you can store the `host` object during initialization and access the relevant `colorPalette` properties during update.
+Or, you can store the `host` object during initialization and access the relevant `colorPalette` properties during an update.
 
 ## Implementation
 
@@ -74,31 +74,31 @@ The specific implementations of high-contrast support vary from visual to visual
 Power BI native visuals follow these guidelines:
 
 * All data points use the same color (foreground).
-* All text, axes, arrows, lines, and so on, use the foreground color.
-* Thick shapes are drawn as outlines, with thick strokes (at least two pixels) and background color fill.
+* All text, axes, arrows, and lines use the foreground color.
+* Thick shapes are drawn as outlines with thick strokes (at least two pixels) and background color fill.
 * When data points are relevant, they're distinguished by different marker shapes, and data lines are distinguished by different dashing.
 * When a data element is highlighted, all other elements change their opacity to 40%.
-* For slicers and active filter elements use foreground-selected color.
+* For slicers and active filter elements, use the foreground-selected color.
 
-The following sample bar chart, for example, is drawn with two pixels of thick foreground outline and background fill. Compare the way it looks with default colors and with a couple of high-contrast themes:
+The following sample bar chart is drawn with two pixels of thick foreground outline and background fill. Compare the way it looks with default colors and with the following high-contrast themes:
 
 ### [Standard colors](#tab/Standard)
 
-:::image type="content" source="media/high-contrast-support/hc-samplebarchart-standard.png" alt-text="Screenshot of sample Bar Chart using standard colors.":::
+:::image type="content" source="media/high-contrast-support/hc-samplebarchart-standard.png" alt-text="Screenshot of a sample Bar Chart using standard colors.":::
 
-### [High contrast-dark color theme](#tab/Dark)
+### [High-contrast dark color theme](#tab/Dark)
 
-:::image type="content" source="media/high-contrast-support/hc-samplebarchart-dark2.png" alt-text="Screenshot of sample Bar Chart using Dark #2 color theme.":::
+:::image type="content" source="media/high-contrast-support/hc-samplebarchart-dark2.png" alt-text="Screenshot of a sample Bar Chart using the Dark #2 color theme.":::
 
-### [High contrast-white color theme](#tab/White)
+### [High-contrast white color theme](#tab/White)
 
-:::image type="content" source="media/high-contrast-support/hc-samplebarchart-white.png" alt-text="Screenshot of sample Bar Chart using White color theme.":::
+:::image type="content" source="media/high-contrast-support/hc-samplebarchart-white.png" alt-text="Screenshot of a sample Bar Chart using the White color theme.":::
 
 ---
 
 ## Example
 
-The following code shows one place in the `visualTransform` function that was changed to support high-contrast. It's called as part of rendering during the update. For the full implementation of this code see the `barChart.ts` file in the [`PowerBI-visuals-sampleBarChart` visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6).
+The following code shows one place in the `visualTransform` function that was changed to support high-contrast. It's called as part of rendering during the update. For the full implementation of this code, see the `barChart.ts` file in the [PowerBI-visuals-sampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6).
 
 ### [No high-contrast support](#tab/NoHighContrast)
 

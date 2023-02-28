@@ -43,6 +43,8 @@ Review the following list of limitations before using the *push datasets* APIs.
 
 * 75 max relationships
 
+* Doesn't work with service principal profiles
+
 ## Next steps
 
 * [Power BI REST APIs](/rest/api/power-bi/).
