@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 02/06/2023
+ms.date: 02/28/2023
 LocalizationGroup: Ask questions of your data
 ---
 # Create Q&A featured questions for Power BI dashboards
@@ -18,14 +18,20 @@ If you have edit permission for a dataset, you can add your own featured questio
 
 > [!NOTE]
 > Q&A featured questions are available for use in the [Microsoft Power BI app on iPads, iPhones, and iPod Touch devices](../consumer/mobile/mobile-apps-ios-qna.md) and in the Power BI service (app.powerbi.com). Creating the questions is only available in the Power BI service.
->
+
+## Prerequisites
+
+- You just need a [Power BI free license](../consumer/end-user-features.md) to add featured questions to a dataset in My Workspace in the Power BI service.
+- You need a Power BI Pro license to add featured questions in other workspaces in the Power BI service. Read more about [Power BI Pro licenses](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
+- You also need at least a Contributor role in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
+- If you want to follow along, get the [Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample) in the Power BI service.
 
 ## Create a featured question
 
-This article uses the [Retail Analysis sample](sample-retail-analysis.md). Follow these step-by-step instructions to explore a dataset.
+This article uses the Retail Analysis sample. Follow these step-by-step instructions to explore a dataset.
 
 1. On the dashboard, select the **Ask a question about your data** Q&A question box. Notice that Q&A is already being helpful by displaying some suggested questions.
-1. To create a featured question, in Power BI, select the **More options** ellipsis, select **Settings** > **Settings**.
+1. To create a featured question, in Power BI, select **More options** (...), select **Settings** > **Settings**.
 
    :::image type="content" source="media/service-q-and-a-create-featured-questions/gear-icon-2.png" alt-text="Screenshot of Power BI, highlighting Settings and Settings.":::
 1. Select **Datasets** > **Retail Analysis sample** > **Featured Q&A questions**.
