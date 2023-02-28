@@ -20,7 +20,7 @@ Want to improve Quick Insights results? If you're a dataset owner, try these sug
 * Use a mix of data types such as names, times, dates, and numbers.
 * Avoid or hide columns with duplicate information. Duplicate data takes valuable time away from searching for meaningful patterns. For example, one column with state names spelled out and another column with state name abbreviations.
 * Do you get an error message stating that your data isn't statistically significant? Quick Insights might generate that message in one of these instances:
-  * Data models with models that are simple.
+  * Data models that are simple.
   * Data models that don't have much data.
   * Data models that don't have date or numeric columns.
 
