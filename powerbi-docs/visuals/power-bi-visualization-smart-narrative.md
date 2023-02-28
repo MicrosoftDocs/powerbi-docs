@@ -1,13 +1,13 @@
 ---
-title: Smart narratives tutorial
-description: 'Tutorial: Create smart narrative summary visualizations in Power BI'
+title: Create smart narrative summaries
+description: 'Create smart narrative visualizations in Power BI to provide a quick text summary of visuals and reports.'
 author: aphilip94
 ms.author: anphil
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 06/29/2022
+ms.date: 02/22/2023
 ms.custom: video-01UrT-z37sw, sample-2020SU09-Blog-Demo
 LocalizationGroup: Visualizations
 ---
@@ -15,35 +15,55 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-The smart narrative visualization helps you quickly summarize visuals and reports. It provides relevant innovative insights that you can customize.
+The smart narrative visualization helps you provide a quick text summary of visuals and reports. It provides relevant innovative insights that you can customize.
 
 :::image type="content" source="media/power-bi-visualization-smart-narratives/1.png" alt-text="Screenshot showing a smart narrative summary on the right side of a report.":::
 
-Use smart narrative summaries in your reports to address key takeaways, to point out trends, and to edit the language and format for a specific audience. In PowerPoint, instead of pasting a screenshot of your report's key takeaways, you can add narratives that are updated with every refresh. Your audience can use the summaries to understand the data, get to key points faster, and explain the data to others.
+Use smart narrative summaries in your reports to address key takeaways, to point out trends, and to edit the language and format for a specific audience. When you [add a live Power BI report page to PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-view-present.md), instead of pasting a screenshot of your report's key takeaways, you can add narratives that update with every refresh. Your audience can use the summaries to understand the data, get to key points faster, and explain the data to others.
 
-## Get started 
-Watch Justyna show you how to use smart narratives, then try it out yourself using the tutorial, below the video.
+This article describes how to add:
+
+- [A smart narrative for a page](#smart-narrative-for-a-page)
+- [A smart narrative for a visual](#smart-narrative-for-a-visual)
+- [A smart narrative *icon* to a visual](#add-a-smart-narrative-icon-to-a-visual)
+
+## Watch the video
+
+Watch Justyna show how to use smart narratives, then try it out yourself using the sample file, below the video.
 
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/01UrT-z37sw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-To follow along in Power BI Desktop, open the [sample online-sales scenario dataset](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix). If you'd like to use the Power BI service, you can follow along using a different dataset of your choosing.
+## Get started 
 
-Choose the **Products** tab, then select the **Smart narrative** icon in the **Visualizations** pane to automatically generate a summary.
+To follow along in Power BI Desktop, download the [sample online-sales scenario dataset](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix).
 
-:::image type="content" source="media/power-bi-visualization-smart-narratives/3-narrative-icon.png" alt-text="Screenshot showing the Visualizations pane. The Smart narrative icon is selected.":::
+To follow along in the Power BI service, download the sample. Go to the workspace where you want to save the sample, and select **Upload**. To create a smart narrative for a page or for a visual, you need to open the sample in Edit mode.
 
-You'll see a narrative that's based on all of the visuals on the page. For example, in the sample file, smart narratives can automatically generate a summary of the report's visuals that address revenue, website visits, and sales. Power BI automatically analyzes trends to show that revenue and visits have both grown. It even calculates growth, which in this case is 72 percent.
+## Smart narrative for a page
 
-:::image type="content" source="media/power-bi-visualization-smart-narratives/4-select-icon.gif" alt-text="Animation showing how to create a smart narrative summary.":::
+On the **Products** page of the report, you see it already has a smart narrative visual. You can recreate it.
 
-To generate a smart narrative of a visualization, right-click it and then select **Summarize**. For example, in the sample file, try summarizing a scatter chart that shows various transactions. Power BI analyzes the data and shows which city or region has the highest revenue per transaction and the highest number of transactions. The smart narrative also shows the expected range of values for these metrics. You see that most cities produce less than $45 per transaction and have fewer than 10 transactions.
+1. Delete the smart narrative visual.
+1. Select the report canvas, then in the **Visualizations** pane, select the **Smart narrative** icon to automatically generate a summary.
+
+    :::image type="content" source="media/power-bi-visualization-smart-narratives/3-narrative-icon.png" alt-text="Screenshot showing the Visualizations pane with the Smart narrative icon selected.":::
+
+    You see a narrative that's based on all of the visuals on the page. For example, in the sample file, smart narratives can automatically generate a summary of the report's visuals that address revenue, website visits, and sales. Power BI automatically analyzes trends to show that revenue and visits have both grown. It even calculates growth, which in this case is 72 percent.
+
+    :::image type="content" source="media/power-bi-visualization-smart-narratives/4-select-icon.gif" alt-text="Animation showing how to create a smart narrative summary.":::
+
+## Smart narrative for a visual
+
+1. Right-click the visual and select **Summarize**.
+1. You can choose to pin the summary to the report page.
+
+For example, the Transactions page in the sample file has a summary of the scatter chart that shows various transactions. Power BI analyzes the data and shows which city or region has the highest revenue per transaction and the highest number of transactions. The smart narrative also shows the expected range of values for these metrics. You see that most cities produce less than $45 per transaction and have fewer than 10 transactions.
 
 :::image type="content" source="media/power-bi-visualization-smart-narratives/5.gif" alt-text="Animation showing a smart narrative that summarizes a scatter chart.":::
 
- 
 ## Edit the summary
  
 The smart narrative summary is highly customizable. You can edit or add to the existing text by using the text box commands. For example, you can make the text bold or change its color.
@@ -89,7 +109,20 @@ You can also do more advanced filtering. For example, in the sample file, look a
 :::image type="content" source="media/power-bi-visualization-smart-narratives/12.gif" alt-text="Screenshot showing how to select a trend line to filter the summary to show only that trend.":::
 
 There's a limit to the number of summaries that can be generated so Smart Narratives picks the most interesting things to summarize about the visual. Smart Narratives generates up to four summaries per visual and up to 16 per page. The summaries that are generated for a page depend on the location and size of visuals and it avoids generating the same kind of summaries for different visuals. Therefore summarizing just the visual can generate more summaries that aren't present while summarizing the whole page.
-   
+
+## Add a smart narrative icon to a visual
+
+You can add an optional icon to the header of a visual that triggers an on-demand summary of the visual contents. Add it for accessibility purposes, to announce results to any assistive technology. You can enable it in the **Format** pane for individual visuals, or add it to your custom theme file for the visual types you choose.
+
+1. Select a visual, and in the **Format** pane, select **General**.
+1. Expand the **Header icons** section, then expand the **Icons** section, and set **Smart narrative** to **On**.
+
+    :::image type="content" source="media/power-bi-visualization-smart-narratives/visual-smart-narrative-icon-on.png" alt-text="Screenshot showing how to set the Smart narrative icon to On.":::
+
+When your report readers hover over that visual, they can see and select the **Smart narrative** icon, to expose a text explanation of the visual. Unlike the other smart narratives, they can't pin this narrative to the report.
+
+:::image type="content" source="media/power-bi-visualization-smart-narratives/visual-smart-narrative-icon-selected.png" alt-text="Screenshot showing selecting the Smart narrative icon.":::
+
 ## Considerations and limitations
 
 The smart narrative feature doesn't support the following functionality:

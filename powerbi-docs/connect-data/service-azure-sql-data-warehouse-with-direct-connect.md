@@ -8,7 +8,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.reviewer: ""
 ms.custom: ""
-ms.date: 01/31/2023
+ms.date: 02/22/2023
 LocalizationGroup: Data from databases
 ---
 
@@ -36,23 +36,7 @@ The easiest way to move between your Synapse Analytics and Power BI is to create
 
 ## Connect through Power BI Desktop
 
-You can connect to an Azure Synapse Analytics using the **Get data** button in Power BI Desktop.
-
-1. Select the **Get data** button from the **Home** menu, and then choose **Azure**.
-
-    :::image type="content" source="media/service-azure-sql-data-warehouse-with-direct-connect/get-data-azure.png" alt-text="Screenshot of the get data menu with get data, Azure, Azure Synapse Analytics SQL, and connect highlighted.":::
-
-2. Select **Azure Synapse Analytics**, choose **Connect**.
-
-3. In the window that appears, enter your Server and optionally the Database to which you want to connect. You can also select your data connectivity mode: Import or DirectQuery. For real-time access to information in your Azure Synapse Analytics, use DirectQuery.
-
-    :::image type="content" source="media/service-azure-sql-data-warehouse-with-direct-connect/sql-server-database-dialog.png" alt-text="Screenshot of the SQL Server database dialog.":::
-
-4. For advanced options for the Azure Synapse Analytics connection, select the arrow beside **Advanced options** to display more options for your connection.
-
-    :::image type="content" source="media/service-azure-sql-data-warehouse-with-direct-connect/sql-server-database-advanced-settings.png" alt-text="Screenshot of the SQL Server database dialog with advanced options highlighted.":::
-
-The next section describes how to find parameter values for your connection.
+You can connect to an Azure Synapse Analytics using the process described in [the Power Query article about Azure SQL Data Warehouse](/power-query/connectors/azure-sql-data-warehouse).
 
 ## Find Parameter Values
 

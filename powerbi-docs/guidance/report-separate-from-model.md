@@ -1,8 +1,8 @@
 ---
 title: Separate reports from models in Power BI Desktop
 description: Guidance for separating reports from models in Power BI Desktop.
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource

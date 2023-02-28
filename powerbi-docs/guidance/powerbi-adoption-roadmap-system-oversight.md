@@ -1,8 +1,8 @@
 ---
 title: "Power BI adoption roadmap: System oversight"
 description: Apply system oversight consisting of administrative activities to drive strong and successful adoption of Power BI.
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -225,7 +225,7 @@ Suggestions for managing Premium capacity:
 
 #### Autoscale
 
-[Autoscale](/power-bi/enterprise/service-premium-auto-scale) is a capability of [Power BI Premium Gen 2](/power-bi/enterprise/service-premium-concepts). It's intended to handle occasional or unexpected bursts in Premium usage levels. Autoscale can respond to these bursts by automatically increasing CPU resources to support the increased workload.
+[Autoscale](/power-bi/enterprise/service-premium-auto-scale) is a capability of [Power BI Premium](/power-bi/enterprise/service-premium-concepts). It's intended to handle occasional or unexpected bursts in Premium usage levels. Autoscale can respond to these bursts by automatically increasing CPU resources to support the increased workload.
 
 Automated scaling up reduces the risk of performance and user experience challenges in exchange for a financial impact. If the Premium capacity isn't well-managed, autoscale may trigger more often than expected. In this case, the [Premium monitoring app](/power-bi/enterprise/service-premium-metrics-app) can help you to determine underlying issues and do capacity planning.
 
@@ -357,7 +357,7 @@ Managing and optimizing the cost of cloud services, like Power BI, is an importa
 - Analyze who is using—and, more to the point, not using—their allocated Power BI licenses and make necessary adjustments. Power BI usage is analyzed using the [activity log](/power-bi/admin/service-admin-auditing).
 - Analyze the cost effectiveness of [Premium capacity](/power-bi/enterprise/service-premium-what-is) or [Premium Per User](/power-bi/enterprise/service-premium-per-user-faq#using-premium-per-user--ppu-). In addition to the [additional features](/power-bi/enterprise/service-premium-per-user-faq#using-premium-per-user--ppu-), perform a cost/benefit analysis to determine whether Premium licensing is more cost-effective when there are a large number of consumers. Unlimited content distribution is only available with Premium capacity, not PPU licensing.
 - Carefully [monitor and manage Premium capacity](/power-bi/enterprise/service-premium-metrics-app). Understanding usage patterns over time will allow you to predict when to purchase [more capacity](/power-bi/enterprise/service-premium-what-is#capacity-nodes). For example, you may choose to scale up a single capacity from a P1 to P2, or scale out from one P1 capacity to two P1 capacities.
-- If there are occasional spikes in the level of usage, use of [autoscale](/power-bi/enterprise/service-premium-auto-scale) with [Power BI Premium Gen 2](/power-bi/enterprise/service-premium-concepts) is recommended to ensure the user experience isn't interrupted. Autoscale will scale up capacity resources for 24 hours, then scale them back down to normal levels (if sustained activity isn't present). Manage autoscale cost by constraining the maximum number of v-cores, and/or with spending limits set in Azure (because autoscale is supported by the Azure Power BI Embedded service). Due to the pricing model, autoscale is best suited to handle occasional unplanned increases in usage.
+- If there are occasional spikes in the level of usage, use of [autoscale](/power-bi/enterprise/service-premium-auto-scale) with [Power BI Premium](/power-bi/enterprise/service-premium-concepts) is recommended to ensure the user experience isn't interrupted. Autoscale will scale up capacity resources for 24 hours, then scale them back down to normal levels (if sustained activity isn't present). Manage autoscale cost by constraining the maximum number of v-cores, and/or with spending limits set in Azure (because autoscale is supported by the Azure Power BI Embedded service). Due to the pricing model, autoscale is best suited to handle occasional unplanned increases in usage.
 - For Azure data sources, co-locate them in the same region as your Power BI tenant whenever possible. It will avoid incurring [Azure egress charges](https://azure.microsoft.com/pricing/details/bandwidth/). Data egress charges are minimal, but at scale can add up to be considerable unplanned costs.
 
 ## Security, information protection, and data loss prevention

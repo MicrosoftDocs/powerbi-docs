@@ -1,8 +1,8 @@
 ---
 title: Use report page drillthrough
 description: Guidance for working with report page drillthrough.
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
