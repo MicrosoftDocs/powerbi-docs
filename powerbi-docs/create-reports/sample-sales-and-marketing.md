@@ -64,11 +64,11 @@ The dashboard that you create this way isn't the same as the sample dashboard cr
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot** > **Manage**. To download the eight original Excel files, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
+If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot** > **Manage**.
 
 If you want to get and use the Excel file in the Power BI service, follow these steps:
 
-1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *IT Spend Analysis Sample-no-PV.xlsx*.
+1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *Sales and Marketing Sample-no-PV.xlsx*.
 
 1. Open the file in Excel and then select **File** > **Publish** > **Publish to Power BI**.
 
