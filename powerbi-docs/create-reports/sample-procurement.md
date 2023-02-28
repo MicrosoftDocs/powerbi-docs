@@ -1,13 +1,13 @@
 ---
 title: 'Procurement Analysis sample: Take a tour'
-description: Learn how to get the Procurement Analysis sample for Power BI, and take a tour of the features used in this sample.
+description: Learn how to get the Procurement Analysis sample for Power BI. Take a tour of the features used in this sample.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/23/2023
+ms.date: 02/28/2023
 LocalizationGroup: Samples
 ---
 
@@ -43,17 +43,27 @@ Before you can use the sample, you must first get the sample in one of the follo
 
 1. On the **Learning center** page, under **Sample reports**, scroll until you see the **Procurement Analysis Sample**.
 
-    :::image type="content" source="media/sample-procurement/sample-reports.png" alt-text="Screenshot that shows the Procurement Analysis sample under Sample Reports.":::
-
 1. Select the sample. It opens in Reading mode.
 
 1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
 
     :::image type="content" source="media/sample-procurement/procurement-entry.png" alt-text="Screenshot that shows the Procurement Analysis sample entries in the workspace.":::
 
+    Select the dashboard to view the sample dashboard.
+
 ### Get the .pbix file for this sample
 
 Alternatively, you can download the Procurement Analysis sample as a [.pbix file](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop. 
+
+1. After you open the file in Power BI Desktop, select **File** > **Publish** > **Publish to Power BI** or choose **Publish** in the **Home** ribbon.
+
+1. In the **Publish to Power BI** dialog, choose a workspace and then **Select**.
+
+1. In the Power BI service, in your workspace, scroll down to the **Procurement Analysis Sample** report and select to open.
+
+1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
+
+The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
 
 ### Get the Excel workbook for this sample
 
@@ -96,7 +106,7 @@ Note the following details:
 * In the **Total Invoice by Sub Category** column chart, **Hardware** and **Indirect Goods & Services** are the biggest spend categories.
 * In the **Total Invoice by Tier** bar chart, most of our business is done with our tier 1 (top 10) vendors. Doing so enables us to manage better vendor relationships.
 
-## Spending in Mexico
+### Spending in Mexico
 
 Let's explore the spending areas in Mexico.
 
@@ -106,7 +116,7 @@ Let's explore the spending areas in Mexico.
 
 2. Drill down into the **Indirect Goods & Services** column:
 
-   * In the **Total Invoice by Sub Category** chart, select the drill-down arrow ![Drill-down arrow](media/sample-procurement/drilldown-icon.png) in the upper-right corner of the chart.
+   * In the **Total Invoice by Sub Category** chart, select the drill-down arrow :::image type="icon" source="media/sample-procurement/drilldown-icon.png"::: in the upper-right corner of the chart.
 
    * Select the **Indirect Goods & Services** column.
 
