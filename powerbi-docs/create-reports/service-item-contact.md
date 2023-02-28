@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/03/2023
+ms.date: 02/28/2023
 LocalizationGroup: Common tasks
 ---
 # Set contact information for reports and dashboards in the Power BI service
