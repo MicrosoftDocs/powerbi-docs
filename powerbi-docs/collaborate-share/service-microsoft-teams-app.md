@@ -71,6 +71,12 @@ The Power BI app in Microsoft Teams also features a hub for training. Select **L
 
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-learn-tab.png" alt-text="Screenshot of the Learning center in the Power BI app in Microsoft Teams. The Learn tab is selected in Teams and the Power BI navigation pane.":::
 
+The Power BI app in Microsoft Teams helps users multi-task by remembering where you navigated to for one hour. When you leave the app and return within one hour, the app navigates you back to: 
+- Items you visited like reports, including the page you were on and filters you applied
+- Places you visited like home, create, data hub, workspaces
+
+When using the Power BI app in Microsoft Teams Desktop, you can use the Microsoft Teams back button to navigate back within the Power BI app. When using the app in Microsoft Teams in a web browser, use the browser back button.  
+
 ### Differences in interactions
 
 A few interactions are different in the Teams app than they are in the browser.
