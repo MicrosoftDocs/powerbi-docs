@@ -55,7 +55,7 @@ Everyone in a user group gets the role that you've assigned. If someone is in se
 
 <sup>2</sup> Contributors and Viewers can also share items in a workspace, if they have Reshare permissions.
 
-<sup>3</sup> To copy a report to another workspace, and to create a report in another workspace based on a dataset in the current workspace, you need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md). For datasets in the original workspace, if you have at least the Contributor role, you automatically have Build permission through your workspace role. For details, see [Copy reports from other workspaces](../connect-data/service-datasets-copy-reports.md).
+<sup>3</sup> To copy a report to another workspace, and to create a report in another workspace based on a dataset in the current workspace, you need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md). You also need at least Contributor role on the source and destination workspaces. For datasets in the original workspace, if you have at least the Contributor role, you automatically have Build permission through your workspace role. For details, see [Copy reports from other workspaces](../connect-data/service-datasets-copy-reports.md).
 
 <sup>4</sup> Keep in mind that you also need permissions on the gateway. Those permissions are managed elsewhere, independent of workspace roles and permissions. For details, see [Manage an on-premises gateway](/data-integration/gateway/service-gateway-manage).
 
