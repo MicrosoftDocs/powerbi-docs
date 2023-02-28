@@ -25,13 +25,13 @@ ms.reviewer: saurkumar
 > [!NOTE]  
 >  You can create and modify paginated report definition (.rdl) files in Power BI Report Builder.
   
-##  <a name="CSVRendering"></a> CSV Rendering  
+##  <a name="CSVRendering"></a> CSV rendering  
  When rendered using the default settings, a CSV report has the following characteristics:  
   
 -   The default field delimiter string is a comma (,).  
   
     > [!NOTE]  
-    >  You can change the field delimiter to any character that you want, including TAB, by changing the device information settings. For more information, see [CSV Device Information Settings](/sql/reporting-services/csv-device-information-settings).  
+    >  You can change the field delimiter to any character that you want, including TAB, by changing the device information settings. For more information, see [CSV device information settings](../device-info/csv-device-information-settings.md).  
   
 -   The record delimiter string is the carriage return and line feed (\<cr>\<lf>).  
   
@@ -77,7 +77,7 @@ ms.reviewer: saurkumar
 |Indicator|Renders as a single record with the active state name, available states, and the data value.|  
 |Map|Renders a row with the labels and values for each map member of a map layer.<br /><br /> If the map has multiple layers the values in the rows varies depending on whether the map layers use the same or different map data regions. If multiple map layers use the same data region, the rows contain data from all layers.|  
   
-### Hierarchical and Grouped Data  
+### Hierarchical and grouped data  
  Hierarchical and grouped data must be flattened in order to be represented in the CSV format.  
   
  The rendering extension flattens the report into a tree structure that represents the nested groups within the data region. To flatten the report:  
@@ -93,10 +93,10 @@ ms.reviewer: saurkumar
  For more information, see [Tables, matrices, and lists &#40;Power BI Report Builder&#41;](../report-builder-tables-matrices-lists.md).  
   
   
-##  <a name="RenderingModes"></a> Renderer Modes  
+##  <a name="RenderingModes"></a> Renderer modes  
  The CSV rendering extension can operate in two modes: one is optimized for Excel and the other is optimized for third-party applications that require strict CSV compliance to the CSV specification in RFC 4180. Depending on which mode you use, peer data regions are handled differently.  
   
-### Default Mode  
+### Default mode  
  The default mode is optimized for Excel. When rendered in default mode, the report is rendered as a CSV file with multiple sections of CSV-rendered data. Each peer data region is delimited by an empty line. Peer data regions within the report body are rendered as separate blocks of data within the CSV file. The result is a CSV file in which:  
   
 -   Individual text boxes within the report body are rendered once as the first block of data within the CSV file.  
@@ -108,10 +108,10 @@ ms.reviewer: saurkumar
 #### Formatting  
  Numeric values are rendered in their formatted state. Excel can recognize formatted numeric values, such as currency, percentage and date, and format the cells appropriately when importing the CSV file.  
   
-### Compliant Mode  
+### Compliant mode  
  Compliant mode is optimized for third-party applications.  
   
-#### Data Regions  
+#### Data regions  
  Only the first row of the file contains the column headers and each row has the same number of columns.  
   
 #### Formatting  
@@ -135,8 +135,8 @@ ms.reviewer: saurkumar
 -   Bookmarks  
   
   
-##  <a name="DeviceInfo"></a> Device Information Settings  
- You can change some default settings for this renderer, including which mode to render in, which characters to use as delimiters and which characters to use as the text qualifier default string, by changing the device information settings. For more information, see [CSV Device Information Settings](/sql/reporting-services/csv-device-information-settings).  
+##  <a name="DeviceInfo"></a> Device information settings  
+ You can change some default settings for this renderer, including which mode to render in, which characters to use as delimiters and which characters to use as the text qualifier default string, by changing the device information settings. For more information, see [CSV device information settings](../device-info/csv-device-information-settings.md).  
   
   
 ## Next steps  
