@@ -50,8 +50,6 @@ This assumes you created a Power BI Embedded capacity (**A SKU**). If you haven'
     > [!div class="mx-imgBorder"]
     > ![Sceenshot of new scale selection.](media/azure-pbie-scale-capacity/azure-portal-scale-pricing-info.png)
 
-   For Gen1 capacities, scaling might take a minute or two to complete.
-
 6. Confirm your tier by viewing the overview tab. The current pricing tier is listed.
 
     > [!div class="mx-imgBorder"]

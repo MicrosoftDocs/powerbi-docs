@@ -1,76 +1,67 @@
 ---
 title: Dashboard tiles in Power BI service for business users
-description: All about dashboard tiles in Power BI for business users. This includes tiles that are created from SQL Server Reporting Services (SSRS).
+description: Learn about Power BI dashboard tiles for business users, including tiles that are created from SQL Server Reporting Services (SSRS).
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/18/2022
+ms.date: 02/14/2023
 LocalizationGroup: Dashboards
 ---
+
 # Dashboard tiles in Power BI
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-ynny.md)]
 
-
 A tile is a snapshot of your data, pinned to a dashboard by a *designer*. *Designers* can create tiles from a report, dataset, dashboard, the Q&A question box, Excel, SQL Server Reporting Services (SSRS), and more.  This screenshot shows many different tiles pinned to a dashboard.
 
-![Power BI dashboard](./media/end-user-tiles/power-bi-dashboard.png)
-
+:::image type="content" source="./media/end-user-tiles/power-bi-dashboard-new.png" alt-text="Screenshot of a Power BI dashboard with several tiles.":::
 
 Besides tiles pinned from reports, *designers* can add standalone tiles directly on the dashboard using **Add tile**. Standalone tiles include: text boxes, images, videos, streaming data, and web content.
 
-Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](end-user-basic-concepts.md).
-
+Need help understanding the building blocks that make up Power BI? See [Basic concepts for the Power BI service business user](end-user-basic-concepts.md).
 
 ## Interacting with tiles on a dashboard
 
 1. Hover over the tile to display the ellipses.
-   
-    ![tile ellipses](./media/end-user-tiles/power-bi-ellipsis.png)
-2. Select the ellipses to open the tile action menu. The options available vary by your permissions, the visual type, and the method used to create the tile. For example, the menu items available for tiles pinned from Q&A are different than the tiles pinned from a report. Here is an action menu for a tile created using Q&A.
 
-    ![Screenshot shows menu with nine options.](./media/end-user-tiles/power-bi-qna-menu.png)
+   :::image type="content" source="./media/end-user-tiles/power-bi-ellipsis.png" alt-text="Screenshot of a Power BI tile ellipses used to open the tile action menu.":::
 
-    Some of the actions available from these menus are:
+2. Select the ellipses to open the tile action menu. The options available vary by your permissions, the visual type, and the method used to create the tile.
 
-   * [Open the report that was used to create the tile](end-user-reports.md) ![report icon](./media/end-user-tiles/chart-icon.jpg)  
+   :::image type="content" source="./media/end-user-tiles/power-bi-tile-menu.png" alt-text="Screenshot of the Power BI tile action menu options.":::
 
-   * [Open the Q&A question that was used to create the tile](end-user-reports.md) ![Q&A icon](./media/end-user-tiles/qna-icon.png)  
+   Some of the actions available from these menus are:
 
-   * [View the tile in focus mode](end-user-focus.md) ![focus icon](./media/end-user-tiles/fullscreen-icon.jpg)  
-
-   * [View insights](end-user-insights.md) ![insights icon](./media/end-user-tiles/power-bi-insights.png)
-
-   * [Add a comment and start a discussion](end-user-comment.md)  ![comment icon](./media/end-user-tiles/comment-icons.png)
-
-   * [Manage alerts set on a dashboard tile](end-user-alerts.md)  ![alert icon](./media/end-user-tiles/power-bi-alert-icon.png)
-
-   * [Open the data in Excel](/power-bi/visuals/power-bi-visualization-export-data)  ![export icon](./media/end-user-tiles/power-bi-export-icon.png)
-
+   - [Open the report that was used to create the tile](end-user-reports.md) :::image type="icon" source="./media/end-user-tiles/power-bi-chart-icon-new.png":::  
+   - [View the tile in focus mode](end-user-focus.md) :::image type="icon" source="./media/end-user-tiles/power-bi-fullscreen-icon.png":::
+   - [View insights](end-user-insights.md) :::image type="icon" source="./media/end-user-tiles/power-bi-insights-icon.png":::
+   - [Add a comment and start a discussion](end-user-comment.md)  :::image type="icon" source="./media/end-user-tiles/power-bi-comment-icon.png":::
+   - [Export the data to Excel](/power-bi/visuals/power-bi-visualization-export-data)  :::image type="icon" source="./media/end-user-tiles/power-bi-export-icon-new.png":::
 
 3. To close the action menu, select a blank area in the canvas.
 
 ### Select (click) a tile
+
 When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](../create-reports/service-dashboard-edit-tile.md). If it has a custom link, selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, SSRS report that is on-premises, or Q&A question that was used to create the tile.
 
 > [!NOTE]
-> The exception to this is video tiles added to dashboards by *designers*. Selecting a video tile (that was created this way) causes the video to play right there on the dashboard.   
-> 
-> 
+> The exception to this is video tiles added to dashboards by *designers*. Selecting a video tile (that was created this way) causes the video to play right there on the dashboard.
+>
 
 ## Considerations and troubleshooting
-* If nothing happens when you select (click) a tile, or you receive an error message, here are some possible reasons:
-  - The report that was used to create the visualization was not saved, or has been deleted.
-  - The tile was created from a workbook in Excel Online, and you do not have at least Read permissions for that workbook.
-  - If the tile was created from SSRS, and you don't have permission to the SSRS report or you don't have access to the network where the SSRS server is located.
-- For tiles created directly on the dashboard using **Add tile**, if a custom hyperlink has been set, selecting the title, subtitle, and or tile will open that URL.  Otherwise, by default, selecting one of these tiles created directly on the dashboard for an image, web code, or text box produces no action.
-- If the original visualization used to create the tile changes, the tile doesn't change.  For example, if the *designer* pinned a line chart from a report and then changed the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
-- If a workspace is moved to Premium capacity, the existing dashboard refresh cache does not move with the workspace. The new cache will be created the first time a user visits the dashboard in the new Premium capacity. After that, every data refresh will refresh the cache and update the data.
+
+- If nothing happens when you select (click) a tile, or you receive an error message, here are some possible reasons:
+  - The report that was used to create the visualization wasn't saved, or has been deleted.
+  - The tile was created from a workbook in Excel Online, and you don't have at least Read permissions for that workbook.
+  - If the tile was created from SSRS, and you don't have permission to access the SSRS report or you don't have access to the network where the SSRS server is located.
+- For tiles created directly on the dashboard using **Add tile**, if a custom hyperlink has been set, selecting the title, subtitle, or tile will open that URL.  Otherwise, by default, selecting one of these tiles created directly on the dashboard for an image, web code, or text box produces no action.
+- If the original visualization used to create the tile changes, the tile doesn't change. For example, if the *designer* pinned a line chart from a report and then changed the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type doesn't.
+- If a workspace is moved to Premium capacity, the existing dashboard refresh cache doesn't move with the workspace. The new cache will be created the first time a user visits the dashboard in the new Premium capacity. After that, every data refresh will refresh the cache and update the data.
 
 ## Next steps
-[Data refresh](../connect-data/refresh-data.md)
 
-[Power BI - Basic Concepts](end-user-basic-concepts.md)
+- [Data refresh in Power BI](../connect-data/refresh-data.md)
+- [Basic concepts for the Power BI service business user](end-user-basic-concepts.md)
