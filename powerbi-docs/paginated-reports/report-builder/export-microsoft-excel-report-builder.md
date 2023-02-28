@@ -19,12 +19,12 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
  You can change some default settings for this renderer by changing the device information settings. For more information, see [Excel device information settings](/sql/reporting-services/excel-device-information-settings).  
   
- See [Export Reports &#40;Power BI Report Builder&#41;](../export-reports-report-builder.md) for details on how to export to Excel.  
+ See [Export reports &#40;Power BI Report Builder&#41;](../export-reports-report-builder.md) for details on how to export to Excel.  
   
 > [!IMPORTANT]  
 >  When you define a parameter of type **String**, the user is presented with a text box that can take any value. If a report parameter is not tied to a query parameter and the parameter values are included in the report, it is possible for a report user to type expression syntax, script, or a URL into the parameter value, and render the report to Excel. If another user then views the report and selects the rendered parameter contents, the user may inadvertently execute the malicious script or link.  
 >   
->  To mitigate the risk of inadvertently running malicious scripts, open rendered reports only from trusted sources. For more information about securing reports, see [Secure Reports and Resources](/sql/reporting-services/security/secure-reports-and-resources).  
+>  To mitigate the risk of inadvertently running malicious scripts, open rendered reports only from trusted sources. For more information about securing reports, see [Secure reports and resources](/sql/reporting-services/security/secure-reports-and-resources).  
   
 ##  <a name="ExcelLimitations"></a> Excel limitations  
  Microsoft Excel places limitations on exported reports due to the capabilities of Excel and its file formats. The most significant are the following:  
@@ -139,7 +139,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
  Charts, sparklines, data bars, maps, gauges, and indicators are exported as pictures. The data they depict, such as the value and member labels for a chart, is not exported with them and is not available in the Excel workbook unless it is included in a column or row in a data region within a report.  
   
- If you want to work with chart, sparkline, data bar, maps, gauge, and indicator data, export the report to a .csv file from the report. For more information, see [Exporting to a CSV File &#40;Power BI Report Builder&#41;](../export-csv-file-report-builder.md) and [Generating Data Feeds from Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/generating-data-feeds-from-reports-report-builder-and-ssrs).  
+ If you want to work with chart, sparkline, data bar, maps, gauge, and indicator data, export the report to a .csv file from the report. For more information, see [Exporting to a CSV file &#40;Power BI Report Builder&#41;](../export-csv-file-report-builder.md).  
   
 ## Page sizing  
  The Excel rendering extension uses the page height and width settings to determine what paper setting to define in the Excel worksheet. Excel tries to match the PageHeight and PageWidth property settings to one of the most common paper sizes.  
@@ -217,7 +217,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
  Bookmark links in text boxes are rendered as Excel hyperlinks in the cell in which the text is rendered. Bookmark links for images and charts are rendered as Excel hyperlinks on the image when rendered. When selected, the bookmark goes to the Excel cell in which the bookmarked report item is rendered.  
   
 ##  <a name="ConditionalFormat"></a> Changing reports at run-time  
- If a report must render to multiple formats and it is not possible to create a report layout that renders the way you want in all required formats, then you might consider using the value in the RenderFormat built-in global to conditionally change the report appearance at run time. This way you can hide or show report items depending the renderer used to get the best results in each format. For more information, see [Built-in Globals and Users References &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder).  
+ If a report must render to multiple formats and it is not possible to create a report layout that renders the way you want in all required formats, then you might consider using the value in the RenderFormat built-in global to conditionally change the report appearance at run time. This way you can hide or show report items depending the renderer used to get the best results in each format. For more information, see [Built-in globals and users references &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder).  
   
 ## Next steps  
  [Pagination in Reporting Services &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
