@@ -1,7 +1,7 @@
 ---
 title: "Export Power BI paginated report to Microsoft Excel (Power BI Report Builder) | Microsoft Docs"
 description: In Power BI Report Builder, the Excel rendering extension renders a Power BI paginated report to the Office Open XML format to use with Microsoft Excel.
-ms.date: 02/14/2023
+ms.date: 02/27/2023
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -26,7 +26,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
 >   
 >  To mitigate the risk of inadvertently running malicious scripts, open rendered reports only from trusted sources. For more information about securing reports, see [Secure Reports and Resources](/sql/reporting-services/security/secure-reports-and-resources).  
   
-##  <a name="ExcelLimitations"></a> Excel Limitations  
+##  <a name="ExcelLimitations"></a> Excel limitations  
  Microsoft Excel places limitations on exported reports due to the capabilities of Excel and its file formats. The most significant are the following:  
   
 -   The maximum column width is limited to 255 characters or 1726.5 points. The renderer does not verify that the column width is less than the limit.  
@@ -45,7 +45,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
  For more details about Excel limitations, see [Excel specifications and limits](https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3).  
   
-### Text Boxes and Text  
+### Text boxes and text  
  The following limitations apply to text boxes and text:  
   
 -   Text box values that are expressions are not converted to Excel formulas. The value of each text box is evaluated during report processing. The evaluated expression is exported as the contents of each Excel cell.  
@@ -71,7 +71,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
 -   Rectangles in report footers are not exported to Excel. However, rectangles in the report body, tablix cells, and so forth are rendered as a range of Excel cells.  
   
-### Report Headers and Footers  
+### Report headers and footers  
  The following limitations apply to report headers and footers:  
   
 -   Excel headers and footers support a maximum of 256 characters including markup. The rendering extension truncates the string at 256 characters.  
@@ -80,7 +80,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
 -   Text boxes in a header or footer maintain their formatting but not their alignment when exported to Excel. This occurs because leading and trailing spaces are trimmed when the report is rendered to Excel.  
   
-### Merging Cells  
+### Merging cells  
  The following limitation applies to merging cells:  
   
 -   If cells are merged, word-wrap does not work correctly. If any merged cells exist on a row where a text box is rendered with the AutoSize property, autosize will not work.  
@@ -93,7 +93,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
 -   Although you align all items precisely, you might find in some rare cases that some columns continue to be merged. This could be caused by internal unit conversion and rounding when the Excel worksheet is rendered. In the report definition language (RDL), you can specify position and size in different measurement units such as inches, pixels, centimeters, and points. Internally the Excel uses points. To minimize conversion and the potential inaccuracy of rounding when converting inches and centimeters to points, consider specifying all measurements in whole points for the most direct results. One inch is 72 points.  
   
-### Report Row Groups and Column Groups  
+### Report row groups and column groups  
  Reports that include row groups or column groups contain empty cells when exported to Excel. Imagine a report that groups rows on commute distance. Each commute distance can contain more than one customer. The following picture shows the report.  
   
  ![Screenshot of the Report in the Reporting Services web portal](../media/paginated-reports-export/excel-export.png "Report in the Reporting Services web portal")  
@@ -109,15 +109,15 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
  So if you create a report for the specific purpose of exporting it to Excel for further analysis of the report data, consider not grouping on rows or columns in your report.  
   
-## Excel Renderer  
+## Excel renderer  
   
-### Current (.xlsx) Excel File Renderer  
- In Reporting Services, the default Excel renderer is the version compatible with current (.xlsx) Microsoft Excel files. This is the **Excel** option on the **Exporting** menus in the Power BI Services web portal and SharePoint list.  
+### Current (.xlsx) Excel file renderer  
+ In Reporting Services, the defaultExcel renderer is the version compatible with current (.xlsx) Microsoft Excel files. This is the **Excel** option on the **Exporting** menus in the Power BI Services web portal and SharePoint list.  
   
  When you use the default Excel renderer, instead of the earlier Excel 2003 (.xls) renderer, you can install the Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint to allow earlier versions of Excel to open the files that are exported.  
   
   
-### Differences Between the current (.xlsx) Excel and Excel 2003 Renderers  
+### Differences between the current (.xlsx) Excel and Excel 2003 renderers  
  Reports, rendered by using the current (.xlsx) Excel or the Excel 2003 renderers are typically identical and only under rare circumstances will you notice differences between the two formats. The following table compares the Excel and the Excel 2003 renderers.  
   
 |Property|Excel 2003|Current Excel|  
@@ -132,7 +132,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
  Because the report explicitly sets the row height, the default row height affects only rows that are sized automatically upon export to Excel.  
   
-##  <a name="ReportItemsExcel"></a> Report Items in Excel  
+##  <a name="ReportItemsExcel"></a> Report items in Excel  
  Rectangles, subreports, the report body, and data regions are rendered as a range of Excel cells. Text boxes, images, and charts, data bars, sparklines, maps, gauges, and indicators must be rendered within one Excel cell, which might be merged depending on the layout of the rest of the report.  
   
  Images, charts, sparklines, data bars, maps, gauges, indicators, and lines are positioned within one Excel cell but they sit on top of the cell grid. Lines are rendered as cell borders.  
@@ -141,13 +141,13 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
  If you want to work with chart, sparkline, data bar, maps, gauge, and indicator data, export the report to a .csv file or generate Atom-compliant data feeds from the report. For more information, see [Exporting to a CSV File &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/exporting-to-a-csv-file-report-builder-and-ssrs) and [Generating Data Feeds from Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/generating-data-feeds-from-reports-report-builder-and-ssrs).  
   
-## Page Sizing  
+## Page sizing  
  The Excel rendering extension uses the page height and width settings to determine what paper setting to define in the Excel worksheet. Excel tries to match the PageHeight and PageWidth property settings to one of the most common paper sizes.  
   
  If no matches are found, Excel uses the default page size for the printer. Orientation is set to Portrait if the page width is less than the page height; otherwise, orientation is set to Landscape.  
   
-##  <a name="WorksheetTabNames"></a> Worksheet Tab Names  
- When you export a report to Excel, the report pages that were created by page breaks are exported to different worksheets. If you provided an initial page name for the report, each worksheet of the Excel workbook will have this name by default. The name appears on the worksheet tab. However, since each worksheet in a workbook must have a unique name, an integer starting at 1 and incremented by 1 is appended to the initial page name for each additional worksheet. For example, if the initial page name is **Sales Report by Fiscal Year**, the second worksheet would be named **Sales Report by Fiscal Year1**, the third one **Sales Report by Fiscal Year2**, and so forth.  
+##  <a name="WorksheetTabNames"></a> Worksheet tab names  
+ When you export a report to Excel, the report pages that were created by page breaks are exported to different worksheets. If you provided an initial page name for the report, each worksheet of the Excel workbook will have this name by default. The name appears on the worksheet tab. However, since each worksheet in a workbook must have a unique name, an integer starting at 1 and incremented by 1 is appended to the initial page name for each additional worksheet. For example, if the initial page name is **Sales report by fiscal year**, the second worksheet would be named **Sales report by fiscal year1**, the third one **Sales report by fiscal year2**, and so forth.  
   
  If all report pages created by page breaks provide new page names, each worksheet will have the associated page name. However, these page names might not be unique. If page names are not unique, the worksheets are named the same way as initial page names. For example, if the page name of two groups is **Sales for NW**, one worksheet tab will have the name **Sales for NW**, and the other **Sales for NW1**.  
   
@@ -155,24 +155,24 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
  Reporting Services provides properties to set on reports, data regions, groups, and rectangles to help you create reports that can be exported to Excel in a way that you want. For more information, see [Pagination in Reporting Services &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs).  
   
-##  <a name="DocumentProperties"></a> Document Properties  
+##  <a name="DocumentProperties"></a> Document properties  
  The Excel renderer writes the following metadata to the Excel file.  
   
-|Report Element properties|Description|  
+|Report element properties|Description|  
 |-------------------------------|-----------------|  
 |Created|Date and time of report execution as an ISO date/time value.|  
 |Author|Report.Author|  
 |Description|Report.Description|  
 |LastSaved|Date and time of report execution as an ISO date/time value.|  
   
-##  <a name="PageHeadersFooters"></a> Page Headers and Footers  
+##  <a name="PageHeadersFooters"></a> Page headers and footers  
  Depending on the Device Information SimplePageHeaders setting, the page header can be rendered in two ways: the page header can be rendered at the top of each worksheet cell grid, or in the actual Excel worksheet header section. By default, the header is rendered to the cell grid on the Excel worksheet.  
   
  The page footer is always rendered to the actual Excel worksheet footer section, regardless of the value of the SimplePageHeaders setting.  
   
  Excel header and footer sections support a maximum of 256 characters, including markup. If this limit is exceeded, the Excel renderer removes markup characters starting at the end of the header and/or footer string to reduce the number of total characters. If all markup characters are removed and the length still exceeds the maximum, the string is truncated starting from the right.  
   
-### SimplePageHeader Settings  
+### SimplePageHeader settings  
  By default, the Device Information SimplePageHeaders setting is set to **False**; therefore, the page headers are rendered as rows in the report on the Excel worksheet surface. The worksheet rows that contain the headers become locked rows. You can freeze or unfreeze the pane in Excel. If the **Print Titles** option is selected, these headers are automatically set to print on every worksheet page.  
   
  The page header repeats at the top of every worksheet in the workbook except the document map cover sheet if the **Print Titles** option is selected on the Page Layout tab in Excel. If the **Print on first page** or the **Print on last page** option is not selected in the Report Header Properties or Report Footer Properties dialog boxes, the header will not be added to the first or last page respectively.  
@@ -184,7 +184,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
 ##  <a name="Interactivity"></a> Interactivity  
  Some interactive elements are supported in Excel. The following is a description of specific behaviors.  
   
-### Show and Hide  
+### Show and hide  
  Microsoft Excel has limitations with how it manages hidden and displayed report items when they are exported. Groups, rows, and columns that contain report items that can be toggled are rendered as Excel outlines. Excel creates outlines that expand and collapse rows and columns across the entire row or column which can cause the collapse of report items that are not intended to be collapsed. In addition, Excel's outlining symbols can become cluttered with overlapping outlines. To address these issues, the following outlining rules are applied when using the Excel rendering extension:  
   
 -   The report item in the top-left corner that can be toggled can continue to be toggled in Excel. Report items that can be toggled and share vertical or horizontal space with the report item that can be toggled in the top-left corner cannot be toggled in Excel.  
@@ -195,7 +195,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
 -   Due to an Excel limitation, outlines can be nested up to 7 levels only.  
   
-### Document Map  
+### Document map  
  If any document map labels exist in the report, a document map is rendered. The document map is rendered as an Excel cover worksheet inserted at the first tab position in the workbook. The worksheet is named **Document map**.  
   
  The text displayed in the document map is determined by the report item's or group's DocumentMapLabel property. Document map labels are listed in the order that they appear in the report, starting at the first row, in the first column. Each document map label cell is indented the number of levels deep it appears in the report. Each level of indentation is represented by placing the label in a subsequent column. Excel supports up to 256 levels of outline nesting.  
@@ -204,19 +204,19 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
  The root node of the map is the report name, the \<*reportname*>.rdl, and it is not interactive. The document map links font is Arial, 10pt.  
   
-### Drillthrough Links  
+### Drillthrough links  
  Drillthrough links that appear in text boxes are rendered as Excel hyperlinks in the cell in which the text is rendered. Drillthrough links for images and charts are rendered as Excel hyperlinks on the image when rendered. When selected, the drillthrough link opens the client's default browser and navigates to the HTML view of the target.  
   
 ### Hyperlinks  
  Hyperlinks that appear in text boxes are rendered as Excel hyperlinks in the cell in which the text is rendered. Hyperlinks for images and charts are rendered as Excel hyperlinks on the image when rendered. When selected, the hyperlink opens the client's default browser and navigates to the target URL.  
   
-### Interactive Sorting  
+### Interactive sorting  
  Excel does not support interactive sort.  
   
 ### Bookmarks  
  Bookmark links in text boxes are rendered as Excel hyperlinks in the cell in which the text is rendered. Bookmark links for images and charts are rendered as Excel hyperlinks on the image when rendered. When selected, the bookmark goes to the Excel cell in which the bookmarked report item is rendered.  
   
-##  <a name="ConditionalFormat"></a> Changing Reports at Run-Time  
+##  <a name="ConditionalFormat"></a> Changing reports at run-time  
  If a report must render to multiple formats and it is not possible to create a report layout that renders the way you want in all required formats, then you might consider using the value in the RenderFormat built-in global to conditionally change the report appearance at run time. This way you can hide or show report items depending the renderer used to get the best results in each format. For more information, see [Built-in Globals and Users References &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder).  
   
 ## Next steps  
@@ -224,6 +224,6 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
  [Rendering Behaviors &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
  [Interactive Functionality for Different Report Rendering Extensions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
  [Rendering Report Items &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)  
+ [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../report-builder-tables-matrices-lists.md)  
   
   
