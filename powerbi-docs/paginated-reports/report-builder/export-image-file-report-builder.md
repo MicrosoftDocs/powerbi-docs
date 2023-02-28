@@ -1,7 +1,7 @@
 ---
 title: "Export Power BI paginated report to an Image File (Power BI Report Builder) | Microsoft Docs"
 description: In Power BI Report Builder, the Image rendering extension renders a Power BI paginated report to a bitmap or metafile. The default is a TIFF file viewable in multiple pages.
-ms.date: 02/14/2023
+ms.date: 02/27/2023
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -21,7 +21,7 @@ ms.reviewer: saurkumar
 > [!NOTE]  
 >  You can create and modify paginated report definition (.rdl) files in Power BI Report Builder.
   
-##  <a name="SupportedImageFormats"></a> Supported Image Formats  
+##  <a name="SupportedImageFormats"></a> Supported image formats  
  The following table shows the file extension and MimeType for each Image renderer format.  
   
 |**Type**|**Extension**|**MIMEType**|  
@@ -35,7 +35,7 @@ ms.reviewer: saurkumar
 |EMFPlus|emf|image/emf|  
   
   
-##  <a name="RenderingMultiplePages"></a> Rendering Multiple Pages  
+##  <a name="RenderingMultiplePages"></a> Rendering multiple pages  
  TIFF is the only format that supports multiple page documents in a single file. Other formats, such as JPG or PNG, output one page at a time and require a separate call to the rendering extension for each page.  
   
   
@@ -44,9 +44,9 @@ ms.reviewer: saurkumar
   
 -   Hyperlinks  
   
--   Show or Hide  
+-   Show or hide  
   
--   Document Map  
+-   Document map  
   
 -   Drillthrough or clickthrough links  
   
@@ -57,8 +57,8 @@ ms.reviewer: saurkumar
 -   Bookmarks  
   
   
-##  <a name="DeviceInfo"></a> Device Information Settings  
- You can change some default settings for this renderer by changing the device information settings. For more information, see [Image Device Information Settings](/sql/reporting-services/image-device-information-settings).  
+##  <a name="DeviceInfo"></a> Device information settings  
+ You can change some default settings for this renderer by changing the device information settings. For more information, see [Image device information settings](/sql/reporting-services/image-device-information-settings).  
   
   
 ## Next steps  
@@ -66,6 +66,6 @@ ms.reviewer: saurkumar
  [Rendering Behaviors &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
  [Interactive Functionality for Different Report Rendering Extensions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
  [Rendering Report Items &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)  
+ [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../report-builder-tables-matrices-lists.md)  
   
   
