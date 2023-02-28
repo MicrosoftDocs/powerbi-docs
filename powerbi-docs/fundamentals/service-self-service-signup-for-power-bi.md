@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 10/19/2021
+ms.date: 02/22/2023
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -19,7 +19,7 @@ Power BI can be your personal data analysis and visualization tool, and can also
 For definitions and an overview of self-service-sign-up and self-service purchase, visit [Self-service for Power BI](service-self-service-signup-purchase-for-power-bi.md).
 
 ## License scenarios
-Use this chart to help determine which type of license you need. Power BI Desktop is always free. The Power BI service offers both free and paid license options. Paid options include Power BI Pro, Power BI Premium, and Power BI Premium Per User (PPU). Some questions to ask yourself are: "Will I be creating content or will I only be consuming content created by others?", "Will I be sharing my content with others?", "Do I have access to Premium capacity?". For help answering these questions, see [Power BI feature list for consumers](../consumer/end-user-features.md), [What is Premium](../enterprise/service-premium-what-is.md), and [Licenses and subscriptions for business users and consumers](../consumer/end-user-license.md).
+Use this chart to help determine which type of license you need. Power BI Desktop is always free. The Power BI service offers both free and paid license options. Paid options include Power BI Pro and Power BI Premium Per User (PPU). A paid subscription option is also available: Power BI Premium. Some questions to ask yourself are: "Will I be creating content or will I only be consuming content created by others?", "Will I be sharing my content with others?", "Do I have access to Premium capacity?". For help answering these questions, see [Power BI feature list for consumers](../consumer/end-user-features.md), [What is Premium](../enterprise/service-premium-gen2-what-is.md), and [Licenses and subscriptions for business users and consumers](../consumer/end-user-license.md).
 
 |Scenario  |Creator  |Consumer  |
 |---------|---------|---------|
@@ -41,7 +41,7 @@ Before you start the self-service process, it's important to learn which types o
 
 ## Use self-service sign-up to get an individual Power BI license
 
-Follow these steps to sign up for a Power BI service account. Once you complete this process you will have a Power BI (free) license which you can use to try the Power BI service on your own using My Workspace, consume content from a Power BI workspace assigned to a Power BI Premium capacity, or initiate an individual Power BI trial. For more information, see [Power BI features by license type](service-features-license-type.md). 
+Follow these steps to sign up for a Power BI service account. Once you complete this process you will have a Power BI (free) license which you can use to try the Power BI service on your own using My Workspace, consume content from a Power BI workspace assigned to a Power BI Premium capacity, or initiate an individual Power BI PPU trial. For more information, see [Power BI features by license type](service-features-license-type.md). 
 
 The exact steps for sign up can vary depending on your organization and what you click to start the process. For this reason, you may not be presented with all of the screens shown below. There are many different ways to sign up for the Power BI service as an individual, and the steps in this article apply to the two most common.
 - you select a **Try free** or **Start free** button<sup>1</sup>.     
@@ -55,46 +55,46 @@ The exact steps for sign up can vary depending on your organization and what you
 
     ![Screenshot of Power BI service showing powerbi.microsoft.com in a web browser.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try.png)    
 
-    ![Screenshot of Power BI service showing pthe Try Power BI for free prompt.](media/service-self-service-signup-for-power-bi/power-bi-start-free.png)            
+    ![Screenshot of Power BI service showing the Try Power BI for free prompt.](media/service-self-service-signup-for-power-bi/power-bi-start-free.png)            
 
 - Or, select an email link to a Power BI dashboard, report, or app.
 
-    ![Screenshot of Power B I service showing an email being sent from powerbi.com.](media/service-self-service-signup-for-power-bi/power-bi-emails.png)
+    ![Screenshot of Power BI service showing an email being sent from powerbi.com.](media/service-self-service-signup-for-power-bi/power-bi-emails.png)
 
 1. When prompted, sign in using your organizational account.
 
-    ![Screenshot of Power B I service showing a prompt to enter new email address.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-sign-in.png)
+    ![Screenshot of Power BI service showing a prompt to enter new email address.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-sign-in.png)
 
 
 1. In this example, Microsoft 365 recognizes you and knows that you already have at least one other Microsoft service installed. Select **Sign in**.
 
-    ![Screenshot of Power B I service showing that Microsoft recognizes the email.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-sign-up.png)
+    ![Screenshot of Power BI service showing that Microsoft recognizes the email.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-sign-up.png)
 
 1. You may receive one of these dialog boxes. 
 
 
     - If you get a message like this, make sure that you are using a work or school email address and not a consumer address like hotmail, gmail, or outlook. See [supported email addresses, above.](#supported-email-addresses)
 
-       ![Screenshot of Power B I service showing prompt to confirm email address.](media/service-self-service-signup-for-power-bi/power-bi-did-you.png)
+       ![Screenshot of Power BI service showing prompt to confirm email address.](media/service-self-service-signup-for-power-bi/power-bi-did-you.png)
 
     - If you get a message like this, review the terms and conditions. If you agree, select **Start**. 
 
-        ![Screenshot of Power B I service showing Get Started sign-in prompt.](media/service-self-service-signup-for-power-bi/power-bi-almost-there.png)
+        ![Screenshot of Power BI service showing Get Started sign-in prompt.](media/service-self-service-signup-for-power-bi/power-bi-almost-there.png)
 
 
 1. At this point, you may have to wait if Microsoft is [setting up a new tenant](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). Otherwise, the Power BI service opens in your browser.
 
-    ![Screenshot of Power B I service showing Power BI home screen.](media/service-self-service-signup-for-power-bi/power-bi-home-new.png)    
+    ![Screenshot of Power BI service showing Power BI home screen.](media/service-self-service-signup-for-power-bi/power-bi-home-new.png)    
 
 ## Use self-service sign-up to start an individual trial of the Power BI paid version
 
-Congratulations on signing into your Power BI account for the first time! You now have a free license<sup>2</sup>. As you start to explore the Power BI service, you may see pop-ups asking if you want to upgrade to an individual trial of the paid version of Power BI which includes Power BI Pro and Power BI Premium Per User (PPU). If you do, select **Try now**. In some organizations, if you try to use a feature that requires a Pro or PPU license, Power BI will automatically initiate a 60 day trial of the paid version of Power BI. [Some features of the Power BI service require a Pro or PPU license](../consumer/end-user-license.md). If you'd like to start a free 60 day individual trial, select **Start trial**.  
+Congratulations on signing into your Power BI account for the first time! You now have a free license<sup>2</sup>. As you start to explore the Power BI service, you may see pop-ups asking if you want to upgrade to an individual trial of the paid version of Power BI which includes Power BI Premium Per User (PPU). If you do, select **Try now**. In some organizations, if you try to use a feature that requires a Pro or PPU license, Power BI will automatically initiate a 60 day trial of the paid PPU version of Power BI. [Some features of the Power BI service require a Pro or PPU license](../consumer/end-user-license.md). If you'd like to start a free 60 day individual trial, select **Start trial**.  
 
-![Screenshot of Power B I service showing Power BI trial dialog.](media/service-self-service-signup-for-power-bi/power-bi-full-trial.png)
+![Screenshot of Power BI service showing Power BI trial dialog.](media/service-self-service-signup-for-power-bi/power-bi-full-trial.png)
 
 <sup>2</sup> In some organizations, your default Power BI account may be a Power BI **Pro** license. For example, some versions of Microsoft 365 include a Power BI Pro license. To learn how to look up your user license, see [what license do I have?](../consumer/end-user-license.md)
 
-If a Power BI (free) license is sufficient, you don't have to do anything else. To take advantage of Power BI Pro or Premium Per User features, you can upgrade your license using self-service purchase.
+If a Power BI (free) license is sufficient, you don't have to do anything else. To take advantage of Power BI Pro or Premium Per User features, you can upgrade your license to PPU using self-service purchase.
 
 ### Trial expiration
 
@@ -136,7 +136,7 @@ If self-service purchase is not available, contact your administrator about purc
 In most cases, you can sign up for the Power BI service by following the described process. Some of the issues that may prevent you from signing up are described below, with possible workarounds.
 
 **Personal email addresses**
- You attempt to sign up using a personal email addresses (for example nancy@gmail.com) and you receive a message similar to one of these: 
+ You attempted to sign up using a personal email address (for example nancy@gmail.com) and you received a message similar to one of these: 
 
 *You entered a personal email address: Please enter your work email address so we can securely store your company's data*.
 

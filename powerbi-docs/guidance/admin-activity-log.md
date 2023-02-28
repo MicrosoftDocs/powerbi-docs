@@ -1,8 +1,8 @@
 ---
 title: Access the Power BI activity log
 description: Guidance and sample PowerShell script code to work with the Power BI activity log.
-author: kfollis
-ms.author: kfollis
+author: kesharab
+ms.author: kesharab
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-admin
