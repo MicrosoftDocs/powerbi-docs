@@ -56,7 +56,7 @@ When you’re done, save and share the report with your colleagues in Teams.
 
 ## Create a report from a dataset in your organization
 
-Many organizations share datasets that you can use to build your reports. These datasets are great because they offer up-to-date authoritative data. Datasets marked *certified* or *promoted* are likely to be higher quality and better maintained, so your reports will keep working longer.
+Many organizations share datasets that you can use to build your reports. These datasets are great because they offer up-to-date authoritative data. Datasets marked *certified* or *promoted* are likely to be higher quality and better maintained, so your reports keep working longer.
 
 To build a report from a dataset shared with you, follow these steps.
 
@@ -149,7 +149,7 @@ To get started with Power BI Desktop, follow these steps.
    > [!div class="nextstepaction"]
    > [Get Power BI Desktop](https://aka.ms/pbidesktopstore)
 
-1. Create a report in Power BI Desktop. In the following sample tutorial, you prepare and model your data. Then create a report based on the model you've created. Note that you can't do both of the tasks in a report in the Power BI service.
+1. Create a report in Power BI Desktop. In the following sample tutorial, you prepare and model your data. Then create a report based on the model you've created. You can't do both of the tasks in a report in the Power BI service.
 
     [From dimensional model to stunning report in Power BI Desktop](../create-reports/desktop-dimensional-model-report.md)
 
