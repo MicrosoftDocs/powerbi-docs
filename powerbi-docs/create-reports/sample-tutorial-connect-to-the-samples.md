@@ -22,7 +22,6 @@ Power BI has several samples that you can either download in the Power BI servic
 This tutorial shows you how to:
 
 > [!div class="checklist"]
-
 > - Sign up for a Power BI license, if you don't have one.
 > - Import the Retail Analysis sample and add it to the Power BI service.
 > - Explore the sample in the service.
