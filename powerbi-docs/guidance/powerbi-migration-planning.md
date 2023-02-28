@@ -1,8 +1,8 @@
 ---
 title: Plan deployment to migrate to Power BI
 description: Guidance on planning for deployment when migrating to Power BI.
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

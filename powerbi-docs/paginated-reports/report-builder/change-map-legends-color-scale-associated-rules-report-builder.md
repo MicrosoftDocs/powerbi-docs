@@ -245,9 +245,9 @@ Legends include the following parts of a map:
 ## Next steps
 
 - [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder)   
-- [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs.)
+- [Add, Change, or Delete a Map or Map Layer (Power BI Report Builder)](add-change-delete-map-map-layer-report-builder.md)
 - [Customize the display of a map or map layer in a paginated report (Power BI Report Builder)](customize-data-display-map-map-layer-report-builder.md)
-- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/troubleshoot-reports-map-reports-report-builder-and-ssrs)
-- [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/map-wizard-and-map-layer-wizard-report-builder-and-ssrs)  
+- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md)
+- [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](map-wizard-map-layer-wizard-report-builder.md)  
   
   
