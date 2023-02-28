@@ -12,7 +12,7 @@ ms.date: 02/27/2023
 ---
 # Tips and tricks for creating reports in Power BI Desktop
 
-To get the most out of your data, sometimes you need a little extra help. We’ve put together some tips & tricks you can use when creating reports in the Microsoft Power BI Desktop *and* in Microsoft Excel 2016, or Excel 2013 Pro-Plus editions with the Power Pivot add-in enabled and Power Query installed and enabled.
+To get the most out of your data, sometimes you need a little extra help. This article has tips & tricks you can use when creating reports in the Microsoft Power BI Desktop. These tips also work in Microsoft Excel 2016, or Excel 2013 Pro-Plus editions with the Power Pivot add-in enabled and Power Query installed and enabled.
 
 ## Learn to use the Query Editor
 
@@ -24,25 +24,25 @@ You can also view the [Formula Reference](https://support.office.com/Article/Lea
 
 ## Data types in Query Editor
 
-When we use Query Editor in Power BI Desktop to load data, we do a best guess data type detection. When we use formulas, sometimes data type settings on columns aren't preserved. You can ensure the data type of columns are correct after doing the following operations: Load data initially to the query tab, First Row as Header, Add column, Group by, Merge, Append, and before pressing loading the data for the first time.
+Query Editor in Power BI Desktop loads data by doing a best guess data type detection. With formulas, sometimes data type settings on columns aren't preserved. You can ensure the data type of columns are correct after doing the following operations: Load data initially to the Power Query Editor, First Row as Header, Add column, Group by, Merge, Append, and before pressing loading the data for the first time.
 
 One key thing to remember: italics in the data grid don't mean the data type is correctly set, they just mean the data isn't considered as Text.
 
 ## Reference queries in the Query Editor
 
-In Query Editor's navigator in Power BI Desktop, when you right-click one of the queries, an option for "Reference" is available. This is useful for the following reason:
+In Query Editor's navigator in Power BI Desktop, when you right-click one of the queries, an option for **Reference** is available. This is useful for the following reason:
 
-* When you use files as the data source for a query, the absolute path to the file is stored in the query. When sharing or moving a Power BI Desktop file or Excel workbook, you save time when you update the paths by updating the file or workbook once rather than updating the paths.
+* When you use files as the data source for a query, the absolute path to the file is stored in the query. When you share or move a Power BI Desktop file or Excel workbook, you save time when you update the paths by updating the file or workbook once rather than updating the paths.
 
-By default, all queries load to the data model. Some queries are intermediary steps and not intended for end users. When you reference queries as mentioned previously, this is often the case. You can control query loading behavior by right-clicking the query in the navigator and toggling the "Enable Load" option. When *Enable Load* doesn't have a checkmark next to it, the query is still available in the query tab and you can use it with other queries. It's especially useful in combination with Merge, Append, and Reference transforms. However, since the query results aren't loaded to the data model, the query won't clutter your reports field list or your data model.
+By default, all queries load to the data model. Some queries are intermediary steps and not intended for end users. When you reference queries as mentioned previously, this is often the case. You can control query loading behavior by right-clicking the query in the **Navigator** and toggling the **Enable Load** option. When **Enable Load** doesn't have a checkmark next to it, the query is still available in the **Power Query Editor**, and you can use it with other queries. It's especially useful in combination with Merge, Append, and Reference transforms. However, since the query results aren't loaded to the data model, the query won't clutter your reports field list or your data model.
 
 ## Scatter charts need a point identifier
 
-Take an example of a simple table of Temperatures and the Time the reading was taken. If you plot directly on a scatter chart, Power BI aggregates all the values into a single point. To show individual data points, you must add a field to the Details bucket in the field well. A simple way to do this in Power BI Desktop is on the query tab by using the "Add index column" option on the "Add Column" ribbon.
+Take an example of a simple table of Temperatures and the Time the reading was taken. If you plot directly on a scatter chart, Power BI aggregates all the values into a single point. To show individual data points, you must add a field to the Details bucket in the field list. A simple way to do this in Power BI Desktop is on the **Power Query Editor** by using the **Add index column** option on the **Add Column** ribbon.
 
 ## Reference lines in your report
 
-You can use a calculated column in Power BI Desktop to define a reference line. Identify the table and column on which you want to create a reference line. Select *New Column* in the ribbon, and in the formula bar, type the following formula:
+You can use a calculated column in Power BI Desktop to define a reference line. Identify the table and column on which you want to create a reference line. On the **Home tab** select **New Column** in the ribbon, and in the formula bar, type the following formula:
 
 ```console
 Target Value = 100
@@ -52,13 +52,13 @@ This calculated column returns the value *100* regardless of where it's used. Yo
 
 ## Sort by another column
 
-When you use a categorical (string) value in Power BI for chart axes or in a slicer or filter, the default order is alphabetical. If you need to override this order&mdash;for example, for things like days of the week or months&mdash;then you can tell Power BI Desktop to sort by a different column. For more information, see [Sort by column in Power BI Desktop](desktop-sort-by-column.md).
+When you use a categorical (string) value in Power BI for chart axes or in a slicer or filter, the default order is alphabetical. If you need to override this order&mdash;for example, for things like days of the week or months&mdash;then you can tell Power BI Desktop to sort by a different column. For more information, see [Sort one column by another column in Power BI](desktop-sort-by-column.md).
 
 ## Build maps more easily with hints to Bing
 
 Power BI integrates with Bing to provide default map coordinates, in a process called geo-coding, so it's easier for you to create maps. Bing uses algorithms and hints to try to get the right location, but it's a best guess. To increase the likelihood of correct geo-coding, you can use the following tips:
 
-When you create a map, you're often looking to plot countries/regions, states, and cities. In Power BI Desktop, if you name columns after the geographic designation, Bing is better able to find what you're looking to display. For example, if you have a field of US state names such as "California" and "Washington", Bing might return the location of Washington, DC instead of Washington State for the word "Washington". Naming the column "State" improves the geo-coding. The same goes for columns named "Country or Region" and "City".
+When you create a map, you're often looking to plot countries/regions, states, and cities. In Power BI Desktop, if you name columns after the geographic designation, Bing is better able to find what you're looking to display. For example, if you have a field of US state names such as "California" and "Washington", Bing might return the location of Washington, DC instead of Washington state for the word "Washington". Naming the column "State" improves the geo-coding. The same goes for columns named "Country or Region" and "City".
 
 Some designations are ambiguous when considered in the context of multiple countries/regions. In some cases, what one country/region considers a 'state' is treated as a 'province', a 'county', or some other designation. You can increase the accuracy of geo-coding by building columns that append multiple fields together and use those for plotting data locations. An example would be instead of passing only "Wiltshire", you can pass "Wiltshire, England" to get a more accurate geo-coding result.
 
@@ -66,7 +66,7 @@ You can always provide specific latitude and longitude locations in Power BI Des
 
 ## Categorize geographic fields to hint Bing's geo-coding
 
-Another way to ensure fields are correctly geo-coded is by setting the Data Category on the data fields. In Power BI Desktop, select the desired table, go to the Advanced ribbon, and then set the Data Category to Address, City, Continent, Country/Region, Postal Code, State, or Province. These data categories help Bing to correctly encode the data. To learn more, see [Data categorization in Power BI Desktop](../transform-model/desktop-data-categorization.md).
+Another way to ensure fields are correctly geo-coded is by setting the Data Category on the data fields. In Power BI Desktop, select the desired table, go to the Advanced ribbon, and then set the Data Category to Address, City, Continent, Country/Region, Postal Code, State, or Province. These data categories help Bing to correctly encode the data. To learn more, see [Specify data categories in Power BI Desktop](../transform-model/desktop-data-categorization.md).
 
 ## Better geo-coding with more specific locations
 
@@ -80,11 +80,11 @@ Then use this resulting field in the map visualizations. This is useful for buil
 
 ## Histograms in the query stage
 
-There are several ways to build histograms in Power BI Desktop. We start with the simplest and go from there:
+There are several ways to build histograms in Power BI Desktop:
 
-Simplest Histograms: Determine which query has the field you want to build a histogram on. Use the "Reference" option for the query to create a new query and name it "FieldName Histogram". Use the "Group by" option in the "Transform" ribbon and select the "count rows" aggregate. Ensure the data type is a number for the resulting aggregate column. Then visualize this data on the reports page. This histogram is fast and easy to build, but it doesn't work well if you have many data points, and it doesn't allow brushing across visuals.
+Simplest Histograms: Determine which query has the field you want to build a histogram on. Use the **Reference** option for the query to create a new query and name it **FieldName Histogram**. Use the **Group by** option in the **Transform** ribbon and select the **count rows** aggregate. Ensure the data type is a number for the resulting aggregate column. Then visualize this data on the reports page. This histogram is fast and easy to build, but it doesn't work well if you have many data points, and it doesn't allow brushing across visuals.
 
-Defining buckets to build a histogram: Determine which query has the field you want to build a histogram on. Use the "Reference" option for the query to create a new query and name it "FieldName". Now define the buckets with a rule. Use the Add Custom Column option on the Add Column ribbon and build a custom rule. A simple bucketing rule might look like this:
+Defining buckets to build a histogram: Determine which query has the field you want to build a histogram on. Use the **Reference** option for the query to create a new query and name it **FieldName**. Now define the buckets with a rule. Use the Add Custom Column option on the Add Column ribbon and build a custom rule. A simple bucketing rule might look like this:
 
 ```console
 if([FieldName] \< 2) then "\<2 min" else
@@ -96,16 +96,16 @@ if([FieldName] \< 30) then "\<30 min" else
 
 Ensure the data type is a number for the resulting aggregate column. Now you can use the group by technique described in Simplest Histogram to achieve the histogram. This option handles more data points but still doesn't help with brushing.
 
-Defining a histogram that supports brushing: Brushing is when visuals are linked together so that when a user selects a data point in one visual, other visuals on the report page highlight or filter data points related to the selected data point. Since we're manipulating data at query time, we need to create a relationship between tables and ensure we know which detail item relates to the bucket in the histogram and vice-versa.
+Defining a histogram that supports brushing: Brushing is when visuals are linked together so that when a user selects a data point in one visual, other visuals on the report page highlight or filter data points related to the selected data point. Since you're manipulating data at query time, you need to create a relationship between tables and ensure you know which detail item relates to the bucket in the histogram and vice-versa.
 
-Start the process by using the "Reference" option on the query that has the field you want to build a histogram on. Name the new query "Buckets". For this example, let's call the original query "Details". Next remove all columns except the column you want to use as the bucket for the histogram. Now use the "Remove Duplicates" feature in query. The feature is on the right+click menu when you select the column, so the remaining values are the unique values in the column. If you have decimal numbers, you can first use the tip for defining buckets to build a histogram to get a manageable set of buckets. Now, check the data shown in the query preview. If you see blank values or null, you need to fix those before creating a relationship. The use of this approach can be problematic due to the need to sort.
+Start the process by using the **Reference** option on the query that has the field you want to build a histogram on. Name the new query "Buckets". For this example, let's call the original query **Details**. Next remove all columns except the column you want to use as the bucket for the histogram. Now use the **Remove Duplicates** feature in query. The feature is on the **right+click** menu when you select the column, so the remaining values are the unique values in the column. If you have decimal numbers, you can first use the tip for defining buckets to build a histogram to get a manageable set of buckets. Now, check the data shown in the query preview. If you see blank values or null, you need to fix those before creating a relationship. The use of this approach can be problematic due to the need to sort.
 
 >[!NOTE]
 >It's useful to think about the sort order before building any visuals.
 
-The next step in the process is to define a relationship between the "Buckets" and "Details" queries on the buckets column. In Power BI Desktop, select **Manage Relationships** in the ribbon. Create a relationship where Buckets is in the left table and Details in on the right table and select the field you're using for the histogram.
+The next step in the process is to define a relationship between the **Buckets** and **Details** queries on the buckets column. In Power BI Desktop, select **Manage Relationships** in the ribbon. Create a relationship where Buckets is in the left table and Details in on the right table and select the field you're using for the histogram.
 
-The last step is to create the histogram. Drag the Bucket field from the "Buckets" table. Remove the default field from the resulting column chart. Now from the "Details" table, drag the histogram field into the same visual. In the field well, change the default aggregate to Count. The result is the histogram. If you create another visual like a treemap from the Details table, select a data point in treemap to see the histogram highlight and show the histogram for the selected data point relative to the trend for the entire data set.
+The last step is to create the histogram. Drag the Bucket field from the **Buckets** table. Remove the default field from the resulting column chart. Now from the **Details** table, drag the histogram field into the same visual. In the field list, change the default aggregate to Count. The result is the histogram. If you create another visual like a treemap from the Details table, select a data point in treemap to see the histogram highlight and show the histogram for the selected data point relative to the trend for the entire data set.
 
 ## Histograms
 
@@ -121,20 +121,20 @@ Save your changes and return to your report. Add the \<Column Name\> and the Fre
 
 Often, when you load detail data sets from multiple sources, issues like null values, blank values, or duplicate values prevent you from creating relationships.
 
-Let's look at an example where we load data sets of active customer support requests and another data set of work items that have schemas as follows:
+Let's look at an example with loaded data sets of active customer support requests and another data set of work items that have schemas as follows:
 
 > CustomerIncidents: {IncidentID, CustomerName, IssueName, OpenedDate, Status}
 > WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName }
 >
 >
 
-When we want to track all incidents and work items that relate to a specific CustomerName, we can't just create a relationship between these two data sets. Some WorkItems might not be related to a CustomerName, so that field would be blank or NULL. There might be multiple records in WorkItems and CustomerIncidents for any given CustomerName.
+When tracking all incidents and work items that relate to a specific CustomerName, you can't just create a relationship between these two data sets. Some WorkItems might not be related to a CustomerName, so that field would be blank or NULL. There might be multiple records in WorkItems and CustomerIncidents for any given CustomerName.
 
 ### Create relationships in Power BI Desktop when the data has null or blank values
 
 Often, data sets contain columns with null or blank values. This can cause problems when trying to use relationships. You essentially have two options for addressing the issues.
 
-1. You can remove the rows that have null or blank values. You can do this by using either the filter feature in the query tab or, if you're merging queries, by selecting the "keep only matching rows" option.
+1. You can remove the rows that have null or blank values. You can do this by using either the filter feature in the Power Query Editor or, if you're merging queries, by selecting the "keep only matching rows" option.
 1. Alternatively, you can replace the null or blank values with values that work in relationships, typically strings like "NULL" and "(Blank)".
 
 There's no right approach here. Filtering out rows at the query stage removes rows and can affect summary statistics and calculations. Replacing values preserves data rows but can make unrelated rows appear related in the model leading to miscalculations. If you adopt this second option, ensure you use filters at the View/Chart where appropriate to ensure you're getting accurate results. Most importantly, evaluate which rows are kept/removed, and understand the overall effect on the analysis.
@@ -143,16 +143,16 @@ There's no right approach here. Filtering out rows at the query stage removes ro
 
 Often, when you load detailed data sets from multiple sources, duplicate data values prevent you from creating relationships. You can overcome this by creating a dimension table with the unique values from both data sets.
 
-Let's look at an example where we load data sets of active customer support requests and another data set of work items that have schemas as follows:
+Let's look at an example with loaded data sets of active customer support requests and another data set of work items that have schemas as follows:
 
 > CustomerInicdents: {IncidentID, CustomerName, IssueName, OpenedDate, Status}
 > WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName }
 >
 >
 
-When we want to track all incidents and work items that relate to a specific CustomerName, we can't just create a relationship between these two data sets. Some WorkItems might not be related to a CustomerName, so that field would be blank or NULL. If you have any blank values or null in the CustomerNames table, you might still not be able to create a relationship. There might be multiple WorkItems and CustomerIncidents for a single CustomerName.
+When tracking all incidents and work items that relate to a specific CustomerName, you can't just create a relationship between these two data sets. Some WorkItems might not be related to a CustomerName, so that field would be blank or NULL. If you have any blank values or null in the CustomerNames table, you might still not be able to create a relationship. There might be multiple WorkItems and CustomerIncidents for a single CustomerName.
 
-To create a relationship in this case, we need to create a logical data set of all the CustomerNames across the two data sets. In the Query tab, you can use the following sequence to create the logical data set:
+To create a relationship in this case, first create a logical data set of all the CustomerNames across the two data sets. In the Power Query Editor, you can use the following sequence to create the logical data set:
 
 1. Duplicate both queries, naming the first **Temp** and the second **CustomerNames**.
 1. In each query, remove all columns *except* the CustomerName column
@@ -164,7 +164,7 @@ Now you have a dimension table that you can use to relate to CustomerIncidents a
 
 ## Patterns to jump-start your use of the Query Editor
 
-Query Editor is powerful in how it can manipulate, shape, and clean data so that the data is ready to be visualized or modeled. There are a few patterns you should be aware of.
+Query Editor is powerful in how it can manipulate, shape, and clean data so that the data is ready to be visualized or modeled. There are a few patterns you should be aware of
 
 ### Temporary columns can be deleted after computing a result
 
@@ -175,11 +175,11 @@ Often you need to build a calculation in Power BI Desktop that transforms data f
 * Create the column for the final result.
 * Delete the temporary columns so the final data set isn't cluttered.
 
-This is possible because the query tab executes steps in order.
+This is possible because the Power Query Editor  executes steps in order.
 
 ### Duplicate or Reference queries followed by merge to original query
 
-Sometimes it's useful to compute summary statistics for a data set. The easy way to do this is to duplicate or reference the query in the query tab. Then use **Group by** to compute the summary statistics. Summary statistics help you normalize the data in the original data, so they're more comparable. This is especially useful for comparing individual values to the whole. To do this, go to the original query and select the merge option. Then merge the data from the summary statistics query matching on the appropriate identifiers. Now you're ready to normalize the data as needed for your analysis.
+Sometimes it's useful to compute summary statistics for a data set. The easy way to do this is to duplicate or reference the query in the Power Query Editor . Then use **Group by** to compute the summary statistics. Summary statistics help you normalize the data in the original data, so they're more comparable. This is especially useful for comparing individual values to the whole. To do this, go to the original query and select the **merge** option. Then merge the data from the summary statistics query matching on the appropriate identifiers. Now you're ready to normalize the data as needed for your analysis.
 
 ## Use DAX for the first time
 
@@ -187,7 +187,7 @@ DAX is the calculations formula language in Power BI Desktop. It's optimized for
 
 [Learn DAX Basics in Power BI Desktop](../transform-model/desktop-quickstart-learn-dax-basics.md)
 
-[Data Analysis Expressions (DAX) Reference](/dax/)
+[Data Analysis Expressions (DAX)](/dax/)
 
 [DAX Resource Center](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 
