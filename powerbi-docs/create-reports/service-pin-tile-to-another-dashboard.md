@@ -7,22 +7,28 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/06/2023
+ms.date: 02/28/2023
 LocalizationGroup: Dashboards
 ---
 # Pin a tile from one dashboard to another dashboard
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-One way to add a new [dashboard tile](../consumer/end-user-tiles.md) is to copy it from another dashboard. Each of these tiles, when clicked, is a link back to where it was created&mdash;either in Q&A or a report.
+One way to add a new [dashboard tile](../consumer/end-user-tiles.md) to a dashboard is to copy it from another dashboard. When you select either of these tiles, it links back to where it was created&mdash;either in Q&A or a report.
 
 > [!NOTE]
 > You can't pin tiles from shared dashboards.
 
+## Prerequisites
+
+- You just need a [Power BI free license](../consumer/end-user-features.md) to edit dashboards in My Workspace in the Power BI service.
+- You need a Power BI Pro license to edit dashboards in other workspaces in the Power BI service.
+- You also need at least a Contributor role in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
+- If you want to follow along, get the [IT Spend Analysis sample](sample-it-spend.md#get-the-built-in-sample) in the Power BI service.
+
 ## Pin a tile to another dashboard
 
-1. This example uses the [IT Spend Analysis sample](sample-it-spend.md).
-1. Open the sample dashboard.
+1. Open the IT Spend Analysis sample dashboard.
 1. Hover over the tile you want to pin, select **More options (...)**, then select **Pin tile**.
     :::image type="content" source="media/service-pin-tile-to-another-dashboard/power-bi-pushpin-2.png" alt-text="Screenshot of a tile highlighting more options and Pin tile.":::
 1. Pin the tile to an existing dashboard or to a new dashboard.
