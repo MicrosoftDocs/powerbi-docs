@@ -1,5 +1,5 @@
 ---
-title: Monitor Power BI Embedded
+title: Monitor Power BI Embedded data
 description: Learn how to monitor data from Microsoft Power BI Embedded by using Azure Monitor and PowerShell commands.
 author: mberdugo
 ms.author: monaberdugo
@@ -8,10 +8,10 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: subject-monitoring
 ms.topic: how-to
-ms.date: 02/27/2023
+ms.date: 03/01/2023
 ---
 
-# Monitor Power BI Embedded
+# Monitor Power BI Embedded data
 
 When you have critical applications and business processes that rely on Azure resources, you want to monitor those resources for their availability, performance, and operation. This article describes the monitoring data that Microsoft Power BI Embedded generates and how you can use the features of Azure Monitor to analyze and set alerts for this data.
 
@@ -47,23 +47,23 @@ The following sections build on this article by describing the specific data gat
 
 Resources from different Azure services all generate monitoring data in the same format so that you can use the same Azure Monitor tools to analyze them. Power BI Embedded creates [monitoring data](/azure/azure-monitor/insights/monitor-azure-resource#monitoring-data-from-azure-resources) in the same format as these other Azure resources.
 
-For information on the metrics and logs metrics that Power BI Embedded creates, see [Monitor Power BI Embedded data reference](monitor-power-bi-embedded-reference.md).
+For information on the metrics and logs metrics that Power BI Embedded creates, see the [Power BI Embedded monitoring data reference](monitor-power-bi-embedded-reference.md).
 
 ## Collection and routing
 
-Although platform metrics and the Azure Monitor activity log are collected and stored automatically, you can route them to other locations by using diagnostic settings.  Diagnostic settings define where resource logs and metrics for a particular resource should be sent.
+Although platform metrics and the Azure Monitor activity log are collected and stored automatically, you can route them to other locations by using diagnostic settings. Diagnostic settings define where resource logs and metrics for a particular resource should be sent.
 
-Resource logs aren't collected and stored until you create at least one diagnostic setting and route them to one or more locations. When you create a diagnostic setting, you specify which categories of resource logs to collect. The categories for Power BI Embedded are listed in the [Power BI Embedded monitoring data reference](monitor-power-bi-embedded-reference.md#resource-logs).
+Resource logs aren't collected and stored until you create at least one diagnostic setting and route it to a location. When you create a diagnostic setting, you specify which categories of resource logs to collect. The categories for Power BI Embedded are listed in the [Power BI Embedded monitoring data reference](monitor-power-bi-embedded-reference.md#resource-logs).
 
-For more information about how to create and configure diagnostic settings by using the Azure portal, Azure CLI, or PowerShell, see [Diagnostic settings in Azure Monitor](/azure/azure-monitor/platform/diagnostic-settings). 
+For more information about how to create and configure diagnostic settings by using the Azure portal, Azure CLI, or Azure PowerShell, see [Diagnostic settings in Azure Monitor](/azure/azure-monitor/platform/diagnostic-settings).
 
-### Use PowerShell to enable diagnostics
+### Use Azure PowerShell to enable diagnostics
 
-To enable metrics and diagnostics logging with PowerShell, use the following PowerShell commands. For information about how to use PowerShell to enable diagnostics, see [Configure a Log Analytics workspace in Azure Monitor using PowerShell](/azure/azure-monitor/platform/powershell-workspace-configuration).
+To enable metrics and diagnostics logging with Azure PowerShell, use the following Azure PowerShell commands. For information about how to use Azure PowerShell to enable diagnostics, see [Configure a Log Analytics workspace in Azure Monitor using PowerShell](/azure/azure-monitor/platform/powershell-workspace-configuration).
 
 * To enable storage of diagnostics logs in a storage account, use this command:
 
-    ```powershell
+    ```azurepowershell
     Set-AzDiagnosticSetting -ResourceId [your resource id] -StorageAccountId [your storage account id] -Enabled $true
     ```
 
@@ -71,25 +71,25 @@ To enable metrics and diagnostics logging with PowerShell, use the following Pow
 
 * To enable streaming of diagnostics logs to an event hub, use this command:
 
-    ```powershell
+    ```azurepowershell
     Set-AzDiagnosticSetting -ResourceId [your resource id] -ServiceBusRuleId [your service bus rule id] -Enabled $true
     ```
 
 * The Azure Service Bus rule ID is a string with this format:
 
-    ```powershell
+    ```azurepowershell
     {service bus resource ID}/authorizationrules/{key name}
     ```
 
 * To enable sending diagnostics logs to a Log Analytics workspace, use this command:
 
-    ```powershell
+    ```azurepowershell
         Set-AzDiagnosticSetting -ResourceId [your resource id] -WorkspaceId [resource id of the log analytics workspace] -Enabled $true
     ```
 
 * Get the resource ID of your Log Analytics workspace with the following command:
 
-    ```powershell
+    ```azurepowershell
     (Get-AzOperationalInsightsWorkspace).ResourceId
     ```
 
