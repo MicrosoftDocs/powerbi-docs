@@ -37,19 +37,19 @@ Every workspace automatically has a lineage view. You need at least a *Contribut
 
 In this view, you see all the workspace artifacts and how the data flows from one artifact to another.
 
-### Data sources
+**Data sources**
 
 You see the data sources from which the datasets and dataflows get their data. On the data source cards, you see more information that can help identify the source. For example, for Azure SQL server, you also see the database name.
 
 :::image type="content" source="media/service-data-lineage/service-data-lineage-data-source-card.png" alt-text="Screenshot of the lineage view data source with no gateway.":::
 
-### Gateways
+**Gateways**
 
 If a data source is connected via an on-premises gateway, the gateway information is added to the data source card. If you have permissions, either as a gateway admin or as a data source user, you see more information, such as the gateway name.
 
 :::image type="content" source="media/service-data-lineage/service-data-lineage-data-gateway-card.png" alt-text="Screenshot of the lineage view data source with a gateway.":::
 
-### Datasets and dataflows
+**Datasets and dataflows**
 
 On datasets and dataflows, you see the last refresh time, as well as if the dataset or dataflow is certified or promoted.
 
