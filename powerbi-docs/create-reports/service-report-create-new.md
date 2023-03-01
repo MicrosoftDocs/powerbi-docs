@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/28/2023
+ms.date: 03/01/2023
 LocalizationGroup: Reports
 ---
 # Create a report from an Excel file in the Power BI service
@@ -44,7 +44,7 @@ This method of creating a report starts with a file and a blank report canvas. I
 
 1. The report editor opens.
 
-    :::image type="content" source="media/service-report-create-new/power-bi-blank-report.png" alt-text="Screenshot of the Power BI service report editor.":::
+    :::image type="content" source="media/service-report-create-new/power-bi-blank-report.png" alt-text="Screenshot of the Power BI service report editor." lightbox="media/service-report-create-new/power-bi-blank-report.png":::
 
 > [!TIP]
 > Select the menu icon to hide the navigation pane to give you more room.
