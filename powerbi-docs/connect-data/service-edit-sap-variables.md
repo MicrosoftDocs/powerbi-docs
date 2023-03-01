@@ -17,7 +17,7 @@ Report authors who use SAP Business Warehouse or SAP HANA with DirectQuery can a
 
 ## Requirements and limitations
 
-The following list describes the requirements for editing SAP variables:
+The following list describes the requirements and limitations for editing SAP variables:
 
 ### Requirements
 
@@ -39,7 +39,7 @@ The following list describes the requirements for editing SAP variables:
 
 ## Enable editing SAP variables
 
-To enable the SAP edit variables feature:
+To enable report users to edit SAP variables:
 
 1. In Power BI Desktop, connect to an SAP HANA or SAP BW data source with a DirectQuery connection.
 
@@ -51,7 +51,7 @@ To enable the SAP edit variables feature:
 
 ## Edit SAP variables
 
-In Power BI Desktop, you can edit variables by selecting **Transform data** > **Edit variables** in the ribbon. Report creators can add and select variables for the report by using this dialog box:
+In Power BI Desktop, you can edit variables by selecting **Transform data** > **Edit variables** in the ribbon. Report creators can add and select variables for the report by using the following dialog box:
 
 ![Screenshot that shows the Add items dialog box.](media/service-edit-sap-variables/sap-variables-add-items.png)
 
@@ -74,7 +74,7 @@ Similar to other Power BI persistence behaviors, any changes users make in the *
 
    ![Screenshot that shows Reset to default.](media/service-edit-sap-variables/reset-to-default.png)
 
-You can change the defaults for published reports you own in the Power BI service. If you own a report that uses SAP HANA or SAP BW and enables editing variables, select **Edit variables** to change the variables. When you save the report, the changed variables become the new default settings for that report. Other users who access the report after you make such changes see the new settings as the defaults.
+You can change the default variables for reports you own in the Power BI service. If you own a report that uses SAP HANA or SAP BW and enables editing variables, select **Edit variables** to change the variables. When you save the report, the changed variables become the new default settings for that report. Other users who access the report after you make the changes see the new settings as the defaults.
 
 ## Troubleshooting
 
