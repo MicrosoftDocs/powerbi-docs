@@ -13,13 +13,13 @@ LocalizationGroup: Data from databases
 
 # Edit SAP variables in Power BI
 
-Report authors who use SAP Business Warehouse or SAP HANA with DirectQuery can allow end users to edit SAP variables in Power BI Premium and shared workspaces. This article describes the requirements for editing SAP variables, how to enable this feature, and where to edit variables in Power BI Desktop and the Power BI service.
+Report authors who use SAP Business Warehouse or SAP HANA with DirectQuery can allow end users to edit SAP variables in Power BI Premium and shared workspaces. This article describes the requirements for editing SAP variables, how to enable this feature, and how to edit variables in Power BI Desktop and the Power BI service.
 
-![Screenshot that shows the Edit variables dialog box.](media/service-edit-sap-variables/sap-edit-variables-dialog.png)
-
-## Requirements to edit SAP variables
+## Requirements and limitations
 
 The following list describes the requirements for editing SAP variables:
+
+### Requirements
 
 - **DirectQuery connection.** You must connect to the SAP data source by using DirectQuery. Import connections aren't supported.
 
@@ -27,17 +27,17 @@ The following list describes the requirements for editing SAP variables:
 
 - **Latest gateway version.** Make sure to download the latest gateway or update your existing gateway. For more information, see [What is an on-premises data gateway?](service-gateway-onprem.md)
 
-## Considerations and limitations
+### Limitations
 
-- For SAP HANA, the SAP edit variables feature works only with multidimensional models and doesn't work on relational sources.
+- **Multidimensional models only for SAP HANA.** For SAP HANA, the SAP edit variables feature works only with multidimensional models and doesn't work on relational sources.
 
-- Power Query Online isn't available in sovereign clouds, so the edit SAP variables feature also isn't supported in sovereign clouds.
+- **No sovereign cloud support.** Power Query Online isn't available in sovereign clouds, so sovereign clouds don't support the edit SAP variables feature.
 
-- You can't edit SAP variables in Power BI mobile apps.
+- **No mobile support.** You can't edit SAP variables in Power BI mobile apps.
 
-- The edit SAP variables feature doesn't work for reports in the **Shared with me** tab of **My Workspace**, or in apps created from V1 workspaces.
+- **Workspace restrictions.** Editing SAP variables doesn't work for reports in the **Shared with me** tab of **My Workspace**, or in apps created from V1 workspaces.
 
-## Enable the SAP edit variables feature
+## Enable editing SAP variables
 
 To enable the SAP edit variables feature:
 
@@ -49,40 +49,40 @@ To enable the SAP edit variables feature:
 
    ![Screenshot that shows selecting the edit SAP variables option.](media/service-edit-sap-variables/sap-preview-setting-in-desktop.png)
 
-## Edit SAP variables in Power BI Desktop
+## Edit SAP variables
 
-In Power BI Desktop, you can edit variables by selecting **Edit variables** from the **Transform data** dropdown menu in the ribbon. This feature has been available in Power BI Desktop for a while. Report creators can select variables for the report by using this dialog box.
+In Power BI Desktop, you can edit variables by selecting **Transform data** > **Edit variables** in the ribbon. Report creators can add and select variables for the report by using this dialog box:
 
 ![Screenshot that shows the Add items dialog box.](media/service-edit-sap-variables/sap-variables-add-items.png)
 
-## Edit SAP variables in the Power BI service
-
-Once you publish the report to the Power BI service, users can see the **Edit variables** link in the **Filter** pane for the report. The first time you publish the report, it might take up to five minutes before the **Edit variables** link appears.
+After you publish a report to the Power BI service that enables editing SAP variables, the **Edit variables** link appears in the **Filter** pane for the report. The first time you publish the report, it might take up to five minutes before the **Edit variables** link appears.
 
 > [!NOTE]
-> If the link doesn't appear, manually refresh the dataset by selecting it from the **Datasets** tab in the workspace and then selecting the **Refresh** icon.
+> If the link doesn't appear, manually refresh the dataset by selecting it from the list in the **Datasets** tab of the workspace, and then selecting the **Refresh** icon.
 
-To edit variables:
+To edit the variables in the Power BI service, report users can:
 
 1. Select **Edit variables** in the **Filter** pane for the report.
 
    ![Screenshot that shows the Edit variables link in the Filter pane.](media/service-edit-sap-variables/sap-edit-variables-link.png)
 
-1. In the **Edit variables** dialog box, edit and override the variable values. Select the **Reset** button to reset the variables to the values that appeared when you opened the dialog box.
+1. In the **Edit variables** dialog box, edit and override the variable values, or select the **Reset** button to revert their changes.
 
    ![Screenshot that shows the Edit variables dialog box in the Power BI service.](media/service-edit-sap-variables/sap-edit-variables-dialog.png)
 
-Similar to other persistence behaviors in Power BI, any changes users make in the **Edit variables** dialog box persist only for that user. Selecting **Reset to default** in the top menu bar resets the report to its original state, including the variables.
+Similar to other Power BI persistence behaviors, any changes users make in the **Edit variables** dialog box persist only for that user. Selecting **Reset to default** in the top menu bar resets the report to its original state, including the variables.
 
    ![Screenshot that shows Reset to default.](media/service-edit-sap-variables/reset-to-default.png)
 
-Report owners can change the defaults in their published reports in the Power BI service. The owner of a report that uses SAP HANA or SAP BW with the **Edit variables** feature enabled can change the variables in edit mode. When the report owner saves the report, the changed settings become the *new default settings* for that report. Other users who access the report after the report owner makes such changes see the new settings as the defaults.
+You can change the defaults for published reports you own in the Power BI service. If you own a report that uses SAP HANA or SAP BW and enables editing variables, select **Edit variables** to change the variables. When you save the report, the changed variables become the new default settings for that report. Other users who access the report after you make such changes see the new settings as the defaults.
+
+## Troubleshooting
 
 If you get errors that Power BI can't load data or retrieve data for a visual, or that the data source connection failed, try the following actions to resolve the error:
 
 - In the Power BI service, select **Edit variables**, set default values for the variables, and then save the report.
 
-- In Power BI Desktop, if you no longer want users to be able to edit variables, you can uncheck the option at the report level.
+- In Power BI Desktop, if you no longer want users to be able to edit variables, uncheck the option at the report level.
 
 ## Next steps
 
