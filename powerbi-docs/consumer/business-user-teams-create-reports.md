@@ -149,7 +149,7 @@ To get started with Power BI Desktop, follow these steps.
    > [!div class="nextstepaction"]
    > [Get Power BI Desktop](https://aka.ms/pbidesktopstore)
 
-1. Create a report in Power BI Desktop.</br>In the following sample tutorial, you prepare and model your data. Then create a report based on the model you've created. You can't do both tasks in a report in the Power BI service.
+1. Create a report in Power BI Desktop.</br>In the following tutorial sample, you prepare and model your data. Then create a report based on the model you've created. You can't do both tasks in a report in the Power BI service.
 
     [Tutorial: From dimensional model to stunning report in Power BI Desktop](../create-reports/desktop-dimensional-model-report.md)
 
