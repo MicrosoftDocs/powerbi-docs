@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 02/27/2023
+ms.date: 02/28/2023
 #customer intent: "As a Power BI end user, I want to build a machine learning model so I can use machine learning with Power BI."
 LocalizationGroup: Connect to services
 ---
@@ -144,7 +144,7 @@ Select the **Apply model** button at the top of the report to invoke this model.
 
 [ ![Screenshot that shows applying the model.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-19.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-19.png#lightbox)
 
-Applying the model creates two new entities, with the suffixes **enriched <model_name>** and **enriched <model_name> explanations**. In this case, applying the model to the **Online visitors** table creates:
+Applying the model creates two new tables, with the suffixes **enriched <model_name>** and **enriched <model_name> explanations**. In this case, applying the model to the **Online visitors** table creates:
 
 - **Online visitors enriched Purchase intent prediction**, which includes the predicted output from the model.
 - **Online visitors enriched Purchase intent prediction explanations**, which contains top record-specific influencers for the prediction.
@@ -161,9 +161,9 @@ You can also invoke any automated machine learning model in the workspace direct
 
 [ ![Screenshot that shows selecting Edit for the table.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-22.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-22.png#lightbox)
 
-In the Power Query Editor, select **AI Insights** in the ribbon.
+In the Power Query Editor, select **AI insights** in the ribbon.
 
-[ ![Screenshot that shows selecting AI Insights.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-23.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-23.png#lightbox)
+[ ![Screenshot that shows selecting AI insights.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-23.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-23.png#lightbox)
 
 On the **AI insights** screen, select the **Power BI Machine Learning Models** folder from the navigation pane. The list shows all the machine learning models you have access to as Power Query functions. The input parameters for the machine learning model automatically map as parameters of the corresponding Power Query function. The automatic parameter mapping happens only if the names and data types of the parameter are the same.
  
@@ -187,12 +187,12 @@ There are some known issues with using gateways with automated machine learning.
 
 ## Next steps
 
-In this tutorial, you created and applied a binary prediction model in Power BI by taking these steps:
+In this tutorial, you created and applied a binary prediction model in Power BI by doing these steps:
 
-* Created a dataflow with the input data
-* Created and trained a machine learning model
-* Reviewed the model validation report
-* Applied the model to a dataflow entity
-* Learned how to use the scored output from the model in a Power BI report
+* Created a dataflow with the input data.
+* Created and trained a machine learning model.
+* Reviewed the model validation report.
+* Applied the model to a dataflow entity.
+* Learned how to use the scored output from the model in a Power BI report.
 
 For more information about Machine Learning automation in Power BI, see [Automated machine learning in Power BI](../transform-model/dataflows/dataflows-machine-learning-integration.md).
