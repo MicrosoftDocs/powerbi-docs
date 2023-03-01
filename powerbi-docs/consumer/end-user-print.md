@@ -97,7 +97,7 @@ Reports can be printed one page at a time.
 
 1. In the upper left corner, select **File** > **Print this page** to print the visual.
 
-    :::image type="content" source="./media/end-user-print/power-bi-visual-print.png" alt-text="Screenshot of the Power Bi service File menu open and Print this page selected.":::
+    :::image type="content" source="./media/end-user-print/power-bi-visual-print.png" alt-text="Screenshot of the Power BI service File menu open and Print this page selected.":::
 
 1. Adjust your [print settings](#adjust-your-browser-print-settings).
 1. Select **Print**.
@@ -121,5 +121,5 @@ A: Go back to the dashboard or report in default view and reopen the visual in F
 
 ## Next steps
 
-- [Share Power Bi reports and dashboard with coworkers and others](../collaborate-share/service-share-dashboards.md)
+- [Share Power BI reports and dashboard with coworkers and others](../collaborate-share/service-share-dashboards.md)
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/)
