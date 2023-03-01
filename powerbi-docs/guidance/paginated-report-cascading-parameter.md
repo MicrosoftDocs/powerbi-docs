@@ -1,8 +1,8 @@
 ---
 title: Use cascading parameters in paginated reports
 description: Guidance for designing paginated reports using cascading parameters.
-author: kfollis
-ms.author: kfollis
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
