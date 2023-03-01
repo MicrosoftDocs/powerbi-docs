@@ -48,7 +48,7 @@ For example, say you're a sales manager that travels to meet customers, and you 
     In this example, the model also contains a calculated column that brings city and state together into one column. To learn more, see [creating calculated columns in Power BI Desktop](desktop-calculated-columns.md).
 
     :::image type="content" source="media/desktop-mobile-geofiltering/power-bi-desktop-city-state-column.png" alt-text="Screenshot of the calculated column highlighted in the field list.":::
-2. Publish the report to Power BI.
+2. Publish the report to the Power BI service.
 
 ## View the report in Power BI mobile app
 
