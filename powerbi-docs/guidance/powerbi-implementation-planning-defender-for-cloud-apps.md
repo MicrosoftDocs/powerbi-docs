@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Defender for Cloud Apps for Power BI"
 description: "Learn about using Defender for Cloud Apps with Power BI."
-author: kfollis
-ms.author: kfollis
+author: paulinbar
+ms.author: painbar
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

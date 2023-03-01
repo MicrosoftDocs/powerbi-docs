@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/21/2022
+ms.date: 02/20/2023
 LocalizationGroup: Administration
 ---
 
@@ -33,7 +33,7 @@ Once enabled on provider side, consumers will be able to see the datasets in the
 > [!IMPORTANT]
 > If external sharing is ever disabled by the provider, reports built on top of the external dataset will lose functionality within a few minutes and display an error message.
 
-1. In your tenant, go to the data hub in Power BI Desktop.
+1. In your tenant, go to the data hub in Power BI service.
  
 1. Select **External data** to see a list of external datasets that have been shared with you.
 

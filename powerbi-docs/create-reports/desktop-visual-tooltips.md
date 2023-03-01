@@ -77,7 +77,7 @@ If you select **Market Basket Analysis** in the tooltip, you drill through to th
 
 ## Updated styling
 
-Once you upgrade to the new tooltips, you may notice an updated styling that is based on the report’s [theme colors](desktop-report-themes.md#setting-structural-colors):
+Once you upgrade to the new tooltips, you may notice an updated styling that is based on the report’s [theme colors](desktop-report-themes.md#set-structural-colors):
 
 - The background of the tooltips default to the **Background elements**.
 - The text and icon color of the tooltips default to the **First-level elements**.

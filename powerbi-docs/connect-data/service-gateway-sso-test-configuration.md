@@ -7,69 +7,73 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 05/17/2022
+ms.date: 02/14/2023
 LocalizationGroup: Gateways
 ---
 
 # Test single sign-on (SSO) configuration
 
-Using **single sign-on (SSO)** enables each user to see the precise set of data for which they have permissions in an underlying data source. Many data sources are enabled for SSO in Power BI, using either [Kerberos](service-gateway-sso-kerberos.md) constrained delegation, or Security Assertion Markup Language ([SAML](service-gateway-sso-saml.md)). You can learn more about [SSO for on-prem data gateways in Power BI](service-gateway-sso-overview.md).
+*Single sign-on (SSO)* enables each Power BI user to access the precise data they have permissions for in an underlying data source. Many Power BI data sources are enabled for SSO, using either [Kerberos](service-gateway-sso-kerberos.md) constrained delegation or Security Assertion Markup Language ([SAML](service-gateway-sso-saml.md)). For more information, see [Overview of single sign-on for on-premises data gateways in Power BI](service-gateway-sso-overview.md).
 
-Setting up Single Sign-On (SSO) is complex, so with the **test single sign-on (SSO) configuration** feature, you can test your configuration. Running the single sing-on test lets the gateway connect to the data source, using a test UPN (provided by you) and does the following:
+Setting up SSO is complex, so you can use the *test single sign-on (SSO) configuration* feature to test your configuration.
 
-* Validates the SSO setup, including checking UPN mapping to a local Active Directory identity for impersonation and data source access.
-* Helps identify any problems if connection failures occur. For example, if an UPN is mapped to a local AD identity but doesn't have access to the data source, the error message indicate that error.
+The single sign-on test:
 
-The **test single sign-on** feature works for both Kerberos and SAML based single sign-on for these [documented data sources](service-gateway-sso-overview.md). For Kerberos constrained delegation, the **test single sign-on** feature helps with testing both SSO using **DirectQuery**, and **DirectQuery And Import**.
+- Lets the gateway connect to the data source by using a test User Principal Name (UPN) that you provide.
+- Validates the SSO setup, which includes checking UPN mapping to a local Active Directory (AD) identity for impersonation and data source access.
+- Helps identify problems if connection failures occur. For example, an error message indicates if a UPN maps to a local AD identity that doesn't have access to the data source.
+
+The test single sign-on feature works for both Kerberos and SAML-based SSO for the data sources listed in [Supported data sources for SSO](service-gateway-sso-overview.md#supported-data-sources-for-sso). For Kerberos constrained delegation, the test single sign-on feature can help test SSO for both DirectQuery and Import, or only DirectQuery data sources.
 
 > [!IMPORTANT]
-> The **test single sign-on** feature requires the March 2021 gateway release or later.
+> The test single sign-on feature requires the March 2021 gateway release or later.
 
+## Test SSO for the gateway
 
-## How to test SSO for the gateway
+To test the SSO configuration:
 
-1. In the **Manage Gateways** page in Power BI, when editing the data source for SSO, you can test the configuration from the **Settings** area.
+1. From **Manage connections and gateways** in Power BI, select **Settings** for the data source.
 
-    :::image type="content" source="media/service-gateway-sso-test-configuration/test-single-sign-on.png" alt-text="Screenshot of how to test SSO configuration from advanced settings.":::
-    
-2. Click on **Test single sign-on**.
+   :::image type="content" source="media/service-gateway-sso-test-configuration/gateway-settings.png" alt-text="Screenshot that shows the Settings selection for the gateway data source.":::
+   
+2. In the **Settings** pane, under **Single sign-on**, select **Test single sign-on**.
 
-    :::image type="content" source="media/service-gateway-sso-test-configuration/user-principal-name.png" alt-text="Screenshot of providing user principal namen for testing SSO.":::
+   :::image type="content" source="media/service-gateway-sso-test-configuration/test-single-sign-on.png" alt-text="Screenshot that shows how to test SSO configuration in Settings.":::
 
-3. Provide a User Principal Name to test. If the gateway cluster is able to impersonate the user and successfully connect to the data source, the test succeeds, as shown in the following image.
+3. Provide a User Principal Name to test.
 
-    :::image type="content" source="media/service-gateway-sso-test-configuration/user-principal-name.png" alt-text="Screenshot of successful test for SSO test connection.":::
+   :::image type="content" source="media/service-gateway-sso-test-configuration/user-principal-name.png" alt-text="Screenshot of the UPN field in the SSO test.":::
+
+   If the gateway cluster is able to impersonate the user and successfully connect to the data source, the test succeeds, as shown in the following image:
+
+   :::image type="content" source="media/service-gateway-sso-test-configuration/sso-test-passed.png" alt-text="Screenshot of successful test for SSO test connection.":::
 
 ## Troubleshooting
 
-This section describes frequent errors you may see, when testing single sign-on, and actions you can take to fix them:
+This section describes common errors you might see when testing single sign-on, and actions you can take to fix them.
 
-* **Error: The on-premises data gateway's service account failed to impersonate the user.**
+### Impersonation error
 
-    If the gateway cluster cannot impersonate the user and connect to the data source, the test fails with the corresponding error message.
+If the gateway cluster can't impersonate the user and connect to the data source, the test fails with the error message: **Error: The on-premises data gateway's service account failed to impersonate the user.**
 
-    :::image type="content" source="media/service-gateway-sso-test-configuration/sso-test-failed.png" alt-text="Screenshot of error dialog when testing fails to impersonate the user.":::
+:::image type="content" source="media/service-gateway-sso-test-configuration/sso-test-failed.png" alt-text="Screenshot of the error dialog when testing fails to impersonate the user.":::
 
-    | Possible cause | Action |
-    | --- | --- |
-    | User doesn't exist in AAD | Check if the user is present in AAD |
-    | User isn't mapped correctly to a local AD account | Check configurations and follow steps outlined in the documentation: [Overview of SSO](service-gateway-sso-overview.md) |
-    | Gateway doesn't have impersonation rights. | Grant the gateway service account local policy rights on the gateway machine: [Grant local policy rights](service-gateway-sso-kerberos.md#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine)  |
+There can be the following possible causes and solutions:
 
-* **Error: Invalid connection credentials.**
-The gateway can't connect to the data source, because the provided User Principal Name does not have access to the data source.
+- The user doesn't exist in Azure Active Directory (Azure AD). Check if the user is present in Azure AD.
+- The user isn't mapped correctly to a local AD account. Check configurations and follow the steps in [Overview of single sign-on for on-premises data gateways in Power BI](service-gateway-sso-overview.md).
+- The gateway doesn't have impersonation rights. Grant the gateway service account local policy rights on the gateway machine as described in [Grant the gateway service account local policy rights on the gateway machine](service-gateway-sso-kerberos.md#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 
-    :::image type="content" source="media/service-gateway-sso-test-configuration/sso-test-failed-credentials.png" alt-text="Screenshot of error dialog when testing fails because User Principal Name does not have access to data source.":::
+### Invalid credentials error
 
+The error **Error: Invalid connection credentials** appears when the gateway can't connect to the data source, because the provided UPN doesn't have access to the data source.
 
-    | Possible cause | Action |
-    | --- | --- |
-    | User doesn't have credentials to the data source | Check if the user has access to the data source and add the user to the data source: [Add or remove a gateway data source](service-gateway-data-sources.md#manage-users)  |
-    
+:::image type="content" source="media/service-gateway-sso-test-configuration/sso-test-failed-credentials.png" alt-text="Screenshot of the error dialog when testing fails because the UPN doesn't have access to the data source.":::
+
+Check whether the user has access to the data source, and if not, add the user to the data source by following the instructions in [Manage users](service-gateway-data-sources.md#manage-users).
+
 ## Next steps
 
-The following articles may be useful in learning more about single sign-on and gateways.
-
-* [Overview of single sign-on (SSO) for gateways in Power BI](service-gateway-sso-overview.md)
-* [Single sign-on (SSO) - Kerberos](service-gateway-sso-kerberos.md)
-* [Single sign-on (SSO) - SAML](service-gateway-sso-saml.md)
+- [Overview of single sign-on (SSO) for gateways in Power BI](service-gateway-sso-overview.md)
+- [Single sign-on (SSO) - Kerberos](service-gateway-sso-kerberos.md)
+- [Single sign-on (SSO) - SAML](service-gateway-sso-saml.md)

@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Self-service content publishing"
 description: "Learn how Power BI self-service content publishing is about publishing content to development, test, and production with deployment pipelines."
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

@@ -1,8 +1,8 @@
 ---
 title: Row-level security (RLS) guidance in Power BI Desktop
 description: Guidance for enforcing row-level security (RLS) in your data models with Power BI Desktop.
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -83,7 +83,7 @@ IF(
 )
 ```
 
-The problem with this rule expression is that all values, except "Worker", return _all table rows_. So, an accidental value, like "Wrker",  unintentionally returns all table rows. Therefore, it's safer to write an expression that tests for each expected value. In the following improved rule expression, an unexpected value will result in the table returning no rows.
+The problem with this rule expression is that all values, except "Worker", return _all table rows_. So, an accidental value, like "Wrker",  unintentionally returns all table rows. Therefore, it's safer to write an expression that tests for each expected value. In the following improved rule expression, an unexpected value results in the table returning no rows.
 
 ```dax
 IF(
@@ -154,9 +154,9 @@ DIVIDE(
 > [!NOTE]
 > Take care to avoid disclosing sensitive facts. If there are only two regions in this example, then it would be possible for a report user to calculate revenue for the other region.
 
-## Avoid using RLS
+## When to avoid using RLS
 
-Avoid using RLS, whenever it makes sense to do so. If you have only a few simplistic RLS rules that apply static filters, consider publishing multiple datasets instead. None of the datasets define roles because each dataset contains data for a specific report user audience, which has the same data permissions. Then, create one workspace per audience and assign access permissions to the workspace or app.
+Sometimes it makes sense to avoid using RLS. If you have only a few simplistic RLS rules that apply static filters, consider publishing multiple datasets instead. None of the datasets define roles because each dataset contains data for a specific report user audience, which has the same data permissions. Then, create one workspace per audience and assign access permissions to the workspace or app.
 
 For example, a company that has just two sales regions decides to publish a dataset _for each sales region_ to different workspaces. The datasets don't enforce RLS. They do, however, use [query parameters](/power-query/power-query-query-parameters) to filter source data. This way, the same model is published to each workspace—they just have different dataset parameter values. Salespeople are assigned access to just one of the workspaces (or published apps).
 

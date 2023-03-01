@@ -38,7 +38,7 @@ You can also start using datamarts from any dataflow you currently have as well.
 
 ## Create a datamart
 
-To create a datamart, navigate to your existing Power BI Premium Gen 2, Premium per capacity (PPC), or Premium Per User (PPU) workspace. Datamarts require a Power BI Premium subscription. In your Premium Gen 2 workspace, select **+ New** and then select **Datamart (Preview) to create a datamart.
+To create a datamart, navigate to your existing Power BI Premium or Premium Per User (PPU) workspace. Datamarts require a Power BI Premium subscription. In your Premium workspace, select **+ New** and then select **Datamart (Preview) to create a datamart.
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-01.png" alt-text="Screenshot of create new datamart.":::
 
@@ -104,7 +104,7 @@ You can also hide the entire table and individual columns by using the **Model v
 
 ### Access auto-generated datasets
 
-To access auto-generated datasets, go to the Premium Gen 2 workspace and find the dataset that matches the name of the datamart. 
+To access auto-generated datasets, go to the Premium workspace and find the dataset that matches the name of the datamart. 
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-19.png" alt-text="Screenshot of finding a dataset.":::
 
@@ -137,11 +137,11 @@ Datamarts are supported in deployment pipelines. Using deployment pipelines, you
 
 ## Access or load an existing datamart
 
-To access an existing datamart, navigate to your Power BI Premium Gen 2 workspace and find your datamart from the overall list of data items in your workspace, as shown in the following image. 
+To access an existing datamart, navigate to your Power BI Premium workspace and find your datamart from the overall list of data items in your workspace, as shown in the following image. 
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-02.png" alt-text="Screenshot of finding an existing datamart from all items.":::
 
-You can also select the **Datamarts (Preview)** tab in your Premium Gen 2 workspace, and see a list of available datamarts.
+You can also select the **Datamarts (Preview)** tab in your Premium workspace, and see a list of available datamarts.
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-03.png" alt-text="Screenshot of select datamart from list of datamarts.":::
 
