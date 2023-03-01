@@ -165,7 +165,7 @@ Quickly access your favorite workspaces by pinning them to the top of the worksp
 
 1. Open the workspace flyout from the nav pane and hover over the workspace you want to pin. Select the **Pin to top** icon.
 
-    ![Screenshot of pin workspace](media/service-create-the-new-workspaces/pin-workspace.png)
+    ![Screenshot of pin workspace.](media/service-create-the-new-workspaces/pin-workspace.png)
 
 1. The workspace is added in the **Pinned** list.
 
