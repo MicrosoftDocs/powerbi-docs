@@ -51,13 +51,13 @@ To enable the SAP edit variables feature:
 
 ## Edit SAP variables in Power BI Desktop
 
-In Power BI Desktop, you can edit variables by selecting **Edit variables** from the **Transform data** dropdown menu in the ribbon. This feature has been available in Power BI Desktop for a while. Report creators can select variables for the report by using the following dialog box.
+In Power BI Desktop, you can edit variables by selecting **Edit variables** from the **Transform data** dropdown menu in the ribbon. This feature has been available in Power BI Desktop for a while. Report creators can select variables for the report by using this dialog box.
 
 ![Screenshot that shows the Add items dialog box.](media/service-edit-sap-variables/sap-variables-add-items.png)
 
 ## Edit SAP variables in the Power BI service
 
-Once you publish the report to the Power BI service, users can see the **Edit variables** link in the **Filter** pane for the report. The first time you publish the report, it might take up to five minutes before the **Edit variable** link appears.
+Once you publish the report to the Power BI service, users can see the **Edit variables** link in the **Filter** pane for the report. The first time you publish the report, it might take up to five minutes before the **Edit variables** link appears.
 
 > [!NOTE]
 > If the link doesn't appear, manually refresh the dataset by selecting it from the **Datasets** tab in the workspace and then selecting the **Refresh** icon.
@@ -81,6 +81,7 @@ Report owners can change the defaults in their published reports in the Power BI
 If you get errors that Power BI can't load data or retrieve data for a visual, or that the data source connection failed, try the following actions to resolve the error:
 
 - In the Power BI service, select **Edit variables**, set default values for the variables, and then save the report.
+
 - In Power BI Desktop, if you no longer want users to be able to edit variables, you can uncheck the option at the report level.
 
 ## Next steps
