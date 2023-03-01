@@ -102,7 +102,7 @@ To create the perspective use Tabular Editor, which you can download from the fo
 
 Once you install **Tabular Editor**, open your report in **Power BI Desktop** and launch **Tabular Editor** from the **External Tools** tab of the ribbon.
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-perspective-2.png" alt-text="Screenshot of the Tabular Editor in the External Tools ribbon":::
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-perspective-2.png" alt-text="Screenshot of the Tabular Editor in the External Tools ribbon.":::
 
 In Tabular Editor, right-click on **Perspectives** > **Create** > **Perspective**.
 
