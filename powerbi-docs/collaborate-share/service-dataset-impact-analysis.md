@@ -13,7 +13,8 @@ LocalizationGroup:
 
 # Dataset impact analysis
 
-When you make changes to a dataset, or consider making changes, it's important to be able to assess the potential impact of those changes on downstream reports and dashboards that depend on that dataset. **Dataset impact analysis** provides you with information that can help you make this assessment.
+When you make changes to a dataset, or are considering making changes, it's important to be able to assess the potential impact of those changes on downstream reports and dashboards that depend on that dataset. **Dataset impact analysis** provides you with information that can help you make this assessment.
+
 * It shows you how many workspaces, reports, and dashboards might be affected by your change, and provides easy navigation to the workspaces where the affected reports and dashboards are located so that you can investigate further.
 * It shows you how many unique visitors and the number of views there are on the potentially affected items. This helps you determine the overall impact of the change for the downstream item. For instance, it's probably more important to investigate the effect of a change on a report that has 20,000 unique viewers than it is to investigate the effect of the change on a report that has three viewers.
 * It provides an easy way to notify the relevant people about a change you made or are thinking about making.
@@ -66,7 +67,7 @@ If you've made a change to a dataset or are thinking about making a change, you 
 
 In order to perform impact analysis on a dataset, you must have write permissions to it. In the impact analysis side pane, you only see real names for workspaces, reports, and dashboards that you have access to. Items that you don't have access to are listed as **Limited access**. This is because some item names may contain personal information.
 
-Even if you don't have access to some workspaces, you still see summarized usage metrics for those workspaces, and your notify contacts messages reach the contact lists of those workspaces.
+Even if you don't have access to some workspaces, you still see summarized usage metrics for those workspaces, and your notify contacts messages will still reach the contact lists of those workspaces.
 
 ## Impact analysis from Power BI Desktop
 
@@ -81,7 +82,7 @@ When you make a change to a dataset in Power BI Desktop and then republish it to
 
 ## Considerations and limitations
 
-* Usage metrics aren't currently supported for classic and personal workspaces.
+* Usage metrics aren't supported for personal workspaces.
 
 ## Next steps
 
