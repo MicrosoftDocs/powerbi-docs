@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Organization-level information protection"
 description: "Learn about getting started with information protection with organization-level planning activities for Power BI."
-author: kfollis
-ms.author: kfollis
+author: paulinbar
+ms.author: painbar
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

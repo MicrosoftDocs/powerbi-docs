@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/17/2023
+ms.date: 02/14/2023
 LocalizationGroup: Data refresh
 ---
 
@@ -50,11 +50,9 @@ You can select the **Schedule** view by selecting **Schedule** in refresh summar
 
 The **Schedule** view is very useful in determining whether the refresh events scheduled are properly spaced, allowing for all refreshes to complete without overlap, or whether you have scheduled refresh events that are taking too long and creating resource contention. If you find such resource contention, you should adjust your refresh schedules to avoid the conflicts or overlap, so your scheduled refreshes can complete successfully.
 
-![Screenshot shows the schedule tab of the Refresh schedule page.](media/refresh-summaries/refresh-summaries-02.png)
-
 The **Refresh time booked (minutes)** column is a calculation of the average of up to 60 records for each associated dataset. The numeric value for each 30-minute time slot is the sum of minutes calculated for all scheduled refreshes scheduled to start on the time slot *and* any scheduled refreshes set to start on the *previous* time slot, but whose average duration overflows into the time slot that's selected.
 
-The **Refresh time available (minutes)** column is a calculation of the minutes available for refresh in each time slot, minus whatever refresh is already scheduled for that time slot. For example, if your P2 subscription provides 12 concurrently running refreshes, you have 12 30-minute slots, so 12 refreshes x 30 minutes each = 360 minutes available for refresh in that time slot. If you have one refresh booked in that slot that takes 20 minutes, your **Refresh time available (minutes)** in that slot is 340 minutes (360 total minutes available, minus 20 minutes already booked = 340 minutes still available).
+The **Refresh time available (minutes)** column is a calculation of the minutes available for refresh in each time slot, minus whatever refresh is already scheduled for that time slot. For example, if your P2 subscription provides 80 concurrently running refreshes, you have 80 30-minute slots, so 80 refreshes x 30 minutes each = 2,400 minutes available for refresh in that time slot. If you have one refresh booked in that slot that takes 20 minutes, your **Refresh time available (minutes)** in that slot is 2,380 minutes (2,400 total minutes available, minus 20 minutes already booked = 2,380 minutes still available).
 
 You can select a time slot and then select the associated **details** button to see which scheduled refresh events contribute to the refresh time booked, their owners, and how long they take to complete.
 

@@ -61,9 +61,9 @@
     items:
       - name: Power BI Premium features
         href: service-premium-features.md
-      - name: What is Power BI Premium Gen2?
-        href: service-premium-gen2-what-is.md
-      - name: Premium Gen2 architecture
+      - name: What is Power BI Premium?
+        href: service-premium-what-is.md
+      - name: Premium architecture
         href: service-premium-architecture.md          
       - name: Power BI Premium Per User
         href: service-premium-per-user-faq.yml
@@ -71,21 +71,21 @@
         href: service-admin-premium-purchase.md   
       - name: Purchase Power BI Premium for testing
         href: service-admin-premium-testing.md                    
-      - name: Managing Premium Gen2 capacities
-        href: service-premium-capacity-manage-gen2.md
+      - name: Managing Premium capacities
+        href: service-premium-capacity-manage.md
       - name: Configure and manage capacities
         href: service-admin-premium-manage.md                                   
-      - name: Premium Gen2 capacity load evaluation
+      - name: Premium capacity load evaluation
         href: service-premium-concepts.md
-      - name: Install the Gen2 metrics app
-        href: service-premium-install-gen2-app.md
-      - name: Using the Premium Gen2 metrics app
-        href: service-premium-gen2-metrics-app.md 
+      - name: Install the Premium metrics app
+        href: service-premium-install-app.md
+      - name: Using the Premium metrics app
+        href: service-premium-metrics-app.md 
       - name: Performance smoothing
         href: service-premium-smoothing.md                    
       - name: Backup and restore Power BI Premium datasets
         href: service-premium-backup-restore-dataset.md
-      - name: Using autoscale with Premium Gen2
+      - name: Using autoscale with Power BI Premium
         href: service-premium-auto-scale.md
       - name: Configure workloads
         href: service-admin-premium-workloads.md
@@ -101,8 +101,8 @@
         href: service-admin-premium-china-north.md                  
       - name: Troubleshoot XMLA endpoint connectivity
         href: troubleshoot-xmla-endpoint.md
-      - name: Power BI Premium Gen2 FAQ
-        href: service-premium-gen2-faq.yml
+      - name: Power BI Premium FAQ
+        href: service-premium-faq.yml
   - name: Governance and compliance
     expanded: false
     items:                   

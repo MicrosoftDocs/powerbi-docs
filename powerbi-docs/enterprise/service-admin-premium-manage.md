@@ -19,12 +19,10 @@ Learn how to manage Power BI Premium and Power BI Embedded capacities, which pro
 
 :::image type="content" source="media/service-admin-premium-manage/powerbi-premium-capacity-settings.png" alt-text="Screenshot that shows the Power B I Premium capacity settings screen.":::
 
-*Capacity* is at the heart of the Power BI Premium and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md) offerings. It's a set of resources reserved for exclusive use by your organization. Having a capacity enables you to publish dashboards, reports, and datasets to users throughout your organization without having to purchase per-user licenses for them. It also offers dependable, consistent performance for the content hosted in capacity. For more information, see [What is Power BI Premium?](service-premium-gen2-what-is.md).
+*Capacity* is at the heart of the Power BI Premium and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md) offerings. It's a set of resources reserved for exclusive use by your organization. Having a capacity enables you to publish dashboards, reports, and datasets to users throughout your organization without having to purchase per-user licenses for them. It also offers dependable, consistent performance for the content hosted in capacity. For more information, see [What is Power BI Premium?](service-premium-what-is.md).
 
 >[!NOTE]
->* [Premium Gen2](service-premium-gen2-what-is.md) simplifies the management of Premium capacities, and reduces management overhead.
->
->* You can get [Premium Per User (PPU)](service-premium-per-user-faq.yml) licenses for individuals, which provide many of the features and capabilities of a Premium capacity, and incorporate all functionality included with a Power BI Pro license.
+>You can get [Premium Per User (PPU)](service-premium-per-user-faq.yml) licenses for individuals, which provide many of the features and capabilities of a Premium capacity, and incorporate all functionality included with a Power BI Pro license.
 
 ## Manage capacity
 
@@ -211,16 +209,6 @@ For more information, see [Install Power BI Report Server](../report-server/inst
 
 ## Next steps
 
-[Managing Premium capacities](/power-bi/enterprise/service-premium-capacity-manage-gen2)
+[Managing Premium capacities](/power-bi/enterprise/service-premium-capacity-manage)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
-* Performance
-* Per-user licensing
-* Greater scale
-* Improved metrics
-* Autoscaling
-* Reduced management overhead
-
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-gen2-what-is.md).

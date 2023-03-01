@@ -235,7 +235,7 @@ In this example, the user must select a product, a store, *and* a destination pa
 
 - This button doesn't allow multiple destinations by using a single button.
 - This button only supports drillthroughs within the same report; in other words, it doesn't support cross-report drillthrough.
-- The disabled state formatting for the button is tied to the color classes in your report theme. Learn more about [color classes](desktop-report-themes.md#setting-structural-colors).
+- The disabled state formatting for the button is tied to the color classes in your report theme. Learn more about [color classes](desktop-report-themes.md#set-structural-colors).
 - The drillthrough action works for all built-in visuals and *some* visuals imported from AppSource. However, it isn't guaranteed to work with *all* visuals imported from AppSource.
 
 ## Next steps

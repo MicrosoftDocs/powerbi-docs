@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/22/2022
+ms.date: 02/17/2023
 ---
 
 # Power BI data sources
@@ -121,7 +121,6 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Microsoft Azure Consumption Insights | Yes | Yes | No | No | No | No |
 | Microsoft Exchange | Yes | Yes | No | No | No | No |
 | Microsoft Exchange Online individual accounts  <sup>8</sup> | Yes | Yes | No | No | No | Yes |
-| Microsoft Graph Security | Yes | Yes | No | Yes | No | Yes |
 | Mixpanel | Yes | Yes | No | No | No | No |
 | MySQL | Yes | Yes | No | Yes | Yes | Yes |
 | OData | Yes | Yes | No | Yes | No | Yes |
@@ -133,6 +132,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 ## Data sources P-R
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
 |---|---|---|---|---|---|---|
+| Palantir Foundry | Yes | Yes | Yes | Yes | Yes | Yes |
 | Paxata <sup>6</sup> | Yes | Yes | No | Yes | No | Yes |
 | PDF | Yes | Yes | No | Yes | No <sup>3</sup> | Yes |
 | Planview Enterprise One - CTM | Yes | Yes | No | No | No | No |
@@ -189,7 +189,6 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Vertica | Yes | Yes | Yes | Yes | Yes | Yes |
 | Web | Yes | Yes | No | Yes | Yes <sup>5</sup> | Yes |
 | Webtrends | Yes | Yes | No | No | No | Yes |
-| Workforce Dimensions | Yes | Yes | No | Yes | No | Yes |
 | Workplace Analytics | Yes | Yes | No | Yes | No | No |
 | XML | Yes | Yes | No | Yes | No <sup>4</sup> | Yes |
 | Zendesk | Yes | Yes | No | No | No | No |
@@ -225,6 +224,7 @@ When the SSO option is enabled and your users access reports built atop the data
 The SSO option takes effect across all datasets that use this data source. It does not affect the authentication method used for import scenarios. The following data sources support SSO for connections through DirectQuery:
 
 - Azure Data Explorer
+- Azure Databricks
 - Azure SQL Database
 - Azure Synapse
 - Impala

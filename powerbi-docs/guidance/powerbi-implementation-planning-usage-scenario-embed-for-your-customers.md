@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Embed for your customers"
 description: "Learn how a developer can programmatically embed Power BI content in a custom application for your customers."
-author: kfollis
-ms.author: kfollis
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -84,7 +84,7 @@ For more information about embedding identities, see [Set up permissions to embe
 
 When embedding Power BI content by using the _For your customers_ scenario, you need to ensure that content resides in a workspace that has one of the following license modes:
 
-- **Premium per capacity:** This license mode is available with [Power BI Premium](/power-bi/enterprise/service-premium-gen2-what-is).
+- **Premium per capacity:** This license mode is available with [Power BI Premium](/power-bi/enterprise/service-premium-what-is).
 - **Embedded:** This license mode is available with [Power BI Embedded](https://azure.microsoft.com/products/power-bi-embedded/).
 
 Each license mode option requires the purchase of a billable product that is a capacity-based license. A capacity-based license allows you to create _reserved capacities_.

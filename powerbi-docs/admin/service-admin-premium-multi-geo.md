@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/22/2022
+ms.date: 02/16/2023
 LocalizationGroup: Premium 
 ---
 
@@ -18,24 +18,28 @@ Multi-Geo is a Power BI Premium feature that helps multinational customers addre
 Sovereign clouds support Multi-Geo across regions within that cloud.
 
 > [!NOTE]
-> China North currently does not support Multi-Geo for Premium Gen2 capacities.
+> China North currently does not support Multi-Geo as it resides on the old version of Premium.
 
 Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo support for Power BI Embedded](../developer/embedded/embedded-multi-geo.md).
-
-> [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](../enterprise/service-premium-gen2-what-is.md).
-
 
 > [!NOTE]
 > Power BI Premium Per User (PPU) is not supported for Multi-Geo.
 
 ## Enable and configure
 
-For new capacities, enable Multi-Geo by selecting a region other than the default region from the dropdown. Each available capacity shows the region where it's currently located, such as **West Central US**.
+Enable Multi-Geo by selecting a region other than the default region when you're creating a new capacity. Once a capacity's created, it shows the region where it's currently located.
 
-![Screenshot showing the capacity size settings screen, used to change capacity size and region.](media/service-admin-premium-multi-geo/power-bi-multi-geo-capacity-size.png)
+Follow these steps to change the default capacity region when you're creating a new capacity.
 
-After you've created capacity, it remains in that region, and any workspaces created will have their content stored in that region. You can migrate workspaces from one region to another through the dropdown on the workspace settings screen.
+1. In Power BI service, select **settings** and from the menu select **Admin portal**.
+
+2. In the *Admin portal*, select **Capacity settings**.
+
+3. Select **Set up new capacity**.
+
+4. From the **Region** dropdown menu, select the region you want to use for this capacity.
+
+After you've created a capacity, it remains in that region, and any workspaces created under it, will have their content stored in that region. You can migrate workspaces from one region to another through the dropdown on the workspace settings screen.
 
 ![Screenshot showing the edit workspace settings screen to change the currently selected region.](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
 
@@ -97,18 +101,5 @@ Large-storage format datasets shouldn't be moved from the region where they were
 
 ## Next steps
 
-- [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md)
+- [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 - [Multi-Geo support for Power BI Embedded](../developer/embedded/embedded-multi-geo.md)
-
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following aspects:
-
-- Performance
-- Per-user licensing
-- Greater scale
-- Improved metrics
-- Autoscaling
-- Reduced management overhead
-
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](../enterprise/service-premium-gen2-what-is.md).
