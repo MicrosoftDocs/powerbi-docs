@@ -29,7 +29,7 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 How would we go about creating this line chart using Q&A?
 
-1. Get the [Retail Analysis Sample](sample-retail-analysis.md#get-the-built-in-sample) in the Power BI srvice.
+1. Get the [Retail Analysis Sample](sample-retail-analysis.md#get-the-built-in-sample) in the Power BI service.
 
 1. Open the Retail Analysis Sample dashboard and place your cursor in the Q&A box, **Ask a question about your data**.
 
@@ -51,7 +51,7 @@ How would we go about creating this line chart using Q&A?
 
 1. To pin the chart to your dashboard, select **Pin visual**.
 
-## Create a visual in the report editor
+## Create the same visual in the report editor
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -82,7 +82,7 @@ How would we go about creating this line chart using Q&A?
 
 ---
 
-1. Select the area chart and review the settings in the **Fields** pane. The report creator built this chart by selecting these three values (**Last Year Sales** and **This Year Sales > Value** from the **Sales** table, and **FiscalMonth** from the **Time** table) and organizing them in the **Axis** and **Values** wells of the **Visualizations** pane.
+4. Select the area chart and review the settings in the **Fields** pane. The report creator built this chart by selecting these three values (**Last Year Sales** and **This Year Sales > Value** from the **Sales** table, and **FiscalMonth** from the **Time** table) and organizing them in the **Axis** and **Values** wells of the **Visualizations** pane.
 
     :::image type="content" source="media/power-bi-visualization-introduction-to-q-and-a/power-bi-desktop-visualizations-2.png" alt-text="Screenshot showing the Visualization pane.":::
 
