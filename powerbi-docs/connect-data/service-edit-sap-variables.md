@@ -27,21 +27,31 @@ The following list describes the requirements for editing SAP variables:
 
 - **Latest gateway version.** Make sure to download the latest gateway or update your existing gateway. For more information, see [What is an on-premises data gateway?](service-gateway-onprem.md)
 
+## Considerations and limitations
+
+- For SAP HANA, the SAP edit variables feature works only with multidimensional models and doesn't work on relational sources.
+
+- Power Query Online isn't available in sovereign clouds, so the edit SAP variables feature also isn't supported in sovereign clouds.
+
+- You can't edit SAP variables in Power BI mobile apps.
+
+- The edit SAP variables feature doesn't work for reports in the **Shared with me** tab of **My Workspace**, or in apps created from V1 workspaces.
+
 ## Enable the SAP edit variables feature
 
-To enable the **SAP edit variables** feature:
+To enable the SAP edit variables feature:
 
 1. In Power BI Desktop, connect to an SAP HANA or SAP BW data source with a DirectQuery connection.
 
 1. Go to **File** > **Options and settings** > **Options**, and in the left pane, select **DirectQuery** under **Current File**.
 
-1. Under **DirectQuery options** in the right pane, select the checkbox next to **Allow end users to change SAP variables in the report**.
+1. Under **DirectQuery options** in the right pane, select the checkbox next to **Allow end users to change SAP variables for this report**.
 
    ![Screenshot that shows selecting the edit SAP variables option.](media/service-edit-sap-variables/sap-preview-setting-in-desktop.png)
 
 ## Edit SAP variables in Power BI Desktop
 
-In Power BI Desktop, you can edit the variables by selecting **Edit variables** from the **Transform data** dropdown menu in the ribbon. This feature has been available in Power BI Desktop for awhile. Report creators can select variables for the report by using the following dialog box.
+In Power BI Desktop, you can edit variables by selecting **Edit variables** from the **Transform data** dropdown menu in the ribbon. This feature has been available in Power BI Desktop for a while. Report creators can select variables for the report by using the following dialog box.
 
 ![Screenshot that shows the Add items dialog box.](media/service-edit-sap-variables/sap-variables-add-items.png)
 
@@ -67,20 +77,11 @@ Similar to other persistence behaviors in Power BI, any changes users make in th
    ![Screenshot that shows Reset to default.](media/service-edit-sap-variables/reset-to-default.png)
 
 Report owners can change the defaults in their published reports in the Power BI service. The owner of a report that uses SAP HANA or SAP BW with the **Edit variables** feature enabled can change the variables in edit mode. When the report owner saves the report, the changed settings become the *new default settings* for that report. Other users who access the report after the report owner makes such changes see the new settings as the defaults.
+
 If you get errors that Power BI can't load data or retrieve data for a visual, or that the data source connection failed, try the following actions to resolve the error:
 
 - In the Power BI service, select **Edit variables**, set default values for the variables, and then save the report.
-- In Power BI Desktop, if you no longer want users to be able to edit variables, you can uncheck the option to change SAP variables at the report level.
-
-## Considerations and limitations
-
-- For SAP HANA, the SAP edit variables feature works only with multidimensional models and doesn't work on relational sources.
-
-- Power Query Online isn't available in sovereign clouds, so the edit SAP variables feature also isn't supported in sovereign clouds.
-
-- You can't edit SAP variables in Power BI mobile apps.
-
-- The edit SAP variables feature doesn't work for reports in the **Shared with me** tab of **My Workspace**, or in apps created from V1 workspaces.
+- In Power BI Desktop, if you no longer want users to be able to edit variables, you can uncheck the option at the report level.
 
 ## Next steps
 
