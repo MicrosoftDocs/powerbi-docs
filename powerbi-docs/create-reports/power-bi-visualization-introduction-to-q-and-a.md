@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 02/09/2023
+ms.date: 03/01/2023
 LocalizationGroup: Ask questions of your data
 ---
 
@@ -19,13 +19,17 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 :::image type="content" source="media/power-bi-visualization-introduction-to-q-and-a/power-bi-qna-create-visual.png" alt-text="Screenshot showing a sample filled-area chart.":::
 
-To follow along, you must use a report that you can edit, so we'll use one of the samples available with Power BI.
+## Prerequisites
+
+- You just need a [Power BI free license](../consumer/end-user-features.md) to edit dashboards in My Workspace in the Power BI service.
+- You need a Power BI Pro license to edit dashboards in other workspaces in the Power BI service. Read about [Power BI Pro licenses](../fundamentals/service-self-service-signup-purchase-for-power-bi.md). You also need at least a Contributor role in that workspace. Read about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
+- To follow along, you must use a report that you can edit, so we'll use one of the samples available with Power BI.
 
 ## Create a Q&A visual in a dashboard
 
 How would we go about creating this line chart using Q&A?
 
-1. Get the [Retail Analysis Sample](/power-bi/create-reports/sample-retail-analysis).
+1. Get the [Retail Analysis Sample](sample-retail-analysis.md#get-the-built-in-sample) in the Power BI srvice.
 
 1. Open the Retail Analysis Sample dashboard and place your cursor in the Q&A box, **Ask a question about your data**.
 
@@ -51,7 +55,7 @@ How would we go about creating this line chart using Q&A?
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-1. Open Power BI Desktop and load the Retail Analysis Sample. You can get this sample from [Download original sample Power BI files](sample-datasets.md#download-original-sample-power-bi-files).
+1. Download the [Retail Analysis Sample](sample-retail-analysis.md#get-the-pbix-file-for-this-sample) .pbix file, and open it in Power BI Desktop.
 
 1. Select the **Report** icon to open the Reports view.
 
@@ -65,9 +69,12 @@ How would we go about creating this line chart using Q&A?
 
 1. Go back to the Retail Analysis Sample dashboard.
 
-1. The dashboard contains the same area chart tile for "Last Year Sales and This Year Sales." Select this tile. Don't select the tile you created with Q&A. Selecting it opens Q&A. The original area chart tile was created in a report, so the report opens to the page that contains this visualization.
+1. The dashboard contains the same area chart tile for "Last Year Sales and This Year Sales." Select this tile. The original area chart tile was created in a report, so the report opens to the page that contains this visualization.
 
     :::image type="content" source="media/power-bi-visualization-introduction-to-q-and-a/power-bi-dashboard.png" alt-text="Screenshot showing the Retail Analysis sample dashboard.":::
+
+    > [!TIP]
+    > Don't select the tile you created with Q&A. Selecting it opens Q&A.
 
 1. Open the report in Editing view by selecting **Edit**. If you aren't the owner of a report, you can't open the report in Editing view.
 
