@@ -52,7 +52,7 @@ In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md
    :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-success.png" alt-text="Screenshot of the pinned to dashboard dialog.":::
 1. Select **Go to dashboard** to see the new tile. There, you can [rename, resize, add a hyperlink, reposition the tile, and more](service-dashboard-edit-tile.md) on your dashboard.
 
-   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned-2.png" alt-text="dashboard with tiles":::
+   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned-2.png" alt-text="Screenshot of dashboard with tiles.":::
 
 ## Considerations and troubleshooting
 
