@@ -20,7 +20,7 @@ It’s easy to create Power BI reports in Microsoft Teams. This article has a fe
 
 ## Create an automatic report from data you have
 
-If you have a table with data, such as an Excel spreadsheet, you'd like to try visualizing in Power BI, follow these steps to create your report.
+If you have a table with data, such as an Excel spreadsheet, and want to try visualizing in Power BI, follow these steps to create your report.
 
 1. Copy the table of data.
 1. Open the Power BI app for Microsoft Teams.
@@ -65,7 +65,7 @@ To build a report from a dataset shared with you, follow these steps.
 
     :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-create-published-dataset.png" alt-text="Screenshot of Power BI app open in Teams with the Create tab and Pick a published dataset option highlighted.":::
 
-1. Select a dataset > **Create**.
+1. Select a dataset > **Auto-create report**.
 
     :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-select-dataset.png" alt-text="Screenshot of a window open to select a dataset to create a report with the report and create button highlighted.":::
 
@@ -116,7 +116,7 @@ For example, ask a question about your data by adding a *Q&A visual*, where you 
 
     :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-qna-visual.png" alt-text="Screenshot of a Visualization pane with the Q&A visual selected and a list of suggested questions.":::
 
-1. If you like the visual that Power BI created, you can convert it from a Q&A visual to a standard visual on the page.
+1. If you like the visual that Power BI creates, you can convert it from a Q&A visual to a standard visual on the page.
 
     :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-pin-qna-visual.png" alt-text="Screenshot of a Q&A result with the Convert Q&A visual icon highlighted.":::
 
@@ -144,14 +144,14 @@ Power BI Desktop is a downloadable Windows app to make sophisticated reports. It
 
 To get started with Power BI Desktop, follow these steps.
 
-1. Install Power BI Desktop. You can download it from the Microsoft Store.
+1. Install Power BI Desktop. You can download it from the [Microsoft Store](https://aka.ms/pbidesktopstore).
 
    > [!div class="nextstepaction"]
    > [Get Power BI Desktop](https://aka.ms/pbidesktopstore)
 
-1. Create a report in Power BI Desktop. In the following sample tutorial, you prepare and model your data. Then create a report based on the model you've created. You can't do both of the tasks in a report in the Power BI service.
+1. Create a report in Power BI Desktop.</br>In the following sample tutorial, you prepare and model your data. Then create a report based on the model you've created. You can't do both tasks in a report in the Power BI service.
 
-    [From dimensional model to stunning report in Power BI Desktop](../create-reports/desktop-dimensional-model-report.md)
+    [Tutorial: From dimensional model to stunning report in Power BI Desktop](../create-reports/desktop-dimensional-model-report.md)
 
 1. [Publish the report](../collaborate-share/service-publish-to-web.md) to the Power BI service.
 1. Share the report with your colleagues in Teams.
