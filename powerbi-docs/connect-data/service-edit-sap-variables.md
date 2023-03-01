@@ -17,7 +17,7 @@ Report authors who use SAP Business Warehouse or SAP HANA with DirectQuery can a
 
 ## Requirements and limitations
 
-The following list describes the requirements and limitations for editing SAP variables:
+The following lists describe the requirements and limitations for editing SAP variables:
 
 ### Requirements
 
@@ -55,7 +55,7 @@ In Power BI Desktop, you can edit variables by selecting **Transform data** > **
 
 ![Screenshot that shows the Add items dialog box.](media/service-edit-sap-variables/sap-variables-add-items.png)
 
-After you publish a report to the Power BI service that enables editing SAP variables, the **Edit variables** link appears in the **Filter** pane for the report. The first time you publish the report, it might take up to five minutes before the **Edit variables** link appears.
+After you publish a report that enables editing SAP variables, the **Edit variables** link appears in the **Filter** pane for the report in the Power BI service. The first time you publish the report, it might take up to five minutes before the **Edit variables** link appears.
 
 > [!NOTE]
 > If the link doesn't appear, manually refresh the dataset by selecting it from the list in the **Datasets** tab of the workspace, and then selecting the **Refresh** icon.
