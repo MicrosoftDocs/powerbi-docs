@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: devx-track-js
-ms.date: 02/27/2022
+ms.date: 03/01/2023
 ---
 
 # Tutorial: Embed Power BI content into your application for national clouds
@@ -27,7 +27,7 @@ Power BI supports the following national clouds:
 
 * Power BI for China cloud
 
-![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
+![Screenshot showing the Embed a dashboard feature.](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
 To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, depending on the type of government or country and region, you can choose the right national cloud for you. Sign up for a [U. S. government Power BI account](../../enterprise/service-govus-signup.md), or a [Power BI for China cloud account](https://www.21vbluecloud.com/powerbi/).
 
