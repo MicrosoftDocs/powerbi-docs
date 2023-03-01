@@ -25,7 +25,6 @@ Want to improve Quick Insights results? If you're a dataset owner, try these sug
   * Data models that don't have date or numeric columns.
 
 ### Next steps
+[Power BI quick insights](../consumer/end-user-insights.md)
 
-[View data insights on dashboard tiles with Power BI](../consumer/end-user-insights.md)
-
-More questions? [Ask the Power BI Community](https://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
