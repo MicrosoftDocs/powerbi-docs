@@ -137,6 +137,13 @@ There are two common reasons for this message.
 
 Contact the SharePoint Online page owner to help resolve the issue.
 
+## Filter URLs
+
+[URL filters](service-url-filters.md) are not supported with the SPO web part. To filter reports via the URL, use the <iframe> embed option in SharePoint. 
+    ```
+    <iframe title="Store Sales" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=ccff2316-xxxx-xxxx-xxxx-xxxxxxxxxxxx&amp;autoAuth=true&amp;ctid=ac2f7c34-xxxx-xxxx-xxxx-xxxxxxxxxxxx&amp;filter= Store/Territory%20eq%20%27NC%27&amp;navContentPaneEnabled=false&amp;filterPaneEnabled=false;" frameborder="0" allowfullscreen="false"></iframe>
+    ```
+
 ## Licensing
 
 Users viewing a report in SharePoint need either a **Power BI Pro license** or the content needs to be in a workspace that's in a **[Power BI Premium capacity (EM or P SKU)](../admin/service-admin-premium-purchase.md)**.
@@ -160,8 +167,6 @@ Users viewing a report in SharePoint need either a **Power BI Pro license** or t
 * The Power BI web part is not available for [national clouds](https://powerbi.microsoft.com/clouds/).
 
 * The classic SharePoint Server is not supported with this web part.
-
-* [URL filters](service-url-filters.md) are not supported with the SPO web part.
 
 ## Next steps
 
