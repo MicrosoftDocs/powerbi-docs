@@ -71,9 +71,9 @@ The Power BI app in Microsoft Teams also features a hub for training. Select **L
 
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-learn-tab.png" alt-text="Screenshot of the Learning center in the Power BI app in Microsoft Teams. The Learn tab is selected in Teams and the Power BI navigation pane.":::
 
-The Power BI app in Microsoft Teams helps users multi-task by remembering where you navigated to for one hour. When you leave the app and return within one hour, the app navigates you back to: 
+The Power BI app in Microsoft Teams helps users multi-task by remembering where you navigated to for one hour. When you leave the app and return within one hour, the app **automatically takes you back** to where you were working by navigating to: 
 - Items you visited like reports, including the page you were on and filters you applied
-- Places you visited like home, create, data hub, workspaces
+- Places you visited like home, create, data hub, workspaces, etc.
 
 When using the Power BI app in Microsoft Teams Desktop, you can use the Microsoft Teams back button to navigate back within the Power BI app. When using the app in Microsoft Teams in a web browser, use the browser back button.  
 
@@ -136,6 +136,7 @@ Power BI end users might see a notification in the Power BI service notification
 - Power BI doesn't support the same localized languages that Microsoft Teams does. As a result, you might not see proper localization within a report.
 - The Power BI app for Microsoft Teams is available to Commercial Cloud and US Government Community Cloud (GCC) customers.
 - Search experience isn't available in US GCC.
+- To automatically take you back when navigating back to the app, you navigation history is saved approximately every 15 seconds. The history is stored locally on your computer or in your web browser window. If you navigate to a place and filter, then quickly switch to another part of Teams (like to chat, calendar, or teams) your navigation may not be captured. If you change computers or start a new browser window, the history won't be available.  
 
 ## Next steps
 
