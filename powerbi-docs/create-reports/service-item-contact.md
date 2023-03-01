@@ -44,7 +44,7 @@ By default, the person who creates a report or dashboard is the contact for it. 
 1. In a workspace, select the **All** tab.
 2. Locate the desired item, select **More options (...)** > **Settings**.
 
-     :::image type="content" source="media/service-item-contact/power-bi-report-settings-2.png" alt-text="Screenshot of a workspace, highlighting the More options icon and Settings":::
+     :::image type="content" source="media/service-item-contact/power-bi-report-settings-2.png" alt-text="Screenshot of a workspace, highlighting the More options icon and Settings.":::
 
 3. Locate the **Contact** input field and set a value.
 
