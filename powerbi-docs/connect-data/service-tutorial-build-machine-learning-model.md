@@ -118,7 +118,7 @@ Depending on the size of the dataset, the training process can take anywhere fro
 
 [ ![Screenshot that shows the model under training.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-15.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-15.png#lightbox)
 
-You can see the model in the **Machine learning models** tab of the dataflow. **Status** indicates whether the model has been queued for training, is under training, or is trained. Once the model training is completed, the dataflow displays an updated **Last Trained time** and a status of **Trained**.
+You can see the model in the **Machine learning models** tab of the dataflow. **Status** indicates whether the model has been queued for training, is under training, or is trained. Once the model training is completed, the dataflow displays an updated **Last trained** time and a status of **Trained**.
 
 [ ![Screenshot that shows the Trained status and Last trained time.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-16.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-16.png#lightbox)
 
