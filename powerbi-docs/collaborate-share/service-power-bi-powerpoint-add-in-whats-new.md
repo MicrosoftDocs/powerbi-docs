@@ -28,6 +28,10 @@ Power BI's data insights help you find and explore insights such as anomalies an
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/single-visual-and-insights-demo.gif" alt-text="Animated image showing how to add a data insight to a PowerPoint presentation.":::
 
+### National cloud support
+
+The Power BI add-in for PowerPoint is now supported in national clouds as an admin-managed add-in. Admin's should see [Deploying the add-in in national clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-national-clouds) for further details.
+
 ## Next Steps
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
