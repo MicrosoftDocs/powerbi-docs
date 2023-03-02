@@ -37,7 +37,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
 
 -  Because the maximum row height is 409 points, if the defined height of the cell in the report is something larger than 409 points, Excel splits the cell contents into multiple rows.
   
--   The maximum number of worksheets is not defined in Excel, but external factors, such as memory and disk space, might causes limitations to be applied.  
+-   The maximum number of worksheets is not defined in Excel, but external factors, such as memory and disk space, might cause limitations to be applied.  
   
 -   In outlines, Excel permits up to seven nested levels only.  
   
@@ -96,16 +96,16 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
 ### Report row groups and column groups  
  Reports that include row groups or column groups contain empty cells when exported to Excel. Imagine a report that groups rows on commute distance. Each commute distance can contain more than one customer. The following picture shows the report.  
   
- ![Screenshot of the Report in the Reporting Services web portal](../media/paginated-reports-export/excel-export.png "Report in the Reporting Services web portal")  
+ ![Screenshot of the Report in the Reporting Services web portal](../media/paginated-reports-export/excel-export.png "Report in the Reporting Services web portal.")  
 
   
  When the report is exported to Excel, the commute distance appears only in one cell of the Commute Distance column. Depending on the alignment of the text in the report (top, middle, or bottom) the value is in the first, middle, or last cell. The other cells are empty. The Name column that contains customer names has no empty cells. The following picture shows the report after it is exported to Excel. The red cell borders were added for emphasis. The gray boxes are the empty cells. (Neither the red lines nor the gray boxes are part of the exported report.)  
   
- ![Screenshot of the Report exported to Excel, with lines](../media/paginated-reports-export/exported-excel-lines.png "Report exported to Excel, with lines")  
+ ![Screenshot of the Report exported to Excel, with lines](../media/paginated-reports-export/exported-excel-lines.png "Report exported to Excel, with lines.")  
   
  This means that reports with row groups or column groups require modification after exporting to Excel and before you can display the exported data in pivot table. You must add the group value to cells in which they are missing to make the worksheet a flat table with values in all cells. The following picture shows the updated worksheet.  
   
- ![Screenshot of the Report exported to Excel, flattened](../media/paginated-reports-export/excel-export-no-matrix.png "Report exported to Excel, flattened")  
+ ![Screenshot of the Report exported to Excel, flattened](../media/paginated-reports-export/excel-export-no-matrix.png "Report exported to Excel, flattened.")  
   
  So if you create a report for the specific purpose of exporting it to Excel for further analysis of the report data, consider not grouping on rows or columns in your report.  
   
@@ -217,7 +217,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
  Bookmark links in text boxes are rendered as Excel hyperlinks in the cell in which the text is rendered. Bookmark links for images and charts are rendered as Excel hyperlinks on the image when rendered. When selected, the bookmark goes to the Excel cell in which the bookmarked report item is rendered.  
   
 ##  <a name="ConditionalFormat"></a> Changing reports at run-time  
- If a report must render to multiple formats and it is not possible to create a report layout that renders the way you want in all required formats, then you might consider using the value in the RenderFormat built-in global to conditionally change the report appearance at run time. This way you can hide or show report items depending the renderer used to get the best results in each format. For more information, see [Built-in globals and users references &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder).  
+ If a report must render to multiple formats and it is not possible to create a report layout that renders the way you want in all required formats, then you might consider using the value in the RenderFormat built-in global to conditionally change the report appearance at run time. This way you can hide or show report items depending on the renderer used to get the best results in each format. For more information, see [Built-in globals and users references &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder).  
   
 ## Next steps  
  [Pagination in Reporting Services &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
