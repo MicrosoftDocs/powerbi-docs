@@ -4,8 +4,6 @@ description: Learn about Power BI paginated report chart processing for empty va
 ms.date: 02/24/2023
 ms.service: powerbi
 ms.subservice: report-design
-
-
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
@@ -16,7 +14,7 @@ ms.reviewer: monaraya
 
   If you are displaying fields with empty or null values in a chart in your paginated report, the chart may not look as you expect. Charts process empty values differently depending on the specified chart type:  
   
--   If the chart type is a linear chart type (bar, column, scatter, line, area, range), empty values are displayed as empty spaces or "gaps" in the chart. If you want to indicate empty points, you must add empty point placeholders. For more information, see [Add Empty Points to a Chart &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/add-empty-points-to-a-chart-report-builder-and-ssrs).  
+-   If the chart type is a linear chart type (bar, column, scatter, line, area, range), empty values are displayed as empty spaces or "gaps" in the chart. If you want to indicate empty points, you must add empty point placeholders. For more information, see [Add Empty Points to a Chart &#40;Power BI Report Builder&#41;](add-empty-points-to-chart-report-builder.md).  
   
 -   If the chart type is a contiguous, linear chart type (area, bar, column, line, scatter), empty data points are added to the chart to maintain continuity in the series.  
   
@@ -26,17 +24,17 @@ ms.reviewer: monaraya
   
   
   
-## Removing Empty or Null Values  
+## Removing empty or null values  
  To avoid obscuring important data, consider removing empty values from your dataset. To filter nulls, you can use the NOT IS NULL clause in your query. Alternatively, you can add a filtering expression that specifies that you only want to display values not equal to zero. For more information, see [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters).  
   
-## Fields with No Values in a Chart  
+## Fields with no values in a chart  
  If a field does not contain any values in the returned dataset, the chart displays an empty chart with no data points, but the series name (typically the field name) is added as a legend item.  
   
  This behavior differs from the case where there are zero rows of data in the returned dataset, which can occur when the report is parameterized and the selected value returns an empty result set. If your dataset query returns zero rows of data, a message is displayed at run time to indicate that no data can be shown. You can customize this message by modifying the NoDataMessage caption for the report in the **Properties** pane.
 
 ## Next steps
 
-[Charts](/paginated-reports/report-design/visualizations/charts-report-builder-and-ssrs)   
-[Formatting a Chart](/paginated-reports/report-design/visualizations/formatting-a-chart-report-builder-and-ssrs)   
-[Add a Chart to a Report](/paginated-reports/report-design/visualizations/add-a-chart-to-a-report-report-builder-and-ssrs)   
+[Charts](charts-report-builder.md)   
+[Formatting a Chart](formatting-chart-report-builder.md)   
+[Add a Chart to a Report](add-chart-to-report-report-builder.md)   
 [Troubleshoot Charts](/sql/reporting-services/report-design/troubleshoot-charts-report-builder-and-ssrs)  

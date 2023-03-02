@@ -4,8 +4,6 @@ description: Find out how to change the text of a legend item in Power BI pagina
 ms.date: 02/24/2023
 ms.service: powerbi
 ms.subservice: report-design
-
-
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
@@ -15,9 +13,9 @@ ms.reviewer: monaraya
 
   When a field is placed in the Values area of the Power BI paginated report chart, a legend item is automatically generated that contains the name of this field. Every legend item is connected to an individual series on the chart, with the exception of shape charts, where the legend is connected to individual data points instead of individual series.  
   
- On shape charts, you can change the text of a legend item to show more information about the individual data points. For example, if you want to show the values of the data points as percentages in the legend, you can use a keyword such as **#PERCENT**. You can append .NET Framework format codes in conjunction with keywords to apply numeric and date formats. For more information about keywords, see [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/formatting-data-points-on-a-chart-report-builder-and-ssrs).  
+ On shape charts, you can change the text of a legend item to show more information about the individual data points. For example, if you want to show the values of the data points as percentages in the legend, you can use a keyword such as **#PERCENT**. You can append .NET Framework format codes in conjunction with keywords to apply numeric and date formats. For more information about keywords, see [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](formatting-data-points-on-chart-report-builder.md).  
   
- ![Sharp Chart](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/sharpchart.png "Sharp Chart")  
+ ![Screenshot showing Sharp Chart](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/sharpchart.png "Sharp Chart")  
   
  On non-shape charts, you can change the text of a legend item. For example, if your series name is "Series1", you may want to change the text to something more descriptive like "Sales for 2008".  
   
@@ -28,7 +26,7 @@ ms.reviewer: monaraya
   
 2.  Click **Legend** and in the **Custom legend text** box, type a keyword.  
   
- The following table provides examples of chart-specific keywords to use for the **Custom Legend Text** property. For more information about keywords, see [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/formatting-data-points-on-a-chart-report-builder-and-ssrs).  
+ The following table provides examples of chart-specific keywords to use for the **Custom Legend Text** property. For more information about keywords, see [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](formatting-data-points-on-chart-report-builder.md).  
   
 |Keyword|Description|Example of what appears as text in the legend|  
 |-------------|-----------------|---------------------------------------------------|  
@@ -47,7 +45,7 @@ ms.reviewer: monaraya
 2.  Click **Legend** and in the **Custom legend text** box, type a legend label. The series is updated with your text.  
   
 ## Next steps  
- [Formatting the Legend on a Chart &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/chart-legend-formatting-report-builder)   
- [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/formatting-series-colors-on-a-chart-report-builder-and-ssrs)   
- [Hide Legend Items on the Chart &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/chart-legend-hide-items-report-builder)  
+ [Formatting the Legend on a Chart &#40;Power BI Report Builder&#41;](chart-legend-formatting-report-builder.md)   
+ [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](formatting-series-colors-on-chart-report-builder.md)   
+ [Hide Legend Items on the Chart &#40;Power BI Report Builder&#41;](chart-legend-hide-items-report-builder.md)  
   

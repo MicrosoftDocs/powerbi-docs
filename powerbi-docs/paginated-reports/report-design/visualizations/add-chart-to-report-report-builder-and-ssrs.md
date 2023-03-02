@@ -11,16 +11,14 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: monaraya
 ---
-# Add a chart to a paginated report (Power BI Report Builder)
+# Add a chart to paginated report (Power BI Report Builder)
 
-When you want to summarize data in a visual format in a paginated report, use a Chart data region. It is important to choose an appropriate chart type for the type of data that you are presenting. This affects how well the data can be interpreted when put in chart form. For more information, see [Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs).  
+When you want to summarize data in a visual format in a paginated report, use a Chart data region. It is important to choose an appropriate chart type for the type of data that you are presenting. This affects how well the data can be interpreted when put in chart form. For more information, see [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md).  
   
  The simplest way to add a Chart data region to your report is to run the New Chart Wizard. The wizard offers column, line, pie, bar, and area charts. For these and other chart types, you can also add a chart manually.  
   
  After you add a Chart data region to the design surface, you can drag report dataset fields for numeric and non-numeric data to the Chart Data pane of the chart. Click the chart to display the Chart Data pane with its three areas: Series Groups, Category Groups, and Values.  
   
-> [!NOTE]  
->  You can create and modify paginated report definition (.rdl) files in Microsoft Report Builder, Power BI Report Builder, and in Report Designer in SQL Server Data Tools.
 
 ## Add a chart to a report  
   
@@ -47,12 +45,12 @@ When you want to summarize data in a visual format in a paginated report, use a 
   
 10. On the **Run** tab, click **Design** to continue working on the report.  
   
- On charts with axes, such as bar and column charts, the category axis may not display all the category labels. For more information about how to change the axis labels, see [Specify an Axis Interval &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-an-axis-interval-report-builder-and-ssrs).  
+ On charts with axes, such as bar and column charts, the category axis may not display all the category labels. For more information about how to change the axis labels, see [Specify an Axis Interval &#40;Power BI Report Builder&#41;](specify-an-axis-interval-report-builder.md).  
   
 ## Next steps  
- [Charts &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/charts-report-builder-and-ssrs)   
- [Chart Types &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/chart-types-report-builder-and-ssrs)   
- [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/empty-and-null-data-points-in-charts-report-builder-and-ssrs)   
- [Tutorial: Adding a Bar Chart to Your Report (Power BI Report Builder)](/paginated-reports/tutorials/tutorial-add-a-bar-chart-to-your-report-report-builder)   
- [Tutorial: Adding a Pie Chart to Your Report (Power BI Report Builder)](/paginated-reports/tutorials/tutorial-add-a-pie-chart-to-your-report-report-builder)   
+ [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
+ [Chart Types &#40;Power BI Report Builder&#41;](chart-types-report-builder.md)   
+ [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](empty-and-null-data-points-in-charts-report-builder.md)   
+ [Tutorial: Adding a Bar Chart to Your Report (Power BI Report Builder)](tutorial-add-bar-chart-to-your-report-report-builder.md)   
+ [Tutorial: Adding a Pie Chart to Your Report (Power BI Report Builder)](tutorial-add-pie-chart-to-your-report-report-builder.md)   
  
