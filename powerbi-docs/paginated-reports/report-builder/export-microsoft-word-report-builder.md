@@ -1,6 +1,6 @@
 ---
 title: "Export Power BI paginated report to Microsoft Word (Power BI Report Builder) | Microsoft Docs"
-ms.date: 03/027/2023
+ms.date: 03/02/2023
 ms.service: powerbi
 ms.subservice: report-builder
 description: The Word rendering extension renders Power BI paginated reports to the Microsoft Word format (.docx). The format is Office Open XML.
