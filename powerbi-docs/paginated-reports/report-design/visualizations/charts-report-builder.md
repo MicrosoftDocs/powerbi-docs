@@ -122,8 +122,8 @@ The more time you spend carefully preparing and understanding your data before y
  [Images, Text Boxes, Rectangles, and Lines &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/images-text-boxes-rectangles-and-lines-report-builder-and-ssrs)   
  [Interactive Sort, Document Maps, and Links &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/interactive-sort-document-maps-and-links-report-builder-and-ssrs)   
  [Nested Data Regions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs)   
- [Tutorial: Add a Column Chart to Your Report &#40;Power BI Report Builder&#41;](tutorial-add-column-chart-to-your-report-report-builder.md)   
- [Tutorial: Add a Pie Chart to Your Report &#40;Power BI Report Builder&#41;](tutorial-add-pie-chart-to-your-report-report-builder.md)   
- [Tutorial: Add a Bar Chart to Your Report &#40;Power BI Report Builder&#41;](tutorial-add-bar-chart-to-your-report-report-builder.md)  
+ [Tutorial: Add a Column Chart to Your Report &#40;Power BI Report Builder&#41;](/paginated-reports/tutorials/tutorial-add-column-chart-to-your-report-report-builder)   
+ [Tutorial: Add a Pie Chart to Your Report &#40;Power BI Report Builder&#41;](/paginated-reports/tutorials/tutorial-add-pie-chart-to-your-report-report-builder)   
+ [Tutorial: Add a Bar Chart to Your Report &#40;Power BI Report Builder&#41;](/paginated-reports/tutorials/tutorial-add-bar-chart-to-your-report-report-builder)  
   
   

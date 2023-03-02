@@ -17,7 +17,7 @@ On the value axis (usually the y axis), axis intervals provide a consistent meas
 
 But on the category axis (usually the x axis), sometimes an automatic axis interval results in categories without axis labels. You can specify the number of intervals you want in the axis Interval property. Report Builder calculates the number of intervals at run time, based on the data in the result set. For more information about how axis intervals are calculated, see [Formatting Axis Labels on a Chart](formatting-axis-labels-on-chart-report-builder.md).  
 
-To try setting the axis interval with sample data, see [Tutorial: Add a Column Chart to Your Report (Power BI Report Builder)](tutorial-add-column-chart-to-your-report-report-builder.md).
+To try setting the axis interval with sample data, see [Tutorial: Add a Column Chart to Your Report (Power BI Report Builder)](/paginated-reports/tutorials/tutorial-add-column-chart-to-your-report-report-builder).
   
 > [!NOTE]  
 >  The category axis is usually the horizontal or x-axis. However, for bar charts, the category axis is the vertical or y-axis.  

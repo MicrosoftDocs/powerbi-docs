@@ -48,7 +48,7 @@ When you want to summarize data in a visual format in a paginated report, use a 
 ## Next steps  
  [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
  [Chart Types &#40;Power BI Report Builder&#41;](chart-types-report-builder.md)   
- [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](empty-and-null-data-points-in-charts-report-builder.md)   
- [Tutorial: Adding a Bar Chart to Your Report (Power BI Report Builder)](tutorial-add-bar-chart-to-your-report-report-builder.md)   
+ [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](/paginated-reports/tutorials/empty-and-null-data-points-in-charts-report-builder)   
+ [Tutorial: Adding a Bar Chart to Your Report (Power BI Report Builder)](/paginated-reports/tutorials/tutorial-add-bar-chart-to-your-report-report-builder)   
  [Tutorial: Adding a Pie Chart to Your Report (Power BI Report Builder)](/paginated-reports/tutorials/tutorial-add-a-pie-chart-to-your-report-report-builder)   
  
