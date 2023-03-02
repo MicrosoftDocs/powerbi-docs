@@ -24,7 +24,7 @@ To enable this feature, your tenant needs to have the following switches enabled
 
 - [Allow XMLA Endpoints and Analyze in Excel with on-premises datasets](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets). If this switch is disabled a DirectQuery connection to a Power BI dataset cannot be made.
 - [Users can work with Power BI datasets in Excel using a live connection](../admin/service-admin-portal-export-sharing.md#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection). If this switch is disabled, users cannot make live connections to Power BI datasets so the [**Make changes to this model** button](#using-directquery-for-live-connections) cannot be reached.
-- [Allow DirectQuery connection to Power BI datasets](../admin/service-admin-portal-export-sharing.d#allow-directquery-connections-to-power-bi-datasets). See below for more information on this switch and the effect of disabling it.
+- [Allow DirectQuery connection to Power BI datasets](../admin/service-admin-portal-export-sharing.md#allow-directquery-connections-to-power-bi-datasets). See below for more information on this switch and the effect of disabling it.
 
 Additionally, for Premium capacities and Premium Per User the ["XMLA endpoint" setting should be enabled and set to to either "Read Only" or "Read/Write"](../enterprise/service-premium-connect-tools.md#enable-xmla-read-write).
 
