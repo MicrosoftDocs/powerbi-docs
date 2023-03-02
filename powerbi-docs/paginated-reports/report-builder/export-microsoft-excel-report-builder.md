@@ -1,7 +1,7 @@
 ---
 title: "Export Power BI paginated report to Microsoft Excel (Power BI Report Builder) | Microsoft Docs"
 description: In Power BI Report Builder, the Excel rendering extension renders a Power BI paginated report to the Office Open XML format to use with Microsoft Excel.
-ms.date: 02/27/2023
+ms.date: 03/02/2023
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -41,7 +41,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
 -   In outlines, Excel permits up to seven nested levels only.  
   
--   If the report item that controls whether another item is toggled is not in the previous or next row or column of the item being toggled, the outline is disabled also.  
+-   If the report item that controls whether another item is toggled isn't in the previous or next row or column of the item being toggled, the outline is disabled also.  
   
  For more details about Excel limitations, see [Excel specifications and limits](https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3).  
   
@@ -67,7 +67,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
 -   The Excel rendering extension only supports the background image of the report body. If a report body background image is displayed in the report, the image is rendered as a worksheet background image.  
   
 ### Rectangles  
- The following limitation apply to rectangles.  
+ The following limitation applies to rectangles.  
   
 -   Rectangles in report footers are not exported to Excel. However, rectangles in the report body, tablix cells, and so forth are rendered as a range of Excel cells.  
   
@@ -127,7 +127,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
 |Number of colors allowed in a worksheet|56 (palette)<br /><br /> If more than 56 colors are used in the report, the rendering extension matches the required color to one of the 56 colors already available in the custom palette.|Approximately 16 million (24-bit color)|  
 |ZIP compressed files|None|ZIP compression|  
 |Default font family|Arial|Calibri|  
-|Default font size|10pt|11pt|  
+|Default font size|10 pt|11 pt|  
 |Default row height|12.75 pt|15 pt|  
   
  Because the report explicitly sets the row height, the default row height affects only rows that are sized automatically upon export to Excel.  
@@ -193,7 +193,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
 -   To determine where the subtotals are placed in the rendered report, the rendering extension examines the first instance of a dynamic member. If a peer static member appears immediately above it, the dynamic member is assumed to be the subtotals. Outlines are set to indicate that this is summary data. If there are no static siblings of a dynamic member, the first instance of the instance is the subtotal.  
   
--   Due to an Excel limitation, outlines can be nested up to 7 levels only.  
+-   Due to an Excel limitation, outlines can be nested up to seven levels only.  
   
 ### Document map  
  If any document map labels exist in the report, a document map is rendered. The document map is rendered as an Excel cover worksheet inserted at the first tab position in the workbook. The worksheet is named **Document map**.  
@@ -202,7 +202,7 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
   
  The document map outline is rendered as a collapsible Excel outline. The outline structure matches the nested structure of the document map. The expand and collapse state of the outline starts at the second level.  
   
- The root node of the map is the report name, the \<*reportname*>.rdl, and it is not interactive. The document map links font is Arial, 10pt.  
+ The root node of the map is the report name, the \<*reportname*>.rdl, and it is not interactive. The document map links font is Arial, 10 pt.  
   
 ### Drillthrough links  
  Drillthrough links that appear in text boxes are rendered as Excel hyperlinks in the cell in which the text is rendered. Drillthrough links for images and charts are rendered as Excel hyperlinks on the image when rendered. When selected, the drillthrough link opens the client's default browser and navigates to the HTML view of the target.  
