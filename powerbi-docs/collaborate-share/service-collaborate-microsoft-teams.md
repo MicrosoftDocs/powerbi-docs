@@ -9,12 +9,14 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 02/13/2023
+ms.date: 03/01/2023
 ---
 
 # Collaborate with Power BI in Microsoft Teams, Outlook, and Office
 
 Organizations rely on Microsoft Teams, Microsoft Outlook, and Microsoft Office to enable remote work and keep employees in sync. This article outlines options for sharing and collaborating on interactive Power BI content in Microsoft Teams, Outlook, and Office.
+ 
+:::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Screenshot of a Power BI report embedded in a Microsoft Teams channel." lightbox="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png":::
 
 > [!NOTE]
 > The Power BI app is generally available in Microsoft Teams. The Power BI app is in public preview in Microsoft Outlook and Microsoft Office. Learn more about the [public preview](#OutlookOffice).
@@ -28,8 +30,6 @@ Organizations rely on Microsoft Teams, Microsoft Outlook, and Microsoft Office t
 - [Create a Teams usage report](service-teams-analytics.md) automatically in the Power BI app in Teams: Analyze your Teams activity.
 - [Get notified](service-teams-notifications.md) in the Teams activity feed when important things happen in Power BI.
 - Discover and use Power BI in Teams mobile.
- 
-:::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Screenshot of a Power BI report embedded in a Microsoft Teams channel.":::
 
 ## Requirements
 
