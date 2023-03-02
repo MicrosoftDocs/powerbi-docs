@@ -11,14 +11,14 @@ ms.topic: how-to
 ms.date: 03/01/2023
 ---
 
-# Monitor Power BI Embedded data
+# Power BI Embedded monitoring data
 
 When you have critical applications and business processes that rely on Azure resources, you want to monitor those resources for their availability, performance, and operation. This article describes the monitoring data that Microsoft Power BI Embedded generates and how you can use the features of Azure Monitor to analyze and set alerts for this data.
 
 >[!TIP]
 >You can also use the [Premium metrics app](../../enterprise/service-premium-metrics-app.md) to monitor your capacity.
 
-## Monitor overview
+## Power BI Embedded Overview page
 
 For each Power BI Embedded instance in the Azure portal, the **Overview** page includes the following information:
 
@@ -137,10 +137,7 @@ Azure Monitor alerts proactively notify you when important conditions are found 
 
 ## Next steps
 
-Learn more about Azure resource diagnostic logging:
+Learn more about monitoring data:
 
->[!div class="nextstepaction"]
->[Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md)
-
->[!div class="nextstepaction"]
->[Monitor Azure resources with Azure Monitor](/azure/azure-monitor/insights/monitor-azure-resource)
+[Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md)
+[Monitor Azure resources with Azure Monitor](/azure/azure-monitor/insights/monitor-azure-resource)
