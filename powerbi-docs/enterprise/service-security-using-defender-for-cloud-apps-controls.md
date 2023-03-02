@@ -6,13 +6,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 12/27/2022
+ms.date: 03/02/2023
 ms.author: painbar
 LocalizationGroup: Data from files
 ---
 # Using Microsoft Defender for Cloud Apps controls in Power BI
 
-By using Defender for Cloud Apps with Power BI, you can help protect your Power BI reports, data, and services from unintended leaks or breaches. With Defender for Cloud Apps, you can create conditional access policies for your organization's data. By using real-time session controls in Azure Active Directory (Azure AD), you can ensure your Power BI analytics are secure. Once these policies are set, administrators can monitor user access and activity, perform real-time risk analysis, and set label-specific controls.
+By using Defender for Cloud Apps with Power BI, you can help protect your Power BI reports, data, and services from unintended leaks or breaches. With Defender for Cloud Apps, you can create conditional access policies for your organization's data, by using real-time session controls in Azure Active Directory (Azure AD), that help to ensure your Power BI analytics are secure. Once these policies are set, administrators can monitor user access and activity, perform real-time risk analysis, and set label-specific controls.
 
 > [!NOTE]
 > Microsoft Defender for Cloud Apps is now part of [**Microsoft 365 Defender**](https://security.microsoft.com). For more information, see [**Microsoft Defender for Cloud Apps in Microsoft 365 Defender**](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
@@ -76,7 +76,7 @@ Custom activity policies are configured in the Defender for Cloud Apps portal. F
 
 ## Built-in Defender for Cloud Apps detections for Power BI
 
-Defender for Cloud Apps detection enables administrators to monitor specific activities of a monitored app. For Power BI, there are currently two dedicated, built-in Defender for Cloud Apps detections:
+Defender for Cloud Apps detections enable administrators to monitor specific activities of a monitored app. For Power BI, there are currently two dedicated, built-in Defender for Cloud Apps detections:
 
 * **Suspicious share** – detects when a user shares a sensitive report with an unfamiliar (external to the organization) email. A sensitive report is a report whose sensitivity label is set to **INTERNAL-ONLY** or higher.
 
@@ -94,7 +94,7 @@ Using Defender for Cloud Apps with Power BI is designed to help secure your orga
 
 * Defender for Cloud Apps can only operate on Excel, PowerPoint, and PDF files.
 * If you want to use sensitivity label capabilities in your session policies for Power BI, you need an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. For more information, see [Azure Information Protection pricing](https://azure.microsoft.com/services/information-protection/). In addition, sensitivity labels must have been applied on your Power BI assets.
-* Session control is available for any browser on any major platform on any operating system. We recommend using the latest version of Internet Explorer, Microsoft Edge, Google Chrome, Mozilla Firefox, or Apple Safari. Power BI public API calls and other non-browser-based sessions aren't supported as part of Defender for Cloud Apps session control. For more information, see [Supported apps and clients](/defender-cloud-apps/proxy-intro-aad#supported-apps-and-clients).
+* Session control is available for any browser on any major platform on any operating system. We recommend using the latest version of Microsoft Edge, Google Chrome, Mozilla Firefox, or Apple Safari. Power BI public API calls and other non-browser-based sessions aren't supported as part of Defender for Cloud Apps session control. For more information, see [Supported apps and clients](/defender-cloud-apps/proxy-intro-aad#supported-apps-and-clients).
 * If you experience sign in difficulties, such as having to sign in more than once, it could be related to the way some apps handle authentication. For more information, see the troubleshooting article [Slow login](/defender-cloud-apps/troubleshooting-proxy#slow-login).
 
 > [!CAUTION]
