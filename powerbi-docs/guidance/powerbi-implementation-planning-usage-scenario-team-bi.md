@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Team BI"
 description: "Learn how Power BI team BI is about small team collaboration."
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

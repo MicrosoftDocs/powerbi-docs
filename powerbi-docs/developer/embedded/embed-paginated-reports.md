@@ -155,6 +155,7 @@ Follow the instructions in the [embed content for your customers](embed-sample-f
 
 * To use a **Power BI dataset** as a data source:
 
+  * Make sure the tenant setting [*Allow XMLA endpoints and Analyze in Excel with on-premises datasets*](../../enterprise/service-premium-connect-tools.md#security) is enabled.
   * In the Power BI portal, set the **XMLA endpoint** to *Read Only* or *Read Write* as described in [enable read-write for a Premium capacity](/power-bi/enterprise/service-premium-connect-tools#to-enable-read-write-for-a-premium-capacity). You only need to do this once per capacity.
   * Generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token) with the [dataset ID](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) specified in the request, and the [XmlaPermissions](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) set to *Read Only*.
 
@@ -191,11 +192,6 @@ For a full list of supported datasets and their authentication methods, see [Sup
 
 ## Next steps
 
-> [!div class="nextstepaction"]
->[Tutorial: Embed a Power BI report in an application for your organization](embed-organization-app.md)
-
-> [!div class="nextstepaction"]
->[Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
-
-> [!div class="nextstepaction"]
->[Considerations when generating an embed token](generate-embed-token.md)
+* [Tutorial: Embed a Power BI report in an application for your organization](embed-organization-app.md)
+* [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
+* [Considerations when generating an embed token](generate-embed-token.md)

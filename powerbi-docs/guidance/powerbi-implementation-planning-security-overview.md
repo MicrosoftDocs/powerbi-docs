@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Security"
 description: "An introduction to the Power BI security planning articles."
-author: kfollis
-ms.author: kfollis
+author: paulinbar
+ms.author: painbar
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

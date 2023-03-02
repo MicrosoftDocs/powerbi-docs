@@ -7,7 +7,7 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/13/2023
+ms.date: 02/27/2023
 LocalizationGroup: Share your work
 ---
 # Create Excel workbooks with refreshable Power BI data
@@ -111,6 +111,7 @@ While viewing a Power BI visual, you may want to further explore the visual data
 - Analyze in Excel and Export with live connection aren't supported in Power BI Report Server or Power BI PaaS Embedded.
 - Analyze in Excel might not work as expected if field parameters are used in the underlying Power BI dataset.
 - Analyze in Excel and Export with live connection aren't available for Power BI datasets with a live connection to Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS).
+- Say you have a Power BI report that's built on a live connection to a data source, and you add other measures to the report in Power BI. If you use the Export with live connection option to export data from a visual in that report, the measures that you added won't be available in the data you export to Excel. Only measures from the data source will be available in the exported data.
 - Mac users can only use Excel for the web to explore Excel workbooks containing Power BI datasets.
 - The column name and order in a Power BI visual may not be preserved when data is exported to Excel from that visual.
 
