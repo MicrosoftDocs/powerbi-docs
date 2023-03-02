@@ -115,7 +115,7 @@ Mouse users typically drag-and-drop fields to the canvas or to the relevant filt
 The **Selection** pane has the following focus order progression:
 
 1. Header title
-1. The collapse carat and the exit button
+1. Collapse carat and the exit button
 1. Layer and tab order switcher
 1. Move up in layer button
 1. Move down in layer button
@@ -129,7 +129,7 @@ You can tab through the focus order and press **Enter** to select the element yo
 
 When you get to the layer and tab order switcher, use the left and right arrow keys to switch between the layer order and tab order.
 
-When you get to the objects in the **Selection** pane, press **F6** to activate the **Selection** pane. After activating the **Selection** pane, you can use the up and down arrow keys to navigate to the different objects in the **Selection** pane.
+When you get to the objects in the **Selection** pane, press **F6** to activate the **Selection** pane. After activating the **Selection** pane, you can use the **Up** and **Down** arrow keys to navigate to the different objects in the **Selection** pane.
 Once you’ve navigated to an object of interest, there are a few different actions you can take:
 
 * Press **Ctrl + Shift + S** to hide or show an object.
@@ -158,7 +158,7 @@ When you use high-contrast modes in Windows, those settings and the palette you 
 
 :::image type="content" source="media/desktop-accessibility/accessibility-create-reports-12-2.png" alt-text="Screenshot of the high contrast settings in Windows.":::
 
-Power BI Desktop automatically detects which high-contrast theme Windows is using and applies those settings to your reports. Those high-contrast colors follow the report when published to the Power BI service or elsewhere.
+Power BI Desktop automatically detects which high-contrast theme Windows uses and applies those settings to your reports. Those high-contrast colors follow the report when published to the Power BI service or elsewhere.
 
 :::image type="content" source="media/desktop-accessibility/accessibility-05b-2.png" alt-text="Screenshot of the high contrast settings on the Power BI service.":::
 
