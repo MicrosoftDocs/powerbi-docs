@@ -1,6 +1,6 @@
 ---
 title: "Export Power BI paginated report to Microsoft Word (Power BI Report Builder) | Microsoft Docs"
-ms.date: 02/27/2023
+ms.date: 03/027/2023
 ms.service: powerbi
 ms.subservice: report-builder
 description: The Word rendering extension renders Power BI paginated reports to the Microsoft Word format (.docx). The format is Office Open XML.
@@ -89,7 +89,7 @@ The Word rendering extension renders Power BI paginated reports to the Microsoft
  The report contents are rendered based on how they are currently sorted within the report data region. Word does not support interactive sorting. After the report is rendered, you can apply table sorting within Word.  
   
 ### Bookmarks  
- Bookmarks in the report are rendered as Word bookmarks. Bookmark links are rendered as hyperlinks that connect to the bookmark labels within the document. Bookmark labels must be less than 40 characters long. The only special character that can be used in a bookmark label is an underscore (_). Unsupported special characters are stripped from the bookmark label name and, if the name is longer than 40 characters, the name is truncated. If there are duplicate bookmark names in the report, the bookmarks are not rendered in Word.  
+ Bookmarks in the report are rendered as Word bookmarks. Bookmark links are rendered as hyperlinks that connect to the bookmark labels within the document. Bookmark labels must be fewer than 40 characters long. The only special character that can be used in a bookmark label is an underscore (_). Unsupported special characters are stripped from the bookmark label name and, if the name is longer than 40 characters, the name is truncated. If there are duplicate bookmark names in the report, the bookmarks are not rendered in Word.  
   
 ##  <a name="WordStyleRendering"></a> Word style rendering  
  The following is a brief description of how styles are rendered in Word.  
