@@ -22,7 +22,12 @@ Q&A can work on any uploaded Excel file that contains tables, ranges, or a Power
 
 Q&A has a set of core natural language understanding abilities that work across your data. It has context-dependent keyword search for your Excel table, column, and calculated field names. It also has built-in knowledge for how to filter, sort, aggregate, group, and display data.
 
-For example, in an Excel table named “Sales”, with columns “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”, you could ask questions about any of those entities. You could ask to show sales, total profit by month, sort products by units sold, and many others. Read more about [using Q&A in dashboards and reports](power-bi-tutorial-q-and-a.md), and [visualization types you can specify in a Q&A query](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+For example, in an Excel table named “Sales”, with columns “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”, you could ask questions about any of those entities. You could ask to show sales, total profit by month, sort products by units sold, and many others. Read more:
+
+- [Using Q&A in dashboards and reports](power-bi-tutorial-q-and-a.md)
+- [Visualization types you can specify in a Q&A query](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+Or get started.
 
 ## Prepare an Excel dataset for Q&A
 
