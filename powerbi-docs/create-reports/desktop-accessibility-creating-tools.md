@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 03/03/2023
 LocalizationGroup: Create reports
 ---
-# Creating reports in Power BI using accessibility tools
+# Create reports in Power BI using accessibility tools
 
 For report creators who use accessibility tools to create reports, Power BI has many built-in capabilities that can help in the process.
 
