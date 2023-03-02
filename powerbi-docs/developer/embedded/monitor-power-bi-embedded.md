@@ -139,5 +139,5 @@ Azure Monitor alerts proactively notify you when important conditions are found 
 
 Learn more about monitoring data:
 
-[Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md)
-[Monitor Azure resources with Azure Monitor](/azure/azure-monitor/insights/monitor-azure-resource)
+* [Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md)
+* [Monitor Azure resources with Azure Monitor](/azure/azure-monitor/insights/monitor-azure-resource)
