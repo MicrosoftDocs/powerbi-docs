@@ -19,7 +19,7 @@
       href: end-user-shared-with-me.md
     - name: "Export a report to PDF"
       href: end-user-pdf.md
-    - name: "Request access to a report or dashboard"
+    - name: "Request or grant access to a report"
       href: service-request-access.md
     - name: "Filter and share a report"
       href: service-share-reports.md
