@@ -40,7 +40,7 @@ The Power BI report editor is divided into several main sections:
 
 ## The ribbon
 
-The ribbon is the only part of the report editor that's not the same in Power BI Desktop and the Power BI service. The actions available from the ribbon vary,  what you have selected on the canvas. New actions are being added all the time. For information about a particular action, use the Power BI documentation table of contents, or the Search box.
+The ribbon is the only part of the report editor that's not the same in Power BI Desktop and the Power BI service. The actions available from the ribbon vary,  depending on what you have selected on the canvas. New actions are being added all the time. For information about a particular action, use the Power BI documentation table of contents, or the Search box.
 
 ## The report canvas
 
