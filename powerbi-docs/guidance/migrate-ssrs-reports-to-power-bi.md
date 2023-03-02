@@ -113,7 +113,6 @@ If your .rdl reports rely on features [not yet supported by Power BI paginated r
 
 For more information about supported data sources for paginated reports in the Power BI service, see [Supported data sources for Power BI paginated reports](../paginated-reports/paginated-reports-data-sources.md#other-data-sources).
 
-Power BI allows you to map user names for Analysis Services data sources. The map user names feature is a great way to work around when your user name in Azure Active Directory (Azure AD) doesn't match a UPN in your local Active Directory instance.  To learn more, see this article [Manage your data source - Analysis Services - Power BI](../connect-data/service-gateway-enterprise-manage-ssas.md#user-names-with-analysis-services).
 
 Generally, Power BI paginated reports are optimized for **printing**, or **PDF generation**. Power BI reports are optimized for **exploration and interactivity**. For more information, see [When to use paginated reports in Power BI](report-paginated-or-power-bi.md).
 
