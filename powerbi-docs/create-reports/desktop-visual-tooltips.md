@@ -73,11 +73,11 @@ If you select **Drill through**, you see which pages you can drill through to. I
 
 If you select **Market Basket Analysis** in the tooltip, you drill through to the Market Basket Analysis page, filtered to *Word* and any other filters on the source data point.
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-drill-through-market-basket.png" alt-text="Screenshot of the drill through to the Market Basket Analysis page.":::
+:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-drill-through-market-basket.png" alt-text="Screenshot of the drill through to the Market Basket Analysis page." lightbox="media/desktop-visual-tooltips/power-bi-visual-tooltip-drill-through-market-basket.png":::
 
 ## Updated styling
 
-Once you upgrade to the new tooltips, you might notice an updated styling that's based on the report’s [theme colors](desktop-report-themes.md#setting-structural-colors):
+Once you upgrade to the new tooltips, you might notice an updated styling that's based on the report’s [theme colors](desktop-report-themes.md#set-structural-colors):
 
 - The background of the tooltips default to the **Background elements**.
 - The text and icon color of the tooltips default to the **First-level elements**.
