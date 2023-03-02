@@ -1,7 +1,7 @@
 ---
-title: "Export Power BI paginated reports (Power BI Report Builder) | Microsoft Docs"
+title: "Export Power BI paginated reports (Power BI Report Builder)"
 description: You can export a Power BI paginated report to another file format, like PowerPoint or PDF, using Power BI Report Builder.
-ms.date: 02/27/2023
+ms.date: 03/02/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -34,7 +34,7 @@ You can export a Power BI paginated report to another file format, such as Power
   
 2.  On the ribbon, select **Export**.  
   
-     ![Screenshot of the Power BI Report Builder Export options.](../media/paginated-reports-export/export.png "Power BI Report Builder Export")  
+     ![Screenshot of the Power BI Report Builder Export options.](../media/paginated-reports-export/export.png "Power BI Report Builder Export.")  
   
 3.  Select the format that you want to use.  
   
@@ -49,7 +49,7 @@ You can export a Power BI paginated report to another file format, such as Power
 
 3.  On the Report Viewer toolbar, select the **Export** drop-down arrow.  
   
-     ![Screenshot of the Power BI service Export.](../media/paginated-reports-export/portal-export.png "Power BI service Export") 
+     ![Screenshot of the Power BI service Export.](../media/paginated-reports-export/portal-export.png "Power BI service Export.") 
   
 4.  Select the format that you want to use.  
   
