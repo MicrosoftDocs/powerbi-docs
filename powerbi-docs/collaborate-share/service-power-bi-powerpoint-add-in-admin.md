@@ -52,14 +52,16 @@ The button is a shortcut to the add-in offering in the Office add-in store. The 
 
 ## Deploying the add-in in national clouds
 
-The Power BI add-in for PowerPoint is available in national clouds as an admin managed add-in. If you're a Power BI admin in a tenant located in a national cloud, you can make the add-in available to your users as follows:
+In national clouds, the add-in is supported as an admin managed add-in only. If you're a Power BI admin in a tenant located in a national cloud, you must download the add-in from Power BI in your national cloud and deploy it using Centralized Deployment. The add-in that is available from the public cloud will not work in national clouds. Users in national clouds must use the add-in you've deployed.
+
+To download and deploy the add-in:
 
 1. Sign into the Power BI service with an admin account.
 1. Select the **Download** icon and choose **Power BI for PowerPoint** to download the add-in. You'll have this option only if your tenant is in a national cloud.
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-admin/power-bi-powerpoint-addin-download-option.png" alt-text="Screenshot of the Power BI for PowerPoint add-in download option.":::
 
-1. See [Deploy add-ins in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins) to learn how to deploy the add-in for your users.
+1. Deploy the add-in according to the instructions at [Deploy add-ins in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins).
 
 ## Next Steps
 
