@@ -1,18 +1,18 @@
 ---
 title: Request or grant access to dashboards or reports
-description: Learn how to request access if someone sends you a link to a dashboard or a report, but doesn't share it with you.
+description: Learn how to request access if someone sends you a link to a dashboard or a report, but doesn't share it with you. Learn how to grant access if someone requests it.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/10/2023
+ms.date: 03/01/2023
 LocalizationGroup: Share your work
 ---
 # Request or grant access to shared dashboards or reports
 
-If someone sends you a link to a dashboard or a report, but it's not shared with you, you can request access. 
+If someone sends you a link to a dashboard or a report, but it's not shared with you, you can request access. If you share a dashboard or a report with someone, you need to [grant them access](#grant-access).
 
 ## Request access
 
@@ -20,7 +20,7 @@ If someone sends you a link to a dashboard or a report, but it's not shared with
 
     :::image type="content" source="media/service-request-access/power-bi-request-access.png" alt-text="Screenshot of the Request access message.":::
 
-1. In the **Request access** dialog box, you can provide a reason, or just select **Send request**.
+1. In the **Request access** dialog, you can provide a reason, or just select **Send request**.
 
     :::image type="content" source="media/service-request-access/power-bi-submit-access-request.png" alt-text="Screenshot of the Request access dialog box with the Send request button.":::
 
@@ -44,7 +44,7 @@ If you're a report owner, you might receive an email from **Microsoft Power BI**
 
 ## Next steps
 
-- [Share Power BI dashboards and reports with coworkers and others.](service-share-dashboards.md)
+- [Share Power BI dashboards and reports with coworkers and others](service-share-dashboards.md)
 - [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
 - [Share a filtered Power BI report.](service-share-reports.md)
 - Questions? [Ask the Power BI Community.](https://community.powerbi.com)
