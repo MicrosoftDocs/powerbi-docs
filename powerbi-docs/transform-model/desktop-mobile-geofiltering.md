@@ -1,6 +1,6 @@
 ---
 title: Set geographic filters in Power BI Desktop for the mobile apps
-description: Learn how to set geographic filtering in your model in Power BI Desktop, so can filter data for your location automatically in the Power BI mobile apps.
+description: Learn how to set your model’s geographic filtering in Power BI Desktop, so you can automatically filter data for your location in Power BI mobile apps.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
@@ -24,18 +24,18 @@ For example, say you're a sales manager that travels to meet customers, and you 
 
 1. In Power BI Desktop, switch to the Data view :::image type="icon" source="media/desktop-mobile-geofiltering/pbi_desktop_data_icon.png"::: .
 
-2. Select a column with geographic data; for example, a City column.
+2. Select a column with geographic data, for example, a City column.
 
     :::image type="content" source="media/desktop-mobile-geofiltering/power-bi-desktop-geo-column.png" alt-text="Screenshot of the Data Category dropdown list with City highlighted.":::
 
-3. On the **Column tools** tab, select **Data category**, then the correct category; in this example, **City**.
+3. On the **Column tools** tab, select **Data category**, then the correct category, in this example, **City**.
 
     :::image type="content" source="media/desktop-mobile-geofiltering/power-bi-desktop-geo-category.png" alt-text="Screenshot of the data icon in Power BI Desktop with the City column highlighted.":::
 
 4. Continue setting geographic data categories for any other fields in the model.
 
    > [!NOTE]
-   > You can set multiple columns for each data category in a model, but if you do the model can't filter for geography in the Power BI mobile app. To use geographic filtering in the mobile apps, set only one column for each data category; for example, only one **City** column, one **State or Province** column, and one **Country or Region** column.
+   > You can set multiple columns for each data category in a model, but if you do, the model can't filter for geography in the Power BI mobile app. To use geographic filtering in the mobile apps, set only one column for each data category. For example, set only one **City** column, one **State or Province** column, and one **Country or Region** column.
    >
    >
 
