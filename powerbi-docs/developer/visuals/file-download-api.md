@@ -17,9 +17,13 @@ The **file download API** lets users download data from a custom visual into a f
 :::image type="content" source="./media/file-download-api/custom-visuals-download-admin-setting.png" alt-text="Screenshot of admin setting enabling custom visual downloads.":::
 
 >[!NOTE]
->The **file download API** is available from API version 4.5
+>The **file download API** has two methods:
+>
+> * [`exportVisualsContent`](#the-exportvisualscontent-method) is available from API version 4.5
+> * [`exportVisualsContentExtended`](#the-exportvisualscontentextended-method) is available from API version 5.3.
+> * To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
-The **file download API** can export to files of the following types:
+Use the **file download API** to export to files of the following types:
 
 * .txt
 * .csv
@@ -35,12 +39,37 @@ Before the download begins, a window will pop up asking to confirm that the visu
 
 ## How to use the file download API
 
+The **file download API** has two methods:
+
+* [`exportVisualsContent`](#the-exportvisualscontent-method): available from API version 4.5
+* [`exportVisualsContentExtended`](#the-exportvisualscontentextended-method): available from API version 5.3.
+
+The difference between the two methods is the return value.
+
+### The `exportVisualsContent` method
+
 The `exportVisualsContent` method has four parameters:
 
 * content: string
 * filename: string
 * fileType: string - When exporting to a *.pdf* or *.xlsx* file, the `fileType` parameter should be `base64`.
 * fileDescription: string
+
+This method returns a promise that will be resolved for a Boolean value
+
+### The `exportVisualsContentExtended` method
+
+The `exportVisualsContentExtended` method also has four parameters:
+
+* content: string
+* filename: string
+* fileType: string - When exporting to a *.pdf* or *.xlsx* file, the `fileType` parameter should be `base64`.
+* fileDescription: string
+
+This method returns a promise which will be resolved with a result of type `ExportContentResultInfo` which contains the following:
+
+* downloadCompleted – if the download completed successfully.
+* filename – the exported file name.
 
 ## Example: file download API
 
@@ -52,26 +81,49 @@ import IDownloadService = powerbi.extensibility.IDownloadService;
 
 export class Visual implements IVisual {
     ...
-    private new_em: HTMLElement;
-    private static downloadService: IDownloadService;
+    private downloadService: IDownloadService;
     ...
 
     constructor(options: VisualConstructorOptions) {
-         Visual.downloadService = options.host.downloadService;
+        this.downloadService = options.host.downloadService;
          ...
-         this.new_em.onclick = () => {
-            let contentXlsx: string = ...;//content in base64
-            Visual.downloadService.exportVisualsContent(contentXlsx, "myfile.xlsx", "base64","xlsx file");
 
+        const downloadBtn: HTMLElement = document.createElement("button");
+        downloadBtn.onclick = () => {
+            let contentXlsx: string = ...;//content in base64
             let contentTxt: string = ...;
-            Visual.downloadService.exportVisualsContent(contentTxt, "mytxt.txt", "txt","txt file");
+            this.downloadService.exportVisualsContent(contentTxt, "mytxt.txt", "txt", "txt file").then((result) => {
+                if (result) {
+                    //do something
+                }
+            }).catch(() => {
+                //handle error
+            });
+
+            this.downloadService.exportVisualsContent(contentXlsx, "myfile.xlsx", "base64", "xlsx file").then((result) => {
+                if (result) {
+                    //do something
+                }
+            }).catch(() => {
+                //handle error
+            });
+
+            this.downloadService.exportVisualsContentExtended(contentXlsx, "myfile.xlsx", "base64", "xlsx file").then((result) => {
+                if (result.downloadCompleted) {
+                    //do something
+                    console.log(result.fileName);
+                }
+            }).catch(() => {
+                //handle error
+            });
+        };
     }
 }
 ```
 
 ## Considerations and limitations
 
-The size limit for a downloaded file size is 10 MB.
+The size limit for a downloaded file size is 30 MB.
 
 ## Next steps
 

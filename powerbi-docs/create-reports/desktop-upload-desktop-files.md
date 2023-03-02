@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/6/2022
+ms.date: 02/08/2023
 LocalizationGroup: Create reports
 ---
 # Publish datasets and reports from Power BI Desktop
@@ -43,7 +43,7 @@ This process is straightforward, but you should know the following:
 
 * Two or more datasets in Power BI with the same name as the Power BI Desktop file could cause publishing to fail. Make sure you have only one dataset in Power BI with the same name. You can also rename the file and publish, creating a new dataset with same name as the file.
 * If you rename or delete a column or measure, any visualizations you already have in Power BI with that field could be broken.
-* Power BI ignores some format changes of existing columns. For example, if you change a column’s format from 0.25% to 25%.
+* Power BI ignores some format changes of existing columns. For example, if you change a column’s format from 0.25 to 25%.
 * Say you have a refresh schedule that is configured for your existing dataset in Power BI. When you add new data sources to your file and then republish, you’ll have to sign into them before the next scheduled refresh.
 * When you republish a dataset published from Power BI Desktop and have a refresh schedule defined, a dataset refresh is started as soon as you republish.
 * When you make a change to a dataset and then republish it, a message shows you how many workspaces, reports, and dashboards are potentially impacted by the change. The message then asks you to confirm that you want to replace the currently published dataset with the one you modified. The message also provides a link to the full dataset impact analysis in the Power BI service. From there, you can see more information and take action to mitigate the risks of your change.

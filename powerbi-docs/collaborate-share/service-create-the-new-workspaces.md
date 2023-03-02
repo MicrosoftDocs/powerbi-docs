@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/02/2022
+ms.date: 02/27/2023
 ms.custom: contperf-fy21q3, contperf-fy21q1, contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -34,7 +34,7 @@ This article explains how to create *workspaces*, spaces to collaborate with col
     - [Add a Contact list](#create-a-contact-list), the names of people to contact for information about the workspace. By default, the workspace admins are the contacts.
     - [Allow contributors to update the app](#allow-contributors-to-update-the-app) for the workspace
     - [Assign the workspace to a Premium capacity](#premium-capacity-settings).
-    - Connect the workspace to an Azure Data Lake Gen2 storage account (in preview). Read about this functionality in the article [Configuring dataflow storage to use Azure Data Lake Gen 2](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level).
+    - Connect the workspace to an Azure Data Lake Gen2 storage account (in preview). Read about this functionality in the article [Configuring dataflow storage to use Azure Data Lake Gen 2](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connect-to-an-azure-data-lake-gen-2-at-a-workspace-level).
 
 1. Select **Save**.
 
@@ -158,6 +158,23 @@ Now that you've created the workspace, you'll want to add other users to *roles*
 
 - [Give users access to a workspace](service-give-access-new-workspaces.md)
 - [Roles in workspaces in Power BI](service-roles-new-workspaces.md)
+
+## Pin workspaces
+
+Quickly access your favorite workspaces by pinning them to the top of the workspace flyout list. 
+
+1. Open the workspace flyout from the nav pane and hover over the workspace you want to pin. Select the **Pin to top** icon.
+
+    ![Screenshot of pin workspace.](media/service-create-the-new-workspaces/pin-workspace.png)
+
+1. The workspace is added in the **Pinned** list.
+
+    ![Screenshot of pinned list.](media/service-create-the-new-workspaces/pinned-list.png)
+
+1. To unpin a workspace, select the unpin button. The workspace is unpinned.
+
+    ![Screenshot of unpin workspace.](media/service-create-the-new-workspaces/unpin-workspace.png)
+
 
 ## Next steps
 * Read about [workspaces in Power BI](service-new-workspaces.md)

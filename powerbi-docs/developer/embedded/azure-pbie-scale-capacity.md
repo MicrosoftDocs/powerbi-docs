@@ -50,8 +50,6 @@ This assumes you created a Power BI Embedded capacity (**A SKU**). If you haven'
     > [!div class="mx-imgBorder"]
     > ![Sceenshot of new scale selection.](media/azure-pbie-scale-capacity/azure-portal-scale-pricing-info.png)
 
-   For Gen1 capacities, scaling might take a minute or two to complete.
-
 6. Confirm your tier by viewing the overview tab. The current pricing tier is listed.
 
     > [!div class="mx-imgBorder"]
@@ -63,7 +61,7 @@ Use one of the autoscaling techniques described here to elastically resize your 
 
 * [Power BI Embedded Azure Resource Manager REST APIs](/rest/api/power-bi-embedded/), for example [Capacities - Update](/rest/api/power-bi-embedded/capacities/update).  See this [runbook PowerShell script capacity scale-up sample](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/ScaleUp-Automation-RunBook.ps1) on how to use this API call can create your own versions of upscale and down-scale scripts.
 
-* Use [Azure alerts](/azure/azure-monitor/alerts/alerts-overview) to track Power BI Gen2 [capacity metrics](monitor-power-bi-embedded-reference.md#capacities) such as:
+* Use [Azure alerts](/azure/azure-monitor/alerts/alerts-overview) to track Power BI [capacity metrics](monitor-power-bi-embedded-reference.md#capacities) such as:
   * *Overload* - 1 if capacity's CPU surpassed 100% and is in an overloaded state. Otherwise, 0.
   * *CPU* utilization in percentage
   * *CPU Per Workload* if specific workloads are used, such as paginated reports

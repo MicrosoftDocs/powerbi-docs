@@ -7,12 +7,17 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 10/13/2022
+ms.date: 2/28/2023
 ---
 
 # Power BI visuals API changelog
 
 This page contains a quick summary of the API versions. Versions listed here are considered stable and will not change.
+
+## API v5.2.0
+
+* **[Customized data reduction](./fetch-more-data.md#customized-data-reduction)** - This feature added to *capabilities.json* schema allows the [data fetch window](./fetch-more-data.md) to be modified dynamically by the custom visual code the report author.
+* Supports Desktop December 2022
 
 ## API v5.1.0
 
@@ -35,7 +40,7 @@ This page contains a quick summary of the API versions. Versions listed here are
   * download file from custom visual
 * Added two corresponding [tenant admin switches](https://go.microsoft.com/fwlink/?linkid=2195700&clcid=0x409)
 * **[Download API](./file-download-api.md)** to allow downloading visual to file
-* Supports Desktop June 2021
+* Supports Desktop June 2022
 
 ## API v4.2.0
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/28/2022
+ms.date: 02/10/2023
 LocalizationGroup: Create reports
 ---
 # Add a custom column in Power BI Desktop
@@ -59,7 +59,7 @@ The **Custom Column** window has the following features:
 
    ![Screenshot of the Custom Column dialog box, highlighting no syntax errors have been detected and a checkmark.](media/desktop-add-custom-column/add-custom-column_04.png)
 
-   If there's a syntax error, there is a green checkmark, along with a link to where the error occurred in your formula.
+   If there's a syntax error, there is a warning, along with a link to where the error occurred in your formula.
 
    ![Screenshot of the Custom Column dialog box, highlighting the warning icon and error message.](media/desktop-add-custom-column/add-custom-column_05.png)
 

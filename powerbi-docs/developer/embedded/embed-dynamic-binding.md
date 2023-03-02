@@ -11,7 +11,7 @@ ms.date: 06/07/2022
 
 # Connect a report to a dataset using dynamic binding
 
-:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
 
 When a report is connected to a dataset, you can use dynamic binding. The connection between the report and the dataset, is known as *binding*. When the binding is determined at the point of embedding, as opposed to being predetermined earlier, the binding is known as dynamic binding.
 
