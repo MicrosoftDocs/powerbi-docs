@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/13/2023
+ms.date: 03/01/2023
 LocalizationGroup: Create reports
 ---
 
@@ -55,7 +55,7 @@ When you enable this preview, new reports have modern tooltips enabled by defaul
 
 1. Switch the **Modern visual tooltips** toggle on.
 
-    :::image type="content" source="media/desktop-visual-tooltips/power-bi-service-preview-visual-tooltip-second-step.png" alt-text="Screenshot of the Settings dialog, highlighting the Modern visual tooltip toggle.":::
+    :::image type="content" source="media/desktop-visual-tooltips/power-bi-service-preview-visual-tooltip-second-step.png" alt-text="Screenshot of the Settings dialog, highlighting the Modern visual tooltip toggle." lightbox="media/desktop-visual-tooltips/power-bi-service-preview-visual-tooltip-second-step.png":::
 
 ---
 
