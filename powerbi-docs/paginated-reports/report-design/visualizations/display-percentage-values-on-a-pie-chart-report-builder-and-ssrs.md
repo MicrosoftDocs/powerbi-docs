@@ -15,7 +15,7 @@ ms.reviewer: monaraya
 
 In Power BI paginated reports, by default the legend shows categories. You may also want percentages in the legend or the pie slices themselves.
 
-![Screenshot of a pie-chart-other-slicepie chart showing percentages for the slices of the pie.](../media/paginated-reports-visualizations/pie-chart-other-slice.png "Screenshot of a pie chart showing percentages for the slices of the pie.") 
+![Screenshot of a pie-chart-other-slicepie chart showing percentages for the slices of the pie.](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/pie-chart-other-slice.png "Screenshot of a pie chart showing percentages for the slices of the pie.") 
 
 
  The [Tutorial: Add a Pie Chart to Your Report (Power BI Report Builder)](/paginated-reports/tutorials/tutorial-add-a-pie-chart-to-your-report-report-builder) walks you through adding percentages to pie slices, if you'd like to try this with sample data first.

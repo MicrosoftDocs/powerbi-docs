@@ -19,13 +19,13 @@ The more time you spend carefully preparing and understanding your data before y
   
  The following illustration shows many of the different elements used in the chart.  
   
- ![Screenshot of a Chart elements diagram.](../media/paginated-reports-visualizations/chartelementsc.gif "Screenshot of a Chart elements diagram.")  
+ ![Screenshot of a Chart elements diagram.](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/chartelementsc.gif "Screenshot of a Chart elements diagram.")  
 
  
 ##  <a name="DesigningChart"></a> Designing a Chart  
  After you add a chart data region to the design surface, you can drag report dataset fields for numeric and non-numeric data to the Chart Data pane of the chart. When you click the chart on the design surface, the Chart Data pane appears, with three areas-Category Groups, Series Groups, and Values. If the report has a shared or embedded dataset, the fields in the dataset appear in the Report Data pane. Drag fields from the dataset into the appropriate area of the Chart Data pane. By default, when a field is added to one of the areas of the chart, Power BI Report Builder calculates an aggregate for the field. You can also use series grouping to dynamically generate series. A chart is [organized like a matrix](#SimilarMatrix).  
   
- ![Screenshot of chart showing the chart properties.](../media/paginated-reports-visualizations/chartwseriescategories.gif "Screenshot of chart showing the chart properties.")  
+ ![Screenshot of chart showing the chart properties.](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/chartwseriescategories.gif "Screenshot of chart showing the chart properties.")  
   
 > [!NOTE]  
 >  The data in the chart at design time is different from the data in the chart when the report is processed. It is not your real data. It is generated data that has been added so that you can design your chart with an idea of what the chart will look like.  
@@ -33,7 +33,7 @@ The more time you spend carefully preparing and understanding your data before y
 ##  <a name="SimilarMatrix"></a> How a Chart is like a Matrix  
  One way to think about how charts work is to compare them to matrices.  
   
- ![Screenshot showing a matrix template.](../media/paginated-reports-visualizations/matrixtemplatenewselected.gif "New Matrix added from Toolbox.")  
+ ![Screenshot showing a matrix template.](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/matrixtemplatenewselected.gif "New Matrix added from Toolbox.")  
   
  Conceptually, their organization is identical:  
   
@@ -49,7 +49,7 @@ The more time you spend carefully preparing and understanding your data before y
   
  When you add the Sales field to the Values area, the text of the data field appears in the legend, and the data from this numeric field will be aggregated into one value. By default, the value is aggregated using the built-in function Sum. The Chart Data pane will contain a simple expression for your field. In our example, `[Sum(Sales)]` will appear for the field expression `=Sum(Fields!Sales.Value)`. If no groups are specified, the chart will only show one data point. In order to show multiple data points, you must group your data by adding a grouping field. When you add the Name field to the Category Groups area, a grouping field of the same name as the name of the field is automatically added to the chart. When fields that define the values along the x and y axes are added, the chart has enough information to plot the data correctly.  
   
- ![Screenshot showing how to add data to the chart.](../media/paginated-reports-visualizations/chartwnoseries.gif "Screenshot showing how to add data to the chart.")  
+ ![Screenshot showing how to add data to the chart.](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/chartwnoseries.gif "Screenshot showing how to add data to the chart.")  
   
  When the Series Groups area is left empty, the number of series is fixed at design time. In this example, Sales is the only series that appears on the chart.  
   

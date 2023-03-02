@@ -32,21 +32,21 @@ To try setting the axis interval with sample data, see [Tutorial: Add a Column C
 
 In this column chart, the horizontal label interval is set to Auto.
 
-![Screenshot showing report builder column chart preview with the x-axis interval set to Auto.](../media/paginated-reports-visualizations/column-chart-preview-x-axis-interval-auto.png "Screenshot showing report builder column chart preview with the x-axis interval set to Auto.")
+![Screenshot showing report builder column chart preview with the x-axis interval set to Auto.](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/column-chart-preview-x-axis-interval-auto.png "Screenshot showing report builder column chart preview with the x-axis interval set to Auto.")
   
 1.  Right-click the category axis and click **Horizontal Axis Properties**.   
 
-    ![Screenshot of a report builder column chart showing how to set x-axis labels.](../media/paginated-reports-visualizations/column-chart-x-axis-labels.png "Screenshot of a report builder column chart showing how to set x-axis labels.")
+    ![Screenshot of a report builder column chart showing how to set x-axis labels.](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/column-chart-x-axis-labels.png "Screenshot of a report builder column chart showing how to set x-axis labels.")
   
 2.  In the **Horizontal Axis Properties** dialog box > **Axis Options** tab, set **Interval** to **1** to show every category group label. To show every other category group label on the x-axis, type **2**. 
 
-     ![Screenshot of a report builder column chart showing how to set the x-axis interval to one.](../media/paginated-reports-visualizations/column-chart-x-axis-interval-one.png "Screenshot of a report builder column chart showing how to set the x-axis interval to one.")
+     ![Screenshot of a report builder column chart showing how to set the x-axis interval to one.](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/column-chart-x-axis-interval-one.png "Screenshot of a report builder column chart showing how to set the x-axis interval to one.")
   
 3.  Select **OK**.
      
      Now the column chart displays all its horizontal axis labels.
      
-     ![Screenshot of the report builder column chart preview showing x-axis labels.](../media/paginated-reports-visualizations/column-chart-preview-x-axis-interval-one.png "Screenshot of the report builder column chart preview showing x-axis labels.")
+     ![Screenshot of the report builder column chart preview showing x-axis labels.](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/column-chart-preview-x-axis-interval-one.png "Screenshot of the report builder column chart preview showing x-axis labels.")
      
      > [!NOTE]  
      >  When you set an axis interval, all automatic labeling is disabled. If you specify a value for the axis interval, you may see unpredictable labeling behavior, depending on how many categories are on the category axis.  
@@ -59,13 +59,13 @@ You can also set the label interval in the Properties pane.
 
 3. In the Properties pane, set LabelInterval to **1**.
 
-    ![Screenshot of the report builder column chart showing how to set the label interval.](../media/paginated-reports-visualizations/column-chart-set-label-interval.png "Screenshot of the report builder column chart showing how to set the label interval.")
+    ![Screenshot of the report builder column chart showing how to set the label interval.](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/column-chart-set-label-interval.png "Screenshot of the report builder column chart showing how to set the label interval.")
 
     The chart looks the same in design view. 
     
 5.  Click **Run** to preview the report.
 
-    ![Screenshot of the report builder column chart preview showing the label interval of one.](../media/paginated-reports-visualizations/column-chart-label-interval-one-preview.png "Screenshot of the report builder column chart preview showing the label interval of one.")
+    ![Screenshot of the report builder column chart preview showing the label interval of one.](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/column-chart-label-interval-one-preview.png "Screenshot of the report builder column chart preview showing the label interval of one.")
     
     Now the chart displays all its labels.
   
