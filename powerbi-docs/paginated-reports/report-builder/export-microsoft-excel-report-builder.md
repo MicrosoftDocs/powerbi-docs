@@ -96,16 +96,16 @@ The Excel rendering extension renders a Power BI paginated report to the Microso
 ### Report row groups and column groups  
  Reports that include row groups or column groups contain empty cells when exported to Excel. Imagine a report that groups rows on commute distance. Each commute distance can contain more than one customer. The following picture shows the report.  
   
- ![Screenshot of the Report in the Reporting Services web portal](../media/paginated-reports-export/excel-export.png "Report in the Reporting Services web portal.")  
+ ![Screenshot of the Report in the Reporting Services web portal.](../media/paginated-reports-export/excel-export.png "Report in the Reporting Services web portal.")  
 
   
  When the report is exported to Excel, the commute distance appears only in one cell of the Commute Distance column. Depending on the alignment of the text in the report (top, middle, or bottom) the value is in the first, middle, or last cell. The other cells are empty. The Name column that contains customer names has no empty cells. The following picture shows the report after it is exported to Excel. The red cell borders were added for emphasis. The gray boxes are the empty cells. (Neither the red lines nor the gray boxes are part of the exported report.)  
   
- ![Screenshot of the Report exported to Excel, with lines](../media/paginated-reports-export/exported-excel-lines.png "Report exported to Excel, with lines.")  
+ ![Screenshot of the Report exported to Excel, with lines.](../media/paginated-reports-export/exported-excel-lines.png "Report exported to Excel, with lines.")  
   
  This means that reports with row groups or column groups require modification after exporting to Excel and before you can display the exported data in pivot table. You must add the group value to cells in which they are missing to make the worksheet a flat table with values in all cells. The following picture shows the updated worksheet.  
   
- ![Screenshot of the Report exported to Excel, flattened](../media/paginated-reports-export/excel-export-no-matrix.png "Report exported to Excel, flattened.")  
+ ![Screenshot of the Report exported to Excel, flattened.](../media/paginated-reports-export/excel-export-no-matrix.png "Report exported to Excel, flattened.")  
   
  So if you create a report for the specific purpose of exporting it to Excel for further analysis of the report data, consider not grouping on rows or columns in your report.  
   
