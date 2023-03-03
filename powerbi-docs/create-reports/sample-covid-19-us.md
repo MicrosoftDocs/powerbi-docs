@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/10/2023
+ms.date: 03/02/2023
 LocalizationGroup: Samples
 ---
 # COVID-19 tracking sample for US state and local governments
@@ -48,19 +48,28 @@ The embed code is an HTML iFrame element that you can insert into any HTML page.
 
 ## Option 2: Customize the sample Power BI file
 
-The Power BI file contains the data and interactive graphic in a .pbix file format you can edit in Power BI Desktop.  
+The Power BI file contains the data and interactive graphic in a Power BI template (.pbit) file format you can edit in Power BI Desktop.  
 
 A typical customization is to filter the report to a specific state, and then to create your own publish-to-web embed code for your customized report.
 
 COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University is provided under a Creative Commons License that requires attribution. Before publishing this data, review the [disclaimers](#disclaimers).
 
-To get started, select this link to [download the .pbit file](https://go.microsoft.com/fwlink/?linkid=XXXX).
+### Download the Power BI template (.pbit) file
+
+To get started, select this link to [download the Power BI template (.pbit) file](https://go.microsoft.com/fwlink/?linkid=2125058). Power BI report template files contain this information from the report from which they were generated:
+
+- Report pages, visuals, and other visual elements.
+- The data model definition, including the schema, relationships, measures, and other model definition items.
+- All query definitions, such as queries, query parameters, and other query elements.
+- Template files *don't* include the report data, so they're often smaller than Power BI report (.pbix) files. 
+
+When you open a template (.pbit) file and save it, Power BI saves it as a report (.pbix) file. From then on, it's like any other Power BI report file. For more information about Power BI template files, see [Using report templates](desktop-templates.md#using-report-templates).
 
 ### Update your report 
 
 1. Download the latest version of the free app, [Power BI Desktop](https://powerbi.microsoft.com/desktop/), if you haven't already. 
 
-2. Download the [.pbit file](https://go.microsoft.com/fwlink/?linkid=XXXXX), if you haven't already, and open it in Power BI Desktop.
+2. Download the [Power BI template (.pbit) file](https://go.microsoft.com/fwlink/?linkid=2125058), if you haven't already, and open it in Power BI Desktop.
 
 3. When the report opens, you're prompted to set the **Start Date** parameter value. Then select **Load** to refresh the data. The earliest data is from 3/22/2020.
 
@@ -135,6 +144,7 @@ This report and data are provided "as is", "with all faults", and without warran
 
 ## Next steps
 
+Download the [Power BI template (.pbit) file](https://go.microsoft.com/fwlink/?linkid=2125058)
 [Get samples for Power BI](../create-reports/sample-datasets.md)
 
 
