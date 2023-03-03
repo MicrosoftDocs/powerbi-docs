@@ -48,7 +48,7 @@ The embed code is an HTML iFrame element that you can insert into any HTML page.
 
 ## Option 2: Customize the sample Power BI file
 
-The Power BI file contains the data and interactive graphic in a Power BI template (.pbit) file format you can edit in Power BI Desktop.  
+The Power BI file contains the data model and interactive graphics in a Power BI template (.pbit) file format you can edit in Power BI Desktop. See  the "Download the Power BI template (.pbit) file" section in this articl for details.
 
 A typical customization is to filter the report to a specific state, and then to create your own publish-to-web embed code for your customized report.
 
