@@ -30,7 +30,7 @@ If you have a table with data, such as an Excel spreadsheet, and want to try vis
 1. Select the **Create** tab.
 1. Select **Paste or manually enter data**.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-create-paste-manually.png" alt-text="Paste or manually enter data.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-create-paste-manually.png" alt-text="Screenshot of Power BI app open in Teams with the Create gab and paste or manually enter data option highlighted.":::
 
 1. Select the first cell and paste the data.
 1. Select **Use first row as headers** if appropriate, give the table a name, then select **Auto-create report**.
@@ -74,7 +74,7 @@ To build a report from a dataset shared with you, follow these steps.
     - Use visualizations like charts, tables, and maps to show data in various ways.
     - Select data points to see other visuals update to filter data to your selection. Change formatting to make the report useful and readable by your colleagues.
 
-1. Save and share the report after you complete your work.
+1. After you complete your work, save and share the report.
 
 ## Explore datasets and reports shared with you
 
@@ -98,7 +98,7 @@ It's easy to find all the datasets your organization has shared with you. Theyâ€
     - Share data and give people access to the dataset to work.
     - Select a table or column to export data or select more than one table to create a paginated report.
 
-When you find interesting reports relevant to your team, bring them into your collaboration by adding them to channels, meetings, and chats as tabs or in a conversation.
+When you find interesting reports relevant to your team, bring them into your collaboration. Add them to channels, meetings, and chats as tabs or in a conversation.
 
 ## Enhance reports in the Power BI service and in Teams
 
@@ -132,15 +132,15 @@ You can also easily create a *smart narrative* visual, a dynamically generated t
 
     Power BI generates a text description of key takeaways in your report.
 
-    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-smart-narrative-visual.png" alt-text="Screenshot of visuals and the text description dialog box generated wit the Smart narrative.":::
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-smart-narrative-visual.png" alt-text="Screenshot of visuals and the text description dialog box generated with the Smart narrative.":::
 
-1. You can edit the visual, change the way it looks, and the inline values it generates.
+1. You can edit the visual, change the way it looks, and change the inline values it generates.
 
 For more information, see [Create smart narrative summaries](../visuals/power-bi-visualization-smart-narrative.md).
 
 ## Create sophisticated reports in Power BI Desktop
 
-Power BI Desktop is a downloadable Windows app to make sophisticated reports. It's like PowerPoint, but it uses data visualizations to help you find insights into your data. Power BI Desktop has powerful capabilities like data import, cleaning, modeling, and much more.
+Power BI Desktop is a downloadable Windows app to make sophisticated reports. It's like PowerPoint, but it uses data visualizations to help you gain insights into your data. Power BI Desktop has powerful capabilities like data import, cleaning, modeling, and much more.
 
 To get started with Power BI Desktop, follow these steps.
 
