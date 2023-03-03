@@ -102,7 +102,7 @@ You can also make the bookmark your default view.
 
 If you have read and reshare permissions, when you share the report you can choose to include your changes. This personalized version does not overwrite the author's version. The colleague who is viewing your personalized report can select **Reset to default** and return to the author's version of the report. If the colleague has editing permissions, they can save your personalized version as a new report.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-share-changes.png" alt-text="Screenshot of how a user can share changes.":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-share-changes-new.png" alt-text="Screenshot of how a user can share changes.":::
 
 ### Reset all your changes to a report
 
