@@ -26,7 +26,7 @@ This method of creating a report starts with a file and a blank report canvas. I
 
 1. In the navigation pane, select **My Workspace**. Then select **New** > **Dataset**.
 
-    :::image type="content" source="media/service-report-create-new/power-bi-select-my-workspace-2.png" alt-text="Screenshot of the Power BI service, highlighting New and Dataset.":::
+    :::image type="content" source="media/service-report-create-new/power-bi-select-my-workspace.png" alt-text="Screenshot of the Power BI service, highlighting New and Dataset.":::
 
 1. Select **Excel**.
 
@@ -34,7 +34,7 @@ This method of creating a report starts with a file and a blank report canvas. I
 
 1. Select **Browse this device**. Go to the location where you saved the Retail Analysis sample then select **Open**.
 
-    :::image type="content" source="media/service-report-create-new/power-bi-select-files-2.png" alt-text="Screenshot of Select a file dialog, highlighting the Retail Analysis Sample.":::
+    :::image type="content" source="media/service-report-create-new/power-bi-select-files.png" alt-text="Screenshot of Select a file dialog, highlighting the Retail Analysis Sample.":::
 
     After the Excel file imports, it's listed as a *dataset* in the workspace list.
 
