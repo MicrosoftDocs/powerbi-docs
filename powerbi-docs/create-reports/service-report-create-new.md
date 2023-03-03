@@ -32,7 +32,7 @@ This method of creating a report starts with a file and a blank report canvas. I
 
     :::image type="content" source="media/service-report-create-new/power-bi-excel.png" alt-text="Screenshot of the Add data to get started dialog, highlighting Excel.":::
 
-1. Select **Browse this device**. Go to the location where you saved the Retail Analysis sample then select **Open**
+1. Select **Browse this device**. Go to the location where you saved the Retail Analysis sample then select **Open**.
 
     :::image type="content" source="media/service-report-create-new/power-bi-select-files-2.png" alt-text="Screenshot of Select a file dialog, highlighting the Retail Analysis Sample.":::
 
