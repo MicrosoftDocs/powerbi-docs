@@ -1,5 +1,5 @@
 ---
-title: Creating reports in Power BI using accessibility tools
+title: Create reports in Power BI using accessibility tools
 description: Learn about the built-in accessibility tools and capabilities that help in the process of creating reports in Power BI.
 author: davidiseminger
 ms.author: davidi
@@ -44,7 +44,7 @@ Depending on which letter you press, you might see other KeyTips. For example, i
 
 ## Visual pane navigation
 
-To navigate the **Visualizations** pane, make sure your focus is on the pane by pressing **Ctrl + F6** until you reach that pane. When a user navigates through the visualizations pane, the focus first lands on the header. The tab order starts from the top and is shown in the following image:
+To navigate the **Visualizations** pane, make sure your focus is on the pane by pressing **Ctrl + F6** until you reach that pane. When you navigate through the visualizations pane, the focus first lands on the header. The tab order starts from the top and is shown in the following image:
 
 :::image type="content" source="media/desktop-accessibility/accessibility-create-reports-02.png" alt-text="Screenshot highlighting the tab order for the Visualizations pane.":::
 
@@ -168,4 +168,4 @@ Power BI Desktop automatically detects which high-contrast theme Windows uses an
 * [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md)
 * [Consume Power BI reports by using accessibility features](desktop-accessibility-consuming-tools.md)
 * [Keyboard shortcuts in Power BI Desktop](desktop-accessibility-keyboard-shortcuts.md)
-* [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
+* [Report accessibility checklist](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
