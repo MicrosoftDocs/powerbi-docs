@@ -1,7 +1,7 @@
 ---
 title: "Add filters when you create paginated reports in the Power BI service | Microsoft Docs"
 description:  Learn how to add filters while you author a paginated report on the service.
-ms.date: 02/21/2023
+ms.date: 03/03/2023
 ms.service: powerbi 
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -12,7 +12,7 @@ ms.reviewer: nirusrin
 
 # Add filters when you create paginated reports in the Power BI service
 
-[!INCLUDE [applies-to](../../includes/applies-to.md)] [!INCLUDE [yes-service](../../includes/yes-service.md)] [!INCLUDE [no-desktop](../../includes/no-desktop.md)]
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
 This article introduces you to filtering paginated reports that you author in the Power BI service. This functionality doesn't apply to paginated reports that you author in Power BI Report Builder.  Filters exclude all but the data you want to focus on. When you author the report on the service, you can filter the data using the **Filters** pane on the canvas.
 
@@ -24,7 +24,7 @@ You can filter data at the *report* level, which means that the filter applies t
 
 There are two ways to add a column to the Filters pane.
 
-- Add a column to the filter pane by selecting the column from the **Fields** pane. Adding the column in this way also adds the field to the editing canvas. 
+- Add a column to the **Filters** pane by selecting the column from the **Fields** pane. Adding the column in this way also adds the field to the editing canvas. 
 - Add the column to the **Add data fields** section of the **Filters** pane from the **Fields** pane by dragging the column, without selecting the column. Adding the column in this way doesn't add the field to the editing canvas, but you can still filter your report based on this column.
 
 :::image type="content" source="../media/paginated-formatted-table/paginated-add-data-fields.png" alt-text="Screenshot of area to add data fields.":::
