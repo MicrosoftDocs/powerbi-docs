@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 02/28/2023
+ms.date: 03/05/2023
 ---
 
 # View and present live Power BI data in PowerPoint
@@ -55,7 +55,9 @@ If you need to present a slide show multiple times, you most likely want to set 
 Data insights help you explore and find insights such as anomalies and trends as you consume and interact with your data. With the add-in, you can easily generate insights, which you can then paste directly into your slide or copy to the clipboard for pasting elsewhere, such as in the slide's notes.
 
 > [!NOTE]
-> Once you've copied the insight to the slide or clipboard, the text is static and won't change when the data changes. To update the insight, you need to re-generate it.
+> Not all visuals can generate insights. See [Smart narrative considerations and limitations](../visuals/power-bi-visualization-smart-narrative.md#considerations-and-limitations) for details.
+>
+> Once you've copied an insight to the slide or clipboard, the text is static and won't change when the data changes. To update the insight, you need to re-generate it.
 
 The following animation shows how you can generate data insights, edit them in the **Data insights** dialog, and then paste them directly into the slide or copy them into the notes.
 
@@ -70,9 +72,6 @@ To generate data insights:
 1. The insight appears in the **Data insights** dialog. The text is editable and you can change it as desired. When you're satisfied with the text, you can either paste it directly onto the slide as a PowerPoint textbox, or you can copy it onto the clipboard, from where you paste it wherever you like - into the slide notes, for example. 
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-insights-dialog.png" alt-text="Screenshot of insights dialog.":::
-
-> [!NOTE]
-> Not all visuals can generate insights. See [Smart narrative considerations and limitations](../visuals/power-bi-visualization-smart-narrative.md#considerations-and-limitations) for details.
 
 ## Freeze the current view
 
