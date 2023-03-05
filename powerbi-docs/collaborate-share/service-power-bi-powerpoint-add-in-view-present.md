@@ -54,6 +54,9 @@ If you need to present a slide show multiple times, you most likely want to set 
 
 Data insights help you explore and find insights such as anomalies and trends as you consume and interact with your data. With the add-in, you can easily generate insights, which you can then paste directly into your slide or copy to the clipboard for pasting elsewhere, such as in the slide's notes.
 
+> [!NOTE]
+> Once you've copied the insight to the slide or clipboard, the text is static and won't change when the data changes. To update the insight, you need to re-generate it.
+
 The following animation shows how you can generate data insights, edit them in the **Data insights** dialog, and then paste them directly into the slide or copy them into the notes.
 
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-insights-pasted-in.gif" alt-text="Screenshot showing presentation with insight next to a visual.":::
