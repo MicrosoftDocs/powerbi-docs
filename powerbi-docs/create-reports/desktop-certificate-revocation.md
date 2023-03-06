@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/16/2023
+ms.date: 03/06/2023
 LocalizationGroup: Create reports
 ---
 # Certificate revocation check, Power BI Desktop
