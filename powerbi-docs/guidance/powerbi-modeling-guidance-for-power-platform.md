@@ -62,7 +62,7 @@ When developing an import model, you should strive to minimize the data that's l
 A DirectQuery connection to Dataverse is a good choice when the report's query result isn't large. A large query result has more than 20,000 rows in the report's source tables, or the result returned to the report after filters are applied is more than 20,000 rows. In this case, you can [create a Power BI report by using the Dataverse connector](/powerapps/maker/data-platform/data-platform-powerbi-connector).
 
 > [!NOTE]
-> The 20,000 row size isn't a hard limit. However, each data source query must return a result within ten minutes. Later in this article you will learn how to work within those limitations and about other Dataverse DirectQuery design considerations.
+> The 20,000 row size isn't a hard limit. However, each data source query must return a result within 10 minutes. Later in this article you will learn how to work within those limitations and about other Dataverse DirectQuery design considerations.
 
 You can improve the performance of larger datasets by using the [Dataverse connector](/power-query/connectors/dataverse) to import the data into the data model.
 
@@ -144,7 +144,7 @@ For more information on how you can achieve query folding, see [Power Query quer
 
 By default, when you use Power Query to load a Dataverse table, it retrieves all rows and all columns. When you query a system user table, for example, it could contain more than 1,000 columns. The columns in the metadata include relationships to other entities and lookups to option labels, so the total number of columns grows with the complexity of the Dataverse table.
 
-Attempting to retrieve data from all columns is an anti-pattern. It often results in extended data refresh operations, and it will cause the query to fail when the time needed to return the data exceeds ten minutes.
+Attempting to retrieve data from all columns is an anti-pattern. It often results in extended data refresh operations, and it will cause the query to fail when the time needed to return the data exceeds 10 minutes.
 
 We recommend that you only retrieve columns that are required by reports. It's often a good idea to reevaluate and refactor queries when report development is complete, allowing you to identify and remove unused columns. For more information, see [Data reduction techniques for import modeling (Remove unnecessary columns)](import-modeling-data-reduction.md#remove-unnecessary-columns).
 
