@@ -42,7 +42,7 @@ At the current time, Power BI Q&A only supports answering natural language queri
 
 1. Select the sample. It opens in Reading mode.
 
-1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
+1. Power BI imports the built-in sample, adding a new report and dataset to your current workspace.
 
    :::image type="content" source="media/end-user-q-and-a-tutorial/retail-entry.png" alt-text="Screenshot shows dashboard, report, and dataset for Retail Analysis Sample.":::
 
