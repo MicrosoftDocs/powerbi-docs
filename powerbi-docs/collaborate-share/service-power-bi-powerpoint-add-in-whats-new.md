@@ -9,10 +9,25 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 03/05/2023
+ms.date: 03/06/2023
 ---
 
 # What's new in the Power BI add-in for PowerPoint
+
+## March 2023
+
+### Storytelling with Power BI in PowerPoint is now GA!
+
+With the exciting, recently released improvements you can now:
+* Easily add single visualizations to your slides
+* Generate and add Smart insights to your presentations
+* Enjoy the Power BI/PowerPoint integration in national clouds 
+
+[Check out the blog!](https://powerbi.microsoft.com/blog/storytellingga/)
+
+### National cloud support
+
+The Power BI add-in for PowerPoint is now supported in national clouds as an admin-managed add-in. Admin's should see [Deploying the add-in in national clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-national-clouds) for further details.
 
 ## February 2023
 
@@ -27,10 +42,6 @@ Ever want to put just a single live visual on a slide? Well, now it's super easy
 Power BI's data insights help you find and explore insights such as anomalies and trends as you consume and interact with your data. Now with the add-in, you can easily generate insights, which you can then either paste directly into your slide or copy to the clipboard for pasting elsewhere, such as in the slide's notes. [Learn more!](./service-power-bi-powerpoint-add-in-view-present.md#enrich-your-presentation-with-data-insights).
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/single-visual-and-insights-demo.gif" alt-text="Animated image showing how to add a data insight to a PowerPoint presentation.":::
-
-### National cloud support
-
-The Power BI add-in for PowerPoint is now supported in national clouds as an admin-managed add-in. Admin's should see [Deploying the add-in in national clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-national-clouds) for further details.
 
 ## Next Steps
 
