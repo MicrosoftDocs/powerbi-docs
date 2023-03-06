@@ -18,7 +18,7 @@ ms.date: 03/06/2023
 
 ### Storytelling with Power BI in PowerPoint is now GA!
 
-With the exciting, recently released improvements you can now:
+With exciting, recently released features you can now:
 * Easily add single visualizations to your slides
 * Generate and add Smart insights to your presentations
 * Enjoy the Power BI/PowerPoint integration in national clouds 
