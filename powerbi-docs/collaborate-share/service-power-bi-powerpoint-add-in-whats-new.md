@@ -9,10 +9,25 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 02/28/2023
+ms.date: 03/06/2023
 ---
 
 # What's new in the Power BI add-in for PowerPoint
+
+## March 2023
+
+### Storytelling with Power BI in PowerPoint is now GA!
+
+With exciting, recently released features you can now:
+* Easily add single visualizations to your slides
+* Generate and add Smart insights to your presentations
+* Enjoy the Power BI/PowerPoint integration in national clouds 
+
+[Check out the blog!](https://powerbi.microsoft.com/blog/storytellingga/)
+
+### National cloud support
+
+The Power BI add-in for PowerPoint is now supported in national clouds as an admin-managed add-in. Admin's should see [Deploying the add-in in national clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-national-clouds) for further details.
 
 ## February 2023
 
