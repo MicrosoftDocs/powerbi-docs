@@ -11,6 +11,7 @@ ms.topic: how-to
 ms.date: 03/06/2023
 LocalizationGroup: Dashboards
 ---
+
 # Pin a tile to a Power BI dashboard from Excel
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
@@ -31,7 +32,7 @@ Watch Will demonstrate several ways to import data from, and connect to, Excel w
 
 When you choose **Connect**, your workbook appears in Power BI just like it would in Excel Online. However, unlike Excel Online, you have some great features to help you pin elements from your worksheets right to your dashboards.
 
-You can’t edit your workbook in Power BI, but if you need to make some changes, you can select the pencil icon from the **Workbooks** tab of your workspace. Then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
+You can’t edit your workbook in Power BI, but if you need to make some changes, you can select **Edit** from the **Workbooks** tab of your workspace. Then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
 
 1. Upload your workbook to your OneDrive for work or school.
 
@@ -65,11 +66,11 @@ One way to add a new [dashboard tile](../consumer/end-user-tiles.md) is from wit
 
     :::image type="content" source="media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png" alt-text="Screenshot showing the Pin to dashboard dialog.":::
 
-1. Select **Pin**. A Success message near the top right corner lets you know the range was added as a tile to your dashboard.
+1. Select **Pin**. A success message near the top right corner lets you know the range was added as a tile to your dashboard.
 
     :::image type="content" source="media/service-dashboard-pin-tile-from-excel/power-bi-pin.png" alt-text="Screenshot showing the pinned to dashboard dialog.":::
 
-1. Select **Go to dashboard**. From here, you can [Create or edit a dashboard tile](service-dashboard-edit-tile.md). By default, selecting the pinned tile opens the workbook in Power BI.
+1. Select **Go to dashboard**. From here, you can [create or edit a dashboard tile](service-dashboard-edit-tile.md). By default, selecting the pinned tile opens the workbook in Power BI.
 
 ## Pin an entire table or PivotTable to a dashboard
 
@@ -83,13 +84,13 @@ A tile created from a table or PivotTable shows the entire table. If you add, re
 
 ## View the workbook linked to the tile
 
-Selecting a workbook tile opens the linked workbook in Power BI. Since the workbook file is located on the owner’s OneDrive for work or school, viewing the workbook requires you have read permissions for the workbook. If you don't have permission, you receive an error message.
+Selecting a workbook tile opens the linked workbook in Power BI. Since the workbook file is located on the owner’s OneDrive for work or school, viewing the workbook requires you to have read permissions for the workbook. If you don't have permission, you receive an error message.
 
  :::image type="content" source="media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif" alt-text="Animation of navigation through Excel Online workbook.":::
 
 ## Considerations and troubleshooting
 
-Power BI uses Excel Services to retrieve the workbook tiles. Therefore, since some features from Excel aren't supported in Excel Services REST API, they aren't seen on tiles in Power BI, for example: Sparklines, icon set conditional formatting, and time slicers. For a full list of unsupported features, see [Unsupported Features in Excel Services REST API](/sharepoint/dev/general-development/unsupported-features-in-excel-services-rest-api)
+Power BI uses Excel Services to retrieve the workbook tiles. Therefore, since some features from Excel aren't supported in Excel Services REST API, they aren't seen on tiles in Power BI, for example: Sparklines, icon set conditional formatting, and time slicers. For a full list of unsupported features, see [Unsupported Features in Excel Services REST API](/sharepoint/dev/general-development/unsupported-features-in-excel-services-rest-api).
 
 ## Next steps
 
