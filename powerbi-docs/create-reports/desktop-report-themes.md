@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/17/2023
+ms.date: 03/06/2023
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop
@@ -238,6 +238,12 @@ Here are a few more report themes you can use as starting points:
 
 Report themes can make your Power BI Desktop reports a colorful reflection of you, your organization, or even the current season or holiday.
 
+### More sources of report themes
+
+The following GitHub repository has sample JSON for all the different components in the JSON themes file: [Power BI Theme Templates](https://github.com/mattrudy/PowerBI-ThemeTemplates/blob/master/README.md).
+
+In addition, try searching for ["Power BI report theme generator" on Bing](https://www.bing.com/search?q=power+bi+report+theme+generator).
+
 ## Export report themes
 
 You can export the currently applied report theme directly from Power BI Desktop to a JSON file. After you export a report theme, you can then reuse it in other reports. This option lets you export the JSON file for most of the built-in themes. The only exceptions are the base themes, Classic and Default, which other themes build upon when imported.
@@ -274,8 +280,6 @@ Power BI validates custom themes based on a _JSON schema_.  This [JSON schema is
 
 > [!NOTE]
 > Modifying a custom JSON report theme in the [**Customize theme** dialog box](#customize-and-save-a-theme-in-power-bi-desktop) is safe.  The dialog doesn't modify theme settings that it can't control and updates the changes made to the report theme that's in place.
-
-In addition, the following GitHub repository has sample JSON for all the different components in the JSON themes file: [Power BI Theme Templates](https://github.com/mattrudy/PowerBI-ThemeTemplates/blob/master/README.md).
 
 A theme file has four main components:
 
