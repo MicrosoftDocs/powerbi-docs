@@ -51,7 +51,7 @@ Text Analytics recognizes up to 120 languages. For more information, see [suppor
 
 #### Extract key phrases
 
-The **Key phrase extraction** function evaluates unstructured text, and for each text field, returns a list of key phrases. The function requires a text field as input, and accepts an optional input for a **Language ISO code**.
+The **Key phrase extraction** function evaluates unstructured text, and for each text field, returns a list of key phrases. The function requires a text field as input and accepts an optional input for a **Language ISO code**.
 
 Key phrase extraction works best when you give it bigger chunks of text to work on, opposite from sentiment analysis. Sentiment analysis performs better on smaller blocks of text. To get the best results from both operations, consider restructuring the inputs accordingly.
 
@@ -59,7 +59,7 @@ Key phrase extraction works best when you give it bigger chunks of text to work 
 
 The **Score sentiment** function evaluates text input and returns a sentiment score for each document, ranging from 0 (negative) to 1 (positive). **Score sentiment** also accepts an optional input for a **Language ISO code**. This function is useful for detecting positive and negative sentiment in social media, customer reviews, and discussion forums.
 
-Text Analytics uses a machine learning classification algorithm to generate a sentiment score between 0 and 1. Scores closer to 1 indicate positive sentiment, scores closer to 0 indicate negative sentiment. The model is pre-trained with an extensive body of text with sentiment associations. Currently, it's not possible to provide your own training data. The model uses a combination of techniques during text analysis, including text processing, part-of-speech analysis, word placement, and word associations. For more information about the algorithm, see [Introducing Text Analytics](/archive/blogs/machinelearning/machine-learning-and-text-analytics).
+Text Analytics uses a machine learning classification algorithm to generate a sentiment score between 0 and 1. Scores closer to 1 indicate positive sentiment. Scores closer to 0 indicate negative sentiment. The model is pre-trained with an extensive body of text with sentiment associations. Currently, it's not possible to provide your own training data. The model uses a combination of techniques during text analysis, including text processing, part-of-speech analysis, word placement, and word associations. For more information about the algorithm, see [Introducing Text Analytics](/archive/blogs/machinelearning/machine-learning-and-text-analytics).
 
 Sentiment analysis is performed on the entire input field, as opposed to extracting sentiment for a particular entity in the text. In practice, there's a tendency for scoring accuracy to improve when documents contain one or two sentences rather than a large block of text. During an objectivity assessment phase, the model determines whether an input field as a whole is objective or contains sentiment. An input field that is mostly objective doesn't progress to the sentiment detection phrase, resulting in a 0.50 score, with no further processing. For input fields continuing in the pipeline, the next phase generates a score greater or less than 0.50, depending on the degree of sentiment detected in the input field.
 
@@ -67,7 +67,7 @@ Currently, Sentiment Analysis supports English, German, Spanish, and French. Oth
 
 #### Tag images
 
-The **Tag Images** function returns tags based on more than 2,000 recognizable objects, living beings, scenery, and actions. When tags are ambiguous or not common knowledge, the output provides *hints* to clarify the meaning of the tag in context of a known setting. Tags aren't organized as a taxonomy and no inheritance hierarchies exist. A collection of content tags forms the foundation for an image *description* displayed as human readable language formatted in complete sentences.
+The **Tag Images** function returns tags based on more than 2,000 recognizable objects, living beings, scenery, and actions. When tags are ambiguous or not common knowledge, the output provides *hints* to clarify the meaning of the tag in context of a known setting. Tags aren't organized as a taxonomy, and no inheritance hierarchies exist. A collection of content tags forms the foundation for an image *description* displayed as human readable language formatted in complete sentences.
 
 After uploading an image or specifying an image URL, Computer Vision algorithms output tags based on the objects, living beings, and actions identified in the image. Tagging isn't limited to the main subject, such as a person in the foreground, but also includes the setting (indoor or outdoor), furniture, tools, plants, animals, accessories, gadgets, and so on.
 
@@ -93,18 +93,18 @@ Power BI selects a Premium capacity to run the function on and send the results 
 
 The first time you use AI Insights on a new data source, Power BI Desktop prompts you to set the privacy level of your data.
 
-:::image type="content" source="media/desktop-ai-insights/ai-insights-05.png" alt-text="Screenshot of a warning stating, Information is required about data privacy.":::
+:::image type="content" source="media/desktop-ai-insights/ai-insights-05.png" alt-text="Screenshot of a warning that states Information is required about data privacy.":::
 
 > [!NOTE]
 > Refreshes of the dataset in Power BI will only work for data sources where the privacy level is set to public or organizational.
 
-After you invoke, the result is added as a new column to the table. The transformation is also added as an applied step in the query.
+After you invoke the funtion, the result is added as a new column to the table. The transformation is also added as an applied step in the query.
 
 In the cases of image tagging and key phrase extraction, the results can return multiple values. Each individual result is returned on a duplicate of the original row.
 
 ### Publish a report with Text Analytics or Vision functions
 
-While editing in Power Query and performing refreshes in Power BI Desktop, Text Analytics and Vision use the Premium capacity that was selected in Power Query Editor. After Text Analytics or Vision publishes the report, it uses the Premium capacity of the workspace into which it was published.
+While editing in Power Query and performing refreshes in Power BI Desktop, Text Analytics and Vision use the Premium capacity that was selected in Power Query Editor. After Text Analytics or Vision publishes the report, they use the Premium capacity of the workspace into which it was published.
 
 Reports with applied Text Analytics and Vision functions should be published to a workspace that is on a Premium capacity, otherwise refreshing the dataset fails.
 
@@ -114,7 +114,7 @@ The following sections describe how you can manage the impacts of Text Analytics
 
 #### Select a capacity
 
-Report authors can select which Premium capacity on which to run AI Insights. By default, Power BI selects the first created capacity to which the user has access.
+Report authors can select the Premium capacity on which to run AI Insights. By default, Power BI selects the first created capacity to which the user has access.
 
 #### Monitor with the Capacity Metrics app
 
@@ -125,7 +125,7 @@ Premium capacity owners can monitor the impact of Text Analytics and Vision func
 The Text Analytics and Vision functions used in Power Query and Power Query Online are the same. There are only a couple differences between the experiences:
 
 * Power Query has separate buttons for Text Analytics, Vision, and Azure Machine Learning. In Power Query Online, these features are combined in one menu.
-* In Power Query, the report author can select the Premium capacity that is used to run the functions. This choice isn't required in Power Query Online, since a dataflow is already on a specific capacity.
+* In Power Query, the report author can select the Premium capacity that's used to run the functions. This choice isn't required in Power Query Online, since a dataflow is already on a specific capacity.
 
 ### Considerations and limitations of Text Analytics
 
@@ -156,12 +156,12 @@ To access an Azure Machine Learning model from Power BI, the user must have **Re
 The steps in this section describe how to grant a Power BI user access to a model hosted on the Azure Machine Learning service. With this access, they can use this model as a Power Query function. For more information, see [Manage access using RBAC and the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
-2. Go to the **Subscriptions** page. You can find the **Subscriptions** page through the **All Services** list in the left navigation menu of the Azure portal.
-3. Select your subscription
-4. Select **Access control (IAM)**, and then select the **Add** button.
-5. Select **Reader** as the Role. Select the Power BI user to whom you wish to grant access to the Azure Machine Learning model.
-6. Select **Save**
-7. Repeat steps three through six to grant **Reader** access to the user for the specific Machine Learning workspace hosting the model.
+1. Go to the **Subscriptions** page. You can find the **Subscriptions** page through the **All Services** list in the left navigation menu of the Azure portal.
+1. Select your subscription.
+1. Select **Access control (IAM)**, and then select the **Add** button.
+1. Select **Reader** as the Role. Select the Power BI user to whom you wish to grant access to the Azure Machine Learning model.
+1. Select **Save**.
+1. Repeat steps three through six to grant **Reader** access to the user for the specific Machine Learning workspace hosting the model.
 
 ### Schema discovery for Machine Learning models
 
@@ -171,10 +171,10 @@ This schema file must be included in the deployed web service for Machine Learni
 
 Specifically, the _@input\_schema_ and _@output\_schema_ functions in the entry script reference the input and output sample formats in the _input\_sample_ and _output\_sample_ variables. The functions use these samples to generate an OpenAPI (Swagger) specification for the web service during deployment.
 
-These instructions for schema generation, by updating the entry script, must also be applied to models created using automated machine learning experiments using the Azure Machine Learning SDK.
+These instructions for schema generation, by updating the entry script, must also be applied to models created using automated machine learning experiments with the Azure Machine Learning SDK.
 
 > [!NOTE]
-> Models created using the Azure Machine Learning visual interface do not currently support schema generation, but will in subsequent releases.
+> Models created by using the Azure Machine Learning visual interface don't currently support schema generation, but they will in subsequent releases.
 >
 ### Invoke an Azure Machine Learning model in Power Query
 
@@ -188,7 +188,7 @@ To invoke an Azure Machine Learning model, you can specify any of the selected e
 
 :::image type="content" source="media/desktop-ai-insights/ai-insights-07.png" alt-text="Screenshot of the Azure Machine Learning Models dialog box.":::
 
-Select **OK** to view the preview of the Azure Machine Learning model's output as a new column in the entity table. The model invocation shows up as an applied step for the query.
+Select **OK** to view the preview of the Azure Machine Learning model's output as a new column in the entity table. The model invocation appears as an applied step for the query.
 
 If the model returns multiple output parameters, they're grouped together as a record in the output column. You can expand the column to produce individual output parameters in separate columns.
 
@@ -196,7 +196,7 @@ If the model returns multiple output parameters, they're grouped together as a r
 
 The following considerations and limitations apply to Azure Machine Learning in Power BI Desktop.
 
-* Models created using the Azure Machine Learning visual interface don't currently support schema generation. Support is anticipated in subsequent releases.
+* Models created by using the Azure Machine Learning visual interface don't currently support schema generation. Support is anticipated in subsequent releases.
 * Incremental refresh is supported but can cause performance issues when used on queries with AI insights.
 * Direct Query isn't supported.
 
