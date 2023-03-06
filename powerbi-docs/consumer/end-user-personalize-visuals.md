@@ -48,7 +48,7 @@ By personalizing a visual, you can explore your data in many ways, without leavi
 
 1. Open a report in reading view in the Power BI service.
 
-2. In the menu bar for the visual, select the **Personalize this visual** :::image type="icon" source="media/end-user-personalize-visuals/power-bi-personalize-visual-icon-new.png"::: icon.
+1. In the menu bar for the visual, select the **Personalize this visual** :::image type="icon" source="media/end-user-personalize-visuals/power-bi-personalize-visual-icon-new.png"::: icon.
 
 ### Change the visualization type
 
