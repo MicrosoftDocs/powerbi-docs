@@ -16,7 +16,7 @@ LocalizationGroup: Dashboards
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 Before you can pin a tile from your Excel workbook, you must connect that workbook to the Power BI service. Connecting a workbook brings a linked read-only version of that workbook into the Power BI service and allows you to pin ranges to dashboards. You can even pin an entire worksheet to a dashboard.
-If a workbook has been shared with you, you have the ability to view the tiles pinned by the owner, but not create any dashboard tiles yourself.
+If a workbook has been shared with you, you have the ability to view the tiles pinned by the owner but not to create any dashboard tiles yourself.
 
 For in-depth information about how Excel and Power BI work together, see [Get data from Excel workbook files](/power-bi/connect-data/service-excel-workbook-files).
 
@@ -31,7 +31,7 @@ Watch Will demonstrate several ways to import data from, and connect to, Excel w
 
 When you choose **Connect**, your workbook appears in Power BI just like it would in Excel Online. However, unlike Excel Online, you have some great features to help you pin elements from your worksheets right to your dashboards.
 
-You can’t edit your workbook in Power BI. But if you need to make some changes, you can select the pencil icon from the **Workbooks** tab of your workspace, and then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
+You can’t edit your workbook in Power BI, but if you need to make some changes, you can select the pencil icon from the **Workbooks** tab of your workspace. Then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
 
 1. Upload your workbook to your OneDrive for work or school.
 
@@ -45,7 +45,7 @@ You can’t edit your workbook in Power BI. But if you need to make some changes
 
 1. Open the workbook in Power BI by selecting the workbook name.
 
-    Changes you make to the workbook in Power BI aren't saved and don't affect the original workbook on OneDrive for work or school. If you sort, filter, or change values in Power BI, those changes can't be saved or pinned. If you need to save changes, select **Edit** from the upper-right corner to open it for editing in Excel Online or Excel. Changes made this way might take a few minutes to update the tiles on the dashboards.
+    Changes you make to the workbook in Power BI aren't saved and don't affect the original workbook on OneDrive for work or school. If you sort, filter, or change values in Power BI, those changes can't be saved or pinned. If you need to save changes, select **Edit** from the upper-right corner to open it for editing in Excel Online or Excel. Changes made this way might take a few minutes to update in the tiles on the dashboards.
 
     :::image type="content" source="media/service-dashboard-pin-tile-from-excel/power-bi-opened.png" alt-text="Screenshot showing Excel Online in Power BI.":::
 
