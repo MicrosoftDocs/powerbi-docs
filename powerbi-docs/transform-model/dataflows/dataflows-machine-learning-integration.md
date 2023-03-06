@@ -66,7 +66,7 @@ This section describes the available functions in Cognitive Services in Power BI
 
 The language detection function evaluates text input, and for each column, returns the language name and ISO identifier. This function is useful for data columns that collect arbitrary text, where language is unknown. The function expects data in text format as input.
 
-Text Analytics recognizes up to 120 languages. For more information, see [supported languages](/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
+Text Analytics recognizes up to 120 languages. For more information, see [What is language detection in Azure Cognitive Service for Language](/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
 
 #### **Extract Key Phrases**
 
@@ -78,11 +78,11 @@ Key phrase extraction works best when you give it bigger chunks of text to work 
 
 The **Score Sentiment** function evaluates text input and returns a sentiment score for each document, ranging from 0 (negative) to 1 (positive). This function is useful for detecting positive and negative sentiment in social media, customer reviews, and discussion forums.
 
-Text Analytics uses a machine learning classification algorithm to generate a sentiment score between 0 and 1. Scores closer to 1 indicate positive sentiment, scores closer to 0 indicate negative sentiment. The model is pre-trained with an extensive body of text with sentiment associations. Currently, it's not possible to provide your own training data. The model uses a combination of techniques during text analysis, including text processing, part-of-speech analysis, word placement, and word associations. For more information about the algorithm, see [Introducing Text Analytics](/archive/blogs/machinelearning/machine-learning-and-text-analytics).
+Text Analytics uses a machine learning classification algorithm to generate a sentiment score between 0 and 1. Scores closer to 1 indicate positive sentiment, scores closer to 0 indicate negative sentiment. The model is pre-trained with an extensive body of text with sentiment associations. Currently, it's not possible to provide your own training data. The model uses a combination of techniques during text analysis, including text processing, part-of-speech analysis, word placement, and word associations. For more information about the algorithm, see [Machine Learning and Text Analytics](/archive/blogs/machinelearning/machine-learning-and-text-analytics).
 
 Sentiment analysis is performed on the entire input column, as opposed to extracting sentiment for a particular table in the text. In practice, there's a tendency for scoring accuracy to improve when documents contain one or two sentences rather than a large block of text. During an objectivity assessment phase, the model determines whether an input column as a whole is objective or contains sentiment. An input column that is mostly objective doesn't progress to the sentiment detection phrase, resulting in a 0.50 score, with no further processing. For input columns continuing in the pipeline, the next phase generates a score greater or less than 0.50, depending on the degree of sentiment detected in the input column.
 
-Currently, Sentiment Analysis supports English, German, Spanish, and French. Other languages are in preview. For more information, see [Supported languages](/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
+Currently, Sentiment Analysis supports English, German, Spanish, and French. Other languages are in preview. For more information, see [What is language detection in Azure Cognitive Service for Language](/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
 
 #### **Tag Images**
 
@@ -90,7 +90,7 @@ The **Tag Images** function returns tags based on more than 2,000 recognizable o
 
 After uploading an image or specifying an image URL, Computer Vision algorithms output tags based on the objects, living beings, and actions identified in the image. Tagging isn't limited to the main subject, such as a person in the foreground, but also includes the setting (indoor or outdoor), furniture, tools, plants, animals, accessories, gadgets, and so on.
 
-This function requires an image URL or abase-64 column as input. At this time, image tagging supports English, Spanish, Japanese, Portuguese, and Simplified Chinese. For more information, see [Supported languages](/java/api/com.microsoft.azure.cognitiveservices.vision.computervision.computervision.tagimage#azure-java-stable).
+This function requires an image URL or abase-64 column as input. At this time, image tagging supports English, Spanish, Japanese, Portuguese, and Simplified Chinese. For more information, see [ComputerVision Interface](/java/api/com.microsoft.azure.cognitiveservices.vision.computervision.computervision.tagimage#azure-java-stable).
 
 ## Automated Machine Learning in Power BI
 
@@ -122,7 +122,7 @@ This section describes how to create an AutoML model.
 
 #### Data prep for creating an ML model
 
-To create a machine learning model in Power BI, you must first create a dataflow for the data containing the historical outcome information, which is used for training the ML model. You should also add calculated columns for any business metrics that may be strong predictors for the outcome you're trying to predict. For details on configuring your dataflow, see [configure and consume a dataflow](dataflows-configure-consume.md).
+To create a machine learning model in Power BI, you must first create a dataflow for the data containing the historical outcome information, which is used for training the ML model. You should also add calculated columns for any business metrics that may be strong predictors for the outcome you're trying to predict. For details on configuring your dataflow, see [Configure and consume a dataflow](dataflows-configure-consume.md).
 
 AutoML has specific data requirements for training a machine learning model. These requirements are described in the following sections, based on respective model types.
 
@@ -380,7 +380,8 @@ To learn more about Azure Machine Learning, see:
 
 To access an Azure Machine Learning model from Power BI, the user must have **Read** access to the Azure subscription and the Machine Learning workspace.
 
-The steps in this article describe how to grant a Power BI user access to a model hosted on the Azure Machine Learning service to access this model as a Power Query function. For more information, see [Manage access using RBAC and the Azure portal](/azure/role-based-access-control/role-assignments-portal).
+The steps in this article describe how to grant a Power BI user access to a model hosted on the Azure Machine Learning service to access this model as a Power Query function. For more information, see [Assign Azure roles using the Azure portal
+](/azure/role-based-access-control/role-assignments-portal).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -408,7 +409,7 @@ The steps in this article describe how to grant a Power BI user access to a mode
 
 Data scientists primarily use Python to develop, and even deploy, their machine learning models for Machine Learning. The data scientist must explicitly generate the schema file using Python.
 
-This schema file must be included in the deployed web service for Machine Learning models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. For more information, see the subsection on [(Optional) Automatic Swagger schema generation in the Deploy models with the Azure Machine Learning](/azure/machine-learning/how-to-deploy-managed-online-endpoints) service documentation. The link includes the example entry script with the statements for the schema generation.
+This schema file must be included in the deployed web service for Machine Learning models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. For more information, see [Deploy and score a machine learning model by using an online endpoint](/azure/machine-learning/how-to-deploy-managed-online-endpoints) service documentation. The link includes the example entry script with the statements for the schema generation.
 
 Specifically, the *\@input_schema* and *\@output_schema* functions in the entry script reference the input and output sample formats in the _input_sample_ and _output_sample_ variables. The functions use these samples to generate an OpenAPI (Swagger) specification for the web service during deployment.
 
@@ -454,7 +455,7 @@ Once you save your dataflow, the model is automatically invoked when the dataflo
 This article provided an overview of Automated Machine Learning for Dataflows in the Power BI service. The following articles may also be useful.
 
 * [Tutorial: Build a Machine Learning model in Power BI](../../connect-data/service-tutorial-build-machine-learning-model.md)
-* [Tutorial: Using Cognitive Services in Power BI](../../connect-data/service-tutorial-use-cognitive-services.md)
+* [Tutorial: Use Cognitive Services in Power BI](../../connect-data/service-tutorial-use-cognitive-services.md)
 * [Tutorial: Consume Azure Machine Learning models in Power BI](../../connect-data/service-aml-integrate.md)
 
 The following articles provide more information about dataflows and Power BI:
@@ -462,7 +463,7 @@ The following articles provide more information about dataflows and Power BI:
 * [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
 * [Creating a dataflow](dataflows-create.md)
 * [Configure and consume a dataflow](dataflows-configure-consume.md)
-* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
+* [Configure dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
 * [Dataflows considerations and limitations](dataflows-features-limitations.md)
 * [Dataflows best practices](dataflows-best-practices.md)
