@@ -431,7 +431,7 @@ Select the **AI Insights** button in the ribbon, and then select the _Azure Mach
 
 To invoke an Azure Machine Learning model, you can specify any of the selected table's columns as an input from the drop-down. You can also specify a constant value to be used as an input by toggling the column icon to the left of the input dialog.
 
-:::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-07.png" alt-text="Screenshot of the column selection option on the Invoke function dialog box."." lightbox="media/service-machine-learning-integration/machine-learning-integration-07.png":::
+:::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-07.png" alt-text="Screenshot of the column selection option on the Invoke function dialog box." lightbox="media/service-machine-learning-integration/machine-learning-integration-07.png":::
 
 Select **Invoke** to view the preview of the Azure Machine Learning model's output as a new column in the table. The model invocation shows up as an applied step for the query.
 
