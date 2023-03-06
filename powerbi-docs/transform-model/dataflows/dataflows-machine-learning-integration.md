@@ -28,43 +28,35 @@ The services that are supported today are [Sentiment Analysis](/azure/cognitive-
 
 Cognitive services are supported for Premium capacity nodes EM2, A2, or P1 and other nodes with more resources. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run cognitive services. Before you use cognitive services in Power BI, the AI workload needs to be enabled in the capacity settings of the admin portal. You can turn on the AI workload in the workloads section, and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
 
-![Cognitive services in Power BI]()
-:::image type="content" source="media/service-cognitive-services/cognitive-services-01.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-cognitive-services/cognitive-services-01.png" alt-text="Screenshot of the Admin portal that shows the Capacity settings.":::
 
 ### **Getting started with Cognitive Services in Power BI**
 
 Cognitive Services transforms are part of the [Self-Service Data Prep for dataflows](https://powerbi.microsoft.com/blog/introducing-power-bi-data-prep-wtih-dataflows/). To enrich your data with Cognitive Services, start by editing a dataflow.
 
-![Edit a dataflow]()
-:::image type="content" source="media/service-cognitive-services/cognitive-services-02.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-cognitive-services/cognitive-services-02.png" alt-text="Screenshot of the entities list inside of a dataflow.":::
 
 Select the **AI Insights** button in the top ribbon of Power Query Editor.
 
-![AI insights in Power Query Editor]()
-:::image type="content" source="media/service-cognitive-services/cognitive-services-03.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-cognitive-services/cognitive-services-03.png" alt-text="Screenshot of Power Query Editor opening an entity.":::
 
 In the pop-up window, select the function you want to use and the data you want to transform. In this example, I'm scoring the sentiment of a column that contains review text.
 
-![Select a function]()
-:::image type="content" source="media/service-cognitive-services/cognitive-services-04.png" alt-text="Alt text that describes the content of the image.":::
-
+:::image type="content" source="media/service-cognitive-services/cognitive-services-04.png" alt-text="Screenshot of the Invoke function dialog showing CognitiveServices.ScoreSentiment selected.":::
 
 **LanguageISOCode** is an optional input to specify the language of the text. This column expects an ISO code. You can use a column as input for LanguageISOCode, or a static column. In this example, the language is specified as English (en) for the whole column. If you leave this column blank, Power BI automatically detects the language before applying the function. Next, select **Invoke.**
 
-![select Invoke]()
-:::image type="content" source="media/service-cognitive-services/cognitive-services-05.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-cognitive-services/cognitive-services-05.png" alt-text="Screenshot of the Invoke function dialog showing CognitiveServices.ScoreSentiment selected and en set as the LanguageIsoCode.":::
 
 After you invoke the function, the result is added as a new column to the table. The transformation is also added as an applied step in the query.
 
-![New column is created]()
-:::image type="content" source="media/service-cognitive-services/cognitive-services-06.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-cognitive-services/cognitive-services-06.png" alt-text="Screenshot showing a new column created in Power Query.":::
 
 If the function returns multiple output columns, invoking the function adds a new column with a row of the multiple output columns.
 
 Use the expand option to add one or both values as columns to your data.
 
-![Expand column]()
-:::image type="content" source="media/service-cognitive-services/cognitive-services-07.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-cognitive-services/cognitive-services-07.png" alt-text="Screenshot of the expand column option selected at the top of a column in Power Query.":::
 
 ### **Available functions**
 
@@ -104,8 +96,7 @@ This function requires an image URL or abase-64 column as input. At this time, i
 
 Automated machine learning (AutoML) for dataflows enables business analysts to train, validate, and invoke Machine Learning (ML) models directly in Power BI. It includes a simple experience for creating a new ML model where analysts can use their dataflows to specify the input data for training the model. The service automatically extracts the most relevant features, selects an appropriate algorithm, and tunes and validates the ML model. After a model is trained, Power BI automatically generates a performance report that includes the results of the validation. The model can then be invoked on any new or updated data within the dataflow.
 
-![Machine learning screen]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-01.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-01.png" alt-text="Screenshot of Get started screen for AutoML.":::
 
 Automated machine learning is available for dataflows that are hosted on Power BI Premium and Embedded capacities only.
 
@@ -139,8 +130,7 @@ AutoML has specific data requirements for training a machine learning model. The
 
 To create an AutoML model, select the ML icon in the **Actions** column of the dataflow table, and select **Add a machine learning model**.
 
-![Add a Machine learning model]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-02.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-02.png" alt-text="Screenshot of the Add a machine learning model action highlighted on a dataflow entity.":::
 
 A simplified experience is launched, consisting of a wizard that guides you through the process of creating the ML model. The wizard includes the following simple steps.
 
@@ -148,15 +138,13 @@ A simplified experience is launched, consisting of a wizard that guides you thro
 
 The outcome column identifies the label attribute for training the ML model, shown in the following image.
 
-![Select historical outcome data]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-03.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-03.png" alt-text="Screenshot of the Select a field to predict page.":::
 
 **2. Choose a model type**
 
 When you specify the outcome column, AutoML analyzes the label data to recommend the most likely ML model type that can be trained. You can pick a different model type as shown in the following image by clicking on “Select a different model”.
 
-![Select a model]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-04.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-04.png" alt-text="Screenshot of the Choose a model page.":::
 
 > [!NOTE]
 > Some model types may not be supported for the data that you have selected and hence would be disabled. In the above example, Regression is disabled, as a text column is selected as outcome column.
@@ -169,15 +157,13 @@ Any inputs that are dependent on the outcome column (or the label column) should
 
 This feature recommendation is based on a sample of a data, so you should review the inputs used. You can change the selections to include only the columns you want the model to study. You can also select all the columns by selecting the checkbox next to the table name.
 
-![Customize input columns]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-05.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-05.png" alt-text="Screenshot of the Select data to study page.":::
 
 **4. Name your model and save your configuration**
 
 In the final step, you can name the model and select Save and train which begins training the ML model. You can choose to reduce the training time to see quick results or increase the amount of time spent in training to get the best model.
 
-![Name your model]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-06.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-06.png" alt-text="Screenshot of the Name and train page.":::
 
 #### ML model training
 
@@ -198,8 +184,7 @@ In some cases, the final model generated may use ensemble learning, where multip
 
 After the model has been trained, AutoML analyzes the relationship between the input features and the model output. It assesses the magnitude of change to the model output for the holdout test dataset for each input feature. This relationship is known as the _feature importance_. This analysis happens as a part of the refresh once training is complete. Hence your refresh may take longer than the training time configured in the wizard.
 
-![Feature importance]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-07.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-07.png" alt-text="Screenshot of the Model Performance page on the model report.":::
 
 #### AutoML model report
 
@@ -213,18 +198,15 @@ Other pages in the report may describe statistical measures about the model from
 
 The reports also include a **Training Details** page that includes a description of how the model was trained, and a chart describing the model performance over each of the iterations run.
 
-![Training details]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-08.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-08.png" alt-text="Screenshot of the Training Details page on the model report.":::
 
 Another section on this page describes the detected type of the input column and imputation method used for filling missing values. It also includes the parameters used by the final model.
 
-![More information for the model]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-09.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-09.png" alt-text="Screenshot of tables showing features extracted from the provided data inputs.":::
 
 If the model produced uses ensemble learning, then the **Training Details** page also includes a chart showing the weight of each constituent model in the ensemble and its parameters.
 
-![Weight in the ensemble]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-10.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-10.png" alt-text="Screenshot of a doughnut chart that shows ensemble models.":::
 
 ### Applying the AutoML model
 
@@ -234,13 +216,11 @@ To apply the ML model, you must specify the name of the table to which it must b
 
 Applying the ML model creates two new dataflow tables that contain the predictions and individualized explanations for each row that it scores in the output table. For instance, if you apply the _PurchaseIntent_ model to the _OnlineShoppers_ table, the output generates the **OnlineShoppers enriched PurchaseIntent** and **OnlineShoppers enriched PurchaseIntent explanations** tables. For each row in the enriched table, The **Explanations** is broken down into multiple rows in the enriched explanations table based on the input feature. An **ExplanationIndex** helps map the rows from the enriched explanations table to the row in enriched table.
 
-![Query editor]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png" alt-text="Screenshot of Power Query showing the AutoML results.":::
 
 You can also apply any Power BI AutoML model to tables in any dataflow in the same workspace using AI Insights in PQO function browser. This way, you can use models created by others in the same workspace without necessarily being an owner of the dataflow that has the model. Power Query discovers all the Power BI ML models in the workspace and exposes them as dynamic Power Query functions. You can invoke those functions by accessing them from the ribbon in Power Query Editor, or by invoking the M function directly. This functionality is currently only supported for Power BI dataflows, and for Power Query Online in the Power BI service. This process is different from applying ML models within a dataflow using the AutoML wizard. There's no explanations table created using this method. Unless you're the owner of the dataflow, you can't access model training reports or retrain the model. If the source model is edited (adding or removing  input columns) or, the model or source dataflow is deleted, then this dependent dataflow would break.
 
-![Apply a model using PQO Function browser]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-20.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-20.png" alt-text="Screenshot of the AI insights dialog box highlighting the Power BI Machine Learning Models.":::
 
 After you apply the model, AutoML always keeps your predictions up-to-date whenever the dataflow is refreshed.
 
@@ -260,8 +240,7 @@ Pre-requisites:
 
 The process of creation for a Binary Prediction model follows the same steps as other AutoML models, described in the previous section, **Configuring the ML model inputs**. The only difference is in the “Choose a model” step where you can select the target outcome value that you’re most interested in. You can also provide friendly labels for the outcomes to be used in the automatically generated report that summarizes the results of the model validation.
 
-![Binary prediction wizard]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-12.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-12.png" alt-text="Screenshot of the Choose a model page for Binary Prediction.":::
 
 #### Binary Prediction model report
 
@@ -271,25 +250,21 @@ The report describes the performance of the model in terms of _True Positives, F
 
 Measures, such as Precision and Recall, describe the effect of the probability threshold on the predicted outcomes. You can use the probability threshold slicer to select a threshold that achieves a balanced compromise between Precision and Recall.
 
-![Accuracy preview]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-13.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-13.png" alt-text="Screenshot of the accuracy report preview in the model report.":::
 
 The report also includes a Cost-Benefit analysis tool to help identify the subset of the population that should be targeted to yield the highest profit. Given an estimated unit cost of targeting and a unit benefit from achieving a target outcome, Cost-Benefit analysis attempts to maximize profit. You can use this tool to pick your probability threshold based on the maximum point in the graph to maximize profit. You can also use the graph to compute the profit or cost for your choice of probability threshold.
 
-![Cost Benefit]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-14.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-14.png" alt-text="Screenshot of the Cost-Benefit Analysis graph in the model report.":::
 
 The **Accuracy Report** page of the model report includes the _Cumulative Gains_ chart and the ROC curve for the model. This data provides statistical measures of the model performance. The reports include descriptions of the charts shown.
 
-![Accuracy report screen]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-15.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-15.png" alt-text="Screenshot of the Accuracy Report page in the model report.":::
 
 #### Applying a Binary Prediction model
 
 To apply a Binary Prediction model, you must specify the table with the data to which you want to apply the predictions from the ML model. Other parameters include the output column name prefix and the probability threshold for classifying the predicted outcome.
 
-![Prediction inputs]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-16.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-16.png" alt-text="Screenshot of the Apply Purchase Intent Prediction dialog box.":::
 
 When a Binary Prediction model is applied, it adds four output columns to the enriched output table: **Outcome**, **PredictionScore**, **PredictionExplanation**, and **ExplanationIndex**. The column names in the table have the prefix specified when the model is applied.
 
@@ -321,8 +296,7 @@ Power BI creates the classification model report by applying the ML model to the
 
 The model report includes a chart that includes the breakdown of the correctly and incorrectly classified rows for each known class.
 
-![Model report]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-17.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-17.png" alt-text="Screenshot of the classification model report.":::
 
 A further class-specific drill-down action enables an analysis of how the predictions for a known class are distributed. This analysis shows the other classes in which rows of that known class are likely to be misclassified.
 
@@ -373,8 +347,7 @@ The model report includes a chart that compares the predicted values to the actu
 
 The residual error chart shows the distribution of the percentage of average error for different values in the holdout test dataset. The horizontal axis represents the mean of the actual value for the group. The size of the bubble shows the frequency or count of values in that range. The vertical axis is the average residual error.
 
-![Residual error chart]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-18.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-18.png" alt-text="Screenshot of the Residual error by price chart.":::
 
 The Regression model report also includes a Training Details page like the reports for other model types, as described in the previous section, **AutoML model report**.
 
@@ -382,8 +355,7 @@ The Regression model report also includes a Training Details page like the repor
 
 To apply a Regression ML model, you must specify the table with the input data and the output column name prefix.
 
-![Apply a regression]()
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-19.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-19.png" alt-text="Screenshot of the Apply Price Prediction dialog.":::
 
 When a Regression model is applied, it adds three output columns to the enriched output table: **RegressionResult**, **RegressionExplanation**, and **ExplanationIndex**. The column names in the table have the prefix specified when the model is applied.
 
@@ -414,23 +386,19 @@ The steps in this article describe how to grant a Power BI user access to a mode
 
 2. Go to the **Subscriptions** page. You can find the **Subscriptions** page through the **All Services** list in the nav pane menu of the Azure portal.
 
-    [Azure subscriptions page]()
-    :::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-01.png" alt-text="Alt text that describes the content of the image." lightbox="media/service-machine-learning-integration/machine-learning-integration-01.png":::
+    :::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-01.png" alt-text="Screenshot of the Azure subscriptions page." lightbox="media/service-machine-learning-integration/machine-learning-integration-01.png":::
 
 3. Select your subscription.
 
-    [Select your subscription]()
-    :::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-02.png" alt-text="Alt text that describes the content of the image." lightbox="media/service-machine-learning-integration/machine-learning-integration-02.png":::
+    :::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-02.png" alt-text="Screenshot of a selected subscription." lightbox="media/service-machine-learning-integration/machine-learning-integration-02.png":::
 
 4. Select **Access Control (IAM)**, and then select the **Add** button.
 
-    [Access control AIM]()
-    :::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-03.png" alt-text="Alt text that describes the content of the image." lightbox="media/service-machine-learning-integration/machine-learning-integration-03.png":::
+    :::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-03.png" alt-text="Screenshot of the Access Control (IAM) tab for an Azure subscription." lightbox="media/service-machine-learning-integration/machine-learning-integration-03.png":::
 
 5. Select **Reader** as the Role. Select the Power BI user to whom you wish to grant access to the Azure Machine Learning model.
 
-    [Select Reader as the role]()
-    :::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-04.png" alt-text="Alt text that describes the content of the image." lightbox="media/service-machine-learning-integration/machine-learning-integration-04.png":::
+    :::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-04.png" alt-text="Screenshot of a role being changed to reader on the Add permissions pane." lightbox="media/service-machine-learning-integration/machine-learning-integration-04.png":::
 
 6. Select **Save**.
 
@@ -451,32 +419,27 @@ These instructions for schema generation by updating the entry script must also 
 
 ### Invoking the Azure Machine Learning model in Power BI
 
-You can invoke any Azure Machine Learning model to which you have been granted access, directly from the Power Query Editor in your dataflow. To access the Azure Machine Learning models, select the **Edit** button for the table that you want to enrich with insights from your Azure Machine Learning model, as shown in the following image.
+You can invoke any Azure Machine Learning model to which you have been granted access, directly from the Power Query Editor in your dataflow. To access the Azure Machine Learning models, select the **Edit Table** button for the table that you want to enrich with insights from your Azure Machine Learning model, as shown in the following image.
 
-[Power BI service - edit the table]()
-:::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-05.png" alt-text="Alt text that describes the content of the image." lightbox="media/service-machine-learning-integration/machine-learning-integration-05.png":::
+:::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-05.png" alt-text="Screenshot of the Edit Table icon highlighted for a dataflow entity." lightbox="media/service-machine-learning-integration/machine-learning-integration-05.png":::
 
-Selecting the **Edit** button opens the Power Query Editor for the tables in your dataflow.
+Selecting the **Edit Table** button opens the Power Query Editor for the tables in your dataflow.
 
-[Power Query Editor]()
-:::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-06.png" alt-text="Alt text that describes the content of the image." lightbox="media/service-machine-learning-integration/machine-learning-integration-06.png":::
+:::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-06.png" alt-text="Screenshot of Power Query highlighting the AI insights button." lightbox="media/service-machine-learning-integration/machine-learning-integration-06.png":::
 
 Select the **AI Insights** button in the ribbon, and then select the _Azure Machine Learning Models_ folder from the nav pane menu. All the Azure Machine Learning models to which you have access are listed here as Power Query functions. Also, the input parameters for the Azure Machine Learning model are automatically mapped as parameters of the corresponding Power Query function.
 
 To invoke an Azure Machine Learning model, you can specify any of the selected table's columns as an input from the drop-down. You can also specify a constant value to be used as an input by toggling the column icon to the left of the input dialog.
 
-[select the column]()
-:::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-07.png" alt-text="Alt text that describes the content of the image." lightbox="media/service-machine-learning-integration/machine-learning-integration-07.png":::
+:::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-07.png" alt-text="Screenshot of the column selection option on the Invoke function dialog box."." lightbox="media/service-machine-learning-integration/machine-learning-integration-07.png":::
 
 Select **Invoke** to view the preview of the Azure Machine Learning model's output as a new column in the table. The model invocation shows up as an applied step for the query.
 
-[Select invoke]()
-:::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-08.png" alt-text="Alt text that describes the content of the image." lightbox="media/service-machine-learning-integration/machine-learning-integration-08.png":::
+:::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-08.png" alt-text="Screenshot of the preview output highlighted in Power Query." lightbox="media/service-machine-learning-integration/machine-learning-integration-08.png":::
 
 If the model returns multiple output parameters, they're grouped together as a row in the output column. You can expand the column to produce individual output parameters in separate columns.
 
-[expand the column]()
-:::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-09.png" alt-text="Alt text that describes the content of the image." lightbox="media/service-machine-learning-integration/machine-learning-integration-09.png":::
+:::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-09.png" alt-text="Screenshot of the expand column options." lightbox="media/service-machine-learning-integration/machine-learning-integration-09.png":::
 
 Once you save your dataflow, the model is automatically invoked when the dataflow is refreshed, for any new or updated rows in the table.
 
