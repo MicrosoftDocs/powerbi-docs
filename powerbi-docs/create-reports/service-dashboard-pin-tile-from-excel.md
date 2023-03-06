@@ -86,6 +86,9 @@ A tile created from a table or PivotTable shows the entire table. If you add, re
 
 Selecting a workbook tile opens the linked workbook in Power BI. Since the workbook file is located on the owner’s OneDrive for work or school, viewing the workbook requires you to have read permissions for the workbook. If you don't have permission, you receive an error message.
 
+> [!NOTE]
+> The animation might use earlier versions of the Power BI service.
+
  :::image type="content" source="media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif" alt-text="Animation of navigation through Excel Online workbook.":::
 
 ## Considerations and troubleshooting
