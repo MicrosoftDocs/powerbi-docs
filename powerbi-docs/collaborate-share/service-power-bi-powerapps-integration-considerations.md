@@ -26,15 +26,15 @@ Since actions such as exporting a solution or adding a solution involve removing
 
 Working with Power Apps solutions, you can add Power BI report and dataset components from Power BI workspaces to a solution. If the report or the dataset you selected to add to your solution is in a different geography than the Power Apps environment you are trying to move it to, it is called a cross-geo operation. Another example of a situation where cross-geo operations might take place is when the dedicated target environment workspace in Power BI (that was created automatically when the first Power BI component was added to the solution), is not located in the same geography as the Power Apps environment.
 
-The Power BI/Power Apps solutions integration supports cross-geo operations, provided that it has been [enabled]. (#enabling-and-disabling-cross-geo-operations).
+The Power BI/Power Apps solutions integration supports cross-geo operations, provided that information sharing between the Power Platform environment and the Power BI workspaces has been [enabled](#enabling-and-disabling-cross-geo-operations).
 
-When you perform a cross-geo operation, before you will be allowed to complete the operation you'll see a banner alerting you to the fact that yo're about to move items between geographies. The banner also tells you which geographies are involved. Review the information before proceeding to ensure that the action is compliant with any security and/or data-residency requirements. The following image shows an example of this banner.
+When you perform a cross-geo operation, before you can complete the operation a banner will alert you to the fact that you're about to move items between geographies. The banner also tells you which geographies are involved. Review the information before proceeding to ensure that the action is compliant with any security and/or data-residency requirements. The following image shows an example of this banner.
 
 :::image type="content" source="./media/service-power-bi-powerapps-integration-considerations/powerapps-solutions-cross-geo-operation-banner.png" alt-text="Screenshot of a cross-geo operation notification banner in the Power BI/Power Apps solutions integration.":::
 
 ### Enabling and disabling cross-geo operations
 
-Cross-geo operations are controlled by two feature settings, one in Power BI and the other in Power Platform. The settings must be ON in order for cross-geo operations to take place. The settings are on by default.
+Cross-geo operations are controlled by two feature settings, one in Power BI and the other in Power Platform. The settings in both places must be ON in order for cross-geo operations to take place. The settings are on by default.
 
 * For detail about enabling/disabling the setting on the Power BI side, see [Power Platform interregional access](../admin/service-admin-portal-integration.md#power-platform-interregional-access).
 
