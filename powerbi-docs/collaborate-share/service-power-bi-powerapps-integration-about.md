@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 09/14/2022
+ms.date: 03/07/2023
 ---
 
 # About Power BI in Power Apps Solutions (preview)
@@ -30,8 +30,8 @@ Finally, there are security and life cycle considerations to take into account w
 
 ## Next Steps
 
-* [Enable the Power BI/Power Apps Solutions integration](./service-power-bi-powerapps-integration-about.md)
-* [Using the Power BI/Power Apps solutions integration](./service-power-bi-powerapps-integration-about.md)
-* [Considerations working with the Power BI/Power Apps solutions integration](./service-power-bi-powerpoint-add-in-admin.md)
+* [Enable the Power BI/Power Apps Solutions integration](./service-power-bi-powerapps-integration-enable.md)
+* [Using the Power BI/Power Apps solutions integration](./service-power-bi-powerapps-integration-using.md)
+* [Considerations working with the Power BI/Power Apps solutions integration](./service-power-bi-powerapps-integration-considerations.md)
 * [Power BI content management in Power Apps solutions](/power-apps/maker/model-driven-apps/power-bi-content-management-power-apps-solutions)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
