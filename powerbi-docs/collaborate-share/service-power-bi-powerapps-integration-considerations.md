@@ -34,7 +34,7 @@ When you perform a cross-geo operation, before you will be allowed to complete t
 
 ### Enabling and disabling cross-geo operations
 
-Cross-geo operations are controlled by feature settings in both Power BI and in Power Platform. The switches in both places must be ON in order for cross-geo operations to take place. The switches are on by default.
+Cross-geo operations are controlled by two feature settings, one in Power BI and the other in Power Platform. The settings must be ON in order for cross-geo operations to take place. The settings are on by default.
 
 * For detail about enabling/disabling the setting on the Power BI side, see [Power Platform interregional access](../admin/service-admin-portal-integration.md#power-platform-interregional-access).
 
