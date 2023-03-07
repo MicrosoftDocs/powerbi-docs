@@ -36,16 +36,16 @@ After you install the client and configure ODAC properly, use Power BI Desktop o
 
 ## Add a data source
 
-1. On the **New connection** screen for your on-premises data gateway, select **Oracle** for **Connection type**. For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source).
+1. On the **New connection** screen for your on-premises data gateway, select **Oracle** for **Connection type**.
 
    :::image type="content" source="media/service-gateway-onprem-manage-oracle/add-data-source-oracle.png" alt-text="Screenshot of adding an Oracle data source to the gateway." :::
 
-1. Fill in the **Server** for the data source.
+1. In **Server**, enter the name for the data source.
 
 1. Under **Authentication method**, choose either **Windows** or **Basic**. Choose **Basic** if you plan to use an account you created within Oracle instead of Windows authentication. Then enter the credentials to use for this data source.
 
    > [!NOTE]
-   > All queries to the data source run under these credentials. To learn more about credential storage, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
+   > All queries to the data source run with these credentials. To learn more about credential storage, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 1. Configure the **Privacy level** for your data source. This setting controls how data can combine for scheduled refresh. The privacy-level setting doesn't apply to DirectQuery. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
@@ -53,13 +53,13 @@ After you install the client and configure ODAC properly, use Power BI Desktop o
 
    :::image type="content" source="media/service-gateway-onprem-manage-oracle/authentication-oracle.png" alt-text="Screenshot of filling in credentials and privacy level for the Oracle data source." :::
 
-   If the creation succeeds, you see **Created \<Data source name>**. You can now use this data source for scheduled refresh or DirectQuery against the on-premises Oracle server. 
+   If the creation succeeds, you see **Created \<Data source name>**. You can now use this data source for scheduled refresh or DirectQuery with the on-premises Oracle server. 
 
    :::image type="content" source="media/service-gateway-onprem-manage-oracle/successful-data-source-oracle.png" alt-text=" Screenshot of successful creation for the Oracle data source." :::
 
 ## Use the data source
 
-After you create the data source, it's available to use with either DirectQuery connections or through scheduled refresh.
+After you create the data source, it's available to use with either DirectQuery or scheduled refresh.
 
 > [!IMPORTANT]
 > The server and database names must match between Power BI Desktop and the data source within the on-premises data gateway.
@@ -69,8 +69,6 @@ The link between your dataset and the data source within the gateway is based on
 ### Use the data source with DirectQuery connections
 
 Make sure that the server and database names match between Power BI Desktop and the configured data source for the gateway. Also, to be able to publish DirectQuery datasets, your users must appear under **Users** in the data source listing.
-
-You select **DirectQuery** in Power BI Desktop when you first connect to the data. For more information about how to use DirectQuery, see [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md).
 
 After you publish reports, either from Power BI Desktop or by getting data in Power BI service, your on-premises data connection should work. It might take several minutes after you create the data source in the gateway to be able to use the connection.
 
