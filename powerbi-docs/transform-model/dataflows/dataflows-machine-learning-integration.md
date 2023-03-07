@@ -12,7 +12,7 @@ LocalizationGroup: Data from files
 ---
 # AI with dataflows
 
-This article shows how you can use artificial intelligence (AI) with dataflows. The following areas described in this article:
+This article shows how you can use artificial intelligence (AI) with dataflows. This article describes:
 
 * Cognitive Services
 * Automated machine learning
@@ -22,11 +22,11 @@ This article shows how you can use artificial intelligence (AI) with dataflows. 
 
 With Cognitive Services in Power BI, you can apply different algorithms from [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) to enrich your data in the self-service data prep for Dataflows.
 
-The services that are supported today are [Sentiment Analysis](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Key Phrase Extraction](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Language Detection](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection), and [Image Tagging](/azure/cognitive-services/computer-vision/concept-tagging-images). The transformations are executed on the Power BI Service and don't require an Azure Cognitive Services subscription. This feature requires Power BI Premium.
+The services that are supported today are [Sentiment Analysis](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Key Phrase Extraction](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Language Detection](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection), and [Image Tagging](/azure/cognitive-services/computer-vision/concept-tagging-images). The transformations are executed on the Power BI service and don't require an Azure Cognitive Services subscription. This feature requires Power BI Premium.
 
 ### Enable AI features
 
-Cognitive services are supported for Premium capacity nodes EM2, A2, or P1 and other nodes with more resources. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run cognitive services. Before you use cognitive services in Power BI, the AI workload needs to be enabled in the **Capacity settings** of the **Admin portal**. You can turn on the AI workload in the workloads section, and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
+Cognitive services are supported for Premium capacity nodes EM2, A2, or P1 and other nodes with more resources. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run cognitive services. Before you use cognitive services in Power BI, the AI workload needs to be enabled in the **Capacity settings** of the **Admin portal**. You can turn on the AI workload in the workloads section and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
 
 :::image type="content" source="media/service-cognitive-services/cognitive-services-01.png" alt-text="Screenshot of the Admin portal that shows the Capacity settings.":::
 
@@ -44,7 +44,7 @@ In the pop-up window, select the function you want to use and the data you want 
 
 :::image type="content" source="media/service-cognitive-services/cognitive-services-04.png" alt-text="Screenshot of the Invoke function dialog showing CognitiveServices.ScoreSentiment selected.":::
 
-**LanguageISOCode** is an optional input to specify the language of the text. This column expects an ISO code. You can use a column as input for LanguageISOCode, or a static column. In this example, the language is specified as English (en) for the whole column. If you leave this column blank, Power BI automatically detects the language before applying the function. Next, select **Invoke**.
+**LanguageISOCode** is an optional input to specify the language of the text. This column expects an ISO code. You can use a column as input for LanguageISOCode, or you can use a static column. In this example, the language is specified as English (en) for the whole column. If you leave this column blank, Power BI automatically detects the language before applying the function. Next, select **Invoke**.
 
 :::image type="content" source="media/service-cognitive-services/cognitive-services-05.png" alt-text="Screenshot of the Invoke function dialog showing CognitiveServices.ScoreSentiment selected and en set as the LanguageIsoCode.":::
 
@@ -64,13 +64,13 @@ This section describes the available functions in Cognitive Services in Power BI
 
 #### Detect Language
 
-The language detection function evaluates text input, and for each column, returns the language name and ISO identifier. This function is useful for data columns that collect arbitrary text, where language is unknown. The function expects data in text format as input.
+The language detection function evaluates text input and, for each column, returns the language name and ISO identifier. This function is useful for data columns that collect arbitrary text, where language is unknown. The function expects data in text format as input.
 
 Text Analytics recognizes up to 120 languages. For more information, see [What is language detection in Azure Cognitive Service for Language](/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
 
 #### Extract Key Phrases
 
-The **Key Phrase Extraction** function evaluates unstructured text, and for each text column, returns a list of key phrases. The function requires a text column as input and accepts an optional input for **LanguageISOCode**. For more information, see the [Get Started](/power-bi/transform-model/dataflows/dataflows-machine-learning-integration#Get-started-with-Cognitive-Services-in-Power-BI).
+The **Key Phrase Extraction** function evaluates unstructured text and, for each text column, returns a list of key phrases. The function requires a text column as input and accepts an optional input for **LanguageISOCode**. For more information, see the [Get Started](/power-bi/transform-model/dataflows/dataflows-machine-learning-integration#Get-started-with-Cognitive-Services-in-Power-BI).
 
 Key phrase extraction works best when you give it bigger chunks of text to work on, opposite from sentiment analysis. Sentiment analysis performs better on smaller blocks of text. To get the best results from both operations, consider restructuring the inputs accordingly.
 
@@ -86,7 +86,7 @@ Currently, Sentiment Analysis supports English, German, Spanish, and French. Oth
 
 #### Tag Images
 
-The **Tag Images** function returns tags based on more than 2,000 recognizable objects, living beings, scenery, and actions. When tags are ambiguous or not common knowledge, the output provides 'hints' to clarify the meaning of the tag in context of a known setting. Tags aren't organized as a taxonomy and no inheritance hierarchies exist. A collection of content tags forms the foundation for an image 'description' displayed as human readable language formatted in complete sentences.
+The **Tag Images** function returns tags based on more than 2,000 recognizable objects, living beings, scenery, and actions. When tags are ambiguous or not common knowledge, the output provides 'hints' to clarify the meaning of the tag in context of a known setting. Tags aren't organized as a taxonomy, and no inheritance hierarchies exist. A collection of content tags forms the foundation for an image 'description' displayed as human readable language formatted in complete sentences.
 
 After uploading an image or specifying an image URL, Computer Vision algorithms output tags based on the objects, living beings, and actions identified in the image. Tagging isn't limited to the main subject, such as a person in the foreground, but also includes the setting (indoor or outdoor), furniture, tools, plants, animals, accessories, gadgets, and so on.
 
@@ -134,7 +134,7 @@ To create an AutoML model, select the ML icon in the **Actions** column of the d
 
 A simplified experience launches, consisting of a wizard that guides you through the process of creating the ML model. The wizard includes the following simple steps.
 
-**1. Select the table with the historical data, and the outcome column for which you want a prediction**
+**1. Select the table with the historical data, and choose the outcome column for which you want a prediction**
 
 The outcome column identifies the label attribute for training the ML model, shown in the following image.
 
@@ -144,10 +144,10 @@ The outcome column identifies the label attribute for training the ML model, sho
 
 When you specify the outcome column, AutoML analyzes the label data to recommend the most likely ML model type that can be trained. You can pick a different model type as shown in the following image by clicking on **Choose a model**.
 
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-04.png" alt-text="Screenshot of the Choose a model page.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-04.png" alt-text="Screenshot showing the Choose a model page.":::
 
 > [!NOTE]
-> Some model types might not be supported for the data that you have selected and hence would be disabled. In the previous example, Regression is disabled, because a text column is selected as outcome column.
+> Some model types might not be supported for the data that you have selected, and so, it would be disabled. In the previous example, Regression is disabled, because a text column is selected as outcome column.
 
 **3. Select the inputs you want the model to use as predictive signals**
 
@@ -161,9 +161,9 @@ This feature recommendation is based on a sample of a data, so you should review
 
 **4. Name your model and save your configuration**
 
-In the final step, you can name the model, select **Save**, and train which begins training the ML model. You can choose to reduce the training time to see quick results or increase the amount of time spent in training to get the best model.
+In the final step, you can name the model, select **Save**, and choose which begins training the ML model. You can choose to reduce the training time to see quick results or increase the amount of time spent in training to get the best model.
 
-:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-06.png" alt-text="Screenshot of the Name and train page.":::
+:::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-06.png" alt-text="Screenshot showing the Name and train page.":::
 
 #### ML model training
 
@@ -174,9 +174,9 @@ Next, each input column is analyzed and imputation is applied, which replaces an
 
 Then, sampling and normalization are applied to your data as required. For classification models, AutoML runs the input data through stratified sampling and balances the classes to ensure the row counts are equal for all.
 
-AutoML applies several transformations on each selected input column based on its data type, and its statistical properties. AutoML uses these transformations to extract features for use in training your ML model.
+AutoML applies several transformations on each selected input column based on its data type and statistical properties. AutoML uses these transformations to extract features for use in training your ML model.
 
-The training process for AutoML models consists of up to 50 iterations with different modeling algorithms and hyperparameter settings to find the model with the best performance. Training can end early with lesser iterations if AutoML notices that there's no performance improvement being observed. AutoML assesses the performance of each of these models by validating with the holdout test dataset. During this training step, AutoML creates several pipelines for training and validation of these iterations. The process of assessing the performance of the models can take time, anywhere from several minutes to a couple of hours up-to the training time configured in the wizard. The time taken depends on the size of your dataset and the capacity resources available.
+The training process for AutoML models consists of up to 50 iterations with different modeling algorithms and hyperparameter settings to find the model with the best performance. Training can end early with lesser iterations if AutoML notices that there's no performance improvement being observed. AutoML assesses the performance of each of these models by validating with the holdout test dataset. During this training step, AutoML creates several pipelines for training and validation of these iterations. The process of assessing the performance of the models can take time, anywhere from several minutes, to a couple of hours, up-to the training time configured in the wizard. The time taken depends on the size of your dataset and the capacity resources available.
 
 In some cases, the final model generated might use ensemble learning, where multiple models are used to deliver better predictive performance.
 
@@ -212,13 +212,13 @@ If the model produced uses ensemble learning, then the **Training Details** page
 
 If you're satisfied with the performance of the ML model created, you can apply it to new or updated data when your dataflow is refreshed. In the model report, select the **Apply** button in the top-right corner or the **Apply ML Model** button under actions in the **Machine Learning Models** tab.
 
-To apply the ML model, you must specify the name of the table to which it must be applied, and a prefix for the columns that will be added to this table for the model output. The default prefix for the column names is the model name. The *Apply* function might include more parameters specific to the model type.
+To apply the ML model, you must specify the name of the table to which it must be applied and a prefix for the columns that will be added to this table for the model output. The default prefix for the column names is the model name. The *Apply* function might include more parameters specific to the model type.
 
 Applying the ML model creates two new dataflow tables that contain the predictions and individualized explanations for each row that it scores in the output table. For instance, if you apply the *PurchaseIntent* model to the *OnlineShoppers* table, the output generates the **OnlineShoppers enriched PurchaseIntent** and **OnlineShoppers enriched PurchaseIntent explanations** tables. For each row in the enriched table, The **Explanations** is broken down into multiple rows in the enriched explanations table based on the input feature. An **ExplanationIndex** helps map the rows from the enriched explanations table to the row in enriched table.
 
 :::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png" alt-text="Screenshot of Power Query showing the AutoML results.":::
 
-You can also apply any Power BI AutoML model to tables in any dataflow in the same workspace by using **AI Insights** in the **PQO function browser**. This way, you can use models created by others in the same workspace without necessarily being an owner of the dataflow that has the model. Power Query discovers all the Power BI ML models in the workspace and exposes them as dynamic Power Query functions. You can invoke those functions by accessing them from the ribbon in Power Query Editor, or by invoking the M function directly. This functionality is currently only supported for Power BI dataflows, and for Power Query Online in the Power BI service. This process is different from applying ML models within a dataflow using the AutoML wizard. There's no explanations table created by using this method. Unless you're the owner of the dataflow, you can't access model training reports or retrain the model. If the source model is edited (adding or removing  input columns) or, the model or source dataflow is deleted. Then this dependent dataflow would break.
+You can also apply any Power BI AutoML model to tables in any dataflow in the same workspace by using **AI Insights** in the **PQO function browser**. This way, you can use models created by others in the same workspace without necessarily being an owner of the dataflow that has the model. Power Query discovers all the Power BI ML models in the workspace and exposes them as dynamic Power Query functions. You can invoke those functions by accessing them from the ribbon in Power Query Editor or by invoking the M function directly. This functionality is currently only supported for Power BI dataflows and for Power Query Online in the Power BI service. This process is different from applying ML models within a dataflow using the AutoML wizard. There's no explanations table created by using this method. Unless you're the owner of the dataflow, you can't access model training reports or retrain the model. Also, if the source model is edited by adding or removing input columns or the model or source dataflow is deleted,then this dependent dataflow would break.
 
 :::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-20.png" alt-text="Screenshot of the AI insights dialog box highlighting the Power BI Machine Learning Models.":::
 
@@ -246,7 +246,7 @@ The process of creation for a Binary Prediction model follows the same steps as 
 
 The Binary Prediction model produces as an output a probability that a row will achieve the target outcome. The report includes a slicer for the probability threshold, which influences how the scores greater and less than the probability threshold are interpreted.
 
-The report describes the performance of the model in terms of *True Positives, False Positives, True Negatives, and False Negatives*. True Positives and True Negatives are correctly predicted outcomes for the two classes in the outcome data. False Positives are rows that were predicted to have Target outcome but actually didn't. Conversely, False Negatives are rows that had Target outcome but were predicted as not having it.
+The report describes the performance of the model in terms of *True Positives, False Positives, True Negatives, and False Negatives*. True Positives and True Negatives are correctly predicted outcomes for the two classes in the outcome data. False Positives are rows that were predicted to have Target outcome but actually didn't. Conversely, False Negatives are rows that had target outcomes but were predicted as not them.
 
 Measures, such as Precision and Recall, describe the effect of the probability threshold on the predicted outcomes. You can use the probability threshold slicer to select a threshold that achieves a balanced compromise between Precision and Recall.
 
@@ -322,7 +322,7 @@ The **ClassificationExplanation** column contains an explanation with the specif
 
 Regression models are used to predict a numeric value and can be used in scenarios like determining:
 
-* Revenue likely to be realized from a sales deal.
+* The revenue likely to be realized from a sales deal.
 * The lifetime value of an account.
 * The amount of a receivable invoice that is likely to be paid
 * The date on which an invoice might be paid, and so on.
@@ -335,7 +335,7 @@ The input table containing the training data for a Regression model must have a 
 
 Pre-requisites:
 
-* A minimum of 100 rows of historical data is required for a Regression model
+* A minimum of 100 rows of historical data is required for a Regression model.
 
 The process of creation for a Regression model follows the same steps as other AutoML models, described in the previous section, [Configure the ML model inputs](/power-bi/transform-model/dataflows/dataflows-machine-learning-integration#configure-the-ML-model-inputs).
 
@@ -367,14 +367,14 @@ Numerous organizations use machine learning models for better insights and predi
 
 To use this capability, a data scientist can grant access to the Azure Machine Learning model to the BI analyst by using the Azure portal. Then, at the start of each session, Power Query discovers all the Azure Machine Learning models to which the user has access and exposes them as dynamic Power Query functions. The user can then invoke those functions by accessing them from the ribbon in Power Query Editor, or by invoking the M function directly. Power BI also automatically batches the access requests when invoking the Azure Machine Learning model for a set of rows to achieve better performance.
 
-This functionality is currently only supported for Power BI dataflows, and for Power Query online in the Power BI service.
+This functionality is currently only supported for Power BI dataflows and for Power Query online in the Power BI service.
 
 To learn more about dataflows, see [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md).
 
 To learn more about Azure Machine Learning, see:
 
-* Overview:  [What is Azure Machine Learning?](/azure/machine-learning/overview-what-is-azure-machine-learning)
-* Quick Starts and Tutorials for Azure Machine Learning:  [Azure Machine Learning Documentation](/azure/machine-learning/)
+* Overview: [What is Azure Machine Learning?](/azure/machine-learning/overview-what-is-azure-machine-learning)
+* Quick Starts and Tutorials for Azure Machine Learning: [Azure Machine Learning Documentation](/azure/machine-learning/)
 
 ### Grant access to the Azure Machine Learning model to a Power BI user
 
@@ -390,7 +390,7 @@ The steps in this article describe how to grant a Power BI user access to a mode
 
 3. Select your subscription.
 
-    :::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-02.png" alt-text="Screenshot of a selected subscription." lightbox="media/service-machine-learning-integration/machine-learning-integration-02.png":::
+    :::image type="content" source="media/service-machine-learning-integration/machine-learning-integration-02.png" alt-text="Screenshot showing a selected subscription." lightbox="media/service-machine-learning-integration/machine-learning-integration-02.png":::
 
 4. Select **Access Control (IAM)**, and then choose the **Add** button.
 
@@ -415,7 +415,7 @@ Specifically, the *\@input_schema* and *\@output_schema* functions in the entry 
 These instructions for schema generation by updating the entry script must also be applied to models created by using automated machine learning experiments with the Azure Machine Learning SDK.
 
 > [!NOTE]
-> Models created by using the Azure Machine Learning visual interface do not currently support schema generation, but will in subsequent releases.
+> Models created by using the Azure Machine Learning visual interface don't currently support schema generation but will in subsequent releases.
 
 ### Invoking the Azure Machine Learning model in Power BI
 
