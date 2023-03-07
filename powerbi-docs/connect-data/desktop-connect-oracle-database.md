@@ -56,27 +56,35 @@ The steps in the following two sections assume you've installed the ODAC 18.x fi
 
 1. On the Oracle download site, install the Oracle 64-bit ODAC Oracle Universal Installer (OUI).
 
-2. Register ODP.NET Unmanaged Client to GAC:
+2. Register ODP.NET Unmanaged Client to GAC by running the following command:
 
 
     `C:\oracle64\product\18.0.0\client_1\odp.net\bin\4\OraProvCfg.exe /action:gac /providerpath:C:\oracle64\product\18.0.0\client_1\odp.net\bin\4\Oracle.DataAccess.dll`
 
-3. Add ODP.NET Unmanaged Client entries to machine.config:
+3. Add ODP.NET Unmanaged Client entries to machine.config by running the following command:
 
     `C:\oracle64\product\18.0.0\client_1\odp.net\bin\4\OraProvCfg.exe /action:config /force /product:odp /frameworkversion:v4.0.30319 /providerpath:C:\oracle64\product\18.0.0\client_1\odp.net\bin\4\Oracle.DataAccess.dll`
+    
+> [!NOTE]
+> The previous commands assume that drivers were installed in C:\oracle64\product\18.0.0\. Modify the path accordingly if drivers were installed in a different location.
 
 #### 32-bit Power BI Desktop
 
 1. On the Oracle download site, install the [Oracle 32-bit ODAC Oracle Universal Installer (OUI)](https://www.oracle.com/technetwork/topics/dotnet/downloads/odacdev-4242174.html).
 
-2. Register ODP.NET Unmanaged Client to GAC:
+2. Register ODP.NET Unmanaged Client to GAC by running the following command:
 
     `C:\oracle32\product\18.0.0\client_1\odp.net\bin\4\OraProvCfg.exe /action:gac /providerpath:C:\oracle32\product\18.0.0\client_1\odp.net\bin\4\Oracle.DataAccess.dll`
 
-3. Add ODP.NET Unmanaged Client entries to machine.config:
+3. Add ODP.NET Unmanaged Client entries to machine.config by running the following command:
 
     `C:\oracle32\product\18.0.0\client_1\odp.net\bin\4\OraProvCfg.exe /action:config /force /product:odp /frameworkversion:v4.0.30319 /providerpath:C:\oracle32\product\18.0.0\client_1\odp.net\bin\4\Oracle.DataAccess.dll`
 
+## Install the Oracle Client for Microsoft Tools
+
+Alternatively you can install the newer Oracle client for microsoft tools which supports both 32 and 64-bit versions: [Oracle Client for Microsoft Tools](https://www.oracle.com/database/technologies/net-downloads.html)
+
+For information about installing this tool and connecting to an Oracle database or an Oracle Autonomous database, go to the following article [Learn more about Oracle Client for Microsoft Tools](https://www.oracle.com/a/ocom/docs/database/microsoft-powerbi-connection-adw.pdf)
 
 ## Connect to an Oracle Database
 
