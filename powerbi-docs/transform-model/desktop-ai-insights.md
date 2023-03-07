@@ -98,7 +98,7 @@ The first time you use AI Insights on a new data source, Power BI Desktop prompt
 > [!NOTE]
 > Refreshes of the dataset in Power BI will only work for data sources where the privacy level is set to public or organizational.
 
-After you invoke the funtion, the result is added as a new column to the table. The transformation is also added as an applied step in the query.
+After you invoke the function, the result is added as a new column to the table. The transformation is also added as an applied step in the query.
 
 In the cases of image tagging and key phrase extraction, the results can return multiple values. Each individual result is returned on a duplicate of the original row.
 
