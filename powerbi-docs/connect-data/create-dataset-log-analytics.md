@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/07/2023
+ms.date: 03/06/2023
 ms.custom:
 LocalizationGroup: Visualizations
 ---
@@ -72,6 +72,10 @@ If you replace the credentials you used last time with your current sign-in cred
 Take the above considerations into account when you make your choice.
 
 If you've never previously connected to Log Analytics from Power BI, Power BI will automatically use your current credentials to establish the connection, and you won't see this dialog.
+
+## Considerations and limitations
+
+If the Windows Azure Service Management API, the Log Analytics API service, or both, use multi-factor authentication, then for this feature to work, Power BI must use multi-factor authentication as well.
 
 ## Next steps
 
