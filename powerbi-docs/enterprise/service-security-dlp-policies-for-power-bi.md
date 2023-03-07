@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 12/01/2022
+ms.date: 02/16/2023
 LocalizationGroup: Data from files
 ---
 
@@ -19,14 +19,16 @@ To help organizations detect and protect their sensitive data, Power BI supports
 ## Considerations and limitations
 
 * DLP policies for Power BI are defined in the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149).
-* DLP policies apply to workspaces. Only workspaces hosted in [Premium Gen2 capacities](./service-premium-gen2-what-is.md) and [Premium Per User](./service-premium-per-user-faq.yml) workspaces are supported.
+* DLP policies apply to workspaces. Only workspaces hosted in [Premium capacities](./service-premium-what-is.md) are supported.
 * DLP dataset evaluation workloads impact capacity. See [CPU metering for DLP policy evaluation](#cpu-metering-for-dlp-policy-evaluation) for more information.
 * DLP policy templates aren't yet supported for Power BI DLP policies. When creating a DLP policy for Power BI, choose the "custom policy" option.
 * Power BI DLP policy rules currently support sensitivity labels and sensitive info types as conditions.
-* DLP policies for Power BI aren't supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections).
+* DLP policies for Power BI aren't supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections). This includes datasets with mixed storage, where some of the data comes via import-mode and some comes via DirectQuery.
 * DLP policies for Power BI aren't supported in sovereign clouds.
 * Custom sensitive info types of the type *Keyword list* and *Keyword dictionary* are currently not supported when using DLP policies for the Power BI location.
+* [Exact data match (EDM) classifiers](/microsoft-365/compliance/sit-learn-about-exact-data-match-based-sits) are not supported by DLP for Power BI. If you select an EDM classifier in the condition of a policy, the policy will yield no results even if the dataset does in fact contain data that satisfies the EDM classifier.
 * Currently, DLP policies for Power BI don't support scanning for sensitive info types in data stored in the Southeast Asia region. See [How to find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#how-to-find-the-default-region-for-your-organization) to learn how to find your organization's default data region.
+* DLP policies for Power BI aren't supported in the China North region.
 
 ## Licensing and permissions
 
@@ -49,14 +51,12 @@ Data from DLP for Power BI can be viewed in [Activity explorer](/microsoft-365/c
 
 ## CPU metering for DLP policy evaluation
 
-This section is relevant only for workspaces hosted on Premium Gen2 capacities. It doesn't apply to Premium Per User workspaces.
-
 DLP policy evaluation uses CPU from the premium capacity associated with the workspace where the dataset being evaluated is located. CPU consumption of the evaluation is calculated as 30% of the CPU consumed by the action that triggered the evaluation. For example, if a refresh action costs 30 milliseconds of CPU, the DLP scan will cost another 9 milliseconds. This fixed 30% additional CPU consumption for DLP evaluation helps you predict the impact of DLP policies on your overall Capacity CPU utilization, and perform capacity planning when rolling out DLP policies in your organization.
 
-Use the Power BI Premium Capacity Metrics App to monitor the CPU usage of your DLP policies. For more information, see [Use the Gen2 metrics app](./service-premium-gen2-metrics-app.md).
+Use the Power BI Premium Capacity Metrics App to monitor the CPU usage of your DLP policies. For more information, see [Use the Premium metrics app](./service-premium-metrics-app.md).
 
 >[!NOTE]
->As mentioned, metering of DLP evaluation to calculate CPU consumption applies only to workspaces hosted on Premium Gen2 capacities. DLP evaluation in Premium Per User workspaces is included in the PPU license.
+>Users with PPU licenses do not incur the DLP policy evaluation costs described above, as these costs are covered for them up front by their PPU license.
 
 ## How do DLP policies for Power BI work
 
@@ -124,7 +124,7 @@ When a DLP policy detects an issue with a dataset:
 
     By default the policy will apply to all workspaces. Alternatively, you can specify particular workspaces to include in the policy as well as workspaces to exclude from the policy.
     >[!NOTE]
-    > DLP actions are supported only for workspaces hosted in Premium Gen2 capacities.
+    > DLP actions are supported only for workspaces hosted in Premium capacities.
 
     If you select **Choose workspaces** or **Exclude workspaces**, a dialog will allow you to select workspaces to be included (or excluded).
 

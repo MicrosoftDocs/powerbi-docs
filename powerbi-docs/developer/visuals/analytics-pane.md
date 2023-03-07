@@ -22,80 +22,36 @@ The [Analytics pane](../../transform-model/desktop-analytics-pane.md) allows you
 
 ## Manage the Analytics pane
 
-The managing properties in the [Analytics pane](../../transform-model/desktop-analytics-pane.md) are similar to the managing properties in the [Format pane](./custom-visual-develop-tutorial-format-options.md). You define an [object](objects-properties.md) in the visual's [capabilities.json](capabilities.md) file.
+Managing properties in the [**Analytics** pane](../../transform-model/desktop-analytics-pane.md) is similar to the managing properties in the [**Format** pane](./custom-visual-develop-tutorial-format-options.md). You define an [object](objects-properties.md) in the visual's [*capabilities.json*](capabilities.md) file.
 
 For the **Analytics** pane, the object is defined as follows:
 
 ### [API 5.1+](#tab/API-5-1)
 
-1. Under the object's definition, add the object name, property name, and type. For more information, see [Customize the format pane in Power BI custom visuals](./format-pane.md).  
- Example:
+Under the object's definition, add only the object name, property name and type as explained [here](./format-pane.md).
+Example:
 
-   ```json
-   {
-     "objects": {
-       "YourAnalyticsPropertiesCard": {
-         "displayName": "Your analytics properties card's name",
-         "objectCategory": 2,
-         "properties": {
-           "show": {
-             "type": {
-               "bool": true
-             }
-           },
-           "displayName": {
-             "type": {
-               "text": true
-             }
-           },
-         ... //any other properties for your Analytics card
-         }
-       }
-     ...
-     }
-   }
-      ```
-
-1. In the Formatting settings card, specify that the card belongs to the Analytics pane by setting the card `analyticsPane` parameter to true. By default, the card `analyticsPane` parameter is false, and the card will be added to the Formatting pane.
-
-#### [With FormattingModel Utils](#tab/API-5-1-Impl-FormattingModel-Utils)
-
-```typescript
-class YourAnalyticsCardSettings extends FormattingSettingsCard {
-    show = new formattingSettings.ToggleSwitch({
-        name: "show",
-        displayName: undefined,
-        value: false,
-        topLevelToggle: true
-    });
-
-    displayNameProperty = new formattingSettings.TextInput({
-        displayName: "displayName",
-        name: "displayName",
-        placeholder: "",
-        value: "Analytics Instance",
-    });
-
-    name: string = "YourAnalyticsPropertiesCard";
-    displayName: string = "Your analytics properties card's name";
-    analyticsPane: boolean = true; // <===  Add and set analyticsPane variable to true 
-    slices = [this.show, this.displayNameProperty];
+```json
+{
+  "objects": {
+    "YourAnalyticsPropertiesCard": {
+      "properties": {
+        "show": {
+          "type": {
+            "bool": true
+          }
+        },
+        "displayName": {
+          "type": {
+            "text": true
+          }
+        },
+      ... //any other properties for your Analytics card
+      }
+    }
+  ...
+  }
 }
-```
-
-#### [Without FormattingModel Utils](#tab/API-5-1-Without-FormattingModel-Utils)
-
-```typescript
- const averageLineCard: powerbi.visuals.FormattingCard = {
-    displayName: "Your analytics properties card's name",
-    uid: "yourAnalyticsCard_uid",
-    analyticsPane: true, // <===  Add and set analyticsPane variable to true 
-    groups: [{
-        displayName: undefined,
-        uid: "yourAnalyticsCard_group_uid",
-        slices: [this.show, this.displayNameProperty],
-    }]
-};
 ```
 
 ### [Older APIs (before 5.1)](#tab/Old-API)
@@ -138,7 +94,83 @@ class YourAnalyticsCardSettings extends FormattingSettingsCard {
 
 ---
 
-Define other properties the same way for **Format** objects, and enumerate objects just as you do in the **Format** pane.
+In the formatting settings card, specify that this card belongs to the analytics pane by setting the `set card analyticsPane` parameter to `true`. By default, `analyticsPane` parameter is false and the card will be added to formatting pane. See the following implementations:
+
+#### [Using FormattingModel Utils](#tab/API-5-1-Impl-FormattingModel-Utils)
+
+```typescript
+class YourAnalyticsCardSettings extends FormattingSettingsCard {
+    show = new formattingSettings.ToggleSwitch({
+        name: "show",
+        displayName: undefined,
+        value: false,
+        topLevelToggle: true
+    });
+
+    displayNameProperty = new formattingSettings.TextInput({
+        displayName: "displayName",
+        name: "displayName",
+        placeholder: "",
+        value: "Analytics Instance",
+    });
+
+    name: string = "YourAnalyticsPropertiesCard";
+    displayName: string = "Your analytics properties card's name";
+    analyticsPane: boolean = true; // <===  Add and set analyticsPane variable to true 
+    slices = [this.show, this.displayNameProperty];
+}
+```
+
+#### [Without FormattingModel Utils](#tab/API-5-1-Without-FormattingModel-Utils)
+
+```typescript
+      const show: powerbi.visuals.EnabledSlice = {
+          uid: "enableAxisCard_topLevelToggle_show_uid",
+          suppressDisplayName: true,
+          control: {
+              type: powerbi.visuals.FormattingComponent.ToggleSwitch,
+              properties: {
+                  descriptor: {
+                      objectName: "YourAnalyticsPropertiesCard",
+                      propertyName: "show"
+                  },
+                  value: false
+              }
+          }
+      }
+        
+      const displayNameProperty: powerbi.visuals.FormattingSlice = {
+          uid: "enableAxisCard_displayName_uid",
+          suppressDisplayName: true,
+          control: {
+              type: powerbi.visuals.FormattingComponent.TextInput,
+              properties: {
+                  descriptor: {
+                      objectName: "YourAnalyticsPropertiesCard",
+                      propertyName: "displayName"
+                  },
+                  value: "Analytics Instance",
+                  placeholder: ""
+              }
+          }
+      }
+
+      const averageLineCard: powerbi.visuals.FormattingCard = {
+          displayName: "Your analytics properties card's name",
+          uid: "yourAnalyticsCard_uid",
+          analyticsPane: true, // <===  Add and set analyticsPane variable to true 
+          topLevelToggle: show,
+          groups: [{
+              displayName: undefined,
+              uid: "yourAnalyticsCard_group_uid",
+              slices: [displayNameProperty],
+          }]
+      };
+```
+
+---
+
+Define other properties the same way that you do for **Format** objects, and enumerate objects just as you do in the **Format** pane.
 
 > [!NOTE]
 >

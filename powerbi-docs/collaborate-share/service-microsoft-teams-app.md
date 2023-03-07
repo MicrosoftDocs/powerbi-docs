@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 11/01/2022
+ms.date: 02/28/2023
 ---
 
 # Add the Power BI app to Microsoft Teams
@@ -37,11 +37,10 @@ Ensure the following elements are in place to install the Power BI app in Micros
 
 - Power BI app is enabled in the Teams Admin center apps list.
 - Your users with a Power BI (Free) license can access personal analytics. They can use the built-in Teams analytics report and create reports in their My workspace.
-- Your users with Power BI (Free) licenses can also access content that's shared with them from a workspace that's part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-gen2-what-is.md).
+- Your users with Power BI (Free) licenses can also access content that's shared with them from a workspace that's part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-what-is.md).
 - Your users with a Power BI Pro or Premium Per User (PPU) license can share content with others or build content in workspaces.
 - Users have signed in within the Power BI app for Teams or the Power BI service and activated their Power BI license.
 - Users meet the requirements to use the **Power BI** tab in Microsoft Teams.
-
 
 ## Install the Power BI app
 
@@ -70,6 +69,12 @@ You can even share a report with your coworkers from the Power BI app in Microso
 The Power BI app in Microsoft Teams also features a hub for training. Select **Learn** to view the **Learning Center**.
 
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-learn-tab.png" alt-text="Screenshot of the Learning center in the Power BI app in Microsoft Teams. The Learn tab is selected in Teams and the Power BI navigation pane.":::
+
+The Power BI app in Microsoft Teams helps you multi-task by remembering where you navigated to for one hour. When you leave the app and return within one hour, the app *automatically takes you back* to where you were working by navigating to: 
+- Items you visited, such as the report page you were on and the filters you applied.
+- Places you visited, such as Home, Create, Data hub, Workspaces, and so on.
+
+When using the Power BI app in Microsoft Teams Desktop, you can use the Microsoft Teams back button to navigate back within the Power BI app. When using the app in Microsoft Teams in a web browser, use the browser back button.  
 
 ### Differences in interactions
 
@@ -130,6 +135,7 @@ Power BI end users might see a notification in the Power BI service notification
 - Power BI doesn't support the same localized languages that Microsoft Teams does. As a result, you might not see proper localization within a report.
 - The Power BI app for Microsoft Teams is available to Commercial Cloud and US Government Community Cloud (GCC) customers.
 - Search experience isn't available in US GCC.
+- To automatically take you back when navigating back to the app, your navigation history is saved approximately every 15 seconds. The history is stored locally on your computer or in your web browser window. If you navigate to a place and filter, then quickly switch to another part of Teams, such as to Chat, Calendar, or Teams, your navigation may not be captured. If you change computers or start a new browser window, the history isn't available.  
 
 ## Next steps
 

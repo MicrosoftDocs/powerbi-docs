@@ -1,17 +1,19 @@
 ---
 title: Power BI data source prerequisites
-description: Power BI data source prerequisites
+description: Learn about Power BI data sources, their providers and data source objects, and their supported versions
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/02/2021
+ms.date: 02/07/2023
 LocalizationGroup: Connect to data
 ---
 # Power BI data source prerequisites
-For each data provider, Power BI supports a specific provider version on objects. For more information about data sources available to Power BI, see [Data sources](desktop-data-sources.md). The following table describes these requirements.
+For data sources, Power BI supports specific provider versions and data source versions, and certain objects. For more information about available Power BI data sources, see [Data sources](desktop-data-sources.md). 
+
+The following table describes Power BI data source requirements.
 
 | Data source | Provider | Minimum provider version | Minimum data source version | Supported data source objects | Download link |
 | --- | --- | --- | --- | --- | --- |
@@ -30,4 +32,3 @@ For each data provider, Power BI supports a specific provider version on objects
 >[!NOTE]
 >The Oracle providers also require Oracle client software (version 8.1.7+).
 > 
->

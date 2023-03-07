@@ -6,7 +6,7 @@ ms.author: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual 
-ms.date: 11/25/2022
+ms.date: 03/05/2023
 ms.custom: 
 ---
 
@@ -29,9 +29,7 @@ The following table lists features of Power BI that are **not** yet available in
 |Power BI | Template app marketplace | Generally available | Not available | AppSource isn't available in China. |
 | Power BI | Datamart | Public preview | Not available |  |
 | Power BI and Office | Teams - embed interactive Power BI report | Generally available | Not available | |
-|Power BI and Office | PowerPoint - embed live data | Public preview | Not available | Feature availability is dependent on Office add-in readiness in China. |
 |Power BI scalability | Large models | Generally available | Not available |  |
-
 
 ## Next steps
 

@@ -41,6 +41,10 @@ Review the following list of limitations before using the *push datasets* APIs.
 
 * 4,000 characters per value for string column in POST rows operation
 
+* 75 max relationships
+
+* Doesn't work with service principal profiles
+
 ## Next steps
 
 * [Power BI REST APIs](/rest/api/power-bi/).

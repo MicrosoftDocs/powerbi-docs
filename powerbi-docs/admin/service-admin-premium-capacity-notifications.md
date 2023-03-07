@@ -11,9 +11,9 @@ ms.date: 12/16/2022
 LocalizationGroup: Premium 
 ---
 
-# Configure Power BI Premium Gen2 capacity notifications
+# Configure Power BI Premium capacity notifications
 
-Power BI Premium Gen2 allows you to configure email notifications for your capacity. The emails will be sent to the people you specify in the notifications settings.
+Power BI Premium allows you to configure email notifications for your capacity. The emails will be sent to the people you specify in the notifications settings.
 
 To calculate when to send emails, Power BI checks the capacity every 15 minutes. During the check, the last 15 to 30 minutes of capacity activity are examined.
 
@@ -60,12 +60,12 @@ To configure the capacity notification emails, follow these steps:
 
 * After a notification is sent, there's a three hour period in which new notifications won't be sent, even if your capacity crosses thresholds that are set to trigger these notifications. For example, if you configure your capacity to send a notification after you cross the 75% usage threshold, after that threshold is met you'll receive a notification. If the capacity goes below this threshold to 60%, and then right back over it in the next hour, you won't get another notification for crossing the 75% mark. If you have the autoscale notification turned on, and your capacity crosses the 100% threshold during these three hours, you'll get a notification that autoscale started.
 
-* A 30-seconds window is applied to calculate your capacity usage. Due to a less granular calculation, capacity usage might appear differently in the [Power BI Premium utilization and metrics](../enterprise/service-premium-gen2-metrics-app.md) app. As a result, you might not see the event your notification points to in the app. For example, a short spike in capacity activity that triggers a notification might not be seen at all in the Power BI Premium utilization and metrics app.
+* A 30-seconds window is applied to calculate your capacity usage. Due to a less granular calculation, capacity usage might appear differently in the [Power BI Premium utilization and metrics](../enterprise/service-premium-metrics-app.md) app. As a result, you might not see the event your notification points to in the app. For example, a short spike in capacity activity that triggers a notification might not be seen at all in the Power BI Premium utilization and metrics app.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [What is Power BI Premium Gen2?](../enterprise/service-premium-gen2-what-is.md)
+> [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 
 > [!div class="nextstepaction"]
 > [About the admin portal](service-admin-portal.md)
