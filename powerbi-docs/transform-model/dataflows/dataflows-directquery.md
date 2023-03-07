@@ -24,8 +24,7 @@ Using DirectQuery with Power BI dataflows lets you connect directly to a dataflo
 To use DirectQuery with dataflows, you must explicitly toggle the **enhanced compute engine** to **On** in dataflow settings. You must then refresh the dataflow before it can be consumed in DirectQuery mode.
 
 1. Navigate to the Premium dataflow, and set **enhanced compute engine** to **On**.
-2. Navigate to the dataflow settings section for the target dataflow, and turn on **enhanced compute engine** for the dataflow.
-3. Refresh the dataflow.
+2. Refresh the dataflow.
 
 After you complete the steps, the dataflow is accessible in Power BI Desktop with DirectQuery mode.
 
