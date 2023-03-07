@@ -61,7 +61,7 @@ There are two types of workspaces: *My workspace* and *workspaces*.
 - *Workspaces* are used to collaborate and share content with colleagues. You can add colleagues to your workspaces and collaborate on dashboards, reports, apps, workbooks, and datasets. With one exception*, each workspace member needs a Power BI Pro or Premium Per User (PPU) license.
 
   - For more information about workspaces, see [Create a workspace in Power BI](../collaborate-share/service-create-the-new-workspaces.md).
-  - For more information about licenses, see [Power BI service per-user and capacity-based licenses](service-features-license-type.md).
+  - *For more information about licenses, see [Power BI service per-user and capacity-based licenses](service-features-license-type.md).
 
   Workspaces are also the places where you create, publish, and manage *apps* for your organization. Think of workspaces as staging areas and containers for the content that make up a Power BI app (see [the following section](#apps)).
 
