@@ -3,7 +3,7 @@ title: "Display percentage values on pie chart in Power BI paginated report | Mi
 description: Learn how to display percentage values in a paginated report on a pie chart, in the legend or in the pie slices in Power BI Report Builder.
 ms.date: 02/24/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
