@@ -3,7 +3,7 @@ title: "Charts in Power BI paginated report | Microsoft Docs"
 description: Use chart data regions to help readers of your Power BI paginated reports understand large volumes of aggregated data at a glance in Power BI Report Builder.
 ms.date: 02/21/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
