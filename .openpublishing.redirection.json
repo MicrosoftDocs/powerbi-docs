@@ -1435,6 +1435,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/paginated-reports/paginated-formatted-table.md",
+            "redirect_url": "/power-bi/paginated-reports/paginated-reports/web-authoring/paginated-formatted-table",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/paginated-reports/paginated-reports-parameters.md",
             "redirect_url": "/power-bi/paginated-reports/parameters/paginated-reports-create-parameters",
             "redirect_document_id": false
