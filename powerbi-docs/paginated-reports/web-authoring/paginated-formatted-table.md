@@ -133,8 +133,8 @@ After saving the report, you can preview it. Select **Reading view** on the top 
 ## Considerations and limitations
 
 - You can create a paginated report in any workspace.
-- You can't create a paginated from Power BI datasets based on a live connection.
-- The online editor does **NOT** replicate all existing Power BI Report Builder functionality.  
+- You can't create a paginated report from Power BI datasets based on a live connection.
+- The online editor does *not* replicate all existing Power BI Report Builder functionality.  
 
 ## Next steps
 
