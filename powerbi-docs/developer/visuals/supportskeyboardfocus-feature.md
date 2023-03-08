@@ -24,10 +24,7 @@ All visuals come with the following basic keyboard accessibility:
 * Press <kbd>Esc</kbd> to move the focus from inside the visual to the visual container.
 * Press <kbd>Tab</kbd> from inside a custom visual to navigate through focusable elements in the visual. Pressing <kbd>Tab</kbd> after the last tababble element moves the focus back outside of the visual.
 
-Hoe do you get inside the visual?
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Power BI visual, which shows a selected data point.](./media/supportskeyboardfocus-feature/supports-keyboard-focus-example.png)
+:::image type="content" source="./media/supportskeyboardfocus-feature/supports-keyboard-focus-example.png" alt-text="[Screenshot of a Power BI visual with a selected data point.":::
 
 For more information about keyboard navigation for visuals, see [Keyboard navigation](../../create-reports/desktop-accessibility-consuming-tools.md#keyboard-navigation).
 
