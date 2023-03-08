@@ -3,7 +3,7 @@ title: "Specify an axis interval in a Power BI paginated report | Microsoft Docs
 description: Find out how to change the number of labels and tick marks on the category (x) axis in a chart in a Power BI paginated report by setting the axis interval in Power BI Report Builder.
 ms.date: 02/21/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
