@@ -15,7 +15,7 @@ LocalizationGroup: Samples
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-The Power BI team has created a COVID-19 tracking sample that enables US state and local governments to publish or customize an interactive report about COVID-19. When you Power BI Desktop, you can analyze and visualize COVID-19 data  to keep your community informed  at the city, county, state, and national levels. Then use Power BI Publish to Web to share the report publicly and inform citizens. The article offers different options for using Power BI interactive visualizations in your own public story, blog, or website.
+The Power BI team has created a COVID-19 tracking sample that enables US state and local governments to publish or customize an interactive report about COVID-19. When you open it in Power BI Desktop, you can analyze and visualize COVID-19 data to keep your community informed at the city, county, state, and national levels. Then use Power BI Publish to Web to share the report publicly and inform citizens. The article offers different options for using Power BI interactive visualizations in your own public story, blog, or website.
 
 :::image type="content" source="media/sample-covid-19-us/covid-19-us-tracking-sample.png" alt-text="Screenshot showing COVID-19 sample with US data.":::
 
@@ -48,7 +48,7 @@ The embed code is an HTML iFrame element that you can insert into any HTML page.
 
 ## Option 2: Customize the sample Power BI file
 
-The Power BI file contains the data model and interactive graphics in a Power BI template (.pbit) file format you can edit in Power BI Desktop. See  the "Download the Power BI template (.pbit) file" section in this articl for details.
+The Power BI file contains the data model and interactive graphics in a Power BI template (.pbit) file format you can edit in Power BI Desktop. See  the "Download the Power BI template (.pbit) file" section in this article for details.
 
 A typical customization is to filter the report to a specific state, and then to create your own publish-to-web embed code for your customized report.
 
