@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 03/07/2023
+ms.date: 03/08/2023
 ---
 
 # About Power BI in Power Apps Solutions (preview)
