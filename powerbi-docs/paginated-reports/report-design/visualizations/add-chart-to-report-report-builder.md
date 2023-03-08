@@ -3,7 +3,7 @@ title: "Add a chart to a Power BI paginated report | Microsoft Docs"
 description: Learn how to add a chart to a Power BI paginated report when you want to summarize data in a visual format in Power BI Report Builder.
 ms.date: 02/23/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
