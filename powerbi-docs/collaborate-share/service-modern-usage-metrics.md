@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 08/29/2022
+ms.date: 02/13/2023
 LocalizationGroup: Dashboards
 ---
 
@@ -16,10 +16,9 @@ LocalizationGroup: Dashboards
 
 Knowing how your content is being used helps you demonstrate your impact and prioritize your efforts. Your usage metrics may show that one of your reports is used daily by a huge segment of the organization. It may show that nobody is viewing a dashboard you created at all. This type of feedback is invaluable in guiding your work efforts.
 
-If you create reports in workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and how they're using them. You can also identify high-level performance issues. The improved usage reports for shared workspaces replace the usage metrics reports documented in [Monitor usage metrics in My workspace](service-usage-metrics.md).
+If you create reports in workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and how they're using them. You can also identify high-level performance issues. The improved usage reports for shared workspaces replace the usage metrics reports documented in [Monitor report usage metrics](service-usage-metrics.md).
 
-![Screenshot of the Usage Metrics report.](media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png)
-
+![Screenshot of the new Usage Metrics report.](media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png)
 
 > [!NOTE]
 > You can only run usage metrics reports in the Power BI service. However, if you save a usage metrics report or pin it to a dashboard, you can open and interact with that report on mobile devices.
@@ -30,25 +29,29 @@ If you create reports in workspaces, you have access to improved usage metrics r
 - To access usage metrics for a report, you must have edit access to the report.
 - Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal-audit-usage.md).
 
-## Create and view a usage metrics report
+## Create and view a new usage metrics report
 
 Only users with admin, member, or contributor permissions can view the usage metrics report. Viewer permissions aren't enough. If you are at least a contributor in a workspace in which your report resides, you can use the following procedure to display the usage metrics:
 
 1. Open the workspace that contains the report for which you want to analyze the usage metrics.
-2. From either the workspace content list, open the context menu of the report and select **View usage metrics report**. Alternatively, open the report, then open the context menu on the command bar, and then select **Usage metrics**.
+2. From the workspace content list, select **More options (...)** for the report and select **View usage metrics report**.
 
     ![Screenshot of steps to view Usage Metrics.](media/service-modern-usage-metrics/power-bi-modern-view-usage-metrics.png)
+
+    Or open the report, then on the command bar, select **More options (...)** > **Open usage metrics**.
+
+    :::image type="content" source="media/service-modern-usage-metrics/service-more-options-open-usage-metrics.png" alt-text="Screenshot of selecting More options, Open usage metrics.":::
 
 1. The first time you do this, Power BI creates the usage metrics report and lets you know when it's ready.
 
     ![Screenshot of Usage Metrics report being ready.](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-ready.png)
 
 1. To see the results, select **View usage metrics**.
-2. If this is the first time you do this, Power BI might open the old usage metrics report. To display the improved usage metrics report, in the upper right corner, toggle the New usage report off switch to **On**.
+2. If this is the first time you've viewed a usage metrics report, Power BI might open the old usage metrics report. To display the improved usage metrics report, in the upper right corner, toggle the **New usage report** switch to **On**.
 
-    ![Screenshot of switching to the Usage Metrics report.](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-on.png)
+    ![Screenshot of switching to the Usage Metrics report.](media/service-modern-usage-metrics/toggle-new-usage-report-on.png)
 
-## About the usage metrics report
+## About the new usage metrics report
 
 When you display the usage metrics report, Power BI generates a pre-built report. It contains usage metrics for that content for the last 30 days. The report looks similar to the Power BI reports you're already familiar with. You can slice based on how your end users received access, whether they accessed via the web or mobile app, and so on. As your reports evolve, so too will the usage metrics report. It updates every day with new data.
 
@@ -423,7 +426,7 @@ Follow these steps to delete the dataset and then create a fresh data refresh re
 
 2. If you still see the Usage Metrics report in the Reports list, refresh your browser.
 
-3. Start over and [create a fresh usage metrics report](#create-and-view-a-usage-metrics-report).
+3. Start over and [create a fresh usage metrics report](#create-and-view-a-new-usage-metrics-report).
 
 ## Next steps
 

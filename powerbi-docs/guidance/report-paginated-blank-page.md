@@ -1,8 +1,8 @@
 ---
 title: Avoid blank pages when printing paginated reports
 description: Guidance for designing paginated reports to avoid blank pages when printed.
-author: kfollis
-ms.author: kfollis
+author: maggiemsft
+ms.author: maggies
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource

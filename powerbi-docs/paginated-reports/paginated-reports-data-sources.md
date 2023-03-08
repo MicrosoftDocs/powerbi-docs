@@ -12,7 +12,7 @@ ms.date: 02/03/2023
 
 # Supported data sources for Power BI paginated reports
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)] 
 
 This article describes supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources. Some data sources are supported natively. You can connect to others by using data gateways.
 
@@ -52,7 +52,7 @@ In addition to the natively supported data sources, the following data sources c
 
 For paginated reports, Azure Analysis Services currently can't be accessed using either a Power BI enterprise gateway or a VNet gateway. When you authenticate with SSO, service principal isn't supported.
 
-Also, for paginated reports, a report publisher with Power BI enterprise gateway or a VNet gateway admin permissions is required to bind the paginated report to the data source connection. You become an admin either by being added as an admin or because you installed and configured a Power BI enterprise gateway or a VNet gateway. Note that being a Power BI enterprise gateway admin does not automatically provide access to existing data source connections. You have to specify which data source connection you'd like to manage.
+Also, for paginated reports, a report publisher with a Power BI enterprise gateway or a VNet gateway admin permission is required to bind the paginated report to the data source connection. You become an admin either by being added as an admin or because you installed and configured a Power BI enterprise gateway or a VNet gateway. Note that being a Power BI enterprise gateway admin does not automatically provide access to existing data source connections. You have to specify which data source connection you'd like to manage.
 
 > [!IMPORTANT]
 > Using the **SSO via Kerberos** options within the gateway's **Advanced settings** requires the [configuration of Kerberos constrained delegation](../connect-data/service-gateway-sso-kerberos.md) on the on-premises data source and gateway service.
@@ -81,7 +81,7 @@ For SSO and OAuth2 to work correctly, the Azure SQL Database server that the dat
   
 ## Considerations and limitations
 
-When using a Power BI dataset as a data source, you might see an error message **Request failed because response is too large, either reduce the amount of data or use the XMLA endpoint.** if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Learn more about the [XMLA endpoint](../enterprise/service-premium-connect-tools.md). By default, Power BI Report Builder and paginated reports use the **Analyze in Excel** endpoint [(which has a 2-GB data limit)](../collaborate-share/service-analyze-power-bi-datasets-excel.md#considerations-and-limitations) to support Power BI datasets in any workspace.
+When using a Power BI dataset as a data source, you might see an error message **Request failed because response is too large, either reduce the amount of data or use the XMLA endpoint.** if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Learn more about the [XMLA endpoint](../enterprise/service-premium-connect-tools.md). By default, Power BI Report Builder and paginated reports use the **Analyze in Excel** endpoint [(which has a 2-GB data limit)](../collaborate-share/service-analyze-in-excel.md#considerations-and-limitations) to support Power BI datasets in any workspace.
 
 ## Next steps
 

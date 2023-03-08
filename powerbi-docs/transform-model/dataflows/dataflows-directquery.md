@@ -1,16 +1,16 @@
 ---
 title: Using DirectQuery with dataflows
-description: How to use DirectQuery with dataflows
+description: Learn how to connect Power BI Desktop to the datasets in your Power BI dataflows by using DirectQuery.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 02/14/2023
 LocalizationGroup: Data from files
 ---
-# Using DirectQuery with dataflows
+# Use DirectQuery with dataflows
 
 Using DirectQuery with Power BI dataflows lets you connect directly to a dataflow without the need to import the data into a dataset. There are many reasons why using DirectQuery with dataflows, rather than importing data, is useful and helpful. The following are a few examples:
 
@@ -19,38 +19,36 @@ Using DirectQuery with Power BI dataflows lets you connect directly to a dataflo
 * Serving data to customers in a managed and performance-minded way
 * Preventing the need to duplicate data in a dataflow and an imported dataset
 
-
-## Configuration
+## Configurations
 
 To use DirectQuery with dataflows, you must explicitly toggle the **enhanced compute engine** to **On** in dataflow settings. You must then refresh the dataflow before it can be consumed in DirectQuery mode.
 
 1. Navigate to the Premium dataflow, and set **enhanced compute engine** to **On**.
-2. Navigate to the dataflow settings section for the target dataflow, and turn on **enhanced compute engine** for the dataflow.
-3. Refresh the dataflow.
+2. Refresh the dataflow.
 
-Once the steps are completed, the dataflow will be accessible in Power BI Desktop with DirectQuery mode.
+After you complete the steps, the dataflow is accessible in Power BI Desktop with DirectQuery mode.
 
 ## Consumption
 
-When DirectQuery is available for a dataflow, connecting to a dataflow using the **Power BI dataflows** connector prompts you to choose whether to connect to tables through DirectQuery or Import.
+When DirectQuery is available for a dataflow, connecting to a dataflow by using the **Dataflows** connector prompts you to choose whether to connect to tables through DirectQuery or Import.
 
 Dataflow entities that support DirectQuery display the **View** icon in Power BI Desktop, rather than the **Table** icon. The View icon appears as two boxes overlaid on each other, the Table icon is a single table with a grid.
 
 The following image shows the **View** icon, indicating that the *Orders* table supports DirectQuery:
 
-:::image type="content" source="media/dataflows-directquery/dataflows-directquery-supported.png" alt-text="Image showing that direct query is supported.":::
+:::image type="content" source="media/dataflows-directquery/dataflows-directquery-supported.png" alt-text="Screenshot of the View icon showing that direct query is supported.":::
 
 This image shows the **Table** icon, indicating that the *Query* table only supports import:
 
-:::image type="content" source="media/dataflows-directquery/dataflows-directquery-not-supported.png" alt-text="Image showing that direct query is not supported.":::
+:::image type="content" source="media/dataflows-directquery/dataflows-directquery-not-supported.png" alt-text="Screenshot of the Table icon showing that direct query isn't supported.":::
 
-In DirectQuery mode, you can quickly interrogate large-scale datasets locally. However, you cannot currently perform any other transformations. 
+In DirectQuery mode, you can quickly interrogate large-scale datasets locally. However, you can't currently perform any other transformations.
 
 ## Next steps
 
-This article provided an overview of using DirectQuery with dataflows. The following articles may also be useful.
+This article provided an overview of using DirectQuery with dataflows. The following articles might also be useful:
 
-* [About using DirectQuery in Power BI](../../connect-data/desktop-directquery-about.md)
+* [DirectQuery in Power BI](../../connect-data/desktop-directquery-about.md)
 * [DirectQuery model guidance in Power BI Desktop](../../guidance/directquery-model-guidance.md)
 
 The following articles provide more information about dataflows and Power BI:

@@ -1,8 +1,8 @@
 ---
 title: Power BI adoption roadmap conclusion
 description: A conclusion and extra resources of the Power BI adoption roadmap series of articles.
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

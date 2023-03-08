@@ -6,6 +6,7 @@ ms.author: rocould
 ms.reviewer: kesharab
 ms.service: powerbi
 ms.subservice: powerbi-premium
+ms.custom: devx-track-azurepowershell, devx-track-azurecli
 ms.topic: how-to
 ms.date: 02/09/2023
 LocalizationGroup: Premium
@@ -151,5 +152,3 @@ Save your settings and exit. Your SQL Managed Instance is now configured to allo
 * [Enable a public endpoint in the SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure)
 * [az network nsg rule](/cli/azure/network/nsg/rule)
 * [Add a network security group rule in PowerShell](/azure/service-fabric/scripts/service-fabric-powershell-add-nsg-rule)
-
-
