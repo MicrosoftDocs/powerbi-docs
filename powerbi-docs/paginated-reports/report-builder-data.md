@@ -13,7 +13,7 @@ ms.date: 01/25/2023
 
 # Understand paginated report data in Power BI Report Builder
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)] 
 
 Paginated report data can come from multiple sources of data in your organization. Your first step in designing a Power BI Report Builder paginated report is to create data sources and datasets that represent the underlying report data.
 
