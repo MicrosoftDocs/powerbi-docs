@@ -8,7 +8,7 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc, intro-overview
-ms.date: 01/30/2023
+ms.date: 03/08/2023
 #Customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
 ---
 
@@ -58,6 +58,13 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Sensitivity Labels | No | Yes | [Sensitivity Labels](../enterprise/service-security-sensitivity-label-overview.md) |
 | Template apps | No | Yes | [Install and distribute template apps in your organization](../connect-data/service-template-apps-install-distribute.md) |
 
+## Considerations and limitations
+
+These considerations and limitations apply to Power BI Report Sever.
+
+The following Power BI service features do not work on Power BI Report Server:
+
+- Export data with current layout
 
 ## Next steps
 
