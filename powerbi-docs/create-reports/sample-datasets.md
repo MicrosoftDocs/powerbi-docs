@@ -152,7 +152,7 @@ Let's start with the *built-in samples*. The built-in samples are available in t
 
 Now that you have data, you're on your way.  Try out some of our tutorials using the built-in samples or just open the Power BI service and explore.
 
-## Download original sample .xlsx Power BI files
+## Download original sample .pbix Power BI files
 
 Six of the built-in samples are also available as Power BI *.pbix* files. The *.pbix* files are designed to be used with Power BI Desktop.  
 
