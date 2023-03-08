@@ -3,7 +3,7 @@ title: "Display data point labels outside a pie chart in a Power BI paginated re
 description: Discover how displaying the labels outside a pie chart in a Power BI paginated report might create more room for longer data labels in Power BI Report Builder.
 ms.date: 02/21/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
