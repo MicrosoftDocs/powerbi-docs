@@ -3,7 +3,7 @@ title: "Change the text of a legend item in Power BI paginated report | Microsof
 description: Find out how to change the text of a legend item in Power BI paginated report to show more information about the individual data points in Power BI Report Builder.
 ms.date: 02/24/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
