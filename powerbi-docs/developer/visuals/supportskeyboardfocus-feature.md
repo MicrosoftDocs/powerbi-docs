@@ -16,13 +16,13 @@ This article explains how to support navigation through a Power BI visual using 
 
 The `supportsKeyboardFocus` feature makes it possible to navigate the data points of the visual by using only the keyboard.
 
-## Basic keyboard accessability features
+## Basic keyboard accessibility features
 
-All visuals come with the following basic keyboard accessability:
+All visuals come with the following basic keyboard accessibility:
 
 * Press <kbd>Tab</kbd> from outside the visual to navigate through the different elements of the report.
 * Press <kbd>Esc</kbd> to move the focus from inside the visual to the visual container.
-* Press <kbd>Tab</kbd> from inside a custom visual to navigate through focusable elements in the visual. Pressing <kbd>Tab</kbd> after the last tabable element will move the focus back outside of the visual.
+* Press <kbd>Tab</kbd> from inside a custom visual to navigate through focusable elements in the visual. Pressing <kbd>Tab</kbd> after the last tabable element moves the focus back outside of the visual.
 
 Hoe do you get inside the visual?
 
@@ -31,7 +31,7 @@ Hoe do you get inside the visual?
 
 For more information about keyboard navigation for visuals, see [Keyboard navigation](../../create-reports/desktop-accessibility-consuming-tools.md#keyboard-navigation).
 
-## Enhanced keyboard accessability
+## Enhanced keyboard accessibility
 
 To make your custom visual even more accessible, add the `supportsKeyboardFocus` capability to your visual by adding the following line to the "capabilities.json" file:
 
@@ -43,11 +43,11 @@ To make your custom visual even more accessible, add the `supportsKeyboardFocus`
     }
 ```
 
-This capability add the following features to your custom visual:
+This capability adds the following features to your custom visual:
 
 * Press <kbd>Enter</kbd> when the focus is on the visual container to move the focus to inside the custom visual.
 
-* Press <kbd>Tab</kbd> when the focus is inside the custom visual to enable navigation through tabbable elements. The focus won't leave the visual until you press <kbd>Esc</kbd>.
+* Press <kbd>Tab</kbd> when the focus is inside the custom visual to enable navigation through tabable elements. The focus stays inside the visual until you press <kbd>Esc</kbd>.
 
 > [!NOTE]
 > Not all HTML elements are tabbable by default (e.g., div, span). Make sure to consider adding the correct attribute (e.g tabindex) to such elements if you want them to be tabbable.
