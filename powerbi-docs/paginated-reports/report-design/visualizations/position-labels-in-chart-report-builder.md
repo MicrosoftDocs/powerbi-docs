@@ -3,7 +3,7 @@ title: "Position labels in Power BI paginated report chart | Microsoft Docs"
 description: Determine the type of chart you're using in your Power BI paginated report to find out how to change the position of labels in that type and shape of chart.
 ms.date: 02/24/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
