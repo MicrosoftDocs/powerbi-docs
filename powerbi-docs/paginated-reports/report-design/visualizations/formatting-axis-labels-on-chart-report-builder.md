@@ -3,7 +3,7 @@ title: "Formatting axis labels on a Power BI paginated report chart | Microsoft 
 description: Learn how to format axis labels on a paginated report chart using a dialog box or by using the properties pane to categorize and display relationships in Power BI Report Builder.
 ms.date: 02/24/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 
 
 ms.topic: conceptual
