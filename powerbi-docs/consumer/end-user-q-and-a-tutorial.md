@@ -42,7 +42,7 @@ At the current time, Power BI Q&A only supports answering natural language queri
 
 1. Select the sample. It opens in Reading mode.
 
-   :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-sample-read-view.png" alt-text="Screenshot shows the Retail Analysis Sample in reading mode." lightbox="media/end-user-q-and-a-tutorial/power-bi-sample-read-view.png":::
+   :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-sample-read-mode.png" alt-text="Screenshot shows the Retail Analysis Sample in reading mode." lightbox="media/end-user-q-and-a-tutorial/power-bi-sample-read-mode.png":::
 
 1. Select your workspace in the navigation bar to the left. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
 
