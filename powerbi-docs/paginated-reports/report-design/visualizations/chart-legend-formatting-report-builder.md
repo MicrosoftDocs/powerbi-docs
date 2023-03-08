@@ -3,7 +3,7 @@ title: "Formatting the legend on a Power BI paginated report chart | Microsoft D
 description: Learn how to format a legend on a Power BI paginated report chart in Report Builder with the Legend Properties dialog box or by using the Properties pane.
 ms.date: 02/23/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
