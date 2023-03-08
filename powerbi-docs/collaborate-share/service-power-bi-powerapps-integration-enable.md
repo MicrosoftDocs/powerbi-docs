@@ -16,7 +16,7 @@ ms.date: 03/08/2023
 
 The Power BI/Power Apps solutions integration enables Power Apps app makers to add Power BI reports and datasets as Dataverse components in Power Apps solutions, and to seamlessly manage that content as part of their Application Lifecycle Management process across environments and tenants.
 
-For the integration to work, the Power Platform Solutions Integration (Preview) must be **Enabled**, both on the Power BI side and on the Power Platform side. It is enabled on both sides by default. By default, cross-geo operations are also enabled. In order for cross-geo operation to work, cross-geo operation **must** be enabled on both sides.
+For the integration to work, the Power Platform Solutions Integration (Preview) must be **Enabled**, both on the Power BI side and on the Power Platform side. It's enabled on both sides by default. By default, cross-geo operations are also enabled. In order for cross-geo operation to work, cross-geo operation **must** be enabled on both sides.
 
 ## Enable the Power BI/Power Apps Solutions integration in Power BI
 
