@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 02/16/2023
+ms.date: 03/08/2023
 ---
 
 # Analyze your Teams usage in the Power BI app for Teams
@@ -70,7 +70,7 @@ Select the **Refresh** icon in Power BI in Teams to refresh the data.
 
 :::image type="content" source="media/service-teams-analytics/teams-analytics-refresh.png" alt-text="Screenshot of the Refresh icon.":::
 
-You see the most currently available data in Teams. It's not a real-time feed. It shows a snapshot of the data, which is typically one-to-two days old.
+You see the most currently available data in Teams. It's not a real-time feed. It shows a snapshot of the data, which is typically one or two days old.
 
 Your recent activity in Microsoft Teams typically takes one-to-two days to be available in reporting provided by Teams. The report created in Power BI is automatically set up to refresh your activity data from Teams to pull in a snapshot of this data once a day.
 
