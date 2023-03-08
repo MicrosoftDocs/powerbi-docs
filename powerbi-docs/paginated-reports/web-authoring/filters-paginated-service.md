@@ -16,7 +16,7 @@ ms.reviewer: nirusrin
 
 This article introduces you to filtering paginated reports that you author in the Power BI service. This functionality doesn't apply to paginated reports that you author in Power BI Report Builder.  Filters exclude all but the data you want to focus on. When you author the report on the service, you can filter the data using the **Filters** pane on the canvas.
 
-:::image type="content" source="../media/paginated-formatted-table/paginated-filter-pane.png" alt-text="Screenshot of filter pane for a paginated report.":::
+:::image type="content" source="../media/filters-paginated-service/paginated-filter-pane.png" alt-text="Screenshot of filter pane for a paginated report.":::
 
 You can filter data at the *report* level, which means that the filter applies to *all* the pages of the report. 
 
@@ -27,17 +27,17 @@ There are two ways to add a column to the Filters pane.
 - Add a column to the **Filters** pane by selecting the column from the **Fields** pane. Adding the column in this way also adds the field to the editing canvas. 
 - Add the column to the **Add data fields** section of the **Filters** pane from the **Fields** pane by dragging the column, without selecting the column. Adding the column in this way doesn't add the field to the editing canvas, but you can still filter your report based on this column.
 
-:::image type="content" source="../media/paginated-formatted-table/paginated-add-data-fields.png" alt-text="Screenshot of area to add data fields.":::
+:::image type="content" source="../media/filters-paginated-service/paginated-add-data-fields.png" alt-text="Screenshot of area to add data fields.":::
 
 ## Filtering
 
 Filters show a list of all the column values. You can select the value from the list.
 
-:::image type="content" source="../media/paginated-formatted-table/paginated-select-values.png" alt-text="Screenshot of selected values for columns.":::
+:::image type="content" source="../media/filters-paginated-service/paginated-select-values.png" alt-text="Screenshot of selected values for columns.":::
 
 You can also search for the value that you are looking for.
 
-:::image type="content" source="../media/paginated-formatted-table/paginated-search.png" alt-text="Screenshot of searching for filter values.":::
+:::image type="content" source="../media/filters-paginated-service/paginated-search.png" alt-text="Screenshot of searching for filter values.":::
 
 ## Considerations and limitations
 

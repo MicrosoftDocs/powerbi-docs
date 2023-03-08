@@ -21,7 +21,7 @@ You can use the feature to create paginated reports in any workspace in the Powe
 ## Prerequisites
 
 [!INCLUDE [power-bi-paginated-prerequisites](../../includes/power-bi-paginated-prerequisites.md)]
-- You need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md).
+- You need [Build permission for the dataset](../../connect-data/service-datasets-build-permissions.md).
 
 ## Get started
 
@@ -138,4 +138,4 @@ After saving the report, you can preview it. Select **Reading view** on the top 
 
 ## Next steps
 
-- [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
+- [View a paginated report in the Power BI service](../../consumer/paginated-reports-view-power-bi-service.md)
