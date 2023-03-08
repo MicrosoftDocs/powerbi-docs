@@ -28,7 +28,7 @@ If you want to familiarize yourself with the built-in sample in this article, se
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+To download a sample in the Power BI service, you can sign up for a [free or trial license](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
 
 *Power BI Q&A* is available with a Pro or Premium license. For more information, see [Q&A virtual analyst in iOS apps](mobile/mobile-apps-ios-qna.md) and [Q&A in Power BI embedded analytics](../developer/embedded/qanda.md).
 
@@ -42,7 +42,9 @@ At the current time, Power BI Q&A only supports answering natural language queri
 
 1. Select the sample. It opens in Reading mode.
 
-1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
+   :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-sample-read-view.png" alt-text="Screenshot shows the Retail Analysis Sample in reading mode." lightbox="media/end-user-q-and-a-tutorial/power-bi-sample-read-view.png":::
+
+1. Select your workspace in the navigation bar to the left. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
 
    :::image type="content" source="media/end-user-q-and-a-tutorial/retail-entry.png" alt-text="Screenshot shows dashboard, report, and dataset for Retail Analysis Sample.":::
 
