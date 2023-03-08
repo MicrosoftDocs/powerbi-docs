@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/08/2023
+ms.date: 03/06/2023
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -17,7 +17,9 @@ LocalizationGroup: Share your work
 
 *Sharing* is the easiest way to give people access to your reports and dashboards in the Power BI service. You can share with people inside or outside your organization.
 
-When you share a report or dashboard, the people you share it with can view it and interact with it, but can't edit it. The recipients see the same data that you see in the reports and dashboards. They also get access to the entire underlying dataset, unless row-level security (RLS) is applied to it.  The coworkers you share with can reshare with their coworkers if you allow them to.
+When you share a report or dashboard, the people you share it with can view it and interact with it, but can't edit it. The recipients see the same data that you see in the reports and dashboards. They also get access to the entire underlying dataset, unless row-level security (RLS) is applied to it.  The coworkers you share with can reshare with their coworkers if you allow them to. 
+
+Some users are unable to share their reports and dashboards with others because they don't have the necessary license or subscription. They can, however, receive reports and dashboards shared by colleagues. To learn more, see [Working with content shared with you](end-user-shared-with-me.md).
 
 ![Share icon for a report.](media/service-share-dashboards/power-bi-share-new-look.png)
 
@@ -232,6 +234,7 @@ Things to keep in mind about sharing reports and dashboards:
 
 - [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
 - [Troubleshoot sharing dashboards and reports](service-troubleshoot-sharing.md)
+- [Sharing for users with free licenses](end-user-shared-with-me.md)
 - [Request or grant access to shared dashboards or reports](service-request-access.md)
 - [Share a filtered Power BI report](service-share-reports.md)
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)
