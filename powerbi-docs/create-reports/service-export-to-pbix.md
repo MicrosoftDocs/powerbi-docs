@@ -120,7 +120,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * You can't download reports based on datasets that are imported from OneDrive for work or school.
 * You can't download reports based on local [Excel](../connect-data/service-excel-workbook-files.md) or [CSV](../connect-data/service-comma-separated-value-files.md) files that were uploaded to Power BI.
 * The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
-* You can't download the eight original built-in sample .pbix files from the Power BI service. However, you can [download those same .pbix files](sample-datasets.md#download-original-sample-power-bi-files) from the Power BI samples article.
+* You can't download the eight original built-in sample .pbix files from the Power BI service. However, you can [download those same .pbix files](sample-datasets.md#download-original-sample-pbix-power-bi-files) from the Power BI samples article.
 * You can only download usage metric reports in [live connected report mode](#download-modes).
 * You can't download a copy of a report if the copy is saved in a workspace other than where the original report is saved.
 * If you download a live connection report (connected to [SSAS](../connect-data/desktop-analysis-services-tabular-data.md) or [AAS](/azure/analysis-services/analysis-services-connect-pbi)) after you change its data source by using REST APIs [Update Datasources](/rest/api/power-bi/datasets/update-datasources) or [Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group), the downloaded .pbix will still contain the old data source.

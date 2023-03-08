@@ -12,7 +12,7 @@ ms.date: 01/17/2023
 
 # Subreports in Power BI paginated reports
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)] 
 
 A *subreport* is a paginated report item that displays another paginated report inside the body of a main paginated report. Conceptually, a subreport in a report is similar to a frame in a Web page. You use it to embed a report within a report. You can use any report as a subreport. You store the report that is displayed as the subreport in the same workspace as the parent report. You can design the parent report to pass parameters to the subreport. A subreport can repeat within data regions, using a parameter to filter data in each instance of the subreport.  
 

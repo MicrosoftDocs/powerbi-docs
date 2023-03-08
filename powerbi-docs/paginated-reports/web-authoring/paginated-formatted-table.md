@@ -12,7 +12,7 @@ ms.date: 02/17/2023
 
 # Create exportable paginated reports in the Power BI service
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)]
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
 In this article, you learn how to create and export a paginated report with all the data from your Power BI dataset easily. The feature lets you quickly create a paginated report on the web, and apply styling. You can then export it using the rich export functionality of paginated reports, which retains the applied formatting & styling.
 
@@ -20,8 +20,8 @@ You can use the feature to create paginated reports in any workspace in the Powe
 
 ## Prerequisites
 
-[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
-- You need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md).
+[!INCLUDE [power-bi-paginated-prerequisites](../../includes/power-bi-paginated-prerequisites.md)]
+- You need [Build permission for the dataset](../../connect-data/service-datasets-build-permissions.md).
 
 ## Get started
 
@@ -133,9 +133,9 @@ After saving the report, you can preview it. Select **Reading view** on the top 
 ## Considerations and limitations
 
 - You can create a paginated report in any workspace.
-- You can't create a paginated from Power BI datasets based on a live connection.
-- The online editor does **NOT** replicate all existing Power BI Report Builder functionality.  
+- You can't create a paginated report from Power BI datasets based on a live connection.
+- The online editor does *not* replicate all existing Power BI Report Builder functionality.  
 
 ## Next steps
 
-- [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
+- [View a paginated report in the Power BI service](../../consumer/paginated-reports-view-power-bi-service.md)
