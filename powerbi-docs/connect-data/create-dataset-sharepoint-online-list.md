@@ -80,6 +80,8 @@ If you've never previously connected to the SharePoint site from Power BI, Power
 
 * The dataset won't be created if the SharePoint list contains values with more than four digits after a decimal place (".")
 * The sensitivity label (if any) of the SharePoint list isn't inherited by the dataset that is created.
+* This flow does not support business-to-business (B2B) scenarios or scenarios where authentication takes place against a service principal.
+* If the SharePoint service is configured to use multi-factor authentication, then in order for this flow to work, Power BI must also be configured to use multi-factor authentication. Consult your organization's IT support if you encounter a problem related to this limitation.
 
 ## Next steps
 

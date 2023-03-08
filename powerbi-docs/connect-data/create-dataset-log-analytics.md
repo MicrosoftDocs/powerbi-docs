@@ -75,7 +75,8 @@ If you've never previously connected to Log Analytics from Power BI, Power BI wi
 
 ## Considerations and limitations
 
-If the Windows Azure Service Management API, the Log Analytics API service, or both, use multi-factor authentication, then for this feature to work, Power BI must use multi-factor authentication as well.
+* This flow does not support business-to-business (B2B) scenarios or scenarios where authentication takes place against a service principal.
+* If the Windows Azure Service Management API, the Log Analytics API service, or both, are configured to use multi-factor authentication, then in order for this flow to work, Power BI must also be configured to use multi-factor authentication. Consult your organization's IT support if you encounter a problem related to this limitation.  
 
 ## Next steps
 
