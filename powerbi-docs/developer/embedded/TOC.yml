@@ -95,7 +95,7 @@
     items:
     - name: "Embedding security features"
       href: embedded-row-level-security.md
-    - name: "Embed with cloud-based RLS"
+    - name: "Embed with RLS"
       href: cloud-rls.md
     - name: "RLS in embedded paginated reports"
       href: paginated-reports-row-level-security.md
@@ -103,6 +103,8 @@
       href: sql-server-analysis-services-embed.md
     - name: "Embed with Azure Analysis Services (AAS)"
       href: embed-azure-analysis-services.md
+    - name: "Single sign-on systems (SSO)"
+      href: rls-sso.md
     - name: "Embed with object-level security (OLS)"
       href: embed-object-level-security.md
   - name: Support

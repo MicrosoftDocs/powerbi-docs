@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Tenant-level security planning"
 description: "Learn about tenant-level security planning for Power BI."
-author: peter-myers
-ms.author: v-petermyers
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

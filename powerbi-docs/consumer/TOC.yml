@@ -56,8 +56,6 @@
       href: end-user-interactions.md
     - name: "Interact with report slicers"
       href: end-user-slicer.md
-    - name: "Export a report to PDF"
-      href: end-user-pdf.md
     - name: "How to identify and use buttons"
       href: end-user-buttons.md     
     - name: "Add a bookmark to a report"
@@ -68,14 +66,6 @@
       href: end-user-personalize-visuals.md
     - name: "Analyze fluctuations in visuals"
       href: end-user-analyze-visuals.md  
-  - name: Paginated reports
-    items: 
-    - name: "Paginated reports"
-      href: end-user-paginated-report.md
-    - name: "View a paginated report"
-      href: paginated-reports-view-power-bi-service.md
-    - name: "Interact with parameters"
-      href: paginated-reports-view-parameters.md
   - name: Visualizations
     items: 
     - name: "Types of visualizations"
@@ -96,68 +86,14 @@
       href: ../create-reports/service-goals-check-in.md?context=/power-bi/consumer/context/context
     - name: "View hierarchies in metrics"
       href: ../create-reports/service-metrics-view-hierarchies.md?context=/power-bi/consumer/context/context
-  - name: Dashboards
-    items:
-    - name: "Dashboards"
-      href: end-user-dashboards.md
-    - name: "View a dashboard"
-      href: end-user-dashboard-open.md
-    - name: "Dashboard tiles"
-      href: end-user-tiles.md
-    - name: "Add a comment or start a conversation"
-      href: end-user-comment.md
-    - name: "View automatic insights for dashboard tiles"
-      href: end-user-insights.md
-    - name: "Create a dashboard alert"
-      href: end-user-alerts.md 
-  - name: Reports
-    items:
-    - name: "Reports"
-      href: end-user-reports.md
-    - name: "View a report"
-      href: end-user-report-open.md
-    - name: "Change the way a report displays"
-      href: end-user-report-view.md
-    - name: "Change the sort order in a visual"
-      href: end-user-change-sort.md        
-    - name: "Use filters in a report"
-      href: end-user-report-filter.md
-    - name: "Learn how report visuals cross-filter each other"
-      href: end-user-interactions.md
-    - name: "Interact with report slicers"
-      href: end-user-slicer.md
-    - name: "Export a report to PDF"
-      href: end-user-pdf.md
-    - name: "How to identify and use buttons"
-      href: end-user-buttons.md     
-    - name: "Add a bookmark to a report"
-      href: end-user-bookmarks.md
-    - name: "Add a spotlight to a report"
-      href: end-user-spotlight.md
-    - name: "Personalize a visual"
-      href: end-user-personalize-visuals.md
-    - name: "Analyze fluctuations in visuals"
-      href: end-user-analyze-visuals.md  
-    - name: Paginated reports in Power BI
-      items: 
-      - name: "Paginated reports"
-        href: end-user-paginated-report.md
-      - name: "View a paginated report"
-        href: paginated-reports-view-power-bi-service.md
-      - name: "Interact with parameters"
-        href: paginated-reports-view-parameters.md
-  - name: Visualizations
+  - name: Paginated reports in Power BI
     items: 
-    - name: "Types of visualizations"
-      href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
-    - name: "Show the data that was used to create the visualization"
-      href: end-user-show-data.md
-    - name: "Copy a visual and paste it elsewhere"
-      href: end-user-copy-paste.md
-    - name: "Drill down in a visualization"
-      href: end-user-drill.md
-    - name: "How to use an ArcGIS map in Power BI"
-      href: end-user-arcgis.md
+    - name: "Paginated reports"
+      href: end-user-paginated-report.md
+    - name: "View a paginated report"
+      href: paginated-reports-view-power-bi-service.md
+    - name: "Interact with parameters"
+      href: paginated-reports-view-parameters.md
   - name: Power BI in Teams
     items: 
     - name: "Use data for productive meetings"
@@ -180,8 +116,6 @@
       href: end-user-favorite.md
     - name: "Print a dashboard, print a dashboard tile, print a report page"
       href: end-user-print.md
-    - name: "View content shared with me"
-      href: end-user-shared-with-me.md
     - name: "View related content"
       href: end-user-related.md
     - name: "View recent content"

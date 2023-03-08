@@ -7,13 +7,13 @@ ms.reviewer: cookiemccray
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/16/2022
+ms.date: 01/03/2023
 ms.custom: intro-migration
 ---
 
 # Plan to migrate .rdl reports to Power BI
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] ✔️&nbsp;Power&nbsp;BI&nbsp;2022&nbsp;Report&nbsp;Server ✔️&nbsp;SQL&nbsp;Server&nbsp;2022&nbsp;Reporting&nbsp;Services
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)] :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;Power&nbsp;BI&nbsp;2022&nbsp;Report&nbsp;Server :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;SQL&nbsp;Server&nbsp;2022&nbsp;Reporting&nbsp;Services
 
 This article targets Power BI Report Server and SQL Server Reporting Services (SSRS) report authors and Power BI administrators. It provides you with guidance to help you migrate your [Report Definition Language (.rdl)](/sql/reporting-services/reports/report-definition-language-ssrs) reports to Power BI.
 
@@ -91,7 +91,7 @@ The goal of the _Discover_ phase is to identify your existing report server inst
 
 You can use the [Microsoft Assessment and Planning Toolkit](https://www.microsoft.com/download/details.aspx?id=7826). The "MAP Toolkit" discovers and reports on your report server instances, versions, and installed features. It's a powerful inventory, assessment, and reporting tool that can simplify your migration planning process.
 
-Organizations may have hundreds of SQL Server Reporting Services (SSRS) reports. Some of those reports may become obsolete due to lack of use. [Find and retire unused reports](retire-unused-reports-ssrs.md) can help you discover unused reports and how to create a cadence for cleanup.
+Organizations may have hundreds of SQL Server Reporting Services (SSRS) reports. Some of those reports may become obsolete due to lack of use. The article [Find and retire unused reports](retire-unused-reports-ssrs.md) can help you discover unused reports and how to create a cadence for cleanup.
 
 ### Assess
 
@@ -109,7 +109,7 @@ The following report server item types, however, can't be migrated to Power BI:
 - **Report models**: deprecated
 - **Report parts**: deprecated
 
-If your .rdl reports rely on features [not yet supported by Power BI paginated reports](/power-bi/paginated-reports/paginated-reports-faq#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-), you can plan to redevelop them as [Power BI reports](/power-bi/consumer/end-user-reports). Even if your .rdl reports can migrate, we recommend you consider modernizing them as Power BI reports, when it makes sense.
+If your .rdl reports rely on features [not yet supported by Power BI paginated reports](/power-bi/paginated-reports/paginated-reports-faq#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-), you can plan to redevelop them as [Power BI reports](/power-bi/consumer/end-user-reports), when it makes sense.
 
 If your .rdl reports need to retrieve data from _on-premises data sources_, they can't use single sign-on (SSO). Currently, all data retrieval from these sources will be done by using the security context of the _gateway data source user account_. It's not possible for SQL Server Analysis Services (SSAS) to enforce row-level security (RLS) on a per-user basis.
 

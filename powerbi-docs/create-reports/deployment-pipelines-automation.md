@@ -71,7 +71,7 @@ To automate the Power BI deployment processes from within your [release pipeline
 
 * **Power BI automation tools** - This extension works with a [*service principal*](./../developer/embedded/embed-service-principal.md) or a *user*.
 
-You can also use other [Power BI REST API](/rest/api/power-bi/) calls, to complete related operations such as importing a PBIX into the pipeline, updating data sources and parameters.
+You can also use other [Power BI REST API](/rest/api/power-bi/) calls, to complete related operations such as importing a *.pbix* into the pipeline, updating data sources and parameters.
 
 ### Use the Power BI automation tools extension
 

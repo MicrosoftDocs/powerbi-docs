@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page # Required
   author: mihart
   ms.author: mihart
-  ms.date: 04/06/2021
+  ms.date: 01/25/2023
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
@@ -80,11 +80,9 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Shared with me
-            url: end-user-shared-with-me.md
-          - text: Export a report to PDF
-            url: end-user-pdf.md
+            url: ../collaborate-share/end-user-shared-with-me.md
           - text: Subscribe to content
-            url: end-user-subscribe.md
+            url: /power-bi/collaborate-share/end-user-subscribe
 
   # Card
   - title: Advanced topics

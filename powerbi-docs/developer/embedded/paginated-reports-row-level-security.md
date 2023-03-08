@@ -13,6 +13,8 @@ ms.date: 06/08/2022
 
 # Implementing row-level security in embedded paginated reports
 
+[!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
+
 This article explains how to embed a paginated report that uses [**RLS** (row-level security)](embedded-row-level-security.md) into your *app owns data* application.
 
 > [!NOTE]
@@ -32,7 +34,7 @@ To use RLS for your paginated reports:
 
 ## Set up the environment
 
-To apply row-level security to a Power BI paginated report, use the built-in field **UserID** to assign a [parameter](../../paginated-reports/report-builder-parameters.md). This parameter will be used to [filter or query your data](#use-userid-as-a-filter-at-report-or-query-level).
+To apply row-level security to a Power BI paginated report, use the built-in field **UserID** to assign a [parameter](../../paginated-reports/parameters/report-builder-parameters.md). This parameter will be used to [filter or query your data](#use-userid-as-a-filter-at-report-or-query-level).
 
 Then, pass the **UserID** to the [Embed Token - Generate Token](/rest/api/power-bi/embed-token/generate-token) API to [get the embed token](#generate-an-embed-token).
 

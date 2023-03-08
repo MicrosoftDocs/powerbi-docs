@@ -27,7 +27,7 @@ To create roles on **Power BI Desktop** datasets, use [external tools](../transf
 2. On the **External Tools** ribbon, select **Tabular Editor**. If you don’t see the Tabular Editor button, install the [program](https://tabulareditor.github.io). When open, Tabular Editor will automatically connect to your model.
   :::image type="content" source="./media/service-admin-ols/external-tools.png" alt-text="Screenshot of External tools Menu.":::
 
-3. In the **Model** view, select the drop-down menu under **Roles**. The roles created in the previous step will appear.
+3. In the **Model** view, select the drop-down menu under **Roles**. The roles you created in step one will appear.
   :::image type="content" source="./media/service-admin-ols/display-roles.png" alt-text="Screenshot of roles names being displayed under roles folder in model view.":::
 
 4. Select the role you want to enable an OLS definition for, and expand the **Table Permissions**.
@@ -38,17 +38,17 @@ To create roles on **Power BI Desktop** datasets, use [external tools](../transf
    **None**: OLS is enforced and the table or column will be hidden from that role  
    **Read**: The table or column will be visible to that role
 
-    ### [To secure the **whole table**](#tab/table)
+   ### [To secure the **whole table**](#tab/table)
 
    Set categories under *Table permissions* to *None*.
     :::image type="content" source="./media/service-admin-ols/define-rule-table.png" alt-text="Screenshot of setting OLS rule to none for the entire table.":::
 
-    ### [To secure a **specific column**](#tab/column)
+   ### [To secure a **specific column**](#tab/column)
 
    Select the category and set the *Object Level Security* to *None*.
     :::image type="content" source="./media/service-admin-ols/define-rule-column.png" alt-text="Screenshot of setting OLS rule to none for the address column." lightbox="./media/service-admin-ols/define-rule-column.png":::
-
----
+  
+   ---
 
 6. After you define object-level security for the roles, save your changes.
   :::image type="content" source="./media/service-admin-ols/save-roles.png" alt-text="Screenshot of saving role definitions.":::

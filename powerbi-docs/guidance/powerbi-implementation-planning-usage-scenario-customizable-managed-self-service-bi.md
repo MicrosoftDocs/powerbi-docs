@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Customizable managed self-service BI"
 description: "Learn how Power BI customizable managed self-service BI is about creating new specialized datasets by extending and personalizing existing datasets."
-author: peter-myers
-ms.author: v-petermyers
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

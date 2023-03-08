@@ -1,6 +1,6 @@
 ---
 title: "What are paginated reports in Power BI?"
-description: Paginated reports are now available in the Power BI service. They have long been the standard report format in SQL Server Reporting Services. These reports can be printed or shared. You can control the report layout exactly. They display all the data in a table, for example, even if the table spans multiple pages.
+description: Paginated reports are now available in the Power BI service. They have long been the standard report format in SQL Server Reporting Services, and now they're available in the Power BI service. These reports can be printed or shared. You can control the report layout exactly. They display all the data in a table, for example, even if the table spans multiple pages.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.custom: video-jXTiYJKw1Rs, intro-overview
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 10/27/2022
+ms.date: 01/20/2023
 ---
 
 # What are paginated reports in Power BI?
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)] 
 
 *Paginated reports* are designed to be printed or shared. They're called *paginated* because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. You can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports for the Power BI service.
 
@@ -22,7 +22,7 @@ Here are some quick links if you're ready to get started:
 - [Install Power BI Report Builder from the Microsoft Download Center](https://aka.ms/pbireportbuilder)
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)
 - [Sample Power BI paginated reports](paginated-reports-samples.md)
-- Looking for information about Report Builder for Power BI Report Server or SQL Server Reporting Services? See [Install Report Builder - Power BI Report Server](../report-server/install-report-builder.md) instead.
+- Looking for information about Microsoft Report Builder for Power BI Report Server and SQL Server Reporting Services? See [Install Microsoft Report Builder - Power BI Report Server](../report-server/install-report-builder.md) instead.
 
 Paginated reports often have many pages. For example, this report has 563 pages. Each page is laid out exactly, with one page per invoice, and repeating headers and footers.
 
@@ -99,7 +99,7 @@ You view your paginated report in the Power BI service in a browser, and also in
 
 You can set up email subscriptions for yourself and others for paginated reports in the Power BI service. In general, the process is the same as subscribing to reports and dashboards in the Power BI service. Paginated report subscriptions in the Power BI service are similar to email standard subscriptions in Power BI Report Server and SQL Server Reporting Services. In setting up subscriptions, you choose how often you want to receive the emails: daily, weekly, or hourly. The subscription contains a PDF attachment of the entire report output.
 
-For details, see "Subscribe to paginated reports" in the article [Email subscriptions for reports and dashboards in the Power BI service](../consumer/end-user-subscribe.md#subscribe-to-paginated-reports). 
+For details, see "Subscribe to paginated reports" in the article [Email subscriptions for reports and dashboards in the Power BI service](/power-bi/collaborate-share/end-user-subscribe#subscribe-to-paginated-reports). 
 
 ## Use deployment pipelines with paginated reports
 
@@ -109,6 +109,10 @@ In the Power BI service, you can use the deployment pipeline tool with paginated
 - Production
 
 Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
+
+## Embed Power BI paginated reports
+
+With Power BI embedded analytics, you can create Power BI content that displays paginated reports in a fully integrated and interactive application. You can embed paginated reports either for your customers or for your organization. See [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md) for more information.
 
 ## Considerations and limitations
 

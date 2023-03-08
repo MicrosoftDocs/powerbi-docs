@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Content creator security planning"
 description: "Learn about content creator security planning for Power BI."
-author: peter-myers
-ms.author: v-petermyers
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -79,11 +79,11 @@ The following permissions are commonly required for creating new content.
 
 | **Permission** | **Report creator** | **Dataset creator** | **Dataflow creator** | **Datamart creator** |
 |:--|:-:|:-:|:-:|:-:|
-| **Access to the underlying data source** | | ✔️ | ✔️ | ✔️ |
-| **Dataset Read and Build permissions** | ✔️ | | | |
-| **Dataflow Read permission (when a dataflow is used as a source, via the workspace Viewer role)**  | | ✔️ | ✔️ | ✔️ |
-| **Access where original Power BI Desktop file is stored** | ✔️ | ✔️ | | |
-| **Permission to use custom visuals** | ✔️ | | | |
+| **Access to the underlying data source** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Dataset Read and Build permissions** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | | |
+| **Dataflow Read permission (when a dataflow is used as a source, via the workspace Viewer role)**  | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Access where original Power BI Desktop file is stored** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | |
+| **Permission to use custom visuals** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | | |
 
 #### Publishing content
 
@@ -91,9 +91,9 @@ The following permissions are commonly required for publishing content.
 
 | **Permission** | **Report creator** | **Dataset creator** | **Dataflow creator** | **Datamart creator** |
 |:--|:-:|:-:|:-:|:-:|
-| **Workspace role: Contributor, Member, or Admin** | ✔️ | ✔️ | ✔️ | ✔️ |
-| **Dataset Write permission (when the user doesn't belong to a workspace role)** | | ✔️ | | |
-| **Deployment pipeline role to publish items (optional)** | ✔️ | ✔️ | ✔️ | ✔️ |
+| **Workspace role: Contributor, Member, or Admin** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Dataset Write permission (when the user doesn't belong to a workspace role)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | |
+| **Deployment pipeline role to publish items (optional)** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
 
 #### Refreshing data
 
@@ -101,9 +101,9 @@ The following permissions are commonly required for refreshing data.
 
 | **Permission** | **Report creator** | **Dataset creator** | **Dataflow creator** | **Datamart creator** |
 |:--|:-:|:-:|:-:|:-:|
-| **Owner assigned (who has set up settings or taken over the item)** | | ✔️ | ✔️ | ✔️ |
-| **Access to the underlying data source (when a gateway isn't used)** | | ✔️ | ✔️ | ✔️ |
-| **Access to the data source in a gateway (when the source is on-premises or in a virtual network)** | | ✔️ | ✔️ | ✔️ |
+| **Owner assigned (who has set up settings or taken over the item)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Access to the underlying data source (when a gateway isn't used)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Access to the data source in a gateway (when the source is on-premises or in a virtual network)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
 
 The remainder of this article describes considerations for content creator permissions.
 

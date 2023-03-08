@@ -29,7 +29,7 @@ In every case, the report is filtered when recipients first open it. They can cl
 
 Another way to share a filtered report is to [add query parameters to the report URL](service-url-filters.md). Again, the report is filtered when recipients first open it. They can clear the filter selections in the report.
 
-Power BI also offers [other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md). With sharing, you and your recipients need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../enterprise/service-premium-gen2-what-is.md). 
+Power BI also offers [other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md). With sharing, you and your recipients need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../enterprise/service-premium-what-is.md). To learn more about interacting with reports that have been shared with you, see [Working with content shared with you](end-user-shared-with-me.md).
 
 ## Share via link
 
@@ -123,5 +123,6 @@ Things to keep in mind about sharing reports:
 ## Next steps
 * [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Share a report or dashboard](service-share-dashboards.md)
+* [Interact with content that has been shared with you](end-user-shared-with-me.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/).
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.

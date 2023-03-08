@@ -1,6 +1,6 @@
 ---
 title: Power BI embedded analytics assess load for capacity planning
-description: Learn how to plan your gen1 capacity in Power BI embedded analytics.
+description: Learn how to plan your Premium capacity in Power BI embedded analytics.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
@@ -34,7 +34,7 @@ Here are some examples of how you can use the planning tool.
 
 ### Review the test results
 
-Review the results of your load assessment using the [Gen2 metrics app](../../enterprise/service-premium-gen2-metrics-app.md).
+Review the results of your load assessment using the [Premium] metrics app](../../enterprise/service-premium-metrics-app.md).
 
 ## Power BI capacity tools GitHub repository
 
