@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/08/2023
+ms.date: 02/13/2023
 LocalizationGroup: Share your work
 ---
 
@@ -33,7 +33,7 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
     :::image type="content" source="./media/service-embed-secure/sign-in-power-bi-report.png" alt-text="Screenshot of Power BI Sign-in page displaying sign-in to view this report dialogue.":::
 
-5. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users with view permission can see the report in Power BI. All [row-level security (RLS)](../enterprise/service-admin-rls.md) rules are also applied. Lastly, the user needs to be correctly licensed. They need a Power BI Pro or Premium Per User (PPU) license. Also, the report must be in a workspace that's in a Power BI Premium capacity. The user needs to sign in each time they open a new browser window. However, after they're signed in, other reports load automatically.
+5. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users with view permission can see the report in Power BI. All [row-level security (RLS)](../enterprise/service-admin-rls.md) rules are also applied. The users need to be correctly licensed. They need a Power BI Pro or Premium Per User (PPU) license, or the content needs to be in a workspace that's in a Power BI Premium capacity. Users need to sign in each time they open a new browser window. However, after they're signed in, other reports load automatically.
 
     :::image type="content" source="./media/service-embed-secure/sales-and-marketing-sample-1.png" alt-text="Screenshot of Sales and Marketing sample report.":::
 
