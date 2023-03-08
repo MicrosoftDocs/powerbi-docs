@@ -117,6 +117,8 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
     ![Credentials false warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-06.png)
     As this is confusing and incorrect, this is something we'll take care of soon.
 
+- When sharing a report and dataset built using this feature either directly or through an app, please make sure to give permissions to all datasets in the chain.
+
 - Build permissions are required to view reports built using this feature when one or more datasets in the chain are in Pro workspaces. If the creator a report has left the company or their Build permissions has been revoked since they created the report, Build permissions will also be required on all datasets in the chain. 
 
 - To be able to make a DirectQuery connection to a Power BI dataset, your tenant needs to have ["Allow XMLA Endpoints and Analyze in Excel with on-premises datasets"](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) and ["Users can work with Power BI datasets in Excel using a live connection"](../admin/service-admin-portal-export-sharing.md#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection) enabled.
