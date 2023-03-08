@@ -34,7 +34,7 @@ Our online documentation uses these same samples in tutorials and examples, so y
 
 The following image shows the Sales & Returns sample report.
 
-:::image type="content" source="media/sample-datasets/sales-returns-sample-pbix.png" alt-text="Sales & Returns sample *.pbix* file" lightbox="media/sample-datasets/sales-returns-sample-pbix.png" border="true":::
+:::image type="content" source="media/sample-datasets/sales-returns-sample-pbix.png" alt-text="Screenshot shows a Sales & Returns sample *.pbix* file." lightbox="media/sample-datasets/sales-returns-sample-pbix.png" border="true":::
 
 Power BI report designers Miguel Myers and Chris Hamill created the Sales & Returns *.pbix* file to demonstrate many new features in Power BI, including buttons, drillthrough, conditional formatting, what-if, and customized tooltips.
 
