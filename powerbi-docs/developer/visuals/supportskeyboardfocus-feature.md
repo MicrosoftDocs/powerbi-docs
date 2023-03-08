@@ -22,7 +22,7 @@ All visuals come with the following basic keyboard accessibility:
 
 * Press <kbd>Tab</kbd> from outside the visual to navigate through the different elements of the report.
 * Press <kbd>Esc</kbd> to move the focus from inside the visual to the visual container.
-* Press <kbd>Tab</kbd> from inside a custom visual to navigate through focusable elements in the visual. Pressing <kbd>Tab</kbd> after the last tabable element moves the focus back outside of the visual.
+* Press <kbd>Tab</kbd> from inside a custom visual to navigate through focusable elements in the visual. Pressing <kbd>Tab</kbd> after the last tababble element moves the focus back outside of the visual.
 
 Hoe do you get inside the visual?
 
@@ -47,7 +47,7 @@ This capability adds the following features to your custom visual:
 
 * Press <kbd>Enter</kbd> when the focus is on the visual container to move the focus to inside the custom visual.
 
-* Press <kbd>Tab</kbd> when the focus is inside the custom visual to enable navigation through tabable elements. The focus stays inside the visual until you press <kbd>Esc</kbd>.
+* Press <kbd>Tab</kbd> when the focus is inside the custom visual to enable navigation through tabbable elements. The focus stays inside the visual until you press <kbd>Esc</kbd>.
 
 > [!NOTE]
 > Not all HTML elements are tabbable by default (e.g., div, span). Make sure to consider adding the correct attribute (e.g tabindex) to such elements if you want them to be tabbable.
