@@ -22,7 +22,7 @@ Sensitivity labels are fully supported in Power BI, but aren't yet fully integra
 
 Since actions such as exporting a solution or adding a solution involve removing the sensitivity label (if any), these actions will only succeed if the interactive user or the API caller has sufficient usage rights to remove the label as defined by the IT administrators.
 
-## Cross-geo operations 
+## Cross-geo operations
 
 Working with Power Apps solutions, you can add Power BI report and dataset components from Power BI workspaces to a solution. If the report or the dataset you selected to add to your solution is in a different geography than the Power Apps environment you are trying to move it to, it is called a cross-geo operation. Another example of a situation where cross-geo operations might take place is when the dedicated target environment workspace in Power BI (that was created automatically when the first Power BI component was added to the solution), is not located in the same geography as the Power Apps environment.
 
@@ -30,7 +30,7 @@ The Power BI/Power Apps solutions integration supports cross-geo operations, pro
 
 When you perform a cross-geo operation, before you can complete the operation a banner will alert you to the fact that you're about to move items between geographies. The banner also tells you which geographies are involved. Review the information before proceeding to ensure that the action is compliant with any security and/or data-residency requirements. The following image shows an example of this banner.
 
-:::image type="content" source="./media/service-power-bi-powerapps-integration-considerations/powerapps-solutions-cross-geo-operation-banner.png" alt-text="Screenshot of a cross-geo operation notification banner in the Power BI/Power Apps solutions integration.":::
+:::image type="content" source="./media/service-power-bi-powerapps-integration-considerations/power-apps-solutions-cross-geo-operation-banner.png" alt-text="Screenshot of a cross-geo operation notification banner in the Power BI/Power Apps solutions integration.":::
 
 ### Enabling and disabling cross-geo operations
 
