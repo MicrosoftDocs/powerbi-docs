@@ -92,7 +92,7 @@ You can share the dataset with other users in your organization. Selecting the *
 
 ## Data preview
 
-Data preview enables you to view a selected table or columns from the dataset. You can also export the data to supported file formats or create a [paginated report](../paginated-reports/paginated-formatted-table.md).
+Data preview enables you to view a selected table or columns from the dataset. You can also export the data to supported file formats or create a [paginated report](../paginated-reports/web-authoring/paginated-formatted-table.md).
 
 ### Prerequisites
 
@@ -144,7 +144,7 @@ Select the **Export** button on the Table preview page to export the data to one
 
 ### Build a paginated report
 
-Select the **Create paginated report** button to open the [editor](../paginated-reports/paginated-formatted-table.md). 
+Select the **Create paginated report** button to open the [editor](../paginated-reports/web-authoring/paginated-formatted-table.md). 
 
 >[!NOTE]
 > Data will change from underlying data to summarized data. You can switch to underlying data using **More options**.
