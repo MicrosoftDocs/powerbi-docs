@@ -12,10 +12,10 @@ LocalizationGroup: Transform and shape data
 ---
 # Install the Log Analytics for Power BI Datasets Template App (preview)
 
-The Power BI Log Analytics for Analysis Services Engine app is designed to analyze AS Engine behavior in general, and to help isolate and debug specific problems in depth. Use this guide to install the app. After the app is installed, you can [learn how to use it](desktop-loganalytics-reportguide-datasets.md).
+The Power BI Log Analytics for Analysis Services (AS) Engine app is designed to analyze AS Engine behavior in general and to help isolate and debug specific problems in depth. Use this guide to install the app. For information on how to use the app, see [Using the Log Analytics for Power BI Datasets Template App (preview)](desktop-loganalytics-reportguide-datasets.md).
 
 >[!NOTE]
->The app is updated regularly with new features and functionalities. If you see there's a pending update in the notifications center, we recommend that you update the app.
+>The app is updated regularly with new features and functionalities. If you see that there's a pending update in the notifications center, you should update the app to recieve to recieve new features and fixes.
 >
 ## Prerequisites
 
@@ -50,7 +50,7 @@ To install the AS Engine app, follow these steps:
 
     * **UTC Offset Hours** - An hourly offset used to convert the data from UTC to a local time zone
 
-    * **Pagination Hours** - This parameter is optional. It describes the time window for each log analytics call from Power BI. You only need to update this parameter if you're running into failures while fetching data due to data size exceeding Log Analytics limits.
+    * **Pagination Hours** - This parameter is optional. It describes the time window for each log analytics call from Power BI. You only need to update this parameter if you're running into failures while fetching data due to data size exceeding Log Analytic's limits.
 
 1. Select **Next**.
 
@@ -64,7 +64,7 @@ To install the AS Engine app, follow these steps:
 
 ## Considerations and limitations
 
-1. Template app doesn't work when private links are enabled on the Log Analytics workspace.
+1. The template app doesn't work when private links are enabled on the Log Analytics workspace.
     * Power BI doesn't currently support refresh and ingestion of data in the template app when you enable private links for the Azure Log Analytics workspace and switch off the Network Isolation settings. To allow the template app to function, be sure that the settings shown in the following screenshot are switched **on**.
 
         :::image type="content" source="media/install-as-engine-app/network-isolation-log-analytics.png" alt-text="Screenshot of the Network Isolation option.":::
