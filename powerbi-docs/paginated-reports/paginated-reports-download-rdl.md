@@ -12,7 +12,7 @@ ms.date: 01/11/2023
 
 # Create a paginated report from a Power BI report or dataset
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)] 
 
 This article explains how to create a paginated report from a Power BI report or a shared dataset in the Power BI service. 
 
