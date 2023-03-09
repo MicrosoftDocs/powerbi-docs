@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 03/06/2023
+ms.date: 03/09/2023
 
 LocalizationGroup: Share your work
 ---
@@ -260,7 +260,8 @@ Things to keep in mind about publishing apps:
 * By default, all the newly added content, to an already published app, is marked as invisible. You must go to each audience group and manually unhide it.
 * Having multiple audiences isn't fully supported in deployment pipelines. Content visibility of new content that you add to an org app must still be managed manually via audience management.
 * You can't open an added link or see its content if you chose to open the link in the content area.
-* Apps can have a maximum of 200 dashboards. 
+* Apps can have a maximum of 200 dashboards.
+* If you include a report that uses chained datasets, also known as [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. 
 
 ## Next steps
 
