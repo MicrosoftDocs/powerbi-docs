@@ -261,7 +261,7 @@ Things to keep in mind about publishing apps:
 * Having multiple audiences isn't fully supported in deployment pipelines. Content visibility of new content that you add to an org app must still be managed manually via audience management.
 * You can't open an added link or see its content if you chose to open the link in the content area.
 * Apps can have a maximum of 200 dashboards.
-* If a report included in an org app uses [chained datasets (DirectQuery for Power BI datasets and Analysis Services)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), when adding a user to an org app audience please make sure to give permissions to all datasets in the chain. 
+* If a report included in an org app uses chained datasets, AKA [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), when adding a user to an org app audience please make sure to give permissions to all datasets in the chain. 
 
 ## Next steps
 
