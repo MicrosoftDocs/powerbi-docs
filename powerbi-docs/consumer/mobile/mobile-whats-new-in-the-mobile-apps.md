@@ -26,7 +26,7 @@ For related "What's New" information, see:
 
 ### Automatic page refresh support (iOS and Android)
 
-The Power BI mobile apps for iOS and Android now join the app for Windows in supporting automatic page refresh. Now, report pages configured with [auto page refresh](../create-reports/desktop-automatic-page-refresh.md) will automatically refresh in your Power BI app no matter which of those devices you're on.
+The Power BI mobile apps for iOS and Android now join the app for Windows in supporting automatic page refresh. Now, report pages configured with [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will automatically refresh in your Power BI app no matter which of those devices you're on.
 
 ## February 2023
 
