@@ -31,9 +31,9 @@ To install the AS Engine app, follow these steps:
 
 1. If prompted, sign in to AppSource by using your work or school account and complete the registration screen. The app takes you to the Power BI Service to complete the process. Select **Install** to continue.
 
-1. Open the app and when you see the message *You have to connect to your own data to view this report*, select **Connect**.
+1. Open the app. When you see the message *You have to connect to your own data to view this report*, select **Connect**.
 
-    :::image type="content" source="media/install-as-engine-app/install-as-engine.png" alt-text="Screenshot of Install AS Engine connect dialog.":::
+    :::image type="content" source="media/install-as-engine-app/install-as-engine.png" alt-text="Screenshot of the Install AS Engine connect dialog.":::
 
 1. In the first window, fill in the following fields:
 
@@ -41,25 +41,24 @@ To install the AS Engine app, follow these steps:
 
     * **Days Ago to Finish** - How many days ago to stop loading log data. Use 0 for today.
     * **Log Analytics Table** -
- ​
-       ​* PowerBIDatasetsWorkspace
+ 
+       * PowerBIDatasetsWorkspace
 
-       ​* PowerBIDatasetsTenant (Currently not supported.)
+       * PowerBIDatasetsTenant (Currently not supported.)
 
     * **Log Analytics WorkspaceId** - GUID of the Azure Log Analytics Workspace containing the AS Engine data.
 
     * **UTC Offset Hours** - An hourly offset used to convert the data from UTC to a local time zone
 
     * **Pagination Hours** - This parameter is optional. It describes the time window for each log analytics call from Power BI. You only need to update this parameter if you're running into failures while fetching data due to data size exceeding Log Analytics limits.
-​
 
 1. Select **Next**.
 
 1. In the second window, fill in the following fields:
 
-   ​***Authentication method** - Select your authentication method. The default authentication method is*OAuth2*.
+   * **Authentication method** - Select your authentication method. The default authentication method is *OAuth2*.
 
-   ​***Privacy level setting for this data source** - Select*Organizational* to enable app access to all the data sources in your organization.
+   * **Privacy level setting for this data source** - Select *Organizational* to enable app access to all the data sources in your organization.
 
 1. Select **Sign in and continue**.
 
@@ -68,9 +67,9 @@ To install the AS Engine app, follow these steps:
 1. Template app doesn't work when private links are enabled on the Log Analytics workspace.
     * Power BI doesn't currently support refresh and ingestion of data in the template app when you enable private links for the Azure Log Analytics workspace and switch off the Network Isolation settings. To allow the template app to function, be sure that the settings shown in the following screenshot are switched **on**.
 
-        :::image type="content" source="media/install-as-engine-app/network-isolation-log-analytics.png" alt-text="Screenshot of Network Isolation option.":::
+        :::image type="content" source="media/install-as-engine-app/network-isolation-log-analytics.png" alt-text="Screenshot of the Network Isolation option.":::
 
-        :::image type="content" source="media/install-as-engine-app/virtual-network-access-configuration.png" alt-text="Screenshot of Virtual Network Access Configuration toggles.":::
+        :::image type="content" source="media/install-as-engine-app/virtual-network-access-configuration.png" alt-text="Screenshot of theVirtual Network Access Configuration toggles.":::
 
 ## Next steps
 
