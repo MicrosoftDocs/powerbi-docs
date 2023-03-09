@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting    
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 02/09/2023
+ms.date: 03/09/2023
 ms.custom:  
 ---
 
@@ -22,6 +22,7 @@ Select the **Title** to view more information about that specific known issue.
 
 |  Issue ID |  Area                              |  Title  |  Issue publish date |  
 |-----------|------------------------------------|---------|---------------------|
+|  308      |  Account and License               |  [Tenant migrations paused](known-issue-308-tenant-migrations-paused.md)    |   March 9, 2023    |
 |  321      |  Create and Author Data            |  [Paused visuals in Power BI Desktop Performance analyzer don't refresh](known-issue-321-paused-visuals-in-performance-analyzer-dont-refresh.md)   |  February 9, 2023   |
 |  222      |  Consume and View                  |  [Search strings that include Japanese symbols don't return matches](known-issue-222-search-strings-japanese-symbols-dont-work.md)   |  August 3, 2022  |
 |  178      |  Consume and View                  |  [Multi-role row-level security for composite models may fail](known-issue-178-multi-role-rls-composite-model-fail.md)   |  Reactivated: July 25, 2022        |
