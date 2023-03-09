@@ -58,7 +58,7 @@ No matter where you start, the new paginated report online editing experience op
 
 ## Create a table
 
-To create your first table, select field names in the **Fields** pane on the right.  This pane gives you a table-and-column based view of the chosen dataset.  When you find a column that you wish to add to your table, select the column or drag it to **Values** section of the **Build** pane.
+To create your first table, select field names in the **Data** pane on the right.  This pane gives you a table-and-column based view of the chosen dataset.  When you find a column that you wish to add to your table, select the column or drag it to **Values** section of the **Build** pane.
 
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-fields-list.png" alt-text="Screenshot of selecting fields.":::
 
