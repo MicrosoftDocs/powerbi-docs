@@ -21,7 +21,6 @@ The Power BI team has created a COVID-19 tracking sample that enables US state a
 
 This article covers how to:
 
-- Copy embed code and put it on your own site. 
 - Make customizations such as formatting a specific state.
 - Publish to the Power BI service.
 - Publish to the web. 
@@ -34,19 +33,7 @@ Before you can get started using Power BI to tell your story, you need these pre
 - Download the free [Power BI Desktop](https://powerbi.microsoft.com/desktop/) app.
 - Sign up for the [Power BI service](https://powerbi.microsoft.com/get-started/).
 
-## Option 1: Pre-built embed code
-
-Microsoft has published the sample report and created a publish-to-web embed code. You can use the embed code to embed the complete sample, including the national view, and drill down to the state and county level in your own website. Before publishing this data, we recommend reviewing the [disclaimers](#disclaimers) in this article.
-
-To include the interactive graphic on your site, copy and paste the following embed code to where you would like the graphic to show up on your web page.  
-
-```
-<iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
-```
-
-The embed code is an HTML iFrame element that you can insert into any HTML page. Adjust the width and height of the iFrame provided to fit within your site. The sample report is authored at 16:9 proportions, so pick a size that preserves this dimension. When implemented correctly, the graphic appears without any extra grey borders. It is useful to [review the iFrame sizing tips and tricks](../collaborate-share/service-publish-to-web.md#tips-for-iframe-height-and-width) when making these changes.
-
-## Option 2: Customize the sample Power BI file
+## Customize the sample Power BI file
 
 The Power BI file contains the data model and interactive graphics in a Power BI template (.pbit) file format you can edit in Power BI Desktop. See  the "Download the Power BI template (.pbit) file" section in this article for details.
 
@@ -126,12 +113,6 @@ To embed your customized report in your own website, follow the instructions for
 Once you publish your embed code, you use the iFrame on the confirmation dialog to embed in your website.
 
 If you make changes to the report in Power BI Desktop, you can publish and replace the existing report in the Power BI service. The embed code doesn't change. It takes approximately an hour for changes to the report or refreshed data to appear on your website. 
-
-## Option 3: Use the COVID-19 US Tracking template app
-
-For one more option, the Power BI team created the COVID-19 US Tracking *template app* to get you started immediately. Template apps are bundles of reports, dashboards, and datasets for a specific data source. You download them from AppSource, use them or modify to suit your needs, and distribute them to your colleagues. 
-
-This COVID-19 US Tracking template app contains a pre-built report of COVID-19 metrics that you can use as is, personalize directly in the Power BI service, or download to add other data sources if desired. Learn about installing the [COVID-19 US Tracking template app](../connect-data/service-connect-to-covid-19-tracking.md) and getting started right away.
 
 ## About the data source for this report
 This interactive report aggregates data from the Centers for Disease Control and Prevention (CDC), and state- and local-level public health agencies. County-level data is confirmed by referencing state and local agencies directly (link).
