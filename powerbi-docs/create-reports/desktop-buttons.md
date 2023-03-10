@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/15/2022
+ms.date: 03/10/2023
 ms.custom: sample-get-started-desktop-best-worst-states, sample-sales-&-returns
 LocalizationGroup: Create reports
 ---
@@ -79,8 +79,10 @@ Here are the options for button actions:
 - **Back** returns the user to the previous page of the report. This action is useful for drillthrough pages.
 - **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. Learn more about [bookmarks in Power BI](desktop-bookmarks.md).
 - **Drillthrough** navigates the user to a drillthrough page filtered to their selection, without using bookmarks. Learn more about [drillthrough buttons in reports](desktop-drill-through-buttons.md).
-- **Page navigation** navigates the user to a different page within the report, also without using bookmarks. See [Create page navigation](#create-page-navigation) for details.
+- **Page navigation** navigates the user to a different page within the report, also without using bookmarks. See [Create page navigation](button-navigators.md) for details. 
+- **Bookmark navigation** navigates the user to a different state in the report, either on the same or a different page, by using bookmarks. See [Create bookmark navigation](button-navigators.md#bookmark-navigator) for details.
 - **Q&A** opens a **Q&A Explorer** window. When your report readers select a Q&A button, the Q&A Explorer opens, and they can ask natural-language questions about your data.
+- **Apply all slicers** and **Clear all slicers** buttons apply all the slicers or clear all the slicers on a page. See [Create Apply all slicers and Clear all slicers buttons in reports](buttons-apply-all-clear-all-slicers.md) for details.
 - **Web URL** opens a web page in a browser.
 
 Certain buttons have a default action that's selected automatically. For example, the **Q&A** button type automatically selects **Q&A** as the default action.
