@@ -8,14 +8,14 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/02/2023
+ms.date: 03/10/2023
 LocalizationGroup: Samples
 ---
 # COVID-19 tracking sample for US state and local governments
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-The Power BI team has created a COVID-19 tracking sample that enables US state and local governments to publish or customize an interactive report about COVID-19. When you open it in Power BI Desktop, you can analyze and visualize COVID-19 data to keep your community informed at the city, county, state, and national levels. Then use Power BI Publish to Web to share the report publicly and inform citizens. The article offers different options for using Power BI interactive visualizations in your own public story, blog, or website.
+The Power BI team has created a COVID-19 tracking sample that enables US state and local governments to publish or customize an interactive report about COVID-19. The Power BI file contains the data model and interactive graphics in a Power BI template (.pbit) file format you can edit in Power BI Desktop. When you open it in Power BI Desktop, you can analyze and visualize COVID-19 data to keep your community informed at the city, county, state, and national levels. A typical customization is to filter the report to a specific state, and then to create your own publish-to-web embed code to share the report publicly and inform citizens. The article offers different options for using Power BI interactive visualizations in your own public story, blog, or website.
 
 :::image type="content" source="media/sample-covid-19-us/covid-19-us-tracking-sample.png" alt-text="Screenshot showing COVID-19 sample with US data.":::
 
@@ -33,15 +33,9 @@ Before you can get started using Power BI to tell your story, you need these pre
 - Download the free [Power BI Desktop](https://powerbi.microsoft.com/desktop/) app.
 - Sign up for the [Power BI service](https://powerbi.microsoft.com/get-started/).
 
-## Customize the sample Power BI file
-
-The Power BI file contains the data model and interactive graphics in a Power BI template (.pbit) file format you can edit in Power BI Desktop. See  the "Download the Power BI template (.pbit) file" section in this article for details.
-
-A typical customization is to filter the report to a specific state, and then to create your own publish-to-web embed code for your customized report.
-
 COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University is provided under a Creative Commons License that requires attribution. Before publishing this data, review the [disclaimers](#disclaimers).
 
-### Download the Power BI template (.pbit) file
+## Download the Power BI template (.pbit) file
 
 To get started, select this link to [download the Power BI template (.pbit) file](https://go.microsoft.com/fwlink/?linkid=2125058). Power BI report template files contain this information from the report from which they were generated:
 
@@ -52,7 +46,7 @@ To get started, select this link to [download the Power BI template (.pbit) file
 
 When you open a template (.pbit) file and save it, Power BI saves it as a report (.pbix) file. From then on, it's like any other Power BI report file. For more information about Power BI template files, see [Using report templates](desktop-templates.md#using-report-templates).
 
-### Update your report 
+## Update your report 
 
 1. Download the latest version of the free app, [Power BI Desktop](https://powerbi.microsoft.com/desktop/), if you haven't already. 
 
@@ -72,7 +66,7 @@ When you open a template (.pbit) file and save it, Power BI saves it as a report
 
 6. To save your file, select **File** > **Save**. 
 
-### Refresh your report 
+## Refresh your report 
 
 1. Select the **Refresh** button.
 
@@ -87,11 +81,11 @@ When you open a template (.pbit) file and save it, Power BI saves it as a report
 
     :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-privacy-levels.png" alt-text="Screenshot showing how to Select privacy levels.":::
 
-### Publish your report to the Power BI service
+## Publish your report to the Power BI service
 
 Once you've customized your report to your liking, [follow the steps outlined here to publish your report](../create-reports/desktop-upload-desktop-files.md) to the Power BI service.
 
-### Configure scheduled refresh
+## Configure scheduled refresh
 
 To keep the data in the report up to date, you can [configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md) after you publish your report.
 
@@ -106,7 +100,7 @@ The refreshed data is loaded each time the schedule runs. The underlying data is
 
 If you intend to publish the customized report on your website, it is best to configure your scheduled refresh to run at least as frequently as the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University updates. Since the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University may refresh their data at different times each day, you may want to configure several refreshes each day. 
 
-### Create a publish-to-web embed code 
+## Create a publish-to-web embed code 
 
 To embed your customized report in your own website, follow the instructions for how to [create your own publish-to-web embed code](../collaborate-share/service-publish-to-web.md#create-embed-codes-with-publish-to-web).
 
@@ -127,7 +121,3 @@ This report and data are provided "as is", "with all faults", and without warran
 
 Download the [Power BI template (.pbit) file](https://go.microsoft.com/fwlink/?linkid=2125058)
 [Get samples for Power BI](../create-reports/sample-datasets.md)
-
-
-
-
