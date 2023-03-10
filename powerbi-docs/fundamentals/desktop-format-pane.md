@@ -16,11 +16,11 @@ LocalizationGroup: Get started
 
 The redesigned Format pane is now generally available and on by default in both Power BI Desktop and the Power BI service. This article explains the biggest changes we’ve made, to improve usability and consistency across visual and non-visual elements.
 
-This article also explains our work redistributing the [Visualizations pane functionality](#march-2023-moving-visualizations-pane-functionality), moving it to on-object menus and the Format pane instead. Currently, this functionality is only available in Power BI Desktop.
+This article also explains our work redistributing the [Visualizations pane functionality](#march-2023-moving-visualizations-pane-functionality), moving it to on-object menus and the Format pane instead. Currently, this functionality is in preview and only available in Power BI Desktop.
 
 Thank you for providing feedback throughout the preview. We’re still interested in your comments. Submit feedback on the [Power BI Ideas](https://ideas.powerbi.com/ideas/) site.
 
-## March 2023: Moving Visualizations pane functionality
+## March 2023: Moving Visualizations pane functionality (preview)
 
 To see the Visualizations and other pane functionality changes, you need to turn on this month's preview features. See [Turn on preview features](../create-reports/power-bi-on-object-interaction.md#turn-on-preview-features) in the on-object interaction article for details.
 
