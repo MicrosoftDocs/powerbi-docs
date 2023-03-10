@@ -7,6 +7,8 @@
     items:
     - name: Active known issues for Power BI
       href: known-issues/power-bi-known-issues.md  
+    - name: Tenant migrations paused
+      href: known-issues/known-issue-308-tenant-migrations-paused.md
     - name: Paused visuals in Power BI Desktop Performance analyzer don't refresh
       href: known-issues/known-issue-321-paused-visuals-in-performance-analyzer-dont-refresh.md
     - name: Working in a dataflow shows irrelevant upgrade workspace message
