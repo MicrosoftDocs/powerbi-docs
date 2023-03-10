@@ -1,6 +1,6 @@
 ---
 title: Use Log Analytics for the Power BI datasets template app (preview)
-description: Learn how to use the Power BI Datasets Template App to visualizes dataset activity from the Analysis Services engine.
+description: Learn how to use the Power BI Datasets Template App to visualize dataset activity from the Analysis Services engine.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -12,7 +12,7 @@ LocalizationGroup: Transform and shape data
 ---
 # Use Log Analytics for the Power BI datasets template app (preview)
 
-Power BI is integrating with Azure Log Analytics (LA). This integration enables administrators and Premium workspace owners to configure a connection from Power BI to a Log Analytics workspace in Azure subscriptions that they control. There is now a template app to give you a head start with your analysis. This article describes the app so you can understand how to use the parameters, filters, navigation, and drillthrough paths. You can use these tools to answer questions about dataset operations from the perspective of the Analysis Services (AS) engine. This article describes each page so you can understand its purpose and the typical use cases they support.
+Power BI is integrating with Azure Log Analytics (LA). This integration enables administrators and Premium workspace owners to configure a connection from Power BI to a Log Analytics workspace in Azure subscriptions that they control. There's now a template app to give you a head start with your analysis. This article describes the app so you can understand how to use the parameters, filters, navigation, and drillthrough paths. You can use these tools to answer questions about dataset operations from the perspective of the Analysis Services (AS) engine. This article describes each page so you can understand its purpose and the typical use cases they support.
 
 To [install the AS Engine app](install-as-engine-app.md), you must have a Log Analytics workspace. Once installed, anyone in the organization with the right permissions can view the app. You can see the source .pbit for the template app on [GitHub](https://github.com/microsoft/PowerBI-LogAnalytics-Template-Reports).
 
@@ -128,7 +128,7 @@ This drillthrough page shows visuals such as a detailed table for the query, a t
 
 ### Query history
 
-This page shows you every execution of a query, provides CPU and duration stats, and trend visuals to see if there are any spikes.
+This page shows you every execution of a query, provides CPU and duration stats, and provides trend visuals to see if there are any spikes.
 
 ### User activities
 
