@@ -21,14 +21,13 @@ On-object interaction is the new way to build and format a visual, directly on t
 
 ## Turn on preview features
 
-Because on-object is a preview feature, you need to turn it on. You'll also be turning on the new Visualizations and Format pane functionality changes. See the [updated Format and Visualizations panes in Power BI](../fundamentals/desktop-format-pane.md) article for details.
+Because on-object is a preview feature, you need to turn it on. You'll also be turning on the new Visualizations and Format pane functionality changes. See the updated [Format and Visualizations panes in Power BI](../fundamentals/desktop-format-pane.md) article for details.
 
 1. In Power BI Desktop, select **File** > **Options and settings** > **Options** > **Preview Features** > **On-object interaction**. 
 
     :::image type="content" source="media/power-bi-on-object-interaction/on-object-preview-option.png" alt-text="Screenshot showing turning on preview feature.":::
 
 1. Restart Power BI Desktop to see the new experience.
-
 
 ## Build a visual with on-object interaction
 
@@ -38,7 +37,7 @@ You can begin building a new visual in one of three ways.
 - Select a new visual from the **Insert** section of the ribbon, and then add fields. If you have the ribbon collapsed, select **Visual gallery** > select a visual.
 - Right-click the canvas > **Add visual**.
 
-You notice the Visualizations pane is no longer available, by design.
+You notice the Visualizations pane is no longer available, by design. The updated [Format and Visualizations panes in Power BI](../fundamentals/desktop-format-pane.md) article has details.
 
 > [!NOTE]
 > Custom visuals aren't currently shown in the ribbon gallery collapsed tray, but they're available from the dropdown.
@@ -47,7 +46,7 @@ As you add fields, the visual type updates dynamically based on what Power BI be
 
 From this flyout menu, you can continue to add data. Select the **Add data** button and select fields from the **Select data** pane.
 
-Graphical user interface, Select data pane
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-add-data.png" alt-text="Screenshot showing on-object Add data.":::
 
 If you prefer to see all the field wells as before, turn off the **Suggest a type** toggle to expand the full **Build a visual** menu.
 
@@ -64,8 +63,6 @@ You enter format mode in one of two ways:
 - Right-click a visual > select **Format**.
 
 You know you’re in this new mode when the bounding box turns blue, the handle shapes turn to squares, and the hover and click behavior changes to show subselection regions.
-
-format-mode
 
 Now you can hover and click around in the visual to format specific subselections. Right-click the selected element to use the mini-toolbar and shortcut menu.
 
