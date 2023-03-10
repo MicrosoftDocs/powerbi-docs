@@ -45,7 +45,7 @@ ms.reviewer: saurkumar
   
  The following illustration shows an example of a radar chart based on the data presented.  
   
- ![Screenshot of a Radar chart](../media/paginated-reports-visualizations/radar-chart.gif "Radar chart")  
+ ![Screenshot of a Radar chart](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/radar-chart.gif "Radar chart")  
   
 ## Next steps  
  [Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs)   
