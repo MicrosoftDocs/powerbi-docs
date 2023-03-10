@@ -20,7 +20,7 @@ ms.reviewer: saurkumar
   
 1.  Options set on a polygon layer, a line layer, and a point layer apply to all map elements on that layer, whether or not the map elements are embedded in the report definition.  
   
-2.  Options set for rules apply to all map elements on a layer. All data visualization options apply only to map elements that are associated with spatial data. A data visualization option requires you to specify a data field to base display variations on. You must have set the match fields for the analytical and spatial data before you can apply data visualization rules. For more information, see [Maps &#40;Power BI Report Builder&#41;](../paginated-reports/report-builder/maps-report-builder).  
+2.  Options set for rules apply to all map elements on a layer. All data visualization options apply only to map elements that are associated with spatial data. A data visualization option requires you to specify a data field to base display variations on. You must have set the match fields for the analytical and spatial data before you can apply data visualization rules. For more information, see [Maps &#40;Power BI Report Builder&#41;](/powerbi-docs/paginated-reports/report-builder/maps-report-builder.md).  
   
 3.  Options that you set for selected embedded map elements. Note that, when you override the layer options, the changes that you make to the report definition are permanent. You can change the data field values as well as override display options to customize the way specific polygons, lines, and points appear on a layer.  
   
