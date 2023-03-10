@@ -173,18 +173,18 @@ The current values of the filters are displayed in the smart narrative next to t
 
 ## App pages
 
-* [Workspace summary](#page-workspace-summary)
-* [Engine activities](#page-engine-activities-also-a-drillthrough)
-* [Engine activity details](#drillthrough-page-engine-activity-details)
-* [Dataset refreshes](#page-dataset-refreshes-also-a-drillthrough)
-* [Dataset refresh detail](#drillthrough-page-dataset-refresh-detail)
-* [Query statistics](#page-query-statistics-also-a-drillthrough)
-* [Query detail](#drillthrough-page-query-detail)
-* [Query history](#drillthrough-page-query-history)
-* [User activities](#page-user-activities)
-* [User detail](#drillthrough-page-user-detail)
-* [Error summary](#page-error-summary)
-* [Error page detail](#drillthrough-page-error-page-detail)
+* [Workspace Summary](#page-workspace-summary)
+* [Engine Activities](#page-engine-activities-also-a-drillthrough)
+* [Engine Activity Details](#drillthrough-page-engine-activity-details)
+* [Dataset Refreshes](#page-dataset-refreshes-also-a-drillthrough)
+* [Dataset Refresh Detail](#drillthrough-page-dataset-refresh-detail)
+* [Query Statistics](#page-query-statistics-also-a-drillthrough)
+* [Query Detail](#drillthrough-page-query-detail)
+* [Query History](#drillthrough-page-query-history)
+* [User Activities](#page-user-activities)
+* [User Detail](#drillthrough-page-user-detail)
+* [Error Summary](#page-error-summary)
+* [Error Detail](#drillthrough-page-error-page-detail)
 * [Help](#help)
 
 ### Page: Workspace summary
