@@ -11,8 +11,8 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: joshg
 ---
-# Setting Time-out Values for Report and Shared Dataset Processing
-In [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], you can specify time-out values to set limits on how system resources are used. Report servers support two time-out values:  
+# Setting time-out values for report and shared dataset processing
+In Reporting services, you can specify time-out values to set limits on how system resources are used. Report servers support two time-out values:  
   
 - An embedded dataset query time-out value is the number of seconds that the report server waits for a response from the database. This value is defined in a report.  
   
@@ -23,7 +23,7 @@ In [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], you can specif
  Most time-out errors occur during query processing. If you are encountering time-out errors, try increasing the query time-out value. Make sure to adjust the report execution time-out value so that it is larger than the query time-out. The time period should be sufficient to complete both query and report processing.  
   
 ## Setting a query time-out for an embedded dataset in a report  
- Query time-out values are specified during report authoring when you define an embedded dataset. The time-out value is stored with the report, in the **Timeout** element of the report definition. By default, this value is set to 30 seconds. For more information, see [Report Embedded Datasets and Shared Datasets &#40;Power BI Report Builder&#41;](../../reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs.md).  
+ Query time-out values are specified during report authoring when you define an embedded dataset. The time-out value is stored with the report, in the **Timeout** element of the report definition. By default, this value is set to 30 seconds. For more information, see [Report embedded datasets and shared datasets &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs).  
  
  > [!NOTE]  
  > For **Paginated Reports in Power BI**, the default value is set to **600 seconds**.
@@ -33,10 +33,10 @@ In [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], you can specif
  You can also specify a query time-out value for data-driven subscriptions. The query time-out value is specified in the Data-Driven Subscription pages. The value you specify determines how long the report server waits for query processing to complete when retrieving data from the subscriber data source.  
   
 ## Setting a query time-out for a shared dataset  
- Query time-out values are specified in seconds on the report server when you create or manage a shared dataset. By default, this value is set to 0 seconds, which is the equivalent of no time-out value. For more information, see [Manage Shared Datasets](../../reporting-services/report-data/manage-shared-datasets.md).  
+ Query time-out values are specified in seconds on the report server when you create or manage a shared dataset. By default, this value is set to 0 seconds, which is the equivalent of no time-out value. For more information, see [Manage shared datasets](/sql/reporting-services/report-data/manage-shared-datasets).  
   
 ## Setting a report execution time-out  
- You can set the report execution time-out value to limit the amount of time that a report server uses to process a report. Report execution time-out values can be specified in the web portal. You can set a default value for all reports in the Site Settings page, and then override that value in the Execution properties page for a specific report. By default, the value is set to 1800 seconds. For more information, see [Set Report Processing Properties](../../reporting-services/report-server/set-report-processing-properties.md).  
+ You can set the report execution time-out value to limit the amount of time that a report server uses to process a report. Report execution time-out values can be specified in the web portal. You can set a default value for all reports in the Site Settings page, and then override that value in the Execution properties page for a specific report. By default, the value is set to 1800 seconds. For more information, see [Set report processing properties](/sql/reporting-services/report-server/set-report-processing-properties).  
   
 ## How report execution time-out values are evaluated  
  The report server evaluates running jobs at 60 second intervals. At each 60 second interval, the report server compares actual process time against the report execution time-out value. If the processing time for a report exceeds the report execution time-out value, report processing will stop.  
@@ -47,8 +47,8 @@ In [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], you can specif
 > You can set the **RunningRequestsDbCycle** setting in the RSReportServer.config file to change the frequency of how often running jobs are evaluated.  
   
 ## See also  
- [Set Processing Options &#40;Reporting Services in SharePoint Integrated Mode&#41;](../../reporting-services/report-server-sharepoint/set-processing-options-reporting-services-in-sharepoint-integrated-mode.md)   
- [Reporting Services Report Server &#40;Native Mode&#41;](../../reporting-services/report-server/reporting-services-report-server-native-mode.md)   
- [Manage a Running Process](../../reporting-services/subscriptions/manage-a-running-process.md)   
- [The web portal of a report server (SSRS Native Mode)](../../reporting-services/web-portal-ssrs-native-mode.md)  
+ [Set processing options &#40;Reporting services in sharePoint integrated mode&#41;](/sql/reporting-services/report-server-sharepoint/set-processing-options-reporting-services-in-sharepoint-integrated-mode)   
+ [Reporting services report server &#40;Native mode&#41;](/sql/reporting-services/report-server/reporting-services-report-server-native-mode)   
+ [Manage a running process](/sql/reporting-services/subscriptions/manage-a-running-process)   
+ [The web portal of a report server (SSRS Native Mode)](/sql/reporting-services/web-portal-ssrs-native-mode)  
   
