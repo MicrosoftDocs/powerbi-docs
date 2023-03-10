@@ -1,5 +1,5 @@
 ---
-title: The new Format pane in Power BI
+title: The updated Format and Visualizations panes in Power BI
 description: Get to know the redesigned Format pane in Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,18 +7,48 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 01/12/2023
+ms.date: 03/09/2023
 LocalizationGroup: Get started
 ---
-# The new Format pane in Power BI
+# The updated Format and Visualizations panes in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 The redesigned Format pane is now generally available and on by default in both Power BI Desktop and the Power BI service. This article explains the biggest changes we’ve made, to improve usability and consistency across visual and non-visual elements.
 
+This article also explains our work redistributing the Visualizations pane functionality, moving it to on-object menus and the Format pane instead. Currently, this functionality is only available in Power BI Desktop.
+
 Thank you for providing feedback throughout the preview. We’re still interested in your comments. Submit feedback on the [Power BI Ideas](https://ideas.powerbi.com/ideas/) site.
 
-## Recent updates
+## March 2023: Moving Visualizations pane functionality
+
+To see the Visualizations and other pane functionality changes, you need to turn on this month's preview features. See [Turn on preview features](../create-reports/power-bi-on-object-interaction.md#turn-on-preview-features) in the on-object interaction article for details.
+
+### Pane switcher 
+
+We've removed the Visualizations pane in favor of [on-object menus](../create-reports/power-bi-on-object-interaction.md). In doing so, we introduced a *pane switcher* to align to the Microsoft Office pattern of *one pane at a time*, to give more real estate to the canvas.
+
+:::image type="content" source="media/desktop-format-pane/pane-switcher.png" alt-text="Screenshot showing the pane switcher.":::
+
+As you open panes, you see them added to the switcher on the right. If you accidentally close a pane, you can bring it back from the **View** tab in the ribbon.
+
+:::image type="content" source="media/desktop-format-pane/show-panes-view-tab.png" alt-text="Screenshot showing Show panes in the View tab.":::
+
+If you prefer to have the panes side by side like before, right-click the pane you’d like and choose **Open in new pane**.
+
+### Drillthrough and tooltip page setup
+
+Drillthrough and tooltip page settings moved from the Visualizations pane into the **Format** page settings.
+
+:::image type="content" source="media/desktop-format-pane/visualizations-drillthrough-format-page.png" alt-text="Screenshot showing drillthrough moved to the Format page.":::
+
+### Analytics pane merged with Format pane
+
+Analytics features were on their own tab in the Visualizations pane. With the removal of the Visualizations pane, we've added the analytics features to the Format pane as *elements to add to your visual*.
+
+:::image type="content" source="media/desktop-format-pane/analytics-format-pane.png" alt-text="Screenshot showing analytics moved to the Format pane.":::
+
+## Past updates
 
 ### December 2022
 

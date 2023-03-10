@@ -1,5 +1,5 @@
 ---
-title: Use on-object interaction in your report (preview)
+title: Use on-object interaction with visuals in your report (preview)
 description: Learn how to use on-object interaction in a report in Power BI Desktop.
 author: maggiesMSFT
 ms.author: maggies
@@ -11,21 +11,24 @@ ms.topic: how-to
 ms.date: 03/09/2023
 LocalizationGroup: Visualizations
 ---
-# Use on-object interaction in your report (preview)
+# Use on-object interaction with visuals in your report (preview)
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-On-object interaction is the new way to build and format your visuals, directly on the visual. It puts common actions for creating and formatting visuals on the visuals themselves, actions such as adding fields, changing visualization types, and formatting text.
+On-object interaction is the new way to build and format a visual, directly on the visual. It puts common actions for creating and formatting visuals on the visuals themselves, actions such as adding fields, changing visualization types, and formatting text.
 
-## Get started
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-build-visual.png" alt-text="Screenshot showing building a visual with on-object formatting.":::
 
-Because on-object is a preview feature, you need to turn it on.
+## Turn on preview features
+
+Because on-object is a preview feature, you need to turn it on. You'll also be turning on the new Visualizations and Format pane functionality changes. See the [updated Format and Visualizations panes in Power BI](../fundamentals/desktop-format-pane.md) article for details.
 
 1. In Power BI Desktop, select **File** > **Options and settings** > **Options** > **Preview Features** > **On-object interaction**. 
 
-    :::image type="content" source="media/power-bi-on-object-interaction/on-object-preview-option.png" alt-text="turn on preview feature.":::
+    :::image type="content" source="media/power-bi-on-object-interaction/on-object-preview-option.png" alt-text="Screenshot showing turning on preview feature.":::
 
 1. Restart Power BI Desktop to see the new experience.
+
 
 ## Build a visual with on-object interaction
 
@@ -66,13 +69,13 @@ format-mode
 
 Now you can hover and click around in the visual to format specific subselections. Right-click the selected element to use the mini-toolbar and shortcut menu.
 
-:::image type="content" source="media/power-bi-on-object-interaction/mini-toolbar-shortcut-menu.png" alt-text="mimi-toolbar formatting options.":::
+:::image type="content" source="media/power-bi-on-object-interaction/mini-toolbar-shortcut-menu.png" alt-text="Screenshot showing mini-toolbar formatting options.":::
 
 ### Edit labels and titles
 
 You can edit labels and titles on visuals directly. Double-click the label you’d like to edit and begin typing. Click away from the label, or press Enter to save your changes.
 
-:::image type="content" source="media/power-bi-on-object-interaction/on-object-edit-title.png" alt-text="on-object editing title.":::
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-edit-title.png" alt-text="Screenshot showing on-object editing title.":::
 
 > [!NOTE]
 > If you set the title or label by conditional formatting, it's possible to override the text with this new feature. It's a known issue we're working to block, and warn users that dynamic text takes precedence.
@@ -81,31 +84,7 @@ You can edit labels and titles on visuals directly. Double-click the label you�
 
 When selecting an element that's very close or overlapping another, Power BI takes the best guess at your selection. If the selection is incorrect, right-click and use the dropdown menu to change your selection to the element you’d like to format.
 
-:::image type="content" source="media/power-bi-on-object-interaction/select-overlapping-elements.png" alt-text="select overlapping elements.":::
-
-## Changes to the Visualizations pane
-
-### Pane switcher 
-
-We have removed the Visualizations pane in favor of the on-object menus. In doing so, we introduced a *pane switcher* to align to the Microsoft Office pattern of *one pane at a time*, to give more real estate to the canvas.
-
-pane-switcher
-
-As you open panes, you see them added to the switcher on the right. If you accidentally close a pane, you can bring it back from the **View** tab in the ribbon.
-
-If you prefer to have the panes side by side like before, you can right-click the pane you’d like and choose **Open in new pane**.
-
-### Drillthrough and tooltip page setup
-
-Drillthrough and tooltip page settings moved from the Visualizations pane into the **Format** page settings.
-
-visualizations-format-pane
-
-### Analytics pane merged with Format pane
-
-Analytics features were on their own tab in the Visualizations pane. With the removal of the Visualizations pane, we've added the analytics features to the Format pane as *elements to add to your visual*.
-
-analytics-format-pane
+:::image type="content" source="media/power-bi-on-object-interaction/select-overlapping-elements.png" alt-text="Screenshot showing selecting overlapping elements.":::
 
 ## Limitations and known issues
 
