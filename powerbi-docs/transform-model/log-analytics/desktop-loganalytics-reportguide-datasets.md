@@ -184,7 +184,7 @@ The current values of the filters are displayed in the smart narrative next to t
 * [User Activities](#page-user-activities)
 * [User Detail](#drillthrough-page-user-detail)
 * [Error Summary](#page-error-summary)
-* [Error Detail](#drillthrough-page--error-detail)
+* [Error Detail](#drillthrough-page-error-page-detail)
 * [Help](#help)
 
 ### Page: Workspace summary
