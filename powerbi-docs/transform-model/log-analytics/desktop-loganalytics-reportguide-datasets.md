@@ -1,6 +1,6 @@
 ---
-title: Use Log Analytics for the Power BI Datasets Template App (preview)
-description: Usage guide for the Template App that visualizes Dataset activity from Analysis Services
+title: Use Log Analytics for the Power BI datasets template app (preview)
+description: Learn how to use the Power BI Datasets Template App to visualizes dataset activity from the Analysis Services engine.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -10,9 +10,9 @@ ms.topic: how-to
 ms.date: 10/21/2022
 LocalizationGroup: Transform and shape data
 ---
-# Use Log Analytics for the Power BI Datasets Template App (preview)
+# Use Log Analytics for the Power BI datasets template app (preview)
 
-Power BI is integrating with Azure Log Analytics (LA). This integration enables administrators and Premium workspace owners to configure a connection from Power BI to a Log Analytics workspace in Azure subscriptions that they control. We published a template app to give you a head start with your analysis. This article describes the app so you can understand how to use the parameters, filters, navigation, and drillthrough paths. You can use these tools to answer questions about dataset operations from the perspective of the Analysis Services (AS) engine. This article describes each page so you can understand its purpose and the typical use cases they support.
+Power BI is integrating with Azure Log Analytics (LA). This integration enables administrators and Premium workspace owners to configure a connection from Power BI to a Log Analytics workspace in Azure subscriptions that they control. There is now a template app to give you a head start with your analysis. This article describes the app so you can understand how to use the parameters, filters, navigation, and drillthrough paths. You can use these tools to answer questions about dataset operations from the perspective of the Analysis Services (AS) engine. This article describes each page so you can understand its purpose and the typical use cases they support.
 
 To [install the AS Engine app](install-as-engine-app.md), you must have a Log Analytics workspace. Once installed, anyone in the organization with the right permissions can view the app. You can see the source .pbit for the template app on [GitHub](https://github.com/microsoft/PowerBI-LogAnalytics-Template-Reports).
 
@@ -32,7 +32,7 @@ Here are some examples of questions that you can answer with the app.
 
 ### Query
 
-* Which DAX queries were issued in a particular scope?
+* Which Data Analysis Expressions (DAX) queries were issued in a particular scope?
 * Which queries are the most expensive?
 * How does a unique DAX query vary over time, and which are the worst?
 * What was the query text?
@@ -49,13 +49,13 @@ Here are some examples of questions that you can answer with the app.
 
 ### Others
 
-* Since the app contains various AS engine events, you can customize the **app** to answer questions related to other events such as Discover or Notification.
+* Since the app contains various AS engine events, you can customize it to answer questions related to other events such as Discover or Notification.
 
 ## App data source
 
 The app loads data from a single Azure Log Analytics workspace.
 
-It doesn't matter if the Log Analytics workspace contains data from many Power BI workspaces. It also doesn't matter which level of administrator configured logging. The log schemas are exactly the same for every role, so there's only one version of the app. We included different levels of aggregation to accommodate a range of use cases. For more information, see [Using Log Analytics in Power BI](desktop-log-analytics-overview.md)
+It doesn't matter if the Log Analytics workspace contains data from many Power BI workspaces. It also doesn't matter which level of administrator configured logging. The log schemas are exactly the same for every role, so there's only one version of the app. There are different levels of aggregation to accommodate a range of use cases. For more information, see [Using Log Analytics in Power BI](desktop-log-analytics-overview.md)
 
 ## App data model
 
@@ -71,7 +71,7 @@ The app has the following tables and relationships:
 * Suboperation - Query
 * Suboperation - Refresh
 
-The following image is a entity relationship (ER) diagram.
+The following image is an entity relationship (ER) diagram.
 
 :::image type="content" source="media/desktop-loganalytics-reportguide-datasets/er-diagram.png" alt-text="Screenshot of the entity relationship diagram.":::
 
@@ -84,8 +84,8 @@ The following parameters are defined in the template:
 |Days Ago To Start |Load data from the specified day to the time the call was initiated. The maximum value you can select is 30 days. However, your Premium capacity memory limits apply to this parameter. If those limits are exceeded, the template app may fail to refresh.|
 |Days Ago To Finish |Load data up to the specified number of days ago. Use 0 for today. |
 |Log Analytics Table |Preset values corresponding to the Log Analytics source table:<br> - PowerBIDatasetsWorkspace<br> - PowerBIDatasetsTenant <br> Currently only PowerBIDatasetsWorkspace is supported. |
-|Log Analytics WorkspaceId |GUID of the Azure Log Analytics workspace containing the AS Engine data. |
-UTC Offset |An hourly offset used to convert the data from UTC to a local time zone. |
+|Log Analytics WorkspaceId |Globally unique identifier (GUID) of the Azure Log Analytics workspace containing the AS Engine data. |
+UTC Offset |An hourly offset used to convert the data from Coordinate Universal Time (UTC) to a local time zone. |
 Pagination Hours | This parameter is optional. It describes the time window for each log analytics call from Power BI. You only need to update this parameter if you're running into failures while fetching data due to data size exceeding Log Analytics limits. |
 
 :::image type="content" source="media/desktop-loganalytics-reportguide-datasets/parameters.png" alt-text="Screenshot of the Edit Parameters dialog.":::
@@ -96,15 +96,15 @@ Pagination Hours | This parameter is optional. It describes the time window for 
 
 The following diagram shows the workflow for the app.
 
-:::image type="content" source="media/desktop-loganalytics-reportguide-datasets/template-app-as-engine-flow.png" alt-text="Screenshot of a diagram showing the major pages of the app and some important available drillthroughs..":::
+:::image type="content" source="media/desktop-loganalytics-reportguide-datasets/template-app-as-engine-flow.png" alt-text="Screenshot of a diagram showing the major pages of the app and some important available drillthroughs.":::
 
 ### Workspace summary
 
-Shows engine activities and load at a workspace level, focusing on identifying interesting datasets, reports, or users. You can use page to identify a high-level issue to analyze further by navigating or drilling through to other pages of the app.
+This page shows engine activities and load at a workspace level, focusing on identifying interesting datasets, reports, or users. You can use this page to identify a high-level issue to analyze further by navigating or drilling through to other pages of the app.
 
 ### Engine activities
 
-Provides engine load and activity trends by day and hour, with the ability to select a scenario such as Refresh Completed or Query Completed. You can drill through to the Engine Activity Detail page to get a look at a detailed list of each activity within the selected context.
+This page provides engine load and activity trends by day and hour, with the ability to select a scenario such as Refresh Completed or Query Completed. You can drill through to the Engine activity detail page to get a look at a detailed list of each activity within the selected context.
 
 ### Engine activity detail
 
@@ -112,39 +112,39 @@ This page is a drillthrough page showing event-level data. For example, you can 
 
 ### Dataset refreshes
 
-Provides a Gantt chart for style view of refreshes to observe duration and parallelism. You can drill through to the dataset refresh details for more details.
+This page provides a Gantt chart for style view of refreshes to observe duration and parallelism. You can drill through to the dataset refresh details for more details.
 
 ### Dataset refresh detail
 
-A drillthrough page showing the operations that occurred within a single dataset refresh. You can use this view to identify the longest running operation in a refresh and to see if there are any dependencies between activities.
+This drillthrough page shows the operations that occurred within a single dataset refresh. You can use this view to identify the longest running operation in a refresh and to see if there are any dependencies between activities.
 
 ### Query statistics
 
-An overview of query performance, highlighting typical and low performing durations and letting you see how variable each unique query is.
+This page is an overview of query performance, highlighting typical and low performing durations and letting you see how variable each unique query is.
 
 ### Query detail
 
-A drillthrough page showing visuals such as a detailed table for the query, a table for related queries etc. For Import tables, the page shows you the internal Vertipaq storage engine queries and durations. For DirectQuery models, the page shows you the external queries, for example T-SQL sent to a SQL Server.
+This drillthrough page shows visuals such as a detailed table for the query, a table for related queries etc. For Import tables, the page shows you the internal Vertipaq storage engine queries and durations. For DirectQuery models, the page shows you the external queries, for example T-SQL sent to a SQL Server.
 
 ### Query history
 
-Shows you every execution of a query, provides CPU and duration stats and trend visuals to see if there are any spikes.
+This page shows you every execution of a query, provides CPU and duration stats, and trend visuals to see if there are any spikes.
 
 ### User activities
 
-A summary view that focuses on users, helping you identify the most active users and those users who are experiencing worse performance relative to others.
+This page shows a summary view that focuses on users, helping you identify the most active users and those users who are experiencing worse performance relative to others.
 
 ### User detail
 
-A drillthrough page that provides details of the activities performed by a single user.
+This drillthrough page provides details of the activities performed by a single user.
 
 ### Error summary
 
-Helps identify errors and spot any error trends.
+This page helps identify errors and spot any error trends.
 
 ### Error details
 
-Allows you to zoom in on a specific error by viewing the detailed event.
+This page allows you to zoom in on a specific error by viewing the detailed event.
 
 ### Navigate in the app
 
@@ -173,23 +173,23 @@ The current values of the filters are displayed in the smart narrative next to t
 
 ## App pages
 
-* [Workspace Summary](#page-workspace-summary)
-* [Engine Activities](#page-engine-activities-also-a-drillthrough)
-* [Engine Activity Details](#drillthrough-page-engine-activity-details)
-* [Dataset Refreshes](#page-dataset-refreshes-also-a-drillthrough)
-* [Dataset Refresh Detail](#drillthrough-page-dataset-refresh-detail)
-* [Query Statistics](#page-query-statistics-also-a-drillthrough)
-* [Query Detail](#drillthrough-page-query-detail)
-* [Query History](#drillthrough-page-query-history)
-* [User Activities](#page-user-activities)
-* [User Detail](#drillthrough-page-user-detail)
-* [Error Summary](#page-error-summary)
-* [Error Detail](#drillthrough-page--error-detail)
+* [Workspace summary](#page-workspace-summary)
+* [Engine activities](#page-engine-activities-also-a-drillthrough)
+* [Engine activity details](#drillthrough-page-engine-activity-details)
+* [Dataset refreshes](#page-dataset-refreshes-also-a-drillthrough)
+* [Dataset refresh detail](#drillthrough-page-dataset-refresh-detail)
+* [Query statistics](#page-query-statistics-also-a-drillthrough)
+* [Query detail](#drillthrough-page-query-detail)
+* [Query history](#drillthrough-page-query-history)
+* [User activities](#page-user-activities)
+* [User detail](#drillthrough-page-user-detail)
+* [Error summary](#page-error-summary)
+* [Error page detail](#drillthrough-page-error-page-detail)
 * [Help](#help)
 
 ### Page: Workspace summary
 
-This page is targeted at a Workspace Administrator and shows activities and statistics related to datasets and queries. It also identifies top reports by load, details popular datasets by operations or users, and allows drillthrough to various pages to get further details.
+This page is targeted at a workspace administrator and shows activities and statistics related to datasets and queries. It also identifies top reports by load, details popular datasets by operations or users, and allows drillthrough to various pages to get further details.
 
 :::image type="content" source="media/desktop-loganalytics-reportguide-datasets/workspace-summary.png" alt-text="Screenshot of the Workspace summary page in the app.":::
 
@@ -229,7 +229,7 @@ The following table lists the visuals displayed on the engine activity details p
 
 ### Page: Dataset refreshes (also a drillthrough)
 
-This page provides an overview of dataset refreshes occurring over a selected period. It allows you to identify long running refreshes and visualize which ones are happening in parallel. This page allows you to select any data refresh and drill through to a page called Dataset Refresh Detail.
+This page provides an overview of dataset refreshes occurring over a selected period. It allows you to identify long running refreshes and visualize which ones are happening in parallel. This page allows you to select any data refresh and drill through to a page called **Dataset refresh detail**.
 
 :::image type="content" source="media/desktop-loganalytics-reportguide-datasets/dataset-refreshes.png" alt-text="Screenshot of the Dataset refreshes page in the app.":::
 
@@ -256,11 +256,11 @@ The following table lists the visuals displayed on the dataset refresh detail pa
 
 ### Page: Query statistics (also a drillthrough)
 
-This page focuses on queries in bulk. The goal is to identify which queries are common, and which queries have high variability. We provide percentiles and deviations to give you an idea of both typical and more extreme measurements.
+This page focuses on queries in bulk. The goal is to identify which queries are common and which queries have high variability. The app provides percentiles and deviations to give you an idea of both typical and more extreme measurements.
 
-Any query can be drilled through to a page called *Query Details* to see details about its execution, such as Storage Engine and Formulae Engine time. You can also see the internal Vertipaq Queries or external DirectQuery text and duration depending on the model type.
+Any query can be drilled through to a page called **Query detail** to see details about its execution. Among other pieces of information, you can see the internal Vertipaq Queries or external DirectQuery text and duration depending on the model type.
 
-You can also drill through to a page called *Query History* that shows you all the execution of that query over a period, and its performance trend.
+You can also drill through to a page called **Query history** that shows you all the execution of that query over a period, and its performance trend.
 
 :::image type="content" source="media/desktop-loganalytics-reportguide-datasets/query-statistics.png" alt-text="Screenshot of the Query statistics page in the app.":::
 
@@ -270,11 +270,11 @@ The following table lists the visuals displayed on the query statistics page acc
 |---------|---------|
 |**Query success vs failures count** - Line chart shows daily trend of query completions and failures. |**Queries by aggregation usage** - Shows how many queries used aggregations using both count and percentage. |
 |**Queries by date and segments** - Clustered column chart shows query count by query duration segment. | |
-|**Top N queries by CPU variability** - Table is represented in stepped layout as a hierarchy across capacities, workspaces, datasets, reports, and queries showing the count of operations, CPU time standard deviation, and more.  **Top N queries by duration P50** - Table is represented in stepped layout as a hierarchy across capacities, workspaces, datasets, reports, and queries showing the count of operations, duration standard deviation, and more.||
+|**Top N queries by CPU variability** - Table is represented in stepped layout as a hierarchy across capacities, workspaces, datasets, reports, and queries showing the count of operations, CPU time standard deviation, and more. <br>**Top N queries by duration P50** - Table is represented in stepped layout as a hierarchy across capacities, workspaces, datasets, reports, and queries showing the count of operations, duration standard deviation, and more.||
 
 ### Drillthrough page: Query detail
 
-This page provides a detailed look at a single execution of a DAX query. Depending on whether the query was for an Import or DQ model, you might either see the internal Vertipaq Storage Engine queries or the external DQ source queries (for example, T-SQL for SQL Server). It also identifies which aggregations were used, if any.
+This page provides a detailed look at a single execution of a DAX query. Depending on whether the query was for an Import or DirectQuery model, you might either see the internal Vertipaq Storage Engine queries or the external DQ source queries (for example, T-SQL for SQL Server). It also identifies which aggregations were used, if any.
 
 :::image type="content" source="media/desktop-loganalytics-reportguide-datasets/query-detail.png" alt-text="Screenshot of the Query detail drillthrough.":::
 
@@ -300,7 +300,7 @@ The following table lists the visuals displayed on the query history page accord
 |**Query details** - Lists each query executed with performance details.
 |**Related queries details** - Table shows related query details. <br> **Aggregation details** - When queries are able to use aggregations, details are provided here. |
 
-The cards on the right display the total number of executions of a given query, the execution times in ms and the aggregation utilization percentage.
+The cards on the right display the total number of executions of a given query, the execution times in ms, and the aggregation utilization percentage.
 
 ### Page: User activities
 
@@ -363,7 +363,6 @@ The following table lists the visuals displayed on the error detail page accordi
 
 This page provides a help summary of different features throughout the app. It also has support links that can be used for any support assistance.
 
-![Screenshot of ASEngine_Help.]()
 :::image type="content" source="media/desktop-loganalytics-reportguide-datasets/help.png" alt-text="Screenshot of the Help page that's in the app.":::
 
 >[!NOTE]
@@ -373,9 +372,9 @@ This page provides a help summary of different features throughout the app. It a
 
 * Log Analytics Query Limits
 
-  * Kusto has limits in terms of number of records returned and the overall size of the data based on the query. The app has been built to work around these limits by pulling data in sequential chunks. However, you might still exceed these limits, resulting in a refresh failure in this template app. [Query Limits](/azure/data-explorer/kusto/concepts/querylimits)
+  * Kusto has limits in terms of number of records returned and the overall size of the data based on the query. The app has been built to work around these limits by pulling data in sequential chunks. However, you might still exceed these limits, resulting in a refresh failure in this template app. For more information, see[Query Limits](/azure/data-explorer/kusto/concepts/querylimits).
 
-  * If template app refresh is failing due to above data limits, you can configure the Pagination Hours parameter. Setting a lower value here lowers the amount of data retrieved from Log Analytics per call by increasing the number of calls.
+  * If the template app refresh is failing due to above data limits, you can configure the Pagination Hours parameter. Setting a lower value here lowers the amount of data retrieved from Log Analytics per call by increasing the number of calls.
 
 * The following events are intentionally excluded from Log Analytics during the Preview:
   
@@ -385,14 +384,14 @@ This page provides a help summary of different features throughout the app. It a
   * VertipaqSEQueryBegin
   * VertipaqSEQueryEnd
 
-  Due to this design decision, storage engine subqueries aren't visible for now on the Query Detail page.
+  Due to this design decision, storage engine subqueries aren't visible for now on the Query detail page.
 
 ## Next steps
 
 The following articles provide more information about Power BI and its many features:
 
 * [Log Analytics for Analysis Services Template App](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.powerbiloganalyticsforasengine)
-* [Install Log Analytics Template App](install-as-engine-app.md)
+* [Install the Log Analytics for Power BI Datasets Template App (preview)](install-as-engine-app.md)
 * [Configuring Azure Log Analytics for Power BI (Preview)](desktop-log-analytics-configure.md)
-* [Azure Log Analytics in Power BI FAQ](desktop-log-analytics-faq.md)
+* [Azure Log Analytics in Power BI - FAQ (Preview)](desktop-log-analytics-faq.md)
 * [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
