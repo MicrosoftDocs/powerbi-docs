@@ -18,7 +18,7 @@ ms.reviewer: saurkumar
   
  The following illustration shows an example of a stacked area chart. The data is well suited for display on a stacked area chart because the chart can display totals for all series as well as the proportion that each series contributes to the total.  
   
- ![Screenshot of a Area chart](../media/paginated-reports-visualizations/area-chart.gif "Area chart")  
+ ![Screenshot of a Area chart](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/area-chart.gif "Area chart")  
   
 > [!NOTE]  
 >  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.
