@@ -119,5 +119,5 @@ This report and data are provided "as is", "with all faults", and without warran
 
 ## Next steps
 
-Download the [Power BI template (.pbit) file](https://go.microsoft.com/fwlink/?linkid=2125058)
-[Get samples for Power BI](../create-reports/sample-datasets.md)
+- Download the [Power BI template (.pbit) file](https://go.microsoft.com/fwlink/?linkid=2125058)
+- [Get samples for Power BI](../create-reports/sample-datasets.md)
