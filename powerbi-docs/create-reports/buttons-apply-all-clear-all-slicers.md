@@ -37,7 +37,7 @@ In Power BI Desktop, on the **Insert** ribbon, select **Buttons** to reveal a dr
 
 In the Power BI service, open the report in Editing view. Select **Buttons** in the top menu bar to reveal a drop-down menu, then select the **Apply all slicers** button.
 
-![Screenshot showing Apply all slicers button control in the Power BI service.](media/desktop-buttons/power-bi-apply-all-button-dropdown.png)
+![Screenshot showing Apply all slicers button control in the Power BI service.](media/buttons-apply-all-clear-all-slicers/power-bi-apply-all-button-dropdown-service.png)
 
 ---
 
