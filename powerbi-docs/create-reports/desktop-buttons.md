@@ -117,41 +117,7 @@ To set up a single-page navigation button:
 
 1. If you want a custom navigation pane, [create page and bookmark navigators](button-navigators.md) instead of individual buttons.
 
-## Set the page navigation destination conditionally
-
-You can use conditional formatting to set the navigation destination, based on the output of a measure you create in Power BI Desktop. For example, you may want to save space on your report canvas by having a single button to navigate to different pages based on the user’s selection:
-
-:::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Screenshot showing Navigate with a Go button.":::
-
-To create this example, start by creating a single-column table in Power BI Desktop with the names of the navigation destinations:
-
-1. On the **Home** tab, select **Enter data**.
-
-   The **Create Table** dialog box opens.
-
-2. In the **Create Table** dialog box, enter the names of your pages in the column. Power BI uses an exact string match to set the drillthrough destination, so ensure that the values you entered exactly match your drillthrough page names.
-
-   :::image type="content" source="media/desktop-buttons/button-create-table.png" alt-text="Screenshot showing Create a table.":::
-
-3. After you've created the table, add it to the page as a single-select slicer:
-
-   :::image type="content" source="media/desktop-buttons/button-navigate-slicer.png" alt-text="Screenshot showing Navigate slicer.":::
-
-Create a page navigation button and select the conditional formatting option for the destination:
-
-1. Under **Style**, set **Action** to **On**, and then expand **Action**. Select **Page navigation** for **Type**, and then select the **Conditional formatting** (**fx**) icon next to the **Destination**.
-
-   :::image type="content" source="media/desktop-buttons/button-set-page-nav-destination.png" alt-text="Screenshot showing Page navigation button.":::
-
-1. On the **Destination - Action** page, select the name of the column you created. In this case, it's **Select a destination**.
-
-   :::image type="content" source="media/desktop-buttons/button-select-destination.png" alt-text="Screenshot showing Select a destination.":::
-
-   Now the button can navigate to different pages, depending on the user’s selection.
-
-   :::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Screenshot showing Navigate with a Go button.":::
-
-### Shapes and images for navigation
+## Shapes and images for navigation
 
 Page navigation action is also supported for shapes and images, not just buttons. Here’s an example using one of the built-in shapes:
 

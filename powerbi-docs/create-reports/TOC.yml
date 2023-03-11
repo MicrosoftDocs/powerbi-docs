@@ -118,6 +118,8 @@
         href: power-bi-slicer-filter-responsive.md
       - name: "Add multiple fields to a slicer"
         href: power-bi-slicer-hierarchy-multiple-fields.md
+      - name: "Apply all slicers and Clear all slicers buttons"
+        href: buttons-apply-all-clear-all-slicers.md
       - name: "Create field parameters"
         href: power-bi-field-parameters.md
       - name: "Multi-select data elements, points, visuals"
