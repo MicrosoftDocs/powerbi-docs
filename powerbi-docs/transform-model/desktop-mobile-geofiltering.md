@@ -55,7 +55,7 @@ For example, say you're a sales manager that travels to meet customers, and you 
 1. Open the report in any of the [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md).
 2. If you're in a geographic location with data in the report, you can filter it automatically to your location.
 
-    :::image type="content" source="media/desktop-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png" alt-text="Screenshot of a report in the Power BI app highlighting the geographic filter":::
+    :::image type="content" source="media/desktop-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png" alt-text="Screenshot of a report in the Power BI app highlighting the geographic filter.":::
 
 To learn more, see [filtering a report by location in the Power BI mobile apps](../consumer/mobile/mobile-apps-geographic-filtering.md).
 
