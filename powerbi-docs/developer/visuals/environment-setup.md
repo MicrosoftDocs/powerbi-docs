@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/16/2022
+ms.date: 03/12/2023
 ms.custom: engagement-fy23
 ---
 
@@ -22,6 +22,7 @@ In this article, you'll learn how to:
 >
 > * [Install *node.js*](#install-nodejs).
 > * [Install *pbiviz*](#install-pbiviz).
+> * [Set up the Power BI Desktop for developing a visual](#set-up-power-bi-desktop-for-developing-a-visual)
 > * [Set up Power BI service for developing a visual](#set-up-power-bi-service-for-developing-a-visual).
 
 ## Install node.js
@@ -60,9 +61,19 @@ Confirm that the Power BI visuals tools package is installed. In PowerShell, run
 >[!div class="mx-imgBorder"]
 >![Screenshot of the output of executing the command p b i viz in PowerShell.](media/environment-setup/pbiviz-verify.png)
 
+## Set up Power BI Desktop for developing a visual
+
+To develop a Power BI visual, enable the *Develop a visual* option in the Power BI desktop. Follow the instructions in this section to enable this option.
+
+1. From the Power BI desktop, navigate to **File** > **Options and settings**  > **Options**
+   :::image type="content" source="./media/environment-setup/desktop-options.png" alt-text="Screenshot of Options menu in the Power BI desktop.":::
+1. Scroll down to Report settings and enable the Developer Mode check box.
+   :::image type="content" source="./media/environment-setup/desktop-developer-mode.png" alt-text="Screenshot of Developer mode enabled in POwer PI desktop.":::
+1. Select **OK**
+
 ## Set up Power BI service for developing a visual
 
-To develop a Power BI visual, you'll need to enable custom visual debugging in Power BI service. Follow the instructions in this section to enable this option.
+To develop a Power BI visual, enable custom visual debugging in Power BI service. Follow the instructions in this section to enable this option.
 
 1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/).
 
