@@ -22,7 +22,7 @@ In this article, you'll learn how to:
 >
 > * [Install *node.js*](#install-nodejs).
 > * [Install *pbiviz*](#install-pbiviz).
-> * [Set up the Power BI Desktop for developing a visual](#set-up-power-bi-desktop-for-developing-a-visual)
+> * [Set up the Power BI desktop for developing a visual](#set-up-power-bi-desktop-for-developing-a-visual)
 > * [Set up Power BI service for developing a visual](#set-up-power-bi-service-for-developing-a-visual).
 
 ## Install node.js
@@ -61,7 +61,7 @@ Confirm that the Power BI visuals tools package is installed. In PowerShell, run
 >[!div class="mx-imgBorder"]
 >![Screenshot of the output of executing the command p b i viz in PowerShell.](media/environment-setup/pbiviz-verify.png)
 
-## Set up Power BI Desktop for developing a visual
+## Set up Power BI desktop for developing a visual
 
 To develop a Power BI visual, enable the *Develop a visual* option in the Power BI desktop. Follow the instructions in this section to enable this option.
 
