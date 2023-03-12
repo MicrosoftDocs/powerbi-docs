@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 02/17/2023
+ms.date: 03/09/2023
 ---
 
 # Power BI data sources
@@ -132,6 +132,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 ## Data sources P-R
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
 |---|---|---|---|---|---|---|
+| Palantir Foundry | Yes | Yes | Yes | Yes | Yes | Yes |
 | Paxata <sup>6</sup> | Yes | Yes | No | Yes | No | Yes |
 | PDF | Yes | Yes | No | Yes | No <sup>3</sup> | Yes |
 | Planview Enterprise One - CTM | Yes | Yes | No | No | No | No |
@@ -168,7 +169,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | SQL Server | Yes | Yes | Yes | Yes | Yes | Yes |
 | SQL Server Analysis Services | Yes | No | Yes | Yes | Yes | No |
 | SISCC-SDMX | Yes | Yes | No | Yes | No | No |
-| Starburst Enterprise | Yes | Yes | Yes | Yes | No | Yes |
+| Starburst Enterprise | Yes | Yes | Yes | Yes | No | No |
 | Stripe | Yes | Yes | No | No | No | No |
 | SumTotal | Yes | Yes | No | Yes | No | Yes |
 | SurveyMonkey | Yes | Yes | No | Yes | No | Yes |
