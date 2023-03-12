@@ -13,9 +13,9 @@ ms.custom: engagement-fy23
 
 # Set up your environment for developing a Power BI visual
 
-In this article, you'll learn how to set up your environment for developing a Power BI visual.
+This article teaches you how to set up your environment for developing a Power BI visual.
 
-Before you start development, you'll need to install **node.js** and the **pbiviz** package. Then, when your local environment is set up, you'll need to configure Power BI service for developing a Power BI visual.
+Before you start development, you need to install **node.js** and the **pbiviz** package. Then, when your local environment is set up, you need to configure Power BI service for developing a Power BI visual.
 
 In this article, you'll learn how to:
 > [!div class="checklist"]
@@ -68,7 +68,7 @@ To develop a Power BI visual, enable the *Develop a visual* option in the Power 
 1. From the Power BI desktop, navigate to **File** > **Options and settings**  > **Options**
    :::image type="content" source="./media/environment-setup/desktop-options.png" alt-text="Screenshot of Options menu in the Power BI desktop.":::
 1. Scroll down to Report settings and enable the Developer Mode check box.
-   :::image type="content" source="./media/environment-setup/desktop-developer-mode.png" alt-text="Screenshot of Developer mode enabled in POwer PI desktop.":::
+   :::image type="content" source="./media/environment-setup/desktop-developer-mode.png" alt-text="Screenshot of Developer mode enabled in Power PI desktop.":::
 1. Select **OK**
 
 ## Set up Power BI service for developing a visual
