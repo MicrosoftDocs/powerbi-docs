@@ -96,4 +96,4 @@ With the more granular Build permission, you can choose who can only view the co
 * [Roles in workspaces](../collaborate-share/service-roles-new-workspaces.md)
 * [Manage dataset access permissions](service-datasets-manage-access-permissions.md)
 
-Questions? [Try asking the Power BI Community](https://community.powerbi.com.)
+Questions? [Try asking the Power BI Community](https://community.powerbi.com)
