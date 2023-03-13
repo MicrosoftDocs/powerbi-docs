@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/10/2023
+ms.date: 03/13/2023
 ms.custom: sample-get-started-desktop-best-worst-states, sample-sales-&-returns
 LocalizationGroup: Create reports
 ---
@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-With *Apply all slicers* and *Clear all slicers* buttons, you can create buttons in Power BI reports that apply all the slicers or clear all the slicers on a page, with one click.
+If you have a report page with a number of slicers, consider adding *Apply all slicers* and *Clear all slicers* buttons to the page. These buttons apply all the slicers or clear all the slicers on a page, with one click, reducing the number of unnecessary visual queries the slicers send.
 
 ![Screenshot showing Apply all slicers button in Power BI.](media/buttons-apply-all-clear-all-slicers/power-bi-apply-all-slicers-button.png)
 
@@ -24,6 +24,8 @@ With *Apply all slicers* and *Clear all slicers* buttons, you can create buttons
 Performance is the main reason to add an Apply all slicers button to your reports.  Say you have a report with five slicers and six other visuals. Every time you make a selection in the slicers, the six other visuals change. You pick two different options in the first three slicers, one option in the fourth slicer, and four options in the last one. You made eleven different selections. Ten of those different selections updated the other six visuals on the page unnecessarily, resulting in 60 unnecessary visual queries. You can bring this down to just the six *necessary* visual queries with the Apply all slicers button.
 
 This basic scenario demonstrates significant query reduction, reducing 66 visual queries down to just six.
+
+See [Optimize Power BI Desktop](desktop-optimize-ribbon.md) for more ways to improve report performance.
 
 ## Create an Apply all slicers button in a report
 
@@ -110,8 +112,8 @@ Some things to keep in mind with the slicers:
 
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 
+- [Optimize Power BI Desktop](desktop-optimize-ribbon.md)
 - [Create page and bookmark navigators](button-navigators.md)
 - [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md)
-- [Use drillthrough in Power BI reports](desktop-drillthrough.md)
 - [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
-- [Create a drillthrough button](desktop-drill-through-buttons.md)
+

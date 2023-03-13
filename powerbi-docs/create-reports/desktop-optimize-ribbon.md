@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: overview
-ms.date: 11/29/2022
+ms.date: 03/13/2023
 LocalizationGroup: Create reports
 ---
 # Optimize ribbon in Power BI Desktop (Preview)
@@ -90,6 +90,11 @@ The Optimize ribbon includes the same **Performance analyzer** button as shown i
 :::image type="content" source="media/desktop-optimize-ribbon/desktop-optimization-performance-analyzer.png" alt-text="Performance analyzer dialog":::
 
 To learn more, see [Use Performance analyzer to examine report element performance](desktop-performance-analyzer.md).
+
+
+## Create Apply all and Clear all slicers buttons
+
+If you have a report page with a number of slicers, consider adding *Apply all slicers* and *Clear all slicers* buttons to the page. These buttons apply all the slicers or clear all the slicers on a page with one click, reducing the number of unnecessary visual queries the slicers send. To learn more, see [Create Apply all and Clear all slicers buttons in Power BI reports](buttons-apply-all-clear-all-slicers.md).
 
 ## Video
 

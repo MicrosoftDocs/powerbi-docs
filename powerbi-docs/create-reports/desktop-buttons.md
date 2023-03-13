@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/10/2023
+ms.date: 03/13/2023
 ms.custom: sample-get-started-desktop-best-worst-states, sample-sales-&-returns
 LocalizationGroup: Create reports
 ---
@@ -25,13 +25,13 @@ With *buttons* in Power BI, you can create reports that behave similarly to apps
 
 In Power BI Desktop, on the **Insert** ribbon, select **Buttons** to reveal a drop-down menu, where you can select the button you want from a collection of options.
 
-![Screenshot showing Add a button control in Power BI Desktop.](media/desktop-buttons/power-bi-button-dropdown.png)
+:::image type="content" source="media/buttons-apply-all-clear-all-slicers/power-bi-apply-all-button-dropdown.png" alt-text="Screenshot showing Add a button control in Power BI Desktop.":::
 
 ### [Power BI service](#tab/powerbi-service)
 
 In the Power BI service, open the report in Editing view. Select **Buttons** in the top menu bar to reveal a drop-down menu, where you can select the button you want from a collection of options.
 
-![Screenshot showing Add a button control in the Power BI service.](media/desktop-buttons/power-bi-button-service-dropdown.png)
+:::image type="content" source="media/buttons-apply-all-clear-all-slicers/power-bi-apply-all-button-dropdown-service.png" alt-text="Screenshot showing Add a button control in the Power BI service.":::
 
 ---
 
