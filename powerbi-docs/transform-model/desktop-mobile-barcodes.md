@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/20/2021
+ms.date: 03/13/2023
 LocalizationGroup: Model your data
 ---
 
