@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 03/09/2023
+ms.date: 03/13/2023
 
 LocalizationGroup: Share your work
 ---
@@ -17,7 +17,14 @@ In Power BI, you can create official packaged content, then distribute it to a b
 
 :::image type="content" source="media/service-create-distribute-apps/power-bi-apps.png" alt-text="Screenshot of Power Bi Apps":::
 
-Your business users often need multiple Power BI dashboards, reports, and other content to run their business. With Power BI apps, you can create collections of content, and publish these collections as apps to your whole organization or to specific people or groups. You can create multiple *audiences* for your app, and show or hide different content to each audience. For you as a report creator or admin, apps and audiences make managing permissions on these collections easier.
+Here are the steps to publishing an app in power BI:
+
+- [Create the app](#create-and-publish-your-app)
+- [Add content to the app](#add-content-to-the-app)
+- [Create and manage multiple audiences](#create-and-manage-multiple-audiences)
+- [Publish the app](#publish-the-app)
+
+Your business users often need multiple Power BI dashboards, reports, and other content to run their business. With Power BI apps, you can create collections of content and publish these collections as apps, to your whole organization or to specific people or groups. You can create multiple *audiences* for your app, and show or hide different content to each audience. For you as a report creator or admin, apps and audiences make managing permissions on these collections easier.
 
 Business users get your apps in a few different ways:
 
@@ -78,7 +85,7 @@ On the **Content** tab, you add the content from the workspace to the app.
 
 1. Select **Next: Add audience**.
 
-### Create and manage audiences
+### Create and manage multiple audiences
 
 On the **Audience** tab, you create and manage audience groups within the app.
 
@@ -108,7 +115,7 @@ On the **Audience** tab, you create and manage audience groups within the app.
     > [!NOTE]
     > The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least the Contributor role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
 
-### Save a copy of a report
+### Allow saving a copy of a report
 
 You can allow app users who have build permissions to save copies of reports to their workspace. Once they save the reports, the app users can customize the reports copies to meet their needs. 
 
