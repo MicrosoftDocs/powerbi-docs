@@ -7,7 +7,7 @@ ms.reviewer: bstar92
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 05/20/2022
+ms.date: 03/13/2023
 LocalizationGroup: Transform and shape data
 ---
 # Install the Log Analytics for Power BI Datasets Template App (preview)
