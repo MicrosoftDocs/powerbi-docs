@@ -12,7 +12,7 @@ LocalizationGroup: Model your data
 
 # Tag barcode fields in Power BI Desktop
 
-In Power BI Desktop, you can [categorize data](desktop-data-categorization.md) in a column, so Power BI Desktop knows how to treat values in visuals in a report. You can also categorize a column as **Barcode**. Then, you can let someone in your company or organization [scans a barcode](../consumer/mobile/mobile-apps-scan-barcode.md) on a product using the Power BI mobile app on their iOS or Android device. This barcode lets them see any report that includes that includes it. When they open the report, it also automatically filters to the data related to that barcode.
+In Power BI Desktop, you can [categorize data](desktop-data-categorization.md) in a column, so that Power BI Desktop knows how to treat values in visuals in a report. You can also categorize a column as **Barcode**. Then, you can let someone in your company or organization [scan a barcode](../consumer/mobile/mobile-apps-scan-barcode.md) on a product by using the Power BI mobile app on their iOS or Android device. This barcode lets them see any report that includes that includes it. When they open the report, it also automatically filters to the data related to that barcode.
 
 ## Categorize barcode data
 
@@ -22,13 +22,14 @@ Assuming you have a report that includes barcodes:
 2. Select the column that contains the barcode data. See the list of [supported barcode formats](#supported-barcode-formats) in the following section.
 3. On the **Column tools** tab, select **Data category** > **Barcode**.
 
-    ![Data category list](media/desktop-mobile-barcodes/power-bi-desktop-barcode.png)
+    ![Data category list]()
+    :::image type="content" source="media/desktop-mobile-barcodes/power-bi-desktop-barcode.png" alt-text="Screenshot of Power BI Desktop showing the Column tools tab in Data view. The Data category dropdown in selected, and Barcode is highlighted.":::
 
     >[!WARNING]
     >Do not categorize more than one column across all data tables in a report as **Barcode**. The mobile apps support barcode filtering only for reports that have only one barcode column across all report data tables. If a report has more than one barcode column, no filtering takes place.
 
 4. In Report view, add the barcode field to the visuals you want filtered by the barcode.
-5. Save the report and publish it to the Power BI service.
+5. Save the report, and publish it to the Power BI service.
 
 Now when you open the scanner on the Power BI apps for iOS and Android devices, you can scan a barcode. Then you can see this report in the list of reports that have barcodes. When you open the report, it filters the visuals by the product barcode you scanned.
 
