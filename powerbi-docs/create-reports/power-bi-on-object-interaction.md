@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/09/2023
+ms.date: 03/13/2023
 LocalizationGroup: Visualizations
 ---
 # Use on-object interaction with visuals in your report (preview)
@@ -51,7 +51,7 @@ From this flyout menu, you can continue to add data. Select the **Add data** but
 If you prefer to see all the field wells as before, turn off the **Suggest a type** toggle to expand the full **Build a visual** menu.
 
 > [!TIP]
-> You can also turn this toggle off by default as well as pinning the full visualization gallery tray open. Select **File** > **Options and settings** > **Options** > **Report settings**, and clear the **Suggest a visual for me by default** check box.
+> You can also turn this toggle off by default as well as pinning the full visualization gallery tray open. Select **File** > **Options and settings** > **Options** > **Report settings**, and clear the **Suggest a visual type by default** check box.
 
 ## Format a visual on object
 
@@ -103,7 +103,6 @@ When selecting an element that's very close or overlapping another, Power BI tak
 
 ### Warnings
 
-- Warning messages aren't shown within the **Add to your visual** menu.
 - If you set the title or label by conditional formatting, it's possible to override the text with the new direct text editing feature. It's a known issue we're working to block, and warn users that dynamic text takes precedence.
 - While responsive is on, the mini-toolbar will increase to the responsive upper bound, then stop. It might appear as a bug that it’s broken. We plan to add an error state to communicate this.
 
