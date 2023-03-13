@@ -30,7 +30,7 @@ Users get Build permission for a dataset in a few different ways:
  
 - Dataset owners can assign Build permission to specific users or security groups on the  **Manage permissions** page. For more information, see [Manage dataset access permissions](service-datasets-manage-access-permissions.md).
 
-- A user with an Admin or Member role in the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets. For more information, see [Create and manage audiences](../collaborate-share/service-create-distribute-apps.md#create-and-manage-audiences).
+- A user with an Admin or Member role in the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets. For more information, see [Create and manage multiple audiences](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences).
 
 - If you have Reshare and Build permission on a dataset, and you share a report or dashboard you built on that dataset, you can specify that the recipients also get Build permission for the dataset. For more information, see [Share Power BI reports and dashboards with coworkers and others](../collaborate-share/service-share-dashboards.md).
 
