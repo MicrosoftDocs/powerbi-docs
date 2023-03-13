@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/09/2023
+ms.date: 03/13/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
