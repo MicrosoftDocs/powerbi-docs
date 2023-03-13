@@ -1,17 +1,17 @@
 ---
 title: Datamart details page
-description: Learn about the information and actions available to you on the datamart details page. The details page helps you explore, monitor, and apply datamarts.
+description: Learn about the information and actions available to you on the datamart details page. The details page helps you explore, monitor, and use datamarts.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 02/15/2023
+ms.date: 03/13/2023
 LocalizationGroup: Share your work
 ---
 # Datamart details
 
-The datamart details page helps you explore, monitor, and apply datamarts. When you select a datamart in the [data hub](./service-data-hub.md), the details page for that datamart opens.
+The datamart details page helps you explore, monitor, and use datamarts. When you select a datamart in the data hub, the details page for that datamart opens.
 
 :::image type="content" source="media/service-datamart-details-page/datamart-details-page-inline-and-expanded.png" alt-text="Screenshot of datamart details page." lightbox="media/service-datamart-details-page/datamart-details-page-inline-and-expanded.png":::
 
@@ -23,7 +23,7 @@ The datamart details page:
 
 ## Supported actions
 
-The datamart details page enables you to perform several actions. The actions available vary from user to user depending on their permissions on the datamart. Not all actions are available for all users.
+The datamart details page enables you to perform actions on the datamart. The following table lists all supported actions. On the datamart details page you may see only a subset of this list, as only actions you have permission to perform are listed.
 
 | Action | Description | On Action bar, choose: |
 |--|--|
@@ -45,12 +45,12 @@ The datamart details page enables you to perform several actions. The actions av
 
 The datamart details section shows:
 
-* The name of the workspace where the item is located.
-* Endorsement status and certifier, if certified.
+* The location of the datamart.
+* Endorsement status (and certifier, if certified).
 * The exact time of the last refresh.
 * Sensitivity, if set.
 * T-SQL connection string.
-* Description, if any. You can create or edit the description from here.
+* Description, if any.
 
 ## Explore related reports
 
@@ -69,6 +69,8 @@ The columns in the list of related reports are:
 * **Refreshed**: Time of last refresh.
 * **Endorsement**: Endorsement status.
 * **Sensitivity**: Sensitivity.
+* **Unique viewers**: Shows the total number of unique users who viewed the item at least once in the last 30 days, excluding the current day's views.
+* **Views**: Shows the total number of times an item was viewed in the last 30 days, excluding the current day's views.
 
 ## Visualize this data
 
@@ -76,11 +78,13 @@ To create a report based on the dataset, select the **Create a report** button o
 
 :::image type="content" source="media/service-datamart-details-page/datamart-details-page-visualize-data.png" alt-text="Screenshot of datamart related section on datamart details page.":::
 
-The **Create from scratch** option opens the report editing canvas to a new report built on the dataset.
+* The **Create from scratch option** opens the report editing canvas to a new report built on the dataset.
 
-When you save your new report, it's saved in the workspace that contains the dataset, if you have write permissions on that workspace.
+  When you save your new report, it's saved in the workspace that contains the dataset, if you have write permissions on that workspace.
 
-If you don't have write permissions on the workspace, the report is saved in *My workspace*. If you're a free user and the dataset resides in a Premium-capacity workspace, the report is saved in *My workspace*.
+  If you don't have write permissions on the workspace, the report is saved in My workspace. If you're a free user and the dataset resides in a Premium-capacity workspace, the report is saved in My workspace.
+
+* The **Paginated report** option opens the paginated report online editor. For information about creating a paginated report using the online editor, see [Create exportable paginated reports in the Power BI service](../paginated-reports/web-authoring/paginated-formatted-table.md).
 
 ## Share this data
 
@@ -90,7 +94,6 @@ You can share the datamart with other users in your organization. Selecting the 
   
 ## Next steps
 
-* [Use datasets across workspaces](service-datasets-across-workspaces.md)
-* [Create reports based on datasets from different workspaces](service-datasets-discover-across-workspaces.md)
+* [Create exportable paginated reports in the Power BI service](../paginated-reports/web-authoring/paginated-formatted-table.md)
 * [Endorse your content](../collaborate-share/service-endorse-content.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
