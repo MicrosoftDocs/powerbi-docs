@@ -1,6 +1,6 @@
 ---
 title: The Analytics pane in Power BI visuals
-description: This article describes how to create dynamic reference lines in Power BI visuals.
+description: Learn how to manage the Analytics pane to create dynamic reference lines, like min, max, or average, in Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
@@ -8,17 +8,17 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/8/2022
+ms.date: 01/13/2023
 ---
 
 # The Analytics pane in Power BI visuals
 
-The [**Analytics** pane](../../transform-model/desktop-analytics-pane.md) allows you to add dynamic reference lines (min, max, average etc.) to your visuals. These lines can help you zoom in on important trends or insights. This article discusses how to create Power BI visuals that can present and manage dynamic reference lines in the **Analytics** pane.
+The [Analytics pane](../../transform-model/desktop-analytics-pane.md) allows you to add dynamic reference lines, like min, max, or average, to your visuals. These lines can help you zoom in on important trends or insights. This article discusses how to create Power BI visuals that can present and manage dynamic reference lines in the **Analytics** pane.
 
-:::image type="content" source="media/analytics-pane/visualization-pane-analytics-tab.png" alt-text="Screenshot of the analytics pane.":::
+:::image type="content" source="media/analytics-pane/visualization-pane-analytics-tab.png" alt-text="Screenshot of the Analytics pane in the Visualizations section.":::
 
 > [!NOTE]
-> The **Analytics** pane is available from API version 2.5.0. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
+> The **Analytics** pane is available in API version 2.5.0. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 ## Manage the Analytics pane
 
@@ -56,16 +56,16 @@ Example:
 
 ### [Older APIs (before 5.1)](#tab/Old-API)
 
-* Under the object's definition, add the `displayName` and an `objectCategory` field with a value of `2`.
+1. Under the object's definition, add the `displayName` and an `objectCategory` field with a value of `2`.
 
     >[!NOTE]
     >The `objectCategory` field defines the aspect of the visual that the object controls (1=Formatting, 2=Analytics). Use `Formatting` for elements such as look and feel, colors, axes, and labels. Use `Analytics` for elements such as forecasts, reference lines, and shapes.
     >
     > If the `objectCategory` value isn't specified, it defaults to `Formatting`.
 
-* Add the following two properties to the object:
-  * `show` of type `bool`, with a default value of `true`.
-  * `displayName` of type `text` with a default value of `true`.
+1. Add the following two properties to the object:
+   * `show` of type `bool` with a default value of `true`
+   * `displayName` of type `text` with a default value of `true`
 
 ```json
 {
@@ -179,7 +179,7 @@ Define other properties the same way that you do for **Format** objects, and enu
 
 ## Considerations and limitations
 
-* The **Analytics** pane has no multi-instance support yet. The only [selector](objects-properties.md#objects-selectors-types) an object can have is *static* (that is, `selector: null`), and Power BI visuals can't have user-defined multiple instances of a card.
+* The **Analytics** pane has no multi-instance support yet. The only [selector](objects-properties.md#objects-selectors-types) an object can have is *static* (that is, `selector: null`), and Power BI visuals can't have multiple instances of a user-defined card.
 * Properties of type `integer` aren't displayed correctly. As a workaround, use type `numeric` instead.
 
 ## Next Steps
