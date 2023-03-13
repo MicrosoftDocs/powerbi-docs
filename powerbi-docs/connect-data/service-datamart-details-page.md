@@ -78,7 +78,7 @@ To create a report based on the dataset, select the **Create a report** button o
 
 :::image type="content" source="media/service-datamart-details-page/datamart-details-page-visualize-data.png" alt-text="Screenshot of datamart related section on datamart details page.":::
 
-* The **Create from scratch option** opens the report editing canvas to a new report built on the dataset.
+* The **Create from scratch** option opens the report editing canvas to a new report built on the dataset.
 
   When you save your new report, it's saved in the workspace that contains the dataset, if you have write permissions on that workspace.
 
