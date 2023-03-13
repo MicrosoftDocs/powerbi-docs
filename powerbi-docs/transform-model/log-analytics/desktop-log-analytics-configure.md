@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 02/07/2023
+ms.date: 03/13/2023
 LocalizationGroup: Transform and shape data
 ---
 # Configure Azure Log Analytics for Power BI
