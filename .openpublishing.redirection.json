@@ -2392,7 +2392,7 @@
         {
             "source_path": "powerbi-docs/connect-data/desktop-connect-graph-security.md",
             "redirect_url": "/power-query/connectors/microsoft-graph-security",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/desktop-connect-impala.md",
