@@ -1,6 +1,6 @@
 ---
 title: Dataset discoverability
-description: Learn how to make endorsed, trusted datasets discoverable for users who don't have access to it.
+description: Learn how to make endorsed datasets discoverable for users who don't have access to them.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
@@ -11,13 +11,13 @@ LocalizationGroup: Share your work
 ---
 # Dataset discoverability
 
-*Discoverability* is a feature that makes it possible for users to find endorsed datasets that they don't have access to. Without discoverability, the value of [endorsement](service-endorsement-overview.md), that is, directing users to quality data, isn't fully realized.
+*Discoverability* is a feature that makes it possible for users to find endorsed datasets that they don't have access to. Without discoverability, the full value of [endorsement](service-endorsement-overview.md), that is, directing users to quality data, isn't fully realized.
 
 ## Discoverability overview
 
 *Endorsement* is a way of telling users that a dataset is a trusted, quality source of data that they can safely use. However, in Power BI, endorsed datasets, like all other datasets, are only visible to users who have access to them. This makes it difficult for people without access to find these trusted sources of data. Not only do they not have access to an endorsed dataset, they don't know it exists, so they can't even request access.
 
-To overcome this problem, authorized users who have an [Admin or Member role](service-roles-new-workspaces.md) in the workspace where an endorsed dataset resides can mark that dataset as discoverable. After the dataset has been marked as discoverable, it's listed in the [data hub](../connect-data/service-data-hub.md), even for users who don't have access to it. They can then request [build permission](../connect-data/service-datasets-build-permissions.md) on the dataset by whatever [access request mechanism](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) is provided.
+To overcome this problem, authorized users who have an [Admin or Member role](service-roles-new-workspaces.md) in the workspace where an endorsed dataset resides can mark that dataset as discoverable. After the dataset has been marked as discoverable, it will be listed in the [data hub](../connect-data/service-data-hub.md), even for users who don't have access to it. They can then request [build permission](../connect-data/service-datasets-build-permissions.md) on the dataset by whatever [access request mechanism](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) is provided.
 
 To be operable in an organization, dataset discovery must be set up by a Power BI administrator. See [How to set up dataset discoverability in an organization](#how-to-set-up-dataset-discovery-in-an-organization).
 
@@ -25,15 +25,13 @@ To be operable in an organization, dataset discovery must be set up by a Power B
 
 If you have an [Admin or Member role](service-roles-new-workspaces.md) in the workspace where an endorsed dataset resides, you can mark that dataset as discoverable.
 
-1. In the Power BI service, select the cog icon and then choose **Settings**.
+1. Go to dataset settings and open the **Endorsement and discovery** section.
 
-    :::image type="content" source="media/service-discovery/power-bi-settings.png" alt-text="Screenshot of the cog icon to access the settings dropdown menu.":::
+1. In the dialog, select the **Make discoverable** checkbox. The checkbox will only be active if the dataset is promoted or certified.
 
-1. Go to the **Datasets** tab and open the **Endorsement** section.
+    :::image type="content" source="media/service-discovery/dataset-make-discoverable-checkbox.png" alt-text="Screenshot of the Make discoverable checkbox under dataset settings.":::
 
-    :::image type="content" source="media/service-discovery/power-bi-datasets.png" alt-text="Screenshot of the endorsement section under Datasets.":::
-
-1. Make sure that the dataset has a useful description in the **Dataset description** section. This description is what users see in the datasets hub when they select the dataset's info icon, even if they don't yet have access to the dataset itself.
+When a dataset is marked as discoverable, users who don't yet have access to it can find it in the Datasets hub and request access to it.
 
 ## How to set up dataset discovery in an organization
 
