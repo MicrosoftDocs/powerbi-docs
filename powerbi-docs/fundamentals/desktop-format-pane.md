@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/09/2023
+ms.date: 03/13/2023
 LocalizationGroup: Get started
 ---
 # The updated Format and Visualizations panes in Power BI
@@ -20,15 +20,48 @@ This article also explains our work redistributing the [Visualizations pane func
 
 Thank you for providing feedback throughout the preview. We’re still interested in your comments. Submit feedback on the [Power BI Ideas](https://ideas.powerbi.com/ideas/) site.
 
+## March 2023: Visual container improvements
+
+With this release, we introduce four key features to help you customize visual containers.
+
+- [Subtitle](#subtitle)
+- [Divider](#divider)
+- [Spacer](#spacing)
+- [Padding](#padding)
+
+### Subtitle 
+
+You can turn on a subtitle to add extra context to your visuals. The new **Subtitle** toggle is in the **Title** settings card of the **Format** pane.
+
+:::image type="content" source="media/desktop-format-pane/format-pane-title-subtitle.png" alt-text="Screenshot showing title and subtitle in the Format pane.":::
+
+### Divider
+
+To visually separate the visual header from its contents, you can add a divider line. You can find the **Divider** option in the **Title** settings card of the **Format** pane, below the new **Subtitle**.
+
+Here’s the visual container with Subtitle and Divider:
+
+:::image type="content" source="media/desktop-format-pane/format-pane-divider.png" alt-text="Screenshot showing the divider in the Format pane.":::
+
+### Spacing
+
+In addition to the Subtitle and Divider on your visual container, you can control the space below each component. The **Spacing** setting at the bottom of the Title settings card of the **Format** pane.
+
+### Padding
+
+You can now control the container's margin to create a negative space making the visuals look more professional and appealing. The **Padding** option is in the **Format** pane **Visual** card > **Size and style**.
+
+:::image type="content" source="media/desktop-format-pane/format-pane-size-style-padding.png" alt-text="Screenshot showing setting padding in the Format pane.":::
+
 ## March 2023: Moving Visualizations pane functionality (preview)
 
 To see the Visualizations and other pane functionality changes, you need to turn on this month's preview features. See [Turn on preview features](../create-reports/power-bi-on-object-interaction.md#turn-on-preview-features) in the on-object interaction article for details.
 
-### Pane switcher 
+### Pane switcher
 
 We've removed the Visualizations pane in favor of [on-object menus](../create-reports/power-bi-on-object-interaction.md). In doing so, we introduced a *pane switcher* to align to the Microsoft Office pattern of *one pane at a time*, to give more real estate to the canvas.
 
-:::image type="content" source="media/desktop-format-pane/pane-switcher.png" alt-text="Screenshot showing the pane switcher.":::
+:::image type="content" source="media/desktop-format-pane/pane-switcher.png" alt-text="Screenshot showing the pane switcher in the Format pane.":::
 
 As you open panes, you see them added to the switcher on the right. If you accidentally close a pane, you can bring it back from the **View** tab in the ribbon.
 
