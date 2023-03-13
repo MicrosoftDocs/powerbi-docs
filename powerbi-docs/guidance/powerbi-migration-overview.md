@@ -1,8 +1,8 @@
 ---
 title: Power BI migration overview
 description: Learn how to plan and conduct a migration from another third-party BI tool to Power BI.
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
