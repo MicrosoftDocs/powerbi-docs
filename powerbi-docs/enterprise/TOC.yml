@@ -147,7 +147,7 @@
     - name: Data loss prevention
       expanded: false
       items:              
-      - name: DLP policies for Power BI overview
+      - name: Overview of DLP policies for Power BI
         href: service-security-dlp-policies-for-power-bi-overview.md
       - name: Configure a DLP policy for Power BI
         href: service-security-dlp-policies-for-power-bi-configure.md
