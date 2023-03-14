@@ -18,7 +18,7 @@ The data loss prevention side pane lists all the DLP policy issues detected by a
 
 Each DLP policy issue is shown on a card. The card shows the policy tip, indicates what kind of sensitive data was detected, and offers actions you can take if you believe the data was falsely identified.
 
-![Screenshot of D L P policies side pane](./media/service-security-dlp-policies-for-power-b-override/power-bi-dlp-override-pane.png)
+![Screenshot of D L P policies side pane](./media/service-security-dlp-policies-for-power-bi-respond/power-bi-dlp-override-pane.png)
 
 The action or combination of actions you see may vary depending on the policy configuration. The possible actions are described below.
 
@@ -34,7 +34,7 @@ The action or combination of actions you see may vary depending on the policy co
 ## Next steps
 
 * [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
-* [Data loss prevention policies for Power BI](./service-security-dlp-policies-for-power-bi.md)
+* [Data loss prevention policies for Power BI](./service-security-dlp-policies-for-power-bi-overview.md)
 * [Get started with Data loss prevention policies for Power BI](/microsoft-365/compliance/dlp-powerbi-get-started)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
 * [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)
