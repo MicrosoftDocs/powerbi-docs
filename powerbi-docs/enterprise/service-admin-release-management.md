@@ -1,14 +1,13 @@
 ---
-title: Power BI site reliability engineering (SRE) model
+title: Release management and deployment process
 description: Learn how Power BI approaches its site reliability model.
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 07/21/2021
-LocalizationGroup: Administration
+ms.date: 03/14/2023
 ---
 
 # Release management and deployment process
