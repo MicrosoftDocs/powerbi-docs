@@ -1,6 +1,6 @@
 ---
-title: Override data loss prevention policies (preview)
-description: Learn about what happens when you override a DLP policy for Power BI.
+title: Respond to a DLP policy violation
+description: Learn how to respond to a DLP policy violation in Power BI.
 author: paulinbar
 ms.author: painbar
 manager: kfollis
@@ -12,7 +12,7 @@ ms.date: 02/20/2023
 LocalizationGroup: Data from files
 ---
 
-# Overriding data loss prevention policies (preview)
+# Overriding data loss prevention policies
 
 The data loss prevention side pane lists all the DLP policy issues detected by a content scan of the dataset.
 

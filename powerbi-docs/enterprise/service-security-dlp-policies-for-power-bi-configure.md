@@ -1,6 +1,6 @@
 ---
-title: Data loss prevention policies for Power BI (preview)
-description: Learn how to configure data loss prevention policies for Power BI.
+title: Configure a DLP policy for Power BI
+description: Learn how to configure a data loss prevention policy for Power BI.
 author: paulinbar
 ms.author: painbar
 manager: kfollis
