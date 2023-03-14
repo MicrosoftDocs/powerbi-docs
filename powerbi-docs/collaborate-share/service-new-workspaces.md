@@ -90,7 +90,7 @@ Limitations to be aware of:
 - Workspaces can contain a maximum of 1,000 datasets, or 1,000 reports per dataset.
 - Power BI publisher for Excel isn't supported.
 - Certain special characters aren't supported in workspace names when using an XMLA endpoint. As a workaround, use URL encoding of special characters, for example, for a forward slash **/**, use **%2F**.
-- A user or a [service principal](../enterprise/service-premium-service-principal.md) can own up to 1,000 workspaces.
+- A user or a [service principal](../enterprise/service-premium-service-principal.md) can be a member of up to 1,000 workspaces.
 
 
 ## Next steps
