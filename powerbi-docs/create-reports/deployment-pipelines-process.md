@@ -121,7 +121,7 @@ Parameters can be used to control the connections between datasets or dataflows 
 
 ### Deployment method in case of failure
 
-When you select items for deployment, there's always a chance that deployment will fail for one or more of the items. In this case, you can decide if you want to continue deploying the rest of the items or stop the deployment.
+When you select items for deployment, there's always a chance that deployment will fail for one or more of the items. In that case, you can decide if you want to continue deploying the rest of the items or stop the deployment.
 
 :::image type="content" source="./media/deployment-pipelines-process/continue-deployment.png" alt-text="Screenshot of the deployment dialog that appears when you select deploy. It shows a checkbox asking if you want to continue deployment if an item fails to deploy.":::
 
