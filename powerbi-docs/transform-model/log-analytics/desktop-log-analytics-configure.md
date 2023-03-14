@@ -12,16 +12,16 @@ LocalizationGroup: Transform and shape data
 ---
 # Configure Azure Log Analytics for Power BI
 
-Power BI is integrating with Azure Log Analytics (LA) to enable administrators and Premium workspace owners to configure a Log Analytics connection to their Power BI subscription. This article describes how the integration between Log Analytics and Power BI works and how to configure it for your environment.
+Power BI is integrating with Azure Log Analytics to enable administrators and Premium workspace owners to configure a Log Analytics connection to their Power BI subscription. This article describes how the integration between Log Analytics and Power BI works and how to configure it for your environment.
 
 There are two elements to getting Azure Log Analytics working for Power BI:
 
-* Configuring your Azure subscription in the Azure portal.
-* Enabling Log analytics for Power BI in the Power BI Admin portal.
+* Configure your Azure subscription in the Azure portal.
+* Enable Log analytics for Power BI in the Power BI Admin portal.
 
 The following sections take you through the steps in to do both.
 
-:::image type="content" source="media/desktop-log-analytics-overview/log-analytics-17.png" alt-text="Screenshot of connecting Log Analytics to Power BI.":::
+:::image type="content" source="media/desktop-log-analytics-overview/log-analytics-17.png" alt-text="Screenshot of the Azure connections tab open in the settings pane.":::
 
 ## Pre-requisites
 
@@ -33,65 +33,65 @@ Before you can configure Log Analytics integration from Power BI, you need to [c
 
 The following section shows you how to meet these three requirements.
 
-### Enable the 'microsoft.insights' Resource Provider
+### Enable the 'microsoft.insights' resource provider
 
 Log Analytics requires the 'microsoft.insights' resource provider enabled at the Azure subscription level. The following steps take you through the process.
 
 1. Sign in to the Azure portal, select the subscription you want to use with Log Analytics and that contains your Log Analytics workspaces. In the **Settings** section, select **Resource providers** as shown in the following image.
 
-    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-08.png" alt-text="Screenshot of selecting Resource providers in the Azure portal.":::
+    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-08.png" alt-text="Screenshot of the settings menu options, resource providers is selected.":::
 
 2. Search for **microsoft.insights** under **Resource providers**. Then select **Register**.
 
-    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-09.png" alt-text="Screenshot of selecting registering microsoft.insights in the Azure portal.":::
+    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-09.png" alt-text="Screenshot of resource providers in the main pane with Microsoft.insights is registered.":::
 
-### Set Permissions
+### Set permissions
 
 1. Make sure the user configuring Log Analytics integration and the Power BI Service principal are in the **Owner** role of the Log Analytics workspace. When you select **Access control (IAM)** for the subscription in the Azure portal, and then select **Role assignments** from the top selections in the panel, the current user must see at least two entries: **Owner** for the user who configures Log Analytics (1, in the following image), and **Owner** for the Power BI service (2, in the following image).
 
-    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-10.png" alt-text="Screenshot of ensuring proper credentials in the Azure portal.":::
+    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-10.png" alt-text="Screenshot of the Access control pane with two owners highlighted.":::
 
 After you complete those steps, the Azure Log Analytics configuration portion is complete. The next section shows you how to continue and complete the configuration in the Power BI Admin portal.
 
-## Allow Workspace-level Logging from the Admin Portal
+## Allow Workspace-level logging from the Admin Portal
 
 A Power BI administrator must complete the following step to enable Azure Log Analytics for Power BI Premium workspaces. This setting allows Power BI Premium workspace administrators to send their workspace logs to Azure Log Analytics when the pre-requisites have been met.
 
-1. In the **Power BI Admin portal**, navigate to **Tenant Settings > Audit and usage settings**, and expand **Azure Log Analytics connections for workspace administrators**. To allow workspace admins to enable Log Analytics, switch the slider to **Enabled** and specify the needed security groups under **Apply to**, as shown in the following image.
+1. In the **Power BI Admin portal**, go to **Tenant Settings > Audit and usage settings**, and expand **Azure Log Analytics connections for workspace administrators**. To allow workspace admins to enable Log Analytics, set the slider to **Enabled** and specify the needed security groups under **Apply to**, as shown in the following image.
 
-    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-19.png" alt-text="Screenshot of allowing Log Analytics for Premium workspaces.":::
+    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-19.png" alt-text="Screenshot of tenant settings in the Admin portal. Azure log analytics connections for workspace administrators is expanded and enabled.":::
 
-## Configure Logging in a Premium Workspace
+## Configure logging in a Premium Workspace
 
-1. In the **Premium** workspace, workspace admins can enable Log Analytics. To do so, navigate to **Settings** as shown in the following image.
+1. In the **Premium** workspace, workspace admins can enable Log Analytics. To do so, go to **Settings** as shown in the following image.
 
-    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-15.png" alt-text="Screenshot of selecting Settings for a Premium workspace.":::
+    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-15.png" alt-text="Screenshot of the settings pane in a Premium workspace.":::
 
 2. In the **Settings** pane, select **Azure connections**, then expand **Log Analytics** as shown in the following image.
 
-    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-16.png" alt-text="Screenshot of expanding Azure connections (preview).":::
+    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-16.png" alt-text=Screenshot of the Azure connections tab open in the settings pane, Log Analytics is expanded.":::
 
 3. Select the Azure subscription, Resource group, and then the Log Analytics workspace configured in the previous section. Then choose **Save**. When successfully completed, the expanded **Tenant-level Log Analytics** section should look similar to the following image.
 
-    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-17.png" alt-text="Screenshot of settings configuration for log analytics when connecting to Azure.":::
+    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-17.png" alt-text="Screenshot of the Azure connections tab open in the settings pane showing sample information.":::
 
 ## Disconnect Azure Log Analytics
 
-You can disconnect from Azure Log Analytics to stop sending logs to Azure. To disconnect, in the **Power BI Workspace Settings**, navigate to the **Log Analytics** settings. Select **Disconnect from Azure**. Then choose **Save** to disconnect.
+You can disconnect from Azure Log Analytics to stop sending logs to Azure. To disconnect, in the **Power BI Workspace Settings**, go to the **Log Analytics** settings. Select **Disconnect from Azure**. Then choose **Save** to disconnect.
 
-:::image type="content" source="media/desktop-log-analytics-overview/log-analytics-18.png" alt-text="Screenshot of disconnect warning.":::
+:::image type="content" source="media/desktop-log-analytics-overview/log-analytics-18.png" alt-text="Screenshot of the disconnect warning on the settings pane.":::
 
 > [!NOTE]
-> When you disconnect a Power BI workspace from Azure Log Analytics, logs are not deleted. Your data remains in the Azure and follows the storage and retention policies you set there.
+> When you disconnect a Power BI workspace from Azure Log Analytics, logs are not deleted. Your data remains and follows the storage and retention policies you set there.
 
 ## Usage scenarios
 
-There are many ways that Azure Log Analytics and Power BI can help solve real-world challenges for your organization. Here are a few to consider:
+There are many ways that Azure Log Analytics and Power BI can help solve real-world challenges for your organization. Consider the following::
 
-* Identifying periods of high or unusual Analysis Services engine activity by capacity, workspace, report, or user.
-* Analyzing query performance and trends, including external DirectQuery operations.
-* Analyzing dataset refresh duration, overlaps, and processing steps.
-* Analyzing custom operations sent using the Premium XMLA endpoint.
+* Identify periods of high or unusual Analysis Services engine activity by capacity, workspace, report, or user.
+* Analyze query performance and trends, including external DirectQuery operations.
+* Analyze dataset refresh duration, overlaps, and processing steps.
+* Analyze custom operations sent using the Premium XMLA endpoint.
 
 Send us feedback in the Power BI Community for how you're using logging and how it has helped your organization.
 
@@ -101,10 +101,10 @@ The following table provides a collection of common errors, the events or config
 
 | **Trigger Condition** | **Type** | **Message** |
 | --- | --- | --- |
-| User doesn't have permission to write to the Log Analytics Workspace | Error - cannot proceed | You need write permissions on this Log Analytics workspace to connect it to Power BI. Contact the person in your organization who manages Azure subscriptions to fix this problem. |
-| User doesn't have permission to write to the Log Analytics workspace account | Error - cannot proceed | You need write permissions on this Log Analytics workspace to connect it to Power BI. |
-| Doesn't have access to any Azure subscriptions | Error - cannot proceed | You don't have access to any Azure subscriptions. Ask the person who manages Azure subscriptions in your organization to grant you contributor access or higher. |
-| Doesn't have access to any Azure Log Analytics workspaces within that subscription | Error - cannot proceed | You don't have access to an Azure Log Analytics workspace. Ask the person who manages Azure subscriptions in your organization to add you to the Log Analytics owner or contributor role. |
+| You don't have permission to write to the Log Analytics Workspace | Error - cannot proceed | You need write permissions on this Log Analytics workspace to connect it to Power BI. Contact the person in your organization who manages Azure subscriptions to fix this problem. |
+| You don't have permission to write to the Log Analytics workspace account | Error - cannot proceed | You need write permissions on this Log Analytics workspace to connect it to Power BI. |
+| You don't have access to any Azure subscriptions | Error - cannot proceed | You don't have access to any Azure subscriptions. Ask the person who manages Azure subscriptions in your organization to grant you contributor access or higher. |
+| You don't have access to any Azure Log Analytics workspaces within that subscription | Error - cannot proceed | You don't have access to an Azure Log Analytics workspace. Ask the person who manages Azure subscriptions in your organization to add you to the Log Analytics owner or contributor role. |
 | Workspace-level Log Analytics disabled when trying to connect | Information | Ask your tenant admin to grant workspace admins permission to connect Log Analytics workspaces. |
 | Workspace-level Log Analytics disabled when trying to disconnect | Information | Your tenant admin revoked permission for workspace admins to connect their own Azure Log Analytics workspaces. If you disconnect, you can't connect to another one. |
 
@@ -139,7 +139,7 @@ The following table describes the **schema**.
 | **DatasetMode** | | The mode of the dataset. Import, DirectQuery, or Composite. |
 | **DurationMs** | Duration_s | Amount of time (in milliseconds) taken by the operation. |
 | **EventText** | TextData_s | Contains verbose information associated with the operation, for example, DAX Query. |
-| **ExecutingUser** | EffectiveUsername_s | The user executing the operation. |
+| **ExecutingUser** | EffectiveUsername_s | The user running the operation. |
 | **Identity** | | Information about user and claims. |
 | **Level** | Severity_s | Contains the severity level of the operation being logged. Success, Informational, Warning, or Error. |
 | **OperationDetailName** | EventSubclass_s | More details about the operation. |
@@ -165,7 +165,7 @@ The following table describes the **schema**.
 
 ## Sample Log Analytics KQL queries
 
-The following collection of sample queries may be helpful when using Azure Log Analytics with Power BI. They can be executed directly in the Azure portal or through APIs to query the latest data, typically about 5-10 minutes old.
+The following collection of sample queries might be helpful when you use Azure Log Analytics with Power BI. They can be run directly in the Azure portal or through APIs to query the latest data, typically about 5-10 minutes old.
 
 ```sql
 // log count per day for last 30d
