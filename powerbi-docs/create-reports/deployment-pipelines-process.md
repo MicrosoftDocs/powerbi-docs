@@ -136,7 +136,7 @@ When you select items for deployment, there's always a chance that deployment wi
 :::image type="content" source="./media/deployment-pipelines-process/continue-deployment.png" alt-text="Screenshot of the deployment dialog that appears when you select deploy. It shows a checkbox asking if you want to continue deployment if an item fails to deploy.":::
 
 * If you check the box, the failed item and all its related items won't be deployed, but all items not related to the failed item will be deployed.
-* If you uncheck the box, deployment stops.
+* If you uncheck the box, deployment stops when an item fails to deploy and no subsequent items are deployed.
 
 ## Deployed items
 
