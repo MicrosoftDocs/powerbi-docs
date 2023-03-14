@@ -29,6 +29,6 @@ Most time-out errors occur during query processing. If you are encountering time
  
   
 ## Next steps 
- [Understand paginated report data in Power BI Report Builder](report-builder-data.md)   
- [Create an embedded dataset for a Power BI paginated report](paginated-reports-create-embedded-dataset.md)   
- [Paginated reports in Power BI: FAQ](paginated-reports-faq.md)   
+ [Understand paginated report data in Power BI Report Builder](/powerbi-docs/paginated-reports/report-builder-data)   
+ [Create an embedded dataset for a Power BI paginated report](/powerbi-docs/paginated-reports/paginated-reports-create-embedded-dataset)   
+ [Paginated reports in Power BI: FAQ](/powerbi-docs/paginated-reports/paginated-reports-faq)   
