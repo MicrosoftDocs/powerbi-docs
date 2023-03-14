@@ -119,7 +119,6 @@ Parameters can be used to control the connections between datasets or dataflows 
 >[!NOTE]
 >If you're using parameter rules to rebind items, the parameters must be of type `Text`.  
 
-
 ### Deployment method in case of failure
 
 When you select items for deployment, there's always a chance that deployment will fail for one or more of the items. In this case, you can decide if you want to continue deploying the rest of the items or stop the deployment.
