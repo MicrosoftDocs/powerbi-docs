@@ -1,6 +1,6 @@
 ---
-title: Install the Log Analytics for Power BI Datasets Template App (preview)
-description: Learn how to install the Template App that visualizes dataset activity from the Analysis Services.
+title: Install the Log Analytics for Power BI Datasets Template app (preview)
+description: Learn how to install the Template app that visualizes dataset activity from the Analysis Services.
 author: bstar92
 ms.author: kesharab
 ms.reviewer: bstar92
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 03/13/2023
 LocalizationGroup: Transform and shape data
 ---
-# Install the Log Analytics for Power BI Datasets Template App (preview)
+# Install the Log Analytics for Power BI Datasets Template app (preview)
 
 The Power BI Log Analytics for Analysis Services (AS) Engine app is designed to analyze AS Engine behavior in general and to help isolate and debug specific problems in depth. Use this guide to install the app. For information on how to use the app, see [Using the Log Analytics for Power BI Datasets Template App (preview)](desktop-loganalytics-reportguide-datasets.md).
 
 >[!NOTE]
->The app is updated regularly with new features and functionalities. If you see that there's a pending update in the notifications center, you should update the app to recieve to recieve new features and fixes.
+>The app is updated regularly with new features and functionalities. If you see that there's a pending update in the notifications center, you should update the app to recieve new features and fixes.
 >
 ## Prerequisites
 
@@ -64,12 +64,12 @@ To install the AS Engine app, follow these steps:
 
 ## Considerations and limitations
 
-1. The template app doesn't work when private links are enabled on the Log Analytics workspace.
-    * Power BI doesn't currently support refresh and ingestion of data in the template app when you enable private links for the Azure Log Analytics workspace and switch off the Network Isolation settings. To allow the template app to function, be sure that the settings shown in the following screenshot are switched **on**.
+1. The Template app doesn't work when private links are enabled on the Log Analytics workspace.
+    * Power BI doesn't currently support refresh and ingestion of data in the Template app when you enable private links for the Azure Log Analytics workspace and switch off the **Network Isolation** settings. To allow the Template app to function, be sure that the settings shown in the following screenshot are switched **on**.
 
         :::image type="content" source="media/install-as-engine-app/network-isolation-log-analytics.png" alt-text="Screenshot of the Network Isolation option.":::
 
-        :::image type="content" source="media/install-as-engine-app/virtual-network-access-configuration.png" alt-text="Screenshot of theVirtual Network Access Configuration toggles.":::
+        :::image type="content" source="media/install-as-engine-app/virtual-network-access-configuration.png" alt-text="Screenshot of the Virtual Network Access Configuration toggles.":::
 
 ## Next steps
 
