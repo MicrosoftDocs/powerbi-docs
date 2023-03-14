@@ -86,7 +86,7 @@ You can disconnect from Azure Log Analytics to stop sending logs to Azure. To di
 
 ## Usage scenarios
 
-There are many ways that Azure Log Analytics and Power BI can help solve real-world challenges for your organization. Consider the following::
+There are many ways that Azure Log Analytics and Power BI can help solve real-world challenges for your organization. Consider the following:
 
 * Identify periods of high or unusual Analysis Services engine activity by capacity, workspace, report, or user.
 * Analyze query performance and trends, including external DirectQuery operations.
