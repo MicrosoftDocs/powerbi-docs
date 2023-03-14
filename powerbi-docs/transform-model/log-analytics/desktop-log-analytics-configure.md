@@ -23,7 +23,7 @@ The following sections take you through the steps in to do both.
 
 :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-17.png" alt-text="Screenshot of the Azure connections tab open in the settings pane.":::
 
-## Pre-requisites
+## Prerequisites
 
 Before you can configure Log Analytics integration from Power BI, you need to [create a Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace) in the Azure portal. You must also give permission in Azure for the Power BI service to write logs. The exact requirements are:
 
@@ -55,7 +55,7 @@ After you complete those steps, the Azure Log Analytics configuration portion is
 
 ## Allow Workspace-level logging from the Admin Portal
 
-A Power BI administrator must complete the following step to enable Azure Log Analytics for Power BI Premium workspaces. This setting allows Power BI Premium workspace administrators to send their workspace logs to Azure Log Analytics when the pre-requisites have been met.
+A Power BI administrator must complete the following step to enable Azure Log Analytics for Power BI Premium workspaces. This setting allows Power BI Premium workspace administrators to send their workspace logs to Azure Log Analytics when the prerequisites have been met.
 
 1. In the **Power BI Admin portal**, go to **Tenant Settings > Audit and usage settings**, and expand **Azure Log Analytics connections for workspace administrators**. To allow workspace admins to enable Log Analytics, set the slider to **Enabled** and specify the needed security groups under **Apply to**, as shown in the following image.
 
