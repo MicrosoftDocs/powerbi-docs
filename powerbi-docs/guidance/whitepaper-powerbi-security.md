@@ -393,7 +393,7 @@ When DLP policies for Power BI are set up:
 * If you are a dataset owner, you can report an issue with a policy if you conclude that a sensitive info type has been falsely identified.
 * Automatic risk mitigations, such as alerts to the security admin, can be invoked.
 
-For more information, see [Data loss prevention policies for Power BI](../enterprise/service-security-dlp-policies-for-power-bi.md).
+For more information, see [Data loss prevention policies for Power BI](../enterprise/service-security-dlp-policies-for-power-bi-overview.md).
 
 ## Microsoft Defender for Cloud Apps for Power BI
 
