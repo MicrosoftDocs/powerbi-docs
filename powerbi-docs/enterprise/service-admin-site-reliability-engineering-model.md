@@ -60,6 +60,7 @@ Live site incidents can be divided into several categories:
 Reducing incident volume is one way to decrease live site burden and to improve customer satisfaction. However, doing so isn't always possible given that some of the incident categories are outside the team's direct control. Furthermore, as the service footprint expands to support rapid growth in usage, the probability of an incident occurring due to external factors increases. High incident counts can occur even in cases where the Power BI service has minimal service code regressions, and has met or exceeded its Service Level Objective (SLO) for overall reliability of 99.95%, which has led the Power BI team to devote significant resources to reducing incident costs to a level that is sustainable, by both financial and engineering measures.
 
 ## Live site incident process
+
 When investigating live site incidents, the Power BI team follows a standard operational process that's common across Microsoft and the industry. The following image summarizes the standard live site incident handling lifecycle.
 
 :::image type="content" source="media/service-admin-site-reliability-engineering-model/service-admin-site-reliability-engineering-model-04.png" alt-text="Visual showing the live site incident process handling lifecycle.":::
@@ -74,6 +75,7 @@ In the second phase, which is the **incident response** phase, processes are str
 In the final phase, which is the **continuous improvement** phase, the team focuses on completion of relevant post-mortem analysis and resolution of any identified process, monitoring, or configuration or code fixes. The fixes are then prioritized against the team's general engineering backlog based on overall severity and risk of reoccurrence.
 
 ## Our practices for service monitoring
+
 The Power BI team emphasizes a consistent, data-driven, and customer-centric approach to its live site operations. Defining Service Level Indicators (SLIs) and implementing corresponding live site monitoring alerts is part of the approval criteria for enabling any new Power BI feature in production. Product group engineers also include steps for investigation and mitigation of alerts when they occur using a template Troubleshooting Guide (TSG). Those deliverables are then presented to the Site Reliability Engineering (SRE) team.
 
 One way in which the Power BI team enables exponential service growth is by using a SRE team. These individuals are skilled with service architecture, automation and incident management practices, and are embedded within incidents to drive end-to-end resolution. The approach contrasts with the rotational model where engineering leaders from the product group take on an incident manager role for only a few weeks per year. The SRE team ensures that a consistent group of individuals are responsible for driving live site improvements and ensuring that learnings from previous incidents are incorporated into future escalations. The SRE team also assists with large-scale drills that test Business Continuity and Disaster Recovery (BCDR) capabilities of the service.
@@ -98,6 +100,7 @@ Live Site SREs also enforce alert quality in several ways, including the followi
 * Ensuring that alerts use reliability thresholds instead of absolute limits to scale clusters of different size
 
 ## Our practices for incident response
+
 When an automated live site incident is created for the Power BI service, one of the first priorities is to notify customers of potential impact. Azure has a target notification time of 15 minutes, which is difficult to achieve when notifications are manually posted by incident managers after joining a call. Communications in such cases are at risk of being late or inaccurate due to required manual analysis. Azure Monitoring offers centralized monitoring and alerting solutions that can detect impact to certain metrics within this time window. However, Power BI is a SaaS offering with complex scenarios and user interactions that cannot be easily modeled and tracked using such alerting systems. In response, the Power BI team developed a novel solution called **TTN0**.
 
 * **TTN0 (Time To Notify “0”)** is a *fully automated* incident notification service that uses our internal alerting infrastructure to identify specific scenarios and customers that are impacted by a newly created incident. It is also integrated with external monitoring agents outside of Azure to detect connectivity issues that might otherwise go unnoticed. TTN0 allows customers to receive an email when TTN0 detects a service disruption or degradation. With TTN0, the Power BI team can send reliable, targeted notifications within 10 minutes of impact start time (which is 33% faster than the Azure target). Since the solution is fully automated, there is minimal risk from human error or delays. As of May 2021, more than 8,000 companies have registered for TTN0 alerts.
@@ -112,6 +115,7 @@ Once the affected component/scenario of the service is determined, the Power BI 
 
 
 ## Our practices for continuous improvement
+
 The Power BI team reviews all customer-impacting incidents during a Weekly Service Review with representation from all engineering groups that contribute to the Power BI service. The review disseminates key learnings from the incident to leaders across the organization and provides an opportunity to adapt our processes to close gaps and address inefficiencies.
 
 Prior to review, the SRE team prepares post-mortem content and identifies preliminary repair items for the live site team and product development team. Items may include code fixes, augmented telemetry, or updated alerts/TSGs. Power BI SREs are familiar with many of these areas and often proactively make the adjustments in real time while responding to an active incident. Doing so helps to ensure that changes are incorporated into the system in time to detect reoccurrence of a similar issue. In cases where an incident was the result of a customer escalation, the SRE team adjusts existing automated alerting and SLIs to reflect customer expectations. For the ~0.3% of incidents that require escalation to a Subject Matter Expert (SME) of the impacted scenario/component, the Power BI SRE team will review ways in which the same incident (or similar incidents) could be handled without escalation in the future. The detailed analysis by the SRE team helps the product development team to design a more resilient, scalable, and supportable product.
@@ -119,6 +123,7 @@ Prior to review, the SRE team prepares post-mortem content and identifies prelim
 Beyond review of specific postmortems, the SRE team also generates reports on aggregate incident data to identify opportunities for service improvement such as future automation of incident mitigation or product fixes. The reporting combines data from multiple sources, including the customer support team, automated alerting, and service telemetry. The consolidated view provides visibility into those issues that are most negatively impacting service and team health, and the SRE team then prioritizes potential improvements based on overall ROI. For example, if a particular alert is firing too frequently or generating disproportionate impact on service reliability, the SRE team can partner with the product development team to invest in relevant quality improvements. Completing these work items drives improvement to service and live site metrics and directly contributes to organizational objective key results (OKRs). In cases where an SLI has been consistently met for a long period of time, the SRE team may suggest increases to the service SLO to provide an improved experience for our customers.
 
 ## Measuring success through objective key results (OKRs)
+
 The Power BI team has a comprehensive set of Objective Key Results (OKRs) that are used to ensure overall service health, customer satisfaction, and engineer happiness. OKRs can be divided into two categories:
 
 * **Service Health OKRs:** These OKRs directly or indirectly measure the health of scenarios or components in the service and often are tracked by monitoring/alerting. *Example: A single capacity owned by a customer is failing to load datasets for querying.*
@@ -132,40 +137,19 @@ The time required for the Power BI team to react to incidents as measured by TTN
 
 The above OKRs are actively tracked by the Power BI live site team, and the Senior Leadership Team, to ensure that the team continues to meet or exceed the baseline required to support substantial service growth, to maintain a sustainable live site workload, and to ensure high customer satisfaction.
 
-## Release management and deployment process
-
-Power BI releases weekly feature updates to the service and on-demand targeted fixes to address service quality issues. The approach is intended to balance speed and safety. Any code change in Power BI passes through various validation stages before being deployed broadly to external customers, as described in the following diagram. 
-
-:::image type="content" source="media/service-admin-site-reliability-engineering-model/service-admin-site-reliability-engineering-model-07.png" alt-text="Diagram showing release management and deployment process.":::
-
-Every change to the Power BI code base passes through automated component and end-to-end tests that validate common scenarios and ensure that interactions yield expected results. In addition, Power BI uses a Continuous Integration/Continuous Deployment **(CI/CD)** pipeline on main development branches to detect other issues that are cost-prohibitive to identify on a per-change basis. The CI/CD process triggers a full cluster build out and various synthetic tests that must pass before a change can enter the next stage in the release process. Approved CI/CD builds are deployed to internal test environments for more automated and manual validation before being included in each weekly feature update. The process means that a change will be incorporated into a candidate release within 1 to 7 days after it is completed by the developer.
-
-The weekly feature update then passes through various official deployment rings of Power BI’s safe deployment process. The updated product build is applied first to an internal cluster that hosts content for the Power BI team followed by the internal cluster that is used by all employees across Microsoft. The changes wait in each of these environments for one week prior to moving to the final step: production deployment. Here, the deployment team adopts a gradual rollout process that selectively applies the new build by region to allow for validation in certain regions prior to broad application.
-
-Scaling this deployment model to handle exponential service growth is accomplished in several ways, as the following bullets describe:
-
-* **Comprehensive Dependency Reviews:** Power BI is a complex service with many upstream dependencies and nontrivial hardware capacity requirements. The deployment team ensures the availability and necessary capacity of all dependent resources and services in a target deployment region. Usage models project capacity needs based on anticipated customer demands.
-
-* **Automation:** Power BI deployments are essentially *zero-touch* with little to no interaction required by the deployment team. Prebuilt rollout specifications exist for multiple deployment scenarios. Deployment configuration is validated at build-time to avoid unexpected errors during live deployment roll-outs.
-
-* **Cluster Health Checks:** Power BI deployment infrastructure checks internal service health models before, during, and after an upgrade to identify unexpected behavior and potential regressions. When possible, deployment tooling attempts auto-mitigation of encountered issues.
-
-* **Incident Response Process:** Deployment issues are handled like other live site incidents using techniques that are discussed in more detail in the following sections of this article. Engineers analyze issues with a focus on immediate mitigation and then follow up with relevant manual or automated process changes to prevent future reoccurrence.
-
-* **Feature Management/Exposure Control:** Power BI applies a comprehensive framework for selectively exposing new features to customers. Feature exposure is independent of deployment cadences and allows code for new scenario code to be deployed in a disabled state until it has passed all relevant quality bars. In addition, new features can be exposed to a subset of the overall Power BI population as an extra validation step prior to enabling globally. If an issue is detected, the Power BI feature management service provides the ability to disable an offending feature in seconds without waiting for more time-consuming deployment rollback operations.
-
-These features have enabled the Power BI team to improve the success rate of deployments by 18 points while absorbing a 400% year-over-year growth in monthly deployments.
-
 ## What's next
+
 Another high priority item on the SRE team roadmap is the reduction of system *noise* from false positive alerts or ignorable alerts. In addition, the team will inventory *transient* alerts, drive RCAs, and determine if there are underlying systemic issues that need to be addressed.
 
 Finally, a foundational element of Power BI service resiliency is ensuring that the service is compartmentalized such that incidents only impact a subset of the users. Doing so enables mitigation by redirecting impacted traffic to a healthy cluster. Supporting this holistically requires significant architectural work and design changes but should yield even higher SLOs than are attainable today.
 
 ## Next steps
 
-For more information related to this article, check out the following resources:
+> [!div class="nextstepaction"]
+> [Power BI adoption roadmap: Governance](../guidance/powerbi-adoption-roadmap-governance.md)
 
-* [Power BI adoption roadmap: Governance](../guidance/powerbi-adoption-roadmap-governance.md)
-* [White papers for Power BI](../guidance/whitepapers.md)
-* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-* Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+> [!div class="nextstepaction"]
+> [Release management and deployment process](service-admin-release-management.md)
+
+> [!div class="nextstepaction"]
+> [White papers for Power BI](../guidance/whitepapers.md)
