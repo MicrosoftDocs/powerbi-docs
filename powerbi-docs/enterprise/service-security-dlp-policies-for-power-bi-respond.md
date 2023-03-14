@@ -12,13 +12,17 @@ ms.date: 02/20/2023
 LocalizationGroup: Data from files
 ---
 
-# Overriding data loss prevention policies
+# Respond to a DLP policy violation
+
+## View a dataset's DLP violations
 
 The data loss prevention side pane lists all the DLP policy issues detected by a content scan of the dataset.
 
 Each DLP policy issue is shown on a card. The card shows the policy tip, indicates what kind of sensitive data was detected, and offers actions you can take if you believe the data was falsely identified.
 
 ![Screenshot of D L P policies side pane](./media/service-security-dlp-policies-for-power-b-respond/power-bi-dlp-override-pane.png)
+
+## Take action on the violation
 
 The action or combination of actions you see may vary depending on the policy configuration. The possible actions are described below.
 
