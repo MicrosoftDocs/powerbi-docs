@@ -69,7 +69,7 @@ A Power BI administrator must complete the following step to enable Azure Log An
 
 2. In the **Settings** pane, select **Azure connections**, then expand **Log Analytics** as shown in the following image.
 
-    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-16.png" alt-text=Screenshot of the Azure connections tab open in the settings pane, Log Analytics is expanded.":::
+    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-16.png" alt-text="Screenshot of the Azure connections tab open in the settings pane, Log Analytics is expanded.":::
 
 3. Select the Azure subscription, Resource group, and then the Log Analytics workspace configured in the previous section. Then choose **Save**. When successfully completed, the expanded **Tenant-level Log Analytics** section should look similar to the following image.
 
