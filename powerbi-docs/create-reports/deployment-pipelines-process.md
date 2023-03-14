@@ -119,6 +119,16 @@ Parameters can be used to control the connections between datasets or dataflows 
 >[!NOTE]
 >If you're using parameter rules to rebind items, the parameters must be of type `Text`.  
 
+
+### Deployment method in case of failure
+
+When you select items for deployment, there's always a chance that deployment will fail for one or more of the items. In this case, you can decide if you want to continue deploying the rest of the items or stop the deployment.
+
+:::image type="content" source="./media/deployment-pipelines-process/continue-deployment.png" alt-text="Screenshot of the deployment dialog that appears when you select deploy. It shows a checkbox asking if you want to continue deployment if an item fails to deploy.":::
+
+* If the box is checked, the failed item and all its downstream related items that haven't been deployed yet won't be deployed, but all items not related to the failed item will be deployed.
+* If the box is unchecked, deployment stops when an item fails to deploy and no subsequent items are deployed.
+
 ### Refreshing data
 
 Data in the target Power BI item, such as a dataset or dataflow, is kept when possible. If there are no changes to a Power BI item that holds the data, the data is kept as it was before the deployment.
@@ -128,15 +138,6 @@ In many cases, when you have a small change such as adding or removing a table, 
 ### Requirements for deploying to a stage with an existing workspace
 
 A user with a [Pro license](../enterprise/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../enterprise/service-premium-per-user-faq.yml) who's a member of both the target and source deployment workspaces, can deploy content that resides on a [Premium capacity](../enterprise/service-premium-what-is.md) to a stage with an existing workspace. For more information, review the [permissions](#permissions) section.
-
-## Partial deployment
-
-When you select items for deployment, there's always a chance that deployment will fail for one or more of the items. In this case, you can decide if you want to continue deploying the rest of the items or stop the deployment.
-
-:::image type="content" source="./media/deployment-pipelines-process/continue-deployment.png" alt-text="Screenshot of the deployment dialog that appears when you select deploy. It shows a checkbox asking if you want to continue deployment if an item fails to deploy.":::
-
-* If the box is checked, the failed item and all its related items won't be deployed, but all items not related to the failed item will be deployed.
-* If the box is unchecked, deployment stops when an item fails to deploy and no subsequent items are deployed.
 
 ## Deployed items
 
