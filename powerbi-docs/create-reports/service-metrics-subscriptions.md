@@ -19,41 +19,58 @@ Set up subscriptions to receive email notifications and stay up to date on the s
 
 ## Create a subscription
 
-1. To set up a subscription, open the scorecard you want to suscribe to, and select the **Subscribe** button in the ribbon.
+1. To set up a subscription, open the scorecard you want to subscribe to, and select **Subscribe to scorecard** in the ribbon.
 
- 
+    :::image type="content" source="media/service-metrics-subscriptions/scorecard-subscribe.png" alt-text="Screenshot showing Subscribe to scorecard.":::
 
-1. Select **Add a new subscription** in the pane that opens on the right.
+1. Select **Add new subscription** in the pane that opens on the right.
 
- 
+    :::image type="content" source="media/service-metrics-subscriptions/subsrcibe-emails-scorecard-pane.png" alt-text="Screenshot showing Add new subscription.":::
 
-1. Enter the details about the subscription, such as the name for the subscription, subject, and email message details. 
-1. Set the frequency for how often you want to receive the emails: hourly, daily, weekly, monthly, 
-1. Set a scheduled time for the subscription: 
+1. Enter the details about the subscription, such as the name for the subscription, subject, and email message details.
+
+1. Set the frequency for how often you want to receive the emails: hourly, daily, weekly, or monthly.
+
+1. Set a scheduled time for the subscription:
 
     - On the hour, or at 15, 30, or 45 minutes past.
     - AM or PM.
     - The time zone.
 
 1. Select a **Start date** and optionally, an **End date** for the subscription. 
-1. You can also include a link to the scorecard in the email, and give recipients permission to view the scorecard. 
-1. Select **Save and close**. 
+1. You can include a link to the scorecard in the email, and give recipients permission to view the scorecard.
+1. Select **Save and close**.
 
 After you save it, you can edit the subscription, turn it on or off, or delete the subscription.
 
-Graphical user interface, text, application, email
+Recipients receive an email from Power BI with a table containing the scorecard data such as metric name, status, values and due date. The table will show up to 50 metrics. 
 
-Description automatically generated 
+## Manage subscriptions
 
-Recipients will receive an email from Power BI with a table containing the scorecard data such as metric name, status, values and due date. The table will show up to 50 metrics. 
+You can see all the subscriptions for a scorecard.
 
-Graphical user interface, text, application, email
+1. In  a scorecard, select **Subscribe to scorecard** in the ribbon to open the Subscriptions pane, and select **Manage all subscriptions**.
 
-Description automatically generated 
+    Or in the Power BI service, select **Settings** > **Settings**.
 
-You can add up to 24 subscriptions per scorecard, with unique recipients, times, and frequencies for each subscription. You can see all the subscriptions by opening the Subscriptions pane from a scorecard in My workspace, and selecting Manage all subscriptions; or from under the Settings > Subscriptions tab in the upper right corner of the Power BI service. 
+    :::image type="content" source="media/service-metrics-subscriptions/power-bi-service-settings.png" alt-text="Screenshot showing Settings.":::
 
-Note that you can subscribe to scorecards if you have a Pro license or PPU license or if scorecard is in a workspace backed by Premium capacity. You can subscribe other team members if in addition to above, you are a Contributor, Member, or Admin role in that workspace. If the scorecard isn't hosted in a Premium capacity, others must also have a Pro license. You can add other email addresses in the same domain to the subscription. If the scorecard is hosted in a Premium capacity, you can subscribe group aliases, whether they're in your domain or not. You can subscribe external users if scorecard is hosted in a Premium capacity. 
+1. In **Settings**, select **Subscriptions**.
+
+    :::image type="content" source="media/service-metrics-subscriptions/manage-scorecard-subscriptions.png" alt-text="Screenshot showing Subscriptions":::
+
+## Considerations and limitations
+
+- You can add up to 24 subscriptions per scorecard, each with unique recipients, times, and frequencies.
+- You can subscribe to scorecards if you have a Pro license or PPU license, or if the scorecard is in a workspace backed by Premium capacity.
+- You can subscribe other team members if, in addition to the above, you have a Contributor, Member, or Admin role in that workspace. 
+- If the scorecard is hosted in a Premium capacity:
+
+  - You can subscribe group aliases, whether they're in your domain or not.
+  - You can subscribe external users.
+
+- If the scorecard isn't hosted in a Premium capacity, others must also have a Pro license. 
+- You can add other email addresses in the same domain to the subscription. 
 
 ## Next steps
 
