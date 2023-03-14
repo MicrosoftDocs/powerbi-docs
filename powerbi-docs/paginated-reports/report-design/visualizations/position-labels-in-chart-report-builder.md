@@ -3,7 +3,7 @@ title: "Position labels in Power BI paginated report chart | Microsoft Docs"
 description: Determine the type of chart you're using in your Power BI paginated report to find out how to change the position of labels in that type and shape of chart.
 ms.date: 02/24/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
@@ -87,11 +87,11 @@ ms.reviewer: monaraya
 6.  Select a value for the Position property.  
   
 ## Next steps  
- [Pie Charts &#40;Power BI Report Builder&#41;](pie-charts-report-builder.md)   
- [Bar Charts &#40;Power BI Report Builder&#41;](bar-charts-report-builder.md)   
+ [Pie Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pie-charts-report-builder-and-ssrs)   
+ [Bar Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/bar-charts-report-builder-and-ssrs)   
  [Formatting Axis Labels on a Chart &#40;Power BI Report Builder&#41;](formatting-axis-labels-on-chart-report-builder.md)   
- [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](format-axis-labels-as-dates-or-currencies-report-builder.md)   
+ [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/format-axis-labels-as-dates-or-currencies-report-builder-and-ssrs)   
  [Display Data Point Labels Outside a Pie Chart &#40;Power BI Report Builder&#41;](display-data-point-labels-outside-pie-chart-report-builder.md)   
- [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](formatting-data-points-on-chart-report-builder.md)  
+ [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)  
   
   

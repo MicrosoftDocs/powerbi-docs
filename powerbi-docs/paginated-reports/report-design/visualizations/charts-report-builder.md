@@ -3,7 +3,7 @@ title: "Charts in Power BI paginated report | Microsoft Docs"
 description: Use chart data regions to help readers of your Power BI paginated reports understand large volumes of aggregated data at a glance in Power BI Report Builder.
 ms.date: 02/21/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
@@ -13,7 +13,7 @@ ms.reviewer: monaraya
 
 Read about using chart data regions to help readers of your paginated reports understand large volumes of aggregated data at a glance.  
 
-The more time you spend carefully preparing and understanding your data before you create a chart, the easier it will be to design your charts quickly and efficiently. For help choosing which chart to use, see [Chart Types](chart-types-report-builder.md) To start experimenting with charts immediately, see the bar, column, sparkline, and pie chart tutorials in [Power BI Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials).  
+The more time you spend carefully preparing and understanding your data before you create a chart, the easier it will be to design your charts quickly and efficiently. For help choosing which chart to use, see [Chart Types](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs) To start experimenting with charts immediately, see the bar, column, sparkline, and pie chart tutorials in [Power BI Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials).  
   
  The following illustration shows many of the different elements used in the chart.  
   
@@ -68,11 +68,11 @@ The more time you spend carefully preparing and understanding your data before y
  Consider pre-aggregating data in the dataset query if detail data is not necessary or useful. To display each data point more clearly, reduce the number of categories in your dataset. You can filter the dataset or add a condition to your query that reduces the number of rows returned. 
   
 ##  <a name="BestPractices"></a> Best practices when displaying data in a chart  
- Charts are most effective when the number of elements that are displayed presents a clear image of the underlying information. Some charts, like scatter graphs, benefit from numerous data points, while others, like pie charts, are more effective with fewer data points. Choose a chart type carefully based on the values in your dataset and how you want this information to be shown. For more information, see [Chart Types &#40;Power BI Report Builder&#41;](chart-types-report-builder.md).  
+ Charts are most effective when the number of elements that are displayed presents a clear image of the underlying information. Some charts, like scatter graphs, benefit from numerous data points, while others, like pie charts, are more effective with fewer data points. Choose a chart type carefully based on the values in your dataset and how you want this information to be shown. For more information, see [Chart Types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs).  
   
  There are several ways you can consolidate data on a chart:  
   
--   When using a pie chart, collect small slices into one slice called "Other." This will reduce the number of slices on your pie chart. For more information, see [Collect Small Slices on a Pie Chart &#40;Power BI Report Builder&#41;](collect-small-slices-on-pie-chart-report-builder.md).  
+-   When using a pie chart, collect small slices into one slice called "Other." This will reduce the number of slices on your pie chart. For more information, see [Collect Small Slices on a Pie Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/collect-small-slices-on-a-pie-chart-report-builder-and-ssrs).  
   
 -   Avoid using data point labels when there are numerous data points. Data point labels are most effective when there are only a few points on the chart.  
   
@@ -91,19 +91,19 @@ The more time you spend carefully preparing and understanding your data before y
  [Add a Chart to a Report &#40;Power BI Report Builder&#41;](add-chart-to-report-report-builder.md)  
  Describes the first steps in adding a chart to your report.  
   
- [Chart Types &#40;Power BI Report Builder&#41;](chart-types-report-builder.md)  
+ [Chart Types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)  
  Describes all of the chart types and sub-types available in Report Builder, including considerations and best practices for using various chart types.  
   
- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)  
+ [Formatting a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)  
  Use formatting to improve the overall appearance and highlight key data points of your chart.  
   
  [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](empty-and-null-data-points-in-charts-report-builder.md)  
  Describes considerations when working with charts based on fields with empty or null values.  
   
- [Displaying a Series with Multiple Data Ranges on a Chart &#40;Power BI Report Builder&#41;](displaying-series-with-multiple-data-ranges-on-chart.md)  
+ [Displaying a Series with Multiple Data Ranges on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/displaying-a-series-with-multiple-data-ranges-on-chart)  
  Describes how to add scale breaks to a series that contains more than one range of data.  
   
- [Multiple Series on a Chart &#40;Power BI Report Builder&#41;](multiple-series-on-chart-report-builder-and-ssrs.md)  
+ [Multiple Series on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/multiple-series-on-a-chart-report-builder-and-ssrs)  
  Describes several methods of showing multiple series on the same chart, including combining chart types, using the secondary axis, specifying different chart types and using multiple chart areas.  
   
  [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/linking-multiple-data-regions-to-the-same-dataset-report-builder-and-ssrs)  
@@ -122,8 +122,8 @@ The more time you spend carefully preparing and understanding your data before y
  [Images, Text Boxes, Rectangles, and Lines &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/images-text-boxes-rectangles-and-lines-report-builder-and-ssrs)   
  [Interactive Sort, Document Maps, and Links &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/interactive-sort-document-maps-and-links-report-builder-and-ssrs)   
  [Nested Data Regions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs)   
- [Tutorial: Add a Column Chart to Your Report &#40;Power BI Report Builder&#41;](/paginated-reports/tutorials/tutorial-add-column-chart-to-your-report-report-builder)   
- [Tutorial: Add a Pie Chart to Your Report &#40;Power BI Report Builder&#41;](/paginated-reports/tutorials/tutorial-add-pie-chart-to-your-report-report-builder)   
- [Tutorial: Add a Bar Chart to Your Report &#40;Power BI Report Builder&#41;](/paginated-reports/tutorials/tutorial-add-bar-chart-to-your-report-report-builder)  
+ [Tutorial: Add a Column Chart to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-column-chart-to-your-report-report-builder)   
+ [Tutorial: Add a Pie Chart to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-pie-chart-to-your-report-report-builder)   
+ [Tutorial: Add a Bar Chart to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-bar-chart-to-your-report-report-builder)  
   
   

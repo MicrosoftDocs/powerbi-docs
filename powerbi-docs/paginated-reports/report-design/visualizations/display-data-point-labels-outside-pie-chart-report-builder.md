@@ -3,7 +3,7 @@ title: "Display data point labels outside a pie chart in a Power BI paginated re
 description: Discover how displaying the labels outside a pie chart in a Power BI paginated report might create more room for longer data labels in Power BI Report Builder.
 ms.date: 02/21/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
@@ -45,6 +45,6 @@ ms.reviewer: monaraya
 4.  If you want the chart to have more room for labels but still appear two-dimensional, set the **Rotation** and **Inclination** properties to **0**.  
   
 ## Next steps  
- [Pie Charts &#40;Power BI Report Builder&#41;](pie-charts-report-builder.md)   
- [Collect Small Slices on a Pie Chart &#40;Power BI Report Builder&#41;](collect-small-slices-on-pie-chart-report-builder.md)   
+ [Pie Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pie-charts-report-builder-and-ssrs)   
+ [Collect Small Slices on a Pie Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/collect-small-slices-on-a-pie-chart-report-builder-and-ssrs)   
  [Display Percentage Values on a Pie Chart &#40;Power BI Report Builder&#41;](display-percentage-values-on-pie-chart-report-builder.md)  

@@ -3,7 +3,7 @@ title: "Empty and null data points in Power BI paginated report charts | Microso
 description: Learn about Power BI paginated report chart processing for empty values, use of placeholders, and how empty and null data points display in Power BI Report Builder. 
 ms.date: 02/24/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
@@ -14,7 +14,7 @@ ms.reviewer: monaraya
 
   If you are displaying fields with empty or null values in a chart in your paginated report, the chart may not look as you expect. Charts process empty values differently depending on the specified chart type:  
   
--   If the chart type is a linear chart type (bar, column, scatter, line, area, range), empty values are displayed as empty spaces or "gaps" in the chart. If you want to indicate empty points, you must add empty point placeholders. For more information, see [Add Empty Points to a Chart &#40;Power BI Report Builder&#41;](add-empty-points-to-chart-report-builder.md).  
+-   If the chart type is a linear chart type (bar, column, scatter, line, area, range), empty values are displayed as empty spaces or "gaps" in the chart. If you want to indicate empty points, you must add empty point placeholders. For more information, see [Add Empty Points to a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-empty-points-to-a-chart-report-builder-and-ssrs).  
   
 -   If the chart type is a contiguous, linear chart type (area, bar, column, line, scatter), empty data points are added to the chart to maintain continuity in the series.  
   
@@ -35,6 +35,6 @@ ms.reviewer: monaraya
 ## Next steps
 
 [Charts](charts-report-builder.md)   
-[Formatting a Chart](formatting-chart-report-builder.md)   
+[Formatting a Chart](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
 [Add a Chart to a Report](add-chart-to-report-report-builder.md)   
 [Troubleshoot Charts](/sql/reporting-services/report-design/troubleshoot-charts-report-builder-and-ssrs)  

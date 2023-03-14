@@ -3,7 +3,7 @@ title: "Formatting axis labels on a Power BI paginated report chart | Microsoft 
 description: Learn how to format axis labels on a paginated report chart using a dialog box or by using the properties pane to categorize and display relationships in Power BI Report Builder.
 ms.date: 02/24/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 
 
 ms.topic: conceptual
@@ -27,7 +27,7 @@ ms.reviewer: monaraya
   
  When you drag a field from your dataset onto the chart surface, the chart will determine whether this field belongs on the category or value axis.  
   
- The value axis is usually the vertical axis, or y-axis, of the chart. It is used to display numeric data values that are being charted. A field that is dragged into the data fields region will be plotted on the value axis. The category axis is usually the horizontal axis, or x-axis, of the chart. For bar charts, these axes are reversed. In bar chart types, the category axis is the vertical axis and the value axis is the horizontal axis. For more information, see [Bar Charts &#40;Power BI Report Builder&#41;](bar-charts-report-builder-and-ssrs.md).  
+ The value axis is usually the vertical axis, or y-axis, of the chart. It is used to display numeric data values that are being charted. A field that is dragged into the data fields region will be plotted on the value axis. The category axis is usually the horizontal axis, or x-axis, of the chart. For bar charts, these axes are reversed. In bar chart types, the category axis is the vertical axis and the value axis is the horizontal axis. For more information, see [Bar Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/bar-charts-report-builder-and-ssrs).  
   
 ## How the chart calculates axis label intervals  
  Before you format axis labels, you should understand how the chart calculates axis label intervals. This will enable you to set the properties necessary to achieve the axis labeling behavior that you want.  
@@ -95,13 +95,13 @@ ms.reviewer: monaraya
   
  [Position Labels in a Chart &#40;Power BI Report Builder&#41;](position-labels-in-chart-report-builder.md)  
   
- [Specify an Axis Interval &#40;Power BI Report Builder&#41;](specify-an-axis-interval-report-builder.md)  
+ [Specify an Axis Interval &#40;Power BI Report Builder&#41;](specify-axis-interval-report-builder.md)  
   
  [Add or Remove Margins from a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-or-remove-margins-from-a-chart-report-builder-and-ssrs)  
   
- [Specify a Logarithmic Scale &#40;Power BI Report Builder&#41;](specify-logarithmic-scale-report-builder.md)  
+ [Specify a Logarithmic Scale &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-a-logarithmic-scale-report-builder-and-ssrs)  
   
 ## Next steps 
- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)
+ [Formatting a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)
  [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
- [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](formatting-data-points-on-chart-report-builder.md)  
+ [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)  
