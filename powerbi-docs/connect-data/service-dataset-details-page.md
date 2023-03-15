@@ -5,6 +5,7 @@ author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
+ms.search.form: Dataset details
 ms.topic: conceptual
 ms.date: 02/07/2023
 LocalizationGroup: Share your work
