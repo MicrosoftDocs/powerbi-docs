@@ -7,28 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 02/23/2023
+ms.date: 03/15/2023
 ---
 
 # Manage your published template app
 
-If you have a Power BI template app in production, you can start over in the test phase to make changes to the app without interfering with the app in production.
+If you have a Power BI template app in production, when you want to make changes to the app, you can start over in the test phase, without interfering with the app in production.
 
 ## Update your app
 
-1. Go to your template app workspace in the Power BI service.
+Go to the template app workspace. Then, if you made your changes in Power BI Desktop, start at Step 1. If you did not make any changes in Power BI Desktop, start at Step 2.
 
-1. If you made your changes in Power BI Desktop, upload the updated dataset to overwrite the existing dataset. If you didn't make any changes in Power BI Desktop, go on to the next step.
+1. Upload your updated dataset and **make sure to overwrite the existing dataset**.
 
+   - If the *.pbix* file you're uploading has the same name as the dataset and report used in the app, uploading will overwrite the existing dataset.
    
+   - If you're changing the name of the dataset and report used in the app, and the *.pbix* file you want to upload has a different name than the dataset and report used in the app, do the following:
 
-   - If the *.pbix* file you're uploading has the same name as the dataset and report the app uses, uploading overwrites the existing dataset.
-   - If you changed the name of the dataset and report the app uses, and the *.pbix* file you upload has a different name than the previous dataset and report, follow these steps:
-   
-     1. Rename the dataset and report in the app to match the name of the updated *.pbix* file exactly.
-     1. Upload the *.pbix* file to overwrite the existing dataset and report that you just renamed.
-   
-   In either case, to upload a local *.pbix* file to the service, select **Upload** > **Browse**, navigate to the file, and select **Open**. A dialog asks for your permission to overwrite the dataset the app uses. If you don't overwrite the existing dataset, customers can't install your updated app.
+     - Rename the dataset and report used in the app so that their names exactly match the name of your updated *.pbix* file.
+     - Upload your *.pbix* file and overwrite the existing dataset and report that you just renamed.
+
+     In either case, to upload a local *.pbix* file to the service, select **Upload** > **Browse**, navigate to the file, and select **Open**. A dialog will ask for your permission to overwrite the dataset the app uses. If you don't overwrite the existing dataset, customers won't be able to install your updated app.
 
    ![Screenshot that shows the dialog requesting permission to overwrite the dataset with the same name.](media/service-template-apps-update-extract-delete/overwrite-dialog.png)
    
@@ -36,7 +35,7 @@ If you have a Power BI template app in production, you can start over in the tes
    > Never delete the dataset the app uses. Deleting the dataset makes it impossible for customers to update their copies of the app.
 
 1. In the **Release management** pane for the app, select **Create app**.
-1. Repeat the [app creation process](service-template-apps-create.md). If you changed the name of the dataset and report that the app uses, you might want to also rename the app.
+1. Repeat the [app creation process](service-template-apps-create.md). If you changed the name of the dataset and report used in the app, you might want to rename the app as well.
 1. After you set **Branding**, **Navigation**, **Control**, **Parameters**, **Authentication**, and **Access**, select **Create app** again to save your changes, and then select **Close**.
 1. Select **Release management** again.
 
@@ -61,9 +60,9 @@ If you have a Power BI template app in production, you can start over in the tes
    
 ### Update behavior
 
-- Updating the app lets template app installers [update their template app](service-template-apps-install-distribute.md#update-a-template-app) in their already installed workspaces without losing the connection configuration.
+- Updating the app lets template app installers [update their template app](service-template-apps-install-distribute.md#update-a-template-app) in the already installed workspaces without losing the connection configuration.
 - To learn how changes in the dataset affect the installed template app, see [Overwrite behavior](service-template-apps-install-distribute.md#overwrite-behavior).
-- When a template app is overwritten and updates, it first reverts back to using sample data, and automatically reconnects by using the installer's configuration parameters and authentication. Until refresh is complete, the reports, dashboards, and organizational app display the sample data banner.
+- When a template app is overwritten and updates, it first reverts back to sample data, and automatically reconnects using the installer's configuration parameters and authentication. Until refresh is complete, the reports, dashboards, and organizational app display the sample data banner.
 - If you added a new query parameter to the updated dataset that requires user input, you must select the **Required** checkbox. This selection prompts the installer with the connection string after updating the app.
 
   ![Screenshot that shows Required under Parameters.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset-4.png)
@@ -84,7 +83,7 @@ Your new workspace versioning resets, and you can continue to develop and distri
 
 ## Delete template app version
 
-A template workspace is the source of an active distributed template app. To protect the template app users, you can't delete a workspace unless you first remove all the created app versions in the workspace. Deleting an app version also deletes the app URL, which no longer works.
+A template app workspace is the source of an active distributed template app. To protect the template app users, it's not possible to delate a template app workspace without first removing all the created app versions in the workspace. Deleting an app version also deletes the app URL, which no longer works.
 
 1. In the **Release Management** pane, next to the app version you want to delete, select **More options (...)** and then select **Delete**.
 
@@ -95,7 +94,7 @@ A template workspace is the source of an active distributed template app. To pro
    ![Screenshot that shows confirmation message to Delete this app.](media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png)
 
 >[!NOTE]
->Make sure not to delete app version that customers or AppSource are using, or they will no longer work.
+>Make sure not to delete app versions that customers or AppSource are using, or they will no longer work.
 
 ## Next steps
 
