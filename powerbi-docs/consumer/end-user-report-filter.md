@@ -7,6 +7,7 @@ ms.reviewer: mihart
 ms.custom:  
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: Use filters in a report
 ms.topic: how-to
 ms.date: 06/10/2021
 LocalizationGroup: Reports
