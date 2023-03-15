@@ -42,7 +42,7 @@ The other primary restrictions in visualizations when connecting to SAP BW using
 
 * **No aggregation of columns:** It's not possible to change the aggregation for a column on a visual. It's always *Do Not Summarize*
 * **Measure filtering is disabled:** Measure filtering is disabled to reflect the support offered by SAP BW.
-* **Multi-select and include/exclude:** The ability to multi-select data points on a visual is disabled if the points represent values from more than one column. For example, given a bar chart showing Sales by Country, with Category on the Legend, it wouldn't be possible to select the point for (USA, Bikes) and (France, Clothes). Similarly, it wouldn't be possible to select the point for (USA, Bikes) and exclude it from the visual. Both limitations are imposed to reflect the support offered by SAP BW.
+* **Multi-select and include/exclude:** The ability to multi-select data points on a visual is disabled if the points represent values from more than one column. For example, given a bar chart showing Sales by Country/Region, with Category on the Legend, it wouldn't be possible to select the point for (USA, Bikes) and (France, Clothes). Similarly, it wouldn't be possible to select the point for (USA, Bikes) and exclude it from the visual. Both limitations are imposed to reflect the support offered by SAP BW.
 
 ## Support for SAP BW features
 
