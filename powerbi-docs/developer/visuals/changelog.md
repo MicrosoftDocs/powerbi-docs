@@ -16,9 +16,9 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 ## API v5.3.0
 
-* SelectionId's update-fix for *matrix* `dataView`.
+* SelectionId's update-fix for [matrix](./dataview-mappings.md#matrix-data-mapping) `dataView`.
 Note: the selectionId's core data might change therefore a persisted selectionIds/identityIndex using an older API version might not be relevant in matrix visuals.
-* `downloadService`: Adds a new method `exportVisualsContentExtended` which returns expanded result information of the download.
+* [`downloadService`](./file-download-api.md): Adds a new method `exportVisualsContentExtended` which returns expanded result information of the download.
 * Supports Desktop March 2023
 
 ## API v5.2.0
