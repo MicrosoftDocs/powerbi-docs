@@ -62,6 +62,21 @@ The Learning center is a collection of Power BI embedded analytics resources. It
 
 :::image type="content" source="media/power-bi-playground/playground-learning-center.png" alt-text="A screenshot of the playground learning center.":::
 
+## Embedded Demo
+
+The Embedded Demo is a great way for developers to quickly and easily get an idea how Power BI Embedded would look and feel in their own apps without any need for prior setup or configuration. First, embed the demo code in your app, then select the best solution for your needs.
+
+* [Create demo code](#create-demo-code)
+* [Choose your solution](#choose-your-solution)
+
+### Create demo code
+
+Select one of your own reports or use the provided sample report. The demo will generate a code snippet that you can use to embed the report in your own app. You can either copy the code into an existing app, or paste it into a new, blank app if it's still early in the development stage. This demo gives you a hands-on look at the power of Power BI Embedded.
+
+### Choose your solution
+
+Once you're happy with the look and feel of the report in your app, visit the [Power BI Embedded Analytics Solutions page](embedded-analytics-power-bi.md#what-are-the-power-bi-embedded-analytics-solutions) to gain a deeper understanding of which solution is best for your needs. Choose between embedding Power BI for your organization or for your customers. After you decide, you can start developing your own engaging, powerful, and interactive Power BI Embedded reports and solutions.
+
 ## Next steps
 
 [Explore the embedded analytics playground](https://go.microsoft.com/fwlink/?linkid=848279)
