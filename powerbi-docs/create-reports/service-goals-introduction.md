@@ -7,6 +7,7 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
+ms.search.form: Get started with metrics
 ms.topic: how-to
 ms.date: 06/28/2022
 ms.custom: intro-get-started
