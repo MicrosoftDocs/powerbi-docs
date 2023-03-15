@@ -6,6 +6,7 @@ ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: Get started with reports
 ms.topic: how-to
 ms.date: 12/02/2022
 LocalizationGroup: Reports
