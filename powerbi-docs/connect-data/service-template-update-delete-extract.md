@@ -83,7 +83,7 @@ Your new workspace versioning resets, and you can continue to develop and distri
 
 ## Delete template app version
 
-A template app workspace is the source of an active distributed template app. To protect the template app users, it's not possible to delate a template app workspace without first removing all the created app versions in the workspace. Deleting an app version also deletes the app URL, which no longer works.
+A template app workspace is the source of an active distributed template app. To protect the template app users, it's not possible to delete a template app workspace without first removing all the created app versions in the workspace. Deleting an app version also deletes the app URL, which no longer works.
 
 1. In the **Release Management** pane, next to the app version you want to delete, select **More options (...)** and then select **Delete**.
 
