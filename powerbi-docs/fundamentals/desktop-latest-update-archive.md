@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 02/21/2023
+ms.date: 03/14/2023
 LocalizationGroup: Get started
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
@@ -608,20 +608,6 @@ The following video describes each of these updates. You can also watch this vid
 
 
 
-You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
-
-* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
-* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
-* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
-* We only archive the English versions of Power BI Desktop.
-
-Select the following links to download this earlier version: 
-
-* [July 2022 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2022-07.exe)
-* [July 2022 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2022-07_x64.exe)
-
-
-
 
 ## June 2022 Update (2.106.582.0)
 
@@ -705,28 +691,6 @@ The following video describes each of these updates. You can also watch this vid
 
 > [!NOTE]  
 > The video might use earlier versions of Power BI Desktop or the Power BI service.
-
-
-You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
-
-* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
-* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
-* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
-* We only archive the English versions of Power BI Desktop.
-
-Select the following links to download this earlier version: 
-
-* [June 2022 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2022-06.exe)
-* [June 2022 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2022-06_x64.exe)
-
-
-
-
-
-
-
-
-
 
 
 
