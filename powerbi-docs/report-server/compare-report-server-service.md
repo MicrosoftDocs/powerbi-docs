@@ -64,7 +64,7 @@ These considerations and limitations apply to Power BI Report Sever.
 
 The following Power BI service features are not supported within Power BI Report Server:
 
-- Recent improvements to the Export to Excel experience for Power BI table and matrix visuals. Including "Export data with current layout"
+- **Export data – Data with current layout** option for all visuals, including the improvements to the Export to Excel experience for Power BI table and matrix visuals. Only the **Summarized data** option is supported within Power BI Report Server.
 
 ## Next steps
 
