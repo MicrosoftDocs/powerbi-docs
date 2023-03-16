@@ -8,7 +8,7 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc, intro-overview
-ms.date: 03/08/2023
+ms.date: 03/16/2023
 #Customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
 ---
 
@@ -64,7 +64,7 @@ These considerations and limitations apply to Power BI Report Sever.
 
 The following Power BI service features are not supported within Power BI Report Server:
 
-- Export data with current layout
+- Recent improvements to the Export to Excel experience for Power BI table and matrix visuals. Including "Export data with current layout"
 
 ## Next steps
 
