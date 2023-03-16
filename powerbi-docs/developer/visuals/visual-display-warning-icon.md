@@ -54,8 +54,7 @@ In this example, the visual compares the language of the visual, which is set to
 ```javascript
 if (this.locale != 'en-US') { 
 
-            this.host.displayWarningIcon('Language mismatch', 'This visual does not support languages other than english. Please use US English as your browser language.'); 
-
+            this.host.displayWarningIcon('Language inconsistency', 'This visual supports only US English. For the visual to work as expected, set your browser\'s language to US English.'); 
         }
 ```
 
@@ -82,8 +81,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 
     if (color1 == color2) { 
 
-        this.host.displayWarningIcon('same colors', 'there are two neighbor columns with the same color. please use the data color property to change it.'); 
-
+        this.host.displayWarningIcon('Adjacent columns have the same color.', 'Columns that are next to each other have the same color. To change a column\'s color, ust the data colors option in the Format tab.'); 
     } 
 
 } 
