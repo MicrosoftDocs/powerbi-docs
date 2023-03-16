@@ -120,6 +120,8 @@
         href: power-bi-slicer-filter-responsive.md
       - name: "Add multiple fields to a slicer"
         href: power-bi-slicer-hierarchy-multiple-fields.md
+      - name: "Apply all slicers and Clear all slicers buttons"
+        href: buttons-apply-all-clear-all-slicers.md
       - name: "Create field parameters"
         href: power-bi-field-parameters.md
       - name: "Multi-select data elements, points, visuals"
@@ -434,6 +436,8 @@
       href: service-metrics-status-rules.md
     - name: "Stay on top of your metrics"
       href: service-goals-check-in.md        
+    - name: "Create email subscriptions for metrics"
+      href: service-metrics-subscriptions.md        
     - name: "Follow your metrics"
       href: service-metrics-follow.md        
     - name: "Set metric-level permissions"
