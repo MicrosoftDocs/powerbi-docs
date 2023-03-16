@@ -152,11 +152,13 @@ Here's how to configure the delegation settings:
 
    In our example, the SPN begins with *MSSQLSvc*. If you added both the FQDN and the NetBIOS SPN for your database service, select both. You might see only one.
 
+1. 
 1. 9. Select **OK**. 
 
        You should now see the SPN in the list of services to which the gateway service account can present delegated credentials.
 
-     ![Gateway Connector Properties dialog box](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
+1.   ![Gateway Connector Properties dialog box](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
+
 
 10. To continue the setup process, proceed to [Grant the gateway service account local policy rights on the gateway machine](#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 
@@ -175,21 +177,26 @@ In the following steps, we assume an on-premises environment with two machines i
 
 Complete the following configuration steps:
 
-1. 1. Use the **Active Directory Users and Computers** MMC snap-in on the domain controller for the **ContosoFrontEnd** domain and verify no delegation settings are applied for the gateway service account.
+1. 
+   1. 1. Use the **Active Directory Users and Computers** MMC snap-in on the domain controller for the **ContosoFrontEnd** domain and verify no delegation settings are applied for the gateway service account.
 
     ![Gateway connector properties](media/service-gateway-sso-kerberos/gatewaysvc-properties.png)
 
+1. 
 1. 2. Use **Active Directory Users and Computers** on the domain controller for the **ContosoBackEnd** domain and verify no delegation settings are applied for the back-end service account.
 
-    ![SQL service properties](media/service-gateway-sso-kerberos/sql-service-properties.png)
+1.  ![SQL service properties](media/service-gateway-sso-kerberos/sql-service-properties.png)
 
+
+1. 
 1. 3. In the **Attribute Editor** tab of the account properties, verify that the **msDS-AllowedToActOnBehalfOfOtherIdentity** attribute isn't set.
 
-    ![SQL service attributes](media/service-gateway-sso-kerberos/sql-service-attributes.png)
+1.  ![SQL service attributes](media/service-gateway-sso-kerberos/sql-service-attributes.png)
 
-1. In **Active Directory Users and Computers**, create a group on the domain controller for the **ContosoBackEnd** domain. Add the **GatewaySvc** gateway service account to the **ResourceDelGroup** group. 
+
+1. In **Active Directory Users and Computers**, create a group on the domain controller for the **ContosoBackEnd** domain. Add the **GatewaySvc** gateway service account to the **ResourceDelGroup** group.
    To add users from a trusted domain, this group must have a scope of Domain local.
-    ![Group properties](media/service-gateway-sso-kerberos-resource/group-properties.png)
+   ![Group properties](media/service-gateway-sso-kerberos-resource/group-properties.png)
 
 5. Open a command prompt and run the following commands in the domain controller for the **ContosoBackEnd** domain to update the **msDS-AllowedToActOnBehalfOfOtherIdentity** attribute of the back-end service account:
 
@@ -206,13 +213,17 @@ Finally, on the machine running the gateway service (**MyGatewayMachine** in our
 
 1. On the gateway machine, run **gpedit.msc**.
 
+1. 
 1. 2. Go to **Local Computer Policy** &gt; **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt; **User Rights Assignment**.
 
-    ![Local Computer Policy folder structure](media/service-gateway-sso-kerberos/user-rights-assignment.png)
+1.  ![Local Computer Policy folder structure](media/service-gateway-sso-kerberos/user-rights-assignment.png)
 
+
+1. 
 1. 3. Under **User Rights Assignment**, from the list of policies, select **Impersonate a client after authentication**.
 
-    ![Impersonate a client policy](media/service-gateway-sso-kerberos/impersonate-client.png)
+1.  ![Impersonate a client policy](media/service-gateway-sso-kerberos/impersonate-client.png)
+
 
 4. Right-click the policy, open **Properties**, and then view the list of accounts. 
 
@@ -269,13 +280,12 @@ Each Active Directory user mapped in this way needs to have SSO permissions for 
 
 1. From the **Services** tab of Task Manager, right-click the gateway service and select **Restart**.
 
-1.  ![Screenshot of Task Manager Services tab](media/service-gateway-sso-kerberos/restart-gateway.png)
-
+1. ![Screenshot of Task Manager Services tab](media/service-gateway-sso-kerberos/restart-gateway.png)
 
 1. For each Power BI service user you want to enable Kerberos SSO for, set the `msDS-cloudExtensionAttribute1` property of a local Active Directory user (with SSO permission to your data source) to the full username (UPN) of the Power BI service user. For example, if you sign in to Power BI service as test@contoso.com and you want to map this user to a local Active Directory user with SSO permissions, say, test@LOCALDOMAIN.COM, set this user's `msDS-cloudExtensionAttribute1` attribute to test@contoso.com.
 
     You can set the `msDS-cloudExtensionAttribute1` property with the Active Directory Users and Computers MMC snap-in:
- 
+
     1. As a domain administrator, launch **Active Directory Users and Computers**.
     
     1. Right-click the domain name, select **Find**, and then enter the account name of the local Active Directory user to map.
@@ -286,11 +296,12 @@ Each Active Directory user mapped in this way needs to have SSO permissions for 
     
     1. Select **OK**.
 
-    1-  ![String Attribute Editor window](media/service-gateway-sso-kerberos/edit-attribute.png)
+1.  1-  ![String Attribute Editor window](media/service-gateway-sso-kerberos/edit-attribute.png)
 
 
-    1. Select **Apply**. Verify that the correct value has been set in the **Value** column.
-
+```
+1. Select **Apply**. Verify that the correct value has been set in the **Value** column.
+```
 ### Complete data source-specific configuration steps
 
 For SAP HANA, SAP BW, and Teradata data sources, additional configuration is required to use with gateway SSO:
@@ -310,7 +321,11 @@ After you complete all the configuration steps, use the **Manage Gateway** page 
 
 
 
+
+
 :::image type="content" source="media/service-gateway-sso-kerberos/single-sign-on-settings.png" alt-text=" Screenshot of adding settings for single-sign on." :::
+
+
 
 
 
