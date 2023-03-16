@@ -13,13 +13,13 @@ ms.date: 03/16/2023
 
 # Add a display warning icon to your visual
 
-In a Power BI visual, a display warning icon can notify the user of a possible problem or an error. Display warning icons can be useful in many cases:
+In a Power BI visual, a display warning icon can notify the user of a possible problem or an error. Display warning icons can be useful in many cases, such as:
 
 * A map  visual can display a warning icon when values are outside the latitude or longitude valid range.
 
 * A pie chart visual can display a warning icon when it's displaying negative values that are mixed with positive ones.
 
-* A cartesian chart can display a warning icon when infinity values are calculated. For example, if **Y** is zero, when dividing **X** by **Y** the result is infinity.
+* A cartesian chart can display a warning icon when infinity values are calculated. For example, if **Y** is zero, when dividing **X** by **Y**, the result is infinity.
 
 When the icon appears, the user can hover over it to see the title of the warning message.
 
