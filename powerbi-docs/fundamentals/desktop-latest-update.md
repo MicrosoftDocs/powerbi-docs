@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 
 ## March 2023 Update (2.115.663.0)
 
-We feel lucky as a four-leaf clover to be sharing our March updates to Power BI with all of you. We hope you they're like a pot of gold at the end of a data-driven rainbow, full of compelling visuals and business intelligence capabilities. 
+We feel lucky as a four-leaf clover to be sharing our March updates to Power BI with all of you. We hope they're like a pot of gold at the end of a data-driven rainbow, full of compelling visuals and business intelligence capabilities. 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
