@@ -108,7 +108,10 @@ For more information on this setting, see [Maximum number of connections option 
 
 You can set the *maximum* number of concurrent jobs executed by the Power BI engine. This setting allows you to optimize Power BI performance after the Data Transformation step has been completed.
 
-The value for this setting, up to the maximum, is automatically determined by the Power BI engine. Changing the maximum can affect dataset refresh performance by increasing or decreasing the parallel loading of tables. Power BI Pro datasets will not benefit by changing this setting from default.
+The value for this setting, up to the maximum, is automatically determined by the Power BI engine. Changing the maximum can affect dataset refresh performance by increasing or decreasing the parallel loading of tables. 
+
+
+
 
 > [!NOTE]
 > This setting is impacted by the [maximum number of simultaneous evaluations settings](#maximum-number-of-simultaneous-evaluations). [Learn more about the interaction between these settings](#interaction-between-maximum-number-of-simultaneous-evaluations-and-maximum-number-of-concurrent-jobs). 
