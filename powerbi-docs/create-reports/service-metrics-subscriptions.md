@@ -25,7 +25,7 @@ Set up subscriptions to receive email notifications and stay up to date on the s
 
 1. Select **Add new subscription** in the pane that opens on the right.
 
-    :::image type="content" source="media/service-metrics-subscriptions/subsrcibe-emails-scorecard-pane.png" alt-text="Screenshot showing Add new subscription.":::
+    :::image type="content" source="media/service-metrics-subscriptions/subscribe-emails-scorecard-pane.png" alt-text="Screenshot showing Add new subscription.":::
 
 1. Enter the details about the subscription, such as the name for the subscription, subject, and email message details.
 
