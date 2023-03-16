@@ -178,7 +178,7 @@ Complete the following configuration steps:
 
     ![Gateway connector properties](media/service-gateway-sso-kerberos/gatewaysvc-properties.png)
 
-2. Use **Active Directory Users and Computers** on the domain controller for the **ContosoBackEnd** domain and verify no delegation settings are applied for the back-end service account.
+2. Use **Active Directory Users and Computers** on the domain controller for the **ContosoBackEnd** domain and verify no delegation settings are applied for the back-end service account. 
 
     ![SQL service properties](media/service-gateway-sso-kerberos/sql-service-properties.png)
 
@@ -213,7 +213,7 @@ Finally, on the machine running the gateway service (**MyGatewayMachine** in our
 3. Under **User Rights Assignment**, from the list of policies, select **Impersonate a client after authentication**.
 
     ![Impersonate a client policy](media/service-gateway-sso-kerberos/impersonate-client.png)
-
+    
 4. Right-click the policy, open **Properties**, and then view the list of accounts. 
 
     The list must include the gateway service account (**Contoso\GatewaySvc** or **ContosoFrontEnd\GatewaySvc** depending on the type of constrained delegation).
@@ -282,8 +282,6 @@ Each Active Directory user mapped in this way needs to have SSO permissions for 
     1. Select the **Attribute Editor** tab.
     
         Locate the `msDS-cloudExtensionAttribute1` property, and double-click it. Set the value to the full username (UPN) of the user you use to sign in to the Power BI service.
-    
-    1. Select **OK**.
 
     1. Select **OK**.
     
