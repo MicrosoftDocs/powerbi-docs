@@ -210,4 +210,3 @@ For more information about the on-premises data gateway and DirectQuery, see the
 - [Data sources supported by DirectQuery](power-bi-data-sources.md)
 - [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
 - [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
-
