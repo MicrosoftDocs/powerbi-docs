@@ -24,6 +24,8 @@
       href: service-admin-failover.yml
     - name: Migrate from Azure Analysis Services
       href: aas-pbi-migration-overview.md
+    - name: DirectLake
+      href: directlake-overview.md
   - name: Licensing
     expanded: false
     items:
