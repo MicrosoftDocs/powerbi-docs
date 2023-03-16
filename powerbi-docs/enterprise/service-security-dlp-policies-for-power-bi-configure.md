@@ -126,10 +126,26 @@ The user notifications section is where you configure your policy tip. Turn on t
  
 ## User overrides
  
-User overrides are currently unavailable for Power BI DLP policies.
+If you enabled user notifications and selected the **Notify users in Office 365 service with a policy tip** checkbox, dataset owners (users with an Admin or Member role in the workspace where the dataset is located) will be able to respond to violations on the **[Data loss prevention policies side pane](./service-security-dlp-policies-for-power-bi-respond.md)**, which they can display from a button on the policy tip. The options they have depend on your selections in the **User overrides** section.
 
-![Screenshot of D L P user overrides section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-user-overrides-section.png) 
- 
+:::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-user-overrides-section.png" alt-text="Screenshot of D L P user overrides section.":::
+
+The options are described below.
+
+* **Allow overrides from M365 services. Allows users in Power BI, Exchange, SharePoint, OneDrive, and Teams to override policy restrictions** (automatically selected when you've enabled user notifications and selected the **Notify users in Office 365 service with a policy tip** checkbox): Users will be able to either report the issue as a false positive or override the policy.
+
+* **Require a business justification to override**: Users will be able to either report the issue as a false positive or override the policy. If they choose to override, they will need to provide a business justification.
+
+* **Override the rule automatically if they report it as a false positive**: Users will be able to report the issue as a false positive and automatically override the policy, or they can just override the policy without reporting it as a false positive.
+
+* If you select both **Override the rule automatically if they report it as a false positive** and **Require a business justification to override**, users will be able to report the issue as a false positive and automatically override the policy, or they can just override the policy without reporting it as a false positive, but they'll have to provide a business justification.
+
+Overriding a policy means that from now on the policy will no longer check the dataset for sensitive data.
+
+Reporting an issue as a false positive means that the data owner believes that the policy has mistakenly identified non-sensitive data as sensitive. You can use false positives to fine tune your rules.
+
+Any action the user takes is logged for reporting.
+
 ## Incident reports
 
 Assign a severity level that will be shown in alerts generated from this policy. Enable (default) or disable email notification to admins, specify users or groups for email notification, and configure the details about when notification will occur.

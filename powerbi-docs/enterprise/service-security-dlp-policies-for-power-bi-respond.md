@@ -14,6 +14,8 @@ LocalizationGroup: Data from files
 
 # Respond to a DLP policy violation
 
+When a dataset you own violates a DLP policy, you may see a violation warning icon on the dataset in the data hub or workspace list view. If you go to the dataset details page, a DLP policy tip in a banner informs you about the violation and provides a **View** button that opens a side pain where you can view the details about your datasets DLP policy violations and respond to them. This article describes the information you see on the side pane and the actions you can take regarding the violations.
+
 ## View a dataset's DLP violations
 
 The data loss prevention side pane lists all the DLP policy issues detected by a content scan of the dataset.
