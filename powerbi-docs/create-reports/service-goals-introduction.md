@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/28/2022
+ms.date: 03/13/2023
 ms.custom: intro-get-started
 ---
 # Get started with metrics in Power BI
@@ -24,8 +24,9 @@ Metrics in Power BI let customers curate their metrics and track them against ke
 This article covers the basics of using metrics in the Power BI service. See the other articles about metrics for more detail:
 
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)
-- [Create connected metrics in Power BI](service-goals-create-connected.md)
-- [Stay on top of your metrics in the Power BI service](service-goals-check-in.md)
+- [Create metrics that are connected to an existing report visual](service-goals-create-connected.md)
+- [Get started with hierarchies in Power BI scorecards](service-metrics-get-started-hierarchies.md)
+- [Stay on top of your metrics](service-goals-check-in.md)
 - [Follow your metrics](service-metrics-follow.md)
 - [Keep on top of your metrics on the go in the Power BI mobile apps, too](../consumer/mobile/mobile-apps-metrics.md)
 - [Protect your scorecards with goal-level permissions](service-goals-set-permissions.md)
