@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: overview
-ms.date: 11/29/2022
+ms.date: 03/09/2023
 LocalizationGroup: Create reports
 ---
 # Optimize ribbon in Power BI Desktop (Preview)
@@ -29,7 +29,7 @@ You can also create a report from an already published dataset or model from Pow
 
 The ribbon includes features that can be used for any report authoring scenario, however, DirectQuery reports in particular will find them most useful as queries are sent to the data source with most visual changes. DirectQuery report visuals that send queries to the data source can be identified in [Performance analyzer](#performance-analyzer).
 
-The following sections describe features the Optimize ribbon provides. After reading this article, be sure to checkout [DirectQuery optimization scenarios with the Optimize ribbon](desktop-optimize-ribbon-scenarios.md) to learn about how features in the Optimize ribbon and other performance improvements, such as being able to edit relationships in the Properties pane without running queries can streamline your DirectQuery report authoring.
+The following sections describe features the Optimize ribbon provides. After reading this article, be sure to check out [DirectQuery optimization scenarios with the Optimize ribbon](desktop-optimize-ribbon-scenarios.md) to learn about how features in the Optimize ribbon and other performance improvements, such as being able to edit relationships in the Properties pane without running queries can streamline your DirectQuery report authoring.
 
 ## Pause visuals
 
@@ -49,7 +49,7 @@ When done making changes to visuals, you can:
 * Select **Refresh visuals** in the Optimize ribbon, or **Refresh** in the report banner to refresh all visuals on the report and keep the report paused.
 * Select **Resume visual queries** in the report banner, or **Paused visuals** in the Optimize ribbon to refresh all visuals on the report and unpause the report.
 
-    :::image type="content" source="media/desktop-optimize-ribbon/desktop-optimize-ribbon-02.png" alt-text="Screen shot of optimize and pause visuals from ribbon.":::
+    :::image type="content" source="media/desktop-optimize-ribbon/desktop-optimize-pause.png" alt-text="Screen shot of optimize and pause visuals from ribbon.":::
 
 When working with visuals in a pending state:
 
@@ -75,21 +75,25 @@ With **Optimization presets**, you can quickly choose and apply predefined combi
 
 Optimization presets include:
 
-**Query reduction** - Turns off cross-highlighting and cross-filtering and adds an Apply button to slicers. This setting is best for DirectQuery connections. The predefined combination of settings for query reduction follows the recommended best practices outlined in the [report design guidance page for using DirectQuery](../connect-data/desktop-directquery-about.md#report-design-guidance). To learn about a scenario where applying query reduction settings effect report authoring, see [DirectQuery optimization scenarios - Apply query reduction settings](desktop-optimize-ribbon-scenarios.md#apply-query-reduction-settings).
+**Query reduction** - Turns off cross-highlighting and cross-filtering and adds an Apply button to the filter pane. This setting is best for DirectQuery connections. The predefined combination of settings for query reduction follows the recommended best practices outlined in the [report design guidance page for using DirectQuery](../connect-data/desktop-directquery-about.md#report-design-guidance). To learn about a scenario where applying query reduction settings affect report authoring, see [DirectQuery optimization scenarios - Apply query reduction settings](desktop-optimize-ribbon-scenarios.md#apply-query-reduction-settings).
 
 **Interactivity** - Allows cross-highlighting, cross-filtering, and real-time changes to slicers and filters, which is best for import mode. This is the default setting for Power BI Desktop.
 
-**Customize** - Opens the Query reduction settings of the Power BI Desktop Options dialog. You can choose which query reduction features you want to use. To learn more about how applying query reduction settings effect a report authoring scenario, see [DirectQuery optimization scenarios - Change query reduction settings](desktop-optimize-ribbon-scenarios.md#change-query-reduction-settings).
+**Customize** - Opens the Query reduction settings of the Power BI Desktop Options dialog. You can choose which query reduction features you want to use. To learn more about how applying query reduction settings affect a report authoring scenario, see [DirectQuery optimization scenarios - Change query reduction settings](desktop-optimize-ribbon-scenarios.md#change-query-reduction-settings).
 
 :::image type="content" source="media/desktop-optimize-ribbon/desktop-query-reduction-settings.png" alt-text="Query reduction settings dialog":::
 
 ## Performance analyzer
 
-The Optimize ribbon includes the same **Performance analyzer** button as shown in the View ribbon. When using Performance analyzer, you can see and record logs that measure how each of your report elements perform during interaction, and which aspects of their performance are most (or least) resource intensive. Using Performance analyzer can also help you determine if a particular visual is using DirectQuery. DirectQuery visuals have a **Direct query** row.
+The Optimize ribbon includes the same **Performance analyzer** button as shown in the View ribbon. When using Performance analyzer, you can see and record logs that measure how each of your report elements performs during interaction, and which aspects of their performance are most (or least) resource intensive. Using Performance analyzer can also help you determine if a particular visual is using DirectQuery. DirectQuery visuals have a **Direct query** row.
 
 :::image type="content" source="media/desktop-optimize-ribbon/desktop-optimization-performance-analyzer.png" alt-text="Performance analyzer dialog":::
 
 To learn more, see [Use Performance analyzer to examine report element performance](desktop-performance-analyzer.md).
+
+## Apply all slicers button
+
+Quickly add in a button to your report page that will allow multiple selections across all your slicers to be made before you hit apply.
 
 ## Video
 
