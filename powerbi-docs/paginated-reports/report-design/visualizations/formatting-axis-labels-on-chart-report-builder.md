@@ -23,7 +23,7 @@ ms.reviewer: monaraya
 ## Types of axes  
  The chart has two primary axes: the value axis and the category axis.  
   
- ![Screenshot showing Chart categorical and value axes](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/axes-categorical-vs-value.gif "Chart categorical and value axes")  
+ ![Screenshot showing Chart categorical and value axes.](media/paginated-reports-visualizations/axes-categorical-vs-value.gif "Chart categorical and value axes")  
   
  When you drag a field from your dataset onto the chart surface, the chart will determine whether this field belongs on the category or value axis.  
   
