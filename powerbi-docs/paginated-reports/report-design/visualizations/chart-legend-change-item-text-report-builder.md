@@ -1,7 +1,7 @@
 ---
 title: "Change the text of a legend item in Power BI paginated report | Microsoft Docs"
 description: Find out how to change the text of a legend item in Power BI paginated report to show more information about the individual data points in Power BI Report Builder.
-ms.date: 02/24/2023
+ms.date: 03/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.reviewer: monaraya
   
  On shape charts, you can change the text of a legend item to show more information about the individual data points. For example, if you want to show the values of the data points as percentages in the legend, you can use a keyword such as **#PERCENT**. You can append .NET Framework format codes in conjunction with keywords to apply numeric and date formats. For more information about keywords, see [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs).  
   
- ![Screenshot showing Sharp Chart](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/sharpchart.png "Sharp Chart")  
+ ![Screenshot showing Sharp Chart.](media/paginated-reports-visualizations/sharpchart.png "Sharp Chart")  
   
  On non-shape charts, you can change the text of a legend item. For example, if your series name is "Series1", you may want to change the text to something more descriptive like "Sales for 2008".  
   
