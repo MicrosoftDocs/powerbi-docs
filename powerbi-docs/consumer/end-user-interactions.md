@@ -6,6 +6,7 @@ ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: Cross-filtering in a report
 ms.topic: how-to
 ms.date: 01/04/2023
 LocalizationGroup: Reports

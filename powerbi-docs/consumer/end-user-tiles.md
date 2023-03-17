@@ -6,6 +6,7 @@ ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: Dashboard tiles in Power BI
 ms.topic: how-to
 ms.date: 02/14/2023
 LocalizationGroup: Dashboards
