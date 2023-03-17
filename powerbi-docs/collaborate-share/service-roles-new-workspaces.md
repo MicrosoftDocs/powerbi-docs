@@ -6,6 +6,7 @@ ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
+ms.search.form: Roles in workspaces
 ms.topic: conceptual
 ms.date: 02/28/2023
 ms.custom: contperf-fy20q4
