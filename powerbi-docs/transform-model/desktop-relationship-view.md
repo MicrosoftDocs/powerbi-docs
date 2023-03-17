@@ -43,5 +43,5 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Connect to Excel in Power BI Desktop](../connect-data/desktop-connect-excel.md)
+* [Connect to Excel in Power BI Desktop](/power-query/connectors/excel)
 * [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)
