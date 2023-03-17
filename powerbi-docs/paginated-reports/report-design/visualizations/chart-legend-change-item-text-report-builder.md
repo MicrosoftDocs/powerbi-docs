@@ -27,7 +27,7 @@ When you place a field in the Values area of the Power BI paginated report chart
   
 2.  Click **Legend** and in the **Custom legend text** box, type a keyword.  
   
- The following table provides examples of chart-specific keywords to use for the **Custom Legend Text** property. For more information about keywords, see [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-data-points-on-chart-report-builder-and-ssrs).  
+ The following table provides examples of chart-specific keywords to use for the **Custom Legend Text** property. For more information about keywords, see [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs).  
   
 |Keyword|Description|Example of what appears as text in the legend|  
 |-------------|-----------------|---------------------------------------------------|  
