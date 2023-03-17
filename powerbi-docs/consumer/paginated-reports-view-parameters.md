@@ -6,6 +6,7 @@ ms.author: maggies
 ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: View parameters for paginated reports
 ms.topic: how-to
 ms.date: 02/16/2023
 ---

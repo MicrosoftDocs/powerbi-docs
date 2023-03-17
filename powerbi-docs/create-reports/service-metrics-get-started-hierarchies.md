@@ -7,6 +7,7 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
+ms.search.form: Get started with hierarchies in scorecards
 ms.topic: how-to
 ms.date: 03/14/2023
 ms.custom: intro-get-started
