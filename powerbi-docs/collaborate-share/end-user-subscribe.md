@@ -284,7 +284,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 **Row-level security (RLS)**
 - For Power BI reports, dashboards, or paginated reports that use a dataset with row-level security (RLS), use caution when creating subscriptions for yourself and others. Power BI will warn you that the data contains RLS, but customers often scroll past the warning message. 
 
-  The static image sent in the subscription email will display data ***based on your permissions***. For this reason, when creating subscriptions, be careful to ensure that confidential information isn't included in the static image. Other than that static image, the report or dashboard itself will open (or not) and display data based on the user's permissions.  
+  The static image sent in the subscription email will display data ***based on the owner of the subscription***. For this reason, when creating subscriptions, be careful to ensure that confidential information isn't included in the static image. Other than that static image, the report or dashboard itself will open (or not) and display data based on the user's permissions.  
 
 **Power BI reports**  
 

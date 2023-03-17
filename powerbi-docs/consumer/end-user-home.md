@@ -6,6 +6,7 @@ ms.author: mihart
 ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: Find your content
 ms.topic: conceptual
 ms.date: 12/02/2022
 LocalizationGroup: Get started
