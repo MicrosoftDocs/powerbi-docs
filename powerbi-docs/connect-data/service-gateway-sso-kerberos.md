@@ -101,6 +101,14 @@ To create the SPN for this SID against the Power BI Gateway computer, you would 
 
 You can configure delegation settings for either standard Kerberos constrained delegation or resource-based Kerberos constrained delegation. For more information on the differences between the two approaches to delegation, see [Kerberos constrained delegation overview](/windows-server/security/kerberos/kerberos-constrained-delegation-overview).
 
+The following service accounts are required:
+
+- Gateway service account: Service user representing the gateway in Active Directory, with an SPN configured in Step 3.
+- Data Source service account: Service user representing the data source in Active Directory, with an SPN mapped to the data source.
+   
+> [!NOTE]
+> The gateway and data source service accounts must be separate. The same service account cannot be used to represent both the gateway and data source.
+
 Depending on which approach you want to use, proceed to one of the following sections. Don't complete both sections:
 * [Option A: Standard Kerberos constrained delegation](#option-a-standard-kerberos-constrained-delegation). This is the default recommendation for most environments.
 * [Option B: Resource-based Kerberos constrained delegation](#option-b-resource-based-kerberos-constrained-delegation). This is required if your data source belongs to a different domain than your gateway.
@@ -170,7 +178,7 @@ Complete the following configuration steps:
 
     ![Gateway connector properties](media/service-gateway-sso-kerberos/gatewaysvc-properties.png)
 
-2. Use **Active Directory Users and Computers** on the domain controller for the **ContosoBackEnd** domain and verify no delegation settings are applied for the back-end service account.
+2. Use **Active Directory Users and Computers** on the domain controller for the **ContosoBackEnd** domain and verify no delegation settings are applied for the back-end service account. 
 
     ![SQL service properties](media/service-gateway-sso-kerberos/sql-service-properties.png)
 
@@ -178,8 +186,9 @@ Complete the following configuration steps:
 
     ![SQL service attributes](media/service-gateway-sso-kerberos/sql-service-attributes.png)
 
-4. In **Active Directory Users and Computers**, create a group on the domain controller for the **ContosoBackEnd** domain. Add the **GatewaySvc** gateway service account to the **ResourceDelGroup** group. 
+4. In **Active Directory Users and Computers**, create a group on the domain controller for the **ContosoBackEnd** domain. Add the **GatewaySvc** gateway service account to the **ResourceDelGroup** group.
 
+    To add users from a trusted domain, this group must have a scope of Domain local.
     ![Group properties](media/service-gateway-sso-kerberos-resource/group-properties.png)
 
 5. Open a command prompt and run the following commands in the domain controller for the **ContosoBackEnd** domain to update the **msDS-AllowedToActOnBehalfOfOtherIdentity** attribute of the back-end service account:
@@ -273,7 +282,7 @@ Each Active Directory user mapped in this way needs to have SSO permissions for 
     1. Select the **Attribute Editor** tab.
     
         Locate the `msDS-cloudExtensionAttribute1` property, and double-click it. Set the value to the full username (UPN) of the user you use to sign in to the Power BI service.
-    
+
     1. Select **OK**.
     
         ![String Attribute Editor window](media/service-gateway-sso-kerberos/edit-attribute.png)
