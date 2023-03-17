@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/24/2022
+ms.date: 03/09/2023
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -69,7 +69,7 @@ In this table, a custom app refers to a web app created using embedded analytics
 |          | (A SKU) | (P and EM SKUs) |
 |[Embed for your customers](embed-sample-for-customers.md)</br>(app owns data)     |✔        |✔        |
 |[Embed for your organization](embed-sample-for-your-organization.md)</br>(user owns data)     |✖        |✔         |
-|Microsoft 365 apps</br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✖        |✔        |
+|Microsoft 365 apps</br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li><li>[Embed in PowerPoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✖        |✔        |
 |[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✖        |✔        |
 
 >[!NOTE]
@@ -114,9 +114,9 @@ The table below describes the resources and limits of each SKU.
 
 Note the amount of memory available on each node size described in the *RAM (GB)* column of the table. It's set to the memory footprint limit of a single Power BI item (such as a dataset, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded A4 capacity, a *single dataset* size is limited to 25 GB, and not the total memory footprint of *all* datasets handled at the same time.
 
-### Embedded gen 2 memory enhancements
+### Embedded memory enhancements
 
-The amount of memory available on each node size is described in the RAM (GB) column in the SKU memory and computing power table. With Power BI Embedded Generation 2 (also known as Embedded Gen 2), it's set to the memory footprint limit of a single Power BI item (such as a dataset, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded Premium A4 capacity, a single dataset size is limited to 25 GB, compared to the original Power BI Embedded capacity, where the total memory footprint of all datasets handled at the same time was limited to 25 GB.
+The amount of memory available on each node size is described in the RAM (GB) column in the SKU memory and computing power table. It's set to the memory footprint limit of a single Power BI item (such as a dataset, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded Premium A4 capacity, a single dataset size is limited to 25 GB.
 
 ## Next steps
 

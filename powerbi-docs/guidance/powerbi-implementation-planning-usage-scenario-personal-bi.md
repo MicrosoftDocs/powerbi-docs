@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Personal BI"
 description: "Learn how Power BI personal BI is about private analytics for an individual."
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

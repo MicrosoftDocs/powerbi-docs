@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/23/2023
+ms.date: 02/16/2023
 LocalizationGroup: Visualizations
 ---
 # Display images in a table, matrix, or slicer in a report
@@ -31,9 +31,16 @@ A good way to enhance your reports is to add images to them. Static images on th
 
     ![Screenshot of a slicer with example images.](media/power-bi-images-tables/power-bi-url-images-slicer.png)
 
+### Format the images
+
+1. In the **Visualizations** pane, select the paintbrush icon to format the images. 
+1. On the **Visual** tab, expand **Image size**, and set **Height** and **Width**.
+
+    :::image type="content" source="media/power-bi-images-tables/image-size-height-width.png" alt-text="Screenshot showing setting image height and width.":::
+
 ### Add images from OneDrive
 
-Images in your report need to be anonymously accessible. However, for images that are hosted on OneDrive, you may be able to get an embed code that points directly to them. Such images aren't supported by the Power BI mobile apps, however. For the Power BI mobile apps to be able to display an image, the image URL must be anonymously accessible, regardless of whether or not an embed code is used.
+Images in your report need to be anonymously accessible. However, for images that are hosted on OneDrive, you may be able to get an embed code that points directly to them. The Power BI mobile apps don't support such images, however. For the Power BI mobile apps to be able to display an image, the image URL must be anonymously accessible, regardless of whether or not the image uses an embed code.
 
 1. On your OneDrive site, open an image and select **More options (...)** > **Embed**.
 
@@ -61,7 +68,7 @@ Your organization may not allow displaying images stored on OneDrive for work or
 
 - The image needs to be in one of these file formats: .bmp, .jpg, .jpeg, .gif, .png, or .svg
 - The URL must be anonymously accessible, not on a site that requires a sign-in, such as SharePoint. However, if images are hosted on SharePoint or OneDrive, you might be able to get an embed code that points directly to them.
-- The Power BI mobile apps will display the image only if the image URL is anonymously accessible, even if you can see the image in Power BI Desktop or in the service.
+- The Power BI mobile apps display the image only if the image URL is anonymously accessible, even if you can see the image in Power BI Desktop or in the service.
 
 ## Next steps
 
