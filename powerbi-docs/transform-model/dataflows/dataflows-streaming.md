@@ -1,6 +1,6 @@
 ---
 title: Streaming dataflows (preview)
-description: Learn how to create streaming dataflows in the Power BI service and how use can use them to work with your data.
+description: Learn how to use streaming dataflows to connect to, ingest, mash up, model, and build reports in the Power BI service.
 author: maikelson
 ms.author: davidi
 ms.reviewer: ''
@@ -21,7 +21,7 @@ Analysts usually need technical help to deal with streaming data sources, data p
 
 You can mix and match streaming data with batch data if you need to through a user interface (UI) that includes a *diagram view* for easy data mashup. The final item produced is a dataflow, which can be consumed in real time to create highly interactive, near real-time reporting. All of the data visualization capabilities in Power BI work with streaming data, just as they do with batch data.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-01.png" alt-text="Screenshot that shows where to find streaming dataflows.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-01.png" alt-text="Diagram showing an example of mixed streaming and batch data in a simple workflow that creates real-time reports in Power BI.":::
 
 Users can perform data preparation operations like joins and filters. They can also perform time-window aggregations (such as tumbling, hopping, and session windows) for group-by operations.
 
@@ -64,17 +64,17 @@ To create a streaming dataflow:
 1. Open the Power BI service in a browser, and then select a Premium-enabled workspace. (Streaming dataflows, like regular dataflows, aren't available in **My Workspace**.)
 1. Select the **New** dropdown menu, and then choose **Streaming dataflow**.
 
-   :::image type="content" source="media/dataflows-streaming/dataflows-streaming-02.png" alt-text="Screenshot that shows the New menu and the selection of streaming dataflow.":::
+   :::image type="content" source="media/dataflows-streaming/dataflows-streaming-02.png" alt-text="Screenshot that shows the New menu options with streaming dataflow highlighted.":::
 
 1. On the side pane that opens, you must name your streaming dataflow. Enter a name in the **Name** box (1), and then select **Create** (2).
 
-   :::image type="content" source="media/dataflows-streaming/dataflows-streaming-03.png" alt-text="Screenshot that shows the Name box and the Create button.":::
+   :::image type="content" source="media/dataflows-streaming/dataflows-streaming-03.png" alt-text="Screenshot of the new streaming dataflow pane with name and create highlighted.":::
 
    The empty diagram view for streaming dataflows appears.
 
 The following screenshot shows a finished dataflow. It highlights all the sections available to you for authoring in the streaming dataflow UI.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-04.png" alt-text="Screenshot that shows an overview of the streaming dataflow UI.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-04.png" alt-text="Screenshot of an example dataflow window with the ribbon, diagram view, side pane, and tabs highlighted." lightbox="media/dataflows-streaming/dataflows-streaming-04.png":::
 
 1. **Ribbon**: On the ribbon, sections follow the order of a "classic" analytics process: inputs (also known as data sources), transformations (streaming ETL operations), outputs, and a button to save your progress.
 2. **Diagram view**: This view is a graphical representation of your dataflow, from inputs to operations to outputs.
@@ -95,31 +95,31 @@ The Azure Event Hubs and Azure IoT Hub services are built on a common architectu
 
 ### Azure Event Hubs
 
-Azure Event Hubs is a big-data streaming platform and event ingestion service. It can receive and process millions of events per second. Data sent to an event hub can be transformed and stored by using any real-time analytics provider, or you can use batching or storage adapters.
+Azure Event Hubs is a big data streaming platform and event ingestion service. It can receive and process millions of events per second. Data sent to an event hub can be transformed and stored by using any real-time analytics provider, or you can use batching or storage adapters.
 
 To configure an event hub as an input for streaming dataflows, select the **Event Hub** icon. A card appears in the diagram view, including a side pane for its configuration.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-05.png" alt-text="Screenshot that shows the side pane for Event Hubs configuration.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-05.png" alt-text="Screenshot that shows the event hub card and configuration pane in diagram view.":::
 
-You have the option of pasting the Event Hubs connection string. Streaming dataflows fill out all the necessary information, including the optional consumer group (which by default is **$Default**). If you want to enter all fields manually, you can turn on the manual-entry toggle to expose them. To learn more about Event Hubs connection strings, see [Get an Event Hubs connection string](/azure/event-hubs/event-hubs-get-connection-string).
+You have the option of pasting the Event Hubs connection string. Streaming dataflows fill out all the necessary information, including the optional consumer group (which by default is **$Default**). If you want to enter all fields manually, you can turn on the manual-entry toggle to show them. To learn more, see [Get an Event Hubs connection string](/azure/event-hubs/event-hubs-get-connection-string).
 
-After you set up your Event Hubs credentials and select **Connect**, you can add fields manually by using **+ Add field** if you know the field names. To instead detect fields and data types automatically based on a sample of the incoming messages, select **Autodetect fields**. Selecting the gear icon allows you to edit the credentials if needed.
+After you set up your Event Hubs credentials and select **Connect**, you can add fields manually by using **+ Add field** if you know the field names. Alternatively, you can detect fields and data types automatically based on a sample of the incoming messages, select **Autodetect fields**. Selecting the gear icon allows you to edit the credentials if needed.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-06.png" alt-text="Screenshot that shows input data options.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-06.png" alt-text="Screenshot that shows input data options, EntryTime is selected with the more options tool tip displayed.":::
 
 When streaming dataflows detect the fields, you can see them in the list. There's also a live preview of the incoming messages in the **Data Preview** table under the diagram view.
 
-You can always edit the field names, or remove or change the data type, by selecting the three dots (**...**) next to each field. You can also expand, select, and edit any nested fields from the incoming messages, as shown in the following image.
+You can always edit the field names, or remove or change the data type, by selecting more options (**...**) next to each field. You can also expand, select, and edit any nested fields from the incoming messages, as shown in the following image.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-07.png" alt-text="Screenshot that shows rename and data type options for input data.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-07.png" alt-text="Screenshot that shows remove, rename and data type options for input data.":::
 
 ### Azure IoT Hub
 
 IoT Hub is a managed service hosted in the cloud. It acts as a central message hub for communications in both directions between an IoT application and its attached devices. You can connect millions of devices and their back-end solutions reliably and securely. Almost any device can be connected to an IoT hub.
 
-IoT Hub configuration is similar to Event Hubs configuration because of their common architecture. But there are some differences, including where to find the Event Hubs-compatible connection string for the built-in endpoint. To learn more about the IoT Hub built-in endpoint, see [Read device-to-cloud messages from the built-in endpoint](/azure/iot-hub/iot-hub-devguide-messages-read-builtin).
+IoT Hub configuration is similar to Event Hubs configuration because of their common architecture. But there are some differences, including where to find the Event Hubs-compatible connection string for the built-in endpoint. To learn more, see [Read device-to-cloud messages from the built-in endpoint](/azure/iot-hub/iot-hub-devguide-messages-read-builtin).
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-08.png" alt-text="Screenshot that shows the side pane for IoT Hub configuration.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-08.png" alt-text=" Screenshot that shows the IOT Hub card and configuration pane in diagram view":::
 
 After you paste the connection string for the built-in endpoint, all functionality for selecting, adding, autodetecting, and editing fields coming in from IoT Hub is the same as in Event Hubs. You can also edit the credentials by selecting the gear icon.
 
@@ -131,13 +131,13 @@ After you paste the connection string for the built-in endpoint, all functionali
 > 1. In the **Analytics** section, select **All Services** > **Event Hubs**.
 > 1. Select **Event Hubs Namespace** > **Entities/Event Hubs**, and then select the event hub name.
 > 1. In the **Shared Access Policies** list, select a policy.
-> 1. Select the **Copy to clipboard** button next to the **Connection string-primary key** field.
+> 1. Select **Copy to clipboard** next to the **Connection string-primary key** field.
 >
 >For IoT Hub:
 >
 > 1. In the **Internet of Things** section, select **All Services** > **IoT Hubs**.
 > 1. Select the IoT hub that you want to connect to, and then select **Built-in endpoints**.
-> 1. Select the **Copy to clipboard** button next to the Event Hubs-compatible endpoint.
+> 1. Select **Copy to clipboard** next to the Event Hubs-compatible endpoint.
 
 When you use stream data from Event Hubs or IoT Hub, you have access to the following metadata time fields in your streaming dataflow:
 
@@ -150,21 +150,21 @@ Neither of these fields appear in the input preview. You need to add them manual
 
 Azure Blob storage is Microsoft's object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn't adhere to a particular data model or definition, such as text or binary data.
 
-You can use Azure Blobs as a streaming/reference input. Streaming blobs are checked every second for updates. Unlike a streaming blob, a reference blob is only loaded at the beginning of the refresh. It's static data that isn’t expected to change, and the recommended [limit](/azure/stream-analytics/stream-analytics-use-reference-data#size-limitation) for static data is 50 MB or less.  
+You can use Azure Blobs as a streaming or reference input. Streaming blobs are checked every second for updates. Unlike a streaming blob, a reference blob is only loaded at the beginning of the refresh. It's static data that isn’t expected to change, and the recommended [limit](/azure/stream-analytics/stream-analytics-use-reference-data#size-limitation) for static data is 50 MB or less.  
 
 Power BI expects reference blobs to be used alongside streaming sources, for example, through a JOIN. Hence, a streaming dataflow with a reference blob must also have a streaming source.  
 
 The configuration for Azure Blobs is slightly different to that of an Azure Event Hubs node. To find your Azure Blob connection string, see [View account access keys](/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).  
 
-:::image type="content" source="media/dataflows-streaming/streaming-blob-editor-box.png" alt-text="Screenshot that shows the side pane for the Streaming blob configuration.":::
+:::image type="content" source="media/dataflows-streaming/streaming-blob-editor-box.png" alt-text=" Screenshot that shows the Streaming blob card and configuration pane in diagram view":::
 
 After you enter the Blob connection string, you need to provide the name of your container. You also need to enter the path pattern within your directory to access the files you want to set as the source for your dataflow.  
 
-For streaming blobs, the directory path pattern is expected to be a dynamic value. It's required for the date to be a part of the filepath for the blob – referenced as {date}. Furthermore, an asterisk (\*) in the path pattern, like {date}/{time}/*.json, isn't be supported.  
+For streaming blobs, the directory path pattern is expected to be a dynamic value. The date is required to be a part of the filepath for the blob – referenced as {date}. Furthermore, an asterisk (\*) in the path pattern, like {date}/{time}/*.json, isn't be supported.  
 
 For example, if you have a blob called ExampleContainer that you're storing nested .json files inside, where the first level is the date of creation and the second level is the hour of creation (yyyy-mm-dd/hh), then your Container input would be “ExampleContainer”. The Directory path pattern would be “{date}/{time}” where you could modify the date and time pattern.  
 
-:::image type="content" source="media/dataflows-streaming/blob-example-naming-patterns.png" alt-text="Screenshot that shown an example naming pattern for a Streaming blob.":::
+:::image type="content" source="media/dataflows-streaming/blob-example-naming-patterns.png" alt-text="Screenshot that shows the stream blob input boxes used to configure the example container.":::
 
 After your blob is connected to the endpoint, all functionality for selecting, adding, autodetecting, and editing fields coming in from Azure Blob is the same as in Event Hubs. You can also edit the credentials by selecting the gear icon.
 
@@ -175,22 +175,22 @@ Often, when working with real time data, data is condensed, and Identifiers are 
 
 ### Data types
 
-The available data types for streaming dataflows fields are:
+The available data types for streaming dataflows fields include:
 
-* **DateTime**: Date and time field in ISO format.
-* **Float**: Decimal number.
-* **Int**: Integer number.
-* **Record**: Nested object with multiple records.
-* **String**: Text.
+* **DateTime**: Date and time field in ISO format
+* **Float**: Decimal number
+* **Int**: Integer number
+* **Record**: Nested object with multiple records
+* **String**: Text
 
 > [!IMPORTANT]
 > The data types selected for a streaming input have important implications downstream for your streaming dataflow. Select the data type as early as you can in your dataflow to avoid having to stop it later for edits.
 
 ## Add a streaming data transformation
 
-Streaming data transformations are inherently different from batch data transformations. Almost all streaming data has a time component, which affects any data preparation tasks involved.
+Streaming data transformations are inherently different from batch data transformations. Almost all streaming data has a time component which affects any data preparation tasks involved.
 
-To add a streaming data transformation to your dataflow, select the transformation icon on the ribbon for that transformation. The respective card is dropped in the diagram view. After you select it, you'll see the side pane for that transformation to configure it.
+To add a streaming data transformation to your dataflow, select the transformation icon on the ribbon for that transformation. The respective card appears in the diagram view. After you select it, you'll see the side pane for that transformation to configure it.
 
 As of July 2021, streaming dataflows support the following streaming transformations.
 
@@ -198,7 +198,7 @@ As of July 2021, streaming dataflows support the following streaming transformat
 
 Use the **Filter** transformation to filter events based on the value of a field in the input. Depending on the data type (number or text), the transformation keeps the values that match the selected condition.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-09.png" alt-text="Screenshot that shows configuration of the Filter transformation.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-09.png" alt-text="Screenshot that shows the Filter input boxes used to configure the example container.":::
 
 > [!NOTE]
 > Inside every card, you'll see information about what else is needed for the transformation to be ready. For example, when you're adding a new card, you'll see a "Set-up required" message. If you're missing a node connector, you'll see either an "Error" or a "Warning" message.
@@ -218,7 +218,7 @@ You can use the **Aggregate** transformation to calculate an aggregation (**Sum*
 
 To add an aggregation, select the transformation icon. Then connect an input, select the aggregation, add any filter or slice dimensions, and choose the period of time when you want to calculate the aggregation. This example calculates the sum of the toll value by the state where the vehicle is from over the last 10 seconds.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-11.png" alt-text="Screenshot that shows configuration of the Aggregate transformation.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-11.png" alt-text=" Screenshot of an aggregate card with an existing aggregate function.  The aggregate pane shows the calculation details.":::
 
 To add another aggregation to the same transformation, select **Add aggregate function**. Keep in mind that the filter or slice applies to all aggregations in the transformation.
 
@@ -233,11 +233,11 @@ As with regular joins, you have different options for your join logic:
 
 To select the type of join, select the icon for the preferred type on the side pane.
 
-Finally, select over what period of time you want the join to be calculated. In this example, the join looks at the last 10 seconds. Keep in mind that longer the period is, the less frequent the output is--and the more processing resources you use for the transformation.
+Finally, select over what period of time you want the join to be calculated. In this example, the join looks at the last 10 seconds. Keep in mind that the longer the period is, the less frequent the output is&mdash;and the more processing resources you use for the transformation.
 
 By default, all fields from both tables are included. Prefixes left (first node) and right (second node) in the output help you differentiate the source.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-12.png" alt-text="Screenshot that shows configuration of the Join transformation.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-12.png" alt-text="Screenshot of the event hub and join cards with the join configuration pane open.":::
 
 ### Group by
 
@@ -254,7 +254,7 @@ To configure this transformation:
 
 To add another aggregation to the same transformation, select **Add aggregate function**. Keep in mind that the **Group by** field and the windowing function applies to all aggregations in the transformation.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-13.png" alt-text="Screenshot that shows configuration of the Group by transformation.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-13.png" alt-text="Screenshot of the Group by card with the configuration pane open.":::
 
 A time stamp for the end of the time window is provided as part of the transformation output for reference.
 
@@ -328,17 +328,17 @@ You set up a session window directly on the side pane for the transformation. If
 
 ### Snapshot window
 
-Snapshot windows groups events that have the same time stamp. Unlike other windows, a snapshot doesn't require any parameters because it uses the time from the system.
+Snapshot windows group events that have the same time stamp. Unlike other windows, a snapshot doesn't require any parameters because it uses the time from the system.
 
 :::image type="content" source="media/dataflows-streaming/dataflows-streaming-23.png" alt-text="Diagram that shows a snapshot window on a 35-minute timeline.":::
 
 ## Define outputs
 
-After you're ready with inputs and transformations, it's time to define one or more outputs. As of July of 2021, streaming dataflows support Power BI tables as the only type of output.
+After setting up inputs and transformations, it's time to define one or more outputs. As of July of 2021, streaming dataflows support Power BI tables as the only type of output.
 
 This output is a dataflow table (that is, an entity) that you can use to create reports in Power BI Desktop. You need to join the nodes of the previous step with the output that you're creating to make it work. After that, name the table.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-24.png" alt-text="Screenshot that shows configuration of an output table.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-24.png" alt-text="Screenshot that shows the output table card and output table configuration pane.":::
 
 After you connect to your dataflow, this table will be available for you to create visuals that are updated in real time for your reports.
 
@@ -358,15 +358,17 @@ As shown in the following screenshot, if you want to see or drill down into some
 
 You can also see the details of a specific record (a "cell" in the table) by selecting it and then selecting **Show details** or **Hide details** (2). The screenshot shows the detailed view of a nested object in a record.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-25.png" alt-text="Screenshot that shows a live data preview.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-25.png" alt-text="Screenshot that shows a live data preview with the pause and show or hide options highlighted.":::
 
 ### Static preview for transformations and outputs
 
-After you add and set up any steps in the diagram view, you can test their behavior by selecting the static data button :::image type="icon" source="media/dataflows-streaming/dataflows-streaming-26.png":::.
+After you add and set up any steps in the diagram view, you can test their behavior by selecting the static data button. 
+
+:::image type="icon" source="media/dataflows-streaming/dataflows-streaming-26.png":::
 
 After you do, streaming dataflows evaluate all transformation and outputs that are configured correctly. Streaming dataflows then display the results in the static data preview, as shown in the following image.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-27.png" alt-text="Screenshot that shows a static data preview.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-27.png" alt-text="Screenshot that shows a static data preview with the refresh and hide options highlighted.":::
 
 You can refresh the preview by selecting **Refresh static preview** (1). When you do this, streaming dataflows take new data from the input and evaluate all transformations and outputs again with any updates that you might have performed. The **Show or Hide details** option is also available (2).
 
@@ -374,7 +376,7 @@ You can refresh the preview by selecting **Refresh static preview** (1). When yo
 
 If you have any authoring errors or warnings, the **Authoring errors** tab (1) lists them, as shown in the following screenshot. The list includes details of the error or warning, the type of card (input, transformation, or output), the error level, and a description of the error or warning (2). When you select any of the errors or warnings, the respective card is selected and the configuration side pane opens for you to make the needed changes.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-28.png" alt-text="Screenshot that shows a list of authoring errors.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-28.png" alt-text="Screenshot that shows a list of authoring errors." lightbox="media/dataflows-streaming/dataflows-streaming-28.png":::
 
 ### Runtime errors
 
@@ -430,23 +432,23 @@ The only experience available while a streaming dataflow runs is the **Runtime e
 
 When you're editing a dataflow, you need to account for other considerations. Similar to any changes in a schema for regular dataflows, if you make changes to an output table, you lose data that has already been pushed and saved to Power BI. The interface provides clear information about the consequences of any of these changes in your streaming dataflow, along with choices for changes that you make before saving.
 
-This experience is better shown with an example. The following screenshot shows the message you get when you add column to one table, change the name for a second table, and leave a third table the same as it was before.
+This experience is better shown with an example. The following screenshot shows the message you get when you add a column to one table, change the name for a second table, and leave a third table the same as it was before.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-33.png" alt-text="Screenshot that shows a message about data changes after edits.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-33.png" alt-text="Screenshot that shows an informational message that lists the changes made to output tables and their impact." lightbox="media/dataflows-streaming/dataflows-streaming-33.png":::
 
 In this example, the data already saved in both tables that had schema and name changes is deleted if you save the changes. For the table that stayed the same, you get the option to delete any old data and start from scratch, or save it for later analysis together with new data that comes in.
 
-Keep in mind these nuances when editing your streaming dataflow, especially if you need historical data available later for further analysis.
+Keep these nuances in mind when editing your streaming dataflow, especially if you need historical data available later for further analysis.
 
 ## Consume a streaming dataflow
 
-After your streaming dataflow is running, you're ready to start creating content on top of your streaming data. There are no structural changes compared to what you have to currently do to create reports that are updated in real time. But there are some nuances and updates to consider, so you can take advantage of this new type of data preparation for streaming data.
+After your streaming dataflow is running, you're ready to start creating content on top of your streaming data. There are no structural changes compared to what you have to do to create reports that are updated in real time. There are some nuances and updates to consider so that you can take advantage of this new type of data preparation for streaming data.
 
 ### Set up data storage
 
 As we mentioned before, streaming dataflows save data in the following two locations. The use of these sources depends on what type of analysis you're trying to do.
 
-* **Hot storage (real-time analysis)**: As data comes in to Power BI from streaming dataflows, data is stored in a hot location for you to access with real-time visuals. How much data is saved in this storage depends on the value that you defined for **Retention duration** in the streaming dataflow settings. The default (and minimum) is 24 hours.
+* **Hot storage (real-time analysis)**: As data comes into Power BI from streaming dataflows, data is stored in a hot location for you to access with real-time visuals. How much data is saved in this storage depends on the value that you defined for **Retention duration** in the streaming dataflow settings. The default (and minimum) is 24 hours.
 * **Cold storage (historical analysis)**: Any time period that doesn't fall in the period that you defined for **Retention duration** is saved in cold storage (blobs) in Power BI for you to consume if needed.
 
 > [!NOTE]
@@ -454,19 +456,19 @@ As we mentioned before, streaming dataflows save data in the following two locat
 
 ### Connect to streaming dataflows from Power BI Desktop
 
-With the July 2021 release of Power BI Desktop, a new connector called **Dataflows** is available for you to use. As part of this new connector, for streaming dataflows, you see two tables that match the data storage previously described.
+Power BI Desktop offers a connector called **Dataflows** for you to use. As part of this connector for streaming dataflows, you’ll see two tables that match the data storage previously described.
 
 To connect to your data for streaming dataflows:
 
 1. Go to **Get Data**, select **Power Platform**, and then choose the **Dataflows** connector.
 
-   :::image type="content" source="media/dataflows-streaming/dataflows-streaming-40.png" alt-text="Screenshot that shows where to find the Power Platform dataflows connector in Power BI Desktop.":::
+   :::image type="content" source="media/dataflows-streaming/dataflows-streaming-40.png" alt-text="Screenshot of the Get Data window, Power Platform is selected in the navigation pane and Dataflows is highlighted in the main pane.":::
 
 2. Sign in with your Power BI credentials.
 3. Select workspaces. Look for the one that contains your streaming dataflow and select that dataflow. (In this example, the streaming dataflow is called **Toll**.)
 4. Notice that all your output tables appear twice: one for streaming data (hot) and one for archived data (cold). You can differentiate them by the labels added after the table names and by the icons.
 
-   :::image type="content" source="media/dataflows-streaming/dataflows-streaming-35.png" alt-text="Screenshot that shows output tables for streaming dataflows in Power BI Desktop.":::
+   :::image type="content" source="media/dataflows-streaming/dataflows-streaming-35.png" alt-text="Screenshot of a list of output tables in the Toll dataflow.":::
 
 5. Connect to the streaming data. The archived data case is the same, only available in import mode. Select the tables that include the labels **Streaming** and **Hot**, and then select **Load**.
 
@@ -482,17 +484,17 @@ Now you can create visuals, measures, and more, by using the features available 
 > The regular Power BI dataflow connector is still available and will work with streaming dataflows with two caveats:
 >
 >* It only allows you to connect to hot storage.
->* The data preview in the connector does not work with streaming dataflows.
+>* The data preview in the connector doesn’t work with streaming dataflows.
 
 ### Turn on automatic page refresh for real-time visuals
 
 After your report is ready and you've added all the content that you want to share, the only step left is to make sure your visuals are updated in real time. You can use a feature called *automatic page refresh*. This feature allows you to refresh visuals from a DirectQuery source as often as one second.
 
-For more information about the feature, see [Automatic page refresh in Power BI](../../create-reports/desktop-automatic-page-refresh.md). That information includes how to use it, how to set it up, and how to contact your admin if you're having trouble. Here are the basics on how to set it up:
+For more information about the feature, see [Automatic page refresh in Power BI](../../create-reports/desktop-automatic-page-refresh.md). That article includes information about how to use it, how to set it up, and how to contact your admin if you're having trouble. The following are the basics on how to set it up:
 
 1. Go to the report page where you want the visuals to be updated in real time.
 2. Clear any visual on the page. If possible, select the background of the page.
-3. Go to the format pane (1) and turn on the **Page refresh** toggle (2).
+3. Go to the format pane (1) and turn on **Page refresh** (2).
 
    :::image type="content" source="media/dataflows-streaming/dataflows-streaming-38.png" alt-text="Screenshot that shows selections for turning on automatic page refresh.":::
 
@@ -515,7 +517,7 @@ For more information about the feature, see [Automatic page refresh in Power BI]
 * Capacities smaller than A3 don't allow the use of streaming dataflows.
 * If dataflows or the enhanced calculation engine isn't enabled in a tenant, you can't create or run streaming dataflows.
 * Workspaces connected to a storage account aren't supported.
-* Each streaming dataflow can provide up to 1 megabyte per second of throughput.
+* Each streaming dataflow can provide up to 1 MB per second of throughput.
 
 ### Availability
 
@@ -553,7 +555,7 @@ When you're authoring streaming dataflows, be mindful of the following considera
 
 ### Connect from Power BI Desktop
 
-You can access cold storage only by using the **Dataflows** connector available starting in the July 2021 Power BI Desktop update. The existing Power BI dataflow connector allows only connections to streaming data (hot) storage. The connector's data preview doesn't work.
+You can access cold storage only by using the **Dataflows** connector available starting in the July 2021 Power BI Desktop update. The previous Power BI dataflow connector allows only connections to streaming data (hot) storage. The connector's data preview doesn't work.
 
 ## Next steps
 
