@@ -1,6 +1,6 @@
 ---
-title: "Setting Time-out Values for Report Dataset Processing | Microsoft Docs"
-description: In Power BI Services, you can specify time-out values to set limits on how system resources are used.
+title: "Setting time-out values for report dataset processing | Microsoft Docs"
+description: In paginated reports, you can specify time-out values to set limits on how system resources are used.
 ms.date: 03/14/2023
 ms.service: powerbi
 ms.subservice: report-builder
@@ -9,7 +9,7 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: joshg
+ms.reviewer: joshger
 ---
 # Setting time-out values for report dataset processing
 Most time-out errors occur during query processing. If you are encountering time-out errors, try increasing the dataset query time-out value. 
