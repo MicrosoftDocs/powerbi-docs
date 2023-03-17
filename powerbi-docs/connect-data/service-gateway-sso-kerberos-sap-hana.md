@@ -167,9 +167,9 @@ In HANA authentication traces, you might see entries similar to the following me
 
 ```output
 [Authentication|manager.cpp:166] Kerberos: Using Service Principal 
-Name johnny@on.contoso.com@CONTOSO.COM with name type: GSS_KRB5_NT_PRINCIPAL_NAME 
+Name johnny@contoso.com@CONTOSO.COM with name type: GSS_KRB5_NT_PRINCIPAL_NAME 
 [Authentication|methodgssinitiator.cpp:367] Got principal name: 
-johnny@on.contoso.com@CONTOSO.COM
+johnny@contoso.com@CONTOSO.COM
 ```
 
 #### Resolution
