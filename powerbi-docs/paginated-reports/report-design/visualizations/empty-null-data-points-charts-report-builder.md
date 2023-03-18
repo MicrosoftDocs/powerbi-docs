@@ -1,7 +1,7 @@
 ---
 title: "Empty and null data points in Power BI paginated report charts | Microsoft Docs"
 description: Learn about Power BI paginated report chart processing for empty values, use of placeholders, and how empty and null data points display in Power BI Report Builder. 
-ms.date: 02/24/2023
+ms.date: 03/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -36,5 +36,5 @@ ms.reviewer: monaraya
 
 [Charts](charts-report-builder.md)   
 [Formatting a Chart](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
-[Add a Chart to a Report](add-chart-to-report-report-builder.md)   
+[Add a Chart to a Report](add-chart-report-report-builder.md)   
 [Troubleshoot Charts](/sql/reporting-services/report-design/troubleshoot-charts-report-builder-and-ssrs)  

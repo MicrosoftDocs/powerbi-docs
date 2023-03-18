@@ -88,7 +88,7 @@ The more time you spend carefully preparing and understanding your data before y
  For more information about aggregate expressions, see [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).  
    
 ##  <a name="InThisSection"></a> In this section  
- [Add a Chart to a Report &#40;Power BI Report Builder&#41;](add-chart-to-report-report-builder.md)  
+ [Add a Chart to a Report &#40;Power BI Report Builder&#41;](add-chart-report-report-builder.md)  
  Describes the first steps in adding a chart to your report.  
   
  [Chart Types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)  
@@ -97,7 +97,7 @@ The more time you spend carefully preparing and understanding your data before y
  [Formatting a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)  
  Use formatting to improve the overall appearance and highlight key data points of your chart.  
   
- [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](empty-and-null-data-points-in-charts-report-builder.md)  
+ [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](empty-null-data-points-charts-report-builder.md)  
  Describes considerations when working with charts based on fields with empty or null values.  
   
  [Displaying a Series with Multiple Data Ranges on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/displaying-a-series-with-multiple-data-ranges-on-a-chart)  

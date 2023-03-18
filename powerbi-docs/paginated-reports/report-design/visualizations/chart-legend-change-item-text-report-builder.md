@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: monaraya
 ---
-# Chart legend - change item text in a paginated report (Power BI Report Builder)
+# Change the text of a legend item in a paginated report (Power BI Report Builder)
 
 When you place a field in the Values area of the Power BI paginated report chart, a legend item is automatically generated that contains the name of this field. Every legend item is connected to an individual series on the chart, with the exception of shape charts. In shape charts, the legend is connected to individual data points instead of individual series.  
   

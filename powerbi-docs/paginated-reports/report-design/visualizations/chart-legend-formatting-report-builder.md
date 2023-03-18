@@ -1,7 +1,7 @@
 ---
-title: "Formatting the legend on a Power BI paginated report chart | Microsoft Docs"
+title: "Format the legend on a Power BI paginated report chart | Microsoft Docs"
 description: Learn how to format a legend on a Power BI paginated report chart in Report Builder with the Legend Properties dialog box or by using the Properties pane.
-ms.date: 02/23/2023
+ms.date: 03/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: monaraya
 ---
-# Chart legend - formatting the legend on a paginated report chart (Power BI Report Builder)
+# Format the legend on a paginated report chart (Power BI Report Builder)
 
   The chart legend contains descriptions for each category in a Power BI paginated report chart. A legend always contains one or more legend items, where each legend item consists of a colored box that represents the series, and a text string that describes the series, as indicated in the following illustration.  
   
