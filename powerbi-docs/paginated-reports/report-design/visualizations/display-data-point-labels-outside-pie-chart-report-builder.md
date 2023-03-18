@@ -14,13 +14,13 @@ ms.reviewer: monaraya
   In Power BI paginated reports, pie chart labeling is optimized to display labels on only several slices of data. Labels may overlap if the pie chart contains too many slices. One solution is to display the labels outside the pie chart, which may create more room for longer data labels. If you find that your labels still overlap, you can create more space for them by enabling 3D. This reduces the diameter of the pie chart, creating more space around the chart.  
   
   
-### Display data point labels inside a pie chart  
+## Display data point labels inside a pie chart  
   
 1.  Add a pie chart to your report. For more information, see [Add a Chart to a Report &#40;Power BI Report Builder&#41;](add-chart-to-report-report-builder.md).  
   
 2.  On the design surface, right-click on the chart and select **Show Data Labels**.  
   
-### Display data point labels outside a pie chart  
+## Display data point labels outside a pie chart  
   
 1.  Create a pie chart and display the data labels.  
   
@@ -34,7 +34,7 @@ ms.reviewer: monaraya
   
 6.  Set the **PieLineColor** property to **Black**. The PieLineColor property defines callout lines for each data point label.  
   
-### Prevent overlapping labels displayed outside a pie chart  
+## Prevent overlapping labels displayed outside a pie chart  
   
 1.  Create a pie chart with external labels.  
   

@@ -17,7 +17,7 @@ The more time you spend carefully preparing and understanding your data before y
   
  The following illustration shows many of the different elements used in the chart.  
   
- ![Screenshot of a Chart elements diagram.](media/paginated-reports-visualizations/chart-elements-c.gif "Screenshot of a Chart elements diagram.")  
+ ![Screenshot of a Chart elements diagram.](media/paginated-reports-visualizations/chart-elements-c.png "Screenshot of a Chart elements diagram.")  
 
  
 ##  <a name="DesigningChart"></a> Designing a chart  
