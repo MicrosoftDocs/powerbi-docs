@@ -6,7 +6,7 @@ ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.search.form: product-power-bi
+ms.search.form: product-power-bi, See content that others have shared with me
 ms.topic: how-to
 ms.date: 02/21/2023
 LocalizationGroup: Dashboards
