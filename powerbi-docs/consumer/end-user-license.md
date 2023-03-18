@@ -85,7 +85,7 @@ We can determine whether Zalan's organization has Premium capacity by looking up
 
     -->
 
-## Identify content that's hosted in Premium capacity
+## Identify content hosted in Premium capacity
 
 There are a couple of ways to identify content that's stored in Premium capacity. One way is to look for apps and app workspaces with a diamond icon. The diamond indicates that the content is stored in Premium capacity.
 
