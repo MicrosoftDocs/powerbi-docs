@@ -14,16 +14,11 @@ ms.reviewer: monaraya
 Because each chart type in a Power BI paginated report has a different shape, data point labels are placed in an optimal location so as not to interfere on the chart. The default position of the labels varies with the chart type:  
   
 - On stacked charts, labels can only be positioned inside the series.  
-  
 - On funnel or pyramid charts, labels are placed on the outside in a column.  
-  
 - On pie charts, labels are placed inside the individual slices on a pie chart.  
-  
 - On bar charts, labels are placed outside of the bars that represent data points.  
-  
 - On polar charts, labels are placed outside of the circular area that represents data points.  
-  
-  
+
 ## Change the position of point labels in a pie chart  
   
 1. Create a pie chart.  
