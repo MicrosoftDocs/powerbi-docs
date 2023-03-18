@@ -13,7 +13,7 @@ ms.reviewer: monaraya
 
   The chart legend contains descriptions for each category in a Power BI paginated report chart. A legend always contains one or more legend items, where each legend item consists of a colored box that represents the series, and a text string that describes the series, as indicated in the following illustration.  
   
- ![Screenshot showing chart legend.](media/paginated-reports-visualizations/legend-diagram.gif "Diagram of a chart legend")  
+ ![Screenshot showing chart legend.](media/paginated-reports-visualizations/legend-diagram.png "Diagram of a chart legend")  
   
  A legend item is connected to an individual series on the chart, except for Shape charts, where the legend is connected to individual data points. The chart automatically adds items into the legend based on the series that are generated from your data.  
   

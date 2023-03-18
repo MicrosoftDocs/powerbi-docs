@@ -1,7 +1,7 @@
 ---
 title: "Formatting axis labels on a Power BI paginated report chart | Microsoft Docs"
 description: Learn how to format axis labels on a paginated report chart using a dialog box or by using the properties pane to categorize and display relationships in Power BI Report Builder.
-ms.date: 02/24/2023
+ms.date: 03/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -23,7 +23,7 @@ ms.reviewer: monaraya
 ## Types of axes  
  The chart has two primary axes: the value axis and the category axis.  
   
- ![Screenshot showing Chart categorical and value axes.](media/paginated-reports-visualizations/axes-categorical-vs-value.gif "Chart categorical and value axes")  
+ ![Screenshot showing Chart categorical and value axes.](media/paginated-reports-visualizations/axes-categorical-vs-value.png "Chart categorical and value axes")  
   
  When you drag a field from your dataset onto the chart surface, the chart will determine whether this field belongs on the category or value axis.  
   
@@ -67,13 +67,13 @@ ms.reviewer: monaraya
  The Name field is plotted along the category axis. The chart calculates between four and six labels and it calculates auto-fit settings to determine how the labels can fit on the category axis without causing label collisions. As a result, some category labels might be omitted. You can override auto-fitting options for each axis independently.  
   
 ## Displaying all labels on the category axis  
- On the value axis, axis intervals provide a consistent measure of the data points on the chart. However, on the category axis, this functionality can cause categories to appear without axis labels. Typically, you want all categories to be labeled. You can set the number of intervals to 1 to show all categories.  For more information, see [Specify an Axis Interval &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/specify-an-axis-interval-report-builder.md).  
+ On the value axis, axis intervals provide a consistent measure of the data points on the chart. However, on the category axis, this functionality can cause categories to appear without axis labels. Typically, you want all categories to be labeled. You can set the number of intervals to 1 to show all categories.  For more information, see [Specify an axis interval in a Power BI paginated report (Power BI Report Builder)](specify-axis-interval-report-builder.md).  
   
 > [!NOTE]  
 >  By superseding the automatic labeling features with a manual interval on an axis, the chart must resize all other elements appropriately. As a result, you may encounter unpredictable results with the sizing and positioning of the labels, or the size of other elements on the chart.  
   
 ## Variable axis intervals  
- The chart calculates approximately five axis label intervals regardless of the size of the chart. On wider or taller charts, if you show only five labels on an axis, large gaps can appear between each label. This makes it more difficult to identify the value of each data point against the axis. To avoid this behavior on wider or taller charts, you can set a variable axis interval. The chart will calculate the optimal number of labels that can appear on the axis based on the width or height of the chart, depending on the corresponding axis. For more information, see [Specify an Axis Interval &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/specify-an-axis-interval-report-builder.md).  
+ The chart calculates approximately five axis label intervals regardless of the size of the chart. On wider or taller charts, if you show only five labels on an axis, large gaps can appear between each label. This makes it more difficult to identify the value of each data point against the axis. To avoid this behavior on wider or taller charts, you can set a variable axis interval. The chart will calculate the optimal number of labels that can appear on the axis based on the width or height of the chart, depending on the corresponding axis. For more information, see [Specify an axis interval in a Power BI paginated report (Power BI Report Builder)](specify-axis-interval-report-builder.md).  
   
 ## Sorting axis values  
  Categories appear along the x-axis in the order that they appear in the result set. You can change the group order by adding a SORT command to the query or by sorting the dataset using an expression. Chart data regions are sorted the same as all other data regions. For more information about how to sort data, see [Sort Data in a Data Region &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/sort-data-in-a-data-region-report-builder-and-ssrs).  
@@ -95,7 +95,7 @@ ms.reviewer: monaraya
   
  [Position Labels in a Chart &#40;Power BI Report Builder&#41;](position-labels-in-chart-report-builder.md)  
   
- [Specify an Axis Interval &#40;Power BI Report Builder&#41;](/paginated-reports/report-design/visualizations/specify-axis-interval-report-builder.md)  
+ [Specify an axis interval in a Power BI paginated report (Power BI Report Builder)](specify-axis-interval-report-builder.md)  
   
  [Add or Remove Margins from a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-or-remove-margins-from-a-chart-report-builder-and-ssrs)  
   

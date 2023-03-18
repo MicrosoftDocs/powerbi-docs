@@ -1,7 +1,7 @@
 ---
-title: "Charts in Power BI paginated report | Microsoft Docs"
+title: "Charts in Power BI paginated reports | Microsoft Docs"
 description: Use chart data regions to help readers of your Power BI paginated reports understand large volumes of aggregated data at a glance in Power BI Report Builder.
-ms.date: 02/21/2023
+ms.date: 03/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: monaraya
 ---
-# Charts in Power BI paginated report (Power BI Report Builder)
+# Charts in Power BI paginated reports (Power BI Report Builder)
 
 Read about using chart data regions to help readers of your paginated reports understand large volumes of aggregated data at a glance.  
 
@@ -100,7 +100,7 @@ The more time you spend carefully preparing and understanding your data before y
  [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](empty-and-null-data-points-in-charts-report-builder.md)  
  Describes considerations when working with charts based on fields with empty or null values.  
   
- [Displaying a Series with Multiple Data Ranges on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/displaying-a-series-with-multiple-data-ranges-on-chart)  
+ [Displaying a Series with Multiple Data Ranges on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/displaying-a-series-with-multiple-data-ranges-on-a-chart)  
  Describes how to add scale breaks to a series that contains more than one range of data.  
   
  [Multiple Series on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/multiple-series-on-a-chart-report-builder-and-ssrs)  
