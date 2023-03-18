@@ -20,13 +20,13 @@ The more time you spend carefully preparing and understanding your data before y
  ![Screenshot of a Chart elements diagram.](media/paginated-reports-visualizations/chart-elements-c.png "Screenshot of a Chart elements diagram.")  
 
  
-##  <a name="DesigningChart"></a> Designing a chart  
+##  <a name="DesigningChart"></a> Design a chart  
  After you add a chart data region to the design surface, you can drag report dataset fields for numeric and non-numeric data to the Chart Data pane of the chart. When you click the chart on the design surface, the Chart Data pane appears, with three areas-Category Groups, Series Groups, and Values. If the report has a shared or embedded dataset, the fields in the dataset appear in the Report Data pane. Drag fields from the dataset into the appropriate area of the Chart Data pane. By default, when a field is added to one of the areas of the chart, Power BI Report Builder calculates an aggregate for the field. You can also use series grouping to dynamically generate series. A chart is [organized like a matrix](#SimilarMatrix).  
   
  ![Screenshot of chart showing the chart properties.](media/paginated-reports-visualizations/chart-series-categories.gif "Screenshot of chart showing the chart properties.")  
   
 > [!NOTE]  
->  The data in the chart at design time is different from the data in the chart when the report is processed. It is not your real data. It is generated data that has been added so that you can design your chart with an idea of what the chart will look like.  
+> The data in the chart at design time is different from the data in the chart when the report is processed. It is not your real data. It is generated data that has been added so that you can design your chart with an idea of what the chart will look like.  
   
 ##  <a name="SimilarMatrix"></a> How a chart is like a matrix  
  One way to think about how charts work is to compare them to matrices.  
@@ -35,14 +35,14 @@ The more time you spend carefully preparing and understanding your data before y
   
  Conceptually, their organization is identical:  
   
--   The Columns group in the matrix is like the Category Groups area in the chart.  
+- The Columns group in the matrix is like the Category Groups area in the chart.  
   
--   The Rows group in the matrix is like the Series Groups area in the chart.  
+- The Rows group in the matrix is like the Series Groups area in the chart.  
   
--   The Data area in the matrix is like the Values area in the chart.  
+- The Data area in the matrix is like the Values area in the chart.  
   
  
-##  <a name="AddingData"></a> Adding data to the chart  
+##  <a name="AddingData"></a> Add data to the chart  
  Suppose you have a report that shows Sales by Name. You drop the Full Name field to the Category Groups area and the Sales field to the Values area.  
   
  When you add the Sales field to the Values area, the text of the data field appears in the legend, and the data from this numeric field will be aggregated into one value. By default, the value is aggregated using the built-in function Sum. The Chart Data pane will contain a simple expression for your field. In our example, `[Sum(Sales)]` will appear for the field expression `=Sum(Fields!Sales.Value)`. If no groups are specified, the chart will only show one data point. In order to show multiple data points, you must group your data by adding a grouping field. When you add the Name field to the Category Groups area, a grouping field of the same name as the name of the field is automatically added to the chart. When fields that define the values along the x and y axes are added, the chart has enough information to plot the data correctly.  
@@ -57,7 +57,7 @@ The more time you spend carefully preparing and understanding your data before y
   
  Shape charts such as pie charts support category groups and nested category groups. Other charts such as bar charts support category groups and series groups. You can nest groups, but make sure that the numbers of categories or series do not obscure the presentation of information in the chart.  
   
-### Adding series grouping to a chart  
+### Add series grouping to a chart  
  If you add a field to the Series Groups area, the number of series depends on the data that is contained in that field. In our earlier example, suppose you add a Year field to the Series Groups area. The number of values in the Year field will determine how many series will appear on the chart. If the Year field contains the years 2004, 2005, and 2006, the chart will display three series for every field in the Values area.  
   
 ##  <a name="DatasetConsiderations"></a> Dataset considerations before creating a chart  
@@ -72,15 +72,15 @@ The more time you spend carefully preparing and understanding your data before y
   
  There are several ways you can consolidate data on a chart:  
   
--   When using a pie chart, collect small slices into one slice called "Other." This will reduce the number of slices on your pie chart. For more information, see [Collect Small Slices on a Pie Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/collect-small-slices-on-a-pie-chart-report-builder-and-ssrs).  
+- When using a pie chart, collect small slices into one slice called "Other." This will reduce the number of slices on your pie chart. For more information, see [Collect Small Slices on a Pie Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/collect-small-slices-on-a-pie-chart-report-builder-and-ssrs).  
   
--   Avoid using data point labels when there are numerous data points. Data point labels are most effective when there are only a few points on the chart.  
+- Avoid using data point labels when there are numerous data points. Data point labels are most effective when there are only a few points on the chart.  
   
--   Filter unwanted or irrelevant data. This helps you highlight the key data that you are trying to show on the chart. To filter data points in a chart, set a filter on a category group or a series group. By default, the chart uses the built-in function Sum to aggregate values that belong to the same group into an individual data point in the series. If you change the aggregate function of a series, you must also change the aggregate function in the filter expression. For more information, see [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs).  
+- Filter unwanted or irrelevant data. This helps you highlight the key data that you are trying to show on the chart. To filter data points in a chart, set a filter on a category group or a series group. By default, the chart uses the built-in function Sum to aggregate values that belong to the same group into an individual data point in the series. If you change the aggregate function of a series, you must also change the aggregate function in the filter expression. For more information, see [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs).  
   
--   To display ratio data in a table or matrix template, consider using a linear gauge instead of a bar graph. Gauges are better suited for showing a single value inside a cell. For more information, see [Nested Data Regions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs).  
+- To display ratio data in a table or matrix template, consider using a linear gauge instead of a bar graph. Gauges are better suited for showing a single value inside a cell. For more information, see [Nested Data Regions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs).  
    
-##  <a name="AggregateValues"></a> Aggregating values from a data field on the chart  
+##  <a name="AggregateValues"></a> Aggregate values from a data field on the chart  
  By default, when a field is added to the Values area of the chart, Report Builder calculates an aggregate for the field. If you drag a field onto the chart without dropping the field into a specific area, the chart will determine whether this field belongs on the category (x) axis or value (y) axis based on the data type of the field. Numeric fields that are dropped in the Values area are aggregated using the SUM function. If the data type of your value field is String in the Values area, the chart cannot display a numeric value, even if there are numbers in the fields, so the chart displays the COUNT function. To avoid this behavior, make sure that the fields that you use have numeric data types, instead of Strings that contain formatted numbers. You can use a Visual Basic expression to convert String values to a numeric data type using the **CDbl** or **CInt** constant. For example, the following complex expression converts a field that is named `MyField` that contains numeric values that are formatted as Strings.  
   
  `=Sum(CDbl(Fields!MyField.Value))`  
@@ -119,6 +119,7 @@ The more time you spend carefully preparing and understanding your data before y
  Describes tips for working with charts.  
   
 ## Next steps 
+
  [Images, Text Boxes, Rectangles, and Lines &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/images-text-boxes-rectangles-and-lines-report-builder-and-ssrs)   
  [Interactive Sort, Document Maps, and Links &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/interactive-sort-document-maps-and-links-report-builder-and-ssrs)   
  [Nested Data Regions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs)   
