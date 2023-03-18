@@ -14,7 +14,7 @@ ms.date: 02/01/2023
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-A Power BI report is one or more pages of organized visuals. Power BI designers create reports and [share them directly](../collaborate-share/end-user-shared-with-me.md) with business users, or add them to an [app](end-user-apps.md). You must have a Power BI Pro or Premium Per User license to open a report that has been shared with you, unless the report is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). A user with any Power BI license can have access to reports stored in Premium capacity or in their own My workspace. For more information, see [Licenses and subscriptions for business users](end-user-license.md).
+A Power BI report is one or more pages of organized visuals. Power BI designers create reports and [share them directly](../collaborate-share/end-user-shared-with-me.md) with business users, or add them to an [app](end-user-apps.md). You must have a Power BI Pro or Premium Per User license to open a report that has been shared with you, unless the report is stored in [Premium capacity](end-user-license.md#identify-content-that's-hosted-in-premium-capacity). A user with any Power BI license can have access to reports stored in Premium capacity or in their own My workspace. For more information, see [Licenses and subscriptions for business users](end-user-license.md).
 
 Explore the following guidance to learn how to open a report from the Browse page and from a dashboard.
 
@@ -60,7 +60,7 @@ There are many ways for you to interact with a report to discover insights and m
 
 The apps you receive from colleagues are located on the Home page and in the Apps container on your navigation pane. An [app](end-user-apps.md) is a collection of dashboards and reports that a Power BI designer compiles for you.
 
-You must have a Power BI Pro license to open an app unless the app workspace is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). A user with any Power BI license can have access to reports stored in Premium capacity.  
+You must have a Power BI Pro license to open an app unless the app workspace is stored in [Premium capacity](end-user-license.md#identify-content-that's-hosted-in-premium-capacity). A user with any Power BI license can have access to reports stored in Premium capacity.  
 
 You can follow along in this tutorial with Microsoft sample content.
 
