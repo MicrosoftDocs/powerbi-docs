@@ -25,7 +25,7 @@ What you can do in the Power BI service depends on three things:
 - Where the content is stored
 - The roles and permissions you're assigned
 
-:::image type="content" source="media/end-user-license/power-bi-questions-small.png" alt-text="Graphic of a woman with questions about licenses and permissions surrounding her.":::
+:::image type="content" source="media/end-user-license/power-bi-questions-small.png" alt-text="Illustration that shows a woman with questions about licenses and permissions surrounding her.":::
 
 This article describes the capabilities of each license type and how the location where content is stored affects what you can do with it. You learn how to look up your license and subscription information, and figure out where your content is stored. For more information about roles and permissions, see [Collaborate in workspaces](end-user-workspaces.md).
 
