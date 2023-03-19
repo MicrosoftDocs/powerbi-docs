@@ -24,6 +24,16 @@ For related "What's New" information, see:
 
 ## March 2023
 
+### New look and feel for tooltips on visuals (iOS and Android)
+
+Enjoy custom styling and mobile-friendly actions on data points.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-tooltips.png" alt-text="Screenshot showing new tooltip on a data point in the Power BI mobile app." border="false":::
+
+### Discover content from external orgs (iOS and Android)
+
+View data you can access from outside your company, right in your Power BI app.
+
 ### Automatic page refresh support (iOS and Android)
 
 The Power BI mobile apps for iOS and Android have joined the app for Windows in supporting automatic page refresh. Now, report pages configured with [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will automatically refresh in your Power BI app no matter which of those devices you're on!
