@@ -36,6 +36,10 @@ It's just gotten easier to access your external content from your Power BI mobil
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-external-content-strip.png" alt-text="Screenshot of the From external orgs option on the Power BI mobile app home page." border="false":::
 
+### Set your language for the app (Android)
+
+Just as you could for iOS devices, you can now set individual language preferences for the Power BI app on your Android device! On your Android device, go to **Settings > Apps > Power BI**, and set your preferred language. Available for Android 13 and above.
+
 ### Automatic page refresh support (iOS and Android)
 
 The Power BI mobile apps for iOS and Android have joined the app for Windows in supporting automatic page refresh. Now, report pages configured with [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will automatically refresh in your Power BI app no matter which of those devices you're on!
