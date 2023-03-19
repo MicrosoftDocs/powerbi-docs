@@ -26,7 +26,7 @@ For related "What's New" information, see:
 
 ### New look and feel for tooltips on visuals (iOS and Android)
 
-Tooltips on visuals have a new look and feel! Now, when you tap and hold on a data point, you'll enjoy a sleek, user-friendly tooltip that includes a pointer to help you identify the selected data point, as well as clear, easy-to-use actions such as drill-down and drill-through. And if the tooltip has custom styling, you'll see that too!
+Tooltips on visuals have a new look and feel! Now, when you tap and hold on a data point, you'll enjoy a sleek, user-friendly tooltip. The re-designed tooltip features a pointer to help you identify the selected data point, and clear, easy-to-use actions such as drill-down and drill-through. The new tooltip supports custom styling configured by the report creator, and report creators can even disable tooltips for a visual if they think it's better without one.
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-tooltips.png" alt-text="Screenshot showing new tooltip on a data point in the Power BI mobile app." border="false":::
 
