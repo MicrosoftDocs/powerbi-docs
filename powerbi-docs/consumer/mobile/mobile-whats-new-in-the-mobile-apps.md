@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/13/2023
+ms.date: 03/19/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -26,13 +26,15 @@ For related "What's New" information, see:
 
 ### New look and feel for tooltips on visuals (iOS and Android)
 
-Enjoy custom styling and mobile-friendly actions on data points.
+Tooltips on visuals have a new look and feel! Now, when you tap and hold on a data point, you'll enjoy a sleek, user-friendly tooltip that includes a pointer to help you identify the selected data point, as well as clear, easy-to-use actions such as drill-down and drill-through. And if the tooltip has custom styling, you'll see that too!
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-tooltips.png" alt-text="Screenshot showing new tooltip on a data point in the Power BI mobile app." border="false":::
 
 ### Discover content from external orgs (iOS and Android)
 
-View data you can access from outside your company, right in your Power BI app.
+It's just gotten easier to access your external content from your Power BI mobile app! If you have access to items from external organizations, you can now have these items always available for quick access right from the app's home page. Just tap the newly added drop-down arrow on the third content strip and change **Recommended** to **From external orgs**. Check it out!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-external-content-strip.png" alt-text="Screenshot of the From external orgs option on the Power BI mobile app home page." border="false":::
 
 ### Automatic page refresh support (iOS and Android)
 
