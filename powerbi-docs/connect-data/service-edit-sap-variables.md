@@ -86,7 +86,7 @@ If you get errors that Power BI can't load data or retrieve data for a visual, o
 
 ## Next steps
 
-- [Use SAP HANA in Power BI Desktop](/power-query/connectors/sap-hana/overview)
+- [Use SAP HANA in Power BI Desktop](desktop-sap-hana.md)
 - [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
 - [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
 - [Use DirectQuery in Power BI](desktop-directquery-about.md)

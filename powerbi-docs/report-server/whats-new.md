@@ -222,7 +222,7 @@ Here are highlights of the new features in Power BI Desktop for Power BI Report 
 - [Invert axis and continuous axis sorting](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#invert-the-y-axis).
 - [CALCULATE filters](/dax/calculate-function-dax) are easier to use.
 - Performance improvements to [IF](/dax/if-function-dax) and [SWITCH](/dax/switch-function-dax) functions.
-- [Text/CSV by example](/power-query/connectors/text-csv).
+- [Text/CSV by example](../connect-data/desktop-connect-csv.md).
 
 **Other new and updated features**
 

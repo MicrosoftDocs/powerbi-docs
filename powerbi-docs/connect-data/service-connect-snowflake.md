@@ -74,4 +74,4 @@ If you run into any issues with the integration, see the Snowflake [troubleshoot
 
 * [Data sources for the Power BI service](service-get-data.md)
 * [Connect to datasets in the Power BI service from Power BI desktop](desktop-report-lifecycle-datasets.md)
-* [Connect to Snowflake in Power BI Desktop](/power-query/connectors/snowflake)
+* [Connect to Snowflake in Power BI Desktop](desktop-connect-snowflake.md)

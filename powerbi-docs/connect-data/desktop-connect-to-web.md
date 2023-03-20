@@ -55,6 +55,6 @@ There are all sorts of data you can connect to using Power BI Desktop. For more 
 
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Connect to Excel workbooks in Power BI Desktop](/power-query/connectors/excel)
-* [Connect to CSV files in Power BI Desktop](/power-query/connectors/text-csv)
+* [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)
+* [Connect to CSV files in Power BI Desktop](desktop-connect-csv.md)
 * [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)
