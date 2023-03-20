@@ -30,11 +30,11 @@ You don't need a Power BI license to explore the samples in Power BI Desktop. Yo
 
 Before you can use the sample, get the sample in one of the following ways:
 
-- Get the [built-in sample in the service](#get-the-built-in-sample).
-- Download the [.pbix file](#get-the-pbix-file-for-this-sample).
-- Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
+- Get the [built-in sample in the Power BI service](#get-the-sample-in-the-power-bi-service). This sample includes a report and a dashboard.
+- Download the [.pbix file](#get-the-pbix-file-for-this-sample) to explore in Power BI Desktop.
+- Download the [Excel workbook](#get-the-excel-workbook-for-this-sample) to view the raw data in Excel, or publish to the Power BI service.
 
-### Get the built-in sample
+## Get the sample in the Power BI service
 
 1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
@@ -48,45 +48,9 @@ Before you can use the sample, get the sample in one of the following ways:
 
    Select the dashboard to view the sample dashboard.
 
-### Get the .pbix file for this sample
+### What's the dashboard telling us?
 
-Alternatively, you can download the Sales and Marketing sample as a [.pbix file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
-
-1. After you open the file in Power BI Desktop, select **File** > **Publish** > **Publish to Power BI** or choose **Publish** in the **Home** ribbon.
-
-1. In the **Publish to Power BI** dialog, choose a workspace and then **Select**.
-
-1. In the Power BI service, in your workspace, scroll down to the **IT Spend Analysis Sample** report and select to open.
-
-1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
-
-The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
-
-### Get the Excel workbook for this sample
-
-If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot** > **Manage**.
-
-If you want to get and use the Excel file in the Power BI service, follow these steps:
-
-1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *Sales and Marketing Sample-no-PV.xlsx*.
-
-1. Open the file in Excel and then select **File** > **Publish** > **Publish to Power BI**.
-
-1. Select a workspace, such as **My workspace**, and choose **Export**.
-
-   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
-
-1. In the Power BI service, the exported data appears as a dataset in the selected workspace. Select **More options** (...) > **Auto-create report**.
-
-1. Select **Save**, enter a name for your report, and then choose **Save**.
-
-1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
-
-The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
-
-## What is the dashboard telling us?
-
-Let's start the tour at the dashboard and look at the tiles the CMO has chosen to pin. We see information about our market share, sales, and sentiment. The dashboard breaks down data by region, time, and competition.
+If you got the [built-in sample in the Power BI service](#get-the-sample-in-the-power-bi-service), you have a report *and* a dashboard. Let's start the tour at the dashboard and look at the tiles the CMO has chosen to pin. We see information about our market share, sales, and sentiment. The dashboard breaks down data by region, time, and competition.
 
 - The number tiles along the left column show industry sales volume for the past year (50,000), market share (32.86%), sales volume (16,000), sentiment score (68), sentiment gap (4), and total units sold (1 million).
 - The top line chart (**% Units Market Share vs. % Units Market Share Rolling 12 Months**) shows how our market share fluctuates over time. Notice the large drop in June. Our rolling 12-month (R12M) share, which was increasing for a while, is now starting to stall.
@@ -95,11 +59,11 @@ Let's start the tour at the dashboard and look at the tiles the CMO has chosen t
 - The line chart at the bottom (**Total Units for 2014**) shows that our dip in June isn't seasonal. None of our competitors show the same trend.
 - The **Total Units Overall** and **Total Units YTD** tiles on the right show units sold, by segment and by region/manufacturer. The largest market segments for our industry are **Productivity** and **Convenience**.
 
-## Use Q&A to dig a little deeper
+### Use Q&A to dig a little deeper
 
-By using Q&A, you can discover other details in the data.
+By using Q&A in the dashboard, you can discover other details in the data.
 
-### Which segments drive sales? Do they match the industry trend?
+#### Which segments drive sales? Do they match the industry trend?
 
 1. Select the **Total Units Overall by Segment** tile, which opens Q&A and populates it with the query, *total units by segment*.
 1. At the end of the existing query, add: *for VanArsdel*. Q&A interprets the question and displays an updated chart with the answer. The product volume is mostly from the **Convenience** and **Moderation** segments.
@@ -109,7 +73,7 @@ By using Q&A, you can discover other details in the data.
 1. Our share in the **Moderation** and **Convenience** categories is high. VanArsdel competes in these segments.
 1. Return to the dashboard by selecting the **Sales and Marketing Sample** from the left navigation bar.
 
-### What does total unit market share look like for category (versus region)?
+#### What does total unit market share look like for category (versus region)?
 
 1. Notice the **Total Units YTD by Manufacturer, Region** tile. What is the total unit market share by category?
 
@@ -121,11 +85,25 @@ By using Q&A, you can discover other details in the data.
 
 1. To compare the findings, pin the chart to your dashboard. Notice this interesting fact: In 2014, VanArsdel sold only products in the **Urban** category.
 
+## Get the .pbix file for this sample
+
+Alternatively, you can download the Sales and Marketing sample as a [.pbix file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix). You can explore this sample in Power BI Desktop, and you can upload it to the Power BI service.
+
+1. After you open the file in Power BI Desktop, select **File** > **Publish** > **Publish to Power BI** or choose **Publish** in the **Home** ribbon.
+
+1. In the **Publish to Power BI** dialog, choose a workspace and then **Select**.
+
+1. In the Power BI service, in your workspace, scroll down to the **IT Spend Analysis Sample** report and select to open.
+
+1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
+
+The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
+
 ## Sales and Marketing Sample report
 
-Dashboards are entry points into reports. If you create a tile from an underlying report, selecting that tile opens the report.
-
-On our dashboard, the **% Units Market Share R12M** line in the **% Units Market Share vs. % Units Market Share Rolling 12 Months** chart shows that our market share is no longer increasing over time. It's even declining a bit. Why do we have a large market share dip in June?
+- If you got the [built-in sample in the Power BI service](#get-the-sample-in-the-power-bi-service), you can open the repot from the dashboard. Dashboards are entry points into reports. If you create a dashboard tile from an underlying report, selecting that tile opens the report.
+- If you downloaded the [.pbix file](#get-the-pbix-file-for-this-sample), then uploaded it to the Power BI service, you don't have a dashboard, but you have the full report. Open it from the workspace where you saved it.
+- If you downloaded the [Excel workbook version](#get-the-excel-workbook-for-this-sample) of this sample, you don't have the dashboard or the report, but Power BI can auto-create a report for you from the data.
 
 The report has four pages:
 
@@ -138,11 +116,11 @@ The report has four pages:
 
 Page one of the report focuses on VanArsdel's market share.
 
-1. On the dashboard, select the **% Units Market Share vs. % Units Market Share Rolling 12 Months** chart to open the **VanArsdel - Market Share** page of the Sales and Marketing Sample report.
+1. Open the **VanArsdel - Market Share** page of the Sales and Marketing Sample report.
 
    :::image type="content" source="media/sample-sales-and-marketing/sales5.png" alt-text="Screenshot of the VanArsdel Market Share page." lightbox="media/sample-sales-and-marketing/sales5.png":::
 
-1. Look at the **Total Units by Month and isVanArsdel** column chart at the bottom of the report. The black column represents VanArsdel (our products), and the green column is our competition. The drop in June 2014 that VanArsdel experienced wasn't due to the competition.
+1. Look at the **Total Units by Month and isVanArsdel** column chart at the bottom of the report. The black column represents VanArsdel (our products), and the green column is our competition. The **% Units Market Share R12M** line in the **% Units Market Share vs. % Units Market Share Rolling 12 Months** chart shows that our market share is no longer increasing over time. It's even declining a bit. Why do we have a large market share dip in June?
 
 1. The **Total Category Volume by Segment** bar chart on the right is filtered to show VanArsdel's top two segments. Take a closer look at this filter:
 
@@ -203,6 +181,28 @@ Notice the following details:
 - Remember the market share dip in June? June is a significant month for the **Productivity** segment, a segment VanArsdel doesn't compete in at all. This detail could help explain the market share dip in June.
 
 By filtering the visualizations by VanArsdel, by segment, by month, and by region, VanArsdel can discover growth opportunities.
+
+## Get the Excel workbook for this sample
+
+If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot** > **Manage**.
+
+If you want to get and use the Excel file in the Power BI service, follow these steps:
+
+1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *Sales and Marketing Sample-no-PV.xlsx*.
+
+1. Open the file in Excel and then select **File** > **Publish** > **Publish to Power BI**.
+
+1. Select a workspace, such as **My workspace**, and choose **Export**.
+
+   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
+
+1. In the Power BI service, the exported data appears as a dataset in the selected workspace. Select **More options** (...) > **Auto-create report**.
+
+1. Select **Save**, enter a name for your report, and then choose **Save**.
+
+1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
+
+The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
 
 ## Next steps
 
