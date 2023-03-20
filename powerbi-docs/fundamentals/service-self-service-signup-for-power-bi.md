@@ -19,7 +19,7 @@ Power BI can be your personal data analysis and visualization tool, and can also
 For definitions and an overview of self-service-sign-up and self-service purchase, visit [Self-service for Power BI](service-self-service-signup-purchase-for-power-bi.md).
 
 ## License scenarios
-Use this chart to help determine which type of license you need. Power BI Desktop is always free. The Power BI service offers both free and paid license options. Paid options include Power BI Pro and Power BI Premium Per User (PPU). A paid subscription option is also available: Power BI Premium. Some questions to ask yourself are: "Will I be creating content or will I only be consuming content created by others?", "Will I be sharing my content with others?", "Do I have access to Premium capacity?". For help answering these questions, see [Power BI feature list for consumers](../consumer/end-user-features.md), [What is Premium](../enterprise/service-premium-gen2-what-is.md), and [Licenses and subscriptions for business users and consumers](../consumer/end-user-license.md).
+Use this chart to help determine which type of license you need. Power BI Desktop is always free. The Power BI service offers both free and paid license options. Paid options include Power BI Pro and Power BI Premium Per User (PPU). A paid subscription option is also available: Power BI Premium. Some questions to ask yourself are: "Will I be creating content or will I only be consuming content created by others?", "Will I be sharing my content with others?", "Do I have access to Premium capacity?". For help answering these questions, see [Power BI feature list for consumers](../consumer/end-user-features.md), [What is Premium](/power-bi/enterprise/service-premium-what-is), and [Licenses and subscriptions for business users and consumers](../consumer/end-user-license.md).
 
 |Scenario  |Creator  |Consumer  |
 |---------|---------|---------|
@@ -185,5 +185,3 @@ The type of upgrade and trial options that you are offered will depend on how yo
 [Tips for finding help](../support/service-tips-for-finding-help.md)    
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-

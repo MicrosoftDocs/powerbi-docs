@@ -29,7 +29,7 @@ You have options for interacting with the shared dashboards and reports, dependi
 To view content that others have shared with you, there are two options.
 
 - **The content *isn't* in a Power BI Premium capacity**: All business users need Power BI Pro or Premium Per User (PPU) licenses to view shared content.
-- **The content *is* in a Power BI Premium capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses can view the content. However, you can't copy the reports, or create reports based on the underlying datasets. For more information, see [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md)
+- **The content *is* in a Power BI Premium capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses can view the content. However, you can't copy the reports, or create reports based on the underlying datasets. For more information, see [What is Power BI Premium?](/power-bi/enterprise/service-premium-what-is)
 
 ## View and open content from your *Shared with me* tab
 

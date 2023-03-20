@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 02/26/2023
+ms.date: 03/06/2023
 LocalizationGroup: Reports
 ---
 
@@ -19,28 +19,28 @@ It's hard to make one visual that satisfies everyone's requirements. But, when a
 
 Maybe you'd like to swap what's on the axis, change the visual type, or add something to the tooltip. With the **Personalize this visual** feature, make the changes yourself and when you have the visual the way you want it, save it as a [bookmark](end-user-bookmarks.md) to come back to. You don't even need edit permission for the report.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-new.png" alt-text="Screenshot of a report visual with the Personalize window open.":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-new.png" alt-text="Screenshot of a report visual with the Personalize menu highlighted.":::
 
 ## What you can change
 
-This feature helps you gain further insights through ad-hoc exploration of visuals on a Power BI report. Here are some of the modifications that you can make. The available options vary by visual type.
+This feature helps you gain further insights through ad-hoc exploration of visuals on a Power BI report. The following are some of the modifications that you can make. The available options vary by visual type.
 
-- Change the visualization type
-- Swap out a measure or dimension
-- Add or remove a legend
-- Compare two or more measures
-- Change aggregations, etc.
+- Change the visualization type.
+- Swap out a measure or dimension.
+- Add or remove a legend.
+- Compare two or more measures.
+- Change aggregations, and more.
 
 Not only does this feature allow for new exploration capabilities, it also includes ways for you to capture and share your changes:
 
-- Capture your changes
-- Share your changes
-- Reset all your changes for a report
-- Reset all your changes for a visual
-- Clear out your recent changes
+- Capture your changes.
+- Share your changes.
+- Reset all your changes for a report.
+- Reset all your changes for a visual.
+- Clear out your recent changes.
 
 > [!IMPORTANT]
-> The ability to personalize a visual must be enabled by the report *designer*. If you don't see the **Personalize this visual** :::image type="icon" source="media/end-user-personalize-visuals/power-bi-personalize-visual-icon-new.png"::: icon, then the report designer has not enabled this feature for the current report. Check with the report owner or your Power BI administrator to have the feature enabled. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
+> The ability to personalize a visual must be enabled by the report *designer*. If you don't see the **Personalize this visual** :::image type="icon" source="media/end-user-personalize-visuals/power-bi-personalize-visual-icon-new.png"::: icon, then the report designer didn't enable this feature for the current report. Check with the report owner or your Power BI administrator to have the feature enabled. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
 
 ## Personalize visuals in the Power BI service
 
@@ -48,7 +48,7 @@ By personalizing a visual, you can explore your data in many ways, without leavi
 
 1. Open a report in reading view in the Power BI service.
 
-2. In the menu bar for the visual, select the **Personalize this visual** :::image type="icon" source="media/end-user-personalize-visuals/power-bi-personalize-visual-icon-new.png"::: icon.
+1. In the menu bar for the visual, select the **Personalize this visual** :::image type="icon" source="media/end-user-personalize-visuals/power-bi-personalize-visual-icon-new.png"::: icon.
 
 ### Change the visualization type
 
@@ -70,57 +70,57 @@ By adding a legend, you can color-code a visual based on a category. In this exa
 
 ### Change the placement of fields
 
-Using drag and drop, you can change the placement of fields within the same visual property or even across different visual properties. For example, you can quickly move a field in the legend to the axis of a visual.
+By using drag and drop, you can change the placement of fields within the same visual property or even across different visual properties. For example, you can quickly move a field in the legend to the axis of a visual.
 
-:::image type="content" source="media/end-user-personalize-visuals/personalize-drag-and-drop.png" alt-text="Screenshot of dragging a field in a Power BI visual.":::
+:::image type="content" source="media/end-user-personalize-visuals/personalize-drag-and-drop.png" alt-text="Screenshot of the Personalize pane with the axis option highlighted.":::
 
 You can also quickly reorder the columns of a table or matrix.
 
-:::image type="content" source="media/end-user-personalize-visuals/personalize-reorder-columns.png" alt-text="Screenshot of reordering columns in a table in the Personalize window.":::
+:::image type="content" source="media/end-user-personalize-visuals/personalize-reorder-columns.png" alt-text="Screenshot of a table with a set of values in the Personalize pane highlighted.":::
 
 ### Compare two or more different measures
 
 Compare and contrast values for different measures by using the + icon to add multiple measures for a visual. To remove a measure, select **More options (...)** and choose **Remove field**.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-compare-measures.png" alt-text="Screenshot of how a user can compare measures.":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-compare-measures.png" alt-text="Screenshot of a report visual that shows the connection between the report legend and values in the Personalize pane.":::
 
 ### Change aggregations
 
 Change how a measure is computed by changing the aggregation in the **Personalize** pane. Select **More options (...)** and choose the aggregation to use.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-aggregation.png" alt-text="Screenshot of how a user can change aggregations.":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-aggregation.png" alt-text="Screenshot of a report visual with some aggregation values highlighted.":::
 
 ### Capture changes
 
 Using personal bookmarks, capture your changes so you can return to your personalized view. Select **Bookmarks** > **Personal bookmarks** and give the bookmark a name.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-bookmark-new.png" alt-text="Screenshot of how a user can create a bookmark.":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-bookmark-new.png" alt-text="Screenshot of the Personal bookmarks dialog with the option to make this the default view selected.":::
 
 You can also make the bookmark your default view.
 
 ### Share changes
 
-If you have read and reshare permissions, when you share the report you can choose to include your changes. This personalized version does not overwrite the author's version. The colleague who is viewing your personalized report can select **Reset to default** and return to the author's version of the report. If the colleague has editing permissions, they can save your personalized version as a new report.
+If you've read and re-share permissions, when you share the report you can choose to include your changes. This personalized version does not overwrite the author's version. The colleague who is viewing your personalized report can select **Reset to default** and return to the author's version of the report. If the colleague has editing permissions, they can save your personalized version as a new report.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-share-changes-new.png" alt-text="Screenshot of how a user can share changes.":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-share-changes-new.png" alt-text="Screenshot of the Send link dialog with the option to include changes selected.":::
 
 ### Reset all your changes to a report
 
 From the upper-right corner of your report canvas, select **Reset to default**. This removes all your changes in the report and sets it back to the author's last saved view of the report.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-all-new.png" alt-text="Screenshot of how a user can reset all changes.":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-all-new.png" alt-text="Screenshot of the reset icon on the report canvas.":::
 
 ### Reset all your changes to a visual
 
 From the menu bar for the visual, select **Reset this visual** to remove all your changes to a particular visual and set it back to the author's last saved view of that visual.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-visual-new.png" alt-text="Screenshot of how a user can reset all visual changes.":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-visual-new.png" alt-text="Screenshot of the visual menu bar with the reset icon highlighted.":::
 
 ### Clear recent changes
 
-Select the eraser icon to clear all recent changes you've made since you opened the **Personalize** pane.  
+Select the eraser icon to clear all changes since you opened the **Personalize** pane.  
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-revert-changes-new.png" alt-text="Revert recent changes":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-revert-changes-new.png" alt-text="Screenshot of the Personalize pane with the eraser icon highlighted.":::
 
 ## Considerations and limitations
 

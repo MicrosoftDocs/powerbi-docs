@@ -298,5 +298,5 @@ For more information, see these articles:
 * [Deploying and managing Power BI Premium capacities](../guidance/whitepaper-powerbi-premium-deployment.md)
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Connect to Excel workbooks in Power BI Desktop](../connect-data/desktop-connect-excel.md)
+* [Connect to Excel workbooks in Power BI Desktop](/power-query/connectors/excel)
 * [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)
