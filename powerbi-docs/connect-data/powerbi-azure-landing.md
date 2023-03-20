@@ -93,8 +93,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                     <div class="cardText"> 
                                           <h3>Analyze your Azure costs and usage</h3> 
                                           <p></p>
-                                                <a href="desktop-connect-azure-cost-management.md">Connect to Azure Cost Management</a><br/> 
-                                                <a href="/power-bi/connect-data/desktop-connect-azure-cost-management">Connect to Azure Consumption Insights</a>
+                                                <a href="desktop-connect-azure-consumption-insights.md">Connect to Azure Consumption Insights</a>
                                     </div> 
                               </div> 
                         </div> 

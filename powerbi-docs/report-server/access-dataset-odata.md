@@ -27,3 +27,5 @@ Be sure to use **Advanced Options** so you can turn on Open Type Columns and for
 Read more about [connecting to OData feeds in Power BI Desktop](/power-query/connectors/odata-feed).
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+

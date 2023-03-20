@@ -3842,7 +3842,7 @@ The following updates are new to **Power BI Desktop** this month:
 ### Data connectivity
 
 * AtScale connector (Beta) [[video]](https://youtu.be/AHNlkjRFdYI?t=1449)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#atScale) 
-* Oracle Essbase connector (Beta)  [[video]](https://youtu.be/AHNlkjRFdYI?t=1449)   [[article]](/power-query/connectors/pdf)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#essbase) 
+* Oracle Essbase connector (Beta)  [[video]](https://youtu.be/AHNlkjRFdYI?t=1449)   [[article]](../connect-data/desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#essbase) 
 
 
 ### Data preparation
@@ -3851,7 +3851,7 @@ The following updates are new to **Power BI Desktop** this month:
 
 
 ### Other
-* High contrast support for all panes and report footer [[video]](https://youtu.be/AHNlkjRFdYI?t=1631)   [[article]](/power-query/connectors/pdf)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#highContrast) 
+* High contrast support for all panes and report footer [[video]](https://youtu.be/AHNlkjRFdYI?t=1631)   [[article]](../connect-data/desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#highContrast) 
 * Updated keyboard shortcut dialog [[video]](https://youtu.be/AHNlkjRFdYI?t=1654)   [[article]](../create-reports/desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#keyboardShortcuts) 
 
 
@@ -3904,8 +3904,8 @@ The following updates are new to **Power BI Desktop** in November:
 ### Data connectivity
 
 * Azure Developer Operations Server connector [[video]](https://youtu.be/1xsXXoyTxfk?t=2641)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
-* PDF Connector support for Start Page and End Page parameters  [[video]](https://youtu.be/1xsXXoyTxfk?t=2667)   [[article]](/power-query/connectors/pdf)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23pdf) 
-* Improved Azure Consumption Insights connector  [[video]](https://youtu.be/1xsXXoyTxfk?t=2704)  [[article]](/power-bi/connect-data/desktop-connect-azure-cost-management)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23consumptionInsights) 
+* PDF Connector support for Start Page and End Page parameters  [[video]](https://youtu.be/1xsXXoyTxfk?t=2667)   [[article]](../connect-data/desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23pdf) 
+* Improved Azure Consumption Insights connector  [[video]](https://youtu.be/1xsXXoyTxfk?t=2704)  [[article]](../connect-data/desktop-connect-azure-consumption-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23consumptionInsights) 
 
 
 > [!NOTE]
@@ -3950,7 +3950,7 @@ The following updates were new to **Power BI Desktop** in October:
 
 ### Data connectivity
 
-* Web by Example connector now generally available [[video]](https://youtu.be/MhrhIXNtelw)  [[article]](/power-query/connectors/web/web-by-example)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23webByExample) 
+* Web by Example connector now generally available [[video]](https://youtu.be/MhrhIXNtelw)  [[article]](../connect-data/desktop-connect-to-web-by-example.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23webByExample) 
 * SAP BW connector implementation v2 now generally available  [[video]](https://youtu.be/MhrhIXNtelw?t=133)   [[article]](../connect-data/desktop-sap-bw-connector.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBW) 
 * SAP BW Message Server Connector now generally available  [[video]](https://youtu.be/MhrhIXNtelw?t=159)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBWmessageServer) 
 * Vertica connector now generally available   [[video]](https://youtu.be/MhrhIXNtelw?t=175)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23vertica) 
@@ -4005,7 +4005,7 @@ The following updates were new to **Power BI Desktop** this month:
 
 ### Data connectivity
 
-* PDF file connector (preview)  [[video]](https://youtu.be/Rzw2WyI09kY?t=29m26s)  [[article]](/power-query/connectors/pdf)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#pdf) 
+* PDF file connector (preview)  [[video]](https://youtu.be/Rzw2WyI09kY?t=29m26s)  [[article]](../connect-data/desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#pdf) 
 * SAP BW connector - support for measure properties  [[video]](https://youtu.be/Rzw2WyI09kY?t=30m15s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#sapBW) 
 * Dataflows connector (beta)  [[article]](../transform-model/desktop-connect-dataflows.md)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#dataflows) 
 
@@ -4117,8 +4117,8 @@ The following updates were new to **Power BI Desktop** in July:
 ### Data connectivity
 
 * IBM DB2 DirectQuery connector (Preview)  [[video]](https://youtu.be/Mtig3rmIUe0?t=54m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#IBMDB2) 
-* Improvements to Web By Example connector  [[video]](https://youtu.be/Mtig3rmIUe0?t=54m53s)  [[article]](/power-query/connectors/web/web-by-example)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#WebByExample) 
-* SAP HANA - default values for variables in Variable Input experience [[video]](https://youtu.be/Mtig3rmIUe0?t=56m19s)  [[article]](/power-query/connectors/sap-hana/overview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#SAPHANA) 
+* Improvements to Web By Example connector  [[video]](https://youtu.be/Mtig3rmIUe0?t=54m53s)  [[article]](../connect-data/desktop-connect-to-web-by-example.md)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#WebByExample) 
+* SAP HANA - default values for variables in Variable Input experience [[video]](https://youtu.be/Mtig3rmIUe0?t=56m19s)  [[article]](../connect-data/desktop-sap-hana.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#SAPHANA) 
 
 
 > [!NOTE]
@@ -4211,7 +4211,7 @@ The following updates were new to **Power BI Desktop** in May:
 
 ### Data connectivity
 
-* New **From Web** connector - by example data extraction (preview)  [[video]](https://youtu.be/-_GMCE1TLvQ?t=10m17s) [[article]](/power-query/connectors/web/web-by-example)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#FromWebConnector) 
+* New **From Web** connector - by example data extraction (preview)  [[video]](https://youtu.be/-_GMCE1TLvQ?t=10m17s) [[article]](../connect-data/desktop-connect-to-web-by-example.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#FromWebConnector) 
 * Common Data Service for Apps connector (beta)  [[video]](https://youtu.be/-_GMCE1TLvQ?t=12m9s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#cdsApps) 
 * Azure KustoDB connector (beta) [[video]](https://youtu.be/-_GMCE1TLvQ?t=12m9s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#kustoDB) 
 * Google BigQuery and Azure HDInsight Spark connectors now generally available [[video]](https://youtu.be/-_GMCE1TLvQ?t=12m9s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#googleBigQueryAzureHDInsightSpark) 
@@ -4636,7 +4636,7 @@ The following updates are new to **Power BI Desktop** in September:
 
 ### Data Connectivity:
 
--   Azure Consumption Insights connector  [[video]](https://youtu.be/moTQJlnClJw?t=44m57s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#azureConsumptionInsights) [[article]](/power-bi/connect-data/desktop-connect-azure-cost-management)
+-   Azure Consumption Insights connector  [[video]](https://youtu.be/moTQJlnClJw?t=44m57s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#azureConsumptionInsights) [[article]](../connect-data/desktop-connect-azure-consumption-insights.md)
 -   Improvements to the Dynamics 365 for Financials connector  [[video]](https://youtu.be/moTQJlnClJw?t=45m39s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#dynamics365ForFinancials)
 
 
@@ -5139,7 +5139,7 @@ The following updates were new to Power BI Desktop in September:
 
 -   New data connectors:
     -   Snowflake connector DirectQuery support [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
-    -   ProjectPlace connector [[article]](/power-query/connectors/impala-database) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+    -   ProjectPlace connector [[article]](../connect-data/desktop-connect-impala.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 -   Improvements to existing connectors:
     -   Oracle connector - improved Navigator previews performance [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
     -   OData connector - support for *Select Related Tables* option [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
@@ -5210,7 +5210,7 @@ The following updates are new to Power BI Desktop this month:
 -   New data connectors:
     -   Snowflake connector (Preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
 -   Improvements to existing connectors:
-    -   Impala connector - DirectQuery support [[article]](/power-query/connectors/impala-database) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
+    -   Impala connector - DirectQuery support [[article]](../connect-data/desktop-connect-impala.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
     -   Web connector - Web page previews [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=12m28s)
     -   General availability for the SAP Business Warehouse connector [[article]](../connect-data/desktop-sap-bw-connector.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
 
@@ -5251,8 +5251,8 @@ July brought another great collection of new features and highly anticipated dat
 ### Data Connectors:
 
 -   New data connectors:
-    -   Amazon Redshift [[article]](/power-query/connectors/amazon-redshift) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
-    -   Impala [[article]](/power-query/connectors/impala-database) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+    -   Amazon Redshift [[article]](../connect-data/desktop-connect-redshift.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+    -   Impala [[article]](../connect-data/desktop-connect-impala.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 -   Improvements to existing connectors:
     -   Web connector - support for specifying a connection timeout  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
     -   CSV and Text - support for fixed-width delimited files [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
@@ -5673,7 +5673,7 @@ Another month, another big collection of new features and improvements for Power
 ### Data Connectivity:
 
 -   [SSAS Multidimensional support](../connect-data/desktop-ssas-multidimensional.md)
--   [SAP Hana](/power-query/connectors/sap-hana/overview)
+-   [SAP Hana](../connect-data/desktop-sap-hana.md)
 -   [R Script](../connect-data/desktop-r-scripts.md)
 -   DirectQuery for SQL Server, Azure SQL Database and Azure Synapse Analytics (formerly SQL Data Warehouse)
 -   Azure Data Lake
