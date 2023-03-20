@@ -125,7 +125,7 @@ We recommend using bi-directional filtering only as needed. For more information
 
 ### Make this relationship active
 
-There can only be one active filter propagation path between two model tables. However, it's possible to introduce additional relationship paths, though you must set these relationships as *inactive*. Inactive relationships can only be made active during the evaluation of a model calculation. It' i's achieved by using the [USERELATIONSHIP](/dax/userelationship-function-dax) DAX function.
+There can only be one active filter propagation path between two model tables. However, it's possible to introduce additional relationship paths, though you must set these relationships as *inactive*. Inactive relationships can only be made active during the evaluation of a model calculation. It's achieved by using the [USERELATIONSHIP](/dax/userelationship-function-dax) DAX function.
 
 Generally, we recommend defining active relationships whenever possible. They widen the scope and potential of how report authors can use your model. Using only active relationships means that role-playing dimension tables should be duplicated in your model.
 

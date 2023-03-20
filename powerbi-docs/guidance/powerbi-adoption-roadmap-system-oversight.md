@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/31/2022
+ms.date: 2/19/2023
 ---
 
 # Power BI adoption roadmap: System oversight
@@ -37,6 +37,7 @@ The Power BI administrator role is a high privilege role because:
 
 - **User experience:** Settings that are managed by a Power BI administrator have a significant effect on user capabilities and user experience (described in the [Tenant settings](#tenant-settings) section below).
 - **Full security access:** Power BI administrators can update access permissions for workspaces in the tenant. The result is that an administrator can allow permission to view or download data and reports as they see fit (described in the [Tenant settings](#tenant-settings) section below).
+- **Personal workspace access:** Administrators can access contents and govern the [personal workspace](/power-bi/admin/service-admin-portal-workspaces#govern-my-workspaces) of any user.
 - **Metadata:** Power BI administrators can view all tenant metadata, including all user activities that occur in the Power BI service (described in the [Auditing and monitoring](#auditing-and-monitoring) section below).
 
 > [!IMPORTANT]
