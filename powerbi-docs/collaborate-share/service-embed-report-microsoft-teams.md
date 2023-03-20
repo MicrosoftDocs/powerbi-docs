@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 03/06/2023
+ms.date: 03/20/2023
 ---
 
 # Embed Power BI content in Microsoft Teams
@@ -44,40 +44,41 @@ Follow these steps to embed your report in a Microsoft Teams channel or chat.
 
 1. Select **Save** to Add the **Power BI** tab and go to report configuration.
 
-![Screenshot of the new added Power BI tab for Microsoft Teams.](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab-save.png)
+    :::image type="content" source="media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab-save.png" alt-text="Screenshot of the new added Power BI tab for Microsoft Teams.":::
 
-1. You will see configuration screen like below:
+1. You see a configuration screen like this one:
 
-![Screenshot of the configuration screen of new added Power BI tab for Microsoft Teams.](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab-configuration.png)
+    :::image type="content" source="media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab-configuration.png" alt-text="Screenshot of the configuration screen of new added Power BI tab for Microsoft Teams.":::
+Choose any of these options to integrate the report:
 
-You can choose any of the options below to integrate the report:
-- Paste the report link into 'Paste a Power BI link' input and press 'Add tab'. New tab will be added.
+- Paste the report link into **Paste a Power BI link** input and press **Add tab**. A new tab is added.
 
-> [!NOTE]
-> If you use share link to embed your report - make sure that other users have access to this report and required permissions are granted. They won't get access automatically in this case.
+    > [!NOTE]
+    > If you use **Share link** to embed your report, make sure that other users have access to this report and have the required permissions. They don't get access automatically in this case.
 
-- Click on 'Browse workspaces' to select report from a workspace or a Power BI app. 'Select a report, app or scorecard' dialog will be displayed, where you can choose any report, app or scorecard available for you. You can use 'Search' text input to find required artifact to open by text match.
+- Select **Browse workspaces** to select a report from a workspace or a Power BI app. Choose any report, app, or scorecard available for you in the **Select a report, app or scorecard** dialog. You can use the **Search** box to find the artifact you're looking for.
 
-- Click on 'Create new' to create new report.
+- Select **Create new** to create a new report.
 
-## Reset report in Microsoft Teams tab. Tab settings.
+### Reset a report in Microsoft Teams tab
 
-If you no longer need a report in created **Power BI** tab - you can reset it and configure new. To do this you would need to follow next steps:
-1. Right-click on Teams tab name, select 'Settings'
-1. Click on 'Reset tab' button.
+If you no longer need a report in a **Power BI** tab, you can reset it and configure a new report. Follow these steps.
 
-Tab will be reset, and you will see configuration screen where you can set up new report, app or scorecard.
-You can also tweak other parameters in 'Settings' dialog - like Tab name or permissions.
+1. Right-click the Teams tab name, and select **Settings**.
+1. Select the **Reset tab** button.
+
+The tab resets. You see a configuration screen where you can set up a new report, app, or scorecard.
+You can also adjust other parameters in the **Settings** dialog, such as Tab name and permissions.
 
 
 ### Reports you can embed on the Power BI tab
 
 You can embed the following report types on the **Power BI** tab:
 
-- Power BI interactive reports (.pbix files)
-- Power BI paginated reports (.rdl files)
-- Reports in workspaces, including My workspace
-- Reports in Power BI apps
+- Power BI interactive reports (.pbix files).
+- Power BI paginated reports (.rdl files).
+- Reports in workspaces, including My workspace.
+- Reports in Power BI apps.
 
 ## Start a conversation
 
@@ -100,7 +101,7 @@ When you add a Power BI report tab to Microsoft Teams, Microsoft Teams automatic
 - After you save the tab, you don't change the tab name through the tab settings. Use the **Rename** option to change it.
 - When you view Power BI tabs in Teams mobile, the best viewing experience is through the [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md). In the Teams Mobile tabs list, select **More options (...)** > **Open in browser**. When you have the Power BI mobile app installed on your device, the report opens in the Power BI mobile app. 
 - For other issues, see "Known issues and limitations" in [Collaborate in Microsoft Teams](service-collaborate-microsoft-teams.md#known-issues-and-limitations).
-- Cross-tenant links are not supported.
+- Cross-tenant links aren't supported.
 
 ## Next steps
 
