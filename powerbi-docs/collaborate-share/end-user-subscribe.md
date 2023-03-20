@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/30/2022
+ms.date: 02/21/2023
 LocalizationGroup: Common tasks
 ---
 
@@ -26,11 +26,10 @@ It's never been easier to stay up-to-date on your most important dashboards and 
 
 
 ## Requirements
-The requirements apply to users in the organization and to [guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you'll need either:
+The requirements apply to users in the organization and to [guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you'll need permissions to access the particular report or dashboard and **either**:
 
-- A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md) or
-- Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md), and 
-- permissions to access the particular report or dashboard. 
+- A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md), or
+- Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md) 
 
 Your Power BI admin also needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#create-email-subscriptions). To export or subscribe to paginated reports, [several tenant switches must be enabled](#subscribe-to-paginated-reports).
 
@@ -118,6 +117,17 @@ To create a subscription that includes others, in addition to the [requirements 
 ### Use group email aliases 
 When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../enterprise/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
 
+
+|Group type      |Supported in email subscriptions  |
+|---------|---------|
+|[Microsoft 365 groups](/microsoft-365/admin/create-groups/office-365-groups)     |      Yes   |
+|[Distribution groups](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)    |    Yes     |
+|[Dynamic distribution groups](/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)     |      Yes   |
+|[Security groups](/microsoft-365/admin/email/create-edit-or-delete-a-security-group)     |    No     |
+|[Mail-enabled security groups](/microsoft-365/admin/create-groups/compare-groups.md)    |     Yes    |
+
+
+
 > [!NOTE]
 > Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and don't support subscribing group aliases.  
 
@@ -131,7 +141,7 @@ You can subscribe external users to a report or dashboard if your report or dash
 
 - *Sharing* content with a colleague outside of your domain doesn't require a Premium capacity. For example, if you're aaron@contoso.com, you can share with anyone@fabrikam.com, but you can't **subscribe** anyone@fabrikam.com, unless that content is hosted in a Premium capacity. 
 
-- In order for external users to subscribe themselves to reports or dashboards, they must first be added as guest users. Guest users (also known as Business-to-business users) are external users who have been added to your organization as Azure Active Directory (AAD) guest users. To learn more about guest users, see [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
+- In order for external users to subscribe themselves to reports or dashboards, they must first be added as guest users. Guest users (also known as Business-to-business users) are external users who have been added to your organization as Azure Active Directory (Azure AD) guest users. To learn more about guest users, see [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
 ## Subscribe to paginated reports 
 
@@ -156,6 +166,17 @@ Paginated reports allow you to specify the view of the report people will receiv
 - Subscriptions can be sent with either the currently selected or default parameters for your report. You may set different parameter values for each subscription you create for your report. 
 
 - If your report author has set expression-based parameters (for example, the default is always today's date), the subscription uses that as the default value. You can change other parameter values and choose to use current values, but unless you explicitly change that value as well, the subscription uses the expression-based parameter. 
+
+### Update parameters for an existing paginated report subscription
+
+If you have an existing subscription to a paginated report, and you want to update the parameters applied to the report, follow these steps. 
+
+1. Re-render the paginated report with the new  parameters.
+1. Open the **Subscriptions** page.
+1. Select **Use current (rendered report) values**.
+    :::image type="content" source="./media/end-user-subscribe/power-bi-paginated-new.png" alt-text="Screenshot of Report parameters with Use current selected.":::
+
+1. Select **Save**.
 
 ### Considerations unique to paginated report subscriptions
 
@@ -263,7 +284,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 **Row-level security (RLS)**
 - For Power BI reports, dashboards, or paginated reports that use a dataset with row-level security (RLS), use caution when creating subscriptions for yourself and others. Power BI will warn you that the data contains RLS, but customers often scroll past the warning message. 
 
-  The static image sent in the subscription email will display data ***based on your permissions***. For this reason, when creating subscriptions, be careful to ensure that confidential information isn't included in the static image. Other than that static image, the report or dashboard itself will open (or not) and display data based on the user's permissions.  
+  The static image sent in the subscription email will display data ***based on the owner of the subscription***. For this reason, when creating subscriptions, be careful to ensure that confidential information isn't included in the static image. Other than that static image, the report or dashboard itself will open (or not) and display data based on the user's permissions.  
 
 **Power BI reports**  
 
@@ -275,12 +296,18 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 - Workspace admins can't manage subscriptions created by another user in an app (as opposed to a workspace). Subscriptions created within apps are saved to a user's **My workspace** and admins don't have access to users' **My workspaces**. 
 
 **Unsupported features**    
-Email subscriptions don't support:
- 
-* R-powered Power BI visuals  
-* most [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
+
 * Dataset refresh operations using an XMLA endpoint.
 
+* The Power BI visuals listed below aren't supported.  When you subscribe to a report containing these visuals, they will display an error symbol. 
+    - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
+    - [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
+    - [R visuals](../visuals/service-r-visuals.md)
+    - [Power Apps visuals](../visuals/power-bi-visualization-powerapp.md)
+    - [Python visuals](../connect-data/desktop-python-visuals.md)
+    - [Power Automate visuals](../create-reports/power-bi-automate-visual.md) 
+    - [The Paginated report visual](../visuals/paginated-report-visual.md)
+    - Visio visuals
 
 ## Next steps
 

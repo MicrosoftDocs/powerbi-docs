@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.reviewer: ""
 ms.custom: ""
-ms.date: 01/04/2023
+ms.date: 02/16/2023
 ---
 
 # Report parameters in Power BI Report Builder
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)] 
 
 This article describes the common uses for Power BI Report Builder report parameters, the properties you can set, and much more. Report parameters let you control report data, connect related reports together, and vary report presentation. You can use report parameters in paginated reports that you create in Report Builder.
 
@@ -41,7 +41,7 @@ When you view a report that has parameters, the report viewer toolbar displays e
   
 1. **Parameters pane**. The report viewer toolbar displays a prompt and default value for each parameter. You can customize the layout of parameters in the parameters pane.  
   
-2. **@SalesDate parameter**. The parameter **@SalesDate** is data type **DateTime**. The prompt **Select the Date** appears next to the text box. To modify the date, type a new date in the text box or use the calendar control.  
+2. **@SalesDate parameter**. The parameter **@SalesDate** is data type **DateTime**. The prompt **Select the Date** appears next to the text box. To modify the date, type a new date in the text box, use the calendar control, or select **Go to today**.  
   
 3. **@ShowAll parameter**. The parameter **@ShowAll** is data type **Boolean**. Use the radio buttons to specify **True** or **False**.  
   
@@ -50,6 +50,8 @@ When you view a report that has parameters, the report viewer toolbar displays e
 5. **@CategoryQuota parameter**. The parameter **@CategoryQuota** is data type **Float**, so it takes a numeric value. **@CategoryQuota** is set to allow multiple values.  
   
 6. **View Report**. After you enter parameter values, select **View Report** to run the report. If all parameters have default values, the report runs automatically on first view.  
+
+See how your customers interact with parameters in your paginated reports in the article [View parameters for paginated reports in the Power BI service](../../consumer/paginated-reports-view-parameters.md).
   
 ## <a name="bkmk_Create_Parameters"></a> Create parameters
 
@@ -101,7 +103,7 @@ You can change the report parameter properties by using the **Report Properties*
 |--------------|-----------------|  
 |Name|Type a case-sensitive name for the parameter. The name must begin with a letter and can have letters, numbers, or an underscore (_). The name can't have spaces. For automatically generated parameters, the name matches the parameter in the dataset query. By default, manually created parameters are similar to ReportParameter1.|  
 |Prompt|The text that appears next to the parameter on the report viewer toolbar.|  
-|Data type|A report parameter must be one of the following data types:<br><br> **Boolean**. The user selects True or False from a radio button.<br><br> **DateTime**. The user selects a date from a calendar control.<br><br> **Integer**. The user types values in a text box.<br><br> **Float**. The user types values in a text box.<br><br> **Text**. The user types values in a text box.<br><br> When available values are defined for a parameter, the user chooses values from a drop-down list, even when the data type is **DateTime**.|  
+|Data type|A report parameter must be one of the following data types:<br><br> **Boolean**. The user selects True or False from a radio button.<br><br> **DateTime**. The user types a new date in the text box, selects a date from a calendar control, or selects **Go to today**.<br><br> **Integer**. The user types values in a text box.<br><br> **Float**. The user types values in a text box.<br><br> **Text**. The user types values in a text box.<br><br> When available values are defined for a parameter, the user chooses values from a drop-down list, even when the data type is **DateTime**.|  
 |Allow blank value|Select this option if the value of the parameter can be an empty string or a blank.<br><br> If you specify valid values for a parameter, and you want a blank value to be one of the valid values, you must include it as one of the values that you specify. Selecting this option doesn't automatically include a blank for available values.|  
 |Allow null value|Select this option if the value of the parameter can be a null.<br><br> If you specify valid values for a parameter, and you want null to be one of the valid values, you must include null as one of the values that you specify. Selecting this option doesn't automatically include a null for available values.|  
 |Allow multiple values|Provide available values to create a drop-down list that your users can choose from. This is a good way to ensure that only valid values are submitted in the dataset query.<br><br> Select this option if the value for the parameter can be multiple values that are displayed in a drop-down list. Null values aren't allowed. When this option is selected, check boxes are added to the list of available values in a parameter drop-down list. The top of the list includes a check box for **Select All**. Users can check the values that they want.<br><br> If the data that provides values changes rapidly, the list the user sees might not be the most current.|  

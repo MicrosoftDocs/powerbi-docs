@@ -6,6 +6,7 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
+ms.search.form: Create a report from an Excel file
 ms.topic: how-to
 ms.date: 06/23/2021
 LocalizationGroup: Reports

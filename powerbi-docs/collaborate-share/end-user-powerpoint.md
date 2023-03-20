@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/25/2023
+ms.date: 02/09/2023
 LocalizationGroup: Share your work
 ---
 # Export a report to PowerPoint
@@ -96,32 +96,41 @@ There are a few considerations and limitations to keep in mind when you work wit
 * Make sure that you're viewing a report (not a dashboard).
 * It's possible that your administrator has disabled this feature. Contact your administrator for details. Administrators: See [Export reports as PowerPoint presentations or PDF documents](../admin/service-admin-portal-export-sharing.md#export-reports-as-powerpoint-presentations-or-pdf-documents).
 
-### Features and visuals that aren't supported
-The following aren't supported for **Export to PowerPoint**.  Either the **PowerPoint** export option will be greyed out or won't be listed at all on the **Export** dropdown. In some cases, such as for R visuals, the report will export but the visual will render as a grey box with an error message.
+### Visuals that aren't supported
+The following aren't supported for **Export to PowerPoint**.  Either the **PowerPoint** export option will be greyed out or won't be listed at all on the **Export** dropdown. In some cases, such as for R visuals, the report will export but the visual will render as a gray box with an error message.
 
-* [URL filters](../collaborate-share/service-url-filters.md) aren't currently respected when you choose **Current Values** for your export.
+- Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
+- [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
+- [R visuals](../visuals/service-r-visuals.md)
+- [Power Apps visuals](../visuals/power-bi-visualization-powerapp.md)
+- [Python visuals](../connect-data/desktop-python-visuals.md)
+- [Power Automate visuals](../create-reports/power-bi-automate-visual.md)
+- [The Paginated report visual](../visuals/paginated-report-visual.md)
+- Visio visuals
+* Visuals [displayed as a Data point table or displayed with "Show data point as a table"](../create-reports/desktop-see-data-see-records.md) don't have the option to export to PowerPoint.
 
-* If the report uses a custom font, that font will be replaced with a default font.
 
-* The following visual types aren't supported, and won't be exported to PowerPoint:
-   - [Custom visuals that haven't been certified](../developer/visuals/power-bi-custom-visuals-certified.md)) aren't supported. 
-   - R, Python, Power Apps, Power Automate, Visio, [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md), and paginated report visuals aren't currently supported.
-   - Visuals [displayed as a Data point table or displayed with "Show data point as a table"](../create-reports/desktop-see-data-see-records.md) don't have the option to export to PowerPoint.
-   - Visuals [displayed as a Data table or displayed with "Show as a table"](../create-reports/desktop-see-data-see-records.md) will export the visual in its default state, without the table.   
-   - Visuals in a drill-down state will be exported in their default state. 
+
+
 
 ### Reports that can't be exported
-- If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PowerPoint. For example, if you're aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com can't export the associated reports to PowerPoint.
+
 - Reports with more than 50 report pages. Paginated reports don't have this limitation. See [Print a paginated report](../consumer/end-user-paginated-report.md#interact-with-a-paginated-report) for details.
 - Reports larger than 500 MB when exported. 
 - Reports being exported to older versions of PowerPoint.
 - Reports that take longer than an hour to process. 
 - Report pages that take longer than 6 minutes to load.
 - The resolution of exported report pages is 1280 pixels x 720 pixels. 
+- If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PowerPoint. For example, if you're aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com can't export the associated reports to PowerPoint.
 
 ### General
 * Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PowerPoint.
+* Dataset refresh operations using an XMLA endpoint.
+* If the report uses a custom font, that font will be replaced with a default font.
+* [URL filters](../collaborate-share/service-url-filters.md) aren't currently respected when you choose **Current Values** for your export.
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
+* Visuals [displayed as a Data table or displayed with "Show as a table"](../create-reports/desktop-see-data-see-records.md) will export the visual in its default state, without the table.   
+* Visuals in a drill-down state will be exported in their default state. 
 * Export to PowerPoint isn't currently supported for tenants in the China North region. 
 
 ## Next steps

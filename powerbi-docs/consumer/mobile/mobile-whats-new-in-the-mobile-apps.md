@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/19/2023
+ms.date: 03/13/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -21,6 +21,28 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## March 2023
+
+### Automatic page refresh support (iOS and Android)
+
+The Power BI mobile apps for iOS and Android have joined the app for Windows in supporting automatic page refresh. Now, report pages configured with [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will automatically refresh in your Power BI app no matter which of those devices you're on!
+
+## February 2023
+
+### Grant access on the go (iOS and Android)
+
+You now get a push notification on your mobile app whenever someone requests access to one of your reports. Just tap the notification to respond immediately.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-access-request-push-notification.png" alt-text="Screenshot of access request push notification on mobile app screen." border="false":::
+
+### Easier app browsing (iOS and Android)
+
+Some apps now come with [audience views](https://powerbi.microsoft.com/blog/announcing-public-preview-of-multiple-audiences-for-power-bi-apps/) to help you find insights faster. 
+
+Open the app and tap the header to display the navigation tree. If the app has audience views, by default you'll see all the content you have permission to see. Tap **Change** to select a particular audience view.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-audience.png" alt-text="Illustration of switching app audience on the Power BI mobile app." border="false":::
 
 ## December 2022
 
