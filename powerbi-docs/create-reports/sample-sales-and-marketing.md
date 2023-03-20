@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/21/2023
+ms.date: 03/20/2023
 LocalizationGroup: Samples
 ---
 # Sales and Marketing sample for Power BI: Take a tour
@@ -20,19 +20,15 @@ VanArsdel has many competitors but is the market leader in its industry. The CMO
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created this sample using real, anonymized data. The data is available in the following formats: *.pbix* Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
 
-This tutorial explores the Sales and Marketing sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
-
-## Prerequisites
-
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
-
-## Get the sample
-
-Before you can use the sample, get the sample in one of the following ways:
+This tutorial explores the Sales and Marketing sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop. Get the sample in one of these ways:
 
 - Get the [built-in sample in the Power BI service](#get-the-sample-in-the-power-bi-service). This sample includes a report and a dashboard.
 - Download the [.pbix file](#get-the-pbix-file-for-this-sample) to explore in Power BI Desktop.
 - Download the [Excel workbook](#get-the-excel-workbook-for-this-sample) to view the raw data in Excel, or publish to the Power BI service.
+
+## Prerequisites
+
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the sample in the Power BI service
 
@@ -50,7 +46,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
 ### What's the dashboard telling us?
 
-If you got the [built-in sample in the Power BI service](#get-the-sample-in-the-power-bi-service), you have a report *and* a dashboard. Let's start the tour at the dashboard and look at the tiles the CMO has chosen to pin. We see information about our market share, sales, and sentiment. The dashboard breaks down data by region, time, and competition.
+With the [built-in sample in the Power BI service](#get-the-sample-in-the-power-bi-service), you have a report *and* a dashboard. Let's start the tour at the dashboard and look at the tiles the CMO has chosen to pin. We see information about our market share, sales, and sentiment. The dashboard breaks down data by region, time, and competition.
 
 - The number tiles along the left column show industry sales volume for the past year (50,000), market share (32.86%), sales volume (16,000), sentiment score (68), sentiment gap (4), and total units sold (1 million).
 - The top line chart (**% Units Market Share vs. % Units Market Share Rolling 12 Months**) shows how our market share fluctuates over time. Notice the large drop in June. Our rolling 12-month (R12M) share, which was increasing for a while, is now starting to stall.
@@ -59,11 +55,49 @@ If you got the [built-in sample in the Power BI service](#get-the-sample-in-the-
 - The line chart at the bottom (**Total Units for 2014**) shows that our dip in June isn't seasonal. None of our competitors show the same trend.
 - The **Total Units Overall** and **Total Units YTD** tiles on the right show units sold, by segment and by region/manufacturer. The largest market segments for our industry are **Productivity** and **Convenience**.
 
-### Use Q&A to dig a little deeper
+You can also [use Q&A in the dashboard](#use-qa-to-dig-deeper-in-the-dashboard) to learn more about your data.
 
-By using Q&A in the dashboard, you can discover other details in the data.
+## Get the .pbix file for this sample
 
-#### Which segments drive sales? Do they match the industry trend?
+Alternatively, you can download the Sales and Marketing sample as a [.pbix file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix). You can explore this sample in Power BI Desktop, and you can upload it to the Power BI service.
+
+1. After you open the file in Power BI Desktop, select **File** > **Publish** > **Publish to Power BI** or choose **Publish** in the **Home** ribbon.
+
+1. In the **Publish to Power BI** dialog, choose a workspace and then **Select**.
+
+1. In the Power BI service, in your workspace, scroll to the **Sales and Marketing Sample** report and select to open.
+
+1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
+
+The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still [use Q&A in the dashboard](#use-qa-to-dig-deeper-in-the-dashboard) to learn more about your data and make changes to your dashboard.
+
+## Get the Excel workbook for this sample
+
+If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot** > **Manage**.
+
+If you want to get and use the Excel file in the Power BI service, follow these steps:
+
+1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *Sales and Marketing Sample-no-PV.xlsx*.
+
+1. Open the file in Excel and then select **File** > **Publish** > **Publish to Power BI**.
+
+1. Select a workspace, such as **My workspace**, and choose **Export**.
+
+   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
+
+1. In the Power BI service, the exported data appears as a dataset in the selected workspace. Select **More options** (...) > **Auto-create report**.
+
+1. Select **Save**, enter a name for your report, and then choose **Save**.
+
+1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
+
+The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still [use Q&A in the dashboard](#use-qa-to-dig-deeper-in-the-dashboard) to explore your data and make changes to your dashboard.
+
+## Use Q&A to dig deeper in the dashboard
+
+No matter whether you downloaded the dashboard or created your own, you can use Q&A in the dashboard to discover other details in the data.
+
+### Which segments drive sales? Do they match the industry trend?
 
 1. Select the **Total Units Overall by Segment** tile, which opens Q&A and populates it with the query, *total units by segment*.
 1. At the end of the existing query, add: *for VanArsdel*. Q&A interprets the question and displays an updated chart with the answer. The product volume is mostly from the **Convenience** and **Moderation** segments.
@@ -73,7 +107,7 @@ By using Q&A in the dashboard, you can discover other details in the data.
 1. Our share in the **Moderation** and **Convenience** categories is high. VanArsdel competes in these segments.
 1. Return to the dashboard by selecting the **Sales and Marketing Sample** from the left navigation bar.
 
-#### What does total unit market share look like for category (versus region)?
+### What does total unit market share look like for category (versus region)?
 
 1. Notice the **Total Units YTD by Manufacturer, Region** tile. What is the total unit market share by category?
 
@@ -85,25 +119,11 @@ By using Q&A in the dashboard, you can discover other details in the data.
 
 1. To compare the findings, pin the chart to your dashboard. Notice this interesting fact: In 2014, VanArsdel sold only products in the **Urban** category.
 
-## Get the .pbix file for this sample
-
-Alternatively, you can download the Sales and Marketing sample as a [.pbix file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix). You can explore this sample in Power BI Desktop, and you can upload it to the Power BI service.
-
-1. After you open the file in Power BI Desktop, select **File** > **Publish** > **Publish to Power BI** or choose **Publish** in the **Home** ribbon.
-
-1. In the **Publish to Power BI** dialog, choose a workspace and then **Select**.
-
-1. In the Power BI service, in your workspace, scroll down to the **IT Spend Analysis Sample** report and select to open.
-
-1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
-
-The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
-
 ## Sales and Marketing Sample report
 
 - If you got the [built-in sample in the Power BI service](#get-the-sample-in-the-power-bi-service), you can open the repot from the dashboard. Dashboards are entry points into reports. If you create a dashboard tile from an underlying report, selecting that tile opens the report.
 - If you downloaded the [.pbix file](#get-the-pbix-file-for-this-sample), then uploaded it to the Power BI service, you don't have a dashboard, but you have the full report. Open it from the workspace where you saved it.
-- If you downloaded the [Excel workbook version](#get-the-excel-workbook-for-this-sample) of this sample, you don't have the dashboard or the report, but Power BI can auto-create a report for you from the data.
+- If you downloaded the Excel workbook version of this sample, you don't have the dashboard or the report, but Power BI can auto-create a report for you from the data. See [Get the Excel workbook for this sample](#get-the-excel-workbook-for-this-sample) in this article for details.
 
 The report has four pages:
 
@@ -181,28 +201,6 @@ Notice the following details:
 - Remember the market share dip in June? June is a significant month for the **Productivity** segment, a segment VanArsdel doesn't compete in at all. This detail could help explain the market share dip in June.
 
 By filtering the visualizations by VanArsdel, by segment, by month, and by region, VanArsdel can discover growth opportunities.
-
-## Get the Excel workbook for this sample
-
-If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot** > **Manage**.
-
-If you want to get and use the Excel file in the Power BI service, follow these steps:
-
-1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *Sales and Marketing Sample-no-PV.xlsx*.
-
-1. Open the file in Excel and then select **File** > **Publish** > **Publish to Power BI**.
-
-1. Select a workspace, such as **My workspace**, and choose **Export**.
-
-   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
-
-1. In the Power BI service, the exported data appears as a dataset in the selected workspace. Select **More options** (...) > **Auto-create report**.
-
-1. Select **Save**, enter a name for your report, and then choose **Save**.
-
-1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
-
-The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
 
 ## Next steps
 
