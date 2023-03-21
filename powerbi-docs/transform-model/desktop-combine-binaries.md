@@ -55,5 +55,5 @@ You can connect to all sorts of data by using Power BI Desktop. For more informa
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Connect to CSV files in Power BI Desktop](../connect-data/desktop-connect-csv.md)
+* [Connect to CSV files in Power BI Desktop](/power-query/connectors/text-csv)
 * [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)

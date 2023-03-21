@@ -1435,6 +1435,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/paginated-reports/paginated-formatted-table.md",
+            "redirect_url": "/power-bi/paginated-reports/web-authoring/paginated-formatted-table",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/paginated-reports/paginated-reports-parameters.md",
             "redirect_url": "/power-bi/paginated-reports/parameters/paginated-reports-create-parameters",
             "redirect_document_id": false
@@ -2351,8 +2356,13 @@
         },
         {
             "source_path": "powerbi-docs/desktop-connect-azure-consumption-insights.md",
-            "redirect_url": "/power-bi/connect-data/desktop-connect-azure-consumption-insights",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/desktop-connect-azure-cost-management",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-azure-consumption-insights.md",
+            "redirect_url": "/power-bi/connect-data/desktop-connect-azure-cost-management",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/desktop-connect-azure-cost-management.md",
@@ -2376,8 +2386,13 @@
         },
         {
             "source_path": "powerbi-docs/desktop-connect-graph-security.md",
-            "redirect_url": "/power-bi/connect-data/desktop-connect-graph-security",
-            "redirect_document_id": true
+            "redirect_url": "/power-query/connectors/microsoft-graph-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-graph-security.md",
+            "redirect_url": "/power-query/connectors/microsoft-graph-security",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/desktop-connect-impala.md",
@@ -4870,6 +4885,77 @@
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-dataflow-on-premium-gen2.md",
             "redirect_url": "/power-bi/troubleshoot/known-issues/known-issue-dataflow-on-premium",
             "redirect_document_id": false
-        }                                                                                                                                       
-  ]           
+        },                
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-bigquery.md",
+            "redirect_url": "/power-query/connectors/google-bigquery",
+            "redirect_document_id": false
+        },                                
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-to-web-by-example.md",
+            "redirect_url": "/power-query/connectors/web/web-by-example",
+            "redirect_document_id": false
+        },                                            
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-adobe-analytics.md",
+            "redirect_url": "/power-query/connectors/adobe-analytics",
+            "redirect_document_id": false
+        },                                
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-redshift.md",
+            "redirect_url": "/power-query/connectors/amazon-redshift",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-odata.md",
+            "redirect_url": "/power-query/connectors/odata-feed",
+            "redirect_document_id": false
+        },                                
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-excel.md",
+            "redirect_url": "/power-query/connectors/excel",
+            "redirect_document_id": false
+        },                                      
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-snowflake.md",
+            "redirect_url": "/power-query/connectors/snowflake",
+            "redirect_document_id": false
+        },           
+        {
+            "source_path": "powerbi-docs/connect-data/service-google-analytics-connector.md",
+            "redirect_url": "/power-query/connectors/google-analytics",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-sap-hana.md",
+            "redirect_url": "/power-query/connectors/sap-hana/overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-sap-hana-encryption.md",
+            "redirect_url": "/power-query/connectors/sap-hana/sap-hana-encryption",
+            "redirect_document_id": false
+        },                                             
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-pdf.md",
+            "redirect_url": "/power-query/connectors/pdf",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-csv.md",
+            "redirect_url": "/power-query/connectors/text-csv",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-impala.md",
+            "redirect_url": "/power-query/connectors/impala-database",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-using-generic-interfaces.md",
+            "redirect_url": "/power-query/connect-using-generic-interfaces",
+            "redirect_document_id": false
+        }                                                    
+  ]          
+
 }
