@@ -6,6 +6,7 @@ ms.author: mihart
 ms.reviewer: miguem
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: Get started with apps
 ms.topic: how-to
 ms.date: 12/02/2022
 ms.custom: licensing support, css_fy20Q4, intro-overview
