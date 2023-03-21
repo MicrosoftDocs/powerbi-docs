@@ -30,6 +30,7 @@ All of these visualizations can be added to Power BI reports, specified in Q&A, 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/basic-area-map-small.png" alt-text="Screenshot of an Area chart.":::
 
 The basic area chart is based on the line chart with the area between the axis and line filled in. Area charts emphasize the magnitude of change over time, and can be used to draw attention to the total value across a trend. For example, data that represents profit over time can be plotted in an area chart to emphasize the total profit.
+On the other hand, stacked area charts display the cumulative total of multiple data series stacked on top of each other, showing how each series contributes to the total.
 
 For more information, see [Basic Area chart](power-bi-visualization-basic-area-chart.md).
 
@@ -218,6 +219,10 @@ For more information, see [Add a Power Apps visual to your report](power-bi-visu
 ## Q&A visual
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png" alt-text="Screenshot of a Q&A visual.":::
+
+The Q&A visual provides users with a text box to query data in Power BI reports. Users can use natural language to query data, and the Q&A visual interprets the query and provides an appropriate visualization.
+
+For example, if a user asks a question like "What were the product sales in 2019?" the Q&A visual will query the relevant data and create an appropriate visualization to display the results. This visualization can be in many different formats, such as a chart or a table.
 
 >[!TIP]
 >Similar to the [Q&A experience on dashboards](../create-reports/power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language.
