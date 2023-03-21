@@ -295,8 +295,8 @@ This page is a historical view of a single unique query. It shows metrics over t
 
 The following table lists the visuals displayed on the query history page according to their location on the page.
 
-| Visuals  |
-|---------|
+|Left  | Right  |
+|---------|---------|
 |**Query details** - Lists each query executed with performance details.
 |**CPU time (s) by date and time** - A line chart shows total CPU time taken over seconds depending on whether aggregation is used or not over a time period. | **Event text** - A table shows the complete complete event text for queries. |
 
