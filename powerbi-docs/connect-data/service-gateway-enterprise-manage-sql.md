@@ -44,7 +44,7 @@ Follow these instructions to add a SQL Server data source to your on-premises da
 
 1. Select **Create**.
 
-   :::image type="content" source="media/service-gateway-enterprise-manage-sql/privacy-level-sql.png" alt-text=" Screenshot of the Privacy level setting for SQL data source" :::
+   :::image type="content" source="media/service-gateway-enterprise-manage-sql/privacy-level-sql.png" alt-text=" Screenshot of the Privacy level setting for SQL data source." :::
 
 You see a success message if the creation succeeds. You can now use this data source for scheduled refresh or DirectQuery against an on-premises SQL Server.
 
