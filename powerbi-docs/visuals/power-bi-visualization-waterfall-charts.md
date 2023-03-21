@@ -37,6 +37,16 @@ Waterfall charts are a great choice:
 
 * To visualize how much money you make and spend each month, and the running balance for your account.
 
+* When you want to visualize the steps and relationships of business processes
+
+* When you want to monitor and control data quality
+
+* When you want to visualize and track the progress of project steps
+
+* To analyze data defects and identify their causes
+
+* To understand the workings of the organization and the connections between departments
+
 ## Prerequisites
 
 # [Power BI Desktop](#tab/powerbi-desktop)
