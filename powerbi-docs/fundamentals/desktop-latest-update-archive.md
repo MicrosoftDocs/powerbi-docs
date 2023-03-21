@@ -2099,7 +2099,7 @@ The following updates are new to Power BI Desktop this month:
 
 ### Data connectivity
 * New Teams Analytics connector [[video]](https://youtu.be/h4JL2lITJ7U?t=588)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074657)
-* Snowflake - support for custom roles [[video]](https://youtu.be/h4JL2lITJ7U?t=629)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074806)  [[article]](../connect-data/desktop-connect-snowflake.md)
+* Snowflake - support for custom roles [[video]](https://youtu.be/h4JL2lITJ7U?t=629)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074806)  [[article]](/power-query/connectors/snowflake)
 * Parquet Files - connector available in Power BI Desktop [[video]](https://youtu.be/h4JL2lITJ7U?t=654)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074659)  [[article]](../connect-data/desktop-data-sources.md#file-data-sources)
 * Hive LLAP - support for Windows authentication [[video]](https://youtu.be/h4JL2lITJ7U?t=673)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074808)
 * Salesforce - API update [[video]](https://youtu.be/h4JL2lITJ7U?t=682)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2021-feature-summary/#_Toc63074661)

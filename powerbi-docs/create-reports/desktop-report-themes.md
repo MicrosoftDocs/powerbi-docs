@@ -242,7 +242,7 @@ Report themes can make your Power BI Desktop reports a colorful reflection of yo
 
 The following GitHub repository has sample JSON for all the different components in the JSON themes file: [Power BI Theme Templates](https://github.com/mattrudy/PowerBI-ThemeTemplates/blob/master/README.md).
 
-In addition, try searching for ["Power BI report theme generator"](https://www.bing.com/search?q=power+bi+report+theme+generator) on Bing.
+In addition, try searching for ["Power BI theme generator"](https://www.bing.com/search?q=power+bi+theme+generator) on Bing.
 
 ## Export report themes
 
