@@ -1,20 +1,20 @@
 ---
-title: "Set report views for paginated reports - Power BI"
-description: In this article, you learn to about the different report views available for paginated reports in the Power BI service.
+title: "Set report views for paginated reports in the Power BI service"
+description: Learn about the different report views, including the Print Layout view, available for paginated reports in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 10/27/2022
+ms.date: 01/25/2023
 ---
 
 # Set report views for paginated reports in the Power BI service
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
 
-When you render a paginated report in the Power BI service, the default view is HTML based and interactive. Another report view, for fixed page formats like PDF, is the new Page View option.
+When you render a paginated report in the Power BI service, the default view is HTML based and interactive. Another report view, for fixed page formats like PDF, is the new *Print Layout* option.
 
 ## Prerequisites 
 
@@ -24,39 +24,41 @@ When you render a paginated report in the Power BI service, the default view is 
 
 ### Default interactive view
 
-![Screenshot showing Default View.](media/page-view/power-bi-paginated-default-view.png)
+Paginated reports open in the default Web Layout view.
 
-### Page View
+:::image type="content" source="media/page-view/power-bi-paginated-default-view.png" alt-text="Screenshot that shows the default view in the Power BI service.":::
 
-![Screenshot showing Page View.](media/page-view/power-bi-paginated-page-view.png)
+### Print Layout
 
-In Page View, the rendered report looks different compared to the default view. Some properties and concepts in paginated reports only apply to fixed pages. The view is similar to when the report is printed or exported. You can still change some elements, like parameter values, but it doesn't have other interactive features such as column sorting and toggles.
+In the Print Layout view, the rendered report looks different compared to the default view. Some properties and concepts in paginated reports only apply to fixed pages. The view is similar to when the report is printed or exported. You can still change some elements, like parameter values, but it doesn't have other interactive features such as column sorting and toggles.
 
-Page View supports all the features the browser's PDF Viewer supports, such as Zoom in, Zoom out, and Fit to page.
+:::image type="content" source="media/page-view/power-bi-paginated-page-view.png" alt-text="Screenshot showing the Print Layout view.":::
 
-## Switch to Page View
+The Print Layout supports all the features that the browser's PDF viewer supports, such as Zoom in, Zoom out, and Fit to page.
 
-When you open a paginated report, it renders in interactive view by default. If the report has parameters, select parameters, then view the report.
+## Switch to Print Layout
 
-1. Select **View** on the toolbar > **Page View**.
+When you open a paginated report, it renders in the default interactive view. If the report has parameters, select parameters, then view the report.
 
-    ![Screenshot showing Switch to Page View.](media/page-view/power-bi-paginated-page-view-dropdown.png)
+1. Select **View** on the toolbar > **Print Layout**.
 
-2. You can change the settings of the page view by selecting the **Page Settings** in **View** menu on the toolbar. 
+    :::image type="content" source="media/page-view/power-bi-paginated-page-view-dropdown.png" alt-text="Screenshot showing the Print Layout button under the View menu.":::
 
-    ![Screenshot showing Select Page Settings.](media/page-view/power-bi-paginated-page-settings-dropdown.png)
-    
-    The **Page Settings** dialog box has options to set **Page Size** and **Orientation** for the Page View. After you apply page settings, the same options apply when you print the page later.
+2. You can change the view settings by selecting **Page Settings** in the **View** menu on the toolbar. 
+
+    :::image type="content" source="media/page-view/power-bi-paginated-page-settings-dropdown.png" alt-text="Screenshot showing the Page Settings button.":::
+
+    The **Page Settings** dialog box has options to set **Page Size** and **Orientation** for the Print Layout. After you apply page settings, the same options apply when you print the page later.
    
-    ![Screenshot showing Page Settings dialog box.](media/page-view/power-bi-paginated-page-settings-dialog.png)
+    ![Screenshot showing the Page Settings dialog box.](media/page-view/power-bi-paginated-page-settings-dialog.png)
 
-3. To switch back to the interactive view, select **Default** in the **View** dropdown box.
+3. To switch back to the interactive view, select **Web Layout** in the **View** dropdown box.
 
 ## Browser support
 
-Page View is supported in Google Chrome and Microsoft Edge browsers. Make sure that viewing PDFs in the browser is enabled. It's the default setting for these browsers.
+Print Layout is supported in Google Chrome and Microsoft Edge browsers. Make sure that viewing PDFs in the browser is enabled. It's the default setting for these browsers.
 
-Page View isn't supported in Internet Explorer and Safari, so the option is disabled. It also isn't supported in browsers on mobile devices, or in the native Power BI mobile apps.  
+Print Layout isn't supported in Internet Explorer and Safari, so the option is disabled. It also isn't supported in browsers on mobile devices, or in the native Power BI mobile apps.  
 
 
 ## Next steps

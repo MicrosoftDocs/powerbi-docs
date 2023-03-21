@@ -7,6 +7,7 @@ ms.reviewer: mihart
 featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: Set alerts on dashboards
 ms.topic: how-to
 ms.date: 07/12/2022
 #Customer intent: As a Power BI service consumer, I want to learn how to create and update a data alert so that I get notified when important data changes above/below my set threshold.

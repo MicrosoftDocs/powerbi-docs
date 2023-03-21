@@ -6,8 +6,9 @@ ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
+ms.search.form: Workspaces in Power BI
 ms.topic: conceptual
-ms.date: 08/17/2022
+ms.date: 03/13/2023
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -66,7 +67,7 @@ See the article [Roles in workspaces](service-roles-new-workspaces.md) for more 
 
 ## Administering and auditing workspaces
 
-Administration for workspaces is in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Read about [managing users' ability to create workspaces](../admin/service-admin-portal-workspace.md#create-the-new-workspaces) in the "Workspace settings" article.
+Administration for workspaces is in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Read about [managing users' ability to create workspaces](../admin/service-admin-portal-workspace.md#create-workspaces-new-workspace-experience) in the "Workspace settings" article.
 
 Admins can also see the state of all the workspaces in their organization. They can manage, recover, and even delete workspaces. Read about [managing the workspaces themselves](../admin/service-admin-portal-workspaces.md) in the "Admin portal" article.
 
@@ -90,6 +91,7 @@ Limitations to be aware of:
 - Workspaces can contain a maximum of 1,000 datasets, or 1,000 reports per dataset.
 - Power BI publisher for Excel isn't supported.
 - Certain special characters aren't supported in workspace names when using an XMLA endpoint. As a workaround, use URL encoding of special characters, for example, for a forward slash **/**, use **%2F**.
+- A user or a [service principal](../enterprise/service-premium-service-principal.md) can be a member of up to 1,000 workspaces.
 
 
 ## Next steps

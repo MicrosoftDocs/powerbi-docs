@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Content creator security planning"
 description: "Learn about content creator security planning for Power BI."
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -143,7 +143,7 @@ Consider the following three examples.
 
 The following screenshot shows a dataset in the data hub in the Power BI service. Specifically, it shows an example of a _Request access_ message for a discoverable dataset. This message is shown when the user doesn't currently have access. The _Request access_ message has been customized in the dataset settings.
 
-The _Request access_ message reads: _For standard sales reporting of MTD/QTD/YTD, this dataset is the authorize and certified source. Please request access to the dataset by completing the form located at https://coe.contoso.com/RequestAccess. You will be asked for a brief business justification, and the manager of the Center of Excellence will be required to approve the request as well. Access will be audited every six months._
+The _Request access_ message reads: _For standard sales reporting of MTD/QTD/YTD, this dataset is the authorize and certified source. Please request access to the dataset by completing the form located at https://COE.contoso.com/RequestAccess. You will be asked for a brief business justification, and the manager of the Center of Excellence will be required to approve the request as well. Access will be audited every six months._
 
 :::image type="content" source="media/powerbi-implementation-planning-security-content-creator-planning/request-dataset-access.png" alt-text="Screenshot of the request access message in the data hub, for a dataset that's set to be discoverable." border="false":::
 
@@ -185,7 +185,7 @@ Instead of relying on one owner, you can define [custom instructions](/power-bi/
 - Tracking of who requested access, when, and why is necessary for auditing or compliance reasons.
 - Explanation is necessary for how to request access, and to set expectations.
 
-The following screenshot shows an example of setting up custom instructions that a user sees when they request the Build permission. The custom instructions read: _For standard sales reporting of MTD/QTD/YTD, this dataset is the authoritative and certified source. Please request access to the dataset by completing the form located at https://coe.contoso.com/RequestAccess. You will be asked for a brief business justification, and the manager of the Center of Excellence will be required to approve the request as well. Access will be audited every six months._
+The following screenshot shows an example of setting up custom instructions that a user sees when they request the Build permission. The custom instructions read: _For standard sales reporting of MTD/QTD/YTD, this dataset is the authoritative and certified source. Please request access to the dataset by completing the form located at https://COE.contoso.com/RequestAccess. You will be asked for a brief business justification, and the manager of the Center of Excellence will be required to approve the request as well. Access will be audited every six months._
 
 :::image type="content" source="media/powerbi-implementation-planning-security-content-creator-planning/request-access-instructions.png" alt-text="Screenshot of the request access setting for a dataset in the Power BI service." border="false":::
 

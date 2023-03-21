@@ -8,11 +8,11 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: faq
-  ms.date: 10/24/2022
+  ms.date: 02/03/2023
   LocalizationGroup: Premium
 title: Power BI Premium Per User
 summary: |
-  Organizations can use Power BI **Premium Per User** to license Premium features on a per-user basis. Premium Per User (PPU) includes all Power BI Pro license capabilities, and includes features such as paginated reports, AI, and other capabilities only available to Premium subscribers. 
+  Organizations can use Power BI **Premium Per User** to license Premium features on a per-user basis. Premium Per User (PPU) includes all Power BI Pro license capabilities, and includes features such as XMLA endpoints, AI, and other capabilities only available to Premium subscribers. 
   
   ![Screenshot showing the License mode information panel. Premium per user is selected.](media/service-premium-per-user-faq/premium-per-user-faq-01b.png)
   
@@ -28,7 +28,7 @@ sections:
       - question: |
           Using Premium Per User (PPU)
         answer: |
-          Premium Per User (PPU) gives organizations a way to license premium features on a per-user basis. PPU includes all Power BI Pro license capabilities, including features like paginated reports, AI, and other capabilities that were only available with a Premium capacity. With a PPU license, you don't need a separate Power BI Pro license because all Pro license capabilities are included. 
+          Premium Per User (PPU) gives organizations a way to license premium features on a per-user basis. PPU includes all Power BI Pro license capabilities, including features like AI, and other capabilities that were only available with a Premium capacity. With a PPU license, you don't need a separate Power BI Pro license because all Pro license capabilities are included. 
 
           You can use a Power BI [individual trial](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-an-individual-power-bi-license) to try PPU as long as your organization hasn't disabled individual trials with the [Allow users to try Power BI paid features tenant setting](../admin/service-admin-portal-help-support.md#allow-users-to-try-power-bi-paid-features).
 
@@ -39,7 +39,6 @@ sections:
           |---------|---------|---------|
           |Model size limit     | 100 GB        | 25-400 GB<sup>1</sup>        |
           |Refresh rate     | 48/day        | 48/day        |
-          |Paginated reports     | ✔        | ✔        |
           |AI capabilities (AutoML, Impact Analysis, Cognitive Services)     | ✔        | ✔        |
           |Advanced dataflows features, such as DirectQuery     | ✔        | ✔        |
           |Usage-based aggregate optimization     | ✔        | ✔        |
@@ -52,7 +51,7 @@ sections:
           |Power BI reports on-premises     | X        | ✔        |           
           |Bring Your Own Key (BYOK)     | ✔ *       | ✔        |        
 
-          <sup>1</sup> Depending on the type of SKU you have. For more details, see [Capacities and SKUs](service-premium-gen2-what-is.md#capacities-and-skus).
+          <sup>1</sup> Depending on the type of SKU you have. For more details, see [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
 
           > [!NOTE]
           > Premium Per User (PPU) only supports BYOK when it's enabled across the entire tenant.
@@ -108,7 +107,7 @@ sections:
           Considerations and limitations
         answer: |
           Considerations when working with Premium Per User licenses.
-          * Premium Per User is the lowest entry-point for Power BI Premium features. It's built upon the Premium platform with built-in mechanisms ensuring that PPU users can use the platform’s ability to scale. PPU is designed to support enterprise workloads including Power BI items with size limits equivalent to that of a P3. For datasets, the 100-GB limit is documented in the [Capacities and SKUs](service-premium-gen2-what-is.md#capacities-and-skus) table.
+          * Premium Per User is the lowest entry-point for Power BI Premium features. It's built upon the Premium platform with built-in mechanisms ensuring that PPU users can use the platform’s ability to scale. PPU is designed to support enterprise workloads including Power BI items with size limits equivalent to that of a P3. For datasets, the 100-GB limit is documented in the [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus) table.
 
           * Your entire PPU tenant has the same 100-TB storage limit that is applied to a Premium capacity.
 
@@ -126,14 +125,14 @@ sections:
 
           * You can't have a dataflow run in a PPU workspace, import it to a Power BI dataset in another workspace, and then allow users without a PPU license to access the content.
           
-          * Any workspace migrated from a PPU environment to a non-PPU environment (such as Premium, Premium Gen2, or shared environments) must have its datasets refreshed before use. Reports opened after such migrations without being refreshed will fail with an error like: *This operation isn't allowed, as the database 'database name' is in a blocked state.*
+          * Any workspace migrated from a PPU environment to a non-PPU environment (such as Premium or shared environments) must have its datasets refreshed before use. Reports opened after such migrations without being refreshed will fail with an error like: *This operation isn't allowed, as the database 'database name' is in a blocked state.*
 
 additionalContent: |
  
  ## Next steps
 
  >[!div class="nextstepaction"]
- >[What is Power BI Premium?](service-premium-gen2-what-is.md)
+ >[What is Power BI Premium?](service-premium-what-is.md)
 
  >[!div class="nextstepaction"]
  >[Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
@@ -149,3 +148,4 @@ additionalContent: |
 
  >[!div class="nextstepaction"]
  >[The Power BI Community](https://community.powerbi.com/)
+ 

@@ -5,6 +5,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: 'kdholakia'
 ms.service: powerbi
+ms.search.form: product-power-bi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
 ms.date: 07/08/2022
@@ -91,4 +92,4 @@ Explore these training resources for Power BI:
 >[Learn Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 
 > [!div class="nextstepaction"]
-> [Become a Power BI data analyst](https://learn.microsoft.com/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)
+> [Become a Power BI data analyst](/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)

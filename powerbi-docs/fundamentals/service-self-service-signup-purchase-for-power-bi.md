@@ -7,10 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/22/2022
+ms.date: 02/22/2023
 ms.custom: licensing support
 LocalizationGroup: Get started
----
 ---
 
 # Sign up or purchase the Power BI service as an individual
@@ -59,7 +58,9 @@ For more information about licenses and subscriptions, see [Licensing in Power B
 
 ### Look up your current license
 
-You might already have access to Power BI. Perhaps your organization added you to a Power BI subscription. Some versions of product licenses, such as Office 365 E5, include a Power BI Pro license, so no separate sign-up for Power BI is needed.
+Check to see if you can already sign in. Open the Power BI service with this URL: app.powerbi.com. If Power BI opens, from the upper right corner, select the **Me** icon to see your current license(s). 
+ 
+:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-license.png" alt-text="Screenshot of the Account drop down showing your license type":::
 
 Check to see if you can sign in. Open the Power BI service at [app.powerbi.com](https://app.powerbi.com). If Power BI opens, from the upper right corner, select the **Me** icon to see your current licenses.
 
