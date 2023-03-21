@@ -112,7 +112,7 @@ This page is a drillthrough page showing event-level data. For example, you can 
 
 ### Dataset refreshes
 
-This page provides a Gantt chart for style view of refreshes to observe duration and parallelism. You can drill through to the dataset refresh details for more details.
+This page provides a Gantt chart style view of refreshes to observe duration and parallelism. You can drill through to the dataset refresh details for more details.
 
 ### Dataset refresh detail
 
@@ -205,7 +205,7 @@ The following table lists the visuals displayed on the workspace summary page ac
 
 This page provides a trend overview of AS Engine activities by day and by hour. It allows you to identify peaks or outliers on a day and then see how that activity breaks down by hour when you cross-highlight by selecting a day.
 
-:::image type="content" source="media/desktop-loganalytics-reportguide-datasets/engine-activities.png" alt-text="Screenshot of the Engine activities page in the Template app":::
+:::image type="content" source="media/desktop-loganalytics-reportguide-datasets/engine-activities.png" alt-text="Screenshot of the Engine activities page in the Template app.":::
 
 The following table lists the visuals displayed on the engine activities page according to their location on the page.
 
@@ -298,7 +298,7 @@ The following table lists the visuals displayed on the query history page accord
 | Visuals  |
 |---------|
 |**Query details** - Lists each query executed with performance details.
-|**Related queries details** - A table shows related query details. <br> **Aggregation details** - When queries are able to use aggregations, details are provided here. |
+|**CPU time (s) by date and time** - A line chart shows total CPU time taken over seconds depending on whether aggregation is used or not over a time period. | **Event text** - A table shows the complete complete event text for queries. |
 
 The cards on the right display the total number of executions of a given query, the execution times in ms, and the aggregation utilization percentage.
 
@@ -306,7 +306,7 @@ The cards on the right display the total number of executions of a given query, 
 
 This page gives an overview of the user activities across the workspace. It also gives information about the most active users for a period by capturing their CPU time usage, query usage, and operations performed.
 
-:::image type="content" source="media/desktop-loganalytics-reportguide-datasets/user-activities.png" alt-text="Screenshot fo the User activities page in the Template app.":::
+:::image type="content" source="media/desktop-loganalytics-reportguide-datasets/user-activities.png" alt-text="Screenshot of the User activities page in the Template app.":::
 
 The following table lists the visuals displayed on the user activities page according to their location on the page.
 
