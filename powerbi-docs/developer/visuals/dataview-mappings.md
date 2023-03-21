@@ -19,7 +19,7 @@ Each valid mapping produces a data view. You can provide multiple data mappings 
 * [conditions](#conditions)
 * [categorical](#categorical-data-mapping)
 * [single](#single-data-mapping)
-* [table](#map-tables)
+* [table](#mapping-tables)
 * [matrix](#matrix-data-mapping)
 
 ```json
@@ -472,7 +472,7 @@ Here's the resulting visual:
 
 :::image type="content" source="media/dataview-mappings/categorical-data-view-mapping-visual.png" alt-text="Screenshot of a visual with categorical data view mapping.":::
 
-## Map tables
+## Mapping tables
 
 The *table* data view is essentially a list of data points where numeric data points can be aggregated.
 
