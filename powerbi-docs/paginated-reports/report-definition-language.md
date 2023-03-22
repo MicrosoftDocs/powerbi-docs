@@ -11,7 +11,10 @@ ms.reviewer: rpatkar
 ---
 
 # Report Definition Language (RDL)
-  Report Definition Language (RDL) is an XML representation of a paginated report definition. A report definition contains data retrieval and layout information for a report. RDL is composed of XML elements that match an XML grammar created for Power BI. You can add your own custom functions for controlling report item values, styles, and formatting by accessing code blocks within report definition files.
+
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+
+Report Definition Language (RDL) is an XML representation of a paginated report definition. A report definition contains data retrieval and layout information for a report. RDL is composed of XML elements that match an XML grammar created for Power BI. You can add your own custom functions for controlling report item values, styles, and formatting by accessing code blocks within report definition files.
   
  RDL promotes the interoperability of commercial reporting products by defining a common schema that enables the interchange of report definitions. Any protocol or programmatic interface that works with XML can be used with RDL. RDL is:  
   
@@ -21,10 +24,10 @@ ms.reviewer: rpatkar
   
 -   An extensible and open schema that supports additional namespaces and custom elements.  
   
-##  <a name="bkmk_RDL_Specifications"></a> RDL Specifications  
+##  <a name="bkmk_RDL_Specifications"></a> RDL specifications  
  To download specifications for specific schema versions, see [Report Definition Language Specification](/openspecs/sql_server_protocols/ms-rdl/53287204-7cd0-4bc9-a5cd-d42a5925dca1).
   
-##  <a name="bkmk_RDL_XML_Schema_Definition"></a> RDL XML Schema Definition  
+##  <a name="bkmk_RDL_XML_Schema_Definition"></a> RDL XML schema definition  
  Report Definition Language (RDL) file is validated by using an XML Schema Definition (XSD) file. The schema defines the rules for where RDL elements can occur in an .rdl file. An element includes its data type and cardinality, that is, the number of occurrences that are allowed. An element can be simple or complex. A simple element does not have child elements or attributes. A complex element does have children and optionally, attributes.  
   
  For example, the schema includes the RDL element **ReportParameters**, which is the complex type **ReportParametersType**. By convention, a complex type for an element is the name of the element follow by the word **Type**. A **ReportParameters** element can be contained by the **Report** element (a complex type), and can contain **ReportParameter** elements. A **ReportParameterType** is a simple type that can only be one of the following values: **Boolean**, **DateTime**, **Integer**, **Float**, or **String**. For more information about XML Schema datatypes, see [XML Schema Part 2: Datatypes Second Edition](https://go.microsoft.com/fwlink/?linkid=4871).
@@ -39,7 +42,7 @@ ms.reviewer: rpatkar
   
  The standard file extension for report definition files is .rdl. The MIME type is text/xml.
   
-##  <a name="bkmk_RDL_Types"></a> RDL Types  
+##  <a name="bkmk_RDL_Types"></a> RDL types  
  The following table lists types used in RDL elements and attributes.
   
 |Type|Description|  
@@ -58,7 +61,7 @@ ms.reviewer: rpatkar
 |**UnsignedInt**|A property with an unsigned integer (uint32) value.|  
 |**Variant**|A property with any simple XML type.|  
   
-##  <a name="bkmk_RDL_Data_Types"></a> RDL Data Types  
+##  <a name="bkmk_RDL_Data_Types"></a> RDL data types  
  The DataType Enumeration defines the data type of an attribute, expression, or parameter in RDL. The following table shows how common language runtime (CLR) data types correspond to RDL data types.  
   
 |**CLR Type(s)**|**Corresponding Data Type**|  
