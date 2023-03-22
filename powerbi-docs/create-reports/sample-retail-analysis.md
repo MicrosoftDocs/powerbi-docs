@@ -20,7 +20,7 @@ This sample is part of a series that shows how you can use Power BI with busines
 
 This tutorial explores the Retail Analysis sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop. Get the sample in one of the following ways:
 
-- Get the [built-in sample in the service](#get-the-built-in-sample).
+- Get the [built-in sample in the service](#get-the-built-in-sample-in-the-power-bi-service).
 - Download the [.pbix file](#get-the-pbix-file-for-this-sample).
 - Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
