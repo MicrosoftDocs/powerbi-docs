@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 12/12/2021
+ms.date: 03/22/2023
 ---
 # View Power BI reports optimized for your phone
 
@@ -86,7 +86,7 @@ There are few ways to drill down:
 2. Tooltip will show up, and if hierarchy is defined, then the tooltip footer will show drill-down and up arrow.
 3. Tap on the down arrow to drill down
 
-    ![Tap drill down](media/mobile-apps-view-phone-report/report-drill-down.png)
+    :::image type="content" source="./media/mobile-apps-view-phone-report/report-drill-down.png" alt-text="Screenshot of a drill-down on a visual as seen in the Power BI mobile app." border="false":::
     
 4. Tap on the up arrow to drill up.
 
