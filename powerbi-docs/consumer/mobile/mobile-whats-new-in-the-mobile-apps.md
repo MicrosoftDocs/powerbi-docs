@@ -34,7 +34,7 @@ Tooltips on visuals have a new look and feel! Now, when you tap and hold on a da
 
 It's just gotten easier to access your external content from your Power BI mobile app! If you have access to items from external organizations, you can now have these items always available for quick access right from the app's home page. Just tap the newly added drop-down arrow on the third content strip and change **Recommended** to **From external orgs**. You can also get to your external content by tapping **More (...)** and choosing **From external orgs**. Check it out!
 
-:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-external-content-strip.gif" alt-text="Screenshot of the From external orgs option on the Power BI mobile app home page." border="false":::
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-external-content-strip.png" alt-text="Screenshot of the From external orgs option on the Power BI mobile app home page." border="false":::
 
 ### Set your language for the app (Android)
 
