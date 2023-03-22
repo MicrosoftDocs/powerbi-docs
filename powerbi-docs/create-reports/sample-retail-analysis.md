@@ -80,6 +80,8 @@ The dashboard and report that you create this way aren't the same as the ones cr
 
 ## Start on the dashboard and open the report
 
+If you got the built-in report in the Power BI service or published the *.pbix* file from Power BI Desktop, you can see the report that comes with the sample. If you imported from Excel, your automatically generated report won't look as described.
+
 1. In the workspace where you saved the sample, open the **Dashboards** tab, then find the **Retail Analysis Sample** dashboard and select it.
 
 1. On the dashboard, select the **Total Stores New & Existing Stores** tile, which opens to the **Store Sales Overview** page in the Retail Analysis Sample report.
@@ -114,7 +116,7 @@ The dashboard and report that you create this way aren't the same as the ones cr
 
 ## Review a tile created with Power BI Q&A
 
-Let's get more specific.
+No matter whether you downloaded the dashboard or created your own, you can use Q&A in the dashboard to discover other details in the data. Let's get more specific.
 
 1. Change the question to *this year's sales **by district***. Observe the result. Q&A automatically places the answer in a bar chart:
 
@@ -130,7 +132,7 @@ Let's get more specific.
 
 ## Use Q&A to dig deeper in the dashboard
 
-No matter whether you downloaded the dashboard or created your own, you can use Q&A in the dashboard to discover other details in the data. Let's explore on a more detailed level, looking at the districts' performances.
+Let's explore on a more detailed level, looking at the districts' performances.
 
 1. On the dashboard, select the **This Year's Sales, Last Year's Sales** tile, which opens the **District Monthly Sales** page of the report.
 
