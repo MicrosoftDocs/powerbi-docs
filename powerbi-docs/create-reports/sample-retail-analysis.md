@@ -18,11 +18,7 @@ The Retail Analysis built-in sample contains a dashboard, report, and dataset th
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created this sample using real, anonymized data. The data is available in several formats: built-in sample in the Power BI service, *.pbix* Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
 
-This tutorial explores the Retail Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
-
-## Get the sample
-
-Before you can use the sample, get the sample in one of the following ways:
+This tutorial explores the Retail Analysis sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop. Get the sample in one of the following ways:
 
 - Get the [built-in sample in the service](#get-the-built-in-sample).
 - Download the [.pbix file](#get-the-pbix-file-for-this-sample).
@@ -32,7 +28,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
 You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
-## Get the built-in sample
+## Get the built-in sample in the Power BI service
 
 1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
