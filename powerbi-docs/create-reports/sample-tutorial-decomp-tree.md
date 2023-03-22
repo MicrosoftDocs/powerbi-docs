@@ -71,7 +71,7 @@ On the **Datasets + dataflows** tab, you have several options for exploring your
 
 Let's add a decomposition tree, or decomp tree, to our report for ad hoc analysis.
 
-1. Open Power BI Desktop and load the Retail Analysis Sample. You can get this sample from [Download original sample Power BI files](sample-datasets.md#download-original-sample-power-bi-files).
+1. Open Power BI Desktop and load the Retail Analysis Sample. You can get this sample from [Download original sample Power BI files](sample-datasets.md#download-original-sample-pbix-power-bi-files).
 
 1. Select the **Report** icon to open the Reports view. In the **Visualizations** pane, select the **Decomposition tree** icon.
 
