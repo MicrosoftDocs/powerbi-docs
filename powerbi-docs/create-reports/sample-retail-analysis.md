@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/21/2023
+ms.date: 03/23/2023
 LocalizationGroup: Samples
 ---
 # Retail Analysis sample for Power BI: Take a tour
@@ -20,10 +20,6 @@ This sample is part of a series that shows how you can use Power BI with busines
 
 This tutorial explores the Retail Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
 
-## Prerequisites
-
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
-
 ## Get the sample
 
 Before you can use the sample, get the sample in one of the following ways:
@@ -32,7 +28,11 @@ Before you can use the sample, get the sample in one of the following ways:
 - Download the [.pbix file](#get-the-pbix-file-for-this-sample).
 - Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
-### Get the built-in sample
+## Prerequisites
+
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+
+## Get the built-in sample
 
 1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
@@ -46,7 +46,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
    Select the dashboard to view the sample dashboard.
 
-### Get the .pbix file for this sample
+## Get the .pbix file for this sample
 
 Alternatively, you can download the Retail Analysis sample as a [.pbix file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
 
@@ -58,11 +58,12 @@ Alternatively, you can download the Retail Analysis sample as a [.pbix file](htt
 
 1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
 
-The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
+The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still [use Q&A in the dashboard](#use-qa-to-dig-deeper-in-the-dashboard) to learn more about your data and make changes to your dashboard.
 
-### Get the Excel workbook for this sample
+## Get the Excel workbook for this sample
 
 If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot** > **Manage**.
+
 If you want to get and use the Excel file in the Power BI service, follow these steps:
 
 1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *IT Spend Analysis Sample-no-PV.xlsx*.
@@ -79,7 +80,7 @@ If you want to get and use the Excel file in the Power BI service, follow these 
 
 1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
 
-The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
+The dashboard and report that you create this way aren't the same as the ones created by the built-in sample. You can still [use Q&A in the dashboard](#use-qa-to-dig-deeper-in-the-dashboard) to explore your data and make changes to your dashboard.
 
 ## Start on the dashboard and open the report
 
@@ -131,9 +132,9 @@ Let's get more specific.
 
 1. When you're ready, return to the dashboard.
 
-## Dive deeper into the data
+## Use Q&A to dig deeper in the dashboard
 
-Now let's explore on a more detailed level, looking at the districts' performances.
+No matter whether you downloaded the dashboard or created your own, you can use Q&A in the dashboard to discover other details in the data. Let's explore on a more detailed level, looking at the districts' performances.
 
 1. On the dashboard, select the **This Year's Sales, Last Year's Sales** tile, which opens the **District Monthly Sales** page of the report.
 
