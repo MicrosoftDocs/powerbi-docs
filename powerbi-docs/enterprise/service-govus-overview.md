@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/18/2022
+ms.date: 03/22/2023
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -153,7 +153,7 @@ If a release is planned for an environment, we include the quarter of estimated 
 
 <sup>2</sup> Because marketplace apps aren't available to US government cloud instances, template apps are limited to private and organizational apps.
 
-<sup>3</sup> Currently available for Power BI Desktop only. Publishing to the Power BI Service is not yet available.
+<sup>3</sup> Currently available for Power BI Desktop only. Publishing to the Power BI service is not yet available.
 
 For more information about support for Power BI components in Power Apps, see [Power Apps US Government feature limitations](/power-platform/admin/powerapps-us-government#power-apps-us-government-feature-limitations).
 
