@@ -41,7 +41,7 @@ Here are the requirements for setting up a hierarchical scorecard:
 
 In scorecard edit mode, select **Set up a hierarchy** from the **New** menu.
 
-:::image type="content" source="media/service-metrics-get-started-hierarchies/new-set-up-hierarchy.png" alt-text="Screenshot of Ne hierarchy on the New menu.":::
+:::image type="content" source="media/service-metrics-get-started-hierarchies/new-set-up-hierarchy.png" alt-text="Screenshot of New hierarchy on the New menu.":::
 
 You can also select **Manage hierarchies** from the **All** slicer.
 
