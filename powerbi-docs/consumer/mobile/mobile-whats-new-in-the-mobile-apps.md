@@ -52,7 +52,7 @@ You now get a push notification on your mobile app whenever someone requests acc
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-access-request-push-notification.png" alt-text="Screenshot of access request push notification on mobile app screen." border="false":::
 
-### Easier app browsing (iOS and Android)
+### Easier app browsing
 
 Some apps now come with [audience views](https://powerbi.microsoft.com/blog/announcing-public-preview-of-multiple-audiences-for-power-bi-apps/) to help you find insights faster. 
 
