@@ -500,6 +500,8 @@
         href: ../paginated-reports/paginated-reports-report-design-view.md
       - name: Preview reports
         href: ../paginated-reports/report-builder-previewing-reports.md
+      - name: Report Definition Language
+        href: ../paginated-reports/report-definition-language.md
       - name: Keyboard shortcuts in Power BI Report Builder
         href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
     - name: Paginated reports in the service
@@ -542,6 +544,40 @@
         href: ../paginated-reports/subreports.md
       - name: Troubleshoot subreports
         href: ../paginated-reports/subreports-troubleshoot.md
+    - name: Visualizations in paginated reports
+      items: 
+      - name: Charts in paginated reports
+        href: ../paginated-reports/report-design/visualizations/charts-report-builder.md
+      - name: Add a chart to a paginated report
+        href: ../paginated-reports/report-design/visualizations/add-chart-report-report-builder.md
+      - name: Change the text of a legend item in paginated report
+        href: ../paginated-reports/report-design/visualizations/chart-legend-change-item-text-report-builder.md
+      - name: Format the legend on a paginated report chart
+        href: ../paginated-reports/report-design/visualizations/chart-legend-formatting-report-builder.md
+      - name: Display data point labels outside a pie chart
+        href: ../paginated-reports/report-design/visualizations/display-data-point-labels-outside-pie-chart-report-builder.md
+      - name: Display percentage values on pie charts
+        href: ../paginated-reports/report-design/visualizations/display-percentage-values-pie-chart-report-builder.md
+      - name: Empty and null data points in paginated report charts
+        href: ../paginated-reports/report-design/visualizations/empty-null-data-points-charts-report-builder.md
+      - name: Format axis labels on a paginated report chart
+        href: ../paginated-reports/report-design/visualizations/format-axis-labels-chart-report-builder.md
+      - name: Position labels in paginated report charts
+        href: ../paginated-reports/report-design/visualizations/position-labels-chart-report-builder.md
+      - name: Specify an axis interval in a paginated report
+        href: ../paginated-reports/report-design/visualizations/specify-axis-interval-report-builder.md
+    - name: Headers and footers in paginated reports
+      items: 
+      - name: Headers and footers in paginated reports
+        href: ../paginated-reports/report-design/page-headers-footers-report-builder-service.md
+      - name: Add or remove a page header or footer
+        href: ../paginated-reports/report-design/add-remove-page-header-footer-report-builder-service.md
+      - name: Display headers and footers with a group
+        href: ../paginated-reports/report-design/display-headers-footers-with-group-report-builder-service.md
+      - name: Hide page header or footer on first or last page
+        href: ../paginated-reports/report-design/hide-page-header-footer-first-last-page-report-builder-service.md
+      - name: Keep headers visible when scrolling in a report
+        href: ../paginated-reports/report-design/keep-headers-visible-when-scrolling-through-report-report-builder-service.md
     - name: Maps in paginated reports
       items: 
       - name: Maps in paginated reports
