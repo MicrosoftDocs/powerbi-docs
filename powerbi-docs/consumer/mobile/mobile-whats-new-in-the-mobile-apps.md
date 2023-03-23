@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 02/21/2023
+ms.date: 03/13/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -21,6 +21,12 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## March 2023
+
+### Automatic page refresh support (iOS and Android)
+
+The Power BI mobile apps for iOS and Android have joined the app for Windows in supporting automatic page refresh. Now, report pages configured with [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will automatically refresh in your Power BI app no matter which of those devices you're on!
 
 ## February 2023
 

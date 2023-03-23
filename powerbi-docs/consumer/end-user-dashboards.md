@@ -6,6 +6,7 @@ ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: Get started with dashboards
 ms.topic: conceptual
 ms.date: 11/03/2021
 LocalizationGroup: Dashboards
