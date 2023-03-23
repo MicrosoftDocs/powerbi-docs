@@ -18,7 +18,7 @@ ms.reviewer: saurkumar
   
  The following illustration shows an example of a scatter chart.  
   
- ![Screenshot of a Scatter chart](../media/paginated-reports-visualizations/scatter-chart.gif "Scatter chart")  
+ ![Screenshot of a Scatter chart](../../media/paginated-reports-visualizations/scatter-chart.gif "Scatter chart")  
   
 > [!NOTE]  
 >  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.
