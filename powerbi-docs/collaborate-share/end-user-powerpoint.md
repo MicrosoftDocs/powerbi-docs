@@ -107,7 +107,7 @@ The following aren't supported for **Export to PowerPoint**.  Either the **Power
 - [Power Automate visuals](../create-reports/power-bi-automate-visual.md)
 - [The Paginated report visual](../visuals/paginated-report-visual.md)
 - Visio visuals
-* Visuals [displayed as a Data point table or displayed with "Show data point as a table"](../create-reports/desktop-see-data-see-records.md) don't have the option to export to PowerPoint.
+* Visuals [displayed as a Data point table or displayed with "Show data point as a table"](../consumer/end-user-show-data.md) don't have the option to export to PowerPoint.
 
 
 
@@ -129,7 +129,7 @@ The following aren't supported for **Export to PowerPoint**.  Either the **Power
 * If the report uses a custom font, that font will be replaced with a default font.
 * [URL filters](../collaborate-share/service-url-filters.md) aren't currently respected when you choose **Current Values** for your export.
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
-* Visuals [displayed as a Data table or displayed with "Show as a table"](../create-reports/desktop-see-data-see-records.md) will export the visual in its default state, without the table.   
+* Visuals [displayed as a Data table or displayed with "Show as a table"](../consumer/end-user-show-data.md) will export the visual in its default state, without the table.   
 * Visuals in a drill-down state will be exported in their default state. 
 * Export to PowerPoint isn't currently supported for tenants in the China North region. 
 
