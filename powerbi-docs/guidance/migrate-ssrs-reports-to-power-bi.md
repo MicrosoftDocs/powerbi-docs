@@ -7,7 +7,7 @@ ms.reviewer: cookiemccray
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/01/2023
+ms.date: 03/23/2023
 ms.custom: intro-migration
 ---
 
@@ -189,7 +189,6 @@ We highly recommended you complete the following actions to ensure the best poss
 
 1. Test the reports in each [browser supported by Power BI](../fundamentals/power-bi-browsers.md) to confirm the report renders correctly.
 1. Run tests to compare report rending times on the report server and in the Power BI service. Check that Power BI reports render in an acceptable time.
-1. If Power BI reports fail to render because of insufficient memory, allocate [additional resources to the Power BI Premium capacity](../enterprise/service-admin-premium-workloads.md#paginated-reports).
 1. For long-rendering reports, consider having Power BI deliver them to your report users as [email subscriptions with report attachments](../visuals/power-bi-visualization-export-data.md).
 1. For Power BI reports based on Power BI datasets, review model designs to ensure they're fully optimized.
 
@@ -201,7 +200,7 @@ The Post-migration phase is crucial for reconciling any issues, and that you add
 
 For more information about this article, check out the following resources:
 
-- [Publish .rdl files to Power BI from Power BI Report Server and SQL Server 2022 Reporting Services](publish-reporting-services-power-bi-service.md)
+- [Publish .rdl files to Power BI from Power BI Report Server and SQL Server Reporting Services](publish-reporting-services-power-bi-service.md)
 - [RDL Migration Tool for older versions of Reporting Services](https://github.com/microsoft/RdlMigration)
 - [Power BI Report Builder](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [Data retrieval guidance for paginated reports](report-paginated-data-retrieval.md)
