@@ -124,7 +124,6 @@ To return to the report, select **Back to report** from the upper left corner.
 
 * Can't be exported to PDF or static PowerPoint.
 * Are only available for specific types of data. In the Power BI service, if you hover over a data point and don't see the option to **Show data point as a table**, then the visual contains data that doesn't support it. In Power BI Desktop, if the menu option for **Data point table** is grayed out, then the visual contains data that doesn't support it. For example, if the visual has a measure in the **Value** field, showing the data underlying a data point will not be available.  
-* Can't be exported to PDF or static PowerPoint. 
 * You can't change the data in these views and save it back to the report.
 
 **Show as a table** (Power BI service) and **Visual table** (Power BI Desktop) views
