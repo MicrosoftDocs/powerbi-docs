@@ -133,7 +133,7 @@ To return to the report, select **Back to report** from the upper left corner.
 
 There are all sorts of report formatting and data management features in **Power BI**. Check out the following resources for a few examples:
 
-- [Create a drillthrough button in Power BI](desktop-drill-through-buttons.md)
-- [Use gridlines and snap-to-grid in Power BI reports](desktop-gridlines-snap-to-grid.md)
+- [Create a drillthrough button in Power BI](../create-reports/desktop-drill-through-buttons.md)
+- [Use gridlines and snap-to-grid in Power BI reports](../create-reports/desktop-gridlines-snap-to-grid.md)
 - [Visuals in Power BI reports](../visuals/power-bi-report-visualizations.md)    
 - [Power BI reports](end-user-reports.md)
