@@ -26,10 +26,12 @@ A paginated report can contain a header and footer that run along the top and bo
  After you create a page header or footer, it is displayed on each report page. For more information about how to suppress page headers and footers on the first and last pages, see [Hide a Page Header or Footer on the First or Last Page &#40;Report Builder and SSRS&#41;](./hide-page-header-footer-first-last-page-report-builder-service.md).
   
   
-## Report Headers and Footers  
+## Report headers and footers
+
  Page headers and footers are not the same as report headers and footers. Reports do not have a special report header or report footer area. A report header consists of the report items that are placed at the top of the report body on the report design surface. They appear only once as the first content in the report. A report footer consists of report items that are placed at the bottom of the report body. They appear only once as the last content in the report.  
   
-## Displaying Variable Data in a Page Header or Footer  
+## Displaying variable data in a page header or footer
+
  Page headers and footers can contain static content, but they are more commonly used to display varying content like page numbers or information about the contents of a page. To display variable data that is different on each page, you must use an expression.  
   
  If there is only one dataset defined in the report, you can add simple expressions such as `[FieldName]` to a page header or footer. Drag the field from the Report Data pane dataset field collection or the Built-in Fields collection to the page header or page footer. A text box with the appropriate expression is automatically added for you.  
@@ -48,6 +50,7 @@ A paginated report can contain a header and footer that run along the top and bo
  The following sections in this topic show ready-to-use expressions that get variable data commonly used in headers and footers. There is also a section on how the Excel rendering extension processes headers and footers. For more information about expressions, see [Expressions &#40;Report Builder and service&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs).
   
 ## Add calculated page totals to a header or footer
+
  For some reports, it is useful to include a calculated value in the header or footer of each report; for example, a per-page sum total if the page includes numeric values. Because you cannot reference the fields directly, the expression that you put in the header or footer must reference the name of the report item (for example, a text box) rather than the data field:  
   
  `=Sum(ReportItems!Textbox1.Value)`  
@@ -56,7 +59,8 @@ A paginated report can contain a header and footer that run along the top and bo
   
  When calculating page totals, you can expect to see differences in the totals when you use different rendering extensions to view the report. Paginated output is calculated differently for each rendering extension. The same page that you view in HTML might show different totals when viewed in PDF if the amount of data on the PDF page is different. For more information, see [Rendering Behaviors &#40;Report Builder  and service&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs).
   
-## Reports with multiple datasets  
+## Reports with multiple datasets
+
  For reports with more than one dataset, you cannot add fields or data-bound images directly to a header or footer. However, you can write an expression that indirectly references a field or data-bound image that you want to use in a header or footer.  
   
  To put variable data in a header or footer:  
@@ -71,7 +75,8 @@ A paginated report can contain a header and footer that run along the top and bo
   
  You cannot use aggregate functions on fields in the page header or footer. You can only use an aggregate function on report items in the report body. For common expressions in page headers and footers, see [Expression Examples &#40;Report Builder and service&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs).
   
-## Add a data-bound image to a header or footer  
+## Add a data-bound image to a header or footer
+
  You can use image data stored in a database in a header or footer. However, you cannot reference database fields from the Image report item directly. Instead, you must add a text box in the body of the report and then set the text box to the data field that contains the image (note that the value must be base64 encoded). You can hide the text box in the body of the report to avoid showing the base64-encoded image. Then, you can reference the value of the hidden text box from the Image report item in the page header or footer.  
   
  For example, suppose you have a report that consists of product information pages. In the header of each page, you want to display a photograph of the product. To print a stored image in the report header, define a hidden text box named `TXT_Photo` in the body of the report that retrieves the image from the database and use an expression to give it a value:  
@@ -82,12 +87,13 @@ A paginated report can contain a header and footer that run along the top and bo
   
  `=Convert.FromBase64String(ReportItems!TXT_Photo.Value)`  
   
-## Using Headers and Footers to Position Text  
+## Use headers and footers to position text
+
  You can use headers and footers to position text on a page. For example, suppose you are creating a report that you want to mail out to customers. You can use a header or footer to position the customer address so that it appears in an envelope window when folded.  
   
  If you are only using the text box to populate a header or footer, you can hide the text box in the report body. Placement of the text box in the report body can have an effect on whether the value appears on the header or footer of the first or last page of a report. For example, if you have tables, matrices, or lists that cause the report to span multiple pages, the hidden text box value appears on the last page. If you want it to appear on the first page, place the hidden text box at the top of the report body.  
   
-## Designing Reports with Page Headers and Footers for Specific Renderers  
+## Design reports with page headers and footers for specific renderers  
  When a report is processed, data and layout information are combined. When you view a report, the combined information is passed to a renderer that determines how much report data fits on each report page.  
   
  If you view a report on the report server using a browser, the HTML renderer controls the content on the report pages that you see. If you plan to deliver reports in a different format than you use for viewing, or if you plan to print reports in a specific format, you may want to optimize the report layout for the renderer you plan to use for the final report format. For more information about report pagination, see [Pagination in Reporting Services &#40;Report Builder  and service&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs).
@@ -109,7 +115,7 @@ A paginated report can contain a header and footer that run along the top and bo
   
 ## Next steps
 
- [Embed an Image in a Report &#40;Power BI Report Builder and service&#41;](/sql/reporting-services/report-design/embed-an-image-in-a-report-report-builder-and-ssrs)
- [Rectangles and Lines &#40;Power BI Report Builder and service&#41;](/sql/reporting-services/report-design/rectangles-and-lines-report-builder-and-ssrs)
+- [Embed an Image in a Report &#40;Power BI Report Builder and service&#41;](/sql/reporting-services/report-design/embed-an-image-in-a-report-report-builder-and-ssrs)
+- [Rectangles and Lines &#40;Power BI Report Builder and service&#41;](/sql/reporting-services/report-design/rectangles-and-lines-report-builder-and-ssrs)
   
   

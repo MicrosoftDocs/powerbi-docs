@@ -14,7 +14,7 @@ ms.reviewer: rpatkar
 
 [!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
 
-A paginated report can contain a page header and page footer that run along the top and bottom of each page, respectively. After you a add a header or footer, you can selectively hide it on the first and last pages of a report.
+A paginated report can contain a page header and page footer that run along the top and bottom of each page, respectively. After you add a header or footer, you can selectively hide it on the first and last pages of a report.
   
 ## Hide a page header on the first or last page  
   
@@ -42,8 +42,6 @@ A paginated report can contain a page header and page footer that run along the 
   
 ## Next steps
 
- [Page headers and footers in a paginated report](page-headers-footers-report-builder-service.md)  
- [Pagination in Reporting Services &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)
- [Add or Remove a Page Header or Footer &#40;Power BI Report Builder and service&#41;](./add-remove-page-header-footer-report-builder-service.md)
-  
-  
+- [Page headers and footers in a paginated report](page-headers-footers-report-builder-service.md)  
+- [Pagination in Reporting Services &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)
+- [Add or Remove a Page Header or Footer &#40;Power BI Report Builder and service&#41;](./add-remove-page-header-footer-report-builder-service.md)

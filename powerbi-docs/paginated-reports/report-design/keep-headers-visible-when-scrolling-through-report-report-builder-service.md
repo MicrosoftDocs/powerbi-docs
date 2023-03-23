@@ -64,9 +64,9 @@ To prevent row and column labels from scrolling out of view after rendering a pa
   
 ## Next steps
 
- [Page headers and footers in a paginated report](page-headers-footers-report-builder-service.md)  
- [Tablix Data Region &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/tablix-data-region-report-builder-and-ssrs) 
- [Export Reports &#40;Report Builder and SSRS&#41;](../report-builder/export-reports-report-builder.md)
- [Display Headers and Footers with a Group &#40;Power BI Report Builder and service&#41;](display-headers-footers-with-group-report-builder-service.md)
- [Display Row and Column Headers on Multiple Pages &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/display-row-and-column-headers-on-multiple-pages-report-builder-and-ssrs)
- [Grouping Pane &#40;Report Builder&#41;](/sql/reporting-services/report-design/grouping-pane-report-builder)  
+- [Page headers and footers in a paginated report](page-headers-footers-report-builder-service.md)  
+- [Tablix Data Region &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/tablix-data-region-report-builder-and-ssrs) 
+- [Export Reports &#40;Report Builder and SSRS&#41;](../report-builder/export-reports-report-builder.md)
+- [Display Headers and Footers with a Group &#40;Power BI Report Builder and service&#41;](display-headers-footers-with-group-report-builder-service.md)
+- [Display Row and Column Headers on Multiple Pages &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/display-row-and-column-headers-on-multiple-pages-report-builder-and-ssrs)
+- [Grouping Pane &#40;Report Builder&#41;](/sql/reporting-services/report-design/grouping-pane-report-builder)  
