@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/28/2023
+ms.date: 03/22/2023
 LocalizationGroup: Samples
 ---
 
@@ -91,9 +91,7 @@ The dashboard that you create this way isn't the same as the sample dashboard cr
 
 First, let's look for trends in spending by category and location.  
 
-1. In the Power BI service, find the workspace where you saved the sample, then select the **Procurement Analysis Sample** dashboard.
-
-1. Select the dashboard tile, **Total Invoice by Country/Region**, which opens the **Spend Overview** page of the **Procurement Analysis Sample** report.
+1. In the Power BI service, find the workspace where you saved the sample. Select the **Procurement Analysis Sample** report, then the **Spend Overview** page.
 
     If you're using Power BI Desktop, open the *.pbix file* and select the **Spend Overview** tab.
 
