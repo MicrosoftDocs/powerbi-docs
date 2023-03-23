@@ -17,7 +17,7 @@ ms.reviewer: rpatkar
 You can add static text, images, lines, rectangles, and borders to paginated report page headers or footers. You can place expressions and data-bound images in a textbox if you want variable or computed data in a header or footer.  
   
 > [!NOTE]  
-> Each rendering extension processes page headers and footers differently. For more information, see [Page Headers and Footers &#40;Report Builder and SSRS&#41;](./page-headers-footers-report-builder-service.md) and [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs).
+> Each rendering extension processes page headers and footers differently. For more information, see [Page Headers and Footers &#40;Report Builder)](./page-headers-footers-report-builder-service.md) and [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs).
   
 ## Add a page header or footer  
   

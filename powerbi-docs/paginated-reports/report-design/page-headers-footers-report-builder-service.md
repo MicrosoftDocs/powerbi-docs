@@ -23,7 +23,7 @@ A paginated report can contain a header and footer that run along the top and bo
   
  Headers and footers commonly contain page numbers, report titles, and other report properties. For more information about how to add these items to your report header or footer, see [Display Page Numbers or Other Report Properties &#40;Report Builder and service&#41;](/sql/reporting-services/report-design/display-page-numbers-or-other-report-properties-report-builder-and-ssrs).
   
- After you create a page header or footer, it is displayed on each report page. For more information about how to suppress page headers and footers on the first and last pages, see [Hide a Page Header or Footer on the First or Last Page &#40;Report Builder and SSRS&#41;](./hide-page-header-footer-first-last-page-report-builder-service.md).
+ After you create a page header or footer, it is displayed on each report page. For more information about how to suppress page headers and footers on the first and last pages, see [Hide a Page Header or Footer on the First or Last Page &#40;Report Builder and the Power BI service](hide-page-header-footer-first-last-page-report-builder-service.md).
   
   
 ## Report headers and footers

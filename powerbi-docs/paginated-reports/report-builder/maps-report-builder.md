@@ -139,7 +139,7 @@ ms.reviewer: monaraya
   
 - Whether to use a secure connection to retrieve the tiles from the Bing Maps Web service.  
   
- For step-by-step instructions, see [Add, Change, or Delete a Map or Map Layer &#40;Report Builder and SSRS&#41;](add-change-delete-map-map-layer-report-builder.md).  
+ For step-by-step instructions, see [Add, Change, or Delete a Map or Map Layer (Report Builder)](add-change-delete-map-map-layer-report-builder.md).  
   
  For more information about tiles, see [Bing Maps Tile System](/bingmaps/articles/bing-maps-tile-system). For more information about the use of Bing map tiles in your report, see [Additional Terms of Use](https://go.microsoft.com/fwlink/?LinkId=151371).  
   
