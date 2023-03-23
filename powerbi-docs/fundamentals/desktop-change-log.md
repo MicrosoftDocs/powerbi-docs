@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 02/22/2023
+ms.date: 02/28/2023
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,14 @@ ms.date: 02/22/2023
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+## February 2023 QFE 2
+
+*Version:2.114.864.0, Released: February 23, 2023*
+
+Bug fixes/improvements:
+* Fixed issues with  x86 installer
 
 
 ## February 2023 QFE 1
