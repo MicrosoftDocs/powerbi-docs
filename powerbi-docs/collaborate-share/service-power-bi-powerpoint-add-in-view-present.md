@@ -9,10 +9,10 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 02/23/2023
+ms.date: 03/05/2023
 ---
 
-# View and present live Power BI data in PowerPoint (preview)
+# View and present live Power BI data in PowerPoint
 
 As soon as you add a live Power BI report page or visual to PowerPoint, you can start interacting with your data just as you would in Power BI. The initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md) you used. The following image shows a report page loaded into the add-in, with the add-in features labeled. The same add-in features are available when you load an individual visual.
 
@@ -53,6 +53,11 @@ If you need to present a slide show multiple times, you most likely want to set 
 ## Enrich your presentation with data insights
 
 Data insights help you explore and find insights such as anomalies and trends as you consume and interact with your data. With the add-in, you can easily generate insights, which you can then paste directly into your slide or copy to the clipboard for pasting elsewhere, such as in the slide's notes.
+
+> [!NOTE]
+> Not all visuals can generate insights. See [Smart narrative considerations and limitations](../visuals/power-bi-visualization-smart-narrative.md#considerations-and-limitations) for details.
+>
+> Once you've copied an insight to the slide or clipboard, the text is static and won't change when the data changes. To update the insight, you need to re-generate it.
 
 The following animation shows how you can generate data insights, edit them in the **Data insights** dialog, and then paste them directly into the slide or copy them into the notes.
 

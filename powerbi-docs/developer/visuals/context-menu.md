@@ -50,7 +50,7 @@ constructor(options: VisualConstructorOptions) {
 
 private handleContextMenu() {
         this.rootSelection.on('contextmenu', (event: PointerEvent, dataPoint) => {
-            this.selectionManager.showContextMenu(dataPoint ? dataPoint.selectionId : {}, {
+            this.selectionManager.showContextMenu(dataPoint ? dataPoint: {}, {
                 x: mouseEvent.clientX,
                 y: mouseEvent.clientY
             });
