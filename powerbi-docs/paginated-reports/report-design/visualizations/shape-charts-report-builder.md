@@ -20,7 +20,7 @@ ms.reviewer: saurkumar
   
  The following illustration shows an example of a funnel chart.  
   
- ![Screenshot of a Funnel chart](../media/paginated-reports-visualizations/funnel-chart.gif "Funnel chart")  
+ ![Screenshot of a Funnel chart](../../media/paginated-reports-visualizations/funnel-chart.gif "Funnel chart")  
   
 > [!NOTE]  
 >  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.
