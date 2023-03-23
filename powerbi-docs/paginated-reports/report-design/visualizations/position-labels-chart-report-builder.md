@@ -11,6 +11,8 @@ ms.reviewer: monaraya
 ---
 # Position labels in a paginated report chart (Power BI Report Builder)
 
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+
 Because each chart type in a Power BI paginated report has a different shape, data point labels are placed in an optimal location so as not to interfere on the chart. The default position of the labels varies with the chart type:  
   
 - On stacked charts, labels can only be positioned inside the series.  

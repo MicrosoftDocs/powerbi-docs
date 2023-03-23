@@ -13,7 +13,9 @@ ms.reviewer: monaraya
 ---
 # Format axis labels on a paginated report chart (Power BI Report Builder)
 
-  Coordinate-based chart types (column, bar, area, point, line, and range) have two axes that are used to categorize and display data relationships in a paginated report. Different types of formatting will be applied to each axis.  
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+
+Coordinate-based chart types (column, bar, area, point, line, and range) have two axes that are used to categorize and display data relationships in a paginated report. Different types of formatting will be applied to each axis.  
   
  You can format axes by using the **Axis Properties** dialog box or by using the Properties pane. Right-click the axis you want to format and click **Axis Properties** to change values for the axis text, numeric and date formats, major and minor tick marks, auto-fitting for labels, and the thickness, color, and style of the axis line. To change values for the axis title, right-click the axis title, and click **Axis Title Properties**.  
   

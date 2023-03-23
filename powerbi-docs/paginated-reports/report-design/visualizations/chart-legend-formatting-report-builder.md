@@ -11,7 +11,9 @@ ms.reviewer: monaraya
 ---
 # Format the legend on a paginated report chart (Power BI Report Builder)
 
-  The chart legend contains descriptions for each category in a Power BI paginated report chart. A legend always contains one or more legend items, where each legend item consists of a colored box that represents the series, and a text string that describes the series, as indicated in the following illustration.  
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+
+The chart legend contains descriptions for each category in a Power BI paginated report chart. A legend always contains one or more legend items, where each legend item consists of a colored box that represents the series, and a text string that describes the series, as indicated in the following illustration.  
   
  ![Screenshot showing chart legend.](media/paginated-reports-visualizations/legend-diagram.png "Diagram of a chart legend")  
   

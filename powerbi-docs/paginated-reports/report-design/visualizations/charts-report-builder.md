@@ -11,6 +11,8 @@ ms.reviewer: monaraya
 ---
 # Charts in Power BI paginated reports (Power BI Report Builder)
 
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+
 Read about using chart data regions to help readers of your paginated reports understand large volumes of aggregated data at a glance.  
 
 The more time you spend carefully preparing and understanding your data before you create a chart, the easier it will be to design your charts quickly and efficiently. For help choosing which chart to use, see [Chart Types](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs) To start experimenting with charts immediately, see the bar, column, sparkline, and pie chart tutorials in [Power BI Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials).  
