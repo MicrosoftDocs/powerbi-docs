@@ -24,7 +24,7 @@ ms.reviewer: saurkumar
   
 3.  Options that you set for selected embedded map elements. Note that, when you override the layer options, the changes that you make to the report definition are permanent. You can change the data field values as well as override display options to customize the way specific polygons, lines, and points appear on a layer.  
   
- In addition to controlling the display of map elements on a layer, you can control the layer transparency to allow layers that are drawn earlier to show through layers that are drawn later. For more information about changing options that affect the map or the entire map layer, see [Customize the data and display of a map or map layer &#40;Power BI Report Builder&#41;](/../../../report-builder/customize-data-display-map-map-layer-report-builder.md).  
+ In addition to controlling the display of map elements on a layer, you can control the layer transparency to allow layers that are drawn earlier to show through layers that are drawn later. For more information about changing options that affect the map or the entire map layer, see [Customize the data and display of a map or map layer &#40;Power BI Report Builder&#41;](../../report-builder/customize-data-display-map-map-layer-report-builder.md).  
   
 > [!NOTE]  
 >  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder. 
@@ -101,9 +101,9 @@ ms.reviewer: saurkumar
 ##  <a name="Legends"></a> Understanding legends and legend items  
  Legend items are created automatically from the rules that you specify for each layer. Rule options control how many items are created and which legend they appear in. By default, all items for all rules are added to the first legend. To move items out of the first legend, create as many additional legends as you need, and for each rule, specify the legend to use to display the items that result from the rule. To hide items based on a rule, specify a blank legend name.  
   
- To control where a legend appears, use the Legend Properties dialog box to specify a position relative to the map viewport. For more information, see [Change map legends, color scale, and associated rules &#40;Power BI Report Builder&#41;](../../../report-builder/change-map-legends-color-scale-associated-rules-report-builder.md).  
+ To control where a legend appears, use the Legend Properties dialog box to specify a position relative to the map viewport. For more information, see [Change map legends, color scale, and associated rules &#40;Power BI Report Builder&#41;](../../report-builder/change-map-legends-color-scale-associated-rules-report-builder.md).  
   
- Legends automatically expand to display the legend title or legend text. To format the text of legend items, use map legend keywords and custom formats. For more information, see [To change the format of content in a legend](../../../report-builder/change-map-legends-color-scale-and-associated-rules-report-builder.md#ChangeFormatItems).  
+ Legends automatically expand to display the legend title or legend text. To format the text of legend items, use map legend keywords and custom formats. For more information, see [To change the format of content in a legend](../../report-builder/change-map-legends-color-scale-and-associated-rules-report-builder.md#ChangeFormatItems).  
   
  The following tables shows examples of different formats that you can use.  
   
@@ -115,8 +115,8 @@ ms.reviewer: saurkumar
 |`#FROMVALUE{N0} - #TOVALUE{N0}`|Displays the actual numeric values of the beginning of the range and end of the range.|10 - 790|  
   
 ## See Also  
- [Change map legends, color scale, and associated rules &#40;Power BI Report Builder&#41;](../../../report-builder/change-map-legends-color-scale-and-associated-rules-report-builder.md)   
- [Maps &#40;Power BI Report Builder&#41;](../../../report-builder/maps-report-builder.md)   
- [Map wizard and map layer wizard &#40;Power BI Report Builder&#41;](../../../report-builder/map-wizard-map-layer-wizard-report-builder.md)  
+ [Change map legends, color scale, and associated rules &#40;Power BI Report Builder&#41;](../../report-builder/change-map-legends-color-scale-and-associated-rules-report-builder.md)   
+ [Maps &#40;Power BI Report Builder&#41;](../../report-builder/maps-report-builder.md)   
+ [Map wizard and map layer wizard &#40;Power BI Report Builder&#41;](../../report-builder/map-wizard-map-layer-wizard-report-builder.md)  
   
   
