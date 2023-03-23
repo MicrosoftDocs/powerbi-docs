@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/21/2023
+ms.date: 03/23/2023
 LocalizationGroup: Visualizations
 ---
 # Show the data used to create a Power BI visual
@@ -95,6 +95,13 @@ When you select **Show as a table** or **Show data point as a table**, Power BI 
    
    :::image type="content" source="./media/end-user-show-data/power-bi-show-horizontal.png" alt-text="Screenshot showing the visual with a table next to it.":::
 
+5. To export the data to a .csv file, select the ellipses and choose **Export data**. 
+
+    :::image type="content" source="./media/end-user-show-data/power-bi-export-data.png" alt-text="Screenshot of menu item for Export data.":::
+
+
+For more information about exporting the data to Excel, see [Export data from Power BI visualizations](../visuals/power-bi-visualization-export-data.md).
+
 To return to the report, select **Back to report** from the upper left corner. 
 
 ### Show the data used to create a data point
@@ -124,7 +131,7 @@ To return to the report, select **Back to report** from the upper left corner.
 
 * Are not supported for these visual types: Card, KPI, Key influencers, Q&A visual, Smart narrative, Metrics app visual, Paginated report visual, Power Apps for Power BI visual, ArcGIS map for Power BI visual, Power Automate for Power BI visual.
 * Can't be exported to PDF or static PowerPoint.
-* You can't change the data and and save it back to the report.
+* You can't change the data and then save it back to the report.
 * Are not supported when your visual uses a calculated measure in a (multidimensional) measure group.
 * Are not supported when you are connected to a live multidimensional (MD) model.
  

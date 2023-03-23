@@ -18,7 +18,7 @@ For information on how to add buttons to reports, see [Create buttons in Power B
 
 ## How to recognize a button
 
-A button can resemble a shape, image, or icon from a report page, but if an action occurs when you select (click) it, then it's probably a button. <!-->
+A button can resemble a shape, image, or icon from a report page, but if an action occurs when you select it, then it's probably a button.
 
 ## Types of buttons
 
