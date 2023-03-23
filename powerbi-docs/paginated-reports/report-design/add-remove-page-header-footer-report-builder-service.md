@@ -12,7 +12,7 @@ ms.reviewer: rpatkar
 
 # Add or remove a page header or footer in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
 
 You can add static text, images, lines, rectangles, and borders to paginated report page headers or footers. You can place expressions and data-bound images in a textbox if you want variable or computed data in a header or footer.  
   

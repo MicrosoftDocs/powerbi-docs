@@ -12,7 +12,7 @@ ms.reviewer: rpatkar
 
 # Page headers and footers in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
 
 A paginated report can contain a header and footer that run along the top and bottom of each page, respectively. Headers and footers can contain static text, images, lines, rectangles, borders, background color, background images, and expressions. Expressions include dataset field references for reports with exactly one dataset and aggregate function calls that include the dataset as a scope.  
   

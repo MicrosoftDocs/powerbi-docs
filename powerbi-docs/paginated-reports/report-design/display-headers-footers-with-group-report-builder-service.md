@@ -11,7 +11,7 @@ ms.reviewer: rpatkar
 ---
 # Display headers and footers with a group in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
 
  You can control whether a static row, such as a group header or footer, renders with dynamic rows that are associated with a group in a tablix data region in a paginated report.  
   
