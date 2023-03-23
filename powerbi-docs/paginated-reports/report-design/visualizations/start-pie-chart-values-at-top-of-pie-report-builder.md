@@ -12,16 +12,17 @@ ms.author: maggies
 ms.reviewer: saurkumar
 ---
 # Start pie chart values at top of pie in Power BI paginated report (Power BI Report Builder)
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
 
 In pie charts in Power BI paginated reports, by default the first value in the dataset starts at 90 degrees from the top of the pie. 
 
-![Screenshot of a Power BI report builder pie chart with the dataset starting at 90 degrees.](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/report-builder-pie-chart-start-at-90.png)
+![Screenshot of a Power BI report builder pie chart with the dataset starting at 90 degrees.](../media/paginated-reports-visualizations/report-builder-pie-chart-start-at-90.png)
 
 *Chart values start at 90 degrees.*
 
 You might want the first value to start at the top instead. 
 
-![Screenshot of a report builder pie chart with the dataset starting at the top.](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/report-builder-pie-chart-start-at-top.png)
+![Screenshot of a report builder pie chart with the dataset starting at the top.](../media/paginated-reports-visualizations/report-builder-pie-chart-start-at-top.png)
 
 *Chart values start at the top of the chart.*
   
