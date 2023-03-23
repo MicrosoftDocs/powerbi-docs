@@ -12,7 +12,7 @@ ms.author: maggies
 ms.reviewer: saurkumar
 ---
 # Shape charts in Power BI paginated report (Power BI Report Builder)
-
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
 
   A shape chart displays value data as percentages of a whole in a Power BI paginated report. Shape charts are typically used to show proportional comparisons between different values in a set. Categories are represented by individual segments of the shape. The size of the segment is determined by the value. Shape charts are similar in use to pie charts, except that they order categories from largest to smallest.  
   
@@ -20,7 +20,7 @@ ms.reviewer: saurkumar
   
  The following illustration shows an example of a funnel chart.  
   
- ![Screenshot of a Funnel chart](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/funnel-chart.gif "Funnel chart")  
+ ![Screenshot of a Funnel chart](../media/paginated-reports-visualizations/funnel-chart.gif "Funnel chart")  
   
 > [!NOTE]  
 >  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.
