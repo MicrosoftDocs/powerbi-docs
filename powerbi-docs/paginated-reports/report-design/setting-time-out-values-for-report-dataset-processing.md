@@ -19,7 +19,7 @@ Most time-out errors occur during query processing. If you are encountering time
 ## Setting a query time-out for a dataset in a report  
  Query time-out values are specified during report authoring when you define an embedded dataset. The time-out value is stored with the report, in the Timeout element of the report definition. By default, this value is set to 0 seconds which results in an infinite timeout. 
  
-![Screenshot of a dataset-properties-timeout.png](/powerbi-docs/paginated-reports/media/paginated-reports-create-embedded-dataset/power-bi-dataset-properties-timeout.png "Power BI dataset properties")  
+![Screenshot of a dataset-properties-timeout.png](../../media/paginated-reports-create-embedded-dataset/power-bi-dataset-properties-timeout.png "Power BI dataset properties")  
  
  Users who have permission to modify the properties of a published report can reset this value by editing the report definition file.
  The value you specify determines how long the Power BI service waits for query processing to complete when retrieving data from the report’s data source.
@@ -31,6 +31,6 @@ Most time-out errors occur during query processing. If you are encountering time
  
   
 ## Next steps 
- [Understand paginated report data in Power BI Report Builder](/powerbi-docs/paginated-reports/report-builder-data)   
- [Create an embedded dataset for a Power BI paginated report](/powerbi-docs/paginated-reports/paginated-reports-create-embedded-dataset)   
- [Paginated reports in Power BI: FAQ](/powerbi-docs/paginated-reports/paginated-reports-faq)   
+ [Understand paginated report data in Power BI Report Builder](../../report-builder-data.md)   
+ [Create an embedded dataset for a Power BI paginated report](../../paginated-reports-create-embedded-dataset.md)   
+ [Paginated reports in Power BI: FAQ](../../paginated-reports-faq.md)   
