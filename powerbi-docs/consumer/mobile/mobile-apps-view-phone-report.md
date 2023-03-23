@@ -125,7 +125,7 @@ Report authors can [define drillthrough](../../create-reports/desktop-drillthrou
 
 4. Choose which report page to drill through
 
-    ![Choose report page](media/mobile-apps-view-phone-report/report-drill-through2.png)
+    :::image type="content" source="./media/mobile-apps-view-phone-report/report-drill-through2.png" alt-text="Screenshot of drill-through options in the mobile app.":::
 
 5. Use the back button, at the app header to go back to the page you started from.
 
