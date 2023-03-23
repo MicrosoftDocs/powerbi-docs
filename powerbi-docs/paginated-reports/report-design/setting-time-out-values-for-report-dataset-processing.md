@@ -19,7 +19,7 @@ Most time-out errors occur during query processing. If you are encountering time
 ## Setting a query time-out for a dataset in a report  
  Query time-out values are specified during report authoring when you define an embedded dataset. The time-out value is stored with the report, in the Timeout element of the report definition. By default, this value is set to 0 seconds which results in an infinite timeout. 
  
-![Screenshot of a dataset-properties-timeout.png](../../media/paginated-reports-create-embedded-dataset/power-bi-dataset-properties-timeout.png "Power BI dataset properties")  
+![Screenshot of a dataset-properties-timeout.png](../media/paginated-reports-create-embedded-dataset/power-bi-dataset-properties-timeout.png "Power BI dataset properties")  
  
  Users who have permission to modify the properties of a published report can reset this value by editing the report definition file.
  The value you specify determines how long the Power BI service waits for query processing to complete when retrieving data from the report’s data source.
