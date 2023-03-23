@@ -9,10 +9,10 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 02/23/2023
+ms.date: 03/05/2023
 ---
 
-# About storytelling with Power BI in PowerPoint (preview)
+# About storytelling with Power BI in PowerPoint
 
 With the Power BI add-in for PowerPoint, you can enhance your data storytelling in PowerPoint with live, interactive Power BI data. Not only will the data shown in your presentations be always up to date, but also, while you're presenting, you'll be able to filter and drill down on data in response to questions and feedback from your audience without having to switch contexts.
 
@@ -47,7 +47,7 @@ If you're a Power BI administrator, see [Information for Power BI administrators
 * The add-in currently supports Power BI report pages and visuals only. Other types of items such as dashboards and paginated reports aren't supported.
 * [Business-to-business (B2B)](../enterprise/service-admin-azure-ad-b2b.md) scenarios aren't supported.
 * The [add-in side pane options](./service-power-bi-powerpoint-add-in-view-present.md#add-in-side-pane) **Delete**, **Reload**, and **Show as Saved Image** are available only in the PowerPoint desktop application. This is because PowerPoint for the web doesn't support the add-in side menu.
-* The add-in isn't supported in national clouds.
+* **In national clouds, the add-in is supported as an admin managed add-in only**, as the Office add-in store isn't accessible from national clouds. Admins should see [Deploying the add-in in sovereign clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-national-clouds) for information about how to get and deploy the add-in.
 
 ## Next Steps
 

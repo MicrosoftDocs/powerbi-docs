@@ -13,7 +13,7 @@ ms.reviewer: saurkumar
 ---
 # Add or modify Power BI paginated report parameters (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
 
   A Power BI paginated report parameter provides a way to choose report data, connect related reports together, and vary the report presentation. You can provide a default value and a list of available values, and the user can change the selection. In this article, you learn how to add, change, or delete Power BI paginated report parameters.
     

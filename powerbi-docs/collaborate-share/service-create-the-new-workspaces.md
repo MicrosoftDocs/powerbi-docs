@@ -6,8 +6,9 @@ ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
+ms.search.form: Create a workspace
 ms.topic: how-to
-ms.date: 11/02/2022
+ms.date: 02/27/2023
 ms.custom: contperf-fy21q3, contperf-fy21q1, contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -158,6 +159,23 @@ Now that you've created the workspace, you'll want to add other users to *roles*
 
 - [Give users access to a workspace](service-give-access-new-workspaces.md)
 - [Roles in workspaces in Power BI](service-roles-new-workspaces.md)
+
+## Pin workspaces
+
+Quickly access your favorite workspaces by pinning them to the top of the workspace flyout list. 
+
+1. Open the workspace flyout from the nav pane and hover over the workspace you want to pin. Select the **Pin to top** icon.
+
+    ![Screenshot of pin workspace.](media/service-create-the-new-workspaces/pin-workspace.png)
+
+1. The workspace is added in the **Pinned** list.
+
+    ![Screenshot of pinned list.](media/service-create-the-new-workspaces/pinned-list.png)
+
+1. To unpin a workspace, select the unpin button. The workspace is unpinned.
+
+    ![Screenshot of unpin workspace.](media/service-create-the-new-workspaces/unpin-workspace.png)
+
 
 ## Next steps
 * Read about [workspaces in Power BI](service-new-workspaces.md)

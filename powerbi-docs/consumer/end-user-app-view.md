@@ -6,6 +6,7 @@ ms.author: mihart
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: Install and use apps
 ms.topic: how-to
 ms.date: 01/25/2023
 ms.custom: licensing support, intro-installation
