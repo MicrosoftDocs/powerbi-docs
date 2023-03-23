@@ -163,8 +163,8 @@ If you're deploying Power BI Desktop to your users with a tool that requires a W
 
 Upgrading an install from an *.exe* to a *.msi* that you've extracted from an *.exe* isn't supported. In order to make this upgrade, first you'll need to uninstall the older version of Power BI Desktop that you have.
 
-> [!IMPORTANT]
-> Power BI Desktop isn't supported in virtual environments such as Citrix.
+### Power BI Desktop in a virtualized environment
+Power BI Desktop is fully supported on [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/overview) (formerly Windows Virtual Desktop) and [Windows 365](https://learn.microsoft.com/en-us/windows-365/overview). 
 
 ### Issues with previous releases of Power BI Desktop
 
