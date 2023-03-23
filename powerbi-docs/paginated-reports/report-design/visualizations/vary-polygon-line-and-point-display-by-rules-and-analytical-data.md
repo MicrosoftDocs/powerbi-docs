@@ -103,7 +103,7 @@ ms.reviewer: saurkumar
   
  To control where a legend appears, use the Legend Properties dialog box to specify a position relative to the map viewport. For more information, see [Change map legends, color scale, and associated rules &#40;Power BI Report Builder&#41;](../../report-builder/change-map-legends-color-scale-associated-rules-report-builder.md).  
   
- Legends automatically expand to display the legend title or legend text. To format the text of legend items, use map legend keywords and custom formats. For more information, see [To change the format of content in a legend](../../report-builder/change-map-legends-color-scale-and-associated-rules-report-builder.md#ChangeFormatItems).  
+ Legends automatically expand to display the legend title or legend text. To format the text of legend items, use map legend keywords and custom formats. For more information, see [To change the format of content in a legend](../../report-builder/change-map-legends-color-scale-associated-rules-report-builder.md#ChangeFormatItems).  
   
  The following tables shows examples of different formats that you can use.  
   
@@ -115,7 +115,7 @@ ms.reviewer: saurkumar
 |`#FROMVALUE{N0} - #TOVALUE{N0}`|Displays the actual numeric values of the beginning of the range and end of the range.|10 - 790|  
   
 ## See Also  
- [Change map legends, color scale, and associated rules &#40;Power BI Report Builder&#41;](../../report-builder/change-map-legends-color-scale-and-associated-rules-report-builder.md)   
+ [Change map legends, color scale, and associated rules &#40;Power BI Report Builder&#41;](../../report-builder/change-map-legends-color-scale-associated-rules-report-builder.md)   
  [Maps &#40;Power BI Report Builder&#41;](../../report-builder/maps-report-builder.md)   
  [Map wizard and map layer wizard &#40;Power BI Report Builder&#41;](../../report-builder/map-wizard-map-layer-wizard-report-builder.md)  
   
