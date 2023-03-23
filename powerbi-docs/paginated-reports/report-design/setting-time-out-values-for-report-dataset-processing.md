@@ -12,6 +12,8 @@ ms.author: maggies
 ms.reviewer: joshger
 ---
 # Setting time-out values for report dataset processing
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+
 Most time-out errors occur during query processing. If you are encountering time-out errors, try increasing the dataset query time-out value. 
   
 ## Setting a query time-out for a dataset in a report  
