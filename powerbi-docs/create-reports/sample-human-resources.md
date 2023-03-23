@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/22/2023
+ms.date: 03/23/2023
 LocalizationGroup: Samples
 ---
 # Human Resources sample for Power BI: Take a tour
@@ -24,19 +24,17 @@ This sample is part of a series that shows how you can use Power BI with busines
 
 This tutorial explores the Human Resources built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
 
-## Prerequisites
-
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
-
-## Get the sample
-
 Before you can use the sample, get the sample in one of the following ways:
 
 - Get the [built-in sample in the service](#get-the-built-in-sample).
 - Download the [.pbix file](#get-the-pbix-file-for-this-sample).
 - Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
-### Get the built-in sample
+## Prerequisites
+
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+
+### Get the built-in sample in the Power BI service
 
 1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
@@ -62,7 +60,7 @@ Alternatively, you can download the Human Resources sample as a [.pbix file](htt
 
 1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
 
-The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
+The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still [use Q&A in the dashboard](#ask-a-question-in-the-dashboard-qa-box) to learn more about your data and make changes to your dashboard.
 
 ### Get the Excel workbook for this sample
 
@@ -84,9 +82,11 @@ If you want to get and use the Excel file in the Power BI service, follow these 
 
 1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
 
-The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
+The dashboard and report that you create this way aren't the same as the ones created by the built-in sample. You can still [use Q&A in the dashboard](#ask-a-question-in-the-dashboard-qa-box) to explore your data and make changes to your dashboard.
 
 ## New hires
+
+If you got the built-in report in the Power BI service or published the *.pbix* file from Power BI Desktop, you can see the report that comes with the sample. If you imported from Excel, your automatically generated report won't look as described.
 
 Let's explore new hires first.
 
@@ -178,6 +178,8 @@ The last area to explore is bad hires. Bad hires are defined as employees who di
 1. Select the name of the dashboard from the workspace return to the dashboard.
 
 ## Ask a question in the dashboard Q&A box
+
+No matter whether you downloaded the dashboard or created your own, you can use Q&A in the dashboard to discover other details in the data. Let's get more specific.
 
 In the [Q&A question box](power-bi-tutorial-q-and-a.md) in the dashboard, you can ask a question about your data by using natural language. Q&A recognizes the words you type and figures out where in your dataset to find the answer.
 
