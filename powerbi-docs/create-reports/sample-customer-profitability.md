@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/23/2023
+ms.date: 03/23/2023
 LocalizationGroup: Samples
 ---
 # Customer Profitability sample for Power BI: Take a tour
@@ -20,19 +20,17 @@ This sample is part of a series that shows how you can use Power BI with busines
 
 This tour explores the built-in Customer Profitability sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
 
+Before you can use the sample, get the sample in one of the following ways:
+
+- Get the [built-in sample in the service](#get-the-built-in-sample-in-the-power-bi-service).
+- Download the [.pbix file](#get-the-pbix-file-for-this-sample).
+- Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
+
 ## Prerequisites
 
 You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
-## Get the sample
-
-Before you can use the sample, get the sample in one of the following ways:
-
-- Get the [built-in sample in the service](#get-the-built-in-sample).
-- Download the [.pbix file](#get-the-pbix-file-for-this-sample).
-- Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
-
-### Get the built-in sample
+## Get the built-in sample in the Power BI service
 
 1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
@@ -46,7 +44,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
    Select the dashboard to view the sample dashboard.
 
-### Get the .pbix file for this sample
+## Get the .pbix file for this sample
 
 Alternatively, you can download the Customer Profitability sample as a [.pbix file](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
 
@@ -58,9 +56,10 @@ Alternatively, you can download the Customer Profitability sample as a [.pbix fi
 
 1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
 
-The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
+The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. 
+ You can still [use Q&A in the dashboard](#dig-into-the-data-by-asking-questions-with-qa) to learn more about your data and make changes to your dashboard.
 
-### Get the Excel workbook for this sample
+## Get the Excel workbook for this sample
 
 If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot** > **Manage**.
 
@@ -80,11 +79,13 @@ If you want to get and use the Excel file in the Power BI service, follow these 
 
 1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
 
-The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
+The dashboard and report that you create this way aren't the same as the ones created by the built-in sample. You can still [use Q&A in the dashboard](#dig-into-the-data-by-asking-questions-with-qa) to explore your data and make changes to your dashboard.
 
-## What is the dashboard telling us
+## What's the dashboard telling us?
 
-In the workspace where you saved the sample, find the Customer Profitability dashboard and select it:
+With the [built-in sample in the Power BI service](#get-the-built-in-sample-in-the-power-bi-service), you have a report *and* a dashboard. If you obtained the sample as a .*pbix* or Excel file, your dashboard doesn't look as described int this section.
+
+Let's start the tour at the dashboard. In the workspace where you saved the sample, find the Customer Profitability dashboard and select it:
 
 :::image type="content" source="media/sample-customer-profitability/power-bi-dash.png" alt-text="Screenshot shows tiles in the dashboard for the Customer Profitability sample.":::
 
@@ -120,6 +121,8 @@ By analyzing the manager-specific dashboard tiles, you can make the following ob
 ## Explore the dashboard's underlying data
 
 This dashboard has tiles that link to a report and to an Excel workbook.
+
+If you downloaded the Excel workbook version of this sample, you don't have the dashboard or the report, but Power BI can auto-create a report for you from the data. See [Get the Excel workbook for this sample](#get-the-excel-workbook-for-this-sample) in this article for details.
 
 ### Open the Excel Online data source
 
@@ -208,6 +211,8 @@ This report page provides a different slice of the data. It looks at gross margi
 This page has a custom page size format.
 
 ## Dig into the data by asking questions with Q&A
+
+No matter whether you downloaded the dashboard or created your own, you can use Q&A in the dashboard to discover other details in the data. Let's get more specific.
 
 For your analysis, it might be helpful to determine which industry generates the most revenue for Valery. Use Q&A.
 
