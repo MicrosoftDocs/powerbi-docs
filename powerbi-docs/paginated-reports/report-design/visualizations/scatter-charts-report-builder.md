@@ -12,13 +12,13 @@ ms.author: maggies
 ms.reviewer: saurkumar
 ---
 # Scatter charts in Power BI paginated report (Power BI Report Builder)
-
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
 
   A scatter chart displays a series as a set of points in a Power BI paginated report. Values are represented by the position of the points on the chart. Categories are represented by different markers on the chart. Scatter charts are typically used to compare aggregated data across categories. For more information on how to add data to a scatter chart, see [Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs)  
   
  The following illustration shows an example of a scatter chart.  
   
- ![Screenshot of a Scatter chart](/powerbi-docs/paginated-reports/media/paginated-reports-visualizations/scatter-chart.gif "Scatter chart")  
+ ![Screenshot of a Scatter chart](../media/paginated-reports-visualizations/scatter-chart.gif "Scatter chart")  
   
 > [!NOTE]  
 >  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.
