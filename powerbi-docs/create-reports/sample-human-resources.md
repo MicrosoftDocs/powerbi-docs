@@ -26,7 +26,7 @@ This tutorial explores the Human Resources built-in sample in the Power BI servi
 
 Before you can use the sample, get the sample in one of the following ways:
 
-- Get the [built-in sample in the service](#get-the-built-in-sample).
+- Get the [built-in sample in the service](#get-the-built-in-sample-in-the-power-bi-service).
 - Download the [.pbix file](#get-the-pbix-file-for-this-sample).
 - Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
@@ -34,7 +34,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
 You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
-### Get the built-in sample in the Power BI service
+## Get the built-in sample in the Power BI service
 
 1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
@@ -48,7 +48,7 @@ You don't need a Power BI license to explore the samples in Power BI Desktop. Yo
 
    Select the dashboard to view the sample dashboard.
 
-### Get the .pbix file for this sample
+## Get the .pbix file for this sample
 
 Alternatively, you can download the Human Resources sample as a [.pbix file](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
 
@@ -62,7 +62,7 @@ Alternatively, you can download the Human Resources sample as a [.pbix file](htt
 
 The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still [use Q&A in the dashboard](#ask-a-question-in-the-dashboard-qa-box) to learn more about your data and make changes to your dashboard.
 
-### Get the Excel workbook for this sample
+## Get the Excel workbook for this sample
 
 If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot** > **Manage**.
 
@@ -86,7 +86,7 @@ The dashboard and report that you create this way aren't the same as the ones cr
 
 ## New hires
 
-If you got the built-in report in the Power BI service or published the *.pbix* file from Power BI Desktop, you can see the report that comes with the sample. If you imported from Excel, your automatically generated report won't look as described.
+If you got the built-in report in the Power BI service or published the *.pbix* file from Power BI Desktop, you can see the report that comes with the sample. If you imported from Excel, your automatically generated report doesn't look as described.
 
 Let's explore new hires first.
 
