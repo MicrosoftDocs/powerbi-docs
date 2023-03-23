@@ -121,7 +121,7 @@ Report authors can [define drillthrough](../../create-reports/desktop-drillthrou
 2. Tooltip will show up, and if drillthrough is defined, then the tooltip footer will show the drillthrough arrow.
 3. Tap on the arrow to drill through
 
-    ![Tap the arrow to drill through](media/mobile-apps-view-phone-report/report-drill-through1.png)
+    :::image type="content" source="./media/mobile-apps-view-phone-report/report-drill-through1.png" alt-text="Screenshot of drill-through button on mobile app visual tooltip." border="false":::
 
 4. Choose which report page to drill through
 
