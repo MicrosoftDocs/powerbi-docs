@@ -176,7 +176,7 @@ Configuring incremental refresh is done in Power BI Desktop. For most models, on
 
 ### Create parameters
 
-To configure incremental refresh in Power BI Desktop, you first create two Power Query date/time parameters with the reserved, case-sensitive names `RangeStart` and `RangeEnd`. These parameters, defined in the Manage Parameters dialog in Power Query Editor, are initially used to filter the data loaded into the Power BI Desktop model table to include only those rows with a date/time within that period. After the model is published to the service, `RangeStart` and `RangeEnd` are overridden automatically by the service to query data defined by the refresh period specified in the incremental refresh policy settings.
+To configure incremental refresh in Power BI Desktop, you first create two Power Query date/time parameters with the reserved, case-sensitive names `RangeStart` and `RangeEnd`. These parameters, defined in the Manage Parameters dialog in Power Query Editor, are initially used to filter the data loaded into the Power BI Desktop model table to include only those rows with a date/time within that period. `RangeStart` represents the oldest, or earliest date/time, and `RangeEnd` represents the newest, or latest date/time. After the model is published to the service, `RangeStart` and `RangeEnd` are overridden automatically by the service to query data defined by the refresh period specified in the incremental refresh policy settings.
 
 For example, the FactInternetSales data source table averages 10,000 new rows per day. To limit the number of rows initially loaded into the model in Power BI Desktop, specify a two-day period between `RangeStart` and `RangeEnd`.
 
