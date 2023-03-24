@@ -13,6 +13,8 @@ ms.reviewer: monaraya
 ---
 # Customize the display of a map or map layer in a paginated report (Power BI Report Builder)
 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+
   After you add a map or map layer to a paginated report by using a wizard, you might want to change the way the map looks in the report. You can make improvements by considering the following ideas:  
   
 - To help your users understand how to interpret the data display on a map, you can add legends and a color scale, and add labels and tooltips.  
