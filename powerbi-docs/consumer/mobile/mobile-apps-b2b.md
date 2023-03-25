@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 01/24/2023
+ms.date: 03/25/2023
 ---
 
 # View Power BI content shared with you from an external organization
@@ -24,11 +24,11 @@ Applies to:
 
 **First, you need someone from an external organization to share an item with you**. When someone from an external organization [shares an item with you](../../collaborate-share/service-share-dashboards.md), you can get to the item in three ways.
 
-* You can use the **From external orgs** strip on the app's home page.
+* You can use the **From external orgs** strip on the app's home page. To display the From external orgs strip, tap the arrow next to Recommended on the home page and choose From external orgs. The strip will display a number of shared items from external orgs. Tap See all to see all external content that's been shared with you.
 
-    :::image type="content" source="{source}" alt-text="{alt-text}":::
+    :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-from-external-orgs-strip.png" alt-text="Screenshot showing From external orgs strip on the home page.":::
 
-* You can open the **More options (...)** menu on the home page footer and choose **From external orgs**.
+* You can open the **More options (...)** menu on the home page footer and choose **From external orgs**. You will see a list of all external content that has been shared with you.
 
     :::image type="content" source="{source}" alt-text="{alt-text}":::
 
