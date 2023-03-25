@@ -101,9 +101,9 @@ You can't have dashboards or reports without data (well, you can have empty dash
 
 ### Dig deeper into dataflows
 
-- [Introduction to dataflows and self-service data prep](/transform-model/dataflows/dataflows-introduction-self-service.md)
-- [Configure and consume a dataflow](/transform-model/dataflows/dataflows-configure-consume.md)
-- [Creating a dataflow](/transform-model/dataflows/dataflows-create.md)
+- [Introduction to dataflows and self-service data prep](../transform-model/dataflows/dataflows-introduction-self-service.md
+-- [Configure and consume a dataflow](../transform-model/dataflows/dataflows-configure-consume.md)
+- [Creating a dataflow](../transform-model/dataflows/dataflows-create.md)
 
 ## Datasets
 
