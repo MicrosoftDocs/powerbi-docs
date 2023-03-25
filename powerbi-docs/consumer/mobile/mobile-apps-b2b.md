@@ -20,6 +20,39 @@ Applies to:
 |:--- |:--- |:--- |:--- |
 |iPhones |iPads |Android phones |Android tablets |
 
+## Access shared external content
+
+**First, you need someone from an external organization to share an item with you**. When someone from an external organization [shares an item with you](../../collaborate-share/service-share-dashboards.md), you can get to the item in three ways.
+
+* You can use the **From external orgs** strip on the app's home page.
+
+    :::image type="content" source="{source}" alt-text="{alt-text}":::
+
+* You can open the **More options (...)** menu on the home page footer and choose **From external orgs**.
+
+    :::image type="content" source="{source}" alt-text="{alt-text}":::
+
+* You can following the link in the email that you get when someone shares an item with you. Following that link in your mobile device opens the Power BI mobile app. When the app recognizes that the item was shared from an external organization, it reconnects to that organization with your identity and opens the item.
+
+    :::image type="content" source="{source}" alt-text="{alt-text}":::
+
+> [!NOTE]
+> If this is the first item shared with you as an external guest user, you must claim the invitation in a browser. You cannot claim the invitation in the Power BI app.
+
+Once your app switches, you can access all items shared with you (not only the item you opened from the email). To view all items you can access in the external organization, go to the app menu and tap Shared with me. Under Apps, you find apps that you can use as well.
+
+:::image type="content" source="{source}" alt-text="{alt-text}":::
+
+## Get back to your own organization
+
+As long as you're connected to an external organization, a black header appears in the app. This header indicates that you're not connected to your home organization. To connect back to your home organization, tap the icon   in the header to exit from guest mode.
+
+:::image type="content" source="{source}" alt-text="{alt-text}":::
+
+
+
+
+
 ## Accessing shared content
 
 **First, you need someone from an external organization to share an item with you.** When someone [shares an item with you](../../collaborate-share/service-share-dashboards.md), either from the same organization or from an external organization, you receive an email with a link to that shared item. Following that link in your mobile device opens the Power BI mobile app. If the app recognizes that the item was shared from an external organization, the app reconnects to that organization with your identity. The app then loads all items that were shared with you from that organization.
