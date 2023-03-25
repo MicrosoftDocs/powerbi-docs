@@ -31,7 +31,7 @@ data source=<IP Address>
   
  Once report is published to the Power BI service, you need to set up a Power BI gateway for your report, to fetch data from your on-premises Teradata data source. To learn more about Power BI gateways, see [What is an on-premises data gateway&#63;](../../connect-data/service-gateway-onprem.md)
   
- For more information, see [Create data connection strings - Power BI Report Builder](/sql/reporting-services/report-data/data-connections-data-sources-and-connection-strings-report-builder-and-ssrs.md) or [Specify Credential and Connection Information for Report Data Sources](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).  
+ For more information, see [Create data connection strings - Power BI Report Builder](/sql/reporting-services/report-data/data-connections-data-sources-and-connection-strings-report-builder-and-ssrs) or [Specify Credential and Connection Information for Report Data Sources](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).  
   
   
 ##  <a name="Remarks"></a> Considerations  
