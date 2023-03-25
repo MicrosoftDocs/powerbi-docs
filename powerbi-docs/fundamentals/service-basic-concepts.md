@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 
 # Basic concepts for designers in the Power BI service
 
-The aim of this article is to orient you to the Power BI service: what the different elements are, how they work together, and how you can work with them. You might get more out of it if you've already [signed up for the Power BI service](service-self-service-signup-for-power-bi.md) and [added some data](../connect-data/service-get-data.md). As a designer, your typical workflow is usually to start by creating reports in Power BI Desktop. Then you publish them to the Power BI service, where you can continue modifying them. You also use the Power BI service to create the dashboards based on your reports.
+The aim of this article is to familiarize you with the Power BI service: what the different elements are, how they work together, and how you can work with them. You might get more out of it if you've already [signed up for the Power BI service](service-self-service-signup-for-power-bi.md) and [added some data](../connect-data/service-get-data.md). As a designer, your typical workflow is usually to start by creating reports in Power BI Desktop. Then you publish them to the Power BI service, where you can continue modifying them. You also use the Power BI service to create the dashboards based on your reports.
 
 For this article, if you don't have your own reports yet, install one of the [Power BI samples](../create-reports/sample-datasets.md).
 
