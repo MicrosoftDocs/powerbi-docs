@@ -35,7 +35,7 @@ ms.author: maggies
 
 3.  To move a parameter to a new location in the parameters pane, drag the parameter to a different cell in the pane.
 
-     When you change the location of the parameter in the pane, the order of the parameter in the **Parameters** list in the **Report Data** pane is automatically changed. For more information about the impact of the parameter order, see [Change the Order of a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-order-report-parameter-report-builder)
+     When you change the location of the parameter in the pane, the order of the parameter in the **Parameters** list in the **Report Data** pane is automatically changed. For more information about the impact of the parameter order, see [Change the Order of a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-the-order-of-a-report-parameter-report-builder-and-ssrs)
 
 4.  To access the properties for a parameter, do one of the following.
 
