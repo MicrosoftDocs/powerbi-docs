@@ -45,7 +45,9 @@ Once your app switches, you can access all items shared with you (not only the i
 
 ## Get back to your own organization
 
-As long as you're connected to an external organization, a black header appears in the app. This header indicates that you're not connected to your home organization. To connect back to your home organization, tap the icon :::image type="icon" source="./media/mobile-apps-b2b/powerbi-mobile-app-exit-guest-icon.png":::  in the header to exit from guest mode.
+As long as you're connected to an external organization, the header indicates that you're connected as a guest in another organization. This header indicates that you're not connected to your home organization. To connect back to your home organization, tap the **Exit** in the top right corner of the header.
+
+:::image type="icon" source="./media/mobile-apps-b2b/powerbi-mobile-app-exit-guest-icon.png":::  in the header to exit from guest mode.
 
 :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-exit-home-new.png" border="false" alt-text="Screenshot that shows the Power BI guest user header exit icon.":::
 
