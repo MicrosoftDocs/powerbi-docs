@@ -26,7 +26,7 @@ Applies to:
 
 * You can use the **From external orgs** strip on the app's home page. To display the From external orgs strip, tap the arrow next to Recommended on the home page and choose From external orgs. The strip will display a number of shared items from external orgs. Tap See all to see all external content that's been shared with you.
 
-    :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-from-external-orgs-strip.png" alt-text="Screenshot showing From external orgs strip on the home page.":::
+    :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-from-external-orgs-strip.png" alt-text="Screenshot showing From external orgs strip on the home page." border="false":::
 
 * You can open the **More options (...)** menu on the home page footer and choose **From external orgs**. You will see a list of all external content that has been shared with you.
 
