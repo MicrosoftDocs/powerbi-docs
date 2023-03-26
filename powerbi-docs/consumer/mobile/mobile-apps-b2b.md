@@ -30,7 +30,7 @@ To see all the content that has been shared with your from external organization
 
 You'll see a list of the external content that's been shared with you, grouped according to organization.
 
-:::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-shared-list.png"" alt-text="Screenshot showing all shared external content." border="false":::
+:::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-shared-list.png" alt-text="Screenshot showing all shared external content." border="false":::
 
 Tap an item to open it. You'll be asked to confirm connecting to the organization the external content is hosted in. Once you've confirmed, the item will open.
 
