@@ -24,16 +24,7 @@ Applies to:
 
 Before you can access content from external orgs, someone first needs to share something with you. If this is the first item shared with you as an external guest user of an org, you must first claim the invitation in a browser. You cannot claim the invitation in the Power BI app.
 
-To access content that has been shared with you from external organizations, on the home page tap the arrow on the **Recommended** strip and choose **Content from external orgs**. The name of the strip will change to **From external orgs**, and a number of external items will be shown on the strip.
-
-:::image type="content" source="./media/mobile-apps-b2b/power-bi-mobile-external-content-strip.gif" alt-text="Animation showing how to switch the Recommended strip to the From external orgs strip." border="false":::
-
-You can either tap an item to open it, or you can tap **See all** to open the list of all external items that have been shared with you.
-
-
-
-
-To see content that has been shared with your from external organizations, tap **More options (...)** on the home page and choose **From external orgs**.
+To see all the content that has been shared with your from external organizations, tap **More options (...)** on the home page and choose **From external orgs**.
 
 :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list-2.png" alt-text="Screenshot showing selection of From external orgs option from More options menu." border="false":::
 
