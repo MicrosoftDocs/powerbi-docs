@@ -24,44 +24,33 @@ Applies to:
 
 Before you can access content from external orgs, someone first needs to share something with you. If this is the first item shared with you as an external guest user of an org, you must first claim the invitation in a browser. You cannot claim the invitation in the Power BI app.
 
-To access content that has been shared with you from external organizations, on the home page tap the arrow on the **Recommended** strip and choose **Content from external orgs**. The name of the strip will change to **From external orgs**, and a number of external items will be shown on the strip.
+To access content that has been shared with you from external organizations, on the home page, tap the arrow on the **Recommended** strip and choose **Content from external orgs**. The name of the strip will change to **From external orgs**, and a number of external items will be shown on the strip.
 
 :::image type="content" source="./media/mobile-apps-b2b/power-bi-mobile-external-content-strip.gif" alt-text="Animation showing how to switch the Recommended strip to the From external orgs strip." border="false":::
 
-You can either tap an item to open it, or you can tap **See all** to open the list of all external items that have been shared with you.
+> [!NOTE]
+> Once you've changed **Recommended** to **From external orgs**, the next time you open your app, you'll be able to get to that external content quickly, right from your app's home screen.
+>
+>To get back to the **Recommended** strip, tap the down arrow again and choose **Recommended**.
 
-
-
-
-To see content that has been shared with your from external organizations, tap **More options (...)** on the home page and choose **From external orgs**.
-
-:::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list-2.png" alt-text="Screenshot showing selection of From external orgs option from More options menu." border="false":::
-
-You'll see a list of the external content that's been shared with you, grouped according to organization.
+You can either tap an item to open it, or you can tap **See all** to open the list of all external items that have been shared with you. The following image shows the list of the external content that's been shared with you, grouped according to organization.
 
 :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-shared-list.png" alt-text="Screenshot showing all shared external content." border="false":::
 
-Tap an item to open it. You'll be asked to confirm connecting to the organization the external content is hosted in. Once you've confirmed, the item will open.
+> [!NOTE]
+> You can also get to this list by tapping **More options (...)** and choosing From external orgs.
+>
+> :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list-2.png" alt-text="Screenshot showing selection of From external orgs option from More options menu." border="false":::
 
-In the header you can see that you are connected as a guest. To see all the content that's been shared with you in that organization, tap the arrow to the left of the item's name. To get back to your home organization, tap **Exit**.
+From the From external orgs strip, or from the list of shared external content, you can tap an item to open it. you'll be asked to confirm connecting to the external organization the content is hosted in. Once you've confirmed, the item will open.
 
 ::::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list.png" alt-text="Screenshot of guest view navigation." border="false":::
 
-If you tapped the arrow, you'll see all the content that's been shared with you in that external org, grouped according to who shared it with you.
+In the header you can see that you are connected as a guest. To see all the content that's been shared with you in that organization, tap the arrow to the left of the item's name. To get back to your home organization, tap **Exit**.
+
+The following image shows you the list of content that's been shared with you in the external organization your connected to as a guest. The items are grouped according to who shared it with you.
 
 :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-menu-new.png" alt-text="Screenshot of guest view of external content in an org." border="false":::
-
-## Enable quick access to external content that's been shared with you
-
-You can change your home page default to enable quick access to external content that's been shared with you.
-
-On the home page, tap the arrow on the **Recommended** strip and then choose **Content from external orgs**. The name of the strip will change to **From external orgs**, and a number of external items will be shown on the strip. You can either tap an item to open it, or you can tap **See all** to open the list of all external items that have been shared with you.
-
-:::image type="content" source="./media/mobile-apps-b2b/power-bi-mobile-external-content-strip.gif" alt-text="Animation showing how to switch the Recommended strip to the From external orgs strip." border="false":::
-
-Once you've changed **Recommended** to **From external orgs**, the next time you open your app, you'll be able to get to that external content quickly, right from your app's home screen.
-
-To get back to the **Recommended** strip, tap the down arrow again and choose **Recommended**.
 
 ## Access external shared content via email link 
 
