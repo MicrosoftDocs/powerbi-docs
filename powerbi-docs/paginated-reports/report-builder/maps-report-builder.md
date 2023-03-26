@@ -61,7 +61,7 @@ ms.reviewer: monaraya
 - **Map Gallery reports.** Spatial data is embedded in reports located in the map gallery. By default, the Map Gallery is installed in *\<drive>*:\Program Files\Power BI Report Builder\MapGallery.  
   
   
-- **SQL Server spatial data stored in a database.** You can use a query that specifies **SQLGeometry** or **SQLGeography** data types from a  relational database. For more information, see [Spatial Data Types Overview](/sql/relational-databases/spatial/spatial-data-types-overview.md).  
+- **SQL Server spatial data stored in a database.** You can use a query that specifies **SQLGeometry** or **SQLGeography** data types from a  relational database. For more information, see [Spatial Data Types Overview](/sql/relational-databases/spatial/spatial-data-types-overview).  
   
      In the result set that you see in the query designer, each row of spatial data is treated as a unit and stored in a single map element. For example, if there are multiple points that are defined in one row in the result set, display properties apply to all points in that map element.  
   
@@ -139,7 +139,7 @@ ms.reviewer: monaraya
   
 - Whether to use a secure connection to retrieve the tiles from the Bing Maps Web service.  
   
- For step-by-step instructions, see [Add, Change, or Delete a Map or Map Layer &#40;Report Builder and SSRS&#41;](add-change-delete-map-map-layer-report-builder.md).  
+ For step-by-step instructions, see [Add, Change, or Delete a Map or Map Layer (Report Builder)](add-change-delete-map-map-layer-report-builder.md).  
   
  For more information about tiles, see [Bing Maps Tile System](/bingmaps/articles/bing-maps-tile-system). For more information about the use of Bing map tiles in your report, see [Additional Terms of Use](https://go.microsoft.com/fwlink/?LinkId=151371).  
   
@@ -221,5 +221,4 @@ ms.reviewer: monaraya
 - [Customize the display of a map or map layer in a paginated report (Power BI Report Builder)](customize-data-display-map-map-layer-report-builder.md)
 - [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data)  
 - [Add Custom Locations to a Map &#40;Power BI Report Builder&#41;](add-custom-locations-map-report-builder.md)  
-- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/troubleshoot-reports-map-reports-report-builder)  
-  
+- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/troubleshoot-reports-map-reports-report-builder-and-ssrs)  
