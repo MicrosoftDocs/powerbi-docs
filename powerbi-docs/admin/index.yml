@@ -45,7 +45,7 @@ landingContent:
           - text: Find the default region for your organization
             url: service-admin-where-is-my-tenant-located.md
           - text: Where data is located when Power BI data is shared with your Microsoft 365 services
-            url: service-admin-m365-data-access-storage.md
+            url: admin-share-power-bi-metadata-microsoft-365-services.md
 
   # Card (optional)
   - title: Monitoring

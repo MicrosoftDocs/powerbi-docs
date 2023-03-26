@@ -4885,6 +4885,11 @@
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-dataflow-on-premium-gen2.md",
             "redirect_url": "/power-bi/troubleshoot/known-issues/known-issue-dataflow-on-premium",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-m365-data-access-storage.md",
+            "redirect_url": "/power-bi/admin/admin-share-power-bi-metadata-microsoft-365-services",
+            "redirect_document_id": false                                                                                                                                                          
         },                
         {
             "source_path": "powerbi-docs/connect-data/desktop-connect-bigquery.md",
