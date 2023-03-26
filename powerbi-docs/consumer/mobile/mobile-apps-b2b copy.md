@@ -24,33 +24,28 @@ Applies to:
 
 To see all the content that has been shared with your from external organizations, tap **More options (...)** on the home page and choose **From external orgs**.
 
-:::image type="content" source="{source}" alt-text="{alt-text}":::
+:::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list-2.png" alt-text="{alt-text}" border="false":::
 
 You'll see a list of the external content that's been shared with you, grouped according to organization.
 
-:::image type="content" source="{source}" alt-text="{alt-text}":::
+:::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-shared-list.png"" alt-text="{alt-text}" border="false":::
 
-Tap an item to open it. You'll be asked to confirm connecting to the organization the external content is hosted in. Once you've confirmed, and the item will open. In the header you can see that you are connected as a guest.
+Tap an item to open it. You'll be asked to confirm connecting to the organization the external content is hosted in. Once you've confirmed, and the item will open. In the header you can see that you are connected as a guest. To see all the content that's been shared with you in that organization, tap the arrow to the left of the item's name. To get back to your home organization, tap **Exit**.
 
-:::image type="content" source="{source}" alt-text="{alt-text}":::
+::::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list.png" alt-text="Screenshot of guest view of external content in an org." border="false":::
 
-To see all the content that's been shared with you in that organization, tap the arrow to the left of the item's name.
 
-:::image type="content" source="{source}" alt-text="{alt-text}":::
+If you tapped the arrow, you'll see all the content that's been shared with you in that org, grouped according to who shared it with you.
 
-You'll see all the content that's been shared with you, grouped according to who shared it with you.
-
-:::image type="content" source="{source}" alt-text="{alt-text}":::
-
-To get back to your own organization, tap **Exit** in the header.
+:::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-menu-new.png" alt-text="Screenshot of guest view of external content in an org." border="false":::
 
 ## Enable quick access to external content that's been shared with you
 
 You change your home page default to enable quick access to external content that's been shared with you.
 
-On the home page tap the arrow on the Recommended strip and then choose From external content. A number of external items will be shown on the strip. You can either tap an item to open it, or you can tap See all to open the list of all external items that have been shared with you.
+On the home page tap the arrow on the **Recommended** strip and then choose **Content from external orgs**. The name of the strip will change to **From external orgs** and a number of external items will be shown on the strip. You can either tap an item to open it, or you can tap **See all** to open the list of all external items that have been shared with you.
 
-:::image type="content" source="{source}" alt-text="{alt-text}":::
+:::image type="content" source="./media/mobile-apps-b2b/power-bi-mobile-external-content-strip.gif" alt-text="{alt-text}":::
 
 ## Access external shared content via email link 
 
