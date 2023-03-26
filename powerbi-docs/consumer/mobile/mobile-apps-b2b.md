@@ -26,17 +26,17 @@ Before you can access content from external orgs, someone first needs to share s
 
 To see all the content that has been shared with your from external organizations, tap **More options (...)** on the home page and choose **From external orgs**.
 
-:::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list-2.png" alt-text="{alt-text}" border="false":::
+:::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list-2.png" alt-text="Screenshot showing selection of From external orgs option from More options menu." border="false":::
 
 You'll see a list of the external content that's been shared with you, grouped according to organization.
 
-:::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-shared-list.png"" alt-text="{alt-text}" border="false":::
+:::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-shared-list.png"" alt-text="Screenshot showing all shared external content." border="false":::
 
 Tap an item to open it. You'll be asked to confirm connecting to the organization the external content is hosted in. Once you've confirmed, the item will open.
 
 In the header you can see that you are connected as a guest. To see all the content that's been shared with you in that organization, tap the arrow to the left of the item's name. To get back to your home organization, tap **Exit**.
 
-::::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list.png" alt-text="Screenshot of guest view of external content in an org." border="false":::
+::::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list.png" alt-text="Screenshot of guest view navigation." border="false":::
 
 If you tapped the arrow, you'll see all the content that's been shared with you in that external org, grouped according to who shared it with you.
 
@@ -48,7 +48,7 @@ You can change your home page default to enable quick access to external content
 
 On the home page, tap the arrow on the **Recommended** strip and then choose **Content from external orgs**. The name of the strip will change to **From external orgs**, and a number of external items will be shown on the strip. You can either tap an item to open it, or you can tap **See all** to open the list of all external items that have been shared with you.
 
-:::image type="content" source="./media/mobile-apps-b2b/power-bi-mobile-external-content-strip.gif" alt-text="{alt-text}" border="false":::
+:::image type="content" source="./media/mobile-apps-b2b/power-bi-mobile-external-content-strip.gif" alt-text="Animation showing how to switch the Recommended strip to the From external orgs strip." border="false":::
 
 Once you've changed **Recommended** to **From external orgs**, the next time you open your app, you'll be able to get to that external content quickly, right from your app's home screen.
 
