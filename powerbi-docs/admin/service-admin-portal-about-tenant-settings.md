@@ -23,7 +23,7 @@ Tenant settings that control the availability of features in the Power BI user i
 
 ## New tenant settings
 
-To help you quickly identify changes and respond, a message at the top of the tenant settings page appears when there's a change. The message lists new tenant settings and changes to existing ones. The message remains active for 30 days.
+To help you quickly identify changes and respond, a message at the top of the tenant settings page appears when there's a change. The message lists new tenant settings and changes to existing ones.
 
 You can identify new settings according to their *new* icon.  
 
