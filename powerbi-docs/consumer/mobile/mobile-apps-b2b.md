@@ -24,17 +24,27 @@ Applies to:
 
 **First, you need someone from an external organization to share an item with you**. When someone from an external organization [shares an item with you](../../collaborate-share/service-share-dashboards.md), you can get to the item in three ways.
 
-* You can use the **From external orgs** strip on the app's home page. To display the From external orgs strip, tap the arrow next to Recommended on the home page and choose From external orgs. The strip will display a number of shared items from external orgs. Tap See all to see all external content that's been shared with you.
+* You can display the [From external orgs strip](#display-the-from-external-orgs-strip) on the app's home page.When you choose this option, the third strip on the home page will display your external content by default when you open the app, making it easy to quickly access your external content right from the home screen.
+* You can choose [From external orgs](#use-the-more-options--menu) option on the **More options (...) menu in the home page footer to list all the external content that's been shared with you.
+* You can [follow the link in the email](#follow-email-link-to-external-content) that you get when someone shares an item with you.
 
-    :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-from-external-orgs-strip.png" alt-text="Screenshot showing From external orgs strip on the home page." border="false":::
+#### Display the From external orgs strip
 
-* You can open the **More options (...)** menu on the home page footer and choose **From external orgs**. You will see a list of all external content that has been shared with you.
+To display the **From external orgs** strip, tap the arrow next to **Recommended** on the home page and choose **From external orgs**. Your choice is saved, so the next time you open the app, you'll be able to get to your external content right away from the home page. The From external orgs strip displays a number of shared external items. Tap **See all** to see all external content that's been shared with you.
 
-    :::image type="content" source="{source}" alt-text="{alt-text}":::
+:::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-from-external-orgs-strip.png" alt-text="Screenshot showing From external orgs strip on the home page." border="false":::
 
-* You can following the link in the email that you get when someone shares an item with you. Following that link in your mobile device opens the Power BI mobile app. When the app recognizes that the item was shared from an external organization, it reconnects to that organization with your identity and opens the item.
+#### Use the More options (...) menu
 
-    :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-open-item-email-new.png" border="false" alt-text="Screenshot that shows how to open a shared Power BI item from an email.":::
+You can open the **More options (...)** menu on the home page footer and choose **From external orgs**. You will see a list of all external content that has been shared with you.
+
+:::image type="content" source="{source}" alt-text="{alt-text}":::
+
+#### Follow an email link to external content
+
+You can following the link in the email that you get when someone shares an item with you. Following that link in your mobile device opens the Power BI mobile app. When the app recognizes that the item was shared from an external organization, it reconnects to that organization with your identity and opens the item.
+
+:::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-open-item-email-new.png" border="false" alt-text="Screenshot that shows how to open a shared Power BI item from an email.":::
 
 > [!NOTE]
 > If this is the first item shared with you as an external guest user, you must claim the invitation in a browser. You cannot claim the invitation in the Power BI app.
