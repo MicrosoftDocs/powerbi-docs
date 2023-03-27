@@ -12,7 +12,7 @@ ms.reviewer: rpatkar
 
 # Report Definition Language (RDL)
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
 Report Definition Language (RDL) is an XML representation of a paginated report definition. A report definition contains data retrieval and layout information for a report. RDL is composed of XML elements that match an XML grammar created for Power BI. You can add your own custom functions for controlling report item values, styles, and formatting by accessing code blocks within report definition files.
   

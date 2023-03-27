@@ -12,7 +12,7 @@ ms.reviewer: rpatkar
 
 # Hide page header or footer on first or last page of a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
 A paginated report can contain a page header and page footer that run along the top and bottom of each page, respectively. After you add a header or footer, you can selectively hide it on the first and last pages of a report.
   
