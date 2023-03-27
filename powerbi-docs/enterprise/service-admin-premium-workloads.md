@@ -211,19 +211,6 @@ The dataflows workload lets you use dataflows self-service data prep, to ingest,
 
 To benefit from the new compute engine, split ingestion of data into separate dataflows and put transformation logic into computed entities in different dataflows. This approach is recommended because the compute engine works on dataflows that reference an existing dataflow. It doesn't work on ingestion dataflows. Following this guidance ensures that the new compute engine handles transformation steps, such as joins and merges, for optimal performance.
 
-### Container size
-
-When refreshing a dataflow, the dataflow workload spawns a container for each entity in the dataflow. Each container can take memory up to the volume specified in the Container Size setting. The default for all SKUs is 700 MB. You might want to change this setting if:
-
-* Dataflows take too long to refresh, or dataflow refresh fails on a timeout.
-* Dataflow entities include computation steps, for example, a join.  
-
-It's recommended you use the [Power BI Premium Capacity Metrics](service-premium-metrics-app.md) app to analyze Dataflow workload performance.
-
-In some cases, increasing container size may not improve performance. For example, if the dataflow is getting data only from a source without performing significant calculations, changing container size probably won't help. Increasing container size might help if it will enable the Dataflow workload to allocate more memory for entity refresh operations. By having more memory allocated, it can reduce the time it takes to refresh heavily computed entities.
-
-The Container Size value can't exceed the maximum memory for the Dataflows workload. For example, a P1 capacity has 25 GB of memory. If the Dataflow workload Max Memory (%) is set to 20%, Container Size (MB) can't exceed 5000. In all cases, the Container Size can't exceed the Max Memory, even if you set a higher value.
-
 ## Paginated reports
 
 The paginated reports workload lets you run paginated reports, based on the standard SQL Server Reporting Services format, in the Power BI service.
