@@ -59,4 +59,4 @@ ms.reviewer: monaraya
 
 - [What are paginated reports in Power BI?](../paginated-reports-report-builder-power-bi.md)
 - [Power BI Report Builder](../report-builder-power-bi.md)   
-- [Page Layout and Rendering &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/page-layout-and-rendering-report-builder-and-ssrs.md)    
+- [Page Layout and Rendering &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/page-layout-and-rendering-report-builder-and-ssrs)    
