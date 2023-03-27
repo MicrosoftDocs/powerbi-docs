@@ -11,8 +11,7 @@ ms.date: 01/18/2023
 ---
 # Add filters to datasets, data regions, and groups in a paginated report (Power BI Report Builder)
 
-
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
   In a Power BI paginated report, a filter is a part of a dataset, a data region, or a data region group that you create to limit the data that is used in the report. Filters help you control report data if you can't change the dataset query.
   
