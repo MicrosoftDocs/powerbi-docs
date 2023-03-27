@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 03/20/2023
+ms.date: 03/27/2023
 ---
 
 # Embed Power BI content in Microsoft Teams
@@ -52,7 +52,7 @@ Follow these steps to embed your report in a Microsoft Teams channel or chat.
 
 1. Choose any of these options to integrate the report:
 
-    - Paste the report link into **Paste a Power BI link** input and press **Add tab**. A new tab is added.
+    - Paste the report link in the **Paste a Power BI link** box and select **Add tab**. A new tab is added.
 
         > [!NOTE]
         > If you use **Share link** to embed your report, make sure that other users have access to this report and have the required permissions. They don't get access automatically in this case.
