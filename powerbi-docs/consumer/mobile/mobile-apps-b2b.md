@@ -33,7 +33,7 @@ To access content that has been shared with you from external organizations, on 
 >
 >To get back to the **Recommended** strip, tap the down arrow again and choose **Recommended**.
 
-You can either tap an item to open it, or you can tap **See all** to open the list of all items in external orgs that you can access. The following image shows the list of the external content that's available to you. First, there's a complete list of all the external items you can access, followed by the same items grouped according to the external organization they belong to.
+You can either tap an item to open it, or you can tap **See all** to open the list of all items in external orgs that you can access. The following image shows the list of the external content that's available to you. First, there's a complete list of all the external items you can access, followed by the same items grouped according to the external organization they reside in.
 
 :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-shared-list.png" alt-text="Screenshot showing all shared external content." border="false":::
 
@@ -41,13 +41,13 @@ You can also get to this list by tapping **More options (...)** and choosing **F
 
 :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list-2.png" alt-text="Screenshot showing selection of From external orgs option from More options menu." border="false":::
 
-From the From external orgs strip, or from the list of shared external content, you can tap an item to open it. You'll be asked to confirm connecting to the external organization the content is hosted in. Once you've confirmed, the item will open.
+From the **From external orgs** strip or from the list of shared external content, you can tap an item to open it. You'll be asked to confirm connecting to the external organization the content is hosted in. Once you've confirmed, the item will open.
 
 ::::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list.png" alt-text="Screenshot of guest view navigation." border="false":::
 
 In the header you can see that you are connected as a guest. To see all the content that's been shared with you in that organization, tap the arrow to the left of the item's name. To get back to your home organization, tap **Exit**.
 
-The following image shows you the list of content that's been shared with you in the external organization you're connected to as a guest. The items are grouped according to who shared it with you.
+The following image shows your **Shared with me** page in the external organization you're connected to as a guest. It shows you all the content in that organization that you can access.
 
 :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-menu-new.png" alt-text="Screenshot of guest view of external content in an org." border="false":::
 
