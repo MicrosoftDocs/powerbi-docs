@@ -11,7 +11,7 @@ ms.reviewer: monaraya
 ---
 # Add a chart to a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
 When you want to summarize data in a visual format in a paginated report, use a chart data region. It is important to choose an appropriate chart type for the type of data that you are presenting. This affects how well the data can be interpreted when put in chart form. For more information, see [Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs).  
   

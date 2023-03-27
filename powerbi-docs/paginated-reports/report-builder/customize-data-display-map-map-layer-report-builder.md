@@ -13,6 +13,8 @@ ms.reviewer: monaraya
 ---
 # Customize the display of a map or map layer in a paginated report (Power BI Report Builder)
 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+
   After you add a map or map layer to a paginated report by using a wizard, you might want to change the way the map looks in the report. You can make improvements by considering the following ideas:  
   
 - To help your users understand how to interpret the data display on a map, you can add legends and a color scale, and add labels and tooltips.  
@@ -68,7 +70,7 @@ ms.reviewer: monaraya
   
 - Resolution and simplification. Choose a balance between drawing time and detailed outlines for lines and polygons.  
   
- To change these options, right-click the map viewport, use the [Map Viewport Properties Dialog Box, General](./maps-report-builder.md) page and related pages.  
+ To change these options, right-click the map viewport, use the [Map Viewport Properties Dialog Box, General](maps-report-builder.md#Viewport) page and related pages.  
   
 ##  <a name="Legends"></a> Change options for the legends  
  Legends help users interpret the data on a map.  
@@ -79,7 +81,7 @@ ms.reviewer: monaraya
   
 - To change the contents or the format of contents for a legend, change the legend options for the corresponding rules for a layer.  
   
- For more information, see [Change Map Legends, Color Scale, and Associated Rules &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-map-legends-color-scale-associated-rules-report-builder).  
+ For more information, see [Change Map Legends, Color Scale, and Associated Rules &#40;Power BI Report Builder&#41;](change-map-legends-color-scale-associated-rules-report-builder.md).  
   
 ##  <a name="Layer"></a> Change options for the layer  
  To display the layers for a map, select the map to select it. The Map pane appears. To change options for a layer, right-click the layer and use the shortcut menu.  
@@ -142,4 +144,4 @@ ms.reviewer: monaraya
   
 ## Next steps 
  [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](map-wizard-map-layer-wizard-report-builder.md)
- [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder)  
+ [Maps &#40;Power BI Report Builder&#41;](maps-report-builder.md)

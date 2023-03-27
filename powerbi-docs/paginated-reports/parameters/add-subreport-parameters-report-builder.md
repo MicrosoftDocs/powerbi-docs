@@ -13,7 +13,7 @@ ms.reviewer: saurkumar
 ---
 # Add a subreport and parameters to a Power BI paginated report (Power BI Report Builder)
  
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
  Add subreports to a Power BI paginated report when you want to create a main report that is a container for multiple related reports. A subreport is a reference to another report. To relate the reports through data values (for example, to have multiple reports show data for the same customer), you must design a parameterized report (for example, a report that shows the details for a specific customer) as the subreport. When you add a subreport to the main report, you can specify parameters to pass to the subreport.  
   

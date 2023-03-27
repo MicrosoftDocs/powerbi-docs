@@ -12,17 +12,9 @@ LocalizationGroup: Transform and shape data
 ---
 # Apply many-to-many relationships in Power BI Desktop
 
-With *relationships with a many-to-many cardinality* in Power BI Desktop, you can join tables that use a cardinality of *many-to-many*. You can more easily and intuitively create data models that contain two or more data sources. *Relationships with a many-to-many cardinality* are part of the larger *composite models* capabilities in Power BI Desktop.
+With *relationships with a many-to-many cardinality* in Power BI Desktop, you can join tables that use a cardinality of *many-to-many*. You can more easily and intuitively create data models that contain two or more data sources. *Relationships with a many-to-many cardinality* are part of the larger *composite models* capabilities in Power BI Desktop. For more information about **composite models**, see [Use composite models in Power BI Desktop](desktop-composite-models.md)
 
 :::image type="content" source="media/desktop-many-to-many-relationships/many-to-many-relationships_01.png" alt-text="Screenshot of a many-to-many relationship in the Edit relationship pane.":::
-
-A *relationship with a many-to-many cardinality* in Power BI Desktop is composed of one of three related features:
-
-* **Composite models**: A *composite model* allows a report to have two or more data connections, including DirectQuery connections or Import, in any combo. For more information, see [Use composite models in Power BI Desktop](desktop-composite-models.md).
-
-* **Relationships with a many-to-many cardinality**: With composite models, you can establish *relationships with a many-to-many cardinality* between tables. This approach removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. The feature is described further in this article.
-
-* **Storage mode**: You can now specify which visuals require a query to backend data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce backend load. Previously, even simple visuals, such as slicers, began queries that were sent to backend sources. For more information, see [Manage storage mode in Power BI Desktop](desktop-storage-mode.md).
 
 ## What a relationship with a many-to-many cardinality solves
 

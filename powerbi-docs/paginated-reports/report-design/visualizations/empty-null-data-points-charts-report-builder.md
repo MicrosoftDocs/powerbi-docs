@@ -12,7 +12,7 @@ ms.reviewer: monaraya
 
 # Empty and null data points in paginated report charts (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
 If you are displaying fields with empty or null values in a chart in your paginated report, the chart may not look as you expect. Charts process empty values differently depending on the specified chart type:  
   

@@ -13,7 +13,7 @@ ms.date: 10/27/2022
 # Sample Power BI paginated reports
 
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
 This article provides information and links to several sample Power BI paginated reports to download and explore. They demonstrate typical ways you can use paginated reports.
 
