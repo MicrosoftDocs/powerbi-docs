@@ -7,7 +7,7 @@ ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/31/2023
+ms.date: 03/27/2023
 LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
