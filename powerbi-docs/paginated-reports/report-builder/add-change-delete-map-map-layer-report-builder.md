@@ -38,8 +38,6 @@ The following table displays the toolbar icons for the **Map** pane.
   
  For more information about layers, see [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs).  
   
-
-  
 ##  <a name="AddLayer"></a> Add a layer from the map layer wizard  
   
 - From the Ribbon, on the **Insert** menu, select **Map**, and then select **Map Wizard.** The wizard enables you to add a layer to the existing map. Most wizard pages are identical between the map wizard and the map layer wizard.  
