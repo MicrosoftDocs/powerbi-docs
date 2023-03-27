@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 03/26/2023
+ms.date: 03/27/2023
 ---
 
 # View Power BI content shared with you from an external organization
@@ -33,22 +33,21 @@ To access content that has been shared with you from external organizations, on 
 >
 >To get back to the **Recommended** strip, tap the down arrow again and choose **Recommended**.
 
-You can either tap an item to open it, or you can tap **See all** to open the list of all external items that have been shared with you. The following image shows the list of the external content that's been shared with you, grouped according to organization.
+You can either tap an item to open it, or you can tap **See all** to open the list of all items in external orgs that you can access. The following image shows the list of the external content that's available to you. First, there's a complete list of all the external items you can access, followed by the same items grouped according to the external organization they belong to.
 
 :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-shared-list.png" alt-text="Screenshot showing all shared external content." border="false":::
 
-> [!NOTE]
-> You can also get to this list by tapping **More options (...)** and choosing From external orgs.
->
-> :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list-2.png" alt-text="Screenshot showing selection of From external orgs option from More options menu." border="false":::
+You can also get to this list by tapping **More options (...)** and choosing **From external orgs**.
 
-From the From external orgs strip, or from the list of shared external content, you can tap an item to open it. you'll be asked to confirm connecting to the external organization the content is hosted in. Once you've confirmed, the item will open.
+:::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list-2.png" alt-text="Screenshot showing selection of From external orgs option from More options menu." border="false":::
+
+From the From external orgs strip, or from the list of shared external content, you can tap an item to open it. You'll be asked to confirm connecting to the external organization the content is hosted in. Once you've confirmed, the item will open.
 
 ::::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list.png" alt-text="Screenshot of guest view navigation." border="false":::
 
 In the header you can see that you are connected as a guest. To see all the content that's been shared with you in that organization, tap the arrow to the left of the item's name. To get back to your home organization, tap **Exit**.
 
-The following image shows you the list of content that's been shared with you in the external organization your connected to as a guest. The items are grouped according to who shared it with you.
+The following image shows you the list of content that's been shared with you in the external organization you're connected to as a guest. The items are grouped according to who shared it with you.
 
 :::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-menu-new.png" alt-text="Screenshot of guest view of external content in an org." border="false":::
 
