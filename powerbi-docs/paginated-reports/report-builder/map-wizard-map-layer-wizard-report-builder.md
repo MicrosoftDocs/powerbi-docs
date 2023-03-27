@@ -87,7 +87,7 @@ ms.reviewer: saurkumar
   
  After you add a map or map layer and preview the report, you can change map and map layer options that you set in the wizards. For more information, see [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs).  
   
- For more information about maps, see [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs). For step-by-step instructions to add a map to a report, see [Tutorial: Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-map-report-report-builder.md).  
+ For more information about maps, see [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs). For step-by-step instructions to add a map to a report, see [Tutorial: Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-map-report-report-builder).  
   
 ##  <a name="SpatialDataSource"></a> Choose a source of spatial data  
  On this page, specify the spatial data source and which spatial data to include. Spatial data can come from the map gallery, or a dataset query that specifies SQL server spatial data.  
