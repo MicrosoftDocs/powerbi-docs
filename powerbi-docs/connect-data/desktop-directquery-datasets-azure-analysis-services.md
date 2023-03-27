@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 1/31/2023
+ms.date: 3/24/2023
 LocalizationGroup: Connect to data
 ---
 # Using DirectQuery for Power BI datasets and Analysis Services (preview)
@@ -115,7 +115,11 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 - To build reports in the Power BI service on a composite model that's based on another dataset, all credentials must be set. On the refresh credential settings page, for Analysis Services sources, the following error will appear, even though the credentials have been set:
     
     ![Credentials false warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-06.png)
-    As this is confusing and incorrect, this is something we'll take care of soon.
+    The error text information is: *Your data source can't be refreshed because the credentials are invalid. Please update your credentials and try again.*
+
+    Since the error is confusing and incorrect, it will be corrected soon.
+
+- When sharing a report and dataset built using this feature either directly or through an app, please make sure to give permissions to all datasets in the chain.
 
 - Build permissions are required to view reports built using this feature when one or more datasets in the chain are in Pro workspaces. If the creator a report has left the company or their Build permissions has been revoked since they created the report, Build permissions will also be required on all datasets in the chain. 
 

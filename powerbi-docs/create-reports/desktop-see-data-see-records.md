@@ -1,14 +1,15 @@
 ---
 title: Visual table and records in Power BI visuals
 description: Use the Power BI Visual table and Data point table features to drill into the details of a visualization. See a textual representation of the underlying data.
-author: davidiseminger
-ms.author: davidi
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 01/18/2023
 LocalizationGroup: Learn more
+ROBOTS: NOINDEX
 ---
 # Use Visual table and Data point table in Power BI
 
@@ -43,16 +44,7 @@ You can use **Visual table** to view the data in a visual as a table, or use **D
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-**Visual table** shows you the data underlying a visualization. **Visual table** appears in the **Data/Drill** tab in the ribbon when a visual is selected.
 
-:::image type="content" source="media/desktop-see-data-see-records/visual-table-01.png" alt-text="Screenshot that shows where to find the Visual table feature in the Data/Drill tab of the Power BI Desktop ribbon.":::
-
-You can also see the data by using one of these options:
-
-- Right-click on a visualization, and then select **Show as a table** from the menu that appears.
-- Select **More options** (...) in the upper-right corner of a visualization, and then select **Show as a table**.
-
-![Screenshot that shows where to find the Visual table feature in Power BI Desktop. The feature is visible in a shortcut menu.](media/desktop-see-data-see-records/visual-table-02.png)&nbsp;&nbsp;![Screenshot that shows where to find the Visual table feature in Power BI Desktop. The feature is visible in the More options menu.](media/desktop-see-data-see-records/visual-table-03.png)
 
 # [Power BI service](#tab/powerbi-service)
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 07/21/2022
+ms.date: 03/23/2023
 LocalizationGroup: Share your work
 ---
 
@@ -202,6 +202,7 @@ Publish to web is supported for the vast majority of data sources and reports in
 - Uncertified visuals from the organizational store, when the global tenant switch of the organization for uncertified visuals is on.
 - Public visuals from the organizational store, when the global tenant switch of the organization doesn't allow visuals created using the Power BI SDK.
 - The user who created the embed code needs to maintain access to the report for the embed code to work. This includes requiring a Pro or Premium Per User license as required by the workspace. 
+- Paginated reports
 
 ## Next steps
 

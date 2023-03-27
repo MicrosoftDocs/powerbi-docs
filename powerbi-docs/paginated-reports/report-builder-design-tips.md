@@ -11,7 +11,7 @@ ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 ---
 # Design tips for reports in Power BI Report Builder
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)] 
 
 Use the following tips to help design your paginated reports in Power BI Report Builder.  
   
