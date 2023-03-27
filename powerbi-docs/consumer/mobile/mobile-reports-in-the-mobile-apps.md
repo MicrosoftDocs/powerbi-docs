@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 04/06/2021
+ms.date: 03/23/2023
 ---
 # Explore reports in the Power BI mobile apps
 Applies to:
@@ -80,22 +80,20 @@ You probably noticed that when you tap a visual, a border appears. In the upper-
 ### Tooltip and drill actions
 When you long tap (tap and hold) a data point, a tooltip that shows the values the data point represents will appear:
 
-![Tooltip](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
+:::image type="content" source="./media/mobile-reports-in-the-mobile-apps/report-tooltip.png" alt-text="Screenshot of a tool tip on a visual." border="false":::
 
 If the report author configured a report page tooltip, the default tooltip is replaced with the report page tooltip:
 
-![Report page tooltip](./media/mobile-reports-in-the-mobile-apps/report-page-tooltip.png)
+:::image type="content" source="./media/mobile-reports-in-the-mobile-apps/report-page-tooltip.png" alt-text="Screenshot of a report-page tooltip." border="false":::
 
 > [!NOTE]
 > Report tooltips are supported for devices of at least 640 pixels and 320 pixel viewports. If your device is smaller, the app shows default tooltips.
 
 Report authors can define hierarchies in the data and relationships among report pages. Hierarchies allow you to drill down, drill up, and drill through to another report page from a visual and a value. So, when you long tap a value, in addition to the tooltip, the relevant drill options will appear in the footer:
 
-![Drill actions](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
-
+:::image type="content" source="./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png" alt-text="Screenshot of tooltip with dril down, drill up, and drill through options.":::
 
 When you tap a specific part of a visual and then tap the *drillthrough* option, Power BI takes you to a different page in the report, filtered to the value you tapped. A report author can define one or more drillthrough options, each taking you to a different page. In that case, you can choose which option you want to drill through. The back button takes you back to the previous page.
-
 
 For more information, read about how to [add drillthrough in Power BI Desktop](../../create-reports/desktop-drillthrough.md).
    
