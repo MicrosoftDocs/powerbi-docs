@@ -78,7 +78,7 @@ sections:
       - question: |
           How can I download my receipt after purchase?
         answer: |
-          After you complete your purchase, you can find your receipt and download it as PDF from the M365 admin center under **Bills & payments - Invoices**. 
+          After you complete your purchase, you can find your receipt and download it as PDF from the Microsoft 365 admin center under Bills & payments - Invoices. 
 
           :::image type="content" source="./media/licensing-faq/receipt-download.png" alt-text="Screenshot of Bills & payments - Invoices page with Download PDF in upper right corner.":::
 
