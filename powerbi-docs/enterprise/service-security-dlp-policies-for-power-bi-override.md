@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 07/17/2022
+ms.date: 02/20/2023
 LocalizationGroup: Data from files
 ---
 
@@ -28,6 +28,8 @@ The action or combination of actions you see may vary depending on the policy co
 
 >[!NOTE]
 > Any action you take will be recorded in the audit log where it can be reviewed by security admins.
+>
+> The purpose of the policy tip is to flag sensitive information found in your dataset. If you own this data and determine that it shouldn't be in the dataset, when you remove the data from the dataset and then refresh or republish the dataset, the policy will be triggered again and the policy tip will be removed, since the sensitive data will no longer be found.
 
 ## Next steps
 
@@ -36,3 +38,4 @@ The action or combination of actions you see may vary depending on the policy co
 * [Get started with Data loss prevention policies for Power BI](/microsoft-365/compliance/dlp-powerbi-get-started)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
 * [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)
+* [Power BI implementation planning: Data loss prevention for Power BI](/power-bi/guidance/powerbi-implementation-planning-data-loss-prevention)

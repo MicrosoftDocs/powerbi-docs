@@ -25,9 +25,9 @@
     - name: Share metadata with Microsoft 365 services
       href: admin-share-power-bi-metadata-microsoft-365-services.md
     - name: Find where data is stored
-      href: service-admin-where-is-my-tenant-located.md
-    - name: Data storage for cross-service capabilities
-      href: service-admin-m365-data-access-storage.md      
+      href: service-admin-where-is-my-tenant-located.md  
+    - name: Configure Multi-Geo support for Power BI Premium
+      href: service-admin-premium-multi-geo.md           
     - name: Move between regions
       href: /power-bi/support/service-admin-region-move
     - name: Track service health
@@ -59,6 +59,8 @@
       href: service-admin-portal-premium-per-user.md
     - name: Manage users
       href: service-admin-portal-users.md
+    - name: Manage workspaces
+      href: service-admin-portal-workspaces.md
     - name: View audit logs
       href: service-admin-portal-audit-logs.md
     - name: View information protection metrics
@@ -67,8 +69,6 @@
       href: service-admin-portal-refresh-summary.md
     - name: View usage metrics
       href: service-admin-portal-usage-metrics.md
-    - name: View workspace info
-      href: service-admin-portal-workspaces.md
   - name: Tenant settings
     expanded: false
     items:
@@ -78,7 +78,7 @@
       expanded: false
       items:
       - name: Help and support settings
-        href: /power-bi/support/service-admin-portal-help-support
+        href: service-admin-portal-help-support.md?toc=/power-bi/admin/TOC.json&bc=/power-bi/admin/breadcrumb/toc.json       
       - name: Workspace settings
         href: service-admin-portal-workspace.md       
       - name: Information protection

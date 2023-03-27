@@ -1,6 +1,6 @@
 ---
 title: Monitoring Power BI Embedded data reference
-description: Important reference material needed when you monitor Power BI Embedded.
+description: Learn about the important reference materials for using Power BI Embedded to monitor critical applications and business processes that rely on Azure resources.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: subject-monitoring, engagement-fy23
-ms.date: 11/02/2022
+ms.date: 02/28/2023
 ---
 
-# Monitoring Power BI Embedded data reference
+# Monitor Power BI Embedded data reference
 
 See [Monitor Power BI Embedded](monitor-power-bi-embedded.md) for details on collecting and analyzing monitoring data for Power BI Embedded.
 
 >[!TIP]
->Use the [Premium Gen2 Monitoring App](../../enterprise/service-premium-gen2-metrics-app.md) to monitor your capacity.
+>Use the [Premium metrics app](../../enterprise/service-premium-metrics-app.md) to monitor your capacity.
 
 ## Metrics
 
-This section lists all the automatically collected platform metrics collected for Power BI Embedded.  
+This section lists all the automatically collected platform metrics for Power BI Embedded.  
 
 |Metric Type | Resource Provider / Type Namespace<br/> and link to individual metrics |
 |-------|-----|
@@ -28,7 +28,7 @@ This section lists all the automatically collected platform metrics collected fo
 
 ### Capacities
 
-Resource Provider and Type: [Microsoft.PowerBIDedicated/capacities](/azure/azure-monitor/platform/metrics-supported#microsoftpowerbidedicatedcapacities)
+Resource provider and type: [Microsoft.PowerBIDedicated/capacities](/azure/azure-monitor/platform/metrics-supported#microsoftpowerbidedicatedcapacities)
 
 | Name | Metric | Unit | Description |
 |:---|:-------|:-----|:------------|
@@ -38,7 +38,7 @@ Resource Provider and Type: [Microsoft.PowerBIDedicated/capacities](/azure/azure
 
 ## Metric dimensions
 
-Power BI Embedded does not have any metrics that contain dimensions.
+Power BI Embedded doesn't have any metrics that contain dimensions.
 
 For information about metric dimensions, see [Multi-dimensional metrics](/azure/azure-monitor/platform/data-platform-metrics#multi-dimensional-metrics).
 
@@ -60,7 +60,7 @@ This section refers to all of the Azure Monitor Logs Kusto tables relevant to Po
 
 |Resource Type | Notes |
 |-------|-----|
-| [Power BI Embedded](/azure/azure-monitor/reference/tables/tables-resourcetype#power-bi-embedded) |See a list of tables below |
+| [Power BI Embedded](/azure/azure-monitor/reference/tables/tables-resourcetype#power-bi-embedded) | See the following list of tables. |
 
 ### Power BI Embedded
 
@@ -70,15 +70,15 @@ This section refers to all of the Azure Monitor Logs Kusto tables relevant to Po
 | [AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)   | Stores resource logs for Azure services that use Azure Diagnostics mode. Resource logs describe the internal operation of Azure resources. |
 | [AzureMetrics](/azure/azure-monitor/reference/tables/azuremetrics)   | Metric data emitted by Azure services that measure their health and performance. |
 
-For a reference of all Azure Monitor Logs / Log Analytics tables, see the [Azure Monitor Log Table Reference](/azure/azure-monitor/reference/tables/tables-resourcetype).
+For a reference of all Azure Monitor Logs and log analytics tables, see the [Azure Monitor Log table reference](/azure/azure-monitor/reference/tables/tables-resourcetype).
 
 ## Activity log
 
-You can select **Engine** and/or the **AllMetrics** categories.
+You can select **Engine** and the **AllMetrics** categories or either.
 
 ### Engine
 
-The engine category instructs the resource to log the events listed below. For each event, there are properties.
+The engine category instructs the resource to log the events listed in the following table. For each event, there are properties.
 
 |     Event Name     |     Event Description     |
 |----------------------------|----------------------------------------------------------------------------------|
@@ -93,7 +93,7 @@ The engine category instructs the resource to log the events listed below. For e
 
 #### Event example
 
-The table below shows an event example.
+The following table shows an event example.
 
 | Property Name | Vertipaq Query End Example | Property Description |
 |---|---|---|
@@ -116,7 +116,7 @@ The table below shows an event example.
 | ConnectionID | 3 | Unique connection ID. |
 | DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | ID of the dataset in which the statement of the user is running. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Session GUID. |
-| SPID | 180 | Server process ID. This uniquely identifies a user session. This directly corresponds to the session GUID used by XML/A. |
+| SPID | 180 | Server process ID. This process ID uniquely identifies a user session. This ID directly corresponds to the session GUID used by XML/A. |
 | ClientProcessID | null | The process ID of the client application. |
 | ApplicationName | null | Name of the client application that created the connection to the server. |
 | CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | The name of the Power BI Embedded capacity resource. |
@@ -125,7 +125,7 @@ The table below shows an event example.
 
 Checking the **AllMetrics** option logs the data of all the metrics that you can use with a Power BI Embedded resource.
 
-The following table lists the operations related to Power BI Embedded that may be created in the Activity log.
+The following table lists the operations related to Power BI Embedded that might appear in the Activity log.
 
 ## Schemas
 
@@ -133,9 +133,9 @@ Power BI Embedded uses the **Power BI Dedicated** schema.
 
 ## Example script for scaling a capacity
 
-To scale a capacity resource, you can use the [ScaleUp-Automation-RunBook.ps1](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/ScaleUp-Automation-RunBook.ps1) PowerShell runbook script.
+To scale a capacity resource, you can use the [ScaleUp-Automation-RunBook.ps1](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/ScaleUp-Automation-RunBook.ps1) PowerShell RunBook script.
 
-The script uses Power BI and ARM REST APIs, and can be called in Azure Automation, and triggered by Azure alert.
+The script uses Power BI and ARM REST APIs that are called in Azure Automation and triggered by Azure alert.
 
 You can either copy the script, or download it as part of the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) repository, by selecting the green *code* button, and downloading the ZIP.
 

@@ -14,9 +14,9 @@ ms.custom: known-issue-284
 
 As a Power BI app consumer, you may encounter access issues due to the underlying dataset when trying to open an app report.  If you don't have rights to the underlying dataset, you won't be able to access the report in the app, after deploying the app with multiple audiences.
 
-**APPLIES TO:** ✔️ Power BI Service
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Power BI Service
 
-**Status:** Open
+**Status:** Fixed: February 9, 2023
 
 **Problem area:** Share and Collaborate
 

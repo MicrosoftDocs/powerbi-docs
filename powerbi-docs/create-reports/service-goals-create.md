@@ -7,6 +7,7 @@ ms.reviewer: 'cnews'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
+ms.search.form: Create scorecards
 ms.topic: how-to
 ms.date: 10/10/2022
 ms.custom: sample-sales&returnssamplev201912
@@ -106,7 +107,7 @@ When you share a scorecard, the people you share it with can view and interact w
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-share-link.png" alt-text="Screenshot of Share a link to a scorecard.":::
 
-    When you share scorecards, whether inside or outside your organization, your recipients need Power BI Pro licenses, unless the content is in a [Power BI Premium](../enterprise/service-premium-gen2-what-is.md) capacity.
+    When you share scorecards, whether inside or outside your organization, your recipients need Power BI Pro licenses, unless the content is in a [Power BI Premium](../enterprise/service-premium-what-is.md) capacity.
 
 ## Next steps
 

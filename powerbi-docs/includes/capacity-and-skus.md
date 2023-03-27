@@ -6,7 +6,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.topic: include
 ms.date: 07/11/2022
-ms.custom: include file, service-premium-gen2-what-is.md, embedded-capacity.md
+ms.custom: include file, service-premium-what-is.md, embedded-capacity.md
 ---
 
 Each capacity offers a selection of SKUs, and each SKU provides different resource tiers for memory and computing power. The type of SKU you require, depends on the type of solution you wish to deploy.

@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Content creator security planning"
 description: "Learn about content creator security planning for Power BI."
-author: peter-myers
-ms.author: v-petermyers
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -79,11 +79,11 @@ The following permissions are commonly required for creating new content.
 
 | **Permission** | **Report creator** | **Dataset creator** | **Dataflow creator** | **Datamart creator** |
 |:--|:-:|:-:|:-:|:-:|
-| **Access to the underlying data source** | | ✔️ | ✔️ | ✔️ |
-| **Dataset Read and Build permissions** | ✔️ | | | |
-| **Dataflow Read permission (when a dataflow is used as a source, via the workspace Viewer role)**  | | ✔️ | ✔️ | ✔️ |
-| **Access where original Power BI Desktop file is stored** | ✔️ | ✔️ | | |
-| **Permission to use custom visuals** | ✔️ | | | |
+| **Access to the underlying data source** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Dataset Read and Build permissions** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | | |
+| **Dataflow Read permission (when a dataflow is used as a source, via the workspace Viewer role)**  | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Access where original Power BI Desktop file is stored** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | |
+| **Permission to use custom visuals** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | | |
 
 #### Publishing content
 
@@ -91,9 +91,9 @@ The following permissions are commonly required for publishing content.
 
 | **Permission** | **Report creator** | **Dataset creator** | **Dataflow creator** | **Datamart creator** |
 |:--|:-:|:-:|:-:|:-:|
-| **Workspace role: Contributor, Member, or Admin** | ✔️ | ✔️ | ✔️ | ✔️ |
-| **Dataset Write permission (when the user doesn't belong to a workspace role)** | | ✔️ | | |
-| **Deployment pipeline role to publish items (optional)** | ✔️ | ✔️ | ✔️ | ✔️ |
+| **Workspace role: Contributor, Member, or Admin** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Dataset Write permission (when the user doesn't belong to a workspace role)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | |
+| **Deployment pipeline role to publish items (optional)** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
 
 #### Refreshing data
 
@@ -101,9 +101,9 @@ The following permissions are commonly required for refreshing data.
 
 | **Permission** | **Report creator** | **Dataset creator** | **Dataflow creator** | **Datamart creator** |
 |:--|:-:|:-:|:-:|:-:|
-| **Owner assigned (who has set up settings or taken over the item)** | | ✔️ | ✔️ | ✔️ |
-| **Access to the underlying data source (when a gateway isn't used)** | | ✔️ | ✔️ | ✔️ |
-| **Access to the data source in a gateway (when the source is on-premises or in a virtual network)** | | ✔️ | ✔️ | ✔️ |
+| **Owner assigned (who has set up settings or taken over the item)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Access to the underlying data source (when a gateway isn't used)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Access to the data source in a gateway (when the source is on-premises or in a virtual network)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
 
 The remainder of this article describes considerations for content creator permissions.
 
@@ -143,7 +143,7 @@ Consider the following three examples.
 
 The following screenshot shows a dataset in the data hub in the Power BI service. Specifically, it shows an example of a _Request access_ message for a discoverable dataset. This message is shown when the user doesn't currently have access. The _Request access_ message has been customized in the dataset settings.
 
-The _Request access_ message reads: _For standard sales reporting of MTD/QTD/YTD, this dataset is the authorize and certified source. Please request access to the dataset by completing the form located at https://coe.contoso.com/RequestAccess. You will be asked for a brief business justification, and the manager of the Center of Excellence will be required to approve the request as well. Access will be audited every six months._
+The _Request access_ message reads: _For standard sales reporting of MTD/QTD/YTD, this dataset is the authorize and certified source. Please request access to the dataset by completing the form located at https://COE.contoso.com/RequestAccess. You will be asked for a brief business justification, and the manager of the Center of Excellence will be required to approve the request as well. Access will be audited every six months._
 
 :::image type="content" source="media/powerbi-implementation-planning-security-content-creator-planning/request-dataset-access.png" alt-text="Screenshot of the request access message in the data hub, for a dataset that's set to be discoverable." border="false":::
 
@@ -185,7 +185,7 @@ Instead of relying on one owner, you can define [custom instructions](/power-bi/
 - Tracking of who requested access, when, and why is necessary for auditing or compliance reasons.
 - Explanation is necessary for how to request access, and to set expectations.
 
-The following screenshot shows an example of setting up custom instructions that a user sees when they request the Build permission. The custom instructions read: _For standard sales reporting of MTD/QTD/YTD, this dataset is the authoritative and certified source. Please request access to the dataset by completing the form located at https://coe.contoso.com/RequestAccess. You will be asked for a brief business justification, and the manager of the Center of Excellence will be required to approve the request as well. Access will be audited every six months._
+The following screenshot shows an example of setting up custom instructions that a user sees when they request the Build permission. The custom instructions read: _For standard sales reporting of MTD/QTD/YTD, this dataset is the authoritative and certified source. Please request access to the dataset by completing the form located at https://COE.contoso.com/RequestAccess. You will be asked for a brief business justification, and the manager of the Center of Excellence will be required to approve the request as well. Access will be audited every six months._
 
 :::image type="content" source="media/powerbi-implementation-planning-security-content-creator-planning/request-access-instructions.png" alt-text="Screenshot of the request access setting for a dataset in the Power BI service." border="false":::
 

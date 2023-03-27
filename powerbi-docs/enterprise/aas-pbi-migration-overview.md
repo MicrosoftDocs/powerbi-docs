@@ -44,7 +44,7 @@ Ensure each environment meets the following prerequisites:
 
 - You must have [Workspace administrator](../collaborate-share/service-roles-new-workspaces.md) permission. Power BI admins can view migrations for their tenant, however, they can't perform migrations unless they also have Workspace administrator permission.
 
-- You must have an [Azure Data Lake Storage Gen 2 (ADLS Gen 2)](/azure/storage/blobs/data-lake-storage-introduction) storage account in the same tenant and the [workspace you're migrating to must be connected](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level) to that storage account. For the best performance, your ADLS Gen 2 storage should be located in the same region as the workspace capacity.
+- You must have an [Azure Data Lake Storage Gen 2 (ADLS Gen 2)](/azure/storage/blobs/data-lake-storage-introduction) storage account in the same tenant and the [workspace you're migrating to must be connected](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connect-to-an-azure-data-lake-gen-2-at-a-workspace-level) to that storage account. For the best performance, your ADLS Gen 2 storage should be located in the same region as the workspace capacity.
 
 - [Large dataset storage format](service-premium-large-models.md) must be enabled for the workspace.
 
@@ -120,6 +120,8 @@ After rebind by using the API, changes to the Live connect reports can only be m
 - **During preview**, do not delete your Azure Analysis Services server! Doing so will cause redirection to fail and there is no way to recover redirection.
 
 - Datasets migrated by using the Azure Analysis Services to Power BI Premium migration feature in Power BI can't be downloaded as a .pbix file. To modify dataset metadata, use Visual Studio, the open-source ALM Toolkit, or the open-source Tabular Editor.
+
+- Table and PowerQuery M expressions having the same name are not allowed in Power BI datasets. Prior to migration, ensure model database tables and any PowerQuery M expressions in the model don't have the same name. For any duplicate names, you can rename either the expression or the table, however, in most cases it's easiest to rename the expression. If any duplicate names are present during migration, the restore operation will fail and an error is returned.
 
 ## To migrate from Azure Analysis Services to Power BI
 

@@ -6,6 +6,7 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
+ms.search.form: Create a report from an Excel file
 ms.topic: how-to
 ms.date: 06/23/2021
 LocalizationGroup: Reports
@@ -23,7 +24,7 @@ You've read [Reports in Power BI](../consumer/end-user-reports.md) and now you w
 
 ## Import the Excel file
 
-This method of creating a report starts with a file and a blank report canvas. If you want to follow along, download the [Retail Analysis sample Excel file](https://go.microsoft.com/fwlink/?LinkId=529778) and save it to your computer or to OneDrive for Business.
+This method of creating a report starts with a file and a blank report canvas. If you want to follow along, download the [Retail Analysis sample Excel file](https://go.microsoft.com/fwlink/?LinkId=529778) and save it to your computer or to OneDrive for work or school.
 
 1. In the navigation pane, select **My Workspace**.
    

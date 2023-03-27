@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/24/2022
+ms.date: 03/09/2023
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -35,7 +35,7 @@ Applications using Power BI Embedded allow users to consume content stored on Po
 
 ### Power BI Premium
 
-[Power BI Premium](../../enterprise/service-premium-gen2-what-is.md) is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
+[Power BI Premium](../../enterprise/service-premium-what-is.md) is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
 
 Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal (Power BI service). This enables Power BI Premium to provide a solution for both internal and external customer facing applications.
 
@@ -55,7 +55,7 @@ Power BI Embedded is shipped with an [*A* SKU](../../enterprise/service-admin-pr
 
 Power BI premium offers two SKUs, *P* and *EM*.
 
-* [Understand the differences between the *P* and *EM* SKUs](../../enterprise/service-premium-gen2-what-is.md#subscriptions-and-licensing)
+* [Understand the differences between the *P* and *EM* SKUs](../../enterprise/service-premium-what-is.md#subscriptions-and-licensing)
 * [Buy a Premium SKU](../../enterprise/service-admin-premium-purchase.md)
 
 ### Which SKU should I use?
@@ -69,7 +69,7 @@ In this table, a custom app refers to a web app created using embedded analytics
 |          | (A SKU) | (P and EM SKUs) |
 |[Embed for your customers](embed-sample-for-customers.md)</br>(app owns data)     |✔        |✔        |
 |[Embed for your organization](embed-sample-for-your-organization.md)</br>(user owns data)     |✖        |✔         |
-|Microsoft 365 apps</br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✖        |✔        |
+|Microsoft 365 apps</br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li><li>[Embed in PowerPoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✖        |✔        |
 |[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✖        |✔        |
 
 >[!NOTE]
@@ -100,7 +100,7 @@ The table below describes the resources and limits of each SKU.
 
 [!INCLUDE [Power BI capacity and SKUs](../../includes/capacity-table.md)]
 
-<sup>1</sup> The [Power BI Premium Utilization and Metrics app](../../enterprise/service-premium-install-gen2-app.md) doesn't currently expose these metrics.
+<sup>1</sup> The [Power BI Premium Utilization and Metrics app](../../enterprise/service-premium-install-app.md) doesn't currently expose these metrics.
 
 <sup>2</sup> These limits only apply to the datasets workload per capacity.
 
@@ -114,12 +114,13 @@ The table below describes the resources and limits of each SKU.
 
 Note the amount of memory available on each node size described in the *RAM (GB)* column of the table. It's set to the memory footprint limit of a single Power BI item (such as a dataset, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded A4 capacity, a *single dataset* size is limited to 25 GB, and not the total memory footprint of *all* datasets handled at the same time.
 
-### Embedded gen 2 memory enhancements
+### Embedded memory enhancements
 
-The amount of memory available on each node size is described in the RAM (GB) column in the SKU memory and computing power table. With Power BI Embedded Generation 2 (also known as Embedded Gen 2), it's set to the memory footprint limit of a single Power BI item (such as a dataset, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded Gen2 A4 capacity, a single dataset size is limited to 25 GB, compared to the original Power BI Embedded capacity, where the total memory footprint of all datasets handled at the same time was limited to 25 GB.
+The amount of memory available on each node size is described in the RAM (GB) column in the SKU memory and computing power table. It's set to the memory footprint limit of a single Power BI item (such as a dataset, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded Premium A4 capacity, a single dataset size is limited to 25 GB.
 
 ## Next steps
 
 * [Embed for your customers](embed-sample-for-customers.md)
-* Embed for your organization](embed-sample-for-your-organization.md)
+* [Embed for your organization](embed-sample-for-your-organization.md)
 * [Embed from apps](./index.yml)
+

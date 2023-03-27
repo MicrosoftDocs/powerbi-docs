@@ -1,8 +1,8 @@
 ---
 title: Plan deployment to migrate to Power BI
 description: Guidance on planning for deployment when migrating to Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -47,7 +47,7 @@ For more information about architectural considerations, see **Section 3** of th
 - Is a new workspace needed for this new solution?
 - Will separate workspaces be needed to accommodate development, test, and production?
 - Will separate workspaces be used for data and reports, or will a single workspace be sufficient? Separate workspaces have numerous advantages, especially for securing datasets. When necessary, they can be managed separately from those users who publish reports.
-- What are the security requirements for the workspace? It influences planning for [workspace roles](../collaborate-share/service-roles-new-workspaces.md). If an app will be used by content consumers, [audience permissions for the app](../collaborate-share/service-create-distribute-apps.md#create-and-manage-audiences) are managed separately from the workspace. Distinct permissions for app viewers allow additional flexibility in meeting security requirements for read-only consumers of reports or dashboards.
+- What are the security requirements for the workspace? It influences planning for [workspace roles](../collaborate-share/service-roles-new-workspaces.md). If an app will be used by content consumers, [audience permissions for the app](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences) are managed separately from the workspace. Distinct permissions for app viewers allow additional flexibility in meeting security requirements for read-only consumers of reports or dashboards.
 - Can existing groups be used for securing the new content? Both Azure Active Directory and Microsoft 365 groups are supported. When aligned with existing processes, using groups makes permissions management easier than assignments to individual users.
 - Are there any security considerations related to external guest users? You may need to work with your Azure Active Directory administrator and your Power BI administrator to configure [guest user access](../enterprise/service-admin-azure-ad-b2b.md).
 
@@ -74,7 +74,7 @@ There are several key decisions to be made related to allowing consumers to crea
 
 ## Evaluate needs for Premium capacity
 
-Additional capabilities are available when a workspace is stored on a [Premium capacity](../enterprise/service-premium-gen2-what-is.md). Here are several reasons why workspaces on Premium capacity can be advantageous:
+Additional capabilities are available when a workspace is stored on a [Premium capacity](../enterprise/service-premium-what-is.md). Here are several reasons why workspaces on Premium capacity can be advantageous:
 
 - Content can be accessed by consumers who don't have a Power BI Pro or Premium Per User (PPU) license.
 - Support for large datasets.
@@ -98,7 +98,7 @@ The data required by a report may influence several decisions. Questions to ask 
 In addition to planning the target deployment destination, it's also important to plan where the original—or source—content will be stored, such as:
 
 - Specify an approved location for storing the original Power BI Desktop (.pbix) files. Ideally, this location is available only to people who edit the content. It should align with how security is set up in the Power BI service.
-- Use a location for original Power BI Desktop files that includes versioning history or source control. Versioning permits the content author to revert to a previous file version, if necessary. OneDrive for Business or SharePoint work well for this purpose.
+- Use a location for original Power BI Desktop files that includes versioning history or source control. Versioning permits the content author to revert to a previous file version, if necessary. OneDrive for work or school or SharePoint work well for this purpose.
 - Specify an approved location for storing non-centralized source data, such as flat files or Excel files. It should be a path that any of the dataset authors can reach without error and is backed up regularly.
 - Specify an approved location for content exported from the Power BI service. The goal is to ensure that security defined in the Power BI service isn't inadvertently circumvented.
 

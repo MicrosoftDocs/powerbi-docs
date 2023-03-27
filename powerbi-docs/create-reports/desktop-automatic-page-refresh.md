@@ -163,7 +163,7 @@ In the Power BI service, restrictions on automatic page refresh apply based on t
 
 To clarify how these restrictions work, start with background on capacities and workspaces.
 
-*Capacities* represent a set of resources (storage, processor, and memory) that are used to host and deliver Power BI content. Capacities are either shared or reserved. A *shared capacity* is shared with other Microsoft customers. A *reserved capacity* is reserved for a single customer. For an introduction to reserved capacities, see [Managing Premium Gen2 capacities](../enterprise/service-premium-capacity-manage-gen2.md).
+*Capacities* represent a set of resources (storage, processor, and memory) that are used to host and deliver Power BI content. Capacities are either shared or reserved. A *shared capacity* is shared with other Microsoft customers. A *reserved capacity* is reserved for a single customer. For an introduction to reserved capacities, see [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md).
 
 In a shared capacity, workloads run on computational resources shared with other customers. Because the capacity needs to share resources, limitations are imposed to ensure *fair play*, such as setting a maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
@@ -229,7 +229,7 @@ There are two areas where you could still encounter performance bottlenecks:
 1. **The capacity**. The query first hits the Premium capacity, which will fold and evaluate the DAX query generated from the report visualizations into the source queries.
 2. **The DirectQuery data source**. The translated queries in the previous step are then run against the source. The source would be your SQL Server instances, SAP Hana sources, and so on.
 
-By using the [Premium Capacity Metrics app](../enterprise/service-premium-gen2-metrics-app.md) that's available to admins, you can visualize how much of the capacity is being used by low-priority queries.
+By using the [Premium Capacity Metrics app](../enterprise/service-premium-metrics-app.md) that's available to admins, you can visualize how much of the capacity is being used by low-priority queries.
 
 Low-priority queries consist of automatic page refresh queries and model refresh queries. There's currently no way to distinguish between the load from automatic page refresh and model refresh queries.
 
@@ -298,5 +298,5 @@ For more information, see these articles:
 * [Deploying and managing Power BI Premium capacities](../guidance/whitepaper-powerbi-premium-deployment.md)
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Connect to Excel workbooks in Power BI Desktop](../connect-data/desktop-connect-excel.md)
+* [Connect to Excel workbooks in Power BI Desktop](/power-query/connectors/excel)
 * [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)

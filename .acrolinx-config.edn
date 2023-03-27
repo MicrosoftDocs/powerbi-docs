@@ -1,2 +1,2 @@
-{:allowed-branchname-matches ["main" "master" "release-.*" "sandbox-.*"]
- :allowed-filename-matches ["powerbi-docs" "contributor-guide"]}
+{:allowed-branchname-matches ["main" "release-.*"]
+ :allowed-filename-matches ["powerbi-docs"]}

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 09/04/2022
+ms.date: 03/22/2023
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -24,6 +24,9 @@ Large datasets in the service don't affect the Power BI Desktop model upload siz
 
 > [!IMPORTANT]
 > Power BI Premium does support large datasets. Enable the **Large dataset storage format** option to use datasets in Power BI Premium that are larger than the default limit.
+
+> [!NOTE]
+> Large datasets in Power BI Premium are not available in the Power BI service for U.S. Government DoD customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](service-govus-overview.md#power-bi-feature-availability).
 
 ## Enable large datasets
 
@@ -225,4 +228,4 @@ The following links provide information that can be useful for working with larg
 > [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md)
 
 > [!div class="nextstepaction"]
-> [Power BI Premium Generation 2](service-premium-gen2-what-is.md).
+> [Power BI Premium Generation 2](service-premium-what-is.md).
