@@ -178,7 +178,7 @@ A Power BI visualization is constructed using data from underlying datasets. If 
 
 With a visual active, select **More options** (...) and choose **Show as a table**.
    
-   ![Screenshot showing an area chart at top and a table with the data below.](./media/end-user-show-data/power-bi-show-data-table.png)
+   ![Screenshot showing an area chart at top and a table with the data below.](../create-reports/media/end-user-show-data/power-bi-show-data-table.png)
 
 
 ### Export data to Excel
