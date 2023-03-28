@@ -180,8 +180,8 @@
       href: desktop-conditional-format-visual-titles.md        
     - name: "Sort one column by another"
       href: desktop-sort-by-column.md
-    - name: "Use Visual table and Data point table"
-      href: desktop-see-data-see-records.md
+    - name: "Show the data underlying the visual"
+      href: end-user-show-data.md
     - name: "Tips and tricks for creating reports"
       href: desktop-tips-and-tricks-for-creating-reports.md
     - name: "Group visuals in a report"
