@@ -82,11 +82,11 @@ The dashboard and report that you create this way aren't the same as the ones cr
 
 No matter whether you downloaded the dashboard or created your own, you can use Q&A in the dashboard to discover other details in the data. Let's try it.
 
-1. On the dashboard, select the **This Year's Sales New & Existing Stores** tile, or type *This year sales* in the Q&A question box.
+1. On the dashboard, select the **This Year's Sales New & Existing Stores** tile.
 
    :::image type="content" source="media/sample-retail-analysis/pbi_sample_retanlthisyrsales.png" alt-text="Screenshot shows This Year's Sales tile.":::
 
-   The Q&A results appear:
+   If your dashboard doesn't have that tile, type *This year sales* in the Q&A question box at the top of the dashboard. The Q&A results appear:
 
    :::image type="content" source="media/sample-retail-analysis/retail7.png" alt-text="Screenshot shows This year's sales in Q&A tile.":::
 
@@ -108,7 +108,7 @@ If you got the [built-in report in the Power BI service](#get-the-built-in-sampl
 
 ### Store Sales Overview page
 
-1. If you got the built-in report in the Power BI service, in the workspace where you saved the sample, open the **Dashboards** tab, find the **Retail Analysis Sample** dashboard, and select it. On the dashboard, select the **Total Stores New & Existing Stores** tile, which opens to the **Store Sales Overview** page in the Retail Analysis Sample report.
+1. If you got the built-in report in the Power BI service, in the workspace where you saved the sample, open the **Retail Analysis Sample** dashboard. On the dashboard, select the **Total Stores New & Existing Stores** tile, which opens to the **Store Sales Overview** page in the Retail Analysis Sample report.
 
    :::image type="content" source="media/sample-retail-analysis/retail-analysis-7.png" alt-text="Screenshot shows the Total Stores tile.":::  
 
@@ -136,7 +136,7 @@ If you got the [built-in report in the Power BI service](#get-the-built-in-sampl
 
 Let's explore on a more detailed level, looking at the districts' performances.
 
-1. On the dashboard, select the **This Year's Sales, Last Year's Sales** tile, or opens the **District Monthly Sales** page of the report.
+1. On the dashboard, select the **This Year's Sales, Last Year's Sales** tile, which opens the **District Monthly Sales** page of the report.
 
    :::image type="content" source="media/sample-retail-analysis/pbi_sample_retanlareacht.png" alt-text="Screenshot shows This Year's Sales, Last Year's Sales tile.":::
 
