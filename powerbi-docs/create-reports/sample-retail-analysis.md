@@ -50,7 +50,7 @@ Alternatively, you can download the Retail Analysis sample as a [.pbix file](htt
 
 1. In the **Publish to Power BI** dialog, choose a workspace and then **Select**.
 
-1. In the Power BI service, in your workspace, scroll down to the **IT Spend Analysis Sample** report and select to open.
+1. In the Power BI service, in your workspace, scroll down to the **Retail Analysis Sample** report and select to open.
 
 1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
 
@@ -62,7 +62,7 @@ If you want to view the data source for this sample, it's also available as an E
 
 If you want to get and use the Excel file in the Power BI service, follow these steps:
 
-1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *IT Spend Analysis Sample-no-PV.xlsx*.
+1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *Retail Analysis Sample-no-PV.xlsx*.
 
 1. Open the file in Excel and then select **File** > **Publish** > **Publish to Power BI**.
 
@@ -78,17 +78,43 @@ If you want to get and use the Excel file in the Power BI service, follow these 
 
 The dashboard and report that you create this way aren't the same as the ones created by the built-in sample. You can still [use Q&A in the dashboard](#use-qa-to-dig-deeper-in-the-dashboard) to explore your data and make changes to your dashboard.
 
-## Start on the dashboard and open the report
+## Use Q&A to dig deeper in the dashboard
 
-If you got the built-in report in the Power BI service or published the *.pbix* file from Power BI Desktop, you can see the report that comes with the sample. If you imported from Excel, your automatically generated report won't look as described.
+No matter whether you downloaded the dashboard or created your own, you can use Q&A in the dashboard to discover other details in the data. Let's try it.
 
-1. In the workspace where you saved the sample, open the **Dashboards** tab, then find the **Retail Analysis Sample** dashboard and select it.
+1. On the dashboard, select the **This Year's Sales New & Existing Stores** tile, or type *This year sales* in the Q&A question box.
 
-1. On the dashboard, select the **Total Stores New & Existing Stores** tile, which opens to the **Store Sales Overview** page in the Retail Analysis Sample report.
+   :::image type="content" source="media/sample-retail-analysis/pbi_sample_retanlthisyrsales.png" alt-text="Screenshot shows This Year's Sales tile.":::
+
+   The Q&A results appear:
+
+   :::image type="content" source="media/sample-retail-analysis/retail7.png" alt-text="Screenshot shows This year's sales in Q&A tile.":::
+
+1. Change the question to *this year's sales **by district***. Observe the result. Q&A automatically places the answer in a bar chart:
+
+   :::image type="content" source="media/sample-retail-analysis/retail8.png" alt-text="Screenshot shows This year's sales by district in Q&A results.":::
+
+1. Now change the question to *this year's sales **by zip and chain***.
+
+   Power BI answers the question as you type and displays the appropriate chart.
+
+1. Experiment with more questions and see what kind of results you get.
+
+1. When you're ready, return to the dashboard.
+
+## Explore the report
+
+If you got the [built-in report in the Power BI service](#get-the-built-in-sample-in-the-power-bi-service) or you published the [*.pbix* file from Power BI Desktop](#get-the-pbix-file-for-this-sample), your report corresponds to the sample in this section. If you [imported from Excel](#get-the-excel-workbook-for-this-sample), your automatically generated report won't look as described.
+
+### Store Sales Overview page
+
+1. If you got the built-in report in the Power BI service, in the workspace where you saved the sample, open the **Dashboards** tab, find the **Retail Analysis Sample** dashboard, and select it. On the dashboard, select the **Total Stores New & Existing Stores** tile, which opens to the **Store Sales Overview** page in the Retail Analysis Sample report.
 
    :::image type="content" source="media/sample-retail-analysis/retail-analysis-7.png" alt-text="Screenshot shows the Total Stores tile.":::  
 
-   On this report page, you see we have a total of 104 stores, 10 of which are new. We have two chains, Fashions Direct and Lindseys. Fashions Direct stores are larger, on average.
+    If you published the *.pbix* file from Power BI Desktop, open the **Store Sales Overview** page of the report. 
+    
+    On this report page, you see we have a total of 104 stores, 10 of which are new. We have two chains, Fashions Direct and Lindseys. Fashions Direct stores are larger, on average.
 
 1. In the **This Year Sales by Chain** pie chart, select **Fashions Direct**.
 
@@ -106,39 +132,17 @@ If you got the built-in report in the Power BI service or published the *.pbix* 
 
    :::image type="content" source="media/sample-retail-analysis/power-bi-breadcrumbs.png" alt-text="Screenshot shows the Navigation bar.":::
 
-1. On the dashboard, select the **This Year's Sales New & Existing Stores** tile, which is equivalent to typing *This year sales* in the Q&A question box.
-
-   :::image type="content" source="media/sample-retail-analysis/pbi_sample_retanlthisyrsales.png" alt-text="Screenshot shows This Year's Sales tile.":::
-
-   The Q&A results appear:
-
-   :::image type="content" source="media/sample-retail-analysis/retail7.png" alt-text="Screenshot shows This year's sales in Q&A tile.":::
-
-## Review a tile created with Power BI Q&A
-
-No matter whether you downloaded the dashboard or created your own, you can use Q&A in the dashboard to discover other details in the data. Let's get more specific.
-
-1. Change the question to *this year's sales **by district***. Observe the result. Q&A automatically places the answer in a bar chart:
-
-   :::image type="content" source="media/sample-retail-analysis/retail8.png" alt-text="Screenshot shows This year's sales by district in Q&A results.":::
-
-1. Now change the question to *this year's sales **by zip and chain***.
-
-   Power BI answers the question as you type and displays the appropriate chart.
-
-1. Experiment with more questions and see what kind of results you get.
-
-1. When you're ready, return to the dashboard.
-
-## Use Q&A to dig deeper in the dashboard
+### Explore the District Monthly Sales page
 
 Let's explore on a more detailed level, looking at the districts' performances.
 
-1. On the dashboard, select the **This Year's Sales, Last Year's Sales** tile, which opens the **District Monthly Sales** page of the report.
+1. On the dashboard, select the **This Year's Sales, Last Year's Sales** tile, or opens the **District Monthly Sales** page of the report.
 
    :::image type="content" source="media/sample-retail-analysis/pbi_sample_retanlareacht.png" alt-text="Screenshot shows This Year's Sales, Last Year's Sales tile.":::
 
-   In the **Total Sales Variance % by Fiscal Month** chart, notice the large variability on variance % compared to last year, with January, April, and July being particularly bad months.
+    If you published the *.pbix* file from Power BI Desktop, open the **District Monthly Sales** page of the report.
+
+    In the **Total Sales Variance % by Fiscal Month** chart, notice the large variability on variance % compared to last year, with January, April, and July being particularly bad months.
 
    :::image type="content" source="media/sample-retail-analysis/pbi_sample_retanlsalesvarcol.png" alt-text="Screenshot shows Total Sales Variance % by Fiscal Month chart.":::
 
@@ -158,7 +162,7 @@ Let's explore on a more detailed level, looking at the districts' performances.
 
 1. Select the bubble again to clear the filter.
 
-## Try out the slicer
+### Try out the slicer
 
 Let's look at how specific districts are doing.
 
@@ -178,7 +182,7 @@ Let's look at how specific districts are doing.
 
 1. When you're ready, return to the dashboard.
 
-## What the data says about sales growth this year
+### What the data says about sales growth this year
 
 The last area we want to explore is our growth by examining the new stores opened this year.
 
@@ -186,7 +190,9 @@ The last area we want to explore is our growth by examining the new stores opene
 
    :::image type="content" source="media/sample-retail-analysis/retail15.png" alt-text="Screenshot shows the New Stores Analysis page." lightbox="media/sample-retail-analysis/retail15.png":::
 
-   As evident from the tile, more Fashions Direct stores than Lindseys stores opened this year.
+    Or open the **New Stores Analysis** page of the report.
+
+    As evident from the tile, more Fashions Direct stores than Lindseys stores opened this year.
 1. Observe the **Sales Per Sq Ft by Name** chart:
 
    :::image type="content" source="media/sample-retail-analysis/retail14.png" alt-text="Screenshot shows the Sales Per Sq Ft by Name chart.":::
