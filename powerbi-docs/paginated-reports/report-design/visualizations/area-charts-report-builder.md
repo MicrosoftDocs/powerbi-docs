@@ -1,27 +1,25 @@
 ---
-title: "Area charts in Power BI paginated report | Microsoft Docs"
+title: "Area charts in Power BI paginated reports | Microsoft Docs"
 description: Learn how to use area charts in Power BI paginated report. Area charts display a series as a set of points connected by a line, with all the area filled in below the line in Power BI Report Builder.
-ms.date: 03/10/2023
+ms.date: 03/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Area charts in Power BI paginated report (Power BI Report Builder)
+# Area charts in paginated reports (Power BI Report Builder)
+
 [!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
 
   An area chart in Power BI paginated report displays a series as a set of points connected by a line, with all the area filled in below the line. For more information on how to add data to an area chart, see [Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs).  
   
  The following illustration shows an example of a stacked area chart. The data is well suited for display on a stacked area chart because the chart can display totals for all series as well as the proportion that each series contributes to the total.  
   
- ![Screenshot of a Area chart](../../media/paginated-reports-visualizations/area-chart.gif "Area chart")  
+ ![Screenshot of an Area chart.](../../media/paginated-reports-visualizations/area-chart.gif "Area chart")  
   
-> [!NOTE]  
->  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.
+You create and modify Power BI paginated report definition (.rdl) files in [Power BI Report Builder](../../report-builder-power-bi.md).
   
 ## Variations  
   
