@@ -16,7 +16,7 @@ The Power BI Log Analytics for Analysis Services (AS) Engine app is designed to 
 
 ## Prerequisites
 
-Before you install the AS Engine app, make sure you have a [Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace)
+Before you install the AS Engine app, make sure you have a [Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace).
 
 ## Install the app
 
