@@ -107,7 +107,7 @@ Now comes the ad hoc analysis part.
 
 1. Keep selecting **High value** until you have a decomp tree that looks like this one.
 
-   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-complete.png" alt-text="Screenshot shows all the highest values selected by Power BI.":::
+   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-complete.png" alt-text="Screenshot shows all the highest values selected by Power BI." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-complete.png":::
 
    Or select other values yourself, and see what you end up with.
 
