@@ -12,7 +12,7 @@ LocalizationGroup: Visualizations
 ---
 # Show the data used to create a Power BI visual
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyny.md)]
 
 A Power BI visual is constructed using data from underlying datasets. If you're interested in seeing behind the scenes, Power BI shows you the data that's being used to create a visual. The ability to do this is available in Power BI Desktop and in the Power BI service and is available for almost all visual types. 
 
@@ -82,7 +82,7 @@ When you select **Show as a table** or **Show data point as a table**, Power BI 
 
 ### Show the data that creates a report visual
 
-1. In the Power BI service, [open a report](end-user-report-open.md) and select a visual.  
+1. In the Power BI service, [open a report](../consumer/end-user-report-open.md) and select a visual.  
 2. To show the data underlying the visual, select **More options** (...) and choose **Show as a table**.
    
    :::image type="content" source="./media/end-user-show-data/power-bi-show-data-vertical.png" alt-text="Screenshot with Show as a table selected from the More options dropdown.":::
@@ -139,7 +139,7 @@ To return to the report, select **Back to report** from the upper left corner.
 
 There are all sorts of report formatting and data management features in **Power BI**. Check out the following resources for a few examples:
 
-- [Create a drillthrough button in Power BI](../create-reports/desktop-drill-through-buttons.md)
-- [Use gridlines and snap-to-grid in Power BI reports](../create-reports/desktop-gridlines-snap-to-grid.md)
+- [Create a drillthrough button in Power BI](desktop-drill-through-buttons.md)
+- [Use gridlines and snap-to-grid in Power BI reports](desktop-gridlines-snap-to-grid.md)
 - [Visuals in Power BI reports](../visuals/power-bi-report-visualizations.md)    
-- [Power BI reports](end-user-reports.md)
+- [Power BI reports](../consumer/end-user-reports.md)

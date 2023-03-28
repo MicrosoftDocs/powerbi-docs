@@ -19,6 +19,9 @@ With *buttons* in Power BI, you can create reports that behave similarly to apps
 
 ![Screenshot showing a Q&A button in Power BI.](media/desktop-buttons/power-bi-qna-button.png)
 
+> [!NOTE]
+> Creating a button requires edit permissions to the report. Sharing a report requires a Power BI Pro or PPU license or for the report to be saved in Premium capacity. For more information, see [Which license do I have](../fundamentals/service-features-license-type.md) and [What is Premium](../enterprise/service-premium-what-is.md).
+
 ## Create buttons in reports
 
 ### [Power BI Desktop](#tab/powerbi-desktop)
