@@ -16,7 +16,7 @@ LocalizationGroup: Reports
 
 When you open a report in Power BI service, each page of the report has its own unique URL. To filter that report page, you could use the Filters pane on the report canvas.  Or you could add query string parameters to the URL to pre-filter the report. Perhaps you have a report you'd like to show colleagues and you want to pre-filter it for them. One way to filter it is to start with the default URL for the report, add the filter parameters to the URL, and then email them the entire new URL.
 
-This article uses the Retail Analysis Sample report. If you want to follow along, you can [download the sample report](../create-reports/sample-retail-analysis.md#get-the-sample).
+This article uses the Retail Analysis Sample report. If you want to follow along, you can [download the sample report](../create-reports/sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service).
 
 ![Screenshot of Power BI report in the service.](media/service-url-filters/power-bi-retail-analysis-sample.png)
 

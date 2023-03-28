@@ -36,7 +36,7 @@ Watch Amanda add some alerts to tiles on the dashboard. Then follow the step-by-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
 
-This example uses a card tile from the Retail Analysis sample dashboard. [Get the Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample) if you want to follow along.
+This example uses a card tile from the Retail Analysis sample dashboard. [Get the Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service) if you want to follow along.
 
 1. Start on a dashboard. From the **Total stores** tile, select the ellipses.
 

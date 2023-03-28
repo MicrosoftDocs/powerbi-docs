@@ -20,7 +20,7 @@ The `supportsKeyboardFocus` feature makes it possible to navigate the data point
 
 Follow these steps for a brief illustration of how keyboard navigation works:
 
-1. Open any visual that has the `supportsKeyboardFocus` feature enabled. Try a visual from the [Retail Analysis sample](../../create-reports/sample-retail-analysis.md#get-the-sample).
+1. Open any visual that has the `supportsKeyboardFocus` feature enabled. Try a visual from the [Retail Analysis sample](../../create-reports/sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service).
 2. Select any data point within the visual, and press the **Tab** key.
     The focus moves to the next data point each time you press **Tab**.
 3. Press **Enter** to select the highlighted data point.
