@@ -3562,6 +3562,16 @@
         {
             "source_path": "powerbi-docs/desktop-see-data-see-records.md",
             "redirect_url": "/power-bi/create-reports/desktop-see-data-see-records",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/desktop-see-data-see-records.md",
+            "redirect_url": "/power-bi/create-reports/end-user-show-data",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-show-data.md",
+            "redirect_url": "/power-bi/create-reports/end-user-show-data",
             "redirect_document_id": true
         },
         {
