@@ -14,14 +14,9 @@ LocalizationGroup: Transform and shape data
 
 The Power BI Log Analytics for Analysis Services (AS) Engine app is designed to analyze AS Engine behavior in general and to help isolate and debug specific problems in depth. Use this guide to install the app. For information on how to use the app, see [Using the Log Analytics for Power BI Datasets Template App (preview)](desktop-loganalytics-reportguide-datasets.md).
 
->[!NOTE]
->The app is updated regularly with new features and functionalities. If you see that there's a pending update in the notifications center, you should update the app to recieve new features and fixes.
->
 ## Prerequisites
 
-Before you install the AS Engine app, review these requirements:
-
-* You need to have a Log Analytics Workspace
+Before you install the AS Engine app, make sure you have a [Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace)
 
 ## Install the app
 
