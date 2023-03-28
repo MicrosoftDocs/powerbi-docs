@@ -12,11 +12,11 @@ LocalizationGroup: Data from files
 ---
 # Understand datamarts
 
-This article describes and explains important concepts about datamarts.
+## Understand Dataset (default)
 
 Datamarts provide a semantic layer that is automatically generated and synchronized with the contents of the datamart tables, their structure, and underlying data. This layer is provided in an automatically generated dataset. This automatic generation and synchronization enables you to further describe the domain of data with things like hierarchies, friendly names and descriptions. You can also set formatting specific to your locale or business requirements. With datamarts, you can create measures and standardized metrics for reporting. Power BI (and other client tools) can create visuals and provide results for such calculations based on the data in context.
 
-The **auto-generated** Power BI dataset created from a datamart eliminates the need to connect to a separate dataset, set up refresh schedules, and manage multiple data elements. Instead, you can build your business logic in a datamart and its data will be immediately available in Power BI, enabling the following:
+The **default** Power BI dataset created from a datamart eliminates the need to connect to a separate dataset, set up refresh schedules, and manage multiple data elements. Instead, you can build your business logic in a datamart and its data will be immediately available in Power BI, enabling the following:
 
 * Datamart data access through the Dataset Hub.
 * Capability to analyze in Excel.
@@ -24,14 +24,14 @@ The **auto-generated** Power BI dataset created from a datamart eliminates the n
 * No need to refresh, synchronize data or understand connection details.
 * Build solutions on the web without needing Power BI Desktop.
 
-During preview, auto-generated dataset connectivity is available using [DirectQuery](../../connect-data/desktop-directquery-about.md) only. The following image shows how datamarts fit into the process continuum starting with connecting to data, all the way through creating reports.
+During preview, default dataset connectivity is available using [DirectQuery](../../connect-data/desktop-directquery-about.md) only. The following image shows how datamarts fit into the process continuum starting with connecting to data, all the way through creating reports.
 
 :::image type="content" source="media/datamarts-overview/datamarts-overview-02.png" alt-text="Diagram that shows how datamarts fit into the data connection and analysis continuum.":::
 
-Auto-generated datasets are different from traditional Power BI datasets in the following ways:
+Default datasets are different from traditional Power BI datasets in the following ways:
 
 * The XMLA endpoint supports read-only operations and users can't edit the dataset directly.
-* The auto-generated datasets don't have data source settings and users don't need to enter credentials. Rather, they use automatic single sign-on (SSO) for queries. 
+* The default datasets don't have data source settings and users don't need to enter credentials. Rather, they use automatic single sign-on (SSO) for queries. 
 * For refresh operations, datasets use the dataset author credentials to connect to the managed datamart’s SQL endpoint.
 
 With Power BI Desktop users can build composite models, enabling you to connect to the datamart’s dataset and do the following:
@@ -39,7 +39,17 @@ With Power BI Desktop users can build composite models, enabling you to connect 
 * Select specific tables to analyze.
 * Add more data sources.
 
-Finally, if you don't want to use the auto-generated dataset directly, you can connect to the datamart’s SQL endpoint. For more information, see [Create reports using datamarts](datamarts-create-reports.md).
+Finally, if you don't want to use the default dataset directly, you can connect to the datamart’s SQL endpoint. For more information, see [Create reports using datamarts](datamarts-create-reports.md).
+
+### Understand what's in the default dataset
+
+Currently, tables in the datamart are automatically added to the default dataset. Users can also manually select tables 
+or views from the datamart they want included in the model for more flexibility. Objects that are in the default dataset 
+will be created as a layout in the model view.
+
+The background sync that includes objects (tables and views) will wait for the downstream dataset to not be in use to 
+update the dataset, honoring bounded staleness. Users can always go and manually pick tables they want or no want in 
+the dataset. 
 
 ## Understand incremental refresh and datamarts
 
@@ -58,9 +68,9 @@ Incremental refresh and real-time data for datamarts offers the following advant
 
 ## Understand proactive caching
 
-Proactive caching enables automatic import of the underlying data for the auto-generated dataset so you don't need to manage or orchestrate the storage mode. Import mode for the auto-generated dataset provides performance acceleration for the datamart's dataset by using the fast Vertipaq engine. When you use proactive caching, Power BI changes the storage mode of your model to import, which uses the in-memory engine in Power BI and Analysis Services.
+Proactive caching enables automatic import of the underlying data for the default dataset so you don't need to manage or orchestrate the storage mode. Import mode for the default dataset provides performance acceleration for the datamart's dataset by using the fast Vertipaq engine. When you use proactive caching, Power BI changes the storage mode of your model to import, which uses the in-memory engine in Power BI and Analysis Services.
 
-Proactive caching works in the following way: after each refresh, the storage mode for the auto-generated dataset is changed to DirectQuery. Proactive caching builds a side-by-side import model asynchronously and is managed by the datamart, and doesn't affect availability or performance of the datamart. Queries coming in after the auto-generated dataset is complete will use the import model.
+Proactive caching works in the following way: after each refresh, the storage mode for the default dataset is changed to DirectQuery. Proactive caching builds a side-by-side import model asynchronously and is managed by the datamart, and doesn't affect availability or performance of the datamart. Queries coming in after the default dataset is complete will use the import model.
 
 Auto-generation of the import model occurs within approximately 10 minutes after no changes are detected in the datamart. The import dataset changes in the following ways:
 
