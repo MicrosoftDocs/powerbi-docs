@@ -129,6 +129,7 @@ When creating a subscription, you can add other email addresses in the same doma
 
 
 > [!NOTE]
+> There are different ways of creating a Microsoft 365 group, few are : M365 distribution group for outlook, M365 group for team, M365 mail enabled security group. The M365 group for team does not works for mail enablement, hence can't be used for direct sharing and email subscriptions. 
 > Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and don't support subscribing group aliases.  
 
 ### Subscribe external users 
