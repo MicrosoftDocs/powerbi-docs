@@ -12,7 +12,7 @@ LocalizationGroup: Visualizations
 ---
 # Show the data used to create a Power BI visual
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyny.md)]
 
 A Power BI visual is constructed using data from underlying datasets. If you're interested in seeing behind the scenes, Power BI shows you the data that's being used to create a visual. The ability to do this is available in Power BI Desktop and in the Power BI service and is available for almost all visual types. 
 
