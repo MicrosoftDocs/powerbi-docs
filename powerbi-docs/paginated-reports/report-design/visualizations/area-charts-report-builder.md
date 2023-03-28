@@ -19,7 +19,7 @@ ms.reviewer: saurkumar
   
  ![Screenshot of an Area chart.](../../media/paginated-reports-visualizations/area-chart.gif "Area chart")  
   
-You create and modify Power BI paginated report definition (.rdl) files in [Power BI Report Builder](../../report-builder-power-bi.md).
+You create and modify Power BI paginated reports in [Power BI Report Builder](../../report-builder-power-bi.md).
   
 ## Variations  
   
