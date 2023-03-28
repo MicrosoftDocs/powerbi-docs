@@ -83,17 +83,6 @@ in
 Table
 ```
 
-There's no requirement the _final query_ support folding. For example in the following expression, we use a non-folding NativeQuery but integrate the RangeStart and RangeEnd parameters directly into SQL:
-
-```powerquery-m
-let
-  Query = "select * from dbo.FactInternetSales where OrderDateKey >= '"& Text.From(Int32.From( DateTime.ToText(RangeStart,"yyyyMMdd") )) &"' and OrderDateKey < '"& Text.From(Int32.From( DateTime.ToText(RangeEnd,"yyyyMMdd") )) &"' ",
-  Source = Sql.Database("dwdev02","AdventureWorksDW2017"),
-  Data = Value.NativeQuery(Source, Query, null, [EnableFolding=false])
-in
-  Data
-```
-
 When incremental refresh is configured, a Power Query expression that includes a date/time filter based on the RangeStart and RangeEnd parameters is executed against the data source. If the filter is specified in a query step after the initial source query, it's important that query folding combines the initial query step with the steps reference the RangeStart and RangeEnd parameters. For example, in the following query expression, the `Table.SelectRows` will fold because it immediately follows the `Sql.Database` step, and SQL Server supports folding:
 
 ```powerquery-m
