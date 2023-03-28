@@ -64,7 +64,7 @@ If the steps in this section don't provide the desired degree of parallelism, co
 
 ### Using the compute engine to improve performance
 
-Take the following steps to enable workloads trigger the compute engine, and always improve performance:
+Take the following steps to enable workloads to trigger the compute engine, and always improve performance:
 
 **For computed and linked entities in the same workspace:**
 
