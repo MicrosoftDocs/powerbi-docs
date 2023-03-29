@@ -44,7 +44,6 @@ The SSO option takes effect across all datasets that use this data source. It do
 ## Next steps
 
 [Connectors in Power Query](/power-query/connectors/)
-
 [Connect to data in Power BI Desktop](desktop-quickstart-connect-to-data.md)  
 [Using DirectQuery in Power BI](desktop-directquery-about.md)  
 [What is an on-premises data gateway?](service-gateway-onprem.md)  
