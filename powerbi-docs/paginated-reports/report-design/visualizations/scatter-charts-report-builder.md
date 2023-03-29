@@ -27,7 +27,7 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
   
 - **3-D Bubble**. A bubble chart displayed in 3-D.  
   
-## Data considerations for a Scatter chart  
+## Data considerations for a scatter chart  
   
 - Scatter charts are commonly used for displaying and comparing numeric values, such as scientific, statistical, and engineering data.  
   

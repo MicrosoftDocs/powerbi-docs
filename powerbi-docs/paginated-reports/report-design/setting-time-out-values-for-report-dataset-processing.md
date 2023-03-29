@@ -1,5 +1,5 @@
 ---
-title: "Set time-out values for paginated report dataset processing | Microsoft Docs"
+title: "Set time-out values for Power BI paginated report dataset processing | Microsoft Docs"
 description: In paginated reports, you can specify time-out values to set limits on how system resources are used.
 ms.date: 03/28/2023
 ms.service: powerbi
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: joshger
 ---
-# Set time-out values for paginated report dataset processing
+# Set time-out values for paginated report dataset processing (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
 
@@ -31,5 +31,5 @@ Most time-out errors occur during query processing. If you are encountering time
 
 ## Next steps
 
- [Understand paginated report data in Power BI Report Builder](../../report-builder-data.md)   
+ [Understand paginated report data in Power BI Report Builder](../../report-builder-data.md) 
  [Create an embedded dataset for a Power BI paginated report](../../paginated-reports-create-embedded-dataset.md)   

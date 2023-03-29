@@ -28,7 +28,7 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
     > [!NOTE]  
     >  When there are multiple series on a chart, you must right-click on the series, not the chart, which you want to change.  
   
-1. In the **SelectChart Type** dialog box, select a chart type from the list.  
+1. In the **Select Chart Type** dialog box, select a chart type from the list.  
   
 ## Next steps
 

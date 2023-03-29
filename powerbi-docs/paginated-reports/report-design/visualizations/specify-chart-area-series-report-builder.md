@@ -1,5 +1,5 @@
 ---
-title: "Specify chart area for series in Power BI paginated report | Microsoft Docs"
+title: "Specify a chart area for a series in Power BI paginated report | Microsoft Docs"
 description: Find out about the chart area as a top-level container in a Power BI paginated report that includes the outer border, the chart title, and the legend in Power BI Report Builder.
 ms.date: 03/28/2023
 ms.service: powerbi
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Specify chart area for series in Power BI paginated report (Power BI Report Builder)
+# Specify a chart area for a series in Power BI paginated report (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 

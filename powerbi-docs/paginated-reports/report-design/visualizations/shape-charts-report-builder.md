@@ -29,7 +29,7 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
   
 - **Pyramid**. A pyramid chart displays proportional data so that the chart looks like a pyramid.  
   
-## Data considerations for Shape charts  
+## Data considerations for shape charts  
   
 - Shape charts are popular in reports because of their visual impact. However, shape charts are a very simplified chart type that may not best represent your data. Consider using a shape chart only once the data has been aggregated to seven data points or less. In general, use the shape chart to display only one category per data region.  
   

@@ -1,5 +1,5 @@
 ---
-title: "Include indicators and gauges in gauge panel in Power BI paginated reports | Microsoft Docs"
+title: "Include indicators and gauges in a gauge panel in Power BI paginated reports | Microsoft Docs"
 description: Find out about using gauges and indicators in the gauge panel, a top-level container, in your Power BI paginated reports in Power BI Report Builder. 
 ms.date: 03/28/2023
 ms.service: powerbi
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Include indicators and gauges in gauge panel in Power BI paginated reports (Power BI Report Builder)
+# Include indicators and gauges in a gauge panel in Power BI paginated reports (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 

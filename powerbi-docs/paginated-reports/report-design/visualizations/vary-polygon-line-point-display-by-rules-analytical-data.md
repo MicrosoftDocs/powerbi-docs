@@ -27,7 +27,7 @@ ms.reviewer: saurkumar
   
 You create and modify Power BI paginated reports in [Power BI Report Builder](../../report-builder-power-bi.md). 
   
-##  <a name="Rules"></a> The four types of rules
+##  <a name="Rules"></a> Four types of rules
 
  You can set four types of rules that enable the report processor to automatically adjust display properties for map elements on a layer. Rules vary depending on the map element type: polygons, lines, or points.  
   

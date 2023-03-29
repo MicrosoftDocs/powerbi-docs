@@ -22,7 +22,7 @@ When you want to summarize data in a visual format in a paginated report, use a 
 
 ## Add a chart to a report  
   
-1. Create a report and define a dataset. For more information, see [Report Datasets &#40;&#41;](/sql/reporting-services/report-data/report-datasets-ssrs).  
+1. Create a report and define a dataset. For more information, see [Report Datasets &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/report-datasets-ssrs).  
   
 1. On the **Insert** tab, select **Chart**, and then select **Insert Chart**.  
 
