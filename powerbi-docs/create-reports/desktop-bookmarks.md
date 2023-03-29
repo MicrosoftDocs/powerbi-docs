@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/15/2022
+ms.date: 03/29/2023
 ms.custom: Sample-Retail Analysis Sample
 LocalizationGroup: Create reports
 ---
@@ -15,34 +15,38 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-When you edit a report in Power BI Desktop and the Power BI service, you can add *report bookmarks* to capture the current state of a report page. Bookmarks save the current filters and slicers, cross-highlighted visuals, sort order, and so on. When others view your report, they can get back to that exact state by selecting your saved bookmark.
+When you edit a report in Power BI Desktop and the Power BI service, you can add *bookmarks* to capture the current state of a report page. Bookmarks save the current filters and slicers, cross-highlighted visuals, sort order, and so on. There are two types of bookmarks: *personal* and *report*. This article covers creating and using **report** bookmarks. When you add report bookmarks to a report and others view your report, they can get back to that exact state by selecting your saved report bookmark.
 
 ![Screenshot showing Bookmarks in Power BI.](media/desktop-bookmarks/bookmarks-pane.png)
 
+There are many uses for bookmarking. For example, you can create a collection of bookmarks, arrange them in the order you want, and later step through each bookmark in a presentation to highlight a series of insights, or the story you want to tell with your visuals and reports. You can also use bookmarks to keep track of your own progress in creating reports (bookmarks are easy to add, delete, and rename).
+
 ## Other articles about bookmarks
 
-After you've created report bookmarks, you and your report readers can do more with them.
-
 - In the Power BI service, anyone viewing a report can create a *personal bookmark*. For more about personal bookmarks, read about [personal bookmarks in the Power BI service](../consumer/end-user-bookmarks.md#use-personal-bookmarks-to-save-insights-and-build-stories-in-power-bi).
-- After you've created your report bookmarks, you can quickly build a [bookmark navigation experience](button-navigators.md#bookmark-navigator) with a few more clicks.
+- After you've created your report bookmarks, you and your report readers can do more with them. You can quickly build a [bookmark navigation experience](button-navigators.md#bookmark-navigator) with a few more clicks.
 
-There are many uses for bookmarking. For example, you can create a collection of bookmarks, arrange them in the order you want, and later step through each bookmark in a presentation to highlight a series of insights, or the story you want to tell with your visuals and reports. You can also use bookmarks to keep track of your own progress in creating reports (bookmarks are easy to add, delete, and rename).
+
 
 ## Create report bookmarks
 
-You have to have permissions to edit a report to create report bookmarks that others can use.
+To create report booksmarks, you must have edit permissions for the report.  
 
 # [Power BI Desktop](#tab/powerbi-desktop)
  
 On the **View** tab, select **Bookmarks**. 
 
-![Screenshot showing how to turn on the Bookmarks pane in Power B I Desktop.](media/desktop-bookmarks/bookmarks_03.png)
+![Screenshot showing how to turn on the Bookmarks pane in Power BI Desktop.](media/desktop-bookmarks/bookmarks_03.png)
 
 # [Power BI service](#tab/powerbi-service)
 
-Select **Edit**, then select **View** and turn on **Bookmarks pane**. 
+Open a report in Editing view.
 
-:::image type="content" source="media/desktop-bookmarks/service-view-bookmarks.png" alt-text="Screenshot showing how to turn on the Bookmarks pane in the Power B I service.":::
+:::image type="content" source="media/power-bi-edit.png" alt-text="Screenshot showing a red box around the menu item for Edit.":::
+
+Select **View** and turn on **Bookmarks pane**. 
+
+:::image type="content" source="media/desktop-bookmarks/service-view-bookmarks.png" alt-text="Screenshot showing how to turn on the Bookmarks pane in the Power BI service.":::
 
 ---
 
@@ -67,16 +71,18 @@ Power BI creates a bookmark and gives it a generic name. You can easily **Rename
 
 After you've created a bookmark, display it by selecting it in the **Bookmarks** pane. 
 
-You can also select whether each bookmark will apply other properties in the report:
+:::image type="content" source="media/desktop-bookmarks/power-bi-select-bookmark.png" alt-text="Screenshot of Bookmarks pane with one report bookmark outlined in red.":::
+
+You can also select whether each bookmark will apply other properties in the report. To make these changes, select **More options (...)** next to the bookmark name, then select or clear the check marks next to **Data**, **Display**, and other controls. The options are:
 
 - **Data** properties, such as filters and slicers.
 - **Display** properties, such as spotlight and its visibility.
 - **Current page** changes, which present the page that was visible when the bookmark was added. 
 - Choose between **All visuals** and **Selected visuals**.
 
-These capabilities are useful when you use bookmarks to switch between report views or selections of visuals, in which case you'd likely want to turn off data properties, so that filters aren't reset when users switch views by selecting a bookmark.
+:::image type="content" source="media/desktop-bookmarks/power-bi-bookmark-display.png" alt-text="Screenshot of a bookmark selected and the More options menu displayed.":::
 
-To make these changes, select **More options (...)** next to the bookmark name, then select or clear the check marks next to **Data**, **Display**, and other controls.
+These capabilities are useful when you use bookmarks to switch between report views or selections of visuals, in which case you'd likely want to turn off data properties, so that filters aren't reset when users switch views by selecting a bookmark.
 
 ## Arranging bookmarks
 
@@ -91,7 +97,7 @@ As you create report bookmarks, you might find that the order in which you creat
 The order of your bookmarks can be important when you use the **View** feature of bookmarks, as described in the next section, [Bookmarks as a slide show](#bookmarks-as-a-slide-show).
 
 > [!NOTE]
-> You can't rearrange personal bookmarks.
+> You can't rearrange personal bookmarks except to choose the **default** view.
 
 ## Bookmarks as a slide show
 When you have a collection of bookmarks you'd like to present in order, you can view them as a slide show in Power BI Desktop, and in the Power BI service in either **Edit** or **Reading mode**.  
@@ -115,7 +121,7 @@ In Power BI Desktop, the Selection pane is on the **View** tab.
 
 When you're editing a report in the Power BI service, the **Selection pane** is on the **View** menu. You don't see it if you can't edit the report.
 
-:::image type="content" source="media/desktop-bookmarks/power-bi-service-selection-pane.png" alt-text="Screenshot showing how to turn on the Selection pane in the Power B I service.":::
+:::image type="content" source="media/desktop-bookmarks/power-bi-service-selection-pane.png" alt-text="Screenshot showing how to turn on the Selection pane in the Power BI service.":::
 
 ---
 
@@ -134,7 +140,10 @@ It's important to note that slicers continue to filter a report page, regardless
 
 You can link bookmarks to shapes and images. With this feature, when you select an object, it shows the bookmark associated with that object. This feature can be especially useful when you work with buttons. Read more about [using buttons in Power BI](desktop-buttons.md). Consider also creating a [bookmark navigator](button-navigators.md#bookmark-navigator), which creates a set of buttons all linked automatically to a group of bookmarks.
 
-To assign a bookmark to a button: 
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+
+To assign a bookmark to a button in Power BI Desktop: 
 
 1. On the **Insert** ribbon, select **Buttons** > **Blank**.
 1. In the **Format button** pane, toggle the **Action** slider to **On**.
@@ -144,6 +153,27 @@ To assign a bookmark to a button:
 3. Under **Bookmarks**, select a bookmark.
 
    ![Screenshot showing adding a bookmark link to an object.](media/desktop-bookmarks/bookmarks-button.png)
+
+---
+
+# [Power BI service](#tab/powerbi-service)
+
+To assign a bookmark to a button in the Power BI service: 
+
+1. From the top menu bar, select the **Buttons** icon and choose  **Blank**.
+
+:::image type="content" source="media/desktop-bookmarks/power-bi-button.png" alt-text="Screenshot showing how to select the Button options.":::
+
+
+1. In the **Format button** pane, toggle the **Action** slider to **On**.
+
+2. Expand the **Action** section. Under **Type**, select **Bookmark**.
+
+3. Under **Bookmarks**, select a bookmark.
+
+    :::image type="content" source="media/desktop-bookmarks/power-bi-button-action.png" alt-text="Screenshot showing how to add a bookmark as a button action.":::
+
+---
 
 There are all sorts of interesting things you can do with object-linked bookmarking. You can create a visual table of contents on your report page, or you can provide different views (such as visual types) of the same information.
 
