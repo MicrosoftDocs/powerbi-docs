@@ -29,7 +29,7 @@ For content with paginated report visuals, this table spells out the licenses an
 |[Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) | A PPU license and write access to the workspace | Only users with PPU licenses and read access to the workspace  |
 |[Power BI Premium](../enterprise/service-premium-what-is.md) | A PPU license or a [Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md), and write access to the workspace | Users with free, Pro, and PPU licenses and read access to the workspace |
 
-Read more about [roles in workspaces](../../service-roles-new-workspaces.md).
+Read more about [roles in workspaces](../service-roles-new-workspaces.md).
 
 ## Create a paginated report visual
 
