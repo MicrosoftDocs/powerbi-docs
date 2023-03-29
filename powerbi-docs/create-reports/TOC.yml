@@ -550,6 +550,22 @@
         href: ../paginated-reports/report-design/visualizations/charts-report-builder.md
       - name: Add a chart to paginated reports
         href: ../paginated-reports/report-design/visualizations/add-chart-report-report-builder.md
+      - name: Change the chart type in a paginated report
+        href: ../paginated-reports/report-design/visualizations/change-chart-type-report-builder.md
+      - name: Chart types in paginated reports
+        items: 
+        - name: Add a gauge to a paginated report
+          href: ../paginated-reports/report-design/visualizations/add-gauge-to-report-report-builder.md
+        - name: Area charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/area-charts-report-builder.md
+        - name: Polar charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/polar-charts-report-builder.md
+        - name: Scatter charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/scatter-charts-report-builder.md
+        - name: Shape charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/shape-charts-report-builder.md
+        - name: Stock charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/stock-charts-report-builder.md
       - name: Change the text of a legend item in paginated reports
         href: ../paginated-reports/report-design/visualizations/chart-legend-change-item-text-report-builder.md
       - name: Format the legend on a paginated report chart
@@ -566,30 +582,16 @@
         href: ../paginated-reports/report-design/visualizations/position-labels-chart-report-builder.md
       - name: Specify an axis interval in paginated reports
         href: ../paginated-reports/report-design/visualizations/specify-axis-interval-report-builder.md
-      - name: Add a gauge to a paginated report
-        href: ../paginated-reports/report-design/visualizations/add-gauge-to-report-report-builder.md
-      - name: Area charts in paginated reports
-        href: ../paginated-reports/report-design/visualizations/area-charts-report-builder.md
-      - name: Change the chart type in a paginated report
-        href: ../paginated-reports/report-design/visualizations/change-chart-type-report-builder.md
       - name: Format pointers on a gauge in a paginated report
         href: ../paginated-reports/report-design/visualizations/formatting-pointers-gauge-report-builder.md
       - name: Format ranges on a gauge in a paginated report
         href: ../paginated-reports/report-design/visualizations/formatting-ranges-gauge-report-builder.md
       - name: Include indicators and gauges in a gauge panel
         href: ../paginated-reports/report-design/visualizations/include-indicators-gauges-gauge-panel-report-builder.md
-      - name: Polar charts in paginated reports
-        href: ../paginated-reports/report-design/visualizations/polar-charts-report-builder.md
-      - name: Scatter charts in paginated reports
-        href: ../paginated-reports/report-design/visualizations/scatter-charts-report-builder.md
-      - name: Shape charts in paginated reports
-        href: ../paginated-reports/report-design/visualizations/shape-charts-report-builder.md
       - name: Specify a chart area for a series in a paginated report
         href: ../paginated-reports/report-design/visualizations/specify-chart-area-series-report-builder.md
       - name: Start pie chart values at the top of the pie
         href: ../paginated-reports/report-design/visualizations/start-pie-chart-values-top-pie-report-builder.md
-      - name: Stock charts in paginated reports
-        href: ../paginated-reports/report-design/visualizations/stock-charts-report-builder.md
       - name: Vary polygon, line, and point display in a paginated report
         href: ../paginated-reports/report-design/visualizations/vary-polygon-line-point-display-by-rules-analytical-data.md
       - name: Troubleshoot charts in paginated reports
