@@ -1,18 +1,17 @@
 ---
-title: "Change chart type in Power BI paginated report | Microsoft Docs"
+title: "Change the chart type in a Power BI paginated report | Microsoft Docs"
 description: Learn how to change your Power BI paginated report chart type at any point in report design. Improve interpretation with characteristics appropriate for your data in Power BI Report Builder.
-ms.date: 03/10/2023
+ms.date: 03/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Change chart type in Power BI paginated report (Power BI Report Builder)
+# Change the chart type in a Power BI paginated report (Power BI Report Builder)
 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
 When you first insert a chart into a paginated report, the **Select Chart Type** dialog appears. If you cancel this dialog, a Column chart type is added by default.  
   
@@ -20,20 +19,20 @@ When you first insert a chart into a paginated report, the **Select Chart Type**
   
  When multiple series are displayed on a chart, you may want to change the chart type of an individual series. You can only change the chart type of an individual series if the chart type is Area, Column, Line, or Scatter. For all other chart types, all series in your chart will be changed to the selected chart type.  
   
-> [!NOTE]  
->  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.
+You create and modify Power BI paginated reports in [Power BI Report Builder](../../report-builder-power-bi.md).
   
-## To change the chart type  
+## Change the chart type  
   
-1.  In Design view, right-click the chart and then click **Change Chart Type**.  
+1. In Design view, right-click the chart and then click **Change Chart Type**.  
   
     > [!NOTE]  
     >  When there are multiple series on a chart, you must right-click on the series, not the chart, which you want to change.  
   
-2.  In the **SelectChart Type** dialog box, select a chart type from the list.  
+1. In the **SelectChart Type** dialog box, select a chart type from the list.  
   
-## Next steps  
- [Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs)   
+## Next steps
+
+ [Charts (Power BI Report Builder)](charts-report-builder.md)   
  [Gauges &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs)   
  [Add a chart to a report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-a-chart-to-a-report-report-builder-and-ssrs)  
   

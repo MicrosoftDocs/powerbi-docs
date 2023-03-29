@@ -1,37 +1,36 @@
 ---
 title: "Polar charts in Power BI paginated report | Microsoft Docs"
 description: Discover the use of a Power BI paginated report polar chart with points grouped by category on a circle and values represented by the length of a point from the center of the circle.
-ms.date: 03/10/2023
+ms.date: 03/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
 # Polar charts in Power BI paginated report (Power BI Report Builder)
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
 
-  A polar chart in a Power BI paginated report displays a series as a set of points that are grouped by category on a 360-degree circle. Values are represented by the length of the point as measured from the center of the circle. The farther the point is from the center, the greater its value. Category labels are displayed on the perimeter of the chart. For more information on how to add data to a polar chart, see [Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs).  
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+
+  A polar chart in a Power BI paginated report displays a series as a set of points that are grouped by category on a 360-degree circle. Values are represented by the length of the point as measured from the center of the circle. The farther the point is from the center, the greater its value. Category labels are displayed on the perimeter of the chart. For more information on how to add data to a polar chart, see [Charts (Power BI Report Builder)](charts-report-builder.md).  
   
-> [!NOTE]  
->  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder. 
+You create and modify Power BI paginated reports in [Power BI Report Builder](../../report-builder-power-bi.md). 
   
 ## Variations  
   
--   **Radar chart**. A radar chart displays a series as a circular line or area. Unlike the polar chart, the radar chart does not display data in terms of polar coordinates.  
+- **Radar chart**. A radar chart displays a series as a circular line or area. Unlike the polar chart, the radar chart does not display data in terms of polar coordinates.  
   
-## Data considerations for Polar charts  
+## Data considerations for polar charts  
   
--   The radar chart is useful for comparisons between multiple series of category data.  
+- The radar chart is useful for comparisons between multiple series of category data.  
   
--   Polar charts are most commonly used to graph polar data, where each data point is determined by an angle and a distance.  
+- Polar charts are most commonly used to graph polar data, where each data point is determined by an angle and a distance.  
   
--   Polar charts cannot be combined with any other chart type in the same chart area.  
+- Polar charts cannot be combined with any other chart type in the same chart area.  
   
-## Example  
+## Example
+
  The following example shows how a radar chart can be used. The table below provides sample data for the chart.  
   
 |Name|Sales|  
@@ -46,10 +45,11 @@ ms.reviewer: saurkumar
   
  The following illustration shows an example of a radar chart based on the data presented.  
   
- ![Screenshot of a Radar chart](../../media/paginated-reports-visualizations/radar-chart.gif "Radar chart")  
+ ![Screenshot of a Radar chart.](media/paginated-reports-visualizations/radar-chart.gif "Radar chart")  
   
-## Next steps  
- [Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs)   
+## Next steps
+
+ [Charts (Power BI Report Builder)](charts-report-builder.md)   
  [Formatting a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
  [Chart types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)   
  [Line charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/line-charts-report-builder-and-ssrs)   

@@ -1,17 +1,17 @@
 ---
-title: "Formatting ranges on gauge in Power BI paginated report | Microsoft Docs"
+title: "Format ranges on a gauge in Power BI paginated reports | Microsoft Docs"
 description: Visually indicate with a gauge range in a Power BI paginated report when the pointer value has gone into a certain span of values in Power BI Report Builder.
-ms.date: 03/10/2023
+ms.date: 03/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Formatting ranges on gauge in Power BI paginated report (Power BI Report Builder)
+# Format ranges on a gauge in Power BI paginated reports (Power BI Report Builder)
+
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
  In a Power BI paginated report, the gauge range is a zone or area on the gauge scale that indicates an important subsection of values on the gauge. Using a gauge range, you can visually indicate when the pointer value has gone into a certain span of values. Ranges are defined by a start value and an end value.  
   
@@ -19,8 +19,7 @@ ms.reviewer: saurkumar
   
  You can position the range in the same way that you position pointers on a scale. The **Position** and **Distance from scale** properties determine the position of the range. For more information, see [Gauges &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs).  
   
-> [!NOTE]  
->  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.
+You create and modify Power BI paginated reports in [Power BI Report Builder](../../report-builder-power-bi.md).
   
 ## Next steps 
  [Formatting scales on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)   
