@@ -111,7 +111,7 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
   
  Legends automatically expand to display the legend title or legend text. To format the text of legend items, use map legend keywords and custom formats. For more information, see [To change the format of content in a legend](../../report-builder/change-map-legends-color-scale-associated-rules-report-builder.md#ChangeFormatItems).  
   
- The following tables shows examples of different formats that you can use.  
+ The following table shows examples of different formats that you can use.  
   
 |Keyword and format|Description|Example of what appears as text in the legend|  
 |--------|--------|-----------|  

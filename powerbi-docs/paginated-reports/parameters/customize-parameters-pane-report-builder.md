@@ -61,10 +61,11 @@ ms.author: maggies
     -   Right-click parameter in the **Report Data** pane, and then click **Delete**.
 
 ## Hidden/Internal parameters during runtime
+
 If you have a hidden/internal parameter, the logic of whether it will be rendered as empty space during runtime is as follows:
 
-   - If any row or column contains only hidden/internal parameters or empty cells, then the entire row or column won't be rendered during runtime
-   - Otherwise, the hidden/internal parameter or empty cell will be rendered as empty space
+- If any row or column contains only hidden/internal parameters or empty cells, then the entire row or column won't be rendered during runtime
+- Otherwise, the hidden/internal parameter or empty cell will be rendered as empty space
 
 For example, `ReportParameter1` is hidden while the rest of the parameters are visible:
 
@@ -83,10 +84,11 @@ Then the first column is not rendered during runtime because the entire column i
 ![Screenshot showing Hidden Parameter Example 2 - runtime.](media/customize-parameters-pane-report-builder/report-builder-two-hidden-parameters-server.png "Two hidden parameter in same column in runtime")
 
 ## Default layout
-For reports that were authored before SQL Server Reporting Services 2016, a default parameter layout grid of 2 columns and N rows will be used during runtime. To change the default layout, open the report in Report Builder and save the report. After saving the report, the customized parameter layout information will be saved to the .rdl file.
 
+For reports that were authored before SQL Server Reporting Services 2016, a default parameter layout grid of 2 columns and N rows is used during runtime. To change the default layout, open the report in Report Builder and save the report. After you save the report, the customized parameter layout information is saved to the .rdl file.
 
 ## Next Steps
+
  [Report Parameters &#40;Power BI Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer)
 
 

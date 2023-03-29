@@ -1,6 +1,6 @@
 ---
 title: "Start pie chart values at the top of the pie in Power BI paginated report | Microsoft Docs"
-description: Learn how to start pie chart values a the top of the chart in a Power BI paginated report rather than the default 90 degrees from the top.  
+description: Learn how to start pie chart values at the top of the chart in a Power BI paginated report rather than the default 90 degrees from the top.  
 ms.date: 03/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
