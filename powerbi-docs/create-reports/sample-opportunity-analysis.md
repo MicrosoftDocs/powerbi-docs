@@ -39,7 +39,7 @@ This tutorial explores the Opportunity Analysis built-in sample in the Power BI 
 
 You don't need a Power BI license to explore the sample in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
-## Get the sample in the Power BI service
+## Get the built-in sample
 
 1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
@@ -55,7 +55,7 @@ You don't need a Power BI license to explore the sample in Power BI Desktop. You
 
 ### What's the dashboard telling us?
 
-With the [built-in sample in the Power BI service](#get-the-sample-in-the-power-bi-service), you have a report and a dashboard. Let's start the tour at the dashboard that the sales manager has created to track those metrics most important to them. When they see something interesting, they can select a tile to look into the data:
+With the [built-in sample in the Power BI service](#get-the-built-in-sample), you have a report and a dashboard. Let's start the tour at the dashboard that the sales manager has created to track those metrics most important to them. When they see something interesting, they can select a tile to look into the data:
 
 - Company revenue is \\$2 billion and factored revenue is \\$461 million.
 - Opportunity count and revenue follow a familiar funnel pattern, with totals decreasing with each subsequent stage.
