@@ -20,39 +20,53 @@ It’s easy to create Power BI reports in Microsoft Teams. This article has a fe
 
 ## Create an automatic report from data you have
 
-If you have a table with data, such as an Excel spreadsheet, and want to try visualizing it in Power BI, create your report with the help of Microsoft Teams. Follow these steps.
+If you have a table with data, such as an Excel spreadsheet, and want to try visualizing in Power BI, create your report with the help of Microsoft Teams. You can start in Microsoft Teams or the Power BI service.
 
-1. Open the Power BI app for Microsoft Teams.
+### Create an automatic report with Microsoft Teams
+
+1. Open the Power BI app from Microsoft Teams.
 
     Need to install the Power BI app? [Install the app, then pin it](../collaborate-share/service-microsoft-teams-app.md#install-the-power-bi-app) to the Teams navigation pane.
 
-1. Select the **Create** tab, then choose **Paste or manually enter data** to open Power Bi service on your Browser.
+1. Select the **Create** tab, then choose **Paste or manually enter data** to open the Power BI service on your browser.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-create-paste-manually.png" alt-text="Screenshot of Power BI app open in Teams with the Create gab and paste or manually enter data option highlighted.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-create-paste-manually.png" alt-text="Screenshot of the Power BI app open in Teams with the Create tab and Paste or manually enter data option selected.":::
 
-1. After Power BI service opens, select **Paste or manually enter data**.
+1. After the Power BI service opens in your browser, go to Step 3 in [Create an automatic report with the Power BI service](#create-an-automatic-report-with-the-power-bi-service) to finish creating your report.
+
+### Create an automatic report with the Power BI service
+
+1. Open the Power BI service.
+
+1. Select the **New report** button.
+
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-new-report.png" alt-text="Screenshot of the Power BI service open and the New Report button selected.":::
+
+1. Select **Paste or manually enter data**.
+
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-create-paste-manually.png" alt-text="Screenshot of the Power BI service open and the Paste or manually enter data option selected.":::
 
 1. Copy the data or spreadsheet you want to visualize, then select the first cell in the Power Query dialog box and paste the data.
 
 1. Select **Use first row as headers** from the dropdown menu if you want to apply the setting. Then name your table and choose **Auto-create report**.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-paste-auto-create.png" alt-text="Select Auto-create report.":::
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-paste-auto-create.png" alt-text="Screenshot of the Power Query dialog box and the options to generate an Auto-crate report.":::
 
 1. Set a sensitivity label, if prompted.
 
-    Power BI automatically analyzes and visualizes your data in a pre-built report.
+    Power BI automatically analyzes and visualizes your data in a prebuilt report.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-auto-created-report.png" alt-text="Power BI automatically analyzes and visualize your data.":::
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-auto-created-report.png" alt-text="Screenshot of the visualizations the Power BI service automatically creates from the data.":::
 
-1. You can customize a single visual, select **Personalize this visual**.
+1. Customize your visuals. If you want to customize a single visual on your report, select the **Personalize this visual** icon.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-auto-created-report-personalize-visual.png" alt-text="Personalize this visual.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-auto-created-report-personalize-visual.png" alt-text="Screenshot of a visual and the Personalize this visual icon selected.":::
 
 1. **Save** the report.
 
-1. After you saved it, you can customize the whole report, select **Edit**.
+1. After you save the report, you can customize the whole report by selecting **Edit**.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-edit-auto-created-report.png" alt-text="Select Edit to customize the whole report.":::
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-edit-auto-created-report.png" alt-text="Screenshot of the visualizations the Power BI service automatically created with the Edit option selected.":::
 
 When you’re done, save and share the report with your colleagues in Teams.
 
@@ -65,11 +79,11 @@ To build a report from a dataset shared with you, follow these steps.
 1. Open the Power BI app for Microsoft Teams.
 1. Select the **Create** tab > **Pick a published dataset**.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-create-published-dataset.png" alt-text="Screenshot of Power BI app open in Teams with the Create tab and Pick a published dataset option highlighted.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-create-published-dataset.png" alt-text="Screenshot of Power BI app open in Teams with the Create tab and Pick a published dataset option selected.":::
 
 1. Select a dataset > **Auto-create report**.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-select-dataset.png" alt-text="Screenshot of a window open to select a dataset to create a report with the report and create button highlighted.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-select-dataset.png" alt-text="Screenshot of a window open to select a dataset to create a report with the report and create button selected.":::
 
 1. Start exploring the data.
 
@@ -95,7 +109,7 @@ It's easy to find all the datasets your organization has shared with you. They�
 
     :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-details.png" alt-text="Screenshot of the Dataset details page and related reports.":::
 
-    - Discover pre-built reports that use the dataset.
+    - Discover prebuilt reports that use the dataset.
     - Create a report in Power BI from the dataset with **Create a report**.
     - Share data and give people access to the dataset to work.
     - Select a table or column to export data or select more than one table to create a paginated report.
@@ -120,7 +134,7 @@ For example, ask a question about your data by adding a *Q&A visual*, where you 
 
 1. If you like the visual that Power BI creates, you can convert it from a Q&A visual to a standard visual on the page.
 
-    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-pin-qna-visual.png" alt-text="Screenshot of a Q&A result with the Convert Q&A visual icon highlighted.":::
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-pin-qna-visual.png" alt-text="Screenshot of a Q&A result with the Convert Q&A visual icon selected.":::
 
 For more information, see [Create a Q&A visual in a report in Power BI](../visuals/power-bi-visualization-q-and-a.md).
 
@@ -151,7 +165,7 @@ To get started with Power BI Desktop, follow these steps.
    > [!div class="nextstepaction"]
    > [Get Power BI Desktop](https://aka.ms/pbidesktopstore)
 
-1. Create a report in Power BI Desktop.</br>In the following tutorial sample, you prepare and model your data. Then create a report based on the model you've created. You can't do both tasks in a report in the Power BI service.
+1. Create a report in Power BI Desktop.</br> In the following tutorial sample, you prepare and model your data. Then create a report based on the model you've created. You can't do both tasks in a report in the Power BI service.
 
     [Tutorial: From dimensional model to stunning report in Power BI Desktop](../create-reports/desktop-dimensional-model-report.md)
 
