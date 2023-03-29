@@ -63,7 +63,7 @@ If you can view a report, then you can also add personal bookmarks. The maximum 
 - Sort order
 - Drill location
 
-If you have edit permissions to a report, you can set and save additional elements that will be saved with a bookmark. For example, you can decide which visuals on the page are visible when the bookmark is selected. To learn more about the *report* bookmarks and the Selection pane, see [Using the Selection pane](../create-reports/desktop-bookmarks?tabs=powerbi-service#visibility-using-the-selection-pane)
+If you have edit permissions to a report, you can set and save additional elements that will be saved with a bookmark. For example, you can decide which visuals on the page are visible when the bookmark is selected. To learn more about the *report* bookmarks and the Selection pane, see [Using the Selection pane](../create-reports/desktop-bookmarks.md)
 
 ### Create two different personal bookmarks
 
