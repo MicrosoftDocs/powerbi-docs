@@ -117,7 +117,6 @@ In Power BI Desktop, the Selection pane is on the **View** tab.
 
 ![Screenshot showing enabling the Selection pane.](media/desktop-bookmarks/bookmarks_08.png)
 
----
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -155,7 +154,6 @@ To assign a bookmark to a button in Power BI Desktop:
 
    ![Screenshot showing adding a bookmark link to an object.](media/desktop-bookmarks/bookmarks-button.png)
 
----
 
 # [Power BI service](#tab/powerbi-service)
 
