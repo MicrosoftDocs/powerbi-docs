@@ -25,7 +25,7 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
   
 1. Right-click the y-axis of your chart, and click **VerticalAxis Properties**. The **VerticalAxis Properties** dialog box appears.  
   
-1. In **Axis Options**, select **Uselogarithmic scale**.  
+1. In **Axis Options**, select **Use logarithmic scale**.  
   
 1. In the **Logbase** text box, type a positive value for the logarithmic base. If no value is specified, the logarithmic base defaults to 10.  
   
