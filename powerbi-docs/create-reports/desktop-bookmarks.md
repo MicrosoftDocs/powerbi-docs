@@ -1,7 +1,7 @@
 ---
 title: Create report bookmarks in Power BI to share insights and build stories
 description: Bookmarks in Power BI let you save views and settings in your reports, and build story-like presentations
-author: maggiesMSFT
+author: mihart
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
@@ -117,6 +117,8 @@ In Power BI Desktop, the Selection pane is on the **View** tab.
 
 ![Screenshot showing enabling the Selection pane.](media/desktop-bookmarks/bookmarks_08.png)
 
+---
+
 # [Power BI service](#tab/powerbi-service)
 
 When you're editing a report in the Power BI service, the **Selection pane** is on the **View** menu. You don't see it if you can't edit the report.
@@ -140,10 +142,7 @@ It's important to note that slicers continue to filter a report page, regardless
 
 You can link bookmarks to shapes and images. With this feature, when you select an object, it shows the bookmark associated with that object. This feature can be especially useful when you work with buttons. Read more about [using buttons in Power BI](desktop-buttons.md). Consider also creating a [bookmark navigator](button-navigators.md#bookmark-navigator), which creates a set of buttons all linked automatically to a group of bookmarks.
 
----
-
 # [Power BI Desktop](#tab/powerbi-desktop)
-
 
 To assign a bookmark to a button in Power BI Desktop: 
 
