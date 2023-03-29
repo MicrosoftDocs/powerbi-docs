@@ -16,7 +16,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 
 ## General limitations
 
-* Dataflows are not available for U.S. Government DoD customers. Feature parity across government environments can be found in the [Power BI feature availability for government](../../enterprise/service-govus-overview.md#power-bi-feature-availability) article.
+* Dataflows may not be available for all U.S. Government DoD customers. Feature parity across government environments can be found in the [Power BI feature availability for government](../../enterprise/service-govus-overview.md#power-bi-feature-availability) article.
 * Deleted datasources aren't removed from the dataflow datasource page. This is a benign behavior and doesn't impact the refresh or editing of dataflows. In **[Lineage View](../../collaborate-share/service-data-lineage.md)**, deleted data sources appear as lineage for a dataflow.
 * Deleted datasources  will still appear in the Setting page in the gateway drop-down.
 * *Depth* equates to dataflows linked to other dataflows. The current maximum depth is 32.
