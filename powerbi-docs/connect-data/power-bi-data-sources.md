@@ -12,11 +12,9 @@ ms.date: 03/29/2023
 
 # Power BI data sources
 
-Power BI uses Power Query to connect to data sources. The data sources available in Power BI are documented in Power Query documentation, including information about DirectQuery and the on-premises data gateway. 
+Power BI uses Power Query to connect to data sources. Power Query data sources, which also apply to Power BI, are documented in the following article: [Connectors in Power Query](/power-query/connectors/).
 
-Information about Power Query data sources, which also apply to Power BI, are available in the [connectors in Power Query](/power-query/connectors/) article.
-
-For information about dataflows in Power BI, see [Connect to data sources for Power BI dataflows](../transform-model/dataflows/dataflows-configure-consume.md).
+For information about dataflows in Power BI, see [connect to data sources for Power BI dataflows](../transform-model/dataflows/dataflows-configure-consume.md).
 
 
 ## Considerations and limitations
@@ -46,6 +44,7 @@ The SSO option takes effect across all datasets that use this data source. It do
 ## Next steps
 
 [Connectors in Power Query](/power-query/connectors/)
+
 [Connect to data in Power BI Desktop](desktop-quickstart-connect-to-data.md)  
 [Using DirectQuery in Power BI](desktop-directquery-about.md)  
 [What is an on-premises data gateway?](service-gateway-onprem.md)  
