@@ -24,13 +24,13 @@ For related "What's New" information, see:
 
 ## April 2023
 
-### Hierarchies are now supported on the Power BI Mobile app (iOS and Android)
+### Hierarchies are now supported! (iOS and Android)
+
+Hierarchies for your metrics and scorecards make it easier to drill in and check status at different levels of your data. Hierarchies are now available in the mobile apps, where you can drill into the hierarchy to check progress and statuses, as well as do check-ins, at different levels. To view the available hierarchies and change the selection, use the new **Hierarchies** button in the scorecard footer.
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-hierarchies.png" alt-text="Screenshot showing Power BI metrics hierarchies in the Power BI mobile app.":::
 
 [Learn more about viewing hierarchies in the Power BI service](../../create-reports/service-metrics-view-hierarchies)
-
-Tooltips on visuals have a new look a
 
 ## March 2023
 
