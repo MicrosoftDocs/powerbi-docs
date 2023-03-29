@@ -48,7 +48,7 @@ or views from the datamart they want included in the model for more flexibility.
 will be created as a layout in the model view.
 
 The background sync that includes objects (tables and views) will wait for the downstream dataset to not be in use to 
-update the dataset, honoring bounded staleness. Users can always go and manually pick tables they want or no want in 
+update the dataset, honoring bounded staleness. Users can always go and manually pick tables they want or not want in 
 the dataset. 
 
 ## Understand incremental refresh and datamarts
