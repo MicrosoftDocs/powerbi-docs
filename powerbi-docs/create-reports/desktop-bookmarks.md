@@ -19,7 +19,7 @@ When you edit a report in Power BI Desktop and the Power BI service, you can add
 
 ![Screenshot showing Bookmarks in Power BI.](media/desktop-bookmarks/bookmarks-pane.png)
 
-There are many uses for bookmarking. For example, you can create a collection of bookmarks, arrange them in the order you want, and later step through each bookmark in a presentation to highlight a series of insights, or the story you want to tell with your visuals and reports. You can also use bookmarks to keep track of your own progress in creating reports (bookmarks are easy to add, delete, and rename).
+There are many uses for bookmarking. For example, you can create a collection of bookmarks and arrange them in the order you want. Later,  step through each bookmark in a presentation to highlight a series of insights, or the story you want to tell with your visuals and reports. You can also use bookmarks to keep track of your own progress in creating reports (bookmarks are easy to add, delete, and rename).
 
 ## Other articles about bookmarks
 
@@ -30,7 +30,7 @@ There are many uses for bookmarking. For example, you can create a collection of
 
 ## Create report bookmarks
 
-To create report booksmarks, you must have edit permissions for the report.  
+To create report bookmarks, you must have edit permissions for the report.  
 
 # [Power BI Desktop](#tab/powerbi-desktop)
  
@@ -73,7 +73,7 @@ After you've created a bookmark, display it by selecting it in the **Bookmarks**
 
 :::image type="content" source="media/desktop-bookmarks/power-bi-select-bookmark.png" alt-text="Screenshot of Bookmarks pane with one report bookmark outlined in red.":::
 
-You can also select whether each bookmark will apply other properties in the report. To make these changes, select **More options (...)** next to the bookmark name, then select or clear the check marks next to **Data**, **Display**, and other controls. The options are:
+You can also select whether each bookmark applies other properties in the report. To make these changes, select **More options (...)** next to the bookmark name, then select or clear the check marks next to **Data**, **Display**, and other controls. The options are:
 
 - **Data** properties, such as filters and slicers.
 - **Display** properties, such as spotlight and its visibility.
@@ -82,7 +82,7 @@ You can also select whether each bookmark will apply other properties in the rep
 
 :::image type="content" source="media/desktop-bookmarks/power-bi-bookmark-display.png" alt-text="Screenshot of a bookmark selected and the More options menu displayed.":::
 
-These capabilities are useful when you use bookmarks to switch between report views or selections of visuals, in which case you'd likely want to turn off data properties, so that filters aren't reset when users switch views by selecting a bookmark.
+These capabilities are useful when you use bookmarks to switch between report views or selections of visuals. Because of this, you likely want to turn off data properties, so that filters aren't reset when users switch views by selecting a bookmark.
 
 ## Arranging bookmarks
 
