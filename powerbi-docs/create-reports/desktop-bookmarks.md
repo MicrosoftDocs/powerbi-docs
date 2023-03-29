@@ -42,7 +42,7 @@ On the **View** tab, select **Bookmarks**.
 
 Open a report in Editing view.
 
-:::image type="content" source="media/power-bi-edit.png" alt-text="Screenshot showing a red box around the menu item for Edit.":::
+:::image type="content" source="media/desktop-bookmarks/power-bi-edit.png" alt-text="Screenshot showing a red box around the menu item for Edit.":::
 
 Select **View** and turn on **Bookmarks pane**. 
 
@@ -139,6 +139,8 @@ It's important to note that slicers continue to filter a report page, regardless
 ## Assign bookmarks to buttons
 
 You can link bookmarks to shapes and images. With this feature, when you select an object, it shows the bookmark associated with that object. This feature can be especially useful when you work with buttons. Read more about [using buttons in Power BI](desktop-buttons.md). Consider also creating a [bookmark navigator](button-navigators.md#bookmark-navigator), which creates a set of buttons all linked automatically to a group of bookmarks.
+
+---
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
