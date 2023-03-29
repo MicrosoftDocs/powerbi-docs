@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/28/2023
+ms.date: 03/29/2023
 LocalizationGroup: Samples
 ---
 
@@ -24,21 +24,17 @@ This sample has two main objectives:
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com) created this sample using real, anonymized data. The data is available in several formats: built-in sample in the Power BI service, *.pbix* Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
 
-This tutorial explores the Supplier Quality Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop. 
-
-## Prerequisites
-
-You don't need a Power BI license to explore the sample in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
-
-## Get the sample
-
-Before you can use the sample, get the sample in one of the following ways:
+This tutorial explores the Supplier Quality Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop. Get the sample in one of the following ways:
 
 - Get the [built-in sample in the Power BI service](#get-the-built-in-sample).
 - Download the [.pbix file](#get-the-pbix-file-for-this-sample).
 - Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
-### Get the built-in sample
+## Prerequisites
+
+You don't need a Power BI license to explore the sample in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+
+## Get the built-in sample
 
 1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
@@ -52,7 +48,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
     Select the dashboard to view the sample dashboard.
 
-### Get the .pbix file for this sample
+## Get the .pbix file for this sample
 
 Alternatively, you can download the Supplier Quality Analysis sample as a [.pbix file](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), which is designed for use with Power BI Desktop.
 
@@ -66,7 +62,7 @@ Alternatively, you can download the Supplier Quality Analysis sample as a [.pbix
 
 The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still use Q&A and make changes to your dashboard.
 
-### Get the Excel workbook for this sample
+## Get the Excel workbook for this sample
 
 If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. 
 
@@ -90,7 +86,7 @@ The dashboard that you create this way isn't the same as the sample dashboard cr
 
 ## Downtime caused by defective materials
 
-Let's analyze the downtime caused by defective materials and see which vendors are responsible.  
+With the [built-in sample in the Power BI service](#get-the-built-in-sample), you have a report and a dashboard. Let's start the tour at the dashboard to analyze the downtime caused by defective materials and see which vendors are responsible.  
 
 1. On the dashboard, select the **Total Defect Quantity** or the **Total Downtime Minutes** tile.
 
