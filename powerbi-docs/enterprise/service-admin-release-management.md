@@ -1,13 +1,13 @@
 ---
 title: Release management and deployment process
-description: Learn how Power BI approaches its site reliability model.
+description: Learn about Power BI's release management and deployment process.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 03/14/2023
+ms.date: 03/30/2023
 ---
 
 # Release management and deployment process
