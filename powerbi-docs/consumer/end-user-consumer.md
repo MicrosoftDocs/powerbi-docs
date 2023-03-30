@@ -42,7 +42,7 @@ How you interact with Power BI depends on your job role. As a consumer or busine
 As a business user, you don't have access to all the capabilities of Power BI. That's ok, because your job isn't building dashboards and reports. You use the Power BI service for analysis, monitoring, exploration, and decision making.
 
 You might hear the term "Power BI Desktop" or just "Desktop." Designers use this stand-alone tool to build and share dashboards and reports. It's important to know that there are other Power BI tools out there, but if you're a business user, you typically work only with the Power BI service.
-Working with content shared with youWhen designers share content with you, you work with shared content, you meet one of the following requirements:
+Because you are working with content that is shared with you, at least one of the following is true: 
 - You have a Power BI Pro or Premium Per User (PPU) license.
 - Your organization has a Power BI Premium subscription, and the content that's shared with you comes from Premium capacity.
 
