@@ -42,7 +42,7 @@ ms.reviewer: monaraya
  Explains how to add a border frame to a chart.  
   
 ## Next steps 
- [Charts &#40;Power BI Report Builder&#41;](/charts-report-builder.md)   
+ [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
  [Add a Border Frame to a Chart &#40;Report Builder&#41;](add-border-frame-to-chart-report-builder.md)   
  [Define Colors on a Chart Using a Palette &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/define-colors-on-a-chart-using-a-palette-report-builder-and-ssrs)   
  [Add Bevel, Emboss, and Texture Styles to a Chart &#40;Power BI Report Builder&#41;](chart-effects-add-bevel-emboss-or-texture-report-builder.md)  

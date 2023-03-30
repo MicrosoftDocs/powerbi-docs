@@ -51,11 +51,11 @@ ms.reviewer: monaraya
 ## Next steps  
  [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
  [Chart Types &#40;Power BI Report Builder&#41;](chart-types-report-builder.md)   
- [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](empty-and-null-data-points-in-charts-report-builder.md)   
+ [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](empty-null-data-points-in-charts-report-builder.md)   
  [Column Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/column-charts-report-builder-and-ssrs)   
  [Range Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/range-charts-report-builder-and-ssrs)   
  [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](formatting-series-colors-on-chart-report-builder.md)   
- [Formatting Axis Labels on a Chart &#40;Power BI Report Builder&#41;](formatting-axis-labels-on-chart-report-builder.md)   
+ [Formatting Axis Labels on a Chart &#40;Power BI Report Builder&#41;](formatting-axis-labels-chart-report-builder.md)   
  [Formatting the Legend on a Chart &#40;Power BI Report Builder&#41;](chart-legend-formatting-report-builder.md)   
  [Add Bevel, Emboss, and Texture Styles to a Chart &#40;Power BI Report Builder&#41;](chart-effects-add-bevel-emboss-or-texture-report-builder.md)   
  [Tutorial: Adding a Bar Chart to a Report (Power BI Report Builder)](/sql/reporting-services/tutorial-add-a-bar-chart-to-your-report-report-builder)   
