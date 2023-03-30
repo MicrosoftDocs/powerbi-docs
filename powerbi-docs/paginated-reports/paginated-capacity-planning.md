@@ -12,7 +12,7 @@ LocalizationGroup: Premium
 ---
 # Paginated reports capacity planning
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
 Learn how to plan your [Premium capacity](./../enterprise/service-premium-what-is.md) to get the best performance out of your [paginated reports](paginated-reports-report-builder-power-bi.md), at a minimum cost. If you're migrating to Power BI from a different business intelligence tool, consider reading the articles listed below before you decide which capacity to use.
 
@@ -33,6 +33,8 @@ When you plan your capacity, consider the following:
 * The amount of data retrieved by the report. The more data the report needs, the more resources it requires from your capacity.
 
 * The number of report parameters and parameter values used by your reports. More values and parameters, require more resources from your capacity.
+
+* The time it takes to retrieve data from different types of data sources including on-prem data sources. Retrieving data from several data sources might require different connectors, drivers or gateways.
 
 * Exporting large reports into formats such as Excel and PDF, requires more resources than reading every page, using toggles and searching within the reports.
 
