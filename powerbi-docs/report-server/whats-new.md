@@ -222,7 +222,7 @@ Here are highlights of the new features in Power BI Desktop for Power BI Report 
 - [Invert axis and continuous axis sorting](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#invert-the-y-axis).
 - [CALCULATE filters](/dax/calculate-function-dax) are easier to use.
 - Performance improvements to [IF](/dax/if-function-dax) and [SWITCH](/dax/switch-function-dax) functions.
-- [Text/CSV by example](../connect-data/desktop-connect-csv.md).
+- [Text/CSV by example](/power-query/connectors/text-csv).
 
 **Other new and updated features**
 
@@ -596,7 +596,7 @@ Find details and examples in the [Using .pbids files to get data](../connect-dat
 
 We have made a performance improvement in the Analysis Services engine to speed up modeling operations such as adding measures or calculated columns and creating relationships. The amount of improvement you see depends on the model, but we have seen 20x performance improvement for some customers for actions like opening a file and adding a measure.
 
-That's all for the January 2020 release of Power BI Report Server. Continue sending feedback, and don't forget to [vote for features that you'd like to see in the Power BI](https://ideas.powerbi.com/forums/265200-power-bi).
+That's all for the January 2020 release of Power BI Report Server. Continue sending feedback, and don't forget to [vote for features that you'd like to see in the Power BI](https://ideas.powerbi.com/ideas/).
 
 ### Power BI Report Server
 

@@ -29,7 +29,7 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 How would we go about creating this line chart using Q&A?
 
-1. Get the [Retail Analysis Sample](sample-retail-analysis.md#get-the-built-in-sample) in the Power BI service.
+1. Get the [Retail Analysis Sample](sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service) in the Power BI service.
 
 1. Open the Retail Analysis Sample dashboard and place your cursor in the Q&A box, **Ask a question about your data**.
 

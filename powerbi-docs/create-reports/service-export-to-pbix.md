@@ -7,7 +7,7 @@ ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/31/2023
+ms.date: 03/27/2023
 LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
@@ -127,7 +127,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * Reports created in the Power BI service that are based on a single dataset that's configured for [large models](../enterprise/service-premium-large-models.md) or [incremental refresh](../connect-data/incremental-refresh-configure.md), or that has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) can only be downloaded in [live connected report mode](#download-modes).
 * If you create a Power BI report based on a dataset in one workspace and publish the report to a different workspace, you can download the report in [live connected report mode](#download-modes) only, if the dataset is configured for [large models](../enterprise/service-premium-large-models.md) or [incremental refresh](../connect-data/incremental-refresh-configure.md), or it has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 * Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](deployment-pipelines-process.md#considerations-and-limitations).
-* You can only download .pbix files that are larger than 1 GB in [live connected report mode](#download-modes).
+* Downloading a .pbix file that's larger than 1 GB is only supported when the .pbix is in [live connected report mode](#download-modes). 
 * You can't download reports that are created in the Power BI service and based on a dataset in **My Workspace** in [live connected report mode](#download-modes).
 
 
