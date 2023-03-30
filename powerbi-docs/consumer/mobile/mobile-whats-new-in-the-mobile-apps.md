@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/29/2023
+ms.date: 03/30/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -34,7 +34,7 @@ Hierarchies for your metrics and scorecards make it easier to drill in and check
 
 ### Export to Excel from the Power BI mobile app for Windows
 
-asdf
+Now, with just a tap, you can export data from a Power BI report to Excel. The data will automatically load into a pivot table, make it easy to explore and work with.
 
 ## March 2023
 
