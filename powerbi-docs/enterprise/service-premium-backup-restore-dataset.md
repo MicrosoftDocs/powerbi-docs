@@ -38,7 +38,7 @@ Backup and Restore relies on the Azure connections infrastructure in Power BI to
 
 With an ADLS Gen2 storage account associated with a workspace, workspace admins who have write or admin permissions can conduct *backups*. Users with these permissions might be an admin, a member, or a contributor, or might not be part of the workspace level roles, but have direct write permission to the dataset.  
 
-To *restore* an existing dataset, users who have write or admin permission to the dataset can conduct a *restore* operation. To *restore* a new dataset, the user must be an admin, member, or contributor of the workspace.
+To *restore* an existing dataset, users who have write or admin permission to the dataset can conduct a *restore* operation. To *restore* a new dataset, the user must be an admin of the workspace.
 
 To *browse the backup/restore filesystem* using Azure Storage Explorer (the *Browse...* button in SSMS), a user must be an admin, or a member or contributor of the workspace.
 
