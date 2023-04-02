@@ -1,13 +1,14 @@
 ---
 title: Assign a workspace to a Power BI Application lifecycle management (ALM) deployment pipeline 
 description: Learn how to assign and unassign a workspace to a deployment pipeline, the Power BI Application lifecycle management (ALM) tool.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 01/05/2023
+ms.date: 04/02/2023
+ms.search.form: Assign a workspace to a vacant stage
 ---
 
 # Assigning a workspace to a Power BI Application lifecycle management (ALM) deployment pipeline
