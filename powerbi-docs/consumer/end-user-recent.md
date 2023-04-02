@@ -6,6 +6,7 @@ ms.reviewer: mihart
 ms.custom: video-G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: View recent content
 ms.topic: how-to
 ms.date: 01/17/2023
 ms.author: mihart

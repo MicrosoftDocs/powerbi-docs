@@ -7,10 +7,12 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
+ms.search.form: Get started with hierarchies in scorecards
 ms.topic: how-to
-ms.date: 11/29/2022
+ms.date: 03/22/2023
 ms.custom: intro-get-started
 ---
+
 # Get started with hierarchies in Power BI scorecards
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
@@ -37,13 +39,13 @@ Here are the requirements for setting up a hierarchical scorecard:
 
 ## Set up your hierarchy
 
-In scorecard edit mode, select **Manage hierarchies** from the **All** slicer
+In scorecard edit mode, select **Set up a hierarchy** from the **New** menu.
+
+:::image type="content" source="media/service-metrics-get-started-hierarchies/new-set-up-hierarchy.png" alt-text="Screenshot of New hierarchy on the New menu.":::
+
+You can also select **Manage hierarchies** from the **All** slicer.
 
 :::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-entry-point-1.png" alt-text="Screenshot of First entry point in hierarchy slicer.":::
-
-You can also select **Set up a hierarchy** from the **New** menu.
-
-:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-entry-point-2.png" alt-text="Screenshot of Other entry point in +New menu.":::
 
 ### Map hierarchy levels to data
 
@@ -105,3 +107,4 @@ Metric data that can be edited on child scorecards:
 
 - [Scenarios: When to use hierarchies in Power BI scorecards](service-metrics-hierarchies-scenarios.md)
 - [View hierarchies in Power BI metrics](service-metrics-view-hierarchies.md)
+
