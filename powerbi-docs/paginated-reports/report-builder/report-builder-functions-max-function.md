@@ -1,6 +1,6 @@
 ---
-title: "Max function in a paginated report"
-description: Learn about the Max function in a paginated report, which returns the maximum value of all non-null numeric values specified by the expression in Report Builder.
+title: "Max function in a Power BI paginated report"
+description: Learn about the Max function in a Power BI paginated report, which returns the maximum value of all non-null numeric values specified by the expression in Report Builder.
 author: maggiesMSFT
 ms.author: maggies
 ms.date: 03/31/2023
@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.custom: updatefrequency5
 ms.reviewer: spendrick
 ---
-# Report Builder functions - Max function in a paginated report (Report Builder)
+# Report Builder functions - Max function in a Power BI paginated report
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
-  Returns the maximum value of all non-null numeric values specified by the expression, in the context of the given scope in a paginated report.  
+  Returns the maximum value of all non-null numeric values specified by the expression, in the context of the given scope in a Power BI paginated report.  
   
 ## Syntax  
   

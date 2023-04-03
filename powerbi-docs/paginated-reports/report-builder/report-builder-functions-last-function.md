@@ -1,6 +1,6 @@
 ---
-title: "Last function in a paginated report"
-description: The Last function returns the final value in a set of data in a paginated report after all sorting and filtering have been applied at the specified scope in Report Builder.
+title: "Last function in a Power BI paginated report"
+description: The Last function returns the final value in a set of data in a Power BI paginated report after all sorting and filtering have been applied at the specified scope in Report Builder.
 author: maggiesMSFT
 ms.author: maggies
 ms.date: 03/31/2023
@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.custom: updatefrequency5
 ms.reviewer: spendrick
 ---
-# Report Builder functions - Last function in a paginated report (Report Builder)
+# Report Builder functions - Last function in a Power BI paginated report
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
-  Returns the last value in the given scope of the specified expression in a paginated report.  
+  Returns the last value in the given scope of the specified expression in a Power BI paginated report.  
   
 ## Syntax  
   

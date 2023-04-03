@@ -1,6 +1,6 @@
 ---
-title: "Previous function in a paginated report"
-description: The Previous Function in Report Builder returns the value or the specified aggregate value for the previous instance of an item in a paginated report.
+title: "Previous function in a Power BI paginated report"
+description: The Previous Function in Report Builder returns the value or the specified aggregate value for the previous instance of an item in a Power BI paginated report.
 author: maggiesMSFT
 ms.author: maggies
 ms.date: 03/31/2023
@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.custom: updatefrequency5
 ms.reviewer: spendrick
 ---
-# Report Builder functions - Previous function in a paginated report (Report Builder)
+# Report Builder functions - Previous function in a Power BI paginated report
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
-  Returns the value or the specified aggregate value for the previous instance of an item within the specified scope in a paginated report.  
+  Returns the value or the specified aggregate value for the previous instance of an item within the specified scope in a Power BI paginated report.  
   
 ## Syntax  
   

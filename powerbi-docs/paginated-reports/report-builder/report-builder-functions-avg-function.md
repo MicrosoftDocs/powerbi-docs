@@ -1,6 +1,6 @@
 ---
-title: "Avg function in a paginated report"
-description: Learn about the Avg Function in paginated reports, which returns the average of all non-null numeric values specified by the expression in Report Builder.
+title: "Avg function in a Power BI paginated report"
+description: Learn about the Avg Function in Power BI paginated reports, which returns the average of all non-null numeric values specified by the expression in Report Builder.
 author: maggiesMSFT
 ms.author: maggies
 ms.date: 03/31/2023
@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.custom: updatefrequency5
 ms.reviewer: spendrick
 ---
-# Report Builder functions - Avg function in a paginated report (Report Builder)
+# Report Builder functions - Avg function in a Power BI paginated report
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
-In paginated reports, returns the average of all non-null numeric values specified by the expression, evaluated in the given scope.  
+In Power BI paginated reports, returns the average of all non-null numeric values specified by the expression, evaluated in the given scope.  
   
 ## Syntax  
   

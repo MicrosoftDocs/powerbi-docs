@@ -1,6 +1,6 @@
 ---
-title: "Multilookup function in a paginated report"
-description: The Multilookup Function returns the set of first-match values for the specified set of names from a dataset that contains name/value pairs in a paginated report in Report Builder.
+title: "Multilookup function in a Power BI paginated report"
+description: The Multilookup Function returns the set of first-match values for the specified set of names from a dataset that contains name/value pairs in a Power BI paginated report in Report Builder.
 author: maggiesMSFT
 ms.author: maggies
 ms.date: 03/31/2023
@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.custom: updatefrequency5
 ms.reviewer: spendrick
 ---
-# Report Builder functions - Multilookup function in a paginated report (Report Builder)
+# Report Builder functions - Multilookup function in a Power BI paginated report
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
-  Returns the set of first-match values for the specified set of names from a dataset that contains name/value pairs in a paginated report.  
+  Returns the set of first-match values for the specified set of names from a dataset that contains name/value pairs in a Power BI paginated report.  
   
 ## Syntax  
   
