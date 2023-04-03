@@ -20,7 +20,7 @@ ms.reviewer: jonhp
   
  Page breaks can be added to report items such as a table, matrix, list, chart, gauge, or image. You can also add page breaks to groups in a table, matrix, or list. Page breaks can be added before, after, and between groups. Page breaks between groups are not added to the report by default.  
   
- For more information, see [Display Row and Column Headers on Multiple Pages &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/display-row-and-column-headers-on-multiple-pages-report-builder-and-ssrs) and [Keep Headers Visible When Scrolling Through a Report &#40;Report Builder&#41;](/keep-headers-visible-when-scrolling-through-report-report-builder-service.md).  
+ For more information, see [Display Row and Column Headers on Multiple Pages &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/display-row-and-column-headers-on-multiple-pages-report-builder-and-ssrs) and [Keep Headers Visible When Scrolling Through a Report &#40;Report Builder&#41;](keep-headers-visible-when-scrolling-through-report-report-builder-service.md).  
   
 ## Next steps
  [Tables, Matrices, and Lists &#40;Report Builder&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)   
