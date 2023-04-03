@@ -20,6 +20,9 @@ When private link connections are used, those connections go through the Microso
 
 To learn more about Azure Private Link, see [What is Azure Private Link](/azure/private-link/private-link-overview).
 
+>[!IMPORTANT]
+>Private endpoints aren't supported on Microsoft Fabric. Fore more information, see [Compliance settings](/fabric/admin/admin-compliance).
+
 ## Understand private endpoints
 
 Private endpoints guarantee that traffic going *into* your organization’s Power BI items, such as reports or workspaces, always follow your organization's configured private link network path. User traffic to your Power BI items must come from the established private link. You can configure Power BI to deny all requests that don’t come from the configured network path.
