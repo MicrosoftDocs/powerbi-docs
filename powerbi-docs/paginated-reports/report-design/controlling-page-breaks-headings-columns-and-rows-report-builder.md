@@ -5,14 +5,14 @@ author: maggiesMSFT
 ms.author: maggies
 ms.date: 03/31/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.custom: updatefrequency5
 ms.reviewer: jonhp
 ---
 # Controlling page breaks, headings, columns, and rows in paginated reports (Report Builder)
 
-[!INCLUDE [ssrs-appliesto-pbi-rb](../includes/ssrs-appliesto-pbi-rb.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](https://github.com/MicrosoftDocs/powerbi-docs-pr/includes/applies-yes-report-builder-no-desktop.md)]
 
  A page break divides a paginated report into separate pages for viewing and printing purposes. Page breaks determine how the content fits within a page, specific to the export format chosen. Hard paged foramts such as PDF or Image will strictly fit or push content to pages. Logical paged formats such as Excel, will detetmine a best fit between content size and the page. 
   
@@ -20,7 +20,7 @@ ms.reviewer: jonhp
   
  Page breaks can be added to report items such as a table, matrix, list, chart, gauge, or image. You can also add page breaks to groups in a table, matrix, or list. Page breaks can be added before, after, and between groups. Page breaks between groups are not added to the report by default.  
   
- For more information, see [Display Row and Column Headers on Multiple Pages &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/display-row-and-column-headers-on-multiple-pages-report-builder-and-ssrs) and [Keep Headers Visible When Scrolling Through a Report &#40;Report Builder and SSRS&#41;](keep-headers-visible-when-scrolling-through-a-report-report-builder-and-ssrs.md).  
+ For more information, see [Display Row and Column Headers on Multiple Pages &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/display-row-and-column-headers-on-multiple-pages-report-builder-and-ssrs) and [Keep Headers Visible When Scrolling Through a Report &#40;Report Builder and SSRS&#41;](keep-headers-visible-when-scrolling-through-a-report-report-builder.md).  
   
 ## See Also  
  [Tables, Matrices, and Lists &#40;Report Builder&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)   
