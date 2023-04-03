@@ -36,7 +36,7 @@ Previous(expression, scope)
 ## Remarks  
  The **Previous** function returns the previous value for the expression evaluated in the specified scope after all sorting and filtering have been applied.  
   
- If *expression* does not contain an aggregate, the **Previous** function defaults to the current scope for the report item.  
+ If *expression* doesn't contain an aggregate, the **Previous** function defaults to the current scope for the report item.  
   
  In a details group, use **Previous** to specify the value of a field reference in the previous instance of the detail row.  
   
@@ -47,7 +47,7 @@ Previous(expression, scope)
   
  If *expression* contains an aggregate function that specifies a scope other than the default, the *scope* parameter for the **Previous** function must be a containing scope for the scope specified in the aggregate function call.  
   
- The functions **Level**, **InScope**, **Aggregate** and **Previous** cannot be used in the *expression* parameter. Specifying the *recursive* parameter for any aggregate function is not supported.  
+ The functions **Level**, **InScope**, **Aggregate** and **Previous** can't be used in the *expression* parameter. Specifying the *recursive* parameter for any aggregate function isn't supported.  
   
  For more information, see [Aggregate Functions Reference &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference) and [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections).  
   

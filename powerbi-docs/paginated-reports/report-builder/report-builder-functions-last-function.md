@@ -28,7 +28,7 @@ Last(expression, scope)
  (**Variant** or **Binary**) The expression on which to perform the aggregation, for example, `=Fields!Fieldname.Value`.  
   
  *scope*  
- (**String**) (Optional) The name of a dataset, data region, or group that contains the report items to which to apply the function. If *scope* is not specified, the current scope is used.  
+ (**String**) (Optional) The name of a dataset, data region, or group that contains the report items to which to apply the function. If *scope* isn't specified, the current scope is used.  
   
 ## Return Type  
  Determined by the type of expression.  
@@ -36,17 +36,17 @@ Last(expression, scope)
 ## Remarks  
  The **Last** function returns the final value in a set of data after all sorting and filtering have been applied at the specified scope.  
   
- The **Last** function cannot be used in group filter expressions with anything except the current (default) scope.  
+ The **Last** function can't be used in group filter expressions with anything except the current (default) scope.  
   
  You can also use **Last** in a page header to return the last value from the **ReportItems** collection for a page in order to produce dictionary-style headings that display the first and last entries on a page.  
   
- The value of *scope* must be a string constant and cannot be an expression. For outer aggregates or aggregates that do not specify other aggregates, *scope* must refer to the current scope or a containing scope. For aggregates of aggregates, nested aggregates can specify a child scope.  
+ The value of *scope* must be a string constant and can't be an expression. For outer aggregates or aggregates that don't specify other aggregates, *scope* must refer to the current scope or a containing scope. For aggregates of aggregates, nested aggregates can specify a child scope.  
   
  *Expression* can contain calls to nested aggregate functions with the following exceptions and conditions:  
   
 -   *Scope* for nested aggregates must be the same as, or contained by, the scope of the outer aggregate. For all distinct scopes in the expression, one scope must be in a child relationship to all other scopes.  
   
--   *Scope* for nested aggregates cannot be the name of a dataset.  
+-   *Scope* for nested aggregates can't be the name of a dataset.  
   
 -   *Expression* must not contain **First**, **Last**, **Previous**, or **RunningValue** functions.  
   

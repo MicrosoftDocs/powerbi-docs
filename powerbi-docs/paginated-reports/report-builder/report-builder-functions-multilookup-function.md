@@ -40,7 +40,7 @@ Multilookup(source_expression, destination_expression, result_expression, datase
  Returns a **VariantArray**, or **Nothing** if there is no match.  
   
 ## Remarks  
- Use **Multilookup** to retrieve a set of values from a dataset for name-value pairs where each pair has a 1-to-1 relationship. **MultiLookup** is the equivalent of calling **Lookup** for a set of names or keys. For example, for a multivalue parameter that is based on primary key identifiers, you can use **Multilookup** in an expression in a text box in a table to retrieve associated values from a dataset that is not bound to the parameter or to the table.  
+ Use **Multilookup** to retrieve a set of values from a dataset for name-value pairs where each pair has a 1-to-1 relationship. **MultiLookup** is the equivalent of calling **Lookup** for a set of names or keys. For example, for a multivalue parameter that is based on primary key identifiers, you can use **Multilookup** in an expression in a text box in a table to retrieve associated values from a dataset that isn't bound to the parameter or to the table.  
   
  **Multilookup** does the following:  
   
@@ -56,13 +56,13 @@ Multilookup(source_expression, destination_expression, result_expression, datase
   
 -   **Multilookup** is evaluated after all filter expressions are applied  
   
--   Only one level of look-up is supported. A source, destination, or result expression cannot include a reference to a lookup function.  
+-   Only one level of look-up is supported. A source, destination, or result expression can't include a reference to a lookup function.  
   
 -   Source and destination expressions must evaluate to the same data type.  
   
--   Source, destination, and result expressions cannot include references to report or group variables.  
+-   Source, destination, and result expressions can't include references to report or group variables.  
   
--   **Multilookup** cannot be used as an expression for the following report items:  
+-   **Multilookup** can't be used as an expression for the following report items:  
   
     -   Dynamic connection strings for a data source.  
   
@@ -111,7 +111,7 @@ Multilookup(source_expression, destination_expression, result_expression, datase
 |2|Blue|  
 |3|Green|  
   
- Assume the multivalue parameter *MyColors* is not bound to a dataset for its available values. The default values for the parameter are set to 2 and 3. The following expression, when placed in a text box in a table, concatenates the multiple selected values for the parameter into a comma-separated list and displays "Blue, Green".  
+ Assume the multivalue parameter *MyColors* isn't bound to a dataset for its available values. The default values for the parameter are set to 2 and 3. The following expression, when placed in a text box in a table, concatenates the multiple selected values for the parameter into a comma-separated list and displays "Blue, Green".  
   
 ```  
 =Join(MultiLookup(Parameters!MyColors.Value,Fields!ColorID.Value,Fields!Color.Value,"ProductColors"),", ")  

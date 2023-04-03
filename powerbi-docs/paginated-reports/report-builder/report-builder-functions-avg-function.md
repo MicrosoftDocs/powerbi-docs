@@ -1,6 +1,6 @@
 ---
 title: "Avg function in a Power BI paginated report"
-description: Learn about the Avg Function in Power BI paginated reports, which returns the average of all non-null numeric values specified by the expression in Report Builder.
+description: Learn about the Avg Function in Power BI paginated reports, which return the average of all non-null numeric values specified by the expression in Report Builder.
 author: maggiesMSFT
 ms.author: maggies
 ms.date: 03/31/2023
@@ -28,7 +28,7 @@ Avg(expression, scope, recursive)
  (**Float**) The expression on which to perform the aggregation.  
   
  *scope*  
- (**String**) Optional. The name of a dataset, group, or data region that contains the report items to which to apply the aggregate function. If *scope* is not specified, the current scope is used.  
+ (**String**) Optional. The name of a dataset, group, or data region that contains the report items to which to apply the aggregate function. If *scope* isn't specified, the current scope is used.  
   
  *recursive*  
  (**Enumerated Type**) Optional. **Simple** (default) or **RdlRecursive**. Specifies whether to perform the aggregation recursively.  
@@ -39,13 +39,13 @@ Avg(expression, scope, recursive)
 ## Remarks  
  The set of data specified in the expression must have the same data type. To convert data that has multiple numeric data types to the same data type, use conversion functions like **CInt**, **CDbl** or **CDec**. For more information, see [Type Conversion Functions](/dotnet/visual-basic/language-reference/functions/type-conversion-functions).  
   
- The value of *scope* must be a string constant and cannot be an expression. For outer aggregates or aggregates that do not specify other aggregates, *scope* must refer to the current scope or a containing scope. For aggregates of aggregates, nested aggregates can specify a child scope.  
+ The value of *scope* must be a string constant and can't be an expression. For outer aggregates or aggregates that don't specify other aggregates, *scope* must refer to the current scope or a containing scope. For aggregates of aggregates, nested aggregates can specify a child scope.  
   
  *Expression* can contain calls to nested aggregate functions with the following exceptions and conditions:  
   
 -   *Scope* for nested aggregates must be the same as, or contained by, the scope of the outer aggregate. For all distinct scopes in the expression, one scope must be in a child relationship to all other scopes.  
   
--   *Scope* for nested aggregates cannot be the name of a dataset.  
+-   *Scope* for nested aggregates can't be the name of a dataset.  
   
 -   *Expression* must not contain **First**, **Last**, **Previous**, or **RunningValue** functions.  
   
