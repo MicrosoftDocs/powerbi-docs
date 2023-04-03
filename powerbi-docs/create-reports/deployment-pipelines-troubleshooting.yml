@@ -2,12 +2,13 @@
 metadata:
   title: Troubleshoot deployment pipelines, the Power BI Application lifecycle management (ALM) tool
   description: Find answers to your deployment pipelines, the Power BI Application lifecycle management (ALM) tool, troubleshooting questions
-  author: KesemSharabi
-  ms.author: kesharab
+  author: mberdugo
+  ms.author: monaberdugo
   ms.topic: troubleshooting
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 01/18/2023
+  ms.date: 04/02/2023
+  ms.search.form: Deployment pipelines troubleshooting
   
 title: Deployment pipelines troubleshooting
 summary: |

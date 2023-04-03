@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
 ms.date: 12/31/2022
+ms.search.form: Deployment rules
 ---
 
 # Create deployment rules
