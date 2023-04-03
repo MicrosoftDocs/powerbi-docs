@@ -146,7 +146,7 @@ To auto-create a report:
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot showing the Retail Analysis Sample dataset entry in your workspace.":::
 
-1. Select **Create report**, then **Auto-create**.
+1. Select **Create a report**, then **Auto-create**.
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-auto-create-report.png" alt-text="Screenshot showing the Auto-create report menu item." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-auto-create-report.png":::
 
