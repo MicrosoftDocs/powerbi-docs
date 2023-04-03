@@ -752,15 +752,19 @@
     items:
     - name: "Introduction to deployment pipelines"
       href: deployment-pipelines-overview.md
-    - name: "Understand the deployment process"
+    - name: "The deployment pipelines process"
       href: deployment-pipelines-process.md
     - name: "Get started"
       href: deployment-pipelines-get-started.md   
     - name: "Assign a workspace"
-      href: deployment-pipelines-assign.md 
+      href: deployment-pipelines-assign.md
+    - name: "Compare content in different stages"
+      href: deployment-pipelines-compare.md
+    - name: "Deploy content to the next stage"
+      href: deployment-pipelines-deploy.md
     - name: "Deployment history"
       href: deployment-pipelines-history.md  
-    - name: "Create deployment pipeline rules"
+    - name: "Deployment rules"
       href: deployment-pipelines-create-rules.md                      
     - name: "Automate deployment pipelines"
       href: deployment-pipelines-automation.md         
