@@ -33,7 +33,7 @@ By default, any series added to a non-Shape chart in Power BI paginated report w
   
 ## Next steps  
  [Formatting the Legend on a Chart &#40;Power BI Report Builder&#41;](chart-legend-formatting-report-builder.md)   
- [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](formatting-data-points-on-chart-report-builder.md)   
+ [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)   
  [Change the Text of a Legend Item &#40;Power BI Report Builder&#41;](chart-legend-change-item-text-report-builder.md)   
  [Add a Moving Average to a Chart &#40;Power BI Report Builder&#41;](add-moving-average-to-chart-report-builder.md)   
  [Legend Properties Dialog Box, General &#40;Power BI Report Builder&#41;](chart-legend-formatting-report-builder.md)  

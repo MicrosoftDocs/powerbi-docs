@@ -15,7 +15,7 @@ ms.reviewer: saurkumar
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  In a Power BI paginated report, indicators are minimal gauges that convey the state of a single data value at a glance. For more information about them, see [Indicators &#40;Power BI Report Builder&#41;](indicators-report-builder.md).  
+  In a Power BI paginated report, indicators are minimal gauges that convey the state of a single data value at a glance. For more information about them, see [Indicators &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/indicators-report-builder-and-ssrs).  
   
  Indicators are commonly placed in cells in a table or matrix, but you can also use indicators by themselves, side-by-side with gauges, or embedded in gauges.  
   
@@ -25,22 +25,22 @@ ms.reviewer: saurkumar
   
 -   [Change Indicator Icons and Indicator Sets &#40;Power BI Report Builder&#41;](change-indicator-icons-and-indicator-sets-report-builder.md)  
   
--   [Set and Configure Measurement Units &#40;Power BI Report Builder&#41;](set-and-configure-measurement-units-report-builder.md)  
+-   [Set and Configure Measurement Units &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/set-and-configure-measurement-units-report-builder-and-ssrs)  
   
--   [Set Synchronization Scope &#40;Power BI Report Builder&#41;](set-synchronization-scope-report-builder.md)  
+-   [Set Synchronization Scope &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/set-synchronization-scope-report-builder-and-ssrs)  
   
  Because an indicator is positioned inside the gauge panel, you need to select the indicator instead of the panel when you want to configure the indicator by using the **Indicators Properties** dialog box or the **Properties** pane. The following picture shows a selected indicator in its gauge panel.  
   
- ![Screenshot of a gauge panel with indicator.](/media/paginated-reports-visualizations/gauge-panel-with-indicator.gif "gauge-panel-with-indicator")  
+ ![Screenshot of a gauge panel with indicator.](./media/paginated-reports-visualizations/gauge-panel-with-indicator.gif "gauge-panel-with-indicator")  
   
 > [!NOTE]  
 >  Depending on column width and the length of data values, the text in table or matrix cells might wrap and display text on multiple lines. When this occurs, the indicator icon might be stretched and change shape. This can make the indicator icon less readable. Place the indicator inside a rectangle to ensure that the icon is never stretched.  
   
 ## To add an indicator to a table or matrix  
   
-1.  Open an existing report or create a new report that contains a table and matrix with the data you want to display. For more information, see [Tables &#40;Power BI Report Builder&#41;](tables-report-builder.md) or [Matrices](create-matrix-report-builder.md).  
+1.  Open an existing report or create a new report that contains a table and matrix with the data you want to display. For more information, see [Tables &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-report-builder-and-ssrs) or [Matrices](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs).  
   
-2.  Insert a column in your table or matrix. For more information, see [Insert or Delete a Column &#40;Power BI Report Builder&#41;](insert-or-delete-column-report-builder.md).  
+2.  Insert a column in your table or matrix. For more information, see [Insert or Delete a Column &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/insert-or-delete-a-column-report-builder-and-ssrs).  
   
 3.  Optionally, on the **Insert** tab, click **Rectangle**, and then click a cell in the new column.  
   
@@ -68,6 +68,6 @@ ms.reviewer: saurkumar
 2.  Click **Delete**.  
   
 ## Next steps  
- [Indicators &#40;Power BI Report Builder&#41;](indicators-report-builder.md)  
+ [Indicators &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/indicators-report-builder-and-ssrs)  
   
   

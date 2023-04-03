@@ -82,7 +82,7 @@ ms.reviewer: saurkumar
   
 ## Next steps  
  [3D, Bevel, and Other Effects in a Chart &#40;Power BI Report Builder&#41;](chart-effects-3d-bevel-and-other-report-builder.md)   
- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)   
+ [Formatting a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
  [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)  
   
   

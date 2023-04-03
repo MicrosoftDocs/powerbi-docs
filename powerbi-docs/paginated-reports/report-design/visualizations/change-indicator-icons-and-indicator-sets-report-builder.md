@@ -17,7 +17,7 @@ ms.reviewer: saurkumar
 
   The pre-configured indicators sets that provides for Power BI paginated reports might not always depict your data effectively and work well in the delivered report. This topic provides procedures to change the appearance of indicator icons and change the indicator sets to include different, more, or fewer indicator icons.  
   
- Options such as colors can be set by using expressions. For more information, see [Expressions &#40;Power BI Report Builder&#41;](expressions-report-builder.md).  
+ Options such as colors can be set by using expressions. For more information, see [Expressions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs).  
   
 ## To change the color of an indicator icon  
   
@@ -29,7 +29,7 @@ ms.reviewer: saurkumar
   
      Optionally, click the **Expression** (*fx*) button to edit an expression that sets the value of the **Color** option.  
   
-     If you clicked **More Colors**, the **Select Color** dialog box opens, where you can choose from a wide array of colors. For more information about its options, see [Select Color Dialog Box &#40;Power BI Report Builder&#41;](formatting-lines-colors-and-images-report-builder.md). Click **OK** to close the **Select Color** dialog box.  
+     If you clicked **More Colors**, the **Select Color** dialog box opens, where you can choose from a wide array of colors. For more information about its options, see [Select Color Dialog Box &#40;Power BI Report Builder&#41;](/sql/formatting-lines-colors-and-images-report-builder-and-ssrs). Click **OK** to close the **Select Color** dialog box.  
   
 4.  Click **OK**.  
   
@@ -88,5 +88,5 @@ ms.reviewer: saurkumar
 4.  Click **OK**.  
   
 ## Next steps  
- [Indicators &#40;Power BI Report Builder&#41;](indicators-report-builder.md)  
+ [Indicators &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/indicators-report-builder-and-ssrs)  
   

@@ -80,7 +80,7 @@ Pie charts with too many slices can look cluttered. Learn to collect many small 
 ## Next steps  
 * [Tutorial: Add a Pie Chart to Your Report (Report Builder)](/sql/tutorial-add-a-pie-chart-to-your-report-report-builder)
 *  [Pie Charts &#40;Power BI Report Builder&#41;](pie-charts-report-builder.md)   
-*  [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](formatting-data-points-on-chart-report-builder.md)   
+*  [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)   
 *  [Display Data Point Labels Outside a Pie Chart &#40;Power BI Report Builder&#41;](display-data-point-labels-outside-pie-chart-report-builder.md)   
-*  [Display Percentage Values on a Pie Chart &#40;Power BI Report Builder&#41;](display-percentage-values-on-pie-chart-report-builder.md)     
+*  [Display Percentage Values on a Pie Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/display-percentage-values-on-a-pie-chart-report-builder-and-ssrs)     
   
