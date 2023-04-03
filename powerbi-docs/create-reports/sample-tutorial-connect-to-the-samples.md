@@ -138,21 +138,21 @@ One easy way of exploring a *dataset* is to run [quick insights](../consumer/end
 
 ### Create a report from the dataset
 
-On the **Datasets** tab, you have several options for exploring your dataset. However, you can't view the rows and columns of your data, as you can in Power BI Desktop or Excel. One way to explore the dataset is to create your own visualizations and reports from scratch.
+On the **Datasets** tab, you have several options for exploring your dataset. However, you can't view the rows and columns of your data, as you can in Power BI Desktop or Excel. One way to explore the dataset is to create a report by using **Auto-create**.
 
-:::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot showing the Retail Analysis Sample dataset entry in your workspace.":::
+To auto-create a report:
 
-To create a report:
+1. In your workspace, select the **Retail Analysis Sample** dataset to open it.
 
-1. Select **More options** (**...**) next to the **Retail Analysis Sample** dataset, then choose **Create report**.
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot showing the Retail Analysis Sample dataset entry in your workspace.":::
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png" alt-text="Screenshot showing the Create report menu item.":::
+1. Select **Create report**, then **Auto-create**.
 
-   The dataset opens in report editing mode.
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-auto-create-report.png" alt-text="Screenshot showing the Auto-create report menu item." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-auto-create-report.png":::
+
+   Power BI shows you the new report. Select **Edit** to revise and improve it.
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png" alt-text="Screenshot showing a brand-new report in report-editing mode." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png":::
-
-1. Now you can create any visuals you want, or you can try the tutorial [Create a decomposition tree with a Power BI sample](sample-tutorial-decomp-tree.md#create-a-decomp-tree), which uses the same data.
 
 ## Download the sample in Power BI Desktop
 
