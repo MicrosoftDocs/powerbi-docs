@@ -1,0 +1,60 @@
+---
+title: "Specify the size of an indicator in Power BI paginated report using an expression | Microsoft Docs"
+description: Discover ways to use size, in addition to color, direction, and shape, to maximize the visual impact of indicators in a Power BI paginated report in Power BI Report Builder.
+ms.date: 03/30/2023
+ms.service: powerbi
+ms.subservice: report-builder
+
+
+ms.topic: conceptual
+author: maggiesMSFT
+ms.author: maggies
+ms.reviewer: saurkumar
+---
+# Specify the size of an indicator in Power BI paginated report using an expression (Power BI Report Builder)
+
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+
+  In addition to color, direction, and shape, you can use size to maximize the visual impact of indicators in a paginated report.  
+  
+ An indicator has a collection of indicator states named IndicatorStates. The IndicatorStates collection typically have multiple states. Each state is a member of the collection and is represented by an icon. Together the states constitute the IndicatorsStates collection.  
+  
+ To dynamically configure the sizes of icons, you set properties of members of the IndicatorsStates collection in the Properties pane of Report Builder. If the **Properties** pane is not visible, click the **View** tab and select **Properties**.  
+  
+ The **Properties** pane provides access to the properties of the IndicatorStates collection of an indicator. You configure the icons to be different sizes by setting the ScaleFactor property of the IndicatorStates collection members using an expression. For more information, see [Expressions &#40;Power BI Report Builder&#41;](expressions-report-builder.md).  
+  
+ The expression used in this procedure was also used to generate the report with different sizes of indicators, shown in [Indicators &#40;Power BI Report Builder&#41;](indicators-report-builder.md).  
+  
+> [!NOTE]  
+>  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.
+  
+### To specify the indicator icon size using an expression  
+  
+1.  Click the indicator you want to change.  
+  
+2.  In the Properties pane, locate the IndicatorStates property.  
+  
+     If the Properties pane is organized by category, you will find IndicatorStates in the **States** category.  
+  
+3.  Click the ellipsis **(...)** button next to IndicatorStates. The **IndicatorState Collection Editor** dialog box opens.  
+  
+     Select all members of the collection.  
+  
+4.  In the **Multi-Select Properties** list, click the down arrow next to ScaleFactor and then click **Expression**.  
+  
+5.  In the **Expression** dialog box write the expression.  
+  
+     The following sample expression makes the icon a different size based on the value of the **SalesYTD** field.  
+  
+     `=IIF(Fields!SalesYTD.value = 0,0,Fields!SalesYTD.value/Max(Fields!SalesYTD.value,"Indicator"))`  
+  
+     For more information, see [Expression Examples &#40;Power BI Report Builder&#41;](expression-examples-report-builder.md).  
+  
+6.  Select **OK**.
+  
+7.  Select **OK**.
+  
+## Next steps  
+ [Indicators &#40;Power BI Report Builder&#41;](indicators-report-builder.md)  
+  
+  
