@@ -21,7 +21,7 @@ A moving average is an average of the data in your series, calculated over a def
   
  The Moving Average formula is the most popular price indicator used in technical analyses. Many other formulas, including mean, median and standard deviation, can also be derived from a series on the chart. When specifying a moving average, each formula may have one or more parameters that must be specified.  
  
- The [Tutorial: Add a Column Chart to Your Report (Power BI Report Builder)](./sql/tutorial-add-a-column-chart-to-your-report-report-builder) walks you through adding a moving average to a chart, if you'd like to try it with sample data.
+ The [Tutorial: Add a Column Chart to Your Report (Power BI Report Builder)](/sql/tutorial-add-a-column-chart-to-your-report-report-builder) walks you through adding a moving average to a chart, if you'd like to try it with sample data.
   
  When a moving average formula is added in Design mode, the line series that is added is only a visual placeholder. The chart will calculate the data points of each formula during report processing.  
   

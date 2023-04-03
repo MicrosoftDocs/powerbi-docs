@@ -18,7 +18,7 @@ ms.reviewer: saurkumar
 
   Chart will use the minimum and maximum values of a series to calculate the axis scale in a paginated report. When a series on your chart contains more than one range of data, the data points can become obscured, and only a few data points to be seen easily on the chart. For example, suppose a report displays daily sales totals over a period of 30 days.  
   
- ![Screenshot of a Chart with multiple data ranges](/media/paginated-reports-visualizations/multiple-data-ranges-chart.gif "multiple-data-ranges-chart")  
+ ![Screenshot of a Chart with multiple data ranges](./media/paginated-reports-visualizations/multiple-data-ranges-chart.gif "multiple-data-ranges-chart")  
   
  For most of the month, the sales are between 10 and 40. However, a one-week sales marketing campaign has caused a sudden sales increase at the beginning of April. This change in sales data produces an uneven distribution of data points that reduces the overall readability of the chart.  
   
@@ -26,9 +26,9 @@ ms.reviewer: saurkumar
   
 -   **Enable scale breaks**. If your data forms two or more sets of data ranges, use a scale break to remove the gap between the ranges. A scale break is a stripe drawn across the plotting area to denote a break between the high and low values of a series.  
   
--   **Filter out unnecessary values**. If you have data points that are obscuring the important data range to be displayed on the chart, remove the unwanted points using a report filter. For information on how to add a filter to the chart in Report Builder, see [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](add-dataset-filters-data-region-filters-and-group-filters.md).  
+-   **Filter out unnecessary values**. If you have data points that are obscuring the important data range to be displayed on the chart, remove the unwanted points using a report filter. For information on how to add a filter to the chart in Report Builder, see [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters).  
   
--   **Plot each data range as a separate series for multiple series comparison**. If you have more than two data ranges, consider separating the data ranges into separate series. For more information, see [Multiple Series on a Chart &#40;Power BI Report Builder&#41;](multiple-series-on--chart-report-builder.md).  
+-   **Plot each data range as a separate series for multiple series comparison**. If you have more than two data ranges, consider separating the data ranges into separate series. For more information, see [Multiple Series on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/multiple-series-on-a-chart-report-builder-and-ssrs).  
   
 > [!NOTE]  
 >  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder. 
@@ -36,14 +36,14 @@ ms.reviewer: saurkumar
 ## Displaying multiple data ranges using scale breaks  
  When you enable a scale break, the chart calculates where to draw a line across the chart. You must have sufficient separation between ranges to draw a scale break. By default, a scale break can be added only if there is a separation between the data ranges of at least 25% of the chart.  
   
- ![Screenshot of a Chart with scale break](/media/paginated-reports-visualizations/multiple-data-ranges-chart-scale-break.gif "multiple-data-ranges-chart-scale-break")  
+ ![Screenshot of a Chart with scale break](./media/paginated-reports-visualizations/multiple-data-ranges-chart-scale-break.gif "multiple-data-ranges-chart-scale-break")  
   
 > [!NOTE]  
 >  You cannot specify where to place a scale break on a chart. You can, however, modify how the scale break is calculated, described later in this topic.  
   
- If you enable a scale break but it does not appear, even though there is sufficient distance between the data ranges, you can set the CollapsibleSpaceThreshold property to a value less than 25. The CollapsibleSpaceThreshold specifies the percent of collapsible space required between the data ranges. For more information, see [Add Scale Breaks to a Chart &#40;Power BI Report Builder&#41;](add-scale-breaks-to-chart-report-builder.md).  
+ If you enable a scale break but it does not appear, even though there is sufficient distance between the data ranges, you can set the CollapsibleSpaceThreshold property to a value less than 25. The CollapsibleSpaceThreshold specifies the percent of collapsible space required between the data ranges. For more information, see [Add Scale Breaks to a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-scale-breaks-to-a-chart-report-builder-and-ssrs).  
   
- Charts support up to five scale breaks per chart; however, displaying more than one scale break can cause the chart to become unreadable. If you have more than two data ranges, consider using a different method for displaying this data. For more information, see [Multiple Series on a Chart &#40;Power BI Report Builder&#41;](multiple-series-on-chart-report-builder.md).  
+ Charts support up to five scale breaks per chart; however, displaying more than one scale break can cause the chart to become unreadable. If you have more than two data ranges, consider using a different method for displaying this data. For more information, see [Multiple Series on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/multiple-series-on-a-chart-report-builder-and-ssrs).  
   
 ## Unsupported scale break scenarios  
  Scale breaks are not supported in the following chart scenarios:  
@@ -60,8 +60,8 @@ ms.reviewer: saurkumar
 
 ## Next steps
 
-[Multiple Series on a Chart](multiple-series-on-chart-report-builder.md)   
-[Formatting a Chart](formatting-chart-report-builder.md)   
+[Multiple Series on a Chart](/sql/reporting-services/report-design/multiple-series-on-a-chart-report-builder-and-ssrs)   
+[Formatting a Chart](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
 [3D, Bevel, and Other Effects in a Chart](chart-effects-3d-bevel-and-other-report-builder.md)   
 [Charts](charts-report-builder.md)    
 [Collect Small Slices on a Pie Chart](collect-small-slices-on-pie-chart-report-builder.md)  

@@ -17,7 +17,7 @@ ms.reviewer: saurkumar
 
   In a Power BI paginated report, the gauge scale is the range of numbers, bound by a minimum and a maximum, shown on a gauge. Typically, a gauge scale contains gauge labels and tick marks to give an accurate reading of what the gauge pointer shows. A gauge scale is generally associated with one or more gauge pointers. You can have more than one scale on the same gauge.  
   
- ![Screenshot of a Overview of elements on a gauge scale](/media/paginated-reports-visualizations/scale-overview-diagram.gif "scale-overview-diagram")  
+ ![Screenshot of a Overview of elements on a gauge scale](./media/paginated-reports-visualizations/scale-overview-diagram.gif "scale-overview-diagram")  
   
  Unlike the chart, where multiple groups are defined, the gauge only shows one value. You must define the minimum and maximum values of the scale. The interval numbers are calculated automatically based on the values specified for the minimum and maximum.  
   
@@ -62,7 +62,7 @@ ms.reviewer: saurkumar
   
  The scale radius is the distance from the center of the gauge to the middle of the scale bar. The value of the scale radius is measured as a percentage of the gauge diameter. It is a good practice to keep the scale radius below a value of 35. If you specify a value higher than 35, the scale will likely be drawn outside the boundaries of the gauge. The following illustration shows how the scale radius is measured, relative to the diameter of the gauge, on the scale bar.  
   
- ![Screenshot of a Scale radius relative to gauge diameter](/media/paginated-reports-visualizations/scale-radius-diagram.gif "scale-radius-diagram")  
+ ![Screenshot of a Scale radius relative to gauge diameter](./media/paginated-reports-visualizations/scale-radius-diagram.gif "scale-radius-diagram")  
   
  The start angle is the angle of rotation, between 0 and 360, at which the scale will begin. The zero (0) position is located at the bottom of the gauge, and the start angle rotates clockwise. For example, a start angle of 90 degrees starts the scale at the 9 o'clock position.  
   
@@ -76,10 +76,10 @@ ms.reviewer: saurkumar
 -   1% of the smallest value of the gauge height or width on a linear gauge.  
   
 ## Next steps  
- [Formatting Ranges on a Gauge &#40;Power BI Report Builder&#41;](formatting-ranges-on-gauge-report-builder.md)   
- [Formatting Pointers on a Gauge &#40;Power BI Report Builder&#41;](formatting-pointers-on-gauge-report-builder.md)   
- [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](format-axis-labels-as-dates-or-currencies-report-builder.md)   
- [Formatting Axis Labels on a Chart &#40;Power BI Report Builder&#41;](formatting-axis-labels-on-chart-report-builder.md)   
- [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md)  
+ [Formatting Ranges on a Gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-ranges-on-a-gauge-report-builder-and-ssrs)   
+ [Formatting Pointers on a Gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-pointers-on-a-gauge-report-builder-and-ssrs)   
+ [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/format-axis-labels-as-dates-or-currencies-report-builder-and-ssrs)   
+ [Formatting Axis Labels on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
+ [Gauges &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs)  
   
   
