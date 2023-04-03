@@ -21,7 +21,7 @@ Pie charts with too many slices can look cluttered. Learn to collect many small 
  
  The [Tutorial: Add a Pie Chart to Your Report (Power BI Report Builder)](/sql/tutorial-add-a-pie-chart-to-your-report-report-builder) walks you through collecting small slices into a single slice, if you'd like to try this with sample data first.
  
- ![Screenshot of a report builder pie chart showing the other slice.](/media/paginated-reports-visualizations/report-builder-pie-chart-other-slice.png "report-builder-pie-chart-other-slice")
+ ![Screenshot of a report builder pie chart showing the other slice.](./media/paginated-reports-visualizations/report-builder-pie-chart-other-slice.png "report-builder-pie-chart-other-slice")
   
  You can also collect small slices into a second pie chart that is called out from a collected slice of the first pie chart. The second pie chart is drawn to the right of the original pie chart.  
   
@@ -38,7 +38,7 @@ Pie charts with too many slices can look cluttered. Learn to collect many small 
   
 4.  Set the CollectedStyle property to **SingleSlice**.  
 
-    ![Screenshot of a report builder pie chart showing how to configure a single slice property.](/media/paginated-reports-visualizations/report-builder-pie-chart-single-slice-property.png "report-builder-pie-chart-single-slice-property")
+    ![Screenshot of a report builder pie chart showing how to configure a single slice property.](./media/paginated-reports-visualizations/report-builder-pie-chart-single-slice-property.png "report-builder-pie-chart-single-slice-property")
   
 5.  Set the collected threshold value and type of threshold. The following examples are common ways of setting collected thresholds.  
   

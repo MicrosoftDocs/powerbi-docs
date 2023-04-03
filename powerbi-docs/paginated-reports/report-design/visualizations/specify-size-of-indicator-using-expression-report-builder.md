@@ -21,9 +21,9 @@ ms.reviewer: saurkumar
   
  To dynamically configure the sizes of icons, you set properties of members of the IndicatorsStates collection in the Properties pane of Report Builder. If the **Properties** pane is not visible, click the **View** tab and select **Properties**.  
   
- The **Properties** pane provides access to the properties of the IndicatorStates collection of an indicator. You configure the icons to be different sizes by setting the ScaleFactor property of the IndicatorStates collection members using an expression. For more information, see [Expressions &#40;Power BI Report Builder&#41;](expressions-report-builder.md).  
+ The **Properties** pane provides access to the properties of the IndicatorStates collection of an indicator. You configure the icons to be different sizes by setting the ScaleFactor property of the IndicatorStates collection members using an expression. For more information, see [Expressions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs).  
   
- The expression used in this procedure was also used to generate the report with different sizes of indicators, shown in [Indicators &#40;Power BI Report Builder&#41;](indicators-report-builder.md).  
+ The expression used in this procedure was also used to generate the report with different sizes of indicators, shown in [Indicators &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/indicators-report-builder-and-ssrs).  
   
 > [!NOTE]  
 >  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.
@@ -48,13 +48,13 @@ ms.reviewer: saurkumar
   
      `=IIF(Fields!SalesYTD.value = 0,0,Fields!SalesYTD.value/Max(Fields!SalesYTD.value,"Indicator"))`  
   
-     For more information, see [Expression Examples &#40;Power BI Report Builder&#41;](expression-examples-report-builder.md).  
+     For more information, see [Expression Examples &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs).  
   
 6.  Select **OK**.
   
 7.  Select **OK**.
   
 ## Next steps  
- [Indicators &#40;Power BI Report Builder&#41;](indicators-report-builder.md)  
+ [Indicators &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/indicators-report-builder-and-ssrs)  
   
   

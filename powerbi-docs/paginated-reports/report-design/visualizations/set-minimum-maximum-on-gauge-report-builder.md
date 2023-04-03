@@ -36,6 +36,6 @@ ms.reviewer: saurkumar
 ## Next steps  
  [Formatting Scales on a Gauge &#40;Power BI Report Builder&#41;](formatting-scales-on-gauge-report-builder.md)   
  [Formatting Pointers on a Gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-pointers-on-a-gauge-report-builder-and-ssrs)   
- [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md)  
+ [Gauges &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs)  
   
   

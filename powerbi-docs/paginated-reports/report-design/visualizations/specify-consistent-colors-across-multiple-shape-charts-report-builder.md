@@ -72,13 +72,13 @@ ms.reviewer: saurkumar
     ```  
   
 ## Next steps  
- [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](formatting-series-colors-on-chart-report-builder.md)   
- [Add Bevel, Emboss, and Texture Styles to a Chart &#40;Power BI Report Builder&#41;](chart-effects-add-bevel-emboss-or-texture-report-builder.md)   
- [Define Colors on a Chart Using a Palette &#40;Power BI Report Builder&#41;](define-colors-on-chart-using-palette-report-builder.md)   
+ [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs)   
+ [Add Bevel, Emboss, and Texture Styles to a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-effects-add-bevel-emboss-or-texture-report-builder)   
+ [Define Colors on a Chart Using a Palette &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/define-colors-on-a-chart-using-a-palette-report-builder-and-ssrs)   
  [Add Empty Points to a Chart &#40;Power BI Report Builder&#41;](add-empty-points-to-chart-report-builder.md)   
  [Shape Charts &#40;Power BI Report Builder&#41;](shape-charts-report-builder.md)   
- [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](linking-multiple-data-regions-to-same-dataset-report-builder.md)   
- [Nested Data Regions &#40;Power BI Report Builder and SSRS&#41;](nested-data-regions-report-builder.md)   
- [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](sparklines-and-data-bars-report-builder.md)  
+ [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/linking-multiple-data-regions-to-the-same-dataset-report-builder-and-ssrs)   
+ [Nested Data Regions &#40;Power BI Report Builder and SSRS&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs)   
+ [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs)  
   
   
