@@ -64,13 +64,13 @@ In paginated reports, expressions are used throughout the report definition to s
 |Concatenate a string and a number formatted as a percentage to two decimal places.|Value for a placeholder inside of a text box in a data region. Use **Textbox Properties Dialog Box, General**.|`="Growth Percent: " & Format(Fields!Growth.Value,"p2")`|  
   
 ## See Also  
- [Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs.md)   
- [Expression Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs.md)   
- [Report Parameters &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer.md)   
- [Filter Equation Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs.md)   
- [Filter, Group, and Sort Data &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs.md)   
+ [Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs)   
+ [Expression Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)   
+ [Report Parameters &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer)   
+ [Filter Equation Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs)   
+ [Filter, Group, and Sort Data &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
  [Page Headers and Footers &#40;Report Builder and SSRS&#41;](page-headers-footers-report-builder-service.md)   
- [Formatting Text and Placeholders &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs.md)   
- [Hide an Item &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/hide-an-item-report-builder-and-ssrs.md)  
+ [Formatting Text and Placeholders &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
+ [Hide an Item &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/hide-an-item-report-builder-and-ssrs)  
   
   

@@ -45,7 +45,7 @@ ms.reviewer: rodolfoc
     > [!NOTE]  
     >  You cannot control when the report processor initializes a variable or evaluates an expression that updates a variable. The order of execution for variable initialization is undefined.  
   
- For more information about sessions, see [Previewing Reports in Report Builder](/sql/reporting-services/report-builder/previewing-reports-in-report-builder.md).  
+ For more information about sessions, see [Previewing Reports in Report Builder](/sql/reporting-services/report-builder/previewing-reports-in-report-builder).  
   
 ## Group Variables  
  Use a group variable to calculate a complex expression once in the scope of a group. A group variable is valid only in the scope of the group and its child groups.  
@@ -65,8 +65,8 @@ ms.reviewer: rodolfoc
  To refer to the variable in an expression, use the global collection syntax, for example, `=Variables!GroupDescription.Value`. On the design surface, the value appears in a text box as `<<Expr>>`.  
   
 ## See Also  
- [Filter, Group, and Sort Data &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs.md)   
- [Built-in Collections in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/built-in-collections-in-expressions-report-builder.md)   
- [Expression Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs.md)  
+ [Filter, Group, and Sort Data &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
+ [Built-in Collections in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/built-in-collections-in-expressions-report-builder)   
+ [Expression Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)  
   
   
