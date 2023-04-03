@@ -122,7 +122,7 @@ The Q&A feature in the Power BI service lets you explore your data in your own w
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-report.png" alt-text="Screenshot showing the District Monthly Sales report page." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-report.png":::
 
-1. For suggestions on exploring the report, see [Dive deeper into the data](sample-retail-analysis.md#dive-deeper-into-the-data).
+1. Check out [Dive deeper into the data](sample-retail-analysis.md#use-qa-to-dig-deeper-in-the-dashboard) in the article "Retail Analysis sample for Power BI: Take a tour" for suggestions on exploring the report.
 
 ### Explore quick insights
 

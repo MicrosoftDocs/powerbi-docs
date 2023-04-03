@@ -7,14 +7,14 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/31/2022
+ms.date: 01/16/2023
 ---
 
 # Power BI usage scenarios: Embed for your customers
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This usage scenario focuses on how a developer can programmatically embed Power BI content in a custom application _for your customers_. (The developer isn't necessarily responsible for creating the Power BI content.) The **For your customers** scenario applies when the application audience comprises users who don't have permission or appropriate licenses to access Power BI content in your customers. The custom application requires an embedding identity that has permission and an appropriate license to access Power BI content. The custom application could be a multitenancy application.
+This usage scenario focuses on how a developer can programmatically embed Power BI content in a custom application _for your customers_. (The developer isn't necessarily responsible for creating the Power BI content.) The **Embed for your customers** scenario applies when the application audience comprises users who don't have permission or appropriate licenses to access Power BI content in your customers. The custom application requires an embedding identity that has permission and an appropriate license to access Power BI content. The custom application could be a multitenancy application.
 
 > [!NOTE]
 > In this scenario, Power BI is platform-as-a-service (PaaS). The embedding scenario is sometimes referred to as _App owns data_.
@@ -42,6 +42,12 @@ The above diagram depicts the following user actions, tools, and features:
 ## Key points
 
 The following are some key points to emphasize about programmatically embed Power BI content in a custom application for your customers.
+
+### Use case
+
+Often, embedding for your customers is done by Independent Software Vendors (ISVs). ISVs recognize a need to embed analytics in their apps. It allows users to have direct access to in-context insights, helping them make decisions based on facts instead of opinions. Instead of developing visualizations, it's usually faster and less expensive to embed Power BI content.
+
+ISVs can develop a _multitenancy application_, where each of their customers is a tenant. A multitenancy application that embeds Power BI analytics will use the _Embed for your customers_ scenario because the application users include external users. Multitenancy applications are described in more detail [later in this article](#multitenancy-applications).
 
 ### Embeddable content
 
@@ -82,7 +88,7 @@ For more information about embedding identities, see [Set up permissions to embe
 
 ### Licensing
 
-When embedding Power BI content by using the _For your customers_ scenario, you need to ensure that content resides in a workspace that has one of the following license modes:
+When embedding Power BI content for your customers, you need to ensure that content resides in a workspace that has one of the following license modes:
 
 - **Premium per capacity:** This license mode is available with [Power BI Premium](/power-bi/enterprise/service-premium-what-is).
 - **Embedded:** This license mode is available with [Power BI Embedded](https://azure.microsoft.com/products/power-bi-embedded/).
@@ -92,7 +98,7 @@ Each license mode option requires the purchase of a billable product that is a c
 Capacities represent the computational resources that are required to process workloads, such as report rendering and data refresh. Reserved capacities are isolated from other customers' workloads, so they offer scale that can deliver dependable and consistent performance.
 
 > [!NOTE]
-> It's not possible to use the _For your customers_ scenario in production environments with the Power BI (free), Power BI Pro, or Power BI PPU licenses.
+> It's not possible to use the _Embed for your customers_ scenario in production environments with the Power BI (free), Power BI Pro, or Power BI PPU licenses.
 
 For more information about products and licensing, see [Select the appropriate Power BI embedded analytics product](/training/modules/power-bi-embedded-select).
 
@@ -117,7 +123,7 @@ For more information about RLS roles for embedded content, see [Enforce data per
 
 ### Multitenancy applications
 
-Multiple organizations can use a multitenancy app, where each organization is a tenant. A multitenancy app that embeds Power BI analytics can use the _For your customers_ scenario because the app users include external users. When designing a multitenancy app, you can choose from two different tenancy models.
+Multiple organizations can use a multitenancy app, where each organization is a tenant. A multitenancy app that embeds Power BI analytics can use the _Embed for your customers_ scenario because the app users include external users. When designing a multitenancy app, you can choose from two different tenancy models.
 
 The recommended approach is to use the _workspace separation_ model. You can achieve this approach by creating one Power BI workspace for each tenant. Each workspace contains Power BI artifacts that are specific to that tenant, and the datasets connect to a separate database for each tenant.
 

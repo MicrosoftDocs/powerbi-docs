@@ -1,13 +1,14 @@
 ---
 title: Best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool
 description: Learn about the best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.date: 01/04/2023
 ms.custom: intro-deployment
+ms.search.form: Best practices for Deployment pipelines
 ---
 
 # Deployment pipelines best practices
@@ -97,7 +98,7 @@ Consider Power BI Desktop as your local development environment. Power BI Deskto
 
 * You can use version control to keep your *.pbix* files up to date.
 
-### Version control for PBIX files
+### Version control for *.pbix* files
 
 If you want to manage the version history of your reports and datasets, use Power BI's [auto-sync with OneDrive](../connect-data/refresh-desktop-file-onedrive.md). Auto-sync keeps your files updated with the latest version and enable you to retrieve older versions if needed.
 

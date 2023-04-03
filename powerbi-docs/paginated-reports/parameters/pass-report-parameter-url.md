@@ -10,7 +10,7 @@ ms.author: maggies
 ---
 # Pass a report parameter within a URL for a Power BI paginated report
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
 You can pass report parameters to a report by including them in a report URL for Paginated Reports. These URL parameters are not prefixed because they are passed directly to the report processing engine.  
 

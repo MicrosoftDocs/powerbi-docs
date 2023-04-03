@@ -14,7 +14,7 @@ ms.reviewer: saurkumar
 
 # Add or modify default values for a Power BI paginated report parameter (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
   After you create a Power BI paginated report parameter, you can provide a list of default values. If all parameters have a valid default value, the report runs automatically when you first view or preview it. In this article you learn to add, change, or delete default parameter values.
   

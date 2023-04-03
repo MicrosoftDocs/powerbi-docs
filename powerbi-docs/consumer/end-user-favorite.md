@@ -7,6 +7,7 @@ ms.reviewer: mihart
 featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: View your Favorites
 ms.topic: how-to
 ms.date: 02/07/2023
 LocalizationGroup: Common tasks
