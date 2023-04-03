@@ -98,7 +98,7 @@ Consider Power BI Desktop as your local development environment. Power BI Deskto
 
 * You can use version control to keep your *.pbix* files up to date.
 
-### Version control for PBIX files
+### Version control for *.pbix* files
 
 If you want to manage the version history of your reports and datasets, use Power BI's [auto-sync with OneDrive](../connect-data/refresh-desktop-file-onedrive.md). Auto-sync keeps your files updated with the latest version and enable you to retrieve older versions if needed.
 
