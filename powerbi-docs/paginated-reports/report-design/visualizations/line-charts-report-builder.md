@@ -19,7 +19,7 @@ ms.reviewer: saurkumar
   
  The following illustration shows a line chart that contains three series.  
   
- ![Screenshot of a Line chart](/media/paginated-reports-visualizations/line-chart.gif "line-chart")  
+ ![Screenshot of a Line chart](./media/paginated-reports-visualizations/line-chart.gif "line-chart")  
   
 > [!NOTE]  
 >  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.  
@@ -30,7 +30,7 @@ ms.reviewer: saurkumar
   
 -   **Stepped line**. A line chart that uses a stepped line instead of a regular line. The stepped line connects points by using a line that makes it look like steps on a ladder or staircase.  
   
--   **Sparkline charts**. Variations of the line chart that show only the line series in the cell of a table or matrix. For more information, see [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](sparklines-and-data-bars-report-builder.md).  
+-   **Sparkline charts**. Variations of the line chart that show only the line series in the cell of a table or matrix. For more information, see [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs).  
   
 ## Data considerations for line charts  
   
@@ -43,12 +43,12 @@ ms.reviewer: saurkumar
 -   A series that is drawn as a line will not take up much space within a chart area.  For this reason, line charts are frequently combined with other chart types such as column charts. However, you cannot combine a line chart with bar, polar, pie or shape chart types.  
   
 ## Next steps  
- [Bar Charts &#40;Power BI Report Builder&#41;](bar-charts-report-builder.md)   
+ [Bar Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/bar-charts-report-builder-and-ssrs)   
  [Column Charts &#40;Power BI Report Builder&#41;](column-charts-report-builder.md)   
  [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
- [Chart Types &#40;Power BI Report Builder&#41;](chart-types-report-builder.md)   
+ [Chart Types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)   
  [Area Charts &#40;Power BI Report Builder&#41;](area-charts-report-builder.md)   
- [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](empty-and-null-data-points-in-charts-report-builder.md)   
+ [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/empty-and-null-data-points-in-charts-report-builder-and-ssrs)   
  [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)  
   
   

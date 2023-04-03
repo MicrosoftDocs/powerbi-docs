@@ -21,7 +21,7 @@ ms.reviewer: saurkumar
   
  If the range of your values is large, for example from 0 to 10000, consider using a multiplier to reduce the number of zeroes on the gauge. The multiplier will only reduce the scale of the numbers on the gauge, not the value itself.  
   
- You can use expressions to set the values of the **Minimum** and **Maximum** options. For more information, see [Expressions &#40;Power BI Report Builder&#41;](expressions-report-builder.md).  
+ You can use expressions to set the values of the **Minimum** and **Maximum** options. For more information, see [Expressions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs).  
   
 ## To set the minimum and maximum on the gauge  
   
@@ -35,7 +35,7 @@ ms.reviewer: saurkumar
   
 ## Next steps  
  [Formatting Scales on a Gauge &#40;Power BI Report Builder&#41;](formatting-scales-on-gauge-report-builder.md)   
- [Formatting Pointers on a Gauge &#40;Power BI Report Builder&#41;](formatting-pointers-on-gauge-report-builder.md)   
+ [Formatting Pointers on a Gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-pointers-on-a-gauge-report-builder-and-ssrs)   
  [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md)  
   
   

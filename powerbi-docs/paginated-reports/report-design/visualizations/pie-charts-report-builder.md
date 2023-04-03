@@ -19,7 +19,7 @@ ms.reviewer: saurkumar
   
  The following illustration shows a 3-D pie chart with data labels formatted as percentages.  The legend is positioned in the right-center.  
   
- ![Screenshot of a Pie chart](/media/paginated-reports-visualizations/pie-chart.gif "pie-chart")  
+ ![Screenshot of a Pie chart](./media/paginated-reports-visualizations/pie-chart.gif "pie-chart")  
   
 > [!NOTE]  
 >  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.
@@ -44,25 +44,25 @@ ms.reviewer: saurkumar
   
 -   Null, empty, negative, and zero values have no effect when calculating ratios. For this reason, these values are not shown on a pie chart. If you want to visually indicate these types of values on your chart, change the chart type to be something other than a pie chart.  
   
--   If you are defining your own colors on a pie chart using a custom palette, be sure that you have enough colors in your palette to display each data point with its own unique color. For more information, see [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](formatting-series-colors-on-chart-report-builder.md).  
+-   If you are defining your own colors on a pie chart using a custom palette, be sure that you have enough colors in your palette to display each data point with its own unique color. For more information, see [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs).  
   
 -   Unlike most other chart types, a pie chart will display individual data points, and not individual series, in its legend.  
   
 -   A pie chart requires at least two values in order to make a valid comparison between proportions. If your pie chart contains only one color, verify that you have added a category field to group by. When the pie chart does not contain categories, it aggregates the values from your data field into one value for display.  
   
--   Like all other chart types, the pie chart generates colors based on the color values contained in the default palette. This approach might cause different pie charts to color data points differently when you are using multiple pie charts in a report. If you have several pie charts in your report, you might want to manually set colors for each category group in order to retain the same color across different charts. For more information about how to define colors on a chart, see [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](formatting-series-colors-on-chart-report-builder.md).  
+-   Like all other chart types, the pie chart generates colors based on the color values contained in the default palette. This approach might cause different pie charts to color data points differently when you are using multiple pie charts in a report. If you have several pie charts in your report, you might want to manually set colors for each category group in order to retain the same color across different charts. For more information about how to define colors on a chart, see [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs).  
   
 ## Applying drawing styles to a pie chart  
  You can add special drawing styles to the pie chart to increase its visual impact. Drawing styles include bevel and concave effects. These effects are available only on a 2-D pie chart. The following illustration shows an example of the bevel and concave drawing styles on a pie chart.  
   
- ![Screenshot of a Pie Drawing Styles](/media/paginated-reports-visualizations/pie-drawing-effects-concave2.gif "pie-drawing-effects-concave2")  
+ ![Screenshot of a Pie Drawing Styles](./media/paginated-reports-visualizations/pie-drawing-effects-concave2.gif "pie-drawing-effects-concave2")  
   
- For more information, see [Add Bevel, Emboss, and Texture Styles to a Chart &#40;Power BI Report Builder&#41;](chart-effects-add-bevel-emboss-or-texture-report-builder.md).  
+ For more information, see [Add Bevel, Emboss, and Texture Styles to a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-effects-add-bevel-emboss-or-texture-report-builder).  
   
 ## Displaying percentage values on a pie chart  
- Like other Shape charts, pie charts represent proportions of the total. As a result, it is common to format pie chart labels as percentages. In order to be consistent with other chart types, the chart does not display percentage labels by default. For more information about how to display values as percentages on the chart, see [Display Percentage Values on a Pie Chart &#40;Power BI Report Builder&#41;](display-percentage-values-on-pie-chart-report-builder.md). For more information about how to format numbers as percentages in your report, see [Formatting Numbers and Dates &#40;Power BI Report Builder&#41;](formatting-numbers-and-dates-report-builder.md).  
+ Like other Shape charts, pie charts represent proportions of the total. As a result, it is common to format pie chart labels as percentages. In order to be consistent with other chart types, the chart does not display percentage labels by default. For more information about how to display values as percentages on the chart, see [Display Percentage Values on a Pie Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/display-percentage-values-on-a-pie-chart-report-builder-and-ssrs). For more information about how to format numbers as percentages in your report, see [Formatting Numbers and Dates &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-numbers-and-dates-report-builder-and-ssrs).  
   
- ![Screenshot of a Pie chart with data point labels as percentages](/media/paginated-reports-visualizations/pie-chart-percentages.gif "pie-chart-percentages")  
+ ![Screenshot of a Pie chart with data point labels as percentages](./media/paginated-reports-visualizations/pie-chart-percentages.gif "pie-chart-percentages")  
   
 ## Preventing overlapped labels on a pie chart  
  If there are a lot of data points on a pie chart, the data labels will overlap. There are several ways to prevent labels from overlapping:  
@@ -85,10 +85,10 @@ ms.reviewer: saurkumar
 ## Next steps  
  [Display Data Point Labels Outside a Pie Chart &#40;Power BI Report Builder&#41;](display-data-point-labels-outside-pie-chart-report-builder.md)   
  [Collect Small Slices on a Pie Chart &#40;Power BI Report Builder&#41;](collect-small-slices-on-pie-chart-report-builder.md)   
- [Display Percentage Values on a Pie Chart &#40;Power BI Report Builder&#41;](display-percentage-values-on-pie-chart-report-builder.md)   
+ [Display Percentage Values on a Pie Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/display-percentage-values-on-a-pie-chart-report-builder-and-ssrs)   
  [Tutorial: Add a Pie Chart to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-pie-chart-to-your-report-report-builder)   
  [Formatting the Legend on a Chart &#40;Power BI Report Builder&#41;](chart-legend-formatting-report-builder.md)   
- [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](empty-and-null-data-points-in-charts-report-builder.md)   
- [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](formatting-series-colors-on-chart-report-builder.md)  
+ [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/empty-and-null-data-points-in-charts-report-builder-and-ssrs)   
+ [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs)  
   
   

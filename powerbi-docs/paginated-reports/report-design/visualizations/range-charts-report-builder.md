@@ -19,7 +19,7 @@ ms.reviewer: saurkumar
   
  The following illustration shows a plain range chart with three series.  
   
- ![Screenshot of a Range chart](/media/paginated-reports-visualizations/range-chart.gif "range-chart")  
+ ![Screenshot of a Range chart](./media/paginated-reports-visualizations/range-chart.gif "range-chart")  
   
 > [!NOTE]  
 >  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.  
@@ -50,7 +50,7 @@ ms.reviewer: saurkumar
   
 ## Next steps  
  [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
- [Chart Types &#40;Power BI Report Builder&#41;](chart-types-report-builder.md)   
- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-a-chart-report-builder.md)  
+ [Chart Types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)   
+ [Formatting a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)  
   
   

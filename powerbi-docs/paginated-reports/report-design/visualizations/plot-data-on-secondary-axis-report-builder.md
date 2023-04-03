@@ -20,7 +20,7 @@ The Power BI paginated report chart has two axis types: primary and secondary. T
   
  For example, suppose you have a chart that calculates Revenue vs. Tax for the year 2008. In this case, the 2008 time period is common to both value sets. However, when both series are plotted on the same y-axis, we cannot make a useful comparison because the scale of the y-axis is optimized for the largest values in the dataset. If we show Revenue on the primary axis, and Tax on the secondary axis, we can display each series on its own y-axis with its own scale of values. The series still share a common x-axis.  
   
- In situations where there are more than two series to be compared, consider a different approach for comparing and displaying multiple series in a chart. For more information, see [Multiple Series on a Chart](multiple-series-on-chart-report-builder.md).  
+ In situations where there are more than two series to be compared, consider a different approach for comparing and displaying multiple series in a chart. For more information, see [Multiple Series on a Chart](/sql/reporting-services/report-design/multiple-series-on-a-chart-report-builder-and-ssrs).  
   
  An example of this chart is available as a sample report. For more information about downloading this sample report and others, see [Power BI Report Builder and Report Designer sample reports](https://go.microsoft.com/fwlink/?LinkId=198283).  
   
@@ -35,7 +35,7 @@ The Power BI paginated report chart has two axis types: primary and secondary. T
 
 ## Next steps
 
-[Formatting Axis Labels on a Chart](formatting-axis-labels-on-chart-report-builder.md)   
+[Formatting Axis Labels on a Chart](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
 [Specify an Axis Interval](specify-axis-interval-report-builder.md)  
 
 More questions? [Try asking the Reporting Services forum](https://go.microsoft.com/fwlink/?LinkId=620231)

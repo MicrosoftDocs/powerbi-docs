@@ -21,7 +21,7 @@ ms.reviewer: saurkumar
   
  You can change the measurement unit to be a numeric value. In this case, you do not specify minimum or maximum for the data; instead, you provide only the start and end values for each icon that the indicator uses.  
   
- Options such as measurement units can be set by using expressions. For more information, see [Expressions &#40;Power BI Report Builder&#41;](expressions-report-builder.md).  
+ Options such as measurement units can be set by using expressions. For more information, see [Expressions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs).  
   
 ## To use the numeric state measurement unit  
   
@@ -69,6 +69,6 @@ ms.reviewer: saurkumar
 6.  Select **OK**.
   
 ## Next steps  
- [Indicators &#40;Power BI Report Builder&#41;](indicators-report-builder.md)  
+ [Indicators &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/indicators-report-builder-and-ssrs)  
   
   
