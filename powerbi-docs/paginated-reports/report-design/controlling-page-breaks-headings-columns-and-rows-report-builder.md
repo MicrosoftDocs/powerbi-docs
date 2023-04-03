@@ -14,7 +14,7 @@ ms.reviewer: jonhp
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]md)]
 
- A page break divides a paginated report into separate pages for viewing and printing purposes. Page breaks determine how the content fits within a page, specific to the export format chosen. Hard paged foramts such as PDF or Image will strictly fit or push content to pages. Logical paged formats such as Excel, will detetmine a best fit between content size and the page. 
+ A page break divides a paginated report into separate pages for viewing and printing purposes. Page breaks determine how the content fits within a page, specific to the export format chosen. Hard-paged formats such as PDF or Image will strictly fit or push content to pages. Logical-paged formats such as Excel, will determine a best fit between content size and the page. 
   
  Adding page breaks may also improve performance of large reports when they are processed. A rendered page is displayed while the rest of the pages are rendered in the background. This allows you to begin viewing the initial pages of the report while waiting for additional pages to become available.  
   
