@@ -10,7 +10,7 @@ ms.custom: contperf-fy21q1, intro-deployment
 ms.date: 03/14/2023
 ---
 
-# The deployment pipeline process
+# The deployment pipelines process
 
 The deployment process lets you clone content from one stage in the deployment pipeline to another, typically from development to test, and from test to production.
 
