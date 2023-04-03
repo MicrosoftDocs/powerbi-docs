@@ -38,7 +38,7 @@ CountRows(scope, recursive)
 ## Remarks  
  **CountRows** counts all rows in the specified scope, including rows that have null values.  
   
- The value of *scope* cannot be an expression and must refer to the current scope or a containing scope.  
+ The value of *scope* can't be an expression and must refer to the current scope or a containing scope.  
   
  For more information, see [Aggregate Functions Reference &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference) and [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections).  
   

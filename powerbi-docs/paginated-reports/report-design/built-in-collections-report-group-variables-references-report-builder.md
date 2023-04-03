@@ -36,7 +36,7 @@ ms.reviewer: rodolfoc
   
 -   **Read-only use** Set a value once to create a constant for the report session, for example, to create a time stamp.  
   
-     Because expressions in text boxes are evaluated on-demand as a user pages through a report, dynamic values (for example, an expression that includes the `Now()` function, which returns the time of day) can return different values if you page forward and backward by using the **Back** button. By setting a the value of a report variable to the expression `=Now()`, and then adding the variable to your expression, you ensure the same value is used throughout report processing.  
+     Because expressions in text boxes are evaluated on-demand as a user pages through a report, dynamic values (for example, an expression that includes the `Now()` function, which returns the time of day) can return different values if you page forward and backward by using the **Back** button. By setting the value of a report variable to the expression `=Now()`, and then adding the variable to your expression, you ensure the same value is used throughout report processing.  
   
 -   **Read-write use** Set a value once and serialize the value within a report session. The read-write option for variables provides a better alternative than using a static variable in the Code block in the report definition.  
   
