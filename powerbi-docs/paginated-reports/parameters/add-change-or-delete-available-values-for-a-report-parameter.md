@@ -13,7 +13,7 @@ ms.reviewer: saurkumar
 ---
 # Add or modify available values for a Power BI paginated report parameter (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
   After you create a Power BI paginated report parameter, you can specify a list of available values to display to the user. An available values list limits the choices a user can make to only valid values for the parameter. In this article you learn to add, change, or delete available values for a Power BI paginated report parameter. 
   

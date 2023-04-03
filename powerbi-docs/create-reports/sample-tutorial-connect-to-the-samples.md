@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 02/27/2023
+ms.date: 04/03/2023
 LocalizationGroup: Samples
 ---
 # Tutorial: Explore a Power BI sample
@@ -69,13 +69,18 @@ With the built-in samples, Power BI gets a copy of that built-in sample and stor
 
 ## Explore your new content
 
-Now explore the dashboard, dataset, and report on your own. There are many different ways to navigate to your dashboards, reports, and datasets.
+Now explore the dashboard, dataset, and report on your own. There are many different ways to navigate to your dashboards, reports, and datasets. First, let's start from the dashboard.
 
-- If a tile was created by using [Power BI Q&A](power-bi-tutorial-q-and-a.md), the Q&A page opens when you select it.
-- If a tile was pinned from a report, the report opens.
-- If a tile was [pinned from Excel](service-dashboard-pin-tile-from-excel.md), Excel Online opens inside of Power BI.
+- If a tile was created by using [Power BI Q&A](#explore-in-qa), the Q&A page opens when you select it.
+- If a tile was [pinned from a report](#explore-the-report), the report opens.
+- If a tile was pinned from Excel, Excel Online opens inside of Power BI. 
 
-The first two of these methods are described in the following procedures.
+The first two of these methods are described in the following procedures. This tutorial doesn't have any tiles [pinned from Excel](service-dashboard-pin-tile-from-excel.md).
+
+You can also explore the dataset directly:
+
+- Try [quick insights](#explore-quick-insights).
+- Let Power BI [Auto-create a report](#create-a-report-from-the-dataset) for you.
 
 ### Explore in Q&A
 
@@ -117,7 +122,7 @@ The Q&A feature in the Power BI service lets you explore your data in your own w
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-report.png" alt-text="Screenshot showing the District Monthly Sales report page." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-report.png":::
 
-1. For suggestions on exploring the report, see [Dive deeper into the data](sample-retail-analysis.md#dive-deeper-into-the-data).
+1. Check out [Dive deeper into the data](sample-retail-analysis.md#use-qa-to-dig-deeper-in-the-dashboard) in the article "Retail Analysis sample for Power BI: Take a tour" for suggestions on exploring the report.
 
 ### Explore quick insights
 

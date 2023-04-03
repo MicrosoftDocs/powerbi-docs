@@ -12,7 +12,7 @@ ms.date: 01/18/2023
 ---
 # Format numbers and dates in paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
   You can format numbers and dates in data regions in a Power BI paginated report by selecting a format from the **Number** page of the corresponding data region's **Properties** dialog box.  
   

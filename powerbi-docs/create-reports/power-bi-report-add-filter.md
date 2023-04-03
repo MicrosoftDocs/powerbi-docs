@@ -41,7 +41,7 @@ This article explains how to set the different levels.
 
 Visuals have two different kinds of filters. The fields that are in a visual are automatically filters for that visual. As the report designer, you can identify a field that isn't already the visual, and add that field directly to the **Visual level filters** bucket.
  
-By the way, this article uses the Retail Analysis sample, if you'd like to install it and follow along. Install the [Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample).
+By the way, this article uses the Retail Analysis sample, if you'd like to install it and follow along. Install the [Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service).
 
 ### Filter with a field that's not in the visual
 

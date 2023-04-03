@@ -106,7 +106,7 @@ You can check the status of dataset conversions to and from Premium Files by usi
 
 ## Dataset eviction
 
-Dataset eviction is a Premium feature that allows the sum of dataset sizes to be significantly greater than the memory available for the purchased SKU size of the capacity. A single dataset is still constrained to the memory limits of the SKU. Power BI uses dynamic memory management to evict inactive datasets from memory. Datasets are evicted so that Power BI can load other datasets to address user queries. For more info on dynamic memory management, see [Dataset eviction](service-premium-large-models.md#dataset-eviction).
+Dataset eviction is a Premium feature that allows the sum of dataset sizes to be significantly greater than the memory available for the purchased SKU size of the capacity. A single dataset is still constrained to the memory limits of the SKU. Power BI uses dynamic memory management to evict inactive datasets from memory. Datasets are evicted so that Power BI can load other datasets to address user queries.
 
 >[!NOTE]
 >If you have to wait for an evicted dataset to be reloaded, you might experience a noticeable delay.

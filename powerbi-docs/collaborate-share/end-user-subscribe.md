@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 02/21/2023
+ms.date: 03/30/2023
 LocalizationGroup: Common tasks
 ---
 
@@ -124,9 +124,9 @@ When creating a subscription, you can add other email addresses in the same doma
 |[Distribution groups](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)    |    Yes     |
 |[Dynamic distribution groups](/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)     |      Yes   |
 |[Security groups](/microsoft-365/admin/email/create-edit-or-delete-a-security-group)     |    No     |
-|[Mail-enabled security groups](/microsoft-365/admin/create-groups/compare-groups.md)    |     Yes    |
+|[Mail-enabled security groups](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide#microsoft-365-groups&preserve-view=true)    |     Yes    |
 
-
+There are different ways of creating a Microsoft 365 group. For example, you can create a group in Outlook, a distribution group in Teams, or a mail-enabled security group. The Microsoft 365 distribution group for Teams does not work for mail enablement, so can't be used for direct sharing and email subscriptions.
 
 > [!NOTE]
 > Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and don't support subscribing group aliases.  

@@ -12,6 +12,8 @@ LocalizationGroup: Premium
 ---
 # Paginated reports capacity planning
 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+
 Learn how to plan your [Premium capacity](./../enterprise/service-premium-what-is.md) to get the best performance out of your [paginated reports](paginated-reports-report-builder-power-bi.md), at a minimum cost. If you're migrating to Power BI from a different business intelligence tool, consider reading the articles listed below before you decide which capacity to use.
 
 * [Power BI migration overview](./../guidance/powerbi-migration-overview.md).

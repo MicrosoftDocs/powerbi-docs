@@ -13,7 +13,7 @@ ms.reviewer: monaraya
 ---
 # Format axis labels on a paginated report chart (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
 Coordinate-based chart types (column, bar, area, point, line, and range) have two axes that are used to categorize and display data relationships in a paginated report. Different types of formatting are applied to each axis.  
   
