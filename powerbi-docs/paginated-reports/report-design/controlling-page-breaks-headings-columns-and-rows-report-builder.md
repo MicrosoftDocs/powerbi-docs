@@ -12,7 +12,7 @@ ms.reviewer: jonhp
 ---
 # Controlling page breaks, headings, columns, and rows in paginated reports (Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](https://github.com/MicrosoftDocs/powerbi-docs-pr/includes/applies-yes-report-builder-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]md)]
 
  A page break divides a paginated report into separate pages for viewing and printing purposes. Page breaks determine how the content fits within a page, specific to the export format chosen. Hard paged foramts such as PDF or Image will strictly fit or push content to pages. Logical paged formats such as Excel, will detetmine a best fit between content size and the page. 
   
