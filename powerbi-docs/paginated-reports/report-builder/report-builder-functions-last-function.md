@@ -12,7 +12,7 @@ ms.reviewer: spendrick
 ---
 # Report Builder functions - Last function in a Power BI paginated report
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
   Returns the last value in the given scope of the specified expression in a Power BI paginated report.  
   

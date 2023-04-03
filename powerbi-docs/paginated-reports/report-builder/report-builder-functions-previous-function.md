@@ -12,7 +12,7 @@ ms.reviewer: spendrick
 ---
 # Report Builder functions - Previous function in a Power BI paginated report
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
   Returns the value or the specified aggregate value for the previous instance of an item within the specified scope in a Power BI paginated report.  
   

@@ -12,7 +12,7 @@ ms.reviewer: spendrick
 ---
 # Report Builder functions - Multilookup function in a Power BI paginated report
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
   Returns the set of first-match values for the specified set of names from a dataset that contains name/value pairs in a Power BI paginated report.  
   

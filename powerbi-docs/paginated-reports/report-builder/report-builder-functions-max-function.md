@@ -12,7 +12,7 @@ ms.reviewer: spendrick
 ---
 # Report Builder functions - Max function in a Power BI paginated report
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
   Returns the maximum value of all non-null numeric values specified by the expression, in the context of the given scope in a Power BI paginated report.  
   
