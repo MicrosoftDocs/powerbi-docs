@@ -29,7 +29,7 @@ ms.reviewer: saurkumar
   
      Optionally, click the **Expression** (*fx*) button to edit an expression that sets the value of the **Color** option.  
   
-     If you clicked **More Colors**, the **Select Color** dialog box opens, where you can choose from a wide array of colors. For more information about its options, see [Select Color Dialog Box &#40;Power BI Report Builder&#41;](/../sql/formatting-lines-colors-and-images-report-builder-and-ssrs). Click **OK** to close the **Select Color** dialog box.  
+     If you clicked **More Colors**, the **Select Color** dialog box opens, where you can choose from a wide array of colors. For more information about its options, see [Select Color Dialog Box &#40;Power BI Report Builder&#41;](../sql/formatting-lines-colors-and-images-report-builder-and-ssrs). Click **OK** to close the **Select Color** dialog box.  
   
 4.  Click **OK**.  
   

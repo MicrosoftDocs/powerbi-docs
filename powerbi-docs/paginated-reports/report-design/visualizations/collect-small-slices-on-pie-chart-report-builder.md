@@ -19,7 +19,7 @@ Pie charts with too many slices can look cluttered. Learn to collect many small 
  
  To collect small slices into one slice, first decide whether your threshold for collecting small slices is measured as a percentage of the pie chart or as a fixed value. 
  
- The [Tutorial: Add a Pie Chart to Your Report (Power BI Report Builder)](../tutorial-add-a-pie-chart-to-your-report-report-builder) walks you through collecting small slices into a single slice, if you'd like to try this with sample data first.
+ The [Tutorial: Add a Pie Chart to Your Report (Power BI Report Builder)](../sql/tutorial-add-a-pie-chart-to-your-report-report-builder) walks you through collecting small slices into a single slice, if you'd like to try this with sample data first.
  
  ![Screenshot of a report builder pie chart showing the other slice.](./media/paginated-reports-visualizations/report-builder-pie-chart-other-slice.png "report-builder-pie-chart-other-slice")
   
@@ -78,7 +78,7 @@ Pie charts with too many slices can look cluttered. Learn to collect many small 
 >  You cannot format the secondary pie chart. For this reason, it is strongly recommended to use the first approach when collecting pie slices.  
   
 ## Next steps  
-* [Tutorial: Add a Pie Chart to Your Report (Report Builder)](../tutorial-add-a-pie-chart-to-your-report-report-builder)
+* [Tutorial: Add a Pie Chart to Your Report (Report Builder)](../sql/tutorial-add-a-pie-chart-to-your-report-report-builder)
 *  [Pie Charts &#40;Power BI Report Builder&#41;](pie-charts-report-builder.md)   
 *  [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)   
 *  [Display Data Point Labels Outside a Pie Chart &#40;Power BI Report Builder&#41;](display-data-point-labels-outside-pie-chart-report-builder.md)   
