@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/18/2023
+ms.date: 04/04/2023
 LocalizationGroup: Premium
 ---
 # Paginated reports capacity planning
@@ -32,7 +32,7 @@ When you plan your capacity, consider the following:
 
 * The amount of data retrieved by the report. The more data the report needs, the more resources it requires from your capacity.
 
-* The time it takes to retrieve data from different types of data sources including on-prem data sources. Retrieving data from several data sources might require different connectors, drivers or gateways.
+* The way your report retrieves data. When you use connectors, drivers or gateways, data retrieval might take longer, require more resources and as a result become more expensive.
 
 * The number of report parameters and parameter values used by your reports. More values and parameters, require more resources from your capacity.
 
