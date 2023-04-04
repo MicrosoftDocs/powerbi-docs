@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 02/16/2023
+ms.date: 04/04/2023
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -21,7 +21,7 @@ When private link connections are used, those connections go through the Microso
 To learn more about Azure Private Link, see [What is Azure Private Link](/azure/private-link/private-link-overview).
 
 >[!IMPORTANT]
->Private endpoints aren't supported on Microsoft Fabric. Fore more information, see [Compliance settings](/fabric/admin/admin-compliance).
+>Some private endpoints aren't supported on Microsoft Fabric. To see which endpoints aren't supported in Microsoft Fabric and to override this restriction, see [Compliance settings](/fabric/admin/admin-compliance).
 
 ## Understand private endpoints
 
