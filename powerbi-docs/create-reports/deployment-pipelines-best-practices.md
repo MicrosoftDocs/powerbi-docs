@@ -1,13 +1,14 @@
 ---
 title: Best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool
 description: Learn about the best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.date: 01/04/2023
 ms.custom: intro-deployment
+ms.search.form: Best practices for Deployment pipelines
 ---
 
 # Deployment pipelines best practices
