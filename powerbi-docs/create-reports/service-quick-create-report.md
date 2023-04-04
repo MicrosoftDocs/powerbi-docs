@@ -6,6 +6,7 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
+ms.search.form: Create quick reports
 ms.topic: how-to
 ms.date: 01/10/2023
 LocalizationGroup: Reports

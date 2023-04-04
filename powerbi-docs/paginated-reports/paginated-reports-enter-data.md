@@ -12,7 +12,7 @@ ms.date: 01/25/2023
 
 # Enter data directly into a paginated report in Report Builder
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
 This article explains a feature in Microsoft Power BI Report Builder that lets you enter data directly into a paginated report as an embedded dataset. You can type the data directly in a dataset in your report, or paste it from another program like Microsoft Excel. After you create a dataset by entering data, you can use it just like you would any other embedded dataset you've created. Plus, you can add more than one table and then use one as a filter for the other. This feature is especially useful for small, static datasets you might need to use in your report, like report parameters.
  

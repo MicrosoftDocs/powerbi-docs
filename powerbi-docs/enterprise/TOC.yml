@@ -14,6 +14,8 @@
         href: aggregations-auto-configure.md
     - name: Power BI site reliability engineering model
       href: service-admin-site-reliability-engineering-model.md
+    - name: Release management and deployment process
+      href: service-admin-release-management.md     
     - name: Bring your own encryption keys
       href: service-encryption-byok.md
     - name: Using Azure AD B2B
@@ -167,7 +169,7 @@
       href: service-admin-ols.md     
     - name: Privacy levels
       href: desktop-privacy-levels.md
-    - name: Using service tags with Power BI
+    - name: Use service tags with Power BI
       href: service-premium-service-tags.md
     - name: Use private links for Power BI
       href: service-security-private-links.md

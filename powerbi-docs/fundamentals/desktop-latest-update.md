@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/14/2022
+ms.date: 03/17/2023
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## December 2022 Update (2.112.283.0)
+## March 2023 Update (2.115.663.0)
 
-December's updates are a sleigh ride of fun, making us want to go door-to-door and sing about our new and updated features. May your data analytics always be cheery and bright. 
+We feel lucky as a four-leaf clover to be sharing our March updates to Power BI with all of you. We hope they're like a pot of gold at the end of a data-driven rainbow, full of compelling visuals and business intelligence capabilities. 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -43,45 +43,44 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Reporting
-* Slicer type formatting moved to Format Pane  [[video]](https://youtu.be/2O4EtGlq93k?t=12)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2022-feature-summary/#post-21693-_Toc121395729) 
-
-
-### Modeling
-* Making it easier to do comparison calculations  [[video]](https://youtu.be/2O4EtGlq93k?t=65)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2022-feature-summary/#post-21693-_Toc121395731) [[article]](../create-reports/desktop-optimize-ribbon.md)
+* Apply all slicers button, clear all slicers button, optimization presets update   [[video]](https://youtu.be/Tbh0tFEfoXw?t=193)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2023-feature-summary/#post-22359-_Toc128998033) [[article]](../create-reports/buttons-apply-all-clear-all-slicers.md)
+* Format pane - new styling    [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2023-feature-summary/#post-22359-_Toc128998034)
+* On-object interaction (preview)  [[video]](https://youtu.be/Tbh0tFEfoXw?t=32)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2023-feature-summary/#post-22359-_Toc128998035) [[article]](../create-reports/power-bi-on-object-interaction.md)
+* Visual container improvements   [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2023-feature-summary/#post-22359-_Toc128998036) [[article]](desktop-format-pane.md)
 
 
 ### Data connectivity
-* Many updated data connectors [[video]](https://youtu.be/2O4EtGlq93k?t=203)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2022-feature-summary/#post-21693-_Toc121395732)  
+* Many updated data connectors  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2023-feature-summary/#post-22359-_Toc128998037)  
 
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
 
 ### Visuals
-* New visuals in AppSource [[video]](https://youtu.be/2O4EtGlq93k?t=292)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2022-feature-summary/#post-21693-_Toc121395747)
+* New visuals in AppSource    [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2023-feature-summary/#post-21693-_Toc128998051)
 
 
 # [Power BI service](#tab/powerbi-service)
 
 The following updates are new to the Power BI service this month:
 
-* Power BI org app Multiple Audiences now generally available [[video]](https://youtu.be/2O4EtGlq93k?t=232)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2022-feature-summary/#post-21693-_Toc121395740) [[article]](../connect-data/service-excel-workbook-files.md#streamlined-upload-to-power-bi)
-* Deprecation of *Getting Started* in expanded view  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2022-feature-summary/#post-21693-_Toc121395741) 
-* Changes to the *Get Data* experience  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2022-feature-summary/#post-21693-_Toc121395749)
-
+* Storytelling in PowerPoint (general availability) [[video]](https://youtu.be/Tbh0tFEfoXw?t=585)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2023-feature-summary/#post-21693-_Toc128998044)
+* Power BI org app multiple audiences (general availability)   [[video]](https://youtu.be/Tbh0tFEfoXw?t=368)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2023-feature-summary/#post-21693-_Toc128998045)
+* New Scanner API scenarios    [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2023-feature-summary/#post-21693-_Toc128998046)
+* Email subscriptions   [[video]](https://youtu.be/Tbh0tFEfoXw?t=462)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2023-feature-summary/#post-21693-_Toc128998047)
 
 ---
 
 
 
 
-For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-december-2022-feature-summary/).
+For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-march-2023-feature-summary/).
 
 
 ### Power BI monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post.
 
-> [!VIDEO https://www.youtube.com/embed/2O4EtGlq93k]
+> [!VIDEO https://www.youtube.com/embed/Tbh0tFEfoXw]
 
 > [!NOTE]
 > The video might use earlier versions of Power BI Desktop or the Power BI service.

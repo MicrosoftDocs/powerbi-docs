@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-custom-visuals
   ms.topic: faq
-  ms.date: 09/29/2022
+  ms.date: 03/28/2023
 title: Frequently asked questions about Custom visual license management and transactability
 summary: |
   This article answers some of the questions users often have about how to set up, pay for, and manage licenses for custom Power BI visuals that they purchase from [AppSource](https://appsource.microsoft.com/).
@@ -74,6 +74,13 @@ sections:
           Add the purchase order number in the appropriate space.
 
           :::image type="content" source="./media/licensing-faq/add-purchase-order-number.png" alt-text="Screenshot of billing profile with box for adding purchase order number.":::
+
+      - question: |
+          How can I download my receipt after purchase?
+        answer: |
+          After you complete your purchase, you can find your receipt and download it as PDF from the Microsoft 365 admin center under Bills & payments - Invoices. 
+
+          :::image type="content" source="./media/licensing-faq/receipt-download.png" alt-text="Screenshot of Bills & payments - Invoices page with Download PDF in upper right corner.":::
 
       - question: |
           Can we use a visual without having to upload it to organization visual?

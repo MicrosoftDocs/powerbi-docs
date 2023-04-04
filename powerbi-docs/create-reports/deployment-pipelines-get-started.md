@@ -7,7 +7,8 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-get-started
-ms.date: 01/18/2023
+ms.date: 04/02/2023
+ms.search.form: Get started using Deployment pipelines, Create a deployment pipeline, Introduction to Deployment pipelines
 ---
 
 # Get started with deployment pipelines
@@ -21,7 +22,7 @@ You can also complete the [Create and manage a Power BI deployment pipeline](/tr
 >[!NOTE]
 >In a deployment pipeline, one Premium workspace is assigned to each stage. Before you start working with your pipeline in production, review the [capacity requirements](deployment-pipelines-troubleshooting.yml#what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline-) for the pipeline's workspaces.
 
-## Accessing deployment pipelines
+## Prerequisites
 
 You'll be able to access the deployment pipelines feature, if the following conditions are met:
 
@@ -99,6 +100,8 @@ When reviewing the test and production stage cards, you can see the last deploym
 
 Deployment time is useful for establishing when a stage was last updated. It can also be helpful if you want to track time between test and production deployments.
 
+To examine the differences between the two pipelines before you deploy, see [compare content in different deployment stages](./deployment-pipelines-compare.md).
+
 ## Step 5 - Create deployment rules (optional)
 
 When you're working in a deployment pipeline, different stages may have different configurations. For example, each stage can have different databases or different query parameters. The development stage might query sample data from the database, while the test and production stages query the entire database.
@@ -106,43 +109,6 @@ When you're working in a deployment pipeline, different stages may have differen
 When you deploy content between pipeline stages, configuring deployment rules enables you to allow changes to content, while keeping some settings intact. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
 
 [Read about how to define deployment rules.](deployment-pipelines-create-rules.md)
-
-## Compare stages
-
-When two sequential stages have content, the content is compared based on the content items metadata. This comparison doesn't include comparing data or refresh time between stages.
-
-:::image type="content" source="media/deployment-pipelines-get-started/deployment-flow.png" alt-text="A screenshot showing a deployment pipeline with its comparison indicators." lightbox="media/deployment-pipelines-get-started/deployment-flow.png":::
-
-To allow a quick visual insight into the differences between two sequential stages, a comparison icon indicator appears between them. The comparison indicator has two states:
-
-* **Green indicator** – The metadata for each content item in both stages, is the same.
-
-* **Orange indicator** - Appears if one of these conditions is met:
-  * Some of the content items in each stage, were changed or updated (have different metadata).
-  * There is a difference in the number of items between the stages.
-
-When two sequential stages aren't the same, a **compare** link appears underneath the orange comparison icon. Clicking the link opens the content item list in both stages in Compare view. Compare view helps you track changes or differences between items, in each pipeline stage. Changed items get one of the following labels:
-
-* **New** – A new item in the source stage. This is an item that doesn't exist in the target stage. After deployment, this item will be cloned to the target stage.
-
-* **Different** – An item that exists both in the source and the target stage, were one of the versions was changed after the last deployment. After deployment, the item in the source stage will overwrite the item in the target stage, regardless of where the change was made.
-
-    Datasets with configured deployment rules that haven't been deployed, are also marked as *different*. This is because deployment rules are not applied until the datasets are deployed from the source stage to the target stage, which includes the configured rules.
-
-* **Missing from** – This label indicates that an item appears in the target stage, but not in the source stage.
-
-    >[!NOTE]
-    >Deployment will not impact *missing from* items.
-
-The comparison is designed to help you understand the difference between the stages. In the comparison display, items are arranged according to the logic listed below.
-
-1. The source workspace items are ordered alphabetically within groups, based on their type. The groups are ordered according to the flow of data. For example, first datasets, then reports, and lastly dashboards.
-
-2. The target workspace is ordered according to the source workspace. Each item resides in the same row as its equivalent item in the source stage.
-
-3. Items that exist in the target workspace but not in the source workspace, are displayed at the bottom of their type group, in alphabetical order.
-
-:::image type="content" source="media/deployment-pipelines-get-started/compare.png" alt-text="A screenshot showing the compare option which expands the compare view and allows comparing items between deployment pipeline stages." lightbox="media/deployment-pipelines-get-started/compare.png":::
 
 ## Next steps
 

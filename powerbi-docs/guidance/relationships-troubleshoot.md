@@ -1,8 +1,8 @@
 ---
 title: Relationship troubleshooting guidance
 description: Guidance for troubleshooting model relationship issues.
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource

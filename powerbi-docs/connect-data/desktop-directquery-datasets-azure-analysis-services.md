@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 1/31/2023
+ms.date: 3/24/2023
 LocalizationGroup: Connect to data
 ---
 # Using DirectQuery for Power BI datasets and Analysis Services (preview)
@@ -19,6 +19,14 @@ With DirectQuery for Power BI datasets and Analysis Services, you can use Direct
 Since the functionality is currently in preview, you must first enable it. To do so, in Power BI Desktop go to **File > Options and settings > Options**, and in the **Preview features** section, select the **DirectQuery for Power BI datasets and Analysis Services** checkbox to enable this preview feature. You may need to restart Power BI Desktop for the change to take effect.
 
 ## Managing this feature
+
+To enable this feature, your tenant needs to have the following switches enabled:
+
+- [Allow XMLA Endpoints and Analyze in Excel with on-premises datasets](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets). If this switch is disabled a DirectQuery connection to a Power BI dataset cannot be made.
+- [Users can work with Power BI datasets in Excel using a live connection](../admin/service-admin-portal-export-sharing.md#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection). If this switch is disabled, users cannot make live connections to Power BI datasets so the [**Make changes to this model** button](#using-directquery-for-live-connections) cannot be reached.
+- [Allow DirectQuery connection to Power BI datasets](../admin/service-admin-portal-export-sharing.md#allow-directquery-connections-to-power-bi-datasets). See below for more information on this switch and the effect of disabling it.
+
+Additionally, for Premium capacities and Premium Per User the ["XMLA endpoint" setting should be enabled and set to to either "Read Only" or "Read/Write"](../enterprise/service-premium-connect-tools.md#enable-xmla-read-write).
 
 Tenant administrators can enable or disable DirectQuery connections to Power BI datasets in the admin portal. While this is enabled by default, disabling it will effectively stop users from publishing new composite models on Power BI datasets to the service.
 
@@ -33,6 +41,8 @@ This way you can still explore the dataset in your local Power BI Desktop enviro
 ![Error message that blocks publication of a composite model that uses a Power BI dataset because DirectQuery connections are not allowed by the admin.](media/desktop-directquery-datasets-azure-analysis-services/directquery-connection-disabled-publish-error.png)
 
 Note that live connections to Power BI datasets are not influenced by the switch, nor are live or DirectQuery connections to Analysis Services. These will continue to work regardless of if the switch has been turned off. Also, any published reports that leverage a composite model on a Power BI dataset will continue to work even if the switch has been turned off after they were published.
+
+
 
 ## Using DirectQuery for live connections
 
@@ -105,17 +115,21 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 - To build reports in the Power BI service on a composite model that's based on another dataset, all credentials must be set. On the refresh credential settings page, for Analysis Services sources, the following error will appear, even though the credentials have been set:
     
     ![Credentials false warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-06.png)
-    As this is confusing and incorrect, this is something we'll take care of soon.
+    The error text information is: *Your data source can't be refreshed because the credentials are invalid. Please update your credentials and try again.*
+
+    Since the error is confusing and incorrect, it will be corrected soon.
+
+- When sharing a report and dataset built using this feature either directly or through an app, please make sure to give permissions to all datasets in the chain.
 
 - Build permissions are required to view reports built using this feature when one or more datasets in the chain are in Pro workspaces. If the creator a report has left the company or their Build permissions has been revoked since they created the report, Build permissions will also be required on all datasets in the chain. 
 
-- To be able to make a DirectQuery connection to a Power BI dataset, your tenant needs to have ["Allow XMLA Endpoints and Analyze in Excel with on-premises datasets"](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) enabled.
+- To be able to make a DirectQuery connection to a Power BI dataset, your tenant needs to have ["Allow XMLA Endpoints and Analyze in Excel with on-premises datasets"](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) and ["Users can work with Power BI datasets in Excel using a live connection"](../admin/service-admin-portal-export-sharing.md#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection) enabled.
 
 - Connections to a SQL Server 2022 and later Analysis Services server on-premises or IAAS require an [On-premises data gateway](/power-bi/connect-data/service-gateway-onprem) (Standard mode).
 
 - All connections to remote Power BI Datasets models are made using single sign-on. Authenticating with [a service principal](../developer/embedded/embed-service-principal.md) isn't currently supported.
 
-- For premium capacities, the ["XMLA endpoint" should be set to either "Read Only" or "Read/Write"](../enterprise/service-premium-connect-tools.md#enable-xmla-read-write).
+- For Premium capacities and Premium Per User the ["XMLA endpoint" should be set to either "Read Only" or "Read/Write"](../enterprise/service-premium-connect-tools.md#enable-xmla-read-write).
 
 - RLS rules will be applied on the source on which they're defined, but won't be applied to any other datasets in the model. RLS defined in the report won't be applied to remote sources, and RLS set on remote sources won't be applied to other data sources. Also, you can't define RLS on a table from another source group nor can you define RLS on a local table that has a relationship to another source group.
 

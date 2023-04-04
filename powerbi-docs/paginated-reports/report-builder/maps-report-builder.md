@@ -4,14 +4,14 @@ description: Get acquainted with how to add a map to your paginated report showi
 ms.date: 02/13/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: monaraya
 ---
 # Maps in a paginated report (Power BI Report Builder)
+
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
   To visualize business data against a geographical background, you can add a map to your Power BI paginated report. The type of map that you select depends on what information that you want to communicate in your report. You can add a map that displays locations only, or a bubble map that varies bubble size based on number of households for an area, or a marker map that varies marker style based on the most profitable product for each store, or a line map that displays routes between stores.  
   
@@ -31,11 +31,11 @@ ms.reviewer: monaraya
   
 - Collect the information that you must have to specify spatial data sources, spatial data, analytical data sources, and analytical data. This includes connection strings to spatial data sources, specifying the type of spatial data that you need, and making sure that your report data includes match fields that associate the spatial data and analytical data.  
   
-- Run the Map wizard to add a map to your report. This adds the first map layer to the map. Run the Map Layer wizard to create additional layers or modify existing layers. The wizards provide an easy way to get started. For more information, see [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/map-wizard-and-map-layer-wizard-report-builder-and-ssrs).  
+- Run the Map wizard to add a map to your report. This adds the first map layer to the map. Run the Map Layer wizard to create additional layers or modify existing layers. The wizards provide an easy way to get started. For more information, see [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](map-wizard-map-layer-wizard-report-builder.md).  
   
 - After you preview the map in your report, you will probably want to adjust the map view, change the way your data varies the display of each layer, provide legends to help your users interpret the data, and adjust the resolution to provide a good viewing experience for your users.  
   
- For more information, see [Plan a Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/plan-a-map-report-report-builder-and-ssrs).  
+ For more information, see [Plan a Map Report &#40;Power BI Report Builder&#41;](plan-map-report-report-builder.md).  
   
 ##  <a name="AddingData"></a> Adding data to a map  
  A map uses two types of data: spatial data and analytical data. Spatial data defines the appearance of the map whereas analytical data provides the values that are associated with the map. For example, spatial data defines the locations of cities in an area whereas analytical data provides the population for each city.  
@@ -61,11 +61,11 @@ ms.reviewer: monaraya
 - **Map Gallery reports.** Spatial data is embedded in reports located in the map gallery. By default, the Map Gallery is installed in *\<drive>*:\Program Files\Power BI Report Builder\MapGallery.  
   
   
-- **SQL Server spatial data stored in a database.** You can use a query that specifies **SQLGeometry** or **SQLGeography** data types from a  relational database. For more information, see [Spatial Data Types Overview](/sql/relational-databases/spatial/spatial-data-types-overview.md).  
+- **SQL Server spatial data stored in a database.** You can use a query that specifies **SQLGeometry** or **SQLGeography** data types from a  relational database. For more information, see [Spatial Data Types Overview](/sql/relational-databases/spatial/spatial-data-types-overview).  
   
      In the result set that you see in the query designer, each row of spatial data is treated as a unit and stored in a single map element. For example, if there are multiple points that are defined in one row in the result set, display properties apply to all points in that map element.  
   
-- **Custom locations that you create.** You can manually add locations as embedded points to an embedded point layer. For more information, see [Add Custom Locations to a Map &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-custom-locations-to-a-map-report-builder-and-ssrs).  
+- **Custom locations that you create.** You can manually add locations as embedded points to an embedded point layer. For more information, see [Add Custom Locations to a Map &#40;Power BI Report Builder&#41;](add-custom-locations-map-report-builder.md).  
   
 #### Spatial data in design view  
  In Design view, the report processor displays sample spatial data to help you design the map layer. The data that you see depends on the availability of the spatial data:  
@@ -131,17 +131,15 @@ ms.reviewer: monaraya
   
 - Tile type. The following styles are supported:  
   
-    - **Road.** Displays a road map style that has a white background, roads, and label text.  
-  
+    - **Road.** Displays a road map style that has a white background, roads, and label text.   
     - **Aerial.** Displays an aerial image style without text.  
-  
     - **Hybrid.** Displays a combination of the **Road** and **Aerial** styles.  
   
 - The language for the display text on the tiles.  
   
 - Whether to use a secure connection to retrieve the tiles from the Bing Maps Web service.  
   
- For step-by-step instructions, see [Add, Change, or Delete a Map or Map Layer &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs).  
+ For step-by-step instructions, see [Add, Change, or Delete a Map or Map Layer (Report Builder)](add-change-delete-map-map-layer-report-builder.md).  
   
  For more information about tiles, see [Bing Maps Tile System](/bingmaps/articles/bing-maps-tile-system). For more information about the use of Bing map tiles in your report, see [Additional Terms of Use](https://go.microsoft.com/fwlink/?LinkId=151371).  
   
@@ -164,7 +162,7 @@ ms.reviewer: monaraya
   
  ![Screenshot of the Map Layers section showing the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.](../media/paginated-reports-maps/map-layer-zone.png "Screenshot of the Map Layers section showing the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.")  
   
- For more information about map layers, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs).  
+ For more information about map layers, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](add-change-delete-map-map-layer-report-builder.md).  
   
 ### Varying display properties for points, lines, and polygons  
  Display options for map elements can be set at the layer level, by using rules for the layer, or on individual elements. For example, you can set display properties for all points on a layer, or you can set rules that control the display properties for all points on a layer whether or not they are embedded, or you can override display property settings for specific embedded points.  
@@ -207,21 +205,20 @@ ms.reviewer: monaraya
   
  If you do not see the result that you want when you view a map report, the root causes can come from a variety of issues. To help you isolate and understand each issue, it helps to work with one layer at a time. Use the Map pane to select a layer and easily toggle its visibility.  
   
- For more information about map report issues, see [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/troubleshoot-reports-map-reports-report-builder-and-ssrs)  
+ For more information about map report issues, see [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md)  
   
 ##  <a name="HowTo"></a> How-to topics  
  This section lists procedures that show you, step by step, how to work with maps and map layers in your reports.  
   
-- [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs)   
+- [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](add-change-delete-map-map-layer-report-builder.md)   
 - [Change map legends, color scale, and associated rules in a paginated report (Power BI Report Builder)](change-map-legends-color-scale-associated-rules-report-builder.md)
-- [Add Custom Locations to a Map &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-custom-locations-to-a-map-report-builder-and-ssrs)  
+- [Add Custom Locations to a Map &#40;Power BI Report Builder&#41;](add-custom-locations-map-report-builder.md)  
   
 ##  <a name="Section"></a> Next steps
 
-- [Plan a Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/plan-a-map-report-report-builder-and-ssrs)  
-- [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/map-wizard-and-map-layer-wizard-report-builder-and-ssrs)  
+- [Plan a Map Report &#40;Power BI Report Builder&#41;](plan-map-report-report-builder.md)  
+- [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](map-wizard-map-layer-wizard-report-builder.md)  
 - [Customize the display of a map or map layer in a paginated report (Power BI Report Builder)](customize-data-display-map-map-layer-report-builder.md)
 - [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data)  
-- [Add Custom Locations to a Map &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-custom-locations-to-a-map-report-builder-and-ssrs)  
+- [Add Custom Locations to a Map &#40;Power BI Report Builder&#41;](add-custom-locations-map-report-builder.md)  
 - [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/troubleshoot-reports-map-reports-report-builder-and-ssrs)  
-  

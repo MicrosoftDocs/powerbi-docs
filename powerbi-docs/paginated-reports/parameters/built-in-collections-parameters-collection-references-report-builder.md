@@ -10,7 +10,7 @@ ms.author: maggies
 ---
 # Built-in parameters collection references in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
   Paginated report parameters are one of the built-in collections you can reference from an expression in Power BI Report Builder. By including parameters in an expression, you can customize report data and appearance based on choices a user makes. Expressions can be used for any report item property or text box property that provides the (*Fx*) or \<**Expression**> option. Expressions are also used to control report content and appearance in other ways. For more information, see [Expression Examples &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs).  
   

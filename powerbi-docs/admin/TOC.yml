@@ -25,9 +25,9 @@
     - name: Share metadata with Microsoft 365 services
       href: admin-share-power-bi-metadata-microsoft-365-services.md
     - name: Find where data is stored
-      href: service-admin-where-is-my-tenant-located.md
-    - name: Data storage for cross-service capabilities
-      href: service-admin-m365-data-access-storage.md      
+      href: service-admin-where-is-my-tenant-located.md  
+    - name: Configure Multi-Geo support for Power BI Premium
+      href: service-admin-premium-multi-geo.md           
     - name: Move between regions
       href: /power-bi/support/service-admin-region-move
     - name: Track service health

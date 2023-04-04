@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/22/2022
+ms.date: 02/16/2023
 LocalizationGroup: Premium 
 ---
 
@@ -27,11 +27,19 @@ Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo su
 
 ## Enable and configure
 
-For new capacities, enable Multi-Geo by selecting a region other than the default region from the dropdown. Each available capacity shows the region where it's currently located, such as **West Central US**.
+Enable Multi-Geo by selecting a region other than the default region when you're creating a new capacity. Once a capacity's created, it shows the region where it's currently located.
 
-![Screenshot showing the capacity size settings screen, used to change capacity size and region.](media/service-admin-premium-multi-geo/power-bi-multi-geo-capacity-size.png)
+Follow these steps to change the default capacity region when you're creating a new capacity.
 
-After you've created capacity, it remains in that region, and any workspaces created will have their content stored in that region. You can migrate workspaces from one region to another through the dropdown on the workspace settings screen.
+1. In Power BI service, select **settings** and from the menu select **Admin portal**.
+
+2. In the *Admin portal*, select **Capacity settings**.
+
+3. Select **Set up new capacity**.
+
+4. From the **Region** dropdown menu, select the region you want to use for this capacity.
+
+After you've created a capacity, it remains in that region, and any workspaces created under it, will have their content stored in that region. You can migrate workspaces from one region to another through the dropdown on the workspace settings screen.
 
 ![Screenshot showing the edit workspace settings screen to change the currently selected region.](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
 

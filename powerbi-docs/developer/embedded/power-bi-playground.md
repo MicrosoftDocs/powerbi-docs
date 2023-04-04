@@ -1,13 +1,13 @@
 ---
 title: What is the Power BI embedded analytics playground
-description: Learn about the Power BI Embedded analytics playground offering in Power BI embedded analytics.
+description: Learn about the Power BI Embedded analytics playground that lets you learn, explore, and try out Power BI embedded analytics.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 11/16/2022
+ms.date: 03/03/2023
 ms.custom: intro-overview
 ---
 
@@ -19,25 +19,26 @@ The [Power BI embedded analytics playground](https://go.microsoft.com/fwlink/?li
 
 :::image type="content" source="media/power-bi-playground/playground-home.png" alt-text="A screenshot of the playground home page.":::
 
-The playground gives you hands-on coding experience, and lets you embed your own reports, and interact with Power BI client APIs giving you instant results.
-The playground has the following main experiences:
+The playground gives you hands-on coding experience. It also lets you embed your own reports and interact with Power BI client APIs that give you instant results.
+
+The playground provides the following main experiences:
 
 * [Developer sandbox](#developer-sandbox)
-* [Explore our APIs](#explore-our-apis)
+* [Explore the APIs](#explore-our-apis)
 * [Showcases](#showcases)
 * [Learning center](#learning-center)
 
 ## Developer sandbox
 
-Go to the developer sandbox for hands-on experience using our client APIs. You can use the APIs with our sample report or with your own report.
+Go to the developer sandbox for hands-on experience using the client APIs. You can use the APIs with the sample report or with your own report.
 
 :::image type="content" source="media/power-bi-playground/playground-developer-sandbox.png" alt-text="A screenshot of the playground developer sandbox.":::
 
-Drag and drop code snippets into the report, or type them directly into the code editor area to see how they work.
+Drag and drop code snippets into the report or type them directly into the code editor area to see how they work.
 
 :::image type="content" source="media/power-bi-playground/sandbox-add-code.png" alt-text="A screenshot of the developer sandbox in use.":::
 
-You can choose between JavaScript and TypeScript for writing your code. All API code snippets will be updated based on your selection, and the last language used is saved for next time.
+You can choose between JavaScript and TypeScript for writing your code. All API code snippets then update based on your selection. The last language you use saves for next time.
 
 :::image type="content" source="./media/power-bi-playground/select-languages.png" alt-text="Screenshot of menu to select either JavaScript or TypeScript.":::
 
@@ -57,7 +58,7 @@ The showcases code is open-sourced, and you can find the code behind all of them
 
 ## Learning center
 
-The Learning center is a collection of Power BI embedded analytics resources. It's where you can dive into our documentation, learn about our APIs, find our developer samples and videos, and learn where to get help.
+The Learning center is a collection of Power BI embedded analytics resources. It's where you can dive into the documentation, learn about the APIs, find developer samples and videos, and learn where to get help.
 
 :::image type="content" source="media/power-bi-playground/playground-learning-center.png" alt-text="A screenshot of the playground learning center.":::
 

@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 01/12/2023
+ms.date: 03/29/2023
 ---
 
 # Change log for Power BI Desktop
@@ -17,14 +17,42 @@ This change log is for Power BI Desktop and lists new items along with bug fixes
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
 
+## March 2023 QFE 1
+
+*Version:2.115.842.0, Released: March 24, 2023*
+
+Bug fixes/improvements:
+* Fix for on-object interaction. Customers can now update selected items from the dropdown selection menu.
+* Fix for visuals with rounded corners. Default padding values now aligned with border radius.
+
+## February 2023 QFE 2
+
+*Version:2.114.864.0, Released: February 23, 2023*
+
+Bug fixes/improvements:
+* Fixed issues with  x86 installer
+
+
+## February 2023 QFE 1
+
+*Version:2.114.803.0, Released: February 21, 2023*
+
+Bug fixes/improvements:
+* Fix for Proxy models regression. Customers can now convert PBI Datasets and AS Live models with format strings to Direct Query and refresh existing models.
+* Fix for creating Power Apps and Power Automate visuals.
+* Fix for windows and dialogs rendering in some multimonitor configurations.
+* Filter pane regression fix. Filter card input will now show blank values as default when advanced filtering is selected.
+
+
+
 ## December 2022 QFE 1
+
 *Version: 2.112.1161.0, Released: January 10, 2023*
 
 Bug fixes/improvements:
-* AS Engine fix. DAX queries that contain query-scope calculated tables and send through external tools will not return error in certain cases.
-* DAX window functions fix. Now function will not return error in certain cases when the *relation* parameter use CalculateTable function.
+* AS Engine fix. DAX queries that contain query-scope calculated tables and send through external tools won't return error in certain cases.
+* DAX window functions fix. Now function won't return error in certain cases when the *relation* parameter use CalculateTable function.
 * Fix to data view filter menu.  Customers will see correct distinct values after applying filter/sort by another column.
-
 
 
 ## October 2022 QFE 2
@@ -40,7 +68,7 @@ Bug fixes/improvements:
 
 Bug fixes/improvements:
 * Fix for Formula bar in model view: customers won't get an error message when deleting a table with selected DAX expression in Formula bar.
-* Fix for Formula bar in model view: customers can now edit DAX expression that contain special Japanese symbols.
+* Fix for Formula bar in model view: customers can now edit DAX expressions that contain special Japanese symbols.
 * Fix for Proxy models regression: customers can now rename fields after converting Live connect model to a local model.
 
 ## September 2022 QFE 3
@@ -72,10 +100,10 @@ Bug fixes/improvements:
 Bug fixes/improvements:
 - Fix for OAuth token refresh for certain data sources like Synapse.
 - Fix for live connections to AS models that have columns or measures included in more than one nested display folder.
-- Data view regression fix: now list of filters in context menu will be displayed even when menu icons are not in focus. 
-- EvaluateAndLog  DAX function fix: now the function will work as expected and won't return an error. 
+- Data view regression fix: now list of filters in context menu will be displayed even when menu icons aren't in focus. 
+- EvaluateAndLog  DAX function fix: now the function works as expected and won't return an error. 
 - SAP HANA regression fixes: now power query won't show "the index is outside the bounds of the records" error message and there won't be missing values for columns when using Cube.AttributeMemberID on the query.  
-- Rollback change for cashing: cashing will be done the same way as in previous releases
+- Roll back change for cashing: cashing will be done the same way as in previous releases
 - Formula bar fixes for cases when “Shift+Enter” is used. 
 - “Apply/discard changes” regression fix.
 
@@ -97,7 +125,7 @@ Bug fixes/improvements:
 *Version: 2.107.841.0, Released: July 21, 2022*
 
 Bug fixes/improvements:
-- Fix for SAP BW: now customers will be able to retrieve a full dataset when querying SAP BW and using paging operations (Table.skip, Table.FirstN etc) even if the data exceeds the page size.
+- Fix for SAP BW: now customers will be able to retrieve a full dataset when querying SAP BW and using paging operations (Table.skip, Table.FirstN etc.) even if the data exceeds the page size.
 - Fix for SAP HANA: now when creating new connections or refreshing data, a display name will be shown instead of a technical column name in the fields well.
 
 
@@ -106,7 +134,7 @@ Bug fixes/improvements:
 *Version: 2.106.883.0, Released: June 28, 2022*
 
 Bug fixes/improvements:
-- Fix for the start-up Sign-In ThreadStateException: now the logic for the sign-in process is split into two separate steps (users attempt to sign-in using cached credentials in the background as the first step, and then if needed they are returned back to the UI thread for the second step, that previously caused the ThreadStateException, and sign in with platform credentials).
+- Fix for the start-up Sign-In ThreadStateException: now the logic for the sign-in process is split into two separate steps (users attempt to sign-in using cached credentials in the background as the first step, and then if needed they're returned back to the UI thread for the second step, that previously caused the ThreadStateException, and sign in with platform credentials).
 - Fix for the legend color: now it will be the same for PBI Desktop and PBI Service.
 - Fix for broken export 'data to file' content from custom visuals. 
 - Fix for custom visuals using API above 4.4: definition for 4.5 and 4.6 custom visual API versions was added, and these custom visuals now run as expected. 
@@ -132,7 +160,7 @@ Bug fixes/improvements:
 *Version: 2.104.941.0, Released: April 26, 2022*
 
 Bug fixes/improvements:
-- Fix for DAX expressions: the DAX parsing process in the formula bar now runs faster and the application does not hang.
+- Fix for DAX expressions: the DAX parsing process in the formula bar now runs faster and the application doesn't hang.
 - Fix for DirectQuery connections in Shared: it's now possible to add a DirectQuery connection to an existing report. 
 - Fix for the format pane of bar charts: X-axis and Y-axis field well names are now mapped correctly and only their names are displayed. 
 - Fix for stacked column charts with logarithmic scale: users can now apply Y axis log scale even if the legend field is present.
@@ -144,8 +172,8 @@ Bug fixes/improvements:
 
 Bug fixes/improvements:
 - Fix for the new format pane of matrix visuals: now the URL icon on rows/columns & horizontal scroll bar will work.
-- Date picker defaults fix: now for the existing reports the datepicker icon in date range slicers will not be available and as a result, users' reports will not be changed. 
-- Model refresh fix: now column descriptions for SimpleQueryMappingInput table inputs will not disappear after the model refresh.
+- Date picker defaults fix: now for the existing reports the datepicker icon in date range slicers won't be available and as a result, users' reports won't be changed. 
+- Model refresh fix: now column descriptions for SimpleQueryMappingInput table inputs won't disappear after the model refresh.
 - AS engine fix: now the `language` in the AS config file will always be set to en-us regardless of the Power BI Desktop UI language to prevent issues with the AS engine's start.
 - Keyboard Navigation fix for the selection pane: now it will be accessible by keyboard while navigation define under "Format" tab.
 
@@ -156,7 +184,7 @@ Bug fixes/improvements:
 Bug fixes/improvements:
 - Dynamics 365 (Dataverse) entry in GetData which redirects to Dataverse connector is removed from the GetData list.
 - Fix for the conditional formatting regression: conditional formatting for action > page navigation will work. 
-- Fix for fields well description: a multiline field's tooltip will not be cut off and will be fully visible.
+- Fix for fields well description: a multiline field's tooltip won't be cut off and will be fully visible.
 - Mashup engine fix: headers will be requested just once when accessing headers on paged HTTP values.
 - Fix for a DirectQuery connection to a dataset in workspace with a '/' in the name. 
 - Fix for perspective selection in the proxy models navigator.
@@ -167,7 +195,7 @@ Bug fixes/improvements:
 
 Bug fixes/improvements:
 - Fix for creating hybrid incremental refresh policies on DirectQuery over M queries: now users will be able to create a hybrid incremental refresh policy for the import tables that use DirectQuery over M. 
-- Fix for the "Power BI Desktop infrastructure update" preview feature: now when the feature is on, Quick measure dropdown dialog will not gray out and will work as expected.
+- Fix for the "Power BI Desktop infrastructure update" preview feature: now when the feature is on, Quick measure dropdown dialog won't gray out and will work as expected.
 - Fix for Proxy models: now when adding new table on the proxy source relationship with IncludeFutureArtifacts = false, the relationship to the original table will be created and proxy model will be refreshed.  
 
 ## December 2021 QFE 2
@@ -183,7 +211,7 @@ Bug fixes/improvements:
 *Version: 2.100.785.0, Released: December 21, 2021*
 
 Bug fixes/improvements:
-- Fix for calculation groups: duplicated measures will not be shown in the field list for PBIX files with calculation groups.
+- Fix for calculation groups: duplicated measures won't be shown in the field list for PBIX files with calculation groups.
 - Accessibility fixes for hierarchical slicer. 
  
 ## November 2021 QFE 2
@@ -231,7 +259,7 @@ Bug fixes/improvements:
 
 Bug fixes/improvements:
 - Fix for proxy tables: now when a proxy table is deleted there will be no visible LocalDateTable left.
-- Fix for the issue where opening a PBIX file with saved diagram layouts would not properly restore those layouts in the model view.
+- Fix for the issue where opening a PBIX file with saved diagram layouts wouldn't properly restore those layouts in the model view.
 
 ## September 2021 QFE 2
 
@@ -268,7 +296,7 @@ Bug fixes/improvements:
 
 Bug fixes/improvements:
 - Fix for script visuals: now they can be enabled.
-- Fix for SAP BW reports: now tables are not duplicated if click refresh.
+- Fix for SAP BW reports: now tables aren't duplicated if a user selects refresh.
 - Fix for Enhanced-Tooltips: now tooltips stick long enough for users to interact with the drill buttons in the tooltip.
 
 ## June 2021 QFE 1
@@ -303,7 +331,7 @@ Bug fixes/improvements:
 Bug fixes/improvements:
 
 - Improvements in Microsoft Information Protection SDK detection of the machine stopping to respond and stop throwing "Unknown hard error" dialog.
-- Fix for corrupted credentials: users will not get the alert warning that their credentials can't be decrypted, now users may consider manually removing credentials folder (user.zip file) as a workaround.
+- Fix for corrupted credentials: users won't get the alert warning that their credentials can't be decrypted, now users may consider manually removing credentials folder (user.zip file) as a workaround.
 
 ## March 2021 QFE 1
 

@@ -1,13 +1,13 @@
 ---
 title: "Power BI implementation planning: Tenant-level security planning"
 description: "Learn about tenant-level security planning for Power BI."
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/12/2022
+ms.date: 02/19/2023
 ---
 
 # Power BI implementation planning: Tenant-level security planning
@@ -33,6 +33,7 @@ The Power BI administrator is a high-privilege role that has significant control
 
 - **Tenant settings management:** Administrators can manage the [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings) in the admin portal. They can enable or disable settings and allow or disallow specific users or groups within settings. It's important to understand that your tenant settings have a significant influence on the user experience.
 - **Workspace role management:** Administrators can update [workspace](/power-bi/admin/service-admin-portal-workspaces) roles in the admin portal. They can potentially update workspace security to access any data or grant rights to other users to access any data in the Power BI service.
+- **Personal workspace access:** Administrators can access contents and govern the [personal workspace](/power-bi/admin/service-admin-portal-workspaces#govern-my-workspaces) of any user.
 - **Access to tenant metadata:** Administrators can access tenant-wide metadata, including the Power BI activity logs and activity events retrieved by the [Power BI admin APIs](/rest/api/power-bi/admin).
 
 > [!TIP]
