@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/18/2023
+ms.date: 04/04/2023
 LocalizationGroup: Premium
 ---
 
@@ -50,7 +50,7 @@ Follow these steps to sync the replicas in Windows PowerShell:
 5. Sync the *read/write* and *read-only* dataset copies using the command below. Replace the values of `<WorkspaceId>` and `<DatasetId>` appropriately.
 
     ```powershell
-    Invoke-PowerBIRestMethod -Url 'groups/<WorkspaceId>/datasets/<DatasetId>/sync' -Method Post | ConvertFrom-Json | Format-List  # Replace <WorkspaceId> with the ID of your workspace and <DatasetId> with the ID of your dataset
+    Invoke-PowerBIRestMethod -Url 'groups/<WorkspaceId>/datasets/<DatasetId>/sync' -Method Post -Body "" | ConvertFrom-Json | Format-List  # Replace <WorkspaceId> with the ID of your workspace and <DatasetId> with the ID of your dataset
     ```
 
     The sync status information in the output indicates that the *read/write* and *read-only* replicas are out of sync, which is expected because you just triggered the sync.  
