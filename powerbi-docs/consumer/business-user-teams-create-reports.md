@@ -50,7 +50,7 @@ If you have a table with data, such as an Excel spreadsheet, and want to try vis
 
 1. Select **Use first row as headers** from the dropdown menu if you want to apply the setting. Then name your table and choose **Auto-create report**.
 
-    :::image type="content" source="media/business-user-teams-create-reports/power-bi-paste-auto-create.png" alt-text="Screenshot of the Power Query dialog box and the options to generate an Auto-crate report." lightbox="media/business-user-teams-create-reports/power-bi-paste-auto-create.png":::
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-paste-auto-create.png" alt-text="Screenshot of the Power Query dialog box and the options to generate an Auto-create report." lightbox="media/business-user-teams-create-reports/power-bi-paste-auto-create.png":::
 
 1. Set a sensitivity label, if prompted.
 
@@ -103,7 +103,7 @@ It's easy to find all the datasets your organization has shared with you. Theyâ€
 1. Go to the **Data hub** tab.
 1. Select a dataset from the list or from the recommended datasets.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-tab.png" alt-text="Screenshot showing the Data hHub tab selected with the recommended datasets and a list of datasets." lightbox="media/business-user-teams-create-reports/teams-power-bi-datasets-tab.png":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-tab.png" alt-text="Screenshot showing the Data Hub tab selected with the recommended datasets and a list of datasets." lightbox="media/business-user-teams-create-reports/teams-power-bi-datasets-tab.png":::
 
 1. Explore the **Dataset details** page.
 
