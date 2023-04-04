@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 02/20/2023
+ms.date: 04/04/2023
 LocalizationGroup: Administration
 ---
 
