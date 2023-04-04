@@ -1,13 +1,14 @@
 ---
 title: Create deployment rules Power BI Application lifecycle management (ALM)
-description: Learn how to create rules simplify deploying content with the Power BI Application lifecycle management (ALM) tool
+description: Learn how to create rules to simplify deploying content with the Power BI Application lifecycle management (ALM) tool
 author: mberdugo
 ms.author: monaberdugo
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 07/31/2022
+ms.date: 01/31/2023
+ms.search.form: Deployment rules
 ---
 
 # Create deployment rules
