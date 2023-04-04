@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 09/16/2022
+ms.date: 03/08/2023
 ---
 
 # Considerations working with the Power BI/Power Apps solutions integration (preview)
@@ -22,21 +22,31 @@ Sensitivity labels are fully supported in Power BI, but aren't yet fully integra
 
 Since actions such as exporting a solution or adding a solution involve removing the sensitivity label (if any), these actions will only succeed if the interactive user or the API caller has sufficient usage rights to remove the label as defined by the IT administrators.
 
-## Cross-geo operations 
+## Cross-geo operations
 
-The Power Platform/Power BI integration entails operations between the Power Apps environment and the Power BI workspaces participating in the operations. For a solution operation to succeed, **all the elements participating in the operation must be in the same geography**.
+Working with Power Apps solutions, you can add Power BI report and dataset components from Power BI workspaces to a solution. If the report or the dataset you selected to add to your solution is in a different geography than the Power Apps environment you are trying to move it to, it is called a cross-geo operation. Another example of a situation where cross-geo operations might take place is when the dedicated target environment workspace in Power BI (that was created automatically when the first Power BI component was added to the solution), is not located in the same geography as the Power Apps environment.
 
-If one of the participating workspaces or environments isn't in the same geography, the operation will fail with an error. For example, adding a Power BI report "From Power BI" to Dataverse requires that the source Power BI workspace, the Power Apps environment, and the destination Power BI workspace all reside in the same geography. Otherwise the operation won't succeed.
+The Power BI/Power Apps solutions integration supports cross-geo operations, provided that information sharing between the Power Platform environment and the Power BI workspaces has been [enabled](#enabling-and-disabling-cross-geo-operations).
 
-Be sure to create your Power Apps environment in the same geography as all the relevant Power BI workspaces. This will make it possible to import Power Apps solutions without crossing geos. See [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment) for more information.
+When you perform a cross-geo operation, before you can complete the operation a banner will alert you to the fact that you're about to move items between geographies. The banner also tells you which geographies are involved. Review the information before proceeding to ensure that the action is compliant with any security and/or data-residency requirements. The following image shows an example of this banner.
+
+:::image type="content" source="./media/service-power-bi-powerapps-integration-considerations/power-apps-solutions-cross-geo-operation-banner.png" alt-text="Screenshot of a cross-geo operation notification banner in the Power BI/Power Apps solutions integration.":::
+
+### Enabling and disabling cross-geo operations
+
+Cross-geo operations are controlled by two feature settings, one in Power BI and the other in Power Platform. The settings in both places must be ON in order for cross-geo operations to take place. The settings are on by default.
+
+* For detail about enabling/disabling the setting on the Power BI side, see [Power Platform interregional access](../admin/service-admin-portal-integration.md#power-platform-interregional-access).
+
+* For detail about enabling/disabling the setting on the Power Platform side, see [Manage feature settings](/power-platform/admin/settings-features) in the Power Platform documentation and look for the Power BI components setting **Allow information sharing between this environment and Power BI workspaces in other geographic regions**.
 
 ### How do I find which geography my Power BI elements are in?
 
-First find which region your Power BI elements are located in. A Power BI workspace is located in the region of the capacity it's assigned to. If the workspace hasn't been assigned to a capacity, its region is the default region of the Power BI tenant. To find the default region of your Power BI tenant, see [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
+First find which *region* your Power BI elements are located in. A Power BI workspace is located in the region of the capacity it's assigned to. If the workspace hasn't been assigned to a capacity, its region is the default region of the Power BI tenant. To find the default region of your Power BI tenant, see [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
 
 Once you know the region your Power BI element is located in, see the table at [Geographic availability for Power Platform](https://dynamics.microsoft.com/availability-reports/georeport/) to see which geography the region is associated with.
 
-### How do I know what geography my Power Apps environment is in? 
+### How do I know what geography my Power Apps environment is in?
 
 For Power Apps, the geography of an environment is the geography with the region the environment is located in. See [Geographic availability for Power Platform](https://dynamics.microsoft.com/availability-reports/georeport/) for detail. 
 

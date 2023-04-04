@@ -6,6 +6,7 @@ ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
+ms.search.form: Create a workspace
 ms.topic: how-to
 ms.date: 02/27/2023
 ms.custom: contperf-fy21q3, contperf-fy21q1, contperf-fy20q4

@@ -7,6 +7,7 @@ ms.reviewer: 'cnews'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
+ms.search.form: Create scorecards
 ms.topic: how-to
 ms.date: 10/10/2022
 ms.custom: sample-sales&returnssamplev201912

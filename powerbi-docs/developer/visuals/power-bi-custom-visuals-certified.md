@@ -168,7 +168,7 @@ The process of deploying to AppSource may take some time. Your Power BI visual w
 
 ### When will my Power BI visual display a certification badge?
 
-The certification badge should be visible within three weeks of your submission.
+The certification badge should be visible within three weeks after your submission is approved.
 
 ## Next steps
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 01/24/2023
+ms.date: 03/22/2023
 LocalizationGroup: Data from files
 ---
 # Configure dataflow storage to use Azure Data Lake Gen 2
@@ -37,6 +37,9 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 - Attaching a dataflow with ADLS Gen 2 behind multifactor authentication (MFA) isn't supported.
 
 - Finally, you can connect to any ADLS Gen 2 [from the Admin portal](/power-bi/admin/service-admin-portal-azure-connections#workspace-level-storage-permissions), but if you connect directly to a workspace, you must first ensure there are no dataflows in the workspace before connecting.
+
+> [!NOTE]
+> Bring your own storage (Azure Data Lake Gen 2) is not available in the Power BI service for U.S. Government GCC customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
 
 The following table describes the permissions for ADLS and for Power BI required for ADLS Gen 2 and Power BI:
 
