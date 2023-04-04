@@ -7,11 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-<<<<<<< HEAD
 ms.date: 01/31/2023
-=======
-ms.date: 12/31/2022
->>>>>>> 48c7944452d1f893efac719b16933eaf3d8d7832
 ms.search.form: Deployment rules
 ---
 
