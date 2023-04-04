@@ -24,11 +24,11 @@ Version 15.7.1802.126, released April 4, 2023
 
 ### Features
 
-- Added support for creating drillthrough reports
-- Fix issue which caused crash when adding chart visuals
-- Fix issue with Finnish localization
-- Fix issue with DAX query designer used against PBI Datasets
-- Accessibility fixes
+- Added support for creating drillthrough reports.
+- Fix issue which caused crash when adding chart visuals.
+- Fix issue with Finnish localization.
+- Fix issue with DAX query designer used against PBI datasets.
+- Accessibility fixes.
 
 ## November 2022
 
