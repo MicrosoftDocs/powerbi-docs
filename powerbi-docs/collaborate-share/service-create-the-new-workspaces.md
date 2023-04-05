@@ -66,7 +66,9 @@ You can specify which users receive notification about issues occurring in the w
 ### Set a workspace OneDrive
 
 The Workspace OneDrive feature allows you to configure a Microsoft 365 Group whose SharePoint document library is available to workspace users. You create the Group *outside* of Power BI first, with one available method being from OneDrive. Read about creating a [OneDrive shared library](https://support.microsoft.com/office/create-a-new-shared-library-from-onedrive-for-work-or-school-345c8599-05d8-4bf8-9355-2b5cfabe04d0).
-NOTE: It's important to note that the creation of Microsoft 365 Groups may be restricted in your environment, and/or the ability to create them from your OneDrive site may be disabled. If this is the case, speak with your IT department.
+
+> [!NOTE]
+> Creating Microsoft 365 Groups may be restricted in your environment, or the ability to create them from your OneDrive site may be disabled. If this is the case, speak with your IT department.
 
 Power BI doesn't synchronize permissions between users or groups with workspace access, and users or groups with Microsoft 365 Group membership. A best practice is to give [access to the workspace](service-give-access-new-workspaces.md) to the same Microsoft 365 Group whose file storage you configured. Then manage workspace access by managing membership of the Microsoft 365 Group.
 
@@ -84,7 +86,7 @@ Power BI doesn't synchronize permissions between users or groups with workspace 
 
 3. Select **Save**.
 
-**Access the workspace OneDrive location**
+### Access the workspace OneDrive location
 
 After you've configured the OneDrive location, you get to it in the same way you get to other data sources in the Power BI service.
 
@@ -92,11 +94,9 @@ After you've configured the OneDrive location, you get to it in the same way you
 
     ![Screenshot of Get data, get files.](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
-    Power BI should automatically detect the workspace OneDrive, so it appears as **OneDrive - WORKSPACE_NAME". It may take some time for the workspace OneDrive to appear on the **Get data** page after you've configured it.
+    Power BI should automatically detect the workspace OneDrive, so it appears as **OneDrive - WORKSPACE_NAME"**. It may take some time for the workspace OneDrive to appear on the **Get data** page after you've configured it.
 
 1. Select the workspace OneDrive, for example, **OneDrive - Sales and Marketing**.
-
-
 
 1. Navigate to the folder containing your Power BI files. Select the file, then select **Connect**.
 
@@ -104,7 +104,7 @@ After you've configured the OneDrive location, you get to it in the same way you
 
     ![Screenshot of SharePoint - Team Sites, get data.](media/service-create-the-new-workspaces/workspace-get-data-sharepoint-team-sites.png)
 
-2. Type the URL of the shared library you created earlier, or select **Connect** to see the content available to you.
+1. Type the URL of the shared library you created earlier, or select **Connect** to see the content available to you.
 
     :::image type="content" source="media/service-create-the-new-workspaces/workspace-sharepoint-site-url.png" alt-text="Screenshot of Type the URL of the shared library you created earlier, or select Connect.":::
 
@@ -127,12 +127,14 @@ By default, only workspace Admins and Members can create, publish and update the
     ![Screenshot of Workspace settings.](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 2. Under **Advanced**, expand **Security settings**. Select **Allow contributors to update the app for this workspace**. 
 
-When enabled, contributors can:
-* Update app metadata like name, icon, description, support site, and color.
+When these features are enabled, contributors can:
+
+* Update app metadata such as name, icon, description, support site, and color.
 * Add or remove items included in the app, like adding reports or datasets.
 * Change the visibility of the items for all the audience groups in the audience tab.
 
 However, contributors can't:
+
 * Create or publish the app for the first time.
 * Add users to the app or change who has permission to the app.
 * Enable or disable automatic installation of app for app users.
@@ -178,6 +180,7 @@ Quickly access your favorite workspaces by pinning them to the top of the worksp
 
 
 ## Next steps
+
 * Read about [workspaces in Power BI](service-new-workspaces.md)
 * [Publish an app from a workspace in Power BI](service-create-distribute-apps.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
