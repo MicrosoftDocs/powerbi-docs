@@ -131,6 +131,10 @@ If you opt out of the Emissions Impact Dashboard for Microsoft 365, you can alwa
 
 If you choose to export data from the **GHG Preparation Report** tab, use the following data schema to determine the definition of each output column.
 
+## Accessing the data via the Cloud for Sustainability API (preview)
+
+The same underlying data that powers the Emissions Impact Dashboard for Microsoft 365 can be accessed programmatically through the Cloud for Sustainability API (preview). [Learn more here](/industry/sustainability/api-overview).
+
 ## Additional resources
 
 * [The role of embodied carbon in cloud emissions: Assessing the scale and sources of Microsoft 365 emissions, and what organizations can do to help reduce them](https://aka.ms/m365-emissions-whitepaper).
