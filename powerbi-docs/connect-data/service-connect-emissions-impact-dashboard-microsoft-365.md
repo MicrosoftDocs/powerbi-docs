@@ -131,6 +131,14 @@ If you opt out of the Emissions Impact Dashboard for Microsoft 365, you can alwa
 
 If you choose to export data from the **GHG Preparation Report** tab, use the following data schema to determine the definition of each output column.
 
+asdf
+
+*Data schema: Usage Report*
+
+If you choose to export data from the **GHG Preparation Report** tab, use the following data schema to determine the definition of each output column.
+
+sadf
+
 ## Accessing the data via the Cloud for Sustainability API (preview)
 
 The same underlying data that powers the Emissions Impact Dashboard for Microsoft 365 can be accessed programmatically through the Cloud for Sustainability API (preview). [Learn more here](/industry/sustainability/api-overview).
