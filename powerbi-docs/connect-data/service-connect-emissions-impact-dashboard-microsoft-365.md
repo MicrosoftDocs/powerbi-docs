@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 09/20/2022
+ms.date: 04/06/2023
 LocalizationGroup: Connect to services
 ---
 
@@ -125,8 +125,15 @@ Within 48 hours of submitting your opt out request, go back to Power BI and dele
 
 If you opt out of the Emissions Impact Dashboard for Microsoft 365, you can always opt back in by re-installing and re-connecting to the app, but historical data will not initially be available.
 
+## Data schemas
+
+*Data schema: GHG Preparation Report*
+
+If you choose to export data from the **GHG Preparation Report** tab, use the following data schema to determine the definition of each output column.
+
 ## Additional resources
 
+* [The role of embodied carbon in cloud emissions: Assessing the scale and sources of Microsoft 365 emissions, and what organizations can do to help reduce them](https://aka.ms/m365-emissions-whitepaper).
 * [The carbon benefits of cloud computing: A study on the Microsoft Cloud in partnership with WSP](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)
 * [Microsoft Sustainability webpage](https://www.microsoft.com/sustainability)
 
@@ -145,6 +152,10 @@ First, check in the Microsoft 365 Admin Center that you have one of the roles li
 **I entered my tenant ID, but my company data isn't loading. What's the issue?** 
 
 The Emissions Impact Dashboard for Microsoft 365 may take 24-48 hours to load your data after completing the connection process. Return after 24 hours and select the **Refresh** button in Power BI in the app workspace, as shown in the [Issues](#issues) section above.
+
+**How do I know that I have the latest version of the template app installed?** 
+
+Microsoft may periodically release a new version of the Emissions Impact Dashboard for Microsoft 365 in order to deliver new features or update text and visuals in the report. Microsoft will notify your organization of new version releases via the [Microsoft 365 Message center](/microsoft-365/admin/manage/message-center?view=o365-worldwide). In addition, the user in your organization who installed the application will receive a [notification](./service-template-apps-install-distribute.md#update-a-template-app) in Power BI requesting that they update to the latest version of the report. That user should follow the steps [above](#update-the-app) to update to the latest version of the app.
 
 ### Emissions data
 
@@ -171,6 +182,18 @@ Microsoft 365 emissions are allocated based on data storage as well as active us
 **Where is the data used to produce this report stored?**
 
 It is stored in the United States.
+
+**How can I influence my tenant’s Microsoft 365 emissions numbers?**
+
+Refer to [this white paper](https://aka.ms/m365-emissions-whitepaper) for guidance on how to interpret and act on the information reported in the Emissions Impact Dashboard for Microsoft 365.
+
+**Why can I only see emissions data for the past 12 months?**
+
+Currently, the Emissions Impact Dashboard for Microsoft 365 only reports on emissions from the prior 12 months, and it is not possible for app users to access emissions data prior to this window. If in the future this timeframe will be extended, it will be made available via a new app version release and announced via the [Microsoft 365 Message center](/microsoft-365/admin/manage/message-center?view=o365-worldwide).
+
+**In the 'carbon intensity' tab, why do I see my emissions grow even though the count of Microsoft 365 users in our tenant stayed flat or shrunk (or vice versa) from one month to the next?**
+
+It is possible for your Microsoft 365 emissions figure to move in the opposite direction of your count of unique active users in Microsoft 365. This most often occurs when an organization that already uses one or multiple Microsoft 365 applications begins the process of onboarding to a new application. In this scenario, the organization would start getting allocated emissions associated with the new application, but the overall unique active user count displayed in the 'carbon intensity' tab of the dashboard might remain constant or even decline. This is because the 'user count' figure only counts each user once, even if they use multiple applications. So, for example, if an organization has 500 users of Exchange in June (and doesn't use any other Microsoft 365 applications that month) and subsequently onboards all 500 of those users to SharePoint in July, their overall emissions figure would go up in July but their unique active user count would remain the same. The Emissions Impact Dashboard only displays a single unique active user count in the 'carbon intensity' tab; to parse out usage of specific Microsoft 365 applications, organizations can visit the [Apps usage report in the Microsoft 365 Admin Center](/microsoft-365/admin/activity-reports/microsoft365-apps-usage-ww?view=o365-worldwide).
 
 ### Methodology 
 
