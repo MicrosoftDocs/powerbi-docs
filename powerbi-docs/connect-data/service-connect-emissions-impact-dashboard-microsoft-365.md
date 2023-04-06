@@ -157,7 +157,7 @@ The same underlying data that powers the Emissions Impact Dashboard for Microsof
 
 ## Additional resources
 
-* [The role of embodied carbon in cloud emissions: Assessing the scale and sources of Microsoft 365 emissions, and what organizations can do to help reduce them](https://aka.ms/m365-emissions-whitepaper). (PDF Download)
+* [The role of embodied carbon in cloud emissions: Assessing the scale and sources of Microsoft 365 emissions, and what organizations can do to help reduce them (PDF Download)](https://aka.ms/m365-emissions-whitepaper).
 * [The carbon benefits of cloud computing: A study on the Microsoft Cloud in partnership with WSP](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)
 * [Microsoft Sustainability webpage](https://www.microsoft.com/sustainability)
 
@@ -209,7 +209,7 @@ It is stored in the United States.
 
 **How can I influence my tenant’s Microsoft 365 emissions numbers?**
 
-Refer to [this white paper](https://aka.ms/m365-emissions-whitepaper) (PDF Download) for guidance on how to interpret and act on the information reported in the Emissions Impact Dashboard for Microsoft 365.
+Refer to [this white paper (PDF Download)](https://aka.ms/m365-emissions-whitepaper) for guidance on how to interpret and act on the information reported in the Emissions Impact Dashboard for Microsoft 365.
 
 **Why can I only see emissions data for the past 12 months?**
 
