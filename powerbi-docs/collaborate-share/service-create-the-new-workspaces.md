@@ -90,27 +90,13 @@ Power BI doesn't synchronize permissions between users or groups with workspace 
 
 After you've configured the OneDrive location, you get to it in the same way you get to other data sources in the Power BI service.
 
-1. In the nav pane, select **Get Data**, then in the **Files** box select **Get**.
+1. In the nav pane, select **Data hub**, then type the OneDrive location in the **Filter** box.
 
-    ![Screenshot of Get data, get files.](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
+    ![Screenshot of Data hub, get files.](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
-    Power BI should automatically detect the workspace OneDrive, so it appears as **OneDrive - WORKSPACE_NAME"**. It may take some time for the workspace OneDrive to appear on the **Get data** page after you've configured it.
+    Power BI should automatically detect the workspace OneDrive, so it appears under **Location**. It may take some time for the workspace OneDrive to appear on the **Data hub** page after you've configured it.
 
-1. Select the workspace OneDrive, for example, **OneDrive - Sales and Marketing**.
-
-1. Navigate to the folder containing your Power BI files. Select the file, then select **Connect**.
-
-1. If Power BI doesn't automatically detect the workspace OneDrive, on the **Get data** page, select **SharePoint - Team Sites**.
-
-    ![Screenshot of SharePoint - Team Sites, get data.](media/service-create-the-new-workspaces/workspace-get-data-sharepoint-team-sites.png)
-
-1. Type the URL of the shared library you created earlier, or select **Connect** to see the content available to you.
-
-    :::image type="content" source="media/service-create-the-new-workspaces/workspace-sharepoint-site-url.png" alt-text="Screenshot of Type the URL of the shared library you created earlier, or select Connect.":::
-
-1. Navigate to the folder containing your Power BI files.
-
-    :::image type="content" source="media/service-create-the-new-workspaces/sharepoint-team-sites-content.png" alt-text="Screenshot of folders in SharePoint - Team Sites.":::
+1. Select the dataset.
 
 ### Allow contributors to update the app
 
