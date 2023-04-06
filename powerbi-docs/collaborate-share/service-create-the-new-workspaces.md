@@ -92,7 +92,7 @@ After you've configured the OneDrive location, you get to it in the same way you
 
 1. In the nav pane, select **Data hub**, then type the OneDrive location in the **Filter** box.
 
-    ![Screenshot of Data hub, get files.](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
+    :::image type="content" source="media/service-create-the-new-workspaces/power-bi-get-data-files.png" alt-text="Screenshot of Data hub, get files." lightbox="media/service-create-the-new-workspaces/power-bi-get-data-files.png":::
 
     Power BI should automatically detect the workspace OneDrive, so it appears under **Location**. It may take some time for the workspace OneDrive to appear on the **Data hub** page after you've configured it.
 
