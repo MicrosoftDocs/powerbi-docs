@@ -131,13 +131,25 @@ If you opt out of the Emissions Impact Dashboard for Microsoft 365, you can alwa
 
 If you choose to export data from the **GHG Preparation Report** tab, use the following data schema to determine the definition of each output column.
 
-asdf
+|Column|Type|Description|Example|
+|---------|---------|---------|---------|
+|Year|Integer|The year in which the emissions are being reported.|2023|
+|Quarter|String|The quarter in which the emissions are being reported.|Qtr1|
+|Month|String|The month in which the emissions are being reported.|January|
+|Region|String|The Microsoft 365 region with which the emissions are associated.|Asia Pacific|
+|Scope|String|Indicates whether the emissions value is associated with Microsoft's Scope 1, Scope 2, or Scope 3.|Scope1|
+|Carbon Emissions (mtCO2e)|Float|Volume of carbon dioxide equivalent, measured in metric tons.|1.019|
 
 *Data schema: Usage Report*
 
 If you choose to export data from the **GHG Preparation Report** tab, use the following data schema to determine the definition of each output column.
 
-sadf
+|Column|Type|Description|Example|
+|---------|---------|---------|---------|
+|Year|Integer|The year in which the active usage is being reported.|2023|
+|Quarter|String|The quarter in which the active usage is being reported.|Qtr1|
+|Month|String|The month in which the active usage is being reported.|January|
+|Microsoft 365 active users|Integer|Count of unique active users across the [Microsoft 365 apps currently included in the report](#included-microsoft-365-applications). If a given user has usage of multiple applications, they are only counted once.|5000|
 
 ## Accessing the data via the Cloud for Sustainability API (preview)
 
