@@ -101,7 +101,7 @@ You can use the following groups to set up row level security.
 - Mail-enabled Group
 - Security Group
 
-Note, however, that Microsoft 365 groups aren't supported and can't be added to any roles.
+Note, however, that Office 365 groups aren't supported and can't be added to any roles.
 
 ![Add a member](media/service-admin-rls/rls-add-member.png)
 
