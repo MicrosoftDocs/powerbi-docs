@@ -41,7 +41,7 @@ By providing plus and minus icons on a text box, you can enable users in a Power
   
 - The Excel rendering extension displays and expands hidden rows and columns for a table, matrix, or list. All rows and columns are visible.  
   
- For more information, see [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs).  
+ For more information, see [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs).  
   
 ## See also
 

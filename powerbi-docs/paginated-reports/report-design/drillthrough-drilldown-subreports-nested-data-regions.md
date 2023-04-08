@@ -22,7 +22,7 @@ ms.topic: conceptual
   
  D. Drilldown action  
   
- All of these have commonalities, but they serve different purposes and have different features. Two of them, drillthrough reports and subreports, are actually separate reports. *Nested* is a way to describe adding a hierarchical structure to a report. In paginated reports, you can drillthrough reports down to four (4) levels of child reports. For example, you can drillthrough from Report A -> Report B -> Report C.   *Drilldown* is an action you can apply to any report item to hide and show other report items. They all are ways that you can organize and display data to help your users understand your report better.
+ All of these have commonalities, but they serve different purposes and have different features. Two of them, drillthrough reports and subreports, are actually separate reports. *Nested* is a way to describe adding a hierarchical structure to a report. In paginated reports, you can drill through reports down to four (4) levels of child reports. For example, you can drill through from Report A -> Report B -> Report C.   *Drilldown* is an action you can apply to any report item to hide and show other report items. They all are ways that you can organize and display data to help your users understand your report better.
     
 ##  <a name="SummaryCharacteristics"></a> Summary of Characteristics  
  This table summarizes these different traits. Details are in separate sections later in this topic. Drilldown isn't included in these comparisons because you can apply its showing and hiding action to any report item.  
@@ -70,7 +70,7 @@ ms.topic: conceptual
 
 [Subreports in Power BI paginated reports](../subreports.md) Explains these reports that are displayed inside the body of a main report.  
   
-[Nested Data Regions &#40;Report Builder and SSRS&#41;](sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs) Explains nesting one data region inside another, such as a chart nested inside a matrix.  
+[Nested Data Regions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs) Explains nesting one data region inside another, such as a chart nested inside a matrix.  
 
 [Drilldown action in a paginated report (Power BI Report Builder)](drilldown-action-report-builder.md) Explains using the drilldown action to hide and show report items.  
 

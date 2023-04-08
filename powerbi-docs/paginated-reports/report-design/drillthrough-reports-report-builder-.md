@@ -19,7 +19,7 @@ A drillthrough report is a report that a user opens by clicking a link within an
 > [!NOTE]  
 >  When you are working in Report Builder, you must be connected to the same workspace as the target report.  
   
- To get started quickly with drillthrough reports, see [Tutorial: Creating Drillthrough and Main Reports &#40;Report Builder&#41;](sql/reporting-services/tutorial-creating-drillthrough-and-main-reports-report-builder). 
+ To get started quickly with drillthrough reports, see [Tutorial: Creating Drillthrough and Main Reports &#40;Report Builder&#41;](/sql/reporting-services/tutorial-creating-drillthrough-and-main-reports-report-builder). 
    
 ## Parameters in Drillthrough Reports  
  A drillthrough report typically contains parameters that are passed to it by the summary report. In the sales summary report example, the summary report includes the field [OrderNumber] in a text box in a table cell. The drillthrough report contains a parameter that takes the order number as a value. When you set the drillthrough report link on the text box for [OrderNumber], you also set the parameter for the target report to [OrderNumber]. When the user clicks the order number in the summary report, the target detail report opens and displays the information for that order number. To view instructions about customizing drillthrough reports based on parameter values, see:
