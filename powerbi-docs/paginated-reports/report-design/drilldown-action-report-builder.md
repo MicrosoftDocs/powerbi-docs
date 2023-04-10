@@ -10,6 +10,8 @@ ms.topic: conceptual
 ---
 # Drilldown action in a paginated report (Power BI Report Builder)
 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+
 By providing plus and minus icons on a text box, you can enable users in a Power BI paginated report to hide and display items interactively. This is called a *drilldown* action. For a table or matrix, you can show or hide static rows and columns, or rows and columns that are associated with groups.  
 
 :::image type="content" source="media/paginated-drill-through/paginated-drilldown.gif" alt-text="Screenshot showing drilldown in paginated reports.":::

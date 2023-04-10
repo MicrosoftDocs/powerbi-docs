@@ -3,12 +3,14 @@ title: "Drillthrough, drilldown, subreports, and nested data regions in a Power 
 description: Organize data in a Power BI paginated report to show the relationship of the general to the detailed and then display the data in a subreport or a separate drillthrough report.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 04/07/2023
+ms.date: 04/10/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ---
 # Drillthrough, drilldown, subreports, and nested data regions in a paginated report (Power BI Report Builder)
+
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
   You can organize data in a Power BI paginated report in a variety of ways to show the relationship of the general to the detailed.  You can put all the data in the report, but set it to be hidden until a user clicks to reveal details; this is a *drilldown* action. You can display the data in a data region, such as a table or chart, which is *nested* inside another data region, such as a table or matrix. You can display the data in a *subreport* that is completely contained within a main report. Or, you can put the detail data in *drillthrough* reports, separate reports that are displayed when a user clicks a link.  
   
@@ -68,11 +70,12 @@ ms.topic: conceptual
 
 [Drillthrough reports in a paginated report (Power BI Report Builder)](drillthrough-reports-report-builder-.md) Explains reports that open when a user clicks a link in a main report.  
 
-[Subreports in Power BI paginated reports](../subreports.md) Explains these reports that are displayed inside the body of a main report.  
-  
+ 
 [Nested Data Regions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs) Explains nesting one data region inside another, such as a chart nested inside a matrix.  
 
 [Drilldown action in a paginated report (Power BI Report Builder)](drilldown-action-report-builder.md) Explains using the drilldown action to hide and show report items.  
+
+[Subreports in Power BI paginated reports](../subreports.md) Explains these reports that are displayed inside the body of a main report.  
 
 ## See also  
 

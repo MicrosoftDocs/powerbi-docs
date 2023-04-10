@@ -540,10 +540,6 @@
           href: ../paginated-reports/report-design/textbox/format-text-in-a-text-box-report-builder-and-service.md
         - name: Set text box orientation
           href: ../paginated-reports/report-design/textbox/set-text-box-orientation-report-builder-and-service.md
-      - name: Subreports
-        href: ../paginated-reports/subreports.md
-      - name: Troubleshoot subreports
-        href: ../paginated-reports/subreports-troubleshoot.md
     - name: Drillthrough paginated reports
       items: 
       - name: Drillthrough, drilldown, subreports, nested data regions
@@ -554,6 +550,10 @@
         href: ../paginated-reports/report-design/add-drillthrough-action-report-report-builder.md
       - name: Drilldown action in paginated reports
         href: ../paginated-reports/report-design/drilldown-action-report-builder.md
+      - name: Subreports
+        href: ../paginated-reports/subreports.md
+      - name: Troubleshoot subreports
+        href: ../paginated-reports/subreports-troubleshoot.md
     - name: Visualizations in paginated reports
       items: 
       - name: Charts in paginated reports
