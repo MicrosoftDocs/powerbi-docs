@@ -24,7 +24,7 @@ ms.topic: conceptual
   
  All of these have commonalities, but they serve different purposes and have different features. Two of them, drillthrough reports and subreports, are actually separate reports. *Nested* is a way to describe adding a hierarchical structure to a report. In paginated reports, you can drill through reports down to four (4) levels of child reports. For example, you can drill through from Report A -> Report B -> Report C.   *Drilldown* is an action you can apply to any report item to hide and show other report items. They all are ways that you can organize and display data to help your users understand your report better.
     
-##  <a name="SummaryCharacteristics"></a> Summary of Characteristics  
+##  <a name="SummaryCharacteristics"></a> Summary of characteristics  
  This table summarizes these different traits. Details are in separate sections later in this topic. Drilldown isn't included in these comparisons because you can apply its showing and hiding action to any report item.  
   
 |Trait|Subreport|Drillthrough|  
@@ -39,18 +39,18 @@ ms.topic: conceptual
 |Is displayed|In the main report|In a different report| 
   
   
-##  <a name="Details"></a> Details of Characteristics  
+##  <a name="Details"></a> Details of characteristics  
   
-###  <a name="Queries"></a> Queries They Use  
+###  <a name="Queries"></a> Queries they use  
  Subreports and drillthrough reports can use the same query data as the main report, or they can use a different one. Nested data use the same query.  
   
-###  <a name="RetrieveData"></a> Retrieving Data  
+###  <a name="RetrieveData"></a> Retrieving data  
  Subreports retrieve data at the same time as the main report. Drillthrough reports do not. Each drillthrough report retrieves data when a user clicks each link. This is significant if the data for the main report and the subordinate report must be retrieved at the same time.  
   
-###  <a name="ProcessRender"></a> Processing and Rendering  
+###  <a name="ProcessRender"></a> Processing and rendering  
  A subreport is processed as part of the main report. For example, if a subreport that displays order detail information is added to a table cell in the detail row, the subreport is processed once per row of the table and rendered as part of the main report. A drillthrough report is only processed and rendered when the user clicks the drillthrough link in the summary main report.  
   
-###  <a name="Parameters"></a> Use of Parameters  
+###  <a name="Parameters"></a> Use of parameters  
  Drillthrough reports and subreports typically have report parameters that specify which report data to display. For example, when you click a sales order number in a main report, a drillthrough report opens, which accepts the sales order number as a parameter, and then displays all the data for that sales order. When you create the link in the main report, you specify values to pass as parameters to the drillthrough report.  
   
  To create a drillthrough report or subreport, you must design the target drillthrough report or subreport first and then create a drillthrough action or add the reference to the main report.  
@@ -64,7 +64,7 @@ ms.topic: conceptual
 ###  <a name="Display"></a> Display  
  Subreports are displayed in the main report. Drillthrough reports are displayed on their own.  
 
-##  <a name="InThisSection"></a> In This Section  
+##  <a name="InThisSection"></a> In this section  
 
 [Drillthrough reports in a paginated report (Power BI Report Builder)](drillthrough-reports-report-builder-.md) Explains reports that open when a user clicks a link in a main report.  
 
@@ -77,5 +77,3 @@ ms.topic: conceptual
 ## See also  
 
 [Report parameters in Power BI Report Builder](../parameters/report-builder-parameters.md)
-  
-  

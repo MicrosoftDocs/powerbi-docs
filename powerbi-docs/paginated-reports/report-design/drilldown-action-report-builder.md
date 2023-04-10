@@ -3,7 +3,7 @@ title: "Drilldown action in a Power BI paginated report"
 description: Enable users with drilldown action in a paginated report to hide and display items interactively in Power BI Report Builder by providing plus and minus icons on a text box.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 04/07/2023
+ms.date: 04/10/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -29,10 +29,10 @@ By providing plus and minus icons on a text box, you can enable users in a Power
   
  For more information about hiding report items, see [Hide an Item &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/hide-an-item-report-builder-and-ssrs).  
 
-## Comparing Drilldown and Drillthrough Reports  
+## Comparing drilldown and drillthrough reports  
  In a drilldown report, a user clicks a plus or minus button to expand or collapse a section of a report to show detail data in place. In a drillthrough report, the user clicks a link for a summary value, and this opens a separate, related report to show detail data. The detail data is only retrieved when the detail report runs. Drillthrough reports typically require fewer resources than drilldown reports. For more information, see [Drillthrough, drilldown, subreports, and nested data regions in a paginated report (Power BI Report Builder)](drillthrough-drilldown-subreports-nested-data-regions.md)  
   
-## Rendering Extension Support for Hidden Report Items  
+## Rendering extension support for hidden report items  
  The show-and-hide toggle on report items is supported only by rendering extensions that support user interactivity, such as the HTML rendering extension that is used when you run a report in Report Builder and in the web portal, for example. Other rendering extensions display hidden items. The following list describes support for report items with conditional visibility:  
   
 - In HTML, if items are hidden, they are not visible in the HTML source.  
