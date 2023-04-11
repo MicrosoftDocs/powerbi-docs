@@ -23,6 +23,8 @@ In DirectQuery mode, the Power BI engine queries the data at the source, which c
 
 ## Prerequisites
 
+DirectLake is supported on F and P SKUs only. It is not supported on Power BI Pro, Premium Per User, and A SKUs.
+
 Before using DirectLake, you need one or more of the following in a Power BI Premium Per User (PPU) or Power BI Premium workspace:
 
 - Warehouse with one or more tables.
