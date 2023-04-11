@@ -330,6 +330,7 @@ There are a few considerations to keep in mind while working with private endpoi
 * Private links resource REST APIs don't support tags.
 * You can't set up a private link to be used by more than one tenant. 
 * Paginated reports don't currently work with private links.
+* Exporting a Power BI report as PDF or PowerPoint is not supported when you enable Azure Private Link in Power BI.
 
 ## Next steps
 
