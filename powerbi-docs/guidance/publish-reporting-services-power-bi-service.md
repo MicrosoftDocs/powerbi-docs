@@ -173,10 +173,7 @@ You can't migrate the following item types to the Power BI service:
 
 ### Unsupported report features
 
-Some paginated report features in SSRS aren't yet supported in the Power BI service. Paginated reports don't support the following features: 
-- Custom fonts 
-
-You get an error message if you try to upload a file with features that are unsupported in the Power BI service.  
+See [What paginated report features in SSRS aren't yet supported in Power BI?](../paginated-reports/paginated-reports-faq#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-) in the Paginated reports in Power BI FAQ for a complete list of unsupported report features.
 
 ## Next steps
 
