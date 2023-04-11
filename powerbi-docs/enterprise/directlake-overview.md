@@ -25,14 +25,14 @@ In DirectQuery mode, the Power BI engine queries the data at the source, which c
 
 DirectLake is supported on F and P SKUs only. It is not supported on Power BI Pro, Premium Per User, and A SKUs.
 
-Before using DirectLake, you need one or more of the following in a Power BI Premium Per User (PPU) or Power BI Premium workspace:
+Before using DirectLake, you need one or more of the following in a Power BI Premium workspace:
 
 - Warehouse with one or more tables.
 - Lakehouse with one or more delta tables.
 
 #### Warehouse
 
-Before getting started with DirectLake mode, you must provision a warehouse in a Premium Per User (PPU) or Power BI Premium workspace. Although DirectLake mode doesn't query the warehouse endpoint, the warehouse is required because it provides the storage location for your parquet-formatted files. The warehouse also provides the access point to launch Power BI Web modeling to create a DirectLake dataset. During Private Preview, DirectLake datasets can only be created by using Web modeling launched through arehouse.
+Before getting started with DirectLake mode, you must provision a warehouse in a Power BI Premium workspace. Although DirectLake mode doesn't query the warehouse endpoint, the warehouse is required because it provides the storage location for your parquet-formatted files. The warehouse also provides the access point to launch Power BI Web modeling to create a DirectLake dataset. During Private Preview, DirectLake datasets can only be created by using Web modeling launched through warehouse.
 
 In scenarios where warehouse specific security constructs such as OLS, RLS, CLS, CLE, or views used in the warehouse can't be read via DirectLake, the DirectLake datasets seamlessly fall back to DirectQuery.
 
@@ -40,9 +40,9 @@ To learn how to create a warehouse, see [Create a warehouse](/fabric/data-wareho
 
 #### Lakehouse
 
-Before getting started with DirectLake mode, you must provision a Lakehouse in a Premium Per User (PPU) or Power BI Premium workspace. Although DirectLake mode doesn't query the Lakehouse endpoint, the Lakehouse is required because it provides the storage location for your parquet-formatted files. The Lakehouse also provides the access point to launch Power BI Web modeling to create a DirectLake dataset. **During Private Preview**, DirectLake datasets can only be created by using Web modeling launched through Lakehouse.
+Before getting started with DirectLake mode, you must provision a Lakehouse in a Power BI Premium workspace. Although DirectLake mode doesn't query the Lakehouse endpoint, the Lakehouse is required because it provides the storage location for your parquet-formatted files. The Lakehouse also provides the access point to launch Power BI Web modeling to create a DirectLake dataset. **During Private Preview**, DirectLake datasets can only be created by using Web modeling launched through Lakehouse.
 
-##### To create a Lakehouse in a PPU or Premium workspace
+##### To create a Lakehouse in a Premium workspace
 
 1. In your Power BI workspace, select **New** > **Show all**, and then under **Data engineering**, select the **Lakehouse** tile.
 
@@ -166,11 +166,11 @@ The following are known issues and limitations **during private preview**:
 
     |Capacity SKU |Max storage (in GB) per dataset in MSIT  |
     |---------|---------|
-    |EM1/A1     |    1     |
-    |EM2/A2     |    2     |
-    |EM3/A3    |    2    |
-    |P1/A4     |    50     |
-    |P2/A5     |    100     |
-    |P3/A6     |    200     |
-    |P4/A72     |   400      |
-    |P5/A82     |   800      |
+    |EM1     |    1     |
+    |EM2     |    2     |
+    |EM3    |    2    |
+    |P1     |    50     |
+    |P2     |    100     |
+    |P3    |    200     |
+    |P4     |   400      |
+    |P5     |   800      |
