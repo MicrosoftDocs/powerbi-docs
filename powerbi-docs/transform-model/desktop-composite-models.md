@@ -225,7 +225,7 @@ Using composite models with Power BI datasets and Analysis Services, you can bui
 To enable the creation of composite models on Power BI datasets, your tenant needs to have the following switches enabled:
 
 - [Allow XMLA Endpoints and Analyze in Excel with on-premises datasets](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets). If this switch is disabled a DirectQuery connection to a Power BI dataset can't be made.
-- [Users can work with Power BI datasets in Excel using a live connection](../admin/service-admin-portal-export-sharing.md#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection). If this switch is disabled, users can't make live connections to Power BI datasets so the [**Make changes to this model** button](#using-directquery-for-live-connections) can't be reached.
+- [Users can work with Power BI datasets in Excel using a live connection](../admin/service-admin-portal-export-sharing.md#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection). If this switch is disabled, users can't make live connections to Power BI datasets so the **Make changes to this model** button can't be reached.
 - [Allow DirectQuery connection to Power BI datasets](../admin/service-admin-portal-export-sharing.md#allow-directquery-connections-to-power-bi-datasets). See the following paragraphs for more information on this switch and the effect of disabling it.
 
 Additionally, for Premium capacities and Premium Per User the ["XMLA endpoint" setting should be enabled and set to to either "Read Only" or "Read/Write"](../enterprise/service-premium-connect-tools.md#enable-xmla-read-write).
