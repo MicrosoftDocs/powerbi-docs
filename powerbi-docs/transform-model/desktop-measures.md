@@ -89,12 +89,6 @@ You can create a special table that contains only measures. That table always ap
 
 With *dynamic format strings*, you can conditionally customize how measures appear in visuals by applying a format string with a separate DAX expression. Dynamic format strings overcome an inherent disadvantage of using the FORMAT function. When using FORMAT, the measure keeps its data type and is not forced to change to a string data type. This applies different format strings to the measure depending on the context.
 
-- A *static format string* can be chosen from the measure tools ribbon format drop down, with options such as Whole Number or Currency, and you can specify having a thousand comma and decimal places. This applies to the measure in all contexts.
-
-- A [*custom format string*](../create-reports/desktop-custom-format-strings.md) can be entered into the measure tools ribbon format drop down, with options such as #,##0 or #0.0%. The format applies to the measure in all contexts.
-
-- In the measure itself, the [FORMAT function](/dax/format-function-dax) can be used to conditionally apply a format string to the value of the measure. But using FORMAT has the disadvantage of forcing measures that would otherwise be numeric to be returned as a string. This can have some limitations, such as not working with most Power BI visuals depending on numeric values, like charts. This applies different format strings to the measure depending on context.
-
 #### To specify a dynamic format string
 
 1. In the **Data** pane, select the measure for which you want to specify a dynamic format string.
