@@ -173,7 +173,7 @@ You can't migrate the following item types to the Power BI service:
 
 ### Unsupported report features
 
-See [What paginated report features in SSRS aren't yet supported in Power BI?](../paginated-reports/paginated-reports-faq#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-) in the Paginated reports in Power BI FAQ for a complete list of unsupported report features.
+See [What paginated report features in SSRS aren't yet supported in Power BI?](../paginated-reports/paginated-reports-faq.yml#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-) in the Paginated reports in Power BI FAQ for a complete list of unsupported report features.
 
 ## Next steps
 
