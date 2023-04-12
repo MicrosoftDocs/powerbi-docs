@@ -93,12 +93,12 @@ The following applications connecting to a migrated dataset through redirection 
 |-----|-----|
 |Microsoft Excel | 16.0.15826.10000 |
 |PowerShell cmdlets | To be determined |
-|Server Profiler | 19 Preview 4 (Not yet released) |
-|SQL Server Management Studio (SSMS) | 19 Preview 4 (Not yet released) |
+|Server Profiler | 19.0.2 |
+|SQL Server Management Studio (SSMS) | 19.0.2 |
 | Visual Studio with Analysis Services projects (SSDT) | 3.0.6 |
 
 > [!NOTE]
-> PowerShell cmdlets, SQL Server Management Studio, and Server Profiler (installed with SSMS) versions that support server redirect are currently pending release.
+> PowerShell cmdlets are currently pending release.
 
 Server redirection for a migration can be enabled by using an On/Off setting. When you enable server redirection, the Azure Analysis Services server must exist and can't be paused. The current user must be both server administrator and workspace administrator.
 
