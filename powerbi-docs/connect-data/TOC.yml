@@ -65,9 +65,7 @@
     - name: "About using DirectQuery in Power BI"
       href: desktop-directquery-about.md
     - name: "Live connection and DirectQuery comparison"
-      href: service-live-connect-dq-datasets.md     
-    - name: "Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)"
-      href: desktop-directquery-datasets-azure-analysis-services.md      
+      href: service-live-connect-dq-datasets.md       
   - name: How-to guides
     expanded: true
     items: 

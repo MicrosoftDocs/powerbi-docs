@@ -4970,7 +4970,12 @@
             "source_path": "powerbi-docs/connect-data/desktop-connect-using-generic-interfaces.md",
             "redirect_url": "/power-query/connect-using-generic-interfaces",
             "redirect_document_id": false
-        }                                                    
+        },                                                    
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-directquery-datasets-azure-analysis-services.md",
+            "redirect_url": "/power-bi/transform-model/desktop-composite-models",
+            "redirect_document_id": false
+        }      
   ]          
 
 }

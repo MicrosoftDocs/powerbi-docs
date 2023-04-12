@@ -1,5 +1,5 @@
 ---
-title: Create a workspace - Power BI
+title: Create a workspace in Power BI
 description: "Learn how to create a workspace: a collection of dashboards, reports, and paginated reports built to deliver key metrics for your organization."
 author: maggiesMSFT
 ms.author: maggies
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Create a workspace
 ms.topic: how-to
-ms.date: 02/27/2023
+ms.date: 04/12/2023
 ms.custom: contperf-fy21q3, contperf-fy21q1, contperf-fy20q4
 LocalizationGroup: Share your work
 ---
