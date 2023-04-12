@@ -87,12 +87,12 @@ You can create a special table that contains only measures. That table always ap
 > [!NOTE]
 > Dynamic format strings is currently in Preview. When in Preview, functionality and documentation are likely to change.
 
-With *dynamic format strings*, you can conditionally customize how measures appear in visuals by applying a format string with a separate DAX expression. Dynamic format strings overcome an inherent disadvantage of using the FORMAT function. When using FORMAT, the measure keeps its data type and is not forced to change to a string data type. This applies different format strings to the measure depending on the context.
+With *dynamic format strings*, you can conditionally customize how measures appear in visuals by applying a format string with a separate DAX expression. Dynamic format strings overcome an inherent disadvantage of using the FORMAT function. When using dynamic format strings, the measure keeps its data type and is isn't forced to change to a string data type. This applies different format strings to the measure depending on the context.
 
 #### To specify a dynamic format string
 
 1. In the **Data** pane, select the measure for which you want to specify a dynamic format string.
-1. In the **Measure tools** ribbon > **Formatting** section > **Format** listbox, select **Dynamic**. A new listbox with **Format** already selected appears to the left of the DAX formula bar. This drop down is how you can switch between the static measure DAX expression and the dynamic format string DAX expression. Whatever the static format string was in use before switching to Dynamic is pre-populated as a string in the DAX formula bar.
+1. In the **Measure tools** ribbon > **Formatting** section > **Format** listbox, select **Dynamic**. A new listbox with **Format** already selected appears to the left of the DAX formula bar. This drop down is how you can switch between the measure DAX expression and the dynamic format string DAX expression. Whatever the static format string was in use before switching to Dynamic is pre-populated as a string in the DAX formula bar.
 :::image type="content" source="media/desktop-measures/format-dropdown.png" alt-text="Format dropdown":::
 1. Overwrite the string with a DAX expression that outputs the desired format string for your measure. For example, the following expression looks up the appropriate currency format string from a ‘Country Currency Format Strings’ table:
 :::image type="content" source="media/desktop-measures/format-dynamic-measure.png" alt-text="Dynamic format measure expression":::
