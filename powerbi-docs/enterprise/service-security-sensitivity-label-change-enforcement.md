@@ -31,7 +31,7 @@ Power BI supports several capabilities, such as [label inheritance from data sou
 In such cases, the usage rights requirements for changing or removing the label are relaxed - a user needs just one of the following usage rights to be able to change or remove the label:
 * OWNER
 * EXPORT
-* EDIT 
+* EDIT and EDITRIGHTSDATA
 
 If no user has even these usage rights, nobody will be able to change or remove the label from the item, and access to the item is potentially endangered.
 
