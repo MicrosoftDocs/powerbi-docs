@@ -14,7 +14,7 @@ ms.topic: how-to
 
 The Power BI paginated report that opens when you select the link in the main paginated report is known as a *drillthrough report*. This drillthrough link enables a drillthrough action.  
   
- Drillthrough reports must be published to the same workspace as the main report. You can add a drillthrough link to any item that has an **Action** property, such as a text box, an image, or data points on a chart.  
+When you're publishing to the Power BI service, you must publish drillthrough reports to the same workspace as the main report. You can add a drillthrough link to any item that has an **Action** property, such as a text box, an image, or data points on a chart.  
   
  To add a drillthrough link to a report, you must first create the drillthrough report that the main report will link to. A drillthrough report commonly contains details about an item that is contained in the original summary report, and often contains parameters that filter the drillthrough report based on parameters passed to it from the main report. For more information on creating the drillthrough report, see [Drillthrough Reports &#40;Report Builder&#41;](drillthrough-reports-report-builder-.md).  
 
@@ -44,7 +44,7 @@ The Power BI paginated report that opens when you select the link in the main pa
   
 1. (Optional) For text boxes, it is helpful to indicate to the user that the text is a link by changing the color and effect of the text on the **Home** tab of the Ribbon.  
 
-## See also
+## Next steps
 
  [Action Properties Dialog Box &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs)   
  [Formatting Data Points on a Chart &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)   
