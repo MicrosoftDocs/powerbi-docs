@@ -7,14 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 10/26/2022
-ms.custom: licensing support
+ms.date: 04/12/2023
+ms.custom: licensing support,fabric
 LocalizationGroup: Administration
 ---
 
 # Track user activities in Power BI
 
 Knowing who is taking what action on which item in Power BI can be critical in helping your organization fulfill its requirements, like meeting regulatory compliance and records management. This article discusses two options to track user activity: The [Power BI activity log](#use-the-activity-log) and the [unified audit log](#use-the-audit-log).
+
+> [!NOTE]
+> The procedures described in this article can also be used to track user activities on all items in the Fabric experience. However, currently, for non-Power BI Fabric items, only *create*, *read*, *update*, and *delete* operations are recorded. 
 
 ## Choosing a log source
 
@@ -292,6 +295,8 @@ The following operations are available in both the audit and activity logs.
 
 > [!NOTE]
 > We recently added many Power BI activities to the audit and activity logs. Friendly names can be found in Microsoft Purview, and we'll continue to update this list to identify the operation names used in REST API and PowerShell queries.
+>
+> In the Fabric experience, only *create*, *read*, *update*, and *delete* operations are currently logged.
 
 | Friendly name         | Operation name           | Notes                                  |
 |-----------------------|--------------------------|----------------------------------------|
