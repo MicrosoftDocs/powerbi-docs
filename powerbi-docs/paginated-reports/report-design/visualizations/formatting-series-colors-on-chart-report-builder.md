@@ -1,7 +1,7 @@
 ---
 title: "Formatting series colors on a Power BI paginated report chart | Microsoft Docs"
 description: Learn how to use the many built-in palettes in paginated reports for charts or define a custom palette of your own design in Report Builder.
-ms.date: 03/29/2023
+ms.date: 04/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -10,6 +10,8 @@ ms.author: maggies
 ms.reviewer: monaraya
 ---
 # Formatting series colors on a paginated report chart (Power BI Report Builder)
+
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
 Power BI Report Builder provides several built-in palettes for paginated report charts, or you can define a custom palette. By default, charts use the built-in **Pacific** color palette to fill each series. These colors also appear in the legend. When multiple series are added to the chart, the chart assigns the series a color in the order that the colors have been defined in the palette.  
   

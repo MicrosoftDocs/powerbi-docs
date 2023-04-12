@@ -1,7 +1,7 @@
 ---
 title: "Indicators in a Power BI paginated report| Microsoft Docs"
 description: Learn about indicators, the small gauges that convey the state of a single data value in Power BI paginated reports in Report Builder. 
-ms.date: 03/30/2023
+ms.date: 04/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -10,6 +10,8 @@ ms.author: maggies
 ms.reviewer: monaraya
 ---
 # Indicators in a paginated report (Power BI Report Builder)
+
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
   In Power BI paginated reports, indicators are small gauges that convey the state of a single data value at a glance. The icons that represent indicators and their states are simple and visually effective even when used in small sizes.  
   

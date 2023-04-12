@@ -1,7 +1,7 @@
 ---
 title: "Formatting data points on a Power BI paginated report chart | Microsoft Docs"
 description: Find out about different types of formatting of data points on charts in your paginated reports in Power BI Report Builder. 
-ms.date: 03/30/2023
+ms.date: 04/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -11,6 +11,7 @@ ms.reviewer: monaraya
 ---
 # Formatting data points on a paginated report chart (Power BI Report Builder)
 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
 In a Power BI paginated report, a data point is the smallest individual entity on the chart. On non-Shape charts, data points are represented depending on their chart type. For example, a Line series consists of one or more connected data points. On Shape charts, data points are represented by individual slices or segments that add up to the whole chart. For example, on a pie chart, each piece is a data point. For more information, see [Chart Types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs).  
   

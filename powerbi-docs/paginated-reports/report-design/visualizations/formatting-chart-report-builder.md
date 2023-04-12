@@ -2,7 +2,7 @@
 title: "Formatting a chart in a Power BI paginated report | Microsoft Docs"
 
 description:  Improve the appearance of your paginated report chart and highlight data points using the formatting options found in the properties of each chart element in Power BI Report Builder.
-ms.date: 03/29/2023
+ms.date: 04/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -12,7 +12,7 @@ ms.reviewer: monaraya
 ---
 # Formatting a chart in a paginated report (Power BI Report Builder)
 
-
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
   After you have defined the data for your Power BI paginated report chart and it is appearing the way you want, you can add formatting to improve the overall appearance and highlight key data points. The most common formatting options can be modified from the Properties dialog box that are found when you right-click a chart element to display its shortcut menu. Each chart element has its own dialog box. For more information about chart elements, see [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md).  
   

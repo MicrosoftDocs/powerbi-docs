@@ -1,7 +1,7 @@
 ---
 title: "Add bevel, emboss, and texture styles to a Power BI paginated report chart | Microsoft Docs"
 description: Learn how to specify a drawing effect, such as bevels, embossing, or textures, to increase the visual impact of your paginated report chart in Power BI Report Builder. 
-ms.date: 03/29/2023
+ms.date: 04/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -11,6 +11,7 @@ ms.reviewer: monaraya
 ---
 # Chart effects - add bevel, emboss, or texture to a paginated report chart (Power BI Report Builder)
 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
   When using certain chart types in a Power BI paginated report, you can specify a drawing effect to increase the visual impact of your chart. These drawing effects are only applied to the series of your chart. They have no effect on any other chart element.  
   

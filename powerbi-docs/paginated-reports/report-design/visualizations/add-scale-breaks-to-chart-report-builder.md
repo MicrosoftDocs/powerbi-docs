@@ -1,7 +1,7 @@
 ---
 title: "Add scale breaks to a Power BI paginated report chart | Microsoft Docs"
 description: Find out about using a scale break to display two distinct ranges in the same paginated report chart area in Power BI Report Builder.
-ms.date: 03/29/2023
+ms.date: 04/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,8 +9,9 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: monaraya
 ---
-
 # Add scale breaks to a paginated report chart (Power BI Report Builder)
+
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
   A scale break is a stripe drawn across the plotting area of a chart to denote a break in continuity between the high and low values on a value axis (usually the vertical, or y-axis). Use a scale break to display two distinct ranges in the same chart area in Power BI paginated report.  
   

@@ -1,7 +1,7 @@
 ---
 title: "Gauges in a Power BI paginated report | Microsoft Docs"
 description: Display key performance indicators in a paginated report to illustrate values or to compare data by using a radial or linear gauge in Power BI Report Builder. 
-ms.date: 03/30/2023
+ms.date: 04/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -10,6 +10,8 @@ ms.author: maggies
 ms.reviewer: monaraya
 ---
 # Gauges in a paginated report (Power BI Report Builder)
+
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
   In Power BI paginated reports, a gauge data region displays a single value from your dataset. An individual gauge is always positioned inside a gauge panel, where you can add child or adjacent gauges. Inside a single gauge panel, you can create multiple gauges that share common functions such as filtering, grouping, or sorting.  
   

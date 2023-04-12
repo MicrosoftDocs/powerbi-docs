@@ -1,7 +1,7 @@
 ---
 title: "Bar charts in a Power BI paginated report | Microsoft Docs"
 description: Display data horizontally with a bar chart to represent data in a paginated report with a finite start and end date in Power BI Report Builder.
-ms.date: 03/29/2023
+ms.date: 04/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -10,6 +10,8 @@ ms.author: maggies
 ms.reviewer: monaraya
 ---
 # Bar charts in a paginated report (Power BI Report Builder)
+
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
   A bar chart displays series as sets of horizontal bars in a Power BI paginated report. The plain bar chart is closely related to the column chart, which displays series as sets of vertical bars, and the range bar chart, which displays series as sets of horizontal bars with varying beginning and end points.  
   
