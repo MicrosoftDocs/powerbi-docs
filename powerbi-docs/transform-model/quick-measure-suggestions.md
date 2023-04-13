@@ -127,7 +127,7 @@ Return values based on conditions. If you are returning string values, you will 
 
 Examples:
 -	If sales > 10,000 return "high sales" else "low sales"
--	If sales is greater than 10,000 display "high sales" otherwise display "low sales"
+-	If sales are greater than 10,000 display "high sales" otherwise display "low sales"
 -	If selected value for product is blank, display "no product selected" else show selected product
 -	If selected product = Power BI, show "PBI" else "other"
 
