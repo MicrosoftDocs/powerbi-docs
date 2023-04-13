@@ -78,8 +78,10 @@ To model your data, navigate to **Model view** by selecting on the **Model View*
 In Power BI, a dataset is always required before any reports can be built, so the default dataset enables quick reporting capabilities on top of the datamart.  Within the datamart, a user can add datamart objects -  tables to their default dataset. They can also add additional semantic modeling properties, such as hierarchies and descriptions.  These are then used to create the Power BI dataset’s tables. Users can also remove objects from the default dataset. 
 
 To add objects – tables or views to the default dataset, a user has 2 options:
-1.	Automatically add objects to the dataset, which happens by default with no user intervention needed
-2.	Manually add objects to the dataset
+
+- Automatically add objects to the dataset, which happens by default with no user intervention needed
+- Manually add objects to the dataset
+
 
 The auto detect experience determines any tables or views and opportunistically adds them.
 
