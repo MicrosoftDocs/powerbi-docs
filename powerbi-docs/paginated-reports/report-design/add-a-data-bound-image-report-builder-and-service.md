@@ -23,7 +23,7 @@ Adding a data-bound image to a page header or page footer requires additional st
   
 2.  Insert a column in your table. For more information, see [Insert or Delete a Column &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/insert-or-delete-a-column-report-builder-and-ssrs).
   
-3.  On the **Insert** menu, click **Image**, and then click in the data row of the new column.  
+3.  On the **Insert** menu, select **Image**, and then click in the data row of the new column.  
   
 4.  On the General page of the **Image Properties** dialog box, type a name in the **Name** text box or accept the default.  
   
