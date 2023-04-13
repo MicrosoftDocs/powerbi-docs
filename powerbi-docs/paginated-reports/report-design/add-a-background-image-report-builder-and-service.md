@@ -2,7 +2,7 @@
 title: "Add a background image to a paginated report"
 description: Discover how to embed an image in the paginated report definition to add the image to a variety of report items including text boxes, lists, and page header.
 ms.date: 03/31/2023
-ms.service: power-bi
+ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
@@ -42,13 +42,13 @@ You can add a background image to a paginated report item such as a rectangle, t
   
          Set **Source** to **External**.  
   
-         Set **Value** to a valid path to an image. This can be on a report server in native mode or SharePoint integrated mode, or it can be on any other Web site. For more information, see [Add an External Image &#40;Report Builder and service&#41;](add-an-external-image-report-builder-and-ssrs.md).
+         Set **Value** to a valid path to an image. This can be on a report server in native mode or SharePoint integrated mode, or it can be on any other Web site. For more information, see [Add an External Image &#40;Report Builder and service&#41;](add-an-external-image-report-builder-and-service.md).
   
     -   For an image is that is contained in a field in the database to which the report item is connected:  
   
          Set **Source** to **Database**.  
   
-         Set **Value** to the name of a field in the report dataset. For more information, see [Add a Data-Bound Image &#40;Report Builder and SSRS&#41;](add-a-data-bound-image-report-builder-and-ssrs.md).
+         Set **Value** to the name of a field in the report dataset. For more information, see [Add a Data-Bound Image &#40;Report Builder and SSRS&#41;](add-a-data-bound-image-report-builder-and-service.md).
   
          For **MIMEType**, or file format, select the appropriate MIME type for the image-for example, .bmp.  
   

@@ -2,7 +2,7 @@
 title: "Page layout and rendering in paginated reports"
 description: Design or improve your paginated reports with rendering extensions for page layout, page breaks, and paper size in Power BI Report Builder.
 ms.date: 03/31/2023
-ms.service: power-bi
+ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
@@ -47,7 +47,7 @@ A report can also contain subreports.
   
  You can set properties on report items to initially hide or show them on the page. You can set visibility properties on rows or columns or groups for data regions and provide toggle buttons to allow the user to interactively show or hide report data. You can set visibility or initial visibility by using expressions, including expressions based on report parameters.  
   
- When a report is processed, report data is combined with the report layout elements and the combined data is sent to a report renderer. The renderer follows predefined rules for report item expansion and determines how much data fits on each page. To design an easy-to-read report that is optimized for the renderer that you plan to use, you should understand the rules used to control pagination in Report Builder. For more information, see [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs.md).  
+ When a report is processed, report data is combined with the report layout elements and the combined data is sent to a report renderer. The renderer follows predefined rules for report item expansion and determines how much data fits on each page. To design an easy-to-read report that is optimized for the renderer that you plan to use, you should understand the rules used to control pagination in Report Builder. For more information, see [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs).  
   
 ##  <a name="RenderingExtensions"></a> Renderers  
  Reporting Services includes a set of renderers, also referred to as rendering extensions, that you can use to export reports to different formats. There are three types of renderers:  
@@ -74,7 +74,7 @@ A report can also contain subreports.
   
  For example, reports rendered to HTML and MHTML formats are optimized for a computer screen-based experience where pages can be various lengths.  
   
- For more information, see [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](../../reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs.md).  
+ For more information, see [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs).  
    
 ##  <a name="Pagination"></a> Pagination  
  Pagination refers to the number of pages within a report and how report items are arranged on these pages. Pagination in Report Builder varies depending on the rendering extension you use to view and deliver the report and the page break and keep-together options you configure the report to use.  
@@ -83,33 +83,33 @@ A report can also contain subreports.
   
  When you use a **soft page** rendering extension such as the HTML rendering extension, you might want to know how the report looks printed and also how well it renders using a hard page renderer such as PDF. During the creation or updating of a report you can preview and export it in Report Builder and Report Designer.  
   
- **Hard page** renderers have the most impact on report layout and physical page size. To learn more, see [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs.md).  
+ **Hard page** renderers have the most impact on report layout and physical page size. To learn more, see [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs).  
    
 ##  <a name="HowTo"></a> How-To Topics  
  This section lists procedures that show you, step by step, how to work with pagination in reports.  
   
--   [Add a Page Break &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/add-a-page-break-report-builder-and-ssrs.md)  
+-   [Add a Page Break &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/add-a-page-break-report-builder-and-ssrs)  
   
--   [Display Row and Column Headers on Multiple Pages &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/display-row-and-column-headers-on-multiple-pages-report-builder-and-ssrs.md)  
+-   [Display Row and Column Headers on Multiple Pages &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/display-row-and-column-headers-on-multiple-pages-report-builder-and-ssrs)  
   
--   [Add or Remove a Page Header or Footer &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/add-or-remove-a-page-header-or-footer-report-builder-and-ssrs.md)  
+-   [Add or Remove a Page Header or Footer &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/add-or-remove-a-page-header-or-footer-report-builder-and-ssrs)  
   
--   [Keep Headers Visible When Scrolling Through a Report &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/keep-headers-visible-when-scrolling-through-a-report-report-builder-and-ssrs.md)  
+-   [Keep Headers Visible When Scrolling Through a Report &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/keep-headers-visible-when-scrolling-through-a-report-report-builder-and-ssrs)  
   
--   [Display Page Numbers or Other Report Properties &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/display-page-numbers-or-other-report-properties-report-builder-and-ssrs.md)  
+-   [Display Page Numbers or Other Report Properties &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/display-page-numbers-or-other-report-properties-report-builder-and-ssrs)  
   
--   [Hide a Page Header or Footer on the First or Last Page &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/hide-a-page-header-or-footer-on-the-first-or-last-page-report-builder-and-ssrs.md)  
+-   [Hide a Page Header or Footer on the First or Last Page &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/hide-a-page-header-or-footer-on-the-first-or-last-page-report-builder-and-ssrs)  
   
 ##  <a name="InThisSection"></a> In This Section  
  The following topics provide additional information about page layout and rendering.  
   
- [Page Headers and Footers &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/page-headers-and-footers-report-builder-and-ssrs.md)  
+ [Page Headers and Footers &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/page-headers-and-footers-report-builder-and-ssrs)  
  Provides information about using headers and footers in reports and how to control pagination using them.  
   
- [Controlling Page Breaks, Headings, Columns, and Rows &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/controlling-page-breaks-headings-columns-and-rows-report-builder-and-ssrs.md)  
+ [Controlling Page Breaks, Headings, Columns, and Rows &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/controlling-page-breaks-headings-columns-and-rows-report-builder-and-ssrs)  
  Provides information about using page breaks.  
   
 ## Next steps
- [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions.md)   
+ [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
  
   

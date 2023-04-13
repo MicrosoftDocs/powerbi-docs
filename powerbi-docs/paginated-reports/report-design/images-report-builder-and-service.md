@@ -2,7 +2,7 @@
 title: "Images in paginated reports"
 description: Find out about images as items in paginated reports in Report Builder. These items contain a reference to an image embedded in a report or stored in a database.
 ms.date: 03/31/2023
-ms.service: power-bi
+ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
@@ -24,7 +24,7 @@ Storing logos on a server is a good idea because you can use the same logo in ma
   
  Data-bound images can also be displayed from binary data stored in a database. For example, the pictures that appear alongside product names in a product list are database images. In the following picture, the images of bicycles are stored in a database and retrieved in the report to illustrate each product.  
   
- ![rs_DataboundBikes](../../reporting-services/report-design/media/rs-databoundbikes.gif "rs_DataboundBikes")  
+ ![rs_DataboundBikes](./media/rs-databoundbikes.png "rs_DataboundBikes")
   
   
 ##  <a name="EmbedImages"></a> Embedding Images  

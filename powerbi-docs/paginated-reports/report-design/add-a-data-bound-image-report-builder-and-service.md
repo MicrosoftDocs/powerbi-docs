@@ -2,7 +2,7 @@
 title: "Add a data-bound image to a paginated report"
 description: Learn how to reference an image that is stored in a database to display the image in your paginated reports in Power BI Report Builder.
 ms.date: 03/31/2023
-ms.service: power-bi
+ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
@@ -19,9 +19,9 @@ Adding a data-bound image to a page header or page footer requires additional st
     
 ## To add a data-bound image  
   
-1.  In report design view, create a table with a data source connection and a dataset with a field that contains binary image data. For more information, see [Tables &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/tables-report-builder-and-ssrs.md).  
+1.  In report design view, create a table with a data source connection and a dataset with a field that contains binary image data. For more information, see [Tables &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/tables-report-builder-and-ssrs.md).  
   
-2.  Insert a column in your table. For more information, see [Insert or Delete a Column &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/insert-or-delete-a-column-report-builder-and-ssrs.md).  
+2.  Insert a column in your table. For more information, see [Insert or Delete a Column &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/insert-or-delete-a-column-report-builder-and-ssrs.md).  
   
 3.  On the **Insert** menu, click **Image**, and then click in the data row of the new column.  
   

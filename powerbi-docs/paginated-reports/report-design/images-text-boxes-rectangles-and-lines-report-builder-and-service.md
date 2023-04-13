@@ -2,7 +2,7 @@
 title: "Images, text boxes, rectangles, and lines in a paginated report"
 description: Add visual interest, highlight key information, or provide related information in Power BI Report Builder. Add images, text boxes, rectangles, and lines in a paginated report. 
 ms.date: 03/31/2023
-ms.service: power-bi
+ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
@@ -21,7 +21,7 @@ ms.reviewer: rpatkar
   
  Every cell in a table or matrix is also a text box, which you can format in the same way that you format stand-alone text boxes.  
   
- [Rectangles and Lines &#40;Power BI Report Builder and service&#41;](/sql/reporting-services/report-design/rectangles-and-lines-report-builder-and-ssrs.md)  
+ [Rectangles and Lines &#40;Power BI Report Builder and service&#41;](/sql/reporting-services/report-design/rectangles-and-lines-report-builder-and-ssrs)  
  **Lines** display horizontally, vertically, or diagonally. A line is defined with a start and end point and can have various styles (for example, weight and color) assigned to it. A line has no data associated with it.  
   
  **Rectangles** can be used as a graphical element, or as a container for other report items. As a graphical element, a rectangle has the same properties as a line. As a container, a rectangle acts as a parent container for all report items inside it. Placing report items in a parent container helps control how they appear on each report page.  
@@ -30,6 +30,6 @@ ms.reviewer: rpatkar
  Images display binary image data in a report. You provide the source for the image. The source can be a URL reference to an image stored on a Web server, a reference to embedded image data, or a reference to binary image data in a database. Report Builder and Report Designer support .bmp, .jpeg, .gif, and .png files.  
   
 ## Next steps
- [Formatting Report Items &#40;Power BI Report Builder and service&#41;](/sql/reporting-services/report-design/formatting-report-items-report-builder-and-ssrs.md)  
+ [Formatting Report Items &#40;Power BI Report Builder and service&#41;](/sql/reporting-services/report-design/formatting-report-items-report-builder-and-ssrs)  
   
   
