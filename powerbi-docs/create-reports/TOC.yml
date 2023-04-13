@@ -174,7 +174,7 @@
       href: power-bi-sparklines-tables.md
     - name: "Display custom format strings"
       href: desktop-custom-format-strings.md
-    - name: "Use dynamic format strings for measures"
+    - name: "Create dynamic format strings for measures"
       href: desktop-dynamic-format-strings.md     
     - name: "Apply conditional table formatting"
       href: desktop-conditional-table-formatting.md

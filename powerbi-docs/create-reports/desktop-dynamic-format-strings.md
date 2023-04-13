@@ -309,6 +309,8 @@ Selecting different **Country** names in the slicer shows the Converted Sales Am
 
     :::image type="content" source="media/desktop-dynamic-format-strings/converted-sales-amount-visual.png" alt-text="Converted sales amount visual":::
 
+1. Save your model.
+
 ## Known issues and considerations
 
 During Preview, the following issues and limitations are being addressed:
