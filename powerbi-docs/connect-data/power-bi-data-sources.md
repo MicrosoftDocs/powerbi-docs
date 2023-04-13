@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 03/30/2023
+ms.date: 04/12/2023
 ---
 
 # Power BI data sources
 
-Power BI uses Power Query to connect to data sources. Power Query data sources, which also apply to Power BI, are documented in the following article: [Connectors in Power Query](/power-query/connectors/).
+Power BI uses Power Query to connect to data sources. **Power BI data sources** are documented in the following article: [Power Query (including Power BI) connectors](/power-query/connectors/).
 
 For information about dataflows in Power BI, see [connect to data sources for Power BI dataflows](../transform-model/dataflows/dataflows-configure-consume.md).
 
