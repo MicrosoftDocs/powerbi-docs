@@ -29,13 +29,13 @@ Dynamic format strings can also be used with calculation groups. The same DAX pa
 #### To specify a dynamic format string
 
 1. In the **Data** pane, select the measure for which you want to specify a dynamic format string.
-1. In the **Measure tools** ribbon > **Formatting** section > **Format** listbox, select **Dynamic**. A new listbox with **Format** already selected appears to the left of the DAX formula bar. This drop down is how you can switch between the static measure DAX expression and the dynamic format string DAX expression. Whatever the static format string was in use before switching to Dynamic is pre-populated as a string in the DAX formula bar.
+1. In the **Measure tools** ribbon > **Formatting** section > **Format** listbox, select **Dynamic**. A new listbox with **Format** already selected appears to the left of the DAX formula bar. This drop down is how you can switch between the static measure DAX expression and the dynamic format string DAX expression. Whatever the static format string was in use before switching to Dynamic is prepopulated as a string in the DAX formula bar.
 :::image type="content" source="media/desktop-dynamic-format-strings/format-dropdown.png" alt-text="Format dropdown":::
 1. Overwrite the string with a DAX expression that outputs the correct format string for your measure. For example, the following expression looks up the currency format string we want from a ‘Country Currency Format Strings’ table:
 :::image type="content" source="media/desktop-dynamic-format-strings/format-dynamic-measure.png" alt-text="Dynamic format measure expression":::
 1. Verify your dynamic format string works in a visual.
 
-    To delete the dynamic format string and return to using a static format string, in the **Formatting** section > **Format** listbox, select a different format option. Because there is no undo to this action, a dialog appears asking if you want to proceed. If you want to go back to using a dynamic format string again, you must re-enter the DAX expression.
+    To delete the dynamic format string and return to using a static format string, in the **Formatting** section > **Format** listbox, select a different format option. Because there is no undo to this action, a dialog appears asking if you want to proceed. If you want to go back to using a dynamic format string again, you must reenter the DAX expression.
 
     :::image type="content" source="media/desktop-dynamic-format-strings/format-change-warning.png" alt-text="Format change warning":::
 
@@ -170,7 +170,7 @@ A measure group helps you organize different measures by having them in a single
 
 1. In the **Home** ribbon, select **Enter data**.
 
-1. In the **Create Table** dialog, leave the values blank. Name the table **Sales measures**, and then click **Load**. This table will contain your new measures.
+1. In the **Create Table** dialog, leave the values blank. Name the table **Sales measures**, and then click **Load**. This table contains your new measures.
 
 #### Create measures
 
@@ -183,7 +183,7 @@ A measure group helps you organize different measures by having them in a single
     It should look like this:
     :::image type="content" source="media/desktop-dynamic-format-strings/sales-amount-measure-formula.png" alt-text="Sales amount measure DAX formula":::
 
-1. In **Sales measures**, right-click **Column1**, and then select **Hide in report view**. This changes Sales measures to a measure group, which now shows at the top of the Data pane with a measure group icon, like this:
+1. In **Sales measures**, right-click **Column1**, and then select **Hide in report view**. This changes Sales measures to a measure group, which now appears at the top of the Data pane with a measure group icon, like this:
 :::image type="content" source="media/desktop-dynamic-format-strings/sales-measures-column1.png" alt-text="Column1 in Sales measure group":::
 
 1. You can now create a measure to compute the exchange rate. Right-click **Sales measures**, select **New measure**, enter the following expression into the DAX formula bar, and then press **Enter**:
@@ -202,7 +202,7 @@ A measure group helps you organize different measures by having them in a single
     It should look like this:
     :::image type="content" source="media/desktop-dynamic-format-strings/exchange-rate-dax-formula.png" alt-text="Exchange rate dax formula in DAX editor":::
 
-1. Now you'll create another measure to convert the **Sales Amount** measure to other currencies. Right-click **Sales measures**, select **New measure**, enter the following expression into the DAX formula bar, and then press **Enter**:
+1. Now you create another measure to convert the **Sales Amount** measure to other currencies. Right-click **Sales measures**, select **New measure**, enter the following expression into the DAX formula bar, and then press **Enter**:
 
     ```dax
         Converted Sales Amount = 
@@ -218,7 +218,7 @@ A measure group helps you organize different measures by having them in a single
 
 1. Go to **Report view**. Add a new, blank page to the report.
 
-1. Add a line chart visual to your new report page. You'll use this visual to see your measure before adding the dynamic format string for measures.
+1. Add a line chart visual to your new report page. You use this visual to see your measure before adding the dynamic format string for measures.
 
 1. In the **Data** pane > **Sales measures**, select **Converted Sales Amount**. Without clicking anywhere else, also select **Year** in the **Date** table. 
 :::image type="content" source="media/desktop-dynamic-format-strings/line-chart-visual.png" alt-text="Line chart visual in Report view":::
@@ -276,7 +276,7 @@ A measure group helps you organize different measures by having them in a single
 
 #### Create a dynamic format string
 
-Selecting different **Country** names in the slicer will show the Converted Sales Amount measure  converted in visuals, but not in the right format for that country.
+Selecting different **Country** names in the slicer shows the Converted Sales Amount measure result in visuals, but not in the right format for that country.
 
 1. In the **Data** pane > **Sales measures**, select **Converted Sales Amount**.
 
@@ -302,8 +302,8 @@ During Preview, the following issues and limitations are being addressed:
 :::image type="content" source="media/desktop-dynamic-format-strings/display-units.png" alt-text="Display units from auto to none":::
 
 - The measure itself can be referenced directly in its dynamic format string by using its name, like [Measure A], or indirectly by using `SELECTEDMEASURE()`.
-- Dynamic format strings for measures are only for model measures. *Report measures* which can be added to a live connect report can't have dynamic format strings for measures.
-- With DirectQuery for Analysis Services, when you click **Make changes to this model** on a live connect report, it will shift the connection to the DirectQuery over Analysis Services. In general, you can make changes to the format strings of the remote model measures. During **Preview**:
+- Dynamic format strings for measures are only for model measures. *Report measures* that can be added to a live connect report can't have dynamic format strings for measures.
+- With DirectQuery for Analysis Services, when you click **Make changes to this model** on a live connect report, it shifts the connection to the DirectQuery over Analysis Services. In general, you can make changes to the format strings of the remote model measures. During **Preview**:
     - Remote model measures with dynamic format strings defined are blocked from making format string changes to a static format string or to a different dynamic format string DAX expression.
     - Remote model measures can't be changed from a static format string to a dynamic format string DAX expression defined in the local model.
     - Local model measures are blocked from using dynamic format strings for measures.
