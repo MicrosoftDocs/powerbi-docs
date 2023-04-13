@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/22/2022
+ms.date: 04/04/2022
 ---
 
 # Power BI Report Builder change log
@@ -17,6 +17,18 @@ ms.date: 11/22/2022
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## April 2023
+
+Version 15.7.1802.126, released April 4, 2023
+
+### Features
+
+- Added support for creating drillthrough reports.
+- Fix issue which caused crash when adding chart visuals.
+- Fix issue with Finnish localization.
+- Fix issue with DAX query designer used against PBI datasets.
+- Accessibility fixes.
 
 ## November 2022
 

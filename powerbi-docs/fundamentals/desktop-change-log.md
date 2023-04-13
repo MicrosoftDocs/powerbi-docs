@@ -17,6 +17,15 @@ This change log is for Power BI Desktop and lists new items along with bug fixes
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
 
+## March 2023 QFE 2
+
+*Version: 2.115.1006.0, Released: April 03, 2023*
+ 
+Bug fixes/improvements:
+
+•	Fix for Proxy models. Customers can now use calculated column with time intelligence function.
+•	Reduced installer file size to match previous version.
+ 
 ## March 2023 QFE 1
 
 *Version:2.115.842.0, Released: March 24, 2023*
