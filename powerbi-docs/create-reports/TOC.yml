@@ -173,7 +173,8 @@
     - name: "Create sparklines in a table or matrix"
       href: power-bi-sparklines-tables.md
     - name: "Display custom format strings"
-      href: desktop-custom-format-strings.md      
+      href: desktop-custom-format-strings.md
+    - name: "Use dynamic format strings for measures"      
     - name: "Apply conditional table formatting"
       href: desktop-conditional-table-formatting.md
     - name: "Create dynamic, expression-based titles"
