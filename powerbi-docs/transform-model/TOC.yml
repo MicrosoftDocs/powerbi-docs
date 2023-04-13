@@ -105,7 +105,7 @@
       href: desktop-quickstart-learn-dax-basics.md
     - name: "Work with Relationship view"
       href: desktop-relationship-view.md
-    - name: "Quick measures suggestions (preview)"
+    - name: "Quick measures suggestions"
       href: quick-measure-suggestions.md      
     - name: Transform and shape data
       items: 
