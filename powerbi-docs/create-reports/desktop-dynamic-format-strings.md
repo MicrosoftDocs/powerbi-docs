@@ -14,32 +14,38 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
+With *dynamic format strings for measures*, you can determine how measures appear in visuals by conditionally applying a format string with a separate DAX expression.
+
 > [!NOTE]
 > Dynamic format strings for measures is currently in Preview. When in Preview, functionality and documentation are likely to change.
 
-With *dynamic format strings for measures*, you can conditionally customize how measures appear in visuals by applying a format string with a separate DAX expression. Dynamic format strings overcome an inherent disadvantage of using the FORMAT function. When using dynamic format strings, the measure keeps its data type and is isn't forced to change to a string data type. This applies different format strings to the measure depending on the context.
+Dynamic format strings overcome an inherent disadvantage of using the FORMAT function. That is, with FORMAT even numeric data types are returned as a string, which may not work with visuals that require numeric values, like charts.
+When using dynamic format strings, the measure keeps its data type and is isn't forced to change to a string data type. This applies different format strings to the measure depending on the context.
+
+Dynamic format strings can also be used with calculation groups. The same DAX patterns that work with calculation groups can also be utilized in dynamic format strings for measures, but the scope is limited to individual measures instead of all measures in the model. To learn more, see [Calculation groups - Dynamic format strings](/analysis-services/tabular-models/calculation-groups?view=power-bi-premium-current#dynamic-format-strings&preserve-view=true).
+
+## Create dynamic format strings
 
 #### To specify a dynamic format string
 
 1. In the **Data** pane, select the measure for which you want to specify a dynamic format string.
 1. In the **Measure tools** ribbon > **Formatting** section > **Format** listbox, select **Dynamic**. A new listbox with **Format** already selected appears to the left of the DAX formula bar. This drop down is how you can switch between the static measure DAX expression and the dynamic format string DAX expression. Whatever the static format string was in use before switching to Dynamic is pre-populated as a string in the DAX formula bar.
 :::image type="content" source="media/desktop-dynamic-format-strings/format-dropdown.png" alt-text="Format dropdown":::
-1. Overwrite the string with a DAX expression that outputs the desired format string for your measure. For example, the following expression looks up the appropriate currency format string from a ‘Country Currency Format Strings’ table:
+1. Overwrite the string with a DAX expression that outputs the correct format string for your measure. For example, the following expression looks up the currency format string we want from a ‘Country Currency Format Strings’ table:
 :::image type="content" source="media/desktop-dynamic-format-strings/format-dynamic-measure.png" alt-text="Dynamic format measure expression":::
 1. Verify your dynamic format string works in a visual.
 
-    To delete the dynamic format string and return to using a static format string, in the **Formatting** section > **Format** listbox, select a different format option. Because there is no undo to this action, a dialog appears asking if you want to proceed. If you want to go back to using a dynamic format string again, you must re-enter the DAX expression that outputs the desired format string.
-    
-    :::image type="content" source="media/desktop-dynamic-format-strings/format-change-warning.png" alt-text="Format change warning":::
+    To delete the dynamic format string and return to using a static format string, in the **Formatting** section > **Format** listbox, select a different format option. Because there is no undo to this action, a dialog appears asking if you want to proceed. If you want to go back to using a dynamic format string again, you must re-enter the DAX expression.
 
+    :::image type="content" source="media/desktop-dynamic-format-strings/format-change-warning.png" alt-text="Format change warning":::
 
 ## Example
 
-The best way to learn about a new feature is to try it yourself. You can do just that with the sample Adventure Works 2020 PBIX file available at [DAX sample model](/dax/dax-sample-model). By using the sample model, you can add currency conversion to show converted sales amount by year. After downloading, open the file in Power BI Desktop.
+The best way to learn about a new feature is to try it yourself. You can do just that with the sample **Adventure Works 2020 PBIX** file available at [DAX sample model](/dax/dax-sample-model). By using the sample model, you can add currency conversion to show converted sales amount by year. After downloading, open the file in Power BI Desktop.
 
-##### Create new tables
+#### Create new tables
 
-The sample model doesn't contain all the data necessary. To create and use dynamic format strings, you need to add two tables.
+The sample model doesn't contain all the data necessary to create and use dynamic format strings. To get started, you first need to add two tables.
 
 1. On the **Home** ribbon, select **Enter data**.
 
@@ -117,7 +123,9 @@ The sample model doesn't contain all the data necessary. To create and use dynam
     | United Kingdom | Pound    | 2018 | 0.75                         |
     | United Kingdom | Pound    | 2017 | 0.808                        |
 
-##### Create a Year column
+#### Create a Year column
+
+A new Year column is needed in the existing Date table.
 
 1. In **Model** view, right-click the **Date** table, and then select **New column**.
 
@@ -125,6 +133,8 @@ The sample model doesn't contain all the data necessary. To create and use dynam
 :::image type="content" source="media/desktop-dynamic-format-strings/formular-bar-year.png" alt-text="Year formula in DAX formula bar":::
 
 ##### Create relationships
+
+Relationships are needed between your new Yearly Average Exchange Rates and Country Currency Format Strings tables, and between Yearly Average Exchange Rates table and the existing Date table.
 
 1. If you have Autodetect for relationships on, the relationship between **Country Currency Format Strings** and **Yearly Average Exchange Rates** on the **Country** column may have been created for you. If not, then create this relationship:
     - Table 1: **Yearly Average Exchange Rates**
@@ -154,13 +164,15 @@ The sample model doesn't contain all the data necessary. To create and use dynam
 
 1. Save your model.
 
-##### Create a measure group table
+#### Create a measure group table
+
+A measure group helps you organize different measures by having them in a single table.
 
 1. In the **Home** ribbon, select **Enter data**.
 
-1. In the **Create Table** dialog, leave the values blank. Name the table **Sales measures**, and then click **Load**. This table will contain your new measures. This table will contain your new measures in a measure group.
+1. In the **Create Table** dialog, leave the values blank. Name the table **Sales measures**, and then click **Load**. This table will contain your new measures.
 
-##### Create measures
+#### Create measures
 
 1. In the **Data** pane, expand and right-click **Sales measures**, and then select **New measure**. Enter the following DAX expression into the DAX formula bar, and then press **Enter**:
 
@@ -202,13 +214,13 @@ The sample model doesn't contain all the data necessary. To create and use dynam
     The **Sales measures** measure group should now look like this:
     :::image type="content" source="media/desktop-dynamic-format-strings/converted-sales-amount-measure-formula.png" alt-text="Converted sales amount measure formula":::
 
-##### Create a report
+#### Create a report
 
 1. Go to **Report view**. Add a new, blank page to the report.
 
 1. Add a line chart visual to your new report page. You'll use this visual to see your measure before adding the dynamic format string for measures.
 
-1. In the **Data** pane > **Sales measures**, select **Converted Sales Amount**. Without clicking anywhere else, also select **Year** in the **Date** table.
+1. In the **Data** pane > **Sales measures**, select **Converted Sales Amount**. Without clicking anywhere else, also select **Year** in the **Date** table. 
 :::image type="content" source="media/desktop-dynamic-format-strings/line-chart-visual.png" alt-text="Line chart visual in Report view":::
 
 1. Copy and then paste the visual so you have two line chart visuals. Change the second line chart visual to a table visual, and then move it below the line chart, like this:
@@ -262,7 +274,7 @@ The sample model doesn't contain all the data necessary. To create and use dynam
 
     :::image type="content" source="media/desktop-dynamic-format-strings/visual-formatting-gray.png" alt-text="Gray cnvas background for visual":::
 
-##### Create a dynamic format string
+#### Create a dynamic format string
 
 Selecting different **Country** names in the slicer will show the Converted Sales Amount measure  converted in visuals, but not in the right format for that country.
 
@@ -276,12 +288,15 @@ Selecting different **Country** names in the slicer will show the Converted Sale
     SELECTEDVALUE ( 'Country Currency Format Strings'[Format], "\$#,0.00;(\$#,0.00);\$#,0.00" )
     ```
 
+    It should look like this:
     :::image type="content" source="media/desktop-dynamic-format-strings/country-currency-format-strings-dynamic-formula.png" alt-text="Country Currency Format Strings dynamic formula":::
 
 1. Select a different Country in the slicer. The table and line chart visuals should now show the converted currency amount, in the correct format, for that country. Try selecting a different county in the slicer to see how the visuals change.
 :::image type="content" source="media/desktop-dynamic-format-strings/converted-sales-amount-visual.png" alt-text="Converted sales amount visual":::
 
-#### Issues and considerations
+## Known issues and considerations
+
+During Preview, the following issues and limitations are being addressed:
 
 - Visuals have formatting options that may impact how the format string is displayed. If the formatting is showing unexpectedly in a visual, go to the visual Format options, search for **Display units** and change it from **Auto** to **None**.
 :::image type="content" source="media/desktop-dynamic-format-strings/display-units.png" alt-text="Display units from auto to none":::
@@ -293,7 +308,7 @@ Selecting different **Country** names in the slicer will show the Converted Sale
     - Remote model measures can't be changed from a static format string to a dynamic format string DAX expression defined in the local model.
     - Local model measures are blocked from using dynamic format strings for measures.
 
-These restrictions are being explored and targeted to be allowed in future releases of Power BI Desktop.
+
 
 ## See also
 
