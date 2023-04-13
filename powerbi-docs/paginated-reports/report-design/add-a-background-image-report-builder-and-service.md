@@ -17,12 +17,12 @@ You can add a background image to a paginated report item such as a rectangle, t
    
 ## To embed an image in the report definition  
   
-1.  In the Report Data pane, right-click the **Images** node, and then click **Add Image**.  
+1.  In the Report Data pane, right-click the **Images** node, and then select **Add Image**.  
   
     > [!NOTE]  
-    >  If the Report Data pane is not visible, on the **View** tab, click **Report Data**.  
+    >  If the Report Data pane is not visible, on the **View** tab, select **Report Data**.  
   
-2.  Navigate to the image you want to embed in your report definition, and then click **OK**.  
+2.  Navigate to the image you want to embed in your report definition, and then select **OK**.  
   
 ## To add a background image  
   

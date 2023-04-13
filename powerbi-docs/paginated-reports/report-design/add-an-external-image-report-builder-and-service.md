@@ -17,7 +17,7 @@ When you include external images in your paginated report, you must verify that 
  
 ## To add an external image  
   
-1.  In report design view, on the **Insert** tab, click **Image**.  
+1.  In report design view, on the **Insert** tab, select **Image**.  
   
 2.  On the design surface, click and then drag a box to the desired size of the image.  
   
@@ -27,9 +27,9 @@ When you include external images in your paginated report, you must verify that 
   
 5.  In **Select the image source**, select **External**.  
   
-    Provide path to external image in provided text box.  
+    Provide URL to external image in provided text box.  
   
-6.  (Optional) Click **Size**, **Visibility**, **Action**, or **Border** to set additional properties for the image report item.  
+6.  (Optional) Select **Size**, **Visibility**, **Action**, or **Border** to set additional properties for the image report item.  
   
 7.  Select **OK**.
   
