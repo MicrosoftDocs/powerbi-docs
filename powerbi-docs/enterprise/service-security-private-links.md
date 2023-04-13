@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 02/16/2023
+ms.date: 04/12/2023
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -329,7 +329,7 @@ There are a few considerations to keep in mind while working with private endpoi
 * When private links are enabled for Power BI, an on-premises data gateway (personal mode) fails to register.
 * Private links resource REST APIs don't support tags.
 * You can't set up a private link to be used by more than one tenant. 
-* Paginated reports don't currently work with private links.
+* Exporting a Power BI report as PDF or PowerPoint is not supported when you enable Azure Private Link in Power BI.
 
 ## Next steps
 

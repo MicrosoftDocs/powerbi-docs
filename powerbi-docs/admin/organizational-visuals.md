@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/16/2022
+ms.date: 03/30/2023
 ---
 
 # Manage Power BI visuals admin settings
@@ -81,11 +81,13 @@ UI changes to tenant settings apply only to Power BI service. To manage the cert
 |Software\Policies\Microsoft\Power BI Desktop\    |EnableUncertifiedVisuals    |0 - Disable </br>1 - Enable (default)         |
 |
 
+<!---
 ### Allow access to remote resources
 
 When this setting is enabled, all visuals created with an API earlier than v4.6.0 will be able to access remote resources. Visuals created with API v4.6.0 and following versions will be able to access remote resources only if the visual's privileges setting allows it. If the visual's privileges setting doesn't allow access to remote resources, that visual won't be allowed access even if this admin setting is enabled.
 
    :::image type="content" source="media/organizational-visuals/allow-access-to-remote-resources.png" alt-text="Screenshot of the Power BI setting that allows visuals to access remote resources.":::
+-->
 
 ### Export data to file
 
