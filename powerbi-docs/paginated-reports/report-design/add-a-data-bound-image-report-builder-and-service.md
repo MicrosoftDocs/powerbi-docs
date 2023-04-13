@@ -15,13 +15,13 @@ ms.reviewer: rpatkar
 
 A paginated report can include a reference to an image that is stored in a database. Such an image is known as a *data-bound image*. The pictures that appear alongside product names in a product list are examples of data-bound images.  
   
-Adding a data-bound image to a page header or page footer requires additional steps. For more information, see [Page Headers and Footers &#40;Report Builder and SSRS&#41;](page-headers-and-footers-report-builder-service.md).
+Adding a data-bound image to a page header or page footer requires additional steps. For more information, see [Page Headers and Footers &#40;Report Builder and SSRS&#41;](./page-headers-footers-report-builder-service.md).
     
 ## To add a data-bound image  
   
-1.  In report design view, create a table with a data source connection and a dataset with a field that contains binary image data. For more information, see [Tables &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/tables-report-builder-and-ssrs.md).  
+1.  In report design view, create a table with a data source connection and a dataset with a field that contains binary image data. For more information, see [Tables &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/tables-report-builder-and-ssrs).  
   
-2.  Insert a column in your table. For more information, see [Insert or Delete a Column &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/insert-or-delete-a-column-report-builder-and-ssrs.md).  
+2.  Insert a column in your table. For more information, see [Insert or Delete a Column &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/insert-or-delete-a-column-report-builder-and-ssrs).
   
 3.  On the **Insert** menu, click **Image**, and then click in the data row of the new column.  
   

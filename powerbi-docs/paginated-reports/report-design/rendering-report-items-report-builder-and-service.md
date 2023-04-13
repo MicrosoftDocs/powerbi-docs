@@ -2,7 +2,7 @@
 title: "Rendering report items in paginated reports"
 description: Learn how paginated report items such as number, size, and locations affect rendering pagination in Power BI Report Builder.
 ms.date: 03/31/2023
-ms.service: power-bi
+ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
@@ -96,12 +96,12 @@ ms.reviewer: rpatkar
   
 -   If the subreport is split by a page break, the **Omit border on page break** setting controls whether or not the borders on the subreport are closed or open.  
   
- For more information about subreports, see [Subreports &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/subreports-report-builder-and-ssrs.md).  
+ For more information about subreports, see [Subreports &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/subreports-report-builder-and-ssrs).  
   
 ## See Also  
- [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs.md)   
- [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs.md)   
- [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions.md)   
- [Tables, Matrices, and Lists &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs.md)  
+ [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
+ [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
+ [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
+ [Tables, Matrices, and Lists &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)  
   
   

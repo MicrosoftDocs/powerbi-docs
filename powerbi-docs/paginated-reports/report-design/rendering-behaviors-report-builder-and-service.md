@@ -2,7 +2,7 @@
 title: "Rendering behaviors in a paginated report"
 description: Learn about the rules that are applied to the paginated report body and its contents when rendering a report in Power BI Report Builder.
 ms.date: 03/31/2023
-ms.service: power-bi
+ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
@@ -25,7 +25,7 @@ ms.reviewer: rpatkar
   
 -   Renderer-specific support for paging.  
   
- This topic discusses the general rules that are applied by Reporting Services. For more information, see [Rendering Report Items &#40;Report Builder and service&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs.md), [Rendering Data Regions &#40;Report Builder and service&#41;](/sql/reporting-services/report-design/rendering-data-regions-report-builder-and-ssrs.md), and [Rendering Data &#40;Report Builder and service&#41;](/sql/reporting-services/report-design/rendering-data-report-builder-and-ssrs.md).  
+ This topic discusses the general rules that are applied by Reporting Services. For more information, see [Rendering Report Items &#40;Report Builder and service&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs), [Rendering Data Regions &#40;Report Builder and service&#41;](/sql/reporting-services/report-design/rendering-data-regions-report-builder-and-ssrs), and [Rendering Data &#40;Report Builder and service&#41;](/sql/reporting-services/report-design/rendering-data-report-builder-and-ssrs).
 
   
 ## General Behaviors for HTML, MHTML, Word, and Excel (Soft Page-Break Renderers)  
@@ -121,7 +121,7 @@ ms.reviewer: rpatkar
 -   Logical page breaks defined on items in table or matrix cells are not kept. This does not apply to items in lists.  
   
 ## See Also  
- [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions.md)   
+ [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
   [Page Layout and Rendering &#40;Report Builder and SSRS&#41;](./page-layout-and-rendering-report-builder-and-service.md)  
   
   

@@ -2,7 +2,7 @@
 title: "Rendering data regions in a paginated report"
 description: Learn about the pagination and rendering behaviors of various parts of a data region in a paginated report in Power BI Report Builder.
 ms.date: 03/27/2023
-ms.service: power-bi
+ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
@@ -18,7 +18,7 @@ ms.reviewer: rpatkar
 
   
 ## Tablix Data Regions  
- The tablix data region, which enables you to create tables, matrices, and lists, is rendered as a grid comprised of columns and rows. The intersection of a row and a column is a cell. When rendered, this cell can contain data or other report items, such as images, rectangles, text boxes, or subreports. A tablix data region can grow vertically and/or horizontally. In addition, the corner cell, the data region header cells, and the data region body cells may grow based on their contents. If the data region spans multiple pages, report items that are set to repeat with the data region are rendered on every page on which the data region is displayed. For more information, see [Tables, Matrices, and Lists &#40;Report Builder and service&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs.md).  
+ The tablix data region, which enables you to create tables, matrices, and lists, is rendered as a grid comprised of columns and rows. The intersection of a row and a column is a cell. When rendered, this cell can contain data or other report items, such as images, rectangles, text boxes, or subreports. A tablix data region can grow vertically and/or horizontally. In addition, the corner cell, the data region header cells, and the data region body cells may grow based on their contents. If the data region spans multiple pages, report items that are set to repeat with the data region are rendered on every page on which the data region is displayed. For more information, see [Tables, Matrices, and Lists &#40;Report Builder and service&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs).  
   
 ### Right to Left  
  A tablix data region set to display from right to left is rendered with its structure as a mirror image of the data region if it were rendered left to right. The corner of the data region appears in the upper right corner. If dynamic columns exist in the report, they expand to the left. Right-to-left settings do not affect the order of the data in the data region; your columns are simply ordered differently.  
@@ -35,18 +35,18 @@ ms.reviewer: rpatkar
  The upper left corner is called the tablix corner. The Tablix corner can contain other report items within it but, if logical page breaks are inserted in the corner, they are ignored when the Tablix data region is rendered.  
   
 ### Tablix Body  
- The Tablix body is made up of Tablix cells. The Tablix body is rendered based on pagination rules and the rendering behaviors of report items. For more information, see [Rendering Report Items &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs.md).  
+ The Tablix body is made up of Tablix cells. The Tablix body is rendered based on pagination rules and the rendering behaviors of report items. For more information, see [Rendering Report Items &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs).  
   
 ## Chart, Gauge, and Map Data Regions  
  Chart, Gauge, and Map data regions behave like images when they are rendered and displayed in the report body. Values within the data region can have associated actions, such as linking to another report or going to a bookmark, and these actions can be rendered as well, if the renderer supports it.  
   
 ## See Also  
- [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs.md)   
- [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs.md)   
- [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions.md)   
- [Rendering Report Items &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs.md)   
- [Tables, Matrices, and Lists &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs.md)   
- [Charts &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs.md)   
- [Gauges &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs.md)  
+ [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
+ [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
+ [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
+ [Rendering Report Items &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
+ [Tables, Matrices, and Lists &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)   
+ [Charts &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs)   
+ [Gauges &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs)  
   
   
