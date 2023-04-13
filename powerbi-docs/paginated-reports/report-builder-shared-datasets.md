@@ -3,7 +3,7 @@ title: "Create a paginated report based on a Power BI shared dataset"
 description: Create a paginated report in Power BI Report Builder based on a Power BI shared dataset.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 01/10/2023
+ms.date: 04/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.custom: video-NfoOK4QRkhI
@@ -60,7 +60,7 @@ Then [publish the report to a workspace](../create-reports/desktop-upload-deskto
 
 ## Get the DAX query for the dataset
 
-When you want the data in your Power BI report and in your Report Builder report to be the same, it's not enough to connect to the dataset. You also need the Data Analysis Expressions (DAX) query that's built on that dataset.
+When you want the data in your Power BI report and in your paginated report to be the same, it's not enough to connect to the dataset. You also need the Data Analysis Expressions (DAX) query that's built on that dataset.
 
 ### Video: Get the DAX query
 
