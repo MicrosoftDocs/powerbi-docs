@@ -1,5 +1,5 @@
 ---
-title: Quick measure suggestions (experimental preview)
+title: Quick measure suggestions
 description: Quick measure suggestions assist creation of DAX measures using natural language
 author: Sujata994
 ms.author: sunaraya
@@ -8,10 +8,10 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/7/2022
+ms.date: 04/13/2023
 LocalizationGroup: Create reports
 ---
-# Quick measure suggestions (experimental preview)
+# Quick measure suggestions
 Quick measure suggestions assist creation of DAX measures using natural language instead of using templates or writing DAX from scratch.
 
 :::image type="content" source="media/quick-measure-suggestions/dax-measure-suggestion.png" alt-text="Screenshot of an example of a DAX measure suggestion.":::
@@ -127,7 +127,7 @@ Return values based on conditions. If you are returning string values, you will 
 
 Examples:
 -	If sales > 10,000 return "high sales" else "low sales"
--	If sales is greater than 10,000 display "high sales" otherwise display "low sales"
+-	If sales are greater than 10,000 display "high sales" otherwise display "low sales"
 -	If selected value for product is blank, display "no product selected" else show selected product
 -	If selected product = Power BI, show "PBI" else "other"
 
@@ -208,7 +208,6 @@ Examples:
 
 ## Limitations and considerations
 - Quick measure suggestions are NOT a replacement for learning DAX. The suggestions provided by the feature are meant to help fast track measure creation; however, you will still need to validate the DAX suggestions because they can be wrong or not match your intent.
--	This feature is in experimental preview for users to test and give feedback. Note that the design and functionality may go through significant changes.
 -	The feature is powered by a machine learning model that is currently only deployed to US datacenters (East US and West US). If your data is outside the US, the feature will be disabled by default unless your tenant admin enables **Allow user data to leave their geography tenant setting**:
  
 :::image type="content" source="media/quick-measure-suggestions/quick-measure-suggestions-admin-setting.png" alt-text="Screenshot of the admin setting for measure suggestions.":::
