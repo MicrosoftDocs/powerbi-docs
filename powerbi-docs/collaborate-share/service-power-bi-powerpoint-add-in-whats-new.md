@@ -18,7 +18,7 @@ ms.date: 04/13/2023
 
 ### Customize the look of the add-in with styles!
 
-You can now customize the look of the add-in in your presentations. Currently an **Outline** option is available, which allows you to put a border around the add-in to give it a defined, neat appearance.
+You can now customize the look of the add-in in your presentations. Currently the **Outline** option allows you to put a border around the add-in to give it a defined, neat appearance.
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/single-visual-and-insights-demo.gif" alt-text="Screenshot showing outline option for the Power BI PowerPoint add-in.":::
 
