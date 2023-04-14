@@ -85,7 +85,7 @@ If you have an [Admin, Member, or Contributor role](../collaborate-share/service
 
 ## More granular permissions
 
-Power BI provides Build permission as a complement to Read and Reshare permissions. All users who already have Read permission for datasets via app permissions, sharing, or workspace access also get Build permission for those datasets. Those users get Build permission automatically because Read permission already grants them the right to build new content on the dataset by using **Analyze in Excel** or **Export**.
+Power BI provides Build permission as a complement to Read and Reshare permissions (please can you add some more context here). All users who already have Read permission for datasets via app permissions, sharing, or workspace access also get Build permission for those datasets (having reaad permission automatically gives build permission? Thats confusing, can you add some context here?). Those users get Build permission automatically because Read permission already grants them the right to build new content on the dataset by using **Analyze in Excel** or **Export**.
 
 With the more granular Build permission, you can choose who can only view the content in an existing report or dashboard, and who can create content connected to the underlying dataset.
 
