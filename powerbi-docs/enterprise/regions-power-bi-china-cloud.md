@@ -6,7 +6,7 @@ ms.author: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual 
-ms.date: 03/05/2023
+ms.date: 04/13/2023
 ms.custom: 
 ---
 
@@ -24,7 +24,7 @@ The following table lists features of Power BI that are **not** yet available in
 |Product area | Feature or scenario | Commercial cloud status | 21Vianet availability | More information |
 |----|----|----|----|----|
 |Power BI | Purview integration with Power BI |Generally available | Not available |  |
-|Power BI | Metrics | Public preview | Not available |  |
+|Power BI | Metrics | Generally available | Not available |  |
 |Power BI | Using Azure ExpressRoute to integrate an on-premises gateway | Generally available | Not available | [Azure ExpressRoute for Office 365](/microsoft-365/enterprise/azure-expressroute) isn't supported in the 21Vianet environment. |
 |Power BI | Template app marketplace | Generally available | Not available | AppSource isn't available in China. |
 | Power BI | Datamart | Public preview | Not available |  |
