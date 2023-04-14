@@ -54,7 +54,7 @@ If you need to present a slide show multiple times, you most likely want to set 
 
 You can improve the appearance of your presentation by applying styles to the add-in. Currently, you can put a border around the add-in to give it a clear definition on the slide.
 
-To put a border around the add-in, open **[Style options](#style-options)** and select **Outline**.
+To put a border around the add-in, open **[Style options](#style-options)** and select **Outline**. To change the line color, width, style, or transparency, expand the Outline option.
 
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-add-border.gif" alt-text="Animation showing adding a border around the Power BI add-in for PowerPoint."::: 
 
