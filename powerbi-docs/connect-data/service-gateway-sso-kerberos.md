@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.custom: contperf-fy22q3
 ms.topic: how-to
-ms.date: 11/28/2022
+ms.date: 04/14/2023
 LocalizationGroup: Gateways
 ---
 
@@ -199,6 +199,22 @@ Complete the following configuration steps:
     ```
 
 6. In **Active Directory Users and Computers**, verify that the update is reflected in the **Attribute Editor** tab in the properties for the back-end service account. 
+
+### Step 5: Enable AES Encryption on service accounts
+
+For every Active Directory service account configured previously, Advanced Encryption Standard (AES) encryption must be enabled for each account. Apply the following settings to all gateway service accounts and every data source service account that the gateway can delegate to:
+
+1. With domain administrator rights, open the Active Directory Users and Computers MMC snap-in.
+
+1. Right-click the gateway/data source service account, and select **Properties**.
+1. Select the **Account** tab. 
+1. Under **Account Options**, enable at least one (or both) of the following options. Note: the same options need to be enabled for all service accounts.
+
+    * This account supports Kerberos AES 128 bit encryption
+    * This account supports Kerberos AES 256 bit encryption
+
+> [!NOTE]
+> If you are unsure which encryption scheme to use, consult with your Active Directory Administrator or Network Administrator.
 
 ### Step 6: Grant the gateway service account local policy rights on the gateway machine
 
