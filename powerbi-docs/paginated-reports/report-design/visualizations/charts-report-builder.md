@@ -15,7 +15,7 @@ ms.reviewer: monaraya
 
 Read about using chart data regions to help readers of your paginated reports understand large volumes of aggregated data at a glance.  
 
-The more time you spend carefully preparing and understanding your data before you create a chart, the easier it will be to design your charts quickly and efficiently. For help choosing which chart to use, see [Chart Types](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs) To start experimenting with charts immediately, see the bar, column, sparkline, and pie chart tutorials in [Power BI Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials).  
+The more time you spend carefully preparing and understanding your data before you create a chart, the easier it will be to design your charts quickly and efficiently. For help with choosing which chart to use, see [Chart Types](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs) To start experimenting with charts immediately, see the bar, column, sparkline, and pie chart tutorials in [Power BI Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials).  
   
  The following illustration shows many of the different elements used in the chart.  
   

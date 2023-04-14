@@ -13,7 +13,7 @@ ms.reviewer: monaraya
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  After you've defined the data for your Power BI paginated report chart and it is appearing the way you want, you can add formatting to improve the overall appearance and highlight key data points. The most common formatting options can be modified from the Properties dialog box that are found when you right-click a chart element to display its shortcut menu. Each chart element has its own dialog box. For more information about chart elements, see [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md).  
+  After you've defined the data for your Power BI paginated report chart and it is appearing the way you want, you can add formatting to improve the overall appearance and highlight key data points. The most common formatting options can be modified from the Properties dialog box, which you see when you right-click a chart element to display its shortcut menu. Each chart element has its own dialog box. For more information about chart elements, see [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md).  
   
  All properties that relate to the chart are located in the Properties pane, but you can set many of these properties from a dialog box. If you are formatting the series, you can specify series-specific properties using custom attributes, which can only be found in the **CustomAttributes** category of properties, located in the Properties pane.  
   
