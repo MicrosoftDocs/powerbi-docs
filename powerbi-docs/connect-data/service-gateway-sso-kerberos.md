@@ -202,16 +202,16 @@ Complete the following configuration steps:
 
 ### Step 5: Enable AES Encryption on service accounts
 
-For every Active Directory service account configured previously, Advanced Encryption Standard (AES) encryption must be enabled for each account. Apply the following settings to all gateway service accounts and every data source service account that the gateway can delegate to:
+For every Active Directory service account configured previously, Advanced Encryption Standard (AES) encryption must be enabled for each account. Apply the following settings to **all** gateway service accounts and **every** data source service account that the gateway can delegate to:
 
-1. With domain administrator rights, open the Active Directory Users and Computers MMC snap-in.
+1. With domain administrator rights, open the **Active Directory Users and Computers MMC** snap-in.
 
 1. Right-click the gateway/data source service account, and select **Properties**.
 1. Select the **Account** tab. 
 1. Under **Account Options**, enable at least one (or both) of the following options. Note: the same options need to be enabled for all service accounts.
 
-    * This account supports Kerberos AES 128 bit encryption
-    * This account supports Kerberos AES 256 bit encryption
+    * **This account supports Kerberos AES 128 bit encryption**
+    * **This account supports Kerberos AES 256 bit encryption**
 
 > [!NOTE]
 > If you are unsure which encryption scheme to use, consult with your Active Directory Administrator or Network Administrator.
