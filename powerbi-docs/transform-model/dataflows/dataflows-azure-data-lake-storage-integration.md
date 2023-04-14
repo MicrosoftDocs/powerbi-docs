@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/22/2023
+ms.date: 04/14/2023
 LocalizationGroup: Data from files
 ---
 # Configure dataflow storage to use Azure Data Lake Gen 2
@@ -61,7 +61,7 @@ The **Use default Azure connection** option is visible if admin has already conf
 - Use the tenant configured ADLS Gen 2 account by selecting the box called **Use the default Azure connection**, or
 - Select **Connect to Azure** to point to a new Azure Storage account.
 
-When you select **Connect to Azure**, Power BI retrieves a list of Azure subscriptions to which you have access. Fill in the dropdowns. Then choose a valid Azure subscription, resource group, and storage account that has the hierarchical namespace option enabled, which is the ADLS Gen2 flag.
+When you select **Connect to Azure**, Power BI retrieves a list of Azure subscriptions to which you have access. Fill in the dropdowns. Then choose a valid Azure subscription, resource group, and storage account that has the hierarchical namespace option enabled, which is the ADLS Gen2 flag. The personal account used to connect to Azure is only used once, to set the initial connection and grant the Power BI service account rights to read and write data, after which the original user account is no longer needed to keep the connection active.
 
 :::image type="content" source="media/dataflows-azure-data-lake-storage-integration/subscription-details-enter.png" alt-text="Screenshot of the Settings window after choosing Connecting to Azure.":::
 
