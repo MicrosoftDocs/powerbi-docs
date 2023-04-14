@@ -114,7 +114,7 @@ On the **Audience** tab, you create and manage audience groups within the app.
     :::image type="content" source="media/service-create-distribute-apps/advance-options-manage-audience-access-pane.png" alt-text="Screenshot of Advanced settings in Manage audience access pane.":::
 
     > [!NOTE]
-    > The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least the Contributor role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
+    > The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least the Contributor role in the workspace (please can some more context be added here. For example we know that contributor/member/admin by default get share and build permission. But this warning says the advanced setting also applies to workspace users - what does that mean?). See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
 
 ### Allow saving a copy of a report
 
