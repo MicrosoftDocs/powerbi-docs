@@ -15,7 +15,7 @@ ms.reviewer: monaraya
 
   A scale break is a stripe drawn across the plotting area of a chart to denote a break in continuity between the high and low values on a value axis (usually the vertical, or y-axis). Use a scale break to display two distinct ranges in the same chart area in Power BI paginated report.  
   
- ![Screenshot of a Chart with scale break.](media/paginated-reports-visualizations/multipledatarangeschart-scalebreak.gif "Chart with scale break")  
+ ![Screenshot of a chart with scale break.](media/paginated-reports-visualizations/multiple-data-ranges-chart-scale-break.gif "Chart with scale break.")  
   
 > [!NOTE]  
 >  You cannot specify where to place a scale break on your chart. The chart uses its own calculations based on the values in your dataset to determine whether there is sufficient separation between data ranges to draw a scale break on the value axis (y-axis) at run time.  

@@ -19,7 +19,7 @@ ms.reviewer: monaraya
   
  The following illustration shows a bar chart. The bar chart is well suited for this data because all three series share a common time period, allowing for valid comparisons to be made.  
   
- ![Screenshot showing Bar chart.](media/paginated-reports-visualizations/barchart.gif "Bar chart")  
+ ![Screenshot showing bar chart.](media/paginated-reports-visualizations/bar-chart.gif "Bar chart")  
 
 ## Variations of the bar chart  
   

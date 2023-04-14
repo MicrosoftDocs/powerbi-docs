@@ -28,12 +28,12 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
 1. In **Axis Options**, select **Use logarithmic scale**.  
   
 1. In the **Logbase** text box, type a positive value for the logarithmic base. If no value is specified, the logarithmic base defaults to 10.  
-  
+
 ## See also
 
  [Formatting axis labels on a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
- [Formatting a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
- [Format axis labels as dates or currencies &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/format-axis-labels-as-dates-or-currencies-report-builder-and-ssrs)   
+ [Formatting a chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)   
+ [Format axis labels as dates or currencies &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/format-axis-labels-dates-currencies-report-builder-and-ssrs)   
  [Charts (Power BI Report Builder)](charts-report-builder.md)  
   
   

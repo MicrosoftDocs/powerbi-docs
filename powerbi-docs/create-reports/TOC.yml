@@ -593,7 +593,7 @@
         - name: Format ranges on a gauge in a paginated report
           href: ../paginated-reports/report-design/visualizations/formatting-ranges-gauge-report-builder.md
         - name: Format axis labels as dates or currencies
-          href: ../paginated-reports/report-design/visualizations/format-axis-labels-as-dates-or-currencies-report-builder.md
+          href: ../paginated-reports/report-design/visualizations/format-axis-labels-dates-currencies-report-builder.md
         - name: Add bevel, emboss, or texture chart effects
           href: ../paginated-reports/report-design/visualizations/chart-effects-add-bevel-emboss-or-texture-report-builder.md
         - name: Add scale breaks to a report chart

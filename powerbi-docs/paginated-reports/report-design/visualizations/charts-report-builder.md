@@ -96,7 +96,7 @@ The more time you spend carefully preparing and understanding your data before y
  [Chart Types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)  
  Describes all of the chart types and sub-types available in Report Builder, including considerations and best practices for using various chart types.  
   
- [Formatting a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)  
+ [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)  
  Use formatting to improve the overall appearance and highlight key data points of your chart.  
   
  [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](empty-null-data-points-charts-report-builder.md)  

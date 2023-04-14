@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: monaraya
 ---
-# Chart effects: add bevel, emboss, or texture to a paginated report chart (Power BI Report Builder)
+# Chart effects: Add bevel, emboss, or texture to a paginated report chart (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
@@ -34,7 +34,7 @@ ms.reviewer: monaraya
 > [!NOTE]  
 >  You can't have 3D and bevel or emboss styles on the same chart. If you have enabled 3D for the chart, you will not see the PieDrawingStyle property.  
   
- ![Screenshot showing Pie chart with concave drawing style.](media/paginated-reports-visualizations/piedrawingeffects-concave.gif "Pie chart with concave drawing style")  
+ ![Screenshot showing pie chart with concave drawing style.](media/paginated-reports-visualizations/pie-drawing-effects-concave.gif "Pie chart with concave drawing style.")  
   
 ## Add texture styles to a bar or column chart  
   
@@ -49,7 +49,7 @@ ms.reviewer: monaraya
 > [!NOTE]  
 >  You can't have 3D and bevel or emboss styles on the same chart. If you have enabled 3D for the chart, you won't see the PieDrawingStyle property.  
   
- ![Bar chart with LightToDark drawing effect.](media/paginated-reports-visualizations/bardrawingeffects-lighttodark.gif "Bar chart with LightToDark drawing effect")  
+ ![Bar chart with Light-To-Dark drawing effect.](media/paginated-reports-visualizations/bar-drawing-effects-light-to-dark.gif "Bar chart with Light-To-Dark drawing effect.")  
   
 ## Next steps
 

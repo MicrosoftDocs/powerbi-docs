@@ -44,7 +44,7 @@ ms.date: 01/18/2023
 ## Next steps
  [Formatting Text and Placeholders &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
  [Formatting Lines, Colors, and Images &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/formatting-lines-colors-and-images-report-builder-and-ssrs)   
- [Formatting a Chart &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
- [Format Axis Labels as Dates or Currencies &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/format-axis-labels-as-dates-or-currencies-report-builder-and-ssrs)   
+ [Formatting a Chart &#40;Report Builder and Report Designer&#41;](formatting-chart-report-builder.md)   
+ [Format Axis Labels as Dates or Currencies &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/format-axis-labels-dates-currencies-report-builder-and-ssrs)   
  [Formatting Scales on a Gauge &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)  
   

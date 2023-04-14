@@ -27,7 +27,8 @@ ms.reviewer: monaraya
 ## Using Chart Areas  
  The chart is the top-level container that includes the outer border, the chart title, and the legend. By default, the chart contains one default chart area. The chart area is not visible on the chart surface, but you can think of the chart area as a container that includes only the axis labels, the axis title, and the plotting area of one or more series. The following illustration shows the concept of chart areas within a single chart.  
   
- ![Screenshot showing a diagram of a chart area](media/paginated-reports-visualizations/chartareasdiagram.gif "Shows a diagram of a chart area")  
+ ![Screenshot showing a diagram of a chart area.](media/paginated-reports-visualizations/
+chart-areas-diagram.png "Shows a diagram of a chart area")  
   
  Using the **Chart Area Properties** dialog box, you can specify the 2D and 3D orientation of all series contained in the chart area, align multiple chart areas within the same chart, and format the colors of the plotting area. When a new chart area is defined on a chart that contains only one default chart area, the available space for a chart area is horizontally divided by two and the new chart area is positioned below the first chart area.  
   
