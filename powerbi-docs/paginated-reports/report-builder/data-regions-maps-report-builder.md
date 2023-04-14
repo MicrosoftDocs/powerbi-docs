@@ -29,7 +29,7 @@ ms.reviewer: monaraya
  A list is a data region that presents data arranged in a freeform fashion. You can arrange report items to create a form with text boxes, images, and other data regions placed anywhere within the list. Read more about [adding a list to a report](/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs).  
   
 ## Chart  
- A chart presents data graphically. Examples of charts include bar, pie, and line charts, but many more styles are supported. Read more about [adding a chart to a report](charts-report-builder.md) [Charts in Power BI paginated reports (Power BI Report Builder)](../report-design/visualizations/charts-report-builder.md).  
+ A chart presents data graphically. Examples of charts include bar, pie, and line charts, but many more styles are supported. Read more about [Charts in Power BI paginated reports (Power BI Report Builder)](../report-design/visualizations/charts-report-builder.md).  
   
 ## Gauge  
  A gauge presents data as a range with an indicator pointing to a specific value within the range. Gauges are used to display key performance indicators (KPIs) and other metrics. Examples of gauges include linear and circular. Read more about [adding a gauge to a report](../report-design/visualizations/gauges-report-builder.md).  
