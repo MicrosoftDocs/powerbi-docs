@@ -16,11 +16,11 @@ ms.date: 04/13/2023
 
 ## April 2023
 
-### Customize the look of the add-in with styles!
+### Put a border around your add-in!
 
-You can now customize the look of the add-in in your presentations. Currently the **Outline** option allows you to put a border around the add-in to give it a defined, neat appearance.
+You can now put a border around the add-in in your presentation to give it a neat, defined appearance. And you can change the color, width, style, and transparency of the border to best suit your presentation. Check it out! 
 
-:::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/single-visual-and-insights-demo.gif" alt-text="Screenshot showing outline option for the Power BI PowerPoint add-in.":::
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/power-bi-powerpoint-addin-add-border.gif" alt-text="Animation showing adding a border around the Power BI add-in for PowerPoint.":::
 
 ### Storytelling with Power BI in PowerPoint is now GA!
 
