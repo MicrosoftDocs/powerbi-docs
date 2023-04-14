@@ -40,10 +40,10 @@ ms.date: 01/18/2023
   
 ## Next steps
 
- [Report Parameters &#40;Report Builder and Report Designer&#41;](../parameters/report-builder-parameters.md)   
+ [Report Parameters (Power BI Report Builder)](../parameters/report-builder-parameters.md)
  [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters)   
  [Expression Uses in Reports &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
- [Expression Examples &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)   
+ [Expression examples in Power BI Report Builder](../report-builder-expression-examples.md)
  [Data Types in Expressions &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)  
   
   
