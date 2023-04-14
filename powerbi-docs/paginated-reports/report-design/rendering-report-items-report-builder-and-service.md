@@ -80,7 +80,7 @@ ms.reviewer: rpatkar
 -   Tablix data regions with an explicit KeepTogether property set to **true**.  
   
 ### Subreports  
- A subreport renders as a rectangle that contains another report that is defined in a separate report .rdl file. The subreport file must be published to a report server before it can be accessed by the parent report.  
+ A subreport renders as a rectangle that contains another report that is defined in a separate report .rdl file. For viewing reports on service, the subreport file must be published to the service before it can be accessed by the parent report.  
   
  The following rules apply when rendering subreports:  
   

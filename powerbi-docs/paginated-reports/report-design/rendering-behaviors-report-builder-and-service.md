@@ -122,6 +122,6 @@ ms.reviewer: rpatkar
   
 ## See Also  
  [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
-  [Page Layout and Rendering &#40;Report Builder and SSRS&#41;](./page-layout-and-rendering-report-builder-and-service.md)  
+  [Page Layout and Rendering &#40;Report Builder and service&#41;](./page-layout-and-rendering-report-builder-and-service.md)  
   
   

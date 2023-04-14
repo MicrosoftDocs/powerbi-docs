@@ -13,7 +13,7 @@ ms.reviewer: rpatkar
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-You can add a background image to a paginated report item such as a rectangle, text box, list, matrix, table, and some parts of a chart, or a report section such as the page header, page footer, or report body. You can define a background image for any selected item on the report design surface that displays **BackgroundImage** in the Properties pane. Like other images, the background image can be a URL to an image on the report server, an image from a dataset field, or an image embedded in the report definition. To use an image embedded in the report, you must first add the image to the report definition before you can add the image to the design surface.  
+You can add a background image to a paginated report item such as a rectangle, text box, list, matrix, table, and some parts of a chart, or a report section such as the page header, page footer, or report body. You can define a background image for any selected item on the report design surface that displays **BackgroundImage** in the Properties pane. Like other images, the background image can be a URL to an image on the internet, an image from a dataset field, or an image embedded in the report definition. To use an image embedded in the report, you must first add the image to the report definition before you can add the image to the design surface.  
    
 ## To embed an image in the report definition  
   
@@ -42,13 +42,13 @@ You can add a background image to a paginated report item such as a rectangle, t
   
          Set **Source** to **External**.  
   
-         Set **Value** to a valid path to an image. This can be on a report server in native mode or SharePoint integrated mode, or it can be on any other Web site. For more information, see [Add an External Image &#40;Report Builder and service&#41;](add-an-external-image-report-builder-and-service.md).
+         Set **Value** to a valid path to an image that is available without needing authentication or additional sign-in over the internet. For more information, see [Add an External Image &#40;Report Builder and service&#41;](add-an-external-image-report-builder-and-service.md).
   
     -   For an image is that is contained in a field in the database to which the report item is connected:  
   
          Set **Source** to **Database**.  
   
-         Set **Value** to the name of a field in the report dataset. For more information, see [Add a Data-Bound Image &#40;Report Builder and SSRS&#41;](add-a-data-bound-image-report-builder-and-service.md).
+         Set **Value** to the name of a field in the report dataset. For more information, see [Add a Data-Bound Image &#40;Report Builder and service&#41;](add-a-data-bound-image-report-builder-and-service.md).
   
          For **MIMEType**, or file format, select the appropriate MIME type for the image-for example, .bmp.  
   
