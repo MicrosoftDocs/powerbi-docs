@@ -93,7 +93,8 @@ Coordinate-based chart types (column, bar, area, point, line, and range) have tw
  In Bar, Column and Scatter chart types, the chart automatically adds side margins on the ends of the x-axis. You cannot change the size of the margin. In all other chart types, the chart does not add side margins. For more information, see [Add or Remove Margins from a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-or-remove-margins-from-a-chart-report-builder-and-ssrs).  
   
 ## In this section  
- [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/format-axis-labels-dates-currencies-report-builder-and-ssrs)  
+
+ [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](format-axis-labels-dates-currencies-report-builder.md)  
   
  [Position Labels in a Chart &#40;Power BI Report Builder&#41;](position-labels-chart-report-builder.md)  
   

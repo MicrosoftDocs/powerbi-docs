@@ -68,11 +68,11 @@ ms.topic: conceptual
 
 ##  <a name="InThisSection"></a> In this section  
 
-[Drillthrough reports in a paginated report (Power BI Report Builder)](drillthrough-reports-report-builder-.md) Explains reports that open when a user clicks a link in a main report.  
+Drillthrough reports in a paginated report (Power BI Report Builder) Explains reports that open when a user clicks a link in a main report.  
 
 [Nested Data Regions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs) Explains nesting one data region inside another, such as a chart nested inside a matrix.  
 
-[Drilldown action in a paginated report (Power BI Report Builder)](drilldown-action-report-builder.md) Explains using the drilldown action to hide and show report items.  
+Drilldown action in a paginated report (Power BI Report Builder) Explains using the drilldown action to hide and show report items.  
 
 [Subreports in Power BI paginated reports](../subreports.md) Explains these reports that are displayed inside the body of a main report.  
 

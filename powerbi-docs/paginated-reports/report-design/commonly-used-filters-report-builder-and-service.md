@@ -39,7 +39,8 @@ ms.date: 01/18/2023
 |Multivalue|`[EmployeeID]`|IN|`[@EmployeeID]`|Integer|  
   
 ## Next steps
- [Report Parameters &#40;Report Builder and Report Designer&#41;](report-builder-parameters.md)   
+
+ [Report Parameters &#40;Report Builder and Report Designer&#41;](../parameters/report-builder-parameters.md)   
  [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters)   
  [Expression Uses in Reports &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
  [Expression Examples &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)   
