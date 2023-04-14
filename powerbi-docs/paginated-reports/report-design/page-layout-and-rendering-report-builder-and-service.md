@@ -61,7 +61,7 @@ A report can also contain subreports.
   
 -   **Hard page-break renderers** Hard page-break renderers maintain the report layout and formatting. The resulting file is optimized for a consistent printing experience, or for viewing the report online in a book format. The available hard page-break renderers are TIFF and PDF.  
   
- When you preview  a report in Report Builder or Report Designer or run a report on a report server, the report is always first rendered in HTML. After you run the report, you can export it to different file formats. For more information, see [Export Reports &#40;Report Builder and SSRS&#41;](../report-builder/export-reports-report-builder.md).
+ When you preview a report in Power BI Report Builder or run a report on Power BI service, the report is first rendered in their respective default renderers. After you run the report, you can export it to different file formats. For more information, see [Export Reports &#40;Report Builder and SSRS&#41;](../report-builder/export-reports-report-builder.md).
   
 ##  <a name="RenderingBehaviors"></a> Rendering Behaviors  
  Depending on the renderer you select, certain rules are applied when rendering the report. How report items fit together on a page is determined by the combination of these factors:  
