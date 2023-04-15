@@ -68,7 +68,7 @@ ms.topic: conceptual
 
 ##  <a name="InThisSection"></a> In this section  
 
-[Drillthrough reports in a paginated report (Power BI Report Builder)](drillthrough-reports-report-builder-.md) Explains reports that open when a user clicks a link in a main report.  
+[Drillthrough reports in a paginated report (Power BI Report Builder)](drillthrough-reports-report-builder.md) Explains reports that open when a user clicks a link in a main report.  
 
  
 [Nested Data Regions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs) Explains nesting one data region inside another, such as a chart nested inside a matrix.  

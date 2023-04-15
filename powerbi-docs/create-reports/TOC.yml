@@ -545,7 +545,7 @@
       - name: Drillthrough, drilldown, subreports, nested data regions
         href: ../paginated-reports/report-design/drillthrough-drilldown-subreports-nested-data-regions.md
       - name: Drillthrough reports
-        href: ../paginated-reports/report-design/drillthrough-reports-report-builder-.md
+        href: ../paginated-reports/report-design/drillthrough-reports-report-builder.md
       - name: Add a drillthrough action
         href: ../paginated-reports/report-design/add-drillthrough-action-report-report-builder.md
       - name: Drilldown action in paginated reports

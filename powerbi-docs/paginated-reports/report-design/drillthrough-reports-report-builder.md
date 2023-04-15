@@ -21,7 +21,7 @@ A drillthrough report is a report that a user opens by clicking a link within an
 > [!NOTE]  
 > When you are working in Report Builder, you must be connected to the same workspace as the target report.  
   
- To get started quickly with drillthrough reports, see [Tutorial: Creating Drillthrough and Main Reports &#40;Report Builder&#41;](/sql/reporting-services/tutorial-creating-drillthrough-and-main-reports-report-builder). 
+ To get started quickly with drillthrough reports, see [Tutorial: Creating Drillthrough and Main Reports &#40;Report Builder and SSRS&#41;](/sql/reporting-services/tutorial-creating-drillthrough-and-main-reports-report-builder). 
 
 ## Parameters in drillthrough reports
 
