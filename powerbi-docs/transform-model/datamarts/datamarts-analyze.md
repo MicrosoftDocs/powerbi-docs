@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 07/25/2022
+ms.date: 04/17/2023
 LocalizationGroup: Data from files
 ---
 
@@ -99,7 +99,7 @@ Use ADS for:
 
 For developers and analysts with SQL experience, using SQL Server Management Studio or Azure Data Studio as an extension to Power BI datamarts can provide a more thorough querying environment.
 
-To connect to a datamart’s SQL endpoint with client tooling, navigate to the dataset settings page. From there, expand the **Server settings** section and copy the connection string, as shown in the following image.
+To connect to a datamart’s SQL endpoint with client tooling, navigate to the dataset settings page by selecting the **Datamarts (Preview)** tab in Power BI. From there, expand the **Server settings** section and copy the connection string, as shown in the following image.
 
 :::image type="content" source="media/datamarts-analyze/datamarts-analyze-07.png" alt-text="Screenshot of the server settings connection string.":::
 
