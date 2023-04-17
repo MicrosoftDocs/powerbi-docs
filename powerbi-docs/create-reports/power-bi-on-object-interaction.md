@@ -35,14 +35,14 @@ You can begin building a new visual in one of three ways.
 
 - Select or drag fields from the Data pane.
 - Select a new visual from the **Insert** section of the ribbon, and then add fields. If you have the ribbon collapsed, select **Visual gallery** > select a visual.
-- Right-click the canvas > **Add visual**.
+- Right-click the canvas > **Add visual** or **Paste**.
 
 You notice the Visualizations pane is no longer available, by design. The updated [Format and Visualizations panes in Power BI](../fundamentals/desktop-format-pane.md) article has details.
 
 > [!NOTE]
 > Custom visuals aren't currently shown in the ribbon gallery collapsed tray, but they're available from the dropdown.
 
-As you add fields, the visual type updates dynamically based on what Power BI believes is the best visual type for your data. If you want to  change the visual type manually, select the **Build a visual** button and select a visual in the **Visual types** tray, or turn off the automatic **Suggest a type** toggle.
+As you add fields, the visual type updates dynamically based on what Power BI believes is the best visual type for your data. If you want to change the visual type manually, select the **Build a visual** button and select a visual in the **Visual types** tray. Selecting a visual type yourself turns off the automatic **Suggest a type** toggle.
 
 From this flyout menu, you can continue to add data. Select the **Add data** button and select fields from the **Select data** pane.
 
@@ -87,7 +87,7 @@ When selecting an element that's very close or overlapping another, Power BI tak
 
 ### Supported visuals for on-object formatting
 
-- On-object formatting is currently supported for bar, column, line, area, combo, and scatter visuals. Small multiples aren't currently supported.
+- On-object formatting is currently supported for bar, column, line, area, combo, scatter, and card visuals. Small multiples aren't currently supported.
 - Format mode isn't currently supported in mobile layout.
 - Format mode isn't currently supported in focus mode.
 

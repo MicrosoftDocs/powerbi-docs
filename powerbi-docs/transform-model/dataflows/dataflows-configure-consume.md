@@ -29,7 +29,7 @@ The **Settings** options provide many options for your dataflow, as the followin
 
 * **Take ownership:** If you're not the owner of the dataflow, many of these settings are disabled. To take ownership of the dataflow, select **Take over** to take control. You're prompted to provide credentials to ensure you have the necessary access level.
 
-* **Gateway Connection:** In this section, you can choose whether the dataflow uses a gateway, and select which gateway is used.
+* **Gateway Connection:** In this section, you can choose whether the dataflow uses a gateway, and select which gateway is used. If you have specified the Gateway as part of editing dataflow, upon taking ownership you may need to update credentials using the edit dataflow option.
 
 * **Data source credentials:** In this section you choose which credentials are being used, and can change how you authenticate to the data source.
 
