@@ -6,7 +6,7 @@ ms.author: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual 
-ms.date: 04/17/2023
+ms.date: 04/18/2023
 ms.custom: 
 ---
 
