@@ -51,6 +51,8 @@
       href: qanda.md
     - name: Secure embed
       href: ../../collaborate-share/service-embed-secure.md?toc=/power-bi/developer/embedded/TOC.json&bc=/power-bi/developer/embedded/breadcrumb/toc.json
+    - name: Create a quick report in Jupyter
+      href: jupyter-quick-report.md
   - name: Tokens
     items:
     - name: "Embedded analytics access tokens"
