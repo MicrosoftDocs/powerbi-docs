@@ -173,7 +173,9 @@
     - name: "Create sparklines in a table or matrix"
       href: power-bi-sparklines-tables.md
     - name: "Display custom format strings"
-      href: desktop-custom-format-strings.md      
+      href: desktop-custom-format-strings.md
+    - name: "Create dynamic format strings for measures"
+      href: desktop-dynamic-format-strings.md     
     - name: "Apply conditional table formatting"
       href: desktop-conditional-table-formatting.md
     - name: "Create dynamic, expression-based titles"
@@ -554,8 +556,8 @@
         href: ../paginated-reports/report-design/visualizations/change-chart-type-report-builder.md
       - name: Chart types in paginated reports
         items: 
-        - name: Add a gauge to a paginated report
-          href: ../paginated-reports/report-design/visualizations/add-gauge-to-report-report-builder.md
+        - name: Chart types in paginated reports
+          href: ../paginated-reports/report-design/visualizations/chart-types-report-builder.md
         - name: Area charts in paginated reports
           href: ../paginated-reports/report-design/visualizations/area-charts-report-builder.md
         - name: Polar charts in paginated reports
@@ -566,28 +568,52 @@
           href: ../paginated-reports/report-design/visualizations/shape-charts-report-builder.md
         - name: Stock charts in paginated reports
           href: ../paginated-reports/report-design/visualizations/stock-charts-report-builder.md
+        - name: Indicators in paginated reports
+          href: ../paginated-reports/report-design/visualizations/indicators-report-builder.md
+        - name: Gauges in paginated reports
+          href: ../paginated-reports/report-design/visualizations/gauges-report-builder.md
+        - name: Add a gauge to a paginated report
+          href: ../paginated-reports/report-design/visualizations/add-gauge-to-report-report-builder.md
+        - name: Bar charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/bar-charts-report-builder.md
+      - name: Format charts in paginated reports
+        items:
+        - name: Format charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/formatting-chart-report-builder.md
+        - name: Add a border frame to a chart
+          href: ../paginated-reports/report-design/visualizations/add-border-frame-to-chart-report-builder.md
+        - name: Format series colors on a report chart
+          href: ../paginated-reports/report-design/visualizations/formatting-series-colors-on-chart-report-builder.md
+        - name: Format data points on a report chart
+          href: ../paginated-reports/report-design/visualizations/formatting-data-points-on-chart-report-builder.md
+        - name: Format the legend on a chart
+          href: ../paginated-reports/report-design/visualizations/chart-legend-formatting-report-builder.md
+        - name: Format axis labels on a paginated report chart
+          href: ../paginated-reports/report-design/visualizations/format-axis-labels-chart-report-builder.md
+        - name: Format pointers on a gauge in a paginated report
+          href: ../paginated-reports/report-design/visualizations/formatting-pointers-gauge-report-builder.md
+        - name: Format ranges on a gauge in a paginated report
+          href: ../paginated-reports/report-design/visualizations/formatting-ranges-gauge-report-builder.md
+        - name: Format axis labels as dates or currencies
+          href: ../paginated-reports/report-design/visualizations/format-axis-labels-dates-currencies-report-builder.md
+        - name: Add bevel, emboss, or texture chart effects
+          href: ../paginated-reports/report-design/visualizations/chart-effects-add-bevel-emboss-or-texture-report-builder.md
+        - name: Add scale breaks to a report chart
+          href: ../paginated-reports/report-design/visualizations/add-scale-breaks-to-chart-report-builder.md
       - name: Change the text of a legend item
         href: ../paginated-reports/report-design/visualizations/chart-legend-change-item-text-report-builder.md
-      - name: Format the legend on a chart
-        href: ../paginated-reports/report-design/visualizations/chart-legend-formatting-report-builder.md
       - name: Display data point labels outside a pie chart
         href: ../paginated-reports/report-design/visualizations/display-data-point-labels-outside-pie-chart-report-builder.md
       - name: Display percentage values on pie charts
         href: ../paginated-reports/report-design/visualizations/display-percentage-values-pie-chart-report-builder.md
       - name: Empty and null data points in paginated report charts
         href: ../paginated-reports/report-design/visualizations/empty-null-data-points-charts-report-builder.md
-      - name: Format axis labels on a paginated report chart
-        href: ../paginated-reports/report-design/visualizations/format-axis-labels-chart-report-builder.md
       - name: Position labels in paginated report charts
         href: ../paginated-reports/report-design/visualizations/position-labels-chart-report-builder.md
       - name: Specify an axis interval in paginated reports
         href: ../paginated-reports/report-design/visualizations/specify-axis-interval-report-builder.md
       - name: Specify logarithmic scale in paginated reports
         href: ../paginated-reports/report-design/visualizations/specify-logarithmic-scale-report-builder.md
-      - name: Format pointers on a gauge in a paginated report
-        href: ../paginated-reports/report-design/visualizations/formatting-pointers-gauge-report-builder.md
-      - name: Format ranges on a gauge in a paginated report
-        href: ../paginated-reports/report-design/visualizations/formatting-ranges-gauge-report-builder.md
       - name: Include indicators and gauges in a gauge panel
         href: ../paginated-reports/report-design/visualizations/include-indicators-gauges-gauge-panel-report-builder.md
       - name: Specify a chart area for a series
