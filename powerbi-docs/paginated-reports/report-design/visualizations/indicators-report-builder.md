@@ -27,7 +27,7 @@ ms.reviewer: monaraya
   
  You can use indicators by themselves in dashboards or free-form reports, but they are most commonly used in tables or matrices to visualize data in rows or columns. The following diagram shows a table with a traffic light indicator that conveys year to date sales by sales person and territory.  
 
- ![Screenshot showing indicator table traffic light.](media/paginated-reports-visualizations/indicator-table-traffic-light.gif "indicator table traffic light screenshot")  
+ ![Screenshot showing indicator table traffic light.](media/paginated-reports-visualizations/indicator-table-traffic-light.png "indicator table traffic light screenshot")  
   
  Power BI Report Builder provides built-in indicator sets and indicator icons to use as is, and you can also customize individual indicator icons and indicators sets to suit your needs.  
   
@@ -40,7 +40,7 @@ ms.reviewer: monaraya
   
  Like gauges, indicators are positioned inside a gauge panel. When you want to configure an indicator by using the **Indicators Properties** dialog box or the Properties pane, you need to select the indicator instead of the panel. Otherwise, the available options apply to the gauge panel options and you cannot configure the indicator. The following picture shows a selected indicator in its gauge panel.  
   
- ![Screenshot showing gauge panel with indicator.](media/paginated-reports-visualizations/gauge-panel-with-indicator.gif "Screenshot of gauge panel with indicator.")  
+ ![Screenshot showing gauge panel with indicator.](media/paginated-reports-visualizations/gauge-panel-with-indicator.png "Screenshot of gauge panel with indicator.")  
   
  Depending on how you want to depict the data value, gauges might be more effective than indicators. For more information, see [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md).  
   
@@ -78,7 +78,7 @@ ms.reviewer: monaraya
   
  The following diagram shows a report with a table that uses the directional indicator set, **Four Arrows (Colored)**, to indicate sales. The indicator icons in the report are configured to use shades of blue instead of the default colors: red, yellow, and green.  
   
- ![Screenshot showing indicator report blue arrows.](media/paginated-reports-visualizations/indicator-report-blue-arrows.gif "Screenshot of indicator report blue arrows")  
+ ![Screenshot showing indicator report blue arrows.](media/paginated-reports-visualizations/indicator-report-blue-arrows.png "Screenshot of indicator report blue arrows")  
   
  For more information about adding, changing, and deleting indicators, see [Add or Delete an indicator &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-or-delete-an-indicator-report-builder-and-ssrs).  
   

@@ -25,7 +25,7 @@ ms.reviewer: monaraya
   
  There are two types of gauges: radial and linear. The following illustration shows the basic elements of a single radial gauge in the gauge panel.  
   
- ![Screenshot showing gauge elements diagram.](media/paginated-reports-visualizations/gauge-elements-diagram.gif "Gauge elements diagram.")  
+ ![Screenshot showing gauge elements diagram.](media/paginated-reports-visualizations/gauge-elements-diagram.png "Gauge elements diagram.")  
   
  For more information about using gauges as KPIs, see [Tutorial: Adding a KPI to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-adding-a-kpi-to-your-report-report-builder).  
 
