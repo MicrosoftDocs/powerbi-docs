@@ -7,13 +7,13 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/14/2023
+ms.date: 04/17/2023
 LocalizationGroup: Data refresh
 ---
 
 # Refresh summaries for Power BI
 
-The Power BI **Refresh summary** page, found in the Power BI Admin portal, provides control and insight into your refresh schedules, capacities, and potential refresh schedule overlaps. You can use the refresh summary page to determine whether you should adjust refresh schedules, learn error codes associated with refresh issues, and properly manage your data refresh scheduling.
+The Power BI **Refresh summary** page, found in the Power BI Admin portal, provides control and insight into your refresh schedules, capacities, and potential refresh schedule overlaps for your Power BI Premium capacities. You can use the refresh summary page to determine whether you should adjust refresh schedules, learn error codes associated with refresh issues, and properly manage your data refresh scheduling.
 
 The refresh summaries page has two views:
 
