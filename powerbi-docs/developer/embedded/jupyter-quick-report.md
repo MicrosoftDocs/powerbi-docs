@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 12/28/2022
+ms.date: 04/18/2023
 ---
 # Create a report quickly in Jupyter notebook
 
-If you're using Jupyter notebook, you can generate Power BI [quick-reports](../../create-reports/service-interact-quick-report.md) in just a few steps without leaving the notebook. This lets you easily tell the story of your data using Power BI's visualization capabilities as part of your notebook experience.  
-Quick reports are temporary reports that aren't saved automatically. Each time you run the code a new report will be created and the old one will be removed. You can manually save the report for later use in your notebook or in Power BI.
+If you're using Jupyter notebook, you can generate Power BI [quick-reports](../../create-reports/service-interact-quick-report.md) in just a few steps without leaving the notebook. A quick report lets you easily tell the story of your data using Power BI's visualization capabilities as part of your notebook experience.  
+Quick reports are temporary reports that aren't saved automatically. Each time you run the code a new report is created and the old one is removed. You can manually save the report for later use in your notebook or in Power BI.
 
 ## Prerequisites
 
-To create an report in Jupyter notebook, make sure you have the [Power BI client package installed](/javascript/api/overview/powerbi/powerbi-jupyter#install-the-power-bi-client-package).
+To create a report in Jupyter notebook, make sure you have the [Power BI client package installed](/javascript/api/overview/powerbi/powerbi-jupyter#install-the-power-bi-client-package).
 
 ## Import modules
 
@@ -59,7 +59,7 @@ For more information about authentication, check out the [github wiki page](http
 
 ## Create and render a quick visualize instance
 
-Create a `QuickVisualize` instance from the [DataFrame you created](#create-a-pandas-dataframe). If you are using a pandas DataFrame, you can use our utility function as shown in the code snippet below to create the report. If you're using a DataFrame other than pandas, parse the data yourself.
+Create a `QuickVisualize` instance from the [DataFrame you created](#create-a-pandas-dataframe). If you're using a pandas DataFrame, you can use our utility function as shown in the following code snippet to create the report. If you're using a DataFrame other than pandas, parse the data yourself.
 
 ```python
 # Create a Power BI report from your data
