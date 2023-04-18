@@ -21,8 +21,6 @@ Null values are shown on the chart as empty spaces or gaps between data points i
   
  For more information, see [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/empty-and-null-data-points-in-charts-report-builder-and-ssrs).  
   
-> [!NOTE]  
->  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.
   
 ## To specify empty points on a chart  
   
