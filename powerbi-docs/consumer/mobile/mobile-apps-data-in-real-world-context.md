@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/05/2022
+ms.date: 04/18/2023
 ---
 # Get data from the real world with the Power BI mobile apps
 The Power BI mobile apps can connect the real world directly to related BI information. The features described below make this possible. 
