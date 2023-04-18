@@ -12,7 +12,7 @@ ms.date: 04/18/2023
 # Power BI for HoloLens 2 (preview)
 
 > [!NOTE]
-> The Power BI for HoloLens 2 app (preview) will be discontinued as of **April 24, 2023**. From that date, the app will no longer be available for download from the store, and no further updates or bug fixes for the app will be released.  
+> The Power BI for HoloLens 2 app (preview) will be discontinued on **April 24, 2023**. From that date onwards, the app will no longer be available for download from the store, and no further updates or bug fixes for the app will be released.  
 
 The Power BI app for HoloLens 2 blends your Power BI reports and dashboards with your physical environment to create a 3D, immersive, hands-free experience where you can move through the physical world and get your relevant data when and where you need it.
 
