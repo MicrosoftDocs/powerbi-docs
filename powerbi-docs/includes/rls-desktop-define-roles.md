@@ -29,7 +29,7 @@ To define security roles:
    ![Screenshot of the Manage roles window, highlighting an example DAX expression.](./media/rls-desktop-define-roles/powerbi-desktop-security-create-rule.png)
 
    > [!NOTE]
-   > You can use *username()* within this expression. Be aware that *username()* has the format of *DOMAIN\username* within Power BI Desktop. Within the Power BI service and Power BI Report Server, it's in the format of the user's User Principal Name (UPN). Alternatively, you can use *userprincipalname()*, which always returns the user in the format of their user principal name, *username\@contoso.com*.
+   > You can use *username()* within this expression. Be aware that *username()* has the format of *DOMAIN\username* within Power BI Desktop. Within the Power BI service and Power BI Report Server, it's in the format of the user's User Principal Name (UPN). Alternatively, you can use *userprincipalname()*, which, for internal users, always returns the user in the format of their user principal name, *username\@contoso.com*. For guest users, *userprincipalname()*, can return a different format than the one displayed on Azure Portal, this depends on the [entity](https://learn.microsoft.com/en-us/azure/active-directory/external-identities/user-properties#identities) of the guest user.
 
 7. After you've created the DAX expression, select the checkmark above the expression box to validate the expression.
 
