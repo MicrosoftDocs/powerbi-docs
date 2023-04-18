@@ -630,6 +630,22 @@
         href: ../paginated-reports/report-builder/troubleshoot-reports-map-reports-report-builder.md
       - name: Map Wizard and Map Layer Wizard
         href: ../paginated-reports/report-builder/map-wizard-map-layer-wizard-report-builder.md
+    - name: Images, text boxes, rectangles, and lines
+      items:
+      - name: Images, text boxes, rectangles, and lines in a paginated report
+        href: ../paginated-reports/report-design/images-text-boxes-rectangles-and-lines-report-builder-and-service.md
+      - name: Images in paginated reports
+        href: ../paginated-reports/report-design/images-report-builder-and-service.md
+      - name: Format lines, colors, and images in a paginated report
+        href: ../paginated-reports/report-design/formatting-lines-colors-and-images-report-builder-and-service.md
+      - name: Embed an image in a paginated report
+        href: ../paginated-reports/report-design/embed-an-image-in-a-report-report-builder-and-service.md
+      - name: Add an external image to a paginated report
+        href: ../paginated-reports/report-design/add-an-external-image-report-builder-and-service.md
+      - name: Add a data-bound image to a paginated report
+        href: ../paginated-reports/report-design/add-a-data-bound-image-report-builder-and-service.md
+      - name: Add a background image to a paginated report
+        href: ../paginated-reports/report-design/add-a-background-image-report-builder-and-service.md
     - name: Data sources and datasets
       items: 
       - name: Understand paginated report data
@@ -712,6 +728,18 @@
         href: ../paginated-reports/report-builder/export-pdf-file-report-builder.md
       - name: "Export to XML file format"
         href: ../paginated-reports/report-builder/export-xml-report-builder.md
+    - name: Report layout and rendering 
+      items:
+      - name: "Page layout and rendering in paginated reports"
+        href: ../paginated-reports/report-design/page-layout-and-rendering-report-builder-and-service.md
+      - name: "Rendering behaviors in a paginated report"
+        href: ../paginated-reports/report-design/rendering-behaviors-report-builder-and-service.md
+      - name: "Rendering data regions in a paginated report"
+        href: ../paginated-reports/report-design/rendering-data-regions-report-builder-and-service.md
+      - name: "Rendering data in a paginated report"
+        href: ../paginated-reports/report-design/rendering-data-report-builder-and-service.md
+      - name: "Rendering report items in paginated reports"
+        href: ../paginated-reports/report-design/rendering-report-items-report-builder-and-service.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
     - name: Paginated reports capacity planning
