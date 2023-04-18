@@ -30,8 +30,6 @@
       href: mobile-apps-data-in-space-overview.md
     - name: "View your data offline in the mobile apps"
       href: mobile-apps-offline-data.md
-    - name: "Power BI for HoloLens 2"
-      href: mobile-hololens2-app.md
   - name: How to
     items: 
     - name: All mobile apps
