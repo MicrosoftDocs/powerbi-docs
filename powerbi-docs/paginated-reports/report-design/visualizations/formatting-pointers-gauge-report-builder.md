@@ -57,5 +57,5 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
 
  [Formatting scales on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)   
  [Formatting ranges on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-ranges-on-a-gauge-report-builder-and-ssrs)   
- [Gauges &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs)  
+ [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md)  
   
