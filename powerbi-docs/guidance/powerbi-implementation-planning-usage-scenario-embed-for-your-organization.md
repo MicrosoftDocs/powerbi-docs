@@ -1,20 +1,20 @@
 ---
 title: "Power BI usage scenarios: Embed for your organization"
 description: "Learn how a developer can programmatically embed Power BI content in a custom application for your organization."
-author: peter-myers
-ms.author: v-petermyers
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/29/2022
+ms.date: 01/16/2023
 ---
 
 # Power BI usage scenarios: Embed for your organization
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This usage scenario focuses on how a developer can programmatically embed Power BI content in a custom application _for your organization_. (The developer isn't necessarily responsible for creating the Power BI content.) The **For your organization** scenario applies when the application audience comprises users who have permission and appropriate licenses to access Power BI content in the organization. These users must have organizational accounts (including guest accounts), which authenticate with Azure Active Directory (Azure AD).
+This usage scenario focuses on how a developer can programmatically embed Power BI content in a custom application _for your organization_. (The developer isn't necessarily responsible for creating the Power BI content.) The **Embed for your organization** scenario applies when the application audience comprises users who have permission and appropriate licenses to access Power BI content in the organization. These users must have organizational accounts (including guest accounts), which authenticate with Azure Active Directory (Azure AD).
 
 > [!NOTE]
 > In this scenario, Power BI is software-as-a-service (SaaS). The embedding scenario is sometimes referred to as _User owns data_.

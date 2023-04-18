@@ -1,27 +1,28 @@
 ---
-title: Assigning a workspace to a Power BI Application lifecycle management (ALM) deployment pipeline 
-description: Learn how to assign and unassign a workspace to a deployment pipeline, the Power BI Application lifecycle management (ALM) tool
-author: KesemSharabi
-ms.author: kesharab
+title: Assign a workspace to a Power BI Application lifecycle management (ALM) deployment pipeline 
+description: Learn how to assign and unassign a workspace to a deployment pipeline, the Power BI Application lifecycle management (ALM) tool.
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 10/02/2022
+ms.date: 04/02/2023
+ms.search.form: Deployment pipelines operations
 ---
 
-# Assign a workspace to a deployment pipeline
+# Assigning a workspace to a Power BI Application lifecycle management (ALM) deployment pipeline
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Deployment pipelines enables you to assign and unassign workspaces to any stage in a pipeline. This capability is particularly important for organizations that already have workspaces that are used as development, test and production environments. In such cases, you can assign each workspace to its corresponding pipeline stage, and continue working in your usual flow.
+Deployment pipelines enable you to assign and unassign workspaces to any stage in a pipeline. This capability is particularly important for organizations that already have workspaces that are used as development, test, and production environments. In such cases, you can assign each workspace to its corresponding pipeline stage, and continue working in your usual flow.
 
 >[!NOTE]
 >This article describes how to assign and unassign a workspace to a deployment pipeline stage in the Power BI service. You can also perform these functions programmatically, using the [Assign Workspace](/rest/api/power-bi/pipelines/assign-workspace) and [Unassign Workspace](/rest/api/power-bi/pipelines/unassign-workspace) Power BI REST APIs.
 
 ## Assign a workspace to any vacant pipeline stage
 
-To assign a workspace to a pipeline, the pipeline stage you want to assign the workspace to, has to be vacant. If you want to assign a workspace to a pipeline stage that already has another workspace assigned to it, [unassign](#unassign-a-workspace-from-a-pipeline-stage) the current workspace from that stage and then continue with assigning the new workspace.
+To assign a workspace to a pipeline, the pipeline stage you want to assign the workspace to has to be vacant. If you want to assign a workspace to a pipeline stage that already has another workspace assigned to it, [unassign](#unassign-a-workspace-from-a-pipeline-stage) the current workspace from that stage and then continue with assigning the new workspace.
 
 Before you assign a workspace to a pipeline stage, review the [limitations](#limitations) section and make sure that the workspace meets the required conditions.
 
@@ -32,7 +33,7 @@ To assign a workspace to a pipeline stage, follow these steps:
 
 1. Open the pipeline.
 
-    :::image type="content" source="media/deployment-pipelines-assign/new-workspace.png" alt-text="A screenshot showing a deployment pipelines new workspace, with all the pipeline stages unassigned.":::
+    :::image type="content" source="media/deployment-pipelines-assign/new-workspace.png" alt-text="A screenshot showing a deployment pipelines new workspace with all the pipeline stages unassigned." lightbox="media/deployment-pipelines-assign/new-workspace.png":::
 
 2. In the stage you want to assign a workspace to, expand the dropdown titled **Choose a workspace to assign to this pipeline**.
 
@@ -46,7 +47,7 @@ To assign a workspace to a pipeline stage, follow these steps:
 
 ## Unassign a workspace from a pipeline stage
 
-You can unassign a workspace from any pipeline stage. If you want to assign a different workspace to a pipeline stage, you'll first have to unassign the current workspace from that stage.
+You can unassign a workspace from any pipeline stage. If you want to assign a different workspace to a pipeline stage, you first have to unassign the current workspace from that stage.
 
 To unassign a workspace from a pipeline stage, follow these steps:
 
@@ -56,7 +57,7 @@ To unassign a workspace from a pipeline stage, follow these steps:
 
 3. From the *settings* menu, select **Unassign workspace**.
 
-    :::image type="content" source="media/deployment-pipelines-assign/unassign-workspace.png" alt-text="A screenshot showing the unassign workspace option in deployment pipelines, available from the settings menu of the pipeline stage.":::
+    :::image type="content" source="media/deployment-pipelines-assign/unassign-workspace.png" alt-text="A screenshot showing the unassign workspace option in deployment pipelines, available from the settings menu of the pipeline stage." lightbox="media/deployment-pipelines-assign/unassign-workspace.png":::
 
 4. In the *Unassign workspace* dialogue box, select **Unassign**.
 
@@ -72,15 +73,15 @@ Connections between items are only established when you assign a workspace to a 
 
 * You must be an admin of the workspace.
 
-* The workspace is not assigned to any other pipeline.
+* The workspace isn't assigned to any other pipeline.
 
-* The workspace must reside on a [Premium capacity](../enterprise/service-premium-gen2-what-is.md).
+* The workspace must reside on a [Premium capacity](../enterprise/service-premium-what-is.md).
 
-* To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#permissions-table) permissions for the workspaces in its adjacent stages. For more information see [Why am I getting the 'workspace member permissions needed' error message when I try to assign a workspace?](deployment-pipelines-troubleshooting.yml#why-am-i-getting-the--workspace-member-permissions-needed--error-message-when-i-try-to-assign-a-workspace-)
+* To assign a workspace, you need at least [workspace member](deployment-pipelines-process.md#permissions-table) permissions for the workspaces in its adjacent stages. For more information, see [Why am I getting the 'workspace member permissions needed' error message when I try to assign a workspace?](deployment-pipelines-troubleshooting.yml#why-am-i-getting-the--workspace-member-permissions-needed--error-message-when-i-try-to-assign-a-workspace-)
 
-* You cannot assign a workspace with [Power BI samples](../create-reports/sample-datasets.md) to a pipeline stage.
+* You can't assign a workspace with [Power BI samples](../create-reports/sample-datasets.md) to a pipeline stage.
 
-* You cannot assign a [template app](./../connect-data/service-template-apps-create.md#create-the-template-workspace) workspace.
+* You can't assign a [template app](./../connect-data/service-template-apps-create.md#create-the-template-workspace) workspace.
 
 ## Next steps
 

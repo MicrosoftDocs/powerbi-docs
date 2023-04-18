@@ -32,7 +32,7 @@ The **Power BI Premium** tab enables you to manage any Power BI Premium capaciti
 
 ![No access to Premium settings](media/service-admin-portal-capacity-settings/premium-settings-no-access.png)
 
-To understand more about the concepts of capacity management, see [Managing Premium Gen2 capacities](../enterprise/service-premium-capacity-manage-gen2.md).
+To understand more about the concepts of capacity management, see [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md).
 
 The capacity management process is described in [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md).
 

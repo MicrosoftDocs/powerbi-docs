@@ -13,21 +13,16 @@ LocalizationGroup: Premium
 
 # Configure workloads in a Premium capacity
 
-This article lists the workloads for Power BI Premium, and describes their capacities. Use the *Gen2* and *Gen1* tabs to review the differences between workloads for these Premium offerings.
-
->[!IMPORTANT]
->Premium Gen1, also known as the original version of Premium, is being deprecated. If you're still using Premium Gen1, you need to migrate your Power BI content to Premium Gen2. For more information, see [Plan your transition to Power BI Premium Gen2](service-premium-transition-gen1-to-gen2.md).
+This article lists the workloads for Power BI Premium, and describes their capacities.
 
 >[!NOTE]
 >Workloads can be enabled and assigned to a capacity by using the [Capacities](/rest/api/power-bi/capacities) REST APIs.
 
 ## Supported workloads
 
-### [Gen2](#tab/gen2)
-
 Query workloads are optimized for and limited by resources determined by your Premium capacity SKU. Premium capacities also support additional workloads that can use your capacity's resources.
 
-The list of workloads below, describes which Premium Gen2 SKUs supports each workload:
+The list of workloads below, describes which Premium SKUs supports each workload:
 
 * **AI** - All SKUs are supported apart from the *EM1/A1* SKUs
 
@@ -37,38 +32,12 @@ The list of workloads below, describes which Premium Gen2 SKUs supports each wor
 
 * **Paginated reports** - All SKUs are supported
 
-### [Gen1](#tab/gen1)
-
-By default, capacities support only the workload associated with running Power BI queries. You can also enable and configure additional workloads for **[AI (Cognitive Services)](../transform-model/dataflows/dataflows-machine-learning-integration.md)**, **[Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)**, and **[Paginated reports](../paginated-reports/paginated-reports-save-to-power-bi-service.md)**.
-
-### Default memory settings
-
-Query workloads are optimized for and limited by resources determined by your Premium capacity SKU. Premium capacities also support additional workloads that can use your capacity's resources. Default memory values for these workloads are based on the capacity nodes available for your SKU. Max memory settings are not cumulative.
-
-|                       | EM1/A1                  | EM2/A2                  | EM3/A3                  | P1/A4                  | P2/A5                  | P3/A6                   |
-|-----------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|
-| **AI**                | Unsupported               | 40% default; 40% minimum  | 20% default; 20% minimum  | 20% default; 8% minimum  | 20% default; 4% minimum  | 20% default; 2% minimum   |
-| **Datasets**          | 100% default; 67% minimum | 100% default; 40% minimum | 100% default; 20% minimum | 100% default; 8% minimum | 100% default; 4% minimum | 100% default; 2% minimum  |
-| **Dataflows**         | 40% default; 40% minimum  | 24% default; 24% minimum  | 20% default; 12% minimum  | 20% default; 5% minimum  | 20% default; 3% minimum  | 20% default; 2% minimum   |
-| **Paginated reports** | Unsupported               | Unsupported               | Unsupported               | 20% default; 10% minimum | 20% default; 5% minimum  | 20% default; 2.5% minimum |
-
----
-
 ### Configure workloads
 
 You can tune the behavior of the workloads, by configuring workload settings for your capacity.
 
-### [Gen2](#tab/gen2)
-
 >[!IMPORTANT]
 >All workloads are always enabled and cannot be disabled. Your capacity resources are managed by Power BI according to your capacity usage.
-
-### [Gen1](#tab/gen1)
-
->[!IMPORTANT]
->You can maximize your capacity's available resources by disabling workloads if they will not be used.
-
----
 
 #### To configure workloads in the Power BI admin portal
 
@@ -88,15 +57,7 @@ You can tune the behavior of the workloads, by configuring workload settings for
 
 ### Monitor workloads
 
-### [Gen2](#tab/gen2)
-
-Use the [Power BI Premium utilization and metrics app](../enterprise/service-premium-gen2-metrics-app.md) to monitor your capacity's activity.
-
-### [Gen1](#tab/gen1)
-
-The [Power BI Premium Capacity Metrics app](service-premium-gen2-metrics-app.md) provides dataset, dataflows, and paginated reports metrics to monitor workloads enabled for your capacities.
-
----
+Use the [Power BI Premium utilization and metrics app](../enterprise/service-premium-metrics-app.md) to monitor your capacity's activity.
 
 > [!IMPORTANT]
 > If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. For more information, see [capacity and reliability notifications](../support/service-interruption-notifications.md#capacity-and-reliability-notifications).
@@ -112,7 +73,7 @@ The AI workload lets you use cognitive services and Automated Machine Learning i
 | **Allow building machine learning models** | Specifies whether business analysts can train, validate, and invoke machine learning models directly in Power BI. For more information, see [Automated Machine Learning in Power BI (Preview)](../transform-model/dataflows/dataflows-machine-learning-integration.md). |
 | **Enable parallelism for AI requests** | Specifies whether AI requests can run in parallel. |
 
-<sup>1</sup> *Premium Gen2* doesn't require memory settings to be changed. Memory in Premium Gen2 is automatically managed by the underlying system.
+<sup>1</sup> *Premium* doesn't require memory settings to be changed. Memory in Premium is automatically managed by the underlying system.
 
 ## Datasets
 
@@ -126,16 +87,13 @@ This section describes the following datasets workload settings:
 
 Use the settings in the table below to control workload behavior. Settings with a link have additional information that you can review in designated sections below the table.
 
->[!NOTE]
->In Premium Gen1, the datasets workload is enabled by default and cannot be disabled.
-
 | Setting Name | Description |
 |---------------------------------|----------------------------------------|
 | **Max Memory (%)**<sup>1</sup> | The maximum percentage of available memory that datasets can use in a capacity. |
 | **XMLA Endpoint** | Specifies that connections from client applications honor the security group membership set at the workspace and app levels. For more information, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md). |
 | **[Max Intermediate Row Set Count](#max-intermediate-row-set-count)** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483646. The upper limit may need to be further constrained based on what the datasource supports. |
 | **[Max Offline Dataset Size (GB)](#max-offline-dataset-size)** | The maximum size of the offline dataset in memory. This is the compressed size on disk. The default value is 0, which is the highest limit defined by SKU. The allowable range is between 0 and the capacity size limit. |
-| **[Max Result Row Set Count](#max-result-row-set-count)** | The maximum number of rows returned in a DAX query. The default value is -1 (no limit), and the allowable range is between 100000 and 2147483647. |
+| **[Max Result Row Count](#max-result-row-set-count)** | The maximum number of rows returned in a DAX query. The default value is 2147483647, and the allowable range is between 100000 and 2147483647. |
 | **[Query Memory Limit (%)](#query-memory-limit)** | The maximum percentage of available memory in the workload that can be used for executing an MDX or DAX query. The default value is 0, which results in SKU-specific automatic query memory limit being applied. |
 | **[Query Timeout (seconds)](#query-timeout)** | The maximum amount of time before a query times out. The default is 3600 seconds (1 hour). A value of 0 specifies that queries won't time out. |
 | **[Automatic page refresh](#automatic-page-refresh)** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh based on fixed intervals. |
@@ -143,7 +101,7 @@ Use the settings in the table below to control workload behavior. Settings with 
 | **Change detection measure** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh based on change detection. |
 | **Minimum execution interval** | If change detection measure is on, the minimum execution interval allowed to poll for data changes. The default value is five seconds, and the minimum allowed is one second. |
 
-<sup>1</sup> *Premium Gen2* doesn't require memory settings to be changed. Memory in Premium Gen2 is automatically managed by the underlying system.
+<sup>1</sup> *Premium* doesn't require memory settings to be changed. Memory in Premium is automatically managed by the underlying system.
 
 #### Max Intermediate Row Set Count
 
@@ -229,7 +187,7 @@ Queries created by automatic page refresh go directly to the data source, so it'
 
 ### Analysis Services server properties
 
-Power BI Premium Gen2 supports additional Analysis Services server properties. To review these properties, refer to [Server properties in Analysis Services](/analysis-services/server-properties/server-properties-in-analysis-services).
+Power BI Premium supports additional Analysis Services server properties. To review these properties, refer to [Server properties in Analysis Services](/analysis-services/server-properties/server-properties-in-analysis-services).
 
 #### Admin portal switch
 
@@ -247,15 +205,7 @@ The Analysis Services XMLA-based server properties setting is enabled by default
 
 ## Dataflows
 
-The dataflows workload lets you use dataflows self-service data prep, to ingest, transform, integrate, and enrich data. Use the following settings to control workload behavior in Premium Gen1.
-
-| Setting Name | Description |
-|---------------------------------|----------------------------------------|
-| **Max Memory (%)**<sup>1</sup> | The maximum percentage of available memory that dataflows can use in a capacity. |
-| **Enhanced Dataflows Compute Engine (Preview)** | Enable this option for up to 20x faster calculation of computed entities when working with large scale data volumes. **You must restart the capacity to activate the new engine.** For more information, see [Enhanced dataflows compute engine](#enhanced-dataflows-compute-engine). |
-| **Container Size** | The maximum size of the container that dataflows use for each entity in the dataflow. The default value is 700 MB. For more information, see [Container size](#container-size). |
-
-<sup>1</sup> *Premium Gen2* doesn't require memory settings to be changed. Memory in Premium Gen2 is automatically managed by the underlying system.
+The dataflows workload lets you use dataflows self-service data prep, to ingest, transform, integrate, and enrich data. Use the following settings to control workload behavior in Premium. Power BI Premium doesn't require memory settings to be changed. Memory in Premium is automatically managed by the underlying system.
 
 ### Enhanced dataflows compute engine
 
@@ -268,7 +218,7 @@ When refreshing a dataflow, the dataflow workload spawns a container for each en
 * Dataflows take too long to refresh, or dataflow refresh fails on a timeout.
 * Dataflow entities include computation steps, for example, a join.  
 
-It's recommended you use the [Power BI Premium Capacity Metrics](service-premium-gen2-metrics-app.md) app to analyze Dataflow workload performance.
+It's recommended you use the [Power BI Premium Capacity Metrics](service-premium-metrics-app.md) app to analyze Dataflow workload performance.
 
 In some cases, increasing container size may not improve performance. For example, if the dataflow is getting data only from a source without performing significant calculations, changing container size probably won't help. Increasing container size might help if it will enable the Dataflow workload to allocate more memory for entity refresh operations. By having more memory allocated, it can reduce the time it takes to refresh heavily computed entities.
 
@@ -279,10 +229,6 @@ The Container Size value can't exceed the maximum memory for the Dataflows workl
 The paginated reports workload lets you run paginated reports, based on the standard SQL Server Reporting Services format, in the Power BI service.
 
 Paginated reports offer the same capabilities that SQL Server Reporting Services (SSRS) reports do today, including the ability for report authors to add custom code.  This allows authors to dynamically change reports, such as changing text colors based on code expressions.
-
->[!NOTE]
->You need to enable this workload with Power BI Premium Gen1 capacities.
-
 
 ### Outbound connectivity
 
@@ -306,28 +252,12 @@ To get to the outbound connectivity settings, follow these steps:
 
     :::image type="content" source="media/service-admin-premium-workloads/outbound-connectivity.png" alt-text="A screenshot of the paginated reports outbound connectivity setting.":::
 
-### [Gen2](#tab/gen2)
-
 The paginated reports workload is enabled automatically, and is always enabled.
-
-### [Gen1](#tab/gen1)
-
-Paginated reports are only supported when using *P1/A4* or higher SKUs.
-
-| Setting Name | Description |
-|---------------------------------|----------------------------------------|
-| **Max Memory (%)** | The maximum percentage of available memory that paginated reports can use in a capacity. |
-
-To ensure proper isolation, paginated reports are run within a protected sandbox per capacity. Reports running with the same capacity can cause side effects between them. In the same way you'd restrict the authors who can publish content to an instance of SSRS, we recommend that you follow a similar practice with paginated reports. Ensure that authors publishing content to a capacity are trusted by the organization. You can further secure your environment by provisioning multiple capacities and assigning different authors to each of them.
-
-A Power BI administer can enable or disable the paginated reports workload. When the workload is disabled, you can't use the paginated reports feature. If you're trying to render a paginated report when the workload is disabled, you’ll receive a message notifying you that you need to contact your capacity administrator.
-
----
 
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Power BI Premium Generation 2](service-premium-gen2-what-is.md)
+>[Power BI Premium](service-premium-what-is.md)
 
 >[!div class="nextstepaction"]
 >[Self-service data prep in Power BI with Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)

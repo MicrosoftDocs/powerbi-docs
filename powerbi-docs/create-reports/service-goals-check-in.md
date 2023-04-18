@@ -7,15 +7,16 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
+ms.search.form: Stay on top of your metrics
 ms.topic: how-to
-ms.date: 10/10/2022
+ms.date: 02/16/2023
 ---
 
 # Stay on top of your metrics
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Metrics in Power BI let your customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, make notes on important events, and follow metrics. These features are covered in this article. 
+Metrics in Power BI let your customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, make notes on important events. These features are covered in this article. You can also [follow your metrics](service-metrics-follow.md), to be notified when they change.
 
 ## View metric details 
 
@@ -24,8 +25,7 @@ The metrics Details pane provides the entire history for the metric from the sta
 - To access the details pane, open a scorecard and select the metric name. Power BI automatically shows the details pane.
 
     :::image type="content" source="media/service-goals-check-in/power-bi-goals-details-pane.png" alt-text="Screenshot of The Details pane for a metric.":::
-    
-    
+
 ## Filtering and keyword search 
 
 You can filter scorecards to metrics labeled as a particular status. Selecting the summary cards at the top of the scorecard makes it easy to see what is on track or at risk. 
@@ -84,23 +84,6 @@ The scorecard filtered to _Premium_.
 
 1. Select **Save**. 
 
-### Follow metrics
-
-Use the _Follow_ functionality to quickly access metrics you’re interested in and stay up to date on the activity on these metrics. You can follow metrics as you’re browsing through different scorecards and later access all your followed metrics in one place. This makes it easy to get a quick overview of the metrics you care about, without having to navigate to different scorecards often.
-
-To follow, hover over the metric in the scorecard to select the **Follow metric** icon.
-
-:::image type="content" source="media/service-goals-check-in/follow-metric.png" alt-text="Screenshot of following a metric.":::
-    
-To see all your followed metrics, go to the Metrics hub and select **Following**.
-    
-:::image type="content" source="media/service-goals-check-in/following-metrics.png" alt-text="Screenshot of followed metrics in Metrics hub.":::
-    
-Once you follow a metric, you'll get Teams notifications whenever the metric definition is updated, a check-in is added, or an automated status rule changes the status of the metric. Read more about [notifications in Teams](../collaborate-share/service-teams-notifications.md).
-
-To unfollow and stop getting Teams notifications, select the **Unfollow metric** icon while hovering over the metric.
-
-:::image type="content" source="media/service-goals-check-in/unfollow-metric.png" alt-text="Screenshot of unfollowing a metric.":::
 
 ## Next steps
 

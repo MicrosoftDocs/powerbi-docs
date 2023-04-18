@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/18/2022
+ms.date: 03/27/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
+
+Power BI Mobile app versions are released on a monthly cadence. The latest version contains not only new features, but also bug fixes.
 
 For related "What's New" information, see:
 
@@ -19,6 +21,44 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## March 2023
+
+### New look and feel for tooltips on visuals (iOS and Android)
+
+Tooltips on visuals have a new look and feel! Now, when you tap and hold on a data point, you'll enjoy a sleek, user-friendly tooltip. The re-designed tooltip features a pointer to help you identify the selected data point, and clear, easy-to-use actions such as drill-down and drill-through. The new tooltip supports custom styling configured by the report creator, and report creators can even disable tooltips for a visual if they think it's better without one.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-tooltips.png" alt-text="Screenshot showing new tooltip on a data point in the Power BI mobile app." border="false":::
+
+### Discover content from external orgs (iOS and Android)
+
+It's just gotten easier to access your external content from your Power BI mobile app! If you have access to items from external organizations, you can now have these items always available for quick access right from the app's home page. Just tap the newly added drop-down arrow on the third content strip and change **Recommended** to **From external orgs**. You can also get to your external content by tapping **More (...)** and choosing **From external orgs**. [Check it out](./mobile-apps-b2b.md)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-external-content-strip.png" alt-text="Screenshot of the From external orgs option on the Power BI mobile app home page." border="false":::
+
+### Set your language for the app (Android)
+
+Just as you could for iOS devices, you can now set individual language preferences for the Power BI app on your Android device! On your Android device, go to **Settings > Apps > Power BI**, and set your preferred language. Available for Android 13 and above.
+
+### Automatic page refresh support (iOS and Android)
+
+The Power BI mobile apps for iOS and Android have joined the app for Windows in supporting automatic page refresh. Now, report pages configured with [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will automatically refresh in your Power BI app no matter which of those devices you're on!
+
+## February 2023
+
+### Grant access on the go (iOS and Android)
+
+You now get a push notification on your mobile app whenever someone requests access to one of your reports. Just tap the notification to respond immediately.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-access-request-push-notification.png" alt-text="Screenshot of access request push notification on mobile app screen." border="false":::
+
+### Easier app browsing
+
+Some apps now come with [audience views](https://powerbi.microsoft.com/blog/announcing-public-preview-of-multiple-audiences-for-power-bi-apps/) to help you find insights faster. 
+
+Open the app and tap the header to display the navigation tree. If the app has audience views, by default you'll see all the content you have permission to see. Tap **Change** to select a particular audience view.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-audience.png" alt-text="Illustration of switching app audience on the Power BI mobile app." border="false":::
 
 ## December 2022
 
@@ -241,11 +281,11 @@ Paginated Report visuals (preview) enable you to render any paginated report upl
 Just like any other Power BI visual, Paginated Report visuals are fully interactive, and are also supported in the Power BI Mobile apps.
 
 ### Support for passing URL parameters to paginated reports (Android)
-Support for passing parameters to paginated reports via the URL now comes to Android! Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/report-builder-url-pass-parameters.md)
+Support for passing parameters to paginated reports via the URL now comes to Android! Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/parameters/pass-report-parameter-url.md)
 
 ## May 2021
 ### Support for passing URL parameters to paginated reports (iOS)
-We now support passing parameters to paginated reports via the URL. Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/report-builder-url-pass-parameters.md)
+We now support passing parameters to paginated reports via the URL. Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/parameters/pass-report-parameter-url.md)
 
 ## April 2021
 ### Support for Power BI in Split View (iPads)

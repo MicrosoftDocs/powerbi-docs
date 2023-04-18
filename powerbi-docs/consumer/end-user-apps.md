@@ -6,6 +6,7 @@ ms.author: mihart
 ms.reviewer: miguem
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: Get started with apps
 ms.topic: how-to
 ms.date: 12/02/2022
 ms.custom: licensing support, css_fy20Q4, intro-overview
@@ -70,4 +71,4 @@ There are a few other ways to get apps. Some of these ways are listed below.
 ## Next steps
 
 * [Install and use apps with dashboards and reports in Power BI](end-user-app-view.md)
-* [Other ways to share content](end-user-shared-with-me.md)
+* [Other ways to share content](../collaborate-share/end-user-shared-with-me.md)

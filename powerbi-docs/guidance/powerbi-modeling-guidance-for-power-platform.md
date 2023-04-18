@@ -1,8 +1,8 @@
 ---
 title: "Power BI modeling guidance for Power Platform"
 description: "Guidance on how to create Power BI data models for Dataverse, PowerApps, and Dynamics 365."
-author: peter-myers
-ms.author: v-petermyers
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -62,11 +62,11 @@ When developing an import model, you should strive to minimize the data that's l
 A DirectQuery connection to Dataverse is a good choice when the report's query result isn't large. A large query result has more than 20,000 rows in the report's source tables, or the result returned to the report after filters are applied is more than 20,000 rows. In this case, you can [create a Power BI report by using the Dataverse connector](/powerapps/maker/data-platform/data-platform-powerbi-connector).
 
 > [!NOTE]
-> The 20,000 row size isn't a hard limit. However, each data source query must return a result that's less than 80 MB and within two minutes. Later in this article you will learn how to work within those limitations and about other Dataverse DirectQuery design considerations.
+> The 20,000 row size isn't a hard limit. However, each data source query must return a result within 10 minutes. Later in this article you will learn how to work within those limitations and about other Dataverse DirectQuery design considerations.
 
-You can improve the performance of datasets that have fewer than approximately 100,000 records returned per query by using the [Dataverse connector](/power-query/connectors/dataverse) to import the data into the data model.
+You can improve the performance of larger datasets by using the [Dataverse connector](/power-query/connectors/dataverse) to import the data into the data model.
 
-Larger datasets—with several hundred thousand or even millions of rows—can benefit from using Azure Synapse Link for Dataverse. This approach sets up an ongoing managed pipeline that copies Dataverse data into ADLS Gen2 as CSV or Parquet files. Power BI can then query an [Azure Synapse serverless SQL pool](/azure/synapse-analytics/sql/on-demand-workspace-overview) to load an import model.
+Even larger datasets—with several hundreds of thousand or even millions of rows—can benefit from using Azure Synapse Link for Dataverse. This approach sets up an ongoing managed pipeline that copies Dataverse data into ADLS Gen2 as CSV or Parquet files. Power BI can then query an [Azure Synapse serverless SQL pool](/azure/synapse-analytics/sql/on-demand-workspace-overview) to load an import model.
 
 ### Data latency
 
@@ -75,9 +75,9 @@ When the Dataverse data changes rapidly and report users need to see up-to-date 
 > [!TIP]
 > You can create a Power BI report that uses [automatic page refresh](/power-bi/create-reports/desktop-automatic-page-refresh) to show real-time updates, but only when the report connects to a DirectQuery model.
 
-Import data models must complete a data refresh to allow reporting on recent data changes. Keep in mind that there are limitations on the number of daily scheduled data refresh operations. You can schedule up to eight refreshes per day on a shared capacity. On a [Premium](/power-bi/enterprise/service-premium-gen2-what-is) capacity, you can schedule up to 48 refreshes per day, which can achieve a 15-minute refresh frequency.
+Import data models must complete a data refresh to allow reporting on recent data changes. Keep in mind that there are limitations on the number of daily scheduled data refresh operations. You can schedule up to eight refreshes per day on a shared capacity. On a [Premium](/power-bi/enterprise/service-premium-what-is) capacity, you can schedule up to 48 refreshes per day, which can achieve a 15-minute refresh frequency.
 
-You can also consider using [incremental refresh](/power-bi/connect-data/incremental-refresh-overview) to achieve faster refreshes and [near real-time](/power-bi/connect-data/incremental-refresh-overview?branch=pr-en-us-8271#configuring-incremental-refresh-and-real-time-data) performance (only available with [Premium](/power-bi/enterprise/service-premium-gen2-what-is)).
+You can also consider using [incremental refresh](/power-bi/connect-data/incremental-refresh-overview) to achieve faster refreshes and [near real-time](/power-bi/connect-data/incremental-refresh-overview?branch=pr-en-us-8271#configuring-incremental-refresh-and-real-time-data) performance (only available with [Premium](/power-bi/enterprise/service-premium-what-is)).
 
 ### Role-based security
 
@@ -144,7 +144,7 @@ For more information on how you can achieve query folding, see [Power Query quer
 
 By default, when you use Power Query to load a Dataverse table, it retrieves all rows and all columns. When you query a system user table, for example, it could contain more than 1,000 columns. The columns in the metadata include relationships to other entities and lookups to option labels, so the total number of columns grows with the complexity of the Dataverse table.
 
-Attempting to retrieve data from all columns is an anti-pattern. It often results in extended data refresh operations, and it will cause the query to fail when the data volume exceeds 80 MB.
+Attempting to retrieve data from all columns is an anti-pattern. It often results in extended data refresh operations, and it will cause the query to fail when the time needed to return the data exceeds 10 minutes.
 
 We recommend that you only retrieve columns that are required by reports. It's often a good idea to reevaluate and refactor queries when report development is complete, allowing you to identify and remove unused columns. For more information, see [Data reduction techniques for import modeling (Remove unnecessary columns)](import-modeling-data-reduction.md#remove-unnecessary-columns).
 
@@ -203,7 +203,7 @@ You can expect to achieve the greatest performance improvements when retrieving 
 > [!TIP]
 > Performance improvement can also depend on how Power BI queries the source database. For example, a measure that uses the `COUNTDISTINCT` DAX function showed almost no improvement with or without the folding hint. When the measure formula was rewritten to use the `SUMX` DAX function, the query folded resulting in a 97 percent improvement over the same query without the hint.
 
-For more information, see [Value.NativeQuery](/powerquery-m/value-nativequery). (The `EnableFolding` option isn't documented because it's specific to the Dataverse data source.)
+For more information, see [Value.NativeQuery](/powerquery-m/value-nativequery). (The `EnableFolding` option isn't documented because it's specific to only certain data sources.)
 
 ### Speed up the evaluation stage
 

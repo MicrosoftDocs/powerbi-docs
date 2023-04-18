@@ -38,7 +38,7 @@ You can also start using datamarts from any dataflow you currently have as well.
 
 ## Create a datamart
 
-To create a datamart, navigate to your existing Power BI Premium Gen 2, Premium per capacity (PPC), or Premium Per User (PPU) workspace. Datamarts require a Premium Gen2 subscription. In your Premium Gen 2 workspace, select **+ New** and then select **Datamart (Preview) to create a datamart.
+To create a datamart, navigate to your existing Power BI Premium or Premium Per User (PPU) workspace. Datamarts require a Power BI Premium subscription. In your Premium workspace, select **+ New** and then select **Datamart (Preview) to create a datamart.
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-01.png" alt-text="Screenshot of create new datamart.":::
 
@@ -73,6 +73,32 @@ To model your data, navigate to **Model view** by selecting on the **Model View*
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-14.png" alt-text="Screenshot of the model view icon.":::
 
+### Adding or removing objects to the default dataset
+
+In Power BI, a dataset is always required before any reports can be built, so the default dataset enables quick reporting capabilities on top of the datamart.  Within the datamart, a user can add datamart objects -  tables to their default dataset. They can also add additional semantic modeling properties, such as hierarchies and descriptions.  These are then used to create the Power BI dataset’s tables. Users can also remove objects from the default dataset. 
+
+To add objects – tables or views to the default dataset, a user has 2 options:
+
+- Automatically add objects to the dataset, which happens by default with no user intervention needed
+- Manually add objects to the dataset
+
+
+The auto detect experience determines any tables or views and opportunistically adds them.
+
+The manually detect option in the ribbon allows fine grained control of which object(s) – tables and/or views, should be added to the default dataset:
+*	Select all
+*	Filter for tables or views
+*	Select specific objects 
+
+To remove objects, a user can use the manually select button in the ribbon and:
+*	Un-select all
+*	Filter for tables or views 
+*	Un-select specific objects 
+
+### Using model view layouts
+
+During the session, users may create multiple tabs in the model view to further assist with database design. Currently the model view layouts are only persisted in session. Users can use the auto-layout whenever a new tab is created to visually inspect the database design and understand the modeling.
+
 ### Create a measure
 
 To create a [measure](../desktop-measures.md) (a measure is a collection of standardized metrics) select the table in the **Table Explorer** and select the **New Measure** button in the ribbon, as shown in the following image.
@@ -104,7 +130,7 @@ You can also hide the entire table and individual columns by using the **Model v
 
 ### Access auto-generated datasets
 
-To access auto-generated datasets, go to the Premium Gen 2 workspace and find the dataset that matches the name of the datamart. 
+To access auto-generated datasets, go to the Premium workspace and find the dataset that matches the name of the datamart. 
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-19.png" alt-text="Screenshot of finding a dataset.":::
 
@@ -137,11 +163,11 @@ Datamarts are supported in deployment pipelines. Using deployment pipelines, you
 
 ## Access or load an existing datamart
 
-To access an existing datamart, navigate to your Power BI Premium Gen 2 workspace and find your datamart from the overall list of data items in your workspace, as shown in the following image. 
+To access an existing datamart, navigate to your Power BI Premium workspace and find your datamart from the overall list of data items in your workspace, as shown in the following image. 
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-02.png" alt-text="Screenshot of finding an existing datamart from all items.":::
 
-You can also select the **Datamarts (Preview)** tab in your Premium Gen 2 workspace, and see a list of available datamarts.
+You can also select the **Datamarts (Preview)** tab in your Premium workspace, and see a list of available datamarts.
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-03.png" alt-text="Screenshot of select datamart from list of datamarts.":::
 

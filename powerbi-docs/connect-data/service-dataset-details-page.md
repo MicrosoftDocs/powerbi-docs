@@ -5,22 +5,24 @@ author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
+ms.search.form: Dataset details
 ms.topic: conceptual
-ms.date: 09/20/2022
+ms.date: 02/07/2023
 LocalizationGroup: Share your work
 ---
 # Dataset details
 
-The dataset details page helps you explore, monitor, and leverage datasets. When you click on a dataset in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that dataset opens.
+The dataset details page helps you explore, monitor, and leverage datasets. When you select a dataset in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that dataset opens.
 
 [ ![Screenshot of dataset details page.](media/service-dataset-details-page/dataset-details-page-inline-and-expanded.png)](media/service-dataset-details-page/dataset-details-page-inline-and-expanded.png#lightbox)
 
-The dataset details page
+The dataset details page:
+
 * Shows you metadata about the dataset, including description, endorsement, and sensitivity.
 * Provides actions that you can perform on the dataset, such as share, refresh, create new, Analyze in Excel, and more.
 * Lists the reports and scorecards that are built on top of the dataset.
 
-The page header displays the dataset name, endorsement (if any), and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
+The page header displays the dataset name, endorsement (if any), and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), select the header and then select the name of the owner.
 
 ## Supported actions
 
@@ -47,7 +49,8 @@ The dataset details page enables you to perform a number of actions. The actions
 
 :::image type="content" source="media/service-dataset-details-page/dataset-details-page-dataset-details.png" alt-text="Screenshot of dataset details section on data details page.":::
 
-The dataset details section shows
+The dataset details section shows:
+
 * The name of the workspace where the item is located.
 * The exact time of the last refresh.
 * Endorsement status and certifier (if certified).
@@ -56,7 +59,7 @@ The dataset details section shows
 
 ## Explore related reports
 
-The explore related reports section shows you all the reports and scorecards that are built on the dataset. You can create a copy of an item by selecting the line the item is on and clicking the **Save a copy** icon that appears. This section also shows you usage metrics for the related items.
+The explore related reports section shows you all the reports and scorecards that are built on the dataset. You can create a copy of an item by selecting the line the item is on and selecting the **Save a copy** icon that appears. This section also shows you usage metrics for the related items.
 
 :::image type="content" source="media/service-dataset-details-page/dataset-details-page-explore-related-reports.png" alt-text="Screenshot of explore related reports section on dataset details page.":::
 
@@ -70,9 +73,9 @@ The columns in the list of related reports are:
 
 ## Visualize this data
 
-To create a report based on the dataset, click the **Create report** button on this tile and choose the desired option.
+To create a report based on the dataset, select the **Create report** button on this tile and choose the desired option.
 
-:::image type="content" source="media/service-dataset-details-page/dataset-details-page-visualize-data.png" alt-text="Screenshot of visualize this data section on data details page.":::
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-visualize-data-1.png" alt-text="Screenshot of visualize this data section on data details page.":::
 
 * **Auto-create**: Creates an auto-generated report from the dataset.
 * **From template**: Creates a copy of the template in *My workspace*.
@@ -84,24 +87,25 @@ To create a report based on the dataset, click the **Create report** button on t
 
 ## Share this data
 
-You can share the dataset with other users in your organization. Clicking the **Share dataset** button opens the [Share dataset dialog](service-datasets-share.md), where you can choose which permissions to grant on the dataset.
+You can share the dataset with other users in your organization. Selecting the **Share dataset** button opens the [Share dataset dialog](service-datasets-share.md), where you can choose which permissions to grant on the dataset.
 
 :::image type="content" source="media/service-dataset-details-page/dataset-details-page-share-dataset.png" alt-text="Screenshot of datamart share this data section on data details page.":::
 
 ## Data preview
 
-Data preview enables you to view selected tables and columns from the dataset, and provides entry points for exporting the data to supported file formats, customizing it as a [formatted table](../paginated-reports/paginated-formatted-table.md), and saving it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md).
+Data preview enables you to view a selected table or columns from the dataset. You can also export the data to supported file formats or create a [paginated report](../paginated-reports/web-authoring/paginated-formatted-table.md).
 
 ### Prerequisites
 
-* The dataset can be inside Non-Premium or Premium workspaces. Classic workspaces are not supported. [Read about new and classic workspaces](../collaborate-share/service-new-workspaces.md).
+* The dataset can be inside Premium or non-Premium workspaces. Classic workspaces aren't supported. [Read about new and classic workspaces](../collaborate-share/service-new-workspaces.md).
 * You need [Build permission](./service-datasets-build-permissions.md) for the dataset.
 
 ### Select data to preview
 
-To preview a datasets's data from the dataset details page, select its tables and columns on the **Tables** side panel.
+To preview a datasets's data from the dataset details page, select a table or columns on the **Tables** side panel.
 
-![Screenshot of the Tables side panel on the dataset details page.](./media/service-dataset-details-page/dataset-details-page-tables-side-panel.png)
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-tables-side-panel-1.png" alt-text="Screenshot of the Tables side panel on the dataset details page.":::
+
 
 If you don't see the side panel, select **Show tables** on the action bar.
 
@@ -109,54 +113,57 @@ If you don't see the side panel, select **Show tables** on the action bar.
 
 An entirely filled parent checkbox on the dataset's table indicates that all its sub-tables and columns have been selected. A partially filled parent checkbox means that only a subset of them has been selected.
 
-![Screenshot showing all columns selected.](./media/service-dataset-details-page/dataset-details-page-selection.png)
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-selection-3.png" alt-text="Screenshot showing all columns selected."::: 
 
-When you select tables or columns, they will be displayed on the **Table preview** page that opens.
+When you select a table or columns in a table, they will be displayed on the **Table preview** page that opens.
 
-   ![Screenshot showing table preview page.](./media/service-dataset-details-page/dataset-details-page-table-preview-page.png)
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-table-preview-page-1.png" alt-text="Screenshot showing table preview page.":::
 
-Table preview may not show all of the data you've selected. To see more, you can [export](#exporting-data) or [customize](#customizing-the-data) the newly created table (see below).
+Table preview may not show all of the data you've selected. To see more, you can [export](#export-data) or build a [paginated report](#build-a-paginated-report).
 
 You can resize column widths using a drag handle next to the column headers. Resizing columns can make the table preview more readable, especially for long column input values.
 
-Table preview without column resizing
-
-![Screenshot showing table preview with unresized columns.](./media/service-dataset-details-page/dataset-details-page-table-preview-page-unresized-columns.png)
-
-Table preview with columns resized
-
-![Screenshot showing table preview with columns resized.](./media/service-dataset-details-page/dataset-details-page-table-preview-page-resized-columns.png)
-
-**Show query**
+#### Show query
 
 Show query enables you to copy the DAX query used to create the table preview to the clipboard. This makes it possible to reuse the query for future actions.
 
-![Screenshot showing table preview with the query displayed.](./media/service-dataset-details-page/dataset-details-page-table-preview-page-show-query.png)
+:::image type="content" source="./media/service-dataset-details-page/dataset-details-page-show-query-1.png" alt-text="Screenshot showing table preview with the query displayed.":::
 
-**Back**
+#### Back
 
 At any time you can return to the dataset details page by selecting the **Back** button on the action bar. Selecting the Back button clears all your selections and brings you back to dataset details page.
 
 >[!NOTE]
-> Table preview is intended to quickly show the detail level data of tables within your dataset. Selected measures are not summarized by default. You can use the formatted table editor that opens when you choose **Customize** (see below) to switch between summarized and non-summarized views.
+> Table preview is intended to quickly explore the underlying data of tables within your dataset. You cannot view measures or select more than one table or columns across tables. You can select [**Create paginated report**](#build-a-paginated-report) for that.
 >
-> Table preview shows only distinct rows of the selected columns. For example, if you have two cities from the same state and you select only the state column, only one detail row will be shown. If you then select the cities column, all of the rows will be displayed.
+ 
+### Export data
 
-### Exporting data
+Select the **Export** button on the Table preview page to export the data to one of the supported file formats.
 
-Selecting the **Export** button on the Table preview page allows you to export the data to one of the supported file formats.
+:::image type="content" source="./media/service-dataset-details-page/dataset-details-page-export-1.png" alt-text="Screenshot showing table preview export option.":::
 
-![Screenshot showing table preview export option.](./media/service-dataset-details-page/dataset-details-page-export.png)
+### Build a paginated report
 
-### Customizing the data
+Select the **Create paginated report** button to open the [editor](../paginated-reports/web-authoring/paginated-formatted-table.md). 
 
-Selecting the **Customize** button opens the table in the [formatted table editor](../paginated-reports/paginated-formatted-table.md), maintaining your current selections.
+>[!NOTE]
+> Data will change from underlying data to summarized data. You can switch to underlying data using **More options**.
 
-In the formatted table editor you can apply table styles, change aggregates, etc. You can then either export the formatted table to any of the supported file formats (the file will be saved to your default downloads folder), you can or save it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md) to a workspace you select. Paginated reports fully preserve your report formatting.
+In the editor you can select multiple tables, measure, fields across tables, apply table styles, change aggregates, and so on.
 
-![Screenshot showing formatted table editor.](./media/service-dataset-details-page/dataset-details-page-formatted-table-editor.png)
+:::image type="content" source="./media/service-dataset-details-page/dataset-details-page-table-formatted-table-editor-2.png" alt-text="Screenshot showing formatted table editor.":::
+
+You can then export the report to any of the supported file formats, and the file will be saved to your default downloads folder. Or you can save it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md) to a workspace of your choice. Paginated reports fully preserve your report formatting.
+
+### Switch from summarized to underlying data in the editor
+
+Select **More options (...)** to switch from **Summarized data** to **Underlying data**. 
+
+:::image type="content" source="./media/service-dataset-details-page/dataset-details-page-data-switch.png" alt-text="Screenshot showing more options."
 
 ## Next steps
+
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
 * [Create reports based on datasets from different workspaces](service-datasets-discover-across-workspaces.md)
 * [Endorse your dataset](../collaborate-share/service-endorse-content.md)

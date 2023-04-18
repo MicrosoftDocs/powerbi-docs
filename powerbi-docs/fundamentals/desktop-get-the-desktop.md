@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 12/20/2022
+ms.date: 03/23/2023
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -96,7 +96,7 @@ The following list provides the minimum requirements to run Power BI Desktop:
 
 * Windows 8.1 or Windows Server 2012 R2 or later.
 * .NET 4.6.2 or later.
-* Internet Explorer 11 or later.
+* Microsoft Edge browser (Internet Explorer is no longer supported)
 * Memory (RAM): At least 2 GB available, 4 GB or more recommended.
 * Display: At least 1440x900 or 1600x900 (16:9) required. Lower resolutions such as 1024x768 or 1280x800 aren't supported because some controls (such as closing the startup screens) display beyond those resolutions.
 * Windows display settings: If you set your display to change the size of text, apps, and other items to more than 100%, you won't see some dialogs that you must interact with to continue using Power BI Desktop. If you encounter this issue, check your display settings in Windows by going to **Settings** > **System** > **Display**, and use the slider to return display settings to 100%.
@@ -163,8 +163,9 @@ If you're deploying Power BI Desktop to your users with a tool that requires a W
 
 Upgrading an install from an *.exe* to a *.msi* that you've extracted from an *.exe* isn't supported. In order to make this upgrade, first you'll need to uninstall the older version of Power BI Desktop that you have.
 
-> [!IMPORTANT]
-> Power BI Desktop isn't supported in virtual environments such as Citrix.
+### Power BI Desktop in a virtualized environment
+
+Power BI Desktop is fully supported on [Azure Virtual Desktop](/azure/virtual-desktop/overview) (formerly Windows Virtual Desktop) and [Windows 365](/windows-365/overview). 
 
 ### Issues with previous releases of Power BI Desktop
 

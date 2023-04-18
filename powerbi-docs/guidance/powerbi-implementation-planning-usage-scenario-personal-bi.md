@@ -1,13 +1,13 @@
 ---
 title: "Power BI usage scenarios: Personal BI"
 description: "Learn how Power BI personal BI is about private analytics for an individual."
-author: peter-myers
-ms.author: v-petermyers
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/07/2022
+ms.date: 02/19/2023
 ---
 
 # Power BI usage scenarios: Personal BI
@@ -55,7 +55,7 @@ The following are some key points to emphasize about the personal BI scenario.
 Use of the [personal workspace](../fundamentals/service-basic-concepts.md#workspaces) can be thought of like an *analytical sandbox*. For many organizations, personal content is subject to little governance or formal oversight. However, it's still wise to educate content creators on [guidelines to be successful with personal BI](powerbi-adoption-roadmap-content-delivery-scope.md#personal-bi). Use of the sharing feature available within a personal workspace isn't depicted in this usage scenario since the focus is individual analytics.
 
 > [!IMPORTANT]
-> Limit the use of personal workspaces and ensure no mission-critical content is stored in them. Since only one person can manage and edit the content stored in a personal workspace, it represents risk to the organization. For example, when a person changes role or leaves the organization, it can be disruptive and challenging to move that content so that their successor can continue to work with it.
+> Limit the use of personal workspaces and ensure no mission-critical content is stored in them. Although a Power BI administrator can access and govern a user's [personal workspace](/power-bi/admin/service-admin-portal-workspaces#govern-my-workspaces), storing critical content in personal workspaces does represent risk to the organization.
 
 ### Use of Power BI free license
 

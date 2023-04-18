@@ -2,19 +2,20 @@
 metadata:
   title: Troubleshoot deployment pipelines, the Power BI Application lifecycle management (ALM) tool
   description: Find answers to your deployment pipelines, the Power BI Application lifecycle management (ALM) tool, troubleshooting questions
-  author: KesemSharabi
-  ms.author: kesharab
+  author: mberdugo
+  ms.author: monaberdugo
   ms.topic: troubleshooting
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 12/28/2022
+  ms.date: 04/02/2023
+  ms.search.form: Deployment pipelines troubleshooting, View deployment pipeline
   
 title: Deployment pipelines troubleshooting
 summary: |
   [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)] 
 
   Use this article to troubleshoot issues in deployment pipelines. Review the following links to understand the considerations and limitations.
-  * [General considerations and limitations](deployment-pipelines-process.md#considerations-and-limitations-1)
+  * [General considerations and limitations](deployment-pipelines-process.md#considerations-and-limitations)
   * [Assigning workspaces](deployment-pipelines-assign.md#limitations)
   * [Permissions](deployment-pipelines-process.md#permissions)      
   * Power BI items:
@@ -26,8 +27,8 @@ summary: |
     * [Dataflow limitations](deployment-pipelines-process.md#dataflow-limitations)
     * [Datamart limitations](deployment-pipelines-process.md#datamart-limitations)
   * Deployment rules:
-    * [Deployment rule limitations](deployment-pipelines-get-started.md#deployment-rule-limitations)
-    * [Supported data sources for dataflow and dataset rules](deployment-pipelines-get-started.md#supported-data-sources-for-dataflow-and-dataset-rules)
+    * [Deployment rule limitations](deployment-pipelines-create-rules.md#considerations-and-limitations)
+    * [Supported data sources for dataflow and dataset rules](deployment-pipelines-create-rules.md#supported-data-sources-for-dataflow-and-dataset-rules)
   * [Incremental refresh](deployment-pipelines-process.md#considerations-and-limitations)
   * [Automation](deployment-pipelines-automation.md#considerations-and-limitations)
 
@@ -60,7 +61,7 @@ sections:
       - question: |
           Why can't I see the pipeline stage tag in my workspace?
         answer: |
-          Deployment pipelines display a pipeline stage tag in workspaces that are assigned to a pipeline. Tags for the *Development* and *Test* stages are always visible. However, you'll only see the *Production* tag if you have [access to the pipeline](deployment-pipelines-process.md#permissions) or if you're a workspace admin.
+          Deployment pipelines display a pipeline stage tag in workspaces that are assigned to a pipeline. To see these tags, you need to be a [pipeline admin](deployment-pipelines-process.md#permissions). Tags for the *Development* and *Test* stages are always visible. However, you'll only see the *Production* tag if you have [access to the pipeline](deployment-pipelines-process.md#permissions).
           
           > [!div class="mx-imgBorder"]
           > ![A screenshot of the production tag in a production pipeline workspace.](media/deployment-pipelines-troubleshooting/production-tag.png)
@@ -72,11 +73,11 @@ sections:
         answer: |
           To use deployment pipelines, you need to have one of the following licenses:
           
-          * A [Pro user](../enterprise/service-admin-purchasing-power-bi-pro.md) license, with a workspace that resides on a [Premium capacity](../enterprise/service-premium-gen2-what-is.md).
+          * A [Pro user](../enterprise/service-admin-purchasing-power-bi-pro.md) license, with a workspace that resides on a [Premium capacity](../enterprise/service-premium-what-is.md).
           
           * [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml).
           
-          For more information, see [accessing deployment pipelines](deployment-pipelines-get-started.md#accessing-deployment-pipelines).
+          For more information, see [prerequisites for accessing deployment pipelines](deployment-pipelines-get-started.md#prerequisites).
           
       - question: |
           What type of capacity can I assign to a workspace in a pipeline?
@@ -118,7 +119,7 @@ sections:
           
           * The workspace isn't assigned to any other pipeline
           
-          * The workspace resides on a [premium capacity](../enterprise/service-premium-gen2-what-is.md)
+          * The workspace resides on a [Premium capacity](../enterprise/service-premium-what-is.md)
           
           Workspaces that don't meet these conditions, aren't displayed in the list of workspaces you can select from.
           
@@ -137,7 +138,7 @@ sections:
           |You don't have [premium capacity permissions](deployment-pipelines-process.md#creating-a-premium-workspace).     |If you work in an organization that has a Premium capacity, ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. After the workspace is in a capacity, redeploy.</br></br>If you don't work in an organization with Premium capacity, consider purchasing [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml).        |
           |You don't have workspace permissions.     |To deploy, you need to be a workspace member. Ask your workspace admin to grant you the appropriate permissions.         |
           |Your Power BI admin disabled the creation of workspaces.     |Contact your Power BI admin for support.         |
-          |You're using [selective deployment](deployment-pipelines-get-started.md#selective-deployment) and aren't selecting all the linked items.     |Do one of the following: </br></br>Unselect the content that is linked to your dataset or dataflow. Your unselected content (such as datasets, reports or dashboards) won't be copied to the next stage. </br></br>Select the dataset or the dataflow that's linked to the selected items. Your selected items will be copied to the next stage.         |
+          |You're using [selective deployment](deployment-pipelines-deploy.md#selective-deployment) and aren't selecting all the linked items.     |Do one of the following: </br></br>Unselect the content that is linked to your dataset or dataflow. Your unselected content (such as datasets, reports or dashboards) won't be copied to the next stage. </br></br>Select the dataset or the dataflow that's linked to the selected items. Your selected items will be copied to the next stage.         |
           
       - question: |
           I'm getting a warning that I have 'unsupported artifacts' in my workspace when I'm trying to deploy. How can I know which items aren't supported?
@@ -153,7 +154,7 @@ sections:
         answer: |
           You can’t change the data source connection in Power BI service.
           
-          If you want to change the data source in the test or production stages, you can use [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) or [APIs](/rest/api/power-bi/datasets/updateparametersingroup). Deployment rules will only come into effect after the next deployment.
+          If you want to change the data source in the test or production stages, you can use [deployment rules](deployment-pipelines-create-rules.md) or [APIs](/rest/api/power-bi/datasets/updateparametersingroup). Deployment rules will only come into effect after the next deployment.
           
       - question: |
           I fixed a bug in production, but now I can't select the 'deploy to previous stage' button. Why is it greyed out?
@@ -163,7 +164,7 @@ sections:
           After creating the pipeline, use the development stage to develop your content, and the test stages to review and test it. You can fix bugs in these stages, and then deploy the fixed environment to the production stage.
           
           >[!NOTE]
-          >Backwards deployment only supports [full deployment](deployment-pipelines-get-started.md#deploying-all-content). It doesn't support [selective deployment](deployment-pipelines-get-started.md#selective-deployment)
+          >Backwards deployment only supports [full deployment](deployment-pipelines-deploy.md#deploy-all-content). It doesn't support [selective deployment](deployment-pipelines-deploy.md#selective-deployment)
           
       - question: |
           Why am I getting the message 'continue the deployment'?
@@ -249,22 +250,11 @@ sections:
 
   - name: Paginated reports
     questions:
-      - question: |
-          Why can't I see a paginated report?
-        answer: |
-          To view a paginated report in the pipeline you need to have a [paginated reports workload](./../developer/embedded/embed-paginated-reports.md#step-4---enable-paginated-reports-workload) enabled on your capacity.
-
-          >[!NOTE]
-          >You only need to enable this workload with Power BI Premium Gen1 capacities.
 
       - question: |
           Why can't I deploy a paginated report?
         answer: |
-          To deploy a paginated report, both of these conditions must be met:
-          
-          * You need to be a workspace member in the workspace you're deploying from (the source stage workspace). If you're not a workspace member in the source stage, you'll not be able to deploy the paginated report.
-          
-          * In your target stage capacity, you need to [enable paginated reports workload](./../developer/embedded/embed-paginated-reports.md#step-4---enable-paginated-reports-workload).
+          To deploy a paginated report, you need to be a workspace member in the workspace you're deploying from (the source stage workspace). If you're not a workspace member in the source stage, you'll not be able to deploy the paginated report.
           
       - question: |
           Who's the owner of a deployed paginated report?
@@ -278,14 +268,14 @@ sections:
         answer: |
           At present, datasets are treated as an external Analysis Services data source, and connections to datasets aren't switched automatically after deployment.
           
-          When you deploy a paginated report that's connected to a Power BI dataset, it continues to point to the dataset it was originally connected to. Use [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) to point your paginated report to any dataset you want, including for example the target stage dataset.
+          When you deploy a paginated report that's connected to a Power BI dataset, it continues to point to the dataset it was originally connected to. Use [deployment rules](deployment-pipelines-create-rules.md) to point your paginated report to any dataset you want, including for example the target stage dataset.
           
           If you're using a paginated report with a Power BI dataset, see [How do I create a deployment rule for a paginated report with a Power BI dataset?](#how-do-i-create-a-deployment-rule-for-a-paginated-report-with-a-power-bi-dataset-)
           
       - question: |
           Where are my paginated report subreports?
         answer: |
-          Paginated report subreports are kept in the same folder that holds your paginated report. To avoid rendering problems, when you're using [selective copy](deployment-pipelines-get-started.md#selective-deployment) to copy a paginated report with subreports, select both the parent report and the subreports.
+          Paginated report subreports are kept in the same folder that holds your paginated report. To avoid rendering problems, when you're using [selective copy](deployment-pipelines-deploy.md#selective-deployment) to copy a paginated report with subreports, select both the parent report and the subreports.
           
       - question: |
           How do I create a deployment rule for a paginated report with a Power BI dataset?
@@ -351,13 +341,13 @@ sections:
       - question: |
           Who can deploy content between stages?
         answer: |
-          Content can be deployed to an empty stage or to a stage that contains content. The content must reside on a [premium capacity](../enterprise/service-premium-gen2-what-is.md).
+          Content can be deployed to an empty stage or to a stage that contains content. The content must reside on a [Premium capacity](../enterprise/service-premium-what-is.md).
           
           * **Deploying to an empty stage** - Any [Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or [PPU](../enterprise/service-premium-per-user-faq.yml) user, that's a member or admin in the source workspace.
           
           * **Deploying to a stage with content** - Any [Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or [PPU](../enterprise/service-premium-per-user-faq.yml) user, who's a member or admin of both workspaces in the source and target deployment stages.
           
-          * **Overwriting a dataset** - Deployment overwrites each dataset that is included in the target stage, even if the dataset wasn't changed. The user must be the owner of all the target stage datasets specified in the deployment.
+          * **Overwriting a dataset** - Deployment overwrites each dataset that is included in the target stage, even if the dataset wasn't changed. Any user who's a member or admin of both workspaces, but the tenant admin can restrict this to target dataset owners only.
           
       - question: |
           Which permissions do I need to configure deployment rules?
@@ -382,7 +372,7 @@ sections:
       - question: |
           Why did my deployment fail due to broken rules?
         answer: |
-          If you have problems configuring deployment rules, visit [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules), and make sure you follow the [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
+          If you have problems configuring deployment rules, visit [deployment rules](deployment-pipelines-create-rules.md), and make sure you follow the [deployment rules limitations](deployment-pipelines-create-rules.md#considerations-and-limitations).
           
           If your deployment was previously successful, and is suddenly failing with broken rules, it may be due to a dataset being republished. The following changes to the source dataset, result in a failed deployment:
           
@@ -410,7 +400,7 @@ sections:
       - question: |
           Why are the deployment rules greyed out?
         answer: |
-          To create a [deployment rule](deployment-pipelines-get-started.md#step-4---create-deployment-rules), you must be the owner of the Power BI item you're creating a deployment rule for. If you're not the owner of the Power BI item, deployment rules will be greyed out.
+          To create a [deployment rule](deployment-pipelines-create-rules.md), you must be the owner of the Power BI item you're creating a deployment rule for. If you're not the owner of the Power BI item, deployment rules will be greyed out.
           
           >[!div class="mx-imgBorder"]
           >![A screenshot showing deployment pipelines deployment rules greyed out.](media/deployment-pipelines-troubleshooting/rules-greyed-out.png)
@@ -440,7 +430,7 @@ sections:
       - question: |
           Troubleshooting errors
         answer: |
-          Use this section to troubleshoot pipeline [rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) you created. If you don't see a rule error message name, review the [deployment rule limitations](deployment-pipelines-get-started.md#deployment-rule-limitations) and the [supported data sources for dataflow and dataset rules](deployment-pipelines-get-started.md#supported-data-sources-for-dataflow-and-dataset-rules), and try to reconfigure the rule.
+          Use this section to troubleshoot pipeline [rules](deployment-pipelines-create-rules.md) you created. If you don't see a rule error message name, review the [deployment rule limitations](deployment-pipelines-create-rules.md#considerations-and-limitations) and the [supported data sources for dataflow and dataset rules](deployment-pipelines-create-rules.md#supported-data-sources-for-dataflow-and-dataset-rules), and try to reconfigure the rule.
     
           |Error message |Solution |
           |--------------|---------|

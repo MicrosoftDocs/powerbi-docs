@@ -14,9 +14,9 @@ ms.custom: known-issue-178
 In some cases, multi-role row-level security (RLS) for composite models may fail and result in an error.  The error occurs because an incorrect response is given when trying to view the data from the composite model.
 
 
-**APPLIES TO:** ✔️ Row-level security (RLS)
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Row-level security (RLS)
 
-**Status:** Reactivated: July 25, 2022
+**Status:** Fixed: Dec 22, 2022
 
 **Problem area:** Consume and View
 
@@ -28,7 +28,7 @@ If you face this issue, you will see an error similar to:
 
 ## Solutions and workarounds
 
-In some cases, you may be able to combine RLS roles to circumvent this error. But in most cases, there is no workaround at this time. When the fix is released, this article will be updated.
+Fix has been deployed and the above error has been removed. Users who belong to multiple roles for composite models will experience the same behavior as users who belong to multiple roles for non-composite models: they'll have access to all the data that each individual role has access to. For example, if role 'A' has access to Product[Color] = "Black" and role 'B' has access to Product[Color] = "Red", a user who belongs to both role 'A' and 'B' will have access to Product[Color] = "Black" or "Red".
 
 ## Next steps
 

@@ -13,24 +13,25 @@ LocalizationGroup: Gateways
 
 # Use Kerberos for SSO to Teradata
 
-This article describes specific and additional requirements to successfully enable single sign-on (SSO) to Teradata from the Power BI service.
+This article describes a specific added requirement to successfully enable single sign-on (SSO) to Teradata from the Power BI service.
 
-If user accounts in Teradata are identified using *sAMAccountName*, you must set *FullDomainResolutionEnabled* on the gateway to **true**. 
+- If Teradata identifies user accounts by using *sAMAccountNames*, you must set `FullDomainResolutionEnabled` on the gateway to `True`. 
 
-If user accounts in Teradata are identified by their **UPN**, keep *FullDomainResolutionEnabled* on the gateway set to **false**.
+- If Teradata identifies user accounts by using *User Principal Names (UPNs)*, keep `FullDomainResolutionEnabled` on the gateway set to `False`.
 
-## Enabling SSO for Teradata
+## Enable SSO for Teradata
 
-The following steps describe how to change the *FullDomainResolutionEnabled* configuration on the gateway to enable SSO for Teradata:
+To change the `FullDomainResolutionEnabled` configuration on the gateway to enable SSO for Teradata:
 
-1.	In the gateway installation directory, open the configuration file **Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config**.
-2.	In the file, find the *FullDomainResolutionEnabled* property and change its value to **True**.
+1. In the on-premises gateway directory at *%ProgramFiles%\On-premises data gateway*, open the configuration file *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
 
-```xml
-<setting name=" FullDomainResolutionEnabled " serializeAs="String">
-      <value>True</value>
-</setting>
-```
+1. In the file, find the `FullDomainResolutionEnabled` property and change its value to `True`.
+
+   ```xml
+   <setting name=" FullDomainResolutionEnabled " serializeAs="String">
+         <value>True</value>
+   </setting>
+   ```
 
 ## Next steps
 
