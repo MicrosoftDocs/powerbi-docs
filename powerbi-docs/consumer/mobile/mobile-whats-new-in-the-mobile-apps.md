@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/30/2023
+ms.date: 04/18/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -24,17 +24,13 @@ For related "What's New" information, see:
 
 ## April 2023
 
-### Hierarchies are now supported! (iOS and Android)
+### Hierarchies are now supported for your metrics! (iOS and Android)
 
-Hierarchies for your metrics and scorecards make it easier to drill in and check status at different levels of your data. Hierarchies are now available in the mobile apps, where you can drill into the hierarchy to check progress and statuses, as well as do check-ins, at different levels. To view the available hierarchies and change the selection, use the new **Hierarchies** button in the scorecard footer.
+Hierarchies are now available in the mobile apps, where you can drill into the hierarchy to check progress and statuses, as well as do check-ins, at different levels. To view the available hierarchies and change the selection, use the new **Hierarchies** button in the scorecard footer.
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-hierarchies.png" alt-text="Screenshot showing Power BI metrics hierarchies in the Power BI mobile app." border="false":::
 
 [Learn more about viewing hierarchies in the Power BI service](../../create-reports/service-metrics-view-hierarchies.md)
-
-### Export to Excel from the Power BI mobile app for Windows
-
-Now, with just a tap, you can export data from a Power BI report to Excel. The data will automatically load into a pivot table, make it easy to explore and work with.
 
 ## March 2023
 
