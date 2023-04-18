@@ -49,7 +49,7 @@ ms.reviewer: monaraya
 > [!NOTE]  
 >  You can't have 3D and bevel or emboss styles on the same chart. If you have enabled 3D for the chart, you won't see the PieDrawingStyle property.  
   
- ![Bar chart with Light-To-Dark drawing effect.](media/paginated-reports-visualizations/bar-drawing-effects-light-to-dark.gif "Bar chart with Light-To-Dark drawing effect.")  
+ ![Screenshot showing bar chart with Light-To-Dark drawing effect.](media/paginated-reports-visualizations/bar-drawing-effects-light-to-dark.gif "Bar chart with Light-To-Dark drawing effect.")  
   
 ## Next steps
 

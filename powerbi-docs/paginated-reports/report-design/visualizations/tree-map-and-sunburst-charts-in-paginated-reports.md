@@ -20,7 +20,7 @@ A treemap chart divides the chart area into rectangles that represent the differ
 
 For example,  in the following image of the sample treemap, the Southwest territory is the largest and Germany is the smallest. Within the Southwest, Road Bikes are larger than Mountain Bikes.  
 
-![Screenshot showing treemap_example](media/paginated-reports-visualizations/treemap-example.png "Screenshot of treemap_example")  
+![Screenshot showing treemap example.](media/paginated-reports-visualizations/treemap-example.png "Screenshot of treemap example")  
   
 ### Insert a treemap chart and set up the sample AdventureWorks data  
 
@@ -29,7 +29,7 @@ For example,  in the following image of the sample treemap, the Southwest territ
   
 1. Right-click the design surface, then select **Insert** > **Chart**. Select the **Treemap** icon.
 
-    ![Screenshot showing treemap_icon](media/paginated-reports-visualizations/treemap-icon.png "Screenshot of treemap_icon")  
+    ![Screenshot showing treemap icon.](media/paginated-reports-visualizations/treemap-icon.png "Screenshot of treemap icon")  
 
 2. Reposition and resize the chart. To use with the sample data, a chart that is 5 inches wide is a good start.  
   
@@ -41,13 +41,13 @@ For example,  in the following image of the sample treemap, the Southwest territ
         2. SubcategoryName
     * **Series Groups**: TerritoryName  
 
-    ![Screenshot showing treemap_example_properties](media/paginated-reports-visualizations/treemap-example-properties.png "Screenshot of treemap_example_properties")
+    ![Screenshot showing treemap example properties.](media/paginated-reports-visualizations/treemap-example-properties.png "Screenshot of treemap example properties")
   
 4. To optimize the page size for the general shape of a treemap, set the legend position to the bottom.  
   
 5. To add tooltips that display the subcategory and the line total, right-click **LineTotal**, and then select **Series Properties**.  
   
-     ![Screenshot showing visualization_seriesproperties](media/paginated-reports-visualizations/visualization-seriesproperties.png "Screenshot of visualization_seriesproperties")  
+     ![Screenshot showing visualization series properties.](media/paginated-reports-visualizations/visualization-series-properties.png "Screenshot of visualization series properties")  
   
      Set the **Tooltip** property to the following value:  
   
@@ -65,7 +65,7 @@ For example,  in the following image of the sample treemap, the Southwest territ
 
 In a sunburst chart, the hierarchy is represented by a series of  circles. The highest level of  the hierarchy is in the center, and lower levels of the hierarchy are rings displayed outside the center.  The lowest level of the hierarchy is the outside ring.  
   
-![Screenshot showing sunburst_example](media/paginated-reports-visualizations/sunburst-example.png "Screenshot of sunburst_example")  
+![Screenshot showing sunburst example.](media/paginated-reports-visualizations/sunburst-example.png "Screenshot of sunburst example")  
   
 ### To insert a sunburst chart and set up the sample AdventureWorks data
 
@@ -74,7 +74,7 @@ In a sunburst chart, the hierarchy is represented by a series of  circles. The h
   
 1. Right-click the design surface, and then select **Insert** > **Chart**. Select the **Sunburst** icon.
 
-     ![Screenshot showing sunburst_icon](media/paginated-reports-visualizations/sunburst-icon.png "Screenshot of sunburst_icon")  
+     ![Screenshot showing sunburst icon.](media/paginated-reports-visualizations/sunburst-icon.png "Screenshot of sunburst icon")  
   
 2. Reposition and resize the chart. To use with the sample data, a chart that is 5 inches wide is a good start.  
   
@@ -87,7 +87,7 @@ In a sunburst chart, the hierarchy is represented by a series of  circles. The h
         3. SalesReasonName
     * **Series Groups**: TerritoryName  
 
-    ![Screenshot showing treemap_example_properties](media/paginated-reports-visualizations/treemap-example-properties.png "Screenshot of treemap_example_properties")
+    ![Screenshot showing treemap example properties.](media/paginated-reports-visualizations/treemap-example-properties.png "Screenshot of treemap example properties")
   
 4. To optimize the page size for the general shape of a sunburst chart, set the legend position to the bottom.  
   
@@ -95,11 +95,11 @@ In a sunburst chart, the hierarchy is represented by a series of  circles. The h
   
 6. To add the values of the category groups to the sunburst as labels, set the label properties **Visible=true** and **UseValueAsLabel=false**.<br /><br /> The label values that are displayed are affected by the size of the font, the size of the overall chart area, and the size of specific rectangles.  To see more labels, change the **Label Font** property of **LineTotal** to **10pt** from the default of **8pt**.
 
-    ![Screenshot showing sunburst_linetotalproperties](media/paginated-reports-visualizations/sunburst-linetotalproperties.png "Screenshot of sunburst_linetotalproperties")
+    ![Screenshot showing sunburst line total properties.](media/paginated-reports-visualizations/sunburst-line-total-properties.png "Screenshot of sunburst line total properties")
   
 7. If you want a different range of colors, change the chart **Palette** property.  
 
-     ![Screenshot showing visualization_palette](media/paginated-reports-visualizations/visualization-palette.png "Screenshot of visualization_palette")  
+     ![Screenshot showing visualization palette.](media/paginated-reports-visualizations/visualization-palette.png "Screenshot of visualization palette")  
 
 ##  <a name="bkmk_sample_data"></a> Sample AdventureWorks data
 
