@@ -331,5 +331,5 @@ During Preview, the following issues and limitations are being addressed:
 [Measures in Power BI Desktop](../transform-model/desktop-measures.md)  
 [Data types in Power BI Desktop](../connect-data/desktop-data-types.md)  
 [Custom format strings in Power BI Desktop](desktop-custom-format-strings.md)  
-[Dynamic format strings for calculation groups](/analysis-services/tabular-models/calculation-groups)
+[Dynamic format strings for calculation groups](/analysis-services/tabular-models/calculation-groups)  
 [FORMAT function](/dax/format-function-dax)
