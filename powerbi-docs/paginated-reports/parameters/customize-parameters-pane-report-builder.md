@@ -89,6 +89,6 @@ For reports that were authored before SQL Server Reporting Services 2016, a defa
 
 ## Next Steps
 
- [Report Parameters &#40;Power BI Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer)
+ [Report Parameters &#40;Power BI Report Builder and Report Designer&#41;](report-builder-parameters.md)
 
 
