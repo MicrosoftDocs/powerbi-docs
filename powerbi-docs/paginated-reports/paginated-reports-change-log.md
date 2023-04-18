@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/04/2022
+ms.date: 04/18/2023
 ---
 
 # Power BI Report Builder change log
