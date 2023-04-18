@@ -51,11 +51,11 @@ data source=<IP Address>
   
  [Supported data sources for Power BI paginated reports](../paginated-reports-data-sources.md)
  Provides in-depth information about platform and version support for supported data sources.  
- 
-  
+
 ## Next steps
- [Report Parameters &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer)   
+
+ [Report parameters in Power BI Report Builder](../parameters/report-builder-parameters.md)
  [Filter, Group, and Sort Data &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
- [Expressions &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs)  
+ [Expressions &#40;Report Builder and Service&#41;](../../report-builder-expressions.md)  
   
   
