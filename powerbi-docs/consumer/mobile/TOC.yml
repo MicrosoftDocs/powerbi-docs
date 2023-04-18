@@ -26,8 +26,6 @@
     items: 
     - name: "Get real-world data with the mobile apps"
       href: mobile-apps-data-in-real-world-context.md
-    - name: "Data in space (preview)"
-      href: mobile-apps-data-in-space-overview.md
     - name: "View your data offline in the mobile apps"
       href: mobile-apps-offline-data.md
     - name: "Power BI for HoloLens 2"
@@ -70,10 +68,6 @@
         href: mobile-native-secure-access.md
       - name: "Access content from an external organization (B2B)"
         href: mobile-apps-b2b.md
-      - name: "Pin reports in space at real world locations (preview)"
-        href: mobile-apps-data-in-space-pin-reports.md        
-      - name: "Find and access reports pinned in space (preview)"
-        href: mobile-apps-data-in-space-find-pinned-reports.md   
       - name: "Scan QR codes to open reports and tiles"
         href: mobile-apps-qr-code.md
       - name: "Scan barcodes to open filtered reports"

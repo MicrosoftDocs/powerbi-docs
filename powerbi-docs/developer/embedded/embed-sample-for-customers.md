@@ -7,11 +7,13 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 12/24/2022
+ms.date: 04/17/2023
 
 ---
 
 # Tutorial: Embed Power BI content using a sample *embed for your customers'* application
+
+[!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
 
 **Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed Power BI content such as reports, dashboards and tiles, into your application.
 
@@ -507,6 +509,8 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 After configuring and running the *embed for your customers* sample application, you can start developing your own application.
 
+Try out the [Power BI embedded analytics playground](./power-bi-playground.md) to get started developing and to keep up with all the new Power BI Embedded features and updates.
+
 [!INCLUDE[Move to production](../../includes/embed-tutorial-production.md)]
 
 > [!IMPORTANT]
@@ -514,14 +518,8 @@ After configuring and running the *embed for your customers* sample application,
 
 ## Next steps
 
-> [!div class="nextstepaction"]
->[Move to production](move-to-production.md)
+* [Move to production](move-to-production.md)
+* [Embed for your organization](embed-sample-for-your-organization.md)
+* [Embed paginated reports](embed-paginated-reports.md)
 
->[!div class="nextstepaction"]
->[Embed for your organization](embed-sample-for-your-organization.md)
-
-> [!div class="nextstepaction"]
->[Embed paginated reports](embed-paginated-reports.md)
-
->[!div class="nextstepaction"]
->[Ask the Power BI Community](https://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com/).
