@@ -20,7 +20,7 @@ With *dynamic format strings for measures*, you can determine how measures appea
 > Dynamic format strings for measures is currently in Preview. When in Preview, functionality and documentation are likely to change.
 
 Dynamic format strings overcome an inherent disadvantage of using the FORMAT function. That is, with FORMAT even numeric data types are returned as a string, which may not work with visuals that require numeric values, like charts.
-When using dynamic format strings, the measure keeps its data type and is isn't forced to change to a string data type. This applies different format strings to the measure depending on the context.
+When using dynamic format strings, the measure keeps its data type and isn't forced to change to a string data type. This applies different format strings to the measure depending on the context.
 
 Dynamic format strings can also be used with calculation groups. The same DAX patterns that work with calculation groups can also be utilized in dynamic format strings for measures, but the scope is limited to individual measures instead of all measures in the model. To learn more, see [Calculation groups - Dynamic format strings](/analysis-services/tabular-models/calculation-groups?view=power-bi-premium-current#dynamic-format-strings&preserve-view=true).
 
@@ -39,7 +39,7 @@ Dynamic format strings can also be used with calculation groups. The same DAX pa
 
 1. Verify your dynamic format string works in a visual.
 
-    To delete the dynamic format string and return to using a static format string, in the **Formatting** section > **Format** listbox, select a different format option. Because there is no undo to this action, a dialog appears asking if you want to proceed. If you want to go back to using a dynamic format string again, you must reenter the DAX expression.
+    To delete the dynamic format string and return to using a static format string, in the **Formatting** section > **Format** listbox, select a different format option. Because there's no undo to this action, a dialog appears asking if you want to proceed. If you want to go back to using a dynamic format string again, you must reenter the DAX expression.
 
     :::image type="content" source="media/desktop-dynamic-format-strings/format-change-warning.png" alt-text="Format change warning":::
 
@@ -73,7 +73,7 @@ The sample model doesn't contain all the data necessary to create and use dynami
 
     :::image type="content" source="media/desktop-dynamic-format-strings/create-table-dialog.png" alt-text="Create table dialog":::
 
-1. Repeat the steps above for the following table:
+1. Repeat the previous steps for the following table:
 
     Table name: **Yearly Average Exchange Rates**
 
@@ -250,16 +250,16 @@ A measure group helps you organize different measures by having them in a single
     Slicer
 
     - Slicer settings: Single select
-    - Size and Style, Padding: 10px, all edges
-    - Size and Style, Visual border: light grey, 10px rounded corners
+    - Size and Style, Padding: 10 px, all edges
+    - Size and Style, Visual border: light grey, 10 px rounded corners
     - Slicer settings, Style: Tile
     - Slicer header: Off
     - Values, border: Left, #333333, 6 line width
 
     Table
 
-    - Size and Style, Padding: 10px, all edges
-    - Size and Style, Visual border: light grey, 10px rounded corners
+    - Size and Style, Padding: 10 px, all edges
+    - Size and Style, Visual border: light grey, 10 px rounded corners
     - Grid, Horizontal gridlines: White, 2 width
     - Grid, Vertical gridlines: White, 2 width
     - Grid, Border: White
@@ -270,8 +270,8 @@ A measure group helps you organize different measures by having them in a single
 
     Line chart
 
-    - Size and Style, Padding: 10px, all edges
-    - Size and Style, Visual border: light grey, 10px rounded corners
+    - Size and Style, Padding: 10 px, all edges
+    - Size and Style, Visual border: light grey, 10 px rounded corners
     - Title, Subtitle: On
     - Y-axis, Title: Off
     - Y-axis: Off
