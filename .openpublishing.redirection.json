@@ -3562,6 +3562,16 @@
         {
             "source_path": "powerbi-docs/desktop-see-data-see-records.md",
             "redirect_url": "/power-bi/create-reports/desktop-see-data-see-records",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/desktop-see-data-see-records.md",
+            "redirect_url": "/power-bi/create-reports/end-user-show-data",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-show-data.md",
+            "redirect_url": "/power-bi/create-reports/end-user-show-data",
             "redirect_document_id": true
         },
         {
@@ -4885,6 +4895,11 @@
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-dataflow-on-premium-gen2.md",
             "redirect_url": "/power-bi/troubleshoot/known-issues/known-issue-dataflow-on-premium",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-m365-data-access-storage.md",
+            "redirect_url": "/power-bi/admin/admin-share-power-bi-metadata-microsoft-365-services",
+            "redirect_document_id": false                                                                                                                                                          
         },                
         {
             "source_path": "powerbi-docs/connect-data/desktop-connect-bigquery.md",
@@ -4955,6 +4970,31 @@
             "source_path": "powerbi-docs/connect-data/desktop-connect-using-generic-interfaces.md",
             "redirect_url": "/power-query/connect-using-generic-interfaces",
             "redirect_document_id": false
+        },                                                    
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-directquery-datasets-azure-analysis-services.md",
+            "redirect_url": "/power-bi/transform-model/desktop-composite-models",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-data-in-space-overview.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-data-in-space-pin-reports.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-data-in-space-find-pinned-reports.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-data-in-space-set-up.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/enterprise/service-security-dlp-policies-for-power-bi.md",
@@ -4965,7 +5005,7 @@
             "source_path": "powerbi-docs/enterprise/service-security-dlp-policies-for-power-bi-override.md",
             "redirect_url": "/power-bi/enterprise/service-security-dlp-policies-for-power-bi-respond",
             "redirect_document_id": true
-        }                                                                                                                                               
+        }                                                                                                 
   ]          
 
 }

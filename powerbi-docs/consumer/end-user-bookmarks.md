@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/27/2023
+ms.date: 03/29/2023
 LocalizationGroup: Create reports
 ---
 # Bookmarks in the Power BI service
@@ -19,49 +19,38 @@ A bookmark captures the state of a report page. It includes the settings you've 
 
 ## Types of bookmarks
 
-There are two types of bookmarks: *personal* and *report*. Report bookmarks are added to reports by report *designers*. When the designers share their reports with colleagues, the bookmarks travel with the report. Everyone who can open and view that report can also see and use the report bookmarks. Personal bookmarks can be created by anyone who can open a report, they don't even require edit permissions. However, if you create personal bookmarks and share your report, the personal bookmarks don't travel with the report. Personal bookmarks are for your use only. However, if you want to share your personal bookmarks, this article provides some tips and tricks to do so.
+There are two types of Power BI bookmarks: *personal* and *report*. *Report* bookmarks are added to reports by report *designers*. When the designers share their reports with colleagues, the bookmarks travel with the report. Everyone who can open and view that report can also see and use the report bookmarks. *Personal* bookmarks can be created by anyone who can open a report, they don't even require edit permissions. However, if you create personal bookmarks and share your report, the personal bookmarks don't travel with the report. Personal bookmarks are for your use only. 
 
-![Show dropdowns for both types of bookmarks.](media/end-user-bookmarks/power-bi-both-bookmark.png)
+> [!TIP]
+> There are some ways for you to share your personal bookmarks with others. See [Sharing personal bookmarks](#share-changes) later in this article for tips and tricks. 
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-both-bookmark.png" alt-text="A screenshot showing the Bookmarks menu.":::
 
-This article explains how to create and use *personal* bookmarks. It also explains how to interact with *report* bookmarks that have been created by others and shared with you. Viewing shared content requires either a Power BI Pro or a Premium Per User license or for the report or dashboard to be saved in Premium capacity and shared with you. [Which license do I have?](end-user-license.md)
+This article explains how to create and use *personal* bookmarks. It also explains how to interact with *report* bookmarks that have been created by others and shared with you. Viewing shared reports and report bookmarks requires one or both of the following prerequisites:
+
+- a Power BI Pro or a Premium Per User (PPU) license [Which license do I have?](end-user-license.md) 
+- for the report to be saved in Premium capacity and shared with you. 
 
 If you're designing reports and creating report bookmarks for others to use, see [Create report bookmarks](../create-reports/desktop-bookmarks.md).
 
+## Other articles about bookmarks
+
+- In the Power BI service and Power BI Desktop, report owners can create *report bookmarks*. For more information, read about [report bookmarks](../create-reports/desktop-bookmarks.md).
+- If you have edit permissions to the report, you can quickly build a [bookmark navigation experience](../create-reports/button-navigators.md#bookmark-navigator). Bookmark navigation is available for both personal and report bookmarks. Each bookmark is converted to a customizable button or dropdown menu. 
+
 ## Use personal bookmarks to save insights and build stories in Power BI
 
-There are many uses for personal bookmarks. If you discover an interesting insight and want to preserve it, create a personal bookmark so you can return later. If you need to leave and want to preserve your current work, create a personal bookmark. You can even make a personal bookmark your default view of a report, so each time you return, that view of the report page opens first.
+There are many uses for personal bookmarks. If you discover an interesting insight and want to preserve it, create a personal bookmark so you can return later. If you need to leave and want to preserve your current work, create a personal bookmark. You can even make a personal bookmark your default view of a report, so each time you return that view of the report page opens first.
 
-You can also create a collection of bookmarks, arrange them in the order you want, and then step through each bookmark in a presentation to highlight a series of insights that tell a story. This feature works like a slideshow, where you select an arrow to go forward or backward. There's a limit of 20 personal bookmarks per report.
+You can also create a collection of personal bookmarks and arrange them in the order you want. Then you can step through each bookmark in a presentation to highlight a series of insights that tell a story. This feature works like a slideshow, where you select an arrow to go forward or backward. There's a limit of 20 personal bookmarks per report. For more information about creating a bookmark slide show, see [Bookmarks as a slide show](../create-reports/desktop-bookmarks.md#bookmarks-as-a-slide-show).
 
 ### Open the Bookmarks pane
 
-To open the **Bookmarks** pane, select the :::image type="icon" source="media/end-user-bookmarks/power-bi-bookmark.png"::: and choose either **Add a personal bookmark** or **Show more bookmarks**.
+To open the **Bookmarks** pane, start on a report page and select the bookmarks icon :::image type="icon" source="media/end-user-bookmarks/power-bi-bookmark.png"::: and choose either **Add a personal bookmark** or **Show more bookmarks**.
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-bookmark-icon.png" alt-text="A screenshot showing the bookmark menu in the action bar.":::
 
-### Share changes
 
-While you can't share your actual personal bookmarks with others, you can select a personal bookmark and save the report with that bookmarked view active. When colleagues who also have read access to the report open that report, they see the view you selected. This personalized view of the report doesn't override the designer's original report or the designer's *report* bookmarks. Sharing with colleagues who don't already have read access requires reshare permissions. If you're unable to share your view of the report, contact the report owner to request reshare permission.
-
-If you do have reshare permissions, when you share the report you can choose to include your changes.
-
-:::image type="content" source="media/end-user-bookmarks/power-bi-share-changes.png" alt-text="A screenshot showing the Share dialog with Include my changes outlined.":::
-
-Here are a few ways you can share your view with others:
-
-
-- **Share your active view**. If you have a personal bookmark active when you share your report, recipients see the bookmarked version of that report page but don't see your bookmark in their "Personal bookmarks" list. They see the result of your personal bookmark.
-
-- **Chat in teams**. Similar to the previous method, with a personal bookmark active, you can share a report in Microsoft Teams. Select **Chat in Teams** from **More options** on the top menu. In the **Chat in Teams** dialog, enter the name of the Team or Channel that you want to share to. Select **Share**. You can also copy and share the URL from the **Chat in Teams** dialog. For more information, see [Share personal bookmarks in Teams chat](../collaborate-share/service-share-reports.md).
-
-- **Use the comment feature**. With a personal bookmark active, add a comment. When other users select the comment, the current view is saved for them to view. For more information, see [Add comments to dashboards and reports](end-user-comment.md).
-
-If you make changes to your personal bookmark after you share a report, it has no effect on your recipients' view. For example, if you share a report with a 2021 date filter applied and then change the year to 2022 in your bookmark, your recipient still sees the 2021 filter.
-
-> [!NOTE]
-> To share reports, you will need a Power BI Pro or Premium Per User license, or for the report to be saved in reserved capacity. To learn more, see [Licensing](end-user-license.md).
 
 ## Create personal bookmarks in the Power BI service
 
@@ -74,23 +63,25 @@ If you can view a report, then you can also add personal bookmarks. The maximum 
 - Sort order
 - Drill location
 
-If you have Edit permissions to a report, you can set and save additional elements that will be saved with the bookmark. To open the Selection pane, select **Edit** > **View** > **Selection pane**.
+If you have edit permissions to a report, you can set and save other elements that are saved with a bookmark. For example, you can decide which visuals on the page are visible when the bookmark is selected. To learn more about the *report* bookmarks and the Selection pane, see [Using the Selection pane](../create-reports/desktop-bookmarks.md)
 
-:::image type="content" source="media/end-user-bookmarks/power-bi-selection.png" alt-text="A screenshot showing the Selection pane.":::
+### Create two different personal bookmarks
 
-### Create two bookmarks
+Configure a report page the way you want it to appear in the bookmark. The following example has filters applied to the default report page:
 
-Configure a report page the way you want it to appear in the bookmark. The following example has filters applied. The example shows these changes:
-
-- Existing Date filter on the **Filters** pane.
-- Existing Regions filter on the **Filters** pane. **West** is selected.
-- Data point on the doughnut chart visual. It cross-filters and cross-highlights the report canvas.
+1. **Date** is changed to include All dates.
+2. **Region** filter is changed to include only **West** .
+3. A specific data point on the doughnut chart visual is selected. This selection cross-filters and cross-highlights the other visuals on the report canvas.
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-personal.png" alt-text="A screenshot showing a report with filters applied." lightbox="media/end-user-bookmarks/power-bi-personal.png#lightbox":::
+
+#### Create the first bookmark
 
 1. After your report page and visuals are arranged how you want them, from the **Bookmarks** pane, select **Personal bookmarks > Add**.
 
 1. The personal bookmark gets a generic name, or you can enter a name. Select **Save**. To *rename*, *make default*, *delete*, or *update* your bookmark, select the ellipses next to the bookmark's name.
+
+#### Create the second bookmark
 
 1. Open a different report page and create another personal bookmark. The bookmark in the following example captures the YTD information for the VanArsdel company.
 
@@ -112,9 +103,9 @@ To view the report bookmarks created by the report *designer*, from the **Bookma
 > To view shared reports, you will need a Power BI Pro or Premium Per User license, or for the report to be saved in Premium capacity. To learn more, see [Licensing](end-user-license.md).
 
 ### Report bookmarks
-If the report *designer* included report bookmarks, you'll find them under the **Report bookmarks** heading. This report page has four bookmarks: B1 ON, B2 ON, VanArsdel YTD, and All YTD. **All YTD** is currently selected.
+If the report *designer* included report bookmarks, you find them under the **Report bookmarks** heading. This report page has two report bookmarks: Overview- By Manager and Overview-By Product. 
 
-:::image type="content" source="media/end-user-bookmarks/power-bi-bookmark-list.png" alt-text="A screenshot showing the Bookmarks pane. A list of bookmarks is outlined.":::
+:::image type="content" source="media/end-user-bookmarks/power-bi-report-bookmark.png" alt-text="A screenshot showing the Bookmarks pane. A list of bookmarks is outlined.":::
 
 ## Bookmarks as a slideshow
 
@@ -130,9 +121,36 @@ When in **View** mode, notice the following features:
 
 In **View** mode, you can close the **Bookmarks** pane to provide more space for your presentation. While in **View** mode, all visuals are interactive and available for cross-highlighting, like they are when interacting with them in other modes.
 
+### Share changes
+
+While you can't directly share your personal bookmarks with others, there are some workarounds. These workarounds require that you have one or both of the following:
+
+- Pro or PPU license
+- Permissions to content saved in a workspace in Premium capacity
+
+Here are a few ways you can share your view with others:
+
+
+- **Share your active view**. If you have a personal bookmark active when you share a report, recipients who have read access to the report see the bookmarked version of that report page. Receipients don't see your bookmark in their "Personal bookmarks" list. They see the result of your personal bookmark. 
+
+     This personalized view of the report doesn't override the designer's original report or the designer's *report* bookmarks. Sharing with colleagues who don't already have read access requires reshare permissions. If you're unable to share your view of the report, contact the report owner to request reshare permission.
+
+     When you share the report, you can choose to include your changes.
+
+    :::image type="content" source="media/end-user-bookmarks/power-bi-share-changes.png" alt-text="A screenshot showing the Share dialog with Include my changes outlined.":::
+
+- **Chat in teams**. Similar to the previous method, with a personal bookmark active, you can share a report in Microsoft Teams. Select **Chat in Teams** from **More options** on the top menu. In the **Chat in Teams** dialog, enter the name of the Team or Channel that you want to share to. Select **Share**. You can also copy and share the URL from the **Chat in Teams** dialog. For more information, see [Share personal bookmarks in Teams chat](../collaborate-share/service-share-reports.md).
+
+- **Use the comment feature**. With a personal bookmark active, add a comment. When other users select the comment, the current view is saved for them to view. For more information, see [Add comments to dashboards and reports](end-user-comment.md).
+
+If you make changes to your personal bookmark after you share a report, it has no effect on your recipients' view. For example, if you share a report with a 2021 date filter applied and then change the year to 2022 in your bookmark, your recipient still sees the 2021 filter.
+
+> [!NOTE]
+> To share reports, you will need a Power BI Pro or Premium Per User license, or for the report to be saved in reserved capacity. To learn more, see [Licensing](end-user-license.md).
+
 ### Reset all your changes to a report
 
-From the upper-right corner of your report canvas, select **Reset to default**. This action removes all your changes in the report and sets it back to the designer's last saved view of the report.
+From the upper-right corner of your report canvas, select **Reset to default**. This action removes all your changes in the report and sets it back to the designer's last saved view of the report. Resetting the report doesn't delete the bookmarks. 
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-personalize-reset-all.png" alt-text="A screenshot showing the reset button in the action bar.":::
 
@@ -148,7 +166,7 @@ In this release of **personal bookmarks**, there are a few considerations and li
 
 - This feature is supported in the Power BI mobile apps for iOS and Android tablets and phones, and in the Power BI Windows app.
 
-- Because personal bookmarks capture the exploration state of the current page, personal bookmarks won't capture changes to other pages. For example, if you have sync-slicers in your report and you personalize the sync-slicer to use a different field and capture a personal bookmark, then the personal bookmark will only capture the slicer change on the current page.
+- Because personal bookmarks capture the exploration state of the current page, personal bookmarks don't capture changes to other pages. For example, if you have sync-slicers in your report and you personalize the sync-slicer to use a different field and capture a personal bookmark, then the personal bookmark only captures the slicer change on the current page.
 
 ## Next steps
 

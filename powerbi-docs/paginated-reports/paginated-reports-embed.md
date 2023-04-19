@@ -12,6 +12,8 @@ ms.date: 01/31/2023
 
 # Embed a paginated report
 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+
 This article provides an overview of the differences between embedding a Power BI report, and embedding a Power BI paginated report. The article is aimed at developers using Power BI [embedded analytics](/power-bi/developer/embedded/) to embed a paginated report.
 
 ## Dataset considerations

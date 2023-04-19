@@ -70,7 +70,7 @@ In this section, you'll create a project for the circle card visual.
     Your visual is now running while being hosted on your computer.
 
     >[!IMPORTANT]
-    >Don't close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter *Ctrl+C* and if prompted to terminate the batch job, enter *Y*, and press *Enter*.
+    >Don't close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter <kbd>Ctrl</kbd>+<kbd>C</kbd> and if prompted to terminate the batch job, enter <kbd>Y</kbd> and then <kbd>Enter</kbd>.
 
 ## View the visual in Power BI service
 
@@ -85,7 +85,7 @@ In this section you'll learn how to turn your visual into a circle, and make it 
 Set up the **visual.ts** file.
 
 >[!TIP]
->To improve readability, it's recommended that you format the document every time you copy code snippets into your project. Right-click anywhere in VS code, and select *Format Document* (Alt+Shift+F).
+>To improve readability, it's recommended that you format the document every time you copy code snippets into your project. Right-click anywhere in VS code, and select *Format Document* (or enter <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>).
 
 1. In VS Code, in the **Explorer pane**, expand the **src** folder, and select the file **visual.ts**.
 
@@ -317,7 +317,7 @@ The circle card visual is a simple visual that doesn't create any objects in the
 
 Stop the visual from running and restart it.
 
-1. In the **PowerShell** window where you started the visual, enter Ctrl+C. If prompted to terminate the batch job, enter Y, and press *Enter*.
+1. In the **PowerShell** window where you started the visual, enter <kbd>Ctrl</kbd>+<kbd>C</kbd>. If prompted to terminate the batch job, enter <kbd>Y</kbd> and then <kbd>Enter</kbd>.
 
 2. In **PowerShell**, start the visual again.
 

@@ -8,9 +8,10 @@ ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-deployment
 ms.date: 03/14/2023
+ms.search.form: Introduction to Deployment pipelines, Manage access in Deployment pipelines, Deployment pipelines operations, Create deployment pipeline
 ---
 
-# The deployment pipeline process
+# The deployment pipelines process
 
 The deployment process lets you clone content from one stage in the deployment pipeline to another, typically from development to test, and from test to production.
 

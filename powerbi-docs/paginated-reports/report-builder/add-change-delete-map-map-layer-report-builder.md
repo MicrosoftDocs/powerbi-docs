@@ -13,6 +13,8 @@ ms.reviewer: saurkumar
 ---
 # Add, change, or delete a map or map layer in a Power BI paginated report (Power BI Report Builder)
 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+
   A map is a collection of layers. When you add a map to a Power BI paginated report, you define the first layer. You can create additional layers by using the map layer wizard.  
   
  The easiest way to add, remove, or change options for a layer is to use the map layer wizard. You can also change options manually from the Map pane. To display the **Map** pane, select in the map on the report design surface. The following figure displays the parts of the pane:  
@@ -35,8 +37,6 @@ The following table displays the toolbar icons for the **Map** pane.
  At the bottom of the Map pane is the Map view area. To change the center or zoom options for the map, use the arrow keys to adjust the view center and the slider to adjust the zoom level.  
   
  For more information about layers, see [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs).  
-  
-
   
 ##  <a name="AddLayer"></a> Add a layer from the map layer wizard  
   
