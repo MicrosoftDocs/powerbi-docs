@@ -48,7 +48,7 @@ You can open the data model for your dataset in the following ways:
 
 * From **edit mode** for a report connected to the dataset, select **Open data model** to open the corresponding data model in another tab.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-06.png" alt-text="Screen shot of opening the data model from the open data model button." lightbox="media/service-edit-data-models/service-edit-data-models-06.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-06.png" alt-text="Screen shot of opening the data model in edit mode." lightbox="media/service-edit-data-models/service-edit-data-models-06.png":::
 
 ## Model data
 When you open your data model you can see all the tables, columns, and relationships in your model. You can now edit your data model, and any changes are automatically saved. 
@@ -146,7 +146,7 @@ You can then drag a table from the **Data** pane onto the new layout. Right-clic
 
 
 > [!NOTE]
-> Any changes you make to layouts in the service, other than the *All tables* layout, won't be saved for future sessions. Additionally, when uploading a .PBIX file to the Power BI service, no existing layouts other than *All tables* are shown in the Power BI service.
+> Any changes you make to layouts in the Power BI service, other than the *All tables* layout, won't be saved for future sessions. Additionally, when uploading a .PBIX file to the Power BI service, no existing layouts other than *All tables* are shown in the Power BI service.
 
 ### Create reports
 You can create a new report from the data model editing in the service experience by selecting the **New report** button in the ribbon. This opens a new browser tab to the report editing canvas to a new report that is built on the dataset. 
