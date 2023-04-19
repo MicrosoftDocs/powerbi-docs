@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/27/2023
+ms.date: 04/18/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -17,10 +17,17 @@ Power BI Mobile app versions are released on a monthly cadence. The latest ver
 For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
-* [What's new in Power BI](../../fundamentals/desktop-latest-update.md)  
+* [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
 
->[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+## April 2023
+
+### Hierarchies are now supported for your metrics! (iOS and Android)
+
+Hierarchies are now available in the mobile apps, where you can drill into the hierarchy to check progress and statuses, as well as do check-ins, at different levels. To view the available hierarchies and change the selection, use the new **Hierarchies** button in the scorecard footer.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-hierarchies.png" alt-text="Screenshot showing Power BI metrics hierarchies in the Power BI mobile app." border="false":::
+
+[Learn more about viewing hierarchies in the Power BI service](../../create-reports/service-metrics-view-hierarchies.md)
 
 ## March 2023
 
