@@ -13,11 +13,11 @@ ms.reviewer: saurkumar
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  If you have data that is logarithmically proportional, you may want to consider using a logarithmic scale on a chart in a paginated report. This helps improve the appearance of the chart by making your data more manageable. Most logarithmic scales use a base of 10.  
+  If you have data that is logarithmically proportional, you may want to consider using a logarithmic scale on a chart in a paginated report. This scale helps improve the appearance of the chart by making your data more manageable. Most logarithmic scales use a base of 10.  
   
  This feature is only available on the value axis. The value axis is usually the vertical, or y-axis. On bar charts, however, it is the horizontal, or x-axis.  
   
- If your axis is logarithmic, all other properties relating to the axis will be scaled logarithmically. For example, if you specify a base-10 logarithmic scale on your axis, setting an axis interval of 2 will generate intervals in magnitudes of 10 to the power of 2, or 100. This means your axis values will read 1, 100, 10000, instead of the default result of 1, 10, 100, 1000, 10000.  
+ If your axis is logarithmic, all other properties relating to the axis are scaled logarithmically. For example, if you specify a base-10 logarithmic scale on your axis, setting an axis interval of 2 generates intervals in magnitudes of 10 to the power of 2, or 100. This means your axis values read 1, 100, 10000, instead of the default result of 1, 10, 100, 1000, 10000.  
   
 You create and modify Power BI paginated reports in [Power BI Report Builder](../../report-builder-power-bi.md). 
   
