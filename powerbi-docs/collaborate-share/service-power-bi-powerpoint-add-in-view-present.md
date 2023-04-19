@@ -22,7 +22,7 @@ As soon as you add a live Power BI report page or visual to PowerPoint, you can 
 |:---------|:---------|
 |[Info](#data-info)     | [Add-in options](#add-in-options)        |
 |[Data options](#data-options)     | [Expand/collapse toolbar](#expandcollapse-toolbar)        |
-|[Style options](#style-options)     | [Add-in side menu](#add-in-side-pane)        |
+|[Style options](#add-styles-to-your-presentation)     | [Add-in side menu](#add-in-side-pane)        |
 
 ## Understanding what you see
 
@@ -127,7 +127,7 @@ Controls that help you work with your data in PowerPoint are described below.
 
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-style-options.png" alt-text="Screenshot of Power B I add-in for PowerPoint style options menu.":::
 
-* **Outline**: Puts a border around the add-in.
+* **Outline**: Puts a border around the add-in. Select the expand arrow to access border line-style formatting options.
 
 ### Add-in options
 
