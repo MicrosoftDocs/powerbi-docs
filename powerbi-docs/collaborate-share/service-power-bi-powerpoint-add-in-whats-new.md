@@ -22,6 +22,8 @@ Now you can add a custom outline to your Power BI add-in. Customize color, weigh
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/power-bi-powerpoint-addin-add-border.gif" alt-text="Animation showing adding a border around the Power BI add-in for PowerPoint.":::
 
+## March 2023
+
 ### Storytelling with Power BI in PowerPoint is now GA!
 
 With exciting, recently released features you can now:
