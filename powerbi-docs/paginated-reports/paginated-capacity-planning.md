@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.date: 04/04/2023
 LocalizationGroup: Premium
 ---
+
 # Paginated reports capacity planning
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
@@ -54,9 +55,9 @@ Based on the five percent concurrency ratio, the following table describes the a
 
 | Workload   | P1 SKU      | P2 SKU      |
 |------------|-------------|-------------|
-| **Small**  | 1,600 users | 3,200 users |
-| **Medium** | 1,200 users | 2,400 users |
-| **Large**  | 800 users   | 1,600 users |
+| **Small**  | 2,500 users | 5,000 users |
+| **Medium** | 1,900 users | 3,800 users |
+| **Large**  | 1300 users   | 2,600 users |
 
 Take into consideration that the numbers in the table refer to designated capacities that don't run other operations. Your capacity may already use CPU resources for operations such as:
 
@@ -150,3 +151,5 @@ The formulas for a *P1 SKU* will be:
 
 >[!div class="nextstepaction"]
 >[Using Autoscale with Power BI Premium](./../enterprise/service-premium-auto-scale.md)
+
+
