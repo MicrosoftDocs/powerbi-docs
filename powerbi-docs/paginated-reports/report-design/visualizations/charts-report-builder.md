@@ -11,11 +11,11 @@ ms.reviewer: monaraya
 ---
 # Charts in Power BI paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
 Read about using chart data regions to help readers of your paginated reports understand large volumes of aggregated data at a glance.  
 
-The more time you spend carefully preparing and understanding your data before you create a chart, the easier it will be to design your charts quickly and efficiently. For help choosing which chart to use, see [Chart Types](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs) To start experimenting with charts immediately, see the bar, column, sparkline, and pie chart tutorials in [Power BI Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials).  
+The more time you spend carefully preparing and understanding your data before you create a chart, the easier it will be to design your charts quickly and efficiently. For help with choosing which chart to use, see [Chart Types](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs) To start experimenting with charts immediately, see the bar, column, sparkline, and pie chart tutorials in [Power BI Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials).  
   
  The following illustration shows many of the different elements used in the chart.  
   
@@ -96,7 +96,7 @@ The more time you spend carefully preparing and understanding your data before y
  [Chart Types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)  
  Describes all of the chart types and sub-types available in Report Builder, including considerations and best practices for using various chart types.  
   
- [Formatting a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)  
+ [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)  
  Use formatting to improve the overall appearance and highlight key data points of your chart.  
   
  [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](empty-null-data-points-charts-report-builder.md)  

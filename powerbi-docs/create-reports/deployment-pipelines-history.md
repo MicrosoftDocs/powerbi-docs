@@ -1,13 +1,14 @@
 ---
 title: Power BI Application lifecycle management (ALM) deployment pipelines history 
 description: Learn how the history feature works in the deployment pipelines, the Power BI Application lifecycle management (ALM) tool.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
 ms.date: 09/22/2022
+ms.search.form: Deployment history
 ---
 
 # Deployment history

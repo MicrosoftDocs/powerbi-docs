@@ -173,15 +173,17 @@
     - name: "Create sparklines in a table or matrix"
       href: power-bi-sparklines-tables.md
     - name: "Display custom format strings"
-      href: desktop-custom-format-strings.md      
+      href: desktop-custom-format-strings.md
+    - name: "Create dynamic format strings for measures"
+      href: desktop-dynamic-format-strings.md     
     - name: "Apply conditional table formatting"
       href: desktop-conditional-table-formatting.md
     - name: "Create dynamic, expression-based titles"
       href: desktop-conditional-format-visual-titles.md        
     - name: "Sort one column by another"
       href: desktop-sort-by-column.md
-    - name: "Use Visual table and Data point table"
-      href: desktop-see-data-see-records.md
+    - name: "Show the data underlying the visual"
+      href: end-user-show-data.md
     - name: "Tips and tricks for creating reports"
       href: desktop-tips-and-tricks-for-creating-reports.md
     - name: "Group visuals in a report"
@@ -548,24 +550,80 @@
       items: 
       - name: Charts in paginated reports
         href: ../paginated-reports/report-design/visualizations/charts-report-builder.md
-      - name: Add a chart to a paginated report
+      - name: Add a chart to paginated reports
         href: ../paginated-reports/report-design/visualizations/add-chart-report-report-builder.md
-      - name: Change the text of a legend item in paginated report
+      - name: Change the chart type in a paginated report
+        href: ../paginated-reports/report-design/visualizations/change-chart-type-report-builder.md
+      - name: Chart types in paginated reports
+        items: 
+        - name: Chart types in paginated reports
+          href: ../paginated-reports/report-design/visualizations/chart-types-report-builder.md
+        - name: Area charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/area-charts-report-builder.md
+        - name: Polar charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/polar-charts-report-builder.md
+        - name: Scatter charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/scatter-charts-report-builder.md
+        - name: Shape charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/shape-charts-report-builder.md
+        - name: Stock charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/stock-charts-report-builder.md
+        - name: Indicators in paginated reports
+          href: ../paginated-reports/report-design/visualizations/indicators-report-builder.md
+        - name: Gauges in paginated reports
+          href: ../paginated-reports/report-design/visualizations/gauges-report-builder.md
+        - name: Add a gauge to a paginated report
+          href: ../paginated-reports/report-design/visualizations/add-gauge-to-report-report-builder.md
+        - name: Bar charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/bar-charts-report-builder.md
+      - name: Format charts in paginated reports
+        items:
+        - name: Format charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/formatting-chart-report-builder.md
+        - name: Add a border frame to a chart
+          href: ../paginated-reports/report-design/visualizations/add-border-frame-to-chart-report-builder.md
+        - name: Format series colors on a report chart
+          href: ../paginated-reports/report-design/visualizations/formatting-series-colors-on-chart-report-builder.md
+        - name: Format data points on a report chart
+          href: ../paginated-reports/report-design/visualizations/formatting-data-points-on-chart-report-builder.md
+        - name: Format the legend on a chart
+          href: ../paginated-reports/report-design/visualizations/chart-legend-formatting-report-builder.md
+        - name: Format axis labels on a paginated report chart
+          href: ../paginated-reports/report-design/visualizations/format-axis-labels-chart-report-builder.md
+        - name: Format pointers on a gauge in a paginated report
+          href: ../paginated-reports/report-design/visualizations/formatting-pointers-gauge-report-builder.md
+        - name: Format ranges on a gauge in a paginated report
+          href: ../paginated-reports/report-design/visualizations/formatting-ranges-gauge-report-builder.md
+        - name: Format axis labels as dates or currencies
+          href: ../paginated-reports/report-design/visualizations/format-axis-labels-dates-currencies-report-builder.md
+        - name: Add bevel, emboss, or texture chart effects
+          href: ../paginated-reports/report-design/visualizations/chart-effects-add-bevel-emboss-or-texture-report-builder.md
+        - name: Add scale breaks to a report chart
+          href: ../paginated-reports/report-design/visualizations/add-scale-breaks-to-chart-report-builder.md
+      - name: Change the text of a legend item
         href: ../paginated-reports/report-design/visualizations/chart-legend-change-item-text-report-builder.md
-      - name: Format the legend on a paginated report chart
-        href: ../paginated-reports/report-design/visualizations/chart-legend-formatting-report-builder.md
       - name: Display data point labels outside a pie chart
         href: ../paginated-reports/report-design/visualizations/display-data-point-labels-outside-pie-chart-report-builder.md
       - name: Display percentage values on pie charts
         href: ../paginated-reports/report-design/visualizations/display-percentage-values-pie-chart-report-builder.md
       - name: Empty and null data points in paginated report charts
         href: ../paginated-reports/report-design/visualizations/empty-null-data-points-charts-report-builder.md
-      - name: Format axis labels on a paginated report chart
-        href: ../paginated-reports/report-design/visualizations/format-axis-labels-chart-report-builder.md
       - name: Position labels in paginated report charts
         href: ../paginated-reports/report-design/visualizations/position-labels-chart-report-builder.md
-      - name: Specify an axis interval in a paginated report
+      - name: Specify an axis interval in paginated reports
         href: ../paginated-reports/report-design/visualizations/specify-axis-interval-report-builder.md
+      - name: Specify logarithmic scale in paginated reports
+        href: ../paginated-reports/report-design/visualizations/specify-logarithmic-scale-report-builder.md
+      - name: Include indicators and gauges in a gauge panel
+        href: ../paginated-reports/report-design/visualizations/include-indicators-gauges-gauge-panel-report-builder.md
+      - name: Specify a chart area for a series
+        href: ../paginated-reports/report-design/visualizations/specify-chart-area-series-report-builder.md
+      - name: Start pie chart values at the top of the pie
+        href: ../paginated-reports/report-design/visualizations/start-pie-chart-values-top-pie-report-builder.md
+      - name: Vary polygon, line, and point display in a paginated report
+        href: ../paginated-reports/report-design/visualizations/vary-polygon-line-point-display-by-rules-analytical-data.md
+      - name: Troubleshoot charts in paginated reports
+        href: ../paginated-reports/report-design/visualizations/troubleshoot-charts-report-builder.md
     - name: Headers and footers in paginated reports
       items: 
       - name: Headers and footers in paginated reports
@@ -610,6 +668,8 @@
         href: ../paginated-reports/paginated-reports-embedded-data-source.md
       - name: Create an embedded dataset
         href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
+      - name: Set time-out values for paginated report dataset processing
+        href: ../paginated-reports/report-design/setting-time-out-values-for-report-dataset-processing.md
     - name: Parameters
       items:
       - name: Parameters
@@ -718,15 +778,19 @@
     items:
     - name: "Introduction to deployment pipelines"
       href: deployment-pipelines-overview.md
-    - name: "Understand the deployment process"
+    - name: "The deployment pipelines process"
       href: deployment-pipelines-process.md
     - name: "Get started"
       href: deployment-pipelines-get-started.md   
     - name: "Assign a workspace"
-      href: deployment-pipelines-assign.md 
+      href: deployment-pipelines-assign.md
+    - name: "Compare content in different stages"
+      href: deployment-pipelines-compare.md
+    - name: "Deploy content to the next stage"
+      href: deployment-pipelines-deploy.md
     - name: "Deployment history"
       href: deployment-pipelines-history.md  
-    - name: "Create deployment pipeline rules"
+    - name: "Deployment rules"
       href: deployment-pipelines-create-rules.md                      
     - name: "Automate deployment pipelines"
       href: deployment-pipelines-automation.md         

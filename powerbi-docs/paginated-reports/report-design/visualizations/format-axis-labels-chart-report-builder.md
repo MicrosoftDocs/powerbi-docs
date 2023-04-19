@@ -13,7 +13,7 @@ ms.reviewer: monaraya
 ---
 # Format axis labels on a paginated report chart (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
 Coordinate-based chart types (column, bar, area, point, line, and range) have two axes that are used to categorize and display data relationships in a paginated report. Different types of formatting are applied to each axis.  
   
@@ -25,7 +25,7 @@ Coordinate-based chart types (column, bar, area, point, line, and range) have tw
 ## Types of axes  
  The chart has two primary axes: the value axis and the category axis.  
   
- ![Screenshot showing Chart categorical and value axes.](media/paginated-reports-visualizations/axes-categorical-vs-value.png "Chart categorical and value axes")  
+ ![Screenshot showing Chart categorical and value axes.](media/paginated-reports-visualizations/axes-categorical-vs-value.png "Chart categorical and value axes.")  
   
  When you drag a field from your dataset onto the chart surface, the chart determines whether this field belongs on the category or value axis.  
   
@@ -93,7 +93,8 @@ Coordinate-based chart types (column, bar, area, point, line, and range) have tw
  In Bar, Column and Scatter chart types, the chart automatically adds side margins on the ends of the x-axis. You cannot change the size of the margin. In all other chart types, the chart does not add side margins. For more information, see [Add or Remove Margins from a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-or-remove-margins-from-a-chart-report-builder-and-ssrs).  
   
 ## In this section  
- [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/format-axis-labels-as-dates-or-currencies-report-builder-and-ssrs)  
+
+ [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](format-axis-labels-dates-currencies-report-builder.md)  
   
  [Position Labels in a Chart &#40;Power BI Report Builder&#41;](position-labels-chart-report-builder.md)  
   
@@ -105,6 +106,6 @@ Coordinate-based chart types (column, bar, area, point, line, and range) have tw
   
 ## Next steps 
 
-- [Formatting a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)
+- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)
 - [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
 - [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)  

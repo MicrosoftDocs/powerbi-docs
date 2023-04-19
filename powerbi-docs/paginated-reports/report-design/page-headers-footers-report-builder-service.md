@@ -12,7 +12,7 @@ ms.reviewer: rpatkar
 
 # Page headers and footers in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
 A paginated report can contain a header and footer that run along the top and bottom of each page, respectively. Headers and footers can contain static text, images, lines, rectangles, borders, background color, background images, and expressions. Expressions include dataset field references for reports with exactly one dataset and aggregate function calls that include the dataset as a scope.  
   
@@ -47,7 +47,7 @@ A paginated report can contain a header and footer that run along the top and bo
 |Fields collection for items on the page|Indirectly. For example,<br /><br /> `=Sum(ReportItems!Textbox1.Value)`|Yes. For example,<br /><br /> `=Sum(Fields!Quantity.Value,"DataSet1")`|  
 |Data-bound image|Indirectly. For example, `=ReportItems!TXT_Photo.Value`|Yes. For example,<br /><br /> `=First(Fields!Photo.Value,"DataSet1")`|  
   
- The following sections in this topic show ready-to-use expressions that get variable data commonly used in headers and footers. There is also a section on how the Excel rendering extension processes headers and footers. For more information about expressions, see [Expressions &#40;Report Builder and service&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs).
+ The following sections in this topic show ready-to-use expressions that get variable data commonly used in headers and footers. There is also a section on how the Excel rendering extension processes headers and footers. For more information about expressions, see [Expressions (Power BI Report Builder)](../../report-builder-expressions.md).
   
 ## Add calculated page totals to a header or footer
 

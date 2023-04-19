@@ -18,6 +18,9 @@ Whether you create a button in Power BI Desktop or the Power BI service, you can
 
 :::image type="content" source="media/power-bi-customize-button/power-bi-customize-shape-parallelogram.png" alt-text="Screenshot showing button shape options.":::
 
+> [!NOTE]
+> Customizing a button requires edit permissions to the report. Sharing a report requires a Power BI Pro or PPU license or for the report to be saved in Premium capacity. For more information, see [Which license do I have](../fundamentals/service-features-license-type.md) and [What is Premium](../enterprise/service-premium-what-is.md).
+
 ## Change the shape
 
 A rectangle is the default shape for buttons, but you can change the shape.
