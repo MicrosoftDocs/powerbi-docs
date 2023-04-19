@@ -54,9 +54,8 @@ If you don't have a subscription, *OneDrive for work or school* and *SharePoint*
 
 :::image type="content" source="media/service-excel-workbook-files/excel-files-new-03.png" alt-text="Screenshot of subscription services disabled.":::
 
-
-     > [!NOTE]
-     > You can't upload files from SharePoint Document set folder and from personal OneDrive accounts.
+> [!NOTE]
+> You can't upload files from SharePoint Document set folder or from personal OneDrive accounts.
 
 ## Publish a file from Power BI Desktop to the Power BI service
 
