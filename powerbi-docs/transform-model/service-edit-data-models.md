@@ -37,19 +37,19 @@ You can open the data model for your dataset in the following ways:
 
 * From the workspace content list, select **More options (...)** for the dataset and select **Open data model**.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-03.png" alt-text="Screen shot of opening the data model from the more options menu." lightbox="media/service-edit-data-models/service-edit-data-models-03.png":::
+    :::image type="content" source="media/service-edit-data-models/service-edit-data-models-03.png" alt-text="Screen shot of opening the data model from the more options menu." lightbox="media/service-edit-data-models/service-edit-data-models-03.png":::
 
 * From the datahub content list, select **More options (...)** for the dataset and select **Open data model**.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-04.png" alt-text="Screen shot of opening the data model from the datahub content list." lightbox="media/service-edit-data-models/service-edit-data-models-04.png":::
+    :::image type="content" source="media/service-edit-data-models/service-edit-data-models-04.png" alt-text="Screen shot of opening the data model from the datahub content list." lightbox="media/service-edit-data-models/service-edit-data-models-04.png":::
 
 * From the dataset details page, select **Open data model**.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-05.png" alt-text="Screen shot of opening the data model from the open data model button." lightbox="media/service-edit-data-models/service-edit-data-models-05.png":::
+    :::image type="content" source="media/service-edit-data-models/service-edit-data-models-05.png" alt-text="Screen shot of opening the data model from the open data model button." lightbox="media/service-edit-data-models/service-edit-data-models-05.png":::
 
 * From **edit mode** for a report connected to the dataset, select **Open data model** to open the corresponding data model in another tab.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-06.png" alt-text="Screen shot of opening the data model in edit mode." lightbox="media/service-edit-data-models/service-edit-data-models-06.png":::
+    :::image type="content" source="media/service-edit-data-models/service-edit-data-models-06.png" alt-text="Screen shot of opening the data model in edit mode." lightbox="media/service-edit-data-models/service-edit-data-models-06.png":::
 
 ## Model data
 When you open your data model you can see all the tables, columns, and relationships in your model. You can now edit your data model, and any changes are automatically saved. 
@@ -167,7 +167,7 @@ Power BI administrators can enable or disable data model editing in the service 
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-22.png" alt-text="Screen shot of enabling data model editing in the admin portal.":::
 
-### Viewing audit logs and activity events
+## Viewing audit logs and activity events
 Power BI administrators can audit operations pertaining to editing data models in the web operations from the **Microsoft 365 Admin Center**. Audit operations supported for editing data models in the web are the following:
 
 
