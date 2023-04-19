@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 04/12/2023
+ms.date: 04/18/2023
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -19,6 +19,8 @@ You can use private links to provide secure access for data traffic in Power BI.
 When private link connections are used, those connections go through the Microsoft private network backbone when Power BI users access resources in the Power BI service.
 
 To learn more about Azure Private Link, see [What is Azure Private Link](/azure/private-link/private-link-overview).
+
+Enabling private endpoints has an impact on many items, so please review the [considerations and limitations](#considerations-and-limitations) section in this article before enabling private endpoints.
 
 ## Understand private endpoints
 
