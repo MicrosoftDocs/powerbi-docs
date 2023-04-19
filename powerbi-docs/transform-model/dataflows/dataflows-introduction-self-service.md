@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 01/13/2023
+ms.date: 03/22/2023
 LocalizationGroup: Data from files
 ---
 # Introduction to dataflows and self-service data prep
@@ -31,6 +31,10 @@ Dataflows are designed to support the following scenarios:
 * If you want to work with large data volumes and perform ETL at scale, dataflows with Power BI Premium scales more efficiently and gives you more flexibility. Dataflows supports a wide range of cloud and on-premises sources.
 
 You can use Power BI Desktop and the Power BI service with dataflows to create datasets, reports, dashboards, and apps that use the Common Data Model. From these resources, you can gain deep insights into your business activities. Dataflow refresh scheduling is managed directly from the workspace in which your dataflow was created, just like your datasets.
+
+> [!NOTE]
+> Dataflows are not available in the Power BI service for U.S. Government DoD customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
+
 
 ## Next steps
 

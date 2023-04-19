@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 12/12/2021
+ms.date: 03/23/2023
 ---
 # View Power BI reports optimized for your phone
 
@@ -86,7 +86,7 @@ There are few ways to drill down:
 2. Tooltip will show up, and if hierarchy is defined, then the tooltip footer will show drill-down and up arrow.
 3. Tap on the down arrow to drill down
 
-    ![Tap drill down](media/mobile-apps-view-phone-report/report-drill-down.png)
+    :::image type="content" source="./media/mobile-apps-view-phone-report/report-drill-down.png" alt-text="Screenshot of a drill-down on a visual as seen in the Power BI mobile app." border="false":::
     
 4. Tap on the up arrow to drill up.
 
@@ -99,7 +99,7 @@ There are few ways to drill down:
 2. Tap the explore icon ![Explore icon](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) in the lower left.
    
     ![Explore mode](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-mode.png)
-3. Tap **Show next level** or **Expand to next level**.
+3. Tap **Show next level** or **Expand to next level**. *Show next level* shows the next level down. *Expand to next level* shows both the current level and the next level down.
    
     ![Expand to next level](./media/mobile-apps-view-phone-report/power-bi-phone-report-expand-levels.png)
    
@@ -121,14 +121,13 @@ Report authors can [define drillthrough](../../create-reports/desktop-drillthrou
 2. Tooltip will show up, and if drillthrough is defined, then the tooltip footer will show the drillthrough arrow.
 3. Tap on the arrow to drill through
 
-    ![Tap the arrow to drill through](media/mobile-apps-view-phone-report/report-drill-through1.png)
+    :::image type="content" source="./media/mobile-apps-view-phone-report/report-drill-through1.png" alt-text="Screenshot of drill-through button on mobile app visual tooltip." border="false":::
 
 4. Choose which report page to drill through
 
-    ![Choose report page](media/mobile-apps-view-phone-report/report-drill-through2.png)
+    :::image type="content" source="./media/mobile-apps-view-phone-report/report-drill-through2.png" alt-text="Screenshot of drill-through options in the mobile app.":::
 
-5. Use the back button, at the app header to go back to the page you started from.
-
+5. Use the back arrow on the app header to go back to the page you started from.
 
 ## Next steps
 * [Create reports optimized for the Power BI mobile apps](../../create-reports/power-bi-create-mobile-optimized-report-about.md)

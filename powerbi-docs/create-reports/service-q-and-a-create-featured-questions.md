@@ -24,7 +24,7 @@ If you have edit permission for a dataset, you can add your own featured questio
 - You just need a [Power BI free license](../consumer/end-user-features.md) to add featured questions to a dataset in My Workspace in the Power BI service.
 - You need a Power BI Pro license to add featured questions in other workspaces in the Power BI service. Read more about [Power BI Pro licenses](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
 - You also need at least a Contributor role in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
-- If you want to follow along, get the [Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample) in the Power BI service.
+- If you want to follow along, get the [Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service) in the Power BI service.
 
 ## Create a featured question
 

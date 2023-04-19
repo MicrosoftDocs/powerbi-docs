@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 01/24/2023
+ms.date: 04/14/2023
 LocalizationGroup: Data from files
 ---
 # Configure dataflow storage to use Azure Data Lake Gen 2
@@ -38,6 +38,9 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 
 - Finally, you can connect to any ADLS Gen 2 [from the Admin portal](/power-bi/admin/service-admin-portal-azure-connections#workspace-level-storage-permissions), but if you connect directly to a workspace, you must first ensure there are no dataflows in the workspace before connecting.
 
+> [!NOTE]
+> Bring your own storage (Azure Data Lake Gen 2) is not available in the Power BI service for U.S. Government GCC customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
+
 The following table describes the permissions for ADLS and for Power BI required for ADLS Gen 2 and Power BI:
 
 |Action  |ADLS permissions  |Minimum Power BI permissions  |
@@ -58,7 +61,7 @@ The **Use default Azure connection** option is visible if admin has already conf
 - Use the tenant configured ADLS Gen 2 account by selecting the box called **Use the default Azure connection**, or
 - Select **Connect to Azure** to point to a new Azure Storage account.
 
-When you select **Connect to Azure**, Power BI retrieves a list of Azure subscriptions to which you have access. Fill in the dropdowns. Then choose a valid Azure subscription, resource group, and storage account that has the hierarchical namespace option enabled, which is the ADLS Gen2 flag.
+When you select **Connect to Azure**, Power BI retrieves a list of Azure subscriptions to which you have access. Fill in the dropdowns. Then choose a valid Azure subscription, resource group, and storage account that has the hierarchical namespace option enabled, which is the ADLS Gen2 flag. The personal account used to connect to Azure is only used once, to set the initial connection and grant the Power BI service account rights to read and write data, after which the original user account is no longer needed to keep the connection active.
 
 :::image type="content" source="media/dataflows-azure-data-lake-storage-integration/subscription-details-enter.png" alt-text="Screenshot of the Settings window after choosing Connecting to Azure.":::
 

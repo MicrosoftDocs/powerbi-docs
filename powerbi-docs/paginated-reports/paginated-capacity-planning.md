@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/18/2023
+ms.date: 04/04/2023
 LocalizationGroup: Premium
 ---
 # Paginated reports capacity planning
+
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
 Learn how to plan your [Premium capacity](./../enterprise/service-premium-what-is.md) to get the best performance out of your [paginated reports](paginated-reports-report-builder-power-bi.md), at a minimum cost. If you're migrating to Power BI from a different business intelligence tool, consider reading the articles listed below before you decide which capacity to use.
 
@@ -29,6 +31,8 @@ When you plan your capacity, consider the following:
 * The complexity of the report design. Nested [tablix](/sql/reporting-services/report-design/tablix-data-region-report-builder-and-ssrs),  multiple subreport and multiple row and column groups add to the complexity of the design, and require capacity resources. report-builder-tables-matrices-lists
 
 * The amount of data retrieved by the report. The more data the report needs, the more resources it requires from your capacity.
+
+* The way your report retrieves data. When you use connectors, drivers or gateways, data retrieval might take longer, require more resources and as a result become more expensive.
 
 * The number of report parameters and parameter values used by your reports. More values and parameters, require more resources from your capacity.
 

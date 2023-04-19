@@ -112,71 +112,82 @@ You can now modify the default settings of the Filters pane with the theme file.
 
  
 ```
-"outspacePane": [{ 
-
-"backgroundColor": {"solid": {"color": "#0000ff"}}, 
-
-"foregroundColor": {"solid": {"color": "#00ff00"}}, 
-
-"transparency": 50, 
-
-"titleSize": 35, 
-
-"headerSize": 8, 
-
-"fontFamily": "Georgia", 
-
-"border": true, 
-
-"borderColor": {"solid": {"color": "#ff0000"}} 
-
-}], 
-
-"filterCard": [ 
-
-{ 
-
-"$id": "Applied", 
-
-"transparency": 0, 
-
-"backgroundColor": {"solid": {"color": "#ff0000"}}, 
-
-"foregroundColor": {"solid": {"color": "#45f442"}}, 
-
-"textSize": 30, 
-
-"fontFamily": "Arial", 
-
-"border": true, 
-
-"borderColor": {"solid": {"color": "#ffffff"}}, 
-
-"inputBoxColor": {"solid": {"color": "#C8C8C8"}} 
-
-}, 
-
-{ 
-
-"$id": "Available", 
-
-"transparency": 40, 
-
-"backgroundColor": {"solid": {"color": "#00ff00"}}, 
-
-"foregroundColor": {"solid": {"color": "#ffffff"}}, 
-
-"textSize": 10, 
-
-"fontFamily": "Times New Roman", 
-
-"border": true, 
-
-"borderColor": {"solid": {"color": "#123456"}}, 
-
-"inputBoxColor": {"solid": {"color": "#777777"}} 
-
-}] 
+"outspacePane": [{
+        "backgroundColor": {
+            "solid": {
+                "color": "#0000ff"
+            }
+        },
+        "foregroundColor": {
+            "solid": {
+                "color": "#00ff00"
+            }
+        },
+        "transparency": 50,
+        "titleSize": 35,
+        "headerSize": 8,
+        "fontFamily": "Georgia",
+        "border": true,
+        "borderColor": {
+            "solid": {
+                "color": "#ff0000"
+            }
+        }
+    }
+], "filterCard": [{
+        "$id": "Applied",
+        "transparency": 0,
+        "backgroundColor": {
+            "solid": {
+                "color": "#ff0000"
+            }
+        },
+        "foregroundColor": {
+            "solid": {
+                "color": "#45f442"
+            }
+        },
+        "textSize": 30,
+        "fontFamily": "Arial",
+        "border": true,
+        "borderColor": {
+            "solid": {
+                "color": "#ffffff"
+            }
+        },
+        "inputBoxColor": {
+            "solid": {
+                "color": "#C8C8C8"
+            }
+        }
+    }, {
+        "$id": "Available",
+        "transparency": 40,
+        "backgroundColor": {
+            "solid": {
+                "color": "#00ff00"
+            }
+        },
+        "foregroundColor": {
+            "solid": {
+                "color": "#ffffff"
+            }
+        },
+        "textSize": 10,
+        "fontFamily": "Times New Roman",
+        "border": true,
+        "borderColor": {
+            "solid": {
+                "color": "#123456"
+            }
+        },
+        "inputBoxColor": {
+            "solid": {
+                "color": "#777777"
+            }
+        }
+    }
+]
 ```
 
 ## Sort the Filters pane

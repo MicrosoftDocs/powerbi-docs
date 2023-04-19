@@ -95,7 +95,7 @@ The following aren't supported for **Export to PDF**.  Either the **PDF** export
     - [Power Automate visuals](../create-reports/power-bi-automate-visual.md) 
     - [The Paginated report visual](../visuals/paginated-report-visual.md)
     - Visio visuals
-* Visual [displayed as a Data point table or displayed with "Show data point as a table"](../create-reports/desktop-see-data-see-records.md), can't be exported to PDF.
+* Visual [displayed as a Data point table or displayed with "Show data point as a table"](../consumer/end-user-show-data.md), can't be exported to PDF.
 
 ### Reports that can't be exported
 * Power BI reports with more than 50 report pages currently can't be exported. Paginated reports don't have this limitation. See [Print a paginated report](../consumer/end-user-paginated-report.md#interact-with-a-paginated-report) for details. 
@@ -106,7 +106,7 @@ The following aren't supported for **Export to PDF**.  Either the **PDF** export
 ### General
 * Dataset refresh operations using an XMLA endpoint.
 * In the Power BI service, URL filters aren't currently respected when you choose **Current Values** for your export.
-* Visuals [displayed as a Data table or displayed with "Show as a table"](../create-reports/desktop-see-data-see-records.md) will be included in the export, but the visual will display in its default state, without the table. 
+* Visuals [displayed as a Data table or displayed with "Show as a table"](../consumer/end-user-show-data.md) will be included in the export, but the visual will display in its default state, without the table. 
 * The process of exporting the report to PDF might take a few minutes to complete, so be patient. Factors that can affect the time required include the structure of the report and the current load on the Power BI service or Power BI Desktop.
 * Background images are cropped with the visualization's bounding area. Also, when you export to PDF with reports that contain a background image, you might see a distorted image in the export if you use the **Normal** or **Fill** options for the **Page Background**. For best results, use the **Fit** option to avoid issues with your exported document. Or, remove backgrounds before exporting.
 
