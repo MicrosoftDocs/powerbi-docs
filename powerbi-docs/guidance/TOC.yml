@@ -187,6 +187,8 @@
           href: powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md
         - name: "Self-service content publishing"
           href: powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md
+        - name: "Enterprise content publishing"
+          href: powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md
         - name: "Advanced data model management"
           href: powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md
         - name: "Self-service real-time analytics"
