@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 04/20/2023
+ms.custom: references_regions
 LocalizationGroup: Transform and shape data
 ---
 
@@ -20,11 +21,11 @@ Editing data models in the Power BI service is automatically enabled for dataset
 
 1. In the Power BI service, select **Settings** for the workspace where you want to enable the preview feature.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-01.png" alt-text="Screen shot of settings gear icon." lightbox="media/service-edit-data-models/service-edit-data-models-01.png":::
+    :::image type="content" source="media/service-edit-data-models/service-edit-data-models-01.png" alt-text="Screen shot of settings gear icon." lightbox="media/service-edit-data-models/service-edit-data-models-01.png":::
 
 2. Select **Advanced > Data model settings > Users can edit data models in the Power BI service (preview)**
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-02.png" alt-text="Screen shot of enable preview feature." lightbox="media/service-edit-data-models/service-edit-data-models-02.png":::
+    :::image type="content" source="media/service-edit-data-models/service-edit-data-models-02.png" alt-text="Screen shot of enable preview feature." lightbox="media/service-edit-data-models/service-edit-data-models-02.png":::
 
 3. Select **Save** to see the new experience for datasets in your workspace.
 
