@@ -9,10 +9,18 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 03/06/2023
+ms.date: 04/19/2023
 ---
 
 # What's new in the Power BI add-in for PowerPoint
+
+## April 2023
+
+### Put a border around your add-in!
+
+Now you can add a custom outline to your Power BI add-in. Customize color, weight, transparency, and more to make your data stand out.
+
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/power-bi-powerpoint-addin-add-border.gif" alt-text="Animation showing adding a border around the Power BI add-in for PowerPoint.":::
 
 ## March 2023
 
