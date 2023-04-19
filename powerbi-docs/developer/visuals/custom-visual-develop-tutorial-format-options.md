@@ -74,7 +74,7 @@ This tutorial explains how to add common formatting properties to a visual. We'l
 
 Now let's add new group called *color* for configuring the circle color and thickness of the circle's outline.
 
-1. In **PowerShell**, enter *Ctrl+C* to stop the custom visual.
+1. In **PowerShell**, enter <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the custom visual.
 
 2. In **Visual Studio Code**, in the `capabilities.json` file, insert the following JSON fragment into the object labeled **objects**.
 
