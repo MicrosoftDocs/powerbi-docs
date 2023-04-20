@@ -14,7 +14,7 @@ LocalizationGroup: Data from files
 
 # Data loss prevention policies for Power BI
 
-To help organizations detect and protect their sensitive data, Power BI supports [Microsoft Purview Data Loss Prevention (DLP) polices](/microsoft-365/compliance/dlp-learn-about-dlp). When a DLP policy for Power BI detects a sensitive dataset, a policy tip can be attached to the dataset in the Power BI service that explains the nature of the sensitive content, and an alert can be registered in the data loss prevention **Alerts** tab in the Microsoft Purview compliance portal for monitoring and management by administrators. In addition, email alerts can be sent to administrators and specified users.
+To help organizations detect and protect their sensitive data, Power BI supports [Microsoft Purview Data Loss Prevention (DLP) polices](/microsoft-365/compliance/dlp-learn-about-dlp). When a DLP policy for Power BI detects a sensitive dataset, a policy tip can be attached to the dataset in the Power BI service that explains the nature of the sensitive content, and an alert can be registered on the data loss prevention **Alerts** page in the Microsoft Purview compliance portal for monitoring and management by administrators. In addition, email alerts can be sent to administrators and specified users.
 
 ## Considerations and limitations
 
@@ -88,13 +88,13 @@ When a DLP policy detects an issue with a dataset:
     >[!NOTE]
     > If you hide the policy tip, it doesn’t get deleted. It will appear the next time you visit the page.
 
-* If alerts are enabled in the policy, an alert will be recorded on the data loss prevention **Alerts** tab in the compliance portal, and (if configured) an email will be sent to administrators and/or specified users. The following image shows the **Alerts** tab in the data loss prevention section of the compliance portal.
+* If alerts are enabled in the policy, an alert will be recorded on the data loss prevention **Alerts** page in the compliance portal, and (if configured) an email will be sent to administrators and/or specified users. The following image shows the **Alerts** page in the data loss prevention section of the compliance portal. To get to the **Alerts** page, in the compliance portal, expand the **Data loss prevention** solution and choose **Alerts**.
 
-:::image type="content" source="./media/service-security-dlp-policies-for-power-bi-overview/power-bi-dlp-alerts-tab.png" alt-text="Screenshot of Alerts tab in the compliance portal.":::
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-overview/power-bi-dlp-alerts-tab.png" alt-text="Screenshot of Alerts tab in the compliance portal.":::
 
 ## Monitor and manage policy alerts
 
-Log into the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149) and navigate to **Data loss prevention > Alerts**.
+Log into the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149), expand the **Data loss prevention** solution, and choose **Alerts**.
 
 :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-overview/power-bi-dlp-alerts-tab.png" alt-text="Screenshot of D L P Alerts tab.":::
 
