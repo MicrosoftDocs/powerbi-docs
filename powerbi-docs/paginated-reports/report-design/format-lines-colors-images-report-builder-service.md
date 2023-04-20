@@ -35,7 +35,7 @@ Power BI Report Builder gives you the ability to format lines, colors, data regi
 
  Fields that contain images can be added to a data region. If you use an image field, the images appear in the report when the report is run.  
   
- You can also add images such as logos to the background of your report or to a rectangle, text box, table, matrix, or some parts of a chart, or to the body and page sections of a report. For more information, see [Images &#40;Power BI Report Builder and service&#41;](./images-report-builder-and-service.md).  
+ You can also add images such as logos to the background of your report or to a rectangle, text box, table, matrix, or some parts of a chart, or to the body and page sections of a report. For more information, see [Images &#40;Power BI Report Builder and service&#41;](./images-report-builder-service.md).  
   
 ## Next steps
 

@@ -15,7 +15,7 @@ ms.reviewer: rpatkar
 
 A Power BI paginated report can include an embedded image. Embedding an image ensures that the image is always available to a report, but can affect the size of the report definition, the file that defines the report. The images embedded in a report are listed in the Report Data pane.  
   
-You might want to embed an image in the report definition before adding the image to the design surface. For more information, see [Add a Background Image &#40;Power BI Report Builder&#41;](./add-a-background-image-report-builder-and-service.md).
+You might want to embed an image in the report definition before adding the image to the design surface. For more information, see [Add a Background Image &#40;Power BI Report Builder&#41;](./add-background-image-report-builder-service.md).
 
 ## Embed an image in a report  
   
@@ -53,5 +53,5 @@ You might want to embed an image in the report definition before adding the imag
   
 ## Next steps
 
-- [Images &#40;Power BI Report Builder and service&#41;](./images-report-builder-and-service.md)
-- [Add a Data-Bound Image &#40;Power BI Report Builder and service&#41;](./add-a-data-bound-image-report-builder-and-service.md)
+- [Images &#40;Power BI Report Builder and service&#41;](./images-report-builder-service.md)
+- [Add a Data-Bound Image &#40;Power BI Report Builder and service&#41;](./add-data-bound-image-report-builder-service.md)

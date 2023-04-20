@@ -83,13 +83,13 @@ However, overlapping report items are *not* supported in HTML, MHTML, Word, Exce
   
 ## Subreports
 
- A subreport renders as a rectangle that contains another report that is defined in a separate report .rdl file. For viewing reports on service, you must published the subreport file to the service before the parent report can access it.  
+ A subreport renders as a rectangle that contains another report that's defined in a separate report .rdl file. For viewing reports on service, you must publish the subreport file to the service before the parent report can access it.  
   
  The following rules apply when rendering subreports:  
   
-* Subreports can grow to the size of the body defined in the .rdl file that defines the subreport. For example, if the RDL for the subreport states that the subreport body is 5 inches wide, then the subreport is 5 inches wide within the parent report.  
+* Subreports can grow to the size of the body defined in the .rdl file that defines the subreport. For example, if the .rdl for the subreport states that the subreport body is 5 inches wide, then the subreport is 5 inches wide within the parent report.  
   
-* Subreports inherit column settings from the parent report. Column settings that are defined in the original RDL are always ignored.  
+* Subreports inherit column settings from the parent report. Column settings that are defined in the original .rdl are always ignored.  
   
 * Only the body of the subreport is rendered. Header and footer sections that are defined in the subreport's .rdl file are not rendered when the subreport is rendered in the parent report.  
   
@@ -104,6 +104,6 @@ However, overlapping report items are *not* supported in HTML, MHTML, Word, Exce
 ## Next steps 
 
  [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)
- [Rendering behaviors in a paginated report (Power BI Report Builder)](rendering-behaviors-report-builder-and-service.md)
+ [Rendering behaviors in a paginated report (Power BI Report Builder)](render-behaviors-report-builder-service.md)
  [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
  [Tables, matrixes, and lists in Power BI Report Builder](../report-builder-tables-matrices-lists.md)

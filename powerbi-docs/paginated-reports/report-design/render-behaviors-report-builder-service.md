@@ -23,9 +23,9 @@ Depending on the renderer you select, certain rules are applied to the Power BI 
   
  This topic discusses the general rules that are applied by Power BI Report Builder. For more specific information, see these articles:
 
-* [Rendering report items in paginated reports (Power BI Report Builder)](rendering-report-items-report-builder-and-service.md)
-* [Rendering data regions in a paginated report (Power BI Report Builder)](rendering-data-regions-report-builder-and-service.md)
-* [Rendering data in a paginated report (Power BI Report Builder)](rendering-data-report-builder-and-service.md)
+* [Rendering report items in paginated reports (Power BI Report Builder)](render-report-items-report-builder-service.md)
+* [Rendering data regions in a paginated report (Power BI Report Builder)](render-data-regions-report-builder-service.md)
+* [Rendering data in a paginated report (Power BI Report Builder)](render-data-report-builder-service.md)
 
 ## General behaviors for HTML, MHTML, Word, and Excel (soft page-break renderers)
 
@@ -127,6 +127,6 @@ The following rules apply to page headers and footers when rendered in the PDF o
 ## Next steps
 
  [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
-  [Page Layout and Rendering &#40;Report Builder and service&#41;](./page-layout-and-rendering-report-builder-and-service.md)  
+  [Page Layout and Rendering &#40;Report Builder and service&#41;](./page-layout-rendering-report-builder-service.md)  
   
   

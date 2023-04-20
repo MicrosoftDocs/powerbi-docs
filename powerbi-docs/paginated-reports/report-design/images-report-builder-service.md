@@ -29,7 +29,7 @@ An image is a Power BI paginated report item that contains a reference to an ima
 
  You can embed images in a report so that all image data is stored within the report definition. When you embed an image, the image is MIME-encoded and stored as text in the report definition. Using an embedded image ensures that the image is always available to the report, but it also increases the size of the report definition.  
   
- For more information about embedding an image, see [Embed an image in a Report &#40;Power BI Report Builder and service&#41;](./embed-an-image-in-a-report-report-builder-and-service.md).  
+ For more information about embedding an image, see [Embed an image in a Report &#40;Power BI Report Builder and service&#41;](./embed-image-report-report-builder-service.md).  
 
 ##  <a name="ExternalImages"></a> External images
 
@@ -38,7 +38,7 @@ An image is a Power BI paginated report item that contains a reference to an ima
 - When the report is run in Report Builder or Report Designer, preview uses the credentials of the user to display the image.
 - When the report is run in the Power BI service, the image must be publicly available and not require authentication or additional sign-in to locate the image via external URL.
   
- For more information about adding an external image to a report, see [Add an External image &#40;Report Builder and SSRS&#41;](./add-an-external-image-report-builder-and-service.md).  
+ For more information about adding an external image to a report, see [Add an External image &#40;Report Builder and SSRS&#41;](./add-external-image-report-builder-service.md).  
   
 ##  <a name="BackgroundImages"></a> Background images
 
@@ -47,11 +47,11 @@ An image is a Power BI paginated report item that contains a reference to an ima
 > [!NOTE]  
 > Image rendering extension does not render the body background image in the page header and footer.  
   
- For more information about adding a background image, see [Add a Background image &#40;Power BI Report Builder and service&#41;](./add-a-background-image-report-builder-and-service.md).  
+ For more information about adding a background image, see [Add a Background image &#40;Power BI Report Builder and service&#41;](./add-background-image-report-builder-service.md).  
   
   
 ##  <a name="DataboundImages"></a> Data-bound images  
- You can add images that are stored in a database to your report. You use the same image report item as the one used for static images, but with a set of properties that indicate that the image is stored in a database. To view instructions about working with data-bound images, see [Add a Data-Bound image &#40;Power BI Report Builder and service&#41;](./add-a-data-bound-image-report-builder-and-service.md).  
+ You can add images that are stored in a database to your report. You use the same image report item as the one used for static images, but with a set of properties that indicate that the image is stored in a database. To view instructions about working with data-bound images, see [Add a Data-Bound image &#40;Power BI Report Builder and service&#41;](./add-data-bound-image-report-builder-service.md).  
 
 ## Supported file types
 
@@ -66,7 +66,7 @@ SVG files aren't supported.
  
 ## Next steps
 
- [Add an external image &#40;Power BI Report Builder and service&#41;](./add-an-external-image-report-builder-and-service.md)  
- [Embed an image in a report &#40;Power BI Report Builder and service&#41;](./embed-an-image-in-a-report-report-builder-and-service.md)  
- [Add a background image &#40;Power BI Report Builder and service&#41;](./add-a-background-image-report-builder-and-service.md)  
- [Add a data-bound image &#40;Power BI Report Builder and service&#41;](./add-a-data-bound-image-report-builder-and-service.md)  
+ [Add an external image &#40;Power BI Report Builder and service&#41;](./add-external-image-report-builder-service.md)  
+ [Embed an image in a report &#40;Power BI Report Builder and service&#41;](./embed-image-report-report-builder-service.md)  
+ [Add a background image &#40;Power BI Report Builder and service&#41;](./add-background-image-report-builder-service.md)  
+ [Add a data-bound image &#40;Power BI Report Builder and service&#41;](./add-data-bound-image-report-builder-service.md)  

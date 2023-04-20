@@ -76,7 +76,7 @@ A report can also contain subreports.
   
  For example, reports rendered to HTML and MHTML formats are optimized for a computer screen-based experience where pages can be various lengths.  
   
- For more information, see [Rendering behaviors in a paginated report (Power BI Report Builder)](rendering-behaviors-report-builder-and-service.md).  
+ For more information, see [Rendering behaviors in a paginated report (Power BI Report Builder)](render-behaviors-report-builder-service.md).  
 
 ##  <a name="Pagination"></a> Pagination  
 

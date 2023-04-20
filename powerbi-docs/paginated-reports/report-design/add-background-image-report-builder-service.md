@@ -42,13 +42,13 @@ You can add a background image to a Power BI paginated report item such as a rec
   
          Set **Source** to **External**.  
   
-         Set **Value** to a valid path to an image that is available without needing authentication or additional sign-in over the internet. For more information, see [Add an External Image &#40;Report Builder and service&#41;](add-an-external-image-report-builder-and-service.md).
+         Set **Value** to a valid path to an image that is available without needing authentication or additional sign-in over the internet. For more information, see [Add an External Image &#40;Report Builder and service&#41;](add-external-image-report-builder-service.md).
   
     - For an image that's contained in a field in the database to which the report item is connected:  
   
          Set **Source** to **Database**.  
   
-         Set **Value** to the name of a field in the report dataset. For more information, see [Add a Data-Bound Image &#40;Report Builder and service&#41;](add-a-data-bound-image-report-builder-and-service.md).
+         Set **Value** to the name of a field in the report dataset. For more information, see [Add a Data-Bound Image &#40;Report Builder and service&#41;](add-data-bound-image-report-builder-service.md).
   
          For **MIMEType**, or file format, select the appropriate MIME type for the image-for example, .bmp.  
   
@@ -60,5 +60,5 @@ You can add a background image to a Power BI paginated report item such as a rec
          For background images in a chart, **BackgroundRepeat** can be set to **Default**, **Repeat**, **Fit**, and **Clip**, but not **RepeatX** or **RepeatY**.  
   
 ## Next steps
- [Images &#40;Power BI Report Builder and service&#41;](images-report-builder-and-service.md)
+ [Images &#40;Power BI Report Builder and service&#41;](images-report-builder-service.md)
  

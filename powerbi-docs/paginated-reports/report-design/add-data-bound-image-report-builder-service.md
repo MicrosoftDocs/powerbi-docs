@@ -41,7 +41,7 @@ Adding a data-bound image to a page header or page footer requires additional st
   
 ## Next steps
 
- [Images &#40;Power BI Report Builder and service&#41;](./images-report-builder-and-service.md)   
- [Embed an Image in a Report &#40;Power BI Report Builder and service&#41;](./embed-an-image-in-a-report-report-builder-and-service.md)   
- [Add an External Image &#40;Power BI Report Builder and service&#41;](./add-an-external-image-report-builder-and-service.md)   
+ [Images &#40;Power BI Report Builder and service&#41;](./images-report-builder-service.md)   
+ [Embed an Image in a Report &#40;Power BI Report Builder and service&#41;](./embed-image-report-report-builder-service.md)   
+ [Add an External Image &#40;Power BI Report Builder and service&#41;](./add-external-image-report-builder-service.md)   
  
