@@ -79,11 +79,11 @@ When a dataset is evaluated by DLP policies, if it matches the conditions specif
 When a DLP policy detects an issue with a dataset:
 * If "user notification" is enabled in the policy, the dataset will be marked in the Power BI service with a shield that indicates that a DLP policy has detected an issue with the dataset.
 
-    ![Screenshot of policy tip badge on dataset in lists.](media/service-security-dlp-policies-for-power-bi-overview/power-bi-dlp-policy-tip-on-dataset.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-overview/power-bi-dlp-policy-tip-on-dataset.png" alt-text="Screenshot of policy tip badge on dataset in lists.":::
 
     Open the dataset details page to see a policy tip that explains the policy violation and how the detected type of sensitive information should be handled.
 
-    ![Screenshot of policy tip on dataset details page.](media/service-security-dlp-policies-for-power-bi-overview/power-bi-dlp-policy-tip-in-dataset-details.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-overview/power-bi-dlp-policy-tip-in-dataset-details.png" alt-text="Screenshot of policy tip on dataset details page.":::
 
     >[!NOTE]
     > If you hide the policy tip, it doesn’t get deleted. It will appear the next time you visit the page.
