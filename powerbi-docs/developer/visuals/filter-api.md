@@ -185,7 +185,7 @@ interface ITupleFilter extends IFilter {
 }
 ```
 
-Where 
+Where
 
 * `target` is an array of columns with table names:
 
@@ -195,7 +195,7 @@ Where
 
     The filter can address columns from various tables.
 
-* `$schema` is https://powerbi.com/product/schema#tuple.
+* `$schema` is <https://powerbi.com/product/schema#tuple>.
 
 * `filterType` is *FilterType.Tuple*.
 
@@ -289,7 +289,7 @@ When you switch bookmarks, Power BI calls the `update` method of the visual, and
 
 Some sample JSON filter code is shown in the following image:
 
-![JSON filter code](media/filter-api/json-filter.png)
+:::image type="content" source="media/filter-api/json-filter.png" alt-text="Screenshot of sample JSON filter code showing values in an array.":::
 
 ### Clear the JSON filter
 
@@ -298,6 +298,21 @@ To reset or clear the filter, pass a `null` value to the filter API.
 ```typescript
 // invoke the filter
 visualHost.applyJsonFilter(null, "general", "filter", FilterAction.merge);
+```
+
+## Detect filtered state
+
+Starting with API version 5.4, the `isDataFilterApplied` boolean parameter in the `DataViewMetadata` object notes if the rendered visual or report has any filters applied to it. The developer can then adjust the display accordingly (for exmaple, by adding or removing text depending on if there's a filter).
+
+To use the `isDataFilterApplied` parameter:
+
+```typescript
+public update(options: VisualUpdateOptions) {
+    const dataView = options?.dataViews[0]; 
+    if (dataView && dataView?.metadata?.isDataFilterApplied) {
+        ...
+ }
+}
 ```
 
 ## Next steps
