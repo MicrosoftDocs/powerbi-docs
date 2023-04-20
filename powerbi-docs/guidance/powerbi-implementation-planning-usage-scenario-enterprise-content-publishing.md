@@ -143,8 +143,8 @@ We recommend that you define a structured process for how content creators shoul
 
 > [!IMPORTANT]
 > The value provided by DevOps is directly proportional to the adherence to the processes that define its use.
-
-A successful collaboration depends on a well-defined process. It's important to clearly describe and document the end-to-end development workflow. Ensure that the selected strategies and processes align with existing practices in your team, and if not, how you'll manage change. Further, ensure that the processes are clear and communicated to all team members and stakeholders. Make sure that team members and stakeholders who are new to the processes are trained in how to adopt them, and that they appreciate the value of successful DevOps adoption.
+>
+> A successful collaboration depends on a well-defined process. It's important to clearly describe and document the end-to-end development workflow. Ensure that the selected strategies and processes align with existing practices in your team, and if not, how you'll manage change. Further, ensure that the processes are clear and communicated to all team members and stakeholders. Make sure that team members and stakeholders who are new to the processes are trained in how to adopt them, and that they appreciate the value of successful DevOps adoption.
 
 ### Power BI REST APIs
 
@@ -154,7 +154,7 @@ We recommend that you use a [service principal](/power-bi/enterprise/service-pre
 
 When you use a service principal, be sure to carefully manage permissions. Your goal should be to follow the [principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access). You should set sufficient permissions for the service principal without over-provisioning permissions. Use [Azure Key Vault](/azure/devops/pipelines/release/azure-key-vault?view=azure-devops&tabs=yaml&preserve-view=true) or another service that securely stores the service principal secrets and credentials.
 
-> [!IMPORTANT]
+> [!CAUTION]
 > If you have a data model that's saved as a human-readable metadata format, it can't be published by using the Power BI REST APIs. Instead, you must publish it by using the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools). You can publish metadata files by using third-party tools like the [Tabular Editor command-line interface](https://docs.tabulareditor.com/te2/Command-line-Options.html) (CLI). You can also publish metadata files programmatically by using your own custom .NET development. Developing a custom solution requires more effort, since you must use the Microsoft Tabular Object Model (TOM) extension of the Analysis Management Object (AMO) client libraries.
 
 ### Azure Pipelines
