@@ -34,7 +34,7 @@ This section lists the Power BI features that aren't supported for *China North*
 
 * [Copy paste visuals](../visuals/power-bi-visualization-copy-paste.md) in Power BI reports
 
-* [Data loss prevention (DLP) policies for Power BI](service-security-dlp-policies-for-power-bi.md)
+* [Data loss prevention (DLP) policies for Power BI](service-security-dlp-policies-for-power-bi-overview.md)
 
 ## Next steps
 
