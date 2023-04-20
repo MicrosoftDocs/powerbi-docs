@@ -5005,7 +5005,17 @@
             "source_path": "powerbi-docs/developer/embedded/jupyter-quick-report.md",
             "redirect_url": "/power-bi/create-report/mobile-apps-for-mobile-devices",
             "redirect_document_id": false
-        }       
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-dlp-policies-for-power-bi.md",
+            "redirect_url": "/power-bi/enterprise/service-security-dlp-policies-for-power-bi-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-dlp-policies-for-power-bi-override.md",
+            "redirect_url": "/power-bi/enterprise/service-security-dlp-policies-for-power-bi-respond",
+            "redirect_document_id": true
+        }                                                                                                  
   ]          
 
 }
