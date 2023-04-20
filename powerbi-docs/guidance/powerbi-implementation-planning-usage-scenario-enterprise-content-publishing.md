@@ -42,7 +42,7 @@ This article focuses on the first option, which uses the Power BI REST APIs with
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support enterprise content publishing. The focus is on the use of Azure DevOps to manage and publish content programmatically at scale through development, test, and production workspaces in the Power BI service.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/usage-scenario-enterprise-content-publishing-inline.png" alt-text"Image shows a diagram of enterprise content publishing, which is enhancing collaboration and managing content at scale by using Azure DevOps. Items in the diagram are described in the table." lightbox="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/usage-scenario-enterprise-content-publishing-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/usage-scenario-enterprise-content-publishing-inline.png" alt-text="Image shows a diagram of enterprise content publishing, which is enhancing collaboration and managing content at scale by using Azure DevOps. Items in the diagram are described in the table." lightbox="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/usage-scenario-enterprise-content-publishing-expanded.png" border="false":::
 
 The scenario diagram depicts the following user actions, processes, and features.
 
@@ -98,13 +98,13 @@ To collaborate and communicate in Azure DevOps, you use supporting services.
 - **[Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&preserve-view=true):** Content owners use boards to track _work items_. Work items are each assigned to a single developer on the team, and they describe issues, bugs, or features in the solution, and the corresponding stakeholders.
 - **[Azure Wiki](/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser&preserve-view=true):** Content creators share information with their team to understand and contribute to the solution.
 - **[Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true):** Content creators track changes in the remote repository and merge them into a single solution.
-- **[Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops&preserve-view=true):** Pipeline owners set up programmatic logic to deploy the solution, either automatically or on-demand.
+- **[Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops&preserve-view=true):** Pipeline owners set up programmatic logic to deploy the solution, either automatically or on-demand.
 
 #### Collaboration flow diagram
 
 The following diagram depicts a high-level overview of how Azure DevOps enables collaboration in the enterprise content publishing usage scenario. The focus of the diagram is on the use of Azure DevOps to create a structured and documented content publishing process.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/azure-devops-collaboration-flow-inline.png" alt-text"Image shows the diagram as described in the previous paragraph. Items in the diagram are described in the table" lightbox="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/azure-devops-collaboration-flow-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/azure-devops-collaboration-flow-inline.png" alt-text="Image shows the diagram as described in the previous paragraph. Items in the diagram are described in the table" lightbox="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/azure-devops-collaboration-flow-expanded.png" border="false":::
 
 The diagram depicts the following user actions, processes, and features.
 
@@ -191,7 +191,7 @@ There are two different approaches to publish content with test and release pipe
 
 The following diagram depicts the first approach. In this approach, release pipelines orchestrate content deployment to test and production workspaces by using Power BI deployment pipelines. Content is promoted through development, test, and production workspaces in Power BI. While this approach is more robust and simpler to maintain, it requires Premium licensing.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/azure-pipelines-publish-content-approach-1-inline.png" alt-text"Image shows a diagram of the first approach as described in the previous paragraph. Items in the diagram are described in the table." lightbox="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/azure-pipelines-publish-content-approach-1-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/azure-pipelines-publish-content-approach-1-inline.png" alt-text="Image shows a diagram of the first approach as described in the previous paragraph. Items in the diagram are described in the table." lightbox="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/azure-pipelines-publish-content-approach-1-expanded.png" border="false":::
 
 The diagram depicts the following user actions, processes, and features of the first approach.
 
@@ -209,7 +209,7 @@ The diagram depicts the following user actions, processes, and features of the f
 
 The following diagram depicts the second approach. This approach doesn't use deployment pipelines. Instead, it uses release pipelines to publish content to test and production workspaces from Azure DevOps. Notably, this second approach doesn't require Premium licensing when you publish only Power BI Desktop files with the Power BI REST APIs. It does involve more setup effort and complexity, because you must manage deployment outside of Power BI. Development teams that already use DevOps for data solutions outside of Power BI may be more familiar with this approach. Development teams that use this approach can consolidate deployment of data solutions in Azure DevOps.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/azure-pipelines-publish-content-approach-2-inline.png" alt-text"Image shows a diagram of the second approach as described in the previous paragraph. Items in the diagram are described in the table." lightbox="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/azure-pipelines-publish-content-approach-2-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/azure-pipelines-publish-content-approach-2-inline.png" alt-text="Image shows a diagram of the second approach as described in the previous paragraph. Items in the diagram are described in the table." lightbox="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/azure-pipelines-publish-content-approach-2-expanded.png" border="false":::
 
 The diagram depicts the following user actions, processes, and features in the second approach.
 
