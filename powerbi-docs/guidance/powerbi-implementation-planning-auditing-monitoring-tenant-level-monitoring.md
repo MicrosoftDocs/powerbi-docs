@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/17/2023
+ms.date: 04/20/2023
 ---
 
 # Power BI implementation planning: Tenant-level monitoring
