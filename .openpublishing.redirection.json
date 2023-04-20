@@ -1530,6 +1530,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/paginated-reports/report-design/formatting-numbers-and-dates-report-builder-and-service.md",
+            "redirect_url": "/power-bi/paginated-reports/report-design/format-numbers-dates-report-builder-service",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/developer/overview-of-power-bi-rest-api.md",
             "redirect_url": "/power-bi/developer/automation/overview-of-power-bi-rest-api",
             "redirect_document_id": false
