@@ -365,7 +365,7 @@ interface ISelectionManager {
 
 The `select` method can accept an array of selections. This allows your visual to have several data points selected at once. The second parameter, `multiSelect`, is responsible for multi-selections. If `multiSelect` is true, Power BI doesn't clear the previous selection state when it applies the current selection. If the value is false, the previous selection is overwritten.
 
-A typical example of using `multiSelect` is handling the CTRL button state on a click event. When the CTRL button is held down, you can select more than one object.
+A typical example of using `multiSelect` is handling the <kbd>Ctrl</kbd> button state on a click event. When the <kbd>Ctrl</kbd> button is held down, you can select more than one object.
 
 ```typescript
 button.addEventListener("click", (mouseEvent) => {

@@ -1,6 +1,6 @@
 ---
-title: Override data loss prevention policies (preview)
-description: Learn about what happens when you override a DLP policy for Power BI.
+title: Respond to a DLP policy violation
+description: Learn how to respond to a DLP policy violation in Power BI.
 author: paulinbar
 ms.author: painbar
 manager: kfollis
@@ -8,17 +8,23 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 02/20/2023
+ms.date: 04/20/2023
 LocalizationGroup: Data from files
 ---
 
-# Overriding data loss prevention policies (preview)
+# Respond to a DLP policy violation
 
-The data loss prevention side pane lists all the DLP policy issues detected by a content scan of the dataset.
+When a dataset you own violates a DLP policy, you may see a violation warning icon on the dataset in the data hub or workspace list view. If you go to the dataset details page, you'll see a DLP policy tip banner that informs you about the violation. To view and respond to the policy violation, select the **View** button on the policy tip. The **View** button opens a side pain that displays the details of your dataset's DLP policy violations and provides option for responding to them. This article describes the information you see on the side pane and the actions you can take regarding the violations.
 
-Each DLP policy issue is shown on a card. The card shows the policy tip, indicates what kind of sensitive data was detected, and offers actions you can take if you believe the data was falsely identified.
+## View a dataset's DLP violations
 
-![Screenshot of D L P policies side pane](./media/service-security-dlp-policies-for-power-b-override/power-bi-dlp-override-pane.png)
+The data loss prevention side pane lists the name of the dataset and all the DLP policy issues detected by a content scan of that dataset. You can select the dataset's name if you want to view the dataset's details page.
+
+Each DLP policy issue is shown on a card. The card shows you the policy tip, indicates what kind of sensitive data was detected, and offers actions you can take if you believe the data was falsely identified.
+
+![Screenshot of D L P policies side pane](./media/service-security-dlp-policies-for-power-b-respond/power-bi-dlp-override-pane.png)
+
+## Take action on the violation
 
 The action or combination of actions you see may vary depending on the policy configuration. The possible actions are described below.
 
@@ -34,7 +40,7 @@ The action or combination of actions you see may vary depending on the policy co
 ## Next steps
 
 * [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
-* [Data loss prevention policies for Power BI](./service-security-dlp-policies-for-power-bi.md)
+* [Data loss prevention policies for Power BI](./service-security-dlp-policies-for-power-bi-overview.md)
 * [Get started with Data loss prevention policies for Power BI](/microsoft-365/compliance/dlp-powerbi-get-started)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
 * [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)

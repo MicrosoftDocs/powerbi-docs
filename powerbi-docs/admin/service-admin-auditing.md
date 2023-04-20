@@ -310,6 +310,7 @@ The following operations are available in both the audit and activity logs.
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used     |
 | Analyzed Power BI dataset  | AnalyzedByExternalApplication   | Generated when users interact with the service      |
 | Analyzed Power BI report    | AnalyzeInExcel   | Generated when a user selects **Analyze in Excel** on a report or dataset in the service and successfully generates an Excel workbook |
+| Applied a change to model in Power BI | ApplyChangeToPowerBIModel | A user makes a change to an existing model. This occurs whenever any edit is made to the model (ex: write a DAX measure, manage relationships, etc.) |
 | [Applied sensitivity label to Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
 | Assigned a workspace to a deployment pipeline | AssignWorkspaceToPipeline  | |
 | Attached dataflow storage account     | AttachedDataflowStorageAccount | |
@@ -447,6 +448,7 @@ The following operations are available in both the audit and activity logs.
 | Retrieved all Power BI gateway cluster datasources | GetAllGatewayClusterDatasources | |
 | Retrieved all supported datasources for Power BI gateway cluster | | |
 | Retrieved allowed Power BI gateway regions | GetGatewayRegions | |
+| Retrieved a model from Power BI | GetPowerBIDataModel | A user opens the **Open data model** experience or resyncs a data model. |
 | Retrieved authentication details for Power BI gateway cluster datasource | | |
 | Retrieved data sources from Power BI dataset | GetDatasetDatasourcesAsAdmin | |
 | Retrieved data sources from Power BI dataflow | GetDataflowDatasourcesAsAdmin | |

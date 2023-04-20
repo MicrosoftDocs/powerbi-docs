@@ -82,6 +82,8 @@
           href: service-quick-create-sharepoint-list.md
         - name: "Visualize data quickly from Power Apps and Dynamics 365 apps"
           href: dynamics-quick-create-report.md
+        - name: "Create a quick report in Jupyter"
+          href: jupyter-quick-report.md
     - name: "Enable automatic page refresh"
       href: desktop-automatic-page-refresh.md
     - name: "Examine report elements with Performance Analyzer"
@@ -527,7 +529,7 @@
       - name: Commonly used filters
         href: ../paginated-reports/report-design/commonly-used-filters-report-builder-and-service.md
       - name: Format numbers and dates
-        href: ../paginated-reports/report-design/formatting-numbers-and-dates-report-builder-and-service.md
+        href: ../paginated-reports/report-design/format-numbers-dates-report-builder-service.md
       - name: Tables, matrixes, lists
         href: ../paginated-reports/report-builder-tables-matrices-lists.md
       - name: Text boxes
@@ -656,6 +658,22 @@
         href: ../paginated-reports/report-builder/troubleshoot-reports-map-reports-report-builder.md
       - name: Map Wizard and Map Layer Wizard
         href: ../paginated-reports/report-builder/map-wizard-map-layer-wizard-report-builder.md
+    - name: Images, text boxes, rectangles, and lines
+      items:
+      - name: Images, text boxes, rectangles, and lines in a paginated report
+        href: ../paginated-reports/report-design/images-text-boxes-rectangles-lines-report-builder-service.md
+      - name: Images in paginated reports
+        href: ../paginated-reports/report-design/images-report-builder-service.md
+      - name: Format lines, colors, and images in a paginated report
+        href: ../paginated-reports/report-design/format-lines-colors-images-report-builder-service.md
+      - name: Embed an image in a paginated report
+        href: ../paginated-reports/report-design/embed-image-report-report-builder-service.md
+      - name: Add an external image to a paginated report
+        href: ../paginated-reports/report-design/add-external-image-report-builder-service.md
+      - name: Add a data-bound image to a paginated report
+        href: ../paginated-reports/report-design/add-data-bound-image-report-builder-service.md
+      - name: Add a background image to a paginated report
+        href: ../paginated-reports/report-design/add-background-image-report-builder-service.md
     - name: Data sources and datasets
       items: 
       - name: Understand paginated report data
@@ -738,6 +756,18 @@
         href: ../paginated-reports/report-builder/export-pdf-file-report-builder.md
       - name: "Export to XML file format"
         href: ../paginated-reports/report-builder/export-xml-report-builder.md
+    - name: Report layout and rendering 
+      items:
+      - name: "Page layout and rendering in paginated reports"
+        href: ../paginated-reports/report-design/page-layout-rendering-report-builder-service.md
+      - name: "Rendering behaviors in a paginated report"
+        href: ../paginated-reports/report-design/render-behaviors-report-builder-service.md
+      - name: "Rendering data regions in a paginated report"
+        href: ../paginated-reports/report-design/render-data-regions-report-builder-service.md
+      - name: "Rendering data in a paginated report"
+        href: ../paginated-reports/report-design/render-data-report-builder-service.md
+      - name: "Rendering report items in paginated reports"
+        href: ../paginated-reports/report-design/render-report-items-report-builder-service.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
     - name: Paginated reports capacity planning
