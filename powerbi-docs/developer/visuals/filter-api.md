@@ -300,7 +300,7 @@ To reset or clear the filter, pass a `null` value to the filter API.
 visualHost.applyJsonFilter(null, "general", "filter", FilterAction.merge);
 ```
 
-## Detect filtered state
+## Detect filter state
 
 Starting with API version 5.4, the `isDataFilterApplied` boolean parameter in the `DataViewMetadata` object notes if the rendered visual or report has any filters applied to it. The developer can then adjust the display accordingly (for exmaple, by adding or removing text depending on if there's a filter). This feature applies whether the filter is applied to the entire report, page, or specific visual.
 
