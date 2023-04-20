@@ -532,6 +532,8 @@
         href: ../paginated-reports/report-design/format-numbers-dates-report-builder-service.md
       - name: Tables, matrixes, lists
         href: ../paginated-reports/report-builder-tables-matrices-lists.md
+      - name: Control page breaks, headings, columns, and rows
+        href: ../paginated-reports/report-design/controlling-page-breaks-headings-columns-and-rows-report-builder.md
       - name: Text boxes
         items:
         - name: Text boxes in paginated reports
