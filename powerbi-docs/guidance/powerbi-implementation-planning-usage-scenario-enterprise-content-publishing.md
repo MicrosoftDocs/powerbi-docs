@@ -2,12 +2,12 @@
 title: "Power BI usage scenarios: Enterprise content publishing"
 description: "An explanation of how content creators and technical owners use Azure DevOps to manage and publish Power BI content"
 author: data-goblin
-ms.author: painbar
+ms.author: v-kurtbuhler
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/17/2023
+ms.date: 04/20/2023
 ---
 
 # Power BI usage scenarios: Enterprise content publishing
@@ -53,8 +53,8 @@ The scenario diagram depicts the following user actions, processes, and features
 | ![Item 3.](media/common/icon-03-red-30x30.png) | Content creators regularly commit and push their changes to a remote repository during development by using a Git client such as Visual Studio Code. In this diagram, the remote repository is Azure Repos. |
 | ![Item 4.](media/common/icon-04-red-30x30.png) | Other content creators use Azure Repos to track changes with version control. They collaborate by committing changes into separate branches. |
 | ![Item 5.](media/common/icon-05-red-30x30.png) | Changes to content in the remote repository trigger Azure Pipelines. A **validation pipeline** is the first pipeline that is triggered. The validation pipeline performs automated tests to validate content before it's published. |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | Content that passes the validation pipeline triggers a subsequent **build pipeline**. The build pipeline prepares content for publishing to the Power BI service. This pipeline is sometimes referred to as _continuous integration_ (CI). |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | Content is published and deployed by using **release pipelines**. The release pipelines use either the Power BI REST APIs or the workspace XMLA endpoint to programmatically import content to the Power BI service. These pipelines are sometimes referred to as _continuous deployment_ (CD). |
+| ![Item 6.](media/common/icon-06-red-30x30.png) | Content that passes the validation pipeline triggers a subsequent **build pipeline**. The build pipeline prepares content for publishing to the Power BI service. The process up to this point is typically referred to as _continuous integration_ (CI). |
+| ![Item 7.](media/common/icon-07-red-30x30.png) | Content is published and deployed by using **release pipelines**. The release pipelines use either the Power BI REST APIs or the workspace XMLA endpoint to programmatically import content to the Power BI service. Deployment by using release pipelines is typically referred to as _continuous deployment_ (CD). |
 | ![Item 8.](media/common/icon-08-red-30x30.png) | A release pipeline publishes content to the development workspace. This is the first release pipeline that initially imports content to the Power BI service. Other release pipelines will later promote content through development, test, and production workspaces. |
 | ![Item 9.](media/common/icon-09-red-30x30.png) | A release manager controls deployment to test and production workspaces by using an Azure Pipelines release approval. In enterprise content publishing, a release manager typically plans and coordinates the content release to test and production environments. They coordinate and communicate with content creators, stakeholders, and users. |
 | ![Item 10.](media/common/icon-10-red-30x30.png) | Release pipelines promote content by using Power BI deployment pipelines with the Power BI REST APIs. The test release pipeline promotes content from the development workspace to the test workspace. The production release pipeline promotes content from test workspace to the production workspace. |
