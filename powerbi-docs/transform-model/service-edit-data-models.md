@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 04/20/2023
+ms.custom: references_regions
 LocalizationGroup: Transform and shape data
 ---
 
@@ -29,7 +30,7 @@ Editing data models in the Power BI service is automatically enabled for dataset
 3. Select **Save** to see the new experience for datasets in your workspace.
 
 > [!NOTE]
-> Enabling the *edit data models in the Power BI service* preview doesn't apply to editing a dataset through an AIP or an XMLA endpoint.
+> Enabling the *edit data models in the Power BI service* preview doesn't apply to editing a dataset through an API or an XMLA endpoint.
 
 ## Open the data model
 You can open the data model for your dataset in the following ways:
@@ -146,7 +147,7 @@ You can then drag a table from the **Data** pane onto the new layout. Right-clic
 
 
 > [!NOTE]
-> Any changes you make to layouts in the Power BI service, other than the *All tables* layout, won't be saved for future sessions. Additionally, when uploading a .PBIX file to the Power BI service, no existing layouts other than *All tables* are shown in the Power BI service.
+> Any additional layouts you make in the Power BI service other than the *All tables* layout won’t be saved for future sessions. Additionally, when uploading a .PBIX file to the Power BI service, no existing layouts other than *All tables* appear in the Power BI service.
 
 ### Create reports
 You can create a new report from the data model editing in the service experience by selecting the **New report** button in the ribbon. This opens a new browser tab to the report editing canvas to a new report that is built on the dataset. 
@@ -166,7 +167,7 @@ Power BI administrators can enable or disable data model editing in the service 
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-22.png" alt-text="Screenshot of enabling data model editing in the admin portal.":::
 
-### Viewing audit logs and activity events
+## Viewing audit logs and activity events
 Power BI administrators can audit operations pertaining to editing data models in the web operations from the **Microsoft 365 Admin Center**. Audit operations supported for editing data models in the web are the following:
 
 
@@ -184,10 +185,10 @@ For more information on accessing your audit logs, see the [Access your audit lo
 You can monitor the impact editing data models in the service has on your Power BI Premium capacities using the [Premium metrics app](../enterprise/service-premium-metrics-app.md). Capacity impact can be monitored for editing data models in the web using the following [operations](../enterprise/service-premium-interactive-background-operations.md#background-operations).
 
 
-|Operation  |Description  |Workload type  |
-|---------|---------|---------|
-|Web Modeling read     |A user initiated read operation to a data model on the web.         |Datasets	Background         |
-|Web Modeling write     |A user initiated write operation to modify a data model on the web.         |Datasets	Background         |
+|Operation  |Description  |Workload |Type  |
+|---------|---------|---------|---------|
+|Web Modeling read     |A user initiated read operation to a data model on the web.         |Datasets	|Interactive         |
+|Web Modeling write     |A user initiated write operation to modify a data model on the web.         |Datasets	|Interactive         |
 
 
 
