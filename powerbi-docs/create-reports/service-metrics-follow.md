@@ -7,6 +7,7 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
+ms.search.form: Follow your metrics
 ms.topic: how-to
 ms.date: 02/16/2023
 ---

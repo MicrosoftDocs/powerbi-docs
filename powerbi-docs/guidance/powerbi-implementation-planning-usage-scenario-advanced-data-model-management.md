@@ -129,7 +129,7 @@ Power BI Desktop can handle the end-to-end needs for most self-service content c
 
 ### Data model management
 
-The primary focus of this usage scenario is on the content creator who uses Tabular Editor to manage a data model. For infrequent advanced data model management requirements, like occasional partition management, you might choose to use a tool such as SSMS. It's also possible for a .NET developer to create and manage Power BI datasets by using the TOM API.
+The primary focus of this usage scenario is on the content creator who uses Tabular Editor to manage a data model. For infrequent advanced data model management requirements, like occasional partition management, you might choose to use a tool such as SQL Server Management Studio (SSMS). It's also possible for a .NET developer to create and manage Power BI datasets by using the TOM API.
 
 > [!TIP]
 > When using the XMLA endpoint for data model management, we recommend that you enable the [large dataset storage format](/power-bi/enterprise/service-premium-large-models) setting. When enabled, the large dataset storage format can improve XMLA write operation performance.

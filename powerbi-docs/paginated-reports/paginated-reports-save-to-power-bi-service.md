@@ -12,7 +12,7 @@ ms.date: 01/18/2023
 
 # Publish a paginated report to the Power BI service
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
 This article explains how to publish a paginated report to the Power BI service by uploading it from your local computer.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 02/21/2023
+ms.date: 04/18/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -17,10 +17,39 @@ Power BI Mobile app versions are released on a monthly cadence. The latest ver
 For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
-* [What's new in Power BI](../../fundamentals/desktop-latest-update.md)  
+* [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
 
->[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+## April 2023
+
+### Hierarchies are now supported for your metrics! (iOS and Android)
+
+Hierarchies are now available in the mobile apps, where you can drill into the hierarchy to check progress and statuses, as well as do check-ins, at different levels. To view the available hierarchies and change the selection, use the new **Hierarchies** button in the scorecard footer.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-hierarchies.png" alt-text="Screenshot showing Power BI metrics hierarchies in the Power BI mobile app." border="false":::
+
+[Learn more about viewing hierarchies in the Power BI service](../../create-reports/service-metrics-view-hierarchies.md)
+
+## March 2023
+
+### New look and feel for tooltips on visuals (iOS and Android)
+
+Tooltips on visuals have a new look and feel! Now, when you tap and hold on a data point, you'll enjoy a sleek, user-friendly tooltip. The re-designed tooltip features a pointer to help you identify the selected data point, and clear, easy-to-use actions such as drill-down and drill-through. The new tooltip supports custom styling configured by the report creator, and report creators can even disable tooltips for a visual if they think it's better without one.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-tooltips.png" alt-text="Screenshot showing new tooltip on a data point in the Power BI mobile app." border="false":::
+
+### Discover content from external orgs (iOS and Android)
+
+It's just gotten easier to access your external content from your Power BI mobile app! If you have access to items from external organizations, you can now have these items always available for quick access right from the app's home page. Just tap the newly added drop-down arrow on the third content strip and change **Recommended** to **From external orgs**. You can also get to your external content by tapping **More (...)** and choosing **From external orgs**. [Check it out](./mobile-apps-b2b.md)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-external-content-strip.png" alt-text="Screenshot of the From external orgs option on the Power BI mobile app home page." border="false":::
+
+### Set your language for the app (Android)
+
+Just as you could for iOS devices, you can now set individual language preferences for the Power BI app on your Android device! On your Android device, go to **Settings > Apps > Power BI**, and set your preferred language. Available for Android 13 and above.
+
+### Automatic page refresh support (iOS and Android)
+
+The Power BI mobile apps for iOS and Android have joined the app for Windows in supporting automatic page refresh. Now, report pages configured with [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will automatically refresh in your Power BI app no matter which of those devices you're on!
 
 ## February 2023
 
@@ -30,7 +59,7 @@ You now get a push notification on your mobile app whenever someone requests acc
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-access-request-push-notification.png" alt-text="Screenshot of access request push notification on mobile app screen." border="false":::
 
-### Easier app browsing (iOS and Android)
+### Easier app browsing
 
 Some apps now come with [audience views](https://powerbi.microsoft.com/blog/announcing-public-preview-of-multiple-audiences-for-power-bi-apps/) to help you find insights faster. 
 

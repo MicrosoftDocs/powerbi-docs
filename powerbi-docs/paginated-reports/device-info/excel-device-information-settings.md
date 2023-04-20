@@ -10,6 +10,9 @@ ms.author: maggies
 ---
 
 # Excel device information settings for Power BI paginated reports
+
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+
   The following table lists the device information settings for rendering Power BI paginated reports in Microsoft Excel format.  
 
 ## Settings 

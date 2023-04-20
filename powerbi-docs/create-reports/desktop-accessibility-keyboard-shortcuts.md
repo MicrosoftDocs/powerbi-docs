@@ -107,6 +107,10 @@ In our continued effort to improve accessibility, the previous list of experienc
 | :------------------- | :------------------- |
 | Zoom in | **Ctrl + Plus** or **Ctrl + (mouse scroll wheel forward)** |
 | Zoom out | **Ctrl + Minus** or **Ctrl + (mouse scroll wheel backward)** |
+| Scroll canvas up | **Page up key** |
+| Scroll canvas down | **Page down key** |
+| Scroll canvas left | **Alt + Page up key** |
+| Scroll canvas right | **Alt + Page down key** |
 
 ## Slicer
 
@@ -155,6 +159,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Uncomment a line | **Ctrl + /** or **Ctrl + K + U** |
 | Increase font size | **Ctrl + +** Or **Scroll Up** |
 | Decrease font size | **Ctrl + -** Or **Scroll Down** |
+| Show or hide "Read more" tooltips | **Ctrl + I** |
 
 ## Enter data
 

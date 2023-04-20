@@ -7,10 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/18/2023
+ms.date: 04/04/2023
 LocalizationGroup: Premium
 ---
+
 # Paginated reports capacity planning
+
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
 Learn how to plan your [Premium capacity](./../enterprise/service-premium-what-is.md) to get the best performance out of your [paginated reports](paginated-reports-report-builder-power-bi.md), at a minimum cost. If you're migrating to Power BI from a different business intelligence tool, consider reading the articles listed below before you decide which capacity to use.
 
@@ -29,6 +32,8 @@ When you plan your capacity, consider the following:
 * The complexity of the report design. Nested [tablix](/sql/reporting-services/report-design/tablix-data-region-report-builder-and-ssrs),  multiple subreport and multiple row and column groups add to the complexity of the design, and require capacity resources. report-builder-tables-matrices-lists
 
 * The amount of data retrieved by the report. The more data the report needs, the more resources it requires from your capacity.
+
+* The way your report retrieves data. When you use connectors, drivers or gateways, data retrieval might take longer, require more resources and as a result become more expensive.
 
 * The number of report parameters and parameter values used by your reports. More values and parameters, require more resources from your capacity.
 
@@ -50,9 +55,9 @@ Based on the five percent concurrency ratio, the following table describes the a
 
 | Workload   | P1 SKU      | P2 SKU      |
 |------------|-------------|-------------|
-| **Small**  | 1,600 users | 3,200 users |
-| **Medium** | 1,200 users | 2,400 users |
-| **Large**  | 800 users   | 1,600 users |
+| **Small**  | 2,500 users | 5,000 users |
+| **Medium** | 1,900 users | 3,800 users |
+| **Large**  | 1300 users   | 2,600 users |
 
 Take into consideration that the numbers in the table refer to designated capacities that don't run other operations. Your capacity may already use CPU resources for operations such as:
 
@@ -146,3 +151,5 @@ The formulas for a *P1 SKU* will be:
 
 >[!div class="nextstepaction"]
 >[Using Autoscale with Power BI Premium](./../enterprise/service-premium-auto-scale.md)
+
+
