@@ -71,7 +71,7 @@ When a dataset is evaluated by DLP policies, if it matches the conditions specif
 
 >[!NOTE]
 > DLP evaluation of the dataset does not occur if either of the following is true:
-> * The initiator of the event is a service principal.
+> * The initiator of the event (publish, republish, on-demand refresh, scheduled refresh) is an account using service principal authentication.
 > * The dataset owner is either a service principal or a B2B user.
 
 ## What happens when a dataset is flagged by a Power BI DLP policy
