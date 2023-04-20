@@ -4995,7 +4995,12 @@
             "source_path": "powerbi-docs/consumer/mobile/mobile-apps-data-in-space-set-up.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
             "redirect_document_id": false
-        }      
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/jupyter-quick-report.md",
+            "redirect_url": "/power-bi/create-report/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        }       
   ]          
 
 }

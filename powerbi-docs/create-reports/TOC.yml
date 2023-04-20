@@ -82,6 +82,8 @@
           href: service-quick-create-sharepoint-list.md
         - name: "Visualize data quickly from Power Apps and Dynamics 365 apps"
           href: dynamics-quick-create-report.md
+        - name: "Create a quick report in Jupyter"
+          href: jupyter-quick-report.md
     - name: "Enable automatic page refresh"
       href: desktop-automatic-page-refresh.md
     - name: "Examine report elements with Performance Analyzer"
