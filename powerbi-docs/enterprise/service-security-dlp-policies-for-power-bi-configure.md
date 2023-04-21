@@ -154,11 +154,11 @@ Any action the user takes is logged for reporting.
 
 Assign a severity level that will be shown in alerts generated from this policy. Enable (default) or disable email notification to admins, specify users or groups for email notification, and configure the details about when notification will occur.
 
-![Screenshot of D L P incident report section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-incidence-report.png)
+:::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-incidence-report.png" alt-text="Screenshot of D L P incident report section.":::
    
 ## Additional options
 
-![Screenshot of D L P additional options section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-additional-options.png)
+:::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-additional-options.png" alt-text="Screenshot of D L P additional options section.":::
 
 ## Next steps
 
