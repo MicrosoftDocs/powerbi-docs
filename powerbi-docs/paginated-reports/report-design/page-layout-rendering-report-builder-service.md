@@ -9,6 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: rpatkar
 ---
+
 # Page layout and rendering in paginated reports (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
@@ -52,20 +53,19 @@ A report can also contain subreports.
  When a report is processed, report data is combined with the report layout elements and the combined data is sent to a report renderer. The renderer follows predefined rules for report item expansion and determines how much data fits on each page. To design an easy-to-read report that is optimized for the renderer that you plan to use, you should understand the rules used to control pagination in Report Builder. For more information, see [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs).  
   
 ##  <a name="RenderingExtensions"></a> Renderers  
+
  Reporting Services includes a set of renderers, also referred to as rendering extensions, that you can use to export reports to different formats. There are three types of renderers:  
   
-* **Data renderers** Data renderers strip all formatting and layout information from the report and display only the data. The resulting file can be used to import the raw report data into another file type, such as Excel, or another database, an XML data message, or a custom application. The available data renders are CSV and XML.  
-  
-    > [!NOTE]  
-    >  Although it does not provide direct export to a different format, Atom rendering generates data files from reports.  
+* **Data renderers** Data renderers strip all formatting and layout information from the report and display only the data. The resulting file can be used to import the raw report data into another file type, such as Excel, or another database, an XML data message, or a custom application. The available data renders are CSV and XML.   
   
 * **Soft page-break renderers** Soft page-break renderers maintain the report layout and formatting. The resulting file is optimized for screen-based viewing and delivery, such as on a Web page. The available soft page-break renderers are Microsoft Excel, Microsoft Word, Web archive (MHTML), and HTML.  
   
 * **Hard page-break renderers** Hard page-break renderers maintain the report layout and formatting. The resulting file is optimized for a consistent printing experience, or for viewing the report online in a book format. The available hard page-break renderers are TIFF and PDF.  
   
- When you preview a report in Power BI Report Builder or run a report on Power BI service, the report is first rendered in their respective default renderers. After you run the report, you can export it to different file formats. For more information, see [Export Reports &#40;Report Builder and SSRS&#41;](../report-builder/export-reports-report-builder.md).
+ When you preview a report in Power BI Report Builder or run a report on Power BI service, the report is first rendered in their respective default renderers. After you run the report, you can export it to different file formats. For more information, see [Export Reports &#40;Power BI Report Builder and service&#41;](../report-builder/export-reports-report-builder.md).
   
 ##  <a name="RenderingBehaviors"></a> Rendering behaviors  
+
  Depending on the renderer you select, certain rules are applied when rendering the report. How report items fit together on a page is determined by the combination of these factors:  
   
 * Rendering rules.  
@@ -105,6 +105,7 @@ A report can also contain subreports.
 * [Hide a page header or footer on the first or last page &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/hide-a-page-header-or-footer-on-the-first-or-last-page-report-builder-and-ssrs)  
   
 ##  <a name="InThisSection"></a> In this section  
+
  The following topics provide additional information about page layout and rendering.  
   
  [Page headers and footers &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/page-headers-and-footers-report-builder-and-ssrs)  
@@ -116,3 +117,4 @@ A report can also contain subreports.
 ## Next steps
 
  [Interactive functionality for different report rendering extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)
+
