@@ -76,6 +76,8 @@
       href: filter-api.md
     - name: "Identity filter" 
       href: identity-filter-api.md
+    - name: "Detect filter API"
+      href: detect-filter-api.md
     - name: "Fetch more data" 
       href: fetch-more-data.md
     - name: "Add bookmarks support"
