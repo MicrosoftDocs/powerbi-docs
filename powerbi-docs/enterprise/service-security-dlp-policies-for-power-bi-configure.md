@@ -57,7 +57,7 @@ LocalizationGroup: Data from files
 
 1. The **Define policy settings** page appears. Choose **Create or customize advanced DLP rules** to begin defining your policy.
 
-    ![Screenshot of D L P create advanced rule page.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create-advanced-rule.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create-advanced-rule.png" alt-text="Screenshot of D L P create advanced rule page.":::
  
     When done, select **Next**.
 
