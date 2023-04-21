@@ -79,7 +79,7 @@ In the condition section, you define the conditions under which the policy will 
 
     For more information about using the condition builder, see [Complex rule design](/microsoft-365/compliance/dlp-policy-design#complex-rule-design).
 
-1. If you chose **Add condition**, next choose **Content contains**, then **Add**, and then either either **Sensitive info types** or **Sensitivity labels**.
+1. If you chose **Add condition**, next choose **Content contains**, then **Add**, and then either **Sensitive info types** or **Sensitivity labels**.
 
     If you started with **Add group**, you'll eventually get to **Add condition**, after which you continue as described above.
 
@@ -101,7 +101,7 @@ In the condition section, you define the conditions under which the policy will 
 
     :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-condition-group.png" alt-text="Screenshot of D L P conditions group section.":::
  
-    You can use the Quick summmary toggle to get the logic of the rule summarized in a sentence.
+    You can use the Quick summary toggle to get the logic of the rule summarized in a sentence.
 
     :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-condition-quick-summary.png" alt-text="Screenshot of D L P conditions quick summary.":::
 
@@ -111,7 +111,7 @@ In the condition section, you define the conditions under which the policy will 
 
     :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-content-contains.png" alt-text="Screenshot of rule with two groups.":::
 
-    Here is the same rule shown as a quick summary.
+    Here's the same rule shown as a quick summary.
 
     :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-content-contains-quick-summary.png" alt-text="Screenshot of quick summary of rule with two groups.":::
  
@@ -138,7 +138,7 @@ The options are described below.
 
 * **Allow overrides from M365 services. Allows users in Power BI, Exchange, SharePoint, OneDrive, and Teams to override policy restrictions** (automatically selected when you've enabled user notifications and selected the **Notify users in Office 365 service with a policy tip** checkbox): Users will be able to either report the issue as a false positive or override the policy.
 
-* **Require a business justification to override**: Users will be able to either report the issue as a false positive or override the policy. If they choose to override, they will need to provide a business justification.
+* **Require a business justification to override**: Users will be able to either report the issue as a false positive or override the policy. If they choose to override, they'll need to provide a business justification.
 
 * **Override the rule automatically if they report it as a false positive**: Users will be able to report the issue as a false positive and automatically override the policy, or they can just override the policy without reporting it as a false positive.
 
