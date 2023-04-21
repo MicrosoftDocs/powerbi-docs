@@ -778,7 +778,7 @@ Here are several commonly used cmdlets that you can use to retrieve auditing dat
 > [!TIP]
 > There are other cmdlets available for managing and publishing content. However, the focus of this article is on retrieving auditing data so that you can understand how Power BI is used.
 
-You can download the **Power BI Management** module from the [PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt). The simplest way to install modules is to use [PowerShellGet](/powershell/scripting/gallery/installing-psget).
+You can download the **Power BI Management** module from the [PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt). The simplest way to install modules is to use [PowerShellGet](/powershell/scripting/gallery/installing-psget?view=powershellget-2.x&preserve-view=true).
 
 We recommend that you install the **Power BI Management** rollup module. That way, all the cmdlets you might need are available. At a minimum, you need the **Profile** module (for authentication) and any specific modules that contain the cmdlets that you want to use.
 

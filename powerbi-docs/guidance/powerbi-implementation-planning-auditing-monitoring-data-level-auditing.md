@@ -316,7 +316,7 @@ There are many actions that a Power BI content creator might take once they anal
 System administrators can take other actions. They could:
 
 - Introduce an intermediary data layer, such as Power BI dataflows (when a data warehouse isn't a viable option). Power BI content creators can use the dataflows as their data source instead of connecting directly to data sources. An intermediary data layer reduces the load on the source system. It also has the added benefit of centralizing data preparation logic. For more information, see the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario.
-- Change the data source location to reduce the impact of network latency (for example, using the same [data region](powerbi-implementation-planning-tenant-setup.md#location-for-data-storage.md) for the Power BI service, data sources, and gateways).
+- Change the data source location to reduce the impact of network latency (for example, using the same [data region](powerbi-implementation-planning-tenant-setup.md#location-for-data-storage) for the Power BI service, data sources, and gateways).
 - Optimize the data source so it more efficiently retrieves data for Power BI. Several commons techniques include creating table indexes, creating indexed views, creating persisted computed columns, maintaining statistics, using in-memory or columnstore tables, and creating materialized views.
 - Direct users to use a read-only replica of the data source, rather than an original production database. One advantage of a read-only replica is to reduce contention on the source system.
 
