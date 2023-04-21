@@ -17,6 +17,8 @@
   - name: Concepts
     expanded: true
     items:
+    - name: "Edit data models in the Power BI service (preview)"
+      href: service-edit-data-models.md  
     - name: "Work with Modeling view"
       href: desktop-modeling-view.md  
     - name: "Understand model relationships"
