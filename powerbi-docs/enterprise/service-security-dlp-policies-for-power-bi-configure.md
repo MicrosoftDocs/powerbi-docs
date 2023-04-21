@@ -62,30 +62,30 @@ LocalizationGroup: Data from files
     When done, select **Next**.
 
 1. On the **Customize advanced DLP rules** page, you can either start creating a new rule or choose an existing rule to edit. Select **Create rule**.
-1. 
-    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create-rule.png" alt-text="Screenshot of D L P create rule page.":::
 
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create-rule.png" alt-text="Screenshot of D L P create rule page.":::
 
 1. The **Create rule** page appears. On the create rule page, provide a name and description for the rule, and then configure the other sections, which are described following the image below.
 
-    ![Screenshot of D L P create rule form.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create-rule-form.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create-rule-form.png" alt-text="Screenshot of D L P create rule form.":::
  
 ## Conditions
 
 In the condition section, you define the conditions under which the policy will apply to a dataset. Conditions are created in groups. Groups make it possible to construct complex conditions.
 
-1. Open the conditions section, choose **Add condition** and then **Content contains**.
+1. Open the conditions section. Choose **Add condition** if you want to create a simple or complex condition, or **Add group** if you want to start creating a complex condition.
 
-    ![Screenshot of D L P add conditions content contains section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-add-conditions-content-contains.png)
- 
-    This opens the first group (named Default – you can change this).
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-add-conditions-content-contains.png" alt-text="Screenshot of D L P add conditions content contains section.":::
 
-1. Choose **Add**, and then chose either **Sensitive info types** or **Sensitivity labels**.
-    
-    ![Screenshot of D L P add conditions section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-add-conditions.png)
+    For more information about using the condition builder, see [Complex rule design](/microsoft-365/compliance/dlp-policy-design#complex-rule-design).
 
-    >[!NOTE]
-    > Currently, DLP policies for Power BI don't support scanning for sensitive info types in data stored in the Southeast Asia region. See [How to find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#how-to-find-the-default-region-for-your-organization) to learn how to find your organization's default data region.
+1. If you chose **Add condition**, next choose **Content contains**, then **Add**, and then either either **Sensitive info types** or **Sensitivity labels**.
+
+    If you started with **Add group**, you'll eventually get to **Add condition**, after which you continue as described above.
+
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-add-conditions.png" alt-text="Screenshot of D L P add conditions section.":::
+
+     If you started with **Add group**, you'll eventually get to **Add condition**, after which you continue as described above.
  
     When you choose either **Sensitive info types** or **Sensitivity labels**, you'll be able to choose the particular sensitivity labels or sensitive info types you want to detect from a list that will appear in a sidebar.
 
@@ -99,21 +99,21 @@ In the condition section, you define the conditions under which the policy will 
 
     The image below shows a group (Default) that contains two sensitivity label conditions. The logic Any of these means that a match on any one of the sensitivity labels in the group constitutes “true” for that group.
 
-    ![Screenshot of D L P conditions group section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-condition-group.png) 
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-condition-group.png" alt-text="Screenshot of D L P conditions group section.":::
  
+    You can use the Quick summmary toggle to get the logic of the rule summarized in a sentence.
+
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-condition-quick-summary.png" alt-text="Screenshot of D L P conditions quick summary.":::
+
     You can create more than one group, and you can control the logic between the groups with **AND** or **OR** logic. 
 
     The image below shows a rule containing two groups, joined by **OR** logic.
 
-    ![Screenshot of rule with two groups.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-content-contains.png) 
- 
-## Exceptions
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-content-contains.png" alt-text="Screenshot of rule with two groups.":::
 
-If the dataset has a sensitivity label or sensitive info type that matches any of the defined exceptions, the rule won’t be applied to the dataset. 
+    Here is the same rule shown as a quick summary.
 
-Exceptions are configured in the same way as conditions, described above.
-    
-![Screenshot of D L P exceptions section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-exceptions-section.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-content-contains-quick-summary.png" alt-text="Screenshot of quick summary of rule with two groups.":::
  
 ## Actions
 
@@ -126,7 +126,7 @@ Protection actions are currently unavailable for Power BI DLP policies.
 
 The user notifications section is where you configure your policy tip. Turn on the toggle, select the **Notify users in Office 365 service with a policy tip** and **Policy tips** checkboxes, and write your policy tip in the text box.
 
-![Screenshot of D L P user notification section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-user-notification.png)
+:::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-user-notification.png" alt-text="Screenshot of D L P user notification section.":::
  
 ## User overrides
  
