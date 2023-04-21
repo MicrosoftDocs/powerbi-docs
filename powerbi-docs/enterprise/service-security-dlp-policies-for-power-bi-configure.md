@@ -25,19 +25,23 @@ LocalizationGroup: Data from files
     >[!NOTE]
     >No other categories or templates are currently supported.
 
-    ![Screenshot of D L P choose custom policy page.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-choose-custom.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-choose-custom.png" alt-text="Screenshot of D L P choose custom policy page.":::
  
     When done, select **Next**.
 
 1. Name the policy and provide a meaningful description.
 
-    ![Screenshot of D L P policy name description section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-name-description.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-name-description.png" alt-text="Screenshot of D L P policy name description section.":::
  
     When done, select **Next**.
 
+1. Select **Next** when you get to the Assign admin units page.
+
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-admin-units.png" alt-text="Screenshot of D L P policy admin units section.":::
+
 1. Enable Power BI as a location for the DLP policy. **Disable all other locations**. Currently, DLP policies for Power BI must specify Power BI as the sole location.
 
-    ![Screenshot of D L P choose location page.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-choose-location.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-choose-location.png" alt-text="Screenshot of D L P choose location page.":::
 
     By default the policy will apply to all workspaces. Alternatively, you can specify particular workspaces to include in the policy as well as workspaces to exclude from the policy.
     >[!NOTE]
