@@ -62,8 +62,8 @@ LocalizationGroup: Data from files
     When done, select **Next**.
 
 1. On the **Customize advanced DLP rules** page, you can either start creating a new rule or choose an existing rule to edit. Select **Create rule**.
-
-    ![Screenshot of D L P create rule page.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create-rule.png)
+1. 
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create-rule.png" alt-text="Screenshot of D L P create rule page.":::
 
 
 1. The **Create rule** page appears. On the create rule page, provide a name and description for the rule, and then configure the other sections, which are described following the image below.
