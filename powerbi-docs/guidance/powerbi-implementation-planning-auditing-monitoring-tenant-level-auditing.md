@@ -1,13 +1,13 @@
 ---
 title: "Power BI implementation planning: Tenant-level auditing"
 description: "Learn about tenant-level auditing planning for Power BI."
-author: peter-myers
-ms.author: v-petermyers
+author: data-goblin
+ms.author: v-kurtbuhler
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/17/2023
+ms.date: 04/24/2023
 ---
 
 # Power BI implementation planning: Tenant-level auditing
@@ -22,7 +22,7 @@ This tenant-level audit planning article is primarily targeted at:
 > [!IMPORTANT]
 > We recommend that you closely follow the [Power BI release plan](https://powerbi.microsoft.com/roadmap/) for future enhancements of auditing and monitoring capabilities.
 
-The purpose of a tenant-level audit solution is to capture and analyze data for all users, activities, and solutions deployed to a Power BI tenant. This tenant-level auditing data is valuable for many purposes, allowing you to analyze adoption efforts, understand usage patterns, educate users, support users, mitigate risk, improve compliance, manage license costs, and monitor performance. Creating an end-to-end auditing solution that's secure and production-ready is a big project that takes time. Think of it as building business intelligence on business intelligence (BI on BI). For more details about why the auditing data is so valuable, see [Auditing and monitoring overview](powerbi-implementation-planning-auditing-monitoring-overview.md).
+The purpose of a tenant-level audit solution is to capture and analyze data for all users, activities, and solutions deployed to a Power BI tenant. This tenant-level auditing data is valuable for many purposes, allowing you to analyze adoption efforts, understand usage patterns, educate users, support users, mitigate risk, improve compliance, manage license costs, and monitor performance. Creating an end-to-end auditing solution that's secure and production-ready is a significant project that takes time. Think of it as building business intelligence on business intelligence (BI on BI). For more information about why the auditing data is so valuable, see [Auditing and monitoring overview](powerbi-implementation-planning-auditing-monitoring-overview.md).
 
 For report-level auditing, which is targeted at report creators, see [Report-level auditing](powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md). For auditing data assets, which is targeted at data creators, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md). The remainder of this article focuses on tenant-level auditing.
 
@@ -69,8 +69,8 @@ In the initial phase, the goal is to identify what's most important. Focus on wh
 Here are some questions you should ask.
 
 - **What key questions do you need to answer?** There's a large volume of auditing data you can explore. The most effective way to approach auditing is to focus on answering specific questions.
-- **What are your [adoption](powerbi-adoption-roadmap-overview.md) and [data culture](powerbi-adoption-roadmap-data-culture.md) goals?** For example, perhaps you have a goal to increase the number of self-service BI content creators in the organization. In that case, you will need to measure user activities related to creating, editing, and publishing content.
-- **What immediate risks are present?** For example, you may be aware that oversharing of content has occurred in the past. User training has since been enhanced. You now want to audit security settings and activities on an ongoing basis.
+- **What are your [adoption](powerbi-adoption-roadmap-overview.md) and [data culture](powerbi-adoption-roadmap-data-culture.md) goals?** For example, perhaps you have a goal to increase the number of self-service BI content creators in the organization. In that case, you need to measure user activities related to creating, editing, and publishing content.
+- **What immediate risks are present?** For example, you may know oversharing of content has occurred in the past. User training has since been enhanced, and you now want to audit security settings and activities on an ongoing basis.
 - **Are there current key performance indicators (KPIs) or organizational goals?** For example, perhaps you have an organizational KPI that relates to digital transformation or becoming a more data-driven organization. Tenant-level auditing data can be helpful for measuring whether your Power BI implementation has aligned with these goals.
 
 > [!TIP]
@@ -90,14 +90,14 @@ For more ideas about ways that you can use auditing data, see [Auditing and moni
 
 ### Data needs
 
-Using the requirements and priorities (described previously), you're ready to identify the data that you will need. Four categories of data are covered in this section.
+Using the requirements and priorities (described previously), you're ready to identify the data that you'll need. Four categories of data are covered in this section.
 
 - [User activity data](#user-activity-data)
 - [Tenant inventory](#tenant-inventory)
 - [Users and groups data](#users-and-groups-data)
 - [Security data](#security-data)
 
-Most of the data you will need comes from the [admin APIs](/rest/api/power-bi/admin), which provide a wealth of metadata about the Power BI tenant. For more information, see [Choose a user API or admin API](#choose-a-user-api-or-admin-api) later in this article.
+Most of the data you'll need comes from the [admin APIs](/rest/api/power-bi/admin), which provide a wealth of metadata about the Power BI tenant. For more information, see [Choose a user API or admin API](#choose-a-user-api-or-admin-api) later in this article.
 
 #### User activity data
 
@@ -132,7 +132,7 @@ Here are some common questions that user activity data can answer.
   - What percentage of datasets support more than one report?
   - When is a gateway or data source created or updated, and by which user?
 
-For further information about ways to use this data, see [Understand usage patterns](powerbi-implementation-planning-auditing-monitoring-overview.md#understand-usage-patterns).
+For more information about ways to use this data, see [Understand usage patterns](powerbi-implementation-planning-auditing-monitoring-overview.md#understand-usage-patterns).
 
 > [!IMPORTANT]
 > If you're not already extracting and storing user activities data, make that an urgent priority. At a minimum, ensure that you extract the raw data and store it in a secure location. That way, the data will be available when you're ready to analyze it. History is available for 30 days or 90 days, depending on the source you use.
@@ -158,29 +158,29 @@ Here are some common questions that the tenant inventory can answer.
   - Are there duplicate, or highly similar, datasets?
   - Are there opportunities to consolidate datasets?
 - **Understand trends between points in time**
-  - Are the number of reports increasing over time?
-  - Are the number of datasets increasing over time?
+  - Is the number of reports increasing over time?
+  - Is the number of datasets increasing over time?
 - **Find unused content**
   - What reports are unused (or under-utilized)?
   - What datasets are unused (or under-utilized)?
   - Are there opportunities to retire content?
 
-The tenant inventory helps you use current names when analyzing historical activities. The snapshot of the items in your tenant contains the names of all items _at that point in time_. It's helpful to use current item names for historical reporting. For example, if a report was renamed three months ago, the activity log at that time will record the old report name. With a properly defined data model, you can use the latest tenant inventory to locate an item by its current name (rather than its former name). For more information, see [Create a data model](#create-a-data-model) later in this article.
+The tenant inventory helps you use current names when analyzing historical activities. The snapshot of the items in your tenant contains the names of all items _at that point in time_. It's helpful to use current item names for historical reporting. For example, if a report was renamed three months ago, the activity log at that time records the old report name. With a properly defined data model, you can use the latest tenant inventory to locate an item by its current name (rather than its former name). For more information, see [Create a data model](#create-a-data-model) later in this article.
 
 For more information about ways to use a tenant inventory, see [Understand published content](powerbi-implementation-planning-auditing-monitoring-overview.md#understand-published-items).
 
 > [!TIP]
 > You will often use both the user activity events (described in the previous section) and the tenant inventory to produce a complete picture. By combining activity log data with your tenant inventory snapshot, you can produce a complete picture and enhance the value of the data.
 
-Because the tenant inventory is a snapshot at a given point in time, you need to decide how often to extract and store the metadata. A weekly snapshot is useful for making comparisons between the two points in time. For example, if you want to investigate security settings for a workspace, you'll need the previous tenant inventory snapshot, the activity log events, and the current tenant inventory snapshot.
+Because the tenant inventory is a snapshot at a given point in time, you need to decide how often to extract and store the metadata. A weekly snapshot is useful for making comparisons between the two points in time. For example, if you want to investigate security settings for a workspace, you need the previous tenant inventory snapshot, the activity log events, and the current tenant inventory snapshot.
 
 There are two main ways to build a tenant inventory. For more information about the decisions and activities involved, see [Access tenant inventory data](#access-tenant-inventory-data) later in this article.
 
 #### Users and groups data
 
-As your analytical needs grow, you will likely determine that you'd like to include data about users and groups in your end-to-end auditing solution. You can use [Microsoft Graph](/graph/overview-major-services), which is the authoritative source for information about Azure Active Directory (Azure AD) users and groups.
+As your analytical needs grow, you'll likely determine that you'd like to include data about users and groups in your end-to-end auditing solution. You can use [Microsoft Graph](/graph/overview-major-services), which is the authoritative source for information about Azure Active Directory (Azure AD) users and groups.
 
-Data that's retrieved from the Power BI REST APIs include an email address for a user, or the name of a security group. This data will be a snapshot at a given point in time.
+Data that's retrieved from the Power BI REST APIs include an email address for a user, or the name of a security group. This data is a snapshot at a given point in time.
 
 Here are some common questions that Microsoft Graph can answer.
 
@@ -205,7 +205,7 @@ Here are some common questions that the [Power BI REST APIs](/rest/api/power-bi/
 
 - **Identify people and applications**
   - Which reports does a user, group, or service principal have access to?
-  - Which users, groups, or service principals are subscribers to receive reports by means of [email subscription](powerbi-implementation-planning-security-content-creator-planning.md#email-subscriptions)?
+  - Which users, groups, or service principals are subscribers to receive reports with [email subscription](powerbi-implementation-planning-security-content-creator-planning.md#email-subscriptions)?
 - **Understand content permissions**
   - Which [workspace roles](powerbi-implementation-planning-security-content-creator-planning.md#workspace-roles) are assigned to which users and groups?
   - Which users and groups are assigned to each [Power BI app audience](powerbi-implementation-planning-security-report-consumer-planning.md#app-audience)?
@@ -219,9 +219,9 @@ Here are some common questions that the [Power BI REST APIs](/rest/api/power-bi/
   - Who has permission to manage [gateways](/data-integration/gateway/manage-security-roles#gateway-roles) and [data connections](/data-integration/gateway/manage-security-roles#connection-roles)?
   - Who has permission to manage a [Premium capacity](/power-bi/enterprise/service-admin-premium-manage#manage-user-permissions)?
 
-For additional considerations about security, see [security planning](powerbi-implementation-planning-security-overview.md) articles.
+For more considerations about security, see [security planning](powerbi-implementation-planning-security-overview.md) articles.
 
-The common questions listed above aren't an exhaustive list. There are a wide variety of Power BI REST APIs available. For more information, see [Using the Power BI REST APIs](/rest/api/power-bi/).
+These common questions aren't an exhaustive list; there are a wide variety of Power BI REST APIs available. For more information, see [Using the Power BI REST APIs](/rest/api/power-bi/).
 
 For more information about using the admin APIs versus user APIs (including how it affects permissions that are required for the user who is extracting the data), see [Choose a user API or admin API](#choose-a-user-api-or-admin-api) later in this article.
 
@@ -253,7 +253,7 @@ Manual auditing is best suited to:
 - New scripts that are being developed and tested.
 - Occasional, one-off auditing needs.
 - Exploratory auditing needs.
-- Non-essential auditing processes that don't require full support.
+- Nonessential auditing processes that don't require full support.
 
 #### Automated auditing processes
 
@@ -282,11 +282,11 @@ The type of process, manual or automated, might impact how you handle authentica
 
 ### Permissions and responsibilities
 
-At this point, you should have a clear idea of what you want to accomplish and the data you will initially need. Now is a good time to make decisions about user permissions, as well as roles and responsibilities.
+At this point, you should have a clear idea of what you want to accomplish and the data you'll initially need. Now is a good time to make decisions about user permissions, as well as roles and responsibilities.
 
 #### User permissions
 
-As you plan to build an end-to-end auditing solution, consider user permissions for others who will need to access the data. Specifically, decide who is permitted to access and view auditing data.
+As you plan to build an end-to-end auditing solution, consider user permissions for others who need to access the data. Specifically, decide who is permitted to access and view auditing data.
 
 Here are some considerations to take into account.
 
@@ -309,9 +309,9 @@ This decision involves who's permitted to view the curated and transformed data 
 
 #### Roles and responsibilities
 
-Once you've decided how user permissions will work, you're in a good position to start considering roles and responsibilities. The goal is to involve the right people early on, especially when multiple developers or teams will be involved in building the end-to-end auditing solution.
+Once you've decided how user permissions work, you're in a good position to start considering roles and responsibilities. The goal is to involve the right people early on, especially when multiple developers or teams are involved in building the end-to-end auditing solution.
 
-Decide which user or team will be responsible for the following activities.
+Decide which user or team are responsible for the following activities.
 
 | **Role** | **Types of responsibilities** | **Role typically performed by** |
 | --- | --- | --- |
@@ -327,9 +327,9 @@ Decide which user or team will be responsible for the following activities.
 | Scheduling and automation | Operationalizing a solution and schedule the process within the tool of choice. | Data engineering staff, usually in IT and in partnership with the COE. |
 | Support the solution | Monitor the audit solution, including job runs, errors, and support for technical issues. | The team that handles Power BI system support, which is usually IT or the COE. |
 
-Many of the above roles and responsibilities can be consolidated if they're performed by the same team or the same person. For example, some of the roles may be performed by your Power BI administrators.
+Many of the above roles and responsibilities can be consolidated if they're performed by the same team or the same person. For example, your Power BI administrators may perform some of these roles.
 
-It's also possible that a particular role is performed by different people depending on the circumstance. Actions will be contextual depending on the audit data and the proposed action.
+It's also possible that different people perform different roles, depending on the circumstance. Actions will be contextual depending on the audit data and the proposed action.
 
 Consider several examples.
 
@@ -378,7 +378,7 @@ This section focuses on your technology choice. For considerations about the sou
 
 ##### Platform options
 
-There are a variety of ways to access audit data. Depending on the technology you choose, you might need to choose a preferred language. You might also need to make a specific decision on how to schedule the running of your scripts. Different platforms differ widely in their learning curve and ease of getting started.
+There are various ways to access audit data. Depending on the technology you choose, you might need to choose a preferred language. You might also need to make a specific decision on how to schedule the running of your scripts. Different platforms differ widely in their learning curve and ease of getting started.
 
 Here are some technologies you can use to retrieve data from Power BI REST APIs.
 
@@ -426,7 +426,7 @@ Here are a few common options.
 > [!IMPORTANT]
 > We recommend that you use the [latest version](/powershell/scripting/whats-new/differences-from-windows-powershell) of PowerShell (PowerShell Core) for all new development work. You should discontinue using Windows PowerShell (which can't run PowerShell Core) and instead use one of the modern code editors that support PowerShell Core. Take care when referring to many online examples that use Windows PowerShell (version 5.1) because they might not use the latest (and better) code approaches.
 
-You can use PowerShell in a several different ways. For more information about this technical decision, see [Choose APIs or PowerShell cmdlets](#choose-apis-or-powershell-cmdlets) later in this article.
+You can use PowerShell in several different ways. For more information about this technical decision, see [Choose APIs or PowerShell cmdlets](#choose-apis-or-powershell-cmdlets) later in this article.
 
 There are many online resources available for using PowerShell, and it's often possible to find experienced developers who can create and manage PowerShell solutions. PowerShell is a good choice for creating both manual and automated auditing processes.
 
@@ -453,7 +453,7 @@ You can use [Power Automate](/power-automate/getting-started) with Power BI in m
 > [!TIP]
 > To send requests to the Power BI REST APIs, you can use a [custom connector](/connectors/custom-connectors/) for Power Automate to securely authenticate and extract the audit data. Alternatively, you can use Azure Key Vault to reference a password or secret. Both options are better than storing passwords and secrets directly within the Power Automate flow.
 
-For additional ideas on ways to use Power Automate, search for _Power BI_ in the [Power Automate templates](https://flow.microsoft.com/templates/).
+For other ideas on ways to use Power Automate, search for _Power BI_ in the [Power Automate templates](https://flow.microsoft.com/templates/).
 
 ###### Preferred Azure service
 
@@ -468,7 +468,7 @@ In most cases, you can combine a compute service that handles the logic for the 
 
 ###### Preferred tool and/or language
 
-You can use your preferred tool and your preferred language to send requests to the Power BI REST APIs. That's a good approach when your team has expertise with a specific tool or language such as:
+You can use your preferred tool and your preferred language to send requests to the Power BI REST APIs. This a good approach when your team has expertise with a specific tool or language such as:
 
 - Python
 - C# on the .NET framework. Optionally, you can use the [Power BI .NET SDK](https://github.com/microsoft/PowerBI-CSharp), which acts as a wrapper on top of the Power BI REST APIs in order to simplify some processes and increase productivity.
@@ -476,7 +476,7 @@ You can use your preferred tool and your preferred language to send requests to 
 
 ###### Microsoft Purview audit search
 
-The [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-worldwide) (formerly the Microsoft 365 compliance center) includes a user interface for viewing and searching [audit logs](http://microsoft-365/compliance/audit-log-search?view=o365-worldwide&preserve-view=true). The unified audit logs include Power BI, as well as all other services that support Microsoft 365 unified audit logs.
+The [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-worldwide&preserve-view=true) (formerly the Microsoft 365 compliance center) includes a user interface for viewing and searching [audit logs](http://microsoft-365/compliance/audit-log-search?view=o365-worldwide&preserve-view=true). The unified audit logs include Power BI, and all other services that support Microsoft 365 unified audit logs.
 
 The data captured in the unified audit log is the exact same data that's contained in the [Power BI activity log](/power-bi/admin/service-admin-auditing). When you do an audit log search in the Microsoft Purview compliance portal, it adds your request to the queue. It may take a few minutes (or longer, depending on the volume of data) for the data to be ready.
 
@@ -507,19 +507,19 @@ Using KQL to search the data in Azure Monitor is a good option for viewing part 
 
 ###### Postman
 
-[Postman](https://www.postman.com/) is a platform for building and using APIs. Many Power BI community members choose to use Postman for learning purposes, as well as for automated scripts. Developers often prefer tools like Postman because it supports advanced API development and testing.
+[Postman](https://www.postman.com/) is a platform for building and using APIs. Many Power BI community members choose to use Postman for learning purposes and for automated scripts. Developers often prefer tools like Postman because it supports advanced API development and testing.
 
 ##### Platform considerations
 
 Here are some considerations for how to access audit data.
 
-- **Are you implementing a manual or automated auditing process?** Certain tools align strongly with manual processing or automated processing. For example, the Try-it functionality is always run interactively by a user, so it's suited only to manual auditing processes.
+- **Are you implementing a manual or automated auditing process?** Certain tools align strongly with manual processing or automated processing. For example, a user always runs the Try-it functionality interactively, so it's suited only to manual auditing processes.
 - **How will you be authenticating?** Not all options support every authentication option. For example, the Try-it functionality only supports user authentication.
 - **How will you store credentials securely?** Different technologies have different options for storing credentials. For more information, see [Determine the authentication method](#determine-the-authentication-method) later in this article.
 - **Which technology is your team already proficient with?** If there's a tool that your team prefers and is comfortable using, start there.
-- **What is your team capable of supporting?** If a different team will support the deployed solution, consider whether that team is able to sufficiently support it. That's a consideration for internal teams, as well as when development is done by consultants.
-- **What tool do you have approval to use?** Certain tools and technologies require additional approval. It could be due to the cost. It could also be due to IT security policies.
-- **What's your preference for scheduling?** Some technologies make the decision for you. Other times it'll be an additional decision you must make. For example, if you choose to write PowerShell scripts, there are a variety of ways you can schedule running them. Conversely, if you use a cloud service such as Azure Data Factory, scheduling is built in.
+- **What is your team capable of supporting?** If a different team will support the deployed solution, consider whether that team is able to sufficiently support it. This is a consideration both for internal teams and when development is done by consultants.
+- **What tool do you have approval to use?** Certain tools and technologies require extra approval. It could be due to the cost. It could also be due to IT security policies.
+- **What's your preference for scheduling?** Some technologies make the decision for you. Other times it will be an extra decision you must make. For example, if you choose to write PowerShell scripts, there are various ways you can schedule running them. Conversely, if you use a cloud service such as Azure Data Factory, scheduling is built in.
 
 We recommend that you review the remainder of this article before choosing a technology to access audit data.
 
@@ -577,9 +577,9 @@ User authentication is useful in the following situations.
   - **Administrator permissions for admin APIs:** You need to use your Power BI administrator permissions to send a request to an _admin API_.
   - **User permissions for user APIs:** You need to use your Power BI user permissions for sending a request to a _user API_. For more information, see [Choose a user API or admin API](#choose-a-user-api-or-admin-api).
 - **Interactive sign-in:** You want to sign in interactively, which requires you to input your email address and password. You must sign in interactively to use the [Try-it](#try-it-in-api-documentation) experience, which is found within API documentation.
-- **Tracking who accessed tenant metadata:** When individual users and administrators send API requests, you might want to audit who those individuals are. When you authenticate with a service principal (described next), the user ID that's captured by the activity log as the Application ID. If multiple administrators authenticate with the same service principal, it might be difficult to know which administrator accessed the data.
+- **Tracking who accessed tenant metadata:** When individual users and administrators send API requests, you might want to audit who those individuals are. When you authenticate with a service principal (described next), the user ID captured by the activity log is the Application ID. If multiple administrators authenticate with the same service principal, it can be difficult to know which administrator accessed the data.
 - **Shared administrator account:** Some IT teams use a shared administrator account. Depending on how it's implemented and controlled, it may not be a best practice. Instead of a shared account, you should consider using Azure AD [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM), which can grant occasional and temporary Power BI administrator rights for a user.
-- **APIs that only support user authentication:** Occasionally, you might need to use an API that's not supported by a service principal. Each API documentation page notes whether the API can be called by a service principal.
+- **APIs that only support user authentication:** Occasionally, you might need to use an API that doesn't support use with a service principal. Each API documentation page notes whether a service principal can call the API.
 
 > [!IMPORTANT]
 > Whenever possible, we recommend that you use service principal authentication for automated processes. Service principal authentication is described next.
@@ -588,7 +588,7 @@ User authentication is useful in the following situations.
 
 Most organizations have one Azure AD tenant, so the terms _app registration_ and _service principal_ tend to be used interchangeably. When you [register](/azure/active-directory/develop/app-objects-and-service-principals#application-registration) an Azure AD app, there are two components.
 
-- **App registration:** An [app registration](/azure/active-directory/develop/app-objects-and-service-principals#application-object) is globally unique. It's the global definition of a registered Azure AD app that can be used by multiple tenants. An app registration is also known as a _client application_ or the _actor_. Note that usually, the term _client application_ implies a user machine. However, that's not the situation for app registrations. In the Azure portal, Azure AD applications are found on the _App registrations_ page in Azure AD.
+- **App registration:** An [app registration](/azure/active-directory/develop/app-objects-and-service-principals#application-object) is globally unique. It's the global definition of a registered Azure AD app that can be used by multiple tenants. An app registration is also known as a _client application_ or the _actor_. Typically, the term _client application_ implies a user machine. However, that's not the situation for app registrations. In the Azure portal, Azure AD applications are found on the _App registrations_ page in Azure AD.
 - **Service principal:** A [service principal](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is the local representation of the app registration for use in your specific tenant. The service principal is derived from the registered Azure AD app. For organizations with multiple Azure AD tenants, the same app registration can be referenced by more than one service principal. In the Azure portal, service principals can be found on the _Enterprise applications_ page in Azure AD.
 
 Since the service principal is the local representation, the term _service principal authentication_ is the most common way to refer to sign-ins.
@@ -627,21 +627,21 @@ The following table includes examples of app registrations that can be used to e
 | PowerBIData-ReadWrite-PowerBIAdministrators-AADApp | Manage the Power BI tenant. Requires read/write permissions to create or update resources. | Power BI administrators and the Center of Excellence |
 | GraphData-Read-PowerBIAdministrators-AADApp | Extract user and group data for auditing and administration of Power BI. Requires read permissions. | Power BI administrators and the Center of Excellence |
 
-Managing multiple app registrations for different purposes involves additional effort. However, you can benefit from several advantages.
+Managing multiple app registrations for different purposes involves more effort. However, you can benefit from several advantages.
 
-- **See what the app registration is _intended_ to be used for and why:** When you see the client ID from the app registration show up in your auditing data, you will have an idea of what it's used for and why. That's a significant advantage of creating separate app registrations (rather than using only one for all purposes).
-- **See who the app registration is _intended_ to be used by:** When you see the client ID from the app registration show up in your auditing data, you will have an idea of who should be using it.
+- **See what the app registration is _intended_ to be used for and why:** When you see the client ID from the app registration show up in your auditing data, you'll have an idea of what it's used for and why. This is a significant advantage of creating separate app registrations (rather than using only one for all purposes).
+- **See who the app registration is _intended_ to be used by:** When you see the client ID from the app registration show up in your auditing data, you'll have an idea of who should be using it.
 - **Avoid overprovisioning permissions:** You can follow the principle of least privilege by providing separate app registrations to different sets of users who have different needs. You can avoid overprovisioning permissions by using a read-only app registration when write permissions aren't necessary. For example, you may have some highly capable self-service users who want to gather data about their datasets; they need access to a service principal with _read_ permission. Whereas there might be satellite members of the Center of Excellence working for the Finance team who programmatically manage datasets; they need access to a service principal with _write_ permission.
-- **Know who _should_ be in possession of the secret:** The secret for each app registration should only be shared with the people who need it. When the secret is _rotated_ (described later in this section), the impact is smaller when you use separate app registrations for different needs. That's particularly helpful when you need to rotate the secret because a user leaves organization or changes roles.
+- **Know who _should_ be in possession of the secret:** The secret for each app registration should only be shared with the people who need it. When the secret is _rotated_ (described later in this section), the impact is smaller when you use separate app registrations for different needs. This is helpful when you need to rotate the secret because a user leaves organization or changes roles.
 
 ###### App registration permissions
 
 There are two main ways that an app registration can access data and resources. It involves [permissions and consent](/azure/active-directory/develop/permissions-consent-overview).
 
-- **App-only permissions:** Access and authorization is handled by the service principal without a signed-in user. That method of authentication is helpful for automation scenarios. When using app-only permissions, it's critical to be aware that permissions are _not_ assigned in Azure AD. Rather, permissions are assigned in one of two ways:
+- **App-only permissions:** Access and authorization are handled by the service principal without a signed-in user. That method of authentication is helpful for automation scenarios. When using app-only permissions, it's critical to know permissions are _not_ assigned in Azure AD. Rather, permissions are assigned in one of two ways:
   - **For running admin APIs:** The Power BI tenant settings allow access to the endpoints for admin APIs (that return tenant-wide auditing metadata). For more information, see [Set Power BI tenant settings](#set-power-bi-tenant-settings) later in this article.
   - **For running user APIs:** Power BI workspace and item permissions. Standard Power BI permissions control what data can be returned to a service principal when running user APIs (that return auditing data based on permissions of the user or service principal that's invoking the API).
-- **Delegated permissions:** Scope-based permissions are used. The service principal accesses data on behalf of a user that's currently signed in. It means that the service principal can't access anything beyond what the sign-in user can access. Be aware that it's a different concept from user-only authentication, described previously. Because a custom application is required to properly handle the combination of user and app permissions, delegated permissions are rarely used for auditing scenarios. This concept is commonly misunderstood, leading to many app registrations that are overprovisioned with permissions.
+- **Delegated permissions:** Scope-based permissions are used. The service principal accesses data on behalf of a user that's currently signed in. It means that the service principal can't access anything beyond what the sign-in user can access. Be aware that this is a different concept from user-only authentication, described previously. Because a custom application is required to properly handle the combination of user and app permissions, delegated permissions are rarely used for auditing scenarios. This concept is commonly misunderstood, leading to many app registrations that are overprovisioned with permissions.
 
 > [!IMPORTANT]
 > In this article, the focus is only on user authentication or app-only authentication. Delegated permissions (with an interactive user and the service principal) could play an important role when programmatically embedding Power BI content. However, we strongly discourage you from setting up delegated permissions for extracting auditing data. Every API limits how frequently it can be run (with throttling in place), so it isn't practical to have different users directly accessing the raw audit data. Instead, we recommend that you extract the raw audit data once (with a centralized process) and make the curated audit data available to authorized users downstream.
@@ -650,7 +650,7 @@ For more information, see [Register an Azure AD app](#register-an-azure-ad-appli
 
 ###### App registration secrets
 
-An app registration often has a _secret_ assigned to it. The secret is used as a key for authentication, and it has an expiration date. Therefore, you need to plan how to rotate the key on a regular basis and how to communicate the new key to authorized users.
+An app registration often has a _secret_ assigned to it. The secret is used as a key for authentication, and it has an expiration date. Therefore, you need to plan how to rotate the key regularly and how to communicate the new key to authorized users.
 
 You also need to be concerned with where to securely store the secret. An organizational password vault, such as [Azure Key Vault](/azure/key-vault/general/basic-concepts), is an excellent choice.
 
@@ -667,7 +667,7 @@ Regardless of whether you use user authentication or service principal authentic
 Here are several ideas for how you can manage passwords, secrets, and keys.
 
 - Integrate with [Azure Key Vault](/azure/key-vault/general/overview) or another organizational password vault system, whenever possible.
-- Use [credentials and secure strings](/powershell/scripting/learn/deep-dives/add-credentials-to-powershell-functions) in your PowerShell scripts. A credential works for both user authentication as well as service principal authentication. However, you can't use a credential when multi-factor authentication is enabled for a user account.
+- Use [credentials and secure strings](/powershell/scripting/learn/deep-dives/add-credentials-to-powershell-functions) in your PowerShell scripts. A credential works for both user authentication and service principal authentication. However, you can't use a credential when multi-factor authentication is enabled for a user account.
 - Prompt for a password in your PowerShell script or use interactive authentication with a browser.
 - Use the [Secret Management](https://www.powershellgallery.com/packages/Microsoft.PowerShell.SecretManagement) module for PowerShell that's published by Microsoft. It can store values by using a local vault. It can also integrate with a remote [Azure Key Vault](/azure/key-vault/general/overview), which is useful when there are multiple administrators in your organization who work with the same scripts.
 - Create a [custom connector](/power-bi/connect-data/desktop-connector-extensibility) for Power BI Desktop so that it can securely handle credentials. Some custom connectors are available from community members (usually on GitHub).
@@ -677,7 +677,7 @@ Here are several ideas for how you can manage passwords, secrets, and keys.
 
 ##### Microsoft Authentication Library
 
-Support for Azure AD Authentication Library (ADAL) ended in December, 2022. Going forward, you should use [Microsoft Authentication Library](/azure/active-directory/develop/msal-overview) (MSAL). The security team in your organization should be familiar with this significant change.
+Support for Azure AD Authentication Library (ADAL) ended in December  2022. Going forward, you should use [Microsoft Authentication Library](/azure/active-directory/develop/msal-overview) (MSAL). The security team in your organization should be familiar with this significant change.
 
 While it's not important for Power BI professionals to deeply understand the transition to MSAL, you should adhere to the following recommendations.
 
@@ -713,7 +713,7 @@ There are two types of APIs to consider.
 > [!TIP]
 > All admin APIs belong to the [Admin operation group](/rest/api/power-bi/#rest-operation-groups). Any API that has the _As Admin_ suffix is an admin API; all other APIs are user APIs.
 
-Consider an example where you need to obtain a list of datasets. The following table shows six API options that you can use to do that. Four options are user APIs, and two options are admin APIs. Note that the scope and number of items that are returned will be different depending on the API you choose.
+Consider an example where you need to obtain a list of datasets. The following table shows six API options that you can use to do that. Four options are user APIs, and two options are admin APIs. The scope and number of items that are returned are different, depending on the API you choose.
 
 | **API name** | **Type of API** | **Scope** | **Number of datasets** |
 | --- | --- | --- | --- |
@@ -740,7 +740,7 @@ For information about tenant settings, see the [Set Power BI tenant settings](#s
 
 #### Choose APIs or PowerShell cmdlets
 
-A key decision to make is whether to use PowerShell cmdlets when they're available for the specific data that you want to retrieve. This decision is important if you've decided that PowerShell is one of the technologies you'll use to access audit data.
+A key decision to make is whether to use PowerShell cmdlets when they're available for the specific data that you want to retrieve. This decision is important if you've decided that PowerShell is one of the technologies you use to access audit data.
 
 [PowerShell](/powershell/scripting/overview) is a task automation solution. The term _PowerShell_ is a collective term that refers to the scripting language, a command-line shell application, and a configuration management framework. PowerShell Core is the newest version of PowerShell, which runs on Windows, Linux, and macOS.
 
@@ -748,11 +748,11 @@ A PowerShell _cmdlet_ is a command that performs an action. A PowerShell _module
 
 A PowerShell module creates a layer of abstraction over the APIs. For example, the [Get-PowerBIActivityEvent](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent) cmdlet retrieves (or _gets_) audit events for a Power BI tenant. This PowerShell cmdlet retrieves its data from the [Get Activity Events](/rest/api/power-bi/admin/get-activity-events) REST API. Generally, it's simpler to get started by using the cmdlets since it simplifies access to the underlying APIs.
 
-Only a subset of the APIs are available directly as PowerShell cmdlets. As you continue to expand your entire auditing solution, it's likely that you will use a combination of cmdlets and APIs. The remainder of this section helps you to decide which way you will access the data.
+Only a subset of the APIs are available directly as PowerShell cmdlets. As you continue to expand your entire auditing solution, it's likely that you'll use a combination of cmdlets and APIs. The remainder of this section helps you to decide which way you'll access the data.
 
 ##### PowerShell modules
 
-Microsoft has published two PowerShell modules that contain cmdlets related to Power BI. They are the **Power BI Management** module and the **Data Gateway** module. These PowerShell modules act as an _API wrapper_ on top of the underlying Power BI REST APIs. Using these PowerShell modules can make scripting operations easier.
+Microsoft has published two PowerShell modules that contain cmdlets related to Power BI. They're the **Power BI Management** module and the **Data Gateway** module. These PowerShell modules act as an _API wrapper_ on top of the underlying Power BI REST APIs. Using these PowerShell modules can make scripting operations easier.
 
 > [!TIP]
 > In addition to the modules published by Microsoft, there are freely available PowerShell modules and scripts published (usually on GitHub) by Power BI community members, partners, and Microsoft Most Valued Professionals (MVPs). Starting with a community solution can play an important role in building your end-to-end auditing solution. If you choose to use a freely available solution, be sure to fully test it. Become familiar with how it works so you can effectively manage the solution over time. Your IT department might have criteria for using publicly available community solutions.
@@ -773,14 +773,14 @@ Here are several commonly used cmdlets that you can use to retrieve auditing dat
 | Workspaces | [Get-PowerBIWorkspace](/powershell/module/microsoftpowerbimgmt.workspaces/get-powerbiworkspace) | Compile a list of workspaces. |
 | Reports | [Get-PowerBIReport](/powershell/module/microsoftpowerbimgmt.reports/get-powerbireport) | Compile a list of reports for a workspace or the tenant. |
 | Data | [Get-PowerBIDataset](/powershell/module/microsoftpowerbimgmt.data/get-powerbidataset) | Compile a list of datasets for a workspace or the tenant. |
-| Profile | [Invoke-PowerBIRestMethod](/powershell/module/microsoftpowerbimgmt.profile/invoke-powerbirestmethod) | Send a REST API request (command). This cmdlet is an good option because it can invoke any of the Power BI REST APIs. It's also a good choice when you want to use the simpler form of authentication by using `Connect-PowerBIServiceAccount` cmdlet and be able to invoke an API that doesn't have a corresponding PowerShell cmdlet. For more information, see [Considerations for using PowerShell cmdlets](#considerations-for-using-powershell-cmdlets) later in this section. |
+| Profile | [Invoke-PowerBIRestMethod](/powershell/module/microsoftpowerbimgmt.profile/invoke-powerbirestmethod) | Send a REST API request (command). This cmdlet is a good option because it can invoke any of the Power BI REST APIs. It's also a good choice when you want to use the simpler form of authentication by using `Connect-PowerBIServiceAccount` cmdlet and be able to invoke an API that doesn't have a corresponding PowerShell cmdlet. For more information, see [Considerations for using PowerShell cmdlets](#considerations-for-using-powershell-cmdlets) later in this section. |
 
 > [!TIP]
 > There are other cmdlets available for managing and publishing content. However, the focus of this article is on retrieving auditing data so that you can understand how Power BI is used.
 
 You can download the **Power BI Management** module from the [PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt). The simplest way to install modules is to use [PowerShellGet](/powershell/scripting/gallery/installing-psget).
 
-We recommend that you install the **Power BI Management** rollup module. That way, all the cmdlets you might need will be available. At a minimum, you need the **Profile** module (for authentication) and any specific modules that contains the cmdlets that you want to use.
+We recommend that you install the **Power BI Management** rollup module. That way, all the cmdlets you might need are available. At a minimum, you need the **Profile** module (for authentication) and any specific modules that contain the cmdlets that you want to use.
 
 > [!CAUTION]
 > Be sure you keep the modules up to date on every server, user machine, and cloud service (such as Azure Automation) where you use PowerShell. If the modules aren't updated regularly, unpredictable errors or issues could arise. Some tools (like Visual Studio Code) help you keep the modules updated. Also, be aware that PowerShellGet doesn't automatically [uninstall](/powershell/module/powershellget/uninstall-module) older versions of a module when you install or update a newer version. It installs newer versions alongside the older versions. We recommend that you [check](/powershell/module/powershellget/get-installedmodule) for installed versions and periodically uninstall older versions.
@@ -827,9 +827,9 @@ Technical users (and administrators) can use the **Power BI Management** modules
 - **For administrators:** Set the `-Scope` parameter to `Organization` to access entities across the entire tenant (for example, to retrieve a list of all workspaces).
 - **For technical users:** Set the `-Scope` parameter to `Individual` (or omit the parameter) to access entities that belong to the user (for example, to retrieve a list of workspaces the user has permission to access).
 
-Consider a scenario where you need to obtain a list of datasets. If you choose to work directly with the APIs, you must specify which API to call. However, if you choose to use the [Get-PowerBIDataset](/powershell/module/microsoftpowerbimgmt.data/get-powerbidataset) cmdlet, you can set the `-Scope` parameter to retrieve a user-specific or tenant-wide list of datasets. The choice you make will depend on your decision for how to use PowerShell (covered in the previous table).
+Consider a scenario where you need to obtain a list of datasets. If you choose to work directly with the APIs, you must specify which API to call. However, if you choose to use the [Get-PowerBIDataset](/powershell/module/microsoftpowerbimgmt.data/get-powerbidataset) cmdlet, you can set the `-Scope` parameter to retrieve a user-specific or tenant-wide list of datasets. The choice you make depends on your decision for how to use PowerShell (covered in the previous table).
 
-The following table describes how the parameters used in the PowerShell cmdlet translates to which API is run by PowerShell.
+The following table describes how the parameters used in the PowerShell cmdlet translate to which API is Powershell runs.
 
 | **Cmdlet parameters** | **API that the cmdlet uses** | **Type of API** | **Scope** | **Retrieved items** |
 | --- | --- | --- | --- | --- |
@@ -850,17 +850,17 @@ Here are some of the ways that the cmdlets simplify accessing auditing data.
 - **Simplicity:** It's simpler to get started because the techniques to retrieve auditing data are straightforward. Consider that when you use the [Get-PowerBIActivityEvent](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent) cmdlet, you retrieve _one day_ of audit data. However, when you directly call the [Get Activity Events](/rest/api/power-bi/admin/get-activity-events) REST API, you retrieve _one hour_ of audit data. So, when you use the REST API to retrieve one day of audit data you must use a loop to call the REST API 24 times to extract each hour of the day.
 - **Pagination of a large result sets:** Large result sets are efficiently retrieved by _pagination_. Pagination involves retrieving one chunk of the results at a time. The cmdlets automatically manage pagination for you. However, when you directly use the REST APIs, your script must check a continuation token to determine whether there are any more results. The script should continue retrieving chunks of results until no continuation token is received. For an example of using a continuation token, see [Activity Events REST API](/rest/api/power-bi/admin/get-activity-events#get-the-next-set-of-audit-activity-events-by-sending-the-continuation-token-to-the-api-example).
 - **Access token expirations:** After authentication succeeds, an access token is returned. By default, it expires after one hour. The cmdlets handle access token expirations for you. That way, you don't need to write logic to request a refresh token.
-- **Formatting:** The data returned by a cmdlet is formatted slightly nicer than the data returned by the REST API. The output is slightly more readable. For automated auditing processes, that's not likely to be an issue. However, for manual auditing processes, that might be helpful.
+- **Formatting:** The data returned by a cmdlet is formatted slightly nicer than the data returned by the REST API. The output is slightly more readable. For automated auditing processes, that's not likely to be an issue. However, for manual auditing processes this might be helpful.
 
 ##### Considerations for using the REST APIs directly
 
 Sometimes there are advantages to calling the Power BI REST APIs directly.
 
-- **Many more APIs available:** There are significantly more REST APIs available than PowerShell cmdlets. However, don't overlook the flexibility of the [Invoke-PowerBIRestMethod](/powershell/module/microsoftpowerbimgmt.profile/invoke-powerbirestmethod) cmdlet, which you can use to call any of the Power BI REST APIs.
+- **Many more APIs available:** There are more REST APIs available than PowerShell cmdlets. However, don't overlook the flexibility of the [Invoke-PowerBIRestMethod](/powershell/module/microsoftpowerbimgmt.profile/invoke-powerbirestmethod) cmdlet, which you can use to call any of the Power BI REST APIs.
 - **Frequency of updates:** Microsoft updates the REST APIs more frequently than they update the PowerShell modules. For example, if a new attribute is added to the [Get Dataset](/rest/api/power-bi/datasets/get-dataset) API response, it could take some time before it becomes available in the results of the [Get-PowerBIDataset](/powershell/module/microsoftpowerbimgmt.data/get-powerbidataset) cmdlet.
 - **Less language/tool dependency:** When you use the REST APIs directly (instead of a cmdlet), you don't need to use PowerShell. Or you might choose to use PowerShell only to coordinate running the script. By removing or avoiding any dependency on PowerShell, at some time in the future you can simply rewrite your logic in a different language. When your IT or developer team has strong preferences for tools and languages, this can be an important consideration to take into account.
 
-Regardless of which method you choose to use, be aware that the REST APIs can change over time. When a technology evolves, APIs (and PowerShell modules) can be deprecated and replaced. Therefore, we recommend that you purposefully create scripts that are simple to maintain and that are resilient to change.
+Regardless of which method you choose to use, the REST APIs can change over time. When a technology evolves, APIs (and PowerShell modules) can be deprecated and replaced. Therefore, we recommend that you purposefully create scripts that are simple to maintain and resilient to change.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -892,7 +892,7 @@ Here are some options for storing raw data.
 
 - **Data lake or object storage:** A cloud service such as [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction) that specializes in storing files of any structure. It's an ideal choice for storing the raw auditing data.
 - **File system:** A file system (such as Windows or Linux) is a common choice for storing the raw data files.
-- **Database:** It's possible to store JSON data in a relational database, like [Azure SQL Database](/azure/azure-sql/database/json-features?view=azuresql). However, it's less common than storing them in a data lake or file system. That's because querying and maintaining JSON data can become challenging and expensive, especially as data volumes grow.
+- **Database:** It's possible to store JSON data in a relational database, like [Azure SQL Database](/azure/azure-sql/database/json-features?view=azuresql&preserve-view=true). However, it's less common than storing them in a data lake or file system. That's because querying and maintaining JSON data can become challenging and expensive, especially as data volumes grow.
 
 > [!TIP]
 > When you use a data lake, object storage, or a file system, we recommend that you store the data in a way that's easy to organize and secure. It's also important to be clear about whether the data comprises events (which are typically appended) or whether it's a point-in-time snapshot (which requires selecting a date to analyze).
@@ -908,7 +908,7 @@ Here are some considerations to help you choose your raw data storage.
 - **Is it a manual or automated auditing process?** An automated auditing process typically has stricter requirements for how and where data is stored.
 - **Is the subject area particularly sensitive?** Depending on the type of data and how sensitive it is, your organization might have a requirement for how and where it's stored. Power BI auditing data contains identifying user information and IP addresses, so it should be stored in a secure area.
 - **Is there a preferred storage technology?** There may be an existing storage technology that's in use within the organization, so it's a logical choice.
-- **Will users access the storage directly?** The security model is an important consideration. Usually, very few users are granted access to raw data. Access to the curated data is typically made available to Power BI content creators who are responsible for creating the centralized data model (the dataset that will serve as the semantic layer for reporting).
+- **Will users access the storage directly?** The security model is an important consideration. Usually, very few users are granted access to raw data. Access to the curated data is typically made available to Power BI content creators who are responsible for creating the centralized data model (the dataset that serves as the semantic layer for reporting).
 - **Do you have data residency requirements?** Some organizations have legal or regulatory data residency requirements to store data in a specific data region.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
@@ -924,7 +924,7 @@ Here are some considerations to help you choose your raw data storage.
 
 #### Plan to create curated data
 
-Curated data supports analysis and is designed to be user-friendly. You'll need to make some decisions on how and where curated data will be created. The technology you choose to store the curated data might be any of the technologies listed in the [previous section](#determine-where-to-store-audit-data).
+Curated data supports analysis and is designed to be user-friendly. You need to make some decisions on how and where curated data will be created. The technology you choose to store the curated data might be any of the technologies listed in the [previous section](#determine-where-to-store-audit-data).
 
 The goal of a curated data is to transform the data into a more friendly format that's optimized for analysis and reporting. It forms the data source of a Power BI data model, so that means you use a Power BI data model to analyze the usage of Power BI in your organization. Fundamental data model guidance applies: You should adopt a [star schema design](star-schema.md), which is optimized for performance and usability.
 
@@ -949,7 +949,7 @@ Use a Power BI data model when:
 
 - You want to simplify the end-to-end architecture and load the data model directly from the raw data. (Incremental data refresh can help reduce refresh durations.)
 - Your preference is to do all the transformation work while loading the data model.
-- You expect to have one centralized data model for the tenant-level auditing data. All reports (or additional data models) can use the centralized Power BI dataset as its source.
+- You expect to have one centralized data model for the tenant-level auditing data. All reports (or other data models) can use the centralized Power BI dataset as its source.
 - You want to provide user access only to the centralized Power BI dataset (and not to any of the source data).
 
 > [!TIP]
@@ -970,7 +970,7 @@ For more information about what dimensions and facts you might include in your s
 
 ### Data source decisions
 
-At this point, you should be clear on requirements, data needs, and permissions. Key technical decisions have been made. You now need to make some decisions about the approach for how you will obtain certain types of data.
+At this point, you should be clear on requirements, data needs, and permissions. Key technical decisions have been made. You now need to make some decisions about the approach for how you'll obtain certain types of data.
 
 #### Access user activity data
 
@@ -997,7 +997,7 @@ The remainder of this section introduces each of the options presented in the ta
 
 The [audit search tool](/microsoft-365/compliance/audit-new-search) in the Microsoft Purview compliance portal (formerly known as the Microsoft 365 compliance center) is a convenient place to view activities and alerts. This tool doesn't require you to create a script to extract and download the data. You can choose a Power BI workload to view all the audit log records for a range of time. You can narrow down the results by selecting specific activities and users. For example, a manager asks you to find out who deleted a workspace earlier that day so they can quickly contact the person to discuss the situation.
 
-The most recent 90 days of history is available with [Audit (Standard)](/microsoft-365/compliance/audit-standard-setup). With [Audit (Premium)](/microsoft-365/compliance/audit-premium), [long-term retention](/microsoft-365/compliance/audit-premium#long-term-retention-of-audit-logs) allows you to optionally retain audit logs longer. Since long-term retention only applies to [licensed E5 users](/microsoft-365/compliance/audit-log-retention-policies#default-audit-log-retention-policy), it excludes audit records for non-E5 users and guest users. Therefore, we recommend that you only rely on the default 90-day history to ensure that all activity is captured.
+The most recent 90 days of history are available with [Audit (Standard)](/microsoft-365/compliance/audit-standard-setup). With [Audit (Premium)](/microsoft-365/compliance/audit-premium), [long-term retention](/microsoft-365/compliance/audit-premium#long-term-retention-of-audit-logs) allows you to optionally retain audit logs longer. Since long-term retention only applies to [licensed E5 users](/microsoft-365/compliance/audit-log-retention-policies#default-audit-log-retention-policy), it excludes audit records for non-E5 users and guest users. Therefore, we recommend that you only rely on the default 90-day history to ensure that all activity is captured.
 
 There are [licensing requirements](/microsoft-365/compliance/audit-solutions-overview#licensing-requirements) to access the audit logs in the Microsoft Purview compliance portal. Elevated [Exchange Online permissions](/microsoft-365/compliance/audit-log-search#before-you-search-the-audit-log) are also required in order to access the audit logs.
 
@@ -1008,7 +1008,7 @@ The user interface in the Microsoft Purview compliance portal is useful for manu
 
 ##### Defender for Cloud Apps
 
-The portal in [Defender for Cloud Apps](powerbi-implementation-planning-defender-for-cloud-apps.md) is a convenient place to view activities and alerts without the need to create a script to extract and download the data. It also allows you to view data from the Power BI activity log as well as user sign-ins.
+The portal in [Defender for Cloud Apps](powerbi-implementation-planning-defender-for-cloud-apps.md) is a convenient place to view activities and alerts without the need to create a script to extract and download the data. It also allows you to view data from the Power BI activity log and user sign-ins.
 
 Defender for Cloud Apps includes a user interface so you can view and search activity logs for various cloud services, including Power BI. It displays the same log events that originate in the Microsoft Purview unified audit log, and includes other events like user sign-in activity from Azure AD.
 
@@ -1035,7 +1035,7 @@ You have two options to access the Power BI activity log.
 
 For information about which option to use, see [Choose APIs or PowerShell cmdlets](#choose-apis-or-powershell-cmdlets) earlier in this article. For examples of how to access the Power BI activity log with PowerShell, see [Access the Power BI activity log](admin-activity-log.md).
 
-Power BI activity log data is available to all Power BI administrators, as well as Power Platform administrators and global administrators. The data can be accessed from the unified audit log, available to certain Exchange Online roles. For more information, see [Audit log requirements](/power-bi/admin/service-admin-auditing#audit-log-requirements).
+Power BI activity log data is available to all Power BI administrators, Power Platform administrators and global administrators. The data can be accessed from the unified audit log, available to certain Exchange Online roles. For more information, see [Audit log requirements](/power-bi/admin/service-admin-auditing#audit-log-requirements).
 
 We recommend that you use the Power BI activity log when your intention is to only retrieve Power BI audit log records.
 
@@ -1044,7 +1044,7 @@ We recommend that you use the Power BI activity log when your intention is to on
 
 ##### Office 365 Management Activity API
 
-You can extract data from the unified audit log for other services, such as SharePoint Online, Teams, Exchange Online, Dynamics 365, as well as Power BI. If your goal is to implement an auditing and monitoring solution for multiple services, we recommend that you use the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference). Because this API returns data from many services, it's known as the _Unified Auditing API_ (or the _unified audit log_). It's one of the [Office 365 Management APIs](/office/office-365-management-api/office-365-management-apis-overview).
+You can extract data from the unified audit log for other services, such as SharePoint Online, Teams, Exchange Online, Dynamics 365, and Power BI. If your goal is to implement an auditing and monitoring solution for multiple services, we recommend that you use the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference). Because this API returns data from many services, it's known as the _Unified Auditing API_ (or the _unified audit log_). It's one of the [Office 365 Management APIs](/office/office-365-management-api/office-365-management-apis-overview).
 
 Before you build a new solution, we recommend that you contact your IT department to determine whether existing Power BI audit records are available. It's possible that a process already extracts and stores the data. It's also possible that you might obtain permission to access this data rather than build an entire new solution.
 
@@ -1074,11 +1074,11 @@ Retrieving the audit data programmatically from the Office 365 Management Activi
 
 Because it's a separate Azure service, any administrator or user that you want to run [Kusto Query Language](/azure/data-explorer/kusto/query/) KQL queries must be granted permissions in Azure Log Analytics (Azure Monitor). When they have permission, they can query the audit data stored in the _PowerBIActivity_ table. However, keep in mind that in most cases you will grant users access to the curated data rather than the raw data.
 
-You use KQL to analyze the activity log events that are stored in Azure Log Analytics. If you have SQL experience, you will find many similarities with KQL.
+You use KQL to analyze the activity log events that are stored in Azure Log Analytics. If you have SQL experience, you'll find many similarities with KQL.
 
 There are several ways to access the events stored to Azure Log Analytics. You can use:
 
-- The pre-built **Log Analytics for Power BI Datasets** [template app](/power-bi/transform-model/log-analytics/install-as-engine-app).
+- The prebuilt **Log Analytics for Power BI Datasets** [template app](/power-bi/transform-model/log-analytics/install-as-engine-app).
 - Power BI Desktop [connector](/azure/data-explorer/power-bi-connector) for Azure Data Explorer (Kusto).
 - [Web-based query](/azure/data-explorer/web-query-data) experience in Azure Data Explorer.
 - Any query tool that can send Kusto (KQL) queries.
@@ -1097,7 +1097,7 @@ Here are some considerations to help you choose your source for user activity da
 - **Will it be a manual or automated auditing process?** The user interface options work well for manual auditing processes and occasional one-off queries, especially when you need to investigate a specific activity. An automated auditing process that extracts the user activity data on a schedule will also be necessary to support historical data analysis.
 - **How often do you need the user activity data?** For automated auditing processes, plan to extract data that's at least one day before the current date by using Coordinated Universal Time (UTC), rather than your local time. For example, if your process is running on Friday morning (UTC time), you should extract data from Wednesday. There are several reasons why you should extract data with one day latency.
   - Your files will be simpler to work with if you always extract a full 24 hours at a time, which avoids partial day results.
-  - You will minimize the risk of missing some audit events. Usually, audit events arrive within 30 minutes. Occasionally some events can take up to 24 hours to arrive in the unified audit log.
+  - You'll minimize the risk of missing some audit events. Usually, audit events arrive within 30 minutes. Occasionally some events can take up to 24 hours to arrive in the unified audit log.
 - **Do you need more than Power BI data?** Consider the most efficient way to access what you need.
   - If you only need Power BI user activity data, use the [Power BI activity log](/power-bi/admin/service-admin-auditing).
   - If you need audit logs from multiple services, use the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) to access the unified audit log.
@@ -1139,7 +1139,7 @@ The remainder of this section introduces each of the options presented in the ta
 
 ##### Groups APIs or workspaces cmdlet
 
-To retrieve a list of workspaces, you can use one of several REST APIs, such as the [Get Groups as Admin](/rest/api/power-bi/admin/groups-get-groups-as-admin) REST API (using the tool of your choice). The results include additional metadata such as the description and whether the workspace is stored in a Premium capacity.
+To retrieve a list of workspaces, you can use one of several REST APIs, such as the [Get Groups as Admin](/rest/api/power-bi/admin/groups-get-groups-as-admin) REST API (using the tool of your choice). The results include extra metadata such as the description and whether the workspace is stored in a Premium capacity.
 
 > [!NOTE]
 > The API named includes the term _group_ as a reference to a workspace. That term originated from the original Power BI security model, which relied on Microsoft 365 groups. While the Power BI security model has evolved significantly over the years, the existing API names remain unchanged to avoid breaking existing customer scripts.
@@ -1169,7 +1169,7 @@ There are two primary reasons why you should consider using the metadata scannin
 
 Using the scanner APIs involves more effort because you need to call a series of APIs. Also, they run as an _asynchronous_ process. An asynchronous process runs in the background, and so you don't have to wait for it to finish. You might need to collaborate with IT, or a developer, when it's time to create a production-ready script that will be scheduled.
 
-Here are the sequence of steps your process should follow when using the scanner APIs.
+Here is the sequence of steps your process should follow when using the scanner APIs.
 
 1. **Sign in:** Sign into the Power BI service with a Power BI administrator account or a service principal that has permission to run admin APIs. For more information, see [Determine the authentication method](#determine-the-authentication-method) earlier in this article.
 2. **Get the workspace IDs:** Send a request to retrieve an [list of workspace IDs](/rest/api/power-bi/admin/workspace-info-get-modified-workspaces). The first time it's run, you won't have a modified date, so it will return a complete list of workspaces. Usually, you will pass the modified date to retrieve only workspaces that have changed since that point in time. The modified date must be within the last 30 days.
@@ -1210,9 +1210,9 @@ The users and groups data that you retrieve is a _snapshot_ that describes the c
 For Power BI tenant-level auditing, you might extract and store the following attributes from Microsoft Graph.
 
 - **Full name for users:** Many data sources only include the email address of the user that performed an activity or is assigned a role. Use this attribute when you want to display the full name (display name) in analytical reports. Using the full name makes reports more user-friendly.
-- **Other user properties:** Additional descriptive attributes about users may be available in Azure AD. Some examples of built-in [user profile attributes](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) that have analytical value include job title, department, manager, region, and office location.
+- **Other user properties:** Other descriptive attributes about users may be available in Azure AD. Some examples of built-in [user profile attributes](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) that have analytical value include job title, department, manager, region, and office location.
 - **Members of a security group:** Most data sources provide the name of a group (for example, the Power BI activity log records that a security group was assigned to a workspace role). Retrieving the group membership enhances your ability to fully analyze what an individual user is doing or has access to.
-- **User licenses:** It's useful to analyze which [user licenses](/power-bi/fundamentals/service-features-license-type)—free, Power BI Pro, or Power BI Premium Per User (PPU)—are assigned to users. This data helps you to identify who's not using their license. It also helps you to analyze all users (distinct users with a license) versus active users (with recent activities). If you're considering adding or expanding your Power BI Premium licenses, we recommend that you analyze the user license data combined with user activity data to perform a cost analysis.
+- **User licenses:** It's useful to analyze which [user licenses](/power-bi/fundamentals/service-features-license-type)—free, Power BI Pro, or Power BI Premium Per User (PPU)—are assigned to users. This data helps you to identify who's not using their license. It also helps you to analyze all users (distinct users with a license) versus active users (with recent activities). If you're considering adding or expanding your Power BI Premium licenses, we recommend that you analyze the user license data together with user activity data to perform a cost analysis.
 - **Members of the administrator roles:** You can compile a list of your Power BI administrators are (which includes Power Platform administrators and global administrators).
 
 For the authoritative reference of Power BI license information that you can find in the auditing data from Microsoft Graph, see [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
@@ -1220,7 +1220,7 @@ For the authoritative reference of Power BI license information that you can fin
 > [!TIP]
 > Retrieving members from groups can be one of the most challenging aspects of obtaining auditing data. You will need to do a _transitive search_ to flatten out all nested members and nested groups. You can do a transitive search for [group members](/graph/api/group-list-transitivemembers). This type of search is especially challenging when there are thousands of groups in your organization. In that case, there might be better alternatives to retrieve the data. One option is to extract all groups and group members from Microsoft Graph. However, that may not be practical when only a small number of groups is used for Power BI security. Another option is to pre-build a reference list of groups that are used by any type of Power BI security (workspace roles, app permissions, per-item sharing, row-level security, and others). You can then loop through the reference list to retrieve [group members](/graph/api/group-list-transitivemembers) from Microsoft Graph.
 
-Here are some additional attributes you might extract and store.
+Here are some other attributes you might extract and store.
 
 - **User type:** Users are either [members or guests](/azure/active-directory/external-identities/user-properties). Most commonly, members are internal users and guests are external (B2B) users. Storing user type is useful when you need to analyze the activities of external users.
 - **Role changes:** When you perform a security audit, it's useful to understand when a user changed roles in the organization (for example, when they transfer to a different department). That way, you can verify whether their Power BI security settings have been—or should be—updated.
@@ -1239,7 +1239,7 @@ You can retrieve data about users and groups in different ways.
 | Programmatic | Microsoft Graph APIs and SDKs | | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="Microsoft Graph APIs and SDKs are good choices for automated auditing processes." border="false"::: |
 | Programmatic | Az PowerShell module | | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="Az PowerShell module is a good choice for automated auditing processes." border="false"::: |
 
-The remainder of this section introduces each of the options presented in the above table. Additional options, which are deprecated and shouldn't be used for new solutions, are listed at the end of this section.
+The remainder of this section introduces each of the options presented in the above table. Extra options, which are deprecated and shouldn't be used for new solutions, are listed at the end of this section.
 
 > [!NOTE]
 > Be careful when you read information online because many tool names are similar. Some tools in the Microsoft ecosystem include the term _Graph_ in their name, like Azure Resource Graph, GraphQL, and the Microsoft Security Graph API. These tools aren't related to Microsoft Graph, and they're out of scope for this article.
@@ -1266,14 +1266,14 @@ The [Microsoft Graph SDKs](/graph/sdks/sdks-overview) act as an _API wrapper_ on
 
 You can choose to send requests directly to the APIs. Alternatively, you can add a layer of simplification by using your preferred language and one of the SDKs. For more information, see [Choose APIs or PowerShell cmdlets](#choose-apis-or-powershell-cmdlets) earlier in this article.
 
-The Microsoft Graph SDKs [supports several languages](/graph/sdks/sdks-overview#supported-languages) and there's also the [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) modules. Additional SDKs are available for Python, C#, and other languages.
+The Microsoft Graph SDKs [support several languages](/graph/sdks/sdks-overview#supported-languages) and there's also the [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) modules. Other SDKs are available for Python, C#, and other languages.
 
 > [!IMPORTANT]
-> The **Microsoft Graph PowerShell** module replaces the **Azure AD PowerShell** modules and **MSOnline (MSOL)** modules, which are both deprecated. You shouldn't build new solutions with deprecated modules. The **Microsoft Graph PowerShell** module has many [features and benefits](/powershell/microsoftgraph/overview?view=graph-powershell-1.0#microsoft-graph-powershell-features--benefits). For more information, see [Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell](/powershell/microsoftgraph/migration-steps).
+> The **Microsoft Graph PowerShell** module replaces the **Azure AD PowerShell** modules and **MSOnline (MSOL)** modules, which are both deprecated. You shouldn't build new solutions with deprecated modules. The **Microsoft Graph PowerShell** module has many [features and benefits](/powershell/microsoftgraph/overview?view=graph-powershell-1.0#microsoft-graph-powershell-features--benefits&preserve-view=true). For more information, see [Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell](/powershell/microsoftgraph/migration-steps).
 
 You can install the **Microsoft Graph PowerShell** modules from the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). Because Microsoft Graph works with many Microsoft 365 services, there are many PowerShell [modules](https://github.com/microsoftgraph/msgraph-sdk-powershell/wiki/MS-Graph-PowerShell-Modules) that you install.
 
-For Power BI tenant-level auditing, here are the most common PowerShell modules you will need to install.
+For Power BI tenant-level auditing, here are the most common PowerShell modules you'll need to install.
 
 - [Authentication](https://www.powershellgallery.com/packages/Microsoft.Graph.Authentication) (for signing in)
 - [Users](https://www.powershellgallery.com/packages/Microsoft.Graph.Users)
@@ -1304,7 +1304,7 @@ You might find articles and blog posts online that reference alternative options
 - **MS Online (MSOL) PowerShell module:** Deprecated and will be retired. All future PowerShell investments will be made in the Microsoft Graph PowerShell SDK.
 
 > [!CAUTION]
-> Be sure to confirm the status of any deprecated API or module that you're currently using. For more information about the retirement of AzureRM, see [this announcement](https://azure.microsoft.com/updates/update-your-scripts-to-use-az-powershell-modules-by-29-february-2024/). For more information about Azure AD and MSOL, refer to [this retirement announcement post](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-september-2022-train/ba-p/2967454). If you have questions or require clarification on the future direction of programmatic data access, contact your Microsoft account team.
+> Be sure to confirm the status of any deprecated API or module that you're currently using. For more information about the retirement of AzureRM, see [this announcement](https://azure.microsoft.com/updates/update-your-scripts-to-use-az-powershell-modules-by-29-february-2024/). For more information about Azure AD and MSOL, see [this retirement announcement post](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-september-2022-train/ba-p/2967454). If you have questions or require clarification on the future direction of programmatic data access, contact your Microsoft account team.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -1330,8 +1330,8 @@ For example, you can retrieve data about:
 
 During a security audit, you might want to identify:
 
-- Items which have been [widely shared](/rest/api/power-bi/admin/widely-shared-artifacts-links-shared-to-whole-organization) with the entire organization.
-- Items that are available on the public internet by means of [publish to the web](/rest/api/power-bi/admin/widely-shared-artifacts-published-to-web).
+- Items that have been [widely shared](/rest/api/power-bi/admin/widely-shared-artifacts-links-shared-to-whole-organization) with the entire organization.
+- Items that are available on the public internet by using [publish to the web](/rest/api/power-bi/admin/widely-shared-artifacts-published-to-web).
 
 For more information about the other types of APIs, see [Choose a user API or admin API](#choose-a-user-api-or-admin-api) earlier in this article.
 
@@ -1514,7 +1514,7 @@ The topic is about setting up an analytical _data model_. A data model is query-
 
 In the context of auditing and monitoring, a data model sources data from the curated data layer (with transformations already complete). If you choose not to create a curated data layer, the data model sources its data directly from the raw data.
 
-We recommend that your Power BI data model implement a star schema design. When the source data is the curated data layer, the Power BI data model star schema should mirror the curated data layer star schema.
+We recommend that your Power BI data model implements a star schema design. When the source data is the curated data layer, the Power BI data model star schema should mirror the curated data layer star schema.
 
 > [!TIP]
 > For an overview of star schema design, see [Understand star schema and the importance for Power BI](star-schema.md).
@@ -1527,7 +1527,7 @@ Here are some useful dimension tables that you should include in the data model.
 - **Time:** If you need to analyze by time of day and you have a very large volume of audit data, consider storing the time part separately from the date. This approach can help to improve query performance.
 - **Users:** Attributes that describe users (such as department and geographic region) that can filter many subjects of auditing data. The goal is to remove all user details from the fact tables and store them in a dimension table so that they can filter many fact tables. You can also store service principals in this table.
 - **Activity events:** Attributes that group and describe the activity events (operations). To enhance your reporting, you might choose to create a data dictionary that describes each activity event. You might also choose to create a hierarchy that groups and classifies similar activity events. For example, you might group all item creation events, delete events, and so on.
-- **Workspaces:** A list of workspaces in the tenant and workspace properties, such as type (personal or standard) and description. Some organizations record additional details about workspaces (possibly using a SharePoint list). You can integrate these details into the dimension table. You need to decide whether this dimension table reflects the current state of workspace, or whether it stores versioned data that reflects significant workspace changes over time. For example, when a workspace name changes, does historical reporting show the current workspace name or the workspace name that was current at that time? For more information, see [Slowly changing dimensions](star-schema.md#slowly-changing-dimensions).
+- **Workspaces:** A list of workspaces in the tenant and workspace properties, such as type (personal or standard) and description. Some organizations record more details about workspaces (possibly using a SharePoint list). You can integrate these details into the dimension table. You need to decide whether this dimension table reflects the current state of workspace, or whether it stores versioned data that reflects significant workspace changes over time. For example, when a workspace name changes, does historical reporting show the current workspace name or the workspace name that was current at that time? For more information, see [Slowly changing dimensions](star-schema.md#slowly-changing-dimensions).
 - **Item types:** A list of Power BI item types (dataset, report, and others).
 - **Capacities:** A list of Premium capacities in the tenant.
 - **Gateways:** A list of data gateways in the tenant.
@@ -1539,7 +1539,7 @@ Here are some useful fact tables (subjects) you can include in the data model.
 - **Tenant inventory:** A point-in-time snapshot of all items published in the tenant.
 - **Datasets:** Includes user activity involving datasets (like dataset changes), or related data sources.
 - **Dataset refreshes:** Stores data refresh operations, including details about type (scheduled or on-demand), duration, status, and which user initiated the operation.
-- **Workspace roles:** A point-in-time snapshot workspace role assignments.
+- **Workspace roles:** A point-in-time snapshot workspace role assignment.
 - **User licenses:** A point-in-time snapshot of user licenses. While you might be tempted to store the user license in the **Users** dimension table, that approach won't support the analysis of license changes and trends over time.
 - **User group memberships:** A point-in-time snapshot of users (and service principals) assigned to a security group.
 - **Community activities:** Includes community-related facts such as training events. For example, you could analyze Power BI user activities compared to training attendance. This data could help the Center of Excellence identify potential [champions](powerbi-adoption-roadmap-community-of-practice.md#champions-network).
@@ -1577,7 +1577,7 @@ You might choose to classify _users_ based on their level of usage, or to classi
 
 Consider the following ideas for _user usage_ classifications you might explore.
 
-- **Frequent user:** Activity recorded in the last week, and in nine of the last twelve months.
+- **Frequent user:** Activity recorded in the last week, and in nine of the last 12 months.
 - **Active user:** Activity recorded in the past month.
 - **Occasional user:** Activity recorded in the last nine months, but without activity in the past one month.
 - **Inactive user:** No activity recorded in the last nine months.
@@ -1589,7 +1589,7 @@ Consider the following ideas for _user usage_ classifications you might explore.
 
 Here are some ideas for how you might use similar classifications for _content usage_:
 
-- **Frequently used content:** Activity recorded in the last week, and in nine of the last twelve months.
+- **Frequently used content:** Activity recorded in the last week, and in nine of the last 12 months.
 - **Actively used content:** Activity recorded in the past month.
 - **Occasionally used content:** Activity recorded in the last nine months, but without activity in the past one month.
 - **Unused content:** No activity recorded in the last nine months.
@@ -1608,7 +1608,7 @@ You should decide whether the usage classifications for users or content should 
 Consider some examples that demonstrate how simple classification logic might misrepresent reality.
 
 - A manager viewed one report this week. However, prior to that week, the manager hadn't viewed any reports in the past six months. You shouldn't consider this manager to be a frequent user based on recent usage alone.
-- A report creator publishes a new report every week. When you analyze usage by frequent users, the report creator's regular activity appears to be positive. However, upon further investigation you discover that this user has been re-publishing a new report (with a new report name) every time they edit the report. It would be useful for the report creator to have additional training.
+- A report creator publishes a new report every week. When you analyze usage by frequent users, the report creator's regular activity appears to be positive. However, upon further investigation you discover that this user has been republishing a new report (with a new report name) every time they edit the report. It would be useful for the report creator to have more training.
 - An executive views a report sporadically, and so their usage classification changes frequently. You might need to analyze certain types of users, such as executives, differently.
 - An internal auditor views critical reports once a year. The internal auditor may appear to be an inactive user because of their infrequent usage. Someone might take steps to remove their Pro or PPU license. Or someone might believe that a report should be retired since it's used infrequently.
 
@@ -1666,7 +1666,7 @@ To learn how to create analytical reports, work through the [Design effective re
 
 ### Take action based on the data
 
-Auditing data is very valuable because it helps you to understand what's happening in your Power BI tenant. While it might seem obvious, explicitly acting on what you learn from the audit data can be easily overlooked. We recommend that you assign someone who's responsible for tracking measurable improvements, rather than just reviewing auditing reports. That way, you can make gradual, measurable advances in your adoption and [level of maturity](powerbi-adoption-roadmap-maturity-levels.md) with Power BI.
+Auditing data is valuable because it helps you to understand what's happening in your Power BI tenant. While it might seem obvious, explicitly acting on what you learn from the audit data can be easily overlooked. We recommend that you assign someone who's responsible for tracking measurable improvements, rather than just reviewing auditing reports. That way, you can make gradual, measurable advances in your adoption and [level of maturity](powerbi-adoption-roadmap-maturity-levels.md) with Power BI.
 
 You can take many different actions based on your goals and what you learn from the auditing data. Here are several ideas.
 
@@ -1683,7 +1683,7 @@ Here are some actions you might take based on how content is used.
 
 Here are some actions you might take based on user activities.
 
-- **First publishing action by a new user:** Identify when a user type changes from consumer to creator, which you can identity when they publish content for the first time. It's a great opportunity to send them a standard email that provides guidance and links to resources.
+- **First publishing action by a new user:** Identify when a user type changes from consumer to creator, which you can identify when they publish content for the first time. It's a great opportunity to send them a standard email that provides guidance and links to resources.
 - **Engagement with the most frequent content creators:** Invite your most active creators to join your [champions network](powerbi-adoption-roadmap-community-of-practice.md#champions-network), or to get more involved with your [community of practice](powerbi-adoption-roadmap-community-of-practice.md).
 - **License management:** Verify whether inactive creators still need a Pro or PPU license.
 - **User trial activation:** A trial license activation can prompt you to assign a permanent license before the trial ends.
@@ -1745,7 +1745,7 @@ The fourth phase of planning and implementing a tenant-level auditing solution f
 
 ### Operationalize and improve
 
-Auditing processes are usually considered to be running _in production_ when initial development is complete, testing is complete, and the process is automated. Automated auditing processes running in production have greater expectations (than manual processes) for quality, reliability, stability, and support.
+Auditing processes are typically considered to be running _in production_ when initial development and testing are complete and the process is automated. Automated auditing processes running in production have greater expectations (than manual processes) for quality, reliability, stability, and support.
 
 > [!TIP]
 > You don't have to do everything listed below all at once. As you gain more experience, you can incrementally improve your solution so that it becomes complete and robust. Be aware that most examples you find online are simple, one-off script snippets that may not be production quality.
@@ -1760,7 +1760,7 @@ A production-level auditing process has been _operationalized_. An operationaliz
 - **Logging:** Processes are logged so there's a history of when the auditing data was updated. Logged information should record start time, end time, and the identity of user or app that ran the process.
 - **Error handling:** Scripts and processes gracefully handle errors (such as whether to exit immediately, continue, or wait and try again). Alert notifications are sent to the support team when an error occurs.
 - **Coding standards:** Good coding techniques that perform well are used. For example, loops are purposefully avoided except when necessary. Consistent coding standards, comments, formatting, and syntax are used so that the solution is easier to maintain and support.
-- **Reuse and modularization:** To minimize duplication, code and configuration values (like connection strings or email addresses for notifications) are modularized so they can be reused by other scripts and processes.
+- **Reuse and modularization:** To minimize duplication, code and configuration values (like connection strings or email addresses for notifications) are modularized so that other scripts and processes can reuse them.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -1775,7 +1775,7 @@ A production-level auditing process has been _operationalized_. An operationaliz
 
 ### Documentation and support
 
-Documentation and support is critical for any production-level solution. It's helpful to create several types of documentation, depending on the target audience and purpose.
+Documentation and support are critical for any production-level solution. It's helpful to create several types of documentation, depending on the target audience and purpose.
 
 #### Technical documentation
 
@@ -1802,7 +1802,7 @@ Depending on the level of criticality for your auditing solutions, you might hav
 Support documentation is sometimes referred to as a _knowledge base_ or a _runbook_. This documentation is targeted at your help desk or support team, and it should include:
 
 - Troubleshooting guidance for when something goes wrong. For example, when there's a data refresh failure or when a data source connection is unsuccessful.
-- Actions to take on an ongoing basis. For example, there may be some manual steps that someone needs to do on a regular basis until an issue is resolved.
+- Actions to take on an ongoing basis. For example, there may be some manual steps that someone needs to do regularly until an issue is resolved.
 
 #### Content creator documentation
 

@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/20/2023
+ms.date: 04/24/2023
 ---
 
 # Power BI implementation planning: Tenant-level monitoring
@@ -21,8 +21,8 @@ This tenant-level monitoring article is primarily targeted at:
 
 The terms _auditing_ and _monitoring_ are closely related.
 
-- **Auditing:** Actions taken to understand a system, its user activities, and related processes. Auditing activities can be manual, automated, or a combination. An auditing process might focus on one specific aspect (for example, auditing security for a workspace). Or it might reference an end-to-end auditing solution which involves extracting, storing, and transforming data so that it can be analyzed and acted upon.
-- **Monitoring:** Ongoing activities for the purpose of being informed about what's occurring. Monitoring usually involves alerting and automation, though sometimes monitoring is done manually. Monitoring can be set up for a process you'd selected to audit (for example, notifications when a specific tenant setting changes).
+- **Auditing:** Actions taken to understand a system, its user activities, and related processes. Auditing activities can be manual, automated, or a combination thereof. An auditing process might focus on one specific aspect (for example, auditing security for a workspace), but can also reference an end-to-end auditing solution. An auditing solution consists of extracting, storing, and transforming data so that it can be analyzed and acted upon.
+- **Monitoring:** Ongoing activities to be informed about what's occurring. Monitoring usually involves alerting and automation, though sometimes monitoring is done manually. Monitoring can be set up for a process you'd selected to audit (for example, notifications that appear when a specific tenant setting changes).
 
 This article covers ways you can monitor your Power BI tenant.
 
@@ -76,7 +76,7 @@ There are several monitoring aspects related to security and threats.
 Some powerful [Power BI monitoring and protection](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/protect-your-power-bi-instance-using-microsoft-cloud-app/ba-p/2166872) capabilities are available with Defender for Cloud Apps. For example, you can:
 
 - Prohibit all—or certain users—from downloading a file from the Power BI service when a specific sensitivity label is assigned.
-- Receive an alert when a tenant setting is updated in the Power BI service (for instance, an administrative activity is detected).
+- Receive an alert when an administrative activity is detected, such as a tenant setting updated in the Power BI service.
 - Detect when suspicious or unusual behaviors have occurred, such as large file downloads or an unusual number of sharing operations in the Power BI service.
 - Search the activity log for specific activities relating to content with a specific sensitivity label assigned, such as data exports from the Power BI service.
 - Receive notifications as risky sessions are occurring, such as when the same user account connects from different geographical areas in a short time period.
@@ -88,7 +88,7 @@ For more information, see [Defender for Cloud Apps for Power BI](powerbi-impleme
 
 [Microsoft Sentinel](/azure/sentinel/overview) is a security information and event management (SIEM) service. It's an Azure service that allows you to:
 
-- Collect logs and security data for users, devices, applications, and infrastructure. You can capture logs and user activities from the Power BI service, as well as many other areas across the enterprise.
+- Collect logs and security data for users, devices, applications, and infrastructure. You can capture logs and user activities from the Power BI service and many other areas across the enterprise.
 - Detect potential threats. You can create rules and alerts to refine what's important to track. Automated threat intelligence exists as well to reduce the manual effort.
 - Analyze data and investigate the scope and root cause of incidents. You can use built-in visualization tools or Kusto Query Language (KQL queries). You can also use Power BI to visualize and analyze the data that's been collected.
 - Respond to security incidents and threats. You can handle responses directly. Or you can automate responses and remediations with playbooks (which are workflows based on Azure Logic Apps).
@@ -122,7 +122,7 @@ When there's an apparent service outage or degradation, Power BI administrators 
 
 :::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-monitoring/power-bi-support-service-status.png" alt-text="Screenshot of the Power BI support service status page." border="false":::
 
-Microsoft typically communicates issues related to the [national clouds](https://powerbi.microsoft.com/clouds/) in the Microsoft 365 admin center rather than the Power BI support site. If you work with national clouds, work with your Microsoft 365 (M365) administrator to monitor Power BI issues.
+Microsoft typically communicates issues related to the [national clouds](https://powerbi.microsoft.com/clouds/) in the Microsoft 365 admin center rather than the Power BI support site. If you work with national clouds, work with your Microsoft 365 administrator to monitor Power BI issues.
 
 For more information about Power BI support, see [How to contact support](/power-bi/support/service-support-options).
 
@@ -132,7 +132,7 @@ For more information about how to support users in your organization, see [User 
 
 You can receive alert notifications by email to inform you when there's a service outage, interruption, or degradation occurring in your Power BI tenant. These notifications are available only for Premium workspaces.
 
-To enable email alerts, enable the _Receive email notifications for service outages or incidents_ [tenant setting](/power-bi/admin/service-admin-portal-help-support#receive-email-notifications-for-service-outages-or-incidents). Because its purpose is to send email, you must assign a mail-enabled security group to this setting. We recommend that you use a group name like _Power BI System Support_. You should add your Power BI administrators, key personnel from your [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md) (COE), and your [help desk](powerbi-adoption-roadmap-user-support#help-desk-support.md) that handles user support to this group.
+To enable email alerts, enable the _Receive email notifications for service outages or incidents_ [tenant setting](/power-bi/admin/service-admin-portal-help-support#receive-email-notifications-for-service-outages-or-incidents). Because its purpose is to send email, you must assign a mail-enabled security group to this setting. We recommend that you use a group name like _Power BI System Support_. You should add your Power BI administrators, key personnel from your [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md) (COE), and your [help desk](powerbi-adoption-roadmap-user-support.md#help-desk-support) that handles user support to this group.
 
 > [!TIP]
 > When you need to notify your internal users, we recommend that your COE send a customized message that's non-technical. That way, the message can include additional context, and use the preferred communication platform, like a Teams channel.
@@ -143,11 +143,11 @@ For more information, see [Enable service interruption notifications](/power-bi/
 
 Power BI administrators and users can also monitor the [Power BI known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues) page. This page includes information about currently active known issues and recently closed known issues.
 
-Known issues may include software bugs that have been reported to Microsoft support by other customers. Alternatively, an issue may include functionality that's by design, but because Microsoft Support has received a significant number of tickets, an explanation is warranted.
+Known issues may include software bugs that have been reported to Microsoft support by other customers. An issue may also include functionality that's by design, but because Microsoft Support has received a significant number of tickets, an explanation is warranted.
 
 ### Microsoft 365 admin center
 
-The [M365 admin center](https://admin.microsoft.com/) displays service health information, incident summaries, and advisory messages for M365 services. Also, [service incidents](/power-platform/admin/policies-communications#service-incidents) and certain types of major updates for the Power BI service are posted in the M365 admin center.
+The [Microsoft 365 admin center](https://admin.microsoft.com/) displays service health information, incident summaries, and advisory messages for Microsoft 365 services. Also, [service incidents](/power-platform/admin/policies-communications#service-incidents) and certain types of major updates for the Power BI service are posted in the Microsoft 365 admin center.
 
 > [!TIP]
 > Access to M365 is available to administrators who have sufficient [permissions](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#commonly-used-microsoft-365-admin-center-roles). Power BI administrators have a limited view to the M365 service health and the M365 message center.
@@ -158,7 +158,7 @@ An _active incident_ indicates that an issue is presently causing the service, o
 
 #### Microsoft 365 Service health
 
-The [M365 service health](https://admin.microsoft.com/adminportal/home#/servicehealth) page shows notifications about advisories and incidents. It also has information about active incidents, including:
+The [Microsoft 365 service health](https://admin.microsoft.com/adminportal/home#/servicehealth) page shows notifications about advisories and incidents. It also has information about active incidents, including:
 
 - Description
 - User impact
@@ -171,7 +171,7 @@ The issue history page shows incidents and advisories that have been resolved in
 
 #### Microsoft 365 message center
 
-The [M365 message center](https://admin.microsoft.com/adminportal/home#/messagecenter) provides planned changes for M365 services so administrators can plan for in advance. For active incidents, each message links to more details in the M365 service health page (described above).
+The [Microsoft 365 message center](https://admin.microsoft.com/adminportal/home#/messagecenter) provides planned changes for Microsoft 365 services so administrators can plan for in advance. For active incidents, each message links to more details in the Microsoft 365 service health page, as previously described.
 
 Sometimes, a message is based on telemetry gathered by Microsoft. For example, Microsoft's telemetry knows which type of browser users are using to connect to the Power BI service. If Internet Explorer use is detected, you might receive a message reminding you that Power BI no longer supports that browser.
 
@@ -185,7 +185,7 @@ You can check the publicly available [Power BI issues](https://community.powerbi
 
 By managing how Power BI Desktop is installed on user machines, you can control when updates and fixes are installed. However, you can't control when changes to the Power BI service are released in your tenant.
 
-We recommend that you closely monitor releases to the Power BI service and Power BI Desktop so that you can be prepared, test key feature changes, and announce important changes to your users.
+We recommend that you closely monitor releases for the Power BI service and Power BI Desktop. Monitoring releases ensures that you can be prepared, test key feature changes, and announce important changes to your users.
 
 ### Updates
 
@@ -203,7 +203,7 @@ To effectively support Power BI in your organization, you should continually wat
 
 ### Power BI release plan
 
-You can find the public roadmap for future features and estimated dates in the [release plan](https://powerbi.microsoft.com/roadmap/). Sometimes a change that's coming is so important that you will want to plan for it in advance. The planning cycle is divided into two semesters each year: April through September, and October through March.
+You can find the public roadmap for future features and estimated dates in the [release plan](https://powerbi.microsoft.com/roadmap/). Sometimes a change that's coming is so important that you want to plan for it in advance. The planning cycle is divided into two semesters each year: April through September, and October through March.
 
 ### Power BI blog
 
@@ -229,7 +229,7 @@ The [Azure status](https://azure.status.microsoft/) page shows the status for Az
 - **Virtual machines:** A [data gateway](/power-bi/connect-data/service-gateway-onprem) for Power BI could be running on a virtual machine (VM) in Azure. Or, a database containing data that's used as a data source for Power BI may be running on a VM in Azure.
 - **Virtual network data gateway:** A [virtual network (VNet) data gateway](/data-integration/vnet/overview) could be implemented to securely access data sources in a private network.
 - **Azure Key Vault:** One common way to use Azure Key Vault is for customer management of the encryption keys for data at-rest in the Power BI service. For more information, see [_bring your own key_](/power-bi/enterprise/service-encryption-byok) (BYOK) and _[customer-managed keys](/power-bi/enterprise/service-encryption-customer-managed-keys)_ (CMK).
-- **Microsoft Purview:** Used by [Microsoft Purview Information Protection](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md), or by Microsoft Purview data catalog to [scan your Power BI tenant](/azure/purview/register-scan-power-bi-tenant?tabs=Scenario1&preserve-view=true) to extract metadata.
+- **Microsoft Purview:** Used by [Microsoft Purview Information Protection](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md), or by Microsoft Purview Data Catalog to [scan your Power BI tenant](/azure/purview/register-scan-power-bi-tenant?tabs=Scenario1&preserve-view=true) to extract metadata.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
