@@ -16,9 +16,9 @@ LocalizationGroup: Data from files
 
 1. Log into the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149).
 
-1. Choose the **Data loss prevention** solution in the navigation pane, select the **Policies** tab, choose **Create policy**.
+1. Expand the **Data loss prevention** solution in the navigation pane, select **Policies**, and choose **Create policy**.
 
-    ![Screenshot of D L P create policy page.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create.png" alt-text="Screenshot of D L P create policy page.":::
 
 1. Choose the **Custom** category and then the **Custom policy** template.
     
