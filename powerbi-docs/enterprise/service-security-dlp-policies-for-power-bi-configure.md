@@ -14,6 +14,18 @@ LocalizationGroup: Data from files
 
 # Configure a DLP policy for Power BI
 
+This article describes how to configure a data loss prevention (DLP) policy for Power BI.
+
+## Prerequisites
+
+Before you get started with DLP for Power BI, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). The admin account that sets up the DLP rules must be assigned one of the following licenses:
+
+* Microsoft 365 E5
+* Microsoft 365 E5 Compliance
+* Microsoft 365 E5 Information Protection & Governance
+
+## Configure a policy
+
 1. Log into the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149).
 
 1. Expand the **Data loss prevention** solution in the navigation pane, select **Policies**, and choose **Create policy**.
@@ -121,7 +133,6 @@ Protection actions are currently unavailable for Power BI DLP policies.
 
 ![Screenshot of D L P policy actions section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-actions-section.png)
 
-
 ## User notifications
 
 The user notifications section is where you configure your policy tip. Turn on the toggle, select the **Notify users in Office 365 service with a policy tip** and **Policy tips** checkboxes, and write your policy tip in the text box.
@@ -162,8 +173,7 @@ Assign a severity level that will be shown in alerts generated from this policy.
 
 ## Next steps
 
-* [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
-* [Get started with Data loss prevention policies for Power BI](/microsoft-365/compliance/dlp-powerbi-get-started)
-* [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
-* [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)
+* [Data loss prevention policies for Power BI](./service-security-dlp-policies-for-power-bi-overview.md).
+* [Respond to DLP policy violation in Power BI](./service-security-dlp-policies-for-power-bi-respond.md).
 * [Power BI implementation planning: Data loss prevention for Power BI](/power-bi/guidance/powerbi-implementation-planning-data-loss-prevention)
+* [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
