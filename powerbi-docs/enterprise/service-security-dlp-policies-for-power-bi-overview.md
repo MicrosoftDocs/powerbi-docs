@@ -104,7 +104,7 @@ Select an alert to start drilling down to its details and to see management opti
 
 ## Next steps
 
-* [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
 * [Configure a DLP policy for Power BI](./service-security-dlp-policies-for-power-bi-configure.md).
 * [Respond to DLP policy violation in Power BI](./service-security-dlp-policies-for-power-bi-respond.md).
 * [Power BI implementation planning: Data loss prevention for Power BI](/power-bi/guidance/powerbi-implementation-planning-data-loss-prevention)
+* [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
