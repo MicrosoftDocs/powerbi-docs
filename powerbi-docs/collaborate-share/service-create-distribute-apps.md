@@ -107,7 +107,7 @@ On the **Audience** tab, you create and manage audience groups within the app.
      
 1. For each audience group, grant access to either all people in your organization or specific users or groups. You can also expand the **Advanced** option to configure the following settings per audience group: 
 
-    **Allow users to share the datasets in this app**: This option gives app consumers permission to share the app and underlying datasets of the app audience.
+    **Allow users to share the datasets in this app**: This option gives app consumers permission to share the underlying datasets of the app audience.
     
     **Allow users to build content with the datasets in this app**: This option lets your app consumers create their own reports and dashboards based on the app audience datasets.
     
