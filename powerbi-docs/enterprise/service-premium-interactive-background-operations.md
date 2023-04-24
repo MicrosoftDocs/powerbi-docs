@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 06/08/2022
+ms.date: 04/24/2023
 LocalizationGroup: Premium
 ---
 # Interactive and background operations
@@ -39,6 +39,8 @@ The table below lists the Power BI operations. It provides a short description f
 | PublicApiExport | A Power BI report exported with the [Export report to file](../developer/embedded/export-to.md) REST API | Report | Background |
 | Render | A Power BI paginated report exported with the [Export paginated report to file](../developer/embedded/export-paginated-report.md) REST API | Paginated report | Background |
 | Render | A Power BI paginated report viewed in Power BI service | Paginated report | Interactive |
+| Web modeling read | A user initiates a data model read operation online | Datasets | Interactive |
+| Web modeling write | A user initiates a data model write operation online  | Datasets | Interactive |
 | XMLA read | XMLA read operations initiated by the user, for queries and discoveries  | Datasets | Interactive |
 | XMLA write | A background XMLA write operation that changes the model | Datasets | Background |
 
