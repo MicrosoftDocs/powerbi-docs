@@ -3,16 +3,16 @@ metadata:
   title: "Paginated reports in Power BI: FAQ"
   description: This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. 
   author: maggiesMSFT
-  ms.author: maggies
+  ms.author: petebro
   ms.reviewer: ''
   ms.service: powerbi
   ms.subservice: report-builder
   ms.topic: faq
-  ms.date: 01/18/2023
+  ms.date: 04/11/2023
 
 title: "Paginated reports in Power BI: FAQ"
 summary: |
-  [!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)] 
+  [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
   
   This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
   
@@ -122,7 +122,6 @@ sections:
           
           - Shared data sources
           - Shared datasets
-          - Drillthrough and click-through to other reports
           - Linked reports
           - Custom fonts
           

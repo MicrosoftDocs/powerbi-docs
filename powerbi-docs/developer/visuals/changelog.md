@@ -16,8 +16,9 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 ## API v5.3.0
 
-* SelectionId's update-fix for [matrix](./dataview-mappings.md#matrix-data-mapping) `dataView`.
-Note: the selectionId's core data might change therefore a persisted selectionIds/identityIndex using an older API version might not be relevant in matrix visuals.
+* SelectionId's update-fix for [matrix](./dataview-mappings.md#matrix-data-mapping) `dataView`.  
+  > [!NOTE]
+  > The selectionId's core data might change. Therefore, a persisted selectionId/identityIndex using an older API version might not be relevant in matrix visuals.
 * [`downloadService`](./file-download-api.md): Adds a new method `exportVisualsContentExtended` which returns expanded result information of the download.
 * Supports Desktop March 2023
 
@@ -51,7 +52,7 @@ Note: the selectionId's core data might change therefore a persisted selectionId
 
 ## API v4.2.0
 
-* New flags to [expand and collapse row headers](./dataview-mappings.md#expanding-and-collapsing-row-headers)
+* New flags to [expand and collapse row headers](./dataview-mappings.md#expand-and-collapse-row-headers)
 * Supports Desktop February 2022
 
 ## API v3.8.0

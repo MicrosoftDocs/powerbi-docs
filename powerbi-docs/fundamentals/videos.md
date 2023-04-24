@@ -33,7 +33,7 @@ We’re continually adding to our collection, so [subscribe to the Power BI vide
 
 ## Featured video
 
-Learn how to create quick reports in the Power BI service. This new way to create reports lets you paste data directly into the Power BI service, instead of downloading Power BI Desktop.
+In this featured video, we show how to create quick reports in the Power BI service. This new way to create reports lets you paste data directly into the Power BI service, instead of downloading Power BI Desktop.
 
 > [!VIDEO https://www.youtube.com/embed/9rh_qSK-UKQ]
 
@@ -64,6 +64,6 @@ Related Power BI videos are collected into playlists to help you easily find sub
 
 * [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_video-docs-link)
 * [Watch Power BI demos](https://powerbi.microsoft.com/demo/)
-* [Microsoft Learn tutorial for Power BI Embedded and Azure Synapse workspaces](/azure/synapse-analytics/quickstart-power-bi)
+* Discover [videos from Azure about Power BI Embedded and Synapse Analytics](https://azure.microsoft.com/search/?q=Power+Bi)
  
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

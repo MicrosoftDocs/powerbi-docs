@@ -62,7 +62,7 @@ Verify that your visual passes the general test cases.
 | Filter data using a **Slicer**. | Tooltips are correct after applying filters. Tooltips show the filtered value. |
 | Filter data using a published visual. For instance, select a pie slice or a column. | Tooltips are correct after applying filters. Tooltips show the filtered value. |
 | If cross-filtering is supported, verify that filters work correctly. | Applied selection filters other visuals on this page of the report. |
-| Select with Ctrl, Alt, and Shift keys. | No unexpected behaviors appear. |
+| Select with <kbd>Ctrl</kbd>, <kbd>Alt</kbd>, and <kbd>Shift</kbd> keys. | No unexpected behaviors appear. |
 | Change the **View Mode** to **Actual size**, **Fit to page**, and **Fit to width**. | Mouse coordinates are accurate. |
 | Resize your visual. | Visual reacts correctly to resizing. |
 | Set the report size to the minimum. | There's no display errors. |

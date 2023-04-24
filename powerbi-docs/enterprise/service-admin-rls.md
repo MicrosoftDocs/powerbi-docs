@@ -14,9 +14,9 @@ LocalizationGroup: Administration
 
 # Row-level security (RLS) with Power BI
 
-Row-level security (RLS) with Power BI can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within roles. In the Power BI service, members of a workspace have access to datasets in the workspace. RLS doesn't restrict this data access. 
+Row-level security (RLS) with Power BI can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within roles. In the Power BI service, users with access to a workspace have access to datasets in that workspace. RLS only restricts data access for users with **Viewer** permissions. It doesn't apply to Admins, Members, or Contributors.
 
-You can configure RLS for data models imported into Power BI with Power BI Desktop. You can also configure RLS on datasets that are using DirectQuery, such as SQL Server. For Analysis Services or Azure Analysis Services lives connections, you configure Row-level security in the model, not in Power BI Desktop. The security option will not show up for live connection datasets.
+You can configure RLS for data models imported into Power BI with Power BI Desktop. You can also configure RLS on datasets that are using DirectQuery, such as SQL Server. For Analysis Services or Azure Analysis Services lives connections, you configure Row-level security in the model, not in Power BI Desktop. The security option doesn't show up for live connection datasets.
 
 [!INCLUDE [include-short-name](../includes/rls-desktop-define-roles.md)]
 
@@ -57,11 +57,11 @@ To define security roles using the enhanced row-level security editor:
    >[!NOTE]
    > Not all row-level security filters supported in Power BI can be defined using the default editor. Limitations include expressions that today can only be defined using DAX including dynamic rules such as username() or userprincipalname(). To define roles using these filters switch to use the DAX editor.
 
-8. Optionally select **Switch to DAX editor** to switch to use the DAX editor to define your role. You can switch back to the default editor by selecting **Switch to default editor**. All changes made in either editor interface will persist when switching interfaces when possible.
+8. Optionally select **Switch to DAX editor** to switch to use the DAX editor to define your role. You can switch back to the default editor by selecting **Switch to default editor**. All changes made in either editor interface persist when switching interfaces when possible.
 
    :::image type="content" source="media/service-admin-rls/enhanced-rls-example-dax-editor.png" alt-text="Screenshot of an example of using the dax editor in the enhanced row-level security editor.":::
 
-   When defining a role using the DAX editor that cannot be defined in the default editor, if you attempt to switch to the default editor you will be prompted with a warning that switching editors may result in some information being lost. To keep this information simply select ‘Cancel’ and continue only editing this role in the DAX editor.
+   When defining a role using the DAX editor that can't be defined in the default editor, if you attempt to switch to the default editor you'll be prompted with a warning that switching editors may result in some information being lost. To keep this information, select **Cancel** and continue only editing this role in the DAX editor.
 
    :::image type="content" source="media/service-admin-rls/enhanced-rls-parse-warning-dialog.png" alt-text="Screenshot of an example error dialog when switching from the DAX to default editor in enhanced row-level security editor.":::
 
@@ -85,7 +85,7 @@ To manage security on your data model, open the workspace where you saved your r
 
    ![Select security from more options menu](media/service-admin-rls/dataset-more-options-menu.png)
 
-Security will take you to the Role-Level Security page where you add members to a role you created in Power BI Desktop. Contributor (and higher workspace roles) will see **Security** and can assign users to a role.
+Security takes you to the Role-Level Security page where you add members to a role you created in Power BI Desktop. Contributor (and higher workspace roles) will see **Security** and can assign users to a role.
 
 You can only create or modify roles within Power BI Desktop.
 
@@ -101,7 +101,7 @@ You can use the following groups to set up row level security.
 - Mail-enabled Group
 - Security Group
 
-Note, however, that Office 365 groups are not supported and cannot be added to any roles.
+Note, however, that Microsoft 365 groups aren't supported and can't be added to any roles.
 
 ![Add a member](media/service-admin-rls/rls-add-member.png)
 
@@ -111,7 +111,7 @@ You can also see how many members are part of the role by the number in parenthe
 
 ### Remove members
 
-You can remove members by selecting the X next to their name. 
+You can remove members by selecting the X next to their name.
 
 ![Remove member](media/service-admin-rls/rls-remove-member.png)
 
@@ -124,7 +124,7 @@ You can validate that the role you defined is working correctly in the Power BI 
 
 ![Test as role](media/service-admin-rls/rls-test-role.png)
 
-You'll be redirected to the report that was published from Power BI Desktop with this dataset, if it exists. Dashboards are not available for testing using the  **Test as role** option.
+You're redirected to the report that was published from Power BI Desktop with this dataset, if it exists. Dashboards aren't available for testing using the  **Test as role** option.
 
 In the page header, the role being applied is shown.
 
@@ -137,7 +137,7 @@ Test other roles, or a combination of roles, by selecting **Now viewing as**.
 You can choose to view data as a specific person or you can select a combination of available roles to validate they're working.
 
 To return to normal viewing, select **Back to Row-Level Security**.
-    
+
 > [!NOTE]
 > The Test as role feature doesn't work for DirectQuery models with Single Sign-On (SSO) enabled.
 
@@ -145,7 +145,7 @@ To return to normal viewing, select **Back to Row-Level Security**.
 
 ## Using RLS with workspaces in Power BI
 
-If you publish your Power BI Desktop report to a [workspace](../collaborate-share/service-new-workspaces.md) in the Power BI service, the RLS roles are applied to members who are assigned to the **Viewer** role in the workspace. Even if  **Viewers** are given Build permissions to the dataset, RLS still applies. For example, if Viewers with Build permissions use [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), their view of the data will be protected by RLS. Workspace members assigned **Admin**, **Member**, or **Contributor** have edit permission for the dataset and, therefore, RLS doesn’t apply to them. If you want RLS to apply to people in a workspace, you can only assign them the **Viewer** role. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
+If you publish your Power BI Desktop report to a [workspace](../collaborate-share/service-new-workspaces.md) in the Power BI service, the RLS roles are applied to members who are assigned to the **Viewer** role in the workspace. Even if  **Viewers** are given Build permissions to the dataset, RLS still applies. For example, if Viewers with Build permissions use [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), their view of the data is restricted by RLS. Workspace members assigned **Admin**, **Member**, or **Contributor** have edit permission for the dataset and, therefore, RLS doesn’t apply to them. If you want RLS to apply to people in a workspace, you can only assign them the **Viewer** role. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 
 [!INCLUDE [include-short-name](../includes/rls-limitations.md)]
 

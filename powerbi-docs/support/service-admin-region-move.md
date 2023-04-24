@@ -13,7 +13,7 @@ ms.custom: template-how-to; subject-moving-resources
 # Move between regions
 
 > [!IMPORTANT]
-> Tenant migrations are currently paused while we work to resolve blocking issues. These issues are documented in [Known issue 308 - Tenant migrations paused](../troubleshoot/known-issues/known-issue-308-tenant-migrations-paused.md). No new migration requests will be accepted while this issue is active.
+> Tenant migrations are currently paused while we work to resolve blocking issues. These issues are documented in [Known issue 308 - Tenant migrations paused](../troubleshoot/known-issues/known-issue-308-tenant-migrations-paused.md). No new migration requests will be accepted while this issue is active. 
 
 Your default data region is determined by the location selected during sign-up. However, this region might not be optimal if most of your users are located in a different geographic location. You might want to move to another region to reduce latency or to ensure data governance. You can’t move your organization’s tenant between regions by yourself. Self-service migration of Power BI resources stored in Azure isn’t supported. If you need to change your default data location from the current region to another region, you have to contact support to manage the migration for you.
 
@@ -33,6 +33,8 @@ The migration process moves all tenant data to the new region. The GUID assigned
 ### Awareness
 
 - The end-to-end migration process may take up to six months. We prioritize service reliability and deployment schedules can change, so we may need to reschedule during migration at any time. We can't guarantee successful migration due to inconsistent data or bugs.
+
+- During the migration process, it is possible to encounter unforeseen issues that may result in multiple failures. Please allow for multiple attempts to ensure a successful migration.
 
 - Migration requires about six hours of down time. During migration, users can't access Power BI and will see an error message similar to the one shown in the following screenshot. The actual down time depends on the volume of data to be migrated.
 
