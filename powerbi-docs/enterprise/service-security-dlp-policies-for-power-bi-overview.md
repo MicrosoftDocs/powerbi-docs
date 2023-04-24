@@ -19,7 +19,7 @@ To help organizations detect and protect their sensitive data, Power BI supports
 This article describes how DLP in Power BI works, lists considerations and limitations as well as licensing and permissions requirements, and explains how DLP CPU usage is metered. For further information, see:
  
 * [Configure a DLP policy for Power BI](./service-security-dlp-policies-for-power-bi-configure.md) to see how to configure DLP policies for Power BI.
-* [Respond to DLP policy violation in Power BI](./service-security-dlp-policies-for-power-bi-respond.md) to see how to respond when a policy tip tells you your dataset has a DLP policy violation.
+* [Respond to a DLP policy violation in Power BI](./service-security-dlp-policies-for-power-bi-respond.md) to see how to respond when a policy tip tells you your dataset has a DLP policy violation.
 
 ## Considerations and limitations
 
