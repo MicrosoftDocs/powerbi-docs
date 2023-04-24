@@ -7,13 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 04/24/2023
 LocalizationGroup: Data from files
 ---
 
 # Streaming dataflows (preview)
 
 Organizations want to work with data as it comes in, not days or weeks later. The vision of Power BI is simple: the distinctions between batch, real-time, and streaming data today will disappear. Users should be able to work with all data as soon as it's available.
+
+> [!IMPORTANT]
+> Streaming dataflows has been retired, and is no longer available. [Azure Stream Analytics](/azure/stream-analytics/no-code-stream-processing) has merged the functionality of streaming dataflows. For more information about the retirement of streaming dataflows, see the [retirement announcement](https://powerbi.microsoft.com/en-us/blog/announcing-the-retirement-of-streaming-dataflows/).
 
 Analysts usually need technical help to deal with streaming data sources, data preparation, complex time-based operations, and real-time data visualization. IT departments often rely on custom-built systems, and a combination of technologies from various vendors, to perform timely analyses on the data. Without this complexity, they can't provide decision makers with information in near real time.
 
