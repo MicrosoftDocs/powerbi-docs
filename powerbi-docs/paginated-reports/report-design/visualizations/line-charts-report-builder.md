@@ -29,22 +29,19 @@ ms.reviewer: saurkumar
   
 ## Data considerations for line charts  
   
-- To improve the visual impact of the default line chart, consider changing the width of the series border to 3, and adding a shadow offset of 1. This will create a much bolder line chart. You will need to revert these properties to their original values if you change the chart type from Line to another type.  
+- To improve the visual impact of the default line chart, consider changing the width of the series border to 3, and adding a shadow offset of 1. These changes create a bolder line chart. You need to revert these properties to their original values if you change the chart type from Line to another type.  
   
-- If your dataset includes empty values, the line chart will add empty points, in the form of placeholder lines, in order to maintain continuity on the chart. If you would rather not see these lines, consider displaying your dataset using a non-contiguous chart type such as a bar or column chart.  
+- If your dataset includes empty values, the line chart adds empty points, in the form of placeholder lines, in order to maintain continuity on the chart. If you'd rather not see these lines, consider displaying your dataset using a non-contiguous chart type such as a bar or column chart.  
   
-- A line chart requires at least two points to draw a line.  If your dataset has only one data point, the line chart will display as a single data point marker.  
+- A line chart requires at least two points to draw a line.  If your dataset has only one data point, the line chart displays as a single data point marker.  
   
-- A series that is drawn as a line will not take up much space within a chart area.  For this reason, line charts are frequently combined with other chart types such as column charts. However, you cannot combine a line chart with bar, polar, pie or shape chart types.  
+- A series that's drawn as a line doesn't take up much space within a chart area.  For this reason, line charts are frequently combined with other chart types such as column charts. However, you can't combine a line chart with bar, polar, pie or shape chart types.  
   
 ## Next steps
 
+ [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
  [Bar Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/bar-charts-report-builder-and-ssrs)   
  [Column Charts &#40;Power BI Report Builder&#41;](column-charts-report-builder.md)   
- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
  [Chart Types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)   
  [Area Charts &#40;Power BI Report Builder&#41;](area-charts-report-builder.md)   
  [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/empty-and-null-data-points-in-charts-report-builder-and-ssrs)   
- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)  
-  
-  
