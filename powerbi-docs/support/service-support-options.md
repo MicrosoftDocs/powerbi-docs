@@ -10,11 +10,10 @@ ms.topic: troubleshooting
 ms.date: 12/01/2022
 ---
 
-# Power BI support options
+# Fabric and Power BI support options
 
-This article describes the support options that are available to customers who have purchased Power BI Pro, Power BI Premium Per User, and Power BI Premium. Power BI Administrators and other admins in your organization have access to expanded support options. Read [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) to learn more about who can manage service requests for your organization.
-
-## Get started with support for end users
+This article describes the support options that are available to customers who have purchased Microsoft Fabric, Power BI Pro, Power BI Premium Per User, and Power BI Premium. Fabric and Power BI Administrators and other admins in your organization have access to expanded support options. Read [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) to learn more about who can manage service requests for your organization.
+## Get started with support for Power BI end users
 
 If you're an end user, you can contact support directly if you have a Power BI Pro or Power BI Premium Per User license. But, your administrator might prefer you take a different route to get help. Before you contact support, check these requirements:
 
@@ -93,3 +92,5 @@ Contact your Microsoft Customer Account Manager for details. If you don't alread
 
 * [Help and support tenant settings](service-admin-portal-help-support.md)
 * [Find the right Power BI training for you](/training/powerplatform/power-bi?WT.mc_id=powerbi_docs-link)
+
+
