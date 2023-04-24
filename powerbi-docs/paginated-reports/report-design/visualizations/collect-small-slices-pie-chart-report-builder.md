@@ -54,7 +54,7 @@ Pie charts with too many slices can look cluttered. Learn to collect many small 
   
          Set the CollectedThreshold property to **5000**.  
   
-6.  Set the CollectedLabel property to a string that represents the text label that are shown on the collected slice.  
+6.  Set the CollectedLabel property to a string that represents the text label that's shown on the collected slice.  
   
 7.  (Optional) Set the CollectedSliceExploded, CollectedColor, CollectedLegendText and CollectedToolTip properties. These properties change the appearance, color, label text, legend text and tooltip aspects of the single slice.  
   

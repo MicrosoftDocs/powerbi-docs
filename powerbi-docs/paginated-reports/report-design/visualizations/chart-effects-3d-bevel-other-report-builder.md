@@ -24,7 +24,7 @@ ms.reviewer: saurkumar
 
 ## Coordinate-based three-dimensional charts
 
- When working with coordinate-based chart types (Column, Bar, Area, Point, Line and Range), three-dimensional effects display the chart with a third axis, known as the "z-axis". The introduction of this third axis allows you to apply a variety of visual enhancements to your chart.  
+ When you work with coordinate-based chart types (column, bar, area, point, line, and range), three-dimensional effects display the chart with a third axis, known as the "z-axis". The introduction of this third axis allows you to apply a variety of visual enhancements to your chart.  
   
 ## Change the white space in a 3D chart
 

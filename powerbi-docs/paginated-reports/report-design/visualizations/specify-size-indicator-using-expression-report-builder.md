@@ -15,7 +15,7 @@ ms.reviewer: saurkumar
 
   In addition to color, direction, and shape, you can use size to maximize the visual impact of indicators in a paginated report.  
   
- An indicator has a collection of indicator states named IndicatorStates. The IndicatorStates collection typically have multiple states. Each state is a member of the collection and is represented by an icon. Together the states constitute the IndicatorsStates collection.  
+ An indicator has a collection of indicator states named IndicatorStates. The IndicatorStates collection typically has multiple states. Each state is a member of the collection and is represented by an icon. Together the states constitute the IndicatorsStates collection.  
   
  To dynamically configure the sizes of icons, you set properties of members of the IndicatorsStates collection in the Properties pane of Report Builder. If the **Properties** pane is not visible, select the **View** tab and select **Properties**.  
   
