@@ -162,11 +162,6 @@ As you made changes to your data model, your changes are automatically saved. Ch
 ## Permissions
 A user must have write and build [dataset permissions](../connect-data/service-datasets-permissions.md) in order to open and edit the corresponding data model in the Power BI service.
 
-## Enabling data model editing in the admin portal
-Power BI administrators can enable or disable data model editing in the service for the entire organization or for specific security groups, using the setting found in the Power BI **admin portal**, as shown in the following image.
-
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-22.png" alt-text="Screenshot of enabling data model editing in the admin portal.":::
-
 ## Viewing audit logs and activity events
 Power BI administrators can audit operations pertaining to editing data models in the web operations from the **Microsoft 365 Admin Center**. Audit operations supported for editing data models in the web are the following:
 
