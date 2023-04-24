@@ -21,8 +21,7 @@ ms.reviewer: saurkumar
   
  ![Screenshot of a Range chart](./media/paginated-reports-visualizations/range-chart.gif "range-chart")  
   
-> [!NOTE]  
->  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.  
+  
   
 ## Variations  
   

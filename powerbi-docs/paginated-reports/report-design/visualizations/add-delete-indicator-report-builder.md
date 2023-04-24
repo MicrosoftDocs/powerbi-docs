@@ -1,11 +1,9 @@
 ---
 title: "Add or delete an indicator in Power BI paginated report | Microsoft Docs"
 description: Learn how to add or delete an indicator in your Power BI paginated reports to convey the state of a single data value in Power BI Report Builder.
-ms.date: 03/30/2023
+ms.date: 04/24/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
@@ -23,51 +21,52 @@ ms.reviewer: saurkumar
   
  You can update the values and states of indicators. For more information, see the following topics:  
   
--   [Change Indicator Icons and Indicator Sets &#40;Power BI Report Builder&#41;](change-indicator-icons-and-indicator-sets-report-builder.md)  
+- [Change indicator icons and indicator sets in Power BI paginated report (Power BI Report Builder)](change-indicator-icons-indicator-sets-report-builder.md)
   
--   [Set and Configure Measurement Units &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/set-and-configure-measurement-units-report-builder-and-ssrs)  
+- [Set and Configure Measurement Units &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/set-and-configure-measurement-units-report-builder-and-ssrs)  
   
--   [Set Synchronization Scope &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/set-synchronization-scope-report-builder-and-ssrs)  
+- [Set Synchronization Scope &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/set-synchronization-scope-report-builder-and-ssrs)  
   
  Because an indicator is positioned inside the gauge panel, you need to select the indicator instead of the panel when you want to configure the indicator by using the **Indicators Properties** dialog box or the **Properties** pane. The following picture shows a selected indicator in its gauge panel.  
   
  ![Screenshot of a gauge panel with indicator.](./media/paginated-reports-visualizations/gauge-panel-with-indicator.gif "gauge-panel-with-indicator")  
   
 > [!NOTE]  
->  Depending on column width and the length of data values, the text in table or matrix cells might wrap and display text on multiple lines. When this occurs, the indicator icon might be stretched and change shape. This can make the indicator icon less readable. Place the indicator inside a rectangle to ensure that the icon is never stretched.  
+> Depending on column width and the length of data values, the text in table or matrix cells might wrap and display text on multiple lines. When this occurs, the indicator icon might be stretched and change shape. This can make the indicator icon less readable. Place the indicator inside a rectangle to ensure that the icon is never stretched.  
   
-## To add an indicator to a table or matrix  
+## Add an indicator to a table or matrix  
   
 1.  Open an existing report or create a new report that contains a table and matrix with the data you want to display. For more information, see [Tables &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-report-builder-and-ssrs) or [Matrices](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs).  
   
 2.  Insert a column in your table or matrix. For more information, see [Insert or Delete a Column &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/insert-or-delete-a-column-report-builder-and-ssrs).  
   
-3.  Optionally, on the **Insert** tab, click **Rectangle**, and then click a cell in the new column.  
+3.  Optionally, on the **Insert** tab, select **Rectangle**, and then select a cell in the new column.  
   
-4.  On the **Insert** tab, click **Indicator**, and then click a cell in the new column.  
+4.  On the **Insert** tab, select **Indicator**, and then select a cell in the new column.  
   
-     If you added a rectangle to a cell, click that cell.  
+     If you added a rectangle to a cell, select that cell.  
   
-5.  In the **Select Indicator Style** dialog box, in the left pane, click the indicator type you want, and then click the indicator set.  
+5.  In the **Select Indicator Style** dialog box, in the left pane, select the indicator type you want, and then select the indicator set.  
   
-6.  Click **OK**.  
+6.  Select **OK**.  
   
-7.  Click the indicator. The **Gauge Data** pane opens.  
+7.  Select the indicator. The **Gauge Data** pane opens.  
   
-8.  In the **Values** area, in the **(Unspecified)** drop-down list, click the field whose values you want to display as an indicator.  
+8.  In the **Values** area, in the **(Unspecified)** drop-down list, select the field whose values you want to display as an indicator.  
   
      The indicator is configured to use default values. By default, indicators are configured use percentages as measurement units and the percentage ranges are evenly distributed across the members of the indicator and the value that the indicator conveys uses the scope of the nearest group.  
   
-## To delete an indicator to a table or matrix  
+## Delete an indicator to a table or matrix  
   
-1.  Right-click the indicator to delete and click **Delete**.  
+1.  Right-click the indicator to delete and select **Delete**.  
   
     > [!NOTE]  
-    >  An indicator might be positioned inside a gauge panel that contains other indicators or gauges. If the gauge panels contain multiple items, be sure to click the indicator to delete it, not the gauge panel. If you click and then delete the gauge panel, the gauge panels and all the items in it are deleted.  
+    >  An indicator might be positioned inside a gauge panel that contains other indicators or gauges. If the gauge panels contain multiple items, be sure to select the indicator to delete it, not the gauge panel. If you select and then delete the gauge panel, the gauge panels and all the items in it are deleted.  
   
-2.  Click **Delete**.  
+2.  Select **Delete**.  
   
 ## Next steps  
+
  [Indicators &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/indicators-report-builder-and-ssrs)  
   
   
