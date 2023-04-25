@@ -16,7 +16,10 @@ LocalizationGroup: Data from files
 
 To help organizations detect and protect their sensitive data, Power BI supports [Microsoft Purview Data Loss Prevention (DLP) polices](/microsoft-365/compliance/dlp-learn-about-dlp). When a DLP policy for Power BI detects a sensitive dataset, a policy tip can be attached to the dataset in the Power BI service that explains the nature of the sensitive content, and an alert can be registered on the data loss prevention **Alerts** page in the Microsoft Purview compliance portal for monitoring and management by administrators. In addition, email alerts can be sent to administrators and specified users.
 
-This article describes how DLP in Power BI works, lists considerations and limitations as well as licensing and permissions requirements, and explains how DLP CPU usage is metered. To see how to configure DLP policies for Power BI, see [Configure a DLP policy for Power BI](./service-security-dlp-policies-for-power-bi-configure.md). To see how to respond when a policy tip tells you your dataset has a DLP policy violation, see [Respond to DLP policy violation in Power BI](./service-security-dlp-policies-for-power-bi-respond.md).
+This article describes how DLP in Power BI works, lists considerations and limitations as well as licensing and permissions requirements, and explains how DLP CPU usage is metered. For further information, see:
+ 
+* [Configure a DLP policy for Power BI](./service-security-dlp-policies-for-power-bi-configure.md) to see how to configure DLP policies for Power BI.
+* [Respond to a DLP policy violation in Power BI](./service-security-dlp-policies-for-power-bi-respond.md) to see how to respond when a policy tip tells you your dataset has a DLP policy violation.
 
 ## Considerations and limitations
 
