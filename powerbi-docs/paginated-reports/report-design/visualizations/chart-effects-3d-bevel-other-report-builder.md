@@ -20,7 +20,7 @@ ms.reviewer: saurkumar
   
  For all chart types, you can add three-dimensional effects to a chart area in the **Chart Area Properties** dialog box by selecting **Enable 3D**. For more information, see [Add 3D Effects to a Chart &#40;Power BI Report Builder&#41;](chart-effects-add-3d-effects-report-builder.md).  
   
- Another way to add visual impact to charts is by adding bevel, emboss and texture styles in bar, column, pie and doughnut charts. For more information, see [Add Bevel, Emboss, and Texture Styles to a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-effects-add-bevel-emboss-or-texture-report-builder).  
+ Another way to add visual impact to charts is by adding bevel, emboss and texture styles in bar, column, pie and doughnut charts. For more information, see [Add bevel, emboss, or texture to a paginated report chart (Power BI Report Builder)](chart-effects-add-bevel-emboss-or-texture-report-builder.md).  
 
 ## Coordinate-based three-dimensional charts
 

@@ -51,9 +51,9 @@ ms.reviewer: saurkumar
 
  You can add special drawing styles to the pie chart to increase its visual impact. Drawing styles include bevel and concave effects. These effects are available only on a 2-D pie chart. The following illustration shows an example of the bevel and concave drawing styles on a pie chart.  
   
- ![Screenshot of a Pie Drawing Styles](./media/paginated-reports-visualizations/pie-drawing-effects-concave2.gif "pie-drawing-effects-concave2")  
+ ![Screenshot of a Pie Drawing Styles.](./media/paginated-reports-visualizations/pie-drawing-effects-concave-2.gif "pie-drawing-effects-concave-2")  
   
- For more information, see [Add Bevel, Emboss, and Texture Styles to a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-effects-add-bevel-emboss-or-texture-report-builder).  
+ For more information, see [Chart effects: Add bevel, emboss, or texture to a paginated report chart (Power BI Report Builder)](chart-effects-add-bevel-emboss-or-texture-report-builder.md).  
   
 ## Display percentage values on a pie chart
 

@@ -33,7 +33,7 @@ ms.reviewer: monaraya
  [Format data points on a chart &#40;Power BI Report Builder&#41;](formatting-data-points-on-chart-report-builder.md)  
  Discusses how to position data point labels and format data point markers for every series on the chart.  
   
- [3D, bevel, and other effects in a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-effects-3d-bevel-and-other-report-builder)  
+ [Chart effects: 3D, bevel, and others in Power BI paginated reports (Power BI Report Builder)](chart-effects-3d-bevel-other-report-builder.md) 
  Discusses various 3D effects that you can apply to a chart.  
   
  [Add a border frame to a chart &#40;Power BI Report Builder&#41;](add-border-frame-to-chart-report-builder.md)  

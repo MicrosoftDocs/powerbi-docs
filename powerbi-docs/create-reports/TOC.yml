@@ -626,8 +626,6 @@
           href: ../paginated-reports/report-design/visualizations/format-axis-labels-dates-currencies-report-builder.md
         - name: Hide chart legend items in a chart
           href: ../paginated-reports/report-design/visualizations/chart-legend-hide-items-report-builder.md
-        - name: Hide chart legend items in a chart
-          href: ../paginated-reports/report-design/visualizations/chart-legend-hide-items-report-builder.md
         - name: Highlight chart data by adding strip lines
           href: ../paginated-reports/report-design/visualizations/highlight-chart-data-by-adding-strip-lines-report-builder.md
         - name: Specify the size of an indicator using an expression

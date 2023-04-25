@@ -70,7 +70,7 @@ ms.reviewer: saurkumar
 ## Next steps
 
  [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs)   
- [Add Bevel, Emboss, and Texture Styles to a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-effects-add-bevel-emboss-or-texture-report-builder)   
+ [Chart effects: Add bevel, emboss, or texture to a paginated report chart (Power BI Report Builder)](chart-effects-add-bevel-emboss-or-texture-report-builder.md)
  [Define Colors on a Chart Using a Palette &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/define-colors-on-a-chart-using-a-palette-report-builder-and-ssrs)   
  [Add empty points to a chart in a Power BI paginated report (Power BI Report Builder)](add-empty-points-chart-report-builder.md)  
  [Shape Charts &#40;Power BI Report Builder&#41;](shape-charts-report-builder.md)   
