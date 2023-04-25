@@ -1,30 +1,34 @@
 ---
 title: Access the Power BI activity log
 description: Guidance and sample PowerShell script code to work with the Power BI activity log.
-author: kesharab
-ms.author: kesharab
-ms.reviewer: asaxton
+author: data-goblin
+ms.author: v-kurtbuhler
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: sample
-ms.date: 04/17/2022
+ms.date: 04/25/2022
 ---
 
 # Access the Power BI activity log
 
-This article targets Power BI administrators who need to access and analyze data from the [Power BI activity log](/power-bi/admin/service-admin-auditing). It focuses on programmatically retrieving Power BI activities by using the [Get-PowerBIActivityEvent](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent) cmdlet from the Power BI Management module. Up to 30 days' history are available. The `Get-PowerBIActivityEvent` cmdlet uses the [Get Activity Events](/rest/api/power-bi/admin/get-activity-events) Power BI REST API operation, which is an admin API. PowerShell cmdlets add an additional layer of abstraction on top of the underlying APIs. Therefore, the PowerShell cmdlet simplifies accessing Power BI activity log events.
+This article targets Power BI administrators who need to access and analyze data sourced from the [Power BI activity log](/power-bi/admin/service-admin-auditing). It focuses on the programmatic retrieval of Power BI activities by using the [Get-PowerBIActivityEvent](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent) cmdlet from the Power BI Management module. Up to 30 days of history is available. This cmdlet uses the [Get Activity Events](/rest/api/power-bi/admin/get-activity-events) Power BI REST API operation, which is an admin API. PowerShell cmdlets add a layer of abstraction on top of the underlying APIs. Therefore, the PowerShell cmdlet simplifies access to the Power BI activity log.
 
-There are other manual and programmatic ways to retrieve Power BI activities beyond the PowerShell cmdlet described in this article. For more information, see the [Access user activity data](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data) in the Tenant-level auditing article.
+There are other manual and programmatic ways to retrieve Power BI activities. For more information, see the [Access user activity data](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data).
 
-Analyzing the Power BI activity log is crucial for governance, compliance, and to track [adoption](powerbi-adoption-roadmap-overview.md) efforts. For further information about the Power BI activity log, see [Track user activities in Power BI](/power-bi/admin/service-admin-auditing).
+Analyzing the Power BI activity log is crucial for governance, compliance, and to track [adoption](powerbi-adoption-roadmap-overview.md) efforts. For more information about the Power BI activity log, see [Track user activities in Power BI](/power-bi/admin/service-admin-auditing).
 
-We recommend that you fully review the Tenant-level auditing article. This article covers planning, key decisions, prerequisites, and key solution development activities to consider when building an end-to-end auditing solution.
+> [!TIP]
+> We recommend that you fully review the [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md) article. This article covers planning, key decisions, prerequisites, and key solution development activities to consider when building an end-to-end auditing solution.
 
 ## Examples available
 
-The goal of this article is to provide you with examples to help you get started. All examples show scripts to retrieve data from the activity log by using the Power BI Management PowerShell module. The scripts aren't production-ready because they're intended for learning purposes only. A production-ready script should include logic for logging, error handling, alerting, code reuse, and modularization.
+The goal of this article is to provide you with examples to help get you started. The examples include scripts that retrieve data from the activity log by using the Power BI Management PowerShell module.
 
-Because they're intended for learning, the examples are simplified, yet they're highly realistic. We recommend that you use this article to review the examples and understand how each one uses a slightly different technique. Once you've identified the type of activity data that you need, you can mix and match the techniques to produce a script that suits your needs.
+> [!WARNING]
+> The scripts aren't production-ready because they're intended only for educational purposes. You can, however, adapt the scripts for production purposes by adding logic for logging, error handling, alerting, and refactoring for code reuse and modularization.
+
+Because they're intended for learning, the examples are simplistic, yet they're real-world. We recommend that you review all examples to understand how they apply slightly different techniques. Once you identify the type of activity data that you need, you can mix and match the techniques to produce a script that best suits your requirements.
 
 This article includes the following examples.
 
@@ -34,44 +38,45 @@ This article includes the following examples.
 | [View all activities for a user for one day](#example-2-view-all-activities-for-a-user-for-one-day) | All |
 | [View an activity for N days](#example-3-view-an-activity-for-n-days) | Share report (link or direct access) |
 | [View three activities for N days](#example-4-view-three-activities-for-n-days) | Create app, update app, and install app |
-| [View all activities for a workspace for one day](#example-5-view-all-activities-for-a-workspace-for-one-day) for one day | All |
+| [View all activities for a workspace for one day](#example-5-view-all-activities-for-a-workspace-for-one-day) | All |
 | [Export all activities for the previous N days](#example-6-export-all-activities-for-previous-n-days) | All |
 
-For simplicity, most of the examples show the results on the screen. For instance, in Visual Studio Code, the data is displayed in the [terminal panel](https://code.visualstudio.com/docs/terminal/basics), which holds a buffer set of data in memory.
+For simplicity, most of the examples output their result to the screen. For instance, in Visual Studio Code, the data is output to the [terminal panel](https://code.visualstudio.com/docs/terminal/basics), which holds a buffer set of data in memory.
 
-Most of the examples focus on retrieving and viewing raw JSON data. There are a few advantages:
+Most of the examples retrieve raw JSON data. Working with the raw JSON data has many advantages.
 
-- All of the information that's available for each activity event is returned. That's helpful for you to learn what data is available. Keep in mind that the contents of an API response is different based on the actual activity event. For example, the data available for a _CreateApp_ event is different to the _ViewReport_ event.
-- Because the data that's available in the activity log changes as Power BI evolves over time, you can expect the API responses to change too. This way, new data that gets introduced won't be missed. Your process is also more resilient to change and less likely to fail.
-- The details of an API response can differ for the Power BI commercial cloud and the sovereign clouds.
-- If you have different team members (such as data engineers) that get involved with this process, simplifying the initial process to extract the data makes it easier for multiple teams to work together.
+- All of the information that's available for each activity event is returned. That's helpful for you to learn what data is available. Keep in mind that the contents of an API response differs depending on the actual activity event. For example, the data available for a _CreateApp_ event is different to the _ViewReport_ event.
+- Because data that's available in the activity log changes as Power BI evolves over time, you can expect the API responses to change too. That way, new data that's introduced won't be missed. Your process is also more resilient to change and less likely to fail.
+- The details of an API response can differ for the Power BI commercial cloud and the [national clouds](/azure/active-directory/develop/authentication-national-cloud#Overview).
+- If you have different team members (such as data engineers) who get involved with this process, simplifying the initial process to extract the data makes it easier for multiple teams to work together.
 
-We recommend that you keep your scripts to extract data as simple as possible. Therefore, avoid parsing, filtering, or formatting the activity log data as it's extracted. This approach uses an _ELT_ methodology with separate steps to Extract, Load, and Transform data. This article only focuses on the first step, which is about extracting the data.
+> [!TIP]
+> We recommend that you keep your scripts that extract data as simple as possible. Therefore, avoid parsing, filtering, or formatting the activity log data as it's extracted. This approach uses an _ELT_ methodology, which has separate steps to Extract, Load, and Transform data. This article only focuses on the first step, which is concerned with extracting the data.
 
 ## Requirements
 
 To use the example scripts, you must meet the following requirements.
 
-- **PowerShell client tool:** Use your preferred tool for running PowerShell commands. All examples were tested by using the [PowerShell extension](https://code.visualstudio.com/docs/languages/powershell) for Visual Studio Code with PowerShell 7. For considerations about client tools and PowerShell versions, see the Tenant-level auditing article.
-- **Power BI Management module:** Install all [Power BI PowerShell modules](/powershell/power-bi/overview). If you previously installed them, we recommend updating the modules to ensure that you're using the latest published version.
-- **Power BI administrator role:** The example scripts are designed to use an interactive authentication flow. Therefore, the user running the PowerShell example scripts must sign in to use the Power BI REST APIs. To retrieve activity log data, the authenticating user must belong to the [Power BI administrator](/power-bi/admin/service-admin-role) role (because retrieving activity events is done with an [admin API](/rest/api/power-bi/admin)). Note that service principal authentication is out of scope for these learning examples.
+- **PowerShell client tool:** Use your preferred tool for running PowerShell commands. All examples were tested by using the [PowerShell extension](https://code.visualstudio.com/docs/languages/powershell) for Visual Studio Code with PowerShell 7. For information about client tools and PowerShell versions, see [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md).
+- **Power BI Management module:** Install all [Power BI PowerShell modules](/powershell/power-bi/overview). If you previously installed them, we recommend that you update the modules to ensure that you're using the latest published version.
+- **Power BI administrator role:** The example scripts are designed to use an interactive authentication flow. Therefore, the user running the PowerShell example scripts must sign in to use the Power BI REST APIs. To retrieve activity log data, the authenticating user must belong to the [Power BI administrator](/power-bi/admin/service-admin-role) role (because retrieving activity events is done with an [admin API](/rest/api/power-bi/admin)). Service principal authentication is out of scope for these learning examples.
 
 The remainder of this article includes sample scripts that show you different ways to retrieve activity log data.
 
 ## Example 1: Authenticate with the Power BI service
 
-All Power BI REST API operations require you to sign in. _Authentication_ (who is making the request) and _authorization_ (what the user has permission to do) are handled by the Microsoft Identity Platform. This example uses the [Connect-PowerBIServiceAccount](/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount) cmdlet from the [Power BI Management module](/powershell/power-bi/overview). This cmdlet provides a very simple way to sign in.
+All Power BI REST API operations require you to sign in. _Authentication_ (who is making the request) and _authorization_ (what the user has permission to do) are managed by the Microsoft Identity Platform. The following example uses the [Connect-PowerBIServiceAccount](/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount) cmdlet from the [Power BI Management module](/powershell/power-bi/overview). This cmdlet supports a simple method to sign in.
 
 ### Sample request 1
 
-The first example redirects you to a browser to complete signing in. User accounts that have multi-factor authentication (MFA) enabled are able to use this interactive authentication flow to sign in.
+The first script redirects you to a browser to complete the sign in process. User accounts that have multi-factor authentication (MFA) enabled are able to use this interactive authentication flow to sign in.
 
 ```powershell
 Connect-PowerBIServiceAccount
 ```
 
 > [!IMPORTANT]
-> Users without Power BI administrator privileges can't run any of the sample scripts that follow in this article. [Power BI administrators](/power-bi/admin/service-admin-role) have permission to manage the Power BI service and to retrieve tenant-wide metadata (such as activity log data). Although using service principal authentication is out of scope for these examples, we strongly recommend setting up a [service principal](/power-bi/enterprise/read-only-apis-service-principal-authentication) for production-ready, unattended, scripts that will be run on a schedule.
+> Users without Power BI administrator privileges can't run any of the sample scripts that follow in this article. [Power BI administrators](/power-bi/admin/service-admin-role) have permission to manage the Power BI service and to retrieve tenant-wide metadata (such as activity log data). Although using service principal authentication is out of scope for these examples, we strongly recommend that you set up a [service principal](/power-bi/enterprise/read-only-apis-service-principal-authentication) for production-ready, unattended scripts that will run on a schedule.
 >
 > Be sure to sign in before running any of the following scripts.
 
@@ -80,7 +85,7 @@ Connect-PowerBIServiceAccount
 Sometimes you need to check all the activities that a specific user performed on a specific day.
 
 > [!TIP]
-> When extracting data from the activity log by using the PowerShell cmdlet, each request can extract data for one day (a maximum of 24 hours). Therefore, the goal of this example is to start simple by checking one user, for one day. There are additional examples later in this article that show how to use a loop to export data for multiple days.
+> When extracting data from the activity log by using the PowerShell cmdlet, each request can extract data for one day (a maximum of 24 hours). Therefore, the goal of this example is to start simply by checking one user for one day. There are other examples later in this article that show you how to use a loop to export data for multiple days.
 
 ### Sample request 2
 
@@ -105,11 +110,11 @@ Get-PowerBIActivityEvent `
 > You might notice a backtick (\`) character at the end of some of the lines in the PowerShell scripts. In PowerShell, one way you can use the backtick character is as a line continuation character. We've used it to improve the readability of the scripts in this article.
 
 > [!TIP]
-> Each of the above [PowerShell variables](/powershell/module/microsoft.powershell.core/about/about_variables) correlate to a required or optional [parameter](/powershell/module/microsoft.powershell.core/about/about_parameters) value in the [Get-PowerBIActivityEvent](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent) cmdlet. For example, the value you assign to the `$UserEmailAddr` variable is passed to the `-User` parameter. Declaring PowerShell variables in this way is a lightweight approach to avoid hard-coding values that could change in the middle of your script. That's a good habit to build that will be useful as your scripts become more complex. [PowerShell parameters](/powershell/module/microsoft.powershell.core/about/about_parameters?view=powershell-7.3&preserve-view=true) are more robust than variables, but they're out of scope for this article.
+> In the script, each of the [PowerShell variables](/powershell/module/microsoft.powershell.core/about/about_variables) correlate to a required or optional [parameter](/powershell/module/microsoft.powershell.core/about/about_parameters) value in the [Get-PowerBIActivityEvent](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent) cmdlet. For example, the value you assign to the `$UserEmailAddr` variable is passed to the `-User` parameter. Declaring PowerShell variables in this way is a lightweight approach to avoid hard-coding values that could change in your script. That's a good habit to adopt, and it will be useful as your scripts become more complex. [PowerShell parameters](/powershell/module/microsoft.powershell.core/about/about_parameters?view=powershell-7.3&preserve-view=true) are more robust than variables, but they're out of scope for this article.
 
 ### Sample response 2
 
-Here is a sample JSON response. It includes two activities that the user performed:
+Here's a sample JSON response. It includes two activities that the user performed:
 
 - The first activity shows that a user viewed a report.
 - The second activity shows that an administrator exported data from the Power BI activity log.
@@ -170,7 +175,7 @@ Here is a sample JSON response. It includes two activities that the user perform
 ```
 
 > [!TIP]
-> Extracting the Power BI activity log data is also a logged operation, as shown in the previous response. When you analyze user activities, you might want to omit administrator activities or analyze them separately.
+> Extracting the Power BI activity log data is also a logged operation, as shown in the previous response. When you analyze user activities, you might want to omit administrator activities—or analyze them separately.
 
 ## Example 3: View an activity for N days
 
@@ -208,14 +213,14 @@ For($LoopNbr=0; $LoopNbr -le $NbrOfDaysToCheck; $LoopNbr++)
 ```
 
 > [!TIP]
-> You can use this technique to check any of the [operations](/power-bi/admin/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) recorded in the activity log.
+> You can use this looping technique to check any of the [operations](/power-bi/admin/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) recorded in the activity log.
 
 ### Sample response 3
 
-Here is a sample JSON response. It includes two activities that the user performed:
+Here's a sample JSON response. It includes two activities that the user performed:
 
-- The first activity shows that a sharing link for a user was created. Note that the _SharingAction_ value differs depending on whether the user created a link, edited a link, or deleted a link. Only one type of sharing link activity is shown here for brevity.
-- The second activity shows that direct access sharing for a group was created. Note that the _SharingInformation_ value differs depending on the action taken. Only one type of direct access sharing activity is shown here for brevity.
+- The first activity shows that a sharing link for a user was created. Note that the _SharingAction_ value differs depending on whether the user created a link, edited a link, or deleted a link. For brevity, only one type of sharing link activity is shown in the response.
+- The second activity shows that direct access sharing for a group was created. Note that the _SharingInformation_ value differs depending on the action taken. For brevity, only one type of direct access sharing activity is shown in the response.
 
 ```json
 [
@@ -306,12 +311,12 @@ Here is a sample JSON response. It includes two activities that the user perform
 ]
 ```
 
-> [!TIP]
-> This JSON response shows that the data is structured differently based on the type of event. Even the same type of event can have different characteristics that produce a slightly different output. As mentioned earlier in this article, you should get accustomed to retrieving the raw data.
+> [!NOTE]
+> This JSON response shows that the data structure is different based on the type of event. Even the same type of event can have different characteristics that produce a slightly different output. As recommended earlier in this article, you should get accustomed to retrieving the raw data.
 
 ## Example 4: View three activities for N days
 
-Sometimes you might want to investigate several related activities. This example shows how to retrieve three specific activities from the previous seven days. It focuses on activities related to [Power BI apps](/power-bi/consumer/end-user-apps) including creating an app, updating an app, and installing an app.
+Sometimes you might want to investigate several related activities. This example shows how to retrieve three specific activities for the previous seven days. It focuses on activities related to [Power BI apps](/power-bi/consumer/end-user-apps) including creating an app, updating an app, and installing an app.
 
 ### Sample request 4
 
@@ -322,12 +327,15 @@ The script declares the following variables:
 - `$Activity2`: The second operation name. In this example, it's searching for Power BI app update activities.
 - `$Activity3`: The third operation name. In this example, it's searching for Power BI app installation activities.
 
-You can only retrieve activity events for one activity at a time. So, the script must search each operation separately. It combines the search results into a variable named `$FullResults`, which it outputs to the screen.
+You can only retrieve activity events for one activity at a time. So, the script searches for each operation separately. It combines the search results into a variable named `$FullResults`, which it then outputs to the screen.
 
 > [!CAUTION]
 > Running many loops many times greatly increases the likelihood of API _throttling_. Throttling can happen when you exceed the number of requests you're allowed to make in a given time period. The [Get Activity Events](/rest/api/power-bi/admin/get-activity-events) operation is limited to 200 requests per hour. When you design your scripts, take care not to retrieve the original data more times than you need. Generally, it's a better practice to extract all of the raw data once per day and then query, transform, filter, or format that data separately.
 
-The script shows results for the current day. (To include results for the previous day only that avoids partial day results, see the [Export all activities for previous N days](#example-6-export-all-activities-for-previous-n-days) example.)
+The script shows results for the current day.
+
+> [!NOTE]
+> To retrieve results for the previous day only—avoiding partial day results—see the [Export all activities for previous N days](#example-6-export-all-activities-for-previous-n-days) example.)
 
 ```powershell
 #Input values before running the script:
@@ -386,14 +394,16 @@ $FullResults
 
 ### Sample response 4
 
-Here is a sample JSON response. It includes three activities that the user performed:
+Here's a sample JSON response. It includes three activities that the user performed:
 
 - The first activity shows a Power BI app was created.
-- The second activity indicates that a Power BI app was updated.
+- The second activity shows that a Power BI app was updated.
 - The third activity shows that a Power BI app was installed by a user.
 
 > [!WARNING]
-> The results only include the user permissions that were modified. For example, it's possible that three audiences could've been created in a _CreateApp_ event. In the _UpdateApp_ event, if only one audience changed, then only one audience will appear in the _OrgAppPermission_ data. For that reason, relying on the _UpdateApp_ event for tracking all app permissions is incomplete because the activity log only shows what changed. For a snapshot of all Power BI app permissions, use the [Get App Users as Admin](/rest/api/power-bi/admin/apps-get-app-users-as-admin) API operation instead.
+> The response only includes the user permissions that were modified. For example, it's possible that three audiences could've been created in a _CreateApp_ event. In the _UpdateApp_ event, if only one audience changed, then only one audience would appear in the _OrgAppPermission_ data. For that reason, relying on the _UpdateApp_ event for tracking all app permissions is incomplete because the activity log only shows what's changed.
+>
+> For a snapshot of all Power BI app permissions, use the [Get App Users as Admin](/rest/api/power-bi/admin/apps-get-app-users-as-admin) API operation instead.
 
 ```json
 [
@@ -473,7 +483,7 @@ Here is a sample JSON response. It includes three activities that the user perfo
 
 ## Example 5: View all activities for a workspace for one day
 
-Sometimes you might want to investigate activities related to a specific workspace. This example retrieves all activities for all users for one day. It then filters the results so you can focus on analyzing activities from one [workspace](powerbi-implementation-planning-workspaces-overview.md).
+Sometimes you might want to investigate activities related to a specific workspace. This example retrieves all activities for all users for one day. It then filters the results so that you can focus on analyzing activities from one [workspace](powerbi-implementation-planning-workspaces-overview.md).
 
 ### Sample request 5
 
@@ -482,12 +492,14 @@ The script declares two variables:
 - `$ActivityDate`: The date you're interested in. The format is YYYY-MM-DD. You can't request a date earlier than 30 days before the current date.
 - `$WorkspaceName`: The name of the workspace you're interested in.
 
-The script stores the results in the `$Results` variable. It then converts the JSON data to an object so it can parse the results. It then filters the results to retrieve five specific columns. The _CreationTime_ data is renamed as _ActivityDateTime_. The results are filtered by the workspace name, then output to the screen.
+The script stores the results in the `$Results` variable. It then converts the JSON data to an object so the results can be parsed. It then filters the results to retrieve five specific columns. The _CreationTime_ data is renamed as _ActivityDateTime_. The results are filtered by the workspace name, then output to the screen.
 
 There isn't a parameter for the [Get-PowerBIActivityEvent](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent) cmdlet that allows you to specify a workspace when checking the activity log (earlier examples in this article used PowerShell parameters to set a specific user, date, or activity name). In this example, the script retrieves all of the data and then parses the JSON response to filter the results for a specific workspace.
 
 > [!CAUTION]
-> If you're in a large organization which has hundreds or thousands of activities per day, filtering the results after they've been retrieved can be very inefficient. The [Get Activity Events](/rest/api/power-bi/admin/get-activity-events) operation is limited to 200 requests per hour. To avoid API throttling (when you exceed the number of requests you're allowed to make in a given time period), don't retrieve the original data more than you need to. You can continue to work with the filtered results without re-running the cmdlet to retrieve the results again. For ongoing needs, a better practice is to extract all of the data once per day and then query it.
+> If you're in a large organization that has hundreds or thousands of activities per day, filtering the results after they've been retrieved can be very inefficient. Bear in mind that the [Get Activity Events](/rest/api/power-bi/admin/get-activity-events) operation is limited to 200 requests per hour.
+>
+> To avoid API throttling (when you exceed the number of requests that you're allowed to make in a given time period), don't retrieve the original data more than you need to. You can continue to work with the filtered results without running the script to retrieve the results again. For ongoing needs, it's a better practice to extract all of the data once per day and then query it many times.
 
 ```powershell
 #Input values before running the script:
@@ -525,24 +537,25 @@ $FilteredResults
 
 ### Sample response 5
 
-Here are the filtered results, which include a small subset of properties. The format is easier to read for ad hoc analysis. However, we recommend that you convert it back to JSON format if you want to save the results.
+Here are the filtered results, which include a small subset of properties. The format is easier to read for occasional analysis. However, we recommend that you convert it back to JSON format if you plan to store the results.
 
-Note that after converting the JSON results to a PowerShell object, the time is displayed as local time. The original audit data is always recorded in Coordinated Universal Time (UTC) time, so we recommend that you get accustomed to using only UTC time.
+> [!NOTE]
+> After converting the JSON results to a PowerShell object, time values are converted to local time. The original audit data is always recorded in Coordinated Universal Time (UTC) time, so we recommend that you get accustomed to using only UTC time.
 
 ```output
-ActivityDateTime : 3/15/2023 3:18:30 PM
+ActivityDateTime : 4/25/2023 3:18:30 PM
 Activity         : ViewReport
 UserId           : jordan@contoso.com
 ArtifactName     : Gross Margin Analysis
 WorkSpaceName    : Sales Analytics
 
-CreationTime     : 3/15/2023 5:32:10 PM
+CreationTime     : 4/25/2023 5:32:10 PM
 Activity         : ShareReport
 UserId           : ellis@contoso.com
 ArtifactName     : Call Center Stats
 WorkSpaceName    : Sales Analytics
 
-CreationTime     : 3/15/2023 9:03:05 PM
+CreationTime     : 4/25/2023 9:03:05 PM
 Activity         : ViewReport
 UserId           : morgan@contoso.com
 ArtifactName     : Call Center Stats
@@ -557,21 +570,21 @@ WorkSpaceName    : Sales Analytics
 Sometimes you might want to export all activity data to a file so that you can work with the data outside of PowerShell. This example retrieves all activities for all users for up to 30 days. It exports the data to one JSON file per day.
 
 > [!IMPORTANT]
-> Activity log data is available for a maximum of 30 days from the Power BI Management module. It's important that you export and retain the data so you can do historical analysis. If you're not currently exporting and saving the activity log data, we recommend that you prioritize doing so.
+> Activity log data is available for a maximum of 30 days. It's important that you export and retain the data so you can do historical analysis. If you don't currently export and store the activity log data, we strongly recommend that you prioritize doing so.
 
 ### Sample request 6
 
 The script retrieves all activities for a series of days. It declares three variables:
 
 - `$NbrDaysDaysToExtract`: How many days you're interested in exporting. It performs a loop, working backward from the previous day. The maximum value allowed is 30 days (because the earliest date that you can retrieve is 30 days before the current day).
-- `$ExportFileLocation`: The path for where all files will be saved. The folder must exist before running the script. Don't include a backslash (\\) character at the end of the file path (because it's automatically added at runtime). We recommend that you use a separate folder to store raw data files.
-- `$ExportFileName`: The prefix for each file name. Because one file per day is saved, the script adds a suffix to indicate the data contained in the file, and the date and time the data was retrieved. For example, if you ran a script at 9am (UTC) on March 17, 2023 to extract activity data for March 15, 2023, the file name would be: PBIActivityEvents-20230315-202303170900. Although the folder structure where it's stored is helpful, each file name should also be self-describing.
+- `$ExportFileLocation`: The folder path where you want to save the files. The folder must exist before running the script. Don't include a backslash (\\) character at the end of the folder path (because it's automatically added at runtime). We recommend that you use a separate folder to store raw data files.
+- `$ExportFileName`: The prefix for each file name. Because one file per day is saved, the script adds a suffix to indicate the data contained in the file, and the date and time the data was retrieved. For example, if you ran a script at 9am (UTC) on April 25, 2023 to extract activity data for April 23, 2023, the file name would be: PBIActivityEvents-20230423-202304250900. Although the folder structure where it's stored is helpful, each file name should  be fully self-describing.
 
-We recommend that you extract data that's at least one day before the current day. That way, you avoid retrieving partial day events, and you can be confident that each export file contains a full 24 hours of data.
+We recommend that you extract data that's at least one day before the current day. That way, you avoid retrieving partial day events, and you can be confident that each export file contains the full 24 hours of data.
 
-The script gathers up to 30 days of data, through the previous day. Timestamps for audited events are always in UTC. We recommend that you build all your auditing processes based on UTC time rather than your local time.
+The script gathers up to 30 days of data, through to the previous day. Timestamps for audited events are always in UTC. We recommend that you build all of your auditing processes based on UTC time rather than your local time.
 
-The script produces one JSON file per day. The suffix of the file name includes the timestamp (in UTC format) of the extracted data. If you extract the same day of data more than once, the suffix in the file name helps you know which file is newer.
+The script produces one JSON file per day. The suffix of the file name includes the timestamp (in UTC format) of the extracted data. If you extract the same day of data more than once, the suffix in the file name helps you identify the newer file.
 
 ```powershell
 #Input values before running the script:
@@ -614,14 +627,14 @@ Write-Verbose "Extract of Power BI activity events is complete." -Verbose
 
 There are several advantages to using the [Get-PowerBIActivityEvent](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent) PowerShell cmdlet rather than the [Get Activity Events](/rest/api/power-bi/admin/get-activity-events) REST API operation.
 
-- The cmdlet allows you to request one day of activity each time you make a call using the cmdlet. Whereas when you communicate with the API directly, you can only request one hour per API request.
-- The cmdlet handles continuation tokens for you. If you were communicating with the API directly, you would need to check the continuation token to see whether there are any more results. Some APIs need to use pagination and continuation tokens for performance reasons when they return a large amount of data. It will return the first set of records, then with a continuation token you can make another API call to retrieve the next set of records. You continue calling the API until a continuation token isn't returned. Using the continuation token is a way to consolidate multiple API requests so that you can consolidate a logical set of results. For an example of using a continuation token, see [Activity Events REST API](/rest/api/power-bi/admin/get-activity-events#get-the-next-set-of-audit-activity-events-by-sending-the-continuation-token-to-the-api-example).
-- The cmdlet handles Azure AD access token expirations for you. After you've authenticated, your access token expires after one hour, by default. The cmdlet will automatically request a refresh token for you. If you were communicating with the API directly, you would need to request a refresh token.
+- The cmdlet allows you to request one day of activity each time you make a call by using the cmdlet. Whereas when you communicate with the API directly, you can only request one hour per API request.
+- The cmdlet handles continuation tokens for you. If you use the API directly, you need to check the continuation token to determine whether there are any more results to come. Some APIs need to use pagination and continuation tokens for performance reasons when they return a large amount of data. They return the first set of records, then with a continuation token you can make a subsequent API call to retrieve the next set of records. You continue calling the API until a continuation token isn't returned. Using the continuation token is a way to consolidate multiple API requests so that you can consolidate a logical set of results. For an example of using a continuation token, see [Activity Events REST API](/rest/api/power-bi/admin/get-activity-events#get-the-next-set-of-audit-activity-events-by-sending-the-continuation-token-to-the-api-example).
+- The cmdlet handles Azure Active Directory (Azure AD) access token expirations for you. After you've authenticated, your access token expires after one hour (by default). In this case, the cmdlet automatically requests a refresh token for you. If you communicate with the API directly, you need to request a refresh token.
 
-For more information, see [Choose APIs or PowerShell cmdlets](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#choose-apis-or-powershell-cmdlets) in the Tenant-level auditing article.
+For more information, see [Choose APIs or PowerShell cmdlets](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#choose-apis-or-powershell-cmdlets).
 
 > [!NOTE]
-> A sample response is omitted because it's an output similar to the ones shown in the previous examples.
+> A sample response is omitted because it's an output similar to the responses shown in the previous examples.
 
 ## Next steps
 

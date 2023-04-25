@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/24/2023
+ms.date: 04/25/2023
 ---
 
 # Power BI implementation planning: Tenant-level auditing
@@ -20,16 +20,24 @@ This tenant-level audit planning article is primarily targeted at:
 - **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They may need to collaborate with Power BI administrators and other relevant teams.
 
 > [!IMPORTANT]
-> We recommend that you closely follow the [Power BI release plan](https://powerbi.microsoft.com/roadmap/) for future enhancements of auditing and monitoring capabilities.
+> We recommend that you closely follow the [Power BI release plan](https://powerbi.microsoft.com/roadmap/) to learn about future enhancements of the auditing and monitoring capabilities.
 
-The purpose of a tenant-level audit solution is to capture and analyze data for all users, activities, and solutions deployed to a Power BI tenant. This tenant-level auditing data is valuable for many purposes, allowing you to analyze adoption efforts, understand usage patterns, educate users, support users, mitigate risk, improve compliance, manage license costs, and monitor performance. Creating an end-to-end auditing solution that's secure and production-ready is a significant project that takes time. Think of it as building business intelligence on business intelligence (BI on BI). For more information about why the auditing data is so valuable, see [Auditing and monitoring overview](powerbi-implementation-planning-auditing-monitoring-overview.md).
+The purpose of a tenant-level audit solution is to capture and analyze data for all users, activities, and solutions deployed to a Power BI tenant. This tenant-level auditing data is valuable for many purposes, allowing you to analyze adoption efforts, understand usage patterns, educate users, support users, mitigate risk, improve compliance, manage license costs, and monitor performance.
 
-For report-level auditing, which is targeted at report creators, see [Report-level auditing](powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md). For auditing data assets, which is targeted at data creators, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md). The remainder of this article focuses on tenant-level auditing.
+Creating an end-to-end auditing solution that's secure and production-ready is a significant project that takes time. Think of it as building business intelligence on business intelligence (BI on BI). For information about why the auditing data is so valuable, see [Auditing and monitoring overview](powerbi-implementation-planning-auditing-monitoring-overview.md).
+
+For report-level auditing, which is targeted at report creators, see [Report-level auditing](powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md).
+
+For auditing data assets, which is targeted at data creators, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md).
+
+The remainder of this article focuses on tenant-level auditing.
 
 > [!TIP]
-> The primary focus of this article is to help you plan to create an end-to-end auditing solution. Because the content in this article is organized into phases, you will need information across multiple phases. For example, you'll find information in Phase 1 for planning to use a service principal and information in Phase 2 for prerequisites and setup. Therefore, we recommend that you read the entire article first to become familiar with what's involved. Then, proceed to plan and build your auditing solution in an iterative manner.
+> The primary focus of this article is to help you plan to create an end-to-end auditing solution. Because the content in this article is organized into four phases, you'll need information across multiple phases. For example, you'll find information in Phase 1 about planning to use a service principal, and information in Phase 2 about prerequisites and setup.
+>
+> Therefore, we recommend that you read this entire article first so that you'll be familiar with what's involved. Then you should be well-prepared to plan and build your auditing solution in an iterative manner.
 
-When planning to build a tenant-level auditing solution, expect to spend time on the following four phases.
+When you plan to build a tenant-level auditing solution, plan to spend time on the following four phases.
 
 - **Phase 1: Planning and decisions**
   - [Requirements and priorities](#requirements-and-priorities)
@@ -58,23 +66,23 @@ When planning to build a tenant-level auditing solution, expect to spend time on
 
 ## Phase 1: Planning and decisions
 
-The first phase focuses on planning and decision-making. There are many requirements and priorities to consider, so we recommend that you spend sufficient time to understand the topics introduced in this section. The goal is to make good decisions so that the downstream phases run smoothly.
+The first phase focuses on planning and decision-making. There are many requirements and priorities to consider, so we recommend that you spend sufficient time to understand the topics introduced in this section. The goal is to make good upfront decisions so that the downstream phases run smoothly.
 
-:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-1.png" alt-text="Image shows a flow diagram describing Phase 1, which is about planning and decisions for tenant-level auditing solution." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-1.png" alt-text="Image shows a flow diagram describing Phase 1, which focuses on planning and decisions." border="false":::
 
 ### Requirements and priorities
 
-In the initial phase, the goal is to identify what's most important. Focus on what matters most, and how you measure impact in your organization. Strive for business-oriented requirements, rather than technology-oriented requirements.
+In the initial phase, the goal is to identify what's most important. Focus on what matters most, and how you're going to measure impact in your organization. Strive to define business-oriented requirements rather than technology-oriented requirements.
 
-Here are some questions you should ask.
+Here are some questions you should answer.
 
 - **What key questions do you need to answer?** There's a large volume of auditing data you can explore. The most effective way to approach auditing is to focus on answering specific questions.
-- **What are your [adoption](powerbi-adoption-roadmap-overview.md) and [data culture](powerbi-adoption-roadmap-data-culture.md) goals?** For example, perhaps you have a goal to increase the number of self-service BI content creators in the organization. In that case, you need to measure user activities related to creating, editing, and publishing content.
-- **What immediate risks are present?** For example, you may know oversharing of content has occurred in the past. User training has since been enhanced, and you now want to audit security settings and activities on an ongoing basis.
-- **Are there current key performance indicators (KPIs) or organizational goals?** For example, perhaps you have an organizational KPI that relates to digital transformation or becoming a more data-driven organization. Tenant-level auditing data can be helpful for measuring whether your Power BI implementation has aligned with these goals.
+- **What are your [adoption](powerbi-adoption-roadmap-overview.md) and [data culture](powerbi-adoption-roadmap-data-culture.md) goals?** For example, perhaps you have a goal to increase the number of self-service BI content creators in the organization. In that case, you'll need to measure user activities related to creating, editing, and publishing content.
+- **What immediate risks are present?** For example, you might know oversharing of content has occurred in the past. User training has since been enhanced, and you now want to audit security settings and activities on an ongoing basis.
+- **Are there current key performance indicators (KPIs) or organizational goals?** For example, perhaps you have an organizational KPI that relates to digital transformation or becoming a more data-driven organization. Tenant-level auditing data can help you measure whether your Power BI implementation is aligned with these goals.
 
 > [!TIP]
-> Verify auditing requirements and set priorities with your [executive sponsor](powerbi-adoption-roadmap-executive-sponsorship.md) and [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md). It's tempting to extract auditing data and start creating reports with a lot of interesting data. However, it's unlikely that you will derive high value from your auditing solution unless it's driven by questions you need to answer and actions you intend to take.
+> Verify auditing requirements and set priorities with your [executive sponsor](powerbi-adoption-roadmap-executive-sponsorship.md) and [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md). It's tempting to extract auditing data and start creating reports based on a lot of interesting data. However, it's unlikely that you'll derive high value from your auditing solution when it isn't driven by questions you need to answer and actions you intend to take.
 
 For more ideas about ways that you can use auditing data, see [Auditing and monitoring overview](powerbi-implementation-planning-auditing-monitoring-overview.md).
 
@@ -84,24 +92,24 @@ For more ideas about ways that you can use auditing data, see [Auditing and moni
 
 > [!div class="checklist"]
 > - **Identify requirements:** Collect and document the key business requirements for auditing your Power BI tenant.
-> - **Prioritize requirements:** Set priorities for the requirements, classified as immediate, short-term, medium-term, and long-term (backlog).
+> - **Prioritize requirements:** Set priorities for the requirements, classifying them as immediate, short-term, medium-term, and long-term (backlog).
 > - **Make a plan for the immediate priorities:** Put a plan in place to begin collecting data so that it's available when you need it.
-> - **Reassess requirements regularly:** Create a plan to reassess requirements on a regular basis (for example, twice a year). Verify whether the auditing and monitoring solution is meeting the stated requirements. Update action items on your plan as necessary.
+> - **Reassess requirements regularly:** Create a plan to reassess requirements on a regular basis (for example, twice per year). Verify whether the auditing and monitoring solution meets the stated requirements. Update action items on your plan as necessary.
 
 ### Data needs
 
-Using the requirements and priorities (described previously), you're ready to identify the data that you'll need. Four categories of data are covered in this section.
+Once you've defined the requirements and priorities (described [previously](#requirements-and-priorities)), you're ready to identify the data that you'll need. Four categories of data are covered in this section.
 
 - [User activity data](#user-activity-data)
 - [Tenant inventory](#tenant-inventory)
 - [Users and groups data](#users-and-groups-data)
 - [Security data](#security-data)
 
-Most of the data you'll need comes from the [admin APIs](/rest/api/power-bi/admin), which provide a wealth of metadata about the Power BI tenant. For more information, see [Choose a user API or admin API](#choose-a-user-api-or-admin-api) later in this article.
+Most of the data that you'll need comes from the [admin APIs](/rest/api/power-bi/admin), which provide a wealth of metadata about the Power BI tenant. For more information, see [Choose a user API or admin API](#choose-a-user-api-or-admin-api) later in this article.
 
 #### User activity data
 
-Make it your first priority to obtain data about user activities. The _user activities_ (also called _events_ or _operations_) are useful for a wide variety of purposes.
+Make it your first priority to obtain data about user activities. The _user activities_, which are also called _events_ or _operations_, are useful for a wide variety of purposes.
 
 Most often, this data is referred to as the _activity log_ or the _event log_. Technically, there are several ways to acquire user activity data (the activity log being one method). For more information about the decisions and activities involved, see [Access user activity data](#access-user-activity-data) later in this article.
 
@@ -124,7 +132,7 @@ Here are some common questions that user activity data can answer.
   - Who is publishing many new datasets?
   - Who is using subscriptions heavily?
 - **Improve governance and compliance efforts**
-  - When are tenant settings changed, and by which administrator?
+  - When are tenant settings changed, and by which Power BI administrator?
   - Who started a Power BI trial?
   - What content is accessed by external users, who, when, and how?
   - Who added or updated a sensitivity label?
@@ -141,18 +149,18 @@ For more information, see [Access user activity data](#access-user-activity-data
 
 #### Tenant inventory
 
-Often, the second priority is to obtain the data for creating a _tenant inventory_. Sometimes it's referred to as _workspace inventory_, _workspace metadata_, or _tenant metadata_.
+Often, the second priority is to retrieve the data to create a _tenant inventory_. Sometimes it's referred to as _workspace inventory_, _workspace metadata_, or _tenant metadata_.
 
-The tenant inventory is a snapshot, at a given point in time, that describes what's published in the tenant. The tenant inventory doesn't include the actual data or the actual reports. Rather, it's metadata that describes all workspaces and items (such as reports and datasets).
+A tenant inventory is a snapshot at a given point in time. It describes what's published in the tenant. The tenant inventory doesn't include the actual data or the actual reports. Rather, it's metadata that describes all workspaces and their items (such as datasets and reports).
 
 Here are some common questions that the tenant inventory can answer.
 
 - **Understand how much content you have and where**
   - Which workspaces have the most content?
-  - What type of content is published in each workspace (particularly if you're separating reporting workspace and data workspaces)?
-  - What dependencies exist between items (such as dataflows that support many datasets, or a dataset that is a source for other composite models)?
-  - What is the data lineage (dependencies between Power BI items including external data sources)?
-  - Are there orphaned reports (disconnected from a dataset)?
+  - What type of content is published in each workspace (particularly when you're separating reporting workspaces and data workspaces)?
+  - What dependencies exist between items (such as dataflows that support many datasets, or a dataset that's a source for other composite models)?
+  - What is the data lineage (dependencies between Power BI items, including external data sources)?
+  - Are there orphaned reports (which are disconnected from their dataset)?
 - **Understand the ratio of datasets to reports**
   - How much dataset reuse is occurring?
   - Are there duplicate, or highly similar, datasets?
@@ -161,39 +169,40 @@ Here are some common questions that the tenant inventory can answer.
   - Is the number of reports increasing over time?
   - Is the number of datasets increasing over time?
 - **Find unused content**
-  - What reports are unused (or under-utilized)?
-  - What datasets are unused (or under-utilized)?
+  - Which reports are unused (or under-utilized)?
+  - Which datasets are unused (or under-utilized)?
   - Are there opportunities to retire content?
 
-The tenant inventory helps you use current names when analyzing historical activities. The snapshot of the items in your tenant contains the names of all items _at that point in time_. It's helpful to use current item names for historical reporting. For example, if a report was renamed three months ago, the activity log at that time records the old report name. With a properly defined data model, you can use the latest tenant inventory to locate an item by its current name (rather than its former name). For more information, see [Create a data model](#create-a-data-model) later in this article.
+A tenant inventory helps you to use current names when analyzing historical activities. The snapshot of the items in your tenant contains the names of all items _at that point in time_. It's helpful to use current item names for historical reporting. For example, if a report was renamed three months ago, the activity log at that time records the old report name. With a properly defined data model, you can use the latest tenant inventory to locate an item by its current name (rather than its former name). For more information, see [Create a data model](#create-a-data-model) later in this article.
 
 For more information about ways to use a tenant inventory, see [Understand published content](powerbi-implementation-planning-auditing-monitoring-overview.md#understand-published-items).
 
 > [!TIP]
-> You will often use both the user activity events (described in the previous section) and the tenant inventory to produce a complete picture. By combining activity log data with your tenant inventory snapshot, you can produce a complete picture and enhance the value of the data.
+> You'll often use combine the user activity events (described in the [previous section](#user-activity-data)) and the tenant inventory to produce a complete picture. That way, you enhance the value of all of the data.
 
-Because the tenant inventory is a snapshot at a given point in time, you need to decide how often to extract and store the metadata. A weekly snapshot is useful for making comparisons between the two points in time. For example, if you want to investigate security settings for a workspace, you need the previous tenant inventory snapshot, the activity log events, and the current tenant inventory snapshot.
+Because a tenant inventory is a snapshot at a given point in time, you'll need to decide how often to extract and store the metadata. A weekly snapshot is useful for making comparisons between the two points in time. For example, if you want to investigate security settings for a workspace, you'll need the previous tenant inventory snapshot, the activity log events, and the current tenant inventory snapshot.
 
 There are two main ways to build a tenant inventory. For more information about the decisions and activities involved, see [Access tenant inventory data](#access-tenant-inventory-data) later in this article.
 
 #### Users and groups data
 
-As your analytical needs grow, you'll likely determine that you'd like to include data about users and groups in your end-to-end auditing solution. You can use [Microsoft Graph](/graph/overview-major-services), which is the authoritative source for information about Azure Active Directory (Azure AD) users and groups.
+As your analytical needs grow, you'll likely determine that you'd like to include data about users and groups in your end-to-end auditing solution. To retrieve that data, you can use [Microsoft Graph](/graph/overview-major-services), which is the authoritative source for information about Azure Active Directory (Azure AD) users and groups.
 
-Data that's retrieved from the Power BI REST APIs include an email address for a user, or the name of a security group. This data is a snapshot at a given point in time.
+Data that's retrieved from the Power BI REST APIs includes an email address to describe the user, or the name of a security group. This data is a snapshot at a given point in time.
 
 Here are some common questions that Microsoft Graph can answer.
 
 - **Identify users and groups**
   - What's the full username (in addition to the email address), department, or location sourced from their [user profile](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)?
   - Who are the members of a [security group](/azure/active-directory/fundamentals/concept-learn-about-groups)?
-  - Who is the [owner](/azure/active-directory/fundamentals/how-to-manage-groups#add-or-remove-members-and-owners) who can manage members for a security group?
+  - Who's the [owner](/azure/active-directory/fundamentals/how-to-manage-groups#add-or-remove-members-and-owners) of a security group (to manage members)?
 - **Obtain additional user information**
-  - Which [licenses](/azure/active-directory/fundamentals/license-users-groups) - Power BI Pro or Power BI Premium Per User (PPU) - are assigned to a user?
-  - Which users [sign in](/azure/active-directory/reports-monitoring/concept-sign-ins) most frequently, or haven't signed in to the Power BI service recently?
+  - Which [licenses](/azure/active-directory/fundamentals/license-users-groups)—Power BI Pro or Power BI Premium Per User (PPU)—are assigned to users?
+  - Which users [sign in](/azure/active-directory/reports-monitoring/concept-sign-ins) most frequently?
+  - Which users haven't signed in to the Power BI service recently?
 
 > [!WARNING]
-> Some older methods (which are extensively documented online) for accessing user and group data are deprecated and shouldn't be used anymore. Whenever possible, use Microsoft Graph as the authoritative source.
+> Some older methods (which are extensively documented online) for accessing users and groups data are deprecated and shouldn't be used. Whenever possible, use Microsoft Graph as the authoritative source of users and groups data.
 
 For more information and recommendations about how to access data from Microsoft Graph, see [Access user and groups data](#access-user-and-group-data) later in this article.
 
@@ -205,7 +214,7 @@ Here are some common questions that the [Power BI REST APIs](/rest/api/power-bi/
 
 - **Identify people and applications**
   - Which reports does a user, group, or service principal have access to?
-  - Which users, groups, or service principals are subscribers to receive reports with [email subscription](powerbi-implementation-planning-security-content-creator-planning.md#email-subscriptions)?
+  - Which users, groups, or service principals are subscribers to receive reports with an [email subscription](powerbi-implementation-planning-security-content-creator-planning.md#email-subscriptions)?
 - **Understand content permissions**
   - Which [workspace roles](powerbi-implementation-planning-security-content-creator-planning.md#workspace-roles) are assigned to which users and groups?
   - Which users and groups are assigned to each [Power BI app audience](powerbi-implementation-planning-security-report-consumer-planning.md#app-audience)?
@@ -219,34 +228,35 @@ Here are some common questions that the [Power BI REST APIs](/rest/api/power-bi/
   - Who has permission to manage [gateways](/data-integration/gateway/manage-security-roles#gateway-roles) and [data connections](/data-integration/gateway/manage-security-roles#connection-roles)?
   - Who has permission to manage a [Premium capacity](/power-bi/enterprise/service-admin-premium-manage#manage-user-permissions)?
 
-For more considerations about security, see [security planning](powerbi-implementation-planning-security-overview.md) articles.
+> [!TIP]
+> For more considerations about security, see the [security planning](powerbi-implementation-planning-security-overview.md) articles.
 
 These common questions aren't an exhaustive list; there are a wide variety of Power BI REST APIs available. For more information, see [Using the Power BI REST APIs](/rest/api/power-bi/).
 
-For more information about using the admin APIs versus user APIs (including how it affects permissions that are required for the user who is extracting the data), see [Choose a user API or admin API](#choose-a-user-api-or-admin-api) later in this article.
+For more information about using the admin APIs versus user APIs (including how it affects permissions that are required for the user who's extracting the data), see [Choose a user API or admin API](#choose-a-user-api-or-admin-api) later in this article.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When identifying the data that's needed for auditing, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Identify specific data needs for user activity data:** Validate the requirements you collected. Identify which auditing data is necessary to meet each requirement for user activity data.
-> - **Identify specific data needs for tenant inventory data:** Validate the requirements you collected. Identify which auditing data is necessary to compile a tenant inventory.
-> - **Identify specific data needs for users and groups data:** Validate the requirements you collected. Identify which auditing data is necessary to meet each requirement for users and groups data.
-> - **Identify specific data needs for security data:** Validate the requirements you collected. Identify which auditing data is necessary to meet each requirement for security data.
+> - **Identify specific data needs for user activity data:** Validate the requirements you've collected. Identify which auditing data is necessary to meet each requirement for user activity data.
+> - **Identify specific data needs for tenant inventory data:** Validate the requirements you've collected. Identify which auditing data is necessary to compile a tenant inventory.
+> - **Identify specific data needs for users and groups data:** Validate the requirements you've collected. Identify which auditing data is necessary to meet each requirement for users and groups data.
+> - **Identify specific data needs for security data:** Validate the requirements you've collected. Identify which auditing data is necessary to meet each requirement for security data.
 > - **Verify priorities:** Verify the order of priorities so you know what to develop first.
 > - **Decide how often to capture activities:** Decide how frequently to capture activity events (such as once per day).
-> - **Decide how often to capture snapshots:** Decide what interval to capture snapshot data, such as tenant inventory or the users and groups data.
+> - **Decide how often to capture snapshots:** Decide what interval to capture snapshot data, such as a tenant inventory or the users and groups data.
 
 ### Type of auditing solution
 
-Tenant-level auditing is either done manually or via automated processes.
+Tenant-level auditing is either done manually or with an automated processes.
 
-Most new auditing processes start off as a manual process, particularly during development and while testing is occurring. A manual auditing process may evolve to become automated. However, not every auditing process has the requirement to be fully automated.
+Most new auditing processes start off as a manual process, particularly during development and while testing occurs. A manual auditing process may evolve to become an automated process. However, not every auditing process needs to be fully automated.
 
 #### Manual auditing processes
 
-When needed, queries are run _interactively_ to obtain audit data. Manual auditing relies on scripts and processes that are run on-demand by a user (usually a Power BI administrator).
+Manual auditing relies on scripts and processes that are run on-demand by a user (usually a Power BI administrator). When needed, the user runs queries _interactively_ to obtain audit data.
 
 Manual auditing is best suited to:
 
@@ -257,7 +267,9 @@ Manual auditing is best suited to:
 
 #### Automated auditing processes
 
-Audit data that's needed on a recurring basis can be extracted and processed on a regular schedule. It's known as an _automated process_, and sometimes it's referred to as an _unattended process_. The goals of an automated process are to reduce manual effort, reduce risk of error, increase consistency, and eliminate the dependency on an individual user to run it.
+Audit data that's needed on a recurring basis should be automated. It's extracted and processed on a regular schedule, and it's known as an _automated process_. Sometimes it's referred to as an _unattended process_.
+
+The goals of an automated process are to reduce manual effort, reduce risk of error, increase consistency, and eliminate the dependency on an individual user to run it.
 
 Automated auditing is best suited to:
 
@@ -267,10 +279,10 @@ Automated auditing is best suited to:
 - Essential auditing processes that have other reports (or other processes) that depend on it as a data source.
 - Auditing processes that are documented and supported.
 
-The type of process, manual or automated, might impact how you handle authentication. For example, a Power BI administrator might use user authentication for a manual auditing process but use a service principal for an automated process. For more information, see [Determine the authentication method](#determine-the-authentication-method) later in this article.
+The type of process—manual or automated—might impact how you handle authentication. For example, a Power BI administrator might use user authentication for a manual auditing process but use a service principal for an automated process. For more information, see [Determine the authentication method](#determine-the-authentication-method) later in this article.
 
 > [!TIP]
-> If there's a regular, recurring, need to obtain auditing data that's currently handled manually, consider investing time to automate it. For example, if a Power BI administrator manually runs a script every day to obtain data from the Power BI activity log, there's a risk of missing data should that person be ill or away on vacation.
+> If there's a regular, recurring, need to obtain auditing data that's currently handled manually, consider investing time to automate it. For example, if a Power BI administrator manually runs a script every day to retrieve data from the Power BI activity log, there's a risk of missing data should that person be ill or away on vacation.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -278,66 +290,66 @@ The type of process, manual or automated, might impact how you handle authentica
 
 > [!div class="checklist"]
 > - **Determine the primary purpose for each new auditing requirement:** Decide whether to use a manual or automated process for each new requirement. Consider whether that decision is temporary or permanent.
-> - **Create a plan for how to automate:** When it's appropriate for a particular audit requirement, create a plan for how to automate it, when, and by whom.
+> - **Create a plan for how to automate:** When it's appropriate for a particular auditing requirement, create a plan for how to automate it, when, and by whom.
 
 ### Permissions and responsibilities
 
-At this point, you should have a clear idea of what you want to accomplish and the data you'll initially need. Now is a good time to make decisions about user permissions, as well as roles and responsibilities.
+At this point, you should have a clear idea of what you want to accomplish and the data you'll initially need. Now's a good time to make decisions about user permissions, as well as roles and responsibilities.
 
 #### User permissions
 
-As you plan to build an end-to-end auditing solution, consider user permissions for others who need to access the data. Specifically, decide who is permitted to access and view auditing data.
+As you plan to build an end-to-end auditing solution, consider user permissions for other users who'll need to access the data. Specifically, decide who'll be permitted to access and view auditing data.
 
 Here are some considerations to take into account.
 
-##### Decide who may access the audit data directly
+##### Direct access to audit data
 
-This decision involves who's allowed to directly access the source data. There are multiple ways to look at it.
+You should decide who can access the audit data directly. There are multiple ways to think about it.
 
-- Who should be a Power BI administrator? A Power BI administrator has access to all tenant metadata, including the [admin APIs](/rest/api/power-bi/admin). For more information about deciding who should be a Power BI administrator, see [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md#power-bi-administration).
-- Who can use an existing service principal? To use a service principal (instead of user permissions) to accessing audit data, a _secret_ must be provided to authorized users so they can perform password-based authentication. Access to secrets (and keys) should be very tightly controlled.
-- Does access need to be tightly controlled? Certain industries with regulatory and compliance requirements must control access more tightly than other industries.
-- Is it a large organization with large data volumes? To avoid reaching API throttling limits, you may need to tightly control who's allowed to directly access the APIs that produce audit data. In this case, it's helpful to ensure that there aren't duplicate or overlapping efforts.
+- **Who should be a Power BI administrator?** A Power BI administrator has access to all tenant metadata, including the [admin APIs](/rest/api/power-bi/admin). For more information about deciding who should be a Power BI administrator, see [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md#power-bi-administration).
+- **Who can use an existing service principal?** To use a service principal (instead of user permissions) to accessing audit data, a secret must be provided to authorized users so they can perform password-based authentication. Access to secrets (and keys) should be very tightly controlled.
+- **Does access need to be tightly controlled?** Certain industries with regulatory and compliance requirements must control access more tightly than other industries.
+- **Are there large activity data volumes?** To avoid reaching API throttling limits, you may need to tightly control who's allowed to directly access the APIs that produce audit data. In this case, it's helpful to ensure that there aren't duplicate or overlapping efforts.
 
-##### Decide who may view the extracted raw data
+##### Access to extracted raw data
 
-This decision involves who's permitted to view the raw data that's extracted and written to a storage location. Most commonly, access to raw data is restricted to administrators and auditors. The Center of Excellence (COE) might require access as well. For more information, see [Determine where to store audit data](#determine-where-to-store-audit-data) later in this article.
+You should decide who can view the raw data that's extracted and written to a storage location. Most commonly, access to raw data is restricted to administrators and auditors. The Center of Excellence (COE) might require access as well. For more information, see [Determine where to store audit data](#determine-where-to-store-audit-data) later in this article.
 
-##### Decide who may view the curated analytical data
+##### Access to curated analytical data
 
-This decision involves who's permitted to view the curated and transformed data that's ready for analytics. This data is always available to administrators and auditors. Sometimes a data model is made available to other users throughout the organization, particularly when you create a Power BI dataset with row-level security. For more information, see [Plan to create curated data](#plan-to-create-curated-data) later in this article.
+You should decide who can view the curated and transformed data that's ready for analytics. This data should always be made available to administrators and auditors. Sometimes a data model is made available to other users in the organization, particularly when you create a Power BI dataset with row-level security. For more information, see [Plan to create curated data](#plan-to-create-curated-data) later in this article.
 
 #### Roles and responsibilities
 
-Once you've decided how user permissions work, you're in a good position to start considering roles and responsibilities. The goal is to involve the right people early on, especially when multiple developers or teams are involved in building the end-to-end auditing solution.
+Once you've decided how user permissions work, you're in a good position to start thinking about roles and responsibilities. We recommend that you involve the right people early on, especially when multiple developers or teams will be involved in building the end-to-end auditing solution.
 
-Decide which user or team are responsible for the following activities.
+Decide which users or team will be responsible for the following activities.
 
 | **Role** | **Types of responsibilities** | **Role typically performed by** |
 | --- | --- | --- |
 | Communicate to stakeholders | Communication activities and requirements gathering. | COE in partnership with IT. May also include select people from key business units. |
-| Decide priorities, and provide direction on requirements | Decision-making activities related to the end-to-end auditing solution, including how to satisfy requirements. | The team that oversees Power BI in the organization, such as the COE. The executive sponsor or a data governance steering committee may become involved for critical decisions and escalated issues. |
-| Extract and store the raw data | Creation of scripts and processes to access and extract the data. Also includes writing the raw data to storage. | Data engineering staff, usually in IT and in partnership with the COE. |
-| Create the curated data | Data cleansing, transformation, and the creation of the curated data in star schema format. | Data engineering staff, usually in IT and in partnership with the COE. |
+| Decide priorities, and provide direction on requirements | Decision-making activities related to the end-to-end auditing solution, including how to meet requirements. | The team that oversees Power BI in the organization, such as the COE. The executive sponsor or a data governance steering committee may become involved to make critical decisions or escalate issues. |
+| Extract and store the raw data | Creation of scripts and processes to access and extract the data. Also involves writing the raw data to storage. | Data engineering staff, usually in IT and in partnership with the COE. |
+| Create the curated data | Data cleansing, transformation, and the creation of the curated data in star schema design. | Data engineering staff, usually in IT and in partnership with the COE. |
 | Create a data model | Creation of an analytical data model, based on the curated data. | Power BI content creator(s), usually in IT or the COE. |
-| Create analytics reports | Creation of reports to analyze the curated data. Ongoing changes to reports based on new requirements and new auditing data that becomes available. | Power BI report creator(s), usually in IT or the COE. |
-| Analyze the data and act on the results | Analyze the data and act based on the audit data. | The team that oversees Power BI in the organization, usually the COE. Might also include other teams depending on the audit results and the action. Other teams can include security, compliance, legal, risk management, or change management. |
-| Test and validate | Test to ensure that auditing requirements and met and the data presented is accurate. | Power BI content creator(s), in partnership with the team that oversees Power BI in the organization. |
+| Create analytics reports | Creation of reports to analyze the curated data. Ongoing changes to reports based on new requirements and when new auditing data becomes available. | Power BI report creator(s), usually in IT or the COE. |
+| Analyze the data and act on the results | Analyze the data and act in response to the audit data. | The team that oversees Power BI in the organization, usually the COE. Might also include other teams depending on the audit results and the action. Other teams can include security, compliance, legal, risk management, or change management. |
+| Test and validate | Test to ensure that auditing requirements are met and that the data presented is accurate. | Power BI content creator(s), in partnership with the team that oversees Power BI in the organization. |
 | Secure the data | Set and manage security for each storage layer, including the raw data and the curated data. Manage access to datasets that are created for analyzing the data. | System administrator for the system that stores the data, in partnership with the team that oversees Power BI in the organization. |
-| Scheduling and automation | Operationalizing a solution and schedule the process within the tool of choice. | Data engineering staff, usually in IT and in partnership with the COE. |
+| Scheduling and automation | Operationalize a solution and schedule the process with the tool of choice. | Data engineering staff, usually in IT and in partnership with the COE. |
 | Support the solution | Monitor the audit solution, including job runs, errors, and support for technical issues. | The team that handles Power BI system support, which is usually IT or the COE. |
 
-Many of the above roles and responsibilities can be consolidated if they're performed by the same team or the same person. For example, your Power BI administrators may perform some of these roles.
+Many of the above roles and responsibilities can be consolidated if they're going to be performed by the same team or the same person. For example, your Power BI administrators might perform some of these roles.
 
 It's also possible that different people perform different roles, depending on the circumstance. Actions will be contextual depending on the audit data and the proposed action.
 
 Consider several examples.
 
-- **Example 1:** The audit data shows that some users are frequently exporting data to Excel. _Action taken:_ The COE contacts the specific user to understand their needs and to teach them better alternatives.
-- **Example 2:** The audit data shows external user access is occurring in an unexpected way. _Actions taken:_ An IT system administrator updates the relevant Azure AD settings for external user access. The Power BI administrator updates the tenant setting related to external user access. The COE updates documentation and training for content creators who manage security. For more information, see [Strategy for external users](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-external-users).
-- **Example 3:** The audit data shows that several data models define the same measure differently (available from the [metadata scanning APIs](/power-bi/enterprise/service-admin-metadata-scanning), if allowed by the detailed metadata tenant settings). _Action taken:_ The data governance committee starts a project to define common definitions. The COE updates documentation and training for content creators who create data models. The COE also works with content creators to update their models as appropriate. For more information about obtaining detailed metadata, see [Access tenant inventory data](#access-tenant-inventory-data) later in this article.
+- **Example 1:** The audit data shows that some users frequently export data to Excel. _Action taken:_ The COE contacts the specific users to understand their needs and to teach them better alternatives.
+- **Example 2:** The audit data shows external user access occurs in an unexpected way. _Actions taken:_ An IT system administrator updates the relevant Azure AD settings for external user access. The Power BI administrator updates the tenant setting related to external user access. The COE updates documentation and training for content creators who manage security. For more information, see [Strategy for external users](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-external-users).
+- **Example 3:** The audit data shows that several data models define the same measure differently (available from the [metadata scanning APIs](/power-bi/enterprise/service-admin-metadata-scanning), if allowed by the detailed metadata tenant settings). _Action taken:_ The data governance committee starts a project to define common definitions. The COE updates documentation and training for content creators who create data models. The COE also works with content creators to update their models, as appropriate. For more information about retrieving detailed metadata, see [Access tenant inventory data](#access-tenant-inventory-data) later in this article.
 
-> [!TIP]
+> [!NOTE]
 > The setup of data extraction processes is usually a one-time effort with occasional enhancements and troubleshooting. Analyzing and acting on the data is an ongoing effort that requires continual effort on a recurring basis.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
@@ -345,16 +357,16 @@ Consider several examples.
 **Checklist** - When considering permissions and responsibilities, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Identify which teams are involved:** Determine which teams will be involved with end-to-end creation and support of the auditing solution.
+> - **Identify which teams are involved:** Determine which teams will be involved with the end-to-end creation and support of the auditing solution.
 > - **Decide user permissions:** Determine how user permissions will be set up for accessing audit data. Create documentation of key decisions for later reference.
-> - **Decide roles and responsibilities:** Ensure that expectations are clear for who does what, particularly when multiple teams are involved. Create documentation for roles and responsibilities, including expected actions.
-> - **Assign roles and responsibilities:** Assign specific roles and responsibilities to specific people or teams. Update individual job descriptions with Human Resources when appropriate.
-> - **Create a training plan:** Establish a plan for training personnel if new skills are required.
+> - **Decide roles and responsibilities:** Ensure that expectations are clear for who does what, particularly when multiple teams are involved. Create documentation for roles and responsibilities, which includes expected actions.
+> - **Assign roles and responsibilities:** Assign specific roles and responsibilities to specific people or teams. Update individual job descriptions with Human Resources, when appropriate.
+> - **Create a training plan:** Establish a plan for training personnel when they require new skills.
 > - **Create a cross-training plan:** Ensure that cross-training and backups are in place for key roles.
 
 ### Technical decisions
 
-When you plan for a tenant-level auditing solution, you need to make some important technical decisions. To improve consistency, avoid rework, and improve security, we recommend that you make these decisions as early as possible.
+When you plan for a tenant-level auditing solution, you'll need to make some important technical decisions. To improve consistency, avoid rework, and improve security, we recommend that you make these decisions as early as possible.
 
 The first planning phase involves making the following decisions.
 
@@ -369,18 +381,18 @@ The first planning phase involves making the following decisions.
 
 The first thing you need to decide is _how_ to access the audit data.
 
-Most audit data is accessed by using an API (application program interface). APIs are designed to exchange data over the internet. The [Power BI REST APIs](/rest/api/power-bi/) support requests for data by using the HTTP protocol. Any language or tool can invoke Power BI REST APIs if it's capable of sending an HTTP request and receiving a JSON response.
+Most audit data is accessed by using an API (application program interface). APIs are designed to exchange data over the internet. The [Power BI REST APIs](/rest/api/power-bi/) support requests for data by using the HTTP protocol. Any language or tool can invoke Power BI REST APIs when it's capable of sending an HTTP request and receiving a JSON response.
 
 > [!TIP]
-> The PowerShell cmdlets use the same Power BI REST APIs to access the audit data. For more information, see [Choose APIs or PowerShell cmdlets](#choose-apis-or-powershell-cmdlets) later in this article.
+> The PowerShell cmdlets use the Power BI REST APIs to access the audit data. For more information, see [Choose APIs or PowerShell cmdlets](#choose-apis-or-powershell-cmdlets) later in this article.
 
 This section focuses on your technology choice. For considerations about the source for accessing _specific types_ of audit data, see [Data source decisions](#data-source-decisions) later in this article.
 
 ##### Platform options
 
-There are various ways to access audit data. Depending on the technology you choose, you might need to choose a preferred language. You might also need to make a specific decision on how to schedule the running of your scripts. Different platforms differ widely in their learning curve and ease of getting started.
+There are many different ways to access audit data. Depending on the technology you choose, you might lean toward a preferred language. You might also need to make a specific decision on how to schedule the running of your scripts. Technologies differ widely in their learning curve and ease of getting started.
 
-Here are some technologies you can use to retrieve data from Power BI REST APIs.
+Here are some technologies you can use to retrieve data by using the Power BI REST APIs.
 
 | **Technology** | **Good choice for manual auditing processes** | **Good choice for automated auditing processes** |
 | --- | :-: | :-: |
@@ -395,11 +407,11 @@ Here are some technologies you can use to retrieve data from Power BI REST APIs.
 | Microsoft Sentinel | | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="Microsoft Sentinel is a good choice for automated auditing processes." border="false"::: |
 | Postman | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="Postman is a good choice for manual auditing processes." border="false"::: | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="Postman is a good choice for automated auditing processes." border="false"::: |
 
-The remainder of this section provides a brief introduction to each of the options presented in the above table.
+The remainder of this section provides a brief introduction to each of the options presented in the table.
 
 ###### Try-it in API documentation
 
-[Try-it](https://azure.microsoft.com/updates/power-bi-rest-api-tryit-tool/) is an interactive tool that allows you to experience the Power BI REST API directly in a documentation page. It's an easy way to explore the APIs because it doesn't require other tools or any setup on your machine.
+[Try-it](https://azure.microsoft.com/updates/power-bi-rest-api-tryit-tool/) is an interactive tool that allows you to experience the Power BI REST API directly in Microsoft documentation. It's an easy way to explore the APIs because it doesn't require other tools or any setup on your machine.
 
 You can use Try-it to:
 
@@ -408,7 +420,7 @@ You can use Try-it to:
 - Check data in an informal way.
 
 > [!NOTE]
-> You must be a licensed and authenticated Power BI user to use Try-it. It follows the standard permissions model, meaning that the user APIs rely on user permissions, and the [admin APIs](/rest/api/power-bi/admin) require Power BI administrator permissions. You can't authenticate to Try-it by using a service principal.
+> You must be a licensed and authenticated Power BI user to use Try-it. It follows the standard permissions model, meaning that the user APIs rely on user permissions, and the [admin APIs](/rest/api/power-bi/admin) require Power BI administrator permissions. You can't authenticate with Try-it by using a service principal.
 
 Because it's interactive, Try-it is best suited to learning, exploration, and new manual auditing processes.
 
@@ -416,12 +428,12 @@ Because it's interactive, Try-it is best suited to learning, exploration, and ne
 
 You can create and run [PowerShell](/powershell/scripting/overview) scripts in multiple ways.
 
-Here are a few common options.
+Here are several common options.
 
-- **Visual Studio Code:** [Visual Studio Code](https://code.visualstudio.com/docs) is a modern, lightweight source code editor. It's a freely available open-source tool that's supported on multiple platforms, including Windows, macOS, and Linux. You can use Visual Studio Code with many languages, including [PowerShell](https://code.visualstudio.com/docs/languages/powershell) (by using the PowerShell extension).
-- **Azure Data Studio:** [Azure Data Studio](/sql/azure-data-studio/) is a tool for creating scripts and notebooks. It's built on top of Visual Studio Code. Azure Data Studio is available independently, or with SQL Server Management Studio (SSMS). There are many extensions, including an extension for [PowerShell](/sql/azure-data-studio/extensions/powershell-extension).
-- **Azure Cloud Shell:** [Azure Cloud Shell](/azure/cloud-shell/overview) is an alternative to working with PowerShell locally. You can access [Azure Cloud Shell](/azure/cloud-shell/overview) from a browser.
-- **Azure Functions:** An alternative to working with PowerShell locally is to use [Azure Functions](/azure/azure-functions/functions-reference-powershell). Azure Functions is an Azure service that lets you write and run code in a serverless environment. PowerShell is one of several languages that it supports.
+- **[Visual Studio Code](https://code.visualstudio.com/docs):** A modern, lightweight source code editor. It's a freely available open-source tool that's supported on multiple platforms, including Windows, macOS, and Linux. You can use Visual Studio Code with many languages, including [PowerShell](https://code.visualstudio.com/docs/languages/powershell) (by using the PowerShell extension).
+- **[Azure Data Studio](/sql/azure-data-studio/):** A tool for creating scripts and notebooks. It's built on top of Visual Studio Code. Azure Data Studio is available independently, or with SQL Server Management Studio (SSMS). There are many extensions, including an extension for [PowerShell](/sql/azure-data-studio/extensions/powershell-extension).
+- **[Azure Cloud Shell](/azure/cloud-shell/overview):** An alternative to working with PowerShell locally. You can access [Azure Cloud Shell](/azure/cloud-shell/overview) from a browser.
+- **[Azure Functions](/azure/azure-functions/functions-reference-powershell):** An alternative to working with PowerShell locally. Azure Functions is an Azure service that lets you write and run code in a serverless environment. PowerShell is one of several languages that it supports.
 
 > [!IMPORTANT]
 > We recommend that you use the [latest version](/powershell/scripting/whats-new/differences-from-windows-powershell) of PowerShell (PowerShell Core) for all new development work. You should discontinue using Windows PowerShell (which can't run PowerShell Core) and instead use one of the modern code editors that support PowerShell Core. Take care when referring to many online examples that use Windows PowerShell (version 5.1) because they might not use the latest (and better) code approaches.
@@ -434,14 +446,14 @@ There are many online resources available for using PowerShell, and it's often p
 
 Because Power BI Desktop can connect to APIs, you might be tempted to use it to build your auditing solution. However, there are some significant drawbacks and complexities.
 
-- **Accumulating history:** Because the Power BI activity log provides up to 30 days of data, creating your entire auditing solution involves accumulating a set of files over time that record all the historical events. Accumulating historical files is simpler to accomplish with other tools.
-- **Handling credentials and keys securely:** Many solutions you find online from community bloggers aren't secure because they hard-code credentials and keys in plaintext within Power Query. While that approach is easy, it's not recommended because anyone who obtains your Power BI Desktop file can read the values. You can't store the password (when using user authentication) or the secret (when using a service principal) securely in Power BI Desktop unless you:
-  - Use a custom connector that's been created with the [Power Query SDK](https://marketplace.visualstudio.com/items?itemName=Dakahn.PowerQuerySDK). For example, you could read the confidential values from [Azure Key Vault](/azure/key-vault/general/basic-concepts) or another service that securely stores the encrypted value. There are also various custom connector options available from the global Power BI community.
-  - Use the [ApiKeyName](/powerquery-m/web-contents) option. This option works well in Power BI Desktop. However, it isn't possible to store the key value in the Power BI service.
+- **Accumulating history:** Because the Power BI activity log provides up to 30 days of data, creating your entire auditing solution involves accumulating a set of files over time that store all historical events. Accumulating historical files is simpler to accomplish with other tools.
+- **Handling credentials and keys securely:** Many solutions you find online from community bloggers aren't secure because they hard-code credentials and keys in plaintext within Power Query queries. While that approach is easy, it's not recommended because anyone who obtains your Power BI Desktop file can read the values. You can't store the password (when using user authentication) or the secret (when using a service principal) securely in Power BI Desktop unless you:
+  - Use a custom connector that was developed with the [Power Query SDK](https://marketplace.visualstudio.com/items?itemName=Dakahn.PowerQuerySDK). For example, a custom connector could read confidential values from [Azure Key Vault](/azure/key-vault/general/basic-concepts) or another service that securely stores the encrypted value. There are also various custom connector options available from the global Power BI community.
+  - Use the [ApiKeyName](/powerquery-m/web-contents) option, which works well in Power BI Desktop. However, it isn't possible to store the key value in the Power BI service.
 - **Types of requests:** You might run into some limitations for what you can run in Power BI Desktop. For example, Power Query doesn't support every type of API request. For example, only GET and POST requests are supported when using the [Web.Contents](/powerquery-m/web-contents) function. For auditing, you typically send GET requests.
 - **Ability to refresh:** You need to follow specific Power Query development patterns to successfully refresh a dataset in the Power BI service. For example, the `RelativePath` option must be present when using [Web.Contents](/powerquery-m/web-contents) so that Power BI can properly verify the location of a data source without generating an error in the Power BI service.
 
-In most cases, we recommend that you use Power BI Desktop for two purposes:
+In most cases, we recommend that you use Power BI Desktop only for two purposes. You should use it to:
 
 - Build your data model based on the existing curated data (rather than using it to initially extract the auditing data).
 - Create analytical reports based on your data model.
