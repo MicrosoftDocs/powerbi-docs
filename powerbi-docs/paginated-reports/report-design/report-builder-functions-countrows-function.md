@@ -31,7 +31,7 @@ CountRows(scope, recursive)
  *recursive*  
  (**Enumerated Type**) Optional. **Simple** (default) or **RdlRecursive**. Specifies whether to perform the aggregation recursively.  
   
-## Return Type  
+## Return type  
  Returns an **Integer**.  
   
 ## Remarks
