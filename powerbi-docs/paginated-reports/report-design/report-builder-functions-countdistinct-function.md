@@ -1,6 +1,6 @@
 ---
-title: "CountDistinct function in a paginated report | Microsoft Docs"
-description: Get a count of all distinct non-null values that are specified by an expression in a paginated report in the context of a given scope.
+title: "CountDistinct function in a Power BI paginated report | Microsoft Docs"
+description: Get a count of all distinct non-null values that are specified by an expression in a Power BI paginated report in the context of a given scope.
 ms.date: 04/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
@@ -10,11 +10,11 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: rodolfoc
 ---
-# Report Builder functions - CountDistinct function in a paginated report (Power BI Report Builder)
+# CountDistinct function in a paginated report (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  Returns a count of all distinct non-null values specified by the expression in a paginated report, evaluated in the context of the given scope.  
+  Returns a count of all distinct non-null values specified by the expression in a Power BI paginated report, evaluated in the context of the given scope.  
   
 ## Syntax  
   
