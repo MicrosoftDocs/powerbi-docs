@@ -1,5 +1,5 @@
 ---
-title: "Expression uses in paginated reports | Microsoft Docs"
+title: "Expression uses in Power BI paginated reports | Microsoft Docs"
 description: Specify or calculate values with paginated report expressions for parameters, queries, filters, and text box properties in Power BI Report Builder.
 ms.date: 04/25/2023
 ms.service: powerbi
@@ -14,7 +14,7 @@ ms.reviewer: rodolfoc
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-In paginated reports, expressions are used throughout the report definition to specify or calculate values for parameters, queries, filters, report item properties, group and sort definitions, text box properties, bookmarks, document maps, dynamic page header and footer content, images, and dynamic data source definitions. This topic provides examples of the many places you can use expressions to vary the content or appearance of a report. This list isn't comprehensive. You can set an expression for any property in a dialog box that displays the expression (**fx**) button or in a drop-down list that displays **\<Expression...>**.  
+In Power BI paginated reports, expressions are used throughout the report definition to specify or calculate values for parameters, queries, filters, report item properties, group and sort definitions, text box properties, bookmarks, document maps, dynamic page header and footer content, images, and dynamic data source definitions. This topic provides examples of the many places you can use expressions to vary the content or appearance of a report. This list isn't comprehensive. You can set an expression for any property in a dialog box that displays the expression (**fx**) button or in a drop-down list that displays **\<Expression...>**.  
   
  Expressions can be simple or complex. *Simple expressions* contain a reference to a single dataset field, parameter, or built-in field. Complex expressions can contain multiple built-in references, operators, and function calls. For example, a complex expression might include the Sum function applied to the Sales field.  
   
