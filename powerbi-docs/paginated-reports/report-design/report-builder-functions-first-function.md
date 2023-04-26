@@ -1,22 +1,20 @@
 ---
-title: "First function in a paginated report | Microsoft Docs"
-description: Use the First function in a paginated report to return the first value in the given scope of the specified expression in Power BI Report Builder.
-ms.date: 03/31/2023
+title: "First function in a Power BI paginated report | Microsoft Docs"
+description: Use the First function in a Power BI paginated report to return the first value in the given scope of the specified expression in Power BI Report Builder.
+ms.date: 04/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
 ms.assetid: d0914520-30c5-4d63-9b59-8d9342ed63b9
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: rodolfoc
 ---
-# Report Builder functions - First function in a paginated report (Power BI Report Builder)
+# First function in a paginated report (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  Returns the first value in the given scope of the specified expression in a paginated report.  
+  Returns the first value in the given scope of the specified expression in a Power BI paginated report.  
   
 ## Syntax  
   
@@ -25,17 +23,20 @@ ms.reviewer: rodolfoc
 First(expression, scope)  
 ```  
   
-#### Parameters  
+### Parameters
+
  *expression*  
  (**Variant** or **Binary**) The expression on which to perform the aggregation, for example, `=Fields!FieldName.Value`.  
   
  *scope*  
  (**String**) Optional. The name of a dataset, group, or data region that contains the report items to which to apply the aggregate function. If *scope* isn't specified, the current scope is used.  
   
-## Return Type  
+## Return Type
+
  Determined by the type of expression.  
   
-## Remarks  
+## Remarks
+
  The **First** function returns the first value in a set of data after all sorting and filtering have been applied at the specified scope.  
   
  The **First** function can't be used in group filter expressions with anything except the current (default) scope.  
@@ -58,16 +59,19 @@ First(expression, scope)
   
  For more information about recursive aggregates, see [Creating Recursive Hierarchy Groups &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/creating-recursive-hierarchy-groups-report-builder-and-ssrs).  
   
-## Example  
+## Example
+
  The following code example returns the first product number in the `Category` group of a data region:  
   
 ```  
 =First(Fields!ProductNumber.Value, "Category")  
 ```  
   
-## See Also  
+## See also
+
+ [Expressions in Power BI Report Builder](../report-builder-expressions.md)
+ [Expression examples in Power BI Report Builder](../report-builder-expression-examples.md)
  [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](expression-uses-reports-report-builder.md)   
- [Expression Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)   
  [Data Types in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)   
  [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
   
