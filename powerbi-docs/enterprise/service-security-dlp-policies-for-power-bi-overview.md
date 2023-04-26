@@ -16,6 +16,11 @@ LocalizationGroup: Data from files
 
 To help organizations detect and protect their sensitive data, Power BI supports [Microsoft Purview Data Loss Prevention (DLP) polices](/microsoft-365/compliance/dlp-learn-about-dlp). When a DLP policy for Power BI detects a sensitive dataset, a policy tip can be attached to the dataset in the Power BI service that explains the nature of the sensitive content, and an alert can be registered on the data loss prevention **Alerts** page in the Microsoft Purview compliance portal for monitoring and management by administrators. In addition, email alerts can be sent to administrators and specified users.
 
+This article describes how DLP in Power BI works, lists considerations and limitations as well as licensing and permissions requirements, and explains how DLP CPU usage is metered. For further information, see:
+ 
+* [Configure a DLP policy for Power BI](./service-security-dlp-policies-for-power-bi-configure.md) to see how to configure DLP policies for Power BI.
+* [Respond to a DLP policy violation in Power BI](./service-security-dlp-policies-for-power-bi-respond.md) to see how to respond when a policy tip tells you your dataset has a DLP policy violation.
+
 ## Considerations and limitations
 
 * DLP policies for Power BI are defined in the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149).
@@ -24,7 +29,7 @@ To help organizations detect and protect their sensitive data, Power BI supports
 * DLP policy templates aren't yet supported for Power BI DLP policies. When creating a DLP policy for Power BI, choose the "custom policy" option.
 * Power BI DLP policy rules currently support sensitivity labels and sensitive info types as conditions.
 * DLP policies for Power BI aren't supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections). This includes datasets with mixed storage, where some of the data comes via import-mode and some comes via DirectQuery.
-* [Exact data match (EDM) classifiers](/microsoft-365/compliance/sit-learn-about-exact-data-match-based-sits) and [trainable classifiers](/microsoft-365/compliance/classifier-learn-about) are not supported by DLP for Power BI. If you select an EDM or trainable classifier in the condition of a policy, the policy will yield no results even if the dataset does in fact contain data that satisfies the EDM or trainable classifier. Other classifiers specified in the policy will return results, if any.
+* [Exact data match (EDM) classifiers](/microsoft-365/compliance/sit-learn-about-exact-data-match-based-sits) and [trainable classifiers](/microsoft-365/compliance/classifier-learn-about) aren't supported by DLP for Power BI. If you select an EDM or trainable classifier in the condition of a policy, the policy will yield no results even if the dataset does in fact contain data that satisfies the EDM or trainable classifier. Other classifiers specified in the policy will return results, if any.
 * DLP policies for Power BI aren't supported in the China North region. See [How to find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#how-to-find-the-default-region-for-your-organization) to learn how to find your organization's default data region.
 
 ## Licensing and permissions
@@ -102,8 +107,7 @@ Select an alert to start drilling down to its details and to see management opti
 
 ## Next steps
 
-* [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
-* [Get started with Data loss prevention policies for Power BI](/microsoft-365/compliance/dlp-powerbi-get-started)
-* [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
-* [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)
+* [Configure a DLP policy for Power BI](./service-security-dlp-policies-for-power-bi-configure.md).
+* [Respond to DLP policy violation in Power BI](./service-security-dlp-policies-for-power-bi-respond.md).
 * [Power BI implementation planning: Data loss prevention for Power BI](/power-bi/guidance/powerbi-implementation-planning-data-loss-prevention)
+* [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)

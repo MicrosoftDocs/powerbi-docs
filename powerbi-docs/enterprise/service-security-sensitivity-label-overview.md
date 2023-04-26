@@ -116,9 +116,9 @@ Downstream inheritance is a critical link in Power BI's end-to-end information p
 
 [Read more about downstream inheritance](service-security-sensitivity-label-downstream-inheritance.md)
 
-## Data loss prevention (DLP) policies (preview)
+## Data loss prevention (DLP) policies
 
-Power BI leverages Microsoft 365 data loss prevention to enable central security teams to use data loss prevention policies to enforce their organization's DLP policies in Power BI. See [Data loss prevention policies for Power BI (preview)](service-security-dlp-policies-for-power-bi-overview.md) for detail.
+Power BI leverages Microsoft 365 data loss prevention to enable central security teams to use data loss prevention policies to enforce their organization's DLP policies in Power BI. See [Data loss prevention policies for Power BI](service-security-dlp-policies-for-power-bi-overview.md) for detail.
 
 ## Default label policy
 

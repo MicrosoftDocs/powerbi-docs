@@ -14,30 +14,46 @@ LocalizationGroup: Data from files
 
 # Configure a DLP policy for Power BI
 
+This article describes how to configure a data loss prevention (DLP) policy for Power BI.
+
+## Prerequisites
+
+Before you get started with DLP for Power BI, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). The admin account that sets up the DLP rules must be assigned one of the following licenses:
+
+* Microsoft 365 E5
+* Microsoft 365 E5 Compliance
+* Microsoft 365 E5 Information Protection & Governance
+
+## Configure a policy
+
 1. Log into the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149).
 
-1. Choose the **Data loss prevention** solution in the navigation pane, select the **Policies** tab, choose **Create policy**.
+1. Expand the **Data loss prevention** solution in the navigation pane, select **Policies**, and choose **Create policy**.
 
-    ![Screenshot of D L P create policy page.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create.png" alt-text="Screenshot of D L P create policy page.":::
 
 1. Choose the **Custom** category and then the **Custom policy** template.
     
     >[!NOTE]
     >No other categories or templates are currently supported.
 
-    ![Screenshot of D L P choose custom policy page.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-choose-custom.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-choose-custom.png" alt-text="Screenshot of D L P choose custom policy page.":::
  
     When done, select **Next**.
 
 1. Name the policy and provide a meaningful description.
 
-    ![Screenshot of D L P policy name description section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-name-description.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-name-description.png" alt-text="Screenshot of D L P policy name description section.":::
  
     When done, select **Next**.
 
+1. Select **Next** when you get to the Assign admin units page.
+
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-admin-units.png" alt-text="Screenshot of D L P policy admin units section.":::
+
 1. Enable Power BI as a location for the DLP policy. **Disable all other locations**. Currently, DLP policies for Power BI must specify Power BI as the sole location.
 
-    ![Screenshot of D L P choose location page.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-choose-location.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-choose-location.png" alt-text="Screenshot of D L P choose location page.":::
 
     By default the policy will apply to all workspaces. Alternatively, you can specify particular workspaces to include in the policy as well as workspaces to exclude from the policy.
     >[!NOTE]
@@ -53,35 +69,35 @@ LocalizationGroup: Data from files
 
 1. The **Define policy settings** page appears. Choose **Create or customize advanced DLP rules** to begin defining your policy.
 
-    ![Screenshot of D L P create advanced rule page.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create-advanced-rule.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create-advanced-rule.png" alt-text="Screenshot of D L P create advanced rule page.":::
  
     When done, select **Next**.
 
 1. On the **Customize advanced DLP rules** page, you can either start creating a new rule or choose an existing rule to edit. Select **Create rule**.
 
-    ![Screenshot of D L P create rule page.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create-rule.png)
-
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create-rule.png" alt-text="Screenshot of D L P create rule page.":::
 
 1. The **Create rule** page appears. On the create rule page, provide a name and description for the rule, and then configure the other sections, which are described following the image below.
 
-    ![Screenshot of D L P create rule form.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create-rule-form.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-create-rule-form.png" alt-text="Screenshot of D L P create rule form.":::
  
 ## Conditions
 
 In the condition section, you define the conditions under which the policy will apply to a dataset. Conditions are created in groups. Groups make it possible to construct complex conditions.
 
-1. Open the conditions section, choose **Add condition** and then **Content contains**.
+1. Open the conditions section. Choose **Add condition** if you want to create a simple or complex condition, or **Add group** if you want to start creating a complex condition.
 
-    ![Screenshot of D L P add conditions content contains section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-add-conditions-content-contains.png)
- 
-    This opens the first group (named Default – you can change this).
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-add-conditions-content-contains.png" alt-text="Screenshot of D L P add conditions content contains section.":::
 
-1. Choose **Add**, and then chose either **Sensitive info types** or **Sensitivity labels**.
-    
-    ![Screenshot of D L P add conditions section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-add-conditions.png)
+    For more information about using the condition builder, see [Complex rule design](/microsoft-365/compliance/dlp-policy-design#complex-rule-design).
 
-    >[!NOTE]
-    > Currently, DLP policies for Power BI don't support scanning for sensitive info types in data stored in the Southeast Asia region. See [How to find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#how-to-find-the-default-region-for-your-organization) to learn how to find your organization's default data region.
+1. If you chose **Add condition**, next choose **Content contains**, then **Add**, and then either **Sensitive info types** or **Sensitivity labels**.
+
+    If you started with **Add group**, you'll eventually get to **Add condition**, after which you continue as described above.
+
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-add-conditions.png" alt-text="Screenshot of D L P add conditions section.":::
+
+     If you started with **Add group**, you'll eventually get to **Add condition**, after which you continue as described above.
  
     When you choose either **Sensitive info types** or **Sensitivity labels**, you'll be able to choose the particular sensitivity labels or sensitive info types you want to detect from a list that will appear in a sidebar.
 
@@ -95,21 +111,21 @@ In the condition section, you define the conditions under which the policy will 
 
     The image below shows a group (Default) that contains two sensitivity label conditions. The logic Any of these means that a match on any one of the sensitivity labels in the group constitutes “true” for that group.
 
-    ![Screenshot of D L P conditions group section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-condition-group.png) 
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-condition-group.png" alt-text="Screenshot of D L P conditions group section.":::
  
+    You can use the Quick summary toggle to get the logic of the rule summarized in a sentence.
+
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-condition-quick-summary.png" alt-text="Screenshot of D L P conditions quick summary.":::
+
     You can create more than one group, and you can control the logic between the groups with **AND** or **OR** logic. 
 
     The image below shows a rule containing two groups, joined by **OR** logic.
 
-    ![Screenshot of rule with two groups.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-content-contains.png) 
- 
-## Exceptions
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-content-contains.png" alt-text="Screenshot of rule with two groups.":::
 
-If the dataset has a sensitivity label or sensitive info type that matches any of the defined exceptions, the rule won’t be applied to the dataset. 
+    Here's the same rule shown as a quick summary.
 
-Exceptions are configured in the same way as conditions, described above.
-    
-![Screenshot of D L P exceptions section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-exceptions-section.png)
+    :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-content-contains-quick-summary.png" alt-text="Screenshot of quick summary of rule with two groups.":::
  
 ## Actions
 
@@ -117,12 +133,11 @@ Protection actions are currently unavailable for Power BI DLP policies.
 
 ![Screenshot of D L P policy actions section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-actions-section.png)
 
-
 ## User notifications
 
 The user notifications section is where you configure your policy tip. Turn on the toggle, select the **Notify users in Office 365 service with a policy tip** and **Policy tips** checkboxes, and write your policy tip in the text box.
 
-![Screenshot of D L P user notification section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-user-notification.png)
+:::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-user-notification.png" alt-text="Screenshot of D L P user notification section.":::
  
 ## User overrides
  
@@ -134,7 +149,7 @@ The options are described below.
 
 * **Allow overrides from M365 services. Allows users in Power BI, Exchange, SharePoint, OneDrive, and Teams to override policy restrictions** (automatically selected when you've enabled user notifications and selected the **Notify users in Office 365 service with a policy tip** checkbox): Users will be able to either report the issue as a false positive or override the policy.
 
-* **Require a business justification to override**: Users will be able to either report the issue as a false positive or override the policy. If they choose to override, they will need to provide a business justification.
+* **Require a business justification to override**: Users will be able to either report the issue as a false positive or override the policy. If they choose to override, they'll need to provide a business justification.
 
 * **Override the rule automatically if they report it as a false positive**: Users will be able to report the issue as a false positive and automatically override the policy, or they can just override the policy without reporting it as a false positive.
 
@@ -150,16 +165,15 @@ Any action the user takes is logged for reporting.
 
 Assign a severity level that will be shown in alerts generated from this policy. Enable (default) or disable email notification to admins, specify users or groups for email notification, and configure the details about when notification will occur.
 
-![Screenshot of D L P incident report section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-incidence-report.png)
+:::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-incidence-report.png" alt-text="Screenshot of D L P incident report section.":::
    
 ## Additional options
 
-![Screenshot of D L P additional options section.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-additional-options.png)
+:::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-additional-options.png" alt-text="Screenshot of D L P additional options section.":::
 
 ## Next steps
 
-* [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
-* [Get started with Data loss prevention policies for Power BI](/microsoft-365/compliance/dlp-powerbi-get-started)
-* [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
-* [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)
+* [Data loss prevention policies for Power BI](./service-security-dlp-policies-for-power-bi-overview.md).
+* [Respond to DLP policy violation in Power BI](./service-security-dlp-policies-for-power-bi-respond.md).
 * [Power BI implementation planning: Data loss prevention for Power BI](/power-bi/guidance/powerbi-implementation-planning-data-loss-prevention)
+* [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
