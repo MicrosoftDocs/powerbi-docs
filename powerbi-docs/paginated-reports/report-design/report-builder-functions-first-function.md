@@ -31,7 +31,7 @@ First(expression, scope)
  *scope*  
  (**String**) Optional. The name of a dataset, group, or data region that contains the report items to which to apply the aggregate function. If *scope* isn't specified, the current scope is used.  
   
-## Return Type
+## Return type
 
  Determined by the type of expression.  
   
