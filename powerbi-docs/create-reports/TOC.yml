@@ -644,6 +644,22 @@
         href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
       - name: Set time-out values for paginated report dataset processing
         href: ../paginated-reports/report-design/setting-time-out-values-for-report-dataset-processing.md
+    - name: Expressions
+      items:
+      - name: Expressions in Power BI Report Builder
+        href: ../paginated-reports/report-builder-expressions.md
+      - name: Expression examples
+        href: ../paginated-reports/report-builder-expression-examples.md
+      - name: Expression uses
+        href: ../paginated-reports/report-design/expression-uses-reports-report-builder.md
+      - name: "Built-in collections: Report and group variables references"
+        href: ../paginated-reports/report-design/built-in-collections-report-group-variables-references-report-builder.md
+      - name: CountDistinct function
+        href: ../paginated-reports/report-design/report-builder-functions-countdistinct-function.md
+      - name: CountRows function
+        href: ../paginated-reports/report-design/report-builder-functions-countrows-function.md
+      - name: First function
+        href: ../paginated-reports/report-design/report-builder-functions-first-function.md
     - name: Parameters
       items:
       - name: Parameters
@@ -722,8 +738,6 @@
       href: ../paginated-reports/paginated-reports-samples.md
     - name: Plan to migrate .rdl reports to Power BI
       href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
-    - name: Expression examples
-      href: ../paginated-reports/report-builder-expression-examples.md
     - name: Report pagination
       href: ../paginated-reports/paginated-reports-pagination.md
     - name: Default system credentials for web proxy
