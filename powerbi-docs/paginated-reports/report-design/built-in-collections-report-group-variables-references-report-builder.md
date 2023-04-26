@@ -1,6 +1,6 @@
 ---
-title: "Report and group variables collections references in a paginated report | Microsoft Docs"
-description: Create a variable with a unique name when you have a complex calculation that you use in a paginated report more than once. 
+title: "Report and group variables collections references in a Power BI paginated report | Microsoft Docs"
+description: Create a variable with a unique name when you have a complex calculation that you use in a Power BI paginated report more than once. 
 ms.date: 03/31/2023
 ms.service: powerbi
 ms.subservice: report-builder
@@ -25,7 +25,7 @@ ms.reviewer: rodolfoc
 
   When you have a complex calculation that is used more than once in expressions in a paginated report, you might want to create a variable. You can create a report variable or a group variable. Variable names must be unique in a report.  
   
-## Report Variables  
+## Report variables  
  Use a report variable to hold a value for time-dependent calculations, such as currency rates or time stamps, or for a complex calculation that is referenced multiple times. By default, a report variable is calculated once and can be used in expressions throughout a report. Report variables are read-only by default. You can change the default to enable a report variable as read-write. The value in a report variable is preserved throughout a session, until the report is processed again.  
   
  To add a report variable, open the **ReportProperties** dialog box, select **Variables**, and provide a name and a value. Names are case-sensitive strings that begin with a letter and have no spaces. A name can include letters, numbers, or underscores (_).  
@@ -47,7 +47,7 @@ ms.reviewer: rodolfoc
   
  For more information about sessions, see [Previewing Reports in Report Builder](/sql/reporting-services/report-builder/previewing-reports-in-report-builder).  
   
-## Group Variables  
+## Group variables  
  Use a group variable to calculate a complex expression once in the scope of a group. A group variable is valid only in the scope of the group and its child groups.  
   
  For example, suppose a data region displays inventory data for items that are in different tax categories and you want to apply different tax rates for each category. You would group the data on Category and define a *Tax* variable on the parent group. Then you would define a group variable for *ItemTax* for each tax category and assign each of the different Category subgroups to the correct group variable. For example:  
@@ -64,7 +64,7 @@ ms.reviewer: rodolfoc
   
  To refer to the variable in an expression, use the global collection syntax, for example, `=Variables!GroupDescription.Value`. On the design surface, the value appears in a text box as `<<Expr>>`.  
   
-## See Also  
+## See also  
  [Filter, Group, and Sort Data &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
  [Built-in Collections in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/built-in-collections-in-expressions-report-builder)   
  [Expression Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)  
