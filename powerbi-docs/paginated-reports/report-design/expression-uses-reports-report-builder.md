@@ -1,14 +1,10 @@
 ---
 title: "Expression uses in paginated reports | Microsoft Docs"
 description: Specify or calculate values with paginated report expressions for parameters, queries, filters, and text box properties in Power BI Report Builder.
-ms.date: 03/31/2023
+ms.date: 04/25/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
-helpviewer_keywords: 
-  - "expressions [Reporting Services], about expressions"
 ms.assetid: 76b9ed31-5aec-40fc-bb88-a1c1b0ab3fc3
 author: maggiesMSFT
 ms.author: maggies
@@ -24,7 +20,7 @@ In paginated reports, expressions are used throughout the report definition to s
   
  Expressions are written in [!INCLUDE[msCoName](../../includes/msconame-md.md)] Visual Basic. An expression begins with an equal sign (=) followed by a combination of references to built-in collections such as dataset fields and parameters, constants, functions, and operators.  
   
-##  <a name="Simple"></a> Using Simple Expressions  
+##  <a name="Simple"></a> Use simple expressions  
  Simple expressions appear on the design surface and in dialog boxes in brackets, for example, a dataset field appears as `[ProductID]`. Simple expressions are created for you automatically when you drag a field from a dataset onto a text box. A placeholder is created and the expression defines the underlying value. You can also type expressions directly into a data region cell or text box, both on the design surface or in a dialog box (for example, `[ProductID]`).  
   
  The following table lists examples of the ways you can use simple expressions. The table describes the functionality, the property to set, the dialog box you typically use to set it, and the value for the property. You can type the simple expression directly on the design surface, in a dialog box, or in the Properties pane, or you can edit it in the Expression dialog box, just as you would with any expression.  
@@ -43,7 +39,7 @@ In paginated reports, expressions are used throughout the report definition to s
 |Link a query parameter to a report parameter.|Parameters collection on the dataset. Use **Dataset Properties Dialog Box, Parameters**.|`[@Category]`<br /><br /> `[@Category]`|  
 |Pass a parameter from a main report to a subreport.|Parameters collection on the subreport. Use **Subreport Properties Dialog Box, Parameters**.|`[@Category]`<br /><br /> `[@Category]`|  
   
-##  <a name="Complex"></a> Using Complex Expressions  
+##  <a name="Complex"></a> Use complex expressions  
  Complex expressions can contain multiple built-in references, operators, and function calls, and appear on the design surface as `<<Expr>>`. To see or change the expression text, you must open the **Expression** dialog box or type directly in the Properties pane. The following table lists typical ways you can use a complex expression to display or organize data or change report appearance, including the property to set, the dialog box you typically use to set it, and the value for the property. You can type an expression directly into a dialog box, on the design surface, or in the Properties pane.  
   
 |Functionality|Property, Context, and Dialog Box|Property Value|  
@@ -63,10 +59,11 @@ In paginated reports, expressions are used throughout the report definition to s
 |Specify a date formatted for a specific culture.|Value for a placeholder inside of a text box in a data region. Use **Textbox Properties Dialog Box, General**.|`=Fields!OrderDate.Value.ToString(System.Globalization.CultureInfo.CreateSpecificCulture("de-DE"))`|  
 |Concatenate a string and a number formatted as a percentage to two decimal places.|Value for a placeholder inside of a text box in a data region. Use **Textbox Properties Dialog Box, General**.|`="Growth Percent: " & Format(Fields!Growth.Value,"p2")`|  
   
-## See Also  
- [Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs)   
- [Expression Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)   
- [Report Parameters &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer)   
+## See also  
+
+ [Expressions (Power BI Report Builder)](../report-builder-expressions.md)   
+ [Expression Examples (Power BI Report Builder)](../report-builder-expression-examples.md)   
+ [Report Parameters (Power BI Report Builder)](../parameters/report-builder-parameters.md)   
  [Filter Equation Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs)   
  [Filter, Group, and Sort Data &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
  [Page Headers and Footers &#40;Report Builder and SSRS&#41;](page-headers-footers-report-builder-service.md)   
