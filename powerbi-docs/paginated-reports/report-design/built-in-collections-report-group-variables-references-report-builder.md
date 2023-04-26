@@ -4,6 +4,7 @@ description: Create a variable with a unique name when you have a complex calcul
 ms.date: 4/25/2023
 ms.service: powerbi
 ms.subservice: report-builder
+ms.topic: conceptual
 ms.assetid: 4be5b463-3ce2-483d-a3c6-dae752cb543e
 author: maggiesMSFT
 ms.author: maggies
