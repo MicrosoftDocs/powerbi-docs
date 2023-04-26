@@ -1,4 +1,4 @@
-﻿- name: "Create reports and dashboards in Power BI"
+- name: "Create reports and dashboards in Power BI"
   href: index.yml
   items:
   - name: Overview
