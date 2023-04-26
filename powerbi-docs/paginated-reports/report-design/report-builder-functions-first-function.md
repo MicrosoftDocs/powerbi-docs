@@ -1,5 +1,5 @@
 ---
-title: "First function in a Power BI paginated report | Microsoft Docs"
+title: First function in a Power BI paginated report | Microsoft Docs
 description: Use the First function in a Power BI paginated report to return the first value in the given scope of the specified expression in Power BI Report Builder.
 ms.date: 04/26/2023
 ms.service: powerbi

@@ -1,5 +1,5 @@
 ---
-title: "CountDistinct function in a Power BI paginated report | Microsoft Docs"
+title: CountDistinct function in a Power BI paginated report | Microsoft Docs
 description: Get a count of all distinct non-null values that are specified by an expression in a Power BI paginated report in the context of a given scope.
 ms.date: 04/26/2023
 ms.service: powerbi

@@ -1,5 +1,5 @@
 ---
-title: "Report and group variables collections references in a Power BI paginated report | Microsoft Docs"
+title: Report and group variables collections references in a Power BI paginated report | Microsoft Docs
 description: Create a variable with a unique name when you have a complex calculation that you use in a Power BI paginated report more than once. 
 ms.date: 4/25/2023
 ms.service: powerbi

@@ -1,5 +1,5 @@
 ---
-title: "CountRows function in a Power BI paginated report | Microsoft Docs"
+title: CountRows function in a Power BI paginated report | Microsoft Docs
 description: Learn about the CountRows function, which returns the number of rows in a specified scope, including rows with null values in a Power BI paginated report. 
 ms.date: 04/26/2023
 ms.service: powerbi

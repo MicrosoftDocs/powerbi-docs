@@ -652,7 +652,7 @@
         href: ../paginated-reports/report-builder-expression-examples.md
       - name: Expression uses
         href: ../paginated-reports/report-design/expression-uses-reports-report-builder.md
-      - name: "Built-in collections: Report and group variables references"
+      - name: Built-in collections: Report and group variables references
         href: ../paginated-reports/report-design/built-in-collections-report-group-variables-references-report-builder.md
       - name: CountDistinct function
         href: ../paginated-reports/report-design/report-builder-functions-countdistinct-function.md
