@@ -1,19 +1,9 @@
 ---
 title: "Report and group variables collections references in a Power BI paginated report | Microsoft Docs"
 description: Create a variable with a unique name when you have a complex calculation that you use in a Power BI paginated report more than once. 
-ms.date: 03/31/2023
+ms.date: 4/25/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
-ms.topic: conceptual
-f1_keywords: 
-  - "10404"
-  - "10083"
-  - "sql13.rtp.rptdesigner.categorygroupproperties.variables.f1"
-  - "sql13.rtp.rptdesigner.reportproperties.variables.f1"
-  - "10292"
-  - "sql13.rtp.rptdesigner.seriesgroupproperties.variables.f1"
 ms.assetid: 4be5b463-3ce2-483d-a3c6-dae752cb543e
 author: maggiesMSFT
 ms.author: maggies
