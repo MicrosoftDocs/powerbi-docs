@@ -55,7 +55,7 @@ ms.reviewer: rodolfoc
   
  To refer to the variable in an expression, use the global collection syntax, for example, `=Variables!GroupDescription.Value`. On the design surface, the value appears in a text box as `<<Expr>>`.  
   
-## See also
+## Next steps
 
 - [Expressions in Power BI Report Builder](../report-builder-expressions.md)
 - [Expression examples in Power BI Report Builder](../report-builder-expression-examples.md)
