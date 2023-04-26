@@ -1,7 +1,7 @@
 ---
 title: "CountRows function in a Power BI paginated report | Microsoft Docs"
 description: Learn about the CountRows function, which returns the number of rows in a specified scope, including rows with null values in a Power BI paginated report. 
-ms.date: 03/31/2023
+ms.date: 04/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -52,12 +52,10 @@ CountRows(scope, recursive)
 ="Number of rows: " & CountRows("GroupbyCategory")  
 ```  
   
-## See also
+## Next steps
 
- [Expressions in Power BI Report Builder](../report-builder-expressions.md)
- [Expression examples in Power BI Report Builder](../report-builder-expression-examples.md)
- [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](expression-uses-reports-report-builder.md)   
- [Data Types in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)   
- [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
-  
-  
+- [Expressions in Power BI Report Builder](../report-builder-expressions.md)
+- [Expression examples in Power BI Report Builder](../report-builder-expression-examples.md)
+- [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](expression-uses-reports-report-builder.md)   
+- [Data Types in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)   
+- [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
