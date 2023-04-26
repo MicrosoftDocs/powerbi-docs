@@ -158,7 +158,7 @@ The following table provides several examples.
 
 Because auditing data contains information about actual user activities, it can help you [manage costs](powerbi-adoption-roadmap-system-oversight.md#cost-management) in various ways.
 
-You can used the auditing data to:
+You can use the auditing data to:
 
 - **Understand the mix of user licenses:** To reduce cost, consider reassigning unused [user licenses](/power-bi/fundamentals/service-features-license-type) (Pro or PPU) to other users. You may also be able to reassign a user to a Free user license. When there are many consumers who only view content, it can be more cost effective to use a [Power BI Premium](/power-bi/fundamentals/service-features-license-type#premium-capacity) (P SKU) capacity with Free user licenses (known as unlimited content distribution).
 - **Assess the use of capacity licenses:** Assess whether a Power BI capacity (purchased with a P SKU, EM SKU, or A SKU) is [sized](/power-bi/enterprise/service-premium-what-is#capacity-nodes) appropriately for your workload and usage patterns. To balance cost with decentralized management needs, you might consider using multiple decentralized capacities (for example, three P1 capacities that are each managed by a different team). To reduce cost, you might provision one larger capacity (for example, a P3 capacity that's managed by a centralized team).

@@ -68,7 +68,7 @@ When you plan to build a tenant-level auditing solution, plan to spend time on t
 
 The first phase focuses on planning and decision-making. There are many requirements and priorities to consider, so we recommend that you spend sufficient time to understand the topics introduced in this section. The goal is to make good upfront decisions so that the downstream phases run smoothly.
 
-:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-1.png" alt-text="Image shows a flow diagram describing Phase 1, which focuses on planning and decisions for building a tenant-level auditing solution." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-1.png" alt-text="Flow diagram describing Phase 1, which focuses on planning and decisions for building a tenant-level auditing solution." border="false":::
 
 ### Requirements and priorities
 
@@ -1372,7 +1372,7 @@ For more information about the other types of APIs, see [Choose a user API or ad
 
 The second phase of planning and implementing a tenant-level auditing solution focuses on prerequisites and setup that must be done before you begin solution development.
 
-:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-2.png" alt-text="Image shows a flow diagram describing Phase 2, which focuses on prerequisites and setup for building a tenant-level auditing solution." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-2.png" alt-text="Flow diagram describing Phase 2, which focuses on prerequisites and setup for building a tenant-level auditing solution." border="false":::
 
 ### Create storage account
 
@@ -1485,7 +1485,7 @@ For more information about the tenant settings for usage metrics, see [Report-le
 
 The third phase of planning and implementing a tenant-level auditing solution focuses on solution development and analytics. At this point, all the planning and decision-making has occurred, and you've met prerequisites and completed the setup. You're now ready to begin solution development so that you can perform analytics and gain insights from your auditing data.
 
-:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-3.png" alt-text="Image shows a flow diagram describing Phase 3, which focuses on solution development and analytics of a tenant-level auditing solution." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-3.png" alt-text="Flow diagram describing Phase 3, which focuses on solution development and analytics of a tenant-level auditing solution." border="false":::
 
 ### Extract and store the raw data
 
@@ -1769,7 +1769,7 @@ The specific actions to be taken in each situation will depend on your governanc
 
 The fourth phase of planning and implementing a tenant-level auditing solution focuses on maintenance, enhancements, and monitoring. At this point, your auditing solution is in production use. You're now primarily concerned with maintaining, enhancing, and monitoring the solution.
 
-:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-4.png" alt-text="Image shows a flow diagram describing Phase 4, which focuses on maintaining, enhancing, and monitoring a tenant-level auditing solution." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-4.png" alt-text="Flow diagram describing Phase 4, which focuses on maintaining, enhancing, and monitoring a tenant-level auditing solution." border="false":::
 
 ### Operationalize and improve
 
