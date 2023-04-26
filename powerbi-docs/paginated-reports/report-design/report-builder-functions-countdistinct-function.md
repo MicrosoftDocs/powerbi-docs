@@ -1,11 +1,9 @@
 ---
 title: "CountDistinct function in a paginated report | Microsoft Docs"
 description: Get a count of all distinct non-null values that are specified by an expression in a paginated report in the context of a given scope.
-ms.date: 03/31/2023
+ms.date: 04/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
 ms.assetid: 902c251e-e1e8-41d2-ac20-5bb6138ac410
 author: maggiesMSFT
@@ -25,7 +23,8 @@ ms.reviewer: rodolfoc
 CountDistinct(expression, scope, recursive)  
 ```  
   
-#### Parameters  
+### Parameters
+
  *expression*  
  (**Variant**) The expression on which to perform the aggregation.  
   
@@ -35,7 +34,7 @@ CountDistinct(expression, scope, recursive)
  *recursive*  
  (**Enumerated Type**) Optional. **Simple** (default) or **RdlRecursive**. Specifies whether to perform the aggregation recursively.  
   
-## Return Type  
+## Return type  
  Returns an **Integer**.  
   
 ## Remarks  
@@ -66,9 +65,11 @@ CountDistinct(expression, scope, recursive)
 "Distinct count (Category): " & CountDistinct(Fields!Size.Value,"GroupbyCategory")  
 ```  
   
-## See Also  
+## See also
+
+ [Expressions in Power BI Report Builder](../report-builder-expressions.md)
+ [Expression examples in Power BI Report Builder](../report-builder-expression-examples.md)
  [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](expression-uses-reports-report-builder.md)   
- [Expression Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)   
  [Data Types in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)   
  [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
   
