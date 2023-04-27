@@ -833,10 +833,10 @@ There are some limitations concerning attachments related to licensing and tenan
 > - **Verify workspace access:** Confirm the workspace design approach. Verify how to use the workspace access roles to support your strategy for where content should be published.
 > - **Determine how to handle deployment pipeline permissions:** Decide which users are permitted to publish content by using a deployment pipeline. Set the deployment pipeline permissions accordingly. Ensure that workspace access is also provided as well.
 > - **Decide who can connect to datasets by using the XMLA endpoint:** Decide which users are permitted to query or manage datasets by using the XMLA endpoint. Set the _Allow XMLA endpoints and Analyze in Excel with on-premises datasets_ tenant setting to align with this decision. When you decide to limit this capability, consider using a group such as _Power BI approved content creators_.
-> - **Decide who can publish reports publicly:** Decide which users are permitted to publish Power BI reports publicly, if any. Set the *Publish to web* tenant setting to align with this decision. Use a group such as _Power BI public publishing_.
+> - **Decide who can publish reports publicly:** Decide which users are permitted to publish Power BI reports publicly, if any. Set the _Publish to web_ tenant setting to align with this decision. Use a group such as _Power BI public publishing_.
 > - **Decide who can embed content in custom apps:** Determine who should be allowed to embed content outside of the Power BI service. Set the _Embed content in apps_ tenant setting to align with this decision.
 > - **Decide who can embed content in PowerPoint:** Determine who should be allowed to embed content in PowerPoint. Set the _Enable Power BI add-in for PowerPoint_ tenant setting to align with this decision.
-> - **Decide who can publish template apps:** Determine what your strategy is for using template apps outside of the organization. Set the *Publish template apps* tenant setting to align with this decision.
+> - **Decide who can publish template apps:** Determine what your strategy is for using template apps outside of the organization. Set the _Publish template apps_ tenant setting to align with this decision.
 > - **Decide whether to enable subscriptions:** Confirm what your strategy is for using subscriptions. Set the _Email Subscriptions_ tenant setting to align with this decision.
 
 ## Refresh data
