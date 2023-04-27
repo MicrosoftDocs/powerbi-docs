@@ -340,7 +340,7 @@ sections:
           
           Because Power BI Embedded allows Power BI portal use for managing and validating embedded content, the Power BI Pro or Premium Per User (PPU) license is required to authenticate the app inside PowerBI.com to get access to the reports in the right repositories.
           
-          However, for [creating/editing embedded reports](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) inside your application, the end user does not need a Pro or Premium Per User (PPU) license as the user isn't required to be a Power BI user at all.
+          However, for [creating/editing embedded reports](/javascript/api/overview/powerbi/create-edit-report-embed-view?tabs=embed-for-your-customers) inside your application, the end user does not need a Pro or Premium Per User (PPU) license as the user isn't required to be a Power BI user at all.
           
       - question: |
           Can I get started for free?
