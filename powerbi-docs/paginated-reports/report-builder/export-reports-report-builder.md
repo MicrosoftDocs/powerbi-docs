@@ -27,8 +27,7 @@ You can export a Power BI paginated report to another file format, such as Power
     
  Report pagination might be affected when you export a report to a different format. When you preview a report, you are viewing the report as it is rendered by the HTML rendering extension, which follows soft-page break rules. When you export a report to a different file format, such as Adobe Acrobat (PDF), pagination is based on the physical page size, which follows hard-page break rules. Pages can also be separated by logical page breaks that you add to a report, but the actual length of a page varies based on the renderer type that you use. To change the pagination of your report, you must understand the pagination behavior of the rendering extension you choose. You might need to adjust the design of your report layout for this rendering extension. For more information see, [Page layout and rendering](/sql/reporting-services/report-design/page-layout-and-rendering-report-builder-and-ssrs).  
   
-> [!NOTE]  
-> You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.
+
 
 ## <a name="bkmk_export_from_rb"></a> Export a report from Power BI Report Builder
 
