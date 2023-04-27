@@ -189,7 +189,7 @@ The following screenshot shows an example of setting up custom instructions that
 
 :::image type="content" source="media/powerbi-implementation-planning-security-content-creator-planning/request-access-instructions.png" alt-text="Screenshot of the request access setting for a dataset in the Power BI service." border="false":::
 
-There are many options to create a form. [Power Apps](/power-apps/powerapps-overview) and [Microsoft Forms](/microsoft-365/online-surveys-polls-quizzes) are both low-code, easy-to-use options. We recommend that you create a form in a way that's independent of a single user. It's crucial that your form is created, managed, and monitored by the proper team.
+There are many options to create a form. [Power Apps](/power-apps/powerapps-overview) and [Microsoft Forms](/microsoft-forms/set-up-microsoft-forms) are both low-code, easy-to-use options. We recommend that you create a form in a way that's independent of a single user. It's crucial that your form is created, managed, and monitored by the proper team.
 
 We recommend that you create helpful information for:
 
