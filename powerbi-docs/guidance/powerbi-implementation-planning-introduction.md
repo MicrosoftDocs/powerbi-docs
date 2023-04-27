@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.custom: video-RWUWA9
 ms.topic: conceptual
-ms.date: 02/19/2023
+ms.date: 04/17/2023
 ---
 
 # Power BI implementation planning
@@ -39,7 +39,7 @@ When you implement Power BI, there are many subject areas to consider. The follo
 - Power BI Premium
 - Gateways
 - Integration with other services
-- Auditing and monitoring
+- [Auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md)
 - Adoption tracking
 - Scaling and growing
 
