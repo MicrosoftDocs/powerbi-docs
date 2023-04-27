@@ -85,7 +85,7 @@ The following permissions are commonly required for creating new content.
 | **Access where original Power BI Desktop file is stored** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | |
 | **Permission to use custom visuals** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | | |
 
-#### Publishing content
+#### Publishing content permissions
 
 The following permissions are commonly required for publishing content.
 
