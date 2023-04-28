@@ -68,7 +68,7 @@ This process is how you create parameters for any data you might want to work wi
 
 There are a couple considerations and limitations for parameters to keep in mind:
 
-* Parameters can only be used with value ranges between 0 and 1,000. For ranges greater than 1,000, the parameter value will be sampled.
+* Parameters can only have 1,000 unique values. For parameters with more than 1,000 unique values, the parameter values will be evenly sampled.
 
 * Parameters are designed for measures within visuals, and might not calculate properly when used in a dimension calculation.
 

@@ -7,6 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.date: 01/31/2023
+ms.search.form: Deployment pipelines operations
 ---
 
 # Compare content in different deployment stages

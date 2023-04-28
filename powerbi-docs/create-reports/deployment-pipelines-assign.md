@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
 ms.date: 04/02/2023
-ms.search.form: Assign a workspace to a vacant stage
+ms.search.form: Deployment pipelines operations
 ---
 
 # Assigning a workspace to a Power BI Application lifecycle management (ALM) deployment pipeline

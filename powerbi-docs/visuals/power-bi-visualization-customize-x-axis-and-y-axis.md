@@ -10,7 +10,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to 
-ms.date: 03/29/2023
+ms.date: 04/17/2023
 LocalizationGroup: Visualizations
 ---
 
@@ -242,9 +242,7 @@ For line, bar, column, area, and combo charts, you can invert the y-axis, puttin
 
 ## Considerations and limitations
 
-- For continuous axis tick marks, you cannot control the format string. Power BI chooses the best tick interval based on your data range, and creates a minimal format string for this unit interval, to preserve space. 
-
-- Date values will be localized based on your system or browser locale.
+- For continuous axis tick marks, you cannot control the format string. Power BI chooses the best tick interval based on your data range, and creates a minimal format string for this unit interval, to preserve space. Date values will be localized based on your system or browser locale.
 
 ## Next steps
 

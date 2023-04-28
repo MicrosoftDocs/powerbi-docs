@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/22/2022
+ms.date: 04/18/2023
 ---
 
 # Power BI Report Builder change log
@@ -18,6 +18,17 @@ Learn about new items, bug fixes, and known issues for each release of Power BI 
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
 
+## April 2023
+
+Version 15.7.1802.126, released April 4, 2023
+
+### Features
+
+- Fix issue which caused crash when adding chart visuals.
+- Fix issue with Finnish localization.
+- Fix issue with DAX query designer used against PBI datasets.
+- Accessibility fixes.
+
 ## November 2022
 
 Version 15.7.1801.18, released November 22, 2022
@@ -26,6 +37,7 @@ Version 15.7.1801.18, released November 22, 2022
 
 - Added tool version metadata to generated RDL file.
 	
+
 Version 15.7.1800.11, released November 2, 2022
 
 ### Bug fixes
@@ -34,7 +46,7 @@ Version 15.7.1800.11, released November 2, 2022
 - Fixed accessibility issues.
 
 ## August 2022
-	
+
 Version 15.7.1799.16, released August 18, 2022
 
 ### Features
@@ -43,16 +55,15 @@ Version 15.7.1799.16, released August 18, 2022
 - Updated versions of some utilized open-source software projects.
 
 ### Bug fixes 
-	
+
 - Fixed several accessibility issues across the application.
 - Fixed issue where parameters could get duplicated.
 
 ## July 2022
-	
+
 Version 15.7.1798.91, released July 18, 2022
-	
 ### Bug fixes 
-	
+
 - Fixed several localization issues with strings only displaying in English.
 - Fixed issue related to 407 proxy authentication.
 - Fixed issue related to parameter formulas when validating query.
@@ -148,6 +159,7 @@ Version 15.6.01487.0002, released January 26, 2021
 - Error when connecting to the workspace through XMLA endpoint when workspace name contains plus sign (+).  
 
 ### Other 
+
 See the January 2021 Power BI Report Builder blog post for the complete list of new and updated features.
 
 ## September 2020 
@@ -175,3 +187,5 @@ See the September 2020 Power BI Report Builder blog post for the complete list o
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  
 - [Tutorial: Create a paginated report and upload it to the Power BI service](paginated-reports-quickstart-aw.md)
 - [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md)
+
+
