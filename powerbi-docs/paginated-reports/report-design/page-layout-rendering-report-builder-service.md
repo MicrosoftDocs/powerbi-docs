@@ -1,7 +1,7 @@
 ---
 title: "Page layout and rendering in Power BI paginated reports"
 description: Design or improve your paginated reports with rendering extensions for page layout, page breaks, and paper size in Power BI Report Builder.
-ms.date: 04/17/2023
+ms.date: 04/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -60,7 +60,7 @@ A report can also contain subreports.
   
 * **Soft page-break renderers** Soft page-break renderers maintain the report layout and formatting. The resulting file is optimized for screen-based viewing and delivery, such as on a Web page. The available soft page-break renderers are Microsoft Excel, Microsoft Word, Web archive (MHTML), and HTML.  
   
-* **Hard page-break renderers** Hard page-break renderers maintain the report layout and formatting. The resulting file is optimized for a consistent printing experience, or for viewing the report online in a book format. The available hard page-break renderers are TIFF and PDF.  
+* **Hard page-break renderers** Hard page-break renderers maintain the report layout and formatting. The resulting file is optimized for a consistent printing experience, or for viewing the report online in a book format. The available hard page-break renderers are IMAGE, Microsoft PowerPoint, PDF and Accessible PDF.  
   
  When you preview a report in Power BI Report Builder or run a report on Power BI service, the report is first rendered in their respective default renderers. After you run the report, you can export it to different file formats. For more information, see [Export Reports &#40;Power BI Report Builder and service&#41;](../report-builder/export-reports-report-builder.md).
   
