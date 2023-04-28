@@ -1,16 +1,16 @@
 ---
 title: "Previous function in a Power BI paginated report"
-description: The Previous Function in Report Builder returns the value or the specified aggregate value for the previous instance of an item in a Power BI paginated report.
+description: The Previous function in Power BI Report Builder returns the value or the specified aggregate value for the previous instance of an item in a Power BI paginated report.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 03/31/2023
+ms.date: 04/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: updatefrequency5
 ms.reviewer: spendrick
 ---
-# Report Builder functions - Previous function in a Power BI paginated report
+# Previous function in a Power BI paginated report
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
@@ -30,7 +30,7 @@ Previous(expression, scope)
  *scope*  
  (**String**) Optional. The name of a group or data region, or null (**Nothing** in  Visual Basic), that specifies the scope from which to retrieve the previous value specified by *expression*.  
   
-## Return Type  
+## Return type  
  Returns a **Variant** or **Binary**.  
   
 ## Remarks  
@@ -73,9 +73,9 @@ Previous(expression, scope)
 =Sum(Fields!Sales.Value) & " " & Previous(Sum(Fields!Sales.Value,"GroupbyDay"),"GroupbyYear")  
 ```  
   
-## See Also  
- [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
- [Expression Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)   
+## See also  
+ [Expression uses in reports (Power BI Report Builder and service)](../report-design/expression-uses-reports-report-builder.md)   
+ [Expression examples (Power BI Report Builder and service)](../report-builder-expression-examples.md)   
  [Data Types in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)   
  [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
   
