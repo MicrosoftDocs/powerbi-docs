@@ -3,14 +3,14 @@ title: "Max function in a Power BI paginated report"
 description: Learn about the Max function in a Power BI paginated report, which returns the maximum value of all non-null numeric values specified by the expression in Report Builder.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 03/31/2023
+ms.date: 04/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: updatefrequency5
 ms.reviewer: spendrick
 ---
-# Report Builder functions - Max function in a Power BI paginated report
+# Max function in a Power BI paginated report
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
@@ -23,7 +23,7 @@ ms.reviewer: spendrick
 Max(expression, scope, recursive)  
 ```  
   
-#### Parameters  
+### Parameters  
  *expression*  
  (**Variant**) The expression on which to perform the aggregation.  
   
@@ -33,7 +33,7 @@ Max(expression, scope, recursive)
  *recursive*  
  (**Enumerated Type**) Optional. **Simple** (default) or **RdlRecursive**. Specifies whether to perform the aggregation recursively.  
   
-## Return Type  
+## Return type  
  Determined by the type of the expression.  
   
 ## Remarks  
@@ -62,9 +62,9 @@ Max(expression, scope, recursive)
 =Max(Fields!OrderTotal.Value, "Year")  
 ```  
   
-## See Also  
- [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
- [Expression Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)   
+## See also  
+ [Expression uses in reports (Power BI Report Builder and service)](../report-design/expression-uses-reports-report-builder.md)   
+ [Expression examples (Power BI Report Builder and service)](../report-builder-expression-examples.md)   
  [Data Types in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)   
  [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
   
