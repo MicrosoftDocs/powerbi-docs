@@ -1,20 +1,20 @@
 ---
 title: "Avg function in a Power BI paginated report"
-description: Learn about the Avg Function in Power BI paginated reports, which return the average of all non-null numeric values specified by the expression in Report Builder.
+description: Learn about the Avg function in Power BI paginated reports. It returns the average of all non-null numeric values specified by the expression in Report Builder.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 03/31/2023
+ms.date: 04/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: updatefrequency5
 ms.reviewer: spendrick
 ---
-# Report Builder functions - Avg function in a Power BI paginated report
+# Avg function in a Power BI paginated report
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-In Power BI paginated reports, returns the average of all non-null numeric values specified by the expression, evaluated in the given scope.  
+In Power BI paginated reports, the Avg function returns the average of all non-null numeric values specified by the expression, evaluated in the given scope.  
   
 ## Syntax  
   
@@ -23,7 +23,7 @@ In Power BI paginated reports, returns the average of all non-null numeric value
 Avg(expression, scope, recursive)  
 ```  
   
-#### Parameters  
+### Parameters  
  *expression*  
  (**Float**) The expression on which to perform the aggregation.  
   
@@ -33,7 +33,7 @@ Avg(expression, scope, recursive)
  *recursive*  
  (**Enumerated Type**) Optional. **Simple** (default) or **RdlRecursive**. Specifies whether to perform the aggregation recursively.  
   
-## Return Type  
+## Return type  
  Returns a **Decimal** for decimal expressions and a **Double** for all other expressions.  
   
 ## Remarks  
@@ -64,9 +64,9 @@ Avg(expression, scope, recursive)
 =Avg (CDbl(Fields!Cost.Value), "Inventory")  
 ```  
   
-## See Also  
- [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
- [Expression Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)   
+## See also  
+ [Expression uses in reports (Power BI Report Builder and service)](../report-design/expression-uses-reports-report-builder.md)   
+ [Expression examples (Power BI Report Builder and service)](../report-builder-expression-examples.md)   
  [Data Types in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)   
  [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
   
