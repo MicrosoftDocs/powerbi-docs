@@ -106,7 +106,7 @@ The following steps show how to use the developer tools in Apple Safari. For mor
 
     Go through the steps to reproduce the issue you're having. As you reproduce the problem, you'll see output similar to the following image in the **Network** window.
 
-    :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-session-output.png" alt-text="Screenshof of the Network window displaying sample output." :::
+    :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-session-output.png" alt-text="Screenshot of the Network window displaying sample output." :::
 
 5. After reproducing the problem behavior, you need to save the log files and attach them to your support request.
 
