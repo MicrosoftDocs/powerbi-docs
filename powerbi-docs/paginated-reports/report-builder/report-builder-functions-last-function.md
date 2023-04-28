@@ -3,14 +3,14 @@ title: "Last function in a Power BI paginated report"
 description: The Last function returns the final value in a set of data in a Power BI paginated report after all sorting and filtering have been applied at the specified scope in Report Builder.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 03/31/2023
+ms.date: 04/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: updatefrequency5
 ms.reviewer: spendrick
 ---
-# Report Builder functions - Last function in a Power BI paginated report
+# Last function in a Power BI paginated report
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
@@ -23,14 +23,14 @@ ms.reviewer: spendrick
 Last(expression, scope)  
 ```  
   
-#### Parameters  
+### Parameters  
  *expression*  
  (**Variant** or **Binary**) The expression on which to perform the aggregation, for example, `=Fields!Fieldname.Value`.  
   
  *scope*  
  (**String**) (Optional) The name of a dataset, data region, or group that contains the report items to which to apply the function. If *scope* isn't specified, the current scope is used.  
   
-## Return Type  
+## Return type  
  Determined by the type of expression.  
   
 ## Remarks  
@@ -63,9 +63,9 @@ Last(expression, scope)
 =Last(Fields!ProductNumber.Value, "Category")  
 ```  
   
-## See Also  
- [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
- [Expression Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)   
+## See also  
+ [Expression uses in reports (Power BI Report Builder and service)](../report-design/expression-uses-reports-report-builder.md)   
+ [Expression examples (Power BI Report Builder and service)](../report-builder-expression-examples.md)   
  [Data Types in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)   
  [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
   
