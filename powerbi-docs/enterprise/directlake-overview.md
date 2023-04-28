@@ -233,9 +233,17 @@ By using the Warehouse user interface, you can launch the table selection dialog
 
 ## Known issues and preview limitations
 
-Direct Lake provides dataset creators with an innovative way to deliver better query performance for very large data volumes. It also brings together system integrators, data scientists, and data analysts in the enterprise because any workload integration with Lakehouse can read and write parquet files. Still, not all features are available during  **Preview**. For example, you can't yet create Direct Lake datasets by using Power BI Desktop or XMLA-based BI Pro tools. You must use the Web modeling experience integrated into the Lakehouse UI.
+The following are known issues and limitations **during Preview**:
 
-The following are known issues and limitations **during private preview**:
+- Direct Lake datasets have maximum storage limits depending on the Power BI Premium capacity SKU. These limits are likely to change during the public preview phase:
+
+    |Capacity SKU |Max storage (in GB) per dataset  |
+    |---------|---------|
+    |P1     |   50      |
+    |P2     |   100     |
+    |P3     |   200     |
+    |P4     |   400     |
+    |P5     |   800     |
 
 - You must use the Web modeling experience integrated into Lakehouse to generate Direct Lake datasets. Creating Direct Lake datasets by using Power BI Desktop or XMLA-based automation tools aren't yet supported.
 
@@ -251,12 +259,12 @@ The following are known issues and limitations **during private preview**:
     
     ```
 
-- Direct Lake datasets have maximum storage limits depending on the Power BI Premium capacity SKU. These limits are likely to change during the public preview phase:
+- Complex columns are not supported.
 
-    |Capacity SKU |Max storage (in GB) per dataset  |
-    |---------|---------|
-    |P1     |   50      |
-    |P2     |   100     |
-    |P3     |   200     |
-    |P4     |   400     |
-    |P5     |   800     |
+- Some data types may not be supported.
+
+- Only Single Sign-On (SSO) is supported.
+
+- Embedded scenarios are not supported.
+
+- The dataset user interface might display a warning icon on a table even though the table has no issues. This will be addressed in a future update.
