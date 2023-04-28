@@ -1,16 +1,16 @@
 ---
 title: "Multilookup function in a Power BI paginated report"
-description: The Multilookup Function returns the set of first-match values for the specified set of names from a dataset that contains name/value pairs in a Power BI paginated report in Report Builder.
+description: The Multilookup function returns the set of first-match values for the specified set of names from a dataset that contains name/value pairs in a Power BI paginated report in Report Builder.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 03/31/2023
+ms.date: 04/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: updatefrequency5
 ms.reviewer: spendrick
 ---
-# Report Builder functions - Multilookup function in a Power BI paginated report
+# Multilookup function in a Power BI paginated report
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
@@ -23,7 +23,7 @@ ms.reviewer: spendrick
 Multilookup(source_expression, destination_expression, result_expression, dataset)  
 ```  
   
-#### Parameters  
+### Parameters  
  *source_expression*  
  (**VariantArray**) An expression that is evaluated in the current scope and that specifies the set of names or keys to look up. For example, for a multivalue parameter, `=Parameters!IDs.value`.  
   
@@ -117,9 +117,9 @@ Multilookup(source_expression, destination_expression, result_expression, datase
 =Join(MultiLookup(Parameters!MyColors.Value,Fields!ColorID.Value,Fields!Color.Value,"ProductColors"),", ")  
 ```  
   
-## See Also  
- [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
- [Expression Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)   
+## See also  
+ [Expression uses in reports (Power BI Report Builder and service)](../report-design/expression-uses-reports-report-builder.md)   
+ [Expression examples (Power BI Report Builder and service)](../report-builder-expression-examples.md)   
  [Data Types in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)   
  [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
   
