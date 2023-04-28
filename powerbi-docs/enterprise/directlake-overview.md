@@ -1,6 +1,6 @@
 ---
-title: Learn about DirectLake in Power BI
-description: Describes using DirectLake to analyze very large datasets in Power BI.
+title: Learn about Direct Lake in Power BI
+description: Describes using Direct Lake to analyze very large datasets in Power BI.
 author: minewiskan
 ms.author: owend
 ms.reviewer: ''
@@ -10,65 +10,72 @@ ms.topic: conceptual
 ms.date: 02/03/2023
 LocalizationGroup: Admin
 ---
-# DirectLake (Private preview)
+# Direct Lake (Preview)
 
 > [!IMPORTANT]
-> DirectLake is currently in **private preview** in the MSIT environment. When in private preview, you are bound by the terms in your Non-Disclosure Agreement (NDA) with Microsoft. Functionality and documentation are likely to change. Before testing, be sure to read [Known issues and private preview limitations](#known-issues-and-private-preview-limitations) later in this article.
+> Direct Lake is currently in **Preview**. Functionality and documentation are likely to change. Before testing in your environment, be sure to read [Known issues and preview limitations](#known-issues-and-preview-limitations) later in this article.
 
-*DirectLake* mode is a groundbreaking new engine capability for analyzing very large datasets in Power BI. This technology is based on loading parquet-formatted files directly from a data lake without having to query a Data Warehouse or Lakehouse endpoint, and without having to import or duplicate data into a Power BI dataset. DirectLake is a fast-path to load the data from the lake straight into the Power BI engine, ready for analysis. The following diagram shows how classic import and DirectQuery modes compare with the new DirectLake mode.
+*Direct Lake* mode is a groundbreaking new dataset capability for analyzing very large data volumes in Power BI. Direct Lake is based on loading parquet-formatted files directly from a data lake without having to query a Data Warehouse or Lakehouse endpoint, and without having to import or duplicate data into a Power BI dataset. Direct Lake is a fast-path to load the data from the lake straight into the Power BI engine, ready for analysis. The following diagram shows how classic import and DirectQuery modes compare with the new Direct Lake mode.
 
-:::image type="content" source="media/directlake-overview/directlake-intro-diagram.png" border="false" alt-text="DirectLake feature diagram.":::
+:::image type="content" source="media/directlake-overview/directlake-diagram.png" border="false" alt-text="Direct Lake feature diagram.":::
 
-In DirectQuery mode, the Power BI engine queries the data at the source, which can be slow but avoids having to copy the data. Any changes at the source are immediately reflected in the query results. On the other hand, with import mode, performance can be better because the data is readily available in memory without having to query the data source each time. However, the Power BI engine must first copy the data into the dataset during refresh. Any changes at the source are only picked up with the next data refresh. DirectLake mode eliminates this import requirement by loading the data directly from the files into memory. Because there's no explicit import process, it's possible to pick up any changes at the data source as they occur, combining the advantages of DirectQuery and import mode while avoiding their disadvantages. DirectLake mode is the ideal choice for analyzing very large datasets and datasets with frequent updates at the data source.
+In DirectQuery mode, the Power BI engine queries the data at the source, which can be slow but avoids having to copy the data. Any changes at the data source are immediately reflected in the query results.
+
+On the other hand, with import mode, performance can be better because the data is more readily available in-memory without having to query the data source each time a report change is made. However, the Power BI engine must first copy the data into the dataset during refresh. Any changes at the source are only picked up with the *next* dataset refresh.
+
+Direct Lake mode eliminates the import requirement by loading the data directly from the files into memory. Because there's no explicit import process, it's possible to pick up any changes at the data source as they occur, combining the advantages of both DirectQuery and import modes while avoiding their disadvantages. Direct Lake mode can be the ideal choice for analyzing very large datasets and datasets with frequent updates at the data source.
 
 ## Prerequisites
 
-DirectLake is supported on F and P SKUs only. It is not supported on Power BI Pro, Premium Per User, and A SKUs.
-
-Before using DirectLake, you need one or more of the following in a Power BI Premium workspace:
-
-- Warehouse with one or more tables.
-- Lakehouse with one or more delta tables.
-
-#### Warehouse
-
-Before getting started with DirectLake mode, you must provision a warehouse in a Power BI Premium workspace. Although DirectLake mode doesn't query the warehouse endpoint, the warehouse is required because it provides the storage location for your parquet-formatted files. The warehouse also provides the access point to launch Power BI Web modeling to create a DirectLake dataset. During Private Preview, DirectLake datasets can only be created by using Web modeling launched through warehouse.
-
-In scenarios where warehouse specific security constructs such as OLS, RLS, CLS, CLE, or views used in the warehouse can't be read via DirectLake, the DirectLake datasets seamlessly fall back to DirectQuery.
-
-To learn how to create a warehouse, see [Create a warehouse](/fabric/data-warehouse/create-warehouse?branch=release-public-preview).
+Direct Lake is supported on Power BI Premium F and P SKUs only. It's not supported on Power BI Pro, Premium Per User, or Power BI Embedded A SKUs.
 
 #### Lakehouse
 
-Before getting started with DirectLake mode, you must provision a Lakehouse in a Power BI Premium workspace. Although DirectLake mode doesn't query the Lakehouse endpoint, the Lakehouse is required because it provides the storage location for your parquet-formatted files. The Lakehouse also provides the access point to launch Power BI Web modeling to create a DirectLake dataset. **During Private Preview**, DirectLake datasets can only be created by using Web modeling launched through Lakehouse.
+Before using Direct Lake, you must provision a Lakehouse with one or more delta tables in a workspace hosted on a supported Power BI Premium or Microsoft Fabric capacity. The Lakehouse is required because it provides the storage location for your parquet-formatted files in OneLake. The Lakehouse also provides an access point to launch Power BI Web modeling to create a Direct Lake dataset.
 
-##### To create a Lakehouse in a Premium workspace
+To learn how to provision a Lakehouse, create a delta table in the Lakehouse, and create a dataset for the Lakehouse, see [Create a Lakehouse](#create-a-lakehouse) later in this article.
 
-1. In your Power BI workspace, select **New** > **Show all**, and then under **Data engineering**, select the **Lakehouse** tile.
+#### SQL endpoint
+
+As part of provisioning a Lakehouse, a SQL endpoint for SQL querying and a default dataset for reporting are created and updated with any tables added to the Lakehouse. Although Direct Lake mode doesn't query the SQL endpoint when loading data directly into memory, it's required when a Direct Lake dataset must seamlessly fall back to DirectQuery mode, such as when the data source uses specific features like advanced security or views that can't be read through Direct Lake.
+
+#### Data warehouse
+
+As an alternative to a Lakehouse with SQL endpoint, you can also provision a Data Warehouse and add tables by using SQL statements or data pipelines. The procedure to provision a standalone Data Warehouse is almost identical to the below procedure for a Lakehouse.
+
+To learn how to provision a Data Warehouse, create a table in the warehouse, and create a Power BI dataset for the warehouse, see [Create a Data Warehouse](#create-a-data-warehouse) later in this article.
+
+## Create a Lakehouse
+
+Complete the following steps to create a Lakehouse, a delta table, and a dataset in a Premium workspace.
+
+#### To create a Lakehouse
+
+1. In your Power BI premium workspace, select **New** > **Show all**, and then in **Data engineering**, select the **Lakehouse** tile.
 
     :::image type="content" source="media/directlake-overview/directlake-lakehouse-tile.png" border="false" alt-text="Screenshot showing Lakehouse tile.":::
 
-2. In the New Lakehouse dialog box, type a name for your Lakehouse, and then select Create. The name can only contain alphanumeric characters and underscores.
+2. In the **New Lakehouse** dialog box, enter a name, and then select **Create**. The name can only contain alphanumeric characters and underscores.
 
     :::image type="content" source="media/directlake-overview/directlake-new-lakehouse.png" border="false" alt-text="Screenshot showing New Lakehouse dialogue.":::
 
-3. Verify that Power BI creates and opens the Lakehouse successfully.
+3. Verify Power BI creates and opens the new Lakehouse successfully.
 
     :::image type="content" source="media/directlake-overview/directlake-verify-lakehouse.png" border="false" alt-text="Screenshot showing verify lakehouse screen.":::
 
-#### Delta table in Lakehouse
+#### Create a delta table in Lakehouse
 
-After creating a new Lakehouse, you must then create at least one delta table so DirectLake can access some data. DirectLake can read parquet-formatted files, but for the best performance, it's best to compress the data by using the VORDER compression method. VORDER compresses the data using the Power BI engine’s native compression algorithm so the Power BI engine can load the data into memory as quickly as possible.
+After creating a new Lakehouse, you must then create at least one delta table so Direct Lake can access some data. Direct Lake can read parquet-formatted files, but for the best performance, it's best to compress the data by using the VORDER compression method. VORDER compresses the data using the Power BI engine’s native compression algorithm. This way the engine can load the data into memory as quickly as possible.
 
-There are multiple options to load data into a Lakehouse, including data pipelines and scripts. The following steps use on PySpark to add a delta table to a Lakehouse based on an [Azure Open Dataset](/azure/open-datasets/dataset-catalog):
+There are multiple options to load data into a Lakehouse, including data pipelines and scripts. The following steps use PySpark to add a delta table to a Lakehouse based on an [Azure Open Dataset](/azure/open-datasets/dataset-catalog).
 
 ##### To add a delta table to Lakehouse
 
-1. With the newly created Lakehouse still open, select **Open notebook**, and then select **New notebook**.
+1. In the newly created Lakehouse, select **Open notebook**, and then select **New notebook**.
 
-    :::image type="content" source="media/directlake-overview/directlake-lakehouse-new-notebook.png" border="false" alt-text="Screenshot showing new notebook in Lakehouse.":::
+    :::image type="content" source="media/directlake-overview/directlake-lakehouse-new-notebook.png" border="true" alt-text="Screenshot showing new notebook in Lakehouse.":::
 
-1. Paste the following code snippet into the first code cell to let SPARK access the desired open dataset.
+1. Copy and paste the following code snippet into the first code cell to let SPARK access the open dataset, and then press **Shift + Enter** to run the code.
 
     ```python
     # Azure storage access info
@@ -83,27 +90,27 @@ There are multiple options to load data into a Lakehouse, including data pipelin
       'fs.azure.sas.%s.%s.blob.core.windows.net' % (blob_container_name, blob_account_name),
       blob_sas_token)
     print('Remote blob path: ' + wasbs_path)
-    
+
     ```
 
-1. Press **Shift + Enter** to run the code and verify that it successfully outputs the remote blob path.
+1. Verify the code successfully outputs a remote blob path.
 
     :::image type="content" source="media/directlake-overview/directlake-remote-blob-path.png" border="false" alt-text="Screenshot showing remote blob path output.":::
 
-1. Paste the following code into the next cell.
+1. Copy and paste the following code into the next cell, and then press **Shift + Enter**.
 
     ```python
     # Read Parquet file into a DataFrame.
     df = spark.read.parquet(wasbs_path)
     print(df.printSchema())
-        
+
     ```
 
-1. Press **Shift + Enter** to run the code and verify that it successfully outputs the schema of the DataFrame.
+1. Verify the code successfully outputs the DataFrame schema.
 
     :::image type="content" source="media/directlake-overview/directlake-dataframe-schema.png" border="false" alt-text="Screenshot showing schema dataframe.":::
 
-1. Paste the following lines into the next cell to save the DataFrame as a delta table in the Lakehouse. The first instruction enables the VORDER compression method.
+1. Copy and paste the following lines into the next cell, and then press **Shift + Enter**. The first instruction enables the VORDER compression method, and the next instruction saves the DataFrame as a delta table in the Lakehouse.
 
     ```python
     # Save as delta table 
@@ -112,27 +119,23 @@ There are multiple options to load data into a Lakehouse, including data pipelin
     
     ```
 
-1. Press **Shift + Enter** to run the code and verify that all SPARK jobs completed successfully. Expand the SPARK jobs list to view more details.
+1. Verify all SPARK jobs complete successfully. Expand the SPARK jobs list to view more details.
 
     :::image type="content" source="media/directlake-overview/directlake-spark-jobs-list.png" border="false" alt-text="Screenshot showing Spark jobs list.":::
 
-1. To verify a table has been created successfully, in the upper left area, next to Tables, select on the Ellipsis (**…**) link and then select Refresh, and expand the Tables node.
+1. To verify a table has been created successfully, in the upper left area, next to **Tables**, select the ellipsis (**…**), then select **Refresh**, and then expand the **Tables** node.
 
     :::image type="content" source="media/directlake-overview/directlake-tables-node.png" border="false" alt-text="Screenshot showing Tables node.":::
 
 1. Using either the same method as above or other supported methods, add more delta tables for the data you want to analyze.
 
-## Create a basic dataset in DirectLake mode
-
-After you've created delta tables in your Lakehouse, you can then create any number of basic DirectLake datasets by using the Lakehouse Web modeling experience in Power BI. The basic Web modeling experience allows you to select the tables you want to add to your dataset and then define table relationships and create DAX measures. **During private preview**, you can't modify the table selection after a DirectLake dataset is created. You must create a new dataset if you wish to include different tables.
-
-#### To create a basic DirectLake dataset for your Lakehouse
+##### To create a basic Direct Lake dataset for your Lakehouse
 
 1. In your Lakehouse, select **New dataset**, and then in the **New dataset** dialog, select tables to be included in the dataset.
 
     :::image type="content" source="media/directlake-overview/directlake-new-dataset.png" border="false"  alt-text="Screenshot showing New dataset.":::
 
-1. Select **Continue** to generate the DirectLake dataset. Power BI automatically saves the dataset in the workspace based on the name of your Lakehouse and then opens the dataset in Power BI.
+1. Select **Confirm** to generate the Direct Lake dataset. Power BI automatically saves the dataset in the workspace based on the name of your Lakehouse, and then opens the dataset in Power BI.
 
     :::image type="content" source="media/directlake-overview/directlake-open-dataset.png" border="false" alt-text="Screenshot showing open dataset in Power BI.":::
 
@@ -140,21 +143,107 @@ After you've created delta tables in your Lakehouse, you can then create any num
 
     :::image type="content" source="media/directlake-overview/directlake-web-modeling.png" alt-text="Screenshot showing Web modeling in Power BI.":::
 
-When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and access the dataset through XMLA endpoints in much the same way as any other dataset. During **private preview**, XMLA write operations aren't supported.
+When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and query the dataset through XMLA endpoints in much the same way as any other dataset. During **Preview**, XMLA write operations are not yet supported.
 
-## Known issues and private preview limitations
+## Create a Data Warehouse
 
-DirectLake provides dataset creators with an innovative way to deliver better query performance for very large data volumes. It also brings together system integrators, data scientists, and data analysts in the enterprise because any workload integration with Lakehouse can read and write parquet files. Still, not all features are available during this early **private preview**. For example, you can't yet create DirectLake datasets by using Power BI Desktop. You must use the Web modeling experience integrated into the Lakehouse UI.
+Complete the following steps to create a Data Warehouse, a table with data, and a dataset in a Premium workspace.
+
+#### To create a Data Warehouse
+
+1. In your Power BI workspace, select **New** > **Show all**, and then under **Data Warehouse**, select the **Warehouse** tile.
+
+    :::image type="content" source="media/directlake-overview/directlake-datawarehouse-tile.png" border="false" alt-text="Screenshot showing Data Warehouse tile.":::
+
+1. In the **New warehouse** dialog box, enter a name for your warehouse, and then select **Create**. The name can only contain alphanumeric characters and underscores.
+
+    :::image type="content" source="media/directlake-overview/directlake-new-warehouse.png" border="false" alt-text="Screenshot showing New warehouse dialogue.":::
+
+1. Verify Power BI creates and opens the new warehouse successfully.
+
+#### To add a table to the warehouse
+
+1. With the newly created warehouse open, select **Get data with new data pipeline**.
+
+    :::image type="content" source="media/directlake-overview/directlake-buildwarehouse-getdata.png" alt-text="Screenshot showing Get data with new data pipeline.":::
+
+1. In the **New pipeline** dialog, accept the default name, and then select **Create**.
+
+    :::image type="content" source="media/directlake-overview/directlake-new-pipeline.png" alt-text="Screenshot showing New pipeline dialog box.":::
+
+1. After the new pipeline is created and opened, in **Copy data into Data warehouse** > **Choose data source**, select the **Retail Data Model from Wide World Importers** tile, and then select **Next**.
+
+    :::image type="content" source="media/directlake-overview/directlake-copydata-retaildatamodel.png" alt-text="Screenshot showing Retail Data Model from Wide World Importers tile.":::
+
+1. In **Copy data into Data warehouse** > **Connect to data source**, verify the dataset, and then select **Next**.
+
+    :::image type="content" source="media/directlake-overview/directlake-copydata-preview-retaildatamodel.png" alt-text="Screenshot showing Preview data: Retail Data Model from Wide World Importers tile.":::
+
+1. In **Copy data into Data warehouse** > **Choose data destination**, verify the correct warehouse is selected, and then select **Next**.
+
+    :::image type="content" source="media/directlake-overview/directlake-warehouse-copydata-choosedatadestination.png" alt-text="Screenshot showing Preview data in Copy data into Data Warehouse dialog.":::
+
+1. In **Copy data into Data warehouse** > **Connect to data destination**, accept the defaults to load the data into a new table, and then select **Next**.
+
+    :::image type="content" source="media/directlake-overview/directlake-warehouse-copydata-connectdatadestination.png" alt-text="Screenshot showing column mappings in Copy data into Data Warehouse dialog.":::
+
+1. In **Copy data into Data warehouse** > **Settings**, next to **Staging account connection**, select **New**.
+
+    :::image type="content" source="media/directlake-overview/directlake-warehouse-copydata-settings-new.png" alt-text="Screenshot showing Staging account connection setting in Settings.":::
+
+1. In the **New connection** dialog, select an option for the storage account you're planning to use, such as **Azure Data Lake Storage Gen2**, and then select **Continue**.
+
+    :::image type="content" source="media/directlake-overview/directlake-warehouse-newconnection-azuredatalakestorage.png" alt-text="Screenshot showing Azure Data Lake Storage Gen2 in New connection dialog.":::
+
+1. In **New connection** > **Connection settings**, specify your connection settings, and then select **Create**.
+
+    :::image type="content" source="media/directlake-overview/directlake-warehouse-newconnection-settings.png" alt-text="Screenshot showing Connection settings in New connection dialog.":::
+
+1. In **New connection** > **Settings** > **Storage Path**, select **Browse**, then select a blob container, and then select **OK**.
+
+    :::image type="content" source="media/directlake-overview/directlake-warehouse-newconnection-storagepath.png" alt-text="Screenshot showing New connection, storage path in Connection settings.":::
+
+1. In **New connection** > **Settings**, verify your storage account configuration, and then select **Next**.
+
+    :::image type="content" source="media/directlake-overview/directlake-warehouse-newconnection-verify-storagepath.png" alt-text="Screenshot showing New connection Review and save copy summary.":::
+
+1. In **New connection** > **Review + save**, select the **Start data transfer immediately** option, and then select **Save + Run**.
+
+    :::image type="content" source="media/directlake-overview/directlake-warehouse-newconnection-saveandrun.png" alt-text="Screenshot showing New connection, Copy summary, Save & Run.":::
+
+#### To create a basic Direct Lake dataset from a Data Warehouse
+
+By using the Warehouse user interface, you can launch the table selection dialog box to create a basic Direct Lake dataset.
+
+1. Open the warehouse you created and loaded in the previous steps, such as My_Warehouse, and then switch to the **Reporting** ribbon.
+
+    :::image type="content" source="media/directlake-overview/directlake-warehouse-dataset-reportingtab.png" alt-text="Screenshot showing Reporting tab in the warehouse.":::
+
+1. In the Reporting ribbon, select **New Power BI dataset**, and then in the **New dataset** dialog, select tables to be included, and then select **Confirm**.
+
+    :::image type="content" source="media/directlake-overview/directlake-warehouse-dataset-newdataset.png" alt-text="Screenshot showing New dataset dialog box.":::
+
+1. Power BI automatically saves the dataset in the workspace based on the name of your warehouse, and then opens the dataset in Power BI.
+
+    :::image type="content" source="media/directlake-overview/directlake-warehouse-dataset-in-powerbi.png" alt-text="Screenshot showing new dataset in Power BI.":::
+
+1. Select **Open data model** to open the Power BI Web modeling experience where you can add table relationships and DAX measures.
+
+    :::image type="content" source="media/directlake-overview/directlake-warehouse-dataset-open-model.png" alt-text="Screenshot showing new dataset in Power BI web modeling.":::
+
+## Known issues and preview limitations
+
+Direct Lake provides dataset creators with an innovative way to deliver better query performance for very large data volumes. It also brings together system integrators, data scientists, and data analysts in the enterprise because any workload integration with Lakehouse can read and write parquet files. Still, not all features are available during the initial **preview**phase. For example, you can't yet create Direct Lake datasets by using Power BI Desktop or XMLA-based BI Pro tools. You must use the Web modeling experience integrated into the Lakehouse UI.
 
 The following are known issues and limitations **during private preview**:
 
-- You must use the Web modeling experience integrated into Lakehouse to generate DirectLake datasets. Creating DirectLake datasets by using Power BI Desktop or XMLA-based automation tools aren't yet supported.
-- The Lakehouse doesn't yet keep DirectLake datasets in sync with the underlying data. You must invoke a refresh either manually or by using the REST API for the dataset to show the latest data. The refresh operation in this case is essentially a metadata operation to point to the latest Delta-Parquet log version, so it should be quick. There's no movement of actual data. Consider configuring a refresh schedule. 
-- You can't change the table selection for DirectLake datasets. You must create a new dataset and select the desired tables prior to dataset creation.
-- Analyze in Excel isn't yet supported against DirectLake datasets. However, you can connect to basic DirectLake datasets in read-only mode using XMLA-based data visualization tools and scripts.
-- DirectLake datasets don't yet support lake views. You must build your datasets on top of delta tables.
-- When working with DirectLake datasets, you might encounter an error stating that the data source is missing credentials and cannot be accessed. To work around this issue, go to this dataset's settings page and enter Azure Active Directory (AAD) credentials for the DirectLake data source.
-- When generating a DirectLake dataset in a QSO-enabled workspace, you must sync the dataset manually using the following PowerShell commands with the Power BI Management cmdlets installed (replace WorkspaceID and DatasetID with the GUIDs of your workspace and dataset):
+- You must use the Web modeling experience integrated into Lakehouse to generate Direct Lake datasets. Creating Direct Lake datasets by using Power BI Desktop or XMLA-based automation tools aren't yet supported.
+
+- You can't change the table selection for Direct Lake datasets. You must create a new dataset and select tables prior to dataset creation.
+
+- Direct Lake datasets don't support lake views. You must build your datasets on top of delta tables.
+
+- When generating a Direct Lake dataset in a QSO-enabled workspace, you must sync the dataset manually using the following PowerShell commands with the Power BI Management cmdlets installed (replace WorkspaceID and DatasetID with the GUIDs of your workspace and dataset):
 
     ```powershell
     Login-PowerBI
@@ -162,15 +251,12 @@ The following are known issues and limitations **during private preview**:
     
     ```
 
-- DirectLake datasets have maximum storage limits depending on the capacity SKU. **During private preview**, the following max storage limits apply to capacities in the MSIT environment:
+- Direct Lake datasets have maximum storage limits depending on the Power BI Premium capacity SKU. These limits are likely to change during the public preview phase:
 
-    |Capacity SKU |Max storage (in GB) per dataset in MSIT  |
+    |Capacity SKU |Max storage (in GB) per dataset  |
     |---------|---------|
-    |EM1     |    1     |
-    |EM2     |    2     |
-    |EM3    |    2    |
-    |P1     |    50     |
-    |P2     |    100     |
-    |P3    |    200     |
-    |P4     |   400      |
-    |P5     |   800      |
+    |P1     |   50      |
+    |P2     |   100     |
+    |P3     |   200     |
+    |P4     |   400     |
+    |P5     |   800     |
