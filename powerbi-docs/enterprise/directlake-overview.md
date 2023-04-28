@@ -233,7 +233,7 @@ By using the Warehouse user interface, you can launch the table selection dialog
 
 ## Known issues and preview limitations
 
-Direct Lake provides dataset creators with an innovative way to deliver better query performance for very large data volumes. It also brings together system integrators, data scientists, and data analysts in the enterprise because any workload integration with Lakehouse can read and write parquet files. Still, not all features are available during the initial **preview**phase. For example, you can't yet create Direct Lake datasets by using Power BI Desktop or XMLA-based BI Pro tools. You must use the Web modeling experience integrated into the Lakehouse UI.
+Direct Lake provides dataset creators with an innovative way to deliver better query performance for very large data volumes. It also brings together system integrators, data scientists, and data analysts in the enterprise because any workload integration with Lakehouse can read and write parquet files. Still, not all features are available during  **Preview**. For example, you can't yet create Direct Lake datasets by using Power BI Desktop or XMLA-based BI Pro tools. You must use the Web modeling experience integrated into the Lakehouse UI.
 
 The following are known issues and limitations **during private preview**:
 
