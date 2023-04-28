@@ -39,9 +39,9 @@ highlightedContent:
       itemType: concept
       url: developer/embedded/export-to.md
     # Card
-    - title: Edit relationships in the Properties pane
-      itemType: how-to-guide
-      url: /power-bi/transform-model/desktop-create-and-manage-relationships#edit-a-relationship
+    - title: What are paginated reports in Power BI?
+      itemType: overview
+      url: paginated-reports/paginated-reports-report-builder-power-bi.md
     # Card
     - title: "Power BI Premium features"
       itemType: concept
