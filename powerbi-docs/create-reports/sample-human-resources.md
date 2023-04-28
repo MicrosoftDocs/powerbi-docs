@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/23/2023
+ms.date: 04/28/2023
 LocalizationGroup: Samples
 ---
 # Human Resources sample for Power BI: Take a tour
@@ -90,7 +90,9 @@ If you got the built-in report in the Power BI service or published the *.pbix* 
 
 Let's explore new hires first.
 
-1. In your workspace, select the **Dashboards** tab, and open the **Human Resources Sample** dashboard.
+1. If you got the [built-in sample](#get-the-built-in-sample-in-the-power-bi-service) in your workspace, select the **Dashboards** tab, and open the **Human Resources Sample** dashboard.
+
+    If you [uploaded the .pbix file](#get-the-pbix-file-for-this-sample), skip the next step and open the **New Hires** page of the report in your workspace.
 
 1. On the dashboard, select the **New Hire Count, New Hires Same Period Last Year, Actives YoY % Change By Month** tile.  
 
@@ -119,7 +121,9 @@ Let's explore new hires first.
 
 Let's explore data for currently active employees and employees who no longer work for the company.
 
-1. On the dashboard, select the **Active Employee Count by Age Group** tile.
+1.  If you got the [built-in sample](#get-the-built-in-sample-in-the-power-bi-service) in your workspace, in the dashboard, select the **Active Employee Count by Age Group** tile.
+
+    If you [uploaded the .pbix file](#get-the-pbix-file-for-this-sample), open the **Active Employees vs. Separations** page of the report in your workspace.
 
    :::image type="content" source="media/sample-human-resources/pbi_hr_sample_activepie.png" alt-text="Screenshot shows the Active Employee Count by Age Group tile.":::
 
@@ -163,9 +167,11 @@ Look at the report in Editing View. You can change the pie charts to show employ
 
 ## Bad hires
 
-The last area to explore is bad hires. Bad hires are defined as employees who didn't last for more than 60 days. you're hiring rapidly, but are you hiring good candidates?
+The last area to explore is bad hires. Bad hires are defined as employees who didn't last for more than 60 days. You're hiring rapidly, but are you hiring good candidates?
 
-1. Select the **Bad Hires as % of Actives by Age Group** dashboard tile. The report opens to tab three, **Bad Hires**.
+1. Again, if you got the [built-in sample](#get-the-built-in-sample-in-the-power-bi-service) in your workspace, in the dashboard, select the **Bad Hires as % of Actives by Age Group** dashboard tile. The report opens to tab three, **Bad Hires**.
+
+    If you [uploaded the .pbix file](#get-the-pbix-file-for-this-sample), open the **Bad Hires** page of the report in your workspace.
 
    :::image type="content" source="media/sample-human-resources/hr7.png" alt-text="Screenshot shows the Bad Hires as % of Actives by Age Group tile.":::  
 
