@@ -18,7 +18,7 @@ The Human Resources built-in sample contains a dashboard, report, and dataset fo
 - Biases in your hiring strategy
 - Trends in voluntary separations
 
-:::image type="content" source="media/sample-human-resources/hr1.png" alt-text="Screenshot shows the dashboard for the Human Resources sample." lightbox="media/sample-human-resources/hr1.png":::
+:::image type="content" source="media/sample-human-resources/hr-1.png" alt-text="Screenshot shows the dashboard for the Human Resources sample." lightbox="media/sample-human-resources/hr-1.png":::
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created this sample using real, anonymized data. The data is available in several formats: built-in sample in the Power BI service, *.pbix* Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
 
@@ -96,11 +96,11 @@ Let's explore new hires first.
 
 1. On the dashboard, select the **New Hire Count, New Hires Same Period Last Year, Actives YoY % Change By Month** tile.  
 
-   :::image type="content" source="media/sample-human-resources/hr2.png" alt-text="Screenshot shows the New Hire Count tile.":::  
+   :::image type="content" source="media/sample-human-resources/hr-2.png" alt-text="Screenshot shows the New Hire Count tile.":::  
 
    The Human Resources Sample report opens to the **New Hires** page.  
 
-   :::image type="content" source="media/sample-human-resources/hr3.png" alt-text="Screenshot shows the New Hires page." lightbox="media/sample-human-resources/hr3.png":::
+   :::image type="content" source="media/sample-human-resources/hr-3.png" alt-text="Screenshot shows the New Hires page." lightbox="media/sample-human-resources/hr-3.png":::
 
 1. Look at these items of interest:
 
@@ -125,11 +125,11 @@ Let's explore data for currently active employees and employees who no longer wo
 
     If you [uploaded the .pbix file](#get-the-pbix-file-for-this-sample), open the **Active Employees vs. Separations** page of the report in your workspace.
 
-   :::image type="content" source="media/sample-human-resources/pbi_hr_sample_activepie.png" alt-text="Screenshot shows the Active Employee Count by Age Group tile.":::
+   :::image type="content" source="media/sample-human-resources/hr-sample-active-pie.png" alt-text="Screenshot shows the Active Employee Count by Age Group tile.":::
 
    The Human Resources Sample report opens to the **Active Employees vs. Separations** page.  
 
-   :::image type="content" source="media/sample-human-resources/hr5.png" alt-text="Screenshot shows the Active Employees vs. Separations page." lightbox="media/sample-human-resources/hr5.png":::
+   :::image type="content" source="media/sample-human-resources/hr-5.png" alt-text="Screenshot shows the Active Employees vs. Separations page." lightbox="media/sample-human-resources/hr-5.png":::
 
 1. Look at these items of interest:
 
@@ -157,7 +157,7 @@ Look at the report in Editing View. You can change the pie charts to show employ
 
 1. Look at the line chart in the lower-right corner. This chart is filtered to show voluntary separations.  
 
-   :::image type="content" source="media/sample-human-resources/pbi_hr_sample_sepsover50.png" alt-text="Screenshot shows Employee separations over 50 by selecting a slice.":::
+   :::image type="content" source="media/sample-human-resources/hr-sample-separations-over-50.png" alt-text="Screenshot shows Employee separations over 50 by selecting a slice.":::
 
    Notice the trend in the 50+ age group. During the latter part of the year, more employees over age 50 left voluntarily. This trend is an area to investigate further with more data.
 
@@ -173,11 +173,11 @@ The last area to explore is bad hires. Bad hires are defined as employees who di
 
     If you [uploaded the .pbix file](#get-the-pbix-file-for-this-sample), open the **Bad Hires** page of the report in your workspace.
 
-   :::image type="content" source="media/sample-human-resources/hr7.png" alt-text="Screenshot shows the Bad Hires as % of Actives by Age Group tile.":::  
+   :::image type="content" source="media/sample-human-resources/hr-7.png" alt-text="Screenshot shows the Bad Hires as % of Actives by Age Group tile.":::  
 
 1. Select **Northwest** in the **Region** slicer on the left and select **Male** in the **Bad Hire Count by Gender** donut chart. Look at the other charts on the **Bad Hires** page. There are more male bad hires than females and many Group A bad hires.
 
-   :::image type="content" source="media/sample-human-resources/pbi_hr_sample_badhirespage.png" alt-text="Screenshot shows bad hires with the northwest slicer selected." lightbox="media/sample-human-resources/pbi_hr_sample_badhirespage.png":::  
+   :::image type="content" source="media/sample-human-resources/hr-sample-bad-hires-page.png" alt-text="Screenshot shows bad hires with the northwest slicer selected." lightbox="media/sample-human-resources/hr-sample-bad-hires-page.png":::  
 
 1. If you look at the **Bad Hire Count by Gender** donut chart and select different regions in the **Region** slicer, you see that the East region is the only region with more female than male bad hires.
 
@@ -191,11 +191,11 @@ In the [Q&A question box](power-bi-tutorial-q-and-a.md) in the dashboard, you ca
 
 1. Select the Q&A question box. Even before you start typing, Q&A displays suggestions to help form your question.
 
-   :::image type="content" source="media/sample-human-resources/pbi_hr_sample_qabox.png" alt-text="Screenshot shows the Q&A box suggestions." lightbox="media/sample-human-resources/pbi_hr_sample_qabox.png":::
+   :::image type="content" source="media/sample-human-resources/hr-sample-qa-box.png" alt-text="Screenshot shows the Q&A box suggestions." lightbox="media/sample-human-resources/hr-sample-qa-box.png":::
 
 1. You can pick one of those suggestions, or enter: *show age group, gender, and bad hires SPLY where region is East*.  
 
-   :::image type="content" source="media/sample-human-resources/pbi_hr_sample_qa_answer.png" alt-text="Screenshot shows the Q&A box answers.":::
+   :::image type="content" source="media/sample-human-resources/hr-sample-qa-answer.png" alt-text="Screenshot shows the Q&A box answers.":::
 
    Most of the female bad hires are under 30.
 
