@@ -125,11 +125,11 @@ Let's explore data for currently active employees and employees who no longer wo
 
     If you [uploaded the .pbix file](#get-the-pbix-file-for-this-sample), open the **Active Employees vs. Separations** page of the report in your workspace.
 
-   :::image type="content" source="media/sample-human-resources/hr-sample-active-pie.png" alt-text="Screenshot shows the Active Employee Count by Age Group tile.":::
+    :::image type="content" source="media/sample-human-resources/hr-sample-active-pie.png" alt-text="Screenshot shows the Active Employee Count by Age Group tile.":::
 
-   The Human Resources Sample report opens to the **Active Employees vs. Separations** page.  
+    The Human Resources Sample report opens to the **Active Employees vs. Separations** page.  
 
-   :::image type="content" source="media/sample-human-resources/hr-5.png" alt-text="Screenshot shows the Active Employees vs. Separations page." lightbox="media/sample-human-resources/hr-5.png":::
+    :::image type="content" source="media/sample-human-resources/hr-5.png" alt-text="Screenshot shows the Active Employees vs. Separations page." lightbox="media/sample-human-resources/hr-5.png":::
 
 1. Look at these items of interest:
 
