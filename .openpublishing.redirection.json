@@ -1530,6 +1530,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/paginated-reports/report-design/formatting-numbers-and-dates-report-builder-and-service.md",
+            "redirect_url": "/power-bi/paginated-reports/report-design/format-numbers-dates-report-builder-service",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/developer/overview-of-power-bi-rest-api.md",
             "redirect_url": "/power-bi/developer/automation/overview-of-power-bi-rest-api",
             "redirect_document_id": false
@@ -4975,7 +4980,42 @@
             "source_path": "powerbi-docs/connect-data/desktop-directquery-datasets-azure-analysis-services.md",
             "redirect_url": "/power-bi/transform-model/desktop-composite-models",
             "redirect_document_id": false
-        }      
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-data-in-space-overview.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-data-in-space-pin-reports.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-data-in-space-find-pinned-reports.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-data-in-space-set-up.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/jupyter-quick-report.md",
+            "redirect_url": "/power-bi/create-report/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-dlp-policies-for-power-bi.md",
+            "redirect_url": "/power-bi/enterprise/service-security-dlp-policies-for-power-bi-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-dlp-policies-for-power-bi-override.md",
+            "redirect_url": "/power-bi/enterprise/service-security-dlp-policies-for-power-bi-respond",
+            "redirect_document_id": true
+        }                                                                                                  
   ]          
 
 }

@@ -14,7 +14,7 @@ ms.topic: conceptual
 
   You can organize data in a Power BI paginated report in a variety of ways to show the relationship of the general to the detailed.  You can put all the data in the report, but set it to be hidden until a user clicks to reveal details; this is a *drilldown* action. You can display the data in a data region, such as a table or chart, which is *nested* inside another data region, such as a table or matrix. You can display the data in a *subreport* that is completely contained within a main report. Or, you can put the detail data in *drillthrough* reports, separate reports that are displayed when a user clicks a link.  
   
-:::image type="content" source="media/paginated-drill-through/paginated-drillthrough-drill-down-subreports.gif" alt-text="Screenshot showing drillthrough, drilldown, subreports, and nested data regions in a paginated report."::: 
+:::image type="content" source="media/paginated-drill-through/paginated-drillthrough-drill-down-subreports.png" alt-text="Screenshot showing drillthrough, drilldown, subreports, and nested data regions in a paginated report."::: 
   
  A. Drillthrough report  
   
@@ -69,7 +69,6 @@ ms.topic: conceptual
 ##  <a name="InThisSection"></a> In this section  
 
 [Drillthrough reports in a paginated report (Power BI Report Builder)](drillthrough-reports-report-builder.md) Explains reports that open when a user clicks a link in a main report.  
-
  
 [Nested Data Regions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs) Explains nesting one data region inside another, such as a chart nested inside a matrix.  
 

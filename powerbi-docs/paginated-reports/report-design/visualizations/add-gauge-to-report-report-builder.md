@@ -39,6 +39,6 @@ In a Power BI paginated report, when you want to summarize data in a visual form
 ## Next steps
 
  [Nested data regions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs)   
- [Gauges &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs)  
+ [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md)  
   
   
