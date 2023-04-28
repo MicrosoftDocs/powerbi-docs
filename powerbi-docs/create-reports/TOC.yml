@@ -644,6 +644,18 @@
         href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
       - name: Set time-out values for paginated report dataset processing
         href: ../paginated-reports/report-design/setting-time-out-values-for-report-dataset-processing.md
+    - name: Expressions
+      items:
+      - name: Avg function
+        href: ../paginated-reports/report-builder/report-builder-functions-avg-function.md
+      - name: Last function
+        href: ../paginated-reports/report-builder/report-builder-functions-last-function.md
+      - name: Max function
+        href: ../paginated-reports/report-builder/report-builder-functions-max-function.md
+      - name: Multilookup  function
+        href: ../paginated-reports/report-builder/report-builder-functions-multilookup-function.md
+      - name: Previous  function
+        href: ../paginated-reports/report-builder/report-builder-functions-previous-function.md
     - name: Parameters
       items:
       - name: Parameters
