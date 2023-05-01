@@ -23,7 +23,7 @@ For related "What's New" information, see:
 
 ### Export to Excel (Windows)
 
-Now you can export data from a Power BI visual to Excel. Just open the visual's options menu and select **Export data**.
+When applicable, you can now export data from a Power BI visual to Excel. Just open the visual's options menu and select **Export data**.
 
 ## April 2023
 
