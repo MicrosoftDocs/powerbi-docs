@@ -742,12 +742,22 @@
         href: ../paginated-reports/report-design/expression-uses-reports-report-builder.md
       - name: "Built-in collections: Report and group variables references"
         href: ../paginated-reports/report-design/built-in-collections-report-group-variables-references-report-builder.md
+      - name: Avg function
+        href: ../paginated-reports/report-builder/report-builder-functions-avg-function.md
       - name: CountDistinct function
         href: ../paginated-reports/report-design/report-builder-functions-countdistinct-function.md
       - name: CountRows function
         href: ../paginated-reports/report-design/report-builder-functions-countrows-function.md
       - name: First function
         href: ../paginated-reports/report-design/report-builder-functions-first-function.md
+      - name: Last function
+        href: ../paginated-reports/report-builder/report-builder-functions-last-function.md
+      - name: Max function
+        href: ../paginated-reports/report-builder/report-builder-functions-max-function.md
+      - name: Multilookup  function
+        href: ../paginated-reports/report-builder/report-builder-functions-multilookup-function.md
+      - name: Previous  function
+        href: ../paginated-reports/report-builder/report-builder-functions-previous-function.md
     - name: Parameters
       items:
       - name: Parameters
