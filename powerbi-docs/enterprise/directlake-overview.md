@@ -21,9 +21,9 @@ LocalizationGroup: Admin
 
 In DirectQuery mode, the Power BI engine queries the data at the source, which can be slow but avoids having to copy the data. Any changes at the data source are immediately reflected in the query results.
 
-On the other hand, with import mode, performance can be better because the data is more readily available in-memory without having to query the data source each time a report change is made. However, the Power BI engine must first copy the data into the dataset during refresh. Any changes at the source are only picked up with the *next* dataset refresh.
+On the other hand, with import mode, performance can be better because the data is cached and optimized for business-intelligence queries without having to query the data source for each DAX query submitted by a report. However, the Power BI engine must first copy the data into the dataset during refresh. Any changes at the source are only picked up with the *next* dataset refresh.
 
-Direct Lake mode eliminates the import requirement by loading the data directly from the files into memory. Because there's no explicit import process, it's possible to pick up any changes at the data source as they occur, combining the advantages of both DirectQuery and import modes while avoiding their disadvantages. Direct Lake mode can be the ideal choice for analyzing very large datasets and datasets with frequent updates at the data source.
+Direct Lake mode eliminates the import requirement by loading the data directly from OneLake. Unlike DirectQuery, there is no translation to other query languages or query execution on other database systems, yielding performance similar to import mode. Because there's no explicit import process, it's possible to pick up any changes at the data source as they occur, combining the advantages of both DirectQuery and import modes while avoiding their disadvantages. Direct Lake mode can be the ideal choice for analyzing very large datasets and datasets with frequent updates at the data source.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ To learn how to provision a Lakehouse, create a delta table in the Lakehouse, an
 
 #### SQL endpoint
 
-As part of provisioning a Lakehouse, a SQL endpoint for SQL querying and a default dataset for reporting are created and updated with any tables added to the Lakehouse. Although Direct Lake mode doesn't query the SQL endpoint when loading data directly into memory, it's required when a Direct Lake dataset must seamlessly fall back to DirectQuery mode, such as when the data source uses specific features like advanced security or views that can't be read through Direct Lake.
+As part of provisioning a Lakehouse, a SQL endpoint for SQL querying and a default dataset for reporting are created and updated with any tables added to the Lakehouse. While Direct Lake mode doesn't query the SQL endpoint when loading data directly from OneLake, it's required when a Direct Lake dataset must seamlessly fall back to DirectQuery mode, such as when the data source uses specific features like advanced security or views that can't be read through Direct Lake.
 
 #### Data warehouse
 
@@ -233,21 +233,24 @@ By using the Warehouse user interface, you can launch the table selection dialog
 
 ## Known issues and preview limitations
 
-The following are known issues and limitations **during Preview**:
+The following are known issues and limitations during **Preview**:
 
-- Direct Lake datasets have maximum storage limits depending on the Power BI Premium capacity SKU. These limits are likely to change during the public preview phase:
+- Direct Lake size limits are likely to change during **Preview**. More definitive limits will be determined and described in this article by GA (General Availability). If limits are reached, queries are executed in DirectQuery mode.
 
-    |Capacity SKU |Max storage (in GB) per dataset  |
-    |---------|---------|
-    |P1     |   50      |
-    |P2     |   100     |
-    |P3     |   200     |
-    |P4     |   400     |
-    |P5     |   800     |
-
+    | Sku      | # of Row (Million) per table used by the query |
+    |----------|------------------------------------------------|
+    | F2       | 300                                            |
+    | F4       | 300                                            |
+    | F8       | 300                                            |
+    | F16      | 300                                            |
+    | F32      | 700                                            |
+    | P1/F64   | 1500                                           |
+    | P2/F128  | 3000                                           |
+    | P3/F256  | 6000                                           |
+    | P4/F512  | 12000                                          |
+    | P5/F1024 | 24000                                          |
+    
 - You must use the Web modeling experience integrated into Lakehouse to generate Direct Lake datasets. Creating Direct Lake datasets by using Power BI Desktop or XMLA-based automation tools aren't yet supported.
-
-- You can't change the table selection for Direct Lake datasets. You must create a new dataset and select tables prior to dataset creation.
 
 - Direct Lake datasets don't support lake views. You must build your datasets on top of delta tables.
 
