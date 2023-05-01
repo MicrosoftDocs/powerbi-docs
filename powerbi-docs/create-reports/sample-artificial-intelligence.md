@@ -6,7 +6,7 @@ ms.author: alpowers
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/22/2023
+ms.date: 05/01/2023
 LocalizationGroup: Samples
 ---
 # Artificial Intelligence sample for Power BI: Take a tour
@@ -74,7 +74,7 @@ The first report page to explore is **Key Influencers**, where you analyze your 
 
    :::image type="content" source="media/sample-artificial-intelligence/power-bi-top-contributor.png" alt-text="Screenshot of Top contributor to revenue won.":::
 
-1. By interacting with slicers, filters, and other visuals, the Key influencers visual reruns its analysis based on the updated choice. From the **Close % by Product category** stacked bar chart, select the **Furniture** category to generate new insights based upon the updated selection. You see that when the **Product category** is **Furniture** and when the **Sales owner** is **Molly Clark**, you're **1.50x** more likely to win new revenue.
+1. As you interact with slicers, filters, and other visuals, the Key influencers visual reruns its analysis based on the updated choice. From the **Close % by Product category** stacked bar chart, select the **Furniture** category to generate new insights based upon the updated selection. You see that when the **Product category** is **Furniture** and when the **Sales owner** is **Molly Clark**, you're **1.50x** more likely to win new revenue.
 
    :::image type="content" source="media/sample-artificial-intelligence/power-bi-key-influencers-update.png" alt-text="Screenshot of Updated analysis for Key influencers.":::
 
@@ -150,7 +150,7 @@ To learn more, see [Anomaly detection](../visuals/power-bi-visualization-anomaly
 
    :::image type="content" source="media/sample-artificial-intelligence/ask-a-question-by-month.png" alt-text="Screenshot of Q and A segmented by month.":::
 
-3. While columns can be great for comparing one item to another they aren't as useful when displaying movement over time, update the original text to *close % by month in a line chart*.
+3. While columns can be great for comparing one item to another, they aren't as useful when displaying movement over time. Update the original text to *close % by month in a line chart*.
 
    :::image type="content" source="media/sample-artificial-intelligence/ask-a-question-by-month-line-chart.png" alt-text="Screenshot of Q and A in a line chart.":::
 
