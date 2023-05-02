@@ -118,7 +118,7 @@ sections:
       - question: |
           Do I have to assign a license to myself even if I'm the owner?
         answer: |
-          Yes. Any user who wants to use the offer should be assigned a license, even if they own the subscription.
+          No. Buyers gets a license assigned to them automatically. If you want to add more users or update your subscription, go to the [admin center](https://admin.microsoft.com/).
 
       - question: |
           How do we assign the licenses?
@@ -132,12 +132,12 @@ sections:
       - question: |
           Once I assign a license, how long does it take until I can use it?
         answer: |
-          After you are assigned a license in the Microsoft 365 Admin Center, it should be available within an hour.
+          After you are assigned a license in the Microsoft 365 Admin Center, it should be available within a few minutes.
 
           * If you're using the licensed visual in the Power BI Service, refresh the report by hitting F5.
           * If you're using the licensed visual in the Power BI Desktop, close and reopen it.
 
-          If, after you refresh, the license is still not available, wait a while and try again. It could take up to an hour.
+          If, after you refresh, the license is still not available, wait a while and try again. It could take up to a five minutes.
 
       - question: |
           As an admin can I see the subscriptions that were purchased in my organization?
