@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 03/01/2023
+ms.date: 05/02/2023
 ---
 
 # Collaborate with Power BI in Microsoft Teams, Outlook, and Office
