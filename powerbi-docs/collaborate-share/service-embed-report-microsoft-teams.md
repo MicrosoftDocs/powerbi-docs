@@ -29,7 +29,7 @@ For information about the different roles, see [Roles in workspaces](service-rol
 To view a report on the **Power BI** tab in Teams, your users need to meet these requirements:
 
 - They're Teams users with access to channels and chats.
-- They have permission in Power BI to view the items in Power BI.
+- They have permission to view the items in Power BI.
 
 See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md) for background on how Power BI and Microsoft Teams work together, including other requirements.
 
@@ -53,9 +53,9 @@ Follow these steps to embed your report in a Microsoft Teams channel or chat.
 
     :::image type="content" source="media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab-configuration-screen.png" alt-text="Screenshot of the configuration screen of new added Power BI tab for Microsoft Teams.":::
 
-1. Choose any of these options to integrate the report:
+1. Choose any of these options to embed an item in the tab:
 
-    - Paste a link to a supported item in the **Paste a Power BI link** box and select **Add tab**. A new tab is added.
+    - Paste a link to a supported item in the **Paste a Power BI link** box and select **Add tab**. The tab is then configured.
 
         > [!NOTE]
         > If you use **Share link** to embed your report, make sure that other users have access to this report and have the required permissions. They don't get access automatically unless your sharing link includes permissions.
@@ -66,12 +66,12 @@ Follow these steps to embed your report in a Microsoft Teams channel or chat.
 
 ### Reset a report in Microsoft Teams tab
 
-If you no longer need a report in a **Power BI** tab, you can reset it and configure a new report. Follow these steps.
+If you want to change the item in a **Power BI** tab, you can reset it and configure a new item. Follow these steps.
 
 1. Right-click the Teams tab name, and select **Settings**.
 1. Select the **Reset tab** button.
 
-The tab resets. You see a configuration screen where you can set up a new report, app, or scorecard.
+The tab resets. You will see the configuration screen in the tab where you can set a new report, app, or scorecard.
 
 The **Settings** dialog helps you adjust permissions for reports. To set permission for organizational apps, work with the app owners. 
 
