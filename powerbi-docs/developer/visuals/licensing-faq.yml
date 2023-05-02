@@ -22,9 +22,9 @@ sections:
           *Anyone* can purchase a license, and assign the license to themselves or others.
 
       - question: |
-          How can I pay for the visuals?
+          How can I purchase and pay for the visuals?
         answer: |
-          Anyone can complete the checkout path in [AppSource](https://appsource.microsoft.com/), and pay for the licenses with a credit card.  
+          Select **Buy now** and complete the checkout path in [AppSource](https://appsource.microsoft.com/). You can pay for the licenses with a credit card.  
 
           Billing and Global admins can also pay by [invoice](/microsoft-365/commerce/billing-and-payments/pay-for-subscription-billing-profile#paying-by-invoice) if such a payment method is set up for your company.
 
