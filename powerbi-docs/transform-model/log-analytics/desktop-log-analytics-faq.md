@@ -1,5 +1,5 @@
 ---
-title: Azure Log Analytics in Power BI - FAQ (Preview)
+title: Azure Log Analytics in Power BI - FAQ
 description: Learn about how Power BI is integrating with Azure Log Analytics and the answers to frequently asked questions about the changes.
 author: davidiseminger
 ms.author: davidi
@@ -7,20 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 02/13/2023
+ms.date: 05/02/2023
 LocalizationGroup: Transform and shape data
 ---
-# Azure Log Analytics in Power BI - FAQ (Preview)
+# Azure Log Analytics in Power BI - FAQ
 
 Power BI is integrating with Azure Log Analytics (LA) to enable administrators and Premium workspace owners to configure a Log Analytics connection to their Power BI subscription.
-
-This article is a collection of Frequently Asked Questions (FAQ) for reference during the preview period. When **Azure Log Analytics for Power BI** becomes generally available, this FAQ will be incorporated into other articles about the feature.
 
 ## Frequently asked questions
 
 **Question:** What areas of Power BI are available for Log Analytics integration?  
 
-*Answer:* Dataset activity logs (such as Analysis Services engine traces) are currently available in the Preview.  
+*Answer:* Dataset activity logs (such as Analysis Services engine traces) are currently available.  
 
 **Question:** When should I use Log Analytics for the Analysis Services engine?  
 
@@ -48,7 +46,7 @@ For workspace level configuration, you can add an Azure admin as a Power BI work
 
 **Question:**  What happens if I send logs from many Power BI workspaces to the same Log Analytics workspace? How do I differentiate?  
 
-*Answer:*  This configuration is currently not supported.
+*Answer:*  Each log entry is marked with the correspondent PowerBI Workspace Id.
 
 **Question:**  Can we configure Log Analytics for non-Premium workspaces?  
 
@@ -94,5 +92,5 @@ For workspace level configuration, you can add an Azure admin as a Power BI work
 
 The following articles can help you learn more about Power BI, and about its integration with Azure Log Analytics.
 
-* [Using Azure Log Analytics in Power BI (Preview)](desktop-log-analytics-overview.md)
-* [Configuring Azure Log Analytics for Power BI (Preview)](desktop-log-analytics-configure.md)
+* [Using Azure Log Analytics in Power BI](desktop-log-analytics-overview.md)
+* [Configuring Azure Log Analytics for Power BI](desktop-log-analytics-configure.md)
