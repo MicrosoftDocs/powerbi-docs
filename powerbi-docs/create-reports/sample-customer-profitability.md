@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/23/2023
+ms.date: 05/01/2023
 LocalizationGroup: Samples
 ---
 # Customer Profitability sample for Power BI: Take a tour
@@ -208,7 +208,7 @@ This report page provides a different slice of the data. It looks at gross margi
 
 ### Executive Scorecard page
 
-This page has a custom page size format.
+This page has a custom page size format, optimized for display on a mobile device..
 
 ## Dig into the data by asking questions with Q&A
 
@@ -228,7 +228,7 @@ For your analysis, it might be helpful to determine which industry generates the
 
 ## Dig deeper by adding filters
 
-Take a look at the Distribution industry.  
+Go back to the report and take a look at the Distribution industry.  
 
 1. Open the **Industry Margin Analysis** report page.
 
@@ -242,9 +242,11 @@ Take a look at the Distribution industry.
 
 1. The **Gross Margin % by Month and Executive** chart tells you that only Valery and Tina have customers in this industry and Valery worked with this industry only from June to November.
 
-1. Select **Tina** and then **Valery** in the **Gross Margin by Month and Executive** chart legend. Notice Tina's portion of the **Total Revenue by Product** chart is small compared to Valery.
+1. Select **Tina** and then **Valery** in the **Gross Margin by Month and Executive** chart legend. Notice Tina's portion of the **Total Revenue by Product** chart is small compared to Valery's.
 
-1. To see actual revenue, select the Q&A box in the dashboard and enter *total revenue by executive for distribution by scenario*.  
+### Use Q&A to see details
+
+1. To see actual revenue, return to the dashboard, select the Q&A box, and enter *total revenue by executive for distribution by scenario*.  
 
    :::image type="content" source="media/sample-customer-profitability/power-bi-qna2.png" alt-text="Screenshot shows where you can type a question in the Q&A page." lightbox="media/sample-customer-profitability/power-bi-qna2.png":::
 
