@@ -118,7 +118,7 @@ sections:
       - question: |
           Do I have to assign a license to myself even if I'm the owner?
         answer: |
-          No. Buyers gets a license assigned to them automatically. If you want to add more users or update your subscription, go to the [admin center](https://admin.microsoft.com/).
+          No. Buyers get a license assigned to them automatically. If you want to add more users or update your subscription, go to the [admin center](https://admin.microsoft.com/).
 
       - question: |
           How do we assign the licenses?
