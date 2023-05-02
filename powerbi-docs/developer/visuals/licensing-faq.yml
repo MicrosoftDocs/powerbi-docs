@@ -137,7 +137,7 @@ sections:
           * If you're using the licensed visual in the Power BI Service, refresh the report by hitting F5.
           * If you're using the licensed visual in the Power BI Desktop, close and reopen it.
 
-          If, after you refresh, the license is still not available, wait a while and try again. It could take up to a five minutes.
+          If, after you refresh, the license is still not available, wait a while and try again. It could take up to five minutes.
 
       - question: |
           As an admin can I see the subscriptions that were purchased in my organization?
