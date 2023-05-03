@@ -49,6 +49,9 @@ ms.author: maggies
   
      For more information, see [Add, Change, or Delete Available Values for a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-available-values-for-a-report-parameter).  
 
+## Considerations and limitations
+  Dates in multi-value parameter dropdown are displayed in US format (mm/dd/yyyy) even if customer locale is non-US.
+
 ## Next steps  
  [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs)   
  [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-available-values-for-a-report-parameter)  
