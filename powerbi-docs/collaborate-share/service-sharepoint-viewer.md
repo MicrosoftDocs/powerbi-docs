@@ -122,7 +122,7 @@ The preview provides a limited experience with the report where you can download
 
 ## About the OneDrive and SharePoint capabilities
 
-###Dataset mode
+### Dataset mode
 
 For a Power BI report to load in OneDrive or SharePoint the data must be in import mode. Other modes may be supported in the future.
 
