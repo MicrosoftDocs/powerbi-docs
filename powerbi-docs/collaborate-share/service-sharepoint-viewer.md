@@ -74,7 +74,7 @@ To change the page view, select the ‘Page view’ button at the top left of th
 
 ### Setting high-contrast colors
 
-To add high contrast colors to the report, select one of the high-contrast color options from the 'High-contrast-colors' button in the top left corner of the report.
+You can change your report to include high-contrast colors. To change the color, select one of the options from the 'High-contrast color' button in the top left corner of the report. 
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-high-contrast-color.png" alt-text="Screenshot of high contrast color options":::
 
@@ -88,7 +88,7 @@ To view saved bookmarks, select the ‘Bookmarks’ button from the top left cor
 
 You can rename the file in two different ways. 
 
-The first option is to select the name of the file at the top left corner of the report. After you click out of the box the new name is saved.
+The first option is to select the name of the file at the top left corner of the report. After you click out of the box, the new name is saved.
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-rename-select.png" alt-text="Screenshot of renaming Power BI file":::
 
@@ -135,8 +135,8 @@ In order to view a report in OneDrive or SharePoint, users must:
 
 ### Considerations and limitations
 -	Free users can't view reports in OneDrive and SharePoint directly in the browser.
--	This capabilities do not work with personal OneDrive accounts.
--	This capabilities are not available in sovereign cloud tenant
+-	These capabilities don't work with personal OneDrive accounts.
+-	These capabilities aren't available in sovereign cloud tenant
 -	Power BI reports can be viewed with a limit of size up to 1 GB.
 -	When you open the ‘Preview’ experience, users are required to authenticate before they can view the file. 
 -	Row-level security isn't supported at this time. 
@@ -153,7 +153,7 @@ The new capabilities respect the OneDrive and SharePoint organizational settings
 
 ### Creation of system workspaces
 
-System workspaces are created for this new functionality. Admins will be able to see the created workspaces in the Power BI Admin portal via the workspace tab. However, admins can't modify workspaces (delete, modify access) from within Power BI. 
+System workspaces are created for this new functionality. Admins are able to see the created workspaces in the Power BI Admin portal via the workspace tab. However, admins can't modify workspaces (delete, modify access) from within Power BI. 
 Almost every Office user relies on OneDrive and SharePoint to share and collaborate on Office documents and files. In this new update, users can view and edit Power BI reports from within OneDrive and SharePoint without needing to download Power BI Desktop.
 
 
