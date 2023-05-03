@@ -50,13 +50,13 @@ In this example, only workspace logs from *Workspace A* are sent to a dedicated 
 
 In this example, workspace logs from two differentPower BI workspaces are each sent to separate, dedicated Log Analytics workspaces:
 
-:::image type="content" source="media/desktop-log-analytics-overview/log-analytics-04.png" alt-text="Diagram of example two, separate workspace logs sent do dedicated log workspaces.":::
+:::image type="content" source="media/desktop-log-analytics-overview/log-analytics-04.png" alt-text="Diagram of example two, separate workspace logs sent to dedicated log workspaces.":::
 
 These examples highlight the various ways you can use Azure Log Analytics with Power BI, and get the log information you need.
 
 In another article, you can see how to configure Azure Log Analytics to work with Power BI, with specific steps and requirements to get your logging working properly.
 
-**Example 3: Workspaces logs sent to dedicated Log Analytics workspace**
+**Example 3: Workspace logs sent to dedicated Log Analytics workspace**
 
 In this example, workspace logs from multiple Power BI workspaces are each sent to a dedicated Log Analytics workspace:
 

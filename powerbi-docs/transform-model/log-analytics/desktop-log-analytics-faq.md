@@ -46,7 +46,7 @@ For workspace level configuration, you can add an Azure admin as a Power BI work
 
 **Question:**  What happens if I send logs from many Power BI workspaces to the same Log Analytics workspace? How do I differentiate?  
 
-*Answer:*  Each log entry is marked with the correspondent PowerBI Workspace Id.
+*Answer:*  Each log entry is marked with the correspondent Power BI Workspace Id.
 
 **Question:**  Can we configure Log Analytics for non-Premium workspaces?  
 
@@ -68,9 +68,9 @@ For workspace level configuration, you can add an Azure admin as a Power BI work
 
 *Answer:*  No new Log Analytics configurations can be made at the workspace-level if that occurs. Any existing workspaces that have Log Analytics already configured will continue to send logs.  
 
-**Question:**  Do you support Blob Store and Event Hub destinations in Log Analytics?  
+**Question:**  Do you support Blob Store and Event Hubs destinations in Log Analytics?  
 
-*Answer:*  Blob Store and Event Hub destinations aren't currently supported, but your feedback is welcomed on how useful you would find those destinations.  
+*Answer:*  Blob Store and Event Hubs destinations aren't currently supported, but your feedback is welcomed on how useful you would find those destinations.  
 
 **Question:**  What happens if I move my workspace out of a Premium capacity?  
 
