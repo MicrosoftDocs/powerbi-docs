@@ -70,7 +70,7 @@ To change the page view, select the ‘Page view’ button at the top left of th
 - Fit to width
 - Actual size
 
-:::image type="content" source="media/service-sharepoint-viewer/fit-to-page.png" alt-text="Screenshot of fit to page functionality":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-fit-to-page.png" alt-text="Screenshot of fit to page functionality":::
 
 ### Setting high-contrast colors
 
@@ -102,7 +102,7 @@ Click out of the box to see the new saved name.
 
 You can also rename the file by clicking on the file menu and selecting ‘Rename’.
 
-:::image type="content" source="media/service-sharepoint-viewer/rename.png" alt-text="Screenshot of renaming the Power BI file from the file menu":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-rename.png" alt-text="Screenshot of renaming the Power BI file from the file menu":::
 
 ### Download a copy of the report
 
