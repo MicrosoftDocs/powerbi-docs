@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 05/4/2023
+ms.date: 05/04/2023
 ---
 
 # Active vs inactive relationship guidance
