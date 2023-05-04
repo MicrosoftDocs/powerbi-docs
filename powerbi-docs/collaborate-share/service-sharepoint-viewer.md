@@ -19,10 +19,10 @@ Authors can quickly view Power BI files in OneDrive and SharePoint without requi
 ## How to enable viewing Power BI files in OneDrive and SharePoint
 
 > [!NOTE]
-> Note: This is prerelease documentation and some capabilities may not be available in your tenant. 
+> This is prerelease documentation and some capabilities may not be available in your tenant. 
 
 > [!NOTE]
-> Note: By default viewing Power BI files in OneDrive and SharePoint is disabled. Work with you Power BI Admin to enable this capability.
+> Viewing Power BI files in OneDrive and SharePoint is disabled by default. Work with you Power BI Admin to enable this capability.
 
 Admins must **enable** the **Users can view Power BI items saved to OneDrive and SharePoint** setting in the admin portal. The setting is found under Tenant settings > Integration settings > Users can view Power BI items saved in OneDrive and SharePoint (Preview). 
 
@@ -36,7 +36,7 @@ Viewing Power BI reports stored in OneDrive and SharePoint directly in your brow
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open.png" alt-text="Screenshot of sharepoint library with Power BI file":::
 
-You can also right click on the report or hit the ellipses and select: open > open in browser.  
+You can also right click on the report or hit the ellipses and select 'open' > 'open in browser'.  
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open-in-browser.png" alt-text="Screenshot of clicking on a Power BI file to open":::
 
@@ -50,8 +50,9 @@ Once the report is open, you can interact with the visuals and explore the under
 
 ### Share a link to the report with others
 
-You can share a link to the Power BI report with others in two ways. 
-The first option is to share from the file menu. After you click on the file menu, select ‘share’ from the left-hand options. 
+You can share a link to a Power BI file with others in two ways. 
+
+The first option starts with opening the file menu. Select 'share' from the left-hand menu, then click 'Share a link'.
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-menu.png" alt-text="Screenshot of sharing from the file menu":::
 
@@ -80,7 +81,7 @@ You can change your report to include high-contrast colors. To change the color,
 
 ### View saved bookmarks
 
-To view saved bookmarks, select the ‘Bookmarks’ button from the top left corner of the report. After you click on the button, a bookmarks pane will pop out on the right-hand side of the browser. A list of previously created bookmarks appear for you to choose from. Clicking on one of the bookmarks shows a saved filtered version of the report assigned to that bookmark.
+To view saved bookmarks, select the ‘Bookmarks’ button from the top left corner of the report. After you click on the button, a bookmarks pane will pop out on the right-hand side of the browser. A list of previously created bookmarks appear for you to choose from. Clicking on one of the bookmarks shows a set filtered version of the report assigned to that bookmark.
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-bookmark.png" alt-text="Screenshot of bookmarks in Power BI file in the browser":::
 
@@ -88,7 +89,7 @@ To view saved bookmarks, select the ‘Bookmarks’ button from the top left cor
 
 You can rename the file in two different ways. 
 
-The first option is to select the name of the file at the top left corner of the report. After you click out of the box, the new name is saved.
+The first option starts with selecintg the file name at the top left corner of the report. 
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-rename-select.png" alt-text="Screenshot of renaming Power BI file":::
 
@@ -104,7 +105,7 @@ You can also rename the file by clicking on the file menu and selecting ‘Renam
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-rename.png" alt-text="Screenshot of renaming the Power BI file from the file menu":::
 
-### Download a copy of the report
+### Download a copy
 
 To download a copy of the report to your device, click on the file menu and select ‘Download a copy’. A version of the file is copied into the Power BI Service to then be downloaded to your device. You can then open the file in Power BI Desktop to edit and publish the report to the Power BI Service. 
 
@@ -124,11 +125,11 @@ The preview provides a limited experience with options to download the .pbix, sh
 
 ### Dataset mode
 
-For a Power BI file to load in OneDrive or SharePoint the data must be in import mode. Other modes may be supported in the future.
+For a Power BI file to load in OneDrive or SharePoint the data must be in **import** mode. Other modes may be supported in the future.
 
 ### Prerequisites to viewing report in OneDrive and SharePoint
 
-In order to view a report in OneDrive or SharePoint, users must:
+To view a report in OneDrive or SharePoint, users must:
 -	Be signed-in to OneDrive with their Azure Active Directory account
 -	Have at least read access to the file
 -	Have a Power BI Pro or E5 license
