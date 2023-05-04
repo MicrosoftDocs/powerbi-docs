@@ -89,7 +89,7 @@ To view saved bookmarks, select the ‘Bookmarks’ button from the top left cor
 
 You can rename the file in two different ways. 
 
-The first option starts with selecintg the file name at the top left corner of the report. 
+The first option starts with selecting the file name at the top left corner of the report. 
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-rename-select.png" alt-text="Screenshot of renaming Power BI file":::
 
