@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/28/2023
+ms.date: 05/03/2023
 LocalizationGroup: Samples
 ---
 
