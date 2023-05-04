@@ -113,7 +113,7 @@ The currently supported notifications are in the **Actions and updates** and **M
 
 ## Admin control over notifications 
 
-We recommend that Power BI admins allow notifications in Teams. However, the [**Microsoft Teams integration in the Power BI service**](../admin/service-admin-portal-export-sharing.md#microsoft-teams-integration-in-the-power-bi-service) tenant setting controls whether the Power BI service sends these notifications. When disabled, users no longer receive notifications in Microsoft Teams. 
+We recommend that Power BI admins allow notifications in Teams. However, the [**Microsoft Teams integration in the Power BI service**](../admin/service-admin-portal-export-sharing.md#enable-microsoft-teams-integration-in-the-power-bi-service) tenant setting controls whether the Power BI service sends these notifications. When disabled, users no longer receive notifications in Microsoft Teams. 
 
 To help users receive notifications in Teams, you can work with the your Teams admins to install Power BI broadly in the organization through an app setup policy.
 

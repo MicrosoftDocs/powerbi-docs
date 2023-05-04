@@ -239,13 +239,13 @@ To turn this setting on:
 1. Under **Apply to**, select the scope of users that the setting will affect.
 1. Select **Apply** to save your changes.
 
-## Users can send email subscriptions to external users
+## Users can set up email subscriptions
 
 Users can create email subscriptions to reports and dashboards. Read [Email subscriptions for reports and dashboards in the Power BI service](../collaborate-share/end-user-subscribe.md) to learn more.
 
 To turn this setting on:
 
-1. Still in the **Export and sharing settings** section of the **Tenant Settings**, find the setting called **Users can send email subscriptions to external users**.
+1. Still in the **Export and sharing settings** section of the **Tenant Settings**, find the setting called **Users can set up email subscriptions**.
 1. Turn the switch on.
 1. Select **Apply** to save your changes.
 
@@ -266,7 +266,7 @@ To turn on this setting:
 
 B2B users can be specifically granted permission to view content in Power BI by a Power BI tenant admin. So, there may be instances that admin may want B2B users to receive email subscriptions but not other external users.  
 
-When this setting is on, users in the organization can subscribe B2B users (if they also have permissions and license to subscribe others), and  B2B users can create their own content subscription to which they have access.
+When this setting is on, users in the organization can subscribe B2B users [(if they also have permissions and license to subscribe others)](../collaborate-share/end-user-subscribe.md#subscribe-others), and  B2B users can create their own content subscription to which they have access.
 
 To turn on this setting:
 
