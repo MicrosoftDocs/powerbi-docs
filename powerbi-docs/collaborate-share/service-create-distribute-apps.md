@@ -5,19 +5,27 @@ author: maggiesMSFT
 ms.author: maggies
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
+ms.search.form: Publish an app in Power BI
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 12/01/2022
+ms.date: 05/02/2023
 
 LocalizationGroup: Share your work
 ---
 # Publish an app in Power BI
 
-In Power BI, you can create official packaged content, then distribute it to a broad audience as an *app*. You [create apps in *workspaces*](service-create-the-new-workspaces.md), where you can collaborate on Power BI content with your colleagues. Then you can publish the finished app to large groups of people in your organization. The [app consumer view](#app-consumer-view) section of this article outlines the app consumer experience.
+In Power BI, you can create official packaged content, then distribute it to a broad audience as an *app*. You [create apps in *workspaces*](service-create-the-new-workspaces.md), where you can collaborate on Power BI content with your colleagues. Then you can publish the finished app to large groups of people in your organization. The [app consumer view](#app-consumer-view) section of this article outlines the app consumer experience in the Power BI service and in the Power BI mobile apps.
 
 :::image type="content" source="media/service-create-distribute-apps/power-bi-apps.png" alt-text="Screenshot of Power Bi Apps":::
 
-Your business users often need multiple Power BI dashboards, reports, and other content to run their business. With Power BI apps, you can create collections of content, and publish these collections as apps to your whole organization or to specific people or groups. You can create multiple *audiences* for your app, and show or hide different content to each audience. For you as a report creator or admin, apps and audiences make managing permissions on these collections easier.
+Here are the steps to publishing an app in power BI:
+
+- [Create the app](#create-and-publish-your-app)
+- [Add content to the app](#add-content-to-the-app)
+- [Create and manage multiple audiences](#create-and-manage-multiple-audiences)
+- [Publish the app](#publish-the-app)
+
+Your business users often need multiple Power BI dashboards, reports, and other content to run their business. With Power BI apps, you can create collections of content and publish these collections as apps, to your whole organization or to specific people or groups. You can create multiple *audiences* for your app, and show or hide different content to each audience. For you as a report creator or admin, apps and audiences make managing permissions on these collections easier.
 
 Business users get your apps in a few different ways:
 
@@ -78,7 +86,7 @@ On the **Content** tab, you add the content from the workspace to the app.
 
 1. Select **Next: Add audience**.
 
-### Create and manage audiences
+### Create and manage multiple audiences
 
 On the **Audience** tab, you create and manage audience groups within the app.
 
@@ -108,7 +116,7 @@ On the **Audience** tab, you create and manage audience groups within the app.
     > [!NOTE]
     > The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least the Contributor role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
 
-### Save a copy of a report
+### Allow saving a copy of a report
 
 You can allow app users who have build permissions to save copies of reports to their workspace. Once they save the reports, the app users can customize the reports copies to meet their needs. 
 
@@ -220,7 +228,7 @@ Keep these things in mind when pushing apps to end users:
 * Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 
 ## App consumer view
-App consumers can only see the content based on the access permissions for their respective audience groups. Consumers who have access to multiple audience groups see group tabs on the top bar to switch between different audience views easily. For example, if the user is part of both product team and sales team groups, they will see three view tabs, as shown in the following image. By default, consumers see the All tab view, which is a consolidated view showing all content that they have access to. App consumers can browse different audience group tabs to see the content for each group. 
+App consumers in the Power BI service and in the Power BI mobile apps only see the content based on the access permissions for their respective audience groups. Consumers who have access to multiple audience groups see group tabs on the top bar to switch between different audience views easily. For example, if the user is part of both product team and sales team groups, they will see three view tabs, as shown in the following image. By default, consumers see the All tab view, which is a consolidated view showing all content that they have access to. App consumers can browse different audience group tabs to see the content for each group. 
 
 **The consolidated *All* view**
 :::image type="content" source="media/service-create-distribute-apps/audience-all-view.png" alt-text="Screenshot showing All view for app consumers.":::
@@ -258,9 +266,10 @@ Things to keep in mind about publishing apps:
 * In order to see an entire report page pinned as a live pin to a dashboard or a drill-down report to work, the app creators have to include the report in the app audience. 
 * The support site URL is shown in the item information card.
 * By default, all the newly added content, to an already published app, is marked as invisible. You must go to each audience group and manually unhide it.
-* Currently, having multiple audiences isn't supported in Power BI Mobile apps and deployment pipelines. This is a temporary limitation.
+* Having multiple audiences isn't fully supported in deployment pipelines. Content visibility of new content that you add to an org app must still be managed manually via audience management.
 * You can't open an added link or see its content if you chose to open the link in the content area.
-* Apps can have a maximum of 200 dashboards. 
+* Apps can have a maximum of 200 dashboards.
+* If you include a report that uses chained datasets, also known as [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. 
 
 ## Next steps
 

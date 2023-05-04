@@ -30,7 +30,7 @@ For each strategy, there are defaults based on the shape and type of data being 
 * **BottomN**: Show only the last N items.  Useful for monitoring frequently updated data.
 * **High-density sampling**: An improved sampling algorithm that better respects outliers and/or the shape of a curve.
     * **Binned line sampling**: Sample data points based on outliers in bins across an axis.
-	* **Overlapping points sampling**: Sample data points based on overlapping values to preserve outliers.
+    * **Overlapping points sampling**: Sample data points based on overlapping values to preserve outliers.
 
 ## Statistics
 Certain models can provide statistics about the number of values for certain columns. When such information is present, we leverage that information to provide better balancing across multiple hierarchies if a visual doesn't explicitly override the count of values for a strategy.
@@ -59,10 +59,10 @@ For more information about area chart visuals, see [How line sampling works](../
 - In categorical mode:
     - Categories: Virtualization by using Window of 500 rows at a time.
     - Series: Top 60
-	- In scalar mode (could use dynamic limits):
-        - Max points: 10,000
-		- Categories: Sample of 500 values
-		- Series: Top 20 values
+- In scalar mode (could use dynamic limits):
+    - Max points: 10,000
+    - Categories: Sample of 500 values
+    - Series: Top 20 values
 
 ### Card (multirow)
 - Values: Virtualization by using Window of 200 rows at a time.
@@ -71,7 +71,7 @@ For more information about area chart visuals, see [How line sampling works](../
  A combo chart uses the same strategies as a column chart. Notice that the line in the combo chart doesn't use the high-density algorithm that the line chart uses.
 
 ### Power BI visuals
-Power BI visuals can get up to 30,000, but it's up to the visual authors to indicate which strategies to use. The default limit is 1,000, but the visual creator can change that up to a maximum of 30,000.
+Power BI visuals can get up to 30,000 data points, but it's up to the visual authors to indicate which strategies to use. The default limit is 1,000, but the visual creator can change that up to a maximum of 30,000.
 
 ### Doughnut
 - Max points: 3,500
@@ -89,7 +89,7 @@ The filled map can use statistics or dynamic limits. Power BI tries to use reduc
 - Categories: Top 3,500
 
 ### KPI
-- Trend axis
+For the Trend axis, the following limits are used:
 - Bottom 3,500
 
 ### Line chart
@@ -123,7 +123,7 @@ For more information, see [High density line sampling](../create-reports/desktop
 - Values: Multiple values don't count against the data reduction.
 
 ### PowerApps visuals
-PowerApps visuals can get up to 30,000, but it's up to the visual authors to indicate which strategies to use. The default limit is 1,000, but the visual creator can change that up to a maximum of 30,000.
+PowerApps visuals can get up to 30,000 data points, but it's up to the visual authors to indicate which strategies to use. The default limit is 1,000, but the visual creator can change that up to a maximum of 30,000.
 
 ### Radial gauge
 No reduction strategy.
@@ -146,10 +146,10 @@ R & Python visuals are limited to 150,000 rows. If more than 150,000 rows are se
 - In categorical mode:
     - Categories: Virtualization (data windowing) by using Window of 500 rows at a time.
     - Series: Top 60
-	- In scalar mode (could use dynamic limits):
-        - Max points: 10,000
-		- Categories: Sample of 500 values
-		- Series: Top 20 values
+- In scalar mode (could use dynamic limits):
+    - Max points: 10,000
+    - Categories: Sample of 500 values
+    - Series: Top 20 values
 
 ### Shape map (Preview)
 The shape map can use statistics or dynamic limits.

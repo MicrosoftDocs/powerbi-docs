@@ -7,13 +7,13 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/13/2023
+ms.date: 04/17/2023
 LocalizationGroup: Data refresh
 ---
 
 # Refresh summaries for Power BI
 
-The Power BI **Refresh summary** page, found in the Power BI Admin portal, provides control and insight into your refresh schedules, capacities, and potential refresh schedule overlaps. You can use the refresh summary page to determine whether you should adjust refresh schedules, learn error codes associated with refresh issues, and properly manage your data refresh scheduling.
+The Power BI **Refresh summary** page, found in the Power BI Admin portal, provides control and insight into your refresh schedules, capacities, and potential refresh schedule overlaps for your Power BI Premium capacities. You can use the refresh summary page to determine whether you should adjust refresh schedules, learn error codes associated with refresh issues, and properly manage your data refresh scheduling.
 
 The refresh summaries page has two views:
 
@@ -49,8 +49,6 @@ You can select the **Schedule** view by selecting **Schedule** in refresh summar
 :::image type="content" source="media/refresh-summaries/refresh-summaries-02a.png" alt-text="Screenshot shows the schedule tab of the Refresh schedule page in close up." lightbox="media/refresh-summaries/refresh-summaries-02a.png":::
 
 The **Schedule** view is very useful in determining whether the refresh events scheduled are properly spaced, allowing for all refreshes to complete without overlap, or whether you have scheduled refresh events that are taking too long and creating resource contention. If you find such resource contention, you should adjust your refresh schedules to avoid the conflicts or overlap, so your scheduled refreshes can complete successfully.
-
-![Screenshot shows the schedule tab of the Refresh schedule page.](media/refresh-summaries/refresh-summaries-02.png)
 
 The **Refresh time booked (minutes)** column is a calculation of the average of up to 60 records for each associated dataset. The numeric value for each 30-minute time slot is the sum of minutes calculated for all scheduled refreshes scheduled to start on the time slot *and* any scheduled refreshes set to start on the *previous* time slot, but whose average duration overflows into the time slot that's selected.
 

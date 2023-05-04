@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 09/19/2022
+ms.date: 03/07/2023
 LocalizationGroup: Administration
 ---
 
@@ -62,7 +62,7 @@ For dataset owners to be able to enable single sign-on for DirectQuery connectio
 
 ![Screenshot of Snowflake (SSO)tenant switch.](media/service-admin-portal-integration/powerbi-admin-portal-snowflake-sso-setting.png)
 
-## Azure AD Single Sign-On (SSO) for Gateway
+## Azure AD single sign-on (SSO) for Gateway
 
 This setting enables Azure Active Directory (Azure AD) single sign-on (SSO) through on-premises data gateways to cloud data sources that rely on Azure AD-based authentication. It gives seamless Azure AD SSO connectivity to Azure-based data sources, such as Azure Synapse Analytics (SQL DW), Azure Data Explorer, Snowflake on Azure, and Azure Databricks through an on-premises data gateway.
 
@@ -79,6 +79,15 @@ Because of this possible threat, the Azure AD single sign-on feature is disabled
 This setting enables the Power BI/Power Platform Solutions integration from the Power BI side (admin settings also have to be turned on in Power Platform). When the integration is enabled, when Power BI components are created in a Power Apps solution, a special Power BI workspace dedicated to the Power Apps environment is created in Power BI to store copies of the Power BI report and dataset that are being to create the component. For more detail, see [Power BI content management in Power Apps solutions](/power-apps/maker/model-driven-apps/power-bi-content-management-power-apps-solutions) and [About Power BI in Power Apps Solutions](../collaborate-share/service-power-bi-powerapps-integration-about.md).
 
 This setting is on by default. To change the setting, go to the Power BI Admin portal, select **Tenant settings > Integration settings > Power Platform Solutions Integration (Preview)**, and set the toggle as desired.
+
+## Power Platform interregional access
+
+When this setting and the Power Platform Power BI components setting **Allow information sharing between this environment and Power BI workspaces in other geographic regions** (see [Manage feature settings](/power-platform/admin/settings-features)) are **ON**, information sharing between Power BI workspaces and Power Platform environments in other geographic regions is allowed. For more information, see [Cross-geo operations](../collaborate-share/service-power-bi-powerapps-integration-considerations.md#cross-geo-operations).
+
+This setting is on by default. To change the setting, go to the Power BI Admin portal, select **Tenant settings > Integration settings > Power Platform interregional access**, and set the toggle as desired.
+
+> [!NOTE]
+> Cross-geo operations in the Power BI/Power Apps solutions integration are allowed only when both this setting and the Power Platform setting are **ON**.
 
 ## Next steps
 

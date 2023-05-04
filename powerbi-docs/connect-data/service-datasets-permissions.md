@@ -52,7 +52,7 @@ When users share reports or datasets, links are created that provide permissions
 
 ### Permissions granted in an app
 
-Users may acquire permissions on a dataset used in an app if the app owner allows this in the [app permissions configuration](../collaborate-share/service-create-distribute-apps.md#create-and-manage-audiences). 
+Users may acquire permissions on a dataset used in an app if the app owner allows this in the [app permissions configuration](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences). 
 
 ### Permissions granted via REST APIs
 

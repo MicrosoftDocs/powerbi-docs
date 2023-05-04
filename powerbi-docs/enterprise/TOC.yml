@@ -14,6 +14,8 @@
         href: aggregations-auto-configure.md
     - name: Power BI site reliability engineering model
       href: service-admin-site-reliability-engineering-model.md
+    - name: Release management and deployment process
+      href: service-admin-release-management.md     
     - name: Bring your own encryption keys
       href: service-encryption-byok.md
     - name: Using Azure AD B2B
@@ -147,10 +149,12 @@
     - name: Data loss prevention
       expanded: false
       items:              
-      - name: DLP policies for Power BI (preview)
-        href: service-security-dlp-policies-for-power-bi.md
-      - name: Overriding DLP policies (preview)
-        href: service-security-dlp-policies-for-power-bi-override.md
+      - name: Overview of DLP policies for Power BI
+        href: service-security-dlp-policies-for-power-bi-overview.md
+      - name: Configure a DLP policy for Power BI
+        href: service-security-dlp-policies-for-power-bi-configure.md
+      - name: Respond to a DLP policy violation
+        href: service-security-dlp-policies-for-power-bi-respond.md
     - name: Microsoft Defender for Cloud Apps with Power BI
       href: service-security-using-defender-for-cloud-apps-controls.md
   - name: Security
@@ -167,7 +171,7 @@
       href: service-admin-ols.md     
     - name: Privacy levels
       href: desktop-privacy-levels.md
-    - name: Using service tags with Power BI
+    - name: Use service tags with Power BI
       href: service-premium-service-tags.md
     - name: Use private links for Power BI
       href: service-security-private-links.md

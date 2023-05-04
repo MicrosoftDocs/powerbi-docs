@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Customizable managed self-service BI"
 description: "Learn how Power BI customizable managed self-service BI is about creating new specialized datasets by extending and personalizing existing datasets."
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -70,7 +70,7 @@ The key aspect of making *managed self-service BI* work is to minimize the numbe
 Sometimes self-service creators need to augment an existing dataset with, for instance, additional data that's specific to their department. In this case, they can use [DirectQuery connections to Power BI datasets](../connect-data/desktop-directquery-datasets-azure-analysis-services.md). This feature allows for an ideal balance of self-service enablement while taking advantage of the investment in centrally managed data assets. The scenario diagram depicts a DirectQuery connection. The act of converting a live connection to a DirectQuery connection creates a local model that allows new tables to be added. Relationships can be created between tables from the original shared dataset (the remote model) and new tables just added (the local model). Additional calculations and data modeling can be done to customize the new data model.
 
 > [!TIP]
-> This scenario highlights reusing a shared dataset. However, sometimes there are situations when data modelers want to limit the creation of downstream data model. In that case, they can enable the [Discourage DirectQuery connections](../connect-data/desktop-discourage-directquery-connections-to-dataset.md#discourage-directquery-connections-to-a-dataset-using-power-bi-desktop) property in the Power BI Desktop settings.
+> This scenario highlights reusing a shared dataset. However, sometimes there are situations when data modelers want to limit the creation of downstream data model. In that case, they can enable the [Discourage DirectQuery connections](../connect-data/desktop-discourage-directquery-connections-to-dataset.md#use-power-bi-desktop-to-discourage-directquery-connections-to-a-dataset) property in the Power BI Desktop settings.
 
 ### Dataset endorsement
 

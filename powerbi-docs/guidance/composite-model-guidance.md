@@ -1,13 +1,13 @@
 ---
 title: Composite model guidance in Power BI Desktop
 description: Guidance for developing Power BI composite models.
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/31/2022
+ms.date: 03/24/2023
 ---
 
 # Composite model guidance in Power BI Desktop
@@ -62,7 +62,7 @@ There are several possible scenarios when Power BI queries a composite model.
 - **Queries only import or dual table(s):** Power BI retrieves all data from the model cache. It will deliver the fastest possible performance. This scenario is common for dimension-type tables queried by filters or slicer visuals.
 - **Queries dual table(s) or DirectQuery table(s) from the same source:** Power BI retrieves all data by sending one or more native queries to the DirectQuery source. It will deliver good performance, especially when appropriate indexes exist on the source tables. This scenario is common for queries that relate dual dimension-type tables and DirectQuery fact-type tables. These queries are _intra source group_, and so all one-to-one or one-to-many relationships are evaluated as [regular relationships](/power-bi/transform-model/desktop-relationships-understand#regular-relationships).
 - **Queries dual table(s) or hybrid table(s) from the same source**: This scenario is a combination of the previous two scenarios. Power BI retrieves data from the model cache when it's available in import partitions, otherwise it sends one or more native queries to the DirectQuery source. It will deliver the fastest possible performance because only a slice of the data is queried in the data warehouse, especially when appropriate indexes exist on the source tables. As for the dual dimension-type tables and DirectQuery fact-type tables, these queries are intra source group, and so all one-to-one or one-to-many relationships are evaluated as regular relationships.
-- **All other queries**: These queries involve cross source group relationships. It's either because an import table relates to a DirectQuery table, or a dual table relates to a DirectQuery table from a different source—in which case it behaves as an import table. All relationships are evaluated as [limited relationships](/power-bi/transform-model/desktop-relationships-understand#limited-relationships). It also means that groupings applied to non-DirectQuery tables must be sent to the DirectQuery source as materialized subqueries. In this case, the native query can be inefficient, especially for large grouping sets.
+- **All other queries**: These queries involve cross source group relationships. It's either because an import table relates to a DirectQuery table, or a dual table relates to a DirectQuery table from a different source—in which case it behaves as an import table. All relationships are evaluated as [limited relationships](/power-bi/transform-model/desktop-relationships-understand#limited-relationships). It also means that groupings applied to non-DirectQuery tables must be sent to the DirectQuery source as materialized subqueries (virtual tables). In this case, the native query can be inefficient, especially for large grouping sets.
 
 In summary, we recommend that you:
 
@@ -100,7 +100,7 @@ When defining cross source group relationships, consider the following recommend
 - **Strive to achieve a simple relationship design:** Only create a cross source group relationship when it's needed, and try to limit the number of tables in the relationship path. This design approach will help to improve performance and avoid [ambiguous relationship paths](/power-bi/transform-model/desktop-relationships-understand#resolve-relationship-path-ambiguity).
 
 > [!WARNING]
-> Because Power BI Desktop doesn't thoroughly validate cross group relationships, it's possible to create ambiguous relationships.
+> Because Power BI Desktop doesn't thoroughly validate cross source group relationships, it's possible to create ambiguous relationships.
 
 ### Cross source group relationship scenario 1
 
@@ -173,7 +173,7 @@ You should consider specific limitations when adding calculated columns and calc
 
 ### Calculated columns
 
-Calculated columns added to a DirectQuery table that sources its data from a relational database, like Microsoft SQL Server, are limited to expressions that operate on a single row at a time. These expressions can't use [DAX iterator functions](/training/modules/dax-power-bi-iterator-functions/), like `SUMX`, or filter context modification functions, like `CALCULATE`.
+Calculated columns added to a DirectQuery table that source their data from a relational database, like Microsoft SQL Server, are limited to expressions that operate on a single row at a time. These expressions can't use [DAX iterator functions](/training/modules/dax-power-bi-iterator-functions/), like `SUMX`, or filter context modification functions, like `CALCULATE`.
 
 > [!NOTE]
 > It's not possible to added calculated columns or calculated tables that depend on chained tabular models.
