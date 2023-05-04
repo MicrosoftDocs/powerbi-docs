@@ -272,6 +272,7 @@ To turn on this setting:
 
 1. Still in the **Export and sharing settings** section of the **Tenant Settings**, find the setting called **Allow email subscriptions to be sent to external users**.
 1. Turn the switch on.
+1. Under **Apply to**, select the scope of users that the setting will affect.
 1. Select **Apply** to save your changes.
 
 If you have this setting off, users in the organization cannot subscribe content to B2B users, and B2B users can't create their own email subscriptions. 
