@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/30/2023
+ms.date: 05/04/2023
 LocalizationGroup: Common tasks
 ---
 
@@ -108,11 +108,17 @@ To create a subscription that includes others, in addition to the [requirements 
 
 - A Contributor, Member, or Admin role in that workspace.  You’ll know you have the Contributor, Member or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 
-- To be part of the organization. [Guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others.
+- To be part of the organization or a [B2B guest user](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions) who meets the other permission requirements. Other [guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others.
 
 - If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can still subscribe others. However, they must also have a Power BI Pro or Premium Per User (PPU) license. 
 
     :::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
+
+### B2B guest users can set up and be subscribed to email subscriptions
+
+B2B users can be specifically granted permission to view content in Power BI by a Power BI tenant admin. So, there may be instances that the B2B users may need to create or receive email subscriptions, but not other external users. B2B users can create their own content subscription to which they have access and users in the organization can subscribe them to emails. 
+
+In addition to meeting the requirements to subscribe others, the Power BI tenant admin must turn on a setting to allow B2B guest users to use this feature. For more information on how to turn on this setting, read [Export and sharing tenant settings](../admin/service-admin-portal-export-sharing.md#B2B-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
 
 ### Use group email aliases 
 When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../enterprise/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
