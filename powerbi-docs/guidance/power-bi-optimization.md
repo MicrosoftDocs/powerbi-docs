@@ -21,7 +21,7 @@ This article provides guidance that enables developers and administrators to pro
 
 ## Optimizing the data model
 
-The data model supports the entire visualization experience. Data models are either hosted in the Power BI ecosystem or externally (via DirectQuery or Live Connection), and in Power BI they are referred to as *datasets*. It's important to understand your options, and to choose the appropriate dataset type for your solution. There are three dataset modes: Import, DirectQuery, and Composite. For more information, see [Datasets in the Power BI service](../connect-data/service-datasets-understand.md), and  [Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md).
+The data model supports the entire visualization experience. Data models are either hosted in the Power BI ecosystem or externally (using DirectQuery or Live Connection), and in Power BI they are referred to as *datasets*. It's important to understand your options, and to choose the appropriate dataset type for your solution. There are three dataset modes: Import, DirectQuery, and Composite. For more information, see [Datasets in the Power BI service](../connect-data/service-datasets-understand.md), and  [Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md).
 
 For specific dataset mode guidance, see:
 
