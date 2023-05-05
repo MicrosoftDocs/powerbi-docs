@@ -56,7 +56,9 @@ The first option starts with opening the file menu. Select 'share' from the left
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-menu.png" alt-text="Screenshot of sharing from the file menu":::
 
-The familiar Microsoft 365 share dialog box appears. From here, you can share the link directly with individuals or groups or copy the link to share with others. 
+Power BI uses the standard Microsoft 365 share dialog box to help you share your file. This dialog enforces your permissions in OneDrive and SharePoint and any policies that apply to the OneDrive folder or SharePoint document library where the file is saved. 
+
+From here, you can share the link directly with individuals or groups, or copy the link to share with others. 
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-dialog.png" alt-text="Screenshot of share dialog in OneDrive and SharePoint":::
 
