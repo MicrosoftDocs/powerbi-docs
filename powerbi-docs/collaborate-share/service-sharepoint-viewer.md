@@ -83,7 +83,7 @@ You can change your report to include high-contrast colors. To change the color,
 
 ### View saved bookmarks
 
-To view saved bookmarks, select the ‘Bookmarks’ button from the top left corner of the report. After you click on the button, a bookmarks pane will pop out on the right-hand side of the browser. A list of previously created bookmarks appear for you to choose from. Clicking on one of the bookmarks shows a set filtered version of the report assigned to that bookmark.
+To view saved bookmarks, select the **Bookmarks** button from the top left corner of the report. After you click on the button, a bookmarks pane will pop out on the right-hand side of the browser. You can choose a bookmark created by the report author. Clicking on one of the bookmarks shows a set filtered version of the report assigned to that bookmark.
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-bookmark.png" alt-text="Screenshot of bookmarks in Power BI file in the browser":::
 
