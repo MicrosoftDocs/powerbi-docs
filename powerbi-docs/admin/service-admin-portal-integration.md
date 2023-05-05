@@ -89,6 +89,18 @@ This setting is on by default. To change the setting, go to the Power BI Admin p
 > [!NOTE]
 > Cross-geo operations in the Power BI/Power Apps solutions integration are allowed only when both this setting and the Power Platform setting are **ON**.
 
+## Users can view Power BI items saved in OneDrive and SharePoint (Preview)
+This setting allows users to view Power BI files saved in OneDrive and SharePoint in their browser without needing to download the file and open in Power BI Desktop on their local machine. When enabled, the setting applies to all users in your organization. 
+
+Learn more about [viewing Power BI files saved in OneDrive and SharePoint](powerbi-docs/collaborate-share/service-sharepoint-viewer.md).
+
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-onedrive-viewer.png" alt-text="Users can view Power BI items saved in OneDrive and SharePoint":::
+
+## Users can share links to Power BI files stored in OneDrive and SharePoint through Power BI Desktop
+Users who have saved Power BI Desktop files (.pbix) to OneDrive and SharePoint can share links to those files using Power BI Desktop. If a user has enabled the feature in Power BI Desktop, and the setting is disabled, a **Share** button will still appear in Power BI Desktop, but the user will be notified that the capability is disabled when they attempt to share. When enabled, this setting applies to all users in your organization. 
+
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-power-bi-desktop-share.png" alt-text="Users can share links to Power BI files stored in OneDrive and SharePoint through Power BI Desktop":::
+
 ## Next steps
 
 * [About tenant settings](service-admin-portal-about-tenant-settings.md)
