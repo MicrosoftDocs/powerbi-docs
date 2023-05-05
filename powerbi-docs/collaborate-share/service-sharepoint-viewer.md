@@ -75,7 +75,7 @@ To change the page view, select the ‘Page view’ button at the top left of th
 
 ### Setting high-contrast colors
 
-You can change your report to include high-contrast colors. To change the color, select one of the options from the 'High-contrast color' button in the top left corner of the report. 
+You can change your report to include high-contrast colors. To change the color, select one of the options from the **High-contrast color** button in the top left corner of the report. 
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-high-contrast-color.png" alt-text="Screenshot of high contrast color options":::
 
