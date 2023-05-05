@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 ---
 # View Power BI files in SharePoint and OneDrive
 
-You can quickly view Power BI files in OneDrive and SharePoint without needing to install Power BI Desktop or download the file locally. This enables collaboration and a streamlined workflow before publishing through the Power BI Service.
+You can quickly view Power BI files in OneDrive and SharePoint without needing to install Power BI Desktop or download the file locally. Viewing Power BI files in your broswer enables collaboration and a streamlined workflow before publishing through the Power BI Service.
 
 ## How to enable viewing Power BI files in OneDrive and SharePoint
 
@@ -66,7 +66,7 @@ You can also share a link to the report with others by selecting the **Share** b
 
 ### Changing the page view
 
-Use the **Page view** button to choose one of the view option:
+Use the **Page view** button to choose one of the view options:
 - Fit to page
 - Fit to width
 - Actual size
@@ -125,7 +125,7 @@ The preview provides a limited experience with options to download the .pbix, sh
 
 ### Dataset mode
 
-To view a Power BI file in OneDrive or SharePoint, the data must be in **import** mode. Files with other modes will prompt you to download the file to open locally in Power BI Desktop.
+To view a Power BI file in OneDrive or SharePoint, the data must be in **import** mode. Files with other modes prompt you to download the file to open locally in Power BI Desktop.
 
 ### Prerequisites to viewing report in OneDrive and SharePoint
 
