@@ -125,7 +125,7 @@ The preview provides a limited experience with options to download the .pbix, sh
 
 ### Dataset mode
 
-For a Power BI file to load in OneDrive or SharePoint the data must be in **import** mode. Other modes may be supported in the future.
+To view a Power BI file in OneDrive or SharePoint, the data must be in **import** mode. Files with other modes will prompt you to download the file to open locally in Power BI Desktop.
 
 ### Prerequisites to viewing report in OneDrive and SharePoint
 
