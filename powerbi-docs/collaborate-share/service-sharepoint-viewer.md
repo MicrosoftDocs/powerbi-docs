@@ -24,9 +24,7 @@ You can quickly view Power BI files in OneDrive and SharePoint without needing t
 > [!NOTE]
 > Viewing Power BI files in OneDrive and SharePoint is disabled by default. Work with you Power BI Admin to enable this capability.
 
-Admins must **enable** the **Users can view Power BI items saved to OneDrive and SharePoint** setting in the admin portal. The setting is found under Tenant settings > Integration settings > Users can view Power BI items saved in OneDrive and SharePoint (Preview). 
-
-:::image type="content" source="powerbi-docs/collaborate-share/media/service-sharepoint-viewer/power-bi-onedrive-admin-setting.png" alt-text="Screenshot of admin setting ":::
+Admins must **enable** the capability in the Admin portal. 
 
 ## Viewing Power BI files in OneDrive and SharePoint capabilities
 
@@ -36,7 +34,7 @@ Viewing Power BI reports stored in OneDrive and SharePoint directly in your brow
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open.png" alt-text="Screenshot of sharepoint library with Power BI file":::
 
-You can also right click on the report or hit the ellipses and select 'open' > 'open in browser'.  
+You can also right click on the report or click the ellipses and select **Open** > **Open in browser**.  
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open-in-browser.png" alt-text="Screenshot of clicking on a Power BI file to open":::
 
