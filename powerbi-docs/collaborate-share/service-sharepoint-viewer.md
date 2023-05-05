@@ -60,7 +60,7 @@ From here, you can share the link directly with individuals or groups, or copy t
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-dialog.png" alt-text="Screenshot of share dialog in OneDrive and SharePoint":::
 
-You can also share a link to the report with others by selecting the green ‘share’ button at the top right of the report. 
+You can also share a link to the report with others by selecting the **Share** button at the top right of the report. 
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png" alt-text="Screenshot of share button in browser":::
 
