@@ -45,6 +45,48 @@ As an alternative to a Lakehouse with SQL endpoint, you can also provision a Dat
 
 To learn how to provision a Data Warehouse, create a table in the warehouse, and create a Power BI dataset for the warehouse, see [Create a Data Warehouse](#create-a-data-warehouse) later in this article.
 
+## Known issues and preview limitations
+
+The following are known issues and limitations during **Preview**:
+
+- Direct Lake size limits are likely to change during **Preview**. More definitive limits will be determined and described in this article by GA (General Availability). If limits are reached, queries are executed in DirectQuery mode.
+
+    | Sku      | # of Row (Million) per table used by the query |
+    |----------|------------------------------------------------|
+    | F2       | 300                                            |
+    | F4       | 300                                            |
+    | F8       | 300                                            |
+    | F16      | 300                                            |
+    | F32      | 700                                            |
+    | P1/F64   | 1500                                           |
+    | P2/F128  | 3000                                           |
+    | P3/F256  | 6000                                           |
+    | P4/F512  | 12000                                          |
+    | P5/F1024 | 24000                                          |
+    
+- You must use the Web modeling experience integrated into Lakehouse to generate Direct Lake datasets. Creating Direct Lake datasets by using Power BI Desktop or XMLA-based automation tools aren't yet supported.
+
+- Direct Lake mode falls back to DirectQuery mode for queries that refer to TSQL based views in the Warehouse.
+
+- When generating a Direct Lake dataset in a QSO-enabled workspace, you must sync the dataset manually using the following PowerShell commands with the Power BI Management cmdlets installed (replace WorkspaceID and DatasetID with the GUIDs of your workspace and dataset):
+
+    ```powershell
+    Login-PowerBI
+    Invoke-PowerBIRestMethod -Url 'groups/WorkspaceId/datasets/DatasetId/sync' -Method Post | ConvertFrom-Json | Format-List
+    
+    ```
+
+- Calculated columns and calculated tables are not yet supported.
+
+- Some data types may not be supported.
+
+- Only Single Sign-On (SSO) is supported.
+
+- Embedded scenarios that rely on service principals are not yet supported. Direct Lake models use Single Sign-On (SSO).
+
+- The dataset user interface might display a warning icon on a table even though the table has no issues. This will be addressed in a future update.
+
+
 ## Create a Lakehouse
 
 Complete the following steps to create a Lakehouse, a delta table, and a dataset in a Premium workspace.
@@ -231,43 +273,4 @@ By using the Warehouse user interface, you can launch the table selection dialog
 
     :::image type="content" source="media/directlake-overview/directlake-warehouse-dataset-open-model.png" alt-text="Screenshot showing new dataset in Power BI web modeling.":::
 
-## Known issues and preview limitations
 
-The following are known issues and limitations during **Preview**:
-
-- Direct Lake size limits are likely to change during **Preview**. More definitive limits will be determined and described in this article by GA (General Availability). If limits are reached, queries are executed in DirectQuery mode.
-
-    | Sku      | # of Row (Million) per table used by the query |
-    |----------|------------------------------------------------|
-    | F2       | 300                                            |
-    | F4       | 300                                            |
-    | F8       | 300                                            |
-    | F16      | 300                                            |
-    | F32      | 700                                            |
-    | P1/F64   | 1500                                           |
-    | P2/F128  | 3000                                           |
-    | P3/F256  | 6000                                           |
-    | P4/F512  | 12000                                          |
-    | P5/F1024 | 24000                                          |
-    
-- You must use the Web modeling experience integrated into Lakehouse to generate Direct Lake datasets. Creating Direct Lake datasets by using Power BI Desktop or XMLA-based automation tools aren't yet supported.
-
-- Direct Lake datasets don't support lake views. You must build your datasets on top of delta tables.
-
-- When generating a Direct Lake dataset in a QSO-enabled workspace, you must sync the dataset manually using the following PowerShell commands with the Power BI Management cmdlets installed (replace WorkspaceID and DatasetID with the GUIDs of your workspace and dataset):
-
-    ```powershell
-    Login-PowerBI
-    Invoke-PowerBIRestMethod -Url 'groups/WorkspaceId/datasets/DatasetId/sync' -Method Post | ConvertFrom-Json | Format-List
-    
-    ```
-
-- Complex columns are not supported.
-
-- Some data types may not be supported.
-
-- Only Single Sign-On (SSO) is supported.
-
-- Embedded scenarios are not supported.
-
-- The dataset user interface might display a warning icon on a table even though the table has no issues. This will be addressed in a future update.
