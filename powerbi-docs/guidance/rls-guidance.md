@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/29/2022
+ms.date: 5/04/2023
 ---
 
 # Row-level security (RLS) guidance in Power BI Desktop
