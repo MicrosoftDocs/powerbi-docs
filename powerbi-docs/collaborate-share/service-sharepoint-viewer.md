@@ -50,7 +50,7 @@ Once the report is open, you can interact with the visuals and explore the under
 
 You can share a link to a Power BI file with others in two ways. 
 
-The first option starts with opening the file menu. Select 'share' from the left-hand menu, then click 'Share a link'.
+You can open the **File** menu. Select **Share** from the left-hand menu, then click **Share a link**.
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-menu.png" alt-text="Screenshot of sharing from the file menu":::
 
