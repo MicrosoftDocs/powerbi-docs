@@ -129,7 +129,7 @@ For a Power BI file to load in OneDrive or SharePoint the data must be in **impo
 
 ### Prerequisites to viewing report in OneDrive and SharePoint
 
-To view a report in OneDrive or SharePoint, users must:
+To view a report in OneDrive for Business or SharePoint Online, users must:
 -	Be signed-in to OneDrive with their Azure Active Directory account
 -	Have at least read access to the file
 -	Have a Power BI Pro, Power BI Premium Per User, or E5 license
