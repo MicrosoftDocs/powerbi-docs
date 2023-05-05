@@ -66,7 +66,7 @@ You can also share a link to the report with others by selecting the **Share** b
 
 ### Changing the page view
 
-To change the page view, select the ‘Page view’ button at the top left of the report. You can choose from the following options:
+Use the **Page view** button to choose one of the view option:
 - Fit to page
 - Fit to width
 - Actual size
