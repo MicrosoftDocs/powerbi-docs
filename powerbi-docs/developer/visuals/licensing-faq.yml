@@ -22,9 +22,9 @@ sections:
           *Anyone* can purchase a license, and assign the license to themselves or others.
 
       - question: |
-          How can I pay for the visuals?
+          How can I purchase and pay for the visuals?
         answer: |
-          Anyone can complete the checkout path in [AppSource](https://appsource.microsoft.com/), and pay for the licenses with a credit card.  
+          Select **Buy now** and complete the checkout path in [AppSource](https://appsource.microsoft.com/). You can pay for the licenses with a credit card.  
 
           Billing and Global admins can also pay by [invoice](/microsoft-365/commerce/billing-and-payments/pay-for-subscription-billing-profile#paying-by-invoice) if such a payment method is set up for your company.
 
@@ -118,12 +118,12 @@ sections:
       - question: |
           Do I have to assign a license to myself even if I'm the owner?
         answer: |
-          Yes. Any user who wants to use the offer should be assigned a license, even if they own the subscription.
+          No. Buyers get a license assigned to them automatically. If you want to add more users or update your subscription, go to the [admin center](https://admin.microsoft.com/).
 
       - question: |
           How do we assign the licenses?
         answer: |
-          Go to [admin.microsoft.com](https://admin.microsoft.com/) and select the **License** link under the **Billing** node from the menu. A list of visuals will appear.
+          Only the buyer (owner) can assign a license. You'll receive a license automatically within five minutes of purchasing the visual. If you want to assign a license to other users or update your subscription, go to [admin.microsoft.com](https://admin.microsoft.com/) and select the **License** link under the **Billing** node from the menu. A list of visuals will appear.
 
           :::image type="content" source="./media/licensing-faq/assign-licenses.png" alt-text="Screenshot of Admin homepage with billing licenses selected.":::
 
@@ -132,12 +132,12 @@ sections:
       - question: |
           Once I assign a license, how long does it take until I can use it?
         answer: |
-          After you are assigned a license in the Microsoft 365 Admin Center, it should be available within an hour.
+          After you are assigned a license in the Microsoft 365 Admin Center, it should be available within a few minutes.
 
           * If you're using the licensed visual in the Power BI Service, refresh the report by hitting F5.
           * If you're using the licensed visual in the Power BI Desktop, close and reopen it.
 
-          If, after you refresh, the license is still not available, wait a while and try again. It could take up to an hour.
+          If, after you refresh, the license is still not available, wait a while and try again. It could take up to five minutes.
 
       - question: |
           As an admin can I see the subscriptions that were purchased in my organization?
