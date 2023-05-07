@@ -102,6 +102,8 @@ Automated machine learning is available for dataflows that are hosted on Power B
 
 ### Work with AutoML
 
+Machine learning and AI are seeing an unprecedented rise in popularity from industries and scientific research fields. Businesses are also looking for ways to integrate these new technologies into their operations.
+
 Dataflows offer self-serve data prep for big data. AutoML is integrated into dataflows and enables you to use your data prep effort for building machine learning models, right within Power BI.
 
 AutoML in Power BI enables data analysts to use dataflows to build machine learning models with a simplified experience by using just Power BI skills. Power BI automates most of the data science behind the creation of the ML models. It has guardrails to ensure that the model produced has good quality and provides visibility into the process used to create your ML model.
