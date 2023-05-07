@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.search.form: Dataset details
 ms.topic: conceptual
-ms.date: 02/07/2023
+ms.date: 05/02/2023
 LocalizationGroup: Share your work
 ---
 # Dataset details

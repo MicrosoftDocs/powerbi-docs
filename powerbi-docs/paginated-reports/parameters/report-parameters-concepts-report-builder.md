@@ -26,7 +26,7 @@ You create report parameters in the following ways:
   
 -   Manually, when you create report parameters in the Report Data pane. Parameters are one of the built-in collections that you can include in an expression in a report. Because expressions are used to define values throughout a report definition, you can use parameters to control report appearance or to pass values to related subreports or reports that also use parameters.  
   
- For more information, see [Report Parameters &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer).  
+ For more information, see [Report Parameters &#40;Report Builder and Report Designer&#41;](report-builder-parameters.md).  
   
  Parameters are frequently used to filter report data both before and after the data is returned to the report. For more information, see [Filter, Group, and Sort Data &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs).  
   

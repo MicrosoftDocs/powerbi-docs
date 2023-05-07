@@ -90,6 +90,6 @@ ms.date: 01/18/2023
   
 ## Next steps 
  [Expression Uses in Reports &#40;Report Builder&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
- [Report Parameters &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer)  
+ [Report parameters in Power BI Report Builder](../parameters/report-builder-parameters.md)
   
   

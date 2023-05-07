@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 04/04/2023
+ms.date: 04/18/2023
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -20,8 +20,10 @@ When private link connections are used, those connections go through the Microso
 
 To learn more about Azure Private Link, see [What is Azure Private Link](/azure/private-link/private-link-overview).
 
+Enabling private endpoints has an impact on many items, so please review the [considerations and limitations](#considerations-and-limitations) section in this article before enabling private endpoints.
+
 >[!IMPORTANT]
->In Microsoft Fabric, some private endpoints aren't supported because data can't be redirected using a secure connection. For more information and to learn how to override the security restriction, see [Compliance settings](/fabric/admin/admin-compliance).
+>Some Microsoft Fabric items aren't compliant with private endpoints and Microsoft Fabric can't provide secure data traffic for these items. For more information and to learn how to override the security restriction, see [Compliance settings](/fabric/admin/admin-compliance).
 
 ## Understand private endpoints
 
@@ -332,7 +334,7 @@ There are a few considerations to keep in mind while working with private endpoi
 * When private links are enabled for Power BI, an on-premises data gateway (personal mode) fails to register.
 * Private links resource REST APIs don't support tags.
 * You can't set up a private link to be used by more than one tenant. 
-* Paginated reports don't currently work with private links.
+* Exporting a Power BI report as PDF or PowerPoint is not supported when you enable Azure Private Link in Power BI.
 
 ## Next steps
 

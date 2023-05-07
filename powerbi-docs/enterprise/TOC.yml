@@ -26,7 +26,7 @@
       href: service-admin-failover.yml
     - name: Migrate from Azure Analysis Services
       href: aas-pbi-migration-overview.md
-    - name: DirectLake
+    - name: Direct Lake
       href: directlake-overview.md
   - name: Licensing
     expanded: false
@@ -151,10 +151,12 @@
     - name: Data loss prevention
       expanded: false
       items:              
-      - name: DLP policies for Power BI (preview)
-        href: service-security-dlp-policies-for-power-bi.md
-      - name: Overriding DLP policies (preview)
-        href: service-security-dlp-policies-for-power-bi-override.md
+      - name: Overview of DLP policies for Power BI
+        href: service-security-dlp-policies-for-power-bi-overview.md
+      - name: Configure a DLP policy for Power BI
+        href: service-security-dlp-policies-for-power-bi-configure.md
+      - name: Respond to a DLP policy violation
+        href: service-security-dlp-policies-for-power-bi-respond.md
     - name: Microsoft Defender for Cloud Apps with Power BI
       href: service-security-using-defender-for-cloud-apps-controls.md
   - name: Security

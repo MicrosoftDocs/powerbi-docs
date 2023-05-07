@@ -14,6 +14,12 @@ ms.date: 2/28/2023
 
 This page contains a quick summary of the API versions. Versions listed here are considered stable and will not change.
 
+## API v5.4.0
+
+* [Improved keyboard navigation](./supportskeyboardfocus-feature.md#enhanced-keyboard-accessibility): Improves accessibility and usability of your visuals by providing more options for interacting with visual using the keyboard.
+* [Detect filter use in reports](./detect-filter-api.md): Detect if there are any filters are applied to a report.
+* Supports Desktop May 2023
+
 ## API v5.3.0
 
 * SelectionId's update-fix for [matrix](./dataview-mappings.md#matrix-data-mapping) `dataView`.  

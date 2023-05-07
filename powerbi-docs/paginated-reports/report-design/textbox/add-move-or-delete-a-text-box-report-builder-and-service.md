@@ -68,7 +68,7 @@ ms.reviewer: rpatkar
   
 ## Next steps
  [Text Boxes &#40;Report Builder and the Power BI service&#41;](text-boxes-report-builder-and-service.md)   
- [Expressions &#40;Report Builder and the Power BI service&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs)   
+ [Expressions &#40;Report Builder and the Power BI service&#41;](../../report-builder-expressions.md)   
  [Keyboard Shortcuts &#40;Report Builder&#41;](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder)  
   
   
