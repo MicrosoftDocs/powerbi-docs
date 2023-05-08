@@ -150,9 +150,22 @@ To view a report in OneDrive for Business or SharePoint Online, users must:
 
 ### Audit logs
 
-Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without global admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through the Power BI [Admin portal](../admin/service-admin-portal.md).
+When Power BI files are saved and viewed in OneDrive and SharePoint document libraries, Power BI admins can access activity through audit logs. Some activites for these files are logged through [unified audit logs](../admin/service-admin-auditing.md#use-the-audit-log), while others are logged through the [Power BI activity log](../admin/service-admin-auditing.md#use-the-activity-log).
 
-OneDrive and SharePoint events on the Power BI file (download, share, copy, move to, etc.) are audited in the Microsoft 365 audit logs. Interaction with the Power BI file (open report etc.) is audited in both Power BI audit logs and Microsoft 365 audit logs. 
+OneDrive and SharePoint events are audited in the Microsoft 365 audit logs. These include:
+- Copy
+- Download
+- Move to
+- Share
+- Export
+
+Interaction with the Power BI file is audited in Power BI activity logs. These include:
+- View
+- Open report
+
+Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without global admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through the Power BI [Admin portal](../admin/service-admin-portal.md#use-the-activity-log).
+
+OneDrive and SharePoint Power BI file activity in the audit logs will appear with [property values](microsoft-365/compliance/audit-log-detailed-properties) **Workload** and/or **EventSource** set to **OneDrive**.
 
 [Learn more](/office/office-365-management-api/office-365-management-activity-api-reference) about the Office 365 Management Activity API. 
 
