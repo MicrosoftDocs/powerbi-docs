@@ -90,7 +90,7 @@ This setting is on by default. To change the setting, go to the Power BI Admin p
 > Cross-geo operations in the Power BI/Power Apps solutions integration are allowed only when both this setting and the Power Platform setting are **ON**.
 
 ## Users can view Power BI items saved in OneDrive and SharePoint (Preview)
-This setting allows users to view Power BI files saved in OneDrive and SharePoint in their browser without needing to download the file and open in Power BI Desktop on their local machine. When enabled, the setting applies to all users in your organization. 
+This setting allows users to view Power BI files saved in OneDrive for Business and SharePoint Online document libraries in their browser without needing to download the file and open in Power BI Desktop on their local machine. When enabled, the setting applies to all users in your organization. 
 
 Learn more about [viewing Power BI files saved in OneDrive and SharePoint](../collaborate-share/service-sharepoint-viewer.md).
 
