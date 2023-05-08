@@ -115,6 +115,8 @@ On the **Audience** tab, you create and manage audience groups within the app.
 
     > [!NOTE]
     > The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least the Contributor role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
+    > [!NOTE]
+    > Build permissions only apply to datasets _in the same workspace_ as the app. If datasets are in other workspaces, you must explicitly grant build permissions on those datasets, or add the users as at least the Contributor Role in that workspace.
 
 ### Allow saving a copy of a report
 
