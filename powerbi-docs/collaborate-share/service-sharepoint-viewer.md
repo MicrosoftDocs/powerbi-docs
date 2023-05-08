@@ -158,11 +158,11 @@ OneDrive and SharePoint events on the Power BI file (download, share, copy, move
 
 ### Sensitivity labels and encryption
 
-Sensitivity labels are respected for Power BI files stored and shared through OneDrive and SharePoint. [Learn more](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files) about how sensitivity labels work in OneDrive and SharePoint.
+Sensitivity labels are respected for Power BI files stored and shared through OneDrive and SharePoint.
 
 If the OneDrive or SharePoint library where the Power BI file is stored has different permissions than the label applied to the Power BI file, the label on the Power BI file is respected. If the file is unlabeled, then the default Power BI tenant policy applies when viewing the file in OneDrive or SharePoint. 
 
-If a Power BI file has encryption, you can only open the file if you have usage rights. Only users with the right permissions to decrypt the file can view it. 
+If a Power BI file has encryption, you can only open the file if you have usage rights to publish the report. Only users with the right permissions to decrypt the file can view it. 
 
 ### Sharing settings
 
