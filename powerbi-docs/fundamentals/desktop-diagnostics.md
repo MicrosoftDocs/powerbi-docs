@@ -43,9 +43,11 @@ The diagnostics ZIP file might contain the following files and directories, base
 - **SessionDeviceInfo.txt** - Contains [session and device information](#session-and-device-information).
 - **AutoPageRefresh.json** - Contains [the data refresh settings](#data-refresh-settings).
 - **CSDL.xml** - Describes the [structure of the data model](#structure-of-your-data-model).
+- **DatabaseSchema.json** - Describes the [structure of the data model](#structure-of-your-data-model).
 - **DataModelSchema.json** - Describes the [structure of the data model](#structure-of-your-data-model).
 - **Traces** folder and files - Contains detailed [session and device information](#session-and-device-information).
-- **QuerySchemas** folder and files - Contains query information and data model structure information for remote models.
+- **QueryEvaluations.json** - Contains evaluation results when loading or refreshing a query.
+- **RemoteCsdls.json** - Describes the [structure of the **remote** data models](#structure-of-your-data-model)
 
 :::image type="content" source="media/desktop-diagnostics/desktop-diagnostics-03.png" alt-text="Screenshot of an Explorer window showing the path to the diagnostics ZIP file and the contents.":::
 
