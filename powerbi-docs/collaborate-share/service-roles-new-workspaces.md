@@ -65,6 +65,8 @@ Everyone in a user group gets the role that you've assigned. If someone is in se
 > [!NOTE]
 > - You can assign users to roles, either alone or in a group, even if they can't use the role. In other words, you can assign users who don't have Power BI Pro or PPU licenses to a role that requires a license. See [Licenses](#licenses) for details.
 > - Use the Viewer role to enforce [row-level security (RLS)](../enterprise/service-admin-rls.md) for users who browse content in a workspace. You can also enforce RLS without giving access to the workspace, [publish an app](service-create-distribute-apps.md) and distribute it to those users, or use [sharing to distribute content](service-share-dashboards.md).
+> - Members can add users to a workspace with lower permissions but cannot remove users from any workspace roles.
+
 
 ## Licenses
 If one of the workspaces is in a shared capacity, everyone you add to it needs a Power BI Pro or Premium Per User (PPU) license. These users can all collaborate on the dashboards and reports in the workspace. If you want to distribute content to others inside your organization, either assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
