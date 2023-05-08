@@ -150,7 +150,7 @@ To view a report in OneDrive for Business or SharePoint Online, users must:
 
 ### Audit logs
 
-Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without global admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through their admin portal.
+Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without global admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through the Power BI [Admin portal](../admin/service-admin-portal.md).
 
 OneDrive and SharePoint events on the Power BI file (download, share, copy, move to, etc.) are audited in the Microsoft 365 audit logs. Interaction with the Power BI file (open report etc.) is audited in both Power BI audit logs and Microsoft 365 audit logs. 
 
@@ -158,11 +158,11 @@ OneDrive and SharePoint events on the Power BI file (download, share, copy, move
 
 ### Sensitivity labels and encryption
 
-Sensitivity labels are respected for Power BI files stored and shared through OneDrive and SharePoint.
+Sensitivity labels are respected for Power BI files stored and shared through OneDrive and SharePoint. A union of OneDrive and SharePoint permissions and Microsoft Information Protection label permissions are applied to the file. The OneDrive and SharePoint permission is applied first, followed by the sensitivity label. The strictest permission will be applied.  
 
-If the OneDrive or SharePoint library where the Power BI file is stored has different permissions than the label applied to the Power BI file, the label on the Power BI file is respected. If the file is unlabeled, then the default Power BI tenant policy applies when viewing the file in OneDrive or SharePoint. 
+If the file is unlabeled, then the default Power BI tenant policy will apply when viewing the file in OneDrive or SharePoint. 
 
-If a Power BI file has encryption, you can only open the file if you have usage rights to publish the report. Only users with the right permissions to decrypt the file can view it. 
+If a Power BI file has encryption, you will only be able to open the file if you have usage rights to publish the report. Only those who can decrypt the file can view it. 
 
 ### Sharing settings
 
@@ -170,7 +170,7 @@ The new capabilities respect the OneDrive and SharePoint organizational settings
 
 ### Creation of system workspaces
 
-The first time a Power BI file is opened in a browser through a OneDrive or SharePoint document library, a system workspace is created in the Power BI Service and the report selected is published behind the scenes. This process results in a longer initial loading time. After the initial report viewing takes place, loading time decreases significantly. The creation of the workspace to view a file stored in OneDrive or SharePoint has no implications on your capacity storage. 
+The first time a Power BI file is opened in a browser through a OneDrive or SharePoint document library, a system workspace is created in the Power BI Service and the report selected is published behind the scenes. This process results in a longer initial loading time. After the initial report viewing takes place, loading time decreases significantly. The creation of the workspace to view a file stored in OneDrive or SharePoint has no implications on your Power BI Premium capacity storage. 
 
 Admins can see the workspaces created in the Power BI Service on the **Workspaces** tab in the Admin portal. Created workspaces have the word **OneDrive** at the end of the workspace name. They're also listed as **PBIX in OneDrive Folder** in the description column. 
 
