@@ -171,7 +171,7 @@ OneDrive and SharePoint Power BI file activity in the audit logs appear with [pr
 
 ### Sensitivity labels and encryption
 
-[Sensitivity labels](/microsoft-365/compliance/encryption-sensitivity-labels) are respected for Power BI files stored and shared through OneDrive and SharePoint. A union of OneDrive and SharePoint permissions and Microsoft Information Protection label permissions are applied to the file. The OneDrive and SharePoint permission is applied first, followed by the sensitivity label. The strictest permission is applied.
+[Sensitivity labels](/microsoft-365/compliance/encryption-sensitivity-labels) are respected for Power BI files stored and shared through OneDrive and SharePoint. A union of OneDrive and SharePoint permissions and Microsoft Information Protection label permissions are applied to the file. The OneDrive and SharePoint permission is applied first, followed by the sensitivity label. The strictest permission is respected.
 
 If the file is unlabeled, then the default Power BI tenant policy applies when viewing the file in OneDrive or SharePoint. 
 
