@@ -28,7 +28,7 @@ Admins must **enable** the capability in the Admin portal. [Learn more](../admin
 
 If the capability is not enabled in your tenant, you can't view a Power BI report in your browser. Instead, you are directed to download the file to your device. You can then open the file in Power BI Desktop. For the optimal viewing experience, we encourage admins to enable the functionality. 
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png" alt-text="Screenshot of capability disabled view":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-one-drive-setting-off.png" alt-text="Screenshot of capability disabled view":::
 
 ## Viewing Power BI files in OneDrive and SharePoint capabilities
 
@@ -164,7 +164,7 @@ Interaction with the Power BI file is audited in Power BI activity logs. Some of
 - View
 - Open report
 
-Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without global admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through the Power BI [Admin portal](../admin/service-admin-portal.md#use-the-activity-log).
+Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without global admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through the Power BI [Admin portal](../admin/service-admin-portal.md).
 
 OneDrive and SharePoint Power BI file activity in the audit logs appear with [property values](/microsoft-365/compliance/audit-log-detailed-properties) **Workload** and/or **EventSource** set to **OneDrive**.
 
