@@ -148,9 +148,15 @@ To view a report in OneDrive for Business or SharePoint Online, users must:
 
 Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without global admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing#use-the-audit-log) through their admin portal.
 
-### Sensitivity labels 
+OneDrive and SharePoint events on the Power BI file (download, share, copy, move to, etc.) are audited in the Microsoft 365 audit logs. Interaction with the Power BI file (open report etc.) is audited in both Power BI audit logs and Microsoft 365 audit logs. 
 
-Sensitivity labels are respected for Power BI files stored and shared through OneDrive and SharePoint. Learn more about how sensitivity labels work in OneDrive and SharePoint. In the case that the OneDrive or SharePoint library where the Power BI file is stored has different permissions than the label applied to the Power BI file, the label on the Power BI file are respected. If the file is unlabeled, then the default Power BI tenant policy applies when viewing the file in OneDrive or SharePoint. 
+Learn more about the Office 365 Management Activity API. 
+
+### Sensitivity labels and encryption
+
+Sensitivity labels are respected for Power BI files stored and shared through OneDrive and SharePoint. [Learn more](microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files) about how sensitivity labels work in OneDrive and SharePoint.
+
+If the OneDrive or SharePoint library where the Power BI file is stored has different permissions than the label applied to the Power BI file, the label on the Power BI file is respected. If the file is unlabeled, then the default Power BI tenant policy applies when viewing the file in OneDrive or SharePoint. 
 
 If a Power BI file has encryption, you can only open the file if you have usage rights. Only users with the right permissions to decrypt the file can view it. 
 
