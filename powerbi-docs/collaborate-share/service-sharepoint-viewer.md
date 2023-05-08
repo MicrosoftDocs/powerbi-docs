@@ -152,14 +152,14 @@ To view a report in OneDrive for Business or SharePoint Online, users must:
 
 When Power BI files are saved and viewed in OneDrive and SharePoint document libraries, Power BI admins can access activity through audit logs. Some activites for these files are logged through [unified audit logs](../admin/service-admin-auditing.md#use-the-audit-log), while others are logged through the [Power BI activity log](../admin/service-admin-auditing.md#use-the-activity-log).
 
-OneDrive and SharePoint events are audited in the Microsoft 365 audit logs. These events include:
+OneDrive and SharePoint events are audited in the Microsoft 365 audit logs. Some of the events include:
 - Copy
 - Download
 - Move to
 - Share
 - Export
 
-Interaction with the Power BI file is audited in Power BI activity logs. These events include:
+Interaction with the Power BI file is audited in Power BI activity logs. Some of the events include:
 - View
 - Open report
 
