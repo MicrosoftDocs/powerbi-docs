@@ -146,6 +146,7 @@ To view a report in OneDrive for Business or SharePoint Online, users must:
 -	When you open the ‘Preview’ experience, users are required to authenticate before they can view the file. 
 -	Row-level security isn't supported at this time. 
 -	The ability to view files in Microsoft Teams isn't currently supported.
+-	B2B users and annonymous users will not be able to view Power BI files in the browser. They will be directed to download the file to their device and view it in Power BI Desktop.
 -	If the capability is turned off for your organization, the OneDrive and SharePoint file isn't copied into the Power BI Service.
 
 ### Audit logs
@@ -165,7 +166,7 @@ Interaction with the Power BI file is audited in Power BI activity logs. Some of
 
 Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without global admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through the Power BI [Admin portal](../admin/service-admin-portal.md#use-the-activity-log).
 
-OneDrive and SharePoint Power BI file activity in the audit logs appear with [property values](microsoft-365/compliance/audit-log-detailed-properties) **Workload** and/or **EventSource** set to **OneDrive**.
+OneDrive and SharePoint Power BI file activity in the audit logs appear with [property values](/microsoft-365/compliance/audit-log-detailed-properties) **Workload** and/or **EventSource** set to **OneDrive**.
 
 [Learn more](/office/office-365-management-api/office-365-management-activity-api-reference) about the Office 365 Management Activity API. 
 
