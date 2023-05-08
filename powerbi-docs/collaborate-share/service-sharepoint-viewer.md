@@ -145,7 +145,10 @@ To view a report in OneDrive for Business or SharePoint Online, users must:
 -	If the capability is turned off for your organization, the OneDrive and SharePoint file isn't copied into the Power BI Service.
 
 ### Audit logs
+
+
 Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without global admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/Exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing#use-the-audit-log) through their admin portal. 
+
 Learn more about the Office 365 Management Activity API. 
 
 ### Sensitivity labels 
