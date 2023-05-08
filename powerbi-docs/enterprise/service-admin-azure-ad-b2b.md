@@ -170,7 +170,7 @@ There are some limitations to the B2B experience that you should be aware of:
 The following tenant level settings in Power BI provide controls to admins. See [Export and sharing admin settings]() for documentation on these settings: 
   * [Allow Azure Active Directory guest users to access Power BI](../admin/service-admin-portal-export-sharing.md#allow-azure-active-directory-guest-users-to-access-power-bi)
   * [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md#invite-external-users-to-your-organization)
-  * [Allow Azure Active Directory guest users to edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organizationn)
+  * [Allow Azure Active Directory guest users to edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organization)
   * [Show Azure Active Directory guests in lists of suggested people](../admin/service-admin-portal-export-sharing.md#show-azure-active-directory-guests-in-lists-of-suggested-people) 
 
 There are also Azure Active Directory settings that can limit what external guest users can do within your organization. Those settings also apply to your Power BI environment. The following documentation discusses the settings: 
