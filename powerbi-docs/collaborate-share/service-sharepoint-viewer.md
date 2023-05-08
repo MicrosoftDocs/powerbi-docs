@@ -146,7 +146,7 @@ To view a report in OneDrive for Business or SharePoint Online, users must:
 -	When you open the ‘Preview’ experience, users are required to authenticate before they can view the file. 
 -	Row-level security isn't supported at this time. 
 -	The ability to view files in Microsoft Teams isn't currently supported.
--	B2B users and annonymous users will not be able to view Power BI files in the browser. They will be directed to download the file to their device and view it in Power BI Desktop.
+-	B2B users and annonymous users can't view Power BI files in the browser. They are directed to download the file to their device and view it in Power BI Desktop.
 -	If the capability is turned off for your organization, the OneDrive and SharePoint file isn't copied into the Power BI Service.
 
 ### Audit logs
@@ -172,11 +172,11 @@ OneDrive and SharePoint Power BI file activity in the audit logs appear with [pr
 
 ### Sensitivity labels and encryption
 
-Sensitivity labels are respected for Power BI files stored and shared through OneDrive and SharePoint. A union of OneDrive and SharePoint permissions and Microsoft Information Protection label permissions are applied to the file. The OneDrive and SharePoint permission is applied first, followed by the sensitivity label. The strictest permission will be applied.  
+[Sensitivity labels](/microsoft-365/compliance/encryption-sensitivity-labels) are respected for Power BI files stored and shared through OneDrive and SharePoint. A union of OneDrive and SharePoint permissions and Microsoft Information Protection label permissions are applied to the file. The OneDrive and SharePoint permission is applied first, followed by the sensitivity label. The strictest permission is applied.
 
 If the file is unlabeled, then the default Power BI tenant policy applies when viewing the file in OneDrive or SharePoint. 
 
-If a Power BI file has encryption, you can only open the file if you have usage rights to publish the report. Only users who can decrypt the file can view it. 
+If a Power BI file has encryption, you can only open the file if you have [full control and/or export usage rights](/microsoft-365/compliance/encryption-sensitivity-labels#power-bi-desktop). Only users who can decrypt the file can view it. 
 
 ### Sharing settings
 
