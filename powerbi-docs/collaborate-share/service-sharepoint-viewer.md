@@ -150,11 +150,11 @@ Power BI admins can access information on sharing and permission of files throug
 
 OneDrive and SharePoint events on the Power BI file (download, share, copy, move to, etc.) are audited in the Microsoft 365 audit logs. Interaction with the Power BI file (open report etc.) is audited in both Power BI audit logs and Microsoft 365 audit logs. 
 
-Learn more about the Office 365 Management Activity API. 
+[Learn more](/office/office-365-management-api/office-365-management-activity-api-reference) about the Office 365 Management Activity API. 
 
 ### Sensitivity labels and encryption
 
-Sensitivity labels are respected for Power BI files stored and shared through OneDrive and SharePoint. [Learn more](microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files) about how sensitivity labels work in OneDrive and SharePoint.
+Sensitivity labels are respected for Power BI files stored and shared through OneDrive and SharePoint. [Learn more](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files) about how sensitivity labels work in OneDrive and SharePoint.
 
 If the OneDrive or SharePoint library where the Power BI file is stored has different permissions than the label applied to the Power BI file, the label on the Power BI file is respected. If the file is unlabeled, then the default Power BI tenant policy applies when viewing the file in OneDrive or SharePoint. 
 
