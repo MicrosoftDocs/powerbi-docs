@@ -145,14 +145,14 @@ To view a report in OneDrive for Business or SharePoint Online, users must:
 -	If the capability is turned off for your organization, the OneDrive and SharePoint file isn't copied into the Power BI Service.
 
 ### Audit logs
-Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing). Any user without global admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/Exchange/view-only-audit-logs-role-exchange-2013-help). Admins will [access the Microsoft 365 audit logs](../admin/service-admin-auditing#use-the-audit-log) through their admin portal. 
+Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing). Any user without global admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/Exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing#use-the-audit-log) through their admin portal. 
 Learn more about the Office 365 Management Activity API. 
 
 ### Sensitivity labels 
 
-Sensitivity labels are respected for Power BI files stored and shared through OneDrive and SharePoint. Learn more about how sensitivity labels work in OneDrive and SharePoint. In the case that the OneDrive or SharePoint library where the Power BI file is stored has different permissions than the label applied to the Power BI file, the label on the Power BI file will be respected. If the file is unlabeled, then the default Power BI tenant policy will apply when viewing the file in OneDrive or SharePoint. 
+Sensitivity labels are respected for Power BI files stored and shared through OneDrive and SharePoint. Learn more about how sensitivity labels work in OneDrive and SharePoint. In the case that the OneDrive or SharePoint library where the Power BI file is stored has different permissions than the label applied to the Power BI file, the label on the Power BI file are respected. If the file is unlabeled, then the default Power BI tenant policy applies when viewing the file in OneDrive or SharePoint. 
 
-If a Power BI file has encryption, you will only be able to open the file if you have usage rights. Only those who can decrypt the file can view it. 
+If a Power BI file has encryption, you can only open the file if you have usage rights. Only users with the right permissions to decrypt the file can view it. 
 
 ### Sharing settings
 
@@ -160,9 +160,10 @@ The new capabilities respect the OneDrive and SharePoint organizational settings
 
 ### Creation of system workspaces
 
-The first time a Power BI file is opened in a browser through a OneDrive or SharePoint document library, a system workspace is created in the Power BI Service and the report selected is published behind the scenes. This process results in a longer initial loading time. After the initial report viewing takes place, loading time decreases significantly. The creation of the workspace to view a files stored in OneDrive or SharePoint will have no implications on your capacity storage. 
-Admins can see the workspaces created in the Power BI Service on the **Workspaces** tab in the Admin portal. Created workspaces will have the word **OneDrive** at the end of the workspace name. They will also be listed as **PBIX in OneDrive Folder** in the description column. 
+The first time a Power BI file is opened in a browser through a OneDrive or SharePoint document library, a system workspace is created in the Power BI Service and the report selected is published behind the scenes. This process results in a longer initial loading time. After the initial report viewing takes place, loading time decreases significantly. The creation of the workspace to view a file stored in OneDrive or SharePoint has no implications on your capacity storage. 
+
+Admins can see the workspaces created in the Power BI Service on the **Workspaces** tab in the Admin portal. Created workspaces have the word **OneDrive** at the end of the workspace name. They're also listed as **PBIX in OneDrive Folder** in the description column. 
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-workspace.png" alt-text="Screenshot of Power BI admin workspace creation naming":::
 
-Admins cannot modify workspaces (delete, modify access) from the Power BI Service. 
+Admins can't modify workspaces (delete, modify access) from the Power BI Service. 
