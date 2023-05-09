@@ -28,13 +28,13 @@ Admins must [*enable* the capability in the Admin portal](../admin/service-admin
 
 If the capability isn't enabled in your tenant, you can't view a Power BI report in your browser. Instead, you're directed to download the file to your device. You can then open the file in Power BI Desktop. For the optimal viewing experience, we encourage admins to enable the functionality. 
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png" alt-text="Screenshot of capability disabled view" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png" alt-text="Screenshot of capability disabled view." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png":::
 
 ## Open a Power BI file stored in a OneDrive or SharePoint library
 
 Viewing Power BI reports stored in OneDrive and SharePoint directly in your browser is simple. Select the file directly to open it in your browser.
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open.png" alt-text="Screenshot of sharepoint library with Power BI file" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-open.png":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open.png" alt-text="Screenshot of sharepoint library with Power BI file." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-open.png":::
 
 You can also right-click the report, or select **More options (...) > **Open** > **Open in browser**.  
 
@@ -54,17 +54,17 @@ You can share a link to a Power BI file with others in two ways.
 
 - On the **File** menu, select **Share** from the left-hand menu > **Share a link**.
 
-    :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-menu.png" alt-text="Screenshot of sharing from the file menu" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-share-menu.png":::
+    :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-menu.png" alt-text="Screenshot of sharing from the file menu." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-share-menu.png":::
 
 - You can also share a link to the report with others by selecting the **Share** button at the top right of the report. 
 
-    :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png" alt-text="Screenshot of share button in browser" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png":::
+    :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png" alt-text="Screenshot of share button in browser." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png":::
 
 Power BI uses the standard Microsoft 365 share dialog box to help you share your file. This dialog enforces your permissions in OneDrive and SharePoint and any policies that apply to the OneDrive folder or SharePoint document library where the file is saved. 
 
 From here, you can share the link directly with individuals or groups, or copy the link to share with others. 
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-dialog.png" alt-text="Screenshot of share dialog in OneDrive and SharePoint" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-share-dialog.png":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-dialog.png" alt-text="Screenshot of share dialog in OneDrive and SharePoint." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-share-dialog.png":::
 
 ## Change the page view
 
@@ -73,13 +73,13 @@ Use the **Page view** button to choose one of the view options:
 - Fit to width
 - Actual size
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-fit-to-page.png" alt-text="Screenshot of fit to page functionality":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-fit-to-page.png" alt-text="Screenshot of fit to page functionality.":::
 
 ## Set high-contrast colors
 
 You can change your report to include high-contrast colors. To change the color, select one of the options from the **High-contrast color** button in the top left corner of the report. 
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-high-contrast-color.png" alt-text="Screenshot of high contrast color options" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-high-contrast-color.png":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-high-contrast-color.png" alt-text="Screenshot of high contrast color options." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-high-contrast-color.png":::
 
 ## View saved bookmarks
 
@@ -117,7 +117,7 @@ To download a copy of the report to your device, on the **File** menu, select **
 
 You can also open the file in preview mode by right-clicking the file or selecting **More options (...)** > **Preview**.
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open-preview.png" alt-text="Screenshot of opening a preview of a Power BI file in OneDrive and SharePoint" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-open-preview.png":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open-preview.png" alt-text="Screenshot of opening a preview of a Power BI file in OneDrive and SharePoint." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-open-preview.png":::
 
 The preview provides a limited experience with options to download the .pbix file, share the file, or copy a link to the file. 
 
