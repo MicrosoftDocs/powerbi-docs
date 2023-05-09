@@ -1,52 +1,35 @@
 ---
-# Required metadata
-		# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-		# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
-title: Support ticket best practices      # Add a title for the browser tab
-description: Best practices when creating a Power BI or Microsoft Fabric support ticket# Add a meaningful description for search results
-author:      royrubinstein # GitHub alias
-ms.author:    rrubinstein # Microsoft alias
-ms.service:  powerbi # Add the ms.service or ms.prod value
-# ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    supprot # Add the ms.topic value
-ms.date:     05/09/2023
+title: Support ticket best practices
+description: Best practices when creating a Power BI or Fabric support ticket 
+author: mihart
+ms.author: rrubinstein
+ms.service: powerbi
+ms.topic: troubleshooting
+ms.date: 05/09/2023
 ---
 
 # Best practices when creating a support ticket
 
-The specific information Microsoft will require to troubleshoot your case is dependent on the issues you are experiencing. The guide below can be used to give some information on information that may be required. ***Please note, many of these may not be applicable to your*** **case**. Please review the below for more information.
+The specific information Microsoft will require to troubleshoot your case depends on the issue you are experiencing. This article provides tips and best practices for gathering necessary information for support requests. ***Note, many of these won't be applicable to your*** **case**.  
 
-## The browser page's URL in which you're experiencing the issue
+## Information to provide to Microsoft
 
-**When and why does Microsoft need it?**
+Depending on your specific issue, you may be asked to provide the following information.
 
-The URL provides us information on where (workspace) you experience the issue and the artifacts type and ID in which the issue occurred.
+1. The URL for the browser page where you're experiencing the issue.
+    The URL provides information on where (workspace) you experience the issue and the item or feature type and ID.
 
-## Location of Issue (desktop/ service/ both)
+2. Location of issue (Power BI Desktop/ Power BI service/ both)
+    This information is always relevant for a service request. If a process fails on the Power BI service but succeeds on Desktop, or vice versa, this provides useful information to Microsoft as to the possible cause of the issue. Another example would be where the same M code works in a dataset but fails in a dataflow. Beyond these two examples there are many scenarios where it is possible to troubleshoot the issue by identifying exactly where it occurs and where it does not.
 
-**When and why does Microsoft need it?**
-
-This will always be relevant. If a process fails on the service but succeeds on the desktop, or vice versa, this can provide useful information to Microsoft as to the possible cause of the issue. Another example would be where the same M code works in a dataset but fails in a dataflow. Beyond these two examples there are many scenarios where it may be possible to further narrow down the issue by identifying exactly where it occurs and where it does not.
-
-## Relevant Error Codes
-
-**When and why does Microsoft need it?**
-
-Whenever an issue generates an error code the Microsoft team can use this to check their systems, which may identify potential causes. This is unlikely to resolve the issue on its own, but it can significantly speed up the troubleshooting process.
-
-**How do I get it?**
-
-Error codes are often generated when something goes wrong. These can be copied at the time of error.
+3. Relevant Error Codes
+    Error codes are often generated when something goes wrong. These can be copied at the time of error. Whenever an issue generates an error code, Microsoft uses it to check their systems and identify potential reasons for the error. This is unlikely to resolve the issue on its own, but it significantly speeds up the troubleshooting process.
 
 > [!Tip]
-> Please use the copy button to retrieve the code. These are usually around 30 characters long and a screenshot will force the Microsoft engineer to copy out the entire code by hand.
+> Use the **Copy** button to retrieve the code. Don't send a screenshot. Error codes are long (typically 30 characters long), and manually transcribing from a screenshot increases the possibility of getting it wrong.  
 
-## Data sources and storage mode being used
-
-**When and why does Microsoft need it?**
-
-This is always useful to know. Certain issues only related to specific data sources. Where multiple sources are used it is helpful to understand if only certain sources are causing the issue through trial and error. Power BI also behaves differently when different storage modes are used. The three main storage mode options are:
+4. Data sources and storage mode being used
+    This is always useful to know. Certain issues only related to specific data sources. Where multiple sources are used it is helpful to understand if only certain sources are causing the issue through trial and error. Power BI also behaves differently when different storage modes are used. The three main storage mode options are:
 
 -   [Import](https://learn.microsoft.com/en-us/power-bi/connect-data/service-dataset-modes-understand#import-mode)
 
