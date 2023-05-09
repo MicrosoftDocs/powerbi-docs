@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-get-started
-ms.date: 04/18/2023
+ms.date: 05/09/2023
 ms.search.form: Create a deployment pipeline, Create deployment pipeline, Introduction to Deployment pipelines
 ---
 
