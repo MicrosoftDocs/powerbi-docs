@@ -34,7 +34,7 @@ If the capability isn't enabled in your tenant, you can't view a Power BI report
 
 Viewing Power BI reports stored in OneDrive and SharePoint directly in your browser is simple. Select the file directly to open it in your browser.
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open.png" alt-text="Screenshot of sharepoint library with Power BI file" lightbox=:::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open.png" alt-text="Screenshot of sharepoint library with Power BI file" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-open.png":::
 
 You can also right-click the report, or select **More options (...) > **Open** > **Open in browser**.  
 
@@ -58,7 +58,7 @@ You can share a link to a Power BI file with others in two ways.
 
 - You can also share a link to the report with others by selecting the **Share** button at the top right of the report. 
 
-    :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png" alt-text="Screenshot of share button in browser" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png" alt-text="Screenshot of share button in browser":::
+    :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png" alt-text="Screenshot of share button in browser" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png":::
 
 Power BI uses the standard Microsoft 365 share dialog box to help you share your file. This dialog enforces your permissions in OneDrive and SharePoint and any policies that apply to the OneDrive folder or SharePoint document library where the file is saved. 
 
