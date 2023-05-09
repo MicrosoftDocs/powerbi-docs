@@ -1,5 +1,5 @@
 ---
-title: View Power BI file in OneDrive and SharePoint
+title: View Power BI files in OneDrive and SharePoint
 description: Learn how to view Power BI Desktop files in SharePoint document libraries and OneDrive for Business.
 author: LukaszPawlowski-MS
 ms.author: lukaszp
@@ -8,7 +8,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: View Power BI file in SharePoint and OneDrive
 ms.topic: how-to
 ms.custom: 
-ms.date: 05/03/2023
+ms.date: 05/08/2023
 
 LocalizationGroup: Share your work
 ---
@@ -30,9 +30,7 @@ If the capability isn't enabled in your tenant, you can't view a Power BI report
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-one-drive-setting-off.png" alt-text="Screenshot of capability disabled view":::
 
-## Viewing Power BI files in OneDrive and SharePoint capabilities
-
-### Open a Power BI file stored in a OneDrive or SharePoint library
+## Open a Power BI file stored in a OneDrive or SharePoint library
 
 Viewing Power BI reports stored in OneDrive and SharePoint directly in your browser is simple. Select the file directly to open it in your browser.
 
@@ -50,7 +48,7 @@ Once the report is open, you can interact with the visuals and explore the under
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-explore.png" alt-text="Screenshot of exploring data in Power BI file online.":::
 
-### Share a link to the report with others
+## Share a link to the report with others
 
 You can share a link to a Power BI file with others in two ways. 
 
@@ -68,7 +66,7 @@ From here, you can share the link directly with individuals or groups, or copy t
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-dialog.png" alt-text="Screenshot of share dialog in OneDrive and SharePoint":::
 
-### Change the page view
+## Change the page view
 
 Use the **Page view** button to choose one of the view options:
 - Fit to page
@@ -77,19 +75,19 @@ Use the **Page view** button to choose one of the view options:
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-fit-to-page.png" alt-text="Screenshot of fit to page functionality":::
 
-### Set high-contrast colors
+## Set high-contrast colors
 
 You can change your report to include high-contrast colors. To change the color, select one of the options from the **High-contrast color** button in the top left corner of the report. 
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-high-contrast-color.png" alt-text="Screenshot of high contrast color options":::
 
-### View saved bookmarks
+## View saved bookmarks
 
 To view saved bookmarks, select the **Bookmarks** button from the top-left corner of the report. After you select the button, a Bookmarks pane pops out on the right side of the browser. You can choose a bookmark created by the report author. Selecting one of the bookmarks shows a set filtered version of the report assigned to that bookmark.
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-bookmark.png" alt-text="Screenshot of bookmarks in Power BI file in the browser.":::
 
-### Rename the file
+## Rename the file
 
 You can rename the file in two different ways. 
 
@@ -109,13 +107,13 @@ You can also rename the file by selecting the **File** menu > **Rename**.
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-rename.png" alt-text="Screenshot of renaming the Power BI file from the file menu.":::
 
-### Download a copy
+## Download a copy
 
 To download a copy of the report to your device, on the **File** menu, select **Download a copy**. A version of the file is copied to the Power BI service, to then be downloaded to your device. You can open the file in Power BI Desktop to edit and publish the report back to the Power BI service. 
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-download.png" alt-text="Screenshot of downloading a copy of the Power BI report.":::
 
-### Open a report in preview mode
+## Open a report in preview mode
 
 You can also open the file in preview mode by right-clicking the file or selecting **More options (...)** > **Preview**.
 
