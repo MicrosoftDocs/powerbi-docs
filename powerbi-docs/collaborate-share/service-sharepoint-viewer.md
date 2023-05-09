@@ -28,21 +28,21 @@ Admins must [*enable* the capability in the Admin portal](../admin/service-admin
 
 If the capability isn't enabled in your tenant, you can't view a Power BI report in your browser. Instead, you're directed to download the file to your device. You can then open the file in Power BI Desktop. For the optimal viewing experience, we encourage admins to enable the functionality. 
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-one-drive-setting-off.png" alt-text="Screenshot of capability disabled view":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-one-drive-setting-off.png" alt-text="Screenshot of capability disabled view" lightbox="media/service-sharepoint-viewer/power-bi-one-drive-setting-off.png":::
 
 ## Open a Power BI file stored in a OneDrive or SharePoint library
 
 Viewing Power BI reports stored in OneDrive and SharePoint directly in your browser is simple. Select the file directly to open it in your browser.
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open.png" alt-text="Screenshot of sharepoint library with Power BI file":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open.png" alt-text="Screenshot of sharepoint library with Power BI file" lightbox=:::
 
 You can also right-click the report, or select **More options (...) > **Open** > **Open in browser**.  
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open-in-browser.png" alt-text="Screenshot of selecting a Power BI file to open.":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open-in-browser.png" alt-text="Screenshot of selecting a Power BI file to open." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-open-in-browser.png":::
 
 The report then loads in your browser.
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-basic-view.png" alt-text="Screenshot of basic view of Power BI in the browser.":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-basic-view.png" alt-text="Screenshot of basic view of Power BI in the browser." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-basic-view.png":::
 
 Once the report is open, you can interact with the visuals and explore the underlying data to uncover important information. 
 
@@ -54,17 +54,17 @@ You can share a link to a Power BI file with others in two ways.
 
 - On the **File** menu, select **Share** from the left-hand menu > **Share a link**.
 
-    :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-menu.png" alt-text="Screenshot of sharing from the file menu":::
+    :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-menu.png" alt-text="Screenshot of sharing from the file menu" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-share-menu.png":::
 
 - You can also share a link to the report with others by selecting the **Share** button at the top right of the report. 
 
-    :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png" alt-text="Screenshot of share button in browser":::
+    :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png" alt-text="Screenshot of share button in browser" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-share-button.png" alt-text="Screenshot of share button in browser":::
 
 Power BI uses the standard Microsoft 365 share dialog box to help you share your file. This dialog enforces your permissions in OneDrive and SharePoint and any policies that apply to the OneDrive folder or SharePoint document library where the file is saved. 
 
 From here, you can share the link directly with individuals or groups, or copy the link to share with others. 
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-dialog.png" alt-text="Screenshot of share dialog in OneDrive and SharePoint":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-share-dialog.png" alt-text="Screenshot of share dialog in OneDrive and SharePoint" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-share-dialog.png":::
 
 ## Change the page view
 
@@ -79,13 +79,13 @@ Use the **Page view** button to choose one of the view options:
 
 You can change your report to include high-contrast colors. To change the color, select one of the options from the **High-contrast color** button in the top left corner of the report. 
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-high-contrast-color.png" alt-text="Screenshot of high contrast color options":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-high-contrast-color.png" alt-text="Screenshot of high contrast color options" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-high-contrast-color.png":::
 
 ## View saved bookmarks
 
 To view saved bookmarks, select the **Bookmarks** button from the top-left corner of the report. After you select the button, a Bookmarks pane pops out on the right side of the browser. You can choose a bookmark created by the report author. Selecting one of the bookmarks shows a set filtered version of the report assigned to that bookmark.
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-bookmark.png" alt-text="Screenshot of bookmarks in Power BI file in the browser.":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-bookmark.png" alt-text="Screenshot of bookmarks in Power BI file in the browser." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-bookmark.png":::
 
 ## Rename the file
 
@@ -93,35 +93,35 @@ You can rename the file in two different ways.
 
 The first option starts with selecting the file name at the top left corner of the report. 
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-rename-select.png" alt-text="Screenshot of renaming Power BI file.":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-rename-select.png" alt-text="Screenshot of renaming Power BI file." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-rename-select.png":::
 
 Type over the current file name.
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-rename-top.png" alt-text="Screenshot of typing new name of Power BI file.":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-rename-top.png" alt-text="Screenshot of typing new name of Power BI file." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-rename-top.png":::
 
 Select out of the box to see the new saved name.
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-renamed.png" alt-text="Screenshot of new name of Power BI file.":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-renamed.png" alt-text="Screenshot of new name of Power BI file." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-renamed.png":::
 
 You can also rename the file by selecting the **File** menu > **Rename**.
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-rename.png" alt-text="Screenshot of renaming the Power BI file from the file menu.":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-rename.png" alt-text="Screenshot of renaming the Power BI file from the file menu." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-rename.png":::
 
 ## Download a copy
 
 To download a copy of the report to your device, on the **File** menu, select **Download a copy**. A version of the file is copied to the Power BI service, to then be downloaded to your device. You can open the file in Power BI Desktop to edit and publish the report back to the Power BI service. 
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-download.png" alt-text="Screenshot of downloading a copy of the Power BI report.":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-download.png" alt-text="Screenshot of downloading a copy of the Power BI report." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-download.png":::
 
 ## Open a report in preview mode
 
 You can also open the file in preview mode by right-clicking the file or selecting **More options (...)** > **Preview**.
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open-preview.png" alt-text="Screenshot of opening a preview of a Power BI file in OneDrive and SharePoint":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-open-preview.png" alt-text="Screenshot of opening a preview of a Power BI file in OneDrive and SharePoint" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-open-preview.png":::
 
 The preview provides a limited experience with options to download the .pbix file, share the file, or copy a link to the file. 
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-preview.png" alt-text="Screenshot of preview view of Power BI file in OneDrive and SharePoint.":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-preview.png" alt-text="Screenshot of preview view of Power BI file in OneDrive and SharePoint." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-preview.png":::
 
 ## OneDrive and SharePoint capabilities
 
@@ -190,6 +190,6 @@ The first time anyone opens a Power BI file in a browser through a OneDrive or S
 
 Admins can see the workspaces created in the Power BI service on the **Workspaces** tab in the Admin portal. Created workspaces have the word **OneDrive** at the end of the workspace name. They're also listed as **PBIX in OneDrive Folder** in the description column. 
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-workspace.png" alt-text="Screenshot of Power BI admin workspace creation naming":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-workspace.png" alt-text="Screenshot of Power BI admin workspace creation naming." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-workspace.png":::
 
 Admins can't modify workspaces (delete, modify access) from the Power BI Service. 
