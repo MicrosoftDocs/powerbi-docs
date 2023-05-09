@@ -28,7 +28,7 @@ Admins must [*enable* the capability in the Admin portal](../admin/service-admin
 
 If the capability isn't enabled in your tenant, you can't view a Power BI report in your browser. Instead, you're directed to download the file to your device. You can then open the file in Power BI Desktop. For the optimal viewing experience, we encourage admins to enable the functionality. 
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-one-drive-setting-off.png" alt-text="Screenshot of capability disabled view" lightbox="media/service-sharepoint-viewer/power-bi-one-drive-setting-off.png":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png" alt-text="Screenshot of capability disabled view" lightbox="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png":::
 
 ## Open a Power BI file stored in a OneDrive or SharePoint library
 
