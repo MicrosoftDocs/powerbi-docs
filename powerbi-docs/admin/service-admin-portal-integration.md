@@ -26,13 +26,13 @@ When enabled, users in the organization can use Excel to view and interact with 
 
 When enabled, users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. Learn more about [ArcGIS maps](../visuals/power-bi-visualizations-arcgis.md).
 
-:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-arcgis-maps-setting.png" alt-text="Screenshot of the use arc gis maps for power BI admin setting.":::
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-arcgis-maps-setting.png" alt-text="Screenshot of the use arc gis maps for Power BI admin setting.":::
 
 ## Use global search for Power BI
 
 When enabled, users in the organization can use external search features that rely on Azure Search. See [Navigation for Power BI business users: global search](../consumer/end-user-search-sort.md) for more information.
 
-:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-global-search-setting.png" alt-text="Screenshot of the use global search for power BI admin setting.":::
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-global-search-setting.png" alt-text="Screenshot of the use global search for Power BI admin setting.":::
 
 ## Use Azure Maps Visual
 
