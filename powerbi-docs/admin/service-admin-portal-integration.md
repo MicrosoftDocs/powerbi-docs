@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 03/07/2023
+ms.date: 03/08/2023
 LocalizationGroup: Administration
 ---
 
@@ -96,7 +96,7 @@ Learn more about [viewing Power BI files saved in OneDrive and SharePoint](../co
 
 :::image type="content" source="media/service-admin-portal-integration/admin-integration-viewer.png" alt-text="Users can view Power BI items saved in OneDrive and SharePoint":::
 
-This setting is **off** by default. To change the setting, go to the Power BI Admin portal, select **Tenant settings > Integration settings > Users can view Power BI items saved in OneDrive and SharePoint (Preview), and set the toggle as desired**.
+This setting is **off** by default. To change the setting, go to the Power BI Admin portal, select **Tenant settings > Integration settings > Users can view Power BI items saved in OneDrive and SharePoint (Preview)**, and set the toggle as desired.
 
 ## Users can share links to Power BI files stored in OneDrive and SharePoint through Power BI Desktop
 Users can share links to Power BI Desktop files (.pbix) saved to OneDrive and SharePoint through Power BI Desktop. Sharing uses standard OneDrive and SharePoint sharing functionality. When enabled, this setting applies to all users in your organization. 
