@@ -29,7 +29,7 @@ Let’s get started!
 - Before you start, if you aren't signed up yet, [sign up for a free trial](service-self-service-signup-for-power-bi.md).
 - Create a [new workspace](../collaborate-share/service-create-the-new-workspaces.md) and assign a Fabric capacity.
      - An existing workspace can also be used, although we recommend using a nonproduction workspace for simplicity of the tutorial.
-- Download the Power Query template file that contains sample queries for [Conotoso](NEED TO UPDATE LINK) data.
+- Download the Power Query template file that contains sample queries for Contoso data.
 
 ## Create a lakehouse to store data
 
@@ -55,8 +55,6 @@ Once you're in the Lakehouse editor, select **New Dataflow Gen2**.
 > You can also select *Get data* from the ribbon and then **New Dataflow Gen2**.
 
 :::image type="content" source="media/fabric-getting-started/NewDataflowGen2.png" alt-text="Screen shot of Get data drop down in the Lakehouse editor.":::
-
-Learn more about the [lakehouse](NEED LINK).
 
 ## Prepare and load data into your lakehouse
 
@@ -261,8 +259,6 @@ To monitor the pipeline’s current status, you can view the **Output** table, w
 When the status returns **Succeeded**, you can proceed to the next section of the tutorial by returning to your workspace.
 
 :::image type="content" source="media/fabric-getting-started/ReturnToWorkspace.png" alt-text="Screen shot of the side rail with workspace selection.":::
-
-Learn more about [pipelines](NEED LINK)
 
 ## Create a semantic model in the Lakehouse
 
