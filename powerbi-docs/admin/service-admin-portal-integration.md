@@ -20,19 +20,19 @@ These settings are configured in the tenant settings section of the Admin portal
 
 When enabled, users in the organization can use Excel to view and interact with on-premises Power BI datasets. This also allows connections to XMLA endpoints. Learn more about [analyzing in Excel](../collaborate-share/service-analyze-in-excel.md).
 
-:::image type="content" source="media/service-admin-portal-integration/admin-integration-allow-xmla-endpoints-setting.png" alt-text="Screenshot of the allow x m l a endpoints and analyze in excel with on premises datasets admin setting.":::
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-allow-xmla-endpoints-setting.png" alt-text="Screenshot of the allow XMLA endpoints and analyze in Excel with on-premises datasets admin setting.":::
 
 ## Use ArcGIS Maps for Power BI
 
 When enabled, users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. Learn more about [ArcGIS maps](../visuals/power-bi-visualizations-arcgis.md).
 
-:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-arcgis-maps-setting.png" alt-text="Screenshot of the use arc gis maps for power b i admin setting.":::
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-arcgis-maps-setting.png" alt-text="Screenshot of the use arc gis maps for power BI admin setting.":::
 
 ## Use global search for Power BI
 
 When enabled, users in the organization can use external search features that rely on Azure Search. See [Navigation for Power BI business users: global search](../consumer/end-user-search-sort.md) for more information.
 
-:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-global-search-setting.png" alt-text="Screenshot of the use global search for power b i admin setting.":::
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-global-search-setting.png" alt-text="Screenshot of the use global search for power BI admin setting.":::
 
 ## Use Azure Maps Visual
 
