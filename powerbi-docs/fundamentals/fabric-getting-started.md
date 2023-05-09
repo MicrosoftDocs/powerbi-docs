@@ -51,9 +51,10 @@ Set the Lakehouse name to **SalesLakehouse**. Then select **Create**.
 
 Once you're in the Lakehouse editor, select **New Dataflow Gen2**.
 
-**Important note:** You can also select *Get data* from the ribbon and then **New Dataflow Gen2**.
+> [!NOTE]
+> You can also select *Get data* from the ribbon and then **New Dataflow Gen2**.
 
-:::image type="content" source="media/fabric-getting-started/NewDataflowGen2.png" alt-text="Screen shot of watermarks in the Lakehouse editor.":::
+:::image type="content" source="media/fabric-getting-started/NewDataflowGen2.png" alt-text="Screen shot of Get data drop down in the Lakehouse editor.":::
 
 Learn more about the [lakehouse](NEED LINK).
 
@@ -69,7 +70,8 @@ Select the **DimDate** query under the **Data load** query group and then select
 
 With the **DimDate** query selected, in the data preview window, change the data type of the **DateKey** column to **Date/Time** by selecting the icon in the top left.
 
-**Important note:** The Lakehouse only supports datetime data types. If you attempt to load date only data, an error message is presented.
+> [!NOTE]
+> The lakehouse only supports *datetime* data types. If you attempt to load *date* only data, an error message is presented.
 
 :::image type="content" source="media/fabric-getting-started/TransformColumnDateTime.png" alt-text="Screen shot of changing data types within the Power Query editor.":::
 
@@ -79,9 +81,9 @@ Select **Replace current** within the **Change column type** window.
 
 ### Add a data destination
 
-With the **DimDate** table selected, from the **Home** tab, select **Add data destination** and then select the **Lakehouse** option.
+With the **DimDate** table selected, from the **Home** tab, select **Add data destination** and then select the **Lakehouse** option menu item.
 
-:::image type="content" source="media/fabric-getting-started/LakehouseDataDestination.png" alt-text="Screen shot of the Data destination Lakehouse option.":::
+:::image type="content" source="media/fabric-getting-started/LakehouseDataDestination.png" alt-text="Screen shot of the get data destination Lakehouse option.":::
 
 If necessary, set the authentication to **Organizational account** and then select **Next**.
 
@@ -89,13 +91,14 @@ If necessary, set the authentication to **Organizational account** and then sele
 
 From the navigator, select the workspace used for this tutorial and expand to view all **Lakehouse** items. Select **SalesLakehouse** and confirm that the default **New table** is selected before selecting **Next** to continue.
 
-:::image type="content" source="media/fabric-getting-started/NewTable.png" alt-text="Screen shot of the destination target navigator.":::
+:::image type="content" source="media/fabric-getting-started/NewTable.png" alt-text="Screen shot of the destination target navigator item.":::
 
 Set the **Update method** to **Replace** and then select **Save settings**.
 
-**Important note:** Setting the update method to Replace deletes all existing data and replace it with the new data on each subsequent refresh.
+> [!CAUTION]
+> Setting the update method to *Replace* deletes all existing data and replace it with the new data on each subsequent refresh.
 
-:::image type="content" source="media/fabric-getting-started/ReplaceMethod.png" alt-text="Screen shot of the destination settings menu.":::
+:::image type="content" source="media/fabric-getting-started/ReplaceMethod.png" alt-text="Screen shot of the destination settings menu option.":::
 
 In the bottom right corner of the **Power Query Online** editor, you can find the configured **Data destination** settings for your query where you can further customize or remove.
 
@@ -114,7 +117,7 @@ Before moving on to the next section of this tutorial, make sure to perform the 
 
 Select the **FactOnlineSales** query under the **Data transformation** query group and from the **Home** tab, select **Add data destination** and then select the **Lakehouse** option.
 
-:::image type="content" source="media/fabric-getting-started/DataDestinationFactOnlineSales.png" alt-text="Screen shot of the Data destination Lakehouse option.":::
+:::image type="content" source="media/fabric-getting-started/DataDestinationFactOnlineSales.png" alt-text="Screen shot of the Data destination Lakehouse target option.":::
 
 If necessary, set the authentication to **Organizational account** and then select **Next**.
 
@@ -122,13 +125,14 @@ If necessary, set the authentication to **Organizational account** and then sele
 
 From the navigator, select the workspace used for this tutorial and expand to view all **Lakehouse** items. Select **SalesLakehouse** and confirm that the default **New table** is selected before selecting **Next** to continue.
 
-:::image type="content" source="media/fabric-getting-started/NewTableFactOnlineSales.png" alt-text="Screen shot of the destination target navigator.":::
+:::image type="content" source="media/fabric-getting-started/NewTableFactOnlineSales.png" alt-text="Screen shot of the destination target navigator window.":::
 
 Set the **Update method** to **Append** and then select **Save settings**.
 
-**Important note:** This inserts data, preserving the existing rows within the table on each subsequent refresh.
+> [!NOTE]
+> This process inserts data, preserving the existing rows within the table on each subsequent refresh.
 
-:::image type="content" source="media/fabric-getting-started/AppendMethod.png" alt-text="Screen shot of the destination settings menu.":::
+:::image type="content" source="media/fabric-getting-started/AppendMethod.png" alt-text="Screen shot of the destination settings menu selection.":::
 
 Select **Publish** to save your dataflow and exit the **Power Query Online** editor.
 
@@ -140,7 +144,7 @@ Hover above the created dataflow in your workspace, select the ellipses **(...)*
 
 Change the name of the dataflow to **OnlineSalesDataflow** and select **Save**.
 
-:::image type="content" source="media/fabric-getting-started/DataflowName.png" alt-text="Screen shot of renaming a dataflow.":::
+:::image type="content" source="media/fabric-getting-started/DataflowName.png" alt-text="Screen shot of renaming a dataflow option.":::
 
 ### Orchestrate a data pipeline
 
@@ -150,17 +154,18 @@ Using pipelines, we first orchestrate the refresh of our data flow. If an error 
 
 Select the **Lakehouse** item named **SalesLakehouse** within your workspace.
 
-:::image type="content" source="media/fabric-getting-started/SalesLakehouseItem.png" alt-text="Screen shot of renaming a dataflow.":::
+:::image type="content" source="media/fabric-getting-started/SalesLakehouseItem.png" alt-text="Screen shot of renaming an existing dataflow.":::
 
 Once you're in the Lakehouse editor, select **New data pipeline**.
 
-**Important note:** You can also select *Get data* from the ribbon and then **New data pipeline**.
+> [!NOTE]
+> You can also select *Get data* from the ribbon and then **New data pipeline**.
 
 :::image type="content" source="media/fabric-getting-started/NewDataPipeline.png" alt-text="Screen shot of watermarks in the Lakehouse editor.":::
 
 Set the pipeline name to **SalesPipeline**. Then select **Create**.
 
-:::image type="content" source="media/fabric-getting-started/NewPipelineName.png" alt-text="Screen shot of the pipeline name menu.":::
+:::image type="content" source="media/fabric-getting-started/NewPipelineName.png" alt-text="Screen shot of the pipeline name menu option.":::
 
 Close the Copy data assistant by selecting **Cancel**. If you’re prompted to confirm exiting the copy data window, select **Yes, cancel**.
 
@@ -168,7 +173,8 @@ Close the Copy data assistant by selecting **Cancel**. If you’re prompted to c
 
 Once you’re in the pipeline editor, select **Add pipeline activity** and then select **Dataflow**.
 
-**Important note:** You can also select *Dataflow* from the ribbon.
+> [!NOTE]
+> You can also select *Dataflow* from the ribbon.
 
 :::image type="content" source="media/fabric-getting-started/AddDataflowActivity.png" alt-text="Screen shot of the pipeline watermark canvas and the add activity option.":::
 
@@ -183,17 +189,18 @@ With the dataflow activity still selected, select **Settings** and choose **Onli
 Select the **Activities** tab and then the **Office365 Outlook** activity. 
 **Note:** If a **Grant consent** window appears, select **Ok**, sign in with your organizational account and then select **Allow access**.
 
-:::image type="content" source="media/fabric-getting-started/Office365Activity.png" alt-text="Screen shot of the Office365 Outlook activity.":::
+:::image type="content" source="media/fabric-getting-started/Office365Activity.png" alt-text="Screen shot of the Office365 Outlook activity information.":::
 
 Select the **Office365 Outlook** activity within the pipeline editor and change its **Name** value to **Mail on failure** within the General section.
 
-:::image type="content" source="media/fabric-getting-started/Office365ActivityName.png" alt-text="Screen shot of the Office365 Outlook activity.":::
+:::image type="content" source="media/fabric-getting-started/Office365ActivityName.png" alt-text="Screen shot of the Office365 Outlook activity name.":::
 
 With the Office365 Outlook activity still selected, select **Settings**. Update the **To** field to your e-mail address and the **Subject** to **Pipeline failure**. Select the **Add dynamic content [Alt+Shift+D]** for the mail Body.
 
-**Important note:** More e-mail configuration options such as From (Send as), Cc, Bcc, Sensitivity label and more are available within the *Advanced properties*.
+> [!NOTE]
+> More e-mail configuration options such as From (Send as), Cc, Bcc, Sensitivity label and more are available from *Advanced properties*.
 
-:::image type="content" source="media/fabric-getting-started/Office365ActivitySettings.png" alt-text="Screen shot of the Office365 Outlook activity.":::
+:::image type="content" source="media/fabric-getting-started/Office365ActivitySettings.png" alt-text="Screen shot of the Office365 Outlook settings.":::
 
 In the **Pipeline expression builder**, paste the expression code block below.
 
@@ -210,7 +217,7 @@ In the **Pipeline expression builder**, paste the expression code block below.
 )
 ```
 
-:::image type="content" source="media/fabric-getting-started/ExpressionBuilder.png" alt-text="Screen shot of the Office365 Outlook activity.":::
+:::image type="content" source="media/fabric-getting-started/ExpressionBuilder.png" alt-text="Screen shot of the Office365 Outlook activity with expression builder.":::
 
 Select **System variables** and insert the following variables by clicking on the corresponding name from the table below.
 
@@ -296,7 +303,7 @@ Perform these same steps for each of the remaining tables and columns listed bel
 
 Below is a finished view of the semantic model with all the created relationships included.
 
-:::image type="content" source="media/fabric-getting-started/StarSchema.png" alt-text="Screen shot of table relationships in the model view.":::
+:::image type="content" source="media/fabric-getting-started/StarSchema.png" alt-text="Screen shot of table relationships in the model view pane.":::
 
 ### Write a measure in DAX
 
@@ -374,7 +381,7 @@ Select **Save** from the ribbon to save a copy to the current workspace
 
 In the Save your report dialog box, type **Sales Summary** in the **Enter a name for your report** field. Select **Save** once complete.
 
-:::image type="content" source="media/fabric-getting-started/SaveYourReport.png" alt-text="Screen shot of the Save button when visualizing data.":::
+:::image type="content" source="media/fabric-getting-started/SaveYourReport.png" alt-text="Screen shot of the Save button completing its process when visualizing data.":::
 
 You can learn more about [quick create](../create-reports/service-quick-create-report.md).
 
