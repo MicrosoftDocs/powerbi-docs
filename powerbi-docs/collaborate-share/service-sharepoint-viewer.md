@@ -46,7 +46,7 @@ The report then loads in your browser.
 
 Once the report is open, you can interact with the visuals and explore the underlying data to uncover important information. 
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-explore.png" alt-text="Screenshot of exploring data in Power BI file online.":::
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-explore.png" alt-text="Screenshot of exploring data in Power BI file online." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-explore.png":::
 
 ## Share a link to the report with others
 
