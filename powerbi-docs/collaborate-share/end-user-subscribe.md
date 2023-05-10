@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 05/04/2023
+ms.date: 05/15/2023
 LocalizationGroup: Common tasks
 ---
 
@@ -26,7 +26,7 @@ It's never been easier to stay up-to-date on your most important dashboards and 
 
 
 ## Requirements
-The requirements apply to users in the organization and to [guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you'll need permissions to access the particular report or dashboard and **either**:
+The requirements apply to users in the organization and to [Azure Active Directory (AD) Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you'll need permissions to access the particular report or dashboard and **either**:
 
 - A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md), or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md) 
@@ -52,7 +52,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 4. Edit or add recipients by email address, ensuring that you've at least one. Optionally, add a subject and email message details. 
 
     > [!NOTE]
-    > Guest users can only subscribe themselves. 
+    > B2B Guest users can only subscribe themselves. 
 
 5. For Power BI reports, use the dropdown to select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. (For more information about full report attachments, see step 9 below.) 
 
@@ -108,21 +108,14 @@ To create a subscription that includes others, in addition to the [requirements 
 
 - A Contributor, Member, or Admin role in that workspace.  You’ll know you have the Contributor, Member or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 
-- To be part of the organization or a [B2B guest user](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions) who meets the other permission requirements. Other [guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others.
+- To be part of the organization. [B2B guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others only themselves. For more information, read [B2B guest users can set up and be subscribed to email subscriptions](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
 
 - If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can still subscribe others. However, they must also have a Power BI Pro or Premium Per User (PPU) license. 
 
     :::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
 
-### B2B guest users can set up and be subscribed to email subscriptions
-
-B2B users can be specifically granted permission to view content in Power BI by a Power BI tenant admin. So, there may be instances that the B2B users may need to create or receive email subscriptions, but not other external users. B2B users can create their own content subscription to which they have access and users in the organization can subscribe them to emails. 
-
-In addition to meeting the requirements to subscribe others, the Power BI tenant admin must turn on a setting to allow B2B guest users to use this feature. For more information on how to turn on this setting, read [Export and sharing tenant settings](../admin/service-admin-portal-export-sharing.md#B2B-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
-
 ### Use group email aliases 
 When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../enterprise/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
-
 
 |Group type      |Supported in email subscriptions  |
 |---------|---------|
@@ -137,9 +130,11 @@ There are different ways of creating a Microsoft 365 group. For example, you can
 > [!NOTE]
 > Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and don't support subscribing group aliases.  
 
+## Subscriptions for users outside your organization
+
 ### Subscribe external users 
 
-You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity. Guest users can't add subscriptions for external users. 
+You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity. B2B Guest users can't add subscriptions for external users. 
 
 - If you subscribe external users to a report or dashboard, they'll receive a share notification immediately after you select  **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because external users require an invitation link to view the report or dashboard. 
 
@@ -147,7 +142,13 @@ You can subscribe external users to a report or dashboard if your report or dash
 
 - *Sharing* content with a colleague outside of your domain doesn't require a Premium capacity. For example, if you're aaron@contoso.com, you can share with anyone@fabrikam.com, but you can't **subscribe** anyone@fabrikam.com, unless that content is hosted in a Premium capacity. 
 
-- In order for external users to subscribe themselves to reports or dashboards, they must first be added as guest users. Guest users (also known as Business-to-business users) are external users who have been added to your organization as Azure Active Directory (Azure AD) guest users. To learn more about guest users, see [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
+
+### B2B guest users can set up and be subscribed to email subscriptions
+
+B2B guest users can create their own content subscription to which they have access and users in the organization can subscribe them to emails. B2B users must first be added by member of the organization to set up and subscribe to email content. For more information about B2B guest users and how to add them to your organization, read [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
+
+In addition to B2B guest users meeting the requirements to subscribe themselves, the Power BI tenant admin must turn on a setting to allow B2B guest users to create email subscriptions. For more information on how to turn on this setting, read [Export and sharing tenant settings](../admin/service-admin-portal-export-sharing.md#B2B-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
+
 
 ## Subscribe to paginated reports 
 
@@ -188,7 +189,7 @@ If you have an existing subscription to a paginated report, and you want to upda
 
 -  You can subscribe other users in your organization to paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions.
 - You can set up an unlimited number of subscriptions per paginated report. 
-- Guest users can only create subscriptions for themselves.
+- B2B Guest users can only create subscriptions for themselves.
 - The maximum attachment size is 25 MB.
 - Unlike subscriptions for dashboards or Power BI reports, your subscription contains an attachment of the entire report output. The following attachment types are supported: PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML. 
 - Optionally, include a preview image of the report in the email body. The image may differ slightly from the first page of your attached report document, depending on the attachment format you select. 
@@ -197,7 +198,7 @@ If you have an existing subscription to a paginated report, and you want to upda
 
 
 ## Manage subscriptions
-Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the users assigned the *Admin* role. The Power BI workspace admin can view subscriptions, view logs, turn certain subscription features on and off, and edit and take over subscriptions.
+Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the users assigned the *Admin* role. Admins in the workspace can view, edit and take over all subscriptions inside the workspace. The Power BI tenant admin can view logs, turn certain subscription features on and off.
 
 # [Creator](#tab/creator)
 
@@ -249,17 +250,19 @@ Admins can also take over ownership of subscriptions in workspaces they manage. 
 
 :::image type="content" source="media/end-user-subscribe/power-bi-admin-take-over.png" alt-text="Screenshot showing a list of subscriptions with the take over icon selected.":::
 
-## Power BI administrators
+## Power BI tenant administrators
 
 ### Subscription controls and tracking for administrators 
 
 Power BI administrators have levers of control over subscriptions. 
 
-- [Enable email subscriptions](../admin/service-admin-portal-export-sharing.md) for all members of the organization. 
+- [Users can set up email subscriptions](../admin/service-admin-portal-export-sharing.md) for all members of the organization. 
 
-- Enable all members of the organization, or specific users, to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md). 
+- Enable all members of the organization, or specific users, to send email subscriptions to external users. See [Users can send email subscriptions to external users](../admin/service-admin-portal-export-sharing.md). 
 
-- [Enable specific attachment formats](../admin/service-admin-portal-export-sharing.md) for paginated report subscriptions (PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML). 
+- [Enable specific attachment formats](../admin/service-admin-portal-export-sharing.md) for paginated report subscriptions (PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML).
+
+- [B2B guest users can set up and be subscribed to email subscriptions](../admin/service-admin-portal-export-sharing.md#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions) to allow B2B guest users to create and subscribe to their own email subscriptions.
 
 ### View subscription audit and activity logs 
 
