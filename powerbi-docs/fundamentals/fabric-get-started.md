@@ -208,18 +208,18 @@ Using pipelines, we first orchestrate the refresh of our data flow. If an error 
 
 11. In the **Pipeline expression builder**, paste the following expression code block:
 
-```cpp
-@concat(
-    'Pipeline: '
-    , 
-    , '<br>'
-    , 'Workspace: '
-    , 
-    , '<br>'
-    , 'Time: '
-    , 
-)
-```
+    ```cpp
+    @concat(
+        'Pipeline: '
+        , 
+        , '<br>'
+        , 'Workspace: '
+        , 
+        , '<br>'
+        , 'Time: '
+        , 
+    )
+    ```
 
     :::image type="content" source="media/fabric-get-started/expression-builder.png" alt-text="Screenshot of the Office365 Outlook activity with expression builder.":::
 
@@ -333,12 +333,12 @@ Let’s write a SQL statement that calculates the total sales amount by month. W
 
 2. In the query editor, copy and paste or type the query below to calculate the total sales amount by month number in descending order. Once entered, select **Run** to view results.
 
-```sql
-SELECT 
-MONTH(DateKey) as "MonthNumber",
-SUM(SalesAmount) as "TotalSalesAmount"
-FROM FactOnlineSales
-GROUP BY MONTH(DateKey)
+    ```sql
+    SELECT 
+    MONTH(DateKey) as "MonthNumber",
+    SUM(SalesAmount) as "TotalSalesAmount"
+    FROM FactOnlineSales
+    GROUP BY MONTH(DateKey)
 ```
 
     :::image type="content" source="media/fabric-get-started/run-sql.png" alt-text="Screenshot of SQL query editor.":::
