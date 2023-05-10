@@ -12,7 +12,7 @@ ms.date: 05/10/2023
 
 # Fabric and Power BI support options
 
-This article describes the support options that are available to customers who have purchased Microsoft Fabric, Power BI Pro, Power BI Premium Per User (PPU), and Power BI Premium. Fabric and Power BI Administrators and other admins in your organization have access to expanded support options. Read [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) to learn more about who can manage service requests for your organization.
+This article describes the support options that are available to customers who have purchased Microsoft Fabric, Power BI Pro, Power BI Premium Per User (PPU), and Power BI Premium. Power BI Administrators and other admins in your organization have access to expanded support options. Read [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) to learn more about who can manage service requests for your organization. Read more about [Microsoft Fabric admin](/fabric/admin/microsoft-fabric-admin).
 
 ## Get started with support for Power BI end users
 
@@ -30,7 +30,7 @@ If you're a Power BI end user, you can contact support directly if you have a Po
 ## Get started with support for Fabric end users
 
 Fabric users can contact support directly. However, your administrator might prefer you take a different path before contacting support. 
-Verify whether Fabric support is your admin's preferred option when you need help. To check, select (**?**) from the page header in the Fabric service, then choose **Get Support**. If this selection takes you to the Fabric support page, you might use the following listed support options. Otherwise, you'll be directed to the preferred support option for your organization. 
+Verify whether Fabric support is your admin's preferred option when you need help. To check, select (**?**) from the Fabric top menu bar, then choose **Get Support**. If this selection takes you to the Fabric support page, you might use the following listed support options. Otherwise, you'll be directed to the preferred support option for your organization. 
 
 ## Get started with support for admins
 
