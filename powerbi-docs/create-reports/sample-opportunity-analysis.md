@@ -25,7 +25,7 @@ This sample relies on two measures of revenue:
   * Proposal: 60%  
   * Finalize: 80%
 
-:::image type="content" source="media/sample-opportunity-analysis/opportunity-1.png" alt-text="Screenshot that shows the dashboard for the Opportunity Analysis sample.":::
+:::image type="content" source="media/sample-opportunity-analysis/opportunity-1.png" alt-text="Screenshot that shows the dashboard for the Opportunity Analysis sample." lightbox="media/sample-opportunity-analysis/opportunity-1.png":::
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com) created this sample using real, anonymized data. The data is available in several formats: built-in sample in the Power BI service, *.pbix* Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
 
@@ -115,7 +115,7 @@ View each page in the report by selecting the page tabs on the side navigation.
 
 ### Opportunity Count Overview page
 
-:::image type="content" source="media/sample-opportunity-analysis/opportunity-3.png" alt-text="Screenshot that shows the Opportunity Count Overview page.":::
+:::image type="content" source="media/sample-opportunity-analysis/opportunity-3.png" alt-text="Screenshot that shows the Opportunity Count Overview page." lightbox="media/sample-opportunity-analysis/opportunity-3.png":::
 
 Note the following details:
 * East is our biggest region in terms of opportunity counts.  
@@ -127,7 +127,7 @@ Note the following details:
 
 This page takes a similar look at the data, but uses a revenue perspective instead of count.  
 
-:::image type="content" source="media/sample-opportunity-analysis/opportunity-4.png" alt-text="Screenshot that shows the Revenue Overview page.":::
+:::image type="content" source="media/sample-opportunity-analysis/opportunity-4.png" alt-text="Screenshot that shows the Revenue Overview page." lightbox="media/sample-opportunity-analysis/opportunity-4.png":::
 
 Note the following details:
 * East is our biggest region, not only in opportunity count but also in revenue.  
@@ -142,7 +142,7 @@ Clearly our partners are doing a better job than non-partners selling to custome
 
 This page of the report looks at data similar to the data on the previous page but breaks it down by region and stage. 
 
-:::image type="content" source="media/sample-opportunity-analysis/opportunity-5.png" alt-text="Screenshot that shows the Opportunity Count by Region and Stage.":::
+:::image type="content" source="media/sample-opportunity-analysis/opportunity-5.png" alt-text="Screenshot that shows the Opportunity Count by Region and Stage." lightbox="media/sample-opportunity-analysis/opportunity-5.png":::
 
 Note the following details:
 * If you select **East** in the **Opportunity Count by Region** pie chart to filter by the East region, you see that the opportunities in this region are split almost equally between partner driven and non-partner driven.
@@ -152,7 +152,7 @@ Note the following details:
 
 This page looks at similar factors, but from a date and time perspective. 
  
-:::image type="content" source="media/sample-opportunity-analysis/opportunity-6.png" alt-text="Screenshot that shows Upcoming Opportunities.":::
+:::image type="content" source="media/sample-opportunity-analysis/opportunity-6.png" alt-text="Screenshot that shows Upcoming Opportunities." lightbox="media/sample-opportunity-analysis/opportunity-6.png":::
 
 Our CFO uses this page to manage workload. By looking at the revenue opportunities by sales stage and month, they can plan accordingly.
 
