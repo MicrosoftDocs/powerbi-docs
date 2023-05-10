@@ -339,7 +339,7 @@ Let’s write a SQL statement that calculates the total sales amount by month. W
     SUM(SalesAmount) as "TotalSalesAmount"
     FROM FactOnlineSales
     GROUP BY MONTH(DateKey)
-```
+    ```
 
     :::image type="content" source="media/fabric-get-started/run-sql.png" alt-text="Screenshot of SQL query editor.":::
 
