@@ -13,7 +13,7 @@ LocalizationGroup: Get started
 ---
 # Tutorial: Fabric for Power BI users
 
-In this tutorial, you'll learn how to use Dataflows Gen2 and Pipelines to ingest data into a Lakehouse and create a dimensional model. You'll also learn how to generate a beautiful report automatically to display the latest sales figures from start to finish in just 45 minutes.
+In this tutorial, you learn how to use Dataflows Gen2 and Pipelines to ingest data into a Lakehouse and create a dimensional model. You also learn how to generate a beautiful report automatically to display the latest sales figures from start to finish in just 45 minutes.
 
 Using a [Contoso](https://www.microsoft.com/en-us/download/details.aspx?id=18279) sample dataset we can build an end-to-end solution in no time.
 
@@ -81,7 +81,7 @@ Take the following steps to load data into your lakehouse:
 
 ### Add a data destination
 
-Take the following stesp to add a data destination:
+Take the following steps to add a data destination:
 
 1. With the **DimDate** table selected, from the **Home** tab, select **Add data destination** and then select the **Lakehouse** option menu item.
 
@@ -106,7 +106,7 @@ In the bottom right corner of the **Power Query Online** editor, you can find th
 
 :::image type="content" source="media/fabric-get-started/data-destination-dim-date.png" alt-text="Screenshot of the configured data destination.":::
 
-Before moving on to the next section of this tutorial, make sure to perform the [same steps](#add-a-data-destination) as above to configure the Lakehouse as your data destination for each of the following queries.
+Before moving on to the next section of this tutorial, make sure to perform the [same steps](#add-a-data-destination) as you took earlier in this section to configure the Lakehouse as your data destination for each of the following queries.
 
 | Query |
 | :-- |
@@ -173,7 +173,7 @@ Using pipelines, we first orchestrate the refresh of our data flow. If an error 
 
     :::image type="content" source="media/fabric-get-started/close-copy-data-assistant.png" alt-text="Screenshot of the copy data assistant menu.":::
 
-5. Once you’re in the pipeline editor, select **Add pipeline activity** and then select **Dataflow**.
+5. Once you’re in the pipeline editor, select **Add pipeline activity**, and then select **Dataflow**.
 
     > [!NOTE]
     > You can also select *Dataflow* from the ribbon.
@@ -223,7 +223,7 @@ Using pipelines, we first orchestrate the refresh of our data flow. If an error 
 
     :::image type="content" source="media/fabric-get-started/expression-builder.png" alt-text="Screenshot of the Office365 Outlook activity with expression builder.":::
 
-12. Select **System variables** and insert the following variables by clicking on the corresponding name from the table below.
+12. Select **System variables** and insert the following variables by selecting the corresponding name from the following table.
 
     | Value name | Line | System variable |
     | :- | :- | :- |
@@ -232,7 +232,7 @@ Using pipelines, we first orchestrate the refresh of our data flow. If an error 
 
     :::image type="content" source="media/fabric-get-started/system-variables.png" alt-text="Screenshot of the pipeline system variables.":::
 
-13. Select **Functions** and insert the following function by clicking on the corresponding name from the table below. Once complete select **OK**.
+13. Select **Functions** and insert the following function by selecting the corresponding name from the following table. Once complete select **OK**.
 
     | Value name | Line | System variable |
     | :- | :- | :- |
@@ -286,7 +286,7 @@ This model is a star schema that you might see from data warehouses: It resemble
 
 3. Create a relationship by dragging and dropping the column **CustomerKey** from the **FactOnlineSales** table, to the **CustomerKey** on the **DimCustomer** table. 
 
-4. Once in the **Create Relationship** window ensure that you have selected the correct tables, columns and settings below. Select **Confirm** to continue.
+4. Once in the **Create Relationship** window ensure that you have selected the correct tables, columns and settings as showing in the following table. Select **Confirm** to continue.
 
     | Make this relationship active | From: Table 1 (column) | To: Table 2 (column) | Cardinality | Cross filter direction | 
     | :----- |:----- | :------ | :----- | :----- | 
@@ -315,13 +315,13 @@ Let's write a basic measure that calculates the total sales amount by due date o
 
     :::image type="content" source="media/fabric-get-started/new-measure.png" alt-text="Screenshot of table relationships in the model view.":::
 
-2. In the formula editor, copy and paste or type the measure below to calculate the total sales amount. Select the **check mark** to commit.
+2. In the formula editor, copy and paste or type the following measure to calculate the total sales amount. Select the **check mark** to commit.
 
-```dax
-Total Sales Amount = SUM(FactOnlineSales[SalesAmount])
-```
+    ```dax
+    Total Sales Amount = SUM(FactOnlineSales[SalesAmount])
+    ```
 
-:::image type="content" source="media/fabric-get-started/total-sales-amount.png" alt-text="Screenshot of Select the check mark to commit a DAX measure.":::
+    :::image type="content" source="media/fabric-get-started/total-sales-amount.png" alt-text="Screenshot of Select the check mark to commit a DAX measure.":::
 
 ### Create a SQL view
 
