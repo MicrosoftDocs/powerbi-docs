@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/10/2023
+ms.date: 05/10/2023
 LocalizationGroup: Samples
 ---
 # COVID-19 tracking sample for US state and local governments
