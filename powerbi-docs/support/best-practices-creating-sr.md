@@ -73,7 +73,7 @@ https://app.powerbi.com/groups/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/settings/dat
 
 8. Gateway logs
 
-    Gateways logs are extremely helpful and required when trying to troubleshoot any Gateway or network issue. To analyze the gateway performance yourself, use the [Gateway performance monitoring template](/data-integration/gateway/service-gateway-performance.md). For more information, see [export logs for a support ticket](../connect-data/service-gateway-onprem-tshoot).
+    Gateways logs are extremely helpful and required when trying to troubleshoot any Gateway or network issue. To analyze the gateway performance yourself, use the [Gateway performance monitoring template](/data-integration/gateway/service-gateway-performance.md). For more information, see [export logs for a support ticket](../connect-data/service-gateway-onprem-tshoot#export-logs-for-a-support-ticket).
 
 9. Diagnostic Information
 
