@@ -22,7 +22,7 @@ You can quickly view Power BI files in OneDrive and SharePoint without needing t
 ## Enable viewing Power BI files in OneDrive and SharePoint
 
 > [!NOTE]
-> Viewing Power BI files in OneDrive and SharePoint is disabled by default. Work with you Power BI Admin to enable this capability.
+> Viewing Power BI files in OneDrive and SharePoint is disabled by default. Work with your Power BI Admin to enable this capability.
 
 Admins must [*enable* the capability in the Admin portal](../admin/service-admin-portal-integration.md).
 
