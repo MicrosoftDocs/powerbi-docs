@@ -16,17 +16,21 @@ ms.date: 05/11/2023
 
 In this article, you learn how to view, read, and use the diagnostics feature of a paginated report rendered in the Power BI service. Diagnostics data provides report viewers with the ability to read displayed data on performance metrics and rendering. 
 
-On the **View** menu for a paginated report, there's an item called **Diagnostics**. Any user with at least a Contributor role in a workspace can utilize this feature.  
-
-This feature isn't available inside Power BI apps nor in the paginated report visual. It's designed for report authors to view performance data coming from a paginated report in the Power BI service.  
-
-:::image type="content" source="media/paginated-reports-diagnostics/paginated-view-diagnostics.png" alt-text="Screenshot of the diagnostics ribbon option on the View menu.":::
-
-When you select the diagnostics button a dialog box appears. 
-
 :::image type="content" source="media/paginated-reports-diagnostics/paginated-diagnostics-report.png" alt-text="Screenshot of the dialog box for diagnostics."::: 
 
-The following table describes the data that is captured in the diagnostics dialog.
+Any user with at least a Contributor role in a workspace can use this feature. Read more about [workspace roles](../collaborate-share/service-roles-new-workspaces.md).
+
+## View diagnostics
+
+- On the **View** menu for a paginated report, select **Diagnostics**.
+
+    :::image type="content" source="media/paginated-reports-diagnostics/paginated-view-diagnostics.png" alt-text="Screenshot of the diagnostics ribbon option on the View menu.":::
+
+    When you select the diagnostics button the dialog box appears.
+
+## The diagnostics data that's captured
+
+The following table describes the data that's captured in the diagnostics dialog.
 
 | Property    | Description   |
 |---|-----|
@@ -42,6 +46,10 @@ The following table describes the data that is captured in the diagnostics dialo
 | Start Time in UTC    | Start time in UTC indicates the duration of a report process. It can be used in conjunction with the rendering ID (OperationName) start and end time in the Premium metrics app. |
 | Render Format        | JSONRPL, PDF, XLSX…   |
 | Content Size         | Size of rendered reports in kilobytes (kb). |
+
+## Considerations and limitations
+
+This feature isn't available in [Power BI apps](../consumer/end-user-apps.md) or in the [paginated report visual](../visuals/paginated-report-visual.md). It's designed for report authors to view performance data coming from a paginated report in the Power BI service.  
 
 ## Next steps
 
