@@ -518,6 +518,8 @@
         href: ../consumer/paginated-reports-view-power-bi-service.md
       - name: Interact with parameters in the Power BI service
         href: ../consumer/paginated-reports-view-parameters.md
+      - name: View paginated report diagnostics
+        href: ../paginated-reports/paginated-reports-diagnostics.md
     - name: Design paginated reports
       items: 
       - name: Plan a report
