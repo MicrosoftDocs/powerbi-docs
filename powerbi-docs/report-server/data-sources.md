@@ -213,7 +213,7 @@ Power BI Report Server does not support OAuth-based authentication for DirectQue
 | SAP HANA Database |No |No |Yes |Yes |Yes (2) |
 | Teradata |No |No |Yes |Yes |Yes |
 
-(1) For Azure Analysis Services data source, you must have multifactor authentication (MFA) disabled for the credentials being used to connect to the data source. If you need multifactor authentication enabled for your environment, review <a href="/azure/active-directory/conditional-access/overview">Azure Active Directory Conditional Access</a> as an option to disable multifactor authentication for the credentials used in the data source.
+(1) For Azure Analysis Services data source, you must have multifactor authentication (MFA) disabled for the credentials being used to connect to the data source. If you need multifactor authentication enabled for your environment, review [Azure Active Directory Conditional Access](/azure/active-directory/conditional-access/overview) as an option to disable multifactor authentication for the credentials used in the data source.
 
 (2) SAP HANA supports DirectQuery with Integrated Windows Authentication only when using it as a relational database in the published Power BI Desktop file (.pbix).
 
