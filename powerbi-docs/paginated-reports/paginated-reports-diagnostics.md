@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/11/2023
+ms.date: 05/12/2023
 ---
 
 # View diagnostics for Power BI paginated reports
@@ -28,7 +28,7 @@ Any user with at least a Contributor role in a workspace can use this feature. R
 
     When you select the diagnostics button the dialog box appears.
 
-## The diagnostics data that's captured
+## Diagnostics data that's captured
 
 The following table describes the data that's captured in the diagnostics dialog.
 
