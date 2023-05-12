@@ -109,7 +109,7 @@ When you use the Power BI service live connection, keep a few considerations and
 
 - Only users with Build permission for a dataset can connect to a published dataset by using the Power BI service live connection.
 - Free users only see datasets that are in their **My Workspace** and in Premium-based workspaces.
-- Because this connection is live, left navigation and modeling are disabled. You can connect to only one dataset in each report. The behavior is similar to a SQL Server Analysis Services (SSAS) connection. However, a new preview feature in Power BI now makes it possible to combine data from different sources. For more information, see [Use DirectQuery for Power BI datasets and Azure Analysis Services (preview)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md).
+- Because this connection is live, left navigation and modeling are disabled. The behavior is similar to a SQL Server Analysis Services (SSAS) connection. However, a new preview feature in Power BI now makes it possible to combine data from different sources. For more information, see [Use DirectQuery for Power BI datasets and Azure Analysis Services (preview)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md).
 - Because this connection is live, row-level security (RLS) and similar connection behaviors are enforced. This behavior is the same as when connected to SSAS.
 - If the owner modifies the original shared *.pbix* file, the shared dataset and report in the Power BI service are overwritten. Reports based on the dataset aren't overwritten, but any changes to the dataset reflect in the report.
 - Members of a workspace can't replace the original shared report. If they try to do so, they get a prompt to rename the file and publish.
