@@ -102,7 +102,7 @@ The data sources below are specific to Power BI reports used within Power BI Rep
 | Visual Studio Team Services (Beta) |Yes |No |No |
 | Webtrends Analytics (Beta) |Yes |No |No |
 | Zendesk (Beta) |Yes |No |No |
-| Other connectors available but not listed above |Yes |No |No |
+| Other data sources available but not listed above |Yes |No |No |
 
 > [!IMPORTANT]
 > Row-level security configured at the data source should work for certain DirectQuery (SQL Server, Azure SQL Database, Oracle and Teradata) and live connections assuming Kerberos is configured properly in your environment.
@@ -189,7 +189,7 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 | Visual Studio Team Services (Beta) |No |No |No |No |
 | Webtrends Analytics (Beta) |No |No |No |No |
 | Zendesk (Beta) |No |No |No |No |
-| Other connectors available but not listed above |No |No |No |No |
+| Other data sources available but not listed above |No |No |No |No |
 
 (1) For Azure Analysis Services data source, you must have multifactor authentication (MFA) disabled for the credentials being used to connect to the data source. If you need multifactor authentication enabled for your environment, review <a href="/azure/active-directory/conditional-access/overview">Azure Active Directory Conditional Access</a> as an option to disable multifactor authentication for the credentials used in the data source.
 
