@@ -840,6 +840,12 @@
         href: ../paginated-reports/report-design/render-data-report-builder-service.md
       - name: "Render report items in paginated reports"
         href: ../paginated-reports/report-design/render-report-items-report-builder-service.md
+    - name: Paginated report accessibility 
+      items:
+      - name: Accessibility in paginated reports 
+        href: ../paginated-reports/report-builder-paginated-accessibility-overview.md
+      - name: Use accessibility tools to create accessible reports 
+        href: ../paginated-reports/report-builder-paginated-accessibility-overview.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
     - name: Paginated reports capacity planning
