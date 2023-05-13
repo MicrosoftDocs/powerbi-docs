@@ -843,9 +843,9 @@
     - name: Paginated report accessibility 
       items:
       - name: Accessibility in paginated reports 
-        href: ../paginated-reports/report-builder-paginated-accessibility-overview.md
+        href: ../paginated-reports/report-builder/paginated-accessibility-overview.md
       - name: Use accessibility tools to create accessible reports 
-        href: ../paginated-reports/report-builder-paginated-accessibility-overview.md
+        href: ../paginated-reports/report-builder/paginated-use-accessibility-tools.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
     - name: Paginated reports capacity planning
