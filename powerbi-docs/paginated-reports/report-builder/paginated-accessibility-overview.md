@@ -1,6 +1,6 @@
 ---
 title: "Accessibility in Power BI paginated reports | Microsoft Docs"
-description:  Learn how to add custom locations to a map you have added to a Power BI paginated report in Power BI Report Builder. 
+description:  Learn how to create paginated reports with accessibility in mind to make it usable by as many individuals as possible, including individuals with visual or physical impairments.
 ms.date: 05/12/2023
 ms.service: powerbi
 ms.subservice: report-builder
@@ -17,9 +17,15 @@ You can create paginated reports for people of all abilities. Creating a paginat
 
 :::image type="content" source="media/paginated-accessibility-overview/high-contrast-paginated-report.png" alt-text="viewing a paginated report in high-contrast mode.":::
 
+
 This article provides an overview of accessibility and paginated reports. Other articles provide details on the accessibility features, and how to create and consume accessible paginated reports.
 
 Power BI Report Builder has many accessibility features to enable report creators create an accessible user experience. These features are in line with Microsoft’s commitment to making its products and services easier for everyone to use. Using these features in creating reports not only gives everyone equal access to your report but also improves everyone’s experience. The report becomes accessible to the users on the web or as an accessible PDF when exported using the **Accessible PDF** export option.
+
+## Accessibility articles
+
+- [Use accessibility tools to create accessible paginated reports(Power BI Report Builder)](paginated-use-accessibility-tools.md)
+
 
 ## Accessibility standards
 
@@ -57,8 +63,8 @@ EN 301 549 is the Harmonized European Standard for Accessibility requirements fo
 
 ISO 14289-1 is the ISO standard for Universal Accessibility requirements for universally accessible PDF documents. For more info about this, see [PDF Rendering Extension conformance to ISO 14289-1 - paginated reports](../../report-server/rendering-extension-support.md).
 
-## Conformance Documentation 
+## Conformance documentation 
 
-To find updated conformance reports, search for Server Reporting Services in the Microsoft Accessibility Conformance Portal.
+To find updated conformance reports, search for Server Reporting Services in the [Microsoft Accessibility Conformance Portal](https://www.microsoft.com/accessibility/conformance-reports).
 
 ## Next steps  
