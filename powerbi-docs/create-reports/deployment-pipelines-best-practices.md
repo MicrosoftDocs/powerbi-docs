@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.date: 01/04/2023
+ms.date: 05/09/2023
 ms.custom: intro-deployment
 ms.search.form: Best practices for deployment pipelines, Create deployment pipeline, Introduction to Deployment pipelines
 ---
