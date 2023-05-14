@@ -36,14 +36,14 @@ The following table describes the data that's captured in the diagnostics dialog
 |---|-----|
 | Report ID            | Paginated Report internal object ID  |
 | Report Name          | The name of the paginated report rendered. |
-| Capacity Throttled   | Each capacity consists of a defined number of v-cores. The CPU time measured in utilization records reflects the v-cores' utilization, and that utilization determines if the workload exceeds the available resources. This value is displayed as either yes or no. For additional information, please see Power BI Premium capacity load, overload, and autoscale - Power BI  |
+| Capacity Throttled   | Each capacity consists of a defined number of v-cores. The CPU time measured in utilization records reflects the v-cores' utilization, and that utilization determines if the workload exceeds the available resources. This value is displayed as either yes or no. For additional information, please see [Power BI Premium capacity load, overload, and autoscale - Power BI](.../enterprise/service-premium-concepts#how-capacity-size-limits-are-enforced-when-viewing-reports.md)  |
 | Request ID           | Paginated Report internal object ID  |
 | Data Retrieval time  | Number of milliseconds (ms) spent retrieving the data from its source. |
 | Row Count            | Number of rows returned from queries.|
 | Processing Time      | Number of milliseconds (ms) spent processing the report. |
 | Rendering Time       | Number of milliseconds (ms) spent rendering the report. |
-| Rendering ID         | Paginated Render and ProcessParameters IDs can be used to correlate the OperationName in the Premium metrics app. |
-| Start Time in UTC    | Start time in UTC indicates the duration of a report process. It can be used in conjunction with the rendering ID (OperationName) start and end time in the Premium metrics app. |
+| Rendering ID         | Paginated Render and ProcessParameters IDs can be used to correlate the OperationName in the [Premium metrics app.](.../enterprise/service-premium-metrics-app.md) |
+| Start Time in UTC    | Start time in UTC indicates the duration of a report process. It can be used in conjunction with the rendering ID (OperationName) start and end time in the [Premium metrics app.](.../enterprise/service-premium-metrics-app.md) |
 | Render Format        | JSONRPL, PDF, XLSX…   |
 | Content Size         | Size of rendered reports in kilobytes (kb). |
 
