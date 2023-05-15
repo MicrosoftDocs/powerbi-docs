@@ -26,15 +26,15 @@ Work seamlessly in Power BI Desktop with the ability to open, save, and share fi
 
 The ability to open, save, and share files from OneDrive and SharePoint directly in Power BI Desktop is available in an upcoming Power BI Desktop release. 
 
-**Sharing** files stored in OneDrive and SharePoint directly from Power BI Desktop only works when **both** of the following two statements are true:
-1.	Users have turned on the sharing preview feature in Power BI Desktop
-2.	The Admin tenant setting is enabled (the setting is **enabled by default** and would require that admins disable it for it to be turned off).   
-
-To enable the preview for opening and saving Power BI files to OneDrive and SharePoint in Power BI Desktop, start by checking the **Save to OneDrive and SharePoint** and **Share to OneDrive and SharePoint** option in the Preview Features section under the file tab. 
+To enable the preview for opening, saving, and sharing Power BI files to OneDrive and SharePoint in Power BI Desktop, start by checking the **Save to OneDrive and SharePoint** and **Share to OneDrive and SharePoint** options by clicking the file tab **Options and settings > Options > Preview features**.
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-preview-settings.png" alt-text="Screenshot of settings to turn on preview features.":::
 
-When enabled, you see a **Share** button in the top right corner of Power BI Desktop. 
+**Sharing** files stored in OneDrive and SharePoint directly from Power BI Desktop only works when **both** of the following two statements are true:
+1.	Users have turned on the sharing preview feature in Power BI Desktop
+2.	The Admin tenant setting is enabled (the setting is **enabled by default** and requires that admins disable it for it to be turned off).   
+
+When enabled, a **Share** button is in the top right corner of Power BI Desktop. 
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-share-button-plain.png" alt-text="Screenshot of the Share button in Power BI.":::
 
