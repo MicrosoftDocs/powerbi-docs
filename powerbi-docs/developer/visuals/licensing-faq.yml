@@ -168,8 +168,8 @@ sections:
       - question: |
           How can I get more help or support for managing licenses?
         answer: |
-          For help with buying a visual, go to [What is Microsoft AppSource](/marketplace//purchase-software-appsource).  
-          For help with assigning a license, go to [Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview)
+          For help buying a visual, go to [What is Microsoft AppSource](/marketplace//purchase-software-appsource).  
+          For help assigning a license, go to [Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview)
 
 additionalContent: |
   ## Next steps
