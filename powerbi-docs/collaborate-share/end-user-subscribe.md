@@ -26,12 +26,16 @@ It's never been easier to stay up-to-date on your most important dashboards and 
 
 
 ## Requirements
+<<<<<<< HEAD
 The requirements apply to users in the organization and to [Azure Active Directory (AD) Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you'll need permissions to access the particular report or dashboard and **either**:
+=======
+The requirements apply to users in the organization and to [Azure Active Directory (Azure AD) Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you'll need permissions to access the particular report or dashboard and **either**:
+>>>>>>> 0c429becd79cb60c3d02ca2805c9a896d1e240bc
 
 - A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md), or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md) 
 
-Your Power BI admin also needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#create-email-subscriptions). To export or subscribe to paginated reports, [several tenant switches must be enabled](#subscribe-to-paginated-reports).
+Your Power BI admin also needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#users-can-set-up-email-subscriptions). To export or subscribe to paginated reports, [several tenant switches must be enabled](#subscribe-to-paginated-reports).
 
 
 ## Subscribe to a report or dashboard
@@ -108,7 +112,11 @@ To create a subscription that includes others, in addition to the [requirements 
 
 - A Contributor, Member, or Admin role in that workspace.  You’ll know you have the Contributor, Member or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 
+<<<<<<< HEAD
 - To be part of the organization. [B2B guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others, only themselves. For more information, read [B2B guest users can set up and be subscribed to email subscriptions](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
+=======
+- To be part of the organization. [B2B guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others only themselves. For more information, read [B2B guest users can set up and be subscribed to email subscriptions](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
+>>>>>>> 0c429becd79cb60c3d02ca2805c9a896d1e240bc
 
 - If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can still subscribe others. However, they must also have a Power BI Pro or Premium Per User (PPU) license. 
 
@@ -134,7 +142,11 @@ There are different ways of creating a Microsoft 365 group. For example, you can
 
 ### Subscribe external users 
 
+<<<<<<< HEAD
 You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity. 
+=======
+You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity. B2B Guest users can't add subscriptions for external users.
+>>>>>>> 0c429becd79cb60c3d02ca2805c9a896d1e240bc
 
 - If you subscribe external users to a report or dashboard, they'll receive a share notification immediately after you select  **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because external users require an invitation link to view the report or dashboard. 
 
@@ -147,7 +159,11 @@ You can subscribe external users to a report or dashboard if your report or dash
 
 B2B guest users can create their own content subscription to which they have access and users in the organization can subscribe them to emails. B2B users must first be added by member of the organization to set up and subscribe to email content. For more information about B2B guest users and how to add them to your organization, read [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
+<<<<<<< HEAD
 In addition to B2B guest users meeting the requirements to subscribe themselves, the Power BI tenant admin must turn on a setting to allow B2B guest users to create email subscriptions. For more information on how to turn on this setting, read [Export and sharing tenant settings](../admin/service-admin-portal-export-sharing.md#B2B-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
+=======
+In addition to B2B guest users meeting the requirements to subscribe themselves, the Power BI tenant admin must turn on a setting to allow B2B guest users to create email subscriptions. For more information on how to turn on this setting, read [Export and sharing tenant settings](../admin/service-admin-portal-export-sharing.md#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
+>>>>>>> 0c429becd79cb60c3d02ca2805c9a896d1e240bc
 
 
 ## Subscribe to paginated reports 
@@ -198,7 +214,11 @@ If you have an existing subscription to a paginated report, and you want to upda
 
 
 ## Manage subscriptions
+<<<<<<< HEAD
 Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the users assigned the *Admin* role. Admins in the workspace can view, edit and take over any subscriptions inside the workspace. The Power BI tenant admin can view logs, turn certain subscription features on and off.
+=======
+Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the users assigned the *Admin* role. Admins in the workspace can view, edit and take over all subscriptions inside the workspace. The Power BI tenant admin can view logs, turn certain subscription features on and off.
+>>>>>>> 0c429becd79cb60c3d02ca2805c9a896d1e240bc
 
 # [Creator](#tab/creator)
 
@@ -230,7 +250,7 @@ Alternately, another way to see all of your subscriptions across all workspaces 
 
 # [Administrator](#tab/admin)
 
-## Workspace administrators
+### Workspace administrators
 Users who have been assigned the [Admin role](../collaborate-share/service-roles-new-workspaces.md) in a workspace can view all subscriptions that have been created for Power BI reports, dashboards or paginated reports in that workspace, regardless of owner. Information on the subscription name, owner, report or dashboard name, and content type is provided. Workspace admins can also edit and take over subscriptions owned by others.
 
 > [!NOTE]
@@ -250,21 +270,34 @@ Admins can also take over ownership of subscriptions in workspaces they manage. 
 
 :::image type="content" source="media/end-user-subscribe/power-bi-admin-take-over.png" alt-text="Screenshot showing a list of subscriptions with the take over icon selected.":::
 
+<<<<<<< HEAD
 ## Power BI tenant administrators
+=======
+### Power BI tenant administrators
+>>>>>>> 0c429becd79cb60c3d02ca2805c9a896d1e240bc
 
-### Subscription controls and tracking for administrators 
+#### Subscription controls and tracking for administrators 
 
 Power BI administrators have levers of control over subscriptions. 
 
+<<<<<<< HEAD
 - [Users can set up email subscriptions](../admin/service-admin-portal-export-sharing.md) for all members of the organization.
 
 - [B2B guest users can set up and be subscribed to email subscriptions](../admin/service-admin-portal-export-sharing.md#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions) to allow B2B guest users to create and subscribe to their own email subscriptions.
 
 - Enable all members of the organization, or specific users, to send email subscriptions to external users. See [Users can send email subscriptions to external users](../admin/service-admin-portal-export-sharing.md). 
 
+=======
+- [Users can set up email subscriptions](../admin/service-admin-portal-export-sharing.md) for all members of the organization. 
+
+- Enable all members of the organization, or specific users, to send email subscriptions to external users. See [Users can send email subscriptions to external users](../admin/service-admin-portal-export-sharing.md). 
+
+>>>>>>> 0c429becd79cb60c3d02ca2805c9a896d1e240bc
 - [Enable specific attachment formats](../admin/service-admin-portal-export-sharing.md) for paginated report subscriptions (PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML).
 
-### View subscription audit and activity logs 
+- [B2B guest users can set up and be subscribed to email subscriptions](../admin/service-admin-portal-export-sharing.md#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions) to allow B2B guest users to create and subscribe to their own email subscriptions.
+
+#### View subscription audit and activity logs 
 
 Power BI administrators can use the Power BI audit and activity logs to view details about subscriptions. These details include: 
 
@@ -277,7 +310,6 @@ Power BI administrators can use the Power BI audit and activity logs to view det
 - Modified date 
 
 See [Operations available in the audit and activity logs](../admin/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs) in "Track user activities in Power BI" for details. 
-
 
 ---
 ## Considerations and limitations 
