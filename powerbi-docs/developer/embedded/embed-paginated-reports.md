@@ -176,7 +176,9 @@ Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organ
 
 * You must use a **service principal**. You can't have a master user.
 * You can't work with a [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
-* When you embed a paginated report with a Power BI dataset, two conditions apply. The paginated report and the Power BI dataset must reside in a Premium per capacity or Embedded workspace (they can reside in two different workspaces). The person who generates the embed token must have *Write* permissions in the workspaces of both the report and the dataset.
+* When you embed a paginated report with a Power BI dataset, two conditions apply:
+  * The paginated report and the Power BI dataset must reside in a Premium per capacity or Embedded workspace (they can reside in two different workspaces).
+  * The person who generates the embed token must have *Write* permissions in the workspaces of both the report and the dataset.
 * You can't currently embed a paginated report connected to Azure Analysis Services with single sign-on (SSO) enabled.
 
 For a full list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md#natively-supported-data-sources).
