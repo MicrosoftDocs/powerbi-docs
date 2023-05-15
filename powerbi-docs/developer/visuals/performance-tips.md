@@ -25,8 +25,8 @@ Here are some recommendations for achieving optimal performance for your custom 
 
 A smaller custom visual plugin size results in:
 
-* faster download time
-* faster installation whenever the visual is run
+* Faster download time
+* Faster installation whenever the visual is run
 
 These third party resources can help you decrease your plugin size, by finding ways for you to [remove unused code](https://web.dev/remove-unused-code/) or [tree-shaking and code-splitting](https://www.azavea.com/blog/2019/03/07/lessons-on-tree-shaking-lodash/).
 
@@ -40,12 +40,12 @@ Measure the render time of your visual in various situations to see which, if an
 
 Use the [Power BI Desktop performance analyzer](../../create-reports/desktop-performance-analyzer.md) (**View** > **Performance Analyzer**) to check how your visual renders in the following cases:
 
-* first render of the visual
-* thousands of data points
-* a single data point/measure (to determine the visual render overhead)
-* filtering
-* slicing
-* resizing (may not work in the performance analyzer)
+* First render of the visual
+* Thousands of data points
+* A single data point/measure (to determine the visual render overhead)
+* Filtering
+* Slicing
+* Resizing (may not work in the performance analyzer)
 
 If possible, compare these measurements with those of a similar core visual to see if there are parts that can be optimized.
 
