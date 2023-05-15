@@ -199,11 +199,7 @@ If you have an existing subscription to a paginated report, and you want to upda
 
 
 ## Manage subscriptions
-<<<<<<< HEAD
-Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the users assigned the *Admin* role. Admins in the workspace can view, edit and take over any subscriptions inside the workspace. The Power BI tenant admin can view logs, turn certain subscription features on and off.
-=======
 Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the users assigned the *Admin* role. Admins in the workspace can view, edit and take over all subscriptions inside the workspace. The Power BI tenant admin can view logs, turn certain subscription features on and off.
->>>>>>> 0c429becd79cb60c3d02ca2805c9a896d1e240bc
 
 # [Creator](#tab/creator)
 
