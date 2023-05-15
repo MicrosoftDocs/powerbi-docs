@@ -50,7 +50,7 @@ To turn on the setting:
     1. Choose **The entire organization** or **Specific security groups**. In addition, you can also choose one of the options check the box next to **Except specific security groups** and then add the security groups you wish to exclude.
 1. Select **Apply** to save your changes.
 
-## Allow Azure Active Directory B2B guest users to edit and manage content in the organization
+## Allow Azure Active Directory guest users to edit and manage content in the organization
 
 This setting allows Azure AD B2B guest users to edit and manage content in the organization. To learn more about sending Power BI content to Azure AD B2B guest users, read [Distribute Power BI content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
