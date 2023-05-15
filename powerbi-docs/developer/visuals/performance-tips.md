@@ -7,11 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-<<<<<<< HEAD
 ms.date: 05/15/2023
-=======
-ms.date: 02/20/2022
->>>>>>> 2cdf2999d01837edf5217d355cae82daa46a9fd9
 ms.custom: engagement-fy23
 ---
 # Performance tips for creating quality Power BI custom visuals
