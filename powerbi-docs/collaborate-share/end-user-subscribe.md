@@ -251,29 +251,16 @@ Admins can also take over ownership of subscriptions in workspaces they manage. 
 
 :::image type="content" source="media/end-user-subscribe/power-bi-admin-take-over.png" alt-text="Screenshot showing a list of subscriptions with the take over icon selected.":::
 
-<<<<<<< HEAD
-## Power BI tenant administrators
-=======
 ### Power BI tenant administrators
->>>>>>> 0c429becd79cb60c3d02ca2805c9a896d1e240bc
 
 #### Subscription controls and tracking for administrators 
 
 Power BI administrators have levers of control over subscriptions. 
 
-<<<<<<< HEAD
-- [Users can set up email subscriptions](../admin/service-admin-portal-export-sharing.md) for all members of the organization.
-
-- [B2B guest users can set up and be subscribed to email subscriptions](../admin/service-admin-portal-export-sharing.md#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions) to allow B2B guest users to create and subscribe to their own email subscriptions.
-
-- Enable all members of the organization, or specific users, to send email subscriptions to external users. See [Users can send email subscriptions to external users](../admin/service-admin-portal-export-sharing.md). 
-
-=======
 - [Users can set up email subscriptions](../admin/service-admin-portal-export-sharing.md) for all members of the organization. 
 
 - Enable all members of the organization, or specific users, to send email subscriptions to external users. See [Users can send email subscriptions to external users](../admin/service-admin-portal-export-sharing.md). 
 
->>>>>>> 0c429becd79cb60c3d02ca2805c9a896d1e240bc
 - [Enable specific attachment formats](../admin/service-admin-portal-export-sharing.md) for paginated report subscriptions (PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML).
 
 - [B2B guest users can set up and be subscribed to email subscriptions](../admin/service-admin-portal-export-sharing.md#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions) to allow B2B guest users to create and subscribe to their own email subscriptions.
