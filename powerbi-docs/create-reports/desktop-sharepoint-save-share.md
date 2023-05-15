@@ -145,14 +145,14 @@ When you click **Save as** in the file menu, the file name box is empty regardle
 
 ### Power BI OneDrive and SharePoint sharing link behavior by license type
 
-The following use cases apply when sharing a link to a Power BI file saved in OneDrive or SharePoint depending on the license status of each user. All of these scenarios assume that the user has a Microsoft 365 license.
+The following use cases apply when sharing a link to a Power BI file saved in OneDrive or SharePoint depending on the license status of each user. All of these scenarios assume that the user has a Microsoft 365 license and that OneDrive and SharePoint viewing is [enabled in their organization](../admin/service-admin-portal-integration.md).
 
 | License status of person who shares the link | License status of person who clicks the shared link | Experience for person who shares the link | Experience for person who clicks the link |
 | --- | --- | --- | --- |
-| **Has** Power BI Pro, Power BI Premium Per User, or E5 license | **Has** Power BI Pro, Power BI Premium Per User, or E5 license | Sees the existence of link in OneDrive or SharePoint, can open file in OneDrive or SharePoint viewing and preview. | Sees the existence of link in OneDrive or SharePoint, can open file in OneDrive or SharePoint viewing and preview. |
-| **Has** Power BI Pro, Power BI Premium Per User, or E5 license | **Does not have** Power BI Pro, Power BI Premium Per User, or E5 license | Sees the existence of link in OneDrive or SharePoint, can open file in OneDrive or SharePoint viewing and preview.  | Sees the existence of link in OneDrive or SharePoint, must download file to view in Power BI Desktop. |
-| **Does not have** Power BI Pro, Power BI Premium Per User, or E5 license | **Has** Power BI Pro, Power BI Premium Per User, or E5 license | Sees the existence of link in OneDrive or SharePoint, must download file to view in Power BI Desktop. | Sees the existence of link in OneDrive or SharePoint, can open file in OneDrive or SharePoint viewing and preview. |
-| **Does not have** Power BI Pro, Power BI Premium Per User, or E5 license | **Does not have** Power BI Pro, Power BI Premium Per User, or E5 license | Sees the existence of link in OneDrive or SharePoint, must download file to view in Power BI Desktop. | Sees the existence of link in OneDrive or SharePoint, must download file  to view in Power BI Desktop.  |
+| **Has** Power BI Pro, Power BI Premium Per User, or E5 license | **Has** Power BI Pro, Power BI Premium Per User, or E5 license | Sees the existence of link in OneDrive or SharePoint, can open the file in OneDrive or SharePoint viewing and preview. | Sees the existence of link in OneDrive or SharePoint, can open the file in OneDrive or SharePoint viewing and preview. |
+| **Has** Power BI Pro, Power BI Premium Per User, or E5 license | **Does not have** Power BI Pro, Power BI Premium Per User, or E5 license | Sees the existence of link in OneDrive or SharePoint, can open the file in OneDrive or SharePoint viewing and preview.  | Sees the existence of link in OneDrive or SharePoint, must download the file to view it in Power BI Desktop. |
+| **Does not have** Power BI Pro, Power BI Premium Per User, or E5 license | **Has** Power BI Pro, Power BI Premium Per User, or E5 license | Sees the existence of link in OneDrive or SharePoint, must download the file to view it in Power BI Desktop. | Sees the existence of link in OneDrive or SharePoint, can open the file in OneDrive or SharePoint viewing and preview. |
+| **Does not have** Power BI Pro, Power BI Premium Per User, or E5 license | **Does not have** Power BI Pro, Power BI Premium Per User, or E5 license | Sees the existence of link in OneDrive or SharePoint, must download the file to view it in Power BI Desktop. | Sees the existence of link in OneDrive or SharePoint, must download the file to view in it Power BI Desktop.  |
 
 ### Audit logs
 
