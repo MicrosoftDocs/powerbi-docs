@@ -18,16 +18,16 @@ The export and sharing settings allow the Power BI tenant administrator the flex
 
 Sharing settings are also managed through these settings. You can determine how and who can share Power BI content in your organization, as well as determine settings for sharing content with users outside your organization. These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](service-admin-portal-about-tenant-settings.md).
 
-## Allow Azure Active Directory guest users to access Power BI
+## Allow Azure Active Directory B2B guest users to access Power BI
 
-When you turn on this setting, it allows Azure Active Directory Business-to-Business (Azure AD B2B) guest users to access Power BI. If you turn off this setting, guest users receive an error when trying to access Power BI. Disabling this setting for the entire organization also prevents users from inviting guests to your organization. Use the specific security groups option to control which guest users can access Power BI.
+When you turn on this setting, it allows Azure Active Directory Business-to-Business (Azure AD B2B) guest users to access Power BI. If you turn off this setting, B2B guest users receive an error when trying to access Power BI. Disabling this setting for the entire organization also prevents users from inviting guests to your organization. Use the specific security groups option to control which B2B guest users can access Power BI.
 
 To turn on the setting:
 
 1. Go to the Power BI Admin portal and select **Tenant settings**.
 1. In the tenant settings, scroll down to the **Export and sharing settings** section.
 1. Find the setting called **Allow Azure Active Directory guest users to access Power BI**. 
-1. Turn this setting on if you want guest users to have access to Power BI. Turn this setting off to block guest users' access to Power BI and from inviting guests. 
+1. Turn this setting on if you want B2B guest users to have access to Power BI. Turn this setting off to block B2B guest users' access to Power BI and from inviting guests. 
 1. Under **Apply to**, select the scope of users that the setting will affect:
     1. Choose **The entire organization** to apply the setting to the entire organization, or
     1. Choose **Specific security groups**, then enter the specific security groups you want to apply this setting.
@@ -50,7 +50,7 @@ To turn on the setting:
     1. Choose **The entire organization** or **Specific security groups**. In addition, you can also choose one of the options check the box next to **Except specific security groups** and then add the security groups you wish to exclude.
 1. Select **Apply** to save your changes.
 
-## Allow Azure Active Directory guest users to edit and manage content in the organization
+## Allow Azure Active Directory B2B guest users to edit and manage content in the organization
 
 This setting allows Azure AD B2B guest users to edit and manage content in the organization. To learn more about sending Power BI content to Azure AD B2B guest users, read [Distribute Power BI content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
@@ -251,9 +251,7 @@ To turn this setting on:
 
 ## B2B guest users can set up and be subscribed to email subscriptions
 
-B2B users can be specifically granted permission to view content in Power BI by a Power BI tenant admin. So, there may be instances that admin may want B2B users to receive email subscriptions but not other external users.  
-
-When this setting is on, users in the organization can subscribe B2B users [(if they also have permissions and license to subscribe others)](../collaborate-share/end-user-subscribe.md#subscribe-others), and  B2B users can create their own content subscription to which they have access.
+There may be instances that admin may want B2B guest users to receive email subscriptions but not other external users. Use this setting to allow B2B guest users to set up and subscribe themselves to email subscriptions.
 
 To turn on this setting:
 
@@ -262,7 +260,7 @@ To turn on this setting:
 1. Under **Apply to**, select the scope of users that the setting will affect.
 1. Select **Apply** to save your changes.
 
-If you have this setting off, users in the organization cannot subscribe content to B2B users, and B2B users can't create their own email subscriptions. 
+If this setting is off, only users in your organization can create and receive email subscriptions.
 
 > [!IMPORTANT]
 > The **Allow email subscriptions to be sent to external users users** switch will be automatically turned off if the **B2B guest users can set up and be subscribed to email subscriptions** switch is turned off. This is because B2B users are external users that have been granted elevated permissions to get content. Since B2B guest users have higher permissions than other external users, if they can't get the email subscription neither can the other external users.
@@ -388,7 +386,7 @@ If you turn this switch off, it effectively stops users from publishing new comp
 >[!NOTE]
 > Live connections to Power BI datasets aren't affected by this switch, nor are live or DirectQuery connections to Azure Analysis Services. These'll continue to work regardless of whether the setting is on or off. In addition, any published reports that leverage a composite model on a Power BI dataset will continue to work even if the setting has been turned off after they were published.
 
-## Allow guest users to work with shared datasets in their own tenants
+## Allow B2B guest users to work with shared datasets in their own tenants
 
 When this setting is turned on, Azure AD B2B guest users of datasets shared with them by users in your organization will be able to access and build on those datasets in their own tenant. See [Use in-place dataset sharing to enable external users to view and share datasets in their own tenants (preview) - Admin info](../collaborate-share/service-dataset-external-org-share-admin.md) for detailed information.
 
