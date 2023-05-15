@@ -174,9 +174,9 @@ The following tenant level settings in Power BI provide controls to admins. See 
   * [Show Azure Active Directory guests in lists of suggested people](../admin/service-admin-portal-export-sharing.md#show-azure-active-directory-guests-in-lists-of-suggested-people) 
 
 There are also Azure Active Directory settings that can limit what external guest users can do within your organization. Those settings also apply to your Power BI environment. The following documentation discusses the settings: 
-  * [Manage External Collaboration Settings](https://learn.microsoft.com/azure/active-directory/external-identities/external-collaboration-settings-configure#configure-b2b-external-collaboration-settings)
-  * [Allow or block invitations to B2B users from specific organizations](https://learn.microsoft.com/azure/active-directory/external-identities/allow-deny-list)
-  * [Use Conditional Access to allow or block access](https://learn.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) 
+  * [Manage External Collaboration Settings](/azure/active-directory/external-identities/external-collaboration-settings-configure#configure-b2b-external-collaboration-settings)
+  * [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/external-identities/allow-deny-list)
+  * [Use Conditional Access to allow or block access](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) 
 
 
 Additionally, to use in-place dataset sharing, tenant admins need to enable the following settings: 

@@ -1,14 +1,14 @@
 ---
 title: Monitor report performance in Power BI
 description: Guidance on how to monitor report performance in Power BI.
-author: peter-myers
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 04/14/2023
 ---
 
 # Monitor report performance in Power BI
@@ -30,9 +30,6 @@ Slow queries or report visuals should be a focal point of continued optimization
 ## Use Query Diagnostics
 
 Use [Query Diagnostics](/power-query/QueryDiagnostics) in Power BI Desktop to determine what Power Query is doing when previewing or applying queries. Further, use the _Diagnose Step_ function to record detailed evaluation information for each query step. The results are made available in a Power Query, and you can apply transformations to better understand query execution.
-
-> [!NOTE]
-> Query Diagnostics is currently a preview feature, and so you must enable it in _Options and Settings_. Once enabled, its commands are available in the Power Query Editor window, on the **Tools** ribbon tab.
 
 ![Screenshot of Power Query Editor Tools ribbon tab showing the Diagnose Step command, Start Diagnostics command, and the Stop Diagnostics command.](media/monitor-report-performance/power-query-diagnotics.png)
 
@@ -76,9 +73,7 @@ A benefit of using SQL Server Profiler is that it's possible to save a SQL Serve
 
 ## Monitor Premium metrics
 
-Monitor performance of content deployed into your organization's Power BI Premium Gen2 capacity with the help of the [Gen2 metrics app](./../enterprise/service-premium-gen2-metrics-app.md).
-
-To monitor the Power BI Premium original version capacities, use the [Power BI Premium Metrics app](../enterprise/service-premium-metrics-app.md).
+Monitor performance of content deployed into your organization's Power BI Premium capacity with the help of the [Premium metrics app](./../enterprise/service-premium-metrics-app.md).
 
 ## Next steps
 

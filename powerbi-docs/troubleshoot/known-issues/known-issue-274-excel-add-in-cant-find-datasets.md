@@ -14,9 +14,9 @@ ms.custom: known-issue-274
 
 When using the Power BI datasets add-in for Excel Desktop or Excel Online, you may not find your expected datasets. You either don't see any results when searching for an existing dataset or you see the dataset but can’t successfully create a PivotTable.
 
-**APPLIES TO:** ✔️ Excel Integration
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Excel Integration
 
-**Status:** Open
+**Status:** Fixed: February 9, 2023
 
 **Problem area:** Consume and View
 

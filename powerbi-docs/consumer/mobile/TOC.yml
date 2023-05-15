@@ -26,12 +26,8 @@
     items: 
     - name: "Get real-world data with the mobile apps"
       href: mobile-apps-data-in-real-world-context.md
-    - name: "Data in space (preview)"
-      href: mobile-apps-data-in-space-overview.md
     - name: "View your data offline in the mobile apps"
       href: mobile-apps-offline-data.md
-    - name: "Power BI for HoloLens 2"
-      href: mobile-hololens2-app.md
   - name: How to
     items: 
     - name: All mobile apps
@@ -40,6 +36,8 @@
         href: mobile-apps-view-dashboard.md
       - name: "Reports in the mobile apps"
         href: mobile-reports-in-the-mobile-apps.md
+      - name: "Work with metrics"
+        href: mobile-apps-metrics.md
       - name: "Interact with tiles in the mobile apps"
         href: mobile-tiles-in-the-mobile-apps.md
       - name: "Share a dashboard from the Power BI mobile apps"
@@ -64,16 +62,10 @@
         href: mobile-apps-view-phone-report.md
       - name: "View on-premises reports in the mobile apps"
         href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-      - name: "Work with metrics"
-        href: mobile-apps-metrics.md
       - name: "Protect with Face ID, Touch ID, Passcode or Fingerprint ID"
         href: mobile-native-secure-access.md
       - name: "Access content from an external organization (B2B)"
         href: mobile-apps-b2b.md
-      - name: "Pin reports in space at real world locations (preview)"
-        href: mobile-apps-data-in-space-pin-reports.md        
-      - name: "Find and access reports pinned in space (preview)"
-        href: mobile-apps-data-in-space-find-pinned-reports.md   
       - name: "Scan QR codes to open reports and tiles"
         href: mobile-apps-qr-code.md
       - name: "Scan barcodes to open filtered reports"
@@ -110,8 +102,6 @@
         href: mobile-app-find-access-google-search.md
       - name: "Fixing 'Your corporate SSL certificate is untrusted'"
         href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
-      - name: "Fixing 'Need to update Android System Webview'"
-        href: mobile-android-error-update-android-system-webview.md
     - name: Power BI app for Windows 10 devices
       items: 
       - name: "Get started with the Windows 10 app"

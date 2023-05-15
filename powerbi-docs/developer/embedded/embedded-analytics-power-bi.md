@@ -12,7 +12,7 @@ ms.custom: intro-overview
 
 # What is Power BI embedded analytics?
 
-**APPLIES TO:** ✔️&nbsp;App&nbsp;owns&nbsp;data ✔️&nbsp;User&nbsp;owns&nbsp;data
+[!INCLUDE[Customers no Org yes](../../includes/applies-embedded-app-yes-user-yes.md)]
 
 Power BI embedded analytics allows you to embed your Power BI items such as reports, dashboards and tiles, in a web application or in a website. You can:
 
@@ -40,11 +40,11 @@ Power BI embedded analytics offers two solutions:
 
 ### Embed for your customers
 
-The *embed for your customers* solution allows you to build an app that uses non-interactive authentication against Power BI. Your customers are likely to be external users, and they don't need to sign in using Power BI credentials to view the embedded content. Typically, this solution is used by independent software vendors (ISVs) who are developing applications for third parties. For a tutorial, see [Embed Power BI content using a sample embed for your customers application](./embed-sample-for-customers.md).
+The *embed for your customers* solution allows you to build an app that uses non-interactive authentication against Power BI. Your customers are likely to be external users, and they don't need to sign in using Power BI credentials to view the embedded content. Typically, this solution is used by independent software vendors (ISVs) who are developing applications for third parties. For a tutorial, see [Embed Power BI content using a sample embed for your customers application](embed-customer-app.md).
 
 ### Embed for your organization
 
-The *embed for your organization* solution allows you to build an app that requires signing in using Power BI credentials. Once signed in users can only consume embedded content, they have access to on Power BI service. This solution is aimed at large organizations that are building an app for internal users. For a tutorial, see [Embed Power BI content into an application for your organization](./embed-sample-for-your-organization.md).
+The *embed for your organization* solution allows you to build an app that requires signing in using Power BI credentials. Once signed in users can only consume embedded content, they have access to on Power BI service. This solution is aimed at large organizations that are building an app for internal users. For a tutorial, see [Embed Power BI content into an application for your organization](embed-organization-app.md).
 
 ## Comparison of the *embed for your customers* vs *embed for your organization* solutions
 
@@ -79,7 +79,6 @@ For more information about the differences between the Embedded and Premium SKUs
 
 ## Next steps
 
-* [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md)
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 * [Tutorial: Embed Power BI content using a sample embed for your customers application](embed-sample-for-customers.md)
 * [Tutorial: Embed Power BI content using a sample embed for your organization application](embed-sample-for-your-organization.md)

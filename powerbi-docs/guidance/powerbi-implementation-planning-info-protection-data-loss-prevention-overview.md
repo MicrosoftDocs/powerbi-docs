@@ -1,13 +1,13 @@
 ---
 title: "Power BI implementation planning: Information protection and data loss prevention"
 description: "An introduction to the information protection and data loss prevention for Power BI articles."
-author: peter-myers
-ms.author: v-petermyers
+author: paulinbar
+ms.author: painbar
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 09/15/2022
+ms.date: 12/12/2022
 ---
 
 # Power BI implementation planning: Information protection and data loss prevention
@@ -24,7 +24,7 @@ This article introduces the Power BI information protection and data loss preven
 
 As someone who manages Power BI for your organization, you won't usually be directly responsible for most aspects of information protection and DLP. It's likely those responsibilities will fall to the information security team and other system administrators.
 
-The goal of the set of articles is to make collaboration with others in the organization easier. The focus includes:
+The focus for this set of articles includes:
 
 - **Why:** Why these capabilities are important for compliance and auditing.
 - **What:** An overview of what the end-to-end process involves.
@@ -44,7 +44,7 @@ In short, protecting data is about:
 Protecting data is a complex subject. At a high level, topics relevant to Power BI include:
 
 - **Responsible actions taken by users:** Users who have received guidance and training, and clearly understand what's expected of them, can act ethically. They can enact a culture that values security, privacy, and compliance during the normal course of their work.
-- **Right-sized user security permissions:** In Power BI, securing data and reports is separate and distinct from the information protection and DLP activities described in these articles. [Security](whitepaper-powerbi-security.md) methods in Power BI include techniques such as workspace roles, sharing, app permissions, and row-level security (RLS).
+- **Right-sized user security permissions:** In Power BI, securing data and reports is separate and distinct from the information protection and DLP activities described in these articles. [Security](whitepaper-powerbi-security.md) methods in Power BI include techniques such as workspace roles, sharing, app permissions, and row-level security (RLS). Security techniques, such as workspace roles, app permissions, per-item sharing, and RLS, are covered in the [security planning](powerbi-implementation-planning-security-overview.md) articles.
 - **Data lifecycle management:** Processes such as backups and version control are important for protecting data. The setup of [encryption keys](/power-bi/enterprise/service-encryption-byok) and geographic locations for [data storage](powerbi-implementation-planning-tenant-setup.md#location-for-data-storage) also are considerations.
 - **Information protection:** Labeling and classifying content by using sensitivity labels is the first step towards being able to protect it. Information protection is covered in this series of articles.
 - **Data loss prevention policies:** DLP refers to controls and policies that reduce the risk of data leakage. Data loss prevention is covered in this series of articles.
@@ -119,6 +119,9 @@ To augment existing [security settings in Power BI](whitepaper-powerbi-security.
 For example, you can restrict users from downloading highly sensitive data and reports from the Power BI service. This type of real-time control is helpful when someone is allowed to view content themselves, but they should be prevented from downloading and distributing it to others.
 
 For more information about the types of controls you can implement, see [Defender for Cloud Apps for Power BI](powerbi-implementation-planning-defender-for-cloud-apps.md).
+
+> [!TIP]
+> For additional considerations related to strengthening Power BI compliance, see the [security planning](powerbi-implementation-planning-security-overview.md) articles.
 
 ## Information protection and DLP services
 

@@ -38,7 +38,7 @@ landingContent:
           - text: Troubleshoot refresh scenarios
             url: ../connect-data/refresh-troubleshooting-refresh-scenarios.md
           - text: Troubleshoot subscribing to reports and dashboards
-            url: ../consumer/service-troubleshoot-subscribe.yml
+            url: ../collaborate-share/service-troubleshoot-subscribe.yml
           - text: Troubleshoot gateways
             url: ../connect-data/service-gateway-onprem-tshoot.md
           - text: Troubleshoot tile errors

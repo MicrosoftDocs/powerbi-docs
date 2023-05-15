@@ -22,8 +22,5 @@ We have retired the Power BI Premium whitepaper in favor of providing up-to-date
 | [What is Power BI Premium?](../enterprise/service-premium-what-is.md) | An overview of Power BI Premium, covering the basics of reserved capacities, supported workloads, unlimited content sharing, and other features.  |
 | [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md)</br>[Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md)
 </br>[Configure workloads in a Premium capacity](../enterprise/service-admin-premium-workloads.md) | Detailed information about configuring and managing capacities and workloads. |
-| [Optimizing Premium capacities](../enterprise/service-premium-capacity-optimize.md) | Best practices for performance optimization, optimizing models, capacity   planning, and testing approaches. |
-| [Premium capacity scenarios](../enterprise/service-premium-capacity-scenarios.md) | Common issues in real-world scenarios, with a focus on identifying and   resolving those issues. |
-| [Monitor capacities in the Admin portal](../enterprise/service-admin-premium-monitor-portal.md) | Monitoring with Power BI Premium Capacity Metrics app, and interpreting   the metrics you see in the app. |
+| [Use the Premium metrics app](../enterprise/service-premium-metrics-app.md) | Monitoring with Power BI Premium Capacity Metrics app, and interpreting the metrics you see in the app. |
 | [Power BI Premium FAQ](../enterprise/service-premium-faq.yml) | Answers to questions around purchase and licensing, features, and common   scenarios. |
-| | |

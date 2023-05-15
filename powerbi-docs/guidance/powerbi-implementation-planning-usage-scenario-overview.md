@@ -1,13 +1,13 @@
 ---
 title: "Power BI usage scenarios"
 description: "An overview of the Power BI implementation planning usage scenario articles."
-author: peter-myers
-ms.author: v-petermyers
+author: data-goblin
+ms.author: v-kurtbuhler
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 09/15/2022
+ms.date: 04/20/2023
 ---
 
 # Power BI usage scenarios
@@ -65,7 +65,7 @@ The following *content management and deployment* scenarios describe approaches 
 
 - **[Self-service content publishing](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md):** The focus is on ensuring that content is stable for consumers. This scenario describes using a Power BI deployment pipeline to publish content through development, test, and production workspaces. It also describes how (optionally) Premium per user license mode can be used for development and test workspaces, and Premium per capacity license mode for the production workspace.
 - **[Advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md):** The focus is on empowering creators with advanced data modeling and publishing capabilities. This scenario describes managing a data model by using Tabular Editor, which is a third-party tool. Data modelers publish their models to the Power BI service by using the XMLA endpoint, which is available with Power BI Premium.
-- **Enterprise content publishing (usage scenario article not currently available):** The focus is on using more sophisticated and programmatic techniques to publish content through development, test, and production workspaces. In this scenario, Azure DevOps coordinates and executes Power BI REST API operations to deploy content.
+- **[Enterprise content publishing](powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md):** The focus is on using more sophisticated and programmatic techniques to publish content through development, test, and production workspaces. In this scenario, it describes how you can use Azure DevOps to orchestrate collaboration and content publication.
 
 ## Real-time scenarios
 
@@ -76,9 +76,10 @@ The following *content management and deployment* scenarios describe approaches 
 
 ## Embedding and hybrid scenarios
 
-There are two *embedding and hybrid* scenarios: enterprise embedding and on-premises reporting. They describe ways to deploy and distribute content that can be used in addition to, or instead of, the Power BI service.
+There are two *embedding and hybrid* scenarios: content embedding and on-premises reporting. They describe ways to deploy and distribute content that can be used in addition to, or instead of, the Power BI service.
 
-- **Enterprise embedding (usage scenario article not currently available):** The focus is on making analytical data easier for business users to access by integrating visuals within the tools and applications they use every day. This scenario describes using the Power BI REST APIs to embed content in a custom application.
+- **[Embed for your organization](powerbi-implementation-planning-usage-scenario-embed-for-your-organization.md):** The focus is on making analytical data easier for business users to access by integrating visuals within the tools and applications they use every day. This scenario describes using the Power BI REST APIs to embed content in a custom application for users who have permission and appropriate licenses to access Power BI content in your organization.
+- **[Embed for your customers](powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md):** This scenario describes using the Power BI REST APIs to embed content in a custom application for users who don't have permission or appropriate licenses to access Power BI content in your organization. The custom application requires an embedding identity that has permission and an appropriate license to access Power BI content. The custom application could be a multitenancy application.
 - **[On-premises reporting](powerbi-implementation-planning-usage-scenario-on-premises-reporting.md):** The focus is on using a basic portal for publishing, sharing, and consuming business intelligence content within your organizational network. This scenario describes using Power BI Report Server for this purpose.
 
 ## Next steps

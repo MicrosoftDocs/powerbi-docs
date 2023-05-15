@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 10/20/2022
+ms.date: 04/26/2023
 LocalizationGroup: Data from files
 ---
 
@@ -65,10 +65,9 @@ Datamart CPU usage is free during preview, including datamarts and queries on SQ
 
 ## Considerations and limitations
 
-The following limitations should be considered when using datamarts: 
+The following limitations should be considered when using datamarts:
 
-* Datamarts are only available in Premium Gen 2 workspaces.
-* Datamarts aren't currently supported in the following Power BI SKUs: A1/A2, EM1, and EM2.
+* Datamarts aren't currently supported in the following Power BI SKUs: EM1/EM2 and EM3.
 * Datamarts aren't available in workspaces that are bound to an Azure Data Lake Gen2 storage account.
 * Datamart extract, transform and load (ETL) operations can currently only run for up to 24 hours
 * Datamarts currently officially support data volumes of up to 100 GB.
@@ -76,11 +75,7 @@ The following limitations should be considered when using datamarts:
 * Data sources behind a VNET or using private links can't currently be used with datamarts; to work around this limitation you can use an on-premises data gateway.
 * Datamarts use port 1948 for connectivity to the SQL endpoint. Port 1433 needs to be open for datamarts to work.
 * Datamarts only support Microsoft Azure Active Directory (Azure AD) and do *not* support managed identities or service principals at this time.
-* Datamarts are currently not supported in Microsoft Teams.
-
-* Datamarts currently support the following SQL clients:
-    * SSMS
-    * Azure Data Studio
+* Beginning February 2023, datamarts support any SQL client.
 * Datamarts aren't currently available in the following Azure regions:
     * Sweden Central and South
     * West India

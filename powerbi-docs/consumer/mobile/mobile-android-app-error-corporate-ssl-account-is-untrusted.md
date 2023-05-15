@@ -1,43 +1,37 @@
 ---
 title: 'Fixing "Corporate SSL certificate is untrusted"'
-description: When signing in to the Android app for Power BI, you may see the message, "Could not authenticate because your corporate SSL certificate is untrusted
+description: Learn how to resolve the message, "Could not authenticate because your corporate SSL certificate is untrusted."
 author: paulinbar
 ms.author: painbar
-.": ''
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 01/17/2023
 ---
+
 # Fixing "Corporate SSL certificate is untrusted" - Power BI
-When signing in to the Android mobile app for Microsoft Power BI, you may see the message, "Could not authenticate because your corporate SSL certificate is untrusted by this device. Contact your company IT admin." 
 
-What you need to do usually depends on the operating system on your Android device, but there are a couple of other issues that may cause this error.
+When signing in to the Android mobile app for Microsoft Power BI, you might see the message, "Could not authenticate because your corporate SSL certificate is untrusted by this device. Contact your company IT admin."
 
-## On Android 7 or later
-Look for an update for an app named **Chrome**, and install the update.
+What you need to do usually depends on the operating system on your Android device, but there are a couple of other issues that can cause this error.
 
-## On Android 6 and earlier
-Your device may need an updated version of System Webview. It may be installed on your device, and you may just need to click **Update**.
+## Google Chrome version
 
-If System Webview isn't installed on your device:
-
-1. On your Android device, close Power BI.
-2. Open the Google Play Store and search for **System Webview** by Google Inc.
-3. Install it.
-4. Restart the Power BI app and sign in.
+The Google Chrome app on your device might need updating. Install the latest version of the Google Chrome app.
 
 ## Time-zone settings
-Time-zone settings on your device may be wrong. 
+
+Time-zone settings on your device might be wrong.
 
 Go to **Settings** > **System** > **Date and time** to check them.
 
 ## Custom authentication server
-If you're using a custom authentication server, the SSL certificate in the corporate authentication server may not be valid. 
+
+If you're using a custom authentication server, the SSL certificate in the corporate authentication server might not be valid.
 Work with your organization's IT to test the corporate authentication server configuration, by following the guidance in [this article](https://support.microsoft.com/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce).
 
 ## Next steps
-* [Download the Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
-* Questions? [Try asking the Power BI Community](https://community.powerbi.com/) 
 
+- [Download the Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
+- Questions? [Ask the Power BI Community](https://community.powerbi.com/)

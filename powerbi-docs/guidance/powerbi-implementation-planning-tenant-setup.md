@@ -1,13 +1,13 @@
 ---
 title: "Power BI implementation planning: Tenant setup"
 description: "This article introduces important aspects to know about setting up your Power BI tenant."
-author: peter-myers
-ms.author: v-petermyers
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 07/25/2022
+ms.date: 12/12/2022
 ---
 
 # Power BI implementation planning: Tenant setup
@@ -147,3 +147,6 @@ Multi-Geo support enables organizations to:
 ## Next steps
 
 For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see [Power BI implementation planning](powerbi-implementation-planning-introduction.md).
+
+> [!TIP]
+> To learn how to manage a Power BI tenant, we recommend that you work through the [Administer Power BI learning path](/training/paths/administer-power-bi-part-1/).

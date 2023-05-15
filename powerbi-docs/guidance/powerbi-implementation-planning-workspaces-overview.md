@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Workspaces"
 description: "This article introduces the Power BI workspace planning articles."
-author: peter-myers
-ms.author: v-petermyers
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

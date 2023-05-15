@@ -46,7 +46,7 @@ The following additional root objects are optional and can be added as needed:
 * [supportsHighlight](highlight.md)
 * [sorting](sort-options.md)
 * [drilldown](drill-down-support.md)
-* [expandCollapse](dataview-mappings.md#expanding-and-collapsing-row-headers)
+* [expandCollapse](dataview-mappings.md#expand-and-collapse-row-headers)
 * [supportsKeyboardFocus](supportskeyboardfocus-feature.md)
 * [supportsSynchronizingFilterState](enable-sync-slicers.md)
 * [advancedEditModeSupport](advanced-edit-mode.md)
@@ -64,7 +64,7 @@ You can find all these objects and their parameters in the [*capabilities.json* 
 Privileges are special operations your visual requires access to in order to operate. Privileges take an array of `privilege` objects, which defines all privilege properties. The following sections describe the privileges that are available in Power BI.
 
 > [!NOTE]
-> From API v4.6.0, privileges **must** be specified in the *capabilities.json* file.  In earlier versions, remote access is automatically granted and downloading to files isn't possible. To find out which version you’re using, run the `pbiviz -V` command.
+> From API v4.6.0, privileges **must** be specified in the *capabilities.json* file.  In earlier versions, remote access is automatically granted and downloading to files isn't possible. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 ### Define privileges
 
@@ -267,4 +267,4 @@ For more information, see [Objects and properties of Power BI visuals](objects-p
 
 * [Understand data view mapping in Power BI visuals](dataview-mappings.md)
 * [Objects and properties of Power BI visuals](objects-properties.md)
-*[Sorting options for Power BI visuals](sort-options.md)
+* [Sorting options for Power BI visuals](sort-options.md)

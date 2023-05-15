@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 09/23/2022
+ms.date: 02/03/2023
 LocalizationGroup: Administration
 ---
 
@@ -105,6 +105,12 @@ Users in the organization can download .pbix files and paginated reports.
 
 ![Screenshot of download reports setting.](media/service-admin-portal-export-sharing/powerbi-admin-portal-download-reports-setting.png)
 
+## Users can work with Power BI datasets in Excel using a live connection
+
+Users can export data to Excel from a Power BI visual or dataset, or export a dataset to an Excel workbook with Analyze in Excel, both options with a live connection to the XMLA endpoint.
+
+:::image type="content" source="media/service-admin-portal-export-sharing/tenant-settings-live-connection.png" alt-text="Screenshot showing Users can work with Power BI datasets in Excel using a live connection.":::
+
 ## Allow live connections
 
 Users in the organization can use Power BI service Live Connect. Allowing live connections also allows users to Analyze in Excel.
@@ -151,7 +157,7 @@ Allow users in this org to certify datasets, dataflows, reports, and apps. See [
 
 ## Create email subscriptions
 
-Users can create email subscriptions to reports and dashboards. Learn more about [subscriptions](../consumer/end-user-subscribe.md).
+Users can create email subscriptions to reports and dashboards. Learn more about [subscriptions](/power-bi/collaborate-share/end-user-subscribe).
 
 ![Screenshot of Enable email subscriptions tenant setting.](media/service-admin-portal-export-sharing/power-bi-manage-email-subscriptions.png)
 
@@ -167,7 +173,7 @@ External users are users outside of the organization that have not been added as
 
 By default, anyone with the Admin, Member, or Contributor role in a workspace in your organization can feature content on Power BI Home. See [Feature content on colleagues' Power BI Home page](../collaborate-share/service-featured-content.md) for details.
 
-This setting enables you enable/disable the ability of users in your organization to promote their published content to the **Featured** section of the Power BI Home page.
+This setting enables you to enable or disable the ability of users in your organization to promote their published content to the **Featured** section of the Power BI Home page.
 
 ![Screenshot of featured content tenant setting.](media/service-admin-portal-export-sharing/powerbi-admin-portal-featured-content-setting.png)
 
@@ -215,14 +221,14 @@ Read more about the [Power BI app for Microsoft Teams](../collaborate-share/serv
 
 ## Enable Power BI add-in for PowerPoint
 
+To configure this setting, go to **Admin portal > Tenant settings > Export and sharing settings** and look for **Enable Power BI add-in for PowerPoint**.
+
 The Power BI add-in for PowerPoint makes it possible for users to add live, interactive data from Power BI to a PowerPoint presentation. See [About the Power BI add-in for PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-about.md) for more detail.
 
 When this setting is enabled (default), entry points for opening a new PowerPoint presentation with the add-in already loaded are available in Power BI. When this setting is disabled, the entry points in Power BI are unavailable.
 
 >[!NOTE]
 > Disabling this setting does not prevent people from using the add-in starting from PowerPoint. To completely block adding live Power BI report pages to PowerPoint slides using the add-in, the add-in must be disabled in both Power BI and PowerPoint.
-
-![Screenshot Power BI add-in for PowerPoint tenant setting.](media/service-admin-portal-export-sharing/powerbi-admin-portal-enable-powerpoint-add-in-setting.png)
 
 ## Allow shareable links to grant access to everyone in your organization
 This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to everyone in your organization**.

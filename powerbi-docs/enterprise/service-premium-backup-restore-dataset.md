@@ -38,7 +38,7 @@ Backup and Restore relies on the Azure connections infrastructure in Power BI to
 
 With an ADLS Gen2 storage account associated with a workspace, workspace admins who have write or admin permissions can conduct *backups*. Users with these permissions might be an admin, a member, or a contributor, or might not be part of the workspace level roles, but have direct write permission to the dataset.  
 
-To *restore* an existing dataset, users who have write or admin permission to the dataset can conduct a *restore* operation. To *restore* a new dataset, the user must be an admin, member, or contributor of the workspace.
+To *restore* an existing dataset, users who have write or admin permission to the dataset can conduct a *restore* operation. To *restore* a new dataset, the user must be an admin of the workspace.
 
 To *browse the backup/restore filesystem* using Azure Storage Explorer (the *Browse...* button in SSMS), a user must be an admin, or a member or contributor of the workspace.
 
@@ -63,27 +63,54 @@ If you rename a workspace, the backup folder in the *power-bi-backup* container 
 
 ## Considerations and limitations
 
-When using the **Backup and Restore** feature with Power BI, keep the following considerations in mind.
+When using the **Backup and Restore** feature with Power BI, keep the following in mind.
 
 * Power BI must be able to access your ADLS Gen2 directly. Your ADLS Gen2 can't be located in a VNET.
 * If your ADLS Gen2 is already working with **Backup and Restore**, and you disconnect and later reconfigure it to work with **Backup and Restore** again. You must first rename or move the previous backup folder, or the attempt will result in errors and failure.
 * **Restore** only supports restoring the database as a **Large Model (Premium)** database.
 * Only **enhanced format model (V3 model)** is allowed to be restored.
 * **Password** encryption in the backup command isn't supported
-* There's a new property, `IgnoreIncompatibilities`, for the `restore` command. The new property addresses RLS incompatibilities between Azure AS and Power BI Premium. Power BI Premium only supports the read permission for roles, but AAS supports all permissions. If you try to restore a backup file, for which some roles don't have read permission, you have to specify `IgnoreIncompatibilities` in your `restore` command, otherwise, restore will fail. Once `IgnoreIncompatibilities` is specified, the role without the read permission will be dropped. So far, there's no UX support to `IgnoreIncompatibilities` in SSMS, so you need to specify it in a `restore` command manually.
-For example:
+* There's a new property, `ignoreIncompatibilities`, for the `restore` command that addresses Row-level security (RLS) incompatibilities between Azure Analysis Services (AAS) and Power BI Premium. Power BI Premium only supports the read permission for roles, but AAS supports all permissions. If you try to restore a backup file for which some roles don't have *read* permissions, you must specify the `ignoreIncompatibilities` property in the `restore` command. If not specified, restore can fail. When specified, the role without the *read* permission is dropped. Currently, there's no setting in SSMS that supports the `ignoreIncompatibilities` property, however, you can specify it in a `restore` command using Tabular Model Scripting Language (TMSL). For example:
 
-```
-{
-  "restore": {
-    "database": "DB",
-    "file": "/Backup.abf",
-    "allowOverwrite": true,
-    "security": "copyAll",
-    "ignoreIncompatibilities": true
-  }
-}
-```
+    ```json
+      {
+        "restore": {
+          "database": "DB",
+          "file": "/Backup.abf",
+          "allowOverwrite": true,
+          "security": "copyAll",
+          "ignoreIncompatibilities": true
+        }
+      }
+    ```
+
+* You can restore a corrupt database. As long as you backup the database periodically, restoring the database is the most robust way to recover it. Use the following `restore` command in an XMLA query to restore a database:
+
+    ```xml
+      <Restore xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+        <File>DatabaseBackup.abf</File>
+        <DatabaseName>DatabaseName</DatabaseName>
+        <AllowOverwrite>true</AllowOverwrite>
+      </Restore>
+    ```
+
+* When restoring a database, you might get the following error:
+ 
+    "*We cannot restore the dataset backup right now because there is not enough memory to complete this operation. Please use the /forceRestore option to restore the dataset with the existing dataset unloaded and offline.*"
+
+    In these cases, with the `restore` command, add the `forceRestore` property to trigger a forced restore operation. For example, when using TMSL:
+    
+    ```json
+        {
+          "restore": {
+          "database": "DB",
+          "file": "/Backup.abf",
+          "allowOverwrite": true,
+          "security": "copyAll",
+          "forceRestore": true
+          }
+        }
+    ```
 
 ## Next steps
 

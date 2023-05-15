@@ -1,13 +1,14 @@
 ---
 title: Power BI Application lifecycle management (ALM) deployment pipelines history 
 description: Learn how the history feature works in the deployment pipelines, the Power BI Application lifecycle management (ALM) tool.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 09/22/2022
+ms.date: 05/09/2023
+ms.search.form: Deployment history
 ---
 
 # Deployment history
@@ -16,7 +17,7 @@ Deployment history is a deployment pipelines feature that enables reviewing the 
 
 You can use the deployment history log, to check the health of your pipeline, and to troubleshoot problems that occurred during previous deployments.
 
-When you perform a deployment, you can use the built-in option to [leave notes](deployment-pipelines-get-started.md#review-your-deployment-and-leave-a-note), to add additional information to each deployment. Later, when you're looking back at your deployment history, the notes can help you understand what happened during each deployment.
+When you perform a deployment, you can use the built-in option to [leave notes](deployment-pipelines-deploy.md#review-your-deployment-and-leave-a-note), to add additional information to each deployment. Later, when you're looking back at your deployment history, the notes can help you understand what happened during each deployment.
 
 :::image type="content" source="media/deployment-pipelies-history/deployment-history.png" alt-text="A screenshot of the deployment pipelines history pane.":::
 

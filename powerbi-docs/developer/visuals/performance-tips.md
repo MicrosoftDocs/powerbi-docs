@@ -1,18 +1,18 @@
 ---
 title: Performance tips for creating quality Power BI custom visuals
-description: How to build a high performance Power BI custom visual.
+description: Learn specific techniques to develop high performance Power BI custom visuals for your organization.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 02/20/2022
+ms.date: 05/15/2023
 ms.custom: engagement-fy23
 ---
 # Performance tips for creating quality Power BI custom visuals
 
-This article covers techniques a developer can use to achieve high performance when rendering custom visuals.
+This article covers techniques on how a developer can achieve high performance when rendering their custom visuals.
 
 No one wants a visual to take a long time to render. Getting the visual to render as quickly as possible is critical when writing the code.
 
@@ -81,7 +81,7 @@ When you update the visual:
 
 ## Cache DOM nodes
 
-When a node or list of nodes is retrieved from the DOM, think about whether you can reuse them in later computations (sometimes even the next loop iteration). As long as you don't need to add or delete more nodes in the relevant area, caching them can improve your application's overall efficiency.
+When a node or list of nodes is retrieved from the DOM, think about whether you can reuse them in later computations (sometimes even the next loop iteration). As long as you don't need to add or delete more nodes in the relevant area, caching them can improve the application's overall efficiency.
 
 To make sure that your code is fast and doesn’t slow down the browser, keep DOM access to a minimum.
 
@@ -114,7 +114,7 @@ Limit DOM manipulations as much as possible.  *Insert operations* like `prepend(
 
 For example:
 
-**Instead of:**
+**Instead of**:
 
   ```javascript
   for (let i=0; i<1000; i++) { 
@@ -122,7 +122,7 @@ For example:
   }
   ```
 
-**Try:**
+**Try**:
 
 Make the above example faster by using `html()` and building the list beforehand:
 
@@ -137,7 +137,7 @@ Make the above example faster by using `html()` and building the list beforehand
 
 ## Reconsider JQuery
 
-Limit your JS frameworks and use native JS whenever possible to increase the available bandwidth and lower your processing overhead. Doing this might also decrease compatibility issues with older browsers.
+Limit JS frameworks and use native JS whenever possible to increase the available bandwidth and lower your processing overhead. Doing this might also decrease compatibility issues with older browsers.
 
 For more information, see [youmightnotneedjquery.com](http://youmightnotneedjquery.com/) for alternative examples for functions such as JQuery's `show`, `hide`, `addClass`, and more.  
 
@@ -187,4 +187,4 @@ Instead, consider using a visual constructor method to draw everything static. T
 
 ## Next steps
 
->[Optimization guide for Power BI](../../guidance/power-bi-optimization.md)
+[Optimization guide for Power BI](../../guidance/power-bi-optimization.md)

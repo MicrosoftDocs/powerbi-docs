@@ -1,8 +1,8 @@
 ---
 title: "Disable Power Query background refresh"
 description: Guidance on when to disable Power Query background refresh.
-author: peter-myers
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi

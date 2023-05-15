@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 11/04/2022
+ms.date: 12/05/2022
 ms.custom: video-0fOxaHJPvdM
 LocalizationGroup: Administration
 ---
@@ -30,6 +30,9 @@ The region you select during sign-up determines where data is stored. This regio
 
 > [!NOTE]
 > Customers that have purchased Power BI Premium capacity can specify a data region for each capacity. The region for the capacity can be different than the default region. Learn more about how to configure this scenario in [Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md).
+
+> [!NOTE]
+> There are some regions in which Power BI tenants are not initially established by default. If you prefer your Power BI tenant to be located in such a region, you can [move](../support/service-admin-region-move.md) your tenant to that region. 
 
 ## How to find the default region for your organization
 
