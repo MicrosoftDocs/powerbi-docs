@@ -42,7 +42,7 @@ Sujata demonstrates how to share in the Power BI service.
 - You can share reports and dashboards from My Workspace. 
 - You can share from workspaces other than My Workspace, if you have the [Admin or Member role](service-roles-new-workspaces.md) in the workspace. If you have the Contributor or Viewer role, you can share if you have Reshare permissions.
 - You can [share from the Power BI mobile apps](../consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).
-- You can't *share* directly from Power BI Desktop. You [publish reports from Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) to the Power BI service. 
+- You can share [from Power BI Desktop](../create-reports/desktop-sharepoint-save-share.md) with OneDrive and SharePoint integration. You can also [publish reports from Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) to the Power BI service. 
 
 ## Share a report via link
 
@@ -233,6 +233,7 @@ Things to keep in mind about sharing reports and dashboards:
 ## Next steps
 
 - [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
+- [Share from Power BI Desktop](../create-reports/desktop-sharepoint-save-share.md)
 - [Troubleshoot sharing dashboards and reports](service-troubleshoot-sharing.md)
 - [Sharing for users with free licenses](end-user-shared-with-me.md)
 - [Request or grant access to shared dashboards or reports](service-request-access.md)
