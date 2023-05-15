@@ -83,7 +83,7 @@ The default save location is your parent OneDrive folder, unless you change it. 
 
 The default save location is your parent OneDrive folder. To change the default save location, select **Options and settings > Options > Save and Recover** from the file menu. Under **Save** change the default local file location. Restart the application to see the updated default save location. When you save, the new location is the first option that appears.
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-save-location.png" alt-text="Screenshot of how to change the default save location.":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-default-save-location.png" alt-text="Screenshot of how to change the default save location.":::
 
 ## Sharing links to Power BI files stored in OneDrive or SharePoint
 
