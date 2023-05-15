@@ -1,159 +1,161 @@
 ---
 title: Find content from Power BI service Home
-description: Start on the Home canvas and locate and open reports, dashboards, and apps.
+description: Open reports, dashboards, apps, and workspaces from the Power BI service Home. Learn how to change your layout and feature your important content.
 author: mihart
 ms.author: mihart
 ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: Find your content
 ms.topic: conceptual
-ms.date: 11/21/2022
+ms.date: 12/02/2022
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-In Power BI, the term *content* refers to apps, dashboards, reports, and more. Content is created by Power BI *designers*, who share it with their colleagues. Your content is accessible and viewable in the Power BI service, and often the best place to start working in the Power BI service is from Power BI **Home**.
+In Power BI, the term *content* refers to visuals, like apps, dashboards, and reports. Content is created by Power BI designers who share it with their colleagues. Your content is accessible and viewable in the Power BI service, and often the best place to start working in the Power BI service is from Power BI **Home**.
 
 ## Explore Power BI Home
-After you sign in to the Power BI service, select **Home** from the navigation pane. 
 
-![A screenshot of the nav pane for the Power BI service and Home selected.](media/end-user-home/power-bi-open-home.png)
+After you sign in to the Power BI service, select **Home** from the navigation pane.
 
+:::image type="content" source="media/end-user-home/power-bi-open-home.png" alt-text="A screenshot of the nav pane for the Power BI service with Home selected.":::
 
-Power BI displays your Home canvas. The layout and content on Home is different for every user. New users will have less content, but that will change as they use Power BI more often. Only content that you can access will display on your Home. For example, if you don't have permissions to a report, then that report won't appear on Home. 
+Your Home page opens. The layout and content on Home is different for every user. New users have less content, but that changes as they use Power BI more often. Only the content that you can access appears on your Home. For example, if you don't have permissions to a report, that report doesn't appear on Home. 
 
 > [!NOTE]
-> The **Getting started** section on Home is being deprecated in mid December 2022. The articles and modules included in **Getting started** will continue to be available from the Power BI online documentation. The sample reports are already available from the **Learning/Knowledge center**. 
+> The **Getting started** section on Home is being deprecated mid December 2022. The articles and modules included in **Getting started** will continue to be available from the Power BI online documentation. The sample reports are already available from the **Learning/Knowledge center**. 
 >
 > :::image type="content" source="media/end-user-home/power-bi-knowledge-center.png" alt-text="Screenshot of the left navigation menu with Knowledge center selected":::
 
+
 ## Simplified layout and Expanded layout
-Your Home view will also depend on the layout you've selected. By default, you'll see the **Simplified** view. This view includes **Recommended** content at the top with tabs for **Recent**, **Favorites**, and **My apps** below. **Recommended** content may include content that:
+
+Your Home view depends on the layout you select. The **Simplified** view is the default. This view shows **Recommended** content at the top with tabs for **Recent**, **Favorites**, and **My apps** below. **Recommended** content might include content that:
+
 - you've marked as a favorite
 - you visit often
-- is visited most often by colleagues in your organization
+- is visited often by colleagues in your organization
 - has been featured on Home
 - is used frequently by your closest colleagues
 - is Getting started content
 
-The screenshots below show an example **Simplified** layout for a new user and then for a more experienced user.
+The following example shows a **Simplified** layout for a new user.
 
+:::image type="content" source="media/end-user-home/power-bi-home.png" alt-text="A screenshot of the Simplified view for a new user." lightbox="media/end-user-home/power-bi-home.png#lightbox":::
 
-:::image type="content" source="media/end-user-home/power-bi-home.png" alt-text="Screenshot of Simplified view for a new user.":::
+The next example shows a **Simplified** layout for an experienced user.
 
+:::image type="content" source="media/end-user-home/power-bi-simplified-user.png" alt-text="A screenshot of the Simplified view for an experienced user." lightbox="media/end-user-home/power-bi-simplified-user.png#lightbox":::
 
-:::image type="content" source="media/end-user-home/power-bi-simplified-user.png" alt-text="Screenshot showing Power BI Home of an experienced user with the Simplified toggle selected.":::
+The **Expanded** layout includes a different set of information. If you select the **Expanded** view from the View menu, the expanded layout becomes your default Home layout.
 
-The **Expanded** layout includes a different set of information. The images below are using the *Expanded* view. Once you've selected the **Expanded** toggle, the expanded layout will become your default Home layout. 
+This view includes **Favorites + frequents** and **Featured** at the top, with tabs for **Recent**, **Favorites**, **My apps**, and **From external orgs** below.
 
-This view includes **Favorites + frequents** and **Featured** at the top, with tabs for **Recent**, **Favorites**, **My apps**, and **From external orgs** below. 
+The following example shows the **Expanded** view for an experienced user.
 
-:::image type="content" source="media/end-user-home/power-bi-expanded-view.png" alt-text="Screenshot showing the Power BI service Home of an experienced user with the Expanded toggle selected.":::
+:::image type="content" source="media/end-user-home/power-bi-expanded-view.png" alt-text="A screenshot of the Expanded view for an experienced user." lightbox="media/end-user-home/power-bi-expanded-view.png#lightbox":::
 
-## Locating content from your Home canvas
+## Locate content from your Home canvas
 
-Power BI Home offers three different ways of locating and viewing your content. All three access the same pool of content, they're merely different ways of getting to that content. Occasionally, searching will be the easiest and quickest way to find something, while other times, selecting a *card* on the Home canvas will be your best option.
+Power BI Home offers three ways of locating and viewing your content. All three approaches access the same pool of content in different ways. Searching is sometimes the easiest and quickest way to find something, while other times, selecting a card on the Home canvas is your best option.
 
-- The Home canvas displays and organizes your favorite, frequent, recent, and recommended, along with apps and workspaces.  If you're new to the Power BI service, you'll also have Getting started content. Select a card, or an item in a list, to open it.
-- Along the left side, is a navigation pane, referred to as the nav pane. On the nav pane, your same content is organized a little differently. Select **Browse** to see your recent, favorite, and shared content. Select **Data hub** to see data available to you from across your organization. Select **Apps** to see a list of apps available to you. And, select **Knowledge/Learning center** to see learning materials, sample reports, training, and more. 
-- At the top, the global search box lets you search for content by title, name, or keyword.
+- The Home canvas shows your favorite, frequent, recent, recommended, apps and workspaces. If you're new to the Power BI service, you also have Getting started content. Select a card, or an item in a list, to open it.
+- Along the left side is a navigation pane, referred to as the nav pane. The nav pane has the same content as Home, but it's organized differently. Select **Browse** to see your recent, favorite, and shared content. Select **Data hub** to see data available to you from across your organization. Select **Apps** to see a list of apps available to you. And select **Knowledge/Learning center** to see learning materials, sample reports, and training.
+- At the top of Home, you can search for content by title, name, or keyword in the global search box.
 
-The following topics review each of these options for finding and viewing content.
+The following sections review these options for finding and viewing content.
 
 ## Home canvas
-On the Home canvas, you can view all the content that you have permission to use. Your Home canvas also updates with getting started content, samples, and learning resources. At first, you might not have much content on your Home canvas, but that will change as you start to use Power BI with your colleagues.
- 
-As you work in the Power BI service, you'll receive dashboards, reports, and apps from colleagues, and then Power BI Home will eventually fill in. Over time, it might resemble the following (shown using Expanded layout).
 
-:::image type="content" source="media/end-user-home/power-bi-full.png" alt-text="A screenshot of the Welcome screen for the Power BI service.":::
+On the Home canvas, you can view all the content that you have permission to use. Your Home canvas updates the Getting started content, samples, and learning resources. At first, you might not have much content, but that changes as you start to use Power BI with your colleagues.
 
- 
-The next few topics take a closer look at each section of Home. Your Home landing page may look different. Power BI optimizes Home based on your usage and settings and the layout that you've selected.
+As you work in the Power BI service, you receive dashboards, reports, and apps from colleagues, and Power BI Home fills in with content. Over time, it might resemble the following Expanded layout example.
+
+:::image type="content" source="media/end-user-home/power-bi-full.png" alt-text="A screenshot of the Expanded Home for the Power BI service." lightbox="media/end-user-home/power-bi-full.png#lightbox":::
+
+Your Home landing page might look different. Power BI optimizes Home based on your usage, settings, and the layout you select.
 
 ## Most important content at your fingertips
 
 ### Favorites and frequents
-This section contains links to the content that you visit most often or that you've tagged as [a favorite](end-user-favorite.md). Notice that these cards have black stars; they've been tagged as favorites. 
 
-![Favorites flyout](./media/end-user-home/power-bi-home-favorites.png)
+The **Favorites and frequents** section of your Home contains links to the content that you visit most often or that you've tagged as a [favorite](end-user-favorite.md). These cards have black stars because they're tagged as favorites.
 
-
+:::image type="content" source="./media/end-user-home/power-bi-home-favorites.png" alt-text="A screenshot showing the Favorites and frequents section.":::
 
 ### Featured
-The **Featured** section contains content that your administrator or colleagues have *promoted* to your Home. Typically, this content is important or helpful for you to do your job. In this example, the featured content includes metrics to track success.  Unless it has been disabled by your administrator, any user with Admin, Member, or Contributor permissions to a workspace can feature content on Home. For more information about featuring content on Home, see [Feature content on colleagues' Power BI Home](../collaborate-share/service-featured-content.md)
 
+The **Featured** section contains content that your administrator or colleagues have promoted to your Home. Typically, the content that they feature is important or helpful for you to do your job. In this example, the featured content includes metrics to track success. Unless it's been disabled by your administrator, any user with Administrator, Member, or Contributor permissions to a workspace can feature content on Home. For more information about featuring content on Home, see [Feature content on colleagues' Power BI Home](../collaborate-share/service-featured-content.md).
 
-![Screenshot of featured content, promoted by admin.](./media/end-user-home/power-bi-home-featured.png)
+:::image type="content" source="./media/end-user-home/power-bi-home-featured.png" alt-text="A screenshot of the Featured section on Home.":::
 
-### Recents and My apps
-The next section is two (or more) tabbed lists. 
-- **Recent** is the content you've visited most recently. Notice the timestamp for each item. 
+### Recents, My apps, and Favorites
 
-- The **My apps** section lists [apps that have been shared with you](end-user-apps.md) or that you've [downloaded from AppSource](end-user-apps.md); the most recent apps are listed here. 
+The next section of your Home contains two or more tabbed lists.
+
+- **Recent** is the content you've visited most recently. Notice the timestamp for each item.
+
+- The **My apps** section lists [apps that have been shared with you](end-user-apps.md) or that you've [downloaded from AppSource](end-user-apps.md). The most recent apps are listed here.
 
 - **From external orgs** (Preview) lists shared datasets available from other tenants. Use this list to discover and connect to data from external providers.
 
-- In some scenarios, you'll also see a tab for content that you've tagged as [**Favorites**](end-user-favorite.md). 
+- In some scenarios, you'll also see a tab for content that you've tagged as [Favorites](end-user-favorite.md).
 
-![Screenshot of Home list view with Recent tab selected.](./media/end-user-home/power-bi-recent.png)
+:::image type="content" source="./media/end-user-home/power-bi-recent.png" alt-text="A screenshot of the Home list view with the Recent tab selected.":::
 
- 
 ### Getting started learning resources
-The exact resources that appear depend on your activity, settings, and Power BI administrator. If you're a new user, you'll see Getting started content under **Recommended** in **Simplified** layout. And you'll see a **Getting started with Power BI** section in **Expanded** layout.  In **Expanded** layout, when you no longer need to see the Getting started tabs, select **Hide getting started**.
 
-![Home showing Getting started section](./media/end-user-home/power-bi-get-started.png)
+The exact resources that appear depend on your activity, settings, and Power BI administrator. If you're a new user, Getting started content is under **Recommended** in the **Simplified** layout. A **Getting started with Power BI** section is in the **Expanded** layout. If you want to remove the Getting started tabs in the **Expanded** layout, select **Hide getting started**.
 
-## Explore the nav pane
+:::image type="content" source="./media/end-user-home/power-bi-get-started.png" alt-text="A screenshot of Getting started section on Home.":::
 
-The nav pane classifies your content in ways that help you find what you need, quickly.  
+## Explore the navigation pane
 
-![A screenshot of the nav pane for the Power BI service.](media/end-user-home/power-bi-nav-pane.png)
+The nav pane classifies your content in ways that help you find what you need quickly.  
 
+:::image type="content" source="media/end-user-home/power-bi-nav-pane.png" alt-text="A screenshot of the navigation pane on Home.":::
 
-Use the nav pane to locate and move between dashboards, reports, apps, and other content. Occasionally, using the nav pane will be the quickest way to get to content. The nav pane is there when you open your Home landing page, and remains there as you open other areas of the Power BI service. It can be collapsed by selecting this icon ![Screenshot of icon with three horizontal lines.](media/end-user-home/power-bi-hide.png) .
+Use the nav pane to locate and move between dashboards, reports, apps, and other content. Occasionally, using the nav pane is the quickest way to get to content. The nav pane is there when you open your Home landing page and remains there as you open other areas of the Power BI service. It can be collapsed by selecting this icon :::image type="icon" source="media/end-user-home/power-bi-hide.png"::: .
   
-The nav pane organizes your content into containers that are similar to what you've already seen on the Home canvas: Favorites, Recent, Apps, Datasets, Metrics, Shared with me, and workspaces. Some containers have flyouts that offer you the option of viewing just the most-recent content in a container. Otherwise, select a container to see all content.
- 
-- To open one of these content sections and display a list of all items, select the heading.
-- To see the most recent in either the **Favorites** or **Recent** container, select the flyout (**>**).
+The nav pane organizes your content into containers that are similar to what you've already seen on the Home canvas: Favorites, Recent, Apps, Datasets, Metrics, Shared with me, and workspaces. The Browse page contains your Recent, Favorites, and Shared with me. Select a container to see all the content.
 
-    ![A video of using the nav pane for Recent.](media/end-user-home/recents2.gif)
-
- 
-To summarize, the nav pane is another way for you to find the content you want, quickly. Content is organized in a manner similar to the Home canvas, but shown in lists instead of cards. 
+Quickly find the content you want on the nav pane. Content is organized similar to the Home canvas, but shows lists instead of cards.
 
 ### Workspaces
-Every Power BI service user has one **My workspace**. **My workspace** will only contain content if you've downloaded Microsoft samples or created your own dashboards, reports, or apps. For many *business users*, **My workspace** will be empty and will remain empty. If you're a brand new user, you'll only have one workspace, **My workspace**.
 
-![Screenshot of only one workspace, My workspace.](./media/end-user-home/power-bi-one-workspace.png)
+Every Power BI service user has one **My workspace**. **My workspace** only contains content that you download from Microsoft samples or that you create yourself. For many business users, **My workspace** is empty and remains empty. If you're a brand new user, you only have one workspace called **My workspace**.
 
-And if you select that one workspace, you'll find it empty.
+:::image type="content" source="./media/end-user-home/power-bi-one-workspace.png" alt-text="A screenshot of My workspace on the navigation pane.":::
 
-![Screenshot of empty My workspace.](./media/end-user-home/power-bi-empty-workspace.png)
+The following example shows what your workspace looks like if it's empty.
 
-If someone in your organization adds you to a workspace, you'll see it in your list of workspaces. Over time, you'll have more than one workspace. For example, your coworkers can add you to a workspace by giving you a role, such as Member, Contributor, or Viewer. If you [download a template app](end-user-app-marketing.md) from outside your organization, you'll get the combination of an app and a new workspace. You can also create workspaces, if you have a Power BI Pro or Premium Per User license. To open a *workspace*, select it from the nav pane. 
+:::image type="content" source="./media/end-user-home/power-bi-empty-workspace.png" alt-text="A screenshot of an empty workspace in the Power BI service.":::
 
-![Screenshot of Workspaces in navigation pane.](./media/end-user-home/power-bi-workspace-list.png)
+If someone in your organization adds you to a workspace, it appears in your list of workspaces. Over time, you might have more than one workspace. For example, your coworkers can add you to a workspace by giving you a role, such as Member, Contributor, or Viewer. If you [download a template app](end-user-app-marketing.md) from outside your organization, you get an app and a new workspace. You can also create workspaces if you have a Power BI Pro or Premium Per User license. To open a workspace, select it from the nav pane.
 
-The workspace opens on your canvas and the name of the workspace will be listed on your nav pane. When you open a workspace, you'll see the content it contains. This content includes: dashboards, reports, worksheets, dataflows, and more.  In this example, we've opened the **Supplier Quality Analysis** workspace and see that it contains one report, one dashboard, and one dataset.
+:::image type="content" source="./media/end-user-home/power-bi-workspace-list.png" alt-text="A screenshot of Workspaces in the navigation pane.":::
 
-![Screenshot of Supplier Quality workspace selected.](./media/end-user-home/power-bi-search-workspace.png)
+The workspace opens on your canvas, and the name of the workspace is listed on your nav pane. When you open a workspace, you can view its content. It includes content such as dashboards, reports, worksheets, and dataflows. In the following example, the **Events** workspace is open and it contains several types of content.
 
-## Search all of your content
-Sometimes, the fastest way to find your content is to search for it. For example, perhaps you've discovered that a dashboard you haven't used in a while isn't showing up on your Home canvas. Or, you remember that your colleague shared something with you, but you don't remember what he called it or what type of content he shared, whether it was a dashboard or a report. Or you may have so much content that it's easier to search than it is to scroll or sort. 
- 
-The search field is located in the upper right section of the Home menu bar. You can enter the full or partial name of that dashboard and search for it. Additionally, you can enter your colleague's name and search for content that they've shared with you. The search is scoped to look for matches in all the content that you own or have access to.
+:::image type="content" source="./media/end-user-home/power-bi-search-workspace.png" alt-text="A screenshot showing the Events workspace.":::
 
-![A screenshot of using the search field for Recent.](media/end-user-home/power-bi-search-field.png)
+## Search all your content
+
+Sometimes, the fastest way to find your content is to search for it. For example, if a dashboard you haven't used in a while isn't showing up on your Home canvas. Or, if your colleague shared something with you, but you don't remember what it's named or what type of content they shared. Sometimes, you might have so much content that it's easier to search for it rather than scrolling or sorting.
+
+To search, use the search field, which is in the upper right corner of the Home menu bar. Enter the full or partial name of the content you're looking for. You can also enter your colleague's name to search for content that they've shared with you. The search finds matches in all the content that you own or have access to.
+
+:::image type="content" source="media/end-user-home/power-bi-search-field.png" alt-text="A screenshot showing the search field on the menu bar.":::
 
 ## Considerations and limitations
 
-We've deprecated the ability to hide items on Power BI Home.  However, if you previously hid items, they'll remain hidden.  To manage your hidden items, select **Settings** > **Settings** > **General** > **Hidden items**.
+The ability to hide items on Power BI Home is deprecated. If you previously hid items, they remain hidden. To manage your hidden items, select **Settings** > **Settings** > **General** > **Hidden items**.
 
-:::image type="content" source="media/end-user-home/power-bi-hidden.png" alt-text="Screenshot of the General tab showing Hidden items option selected":::
+:::image type="content" source="media/end-user-home/power-bi-hidden.png" alt-text="A screenshot of the General tab showing the Hidden items option selected.":::
 
 ## Next steps
-Overview of the [Power BI basic concepts](end-user-basic-concepts.md)
 
+Overview of the [Power BI basic concepts](end-user-basic-concepts.md) 

@@ -1,40 +1,40 @@
 ---
 title: Troubleshoot sharing dashboards and reports
-description: How to resolve issues for sharing Power BI dashboards and reports with colleagues in and out of your organization.
+description: Learn how to resolve issues when you share Power BI dashboards and reports with colleagues inside and outside your organization.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: troubleshooting
-ms.date: 07/26/2021
+ms.date: 12/16/2022
 LocalizationGroup: Share your work
 ---
-# Troubleshoot sharing dashboards and reports
+# Troubleshoot issues sharing dashboards and reports
 
-Here are some common issues that may come up when you're sharing a dashboard or report, or when someone else is sharing with you. 
+Here are some common issues that might come up when you share a dashboard or report, or when someone else shares with you. 
 
 ## Dashboard recipients see a lock icon in a tile
 
-The people you share with may see a locked tile in a dashboard, or a "Permission required" message when they try to view a report.
+The people you share with might see a locked tile in a dashboard, or a "Permission required" message when they try to view a report.
 
-![Power BI locked tile](media/service-share-dashboards/power-bi-locked_tile_small.png)
+:::image type="content" source="media/service-share-dashboards/power-bi-locked_tile_small.png" alt-text="Screenshot that shows the Power BI locked tile.":::
 
 If so, you need to grant them permission to the underlying dataset.
 
 1. Go to the **All** or the **Datasets + dataflows** tab in your content list.
 
-1. Select **More options (...)** next to a dataset, then select **Manage permissions**.
+1. Select **More options (...)** next to a dataset, then choose **Manage permissions**.
 
-    ![Select More options, then Manage permissions.](media/service-troubleshoot-sharing/power-bi-sharing-manage-permissions.png)
+    :::image type="content" source="media/service-troubleshoot-sharing/power-bi-sharing-manage-permissions.png" alt-text="Screenshot that shows where to select More options and then choose Manage permissions.":::
 
 1. Select **Add user**.
 
-    ![Select Add user.](media/service-troubleshoot-sharing/power-bi-share-dataset-add-user.png)
+    :::image type="content" source="media/service-troubleshoot-sharing/power-bi-share-dataset-add-user.png" alt-text="Screenshot that shows where to select Add user.":::
 
-1. Enter the full email addresses for individuals, distribution groups, or security groups. You can't share with dynamic distribution lists. Decide if they can **share this dataset** or **build content with the data associated with this dataset**, and if you want to **send an email notification**.
+1. Enter the full email addresses for individuals, distribution groups, or security groups that you want to add. You can't share dashboards or reports with dynamic distribution lists. Decide if the users can **share this dataset** or **build content with the data associated with this dataset**, and if you want to **send an email notification**.
 
-    ![Add email addresses, then Grant access.](media/service-troubleshoot-sharing/power-bi-add-user-dataset.png)
+    :::image type="content" source="media/service-troubleshoot-sharing/power-bi-add-user-dataset.png" alt-text="Screenshot that shows where to add the email addresses and to grant access privileges.":::
 
 1. Select **Grant access**.
 
@@ -42,7 +42,7 @@ If so, you need to grant them permission to the underlying dataset.
 
 To share a dashboard or report, you need permission to reshare the underlying content; that is, any related reports and datasets. If you see a message saying you can't share, ask the report author to give you reshare permission for those reports and datasets.
 
-!["Unable to share" message](media/service-share-dashboards/power-bi-sharing-unable-to-share.png)
+:::image type="content" source="media/service-share-dashboards/power-bi-sharing-unable-to-share.png" alt-text="Screenshot that shows the message that indicates you can't share the underlying content.":::
 
 ## I don't have access to a dashboard or report
 

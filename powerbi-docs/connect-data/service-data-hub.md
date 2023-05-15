@@ -5,6 +5,7 @@ author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
+ms.search.form: Data discovery using the data hub
 ms.topic: conceptual
 ms.date: 08/23/2022
 LocalizationGroup: Share your work

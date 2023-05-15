@@ -27,9 +27,9 @@ highlightedContent:
       itemType: overview
       url: embedded/embedded-analytics-power-bi.md
      # Card
-    - title: Power BI Embedded Generation 2
-      itemType: whats-new
-      url: embedded/power-bi-embedded-generation-2.md 
+    - title: Set up a Power BI Embedded solution
+      itemType: get-started
+      url: embedded/create-an-azure-active-directory-tenant.md 
      # Card
     - title: Develop your own Power BI visual
       itemType: overview
@@ -59,10 +59,10 @@ conceptualContent:
         - url: embedded/embedded-analytics-power-bi.md
           itemType: overview
           text: What is Power BI embedded analytics?
-        - url: embedded/embedded-analytics-power-bi.md
+        - url: embedded/embedded-row-level-security.md
           itemType: overview
-          text: What is Power BI Embedded Generation 2          
-        - url: embedded/power-bi-embedded-generation-2.md
+          text: RLS and security        
+        - url: embedded/embedded-capacity.md
           itemType: concept
           text: Capacity and SKUs
       # footerLink (optional)

@@ -6,8 +6,9 @@ ms.author: maggies
 ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: View parameters for paginated reports
 ms.topic: how-to
-ms.date: 11/28/2022
+ms.date: 02/16/2023
 ---
 
 # View parameters for paginated reports in the Power BI service
@@ -20,15 +21,15 @@ When you view a report that has parameters, the report viewer toolbar displays e
 
 ![Screenshot showing View paginated report with parameters.](media/paginated-reports-view-parameters/power-bi-paginated-view-parameters.png)
   
-1. **Parameters pane** The report viewer toolbar displays a prompt such as "Required" or a default value for each parameter.    
+1. **Parameters pane** Select **Parameters** to show or hide the Parameters pane.
   
-2. **Invoices From / To Date parameters** The two date parameters have default values. To change the date, type a date in the text box or choose a date in the calendar.  
-  
-3. **Location parameter** The Location parameter is set to allow you to select one, many, or all values. 
-  
-4. **View Report**  After you enter or change parameter values, click **View Report** to run the report. 
+1. **Organization parameter** The Organization parameter is set to allow you to select only one value.
 
-5. **Default values** If all parameters have default values, the report runs automatically on first view. Some parameters in this report didn't have default values, so you don't see the report until you select values.  
+1. **Date From / Date To parameters** The two date parameters have default values. To change the date, type a date in the text box, choose a date in the calendar, or select **Go to today**.  
+ 
+1. **View Report**  After you enter or change parameter values, select **View Report** to run the report. 
+
+1. **Default values** If all parameters have default values, the report runs automatically on first view. The parameters in this report have default values, so you see the report with those values.  
 
 ## Next steps
 

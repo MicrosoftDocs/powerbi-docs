@@ -1,14 +1,14 @@
 ---
 title: "Power BI implementation planning"
 description: "An introduction to the Power BI implementation planning series of articles."
-author: peter-myers
-ms.author: v-petermyers
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.custom: video-RWUWA9
 ms.topic: conceptual
-ms.date: 09/15/2022
+ms.date: 04/17/2023
 ---
 
 # Power BI implementation planning
@@ -34,17 +34,27 @@ When you implement Power BI, there are many subject areas to consider. The follo
 - Data management
 - Content distribution and sharing
 - Change management and deployment
-- Security
+- [Security](powerbi-implementation-planning-security-overview.md)
 - [Information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md)
 - Power BI Premium
 - Gateways
 - Integration with other services
-- Auditing and monitoring
+- [Auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md)
 - Adoption tracking
 - Scaling and growing
 
 > [!NOTE]
 > The series is a work in progress. We will gradually release new and updated articles over time.
+
+## Usage scenarios
+
+The series includes usage scenarios that illustrate different ways that creators and consumers can deploy and use Power BI:
+
+- [Content collaboration and delivery](powerbi-implementation-planning-usage-scenario-overview.md#content-collaboration-and-delivery-scenarios)
+- [Self-service BI](powerbi-implementation-planning-usage-scenario-overview.md#self-service-bi-scenarios)
+- [Content management and deployment](powerbi-implementation-planning-usage-scenario-overview.md#content-management-and-deployment-scenarios)
+- [Real-time](powerbi-implementation-planning-usage-scenario-overview.md#real-time-scenarios)
+- [Embedding and hybrid](powerbi-implementation-planning-usage-scenario-overview.md#embedding-and-hybrid-scenarios)
 
 ## Purpose
 

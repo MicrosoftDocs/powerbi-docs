@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/18/2022
+ms.date: 03/22/2023
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -139,19 +139,21 @@ If a release is planned for an environment, we include the quarter of estimated 
 |------|------|------|------|
 |[Azure B2B collaboration between government and commercial cloud](service-admin-azure-ad-b2b.md)<sup>1</sup>|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)
 |[Template apps](../connect-data/service-template-apps-overview.md)<sup>2</sup>|![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)| ![Image of "Available" button.](../media/yes.png)|
-|[Embed in SharePoint Online by using the Power BI web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Not available" button.](../media/no.png)|
+|[Embed in SharePoint Online by using the Power BI web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|
 |[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|
 |[Dataflows - Direct Query](../transform-model/dataflows/dataflows-configure-consume.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|Not planned |
 |[Dataflows - SQL Compute engine optimization](../transform-model/dataflows/dataflows-premium-features.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|Not planned |
 |[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|
 |[Large models](service-premium-large-models.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)| Not planned |
-|[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|CY2022-H2|CY2022-H2|CY2022-H2|
+|[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)| ![Image of "Available" button.](../media/yes.png)<sup>3</sup> | ![Image of "Available" button.](../media/yes.png)<sup>3</sup> | ![Image of "Available" button.](../media/yes.png)<sup>3</sup> |
 |[Bring your own storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![Image of "Not available" button.](../media/no.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|
 |[Autoscale](service-premium-auto-scale.md) |![Image of "Not available" button.](../media/no.png) |![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png) |
 
 <sup>1</sup> Although B2B collaboration is available for GCC, external users must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B collaboration for US government, see [Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 
 <sup>2</sup> Because marketplace apps aren't available to US government cloud instances, template apps are limited to private and organizational apps.
+
+<sup>3</sup> Currently available for Power BI Desktop only. Publishing to the Power BI service is not yet available.
 
 For more information about support for Power BI components in Power Apps, see [Power Apps US Government feature limitations](/power-platform/admin/powerapps-us-government#power-apps-us-government-feature-limitations).
 

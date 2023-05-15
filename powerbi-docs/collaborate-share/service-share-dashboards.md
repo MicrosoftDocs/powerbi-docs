@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 06/23/2022
+ms.date: 03/06/2023
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -17,7 +17,9 @@ LocalizationGroup: Share your work
 
 *Sharing* is the easiest way to give people access to your reports and dashboards in the Power BI service. You can share with people inside or outside your organization.
 
-When you share a report or dashboard, the people you share it with can view it and interact with it, but can't edit it. The recipients see the same data that you see in the reports and dashboards. They also get access to the entire underlying dataset, unless row-level security (RLS) is applied to it.  The coworkers you share with can reshare with their coworkers if you allow them to.
+When you share a report or dashboard, the people you share it with can view it and interact with it, but can't edit it. The recipients see the same data that you see in the reports and dashboards. They also get access to the entire underlying dataset, unless row-level security (RLS) is applied to it.  The coworkers you share with can reshare with their coworkers if you allow them to. 
+
+Some users are unable to share their reports and dashboards with others because they don't have the necessary license or subscription. They can, however, receive reports and dashboards shared by colleagues. To learn more, see [Working with content shared with you](end-user-shared-with-me.md).
 
 ![Share icon for a report.](media/service-share-dashboards/power-bi-share-new-look.png)
 
@@ -224,7 +226,7 @@ Things to keep in mind about sharing reports and dashboards:
 * Everyone can manually [refresh the data](../connect-data/refresh-data.md).
 * You can't share reports that are distributed to you in an app. Ask the app owner to add the person you want to share the report with and republish the app.
 * If you use Microsoft Exchange Online for email, you can enter the email address of a distribution group to share with its members. 
-* You can’t use Microsoft 365 Unified groups for direct sharing. If you don’t want to specify individuals, you can use a security group to share with multiple users.
+* You can’t use Microsoft 365 Unified groups for direct sharing and email subscriptions. If you don’t want to specify individuals, you can use email-enabled distribution groups or security groups to share with multiple users.
 * Coworkers who share your email domain, and coworkers whose domain is different but registered within the same tenant, can share the dashboard with others. For example, say the domains contoso.com and contoso2.com are registered in the same tenant and your email address is konrads@contoso.com. Both ravali@contoso.com and gustav@contoso2.com can share your dashboard, as long as you give them permission to share.
 * If your coworkers already have access to a specific report or dashboard, you can send a direct link by copying the URL when you're on the dashboard or report. For example: `https://app.powerbi.com/reports/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
 
@@ -232,6 +234,7 @@ Things to keep in mind about sharing reports and dashboards:
 
 - [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
 - [Troubleshoot sharing dashboards and reports](service-troubleshoot-sharing.md)
+- [Sharing for users with free licenses](end-user-shared-with-me.md)
 - [Request or grant access to shared dashboards or reports](service-request-access.md)
 - [Share a filtered Power BI report](service-share-reports.md)
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)

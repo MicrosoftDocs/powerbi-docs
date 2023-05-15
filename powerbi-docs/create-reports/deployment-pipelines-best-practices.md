@@ -1,52 +1,53 @@
 ---
 title: Best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool
-description: Learn what are the best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool
-author: KesemSharabi
-ms.author: kesharab
+description: Learn about the best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool.
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.date: 06/14/2021
+ms.date: 05/09/2023
 ms.custom: intro-deployment
+ms.search.form: Best practices for deployment pipelines, Create deployment pipeline, Introduction to Deployment pipelines, Best practices for Deployment pipelines
 ---
 
 # Deployment pipelines best practices
 
-This article provides guidance for BI creators who are managing their content throughout its lifecycle. It focuses on leveraging deployment pipelines as a BI content lifecycle management tool.
+This article provides guidance for business intelligence (BI) creators who are managing their content throughout its lifecycle. The article focuses on the use of deployment pipelines as a BI content lifecycle management tool.
 
 The article is divided into four sections:
 
-* **Content preparation** - Prepare your content for lifecycle management.
+* [**Content preparation**](#content-preparation) - Prepare your content for lifecycle management.
 
-* **Development** - Learn about the best ways of creating content in the deployment pipelines development stage.
+* [**Development**](#development) - Learn about the best ways of creating content in the deployment pipelines development stage.
 
-* **Test** - Understand how to use the deployment pipelines test stage, to test your environment.
+* [**Test**](#test) - Understand how to use the deployment pipelines test stage to test your environment.
 
-* **Production** - Utilize the deployment pipelines production stage when making your content available for consumption.
+* [**Production**](#production) - Utilize the deployment pipelines production stage when making your content available for consumption.
 
 ## Content preparation
 
-Prepare your content for on-going management throughout its lifecycle. Make sure you review the information in this section, before you do any of the following:
+Prepare your content for on-going management throughout its lifecycle. Review the information in this section before you:
 
-* Release your content to production
+* Release content to production.
 
-* Start using a deployment pipeline for a specific workspace
+* Start using a deployment pipeline for a specific workspace.
 
-* Publish your work
+* Publish your work.
 
 ### Treat each workspace as a complete package of analytics
 
-Ideally, a workspace should contain a complete view of one aspect (such as department, business unit, project, or vertical) in your organization. This makes it easier to manage permissions for different users, and allows content releases for the entire workspace to be controlled according to a planned schedule.  
+Ideally, a workspace should contain a complete view of one aspect (such as department, business unit, project, or vertical) in your organization. Treating each workspace as a complete package makes it easier to manage permissions for different users, and allows you to control content releases for the entire workspace according to a planned schedule.
 
 If you're using [centralized datasets](../connect-data/service-datasets-across-workspaces.md) that are used across the organization, we recommend that you create two types of workspaces:
 
-* **Modeling and data workspaces** - These workspaces will contain all the centralized datasets
+* **Modeling and data workspaces** - Workspaces that contain all the centralized datasets
 
-* **Reporting workspaces** - These workspaces will contain all dependent reports and dashboards
+* **Reporting workspaces** - Workspaces that contain all dependent reports and dashboards
 
 ### Plan your permission model
 
-A deployment pipeline is a Power BI object, with its own [permissions](deployment-pipelines-process.md#permissions). In addition, the pipeline contains workspaces, that have their own permissions.
+A deployment pipeline is a Power BI object with its own [permissions](deployment-pipelines-process.md#permissions). In addition, the pipeline contains workspaces that have their own permissions.
 
 To implement a secure and easy workflow, plan who gets access to each part of the pipeline. Some of the considerations to take into account are:
 
@@ -58,7 +59,7 @@ To implement a secure and easy workflow, plan who gets access to each part of th
 
 * Should the test stage reviewers have access to the pipeline?
 
-* Who will oversee deployment to the production stage?
+* Who oversees deployment to the production stage?
 
 * Which workspace are you assigning?
 
@@ -68,20 +69,20 @@ To implement a secure and easy workflow, plan who gets access to each part of th
 
 ### Connect different stages to different databases
 
-A production database should always be stable and available. It's better not to overload it with queries generated by BI creators for their development or test datasets. Build separate databases for development and testing. This helps protect production data, and doesn't overload the development database with the entire volume of production data, which can slow down things.
+A production database should always be stable and available. It's better not to overload it with queries generated by BI creators for their development or test datasets. Build separate databases for development and testing in order to protect production data, and not overload the development database with the entire volume of production data.
 
 >[!NOTE]
->If your organization is using [shared centralized datasets](../connect-data/service-datasets-share.md), you can skip this recommendation.
+>If your organization uses [shared centralized datasets](../connect-data/service-datasets-share.md), you can skip this recommendation.
 
 ### Use parameters in your model
 
-As you can't edit datasets data sources in Power BI service, we recommend using [parameters](/power-query/power-query-query-parameters) to store connection details such as instance names and database names, instead of using a static connection string. This allows you to manage the connections through the Power BI service web portal, or [using APIs](/rest/api/power-bi/datasets/updateparametersingroup), at a later stage.
+As you can't edit datasets data sources in Power BI service, we recommend using [parameters](/power-query/power-query-query-parameters) to store connection details such as instance names and database names. By using parameters instead of static connection strings, you can manage the connections through the Power BI service web portal, or [use APIs](/rest/api/power-bi/datasets/updateparametersingroup), at a later stage.
 
-In deployment pipelines, you can configure parameter rules to set specific values for the development, test, and production stages.
+In deployment pipelines, you can configure parameter rules to set different values for each deployment stage. You can also set rules for paginated reports.
 
-If you don’t use parameters for your connection string, you can define data source rules to specify a connection string for a given dataset. However, in deployment pipelines, this isn't supported for all data sources. To verify that you can configure rules for your data source, see [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
+If you don’t use parameters for your connection string, you can define data source rules to specify a connection string for a given dataset. However, rules aren't supported in deployment pipelines for all data sources. To verify that you can configure rules for your data source, see [deployment rules limitations](deployment-pipelines-create-rules.md#considerations-and-limitations).
 
-Parameters have additional uses, such as making changes to queries, filters, and the text displayed in the report.
+Parameters also have other uses, such as making changes to queries, filters, and the text displayed in the report.
 
 ## Development
 
@@ -89,34 +90,34 @@ This section provides guidance for working with the deployment pipelines develop
 
 ### Use Power BI Desktop to edit your reports and datasets
 
-Consider Power BI Desktop as your local development environment. Power BI Desktop allows you to try, explore, and review updates to your reports and datasets. Once the work is done, you can upload your new version to the development stage. Due to the following reasons, it's recommended to edit PBIX files in the Desktop (and not in Power BI service):
+Consider Power BI Desktop as your local development environment. Power BI Desktop allows you to try, explore, and review updates to your reports and datasets. Once the work is done, you can upload the new version to the development stage. We recommend editing *.pbix* files in the Desktop (and not in Power BI service) for the following reasons:
 
-* It is easier to collaborate with fellow creators on the same PBIX file, if all changes are being done on the same tool.
+* It's easier to collaborate with fellow creators on the same *.pbix* file, if all changes are done with the same tool.
 
- * Making online changes, downloading the PBIX file, and then uploading it again, creates reports and datasets duplication.
+* The process of making online changes, downloading the *.pbix* file, and then uploading it again creates reports and datasets duplication.
 
-* You can use version control to keep your PBIX files up to date.
+* You can use version control to keep your *.pbix* files up to date.
 
-### Version control for PBIX files
+### Version control for *.pbix* files
 
-If you want to manage the version history of your reports and datasets, use Power BI's [auto-sync with OneDrive](../connect-data/refresh-desktop-file-onedrive.md). This will keep your files updated with the latest version. It will also enable you to retrieve older versions if needed.
+If you want to manage the version history of your reports and datasets, use Power BI's [auto-sync with OneDrive](../connect-data/refresh-desktop-file-onedrive.md). Auto-sync keeps your files updated with the latest version and enable you to retrieve older versions if needed.
 
 >[!NOTE]
->Use auto-sync with OneDrive (or any other repository) only with the PBIX files in the deployment pipeline's development stage. Do not sync PBIX files into the deployment pipeline's test and production stages. This will cause problems with deploying content across the pipeline.
+>Synchronize with OneDrive (or any other repository) only with the *.pbix* files in the deployment pipeline's **development** stage. Syncing *.pbix* files into the deployment pipeline's test and production stages causes problems with deploying content across the pipeline.
 
 ### Separate modeling development from report and dashboard development
 
-For enterprise scale deployments, it's recommended to separate dataset development, and the development of reports and dashboards. To promote changes to only a report or a dataset, use the deployment pipelines selective deploy option.  
+For enterprise scale deployments, we recommend that you separate dataset development from the development of reports and dashboards. To promote changes to only a report or a dataset, use the deployment pipelines **selective deploy** option.
 
-This approach should start from Power BI Desktop, by creating a separate PBIX file for datasets and reports. For example, you can create a dataset PBIX file and uploaded it to the development stage. Later, your report authors can create a new PBIX only for the report, and [connect it to the published dataset](../connect-data/service-datasets-discover-across-workspaces.md) using a live connection. This technic allows different creators to separately work on modeling and visualizations, and deploy them to production independently.
+Start by creating a separate *.pbix* file for datasets and reports in Power BI Desktop. For example, create a dataset *.pbix* file and upload it to the development stage. Later, the report authors can create a new *.pbix* only for the report and [connect it to the published dataset](../connect-data/service-datasets-discover-across-workspaces.md) by using a live connection. This technique allows different creators to separately work on modeling and visualizations, and deploy them to production independently.
 
-With [shared datasets](../connect-data/service-datasets-share.md), you can also use this method across workspaces.
+Create [shared datasets](../connect-data/service-datasets-share.md) to use this method across workspaces.
 
 ### Manage your models using XMLA read/write capabilities
 
-Separating modeling development from report and dashboard development, allows you to use advanced capabilities such as source control, merging diff changes, and automated processes. These changes should be done in the development stage, so that finalized content can be deployed to the test and production stages. This allows changes to go through a unified process with other dependent items, before they're deployed to the production stage.
+When you separate modeling development from report and dashboard development, you can also take advantage of advanced capabilities such as source control, merging diff changes, and automated processes. Make these changes in the development stage so that the final content can be deployed to the test and production stages. This way, all changes go through a unified process with other dependent items before they're deployed to the production stage.
 
-You can separate modeling development from visualizations, by managing a [shared dataset](../connect-data/service-datasets-share.md) in an external workspace, using XMLA r/w capabilities. The shared dataset can connect to multiple reports in various workspaces that are managed in multiple pipelines.
+Separate modeling development from visualizations by managing a [shared dataset](../connect-data/service-datasets-share.md) in an external workspace by using XMLA r/w capabilities. The shared dataset can connect to multiple reports in various workspaces that are managed in multiple pipelines.
 
 ## Test
 
@@ -124,7 +125,7 @@ This section provides guidance for working with the deployment pipelines test st
 
 ### Simulate your production environment
 
-Other than verifying that new reports or dashboards look alright, it's also important to see how they perform from an end user's perspective. The deployment pipelines test stage, allows you to simulate a real production environment for testing purposes.
+Other than verifying that new reports or dashboards look acceptable, it's important to see how they perform from an end user's perspective. The deployment pipelines test stage allows you to simulate a real production environment for testing purposes.
 
 Make sure that these three factors are addressed in your test environment:
 
@@ -134,38 +135,38 @@ Make sure that these three factors are addressed in your test environment:
 
 * A similar capacity as in production
 
-When testing, you can use the same capacity as the production stage. However, this can make production unstable during load testing. To avoid unstable production, use another capacity similar in resources to the production capacity, for testing. To avoid extra costs, you can use [Azure A capacities](../developer/embedded/azure-pbie-create-capacity.md) to pay only for the testing time.
+When testing, you can use the same capacity as the production stage. However, using the same capacity can make production unstable during load testing. To avoid unstable production, test using a different capacity similar in resources to the production capacity. To avoid extra costs, use a capacity where you can pay only for the testing time.
 
-![A diagram showing a deployment pipeline with a test environment simulating the production environment.](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
+:::image type="content" source="media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png" alt-text="A diagram showing a deployment pipeline with a test environment simulating the production environment.":::
 
 ### Use deployment rules with a real-life data source
 
-If you're using the test stage to simulate real life data usage, it's recommended to separate the development and test data sources. The development database should be relatively small, and the test database should be as similar as possible to the production database. Use [data source rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) to switch data sources in the test stage.
+If you're using the test stage to simulate real life data usage, it's recommended to separate the development and test data sources. The development database should be relatively small, and the test database should be as similar as possible to the production database. Use [data source rules](deployment-pipelines-create-rules.md) to switch data sources in the test stage.
 
-Controlling the amount of data you import from your data source, is useful if you're using a production data source in the test stage. To do this, add a parameter to your data source query in Power BI Desktop. Use parameter rules to control the amount of imported data, or edit the parameter's value.
-You can also use this approach if you don't want to overload your capacity.
+If you use a production data source in the test stage, it's useful to control the amount of data you import from your data source. You can control the amount of data you import by adding a parameter to your data source query in Power BI Desktop. Use parameter rules to control the amount of imported data or edit the parameter's value.
+You can also use this approach to avoid overloading your capacity.
 
 ### Measure performance
 
-When you simulate a production stage, [check the report load and the interactions](../guidance/monitor-report-performance.md), and find out if the changes you made impact them.
+When you simulate a production stage, [check the report load and interactions](../guidance/monitor-report-performance.md) to see if the changes you made affect them.
 
-You also need to [monitor the load on the capacity](../enterprise/service-admin-premium-monitor-capacity.md), so that you can catch extreme loads before they reach production.  
+You should also [monitor the load on the capacity](../enterprise/service-premium-metrics-app.md) to catch extreme loads before they reach production.
 
 >[!NOTE]
->It's recommended to monitor capacity loads again, after deploying updates to the production stage.
+>It's best to monitor capacity loads again after you deploy updates to the production stage.
 
 ### Check related items
 
-Related times can be affected by changes to datasets or reports. During testing, verify that your changes don't impact or break the performance of existing items, which can be dependent on the updated ones.
+Changes you make to datasets or reports can also affect related times. During testing, verify that your changes don't affect or break the performance of existing items, which can be dependent on the updated ones.
 
-You can easily find the related items using the workspace [lineage view](../collaborate-share/service-data-lineage.md).
+You can easily find the related items by using the workspace [lineage view](../collaborate-share/service-data-lineage.md).
 
 ### Test your app
 
-If you are distributing content to your end users through an app, review the app's new version, before it's in production. As each deployment pipeline stage has its own workspace, you can easily publish and update apps for development and test stages. This will allow you to test the app from an end user's point of view.
+If you're distributing content to your end users through an app, review the app's new version *before* it's in production. Since each deployment pipeline stage has its own workspace, you can easily publish and update apps for development and test stages. Publishing and updating apps allows you to test the app from an end user's point of view.
 
 >[!IMPORTANT]
->The deployment process does not include updating the app content or settings. To apply changes to content or settings, you need to manually update the app in the required pipeline stage.
+>The deployment process doesn't include updating the app content or settings. To apply changes to content or settings, manually update the app in the required pipeline stage.
 
 ## Production
 
@@ -173,25 +174,27 @@ This section provides guidance to the deployment pipelines production stage.
 
 ### Manage who can deploy to production
 
-As deploying to production should be handled carefully, it's good practice to let only specific people manage this sensitive operation. However, you probably want all BI creators for a specific workspace to have access to the pipeline. This can be managed using production [workspace permissions](deployment-pipelines-process.md#permissions).  
+Because deploying to production should be handled carefully, it's good practice to let only specific people manage this sensitive operation. However, you probably want all BI creators for a specific workspace to have access to the pipeline. Use production [workspace permissions](deployment-pipelines-process.md#permissions) to manage access permissions.
 
-To deploy content between stages, users need to have either member or admin permissions for both stages. Make sure that only the people you want deploying to production, will have production workspace permissions. Other users can have production workspace contributor or viewer roles. They will be able to see content from within the pipeline but won't be able to deploy.
+To deploy content between stages, users need either *member* or *admin* permissions for both stages. Make sure that only the people you want to deploy to production have these permissions. Other users can have production workspace *contributor* or *viewer* roles. Users with contributor or viewer roles can see content from within the pipeline but can't deploy.
 
-In addition, you should limit access to the pipeline by only enabling pipeline permissions to users that are part of the content creation process.
+In addition, limit access to the pipeline by only enabling pipeline permissions to users that are part of the content creation process.
 
 ### Set rules to ensure production stage availability
 
-[Deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) are a powerful way to ensure the data in production is always connected and available to users. Once deployment rules are applied, deployments can run while you have the assurance that end users will see the relevant info without disturbance.
+[Deployment rules](deployment-pipelines-create-rules.md) are a powerful way to ensure the data in production is always connected and available to users. With deployment rules applied, deployments can run while you have the assurance that end users can see the relevant info without disturbance.
 
 Make sure that you set production deployment rules for data sources and parameters defined in the dataset.
 
+In case of major dataset change, [refresh the dataset](../connect-data/refresh-data.md).
+
 ### Update the production app
 
-Deployment in a pipeline updates the workspace content, but it doesn't update the associated app automatically. If you're using an app for content distribution, don't forget to update the App after deploying to production, so that end users will immediately be able to use the latest version.  
+Deployment in a pipeline updates the workspace content, but it doesn't update the associated app automatically. If you use an app for content distribution, don't forget to update the app after deploying to production so that end users are immediately able to use the latest version.
 
 ### Quick fixes to content
 
-In case there are bugs in production that require a quick fix, don't be tempted to either upload a new PBIX version directly to the production stage, or make an online change in Power BI service. Deploying backwards to test and development stages isn't possible when there's already content in those stages. Furthermore, deploying a fix without testing it first is bad practice. Therefore, the correct way to treat this problem, is to implement the fix in the development stage, and push it to the rest of the deployment pipeline stages. This allows checking that the fix works, before deploying it to production. Deploying across the pipeline takes only a few minutes.
+Sometimes there are issues in production that require a quick fix. Never upload a new *.pbix* version directly to the production stage or make an online change in Power BI service. You can't deploy backwards to a previous stage when there's already content in those stages. Furthermore, deploying a fix without testing it first is bad practice. Therefore, always implement the fix in the development stage and push it to the rest of the deployment pipeline stages. Deploying to the development stage allows you to check that the fix works before deploying it to production. Deploying across the pipeline takes only a few minutes.
 
 ## Next steps
 

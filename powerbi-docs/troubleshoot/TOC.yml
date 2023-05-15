@@ -7,6 +7,14 @@
     items:
     - name: Active known issues for Power BI
       href: known-issues/power-bi-known-issues.md  
+    - name: Tenant Settings show as keys instead of descriptions
+      href: known-issues/known-issue-407-tenant-settings-show-keys-descriptions.md
+    - name: Upload from SharePoint/OneDrive For Business greyed out
+      href: known-issues/known-issue-398-upload-sharepoint-greyed-out.md
+    - name: Tenant migrations paused
+      href: known-issues/known-issue-308-tenant-migrations-paused.md
+    - name: Paused visuals in Power BI Desktop Performance analyzer don't refresh
+      href: known-issues/known-issue-321-paused-visuals-in-performance-analyzer-dont-refresh.md
     - name: Working in a dataflow shows irrelevant upgrade workspace message
       href: known-issues/known-issue-290-dataflow-show-upgrade-workspace-message.md
     - name: Accessing Power BI app report is denied due to no dataset access
@@ -37,38 +45,42 @@
       href: known-issues/known-issue-178-multi-role-rls-composite-model-fail.md
     - name: Try it button missing on REST API pages
       href: known-issues/known-issue-169-try-it-button-missing.md            
-    - name: Long running, failed or stuck dataflow in Premium Gen2 
-      href: known-issues/known-issue-dataflow-on-premium-gen2.md   
+    - name: Long running, failed or stuck dataflow in Power BI Premium 
+      href: known-issues/known-issue-dataflow-on-premium.md   
     - name: Unable to open protected Desktop files 
       href: known-issues/known-issue-unable-open-protected-desktop-file.md   
   - name: Troubleshoot
     expanded: false
     items:
-    - name: Troubleshoot deployment pipelines
-      href: ../create-reports/deployment-pipelines-troubleshooting.yml  
-    - name: Troubleshoot relationships in Power BI models
-      href: ../guidance/relationships-troubleshoot.md
-    - name: Troubleshoot Power BI REST APIs
-      href: ../developer/embedded/troubleshoot-rest-api.md
-    - name: Troubleshoot report performance in Power BI
-      href: ../guidance/report-performance-troubleshoot.md
-    - name: Troubleshoot the Power BI add-in for PowerPoint
-      href: ../collaborate-share/service-power-bi-powerpoint-add-in-troubleshoot.md    
-    - name: Develop in Power BI
+    - name: Embedded, REST API, PowerShell
       expanded: false
       items:
-      - name: Troubleshoot developing DirectQuery models in Power BI Desktop
-        href: ../connect-data/desktop-directquery-troubleshoot.md
       - name: Troubleshoot your embedded application 
         href: ../developer/embedded/embedded-troubleshoot.md      
       - name: Troubleshoot developing custom visuals 
-        href: ../developer/visuals/power-bi-custom-visuals.md             
+        href: ../developer/visuals/power-bi-custom-visuals.md
+    - name: Consume and view
+      expanded: false
+      items: 
+      - name: Troubleshoot connecting Excel to Power BI data
+        href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
+      - name: Troubleshoot report performance in Power BI
+        href: ../guidance/report-performance-troubleshoot.md
+      - name: Troubleshoot the Power BI add-in for PowerPoint
+        href: ../collaborate-share/service-power-bi-powerpoint-add-in-troubleshoot.md 
+    - name: Capacity management
+      expanded: false
+      items:
+      - name: Troubleshoot XMLA endpoint connectivity
+        href: /power-bi/enterprise/troubleshoot-xmla-endpoint            
     - name: Gateways
       expanded: false
       items:
       - name: Troubleshoot Power BI gateway personal models
         href: ../connect-data/service-admin-troubleshooting-power-bi-personal-gateway.md
-    - name: Refresh
+      - name: Troubleshoot Power BI gateways
+        href: ../connect-data/service-gateway-onprem-tshoot.md
+    - name: Refresh data
       expanded: false
       items:
       - name: Troubleshoot refresh scenarios
@@ -81,24 +93,30 @@
         href: ../connect-data/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md 
       - name: Troubleshoot incremental refresh and real-time data
         href: ../connect-data/incremental-refresh-troubleshoot.md
-    - name: Connect to data
+    - name: Create and author data
       expanded: false
       items:
       - name: Troubleshoot tile errors
         href: ../connect-data/refresh-troubleshooting-tile-errors.md
-      - name: Troubleshoot connecting Excel to Power BI data
-        href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
       - name: Error, we couldn't find any data in your Excel workbook
         href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
       - name: Find where data is stored
         href: ../admin/service-admin-where-is-my-tenant-located.md  
       - name: Troubleshoot importing Access and Excel .xls file in Power BI Desktop
         href: ../connect-data/desktop-access-database-errors.md
-      - name: Troubleshoot XMLA endpoint connectivity
-        href: /power-bi/enterprise/troubleshoot-xmla-endpoint
       - name: Troubleshoot nested values returned as text in the Power BI service
         href: ../connect-data/service-troubleshooting-nested-values.md
-    - name: Signing in
+      - name: Troubleshoot developing DirectQuery models in Power BI Desktop
+        href: ../connect-data/desktop-directquery-troubleshoot.md
+      - name: Troubleshoot opening Power BI Desktop
+        href: ../connect-data/desktop-error-launching-desktop.md
+      - name: Troubleshoot relationships in Power BI models
+        href: ../guidance/relationships-troubleshoot.md
+      - name: Troubleshoot Power BI REST APIs
+        href: ../developer/embedded/troubleshoot-rest-api.md  
+      - name: Troubleshoot deployment pipelines
+        href: ../create-reports/deployment-pipelines-troubleshooting.yml     
+    - name: Account and license
       expanded: false
       items:
       - name: Troubleshoot sign-in issues
@@ -107,15 +125,17 @@
         href: ../connect-data/desktop-troubleshooting-sign-in.md
       - name: Troubleshoot sign in with OData  
         href: ../connect-data/desktop-troubleshoot-odata.md
-      - name: Troubleshoot opening Power BI Desktop
-        href: ../connect-data/desktop-error-launching-desktop.md
-    - name: Sharing and subscribing
+      - name: Find the default region for your organization
+        href: ../admin/service-admin-where-is-my-tenant-located.md
+    - name: Share and collaborate
       expanded: false
       items:
       - name: Troubleshoot sharing dashboards and reports
         href: ../collaborate-share/service-troubleshoot-sharing.md
       - name: Troubleshoot subscriptions
-        href: ../consumer/service-troubleshoot-subscribe.yml 
+        href: ../collaborate-share/service-troubleshoot-subscribe.yml 
+      - name: Troubleshoot sensitivity labels
+        href: ../enterprise/service-security-sensitivity-label-troubleshooting.md
     - name: Visuals
       expanded: false
       items:

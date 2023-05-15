@@ -70,7 +70,7 @@ In this section, you'll create a project for the circle card visual.
     Your visual is now running while being hosted on your computer.
 
     >[!IMPORTANT]
-    >Don't close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter *Ctrl+C* and if prompted to terminate the batch job, enter *Y*, and press *Enter*.
+    >Don't close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter <kbd>Ctrl</kbd>+<kbd>C</kbd> and if prompted to terminate the batch job, enter <kbd>Y</kbd> and then <kbd>Enter</kbd>.
 
 ## View the visual in Power BI service
 
@@ -85,7 +85,7 @@ In this section you'll learn how to turn your visual into a circle, and make it 
 Set up the **visual.ts** file.
 
 >[!TIP]
->To improve readability, it's recommended that you format the document every time you copy code snippets into your project. Right-click anywhere in VS code, and select *Format Document* (Alt+Shift+F).
+>To improve readability, it's recommended that you format the document every time you copy code snippets into your project. Right-click anywhere in VS code, and select *Format Document* (or enter <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>).
 
 1. In VS Code, in the **Explorer pane**, expand the **src** folder, and select the file **visual.ts**.
 
@@ -98,9 +98,6 @@ Set up the **visual.ts** file.
     > Notice the comments at the top of the **visual.ts** file. Permission to use the Power BI visual packages is granted free of charge under the terms of the Massachusetts Institute of Technology (MIT) License. As part of the agreement, you must leave the comments at the top of the file.
 
 3. Import the libraries and modules needed, and define the type selection for the d3 library:
-
-    >[!NOTE]
-    >If you didn't [install the D3 JavaScript library](environment-setup.md#d3-javascript-library) as part of your setup, install it now.
 
    ```typescript
    "use strict";
@@ -115,6 +112,9 @@ Set up the **visual.ts** file.
    import * as d3 from "d3";
    type Selection<T extends d3.BaseType> = d3.Selection<T, any, any, any>;
    ```
+
+    >[!NOTE]
+    >If the D3 JavaScript library wasn't installed as part of your setup, install it now. From PowerShell, run `npm i d3@latest --save`
 
    Notice that among the items you imported are:
     * *IVisualHost* -  A collection of properties and services used to interact with the visual host (Power BI).
@@ -317,7 +317,7 @@ The circle card visual is a simple visual that doesn't create any objects in the
 
 Stop the visual from running and restart it.
 
-1. In the **PowerShell** window where you started the visual, enter Ctrl+C. If prompted to terminate the batch job, enter Y, and press *Enter*.
+1. In the **PowerShell** window where you started the visual, enter <kbd>Ctrl</kbd>+<kbd>C</kbd>. If prompted to terminate the batch job, enter <kbd>Y</kbd> and then <kbd>Enter</kbd>.
 
 2. In **PowerShell**, start the visual again.
 

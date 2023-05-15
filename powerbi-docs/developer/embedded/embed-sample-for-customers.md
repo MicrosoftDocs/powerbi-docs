@@ -7,11 +7,13 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 08/24/2022
+ms.date: 04/17/2023
 
 ---
 
 # Tutorial: Embed Power BI content using a sample *embed for your customers'* application
+
+[!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
 
 **Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed Power BI content such as reports, dashboards and tiles, into your application.
 
@@ -185,7 +187,7 @@ Before you embed your content, make sure you have all the values listed below. S
 |[Workspace ID](#workspace-id)     |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |
 |[Report ID](#report-id)           |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |
 |[Client secret](#client-secret) |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
-|[Tenant ID](#tenant-id)                 |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
+|[Tenant ID](#tenant-id)                 |![Applies to.](../../media/yes.png) | required only for Node JS |
 |[Power BI username](#power-bi-username-and-password)   |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
 |[Power BI password](#power-bi-username-and-password)   |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
 
@@ -458,7 +460,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
     |`pbiUsername`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
     |`pbiPassword`        |N/A         |Your *master user* password, see [Power BI username and password](#power-bi-username-and-password)         |
     |`clientSecret`       |Your Azure AD [client secret](#client-secret)         |N/A         |
-    |`tenantId`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
+    |`tenantId`           |Your Azure AD [tenant ID](#tenant-id)         |Your Azure AD [tenant ID](#tenant-id)         |
 
 10. Run the project by doing the following:
 
@@ -507,6 +509,8 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 After configuring and running the *embed for your customers* sample application, you can start developing your own application.
 
+Try out the [Power BI embedded analytics playground](./power-bi-playground.md) to get started developing and to keep up with all the new Power BI Embedded features and updates.
+
 [!INCLUDE[Move to production](../../includes/embed-tutorial-production.md)]
 
 > [!IMPORTANT]
@@ -514,14 +518,8 @@ After configuring and running the *embed for your customers* sample application,
 
 ## Next steps
 
-> [!div class="nextstepaction"]
->[Move to production](move-to-production.md)
+* [Move to production](move-to-production.md)
+* [Embed for your organization](embed-sample-for-your-organization.md)
+* [Embed paginated reports](embed-paginated-reports.md)
 
->[!div class="nextstepaction"]
->[Embed for your organization](embed-sample-for-your-organization.md)
-
-> [!div class="nextstepaction"]
->[Embed paginated reports](embed-paginated-reports.md)
-
->[!div class="nextstepaction"]
->[Ask the Power BI Community](https://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com/).

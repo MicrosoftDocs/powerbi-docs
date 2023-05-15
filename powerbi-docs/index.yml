@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 08/11/2022
+  ms.date: 04/28/2023
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -31,25 +31,25 @@ highlightedContent:
       itemType: tutorial
       url: fundamentals/service-get-started.md
     # Card
-    - title: Datamarts (preview)
+    - title: Data loss prevention policies
       itemType: concept
-      url: transform-model/datamarts/datamarts-overview.md
+      url: enterprise/service-security-dlp-policies-for-power-bi-overview.md
     # Card
     - title: Export Power BI embedded analytics reports API
       itemType: concept
       url: developer/embedded/export-to.md
     # Card
-    - title: Edit relationships in the Properties pane
-      itemType: how-to-guide
-      url: /power-bi/transform-model/desktop-create-and-manage-relationships#edit-a-relationship
+    - title: What are paginated reports in Power BI?
+      itemType: overview
+      url: paginated-reports/paginated-reports-report-builder-power-bi.md
     # Card
-    - title: "Power BI Premium features: Original, Gen2, and Per User"
+    - title: "Power BI Premium features"
       itemType: concept
       url: enterprise/service-premium-features.md
     # Card
-    - title: Create submetrics that roll up to metrics
+    - title: Edit data models in the Power BI service
       itemType: how-to-guide
-      url: create-reports/service-metrics-submetrics.md
+      url: transform-model/service-edit-data-models.md
     # Card
     - title: Study Power BI start to finish on Microsoft training 
       itemType: learn
@@ -94,9 +94,9 @@ conceptualContent:
     # Card
     - title: Enterprise
       links:
-        - url: enterprise/service-premium-gen2-what-is.md
+        - url: enterprise/service-premium-features.md
           itemType: overview
-          text: What is Power BI Premium Gen2?
+          text: Power BI Premium features
         - url: enterprise/service-admin-power-bi-security.md
           itemType: concept
           text: Security
@@ -129,9 +129,9 @@ conceptualContent:
         - url: developer/embedded/embedded-analytics-power-bi.md
           itemType: overview
           text: What is Power BI embedded analytics?
-        - url: developer/embedded/power-bi-embedded-generation-2.md
+        - url: /power-bi/developer/embedded/embedded-analytics-power-bi
           itemType: overview
-          text: Power BI Embedded Generation 2
+          text: Power BI Embedded
         - url: developer/visuals/develop-power-bi-visuals.md
           itemType: overview
           text: Develop your own Power BI visual
@@ -236,22 +236,6 @@ conceptualContent:
         url: collaborate-share/index.yml
         text: See more
     # Card
-    - title: Power BI Premium Gen2
-      links:
-        - url: enterprise/service-premium-gen2-what-is.md
-          itemType: overview
-          text: What is Power BI Premium Gen2?
-        - url: enterprise/service-premium-concepts.md
-          itemType: concept
-          text: Understanding Power BI Premium Gen2
-        - url: enterprise/service-premium-gen2-metrics-app.md
-          itemType: concept
-          text: Use the Gen2 metrics app
-      # footerLink (optional)
-      footerLink:
-        url: enterprise/index.yml
-        text: See more
-    # Card
     - title: Power BI in the mobile apps
       links:
         - url: consumer/mobile/mobile-apps-for-mobile-devices.md
@@ -308,7 +292,7 @@ conceptualContent:
         - url: connect-data/refresh-troubleshooting-refresh-scenarios.md
           itemType: how-to-guide
           text: Troubleshoot refresh scenarios
-        - url: consumer/service-troubleshoot-subscribe.yml
+        - url: collaborate-share/service-troubleshoot-subscribe.yml
           itemType: how-to-guide
           text: Troubleshoot subscribing to reports and dashboards
       # footerLink (optional)
@@ -340,6 +324,9 @@ additionalContent:
     - title: Related tools # < 60 chars (optional)
       items:
         # Card
+        - title: Power BI Report Builder
+          summary: Power BI Report Builder is a standalone tool for authoring paginated reports that you can publish to the Power BI service. Paginated reports are designed to be printed or shared.
+          url: paginated-reports/report-builder-power-bi.md
         - title: Power BI Report Server
           summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display and manage Power BI reports, paginated reports, and KPIs.
           url: report-server/index.yml

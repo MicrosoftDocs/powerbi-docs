@@ -15,12 +15,20 @@
       href: service-discovery.md
     - name: "Share reports and dashboards"
       href: service-share-dashboards.md
-    - name: "Request access to a report or dashboard"
+    - name: "Find content shared with you"
+      href: end-user-shared-with-me.md
+    - name: "Export a report to PDF"
+      href: end-user-pdf.md
+    - name: "Request or grant access to a report"
       href: service-request-access.md
     - name: "Filter and share a report"
       href: service-share-reports.md
     - name: "Troubleshoot sharing reports or dashboards"
       href: service-troubleshoot-sharing.md
+    - name: "Subscribe to reports and dashboards"
+      href: end-user-subscribe.md
+    - name: "Troubleshoot creating and using subscriptions"  
+      href: service-troubleshoot-subscribe.yml
     - name: "Filter a report using parameters in the URL"
       href: service-url-filters.md
     - name: "Endorse your content"
@@ -29,6 +37,8 @@
       href: service-featured-content.md
     - name: "Embed report in SharePoint Online"
       href: service-embed-report-spo.md
+    - name: "View reports in SharePoint and OneDrive"
+      href: service-sharepoint-viewer.md      
     - name: "Embed report in a secure portal or website"
       href: service-embed-secure.md
     - name: "Publish from Power BI to the web"
@@ -43,9 +53,9 @@
       href: service-create-the-new-workspaces.md
     - name: "Roles in workspaces"
       href: service-roles-new-workspaces.md
-    - name: "Monitor usage in workspaces"
+    - name: "Monitor usage in workspaces (preview)"
       href: service-modern-usage-metrics.md
-    - name: "Monitor usage in My workspace"
+    - name: "Monitor report usage"
       href: service-usage-metrics.md
     - name: "Give access to workspaces"
       href: service-give-access-new-workspaces.md
@@ -93,12 +103,14 @@
     items: 
     - name: "About storytelling with Power BI in PowerPoint"
       href: service-power-bi-powerpoint-add-in-about.md
-    - name: "Add a live report page to PowerPoint"
+    - name: "Add live data to PowerPoint"
       href: service-power-bi-powerpoint-add-in-install.md
-    - name: "View and present live report pages in PowerPoint"
+    - name: "View and present live data in PowerPoint"
       href: service-power-bi-powerpoint-add-in-view-present.md
     - name: "Information for the Power BI admin"
       href: service-power-bi-powerpoint-add-in-admin.md
+    - name: "What's new in the Power BI add-in for PowerPoint"
+      href: service-power-bi-powerpoint-add-in-whats-new.md
     - name: "Troubleshoot the Power BI add-in"
       href: service-power-bi-powerpoint-add-in-troubleshoot.md
     - name: "Export a static Power BI report to PowerPoint"
@@ -107,14 +119,16 @@
     items:         
     - name: "Connect Excel to Power BI datasets"
       href: service-connect-power-bi-datasets-excel.md
-    - name: "Start in Excel"
+    - name: "Power BI datasets in Excel"
       href: service-connect-excel-power-bi-datasets.md
-    - name: "Start in Power BI"
+    - name: "Create Excel workbooks with refreshable data"
       href: service-analyze-in-excel.md
-    - name: "Build refreshable reports in Excel"
+    - name: "Design refreshable reports in Excel"
       href: service-analyze-power-bi-datasets-excel.md
     - name: "Use Power BI featured tables in Excel"
       href: service-excel-featured-tables.md
+    - name: "Monitor usage of Power BI datasets in Excel"
+      href: service-monitor-usage-power-bi-datasets-excel.md
     - name: "Set featured tables"
       href: service-create-excel-featured-tables.md
     - name: "Troubleshoot connecting Excel to Power BI data"

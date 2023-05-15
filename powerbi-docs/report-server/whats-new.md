@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/17/2022
+ms.date: 01/27/2023
 ms.custom: intro-whats-new
 ---
 
@@ -16,6 +16,57 @@ ms.custom: intro-whats-new
 Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+
+## January 2023
+
+This release has updates for the Report Server web portal, modeling, and reporting. See the [Power BI Report Server January 2023](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2023-feature-summary) blog for all the details.
+
+### Report Server
+
+- [Accent color update](#power-bi-report-server-accent-color-update)
+- [.rdl and .pbix file migration tool](#publish-rdl-pbix-files-to-power-bi-from-power-bi-report-server)
+- New .rdl report community: Join the [on-premises .rdl migration user group](https://community.powerbi.com/t5/Reporting-Services-Migration-to/gh-p/ReportingServices-MigrationtoPowerBI).
+
+#### Power BI Report Server accent color update
+
+In November 2022, Power BI announced the upcoming change in color accent to teal. This change was made to ensure our product is more accessible for users with disabilities. The new color improves contrast and increases visibility of the user interface in Power BI, making the experience easier to use and more inclusive. To align the on-premises Power BI Report Server with Power BI, the accent color for Power BI Report Server is now also teal in this latest release.
+
+The Power BI brand color and icon logo remain yellow.
+
+#### Publish .rdl &.pbix files to Power BI from Power BI Report Server
+
+- Power BI Pro licenses now support [paginated reports](../consumer/end-user-paginated-report.md).
+- Power BI Report Server has a [new tool to migrate .rdl reports to the Power BI service](../guidance/publish-reporting-services-power-bi-service.md). The new migration tool is available in the January 2023 release.
+
+You can migrate reports without Report Server downtime or disruption to your report users. You don’t need to remove any data or reports. You can keep your current environment in place until you’re ready to retire it.
+
+For [sovereign clouds](../enterprise/service-govus-overview.md), you can update the Power BI endpoints by changing the site settings in the web portal.
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+See the Power BI Report Server blog post for January 2023 for details about these feature updates.
+
+- [Reverse stack order for stacked column charts](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2023-feature-summary/#post-21998-_Toc121395754)
+- Query performance improvements
+
+  - Indexing [imported string columns on the fly](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2023-feature-summary/#post-21998-_Toc121395756)
+  - Pushing [Top N filter to DirectQuery sources](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2023-feature-summary/#post-21998-_Toc121395757)
+
+- [Unshared and unsynchronized axes](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2023-feature-summary/#post-21998-_Toc121395758) for small multiples charts
+- Slicer type [formatting moved to Format Pane](../visuals/power-bi-visualization-slicers.md#format-slicers).
+
+#### Modeling
+
+- DAX formula bar is now available in Desktop model view.
+- New DAX function: [EVALUATEANDLOG](/dax/evaluateandlog-function-dax)
+- New DAX functions: [TOCSV](/dax/tocsv-function-dax) and [TOJSON](/dax/tojson-function-dax)
+- Making it easier to do comparison calculations:
+
+  - [INDEX](/dax/index-function-dax)
+  - [OFFSET](/dax/offset-function-dax)
+  - [Window](/dax/window-function-dax)
 
 ## September 2022
 
@@ -171,7 +222,7 @@ Here are highlights of the new features in Power BI Desktop for Power BI Report 
 - [Invert axis and continuous axis sorting](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#invert-the-y-axis).
 - [CALCULATE filters](/dax/calculate-function-dax) are easier to use.
 - Performance improvements to [IF](/dax/if-function-dax) and [SWITCH](/dax/switch-function-dax) functions.
-- [Text/CSV by example](../connect-data/desktop-connect-csv.md).
+- [Text/CSV by example](/power-query/connectors/text-csv).
 
 **Other new and updated features**
 
@@ -545,7 +596,7 @@ Find details and examples in the [Using .pbids files to get data](../connect-dat
 
 We have made a performance improvement in the Analysis Services engine to speed up modeling operations such as adding measures or calculated columns and creating relationships. The amount of improvement you see depends on the model, but we have seen 20x performance improvement for some customers for actions like opening a file and adding a measure.
 
-That's all for the January 2020 release of Power BI Report Server. Continue sending feedback, and don't forget to [vote for features that you'd like to see in the Power BI](https://ideas.powerbi.com/forums/265200-power-bi).
+That's all for the January 2020 release of Power BI Report Server. Continue sending feedback, and don't forget to [vote for features that you'd like to see in the Power BI](https://ideas.powerbi.com/ideas/).
 
 ### Power BI Report Server
 

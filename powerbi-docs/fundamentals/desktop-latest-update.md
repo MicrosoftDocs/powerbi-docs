@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/16/2022
+ms.date: 04/12/2023
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## November 2022 Update (2.111.265.0)
+## April 2023 Update (2.116.404.0)
 
-November's updates feel like a family reunion, and we're thankful and grateful for the heaping-tall servings of updates, features, and new capabilities. Please pass the data to this end of the table. 
+This April we have new features and capabilities raining down on our Power BI offering, filling us with the hope of bright colors and new growth across our veritable garden of analytics. 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -42,54 +42,54 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 The following updates are new to Power BI Desktop this month:
 
 
-### Reporting
-* Unshared and unsynchronized axes for small multiples charts  [[video]](https://youtu.be/q-ZUfL2sEek?t=39)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515800) 
-* Controlling and customizing labels on Azure Maps  [[video]](https://youtu.be/q-ZUfL2sEek?t=259)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-azure-maps-labels)  
-* Create dynamic slicers using field parameters (Preview) [[video]](https://youtu.be/q-ZUfL2sEek?t=300)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515801)   
-* Composite models over Power BI datasets and Analysis Services (Preview) [[video]](https://youtu.be/q-ZUfL2sEek?t=521)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-composite-models)   
 
+### Reporting
+* Dynamic format strings for measures  [[video]](https://youtu.be/rQfUo3PN0zw?t=29)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc433340751)
+* On-object interaction - updates (preview)   [[video]](https://youtu.be/rQfUo3PN0zw?t=254)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc126732879)
+* New tooltip auto-scale (preview)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc1599845071) [[article]](desktop-format-pane.md)
+
+### Analytics
+* Update to Quick measures suggestions  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc431520696)   [[article]](../transform-model/quick-measure-suggestions.md)
 
 ### Modeling
-* Streamline your report authoring experience with Optimize ribbon (Preview)  [[video]](https://youtu.be/q-ZUfL2sEek?t=551)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515804) [[article]](../create-reports/desktop-optimize-ribbon.md)
-* New DAX function: EVALUTATEANDLOG  [[video]](https://youtu.be/q-ZUfL2sEek?t=668)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515805)  [[article]](/dax/evaluateandlog-function-dax)
-* New DAX functions: TOCSV and TOJSON  [[video]](https://youtu.be/q-ZUfL2sEek?t=824)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515805) [[article 1]](/dax/tocsv-function-dax) [[article 2]](/dax/tojson-function-dax)
+* Composite models on Power BI datasets and Analysis Services (generally available) [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc982443258)  [[release announcement]](https://powerbi.microsoft.com/blog/Announcing-general-availability-for-composite-models-on-Power-BI-Datasets-and-Analysis-Services-models) [[article]](../transform-model/desktop-composite-models.md)
+* Updates to ORDERBY function [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc439693147)  [[article]](/dax/orderby-function-dax)
+* New DAX functions: RANK and ROWNUMBER [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc826225249)  [[article]](/dax/rank-function-dax) [[article]](/dax/rownumber-function-dax)
 
 
 ### Data connectivity
-* Many updated data connectors [[video]](https://youtu.be/q-ZUfL2sEek?t=847)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515806)  
+* Many updated data connectors  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc1477267150)  
 
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
 
 ### Visuals
-* New visuals in AppSource [[video]](https://youtu.be/q-ZUfL2sEek?t=1468)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515822)
+* Many new and updated visuals    [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-21693-_Toc465015701)
+
 
 
 # [Power BI service](#tab/powerbi-service)
 
 The following updates are new to the Power BI service this month:
 
-* New way to upload Power BI and Excel files  [[video]](https://youtu.be/q-ZUfL2sEek?t=870)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515813) [[article]](../connect-data/service-excel-workbook-files.md#streamlined-upload-to-power-bi)
-* Subscribe to a report with filters applied  [[video]](https://youtu.be/q-ZUfL2sEek?t=972)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515814) 
-* Linked metrics  [[video]](https://youtu.be/q-ZUfL2sEek?t=1125)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515815)
-* Information protection update  [[video]](https://youtu.be/q-ZUfL2sEek?t=1350)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515816)
+* New features to Deployment Pipeline [[video]](https://youtu.be/rQfUo3PN0zw?t=585)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-21693-_Toc1745634143)   [[article]](../create-reports/deployment-pipelines-get-started.md)
+* Storytelling in PowerPoint - new style option   [[video]](https://youtu.be/rQfUo3PN0zw?t=368)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-21693-_Toc783019515)
+* Visualizing views in Power Apps with Power BI quick report enabled by default    [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-21693-_Toc1140694008)  [[article]](/power-apps/user/visualize-in-power-bi)
+
 
 ---
 
 
-### Others
-* Power BI Desktop infrastructure update (WebView2)    [[video]](https://youtu.be/q-ZUfL2sEek?t=1513)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515829)
-* New Power BI color accent    [[video]](https://youtu.be/q-ZUfL2sEek?t=12)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515798)  
 
 
-For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/).
+For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/).
 
 
 ### Power BI monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post.
 
-> [!VIDEO https://www.youtube.com/embed/q-ZUfL2sEek]
+> [!VIDEO https://www.youtube.com/embed/rQfUo3PN0zw]
 
 > [!NOTE]
 > The video might use earlier versions of Power BI Desktop or the Power BI service.

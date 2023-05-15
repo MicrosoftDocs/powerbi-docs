@@ -1,13 +1,13 @@
 ---
 title: Power BI video series
-description: Find video demos for how to work with Power BI. View and link directly to the latest videos. Find training and product updates.
+description: Find video demos for how to work with Power BI, view and link directly to the latest videos, and find training and product updates.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/28/2022
+ms.date: 12/20/2022
 ms.custom: video-9rh_qSK-UKQ, video-RxsT9TtOYok, video-abTASA8iOjQ
 ---
 # Power BI videos
@@ -58,7 +58,7 @@ Related Power BI videos are collected into playlists to help you easily find sub
 
 ## Microsoft Power BI Community videos and webinars
 
-[The Community gallery](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks/) curates videos from hosted events and from our community members. Explore videos organized by date, top kudo-ed, featured, and live events. 
+[The Community gallery](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks/) curates videos from hosted events and from our community members. Explore videos organized by date, top kudo-ed, featured, and live events.
 
 ## Next steps
 
