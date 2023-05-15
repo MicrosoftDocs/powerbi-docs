@@ -119,7 +119,7 @@ Learn more about how users can [view Power BI files in their browser](../collabo
 -	Opening, saving, and sharing to OneDrive and SharePoint features aren't available in sovereign cloud tenants.   
 -	When you share a link to a file with another person, the recipient has to sign-in before they can view the file.
 
-## File save load time
+### File save load time
 
 Saving a Power BI Desktop file to a OneDrive or SharePoint location often takes some time depending on the file size. When saving the file, you might be invited to upload the file later. Selecting **Upload Later** allows you to continue working on the file and incorporating changes while the actual uploading to OneDrive or SharePoint happens after you click close in Power BI Desktop. The app finishes closing once the upload to your designated OneDrive or SharePoint location is complete. 
 
@@ -129,25 +129,25 @@ You can check the last upload status in the title bar of the Power BI report and
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-title-upload.png" alt-text="Screenshot of title bar in Power BI Desktop.":::
 
-## Title bar
+### Title bar
 
 When you click on the title bar of a report in Power BI Desktop, you're able to save the file to a new location or upload the report. You're unable to rename the file or change the sensitivity label. 
 
-## Version history
+### Version history
 
 You can view the version history of your Power BI file online through your OneDrive or SharePoint document library. Select the three dots to the right of your file and click **Version history**. Version history can’t be viewed directly from Power BI Desktop. 
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-version-history.png" alt-text="Screenshot of version history in OneDrive and SharePoint.":::
 
-## Save-as file naming limitations
+### Save-as file naming limitations
 
 When you click **Save as** in the file menu, the file name box is empty regardless of if you're saving the file for the first time, or if the file is already saved in another location. If you type the file name while **Recent** is selected, and then click **OneDrive** you have to retype the file name again. 
 
-## Power BI OneDrive and SharePoint sharing link behavior by user licensing 
+### Power BI OneDrive and SharePoint sharing link behavior by user licensing 
 
 The following use cases apply when sharing a link to a Power BI file saved in OneDrive or SharePoint depending on the license status of each user. All of these scenarios assume that the user has a Microsoft 365 license. 
 
-## Audit logs
+### Audit logs
 
 When you save and share Power BI files in OneDrive and SharePoint document libraries, Power BI admins can access activity through [unified audit logs](../admin/service-admin-auditing.md#use-the-audit-log). 
 
@@ -157,7 +157,7 @@ OneDrive and SharePoint Power BI file activity in the audit logs appear with pro
 
 Learn more about the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference). 
 
-## Sensitivity labels and encryption
+### Sensitivity labels and encryption
 
 Sharing through Power BI Desktop uses standard OneDrive and SharePoint sharing UI and services. Default Power BI configured Microsoft Information Protection labels are applied to the file before it's saved. Your organizational policies for sharing through OneDrive and SharePoint govern to whom and how the Power BI item can be shared.
 
@@ -167,13 +167,13 @@ If the file is unlabeled, then the default Power BI tenant policy applies when v
 
 If a Power BI file has encryption, you can only open the file if you have [full control and/or export usage rights](/microsoft-365/compliance/encryption-sensitivity-labels). Only users who can decrypt the file can view it.
 
-## Using different accounts between Power BI Desktop and local OneDrive     
+### Using different accounts between Power BI Desktop and local OneDrive     
 
 If you're signed-in to an account in Power BI Desktop that is *different* than the account you're signed-in to on your local OneDrive, you can still browse and open local files. These files are open as non-OneDrive files. To save the files back to the same OneDrive or SharePoint location you opened them from, the account you're sign-in to in Power BI Desktop must match the account you're sign-in to on your local OneDrive. 
 
 If the account you're sign-in to in Power BI Desktop and your local OneDrive or SharePoint aren't the same, you're prompted to save the file to OneDrive or SharePoint before you can share it, even though you may have opened the file from a OneDrive or SharePoint location. To avoid being prompted to save your file in OneDrive or SharePoint every time you're sharing a link, sign-in to Power BI Desktop with the same account you're signed-in to on your local OneDrive or SharePoint. 
 
-## Syncing files to OneDrive and SharePoint through the file system
+### Syncing files to OneDrive and SharePoint through the file system
 
 When you drag a Power BI file to a OneDrive or SharePoint location in the file system, the file is uploaded to the new location in OneDrive or SharePoint. If you try to open the file before the file has completed syncing to OneDrive or SharePoint, the file acts as a local file. Therefore, when you try to share a link to the file, you're prompted to save the file to OneDrive or SharePoint even though the file is syncing there. When you're prompted to save a file that is already saved, wait until the file has finished syncing and try again. Once the file has finished syncing to the new OneDrive or SharePoint location, you're able to share a link to the file without being prompted to save again.   
 
