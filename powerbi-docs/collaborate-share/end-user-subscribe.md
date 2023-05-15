@@ -108,7 +108,7 @@ To create a subscription that includes others, in addition to the [requirements 
 
 - A Contributor, Member, or Admin role in that workspace.  You’ll know you have the Contributor, Member or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 
-- To be part of the organization. [B2B guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others only themselves. For more information, read [B2B guest users can set up and be subscribed to email subscriptions](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
+- To be part of the organization. [B2B guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others, only themselves. For more information, read [B2B guest users can set up and be subscribed to email subscriptions](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
 
 - If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can still subscribe others. However, they must also have a Power BI Pro or Premium Per User (PPU) license. 
 
@@ -134,7 +134,7 @@ There are different ways of creating a Microsoft 365 group. For example, you can
 
 ### Subscribe external users 
 
-You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity. B2B Guest users can't add subscriptions for external users. 
+You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity. 
 
 - If you subscribe external users to a report or dashboard, they'll receive a share notification immediately after you select  **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because external users require an invitation link to view the report or dashboard. 
 
@@ -198,7 +198,7 @@ If you have an existing subscription to a paginated report, and you want to upda
 
 
 ## Manage subscriptions
-Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the users assigned the *Admin* role. Admins in the workspace can view, edit and take over all subscriptions inside the workspace. The Power BI tenant admin can view logs, turn certain subscription features on and off.
+Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the users assigned the *Admin* role. Admins in the workspace can view, edit and take over any subscriptions inside the workspace. The Power BI tenant admin can view logs, turn certain subscription features on and off.
 
 # [Creator](#tab/creator)
 
@@ -256,13 +256,13 @@ Admins can also take over ownership of subscriptions in workspaces they manage. 
 
 Power BI administrators have levers of control over subscriptions. 
 
-- [Users can set up email subscriptions](../admin/service-admin-portal-export-sharing.md) for all members of the organization. 
+- [Users can set up email subscriptions](../admin/service-admin-portal-export-sharing.md) for all members of the organization.
+
+- [B2B guest users can set up and be subscribed to email subscriptions](../admin/service-admin-portal-export-sharing.md#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions) to allow B2B guest users to create and subscribe to their own email subscriptions.
 
 - Enable all members of the organization, or specific users, to send email subscriptions to external users. See [Users can send email subscriptions to external users](../admin/service-admin-portal-export-sharing.md). 
 
 - [Enable specific attachment formats](../admin/service-admin-portal-export-sharing.md) for paginated report subscriptions (PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML).
-
-- [B2B guest users can set up and be subscribed to email subscriptions](../admin/service-admin-portal-export-sharing.md#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions) to allow B2B guest users to create and subscribe to their own email subscriptions.
 
 ### View subscription audit and activity logs 
 
