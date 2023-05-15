@@ -123,13 +123,11 @@ The preview provides a limited experience with options to download the .pbix fil
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-preview.png" alt-text="Screenshot of preview view of Power BI file in OneDrive and SharePoint." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-preview.png":::
 
-## OneDrive and SharePoint capabilities
-
-### Dataset mode
+## Dataset mode
 
 To view a Power BI file in OneDrive or SharePoint, the data must be in **import** mode. Files with other modes prompt you to download the file to open locally in Power BI Desktop.
 
-### Prerequisites to viewing report in OneDrive and SharePoint
+## Prerequisites to viewing report in OneDrive and SharePoint
 
 To view a report in OneDrive for Business or SharePoint Online, you must:
 
@@ -137,7 +135,7 @@ To view a report in OneDrive for Business or SharePoint Online, you must:
 -	Have at least read access to the file.
 -	Have a Power BI Pro, Power BI Premium Per User, or E5 license.
 
-### Considerations and limitations
+## Considerations and limitations
 
 -	Free users can't view reports in OneDrive and SharePoint directly in the browser.
 -	These capabilities don't work with personal OneDrive accounts.
@@ -149,7 +147,7 @@ To view a report in OneDrive for Business or SharePoint Online, you must:
 -	B2B users and anonymous users can't view Power BI files in the browser. They're directed to download the file to their device and view it in Power BI Desktop.
 -	If the capability is turned off for your organization, the OneDrive and SharePoint file isn't copied into the Power BI service.
 
-### Audit logs
+## Audit logs
 
 When you save and view Power BI files in OneDrive and SharePoint document libraries, Power BI admins can access activity through audit logs. Some activities for these files are logged through [unified audit logs](../admin/service-admin-auditing.md#use-the-audit-log), while others are logged through the [Power BI activity log](../admin/service-admin-auditing.md#use-the-activity-log).
 
@@ -172,7 +170,7 @@ OneDrive and SharePoint Power BI file activity in the audit logs appear with [pr
 
 Learn more about the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference). 
 
-### Sensitivity labels and encryption
+## Sensitivity labels and encryption
 
 [Sensitivity labels](/microsoft-365/compliance/encryption-sensitivity-labels) are respected for Power BI files stored and shared through OneDrive and SharePoint. A union of OneDrive and SharePoint permissions and Microsoft Information Protection label permissions are applied to the file. The OneDrive and SharePoint permission is applied first, followed by the sensitivity label. The strictest permission is respected.
 
@@ -180,11 +178,11 @@ If the file is unlabeled, then the default Power BI tenant policy applies when v
 
 If a Power BI file has encryption, you can only open the file if you have [full control and/or export usage rights](/microsoft-365/compliance/encryption-sensitivity-labels#power-bi-desktop). Only users who can decrypt the file can view it. 
 
-### Sharing settings
+## Sharing settings
 
 The new capabilities respect the OneDrive and SharePoint organizational settings for sharing. 
 
-### Creation of system workspaces
+## Creation of system workspaces
 
 The first time anyone opens a Power BI file in a browser through a OneDrive or SharePoint document library, a system workspace is created in the Power BI service and the report selected is published behind the scenes. This process results in a longer initial loading time. After that initial report viewing, loading time decreases significantly. The creation of the workspace to view a file stored in OneDrive or SharePoint has no implications on your Power BI Premium capacity storage. 
 
