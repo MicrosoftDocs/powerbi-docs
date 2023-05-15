@@ -59,7 +59,7 @@ To turn on the setting:
 1. Still in the **Export and sharing settings** section of the **Tenant Settings**, find the setting called **Allow Azure Active Directory guest users to edit and manage content in the organization**.
 1. Turn this setting on if you want to allow guests to manage and edit Power BI content. If the setting is off, an external user can’t manage and edit content in Power BI.
 1. Under **Apply to**, select the scope of users that the setting will affect:
-    1. Choose **The entire organization** or **Specific security groups**. In addition, you can also choose one of the options check the box next to **Except specific security groups** and then add the security groups you wish to exclude.
+    1. Choose **The entire organization** or **Specific security groups**. In addition to the previous options, you can check the box next to **Except specific security groups** and then add the security groups you wish to exclude.
 1. Select **Apply** to save your changes.
 
 ## Show Azure Active Directory guests in lists of suggested people

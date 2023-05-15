@@ -103,7 +103,7 @@ The following table lists the licensing requirements for B2B access to Power BI.
 |Workspace Type|User Type|Free User|Pro User|PPU User|
 |-----|-----|------|------|------|
 |All Workspaces|Free User|Not Supported|Not Supported|Not Supported| 
-|Pro Worskpace|Pro/PPU/PPU Trial|Not Supported|Supported|Supported|  
+|Pro Workspace|Pro/PPU/PPU Trial|Not Supported|Supported|Supported|  
 |PPU Workspace|PPU User|Not Supported|Not Supported|Supported|  
 |My Workspace|All Users|Not Supported|Not Supported|Not Supported|  
 |PPU Workspace|PPU Trial User|Not Supported|Not Supported|Supported|  

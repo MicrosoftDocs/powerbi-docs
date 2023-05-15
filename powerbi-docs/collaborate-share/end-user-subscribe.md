@@ -26,7 +26,7 @@ It's never been easier to stay up-to-date on your most important dashboards and 
 
 
 ## Requirements
-The requirements apply to users in the organization and to [Azure Active Directory (AD) Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you'll need permissions to access the particular report or dashboard and **either**:
+The requirements apply to users in the organization and to [Azure Active Directory (Azure AD) Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you'll need permissions to access the particular report or dashboard and **either**:
 
 - A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md), or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md) 
@@ -230,7 +230,7 @@ Alternately, another way to see all of your subscriptions across all workspaces 
 
 # [Administrator](#tab/admin)
 
-## Workspace administrators
+### Workspace administrators
 Users who have been assigned the [Admin role](../collaborate-share/service-roles-new-workspaces.md) in a workspace can view all subscriptions that have been created for Power BI reports, dashboards or paginated reports in that workspace, regardless of owner. Information on the subscription name, owner, report or dashboard name, and content type is provided. Workspace admins can also edit and take over subscriptions owned by others.
 
 > [!NOTE]
@@ -250,9 +250,9 @@ Admins can also take over ownership of subscriptions in workspaces they manage. 
 
 :::image type="content" source="media/end-user-subscribe/power-bi-admin-take-over.png" alt-text="Screenshot showing a list of subscriptions with the take over icon selected.":::
 
-## Power BI tenant administrators
+### Power BI tenant administrators
 
-### Subscription controls and tracking for administrators 
+#### Subscription controls and tracking for administrators 
 
 Power BI administrators have levers of control over subscriptions. 
 
@@ -264,7 +264,7 @@ Power BI administrators have levers of control over subscriptions.
 
 - [B2B guest users can set up and be subscribed to email subscriptions](../admin/service-admin-portal-export-sharing.md#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions) to allow B2B guest users to create and subscribe to their own email subscriptions.
 
-### View subscription audit and activity logs 
+#### View subscription audit and activity logs 
 
 Power BI administrators can use the Power BI audit and activity logs to view details about subscriptions. These details include: 
 
@@ -277,7 +277,6 @@ Power BI administrators can use the Power BI audit and activity logs to view det
 - Modified date 
 
 See [Operations available in the audit and activity logs](../admin/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs) in "Track user activities in Power BI" for details. 
-
 
 ---
 ## Considerations and limitations 
