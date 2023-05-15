@@ -16,7 +16,7 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Subscribe yourself and others to Power BI reports, dashboards, and paginated reports. You'll receive an email on a schedule you set. The email will contain a snapshot and link to the report or dashboard. If you're a workspace administrator, learn how to manage subscriptions in your workspace, including how to take over subscriptions that are owned by others.
+Subscribe yourself and others to Power BI reports, dashboards, and paginated reports. You receive an email on a schedule you set. The email contains a snapshot and link to the report or dashboard. If you're a workspace administrator, learn how to manage subscriptions in your workspace, including how to take over subscriptions owned by others.
 
 ## Subscribe to a report or dashboard in the Power BI service 
 
@@ -26,7 +26,7 @@ It's never been easier to stay up-to-date on your most important dashboards and 
 
 
 ## Requirements
-The requirements apply to users in the organization and to [Azure Active Directory (Azure AD) Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you'll need permissions to access the particular report or dashboard and **either**:
+The requirements apply to users in the organization and to [Azure Active Directory (Azure AD) Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you need permissions to access the particular report or dashboard and **either**:
 
 - A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md), or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md) 
@@ -43,13 +43,13 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 
 1. Open the dashboard or report, and from the top menu bar, select **Subscribe** ![Select the Subscribe icon.](./media/end-user-subscribe/power-bi-icon-envelope.png).  
 
-2. Select **Add new subscription** and give your subscription a name.  By default, your subscription will be given the same name as your report page or dashboard. Optionally, change the name of the subscription to something more meaningful.
+2. Select **Add new subscription** and give your subscription a name.  By default, your subscription is given the same name as your report page or dashboard. Optionally, change the name of the subscription to something more meaningful.
 
    :::image type="content" source="./media/end-user-subscribe/power-bi-changes.png" alt-text="Subscribe window.":::
 
 3.  Use the yellow slider to turn the subscription on and off.  Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
-4. Edit or add recipients by email address, ensuring that you've at least one. Optionally, add a subject and email message details. 
+4. Edit or add recipients by email address, ensuring that you have at least one. Optionally, add a subject and email message details. 
 
     > [!NOTE]
     > B2B Guest users can only subscribe themselves. 
@@ -59,7 +59,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     > [!TIP]
     > By default, a report subscription inherits the name of the active report page. Consider changing the subscription name if you select a different report page. 
  
-6. When creating a subscription for a report, you'll choose whether to **Include my changes**. When **Include my changes** is unchecked, Power BI ignores all changes you may have made to the report, and subscribes you to the report as published by the author. When **Include my changes** is checked, Power BI subscribes you to the report including all changes you've made to the report.  Changes include:  
+6. When creating a subscription for a report, you choose whether to **Include my changes**. When **Include my changes** is unchecked, Power BI ignores all changes you may have made to the report, and subscribes you to the report as published by the author. When **Include my changes** is checked, Power BI subscribes you to the report including all changes you've made to the report.  Changes include:  
 
     - filters (filter pane)
     - slicers
@@ -83,7 +83,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     - If you choose Daily, Hourly, Monthly, or Weekly, you can also choose a Scheduled Time for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past. Select morning (AM) or afternoon/evening (PM). 
     - You can also specify the time zone. If you choose Hourly, select the Scheduled Time you want the subscription to start, and it will run every hour after the Scheduled Time.  
 
-8. Select a **Start date** and optionally, an **End date** for your subscription. By default, the start date will be the date you created the subscription and the end date will be one year later. You can change it to any date in the future at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You'll receive notification(s) before the scheduled end date to ask if you'd like to extend it.
+8. Select a **Start date** and optionally, an **End date** for your subscription. By default, the start date is the date you created the subscription and the end date will be one year later. You can change it to any date in the future at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You receive notification(s) before the scheduled end date to ask if you'd like to extend it.
  
 
 9. Include additional information in the email. Select one or more of these checkboxes.
@@ -104,9 +104,9 @@ You'll now receive an email and snapshot of the report or dashboard on the sched
    
 ## Subscribe others 
 
-To create a subscription that includes others, in addition to the [requirements necessary to create your own subscriptions](#requirements), you'll also need:
+To create a subscription that includes others, in addition to the [requirements necessary to create your own subscriptions](#requirements), you also need:
 
-- A Contributor, Member, or Admin role in that workspace.  You’ll know you have the Contributor, Member or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
+- A Contributor, Member, or Admin role in that workspace.  You know that you have the Contributor, Member or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 
 - To be part of the organization. [B2B guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others only themselves. For more information, read [B2B guest users can set up and be subscribed to email subscriptions](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
 
@@ -125,7 +125,7 @@ When creating a subscription, you can add other email addresses in the same doma
 |[Security groups](/microsoft-365/admin/email/create-edit-or-delete-a-security-group)     |    No     |
 |[Mail-enabled security groups](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide#microsoft-365-groups&preserve-view=true)    |     Yes    |
 
-There are different ways of creating a Microsoft 365 group. For example, you can create a group in Outlook, a distribution group in Teams, or a mail-enabled security group. The Microsoft 365 distribution group for Teams does not work for mail enablement, so can't be used for direct sharing and email subscriptions.
+There are different ways of creating a Microsoft 365 group. For example, you can create a group in Outlook, a distribution group in Teams, or a mail-enabled security group. The Microsoft 365 distribution group for Teams doesn't work for mail enablement, so can't be used for direct sharing and email subscriptions.
 
 > [!NOTE]
 > Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and don't support subscribing group aliases.  
@@ -146,6 +146,7 @@ You can subscribe external users to a report or dashboard if your report or dash
 ### B2B guest users can set up and be subscribed to email subscriptions
 
 B2B guest users can create their own content subscription to which they have access and users in the organization can subscribe them to emails. B2B users must first be added by member of the organization to set up and subscribe to email content. For more information about B2B guest users and how to add them to your organization, read [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
+
 
 In addition to B2B guest users meeting the requirements to subscribe themselves, the Power BI tenant admin must turn on a setting to allow B2B guest users to create email subscriptions. For more information on how to turn on this setting, read [Export and sharing tenant settings](../admin/service-admin-portal-export-sharing.md#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
 
@@ -168,7 +169,7 @@ In general, the process for subscribing to paginated reports is the same as [sub
 
 ### Paginated reports parameters 
 
-Paginated reports allow you to specify the view of the report people will receive in the subscription by setting the parameters in the subscription pane.  
+Paginated reports allow you to specify the view of the report people receive in the subscription by setting the parameters in the subscription pane.  
 
 - Subscriptions can be sent with either the currently selected or default parameters for your report. You may set different parameter values for each subscription you create for your report. 
 
@@ -290,7 +291,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 - On Daylight savings day, you won't receive your subscription emails but will receive two emails per subscription the day after. 
 
 **Row-level security (RLS)**
-- For Power BI reports, dashboards, or paginated reports that use a dataset with row-level security (RLS), use caution when creating subscriptions for yourself and others. Power BI will warn you that the data contains RLS, but customers often scroll past the warning message. 
+- For Power BI reports, dashboards, or paginated reports that use a dataset with row-level security (RLS), use caution when creating subscriptions for yourself and others. Power BI warns you that the data contains RLS, but customers often scroll past the warning message. 
 
   The static image sent in the subscription email will display data ***based on the owner of the subscription***. For this reason, when creating subscriptions, be careful to ensure that confidential information isn't included in the static image. Other than that static image, the report or dashboard itself will open (or not) and display data based on the user's permissions.  
 
@@ -307,7 +308,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 
 * Dataset refresh operations using an XMLA endpoint.
 
-* The Power BI visuals listed below aren't supported.  When you subscribe to a report containing these visuals, they will display an error symbol. 
+* The following Power BI visuals listed aren't supported. When you subscribe to a report containing these visuals, they'll display an error symbol. 
     - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
     - [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
     - [R visuals](../visuals/service-r-visuals.md)
