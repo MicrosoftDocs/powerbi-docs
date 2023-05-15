@@ -7,6 +7,10 @@
     items:
     - name: Active known issues for Power BI
       href: known-issues/power-bi-known-issues.md  
+    - name: Tenant Settings show as keys instead of descriptions
+      href: known-issues/known-issue-407-tenant-settings-show-keys-descriptions.md
+    - name: Upload from SharePoint/OneDrive For Business greyed out
+      href: known-issues/known-issue-398-upload-sharepoint-greyed-out.md
     - name: Tenant migrations paused
       href: known-issues/known-issue-308-tenant-migrations-paused.md
     - name: Paused visuals in Power BI Desktop Performance analyzer don't refresh
