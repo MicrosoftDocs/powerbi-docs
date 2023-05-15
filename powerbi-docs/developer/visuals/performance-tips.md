@@ -188,3 +188,5 @@ Instead, consider using a visual constructor method to draw everything static. T
 ## Next steps
 
 [Optimization guide for Power BI](../../guidance/power-bi-optimization.md)
+
+**More questions?** [Ask the Power BI Community](https://community.powerbi.com/).
