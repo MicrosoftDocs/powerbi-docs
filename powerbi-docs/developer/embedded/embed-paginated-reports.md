@@ -188,6 +188,7 @@ You can work with a [Premium Per User (PPU)](../../enterprise/service-premium-pe
 ---
 
 * Paginated reports don't support client-side events (like `loaded` or `rendered`).
+* Embedding paginated reports with a real-time dataset (push dataset) is not supported.
 
 ## Next steps
 
