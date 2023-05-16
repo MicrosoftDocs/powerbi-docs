@@ -100,7 +100,7 @@ Power BI depends on ceratin endpoints to support integration with OneDrive for B
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Required:** OneDrive and SharePoint integration | See the documentation for [SharePoint Online and OneDrive for Business URLs](/microsoft-365/enterprise/urls-and-ip-address-ranges.md#sharepoint-online-and-onedrive-for-business) | N/A |
+| 1 | **Required:** OneDrive and SharePoint integration | See the documentation for  [SharePoint Online and OneDrive for Business URLs](/office365/enterprise/urls-and-ip-address-ranges##sharepoint-online-and-onedrive-for-business) | N/A |
 | | | |
 
 ## Related external sites
