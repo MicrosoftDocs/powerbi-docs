@@ -31,8 +31,8 @@ To enable the preview for opening, saving, and sharing Power BI files to OneDriv
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-preview-settings.png" alt-text="Screenshot of settings to turn on preview features.":::
 
 **Sharing** files stored in OneDrive and SharePoint directly from Power BI Desktop only works when **both** of the following two statements are true:
-1.	Users have turned on the sharing preview feature in Power BI Desktop
-2.	The Admin tenant setting is enabled (the setting is **enabled by default** and requires that admins disable it for it to be turned off).   
+-	Users have turned on the sharing preview feature in Power BI Desktop
+-	The Admin tenant setting is enabled (the setting is **enabled by default** and requires that admins disable it for it to be turned off).   
 
 When enabled, a **Share** button is in the top right corner of Power BI Desktop. 
 
