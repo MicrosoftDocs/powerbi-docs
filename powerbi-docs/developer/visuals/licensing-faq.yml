@@ -19,12 +19,12 @@ sections:
       - question: |
           What are licensed visuals?
         answer: |
-          [Licensed visuals](./custom-visual-licenses.md) are Power BI visuals available from the [Microsoft commercial marketplace](https://appsource.microsoft.com/marketplace/apps?exp=ubp8). All licensed visuals have a limited basic version available for free, and a version with more functionality available for purchase. You can try out a free version of the visual before you need to purchase a license. You can also assign licenses to other users in your organization.
+          [Licensed visuals](./custom-visual-licenses.md) are Power BI visuals available from the [Microsoft commercial marketplace](https://appsource.microsoft.com/marketplace/apps?exp=kyyw&page=1&product=power-bi-visuals). All licensed visuals have a limited basic version available for free, and a version with more functionality available for purchase. You can try out a free version of the visual before you need to purchase a license. You can also assign licenses to other users in your organization.
 
       - question: |
           Do I have to pay when I install a visual?
         answer: |
-          You can install the visual for free by selecting **Starting at Free** from [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=ubp8) or the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview) and use the free features provided. For the full experience, however, you need to purchase the visual from [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=ubp8). The pricing for each licensed visual is described in the *Plans + Pricing* tab.
+          You can install the visual for free by selecting **Install free** from [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=kyyw&page=1&product=power-bi-visuals) or the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview) and use the free features provided. For the full experience, however, you need to purchase the visual from [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=kyyw&page=1&product=power-bi-visuals). The pricing for each licensed visual is described in the *Plans + Pricing* tab.
 
           :::image type="content" source="./media/licensing-faq/plans-and-pricing.png" alt-text="Screenshot of AppSource with Plans + Pricing tab highlighted.":::
           
@@ -36,7 +36,7 @@ sections:
       - question: |
           How can I purchase and pay for the visuals?
         answer: |
-          To purchase the visual, select **Buy now** and complete the checkout path in [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=ubp8). 
+          To purchase the visual, select **Buy now** and complete the checkout path in [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=kyyw&page=1&product=power-bi-visuals). 
 
           :::image type="content" source="./media/licensing-faq/buy-now.png" alt-text="Screenshot of AppSource with Buy now button highlighted.":::
 
