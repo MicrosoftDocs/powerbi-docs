@@ -45,7 +45,7 @@ Web Content Accessibility Guidelines (WCAG) are guidelines for making web conten
 
 - **Understandable**: Information and the operation of user interface must be understandable.  
 
-    Providing clear text alternatives or descriptions where necessary.  
+    Providing clear text alternatives or descriptions where they're necessary.  
 
 - **Robust**: Content can be interpreted by a wide range of user agents including assistive technologies.  
 

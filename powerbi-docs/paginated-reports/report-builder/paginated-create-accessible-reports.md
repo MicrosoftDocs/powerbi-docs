@@ -13,7 +13,7 @@ ms.reviewer: cookiemccray
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-You can create paginated reports with accessibility. Power BI Report Builder has accessibility features that help you create a paginated report that's inclusive and usable by all. As a report creator, it's important to know these features and their functionalities to use them in making your paginated reports accessible to people who are blind, have low vision, or have physical disabilities. Designing your report for accessibility doesn't just benefit users with disabilities.It benefits everyone because it improves the usability of your report.
+You can create paginated reports with accessibility. Power BI Report Builder has accessibility features that help you create a paginated report that's inclusive and usable by all. As a report creator, it's important to know these features and their functionalities to use them in making your paginated reports accessible to people who are blind, have low vision, or have physical disabilities. Designing your report for accessibility doesn't just benefit users with disabilities. It benefits everyone because it improves the usability of your report.
 
 
 This article provides details on the accessibility features in Power BI Report Builder for creating accessible paginated reports.
@@ -28,7 +28,7 @@ The Power BI Report Builder has various accessibility features available to the 
 - [Built-in accessibility features (requiring configuration)](#built-in-accessibility-features-requiring-configuration).
 - Other tips and considerations.
 
-In the following sections we would look at these categories in detail: 
+The following sections describe these categories in detail: 
 
 ## Built-in accessibility features 
 
@@ -44,10 +44,9 @@ Let's explore each of these built-in accessibility features individually.
 
 Power BI Report Builder is operable with the use of keyboard for navigation. As a report author you can navigate the app with keyboard navigation. Paginated report consumers can also efficiently use their keyboards to navigate through a report and interact with the various objects of a paginated report. This is in line with WCAG guidelines of operability, and it creates an accessible user experience for reporting consumers with disabilities. 
 
-By pressing the Alt key, we can see the keyboard shortcuts for the different menus for Power BI Report Builder. Here's the [detailed list of keyboard shortcuts](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder) for Power BI Report Builder. 
+By pressing the Alt key, you can see the keyboard shortcuts for the different menus for Power BI Report Builder. Here's the [detailed list of keyboard shortcuts](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder) for Power BI Report Builder. 
  
-Keyboard Shortcuts Image.
-
+:::image type="content" source="media/paginated-use-accessibility-tools/report-builder-accessible-key-tips.png" alt-text="Screenshot showing Keyboard Shortcuts Image.":::
  
  
 > [!NOTE]
@@ -55,13 +54,9 @@ Keyboard Shortcuts Image.
 
 ### Screen–reader compatibility 
 
-Power BI Report Builder is screen-reader compatible, as a user navigates to any object on the app, the screen-reader converts every text into spoken words. As a report author, you can use a screen-reader to create a paginated report, when you hover over any of the app menus, the screen reader will read the property description shown. 
+Power BI Report Builder is screen-reader compatible, as a user navigates to any object on the app, the screen-reader converts every text into spoken words. As a report author, you can use a screen-reader to create a paginated report, when you hover over any of the app menus, the screen reader reads the property description shown. 
 
- 
-
-Screen-reader compatibility image 
-
- 
+:::image type="content" source="media/paginated-use-accessibility-tools/paginated-property-description.png" alt-text="Screenshot showing Screen-reader reads the property description.":::
 
 ### Accessible PDF export format in the service for report consumers  
 
@@ -74,11 +69,12 @@ As a report creator, it's important to recognize that there are two PDF formats 
  
 The Accessible PDF is a feature in the service for the report consumer. It isn't supported in Power BI Report Builder. The Accessible PDF format provides support for PDF/UA in conformance to the [ISO 14289-1(PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/) requirements for universally accessible PDF documents.  
 
-PDF/UA specifies the technical requirements for assistive technology such as screen-readers to fully interact with PDF documents. Adhering to these requirements will help in creating a universally accessible PDF/UA document which a person with disabilities can make use of just as effectively as any user without disabilities.  
+PDF/UA specifies the technical requirements for assistive technology such as screen-readers to fully interact with PDF documents. Adhering to these requirements helps in creating a universally accessible PDF/UA document which a person with disabilities can make use of just as effectively as any user without disabilities.  
 
 One of the key requirements of the PDF/UA is to create documents that are tagged, and the structure tree created by the document tags must reflect the document’s logical reading order. The ordinary PDF export format of paginated report isn't tagged, so it's important that the Accessible PDF export option is selected when exporting your paginated report to PDF.  
 
-Screen- reader preview of the Structure Tree of an Accessible PDF paginated report 
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-accessible-pdf-structure-tree.png" alt-text="Screenshot showing Screen-reader preview of the structure tree of an Accessible PDF paginated report.":::
+
 
 *Screen-reader preview of the Structure Tree of an Accessible PDF paginated report*
 
@@ -95,52 +91,42 @@ The PDF Accessibility Checker ([PAC Tool](https://pdfua.foundation/)) is a digit
 
 ## Built-in accessibility features requiring configuration
 
-In this section we will identify and discuss accessibility features that are built into Power BI Report Builder and require configuration from the report author. These features include the following:
+This section identifies and discusses accessibility features that are built into Power BI Report Builder and require configuration by the report author. These features include the following:
 
 - [Alt text](#alt-text).
-- Color contrast.
+- [Color contrast](#color-contrast).
 
 ### Alt text 
 
 Alt text, which is short for alternative text, is used to describe every object in the paginated report. As a report author you need to provide Alt text for every object in your report, including tables, matrixes, charts, images, and text boxes. Providing Alt text for report objects helps a report consumer who's using a screen reader or other assistive technology to understand what you're trying to communicate regarding that report object, even if they can't see the object.  
 
-To provide Alt text for an object in the Power BI Report Builder, select the object. In the Properties Pane, select the **Tooltip** property, and type in the tooltip text in the property grid.
+To provide Alt text for an object in the Power BI Report Builder, select the object. In the Properties pane, select the **Tooltip** property, and type in the tooltip text in the property grid.
 
 Be sure to use descriptive Alt text for your report objects. Make sure the texts are clear, descriptive, and free of abbreviations, making it easier for the screen reader to read. Descriptive Alt text helps ensure your report is more understandable to the end user, which is in alignment with one of the WCAG principles. 
 
 In Power BI paginated reports, data visualization components are interpreted as images. It's important to add Alt texts that describe your chart and the information you’re trying to convey. For example, here are the steps for writing Alt text for a line chart.
 
-1. Select the line chart, and in the Properties Pane, select the **Tooltip** property.
+1. Select the line chart, and in the Properties pane, select the **Tooltip** property.
+
+    :::image type="content" source="media/paginated-create-accessible-reports/paginated-tooltip-property.png" alt-text="Screenshot showing select the Tooltip property.":::
+
 1. Select **Expression** from the drop-down options, then write the Alt text you want to use.  
 
-  
-
-Image showing how to add Alt Text to a chart 
-
- 
-
-Image showing how to add Alt Text to a chart 
-
- 
+    :::image type="content" source="media/paginated-create-accessible-reports/paginated-tooltip-expression.png" alt-text="Screenshot showing write the Alt text you want to use.":::
 
 
+The following image shows how the Alt text appears in the report. A screen reader reads the Alt text, providing the description of the image to people who are blind and people with other physical disabilities.
 
-Image showing the Alt Text added to a charted 
-
- 
-
-The image above shows how the Alt text would appear in the report. A screen reader reads the Alt text, providing the description of the image to people who are blind and people with other physical disabilities.  
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-line-chart-alt-text.png" alt-text="Screenshot showing how the Alt text appears in the report.":::
 
 > [!NOTE]
-> A screen reader doesn't read the Alt texts in Power BI Report Builder but the screen reader does read the Alt text in the Power BI service and Accessible PDF. However, screen-readers don't read out Alt texts for text boxes in the Power BI service.
-
- 
+> A screen reader doesn't read the Alt texts in Power BI Report Builder, but the screen reader does read the Alt text in the Power BI service and Accessible PDF. However, screen-readers don't read out Alt texts for text boxes in the Power BI service.
 
 ### Color contrast 
 
-When designing your report for accessibility, pairing a light color and dark color will provide the right color contrast to make your report more accessible. They should be enough contrast between text or object and any background color according to the WCAG guidelines. The WCAG 2.1 success criterion 1.4.3 delineates that text and background color should have a contrast ratio of at least 4.5:1.  
+When you're designing your report for accessibility, pairing a light color and dark color provides the right color contrast to make your report more accessible. They should be enough contrast between text or object and any background color according to the WCAG guidelines. The WCAG 2.1 success criterion 1.4.3 delineates that text and background color should have a contrast ratio of at least 4.5:1.  
 
-Unlike for Power BI Reports, when you use high contrast mode in Windows, the high contrast theme will not be automatically applied to your report, so you must choose high contrast colors for your report.  
+Unlike for Power BI Reports, when you use high contrast mode in Windows, the high contrast theme isn't automatically applied to your report, so you must choose high contrast colors for your report.  
 
 You could design your report and then check your report colors for accessibility. Here are some external tools you can try:
 
@@ -150,116 +136,94 @@ You could design your report and then check your report colors for accessibility
  
 Another option is to use an Accessible color palette generator such as the [Venngage Accessible Color Palette Generator](https://venngage.com/tools/accessible-color-palette-generator) to generate accessible colors you can then choose from to use in your report.
 
-To apply colors to your report objects, select the object. In the Properties Pane, choose the color you want for the format option, such as the fonts, background, and border. 
+#### Apply colors to report objects
 
-In the following image we used black for formatting the report background, and yellow for formatting every other object in the report.  
+To apply colors to your report objects, select the object. In the Properties pane, choose the color you want for the format option, such as the fonts, background, and border. 
 
-Report Image 
+The following image uses black for formatting the report background, and yellow for formatting every other object in the report.  
 
- 
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-color-contrast.png" alt-text="Screenshot showing report with black for formatting the background, and yellow for formatting every other object in the report.":::
 
-To achieve the black background for the body, select the body. In the Properties Pane, under the formatting options select the drop down for background color and pick the black color. 
+To achieve the black background for the body, select the body. In the Properties pane, under the formatting options select the drop-down for background color and pick the black color. 
 
- 
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-properties-background-color.png" alt-text="Screenshot showing Steps for applying color to a report background.":::
 
-Steps for applying color to a report background 
+The following image shows the result of the black background formatting.
 
- 
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-report-black-background.png" alt-text="Screenshot showing Result of Page background color formatting.":::
 
-The following image shows the result of the black background formatting. 
+The other report objects have yellow formatting, following the same steps as above. You can also apply colors to an object by writing the hex code of the color on the color format option in the Properties pane.
 
-Result of Page background color formatting 
+#### Steps for color formatting a matrix  
 
- 
+This image shows how the color yellow is applied to a matrix by selecting cells in the matrix and selecting **Font** color and **BorderColor** set to **Yellow**.
 
-Yellow was used to format the other report objects with the same steps as above. You can also apply colors to an object by writing the hex code of the color on the color format option in the Properties Pane. 
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-yellow-matrix.png" alt-text="Screenshot showing the color yellow is applied to a matrix.":::
 
-Steps for color formatting a matrix  
+You see the result of the formatting in the following image.
 
- 
-
-The image above shows how the color yellow was applied to a Matrix, the result of the formatting can be seen in the following image. 
-
- 
-
-Result of applying color to a matrix as shown in previous image 
-
- 
-
- 
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-black-yellow-matrix.png" alt-text="Screenshot showing Result of applying color to a matrix as shown in previous image.":::
 
 ## Tips and considerations 
 
-Here are some tips and considerations that would help when creating accessible paginated reports. 
+Here are some tips and considerations to help when you're creating accessible paginated reports. 
 
 ### Provide table caption/summary 
 
-Creating a table caption or summary would provide context on the information displayed in the table. This can be done using the Tooltip Property and it would provide the perfect summary of the information being conveyed by the table for screen reader users.  
+Creating a table caption or summary provides context on the information displayed in the table. You can add the caption by using the **Tooltip** property. It provides the perfect summary of the information that the table is conveying for screen reader users.  
 
-Text Box 
-
- 
+> [!NOTE]
+> The WCAG 2.0 guideline 1.3.1 Info and Relationships is partially supported as Tables contain an extra blank row and column to ensure correct row heights and column widths. This guideline ensures that structures can be programmatically determined and the logical relationship among the table headers and data cells is preserved.
 
 ### Tagging elements 
 
-You can insert HTML-formatted text from a field in your dataset into your paginated report with the use of a text box.  
+You can insert HTML-formatted text from a field in your dataset into your paginated report by using a text box.  
 
-An example of a supported HTML tag is an hyperlink. In the the images below we show the steps required to adding an hyperlink of a company website to the report. The screen-reader will read it out letting the user know it’s a link that can take them to a website that provides more information on the company. 
+An example of a supported HTML tag is a hyperlink. The images below show the steps required to adding a hyperlink of a company website to the report. The screen-reader reads it out, letting the user know it’s a link that can take them to a website that provides more information on the company.
 
-Steps for HTML tagging 
- 
+1. To add a hyperlink, first create a text box. 
+1. Right-click in the text box, and select **Create Placeholder**.
 
-Steps for HTML tagging 
+     :::image type="content" source="media/paginated-create-accessible-reports/paginated-create-placeholder.png" alt-text="Screenshot showing select Create Placeholder.":::
 
- 
+1. In the **Placeholder Properties** dialog box, on the **General** tab, provide the placeholder in the label.
+1. In the **Value** box, provide the field from the dataset that contains HTML tags.
+1. In the **Tooltip** box, write your Alt text.
 
-To achieve this, right-click the textbox you will like to write the placeholder, select the Placeholder Properties option. In the Placeholder Properties dialog box go to General tab, provide the placeholder in the label, in the value properties provide the field from the dataset which contains HTML tags, and in the tooltip, write your Alt text. 
+    :::image type="content" source="media/paginated-create-accessible-reports/paginated-placeholder-properties.png" alt-text="Screenshot showing Placeholder Properties dialog box.":::
 
-The following image shows how the hyperlink appears in the report. 
+The following image shows how the hyperlink and Alt text appear in the report.
 
-Result of hyperlink HTML tag 
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-report-hyperlink.png" alt-text="Screenshot showing Result of hyperlink HTML tag." lightbox="media/paginated-create-accessible-reports/paginated-report-hyperlink.png":::
 
-  
+For detailed documentation on using HTML, see [Importing HTML into a paginated report (Report Builder)](/sql/reporting-services/report-design/importing-html-into-a-report-report-builder-and-ssrs).
 
-For detailed documentation on this, see Importing HTML into a paginated report (Report Builder) 
- 
+### Add a descriptive header to a table
 
- 
+Using descriptive table headers makes the data in the table more understandable. These headers become readable by the screen-reader used by the report consumer. The headers are tagged in the PDF. The following image shows what the tree structure of a table looks like, and shows the logical structure of the table in the PAC tool. The table structure contains Table Row (TR) and Table Data Cell (TD) structures in proper reading order and hierarchy. 
 
-### Add descriptive header to a table
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-descriptive-table-headers.png" alt-text="Screenshot showing Logical structure image of a table in the PAC tool." lightbox="media/paginated-create-accessible-reports/paginated-descriptive-table-headers.png":::
 
-Using descriptive table headers will help the data on the table become easily understandable, these headers become readable by the screen-reader used by the report consumer. The headers are tagged in the PDF. The following image shows what a table looks like in the tree structure. The following image shows the logical structure of a table in the PAC tool. The table structure contains Table Row (TR) and Table Data Cell (TD) structures in proper reading order and hierarchy. 
-
-Logical structure image of a table in PAC tool 
-
- 
-
-Text Box 
-
- 
-
- 
+> [!NOTE]
+> For tables not built with the Power BI Report Builder table wizard, the table headers in Accessible PDF documents are tagged as the Table Data cells (TD). To correct this, open the file on Adobe Acrobat Pro, on the tags tab click on each of the header cells and change the tags from Table Data (TD) to Table Headers (TH). You can find detailed description of how to modify table tags on the [W3C website](https://www.w3.org/TR/WCAG20-TECHS/pdf#PDF6).
 
 ### Add descriptive header to a matrix
 
-When creating your matrix object for displaying data summaries, it's important to use descriptive headers in order to make the information being conveyed by the matrix more understandable. This way the screen-reader can describe the columns and rows in an understandable way. The following image shows the logical structure of a matrix in the PAC tool. The matrix structure contains the Table Header (TH), Table Row (TR) and Table Data Cell (TD) structures in proper reading order and hierarchy. 
+When creating your matrix object for displaying data summaries, it's important to use descriptive headers to make the information that the matrix is conveying more understandable. This way the screen-reader can describe the columns and rows in an understandable way. The following image shows the logical structure of a matrix in the PAC tool. The matrix structure contains the Table Header (TH), Table Row (TR) and Table Data Cell (TD) structures in proper reading order and hierarchy. 
 
- 
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-descriptive-matrix-headers.png" alt-text="Screenshot showing Logical structure image of a matrix in the PAC tool." lightbox="media/paginated-create-accessible-reports/paginated-descriptive-matrix-headers.png":::
 
- 
-
-Logical structure image of a matrix in PAC tool 
-
- 
-
-Text Box 
+> [!NOTE]
+> For a matrix built with the Power BI Report Builder wizard, the column label for the first column is tagged as a Table Header (TH). This results in an error in the PAC tool, stating that the Table header has no associated subcells. To correct this, open the file in Adobe Acrobat Pro. On the Tags tab select the cell and change the tag from Table Header (TH) to Table Data Cell (TD). You can find a detailed description of how to modify table tags in the [W3C website](https://www.w3.org/TR/WCAG20-TECHS/pdf#PDF6).
 
 ### Use consistent formatting 
 
-You can achieve consistent report formatting. To provide consistent formatting across different report objects, hold down the CTRL key and then select the report objects you would like to have consistent formatting across, in the Properties Pane select each format options and select the format you would like to apply. Whatever format you choose will apply to all selected objects, giving it a consistent formatting. 
+You can achieve consistent report formatting across different report objects.
 
- 
+1. Hold down the CTRL key and select the report objects that you'd like to have consistent formatting.
+1. In the Properties pane, select each format option and select the format you'd like to apply. Whatever format you choose applies to all selected objects, giving it a consistent formatting.
 
 ## Next steps
 
 - [Accessibility in Power BI paginated reports (Power BI Report Builder)](paginated-accessibility-overview.md)
+- [Use accessibility tools to create accessible paginated reports (Power BI Report Builder)](paginated-use-accessibility-tools.md)
