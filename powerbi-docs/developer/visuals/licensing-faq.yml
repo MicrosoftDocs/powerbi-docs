@@ -113,6 +113,11 @@ sections:
         answer: |
           You're eligible for a full refund if you cancel your subscription within seven days of purchase. Refunds aren’t available for subscriptions canceled after that time period.
 
+      - question: |
+          How can I get more help buying a visual?
+        answer: |
+          For help with buying a visual, [contact support](https://support.microsoft.com/account-billing/contact-microsoft-store-support-4f615f2a-6bbd-fd69-6695-ae213d63eef0).  
+
   - name: License assignment
     questions:
       - question: |
@@ -125,6 +130,15 @@ sections:
 
           If the tenant admin owns the licenses (Org licenses), then any of the license admins (Global Admin, License Admin or User Admin) can manage the licenses.  
           However, if the license owner isn't an admin, then only the purchaser/owner can manage the subscription and licenses.
+
+      - question: |
+          How do we assign the licenses?
+        answer: |
+          Only the buyer (owner) can assign a license. You receive a license automatically within five minutes of purchasing the visual. If you want to assign a license to other users or update your subscription, go to [admin.microsoft.com](https://admin.microsoft.com/) and select the **License** link under the **Billing** node from the menu. A list of visuals appears.
+
+          :::image type="content" source="./media/licensing-faq/assign-licenses.png" alt-text="Screenshot of Admin homepage with billing licenses selected.":::
+
+           Select the Visual you want to assign licenses for. In the next page, select the user(s) you want to assign the licenses to.
 
       - question: |
           Once I assign a license, how long does it take until I can use it?
@@ -150,15 +164,6 @@ sections:
           No. Buyers get a license assigned to them automatically. It can take up to five minutes from the time of purchase [for the license to take effect](#once-i-assign-a-license--how-long-does-it-take-until-i-can-use-it-). If you want to add more users or update your subscription, go to the [admin center](https://admin.microsoft.com/).
 
       - question: |
-          How do we assign the licenses?
-        answer: |
-          Only the buyer (owner) can assign a license. You receive a license automatically within five minutes of purchasing the visual. If you want to assign a license to other users or update your subscription, go to [admin.microsoft.com](https://admin.microsoft.com/) and select the **License** link under the **Billing** node from the menu. A list of visuals appears.
-
-          :::image type="content" source="./media/licensing-faq/assign-licenses.png" alt-text="Screenshot of Admin homepage with billing licenses selected.":::
-
-           Select the Visual you want to assign licenses for. In the next page, select the user(s) you want to assign the licenses to.
-
-      - question: |
           As an admin can I see the subscriptions that were purchased in my organization?
         answer: |
           A tenant admin can see all subscriptions purchased under the tenant account, including the subscriptions purchased by non-admins.
@@ -181,8 +186,7 @@ sections:
       - question: |
           How can I get more help or support for managing licenses?
         answer: |
-          For help with buying a visual, go to [What is the Microsoft commercial marketplace](/marketplace//purchase-software-appsource).  
-          For help with assigning a license, go to [Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview)
+          For help managing licenses, [contact support](https://support.microsoft.com/account-billing/contact-microsoft-store-support-4f615f2a-6bbd-fd69-6695-ae213d63eef0)
 
 additionalContent: |
   ## Next steps
