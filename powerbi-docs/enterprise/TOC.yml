@@ -26,8 +26,13 @@
       href: service-admin-failover.yml
     - name: Migrate from Azure Analysis Services
       href: aas-pbi-migration-overview.md
-    - name: Direct Lake
-      href: directlake-overview.md
+    - name: Direct Lake (Preview)
+      expanded: false
+      items:
+      - name: Direct Lake overview
+        href: directlake-overview.md
+      - name: Analyze query processing for Direct Lake datasets
+        href: directlake-analyze-qp.md
   - name: Licensing
     expanded: false
     items:
