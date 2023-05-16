@@ -11,7 +11,7 @@ metadata:
   ms.date: 05/16/2023
 title: Frequently asked questions about Custom visual license management and transactability
 summary: |
-  This article answers some of the questions users often have about how to set up, pay for, and manage licenses for custom Power BI visuals that they purchase from [AppSource](https://appsource.microsoft.com/).
+  This article answers some of the questions users often have about how to set up, pay for, and manage licenses for custom Power BI visuals that they purchase from [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=ubp8).
 
 sections:
   - name: Purchasing
@@ -19,12 +19,16 @@ sections:
       - question: |
           What are licensed visuals?
         answer: |
-          [Licensed visuals](./custom-visual-licenses.md) are Power BI visuals available from the [Microsoft commercial marketplace](https://appsource.microsoft.com/). All licensed visuals have a limited basic version available for free, and a version with more functionality available for purchase. To try out a licensed visual, select the **Get it now** button in AppSource to try out a free version of the visual before you need to purchase a license. You can also assign licenses to other users in your organization.
+          [Licensed visuals](./custom-visual-licenses.md) are Power BI visuals available from the [Microsoft commercial marketplace](https://appsource.microsoft.com/marketplace/apps?exp=ubp8). All licensed visuals have a limited basic version available for free, and a version with more functionality available for purchase. Select the **Buy now** button in AppSource to try out a free version of the visual before you need to purchase a license. You can also assign licenses to other users in your organization.
+
+          :::image type="content" source="./media/licensing-faq/buy-now.png" alt-text="Screenshot of AppSource with Buy now button highlighted.":::
 
       - question: |
           Do I have to pay when I install a visual?
         answer: |
-          You can install the visual for free from [AppSource](https://appsource.microsoft.com/) or the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview) and use the free features provided. For the full experience, however, you need to purchase the visual from [AppSource](https://appsource.microsoft.com/).
+          You can install the visual for free by selecting **Starting at Free** from [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=ubp8) or the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview) and use the free features provided. For the full experience, however, you need to purchase the visual from [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=ubp8). The pricing for each licensed visual is described in the *Plans + Pricing* tab.
+
+          :::image type="content" source="./media/licensing-faq/plans-and-pricing.png" alt-text="Screenshot of AppSource with Plans + Pricing tab highlighted.":::
           
       - question: |
           Who can purchase a visual license?
@@ -34,7 +38,7 @@ sections:
       - question: |
           How can I purchase and pay for the visuals?
         answer: |
-          Select **Get it now** and complete the checkout path in [AppSource](https://appsource.microsoft.com/). You can pay for the licenses with a credit card.  
+          Select **Get it now** and complete the checkout path in [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=ubp8). You can pay for the licenses with a credit card.  
 
           Billing and Global admins can also pay by [invoice](/microsoft-365/commerce/billing-and-payments/pay-for-subscription-billing-profile#paying-by-invoice) if such a payment method is set up for your company.
 
