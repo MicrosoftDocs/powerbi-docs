@@ -42,7 +42,7 @@ When enabled, a **Share** button is in the top right corner of Power BI Desktop.
 
 If your Power BI admin has turned off the capability for your organization, you receive a notification that states *Sharing has been disabled* when clicking on the Share button. [Learn more](../admin/service-admin-portal-integration.md#users-can-share-links-to-power-bi-files-stored-in-onedrive-and-sharepoint-through-power-bi-desktop) about the Admin setting.
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-sharing-disabled.png" alt-text="Screenshot of notification when sharing is disabled." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-sharing-disabled.png:::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-sharing-disabled.png" alt-text="Screenshot of notification when sharing is disabled." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-sharing-disabled.png":::
 
 ## Open Power BI files stored in OneDrive and SharePoint
 
