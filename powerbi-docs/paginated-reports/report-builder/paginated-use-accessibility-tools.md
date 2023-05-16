@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cookiemccray
 ---
-# Use accessibility tools to create accessible paginated reports(Power BI Report Builder)
+# Use accessibility tools to create accessible paginated reports (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
