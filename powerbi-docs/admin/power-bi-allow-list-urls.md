@@ -94,6 +94,15 @@ Power BI depends on certain endpoints to view and access Power BI visuals. You m
 | 4 | **Optional:** Visio | See the documentation for [Microsoft 365 Common and Office Online URLs](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), as well as [SharePoint Online and OneDrive for work or school](/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | N/A |
 | | | |
 
+## Power BI OneDrive and SharePoint integration
+
+Power BI depends on ceratin endpoints to support integration with OneDrive for Business and SharePoint Online. You must be able to connect to the endpoints and linked sites in the following table.
+
+| Row | Purpose | Destination(s) | Port(s) |
+| --- | --- | --- | --- |
+| 1 | **Required:** OneDrive and SharePoint integration | See the documentation for  [SharePoint Online and OneDrive for Business URLs](/office365/enterprise/urls-and-ip-address-ranges##sharepoint-online-and-onedrive-for-business) | N/A |
+| | | |
+
 ## Related external sites
 
 Power BI links to other related sites. These sites host documentation, support, new feature requests, and more. Access to these sites doesn't affect the functionality of Power BI, so adding them to allowlists is optional.
