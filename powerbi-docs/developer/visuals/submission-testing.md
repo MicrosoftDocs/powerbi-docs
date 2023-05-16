@@ -124,14 +124,12 @@ Your visual should perform at an acceptable level. Use developer tools to valida
 
 | Test case | Expected results
 | --------- | ----------------
-| Create a visual with many visual elements. | The visual performs well and doesn't freeze the application. There aren't any performance issues with elements such as animation speed, resizing, filtering, and selecting.
+| Create a visual with many visual elements. | The visual should perform well and not freeze the application. There should be no performance issues with elements such as animation speed, resizing, filtering, and selecting. Check out these [tips for optimal performance](performance-tips.md).
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Publish Power BI visuals to Partner Center](./office-store.md)
-
->[!div class="nextstepaction"]
->[Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
+* [Publish Power BI visuals to Partner Center](./office-store.md)
+* [Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
+* [Performance tips for creating quality Power BI custom visuals](performance-tips.md)
 
 **More questions?** [Ask the Power BI Community](https://community.powerbi.com/).
