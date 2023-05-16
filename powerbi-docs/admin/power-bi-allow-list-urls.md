@@ -96,8 +96,12 @@ Power BI depends on certain endpoints to view and access Power BI visuals. You m
 
 ## Power BI OneDrive and SharePoint integration
 
-Power BI depends on ceratin endpoints to successfully integrate with OneDrive for Business and SharePoint. You must be able to connect to the required SharePoint Online and OneDrive for Business endpoints. 
-[SharePoint online and OneDrive for Business endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges.md#sharepoint-online-and-onedrive-for-business)
+Power BI depends on ceratin endpoints to support integration with OneDrive for Business and SharePoint Online. You must be able to connect to the endpoints and linked sites in the following table.
+
+| Row | Purpose | Destination(s) | Port(s) |
+| --- | --- | --- | --- |
+| 1 | **Required:** OneDrive and SharePoint integration | See the documentation for [SharePoint Online and OneDrive for Business URLs](/microsoft-365/enterprise/urls-and-ip-address-ranges.md#sharepoint-online-and-onedrive-for-business) | N/A |
+| | | |
 
 ## Related external sites
 
