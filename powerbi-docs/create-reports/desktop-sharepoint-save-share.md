@@ -28,7 +28,7 @@ The ability to open, save, and share files from OneDrive and SharePoint directly
 
 To enable the preview for opening, saving, and sharing Power BI files to OneDrive and SharePoint in Power BI Desktop, start by checking the **Save to OneDrive and SharePoint** and **Share to OneDrive and SharePoint** options by clicking the file tab **Options and settings > Options > Preview features**.
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-preview-settings.png" alt-text="Screenshot of settings to turn on preview features.":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-preview-settings.png" alt-text="Screenshot of settings to turn on preview features." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-preview-settings.png":::
 
 **Sharing** files stored in OneDrive and SharePoint directly from Power BI Desktop only works when **both** of the following two statements are true:
 -	Users have turned on the sharing preview feature in Power BI Desktop
@@ -36,11 +36,11 @@ To enable the preview for opening, saving, and sharing Power BI files to OneDriv
 
 When enabled, a **Share** button is in the top right corner of Power BI Desktop. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-share-button-plain.png" alt-text="Screenshot of the Share button in Power BI.":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-share-button-plain.png" alt-text="Screenshot of the Share button in Power BI." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-share-button-plain.png":::
 
 If your Power BI admin has turned off the capability for your organization, you receive a notification that states *Sharing has been disabled* when clicking on the Share button.
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-sharing-disabled.png" alt-text="Screenshot of notification when sharing is disabled.":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-sharing-disabled.png" alt-text="Screenshot of notification when sharing is disabled." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-sharing-disabled.png:::
 
 The Power BI Admin setting for sharing Power BI files directly in OneDrive and SharePoint is **enabled by default**. Admins can [**disable** sharing through the Admin portal.](../admin/service-admin-portal-integration.md).
 
@@ -48,15 +48,15 @@ The Power BI Admin setting for sharing Power BI files directly in OneDrive and S
 
 To open a Power BI file stored in OneDrive and SharePoint select **Open** from the file menu. Then click on **OneDrive**. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-open.png" alt-text="Screenshot of open in the file menu.":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-open.png" alt-text="Screenshot of open in the file menu." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-open.png":::
 
 Your files from OneDrive for Business and SharePoint are available for you to open directly in Power BI Desktop. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-open-file.png" alt-text="Screenshot of OneDrive files in file menu.":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-open-file.png" alt-text="Screenshot of OneDrive files in file menu." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-open-file.png":::
 
 Click on a file stored in OneDrive or SharePoint to open it in Power BI Desktop. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-opened-report.png" alt-text="Screenshot of report opened from OneDrive or SharePoint":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-opened-report.png" alt-text="Screenshot of report opened from OneDrive or SharePoint" lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-opened-report.png":::
 
 You can also navigate to a new OneDrive or SharePoint location through the **Quick access** option on the left. 
 
@@ -68,11 +68,11 @@ When saving a report for the first time, you can save directly in OneDrive for B
 
 Upon saving, you're prompted to enter the name of the file. You then select the OneDrive or SharePoint location from a dropdown menu showing recently visited locations. If you're unable to find the location you’re looking for, click **More options…**. If required by your organization, you also need to specify a sensitivity label. Then click **Save**. Your file is now saved directly in the specified OneDrive or SharePoint location. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-save-to-onedrive.png" alt-text="Screenshot of saving a file to OneDrive.":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-save-to-onedrive.png" alt-text="Screenshot of saving a file to OneDrive." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-save-to-onedrive.png":::
 
 To save an existing file to OneDrive or SharePoint, select the **Save as** option from the file menu. Click on **OneDrive** to find your desired location. Click **Save**.
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-save-as.png" alt-text="Screenshot of save as in the file menu.":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-save-as.png" alt-text="Screenshot of save as in the file menu." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-save-as.png":::
 
 The default save location is your parent OneDrive folder, unless you change it. The default save location is the first option that appears in your save list. 
 
@@ -83,21 +83,21 @@ The default save location is your parent OneDrive folder, unless you change it. 
 
 The default save location is your parent OneDrive folder. To change the default save location, select **Options and settings > Options > Save and Recover** from the file menu. Under **Save** change the default local file location. Restart the application to see the updated default save location. When you save, the new location is the first option that appears.
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-default-save-location.png" alt-text="Screenshot of how to change the default save location.":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-default-save-location.png" alt-text="Screenshot of how to change the default save location." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-default-save-location.png":::
 
 ## Sharing links to Power BI files stored in OneDrive or SharePoint
 
 To share a link to a Power BI file stored in OneDrive or SharePoint, click the **Share** button at the top right of Power BI Desktop or select **Share** from the file menu. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-unsaved-share-button.png" alt-text="Screenshot of share button in Power BI Desktop.":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-unsaved-share-button.png" alt-text="Screenshot of share button in Power BI Desktop." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-unsaved-share-button.png":::
 
 If the file hasn’t been saved, you're prompted to save. To share a link to the file with someone else, it must be saved in a OneDrive for Business or SharePoint location. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-save-to-share.png" alt-text="Screenshot of saving report before sharing it.":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-save-to-share.png" alt-text="Screenshot of saving report before sharing it." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-save-to-share.png":::
 
 After the file is saved, the Microsoft 365 share dialog prompts you to add the email, name, or group you wish to share the file with. You can send the file to the desired recipients directly, or use **Copy link** to send a link to the file. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-share-dialog.png" alt-text="Screenshot of sharing Power BI report.":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-share-dialog.png" alt-text="Screenshot of sharing Power BI report." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-share-dialog.png":::
 
 You can also manage who has access to the file through the **Manage Access** option under the Share button. 
 
@@ -123,11 +123,11 @@ Learn more about how users can [view Power BI files in their browser](../collabo
 
 Saving a Power BI Desktop file to a OneDrive or SharePoint location often takes some time depending on the file size. When saving the file, you might be invited to upload the file later. Selecting **Upload Later** allows you to continue working on the file and incorporating changes while the actual uploading to OneDrive or SharePoint happens after you click close in Power BI Desktop. The app finishes closing once the upload to your designated OneDrive or SharePoint location is complete. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-upload-later.png" alt-text="Screenshot of the upload later dialog.":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-upload-later.png" alt-text="Screenshot of the upload later dialog." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-upload-later.png":::
 
 You can check the last upload status in the title bar of the Power BI report and trigger an upload if desired. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-title-upload.png" alt-text="Screenshot of title bar in Power BI Desktop.":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-title-upload.png" alt-text="Screenshot of title bar in Power BI Desktop." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-title-upload.png":::
 
 ### Title bar
 
@@ -137,7 +137,7 @@ When you click on the title bar of a report in Power BI Desktop, you're able to 
 
 You can view the version history of your Power BI file online through your OneDrive or SharePoint document library. Select the three dots to the right of your file and click **Version history**. Version history can’t be viewed directly from Power BI Desktop. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-version-history.png" alt-text="Screenshot of version history in OneDrive and SharePoint.":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-version-history.png" alt-text="Screenshot of version history in OneDrive and SharePoint." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-version-history.png":::
 
 ### Save-as file naming limitations
 
