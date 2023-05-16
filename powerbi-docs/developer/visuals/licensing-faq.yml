@@ -19,9 +19,7 @@ sections:
       - question: |
           What are licensed visuals?
         answer: |
-          [Licensed visuals](./custom-visual-licenses.md) are Power BI visuals available from the [Microsoft commercial marketplace](https://appsource.microsoft.com/marketplace/apps?exp=ubp8). All licensed visuals have a limited basic version available for free, and a version with more functionality available for purchase. Select the **Buy now** button in AppSource to try out a free version of the visual before you need to purchase a license. You can also assign licenses to other users in your organization.
-
-          :::image type="content" source="./media/licensing-faq/buy-now.png" alt-text="Screenshot of AppSource with Buy now button highlighted.":::
+          [Licensed visuals](./custom-visual-licenses.md) are Power BI visuals available from the [Microsoft commercial marketplace](https://appsource.microsoft.com/marketplace/apps?exp=ubp8). All licensed visuals have a limited basic version available for free, and a version with more functionality available for purchase. You can try out a free version of the visual before you need to purchase a license. You can also assign licenses to other users in your organization.
 
       - question: |
           Do I have to pay when I install a visual?
@@ -38,7 +36,11 @@ sections:
       - question: |
           How can I purchase and pay for the visuals?
         answer: |
-          Select **Get it now** and complete the checkout path in [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=ubp8). You can pay for the licenses with a credit card.  
+          To purchase the visual, select **Buy now** and complete the checkout path in [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=ubp8). 
+
+          :::image type="content" source="./media/licensing-faq/buy-now.png" alt-text="Screenshot of AppSource with Buy now button highlighted.":::
+
+          You can pay for the licenses with a credit card. 
 
           Billing and Global admins can also pay by [invoice](/microsoft-365/commerce/billing-and-payments/pay-for-subscription-billing-profile#paying-by-invoice) if such a payment method is set up for your company.
 
