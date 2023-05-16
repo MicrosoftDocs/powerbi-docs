@@ -115,7 +115,7 @@ sections:
           The person who buys the visual is the owner, and only the owner can assign licenses. 
           
           > [!NOTE]
-          > After buying the visual, the owner is automatically assigned a license, though [it might take a few minutes for the license to be available](#once-i-assign-a-license-how-long-does-it-take-until-i-can-use-it-). 
+          > After buying the visual, the owner is automatically assigned a license, though [it might take a few minutes for the license to take effect](#once-i-assign-a-license--how-long-does-it-take-until-i-can-use-it-). 
 
           If the tenant admin owns the licenses (Org licenses), then any of the license admins (Global Admin, License Admin or User Admin) can manage the licenses.  
           However, if the license owner isn't an admin, then only the purchaser/owner can manage the subscription and licenses.
@@ -141,7 +141,7 @@ sections:
       - question: |
           Do I have to assign a license to myself even if I'm the owner?
         answer: |
-          No. Buyers get a license assigned to them automatically. It can take up to five minutes from th time of purchase for the license to take effect. If you want to add more users or update your subscription, go to the [admin center](https://admin.microsoft.com/).
+          No. Buyers get a license assigned to them automatically. It can take up to five minutes from the time of purchase [for the license to take effect](#once-i-assign-a-license--how-long-does-it-take-until-i-can-use-it-). If you want to add more users or update your subscription, go to the [admin center](https://admin.microsoft.com/).
 
       - question: |
           How do we assign the licenses?
