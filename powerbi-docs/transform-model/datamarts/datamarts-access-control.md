@@ -17,6 +17,7 @@ This article describes access control to datamarts, including row level security
 
 ## Workspace roles
 Assigning users to the various workspace roles provides the following capabilities with respect to Datamarts: 
+
 | Workspace role   |  Description |
 |---|---|
 |**Admin**|Grants the user permissions to ingest data through a dataflow, write SQL and visual queries, and update the model or dataset (create relationships, create measures etc.)|
