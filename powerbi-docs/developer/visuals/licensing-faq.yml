@@ -13,18 +13,22 @@ title: Frequently asked questions about Custom visual license management and tra
 summary: |
   This article answers some of the questions users often have about how to set up, pay for, and manage licenses for custom Power BI visuals that they purchase from [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=ubp8).
 
+  > [!NOTE]
+  > If you just purchased a licensed visual, you are assigned a licenses automatically. [Just refresh your report](#once-i-assign-a-license--how-long-does-it-take-until-i-can-use-it-).
+  > To assign licenses to other users in your organization, see [How do we assign licenses](#how-do-we-assign-the-licenses-).
+
 sections:
   - name: Purchasing
     questions:
       - question: |
           What are licensed visuals?
         answer: |
-          [Licensed visuals](./custom-visual-licenses.md) are Power BI visuals available from the [Microsoft commercial marketplace](https://appsource.microsoft.com/marketplace/apps?exp=kyyw&page=1&product=power-bi-visuals). All licensed visuals have a limited basic version available for free, and a version with more functionality available for purchase. You can try out a free version of the visual before you need to purchase a license. You can also assign licenses to other users in your organization.
+          [Licensed visuals](./custom-visual-licenses.md) are Power BI visuals available from the [Microsoft commercial marketplace](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&exp=kyyw&page=1&filters=pay-as-you-go). All licensed visuals have a limited basic version available for free, and a version with more functionality available for purchase. You can try out a free version of the visual before you need to purchase a license. You can also assign licenses to other users in your organization.
 
       - question: |
           Do I have to pay when I install a visual?
         answer: |
-          You can install the visual for free by selecting **Install free** from [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=kyyw&page=1&product=power-bi-visuals) or the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview) and use the free features provided. For the full experience, however, you need to purchase the visual from [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=kyyw&page=1&product=power-bi-visuals). The pricing for each licensed visual is described in the *Plans + Pricing* tab.
+          You can install the visual for free from [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&exp=kyyw&page=1&filters=pay-as-you-go) by selecting **Install free** and following the instructions there, or by [embedding it directly into your report](./import-visual.md#import-a-visual-directly-from-appsource). This allows you to use the free features provided. For the full experience, however, you need to purchase the visual from [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&exp=kyyw&page=1&filters=pay-as-you-go). The pricing for each licensed visual is described in the *Plans + Pricing* tab.
 
           :::image type="content" source="./media/licensing-faq/plans-and-pricing.png" alt-text="Screenshot of AppSource with Plans + Pricing tab highlighted.":::
           
@@ -36,7 +40,7 @@ sections:
       - question: |
           How can I purchase and pay for the visuals?
         answer: |
-          To purchase the visual, select **Buy now** and complete the checkout path in [AppSource](https://appsource.microsoft.com/marketplace/apps?exp=kyyw&page=1&product=power-bi-visuals). 
+          To purchase the visual, select **Buy now** and complete the checkout path in [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&exp=kyyw&page=1&filters=pay-as-you-go). 
 
           :::image type="content" source="./media/licensing-faq/buy-now.png" alt-text="Screenshot of AppSource with Buy now button highlighted.":::
 
@@ -101,7 +105,7 @@ sections:
       - question: |
           Can we use a visual without having to upload it to organization visual?
         answer: |
-          Yes. You can download a visual directly to your reports.  
+          Yes. You can download a visual [directly to your reports](./import-visual.md#import-a-visual-directly-from-appsource).  
 
       - question: |
           How do we get upgrades of the visuals? 
@@ -126,9 +130,9 @@ sections:
           The person who buys the visual is the owner, and only the owner can assign licenses. 
           
           > [!NOTE]
-          > After buying the visual, the owner is automatically assigned a license, though [it might take a few minutes for the license to take effect](#once-i-assign-a-license--how-long-does-it-take-until-i-can-use-it-). 
+          > After buying the visual, the buyer (owner) is automatically assigned a license. They just have to [refresh the report](#once-i-assign-a-license--how-long-does-it-take-until-i-can-use-it-). 
 
-          If the tenant admin owns the licenses (Org licenses), then any of the license admins (Global Admin, License Admin or User Admin) can manage the licenses.  
+          If the tenant admin owns the licenses (organizational licenses), then any of the license admins (Global Admin, License Admin or User Admin) can manage the licenses.  
           However, if the license owner isn't an admin, then only the purchaser/owner can manage the subscription and licenses.
 
       - question: |
@@ -146,7 +150,7 @@ sections:
           > [!NOTE]
           > After you assign a license in the Microsoft 365 Admin Center, the license should be available within a few minutes.
           
-          If you were just assigned a license and don't see it, try the following:
+          If you were just assigned a license, refresh the report to activate it by doing one of the following:
           
            * If you're using the licensed visual in the Power BI Service, refresh the report by hitting <kbd>F5</kbd>.
            * If you're using the licensed visual in the Power BI Desktop, close and reopen it.
@@ -171,7 +175,8 @@ sections:
       - question: |
           What happens if the subscription owner leaves the company?
         answer: |
-          Even if the owner of the subscription leaves the company, tenant admin purchases (typically known as Org purchases) continue to work as-is. Any license admin (Global Admin, License Admin, User Admin) can manage the licenses. The subscriptions can be managed by any Billing Admin or Global Admin with access to the billing account used for purchase.
+          Even if the owner of the subscription leaves the company, tenant admin purchases (typically known as organizational purchases) continue to work as-is. If the owner was an admin, any license admin (Global Admin, License Admin, User Admin) can continue to manage the licenses. The subscriptions can be managed by any Billing Admin or Global Admin with access to the billing account used for purchase.  
+          If the owner wasn't an admin, the license will continue to work as long as the subscription is active. However, the subscription can't be managed by anyone else.
           
       - question: |
           We're a global team. Can we assign licenses to someone working in another country?
