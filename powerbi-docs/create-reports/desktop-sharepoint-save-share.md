@@ -17,7 +17,7 @@ Work seamlessly in Power BI Desktop with the ability to open, save, and share fi
 > [!NOTE]
 > This is prerelease documentation and some capabilities may not be available in your tenant. 
 
-## Enable viewing Power BI files in OneDrive and SharePoint
+## Enable sharing links to Power BI files in OneDrive and SharePoint
 
 > [!NOTE]
 > Sharing from Power BI Desktop is **enabled by default** and also required individual users to turn on the preview features in Power BI Desktop.
