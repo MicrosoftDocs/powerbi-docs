@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 05/16/2023
 LocalizationGroup: Admin
 ---
-# Direct Lake (Preview)
+# Direct Lake (PREVIEW)
 
 > [!IMPORTANT]
-> Direct Lake is currently in **Preview**. Functionality and documentation are likely to change. Before testing in your environment, be sure to read [Known issues and preview limitations](#known-issues-and-preview-limitations) later in this article.
+> Direct Lake is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here. Before testing in your environment, be sure to read [Known issues and limitations](#known-issues-and-preview-limitations) later in this article.
 
 *Direct Lake* mode is a groundbreaking new dataset capability for analyzing very large data volumes in Power BI. Direct Lake is based on loading parquet-formatted files directly from a data lake without having to query a Lakehouse endpoint, and without having to import or duplicate data into a Power BI dataset. Direct Lake is a fast-path to load the data from the lake straight into the Power BI engine, ready for analysis. The following diagram shows how classic import and DirectQuery modes compare with the new Direct Lake mode.
 
 :::image type="content" source="media/directlake-overview/directlake-diagram.png" border="false" alt-text="Direct Lake feature diagram.":::
 
 > [!NOTE]
-> Data Warehouse is not currently supported in **Preview**.
+> Data Warehouse is not currently supported in **PREVIEW**.
 
 In DirectQuery mode, the Power BI engine queries the data at the source, which can be slow but avoids having to copy the data. Any changes at the data source are immediately reflected in the query results.
 
@@ -42,11 +42,11 @@ To learn how to provision a Lakehouse, create a delta table in the Lakehouse, an
 
 As part of provisioning a Lakehouse, a SQL endpoint for SQL querying and a default dataset for reporting are created and updated with any tables added to the Lakehouse. While Direct Lake mode doesn't query the SQL endpoint when loading data directly from OneLake, it's required when a Direct Lake dataset must seamlessly fall back to DirectQuery mode, such as when the data source uses specific features like advanced security or views that can't be read through Direct Lake.
 
-## Known issues and preview limitations
+## Known issues and limitations
 
-The following are known issues and limitations during **Preview**:
+The following are known issues and limitations during **PREVIEW**:
 
-- Direct Lake size limits are likely to change during **Preview**. More definitive limits will be determined and described in this article by GA (General Availability). If limits are reached, queries are executed in DirectQuery mode.
+- Direct Lake size limits are likely to change during **PREVIEW**. More definitive limits will be determined and described in this article by GA (General Availability). If limits are reached, queries are executed in DirectQuery mode.
 
     | Sku      | # of Row (Million) per table used by the query |
     |----------|------------------------------------------------|
@@ -180,7 +180,7 @@ There are multiple options to load data into a Lakehouse, including data pipelin
 
     :::image type="content" source="media/directlake-overview/directlake-web-modeling.png" alt-text="Screenshot showing Web modeling in Power BI.":::
 
-When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and query the dataset through XMLA endpoints in much the same way as any other dataset. During **Preview**, XMLA write operations are not yet supported.
+When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and query the dataset through XMLA endpoints in much the same way as any other dataset. During **PREVIEW**, XMLA write operations are not yet supported.
 
 ## Analyze query processing
 
