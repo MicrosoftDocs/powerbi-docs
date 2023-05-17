@@ -13,9 +13,9 @@ LocalizationGroup: Admin
 # Analyze query processing for Direct Lake datasets (Preview)
 
 > [!IMPORTANT]
-> Direct Lake is currently in **Preview**. Functionality and documentation are likely to change. Before testing in your environment, be sure to read [Known issues and preview limitations](#known-issues-and-preview-limitations) later in this article.
+> Direct Lake is currently in **Preview**. Functionality and documentation are likely to change.
 
-In [*Direct Lake*](directlake-overview.md) mode, datasets read delta tables directly from OneLake — unless they have to fallback to *DirectQuery* mode. Typical fallback reasons include memory pressure prevent loading of columns required to process a DAX query, and certain features at the data source might not support Direct Lake mode, like SQL views in a Warehouse. In general, Direct Lake mode is very fast unless a fallback to DirectQuery mode is necessary. Because fallback to DirectQuery can impact DAX query performance, it might make sense to analyze query processing for a Direct Lake dataset to identify if and how often fallbacks occur.
+Power BI datasets in [*Direct Lake*](directlake-overview.md) mode read delta tables directly from OneLake — unless they have to fallback to *DirectQuery* mode. Typical fallback reasons include memory pressures may prevent loading of columns required to process a DAX query, and certain features at the data source might not support Direct Lake mode, like SQL views in a Warehouse. In general, Direct Lake mode provides the best DAX query performance unless a fallback to DirectQuery mode is necessary. Because fallback to DirectQuery mode can impact DAX query performance, it's important to analyze query processing for a Direct Lake dataset to identify if and how often fallbacks occur.
 
 There are several different tools you can use to analyze query processing. Performance analyzer in Power BI Desktop, SQL Server Profiler, and third-party tools like DAX Studio all work well. This article describes using Performance Analyzer for a quick glance, and SQL Profiler for more thorough tracing.
 
