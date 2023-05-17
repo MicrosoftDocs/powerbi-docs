@@ -74,14 +74,14 @@ SQL Server Profiler can provide more details about query performance by tracing 
 
     |Event  |Description  |
     |---------|---------|
-    |**DirectQuery Begin**</BR>**DirectQuery End**     |   If DirectQuery Begin/End events appear in the trace, the dataset might have fallen back to DirectQuery mode. Note, however, that the presence of EngineEdition queries and possibly queries to check Object Level Security (OLS) do not represent a fallback because the engine always uses DirectQuery mode for these non-query processing related checks.        |
-    |**VertiPaq SE Query Begin**</BR> **VertiPaq SE Query Cache Match**</BR> **VertiPaq SE Query Cache Miss**</BR> **VertiPaq SE Query End**     |  VertiPaq storage engine (SE) events in Direct Lake mode are the same as for import mode.      |
+    |**DirectQuery_Begin**</BR>**DirectQuery_End**     |   If DirectQuery Begin/End events appear in the trace, the dataset might have fallen back to DirectQuery mode. Note, however, that the presence of EngineEdition queries and possibly queries to check Object Level Security (OLS) do not represent a fallback because the engine always uses DirectQuery mode for these non-query processing related checks.        |
+    |**VertiPaq_SE_Query_Begin**</BR> **VertiPaq_SE_Query_Cache_Match**</BR> **VertiPaq_SE_Query_Cache_Miss**</BR> **VertiPaq_SE_Query_End**     |  VertiPaq storage engine (SE) events in Direct Lake mode are the same as for import mode.      |
 
     It should look like this:
 
     :::image type="content" source="media/directlake-analyze-qp/sql-profiler-select-events.png" alt-text="Image showing select query processing events in SQL Server Profiler":::
 
-1. Select **Run**. In Power BI Desktop, create a new report or interact with an existing report to generate query events. Review the SQL Server Profiler trace report for query processing events. 
+1. Select **Run**. In Power BI Desktop, create a new report or interact with an existing report to generate query events. Review the SQL Server Profiler trace report for query processing events.
 
     The following image shows an example of query processing events for a DAX query. In this trace, the VertiPaq storage engine (SE) events indicate that the query was processed in Direct Lake mode.
     :::image type="content" source="media/directlake-analyze-qp/sql-profiler-qp-events.png" alt-text="Query processing events in SQL Server Profiler":::
