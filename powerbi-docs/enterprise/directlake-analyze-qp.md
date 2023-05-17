@@ -24,8 +24,11 @@ There are several different tools you can use to analyze query processing. Perfo
 Performance analyzer can provide a quick and easy look into how a visual queries a data source, and how much time it takes to render a result.
 
 1. Start Power BI Desktop. On the startup screen select **Get Data**.
+
 1. In **Get Data** > **Power Platform**, select **Power BI datasets**, and then select **Connect**.
+
 1. In the **Data hub** page, select the Direct Lake dataset you want to connect to, and then select **Connect**.
+
 1. Place a card visual on the report canvas, select a data column to create a basic report, and then on the **View** menu, select **Performance analyzer**.
 
     :::image type="content" source="media/directlake-analyze-qp/viewing-performance-analyzer.png" alt-text="Viewing Performance analyzer":::
@@ -49,7 +52,7 @@ Performance analyzer can provide a quick and easy look into how a visual queries
 SQL Server Profiler can provide more details about query performance by tracing query events. It's installed with [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms). Before starting, make sure you have the latest version of SSMS installed.
 
 > [!NOTE]
-> Currently you can only trace query processing for manually created Direct Lake datasets. Currently, SQL Server Profiler and other XMLA-based management tools aren't able to connect to default datasets.
+> Currently, you can only trace query processing for manually created Direct Lake datasets. SQL Server Profiler and other XMLA-based management tools can't connect to default datasets.
 
 1. Start SQL Server Profiler from the Windows menu.
 
