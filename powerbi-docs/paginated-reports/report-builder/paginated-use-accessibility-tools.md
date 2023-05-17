@@ -101,7 +101,7 @@ If the Grouping pane is not visible, then you can make it visible by pressing Al
 1. The first Column Group
 
 When focus is on the Row Groups or Column Groups, tabbing lands only on the first group. To switch to other groups, use Up and Down arrow keys. 
-You can edit the group properties by opening a context menu for each group by using Space or Right arrow key as shown in the following image. You can navigate through the available options by using the Up and Down arrow keys. Use the Right arrow key to expand the options and the Left arrow key to move back to the the main set of options. To cancel the action use the Esc key.
+You can edit the group properties by opening a context menu for each group by using Space or Right arrow key as shown in the following image. You can navigate through the available options by using the Up and Down arrow keys. Use the Right arrow key to expand the options and the Left arrow key to move back to the main set of options. To cancel the action, use the Esc key.
 
 :::image type="content" source="media/paginated-use-accessibility-tools/report-builder-grouping-pane-add-group.png" alt-text="Screenshot showing Add group in the Grouping pane.":::
  
