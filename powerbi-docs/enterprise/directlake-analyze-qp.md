@@ -27,14 +27,22 @@ Performance analyzer can provide a quick and easy look into how a visual queries
 1. In **Get Data** > **Power Platform**, select **Power BI datasets**, and then select **Connect**.
 1. In the **Data hub** page, select the Direct Lake dataset you want to connect to, and then select **Connect**.
 1. Place a card visual on the report canvas, select a data column to create a basic report, and then on the **View** menu, select **Performance analyzer**.
-:::image type="content" source="media/directlake-analyze-qp/viewing-performance-analyzer.png" alt-text="Viewing Performance analyzer":::
+
+    :::image type="content" source="media/directlake-analyze-qp/viewing-performance-analyzer.png" alt-text="Viewing Performance analyzer":::
+
 1. In the **Performance analyzer** pane, select **Start recording**.
-:::image type="content" source="media/directlake-analyze-qp/start-recording.png" alt-text="Select Start recording":::
+
+    :::image type="content" source="media/directlake-analyze-qp/start-recording.png" alt-text="Select Start recording":::
+
 1. In the **Performance analyzer** pane, select **Refresh visuals**, and then expand the Card visual. Note that the Card does not generate any DirectQuery processing. This indicates the dataset was able to process the visual’s DAX queries in Direct Lake mode.
-:::image type="content" source="media/directlake-analyze-qp/refresh-visual-with-table-column.png" alt-text="Refresh visual with table column":::
+
+    :::image type="content" source="media/directlake-analyze-qp/refresh-visual-with-table-column.png" alt-text="Refresh visual with table column":::
+
 1. In the **Visualizations** pane, replace the table column with a column from a table based on a Warehouse view to force a fallback to DirectQuery mode.
+
 1. In **Performance analyzer**, note the visual’s queries now take longer and  there are **Direct query** events. This indicates that the dataset is falling back to DirectQuery mode to process the visual’s DAX query.
-:::image type="content" source="media/directlake-analyze-qp/fallback-based-on-view.png" alt-text="Fallback based on view":::
+
+    :::image type="content" source="media/directlake-analyze-qp/fallback-based-on-view.png" alt-text="Fallback based on view":::
 
 ## Analyze by using SQL Server Profiler
 
@@ -44,13 +52,21 @@ SQL Server Profiler can provide more details about query performance by tracing 
 > Currently you can only trace query processing for manually created Direct Lake datasets. Currently, SQL Server Profiler and other XMLA-based management tools aren't able to connect to default datasets.
 
 1. Start SQL Server Profiler from the Windows menu.
+
 1. In SQL Server Profiler, select **File** > **New Trace**.
+
 1. In **Connect to Server** > **Server type**, select **Analysis Services**, then in **Server name**, enter the URL to your workspace, then select an authentication method, and then enter a username to sign in to the workspace.
-:::image type="content" source="media/directlake-analyze-qp/sql-profiler-connect-server.png" alt-text="Connect to server dialog":::
+
+    :::image type="content" source="media/directlake-analyze-qp/sql-profiler-connect-server.png" alt-text="Connect to server dialog":::
+
 1. Select **Options**. In **Connect to database**, enter the name of your dataset and then select **Connect**. Sign in to Azure Active Directory.
-:::image type="content" source="media/directlake-analyze-qp/sql-profiler-connect-enter-dataset.png" alt-text="Enter dataset":::
+
+    :::image type="content" source="media/directlake-analyze-qp/sql-profiler-connect-enter-dataset.png" alt-text="Enter dataset":::
+
 1. In **Trace Properties** > **Events Selection**, select the **Show all events** checkbox.
-:::image type="content" source="media/directlake-analyze-qp/sql-profiler-show-all-events.png" alt-text="Events selection - Show all events":::
+
+    :::image type="content" source="media/directlake-analyze-qp/sql-profiler-show-all-events.png" alt-text="Events selection - Show all events":::
+
 1. Scroll to **Query Processing**, and then select checkboxes for the following events:
 
     |Event  |Description  |
@@ -59,6 +75,7 @@ SQL Server Profiler can provide more details about query performance by tracing 
     |**VertiPaq SE Query Begin**</BR> **VertiPaq SE Query Cache Match**</BR> **VertiPaq SE Query Cache Miss**</BR> **VertiPaq SE Query End**     |  VertiPaq storage engine (SE) events in Direct Lake mode are the same as for import mode.      |
 
     It should look like this:
+
     :::image type="content" source="media/directlake-analyze-qp/sql-profiler-select-events.png" alt-text="Image showing select query processing events in SQL Server Profiler":::
 
 1. Select **Run**. In Power BI Desktop, create a new report or interact with an existing report to generate query events. Review the SQL Server Profiler trace report for query processing events. 
