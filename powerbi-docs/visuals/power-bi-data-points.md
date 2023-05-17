@@ -113,9 +113,8 @@ Depending on the configuration, a map can have the following:
 
 ### Maps: Azure Maps
 
-- Max points: 30,000
-
-For more information, see [High density line sampling](../create-reports/desktop-high-density-sampling.md).
+- Latitude, longitude: 30,000 For more information, see [High density line sampling](../create-reports/desktop-high-density-sampling.md).
+- Location: 3,500
 
 ### Matrix
 - Rows: Virtualization by using Window of 500 rows at a time.
