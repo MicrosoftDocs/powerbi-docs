@@ -267,4 +267,4 @@ For more information, see [Objects and properties of Power BI visuals](objects-p
 
 * [Understand data view mapping in Power BI visuals](dataview-mappings.md)
 * [Objects and properties of Power BI visuals](objects-properties.md)
-*[Sorting options for Power BI visuals](sort-options.md)
+* [Sorting options for Power BI visuals](sort-options.md)

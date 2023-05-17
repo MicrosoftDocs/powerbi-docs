@@ -63,7 +63,9 @@
       - name: "Optimize ribbon overview"
         href: desktop-optimize-ribbon.md
       - name: "DirectQuery optimization scenarios"
-        href: desktop-optimize-ribbon-scenarios.md          
+        href: desktop-optimize-ribbon-scenarios.md    
+    - name: "OneDrive integration"
+      href: desktop-sharepoint-save-share.md
     - name: "Work with Report view"
       href: desktop-report-view.md
     - name: "Updated Format and Visualizations panes"
