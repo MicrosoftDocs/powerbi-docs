@@ -63,7 +63,9 @@
       - name: "Optimize ribbon overview"
         href: desktop-optimize-ribbon.md
       - name: "DirectQuery optimization scenarios"
-        href: desktop-optimize-ribbon-scenarios.md          
+        href: desktop-optimize-ribbon-scenarios.md    
+    - name: "OneDrive integration"
+      href: desktop-sharepoint-save-share.md
     - name: "Work with Report view"
       href: desktop-report-view.md
     - name: "Updated Format and Visualizations panes"
@@ -518,6 +520,8 @@
         href: ../consumer/paginated-reports-view-power-bi-service.md
       - name: Interact with parameters in the Power BI service
         href: ../consumer/paginated-reports-view-parameters.md
+      - name: View paginated report diagnostics
+        href: ../paginated-reports/paginated-reports-diagnostics.md
     - name: Design paginated reports
       items: 
       - name: Plan a report
@@ -546,6 +550,16 @@
           href: ../paginated-reports/report-design/textbox/format-text-in-a-text-box-report-builder-and-service.md
         - name: Set text box orientation
           href: ../paginated-reports/report-design/textbox/set-text-box-orientation-report-builder-and-service.md
+    - name: Drillthrough paginated reports
+      items: 
+      - name: Drillthrough, drilldown, subreports, nested data regions
+        href: ../paginated-reports/report-design/drillthrough-drilldown-subreports-nested-data-regions.md
+      - name: Drillthrough reports
+        href: ../paginated-reports/report-design/drillthrough-reports-report-builder.md
+      - name: Add a drillthrough action
+        href: ../paginated-reports/report-design/add-drillthrough-action-report-report-builder.md
+      - name: Drilldown action in paginated reports
+        href: ../paginated-reports/report-design/drilldown-action-report-builder.md
       - name: Subreports
         href: ../paginated-reports/subreports.md
       - name: Troubleshoot subreports
@@ -732,12 +746,22 @@
         href: ../paginated-reports/report-design/expression-uses-reports-report-builder.md
       - name: "Built-in collections: Report and group variables references"
         href: ../paginated-reports/report-design/built-in-collections-report-group-variables-references-report-builder.md
+      - name: Avg function
+        href: ../paginated-reports/report-builder/report-builder-functions-avg-function.md
       - name: CountDistinct function
         href: ../paginated-reports/report-design/report-builder-functions-countdistinct-function.md
       - name: CountRows function
         href: ../paginated-reports/report-design/report-builder-functions-countrows-function.md
       - name: First function
         href: ../paginated-reports/report-design/report-builder-functions-first-function.md
+      - name: Last function
+        href: ../paginated-reports/report-builder/report-builder-functions-last-function.md
+      - name: Max function
+        href: ../paginated-reports/report-builder/report-builder-functions-max-function.md
+      - name: Multilookup  function
+        href: ../paginated-reports/report-builder/report-builder-functions-multilookup-function.md
+      - name: Previous  function
+        href: ../paginated-reports/report-builder/report-builder-functions-previous-function.md
     - name: Parameters
       items:
       - name: Parameters

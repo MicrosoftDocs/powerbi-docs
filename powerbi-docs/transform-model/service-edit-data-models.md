@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 04/20/2023
+ms.date: 05/04/2023
 ms.custom: references_regions
 LocalizationGroup: Transform and shape data
 ---
@@ -147,7 +147,7 @@ You can then drag a table from the **Data** pane onto the new layout. Right-clic
 
 
 > [!NOTE]
-> Any additional layouts you make in the Power BI service other than the *All tables* layout won’t be saved for future sessions. Additionally, when uploading a .PBIX file to the Power BI service, no existing layouts other than *All tables* appear in the Power BI service.
+> When uploading a .PBIX file to the Service the data model will not include any existing layout changes, including custom layouts created in Desktop. Similarly, when downloading the .PBIX file, any layout changes made in the Service, including custom layouts, will not appear in Power BI Desktop.
 
 ### Create reports
 You can create a new report from the data model editing in the service experience by selecting the **New report** button in the ribbon. This opens a new browser tab to the report editing canvas to a new report that is built on the dataset. 
@@ -161,6 +161,11 @@ As you made changes to your data model, your changes are automatically saved. Ch
 
 ## Permissions
 A user must have write and build [dataset permissions](../connect-data/service-datasets-permissions.md) in order to open and edit the corresponding data model in the Power BI service.
+
+## Enabling data model editing in the admin portal
+Power BI administrators can enable or disable data model editing in the service for the entire organization or for specific security groups, using the setting found in the Power BI **admin portal**, as shown in the following image.
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-22.png" alt-text="Screenshot of the admin portal setting enabled for editing data models in the service.":::
 
 ## Viewing audit logs and activity events
 Power BI administrators can audit operations pertaining to editing data models in the web operations from the **Microsoft 365 Admin Center**. Audit operations supported for editing data models in the web are the following:
@@ -182,8 +187,8 @@ You can monitor the impact editing data models in the service has on your Power 
 
 |Operation  |Description  |Workload |Type  |
 |---------|---------|---------|---------|
-|Web Modeling read     |A user initiated read operation to a data model on the web.         |Datasets	|Interactive         |
-|Web Modeling write     |A user initiated write operation to modify a data model on the web.         |Datasets	|Interactive         |
+|Web Modeling read     |A data model read operation in the dataset web modeling user experience         |Datasets	|Interactive         |
+|Web Modeling write     |A data model write operation in the dataset web modeling user experience         |Datasets	|Interactive         |
 
 
 
@@ -223,11 +228,7 @@ To see which limitation is preventing you from opening your data model, hover ov
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-23.png" alt-text="Screenshot of hovering over the open data model button.":::
 
 ### Layouts
-Any changes you make to layouts won’t be saved for future sessions. This includes:
-
-* Any additional layouts you make in the service other than the *All tables* layout won’t be saved for future sessions. Additionally, when uploading a .PBIX file to the service, no existing layouts other than *All tables* appear in the Power BI service. When downloading the .PBIX file, no layouts other than *All tables* appear in Power BI Desktop.
-* Any visual changes you make to a relationship diagram in any layout including the *All tables* layout won’t be saved for future sessions. This encompasses all visual alterations made to a layout such as the location of cards, expand all/collapse all fields in a card, and pinning fields to the top of a card. 
-
+When uploading a .PBIX file to the Service the data model will not include any existing layout changes, including custom layouts created in Desktop. Similarly, when downloading the .PBIX file, any layout changes made in the Service, including custom layouts, will not appear in Power BI Desktop.
 
 ### Limitations
 There are still many functional gaps between the model view in Power BI desktop and service. Functionality not yet supported in the service includes:
