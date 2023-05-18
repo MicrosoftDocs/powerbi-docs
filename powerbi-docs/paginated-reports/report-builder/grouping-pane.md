@@ -25,7 +25,7 @@ When designing Power BI Services reports, the Grouping pane displays the row gro
 ## Default mode  
  In default mode, the Row Groups pane and the Column Groups pane display a hierarchical view for all parent groups, child groups, and adjacent groups. A child group appears indented under its parent group. An adjacent group appears at the same indent level as its sibling groups. The following figure shows a Tablix data region with nested row groups and nested and adjacent column groups.  
   
- ![Screenshot showing Tablix, nested and adjacent row and column groups](../media/basic-tablix-design-grouping-pane.gif "Tablix, nested and adjacent row and column groups")  
+ ![Screenshot showing Tablix, nested and adjacent row and column groups](../report-builder/media/basic-tablix-design-grouping-pane.gif "Tablix, nested and adjacent row and column groups")  
   
  The Grouping pane displays the corresponding row and column groups. In the following figure, the group based on subcategory has been selected in the Row Groups pane, and the [Subcat] grouping cell is selected in the Tablix data region:  
   
