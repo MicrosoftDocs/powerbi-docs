@@ -69,7 +69,7 @@ ms.reviewer: saurkumar
 |Option|Result|  
 |------------|------------|  
 |**Refresh** button on the browser window|Displays the report stored in the session cache. A session cache is created when a user opens a report. Power BI Services uses browser sessions to maintain a consistent viewing experience while a report is open.|  
-|![Screenshot showing browser refresh button on report toolbar](/../media/browser-refresh-button-report-toolbar.png)|When you click the **Refresh** button on the report toolbar, the Power BI Services re-runs the query and updates report data if the report runs on-demand.|  
+|![Screenshot showing browser refresh button on report toolbar](../report-builder/media/browser-refresh-button-report-toolbar.png)|When you click the **Refresh** button on the report toolbar, the Power BI Services re-runs the query and updates report data if the report runs on-demand.|  
 |CTRL+F5 keyboard combination|Produces the same result as clicking the **Refresh** button on the report toolbar.|  
   
   
