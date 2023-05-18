@@ -1,22 +1,20 @@
 ---
-title: "Print a Report (Report Builder) | Microsoft Docs"
-description: You can view and print a report from a browser, the Reporting Services web portal, or any application that you use to view an exported report.
-ms.date: 03/30/2017
-ms.service: reporting-services
+title: "Print a report (Power BI Report Builder) | Microsoft Docs"
+description: You can view and print a report from a browser, the Power BI Services web portal, or any application that you use to view an exported report.
+ms.date: 05/15/2023
+ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
-ms.assetid: b96936c9-c387-41a9-8c19-6eb325769ffd
 author: maggiesMSFT
 ms.author: maggies
+ms.reviewer: saurkumar
 ---
-# Print a Report (Report Builder and SSRS)
-  After you save a report to a report server, you can view and print the report from a browser, the Reporting Services web portal, or any application that you use to view an exported report. Before saving a report, you can print it when you preview it.  
+# Print a report (Power BI Report Builder)
+  After you save a report to a Power BI Services, you can view and print the report from a browser, the Power BI Services web portal, or any application that you use to view an exported report. Before saving a report, you can print it when you preview it.  
   
- When you print a report, you can specify the size of the paper to use. The size of the paper determines the number of pages in a report and which report data fits on each page. Paper size affects only reports that are rendered with hard page-break renders: PDF, Image, and Print. Setting the paper size has no effect on other renderers. For more information, see [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](../../reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs.md).  
+ When you print a report, you can specify the size of the paper to use. The size of the paper determines the number of pages in a report and which report data fits on each page. Paper size affects only reports that are rendered with hard page-break renders: PDF, Image, and Print. Setting the paper size has no effect on other renderers. For more information, see [Rendering Behaviors &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs).  
   
- From the report viewer toolbar in the Reporting Services web portal or in preview in Report Builder, you can export a report to a hard page-break renderer or click the Print button to print a copy of the report. You might need to set the paper size or other page setup properties. Use the **Report Properties** dialog box to change page setup properties, including paper size.  
+ From the report viewer toolbar in the Power BI Services web portal or in preview in Power BI Report Builder, you can export a report to a hard page-break renderer or click the Print button to print a copy of the report. You might need to set the paper size or other page setup properties. Use the **Report Properties** dialog box to change page setup properties, including paper size.  
   
  You can specify print page margins in two different locations: in design mode and in run mode.  
   
@@ -27,12 +25,10 @@ ms.author: maggies
     > [!NOTE]  
     >  Print margins are not displayed in design or run modes. There is no relationship between the design surface area and the print area of your report. To see print margins, in run mode, click Print Layout on the **Run** tab on the Ribbon.  
   
- For more information about report paging, see [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](../../reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs.md).  
+ For more information about report paging, see [Pagination in Reporting Services &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs).  
   
-> [!NOTE]  
->  [!INCLUDE[ssRBRDDup](../../includes/ssrbrddup-md.md)]  
   
-### To print a report in Report Builder  
+### To print a report in Power BI Report Builder  
   
 1.  Open a report.  
   
@@ -51,7 +47,7 @@ ms.author: maggies
   
 ### To print a report from a Web browser application  
   
-1.  In the Reporting Services web portal, navigate to the report that you want to print. Open the report.  
+1.  In the Power BI Services web portal, navigate to the report that you want to print. Open the report.  
   
 3.  On the toolbar at the top of the report, click **Print**.  
   
@@ -62,7 +58,7 @@ ms.author: maggies
   
 ### To print a report from other applications  
   
-1.  In the Reporting Services web portal, navigate to the report that you want to print. Open the report.  
+1.  In the Power BI Services web portal, navigate to the report that you want to print. Open the report.  
   
 2.  On the toolbar at the top of the report, select a rendering format, and then click **Export**. The report opens in a viewer application that corresponds to the rendering format.  
   
@@ -87,9 +83,8 @@ ms.author: maggies
   
 -   Click **Page Setup** on the **Run** tab.  
   
-## See Also  
- [Print Reports &#40;Report Builder and SSRS&#41;](../../reporting-services/report-builder/print-reports-report-builder-and-ssrs.md)   
- [Export Reports &#40;Report Builder and SSRS&#41;](../../reporting-services/report-builder/export-reports-report-builder-and-ssrs.md)   
- [Report Properties Dialog Box, Page Setup &#40;Report Builder&#41;](/previous-versions/sql/sql-server-2016/dd220640(v=sql.130))   
- [Report Design View &#40;Report Builder&#41;](../../reporting-services/report-builder/report-design-view-report-builder.md)  
+## Next steps  
+ [Print Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/print-reports-report-builder-and-ssrs)   
+ [Export Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/export-reports-report-builder-and-ssrs)   
+ [Report Design View &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/report-design-view-report-builder)  
   

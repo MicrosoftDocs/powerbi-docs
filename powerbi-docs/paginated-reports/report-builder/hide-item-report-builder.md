@@ -1,28 +1,22 @@
 ---
-title: "Hide an Item (Report Builder) | Microsoft Docs"
-description: In Report Builder, you can set the visibility of a report item. You can specify a report parameter or other expression to conditionally hide an item.
-ms.date: 03/01/2017
-ms.service: reporting-services
+title: "Hide an Item (Power BI Report Builder) | Microsoft Docs"
+description: In Power BI Report Builder, you can set the visibility of a report item. You can specify a report parameter or other expression to conditionally hide an item.
+ms.date: 05/15/2023
+ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
-f1_keywords: 
-  - "sql13.rtp.rptdesigner.shared.visibility.f1"
-  - "10503"
-ms.assetid: 9d78f8de-959b-456f-8947-687fa6e2ba91
 author: maggiesMSFT
 ms.author: maggies
+ms.reviewer: saurkumar
+
 ---
-# Hide an Item (Report Builder and SSRS)
+# Hide an item (Power BI Report Builder)
   Set the visibility of a report item when you want to conditionally hide an item based on a report parameter or some other expression that you specify.  
   
- You can also design a report to allow the user to toggle the visibility of report items based on clicking text boxes in the report, for example, for a drilldown report. For more information, see [Add an Expand or Collapse Action to an Item &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-an-expand-or-collapse-action-to-an-item-report-builder-and-ssrs.md).  
+ You can also design a report to allow the user to toggle the visibility of report items based on clicking text boxes in the report, for example, for a drilldown report. For more information, see [Add an Expand or Collapse action to an item &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-an-expand-or-collapse-action-to-an-item-report-builder-and-ssrs).  
   
  The following procedures describe how to show or hide a report item in a rendered report based on a constant or an expression.  
   
-> [!NOTE]  
->  [!INCLUDE[ssRBRDDup](../../includes/ssrbrddup-md.md)]  
   
 ### To hide a report item  
   
@@ -43,7 +37,7 @@ ms.author: maggies
   
         > [!NOTE]  
         >  When you specify an expression for visibility, you are setting the Hidden property of the report item, as shown in the following image. The evaluated expression shows the report item when the value is False, and hides the report item when the value is True.   
-        > ![Properties_Visibility dialog and Hidden property](../../reporting-services/report-builder/media/hiddenproperty-propertiesvisibility.png "Properties_Visibility dialog and Hidden property")  
+        > ![Screenshot showing Properties_Visibility dialog and Hidden property](../media/hidden-property-properties-visibility.png "Properties_Visibility dialog and Hidden property")  
   
 4.  Click **OK** twice.  
   
@@ -63,9 +57,9 @@ ms.author: maggies
   
 3.  In the **Column Visibility** dialog box, follow steps 3 and 4 in the first procedure.  
   
-## See Also  
- [Drilldown Action &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/drilldown-action-report-builder-and-ssrs.md)   
- [Add an Expand or Collapse Action to an Item &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-an-expand-or-collapse-action-to-an-item-report-builder-and-ssrs.md)   
- [Expression Examples &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expression-examples-report-builder-and-ssrs.md)  
+## Next steps 
+ [Drilldown Action &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/drilldown-action-report-builder-and-ssrs)   
+ [Add an Expand or Collapse action to an item &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-an-expand-or-collapse-action-to-an-item-report-builder-and-ssrs)   
+ [Expression examples &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)  
   
   
