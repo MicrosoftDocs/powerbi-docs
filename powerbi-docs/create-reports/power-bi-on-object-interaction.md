@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/13/2023
+ms.date: 05/17/2023
 LocalizationGroup: Visualizations
 ---
 # Use on-object interaction with visuals in your report (preview)
@@ -53,6 +53,12 @@ If you prefer to see all the field wells as before, turn off the **Suggest a typ
 > [!TIP]
 > You can also turn this toggle off by default as well as pinning the full visualization gallery tray open. Select **File** > **Options and settings** > **Options** > **Report settings**, and clear the **Suggest a visual type by default** check box.
 
+### Add aggregations
+
+When you add a data field to your visual, the **Data** drop-down menu opens by default. Select the aggregation you want.
+
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-aggregation.png" alt-text="Select the aggregation you want.":::
+
 ## Format a visual on object
 
 The default behavior when you hover over a visual is to see tooltips, and clicking around a visual, you get the cross-highlight and cross-filter effect. To avoid conflicting with this existing behavior, we introduced a new *format* mode. When you're in format mode, the hover and click behavior changes to show subselection regions.  
@@ -87,7 +93,7 @@ When selecting an element that's very close or overlapping another, Power BI tak
 
 ### Supported visuals for on-object formatting
 
-- On-object formatting is currently supported for bar, column, line, area, combo, scatter, and card visuals. Small multiples aren't currently supported.
+- On-object formatting is currently supported for bar, column, line, area, combo, scatter, card, pie, and table visuals. Small multiples aren't currently supported.
 - Format mode isn't currently supported in mobile layout.
 - Format mode isn't currently supported in focus mode.
 

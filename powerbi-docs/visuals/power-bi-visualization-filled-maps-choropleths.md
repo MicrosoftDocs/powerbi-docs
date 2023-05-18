@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/12/2022
+ms.date: 05/17/2023
 ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
 ---
@@ -16,6 +16,9 @@ LocalizationGroup: Visualizations
 # Create and use filled maps (choropleth maps) in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
+> [!NOTE]
+> The Azure Maps visual is now generally available. When you open a report with an existing map visual, if Azure Maps is enabled for your organization, you see a message encouraging you to upgrade your map to an Azure Map. You can convert your maps to Azure Maps now. In a future release, Power BI plans to deprecate older map visuals and migrate existing reports to Azure Maps.
 
 A filled, or *choropleth*, map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region. You can quickly display relative differences with shading that ranges from light (less frequent/lower) to dark (more frequent/more).
 
