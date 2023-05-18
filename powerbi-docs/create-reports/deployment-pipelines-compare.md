@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.date: 05/09/2023
+ms.date: 05/18/2023
 ms.search.form: Deployment pipelines operations
 ---
 
@@ -109,7 +109,7 @@ Close the window when you finish examining the differences and deploy to the nex
 - The *change review* feature only supports schema changes for textual item types. Currently it supports datasets, excluding data modeling format v1, and dataflows.
 
 - An item can be tagged as *Different*, but still not qualify for change review. In these cases, the **Change review** button is disabled. For example:
-  - Settings changes such as name change.
+  - Settings changes such as item rename or datasource changes.
   - Item type isn't yet supported.
   - Item has an unknown status because the comparison process wasn't completed.
 
