@@ -3,7 +3,7 @@ title: "Power BI Report Builder"
 description: Power BI Report Builder is a tool for authoring paginated reports that you can publish to the Power BI service. Paginated reports are designed to be printed or shared. They're formatted to fit well on a page, and they display *all* the data in a table, even if the table spans multiple pages.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 07/21/2022
+ms.date: 05/18/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -29,7 +29,7 @@ The following paginated report is a sample of an invoice. You can download it an
 
 ## Start with the Table, Matrix, or Chart wizard
 
-Create a data source connection, drag and drop fields to create a dataset query, select a layout and style, and customize your report.  
+Create a data source connection, drag and drop fields to create a dataset query, select a layout, add accessibility row properties, and style, and customize your report.  
   
 ## Start with the Map wizard
 
