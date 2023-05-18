@@ -16,7 +16,7 @@ LocalizationGroup: Get started
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-When you're new to the Power BI service, you'll have only a few pieces of content (dashboards, reports, apps). But as colleagues begin sharing content with you and you begin downloading apps, you can end up with long lists of content. That's when you'll find searching and sorting extremely helpful.
+When you're new to the Power BI service, you have only a few pieces of content (dashboards, reports, apps). But as colleagues begin sharing content with you and you begin downloading apps, you can end up with long lists of content. That's when you find searching and sorting helpful.
 
 ## Search for content
 
@@ -35,7 +35,7 @@ In some Power BI areas, such as workspaces, you'll find two different **Search**
 
 ## Sort content lists
 
-If you have only a few pieces of content, sorting won't be necessary. But when you have long lists of dashboards and reports, sorting will help you find what you need. For example, this **Shared with me** content list has many items.
+If you have only a few pieces of content, sorting isn't necessary. But when you have long lists of dashboards and reports, sorting helps you find what you need. For example, this **Shared with me** content list has many items.
 
 :::image type="content" source="./media/end-user-search-sort/power-bi-shared-with-me-search.png" alt-text="Screenshot of a Shared with me content list with multiple items.":::
 
@@ -51,7 +51,7 @@ Not all columns can be sorted. Hover over the column headings to discover which 
 
 ## Filter content lists
 
-Another way to locate content quickly is to use the content list **Filter**. Display the filters by selecting **Filter** from the upper right corner. The filters available will depend on your location in the Power BI service. The example below is from a **Recent** content list. It allows you to filter the list by content **Type**, **Time**, or **Owner**.
+Another way to locate content quickly is to use the content list **Filter**. Display the filters by selecting **Filter** from the upper right corner. The filters available depend on your location in the Power BI service. This example is from a **Recent** content list. It allows you to filter the list by content **Type**, **Time**, or **Owner**.
 
 :::image type="content" source="./media/end-user-search-sort/power-bi-sort-filters-new.png" alt-text="Screenshot of the filter on a Recent content list.":::
 
