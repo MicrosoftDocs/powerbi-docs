@@ -130,7 +130,7 @@ There are different ways of creating a Microsoft 365 group. For example, you can
 > [!NOTE]
 > Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and don't support subscribing group aliases.  
 
-<!-- ##Subsriptions for users outside your organization -->
+##Subsriptions for users outside your organization
 ### Subscribe external users 
 
 You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity. B2B guest users can't add subscriptions for external users. 
@@ -302,8 +302,8 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 
 * Dataset refresh operations using an XMLA endpoint.
 
-* The following Power BI visuals listed below aren't supported.  When you subscribe to a report containing these visuals, they'll display an error symbol. 
-    - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
+* The following Power BI visuals aren't supported.  When you subscribe to a report containing these visuals, they'll display an error symbol. 
+    - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
     - [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
     - [R visuals](../visuals/service-r-visuals.md)
     - [Power Apps visuals](../visuals/power-bi-visualization-powerapp.md)

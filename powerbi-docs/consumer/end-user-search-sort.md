@@ -31,7 +31,7 @@ In some Power BI areas, such as workspaces, you'll find two different **Search**
 :::image type="content" source="./media/end-user-search-sort/power-bi-search-fields-new.png" alt-text="Screenshot of a workspace with two different search fields.":::
 
 > [!NOTE]
-> Search is disabled for [guest users](../collaborate-share/service-roles-new-workspaces.md). If a guest user enters a search term, no results are shown. 
+> Search is disabled for [B2B guest users](../collaborate-share/service-roles-new-workspaces.md). If a guest user enters a search term, no results are shown. 
 
 ## Sort content lists
 
