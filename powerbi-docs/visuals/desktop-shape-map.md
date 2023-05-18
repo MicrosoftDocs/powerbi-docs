@@ -16,7 +16,7 @@ LocalizationGroup: Transform and shape data
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 > [!NOTE]
-> The Azure Maps visual is now generally available. When you open a report with an existing map visual, if Azure Maps is enabled for your organization, you see a message encouraging you to upgrade your map to an Azure Map. You can convert your maps to Azure Maps now. In a future release, Power BI plans to deprecate older map visuals and migrate existing reports to Azure Maps.
+> The Azure Maps visual is now generally available. When you open a report with an existing map visual, if Azure Maps is enabled for your organization, you see a message encouraging you to upgrade your maps and filled maps to Azure Maps. You can convert your maps to Azure Maps now. In a future release, Power BI plans to deprecate older map visuals and migrate existing reports to Azure Maps.
 
 Create a **Shape map** visual to compare regions on a map using color. Unlike the **Map** visual, **Shape map** doesn't show precise geographical locations of data points on a map. Instead, its main purpose is to compare regions on a map by coloring them differently.
 

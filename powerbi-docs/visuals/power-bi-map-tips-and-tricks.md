@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)] 
 
 > [!NOTE]
-> The Azure Maps visual is now generally available. When you open a report with an existing map visual, if Azure Maps is enabled for your organization, you see a message encouraging you to upgrade your map to an Azure Map. You can convert your maps to Azure Maps now. In a future release, Power BI plans to deprecate older map visuals and migrate existing reports to Azure Maps.
+> The Azure Maps visual is now generally available. When you open a report with an existing map visual, if Azure Maps is enabled for your organization, you see a message encouraging you to upgrade your maps and filled maps to Azure Maps. You can convert your maps to Azure Maps now. In a future release, Power BI plans to deprecate older map visuals and migrate existing reports to Azure Maps.
 
 Power BI integrates with Bing Maps to provide default map coordinates (a process called geo-coding) so you can create maps. Together they use algorithms to identify the correct location, but sometimes it's a best guess. If Power BI tries, but can't create the map visualization on its own, it enlists the help of Bing Maps. Read more in [Bing Maps Documentation](/bingmaps).
 

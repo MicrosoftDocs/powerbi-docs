@@ -18,7 +18,7 @@ LocalizationGroup: Visualizations
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 > [!NOTE]
-> The Azure Maps visual is now generally available. When you open a report with an existing map visual, if Azure Maps is enabled for your organization, you see a message encouraging you to upgrade your map to an Azure Map. You can convert your maps to Azure Maps now. In a future release, Power BI plans to deprecate older map visuals and migrate existing reports to Azure Maps.
+> The Azure Maps visual is now generally available. When you open a report with an existing map visual, if Azure Maps is enabled for your organization, you see a message encouraging you to upgrade your maps and filled maps to Azure Maps. You can convert your maps to Azure Maps now. In a future release, Power BI plans to deprecate older map visuals and migrate existing reports to Azure Maps.
 
 A filled, or *choropleth*, map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region. You can quickly display relative differences with shading that ranges from light (less frequent/lower) to dark (more frequent/more).
 

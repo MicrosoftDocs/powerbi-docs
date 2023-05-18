@@ -35,12 +35,15 @@ You can begin building a new visual in one of three ways.
 
 - Select or drag fields from the Data pane.
 - Select a new visual from the **Insert** section of the ribbon, and then add fields. If you have the ribbon collapsed, select **Visual gallery** > select a visual.
+
+    :::image type="content" source="media/power-bi-on-object-interaction/on-object-ribbon-visualization-gallery.png" alt-text="Insert a visual from the Visual gallery.":::
+
 - Right-click the canvas > **Add visual** or **Paste**.
 
 You notice the Visualizations pane is no longer available, by design. The updated [Format and Visualizations panes in Power BI](../fundamentals/desktop-format-pane.md) article has details.
 
 > [!NOTE]
-> Custom visuals aren't currently shown in the ribbon gallery collapsed tray, but they're available from the dropdown.
+> Custom visuals are shown in the ribbon visualization gallery, along with the other visuals.
 
 As you add fields, the visual type updates dynamically based on what Power BI believes is the best visual type for your data. If you want to change the visual type manually, select the **Build a visual** button and select a visual in the **Visual types** tray. Selecting a visual type yourself turns off the automatic **Suggest a type** toggle.
 
@@ -70,7 +73,9 @@ You enter format mode in one of two ways:
 
 You know you’re in this new mode when the bounding box turns blue, the handle shapes turn to squares, and the hover and click behavior changes to show subselection regions.
 
-Now you can hover and click around in the visual to format specific subselections. Right-click the selected element to use the mini-toolbar and shortcut menu.
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-format-donut-slices.png" alt-text="On-object formatting for a donut chart.":::
+
+You can hover and click around in the visual to format specific subselections. Right-click the selected element to use the mini-toolbar and shortcut menu.
 
 :::image type="content" source="media/power-bi-on-object-interaction/mini-toolbar-shortcut-menu.png" alt-text="Screenshot showing mini-toolbar formatting options.":::
 
@@ -114,8 +119,7 @@ When selecting an element that's very close or overlapping another, Power BI tak
 
 ### Custom visuals
 
-- We plan to release an API for custom visual developers to be able to define sub-selection regions within their visuals.  
-- To find custom visuals using the new visualization gallery in the ribbon, you must expand the full dropdown.
+We plan to release an API for custom visual developers to be able to define sub-selection regions within their visuals.  
 
 ### Accessibility
 
