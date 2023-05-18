@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 02/10/2023
+ms.date: 05/18/2023
 LocalizationGroup: Get started
 ---
 
@@ -29,6 +29,9 @@ In the **Search** field, type all or part of the name of a dashboard, report, wo
 In some Power BI areas, such as workspaces, you'll find two different **Search** fields. The **Search** field in the menu bar searches all of your content while the **Search** field on the workspace canvas searches only that workspace.
 
 :::image type="content" source="./media/end-user-search-sort/power-bi-search-fields-new.png" alt-text="Screenshot of a workspace with two different search fields.":::
+
+> [!NOTE]
+> Search is disabled for [guest users](../collaborate-share/service-roles-new-workspaces.md). If a guest user enters a search term, no results are shown. 
 
 ## Sort content lists
 
