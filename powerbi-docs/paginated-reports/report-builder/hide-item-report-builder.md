@@ -37,7 +37,7 @@ ms.reviewer: saurkumar
   
         > [!NOTE]  
         >  When you specify an expression for visibility, you are setting the Hidden property of the report item, as shown in the following image. The evaluated expression shows the report item when the value is False, and hides the report item when the value is True.   
-        > ![Screenshot showing Properties_Visibility dialog and Hidden property](../media/hidden-property-properties-visibility.png "Properties_Visibility dialog and Hidden property")  
+        > ![Screenshot showing Properties_Visibility dialog and Hidden property](../report-builder/media/hidden-property-properties-visibility.png "Properties_Visibility dialog and Hidden property")  
   
 4.  Click **OK** twice.  
   
