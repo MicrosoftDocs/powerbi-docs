@@ -147,7 +147,7 @@ ms.reviewer: saurkumar
   
 ## Next steps  
  [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](add-change-delete-report-parameter-report-builder.md)  
- [Report Parameters &#40;Power BI Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer)   
+ [Report Parameters &#40;Power BI Report Builder and Report Designer&#41;](report-builder-parameters.md)   
  [Tutorial: Add a Parameter to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder)
  [Power BI Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials)   
  [Report Embedded Datasets and Shared Datasets &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs)  

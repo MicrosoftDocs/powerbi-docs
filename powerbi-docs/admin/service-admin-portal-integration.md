@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 03/07/2023
+ms.date: 03/08/2023
 LocalizationGroup: Administration
 ---
 
@@ -20,19 +20,19 @@ These settings are configured in the tenant settings section of the Admin portal
 
 When enabled, users in the organization can use Excel to view and interact with on-premises Power BI datasets. This also allows connections to XMLA endpoints. Learn more about [analyzing in Excel](../collaborate-share/service-analyze-in-excel.md).
 
-:::image type="content" source="media/service-admin-portal-integration/admin-integration-allow-xmla-endpoints-setting.png" alt-text="Screenshot of the allow x m l a endpoints and analyze in excel with on premises datasets admin setting.":::
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-allow-xmla-endpoints-setting.png" alt-text="Screenshot of the allow XMLA endpoints and analyze in Excel with on-premises datasets admin setting.":::
 
 ## Use ArcGIS Maps for Power BI
 
 When enabled, users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. Learn more about [ArcGIS maps](../visuals/power-bi-visualizations-arcgis.md).
 
-:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-arcgis-maps-setting.png" alt-text="Screenshot of the use arc gis maps for power b i admin setting.":::
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-arcgis-maps-setting.png" alt-text="Screenshot of the use arc gis maps for Power BI admin setting.":::
 
 ## Use global search for Power BI
 
 When enabled, users in the organization can use external search features that rely on Azure Search. See [Navigation for Power BI business users: global search](../consumer/end-user-search-sort.md) for more information.
 
-:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-global-search-setting.png" alt-text="Screenshot of the use global search for power b i admin setting.":::
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-global-search-setting.png" alt-text="Screenshot of the use global search for Power BI admin setting.":::
 
 ## Use Azure Maps Visual
 
@@ -88,6 +88,26 @@ This setting is on by default. To change the setting, go to the Power BI Admin p
 
 > [!NOTE]
 > Cross-geo operations in the Power BI/Power Apps solutions integration are allowed only when both this setting and the Power Platform setting are **ON**.
+
+## Users can view Power BI items saved in OneDrive and SharePoint (Preview)
+This setting allows users to view Power BI files saved in OneDrive for Business and SharePoint Online document libraries in their browser without needing to download the file and open in Power BI Desktop on their local machine. When enabled, the setting applies to all users in your organization. 
+
+Learn more about [viewing Power BI files saved in OneDrive and SharePoint](../collaborate-share/service-sharepoint-viewer.md).
+
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-viewer.png" alt-text="Screenshot of admin setting called: Users can view Power BI items saved in OneDrive and SharePoint.":::
+
+This setting is **off** by default. To change the setting, go to the Power BI Admin portal, select **Tenant settings > Integration settings > Users can view Power BI items saved in OneDrive and SharePoint (Preview)**, and set the toggle as desired.
+
+## Users can share links to Power BI files stored in OneDrive and SharePoint through Power BI Desktop
+Users can share links to Power BI Desktop files (.pbix) saved to OneDrive and SharePoint through Power BI Desktop. Sharing uses standard OneDrive and SharePoint sharing functionality. When enabled, this setting applies to all users in your organization. 
+
+Learn more about [sharing links through Power BI Desktop](../create-reports/desktop-sharepoint-save-share.md).
+
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-desktop-sharing.png" alt-text="Screenshot of admin setting called: Users can share links to Power BI files stored in OneDrive and SharePoint through Power BI Desktop.":::
+
+During public preview, if a user has enabled share through the Power BI Desktop menu, but the admin setting is disabled for the tenant, a **Share** button will still appear in Power BI Desktop, but the user will be notified that the capability is disabled when they attempt to share. 
+
+This setting is **on** by default. To change the setting, go to the Power BI Admin portal, select **Tenant settings > Integration settings > Users can share links to Power BI files stored in OneDrive and SharePoint through Power BI Desktop**.
 
 ## Next steps
 

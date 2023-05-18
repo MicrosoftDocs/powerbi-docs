@@ -1,4 +1,4 @@
-﻿- name: "Create reports and dashboards in Power BI"
+- name: "Create reports and dashboards in Power BI"
   href: index.yml
   items:
   - name: Overview
@@ -63,7 +63,9 @@
       - name: "Optimize ribbon overview"
         href: desktop-optimize-ribbon.md
       - name: "DirectQuery optimization scenarios"
-        href: desktop-optimize-ribbon-scenarios.md          
+        href: desktop-optimize-ribbon-scenarios.md    
+    - name: "OneDrive integration"
+      href: desktop-sharepoint-save-share.md
     - name: "Work with Report view"
       href: desktop-report-view.md
     - name: "Updated Format and Visualizations panes"
@@ -82,6 +84,8 @@
           href: service-quick-create-sharepoint-list.md
         - name: "Visualize data quickly from Power Apps and Dynamics 365 apps"
           href: dynamics-quick-create-report.md
+        - name: "Create a quick report in Jupyter"
+          href: jupyter-quick-report.md
     - name: "Enable automatic page refresh"
       href: desktop-automatic-page-refresh.md
     - name: "Examine report elements with Performance Analyzer"
@@ -173,7 +177,9 @@
     - name: "Create sparklines in a table or matrix"
       href: power-bi-sparklines-tables.md
     - name: "Display custom format strings"
-      href: desktop-custom-format-strings.md      
+      href: desktop-custom-format-strings.md
+    - name: "Create dynamic format strings for measures"
+      href: desktop-dynamic-format-strings.md     
     - name: "Apply conditional table formatting"
       href: desktop-conditional-table-formatting.md
     - name: "Create dynamic, expression-based titles"
@@ -514,6 +520,8 @@
         href: ../consumer/paginated-reports-view-power-bi-service.md
       - name: Interact with parameters in the Power BI service
         href: ../consumer/paginated-reports-view-parameters.md
+      - name: View paginated report diagnostics
+        href: ../paginated-reports/paginated-reports-diagnostics.md
     - name: Design paginated reports
       items: 
       - name: Plan a report
@@ -525,9 +533,11 @@
       - name: Commonly used filters
         href: ../paginated-reports/report-design/commonly-used-filters-report-builder-and-service.md
       - name: Format numbers and dates
-        href: ../paginated-reports/report-design/formatting-numbers-and-dates-report-builder-and-service.md
+        href: ../paginated-reports/report-design/format-numbers-dates-report-builder-service.md
       - name: Tables, matrixes, lists
         href: ../paginated-reports/report-builder-tables-matrices-lists.md
+      - name: Control page breaks, headings, columns, and rows
+        href: ../paginated-reports/report-design/control-page-breaks-headings-columns-rows-report-builder.md
       - name: Text boxes
         items:
         - name: Text boxes in paginated reports
@@ -540,6 +550,16 @@
           href: ../paginated-reports/report-design/textbox/format-text-in-a-text-box-report-builder-and-service.md
         - name: Set text box orientation
           href: ../paginated-reports/report-design/textbox/set-text-box-orientation-report-builder-and-service.md
+    - name: Drillthrough paginated reports
+      items: 
+      - name: Drillthrough, drilldown, subreports, nested data regions
+        href: ../paginated-reports/report-design/drillthrough-drilldown-subreports-nested-data-regions.md
+      - name: Drillthrough reports
+        href: ../paginated-reports/report-design/drillthrough-reports-report-builder.md
+      - name: Add a drillthrough action
+        href: ../paginated-reports/report-design/add-drillthrough-action-report-report-builder.md
+      - name: Drilldown action in paginated reports
+        href: ../paginated-reports/report-design/drilldown-action-report-builder.md
       - name: Subreports
         href: ../paginated-reports/subreports.md
       - name: Troubleshoot subreports
@@ -554,10 +574,16 @@
         href: ../paginated-reports/report-design/visualizations/change-chart-type-report-builder.md
       - name: Chart types in paginated reports
         items: 
-        - name: Add a gauge to a paginated report
-          href: ../paginated-reports/report-design/visualizations/add-gauge-to-report-report-builder.md
+        - name: Chart types in paginated reports
+          href: ../paginated-reports/report-design/visualizations/chart-types-report-builder.md
         - name: Area charts in paginated reports
           href: ../paginated-reports/report-design/visualizations/area-charts-report-builder.md
+        - name: Column charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/column-charts-report-builder.md
+        - name: Line charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/line-charts-report-builder.md
+        - name: Pie charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/pie-charts-report-builder.md
         - name: Polar charts in paginated reports
           href: ../paginated-reports/report-design/visualizations/polar-charts-report-builder.md
         - name: Scatter charts in paginated reports
@@ -566,28 +592,78 @@
           href: ../paginated-reports/report-design/visualizations/shape-charts-report-builder.md
         - name: Stock charts in paginated reports
           href: ../paginated-reports/report-design/visualizations/stock-charts-report-builder.md
+        - name: Indicators in paginated reports
+          href: ../paginated-reports/report-design/visualizations/indicators-report-builder.md
+        - name: Gauges in paginated reports
+          href: ../paginated-reports/report-design/visualizations/gauges-report-builder.md
+        - name: Add a gauge to a paginated report
+          href: ../paginated-reports/report-design/visualizations/add-gauge-to-report-report-builder.md
+        - name: Bar charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/bar-charts-report-builder.md
+      - name: Format charts in paginated reports
+        items:
+        - name: Format charts in paginated reports
+          href: ../paginated-reports/report-design/visualizations/formatting-chart-report-builder.md
+        - name: Add a border frame to a chart
+          href: ../paginated-reports/report-design/visualizations/add-border-frame-to-chart-report-builder.md
+        - name: Add empty points to a chart
+          href: ../paginated-reports/report-design/visualizations/add-empty-points-chart-report-builder.md
+        - name: Add a moving average to a chart
+          href: ../paginated-reports/report-design/visualizations/add-moving-average-chart-report-builder.md
+        - name: Add or delete an indicator in a report
+          href: ../paginated-reports/report-design/visualizations/add-delete-indicator-report-builder.md
+        - name: Change indicator icons and indicator sets
+          href: ../paginated-reports/report-design/visualizations/change-indicator-icons-indicator-sets-report-builder.md
+        - name: "Chart effects: 3D, bevel, and others"
+          href: ../paginated-reports/report-design/visualizations/chart-effects-3d-bevel-other-report-builder.md
+        - name: Add 3D effects to a chart
+          href: ../paginated-reports/report-design/visualizations/chart-effects-add-3d-effects-report-builder.md
+        - name: Display a series with multiple data ranges
+          href: ../paginated-reports/report-design/visualizations/display-series-with-multiple-data-ranges-chart.md
+        - name: Format series colors on a report chart
+          href: ../paginated-reports/report-design/visualizations/formatting-series-colors-on-chart-report-builder.md
+        - name: Format data points on a report chart
+          href: ../paginated-reports/report-design/visualizations/formatting-data-points-on-chart-report-builder.md
+        - name: Format the legend on a chart
+          href: ../paginated-reports/report-design/visualizations/chart-legend-formatting-report-builder.md
+        - name: Format axis labels on a paginated report chart
+          href: ../paginated-reports/report-design/visualizations/format-axis-labels-chart-report-builder.md
+        - name: Format pointers on a gauge
+          href: ../paginated-reports/report-design/visualizations/formatting-pointers-gauge-report-builder.md
+        - name: Format ranges on a gauge
+          href: ../paginated-reports/report-design/visualizations/formatting-ranges-gauge-report-builder.md
+        - name: Format scales on a gauge
+          href: ../paginated-reports/report-design/visualizations/format-scales-gauge-report-builder.md
+        - name: Set a minimum or maximum on a gauge
+          href: ../paginated-reports/report-design/visualizations/set-minimum-maximum-gauge-report-builder.md
+        - name: Format axis labels as dates or currencies
+          href: ../paginated-reports/report-design/visualizations/format-axis-labels-dates-currencies-report-builder.md
+        - name: Hide chart legend items in a chart
+          href: ../paginated-reports/report-design/visualizations/chart-legend-hide-items-report-builder.md
+        - name: Highlight chart data by adding strip lines
+          href: ../paginated-reports/report-design/visualizations/highlight-chart-data-by-adding-strip-lines-report-builder.md
+        - name: Specify the size of an indicator using an expression
+          href: ../paginated-reports/report-design/visualizations/specify-size-indicator-using-expression-report-builder.md
+        - name: Add bevel, emboss, or texture chart effects
+          href: ../paginated-reports/report-design/visualizations/chart-effects-add-bevel-emboss-or-texture-report-builder.md
+        - name: Add scale breaks to a report chart
+          href: ../paginated-reports/report-design/visualizations/add-scale-breaks-to-chart-report-builder.md
       - name: Change the text of a legend item
         href: ../paginated-reports/report-design/visualizations/chart-legend-change-item-text-report-builder.md
-      - name: Format the legend on a chart
-        href: ../paginated-reports/report-design/visualizations/chart-legend-formatting-report-builder.md
       - name: Display data point labels outside a pie chart
         href: ../paginated-reports/report-design/visualizations/display-data-point-labels-outside-pie-chart-report-builder.md
       - name: Display percentage values on pie charts
         href: ../paginated-reports/report-design/visualizations/display-percentage-values-pie-chart-report-builder.md
+      - name: Collect small slices on a pie chart
+        href: ../paginated-reports/report-design/visualizations/collect-small-slices-pie-chart-report-builder.md
       - name: Empty and null data points in paginated report charts
         href: ../paginated-reports/report-design/visualizations/empty-null-data-points-charts-report-builder.md
-      - name: Format axis labels on a paginated report chart
-        href: ../paginated-reports/report-design/visualizations/format-axis-labels-chart-report-builder.md
       - name: Position labels in paginated report charts
         href: ../paginated-reports/report-design/visualizations/position-labels-chart-report-builder.md
       - name: Specify an axis interval in paginated reports
         href: ../paginated-reports/report-design/visualizations/specify-axis-interval-report-builder.md
       - name: Specify logarithmic scale in paginated reports
         href: ../paginated-reports/report-design/visualizations/specify-logarithmic-scale-report-builder.md
-      - name: Format pointers on a gauge in a paginated report
-        href: ../paginated-reports/report-design/visualizations/formatting-pointers-gauge-report-builder.md
-      - name: Format ranges on a gauge in a paginated report
-        href: ../paginated-reports/report-design/visualizations/formatting-ranges-gauge-report-builder.md
       - name: Include indicators and gauges in a gauge panel
         href: ../paginated-reports/report-design/visualizations/include-indicators-gauges-gauge-panel-report-builder.md
       - name: Specify a chart area for a series
@@ -630,6 +706,22 @@
         href: ../paginated-reports/report-builder/troubleshoot-reports-map-reports-report-builder.md
       - name: Map Wizard and Map Layer Wizard
         href: ../paginated-reports/report-builder/map-wizard-map-layer-wizard-report-builder.md
+    - name: Images, text boxes, rectangles, and lines
+      items:
+      - name: Images, text boxes, rectangles, and lines in a paginated report
+        href: ../paginated-reports/report-design/images-text-boxes-rectangles-lines-report-builder-service.md
+      - name: Images in paginated reports
+        href: ../paginated-reports/report-design/images-report-builder-service.md
+      - name: Format lines, colors, and images in a paginated report
+        href: ../paginated-reports/report-design/format-lines-colors-images-report-builder-service.md
+      - name: Embed an image in a paginated report
+        href: ../paginated-reports/report-design/embed-image-report-report-builder-service.md
+      - name: Add an external image to a paginated report
+        href: ../paginated-reports/report-design/add-external-image-report-builder-service.md
+      - name: Add a data-bound image to a paginated report
+        href: ../paginated-reports/report-design/add-data-bound-image-report-builder-service.md
+      - name: Add a background image to a paginated report
+        href: ../paginated-reports/report-design/add-background-image-report-builder-service.md
     - name: Data sources and datasets
       items: 
       - name: Understand paginated report data
@@ -644,6 +736,32 @@
         href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
       - name: Set time-out values for paginated report dataset processing
         href: ../paginated-reports/report-design/setting-time-out-values-for-report-dataset-processing.md
+    - name: Expressions
+      items:
+      - name: Expressions in Power BI Report Builder
+        href: ../paginated-reports/report-builder-expressions.md
+      - name: Expression examples
+        href: ../paginated-reports/report-builder-expression-examples.md
+      - name: Expression uses
+        href: ../paginated-reports/report-design/expression-uses-reports-report-builder.md
+      - name: "Built-in collections: Report and group variables references"
+        href: ../paginated-reports/report-design/built-in-collections-report-group-variables-references-report-builder.md
+      - name: Avg function
+        href: ../paginated-reports/report-builder/report-builder-functions-avg-function.md
+      - name: CountDistinct function
+        href: ../paginated-reports/report-design/report-builder-functions-countdistinct-function.md
+      - name: CountRows function
+        href: ../paginated-reports/report-design/report-builder-functions-countrows-function.md
+      - name: First function
+        href: ../paginated-reports/report-design/report-builder-functions-first-function.md
+      - name: Last function
+        href: ../paginated-reports/report-builder/report-builder-functions-last-function.md
+      - name: Max function
+        href: ../paginated-reports/report-builder/report-builder-functions-max-function.md
+      - name: Multilookup  function
+        href: ../paginated-reports/report-builder/report-builder-functions-multilookup-function.md
+      - name: Previous  function
+        href: ../paginated-reports/report-builder/report-builder-functions-previous-function.md
     - name: Parameters
       items:
       - name: Parameters
@@ -712,6 +830,18 @@
         href: ../paginated-reports/report-builder/export-pdf-file-report-builder.md
       - name: "Export to XML file format"
         href: ../paginated-reports/report-builder/export-xml-report-builder.md
+    - name: Report layout and rendering 
+      items:
+      - name: "Page layout and rendering in paginated reports"
+        href: ../paginated-reports/report-design/page-layout-rendering-report-builder-service.md
+      - name: "Rendering behaviors in a paginated report"
+        href: ../paginated-reports/report-design/render-behaviors-report-builder-service.md
+      - name: "Render data regions in a paginated report"
+        href: ../paginated-reports/report-design/render-data-regions-report-builder-service.md
+      - name: "Render data in a paginated report"
+        href: ../paginated-reports/report-design/render-data-report-builder-service.md
+      - name: "Render report items in paginated reports"
+        href: ../paginated-reports/report-design/render-report-items-report-builder-service.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
     - name: Paginated reports capacity planning
@@ -722,8 +852,6 @@
       href: ../paginated-reports/paginated-reports-samples.md
     - name: Plan to migrate .rdl reports to Power BI
       href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
-    - name: Expression examples
-      href: ../paginated-reports/report-builder-expression-examples.md
     - name: Report pagination
       href: ../paginated-reports/paginated-reports-pagination.md
     - name: Default system credentials for web proxy

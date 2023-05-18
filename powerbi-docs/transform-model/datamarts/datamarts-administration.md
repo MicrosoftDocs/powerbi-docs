@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 02/10/2023
+ms.date: 04/26/2023
 LocalizationGroup: Data from files
 ---
 
@@ -67,7 +67,7 @@ Datamart CPU usage is free during preview, including datamarts and queries on SQ
 
 The following limitations should be considered when using datamarts:
 
-* Datamarts aren't currently supported in the following Power BI SKUs: A1/A2, EM1, and EM2.
+* Datamarts aren't currently supported in the following Power BI SKUs: EM1/EM2 and EM3.
 * Datamarts aren't available in workspaces that are bound to an Azure Data Lake Gen2 storage account.
 * Datamart extract, transform and load (ETL) operations can currently only run for up to 24 hours
 * Datamarts currently officially support data volumes of up to 100 GB.

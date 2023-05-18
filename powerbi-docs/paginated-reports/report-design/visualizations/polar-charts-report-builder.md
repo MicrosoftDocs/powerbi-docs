@@ -50,7 +50,7 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
 ## Next steps
 
  [Charts (Power BI Report Builder)](charts-report-builder.md)   
- [Formatting a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
+ [Formatting a chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)   
  [Chart types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)   
  [Line charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/line-charts-report-builder-and-ssrs)   
  [Empty and null data points in charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/empty-and-null-data-points-in-charts-report-builder-and-ssrs)  

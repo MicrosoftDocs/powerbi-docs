@@ -1,12 +1,9 @@
 ---
 title: "Specify consistent colors in multiple shape charts in Power BI paginated report | Microsoft Docs"
 description: Find out how choosing colors for a shape chart in Power BI paginated report results in mapping each color in the palette to a data point in the dataset.
-
-ms.date: 03/30/2023
+ms.date: 04/24/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
@@ -24,18 +21,17 @@ ms.reviewer: saurkumar
   
  The legend is connected to the series, so any color you specify for the series will automatically be shown on the legend.  
   
-> [!NOTE]  
->  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.  
   
-## To specify consistent colors across multiple sparkline shape charts in a table or matrix  
   
-1.  Click the chart to display the Chart Data pane.  
+## Specify consistent colors across multiple sparkline shape charts in a table or matrix  
   
-2.  In the **Category Groups** area, right-click a category and click **Category Group Properties**.  
+1.  Select the chart to display the Chart Data pane.  
   
-3.  On the General tab, in the **Synchronize groups in** box, click the name of the category for which you would like to synchronize colors, and then click **OK**.  
+2.  In the **Category Groups** area, right-click a category and select **Category Group Properties**.  
   
-## To specify consistent colors across multiple shape charts  
+3.  On the General tab, in the **Synchronize groups in** box, select the name of the category for which you would like to synchronize colors, and then select **OK**.  
+  
+## Specify consistent colors across multiple shape charts  
   
 1.  Right-click outside the body of the report, and select **Report Properties**.  
   
@@ -63,7 +59,7 @@ ms.reviewer: saurkumar
   
 4.  Right-click on the shape chart and select **Series Properties**.  
   
-5.  In **Fill**, click the **Expression** (*fx*) button to edit the expression for the **Color** property.  
+5.  In **Fill**, select the **Expression** (*fx*) button to edit the expression for the **Color** property.  
   
 6.  Type the following expression, where "MyCategoryField" is the field that is displayed in the **Category Groups** area:  
   
@@ -71,11 +67,12 @@ ms.reviewer: saurkumar
     =Code.GetColor(Fields!MyCategoryField)  
     ```  
   
-## Next steps  
+## Next steps
+
  [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs)   
- [Add Bevel, Emboss, and Texture Styles to a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-effects-add-bevel-emboss-or-texture-report-builder)   
+ [Chart effects: Add bevel, emboss, or texture to a paginated report chart (Power BI Report Builder)](chart-effects-add-bevel-emboss-or-texture-report-builder.md)
  [Define Colors on a Chart Using a Palette &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/define-colors-on-a-chart-using-a-palette-report-builder-and-ssrs)   
- [Add Empty Points to a Chart &#40;Power BI Report Builder&#41;](add-empty-points-to-chart-report-builder.md)   
+ [Add empty points to a chart in a Power BI paginated report (Power BI Report Builder)](add-empty-points-chart-report-builder.md)  
  [Shape Charts &#40;Power BI Report Builder&#41;](shape-charts-report-builder.md)   
  [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/linking-multiple-data-regions-to-the-same-dataset-report-builder-and-ssrs)   
  [Nested Data Regions &#40;Power BI Report Builder and SSRS&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs)   

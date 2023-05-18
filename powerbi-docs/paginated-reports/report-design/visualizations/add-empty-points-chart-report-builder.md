@@ -1,16 +1,15 @@
 ---
-title: "Add empty points to chart in Power BI paginated report | Microsoft Docs"
+title: "Add empty points to a chart in Power BI paginated report | Microsoft Docs"
 description: Specify empty points on a chart in a Power BI paginated report. These points are calculated in Power BI Report Builder by taking the average of the previous and next data points that contain a value. 
-ms.date: 03/30/2023
+ms.date: 04/24/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Add empty points to chart in Power BI paginated report (Power BI Report Builder)
+# Add empty points to a chart in Power BI paginated report (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
@@ -19,9 +18,8 @@ Null values are shown on the chart as empty spaces or gaps between data points i
  By default, empty points are calculated by taking the average of the previous and next data points that contain a value. You can change this so that all empty points are inserted at zero.  
   
  For more information, see [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/empty-and-null-data-points-in-charts-report-builder-and-ssrs).  
-  
-  
-## To specify empty points on a chart  
+
+## Specify empty points on a chart  
   
 1.  Open the Properties pane.  
   
@@ -44,7 +42,8 @@ Null values are shown on the chart as empty spaces or gaps between data points i
   
     2.  Set the EmptyPointValue property. To insert empty points at an average of the previous and next data points, select **Average**. To insert empty points at zero, select **Zero**.  
   
-## Next steps  
+## Next steps
+
  [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters)   
  [Chart Types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)   
  [Add Scale Breaks to a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-scale-breaks-to-a-chart-report-builder-and-ssrs)   

@@ -24,8 +24,7 @@ The Power BI paginated report chart has two axis types: primary and secondary. T
   
  An example of this chart is available as a sample report. For more information about downloading this sample report and others, see [Power BI Report Builder and Report Designer sample reports](https://go.microsoft.com/fwlink/?LinkId=198283).  
   
-> [!NOTE]  
->  You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.
+
   
 ### To plot a series on the secondary axis  
   
