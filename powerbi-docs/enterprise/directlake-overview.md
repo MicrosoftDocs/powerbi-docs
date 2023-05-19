@@ -13,7 +13,7 @@ LocalizationGroup: Admin
 # Direct Lake (PREVIEW)
 
 > [!IMPORTANT]
-> Direct Lake is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here. Before testing in your environment, be sure to read [Known issues and limitations](#known-issues-and-preview-limitations) later in this article.
+> Direct Lake is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here. Before testing in your environment, be sure to read [Known issues and limitations](#known-issues-and-limitations) later in this article.
 
 *Direct Lake* mode is a groundbreaking new dataset capability for analyzing very large data volumes in Power BI. Direct Lake is based on loading parquet-formatted files directly from a data lake without having to query a Lakehouse endpoint, and without having to import or duplicate data into a Power BI dataset. Direct Lake is a fast-path to load the data from the lake straight into the Power BI engine, ready for analysis. The following diagram shows how classic import and DirectQuery modes compare with the new Direct Lake mode.
 
@@ -34,7 +34,7 @@ Direct Lake is supported on Power BI Premium F and P SKUs only. It's not support
 
 #### Lakehouse
 
-Before using Direct Lake, you must provision a Lakehouse with one or more delta tables in a workspace hosted on a supported Power BI or Microsoft Fabric capacity. The Lakehouse is required because it provides the storage location for your parquet-formatted files in OneLake. The Lakehouse also provides an access point to launch Power BI Web modeling to create a Direct Lake dataset.
+Before using Direct Lake, you must provision a Lakehouse with one or more delta tables in a workspace hosted on a supported Power BI or Microsoft Fabric capacity. The Lakehouse is required because it provides the storage location for your parquet-formatted files in OneLake. The Lakehouse also provides an access point to launch the Web modeling to create a Direct Lake dataset.
 
 To learn how to provision a Lakehouse, create a delta table in the Lakehouse, and create a dataset for the Lakehouse, see [Create a Lakehouse](#create-a-lakehouse) later in this article.
 
@@ -175,7 +175,7 @@ There are multiple options to load data into a Lakehouse, including data pipelin
 
     :::image type="content" source="media/directlake-overview/directlake-open-dataset.png" border="false" alt-text="Screenshot showing open dataset in Power BI.":::
 
-1. Select **Open data model** to open the Power BI Web modeling experience where you can add table relationships and DAX measures.
+1. Select **Open data model** to open the Web modeling experience where you can add table relationships and DAX measures.
 
     :::image type="content" source="media/directlake-overview/directlake-web-modeling.png" alt-text="Screenshot showing Web modeling in Power BI.":::
 
