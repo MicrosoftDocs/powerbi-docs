@@ -174,7 +174,7 @@ Creating a table caption or summary provides context on the information displaye
 
 You can insert HTML-formatted text from a field in your dataset into your paginated report by using a text box.  
 
-An example of a supported HTML tag is a hyperlink. The images below show the steps required to adding a hyperlink of a company website to the report. The screen reader reads it out, letting the user know it’s a link that can take them to a website that provides more information on the company.
+An example of a supported HTML tag is a hyperlink. The following images show the steps required to adding a hyperlink of a company website to the report. The screen reader reads it out, letting the user know it’s a link that can take them to a website that provides more information on the company.
 
 1. To add a hyperlink, first create a text box. 
 1. Right-click in the text box, and select **Create Placeholder**.
