@@ -850,6 +850,8 @@
         href: ../paginated-reports/report-builder/paginated-create-accessible-reports.md
       - name: Use accessibility tools to create accessible reports 
         href: ../paginated-reports/report-builder/paginated-use-accessibility-tools.md
+      - name: Interact with paginated reports with accessibility tools 
+        href: ../paginated-reports/report-builder/paginated-consume-accessible-reports.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
     - name: Paginated reports capacity planning

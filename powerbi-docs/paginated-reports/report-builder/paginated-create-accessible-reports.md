@@ -41,7 +41,7 @@ Let's explore each of these built-in accessibility features individually.
 
  As a report author, you can operate Power BI Report Builder by using the keyboard for navigation. Your paginated report consumers can also efficiently use their keyboards to navigate through a report and interact with the various objects of a paginated report. This functionality is in line with WCAG guidelines of operability, and it creates an accessible user experience for reporting consumers with disabilities. 
 
-By pressing the Alt key, you can see the keyboard shortcuts for the different menus for Power BI Report Builder. Here's the [detailed list of keyboard shortcuts](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder) for Power BI Report Builder. 
+By pressing the <kbd>Alt</kbd> key, you can see the keyboard shortcuts for the different menus for Power BI Report Builder. Here's the [detailed list of keyboard shortcuts](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder) for Power BI Report Builder. 
  
 :::image type="content" source="media/paginated-use-accessibility-tools/report-builder-accessible-key-tips.png" alt-text="Screenshot showing Keyboard Shortcuts Image.":::
  
@@ -137,7 +137,7 @@ To apply colors to your report objects, select the object. In the Properties pan
 
 The following image uses black for formatting the report background, and yellow for formatting every other element in the report.  
 
-:::image type="content" source="media/paginated-create-accessible-reports/paginated-color-contrast.png" alt-text="Screenshot showing report with black for formatting the background, and yellow for formatting every other object in the report.":::
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-color-contrast.png" alt-text="Screenshot showing report with black for formatting the background, and yellow for formatting every other object in the report." lightbox="media/paginated-create-accessible-reports/paginated-color-contrast.png":::
 
 To achieve the black background for the body, select the body. In the Properties pane, under the formatting options select the drop-down for background color and pick the black color. 
 
@@ -215,7 +215,7 @@ When creating your matrix object for displaying data summaries, it's important t
 
 You can achieve consistent report formatting across different report objects.
 
-1. Hold down the CTRL key and select the report objects that you'd like to have consistent formatting.
+1. Hold down the <kbd>Ctrl</kbd> key and select the report objects that you'd like to have consistent formatting.
 1. In the Properties pane, select each format option and select the format you'd like to apply. Whatever format you choose applies to all selected objects, giving it a consistent formatting.
 
 ## Next steps
