@@ -17,8 +17,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-> [!NOTE]
-> The Azure Maps visual is now generally available. When you open a report with an existing map visual, if Azure Maps is enabled for your organization, you see a message encouraging you to upgrade your maps and filled maps to Azure Maps. You can convert your maps to Azure Maps now. In a future release, Power BI plans to deprecate older map visuals and migrate existing reports to Azure Maps.
+[!INCLUDE [note-azure-maps](../includes/note-azure-maps.md)]
 
 A filled, or *choropleth*, map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region. You can quickly display relative differences with shading that ranges from light (less frequent/lower) to dark (more frequent/more).
 
@@ -144,7 +143,7 @@ Highlighting a location in a filled map cross-filters the other visualizations o
 
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png" alt-text="Screenshot of Filled map added to Sentiment page.":::
 
-1. On the filled map, select a state to cross-highlight and cross-filter the other visualizations on the page. Selecting **Texas**, for example, cross-filters the cards and cross-highlights the bar chart. As a result, you can see that **Sentiment** is **75** and that Texas is in the **Central District #23**.
+1. On the filled map, select a state to cross-highlight and cross-filter the other visualizations on the page. When you select **Texas**, for example, it cross-filters the cards and cross-highlights the bar chart. As a result, you can see that **Sentiment** is **75** and that Texas is in the **Central District #23**.
 
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-filter.png" alt-text="Screenshot of map showing Texas selected.":::
 

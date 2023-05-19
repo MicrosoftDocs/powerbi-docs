@@ -58,9 +58,13 @@ If you prefer to see all the field wells as before, turn off the **Suggest a typ
 
 ### Add aggregations
 
-When you add a data field to your visual, the **Data** drop-down menu opens by default. Select the aggregation you want.
+After adding a data field to your visual, select the aggregation you want from the Aggregations dropdown.
 
 :::image type="content" source="media/power-bi-on-object-interaction/on-object-aggregation.png" alt-text="Select the aggregation you want.":::
+
+### Change the type of visual
+
+You can also change the type of visual.
 
 ## Format a visual on object
 
@@ -98,7 +102,7 @@ When selecting an element that's very close or overlapping another, Power BI tak
 
 ### Supported visuals for on-object formatting
 
-- On-object formatting is currently supported for bar, column, line, area, combo, scatter, card, pie, and table visuals. Small multiples aren't currently supported.
+- On-object formatting is currently supported for bar, column, line, area, combo, scatter, card, pie, donut, and table visuals. Small multiples aren't currently supported.
 - Format mode isn't currently supported in mobile layout.
 - Format mode isn't currently supported in focus mode.
 
