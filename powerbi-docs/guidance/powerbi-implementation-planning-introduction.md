@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning"
 description: "An introduction to the Power BI implementation planning series of articles."
-author: davidiseminger
-ms.author: davidi
+author: data-goblin
+ms.author: v-kurtbuhler
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -17,7 +17,7 @@ In this video, watch Matthew introduce you to the Power BI implementation planni
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWUWA9]
 
-Successfully implementing Power BI throughout the organization requires deliberate thought and planning. The Power BI implementation planning series is intended to help you accomplish your Power BI implementation. Its articles include key considerations, actions, decision-making criteria, recommendations, and they describe implementation patterns for important common usage scenarios.
+Successfully implementing Power BI throughout the organization requires deliberate thought and planning. The Power BI implementation planning series provides you with key considerations, actions, decision-making criteria, and tactical recommendations. The articles in this series cover key subject areas when implementing Power BI, and they describe patterns for common usage scenarios.
 
 ## Subject areas
 
