@@ -12,6 +12,9 @@ ms.date: 05/18/2023
 
 # Power BI Desktop Projects Azure DevOps integration
 
+> [!IMPORTANT]
+> Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+
 Power BI Desktop Projects enable co-development by connecting your local Git repo to a remote Git host, like Azure DevOps.
 
 :::image type="content" source="media/projects-azdo/pbip-azdo-diagram.png" alt-text="PBIP and Azure DevOps integration diagram.":::

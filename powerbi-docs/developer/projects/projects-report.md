@@ -10,11 +10,16 @@ ms.topic: conceptual
 ms.date: 05/18/2023
 ---
 
-# Power BI Desktop project report folder
+# Power BI Desktop project Report folder
 
-### \<project name>.Report
+> [!IMPORTANT]
+> Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-The directory contains a collection of files and sub-folders that represent a Power BI Report. Depending on your project, it can include the following files and sub-folders:
+This article describes the files and sub-folders in the project Report folder. Not every project will include all of the files and sub-folders described here.
+
+## \<project name>.Report
+
+Contains files and sub-folders that represent a Power BI Report. Depending on your project, it can include the following:
 
 #### .pbi\\
 
@@ -80,7 +85,7 @@ Example using `byConnection`:
 
 #### item.config.json
 
-This file identifies the directory as a source control representation of a service item.
+This file identifies the folder as a source control representation of a service item.
 
 #### item.metadata.json
 
@@ -88,7 +93,7 @@ This file includes properties common to all service items.
 
 #### report.json
 
-This file defines the content of the report including visuals, layout of various pages, and intended interactions. During **Preview**, this file does not support external editing.
+This file defines the content of the report including visuals, layout of various pages, and intended interactions. During **PREVIEW**, this file does not support external editing.
 
 #### mobileState.json
 
@@ -100,34 +105,34 @@ This sub-folder contains custom visual definitions used in the report. Each cust
 
 #### StaticResources\\
 
-This sub-folder includes two additional sub-folders: SharedResources and RegisteredResources. Each contain resource files that define custom themes or images used by the report. Files here do not support external editing.
+A sub-folder that includes two additional sub-folders: SharedResources\ and RegisteredResources\.
 
-#### SharedResources\\
+##### SharedResources\\
 
-This sub-folder contains files with internal resources used by Power BI Desktop. Files here do not support external editing.
+A sub-folder that contains files with internal resources used by Power BI Desktop. Files here do not support external editing.
 
 The files exist to allow a level of forward compatibility. For example, a new release of Power BI Desktop may introduce a new built-in theme. And if a report author with the latest version selects the new theme, another user with an earlier version of Power BI  Desktop can still open the report because the new theme is part of the shared resources folder.
 
-#### RegisteredResources\\
+##### RegisteredResources\\
 
-This sub-folder contains resource files specific to the report and loaded by the user, like custom themes, images, and custom visuals (.pbiviz files).
+A sub-folder that contains resource files specific to the report and loaded by the user, like custom themes, images, and custom visuals (.pbiviz files).
 
-Developers are responsible for the files here, and changes are supported. For example, you can change a file, and after a Power BI Desktop restart, the new file is loaded into the report. This can unblocks some useful scenarios like:
+Developers are responsible for the files here and changes are supported. For example, you can change a file, and after a Power BI Desktop restart, the new file is loaded into the report. This can unblock some useful scenarios like:
 
 - Authoring custom themes outside of Power BI Desktop by using the public schema.
 - Applying batch changes by changing the resource file on multiple reports. For example, you can switch the corporate custom theme, change between light and dark themes, and change logo images.
 
-Every resource file must have a corresponding entry in the report.json file, which  during **Preview** doesn't support editing. Sdits to RegisteredResources files are only supported for already loaded resources that causes Power BI Desktop to register the resource in report.json.
+Every resource file must have a corresponding entry in the report.json file, which  during **PREVIEW** doesn't support editing. Sdits to RegisteredResources files are only supported for already loaded resources that causes Power BI Desktop to register the resource in report.json.
 
 #### CustomVisuals\\
 
-This sub-folder containing metadata on custom visuals added for use in the report. Power BI supports three kinds of custom visuals:
+A sub-folder that containing metadata on custom visuals added for use in the report. Power BI supports three kinds of custom visuals:
 
 - AppSource PowerBI visuals - Also known as "public custom visuals". They're available from Microsoft AppSource. Report developers can install these visuals directly from Power BI Desktop.
 - Organizational store visuals - Organizations can approve and deploy custom visuals to Power BI for their organization. To learn more, see [Organization store](/power-bi/developer/visuals/power-bi-custom-visuals#organizational-store).
 - Custom visual files - Also known as "private custom visuals". They files can be loaded into the report by uploading a .pbiviz package.
 
-Only private Custom Visuals are loaded into the CustomVisuals folder. AppSource and Organization visuals are loaded automatically by Power BI Desktop.
+Only private custom visuals are loaded into the CustomVisuals folder. AppSource and Organization visuals are loaded automatically by Power BI Desktop.
 
 ## See also
 
