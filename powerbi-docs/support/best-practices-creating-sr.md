@@ -10,7 +10,7 @@ ms.date: 05/09/2023
 
 # Best practices when creating a support ticket
 
-The specific information Microsoft will require to troubleshoot your case depends on the issue you are experiencing. This article provides tips and best practices for gathering necessary information for support requests. ***Note, many of these won't be applicable to your*** **case**.  
+The specific information Microsoft will require to troubleshoot your case depends on the issue you're experiencing. This article provides tips and best practices for gathering necessary information for support requests. ***Note, many of these won't be applicable to your*** **case**.  
 
 ## Information to provide to Microsoft
 
@@ -20,16 +20,17 @@ Depending on your specific issue, you may be asked to provide the following info
     The URL provides information on where (workspace) you experience the issue and the item or feature type and ID.
 
 2. Location of issue (Power BI Desktop/ Power BI service/ both)
-    This information is always relevant for a service request. If a process fails on the Power BI service but succeeds on Desktop, or vice versa, this provides useful information to Microsoft as to the possible cause of the issue. Another example would be where the same M code works in a dataset but fails in a dataflow. Beyond these two examples there are many scenarios where it is possible to troubleshoot the issue by identifying exactly where it occurs and where it does not.
+    This information is always relevant for a service request. If a process fails on the Power BI service but succeeds on Desktop, or vice versa, this provides useful information to Microsoft as to the possible cause of the issue. Another example would be where the same M code works in a dataset but fails in a dataflow. Beyond these two examples there are many scenarios where it's possible to troubleshoot the issue by identifying exactly where it occurs and where it doesn't.
 
 3. Relevant Error Codes
+
     Error codes are often generated when something goes wrong. These can be copied at the time of error. Whenever an issue generates an error code, Microsoft uses it to check their systems and identify potential reasons for the error. This is unlikely to resolve the issue on its own, but it significantly speeds up the troubleshooting process.
 
     > [!Tip]
     > Use the **Copy** button to retrieve the code. Don't send a screenshot. Error codes are long (typically 30 characters long), and manually transcribing from a screenshot increases the possibility of getting it wrong.  
 
 4. Data sources and storage mode being used
-    This information is always relevant for a service request. Each data source has certain issues only related to specific data sources. Where multiple sources are used it is helpful to understand if only certain sources are causing the issue through trial and error. Power BI also behaves differently when different storage modes are used. The three main storage mode options are:
+    This information is always relevant for a service request. Each data source has certain issues only related to specific data sources. Where multiple sources are used it's helpful to understand if only certain sources are causing the issue through trial and error. Power BI also behaves differently when different storage modes are used. The three main storage mode options are:
 
 -   [Import](../connect-data/service-dataset-modes-understand.md#import-mode)
 
@@ -111,6 +112,6 @@ This speeds up resolution of your issue by avoiding repetition. However, in cert
 
 ### Can the issue be replicated in a simpler form?
 
-Sometimes confidential information cannot be shared with Microsoft. Try to replicate the issue using a simplified version of the issue and provide reliable repro steps to your support engineer.
+Sometimes confidential information can't be shared with Microsoft. Try to replicate the issue using a simplified version of the issue and provide reliable repro steps to your support engineer.
 
 
