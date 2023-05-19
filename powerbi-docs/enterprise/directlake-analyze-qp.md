@@ -39,11 +39,7 @@ Performance analyzer can provide a quick and easy look into how a visual queries
 
 1. In the **Performance analyzer** pane, select **Refresh visuals**, and then expand the Card visual. Note that the Card does not generate any DirectQuery processing. This indicates the dataset was able to process the visual’s DAX queries in Direct Lake mode.
 
-    :::image type="content" source="media/directlake-analyze-qp/refresh-visual-with-table-column.png" alt-text="Refresh visual with table column":::
-
-1. In the **Visualizations** pane, replace the table column with a column from a table based on a Warehouse view to force a fallback to DirectQuery mode.
-
-1. In **Performance analyzer**, note the visual’s queries now take longer and  there are **Direct query** events. This indicates that the dataset is falling back to DirectQuery mode to process the visual’s DAX query.
+    If the dataset falls back to DirectQuery mode to process the visual’s DAX query, you'll see a **Direct query** performance metric, as shown in the following image:
 
     :::image type="content" source="media/directlake-analyze-qp/fallback-based-on-view.png" alt-text="Fallback based on view":::
 

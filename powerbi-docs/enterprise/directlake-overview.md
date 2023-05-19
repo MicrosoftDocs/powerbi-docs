@@ -1,6 +1,6 @@
 ---
-title: Learn about Direct Lake in Power BI
-description: Describes using Direct Lake to analyze very large datasets in Power BI.
+title: Learn about Direct Lake in Power BI and Microsoft Fabric
+description: Describes using Direct Lake to analyze very large datasets in Power BI and Microsoft Fabric.
 author: minewiskan
 ms.author: owend
 ms.reviewer: ''
@@ -34,7 +34,7 @@ Direct Lake is supported on Power BI Premium F and P SKUs only. It's not support
 
 #### Lakehouse
 
-Before using Direct Lake, you must provision a Lakehouse with one or more delta tables in a workspace hosted on a supported Power BI Premium or Microsoft Fabric capacity. The Lakehouse is required because it provides the storage location for your parquet-formatted files in OneLake. The Lakehouse also provides an access point to launch Power BI Web modeling to create a Direct Lake dataset.
+Before using Direct Lake, you must provision a Lakehouse with one or more delta tables in a workspace hosted on a supported Power BI or Microsoft Fabric capacity. The Lakehouse is required because it provides the storage location for your parquet-formatted files in OneLake. The Lakehouse also provides an access point to launch Power BI Web modeling to create a Direct Lake dataset.
 
 To learn how to provision a Lakehouse, create a delta table in the Lakehouse, and create a dataset for the Lakehouse, see [Create a Lakehouse](#create-a-lakehouse) later in this article.
 
@@ -60,7 +60,6 @@ The following are known issues and limitations during **PREVIEW**:
     | P3/F256  | 6000                                           |
     | P4/F512  | 12000                                          |
     | P5/F1024 | 24000                                          |
-    
 
 - You must use the Web modeling experience integrated into Lakehouse to generate Direct Lake datasets. Creating Direct Lake datasets by using Power BI Desktop or XMLA-based automation tools aren't yet supported.
 
@@ -84,11 +83,11 @@ The following are known issues and limitations during **PREVIEW**:
 
 ## Create a Lakehouse
 
-Complete the following steps to create a Lakehouse, a delta table, and a dataset in a Premium workspace.
+Complete the following steps to create a Lakehouse, a delta table, and a dataset in a Microsoft Fabric or Power BI workspace.
 
 #### To create a Lakehouse
 
-1. In your Power BI premium workspace, select **New** > **Show all**, and then in **Data engineering**, select the **Lakehouse** tile.
+1. In your Microsoft Fabric or Power BI workspace, select **New** > **Show all**, and then in **Data engineering**, select the **Lakehouse** tile.
 
     :::image type="content" source="media/directlake-overview/directlake-lakehouse-tile.png" border="false" alt-text="Screenshot showing Lakehouse tile.":::
 
@@ -96,7 +95,7 @@ Complete the following steps to create a Lakehouse, a delta table, and a dataset
 
     :::image type="content" source="media/directlake-overview/directlake-new-lakehouse.png" border="false" alt-text="Screenshot showing New Lakehouse dialogue.":::
 
-3. Verify Power BI creates and opens the new Lakehouse successfully.
+3. Verify the new Lakehouse is created and opens successfully.
 
     :::image type="content" source="media/directlake-overview/directlake-verify-lakehouse.png" border="false" alt-text="Screenshot showing verify lakehouse screen.":::
 
@@ -172,7 +171,7 @@ There are multiple options to load data into a Lakehouse, including data pipelin
 
     :::image type="content" source="media/directlake-overview/directlake-new-dataset.png" border="false"  alt-text="Screenshot showing New dataset.":::
 
-1. Select **Confirm** to generate the Direct Lake dataset. Power BI automatically saves the dataset in the workspace based on the name of your Lakehouse, and then opens the dataset in Power BI.
+1. Select **Confirm** to generate the Direct Lake dataset. The dataset is automatically saved  in the workspace based on the name of your Lakehouse, and then opens the dataset.
 
     :::image type="content" source="media/directlake-overview/directlake-open-dataset.png" border="false" alt-text="Screenshot showing open dataset in Power BI.":::
 
