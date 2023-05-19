@@ -32,16 +32,16 @@ Depending on your specific issue, you may be asked to provide the following info
 4. Data sources and storage mode being used
     This information is always relevant for a service request. Each data source has certain issues only related to specific data sources. Where multiple sources are used it's helpful to understand if only certain sources are causing the issue through trial and error. Power BI also behaves differently when different storage modes are used. The three main storage mode options are:
 
--   [Import](../connect-data/service-dataset-modes-understand.md#import-mode)
+    -   [Import](../connect-data/service-dataset-modes-understand.md#import-mode)
 
--   [Direct Query](../connect-data/service-dataset-modes-understand.md#directquery-mode)
+    -   [Direct Query](../connect-data/service-dataset-modes-understand.md#directquery-mode)
 
--   [Live connection](../connect-data/service-live-connect-dq-datasets.md)
+    -   [Live connection](../connect-data/service-live-connect-dq-datasets.md)
 
     There are also two other special cases:
 
-- [Mixed modes storage (composite models)](../transform-model/desktop-composite-models.md)
-- [Direct Query for PBI Datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
+    - [Mixed modes storage (composite models)](../transform-model/desktop-composite-models.md)
+    - [Direct Query for PBI Datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
 
     To identify data sources being used in the Power BI Desktop, select **Data source settings** > **Data sources** in the current file. 
 
@@ -55,7 +55,7 @@ Depending on your specific issue, you may be asked to provide the following info
 
      The capacity ID lets Microsoft know the type of capacity being used (e.g., Premium). Only the Capacity administrator can look up the capacity ID. Open the Admin portal and select **Capacity settings** > **Power BI Premium** and select the name of the capacity. The capacity ID is the last part of the URL. 
 
-    https://app.powerbi.com/admin-portal/capacities/**XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX**
+    `https://app.powerbi.com/admin-portal/capacities/`**XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX**
 
     Alternatively, the Capacity administrator can use this [REST API](/learn.microsoft.com/rest/api/power-bi/capacities/get-capacities.md) to retrieve the capacity ID. 
 
@@ -63,22 +63,23 @@ Depending on your specific issue, you may be asked to provide the following info
 
     If your issue is impacting a dataset, the ID helps Microsoft identify the correct dataset and then investigate the processes running on that dataset. To find the Dataset ID, navigate to the workspace that contains the dataset and open the **Dataset settings**. The dataset ID is the last part of the URL (datasets/dataset-id).
 
-https://app.powerbi.com/groups/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/settings/datasets/**XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX**
+    `https://app.powerbi.com/groups/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/settings/datasets/`**XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX**
+
 
 7. A copy of the PBIX file (import queries only)
 
     When experiencing an issue with an import model, having the PBIX file helps the support engineer reproduce the issue and expedite the troubleshooting. If the PBIX contains confidential information, be sure to share an anonymized version. 
 
     > [!IMPORTANT]
-> Be sure to confirm with the relevant parties within your organization before sharing potentially confidential information.
+    > Be sure to confirm with the relevant parties within your organization before sharing potentially confidential information.
 
 8. Gateway logs
 
-    Gateways logs are extremely helpful and required when trying to troubleshoot any Gateway or network issue. To analyze the gateway performance yourself, use the [Gateway performance monitoring template](/data-integration/gateway/service-gateway-performance.md). For more information, see [export logs for a support ticket](../connect-data/service-gateway-onprem-tshoot#export-logs-for-a-support-ticket).
+    Gateways logs are extremely helpful and required when trying to troubleshoot any Gateway or network issue. To analyze the gateway performance yourself, use the [Gateway performance monitoring template](/data-integration/gateway/service-gateway-performance.md). For more information, see [export logs for a support ticket](../connect-data/service-gateway-onprem-tshoot#export-logs-for-a-support-ticket.md).
 
 9. Diagnostic Information
 
-    Power BI Desktop diagnostic information helps the support engineer troubleshoot many cases. Follow the steps in [Power BI Desktop diagnostics collection](../fundamentals/desktop-diagnostics). 
+    Power BI Desktop diagnostic information helps the support engineer troubleshoot many cases. Follow the steps in [Power BI Desktop diagnostics collection](../fundamentals/desktop-diagnostics.md). 
 
 10. Dataflow JSON
 
