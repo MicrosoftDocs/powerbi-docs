@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/17/2023
+ms.date: 05/19/2023
 LocalizationGroup: Visualizations
 ---
 # Use on-object interaction with visuals in your report (preview)
@@ -64,7 +64,9 @@ After adding a data field to your visual, select the aggregation you want from t
 
 ### Change the type of visual
 
-You can also change the type of visual.
+You can also change the type of a visual. Select the visual, and in the ribbon visualization gallery, select a different visual.
+
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-ribbon-visualization-gallery.png" alt-text="Screenshot showing changing the visualization type.":::
 
 ## Format a visual on object
 
