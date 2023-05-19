@@ -57,7 +57,7 @@ Depending on your specific issue, you may be asked to provide the following info
 
     `https://app.powerbi.com/admin-portal/capacities/`**XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX**
 
-    Alternatively, the Capacity administrator can use this [REST API](/learn.microsoft.com/rest/api/power-bi/capacities/get-capacities.md) to retrieve the capacity ID. 
+    Alternatively, the Capacity administrator can use this [REST API](/rest/api/power-bi/capacities/get-capacities.md) to retrieve the capacity ID. 
 
 6. Dataset ID
 
@@ -75,7 +75,7 @@ Depending on your specific issue, you may be asked to provide the following info
 
 8. Gateway logs
 
-    Gateways logs are extremely helpful and required when trying to troubleshoot any Gateway or network issue. To analyze the gateway performance yourself, use the [Gateway performance monitoring template](/data-integration/gateway/service-gateway-performance.md). For more information, see [export logs for a support ticket](../connect-data/service-gateway-onprem-tshoot#export-logs-for-a-support-ticket.md).
+    Gateways logs are extremely helpful and required when trying to troubleshoot any Gateway or network issue. To analyze the gateway performance yourself, use the [Gateway performance monitoring template](/data-integration/gateway/service-gateway-performance.md). For more information, see [export logs for a support ticket](../connect-data/service-gateway-onprem-tshoot.md#export-logs-for-a-support-ticket).
 
 9. Diagnostic Information
 
