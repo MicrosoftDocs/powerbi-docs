@@ -20,7 +20,7 @@ This sample has two main objectives:
 * Understand who the best and worst suppliers are, with respect to quality.
 * Identify which plants do a better job finding and rejecting defects, to minimize downtime.
 
-:::image type="content" source="media/sample-supplier-quality/supplier-1.png" alt-text="Screenshot of the dashboard for the Supplier Quality Analysis sample.":::
+:::image type="content" source="media/sample-supplier-quality/supplier-1.png" alt-text="Screenshot of the dashboard for the Supplier Quality Analysis sample." lightbox="media/sample-supplier-quality/supplier-1.png":::
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com) created this sample using real, anonymized data. The data is available in several formats: built-in sample in the Power BI service, *.pbix* Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
 
@@ -100,7 +100,7 @@ With the [built-in sample in the Power BI service](#get-the-built-in-sample), yo
 
 3. Select the **Corrugate** column to see which plants are affected most by this defect and which vendor is responsible.  
 
-   :::image type="content" source="media/sample-supplier-quality/supplier-3.png" alt-text="Screenshot that shows the Corrugate column selected.":::
+   :::image type="content" source="media/sample-supplier-quality/supplier-3.png" alt-text="Screenshot that shows the Corrugate column selected." lightbox="media/sample-supplier-quality/supplier-3.png":::
 
 4. In the **Downtime (min) by Plant** map, select individual plants in turn to see which vendor or material is responsible for the downtime at that plant.
 
@@ -116,7 +116,7 @@ With the [built-in sample in the Power BI service](#get-the-built-in-sample), yo
 
    The treemap automatically sets the **Vendor** field as the **Group**.  
 
-   :::image type="content" source="media/sample-supplier-quality/supplier-5.png" alt-text="Screenshot that shows the Downtime (min) by Vendor treemap.":::
+   :::image type="content" source="media/sample-supplier-quality/supplier-5.png" alt-text="Screenshot that shows the Downtime (min) by Vendor treemap." lightbox="media/sample-supplier-quality/supplier-5.png":::
 
    From this treemap, we can see the top eight vendors are the eight blocks on the left of the treemap. We can also see they account for about 50% of all downtime minutes.  
 
@@ -128,19 +128,19 @@ Now let's explore which plant does a better job managing defective material, res
 
 1. On the dashboard, select the **Total Defect Reports by Plant, Defect Type** map tile.
 
-   :::image type="content" source="media/sample-supplier-quality/supplier-6.png" alt-text="Screenshot that shows the tile for Total Defect Reports by Plant, Defect Type.":::
+   :::image type="content" source="media/sample-supplier-quality/supplier-6.png" alt-text="Screenshot that shows the tile for Total Defect Reports by Plant, Defect Type." lightbox="media/sample-supplier-quality/supplier-6.png":::
 
    The report opens to the **Supplier Quality Analysis** page.  
 
 2. In the legend of the **Total Defect Reports by Plant and Defect Type**, select **Impact**.  
 
-   :::image type="content" source="media/sample-supplier-quality/supplier-7.png" alt-text="Screenshot that shows the Total Defect Reports by Plant and Defect Type with the Impact circle selected in the legend.":::
+   :::image type="content" source="media/sample-supplier-quality/supplier-7.png" alt-text="Screenshot that shows the Total Defect Reports by Plant and Defect Type with the Impact circle selected in the legend." lightbox="media/sample-supplier-quality/supplier-7.png":::
 
    Notice in the bubble chart that **Logistics** is the most troublesome category. It's the largest in terms of total defect quantity, defect reports, and downtime minutes. Let's explore this category more.  
 
 3. Select the **Logistics** bubble in the bubble chart and observe the plants in Springfield and Naperville, IL. Naperville seems to be doing a much better job of managing defective supplies as it has a high number of rejects and few impacts, compared to Springfield's large number for impacts.  
 
-   :::image type="content" source="media/sample-supplier-quality/supplier-8.png" alt-text="Screenshot that shows the results of selecting the Logistics bubble.":::
+   :::image type="content" source="media/sample-supplier-quality/supplier-8.png" alt-text="Screenshot that shows the results of selecting the Logistics bubble." lightbox="media/sample-supplier-quality/supplier-8.png":::
 
 4. Select **Supplier Quality** in the left navigation bar to return to the dashboard.
 
@@ -167,7 +167,7 @@ The best managed material type is the one with lowest downtime or no impact, reg
 1. Select the **Total Defect Reports by Plant, Defect Type** map tile to open the report to the **Supplier Quality Analysis** page.
 2. In the **Total Defect Qty by Month and Year** chart, notice that defect quantity is higher in 2014 than in 2013.  
 
-   :::image type="content" source="media/sample-supplier-quality/supplier-11.png" alt-text="Screenshot that shows the Total Defect Qty by Month and Year chart.":::
+   :::image type="content" source="media/sample-supplier-quality/supplier-11.png" alt-text="Screenshot that shows the Total Defect Qty by Month and Year chart." lightbox="media/sample-supplier-quality/supplier-11.png":::
 
 3. Do more defects translate into more downtime? Ask questions in the Q&A box to find out.  
 4. Select **Supplier Quality** in the left navigation bar to return to the dashboard.  
@@ -175,11 +175,11 @@ The best managed material type is the one with lowest downtime or no impact, reg
 
    There were many more raw materials defects in 2014 than in 2013.  
 
-   :::image type="content" source="media/sample-supplier-quality/supplier-12.png" alt-text="Screenshot that shows the question box: Show material types, year, and total defect qty.":::
+   :::image type="content" source="media/sample-supplier-quality/supplier-12.png" alt-text="Screenshot that shows the question box: Show material types, year, and total defect qty." lightbox="media/sample-supplier-quality/supplier-12.png":::
 
 6. Next, change the question to: *show material types, year, and total downtime minutes*.
 
-   :::image type="content" source="media/sample-supplier-quality/supplier-13.png" alt-text="Screenshot that shows the question box: Show material types, year, and total downtime minutes.":::
+   :::image type="content" source="media/sample-supplier-quality/supplier-13.png" alt-text="Screenshot that shows the question box: Show material types, year, and total downtime minutes." lightbox="media/sample-supplier-quality/supplier-13.png":::
 
    Notice that downtime for raw materials was about the same in 2013 and 2014, even though there were many more raw materials defects in 2014. It appears that more defects for raw materials in 2014 didn't lead to much more downtime for raw materials in 2014.
 
@@ -197,7 +197,7 @@ Let's look at another dashboard tile related to total defective quantity.
 
 2. In the question box, type *total downtime minutes by month and year as a line chart*.  
 
-   :::image type="content" source="media/sample-supplier-quality/supplier-15.png" alt-text="Screenshot that shows the question box: Total downtime minutes by month and year as a line chart.":::
+   :::image type="content" source="media/sample-supplier-quality/supplier-15.png" alt-text="Screenshot that shows the question box: Total downtime minutes by month and year as a line chart." lightbox="media/sample-supplier-quality/supplier-15.png":::
 
    Other than a jump in downtime minutes during June and October, the number of defects didn't result in significantly more downtime. This result shows we're managing defects well.  
 
