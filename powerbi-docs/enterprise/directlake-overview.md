@@ -30,7 +30,7 @@ Direct Lake mode eliminates the import requirement by loading the data directly 
 
 ## Prerequisites
 
-Direct Lake is supported on Power BI Premium F and P SKUs only. It's not supported on Power BI Pro, Premium Per User, or Power BI Embedded A SKUs.
+Direct Lake is supported on Power BI Premium P and Microsoft Fabric F SKUs only. It's not supported on Power BI Pro, Premium Per User, or Power BI Embedded A/EM SKUs.
 
 #### Lakehouse
 
