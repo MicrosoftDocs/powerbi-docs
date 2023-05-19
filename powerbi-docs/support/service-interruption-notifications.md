@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 12/5/2022
+ms.date: 02/26/2023
 ---
 
 # Service interruption notifications
@@ -43,10 +43,6 @@ If you have more than one Premium capacity, the email includes information about
 
 Overload email notifications are only sent when an overload threshold is triggered. You won't receive a second email when the load on that Premium capacity returns to non-overloaded levels.
 
-The following image shows an example notification email:
-
-![Screenshot of an email notifying the recipient that their Power BI capacity is overloaded.](media/service-interruption-notifications/refresh-notification-email-2.png)
-
 ## Enable notifications
 
 A Power BI admin enables notifications in the admin portal:
@@ -68,6 +64,5 @@ This article describes how to receive service notifications through Power BI. Yo
 
 ## Next steps
 
-[Power BI Pro and Power BI Premium support options](service-support-options.md)
-
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+>[!div class="nextstepaction"]
+>[Power BI Pro and Power BI Premium support options](service-support-options.md)

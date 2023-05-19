@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 09/19/2022
+ms.date: 03/05/2023
 ---
 
 # Troubleshoot the Power BI add-in for PowerPoint
@@ -22,11 +22,11 @@ This article describes what to do if you get the following error when trying to 
 
 The most likely reason for getting this error is that WebView2 isn't installed on your device. The Power BI storytelling add-in requires WebView2 to run Power BI in PowerPoint. If WebView2 isn't installed, you need to install it before you'll be able to use the add-in.
 
-Another reason you might get this error is if your PowerPoint presentation is protected by Windows Information Protection. WebView2 and the Power BI storytelling add-in are not supported for such presentations. For more information, see [How do I know if my presentation is protected by Windows Information Protection?](#how-do-i-know-if-my-presentation-is-protected-by-windows-information-protection). 
+Another reason you might get this error is if your PowerPoint presentation is protected by Windows Information Protection. WebView2 and the Power BI storytelling add-in aren't supported for such presentations. For more information, see [How do I know if my presentation is protected by Windows Information Protection?](#how-do-i-know-if-my-presentation-is-protected-by-windows-information-protection). 
 
 ## What is WebView2?
 
-Microsoft Edge WebView2 is a control used to provide web-based features in Microsoft 365 desktop applications such as PowerPoint. It uses Microsoft Edge as the rendering engine, and requires that Microsoft Edge WebView2 Runtime be installed on the device that is running the Office application. 
+Microsoft Edge WebView2 is a control used to provide web-based features in Microsoft 365 desktop applications such as PowerPoint. It uses Microsoft Edge as the rendering engine, and requires that Microsoft Edge WebView2 Runtime be installed on the device that is running the Office application.
 
 WebView2 comes standard on recent Windows versions, but may not be included in earlier versions. If your version of Windows doesn't include WebView2, you need to install it manually to be able to use the Power BI add-in.
 
@@ -57,12 +57,12 @@ If WebView2 is installed but you still can't use the add-in, it may be because t
     * If you have a Microsoft 365 Office subscription: Windows 8.1, Windows 10, or Windows 11.
     * If you have a non-subscription version of Office: Windows 10 and above.
 
-If your system doesn't meet the above requirements, you need to upgrade your [Windows](https://support.microsoft.com/windows/get-the-latest-windows-update-7d20e88c-0568-483a-37bc-c3885390d212#:~:text=To%20check%20for%20updates%2C%20select,can%20choose%20to%20install%20them.) and/or [Office](https://support.microsoft.com/office/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) versions before you will be able to run the Storytelling add-in.
+If your system doesn't meet the above requirements, you need to upgrade your [Windows](https://support.microsoft.com/windows/get-the-latest-windows-update-7d20e88c-0568-483a-37bc-c3885390d212#:~:text=To%20check%20for%20updates%2C%20select,can%20choose%20to%20install%20them.) and/or [Office](https://support.microsoft.com/office/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) versions before you'll be able to run the Storytelling add-in.
 
 >[!Note]
 >For Office builds 16.0.13530.20424 or later, but earlier than 16.0.14326.xxxxx, a system admin needs to update a registry key as described in [Adding a registry key](#adding-a-registry-key) below.
 
-If your device does meet the minimum system requirements, the problem may be because the presentation is protected by Windows Information Protection. The WebView2 is not supported for such presentations.
+If your device does meet the minimum system requirements, the problem may be because the presentation is protected by Windows Information Protection. The WebView2 isn't supported for such presentations.
 
 The following sections show you how to check your device's Office build and Windows edition, and, if necessary, [how to tell whether your presentation is protected by Windows Information Protection](#how-do-i-know-if-my-presentation-is-protected-by-windows-information-protection).
 
@@ -90,12 +90,12 @@ The key's value should be set to:
 
 ## How do I know if my presentation is protected by Windows Information Protection?
 
-The Power BI storytelling will not work in PowerPoint presentations that are protected by [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (WIP), previously known as Enterprise Data Protection (EDP). This is because WebView2, which the Power BI add-in for PowerPoint requires, is not supported when Windows Information Protection is enabled.
+The Power BI storytelling won't work in PowerPoint presentations that are protected by [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (WIP), previously known as Enterprise Data Protection (EDP). This is because WebView2, which the Power BI add-in for PowerPoint requires, isn't supported when Windows Information Protection is enabled.
 
-If you get the **Cannot run Power BI** error even though you are sure that WebView2 is installed on your computer and that your system meets the minimum requirements, use the following instructions to check whether WIP protection could be causing your problem.
+If you get the **Cannot run Power BI** error even though you're sure that WebView2 is installed on your computer and that your system meets the minimum requirements, use the following instructions to check whether WIP protection could be causing your problem.
 
 * For PowerPoint presentation files on your computer, the [**File ownership** column in File Explorer](https://support.microsoft.com/windows/manage-windows-information-protection-on-work-and-personal-files-0ba9ca73-3a8d-19cc-e9a1-bd2c95ca4c6c) will say **Work** if the file is protected by WIP.
-* For PowerPoint presentation files stored in SharePoint or OneDrive, open the SharePoint or OneDrive folder in [Edge](/deployedge/microsoft-edge-security-windows-information-protection). The briefcase icon in the address bar (shown below) will appear if WIP is protecting the files.
+* For PowerPoint presentation files stored in SharePoint or OneDrive, open the SharePoint or OneDrive folder in [Microsoft Edge](/deployedge/microsoft-edge-security-windows-information-protection). The briefcase icon in the address bar (shown below) will appear if WIP is protecting the files.
 
 ![Briefcase address bar indicator for sites marked as "work"](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-microsoft-edge-wip-notify.png)
 
@@ -106,6 +106,6 @@ If you get the **Cannot run Power BI** error even though you are sure that WebVi
 ## Next Steps
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
-* [Add live Power BI report pages to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
-* [View and present live Power BI report pages in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
+* [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
+* [View and present live Power BI data in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

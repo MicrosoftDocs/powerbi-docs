@@ -24,7 +24,7 @@ You can access shared datasets from Power BI Desktop with an OData feed.
 
 Be sure to use **Advanced Options** so you can turn on Open Type Columns and format the columns accordingly in Power Query to meet your needs.
 
-Read more about [connecting to OData feeds in Power BI Desktop](../connect-data/desktop-connect-odata.md).
+Read more about [connecting to OData feeds in Power BI Desktop](/power-query/connectors/odata-feed).
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

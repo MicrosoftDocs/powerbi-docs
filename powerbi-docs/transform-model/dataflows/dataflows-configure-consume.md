@@ -7,12 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 02/02/2023
+ms.date: 03/22/2023
 LocalizationGroup: Data from files
 ---
 # Configure and consume a dataflow
 
 With dataflows, you can unify data from multiple sources and prepare that unified data for modeling. Whenever you create a dataflow, you're prompted to refresh the data for the dataflow. Refreshing a dataflow is required before it can be consumed in a dataset in Power BI Desktop, or referenced as a linked or computed table.
+
+> [!NOTE]
+> Dataflows are not available in the Power BI service for U.S. Government DoD customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
 
 ## Configure a dataflow
 
@@ -26,7 +29,7 @@ The **Settings** options provide many options for your dataflow, as the followin
 
 * **Take ownership:** If you're not the owner of the dataflow, many of these settings are disabled. To take ownership of the dataflow, select **Take over** to take control. You're prompted to provide credentials to ensure you have the necessary access level.
 
-* **Gateway Connection:** In this section, you can choose whether the dataflow uses a gateway, and select which gateway is used.
+* **Gateway Connection:** In this section, you can choose whether the dataflow uses a gateway, and select which gateway is used. If you have specified the Gateway as part of editing dataflow, upon taking ownership you may need to update credentials using the edit dataflow option.
 
 * **Data source credentials:** In this section you choose which credentials are being used, and can change how you authenticate to the data source.
 

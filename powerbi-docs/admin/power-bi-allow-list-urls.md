@@ -1,8 +1,8 @@
 ---
 title: Add Power BI URLs to allowlist
 description: This article lists URL endpoints and ports with their associated linked sites to add to your allowlist for connectivity to Power BI.
-author: kfollis
-ms.author: kfollis
+author: kesharab
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -92,6 +92,15 @@ Power BI depends on certain endpoints to view and access Power BI visuals. You m
 | 2 | **Optional:** Bing Maps | bing.com <br> platform.bing.com <br> r.bing.com <br> *.virtualearth.net | TCP 443 |
 | 3 | **Optional:** PowerApps | See the [Required services section](/powerapps/maker/canvas-apps/limits-and-config#required-services) from the PowerApps system requirements site | N/A |
 | 4 | **Optional:** Visio | See the documentation for [Microsoft 365 Common and Office Online URLs](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), as well as [SharePoint Online and OneDrive for work or school](/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | N/A |
+| | | |
+
+## Power BI OneDrive and SharePoint integration
+
+Power BI depends on ceratin endpoints to support integration with OneDrive for Business and SharePoint Online. You must be able to connect to the endpoints and linked sites in the following table.
+
+| Row | Purpose | Destination(s) | Port(s) |
+| --- | --- | --- | --- |
+| 1 | **Required:** OneDrive and SharePoint integration | See the documentation for  [SharePoint Online and OneDrive for Business URLs](/office365/enterprise/urls-and-ip-address-ranges##sharepoint-online-and-onedrive-for-business) | N/A |
 | | | |
 
 ## Related external sites

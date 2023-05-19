@@ -5,6 +5,7 @@ author: mihart
 ms.author: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: Discover data items
 ms.topic: conceptual
 ms.date: 01/25/2023
 LocalizationGroup: Get started

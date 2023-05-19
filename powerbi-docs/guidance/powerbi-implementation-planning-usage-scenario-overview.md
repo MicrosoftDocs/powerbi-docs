@@ -1,13 +1,13 @@
 ---
 title: "Power BI usage scenarios"
 description: "An overview of the Power BI implementation planning usage scenario articles."
-author: kfollis
-ms.author: kfollis
+author: data-goblin
+ms.author: v-kurtbuhler
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/31/2022
+ms.date: 04/20/2023
 ---
 
 # Power BI usage scenarios
@@ -65,7 +65,7 @@ The following *content management and deployment* scenarios describe approaches 
 
 - **[Self-service content publishing](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md):** The focus is on ensuring that content is stable for consumers. This scenario describes using a Power BI deployment pipeline to publish content through development, test, and production workspaces. It also describes how (optionally) Premium per user license mode can be used for development and test workspaces, and Premium per capacity license mode for the production workspace.
 - **[Advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md):** The focus is on empowering creators with advanced data modeling and publishing capabilities. This scenario describes managing a data model by using Tabular Editor, which is a third-party tool. Data modelers publish their models to the Power BI service by using the XMLA endpoint, which is available with Power BI Premium.
-- **Enterprise content publishing (usage scenario article not currently available):** The focus is on using more sophisticated and programmatic techniques to publish content through development, test, and production workspaces. In this scenario, Azure DevOps coordinates and executes Power BI REST API operations to deploy content.
+- **[Enterprise content publishing](powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md):** The focus is on using more sophisticated and programmatic techniques to publish content through development, test, and production workspaces. In this scenario, it describes how you can use Azure DevOps to orchestrate collaboration and content publication.
 
 ## Real-time scenarios
 

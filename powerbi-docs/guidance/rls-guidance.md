@@ -1,13 +1,13 @@
 ---
 title: Row-level security (RLS) guidance in Power BI Desktop
 description: Guidance for enforcing row-level security (RLS) in your data models with Power BI Desktop.
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/29/2022
+ms.date: 5/04/2023
 ---
 
 # Row-level security (RLS) guidance in Power BI Desktop
@@ -51,7 +51,7 @@ RLS works by automatically applying filters to every DAX query, and these filter
 - [Understand star schema and the importance for Power BI](star-schema.md)
 - All relationship guidance articles found in the [Power BI guidance documentation](./index.yml)
 
-In general, it's often more efficient to enforce RLS filters on dimension-type tables, and not fact-type tables. And, rely on well-designed relationships to ensure RLS filters propagate to other model tables. So, avoid using the [LOOKUPVALUE](/dax/lookupvalue-function-dax) DAX function when model relationships could achieve the same result.
+In general, it's often more efficient to enforce RLS filters on dimension-type tables, and not fact-type tables. And, rely on well-designed relationships to ensure RLS filters propagate to other model tables. RLS filters only propagate through active relationships. So, avoid using the [LOOKUPVALUE](/dax/lookupvalue-function-dax) DAX function when model relationships could achieve the same result.
 
 Whenever RLS filters are enforced on DirectQuery tables and there are relationships to other DirectQuery tables, be sure to optimize the source database. It can involve designing appropriate indexes or using persisted computed columns. For more information, see [DirectQuery model guidance in Power BI Desktop](directquery-model-guidance.md).
 
@@ -176,7 +176,7 @@ However, there are disadvantages associated with avoiding RLS:
 
 If RLS produces unexpected results, check for the following issues:
 
-- Incorrect relationships exist between model tables, in terms of column mappings and filter directions.
+- Incorrect relationships exist between model tables, in terms of column mappings and filter directions. Keep in mind that RLS filters only propagate through active relationships.
 - The **Apply security filter in both directions** relationship property isn't correctly set. For more information, see [Bi-directional relationship guidance](relationships-bidirectional-filtering.md).
 - Tables contain no data.
 - Incorrect values are loaded into tables.

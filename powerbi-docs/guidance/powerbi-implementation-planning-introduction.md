@@ -1,14 +1,14 @@
 ---
 title: "Power BI implementation planning"
 description: "An introduction to the Power BI implementation planning series of articles."
-author: kfollis
-ms.author: kfollis
+author: data-goblin
+ms.author: v-kurtbuhler
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.custom: video-RWUWA9
 ms.topic: conceptual
-ms.date: 12/12/2022
+ms.date: 04/17/2023
 ---
 
 # Power BI implementation planning
@@ -17,7 +17,7 @@ In this video, watch Matthew introduce you to the Power BI implementation planni
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWUWA9]
 
-Successfully implementing Power BI throughout the organization requires deliberate thought and planning. The Power BI implementation planning series is intended to help you accomplish your Power BI implementation. Its articles include key considerations, actions, decision-making criteria, recommendations, and they describe implementation patterns for important common usage scenarios.
+Successfully implementing Power BI throughout the organization requires deliberate thought and planning. The Power BI implementation planning series provides you with key considerations, actions, decision-making criteria, and tactical recommendations. The articles in this series cover key subject areas when implementing Power BI, and they describe patterns for common usage scenarios.
 
 ## Subject areas
 
@@ -39,12 +39,22 @@ When you implement Power BI, there are many subject areas to consider. The follo
 - Power BI Premium
 - Gateways
 - Integration with other services
-- Auditing and monitoring
+- [Auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md)
 - Adoption tracking
 - Scaling and growing
 
 > [!NOTE]
 > The series is a work in progress. We will gradually release new and updated articles over time.
+
+## Usage scenarios
+
+The series includes usage scenarios that illustrate different ways that creators and consumers can deploy and use Power BI:
+
+- [Content collaboration and delivery](powerbi-implementation-planning-usage-scenario-overview.md#content-collaboration-and-delivery-scenarios)
+- [Self-service BI](powerbi-implementation-planning-usage-scenario-overview.md#self-service-bi-scenarios)
+- [Content management and deployment](powerbi-implementation-planning-usage-scenario-overview.md#content-management-and-deployment-scenarios)
+- [Real-time](powerbi-implementation-planning-usage-scenario-overview.md#real-time-scenarios)
+- [Embedding and hybrid](powerbi-implementation-planning-usage-scenario-overview.md#embedding-and-hybrid-scenarios)
 
 ## Purpose
 

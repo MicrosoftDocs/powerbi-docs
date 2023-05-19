@@ -1,18 +1,18 @@
 ---
 title: Understand data view mapping in Power BI visuals
-description: This article describes how Power BI transforms data before passing it into visuals.
+description: Learn about single, categorical, and matrix data mapping. Specify the conditional requirements for data roles to create different types of visuals.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 10/12/2022
+ms.date: 02/13/2023
 ---
 
 # Understand data view mapping in Power BI visuals
 
-This article discusses data view mapping and describes how data roles are used to create different types of visuals. It explains how to specify conditional requirements for data roles, as well as the different `dataMappings` types.
+This article discusses data view mapping and describes how data roles are used to create different types of visuals. It explains how to specify conditional requirements for data roles and the different `dataMappings` types.
 
 Each valid mapping produces a data view. You can provide multiple data mappings under certain conditions. The supported mapping options are:
 
@@ -34,7 +34,7 @@ Each valid mapping produces a data view. You can provide multiple data mappings 
 ]
 ```
 
-Power BI creates a mapping to a data view if and only if the valid mapping is also defined in `dataViewMappings`.
+Power BI creates a mapping to a data view only if the valid mapping is also defined in `dataViewMappings`.
 
 In other words, `categorical` might be defined in `dataViewMappings` but other mappings, such as `table` or `single`, might not be. In that case, Power BI produces a data view with a single `categorical` mapping, while `table` and other mappings remain undefined. For example:
 
@@ -54,12 +54,12 @@ In other words, `categorical` might be defined in `dataViewMappings` but other m
 
 The `conditions` section establishes rules for a particular data mapping. If the data matches one of the described sets of conditions, the visual accepts the data as valid.
 
-Currently, for each field, you can specify a minimum and maximum value. The value represents the number of fields that can be bound to that data role.
+For each field, you can specify a minimum and maximum value. The value represents the number of fields that can be bound to that data role.
 
 > [!NOTE]
 > If a data role is omitted in the condition, it can have any number of fields.
 
-In the following example, you limit the `category` is limited to one data field and  `measure` to two data fields.
+In the following example, the `category` is limited to one data field and the `measure` is limited to two data fields.
 
 ```json
 "conditions": [
@@ -76,16 +76,16 @@ You can also set multiple conditions for a data role. In that case, the data is 
 ]
 ```
 
-In the above example, either one of the following two conditions is required:
+In the previous example, one of the following two conditions is required:
 
 * Exactly one category field and exactly two measures
-* Exactly two categories and exactly one measure.
+* Exactly two categories and exactly one measure
 
 ## Single data mapping
 
 Single data mapping is the simplest form of data mapping. It accepts a single measure field and returns the total. If the field is numeric, it returns the sum. Otherwise, it returns a count of unique values.
 
-To use single data mapping, define the name of the data role that you want to map. This mapping works only with a single measure field. If a second field is assigned, no data view is generated, so it's good practice to include a condition limiting the data to a single field.
+To use single data mapping, define the name of the data role that you want to map. This mapping works only with a single measure field. If a second field is assigned, no data view is generated, so it's good practice to include a condition that limits the data to a single field.
 
 > [!NOTE]
 > This data mapping can't be used in conjunction with any other data mapping. It's meant to reduce data to a single numeric value.
@@ -118,7 +118,7 @@ For example:
 }
 ```
 
-The resulting data view can still contain other types (table, categorical, and so on), but each mapping contains only the single value. The best practice is to access the value only in single.
+The resulting data view can still contain other types of mapping, like table or categorical, but each mapping contains only the single value. The best practice is to access the value only in single mapping.
 
 ```JSON
 {
@@ -137,7 +137,7 @@ The resulting data view can still contain other types (table, categorical, and s
 }
 ```
 
-Code sample to process simple data views mapping
+The following code sample processes simple data views mapping:
 
 ```typescript
 "use strict";
@@ -175,13 +175,13 @@ export class Visual implements IVisual {
 }
 ```
 
-The above code results in the display of a single value from Power BI:
+The previous code sample results in the display of a single value from Power BI:
 
-![Single dataview mapping visual example](media/dataview-mappings/visual-simple-dataview-mapping.png)
+:::image type="content" source="media/dataview-mappings/visual-simple-dataview-mapping.png" alt-text="Screenshot of a single data view mapping visual.":::
 
 ## Categorical data mapping
 
-Categorical data mapping is used to get independent groupings, or categories, of data. The categories can also be further grouped together using *group by* in the data mapping.
+Categorical data mapping is used to get independent groupings or categories of data. The categories can also be grouped together by using "group by" in the data mapping.
 
 ### Basic categorical data mapping
 
@@ -214,14 +214,14 @@ Consider the following data roles and mappings:
 }
 ```
 
-The above example reads "Map my `category` data role so that for every field I drag into `category`, its data is mapped to `categorical.categories`. Also, map my `measure` data role to `categorical.values`."
+The previous example reads "Map my `category` data role so that for every field I drag into `category`, its data is mapped to `categorical.categories`. Also, map my `measure` data role to `categorical.values`."
 
-* **for...in**: Include *all* items in this data role, in the data query.
-* **bind...to**: Produces the same result as in *for...in*, but expects the data role to have a condition restricting it to a *single* field.
+* **for...in**: Includes *all* items in this data role in the data query.
+* **bind...to**: Produces the same result as *for...in* but expects the data role to have a condition restricting it to a *single* field.
 
-### Grouping categorical data
+### Group categorical data
 
-The next example uses the same two data roles as the previous example, and adds to more data roles named `grouping` and `measure2`.
+The next example uses the same two data roles as the previous example and adds two more data roles named `grouping` and `measure2`.
 
 ```json
 "dataRole":[
@@ -264,13 +264,13 @@ The next example uses the same two data roles as the previous example, and adds 
 }
 ```
 
-The difference between this mapping and the basic one, is in how we map `categorical.values`. By mapping the `measure` and `measure2` data roles to the data role `grouping`, we can scale the x axis and y axis appropriately.
+The difference between this mapping and the basic mapping is how `categorical.values` is mapped. When you map the `measure` and `measure2` data roles to the data role `grouping`, the x-axis and y-axis can be scaled appropriately.
 
-### Grouping hierarchical data
+### Group hierarchical data
 
-In the next example, we use the categorical data to create a hierarchy, which can be used to support [drill-down](drill-down-support.md) actions.
+In the next example, the categorical data is used to create a hierarchy, which can be used to support [drill-down](drill-down-support.md) actions.
 
-Here are the data roles and mappings:
+The following example shows the data roles and mappings:
 
 ```json
 "dataRoles": [
@@ -316,7 +316,7 @@ Here are the data roles and mappings:
 
 Consider the following categorical data:
 
-| Country | 2013 | 2014 | 2015 | 2016 |
+| Country/Region | 2013 | 2014 | 2015 | 2016 |
 |---------|------|------|------|------|
 | USA | x | x | 650 | 350 |
 | Canada | x | 630 | 490 | x |
@@ -345,10 +345,10 @@ Power BI produces a categorical data view with the following set of categories.
 }
 ```
 
-Each `category` maps to a set of `values` as well. Each of these `values` is grouped by `series`, which is expressed as years.
+Each `category` maps to a set of `values`. Each of these `values` is grouped by `series`, which is expressed as years.
 
 For example, each `values` array represents one year.
-Also, each `values` array has four values: Canada, USA, UK, and Mexico:
+Also, each `values` array has four values: Canada, USA, UK, and Mexico.
 
 ```JSON
 {
@@ -401,7 +401,7 @@ Also, each `values` array has four values: Canada, USA, UK, and Mexico:
 }
 ```
 
-Below is a code sample for processing categorical data view mapping. This sample creates the hierarchical structure `Country => Year => Value`
+The following code sample is for processing categorical data view mapping. This sample creates the hierarchical structure **Country/Region > Year > Value**.
 
 ```typescript
 "use strict";
@@ -470,13 +470,13 @@ export class Visual implements IVisual {
 
 Here's the resulting visual:
 
-![The visual with categorical data view mapping](media/dataview-mappings/categorical-data-view-mapping-visual.png)
+:::image type="content" source="media/dataview-mappings/categorical-data-view-mapping-visual.png" alt-text="Screenshot of a visual with categorical data view mapping.":::
 
 ## Mapping tables
 
-The *table* data view is essentially a list of data points, where numeric data points can be aggregated.
+The *table* data view is essentially a list of data points where numeric data points can be aggregated.
 
-For example, using the [same data as in the previous section](#grouping-hierarchical-data), but with the following capabilities:
+For example, use the [same data in the previous section](#group-hierarchical-data), but with the following capabilities:
 
 ```json
 "dataRoles": [
@@ -513,11 +513,9 @@ For example, using the [same data as in the previous section](#grouping-hierarch
 ]
 ```
 
-You can visualize the table data view like this:  
+Visualize the table data view like this example:  
 
-Data example:
-
-| Country| Year | Sales |
+| Country/Region| Year | Sales |
 |-----|-----|------|
 | USA | 2016 | 100 |
 | USA | 2015 | 50 |
@@ -529,7 +527,7 @@ Data example:
 
 Data binding:
 
-![Table data view mapping data binds](media/dataview-mappings/table-dataview-mapping-data.png)
+:::image type="content" source="media/dataview-mappings/table-dataview-mapping-data.png" alt-text="Screenshot of the table data view mapping data binds.":::
 
 Power BI displays your data as the table data view. *Don't assume that the data is ordered*.
 
@@ -573,9 +571,9 @@ Power BI displays your data as the table data view. *Don't assume that the data 
 }
 ```
 
-To aggregate the data, select the desired field and then select *sum*.  
+To aggregate the data, select the desired field and then choose **Sum**.  
 
-![Data aggregation.](media/dataview-mappings/data-aggregation.png)
+:::image type="content" source="media/dataview-mappings/data-aggregation.png" alt-text="Screenshot of Sum selected from the field's dropdown.":::
 
 Code sample to process table data view mapping.
 
@@ -639,7 +637,7 @@ export class Visual implements IVisual {
 }
 ```
 
-The visual styles file `style/visual.less` contains layout for table:
+The visual styles file `style/visual.less` contains the layout for the table:
 
 ```less
 table {
@@ -660,7 +658,7 @@ td {
 
 The resulting visual looks like this:
 
-![The visual with table data view mapping.](media/dataview-mappings/table-dataview-mapping-visual.png)
+:::image type="content" source="media/dataview-mappings/table-dataview-mapping-visual.png" alt-text="Screenshot of a visual with table data view mapping.":::
 
 ## Matrix data mapping
 
@@ -718,7 +716,7 @@ The resulting visual looks like this:
 
 ### Hierarchical structure of matrix data
 
-Power BI creates a hierarchical data structure. The root of the tree hierarchy includes the data from the **Parents** column of the `Category` data role, with children from the **Children** column of the data role table.
+Power BI creates a hierarchical data structure. The root of the tree hierarchy includes the data from the **Parents** column of the `Category` data role with children from the **Children** column of the data role table.
 
 Dataset:
 
@@ -743,8 +741,7 @@ Dataset:
 
 The core matrix visual of Power BI renders the data as a table.
 
-![Matrix visual.
-](media/dataview-mappings/matrix-visual-smaple.png)
+:::image type="content" source="media/dataview-mappings/matrix-visual-smaple.png" alt-text="Screenshot of a Matrix visual rendered as a table.":::
 
 The visual gets its data structure as described in the following code (only the first two table rows are shown here):
 
@@ -821,18 +818,18 @@ The visual gets its data structure as described in the following code (only the 
 }
 ```
 
-### Expanding and collapsing row headers
+### Expand and collapse row headers
 
-Starting from **API 4.1.0**, matrix data will support [expanding and collapsing row headers](../../visuals/desktop-matrix-visual.md#expanding-and-collapsing-row-headers).
-The expand/collapse feature optimizes fetching data to the dataView by allowing the user to expand or collapse a row without fetching all the data for the next level. It only fetches the data for the selected row. The row header’s expansion state will remain consistent across bookmarks and even across reports saves. It's not specific to each visual.
+For **API 4.1.0** or later, matrix data supports [expanding and collapsing row headers](../../visuals/desktop-matrix-visual.md#expanding-and-collapsing-row-headers).
+The expand and collapse feature optimizes fetching data to the dataView by allowing the user to expand or collapse a row without fetching all the data for the next level. It only fetches the data for the selected row. The row header’s expansion state remains consistent across bookmarks and even across saved reports. It's not specific to each visual.
 
-Expand and collapse commands can also be added to the context menu by supplying the `dataRoles` parameter to the `showContextMenu` method.
+Expand and collapse commands can be added to the context menu by supplying the `dataRoles` parameter to the `showContextMenu` method.
 
-![Screenshot showing context menu with expand and collapse options.](media/dataview-mappings/expand-collapse-context-menu.png)
+:::image type="content" source="media/dataview-mappings/expand-collapse-context-menu.png" alt-text="Screenshot showing context menu with expand and collapse options.":::
 
 #### API features
 
-To enable expanding and collapsing row headers, the following have been added to API version 4.1.0.
+The following elements have been added to API version 4.1.0 to enable expanding and collapsing row headers:
 
 * The `isCollapsed` flag in the `DataViewTreeNode`:
 
@@ -871,9 +868,9 @@ To enable expanding and collapsing row headers, the following have been added to
 
 #### Visual requirements
 
-To enable the expand collapse feature to a visual using the matrix data view:
+To enable the expand collapse feature on a visual by using the matrix data view:
 
-1. Add the following to the capabilities.json file:
+1. Add the following code to the capabilities.json file:
 
     ```json
        "expandCollapse": {
@@ -884,7 +881,7 @@ To enable the expand collapse feature to a visual using the matrix data view:
     },
     ```
 
-2. Make sure the roles are drillable:
+2. Confirm that the roles are drillable:
 
     ```json
         "drilldown": {
@@ -892,7 +889,7 @@ To enable the expand collapse feature to a visual using the matrix data view:
     },
     ```
 
-3. For each node, create an instance of selection builder and call the `withMatrixNode` method in the selected node hierarchy level and  create a `selectionId`. For example:
+3. For each node, create an instance of the selection builder by calling the `withMatrixNode` method in the selected node hierarchy level and creating a `selectionId`. For example:
 
     ```typescript
         let nodeSelectionBuilder: ISelectionIdBuilder = visualHost.createSelectionIdBuilder();
@@ -905,7 +902,7 @@ To enable the expand collapse feature to a visual using the matrix data view:
       const nodeSelectionId: ISelectionId = nodeSelectionBuilder.createSelectionId(); 
     ```
 
-4. Create an instance of selection manager and use the `selectionManager.toggleExpandCollapse()` method with the parameter of the `selectionId` that you created for the selected node. For example:
+4. Create an instance of the selection manager, and use the `selectionManager.toggleExpandCollapse()` method, with the parameter of the `selectionId`, that you created for the selected node. For example:
 
     ```typescript
         // handle click events to apply expand\collapse action for the selected node
@@ -916,18 +913,18 @@ To enable the expand collapse feature to a visual using the matrix data view:
 
 >[!NOTE]
 >
-> * If the selected node is not a row node, PowerBI will ignore expand/collapse calls and the expand/collapse commands will be removed from the context menu.
-> * The `dataRoles` parameter is required for the `showContextMenu` method only if the visual supports `drilldown` or `expandCollapse` features. If the visual supports these features but the dataRoles was not supplied, an error will output to the console when using the developer visual or if debugging a public visual with debug mode enabled.
+> * If the selected node is not a row node, PowerBI will ignore expand and collapse calls and the expand and collapse commands will be removed from the context menu.
+> * The `dataRoles` parameter is required for the `showContextMenu` method only if the visual supports `drilldown` or `expandCollapse` features. If the visual supports these features but the dataRoles wasn't supplied, an error will output to the console when using the developer visual or if debugging a public visual with debug mode enabled.
 
 #### Considerations and limitations
 
-* After expanding a node, new data limits will be applied to the DataView. This means that the new DataView might not include some of the nodes presented in the previous DataView.
-* When using expand/collapse, totals are added on even if the visual didn’t request them.
-* Currently, expanding and collapsing columns is not supported.
+* After you expand a node, new data limits will be applied to the DataView. The new DataView might not include some of the nodes presented in the previous DataView.
+* When using expand or collapse, totals are added even if the visual didn’t request them.
+* Expanding and collapsing columns isn't supported.
 
 ## Keep all metadata columns
 
-Starting from **API 5.1.0**, keeping all metadata columns will be supported. This feature allows the visual to receive the metadata for all columns no matter what their active projections are.
+For **API 5.1.0** or later, keeping all metadata columns is supported. This feature allows the visual to receive the metadata for all columns no matter what their active projections are.
 
 Add the following lines to your *capabilities.json* file:
 
@@ -950,13 +947,13 @@ The *count* is set to the maximum number of values that the data view can accept
 
 There are four types of data reduction algorithm settings:
 
-* `top`: The first *count* values will be taken from the dataset.
-* `bottom`: The last *count* values will be taken from the dataset.
+* `top`: The first *count* values are taken from the dataset.
+* `bottom`: The last *count* values are taken from the dataset.
 * `sample`: The first and last items are included, and *count* number of items with equal intervals between them.
-For example, if you have a dataset [0, 1, 2, ... 100] and a *count* of 9, you'll receive the values [0, 10, 20 ... 100].
-* `window`: Loads one *window* of data points at a time containing *count* elements. Currently, `top` and `window` are equivalent. We are working toward fully supporting a windowing setting.
+For example, if you have a dataset [0, 1, 2, ... 100] and a *count* of 9, you receive the values [0, 10, 20 ... 100].
+* `window`: Loads one *window* of data points at a time containing *count* elements. Currently, `top` and `window` are equivalent. In the future, a windowing setting will be fully supported.
 
-By default, all Power BI visuals have the top data reduction algorithm applied with the *count* set to 1000 data points. This is equivalent to setting the following properties in the *capabilities.json* file:
+By default, all Power BI visuals have the top data reduction algorithm applied with the *count* set to 1000 data points. This default is equivalent to setting the following properties in the *capabilities.json* file:
 
 ```json
 "dataReductionAlgorithm": {
@@ -972,7 +969,7 @@ You can modify the *count* value to any integer value up to 30000. R-based Power
 
 The data reduction algorithm can be used in categorical, table, or matrix data view mapping.
 
-In categorical data mapping, you can add the algorithm to "categories" and/or "group" section of `values` for categorical data mapping.
+In categorical data mapping, you can add the algorithm to the "categories" and/or "group" section of `values` for categorical data mapping.
 
 ```json
 "dataViewMappings": {
@@ -1031,7 +1028,7 @@ You can apply the data reduction algorithm to the `rows` and `columns` sections 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Drill down support](drill-down-support.md)
+> [Add drill-down support](drill-down-support.md)
 
 > [!div class="nextstepaction"]
-> [Rendering a visual without requiring data binding](no-dataroles-support.md)
+> [Create custom Power BI visuals without data binding](no-dataroles-support.md)

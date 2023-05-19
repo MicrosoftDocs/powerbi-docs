@@ -1,13 +1,13 @@
 ---
 title: "Power BI modeling guidance for Power Platform"
 description: "Guidance on how to create Power BI data models for Dataverse, PowerApps, and Dynamics 365."
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/20/2022
+ms.date: 04/20/2023
 ---
 
 # Power BI modeling guidance for Power Platform
@@ -62,11 +62,11 @@ When developing an import model, you should strive to minimize the data that's l
 A DirectQuery connection to Dataverse is a good choice when the report's query result isn't large. A large query result has more than 20,000 rows in the report's source tables, or the result returned to the report after filters are applied is more than 20,000 rows. In this case, you can [create a Power BI report by using the Dataverse connector](/powerapps/maker/data-platform/data-platform-powerbi-connector).
 
 > [!NOTE]
-> The 20,000 row size isn't a hard limit. However, each data source query must return a result that's less than 80 MB and within two minutes. Later in this article you will learn how to work within those limitations and about other Dataverse DirectQuery design considerations.
+> The 20,000 row size isn't a hard limit. However, each data source query must return a result within 10 minutes. Later in this article you will learn how to work within those limitations and about other Dataverse DirectQuery design considerations.
 
-You can improve the performance of datasets that have fewer than approximately 100,000 records returned per query by using the [Dataverse connector](/power-query/connectors/dataverse) to import the data into the data model.
+You can improve the performance of larger datasets by using the [Dataverse connector](/power-query/connectors/dataverse) to import the data into the data model.
 
-Larger datasets—with several hundred thousand or even millions of rows—can benefit from using Azure Synapse Link for Dataverse. This approach sets up an ongoing managed pipeline that copies Dataverse data into ADLS Gen2 as CSV or Parquet files. Power BI can then query an [Azure Synapse serverless SQL pool](/azure/synapse-analytics/sql/on-demand-workspace-overview) to load an import model.
+Even larger datasets—with several hundreds of thousand or even millions of rows—can benefit from using Azure Synapse Link for Dataverse. This approach sets up an ongoing managed pipeline that copies Dataverse data into ADLS Gen2 as CSV or Parquet files. Power BI can then query an [Azure Synapse serverless SQL pool](/azure/synapse-analytics/sql/on-demand-workspace-overview) to load an import model.
 
 ### Data latency
 
@@ -144,7 +144,7 @@ For more information on how you can achieve query folding, see [Power Query quer
 
 By default, when you use Power Query to load a Dataverse table, it retrieves all rows and all columns. When you query a system user table, for example, it could contain more than 1,000 columns. The columns in the metadata include relationships to other entities and lookups to option labels, so the total number of columns grows with the complexity of the Dataverse table.
 
-Attempting to retrieve data from all columns is an anti-pattern. It often results in extended data refresh operations, and it will cause the query to fail when the data volume exceeds 80 MB.
+Attempting to retrieve data from all columns is an anti-pattern. It often results in extended data refresh operations, and it will cause the query to fail when the time needed to return the data exceeds 10 minutes.
 
 We recommend that you only retrieve columns that are required by reports. It's often a good idea to reevaluate and refactor queries when report development is complete, allowing you to identify and remove unused columns. For more information, see [Data reduction techniques for import modeling (Remove unnecessary columns)](import-modeling-data-reduction.md#remove-unnecessary-columns).
 
@@ -203,7 +203,7 @@ You can expect to achieve the greatest performance improvements when retrieving 
 > [!TIP]
 > Performance improvement can also depend on how Power BI queries the source database. For example, a measure that uses the `COUNTDISTINCT` DAX function showed almost no improvement with or without the folding hint. When the measure formula was rewritten to use the `SUMX` DAX function, the query folded resulting in a 97 percent improvement over the same query without the hint.
 
-For more information, see [Value.NativeQuery](/powerquery-m/value-nativequery). (The `EnableFolding` option isn't documented because it's specific to the Dataverse data source.)
+For more information, see [Value.NativeQuery](/powerquery-m/value-nativequery). (The `EnableFolding` option isn't documented because it's specific to only certain data sources.)
 
 ### Speed up the evaluation stage
 
@@ -273,15 +273,15 @@ The setup involves signing in to Power Apps and connecting Dataverse to the Azur
 > [!TIP]
 > For complete documentation on creating, managing, and monitoring Azure Synapse Link see [Create an Azure Synapse Link for Dataverse with your Azure Synapse Workspace](/powerapps/maker/data-platform/azure-synapse-link-synapse).
 
-### Create a second serverless SQL pool
+### Create a second serverless SQL database
 
-You can create a second serverless SQL pool and use it to add custom report views. That way, you can present a simplified set of data to the Power BI creator that allows them to create a model based on useful and relevant data. The new serverless SQL pool becomes the creator's primary source connection and a friendly representation of the data sourced from the data lake.
+You can create a second serverless SQL database and use it to add custom report views. That way, you can present a simplified set of data to the Power BI creator that allows them to create a model based on useful and relevant data. The new serverless SQL database becomes the creator's primary source connection and a friendly representation of the data sourced from the data lake.
 
 :::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/azure-synapse-link-for-dataverse-serverless.png" alt-text="Diagram shows Azure Synapse Link copying data to ADLS Gen2 storage, and Power BI connecting to Azure Synapse Analytics. It includes custom report views." border="false":::
 
 This approach delivers data to Power BI that's focused, enriched, and filtered.
 
-You can create a serverless SQL pool in the Azure Synapse workspace by using [Azure Synapse Studio](/azure/synapse-analytics/get-started-create-workspace). Select **Serverless** as the SQL pool type and enter a database name. Power Query can connect to this pool by connecting to the workspace SQL endpoint.
+You can create a serverless SQL database in the Azure Synapse workspace by using [Azure Synapse Studio](/azure/synapse-analytics/get-started-create-workspace). Select **Serverless** as the SQL database type and enter a database name. Power Query can connect to this database by connecting to the workspace SQL endpoint.
 
 ### Create custom views
 
