@@ -31,16 +31,16 @@ Depending on your specific issue, you may be asked to provide the following info
 4. Data sources and storage mode being used
     This information is always relevant for a service request. Each data source has certain issues only related to specific data sources. Where multiple sources are used it is helpful to understand if only certain sources are causing the issue through trial and error. Power BI also behaves differently when different storage modes are used. The three main storage mode options are:
 
--   [Import](../connect-data/service-dataset-modes-understand#import-mode)
+-   [Import](../connect-data/service-dataset-modes-understand.md#import-mode)
 
--   [Direct Query](../connect-data/service-dataset-modes-understand#directquery-mode)
+-   [Direct Query](../connect-data/service-dataset-modes-understand.md#directquery-mode)
 
--   [Live connection](../connect-data/service-live-connect-dq-datasets)
+-   [Live connection](../connect-data/service-live-connect-dq-datasets.md)
 
     There are also two other special cases:
 
-- [Mixed modes storage (composite models)](../transform-model/desktop-composite-models)
-- [Direct Query for PBI Datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services)
+- [Mixed modes storage (composite models)](../transform-model/desktop-composite-models.md)
+- [Direct Query for PBI Datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
 
     To identify data sources being used in the Power BI Desktop, select **Data source settings** > **Data sources** in the current file. 
 
@@ -56,7 +56,7 @@ Depending on your specific issue, you may be asked to provide the following info
 
     https://app.powerbi.com/admin-portal/capacities/**XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX**
 
-    Alternatively, the Capacity administrator can use this [REST API](https://learn.microsoft.com/rest/api/power-bi/capacities/get-capacities) to retrieve the capacity ID. 
+    Alternatively, the Capacity administrator can use this [REST API](/learn.microsoft.com/rest/api/power-bi/capacities/get-capacities.md) to retrieve the capacity ID. 
 
 6. Dataset ID
 
