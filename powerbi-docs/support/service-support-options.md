@@ -18,7 +18,8 @@ This article describes the support options that are available to end users who h
 
 Many resources are available to help you identify, research, and solve issues.  From the top menu bar, select the **?** to open the **Help and support** site. The **Help and support** site has links to documentation, Community, known issues, troubleshooting, and a Support dashboard. If you Fabric or if you have a paid version of Power BI, options to contact Microsoft Support directly are available from the **Help and support** site. 
 
-> [!Note] If you got your Power BI Pro or Premium-per-user (PPU) license through a guest affiliation with another organization, you can't contact support. Your license must be assigned directly by the organization that manages your work or school account to enable support options.
+> [!Note] 
+> If you got your Power BI Pro or Premium-per-user (PPU) license through a guest affiliation with another organization, you can't contact support. Your license must be assigned directly by the organization that manages your work or school account to enable support options.
 
 ## Get started with support for administrators
 
@@ -43,8 +44,8 @@ Verify whether Microsoft support is your admin's preferred option when you need 
 
 If Microsoft support is your admin's preferred option:
 
-1. Check for service outages or degradation at [Fabric Support](support.fabric.microsoft.com) or [Power BI Support](support.powerbi.microsoft.com).
-2. Check for [known issues with Power BI or Fabric features](https://support.fabric.microsoft.com/known-issues). 
+1. Check for service outages or degradation at [Fabric Support](support.fabric.microsoft.com) or [Power BI Support](support.powerbi.com).
+2. Check for [known issues with Power BI or Fabric features](https://support.fabric.com/known-issues). 
 3. See if your issue has already been addressed by the [Community](community.powerbi.com)
 4. Review the Fabric troubleshooting documentation]() or the [Power BI troubleshooting documentation](../troubleshooting/).
 5. Find out which license you have. Select your profile picture from the page header to open your Account manager. For Power BI, if **Pro account** or **Premium Per User account** displays, you might use the following listed support options. For Fabric, all users might use the following listed support options.
