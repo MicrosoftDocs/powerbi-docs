@@ -20,7 +20,7 @@ Currently supported data sources:
 * Azure Synapse Analytics (formerly SQL Data Warehouse)
 * Azure SQL Database
 
-*Inheritance from Excel files requires specific configuration and isn't supported for files stored behind a gateway, such as files stored locally. See [Sensitivity label inheritance from Excel files](#sensitivity-label-inheritance-from-excel-files) for more detail.
+*Inheritance from Excel files requires specific configuration and isn't supported for Excel files stored behind a gateway, such as files stored locally. See [Sensitivity label inheritance from Excel files](#sensitivity-label-inheritance-from-excel-files) for more detail.
 
 To be operative, [sensitivity label inheritance from data sources must be enabled on the tenant](../admin/service-admin-portal-information-protection.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview).
 
@@ -51,8 +51,8 @@ To be operative, [sensitivity label inheritance from data sources must be enable
 Sensitivity label inheritance from an Excel file is supported when all of the following are true:
 
 * The Excel file is stored in OneDrive or SharePoint Online.
-* The connection to the Excel file was established in Power BI Desktop using the web connector, as described in [Use OneDrive for work or school links in Power BI Desktop](../connect-data/desktop-use-onedrive-business-links.md). The process described there applies to both OneDrive and SharePoint Online.
-* The authentication credentials for the dataset created in the service after publishing are properly configured, also as described in the above article.
+* The connection to the Excel file was established in Power BI Desktop using the web connector, as described in [Use OneDrive for work or school links in Power BI Desktop](../connect-data/desktop-use-onedrive-business-links.md). The process described in that article applies to both OneDrive and SharePoint Online.
+* The authentication credentials for the dataset created in the service have been properly reconfigured after publishing, also as described in the above article.
 
 ## Considerations and limitations
 
