@@ -1,7 +1,7 @@
 ---
 title: "Accessibility features in Power BI paginated reports | Microsoft Docs"
 description:  Learn about Power BI Report Builder accessibility features that help you create a paginated report that's inclusive and usable by all.
-ms.date: 05/12/2023
+ms.date: 05/22/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -45,7 +45,6 @@ By pressing the <kbd>Alt</kbd> key, you can see the keyboard shortcuts for the d
  
 :::image type="content" source="media/paginated-use-accessibility-tools/report-builder-accessible-key-tips.png" alt-text="Screenshot showing Keyboard Shortcuts Image.":::
  
- 
 > [!NOTE]
 > Keyboard navigation for accessibility is partially supported. You can't use the cancel button in the loading dialog.
 
@@ -88,10 +87,35 @@ The PDF Accessibility Checker ([PAC Tool](https://pdfua.foundation/)) is a digit
 
 This section identifies and discusses accessibility features that are built into Power BI Report Builder and require configuration by the report author. These features include the following:
 
-- [Alt text](#alt-text).
-- [Color contrast](#color-contrast).
+- [Set row and text box](#row-and-text-box-properties) properties.
+- [Provide Alt text](#alt-text).
+- [Set color contrast](#color-contrast).
 
-### Alt text 
+### Set row and text box properties
+
+Report authors and report consumers benefit from having accessibility tagging for tables, matrixes and text box properties in paginated reports. Report authors can enable headings for text box properties, and column headers for row properties in just a few clicks in Power BI Report Builder. When you add this tagging to a row property or a text box property, you provide a better report navigation user experience for report consumers who use screen-readers.
+
+#### Enable row properties on a header or data cell
+
+To enable row properties on a header or data cell, right-click a table row and select **Row properties**.
+
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-row-properties.png" alt-text="Screenshot of select row properties.":::
+
+Select the **Accessibility** menu, and decide which structure type you wish to overwrite.
+
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-row-properties-dialog.png" alt-text="Screenshot of select the overwrite structure type.":::
+
+#### Enable text box properties
+
+To enable text box properties, right-click a text box and select **Text Box Properties**.
+
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-text-box-properties.png" alt-text="Screenshot of select text box properties.":::
+
+Select the **Accessibility** menu and decide which structure type you wish to overwrite. You can add tags for **Heading H1-H6** to give the textbox a different semantic meaning in output formats like HTML and Accessible PDF.
+
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-text-box-properties-dialog.png" alt-text="Screenshot of select a heading level from H1 to H6.":::
+
+### Provide Alt text 
 
 Alt text, which is short for alternative text, is used to describe every object in the paginated report. As a report author you need to provide Alt text for every object in your report, including tables, matrixes, charts, images, and text boxes. Providing Alt text for report objects helps a report consumer who's using a screen reader or other assistive technology to understand what you're trying to communicate regarding that report object, even if they can't see the object.  
 
@@ -117,7 +141,7 @@ The following image shows how the Alt text appears in the report. A screen reade
 > [!NOTE]
 > A screen reader doesn't read the Alt texts in Power BI Report Builder, but the screen reader does read the Alt text in the Power BI service and Accessible PDF. However, screen readers don't read out Alt texts for text boxes in the Power BI service.
 
-### Color contrast 
+### Set color contrast 
 
 When you're designing your report for accessibility, pairing a light color and dark color provides the right color contrast to make your report more accessible. They should be enough contrast between text or object and any background color according to the WCAG guidelines. The WCAG 2.1 success criterion 1.4.3 delineates that text and background color should have a contrast ratio of at least 4.5:1.  
 
@@ -200,7 +224,7 @@ Using descriptive table headers makes the data in the table more understandable.
 :::image type="content" source="media/paginated-create-accessible-reports/paginated-descriptive-table-headers.png" alt-text="Screenshot showing Logical structure image of a table in the PAC tool." lightbox="media/paginated-create-accessible-reports/paginated-descriptive-table-headers.png":::
 
 > [!NOTE]
-> For tables not built with the Power BI Report Builder table wizard, the table headers in Accessible PDF documents are tagged as the Table Data cells (TD). To correct this, open the file on Adobe Acrobat Pro, on the tags tab click on each of the header cells and change the tags from Table Data (TD) to Table Headers (TH). You can find detailed description of how to modify table tags on the [W3C website](https://www.w3.org/TR/WCAG20-TECHS/pdf#PDF6).
+> For tables not built with the Power BI Report Builder table wizard, the table headers in Accessible PDF documents are tagged as the Table Data cells (TD). To correct this, open the file on Adobe Acrobat Pro. On the Tags tab, select each of the header cells and change the tags from Table Data (TD) to Table Headers (TH). You can find detailed description of how to modify table tags on the [W3C website](https://www.w3.org/TR/WCAG20-TECHS/pdf#PDF6).
 
 ### Add descriptive header to a matrix
 
