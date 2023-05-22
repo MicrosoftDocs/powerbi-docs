@@ -1,5 +1,5 @@
 ---
-title: Learn about Power BI Desktop projects
+title: Learn about Microsoft Power BI Desktop projects
 description: Learn how to save and edit a Power BI Desktop project
 author: minewiskan
 ms.author: owend
@@ -15,7 +15,7 @@ ms.date: 05/03/2023
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-Power BI Desktop projects is a Developer Mode feature providing developer specific capabilities like source control, text editor support, and programmatic generation of content.
+Microsoft Power BI Desktop projects is a Developer mode feature providing developer specific capabilities like source control, text editor support, and programmatic generation of content.
 
 Projects is a new save option that enables Power BI Desktop to save  into a Power BI Project folder (PBIP) and operate on report and dataset item definitions on the file system, rather than a single PBIX file.
 
@@ -31,9 +31,16 @@ Saving your work as a project has the following benefits:
 
 - **Programmatic generation and editing or item definitions** - You can write scripts or create applications to make changes to the definition of various items.  These applications can be based on public documentation of the item definitions and/or libraries provided by Microsoft.
 
+## Video
+
+See Power BI Desktop projects and other Developer mode features being introduced at Microsoft Build 2023.
+
+**>>Embedded video<<** 
+
+
 ## Enable preview features
 
-Saving as a Power BI Project is currently in **PREVIEW**. Before giving it a try, you must first enable it in **Preview features**. 
+Saving as a Power BI Project is currently in **PREVIEW**. Before giving it a try, you must first enable it in **Preview features**.
 
 To enable, in Power BI Desktop > **File** > **Options and settings** > **Options** > **Preview features**, select the checkbox for **Power BI Project (.pbip) save option**.
 
@@ -51,22 +58,30 @@ Let's take a closer look at what you see in your project's root folder:
 
 ##### \<project name>.Dataset
 
-Th Dataset folder is a collection of files and folders that represent a Power BI dataset. It contains some of the most important files you're likely to work on, like model.bim. To learn more about the files and sub-folders and files in here, see [Project dataset folder](projects-dataset.md).
+A collection of files and folders that represent a Power BI dataset. It contains some of the most important files you're likely to work on, like model.bim. To learn more about the files and sub-folders and files in here, see [Project dataset folder](projects-dataset.md).
 
 ##### \<project name>.Report
 
-The Report folder is a collection of files and folders that represent a Power BI Report. To learn more about the files and sub-folders and files in here, see [Project report folder](projects-report.md).
+A collection of files and folders that represent a Power BI Report. To learn more about the files and sub-folders and files in here, see [Project report folder](projects-report.md).
 
 ##### .gitIgnore
 
-Power BI Desktop writes and updates the [.gitignore](https://git-scm.com/docs/gitignore) file in the root folder when saving an item. This file contains patterns needed to exclude local only files from sub-folders.
+Specifies intentionally untracked files that Git should ignore. Power BI Desktop writes and updates the [.gitignore](https://git-scm.com/docs/gitignore) file in the root folder when saving an item.
+
+Dataset and Report sub-folders each have default git ignored files specified in .gitIgnore:
+
+- Dataset
+  - \.pbi\localSettings.json
+  - \.pbi\cache.abf
+
+- Report
+  - \.pbi\localSettings.json
 
 ##### \<project name>.pbip
 
-The Power BI Project File (.pbip) contains a pointer to a report item and can be opened by Power BI Desktop to open the report for authoring.  
+Contains a pointer to a report item and can be opened by Power BI Desktop to open the report for authoring.  
 
-Opening a PBIP will open the targeted report for authoring, but also the dataset in case the report contains a *byPath* dataset reference.
-
+Opening a PBIP opens the targeted report for authoring. It also opens the dataset if the report contains a *byPath* dataset reference.
 
 ## Changes outside Power BI Desktop
 
@@ -91,7 +106,7 @@ Details for the following files are not documented. Changes to these files outsi
 
 With Developer mode, it's possible to apply changes to the model definition by using external tools in two ways:
 
-- By connecting to Power BI Desktop's Analysis Service (AS) instance with [External tools](../../transform-model/desktop-external-tools).
+- By connecting to Power BI Desktop's Analysis Service (AS) instance with [External tools](../../transform-model/desktop-external-tools.md).
 - By editing the TMSL in the model.bim file using VS Code or another external tool.
 
 Not every object or change is supported. Applying changes outside of the those supported can result in unexpected situations.
@@ -120,7 +135,7 @@ Keep in mind:
 
 - Any changes made outside Power BI Desktop requires a restart for those changes to be applied. Power BI Desktop isn't aware of changes to the files made by other tools.
 - Power BI Desktop doesn’t support tables with multiple partitions. Only a single partition for each table is supported. Creating more than one partition results in an error when opening the report.
-- If the dataset has the Auto date/time feature enabled, and you creates a new datetime column outside of Power BI Desktop, the local date table isn't  automatically generated.
+- If the dataset has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't  automatically generated.
 - Automatic date tables created by Power BI Desktop should not be edited by using external tools.
 
 ## Metadata JSON file schemas
@@ -221,3 +236,13 @@ To learn more, see [Editing JSON with Visual Studio Code](https://code.visualstu
 **Question:** The Publish button is disabled when I'm working in a PBIP. How can I publish my content?
 
 **Answer:** Publish is disabled while this feature is in **PREVIEW**. You can either use Fabric Git Integration to publish your work, or save as a PBIX to publish.
+
+## See also
+
+[Power BI Desktop project Dataset folder](projects-dataset.md)  
+[Power BI Desktop project Report folder](projects-report.md)  
+[Power BI Desktop projects Git integration](projects-git.md)  
+[Power BI Desktop projects Azure DevOps integration](projects-git.md)  
+[External tools in Power BI Desktop](../../transform-model/desktop-external-tools.md)  
+[Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true)  
+

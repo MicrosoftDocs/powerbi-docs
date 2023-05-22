@@ -1,5 +1,5 @@
 ---
-title: Power BI Desktop projects dataset folder
+title: Power BI Desktop projects Dataset folder
 description: Learn about the Power BI Desktop projects dataset folder
 author: minewiskan
 ms.author: owend
@@ -15,7 +15,7 @@ ms.date: 05/18/2023
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-This article describes the files and sub-folders in the project Dataset folder. Not every project will include all of the files and sub-folders described here.
+This article describes the files and sub-folders in the Microsoft Power BI Desktop project Dataset folder. Not every project will include all of the files and sub-folders described here.
 
 ## \<project name>.Dataset
 
@@ -27,7 +27,7 @@ A sub-folder that includes the following files used by Power BI Desktop. These f
 
 ###### localSettings.json
 
-Contains report settings that apply only for the current user and computer.
+Contains dataset settings that apply only for the current user and computer. It should be included in gitIgnore or other source control exclusions. By default, this file is ignored by Git.
 
 ###### editorSettings.json
 
@@ -35,7 +35,7 @@ Contains dataset editor settings saved as part of the dataset definition for use
 
 ###### cache.abf
 
-An Analysis Services Backup (ABF) file containing a cached local copy of the model and data when it was last edited. It’s considered a local cache. **It should be included in git ignore or other source control exclusions**.
+An Analysis Services Backup (ABF) file containing a local cached copy of the model and data when it was last edited. It should be included in gitIgnore or other source control exclusions. By default, this file is ignored by Git.
 
 Power BI Desktop can open without a cache.abf file. In that case, it opens the report connected to a model with its entire definition but without data. If a cache.abf exists, Power BI Desktop loads the data and overwrites the model definition with the content in model.bim.
 

@@ -1,5 +1,5 @@
 ---
-title: Power BI Desktop Projects report folder
+title: Power BI Desktop Projects Report folder
 description: Learn about the Power BI Desktop Projects report folder
 author: minewiskan
 ms.author: owend
@@ -15,7 +15,7 @@ ms.date: 05/18/2023
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-This article describes the files and sub-folders in the project Report folder. Not every project will include all of the files and sub-folders described here.
+This article describes the files and sub-folders in the Microsoft Power BI Desktop project Report folder. Not every project will include all of the files and sub-folders described here.
 
 ## \<project name>.Report
 
@@ -23,7 +23,11 @@ Contains files and sub-folders that represent a Power BI Report. Depending on yo
 
 #### .pbi\\
 
-This sub-folder includes the localSettings.json file, which contains report settings that apply only for the current user/machine.
+This sub-folder includes the localSettings.json file, which contains report settings that apply only for the local user/computer.
+
+###### localSettings.json
+
+Contains report settings that apply only for the current user and computer. It should be included in gitIgnore or other source control exclusions. By default, this file is ignored by Git.
 
 #### datasetDiagramLayout.json
 

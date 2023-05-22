@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Power BI Developer mode documentation
-summary: Develop your own Power BI visuals, to be used by you, your organization, or the entire Power BI community. Our documentation provides the information you need.
+summary: Power BI Desktop Developer mode is a suite a of tools for Pro BI developers.
 
 metadata:
   title: Power BI Developer mode documentation
-  description: Develop your own Power BI visuals, to be used by you, your organization, or the entire Power BI community. Our documentation provides the information you need.
+  description: Power BI Desktop Developer mode is a suite a of tools for Pro BI developers.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi-developer
@@ -23,13 +23,15 @@ landingContent:
   # Card (optional)
   - title: Get started
     linkLists:
-      - linkListType: get-started
+      - linkListType: concept
         links:
-          - text: "Develop your own Power BI visual"
-            url: develop-power-bi-visuals.md
-          - text: "Where to find Power BI visuals"
-            url: power-bi-custom-visuals.md
-          - text: "Power BI visual project structure"
-            url: visual-project-structure.md
-          - text: "Frequently asked questions"
-            url: power-bi-custom-visuals-faq.yml
+          - text: "Power BI Desktop projects"
+            url: projects-overview.md
+          - text: "Project Dataset folder"
+            url: projects-dataset.md
+          - text: "Project Report folder"
+            url: projects-report.md
+          - text: "Project Git integration"
+            url: projects-git.md
+          - text: "Project Azure DevOps integration"
+            url: projects-azdo.md

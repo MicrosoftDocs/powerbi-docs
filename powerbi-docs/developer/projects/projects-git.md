@@ -10,24 +10,31 @@ ms.topic: conceptual
 ms.date: 05/18/2023
 ---
 
-# Power BI Desktop Projects Git integration
-
+# Power BI Desktop projects Git integration
 
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
+Git integration in Microsoft Visual Studio Code (VS Code) enables Pro BI developers working with Power BI Desktop projects to streamline development processes, source control, and collaboration straight with Git repositories.
+
+With Git integration, you can:
+
+- Backup and version your work.
+- Revert to previous states if needed.
+- Collaborate with others or work alone using Git branches.
+- Leverage the capabilities of familiar source control tools, like Azure DevOps.
+
 ## Prerequisites
 
-- Be familiar with Git, the git-scm website is a good place to learn the basics
-- Install Git on your machine: Git - Downloads (git-scm.com)
-- Install VS Code, that has native integration with Git out-of-the-box, please refer to this link for more information.
+- Be familiar with Git, the [git-scm](https://git-scm.com/doc) website is a good place to learn the basics
+- [Download](https://git-scm.com/download) and install Git.
+- [Download](https://code.visualstudio.com/) and install [Visual Studio Code]. VS Code has native integration with Git. To learn more, see [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview).
 
-#### To create a local Git Repo by using VS Code
+#### To create a local Git Repo using VS Code
 
 1. In VS Code, open the Power BI Desktop project folder:
 
     :::image type="content" source="media/projects-git/open-pbip-folder.png" alt-text="Image showing open folder in VS Code.":::
-
 
 1. Initialize a Git repository by selecting **Source Control** > **Initialize Repository**:
 
@@ -37,10 +44,16 @@ ms.date: 05/18/2023
 
     :::image type="content" source="media/projects-git/commit.png" alt-text="Image showing a commit in VS Code.":::
 
-From now on, any changes you make in Power BI Desktop will change a file in the folder tracked by your local Git. For example, in Power BI Desktop, when you change a DAX formula for a measure and then save. It triggers a Git diff on the model.bim file.
+From now on, any changes you make in Power BI Desktop will change a file in the folder tracked by your local Git. For example, in Power BI Desktop, when you change a DAX formula for a measure and then save, it triggers a Git diff on the model.bim file.
 
 :::image type="content" source="media/projects-git/measure-change.png" alt-text="Image showing a measure change in VS Code.":::
 
-With Git integration, you can not only track your change history, but also backup your development work. For example, with GitGraph, a popular free VS Code Extension, you can easily track all your changes:
+With Git integration, you can not only track your change history, but also backup your work. For example, with GitGraph, a popular free VS Code extension, you can easily track all your changes.
 
 :::image type="content" source="media/projects-git/gitgraph.png" alt-text="Image showing GitGraph in VS Code.":::
+
+## See also
+
+[Power BI Desktop projects Azure DevOps integration](projects-git.md)  
+[Power BI Desktop project Dataset folder](projects-dataset.md)  
+[Power BI Desktop project Report folder](projects-report.md)  

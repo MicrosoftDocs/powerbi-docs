@@ -101,7 +101,22 @@ conceptualContent:
       footerLink:
         url: /javascript/api/overview/powerbi/
         text: See more
-
+    # Card
+    - title: Power BI Desktop Developer mode
+      links:
+        - url: /projects/projects-overview.md
+          itemType: overview
+          text: Power BI Desktop projects
+        - url: /projects/projects-dataset.md
+          itemType: concept
+          text: Project Dataset folder
+        - url: /projects/projects-report.md
+          itemType: concept
+          text: Project Report folder
+      # footerLink (optional)
+      footerLink:
+        url: /projects/index.yml
+        text: See more
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:
