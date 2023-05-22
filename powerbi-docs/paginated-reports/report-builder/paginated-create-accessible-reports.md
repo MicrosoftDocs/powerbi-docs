@@ -87,9 +87,9 @@ The PDF Accessibility Checker ([PAC Tool](https://pdfua.foundation/)) is a digit
 
 This section identifies and discusses accessibility features that are built into Power BI Report Builder and require configuration by the report author. These features include the following:
 
-- [Set row and text box](#row-and-text-box-properties) properties.
-- [Provide Alt text](#alt-text).
-- [Set color contrast](#color-contrast).
+- Set [row and text box](#set-row-and-text-box-properties) properties.
+- Provide [Alt text](#provide-alt-text).
+- Set [color contrast](#set-color-contrast).
 
 ### Set row and text box properties
 
