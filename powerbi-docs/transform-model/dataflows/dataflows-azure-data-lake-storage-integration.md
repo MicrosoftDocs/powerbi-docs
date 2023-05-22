@@ -85,14 +85,9 @@ To summarize, if tenant-level storage and workspace-level storage permissions ar
 In the ADLS Gen 2 storage account, all dataflows are stored in the **powerbi** container of the filesystem.
 
 The structure of the **powerbi** container looks like this:
-`<workspace name>/<dataflow name>/model.json
-<workspace name>/<dataflow name>/model.json.snapshots/<all snapshots>`
+`<workspace name>/<dataflow name>/model.json`, `<workspace name>/<dataflow name>/model.json.snapshots/<all snapshots>` and `<workspace name>/<dataflow name>/<table name>/<tablesnapshots>`
 
-The location where dataflows store data in the folder hierarchy for ADLS Gen 2 is determined by whether the workspace is located in shared capacity or Premium capacity. The file structure after refresh for each capacity type is shown in the following table.
-
-| Premium capacity | Shared capacity |
-|---|---|
-| `<workspace name>/<dataflow name>/<table name>/<tablesnapshots>` | `<workspace name>/<dataflow name>/<table name>/<tablesnapshots>` |
+The location where dataflows store data in the folder hierarchy for ADLS Gen 2 is the same whether the workspace is located in shared capacity or Premium capacity. 
 
 The following example uses the Orders table of the Northwind Odata sample.
 
@@ -102,12 +97,12 @@ In the preceding image:
 
 - The *model.json* is the most recent version of the dataflow.
 - The *model.json.snapshots* are all previous versions of the dataflow. This history is useful if you need a previous version of mashup, or incremental settings.
-- The *table.snapshots.csv* is the data you got from a refresh. This file is useful for incremental refreshes, and also for shared refreshes where a user is running into a refresh timeout issue because of data size. They can look at the most recent snapshot to see how much data is in the CSV file.
+- The *tablename* is the folder containing resulting data after a dataflow refresh has completed. 
 
 We only write to this storage account and don't currently delete data. So even after detach, we don’t delete from the ADLS account, so all of the files mentioned in the preceding list are still stored.
 
 > [!NOTE]
-> A *model.json* file can refer to another *model.json* that is another dataflow in the same workspace, or in a dataflow in another workspace. The only time where a *model.json* would refer to a *table.snapshot.csv* is for incremental refresh.
+> Dataflows allow linking or referencing tableds in other dataflows. In such dataflows, the *model.json* file can refer to another *model.json* of another dataflow in the same or other workspace.
 
 ## Extensibility for ADLS Gen 2 workspace connections
 
