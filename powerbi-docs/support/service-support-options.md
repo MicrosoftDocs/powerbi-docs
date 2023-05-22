@@ -44,7 +44,7 @@ Verify whether Microsoft support is your admin's preferred option when you need 
 
 If Microsoft support is your admin's preferred option:
 
-1. Check for service outages or degradation at [Fabric Support](support.fabric.microsoft.com) or [Power BI Support](support.powerbi.com).
+1. Check for service outages or degradation at [Power BI and Fabric Support](support.fabric.microsoft.com).
 2. Check for [known issues with Power BI or Fabric features](https://support.fabric.com/known-issues). 
 3. See if your issue has already been addressed by the [Community](community.powerbi.com)
 4. Review the Fabric troubleshooting documentation]() or the [Power BI troubleshooting documentation](../troubleshooting/).
