@@ -41,7 +41,7 @@ Learn more about how admins can [contact support for help with Microsoft 365 bus
 
 Verify whether Microsoft support is your admin's preferred option when you need help. To check, select (**?**) from the page header in the Power BI service, then choose **Help & Support > Get Help**. If this selection takes you to Power BI support, you might use the following listed support options. Otherwise, you'll be directed to the preferred support option for your organization. If your product doesn't have a support contract, you'll receive a message that "This product is not supported."
 
-![Screen capture showing help pane with Get Help selected.](media/service-support-options/help-pane1.png).
+![Help_pane2](media/service-support-options/help-pane2.png)
 
 If Microsoft support is your admin's preferred option:
 
@@ -99,5 +99,6 @@ Contact your Microsoft Customer Account Manager for details. If you don't alread
 
 * [Help and support tenant settings](service-admin-portal-help-support.md)
 * [Find the right Power BI training for you](/training/powerplatform/power-bi?WT.mc_id=powerbi_docs-link)
+
 
 
