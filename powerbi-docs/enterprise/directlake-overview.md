@@ -46,20 +46,7 @@ As part of provisioning a Lakehouse, a SQL endpoint for SQL querying and a defau
 
 The following are known issues and limitations during **PREVIEW**:
 
-- Direct Lake size limits are likely to change during **PREVIEW**. More definitive limits will be determined and described in this article by GA (General Availability). If limits are reached, queries are executed in DirectQuery mode.
-
-    | Sku      | # of Row (Million) per table used by the query |
-    |----------|------------------------------------------------|
-    | F2       | 300                                            |
-    | F4       | 300                                            |
-    | F8       | 300                                            |
-    | F16      | 300                                            |
-    | F32      | 700                                            |
-    | P1/F64   | 1500                                           |
-    | P2/F128  | 3000                                           |
-    | P3/F256  | 6000                                           |
-    | P4/F512  | 12000                                          |
-    | P5/F1024 | 24000                                          |
+- Direct Lake size limits are likely to change during **PREVIEW**. More definitive limits will be determined and described in this article by GA (General Availability). If limits are reached, queries are executed in DirectQuery mode. Limits are based on row count per table used by a DAX query. Row counts differ depending on the size of the SKU. 
 
 - You must use the Web modeling experience integrated into Lakehouse to generate Direct Lake datasets. Creating Direct Lake datasets by using Power BI Desktop or XMLA-based automation tools aren't yet supported.
 
