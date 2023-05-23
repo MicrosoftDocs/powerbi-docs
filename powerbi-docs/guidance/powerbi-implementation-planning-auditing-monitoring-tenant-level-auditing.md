@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/25/2023
+ms.date: 05/03/2023
 ---
 
 # Power BI implementation planning: Tenant-level auditing
@@ -1094,7 +1094,7 @@ You use KQL to analyze the activity log events that are stored in Azure Log Anal
 
 There are several ways to access the events stored to Azure Log Analytics. You can use:
 
-- The prebuilt _Log Analytics for Power BI Datasets_ [template app](/power-bi/transform-model/log-analytics/install-as-engine-app).
+- The prebuilt _Log Analytics for Power BI Datasets_ template app.
 - Power BI Desktop [connector](/azure/data-explorer/power-bi-connector) for Azure Data Explorer (Kusto).
 - [Web-based query](/azure/data-explorer/web-query-data) experience in Azure Data Explorer.
 - Any query tool that can send KQL queries.
