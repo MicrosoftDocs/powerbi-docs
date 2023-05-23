@@ -39,9 +39,9 @@ highlightedContent:
       itemType: concept
       url: developer/embedded/export-to.md
     # Card
-    - title: What are paginated reports in Power BI?
-      itemType: overview
-      url: paginated-reports/paginated-reports-report-builder-power-bi.md
+    - title: Power BI known issues
+      itemType: reference
+      url: troubleshoot/known-issues/power-bi-known-issues.md
     # Card
     - title: "Power BI Premium features"
       itemType: concept
