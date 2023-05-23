@@ -6,7 +6,7 @@ ms.author: owend
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 10/18/2022
+ms.date: 05/22/2023
 LocalizationGroup: Premium
 ms.custom: engagement-fy23
 ---
@@ -177,7 +177,6 @@ The **Server Redirection** flyout shows the status of redirection.
 :::image type="content" source="media/aas-pbi-migration-overview/dataset-migration-redirection-status-flyout.png" alt-text="Redirection status flyout.":::
 
 To disable server redirection, on the **Azure Analysis Services to Power BI Premium** page, under **All migrations**, simply move the **Server Redirection Enabled** slider to Off.
-
 
 #### Pause server
 
