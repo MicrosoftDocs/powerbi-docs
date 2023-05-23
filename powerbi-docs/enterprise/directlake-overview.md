@@ -170,3 +170,6 @@ There are multiple options to load data into a Lakehouse, including data pipelin
 
 When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and query the dataset through XMLA endpoints in much the same way as any other dataset. During **PREVIEW**, XMLA write operations are not yet supported.
 
+## Analyze query processing
+
+To determine if a report visual's DAX queries to the data source are providing the best performance by using Direct Lake mode, or falling back to DirectQuery mode, you can use Performance analyzer in Power BI Desktop or other third party tools to analyze queries. To learn more, see [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md).

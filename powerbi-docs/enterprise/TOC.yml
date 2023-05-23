@@ -31,6 +31,8 @@
       items:
       - name: Direct Lake overview
         href: directlake-overview.md
+      - name: Analyze query processing for Direct Lake datasets
+        href: directlake-analyze-qp.md
   - name: Licensing
     expanded: false
     items:
