@@ -169,7 +169,8 @@ Highlighting a column or line in a combo chart cross-highlights and cross-filter
 
 ## Considerations and limitations
 
-Depending on the size of your combo chart, the data labels may or may not display.  If you don't see data labels, resize the combo chart. 
+* The secondary y-axis (line values) will automatically show or hide by default if its data range sufficiently overlaps with the primary y-axis (column values).  To force show or hide the secondary y-axis, toggle the top-level toggle switch to "On" or "Off" on the "Secondary y-axis" formatting card to override this automatic behavior.
+* Depending on the size of your combo chart, the data labels may or may not display.  If you don't see data labels, resize the combo chart. 
 
 ## Next steps
 
