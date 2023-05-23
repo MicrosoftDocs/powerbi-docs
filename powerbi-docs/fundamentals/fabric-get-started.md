@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
 ms.date: 05/21/2023
-ms.custom: "https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx"
+ms.custom: ""
 LocalizationGroup: Get started
 ---
 # Tutorial: Fabric for Power BI users
@@ -29,7 +29,7 @@ Let’s get started!
 - Before you start, if you aren't signed up yet, [sign up for a free trial](service-self-service-signup-for-power-bi.md).
 - Create a [new workspace](../collaborate-share/service-create-the-new-workspaces.md) and assign a Fabric capacity.
      - An existing workspace can also be used, although we recommend using a nonproduction workspace for simplicity of the tutorial.
-- Download the Power Query template file that contains sample queries for Contoso data.
+- Download the [Power Query template](https://github.com/microsoft/pbiworkshops/raw/main/_Asset%20Library/Source_Files/ContosoSales.pqt) file that contains sample queries for Contoso data.
 
 ## Create a lakehouse to store data
 
