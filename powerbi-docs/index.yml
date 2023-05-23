@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 04/28/2023
+  ms.date: 05/23/2023
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -27,13 +27,13 @@ highlightedContent:
       itemType: get-started
       url: fundamentals/desktop-get-the-desktop.md
     # Card
-    - title: Get started creating in the Power BI service
+    - title: Microsoft Fabric for Power BI users
       itemType: tutorial
-      url: fundamentals/service-get-started.md
+      url: fundamentals/fabric-get-started.md
     # Card
-    - title: Data loss prevention policies
-      itemType: concept
-      url: enterprise/service-security-dlp-policies-for-power-bi-overview.md
+    - title: What is Microsoft Fabric?
+      itemType: get-started
+      url: /fabric/get-started/microsoft-fabric-overview
     # Card
     - title: Export Power BI embedded analytics reports API
       itemType: concept
