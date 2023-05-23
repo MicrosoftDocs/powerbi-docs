@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-custom-visuals
   ms.topic: faq
-  ms.date: 09/29/2022
+  ms.date: 05/15/2023
 title: Frequently asked questions about Custom visual license management and transactability
 summary: |
   This article answers some of the questions users often have about how to set up, pay for, and manage licenses for custom Power BI visuals that they purchase from [AppSource](https://appsource.microsoft.com/).
@@ -17,14 +17,24 @@ sections:
   - name: Purchasing
     questions:
       - question: |
+          What are licensed visuals?
+        answer: |
+          [Licensed visuals](./custom-visual-licenses.md) are Power BI visuals available from [AppSource](https://appsource.microsoft.com/) that have. All licensed visuals have a limited basic version available for free, and a version with more functionality available for purchase. To try out a licensed visual, select the **Get it now** button in AppSource to try out a free version of the visual before you need to purchase a license. You can also assign licenses to to other users in your organization.
+
+      - question: |
+          Do I have to pay when I install a visual?
+        answer: |
+          You can install the visual for free from [AppSource](https://appsource.microsoft.com/) or the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview) and use the free features provided. For the full experience, however, you need to purchase the visual.
+          
+      - question: |
           Who can purchase a visual license?
         answer: |
           *Anyone* can purchase a license, and assign the license to themselves or others.
 
       - question: |
-          How can I pay for the visuals?
+          How can I purchase and pay for the visuals?
         answer: |
-          Anyone can complete the checkout path in [AppSource](https://appsource.microsoft.com/), and pay for the licenses with a credit card.  
+          Select **Get it now** and complete the checkout path in [AppSource](https://appsource.microsoft.com/). You can pay for the licenses with a credit card.  
 
           Billing and Global admins can also pay by [invoice](/microsoft-365/commerce/billing-and-payments/pay-for-subscription-billing-profile#paying-by-invoice) if such a payment method is set up for your company.
 
@@ -76,6 +86,13 @@ sections:
           :::image type="content" source="./media/licensing-faq/add-purchase-order-number.png" alt-text="Screenshot of billing profile with box for adding purchase order number.":::
 
       - question: |
+          How can I download my receipt after purchase?
+        answer: |
+          After you complete your purchase, you can find your receipt and download it as PDF from the Microsoft 365 admin center under Bills & payments - Invoices. 
+
+          :::image type="content" source="./media/licensing-faq/receipt-download.png" alt-text="Screenshot of Bills & payments - Invoices page with Download PDF in upper right corner.":::
+
+      - question: |
           Can we use a visual without having to upload it to organization visual?
         answer: |
           Yes. You can download a visual directly to your reports.  
@@ -100,6 +117,7 @@ sections:
       - question: |
           Who can assign licenses after the purchase is complete?
         answer: |
+          The person who buys the visual is the owner, and only the owner can assign licenses. After buying the visual, the owner gets a license automatically and can assign licenses to others in the organization.  
           If the tenant admin owns the licenses (Org licenses), then any of the license admins (Global Admin, License Admin or User Admin) can manage the licenses.  
           However, if the subscription owner isn't an admin, then only the purchaser can manage the subscription and licenses.
 
@@ -111,12 +129,12 @@ sections:
       - question: |
           Do I have to assign a license to myself even if I'm the owner?
         answer: |
-          Yes. Any user who wants to use the offer should be assigned a license, even if they own the subscription.
+          No. Buyers get a license assigned to them automatically. It can take up to five minutes from th time of purchase for the license to take effect. If you want to add more users or update your subscription, go to the [admin center](https://admin.microsoft.com/).
 
       - question: |
           How do we assign the licenses?
         answer: |
-          Go to [admin.microsoft.com](https://admin.microsoft.com/) and select the **License** link under the **Billing** node from the menu. A list of visuals will appear.
+          Only the buyer (owner) can assign a license. You'll receive a license automatically within five minutes of purchasing the visual. If you want to assign a license to other users or update your subscription, go to [admin.microsoft.com](https://admin.microsoft.com/) and select the **License** link under the **Billing** node from the menu. A list of visuals will appear.
 
           :::image type="content" source="./media/licensing-faq/assign-licenses.png" alt-text="Screenshot of Admin homepage with billing licenses selected.":::
 
@@ -125,12 +143,12 @@ sections:
       - question: |
           Once I assign a license, how long does it take until I can use it?
         answer: |
-          After you are assigned a license in the Microsoft 365 Admin Center, it should be available within an hour.
+          After you are assigned a license in the Microsoft 365 Admin Center, it should be available within a few minutes.
 
           * If you're using the licensed visual in the Power BI Service, refresh the report by hitting F5.
           * If you're using the licensed visual in the Power BI Desktop, close and reopen it.
 
-          If, after you refresh, the license is still not available, wait a while and try again. It could take up to an hour.
+          If, after you refresh, the license is still not available, wait a while and try again. It could take up to five minutes.
 
       - question: |
           As an admin can I see the subscriptions that were purchased in my organization?
@@ -146,6 +164,12 @@ sections:
           As an admin, can I cancel offer purchase from AppSource?
         answer: |
           As a billing or global admin, you can see all subscriptions in the Microsoft 365 admin center, and you can cancel them.
+
+      - question: |
+          How can I get more help or support for managing licenses?
+        answer: |
+          For help with buying a visual, go to [What is Microsoft AppSource](/marketplace//purchase-software-appsource).  
+          For help with assigning a license, go to [Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview)
 
 additionalContent: |
   ## Next steps

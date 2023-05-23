@@ -107,6 +107,10 @@ In our continued effort to improve accessibility, the previous list of experienc
 | :------------------- | :------------------- |
 | Zoom in | **Ctrl + Plus** or **Ctrl + (mouse scroll wheel forward)** |
 | Zoom out | **Ctrl + Minus** or **Ctrl + (mouse scroll wheel backward)** |
+| Scroll canvas up | **Page up key** |
+| Scroll canvas down | **Page down key** |
+| Scroll canvas left | **Alt + Page up key** |
+| Scroll canvas right | **Alt + Page down key** |
 
 ## Slicer
 
@@ -128,21 +132,22 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Move down an object in the layering | **Ctrl + Shift + B** |
 | Hide / show (toggle) an object | **Ctrl + Shift + S** |
 
-## DAX editor
+## DAX formula bar
 
 | To do this action          | Press                |
 | :------------------- | :------------------- |
+| Submit | **Ctrl + Enter** or **Enter** |
 | Go to line number | **Ctrl + G** |
 | Move line up / down | **Alt + Up arrow key** / **Down arrow key** |
 | Copy line up / down | **Shift + Alt + Up arrow key** / **Down arrow key** |
-| Insert line below | **Shift + Enter** |
+| Insert line below | **Shift + Enter** or **Alt + Enter** |
 | Insert line above | **Ctrl + Shift + Enter** |
 | Delete selected word | **Ctrl + Del**|
 | Delete all selected lines | **Ctrl + Shift + K**|
 | Jump to matching bracket | **Ctrl + Shift +** \ |
 | Jump to start of a line of code | **Ctrl + Home**  |
 | Jump to the end of a line of code | **Ctrl + End** |
-| Indent line / Extend line into the margin | **Ctrl + ]** / **[** |
+| Indent line / Extend line into the margin | **Ctrl + ]** or **Ctrl + [** |
 | Insert cursor | **Alt + Click** |
 | Select current line | **Ctrl + L** |
 | Select all occurrences of current selection | **Ctrl + Shift + L** |
@@ -153,8 +158,14 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Enter multiple lines of code up / down |**Ctrl + Alt + Up arrow key** / **Down arrow key**|
 | Comment a line | **Ctrl + /** or **Ctrl + K + C** |
 | Uncomment a line | **Ctrl + /** or **Ctrl + K + U** |
-| Increase font size | **Ctrl + +** Or **Scroll Up** |
-| Decrease font size | **Ctrl + -** Or **Scroll Down** |
+| Increase font size | **Ctrl + +** or **Scroll Up** |
+| Decrease font size | **Ctrl + -** or **Scroll Down** |
+| Show or hide "Read more" tooltips | **Ctrl + I** |
+| Show accessiblity widget | **Alt + F1** |
+| Close widget, suggestions, other dialogs, or closes DAX formula bar | **Esc** |
+| Show suggestions | **Ctrl + Space** |
+| Expand or Collapse DAX formula bar | **Ctrl + J** |
+| Focus on the DAX fomula bar itself to tab to next UI element | **Ctrl + M** |
 
 ## Enter data
 

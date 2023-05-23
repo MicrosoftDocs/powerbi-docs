@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/27/2022
+ms.date: 03/20/2023
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -44,7 +44,7 @@ If you're not ready to purchase, select the Power BI Pro trial. You'll get 25 li
 
 ## About self-service sign-up
 
-Individual users can get their own Power BI license by signing up with their work or school email account. With a free license, users can explore Power BI for personal data analysis and visualization using My Workspace, but they can't share content with others. A Power BI Pro or Power BI Premium Per User license is required before users can share content. For descriptions of the license types, see [license types for the Power BI service](../fundamentals/service-features-license-type.md).
+Individual users can get their own Power BI license by signing up with their work or school email account. With a free license, users can explore Power BI for personal data analysis and visualization using My Workspace, but they can't share content with others. A Power BI Pro or Power BI Premium Per User (PPU) license is required before users can share content. For descriptions of the license types, see [license types for the Power BI service](../fundamentals/service-features-license-type.md).
 
 Users can upgrade their license type, or sign up for a different license directly, if the organization is using the commercial cloud. Direct purchase, or upgrade to Pro isn't available to educational organizations or organizations deployed to Azure Government or Azure China 21Vianet clouds.
 
@@ -67,13 +67,13 @@ To see which users in your organization already have a license, see [View and ma
 
 ## License types and capabilities
 
-There are three kinds of Power BI per-user licenses: free, Pro, and Premium Per User. The type of license a user needs is determined by where content is stored, how they'll interact with that content, and if that content uses Premium features. Where an organization stores content is determined by [subscription license type](#subscription-license-types).
+There are three kinds of Power BI per-user licenses: free, Pro, and Premium Per User (PPU). The type of license a user needs is determined by where content is stored, how they'll interact with that content, and if that content uses Premium features. Where an organization stores content is determined by [subscription license type](#subscription-license-types).
 
-One type of organizational subscription, [Power BI Premium](service-admin-premium-purchase.md), is a capacity-based license. Premium capacity allows users with Pro and Premium Per User licenses to share content and collaborate with others who have free and Premium Per User licenses.
+One type of organizational subscription, [Power BI Premium](service-admin-premium-purchase.md), is a capacity-based license. Premium capacity allows users with Pro and PPU licenses to share content and collaborate with others who have free, Pro, and PPU licenses.
 
 For detailed information about licensing, see [Licenses for the Power BI](../fundamentals/service-features-license-type.md).
 
-Content created by a user who is assigned a Premium Per User license can only be shared with other users who have a Premium Per User license. Content that is saved in a workspace hosted with Premium capacity can be shared with users who don't have a Premium Per User license. For a detailed breakdown of feature availability per license type, see [Features by license type](../fundamentals/service-features-license-type.md).
+Content created by a user who is assigned a PPU license can only be shared with other users who have a PPU license. Content that is saved in a workspace hosted with Premium capacity can be shared with users who don't have a PPU license. For a detailed breakdown of feature availability per license type, see [Features by license type](../fundamentals/service-features-license-type.md).
 
 ## Subscription license types
 
@@ -102,11 +102,11 @@ For more information about guest user access, see [Distribute Power BI content t
 
 As an administrator, you can purchase Power BI Pro licenses through Microsoft 365 or through a Microsoft partner. After your purchase, you can assign them to individual users. For more information, see [Purchase and assign Power BI Pro licenses](service-admin-purchasing-power-bi-pro.md).
 
-### Power BI Pro license expiration
+### Power BI license expiration
 
-There's a grace period after a Power BI Pro license expires. For licenses that are part of a volume license purchase, the grace period is 90 days. If you bought the license directly, the grace period is 30 days.
+There's a grace period after a Power BI license expires. For licenses that are part of a volume license purchase, the grace period is 90 days. If you bought the license directly, the grace period is 30 days.
 
-Power BI Pro has the same license lifecycle as Microsoft 365. For more information, see [What happens to my data and access when my Microsoft 365 for business subscription ends](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires).
+Power BI has the same license lifecycle as Microsoft 365. For more information, see [What happens to my data and access when my Microsoft 365 for business subscription ends](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires).
 
 ## Next steps
 

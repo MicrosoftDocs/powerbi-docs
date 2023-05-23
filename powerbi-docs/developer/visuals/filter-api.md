@@ -40,7 +40,7 @@ To enable filtering for the visual, the *capabilities.json* file should contain 
 >    npm install powerbi-models --save
 >    ```
 >
-> * If you're using an older (earlier than 3.x.x) version of the tools, include `powerbi-models` in the visuals package. For more information, see the short guide, [Add the Advanced Filter API to the custom visual](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/AddingAdvancedFilterAPI.md).
+> * If you're using an older (earlier than 3.x.x) version of the tools, include `powerbi-models` in the visuals package. For more information, see the short guide, [Add the Advanced Filter API to the custom visual](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/AddingAdvancedFilterAPI.md). To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 All filters use the [`IFilter` interface](/azure/machine-learning/studio-module-reference/ifilter-interface), as shown in the following code:
 
@@ -185,7 +185,7 @@ interface ITupleFilter extends IFilter {
 }
 ```
 
-Where 
+Where
 
 * `target` is an array of columns with table names:
 
@@ -195,7 +195,7 @@ Where
 
     The filter can address columns from various tables.
 
-* `$schema` is https://powerbi.com/product/schema#tuple.
+* `$schema` is <https://powerbi.com/product/schema#tuple>.
 
 * `filterType` is *FilterType.Tuple*.
 
@@ -289,7 +289,7 @@ When you switch bookmarks, Power BI calls the `update` method of the visual, and
 
 Some sample JSON filter code is shown in the following image:
 
-![JSON filter code](media/filter-api/json-filter.png)
+:::image type="content" source="media/filter-api/json-filter.png" alt-text="Screenshot of sample JSON filter code showing values in an array.":::
 
 ### Clear the JSON filter
 

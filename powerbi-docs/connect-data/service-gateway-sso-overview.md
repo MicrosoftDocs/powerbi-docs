@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 01/13/2023
+ms.date: 03/10/2023
 LocalizationGroup: Gateways
 ---
 
@@ -31,22 +31,25 @@ While the on-premises data gateway supports SSO by using [DirectQuery](desktop-d
 
 Power BI supports the following data sources:
 
-* SQL Server (Kerberos)
-* SAP HANA (Kerberos and SAML)
+
+* Amazon Redshift (Azure AD)
+* Azure Databricks
+* Azure Data Explorer (Azure AD)
+* Azure SQL (Azure AD)
+* Azure Synapse Analytics (Azure AD)
+* Denodo (Kerberos)
+* Hive LLAP (Kerberos)
+* Impala (Kerberos)
+* Oracle (Kerberos)
 * SAP BW Application Server (Kerberos)
 * SAP BW Message Server (Kerberos)
-* Oracle (Kerberos)
-* Teradata (Kerberos)
-* Spark (Kerberos)
-* Impala (Kerberos)
-* Denodo (Kerberos)
-* Azure Synapse Analytics (Azure AD)
-* Azure SQL (Azure AD)
-* Azure Data Explorer (Azure AD)
+* SAP HANA (Kerberos and SAML)
 * Snowflake (Azure AD)
-* Amazon Redshift (Azure AD)
-* Hive LLAP (Kerberos)
+* Spark (Kerberos)
+* SQL Server (Kerberos)
+* Teradata (Kerberos)
 * Tibco Data Virtualization (Kerberos)
+
 
 > [!NOTE]
 > SQL Server Analysis Services also supports SSO, but does so using [Live connections](service-gateway-enterprise-manage-ssas.md#authentication-to-a-live-analysis-services-data-source), rather than using Kerberos or SAML. Power BI doesn't support SSO for [M-extensions](/power-query/samples/trippin/9-testconnection/readme).

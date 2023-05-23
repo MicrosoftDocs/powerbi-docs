@@ -2,12 +2,13 @@
 metadata:
   title: Troubleshoot deployment pipelines, the Power BI Application lifecycle management (ALM) tool
   description: Find answers to your deployment pipelines, the Power BI Application lifecycle management (ALM) tool, troubleshooting questions
-  author: KesemSharabi
-  ms.author: kesharab
+  author: mberdugo
+  ms.author: monaberdugo
   ms.topic: troubleshooting
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 01/18/2023
+  ms.date: 04/02/2023
+  ms.search.form: Deployment pipelines troubleshooting, View deployment pipeline, Deployment pipelines operations, Deployment rules
   
 title: Deployment pipelines troubleshooting
 summary: |
@@ -76,7 +77,7 @@ sections:
           
           * [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml).
           
-          For more information, see [accessing deployment pipelines](deployment-pipelines-get-started.md#accessing-deployment-pipelines).
+          For more information, see [prerequisites for accessing deployment pipelines](deployment-pipelines-get-started.md#prerequisites).
           
       - question: |
           What type of capacity can I assign to a workspace in a pipeline?

@@ -19,7 +19,7 @@
       href: end-user-shared-with-me.md
     - name: "Export a report to PDF"
       href: end-user-pdf.md
-    - name: "Request access to a report or dashboard"
+    - name: "Request or grant access to a report"
       href: service-request-access.md
     - name: "Filter and share a report"
       href: service-share-reports.md
@@ -37,6 +37,8 @@
       href: service-featured-content.md
     - name: "Embed report in SharePoint Online"
       href: service-embed-report-spo.md
+    - name: "View reports in SharePoint and OneDrive"
+      href: service-sharepoint-viewer.md      
     - name: "Embed report in a secure portal or website"
       href: service-embed-secure.md
     - name: "Publish from Power BI to the web"
@@ -101,12 +103,14 @@
     items: 
     - name: "About storytelling with Power BI in PowerPoint"
       href: service-power-bi-powerpoint-add-in-about.md
-    - name: "Add a live report page to PowerPoint"
+    - name: "Add live data to PowerPoint"
       href: service-power-bi-powerpoint-add-in-install.md
-    - name: "View and present live report pages in PowerPoint"
+    - name: "View and present live data in PowerPoint"
       href: service-power-bi-powerpoint-add-in-view-present.md
     - name: "Information for the Power BI admin"
       href: service-power-bi-powerpoint-add-in-admin.md
+    - name: "What's new in the Power BI add-in for PowerPoint"
+      href: service-power-bi-powerpoint-add-in-whats-new.md
     - name: "Troubleshoot the Power BI add-in"
       href: service-power-bi-powerpoint-add-in-troubleshoot.md
     - name: "Export a static Power BI report to PowerPoint"

@@ -87,16 +87,13 @@ This section describes the following datasets workload settings:
 
 Use the settings in the table below to control workload behavior. Settings with a link have additional information that you can review in designated sections below the table.
 
->[!NOTE]
->In Premium Gen1, the datasets workload is enabled by default and cannot be disabled.
-
 | Setting Name | Description |
 |---------------------------------|----------------------------------------|
 | **Max Memory (%)**<sup>1</sup> | The maximum percentage of available memory that datasets can use in a capacity. |
 | **XMLA Endpoint** | Specifies that connections from client applications honor the security group membership set at the workspace and app levels. For more information, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md). |
 | **[Max Intermediate Row Set Count](#max-intermediate-row-set-count)** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483646. The upper limit may need to be further constrained based on what the datasource supports. |
 | **[Max Offline Dataset Size (GB)](#max-offline-dataset-size)** | The maximum size of the offline dataset in memory. This is the compressed size on disk. The default value is 0, which is the highest limit defined by SKU. The allowable range is between 0 and the capacity size limit. |
-| **[Max Result Row Set Count](#max-result-row-set-count)** | The maximum number of rows returned in a DAX query. The default value is -1 (no limit), and the allowable range is between 100000 and 2147483647. |
+| **[Max Result Row Count](#max-result-row-set-count)** | The maximum number of rows returned in a DAX query. The default value is 2147483647, and the allowable range is between 100000 and 2147483647. |
 | **[Query Memory Limit (%)](#query-memory-limit)** | The maximum percentage of available memory in the workload that can be used for executing an MDX or DAX query. The default value is 0, which results in SKU-specific automatic query memory limit being applied. |
 | **[Query Timeout (seconds)](#query-timeout)** | The maximum amount of time before a query times out. The default is 3600 seconds (1 hour). A value of 0 specifies that queries won't time out. |
 | **[Automatic page refresh](#automatic-page-refresh)** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh based on fixed intervals. |
@@ -208,41 +205,17 @@ The Analysis Services XMLA-based server properties setting is enabled by default
 
 ## Dataflows
 
-The dataflows workload lets you use dataflows self-service data prep, to ingest, transform, integrate, and enrich data. Use the following settings to control workload behavior in Premium Gen1.
-
-| Setting Name | Description |
-|---------------------------------|----------------------------------------|
-| **Max Memory (%)**<sup>1</sup> | The maximum percentage of available memory that dataflows can use in a capacity. |
-| **Enhanced Dataflows Compute Engine (Preview)** | Enable this option for up to 20x faster calculation of computed entities when working with large scale data volumes. **You must restart the capacity to activate the new engine.** For more information, see [Enhanced dataflows compute engine](#enhanced-dataflows-compute-engine). |
-| **Container Size** | The maximum size of the container that dataflows use for each entity in the dataflow. The default value is 700 MB. For more information, see [Container size](#container-size). |
-
-<sup>1</sup> *Premium* doesn't require memory settings to be changed. Memory in Premium is automatically managed by the underlying system.
+The dataflows workload lets you use dataflows self-service data prep, to ingest, transform, integrate, and enrich data. Use the following settings to control workload behavior in Premium. Power BI Premium doesn't require memory settings to be changed. Memory in Premium is automatically managed by the underlying system.
 
 ### Enhanced dataflows compute engine
 
 To benefit from the new compute engine, split ingestion of data into separate dataflows and put transformation logic into computed entities in different dataflows. This approach is recommended because the compute engine works on dataflows that reference an existing dataflow. It doesn't work on ingestion dataflows. Following this guidance ensures that the new compute engine handles transformation steps, such as joins and merges, for optimal performance.
-
-### Container size
-
-When refreshing a dataflow, the dataflow workload spawns a container for each entity in the dataflow. Each container can take memory up to the volume specified in the Container Size setting. The default for all SKUs is 700 MB. You might want to change this setting if:
-
-* Dataflows take too long to refresh, or dataflow refresh fails on a timeout.
-* Dataflow entities include computation steps, for example, a join.  
-
-It's recommended you use the [Power BI Premium Capacity Metrics](service-premium-metrics-app.md) app to analyze Dataflow workload performance.
-
-In some cases, increasing container size may not improve performance. For example, if the dataflow is getting data only from a source without performing significant calculations, changing container size probably won't help. Increasing container size might help if it will enable the Dataflow workload to allocate more memory for entity refresh operations. By having more memory allocated, it can reduce the time it takes to refresh heavily computed entities.
-
-The Container Size value can't exceed the maximum memory for the Dataflows workload. For example, a P1 capacity has 25 GB of memory. If the Dataflow workload Max Memory (%) is set to 20%, Container Size (MB) can't exceed 5000. In all cases, the Container Size can't exceed the Max Memory, even if you set a higher value.
 
 ## Paginated reports
 
 The paginated reports workload lets you run paginated reports, based on the standard SQL Server Reporting Services format, in the Power BI service.
 
 Paginated reports offer the same capabilities that SQL Server Reporting Services (SSRS) reports do today, including the ability for report authors to add custom code.  This allows authors to dynamically change reports, such as changing text colors based on code expressions.
-
->[!NOTE]
->You need to enable this workload with Power BI Premium Gen1 capacities.
 
 ### Outbound connectivity
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 02/19/2023
+ms.date: 05/23/2023
 ---
 
 # Service interruption notifications
@@ -48,6 +48,5 @@ This article describes how to receive service notifications through Power BI. Yo
 
 ## Next steps
 
-[Power BI Pro and Power BI Premium support options](service-support-options.md)
-
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+>[!div class="nextstepaction"]
+>[Power BI Pro and Power BI Premium support options](service-support-options.md)

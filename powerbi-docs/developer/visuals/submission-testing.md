@@ -62,7 +62,7 @@ Verify that your visual passes the general test cases.
 | Filter data using a **Slicer**. | Tooltips are correct after applying filters. Tooltips show the filtered value. |
 | Filter data using a published visual. For instance, select a pie slice or a column. | Tooltips are correct after applying filters. Tooltips show the filtered value. |
 | If cross-filtering is supported, verify that filters work correctly. | Applied selection filters other visuals on this page of the report. |
-| Select with Ctrl, Alt, and Shift keys. | No unexpected behaviors appear. |
+| Select with <kbd>Ctrl</kbd>, <kbd>Alt</kbd>, and <kbd>Shift</kbd> keys. | No unexpected behaviors appear. |
 | Change the **View Mode** to **Actual size**, **Fit to page**, and **Fit to width**. | Mouse coordinates are accurate. |
 | Resize your visual. | Visual reacts correctly to resizing. |
 | Set the report size to the minimum. | There's no display errors. |
@@ -124,14 +124,12 @@ Your visual should perform at an acceptable level. Use developer tools to valida
 
 | Test case | Expected results
 | --------- | ----------------
-| Create a visual with many visual elements. | The visual performs well and doesn't freeze the application. There aren't any performance issues with elements such as animation speed, resizing, filtering, and selecting.
+| Create a visual with many visual elements. | The visual should perform well and not freeze the application. There should be no performance issues with elements such as animation speed, resizing, filtering, and selecting. Check out these [tips for optimal performance](performance-tips.md).
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Publish Power BI visuals to Partner Center](./office-store.md)
-
->[!div class="nextstepaction"]
->[Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
+* [Publish Power BI visuals to Partner Center](./office-store.md)
+* [Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
+* [Performance tips for creating quality Power BI custom visuals](performance-tips.md)
 
 **More questions?** [Ask the Power BI Community](https://community.powerbi.com/).

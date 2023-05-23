@@ -26,6 +26,8 @@ Before you install the Premium metrics app, review these requirements:
 
 * The app only works with Premium capacities
 
+* You need to have a Power BI Pro or Premium Per User License
+
 ## Install the app
 
 Follow the steps according to the type of installation you need.

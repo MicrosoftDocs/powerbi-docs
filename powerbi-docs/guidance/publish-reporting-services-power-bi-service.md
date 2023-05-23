@@ -7,13 +7,13 @@ ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cookiemccray
-ms.date: 1/12/2023
+ms.date: 04/11/2023
 ms.custom:
 ---
 
 # Publish .rdl files to Power BI from Power BI Report Server and Reporting Services
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;Power&nbsp;BI&nbsp;2022&nbsp;Report&nbsp;Server :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;SQL&nbsp;Server&nbsp;2022&nbsp;Reporting&nbsp;Services
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;Power&nbsp;BI&nbsp;2022&nbsp;Report&nbsp;Server :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;SQL&nbsp;Server&nbsp;2022&nbsp;Reporting&nbsp;Services
  
 Do you have Report Definition Language (.rdl) paginated reports in Power BI Report Server or SQL Server 2022 Reporting Services (SSRS) that you want to migrate to the Power BI service? This article provides step-by-step instructions for migrating .rdl files *and Power BI reports (.pbix files)* from Power BI Report Server and SQL Server 2022 Reporting Services to the Power BI service.
 
@@ -173,12 +173,7 @@ You can't migrate the following item types to the Power BI service:
 
 ### Unsupported report features
 
-Some paginated report features in SSRS aren't yet supported in the Power BI service. Paginated reports don't support the following features: 
-
-- Drill through and click-through to other reports 
-- Custom fonts 
-
-You get an error message if you try to upload a file with features that are unsupported in the Power BI service.  
+See [What paginated report features in SSRS aren't yet supported in Power BI?](../paginated-reports/paginated-reports-faq.yml#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-) in the Paginated reports in Power BI FAQ for a complete list of unsupported report features.
 
 ## Next steps
 

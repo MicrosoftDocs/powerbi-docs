@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Content creator security planning"
 description: "Learn about content creator security planning for Power BI."
-author: kfollis
-ms.author: kfollis
+author: data-goblin
+ms.author: v-kurtbuhler
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -85,7 +85,7 @@ The following permissions are commonly required for creating new content.
 | **Access where original Power BI Desktop file is stored** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | |
 | **Permission to use custom visuals** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | | |
 
-#### Publishing content
+#### Publishing content permissions
 
 The following permissions are commonly required for publishing content.
 
@@ -143,7 +143,7 @@ Consider the following three examples.
 
 The following screenshot shows a dataset in the data hub in the Power BI service. Specifically, it shows an example of a _Request access_ message for a discoverable dataset. This message is shown when the user doesn't currently have access. The _Request access_ message has been customized in the dataset settings.
 
-The _Request access_ message reads: _For standard sales reporting of MTD/QTD/YTD, this dataset is the authorize and certified source. Please request access to the dataset by completing the form located at https://coe.contoso.com/RequestAccess. You will be asked for a brief business justification, and the manager of the Center of Excellence will be required to approve the request as well. Access will be audited every six months._
+The _Request access_ message reads: _For standard sales reporting of MTD/QTD/YTD, this dataset is the authorize and certified source. Please request access to the dataset by completing the form located at `https://COE.contoso.com/RequestAccess`. You will be asked for a brief business justification, and the manager of the Center of Excellence will be required to approve the request as well. Access will be audited every six months._
 
 :::image type="content" source="media/powerbi-implementation-planning-security-content-creator-planning/request-dataset-access.png" alt-text="Screenshot of the request access message in the data hub, for a dataset that's set to be discoverable." border="false":::
 
@@ -185,11 +185,11 @@ Instead of relying on one owner, you can define [custom instructions](/power-bi/
 - Tracking of who requested access, when, and why is necessary for auditing or compliance reasons.
 - Explanation is necessary for how to request access, and to set expectations.
 
-The following screenshot shows an example of setting up custom instructions that a user sees when they request the Build permission. The custom instructions read: _For standard sales reporting of MTD/QTD/YTD, this dataset is the authoritative and certified source. Please request access to the dataset by completing the form located at https://coe.contoso.com/RequestAccess. You will be asked for a brief business justification, and the manager of the Center of Excellence will be required to approve the request as well. Access will be audited every six months._
+The following screenshot shows an example of setting up custom instructions that a user sees when they request the Build permission. The custom instructions read: _For standard sales reporting of MTD/QTD/YTD, this dataset is the authoritative and certified source. Please request access to the dataset by completing the form located at `https://COE.contoso.com/RequestAccess`. You will be asked for a brief business justification, and the manager of the Center of Excellence will be required to approve the request as well. Access will be audited every six months._
 
 :::image type="content" source="media/powerbi-implementation-planning-security-content-creator-planning/request-access-instructions.png" alt-text="Screenshot of the request access setting for a dataset in the Power BI service." border="false":::
 
-There are many options to create a form. [Power Apps](/power-apps/powerapps-overview) and [Microsoft Forms](/microsoft-365/online-surveys-polls-quizzes) are both low-code, easy-to-use options. We recommend that you create a form in a way that's independent of a single user. It's crucial that your form is created, managed, and monitored by the proper team.
+There are many options to create a form. [Power Apps](/power-apps/powerapps-overview) and [Microsoft Forms](/microsoft-forms/set-up-microsoft-forms) are both low-code, easy-to-use options. We recommend that you create a form in a way that's independent of a single user. It's crucial that your form is created, managed, and monitored by the proper team.
 
 We recommend that you create helpful information for:
 
@@ -833,10 +833,10 @@ There are some limitations concerning attachments related to licensing and tenan
 > - **Verify workspace access:** Confirm the workspace design approach. Verify how to use the workspace access roles to support your strategy for where content should be published.
 > - **Determine how to handle deployment pipeline permissions:** Decide which users are permitted to publish content by using a deployment pipeline. Set the deployment pipeline permissions accordingly. Ensure that workspace access is also provided as well.
 > - **Decide who can connect to datasets by using the XMLA endpoint:** Decide which users are permitted to query or manage datasets by using the XMLA endpoint. Set the _Allow XMLA endpoints and Analyze in Excel with on-premises datasets_ tenant setting to align with this decision. When you decide to limit this capability, consider using a group such as _Power BI approved content creators_.
-> - **Decide who can publish reports publicly:** Decide which users are permitted to publish Power BI reports publicly, if any. Set the *Publish to web* tenant setting to align with this decision. Use a group such as _Power BI public publishing_.
+> - **Decide who can publish reports publicly:** Decide which users are permitted to publish Power BI reports publicly, if any. Set the _Publish to web_ tenant setting to align with this decision. Use a group such as _Power BI public publishing_.
 > - **Decide who can embed content in custom apps:** Determine who should be allowed to embed content outside of the Power BI service. Set the _Embed content in apps_ tenant setting to align with this decision.
 > - **Decide who can embed content in PowerPoint:** Determine who should be allowed to embed content in PowerPoint. Set the _Enable Power BI add-in for PowerPoint_ tenant setting to align with this decision.
-> - **Decide who can publish template apps:** Determine what your strategy is for using template apps outside of the organization. Set the *Publish template apps* tenant setting to align with this decision.
+> - **Decide who can publish template apps:** Determine what your strategy is for using template apps outside of the organization. Set the _Publish template apps_ tenant setting to align with this decision.
 > - **Decide whether to enable subscriptions:** Confirm what your strategy is for using subscriptions. Set the _Email Subscriptions_ tenant setting to align with this decision.
 
 ## Refresh data

@@ -11,7 +11,7 @@ ms.reviewer: rpatkar
 ---
 # Add, move, or delete a text box in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
   Text boxes are the most commonly used report item in Power BI paginated reports. You can add a text box to the report body to display information such as titles, parameter choices, built-in fields, and dates.  
   
@@ -68,7 +68,7 @@ ms.reviewer: rpatkar
   
 ## Next steps
  [Text Boxes &#40;Report Builder and the Power BI service&#41;](text-boxes-report-builder-and-service.md)   
- [Expressions &#40;Report Builder and the Power BI service&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs)   
+ [Expressions &#40;Report Builder and the Power BI service&#41;](../../report-builder-expressions.md)   
  [Keyboard Shortcuts &#40;Report Builder&#41;](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder)  
   
   

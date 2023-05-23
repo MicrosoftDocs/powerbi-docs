@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 01/24/2023
+ms.date: 04/14/2023
 LocalizationGroup: Data from files
 ---
 # Configure dataflow storage to use Azure Data Lake Gen 2
@@ -38,6 +38,9 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 
 - Finally, you can connect to any ADLS Gen 2 [from the Admin portal](/power-bi/admin/service-admin-portal-azure-connections#workspace-level-storage-permissions), but if you connect directly to a workspace, you must first ensure there are no dataflows in the workspace before connecting.
 
+> [!NOTE]
+> Bring your own storage (Azure Data Lake Gen 2) is not available in the Power BI service for U.S. Government GCC customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
+
 The following table describes the permissions for ADLS and for Power BI required for ADLS Gen 2 and Power BI:
 
 |Action  |ADLS permissions  |Minimum Power BI permissions  |
@@ -58,7 +61,7 @@ The **Use default Azure connection** option is visible if admin has already conf
 - Use the tenant configured ADLS Gen 2 account by selecting the box called **Use the default Azure connection**, or
 - Select **Connect to Azure** to point to a new Azure Storage account.
 
-When you select **Connect to Azure**, Power BI retrieves a list of Azure subscriptions to which you have access. Fill in the dropdowns. Then choose a valid Azure subscription, resource group, and storage account that has the hierarchical namespace option enabled, which is the ADLS Gen2 flag.
+When you select **Connect to Azure**, Power BI retrieves a list of Azure subscriptions to which you have access. Fill in the dropdowns. Then choose a valid Azure subscription, resource group, and storage account that has the hierarchical namespace option enabled, which is the ADLS Gen2 flag. The personal account used to connect to Azure is only used once, to set the initial connection and grant the Power BI service account rights to read and write data, after which the original user account is no longer needed to keep the connection active.
 
 :::image type="content" source="media/dataflows-azure-data-lake-storage-integration/subscription-details-enter.png" alt-text="Screenshot of the Settings window after choosing Connecting to Azure.":::
 
@@ -82,14 +85,9 @@ To summarize, if tenant-level storage and workspace-level storage permissions ar
 In the ADLS Gen 2 storage account, all dataflows are stored in the **powerbi** container of the filesystem.
 
 The structure of the **powerbi** container looks like this:
-`<workspace name>/<dataflow name>/model.json
-<workspace name>/<dataflow name>/model.json.snapshots/<all snapshots>`
+`<workspace name>/<dataflow name>/model.json`, `<workspace name>/<dataflow name>/model.json.snapshots/<all snapshots>` and `<workspace name>/<dataflow name>/<table name>/<tablesnapshots>`
 
-The location where dataflows store data in the folder hierarchy for ADLS Gen 2 is determined by whether the workspace is located in shared capacity or Premium capacity. The file structure after refresh for each capacity type is shown in the following table.
-
-| Premium capacity | Shared capacity |
-|---|---|
-| `<workspace name>/<dataflow name>/<table name>/<tablesnapshots>` | `<workspace name>/<dataflow name>/<table name>/<tablesnapshots>` |
+The location where dataflows store data in the folder hierarchy for ADLS Gen 2 is the same whether the workspace is located in shared capacity or Premium capacity. 
 
 The following example uses the Orders table of the Northwind Odata sample.
 
@@ -99,12 +97,12 @@ In the preceding image:
 
 - The *model.json* is the most recent version of the dataflow.
 - The *model.json.snapshots* are all previous versions of the dataflow. This history is useful if you need a previous version of mashup, or incremental settings.
-- The *table.snapshots.csv* is the data you got from a refresh. This file is useful for incremental refreshes, and also for shared refreshes where a user is running into a refresh timeout issue because of data size. They can look at the most recent snapshot to see how much data is in the CSV file.
+- The *tablename* is the folder containing resulting data after a dataflow refresh has completed. 
 
 We only write to this storage account and don't currently delete data. So even after detach, we don’t delete from the ADLS account, so all of the files mentioned in the preceding list are still stored.
 
 > [!NOTE]
-> A *model.json* file can refer to another *model.json* that is another dataflow in the same workspace, or in a dataflow in another workspace. The only time where a *model.json* would refer to a *table.snapshot.csv* is for incremental refresh.
+> Dataflows allow linking or referencing tableds in other dataflows. In such dataflows, the *model.json* file can refer to another *model.json* of another dataflow in the same or other workspace.
 
 ## Extensibility for ADLS Gen 2 workspace connections
 

@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 02/16/2023
+ms.date: 04/12/2023
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## February 2023 Update (2.114.664.0)
+## April 2023 Update (2.116.404.0)
 
-We love February's updates. We're happy to share them with all of you, all wrapped up in a virtual heart-shaped box of sweet features. 
+This April we have new features and capabilities raining down on our Power BI offering, filling us with the hope of bright colors and new growth across our veritable garden of analytics. 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -41,62 +41,55 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 
 The following updates are new to Power BI Desktop this month:
 
-https://powerbi.microsoft.com/en-us/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917169
 
 
 ### Reporting
-* Conditional formatting based on string fields  [[video]](https://youtu.be/7-0Pr0U2HIA?t=14)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917169) 
-* Smart Narrative visual summary icon    [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917170)
-* Formatting image width in table and matrix   [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917171)
-* Update your base theme in Power BI   [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917172)
-* Report theme validation on custom theme import   [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917173)
-* Text box visual indentation   [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917174)
-* New accessible report themes   [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917175)
-* Customize visible pages in the Page navigator visual   [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917176)
-* Sensitivity labels now supported in PDF export from Power BI Desktop (preview)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917177)
-* Enhanced row-level security editor (preview)  [[video]](https://youtu.be/7-0Pr0U2HIA?t=141)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917178)
-
+* Dynamic format strings for measures  [[video]](https://youtu.be/rQfUo3PN0zw?t=29)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc433340751)
+* On-object interaction - updates (preview)   [[video]](https://youtu.be/rQfUo3PN0zw?t=254)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc126732879)
+* New tooltip auto-scale (preview)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc1599845071) [[article]](desktop-format-pane.md)
 
 ### Analytics
-* Quick create SDK   [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917180) 
-
+* Update to Quick measures suggestions  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc431520696)   [[article]](../transform-model/quick-measure-suggestions.md)
 
 ### Modeling
-* New DAX functions: LINEST and LINESTX   [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917182) 
+* Composite models on Power BI datasets and Analysis Services (generally available) [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc982443258)  [[release announcement]](https://powerbi.microsoft.com/blog/Announcing-general-availability-for-composite-models-on-Power-BI-Datasets-and-Analysis-Services-models) [[article]](../transform-model/desktop-composite-models.md)
+* Updates to ORDERBY function [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc439693147)  [[article]](/dax/orderby-function-dax)
+* New DAX functions: RANK and ROWNUMBER [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc826225249)  [[article]](/dax/rank-function-dax) [[article]](/dax/rownumber-function-dax)
 
 
 ### Data connectivity
-* Many updated data connectors  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917183)  
+* Many updated data connectors  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc1477267150)  
 
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
 
 ### Visuals
-* New visuals in AppSource    [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-21693-_Toc121395799)
+* Many new and updated visuals    [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-21693-_Toc465015701)
+
 
 
 # [Power BI service](#tab/powerbi-service)
 
 The following updates are new to the Power BI service this month:
 
-* New *Get Data* experience in the Power BI service [[video]](https://youtu.be/7-0Pr0U2HIA?t=346)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-21693-_Toc121395788)
-* Compact view    [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-21693-_Toc121395789)
-* Linked metrics    [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-21693-_Toc121395790)
-* Follow metric    [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-21693-_Toc121395791)
+* New features to Deployment Pipeline [[video]](https://youtu.be/rQfUo3PN0zw?t=585)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-21693-_Toc1745634143)   [[article]](../create-reports/deployment-pipelines-get-started.md)
+* Storytelling in PowerPoint - new style option   [[video]](https://youtu.be/rQfUo3PN0zw?t=368)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-21693-_Toc783019515)
+* Visualizing views in Power Apps with Power BI quick report enabled by default    [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-21693-_Toc1140694008)  [[article]](/power-apps/user/visualize-in-power-bi)
+
 
 ---
 
 
 
 
-For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/).
+For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/).
 
 
 ### Power BI monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post.
 
-> [!VIDEO https://www.youtube.com/embed/7-0Pr0U2HIA]
+> [!VIDEO https://www.youtube.com/embed/rQfUo3PN0zw]
 
 > [!NOTE]
 > The video might use earlier versions of Power BI Desktop or the Power BI service.

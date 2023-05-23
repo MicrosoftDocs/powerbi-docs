@@ -70,8 +70,6 @@
     items: 
     - name: "Types of visualizations"
       href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
-    - name: "Show the data that was used to create the visualization"
-      href: end-user-show-data.md
     - name: "Copy a visual and paste it elsewhere"
       href: end-user-copy-paste.md
     - name: "Drill down in a visualization"
