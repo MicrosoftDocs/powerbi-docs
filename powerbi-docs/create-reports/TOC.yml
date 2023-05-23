@@ -196,6 +196,8 @@
       href: desktop-templates.md      
     - name: "Change report settings"
       href: power-bi-report-settings.md
+    - name: "Set visual query limits"
+      href: desktop-set-visual-query-limits.md
     - name: "Feature reports on others' Home pages"
       href: ../collaborate-share/service-featured-content.md
     - name: "Interact with a report in Editing view"
