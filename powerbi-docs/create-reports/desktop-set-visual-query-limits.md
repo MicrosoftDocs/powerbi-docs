@@ -16,7 +16,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-When you load a report page or make changes to the fields in a visual, that visual will send a query to the data source in order to get the data it needs to represent. Processing these queries requires both time and computer memory. In the Power BI Service, depending on where your data is hosted, that capacity will apply different limits to the time a query is allowed to run and the amount of memory that query is allowed to use. 
+When you load a report page or make changes to the fields in a visual, that visual will send a query to your report's data source. Processing these queries requires both time and computer memory. In the Power BI Service, depending on where your data is hosted, that capacity will apply different limits to the time a query is allowed to run and the amount of memory that query is allowed to use. 
 
 The following table shows the timeouts and memory limits applied by different capacities.
 
@@ -48,7 +48,7 @@ Power BI Desktop will not naturally apply any of these limits to local models. H
    - Custom limits
    - No query limits
 
-By default, new reports will have "auto (recommended)" selected. With auto limits, Power BI will do its best to identify where the model is hosted and apply those limits. Otherwise, it will default to the Shared capacity limits to ensure that queries which complete on Desktop will complete for published reports regardless of where the report's data ends up hosted. Underneath the dropdown, you will be able to see the exact timeout and memory limits currently being applied for the chosen capacity. 
+By default, new reports have "auto (recommended)" selected. With auto limits, Power BI will do its best to identify where the model is hosted and apply those limits. Otherwise, it will default to the Shared capacity limits to ensure that queries which complete on Desktop will complete for published reports, regardless of where the report's data ends up hosted. Underneath the dropdown, you will be able to see the exact timeout and memory limits currently being applied for the chosen capacity. 
 
 If you choose to apply custom limits, you will be provided an input box which you can use to enter specific timeout and memory limits of your choosing. When you set your own limits, you can use "0" to indicate "no limits." 
 
@@ -57,4 +57,4 @@ If you choose to apply custom limits, you will be provided an input box which yo
 
 - Since Power BI Desktop did not apply limits before the release of this setting, reports created earlier are set to "no query limits." If a visual or report seems to be working without error on Power BI Desktop, but other users are running into errors trying to view the published report, consider applying query limits as described in this article.
 - Limits set in this manner will apply to all queries sent from the report view. Queries sent from the data or model views will not be affected.
-- With live connected reports, you may notice visuals erroring before they reach query limits you set. This may be because the external Analysis Services engine to which your report is live connected has its own stricter query limits. Even when applying query limits through the report setting described in this article, queries will still be subject to any other limits imposed by the data source. 
+- With live connected reports, you may notice visuals erroring before they reach query limits you set. This may be because the external Analysis Services engine to which your report is live connected has its own stricter query limits. Even when Power BI Desktop applies query limits through the report setting described in this article, queries will still be subject to any other limits imposed by the data source. 
