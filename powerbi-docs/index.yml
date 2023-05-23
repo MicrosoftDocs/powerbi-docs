@@ -336,9 +336,12 @@ additionalContent:
         - title: Power BI embedded analytics client APIs
           summary: A client-side library for embedding Power BI using JavaScript or TypeScript.
           url: /javascript/api/overview/powerbi/
-    - title: Other Microsoft Power Platform products # < 60 chars (optional)
+    - title: Related content # < 60 chars (optional)
       items:
         # Card
+        - title: Power Platform
+          summary: One-stop learning resource for Power Platform applications and features.
+          url: /power-platform        
         - title: Power Apps
           summary: Quickly build low-code apps that modernize precesses and solve tough business challenges in your organization.
           url: /powerapps/
