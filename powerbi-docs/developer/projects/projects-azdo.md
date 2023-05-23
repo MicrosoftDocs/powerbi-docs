@@ -27,7 +27,7 @@ Microsoft Power BI Desktop projects enable developer collaboration by connecting
 
     :::image type="content" source="media/projects-azdo/pbip-azdo-new-project.png" border="false" alt-text="PBIP and Azure DevOps integration new project.":::
 
-1. Enter you project details.
+1. Enter your project details.
 
     :::image type="content" source="media/projects-azdo/pbip-azdo-new-project-details.png" alt-text="PBIP and Azure DevOps integration new project details.":::
 

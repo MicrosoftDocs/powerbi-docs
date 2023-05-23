@@ -26,13 +26,13 @@ With Git integration, you can:
 
 ## Prerequisites
 
-- Be familiar with Git, the [git-scm](https://git-scm.com/doc) website is a good place to learn the basics
+- Be familiar with Git.
 - [Download](https://git-scm.com/download) and install Git.
-- [Download](https://code.visualstudio.com/) and install [Visual Studio Code]. VS Code has native integration with Git. To learn more, see [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview).
+- [Download](https://code.visualstudio.com/) and install VS Code. It has native integration with Git. To learn more, see [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview).
 
-#### To create a local Git Repo using VS Code
+#### To create a local Git repo using VS Code
 
-1. In VS Code, open the Power BI Desktop project folder:
+1. In VS Code, open aPower BI Desktop project folder:
 
     :::image type="content" source="media/projects-git/open-pbip-folder.png" alt-text="Image showing open folder in VS Code.":::
 
