@@ -15,20 +15,20 @@ ms.date: 05/18/2023
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-Git integration in Microsoft Visual Studio Code (VS Code) enables Pro BI developers working with Power BI Desktop projects to streamline development processes, source control, and collaboration straight with Git repositories.
+Git integration in Microsoft Visual Studio Code (VS Code) enables Pro BI developers working with Power BI Desktop projects to streamline development processes, source control, and collaboration with Git repositories.
 
 With Git integration, you can:
 
 - Backup and version your work.
-- Revert to previous states if needed.
+- Revert to previous states.
 - Collaborate with others or work alone using Git branches.
 - Leverage the capabilities of familiar source control tools, like Azure DevOps.
 
 ## Prerequisites
 
 - Be familiar with Git.
-- [Download](https://git-scm.com/download) and install Git.
-- [Download](https://code.visualstudio.com/) and install VS Code. It has native integration with Git. To learn more, see [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview).
+- [Download](/devops/develop/git/install-and-set-up-git) and install Git.
+- [Download](https://code.visualstudio.com/) and install VS Code development environment. It has native integration with Git. To learn more, see [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview).
 
 #### To create a local Git repo using VS Code
 

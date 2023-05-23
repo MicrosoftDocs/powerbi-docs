@@ -21,6 +21,36 @@ This article describes the files and sub-folders in the Microsoft Power BI Deskt
 
 Contains files and folders that represent a Power BI Dataset. Depending on your project, it can include the following:
 
+#### model.bim
+
+Contains a JSON definition of the model. In most cases, this is the file you'll be working on.
+
+#### definition.pbidataset
+
+Contains metadata that defines the file structure and core settings.
+
+#### diagramLayout.json
+
+Contains diagram metadata that defines the structure of the dataset associated with the report.  
+
+#### item.config.json
+
+An automatically generated system file that contains `version` and `logicalId` attributes. In effect, it identifies the folder as a source control representation of a service item. To learn more, see [Git integration source code format - Config file](/fabric/cicd/git-integration/source-code-format#config-file).
+
+#### item.metadata.json
+
+An automatically generated system file that contains `type`, `displayName`, `description` attributes. To learn more, see [Git integration source code format - Metadata file](/fabric/cicd/git-integration/source-code-format#metadata-file)
+
+#### unappliedChanges.json
+
+Power BI Desktop allows you to save changes made in the Transform Data editor (Power Query) without first applying those changes to the data model.
+
+:::image type="content" source="media/projects-overview/query-change.png" alt-text="Image showing Apply query change dialog.":::
+
+When you select **Apply later**, the unapplied changes are saved into an unappliedChanges.json file. When an unappliedChanges file exists, Power BI Desktop prompts you to apply or discard pending changes:
+
+:::image type="content" source="media/projects-overview/pending-changes.png" alt-text="Image showing pending changes warning.":::
+
 #### .pbi\
 
 A sub-folder that includes the following files used by Power BI Desktop. These files aren't considered part of the core item definition:
@@ -39,32 +69,3 @@ An Analysis Services Backup (ABF) file containing a local cached copy of the mod
 
 Power BI Desktop can open without a cache.abf file. In that case, it opens the report connected to a model with its entire definition but without data. If a cache.abf exists, Power BI Desktop loads the data and overwrites the model definition with the content in model.bim.
 
-#### definition.pbidataset
-
-Contains metadata that defines the file structure and core settings.
-
-#### diagramLayout.json
-
-Contains diagram metadata that defines the structure of the dataset associated with the report.  
-
-#### item.config.json
-
-An automatically generated system file that contains `version` and `logicalId` attributes. In effect, it identifies the folder as a source control representation of a service item. To learn more, see [Git integration source code format - Config file](/fabric/cicd/git-integration/source-code-format#config-file).
-
-#### item.metadata.json
-
-An automatically generated system file that contains `type`, `displayName`, `description` attributes. To learn more, see [Git integration source code format - Metadata file](/fabric/cicd/git-integration/source-code-format#metadata-file)
-
-#### model.bim
-
-A JSON file containing a [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true) representation of the model. In most cases, this is the file you'll be working on.
-
-#### unappliedChanges.json
-
-Power BI Desktop allows you to save changes made in the Transform Data editor (Power Query) without first applying those changes to the data model.
-
-:::image type="content" source="media/projects-overview/query-change.png" alt-text="Image showing Apply query change dialog.":::
-
-When you select **Apply later**, the unapplied changes are saved into an unappliedChanges.json file. When an unappliedChanges file exists, Power BI Desktop prompts you to apply or discard pending changes:
-
-:::image type="content" source="media/projects-overview/pending-changes.png" alt-text="Image showing pending changes warning.":::
