@@ -12,11 +12,11 @@ ms.date: 05/10/2023
 
 # Fabric and Power BI support options
 
-This article describes the support options that are available to end users who have purchased Microsoft Fabric or Power BI. Power BI administrators and other admins in your organization have access to expanded support options. Read [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) to learn more about who can manage service requests for your organization. <!--To learn about Microsoft Fabric (Preview) for administrators, see [Microsoft Fabric admin](https://aka.ms/AAkx19k).-->
+This article describes the support options that are available to end users who have purchased Microsoft Fabric or Power BI. Power BI administrators and other admins in your organization have access to expanded support options. Read [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) to learn more about who can manage service requests for your organization. To learn about Microsoft Fabric (Preview) for administrators, see [Microsoft Fabric admin](https://aka.ms/AAkx19k).
 
 ## Get started with support
 
-Many resources are available to help you identify, research, and solve issues.  From the top menu bar, select the **?** to open the **Help and support** site. The **Help and support** site has links to documentation, Community, known issues, troubleshooting, and a Support dashboard. If you Fabric or if you have a paid version of Power BI, options to contact Microsoft Support directly are available from the **Help and support** site. 
+Many resources are available to help you identify, research, and solve issues.  From the top menu bar, select the **?** **> Get Help** to open the Fabric and Power BI Support site. The [Fabric and Power BI support site](https://blog.fabric.microsoft.com/en-US/support) has links to documentation, Community, known issues, troubleshooting, and a Support dashboard. If you Fabric or if you have a paid version of Power BI, options to contact Microsoft Support directly are available from the **Help and support** site. 
 
 > [!Note] 
 > If you got your Power BI Pro or Premium-per-user (PPU) license through a guest affiliation with another organization, you can't contact support. Your license must be assigned directly by the organization that manages your work or school account to enable support options.
@@ -29,7 +29,7 @@ Many resources are available to help you identify, research, and solve issues.  
 Admins can use the **Help + support** experience in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) to get self-help solutions and to create a new service request. Before you contact Microsoft support, follow these steps:
 
 * Check for service outages or degradation at [Fabric Support](https://support.fabric.microsoft.com).
-* Check for [known issues with Power BI or Fabric features](https://support.fabric.microsoft.com/known-issues).
+* Check for [known issues with Power BI or Fabric features](https://blog.fabric.microsoft.com/en-us/known-issues).
 * Look for any notifications about Power BI or Fabric in the [Microsoft 365 service health dashboard](https://admin.microsoft.com/#/servicehealth).
 * Check [Microsoft 365 message center](https://admin.microsoft.com/#/MessageCenter) to make sure there are no planned maintenance activities affecting your experience.
 
@@ -39,7 +39,7 @@ Learn more about how admins can [contact support for help with Microsoft 365 bus
 
 ## Before you contact support
 
-Verify whether Microsoft support is your admin's preferred option when you need help. To check, select (**?**) from the page header in the Power BI service, then choose **Help & Support > Get Help**. If this selection takes you to Power BI support, you might use the following listed support options. Otherwise, you'll be directed to the preferred support option for your organization. If your product doesn't have a support contract, you'll receive a message that "This product is not supported."
+Verify whether Microsoft support is your admin's preferred option when you need help. To check, select (**?**) from the page header in the Power BI service, then choose **Get Help**. If this selection takes you to Power BI support, you might use the following listed support options. Otherwise, you'll be directed to the preferred support option for your organization. If your product doesn't have a support contract, you'll receive a message that "This product is not supported."
 
 ![Help_pane2](media/service-support-options/help-pane2.png)
 
@@ -47,8 +47,10 @@ If Microsoft support is your admin's preferred option:
 
 1. Check for service outages or degradation at [Power BI and Fabric Support](https://support.fabric.microsoft.com).
 2. Check for [known issues with Power BI or Fabric features](https://support.fabric.com/known-issues). 
-3. See if your issue has already been addressed by the [Community](https://community.powerbi.com).
-<!-- 4. Review the Fabric troubleshooting documentation](/fabric/get-started/) or the --> [Power BI troubleshooting documentation](../troubleshoot/). -->
+1. See if your issue has already been addressed by the [Community](https://community.powerbi.com).
+
+1. Review the [Fabric troubleshooting documentation ](/fabric/get-started/)or the [Power BI troubleshooting documentation](../troubleshoot/).
+
 5. Find out which license you have. Select your profile picture from the page header to open your Account manager. For Power BI, if **Pro account** or **Premium Per User account** displays, you might use the following listed support options. For Fabric, all users might use the following listed support options.
 
    :::image type="content" source="media/service-support-options/license-type.png" alt-text="Screen capture showing license type displayed with account profile.":::  
@@ -102,3 +104,6 @@ Contact your Microsoft Customer Account Manager for details. If you don't alread
 
 
 
+```
+
+```
