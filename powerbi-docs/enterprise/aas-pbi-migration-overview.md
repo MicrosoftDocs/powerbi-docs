@@ -11,14 +11,12 @@ LocalizationGroup: Premium
 ms.custom: engagement-fy23
 ---
 
-# Migrate Azure Analysis Services to Power BI (preview)
+# Migrate Azure Analysis Services to Power BI
 
 This article describes the Microsoft Azure Analysis Services to Microsoft Power BI Premium migration feature in Power BI. This feature provides model database migration from Azure Analysis Services to dataset in Power BI Premium, Power BI Premium Per User, and Power BI Embedded workspaces.
 
 Before beginning a migration, be sure to review [Migrate from Azure Analysis Services to Power BI Premium](../guidance/migrate-azure-analysis-services-to-powerbi-premium.md) and [Migration scenarios](../guidance/migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md). These *Guidance* articles provide a detailed comparison of both platforms and can help you determine a migration strategy that best suits your organization.
 
-> [!IMPORTANT]
-> The Azure Analysis Services to Power BI Premium migration feature is currently in **preview**. While in preview, functionality and documentation are likely to change.
 
 ## Understanding migration
 
@@ -104,20 +102,7 @@ Server redirection for a migration can be enabled by using an On/Off setting. Wh
 
 When Redirection status for the migration shows Server Redirection Enabled, you can then pause your server in the Azure portal or by using the Azure Analysis Services REST API. Client applications, tools, and processes are redirected to the dataset in Power BI. You aren't billed while your server is paused. Deleting servers with server redirect is currently not supported.
 
-> [!CAUTION]
-> **During preview**, do not delete your Azure Analysis Services server! Doing so will cause redirection to fail and there is no way to recover redirection.
-
-### Report rebind
-
-**During preview**, Live connect reports in the Power BI service connected to an Azure Analysis Services model database being migrated with the feature aren't automatically rebound to the new dataset in Power BI. Use the [Reports - Rebind Report](/rest/api/power-bi/reports/rebind-report) Power BI REST API to create a new binding to the new dataset.
-
-After rebind by using the API, changes to the Live connect reports can only be made in the Power BI service. Currently, you can't make report changes in a Power BI Desktop file that was previously bound to the model in Azure Analysis Services and then republish to the service.
-
 ## Important considerations
-
-- **During preview**, if you use the [Reports - Rebind Report](/rest/api/power-bi/reports/rebind-report) Power BI REST API to create a new binding to the migrated dataset, you can't make changes to reports in a Power BI Desktop .pbix that were previously bound to the model in Azure Analysis Services and then republish to Power BI. Report changes for a migrated dataset can be made in the Power BI service.
-
-- **During preview**, do not delete your Azure Analysis Services server! Doing so will cause redirection to fail and there is no way to recover redirection.
 
 - Datasets migrated by using the Azure Analysis Services to Power BI Premium migration feature in Power BI can't be downloaded as a .pbix file. To modify dataset metadata, use Visual Studio, the open-source ALM Toolkit, or the open-source Tabular Editor.
 
@@ -193,16 +178,10 @@ The **Server Redirection** flyout shows the status of redirection.
 
 To disable server redirection, on the **Azure Analysis Services to Power BI Premium** page, under **All migrations**, simply move the **Server Redirection Enabled** slider to Off.
 
-#### Rebind
-
-**During preview**, Live connect reports in the Power BI service connected to an Azure Analysis Services model database being migrated aren't automatically rebound to the new dataset in Power BI. Use the [Reports - Rebind Report](/rest/api/power-bi/reports/rebind-report) Power BI REST API to create a binding to the new dataset.
 
 #### Pause server
 
 After you've verified a successful migration, you can **pause** your Azure Analysis Services server either in the Azure portal or by using the Azure Analysis Services REST API.
-
-> [!CAUTION]
-> **During preview**, do not delete your Azure Analysis Services server! Doing so will cause redirection to fail and there is no way to recover redirection.
 
 If your server remains started after you’ve enabled server redirection, existing Azure Analysis Services models can still be queried by setting the **AsAzureRedirection** connection string property to **Disabled**.
 

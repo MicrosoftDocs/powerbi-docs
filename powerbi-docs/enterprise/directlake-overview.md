@@ -81,6 +81,8 @@ The following are known issues and limitations during **PREVIEW**:
 
 - The dataset user interface might display a warning icon on a table even though the table has no issues. This will be addressed in a future update.
 
+- The initial, default/auto-generated dataset may not be in Direct Lake mode if there's only a single table in the Lakehouse. To force it to Direct Lake mode, make a small change on the table in the Lakehouse, like renaming the table. The rename should cause the dataset to switch to Direct Lake mode.
+
 ## Create a Lakehouse
 
 Complete the following steps to create a Lakehouse, a delta table, and a dataset in a Microsoft Fabric or Power BI workspace.
