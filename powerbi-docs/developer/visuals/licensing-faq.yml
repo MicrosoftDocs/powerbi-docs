@@ -14,7 +14,7 @@ summary: |
   This article answers some of the questions users often have about how to set up, pay for, and manage licenses for custom Power BI visuals that they purchase from [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&exp=kyyw&page=1&filters=pay-as-you-go).
 
   > [!NOTE]
-  > If you just purchased a licensed visual, you are assigned a licenses automatically. [Just refresh your report](#once-i-assign-a-license--how-long-does-it-take-until-i-can-use-it-).
+  > If you just purchased a licensed visual, you are assigned a license automatically. [Just refresh your report](#once-i-assign-a-license--how-long-does-it-take-until-i-can-use-it-).
   >
   > To assign licenses to other users in your organization, see [How do we assign licenses](#how-do-we-assign-the-licenses-).
 
@@ -45,9 +45,10 @@ sections:
 
           :::image type="content" source="./media/licensing-faq/buy-now.png" alt-text="Screenshot of AppSource with Buy now button highlighted.":::
 
-          You can pay for the licenses with a credit card. 
+          You can pay for the licenses with a credit card.  
+          Prepaid cards are not supported.
 
-          Billing and Global admins can also pay by [invoice](/microsoft-365/commerce/billing-and-payments/pay-for-subscription-billing-profile#paying-by-invoice) if such a payment method is set up for your company.
+          Billing and Global admins can also pay by [invoice](/microsoft-365/commerce/billing-and-payments/pay-for-subscription-billing-profile#paying-by-invoice) if that's set up for your company.
 
           Read more about [setting payment methods](/microsoft-365/commerce/billing-and-payments/manage-payment-methods#change-a-payment-method-for-a-single-subscription).
           Follow [these steps](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles#view-my-billing-profiles) to see your billing profile.
