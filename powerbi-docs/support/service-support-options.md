@@ -12,7 +12,7 @@ ms.date: 05/10/2023
 
 # Fabric and Power BI support options
 
-This article describes the support options that are available to end users who have purchased Microsoft Fabric or Power BI. Power BI administrators and other admins in your organization have access to expanded support options. Read [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) to learn more about who can manage service requests for your organization. To learn about Microsoft Fabric (Preview) for administrators, see [Microsoft Fabric admin](https://aka.ms/AAkx19k).
+This article describes the support options that are available to end users who have purchased Microsoft Fabric or Power BI. Power BI administrators and other admins in your organization have access to expanded support options. Read [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) to learn more about who can manage service requests for your organization. To learn about Microsoft Fabric (Preview) for administrators, see [Microsoft Fabric admin](/fabric/admin/microsoft-fabric-admin).
 
 ## Get started with support
 
@@ -49,7 +49,7 @@ If Microsoft support is your admin's preferred option:
 2. Check for [known issues with Power BI or Fabric features](https://support.fabric.com/known-issues). 
 1. See if your issue has already been addressed by the [Community](https://community.powerbi.com).
 
-1. Review the [Fabric troubleshooting documentation ](/fabric/get-started/)or the [Power BI troubleshooting documentation](../troubleshoot/).
+1. Review the [Fabric troubleshooting documentation ](/fabric/get-started/)or the [Power BI troubleshooting documentation](/power-bi/troubleshoot/).
 
 5. Find out which license you have. Select your profile picture from the page header to open your Account manager. For Power BI, if **Pro account** or **Premium Per User account** displays, you might use the following listed support options. For Fabric, all users might use the following listed support options.
 
