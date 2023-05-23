@@ -48,7 +48,7 @@ If Microsoft support is your admin's preferred option:
 1. Check for service outages or degradation at [Power BI and Fabric Support](https://support.fabric.microsoft.com).
 2. Check for [known issues with Power BI or Fabric features](https://support.fabric.com/known-issues). 
 3. See if your issue has already been addressed by the [Community](https://community.powerbi.com).
-4. Review the <!-- Fabric troubleshooting documentation](/fabric/get-started/) or the --> [Power BI troubleshooting documentation](../troubleshoot/).
+<!-- 4. Review the Fabric troubleshooting documentation](/fabric/get-started/) or the --> [Power BI troubleshooting documentation](../troubleshoot/). -->
 5. Find out which license you have. Select your profile picture from the page header to open your Account manager. For Power BI, if **Pro account** or **Premium Per User account** displays, you might use the following listed support options. For Fabric, all users might use the following listed support options.
 
    :::image type="content" source="media/service-support-options/license-type.png" alt-text="Screen capture showing license type displayed with account profile.":::  
