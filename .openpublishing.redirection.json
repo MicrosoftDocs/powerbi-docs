@@ -5015,7 +5015,27 @@
             "source_path": "powerbi-docs/enterprise/service-security-dlp-policies-for-power-bi-override.md",
             "redirect_url": "/power-bi/enterprise/service-security-dlp-policies-for-power-bi-respond",
             "redirect_document_id": true
-        }                                                                                                  
+        },
+        {
+            "source_path": "powerbi-docs/transform-model/log-analytics/install-as-engine-app.md",
+            "redirect_url": "/power-bi/transform-model/log-analytics/desktop-log-analytics-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/transform-model/log-analytics/desktop-loganalytics-reportguide-datasets.md",
+            "redirect_url": "/power-bi/transform-model/log-analytics/desktop-log-analytics-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-connect-to-pbi-premium-capacity-metrics.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-power-bi-security-lockbox.md",
+            "redirect_url": "/fabric/security/security-lockbox",
+            "redirect_document_id": false
+        }                                                                                                                                                 
   ]          
 
 }

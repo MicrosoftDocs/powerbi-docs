@@ -32,7 +32,7 @@ The Premium metrics app has six pages:
 
 * [Timepoint](#timepoint)
 
-* [Artifact Detail](#artifact-detail)
+* [Item Detail](#item-detail)
 
 ## Overview
 
@@ -42,19 +42,19 @@ At the top of each page, the **CapacityID** field allows you to select the capac
 
 :::image type="content" source="media/service-premium-metrics-app/overview-page.png" alt-text="A screenshot showing the overview page in the Power BI Premium metrics app, with the capacity I D selector highlighted.":::
 
-### Artifacts
+### Items
 
-The artifacts section is made up of two visuals, one on top of the other, in the left side of the page. The top visual is a stacked column table, and below it is a matrix table.
+The items section is made up of two visuals, one on top of the other, in the left side of the page. The top visual is a stacked column table, and below it is a matrix table.
 
-:::image type="content" source="media/service-premium-metrics-app/artifacts-section.png" alt-text="A screenshot showing the artifacts section, in the overview page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/artifacts-section.png" alt-text="A screenshot showing the items section, in the overview page, in the Power BI Premium metrics app.":::
 
-#### Multi metric column chart
+#### Multi metric ribbon chart
 
-A stacked column table that provides an hourly view of your capacity's usage. Drill down to a specific day to identify daily patterns. Selecting each stacked column will filter the main matrix and the other visuals according to your selection.
+A stacked ribbon chart that provides an hourly view of your capacity's usage. Drill down to a specific day to identify daily patterns. Selecting each stacked column will filter the main matrix and the other visuals according to your selection.
 
 :::image type="content" source="media/service-premium-metrics-app/multi-metric-column-chart.png" alt-text="A screenshot showing the multi metric column chart, in the overview page, in the Power BI Premium metrics app.":::
 
-The Multi metric column chart displays the four values listed below. It shows the top results for these values per Power BI item during the past two weeks.
+The Multi metric ribbon chart displays the four values listed below. It shows the top results for these values per Power BI item during the past two weeks.
 
 :::image type="content" source="media/service-premium-metrics-app/multi-metric-column-chart-values.png" alt-text="A screenshot showing the multi metric column chart with the values row highlighted.":::
 
@@ -66,17 +66,17 @@ The Multi metric column chart displays the four values listed below. It shows th
 
 * **Users** - The number of users that performed operations.
 
-#### Matrix by artifact and operation
+#### Matrix by item and operation
 
 A matrix table that displays metrics for each Power BI item on the capacity.
 
-:::image type="content" source="media/service-premium-metrics-app/matrix-table.png" alt-text="A screenshot showing the matrix by artifact and operation visual, in the overview page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/matrix-table.png" alt-text="A screenshot showing the matrix by item and operation visual, in the overview page, in the Power BI Premium metrics app.":::
 
 To gain a better understanding of your capacity's performance, you can sort this table according to the parameters listed below. The colors in the table represent your *performance delta*.
 
-:::image type="content" source="media/service-premium-metrics-app/matrix-table-parameters.png" alt-text="A screenshot showing the matrix by artifact and operation visual parameter headers.":::
+:::image type="content" source="media/service-premium-metrics-app/matrix-table-parameters.png" alt-text="A screenshot showing the matrix by item and operation visual parameter headers.":::
 
-* **Artifacts** - A list of Power BI items active during the selected period of time. The item name is a string with the syntax: `item name \ item type \ workspace name`. You can expand each entry to show the various operations (such as queries and refreshes) the item performed.
+* **Items** - A list of Power BI items active during the selected period of time. The item name is a string with the syntax: `item name \ item type \ workspace name`. You can expand each entry to show the various operations (such as queries and refreshes) the item performed.
 
 * **CPU (s)** - CPU processing time in seconds. Sort to view the top CPUs that consumed Power BI items over the past two weeks.
 
@@ -84,7 +84,7 @@ To gain a better understanding of your capacity's performance, you can sort this
 
 * **Users** - The number of users that used the Power BI item.
 
-* **Artifact Size** - The amount of memory a Power BI item needs. Sort to view the Power BI items that have the largest memory footprint.
+* **Item Size** - The amount of memory a Power BI item needs. Sort to view the Power BI items that have the largest memory footprint.
 
 * **Overloaded minutes** - Displays a sum of 30 seconds increments where overloading occurred at least once. Sort to view the Power BI items that were affected the most due to overload penalty.
 
@@ -109,7 +109,13 @@ The performance section is made up of four visuals, one on top of the other, in 
 
 #### CPU over time
 
-Displays the CPU usage of the selected capacity over time. Filters applied to the page in the [Multi metric column chart](#multi-metric-column-chart), affect this chart's display as follows:
+Displays the CPU usage of the selected capacity over time. Use the tabs at the top of the visual to toggle how the visual is displayed:
+
+* *Linear* - Display the information using a linear scale that starts at 0 percent.
+
+* *Logarithmic* - Display the information using a logarithmic scale that depends on your CPU consumption.
+
+Filters applied to the page in the [Multi metric ribbon chart](#multi-metric-ribbon-chart), affect this chart's display as follows:
 
 * *No filters applied* - Columns display the peak timepoint per hour.
 
@@ -132,13 +138,15 @@ The CPU over time chart displays the following elements:
 
     [*Background*](service-premium-interactive-background-operations.md#background-operations) operations cover Power BI backend processes that are not directly triggered by users, such as data refreshes.
 
-* **CPU Limit** - A yellow dotted line that shows the threshold of the allowed number of CPU seconds for the selected capacity. Columns that stretch above this line, represent timepoints where the capacity is overloaded.
+* **CPU Limit** -  A grey dotted line that shows the threshold of the allowed percent of CPU consumption for the selected capacity. Columns that stretch above this line, represent timepoints where the capacity is overloaded.
+
+* **Autoscale CPU % Limit** - An orange dotted line that shows the percent of CPU consumption for autoscaled capacities. The line represents timepoints where the capacity is overloaded.
 
 #### Overloaded minutes per hour
 
 Displays a score that represents the severity that overload had on the performance of a Power BI item. If no item is filtered, this chart shows the maximum value seen from all items at each load evaluation interval (30 seconds) in the past two weeks.
 
-#### Artifact size
+#### Item size
 
 Displays the memory footprint recorded for Power BI items over time. If no item is filtered this chart shows the maximum value seen from all items at each ten minute time sample in the past two weeks.
 
@@ -160,7 +168,7 @@ The weekly trendlines section is made up of four visuals, one on top of the othe
 
 Displays the total CPU power your capacity consumed over the past four weeks. Each data point is the aggregated sum of CPU used for the past seven days.
 
-#### Active Artifacts
+#### Active Items
 
 Displays the number of Power BI items (such as reports, dashboards, and datasets) that used CPU during the past four weeks.
 
@@ -183,21 +191,21 @@ When you detect a Power BI item that causes overload, you can either optimize th
 
 :::image type="content" source="media/service-premium-metrics-app/evidence-page.png" alt-text="A screenshot showing the evidence page in the Power BI Premium metrics app.":::
 
-### Artifacts causing overloading
+### Items causing overloading
 
-You can visually identify the different Power BI items that cause overload, by using the timeline. Each day in the timeline displays items causing overload. Drill down to see an hourly timeline. The value shown is an aggregate of the CPU power consumed by artifacts when they overloaded the capacity.
+You can visually identify the different Power BI items that cause overload, by using the timeline. Each day in the timeline displays items causing overload. Drill down to see an hourly timeline. The value shown is an aggregate of the CPU power consumed by items when they overloaded the capacity.
 
 ### Overloaders
 
-Use this visual to identify the Power BI items that generate impactful overload events. This is shown as an [Overloading score](service-premium-faq.yml#how-is-the-overload-score-calculated-) when you select the *Overloaders* pivot. The overloading score for an artifact is derived from the severity of an overload event, and how frequently the overload event occurred over the past 14 days. This score has no physical property.
+Use this visual to identify the Power BI items that generate impactful overload events. This is shown as an [Overloading score](service-premium-faq.yml#how-is-the-overload-score-calculated-) when you select the *Overloaders* pivot. The overloading score for an item is derived from the severity of an overload event, and how frequently the overload event occurred over the past 14 days. This score has no physical property.
 
 :::image type="content" source="media/service-premium-metrics-app/overloading-score.png" alt-text="A screenshot showing the overloading score in the overloaders table with the overloaders tab selected.":::
 
-Switch to the *Overloaded artifacts* pivot to identify the items most affected by overload over the past 14 days. The overloading impact can affect either the item that's causing the overload, or other items that are hosted in the same capacity.
+Switch to the *Overloaded items* pivot to identify the items most affected by overload over the past 14 days. The overloading impact can affect either the item that's causing the overload, or other items that are hosted in the same capacity.
 
 The *Overloaded time (s)* value is the amount of processing time that was impacted by an overload penalty. This value is shown for each affected item, over the past 14 days.
 
-:::image type="content" source="media/service-premium-metrics-app/overloaded-artifacts.png" alt-text="A screenshot showing the overloaders table with the overloaded artifacts tab selected.":::
+:::image type="content" source="media/service-premium-metrics-app/overloaded-artifacts.png" alt-text="A screenshot showing the overloaders table with the overloaded items tab selected.":::
 
 ### Overloading windows
 
@@ -205,13 +213,13 @@ Use this visual to understand whether overload or autoscale events happen due to
 
 Each column represents a 30 second window where CPU usage for the capacity exceeded allowance. The height of the column represents the amount of CPU used.
 
-The 30 second CPU allowance is determined by the number of v-cores your capacity has. When autoscale is turned on, each added autoscale CPU adds 15 seconds to the allowance. When autoscale isn't turned on, or if autoscale is fully utilized, penalties are applied to interactive operations in the next 30 second window. You can see a visualization of these penalties in the [Artifacts overloaded (seconds)](#artifacts-overloaded-seconds) chart.
+The 30 second CPU allowance is determined by the number of v-cores your capacity has. When autoscale is turned on, each added autoscale CPU adds 15 seconds to the allowance. When autoscale isn't turned on, or if autoscale is fully utilized, penalties are applied to interactive operations in the next 30 second window. You can see a visualization of these penalties in the [Items overloaded (seconds)](#items-overloaded-seconds) chart.
 
 To access the [Timepoint](#timepoint) page from this visual, right-click an overloaded timepoint, select **Drill through** and then select **TimePoint Detail**.
 
 :::image type="content" source="media/service-premium-metrics-app/timepoint-drillthrough-evidence.png" alt-text="A screenshot showing the timepoint drill through option in the overloading windows chart.":::
 
-### Artifacts overloaded (seconds)
+### Items overloaded (seconds)
 
 Use this visual to understand whether overloading Power BI items impacts their own performance, or whether they produce a noisy neighbor problem by impacting the performance of other items. Each item is given a different color.
 
@@ -236,7 +244,7 @@ At the top of the page there's a multi-selection pivot allowing you to focus on 
 
 :::image type="content" source="media/service-premium-metrics-app/refresh-page-filters.png" alt-text="A screenshot showing the filters in the refresh page.":::
 
-* **Artifact Kind** - Filter the page by Power BI item type, such as report, dataset and dashboard.
+* **Item Kind** - Filter the page by Power BI item type, such as report, dataset and dashboard.
 
 * **Status** - Filter the page by failed or successful operations.
 
@@ -250,7 +258,7 @@ At the top of the page there's a multi-selection pivot allowing you to focus on 
 
 * **Operation** - Filter according to the type of operation selected.
 
-### Refresh by artifact
+### Refresh by item
 
 Displays the breakdown of the metric selected in the pivot at the top, in the past 14 days. These breakdowns can indicate which refresh optimization is more likely to reduce the capacity footprint or the data source load.
 
@@ -343,7 +351,7 @@ This section describes the operations of the visuals in the top row of the timep
 A table showing every [interactive operation](service-premium-interactive-background-operations.md) that contributed CPU usage in the timepoint used to drill through to this page. Once an interactive operation completes, all of the CPU seconds used by it get attributed to the timepoint window.
 
 
-* **Artifact** - The name of the Power BI item, its type, and its workspace details.
+* **Item** - The name of the Power BI item, its type, and its workspace details.
 
 * **Operation** - The type of interactive operation.
 
@@ -374,7 +382,7 @@ A table showing every background operation that contributed CPU usage to the tim
 
 All the columns in the background operations table are similar to the ones in the [interactive operations](#interactive-operations) table. However, the background operations table doesn't have a *users* column.
 
-## Artifact Detail
+## Item Detail
 
 This page provides useful information about a specific Power BI item.
 
@@ -382,11 +390,11 @@ This page provides useful information about a specific Power BI item.
 >You can only get to this page by using the drill through feature in one of the visuals that displays individual Power BI items.
 
 >[!NOTE]
->Some of the visuals in the *Artifact Detail* page may not display information. A visual will not show anything when it's designed to display an event that hasn't occurred.
+>Some of the visuals in the *Item Detail* page may not display information. A visual will not show anything when it's designed to display an event that hasn't occurred.
 
 You can tell which Power BI item you're reviewing, by looking at the card at the top left side of the report, highlighted below. This syntax of this card is `workspace \ Power BI item type \ Power BI item name`.
 
-:::image type="content" source="media/service-premium-metrics-app/artifact-page.png" alt-text="A screenshot showing the artifact page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/artifact-page.png" alt-text="A screenshot showing the item page, in the Power BI Premium metrics app.":::
 
 ### Overloading
 
@@ -404,21 +412,21 @@ The overloading visual has the following columns:
 
 Displays the percentage of fast, moderate, and slow operations from the total number of operations performed by the Power BI item you're drilling into, over the past two weeks.
 
-:::image type="content" source="media/service-premium-metrics-app/artifact-performance.png" alt-text="A screenshot showing the performance visual in the artifact page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/artifact-performance.png" alt-text="A screenshot showing the performance visual in the item page, in the Power BI Premium metrics app.":::
 
 [!INCLUDE [premium-app-fast-moderate-slow-operations](../includes/premium-app-fast-moderate-slow-operations.md)]
 
-### Artifact size
+### Item size
 
-This visual displays the peak amount of memory consumption detected in any three hour window, over a 14 day period, for the operations performed on the item you're drilling into. You can cross filter this visual from the [matrix by artifact and operation](#matrix-by-artifact-and-operation) visual, to show a peak memory profile for an individual day.
+This visual displays the peak amount of memory consumption detected in any three hour window, over a 14 day period, for the operations performed on the item you're drilling into. You can cross filter this visual from the [matrix by item and operation](#matrix-by-item-and-operation) visual, to show a peak memory profile for an individual day.
 
-:::image type="content" source="media/service-premium-metrics-app/artifact-size.png" alt-text="A screenshot showing the artifact size visual in the artifact page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/artifact-size.png" alt-text="A screenshot showing the item size visual in the item page, in the Power BI Premium metrics app.":::
 
 ### CPU duration and users
 
 Use these visuals to review CPU consumption, operation duration and number of users for the item you're drilling into. In these visuals, each column represents a single hour over a 14 day period.
 
-:::image type="content" source="media/service-premium-metrics-app/cpu-duration-users.png" alt-text="A screenshot showing the C P U, duration and users visuals, in the artifact page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/cpu-duration-users.png" alt-text="A screenshot showing the C P U, duration and users visuals, in the item page, in the Power BI Premium metrics app.":::
 
 * **CPU** - Each column displays the number of CPU seconds used to complete each operation per hour.
 
