@@ -5,8 +5,10 @@
   - name: Known issues
     expanded: false
     items:
-    - name: Active known issues for Power BI
-      href: known-issues/power-bi-known-issues.md  
+    - name: Active known issues for Power BI - chart
+      href: known-issues/power-bi-known-issues.md
+    - name: Active known issues for Power BI and Fabric - interactive report
+      href: https://support.fabric.microsoft.com/known-issues
     - name: Tenant Settings show as keys instead of descriptions
       href: known-issues/known-issue-407-tenant-settings-show-keys-descriptions.md
     - name: Upload from SharePoint/OneDrive For Business greyed out
@@ -50,7 +52,7 @@
     - name: Unable to open protected Desktop files 
       href: known-issues/known-issue-unable-open-protected-desktop-file.md   
   - name: Troubleshoot
-    expanded: false
+    expanded: true
     items:
     - name: Embedded, REST API, PowerShell
       expanded: false

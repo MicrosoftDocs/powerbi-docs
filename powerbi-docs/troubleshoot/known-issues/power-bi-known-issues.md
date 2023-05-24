@@ -6,13 +6,13 @@ ms.author: mihart
 ms.topic: troubleshooting    
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 05/12/2023
+ms.date: 05/23/2023
 ms.custom:  
 ---
 
 # Power BI known issues
 
-This page lists known issues for Power BI features. Before submitting a Support request, review this list to see if the issue that you are experiencing is already known and being addressed.
+This page lists known issues for Power BI features. Before submitting a Support request, review this list to see if the issue that you are experiencing is already known and being addressed. Known issues are also available as an [interactive Power BI report](https://support.fabric.microsoft.com/en-US/known-issues/). 
 
 For service level outages or degradation notifications, check [https://support.powerbi.com](https://support.powerbi.com).  
 
@@ -41,5 +41,6 @@ Select the **Title** to view more information about that specific known issue. F
 
 ## Next steps
 
+- [Go to the Power BI report version of this page](https://support.fabric.microsoft.com/en-US/known-issues/]
 - [Service level outages](https://support.powerbi.com)
 - [Get your questions answered by the Power BI community](https://community.powerbi.com)
