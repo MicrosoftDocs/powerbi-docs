@@ -46,7 +46,7 @@ As part of provisioning a Lakehouse, a SQL endpoint for SQL querying and a defau
 
 The following are known issues and limitations during **PREVIEW**:
 
-- Direct Lake size limits are likely to change during **PREVIEW**. More definitive limits will be determined and described in this article by GA (General Availability). If limits are reached, queries are executed in DirectQuery mode. Limits are based on row count per table used by a DAX query. Row counts differ depending on the size of the SKU. 
+- Direct Lake size limits are likely to change during **PREVIEW**. More definitive limits will be determined and described in this article by GA (General Availability). If limits are reached, queries are executed in DirectQuery mode. Limits are based on row count per table used by a DAX query. Row counts differ depending on the size of the SKU. To determine if queries fall back to DirectQuery mode, see [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md).
 
 - You must use the Web modeling experience integrated into Lakehouse to generate Direct Lake datasets. Creating Direct Lake datasets by using Power BI Desktop or XMLA-based automation tools aren't yet supported.
 
@@ -170,3 +170,6 @@ There are multiple options to load data into a Lakehouse, including data pipelin
 
 When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and query the dataset through XMLA endpoints in much the same way as any other dataset. During **PREVIEW**, XMLA write operations are not yet supported.
 
+## Analyze query processing
+
+To determine if a report visual's DAX queries to the data source are providing the best performance by using Direct Lake mode, or falling back to DirectQuery mode, you can use Performance analyzer in Power BI Desktop to analyze queries. To learn more, see [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md).
