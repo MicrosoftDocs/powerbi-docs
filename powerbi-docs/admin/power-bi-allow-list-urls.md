@@ -92,7 +92,7 @@ Power BI depends on certain endpoints to view and access Power BI visuals. You m
 
 ## Power BI OneDrive and SharePoint integration
 
-Power BI depends on ceratin endpoints to support integration with OneDrive for Business and SharePoint Online. You must be able to connect to the endpoints and linked sites in the following table.
+Power BI depends on certain endpoints to support integration with OneDrive for Business and SharePoint Online. You must be able to connect to the endpoints and linked sites in the following table.
 
 | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- |
