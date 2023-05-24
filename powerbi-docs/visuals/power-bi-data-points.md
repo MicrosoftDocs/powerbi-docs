@@ -3,11 +3,11 @@ title: Large datasets, data point limits, and data strategies
 description: Power BI strategies used to render visualizations include data reduction, dynamic limits, and data limits for visuals.
 author: mihart
 ms.author: mihart
-ms.reviewer: 'justyna'
+ms.reviewer: 'rien'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/29/2022
+ms.date: 05/24/2023
 LocalizationGroup: Visualizations
 ---
 # Apply data point limits and strategies by visual type
@@ -113,7 +113,8 @@ Depending on the configuration, a map can have the following:
 
 ### Maps: Azure Maps
 
-- Max points: 30,000
+- Latitude, longitude: 30,000 For more information, see [High density line sampling](../create-reports/desktop-high-density-sampling.md).
+- Location: 3,500
 
 For more information, see [High density line sampling](../create-reports/desktop-high-density-sampling.md).
 
