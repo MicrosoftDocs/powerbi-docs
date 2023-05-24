@@ -17,8 +17,6 @@ LocalizationGroup: Admin
 
 Power BI datasets in [*Direct Lake*](directlake-overview.md) mode read delta tables directly from OneLake — unless they have to fallback to *DirectQuery* mode. Typical fallback reasons include memory pressures that can prevent loading of columns required to process a DAX query, and certain features at the data source might not support Direct Lake mode, like SQL views in a Warehouse. In general, Direct Lake mode provides the best DAX query performance unless a fallback to DirectQuery mode is necessary. Because fallback to DirectQuery mode can impact DAX query performance, it's important to analyze query processing for a Direct Lake dataset to identify if and how often fallbacks occur.
 
-There are different tools you can use to analyze query processing. Performance analyzer in Power BI Desktop and third-party tools like DAX Studio all work well.
-
 ## Analyze by using Performance analyzer
 
 Performance analyzer can provide a quick and easy look into how a visual queries a data source, and how much time it takes to render a result.
