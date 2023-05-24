@@ -231,13 +231,14 @@ There are a couple of things to be aware of when using the query string paramete
 * The long data type is (2^53-1) due to JavaScript limitations.
 * Power BI doesn't limit the number of characters in URL query strings. Different browsers have different length restrictions.
 * You can't filter on table or column names that start with the capital letters _INF_, including, for example, a table name starting with "INFORMATION". Upper-case INF is a special value in OData. If you want to start a table or column name with "INF", make it lower-case "inf" instead. 
+* **Table** and **Field** names cannot contain Chinese characters.
 
 ### Embedding scenarios
 
 URL filters are supported in some embedding scenarios and not in others.
 
 - [Embedding a report in a secure portal or website](service-embed-secure.md) is supported.
-- URL filters are supported in Power BI Embedded. See [Power BI Embedded advanced URL filtering capabilities](https://azure.microsoft.com/updates/power-bi-embedded-advanced-url-filtering-capabilities) for details.
+- URL filters are supported in Power BI Embedded.
 - Query string filtering doesn't work with [Publish to web](service-publish-to-web.md) or [Export to PDF](end-user-pdf.md).
 - [Embed with report web part in SharePoint Online](service-embed-report-spo.md) doesn't support URL filters.
 - Teams doesn't allow specifying a URL.
