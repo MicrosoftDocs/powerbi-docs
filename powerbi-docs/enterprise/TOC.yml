@@ -26,6 +26,11 @@
       href: service-admin-failover.yml
     - name: Migrate from Azure Analysis Services
       href: aas-pbi-migration-overview.md
+    - name: Direct Lake (Preview)
+      expanded: false
+      items:
+      - name: Direct Lake overview
+        href: directlake-overview.md
   - name: Licensing
     expanded: false
     items:
@@ -176,9 +181,7 @@
     - name: Use private links for Power BI
       href: service-security-private-links.md
     - name: Configure mobile apps with Intune
-      href: service-admin-mobile-intune.md
-    - name: Customer Lockbox for Power BI
-      href: service-admin-power-bi-security-lockbox.md   
+      href: service-admin-mobile-intune.md   
   - name: Power BI Scale-Out
     expanded: false
     items:
