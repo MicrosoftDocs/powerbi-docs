@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 05/15/2023
+ms.date: 05/24/2023
 LocalizationGroup: Common tasks
 ---
 
@@ -296,7 +296,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 **Apps** 
 
 - For [Power BI apps](../consumer/end-user-apps.md) you've installed, you can only create subscriptions for others if you're the owner of the app. 
-- Workspace admins can't manage subscriptions created by another user in an app (as opposed to a workspace). Subscriptions created within apps are saved to a user's **My workspace** and admins don't have access to users' **My workspaces**. 
+- Subscriptions created within apps can be viewed and managed from the associated workspace by users with the admin role in that workspace.  
 
 **Unsupported features**    
 
