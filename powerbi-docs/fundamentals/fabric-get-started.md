@@ -15,8 +15,6 @@ LocalizationGroup: Get started
 
 In this tutorial, you learn how to use Dataflows Gen2 and Pipelines to ingest data into a Lakehouse and create a dimensional model. You also learn how to generate a beautiful report automatically to display the latest sales figures from start to finish in just 45 minutes.
 
-Using a [Contoso](https://www.microsoft.com/en-us/download/details.aspx?id=18279) sample dataset we can build an end-to-end solution in no time.
-
 Let’s get started!
 
 > [!div class="checklist"]
@@ -26,10 +24,12 @@ Let’s get started!
 
 ## Prerequisites
 
-- Before you start, if you aren't signed up yet, [sign up for a free trial](service-self-service-signup-for-power-bi.md).
+- Before you start, if you haven't enabled Fabric yet, [enable Fabric for your organization](https://learn.microsoft.com/fabric/admin/fabric-switch)
+- If you aren't signed up yet, [sign up for a free trial](service-self-service-signup-for-power-bi.md).
 - Create a [new workspace](../collaborate-share/service-create-the-new-workspaces.md) and assign a Fabric capacity.
      - An existing workspace can also be used, although we recommend using a nonproduction workspace for simplicity of the tutorial.
 - Download the [Power Query template](https://github.com/microsoft/pbiworkshops/raw/main/_Asset%20Library/Source_Files/ContosoSales.pqt) file that contains sample queries for Contoso data.
+
 
 ## Create a lakehouse to store data
 
@@ -102,49 +102,50 @@ Take the following steps to add a data destination:
 
     :::image type="content" source="media/fabric-get-started/replace-method.png" alt-text="Screenshot of the destination settings menu option.":::
 
-In the bottom right corner of the **Power Query Online** editor, you can find the configured **Data destination** settings for your query where you can further customize or remove.
+    > [!NOTE]
+    > In the bottom right corner of the **Power Query Online** editor, you can find the configured **Data destination** settings for your query where you can further customize or remove.
 
-:::image type="content" source="media/fabric-get-started/data-destination-dim-date.png" alt-text="Screenshot of the configured data destination.":::
+     :::image type="content" source="media/fabric-get-started/data-destination-dim-date.png" alt-text="Screenshot of the configured data destination.":::
 
-Before moving on to the next section of this tutorial, make sure to perform the [same steps](#add-a-data-destination) as you took earlier in this section to configure the Lakehouse as your data destination for each of the following queries.
+5. Before moving on to the next section of this tutorial, make sure to perform the [same steps](#add-a-data-destination) as you took earlier in this section to configure the Lakehouse as your data destination for each of the following queries.
 
-| Query |
-| :-- |
-| DimCustomer |
-| DimEmployee |
-| DimProduct |
-| DimStore |
+     | Query |
+     | :-- |
+     | DimCustomer |
+     | DimEmployee |
+     | DimProduct |
+     | DimStore |
 
 ---
 
-5. Select the **FactOnlineSales** query under the **Data transformation** query group and from the **Home** tab, select **Add data destination** and then select the **Lakehouse** option.
+6. Select the **FactOnlineSales** query under the **Data transformation** query group and from the **Home** tab, select **Add data destination** and then select the **Lakehouse** option.
 
     :::image type="content" source="media/fabric-get-started/data-destination-fact-online-sales.png" alt-text="Screenshot of the Data destination Lakehouse target option.":::
 
-6. If necessary, set the authentication to **Organizational account** and then select **Next**.
+7. If necessary, set the authentication to **Organizational account** and then select **Next**.
 
     :::image type="content" source="media/fabric-get-started/connect-to-lakehouse.png" alt-text="Screenshot of the Connect to data destination menu.":::
 
-7. From the navigator, select the workspace used for this tutorial and expand to view all **Lakehouse** items. Select **SalesLakehouse** and confirm that the default **New table** is selected before selecting **Next** to continue.
+8. From the navigator, select the workspace used for this tutorial and expand to view all **Lakehouse** items. Select **SalesLakehouse** and confirm that the default **New table** is selected before selecting **Next** to continue.
 
     :::image type="content" source="media/fabric-get-started/new-table-fact-online-sales.png" alt-text="Screenshot of the destination target navigator window.":::
 
-8. Set the **Update method** to **Append** and then select **Save settings**.
+9. Set the **Update method** to **Append** and then select **Save settings**.
 
     > [!NOTE]
     > This process inserts data, preserving the existing rows within the table on each subsequent refresh.
 
     :::image type="content" source="media/fabric-get-started/append-method.png" alt-text="Screenshot of the destination settings menu selection.":::
 
-9. Select **Publish** to save your dataflow and exit the **Power Query Online** editor.
+10. Select **Publish** to save your dataflow and exit the **Power Query Online** editor.
 
     :::image type="content" source="media/fabric-get-started/publish.png" alt-text="Screenshot of the publish button within Power Query Online.":::
 
-10. Hover above the created dataflow in your workspace, select the ellipses **(...)** and the **Properties** option.
+11. Hover above the created dataflow in your workspace, select the ellipses **(...)** and the **Properties** option.
 
     :::image type="content" source="media/fabric-get-started/dataflow-properties.png" alt-text="Screenshot of the dataflows properties in a workspace.":::
 
-11. Change the name of the dataflow to **OnlineSalesDataflow** and select **Save**.
+12. Change the name of the dataflow to **OnlineSalesDataflow** and select **Save**.
 
     :::image type="content" source="media/fabric-get-started/dataflow-name.png" alt-text="Screenshot of renaming a dataflow option.":::
 
@@ -208,7 +209,7 @@ Using pipelines, we first orchestrate the refresh of our data flow. If an error 
 
 11. In the **Pipeline expression builder**, paste the following expression code block:
 
-    ```cpp
+    ```
     @concat(
         'Pipeline: '
         , 
@@ -262,9 +263,9 @@ Using pipelines, we first orchestrate the refresh of our data flow. If an error 
 
     :::image type="content" source="media/fabric-get-started/output.png" alt-text="Screenshot of the current pipeline activity progress.":::
 
-When the status returns **Succeeded**, you can proceed to the next section of the tutorial by returning to your workspace.
+17. When the status returns **Succeeded**, you can proceed to the next section of the tutorial by returning to your workspace.
 
-:::image type="content" source="media/fabric-get-started/return-to-workspace.png" alt-text="Screenshot of the side rail with workspace selection.":::
+     :::image type="content" source="media/fabric-get-started/return-to-workspace.png" alt-text="Screenshot of the side rail with workspace selection.":::
 
 ## Create a semantic model in the Lakehouse
 
@@ -303,13 +304,13 @@ This model is a star schema that you might see from data warehouses: It resemble
     | ☑ | FactOnlineSales (DateKey) | DimDate (DateKey) | Many to one (*:1) | Single |
     | ☑ | DimEmployee (StoreKey) | DimStore (StoreKey) | Many to one (*:1) | Both |
 
-The following image shows a finished view of the semantic model with all the created relationships included.
+     The following image shows a finished view of the semantic model with all the created relationships included.
 
-:::image type="content" source="media/fabric-get-started/star-schema.png" alt-text="Screenshot of table relationships in the model view pane." lightbox="media/fabric-get-started/star-schema.png":::
+     :::image type="content" source="media/fabric-get-started/star-schema.png" alt-text="Screenshot of table relationships in the model view pane." lightbox="media/fabric-get-started/star-schema.png":::
 
 ### Write a measure in DAX
 
-Let's write a basic measure that calculates the total sales amount by due date on the sales order instead of the default order date.
+Let's write a basic measure that calculates the total sales amount.
 
 1. Select the **FactOnlineSales** table in the **Tables** folder. On the **Home** tab, select **New measure**.
 
@@ -355,9 +356,9 @@ Let’s write a SQL statement that calculates the total sales amount by month. W
 
     :::image type="content" source="media/fabric-get-started/total-sales-by-month-view.png" alt-text="Screenshot of Views with the Lakehouse explorer.":::
 
-Once you're done exploring the SQL endpoint editor, you can proceed to the next section of the tutorial by returning to your workspace.
+     Once you're done exploring the SQL endpoint editor, you can proceed to the next section of the tutorial by returning to your workspace.
 
-:::image type="content" source="media/fabric-get-started/return-to-workspace-after-view.png" alt-text="Screenshot of the side rail and selection of the workspace.":::
+     :::image type="content" source="media/fabric-get-started/return-to-workspace-after-view.png" alt-text="Screenshot of the side rail and selection of the workspace.":::
 
 ## Autocreate a report
 
