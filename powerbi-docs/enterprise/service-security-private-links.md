@@ -22,6 +22,9 @@ To learn more about Azure Private Link, see [What is Azure Private Link](/azure/
 
 Enabling private endpoints has an impact on many items, so please review the [considerations and limitations](#considerations-and-limitations) section in this article before enabling private endpoints.
 
+>[!IMPORTANT]
+>Private endpoints are not supported for Microsoft Fabric, including Microsoft Fabric trial capacities.
+
 ## Understand private endpoints
 
 Private endpoints guarantee that traffic going *into* your organization’s Power BI items, such as reports or workspaces, always follow your organization's configured private link network path. User traffic to your Power BI items must come from the established private link. You can configure Power BI to deny all requests that don’t come from the configured network path.
@@ -290,6 +293,9 @@ The next step is to access Power BI privately, from the virtual machine you crea
 Finally, you can optionally disable public access for Power BI. 
 
 If you disable public access for Power BI, certain constraints on access to Power BI services are put into place, described in the next section.
+
+>[!IMPORTANT]
+>When you turn on *Block Internet Access*, Microsoft Fabric is disabled.
 
 To disable public access for Power BI, sign to the [Power BI](https://app.powerbi.com) service as an administrator, and navigate to the **Admin portal**. Select **Tenant settings** and scroll to the **Advanced networking** section. Enable the toggle button in the **Block Public Internet Access** section, as shown in the following image. It takes approximately 15 minutes for the system to disable your organization's access to Power BI from the public Internet.
 
