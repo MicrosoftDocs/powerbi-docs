@@ -16,7 +16,7 @@ This article describes the support options that are available to end users who h
 
 ## Get started with support
 
-Many resources are available to help you identify, research, and solve issues.  From the top menu bar, select the **?** **> Get Help** to open the Fabric and Power BI Support site. The [Fabric and Power BI support site](https://blog.fabric.microsoft.com/en-US/support) has links to documentation, Community, known issues, troubleshooting, and a Support dashboard. If you Fabric or if you have a paid version of Power BI, options to contact Microsoft Support directly are available from the **Help and support** site. 
+Many resources are available to help you identify, research, and solve issues.  From the top menu bar, select the **?** **> Get Help** to open the Fabric and Power BI Support site. The [Fabric and Power BI support site](https://blog.fabric.microsoft.com/support) has links to documentation, Community, known issues, troubleshooting, and a Support dashboard. If you Fabric or if you have a paid version of Power BI, options to contact Microsoft Support directly are available from the **Help and support** site. 
 
 > [!Note] 
 > If you got your Power BI Pro or Premium-per-user (PPU) license through a guest affiliation with another organization, you can't contact support. Your license must be assigned directly by the organization that manages your work or school account to enable support options.
