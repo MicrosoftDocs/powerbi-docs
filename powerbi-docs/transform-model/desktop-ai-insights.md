@@ -6,6 +6,7 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
+ms.custom: build-2023, build-2023-dataai
 ms.topic: how-to
 ms.date: 03/02/2023
 LocalizationGroup: Connect to data

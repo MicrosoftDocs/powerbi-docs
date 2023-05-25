@@ -6,7 +6,7 @@ ms.author: anphil
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-ai
-ms.custom: 
+ms.custom: build-2023, build-2023-dataai
 ms.topic: how-to
 ms.date: 08/04/2022
 LocalizationGroup: 
@@ -139,4 +139,3 @@ If no insights found are found, you see this message: “We didn’t find any in
 - RLS
 
 If no explanations are found, you see this message: “We didn’t find any significant explanations”. You can try bringing in more fields for the analysis.
-

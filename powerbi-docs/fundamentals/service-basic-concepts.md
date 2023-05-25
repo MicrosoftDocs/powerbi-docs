@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 manager: kfollis
 ms.reviewer: ''
-ms.custom: video-B2vd4MQrz4M
+ms.custom: video-B2vd4MQrz4M, build-2023, build-2023-dataai
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
