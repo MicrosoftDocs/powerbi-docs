@@ -35,6 +35,22 @@ Microsoft Power BI Desktop projects enable developer collaboration by connecting
 
     :::image type="content" source="media/projects-azdo/pbip-azdo-copy-repo-url.png" alt-text="PBIP and Azure DevOps integration copy URL.":::
 
+1. In Visual Studio Code (VS Code) > **Source Control** > **Remote**, select **Add Remote**.
+
+    :::image type="content" source="media/projects-azdo/pbip-azdo-add-remote.png" alt-text="Add Remote in VS Code.":::
+
+1. Select **Publish Branch**.
+
+    :::image type="content" source="media/projects-azdo/pbip-azdo-publish-branch.png" alt-text="Publish Branch in VS Code.":::
+
+VS Code takes care of publishing your project into Azure DevOps, where you can see your project files.
+
+    :::image type="content" source="media/projects-azdo/pbip-azdo-see-project.png" alt-text="See your project in Azure DevOps.":::
+
+And that's it. You can now have multiple developers working on the same Power BI project. All they need to do is be synced with the same Azure Devops Git Repo.
+
+If you're using Microsoft Fabric, you can also connect a Fabric workspace to an Azure DevOps Git repo and get all your content automatically deployed into the service. Git and Azure DevOps integration can provide a continuous integration workflow not only from Power BI Desktop to the service, but also from changes made in the service to Power BI Desktop.
+
 ## See also
 
 [Power BI Desktop projects Git integration](projects-git.md)  

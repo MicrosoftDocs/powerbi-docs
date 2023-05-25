@@ -35,8 +35,7 @@ Saving your work as a project has the following benefits:
 
 See Power BI Desktop projects and other Developer mode features being introduced at Microsoft Build 2023.
 
-**>>Embedded video<<** 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OdkS7DF7ElY?start=277" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 
 ## Enable preview features
 
