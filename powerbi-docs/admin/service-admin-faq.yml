@@ -48,7 +48,7 @@ sections:
       - question: |
           Security in Power BI section
         answer: |
-          * [Does Power BI meet national, regional, and industry-specific compliance requirements?](#does-power-bi-meet-national--regional--and-industry-specific-compliance-requirements-)
+          * [Does Power BI meet national/regional and industry-specific compliance requirements?](#does-power-bi-meet-national--regional--and-industry-specific-compliance-requirements-)
           * [How does security work in Power BI?](#how-does-security-work-in-power-bi-)
           
   - name: Sign up for Power BI
@@ -261,7 +261,7 @@ sections:
   - name: Security in Power BI
     questions:
       - question: |
-          Does Power BI meet national, regional, and industry-specific compliance requirements?
+          Does Power BI meet national/regional and industry-specific compliance requirements?
         answer: |
           To learn more about Power BI compliance, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
           
