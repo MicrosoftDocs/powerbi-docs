@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 08/04/2022
+ms.date: 05/24/2023
 ms.custom: intro-installation
 ---
 
 # Install Power BI Desktop for Power BI Report Server
 
-To create Power BI reports for Power BI Report Server, you need to download and install the version of Power BI Desktop that's optimized for Power BI Report Server. This release is different from the Power BI Desktop used with the Power BI service. For example, the version of Power BI Desktop for the Power BI service includes preview features. Those features aren't in the Power BI Report Server version until they're generally available. Using this release makes sure that the report server can interact with a known version of the reports and model. 
+To create Power BI reports for Power BI Report Server, you need to download and install the version of Power BI Desktop that's optimized for Power BI Report Server. This release is different from the Power BI Desktop used with the Power BI service. For example, the version of Power BI Desktop for the Power BI service includes preview features. Those features aren't in the Power BI Report Server version until they're generally available. However, some features require Power BI service environment and are [unavailable in the Power BI Report Server](./compare-report-server-service.md). Using this release makes sure that the report server can interact with a known version of the reports and model. 
 
 Not to worry. You can install Power BI Desktop, and Power BI Desktop for Power BI Report Server, side by side on the same computer.
 
