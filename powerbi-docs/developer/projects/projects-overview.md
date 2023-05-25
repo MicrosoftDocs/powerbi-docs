@@ -13,23 +13,23 @@ ms.date: 05/03/2023
 # Power BI Desktop projects (PREVIEW)
 
 > [!IMPORTANT]
-> Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 Microsoft Power BI Desktop projects is a Developer mode feature providing developer specific capabilities like source control, text editor support, and programmatic generation of content.
 
-Projects is a new save option that enables Power BI Desktop to save  into a Power BI Project folder (PBIP) and operate on report and dataset item definitions on the file system, rather than a single PBIX file.
+Projects is a new save option that enables Power BI Desktop to save  into a Power BI Project folder (PBIP) and operate on report and dataset artifact definitions on the file system, rather than a single PBIX file.
 
-Power BI Desktop introduces a new way for developers to work with Power BI Desktop. You can now save your work as a *project* with report and dataset item definitions as individual plain text files.
+Power BI Desktop introduces a new way for developers to work with Power BI Desktop. You can now save your work as a *project* with report and dataset artifact definitions as individual plain text files.
 
 Saving your work as a project has the following benefits:
 
-- **Source control** - Power BI item definitions can be stored in a source control system, like Git. With Git, developers can track version history, compare different revisions (diff), and revert to previous versions. Source control can also unblock co-development and collaboration when using Power BI Desktop by leveraging familiar collaboration mechanisms for resolving conflicting changes (merge) and reviewing changes (pull requests). To learn more, see [Version control](/devops/develop/git/what-is-version-control).
+- **Source control** - Power BI artifact definitions can be stored in a source control system, like Git. With Git, developers can track version history, compare different revisions (diff), and revert to previous versions. Source control can also unblock collaboration when using Power BI Desktop by using familiar collaboration mechanisms for resolving conflicts (merge) and reviewing changes (pull requests). To learn more, see [Version control](/devops/develop/git/what-is-version-control).
 
-- **Continuous Integration and Continuous Delivery (CI/CD)** - You can leverage systems where developers in your organization submit a proposed change to the CI/CD system, and the system validates the change to a series of *quality gates* before applying the change to the production system.  These quality gates can include code reviews by other developers, automated testing, and automated build to validate the integrity of the changes. CI/CD systems are typically built on top of existing source control systems. To learn more, see [DevOps - Continuous integration](/devops/develop/what-is-continuous-integration), and [DevOps - Continuous delivery](/devops/deliver/what-is-continuous-delivery).
+- **Continuous Integration and Continuous Delivery (CI/CD)** - You can use systems where developers in your organization submit a proposed change to the CI/CD system, and the system validates the change to a series of *quality gates* before applying the change to the production system.  These quality gates can include code reviews by other developers, automated testing, and automated build to validate the integrity of the changes. CI/CD systems are typically built on top of existing source control systems. To learn more, see [DevOps - Continuous integration](/devops/develop/what-is-continuous-integration), and [DevOps - Continuous delivery](/devops/deliver/what-is-continuous-delivery).
 
-- **Text Editor Support** - Item definition files for datasets and reports must be text files, publicly documented and human readable. Allowing developers to use code editors (like Visual Studio Code) for more productive authoring (e.g., batch edits), always with a rich editing experience including intellisense and validation.
+- **Text Editor Support** - artifact definition files for datasets and reports must be text files, publicly documented and human readable. Allowing developers to use code editors (like Visual Studio Code) for more productive authoring (like batch edits), always with a rich editing experience including intellisense and validation.
 
-- **Programmatic generation and editing or item definitions** - You can write scripts or create applications to make changes to the definition of various items.  These applications can be based on public documentation of the item definitions and/or libraries provided by Microsoft.
+- **Programmatic generation and editing or artifact definitions** - You can write scripts or create applications to make changes to the definition of various artifacts.  These applications can be based on public documentation of the artifact definitions and/or libraries provided by Microsoft.
 
 ## Video
 
@@ -49,7 +49,7 @@ If you're working on a new project or you've opened an existing Power BI Desktop
 
 :::image type="content" source="media/projects-overview/pbip-saveastype.png" alt-text="Screengrab showing save file as Power BI Project":::
 
-When you save as a project, Power BI Desktop saves report and dataset items as folders, each containing text files that define the item. You'll see the following:
+When you save as a project, Power BI Desktop saves report and dataset artifacts as folders, each containing text files that define the artifact. You see the following:
 
 :::image type="content" source="media/projects-overview/pbip-files.png" alt-text="Screengrab showing Power BI Project files":::
 
@@ -65,7 +65,7 @@ A collection of files and folders that represent a Power BI Report. To learn mor
 
 ##### .gitIgnore
 
-Specifies intentionally untracked files that Git should ignore. Power BI Desktop writes and updates the [.gitignore](https://git-scm.com/docs/gitignore) file in the root folder when saving an item.
+Specifies intentionally untracked files that Git should ignore. Power BI Desktop writes and updates the [.gitignore](https://git-scm.com/docs/gitignore) file in the root folder when saving.
 
 Dataset and Report sub-folders each have default git ignored files specified in .gitIgnore:
 
@@ -78,7 +78,7 @@ Dataset and Report sub-folders each have default git ignored files specified in 
 
 ##### \<project name>.pbip
 
-Contains a pointer to a report item and can be opened by Power BI Desktop to open the report for authoring.  
+Contains a pointer to a report artifact and can be opened by Power BI Desktop to open the report for authoring.  
 
 Opening a PBIP opens the targeted report for authoring. It also opens the dataset if the report contains a *byPath* dataset reference.
 
@@ -143,7 +143,7 @@ Most metadata files are JSON, and JSON schema is used for validation and documen
 
 JSON schemas allow developers to:
 
-- Learn about properties that can be configured.
+- Learn about configurable properties.
 - Inline JSON validation provided by the code editor.
 - Improve editing experience with syntax highlighting and autocomplete by the code editor.
 - Use external tools with knowledge about all the supported properties within the metadata files.
@@ -158,7 +158,7 @@ If an incorrect property or type is specified, a warning is shown:
 
 :::image type="content" source="media/projects-overview/json-schema-warning.png" alt-text="JSON schema warning":::
 
-When you hover over properties, additional context is shown:
+When you hover over properties, more context is shown:
 
 :::image type="content" source="media/projects-overview/json-schema-warning-context.png" alt-text="JSON schema warning context":::
 
@@ -220,7 +220,7 @@ To learn more, see [Editing JSON with Visual Studio Code](https://code.visualstu
 
 ## Frequently asked questions
 
-**Question:** Looking at dataset and report item folder definitions only a few files are marked as required, what happens if I delete them? 
+**Question:** Looking at dataset and report artifact folder definitions only a few files are marked as required, what happens if I delete them? 
 
 **Answer:** Power BI Desktop will automatically generate them when saved.
 
@@ -235,6 +235,10 @@ To learn more, see [Editing JSON with Visual Studio Code](https://code.visualstu
 **Question:** The Publish button is disabled when I'm working in a PBIP. How can I publish my content?
 
 **Answer:** Publish is disabled while this feature is in **PREVIEW**. You can either use Fabric Git Integration to publish your work, or save as a PBIX to publish.
+
+**Question:** Can I deploy a Power BI Desktop project to Azure Analysis Services or SQL Server Analysis Services?
+
+**Answer:** No. Power BI Desktop project files, and the model.bim file in particular use an enhanced metadata that isn't supported in Analysis Services.
 
 ## See also
 

@@ -13,17 +13,17 @@ ms.date: 05/18/2023
 # Power BI Desktop project Dataset folder
 
 > [!IMPORTANT]
-> Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-This article describes the files and sub-folders in the Microsoft Power BI Desktop project Dataset folder. Not every project will include all of the files and sub-folders described here.
+This article describes the files and subfolders in the Microsoft Power BI Desktop project Dataset folder. Not every project includes all of the files and subfolders described here.
 
 ## \<project name>.Dataset
 
-Contains files and folders that represent a Power BI Dataset. Depending on your project, it can include the following:
+Contains files and folders that represent a Power BI Dataset. Depending on your project, it can include:
 
 #### model.bim
 
-Contains a JSON definition of the model. In most cases, this is the file you'll be working on.
+Contains a JSON definition of the model.
 
 #### definition.pbidataset
 
@@ -53,7 +53,7 @@ When you select **Apply later**, the unapplied changes are saved into an unappli
 
 #### .pbi\
 
-A sub-folder that includes the following files used by Power BI Desktop. These files aren't considered part of the core item definition:
+A sub-folder that includes the following files used by Power BI Desktop. These files aren't considered part of the core artifact definition:
 
 ###### localSettings.json
 
