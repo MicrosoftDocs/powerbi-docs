@@ -29,7 +29,7 @@ Many resources are available to help you identify, research, and solve issues.  
 Admins can use the **Help + support** experience in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) to get self-help solutions and to create a new service request. Before you contact Microsoft support, follow these steps:
 
 * Check for service outages or degradation at [Fabric Support](https://support.fabric.microsoft.com).
-* Check for [known issues with Power BI or Fabric features](https://blog.fabric.microsoft.com/en-us/known-issues).
+* Check for [known issues with Power BI or Fabric features](https://blog.fabric.microsoft.com/known-issues).
 * Look for any notifications about Power BI or Fabric in the [Microsoft 365 service health dashboard](https://admin.microsoft.com/#/servicehealth).
 * Check [Microsoft 365 message center](https://admin.microsoft.com/#/MessageCenter) to make sure there are no planned maintenance activities affecting your experience.
 
@@ -47,7 +47,7 @@ If Microsoft support is your admin's preferred option:
 
 1. Check for service outages or degradation at [Power BI and Fabric Support](https://support.fabric.microsoft.com).
 2. Check for [known issues with Power BI or Fabric features](https://support.fabric.com/known-issues). 
-1. See if your issue has already been addressed by the [Community](https://community.powerbi.com).
+1. See if your issue has already been addressed by the [Community](https://community.fabric.com).
 
 1. Review the [Fabric troubleshooting documentation ](/fabric/get-started/)or the [Power BI troubleshooting documentation](/power-bi/troubleshoot/).
 
