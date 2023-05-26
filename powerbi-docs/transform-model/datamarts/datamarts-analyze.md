@@ -204,6 +204,8 @@ FROM [METADATA].[relationships] AS R
 JOIN [metadata].[relationshipColumns] AS C
 ON R.RelationshipId=C.RelationshipId
 ```
+## Limitations
+- Visualize results currently does not support SQL queries with an ORDER BY clause. 
 
 
 ## Next steps
