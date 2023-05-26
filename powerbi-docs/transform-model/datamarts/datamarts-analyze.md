@@ -58,17 +58,12 @@ The **SQL Query Editor** provides a text editor to write queries using T-SQL. To
 
 :::image type="content" source="media/datamarts-analyze/datamarts-analyze-05.png" alt-text="Screenshot of the S Q L query editor view icon.":::
 
-You can write your SQL query in the query editor window, which includes intellisense support. Once complete, select the **Run** button to execute the query. Query results appear in the results section. You can open the results in Excel for further analysis by selecting the **Open in Excel** button.
-
-As you work on your SQL query, the queries are automatically saved every few seconds. A “saving indicator” that shows up in your query tab at the bottom indicates that your query is being saved.
-
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-06.png" alt-text="Screenshot of the S Q L query editor query results.":::
-
-The SQL Query editor provides support for intellisense, code completion, syntax highlighting, client-side parsing and validation. Once you’ve written the T-SQL query, select **Run** to execute the query. The **Results** preview is displayed in the **Results** section. The **Open in Excel** button opens the corresponding T-SQL Query to Excel and executes the query, enabling you to view the results in Excel.
+The SQL Query editor provides support for intellisense, code completion, syntax highlighting, client-side parsing and validation. Once you’ve written the T-SQL query, select **Run** to execute the query. As you work on your SQL query, the queries are automatically saved every few seconds. A “saving indicator” that shows up in your query tab at the bottom indicates that your query is being saved. The **Results** preview is displayed in the **Results** section. The **Download in Excel** button opens the corresponding T-SQL Query to Excel and executes the query, enabling you to view the results in Excel. The **Visualize results** allows you to create reports from your query results within the SQL query editor.
 
 There are a few things to keep in mind about the Visual Query editor:
 * You can only write DQL (not DDL or DML) 
 
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-15.png" alt-text="Screenshot of the S Q L query editor query results.":::
 
 ## Analyze outside the editor
 
