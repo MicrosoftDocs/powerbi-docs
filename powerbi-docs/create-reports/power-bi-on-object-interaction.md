@@ -36,7 +36,7 @@ You can begin building a new visual in one of three ways.
 - Select or drag fields from the Data pane.
 - Select a new visual from the **Insert** section of the ribbon, and then add fields. If you have the ribbon collapsed, select **Visual gallery** > select a visual.
 
-    :::image type="content" source="media/power-bi-on-object-interaction/on-object-ribbon-visualization-gallery.png" alt-text="Insert a visual from the Visual gallery.":::
+    :::image type="content" source="media/power-bi-on-object-interaction/on-object-ribbon-visualization-gallery.png" alt-text="Screenshot of how to insert a visual from the Visual gallery.":::
 
 - Right-click the canvas > **Add visual** or **Paste**.
 
@@ -60,7 +60,7 @@ If you prefer to see all the field wells as before, turn off the **Suggest a typ
 
 After adding a data field to your visual, select the aggregation you want from the Aggregations dropdown.
 
-:::image type="content" source="media/power-bi-on-object-interaction/on-object-aggregation.png" alt-text="Select the aggregation you want.":::
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-aggregation.png" alt-text="Screenshot of how to elect the aggregation you want.":::
 
 ### Change the type of visual
 
@@ -79,7 +79,7 @@ You enter format mode in one of two ways:
 
 You know you’re in this new mode when the bounding box turns blue, the handle shapes turn to squares, and the hover and click behavior changes to show subselection regions.
 
-:::image type="content" source="media/power-bi-on-object-interaction/on-object-format-donut-slices.png" alt-text="On-object formatting for a donut chart.":::
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-format-donut-slices.png" alt-text="Screenshot showing on-object formatting for a donut chart.":::
 
 You can hover and click around in the visual to format specific subselections. Right-click the selected element to use the mini-toolbar and shortcut menu.
 
