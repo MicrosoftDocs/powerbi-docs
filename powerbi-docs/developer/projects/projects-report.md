@@ -13,13 +13,13 @@ ms.date: 05/18/2023
 # Power BI Desktop project Report folder
 
 > [!IMPORTANT]
-> Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Power BI Desktop Projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 This article describes the files and subfolders in the Microsoft Power BI Desktop project Report folder. Not every project includes all of the files and subfolders described here.
 
 ## \<project name>.Report
 
-Contains files and subfolders that represent a Power BI Report. Depending on your project, it can include:
+Contains files and subfolders that represent a Power BI project report. Depending on your project, it can include:
 
 #### report.json
 
@@ -27,9 +27,9 @@ Defines a report including visuals, page layout, and intended interactions. Duri
 
 #### definition.pbir
 
-Defines, in JSON format, the overall file structure and references to the dataset used by the report. Power BI Desktop can open a .PBIR file directly, just the same as if the report were opened from a .PBIP file. Opening a PBIR also opens the dataset alongside if there's a relative reference (`byPath`).
+Defines the overall file structure and references to the dataset used by the report. Power BI Desktop can open a .pbir file directly, just the same as if the report were opened from a .pbip file. Opening a .pbir also opens the dataset alongside if there's a relative reference using `byPath`.
 
-Example definition.pbir JSON:
+Example definition.pbir:
 
 ```json
 {
@@ -48,7 +48,7 @@ The definition includes the `datasetReference` property, which references the da
 
 `byPath` - Specifies a relative path to the target dataset folder. Absolute paths are not supported. A backslash (/) is used as a folder separator. When used, Power BI Desktop also opens the dataset in full edit mode.
 
-`byConnection` - Specifies a remote dataset in Power BI Service by using a connection string. When a `byConnection` reference is used, Power BI Desktop doesn't open the dataset in edit mode.
+`byConnection` - Specifies a remote dataset in the Power BI service by using a connection string. When a `byConnection` reference is used, Power BI Desktop does not open the dataset in edit mode.
 
 When using a `byConnection` reference, the following properties must be specified:
 
@@ -85,15 +85,15 @@ Contains data model diagrams describing the structure of the dataset associated 
 
 #### item.config.json
 
-Identifies the folder as a source control representation of a service item.
+An automatically generated system file that contains `version` and `logicalId` attributes. In effect, it identifies the folder as a source control representation of a service item. To learn more, see [Git integration source code format - Config file](/fabric/cicd/git-integration/source-code-format#config-file).
 
 #### item.metadata.json
 
-Properties common to all service items.
+An automatically generated system file that contains `type`, `displayName`, `description` attributes. To learn more, see [Git integration source code format - Metadata file](/fabric/cicd/git-integration/source-code-format#metadata-file)
 
 #### mobileState.json
 
-Report appearance and behavior settings when rendering on a mobile device. This file doesn't support external editing.
+Contains report appearance and behavior settings when rendering on a mobile device. This file does not support external editing.
 
 #### .pbi\\
 
@@ -101,7 +101,7 @@ A subfolder that includes the localSettings.json file, which contains report set
 
 ###### localSettings.json
 
-Report settings that apply only for the current user and computer. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
+Contains report settings that apply only for the current user and local computer. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
 
 #### CustomVisuals\\
 
@@ -121,20 +121,20 @@ The files exist to allow a level of forward compatibility. For example, a new re
 
 A subfolder that includes resource files specific to the report and loaded by the user, like custom themes, images, and custom visuals (.pbiviz files).
 
-Developers are responsible for the files here and changes are supported. For example, you can change a file and after a Power BI Desktop restart, the new file is loaded into the report. This folder unblocks some useful scenarios like:
+Developers are responsible for the files here and changes are supported. For example, you can change a file and after a Power BI Desktop restart, the new file is loaded into the report. This folder can unblock some useful scenarios, like:
 
 - Authoring custom themes outside of Power BI Desktop by using the public schema.
 - Applying batch changes by changing the resource file on multiple reports. For example, you can switch the corporate custom theme, change between light and dark themes, and change logo images.
 
-Every resource file must have a corresponding entry in the report.json file, which during **PREVIEW** doesn't support editing. Sdits to RegisteredResources files are only supported for already loaded resources that cause Power BI Desktop to register the resource in report.json.
+Every resource file must have a corresponding entry in the report.json file, which during **PREVIEW** doesn't support editing. Edits to RegisteredResources files are only supported for already loaded resources that cause Power BI Desktop to register the resource in report.json.
 
 #### CustomVisuals\\
 
 A subfolder that contains metadata for custom visuals in the report. Power BI supports three kinds of custom visuals:
 
-- AppSource Power BI visuals - Also known as "public custom visuals". They're available from Microsoft AppSource. Report developers can install these visuals directly from Power BI Desktop.
+- AppSource Power BI visuals, also known as "Public custom visuals". They're available from Microsoft AppSource. Report developers can install these visuals directly from Power BI Desktop.
 - Organizational store visuals - Organizations can approve and deploy custom visuals to Power BI for their organization. To learn more, see [Organization store](/power-bi/developer/visuals/power-bi-custom-visuals#organizational-store).
-- Custom visual files - Also known as *private custom visuals*. The files can be loaded into the report by uploading a pbiviz package.
+- Custom visual files - Also known as "Private custom visuals". The files can be loaded into the report by uploading a pbiviz package.
 
 Only private custom visuals are loaded into the CustomVisuals folder. AppSource and Organization visuals are loaded automatically by Power BI Desktop.
 
