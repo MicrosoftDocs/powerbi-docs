@@ -196,6 +196,8 @@
       href: desktop-templates.md      
     - name: "Change report settings"
       href: power-bi-report-settings.md
+    - name: "Set visual query limits"
+      href: desktop-set-visual-query-limits.md
     - name: "Feature reports on others' Home pages"
       href: ../collaborate-share/service-featured-content.md
     - name: "Interact with a report in Editing view"
@@ -288,6 +290,8 @@
       items: 
       - name: "Get started with Azure Maps visual"
         href: /azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context
+      - name: "Convert maps and filled maps to Azure Maps visuals"
+        href: /azure/azure-maps/power-bi-visual-conversion?context=/power-bi/create-reports/context/context
       - name: "Layers in the Azure Maps visual"
         href: /azure/azure-maps/power-bi-visual-understanding-layers?context=/power-bi/create-reports/context/context
       - name: "Add a bubble layer"
