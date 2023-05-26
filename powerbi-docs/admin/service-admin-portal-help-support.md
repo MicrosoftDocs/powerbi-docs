@@ -34,20 +34,22 @@ Admins can specify internal URLs to override the destination of links on the Pow
 
 Mail-enabled security groups will receive email notifications if this tenant is impacted by a service outage or incident. Learn more about [Service interruption notifications](/power-bi/support/service-interruption-notifications).
 
-## Allow users to try Power BI paid features
+## Allow users to try Fabric and Power BI paid features
 
-   :::image type="content" source="media/service-admin-portal-help-support/power-bi-settings-paid-features.png" alt-text="Screen capture showing Allow users to try Power BI paid features interface.":::
+   :::image type="content" source="media/service-admin-portal-help-support/fabric-paid-features.png" alt-text="Screen capture showing Allow users to try Fabric paid features interface.":::
 
-The setting to **Allow users to try Power BI paid features** is enabled by default. This setting increases your control over how users get license upgrades. In scenarios where you have [blocked self-service purchase](../enterprise/service-admin-disable-self-service.md), this setting lets users use more features free for 60 days. Users who have a Power BI (free) license and users with a Power BI Pro license can start a Power BI Premium Per User trial. Changing **Allow users to try Power BI paid features** from **enabled** to **disabled** blocks self-service purchase of new licenses. It does not impact purchases that were already made.
+The setting to **Allow users to try Fabric paid features** is enabled by default. This is a single setting that controls access to Power BI Premium Per User trials and Fabric trials. 
+
+This setting increases your control over how users get license upgrades. In scenarios where you have [blocked self-service purchase](../enterprise/service-admin-disable-self-service.md), this setting lets users use more features free for 60 days. Users who have a Power BI (free) license and users with a Power BI Pro license can start a Power BI Premium Per User trial and a Fabric trial in the context of Microsoft Fabric (Learn more about the Fabric Trial [here](../../fabric/get-started/fabric-trial.md)). Changing **Allow users to try Fabric paid features** from **enabled** to **disabled** blocks self-service purchase of new Power BI licenses. It does not impact purchases that were already made. It also disables Power Premium Per User trials and Fabric trials.
 
 The user's license upgrade experience depends on how you combine license settings. The table below shows how the upgrade experience is affected by different setting combinations:
 
-| Self-service purchase setting | Allow user to try Power BI paid features | End-user experience |
+| Self-service purchase setting | Allow user to try Fabric paid features | End-user experience |
 | ------ | ------ | ----- |
 | Enabled | Disabled | User can buy an upgraded license, but can't start a trial |
-| Enabled | Enabled | User can start a free trial and can upgrade to a paid license |
-| Disabled | Disabled | User sees a message to contact the IT admin to request a license |
-| Disabled | Enabled | User can start a trial, but must contact the IT admin to get a paid license |
+| Enabled | Enabled | User can start a free trial and can upgrade to a paid Power BI license |
+| Disabled | Disabled | User sees a message to contact the IT admin to request a Power BI license |
+| Disabled | Enabled | User can start a Fabric / Power BI trial, but must contact the IT admin to get a paid Power BI license |
 
 
 
