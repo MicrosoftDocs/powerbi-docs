@@ -15,3 +15,9 @@
       href: projects-git.md
     - name: "Azure DevOps integration"
       href: projects-azdo.md
+  - name: External tools
+    items:
+    - name: External tools in Power BI Desktop
+      href: ../../transform-model/desktop-external-tools.md
+    - name: Register an external tool
+      href: ../../transform-model/desktop-external-tools-register.md

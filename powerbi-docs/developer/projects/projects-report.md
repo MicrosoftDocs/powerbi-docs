@@ -1,6 +1,6 @@
 ---
-title: Power BI Desktop Projects Report folder
-description: Learn about the Power BI Desktop Projects report folder
+title: Power BI Desktop project Report folder
+description: Learn about the Power BI Desktop project Report folder
 author: minewiskan
 ms.author: owend
 ms.reviewer: ruiromano
@@ -13,7 +13,7 @@ ms.date: 05/18/2023
 # Power BI Desktop project Report folder
 
 > [!IMPORTANT]
-> Power BI Desktop Projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 This article describes the files and subfolders in the Microsoft Power BI Desktop project Report folder. Not every project includes all of the files and subfolders described here.
 

@@ -21,11 +21,11 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Projects
+  - title: Power BI Desktop projects
     linkLists:
       - linkListType: concept
         links:
-          - text: "Power BI Desktop projects"
+          - text: "Power BI Desktop projects overview"
             url: projects-overview.md
           - text: "Project Dataset folder"
             url: projects-dataset.md
@@ -35,3 +35,12 @@ landingContent:
             url: projects-git.md
           - text: "Project Azure DevOps integration"
             url: projects-azdo.md
+  # Card (optional)
+  - title: External tools
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: "External tools in Power BI Desktop"
+          url: ../../transform-model/desktop-external-tools.md
+        - text: "Register an external tool"
+          url: ../../transform-model/desktop-external-tools-register.md

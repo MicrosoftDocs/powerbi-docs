@@ -10,34 +10,34 @@ ms.topic: conceptual
 ms.date: 05/03/2023
 ---
 
-# Power BI Desktop Projects (PREVIEW)
+# Power BI Desktop projects (PREVIEW)
 
 > [!IMPORTANT]
-> Power BI Desktop Projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-Microsoft Power BI Desktop ***Developer mode*** brings Pro BI developer experiences directly into Power BI Desktop. It provides a suite of features that enable developer efficiency and capabilities like source control, text editor support, and programmatic generation of content.
+Microsoft Power BI Desktop ***Developer mode*** brings Pro BI developer experiences right into Power BI Desktop. It provides a suite of features that enable developer focused capabilities like [external tool](../../transform-model/desktop-external-tools.md) support, script and API support, source control with Git integration, and Continuous Integration/Continuous Delivery (CI\CD) with Azure DevOps.
 
-As part of Developer mode, Power BI Desktop introduces a new way to save and work on your projects. You can now save your work as a ***Power BI Project*** (PBIP) with report and dataset *artifact* definitions as individual plain text files.
+As part of Developer mode, Power BI Desktop introduces a new way to work on, collaborate, and save your projects. You can now save your work as a ***Power BI Project*** (PBIP). As a project, report and dataset *artifact* definitions are saved as individual plain text files in a simple, intuitive folder structure.
 
 Saving your work as a project has the following benefits:
 
-- **Text editor support** - Artifact definition files for datasets and reports are JSON formatted text files containing metadata. They're publicly documented and human readable. While project files support simple text editing tools like Notepad, it's generally not recommended. It's better to use a code editor, like Visual Studio Code (VS Code) for more productive authoring (like batch edits). VS Code provides a rich editing experience, including intellisense and validation.
+- **Text editor support** - Artifact definition files are JSON formatted text files containing model dataset and report metadata. They're publicly documented and human readable. While project files support simple text editing tools like Notepad, it's better to use a code editor like [Visual Studio Code (VS Code)](https://code.visualstudio.com/), which provides a rich editing experience including intellisense, validation, and Git integration.
 
-- **Programmatic generation and editing artifact definitions** - You can write scripts or create applications to make changes to the definition of various artifacts. The applications can be based on public documentation of the artifact definition schemas and/or client libraries.
+- **Programmatic generation and editing artifact definitions** - You can create scripts using the popular and easy to use [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true) , or create your own custom applications to make changes to your artifact definitions. Applications can be based on public documentation of the artifact definition schemas and/or client libraries.
 
-- **Source control** - Power BI artifact definitions can be stored in a source control system, like Git. With Git, developers can track version history, compare revisions (diff), and revert to previous versions. Source control can also unblock collaboration when using Power BI Desktop by using familiar collaboration mechanisms for resolving conflicts (merge) and reviewing changes (pull requests). To learn more, see [Version control in Git](/devops/develop/git/what-is-version-control).
+- **Source control** - Power BI dataset and report artifact definitions can be stored in a source control system, like Git. With Git, you can track version history, compare revisions (diff), and revert to previous versions. Source control can also unblock collaboration when using Power BI Desktop by using familiar collaboration mechanisms for resolving conflicts (merge) and reviewing changes (pull requests). To learn more, see [Version control in Git](/devops/develop/git/what-is-version-control).
 
-- **Continuous Integration and Continuous Delivery (CI/CD)** - You can use systems where developers in your organization submit a proposed change to the CI/CD system, and the system validates the change with a series of *quality gates* before applying the change to the production system.  These quality gates can include code reviews by other developers, automated testing, and automated build to validate the integrity of the changes. CI/CD systems are typically built on top of existing source control systems. To learn more, see [DevOps - Continuous integration](/devops/develop/what-is-continuous-integration), and [DevOps - Continuous delivery](/devops/deliver/what-is-continuous-delivery).
+- **Continuous Integration and Continuous Delivery (CI/CD)** - You can use systems where developers in your organization submit a proposed change to the CI/CD system. The system then validates the change with a series of *quality gates* before applying the change to the production system.  These quality gates can include code reviews by other developers, automated testing, and automated build to validate the integrity of the changes. CI/CD systems are typically built on top of existing source control systems. To learn more, see [DevOps - Continuous integration](/devops/develop/what-is-continuous-integration), and [DevOps - Continuous delivery](/devops/deliver/what-is-continuous-delivery).
 
 ## Video
 
-See Power BI Desktop Projects and other Developer mode features being introduced at Microsoft Build 2023.
+See Power BI Desktop projects and other Developer mode features being introduced at Microsoft Build 2023.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OdkS7DF7ElY?start=277" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 
 ## Enable preview features
 
-Saving as a project is currently in **PREVIEW**. Before giving it a try, you must first enable it in **Preview features**.
+Saving as a project in Power BI Desktop is currently in **PREVIEW**. Before giving it a try, you must first enable it in **Preview features**.
 
 To enable, in Power BI Desktop > **File** > **Options and settings** > **Options** > **Preview features**, select the checkbox for **Power BI Project (.pbip) save option**.
 
@@ -59,7 +59,7 @@ A collection of files and folders that represent a Power BI dataset. It contains
 
 ##### \<project name>.Report
 
-A collection of files and folders that represent a Power BI Report. To learn more about the files and subfolders and files in here, see [Project Report folder](projects-report.md).
+A collection of files and folders that represent a Power BI report. To learn more about the files and subfolders and files in here, see [Project Report folder](projects-report.md).
 
 ##### .gitIgnore
 
@@ -99,9 +99,9 @@ Schema detail for the following files are not documented. During **PREVIEW**, ch
 
 ### Dataset authoring
 
-With Developer mode, you can make write operation changes to the model definition by using external tools in two ways:
+You can make write operation changes to the model definition by using external tools in two ways:
 
-- By connecting to Power BI Desktop's Analysis Service (AS) instance with [External tools](../../transform-model/desktop-external-tools.md).
+- By connecting to Power BI Desktop's Analysis Service (AS) instance with [external tools](../../transform-model/desktop-external-tools.md).
 - By editing JSON metadata in the model.bim file using VS Code or another external tool.
 
 Not every model object or change support write operations. Applying changes outside of the those supported can result in unexpected situations.
@@ -111,10 +111,10 @@ Objects and operations that support write operations:
 | Object / Operation            | Change using AS Instance   | File Change |
 |-------------------------------|-------------------------|-------------|
 | Measures                      | Y                       | Y           |
-| Calc groups                   | Y                       | Y           |
+| Calculation groups            | Y                       | Y           |
 | Perspectives                  | Y                       | Y           |
 | Translations                  | Y                       | Y           |
-| OLS rules                     | Y                       | Y           |
+| Object Level Security (OLS)   | Y                       | Y           |
 | Model KPIs                    | Y                       | Y           |
 | Detail rows on measures       | Y                       | Y           |
 | Tables                        | N                       | Y           |
@@ -128,7 +128,7 @@ Objects and operations that support write operations:
 
 Keep in mind:
 
-- Any changes made outside Power BI Desktop requires a restart for those changes to be applied. Power BI Desktop isn't aware of changes to the files made by other tools.
+- Any changes made outside Power BI Desktop requires a restart for those changes to be to be shown in Power BI Desktop. Power BI Desktop isn't aware of changes to the files made by other tools.
 - Power BI Desktop doesn’t support tables with multiple partitions. Only a single partition for each table is supported. Creating more than one partition results in an error when opening the report.
 - If the dataset has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't  automatically generated.
 - Automatic date tables created by Power BI Desktop should not be changed by using external, open-source tools.
@@ -212,7 +212,7 @@ To learn more, see [Editing JSON with Visual Studio Code](https://code.visualstu
 ## Considerations and limitations
 
 - Power BI Desktop is not aware of changes made with other tools or applications. Any changes made by using external tools require you to restart Power BI Desktop before those changes are shown.
-- Sensitivity labels are not supported with Power BI Projects.
+- Sensitivity labels are not supported with Power BI projects.
 - Download PBIX isn't supported for workspaces with Git integration.
 - Diagram view is ignored when editing models in the Service.
 - When saving a PBIP to OneDrive, use the new **Save to OneDrive** experience.
