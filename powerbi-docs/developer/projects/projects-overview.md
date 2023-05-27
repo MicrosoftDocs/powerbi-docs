@@ -15,9 +15,9 @@ ms.date: 05/03/2023
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-Microsoft Power BI Desktop ***Developer mode*** brings Pro BI developer experiences right into Power BI Desktop. It provides a suite of features that enable developer focused capabilities like [external tool](../../transform-model/desktop-external-tools.md) support, script and API support, source control with Git integration, and Continuous Integration/Continuous Delivery (CI\CD) with Azure DevOps.
+Microsoft Power BI Desktop ***developer mode*** brings Pro BI developer experiences right into Power BI Desktop. It provides a suite of features that enable developer focused capabilities like [external tool](../../transform-model/desktop-external-tools.md) support, script and API support, source control with Git integration, and Continuous Integration/Continuous Delivery (CI\CD) with Azure DevOps.
 
-As part of Developer mode, Power BI Desktop introduces a new way to work on, collaborate, and save your projects. You can now save your work as a ***Power BI Project*** (PBIP). As a project, report and dataset *artifact* definitions are saved as individual plain text files in a simple, intuitive folder structure.
+As part of developer mode, Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a ***Power BI Project*** (PBIP). As a project, report and dataset *artifact* definitions are saved as individual plain text files in a simple, intuitive folder structure.
 
 Saving your work as a project has the following benefits:
 

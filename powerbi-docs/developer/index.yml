@@ -102,17 +102,23 @@ conceptualContent:
         url: /javascript/api/overview/powerbi/
         text: See more
     # Card
-    - title: Power BI Desktop Developer mode
+    - title: Power BI Desktop developer mode
       links:
         - url: /projects/projects-overview.md
           itemType: overview
           text: Power BI Desktop projects
-        - url: /projects/projects-dataset.md
+        - url: /projects/projects-git.md
           itemType: concept
-          text: Project Dataset folder
-        - url: /projects/projects-report.md
+          text: Projects Git integration
+        - url: /projects/projects-azdo.md
           itemType: concept
-          text: Project Report folder
+          text: Projects AzDo integration
+        - url: /projects/projects-azdo.md
+          itemType: concept
+          text: Projects AzDo integration
+        - url:  ../transform-model/desktop-external-tools.md
+          itemType: concept
+          text: Power BI Desktop external tools
       # footerLink (optional)
       footerLink:
         url: /projects/index.yml
