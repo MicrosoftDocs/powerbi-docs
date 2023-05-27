@@ -104,16 +104,16 @@ conceptualContent:
     # Card
     - title: Power BI Desktop developer mode
       links:
-        - url: /projects/projects-overview.md
+        - url: projects/projects-overview.md
           itemType: overview
           text: Power BI Desktop projects
-        - url: /projects/projects-git.md
+        - url: projects/projects-git.md
           itemType: concept
           text: Projects Git integration
-        - url: /projects/projects-azdo.md
+        - url: projects/projects-azdo.md
           itemType: concept
           text: Projects AzDo integration
-        - url: /projects/projects-azdo.md
+        - url: projects/projects-azdo.md
           itemType: concept
           text: Projects AzDo integration
         - url:  ../transform-model/desktop-external-tools.md
