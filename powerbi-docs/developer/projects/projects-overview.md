@@ -1,6 +1,6 @@
 ---
-title: Learn about Microsoft Power BI Desktop projects
-description: Learn how to save and edit a Power BI Desktop project
+title: Microsoft Power BI Desktop projects (PBIP)
+description: Learn how to save and edit a Power BI Desktop project (PBIP)
 author: minewiskan
 ms.author: owend
 ms.reviewer: ruiromano
@@ -31,7 +31,7 @@ Saving your work as a project has the following benefits:
 
 ## Video
 
-See Power BI Desktop projects and other Developer mode features being introduced at Microsoft Build 2023.
+See Power BI Desktop projects and other developer mode features being introduced at Microsoft Build 2023.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OdkS7DF7ElY?start=277" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 
@@ -237,7 +237,7 @@ To learn more, see [Editing JSON with Visual Studio Code](https://code.visualstu
 
 **Question:** Can I deploy a Power BI Desktop project to Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS)?
 
-**Answer:** No. Power BI Desktop project report definitions are not supported in AAS and SSAS. And dataset definitions use an enhanced metadata unique to Power BI. For AAS and SSAS projects, use Microsoft Visual Studio to get Git and Azure DevOps integration.
+**Answer:** No. Power BI Desktop project report definitions are not supported in AAS and SSAS. And model definitions use an enhanced metadata unique to Power BI. For AAS and SSAS projects, use Microsoft Visual Studio for model authoring, Git and Azure DevOps integration.
 
 ## See also
 
@@ -246,4 +246,3 @@ To learn more, see [Editing JSON with Visual Studio Code](https://code.visualstu
 [Power BI Desktop projects Git integration](projects-git.md)  
 [Power BI Desktop projects Azure DevOps integration](projects-git.md)  
 [External tools in Power BI Desktop](../../transform-model/desktop-external-tools.md)  
-[Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true)  

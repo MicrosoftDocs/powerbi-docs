@@ -1,6 +1,6 @@
 ---
-title: Power BI Desktop projects Dataset folder
-description: Learn about the Power BI Desktop projects dataset folder
+title: Power BI Desktop project Dataset folder
+description: Learn about the Power BI Desktop project dataset folder
 author: minewiskan
 ms.author: owend
 ms.reviewer: ruiromano
@@ -23,7 +23,7 @@ Contains files and subfolders that represent a Power BI dataset. Depending on yo
 
 #### model.bim
 
-Contains a Tabular Model Scripting Language (TMSL) [Database object](analysis-services/tmsl/database-object-tmsl?view=power-bi-premium-current&preserve-view=true) definition of the project model.
+Contains a Tabular Model Scripting Language (TMSL) [Database object](/analysis-services/tmsl/database-object-tmsl?view=power-bi-premium-current&preserve-view=true) definition of the project model.
 
 #### definition.pbidataset
 
@@ -73,3 +73,4 @@ Power BI Desktop can open a project without a cache.abf file. In that case, it o
 
 [Power BI Desktop project Report folder](projects-report.md)  
 [Power BI Desktop projects](projects-overview.md)  
+[Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true)  
