@@ -113,9 +113,6 @@ conceptualContent:
         - url: projects/projects-azdo.md
           itemType: concept
           text: Projects AzDo integration
-        - url: projects/projects-azdo.md
-          itemType: concept
-          text: Projects AzDo integration
         - url:  ../transform-model/desktop-external-tools.md
           itemType: concept
           text: Power BI Desktop external tools
