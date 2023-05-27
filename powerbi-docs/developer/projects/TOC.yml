@@ -1,0 +1,23 @@
+- name: "Power BI Desktop developer mode documentation"
+  href: index.yml
+  expanded: true
+  items:
+  - name: Power BI Desktop projects
+    expanded: true
+    items: 
+    - name: "Power BI Desktop projects overview"
+      href: projects-overview.md
+    - name: "Project Dataset folder"
+      href: projects-dataset.md
+    - name: "Project Report folder"
+      href: projects-report.md
+    - name: "Git integration"
+      href: projects-git.md
+    - name: "Azure DevOps integration"
+      href: projects-azdo.md
+  - name: External tools
+    items:
+    - name: External tools in Power BI Desktop
+      href: ../../transform-model/desktop-external-tools.md
+    - name: Register an external tool
+      href: ../../transform-model/desktop-external-tools-register.md
