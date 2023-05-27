@@ -118,7 +118,7 @@ conceptualContent:
           text: Power BI Desktop external tools
       # footerLink (optional)
       footerLink:
-        url: /projects/index.yml
+        url: projects/index.yml
         text: See more
 # additionalContent section (optional)
 # Card with summary style
