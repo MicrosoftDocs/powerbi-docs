@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/25/2023
+ms.date: 05/03/2023
 ---
 
 # Power BI implementation planning: Data-level auditing
@@ -95,7 +95,7 @@ To optimize cost when using Azure Log Analytics with Power BI:
 
 There are several ways to access the events that are sent to Azure Log Analytics. You can use:
 
-- The prebuilt Log Analytics for Power BI Datasets [template app](/power-bi/transform-model/log-analytics/install-as-engine-app).
+- The prebuilt Log Analytics for Power BI Datasets template app.
 - The Power BI Desktop [connector](/azure/data-explorer/power-bi-connector) for Azure Data Explorer (Kusto). Use the [Kusto Query Language](/azure/data-explorer/kusto/query/) (KQL) to analyze the data that's stored in Log Analytics. If you have SQL query experience, you'll find many similarities with KQL.
 - The [web-based query](/azure/data-explorer/web-query-data) experience in Azure Data Explorer.
 - Any query tool that can run KQL queries.
