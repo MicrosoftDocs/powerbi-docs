@@ -7,13 +7,15 @@ ms.reviewer: 'sujata'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/13/2022
+ms.date: 05/17/2023
 LocalizationGroup: Transform and shape data
 ---
 
 # Create Shape Map visualizations in Power BI Desktop (preview)
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
+[!INCLUDE [note-azure-maps](../includes/note-azure-maps.md)]
 
 Create a **Shape map** visual to compare regions on a map using color. Unlike the **Map** visual, **Shape map** doesn't show precise geographical locations of data points on a map. Instead, its main purpose is to compare regions on a map by coloring them differently.
 
