@@ -15,15 +15,31 @@ ms.date: 05/18/2023
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-This article describes the files and subfolders in the Microsoft Power BI Desktop project Report folder. Not every project includes all of the files and subfolders described here.
+This article describes the files and subfolders in a Microsoft Power BI Desktop project's **.Report** folder. The files and subfolders here represent a Power BI report. Depending on your project, the .Report folder can include:
 
-## \<project name>.Report
+- .pbi\
+    - [localSettings.json](#pbilocalsettingsjson)
+- [datasetDiagramLayout.json](#datasetdiagramlayoutjson)
+- [definition.pbir](#definitionpbir)
+- [item.config.json]()
+- [item.metadata.json]()
+- [mobileState.json](#mobilestatejson)
+- [report.json](#reportjson)
+- [CustomVisuals\\](#customvisuals)
+- [StaticResources\\](#staticresources)
+- [RegisteredResources\\](#registeredresources)
 
-Contains files and subfolders that represent a Power BI project report. Depending on your project, it can include:
+Not every project .Report folder includes all of the files and subfolders described here.
 
-#### report.json
+## Report files
 
-Defines a report including visuals, page layout, and intended interactions. During **PREVIEW**, this file doesn't support external editing.
+#### .pbi\localSettings.json
+
+Contains report settings that apply only for the current user and local computer. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
+
+#### datasetDiagramLayout.json
+
+Contains data model diagrams describing the structure of the dataset associated with the report.
 
 #### definition.pbir
 
@@ -79,54 +95,21 @@ Example using `byConnection`:
 
 ```
 
-#### datasetDiagramLayout.json
-
-Contains data model diagrams describing the structure of the dataset associated with the report.
-
 #### item.config.json
 
-An automatically generated system file that contains `version` and `logicalId` attributes. In effect, it identifies the folder as a source control representation of a service item. To learn more, see [Git integration source code format - Config file](/fabric/cicd/git-integration/source-code-format#config-file).
+Identifies the folder as a source control representation of a service item. To learn more, see [Git integration source code format - Config file](/fabric/cicd/git-integration/source-code-format#config-file).
 
 #### item.metadata.json
 
-An automatically generated system file that contains `type`, `displayName`, `description` attributes. To learn more, see [Git integration source code format - Metadata file](/fabric/cicd/git-integration/source-code-format#metadata-file)
+Contains attributes that define the item. To learn more, see [Git integration source code format - Metadata file](/fabric/cicd/git-integration/source-code-format#metadata-file)
 
 #### mobileState.json
 
 Contains report appearance and behavior settings when rendering on a mobile device. This file does not support external editing.
 
-#### .pbi\\
+#### report.json
 
-A subfolder that includes the localSettings.json file, which contains report settings that apply only for the local user/computer.
-
-###### localSettings.json
-
-Contains report settings that apply only for the current user and local computer. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
-
-#### CustomVisuals\\
-
-A subfolder that includes custom visual definitions used in the report. Each custom visual is held in a further subfolder. Files here don't support external editing.
-
-#### StaticResources\\
-
-A subfolder that includes two more subfolders: SharedResources\ and RegisteredResources\.
-
-##### SharedResources\\
-
-A subfolder that includes files with internal resources used by Power BI Desktop. Files here don't support external editing.
-
-The files exist to allow a level of forward compatibility. For example, a new release of Power BI Desktop may introduce a new built-in theme. And if a report author with the latest version selects the new theme, another user with an earlier version of Power BI  Desktop can still open the report because the new theme is part of the shared resources folder.
-
-##### RegisteredResources\\
-
-A subfolder that includes resource files specific to the report and loaded by the user, like custom themes, images, and custom visuals (.pbiviz files).
-
-Developers are responsible for the files here and changes are supported. For example, you can change a file and after a Power BI Desktop restart, the new file is loaded into the report. This folder can unblock some useful scenarios, like:
-
-- Authoring custom themes outside of Power BI Desktop by using the public schema.
-- Applying batch changes by changing the resource file on multiple reports. For example, you can switch the corporate custom theme, change between light and dark themes, and change logo images.
-
-Every resource file must have a corresponding entry in the report.json file, which during **PREVIEW** doesn't support editing. Edits to RegisteredResources files are only supported for already loaded resources that cause Power BI Desktop to register the resource in report.json.
+Defines a report including visuals, page layout, and intended interactions. During **PREVIEW**, this file doesn't support external editing.
 
 #### CustomVisuals\\
 
@@ -137,6 +120,21 @@ A subfolder that contains metadata for custom visuals in the report. Power BI su
 - Custom visual files - Also known as "Private custom visuals". The files can be loaded into the report by uploading a pbiviz package.
 
 Only private custom visuals are loaded into the CustomVisuals folder. AppSource and Organization visuals are loaded automatically by Power BI Desktop.
+
+#### StaticResources\\
+
+A subfolder that includes two more subfolders: SharedResources\ and RegisteredResources\.
+
+#### RegisteredResources\\
+
+A subfolder that includes resource files specific to the report and loaded by the user, like custom themes, images, and custom visuals (.pbiviz files).
+
+Developers are responsible for the files here and changes are supported. For example, you can change a file and after a Power BI Desktop restart, the new file is loaded into the report. This folder can unblock some useful scenarios, like:
+
+- Authoring custom themes outside of Power BI Desktop by using the public schema.
+- Applying batch changes by changing the resource file on multiple reports. For example, you can switch the corporate custom theme, change between light and dark themes, and change logo images.
+
+Every resource file must have a corresponding entry in the report.json file, which during **PREVIEW** doesn't support editing. Edits to RegisteredResources files are only supported for already loaded resources that cause Power BI Desktop to register the resource in report.json.
 
 ## See also
 

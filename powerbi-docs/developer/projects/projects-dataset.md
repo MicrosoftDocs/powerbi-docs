@@ -15,11 +15,46 @@ ms.date: 05/18/2023
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-This article describes the files and subfolders in the Microsoft Power BI Desktop project Dataset folder. Not every project includes all of the files and subfolders described here.
+This article describes the files and subfolders in a Microsoft Power BI Desktop project's **.Dataset** folder. The files and subfolders here represent a Power BI dataset. Depending on your project, the .Dataset folder can include:
 
-## \<project name>.Dataset
+- .pbi\
+    - [localSettings.json](#pbilocalsettingsjson)
+    - [editorSettings.json](#pbieditorsettingsjson)
+    - [cache.abf](#pbicacheabf)
+    - [unappliedChanges.json](#pbiunappliedchangesjson)
+- [model.bim](#modelbim)
+- [definition.pbidataset](#definitionpbidataset)
+- [diagramLayout.json](#diagramlayoutjson)
+- [item.config.json](#itemconfigjson)
+- [item.metadata.json](#itemmetadatajson)
 
-Contains files and subfolders that represent a Power BI dataset. Depending on your project, it can include:
+Not every project .Dataset folder includes all of the files and subfolders described here.
+
+## Dataset files
+
+#### .pbi\localSettings.json
+
+Contains dataset settings that apply only for the current user and computer. It should be included in gitIgnore or other source control exclusions. By default, this file is ignored by Git.
+
+#### .pbi\editorSettings.json
+
+Contains dataset editor settings saved as part of the dataset definition for use across users and environments.
+
+#### .pbi\cache.abf
+
+An Analysis Services Backup (ABF) file containing a local cached copy of the model and data when it was last edited. It should be included in gitIgnore or other source control exclusions. By default, this file is ignored by Git.
+
+Power BI Desktop can open a project without a cache.abf file. In that case, it opens the report connected to a model with its entire definition but without data. If a cache.abf exists, Power BI Desktop loads the data and overwrites the model definition with the content in model.bim.
+
+#### .pbi\unappliedChanges.json
+
+Power BI Desktop allows you to save changes made in the Transform Data editor (Power Query) without first applying those changes to the data model.
+
+:::image type="content" source="media/projects-overview/query-change.png" alt-text="Image showing Apply query change dialog.":::
+
+When you select **Apply later**, the unapplied changes are saved into the unappliedChanges.json file. When pending changes are in the unappliedChanges file, Power BI Desktop prompts you to apply or discard those pending changes:
+
+:::image type="content" source="media/projects-overview/pending-changes.png" alt-text="Image showing pending changes warning.":::
 
 #### model.bim
 
@@ -35,39 +70,11 @@ Contains diagram metadata that defines the structure of the dataset associated w
 
 #### item.config.json
 
-An automatically generated system file that contains `version` and `logicalId` attributes. In effect, it identifies the folder as a source control representation of a service item. To learn more, see [Git integration source code format - Config file](/fabric/cicd/git-integration/source-code-format#config-file).
+Identifies the folder as a source control representation of a service item. To learn more, see [Git integration source code format - Config file](/fabric/cicd/git-integration/source-code-format#config-file).
 
 #### item.metadata.json
 
-An automatically generated system file that contains `type`, `displayName`, `description` attributes. To learn more, see [Git integration source code format - Metadata file](/fabric/cicd/git-integration/source-code-format#metadata-file)
-
-#### unappliedChanges.json
-
-Power BI Desktop allows you to save changes made in the Transform Data editor (Power Query) without first applying those changes to the data model.
-
-:::image type="content" source="media/projects-overview/query-change.png" alt-text="Image showing Apply query change dialog.":::
-
-When you select **Apply later**, the unapplied changes are saved into the unappliedChanges.json file. When pending changes are in the unappliedChanges file, Power BI Desktop prompts you to apply or discard those pending changes:
-
-:::image type="content" source="media/projects-overview/pending-changes.png" alt-text="Image showing pending changes warning.":::
-
-#### .pbi\
-
-A subfolder that includes the following files used by Power BI Desktop. These files aren't considered part of the dataset artifact definition:
-
-###### localSettings.json
-
-Contains dataset settings that apply only for the current user and computer. It should be included in gitIgnore or other source control exclusions. By default, this file is ignored by Git.
-
-###### editorSettings.json
-
-Contains dataset editor settings saved as part of the dataset definition for use across users and environments.
-
-###### cache.abf
-
-An Analysis Services Backup (ABF) file containing a local cached copy of the model and data when it was last edited. It should be included in gitIgnore or other source control exclusions. By default, this file is ignored by Git.
-
-Power BI Desktop can open a project without a cache.abf file. In that case, it opens the report connected to a model with its entire definition but without data. If a cache.abf exists, Power BI Desktop loads the data and overwrites the model definition with the content in model.bim.
+Contains attributes that define the item. To learn more, see [Git integration source code format - Metadata file](/fabric/cicd/git-integration/source-code-format#metadata-file)
 
 ## See also
 
