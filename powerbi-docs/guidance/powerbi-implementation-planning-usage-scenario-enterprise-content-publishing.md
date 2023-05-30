@@ -260,7 +260,7 @@ When working with multiple environments, it's common to set up development, test
 
 ### System oversight
 
-The [activity log](/power-bi/admin/service-admin-auditing) records events that occur in the Power BI service. Power BI administrators can use the activity log to [audit](powerbi-adoption-roadmap-system-oversight.md#auditing) deployment activities.
+The [activity log](/power-bi/admin/service-admin-auditing) records events that occur in the Power BI service. Power BI administrators can use the activity log to [audit](powerbi-implementation-planning-auditing-monitoring-overview.md) deployment activities.
 
 You can use the Power BI [metadata scanning APIs](/power-bi/enterprise/service-admin-metadata-scanning) to create a tenant inventory. The API results are helpful to verify which items have been deployed to each workspace, to check lineage, and to validate security settings.
 
