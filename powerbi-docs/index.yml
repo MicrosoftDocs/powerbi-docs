@@ -148,7 +148,7 @@ conceptualContent:
         - url: connect-data/service-gateway-onprem.md
           itemType: concept
           text: On-premises data gateways
-        - url: connect-data/service-data-hub.md
+        - url: /fabric/get-started/onelake-data-hub?toc=/power-bi/connect-data/toc.json&bc=/power-bi/connect-data/breadcrumb/toc.json
           itemType: concept
           text: Discover data on the data hub
       # footerLink (optional)
