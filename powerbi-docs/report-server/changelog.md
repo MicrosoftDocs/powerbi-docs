@@ -21,23 +21,28 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 ### Power BI Report Server
 
 *Version: 1.17.8546.6252(build 15.0.1112.41), Released: May 26, 2023*
-    - Features
-        - Introduced new Accessibility property that let report authors to add accessible headers to tables and Heading levels to text boxes
-        - Added ability to configure Cleanup Batch Size and Cleanup Max Limit
-    - Bug fixes
-        - Fixed issue with SAP Hana DQ Connection using integrated security in PBIX reports
-        - Fixed Web Service page localization problem
-        - Fixed issue with lack of permission on shared data source affecting loading of the containing folder
-        - Fixed back page navigator button for PBIX reports in Hebrew browser language
-        - Fixed slowness of Large MDX Query as an Expression 
-        - Fixed compromised characters on Row Level Security setting page
-        - Fixed setting calendar days to a single day for monthly schedules
+
+- Features
+
+    - Introduced new Accessibility property that let report authors to add accessible headers to tables and Heading levels to text boxes
+    - Added ability to configure Cleanup Batch Size and Cleanup Max Limit
+
+- Bug fixes
+
+    - Fixed issue with SAP Hana DQ Connection using integrated security in PBIX reports
+    - Fixed Web Service page localization problem
+    - Fixed issue with lack of permission on shared data source affecting loading of the containing folder
+    - Fixed back page navigator button for PBIX reports in Hebrew browser language
+    - Fixed slowness of Large MDX Query as an Expression 
+    - Fixed compromised characters on Row Level Security setting page
+    - Fixed setting calendar days to a single day for monthly schedules
             
 ### Power BI Desktop (optimized for Power BI Report Server)
 
-*Version: 2.117.286.0(May 2023), Released: May 26, 2023*   
-    - Support for May 2023 Power BI Report Server
-    - Bug fixes
+*Version: 2.117.286.0(May 2023), Released: May 26, 2023*
+
+- Support for May 2023 Power BI Report Server
+- Bug fixes
 
 ## January 2023
 - **Power BI Report Server**
