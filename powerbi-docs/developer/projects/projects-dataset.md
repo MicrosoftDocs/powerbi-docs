@@ -18,10 +18,10 @@ ms.date: 05/18/2023
 This article describes the files and subfolders in a Microsoft Power BI Desktop project's **.Dataset** folder. The files and subfolders here represent a Power BI dataset. Depending on your project, the .Dataset folder can include:
 
 - .pbi\
-    - [localSettings.json](#localsettingsjson)
-    - [editorSettings.json](#editorsettingsjson)
-    - [cache.abf](#cacheabf)
-    - [unappliedChanges.json](#unappliedchangesjson)
+    - [localSettings.json](#pbilocalsettingsjson)
+    - [editorSettings.json](#pbieditorsettingsjson)
+    - [cache.abf](#pbicacheabf)
+    - [unappliedChanges.json](#pbiunappliedchangesjson)
 - [model.bim](#modelbim)
 - [definition.pbidataset](#definitionpbidataset)
 - [diagramLayout.json](#diagramlayoutjson)
