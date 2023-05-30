@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: Power BI developer mode documentation
+title: Power BI Desktop developer mode documentation
 summary: Microsoft Power BI Desktop developer mode brings Pro BI developer experiences right into Power BI Desktop. It provides a suite of features that enable developer focused capabilities like external tool support, script and API support, source control with Git integration, and Continuous Integration/Continuous Delivery (CI\CD) with Azure DevOps.
 
 metadata:
