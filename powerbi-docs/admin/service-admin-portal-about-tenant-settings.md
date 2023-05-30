@@ -81,6 +81,13 @@ The sections of the tenant settings page are listed in the table below.
 * [User experience experiments](service-admin-portal-user-experience-experiments.md)
 * [Share data with your Microsoft 365 services](service-admin-portal-share-data-microsoft-365-services.md)
 * [Insights settings](service-admin-portal-insights.md)
+* [Datamart settings](service-admin-portal-datamarts.md)
+* [Data model settings]((service-admin-portal-data-model.md))
+*  Quick measure suggestions
+* [Scale-out settings](./service-admin-portal-scale-out.md)
+* [Git integration](./service-admin-portal-git-integration.md)
+
+
 * [Quick measure suggestions settings](service-admin-portal-quick-measure-suggestions-settings.md)
 
 ## Next steps
