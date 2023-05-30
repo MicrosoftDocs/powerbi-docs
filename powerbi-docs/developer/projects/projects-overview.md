@@ -15,9 +15,7 @@ ms.date: 05/03/2023
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-Microsoft Power BI Desktop ***developer mode*** brings Pro BI developer experiences right into Power BI Desktop. It provides a suite of features that enable developer focused capabilities like [external tool](../../transform-model/desktop-external-tools.md) support, script and API support, source control with Git integration, and Continuous Integration/Continuous Delivery (CI\CD) with Azure DevOps.
-
-As part of developer mode, Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a ***Power BI Project*** (PBIP). As a project, report and dataset *artifact* definitions are saved as individual plain text files in a simple, intuitive folder structure.
+Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a ***Power BI Project*** (PBIP). As a project, report and dataset *artifact* definitions are saved as individual plain text files in a simple, intuitive folder structure.
 
 Saving your work as a project has the following benefits:
 
@@ -76,11 +74,11 @@ Dataset and Report subfolders each have default git ignored files specified in .
 
 ##### \<project name>.pbip
 
-Opening a PBIP opens the targeted report and model for authoring. It also opens the dataset if the report contains a *byPath* dataset reference.
+Opening a PBIP opens the targeted report and model for authoring.
 
 ## Changes outside Power BI Desktop
 
-When saved as a project, you're not forced into making changes to your dataset and report definitions only in Power BI Desktop. You can use other tools such as VSCode, Tabular Editor, or even Notepad. However, not every file or change supports editing by external, open-source tools.
+When saved as a project, you're not forced into making changes to your dataset and report definitions only in Power BI Desktop. You can use other tools such as VSCode, open-source community tools like Tabular Editor, or even Notepad. However, not every file or change supports editing by external, open-source tools.
 
 Changes to files or properties outside of Power BI Desktop can cause unexpected errors, or even prevent Power BI Desktop from opening. In those cases, you must resolve the issues in the files before trying to open the project again in Power BI Desktop.
 

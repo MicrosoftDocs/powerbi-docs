@@ -26,7 +26,7 @@ With Git integration, you can:
 
 ## Prerequisites
 
-- Be familiar with Git.
+- Be familiar with Git. See [Git and GitHub learning resources](https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources).
 - [Download](/devops/develop/git/install-and-set-up-git) and install Git.
 - [Download](https://code.visualstudio.com/) and install VS Code development environment. It has native integration with Git. To learn more, see [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview).
 
