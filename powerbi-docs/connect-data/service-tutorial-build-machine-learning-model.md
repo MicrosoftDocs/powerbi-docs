@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 02/28/2023
+ms.date: 05/31/2023
 #customer intent: "As a Power BI end user, I want to build a machine learning model so I can use machine learning with Power BI."
 LocalizationGroup: Connect to services
 ---
