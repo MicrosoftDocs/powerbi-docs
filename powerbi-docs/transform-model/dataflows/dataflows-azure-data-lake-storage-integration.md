@@ -104,6 +104,15 @@ We only write to this storage account and don't currently delete data. So even a
 > [!NOTE]
 > Dataflows allow linking or referencing tableds in other dataflows. In such dataflows, the *model.json* file can refer to another *model.json* of another dataflow in the same or other workspace.
 
+## Moving files between/within ADLS Gen 2 storage accounts
+
+When you move a dataflow from one ADLS Gen2 storage account to another, you need to make sure that the paths in the *model.json* file are updated to reflect the new location. This is because the *model.json* file contains the path to the dataflow and the path to the data. If you don't update the paths, the dataflow will not be able to find the data and causes permission errors. To update the paths, you can use the following steps:
+
+- Open the *model.json* file in a text editor.
+- Find the storage account URL and replace it with the new storage account URL.
+- Save the file.
+- Overwrite the existing *model.json* file in the ADLS Gen2 storage account.
+
 ## Extensibility for ADLS Gen 2 workspace connections
 
 If you're connecting ADLS Gen 2 to Power BI, you can do this action at the workspace or tenant level. Make sure you have the right access level. Learn more in [Prerequisites](dataflows-azure-data-lake-storage-integration.md#prerequisites).
