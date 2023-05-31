@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/18/2023
+ms.date: 05/30/2023
 ---
 
 # Power BI Report Builder change log
@@ -17,6 +17,16 @@ ms.date: 04/18/2023
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## May 2023
+
+Version 15.7.1803.54, released May 30, 2023
+
+### Features
+
+- Introduced new accessibility property that enables accessible headers to tables and Heading levels to text boxes.
+- Bug fixes
+
 
 ## April 2023
 
