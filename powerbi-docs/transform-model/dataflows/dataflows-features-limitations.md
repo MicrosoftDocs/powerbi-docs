@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/22/2023
+ms.date: 05/31/2023
 LocalizationGroup: Data from files
 ---
 # Dataflows considerations and limitations
@@ -115,6 +115,37 @@ Dataflows that exist in Premium have the following considerations and limitation
   2. The memory for Dataflows can be set to 100%, with an appropriately sized container for your data sizes, and the workload will manage the number of containers appropriately
 
 * The approximate number of containers can be found out by dividing the total memory allocated to the workload by the amount of memory allocated to a container
+
+**Unsupported connectors:**
+
+Some connectors are not supported for dataflows and datamarts in Premium workspaces. When using an unsupported connector, you may receive the following error: *Expression.Error: The import "<"connector name">"* matches no exports. Did you miss a module reference?
+
+The following connectors are not supported for dataflows and datamarts in Premium workspaces:
+
+* Linkar
+* Actian
+* AmazonAthena
+* AmazonOpenSearchService
+* BIConnector
+* DataVirtuality
+* DenodoForPowerBI
+* Exasol
+* Foundry
+* Indexima
+* IRIS
+* JethroODBC
+* Kyligence
+* MariaDB
+* MarkLogicODBC
+* OpenSearchProject
+* QubolePresto
+* SingleStoreODBC
+* StarburstPresto
+* TibcoTdv
+
+The use of the previous list of connectors with dataflows or datamarts is only supported workspaces that are not Premium.
+
+
 
 ## Dataflow usage in datasets
 

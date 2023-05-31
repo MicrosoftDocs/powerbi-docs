@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 04/26/2023
+ms.date: 05/31/2023
 LocalizationGroup: Data from files
 ---
 
@@ -83,6 +83,37 @@ The following limitations should be considered when using datamarts:
     * Japan West 
 
 Datamarts are supported in all other Azure regions.
+
+
+**Datamart connectors in Premium workspaces**
+
+Some connectors are not supported for datamarts (or dataflows) in Premium workspaces. When using an unsupported connector, you may receive the following error: *Expression.Error: The import "<"connector name">"* matches no exports. Did you miss a module reference?
+
+The following connectors are not supported for dataflows and datamarts in Premium workspaces:
+
+* Linkar
+* Actian
+* AmazonAthena
+* AmazonOpenSearchService
+* BIConnector
+* DataVirtuality
+* DenodoForPowerBI
+* Exasol
+* Foundry
+* Indexima
+* IRIS
+* JethroODBC
+* Kyligence
+* MariaDB
+* MarkLogicODBC
+* OpenSearchProject
+* QubolePresto
+* SingleStoreODBC
+* StarburstPresto
+* TibcoTdv
+
+The use of the previous list of connectors with dataflows or datamarts is only supported workspaces that are not Premium.
+
 
 
 ## Next steps
