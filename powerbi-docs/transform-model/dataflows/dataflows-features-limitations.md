@@ -28,7 +28,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 * Power BI dataflows don't support use of global variables in a URL argument.
 * Multi-Geo is currently not supported unless configuring storage to use your own Azure Data Lake Gen2 storage account.
 * Vnet support is achieved by using a gateway.
-* When using *Computed entities* with gateway data sources, the data ingestion should be performed in different data sources than the computations. The computed entities should build upon entities that are only used for ingestion, and not ingest data within their own mash-up steps.
+* When you use *Computed entities* with gateway data sources, the data ingestion should be performed in different data sources than the computations. The computed entities should build upon entities that are only used for ingestion, and not ingest data within their own mash-up steps.
 * In Power BI dataflows, you can use parameters but you can't edit them unless you edit the entire dataflow. In this regard, parameters in dataflows behave similar to declared constants.
 
 
@@ -37,7 +37,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 When authoring dataflows, users should be mindful of the following considerations:
 
 * Authoring in Dataflows is done in the Power Query Online (PQO) environment; see the limitations described in [Power Query limits](/power-query/power-query-online-limits).
-Because dataflows authoring is done in the  Power Query Online (PQO) environment, updates performed on the Dataflows workload configurations  only impact refreshes, and won't have an impact on the authoring experience
+Because dataflows authoring is done in the  Power Query Online (PQO) environment, updates performed on the Dataflows workload configurations only affects refreshes, and won't have an affect on the authoring experience
 
 * Dataflows can only be modified by their owners
 
@@ -55,7 +55,7 @@ More about supported Dataflows REST APIs can be found in the [REST API reference
 
 * Importing dataflows that contain linked tables won't fix the existing references within the dataflow (these queries should be fixed manually before importing the dataflow)
 
-* When you deploy a dataflow you can leverage the conflict handlers *GenerateUniqueName* and *Abort* parameters to either abort the operation when it already exists or instruct the API to automatically create an unique name instead
+* When you deploy a dataflow, you can use the conflict handlers *GenerateUniqueName* and *Abort* parameters to either abort the operation when it already exists or instruct the API to automatically create a unique name instead
 
 ## Dataflows in shared capacities
 
@@ -118,9 +118,9 @@ Dataflows that exist in Premium have the following considerations and limitation
 
 **Unsupported connectors:**
 
-Some connectors are not supported for dataflows and datamarts in Premium workspaces. When using an unsupported connector, you may receive the following error: *Expression.Error: The import "<"connector name">"* matches no exports. Did you miss a module reference?
+Some connectors aren't supported for dataflows and datamarts in Premium workspaces. When using an unsupported connector, you may receive the following error: *Expression.Error: The import "<"connector name">"* matches no exports. Did you miss a module reference?
 
-The following connectors are not supported for dataflows and datamarts in Premium workspaces:
+The following connectors aren't supported for dataflows and datamarts in Premium workspaces:
 
 * Linkar
 * Actian
@@ -160,7 +160,7 @@ The use of the previous list of connectors with dataflows or datamarts is only s
 When using dataflows with [named connections](/power-query/connection-authentication-pqo), the following limitations apply:
 
 * You can only create one cloud connection of a particular path and type, for example, you could only create one SQL plus server/database cloud connection. You can create multiple gateway connections.
-* You cannot name or rename cloud data sources; you can name or rename gateway connections.
+* You can't name or rename cloud data sources; you can name or rename gateway connections.
 
 
 ## ADLS limitations
