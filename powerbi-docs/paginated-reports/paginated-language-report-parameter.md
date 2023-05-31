@@ -1,5 +1,5 @@
 ---
-title: "Check culture-sensitive reports with a URL parameter in Power BI paginated reports"
+title: "View culture-sensitive reports with a URL parameter in Power BI paginated reports"
 description: Set the language locale for a Power BI paginated report created from a Power BI dataset.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,25 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 05/30/2023
+ms.date: 05/31/2023
 ---
 
-# Check culture-sensitive reports with a URL parameter in Power BI paginated reports
+# View culture-sensitive reports with a URL parameter in Power BI paginated reports
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
 
-The Language URL access parameter provides a way to check culture-sensitive paginated reports without having to change browser or operating system settings for reports with multiple culture-sensitive consumers.
+If you've created a paginated report based on a [tabular model with multiple translations](/analysis-services/tabular-models/translations-in-tabular-models-analysis-services) for names or descriptions, you want to test the different languages and cultures in the report. Instead of having to change your browser settings to different languages, you can use the Language URL access parameter to check culture-sensitive paginated reports.
 
 Consider the following authoring situation:
 
-You're a report author, and you just created a paginated report with a Power BI dataset as the source data and an unspecified [Language property](/sql/reporting-services/report-design/set-the-locale-for-a-report-or-text-box-reporting-services) set in Power BI Report Builder. The Language property on a paginated report contains the locale setting, which determines the default formats for displaying report data that differ by language and region.
+You're a report author, and you've created a paginated report with a Power BI dataset as the source data and an unspecified [Language property](/sql/reporting-services/report-design/set-the-locale-for-a-report-or-text-box-reporting-services) set in Power BI Report Builder. The Language property on a paginated report contains the locale setting, which determines the default formats for displaying report data that differ by language and region.
 
 > [!NOTE]
-> If no value is specified for Language, the paginated report uses the locale of the operating system in the Power BI service for published reports.
+> If no value is specified for Language, the paginated report uses the locale of the browser settings in the Power BI service for published reports.
 
-After you publish the report to the Power BI service, you can preview the locale in two other languages, Italian and German. You preview by adding the Language parameter to the URL.
-
-You add the Language parameter to the end of the URL, preceded by a question mark and followed by an equal sign and the country code, like this:
+After you publish the report to the Power BI service, you can preview the locale in other languages, for example, Italian and German. You preview by adding the Language parameter to the end of the URL, preceded by a question mark and followed by an equal sign and the country code, like this:
 
 ```
 ?Language=de-DE

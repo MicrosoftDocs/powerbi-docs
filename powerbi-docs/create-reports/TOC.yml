@@ -526,6 +526,8 @@
         href: ../consumer/paginated-reports-view-parameters.md
       - name: View paginated report diagnostics
         href: ../paginated-reports/paginated-reports-diagnostics.md
+      - name: Create translations in tabular models
+        href: /analysis-services/tabular-models/translations-in-tabular-models-analysis-services
       - name: Check culture-sensitive reports with a URL parameter
         href: ../paginated-reports/paginated-language-report-parameter.md
     - name: Design paginated reports
