@@ -20,8 +20,8 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
 - .pbi\
   - [localSettings.json](#pbilocalsettingsjson)
 - [CustomVisuals\\](#customvisuals)
-- [StaticResources\\](#staticresources)
-- [RegisteredResources\\](#registeredresources)
+- StaticResources\\
+  - [RegisteredResources\\](#registeredresources)
 - [datasetDiagramLayout.json](#datasetdiagramlayoutjson)
 - [definition.pbir](#definitionpbir)
 - [mobileState.json](#mobilestatejson)
