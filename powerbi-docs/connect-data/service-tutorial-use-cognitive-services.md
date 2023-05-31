@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 02/15/2023
+ms.date: 05/31/2023
 #customer intent: "As a Power BI end user, I want to use Cognitive Services, so I can use create dataflows in Power BI."
 LocalizationGroup: Connect to services
 ---
@@ -167,6 +167,8 @@ When you're done using this tutorial, delete the query by right-clicking the que
 ## Limitations
 
 There are some known issues with using Gateway with Cognitive Services. If you need to use a gateway, we recommend creating a dataflow that imports the necessary data by using a gateway first. Then create another dataflow that references the first dataflow to apply these functions.
+
+If your AI work with dataflows fails, you may need to enable Fast Combine when using AI with dataflows. Once you have imported your table and *before* you begin to add AI features, select **Options** from the Home ribbon, and in the window that appears select the checkbox beside *Allow combining data from multiple sources* to enable the feature, then select **OK** to save your selection. Then you can add AI features to your dataflow.
 
 ## Next steps
 
