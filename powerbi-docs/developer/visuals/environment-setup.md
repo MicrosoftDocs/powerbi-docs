@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 03/12/2023
+ms.date: 05/31/2023
 ms.custom: engagement-fy23
 ---
 
@@ -67,7 +67,7 @@ To develop a Power BI visual, enable the *Develop a visual* option in the Power 
 
 1. From the Power BI desktop, navigate to **File** > **Options and settings**  > **Options**
    :::image type="content" source="./media/environment-setup/desktop-options.png" alt-text="Screenshot of Options menu in the Power BI desktop.":::
-1. Scroll down to Report settings and enable the Developer Mode check box.
+1. Scroll down to Report settings in the **Current file** section, and enable the *Develop a visual* check box.
    :::image type="content" source="./media/environment-setup/desktop-developer-mode.png" alt-text="Screenshot of Developer mode enabled in Power BI desktop.":::
 1. Select **OK**
 
