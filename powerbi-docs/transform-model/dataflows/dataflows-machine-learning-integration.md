@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 05/31/2023
+ms.date: 06/01/2023
 LocalizationGroup: Data from files
 ---
 # AI with dataflows
