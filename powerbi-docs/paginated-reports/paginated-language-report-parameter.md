@@ -18,7 +18,7 @@ The Language URL access parameter provides a way to check culture-sensitive pagi
 
 Consider the following authoring situation:
 
-You're a report author, and you just created a paginated report with a Power BI dataset as the source data and an unspecified [Language property](sql/reporting-services/report-design/set-the-locale-for-a-report-or-text-box-reporting-services) set in Power BI Report Builder. The Language property on a paginated report contains the locale setting, which determines the default formats for displaying report data that differ by language and region.
+You're a report author, and you just created a paginated report with a Power BI dataset as the source data and an unspecified [Language property](/sql/reporting-services/report-design/set-the-locale-for-a-report-or-text-box-reporting-services) set in Power BI Report Builder. The Language property on a paginated report contains the locale setting, which determines the default formats for displaying report data that differ by language and region.
 
 > [!NOTE]
 > If no value is specified for Language, the paginated report uses the locale of the operating system in the Power BI service for published reports.
