@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: conceptual
-ms.date: 05/18/2023
+ms.date: 05/31/2023
 ---
 
 # Power BI Desktop projects Azure DevOps integration

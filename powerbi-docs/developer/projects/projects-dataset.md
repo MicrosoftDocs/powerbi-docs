@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: conceptual
-ms.date: 05/18/2023
+ms.date: 05/31/2023
 ---
 
 # Power BI Desktop project Dataset folder
@@ -15,7 +15,7 @@ ms.date: 05/18/2023
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-This article describes the files and subfolders in a Microsoft Power BI Desktop project's **.Dataset** folder. The files and subfolders here represent a Power BI dataset. Depending on your project, the .Dataset folder can include:
+This article describes the files and subfolders in a Microsoft Power BI Desktop project's **Dataset** folder. The files and subfolders here represent a Power BI dataset. Depending on your project, the Dataset folder can include:
 
 - .pbi\
     - [localSettings.json](#pbilocalsettingsjson)
@@ -28,7 +28,7 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
 - [item.config.json](#itemconfigjson)
 - [item.metadata.json](#itemmetadatajson)
 
-Not every project .Dataset folder includes all of the files and subfolders described here.
+Not every project Dataset folder includes all of the files and subfolders described here.
 
 ## Dataset files
 
@@ -56,17 +56,19 @@ When you select **Apply later**, the unapplied changes are saved into the unappl
 
 :::image type="content" source="media/projects-overview/pending-changes.png" alt-text="Image showing pending changes warning.":::
 
+If you select **Apply changes**, Power BI Desktop overwrites the queries in model.bim with the queries from unappliedChanges.json. If you edited queries in model.bim outside of Power BI Desktop, your changes could be lost and replaced by the queries in unappliedChanges.json.
+
 #### model.bim
 
 Contains a Tabular Model Scripting Language (TMSL) [Database object](/analysis-services/tmsl/database-object-tmsl?view=power-bi-premium-current&preserve-view=true) definition of the project model.
 
 #### definition.pbidataset
 
-Contains metadata that defines the file structure and core settings.
+Contains the overall definition of a dataset and core settings.
 
 #### diagramLayout.json
 
-Contains diagram metadata that defines the structure of the dataset associated with the report.  
+Contains diagram metadata that defines the structure of the dataset associated with the report. During **PREVIEW**, this file doesn't support external editing.  
 
 #### item.config.json
 
