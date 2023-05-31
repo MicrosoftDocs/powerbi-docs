@@ -63,7 +63,7 @@ The SQL Query editor provides support for intellisense, code completion, syntax 
 There are a few things to keep in mind about the Visual Query editor:
 * You can only write DQL (not DDL or DML) 
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-15.png" alt-text="Screenshot of the S Q L query editor query results.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-15.png" alt-text="Screenshot of the SQL query editor query results.":::
 
 ## Analyze outside the editor
 
