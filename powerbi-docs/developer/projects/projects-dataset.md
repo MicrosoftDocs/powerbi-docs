@@ -15,7 +15,7 @@ ms.date: 05/31/2023
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-This article describes the files and subfolders in a Microsoft Power BI Desktop project's **.Dataset** folder. The files and subfolders here represent a Power BI dataset. Depending on your project, the .Dataset folder can include:
+This article describes the files and subfolders in a Microsoft Power BI Desktop project's **Dataset** folder. The files and subfolders here represent a Power BI dataset. Depending on your project, the Dataset folder can include:
 
 - .pbi\
     - [localSettings.json](#pbilocalsettingsjson)
@@ -28,7 +28,7 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
 - [item.config.json](#itemconfigjson)
 - [item.metadata.json](#itemmetadatajson)
 
-Not every project .Dataset folder includes all of the files and subfolders described here.
+Not every project Dataset folder includes all of the files and subfolders described here.
 
 ## Dataset files
 

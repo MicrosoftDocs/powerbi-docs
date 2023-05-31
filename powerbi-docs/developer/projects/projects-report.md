@@ -15,7 +15,7 @@ ms.date: 05/31/2023
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-This article describes the files and subfolders in a Microsoft Power BI Desktop project's **.Report** folder. The files and subfolders here represent a Power BI report. Depending on your project, the .Report folder can include:
+This article describes the files and subfolders in a Microsoft Power BI Desktop project's **Report** folder. The files and subfolders here represent a Power BI report. Depending on your project, the Report folder can include:
 
 - .pbi\
   - [localSettings.json](#pbilocalsettingsjson)
@@ -29,7 +29,7 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
 - [item.config.json](#itemconfigjson)
 - [item.metadata.json](#itemmetadatajson)
 
-Not every project .Report folder includes all of the files and subfolders described here.
+Not every project Report folder includes all of the files and subfolders described here.
 
 ## Report files
 
@@ -83,9 +83,9 @@ Example definition.pbir:
 
 The definition includes the `datasetReference` property, which references the dataset used in the report. The reference can be either:
 
-`byPath` - Specifies a relative path to the target dataset folder. Absolute paths are not supported. A backslash (/) is used as a folder separator. When used, Power BI Desktop also opens the dataset in full edit mode.
+`byPath` - Specifies a relative path to the target dataset folder. Absolute paths aren't supported. A backslash (/) is used as a folder separator. When used, Power BI Desktop also opens the dataset in full edit mode.
 
-`byConnection` - Specifies a remote dataset in the Power BI service by using a connection string. When a `byConnection` reference is used, Power BI Desktop does not open the dataset in edit mode.
+`byConnection` - Specifies a remote dataset in the Power BI service by using a connection string. When a `byConnection` reference is used, Power BI Desktop doesn't open the dataset in edit mode.
 
 When using a `byConnection` reference, the following properties must be specified:
 
@@ -93,7 +93,7 @@ When using a `byConnection` reference, the following properties must be specifie
 |---------|---------|
 |connectionString    |   The connection string referring to the remote dataset.      |
 |pbiModelDatabaseName     |   The remote dataset ID.      |
-|connectionType     |   Type of connection. For service remote dataset, this should be `pbiServiceXmlaStyleLive`.      |
+|connectionType     |   Type of connection. For service remote dataset, this value should be `pbiServiceXmlaStyleLive`.      |
 |pbiModelVirtualServerName    |  An internal property that should have the value, `sobe_wowvirtualserver`.       |
 
 Example using `byConnection`:
@@ -118,7 +118,7 @@ Example using `byConnection`:
 
 #### mobileState.json
 
-Contains report appearance and behavior settings when rendering on a mobile device. This file does not support external editing.
+Contains report appearance and behavior settings when rendering on a mobile device. This file doesn't support external editing.
 
 #### report.json
 
