@@ -526,6 +526,8 @@
         href: ../consumer/paginated-reports-view-parameters.md
       - name: View paginated report diagnostics
         href: ../paginated-reports/paginated-reports-diagnostics.md
+      - name: Check culture-sensitive reports with a URL parameter
+        href: ../paginated-reports/paginated-language-report-parameter.md
     - name: Design paginated reports
       items: 
       - name: Plan a report
