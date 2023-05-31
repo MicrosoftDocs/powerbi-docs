@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: conceptual
-ms.date: 05/03/2023
+ms.date: 05/31/2023
 ---
 
 # Power BI Desktop projects (PREVIEW)
@@ -61,7 +61,7 @@ A collection of files and folders that represent a Power BI report. To learn mor
 
 ##### .gitIgnore
 
-Specifies intentionally untracked files Git should ignore. Power BI Desktop writes and updates the [.gitignore](https://git-scm.com/docs/gitignore) file in the root folder when saving.
+Specifies intentionally untracked files Git should ignore. Power BI Desktop creates the [.gitignore](https://git-scm.com/docs/gitignore) file in the root folder when saving if it doesn't already exist.
 
 Dataset and Report subfolders each have default git ignored files specified in .gitIgnore:
 
@@ -74,7 +74,15 @@ Dataset and Report subfolders each have default git ignored files specified in .
 
 ##### \<project name>.pbip
 
-Opening a PBIP opens the targeted report and model for authoring.
+The PBIP file contains a pointer to a report folder, opening a PBIP opens the targeted report and model for authoring.
+
+## Open a Power BI Project
+
+You can open Power BI Desktop from the Power BI Project folder either by opening the .pbip file or the [.pbir](./projects-report.md#definitionpbir) file in the report folder. Both options open the report for editing, and the dataset (if there's a relative reference to a dataset).
+
+You can save multiple reports and datasets to the same folder. Having a separate .pbip file for each report isn't required because you can open each report directly from the .pbir within the report folder.
+
+:::image type="content" source="media/projects-overview/pbip-files-reports.png" alt-text="Screengrab showing Power BI Project files with multiple report folders":::
 
 ## Changes outside Power BI Desktop
 
@@ -143,7 +151,7 @@ With JSON schemas, you can:
 - Improve authoring with syntax highlighting and autocomplete.
 - Use external tools with knowledge of supported properties within project metadata.
 
-JSON schemas for project files are provided in the [Power BI Desktop samples Git repo](https://github.com/microsoft/powerbi-desktop-samples). **\<<Update with full path when available.\>>**
+JSON schemas for project files are provided in the [Power BI Desktop samples Git repo](https://github.com/microsoft/powerbi-desktop-samples/blob/main/item-schemas/). **\<<Update with full path when available.\>>**
 
 You can use VS Code to map JSON schemas to the files being authored, which provides validation, syntax highlighting, auto complete, and tooltips.
 
@@ -213,7 +221,7 @@ To learn more, see [Editing JSON with Visual Studio Code](https://code.visualstu
 - Sensitivity labels are not supported with Power BI projects.
 - Download PBIX isn't supported for workspaces with Git integration.
 - Diagram view is ignored when editing models in the Service.
-- When saving a PBIP to OneDrive, use the new **Save to OneDrive** experience.
+- When saving as a Power BI Project, the maximum length of the project files path is 260 characters.
 
 ## Frequently asked questions
 
