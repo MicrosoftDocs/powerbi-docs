@@ -10,7 +10,7 @@
     - name: "What is an on-premises data gateway?"
       href: service-gateway-onprem.md
     - name: "Data hub"
-      href: service-data-hub.md
+      href: /fabric/get-started/onelake-data-hub?toc=/power-bi/connect-data/toc.json&bc=/power-bi/connect-data/breadcrumb/toc.json
     - name: "Data details pages: Index"
       href: service-data-details-page.md
     - name: "Dataset details page"
