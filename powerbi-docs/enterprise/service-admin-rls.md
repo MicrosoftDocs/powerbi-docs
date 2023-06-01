@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/12/2022
+ms.date: 06/01/2023
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -156,5 +156,7 @@ If you publish your Power BI Desktop report to a [workspace](../collaborate-shar
 - [Restrict data access with row-level security (RLS) for Power BI Desktop](../enterprise/service-admin-rls.md)
 - [Row-level security (RLS) guidance in Power BI Desktop](../guidance/rls-guidance.md)
 - [Power BI implementation planning: Report consumer security planning](/power-bi/guidance/powerbi-implementation-planning-security-report-consumer-planning#enforce-data-security-based-on-consumer-identity)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- [RLS in Embedded scenarios for ISVs](../developer/embedded/embedded-row-level-security.md)
+
+Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
