@@ -854,6 +854,8 @@
         href: ../paginated-reports/report-builder/paginated-create-accessible-reports.md
       - name: Use accessibility tools to create accessible reports 
         href: ../paginated-reports/report-builder/paginated-use-accessibility-tools.md
+      - name: Improve accessibility with StructureTypeOverwrite
+        href: ../paginated-reports/report-builder/paginated-accessible-structure-type-overwrite.md
       - name: Interact with paginated reports with accessibility tools 
         href: ../paginated-reports/report-builder/paginated-consume-accessible-reports.md
     - name: Paginated reports FAQ
