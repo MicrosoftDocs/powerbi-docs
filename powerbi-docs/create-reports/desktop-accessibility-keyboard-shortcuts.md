@@ -40,6 +40,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Move focus backward in a section | **Shift + Tab** |
 | Select or clear selection of an object | **Enter** or **spacebar** |
 | Multi-select objects | **Ctrl + spacebar** |
+| Keytips to navigate and select ribbon buttons | **Alt** |
 
 ## On visual
 
