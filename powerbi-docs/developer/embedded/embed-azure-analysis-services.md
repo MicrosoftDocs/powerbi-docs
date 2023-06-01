@@ -146,6 +146,8 @@ Define the user identity and roles for one of the following scenarios:
         datasets: new List<string>{ datasetId.ToString()}
       );
   ```
+    >[!NOTE]
+    >`customData` in the embed token cannot be larger than 1,024 characters.
 
 Use the effective identity to generate an embed token:
 

@@ -48,7 +48,6 @@ For instructions on how to embed reports or other items, go to the link that bes
 
 * Assigning users to roles within the Power BI service doesn't affect RLS or OLS when using an embed token (*App owns data* scenario only).
 * Although RLS settings don't apply to admins, members, or contributors, when you supply an identity with an embed token, the RLS permissions of that identity will be applied to the data.
-* In Power BI Embedded, the [CUSTOMDATA](/dax/customdata-function-dax) DAX function has a 1,024 character limit.
 
 ## Next steps
 
