@@ -1,7 +1,7 @@
 ---
 title: "Use StructureTypeOverwrite to improve accessibility in Power BI paginated reports | Microsoft Docs"
-description:  Learn about Power BI Report Builder accessibility features that help you create a paginated report that's inclusive and usable by all.
-ms.date: 05/31/2023
+description:  Learn about using the StructureTypeOverwrite property to improve accessibility in paginated reports.
+ms.date: 056/01/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -13,9 +13,9 @@ ms.reviewer: cookiemccray
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)] 
 
-The StructureTypeOverwrite property has been added to the RDL model. You can use it to improve accessibility in paginated reports in Microsoft Report Builder and Power BI Report Builder. It's also respected by Report Viewer in Power BI Report Server. 
+The StructureTypeOverwrite property has been added to the .rdl model. You can use it to improve accessibility in paginated reports in Microsoft Report Builder and Power BI Report Builder. Report Viewer also respects the property in Power BI Report Server.
 
-There are 2 different options how you can use this new property:
+There are two different options how you can use this new property:
 
 - To set heading levels H1 through H6 for text boxes.
 - To specify table cells as table headers.  
@@ -38,7 +38,7 @@ The screen reader preview shows that the report has no structure:
 
 :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-screen-reader-preview-before.png" alt-text="screen reader no structure.":::
 
-After setting the new property, you can transform the PDF structure into this:  
+After setting the new property, you can transform the PDF structure into this logical structure:  
 
 :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-logical-structure-after.png" alt-text="added logical structure.":::
 
@@ -52,7 +52,7 @@ New screen reader preview:
 
 ## Heading level for text boxes 
 
-In Report Builder, you can set the heading level for any text box, including text boxes that are placed inside a *tablix*. Tables and matrixes are both examples of tablixes.
+In Report Builder, you can set the heading level for any text box, including text boxes that are placed inside a *tablix*. Tables and matrixes are both examples of *tablixes*.
 
 The default value is *None*. Here are the available values:  
 
@@ -85,15 +85,15 @@ You can set the heading value in two different ways:
 
 ### Benefits of headings
 
-- Screen readers announce headings are announced as “Heading level 1”, “Heading level 2”, and so on.
-- Users can press the shortcut <kbd>H</kbd> key to jump to the next header in a report, when you're viewing report in Power BI Report Server.
+- Screen readers announce headings are announced as "Heading level 1", "Heading level 2", and so on.
+- Users can press the shortcut <kbd>H</kbd> key to jump to the next header in a report, when you're viewing reports in Power BI Report Server.
 - Headings are marked correctly in tagged PDF.
 
 ## Set header cells for tables in Report Builder
 
-You can set a value for any cell on Table, and for *regular* cells in matrixes, that is, any cell that isn't in the top row or in the left column.  
+You can set a value for any cell in a table, and for *regular* cells in matrixes, that is, any cell that isn't in the top row or in the left column.  
 
-The default value is *None*. These are the available values:  
+The default value is *None*. Here are the available values:  
 
 - None 
 - ColumnHeaderCell 
@@ -102,7 +102,7 @@ The default value is *None*. These are the available values:
 
 ### Set a value for a single cell
 
-1. Select a cell in a tablix. It should be outlined in a bold lines.
+1. Select a cell in a tablix. It should be outlined in a bold line.
 1. Right-click and select **Cell Properties**.
 
     :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-tablix-cell-properties.png" alt-text="tablix cell properties.":::
@@ -120,7 +120,7 @@ The default value is *None*. These are the available values:
 
 ### Set a value for a whole row
 
-1. Select inside a table
+1. Select inside a table.
 1. Select the gray rectangle next to the row you want to set property for and select **Row Properties**.
 
     :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-select-row.png" alt-text="select row properties.":::
@@ -133,11 +133,11 @@ The default value is *None*. These are the available values:
 
 - You can't set this property for cells in the property grid. When you select a table cell, the properties in the grid are related to the text box, and not to the cell. When you select a table cell, in the property grid you see Heading1 through Heading6 options. They're associated with the text box of this cell, and not the cell itself.  
 - You can't set this property can't be set for the top row or the left column of a matrix. For a matrix, the top row and left column headers are set automatically.
-- You can set a column header cell as well as a row header cell.  
+- You can set a column header cell and a row header cell.  
 
 ### Benefits of setting cell values
 
-- Screen readers announce table headers as “Header”.
+- Screen readers announce table headers as "Header".
 - Some screen readers (for example, NVDA) can announce related header titles when reading data cell values, which is important for users that rely on screen readers. 
 - Table headers are marked correctly in tagged PDF, and associated with data cells. 
 
