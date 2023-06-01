@@ -5035,7 +5035,13 @@
             "source_path": "powerbi-docs/enterprise/service-admin-power-bi-security-lockbox.md",
             "redirect_url": "/fabric/security/security-lockbox",
             "redirect_document_id": false
-        }                                                                                                                                                 
+        }
+        ,
+        {
+            "source_path": "powerbi-docs/connect-data/service-data-hub.md",
+            "redirect_url": "/fabric/get-started/onelake-data-hub?toc=/power-bi/connect-data/toc.json&bc=/power-bi/connect-data/breadcrumb/toc.json",
+            "redirect_document_id": false
+        }                                                                                                                                                                                                      
   ]          
 
 }

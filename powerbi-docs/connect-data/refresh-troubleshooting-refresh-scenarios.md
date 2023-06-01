@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 02/01/2023
+ms.date: 05/31/2023
 LocalizationGroup: Data refresh
 ---
 
@@ -116,6 +116,36 @@ This error indicates you have too many datasets running refresh at the same time
 *Node level limit exceeded.*
  
 This error indicates a system error in Power BI Premium based on datasets residing on a given physical node. You can retry the refresh operation, or reschedule the refresh time to address this error.
+
+## Dataflows or datamart failures in Premium workspaces
+
+Some connectors are not supported for dataflows and datamarts in Premium workspaces. When using an unsupported connector, you may receive the following error: *Expression.Error: The import "<"connector name">"* matches no exports. Did you miss a module reference?
+
+The following connectors are not supported for dataflows and datamarts in Premium workspaces:
+
+* Linkar
+* Actian
+* AmazonAthena
+* AmazonOpenSearchService
+* BIConnector
+* DataVirtuality
+* DenodoForPowerBI
+* Exasol
+* Foundry
+* Indexima
+* IRIS
+* JethroODBC
+* Kyligence
+* MariaDB
+* MarkLogicODBC
+* OpenSearchProject
+* QubolePresto
+* SingleStoreODBC
+* StarburstPresto
+* TibcoTdv
+
+The use of the previous list of connectors with dataflows or datamarts is only supported workspaces that are not Premium.
+
 
 ## Next steps
 

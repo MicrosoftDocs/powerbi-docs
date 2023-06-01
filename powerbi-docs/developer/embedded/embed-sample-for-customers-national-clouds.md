@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
-ms.custom: devx-track-js
+ms.custom:
 ms.date: 03/07/2023
 ---
 
