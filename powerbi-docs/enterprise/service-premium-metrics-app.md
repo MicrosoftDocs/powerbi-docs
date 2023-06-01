@@ -268,15 +268,15 @@ Displays the breakdown of the metric selected in the pivot at the top, in the pa
 
 ### Duration
 
-Each column represents the number of seconds it took to compete a single operation per hour, over a 14 day period.
+Each column represents the number of seconds it took to complete a single operation per hour, over a 14 day period.
 
 ### CPU
 
-Each column represents the number of CPU seconds used to compete a single operation per hour, over a 14 day period.
+Each column represents the number of CPU seconds used to complete a single operation per hour, over a 14 day period.
 
 ### Operations
 
-Each column represents the number of seconds it took to compete a single operation per hour, over a 14 day period.
+Each column represents the number of seconds it took to complete a single operation per hour, over a 14 day period.
 
 ### Refresh detail
 
