@@ -63,7 +63,9 @@
       - name: "Optimize ribbon overview"
         href: desktop-optimize-ribbon.md
       - name: "DirectQuery optimization scenarios"
-        href: desktop-optimize-ribbon-scenarios.md          
+        href: desktop-optimize-ribbon-scenarios.md    
+    - name: "OneDrive integration"
+      href: desktop-sharepoint-save-share.md
     - name: "Work with Report view"
       href: desktop-report-view.md
     - name: "Updated Format and Visualizations panes"
@@ -194,6 +196,8 @@
       href: desktop-templates.md      
     - name: "Change report settings"
       href: power-bi-report-settings.md
+    - name: "Set visual query limits"
+      href: desktop-set-visual-query-limits.md
     - name: "Feature reports on others' Home pages"
       href: ../collaborate-share/service-featured-content.md
     - name: "Interact with a report in Editing view"
@@ -286,6 +290,8 @@
       items: 
       - name: "Get started with Azure Maps visual"
         href: /azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context
+      - name: "Convert maps and filled maps to Azure Maps visuals"
+        href: /azure/azure-maps/power-bi-visual-conversion?context=/power-bi/create-reports/context/context
       - name: "Layers in the Azure Maps visual"
         href: /azure/azure-maps/power-bi-visual-understanding-layers?context=/power-bi/create-reports/context/context
       - name: "Add a bubble layer"
@@ -840,6 +846,16 @@
         href: ../paginated-reports/report-design/render-data-report-builder-service.md
       - name: "Render report items in paginated reports"
         href: ../paginated-reports/report-design/render-report-items-report-builder-service.md
+    - name: Paginated report accessibility 
+      items:
+      - name: Accessibility in paginated reports 
+        href: ../paginated-reports/report-builder/paginated-accessibility-overview.md
+      - name: Accessibility features in paginated reports
+        href: ../paginated-reports/report-builder/paginated-create-accessible-reports.md
+      - name: Use accessibility tools to create accessible reports 
+        href: ../paginated-reports/report-builder/paginated-use-accessibility-tools.md
+      - name: Interact with paginated reports with accessibility tools 
+        href: ../paginated-reports/report-builder/paginated-consume-accessible-reports.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
     - name: Paginated reports capacity planning

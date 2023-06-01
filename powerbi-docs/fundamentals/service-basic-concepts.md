@@ -38,7 +38,7 @@ We'll dig into these features later, but first let's review some Power BI concep
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/B2vd4MQrz4M]
 
 ## Power BI concepts
 
@@ -299,3 +299,5 @@ This area of the screen contains more options for interacting with the content (
 - [Power BI videos](videos.md)  
 - [Tour the report editor in Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/)
+
+

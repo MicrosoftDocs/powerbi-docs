@@ -121,3 +121,8 @@
         href: service-admin-portal-insights.md
       - name: Quick measure suggestions settings
         href: service-admin-portal-quick-measure-suggestions-settings.md
+  - name: Capacity settings
+    expanded: false
+    items:
+    - name: Notifications
+      href: service-admin-premium-capacity-notifications.md
