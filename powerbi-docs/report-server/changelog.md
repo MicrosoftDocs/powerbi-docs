@@ -39,7 +39,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             
 ### Power BI Desktop (optimized for Power BI Report Server)
 
-*Version: 2.117.286.0(May 2023), Released: May 26, 2023*
+*Version: 2.117.984.0(May 2023), Released: May 26, 2023*
 
 - Support for May 2023 Power BI Report Server
 - Bug fixes
