@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/13/2023
+ms.date: 05/19/2023
 LocalizationGroup: Visualizations
 ---
 # Use on-object interaction with visuals in your report (preview)
@@ -35,12 +35,15 @@ You can begin building a new visual in one of three ways.
 
 - Select or drag fields from the Data pane.
 - Select a new visual from the **Insert** section of the ribbon, and then add fields. If you have the ribbon collapsed, select **Visual gallery** > select a visual.
+
+    :::image type="content" source="media/power-bi-on-object-interaction/on-object-ribbon-visualization-gallery.png" alt-text="Screenshot of how to insert a visual from the Visual gallery.":::
+
 - Right-click the canvas > **Add visual** or **Paste**.
 
 You notice the Visualizations pane is no longer available, by design. The updated [Format and Visualizations panes in Power BI](../fundamentals/desktop-format-pane.md) article has details.
 
 > [!NOTE]
-> Custom visuals aren't currently shown in the ribbon gallery collapsed tray, but they're available from the dropdown.
+> Custom visuals are shown in the ribbon visualization gallery, along with the other visuals.
 
 As you add fields, the visual type updates dynamically based on what Power BI believes is the best visual type for your data. If you want to change the visual type manually, select the **Build a visual** button and select a visual in the **Visual types** tray. Selecting a visual type yourself turns off the automatic **Suggest a type** toggle.
 
@@ -53,6 +56,18 @@ If you prefer to see all the field wells as before, turn off the **Suggest a typ
 > [!TIP]
 > You can also turn this toggle off by default as well as pinning the full visualization gallery tray open. Select **File** > **Options and settings** > **Options** > **Report settings**, and clear the **Suggest a visual type by default** check box.
 
+### Add aggregations
+
+After adding a data field to your visual, select the aggregation you want from the Aggregations dropdown.
+
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-aggregation.png" alt-text="Screenshot of how to elect the aggregation you want.":::
+
+### Change the type of visual
+
+You can also change the type of a visual. Select the visual, and in the ribbon visualization gallery, select a different visual.
+
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-ribbon-visualization-gallery.png" alt-text="Screenshot showing changing the visualization type.":::
+
 ## Format a visual on object
 
 The default behavior when you hover over a visual is to see tooltips, and clicking around a visual, you get the cross-highlight and cross-filter effect. To avoid conflicting with this existing behavior, we introduced a new *format* mode. When you're in format mode, the hover and click behavior changes to show subselection regions.  
@@ -64,7 +79,9 @@ You enter format mode in one of two ways:
 
 You know you’re in this new mode when the bounding box turns blue, the handle shapes turn to squares, and the hover and click behavior changes to show subselection regions.
 
-Now you can hover and click around in the visual to format specific subselections. Right-click the selected element to use the mini-toolbar and shortcut menu.
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-format-donut-slices.png" alt-text="Screenshot showing on-object formatting for a donut chart.":::
+
+You can hover and click around in the visual to format specific subselections. Right-click the selected element to use the mini-toolbar and shortcut menu.
 
 :::image type="content" source="media/power-bi-on-object-interaction/mini-toolbar-shortcut-menu.png" alt-text="Screenshot showing mini-toolbar formatting options.":::
 
@@ -87,7 +104,7 @@ When selecting an element that's very close or overlapping another, Power BI tak
 
 ### Supported visuals for on-object formatting
 
-- On-object formatting is currently supported for bar, column, line, area, combo, scatter, and card visuals. Small multiples aren't currently supported.
+- On-object formatting is currently supported for bar, column, line, area, combo, scatter, card, pie, donut, and table visuals. Small multiples aren't currently supported.
 - Format mode isn't currently supported in mobile layout.
 - Format mode isn't currently supported in focus mode.
 
@@ -108,8 +125,7 @@ When selecting an element that's very close or overlapping another, Power BI tak
 
 ### Custom visuals
 
-- We plan to release an API for custom visual developers to be able to define sub-selection regions within their visuals.  
-- To find custom visuals using the new visualization gallery in the ribbon, you must expand the full dropdown.
+We plan to release an API for custom visual developers to be able to define sub-selection regions within their visuals.  
 
 ### Accessibility
 

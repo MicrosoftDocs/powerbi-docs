@@ -20,6 +20,8 @@
       href: desktop-getting-started.md
     - name: "Get started with the Power BI service"
       href: service-get-started.md
+    - name: "Get started with Microsoft Fabric and Power BI"
+      href: fabric-get-started.md      
   - name: Concepts
     expanded: true
     items: 

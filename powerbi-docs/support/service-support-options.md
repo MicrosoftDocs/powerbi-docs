@@ -1,63 +1,71 @@
 ---
-title: Power BI Pro and Power BI Premium support options
-description: This article describes how users of Power BI Pro and Power BI Premium can access self-service and assisted support options.
-author: kfollis
+title: Power BI Pro, Power BI Premium, and Fabric support options
+description: This article describes how users of Power BI Pro, Power BI Premium, and Fabric can access self-service and assisted support options.
+author: mihart
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting
-ms.date: 12/01/2022
+ms.date: 05/10/2023
 ---
 
-# Power BI support options
+# Fabric and Power BI support options
 
-This article describes the support options that are available to customers who have purchased Power BI Pro, Power BI Premium Per User, and Power BI Premium. Power BI Administrators and other admins in your organization have access to expanded support options. Read [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) to learn more about who can manage service requests for your organization.
+This article describes the support options that are available to end users who have purchased Microsoft Fabric or Power BI. Power BI administrators and other admins in your organization have access to expanded support options. Read [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) to learn more about who can manage service requests for your organization. To learn about Microsoft Fabric (Preview) for administrators, see [Microsoft Fabric admin](/fabric/admin/microsoft-fabric-admin).
 
-## Get started with support for end users
+## Get started with support
 
-If you're an end user, you can contact support directly if you have a Power BI Pro or Power BI Premium Per User license. But, your administrator might prefer you take a different route to get help. Before you contact support, check these requirements:
+Many resources are available to help you identify, research, and solve issues.  From the top menu bar, select the **?** **> Get Help** to open the Fabric and Power BI Support site. The [Fabric and Power BI support site](https://blog.fabric.microsoft.com/support) has links to documentation, Community, known issues, troubleshooting, and a Support dashboard. If you Fabric or if you have a paid version of Power BI, options to contact Microsoft Support directly are available from the **Help and support** site. 
 
-1. Find out which license you have. To quickly check whether you're eligible to contact support, select your profile picture from the page header in the [Power BI service](https://app.powerbi.com). If **Pro account** or **Premium Per User account** is displayed, you might use the following listed support options. Select **View account** to see more details about your account.
+> [!Note] 
+> If you got your Power BI Pro or Premium-per-user (PPU) license through a guest affiliation with another organization, you can't contact support. Your license must be assigned directly by the organization that manages your work or school account to enable support options.
 
-   :::image type="content" source="media/service-support-options/license-type.png" alt-text="Screen capture showing license type displayed with account profile.":::
-
-   > [!NOTE]
-   >If you got your Power BI Pro or Power BI Premium Per User license through a guest affiliation with another organization, you can't contact support. Your license must be assigned directly by the organization that manages your work or school account to enable support options.
-
-2. Verify whether Power BI support is your admin's preferred option when you need help. To check, select (**?**) from the page header in the Power BI service, then choose **Help & Support > About Power BI**. If this selection takes you to Power BI support, you might use the following listed support options. Otherwise, you'll be directed to the preferred support option for your organization. If your product doesn't have a support contract, you'll receive a message that "This product is not supported."
-
-   :::image type="content" source="media/service-support-options/support-menu.png" alt-text="Screen capture showing help menu with Get help selected.":::
-
-## Get started with support for admins
+## Get started with support for administrators
 
 > [!TIP]
 >Need help getting started with Power BI? Take advantage of the [one-hour workshops offered by our partners and get a free consultation](https://appsource.microsoft.com/marketplace/consulting-services?search=Onehourfreeconsultingoffer).
 
-Admins can use the **Help + support** experience in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) to get self-help solutions and to create a new service request. Before you contact Microsoft support, you should follow these steps:
+Admins can use the **Help + support** experience in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) to get self-help solutions and to create a new service request. Before you contact Microsoft support, follow these steps:
 
-* Check for known service outages or degradation at [Power BI Support](https://support.powerbi.com).
-
-* To check for known issues with Power BI features, see [Power BI known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues).
-
-* Look for any notifications about Power BI in the [Microsoft 365 service health dashboard](https://admin.microsoft.com/#/servicehealth).
-
+* Check for service outages or degradation at [Fabric Support](https://support.fabric.microsoft.com).
+* Check for [known issues with Power BI or Fabric features](https://blog.fabric.microsoft.com/known-issues).
+* Look for any notifications about Power BI or Fabric in the [Microsoft 365 service health dashboard](https://admin.microsoft.com/#/servicehealth).
 * Check [Microsoft 365 message center](https://admin.microsoft.com/#/MessageCenter) to make sure there are no planned maintenance activities affecting your experience.
 
-* [Capture diagnostic information from the Power BI service](service-admin-capturing-additional-diagnostic-information-for-power-bi.md) that you can attach to your service request.
+* [Capture diagnostic information from the Power BI or Fabric service](service-admin-capturing-additional-diagnostic-information-for-power-bi.md) or Fabric service that you can attach to your service request.
 
 Learn more about how admins can [contact support for help with Microsoft 365 business products](/microsoft-365/admin/contact-support-for-business-products).
+
+## Before you contact support
+
+Verify whether Microsoft support is your admin's preferred option when you need help. To check, select (**?**) from the page header in the Power BI service, then choose **Get Help**. If this selection takes you to Power BI support, you might use the following listed support options. Otherwise, you'll be directed to the preferred support option for your organization. If your product doesn't have a support contract, you'll receive a message that "This product is not supported."
+
+![Help_pane2](media/service-support-options/help-pane2.png)
+
+If Microsoft support is your admin's preferred option:
+
+1. Check for service outages or degradation at [Power BI and Fabric Support](https://support.fabric.microsoft.com).
+2. Check for [known issues with Power BI or Fabric features](https://support.fabric.com/known-issues). 
+1. See if your issue has already been addressed by the [Community](https://community.fabric.com).
+
+1. Review the [Fabric troubleshooting documentation ](/fabric/get-started/)or the [Power BI troubleshooting documentation](/power-bi/troubleshoot/).
+
+5. Find out which license you have. Select your profile picture from the page header to open your Account manager. For Power BI, if **Pro account** or **Premium Per User account** displays, you might use the following listed support options. For Fabric, all users might use the following listed support options.
+
+   :::image type="content" source="media/service-support-options/license-type.png" alt-text="Screen capture showing license type displayed with account profile.":::  
 
 ## Connect with support
 
 | **Support option** | **Break-fix technical support** | **Billing support** | **Consulting and training** | **Service level <br>(time to initial engagement)** | **Support channel** |
 | --- | --- | --- | --- | --- | --- |
-| **Community support**: Web forums for users to get peer-to-peer support, guidance, and share solutions. Answers are provided by a global community of Power BI experts and Microsoft employees. | X |   |   | None, engagement is provided on a best-effort basis. | [Power BI Community](https://community.powerbi.com) |
-| **Power BI Pro end-user support**: Basic technical support for end users creating and consuming content in Power BI. | X |   |   | One business day. | [Power BI support](https://support.powerbi.com)  |
-| **Power BI Premium Per User end-user support**: Technical and billing support for end users creating and consuming content in Power BI. | X | X |  | One business day. | [Power BI support](https://support.powerbi.com)  |
-| **Power BI Premium admin support**: Technical support for administrators deploying and operating Power BI Premium capacities. | X |   |   | One business day or one hour, depending on severity of case.\* | [Power BI support](https://support.powerbi.com)<br>OR<br>[Power Platform admin center](https://admin.powerplatform.microsoft.com/support) |
-| **Power BI admin support**: Technical and billing support for administrators of Power BI deployments at their organizations. To use this option, you must be a Power BI Administrator or be assigned a Microsoft 365 admin role that can manage service requests. | X | X |   | One business day or one hour, depending on severity of case.\* | [Power Platform admin center](https://admin.powerplatform.microsoft.com/support) |
-| **Microsoft Premier support**: An enterprise-grade approach to support, with account management, the option for on-site support, and services such as training and data model performance optimization. | X | X | X | Various, depending on offering and severity of case.\* | Customer Success Account Manager <br>OR<br> [Power Platform admin center](https://admin.powerplatform.microsoft.com/support) |
+| **Community support**: Web forums for users to get peer-to-peer support, guidance, and share solutions. Answers are provided by a global community of Power BI experts and Microsoft employees. | X |   |   |None, engagement is provided on a best-effort basis. | [Power BI Community](https://community.powerbi.com) |
+| **Power BI Pro end-user support**: Basic technical support for end users creating and consuming content in Power BI. | X |   |   |One business day. | [Fabric support](https://support.fabric.microsoft.com)  |
+| **Power BI Premium Per User end-user support**: Technical and billing support for end users creating and consuming content in Power BI. | X | X |  |One business day. | [Fabric support](https://support.fabric.microsoft.com)  |
+|**Fabric user**: technical and billing support for users creating in Fabric in Fabric capacities.|X|X | |One business day |[ Fabric support](https://support.fabric.microsoft.com)|
+|**Fabric or Power BI Premium admin support**: Technical support for administrators deploying and operating Power BI Premium capacities. | X |   |   |One business day or one hour, depending on severity of case.\* | [Fabric support](https://support.fabric.microsoft.com)<br>OR<br>[Power Platform admin center](https://admin.powerplatform.microsoft.com/?IsFabricRedir=True) |
+|**Fabric or** **Power BI admin support**: Technical and billing support for administrators of Power BI deployments at their organizations. To use this option, you must be a Power BI Administrator or be assigned a Microsoft 365 admin role that can manage service requests. | X | X |   |One business day or one hour, depending on severity of case.\* | [Power Platform admin center](https://admin.powerplatform.microsoft.com/?IsFabricRedir=True) |
+| **Microsoft Premier support**: An enterprise-grade approach to support, with account management, the option for on-site support, and services such as training and data model performance optimization. | X | X | X | Various, depending on offering and severity of case.\* | Customer Success Account Manager <br>OR<br> [Power Platform admin center](https://admin.powerplatform.microsoft.com/?IsFabricRedir=True) |
 | | | | | | |
 
 \* A one-hour SLA is available only through _Sev A cases_, which require justification of immediate, direct business impact from work stoppage in existing production reporting.
@@ -93,3 +101,9 @@ Contact your Microsoft Customer Account Manager for details. If you don't alread
 
 * [Help and support tenant settings](service-admin-portal-help-support.md)
 * [Find the right Power BI training for you](/training/powerplatform/power-bi?WT.mc_id=powerbi_docs-link)
+
+
+
+```
+
+```
