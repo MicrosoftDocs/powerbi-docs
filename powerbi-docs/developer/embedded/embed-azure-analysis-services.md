@@ -7,7 +7,7 @@ ms.reviewer: sabre
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 08/21/2022
+ms.date: 06/01/2023
 ---
 
 # Embed a report with an Azure Analysis Services (AAS) database
@@ -99,6 +99,9 @@ There is no need to define any effective identity.
       )
   ```
 
+    >[!NOTE]
+    >`customData` in the embed token cannot be larger than 1,024 characters.
+
 Use the effective identity to generate an embed token:
 
 ```csharp
@@ -146,6 +149,7 @@ Define the user identity and roles for one of the following scenarios:
         datasets: new List<string>{ datasetId.ToString()}
       );
   ```
+
     >[!NOTE]
     >`customData` in the embed token cannot be larger than 1,024 characters.
 
