@@ -114,29 +114,30 @@ Not every model object or change support write operations. Applying changes outs
 
 Objects and operations that support write operations:
 
-| Object / Operation            | Change using AS Instance   | File Change |
-|-------------------------------|-------------------------|-------------|
-| Measures                      | Y                       | Y           |
-| Calculation groups            | Y                       | Y           |
-| Perspectives                  | Y                       | Y           |
-| Translations                  | Y                       | Y           |
-| Object Level Security (OLS)   | Y                       | Y           |
-| Model KPIs                    | Y                       | Y           |
-| Detail rows on measures       | Y                       | Y           |
-| Tables                        | N                       | Y           |
-| M expressions                 | N                       | Y           |
-| Relationships                 | Y                       | Y           |
-| Calculated columns & tables   | Y                       | Y           |
-| Format strings & descriptions | Y                       | Y           |
-| Renaming columns & tables     | N                       | Y           |
-| Changing data types           | Y                       | Y           |
-| Annotations                   | Y                       | Y           |
+| Object / Operation            | Change using AS Instance  | File Change |
+|-------------------------------|---------------------------|-------------|
+| Measures                      | Yes                       | Yes           |
+| Calculation groups            | Yes                       | Yes           |
+| Perspectives                  | Yes                       | Yes           |
+| Translations                  | Yes                       | Yes           |
+| Row Level Security (RLS)      | Yes                       | Yes           |
+| Object Level Security (OLS)   | Yes                       | Yes           |
+| Model KPIs                    | Yes                       | Yes           |
+| Detail rows on measures       | Yes                       | Yes           |
+| Tables                        | No                        | Yes           |
+| M expressions                 | No                        | Yes           |
+| Relationships                 | Yes                       | Yes           |
+| Calculated columns & tables   | Yes                       | Yes           |
+| Format strings & descriptions | Yes                       | Yes           |
+| Renaming columns & tables     | No                        | Yes           |
+| Changing data types           | Yes                       | Yes           |
+| Annotations                   | Yes                       | Yes           |
 
 Keep in mind:
 
 - Any changes made outside Power BI Desktop requires a restart for those changes to be to be shown in Power BI Desktop. Power BI Desktop isn't aware of changes to the files made by other tools.
 - Power BI Desktop doesn’t support tables with multiple partitions. Only a single partition for each table is supported. Creating more than one partition results in an error when opening the report.
-- If the dataset has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't  automatically generated.
+- If the dataset has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't automatically generated.
 - Automatic date tables created by Power BI Desktop should not be changed by using external, open-source tools.
 - For changes to a composite model made outside Power BI Desktop, you must add the changed property names to the ChangedProperties collection of the changed object.  If not, with a schema sync, Power BI Desktop discards those changes and overwrites with the state of the remote model.
 
