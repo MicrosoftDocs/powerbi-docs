@@ -172,7 +172,11 @@ When you're finished adding relationships and DAX measures, you can then create 
 
 ## Refresh
 
-By default, data changes in OneLake are automatically reflected in a Direct Lake dataset. You can change this behavior by disabling the **Keep your Direct Lake data up to date** setting in the dataset settings. You may want to disable if, for example, you need to allow completion of data preparation jobs before exposing any new data to consumers of the dataset. When disabled, you can invoke refresh manually or by using the refresh APIs. Invoking a refresh for a Direct Lake dataset is a low cost operation where the dataset analyzes the metadata of the latest version of the Delta Lake table and is updated to reference the latest files in the OneLake.
+By default, data changes in OneLake are automatically reflected in a Direct Lake dataset. You can change this behavior by disabling **Keep your Direct Lake data up to date** in the dataset's settings.
+
+:::image type="content" source="media/directlake-overview/direct-lake-refresh.png" alt-text="Direct Lake refresh in dataset settings":::
+
+You may want to disable if, for example, you need to allow completion of data preparation jobs before exposing any new data to consumers of the dataset. When disabled, you can invoke refresh manually or by using the refresh APIs. Invoking a refresh for a Direct Lake dataset is a low cost operation where the dataset analyzes the metadata of the latest version of the Delta Lake table and is updated to reference the latest files in the OneLake.
 
 ## Analyze query processing
 
