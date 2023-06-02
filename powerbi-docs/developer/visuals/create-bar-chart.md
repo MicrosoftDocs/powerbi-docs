@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 10/12/2022
+ms.date: 05/31/2023
 ---
 
 # Tutorial: Build a bar chart
@@ -66,7 +66,7 @@ The purpose of this tutorial is to help you understand how a visual is structure
 
     Your final *tsconfig.json* file should look like [this](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/tsconfig.json).
 
-4. The [*package.json*](visual-project-structure.md#packagejson) file contains a list of project dependencies. Replace your *project.json* file with [this one](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/package.json).
+4. The [*package.json*](visual-project-structure.md#packagejson) file contains a list of project dependencies. Replace your *package.json* file with [this one](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/package.json).
 
 ## [Clone source code](#tab/CloneSourcecode)
 

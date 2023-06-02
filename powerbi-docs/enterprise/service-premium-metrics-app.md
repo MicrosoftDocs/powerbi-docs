@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/25/2023
+ms.date: 06/01/2023
 LocalizationGroup: Premium 
 ---
 
@@ -268,15 +268,15 @@ Displays the breakdown of the metric selected in the pivot at the top, in the pa
 
 ### Duration
 
-Each column represents the number of seconds it took to compete a single operation per hour, over a 14 day period.
+Each column represents the number of seconds it took to complete a single operation per hour, over a 14 day period.
 
 ### CPU
 
-Each column represents the number of CPU seconds used to compete a single operation per hour, over a 14 day period.
+Each column represents the number of CPU seconds used to complete a single operation per hour, over a 14 day period.
 
 ### Operations
 
-Each column represents the number of seconds it took to compete a single operation per hour, over a 14 day period.
+Each column represents the number of seconds it took to complete a single operation per hour, over a 14 day period.
 
 ### Refresh detail
 
