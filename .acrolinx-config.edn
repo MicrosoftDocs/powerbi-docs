@@ -1,5 +1,5 @@
 {:allowed-branchname-matches ["main" "release-.*"]
- :allowed-filename-matches ["powerbi-docs"]
+ :allowed-filename-matches ["powerbi-docs/"]
  
  :guidance-profile "1889ea46-76de-460c-a27c-6667b60e201e" ;; testing March 2023 updated guidelines - Microsoft standard.
  
