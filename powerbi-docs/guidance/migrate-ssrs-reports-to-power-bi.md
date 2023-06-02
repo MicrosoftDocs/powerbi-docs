@@ -7,7 +7,7 @@ ms.reviewer: cookiemccray
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 05/17/2023
+ms.date: 06/01/2023
 ms.custom: intro-migration
 ---
 
