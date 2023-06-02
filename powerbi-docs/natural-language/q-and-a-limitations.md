@@ -47,7 +47,7 @@ The new tooling dialog allows users to customize and improve the natural languag
 
 ## Review question limitations
 
-The review questions only store questions asked against your data model for up to 28 days. When using the new review questions capability, you may notice some questions aren't recorded. They aren't recorded by design, as the natural language engine performs a series of data cleansing steps to ensure every key stroke from a user isn't recorded or shown.
+The review questions only store questions asked against your data model for up to 28 days. When using the new review questions capability, you may notice some questions aren't recorded. They aren't recorded by design, as the natural language engine performs a series of data cleansing steps to ensure every key stroke from a user isn't recorded or shown. This limitation could be bypassed by saving (exporting) the Linguistic Schema and by importing it again after those 28 days. 
 
 Power BI administrators can use the tenant settings to manage the ability to store questions. Permissions are based on security groups. 
 
