@@ -15,7 +15,7 @@ ms.custom: template-how-to; subject-moving-resources
 > [!IMPORTANT]
 > At this time, we only offer the tenant migration service to customers with Power BI Premium capacities. We currently don't support tenant migration for Fabric. 
 
-Your default data region is determined by the location selected during sign-up. However, this region might not be optimal if most of your users are located in a different geographic location. You might want to move to another region to reduce latency or to ensure data governance. You can’t move your organization’s tenant between regions by yourself. Self-service migration of Power BI resources stored in Azure isn’t supported. If you need to change your default data location from the current region to another region, you have to contact Microsoft support to manage the migration for you.
+The location selected during sign-up determines your default data region. However, this region might not be optimal if most of your users are located in a different geographic location. You might want to move to another region to reduce latency or to ensure data governance. You can’t move your organization’s tenant between regions by yourself. Self-service migration of Power BI resources stored in Azure isn’t supported. If you need to change your default data location from the current region to another region, you have to contact Microsoft support to manage the migration for you.
 
 > [!CAUTION]
 > This article describes how to request a move between regions and keep Power BI or data. Be sure you're aware of what can’t be moved and steps you have to do before and after the region move. Moving between regions is considered a tenant migration. You can request a different process to move your tenant to another region if data loss and reconfiguration is acceptable. To determine your current data region, follow the steps in [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
@@ -28,21 +28,21 @@ Your default data region is determined by the location selected during sign-up. 
 
 ## Prepare
 
-The migration process moves all tenant data to the new region. The GUID assigned to datasets, reports, dashboards, and other content don't change. However, there are some limitations you should be aware of and preparation steps you need to take.
+The migration process moves all tenant data to the new region. The GUID assigned to datasets, reports, dashboards, and other content don't change. However, there are some limitations you should be aware of and some preparation steps you need to take.
 
 ### Awareness
 
 - **The end-to-end migration process may take up to six months**. We prioritize service reliability and deployment schedules can change, so we may need to reschedule during migration at any time. We can't guarantee successful migration due to inconsistent data or bugs.
-- During the migration process, it is possible to encounter unforeseen issues that may result in multiple failures. Please allow for multiple attempts to ensure a successful migration.
+- During the migration process, it's possible to encounter unforeseen issues that may result in multiple failures. Allow for multiple attempts to ensure a successful migration.
 
-- Migration requires about six hours of down time. During migration, users can't access Power BI and will see an error message similar to the one shown in the following screenshot. The actual down time depends on the volume of data to be migrated.
+- Migration requires about six hours of down time. During migration, users can't access Power BI and an error message similar to the one shown in the following screenshot is displayed. The actual down time depends on the volume of data to be migrated.
 
   :::image type="content" source="media\service-admin-region-move\user-error-message.png" alt-text="Screen capture showing example error message shown to users during migration.":::
 
 - Capacities and Premium workspaces can't be migrated.
 - Power BI Premium Per User (PPU) capacity will be deleted before migration starts. After the migration, PPU capacity will be recreated at first PPU user sign-in. For more information about PPU licenses, see [Power BI Premium Per User](../enterprise/service-premium-per-user-faq.yml).
 - After migration, Excel workbooks that use the Analyze in Excel feature might fail to refresh. You might need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Start in Power BI with Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) if necessary.
-- Push datasets might not be migrated. If they can't be migrated, you'll need to delete the datasets.
+- Push datasets might not be migrated. If they can't be migrated, you need to delete the datasets.
 - You have to reconfigure data gateways after migration. To learn more about this step, read [Migrate, restore, or take over an on-premises data gateway](/data-integration/gateway/service-gateway-migrate).
 - Dataset and workspace storage modes shouldn't be changed one day before the migration. Changing the storage mode before the migration can leave the datasets unusable after the migration. For more information, read [Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md) and [Manage data storage in Power BI workspaces](../admin/service-admin-manage-your-data-storage-in-power-bi.md).
 - Some usage data collected before migration is unavailable after migration. Usage data in the following sources will be lost:
@@ -52,7 +52,7 @@ The migration process moves all tenant data to the new region. The GUID assigned
    - [Usage metrics(preview)](../collaborate-share/service-modern-usage-metrics.md)
    ### Preparation steps
 
-   Our support team will work with you to verify that the following steps are done to prepare for the migration:
+   Our support team works with you to verify that the following steps are done to prepare for the migration:
 
    - We can't migrate capacities and Premium workspaces, so you have to delete all capacities before migration. After the region move, these resources can be recreated. If you move resources from a Premium workspace to a shared workspace, datasets larger than 1 GB can't be viewed until they're moved back to Premium capacity.
 
@@ -60,9 +60,9 @@ The migration process moves all tenant data to the new region. The GUID assigned
 
 - To keep user activity logs, follow the steps in [Track user activities in Power BI](../admin/service-admin-auditing.md). You can get log data from either the Power BI activity log or the Unified audit log.
 
-- All Fabric items have to be deleted individually. Deleting the capacity or workspaces will delete the Fabric's items immediately. 
+- All Fabric items have to be deleted individually. Deleting the capacity or workspaces deletes the Fabric's items immediately. 
 
-- All Fabric Trial capacities have to be deleted prior to the migration. To delete Fabric trial capacities, the users who own the trial capacity need to cancel the trial from the Me Profile at least one and a half days prior to the migration.
+- All Fabric Trial capacities have to be deleted before the migration. To delete Fabric trial capacities, the users who own the trial capacity need to cancel the trial from the Me Profile at least one and a half days before the migration.
 
 ## Request a region move
 
@@ -78,7 +78,7 @@ To find out the best way to contact support, read [Power BI support options](ser
    
    Select **See solutions** to move to the next screen.
 
-     :::image type="content" source="media\service-admin-region-move\ppac-new-support-request.png" alt-text="Screen capture showing field entries for a new support request for a region move in Power Platform Admin Center.":::
+     :::image type="content" source="media\service-admin-region-move\ppac-new-support-request.png" alt-text="Screen capture showing field entries for a new support request for a region move in the Power Platform Admin Center.":::
 
 1. Select **Next** to continue to **Select your support plan**. Choose your support plan. Add a description and include the information in the following table:
 
@@ -97,16 +97,16 @@ Our support team will be in touch. The support team makes sure you're authorized
 
 Be sure to provide contact details for someone who can act as the point of contact for Support. The contact has to be available after business hours.
 
-Support will review the submitted information, including your tenant object ID, current data region, and target data region. After details are confirmed, we'll coordinate the proposed migration time frame with you.
+Support reviews the submitted information, including your tenant object ID, current data region, and target data region. After details are confirmed, we coordinate the proposed migration time frame with you.
 
 ## During the region move
 
 - Don't do any manual or scheduled refreshes until after migration is complete.
-- Support will copy your data to the new region. Power BI won't be available to users during the move.
+- Support copies your data to the new region. Power BI isn't available to users during the move.
 
 ## After the region move
 
-When migration is complete, you'll be able to access Power BI in about 20-30 minutes. Support will contact you to make sure everything is working.
+When migration is complete, you can access Power BI in about 20-30 minutes. Support contacts you to make sure everything is working.
 
 Do the following steps to recreate the configuration of the original region:
 
@@ -170,5 +170,5 @@ Yes. Because it’s a new location, the IP ranges are also changing, and the ran
 
 ### Is there a cost to have my tenant moved to a different region?
 
-No, there's no cost charged for region migration. Customers that have any paid licenses can migrate. The operation must be requested by a global administrator.
+No, there's no cost charged for region migration. Customers that have any paid licenses can migrate. A global administrator must request the operation.
 
