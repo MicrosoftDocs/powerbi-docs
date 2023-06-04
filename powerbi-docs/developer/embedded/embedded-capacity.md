@@ -12,20 +12,23 @@ ms.date: 03/09/2023
 
 # Capacity and SKUs in Power BI embedded analytics
 
-Power BI embedded analytics requires a capacity (*A*, *EM*, or *P* SKU) in order to publish embedded Power BI content.
+Power BI embedded analytics requires a capacity (*A*, *EM*, *P*, or *F* SKU) in order to publish embedded Power BI content.
 
 [!INCLUDE [what is capacity](../../includes/what-is-capacity.md)]
 
 >[!NOTE]
->You'll need a Power BI Pro or Premium Per User (PPU) account to publish content.
+>You need a Power BI Pro or Premium Per User (PPU) account to publish content.  
+>You can publish content without a Pro or PPU license by using a service principal executing the REST API, [Post Import In Group](/rest/api/power-bi/imports/post-import-in-group).
 
 ## What are the different capacities?
 
 Power BI embedded analytics offers two publishing solutions. Each solution requires different SKUs.
 
-* [*Power BI Embedded*](#power-bi-embedded)  is an Azure offering aimed at ISVs and developers who want to embed visuals into their applications. Power BI Embedded uses *A* SKUs.
+* [*Power BI Embedded*](#power-bi-embedded)  is an Azure offering aimed at ISVs and developers who want to embed visuals into their applications. Power BI Embedded uses *A* or *F* SKUs.
 
-* [*Power BI Premium*](#power-bi-premium) is a Microsoft Office offer that includes Embedding Power BI. It's geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers. Power BI Premium uses *EM* or *P* SKUs.
+* [*Power BI Premium*](#power-bi-premium) is a Microsoft Office offer that includes Embedding Power BI. It's geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers. Power BI Premium uses *EM*, *P*, or *F* SKUs.
+
+*F* SKUs are part of Microsoft Fabric and support all Fabric items while the other SKUs support only Power BI items. To read more about F SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
 ### Power BI Embedded
 
