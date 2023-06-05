@@ -59,32 +59,32 @@ With the Analysis Services Server name, port number, and model name, the tool us
 
 ## Data modeling operations
 
-External data modeling tools can apply modifications (write operations) and have Power BI synchronize those changes with the report canvas. This synchronization is so those modifications are consistently applied in Power BI visuals. For example, external data modeling tools can override the original format string expression of a measure, and edit any of the measure properties including KPIs and detail rows. External tools can also create new roles for object and row-level security, and add translations.
+External tools, which connect to Power BI Desktop's Analysis Services instance, can make changes (write operations) to the data model. Power BI Desktop then synchronizes those changes with the report canvas so they're shown in report visuals. For example, external data modeling tools can override the original format string expression of a measure, and edit any of the measure properties including KPIs and detail rows. External tools can also create new roles for object and row-level security, and add translations.
 
 ### Supported write operations
 
-Objects and operations that support write operations:
+Objects that support write operations:
 
-| Object / Operation            | Create\edit  |
-|-------------------------------|-------------------------|
+| Object                        | Connect to AS instance    |
+|-------------------------------|---------------------------|
+| Tables                        | No                        |
+| Columns                       | Yes <sup>[1](#columns)</sup>                        |
+| Calculated tables             | Yes                       |
+| Calculated columns            | Yes                       |
+| Relationships                 | Yes                       |
 | Measures                      | Yes                       |
+| Model KPIs                    | Yes                       |
 | Calculation groups            | Yes                       |
 | Perspectives                  | Yes                       |
 | Translations                  | Yes                       |
 | Row Level Security (RLS)      | Yes                       |
 | Object Level Security (OLS)   | Yes                       |
-| Model KPIs                    | Yes                       |
-| Detail rows on measures       | Yes                       |
-| Tables                        | No                        |
-| M expressions                 | No                        |
-| Relationships                 | Yes                       |
-| Calculated columns & tables   | Yes                       |
-| Format strings & descriptions | Yes                       |
-| Renaming columns & tables     | No                        |
-| Changing data types           | Yes                       |
 | Annotations                   | Yes                       |
+| M expressions                 | No                        |
 
-Write operations to Power BI Desktop project files offer a broader scope of write operations. To learn more, see [Power BI Desktop projects - Dataset authoring](../developer/projects/projects-overview.md#dataset-authoring).
+<a name="columns">1</a> - When using an external tool to connect to the AS instance, changing a column's data type is supported. However, renaming columns is not supported.
+
+Power BI Desktop *project files* offer a broader scope of supported write operations. Those objects and operations that don't support write operations by using external tools to connect to Power BI Desktop's Analysis Services instance may be supported by editing Power BI Desktop project files. To learn more, see [Power BI Desktop projects - Dataset authoring](../developer/projects/projects-overview.md#dataset-authoring).
 
 ### Data modeling limitations
 
