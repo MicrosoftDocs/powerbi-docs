@@ -31,4 +31,4 @@ Turn on this setting to allow users to export items that have sensitivity labels
 ## Next steps
 
 * [About tenant settings](service-admin-portal-about-tenant-settings.md)
-* [Tenant admin settings for git integration](./git-integration-admin-settings.md).
+* [Tenant admin settings for git integration](/fabric/admin/git-integration-admin-settings).
