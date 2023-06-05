@@ -1,6 +1,6 @@
 ---
-title: Microsoft Power BI Desktop projects (PBIP)
-description: Learn how to save and edit a Power BI Desktop project (PBIP)
+title: Power BI Desktop projects (PBIP)
+description: Learn how to save and edit a Power BI Desktop project.
 author: minewiskan
 ms.author: owend
 ms.reviewer: ruiromano
@@ -86,7 +86,7 @@ You can save multiple reports and datasets to the same folder. Having a separate
 
 ## Changes outside Power BI Desktop
 
-When saved as a project, you're not forced into making changes to your dataset and report definitions only in Power BI Desktop. You can use other tools such as VSCode, open-source community tools like Tabular Editor, or even Notepad. However, not every file or change supports editing by external, open-source tools.
+When saved as a project, you're not forced into making changes to your dataset and report definitions only in Power BI Desktop. You can use other tools such as VS Code, open-source community tools like Tabular Editor, or even Notepad. However, not every file or change supports editing by external, open-source tools.
 
 Changes to files or properties outside of Power BI Desktop can cause unexpected errors, or even prevent Power BI Desktop from opening. In those cases, you must resolve the issues in the files before trying to open the project again in Power BI Desktop.
 
@@ -94,7 +94,7 @@ If possible, Power BI Desktop indicates the file and location of error:
 
 :::image type="content" source="media/projects-overview/pbip-unable-to-open-file.png" alt-text="Screengrab of unable to open file error.":::
 
-Schema detail for the following files are not documented. During **PREVIEW**, changes to these files outside of Power BI Desktop aren't supported:
+Schema detail for the following files aren't documented. During **PREVIEW**, changes to these files outside of Power BI Desktop aren't supported:
 
 - Report\
   - report.json
@@ -103,43 +103,44 @@ Schema detail for the following files are not documented. During **PREVIEW**, ch
 - \Dataset
   - diagramLayout.json
 
-### Dataset authoring
+### Model authoring
 
-You can make write operation changes to the model definition by using external tools in two ways:
+You can make changes to the model definition by using external tools in two ways:
 
 - By connecting to Power BI Desktop's Analysis Service (AS) instance with [external tools](../../transform-model/desktop-external-tools.md).
 - By editing JSON metadata in the model.bim file using VS Code or another external tool.
 
-Not every model object or change support write operations. Applying changes outside of the those supported can result in unexpected situations.
+Not every model object supports write operations. Applying changes outside of the those supported can cause unexpected results.
 
-Objects and operations that support write operations:
+Objects that support write operations:
 
-| Object / Operation            | Change using AS Instance  | File Change |
-|-------------------------------|---------------------------|-------------|
-| Measures                      | Yes                       | Yes           |
-| Calculation groups            | Yes                       | Yes           |
-| Perspectives                  | Yes                       | Yes           |
-| Translations                  | Yes                       | Yes           |
-| Row Level Security (RLS)      | Yes                       | Yes           |
-| Object Level Security (OLS)   | Yes                       | Yes           |
-| Model KPIs                    | Yes                       | Yes           |
-| Detail rows on measures       | Yes                       | Yes           |
-| Tables                        | No                        | Yes           |
-| M expressions                 | No                        | Yes           |
-| Relationships                 | Yes                       | Yes           |
-| Calculated columns & tables   | Yes                       | Yes           |
-| Format strings & descriptions | Yes                       | Yes           |
-| Renaming columns & tables     | No                        | Yes           |
-| Changing data types           | Yes                       | Yes           |
-| Annotations                   | Yes                       | Yes           |
+| Object                        | Connect to AS instance     | File change|
+|-------------------------------|----------------------------|----------- |
+| Tables                        | No                         | Yes        |
+| Columns                       | Yes <sup>[1](#rc)</sup>, <sup>[2](#dt)</sup>| Yes        |
+| Calculated tables             | Yes                        | Yes        |
+| Calculated columns            | Yes                        | Yes        |
+| Relationships                 | Yes                        | Yes        |
+| Measures                      | Yes                        | Yes        |
+| Model KPIs                    | Yes                        | Yes        |
+| Calculation groups            | Yes                        | Yes        |
+| Perspectives                  | Yes                        | Yes        |
+| Translations                  | Yes                        | Yes        |
+| Row Level Security (RLS)      | Yes                        | Yes        |
+| Object Level Security (OLS)   | Yes                        | Yes        |
+| Annotations                   | Yes                        | Yes        |
+| M expressions                 | No                         | Yes        |
 
 Keep in mind:
 
-- Any changes made outside Power BI Desktop requires a restart for those changes to be to be shown in Power BI Desktop. Power BI Desktop isn't aware of changes to the files made by other tools.
+- Any changes to project files made outside Power BI Desktop requires a restart for those changes to be to be shown in Power BI Desktop. Power BI Desktop isn't aware of changes to project files made by other tools.
 - Power BI Desktop doesn’t support tables with multiple partitions. Only a single partition for each table is supported. Creating more than one partition results in an error when opening the report.
-- If the dataset has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't automatically generated.
-- Automatic date tables created by Power BI Desktop should not be changed by using external, open-source tools.
-- For changes to a composite model made outside Power BI Desktop, you must add the changed property names to the ChangedProperties collection of the changed object.  If not, with a schema sync, Power BI Desktop discards those changes and overwrites with the state of the remote model.
+- Automatic date tables created by Power BI Desktop shouldn't be changed by using external tools.
+- When changing a model that uses Direct Query to connect a Power BI Dataset or Analysis Services model, you must update the ChangedProperties collection for the changed object to include any modified properties.  If ChangedProperties isn't updated, Power BI Desktop may overwrite any changes the next time the query is edited or the model is refreshed in Power BI Desktop.
+
+- <a name="rc">1</a> - Changing a column's data type is supported. However, renaming columns is not supported when connecting to the AS instance.
+
+- <a name="dt">2</a> - If the dataset has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't automatically generated.
 
 ## JSON file schemas
 
@@ -218,17 +219,17 @@ To learn more, see [Editing JSON with Visual Studio Code](https://code.visualstu
 
 ## Considerations and limitations
 
-- Power BI Desktop is not aware of changes made with other tools or applications. Any changes made by using external tools require you to restart Power BI Desktop before those changes are shown.
-- Sensitivity labels are not supported with Power BI projects.
+- Power BI Desktop is not aware of changes made with other tools or applications. Changes made by using external tools require you to restart Power BI Desktop before those changes are shown.
+- Sensitivity labels aren't supported with Power BI projects.
 - Download PBIX isn't supported for workspaces with Git integration.
 - Diagram view is ignored when editing models in the Service.
 - When saving as a Power BI Project, the maximum length of the project files path is 260 characters.
 
 ## Frequently asked questions
 
-**Question:** Looking at dataset and report artifact folder definitions only a few files are marked as required, what happens if I delete them? 
+**Question:** Looking at dataset and report artifact folder definitions only a few files are marked as required, what happens if I delete them?
 
-**Answer:** Power BI Desktop will automatically create them when you save as a project (PBIP).
+**Answer:** Power BI Desktop automatically creates them when you save as a project (PBIP).
 
 **Question:** Is Power BI Desktop aware of changes I make to the Power BI Project files from an external tool or application?
 
@@ -244,7 +245,7 @@ To learn more, see [Editing JSON with Visual Studio Code](https://code.visualstu
 
 **Question:** Can I deploy a Power BI Desktop project to Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS)?
 
-**Answer:** No. Power BI Desktop project report definitions are not supported in AAS and SSAS. And model definitions use an enhanced metadata unique to Power BI. For AAS and SSAS projects, use Microsoft Visual Studio for model authoring, Git and Azure DevOps integration.
+**Answer:** No. Power BI Desktop project report definitions are not supported in AAS and SSAS. And model definitions use an enhanced metadata unique to Power BI. For AAS and SSAS projects, use Microsoft Visual Studio for model authoring, Git, and Azure DevOps integration.
 
 ## See also
 
