@@ -18,9 +18,9 @@ Datamart tenant settings are configured in the tenant settings section of the Ad
 
 ## Create Datamarts (Preview)
 
-When this setting is on, specified users in the organization can create Datamarts. For more information, see [Administration of datamarts](https://learn.microsoft.com/en-us/power-bi/transform-model/datamarts/datamarts-administration).
+When this setting is on, specified users in the organization can create Datamarts. For more information, see [Administration of datamarts](../transform-model/datamarts/datamarts-administration.md).
 
 ## Next steps
 
 * [About tenant settings](service-admin-portal-about-tenant-settings.md)
-* [Administration of datamarts](https://learn.microsoft.com/en-us/power-bi/transform-model/datamarts/datamarts-administration)
+* [Administration of datamarts](../transform-model/datamarts/datamarts-administration.md)
