@@ -18,7 +18,7 @@ Scale-out tenant settings are configured in the tenant settings section of the A
 
 ## Scale out queries for large datasets (Preview)
 
-For datasets that use the large dataset storage format, Power BI Premium can automatically distribute queries across additional dataset replicas when query volume is high. For more information, see [Power BI Dataset Scale-Out](../enterprise/service-premium-scale-out.md).
+For datasets that use the large dataset storage format, Power BI Premium can automatically distribute queries across other dataset replicas when query volume is high. For more information, see [Power BI Dataset Scale-Out](../enterprise/service-premium-scale-out.md).
 
 Scale out is enabled on a tenant by default. For more information, see [Enable Dataset Scale-Out](../enterprise/service-premium-scale-out.md#enable-dataset-scale-out).
 
