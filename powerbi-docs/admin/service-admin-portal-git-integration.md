@@ -18,7 +18,7 @@ Git integration tenant settings are configured in the tenant settings section of
 
 ## Users can synchronize workspace items with their Git repositories (Preview)
 
-When this setting in on, users can import and export workspace items to Git repositories for collaboration and version control. Turn off this setting to prevent users from syncing workspace items with their Git repositories. For more information, see [Tenant admin settings for git integration](./git-integration-admin-settings.md).
+When this setting is on, users can import and export workspace items to Git repositories for collaboration and version control. Turn off this setting to prevent users from syncing workspace items with their Git repositories. For more information, see [Tenant admin settings for git integration](./git-integration-admin-settings.md).
 
 ## Users can export items to Git repositories in other geographical locations (Preview)
 
