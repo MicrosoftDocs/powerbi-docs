@@ -82,9 +82,9 @@ Objects that support write operations:
 | Annotations                   | Yes                       |
 | M expressions                 | No                        |
 
-<a name="columns">1</a> - When using an external tool to connect to the AS instance, changing a column's data type is supported. However, renaming columns is not supported.
+<a name="columns">1</a> - When using external tools to connect to the AS instance, changing a column's data type is supported, however, renaming columns is not supported.
 
-Power BI Desktop *project files* offer a broader scope of supported write operations. Those objects and operations that don't support write operations by using external tools to connect to Power BI Desktop's Analysis Services instance may be supported by editing Power BI Desktop project files. To learn more, see [Power BI Desktop projects - Dataset authoring](../developer/projects/projects-overview.md#dataset-authoring).
+Power BI Desktop *project files* offer a broader scope of supported write operations. Those objects and operations that don't support write operations by using external tools to connect to Power BI Desktop's Analysis Services instance may be supported by editing Power BI Desktop project files. To learn more, see [Power BI Desktop projects - Model authoring](../developer/projects/projects-overview.md#model-authoring).
 
 ### Data modeling limitations
 
