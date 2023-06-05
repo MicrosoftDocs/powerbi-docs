@@ -1,6 +1,6 @@
 ---
-title: Export and sharing tenant settings
-description: Learn how to configure export and sharing settings as the Power BI tenant admin. 
+title: Datamart tenant settings
+description: Learn how to configure datamart tenant settings as the Power BI administrator. 
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 05/15/2023
+ms.date: 06/05/2023
 LocalizationGroup: Administration
 ---
 

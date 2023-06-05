@@ -1,6 +1,6 @@
 ---
 title: Data model tenant settings
-description: Learn how to configure data model settings as the Power BI tenant admin. 
+description: Learn how to configure data model settings as the Power BI administrator. 
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 05/30/2023
+ms.date: 06/05/2023
 LocalizationGroup: Administration
 ---
 
