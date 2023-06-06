@@ -48,7 +48,7 @@ sections:
       - question: |
           Security in Power BI section
         answer: |
-          * [Does Power BI meet national, regional, and industry-specific compliance requirements?](#does-power-bi-meet-national--regional--and-industry-specific-compliance-requirements-)
+          * [Does Power BI meet national/regional and industry-specific compliance requirements?](#does-power-bi-meet-national--regional--and-industry-specific-compliance-requirements-)
           * [How does security work in Power BI?](#how-does-security-work-in-power-bi-)
           
   - name: Sign up for Power BI

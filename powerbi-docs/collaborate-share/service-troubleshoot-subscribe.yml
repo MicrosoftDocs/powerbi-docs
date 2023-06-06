@@ -55,7 +55,7 @@ sections:
           - If you have an alternate email address but no primary, Power BI uses that to deliver the subscription. 
           
           ### Admin portal settings
-          - Email subscriptions aren't supported when Block Public Internet Access is enabled in the Power BI admin portal. 
+          - Email subscriptions with Full Report Attachment (FRA) or Preview aren't supported when Block Public Internet Access is enabled in the Power BI admin portal. 
 
       - question: |
           The links in my email subscription no longer work
