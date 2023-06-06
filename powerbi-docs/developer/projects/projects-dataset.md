@@ -1,6 +1,6 @@
 ---
 title: Power BI Desktop project dataset folder
-description: Learn about the Power BI Desktop project dataset folder
+description: Learn about the Power BI Desktop project dataset folder.
 author: minewiskan
 ms.author: owend
 ms.reviewer: ruiromano

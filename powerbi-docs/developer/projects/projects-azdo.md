@@ -1,6 +1,6 @@
 ---
 title: Azure DevOps integration with Power BI Desktop projects
-description: Learn about Azure DevOps integration with Power BI Desktop projects
+description: Learn about Azure DevOps integration with Power BI. Desktop projects
 author: minewiskan
 ms.author: owend
 ms.reviewer: ruiromano

@@ -154,10 +154,10 @@ With JSON schemas, you can:
 
 - Learn about configurable properties.
 - Use inline JSON validation provided by the code editor.
-- Improve authoring with syntax highlighting and autocomplete.
+- Improve authoring with syntax highlighting, tooltips, and autocomplete.
 - Use external tools with knowledge of supported properties within project metadata.
 
-You can use VS Code to map JSON schemas to the files being authored, which provides validation, syntax highlighting, auto complete, and tooltips. JSON schemas for project files are provided in the [Power BI Desktop samples Git repo](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas).
+Use VS Code to map JSON schemas to the files being authored. JSON schemas for project files are provided in the [Power BI Desktop samples Git repo](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas).
 
 ## Considerations and limitations
 
