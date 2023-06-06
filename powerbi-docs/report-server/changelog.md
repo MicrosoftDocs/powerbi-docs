@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/26/2023
+ms.date: 06/06/2023
 ---
 
 # Change log for Power BI Report Server
@@ -20,6 +20,12 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ### Power BI Report Server
 
+*Version: 1.17.8552.27722(build 15.0.1112.48), Released: June 6, 2023*
+
+- Bug fixes
+
+    - Fixed issue with RTL browser setting viewing pbix reports
+    
 *Version: 1.17.8546.6252(build 15.0.1112.41), Released: May 26, 2023*
 
 - Features
