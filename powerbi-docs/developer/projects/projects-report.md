@@ -1,6 +1,6 @@
 ---
-title: Power BI Desktop project Report folder
-description: Learn about the Power BI Desktop project Report folder
+title: Power BI Desktop project report folder
+description: Learn about the Power BI Desktop project report folder
 author: minewiskan
 ms.author: owend
 ms.reviewer: ruiromano
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/31/2023
 ---
 
-# Power BI Desktop project Report folder
+# Power BI Desktop project report folder
 
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-This article describes the files and subfolders in a Microsoft Power BI Desktop project's **Report** folder. The files and subfolders here represent a Power BI report. Depending on your project, the Report folder can include:
+This article describes the files and subfolders in a Microsoft Power BI Desktop project's **Report** folder. The files and subfolders here represent a Power BI report. Depending on your project, the report folder can include:
 
 - .pbi\
   - [localSettings.json](#pbilocalsettingsjson)
@@ -29,7 +29,7 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
 - [item.config.json](#itemconfigjson)
 - [item.metadata.json](#itemmetadatajson)
 
-Not every project Report folder includes all of the files and subfolders described here.
+Not every project report folder includes all of the files and subfolders described here.
 
 ## Report files
 

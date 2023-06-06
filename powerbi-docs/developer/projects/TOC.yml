@@ -7,9 +7,9 @@
     items: 
     - name: "Power BI Desktop projects overview"
       href: projects-overview.md
-    - name: "Project Dataset folder"
+    - name: "Project dataset folder"
       href: projects-dataset.md
-    - name: "Project Report folder"
+    - name: "Project report folder"
       href: projects-report.md
     - name: "Git integration"
       href: projects-git.md

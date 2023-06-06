@@ -53,17 +53,17 @@ Let's take a closer look at what you see in your project's root folder:
 
 ##### \<project name>.Dataset
 
-A collection of files and folders that represent a Power BI dataset. It contains some of the most important files you're likely to work on, like model.bim. To learn more about the files and subfolders and files in here, see [Project Dataset folder](projects-dataset.md).
+A collection of files and folders that represent a Power BI dataset. It contains some of the most important files you're likely to work on, like model.bim. To learn more about the files and subfolders and files in here, see [Project Ddtaset folder](projects-dataset.md).
 
 ##### \<project name>.Report
 
-A collection of files and folders that represent a Power BI report. To learn more about the files and subfolders and files in here, see [Project Report folder](projects-report.md).
+A collection of files and folders that represent a Power BI report. To learn more about the files and subfolders and files in here, see [Project report folder](projects-report.md).
 
 ##### .gitIgnore
 
 Specifies intentionally untracked files Git should ignore. Power BI Desktop creates the [.gitignore](https://git-scm.com/docs/gitignore) file in the root folder when saving if it doesn't already exist.
 
-Dataset and Report subfolders each have default git ignored files specified in .gitIgnore:
+Dataset and report subfolders each have default git ignored files specified in .gitIgnore:
 
 - Dataset
   - \.pbi\localSettings.json
@@ -136,7 +136,7 @@ Keep in mind:
 - Any changes to open files made outside Power BI Desktop requires a restart for those changes to be shown in Power BI Desktop. Power BI Desktop isn't aware of changes to project files made by other tools.
 - Power BI Desktop doesn’t support tables with multiple partitions. Only a single partition for each table is supported. Creating tables with empty partitions or more than one partition results in an error when opening the report.
 - Automatic date tables created by Power BI Desktop shouldn't be changed by using external tools.
-- When changing a model that uses Direct Query to connect a Power BI Dataset or Analysis Services model, you must update the ChangedProperties collection for the changed object to include any modified properties.  If ChangedProperties isn't updated, Power BI Desktop may overwrite any changes the next time the query is edited or the model is refreshed in Power BI Desktop.
+- When changing a model that uses Direct Query to connect a Power BI dataset or Analysis Services model, you must update the ChangedProperties collection for the changed object to include any modified properties.  If ChangedProperties isn't updated, Power BI Desktop may overwrite any changes the next time the query is edited or the model is refreshed in Power BI Desktop.
 
 - <a name="rc">1</a> - Changing a column's data type is supported. However, renaming columns isn't supported when connecting to the AS instance.
 
@@ -195,8 +195,8 @@ You can use VS Code to map JSON schemas to the files being authored, which provi
 
 ## See also
 
-[Power BI Desktop project Dataset folder](projects-dataset.md)  
-[Power BI Desktop project Report folder](projects-report.md)  
+[Power BI Desktop project dataset folder](projects-dataset.md)  
+[Power BI Desktop project report folder](projects-report.md)  
 [Power BI Desktop projects Git integration](projects-git.md)  
 [Power BI Desktop projects Azure DevOps integration](projects-git.md)  
 [External tools in Power BI Desktop](../../transform-model/desktop-external-tools.md)  

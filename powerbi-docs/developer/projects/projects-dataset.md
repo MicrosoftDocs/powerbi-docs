@@ -1,5 +1,5 @@
 ---
-title: Power BI Desktop project Dataset folder
+title: Power BI Desktop project dataset folder
 description: Learn about the Power BI Desktop project dataset folder
 author: minewiskan
 ms.author: owend
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/31/2023
 ---
 
-# Power BI Desktop project Dataset folder
+# Power BI Desktop project dataset folder
 
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-This article describes the files and subfolders in a Microsoft Power BI Desktop project's **Dataset** folder. The files and subfolders here represent a Power BI dataset. Depending on your project, the Dataset folder can include:
+This article describes the files and subfolders in a Microsoft Power BI Desktop project's **Dataset** folder. The files and subfolders here represent a Power BI dataset. Depending on your project, the dataset folder can include:
 
 - .pbi\
     - [localSettings.json](#pbilocalsettingsjson)
@@ -28,7 +28,7 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
 - [item.config.json](#itemconfigjson)
 - [item.metadata.json](#itemmetadatajson)
 
-Not every project Dataset folder includes all of the files and subfolders described here.
+Not every project dataset folder includes all of the files and subfolders described here.
 
 ## Dataset files
 
@@ -92,6 +92,6 @@ For more information, refer to the [item.metadata.json schema document](https://
 
 ## See also
 
-[Power BI Desktop project Report folder](projects-report.md)  
+[Power BI Desktop project report folder](projects-report.md)  
 [Power BI Desktop projects](projects-overview.md)  
 [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true)  

@@ -27,9 +27,9 @@ landingContent:
         links:
           - text: "Power BI Desktop projects overview"
             url: projects-overview.md
-          - text: "Project Dataset folder"
+          - text: "Project dataset folder"
             url: projects-dataset.md
-          - text: "Project Report folder"
+          - text: "Project report folder"
             url: projects-report.md
           - text: "Project Git integration"
             url: projects-git.md
