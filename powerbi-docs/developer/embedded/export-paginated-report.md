@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 10/24/2022
+ms.date: 06/06/2023
 ---
 
 # Export paginated report to file
@@ -168,7 +168,7 @@ Here's an example for supplying an effective identity (user name) with an access
 
 ## Concurrent requests
 
-The `exportToFile` API supports concurrent export job requests. The maximum number of concurrent report pages depends on the type and number of SKUs you have. It's *not* the same number as for other Power BI reports. If you exceed the limit and get a *Too Many Requests* (429) error, try to distribute the load over time or get a larger capacity.
+The `exportToFile` API supports concurrent export job requests. The maximum number of concurrent report pages depends on the type and number of SKUs you have. The maximum number of [concurrent paginated report render requests](../../paginated-reports/paginated-capacity-planning.md#concurrent-requests), is 500. To avoid exceeding the limit and getting a *Too Many Requests (429)* error, either distribute the load over time, or get a larger capacity.
 
 when using [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml), the `exportToFile` API allows just *one* request in a five-minute window. Multiple requests within a five-minute window will result in a *Too Many Requests* (429) error.
 
