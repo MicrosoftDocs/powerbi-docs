@@ -140,7 +140,7 @@ Getting the correct access token for the resource that you want to access can so
 * For Azure SQL, the resource is `https://database.windows.net`.
 * For Dataverse, the resource is the `https://` address for your environment. For example, `https://contoso.crm.dynamics.com`.
 
-Access the token API using the [AuthenticationContext.AcquireTokenAsync](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync) method.
+Access the token API using the [AuthenticationContext.AcquireTokenAsync](/azure/active-directory/develop/msal-net-migration-confidential-client) method.
 
 Here's an example for supplying an effective identity (user name) with an access token.
 
