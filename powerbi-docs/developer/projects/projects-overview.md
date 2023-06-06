@@ -97,11 +97,11 @@ If possible, Power BI Desktop indicates the file and location of error:
 Schema details for the following files aren't documented. During **PREVIEW**, changes to these files outside of Power BI Desktop aren't supported:
 
 - Report\
-  - report.json
-  - mobileState.json
-  - datasetDiagramLayout.json
-- \Dataset
-  - diagramLayout.json
+  - [report.json](projects-report.md#reportjson)
+  - [mobileState.json](projects-report.md#mobilestatejson)
+  - [datasetDiagramLayout.json](projects-report.md#datasetdiagramlayoutjson)
+- Dataset\
+  - [diagramLayout.json](projects-dataset.md#diagramlayoutjson)
 
 ### Model authoring
 
