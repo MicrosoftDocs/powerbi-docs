@@ -41,7 +41,7 @@ To enable, in Power BI Desktop > **File** > **Options and settings** > **Options
 
 ## Save as a project
 
-If you're working on a new project or you've opened an existing Power BI Desktop file (.pbix), you can save your work as a Power BI *project* file (.pbip):
+If you're working on a new project or you've opened an existing Power BI Desktop file (pbix), you can save your work as a Power BI *project* file (pbip):
 
 :::image type="content" source="media/projects-overview/pbip-saveastype.png" alt-text="Screen grab showing save file as Power BI Project":::
 
@@ -78,11 +78,11 @@ The PBIP file contains a pointer to a report folder, opening a PBIP opens the ta
 
 ## Open a Power BI Project
 
-You can open Power BI Desktop from the Power BI Project folder either by opening the **[.pbip](#project-namepbip)** file or the **[.pbir](./projects-report.md#definitionpbir)** file in the report folder. Both options open the report for editing, and the dataset, if there's a relative reference to a dataset.
+You can open Power BI Desktop from the Power BI Project folder either by opening the **[pbip](#project-namepbip)** file or the **[pbir](./projects-report.md#definitionpbir)** file in the report folder. Both options open the report for editing, and the dataset, if there's a relative reference to a dataset.
 
-You can save multiple reports and datasets to the same folder. Having a separate .pbip file for each report isn't required because you can open each report directly from the .pbir within the report folder.
+You can save multiple reports and datasets to the same folder. Having a separate pbip file for each report isn't required because you can open each report directly from the pbir within the report folder.
 
-:::image type="content" source="media/projects-overview/pbip-files-reports.png" alt-text="Screengrab showing Power BI Project files with multiple report folders":::
+:::image type="content" source="media/projects-overview/pbip-files-reports.png" alt-text="Screen grab showing Power BI Project files with multiple report folders":::
 
 ## Changes outside Power BI Desktop
 
@@ -92,9 +92,9 @@ Changes to files or properties outside of Power BI Desktop can cause unexpected 
 
 If possible, Power BI Desktop indicates the file and location of error:
 
-:::image type="content" source="media/projects-overview/pbip-unable-to-open-file.png" alt-text="Screengrab of unable to open file error.":::
+:::image type="content" source="media/projects-overview/pbip-unable-to-open-file.png" alt-text="Screen grab of unable to open file error.":::
 
-Schema detail for the following files aren't documented. During **PREVIEW**, changes to these files outside of Power BI Desktop aren't supported:
+Schema details for the following files aren't documented. During **PREVIEW**, changes to these files outside of Power BI Desktop aren't supported:
 
 - Report\
   - report.json
@@ -133,18 +133,18 @@ Objects that support write operations:
 
 Keep in mind:
 
-- Any changes to open files made outside Power BI Desktop requires a restart for those changes to be to be shown in Power BI Desktop. Power BI Desktop isn't aware of changes to project files made by other tools.
+- Any changes to open files made outside Power BI Desktop requires a restart for those changes to be shown in Power BI Desktop. Power BI Desktop isn't aware of changes to project files made by other tools.
 - Power BI Desktop doesn’t support tables with multiple partitions. Only a single partition for each table is supported. Creating tables with empty partitions or more than one partition results in an error when opening the report.
 - Automatic date tables created by Power BI Desktop shouldn't be changed by using external tools.
 - When changing a model that uses Direct Query to connect a Power BI Dataset or Analysis Services model, you must update the ChangedProperties collection for the changed object to include any modified properties.  If ChangedProperties isn't updated, Power BI Desktop may overwrite any changes the next time the query is edited or the model is refreshed in Power BI Desktop.
 
-- <a name="rc">1</a> - Changing a column's data type is supported. However, renaming columns is not supported when connecting to the AS instance.
+- <a name="rc">1</a> - Changing a column's data type is supported. However, renaming columns isn't supported when connecting to the AS instance.
 
 - <a name="dt">2</a> - If the dataset has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't automatically generated.
 
 - <a name="mp">3</a> - Partition [SourceType](/dotnet/api/microsoft.analysisservices.tabular.partitionsourcetype) must be Calculated, M, Entity, or CalculationGroup. Partition [Mode](/dotnet/api/microsoft.analysisservices.tabular.modetype) must be Import, DirectQuery, or Dual.
 
-- <a name="ee">4</a> - Any expression edit outside of Power BI Desktop in a project with [unappliedChanges.json](./projects-dataset.md#pbiunappliedchangesjson), will be lost when those changes are applied.
+- <a name="ee">4</a> - Any expression edits outside of Power BI Desktop in a project with [unappliedChanges.json](./projects-dataset.md#pbiunappliedchangesjson) are lost when those changes are applied.
 
 ## JSON file schemas
 
@@ -161,7 +161,7 @@ You can use VS Code to map JSON schemas to the files being authored, which provi
 
 ## Considerations and limitations
 
-- Power BI Desktop is not aware of changes made with other tools or applications. Changes made by using external tools require you to restart Power BI Desktop before those changes are shown.
+- Power BI Desktop isn't aware of changes made with other tools or applications. Changes made by using external tools require you to restart Power BI Desktop before those changes are shown.
 - Sensitivity labels aren't supported with Power BI projects.
 - Download PBIX isn't supported for workspaces with Git integration.
 - Diagram view is ignored when editing models in the Service.
@@ -191,7 +191,7 @@ You can use VS Code to map JSON schemas to the files being authored, which provi
 
 **Question:** Can I deploy a Power BI Desktop project to Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS)?
 
-**Answer:** No. Power BI Desktop project report definitions are not supported in AAS and SSAS. And model definitions use an enhanced metadata unique to Power BI. For AAS and SSAS projects, use Microsoft Visual Studio for model authoring, Git, and Azure DevOps integration.
+**Answer:** No. Power BI Desktop project report definitions aren't supported in AAS and SSAS. And model definitions use an enhanced metadata unique to Power BI. For AAS and SSAS projects, use Microsoft Visual Studio for model authoring, Git, and Azure DevOps integration.
 
 ## See also
 

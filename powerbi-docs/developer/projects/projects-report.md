@@ -37,7 +37,7 @@ Not every project Report folder includes all of the files and subfolders describ
 
 Contains report settings that apply only for the current user and local computer. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
 
-Refer to the [localSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/localSettings.md) for more information.
+For more information, refer to the [localSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/localSettings.md).
 
 #### CustomVisuals\\
 
@@ -51,7 +51,7 @@ Only private custom visuals are loaded into the CustomVisuals folder. AppSource 
 
 #### RegisteredResources\\
 
-A subfolder that includes resource files specific to the report and loaded by the user, like custom themes, images, and custom visuals (.pbiviz files).
+A subfolder that includes resource files specific to the report and loaded by the user, like custom themes, images, and custom visuals (pbiviz files).
 
 Developers are responsible for the files here and changes are supported. For example, you can change a file and after a Power BI Desktop restart, the new file is loaded into the report. This folder can unblock some useful scenarios, like:
 
@@ -66,7 +66,7 @@ Contains data model diagrams describing the structure of the dataset associated 
 
 #### definition.pbir
 
-Contains the overall definition of a report and core settings. This file also holds the reference to the dataset used by the report. Power BI Desktop can open a .pbir file directly, just the same as if the report were opened from a .pbip file. Opening a .pbir also opens the dataset alongside if there's a relative reference using `byPath`.
+Contains the overall definition of a report and core settings. This file also holds the reference to the dataset used by the report. Power BI Desktop can open a pbir file directly, just the same as if the report were opened from a pbip file. Opening a pbir also opens the dataset alongside if there's a relative reference using `byPath`.
 
 Example definition.pbir:
 
@@ -118,7 +118,7 @@ Example using `byConnection`:
 
 ```
 
-Refer to the [definition.pbir schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/definition.pbir-1.0.md) for more information.
+For more information, refer to the [definition.pbir schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/definition.pbir.md).
 
 #### mobileState.json
 
@@ -132,13 +132,13 @@ Defines a report including visuals, page layout, and intended interactions. Duri
 
 Identifies the folder as a source control representation of a service item. To learn more, see [Git integration source code format - Config file](/fabric/cicd/git-integration/source-code-format#config-file).
 
-Refer to the [item.config.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.config.md) for more information.
+For more information, refer to the [item.config.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.config.md).
 
 #### item.metadata.json
 
 Contains attributes that define the item. To learn more, see [Git integration source code format - Metadata file](/fabric/cicd/git-integration/source-code-format#metadata-file)
 
-Refer to the [item.metadata.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.metadata.md) for more information.
+For more information, refer to the [item.metadata.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.metadata.md).
 
 ## See also
 
