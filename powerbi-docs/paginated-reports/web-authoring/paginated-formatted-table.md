@@ -7,7 +7,7 @@ ms.reviewer: ebendinsky
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 03/24/2023
+ms.date: 06/06/2023
 ---
 
 # Create exportable paginated reports in the Power BI service
@@ -105,34 +105,43 @@ For any paginated report you **author online**, you may insert text boxes in the
 
 ### Add a text box and begin typing
 1. To add a text box to your report, select **Insert** and then **Text box**. <!-- IMAGE TO BE ADDED -->
-2. Text boxes are inserted at the top left of the first page of your report.
-> [!NOTE]
-> When you insert a new text box or select a text box, you're immediately editing the text in the text box.
-3. Begin typing within the text box.
+1. Text boxes are inserted at the top left of the first page of your report.
+
+    > [!NOTE]
+    > When you insert a new text box or select a text box, you're immediately editing the text in the text box.
+
+1. Begin typing within the text box.
 
 ### Select, move, and resize text boxes 
 1. To select a text box, hover over a text box and a text box outline appears, select within the text box area to select the text box you are hovered over. 
-2. To move a selected text box, select and drag the move indicator on the text box outline. <!-- IMAGE TO BE ADDED -->
-> [!NOTE]
-> Alternatively, select the text box itself, not the text in it, by pressing ESC. And then use the arrow keys to move a selected text box horizontally or vertically.
-3. To resize a text box, select the text box itself and then select and drag any sizing handle. Alternatively, press SHIFT + arrow keys to resize horizontally or vertically.
-> [!NOTE]
-> Text that does not fit within the text box area will show only while the text box is selected. Text outside the text box area will not show in the final design of your report. Resize the text box area to show the text you would like visible.
+1. To move a selected text box, select and drag the move indicator on the text box outline. <!-- IMAGE TO BE ADDED -->
+
+    > [!NOTE]
+    > Alternatively, select the text box itself, not the text in it, by pressing ESC. And then use the arrow keys to move a selected text box horizontally or vertically.
+
+1. To resize a text box, select the text box itself and then select and drag any sizing handle. Alternatively, press SHIFT + arrow keys to resize horizontally or vertically.
+
+    > [!NOTE]
+    > Text that does not fit within the text box area will show only while the text box is selected. Text outside the text box area will not show in the final design of your report. Resize the text box area to show the text you would like visible.
 
 ### Format and style text in a text box
+
 1. After selecting a text box the **Text box format** tab is displayed. From this tab you can format the font style include font, color, size, and text decoration like bold, italics, and underline. <!-- IMAGE TO BE ADDED -->
-2. You can format font styles at the character and line level while editing the text box. Or select the text box to highlight all text and format all text within the text box at once.
+1. You can format font styles at the character and line level while editing the text box. Or select the text box to highlight all text and format all text within the text box at once.
 
 ### Delete a text box
-To delete a text box right right-click a text box and select **Remove**. Alternatively, with a text box selected press DELETE.
+To delete a text box, right-click a text box and select **Remove**. Alternatively, with a text box selected press <kbd>DELETE</kbd>.
 
 ### Working with sections
 1. When text boxes are added to a paginated report a section line appears on the first page that separates text boxes from your formatted table of data. The area above the section line is where text boxes are added. The area below is where your formatted table of data is added. <!-- IMAGE TO BE ADDED -->
-> [!NOTE]
-> The section line only shows when text or image objects are present.
-2. To move text objects lower on the page, move the section line down. To move section line up, move text objects up. Text objects will highlight when moving section <!-- IMAGE TO BE ADDED -->
-> [!NOTE]
-> In order to leave room for the beginning of your formatted table of data, the section line cannot be moved to the very bottom of the first page.
+
+    > [!NOTE]
+    > The section line only shows when text or image objects are present.
+
+1. To move text objects lower on the page, move the section line down. To move section line up, move text objects up. Text objects will highlight when moving section <!-- IMAGE TO BE ADDED -->
+
+    > [!NOTE]
+    > In order to leave room for the beginning of your formatted table of data, the section line cannot be moved to the very bottom of the first page.
 
 ### Considerations and limitations when working with text
 - Like with other objects in a report, only one text box may be selected at a time. 
