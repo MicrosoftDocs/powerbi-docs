@@ -36,13 +36,13 @@ Not every project Dataset folder includes all of the files and subfolders descri
 
 Contains dataset settings that apply only for the current user and computer. It should be included in gitIgnore or other source control exclusions. By default, this file is ignored by Git.
 
-Refer to the [localSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/localSettings-1.0.md) for more information.
+Refer to the [localSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/localSettings.md) for more information.
 
 #### .pbi\editorSettings.json
 
 Contains dataset editor settings saved as part of the dataset definition for use across users and environments.
 
-Refer to the [editorSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/editorSettings-1.0.md) for more information.
+Refer to the [editorSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/editorSettings.md) for more information.
 
 #### .pbi\cache.abf
 
@@ -60,9 +60,9 @@ When you select **Apply later**, the unapplied changes are saved into the unappl
 
 :::image type="content" source="media/projects-overview/pending-changes.png" alt-text="Image showing pending changes warning.":::
 
-If you select **Apply changes**, Power BI Desktop overwrites the queries in model.bim with the queries from unappliedChanges.json. If you edited queries in model.bim outside of Power BI Desktop, your changes could be lost and replaced by the queries in unappliedChanges.json.
+If you select **Apply changes**, Power BI Desktop overwrites the queries in model.bim with the queries from unappliedChanges.json. If you edited queries in model.bim outside of Power BI Desktop, your changes are lost and replaced by the queries in unappliedChanges.json when those changes get applied.
 
-Refer to the [unappliedChanges.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/unappliedChanges-1.0.md) for more information.
+Refer to the [unappliedChanges.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/unappliedChanges.md) for more information.
 
 #### model.bim
 
@@ -72,7 +72,7 @@ Contains a Tabular Model Scripting Language (TMSL) [Database object](/analysis-s
 
 Contains the overall definition of a dataset and core settings.
 
-Refer to the [definition.pbidataset schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/definition.pbidataset-1.0.md) for more information.
+Refer to the [definition.pbidataset schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/definition.pbidataset.md) for more information.
 
 #### diagramLayout.json
 
@@ -82,13 +82,13 @@ Contains diagram metadata that defines the structure of the dataset associated w
 
 Identifies the folder as a source control representation of a service item. To learn more, see [Git integration source code format - Config file](/fabric/cicd/git-integration/source-code-format#config-file).
 
-Refer to the [item.config.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.config-1.0.md) for more information.
+Refer to the [item.config.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.config.md) for more information.
 
 #### item.metadata.json
 
 Contains attributes that define the item. To learn more, see [Git integration source code format - Metadata file](/fabric/cicd/git-integration/source-code-format#metadata-file)
 
-Refer to the [item.metadata.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.metadata-1.0.md) for more information.
+Refer to the [item.metadata.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.metadata.md) for more information.
 
 ## See also
 

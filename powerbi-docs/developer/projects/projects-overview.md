@@ -43,11 +43,11 @@ To enable, in Power BI Desktop > **File** > **Options and settings** > **Options
 
 If you're working on a new project or you've opened an existing Power BI Desktop file (.pbix), you can save your work as a Power BI *project* file (.pbip):
 
-:::image type="content" source="media/projects-overview/pbip-saveastype.png" alt-text="Screengrab showing save file as Power BI Project":::
+:::image type="content" source="media/projects-overview/pbip-saveastype.png" alt-text="Screen grab showing save file as Power BI Project":::
 
 When you save as a project, Power BI Desktop saves report and dataset artifacts as folders, each containing text files that define the artifact. You see the following:
 
-:::image type="content" source="media/projects-overview/pbip-files.png" alt-text="Screengrab showing Power BI Project files":::
+:::image type="content" source="media/projects-overview/pbip-files.png" alt-text="Screen grab showing Power BI Project files":::
 
 Let's take a closer look at what you see in your project's root folder:
 
@@ -78,7 +78,7 @@ The PBIP file contains a pointer to a report folder, opening a PBIP opens the ta
 
 ## Open a Power BI Project
 
-You can open Power BI Desktop from the Power BI Project folder either by opening the .pbip file or the [.pbir](./projects-report.md#definitionpbir) file in the report folder. Both options open the report for editing, and the dataset (if there's a relative reference to a dataset).
+You can open Power BI Desktop from the Power BI Project folder either by opening the **[.pbip](#project-namepbip)** file or the **[.pbir](./projects-report.md#definitionpbir)** file in the report folder. Both options open the report for editing, and the dataset, if there's a relative reference to a dataset.
 
 You can save multiple reports and datasets to the same folder. Having a separate .pbip file for each report isn't required because you can open each report directly from the .pbir within the report folder.
 
@@ -129,18 +129,22 @@ Objects that support write operations:
 | Row Level Security (RLS)      | Yes                        | Yes        |
 | Object Level Security (OLS)   | Yes                        | Yes        |
 | Annotations                   | Yes                        | Yes        |
-| M expressions                 | No                         | Yes        |
+| M expressions                 | No                         | Yes <sup>[3](#mp)</sup>, <sup>[4](#ee)</sup>        |
 
 Keep in mind:
 
-- Any changes to project files made outside Power BI Desktop requires a restart for those changes to be to be shown in Power BI Desktop. Power BI Desktop isn't aware of changes to project files made by other tools.
-- Power BI Desktop doesn’t support tables with multiple partitions. Only a single partition for each table is supported. Creating more than one partition results in an error when opening the report.
+- Any changes to open files made outside Power BI Desktop requires a restart for those changes to be to be shown in Power BI Desktop. Power BI Desktop isn't aware of changes to project files made by other tools.
+- Power BI Desktop doesn’t support tables with multiple partitions. Only a single partition for each table is supported. Creating tables with empty partitions or more than one partition results in an error when opening the report.
 - Automatic date tables created by Power BI Desktop shouldn't be changed by using external tools.
 - When changing a model that uses Direct Query to connect a Power BI Dataset or Analysis Services model, you must update the ChangedProperties collection for the changed object to include any modified properties.  If ChangedProperties isn't updated, Power BI Desktop may overwrite any changes the next time the query is edited or the model is refreshed in Power BI Desktop.
 
 - <a name="rc">1</a> - Changing a column's data type is supported. However, renaming columns is not supported when connecting to the AS instance.
 
 - <a name="dt">2</a> - If the dataset has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't automatically generated.
+
+- <a name="mp">3</a> - Partition [SourceType](/dotnet/api/microsoft.analysisservices.tabular.partitionsourcetype) must be Calculated, M, Entity, or CalculationGroup. Partition [Mode](/dotnet/api/microsoft.analysisservices.tabular.modetype) must be Import, DirectQuery, or Dual.
+
+- <a name="ee">4</a> - Any expression edit outside of Power BI Desktop in a project with [unappliedChanges.json](./projects-dataset.md#pbiunappliedchangesjson), will be lost when those changes are applied.
 
 ## JSON file schemas
 
@@ -153,69 +157,7 @@ With JSON schemas, you can:
 - Improve authoring with syntax highlighting and autocomplete.
 - Use external tools with knowledge of supported properties within project metadata.
 
-JSON schemas for project files are provided in the [Power BI Desktop samples Git repo](https://github.com/microsoft/powerbi-desktop-samples/blob/main/item-schemas/). **\<<Update with full path when available.\>>**
-
-You can use VS Code to map JSON schemas to the files being authored, which provides validation, syntax highlighting, auto complete, and tooltips.
-
-You can directly reference the schema by adding the **$schema** property to the edited file:
-
-```json
-{
-  "$schema": "https://raw.githubusercontent.com/microsoft/powerbi-desktop-samples/main/file-formats/report/ReportDefinition.json",
-  "version": "1.0",
-  "datasetReference": {
-    "byPath": {
-      "path": "../Sales.Dataset"
-    },
-    "byConnection": null
-  }
-}
-
-```
-
-Or you can map the metadata files to your VS Code user settings:
-
-```json
-{
-    "json.schemas": [
-        {
-            "fileMatch": [
-                "/*.Report/*.pbir"
-            ],
-            "url": "https://raw.githubusercontent.com/microsoft/powerbi-desktop-samples/main/file-formats/report/ReportDefinition.json"
-        }
-        ,
-        {
-            "fileMatch": [
-                "/*.Dataset/*.pbidataset"
-            ],
-            "url": "https://raw.githubusercontent.com/microsoft/powerbi-desktop-samples/main/file-formats/dataset/DatasetDefinition.json"
-        }
-        ,
-        {
-            "fileMatch": [
-                "/*.Dataset/.pbi/editorSettings.json"
-            ],
-            "url": "https://raw.githubusercontent.com/microsoft/powerbi-desktop-samples/main/file-formats/dataset/DatasetEditorSettings.json"
-        }
-    ]
-}
-
-```
-
-When authoring a project metadata file with a mapped JSON schema, only valid properties appear:
-
-:::image type="content" source="media/projects-overview/json-schema-path.png" alt-text="Schema byPath":::
-
-If an incorrect property or type is specified, a warning is shown:
-
-:::image type="content" source="media/projects-overview/json-schema-warning.png" alt-text="JSON schema warning":::
-
-When you hover over properties, more context is shown:
-
-:::image type="content" source="media/projects-overview/json-schema-warning-context.png" alt-text="JSON schema warning context":::
-
-To learn more, see [Editing JSON with Visual Studio Code](https://code.visualstudio.com/docs/languages/json).
+You can use VS Code to map JSON schemas to the files being authored, which provides validation, syntax highlighting, auto complete, and tooltips. JSON schemas for project files are provided in the [Power BI Desktop samples Git repo](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas).
 
 ## Considerations and limitations
 
@@ -238,6 +180,10 @@ To learn more, see [Editing JSON with Visual Studio Code](https://code.visualstu
 **Question:** If I convert a PBIX to a PBIP, can I convert it back to PBIX?
 
 **Answer:** Yes. You can save a PBIX as a PBIP, or save a PBIP as a PBIX.
+
+**Question:** Can I convert PBIX into PBIP and vice-versa programmatically?
+
+**Answer:** No. You can only convert a PBIX into a PBIP and vice-versa using Power BI Desktop's **File** > **Save as**.
 
 **Question:** The Publish button is disabled when I'm working in a PBIP. How can I publish my content?
 
