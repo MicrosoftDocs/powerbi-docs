@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/23/2022
+ms.date: 06/05/2023
 LocalizationGroup: Connect to data
 ---
 # DirectQuery in Power BI
@@ -518,7 +518,6 @@ Power BI uses this pattern because the analyst provides the SQL query directly. 
 
 For more information about DirectQuery in Power BI, see:
 
-- [Data sources supported by DirectQuery](power-bi-data-sources.md)
 - [Use DataQuery in Power BI Desktop](desktop-use-directquery.md)
 
 This article described aspects of DirectQuery that are common across all data sources. See the following articles for details about specific sources:
