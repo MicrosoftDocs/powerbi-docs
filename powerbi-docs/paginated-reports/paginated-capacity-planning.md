@@ -71,7 +71,7 @@ Take into consideration that the numbers in the table refer to designated capaci
 
 ## Concurrent requests
 
-Each workload on a capacity, including the paginated reports workload, has a maximum of 500 concurrent report renders at any given time. If your capacity is rendering 100 reports and has 200 requests for [exporting paginated reports]( ](./../developer/embedded/export-paginated-report.md), you have 200 concurrent report render requests left.
+Each workload on a capacity, including the paginated reports workload, has a maximum of 500 concurrent report renders at any given time. If your capacity is rendering 100 reports and has 200 requests for [exporting paginated reports](./../developer/embedded/export-paginated-report.md), you have 200 concurrent report render requests left.
 
 To avoid congestion, plan your concurrent requests load in advance. If you exceed the concurrent requests limit, you’ll encounter the *Too Many Requests (429)* error.
 
