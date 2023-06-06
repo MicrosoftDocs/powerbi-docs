@@ -12,7 +12,7 @@ ms.custom: known-issue-308
 
 # Known issue - Tenant Migrations Paused
 
-For customers who have a tenant migration already in the queue, tenant migrations have resumed.  For customers who want to request a new tenant migration, we are now accepting new cases at this time.
+For customers who have a tenant migration already in the queue, tenant migrations have resumed.  For customers who want to request a new tenant migration, we're now accepting new cases at this time.
 
 **APPLIES TO:** ✔️ Power BI Service
 
@@ -32,6 +32,6 @@ We've resumed accepting cases requesting tenant migrations.  Going forward, only
 
 ## Next steps
 
-- [Move between regions](https://learn.microsoft.com/en-us/power-bi/support/service-admin-region-move)
-- [Power BI migration overview](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-migration-overview)
+- [Move between regions](/power-bi/support/service-admin-region-move)
+- [Power BI migration overview](/power-bi/guidance/powerbi-migration-overview)
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)
