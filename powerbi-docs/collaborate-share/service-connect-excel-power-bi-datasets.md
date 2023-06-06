@@ -79,6 +79,8 @@ In **PivotTable Fields**, you can see all the tables and measures from your Powe
 
 - For newly created datasets, recently refreshed datasets, or datasets that you just got access to, it may take up to 24 hours for these datasets to show up in the Power BI Datasets pane. If you don't see the dataset you want, navigate to the Power BI Data hub (`https://app.powerbi.com/datahub`) from the Power BI Datasets pane in Excel and use **Analyze in Excel** to create an Excel workbook for that dataset.
 
+- Excel and Power BI visuals use different query languages and data load behaviors, so data load performance can be different between Excel and Power BI.
+
 ## Next steps
 
 For more information about getting data into Excel, see [Create a PivotTable from Power BI datasets](https://support.office.com/article/31444a04-9c38-4dd7-9a45-22848c666884) in the Excel documentation.
