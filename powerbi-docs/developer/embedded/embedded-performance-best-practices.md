@@ -7,7 +7,7 @@ ms.reviewer: noam, or, may
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 10/05/2022
+ms.date: 06/06/2023
 ---
 
 # Best practices for faster performance in Power BI embedded analytics
@@ -45,9 +45,7 @@ When using the bootstrap API, it's still required to call `powerbi.embed(element
 
 For example, one of the use cases for this feature, is to run the iFrame bootstrap and the back-end calls for embedding, in parallel.
 > [!TIP]
-> Use the bootstrap API when it's possible to generate the iFrame before it's visible to the end user.
-
-[Learn more about iFrame bootstrap](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bootstrap-For-Better-Performance).
+> Use the [bootstrap API](/javascript/api/overview/powerbi/bootstrap-better-performance) when possible to generate the iFrame before it's visible to the end user.
 
 ​When embedding a report or other Power BI items, make sure that the embed container is part of the DOM and that the display CSS attribute is not set to *none* as this can cause unexpected behaviors. If you want to hide the embed container, consider using the visibility CSS attribute.
 
