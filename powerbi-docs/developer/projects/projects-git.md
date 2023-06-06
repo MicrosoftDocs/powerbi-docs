@@ -1,6 +1,6 @@
 ---
 title: Git integration with Power BI Desktop projects
-description: Learn about Git integration with Power BI Desktop projects
+description: Learn about Git integration with Power BI Desktop. projects.
 author: minewiskan
 ms.author: owend
 ms.reviewer: ruiromano
@@ -22,7 +22,7 @@ With Git integration, you can:
 - Backup and version your work.
 - Revert to previous states.
 - Collaborate with others or work alone using Git branches.
-- Leverage the capabilities of familiar source control tools, like Azure DevOps.
+- Use the capabilities of familiar source control tools, like Azure DevOps.
 
 ## Prerequisites
 
@@ -44,7 +44,7 @@ With Git integration, you can:
 
     :::image type="content" source="media/projects-git/commit.png" alt-text="Image showing a commit in VS Code.":::
 
-From now on, any changes you make in Power BI Desktop will change a file in the folder tracked by your local Git. For example, in Power BI Desktop, when you change a DAX formula for a measure and then save, it triggers a Git diff on the model.bim file.
+From now on, any changes you make in Power BI Desktop changes a file in the folder tracked by your local Git. For example, in Power BI Desktop, when you change a DAX formula for a measure and then save, it triggers a Git diff on the model.bim file.
 
 :::image type="content" source="media/projects-git/measure-change.png" alt-text="Image showing a measure change in VS Code.":::
 
@@ -55,5 +55,5 @@ With Git integration, you can not only backup your work, but also track your cha
 ## See also
 
 [Power BI Desktop projects Azure DevOps integration](projects-git.md)  
-[Power BI Desktop project Dataset folder](projects-dataset.md)  
-[Power BI Desktop project Report folder](projects-report.md)  
+[Power BI Desktop project dataset folder](projects-dataset.md)  
+[Power BI Desktop project report folder](projects-report.md)  
