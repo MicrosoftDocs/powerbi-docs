@@ -7,7 +7,7 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/13/2023
+ms.date: 06/06/2023
 LocalizationGroup: Share your work
 ---
 # Power BI dataset experience in Excel
@@ -78,6 +78,8 @@ In **PivotTable Fields**, you can see all the tables and measures from your Powe
 - The order of Power BI datasets in the pane may be different from their order in the Data hub in the Power BI service.
 
 - For newly created datasets, recently refreshed datasets, or datasets that you just got access to, it may take up to 24 hours for these datasets to show up in the Power BI Datasets pane. If you don't see the dataset you want, navigate to the Power BI Data hub (`https://app.powerbi.com/datahub`) from the Power BI Datasets pane in Excel and use **Analyze in Excel** to create an Excel workbook for that dataset.
+
+- Excel and Power BI visuals use different query languages and data load behaviors, so data load performance can be different between Excel and Power BI.
 
 ## Next steps
 
