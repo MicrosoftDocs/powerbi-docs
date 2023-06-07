@@ -68,17 +68,17 @@ In this table, a custom app refers to a web app created using embedded analytics
 
 | Scenario | Azure   | Azure           | Office          |
 |----------|---------|-----------------|-----------------|
-|          | (A SKU) | (F AKU)         | (P and EM SKUs) |
+|          | (F SKU) | (A SKU)         | (P and EM SKUs) |
 |[Embed for your customers](embed-sample-for-customers.md)</br>(app owns data)     |✔        |✔        |✔        |
-|[Embed for your organization](embed-sample-for-your-organization.md)</br>(user owns data)     |✖        |✔         |✔         |
-|Microsoft 365 apps</br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li><li>[Embed in PowerPoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✖        |✔        |✔         |
-|[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✖        |✔        |✔         |
+|[Embed for your organization](embed-sample-for-your-organization.md)</br>(user owns data)     |✔        |✖         |✔         |
+|Microsoft 365 apps</br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li><li>[Embed in PowerPoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✔        |✖        |✔         |
+|[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✔        |✖        |✔         |
 
 >[!NOTE]
 >
 >* A [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is needed for publishing content to a Power BI app workspace.
 >* Only the **P SKU** allows free Power BI users to consume Power BI apps and shared content, in Power BI service.
->* *F* SKUs are part of Fabric. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
+>* **F SKUs** are part of Fabric. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
 ### Capacity considerations
 
