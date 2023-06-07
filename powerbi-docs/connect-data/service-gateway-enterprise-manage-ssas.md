@@ -175,6 +175,8 @@ For the Active Directory lookup to work properly at runtime, you must change the
 
 Each time a user interacts with Analysis Services, the effective user name is passed to the gateway and then to the on-premises Analysis Services server. The UPN, which is typically the email address you use to sign in to the cloud, is passed to Analysis Services as the effective user in the `EffectiveUserName` connection property.
 
+When the dataset is in Import Mode, the gateway will send the EffectiveUserName of the UPN of the dataset owner. This means that the UPN of the dataset owner will be passed to Analysis Services as the effective user in the `EffectiveUserName` connection property.
+
 This email address should match a defined UPN within the local Active Directory domain. The UPN is a property of an AD account. A Windows account must be present in an Analysis Services role to have access to the server. If no match is found in Active Directory, the sign-in won't be successful.
 
 <a name="role-based-security"></a>
