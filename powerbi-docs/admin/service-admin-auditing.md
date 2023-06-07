@@ -408,6 +408,8 @@ The following operations are available in both the audit and activity logs.
 | Get Power BI group users | GetGroupUsers | |
 | Get refresh history via lockbox | GetRefreshHistoryViaLockbox | |
 | Imported file to Power BI   | Import   |           |
+| Import file to Power BI started   | ImportArtifactStart   |  Only emitted for importing Power BI Desktop files (.pbix). When ImportSource is PowerBI, the file import originated from a Power BI client or API. When ImportSource is OneDriveSharePoint, the file import originated from  OneDrive or SharePoint document library. |
+| Import file ot Power BI ended   | ImportArtifactEnd   | Only supported for importing Power BI Desktop files (.pbix). ImportSource indicates Power BI or OneDriveSharePoint. ImportType tells you if the file is new (Publish) or is being updated (Republish).   |
 | Initiated Power BI gateway cluster authentication process | | |
 | Inserted or updated current value connection of Power BI metric | UpsertGoalCurrentValueConnection | |
 | Inserted or updated target value connection of Power BI metric | | |
