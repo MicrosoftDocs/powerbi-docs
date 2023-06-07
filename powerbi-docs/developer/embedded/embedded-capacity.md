@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/09/2023
+ms.date: 06/07/2023
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -24,23 +24,33 @@ Power BI embedded analytics requires a capacity (*A*, *EM*, *P*, or *F* SKU) in 
 
 Power BI embedded analytics offers two publishing solutions. Each solution requires different SKUs.
 
-* [*Power BI Embedded*](#power-bi-embedded)  is an Azure offering aimed at ISVs and developers who want to embed visuals into their applications. Power BI Embedded uses *A* or *F* SKUs.
+* [*Power BI Embedded*](#power-bi-embedded)  is an Azure offering aimed at ISVs and developers who want to embed visuals into their applications. Power BI Embedded uses *A* SKUs.
 
-* [*Power BI Premium*](#power-bi-premium) is a Microsoft Office offer that includes Embedding Power BI. It's geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers. Power BI Premium uses *EM*, *P*, or *F* SKUs.
+* [*Power BI Premium*](#power-bi-premium) is a Microsoft Office offer that includes Embedding Power BI. It's geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers. Power BI Premium uses *EM*, or *P* SKUs.
 
-*F* SKUs are part of Microsoft Fabric and support all Fabric items while the other SKUs support only Power BI items. To read more about F SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
+* [Microsoft Fabric](/fabric) brings together new and existing components from Power BI, Azure Synapse, and Azure Data Explorer into a single integrated environment. Power BI items can be *F* SKUs are part of Microsoft Fabric and support all Fabric items while the other SKUs support only Power BI items. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
 ### Power BI Embedded
 
 Power BI Embedded is for ISVs and developers who want to embed visuals into their applications.
 
 Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity.
+Power BI Embedded is shipped with an [*A* SKU](../../enterprise/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
 
 ### Power BI Premium
 
 [Power BI Premium](../../enterprise/service-premium-what-is.md) is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
 
 Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal (Power BI service). This enables Power BI Premium to provide a solution for both internal and external customer facing applications.
+
+Power BI premium offers two SKUs, *P* and *EM*.
+
+* [Understand the differences between the *P* and *EM* SKUs](../../enterprise/service-premium-what-is.md#subscriptions-and-licensing)
+* [Buy a Premium SKU](../../enterprise/service-admin-premium-purchase.md)
+
+### Fabric
+
+*F* SKUs are part of Microsoft Fabric and support all Fabric items while the other SKUs support only Power BI items. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
 ## Capacity and SKUs
 
@@ -50,30 +60,19 @@ To understand which workloads are supported for each tier, refer to the [Configu
 
 To plan and test your capacity, see [Capacity planning](embedded-capacity-planning.md).
 
-### Power BI Embedded SKUs
-
-Power BI Embedded is shipped with an [*A* SKU](../../enterprise/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
-
-### Power BI Premium SKUs
-
-Power BI premium offers two SKUs, *P* and *EM*.
-
-* [Understand the differences between the *P* and *EM* SKUs](../../enterprise/service-premium-what-is.md#subscriptions-and-licensing)
-* [Buy a Premium SKU](../../enterprise/service-admin-premium-purchase.md)
-
 ### Which SKU should I use?
 
 The table below provides a summary of features, the capacity they require, and the specific SKU that is needed for each one.
 
 In this table, a custom app refers to a web app created using embedded analytics. When you embed to a custom web app as a developer (using the JavaScript or .NET SDKs, or the REST APIs), you can control and customize the UX. This ability isn't available with other embedding options, such as Power BI service and Power BI Mobile.
 
-| Scenario | Azure   | Office          |
-|----------|---------|-----------------|
-|          | (A SKU) | (P and EM SKUs) |
-|[Embed for your customers](embed-sample-for-customers.md)</br>(app owns data)     |✔        |✔        |
-|[Embed for your organization](embed-sample-for-your-organization.md)</br>(user owns data)     |✖        |✔         |
-|Microsoft 365 apps</br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li><li>[Embed in PowerPoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✖        |✔        |
-|[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✖        |✔        |
+| Scenario | Azure   | Azure           | Office          |
+|----------|---------|-----------------|-----------------|
+|          | (A SKU) | (F AKU)         | (P and EM SKUs) |
+|[Embed for your customers](embed-sample-for-customers.md)</br>(app owns data)     |✔        |✔        |✔        |
+|[Embed for your organization](embed-sample-for-your-organization.md)</br>(user owns data)     |✖        |✔         |✔         |
+|Microsoft 365 apps</br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li><li>[Embed in PowerPoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✖        |✔        |✔         |
+|[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✖        |✔        |✔         |
 
 >[!NOTE]
 >
