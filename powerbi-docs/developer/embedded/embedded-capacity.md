@@ -22,13 +22,13 @@ Power BI embedded analytics requires a capacity (*A*, *EM*, *P*, or *F* SKU) in 
 
 ## What are the different capacities?
 
-Power BI embedded analytics offers two publishing solutions. Each solution requires different SKUs.
+Power BI embedded analytics offers two publishing solutions, and Microsoft Fabric offers a third. Each solution requires different SKUs.
 
-* [*Power BI Embedded*](#power-bi-embedded)  is an Azure offering aimed at ISVs and developers who want to embed visuals into their applications. Power BI Embedded uses *A* SKUs.
+* [*Power BI Embedded*](#power-bi-embedded)
 
-* [*Power BI Premium*](#power-bi-premium) is a Microsoft Office offer that includes Embedding Power BI. It's geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers. Power BI Premium uses *EM*, or *P* SKUs.
+* [*Power BI Premium*](#power-bi-premium)
 
-* [Microsoft Fabric](/fabric) brings together new and existing components from Power BI, Azure Synapse, and Azure Data Explorer into a single integrated environment. Power BI items can be *F* SKUs are part of Microsoft Fabric and support all Fabric items while the other SKUs support only Power BI items. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
+* [Microsoft Fabric](#fabric)
 
 ### Power BI Embedded
 
@@ -50,7 +50,7 @@ Power BI premium offers two SKUs, *P* and *EM*.
 
 ### Fabric
 
-*F* SKUs are part of Microsoft Fabric and support all Fabric items while the other SKUs support only Power BI items. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
+[Microsoft Fabric](/fabric) is an Azure offering that brings together new and existing components from Power BI, Azure Synapse, and Azure Data Explorer into a single integrated environment. Fabric uses *F* SKUs and supports embedding Power BI items. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
 ## Capacity and SKUs
 
@@ -78,6 +78,7 @@ In this table, a custom app refers to a web app created using embedded analytics
 >
 >* A [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is needed for publishing content to a Power BI app workspace.
 >* Only the **P SKU** allows free Power BI users to consume Power BI apps and shared content, in Power BI service.
+>* *F* SKUs are part of Fabric. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
 ### Capacity considerations
 
