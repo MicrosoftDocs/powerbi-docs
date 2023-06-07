@@ -119,8 +119,16 @@
         href: service-admin-portal-share-data-microsoft-365-services.md
       - name: Insights settings
         href: service-admin-portal-insights.md
+      - name: Datamart settings
+        href: service-admin-portal-datamart.md
+      - name: Data model settings
+        href: service-admin-portal-data-model.md
       - name: Quick measure suggestions settings
         href: service-admin-portal-quick-measure-suggestions-settings.md
+      - name: Scale-out settings
+        href: service-admin-portal-scale-out.md
+      - name: Git integration settings
+        href: service-admin-portal-git-integration.md
   - name: Capacity settings
     expanded: false
     items:
