@@ -24,7 +24,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 - Bug fixes
 
-    - Fixed issue with RTL browser setting viewing pbix reports
+    - Fixed an issue with the RTL browser setting viewing pbix reports
     
 *Version: 1.17.8546.6252(build 15.0.1112.41), Released: May 26, 2023*
 
