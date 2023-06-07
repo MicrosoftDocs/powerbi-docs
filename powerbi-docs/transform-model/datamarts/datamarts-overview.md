@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 06/16/2022
+ms.date: 06/05/2023
 LocalizationGroup: Data from files
 ---
 # Introduction to datamarts
@@ -105,6 +105,7 @@ The following articles provide more information about datamarts and Power BI:
 * [Create reports with datamarts](datamarts-create-reports.md)
 * [Access control in datamarts](datamarts-access-control.md)
 * [Datamart administration](datamarts-administration.md)
+* [Microsoft Fabric decision guide: data warehouse or lakehouse](/fabric/get-started/decision-guide-warehouse-lakehouse)
 
 
 For more information about dataflows and transforming data, see the following articles:
