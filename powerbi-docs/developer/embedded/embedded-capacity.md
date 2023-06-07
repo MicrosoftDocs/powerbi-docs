@@ -24,9 +24,9 @@ Power BI embedded analytics requires a capacity (*A*, *EM*, *P*, or *F* SKU) in 
 
 Power BI embedded analytics offers two publishing solutions, and Microsoft Fabric offers a third. Each solution requires different SKUs.
 
-* [*Power BI Embedded*](#power-bi-embedded)
+* [Power BI Embedded](#power-bi-embedded)
 
-* [*Power BI Premium*](#power-bi-premium)
+* [Power BI Premium](#power-bi-premium)
 
 * [Microsoft Fabric](#fabric)
 
