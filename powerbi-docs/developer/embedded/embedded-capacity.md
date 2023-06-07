@@ -41,7 +41,7 @@ Power BI Embedded is shipped with an [*A* SKU](../../enterprise/service-admin-pr
 
 [Power BI Premium](../../enterprise/service-premium-what-is.md) is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
 
-Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal (Power BI service). This enables Power BI Premium to provide a solution for both internal and external customer facing applications.
+Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal (Power BI service). This service enables Power BI Premium to provide a solution for both internal and external customer facing applications.
 
 Power BI premium offers two SKUs, *P* and *EM*.
 
@@ -50,7 +50,7 @@ Power BI premium offers two SKUs, *P* and *EM*.
 
 ### Fabric
 
-[Microsoft Fabric](/fabric) is an Azure offering that brings together new and existing components from Power BI, Azure Synapse, and Azure Data Explorer into a single integrated environment. Fabric uses *F* SKUs and supports embedding Power BI items. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
+[Microsoft Fabric](/fabric) is an Azure offering that brings together new and existing components from Power BI, Azure Synapse, and Azure Data Explorer into a single integrated environment. Fabric uses *F* SKUs and supports embedding Power BI items. To read more about *F* SKUs, see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
 ## Capacity and SKUs
 
@@ -62,7 +62,7 @@ To plan and test your capacity, see [Capacity planning](embedded-capacity-planni
 
 ### Which SKU should I use?
 
-The table below provides a summary of features, the capacity they require, and the specific SKU that is needed for each one.
+The following table provides a summary of features, the capacity they require, and the specific SKU that is needed for each one.
 
 In this table, a custom app refers to a web app created using embedded analytics. When you embed to a custom web app as a developer (using the JavaScript or .NET SDKs, or the REST APIs), you can control and customize the UX. This ability isn't available with other embedding options, such as Power BI service and Power BI Mobile.
 
@@ -87,7 +87,7 @@ For development testing, you can use free embed trial tokens with a Pro license.
 > [!IMPORTANT]
 > Free trial tokens are limited to development testing only. Once going to production, a capacity must be purchased. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
 
-The table below lists payment and usage considerations per capacity.
+The following table lists payment and usage considerations per capacity.
 
 | **Payment and usage** | **Power BI Embedded** | **Power BI Premium** | **Power BI Premium** |
 |-----------------------|-----------------------|----------------------|----------------------|
@@ -99,7 +99,7 @@ The table below lists payment and usage considerations per capacity.
 
 ### SKU memory and computing power
 
-The table below describes the resources and limits of each SKU.
+The following table describes the resources and limits of each SKU.
 
 [!INCLUDE [Power BI capacity and SKUs](../../includes/capacity-table.md)]
 
