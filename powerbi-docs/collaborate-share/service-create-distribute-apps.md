@@ -96,6 +96,14 @@ On the **Audience** tab, you create and manage audience groups within the app.
     
 1. Select the hide/show icon next to each item in the workspace to determine the content that this app audience can see.
 
+    
+    >[!IMPORTANT]
+    >Hiding content from the audience will make it unavailable in the published app.
+    >
+    >Dashboard tiles pointing at reports that are hidden from the audience will no longer work, instead they will display an error: “The report shown in this tile doesn’t exist or you don’t have permission to view it.”.
+    >
+    >To address the issue, make sure the report is available for the audience of the dashboard.
+     
 1. In the **Manage audience access** pane, specify groups or users to add to the current audience group. 
 
     :::image type="content" source="media/service-create-distribute-apps/audience-tab.png" alt-text="Screenshot of Manage audience access tab.":::
