@@ -126,7 +126,9 @@ For any paginated report you **author online**, you may insert text boxes in the
 
 ### Format and style text in a text box
 
-1. After selecting a text box the **Text box format** tab is displayed. From this tab you can format the font style include font, color, size, and text decoration like bold, italics, and underline. <!-- IMAGE TO BE ADDED -->
+1. After selecting a text box the **Text box format** tab is displayed. From this tab you can format the font style include font, color, size, and text decoration like bold, italics, and underline. 
+    
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-text-styles.png" alt-text="Screenshot of text styling options.":::    
 1. You can format font styles at the character and line level while editing the text box. Or select the text box to highlight all text and format all text within the text box at once.
 
 ### Delete a text box
