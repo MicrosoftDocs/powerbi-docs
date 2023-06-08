@@ -1,10 +1,11 @@
 ---
 title: Automate your deployment pipeline by using APIs and Azure DevOps
 description: Learn how to automate your deployment pipeline, the Power BI Application lifecycle management (ALM) tool, by using APIs and Azure DevOps.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
+ms.custom: fabric
 ms.subservice: pbi-deployment-pipeline
 ms.date: 05/09/2023
 ---
