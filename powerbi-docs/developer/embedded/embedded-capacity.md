@@ -28,7 +28,7 @@ Power BI embedded analytics offers two publishing solutions, and Microsoft Fabri
 
 * [Power BI Premium](#power-bi-premium)
 
-* [Microsoft Fabric](#fabric)
+* [Microsoft Fabric](#microsoft-fabric)
 
 ### Power BI Embedded
 
@@ -48,7 +48,7 @@ Power BI premium offers two SKUs, *P* and *EM*.
 * [Understand the differences between the *P* and *EM* SKUs](../../enterprise/service-premium-what-is.md#subscriptions-and-licensing)
 * [Buy a Premium SKU](../../enterprise/service-admin-premium-purchase.md)
 
-### Fabric
+### Microsoft Fabric
 
 [Microsoft Fabric](/fabric) is an Azure offering that brings together new and existing components from Power BI, Azure Synapse, and Azure Data Explorer into a single integrated environment. Fabric uses *F* SKUs and supports embedding Power BI items. To read more about *F* SKUs, see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
@@ -78,7 +78,7 @@ In this table, a custom app refers to a web app created using embedded analytics
 >
 >* A [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is needed for publishing content to a Power BI app workspace.
 >* Only the **P SKU** allows free Power BI users to consume Power BI apps and shared content, in Power BI service.
->* **F SKUs** are part of Fabric. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
+>* The **F SKU** is part of Fabric. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
 ### Capacity considerations
 
@@ -99,7 +99,7 @@ The following table lists payment and usage considerations per capacity.
 
 ### SKU memory and computing power
 
-The following table describes the resources and limits of each SKU.
+The following table describes the resources and limits of each Power BI SKU. For information about F SKUs, see [Microsoft Fabric licenses](/fabric/enterprise/licenses#capacity-and-skus).
 
 [!INCLUDE [Power BI capacity and SKUs](../../includes/capacity-table.md)]
 
