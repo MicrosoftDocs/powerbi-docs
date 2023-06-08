@@ -37,9 +37,9 @@ This is the de-DE version of the report on the service
 
 
 ## Considerations and limitations
-•	If you publish/upload a report from Power BI Report Builder, 
-  o You can overwrite the browser language settings by setting the # Report.Language # property to the desired language. For eg. if Report.Language = de-DE, irrespective of the browser language, the report will display de-DE if the translations exist in the PBI dataset.
-  o	If the Report.Language property is set to an expression, then it will not overwrite the browser/ Power BI language. That would be the case when the Report.Language property is set to a Report Parameter (Example: “=Parameters!SomeLanguageParameter”).
-•	Power BI language settings don’t affect the rendering from the server.
+- If you publish/upload a report from Power BI Report Builder, 
+    - You can overwrite the browser language settings by setting the # Report.Language # property to the desired language. For eg. if Report.Language = de-DE, irrespective of the browser language, the report will display de-DE if the translations exist in the PBI dataset.
+    - If the Report.Language property is set to an expression, then it will not overwrite the browser/ Power BI language. That would be the case when the Report.Language property is set to a Report Parameter (Example: “=Parameters!SomeLanguageParameter”).
+-	Power BI language settings don’t affect the rendering from the server.
     
       
