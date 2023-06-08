@@ -36,7 +36,8 @@ The option to [allow Azure Active Directory guest users to edit and manage conte
 
 Most email addresses are supported for guest user invitations, including personal email accounts like gmail.com, outlook.com, and hotmail.com. Azure AD B2B calls these addresses *social identities*.
 
-You can't invite users that are associated with a government cloud, like [Power BI for US Government](service-govus-overview.md).
+> [!NOTE]
+> In Azure AD, external users can be set to UserType Member. UserType Member **is not** currently supported in Power BI.
 
 ## Invite guest users
 
@@ -214,8 +215,7 @@ Additionally, to use in-place dataset sharing, tenant admins need to enable the 
 
 ## Next steps
 
-For more detailed info, including how row-level security works, check out the whitepaper: [Distribute Power BI content to external guest users using Azure AD B2B](../guidance/whitepaper-azure-b2b-power-bi.md).
-
-For information about Azure AD B2B, see [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/).
-
-For information about in-place dataset sharing, see [Power BI in-place dataset sharing with guest users in external organizations(preview)](../collaborate-share/service-dataset-external-org-share-about.md). 
+* For more detailed info, including how row-level security works, check out the whitepaper: [Distribute Power BI content to external guest users using Azure AD B2B](../guidance/whitepaper-azure-b2b-power-bi.md).
+* For information about Azure AD B2B, see [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/).
+* For information about in-place dataset sharing, see [Power BI in-place dataset sharing with guest users in external organizations(preview)](../collaborate-share/service-dataset-external-org-share-about.md).
+* For information about government clouds, see [Power BI for US Government](service-govus-overview.md).
