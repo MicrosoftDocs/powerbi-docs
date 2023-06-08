@@ -77,7 +77,7 @@ In this table, a custom app refers to a web app created using embedded analytics
 >[!NOTE]
 >
 >* A [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is needed for publishing content to a Power BI app workspace.
->* Only the **P SKU** allows free Power BI users to consume Power BI apps and shared content, in Power BI service.
+>* Only **P SKU**s and **F SKU**s larger than F32 allow free Power BI users to consume Power BI apps and shared content in Power BI service. Smaller **F SKU**s require a Pro license to consume Power BI content.
 >* The **F SKU** is part of Fabric. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
 ### Capacity considerations
