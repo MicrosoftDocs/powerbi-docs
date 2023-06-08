@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.custom: contperf-fy21q1, intro-deployment
+ms.custom: contperf-fy21q1, intro-deployment, fabric
 ms.date: 05/09/2023
 ms.search.form: Introduction to Deployment pipelines, Manage access in Deployment pipelines, Deployment pipelines operations, Create deployment pipeline
 ---
