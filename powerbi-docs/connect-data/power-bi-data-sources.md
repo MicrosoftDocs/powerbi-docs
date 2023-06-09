@@ -14,7 +14,7 @@ ms.date: 06/09/2023
 
 Power BI uses Power Query to connect to data sources. **Power BI data sources** are documented in the following article: [Power Query (including Power BI) connectors](/power-query/connectors/).
 
-Each data source article in the Power Query documentation describes the capabilities of the data connector, such as whether DirectQuery is supported. The following image shows the **Capabilities supported** section for [Azure Data Explorer (Kusto)](/power-query/connectors/azure-data-explorer#capabilities-supported), where it states that DirectQuery is supported for the connector in Power BI.
+Each data source article in the Power Query documentation describes the capabilities of the data connector, such as whether DirectQuery is supported. The following image shows the **Capabilities supported** section for [Azure Data Explorer (Kusto)](/power-query/connectors/azure-data-explorer#capabilities-supported), where it states that DirectQuery is supported for the connector in Power BI. If DirectQuery (or any other capability) is not specifically listed, the capability is not supported. 
 
 :::image type="content" source="media/power-bi-data-sources-01.png" alt-text="Screenshot showing DirectQuery as a capability of a data connector.":::
 
