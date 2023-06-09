@@ -115,7 +115,7 @@ It's also important to call out that the shared-capacity limitation for daily re
 ![Refresh now](media/refresh-data/refresh-now.png)
 
 > [!NOTE]
-> Data refreshes must complete in less than 2 hours on shared capacity. If your datasets require longer refresh operations, consider moving the dataset onto a Premium capacity. On Premium, the maximum refresh duration is 5 hours.
+> Data refreshes must complete in less than 2 hours on shared capacity. If your datasets require longer refresh operations, consider moving the dataset onto a Premium capacity. On Premium, the maximum refresh duration is 5 hours, but using XMLA endpoint to refresh data can bypass the 5-hour limit
 
 #### OneDrive refresh
 
