@@ -90,7 +90,7 @@ Now that you have the columns that you want, you can format the table using the 
     :::image type="content" source="media/paginated-formatted-table/paginated-table-resize-columns.png" alt-text="Screenshot of resizing the width of the columns.":::
 1. To edit the text in a column header select the header you would like to edit and make your changes.
 
-<!-- IMAGE TO BE ADDED -->
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-column-rename.png" alt-text="Screenshot of editing text in a column header.":::
 
 > [!NOTE]
 > To revert to using the original column header based on your data source, remove and add the field again in the **Data** pane.
