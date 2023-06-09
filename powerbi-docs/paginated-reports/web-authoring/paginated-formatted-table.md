@@ -156,6 +156,10 @@ To delete a text box, right-click a text box and select **Remove**. Alternativel
     > [!NOTE]
     > In order to leave room for the beginning of your formatted table of data, the section line cannot be moved to the very bottom of the first page.
 
+1. The page margins and section divider visibility can be turned off by going to **View** and selecting **Hide margin** and / or **Hide section divider**.
+
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-hide-margins-sections.png" alt-text="Screenshot of options to hide the section line or page margins.":::
+
 ### Considerations and limitations when working with text
 - Like with other objects in a report, only one text box may be selected at a time. 
 - Text boxes cannot be duplicated or copied and pasted. Text within a text box can be highlighted, copied, and pasted within text boxes. 
