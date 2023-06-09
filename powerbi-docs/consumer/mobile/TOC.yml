@@ -110,7 +110,7 @@
         href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
       - name: "View on-premises reports and KPIs"
         href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
-      - name: "Presentation mode on Surface Hub and Windows 10 devices"
+      - name: "Presentation mode on Windows 10 devices"
         href: mobile-windows-10-app-presentation-mode.md
       - name: "Single Sign-On in the Windows app"
         href: mobile-windows-10-app-single-sign-on-sso.md
