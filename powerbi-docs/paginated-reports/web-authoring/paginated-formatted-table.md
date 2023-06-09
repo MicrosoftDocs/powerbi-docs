@@ -100,7 +100,7 @@ This option takes you back to the online editor experience, where you can make c
 > [!NOTE]
 > This **Edit** button isn't the same as the **Edit** button on the **File** menu.  That **Edit** button opens Power BI Report Builder instead. **If you edit this report in Report Builder, you won't be able to edit it online anymore.**
 
-## Add text to a paginated report
+## Add text to the paginated report
 For any paginated report you **author online**, you may insert text boxes in the top section of your report to brand, title, or describe your formatted table data below. 
 
 ### Add a text box and begin typing
@@ -159,6 +159,9 @@ To delete a text box, right-click a text box and select **Remove**. Alternativel
 1. The page margins and section divider visibility can be turned off by going to **View** and selecting **Hide margin** and / or **Hide section divider**.
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-hide-margins-sections.png" alt-text="Screenshot of options to hide the section line or page margins.":::
+
+    > [!NOTE]
+    > The page margins and section line are design helpers while authoring the paginated report and are not saved in the report and are not visible in exported reports or while in reading view.
 
 ### Considerations and limitations when working with text
 - Like with other objects in a report, only one text box may be selected at a time. 
