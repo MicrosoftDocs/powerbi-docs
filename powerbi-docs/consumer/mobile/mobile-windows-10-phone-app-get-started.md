@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/17/2022
+ms.date: 06/09/2023
 ms.custom: intro-get-started
 ---
 # Get started with the Power BI app for Windows
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>The Power BI app for Surface Hub will be retired on July 31st, 2023. As of that date, the app will no longer be available for download from the Microsoft apps store for Surface Hub devices, and no further product updates will be released for this platform. Please use the Power BI service to view your Power BI content on those devices.
 
 The Power BI app for Windows brings Power BI to your Windows device. You get up-to-date, touch-enabled access to your business information. You can interact with all the Power BI reports, dashboards, and apps that are available to you in the Power BI service - both those that you've [created](../../fundamentals/service-get-started.md) yourself as well as those that have been created by others and shared with you. All this from the Power BI app for Windows.
 
