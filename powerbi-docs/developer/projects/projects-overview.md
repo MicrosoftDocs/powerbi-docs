@@ -53,7 +53,7 @@ Let's take a closer look at what you see in your project's root folder:
 
 ##### \<project name>.Dataset
 
-A collection of files and folders that represent a Power BI dataset. It contains some of the most important files you're likely to work on, like model.bim. To learn more about the files and subfolders and files in here, see [Project Ddtaset folder](projects-dataset.md).
+A collection of files and folders that represent a Power BI dataset. It contains some of the most important files you're likely to work on, like model.bim. To learn more about the files and subfolders and files in here, see [Project Dataset folder](projects-dataset.md).
 
 ##### \<project name>.Report
 
