@@ -2,7 +2,7 @@
 title: "View culture-sensitive reports in Power BI paginated reports"
 description: Set the language locale for a Power BI paginated report created from a Power BI dataset.
 author: nisrinivasan
-ms.author: nirusrin
+ms.author: nisrinivasan
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
@@ -12,12 +12,12 @@ ms.date: 06/07/2023
 
 # View culture-sensitive reports in Power BI paginated reports
 
-[!INCLUDE [applies-yes-service-no-report-builder-no-desktop](../../../includes/applies-yes-service-no-report-builder-no-desktop.md)]
+[!INCLUDE [applies-yes-service-no-report-builder-no-desktop](../../includes/applies-yes-service-no-report-builder-no-desktop.md)]
 
 You can now view paginated reports in your local or preferred language on the Power BI service. This applies only to **PBI datasets**. There are pre-requisites that you should follow in order to be able to leverage this capability. 
 
 ## Pre-requisites
-[!INCLUDE [power-bi-paginated-prerequisites](../../../includes/power-bi-paginated-prerequisites.md)]
+[!INCLUDE [power-bi-paginated-prerequisites](../../includes/power-bi-paginated-prerequisites.md)]
 
 Add translations to the PBI dataset: [Translation Builder documentation](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md) 
 
@@ -27,7 +27,7 @@ In Power BI Report Builder, the translated data from the Data translator tool ca
 
 You can also publish/ upload an RDL report from Power BI Report Builder and view the report on the service by setting the language in the browser.  
 
-You can create a [paginated report on the service] (../../../includes/paginated-formatted-table.md) and view the translated content on the service by setting the language in the browser settings, if your **Power BI dataset contains the translations**.
+You can create a [paginated report on the service] (../../includes/paginated-formatted-table.md) and view the translated content on the service by setting the language in the browser settings, if your **Power BI dataset contains the translations**.
 
 Another way to view the translated version is to append the url with **"?language=de-DE".**
 
