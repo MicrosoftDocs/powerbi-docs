@@ -32,7 +32,7 @@ You can create a [paginated report on the service] (../includes/paginated-format
 Another way to view the translated version is to append the url with **"?language=de-DE".**
 
 This is the **en-US** version of the report on the service
-:::image type="content" source="media/paginated-formatted-table/paginated-localization_en_US_report" alt-text="Screenshot of tables in en-US":::
+:::image type="content" source="web-authoring/media/paginated-formatted-table/paginated-localization_en_US_report.png media/paginated-formatted-table/paginated-localization_en_US_report" alt-text="Screenshot of tables in en-US":::
 
 This is the **de-DE** version of the report on the service
 :::image type="content" source="media/paginated-formatted-table/paginated-localization_de_DE_report" alt-text="Screenshot of tables in de-DE":::
