@@ -1,7 +1,7 @@
 ---
-title: "View culture-sensitive reports in Power BI paginated reports"
+title: "Culture-sensitive reports in Power BI paginated reports"
 description: Set the language locale for a Power BI paginated report created from a Power BI dataset.
-author: nisrinivasan
+author: nirusrin
 ms.author: nisrinivasan
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,9 +10,9 @@ ms.topic: how-to
 ms.date: 06/07/2023
 ---
 
-# View culture-sensitive reports in Power BI paginated reports
+# Culture-sensitive reports in Power BI paginated reports
 
-[!INCLUDE [applies-yes-service-no-report-builder-no-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)]
+[!INCLUDE [applies-yes-service-yes-report-builder-no-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)]
 
 You can now view paginated reports in your local or preferred language on the Power BI service. This applies only to **PBI datasets**. There are pre-requisites that you should follow in order to be able to leverage this capability. 
 
