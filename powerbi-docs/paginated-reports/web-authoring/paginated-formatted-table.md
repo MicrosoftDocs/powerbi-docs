@@ -94,6 +94,8 @@ Now that you have the columns that you want, you can format the table using the 
 
 > [!NOTE]
 > To revert to using the original column header based on your data source, remove and add the field again in the **Data** pane.
+>
+> When you export to CSV, it doesn't reflect the renamed column name. To learn more, see [data renderer formats](../report-design/render-data-report-builder-service.md#data-renderer-formats).
 
 ## Edit a paginated report
 
