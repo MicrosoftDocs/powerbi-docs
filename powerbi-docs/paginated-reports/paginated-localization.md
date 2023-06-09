@@ -14,12 +14,12 @@ ms.date: 06/07/2023
 
 [!INCLUDE [applies-yes-service-yes-report-builder-no-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)]
 
-You can now view paginated reports in your local or preferred language on the Power BI service. This applies only to **PBI datasets**. There are pre-requisites that you should follow in order to be able to leverage this capability. 
+You can now view paginated reports in your local or preferred language on the Power BI service. This guidance applies only to **Power BI datasets**. There are prerequisites that you should follow in order to be able to leverage this capability. 
 
 ## Pre-requisites
 [!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
 
-Add translations to the PBI dataset: [Translation Builder documentation](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md) 
+Add translations to the Power BI dataset: [Translation Builder documentation](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md) 
 
 
 ## Get started
@@ -31,17 +31,17 @@ You can create a [paginated report on the service] (../includes/paginated-format
 
 Another way to view the translated version is to append the url with **"?language=de-DE".**
 
-This is the **en-US** version of the report on the service
-:::image type="content" source="../web-authoring/media/paginated-formatted-table/paginated-localization_en_US_report.png media/paginated-formatted-table/paginated-localization_en_US_report" alt-text="Screenshot of tables in en-US":::
+Below is a **en-US** version of a sample report on the service
+:::image type="content" source="media/paginated-language-report-parameter/paginated-localization_en_US_report.png" alt-text="Screenshot of tables in en-US":::
 
-This is the **de-DE** version of the report on the service
-:::image type="content" source="../web-authoring/media/paginated-formatted-table/paginated-localization_de_DE_report" alt-text="Screenshot of tables in de-DE":::
+Below is the **de-DE** version of the localized report on the service
+:::image type="content" source="media/paginated-language-report-parameter/paginated-localization_de_DE_report.png" alt-text="Screenshot of tables in de-DE":::
 
 
 ## Considerations and limitations
 - When publishing/uploading a report from Power BI Report Builder
-    - You can overwrite the browser language settings by setting the **Report.Language** property to the desired language. For eg. if **Report.Language = de-DE**, irrespective of the browser language, the report will display de-DE if the translations exist in the PBI dataset.
-    - When the **Report.Language** property is set to an expression, the browser/ Power BI language settings will not be over-ridden. That would be the case when the Report.Language property is set to a Report Parameter (Example: “=Parameters!SomeLanguageParameter”).
+    - You can overwrite the browser language by setting the **Report.Language** property to the desired language. For eg. if **Report.Language = de-DE**, the report will display de-DE as long as the translations exist in the PBI dataset.
+    - When the **Report.Language** property is set to an expression, the browser/ Power BI language settings will **not** be over-ridden. or when the **Report.Language** property is set to a report parameter (Example: **“=Parameters!SomeLanguageParameter”**).
 -	Power BI language settings don’t affect the rendering from the server.
     
       
