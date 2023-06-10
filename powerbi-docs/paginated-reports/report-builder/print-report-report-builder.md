@@ -1,7 +1,7 @@
 ---
 title: "Print a report (Power BI Report Builder) | Microsoft Docs"
 description: You can view and print a report from a browser, the Power BI Services web portal, or any application that you use to view an exported report.
-ms.date: 05/15/2023
+ms.date: 06/09/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.reviewer: saurkumar
   
  When you print a report, you can specify the size of the paper to use. The size of the paper determines the number of pages in a report and which report data fits on each page. Paper size affects only reports that are rendered with hard page-break renders: PDF, Image, and Print. Setting the paper size has no effect on other renderers. For more information, see [Rendering Behaviors &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs).  
   
- From the report viewer toolbar in the Power BI Services web portal or in preview in Power BI Report Builder, you can export a report to a hard page-break renderer or click the Print button to print a copy of the report. You might need to set the paper size or other page setup properties. Use the **Report Properties** dialog box to change page setup properties, including paper size.  
+ From the report viewer toolbar in the Power BI Services web portal or in preview in Power BI Report Builder, you can export a report to a hard page-break renderer or select the Print button to print a copy of the report. You might need to set the paper size or other page setup properties. Use the **Report Properties** dialog box to change page setup properties, including paper size.  
   
  You can specify print page margins in two different locations: in design mode and in run mode.  
   
@@ -23,65 +23,65 @@ ms.reviewer: saurkumar
 -   **Run mode.** When you set page margins in run mode, this information is not saved in the report definition. The next time you print the report, you will get the settings from the report definition, unless you indicate your print margins again.  
   
     > [!NOTE]  
-    >  Print margins are not displayed in design or run modes. There is no relationship between the design surface area and the print area of your report. To see print margins, in run mode, click Print Layout on the **Run** tab on the Ribbon.  
+    >  Print margins are not displayed in design or run modes. There is no relationship between the design surface area and the print area of your report. To see print margins, in run mode, select Print Layout on the **Run** tab on the Ribbon.  
   
  For more information about report paging, see [Pagination in Reporting Services &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs).  
   
   
-### To print a report in Power BI Report Builder  
+### Print a report in Power BI Report Builder  
   
 1.  Open a report.  
   
-2.  On the Home tab, click **Run**.  
+2.  On the Home tab, select **Run**.  
   
-3.  (optional) Click **Print Layout** to see how the report will look when it is printed.  
+3.  (optional) Select **Print Layout** to see how the report will look when it is printed.  
   
-4.  (optional) Click **Page Setup** to set paper, orientation, and margins.  
+4.  (optional) Select **Page Setup** to set paper, orientation, and margins.  
   
     > [!NOTE]  
     >  The default values for these come from the report properties, which are set in Design view. The values you set here in the **Page Setup** dialog box are for this session only. When you close this report and reopen it, it will have the default values again.  
   
-5.  Click **Print**.  
+5.  Select **Print**.  
   
 6.  In the **Print** dialog box, select a printer and specify other printing options.  
   
-### To print a report from a Web browser application  
+### Print a report from a Web browser application  
   
 1.  In the Power BI Services web portal, navigate to the report that you want to print. Open the report.  
   
-3.  On the toolbar at the top of the report, click **Print**.  
+3.  On the toolbar at the top of the report, select **Print**.  
   
     > [!NOTE]  
     >  The first time you print an HTML report, the report server prompts you to install an ActiveX control used for printing. You must install and configure the control to print.  
   
-4.  In the **Print** dialog box, select a printer, and then click **Prin**t.  
+4.  In the **Print** dialog box, select a printer, and then select **Print**.  
   
-### To print a report from other applications  
+### Print a report from other applications  
   
 1.  In the Power BI Services web portal, navigate to the report that you want to print. Open the report.  
   
-2.  On the toolbar at the top of the report, select a rendering format, and then click **Export**. The report opens in a viewer application that corresponds to the rendering format.  
+2.  On the toolbar at the top of the report, select a rendering format, then select **Export**. The report opens in a viewer application that corresponds to the rendering format.  
   
      For example, if you select PDF, the report opens in Adobe Acrobat Reader.  
   
-3.  On the **File** menu in that program, click **Print**.  
+3.  On the **File** menu in that program, select **Print**.  
   
-### To change paper size  
+### Change paper size  
   
-1.  Right-click outside of the report body and click **Report Properties**.  
+1.  Right-click outside of the report body and select **Report Properties**.  
   
 2.  In **Page Setup**, select a value from the **Paper Size** list. Each option populates the **Width** and **Height** properties. You can also specify a custom size by typing numeric values in the **Width** and **Height** boxes. Select **OK**.
   
     > [!NOTE]  
     >  Size values have a default unit based on the user's locale settings. To designate a different unit, type a physical unit designator such as cm, mm, pt, or pc after the numeric value.  
   
-### To set page margins in design mode  
+### Set page margins in design mode  
   
--   Right-click the blue area around the design surface, click **Report Properties**, and then click the **Page Setup** page.  
+-   Right-click the blue area around the design surface, select **Report Properties**, then select the **Page Setup** page.  
   
-### To set page margins in run mode  
+### Set page margins in run mode  
   
--   Click **Page Setup** on the **Run** tab.  
+-   Select **Page Setup** on the **Run** tab.  
   
 ## Next steps  
  [Print Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/print-reports-report-builder-and-ssrs)   
