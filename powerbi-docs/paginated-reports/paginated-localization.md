@@ -23,7 +23,7 @@ Add translations to the Power BI dataset: [Translation Builder documentation](ht
 
 
 ## Get started
-In Power BI Report Builder, you can create a culture-sensitive report by adding the translated label measures to an RDL dataset. You can do this by specifying expressions such as **=First(Fields!Product_Sales_Report_Label.Value, "TranslatedLabelsDataSet")** .
+In Power BI Report Builder, you can create a culture-sensitive report by adding the translated label measures to an RDL dataset. You can then reference the translated labels by specifying expressions such as **=First(Fields!Product_Sales_Report_Label.Value, "TranslatedLabelsDataSet")** .
 
 You can publish/ upload an RDL report from Power BI Report Builder and view the report on the service by setting the language in the browser.  
 
@@ -41,7 +41,7 @@ Below is the **de-DE** version of the localized report on the service
 ## Considerations and limitations
 - When publishing/uploading a report from Power BI Report Builder
     - You can overwrite the browser language by setting the **Report.Language** property to the desired language. For eg. if **Report.Language = de-DE**, the report will display de-DE as long as the translations exist in the PBI dataset.
-    - When the **Report.Language** property is set to an expression, the browser/ Power BI language settings will **not** be over-ridden. or when the **Report.Language** property is set to a report parameter (Example: **“=Parameters!SomeLanguageParameter”**).
+    - When the **Report.Language** property is set to an expression, the browser/ Power BI language settings will **not** be over-ridden. For example the **Report.Language** property is set to a report parameter (Example: **“=Parameters!SomeLanguageParameter”**).
 -	Power BI language settings don’t affect the rendering from the server for eg. dates and number formatting.
     
       
