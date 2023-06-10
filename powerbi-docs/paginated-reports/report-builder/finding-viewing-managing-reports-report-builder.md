@@ -1,7 +1,7 @@
 ---
 title: "Find, view, & manage reports (Power BI Report Builder ) | Microsoft Docs"
 description: In Power BI Report Builder, you can browse to find Power BI paginated reports, shared data sources, models, and other related report items.
-ms.date: 05/15/2023
+ms.date: 06/09/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Finding, viewing, and managing reports (Power BI Report Builder)
+# Find, view, and manage reports (Power BI Report Builder)
   In Power BI Report Builder, you can browse folders online or SharePoint site to find paginated reports, shared data sources, models, and other related report items. To make it easier to find reports, Power BI Report Builder maintains a list of recently used servers and sites and provides direct access to the Desktop and My Computer folders in the file system of your computer.
   
   Reports can be previewed in Power BI Report Builder when you create or update reports and viewed and managed online by using the web portal or on a SharePoint site that is integrated with Power BI Services by using the built-in SharePoint tools and features after you publish the reports. For more information, see [Previewing Reports in Power BI Report Builder](/sql/reporting-services/report-builder/previewing-reports-in-report-builder).
@@ -34,21 +34,16 @@ ms.reviewer: saurkumar
 -   **Viewing reports** You preview a report in Power BI Report Builder when creating or updating reports. Power BI Report Builder loads and processes the report online; otherwise, the reports are processed locally. The report viewer in Power BI Report Builder displays the rendered report.  
   
  
-##  <a name="ViewingAndManagingReportServer"></a> Viewing and managing reports online  
+##  <a name="ViewingAndManagingReportServer"></a> View and manage reports online  
  You use the web portal to view and manage reports online. Browse the folders online to locate reports, run reports, to view them in a browser, and perform management tasks.  
   
  The web portal can help you with the following management tasks:  
   
--   View and update the properties of reports, shared data sources, and other report items.  
-  
--   Upload reports and create new shared data sources for reports.  
-  
--   Create schedules to run reports at specified times and intervals.  
-  
--   Create, change, or delete subscriptions to reports.  
-  
--   Create report history and specify the number of report snapshots to keep in the report history.  
-  
+-   View and update the properties of reports, shared data sources, and other report items.    
+-   Upload reports and create new shared data sources for reports.    
+-   Create schedules to run reports at specified times and intervals.    
+-   Create, change, or delete subscriptions to reports.    
+-   Create report history and specify the number of report snapshots to keep in the report history.    
 -   Create new folders on the server to organize your reports the way you want.  
   
  Some of these tasks might be done for you by the administrator online.   
@@ -63,7 +58,7 @@ ms.reviewer: saurkumar
   
  After you run a report, you can refresh it to see new data.  
   
-### Refreshing reports  
+### Refresh reports  
  Report data frequently changes and you might want to refresh the report to view the newest data. You can refresh a report in three different ways.  
   
 |Option|Result|  
@@ -84,11 +79,11 @@ ms.reviewer: saurkumar
   
  [Find, view, and manage reports](/sql/reporting-services/report-builder/finding-viewing-and-managing-reports-report-builder-and-ssrs)
   
- [Finding and viewing Reports with a browser &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/finding-and-viewing-reports-with-a-browser-report-builder-and-ssrs)  
+ [Find and view Reports with a browser &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/finding-and-viewing-reports-with-a-browser-report-builder-and-ssrs)  
  Describes how to use a URL to find and view a report.  
   
- [Previewing Reports in Power BI Report Builder](/sql/reporting-services/report-builder/previewing-reports-in-report-builder)  
+ [Preview Reports in Power BI Report Builder](/sql/reporting-services/report-builder/previewing-reports-in-report-builder)  
  Describes how to preview reports while you create or update them.  
   
 ## Next steps  
- [Saving Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/saving-reports-report-builder)   
+ [Save Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/saving-reports-report-builder)   
