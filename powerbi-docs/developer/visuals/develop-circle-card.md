@@ -201,7 +201,7 @@ Set up the **visual.ts** file.
 
 ### (Optional) Review the code in the visuals file
 
-Verify that the final code in the *visuals.ts* file looks like this:
+Verify that the final code in the *visual.ts* file looks like this:
 
 ```typescript
 /*

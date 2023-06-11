@@ -657,9 +657,9 @@ Add the `Circle` formatting settings to *settings.ts*. For more information how 
 
 ### Add a method to apply visual settings
 
-Add the `getFormattingModel` method used to apply visual settings, and required imports to the *visuals.ts* file.
+Add the `getFormattingModel` method used to apply visual settings, and required imports to the *visual.ts* file.
 
-1. In VS Code, from the **src** folder, open **visuals.ts**.
+1. In VS Code, from the **src** folder, open **visual.ts**.
 
 2. Add these `import` statements at the top of **visual.ts**.
 
