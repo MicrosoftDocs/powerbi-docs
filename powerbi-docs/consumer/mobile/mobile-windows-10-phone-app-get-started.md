@@ -83,8 +83,6 @@ Open the Retail Reports or Sales Reports folder to explore their KPIs.
 
 ![Screenshot of a report, showing  KPIs.](media/mobile-windows-10-phone-app-get-started/power-bi-win10-ssrs-sample-kpis.png)
 
----
-
 ## Other tasks
 Here are some other things you can do in the Power BI app for Windows devices with reports, dashboards, and apps in Power BI, and with Reporting Services KPIs in the Reporting Services web portal.
 
