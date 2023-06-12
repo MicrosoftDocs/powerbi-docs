@@ -19,7 +19,7 @@ You can now view paginated reports in your local or preferred language on the Po
 ## Pre-requisites
 [!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
 
-Add translations to the Power BI dataset: [Translation Builder documentation](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md) 
+Add translations to the Power BI dataset: [Translation Builder documentation](https://go.microsoft.com/fwlink/?linkid=2239513) 
 
 
 ## Get started
