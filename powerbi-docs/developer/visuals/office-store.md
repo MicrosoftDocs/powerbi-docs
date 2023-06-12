@@ -1,5 +1,5 @@
 ---
-title: Publish Power BI visuals to the Microsoft commercial marketplace
+title: Publish Power BI visuals to the Microsoft commercial marketplace.
 description: Learn how you can publish your custom visual to Partner Center for others to discover and use.
 author: mberdugo
 ms.author: monaberdugo
@@ -31,7 +31,7 @@ Before submitting a Power BI visual to AppSource, ensure that it complies with t
 >[!IMPORTANT]
 >If you're resubmitting or updating a visual, **do not change its GUID**. Follow these instructions to [test a new version of a visual](submission-testing.md#testing-a-new-version-of-a-published-visual).
 
-When you are ready to submit your Power BI visual, verify that your visual meets all the requirements listed below.
+When you're ready to submit your Power BI visual, verify that your visual meets all the following requirements.
 
 | Item | Required | Description |
 | --- | --- | --- |
@@ -87,4 +87,4 @@ All certified visuals must pass all the [certification requirements](power-bi-cu
 * [Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
 * [Test your Power BI visual before submitting for certification](submission-testing.md)  
 
-**More questions?** [Try asking the Power BI Community](https://community.powerbi.com/)
+**More questions?** [Try asking the Power BI Community](https://community.powerbi.com/).
