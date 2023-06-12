@@ -69,9 +69,9 @@ When you're ready to create or update your offer, follow the instructions in [Cr
 
 ## Track submission status and usage
 
-You can review the [validation policies](/legal/marketplace/certification-policies#1180-power-bi-visuals).
+* Review the [validation policies](/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
-* After submission, you will be able to view the submission status in the [app dashboard](https://sellerdashboard.microsoft.com/Application/Summary/).
+<!--- * After submission, you will be able to view the submission status in the [app dashboard](https://sellerdashboard.microsoft.com/Application/Summary/). --->
 
 * To understand when your Power BI visual will be available to download from AppSource, review the Power BI visuals [publication timeline](power-bi-custom-visuals-certified.md#publication-timeline).
 
