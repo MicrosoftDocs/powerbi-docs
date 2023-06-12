@@ -975,7 +975,7 @@ Run the visual in the **Power BI** server to see how it looks:
 
     >[!IMPORTANT]
     >Do not close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter <kbd>Ctrl</kbd>+<kbd>C</kbd>, and if prompted to terminate the batch job, enter <kbd>Y</kbd>, and then <kbd>Enter</kbd>.
-2. [View the visual in Power BI service](develop-circle-card.md#view-the-visual-in-power-bi-service) by selecting the **Developer visual** from the **Visualization pane**.
+2. [View the visual in Power BI service](develop-circle-card.md#view-the-visual-in-the-power-bi-service) by selecting the **Developer visual** from the **Visualization pane**.
 
    :::image type="content" source="./media/create-bar-chart/developer-visual.png" alt-text="Screenshot of developer visual.":::
 
