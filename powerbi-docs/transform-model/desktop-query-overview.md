@@ -122,7 +122,7 @@ In the **Query Settings** pane, you can rename steps, delete steps, or reorder t
 
 ## Advanced Editor
 
-The **Advanced Editor** lets you see the code that Power Query Editor is creating with each step. It also lets you create your own code in the [Power Query M formula language](https://learn.microsoft.com/en-us/powerquery-m/). To launch the advanced editor, select **View** from the ribbon, then select **Advanced Editor**. A window appears, showing the code generated for the selected query.  
+The **Advanced Editor** lets you see the code that Power Query Editor is creating with each step. It also lets you create your own code in the [Power Query M formula language](/powerquery-m/). To launch the advanced editor, select **View** from the ribbon, then select **Advanced Editor**. A window appears, showing the code generated for the selected query.  
 :::image type="content" source="media/desktop-query-overview/query-overview-advanced-editor.png" alt-text="Screenshot of Power BI Desktop showing the Advanced Editor dialog box.":::
 
 You can directly edit the code in the **Advanced Editor** window. To close the window, select the **Done** or **Cancel** button.  
