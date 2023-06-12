@@ -102,15 +102,15 @@
         href: mobile-app-find-access-google-search.md
       - name: "Fixing 'Your corporate SSL certificate is untrusted'"
         href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
-    - name: Power BI app for Windows 10 devices
+    - name: Power BI Windows app
       items: 
-      - name: "Get started with the Windows 10 app"
+      - name: "Get started with the Windows app"
         href: mobile-windows-10-phone-app-get-started.md
       - name: "Pin a dashboard to the Start screen"
         href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-      - name: "View on-premises reports and KPIs"
+      - name: "View on-premises KPIs"
         href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
-      - name: "Presentation mode on Surface Hub and Windows 10 devices"
+      - name: "Presentation mode on Windows app"
         href: mobile-windows-10-app-presentation-mode.md
       - name: "Single Sign-On in the Windows app"
         href: mobile-windows-10-app-single-sign-on-sso.md
