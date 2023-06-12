@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 05/23/2023
+ms.date: 06/14/2023
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## May 2023 Update (2.117.286.0)
+## June 2023 Update (2.118.286.0)
 
-This May we have all sorts of new features growing, blooming, and blossoming to create a fabric of amazing visuals, insights, and intelligence for Power BI Desktop and the Power BI service. 
+This June we have a sunny collection of features and enhancement for Power BI Desktop and the Power BI service, designed to warm up your visuals and your data models. 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -41,47 +41,25 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 
 The following updates are new to Power BI Desktop this month:
 
-### Microsoft Fabric
-* Power BI Direct Lake mode (preview)  [[video]](https://youtu.be/zLgq2L2kk9g?t=29)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425716)  
-* Azure Analysis Services to Fabric and Power BI Premium Migration Experience now generally available  [[video]](https://youtu.be/zLgq2L2kk9g?t=29)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425771) 
-* Optimize ribbon in Power BI Desktop now generally available  [[video]](https://youtu.be/zLgq2L2kk9g?t=29)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425772)  [[article]](../create-reports/desktop-optimize-ribbon.md)
-* Hybrid tables now generally available  [[video]](https://youtu.be/zLgq2L2kk9g?t=29)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425773)  [[article]](../connect-data/service-dataset-modes-understand.md#hybrid-tables)
-* Azure Log Analytics for Power BI datasets now generally available  [[video]](https://youtu.be/zLgq2L2kk9g?t=29)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425774)  [[article]](../transform-model/log-analytics/desktop-log-analytics-overview.md)
-* Power BI data hub updated and rebranded as OneLake data hub  [[video]](https://youtu.be/zLgq2L2kk9g?t=34)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425749) 
-
 
 ### Reporting
-* Azure maps now generally available  [[video]](https://youtu.be/zLgq2L2kk9g?t=204)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425712) 
-* Measure driven data labels  [[video]](https://youtu.be/zLgq2L2kk9g?t=397)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425713) 
-* Use OneDrive and SharePoint files in Power BI Desktop  [[video]](https://youtu.be/zLgq2L2kk9g?t=408)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425714) 
-* Matrix accessibility improvements  [[video]](https://youtu.be/zLgq2L2kk9g?t=428)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425715) 
-* On-object interaction - updates (preview)  [[video]](https://youtu.be/zLgq2L2kk9g?t=463)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425716)
-* Set query limits in Power BI Desktop  [[video]](https://youtu.be/zLgq2L2kk9g?t=567)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425717) 
+* New card visual  [[video]](https://youtu.be/5O30NI4x4ho?t=61)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23927-_Toc137015465) 
+* OneLake data hub in Power BI Desktop  [[video]](https://youtu.be/5O30NI4x4ho?t=81)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23927-_Toc137015466) 
+* On-Object interaction (updates)  [[video]](https://youtu.be/5O30NI4x4ho?t=123)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23927-_Toc137015467) 
 
-
-### Modeling
-* New DAX function: MATCHBY  [[video]](https://youtu.be/zLgq2L2kk9g?t=770)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425719) 
 
 
 ### Data connectivity
-* On-premises data gateway, May 2023 release  [[video]](https://youtu.be/zLgq2L2kk9g?t=793)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425721) 
-* New Get Data category: Fabric  [[video]](https://youtu.be/zLgq2L2kk9g?t=142)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425723)  
-* New connectors: 
-  * Lakehouse in Microsoft Fabric  [[video]](https://youtu.be/zLgq2L2kk9g?t=160)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425725)  
-  * Warehouse in Microsoft Fabric  [[video]](https://youtu.be/zLgq2L2kk9g?t=177)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425726)  
-  * KQL database in Microsoft Fabric  [[video]](https://youtu.be/zLgq2L2kk9g?t=189)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425727)  
-  * MongoDB Atlas SQL  [[video]](https://youtu.be/zLgq2L2kk9g?t=819)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425729)  
-  * Celonis EMS  [[video]](https://youtu.be/zLgq2L2kk9g?t=840)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425730)  
-  * CloudBlue PSA  [[video]](https://youtu.be/zLgq2L2kk9g?t=865)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425731)  
-  * SolarWinds Service Desk  [[video]](https://youtu.be/zLgq2L2kk9g?t=875)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425732)  
-* Many updated data connectors  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23312-_Toc134425733)  
+* Visual Cue for new tenant settings  [[video]](https://youtu.be/5O30NI4x4ho?t=226)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23927-_Toc137015469) 
+* Tenant admin settings API  [[video]](https://youtu.be/5O30NI4x4ho?t=250)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23927-_Toc137015470)  
+
 
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
 
 ### Visuals
-* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-21693-_Toc134425758)
+* Many new and updated visuals  [[video]](https://youtu.be/5O30NI4x4ho?t=1280) [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23927-_Toc137015483)
 
 
 
@@ -89,27 +67,23 @@ The following updates are new to Power BI Desktop this month:
 
 The following updates are new to the Power BI service this month:
 
-* Data loss prevention (DLP) policies now generally available [[video]](https://youtu.be/zLgq2L2kk9g?t=585)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-21693-_Toc134425743) 
-* Classify and protect your Power BI data  [[video]](https://youtu.be/zLgq2L2kk9g?t=368)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-21693-_Toc134425744)
-* Detect sensitive information using custom keywords  [[video]](https://youtu.be/zLgq2L2kk9g?t=368)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-21693-_Toc134425745)
-* Complex conditions in DLP for Power BI  [[video]](https://youtu.be/zLgq2L2kk9g?t=368)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-21693-_Toc134425746)
-* DLP policies in sovereign clouds  [[video]](https://youtu.be/zLgq2L2kk9g?t=368)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-21693-_Toc134425747)
-* Edit your data model in the Power BI service (opt-in)  [[video]](https://youtu.be/zLgq2L2kk9g?t=368)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-21693-_Toc134425748)  [[article]](../transform-model/service-edit-data-models.md)
-* Renaming of the Power BI Free user license  [[video]](https://youtu.be/zLgq2L2kk9g?t=142)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-21693-_Toc134425768)
+* Storytelling in PowerPoint  [[video]](https://youtu.be/5O30NI4x4ho?t=264)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23927-_Toc137015472) 
+* Edit your data model in the Power BI service (updates)  [[video]](https://youtu.be/5O30NI4x4ho?t=278)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23927-_Toc137015473)  [[article]](../transform-model/service-edit-data-models.md)
+* New admin setting to control email subscriptions  [[video]](https://youtu.be/5O30NI4x4ho?t=142)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23927-_Toc137015474)  [[article]](../admin/service-admin-portal-export-sharing.md#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions)
+* Admin monitoring  [[video]](https://youtu.be/5O30NI4x4ho?t=307)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23927-_Toc137015475)
+* Power BI implementation planning guidance  [[video]](https://youtu.be/5O30NI4x4ho?t=468)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/#post-23927-_Toc137015476)  [[article]](https://aka.ms/PowerBIImplementationPlanning)
 
 
 ---
 
 
-
-
-For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/).
+For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-may-2023-feature-summary/).
 
 
 ### Power BI monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post.
 
-> [!VIDEO https://www.youtube.com/embed/zLgq2L2kk9g]
+> [!VIDEO https://www.youtube.com/embed/5O30NI4x4ho]
 
 > [!NOTE]
 > The video might use earlier versions of Power BI Desktop or the Power BI service.
