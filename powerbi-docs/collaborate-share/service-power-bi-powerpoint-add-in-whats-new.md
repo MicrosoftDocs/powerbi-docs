@@ -35,7 +35,7 @@ With exciting, recently released features you can now:
 
 ### National cloud support
 
-The Power BI add-in for PowerPoint is now supported in national/regional clouds as an admin-managed add-in. Admin's should see [Deploying the add-in in national/regional clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-national/regional-clouds) for further details.
+The Power BI add-in for PowerPoint is now supported in national/regional clouds as an admin-managed add-in. Admin's should see [Deploying the add-in in national/regional clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-national-regional-clouds) for further details.
 
 ## February 2023
 
