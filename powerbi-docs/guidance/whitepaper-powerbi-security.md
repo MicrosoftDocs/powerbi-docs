@@ -199,7 +199,7 @@ See [Configure Multi-Geo support for Power BI Premium](../admin/service-admin-pr
 
 Power BI services are available in specific Azure geographies as described in the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). For more information about where your data is stored and how it's used, refer to the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Commitments concerning the location of customer data at rest are specified in the Data Processing Terms of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
-Microsoft also provides datacenters for sovereign entities. For more information about Power BI service availability for national clouds, see [Power BI national clouds](https://powerbi.microsoft.com/clouds/).
+Microsoft also provides datacenters for sovereign entities. For more information about Power BI service availability for national/regional clouds, see [Power BI national/regional clouds](https://powerbi.microsoft.com/clouds/).
 
 ## Data handling
 
@@ -507,9 +507,9 @@ The following questions are common security questions and answers for Power BI. 
 
 **What about data sovereignty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country or region borders?**
 
-* Some customers in certain geographies have an option to create a tenant in a national cloud, where data storage and processing is kept separate from all other datacenters. National clouds have a slightly different type of security, since a separate data trustee operates the national cloud Power BI service on behalf of Microsoft.
+* Some customers in certain geographies have an option to create a tenant in a national/regional cloud, where data storage and processing is kept separate from all other datacenters. National/Regional clouds have a slightly different type of security, since a separate data trustee operates the national/regional cloud Power BI service on behalf of Microsoft.
 
-  Alternatively, customers can also set up a tenant in a specific region. However, such tenants do not have a separate data trustee from Microsoft. Pricing for national clouds is different from the generally available commercial Power BI service. For more information about Power BI service availability for national clouds, see [Power BI national clouds](https://powerbi.microsoft.com/clouds/).
+  Alternatively, customers can also set up a tenant in a specific region. However, such tenants do not have a separate data trustee from Microsoft. Pricing for national/regional clouds is different from the generally available commercial Power BI service. For more information about Power BI service availability for national/regional clouds, see [Power BI national/regional clouds](https://powerbi.microsoft.com/clouds/).
 
 **How does Microsoft treat connections for customers who have Power BI Premium subscriptions? Are those connections different than those established for the non-Premium Power BI service?**
 
@@ -540,6 +540,6 @@ For more information on Power BI, see the following resources.
 * [Power BI REST API - Overview](/rest/api/power-bi/)
 * [Power BI API reference](/rest/api/power-bi/)
 * [On-premises data gateway](../connect-data/service-gateway-onprem.md)
-* [Power BI National Clouds](https://powerbi.microsoft.com/clouds/)
+* [Power BI National/Regional Clouds](https://powerbi.microsoft.com/clouds/)
 * [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 * [Overview of single sign-on (SSO) for gateways in Power BI](../connect-data/service-gateway-sso-overview.md)
