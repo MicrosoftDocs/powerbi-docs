@@ -41,7 +41,7 @@ In user consent mode, when a user applies a sensitivity label to a dataset or re
 
 ![Screenshot of the sensitivity label dialog with the user consent for downstream inheritance checked.](media/service-security-sensitivity-label-downstream-inheritance/downstream-inheritance-user-consent-checkbox.png)
 
-By default, the checkbox is selected. This means that when the user applies a sensitivity label to a dataset or report, the label will filter down to its downstream content. For each downstream item, the label will be applied only if:
+By default, the checkbox is selected. This means that when the user applies a sensitivity label to a dataset or report, the label propagates down to its downstream content. For each downstream item, the label is applied only if:
 
 * The user who applied or changed the label has Power BI edit permissions on the downstream item (that is, the user is an admin, member, or contributor in the workspace where the downstream item is located).
 * The user who applied or changed the label is [authorized](service-security-sensitivity-label-change-enforcement.md) to change the sensitivity label that already exists on the downstream item. 
@@ -71,7 +71,7 @@ By default, downstream inheritance operates in user consent mode. To switch down
 
 ### Downstream inheritance between datasets and reports published from *.pbix* files
 
-When you publish a *.pbix* file that has a sensitivity label, the label is that is inherited by dataset and report created in the service is considered to be automatically or manually applied depending on whether the label on the *.pbix* file was automatically or manually applied. This has implications for subsequent downstream inheritance from the dataset to its associated report. If the label on the *.pbix* file was automatically applied, then later, after publishing, if the label on the dataset is changed, the associated report will inherit the change. However, if the label on the *.pbix* file was manually applied, then if the label on the published dataset is changed, the label on the associated report **will not** be overwritten, as it is considered to be manually applied. This is in keeping with the rule that downstream inheritance will never overwrite a manually applied label.
+When you publish a *.pbix* file that has a sensitivity label, the label is that is inherited by the dataset and report created in the service is considered to be automatically or manually applied depending on whether the label on the *.pbix* file was automatically or manually applied. This has implications for subsequent downstream inheritance from the dataset to its associated report. If the label on the *.pbix* file was automatically applied, then later, after publishing, if the label on the dataset is changed, the associated report will inherit the change. However, if the label on the *.pbix* file was manually applied, then if the label on the published dataset is changed, the label on the associated report **will not** be overwritten, as it is considered to be manually applied. This is in keeping with the rule that downstream inheritance will never overwrite a manually applied label.
 
 ## Next steps
 
