@@ -7,7 +7,7 @@ ms.reviewer: ebendinsky
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 06/06/2023
+ms.date: 06/13/2023
 ---
 
 # Create exportable paginated reports in the Power BI service
@@ -68,7 +68,7 @@ Give the editor a few moments to run a new query on the dataset. The formatted t
 
 This viewer shows you a preview of your currently unsaved paginated report. Use this pane to make sure everything in your report looks good before editing or saving the report.
 
-If columns are in the wrong order in the **Build** pane, don't worry.  You can easily re-order the columns in the **Build** pane columns by dragging the columns into the desired order.
+If columns are in the wrong order in the **Build** pane, don't worry.  You can easily reorder the columns in the **Build** pane columns by dragging the columns into the desired order.
 
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-build-pane-selected-fields.png" alt-text="Screenshot of dragging items.":::
 
@@ -133,16 +133,16 @@ For any paginated report you **author online**, you may insert text boxes in the
 
 ### Format and style text in a text box
 
-1. After selecting a text box the **Text box format** tab is displayed. From this tab you can format the font style include font, color, size, and text decoration like bold, italics, and underline. 
+1. After you select a text box, the **Text box format** tab is displayed. From this tab you can format the font style, including font, color, size, and text decoration like bold, italics, and underline. 
     
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-text-styles.png" alt-text="Screenshot of text styling options.":::    
-1. You can format font styles at the character and line level while editing the text box. Or select the text box to highlight all text and format all text within the text box at once.
+1. You can format font styles at the character and line level while you're editing the text box. Or select the text box to highlight all text and format all text within the text box at once.
 
 ### Delete a text box
 To delete a text box, right-click a text box and select **Remove**. Alternatively, with a text box selected press <kbd>DELETE</kbd>.
 
 ### Working with sections
-1. When text boxes are added to a paginated report a section line appears on the first page that separates the text boxes from your formatted table of data. The area above the section line is where text boxes are added. The area below is where your formatted table of data is added.
+1. When you add text boxes to a paginated report, a section line appears on the first page that separates the text boxes from your formatted table of data. The area above the section line is where text boxes are added. The area below is where your formatted table of data is added.
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-section-line.png" alt-text="Screenshot of the section line.":::
 
@@ -154,21 +154,21 @@ To delete a text box, right-click a text box and select **Remove**. Alternativel
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-move-section.gif" alt-text="Animation of moving the section line.":::
 
     > [!NOTE]
-    > In order to leave room for the beginning of your formatted table of data, the section line cannot be moved to the very bottom of the first page.
+    > To leave room for the beginning of your formatted table of data, you can't move the section line to the very bottom of the first page.
 
 1. The page margins and section divider visibility can be turned off by going to **View** and selecting **Hide margin** and / or **Hide section divider**.
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-hide-margins-sections.png" alt-text="Screenshot of options to hide the section line or page margins.":::
 
     > [!NOTE]
-    > The page margins and section line are design helpers while authoring the paginated report and are not saved in the report and are not visible in exported reports or while in reading view.
+    > The page margins and section line are design helpers while authoring the paginated report. They're not saved in the report and aren't visible in exported reports or while in reading view.
 
 ### Considerations and limitations when working with text
-- Like with other objects in a report, only one text box may be selected at a time. 
-- Text boxes cannot be duplicated or copied and pasted. Text within a text box can be highlighted, copied, and pasted within text boxes. 
-- Text boxes can only be placed above the section line within the boundaries of the print layout, even if web layout is selected. 
-- Text boxes may overlap. Text box layer order cannot be changed. The most recently added text box will be on top. 
-- When text entered in a text box is larger than the text box area, the bottom resize handle cannot be selected. Use the bottom corner resize handles or any other resize handles to resize the area. 
+- As with other objects in a report, you can only select one text box at a time. 
+- Text boxes can't be duplicated, or copied and pasted. You can highlight, copy, and paste text within text boxes. 
+- You can only place text boxes above the section line within the boundaries of the print layout, even if web layout is selected. 
+- Text boxes may overlap. You can't change text box layer order. The most recently added text box will be on top. 
+- When you enter text in a text box that's larger than the text box area, you can't select the bottom resize handle. Use the bottom corner resize handles or any other resize handles to resize the area. 
 
 ## Export your report
 
