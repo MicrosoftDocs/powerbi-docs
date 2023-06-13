@@ -133,7 +133,8 @@ There are different ways of creating a Microsoft 365 group. For example, you can
 > [!NOTE]
 > Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and don't support subscribing group aliases.  
 
-##Subsriptions for users outside your organization
+## Subscriptions for users outside your organization
+
 ### Subscribe external users 
 
 You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity. B2B guest users can't add subscriptions for external users. 
