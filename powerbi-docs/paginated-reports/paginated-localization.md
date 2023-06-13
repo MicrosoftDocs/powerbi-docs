@@ -33,11 +33,11 @@ Another way to view the translated version is to append the url with **"?languag
 
 Here's the English **en-US** version of a sample report on the service:
 
-:::image type="content" source="media/paginated-language-report-parameter/paginated-localization_en_US_report.png" alt-text="Screenshot of tables in en-US":::
+:::image type="content" source="media/paginated-localization/paginated-sales-summary-english.png" alt-text="Screenshot of the report in en-US.":::
 
 Here's the German **de-DE** version of the localized report on the service:
 
-:::image type="content" source="media/paginated-language-report-parameter/paginated-localization_de_DE_report.png" alt-text="Screenshot of tables in de-DE":::
+:::image type="content" source="media/paginated-localization/paginated-sales-summary-german.png" alt-text="Screenshot of report in de-DE.":::
 
 ## Considerations and limitations
 
