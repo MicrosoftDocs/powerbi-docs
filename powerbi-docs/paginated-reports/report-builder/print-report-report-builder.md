@@ -52,7 +52,7 @@ ms.reviewer: saurkumar
 3.  On the toolbar at the top of the report, select **Print**.  
   
     > [!NOTE]  
-    >  The first time you print an HTML report, the report server prompts you to install an ActiveX control used for printing. You must install and configure the control to print.  
+    >  The first time you print an HTML report, the Power BI service prompts you to install an ActiveX control used for printing. You must install and configure the control to print.  
   
 4.  In the **Print** dialog box, select a printer, and then select **Print**.  
   
