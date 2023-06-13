@@ -38,15 +38,15 @@ Your Power BI admin also needs to enable subscriptions in your tenant. If you’
 ## Subscribe to a report or dashboard
 Whether you're subscribing to a dashboard or to a report page, the process is similar. A single button allows you to subscribe to the Power BI service dashboards and reports. Subscribing to a report offers you a few more field options, so we'll use a report for our example. 
 
-:::image type="content" source="./media/end-user-subscribe/power-bi-subscribe.png" alt-text="select the Subscribe icon":::
+:::image type="content" source="./media/end-user-subscribe/power-bi-subscribe.png" alt-text="Screenshot showing the Subscribe to report icon on the top menu bar.":::
 
 Subscribing to a *paginated* report is slightly different, as outlined in [Subscribe to paginated reports](#subscribe-to-paginated-reports) in this article.
 
-1. Open the report, and from the top menu bar, select **Subscribe to report** ![Select the Subscribe icon.](./media/end-user-subscribe/power-bi-icon.png).  
+1. Open the report, and from the top menu bar, select **Subscribe to report** ![Screenshot showing the Subscribe icon.](./media/end-user-subscribe/power-bi-icon.png).  
 
 2. Select **Add new subscription** and give your subscription a name. By default, your subscription is given the same name as your report page or dashboard. Optionally, change the name of the subscription to something more meaningful.
 
-   :::image type="content" source="./media/end-user-subscribe/power-bi-subscribe-to-report.png" alt-text="Subscribe to a report screen.":::
+   :::image type="content" source="./media/end-user-subscribe/power-bi-subscribe-to-report.png" alt-text="Screenshot of the Subscribe to emails screen.":::
 
 3. Use the yellow slider to turn the subscription on and off. Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
@@ -246,7 +246,7 @@ If for example, the owner of a subscription is on vacation and a new recipient n
 
 :::image type="content" source="media/end-user-subscribe/power-bi-admin-edit.png" alt-text="Screenshot showing a list of subscriptions with the pencil icon selected.":::
 
-Admins can also take over ownership of subscriptions in the workspaces they manage. Being able to take over a subscription is essential when the original owner leaves a team or an organization. When the admin completes the take over, the original owner receives an email, and no longer see this subscription in their list of subscriptions.
+Admins can also take over ownership of subscriptions in the workspaces they manage. Being able to take over a subscription is essential when the original owner leaves a team or an organization. When the admin completes the take over, the original owner receives an email, and no longer sees this subscription in their list of subscriptions.
 
 :::image type="content" source="media/end-user-subscribe/power-bi-admin-take-over.png" alt-text="Screenshot showing a list of subscriptions with the take over icon selected.":::
 
