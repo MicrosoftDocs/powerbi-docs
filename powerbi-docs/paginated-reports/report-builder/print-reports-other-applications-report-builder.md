@@ -1,7 +1,7 @@
 ---
 title: "Print reports from other applications (Power BI Report Builder) | Microsoft Docs"
 description: Power BI Report Builder lets you export to view a report in other applications. For printing, export a report if the application has print features that you want to use.
-ms.date: 056/09/2023
+ms.date: 06/09/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
