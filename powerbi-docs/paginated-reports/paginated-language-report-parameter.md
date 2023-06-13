@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 05/31/2023
+ms.date: 06/13/2023
 ---
 
 # View culture-sensitive reports with a URL parameter in Power BI paginated reports
@@ -24,25 +24,19 @@ Consider the following situation:
 
 You're a report author, and you've created a paginated report with a Power BI dataset as the source data and an unspecified [Language property](/sql/reporting-services/report-design/set-the-locale-for-a-report-or-text-box-reporting-services) set in Power BI Report Builder.
 
-After you publish the report to the Power BI service, you can preview the locale in other languages, for example, Italian and German. You preview by adding the Language parameter to the end of the URL, preceded by a question mark and followed by an equal sign and the country code, like this:
+:::image type="content" source="media/paginated-language-report-parameter/paginated-sales-summary-english.png" alt-text="Screenshot of the report in English.":::
+
+After you publish the report to the Power BI service, you can preview the locale in other languages, for example, German. You preview by adding the Language parameter to the end of the URL, preceded by a question mark and followed by an equal sign and the country code, like this:
 
 ```
 ?Language=de-DE
 ```
 
-:::image type="content" source="media/paginated-language-report-parameter/paginated-language-code-de-de-url.png" alt-text="Adding the German de-de code.":::
+:::image type="content" source="media/paginated-language-report-parameter/paginated-language-code-de-de-url.png" alt-text="Screenshot of Adding the German de-de code.":::
 
 The result is the report in German.
 
-:::image type="content" source="media/paginated-language-report-parameter/paginated-report-german.png" alt-text="report in German.":::
-
-You can also view the report in Italian by using the Italian code:
-
-```
-?Language=it-IT
-```
-
-:::image type="content" source="media/paginated-language-report-parameter/paginated-report-italian.png" alt-text="report in Italian.":::
+:::image type="content" source="media/paginated-language-report-parameter/paginated-sales-summary-german.png" alt-text="Screenshot of report in German.":::
 
 Using the Language parameter makes it easy for report authors validate multiple culture-sensitive languages in paginated reports that are built on a Power BI dataset.
 
