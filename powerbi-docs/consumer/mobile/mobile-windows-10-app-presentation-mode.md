@@ -1,16 +1,16 @@
 ---
-title: View presentation mode on Surface Hub and Windows - Power BI
-description: Read about displaying Power BI reports in Surface Hub, and displaying Power BI dashboards, reports, and tiles in presentation mode on Windows devices.
+title: View presentation mode on Windows devices - Power BI
+description: Read about displaying Power BI dashboards, reports, and tiles in presentation mode on Windows devices.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 04/27/2022
+ms.date: 06/09/2023
 ---
-# View reports and dashboards in presentation mode on Surface Hub and Windows devices
-You can use presentation mode to display reports and dashboards in full-screen on Windows devices and Surface Hub. Presentation mode is useful for displaying Power BI at meetings or conferences, or on a dedicated projector at the office, or even just for maximizing space on a small screen.
+# View reports and dashboards in presentation mode on Windows devices
+You can use presentation mode to display reports and dashboards in full-screen on Windows devices. Presentation mode is useful for displaying Power BI at meetings or conferences, or on a dedicated projector at the office, or even just for maximizing space on a small screen.
 
 ![Screenshot of a report in presentation mode.](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
 
@@ -20,10 +20,10 @@ In presentation mode:
 * You can play a slideshow that cycles automatically between pages, bookmarks, or both pages and bookmarks.
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>The Power BI app for Surface Hub will be retired on July 31st, 2023. As of that date, the app will no longer be available for download from the Microsoft apps store for Surface Hub devices, and no further product updates will be released for this platform. Please use the Power BI service to view your Power BI content on those devices.
 
 ## Use presentation mode
-In the Power BI mobile app, tap the **Switch to presentation mode** icon.
+In the Power BI Windows app, tap the **Switch to presentation mode** icon.
 ![Full screen icon](././media/mobile-windows-10-app-presentation-mode/power-bi-full-screen-icon.png)
 The app chrome disappears and the action toolbar appears at the bottom of the screen or on the right and left sides (depending on your screen size).
 
@@ -63,7 +63,7 @@ By default, a slideshow cycles through pages only, at a rate of one every 30 sec
 
 ### Auto play a slideshow on startup
 
-You can set up the Power BI mobile app to start playing a slideshow automatically whenever the app is launched. This option is useful for creating a kiosk-like experience that runs a report in public displays without any manual intervention. See [Slideshow settings](#slideshow-settings) for detail about setting up a report for autoplay.
+You can set up the Power BI Windows app to start playing a slideshow automatically whenever the app is launched. This option is useful for creating a kiosk-like experience that runs a report in public displays without any manual intervention. See [Slideshow settings](#slideshow-settings) for detail about setting up a report for autoplay.
 
 ### Slideshow settings
 
