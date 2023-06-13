@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 11/29/2022
+ms.date: 06/13/2023
 LocalizationGroup: Data from files
 ---
 # Sensitivity label downstream inheritance

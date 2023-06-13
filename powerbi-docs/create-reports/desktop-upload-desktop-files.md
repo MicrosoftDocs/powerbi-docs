@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/08/2023
+ms.date: 06/13/2023
 LocalizationGroup: Create reports
 ---
 # Publish datasets and reports from Power BI Desktop
@@ -35,6 +35,9 @@ Publishing from Power BI Desktop has the same effect as using **Get Data** in Po
 When publishing is complete, you receive a link to your report. Select the link to open the report in your Power BI site.
 
 ![Screenshot of the successful Publishing to Power BI dialog.](media/desktop-upload-desktop-files/pbid_publish_success.png)
+
+> [!NOTE]
+> If your Desktop file has a sensitivity label, the dataset and report that are published will inherit that label, and the label will be considered automatically or manually applied depended on whether the label on the Desktop file was automatically or manually applied. The affects the behavior of sensitivity label downstream inheritance from the dataset to its associated report. See [Downstream inheritance between datasets and reports published from *.pbix* files](../enterprise/service-security-sensitivity-label-downstream-inheritance.md#downstream-inheritance-between-datasets-and-reports-published-from-pbix-files) for detail.
 
 ## Republish or replace a dataset published from Power BI Desktop
 The dataset, and any reports you created in Power BI Desktop, upload to your Power BI site when you publish a Power BI Desktop file. When you republish your Power BI Desktop file, the dataset in your Power BI site is replaced with the updated dataset from the Power BI Desktop file.
