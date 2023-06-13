@@ -42,7 +42,7 @@ Whether you're subscribing to a dashboard or to a report page, the process is si
 
 Subscribing to a *paginated* report is slightly different, as outlined in [Subscribe to paginated reports](#subscribe-to-paginated-reports) in this article.
 
-1. Open the report, and from the top menu bar, select **Subscribe to report** ![Select the Subscribe icon.](./media/end-user-subscribe/power-bi-icon-envelope.png).  
+1. Open the report, and from the top menu bar, select **Subscribe to report** ![Select the Subscribe icon.](./media/end-user-subscribe/power-bi-icon.png).  
 
 2. Select **Add new subscription** and give your subscription a name. By default, your subscription is given the same name as your report page or dashboard. Optionally, change the name of the subscription to something more meaningful.
 
