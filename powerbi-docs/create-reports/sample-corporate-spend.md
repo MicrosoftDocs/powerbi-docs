@@ -47,7 +47,7 @@ Alternatively, you can download the Corporate Spend sample as a .pbix file, whic
 
 1. After you open the file in Power BI Desktop, select **File** > **Publish** > **Publish to Power BI** or choose **Publish** in the **Home** ribbon.
 
-1. In the **Publish to Power BI** dialog box, choose a workspace and then **Select**.
+1. In the **Publish to Power BI** dialog box, choose a workspace, and then **Select**.
 
    Power BI imports the sample, adding a report and dataset to your selected workspace.
 
