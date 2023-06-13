@@ -44,7 +44,7 @@ ms.reviewer: saurkumar
 -   Create schedules to run reports at specified times and intervals.    
 -   Create, change, or delete subscriptions to reports.    
 -   Create report history and specify the number of report snapshots to keep in the report history.    
--   Create new folders on the server to organize your reports the way you want.  
+-   Create new workspace on the Power BI service to organize your reports the way you want.  
   
  Some of these tasks might be done for you by the administrator online.   
   
