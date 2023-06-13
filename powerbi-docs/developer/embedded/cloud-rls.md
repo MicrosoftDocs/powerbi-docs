@@ -56,7 +56,7 @@ Create a role in Power BI Desktop using the username() function. For example, yo
 
 :::image type="content" source="media/cloud-rls/create-dynamic-role.png" alt-text="Screenshot showing how to create a dynamic R L S role.":::
 
-Let's say you want to give your user, jane@contoso.com, access to data for *France*. When you generate an embed token for jane@contose.com, you pass the string *France* as the *username* in the *CountryDynamic* role. Your data will be filtered according to [CountryRegionCode] = *France*.
+Let's say you want to give your user, jane@contoso.com, access to data for *France*. When you generate an embed token for jane@contoso.com, you pass the string *France* as the *username* in the *CountryDynamic* role. Your data will be filtered according to [CountryRegionCode] = *France*.
 
 ```json
 {
@@ -78,9 +78,9 @@ When using dynamic security in this scenario, you only need one role for all reg
 When you're ready to embed the report into your app, you need to [generate an embed token](generate-embed-token.md#row-level-security).
 To generate a token using the Embed Token API, pass the following information to the API.
 
-* **username** (mandatory) – If the roles are dynamic, the *username* string is used as the filter. For static roles, the *username* doesn't affect the RLS and can be any string at all. Only a single username can be listed.
-* **roles** (mandatory) – The role(s) used when applying Row Level Security rules. If passing more than one role, they should be passed as a string array.
-* **dataset** (mandatory) – The dataset that is applicable for the item you're embedding.
+* **username** (required) – If the roles are dynamic, the *username* string is used as the filter. For static roles, the *username* doesn't affect the RLS and can be any string at all. Only a single username can be listed.
+* **roles** (required) – The role(s) used when applying Row Level Security rules. If passing more than one role, they should be passed as a string array.
+* **dataset** (required) – The dataset that is applicable for the item you're embedding.
 
 You can now embed your report into your app. The report will filter data according to the RLS applied.
 
