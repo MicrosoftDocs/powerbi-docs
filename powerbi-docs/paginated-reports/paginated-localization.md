@@ -1,5 +1,5 @@
 ---
-title: "View culture-sensitive paginated reports in the Power BI service"
+title: "View localized paginated reports in the Power BI service"
 description: You can view paginated reports in your local or preferred language in the Power BI service.
 author: nirusrin
 ms.author: nisrinivasan
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 06/12/2023
 ---
 
-# View culture-sensitive paginated reports in the Power BI service
+# View localized paginated reports in the Power BI service
 
 [!INCLUDE [applies-yes-service-yes-report-builder-no-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)]
 
