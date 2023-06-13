@@ -65,9 +65,13 @@ By default, downstream inheritance operates in user consent mode. To switch down
 ## Considerations and limitations
 
 * Downstream inheritance is limited to 80 items. If the number of downstream items exceeds 80, no downstream inheritance takes place. Only the item the label was actually applied to will receive the label.
-* Downstream inheritance never overwrites manually applied labels.
+* Downstream inheritance never overwrites manually applied labels. See [below](#downstream-inheritance-between-datasets-and-reports-published-from-pbix-files) for a significant consideration.
 * Downstream inheritance never replaces a label on downstream content with a label that's less restrictive than the currently applied label.
 * [Sensitivity labels inherited from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md) are automatically propagated downstream only when fully automated downstream inheritance mode is enabled.
+
+### Downstream inheritance between datasets and reports published from *.pbix* files
+
+When you publish a *.pbix* file that has a sensitivity label to the Power BI service, the label is that is inherited by the published dataset and report is considered automatically or manually applied depending on whether the label on the *.pbix* file was automatically or manually applied. This has implications for subsequent downstream inheritance from the dataset to its associated report. If the label on the *.pbix* file was automatically applied, then later, after publishing, if the label on the dataset is changed, the associated report inherit the change. However, if the label on the *.pbix* file was manually applied, then if the label on the published dataset is changed, the label on the associated report won't be overwritten, as it is considered to be manually applied. This is in keeping with the rule that downstream inheritance will never overwrite a manually applied label.
 
 ## Next steps
 
