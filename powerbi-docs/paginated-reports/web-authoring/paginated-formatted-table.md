@@ -88,6 +88,14 @@ Now that you have the columns that you want, you can format the table using the 
 1. To resize the width of the columns, hover over the edge of a column header, and drag the double-headed arrow that appears.
 
     :::image type="content" source="media/paginated-formatted-table/paginated-table-resize-columns.png" alt-text="Screenshot of resizing the width of the columns.":::
+1. To edit the text in a column header select the header you would like to edit and make your changes.
+
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-column-rename.png" alt-text="Screenshot of editing text in a column header.":::
+
+> [!NOTE]
+> To revert to using the original column header based on your data source, remove and add the field again in the **Data** pane.
+>
+> When you export to CSV, it doesn't reflect the renamed column name. To learn more, see [data renderer formats](../report-design/render-data-report-builder-service.md#data-renderer-formats).
 
 ## Edit a paginated report
 

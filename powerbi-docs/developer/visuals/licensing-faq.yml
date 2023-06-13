@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-custom-visuals
   ms.topic: faq
-  ms.date: 05/16/2023
+  ms.date: 05/29/2023
 title: Frequently asked questions about Custom visual license management and transactability
 summary: |
   This article answers some of the questions users often have about how to set up, pay for, and manage licenses for custom Power BI visuals that they purchase from [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&exp=kyyw&page=1&filters=pay-as-you-go).
@@ -54,6 +54,9 @@ sections:
           Follow [these steps](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles#view-my-billing-profiles) to see your billing profile.
 
           :::image type="content" source="./media/licensing-faq/payment.png" alt-text="Screenshot of billing profile with Invoice selected.":::
+
+          For troubleshooting payment and billing issues, see [Troubleshoot Azure payment issues](/azure/cost-management-billing/manage/billing-troubleshoot-azure-payment-issues) and [Troubleshoot a declined card](/azure/cost-management-billing/manage/troubleshoot-declined-card).
+
 
       - question: |
           Do we need to have Power BI Premium to purchase Licenses?
@@ -181,7 +184,7 @@ sections:
           If the owner wasn't an admin, the license will continue to work as long as the subscription is active. However, the subscription can't be managed by anyone else.
           
       - question: |
-          We're a global team. Can we assign licenses to someone working in another country?
+          We're a global team. Can we assign licenses to someone working in another country/region?
         answer: |
           You can assign licenses to users in the same tenant that you purchased subscription under regardless of the location.
 

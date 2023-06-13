@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 05/12/2023
+ms.date: 06/01/2023
 ms.custom: known-issue-407
 ---
 
@@ -16,7 +16,7 @@ You may see a localization bug whenever the customer has a browser locale that i
 
 **APPLIES TO:** ✔️ Power BI Service
 
-**Status:** Open
+**Status:** Fixed: June 1, 2023
 
 **Problem area:** Administration
 
