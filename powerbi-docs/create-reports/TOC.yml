@@ -528,8 +528,8 @@
         href: ../paginated-reports/paginated-reports-diagnostics.md
       - name: Create translations in tabular models
         href: /analysis-services/tabular-models/translations-in-tabular-models-analysis-services
-      - name: Check culture-sensitive reports with a URL parameter
-        href: ../paginated-reports/paginated-language-report-parameter.md
+      - name: View culture-sensitive reports in the Power BI service
+        href: ../paginated-reports/paginated-localization.md
     - name: Design paginated reports
       items: 
       - name: Plan a report

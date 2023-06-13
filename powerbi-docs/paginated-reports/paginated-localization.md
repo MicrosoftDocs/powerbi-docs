@@ -27,7 +27,7 @@ In Power BI Report Builder, you can create a culture-sensitive report by adding 
 
 You can publish a paginated RDL report from Power BI Report Builder and view the report in the Power BI service by setting the language in the browser.  
 
-You can [create a paginated report on the service](/web-authoring/paginated-formatted-table.md) and view the translated content on the service by setting the language in the browser settings, if your *Power BI dataset contains the translations*.
+You can [create a paginated report in the Power BI service](web-authoring/paginated-formatted-table.md) and view the translated content on the service by setting the language in the browser settings, if your *Power BI dataset contains the translations*.
 
 Another way to view the translated version is to append the url with **"?language=de-DE".**
 
