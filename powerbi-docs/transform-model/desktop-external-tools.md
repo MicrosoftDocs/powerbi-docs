@@ -59,15 +59,32 @@ With the Analysis Services Server name, port number, and model name, the tool us
 
 ## Data modeling operations
 
-External data modeling tools can apply modifications and have Power BI synchronize those changes with the report canvas. This synchronization is so those modifications are consistently applied in Power BI visuals. For example, external data modeling tools can override the original format string expression of a measure, and edit any of the measure properties including KPIs and detail rows. External tools can also create new roles for object and row-level security, and add translations.
+External tools, which connect to Power BI Desktop's Analysis Services instance, can make changes (write operations) to the data model. Power BI Desktop then synchronizes those changes with the report canvas so they're shown in report visuals. For example, external data modeling tools can override the original format string expression of a measure, and edit any of the measure properties including KPIs and detail rows. External tools can also create new roles for object and row-level security, and add translations.
 
 ### Supported write operations
 
-- Define and edit [measures](/analysis-services/tabular-models/measures-ssas-tabular?view=power-bi-premium-current&preserve-view=true) for calculations, including format string, KPI, and detail rows settings.
-- Add [calculation groups](/analysis-services/tabular-models/calculation-groups?view=power-bi-premium-current&preserve-view=true) for calculation reusability in complex models.
-- Create [perspectives](/analysis-services/tabular-models/perspectives-ssas-tabular?view=power-bi-premium-current&preserve-view=true) to define focused, business-domain specific views of dataset metadata.
-- Apply [metadata translations](/analysis-services/tabular-models/translations-in-tabular-models-analysis-services?view=power-bi-premium-current&preserve-view=true) to support multi-language versions within a single dataset.
-- Add dataset roles for [row-level security (RLS)](../guidance/rls-guidance.md) and [object-level security (OLS)](/analysis-services/tabular-models/object-level-security?view=power-bi-premium-current&preserve-view=true) rules to restrict data access.
+Objects that support write operations:
+
+| Object                        | Connect to AS instance    |
+|-------------------------------|---------------------------|
+| Tables                        | No                        |
+| Columns                       | Yes <sup>[1](#columns)</sup>                        |
+| Calculated tables             | Yes                       |
+| Calculated columns            | Yes                       |
+| Relationships                 | Yes                       |
+| Measures                      | Yes                       |
+| Model KPIs                    | Yes                       |
+| Calculation groups            | Yes                       |
+| Perspectives                  | Yes                       |
+| Translations                  | Yes                       |
+| Row Level Security (RLS)      | Yes                       |
+| Object Level Security (OLS)   | Yes                       |
+| Annotations                   | Yes                       |
+| M expressions                 | No                        |
+
+<a name="columns">1</a> - When using external tools to connect to the AS instance, changing a column's data type is supported, however, renaming columns is not supported.
+
+Power BI Desktop *project files* offer a broader scope of supported write operations. Those objects and operations that don't support write operations by using external tools to connect to Power BI Desktop's Analysis Services instance may be supported by editing Power BI Desktop project files. To learn more, see [Power BI Desktop projects - Model authoring](../developer/projects/projects-overview.md#model-authoring).
 
 ### Data modeling limitations
 
