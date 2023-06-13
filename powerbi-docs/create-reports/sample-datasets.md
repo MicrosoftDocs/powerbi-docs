@@ -45,6 +45,15 @@ You can explore it these ways:
 - Download the *.pbix* file and explore it in depth. Look "behind the curtain" to see how Miguel made it. This link opens the [GitHub repo for Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix). Select **Download** to download the Sales & Returns sample *.pbix* file to your computer.
 - Read about the report in the Power BI blog post, [Take a tour of the new Sales & Returns sample report](https://powerbi.microsoft.com/blog/take_a_tour_of_the_new_sales_returns_sample_report/).
 
+## Updated samples
+
+There are revised versions of the original samples. These new versions take the original datasets and incorporate the latest visualizations.
+
+To obtain these samples:
+
+- Install the [built-in samples](#install-built-in-samples) in the Power BI service.
+- Download the [Power BI report files](#download-original-sample-pbix-power-bi-files) (.pbix).
+
 ## Eight original samples
 
 Eight original samples are available for you to use. Each sample represents a different industry. You can engage with each in different formats:
@@ -146,11 +155,19 @@ Let's start with the *built-in samples*. The built-in samples are available in t
 
 1. Select the sample. It opens in Reading mode.
 
-1. Power BI imports the built-in sample and adds a new dashboard, report, and dataset to My workspace. Use the samples to take Power BI for a test run.  
+1. Power BI imports the built-in sample. It adds a new report, and dataset to **My workspace**. Some samples also include a dashboard. Use the samples to take Power BI for a test run.  
 
    :::image type="content" source="media/sample-datasets/power-bi-retail-analysis-workspace.png" alt-text="Screenshot shows the new content in a workspace." lightbox="media/sample-datasets/power-bi-retail-analysis-workspace.png" border="true":::
 
 Now that you have data, you're on your way.  Try out some of our tutorials using the built-in samples or just open the Power BI service and explore.
+
+## Download updated sample .pbix Power BI files
+
+The updated samples are also available as Power BI *.pbix* files. The *.pbix* files are designed to be used with Power BI Desktop.
+
+1. Download the files individually using these links. Selecting these links saves the file automatically to your Downloads folder.
+
+1. In Power BI Desktop, select **File** > **Open**, navigate to the location where you saved the sample *.pbix* file, and select the *.pbix* file to open it in Power BI Desktop.
 
 ## Download original sample .pbix Power BI files
 

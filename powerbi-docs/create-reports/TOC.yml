@@ -36,6 +36,8 @@
       href: ../connect-data/service-connect-to-power-bi-release-plan.md
     - name: "Customer Profitability sample"
       href: sample-customer-profitability.md
+    - name: "Corporate Spend sample"
+      href: sample-corporate-spend.md
     - name: "IT Spend Analysis sample"
       href: sample-it-spend.md
     - name: "Human Resources sample"
