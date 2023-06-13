@@ -117,7 +117,7 @@ After this process is finished, you can move on to the next step.
     }
     ```
     
-    Please note if you are using Azure Government cloud, location should be the region name of the tenant. For example, if the tenant is in US Gov Texas, we should put  "location": "usgovtexas" in this ARM template. The list of Power BI US government regions can be found [here](../enterprise/service-govus-overview.md#connect-government-and-global-azure-cloud-services)
+    If you're using an Azure Government cloud, location should be the region name of the tenant. For example, if the tenant is in US Gov Texas, you should put  "location": "usgovtexas" in the ARM template. The list of Power BI US Government regions can be found in the [Power BI for US government article](../enterprise/service-govus-overview.md#connect-government-and-global-azure-cloud-services).
 
 4. On the review screen, select **Create** to accept the terms and conditions.
 
