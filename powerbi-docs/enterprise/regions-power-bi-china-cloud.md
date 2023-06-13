@@ -12,7 +12,7 @@ ms.custom:
 
 # Power BI - operated by 21Vianet in China
 
-Microsoft Power BI service operated by 21Vianet is designed to comply with regulatory requirements in China. The services are a physically separated environment of cloud services operated and transacted currently by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“21Vianet”). This operator is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
+Microsoft Power BI service operated by 21Vianet is designed to comply with regulatory requirements in China. The services are a physically separated environment of cloud services operated and transacted currently by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“21Vianet”). This operator is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in China.
 
 
 ## Power BI feature availability

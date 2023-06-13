@@ -28,7 +28,7 @@ The articles in the Power BI migration series include:
 > [!NOTE]
 > We also recommend that you thoroughly read the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md) and [Power BI implementation planning](powerbi-implementation-planning-introduction.md) articles.
 
-There are two assumptions: Your organization has a legacy BI platform currently in place and the decision has been made to formally migrate content and users to Power BI. Migrating to the Power BI service is the primary focus of this series. Additional considerations may apply for national cloud customers beyond what is discussed in this series of articles.
+There are two assumptions: Your organization has a legacy BI platform currently in place and the decision has been made to formally migrate content and users to Power BI. Migrating to the Power BI service is the primary focus of this series. Additional considerations may apply for national/regional cloud customers beyond what is discussed in this series of articles.
 
 The following diagram shows four high-level phases for deploying Power BI in your organization.
 

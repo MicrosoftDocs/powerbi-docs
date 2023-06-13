@@ -30,7 +30,7 @@ To add live Power BI data to a PowerPoint slide, you first need to get the URL o
 If you want to add a live report page to your presentation, you need to have its URL. There are three ways to get the report page URL:
 
 * Through the **Share** option
-* Through the **Export** option (this method is not available in national clouds)
+* Through the **Export** option (this method is not available in national/regional clouds)
 * From the browser's address bar
 
 These methods differ in whether or not they can preserve the report page's current state, and what permissions people who open the PowerPoint presentation will have for viewing the report. The table below summarizes the differences.
@@ -62,7 +62,7 @@ Choose how you want to get the report page URL.
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/include-my-changes-checkbox.png" alt-text="Screenshot of Power BI report include my changes checkbox.":::
 
     > [!NOTE]
-    > The **Open in PowerPoint** option is not available in national clouds. Choose **Copy link** instead and then [paste the link into the Power BI PowerPoint add-in](#paste-the-url-of-a-report-or-visual-into-the-add-in).
+    > The **Open in PowerPoint** option is not available in national/regional clouds. Choose **Copy link** instead and then [paste the link into the Power BI PowerPoint add-in](#paste-the-url-of-a-report-or-visual-into-the-add-in).
 
 1. Copy the URL to paste into the Power BI PowerPoint add-in. Alternatively, if you want to create a new presentation with the report already loaded into the add-in, choose **Open in PowerPoint**.
 
@@ -71,7 +71,7 @@ Choose how you want to get the report page URL.
 # [Export option](#tab/export)
 
 > [!NOTE]
-> Getting the URL through the Export option is not available in national clouds.
+> Getting the URL through the Export option is not available in national/regional clouds.
 
 1. In the Power BI service, open the report to the page you want to insert. If desired, configure the page to the desired state using filters, selection, slicers, etc.
 

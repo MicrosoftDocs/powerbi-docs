@@ -36,9 +36,9 @@ Web Content Accessibility Guidelines (WCAG) help make web content accessible to 
 3. **Understandable**. Information and the operation of user interface must be understandable.
 4. **Robust**. Content can be interpreted by a wide range of user agents including assistive technologies.
 
-### US Section 508
+### US Accessibility Conformance
 
-US Section 508 is a standard that requires governments and federal agencies to make their electronic and information technology accessible to people with disabilities.
+US Accessibility Conformance requires governments and federal agencies to make their electronic and information technology accessible to people with disabilities.
 
 ### EN 301 549
 

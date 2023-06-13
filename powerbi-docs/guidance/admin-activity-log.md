@@ -47,7 +47,7 @@ Most of the examples retrieve raw JSON data. Working with the raw JSON data has 
 
 - All of the information that's available for each activity event is returned. That's helpful for you to learn what data is available. Keep in mind that the contents of an API response differs depending on the actual activity event. For example, the data available for a _CreateApp_ event is different to the _ViewReport_ event.
 - Because data that's available in the activity log changes as Power BI evolves over time, you can expect the API responses to change too. That way, new data that's introduced won't be missed. Your process is also more resilient to change and less likely to fail.
-- The details of an API response can differ for the Power BI commercial cloud and the [national clouds](/azure/active-directory/develop/authentication-national-cloud#Overview).
+- The details of an API response can differ for the Power BI commercial cloud and the [national/regional clouds](/azure/active-directory/develop/authentication-national-cloud#Overview).
 - If you have different team members (such as data engineers) who get involved with this process, simplifying the initial process to extract the data makes it easier for multiple teams to work together.
 
 > [!TIP]

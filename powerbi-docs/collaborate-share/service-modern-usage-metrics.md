@@ -279,16 +279,16 @@ When you connect to the usage data in Excel, you can create PivotTables that use
 
     ![Screenshot of PivotTable in Excel.](media/service-modern-usage-metrics/power-bi-pivottable-excel.png)
 
-## Usage metrics in national clouds
+## Usage metrics in national/regional clouds
 
-Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance, and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Usage metrics are currently available in following national clouds:
+Power BI is available in separate national/regional clouds. These clouds offer the same levels of security, privacy, compliance, and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Usage metrics are currently available in following national/regional clouds:
 
 - US Government Community Cloud
 - US Government Community Cloud High
 - US Department of Defense
 - China
 
-For more information, see [national clouds](https://powerbi.microsoft.com/clouds/).
+For more information, see [national/regional clouds](https://powerbi.microsoft.com/clouds/).
 
 ## Considerations and limitations
 

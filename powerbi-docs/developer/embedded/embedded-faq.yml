@@ -349,9 +349,9 @@ sections:
           Since Power BI Embedded is a part of Azure, it's possible to use the service with the [$200 credit received when signing up for Azure](https://azure.microsoft.com/free/).
           
       - question: |
-          Is Power BI Embedded available for national clouds (US Government, Germany, China)?
+          Is Power BI Embedded available for national/regional clouds (US Government, Germany, China)?
         answer: |
-          Power BI Embedded is also available for [national clouds](embed-sample-for-customers-national-clouds.md).
+          Power BI Embedded is also available for [national/regional clouds](embed-sample-for-customers-national-clouds.md).
           
       - question: |
           Is Power BI Embedded available for non-profits and educational?
