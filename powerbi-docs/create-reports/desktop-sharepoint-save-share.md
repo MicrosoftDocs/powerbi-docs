@@ -63,7 +63,7 @@ You can also navigate to a new OneDrive or SharePoint location through the **Qui
 
 If you can’t find what you’re looking for, you can select **Browse this device** for more options. 
 
-## Saving Power BI files to OneDrive and SharePoint
+## Save Power BI files to OneDrive and SharePoint
 
 When saving a report for the first time, you can save directly in OneDrive for Business or SharePoint. 
 
@@ -80,13 +80,13 @@ The default save location is your parent OneDrive folder, unless you change it. 
 > [!NOTE]
 > If the user isn’t signed in when attempting to save, they are prompted to sign in. 
 
-## Changing the default save location
+## Change the default save location
 
 The default save location is your parent OneDrive folder. To change the default save location, select **Options and settings > Options > Save and Recover** from the file menu. Under **Save** change the default local file location. Restart the application to see the updated default save location. When you save, the new location is the first option that appears.
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-default-save-location.png" alt-text="Screenshot of how to change the default save location." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-default-save-location.png":::
 
-## Sharing links to Power BI files stored in OneDrive or SharePoint
+## Share links to Power BI files stored in OneDrive or SharePoint
 
 To share a link to a Power BI file stored in OneDrive or SharePoint, select the **Share** button at the top right of Power BI Desktop or select **Share** from the file menu. 
 
