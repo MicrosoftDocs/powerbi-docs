@@ -61,11 +61,11 @@ To create a dashboard in the Power BI service:
 
    :::image type="content" source="media/sample-corporate-spend/select-power-bi-report.png" alt-text="Screenshot shows the Corporate Spend sample report and dataset links.":::
 
-1. Hover over a visual and then select **Pin Visual**.
+1. Hover over a visual and then select **Pin visual**.
 
    :::image type="content" source="media/sample-corporate-spend/pin-power-bi-visual.png" alt-text="Screenshot shows a Power BI visual with the pin to dashboard option highlighted.":::
 
-   Or, to add all of the visuals to a dashboard, from the report menu, select More options (**...**) > **Pin to a dashboard**.
+   Or, to add all of the visuals to a dashboard, from the report menu, select **...** (More options) > **Pin to a dashboard**.
 
 1. In **Pin to dashboard**, select **New Dashboard** and enter a name for your dashboard.
 
