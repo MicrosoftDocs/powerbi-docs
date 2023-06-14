@@ -186,7 +186,7 @@ When you drag a Power BI file to a OneDrive or SharePoint location in the file s
 
 ### Publishing to Power BI service
 
-When you have a file open from OneDrive and SharePoint in Power BI Desktop, you are unable to publish the report to the Power BI service. When you click on **publish** you are prompted to choose the workspace for your report. After choosing the workspace and clicking *select*, the dialog box closes and nothing else happens. In order to publish the report to the Power BI service, you need to save the file to your local drive. You can then reopen the local file and publish to the Power BI service. This limitation will be fixed in an upcoming Power BI Desktop release.
+When you have a file open from OneDrive and SharePoint in Power BI Desktop, you'reunable to publish the report to the Power BI service. When you click on **publish** you're prompted to choose the workspace for your report. After choosing the workspace and clicking **select**, the dialog box closes and nothing else happens. In order to publish the report to the Power BI service, you need to save the file to your local drive. You can then reopen the local file and publish to the Power BI service. This limitation will be fixed in an upcoming Power BI Desktop release.
 
 
 
