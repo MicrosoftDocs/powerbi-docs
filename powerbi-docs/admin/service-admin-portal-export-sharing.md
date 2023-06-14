@@ -18,7 +18,7 @@ The export and sharing settings allow the Power BI tenant administrator the flex
 
 Sharing settings are also managed through these settings. You can determine how and who can share Power BI content in your organization, as well as determine settings for sharing content with users outside your organization. These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](service-admin-portal-about-tenant-settings.md).
 
-## Allow Azure Active Directory guest users to access Power BI
+## Allow Azure Active Directory guest users to access Microsoft Fabric
 
 When you turn on this setting, it allows Azure Active Directory Business-to-Business (Azure AD B2B) guest users to access Power BI. If you turn off this setting, B2B guest users receive an error when trying to access Power BI. Disabling this setting for the entire organization also prevents users from inviting guests to your organization. Use the specific security groups option to control which B2B guest users can access Power BI.
 
@@ -26,7 +26,7 @@ To turn on the setting:
 
 1. Go to the Power BI Admin portal and select **Tenant settings**.
 1. In the tenant settings, scroll down to the **Export and sharing settings** section.
-1. Find the setting called **Allow Azure Active Directory guest users to access Power BI**. 
+1. Find the setting called **Allow Azure Active Directory guest users to access Microsoft Fabric**. 
 1. Turn this setting on if you want B2B guest users to have access to Power BI. Turn this setting off to block B2B guest users' access to Power BI and from inviting guests. 
 1. Under **Apply to**, select the scope of users that the setting will affect:
     1. Choose **The entire organization** to apply the setting to the entire organization, or
@@ -52,12 +52,12 @@ To turn on the setting:
 
 ## Allow Azure Active Directory guest users to edit and manage content in the organization
 
-This setting allows Azure AD B2B guest users to edit and manage content in the organization. To learn more about sending Power BI content to Azure AD B2B guest users, read [Distribute Power BI content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
+This setting allows Azure AD B2B guest users to have full access to the browsing experience using the left-hand navigation pane in the organization. To learn more about sending Power BI content to Azure AD B2B guest users, read [Distribute Power BI content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
 To turn on the setting:
 
 1. Still in the **Export and sharing settings** section of the **Tenant Settings**, find the setting called **Allow Azure Active Directory guest users to edit and manage content in the organization**.
-1. Turn this setting on if you want to allow guests to manage and edit Power BI content. If the setting is off, an external user can’t manage and edit content in Power BI.
+1. Turn this setting on if you want to allow guests to browse content freely using the left-hand navigation pane. If the setting is off, an external user can't browse to content via the left-hand navigation pane.
 1. Under **Apply to**, select the scope of users that the setting will affect:
     1. Choose **The entire organization** or **Specific security groups**. In addition to the previous options, you can check the box next to **Except specific security groups** and then add the security groups you wish to exclude.
 1. Select **Apply** to save your changes.
