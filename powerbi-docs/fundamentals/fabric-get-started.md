@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Microsoft Fabric for Power BI users"
-description: Get started using Microsoft Fabric with Power BI by creating a multidimensional model and creating a report.
+description: Get started using Microsoft Fabric with Power BI by creating a dimensional model and creating a report.
 author: itsnotaboutthecell
 ms.author: alpowers
 ms.reviewer: ''
@@ -69,9 +69,6 @@ Take the following steps to load data into your lakehouse:
     :::image type="content" source="media/fabric-get-started/configure-connection.png" alt-text="Screenshot of the configure connection menu.":::
 
 3. With the **DimDate** query selected, in the data preview window, change the data type of the **DateKey** column to **Date/Time** by selecting the icon in the top left.
-
-    > [!NOTE]
-    > The lakehouse only supports *datetime* data types. If you attempt to load *date* only data, an error message is presented.
 
     :::image type="content" source="media/fabric-get-started/transform-column-date-time.png" alt-text="Screenshot of changing data types within the Power Query editor.":::
 
@@ -228,8 +225,8 @@ Using pipelines, we first orchestrate the refresh of our data flow. If an error 
 
     | Value name | Line | System variable |
     | :- | :- | :- |
-    | Pipeline: | 3 | Pipeline name |
-    | Workspace: | 6 | Workspace name |
+    | Pipeline: | 3 | Pipeline ID |
+    | Workspace: | 6 | Workspace ID |
 
     :::image type="content" source="media/fabric-get-started/system-variables.png" alt-text="Screenshot of the pipeline system variables.":::
 
@@ -302,7 +299,7 @@ This model is a star schema that you might see from data warehouses: It resemble
     | ☑ | FactOnlineSales (ProductKey) | DimProduct (ProductKey) | Many to one (*:1) | Single |
     | ☑ | FactOnlineSales (StoreKey) | DimStore (StoreKey) | Many to one (*:1) | Single |
     | ☑ | FactOnlineSales (DateKey) | DimDate (DateKey) | Many to one (*:1) | Single |
-    | ☑ | DimEmployee (StoreKey) | DimStore (StoreKey) | Many to one (*:1) | Both |
+    | ☑ | DimStore (StoreKey) | DimEmployee (StoreKey) | Many to one (*:1) | Both |
 
      The following image shows a finished view of the semantic model with all the created relationships included.
 
