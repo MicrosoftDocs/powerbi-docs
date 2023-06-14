@@ -184,7 +184,9 @@ If the account you're sign-in to in Power BI Desktop and your local OneDrive or 
 
 When you drag a Power BI file to a OneDrive or SharePoint location in the file system, the file is uploaded to the new location in OneDrive or SharePoint. If you try to open the file before the file has completed syncing to OneDrive or SharePoint, the file acts as a local file. Therefore, when you try to share a link to the file, you're prompted to save the file to OneDrive or SharePoint even though the file is syncing there. When you're prompted to save a file that is already saved, wait until the file has finished syncing and try again. Once the file has finished syncing to the new OneDrive or SharePoint location, you're able to share a link to the file without being prompted to save again.   
 
+### Publishing to Power BI service
 
+If you have a file opened in Power BI Desktop from OneDrive or SharePoint and try to publish the report to the Power BI service the action will not work. You will be prompted to choose the workspace to publish to, but once you hit *select* the dialog box will close and nothing will happen. In order to publish the report to the Power BI service, you will need to save the file to your local drive. You can then reopen the local file and publish to the Power BI service. This limitation will be fixed in an upcoming Power BI Desktop release.
 
 
 
