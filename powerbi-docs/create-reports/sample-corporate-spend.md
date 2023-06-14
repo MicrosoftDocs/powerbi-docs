@@ -43,7 +43,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the Corporate Spend sample as a .pbix file, which is designed for use with Power BI Desktop.
+Alternatively, you can download the Corporate Spend sample as a .pbix file, which is designed for use with Power BI Desktop. If you'd like to view it in the Power BI service, you can publish it there.
 
 1. After you open the file in Power BI Desktop, select **File** > **Publish** > **Publish to Power BI** or choose **Publish** in the **Home** ribbon.
 
