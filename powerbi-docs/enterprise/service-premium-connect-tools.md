@@ -171,7 +171,7 @@ The following table describes the implications of the setting **Export data** fo
 |Allow Live Connections toggle = disabled     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-premises datasets *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-premises datasets *allowed*         |
 |Allow Live Connections toggle = enabled     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-premises datasets *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-premises datasets *allowed*        |
 
-**Allow live connections** is an export and sharing setting.
+**Users can work with datasets in Excel using a live connection** is an export and sharing setting.
 
 :::image type="content" source="media/service-premium-connect-tools/allow-live-connections.png" alt-text="Export and sharing setting allow live connections.":::
 
