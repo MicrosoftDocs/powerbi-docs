@@ -107,7 +107,7 @@ You can also manage who has access to the file through the **Manage Access** opt
 ## Prerequisites to sharing a report from Power BI Desktop
 
 To share a file stored in OneDrive or SharePoint the following requirements must all be met:
--	You are signed-in to Power BI Desktop with your Azure Active Directory account.   
+-	You're signed-in to Power BI Desktop with your Azure Active Directory account.   
 -	The feature is enabled through the options menu in Power BI Desktop.
 -	The feature is enabled by your Power BI Admin.
 
@@ -184,7 +184,9 @@ If the account you're sign-in to in Power BI Desktop and your local OneDrive or 
 
 When you drag a Power BI file to a OneDrive or SharePoint location in the file system, the file is uploaded to the new location in OneDrive or SharePoint. If you try to open the file before the file has completed syncing to OneDrive or SharePoint, the file acts as a local file. Therefore, when you try to share a link to the file, you're prompted to save the file to OneDrive or SharePoint even though the file is syncing there. When you're prompted to save a file that is already saved, wait until the file has finished syncing and try again. Once the file has finished syncing to the new OneDrive or SharePoint location, you're able to share a link to the file without being prompted to save again.   
 
+### Unable to publish to the Power BI service
 
+When you have a file open from OneDrive and SharePoint in Power BI Desktop, you'reunable to publish the report to the Power BI service. When you click on **publish** you're prompted to choose the workspace for your report. After choosing the workspace and clicking **select**, the dialog box closes and nothing else happens. In order to publish the report to the Power BI service, you need to save the file to your local drive. You can then reopen the local file and publish to the Power BI service. This limitation will be fixed in an upcoming Power BI Desktop release and you will be able to publish reports that are opened directly from OneDrive and SharePoint.
 
 
 
