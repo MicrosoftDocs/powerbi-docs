@@ -100,5 +100,5 @@ In a Power BI paginated report, a data point is the smallest individual entity o
  [Format axis labels on a paginated report chart (Power BI Report Builder)](format-axis-labels-chart-report-builder.md)
  [Format axis labels as dates or currencies in a paginated report (Power BI Report Builder)](format-axis-labels-dates-currencies-report-builder.md)
  [Tutorial: Add a Pie Chart to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-pie-chart-to-your-report-report-builder)   
- [Expression examples in Power BI Report Builder](../../report-builder-expression-examples.md)
- [Expressions in Power BI Report Builder](../../report-builder-expressions.md)
+ [Expression examples in Power BI Report Builder](../../expressions/report-builder-expression-examples.md)
+ [Expressions in Power BI Report Builder](../../expressions/report-builder-expressions.md)

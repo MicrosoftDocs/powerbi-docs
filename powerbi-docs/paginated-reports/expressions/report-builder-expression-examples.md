@@ -29,7 +29,7 @@ This article provides examples of expressions that can be used for common tasks 
   
 - [Custom code](#CustomCode): Examples of embedded custom code.  
   
-For more information about simple and complex expressions, where you can use expressions, and the types of references that you can include in an expression, see [Expressions in Power BI Report Builder](report-builder-expressions.md). 
+For more information about simple and complex expressions, where you can use expressions, and the types of references that you can include in an expression, see [Expressions in Power BI Report Builder](expressions/report-builder-expressions.md). 
   
 ## Functions  
 Many expressions in a report contain functions. You can format data, apply logic, and access report metadata using these functions. You can write expressions that use functions from the Microsoft Visual Basic runtime library, and from the `xref:System.Convert` and `xref:System.Math` namespaces. You can add references to functions in custom code. You can also use classes from the Microsoft .NET Framework, including `xref:System.Text.RegularExpressions`.  

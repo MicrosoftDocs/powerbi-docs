@@ -53,7 +53,7 @@ ms.reviewer: monaraya
   
 - Lookup values from name/value pairs in a different dataset.  
   
- For more information, see [Expressions in Power BI Report Builder](../../report-builder-expressions.md).  
+ For more information, see [Expressions in Power BI Report Builder](../../expressions/report-builder-expressions.md).  
   
 ## Next steps 
 

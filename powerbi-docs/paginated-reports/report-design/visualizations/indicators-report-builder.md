@@ -97,7 +97,7 @@ ms.reviewer: monaraya
   
  You use expressions to dynamically set the size of the stars based on values of field used by the indicator. For more information, see [Specify the Size of an indicator Using an Expression &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-the-size-of-an-indicator-using-an-expression-report-builder-and-ssrs).  
   
- To learn more about writing and using expressions, see [Expressions in Power BI Report Builder](../../report-builder-expressions.md).  
+ To learn more about writing and using expressions, see [Expressions in Power BI Report Builder](../../expressions/report-builder-expressions.md).  
   
 ##  <a name="IncludingIndicatorsInGauges"></a> Including indicators and gauges in gauge panels  
  Indicators are always positioned inside a gauge panel. The gauge panel is a top-level container that can include one or more gauges and state indicators. The gauge panel can contain child or adjacent gauges or indicators. If you use an indicator as a child to a gauge, you can further visualize the data by showing the state of the data value displayed in the gauge. For example, an indicator within a gauge can display a green circle to tell you that the value in the gauge points to the upper 33 percentage of the value range. Using a gauge and indicator side by side, you can represent the data in different ways. In either case, the indicator and gauge can use the same or different data fields.  

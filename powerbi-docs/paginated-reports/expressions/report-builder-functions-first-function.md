@@ -69,8 +69,8 @@ First(expression, scope)
   
 ## Next steps
 
-- [Expressions in Power BI Report Builder](../report-builder-expressions.md)
-- [Expression examples in Power BI Report Builder](../report-builder-expression-examples.md)
+- [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md)
+- [Expression examples in Power BI Report Builder](../expressions/report-builder-expression-examples.md)
 - [Expression uses in Power BI reports](expression-uses-reports-report-builder.md)   
 - [Data Types in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)   
 - [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  

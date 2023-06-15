@@ -148,7 +148,7 @@ ms.reviewer: monaraya
   
 ## Next steps
 
- [Expressions in Power BI Report Builder](../../report-builder-expressions.md)
+ [Expressions in Power BI Report Builder](../../expressions/report-builder-expressions.md)
  [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
  [Report parameters in Power BI Report Builder](../../parameters/report-builder-parameters.md)
  [Charts in Power BI paginated reports (Power BI Report Builder)](charts-report-builder.md)
