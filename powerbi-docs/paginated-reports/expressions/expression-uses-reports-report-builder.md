@@ -61,13 +61,13 @@ In Power BI paginated reports, expressions are used throughout the report defini
   
 ## Next steps 
 
- [Expressions (Power BI Report Builder)](../expressions/report-builder-expressions.md)   
- [Expression Examples (Power BI Report Builder)](../expressions/report-builder-expression-examples.md)   
+ [Expressions (Power BI Report Builder)](report-builder-expressions.md)
+ [Expression Examples (Power BI Report Builder)](report-builder-expression-examples.md)
  [Report Parameters (Power BI Report Builder)](../parameters/report-builder-parameters.md)   
- [Filter Equation Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs)   
- [Filter, Group, and Sort Data &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
- [Page Headers and Footers &#40;Report Builder and SSRS&#41;](page-headers-footers-report-builder-service.md)   
- [Formatting Text and Placeholders &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
- [Hide an Item &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/hide-an-item-report-builder-and-ssrs)  
+ [Filter Equation Examples (Report Builder and SSRS)](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs)   
+ [Filter, Group, and Sort Data (Report Builder and SSRS)](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
+ [Page Headers and Footers (Report Builder)](../report-design/page-headers-footers-report-builder-service.md)
+ [Formatting Text and Placeholders (Report Builder and SSRS)](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
+ [Hide an Item (Report Builder and SSRS)](/sql/reporting-services/report-builder/hide-an-item-report-builder-and-ssrs)  
   
   

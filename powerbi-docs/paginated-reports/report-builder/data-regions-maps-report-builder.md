@@ -4,8 +4,6 @@ description: Explore the types and characteristics of data regions and maps to d
 ms.date: 02/13/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
 helpviewer_keywords: 
   - "data regions"
@@ -53,7 +51,7 @@ ms.reviewer: monaraya
   
 - Lookup values from name/value pairs in a different dataset.  
   
- For more information, see [Expressions in Power BI Report Builder](../../expressions/report-builder-expressions.md).  
+ For more information, see [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md).  
   
 ## Next steps 
 

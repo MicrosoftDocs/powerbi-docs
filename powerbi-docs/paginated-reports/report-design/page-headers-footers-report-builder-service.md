@@ -47,7 +47,7 @@ A paginated report can contain a header and footer that run along the top and bo
 |Fields collection for items on the page|Indirectly. For example,<br /><br /> `=Sum(ReportItems!Textbox1.Value)`|Yes. For example,<br /><br /> `=Sum(Fields!Quantity.Value,"DataSet1")`|  
 |Data-bound image|Indirectly. For example, `=ReportItems!TXT_Photo.Value`|Yes. For example,<br /><br /> `=First(Fields!Photo.Value,"DataSet1")`|  
   
- The following sections in this topic show ready-to-use expressions that get variable data commonly used in headers and footers. There is also a section on how the Excel rendering extension processes headers and footers. For more information about expressions, see [Expressions (Power BI Report Builder)](../../expressions/report-builder-expressions.md).
+ The following sections in this topic show ready-to-use expressions that get variable data commonly used in headers and footers. There is also a section on how the Excel rendering extension processes headers and footers. For more information about expressions, see [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md).
   
 ## Add calculated page totals to a header or footer
 

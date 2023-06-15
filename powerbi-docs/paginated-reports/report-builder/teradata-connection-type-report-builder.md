@@ -56,6 +56,6 @@ data source=<IP Address>
 
  [Report parameters in Power BI Report Builder](../parameters/report-builder-parameters.md)
  [Filter, Group, and Sort Data &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
- [Expressions &#40;Report Builder and Service&#41;](../../expressions/report-builder-expressions.md)  
+ [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md)  
   
   
