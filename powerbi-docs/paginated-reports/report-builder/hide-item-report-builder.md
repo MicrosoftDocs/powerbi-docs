@@ -1,7 +1,7 @@
 ---
 title: "Hide an item (Power BI Report Builder) | Microsoft Docs"
 description: In Power BI Report Builder, you can set the visibility of a report item. You can specify a report parameter or other expression to conditionally hide an item.
-ms.date: 05/15/2023
+ms.date: 06/15/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -18,7 +18,7 @@ ms.reviewer: saurkumar
  The following procedures describe how to show or hide a report item in a rendered report based on a constant or an expression.  
   
   
-### Hide a report item  
+## Hide a report item  
   
 1.  In report design view, right-click the report item and open its **Properties** page.  
   
@@ -37,11 +37,11 @@ ms.reviewer: saurkumar
   
         > [!NOTE]  
         >  When you specify an expression for visibility, you are setting the Hidden property of the report item, as shown in the following image. The evaluated expression shows the report item when the value is False, and hides the report item when the value is True.   
-        > ![Screenshot showing Properties_Visibility dialog and Hidden property](../report-builder/media/hidden-property-properties-visibility.png "Properties_Visibility dialog and Hidden property")  
+        > ![Screenshot showing Properties_Visibility dialog and Hidden property.](../report-builder/media/hidden-property-properties-visibility.png "Properties_Visibility dialog and Hidden property")  
   
 4.  Select **OK** twice.  
   
-### Hide static rows in a table, matrix, or list  
+## Hide static rows in a table, matrix, or list  
   
 1.  In report design view, select the table, matrix, or list to display the row and column handles.  
   
@@ -49,7 +49,7 @@ ms.reviewer: saurkumar
   
 3.  To set the visibility, follow steps 3 and 4 in the first procedure.  
   
-### Hide static columns in a table, matrix, or list  
+## Hide static columns in a table, matrix, or list  
   
 1.  In Design view, select the table, matrix, or list to display the row and column handles.  
   
@@ -57,7 +57,8 @@ ms.reviewer: saurkumar
   
 3.  In the **Column Visibility** dialog box, follow steps 3 and 4 in the first procedure.  
   
-## Next steps 
+## Next steps
+
  [Drilldown Action &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/drilldown-action-report-builder-and-ssrs)   
  [Add an Expand or Collapse action to an item &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-an-expand-or-collapse-action-to-an-item-report-builder-and-ssrs)   
  [Expression examples &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)  
