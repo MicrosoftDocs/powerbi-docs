@@ -134,7 +134,7 @@ The image shows an example for a Power BI dataset refresh issue:
 ### Live Chat
 1. For some of the combinations of problem type and subtype, users might see the option to start a live chat session with a Microsoft Support representative. The option to start a live chat session appears on the **Contact** page. 
 
-   ![Livechat](media/Create-support-ticket/livechat.png)
+   ![PPACLivechat](media/Create-support-ticket/livechat.png)
 
         
 
