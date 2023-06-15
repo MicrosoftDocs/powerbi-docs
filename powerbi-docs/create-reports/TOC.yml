@@ -506,6 +506,8 @@
         href: ../paginated-reports/paginated-reports-report-design-view.md
       - name: Preview reports
         href: ../paginated-reports/report-builder-previewing-reports.md
+      - name: Print reports
+        href: ../paginated-reports/report-builder/print-report-report-builder.md
       - name: Report Definition Language
         href: ../paginated-reports/report-definition-language.md
       - name: Keyboard shortcuts in Power BI Report Builder
@@ -538,6 +540,8 @@
         href: ../paginated-reports/report-builder-tables-matrices-lists.md
       - name: Control page breaks, headings, columns, and rows
         href: ../paginated-reports/report-design/control-page-breaks-headings-columns-rows-report-builder.md
+      - name: Hide an item in a report
+        href: ../paginated-reports/report-builder/hide-item-report-builder.md
       - name: Text boxes
         items:
         - name: Text boxes in paginated reports
