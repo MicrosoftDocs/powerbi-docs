@@ -4,11 +4,11 @@
   items:
   - name: About Support requests
     items:
+    - name: Support overview
+      href: /power-platform/admin/support-overview
     - name: Create a Support ticket
       href: ../../../../powerbi-docs/support/create-support-ticket.md
       displayName: Power BI, Fabric, Support, ticket creation, support ticket
-    - name: Support overview
-      href: /power-platform/admin/support-overview
     - name: How to contact Support
       href: service-support-options.md
     - name: Create a Support ticket
