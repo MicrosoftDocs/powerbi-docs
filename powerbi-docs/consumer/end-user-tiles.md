@@ -61,7 +61,7 @@ When you select a tile, what happens next depends on how the tile was created an
 - For tiles created directly on the dashboard using **Add tile**, if a custom hyperlink has been set, selecting the title, subtitle, or tile opens that URL. Otherwise, by default, selecting one of these tiles created directly on the dashboard for an image, web code, or text box produces no action.
 - If the original visualization used to create the tile changes, the tile doesn't change. For example, if the *designer* pinned a line chart from a report and then changed the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type doesn't.
 - If a workspace is moved to Premium capacity, the existing dashboard refresh cache doesn't move with the workspace. The new cache is created the first time a user visits the dashboard in the new Premium capacity. After that, every data refresh will refresh the cache and update the data.
-- If a tile is pinned from a workbook, you don't have the option to turn off display of the title and subtitle.  The option to **Edit details** > **Display title and subtitle** is greyed out. 
+- If a tile is pinned from a workbook, you can't turn off the display of the title and subtitle. The option to **Edit details** > **Display title and subtitle** is greyed out.
 
 ## Next steps
 

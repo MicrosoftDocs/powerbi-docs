@@ -34,7 +34,7 @@ To install the Emissions Impact Dashboard for Microsoft 365 in Power BI and conn
 > In order to ensure that the report successfully refreshes over time, the Microsoft 365 admin credentials of the user who connects the application to your organization's data must persist over time. If that user has the admin role removed after the connection is established, the report will render demo data upon the next refresh.
 
 >[!NOTE]
-> The Emissions Impact Dashboard for Microsoft 365 is currently not supported for national cloud deployments including but not limited to Microsoft's US Government clouds and Office 365 operated by 21Vianet.
+> The Emissions Impact Dashboard for Microsoft 365 is currently not supported for national/regional cloud deployments including but not limited to Microsoft's US Government clouds and Office 365 operated by 21Vianet.
 
 ## Included Microsoft 365 applications
 

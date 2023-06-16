@@ -9,7 +9,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Roles in workspaces
 ms.topic: conceptual
 ms.date: 05/09/2023
-ms.custom: contperf-fy20q4
+ms.custom: fabric
 LocalizationGroup: Share your work
 ---
 
