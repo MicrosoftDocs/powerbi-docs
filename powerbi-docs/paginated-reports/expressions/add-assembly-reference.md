@@ -16,15 +16,15 @@ ms.reviewer: rpatkar
 
   When you embed custom code that contains references to Microsoft .NET Framework classes that are not in <xref:System.Math> or <xref:System.Convert>, you must provide an assembly reference to the report so that the report processor can resolve the names. For more information, see [Add Code to a Report &#40;Power BI Report Builder&#41;](./add-code-to-a-report.md).
   
-### To add an assembly reference to a report  
+## Add an assembly reference to a report  
   
-1.  In **Design** view, right-click the design surface outside the border of the report and click **Report Properties**.  
+1.  In **Design** view, right-click the design surface outside the border of the report and select **Report Properties**.  
   
-2.  Click **References**.  
+2.  Select **References**.  
   
-3.  In **Add or remove assemblies**, click **Add** and then click the ellipsis button to browse to the assembly.  
+3.  In **Add or remove assemblies**, select **Add** and then select the ellipsis button to browse to the assembly.  
   
-4.  In **Add or remove classes**, click **Add** and then type name of the class and provide an instance name to use within the report.  
+4.  In **Add or remove classes**, select **Add** and then type name of the class and provide an instance name to use within the report.  
   
     > [!NOTE]  
     >  Specify a class and instance name only for instance-based members. Do not specify static members in the **Classes** list. For more information, see [Custom Code and Assembly References in Expressions &#40;Power BI Report Builder&#41;](./custom-code-and-assembly-references-in-expressions.md).
