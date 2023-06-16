@@ -314,7 +314,7 @@ In an expression, you can add a reference to additional report functions that ma
   
 ###  <a name="RowNumber"></a> RowNumber  
   
--   The **RowNumber** function, when used in a text box within a data region, displays the row number for each instance of the text box in which the expression appears. This function can be useful to number rows in a table. It can also be useful for more complex tasks, such as providing page breaks based on number of rows. For more information, see [Page breaks](#PageBreaks) in this article.  
+-   The **RowNumber** function, when used in a text box within a data region, displays the row number for each instance of the text box in which the expression appears. This function can be useful to number rows in a table. It can also be useful for more complex tasks, such as providing page breaks based on the number of rows. For more information, see [Page breaks](#PageBreaks) in this article.  
   
      The scope you specify for **RowNumber** controls when renumbering begins. The **Nothing** keyword indicates that the function will start counting at the first row in the outermost data region. To start counting within nested data regions, use the name of the data region. To start counting within a group, use the name of the group.  
   
@@ -470,7 +470,7 @@ You can use expressions in a parameter to vary the default value for the paramet
     =Parameters!Department.Value  
     ```  
   
--   Parameters can be created in a report but set to hidden. When the report runs on the report server, the parameter doesn't appear in the toolbar and the report reader can't change the default value. You can use a hidden parameter set to a default value as custom constant. You can use this value in any expression, including a field expression. The following expression identifies the field specified by the default parameter value for the parameter named *ParameterField*:  
+-   Parameters can be created in a report but set to hidden. When the report runs on the report server, the parameter doesn't appear in the toolbar and the report reader can't change the default value. You can use a hidden parameter set to a default value a custom constant. You can use this value in any expression, including a field expression. The following expression identifies the field specified by the default parameter value for the parameter named *ParameterField*:  
   
     ```  
     =Fields(Parameters!ParameterField.Value).Value  

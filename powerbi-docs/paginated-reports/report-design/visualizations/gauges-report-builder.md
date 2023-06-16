@@ -44,7 +44,7 @@ ms.reviewer: monaraya
   
  ![Screenshot showing radial gauge.](media/paginated-reports-visualizations/radial-gauge.gif "Image of radial gauge.")  
   
- Radial gauge options: Radial, Radial with Mini Gauge, Two Scales, 90 Degrees Northeast, 90 Degrees Northwest, 90 Degrees Southwest, 90 Degrees Southeast,180 Degrees North, 180 Degrees South, 180 Degrees West180 Degrees East, and Meter.  
+ Radial gauge options: Radial, Radial with Mini Gauge, Two Scales, 90 Degrees Northeast, 90 Degrees Northwest, 90 Degrees Southwest, 90 Degrees Southeast, 180 Degrees North, 180 Degrees South, 180 Degrees West180 Degrees East, and Meter.  
   
 ### Linear gauge
   

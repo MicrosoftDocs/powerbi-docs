@@ -54,12 +54,12 @@ ms.reviewer: monaraya
 |![Screenshot showing directional icons.](media/paginated-reports-visualizations/directional-icons.gif "Screenshot of directional icons")|Directional: indicates trends using up, down, flat (no change), up-trending, or down-trending arrows.|  
 |![Screenshot showing symbol icons.](media/paginated-reports-visualizations/symbol-icons.gif "Screenshot of symbol icons.")|Symbols: indicates states using commonly recognized symbols such as check marks and exclamation marks.|  
 |![Screenshot showing shape icons.](media/paginated-reports-visualizations/shape-icons.gif "Screenshot of shape icons.")|Shape: indicates conditions using commonly shapes such as traffic signs and diamond shapes.|  
-|![Screenshot showing rating icons.](media/paginated-reports-visualizations/rating-icons.gif "Screenshot of rating icons")|Ratings: indicates ratings by using common recognized shapes and symbols that show progressive values such as number of quadrants in a square.|  
+|![Screenshot showing rating icons.](media/paginated-reports-visualizations/rating-icons.gif "Screenshot of rating icons")|Ratings: indicates ratings by using common recognized shapes and symbols that show progressive values such as the number of quadrants in a square.|  
   
  After you choose an indicator set, you can customize the appearance of each indicator icon in the set by setting its properties in the dialog boxes for indicators or the Properties pane. You can use the built-in colors, icons, and sizes or expressions to configure indicators.  
   
 ##  <a name="CustomizingIndicators"></a> Customizing indicators  
- Indicators can be customized to suit your needs. You can modify the indicators sets as well as individual indicator icon within a set in the following ways:  
+ Indicators can be customized to suit your needs. You can modify the indicators sets as well as individual indicator icons within a set in the following ways:  
   
 - Change the colors of indicator icons. For example, you might want the color scheme of an indicator set to be monochromatic or use colors other than the default ones.  
   
@@ -92,14 +92,16 @@ ms.reviewer: monaraya
   
  Indicators use only a single value. If you have to show multiple data values, use a sparkline or data bar instead of an indicator. They can represent multiple data values but are also simple, easy to understand at small sizes, and work well in tables and matrices. For more information, see [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs).  
   
-##  <a name="SizingIndicatators"></a> Sizing indicators to Maximize Visual Impact  
+##  <a name="SizingIndicatators"></a> Sizing indicators to Maximize Visual Impact
+
  In addition to color, direction, and shape you can use size to maximize the visual impact of indicators. Imagine a report that uses indicators to show customer satisfaction with different types of bicycles. The icon that the indicator uses can be configured to be different sizes depending on customer satisfaction. The greater the satisfaction, the larger the icon that appears in the report. The following picture shows a report of bicycle sales, and the sizes of the icon reflect the sales amount.  
   
- You use expressions to dynamically set the size of the stars based on values of field used by the indicator. For more information, see [Specify the Size of an indicator Using an Expression &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-the-size-of-an-indicator-using-an-expression-report-builder-and-ssrs).  
+ You use expressions to dynamically set the size of the stars based on values of the field used by the indicator. For more information, see [Specify the Size of an indicator Using an Expression &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-the-size-of-an-indicator-using-an-expression-report-builder-and-ssrs).  
   
  To learn more about writing and using expressions, see [Expressions in Power BI Report Builder](../../expressions/report-builder-expressions.md).  
   
-##  <a name="IncludingIndicatorsInGauges"></a> Including indicators and gauges in gauge panels  
+##  <a name="IncludingIndicatorsInGauges"></a> Including indicators and gauges in gauge panels
+
  Indicators are always positioned inside a gauge panel. The gauge panel is a top-level container that can include one or more gauges and state indicators. The gauge panel can contain child or adjacent gauges or indicators. If you use an indicator as a child to a gauge, you can further visualize the data by showing the state of the data value displayed in the gauge. For example, an indicator within a gauge can display a green circle to tell you that the value in the gauge points to the upper 33 percentage of the value range. Using a gauge and indicator side by side, you can represent the data in different ways. In either case, the indicator and gauge can use the same or different data fields.  
   
  The following diagram shows an indicator side by side and within a gauge.  
@@ -110,7 +112,8 @@ ms.reviewer: monaraya
   
  For more information about using gauges, see [Gauges in a paginated report (Power BI Report Builder)](gauges-report-builder.md).  
   
-##  <a name="SequenceIndicatorStates"></a> Sequence of indicator States  
+##  <a name="SequenceIndicatorStates"></a> Sequence of indicator States
+
  The sequence of the indicator states in the **Value and States** tab of the **Indicator Properties** dialog box affect which indicator icon displays for a data value when the start and end values of indicator states overlap.  
   
  This might happen whether you use the percentage or numeric state measurement unit. It is more likely to occur when you use the numeric measurement unit because you provide specific values for this measurement. It is also more likely to occur when you round report data values because this tends to make values less discrete.  
@@ -177,7 +180,8 @@ ms.reviewer: monaraya
   
 - [Include indicators and gauges in a gauge panel &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/include-indicators-and-gauges-in-a-gauge-panel-report-builder-and-ssrs)  
   
-## Next steps  
+## Next steps
+
  [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md)   
  [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs)   
  [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)  
