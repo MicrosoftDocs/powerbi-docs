@@ -11,7 +11,7 @@ ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 ---
 # Expression examples in Power BI Report Builder
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)] 
 
 Expressions are used frequently in Power BI Report Builder paginated reports to control content and report appearance. Expressions are written in Microsoft Visual Basic, and can use built-in functions, custom code, report and group variables, and user-defined variables. Expressions begin with an equal sign (=).
 
@@ -31,7 +31,8 @@ This article provides examples of expressions that can be used for common tasks 
   
 For more information about simple and complex expressions, where you can use expressions, and the types of references that you can include in an expression, see [Expressions in Power BI Report Builder](report-builder-expressions.md). 
   
-## Functions  
+## Functions
+
 Many expressions in a report contain functions. You can format data, apply logic, and access report metadata using these functions. You can write expressions that use functions from the Microsoft Visual Basic runtime library, and from the `xref:System.Convert` and `xref:System.Math` namespaces. You can add references to functions in custom code. You can also use classes from the Microsoft .NET Framework, including `xref:System.Text.RegularExpressions`.  
   
 ##  <a name="VisualBasicFunctions"></a> Visual Basic functions
@@ -313,7 +314,7 @@ In an expression, you can add a reference to additional report functions that ma
   
 ###  <a name="RowNumber"></a> RowNumber  
   
--   The **RowNumber** function, when used in a text box within a data region, displays the row number for each instance of the text box in which the expression appears. This function can be useful to number rows in a table. It can also be useful for more complex tasks, such as providing page breaks based on number of rows. For more information, see [Page breaks](#PageBreaks) in this article.  
+-   The **RowNumber** function, when used in a text box within a data region, displays the row number for each instance of the text box in which the expression appears. This function can be useful to number rows in a table. It can also be useful for more complex tasks, such as providing page breaks based on the number of rows. For more information, see [Page breaks](#PageBreaks) in this article.  
   
      The scope you specify for **RowNumber** controls when renumbering begins. The **Nothing** keyword indicates that the function will start counting at the first row in the outermost data region. To start counting within nested data regions, use the name of the data region. To start counting within a group, use the name of the group.  
   
@@ -469,7 +470,7 @@ You can use expressions in a parameter to vary the default value for the paramet
     =Parameters!Department.Value  
     ```  
   
--   Parameters can be created in a report but set to hidden. When the report runs on the report server, the parameter doesn't appear in the toolbar and the report reader can't change the default value. You can use a hidden parameter set to a default value as custom constant. You can use this value in any expression, including a field expression. The following expression identifies the field specified by the default parameter value for the parameter named *ParameterField*:  
+-   Parameters can be created in a report but set to hidden. When the report runs on the report server, the parameter doesn't appear in the toolbar and the report reader can't change the default value. You can use a hidden parameter set to a default value a custom constant. You can use this value in any expression, including a field expression. The following expression identifies the field specified by the default parameter value for the parameter named *ParameterField*:  
   
     ```  
     =Fields(Parameters!ParameterField.Value).Value  
@@ -516,4 +517,4 @@ To avoid this condition, use one of the following strategies:
   
 ## Next steps
 
-- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](../paginated-reports-report-builder-power-bi.md)
