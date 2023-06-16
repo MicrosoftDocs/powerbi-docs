@@ -156,6 +156,6 @@ ms.reviewer: rpatkar
  [Expression Examples &#40;Power BI Report Builder&#41;](./report-builder-expression-examples.md)
  [Group Expression Examples &#40;Power BI Report Builder&#41;](./group-expression-examples-report-builder.md)   
  [Creating Recursive Hierarchy Groups &#40;Power BI Report Builder&#41;](./creating-recursive-hierarchy-groups-report-builder.md)   
- [Formatting Text and Placeholders &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder)
+ [Formatting Text and Placeholders &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)
   
   

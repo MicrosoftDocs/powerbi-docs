@@ -53,7 +53,7 @@ Min(expression, scope, recursive)
   
  For more information, see [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](./report-builder-functions-aggregate-functions-reference.md) and [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Power BI Report Builder&#41;](./expression-scope-for-totals-aggregates-and-built-in-collections.md).  
   
- For more information about recursive aggregates, see [Creating Recursive Hierarchy Groups &#40;Power BI Report Builder&#41;](./creating-recursive-hierarchy-groups-report-builder-and-ssrs.md).  
+ For more information about recursive aggregates, see [Creating Recursive Hierarchy Groups &#40;Power BI Report Builder&#41;](./creating-recursive-hierarchy-groups-report-builder.md).  
   
 ## Example  
  The following code example provides the lowest total in the current scope.  

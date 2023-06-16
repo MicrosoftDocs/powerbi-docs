@@ -57,7 +57,7 @@ Aggregate(expression, scope)
   
  For more information, see [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](./report-builder-functions-aggregate-functions-reference.md) and [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Power BI Report Builder&#41;](./expression-scope-for-totals-aggregates-and-built-in-collections.md).  
   
- For more information about recursive aggregates, see [Creating Recursive Hierarchy Groups &#40;Power BI Report Builder&#41;](./creating-recursive-hierarchy-groups-report-builder-and-ssrs.md).  
+ For more information about recursive aggregates, see [Creating Recursive Hierarchy Groups &#40;Power BI Report Builder&#41;](./creating-recursive-hierarchy-groups-report-builder.md).  
   
 ## Comparing the Aggregate and Sum Functions  
  The **Aggregate** function differs from numeric aggregate functions like **Sum** in that the **Aggregate** function returns a value that is calculated by the data provider or data processing extension. Numeric aggregate functions like **Sum** return a value that is calculated by the report processor on a set of data from the dataset that is determined by the *scope* parameter. For more information, see the aggregate functions listed in [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](./report-builder-functions-aggregate-functions-reference.md).  
