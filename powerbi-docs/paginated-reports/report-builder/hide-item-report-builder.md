@@ -37,7 +37,7 @@ ms.reviewer: saurkumar
   
         When you specify an expression for visibility, you are setting the Hidden property of the report item, as shown in the following image. The evaluated expression shows the report item when the value is False, and hides the report item when the value is True.
 
-        > ![Screenshot showing Properties Visibility dialog and Hidden property.](media/hide-item-report-builder/hidden-property-properties-visibility.png "Properties Visibility dialog and Hidden property")  
+        :::image type="content" source="media/hide-item-report-builder/hidden-property-properties-visibility.png" alt-text="Screenshot showing Properties Visibility dialog and Hidden property.":::  
   
 4.  Select **OK** twice.  
   
@@ -62,5 +62,3 @@ ms.reviewer: saurkumar
  [Drilldown Action &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/drilldown-action-report-builder-and-ssrs)   
  [Add an Expand or Collapse action to an item &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-an-expand-or-collapse-action-to-an-item-report-builder-and-ssrs)   
  [Expression examples &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)  
-  
-  
