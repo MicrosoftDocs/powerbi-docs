@@ -12,7 +12,7 @@ LocalizationGroup: Samples
 ---
 # Corporate Spend sample for Power BI: Take a tour
 
-The Corporate Spend built-in sample contains a report and dataset that analyzes the planned versus actual costs of an IT department. This comparison helps you understand how well the company planned for the year. You can investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle. Quarterly, it produces a new latest estimate (LE) to help analyze changes in IT spend over the fiscal year.
+The Corporate Spend built-in sample contains a report and dataset that analyzes the planned versus actual costs of an IT department. This comparison helps you understand how well the company planned for the year. You can investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle. Quarterly, it produces a new latest estimate to help analyze changes in IT spend over the fiscal year.
 
 :::image type="content" source="media/sample-corporate-spend/power-bi-corporate-spend-dashboard.png" alt-text="Screenshot shows the dashboard for the Corporate Spend sample." lightbox="media/sample-corporate-spend/power-bi-corporate-spend-dashboard.png":::
 
@@ -57,11 +57,9 @@ To open the Corporate Spend report, go to your workspace and select **Corporate 
 
 :::image type="content" source="media/sample-corporate-spend/power-bi-select-report.png" alt-text="Screenshot shows the Corporate Spend sample report and dataset links.":::
 
-You can see the visualizations in the report.
+A report can contain several pages with different visualizations. You can look at and interact with all the visualizations.
 
 :::image type="content" source="media/sample-corporate-spend/power-bi-corporate-spend-dashboard.png" alt-text="Screenshot shows the dashboard for the Corporate Spend sample." lightbox="media/sample-corporate-spend/power-bi-corporate-spend-dashboard.png":::
-
-In the report, you can look at all the visualizations. You can select a region and then view the data for that region in all the different visualizations.
 
 You can edit current visualizations and create your own visualizations that use the dataset for this sample. This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
@@ -78,15 +76,15 @@ Save or discard your changes.
 
 This section describes the visuals from the **IT Spend Trend** section of the sample report.
 
-1. To see data for all regions, select **All regions** from Select Sales Region.
+1. To see data for all regions, select **All regions** from **Select Sales Region**.
 
    :::image type="content" source="media/sample-corporate-spend/power-bi-select-sales-region.png" alt-text="Screenshot shows selecting all regions in the from Select Sales Region.":::
 
-   All the visualizations on the page reflect this selection. The **Actual and Plan by IT Area** and **Actual by Period and Business Area** visualizations reflect data from all regions.
+   All the visualizations on the page reflect this selection. The **Actual and Plan by IT Area** and **Actual by Period and Business Area** visualizations show data from all regions.
 
    :::image type="content" source="media/sample-corporate-spend/power-bi-actual-spend-vizualization.png" alt-text="Screenshot shows two visualizations for actual spend for all regions.":::
 
-1. Select **Aus and NZ** in the **Var Plan % by Sales Region** chart, and then observe the **Var Plan by IT Area** chart.
+1. Select **Aus and NZ** from **Select Sales Region**, and then observe the **Actual and Plan by IT Area** chart.
 
    :::image type="content" source="media/sample-corporate-spend/power-bi-spend-region.png" alt-text="Screenshot shows visualizations for a selected region.":::
 
@@ -94,7 +92,7 @@ This section describes the visuals from the **IT Spend Trend** section of the sa
 
    :::image type="content" source="media/sample-corporate-spend/power-bi-spend-comparision.png" alt-text="Screenshot shows visualizations for a different region.":::
 
-### Learn about the decomposition tree visual  
+### Learn about the decomposition tree  
 
 Use the decomposition tree visualization, or *decomp tree*, to visualize data across multiple dimensions. You can aggregate data and drill down into your dimensions in any order. This tool is valuable for improvised exploration and conducting root cause analysis.
 
@@ -126,9 +124,9 @@ There's a decomp tree in the IT Spend Trend page of the Corporate Spend sample. 
 
    :::image type="content" source="media/sample-corporate-spend/power-bi-decomp-high-value.png" alt-text="Screenshot shows the Var Plan entry with its context menu expanded and High value selected.":::
 
-   The visualization shows Var Plan broken down by **IT Area**. The **High value** selection considers all available fields and determines which one to drill into to get the highest value of the measure being analyzed.
+   The visualization shows **Var Plan** broken down by **IT Area**. The **High value** selection considers all available fields and determines which one to drill into to get the highest value of the measure being analyzed.
 
-1. Next to **IT Area**, select the plus sign, then select **Low value**. This option gets the lowest value for the measure being analyzed, in this example, **IT Sub Area**.
+1. Next to **Infrastructure**, select the plus sign, then select **Low value**. This option gets the lowest value for the measure being analyzed, in this example, **IT Sub Area**.
 
    :::image type="content" source="media/sample-corporate-spend/power-bi-decomp-highest-lowest.png" alt-text="Screenshot shows the highest and lowest values selected for the Var Plan.":::
 

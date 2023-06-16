@@ -100,11 +100,13 @@ This industry sample analyzes a CFO's key metrics for the company's executives, 
 
 This industry sample focuses on the hiring strategy for a company by analyzing new hires, active employees, and employees who have left. By exploring the data, you can find trends in voluntary separations and biases in the hiring strategy.
 
-### IT Spend Analysis sample
+### IT Spend Analysis / Corporate Spend sample
 
-[Take a tour of the IT Spend Analysis sample](sample-it-spend.md)
+[Take a tour of the updated Corporate Spend sample](sample-corporate-spend.md)
 
 In this industry sample, analyze the planned versus actual costs of the IT department of a company. This comparison helps understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new Latest Estimate (LE) to help analyze changes in IT spend over the fiscal year.
+
+[Take a tour of the previous version of the sample](sample-it-spend.md)
 
 ### Opportunity Analysis sample
 
@@ -171,9 +173,15 @@ The updated samples are also available as Power BI *.pbix* files. The *.pbix* fi
 
 ## Download original sample .pbix Power BI files
 
-Six of the built-in samples are also available as Power BI *.pbix* files. The *.pbix* files are designed to be used with Power BI Desktop.  
+Several of the original built-in samples now have updated versions and these samples are available as *.pbix* files. Also, six of the original built-in samples are available as Power BI *.pbix* files. The *.pbix* files are designed to be used with Power BI Desktop.  
 
 1. Download the files individually using these links. Selecting these links saves the file automatically to your Downloads folder.
+
+   Updated samples:
+
+   - Corporate Spend
+
+   Original samples:
 
    - [Customer Profitability Sample PBIX](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
    - [Human Resources Sample PBIX](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
