@@ -109,7 +109,12 @@ ms.reviewer: rpatkar
 |C14|Inner row group "Subcat"|<\<Expr>>|`=Sum(Fields!Qty.Value) & ": " & FormatPercent(Sum(Fields!Qty.Value)/Sum(Fields!Qty.Value,"Cat"),0) & " of " & Sum(Fields!Qty.Value,"Cat")`|  
 |C15|Inner row group "Subcat" and column group "Territory"|<\<Expr>>|`=Sum(Fields!Qty.Value) & ": " & FormatPercent(Code.CalcPercentage(Sum(Fields!Qty.Value),Sum(Fields!Qty.Value,"Cat")),0) & " of " & Sum(Fields!Qty.Value,"Cat")`|  
   
- For more information about interpreting visual cues on tablix data regions, see [Tablix Data Region Cells, Rows, and Columns &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tablix-data-region-cells-rows-and-columns-report-builder-and-ssrs). For more information about the tablix data region, see [Tablix Data Region Cells, Rows, and Columns &#40;Report Builder&#41;](/sql/reporting-services/report-design/tablix-data-region-cells-rows-and-columns-report-builder-and-ssrs). For more information about expressions and aggregates, see [Expression Uses in Reports &#40;Power BI Report Builder&#41;](./expression-uses-reports-report-builder.md) and [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](./report-builder-functions-aggregate-functions-reference.md).  
+ For more information about these subjects:
+ 
+- Interpreting visual cues on tablix data regions: [Tablix Data Region Cells, Rows, and Columns &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tablix-data-region-cells-rows-and-columns-report-builder-and-ssrs).
+- The tablix data region: [Tablix Data Region Cells, Rows, and Columns &#40;Report Builder&#41;](/sql/reporting-services/report-design/tablix-data-region-cells-rows-and-columns-report-builder-and-ssrs).
+- Expressions: [Expression Uses in Reports &#40;Power BI Report Builder&#41;](./expression-uses-reports-report-builder.md)
+- Aggregates: [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](./report-builder-functions-aggregate-functions-reference.md).  
   
   
 ##  <a name="Sparklines"></a> Synchronizing Scales for Sparklines  
