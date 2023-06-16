@@ -43,13 +43,19 @@ Before you can use the sample, get the sample in one of the following ways:
 
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the Corporate Spend sample as a .pbix file, which is designed for use with Power BI Desktop. If you'd like to view it in the Power BI service, you can publish it there.
+Alternatively, you can download the Corporate Spend sample as a .pbix file, which is designed for use with Power BI Desktop. 
 
-1. After you open the file in Power BI Desktop, select **File** > **Publish** > **Publish to Power BI** or choose **Publish** in the **Home** ribbon.
+1. Open the GitHub Samples repository to the [Corporate Spend sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Corporate%20Spend.pbix).
+
+1. Select **Download** in the upper-right corner. It downloads automatically to your Downloads folder.
+
+If you'd like to view it in the Power BI service, you can publish it there.
+
+1. Open the file in Power BI Desktop and select **File** > **Publish** > **Publish to Power BI** or choose **Publish** in the **Home** ribbon.
 
 1. In the **Publish to Power BI** dialog box, choose a workspace, and then **Select**.
 
-   Power BI imports the sample, adding a report and dataset to your selected workspace.
+   Power BI imports the sample, adding the report and dataset to your selected workspace.
 
 ## Explore the report
 
@@ -156,7 +162,7 @@ Below that visualization, the **Var Plan % by Business Area** is presented as a 
 
 ## Create a Corporate Spend dashboard
 
-A Power BI *dashboard* is a single page, often called a *canvas*. A dashboard tells a story through visualizations. You can create a dashboard from a Power BI report. You can use the *Ask a question about your data* feature to explore the data associated with a report.
+A Power BI *dashboard* is a single page containing visualizations that can come from one or more reports, and each report is based on one dataset. You can also generate visualizations on the dashboard by using the Q&A *Ask a question about your data* feature to explore the data associated with a report. Think of a dashboard as an entryway into the underlying reports and datasets. Select a visualization to take you to the report that was used to create it.
 
 To create a dashboard in the Power BI service:
 
