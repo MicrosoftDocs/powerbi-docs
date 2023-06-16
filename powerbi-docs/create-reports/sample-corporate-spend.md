@@ -100,7 +100,7 @@ Use the decomposition tree visualization, or *decomp tree*, to visualize data ac
 
 There's a decomp tree in the IT Spend Trend page of the Corporate Spend sample. Open the report to experiment with the visualization.
 
-:::image type="content" source="media/sample-corporate-spend/power-bi-spend-trend-tree.png" alt-text="Screenshot shows the dashboard for the Corporate Spend sample." lightbox="media/sample-corporate-spend/power-bi-spend-trend-tree.png":::
+:::image type="content" source="media/sample-corporate-spend/power-bi-spend-trend-tree.png" alt-text="Screenshot shows the dashboard for the Corporate Spend sample with the decomp tree highlighted." lightbox="media/sample-corporate-spend/power-bi-spend-trend-tree.png":::
 
 1. For **Select Sales Region**, select **All** to query data from all regions.
 
