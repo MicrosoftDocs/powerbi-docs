@@ -34,7 +34,7 @@ Union(expression, scope, recursive)
  (**Enumerated Type**) Optional. **Simple** (default) or **RdlRecursive**. Specifies whether to perform the aggregation recursively.  
   
 ## Return  
- Returns a spatial object, either **SqlGeometry** or **SqlGeography**, based on the expression type. For more information about **SqlGeometry** and **SqlGeography** spatial data types, see [Spatial Data Types Overview](/sql/relational-databases/spatial/spatial-data-types-overview.md).  
+ Returns a spatial object, either **SqlGeometry** or **SqlGeography**, based on the expression type. For more information about **SqlGeometry** and **SqlGeography** spatial data types, see [Spatial Data Types Overview](/sql/relational-databases/spatial/spatial-data-types-overview).  
   
 ## Remarks  
  The set of data specified in the expression must have the same data type.  
@@ -72,7 +72,7 @@ Union(expression, scope, recursive)
   
 ## Next steps
  [Expression Uses in Reports &#40;Power BI Report Builder&#41;](./expression-uses-reports-report-builder.md)   
- [Expression Examples &#40;Power BI Report Builder&#41;](./expression-examples-report-builder.md)   
+ [Expression Examples &#40;Power BI Report Builder&#41;](./report-builder-expression-examples.md)
  [Data Types in Expressions &#40;Power BI Report Builder&#41;](./data-types-expressions-report-builder.md) 
  [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Power BI Report Builder&#41;](./expression-scope-for-totals-aggregates-and-built-in-collections.md)
   

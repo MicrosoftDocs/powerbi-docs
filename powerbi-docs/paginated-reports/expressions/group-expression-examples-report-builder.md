@@ -32,6 +32,6 @@ ms.reviewer: rpatkar
   
 ## See Also  
  [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs) 
- [Expression Examples &#40;Power BI Report Builder&#41;](./expression-examples-report-builder.md)   
+ [Expression Examples &#40;Power BI Report Builder&#41;](./report-builder-expression-examples.md)
   
   

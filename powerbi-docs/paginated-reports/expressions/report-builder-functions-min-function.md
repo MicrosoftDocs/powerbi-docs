@@ -64,7 +64,7 @@ Min(expression, scope, recursive)
   
 ## Next steps
  [Expression Uses in Reports &#40;Power BI Report Builder&#41;](./expression-uses-reports-report-builder.md)   
- [Expression Examples &#40;Power BI Report Builder&#41;](./expression-examples-report-builder.md)   
+ [Expression Examples &#40;Power BI Report Builder&#41;](./report-builder-expression-examples.md)
  [Data Types in Expressions &#40;Power BI Report Builder&#41;](./data-types-expressions-report-builder.md) 
  [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Power BI Report Builder&#41;](./expression-scope-for-totals-aggregates-and-built-in-collections.md)
 

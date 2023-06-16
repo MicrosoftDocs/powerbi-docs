@@ -152,11 +152,10 @@ ms.reviewer: rpatkar
  For many reports, calculations that are scoped to groups can create many cells that have zero (0) or null values. To reduce clutter in your report, add an expression to return blanks if the aggregate value is 0. For more information, see "Examples that Suppress Null or Zero Values" in [Expression Examples &#40;Power BI Report Builder&#41;](./report-builder-expression-examples.md).  
   
   
-## See Also  
+## Next steps
  [Expression Examples &#40;Power BI Report Builder&#41;](./report-builder-expression-examples.md)
  [Group Expression Examples &#40;Power BI Report Builder&#41;](./group-expression-examples-report-builder.md)   
  [Creating Recursive Hierarchy Groups &#40;Power BI Report Builder&#41;](./creating-recursive-hierarchy-groups-report-builder.md)   
- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../report-builder-tables-matrices-lists.md)
  [Formatting Text and Placeholders &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder)
   
   

@@ -53,7 +53,7 @@ Sum(expression, scope, recursive)
   
  For more information, see [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](./report-builder-functions-aggregate-functions-reference.md) and [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Power BI Report Builder&#41;](./expression-scope-for-totals-aggregates-and-built-in-collections.md).  
   
- For more information about recursive aggregates, see [Creating Recursive Hierarchy Groups &#40;Power BI Report Builder&#41;](../../reporting-services/report-design/creating-recursive-hierarchy-groups-report-builder.md).  
+ For more information about recursive aggregates, see [Creating Recursive Hierarchy Groups &#40;Power BI Report Builder&#41;](./creating-recursive-hierarchy-groups-report-builder.md).  
   
 ## Examples  
 
@@ -75,7 +75,7 @@ Sum(expression, scope, recursive)
   
 ## Next steps
  [Expression Uses in Reports &#40;Power BI Report Builder&#41;](./expression-uses-reports-report-builder.md)   
- [Expression Examples &#40;Power BI Report Builder&#41;](./expression-examples-report-builder.md)   
- [Data Types in Expressions &#40;Power BI Report Builder&#41;](./data-types-in-expressions-report-builder.md) 
+ [Expression Examples &#40;Power BI Report Builder&#41;](./report-builder-expression-examples.md)
+ [Data Types in Expressions &#40;Power BI Report Builder&#41;](./data-types-expressions-report-builder.md) 
  [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Power BI Report Builder&#41;](./expression-scope-for-totals-aggregates-and-built-in-collections.md)  
   
