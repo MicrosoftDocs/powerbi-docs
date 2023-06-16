@@ -1,6 +1,6 @@
 ---
 title: 'Corporate Spend sample for Power BI: Take a tour'
-description: Find out how to get the Corporate Spend sample for Power BI. Take a tour of the features used in this sample.
+description: Find out how to get the Corporate Spend sample for Power BI. Take a tour of the features used in this sample, including the decomposition tree visualization.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: amac
@@ -51,6 +51,111 @@ Alternatively, you can download the Corporate Spend sample as a .pbix file, whic
 
    Power BI imports the sample, adding a report and dataset to your selected workspace.
 
+## Explore the report
+
+To open the Corporate Spend report, go to your workspace and select **Corporate Spend**.
+
+:::image type="content" source="media/sample-corporate-spend/power-bi-select-report.png" alt-text="Screenshot shows the Corporate Spend sample report and dataset links.":::
+
+You can see the visualizations in the report.
+
+:::image type="content" source="media/sample-corporate-spend/power-bi-corporate-spend-dashboard.png" alt-text="Screenshot shows the dashboard for the Corporate Spend sample." lightbox="media/sample-corporate-spend/power-bi-corporate-spend-dashboard.png":::
+
+In the report, you can look at all the visualizations. You can select a region and then view the data for that region in all the different visualizations.
+
+You can edit current visualizations and create your own visualizations that use the dataset for this sample. This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
+
+Select **Edit** in the **Power BI** header bar to explore in the editing view:
+
+- See how the pages are made, the fields in each chart, and the filters on the pages.
+- Add pages and charts, based on the same data.
+- Change the visualization type for each chart.
+- Pin charts of interest to your dashboard.
+
+Save or discard your changes.
+
+### IT Spend Trend page
+
+This section describes the visuals from the **IT Spend Trend** section of the sample report.
+
+1. To see data for all regions, select **All regions** from Select Sales Region.
+
+   :::image type="content" source="media/sample-corporate-spend/power-bi-select-sales-region.png" alt-text="Screenshot shows selecting all regions in the from Select Sales Region.":::
+
+   All the visualizations on the page reflect this selection. The **Actual and Plan by IT Area** and **Actual by Period and Business Area** visualizations reflect data from all regions.
+
+   :::image type="content" source="media/sample-corporate-spend/power-bi-actual-spend-vizualization.png" alt-text="Screenshot shows two visualizations for actual spend for all regions.":::
+
+1. Select **Aus and NZ** in the **Var Plan % by Sales Region** chart, and then observe the **Var Plan by IT Area** chart.
+
+   :::image type="content" source="media/sample-corporate-spend/power-bi-spend-region.png" alt-text="Screenshot shows visualizations for a selected region.":::
+
+1. Now select **USA**. You can compare actual and planned spend for different selections.
+
+   :::image type="content" source="media/sample-corporate-spend/power-bi-spend-comparision.png" alt-text="Screenshot shows visualizations for a different region.":::
+
+### Learn about the decomposition tree visual  
+
+Use the decomposition tree visualization, or *decomp tree*, to visualize data across multiple dimensions. You can aggregate data and drill down into your dimensions in any order. This tool is valuable for improvised exploration and conducting root cause analysis.
+
+There's a decomp tree in the IT Spend Trend page of the Corporate Spend sample. Open the report to experiment with the visualization.
+
+:::image type="content" source="media/sample-corporate-spend/power-bi-spend-trend-tree.png" alt-text="Screenshot shows the dashboard for the Corporate Spend sample." lightbox="media/sample-corporate-spend/power-bi-spend-trend-tree.png":::
+
+1. For **Select Sales Region**, select **All** to query data from all regions.
+
+1. Select the X next to **Period** and **IT Area** to remove those branches.
+
+1. Next to **Var Plan**, select the plus sign, then select **Sales Region**.
+
+   :::image type="content" source="media/sample-corporate-spend/power-bi-select-sales-region-tree.png" alt-text="Screenshot shows the Var Plan entry with its context menu expanded and Sales Region selected.":::
+
+   The decomp tree shows the six regions as branches. 
+
+1. Now select the plus sign next to **Europe** and then select **IT Area**.
+
+   :::image type="content" source="media/sample-corporate-spend/power-bi-select-sales-it-area-tree.png" alt-text="Screenshot shows the Europe region entry with its context menu expanded and IT Area selected.":::
+
+1. You can follow the branches down for the sales region you select. You can expand any of the branches in **IT Area** for a different data type.
+
+   :::image type="content" source="media/sample-corporate-spend/power-bi-sales-it-area-tree.png" alt-text="Screenshot shows the decomposition tree with Sales Region and IT Area selected.":::
+
+1. Select the X next to **IT Area** and **Sales Region** to remove those branches.
+
+1. Next to **Var Plan**, select the plus sign, then select **High value**. 
+
+   :::image type="content" source="media/sample-corporate-spend/power-bi-decomp-high-value.png" alt-text="Screenshot shows the Var Plan entry with its context menu expanded and High value selected.":::
+
+   The visualization shows Var Plan broken down by **IT Area**. The **High value** selection considers all available fields and determines which one to drill into to get the highest value of the measure being analyzed.
+
+1. Next to **IT Area**, select the plus sign, then select **Low value**. This option gets the lowest value for the measure being analyzed, in this example, **IT Sub Area**.
+
+   :::image type="content" source="media/sample-corporate-spend/power-bi-decomp-highest-lowest.png" alt-text="Screenshot shows the highest and lowest values selected for the Var Plan.":::
+
+For more information, see [Create and view decomposition tree visuals in Power BI](../visuals/power-bi-visualization-decomposition-tree.md).
+
+### Plan Variance Analysis page
+
+Open the report and select the **Plan Variance Analysis** page from the **Pages** column. For **Select Sales Region**, select **All**.
+
+The **Var Plan by Business Area** shows the variance for all regions.
+
+:::image type="content" source="media/sample-corporate-spend/power-bi-plan-variance.png" alt-text="Screenshot shows two tiles in the report about Plan Variance.":::
+
+Below that visualization, the **Var Plan % by Business Area** is presented as a table of values. If you want to view it as a visualization parallel to the one above it, edit the report.
+
+1. In the menu bar, select **Edit**.
+
+1. Select the table then, under **Visualizations**, select the **Stacked bar chart**.
+
+   :::image type="content" source="media/sample-corporate-spend/power-bi-visualization.png" alt-text="Screenshot shows the visualizations to choose from for the data.":::
+
+   **Visualizations** offers many options to display your data.
+
+   :::image type="content" source="media/sample-corporate-spend/power-bi-visualization-no-table.png" alt-text="Screenshot shows the stacked bar chart visualization.":::
+
+1. Select **Reading view** to exit the edit mode and save your changes.
+
 ## Create a Corporate Spend dashboard
 
 A Power BI *dashboard* is a single page, often called a *canvas*. A dashboard tells a story through visualizations. You can create a dashboard from a Power BI report. You can use the *Ask a question about your data* feature to explore the data associated with a report.
@@ -58,8 +163,6 @@ A Power BI *dashboard* is a single page, often called a *canvas*. A dashboard te
 To create a dashboard in the Power BI service:
 
 1. Open a report by selecting it in a workspace.
-
-   :::image type="content" source="media/sample-corporate-spend/select-power-bi-report.png" alt-text="Screenshot shows the Corporate Spend sample report and dataset links.":::
 
 1. Hover over a visual and then select **Pin visual**.
 
@@ -75,58 +178,7 @@ To create a dashboard in the Power BI service:
 
 Your new dashboard now appears in **My workspace**.
 
-### IT Spend Trend page
-
-This section describes the visuals from the **IT Spend Trend** section of the sample report as they appear in a dashboard created from that page.
-
-To see data for all regions, select **All regions** from Select Sales Region.
-
-:::image type="content" source="media/sample-corporate-spend/power-bi-select-sales-region.png" alt-text="Screenshot shows selecting all regions in the from Select Sales Region.":::
-
-All the visualizations on the canvas reflect this selection. The **Actual and Plan by IT Area** and **Actual by Period and Business Area** visualizations reflect data from all regions.
-
-:::image type="content" source="media/sample-corporate-spend/power-bi-actual-spend-vizualization.png" alt-text="Screenshot shows two visualizations for actual spend for all regions.":::
-
-Select **Aus and NZ** in the **Var Plan % by Sales Region** chart, and then observe the **Var Plan by IT Area** chart.
-
-:::image type="content" source="media/sample-corporate-spend/power-bi-spend-region.png" alt-text="Screenshot shows visualizations for a selected region.":::
-
-Now select **USA**. You can compare actual and planned spend for different selections.
-
-:::image type="content" source="media/sample-corporate-spend/power-bi-spend-comparision.png" alt-text="Screenshot shows visualizations for a different region.":::
-
-### Plan Variance Analysis page
-
-Open the report and select the Plan Variance Analysis page from the **Pages** column. For **Select Sales Region**, select **All**.
-
-The **Var Plan by Business Area** shows the variance for all regions.
-
-:::image type="content" source="media/sample-corporate-spend/power-bi-plan-variance.png" alt-text="Screenshot shows two tiles in the report about Plan Variance.":::
-
-Below that visualization, the **Var Plan % by Business Area** is presented as a table of values. If you want to view it as a visualization parallel to the one above it, edit the report.
-
-1. In the menu bar, select **Edit**.
-
-1. Select the table then, under **Visualizations**, select the **Stacked bar chart**.
-
-   :::image type="content" source="media/sample-corporate-spend/power-bi-visualization.png" alt-text="Screenshot shows the visualizations to choose from for the data.":::
-
-   Visualizations offers many options to display your data.
-
-   :::image type="content" source="media/sample-corporate-spend/power-bi-visualization-no-table.png" alt-text="Screenshot shows the stacked bar chart visualization.":::
-
-1. Select **Reading view** to exit the Edit mode and save your changes.
-
-### Edit the report
-
-As in the previous section, select **Edit** in the **Power BI** header bar to explore in the editing view:
-
-- See how the pages are made, the fields in each chart, and the filters on the pages.
-- Add pages and charts, based on the same data.
-- Change the visualization type for each chart.
-- Pin charts of interest to your dashboard.
-
-Save or discard your changes.
+For more information, see [Introduction to dashboards for Power BI designers](service-dashboards.md).
 
 ## Ask questions of the data
 
@@ -149,7 +201,5 @@ A dashboard offers the ability to ask questions about data in natural language t
 1. Select **Exit Q&A** to return to the dashboard.
 
 ## Next steps
-
-This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn. Connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started creating in the Power BI service](../fundamentals/service-get-started.md).
