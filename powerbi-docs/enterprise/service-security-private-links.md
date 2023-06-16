@@ -1,13 +1,13 @@
 ﻿---
 title: Private endpoints for secure access to Power BI
 description: Use the Azure private link feature to provide secure access to Power BI using Azure Networking private endpoints. Data is sent privately instead of over the internet.
-author: davidiseminger
-ms.author: davidi
+author: DandanZhang
+ms.author: danzhang
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 04/18/2023
+ms.date: 06/08/2023
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -116,6 +116,8 @@ After this process is finished, you can move on to the next step.
       ]
     }
     ```
+    
+    If you're using an Azure Government cloud, location should be the region name of the tenant. For example, if the tenant is in US Gov Texas, you should put  "location": "usgovtexas" in the ARM template. The list of Power BI US Government regions can be found in the [Power BI for US government article](../enterprise/service-govus-overview.md#connect-government-and-global-azure-cloud-services).
 
 4. On the review screen, select **Create** to accept the terms and conditions.
 

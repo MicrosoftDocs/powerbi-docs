@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 12/14/2022
-ms.custom: contperf-fy21q3
+ms.custom: fabric
 LocalizationGroup: Share your work
 ---
 # Give users access to workspaces in Power BI

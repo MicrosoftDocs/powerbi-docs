@@ -56,7 +56,7 @@ After you purchase and assign the license, it can take up to an hour for the lic
 Currently, the following Power BI environments don't support license management or license enforcement:
 
 * Embedded - Publish To Web, PaaS embed
-* National clouds (Depends on general support for transactability in national clouds)
+* National/Regional clouds (Depends on general support for transactability in national/regional clouds)
 * RS Server (No planned support)
 * Exporting (PDF\PPT) using REST API
 
