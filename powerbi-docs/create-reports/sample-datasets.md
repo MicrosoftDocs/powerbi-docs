@@ -49,10 +49,17 @@ You can explore it these ways:
 
 There are revised versions of the original samples. These new versions take the original datasets and incorporate the latest visualizations.
 
+- Corporate Spend. Take a tour of the [Corporate Spend](sample-corporate-spend.md) sample.
+- Employee Hiring and History
+- Revenue Opportunities
+- Store Sales
+- Competitive marketing Analysis
+- Regional Sales Sample
+
 To obtain these samples:
 
 - Install the [built-in samples](#install-built-in-samples) in the Power BI service.
-- Download the [Power BI report files](#download-original-sample-pbix-power-bi-files) (.pbix).
+- Download the [Power BI report files (.pbix)](https://github.com/microsoft/powerbi-desktop-samples/tree/main/new-power-bi-service-samples) from the Power BI Samples GitHub repository.
 
 ## Eight original samples
 
