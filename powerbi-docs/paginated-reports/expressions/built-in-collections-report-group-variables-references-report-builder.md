@@ -57,7 +57,7 @@ ms.reviewer: rodolfoc
   
 ## Next steps
 
-- [Expressions in Power BI Report Builder](../report-builder-expressions.md)
-- [Expression examples in Power BI Report Builder](../report-builder-expression-examples.md)
+- [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md)
+- [Expression examples in Power BI Report Builder](../expressions/report-builder-expression-examples.md)
 - [Filter, Group, and Sort Data &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
 - [Built-in Collections in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/built-in-collections-in-expressions-report-builder)   
