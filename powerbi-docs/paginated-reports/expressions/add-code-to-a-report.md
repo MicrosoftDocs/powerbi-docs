@@ -19,11 +19,11 @@ In any expression, you can call your own custom code in a paginated report.
 Embed code written in Visual Basic directly in your report. If your code refers to a Microsoft .NET Framework that is not <xref:System.Math> or <xref:System.Convert>, you must add the reference to the report. For more information, see [Add an Assembly Reference to a Paginated Report](./add-assembly-reference.md). For more information about other references you can make from your code, see [Custom Code and Assembly References in Expressions &#40;Power BI Report Builder&#41;](./custom-code-and-assembly-references-in-expressions.md).  
 
   
-### To add embedded code to a report  
+## Add embedded code to a report  
   
-1.  In **Design** view, right-click the design surface outside the border of the report and click **Report Properties**.  
+1.  In **Design** view, right-click the design surface outside the border of the report and select **Report Properties**.  
   
-2.  Click **Code**.  
+2.  Select **Code**.  
   
 3.  In **Custom code**, type the code. Errors in the code produce warnings when the report runs. The following example creates a custom function named `ChangeWord` that replaces the word "`Bike`" with "`Bicycle`".  
   
