@@ -1,45 +1,48 @@
 ---
-title: CountDistinct function in a Power BI paginated report | Microsoft Docs
-description: Get a count of all distinct non-null values that are specified by an expression in a Power BI paginated report in the context of a given scope.
+title: First function in a Power BI paginated report | Microsoft Docs
+description: Use the First function in a Power BI paginated report to return the first value in the given scope of the specified expression in Power BI Report Builder.
 ms.date: 04/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.assetid: 902c251e-e1e8-41d2-ac20-5bb6138ac410
+ms.assetid: d0914520-30c5-4d63-9b59-8d9342ed63b9
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: rodolfoc
 ---
-# CountDistinct function in a paginated report (Power BI Report Builder)
+# First function in a paginated report (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  Returns a count of all distinct non-null values specified by the expression in a Power BI paginated report, evaluated in the context of the given scope.  
+  Returns the first value in the given scope of the specified expression in a Power BI paginated report.  
   
 ## Syntax  
   
 ```  
   
-CountDistinct(expression, scope, recursive)  
+First(expression, scope)  
 ```  
   
 ### Parameters
 
  *expression*  
- (**Variant**) The expression on which to perform the aggregation.  
+ (**Variant** or **Binary**) The expression on which to perform the aggregation, for example, `=Fields!FieldName.Value`.  
   
  *scope*  
  (**String**) Optional. The name of a dataset, group, or data region that contains the report items to which to apply the aggregate function. If *scope* isn't specified, the current scope is used.  
   
- *recursive*  
- (**Enumerated Type**) Optional. **Simple** (default) or **RdlRecursive**. Specifies whether to perform the aggregation recursively.  
-  
 ## Return type
 
- Returns an **Integer**.  
+ Determined by the type of expression.  
   
 ## Remarks
 
+ The **First** function returns the first value in a set of data after all sorting and filtering have been applied at the specified scope.  
+  
+ The **First** function can't be used in group filter expressions with anything except the current (default) scope.  
+  
+ You can also use **First** in a page header to return the first value from the **ReportItems** collection for a page in order to produce dictionary-style headings that display the first and last entries on a page.  
+  
  The value of *scope* must be a string constant and can't be an expression. For outer aggregates or aggregates that don't specify other aggregates, *scope* must refer to the current scope or a containing scope. For aggregates of aggregates, nested aggregates can specify a child scope.  
   
  *Expression* can contain calls to nested aggregate functions with the following exceptions and conditions:  
@@ -56,21 +59,18 @@ CountDistinct(expression, scope, recursive)
   
  For more information about recursive aggregates, see [Creating Recursive Hierarchy Groups &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/creating-recursive-hierarchy-groups-report-builder-and-ssrs).  
   
-## Example  
- The following code example shows an expression that calculates the number of unique non-null values of `Size` for the default scope and for a parent group scope. The expression is added to a cell in a row that belongs to the child group `GroupbySubcategory`. The parent group is `GroupbyCategory`. The expression displays the results for `GroupbySubcategory` (the default scope) and then for `GroupbyCategory` (the parent group scope).  
-  
-> [!NOTE]  
-> Expressions should not contain actual carriage returns and line breaks; these are included in the example code to support documentation renderers. If you copy the following example, remove carriage returns from each line.  
+## Example
+
+ The following code example returns the first product number in the `Category` group of a data region:  
   
 ```  
-="Distinct count (Subcategory): " & CountDistinct(Fields!Size.Value) &   
-"Distinct count (Category): " & CountDistinct(Fields!Size.Value,"GroupbyCategory")  
+=First(Fields!ProductNumber.Value, "Category")  
 ```  
   
 ## Next steps
 
-- [Expressions in Power BI Report Builder](../report-builder-expressions.md)
-- [Expression examples in Power BI Report Builder](../report-builder-expression-examples.md)
-- [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](expression-uses-reports-report-builder.md)   
+- [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md)
+- [Expression examples in Power BI Report Builder](../expressions/report-builder-expression-examples.md)
+- [Expression uses in Power BI reports](expression-uses-reports-report-builder.md)   
 - [Data Types in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)   
 - [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
