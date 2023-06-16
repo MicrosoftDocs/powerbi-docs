@@ -35,9 +35,9 @@ ms.reviewer: saurkumar
   
     -   To specify an expression that is evaluated at run-time, select **Show or hide based on an expression**. Type the expression or select the expression (**fx**) button to create the expression in the **Expression** dialog box.  
   
-        > [!NOTE]  
-        >  When you specify an expression for visibility, you are setting the Hidden property of the report item, as shown in the following image. The evaluated expression shows the report item when the value is False, and hides the report item when the value is True.   
-        > ![Screenshot showing Properties_Visibility dialog and Hidden property.](../report-builder/media/hidden-property-properties-visibility.png "Properties_Visibility dialog and Hidden property")  
+        When you specify an expression for visibility, you are setting the Hidden property of the report item, as shown in the following image. The evaluated expression shows the report item when the value is False, and hides the report item when the value is True.
+
+        > ![Screenshot showing Properties Visibility dialog and Hidden property.](media/hide-item-report-builder/hidden-property-properties-visibility.png "Properties Visibility dialog and Hidden property")  
   
 4.  Select **OK** twice.  
   
