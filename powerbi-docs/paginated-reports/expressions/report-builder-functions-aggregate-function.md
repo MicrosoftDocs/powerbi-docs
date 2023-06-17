@@ -28,28 +28,28 @@ Aggregate(expression, scope)
  The expression on which to perform the aggregation. The expression must be a simple field reference.  
   
  *scope*  
- (**String**) The name of a dataset, group, or data region that contains the report items to which to apply the aggregate function. *Scope* must be a string constant and cannot be an expression. If *scope* is not specified, the current scope is used.  
+ (**String**) The name of a dataset, group, or data region that contains the report items to which to apply the aggregate function. *Scope* must be a string constant and can't be an expression. If *scope* isn't specified, the current scope is used.  
   
 ## Return Type  
- Return type is determined by the data provider. Returns **Nothing** if the data provider does not support this function or data is not available.  
+ Return type is determined by the data provider. Returns **Nothing** if the data provider doesn't support this function or data isn't available.  
   
 ## Remarks  
  The **Aggregate** function provides a way to use aggregates that are calculated on the external data source. Support for this feature is determined by the data extension. For example, the SQL Server Analysis Services data processing extension retrieves flattened rowsets from an MDX query. Some rows in the result set can contain aggregate values calculated on the data source server. These are known as *server aggregates*. To view server aggregates in the graphical query designer for Analysis Services, you can use the **Show Aggregate** button on the toolbar. For more information, see [Analysis Services MDX Query Designer User Interface &#40;Report Builder&#41;](/previous-versions/sql/).  
   
- When you display the combination of aggregate and detail dataset values on detail rows of a Tablix data region, server aggregates would not typically be included because they are not detail data. However, you may want to display all values retrieved for the dataset and customize the way aggregate data is calculated and displayed.  
+ When you display the combination of aggregate and detail dataset values on detail rows of a Tablix data region, server aggregates wouldn't typically be included because they aren't detail data. However, you may want to display all values retrieved for the dataset and customize the way aggregate data is calculated and displayed.  
   
- Report Builder detects the use of the **Aggregate** function in expressions in your report in order to determine whether to display server aggregates on detail rows. If you include **Aggregate** in an expression in a data region, server aggregates can only appear on group total or grand total rows, not on detail rows. If you want to display server aggregates on detail rows, do not use the **Aggregate** function.  
+ Report Builder detects the use of the **Aggregate** function in expressions in your report in order to determine whether to display server aggregates on detail rows. If you include **Aggregate** in an expression in a data region, server aggregates can only appear on group total or grand total rows, not on detail rows. If you want to display server aggregates on detail rows, don't use the **Aggregate** function.  
   
  You can change this default behavior by changing the value of the **Interpret subtotals as details** option on the **Dataset Properties** dialog box. When this option is set to **True**, all data, including server aggregates, appears as detail data. When set to **False**, server aggregates appear as totals. The setting for this property affects all data regions that are linked to this dataset.  
   
 > [!NOTE]
->  All containing groups for the report item that references **Aggregate** must have simple field references for their group expressions, for example, `[FieldName]`. You cannot use **Aggregate** in a data region that uses complex group expressions. For the SQL Server Analysis Services data processing extension, your query must include MDX fields of type **LevelProperty** (not **MemberProperty**) to support aggregation using the **Aggregate**function.  
+>  All containing groups for the report item that references **Aggregate** must have simple field references for their group expressions, for example, `[FieldName]`. You can't use **Aggregate** in a data region that uses complex group expressions. For the SQL Server Analysis Services data processing extension, your query must include MDX fields of type **LevelProperty** (not **MemberProperty**) to support aggregation using the **Aggregate**function.  
   
  *Expression* can contain calls to nested aggregate functions with the following exceptions and conditions:  
   
 -   *Scope* for nested aggregates must be the same as, or contained by, the scope of the outer aggregate. For all distinct scopes in the expression, one scope must be in a child relationship to all other scopes.  
   
--   *Scope* for nested aggregates cannot be the name of a dataset.  
+-   *Scope* for nested aggregates can't be the name of a dataset.  
   
 -   *Expression* must not contain **First**, **Last**, **Previous**, or **RunningValue** functions.  
   
