@@ -34,7 +34,7 @@ InScope(scope)
   
  *Scope* cannot be an expression.  
   
- A typical use for the **InScope** function is in data regions that have dynamic scoping. For example, **InScope** can be used in a drillthrough link in a data region cells to provide a different report name and different sets of parameters depending on which cell is clicked. An example of this is as follows:  
+ A typical use for the **InScope** function is in data regions that have dynamic scoping. For example, **InScope** can be used in a drillthrough link in data region cells to provide a different report name and different sets of parameters depending on which cell is clicked. An example of this is as follows:  
   
 -   The following expression, used as the report name in a drillthrough link, opens the `ProductDetail` report if the clicked cell is in the `Month` group, and the `ProductSummary` report if it is not.  
   
