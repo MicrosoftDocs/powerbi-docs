@@ -37,10 +37,10 @@ LookupSet(source_expression, destination_expression, result_expression, dataset)
  A constant that specifies the name of a dataset in the report. For example, "ContactInformation".  
   
 ## Return  
- Returns a **VariantArray**, or **Nothing** if there is no match.  
+ Returns a **VariantArray**, or **Nothing** if there's no match.  
   
 ## Remarks  
- Use **LookupSet** to retrieve a set of values from the specified dataset for a name/value pair where there is a 1-to-many relationship. For example, for a customer identifier in a table, you can use **LookupSet** to retrieve all the associated phone numbers for that customer from a dataset that is not bound to the data region.  
+ Use **LookupSet** to retrieve a set of values from the specified dataset for a name/value pair where there's a 1-to-many relationship. For example, for a customer identifier in a table, you can use **LookupSet** to retrieve all the associated phone numbers for that customer from a dataset that isn't bound to the data region.  
   
  **LookupSet** does the following:  
   
@@ -52,19 +52,19 @@ LookupSet(source_expression, destination_expression, result_expression, dataset)
   
 -   Returns the set of result expression values.  
   
- To retrieve a single value from a dataset with name/value pairs for a specified name where there is a 1-to-1 relationship, use [Lookup Function &#40;Power BI Report Builder&#41;](./report-builder-functions-lookup-function.md). To call **Lookup** for a set of values, use [Multilookup Function &#40;Power BI Report Builder&#41;](./report-builder-functions-multilookup-function.md).  
+ To retrieve a single value from a dataset with name/value pairs for a specified name where there's a 1-to-1 relationship, use [Lookup Function &#40;Power BI Report Builder&#41;](./report-builder-functions-lookup-function.md). To call **Lookup** for a set of values, use [Multilookup Function &#40;Power BI Report Builder&#41;](./report-builder-functions-multilookup-function.md).  
   
  The following restrictions apply:  
   
 -   **LookupSet** is evaluated after all filter expressions are applied.  
   
--   Only one level of lookup is supported. A source, destination, or result expression cannot include a reference to a lookup function.  
+-   Only one level of lookup is supported. A source, destination, or result expression can't include a reference to a lookup function.  
   
 -   Source and destination expressions must evaluate to the same data type.  
   
--   Source, destination, and result expressions cannot include references to report or group variables.  
+-   Source, destination, and result expressions can't include references to report or group variables.  
   
--   **LookupSet** cannot be used as an expression for the following report items:  
+-   **LookupSet** can't be used as an expression for the following report items:  
   
     -   Dynamic connection strings for a data source.  
   
@@ -92,7 +92,7 @@ LookupSet(source_expression, destination_expression, result_expression, dataset)
 ```  
   
 ### B. Use Join to create a result list 
- Because **LookupSet** returns a collection of objects, you cannot display the result expression directly in a text box. You can concatenate the value of each object in the collection as a string.  
+ Because **LookupSet** returns a collection of objects, you can't display the result expression directly in a text box. You can concatenate the value of each object in the collection as a string.  
   
  Use the Visual Basic function **Join** create a delimited string from a set of objects. Use a comma as a separator to combine the objects in a single line. In some renderers, you might use a Visual Basic line feed (`vbCrLF`) as a separator to list each value on a new line.  
   
@@ -109,7 +109,7 @@ LookupSet(source_expression, destination_expression, result_expression, dataset)
   
 ```  
 Function MakeList(ByVal items As Object()) As String  
-   If items Is Nothing Then  
+   If items is Nothing Then  
       Return Nothing  
    End If  
   
