@@ -28,7 +28,7 @@ Count(expression, scope, recursive)
  (**Variant** or **Binary**) The expression on which to perform the aggregation, for example, `=Fields!FieldName.Value`.  
   
  *scope*  
- (**String**) The name of a dataset, group, or data region that contains the report items to which to apply the aggregate function. If *scope* is not specified, the current scope is used.  
+ (**String**) The name of a dataset, group, or data region that contains the report items to which to apply the aggregate function. If *scope* isn't specified, the current scope is used.  
   
  *recursive*  
  (**Enumerated Type**) Optional. **Simple** (default) or **RdlRecursive**. Specifies whether to perform the aggregation recursively.  
@@ -37,13 +37,13 @@ Count(expression, scope, recursive)
  Returns an **Integer**.  
   
 ## Remarks  
- The value of *scope* must be a string constant and cannot be an expression. For outer aggregates or aggregates that do not specify other aggregates, *scope* must refer to the current scope or a containing scope. For aggregates of aggregates, nested aggregates can specify a child scope.  
+ The value of *scope* must be a string constant and can't be an expression. For outer aggregates or aggregates that don't specify other aggregates, *scope* must refer to the current scope or a containing scope. For aggregates of aggregates, nested aggregates can specify a child scope.  
   
  *Expression* can contain calls to nested aggregate functions with the following exceptions and conditions:  
   
 -   *Scope* for nested aggregates must be the same as, or contained by, the scope of the outer aggregate. For all distinct scopes in the expression, one scope must be in a child relationship to all other scopes.  
   
--   *Scope* for nested aggregates cannot be the name of a dataset.  
+-   *Scope* for nested aggregates can't be the name of a dataset.  
   
 -   *Expression* must not contain **First**, **Last**, **Previous**, or **RunningValue** functions.  
   
