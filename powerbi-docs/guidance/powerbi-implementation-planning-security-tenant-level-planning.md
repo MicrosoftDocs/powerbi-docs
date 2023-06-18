@@ -145,9 +145,6 @@ There are two aspects to enabling and managing how external user access will wor
 - [Azure AD settings](whitepaper-azure-b2b-power-bi.md#additional-azure-ad-settings-that-affect-experiences-in-power-bi-related-to-azure-ad-b2b) that are managed by an Azure AD administrator. These Azure AD settings are a prerequisite.
 - [Power BI tenant settings](/power-bi/admin/service-admin-portal-export-sharing) that are managed by a Power BI administrator in the admin portal. These settings will control the user experience in the Power BI service.
 
-> [!TIP]
-> Most external users are read-only consumers. However, sometimes you may want to allow an external user to edit and manage content in Power BI. In that situation, you must work within some [limitations](whitepaper-azure-b2b-power-bi.md#enabling-external-users-to-edit-and-manage-content-within-power-bi). We recommend that you thoroughly test the capabilities that you intend to implement.
-
 ### Guest invitation process
 
 There are two ways to invite guest users to your tenant.
