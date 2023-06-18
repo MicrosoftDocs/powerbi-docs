@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 09/29/2022
+ms.date: 06/18/2023
 LocalizationGroup: Conceptual
 ---
 
@@ -49,7 +49,7 @@ As described above, this ad-hoc sharing is performed by business users on an as 
 
 1. The process starts with a Contoso internal user sharing a dashboard or a report with an external user. If the external user is not already a guest in Contoso's Azure AD, they are invited. An email is sent to their email address that includes an invite to Contoso's Azure AD
 2. The recipient accepts the invite to Contoso's Azure AD and is added as a Guest user in Contoso's Azure AD.
-3. The recipient is then redirected to the Power BI dashboard, report, or app, which are read-only for the user.
+3. The recipient is then redirected to the Power BI dashboard, report, or app.
 
 The process is considered ad-hoc since business users in Contoso perform the invite action as needed for their business purposes. Each item shared is a single link the external user can access to view the content.
 
@@ -64,8 +64,6 @@ Some organizations require more control over when external users are added, are 
 
 ![Control which guests can see content](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_02.png)
 
-
-
 1. The process starts with an IT administrator inviting the guest user either manually or through the API provided by Azure Active Directory
 2. The user accepts the invite to the organization.
 3. Once the user has accepted the invitation, a user in Power BI can share a report or dashboard with the external user, or a security group they are in. Just like with regular sharing in Power BI the external user receives an email with the link to the item.
@@ -76,7 +74,6 @@ Some organizations require more control over when external users are added, are 
 Contoso has a set of reports and dashboards they need to share with one or more Suppliers. To ensure all required external users have access to this content, it is packaged as a Power BI app. The external users are either added directly to the app access list or through security groups. Someone at Contoso then sends the app URL to all the external users, for example in an email. When the external users open the link, they see all the content in a single easy to navigate experience.
 
 Using a Power BI app makes it easy for Contoso to build a BI Portal for its suppliers. A single access list controls access to all the required content reducing wasted time checking and setting item level permissions. Azure AD B2B maintains security access using the Supplier's native identity so users don't need additional login credentials. If using planned invites with security groups, access management to the app as personnel rotate into or out of the project is simplified. Membership in security groups manually or by using [dynamic groups](/azure/active-directory/b2b/use-dynamic-groups), so that all external users from a supplier are automatically added to the appropriate security group.
-
 
 ![Control content with AAD](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_03.png)
 
@@ -91,22 +88,11 @@ Apps also have a unique feature that allows app authors to install the applicati
 
 As Contoso continues to work with its subcontractors or suppliers, the external Engineers need to work closely with Contoso's analysts. Power BI provides several collaboration features that help users communicate about content they can consume. Dashboard commenting (and soon Report commenting) allows users to discuss data points they see and communicate with report authors to ask questions.
 
-Currently, external guest users can participate in comments by leaving comments and reading the replies. However, unlike internal users, guest users cannot be @mentioned and do not receive notifications that they've received a comment. In an upcoming release, those restrictions will be lifted and the Guest user will receive an email when a comment @mentions them. Guest users can use the subscriptions feature within Power BI to subscribe themselves to a report or dashboard. Learn more in Email subscriptions for reports and dashboards in the Power BI service.  
+Currently, external guest users can participate in comments by leaving comments and reading the replies. However, unlike internal users, guest users cannot be @mentioned and do not receive notifications that they've received a comment. Guest users can use the subscriptions feature within Power BI to subscribe themselves to a report or dashboard. Learn more in [Email subscriptions for reports and dashboards in the Power BI service](../collaborate-share/end-user-subscribe.md).  
 
 ### Access content in the Power BI mobile apps
 
-In an upcoming release, when Contoso's users share reports or dashboards with their external Guest counterparts, Power BI will send an email notifying the Guest. When the guest user opens the link to the report or dashboard on their mobile device, the content will open in the native Power BI mobile apps on their device, if they're installed. The guest user will then be able to navigate between content shared with them in the external tenant, and back to their own content from their home tenant.
-
-> [!NOTE]
-> The guest user cannot open the Power BI mobile app and immediately navigate to the external tenant, they must start with a link to an item in the external tenant. Common workarounds are described in the [Distributing links to content in the Parent organization's Power BI](#distributing-links-to-content-in-the-parent-organizations-power-bi) section later in this document.
-
-### Cross-organization editing and management of Power BI content
-
-Contoso and its Suppliers and subcontractors work increasingly closely together. Often an analyst at the subcontractor needs additional metrics or data visualizations to be added to a report Contoso has shared with them. The data should reside in Contoso's Power BI tenant, but external users should be able to edit it, create new content, and even distribute it to appropriate individuals.
-
-Power BI provides an option that enables **External guest users can edit and manage content** in the organization. By default, external users have a read-only consumption-oriented experience. However, this new setting allows the Power BI admin to choose which external users can edit and manage content within their own organization. Once allowed, the external user can edit reports, dashboards, publish or update apps, work in workspaces, and connect to data they have permission to use.
-
-This scenario is described in detail in the section Enabling external users to edit and manage content within Power BI later in this document.
+When the guest user opens the link to the report or dashboard on their mobile device, the content will open in the native Power BI mobile apps on their device, if they're installed. The guest user will then be able to navigate between content shared with them in the external tenant, and back to their own content from their home tenant. For more information about accessing content that has been shared with you from an external organization via Power BI mobile apps, see [View Power BI content shared with you from an external organization](../consumer/mobile/mobile-apps-b2b.md)
 
 ## Organizational relationships using Power BI and Azure AD B2B
 
@@ -120,8 +106,7 @@ Contoso's relationship with its radiator supplier is an example of direct collab
 
 ![Share between organizations](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_04.png)
 
-
-Typically, this sharing occurs initially using Ad hoc per item sharing. However, as teams grow or relationships deepen, the Planned per item sharing approach becomes the preferred method to reduce management overhead. Additionally, the Ad hoc or planned sharing of Power BI Apps, Commenting and subscribing to content across organizations, access to content in mobile apps can come into play as well, and cross-organization editing and management of Power BI content. Importantly, if both organizations' users have Power BI Pro licenses in their respective organizations, they can use those Pro licenses in each other's Power BI environments. This provides advantageous licensing since the inviting organization may not need to pay for a Power BI Pro license for the external users. This is discussed in more detail in the Licensing section later in this document.
+Typically, this sharing occurs initially using Ad hoc per item sharing. However, as teams grow or relationships deepen, the Planned per item sharing approach becomes the preferred method to reduce management overhead. Additionally, the Ad hoc or planned sharing of Power BI Apps, Commenting and subscribing to content across organizations, access to content in mobile apps can come into play as well. Importantly, if both organizations' users have Power BI Pro licenses in their respective organizations, they can use those Pro licenses in each other's Power BI environments. This provides advantageous licensing since the inviting organization may not need to pay for a Power BI Pro license for the external users. This is discussed in more detail in the Licensing section later in this document.
 
 ### Case 2: Parent and its subsidiaries or affiliates
 
@@ -129,11 +114,9 @@ Some organization structures are more complex, including partially or wholly own
 
 ![Working with subsidiaries](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_05.png)
 
-
 In this structure, the parent organization typically needs to distribute standardized insights to its subsidiaries. Typically, this sharing occurs using the Ad hoc or planned sharing of Power BI Apps approach as illustrated in the following image, since it allows distribution of standardized authoritative content to broad audiences. In practice a combination of all the Scenarios mentioned earlier in this document is used.
 
 ![Combining scenarios](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_06.png)
-
 
 This follows the following process:
 
@@ -150,7 +133,7 @@ Several important challenges are faced by organizations in this structure:
 
 Three approaches are commonly used to distribute links to the content. The first and most basic is to send the link to the app to the required users or to place it in a SharePoint Online site from which it can be opened. Users can then bookmark the link in their browsers for faster access to the data they need.
 
-The second approach relies on the cross-organization editing and management of Power BI content capability. The Parent organization allows users from the subsidiaries to access its Power BI and controls what they can access through permission. This gives access to Power BI Home where the user from the subsidiary sees a comprehensive list of content shared to them in the Parent organization's tenant. Then the URL to the Parent organizations' Power BI environment is given to the users at the subsidiaries.
+The second approach is where the parent organization allows users from the subsidiaries to access its Power BI and controls that they can access through permission. This gives access to Power BI Home where the user from the subsidiary sees a comprehensive list of content shared to them in the Parent organization's tenant. Then the URL to the Parent organizations' Power BI environment is given to the users at the subsidiaries.
 
 The final approach uses a Power BI app created within the Power BI tenant for each subsidiary. The Power BI app includes a dashboard with [tiles configured with the external link option](../create-reports/service-dashboard-edit-tile.md#hyperlink). When the user presses the tile, they are taken to the appropriate report, dashboard, or app in the parent organization's Power BI. This approach has the added advantage that the app can be installed automatically for all users in the subsidiary and is available to them whenever they sign in to their own Power BI environment. An added advantage of this approach is that it works well with the Power BI mobile apps that can open the link natively. You can also combine this with the second approach to enable easier switching between Power BI environments.
 
@@ -162,7 +145,6 @@ The first approach leverages [Azure Analysis Services](/azure/analysis-services/
 
 ![How sharing occurs with Power BI tenants](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_07.png)
 
-
 The second approach leverages [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) to build a relational data warehouse to provide access to data. This works similarly to the Azure Analysis Services approach, though some capabilities like row level security may be harder to deploy and maintain across subsidiaries.
 
 More sophisticated approaches are also possible, however the above are by far the most common.
@@ -173,20 +155,16 @@ Contoso may enter into a partnership with a competitor to jointly build a car on
 
 ![Shared environment across partners](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_08.png)
 
-
-
-In practice, these structures are complex as shown in the following image, and require staff to maintain. To be effective this structure relies on the cross-organization editing and management of Power BI content capability since it allows organizations to reuse Power BI Pro licenses purchased for their respective Power BI tenants.
+In practice, these structures are complex as shown in the following image, and require staff to maintain. To be effective, it is allowed for organizations to reuse Power BI Pro licenses purchased for their respective Power BI tenants.
 
 ![Licenses and shared organization content](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_09.png)
-
-
 
 To establish a shared Power BI tenant, an Azure Active Directory needs to be created and at least one Power BI Pro user account needs to be purchased for a user in that active directory. This user invites the required users to the shared organization. Importantly, in this scenario, Contoso's users are treated as external users when they operate within the Shared Organization's Power BI.
 
 The process is as follows:
 
 1. The Shared Organization is established as a new Azure Active Directory and at least one user account is created in the new organization. That user should have a Power BI Pro license assigned to them.
-2. This user then establishes a Power BI tenant and invites the required users from Contoso and the Partner organization. The user also establishes any shared data assets like Azure Analysis Services. Contoso and the Partner's users can access the shared organization's Power BI as guest users. If allowed to edit and manage content in Power BI the external users can use Power BI home, use workspaces, upload, or edit content and share reports. Typically, all shared assets are stored and accessed from the shared organization.
+2. This user then establishes a Power BI tenant and invites the required users from Contoso and the Partner organization. The user also establishes any shared data assets like Azure Analysis Services. Contoso and the Partner's users can access the shared organization's Power BI as guest users. Typically, all shared assets are stored and accessed from the shared organization.
 3. Depending on how the parties agree to collaborate, it is possible for each organization to develop their own proprietary data and analytics using shared data warehouse assets. They can distribute those to their respective internal users using their internal Power BI tenants.
 
 ### Case 4: Distribution to hundreds or thousands of external partners
@@ -194,7 +172,6 @@ The process is as follows:
 While Contoso created a radiator reliability report for one Supplier, now Contoso desires to create a set of standardized reports for hundreds of Suppliers. This allows Contoso to ensure all suppliers have the analytics they need to make improvements or to fix manufacturing defects.
 
 ![Distribution to many partners](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_10.png)
-
 
 When an organization needs to distribute standardized data and insights to many external users/organizations, they can use the Ad hoc or planned sharing of Power BI Apps scenario to build a BI Portal quickly and without extensive development costs. The process to build such a portal using a Power BI app is covered in the Case Study: Building a BI Portal using Power BI + Azure AD B2B – Step-by-Step instructions later in this document.
 
@@ -206,7 +183,6 @@ Power BI's integration with Azure AD B2B gives Contoso a seamless, hassle-free w
 
 ![Building a portal](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_11.png)
 
-
 1. Create BI portal in Power BI
 
     The first task for Contoso is to create their BI portal in Power BI. Contoso's BI portal will consist of a collection of purpose-built dashboards and reports that will be made available to many internal and guest users. The recommended way for doing this in Power BI is to build a Power BI app. Learn more about [apps in Power BI](https://powerbi.microsoft.com/blog/distribute-to-large-audiences-with-power-bi-apps/).
@@ -215,16 +191,13 @@ Power BI's integration with Azure AD B2B gives Contoso a seamless, hassle-free w
 
     ![workspace](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_12.png)
     
-
 - Other authors are added to the workspace
 
     ![Add authors](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_13.png)
 
-
 - Content is created inside the workspace
 
     ![Create content inside the workspace](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_14.png)
-
 
     Now that the content is created in a workspace, Contoso is ready to invite guest users in partner organizations to consume this content.
 
@@ -243,11 +216,9 @@ Power BI's integration with Azure AD B2B gives Contoso a seamless, hassle-free w
 
     ![Guest user](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_15.png)
 
-
     - Add an invitation message for the guest users and click Invite
 
     ![Add invitation](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_16.png)
-
 
     > [!NOTE]
     > To invite guest users from the Azure portal, you need to an administrator for the Azure Active Directory of your tenant.
@@ -258,12 +229,10 @@ Power BI's integration with Azure AD B2B gives Contoso a seamless, hassle-free w
 
     ![Invitation link](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_17.png)
 
-
     Once the guest users click the link, they can access content in the Contoso Azure AD tenant.
 
     > [!NOTE]
     > It is possible to change the layout of the invitation email using the Azure AD branding feature as described [here](/azure/active-directory/active-directory-b2b-invitation-email).
-
 
     **Ad hoc Invites**
 
@@ -273,10 +242,8 @@ Power BI's integration with Azure AD B2B gives Contoso a seamless, hassle-free w
 
     ![Add external user](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_18.png)
 
-
     > [!NOTE]
     > Invites are needed only the first time an external user is invited to your organization.
-
 
 3. Distribute Content
 
@@ -289,11 +256,9 @@ Power BI's integration with Azure AD B2B gives Contoso a seamless, hassle-free w
 
     ![Email invitation link](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_19.png)
 
-
     On clicking this link, guest users are asked to authenticate with their own organization's identity.
 
     ![Sign in page](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_20.png)
-
 
     Once they are successfully authenticated, they are redirected to Contoso's BI app.
 
@@ -323,7 +288,6 @@ Power BI's integration with Azure AD B2B works with all business email addresses
 
 ![Integration flow chart](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_23.png)
 
-
 It is important to recognize that the Azure AD account will be used or created in the external party's Azure AD, this will make it possible for Lucy to use their own username and password and their credentials will automatically stop working in other tenants whenever Lucy leaves the company when their organization also uses Azure AD.
 
 ## Licensing
@@ -343,23 +307,21 @@ Contoso can also take advantage of other Power BI premium capabilities for its a
 
 ![Additional capabilities](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_24.png)
 
-
 ### Approach 2: Contoso assigns Power BI Pro licenses to guest users
 
 With this approach, Contoso assigns pro licenses to guest users from partner organizations – this can be done from Contoso's Microsoft 365 admin center. This allows guest users from partner organizations to access Contoso's Power BI app without purchasing a license themselves. This can be appropriate for sharing with external users whose organization has not adopted Power BI yet.
 
 > [!NOTE]
-> Contoso's pro license applies to guest users only when they access content in the Contoso tenant. Pro licenses enable access to content that is not in a Power BI Premium capacity. However, external users with a Pro license are restricted by default to a consumption only experience. This can be changed by using the approach described in the _Enabling external users to edit and manage content within Power BI_ section later in this document.
+> Contoso's pro license applies to guest users only when they access content in the Contoso tenant. Pro licenses enable access to content that is not in a Power BI Premium capacity.
 
 ![License information](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_25.png)
-
 
 ### Approach 3: Guest users bring their own Power BI Pro license
 
 With this approach, Supplier 1 assigns a Power BI Pro license to Lucy. They can then access Contoso's Power BI app with this license. Since Lucy can use their Pro license from their own organization when accessing an external Power BI environment, this approach is sometimes referred to as _bring your own license_ (BYOL). If both organizations are using Power BI, this offers advantageous licensing for the overall analytics solution and minimizes overhead of assigning licenses to external users.
 
 > [!NOTE]
-> The pro license given to Lucy by Supplier 1 applies to any Power BI tenant where Lucy is a guest user. Pro licenses enable access to content that is not in a Power BI Premium capacity. However, external users with a Pro license are restricted by default to a consumption only experience. This can be change by using the approach described in the _Enabling external users to edit and manage content within Power BI_ section later in this document.
+> The pro license given to Lucy by Supplier 1 applies to any Power BI tenant where Lucy is a guest user. Pro licenses enable access to content that is not in a Power BI Premium capacity.
 
 ![Pro license requirements](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_26.png)
 
@@ -460,56 +422,6 @@ For external users, this might be more complicated as the external users are usu
 
 This method is fine if Contoso only has a handful of users or if Contoso can map all the external users to a single internal account. For more complex scenarios where each user needs their own credentials, there is a more advanced approach that uses [custom AD attributes](/previous-versions/windows/it-pro/windows-2000-server/cc961737(v=technet.10)) to do the mapping as described in [Manage your data source - Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/). This would allow the Contoso administrator to define a mapping for every user in your Azure AD (also external B2B users).  These attributes can be set through the AD object model using scripts or code so Contoso can fully automate the mapping on invite or on a scheduled cadence.
 
-## Enabling external users to edit and manage content within Power BI
-
-Contoso can allow external users to contribute content within the organization as described earlier in the cross-organization editing and management of Power BI content section.
-
-> [!NOTE]
-> To edit and manage content within your organization's Power BI, the user must have a Power BI Pro license in a workspace other than My workspace. Users can obtain Pro licenses as covered in the _Licensing_ section of this document.
-
-The Power BI Admin Portal provides the **allow external guest users to edit and manage content in the organization** setting in Tenant settings. By default, the setting is set to disabled, meaning external users get a constrained read-only experience by default. The setting applies to users with UserType set to Guest in Azure AD. The table below describes the behaviors users experience depending on their UserType and how the settings are configured.
-
-| **User Type in Azure AD** | **Allow external guest users to edit and manage content setting** | **Behavior** |
-| --- | --- | --- |
-| Guest | Disabled for the user (Default) | Per item consumption only view. Allows read-only access to reports, dashboards, and apps when viewed through a URL sent to the Guest user. Power BI Mobile apps provide a read-only view to the guest user. |
-| Guest | Enabled for the user | The external user gets access to the full Power BI experience, though some features are not available to them. The external user must log in to Power BI using the Power BI Service URL with the tenant information included. The user gets the Home experience, a My Workspace, and based on permissions can browse, view, and create content. </br></br> Power BI Mobile apps provide a read-only view to the guest user. |
-
-> [!NOTE]
-> External users in Azure AD can also be set to UserType Member. This is not currently supported in Power BI.
-
-In the Power BI Admin portal, the setting is shown in the following image.
-
-![Administrator settings](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_41.png)
-
-Guest users get the read-only default experience and which can edit and manage content. The default is Disabled, meaning all Guest users have the read-only experience. The Power BI Admin can either enable the setting for all Guest users in the organization or for specific security groups defined in Azure AD. In the following image, the Contoso Power BI Admin created a security group in Azure AD to manage which external users can edit and manage content in the Contoso tenant.
-
-To help these users to log in to Power BI, provide them with the Tenant URL. To find the tenant URL, follow these steps.
-
-1. In the Power BI service, in the top menu, select help ( **?** ) then  **About Power BI**.
-2. Look for the value next to  **Tenant URL**. This is the tenant URL you can share with your guest users.
-
-    ![Tenant URL](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_42.png)
-
-When using the Allow external guest users to edit and manage content in the organization, the specified guest users get access to your organization's Power BI and see any content to which they have permission. They can access Home, browse and contribute content to workspaces, install apps where they are on the access list, and have a My workspace. They can create or be an Admin of workspaces.
-
-> [!NOTE]
-> When using this option make sure to review the governance section of this document since default Azure AD settings prevent Guest users to use certain features like people pickers which can lead to a reduced experience.
-
-For guest users enabled through the Allow external guest users to edit and manage content in the organization tenant setting, some experiences are not available to them. To update or publish reports, guest users need to use the Power BI service web UI, including Get Data to upload Power BI Desktop files. The following experiences are not supported:
-
-- Direct publishing from Power BI desktop to the Power BI service
-- Guest users cannot use Power BI desktop to connect to service datasets in the Power BI service
-- Sending ad-hoc invites is not supported for workspace access lists
-- Power BI Publisher for Excel is not supported for guest users
-- Guest users cannot install a Power BI Gateway and connect it to your organization
-- Guest users cannot install apps publish to the entire organization
-- Guest users cannot use, create, update, or install template apps
-- Guest users cannot use Analyze in Excel
-- Guest users cannot be @mentioned in commenting ( this functionality will be added in an upcoming release )
-- Guest users who use this capability should have a work or school account. Guest users using Personal accounts experience more limitations due to sign-in restrictions.
-
-
-
 ## Governance
 
 ### Additional Azure AD Settings that affect experiences in Power BI related to Azure AD B2B
@@ -522,7 +434,6 @@ For more information, see [Configure external collaboration settings](/azure/act
 > By default, the Guest users permissions are limited option is set to Yes, so Guest users within Power BI have limited experiences especially surround sharing where people picker UIs do not work for those users. It is important to work with your Azure AD administrator to set it to No, as shown below to ensure a good experience.
 
 ![External collaboration settings](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_43.png)
-
 
 ### Control guest invites
 
@@ -594,8 +505,6 @@ Reasons not to choose this alternative:
 - Where there are a smaller number of partners the effort required for this alternative is likely too high to justify.
 - Collaboration with ad-hoc sharing is the primary scenario faced by your organization.
 - The reports and dashboards are different for each partner. This alternative introduces management overhead beyond just sharing directly with Partners.
-
-
 
 ## FAQ
 
