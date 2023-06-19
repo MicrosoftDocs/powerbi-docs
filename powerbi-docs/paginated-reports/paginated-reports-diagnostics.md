@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 06/07/2023
+ms.date: 06/19/2023
 ---
 
 # View diagnostics for Power BI paginated reports
