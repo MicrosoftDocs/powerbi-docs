@@ -43,11 +43,11 @@ Before you can use the sample, get the sample in one of the following ways:
 
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the Corporate Spend sample as a .pbix file, which is designed for use with Power BI Desktop. 
+Alternatively, you can download the Corporate Spend sample as a *.pbix* file, which is designed for use with Power BI Desktop.
 
-1. Open the GitHub Samples repository to the [Corporate Spend sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Corporate%20Spend.pbix).
+1. Open the GitHub Samples repository to the [Corporate Spend sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Corporate%20Spend.pbix).
 
-1. Select **Download** in the upper-right corner. It downloads automatically to your Downloads folder.
+1. Select **Download** in the upper-right corner. The sample downloads automatically to your *Downloads* folder.
 
 If you'd like to view it in the Power BI service, you can publish it there.
 
@@ -159,6 +159,46 @@ Below that visualization, the **Var Plan % by Business Area** is presented as a 
    :::image type="content" source="media/sample-corporate-spend/power-bi-visualization-no-table.png" alt-text="Screenshot shows the stacked bar chart visualization.":::
 
 1. Select **Reading view** to exit the edit mode and save your changes.
+
+### Customize tooltips
+
+Power BI report visualizations display details about elements when you hover over them. For instance, open the Corporate Spend report hover over a region in the map.
+
+:::image type="content" source="media/sample-corporate-spend/power-bi-hover-default-tooltip.png" alt-text="Screenshot shows the tooltip for a visualization as it appears in sample.":::
+
+To see and edit tooltips:
+
+Select **Edit** in the Power BI report bar to enter Edit mode.
+
+Select the map visualization and, if necessary, expand **Visualizations**. Scroll down to see the **Tooltips** value:
+
+:::image type="content" source="media/sample-corporate-spend/power-bi-visualization-tooltip.png" alt-text="Screenshot shows the Visualizations pane with Tooltips highlighted.":::
+
+You can change of add data fields to the tooltip. Drag a value from the **Data** pane to the **Tooltip**.
+
+:::image type="content" source="media/sample-corporate-spend/power-bi-visualization-add-tooltip.png" alt-text="Screenshot shows the Visualization pane with Department added to the tooltip.":::
+
+Select **Reading view** to leave Edit mode. Save your changes when prompted.
+
+Now hover over a region again:
+
+:::image type="content" source="media/sample-corporate-spend/power-bi-hover-revised-tooltip.png" alt-text="Screenshot shows the revised tooltip for the map visualization.":::
+
+For more information about tooltips, see [Customize tooltips in Power BI](desktop-custom-tooltips).
+
+### Use hidden pages as tooltips
+
+Power BI also supports a report page as a tooltip. To see an example, open the Corporate Spend report, select the **IT Spend Trend** page, and hover over **Actual and Plan IT Area**.
+
+:::image type="content" source="media/sample-corporate-spend/power-bi-tooltip.png" alt-text="Screenshot shows a visualization with the report page tooltip displayed.":::
+
+The displayed tooltip is a hidden report page. To see it, select **Edit** to enter **Edit** mode, then select the **Tooltip** tab.
+
+:::image type="content" source="media/sample-corporate-spend/power-bi-hidden-tooltip.png" alt-text="Screenshot shows the hidden report page that is used as a tooltip." lightbox="media/sample-corporate-spend/power-bi-hidden-tooltip.png":::
+
+You can create and edit this report page here. As a hidden page, it doesn't appear with the other pages in the report. Add as many visualizations to this page as you want. Remember that, as a tooltip, a large page covers a lot of space in your report view.
+
+For more information, see [Create tooltips based on report pages](desktop-tooltips.png).
 
 ## Create a Corporate Spend dashboard
 

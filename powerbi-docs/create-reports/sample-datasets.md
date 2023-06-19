@@ -186,7 +186,7 @@ Several of the original built-in samples now have updated versions and these sam
 
    Updated samples:
 
-   - Corporate Spend
+   - [Corporate Spend](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Corporate%20Spend.pbix)
 
    Original samples:
 
