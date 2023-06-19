@@ -184,7 +184,7 @@ Now hover over a region again:
 
 :::image type="content" source="media/sample-corporate-spend/power-bi-hover-revised-tooltip.png" alt-text="Screenshot shows the revised tooltip for the map visualization.":::
 
-For more information about tooltips, see [Customize tooltips in Power BI](desktop-custom-tooltips).
+For more information about tooltips, see [Customize tooltips in Power BI](desktop-custom-tooltips.md).
 
 ### Use hidden pages as tooltips
 
@@ -198,7 +198,7 @@ The displayed tooltip is a hidden report page. To see it, select **Edit** to ent
 
 You can create and edit this report page here. As a hidden page, it doesn't appear with the other pages in the report. Add as many visualizations to this page as you want. Remember that, as a tooltip, a large page covers a lot of space in your report view.
 
-For more information, see [Create tooltips based on report pages](desktop-tooltips.png).
+For more information, see [Create tooltips based on report pages](desktop-tooltips.md).
 
 ## Create a Corporate Spend dashboard
 
