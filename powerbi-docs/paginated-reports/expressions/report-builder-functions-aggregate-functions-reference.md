@@ -79,7 +79,7 @@ The following table summarizes restrictions in report locations on where you can
 | Code | No | Yes <sup>7</sup> | No | No | No | No | No |
 | Report.Language | No | Yes | No | No | No | No | No |
 | Variables | Yes | Yes | No | No | Yes | Current or containing scope | No |
-| Aggregates | Yes | Yes | Only in page header/page footer | Only in report item aggregates | Yes | No | No |
+| Aggregates<sup>8</sup> | Yes | Yes | Only in page header/page footer | Only in report item aggregates | Yes | No | No |
 | Lookup functions | Yes | Yes | Yes | No | Yes | No | No |
 
 <sup>1</sup> ReportItems must exist in the rendered report page, or their value is Null. If the visibility of a report item depends on an expression that evaluates to False, the report item does not exist on the page.
@@ -111,10 +111,10 @@ The following table summarizes restrictions on which aggregates functions can sp
 | Previous | Yes | Yes | Yes | No | Yes | No | Yes | No |
 | Sum and other Presort functions | No | No | No | No | Yes | No | Yes | No |
 | ReportItem aggregates | No | No | No | No | No | No | No | No |
-| Lookup functions | Yes | Yes<br /><br />Note 1 | Yes<br /><br />Note 1 | Yes<br /><br />Note 1 | Yes<br /><br />Note 1 | Yes<br /><br />Note 1 | No | No |
+| Lookup functions | Yes | Yes<br /><br />Note 1 | Yes<br /><br />Note 1 | Yes<sup>1</sup> | Yes<sup>1</sup> | Yes<sup>1</sup> | No | No |
 | Aggregate Function | No | No | No | No | No | No | No | No |
 
-- **Note 1.** Aggregate functions are only allowed inside the *Source* expression of a Lookup function if the Lookup function is not contained in an aggregate. Aggregate functions are not allowed inside the *Destination* or *Result* expressions of a Lookup function.
+<sup>1</sup> Aggregate functions are only allowed inside the *Source* expression of a Lookup function if the Lookup function is not contained in an aggregate. Aggregate functions are not allowed inside the *Destination* or *Result* expressions of a Lookup function.
 
 🔝 Back to top
 
