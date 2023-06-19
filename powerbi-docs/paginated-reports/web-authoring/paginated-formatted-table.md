@@ -111,13 +111,13 @@ This option takes you back to the online editor experience, where you can make c
 ## Add images to the paginated report
 For any paginated report you **author online**, you may insert images in the top section of your report to brand or describe your formatted table data below.
 
-    > [!NOTE]
-    > Only external images that are available over the internet without needing authentication can be inserted at this time.
-
 ### Add an image item
 1. To add a image to your report, select **Insert** and then **Image**
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-image-insert.png" alt-text="Screenshot of insert image button.":::
+
+> [!NOTE]
+> Only external images that are available over the internet without needing authentication can be inserted at this time.
 
 2. Images are inserted at the top of the first page of your report.
 3. Once inserted, you can use the **Picture format** tab to set an Alternate text for the image, set padding options or set the display size option.
