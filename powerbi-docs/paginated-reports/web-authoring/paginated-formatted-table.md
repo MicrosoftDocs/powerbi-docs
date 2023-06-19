@@ -119,8 +119,8 @@ For any paginated report you **author online**, you may insert images in the top
 > [!NOTE]
 > Only external images that are available over the internet without needing authentication can be inserted at this time.
 
-2. Images are inserted at the top of the first page of your report.
-3. Once inserted, you can use the **Picture format** tab to set an Alternate text for the image, set padding options or set the display size option.
+1. Images are inserted at the top of the first page of your report.
+1. Once inserted, you can use the **Picture format** tab to set an Alternate text for the image, set padding options, or set the display size option.
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-image-picture-format.png" alt-text="Screenshot of picture format options.":::
 
