@@ -158,29 +158,29 @@ Below that visualization, the **Var Plan % by Business Area** is presented as a 
 
    :::image type="content" source="media/sample-corporate-spend/power-bi-visualization-no-table.png" alt-text="Screenshot shows the stacked bar chart visualization.":::
 
-1. Select **Reading view** to exit the edit mode and save your changes.
+1. Select **Reading view** to exit the Edit mode and save your changes.
 
 ### Customize tooltips
 
-Power BI report visualizations display details about elements when you hover over them. For instance, open the Corporate Spend report hover over a region in the map.
+Power BI report visualizations display details about elements when you hover over them. For instance, open the Corporate Spend report and hover over a region in the map.
 
 :::image type="content" source="media/sample-corporate-spend/power-bi-hover-default-tooltip.png" alt-text="Screenshot shows the tooltip for a visualization as it appears in sample.":::
 
 To see and edit tooltips:
 
-Select **Edit** in the Power BI report bar to enter Edit mode.
+1. Select **Edit** in the Power BI report bar to enter Edit mode.
 
-Select the map visualization and, if necessary, expand **Visualizations**. Scroll down to see the **Tooltips** value:
+1. Select the map visualization and, if necessary, expand **Visualizations**. Scroll down to see the **Tooltips** value.
 
-:::image type="content" source="media/sample-corporate-spend/power-bi-visualization-tooltip.png" alt-text="Screenshot shows the Visualizations pane with Tooltips highlighted.":::
+   :::image type="content" source="media/sample-corporate-spend/power-bi-visualization-tooltip.png" alt-text="Screenshot shows the Visualizations pane with Tooltips highlighted.":::
 
-You can change of add data fields to the tooltip. Drag a value from the **Data** pane to the **Tooltip**.
+1. You can change of add data fields to the tooltip. Drag a value from the **Data** pane to the **Tooltip**.
 
-:::image type="content" source="media/sample-corporate-spend/power-bi-visualization-add-tooltip.png" alt-text="Screenshot shows the Visualization pane with Department added to the tooltip.":::
+   :::image type="content" source="media/sample-corporate-spend/power-bi-visualization-add-tooltip.png" alt-text="Screenshot shows the Visualization pane with Department added to the tooltip.":::
 
-Select **Reading view** to leave Edit mode. Save your changes when prompted.
+1. Select **Reading view** to leave Edit mode. Save your changes when prompted.
 
-Now hover over a region again:
+Now hover over a region again to see the value that you added.
 
 :::image type="content" source="media/sample-corporate-spend/power-bi-hover-revised-tooltip.png" alt-text="Screenshot shows the revised tooltip for the map visualization.":::
 
@@ -196,7 +196,7 @@ The displayed tooltip is a hidden report page. To see it, select **Edit** to ent
 
 :::image type="content" source="media/sample-corporate-spend/power-bi-hidden-tooltip.png" alt-text="Screenshot shows the hidden report page that is used as a tooltip." lightbox="media/sample-corporate-spend/power-bi-hidden-tooltip.png":::
 
-You can create and edit this report page here. As a hidden page, it doesn't appear with the other pages in the report. Add as many visualizations to this page as you want. Remember that, as a tooltip, a large page covers a lot of space in your report view.
+You can create and edit this report page here. As a hidden page, it doesn't appear with the other pages in the report. Add as many visualizations to this page as you want. Remember that, as a tooltip, a large page covers up a lot of space in your report view.
 
 For more information, see [Create tooltips based on report pages](desktop-tooltips.md).
 
