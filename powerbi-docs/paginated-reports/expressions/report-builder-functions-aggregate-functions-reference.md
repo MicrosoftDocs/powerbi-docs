@@ -139,7 +139,7 @@ The following built-in function calculates the number of rows in the given scope
 
 🔝 Back to top
 
-## <a id="LookupFunctions"></a> Looke Up Values from Another Dataset
+## <a id="LookupFunctions"></a> Look Up Values from Another Dataset
 
 The following lookup functions retrieve values from a specified dataset.
 

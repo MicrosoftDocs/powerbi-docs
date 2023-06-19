@@ -18,7 +18,7 @@ ms.custom: updatefrequency5
 
 ## Filter Examples
 
-The following table shows examples of filter equations that use different data types and different operators. The scope for the comparison is determined by report item for which a filter is defined. For example, for a filter defined on a dataset, **TOP % 10** is the top 10 percent of values in the dataset; for a filter defined on a group, **TOP % 10** is the top 10 percent of values in the group.
+The following table shows examples of filter equations that use different data types and different operators. The scope for the comparison is determined by the report item for which a filter is defined. For example, for a filter defined on a dataset, **TOP % 10** is the top 10 percent of values in the dataset; for a filter defined on a group, **TOP % 10** is the top 10 percent of values in the group.
 
 | Simple Expression | Data Type | Operator | Value | Description |
 | --- | --- | --- | --- | --- |

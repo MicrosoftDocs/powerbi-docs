@@ -42,7 +42,7 @@ Data scope specifies a set of report data. Data scope has a natural hierarchy wi
 
 - **Datasets, after dataset filters are applied** Specifies the report dataset linked to the data region or to a report item in the report body. The data used for aggregation is from the report dataset after dataset filter expressions are applied. For shared datasets, this means both the filters in the shared dataset definition and the filters in the shared dataset instance in the report.
 
-- **Data regions** Specifies data from the data region after data region filter and sort expressions are applied. Group filters are not used when calculating aggregates for data regions.
+- **Data regions** Specifies data from the data region after you apply a data region filter and sort expressions. Group filters are not used when calculating aggregates for data regions.
 
 - **Data region groups, after group filters are applied** Specifies the data after the group expressions and group filters are applied for the parent group and child groups. For a table, this is the row and column groups. For a chart, this is the series and category groups. For the purposes of identifying scope containment, every parent group contains its child groups.
 

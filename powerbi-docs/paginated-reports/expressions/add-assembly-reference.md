@@ -24,7 +24,7 @@ ms.custom: updatefrequency5
 
 1. In **Add or remove assemblies**, select **Add** and then select the ellipsis button to browse to the assembly.
 
-1. In **Add or remove classes**, select **Add** and then type name of the class and provide an instance name to use within the report.
+1. In **Add or remove classes**, select **Add** and then type the name of the class and provide an instance name to use within the report.
 
     > [!NOTE]  
     >  Specify a class and instance name only for instance-based members. Do not specify static members in the **Classes** list. For more information, see [Custom Code and Assembly References in Expressions (Power BI Report Builder)](./custom-code-and-assembly-references-in-expressions.md).
