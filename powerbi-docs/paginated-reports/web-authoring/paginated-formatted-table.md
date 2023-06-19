@@ -108,6 +108,24 @@ This option takes you back to the online editor experience, where you can make c
 > [!NOTE]
 > This **Edit** button isn't the same as the **Edit** button on the **File** menu.  That **Edit** button opens Power BI Report Builder instead. **If you edit this report in Report Builder, you won't be able to edit it online anymore.**
 
+## Add images to the paginated report
+For any paginated report you **author online**, you may insert images in the top section of your report to brand or describe your formatted table data below.
+
+    > [!NOTE]
+    > Only external images that are available over the internet without needing authentication can be inserted at this time.
+
+### Add an image item
+1. To add a image to your report, select **Insert** and then **Image**
+
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-image-insert.png" alt-text="Screenshot of insert image button.":::
+
+2. Images are inserted at the top of the first page of your report.
+3. Once inserted, you can use the **Picture format** tab to set an Alternate text for the image, set padding options or set the display size option.
+
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-image-picture-format.png" alt-text="Screenshot of picture format options.":::
+
+To learn more about external images, refer to [Add external images to paginated reports](../report-design/add-external-image-report-builder-service.md)
+
 ## Add text to the paginated report
 For any paginated report you **author online**, you may insert text boxes in the top section of your report to brand, title, or describe your formatted table data below. 
 
@@ -150,7 +168,7 @@ For any paginated report you **author online**, you may insert text boxes in the
 To delete a text box, right-click a text box and select **Remove**. Alternatively, with a text box selected press <kbd>DELETE</kbd>.
 
 ### Working with sections
-1. When you add text boxes to a paginated report, a section line appears on the first page that separates the text boxes from your formatted table of data. The area above the section line is where text boxes are added. The area below is where your formatted table of data is added.
+1. When you add items to a paginated report, a section line appears on the first page that separates the text boxes from your formatted table of data. The area above the section line is where text boxes are added. The area below is where your formatted table of data is added.
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-section-line.png" alt-text="Screenshot of the section line.":::
 
