@@ -8,16 +8,17 @@ ms.custom: contperf-fy20q4, intro-overview
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: overview
-ms.date: 11/01/2022
+ms.date: 06/20/2023
 LocalizationGroup: Administration
 #Customer intent: As an administrator of the Power BI service, I want to understand the tools, tasks, and roles that I can use to configure, manage, and secure the service.
 ---
 
 # What is Power BI administration
 
-Power BI administration is the management of the organization-wide settings that control how Power BI works. Users that are assigned to admin roles configure, monitor, and provision organizational resources. This article provides an overview of administration roles, tasks, and tools to help you get started.
+> [!IMPORTANT]
+> The **Power BI administrator** role has been renamed. The new name of the role is **Fabric administrator**.
 
-![Screenshot of the Power B I admin portal, showing the organization-wide settings.](media/service-admin-administering-power-bi-in-your-organization/admin-portal.png)
+Power BI administration is the management of the organization-wide settings that control how Power BI works. Users that are assigned to admin roles configure, monitor, and provision organizational resources. This article provides an overview of administration roles, tasks, and tools to help you get started.
 
 ## Administrator roles related to Power BI
 
@@ -36,7 +37,7 @@ There are several roles that work together to administer Power BI for your organ
 | | | Enable and disable Power BI features |
 | | | Report on usage and performance |
 | | | Review and manage auditing |
-| Power BI Administrator | Power BI service | Full access to Power BI management tasks|
+| Fabric Administrator | Power BI service | Full access to Power BI management tasks|
 | | | Enable and disable Power BI features |
 | | | Report on usage and performance |
 | | | Review and manage auditing |
@@ -49,7 +50,7 @@ There are several roles that work together to administer Power BI for your organ
 
 ## Administrative tasks and tools
 
-Power BI admins work mostly in the Power BI Admin portal, but you should still be familiar with related tools and admin centers. Look at the table above to determine which role is required to do tasks using the tools listed here.
+Fabric admins work mostly in the [Power BI Admin portal](./service-admin-portal.md), but you should still be familiar with related tools and admin centers. Look at the table above to determine which role is required to do tasks using the tools listed here.
 
 | **Tool** | **Typical tasks** |
 | --- | --- |
@@ -82,4 +83,3 @@ Now that you know the basics of what’s involved with Power BI administration, 
 - [Licensing the Power BI service for users in your organization](../enterprise/service-admin-licensing-organization.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
- 
