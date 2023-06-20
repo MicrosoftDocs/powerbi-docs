@@ -135,11 +135,11 @@ Suppose you don't want to view numeric data. Instead, you can choose from many v
 
 Another area to explore is bad hires. Bad hires are defined as employees who didn't last for more than 60 days. You're hiring rapidly, but are you hiring good candidates? In the report, select the **Bad Hires** page. You can see several visualizations showing data by gender, age, and group.
 
-:::image type="content" source="media/sample-employee-hiring-history/power-bi-bad-hire.png"  alt-text="Screenshot shows several visualizations dealing with bad hire data." lightbox="media/sample-employee-hiring-history/power-bi-bad-hire.png":::
+:::image type="content" source="media/sample-employee-hiring-history/power-bi-bad-hire.png" alt-text="Screenshot shows several visualizations dealing with bad hire data." lightbox="media/sample-employee-hiring-history/power-bi-bad-hire.png":::
 
 Look at the **BadHires YoY % changes by Month and AgeGroups** visualization.
 
-:::image type="content" source="media/sample-employee-hiring-history/power-bi-bad-hire-age-group.png"  alt-text="" lightbox="media/sample-employee-hiring-history/power-bi-bad-hire-age-group.png":::
+:::image type="content" source="media/sample-employee-hiring-history/power-bi-bad-hire-age-group.png" alt-text="Screenshot shows data in a line chart for a specified age group." lightbox="media/sample-employee-hiring-history/power-bi-bad-hire-age-group.png":::
 
 The line visualization shows variation by month for the selected age group. You can look at the raw numbers in the matrix to try to determine if there are underlying causes to the variation.
 
