@@ -98,11 +98,12 @@ On the **Audience** tab, you create and manage audience groups within the app.
 
     
     >[!IMPORTANT]
-    >Hiding content from the audience will make it unavailable in the published app.
+    >Hiding content from the audience will make it unavailable in the published app for that audience.
     >
     >Dashboard tiles pointing at reports that are hidden from the audience will no longer work, instead they will display an error: “The report shown in this tile doesn’t exist or you don’t have permission to view it.”.
     >
     >Paginated reports with subreport will not display the content of the subreport if it is hidden from the audience.
+    >Users of drillthrough reports will not be able to navigate to the destination reports if the destination reports are hidden.
     >
     >To address such issues, make sure that all the dependent reports are available for the audience.
      
