@@ -181,6 +181,9 @@ sections:
         answer: |
           Power BI provides a Power BI admin portal for users in the Microsoft 365 Global Administrator role and users in the Power BI Service administrator role. To use the Power BI admin portal, you must mark your account as a **Global Administrator** within Microsoft 365 or Azure Active Directory, or someone must assign the Power BI service administrator role to your user account. For more information, see [Understanding the Power BI administration roles](service-admin-role.md) and [Power BI Admin Portal](service-admin-portal.md). The portal provides the ability to control tenant-wide settings, view Power BI usage statistics and a link to the Microsoft 365 admin center to manage users and groups.
           
+          > [!IMPORTANT]
+          > The **Power BI administrator** role has been renamed. The new name of the role is **Fabric administrator**, even if your organization uses only Power BI and has no Fabric license.
+
       - question: |
           What is the process to manage a tenant created by Microsoft for my users?
         answer: |

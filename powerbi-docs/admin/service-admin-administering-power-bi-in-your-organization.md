@@ -15,9 +15,10 @@ LocalizationGroup: Administration
 
 # What is Power BI administration
 
-Power BI administration is the management of the organization-wide settings that control how Power BI works. Users that are assigned to admin roles configure, monitor, and provision organizational resources. This article provides an overview of administration roles, tasks, and tools to help you get started.
+> [!IMPORTANT]
+> The **Power BI administrator** role has been renamed. The new name of the role is **Fabric administrator**.
 
-![Screenshot of the Power B I admin portal, showing the organization-wide settings.](media/service-admin-administering-power-bi-in-your-organization/admin-portal.png)
+Power BI administration is the management of the organization-wide settings that control how Power BI works. Users that are assigned to admin roles configure, monitor, and provision organizational resources. This article provides an overview of administration roles, tasks, and tools to help you get started.
 
 ## Administrator roles related to Power BI
 
@@ -49,7 +50,7 @@ There are several roles that work together to administer Power BI for your organ
 
 ## Administrative tasks and tools
 
-Fabric admins work mostly in the Power BI Admin portal, but you should still be familiar with related tools and admin centers. Look at the table above to determine which role is required to do tasks using the tools listed here.
+Fabric admins work mostly in the [Power BI Admin portal](./service-admin-portal.md), but you should still be familiar with related tools and admin centers. Look at the table above to determine which role is required to do tasks using the tools listed here.
 
 | **Tool** | **Typical tasks** |
 | --- | --- |
