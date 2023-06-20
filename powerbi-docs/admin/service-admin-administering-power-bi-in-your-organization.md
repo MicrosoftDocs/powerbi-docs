@@ -82,4 +82,3 @@ Now that you know the basics of what’s involved with Power BI administration, 
 - [Licensing the Power BI service for users in your organization](../enterprise/service-admin-licensing-organization.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
- 
