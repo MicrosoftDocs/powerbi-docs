@@ -101,7 +101,7 @@ This report has a page called **New Hires** that has useful visualizations.
 
 ### Look at separation data
 
-You can explore data for employees who no longer work for the company.
+You can explore the data for employees who no longer work for the company.
 
 1. In the report view, select **Actives and Separations**.
 
@@ -159,7 +159,7 @@ Then hover over the **Involuntary** field.
 
 :::image type="content" source="media/sample-employee-hiring-history/power-bi-tooltip-involuntary.png" alt-text="Screenshot shows a visualization with the report page tooltip displayed for the involuntary value.":::
 
-Now look at the report page itself. Under **Pages**, select **Tooltip**. This page contains a card visualization and two stacked bar charts. It could contain as many visualizations as you want, but keep in mind that a large page covers up more of report.
+Now look at the report page itself. Under **Pages**, select **Tooltip**. This page contains a card visualization and two stacked bar charts. It could contain as many visualizations as you want, but keep in mind that a large page covers up more of your report.
 
 To add this report page as a tooltip to another visualization, follow these steps.
 
@@ -209,7 +209,7 @@ To create a dashboard in the Power BI service:
 
 1. In **Pin to dashboard**, select **New Dashboard** and enter a name for your dashboard.
 
-   :::image type="content" source="media/sample-employee-hiring-history/power-bi-new-dashboard.png" alt-text="Screenshot shows the Pin to dashboard dialog box for adding to new dashboard.":::
+   :::image type="content" source="media/sample-employee-hiring-history/power-bi-new-dashboard.png" alt-text="Screenshot shows the Pin to dashboard dialog box for adding to a new dashboard.":::
 
    You can add visuals to an existing dashboard to show visualizations from different reports.
 
@@ -225,17 +225,17 @@ A dashboard offers the ability to ask questions about data in natural language t
 
 1. In the dashboard, select **Ask a question about your data**.
 
-1. Even before you start typing, Q&A displays suggestions to help form your question. Select **what is the seps by region seq**.
+1. Even before you start typing, the dashboard displays suggestions to help form your question. Select **what is the seps by region seq**.
 
    :::image type="content" source="media/sample-employee-hiring-history/dashboard-ask-question-suggestion.png" alt-text="Screenshot shows suggested questions for the Q&A feature." lightbox="media/sample-employee-hiring-history/dashboard-ask-question-suggestion.png":::
 
    The dashboard displays the result.
 
-   :::image type="content" source="media/sample-employee-hiring-history/dashboard-ask-question-result.png" alt-text="Screenshot shows result for the suggested question in Q&A." lightbox="media/sample-employee-hiring-history/dashboard-ask-question-result.png":::
+   :::image type="content" source="media/sample-employee-hiring-history/dashboard-ask-question-result.png" alt-text="Screenshot shows the results for the suggested question in Q&A." lightbox="media/sample-employee-hiring-history/dashboard-ask-question-result.png":::
 
 1. Now replace that question with *show age group, gender, and bad hires SPLY where region is East*.  
 
-   :::image type="content" source="media/sample-employee-hiring-history/dashboard-ask-question-entered.png" alt-text="Screenshot shows result for a different question in Q&A." lightbox="media/sample-employee-hiring-history/dashboard-ask-question-entered.png":::
+   :::image type="content" source="media/sample-employee-hiring-history/dashboard-ask-question-entered.png" alt-text="Screenshot shows the results for a different question in Q&A." lightbox="media/sample-employee-hiring-history/dashboard-ask-question-entered.png":::
 
 1. If desired, select **Pin visual** to add this visual to a new or existing dashboard.
 
