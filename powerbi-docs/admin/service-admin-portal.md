@@ -48,7 +48,7 @@ You must be a global admin or Fabric admin to access the Power BI admin portal. 
 
 1. Sign in to [Power BI](https://app.powerbi.com) using your admin account credentials.
 
-1. From the page header, select **...** > **Settings** > **Admin portal**.
+1. From the page header, select **Settings** > **Admin portal**.
 
    :::image type="content" source="media/service-admin-portal/power-bi-settings-menu.png" alt-text="Settings menu with admin portal selected.":::
 
