@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.custom: contperf-fy22q3
 ms.topic: how-to
-ms.date: 06/202023
+ms.date: 06/20/2023
 LocalizationGroup: Gateways
 ---
 
