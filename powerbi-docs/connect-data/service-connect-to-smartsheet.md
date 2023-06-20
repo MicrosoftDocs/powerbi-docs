@@ -20,21 +20,23 @@ Connect to the [Smartsheet template app](https://app.powerbi.com/groups/me/getap
 >[!NOTE]
 >A Smartsheet admin account is preferred for connecting and loading the Power BI template app as it has additional access.
 
-## How to connect
+## Install the app
 
 [!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
-3. Select **Smartsheet** \> **Get it now**.
-4. In **Install this Power BI App?** select **Install**.
-4. In the **Apps** pane, select the **Smartsheet** tile.
+1. Select **Smartsheet** \> **Get it now**.
+1. In **Install this Power BI App?** select **Install**.
+1. In the **Apps** pane, select the **Smartsheet** tile.
 
     ![Power BI Smartsheet app tile](media/service-connect-to-smartsheet/power-bi-smartsheet-tile.png)
 
-6. In **Get started with your new app**, select **Connect**.
+## Connect to your Smartsheet data source
 
-    ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
+1. Select the Smartsheet tile on your Apps page to open the app. The app opens, showing sample data.
 
-4. For Authentication Method, select **oAuth2 \> Sign In**.
+1. Select the **Connect your data** link on the banner at the top of the page.
+
+1. For Authentication Method, select **oAuth2 \> Sign In**.
    
    When prompted, enter your Smartsheet credentials and follow the authentication process.
    
@@ -42,7 +44,7 @@ Connect to the [Smartsheet template app](https://app.powerbi.com/groups/me/getap
    
    ![Smartsheet sign-in](media/service-connect-to-smartsheet/creds2.png)
 
-5. After Power BI imports the data, the Smartsheet dashboard opens.
+1. After Power BI imports the data, the Smartsheet dashboard opens.
    
    ![Smartsheet dashboard](media/service-connect-to-smartsheet/power-bi-smartsheet-dashboard.png)
 

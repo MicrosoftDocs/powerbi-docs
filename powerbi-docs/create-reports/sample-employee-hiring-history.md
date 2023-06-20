@@ -69,6 +69,17 @@ To open the Employee Hiring and History report, go to your workspace and select 
 
 If you're following along in Power BI Desktop, open the *.pbix* file to see the report.
 
+You can edit current visualizations and create your own visualizations that use the dataset for this sample. This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
+
+Select **Edit** in the **Power BI** header bar to explore in the editing view:
+
+- See how the pages are made, the fields in each chart, and the filters on the pages.
+- Add pages and charts, based on the same data.
+- Change the visualization type for each chart.
+- Pin charts of interest to your dashboard.
+
+Save or discard your changes.
+
 ### Look at new hires
 
 This report has a page called **New Hires** that has useful visualizations.
@@ -114,7 +125,7 @@ Suppose you don't want to view numeric data. Instead, you can choose from many v
 
 1. Choose a visualization. This example uses a clustered bar chart.
 
-   :::image type="content" source="media/sample-employee-hiring-history/power-bi-separation-clustered-bar-chart.png alt-text="Screenshot shows the visualization as a clustered bar chart." lightbox="media/sample-employee-hiring-history/power-bi-separation-clustered-bar-chart.png":::
+   :::image type="content" source="media/sample-employee-hiring-history/power-bi-separation-clustered-bar-chart.png" alt-text="Screenshot shows the visualization as a clustered bar chart." lightbox="media/sample-employee-hiring-history/power-bi-separation-clustered-bar-chart.png":::
 
    Try different visualizations to find one that makes your data easy to understand.
 
@@ -131,6 +142,56 @@ Look at the **BadHires YoY % changes by Month and AgeGroups** visualization.
 :::image type="content" source="media/sample-employee-hiring-history/power-bi-bad-hire-age-group.png"  alt-text="" lightbox="media/sample-employee-hiring-history/power-bi-bad-hire-age-group.png":::
 
 The line visualization shows variation by month for the selected age group. You can look at the raw numbers in the matrix to try to determine if there are underlying causes to the variation.
+
+## Use report pages as tooltips
+
+Power BI report visualizations display details about elements when you hover over them. For instance, in the Employee Hiring and History report on the **Bad Hires** page, hover over a point in the **Bad Hires YoY % Change by Month and AgeGroup** line chart.
+
+:::image type="content" source="media/sample-employee-hiring-history/power-bi-hover-default-tooltip.png" alt-text="Screenshot shows the tooltip for a visualization as it appears in the sample.":::
+
+These values are the defaults, but you can add any field from the dataset to appear in a tooltip, or multiple fields. For more information about tooltips, see [Customize tooltips in Power BI](desktop-custom-tooltips.md).
+
+Power BI also supports a report page as a tooltip. To see an example, select the **Actives and Separations** page, and hover over **Seps by SeparationReason**. You can see a tooltip for the **Voluntary** field.
+
+:::image type="content" source="media/sample-employee-hiring-history/power-bi-tooltip-voluntary.png" alt-text="Screenshot shows a visualization with the report page tooltip displayed for the voluntary value.":::
+
+Then hover over the **Involuntary** field.
+
+:::image type="content" source="media/sample-employee-hiring-history/power-bi-tooltip-involuntary.png" alt-text="Screenshot shows a visualization with the report page tooltip displayed for the involuntary value.":::
+
+Now look at the report page itself. Under **Pages**, select **Tooltip**. This page contains a card visualization and two stacked bar charts. It could contain as many visualizations as you want, but keep in mind that a large page covers up more of report.
+
+To add this report page as a tooltip to another visualization, follow these steps.
+
+1. Select **Edit** to open the report in Edit mode.
+
+1. Select the **Tooltip** tab at the bottom.
+
+1. Right-click the tab and select **Hide Page**.
+
+   :::image type="content" source="media/sample-employee-hiring-history/power-bi-hide-report-page.png" alt-text="Screenshot shows the context menu with the option to hide the page.":::
+
+   The page no longer appears in the report. You can only see or edit it in Edit mode.
+
+1. Under **Visualizations**, select the **Format page** icon and then expand **Page information**. Select **Allow use as tooltip**.
+
+   :::image type="content" source="media/sample-employee-hiring-history/power-bi-use-tooltip.png" alt-text="Screenshot shows the Page information settings where you can allow the page to be used as a tooltip.":::
+
+1. Select the **New Hires** tab and then select the **New Hires by AgeGroup and Gender** visualization. This chart doesn't have a tooltip specified.
+
+1. Under **Visualizations**, select **Format visual** > **General**, then expand **Tooltips**.
+
+   :::image type="content" source="media/sample-employee-hiring-history/power-bi-tooltips-options.png" alt-text="Screenshot shows the tooltip options where you can select the type of tooltip for a visual.":::
+
+1. For **Type**, select **Report page**, then select **Tooltip** for **Page**.
+
+1. Select **Reading view** to leave Edit mode. Be sure to save your changes.
+
+If you hover over the **New Hires by AgeGroup and Gender** visualization, the report page appears.
+
+:::image type="content" source="media/sample-employee-hiring-history/power-bi-tooltip-report-page.png" alt-text="Screenshot shows the report page tooltip as configured for this visual.":::
+
+For more information, see [Create tooltips based on report pages](desktop-tooltips.md).
 
 ## Create an Employee Hiring and History dashboard
 
@@ -158,21 +219,27 @@ Your new dashboard now appears in **My workspace**.
 
 For more information, see [Introduction to dashboards for Power BI designers](service-dashboards.md).
 
-## Ask a question in the dashboard Q&A box
+## Ask questions of the data
 
-No matter whether you downloaded the dashboard or created your own, you can use Q&A in the dashboard to discover other details in the data. Let's get more specific.
+A dashboard offers the ability to ask questions about data in natural language to create visuals. It doesn't matter how you create your dashboard or which tiles it has. You can ask questions about any dataset attached to your dashboard.
 
-In the [Q&A question box](power-bi-tutorial-q-and-a.md) in the dashboard, you can ask a question about your data by using natural language. Q&A recognizes the words you type and figures out where in your dataset to find the answer.
+1. In the dashboard, select **Ask a question about your data**.
 
-1. Select the Q&A question box. Even before you start typing, Q&A displays suggestions to help form your question.
+1. Even before you start typing, Q&A displays suggestions to help form your question. Select **what is the seps by region seq**.
 
-   :::image type="content" source="media/sample-employee-hiring-history/hr-sample-qa-box.png" alt-text="Screenshot shows the Q&A box suggestions." lightbox="media/sample-employee-hiring-history/hr-sample-qa-box.png":::
+   :::image type="content" source="media/sample-employee-hiring-history/dashboard-ask-question-suggestion.png" alt-text="Screenshot shows suggested questions for the Q&A feature." lightbox="media/sample-employee-hiring-history/dashboard-ask-question-suggestion.png":::
 
-1. You can pick one of those suggestions, or enter: *show age group, gender, and bad hires SPLY where region is East*.  
+   The dashboard displays the result.
 
-   :::image type="content" source="media/sample-employee-hiring-history/hr-sample-qa-answer.png" alt-text="Screenshot shows the Q&A box answers.":::
+   :::image type="content" source="media/sample-employee-hiring-history/dashboard-ask-question-result.png" alt-text="Screenshot shows result for the suggested question in Q&A." lightbox="media/sample-employee-hiring-history/dashboard-ask-question-result.png":::
 
-   Most of the female bad hires are under 30.
+1. Now replace that question with *show age group, gender, and bad hires SPLY where region is East*.  
+
+   :::image type="content" source="media/sample-employee-hiring-history/dashboard-ask-question-entered.png" alt-text="Screenshot shows result for a different question in Q&A." lightbox="media/sample-employee-hiring-history/dashboard-ask-question-entered.png":::
+
+1. If desired, select **Pin visual** to add this visual to a new or existing dashboard.
+
+1. Select **Exit Q&A** to return to the dashboard.
 
 ## Next steps
 
