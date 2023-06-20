@@ -760,22 +760,74 @@
         href: ../paginated-reports/expressions/expression-uses-reports-report-builder.md
       - name: "Built-in collections: Report and group variables references"
         href: ../paginated-reports/expressions/built-in-collections-report-group-variables-references-report-builder.md
-      - name: Avg function
-        href: ../paginated-reports/expressions/report-builder-functions-avg-function.md
-      - name: CountDistinct function
-        href: ../paginated-reports/expressions/report-builder-functions-countdistinct-function.md
-      - name: CountRows function
-        href: ../paginated-reports/expressions/report-builder-functions-countrows-function.md
-      - name: First function
-        href: ../paginated-reports/expressions/report-builder-functions-first-function.md
-      - name: Last function
-        href: ../paginated-reports/expressions/report-builder-functions-last-function.md
-      - name: Max function
-        href: ../paginated-reports/expressions/report-builder-functions-max-function.md
-      - name: Multilookup  function
-        href: ../paginated-reports/expressions/report-builder-functions-multilookup-function.md
-      - name: Previous  function
-        href: ../paginated-reports/expressions/report-builder-functions-previous-function.md
+      - name: Add an assembly reference to a paginated report
+        href: ../paginated-reports/expressions/add-assembly-reference.md
+      - name: Add code to a paginated report
+        href: ../paginated-reports/expressions/add-code-to-a-report.md
+      - name: "Built-in collections: Globals and User references"
+        href: ../paginated-reports/expressions/built-in-collections-built-in-globals-and-users-references-report-builder.md
+      - name: Create recursive hierarchy groups in a paginated report
+        href: ../paginated-reports/expressions/creating-recursive-hierarchy-groups-report-builder.md
+      - name: Custom code in expressions in a paginated report
+        href: ../paginated-reports/expressions/custom-code-and-assembly-references-in-expressions.md
+      - name: Data types in expressions
+        href: ../paginated-reports/expressions/data-types-expressions-report-builder.md
+      - name: Expression scope for totals, aggregates, and built-in collections
+        href: ../paginated-reports/expressions/expression-scope-for-totals-aggregates-and-built-in-collections.md
+      - name: Filter equation examples in a paginated report
+        href: ../paginated-reports/expressions/filter-equation-examples-report-builder.md
+      - name: Group expression examples in paginated reports
+        href: ../paginated-reports/expressions/group-expression-examples-report-builder.md
+      - name: Operators in expressions in paginated reports
+        href: ../paginated-reports/expressions/operators-in-expressions-report-builder.md
+      - name: Expression reference
+        items:
+        - name: Aggregate functions reference in paginated reports
+          href: ../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md
+        - name: Aggregate function
+          href: ../paginated-reports/expressions/report-builder-functions-aggregate-function.md
+        - name: Avg function
+          href: ../paginated-reports/expressions/report-builder-functions-avg-function.md
+        - name: Count function
+          href: ../paginated-reports/expressions/report-builder-functions-count-function.md
+        - name: CountDistinct function
+          href: ../paginated-reports/expressions/report-builder-functions-countdistinct-function.md
+        - name: CountRows function
+          href: ../paginated-reports/expressions/report-builder-functions-countrows-function.md
+        - name: First function
+          href: ../paginated-reports/expressions/report-builder-functions-first-function.md
+        - name: InScope function
+          href: ../paginated-reports/expressions/report-builder-functions-inscope-function.md
+        - name: Level function
+          href: ../paginated-reports/expressions/report-builder-functions-level-function.md
+        - name: Lookup function
+          href: ../paginated-reports/expressions/report-builder-functions-lookup-function.md
+        - name: LookupSet function
+          href: ../paginated-reports/expressions/report-builder-functions-lookupset-function.md
+        - name: Last function
+          href: ../paginated-reports/expressions/report-builder-functions-last-function.md
+        - name: Max function
+          href: ../paginated-reports/expressions/report-builder-functions-max-function.md
+        - name: Min function
+          href: ../paginated-reports/expressions/report-builder-functions-min-function.md
+        - name: Multilookup function
+          href: ../paginated-reports/expressions/report-builder-functions-multilookup-function.md
+        - name: Previous function
+          href: ../paginated-reports/expressions/report-builder-functions-previous-function.md
+        - name: RowNumber function
+          href: ../paginated-reports/expressions/report-builder-functions-rownumber-function.md
+        - name: RunningValue function
+          href: ../paginated-reports/expressions/report-builder-functions-runningvalue-function.md
+        - name: StDev function
+          href: ../paginated-reports/expressions/report-builder-functions-stdev-function.md
+        - name: StDevP function
+          href: ../paginated-reports/expressions/report-builder-functions-stdevp-function.md
+        - name: Sum function
+          href: ../paginated-reports/expressions/report-builder-functions-sum-function.md
+        - name: Union function
+          href: ../paginated-reports/expressions/report-builder-functions-union-function.md
+        - name: Var function
+          href: ../paginated-reports/expressions/report-builder-functions-var-function.md
     - name: Parameters
       items:
       - name: Parameters
