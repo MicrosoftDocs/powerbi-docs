@@ -155,7 +155,7 @@ For any paginated report you **author online**, you can insert text boxes in the
 1. To resize a text box, select the text box itself and then select and drag any sizing handle. Alternatively, press the SHIFT + arrow keys to resize horizontally or vertically.
 
     > [!NOTE]
-    > Text that does not fit within the text box area will show only while the text box is selected. Text outside the text box area will not show in the final design of your report. Resize the text box area to show the text you would like visible.
+    > Text that doesn't fit within the text box area shows only while the text box is selected. Text outside the text box area doesn't show in the final design of your report. Resize the text box area to show the text you would like visible.
 
 ### Format and style text in a text box
 
@@ -193,7 +193,7 @@ To delete a text box, right-click a text box and select **Remove**. Alternativel
 - As with other objects in a report, you can only select one text box at a time. 
 - Text boxes can't be duplicated, or copied and pasted. You can highlight, copy, and paste text within text boxes. 
 - You can only place text boxes above the section line within the boundaries of the print layout, even if web layout is selected. 
-- Text boxes may overlap. You can't change text box layer order. The most recently added text box will be on top. 
+- Text boxes may overlap. You can't change text box layer order. The most recently added text box is on top. 
 - When you enter text in a text box that's larger than the text box area, you can't select the bottom resize handle. Use the bottom corner resize handles or any other resize handles to resize the area. 
 
 ## Export your report
