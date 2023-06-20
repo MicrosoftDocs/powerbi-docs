@@ -69,7 +69,7 @@ The following table describes the members of the **User** collection.
 | **Member** | **Type** | **Description** |
 | --- | --- | --- |
 | **Language** | **String** | The language of the user running the report. For example, `en-US`. |
-| **UserID** | **String** | The ID of the user running the report. If you are using Windows Authentication, this value is the domain account of the current user. The value is determined by the Report Builder security extension, which can use Windows Authentication or custom authentication. |
+| **UserID** | **String** | The ID of the user running the report. |
 
 ### Use Locale Settings
 
