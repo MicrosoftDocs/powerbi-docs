@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4, intro-overview
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: overview
-ms.date: 11/01/2022
+ms.date: 06/20/2023
 LocalizationGroup: Administration
 #Customer intent: As an administrator of the Power BI service, I want to understand the tools, tasks, and roles that I can use to configure, manage, and secure the service.
 ---
@@ -36,7 +36,7 @@ There are several roles that work together to administer Power BI for your organ
 | | | Enable and disable Power BI features |
 | | | Report on usage and performance |
 | | | Review and manage auditing |
-| Power BI Administrator | Power BI service | Full access to Power BI management tasks|
+| Fabric Administrator | Power BI service | Full access to Power BI management tasks|
 | | | Enable and disable Power BI features |
 | | | Report on usage and performance |
 | | | Review and manage auditing |
@@ -49,7 +49,7 @@ There are several roles that work together to administer Power BI for your organ
 
 ## Administrative tasks and tools
 
-Power BI admins work mostly in the Power BI Admin portal, but you should still be familiar with related tools and admin centers. Look at the table above to determine which role is required to do tasks using the tools listed here.
+Fabric admins work mostly in the Power BI Admin portal, but you should still be familiar with related tools and admin centers. Look at the table above to determine which role is required to do tasks using the tools listed here.
 
 | **Tool** | **Typical tasks** |
 | --- | --- |
