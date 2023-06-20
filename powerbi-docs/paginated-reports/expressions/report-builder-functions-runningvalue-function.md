@@ -22,7 +22,7 @@ ms.custom: updatefrequency5
 RunningValue(expression , function , scope)
 ```
 
-#### Parameters
+### Parameters
 
 *expression*  
 The expression on which to perform the aggregation, for example, `[Quantity]`.

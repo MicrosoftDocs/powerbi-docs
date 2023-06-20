@@ -90,7 +90,7 @@ To write expressions that specify non-default scopes takes some practice. To hel
 
 The column header for the territory group has been split into two cells for display purposes. The first cell displays the territory name and totals, and the second cell has placeholder text that calculated the percentage contribution for each territory to all sales.
 
-:::image type="content" source="/sql/reporting-services/report-design/media/rs-basictablesumcellscope.gif" alt-text="Rs_BasicTableSumCellScope.":::
+:::image type="content" source="/sql/reporting-services/report-design/media/rs-basictablesumcellscope.gif" alt-text="Screenshot showing example aggregate expressions for a table data region.":::
 
 Assume the dataset is named DataSet1 and the table is named Tablix1. The following table lists the cell label, the default scope, and examples. The values for placeholder text are shown by in expression syntax.
 

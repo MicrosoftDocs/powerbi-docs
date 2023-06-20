@@ -22,7 +22,7 @@ ms.custom: updatefrequency5
 StDevP(expression , scope , recursive)
 ```
 
-#### Parameters
+### Parameters
 
 *expression*  
 (**Integer** or **Float**) The expression on which to perform the aggregation.

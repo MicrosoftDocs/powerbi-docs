@@ -22,7 +22,7 @@ ms.custom: updatefrequency5
 Aggregate(expression , scope)
 ```
 
-#### Parameters
+### Parameters
 
 *expression*  
 The expression on which to perform the aggregation. The expression must be a simple field reference.

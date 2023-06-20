@@ -22,7 +22,7 @@ ms.custom: updatefrequency5
 Level(scope)
 ```
 
-#### Parameters
+### Parameters
 
 *scope*  
 (**String**) (Optional). The name of a dataset, group, or data region that contains the report items to which to apply the aggregate function. If *scope* is not specified, the current scope is used.

@@ -60,7 +60,7 @@ The following built-in functions calculate summary values for a set of non-null 
 | [Var](./report-builder-functions-var-function.md) | Returns the variance of all non-null numeric values specified by the expression, evaluated in the given scope. |
 | [VarP](./report-builder-functions-varp-function.md) | Returns the population variance of all non-null numeric values specified by the expression, evaluated in the context of the given scope. |
 
-🔝 Back to top
+
 
 ## <a id="Restrictions"></a> Restrictions on Built-in Fields, Collections, and Aggregate Functions
 
@@ -98,7 +98,7 @@ The following table summarizes restrictions in report locations on where you can
 
 <sup>8</sup> Data type for all aggregates except Count and CountDistinct must be the same data type, or null, for all values.
 
-🔝 Back to top
+
 
 ## <a id="NestedRestrictions"></a> Restrictions on Nested Aggregates
 
@@ -116,7 +116,7 @@ The following table summarizes restrictions on which aggregates functions can sp
 
 <sup>1</sup> Aggregate functions are only allowed inside the *Source* expression of a Lookup function if the Lookup function is not contained in an aggregate. Aggregate functions are not allowed inside the *Destination* or *Result* expressions of a Lookup function.
 
-🔝 Back to top
+
 
 ## <a id="CalculatingRunningValues"></a> Calculate Running Values
 
@@ -127,7 +127,7 @@ The following built-in functions calculate running values for a set of data. **R
 | [RowNumber](./report-builder-functions-rownumber-function.md) | Returns a running count of the number of rows for the specified scope. The **RowNumber** function restarts counting at 1, not 0. |
 | [RunningValue](./report-builder-functions-runningvalue-function.md) | Returns a running aggregate of all non-null numeric values specified by the expression, evaluated for the given scope. |
 
-🔝 Back to top
+
 
 ## <a id="RetrievingRowCounts"></a> Retrieve Row Counts
 
@@ -137,7 +137,7 @@ The following built-in function calculates the number of rows in the given scope
 | --- | --- |
 | [CountRows](./report-builder-functions-countrows-function.md) | Returns the number of rows in the specified scope, including rows with null values. |
 
-🔝 Back to top
+
 
 ## <a id="LookupFunctions"></a> Look Up Values from Another Dataset
 
@@ -149,7 +149,7 @@ The following lookup functions retrieve values from a specified dataset.
 | [LookupSet Function](./report-builder-functions-lookupset-function.md) | Returns a set of values from a dataset for a specified expression. |
 | [Multilookup Function](./report-builder-functions-multilookup-function.md) | Returns the set of first-match values for a set of names from a dataset that contains name/value pairs. |
 
-🔝 Back to top
+
 
 ## <a id="RetrievingPostsortValues"></a> Retrieve Sort-Dependent Values
 
@@ -161,7 +161,7 @@ The following built-in functions return the first, last, or previous value withi
 | [Last](./report-builder-functions-last-function.md) | Returns the last value in the given scope of the specified expression. |
 | [Previous](./report-builder-functions-previous-function.md) | Returns the value or the specified aggregate value for the previous instance of an item within the specified scope. |
 
-🔝 Back to top
+
 
 ## <a id="RetrievingServerAggregates"></a> Retrieve Server Aggregates
 
@@ -171,7 +171,7 @@ The following built-in function retrieves custom aggregates from the data provid
 | --- | --- |
 | [Aggregate](./report-builder-functions-aggregate-function.md) | Returns a custom aggregate of the specified expression, as defined by the data provider. |
 
-🔝 Back to top
+
 
 ## <a id="TestingforScope"></a> Test for Scope
 
@@ -181,7 +181,7 @@ The following built-in function tests the current context of a report item to se
 | --- | --- |
 | [InScope](./report-builder-functions-inscope-function.md) | Indicates whether the current instance of an item is within the specified scope. |
 
-🔝 Back to top
+
 
 ## <a id="RetrievingRecursiveLevel"></a> Retrieve Recursive Level
 
@@ -191,7 +191,7 @@ The following built-in function retrieves the current level when a recursive hie
 | --- | --- |
 | [Level](./report-builder-functions-level-function.md) | Returns the current level of depth in a recursive hierarchy. |
 
-🔝 Back to top
+
 
 ## See also
 

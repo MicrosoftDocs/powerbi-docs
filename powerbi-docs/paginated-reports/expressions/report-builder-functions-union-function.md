@@ -22,7 +22,7 @@ ms.custom: updatefrequency5
 Union(expression , scope , recursive)
 ```
 
-#### Parameters
+### Parameters
 
 *expression*  
 (**SqlGeometry** or **SqlGeography**) The expression on which to perform the aggregation.

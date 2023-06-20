@@ -22,7 +22,7 @@ ms.custom: updatefrequency5
 InScope(scope)
 ```
 
-#### Parameters
+### Parameters
 
 *scope*  
 (**String**) The name of a dataset, data region, or group that specifies a scope.

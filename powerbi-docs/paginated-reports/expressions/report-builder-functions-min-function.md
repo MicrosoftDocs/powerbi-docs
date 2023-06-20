@@ -22,7 +22,7 @@ ms.custom: updatefrequency5
 Min(expression , scope , recursive)
 ```
 
-#### Parameters
+### Parameters
 
 *expression*  
 (**Variant**) The expression on which to perform the aggregation.

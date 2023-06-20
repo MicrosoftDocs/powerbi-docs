@@ -22,7 +22,7 @@ ms.custom: updatefrequency5
 RowNumber(scope)
 ```
 
-#### Parameters
+### Parameters
 
 *scope*  
 (**String**) The name of a dataset, data region, or group, or null (**Nothing** in Visual Basic), that specifies the context in which to evaluate the number of rows. **Nothing** specifies the outermost context, usually the report dataset.
