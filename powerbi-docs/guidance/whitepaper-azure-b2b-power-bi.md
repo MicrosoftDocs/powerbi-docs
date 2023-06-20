@@ -484,7 +484,7 @@ Often, organizations have existing partner portals that centralize access to all
 
 ![Many partner portals](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_45.png)
 
-In the example above, users from each supplier sign in to Contoso's Partner Portal that uses Azure AD as an identity provider. It could use AAD B2B, Azure B2C, native identities, or federate with any number of other identity providers. The user would sign in and access a partner portal build using Azure Web App or a similar infrastructure.
+In the example above, users from each supplier sign in to Contoso's Partner Portal that uses Azure AD as an identity provider. It could use Azure AD B2B, Azure B2C, native identities, or federate with any number of other identity providers. The user would sign in and access a partner portal build using Azure Web App or a similar infrastructure.
 
 Within the web app, Power BI reports are embedded from a Power BI Embedded deployment. The web app would streamline access to the reports and any related services in a cohesive experience aimed to make it easy for suppliers to interact with Contoso. This portal environment would be isolated from the Contoso internal Azure AD and Contoso's internal Power BI environment to ensure suppliers couldn't access those resources. Typically, data would be stored in a separate Partner data warehouse to ensure isolation of data as well. This isolation has benefits since it limits the number of external users with direct access to your organization's data, limiting what data could potentially be available to the external user, and limiting accidental sharing with external users.
 
