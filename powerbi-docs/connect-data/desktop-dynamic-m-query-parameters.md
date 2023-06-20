@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.custom: video-RE4M2hq
 ms.topic: how-to
-ms.date: 11/28/2022
+ms.date: 04/14/2023
 LocalizationGroup: Connect to data
 ---
 # Dynamic M query parameters in Power BI Desktop
@@ -245,6 +245,8 @@ There are some considerations and limitations when you use dynamic M query param
 - Table names can't contain spaces or special characters.
 - If your parameter is the `Date/Time` data type, you need to cast it within the M query as `DateTime.Date(<YourDateParameter>)`.
 - If you use SQL sources, you might get a confirmation dialog every time the parameter value changes. This dialog is due to a security setting: **Require user approval for new native database queries**. You can find and turn off this setting in the **Security** section of the Power BI Desktop **Options**.
+- Dynamic M query parameters may not work when accessing a dataset in Excel.
+- Dynamic M query parameters are not supported on Power BI Report Server.
 
 ### Unsupported out-of-box parameter types
 

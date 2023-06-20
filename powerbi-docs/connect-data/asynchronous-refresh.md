@@ -6,7 +6,7 @@ ms.author: owend
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 02/14/2023
+ms.date: 05/09/2023
 ms.custom: contperf-fy21q4
 LocalizationGroup: 
 ---
@@ -94,7 +94,7 @@ The request body might resemble the following example:
 ```
 
 > [!NOTE]
-> The service accepts only one refresh operation at a time for a dataset. If there's a current running refresh and another request is submitted, a `400 Conflict` HTTP status code returns.
+> The service accepts only one refresh operation at a time for a dataset. If there's a current running refresh and another request is submitted, a `400 Bad Request` HTTP status code returns.
 
 ### Parameters
 

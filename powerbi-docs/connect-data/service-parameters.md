@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/06/2023
+ms.date: 04/14/2023
 LocalizationGroup: Create reports
 ---
 # Edit parameter settings in the Power BI service
@@ -40,4 +40,4 @@ Grayed-out fields aren't editable. *Any* and *Binary* type parameters work in Po
 
 ## Next steps
 
-An ad-hoc way to add simple parameters is by [modifying the URL](../collaborate-share/service-url-filters.md).
+An ad-hoc way to add simple parameters is by [modifying filters](../collaborate-share/service-url-filters.md).

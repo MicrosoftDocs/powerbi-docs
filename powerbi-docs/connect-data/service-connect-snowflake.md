@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/07/2023
+ms.date: 04/14/2023
 LocalizationGroup: Connect to services
 ---
 # Connect to Snowflake in the Power BI service
@@ -24,7 +24,7 @@ To configure Azure AD integration and optionally enable SSO:
 
 ### Admin portal
 
-To enable SSO, a global admin has to turn on the setting in the Power BI Admin portal. This setting approves sending Azure AD credentials to Snowflake for authentication for the entire organization. Follow these steps to enable SSO:
+To enable SSO, a global admin has to turn on the setting in the Power BI Admin portal. This setting approves sending Azure AD authentication tokens to Snowflake from within the Power BI service. This setting is set at an orginaztional level. Follow these steps to enable SSO:
 
 1. [Sign in to Power BI](https://app.powerbi.com) using global admin credentials.
 1. Select **Settings** from the page header menu, then select **Admin portal**.

@@ -116,9 +116,9 @@ Downstream inheritance is a critical link in Power BI's end-to-end information p
 
 [Read more about downstream inheritance](service-security-sensitivity-label-downstream-inheritance.md)
 
-## Data loss prevention (DLP) policies (preview)
+## Data loss prevention (DLP) policies
 
-Power BI leverages Microsoft 365 data loss prevention to enable central security teams to use data loss prevention policies to enforce their organization's DLP policies in Power BI. See [Data loss prevention policies for Power BI (preview)](service-security-dlp-policies-for-power-bi.md) for detail.
+Power BI leverages Microsoft 365 data loss prevention to enable central security teams to use data loss prevention policies to enforce their organization's DLP policies in Power BI. See [Data loss prevention policies for Power BI](service-security-dlp-policies-for-power-bi-overview.md) for detail.
 
 ## Default label policy
 
@@ -197,12 +197,12 @@ Power BI restricts permission to change or remove sensitivity labels from Purvie
 
 ## Supported clouds
 
-Sensitivity labels are supported for tenants in global (public) clouds, and the following national clouds:
+Sensitivity labels are supported for tenants in global (public) clouds, and the following national/regional clouds:
 
 * [US Government](service-govus-overview.md#power-bi-feature-availability): GCC, GCC High, DoD
 * China
 
-Sensitivity labels aren't currently supported in other national clouds.
+Sensitivity labels aren't currently supported in other national/regional clouds.
 
 ## Licensing and requirements
 

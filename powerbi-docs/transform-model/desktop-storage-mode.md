@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/31/2023
+ms.date: 06/19/2023
 LocalizationGroup: Transform and shape data
 ---
 
@@ -143,17 +143,14 @@ When you select Dual and Import tables in **Data** view, they show cached data. 
 
 ## Considerations and limitations
 
-There are a few limitations for this release of storage mode and its correlation with composite models.
+There are a few limitations for the current release of storage mode and its correlation with composite models.
 
 The following live connection (multi-dimensional) sources can't be used with composite models:
 
 * SAP HANA
 * SAP Business Warehouse
-* SQL Server Analysis Services
-* Power BI datasets
-* Azure Analysis Services
 
-When you connect to those multi-dimensional sources by using DirectQuery, you can't connect to another DirectQuery source or combine it with imported data.
+When you connect to those multi-dimensional sources using DirectQuery, you can't connect to another DirectQuery source or combine it with imported data.
 
 The existing limitations of using DirectQuery still apply when you use composite models. Many of those limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an imported table can refer to other tables, but a calculated column on a DirectQuery table is still restricted to refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery.
 

@@ -43,5 +43,5 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
 
  [Charts (Power BI Report Builder)](charts-report-builder.md)   
  [Chart types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)   
- [Formatting a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
+ [Formatting a chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)   
  [Line charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/line-charts-report-builder-and-ssrs)  

@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Get started with metrics
 ms.topic: how-to
-ms.date: 03/13/2023
+ms.date: 05/02/2023
 ms.custom: intro-get-started
 ---
 # Get started with metrics in Power BI

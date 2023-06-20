@@ -64,7 +64,7 @@ You'll need to make some tenant-level decisions that relate to security and priv
 - Your [data culture](powerbi-adoption-roadmap-data-culture.md). The goal is to encourage a data culture that understands that security and protection of data is everyone's responsibility.
 - Your [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) strategies. The level of centralized and decentralized content management significantly affects how security is handled.
 - Your [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) strategies. The number of people who will view content will influence how security should be handled for the content.
-- Your requirements to comply with global, national, regional, and industry regulations.
+- Your requirements to comply with global, national/regional, and industry regulations.
 
 Here are a few examples of high-level security strategies. You might choose to make decisions that impact the entire organization.
 

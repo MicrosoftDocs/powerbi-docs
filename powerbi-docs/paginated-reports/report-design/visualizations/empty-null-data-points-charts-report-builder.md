@@ -35,6 +35,6 @@ If you are displaying fields with empty or null values in a chart in your pagina
 ## Next steps
 
 [Charts](charts-report-builder.md)   
-[Formatting a Chart](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
+[Formatting a Chart](formatting-chart-report-builder.md)   
 [Add a Chart to a Report](add-chart-report-report-builder.md)   
 [Troubleshoot Charts](/sql/reporting-services/report-design/troubleshoot-charts-report-builder-and-ssrs)  

@@ -214,5 +214,5 @@ Your feedback helps us decide what to implement in the future, so don’t forget
 
 * [What are the Power BI mobile apps?](mobile-apps-for-mobile-devices.md)
 * Follow @MSPowerBI on Twitter
-* Join the conversation at the [Power BI Community](http://community.powerbi.com/)
+* Join the conversation at the [Power BI Community](https://community.powerbi.com/)
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)

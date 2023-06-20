@@ -57,7 +57,7 @@ The chart legend contains descriptions for each category in a Power BI paginated
 
 - [Legend Properties Dialog Box, General &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-legend-formatting-report-builder)   
 - [Change the Text of a Legend Item &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-legend-change-item-text-report-builder)   
-- [Formatting a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs) 
+- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md) 
 - [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs)   
 - [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
 - [Hide Legend Items on the Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-legend-hide-items-report-builder)   

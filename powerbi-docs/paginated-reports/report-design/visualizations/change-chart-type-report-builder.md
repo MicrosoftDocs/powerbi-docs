@@ -33,7 +33,7 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
 ## Next steps
 
  [Charts (Power BI Report Builder)](charts-report-builder.md)   
- [Gauges &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs)   
+ [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md)   
  [Add a chart to a report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-a-chart-to-a-report-report-builder-and-ssrs)  
   
   

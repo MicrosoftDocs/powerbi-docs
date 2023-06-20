@@ -1,13 +1,13 @@
 ---
 title: "Power BI adoption roadmap: System oversight"
 description: Apply system oversight consisting of administrative activities to drive strong and successful adoption of Power BI.
-author: davidiseminger
-ms.author: davidi
+author: data-goblin
+ms.author: v-kurtbuhler
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 2/19/2023
+ms.date: 05/29/2023
 ---
 
 # Power BI adoption roadmap: System oversight
@@ -116,19 +116,20 @@ The following activities apply when reviewing and validating each tenant setting
 
 ### Admin portal
 
-As discussed in the Power BI adoption [maturity levels](powerbi-adoption-roadmap-maturity-levels.md) article, organizational adoption refers to the effectiveness of Power BI governance and data management practices to support and enable enterprise BI and self-service BI. Actively managing all areas of the Power BI service (in addition to the tenant settings) in accordance with adoption goals has a direct influence on ensuring that all users have a good experience with Power BI.
+As described in the Power BI adoption [maturity levels](powerbi-adoption-roadmap-maturity-levels.md) article, organizational adoption refers to the effectiveness of Power BI governance and data management practices to support and enable enterprise BI and self-service BI. Actively managing all areas of the Power BI service in accordance with adoption goals helps ensure that all your users have a good experience with Power BI.
 
-Other responsibilities for managing the Power BI service include:
+Key topics for managing the Power BI service include:
 
+- [Tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings)
+- [Auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md)
 - [Workspace management and access](/power-bi/admin/service-admin-portal-workspaces)
 - [Premium capacity and Premium Per User settings](/power-bi/admin/service-admin-portal-capacity-settings)
 - [Embed codes](/power-bi/admin/service-admin-portal-embed-codes)
 - [Organizational visuals](/power-bi/admin/service-admin-portal-organizational-visuals)
 - [Azure connections](/power-bi/admin/service-admin-portal-azure-connections)
 - [Custom branding](/power-bi/admin/service-admin-portal-custom-branding)
+- [Protection metrics](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md)
 - [Featured content](/power-bi/admin/service-admin-portal-featured-content)
-
-In addition to these documentation links, see the [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP), which describes additional considerations for Power BI administration.
 
 ## User machines and devices
 
@@ -407,66 +408,49 @@ Be aware that [Premium Per User (PPU)](/power-bi/enterprise/service-premium-per-
 
 ## Auditing and monitoring
 
-A wealth of metadata is available for understanding what's happening within your Power BI tenant. The primary source of information is from the Power BI [activity log](/power-bi/admin/service-admin-auditing), which captures information about many different types of activities that users perform.
+It's critical that you make use of auditing data to analyze adoption efforts, understand usage patterns, educate users, support users, mitigate risk, improve compliance, manage license costs, and monitor performance. For more information about why auditing your data is valuable, see [Auditing and monitoring overview](powerbi-implementation-planning-auditing-monitoring-overview.md).
 
-There are also various [REST APIs](/rest/api/power-bi/) that provide additional information about workspaces, apps, datasets, and more. Of particular interest to administrators are the [admin APIs](/rest/api/power-bi/admin). These APIs provide a means to extract metadata for the entire tenant. The [Power BI Management Module](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true) is a set of PowerShell commands that make it easier to obtain metadata rather than dealing directly with the APIs. However, substantially more information is available directly from the APIs.
+There are different ways to approach auditing and monitoring depending on your role and your objectives. The following articles describe various considerations and planning activities.
 
-Long-term [usage and performance insights](https://powerbi.microsoft.com/blog/announcing-long-term-usage-and-performance-insights-public-preview/) are also available for workspaces backed by [Premium capacity](/power-bi/enterprise/service-premium-what-is). Administrators can analyze dataset activity, performance, and behavior. This capability is integrated with [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
+- **[Report-level auditing](powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md):** Techniques that report creators can use to understand which users are using the reports that they create, publish, and share.
+- **[Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md):** Methods that data creators can use to track the performance and usage patterns of data assets that they create, publish, and share.
+- **[Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md):** Key decisions and actions administrators can take to create an end-to-end auditing solution.
+- **[Tenant-level monitoring](powerbi-implementation-planning-auditing-monitoring-tenant-level-monitoring.md):** Tactical actions administrators can take to monitor the Power BI service, including updates and announcements.
 
-### Auditing
+## Power BI REST APIs
 
-Auditing data is valuable for informing and tracking your adoption goals, helping the COE be more effective, ideas for helpful documentation or new training, and for governance-related reporting.
+The [Power BI REST APIs](/rest/api/power-bi/) provide a wealth of information about your Power BI tenant. Retrieving data by using the REST APIs should play an important role in managing and governing a Power BI implementation. For more information about planning for the use of REST APIs for auditing, see [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-overview.md).
 
-The following table presents are a few ideas of what you can do with the information available from the Power BI activity log and APIs:
+You can retrieve auditing data to build an auditing solution, manage content programmatically, or increase the efficiency of routine actions. The following table presents some actions you can perform with the REST APIs.
 
-| **Category of auditing data** | **Type of questions** |
-| --- | --- |
-| Usage patterns and adoption | What is the most often-used content, and by whom? </br></br>How many users are active? </br></br>Are report views trending up or down? </br></br>Is there underutilized or abandoned content? </br></br>Are viewers using browser or mobile apps more often? </br></br>When is content published or updated, and by whom? |
-| Governance, security, and compliance | When are workspace roles updated, and by whom? </br></br>How many external users are accessing content? </br></br>Who added or updated a sensitivity label? </br></br>When does a tenant setting change, and by whom? </br></br>What percentage of report views are based on certified datasets? </br></br>What percentage of datasets support more than one report? </br></br>How frequently is content downloaded, and by whom? </br></br>Who generated an embed code for publish to web? |
-| Architecture reporting and analysis | How many workspaces exist by type? </br></br>How many reports exist by type? </br></br>When is a gateway or data source created or updated? |
-| User education and training opportunities | Who started a Power BI trial? </br></br>Who is doing too much sharing from their personal workspace? </br></br>Who is publishing many new datasets? </br></br>Who is doing a lot of exporting? |
+| **Action** | **Documentation resource(s)** |
+|---|---|
+| Audit user activities | [REST API to get activity events](/rest/api/power-bi/admin/get-activity-events) |
+| Audit workspaces, items, and permissions | [Collection of asynchronous metadata scanning REST APIs to obtain a tenant inventory](/power-bi/enterprise/service-admin-metadata-scanning) |
+| Audit content shared to entire organization | [REST API to check use of widely shared links](/rest/api/power-bi/admin/widely-shared-artifacts-links-shared-to-whole-organization) |
+| Audit tenant settings | [REST API to check tenant settings](/rest/api/fabric/admin/tenants/get-tenant-settings) |
+| Publish content | [REST API to deploy items from a deployment pipeline](/rest/api/power-bi/pipelines/selective-deploy) or [clone a report to another workspace](/rest/api/power-bi/reports/clone-report-in-group) |
+| Manage content | [REST API to refresh a dataset](/rest/api/power-bi/datasets/refresh-dataset-in-group) or [take over ownership of a dataset](/rest/api/power-bi/datasets/take-over-in-group) |
+| Manage gateway data sources | [REST API to update credentials for a gateway data source](/rest/api/power-bi/gateways/update-datasource) |
+| Export content | [REST API to export a report](/rest/api/power-bi/reports/export-report-in-group) |
+| Create workspaces | [REST API to create a new workspace](/rest/api/power-bi/groups/create-group) |
+| Manage workspace permissions | [REST API to assign user permissions to a workspace](/rest/api/power-bi/groups/update-group-user) |
+| Update workspace name or description | [REST API to update workspace attributes](/rest/api/power-bi/admin/groups-update-group-as-admin) |
+| Restore a workspace | [REST API to restore a deleted workspace](/rest/api/power-bi/admin/groups-restore-deleted-group-as-admin) |
+| Programmatically retrieve a query result from a dataset | [REST API to run a DAX query against a dataset](/rest/api/power-bi/datasets/execute-queries-in-group) |
+| Assign workspaces to Premium capacity | [REST API to assign workspaces to capacity](/rest/api/power-bi/admin/capacities-assign-workspaces-to-capacity) |
+| Programmatically change a data model | [Tabular Object Model (TOM) API](/analysis-services/tom/tom-pbi-datasets) |
+| Embed Power BI content in custom applications | [Power BI embedded analytics client APIs](/javascript/api/overview/powerbi/) |
 
-When considering needs for creating auditing reports, consider the following:
-
-- What does success mean?
-- What behaviors do you want to encourage?
-- What do you want people to start doing?
-- What do you want people to stop doing?
-
-> [!IMPORTANT]
-> The raw data files that contain the auditing data should be stored in a very secure location, preferably one which is immutable (allowing no modifications or deletions). Immutable storage allows your auditors to rely on this data. A service like [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction) is a flexible and low-cost alternative for this purpose.
-
-### Monitoring
-
-[Microsoft Defender for Cloud Apps](https://powerbi.microsoft.com/blog/get-up-to-speed-with-power-bi-and-microsoft-cloud-app-security/) is a cloud access security broker (CASB) that allows administrators to perform activities such as:
-
-- Audit, monitor, and raise alerts based on activities
-- Create data loss prevention policies
-- Detect unusual behaviors and risky sessions
-- Limit activities performed by applications (with [Azure AD conditional access app control](/cloud-app-security/proxy-intro-aad))
-
-Some powerful [Power BI monitoring and protection](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/protect-your-power-bi-instance-using-microsoft-cloud-app/ba-p/2166872) capabilities are available with Defender for Cloud Apps. For example, you can:
-
-- Prohibit all—or certain users—from downloading a file from the Power BI service when a specific sensitivity label is assigned.
-- Receive an alert whenever a tenant setting is updated in the Power BI service (for instance, an administrative activity is detected).
-- Detect when suspicious or unusual behaviors have occurred, such as massive file downloads or an unusual number of sharing operations in the Power BI service.
-- Search the activity log for specific activities relating to content with a specific sensitivity label assigned, such as exports from the Power BI service.
-- Be notified when risky sessions are occurring, such as when the same user account connects from different geographical areas in a narrow time window.
-- Determine when someone outside a predefined security group views specific content in the Power BI service.
-
-> [!CAUTION]
-> Licensing, cost, and administrative permissions for Defender for Cloud Apps are all handled separately from Power BI. You can create an [application-specific admin](/cloud-app-security/manage-admins#built-in-defender-for-cloud-apps-admin-roles) with permissions scoped to monitoring just the Power BI service.
+> [!TIP]
+> There are many other REST APIs. For a complete list, see [Using the Power BI REST APIs](/rest/api/power-bi/).
 
 ## Planning for change
 
-Every month, new Power BI features and functionality are released. To be effective, it's crucial for everyone involved with system oversight to stay current.
-
-The [Power BI blog](https://powerbi.microsoft.com/blog/) is the best place for customers to monitor announcements and new releases.
-
-The [Power BI release plan](https://powerbi.microsoft.com/roadmap/) is where customers can find the public roadmap for future features and estimated dates. Sometimes a change that's coming is so important that it's useful to start planning for it well in advance. The planning cycle is in semesters: April-September, and October-March.
+Every month, Microsoft releases new Power BI features and functionality. To be effective, it's crucial that everyone involved with system oversight stays current. For more information, see [Tenant-level monitoring](powerbi-implementation-planning-auditing-monitoring-tenant-level-monitoring.md).
 
 > [!IMPORTANT]
-> It's difficult to overestimate the importance of staying current. Being a few months behind on announcements can make it difficult to properly manage the Power BI service and support the user population efficiently.
+> Don't underestimate the importance of staying current. If you get a few months behind on announcements, it can become difficult to properly manage the Power BI service and support your users.
 
 ## Considerations and key actions
 
@@ -498,10 +482,10 @@ The [Power BI release plan](https://powerbi.microsoft.com/roadmap/) is where cus
 
 > [!div class="checklist"]
 > - **Assess what your end-to-end data architecture looks like:** Make sure you're clear on:
->     - How Power BI is currently used by the different business units in your organization versus how you want Power BI to be used. Determine if there's a gap.
->     - If there are any risks that should be addressed.
->     - If there are any high-maintenance situations to be addressed.
->     - What data sources are important for Power BI users, and how they're documented and discovered.
+>   - How Power BI is currently used by the different business units in your organization versus how you want Power BI to be used. Determine if there's a gap.
+>   - If there are any risks that should be addressed.
+>   - If there are any high-maintenance situations to be addressed.
+>   - What data sources are important for Power BI users, and how they're documented and discovered.
 > - **Review existing data gateways:** Find out what gateways are being used throughout your organization. Verify that gateway administrators and users are set correctly. Verify who is supporting each gateway, and that there's a reliable process in place to keep the gateway servers up to date.
 > - **Verify use of personal gateways:** Check the number of personal gateways that are in use, and by whom. If there's significant usage, take steps to move towards use of the standard mode gateway.
 
@@ -528,8 +512,23 @@ The [Power BI release plan](https://powerbi.microsoft.com/roadmap/) is where cus
 **Improve auditing and monitoring:**
 
 > [!div class="checklist"]
-> - **Retrieve and store data from the activity log:** Begin retrieving data from the Power BI activity log if you aren't currently compiling the raw data. The easiest way to get started is to use the [Get-PowerBIActivityEvent](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent?view=powerbi-ps&preserve-view=true) PowerShell cmdlet included with the Power BI Management Module. Retrieve and store the raw data without filtering or formatting, to ensure that all data elements are available for future analysis. A file system or data lake is an ideal location for storing the JSON files.
-> - **Include additional auditing data:** Over time, determine what other auditing data would be helpful to complement the activity log data.
+> - **Plan for auditing needs:** Collect and document the key business requirements for an auditing solution. Consider your priorities for auditing and monitoring. Make key decisions related to the type of auditing solution, permissions, technologies to be used, and data needs. Consult with IT to clarify what auditing processes currently exist, and what preferences of requirements exist for building a new solution.
+> - **Consider roles and responsibilities:** Identify which teams will be involved in building an auditing solution, as well as the ongoing analysis of the auditing data.
+> - **Extract and store user activity data:** If you aren't currently extracting and storing the raw data, begin retrieving [user activity data](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#user-activity-data).
+> - **Extract and store snapshots of tenant inventory data:** Begin retrieving metadata to build a [tenant inventory](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#tenant-inventory), which describes all workspaces and items.
+> - **Extract and store snapshots of users and groups data:** Begin retrieving metadata about [users, groups, and service principals](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#users-and-groups-data).
+> - **Create a curated data model:** Perform data cleansing and transformations of the raw data to create a curated data model that'll support analytical reporting for your auditing solution.
+> - **Analyze auditing data and act on the results:** Create analytic reports to analyze the curated auditing data. Clarify what actions are expected to be taken, by whom, and when.
+> - **Include additional auditing data:** Over time, determine whether other auditing data would be helpful to complement the activity log data, such as [security data](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#security-data).
+
+> [!TIP]
+> For more information, see [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md).
+
+**Use the Power BI REST APIs:**
+
+> [!div class="checklist"]
+> - **Plan for your use of the REST APIs:** Consider what data would be most useful to retrieve from the Power BI REST APIs.
+> - **Conduct a proof of concept:** Do a small proof of concept to validate data needs, technology choices, and permissions.
 
 ## Maturity levels
 

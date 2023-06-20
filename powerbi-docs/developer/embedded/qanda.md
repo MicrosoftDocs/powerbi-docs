@@ -95,7 +95,6 @@ Create an embed token from a dataset to start a Q&A part. For more information, 
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Try out Q&A embedding with the JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)
+[Try out Q&A embedding with the JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

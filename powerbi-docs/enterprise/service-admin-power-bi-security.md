@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/29/2022
+ms.date: 04/17/2023
 LocalizationGroup: Administration
 ---
 
@@ -66,6 +66,6 @@ Network and IT administrators can enforce the requirement for using current Tran
 
 This enforcement is implemented by administratively setting registry keys. For enforcement details, see [Managing SSL/TLS Protocols and Cipher Suites for AD FS](/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs).
 
-**Power BI Desktop** respects the registry key settings described in those articles, and only creates connections using the version of TLS allowed based on those registry settings, when present.
+**Power BI Desktop** requires TLS (Transport Layer Security) version 1.2 (or higher) to secure your endpoints. Web browsers and other client applications that use TLS versions earlier than TLS 1.2 won't be able to connect. If newer versions of TLS is required, Power BI Desktop respects the registry key settings described in those articles, and only creates connections meeting the version requirement of TLS allowed based on those registry settings, when present.
 
 For more information about setting these registry keys, see [Transport Layer Security (TLS) registry settings](/windows-server/security/tls/tls-registry-settings).

@@ -8,12 +8,12 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 03/06/2023
+ms.date: 05/17/2023
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 *Sharing* is the easiest way to give people access to your reports and dashboards in the Power BI service. You can share with people inside or outside your organization.
 
@@ -42,7 +42,8 @@ Sujata demonstrates how to share in the Power BI service.
 - You can share reports and dashboards from My Workspace. 
 - You can share from workspaces other than My Workspace, if you have the [Admin or Member role](service-roles-new-workspaces.md) in the workspace. If you have the Contributor or Viewer role, you can share if you have Reshare permissions.
 - You can [share from the Power BI mobile apps](../consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).
-- You can't *share* directly from Power BI Desktop. You [publish reports from Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) to the Power BI service. 
+- You can [share from Power BI Desktop](../create-reports/desktop-sharepoint-save-share.md) with OneDrive and SharePoint integration. 
+- You can [publish reports from Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) to the Power BI service. 
 
 ## Share a report via link
 
@@ -233,6 +234,7 @@ Things to keep in mind about sharing reports and dashboards:
 ## Next steps
 
 - [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
+- [Share from Power BI Desktop](../create-reports/desktop-sharepoint-save-share.md)
 - [Troubleshoot sharing dashboards and reports](service-troubleshoot-sharing.md)
 - [Sharing for users with free licenses](end-user-shared-with-me.md)
 - [Request or grant access to shared dashboards or reports](service-request-access.md)

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 01/19/2023
+ms.date: 04/17/2023
 ---
 
 # Embed Power BI content with service principal and an application secret
@@ -29,6 +29,10 @@ This article describes service principal authentication using an *application ID
 >
 >* [Learn more about getting access tokens from Azure AD by using secret keys or certificates](/azure/architecture/multitenant-identity/client-assertion).
 >* To secure your solution by using a certificate, complete the instructions in this article and then follow the steps described in [Embed Power BI content with service principal and a certificate](embed-service-principal-certificate.md).
+
+## Prerequisite
+
+This procedure requires you to have an **Azure AD Premium** license.
 
 ## Method
 

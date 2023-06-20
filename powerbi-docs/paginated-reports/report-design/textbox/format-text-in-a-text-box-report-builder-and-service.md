@@ -63,7 +63,7 @@ In Power BI paginated reports, you can format any part of the text in a text box
  [Expression Uses in Reports &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
  [Expression Examples &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)   
  [Add HTML into a Report &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/add-html-into-a-report-report-builder-and-ssrs)   
- [Tables, Matrices, and Lists &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)   
+ [Tables, Matrices, and Lists &#40;Report Builder and Service&#41;](../../report-builder-tables-matrices-lists.md)   
  [Formatting Numbers and Dates &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/formatting-numbers-and-dates-report-builder-and-ssrs)   
  [Placeholder Properties Dialog Box, General &#40;Report Builder and Service&#41;](./text-boxes-report-builder-and-service.md)  
   

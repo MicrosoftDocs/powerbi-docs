@@ -7,9 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/04/2023
+ms.date: 06/06/2023
 LocalizationGroup: Premium
 ---
+
 # Paginated reports capacity planning
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
@@ -54,9 +55,9 @@ Based on the five percent concurrency ratio, the following table describes the a
 
 | Workload   | P1 SKU      | P2 SKU      |
 |------------|-------------|-------------|
-| **Small**  | 1,600 users | 3,200 users |
-| **Medium** | 1,200 users | 2,400 users |
-| **Large**  | 800 users   | 1,600 users |
+| **Small**  | 2,500 users | 5,000 users |
+| **Medium** | 1,900 users | 3,800 users |
+| **Large**  | 1300 users   | 2,600 users |
 
 Take into consideration that the numbers in the table refer to designated capacities that don't run other operations. Your capacity may already use CPU resources for operations such as:
 
@@ -67,6 +68,12 @@ Take into consideration that the numbers in the table refer to designated capaci
 * Complex data grouping and reshaping
 
 * Data filtering
+
+## Concurrent requests
+
+Each workload on a capacity, including the paginated reports workload, has a maximum of 500 concurrent report renders at any given time. If your capacity is rendering 100 reports and has 200 requests for [exporting paginated reports](./../developer/embedded/export-paginated-report.md), you have 200 concurrent report render requests left.
+
+To avoid congestion, plan your concurrent requests load in advance. If you exceed the concurrent requests limit, you’ll encounter the *Too Many Requests (429)* error.
 
 ## Using the metrics app
 
@@ -150,3 +157,5 @@ The formulas for a *P1 SKU* will be:
 
 >[!div class="nextstepaction"]
 >[Using Autoscale with Power BI Premium](./../enterprise/service-premium-auto-scale.md)
+
+

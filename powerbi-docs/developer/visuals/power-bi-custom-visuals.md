@@ -40,7 +40,7 @@ Microsoft and community members develop Power BI visuals for public benefit, and
 
 >[!NOTE]
 >
-> * By using Power BI visuals created with our SDK, you may be importing data from, or sending data to, a third party or other service outside of your Power BI tenant’s geographic area, compliance boundary, or national cloud instance.
+> * By using Power BI visuals created with our SDK, you may be importing data from, or sending data to, a third party or other service outside of your Power BI tenant’s geographic area, compliance boundary, or national/regional cloud instance.
 > * Once Power BI visuals from AppSource are imported, they may be updated automatically without any additional notice.
 
 ### Download from AppSource

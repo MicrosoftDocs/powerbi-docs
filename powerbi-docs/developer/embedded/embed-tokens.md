@@ -42,7 +42,7 @@ You can acquire an Azure AD token in one of the following ways:
   * For *Embed for your organization* see [this OwinOpenIdConnect.cs file](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/Embed%20for%20your%20organization/UserOwnsData/Services/Security/OwinOpenIdConnect.cs). Find `authorityUrl` at [UserOwnsData/Web.config](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/Embed%20for%20your%20organization/UserOwnsData/Web.config).
 
   > [!NOTE]
-  > You can find the `authorityUrl` and `scopeBase` values for some sovereign clouds in [Embed content in your app for government and national clouds](embed-sample-for-customers-national-clouds.md).
+  > You can find the `authorityUrl` and `scopeBase` values for some sovereign clouds in [Embed content in your app for government and national/regional clouds](embed-sample-for-customers-national-clouds.md).
 
 ## Embed token
 

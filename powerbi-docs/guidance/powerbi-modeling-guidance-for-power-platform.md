@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/20/2022
+ms.date: 04/20/2023
 ---
 
 # Power BI modeling guidance for Power Platform
@@ -273,15 +273,15 @@ The setup involves signing in to Power Apps and connecting Dataverse to the Azur
 > [!TIP]
 > For complete documentation on creating, managing, and monitoring Azure Synapse Link see [Create an Azure Synapse Link for Dataverse with your Azure Synapse Workspace](/powerapps/maker/data-platform/azure-synapse-link-synapse).
 
-### Create a second serverless SQL pool
+### Create a second serverless SQL database
 
-You can create a second serverless SQL pool and use it to add custom report views. That way, you can present a simplified set of data to the Power BI creator that allows them to create a model based on useful and relevant data. The new serverless SQL pool becomes the creator's primary source connection and a friendly representation of the data sourced from the data lake.
+You can create a second serverless SQL database and use it to add custom report views. That way, you can present a simplified set of data to the Power BI creator that allows them to create a model based on useful and relevant data. The new serverless SQL database becomes the creator's primary source connection and a friendly representation of the data sourced from the data lake.
 
 :::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/azure-synapse-link-for-dataverse-serverless.png" alt-text="Diagram shows Azure Synapse Link copying data to ADLS Gen2 storage, and Power BI connecting to Azure Synapse Analytics. It includes custom report views." border="false":::
 
 This approach delivers data to Power BI that's focused, enriched, and filtered.
 
-You can create a serverless SQL pool in the Azure Synapse workspace by using [Azure Synapse Studio](/azure/synapse-analytics/get-started-create-workspace). Select **Serverless** as the SQL pool type and enter a database name. Power Query can connect to this pool by connecting to the workspace SQL endpoint.
+You can create a serverless SQL database in the Azure Synapse workspace by using [Azure Synapse Studio](/azure/synapse-analytics/get-started-create-workspace). Select **Serverless** as the SQL database type and enter a database name. Power Query can connect to this database by connecting to the workspace SQL endpoint.
 
 ### Create custom views
 

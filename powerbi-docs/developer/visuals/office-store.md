@@ -1,5 +1,5 @@
 ---
-title: Publish Power BI visuals to the Microsoft commercial marketplace
+title: Publish Power BI visuals to the Microsoft commercial marketplace.
 description: Learn how you can publish your custom visual to Partner Center for others to discover and use.
 author: mberdugo
 ms.author: monaberdugo
@@ -31,7 +31,7 @@ Before submitting a Power BI visual to AppSource, ensure that it complies with t
 >[!IMPORTANT]
 >If you're resubmitting or updating a visual, **do not change its GUID**. Follow these instructions to [test a new version of a visual](submission-testing.md#testing-a-new-version-of-a-published-visual).
 
-When you are ready to submit your Power BI visual, verify that your visual meets all the requirements listed below.
+When you're ready to submit your Power BI visual, verify that your visual meets all the following requirements.
 
 | Item | Required | Description |
 | --- | --- | --- |
@@ -69,9 +69,9 @@ When you're ready to create or update your offer, follow the instructions in [Cr
 
 ## Track submission status and usage
 
-You can review the [validation policies](/legal/marketplace/certification-policies#1180-power-bi-visuals).
+* Review the [validation policies](/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
-* After submission, you will be able to view the submission status in the [app dashboard](https://sellerdashboard.microsoft.com/Application/Summary/).
+<!--- * After submission, you will be able to view the submission status in the [app dashboard](https://sellerdashboard.microsoft.com/Application/Summary/). --->
 
 * To understand when your Power BI visual will be available to download from AppSource, review the Power BI visuals [publication timeline](power-bi-custom-visuals-certified.md#publication-timeline).
 
@@ -83,9 +83,8 @@ All certified visuals must pass all the [certification requirements](power-bi-cu
 
 ## Next steps
 
-* [Learn how to create a Power BI visual](develop-circle-card.md)
+* [Performance tips for creating quality Power BI custom visuals](performance-tips.md)
 * [Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
 * [Test your Power BI visual before submitting for certification](submission-testing.md)  
-* [Getting a Power BI visual certified](power-bi-custom-visuals-certified.md)
 
-**More questions?** [Try asking the Power BI Community](https://community.powerbi.com/)
+**More questions?** [Try asking the Power BI Community](https://community.powerbi.com/).

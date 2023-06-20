@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy21q1, fabric
 ms.date: 07/31/2022
 ---
 

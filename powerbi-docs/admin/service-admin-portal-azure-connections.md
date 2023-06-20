@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal
 ms.topic: how-to
-ms.date: 12/08/2022
+ms.date: 04/18/2023
 LocalizationGroup: Administration
 ---
 

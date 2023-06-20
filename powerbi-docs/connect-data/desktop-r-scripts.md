@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 12/21/2022
+ms.date: 04/14/2023
 LocalizationGroup: Connect to data
 ---
 # Run R scripts in Power BI Desktop
@@ -36,6 +36,7 @@ When you prepare and run an R script in Power BI Desktop, there are a few limita
 * If an R script runs longer than 30 minutes, it times out.
 * Interactive calls in the R script, such as waiting for user input, halt the script's execution.
 * When setting the working directory within the R script, you *must* define a full path to the working directory, rather than a relative path.
+* R scripts cannot run in the Power BI service.
 
 ### Run your R script and import data
 
