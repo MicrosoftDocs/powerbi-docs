@@ -23,14 +23,16 @@ ms.reviewer: spendrick
 Previous(expression, scope)  
 ```  
   
-#### Parameters  
+### Parameters
+
  *expression*  
  (**Variant** or **Binary**) The expression to use to identify the data and for which to retrieve the previous value, for example, `Fields!Fieldname.Value` or `Sum(Fields!Fieldname.Value)`.  
   
  *scope*  
  (**String**) Optional. The name of a group or data region, or null (**Nothing** in  Visual Basic), that specifies the scope from which to retrieve the previous value specified by *expression*.  
   
-## Return type  
+## Return type
+
  Returns a **Variant** or **Binary**.  
   
 ## Remarks  
