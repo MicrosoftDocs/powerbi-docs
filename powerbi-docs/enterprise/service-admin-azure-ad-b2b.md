@@ -133,8 +133,6 @@ The guest user may already have a Power BI Pro or PPU license that was assigned 
 
 ![Diagram of the guest user experience when they bring their own license.](media/service-admin-azure-ad-b2b/license-approach-3.png)
 
-## Guest users who can edit and manage content
-
 To help allowed guests sign in to Power BI, provide them with the Tenant URL. To find the tenant URL, follow these steps.
 
 1. In the Power BI service, in the header menu, select help (**?**), then select **About Power BI**.
