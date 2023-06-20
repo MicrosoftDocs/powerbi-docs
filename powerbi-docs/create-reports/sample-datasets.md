@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/06/2023
+ms.date: 06/21/2023
 LocalizationGroup: Samples
 ---
 # Get samples for Power BI
@@ -50,7 +50,7 @@ You can explore it these ways:
 There are revised versions of the original samples. These new versions take the original datasets and incorporate the latest visualizations.
 
 - Corporate Spend. Take a tour of the [Corporate Spend](sample-corporate-spend.md) sample.
-- Employee Hiring and History
+- Employee Hiring and History. Take a tour of the [Employee Hiring and History](sample-employee-hiring-history.md) sample.
 - Revenue Opportunities
 - Store Sales
 - Competitive marketing Analysis
@@ -101,11 +101,13 @@ By clicking any of the following links to download the Excel workbook files or *
 
 This industry sample analyzes a CFO's key metrics for the company's executives, products, and customers. You can investigate what factors affect the company's profitability.
 
-### Human Resources sample
+### Human Resources / Employee Hiring and History sample
 
-[Take a tour of the HR sample](sample-human-resources.md)
+[Take a tour of the Employee Hiring and History sample](sample-employee-hiring-history.md)
 
 This industry sample focuses on the hiring strategy for a company by analyzing new hires, active employees, and employees who have left. By exploring the data, you can find trends in voluntary separations and biases in the hiring strategy.
+
+[Take a tour of the previous version of the sample](sample-human-resources.md)
 
 ### IT Spend Analysis / Corporate Spend sample
 
@@ -187,6 +189,7 @@ Several of the original built-in samples now have updated versions and these sam
    Updated samples:
 
    - [Corporate Spend](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Corporate%20Spend.pbix)
+   - [Employee Hiring and History](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Employee%20Hiring%20and%20History.pbix)
 
    Original samples:
 
