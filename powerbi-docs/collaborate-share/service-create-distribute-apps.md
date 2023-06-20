@@ -8,7 +8,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 05/02/2023
+ms.date: 06/19/2023
 
 LocalizationGroup: Share your work
 ---
@@ -96,14 +96,24 @@ On the **Audience** tab, you create and manage audience groups within the app.
     
 1. Select the hide/show icon next to each item in the workspace to determine the content that this app audience can see.
 
+    
+    >[!IMPORTANT]
+    >
+    >- Hiding content from the audience makes it unavailable in the published app for that audience.
+    >- Dashboard tiles pointing at reports that are hidden from the audience no longer work. Instead they display an error: "The report shown in this tile doesn’t exist or you don’t have permission to view it."
+    >- Paginated reports with subreports don't display the content of the subreport if it's hidden from the audience.
+    >- Users of drillthrough reports can't navigate to the destination reports if the destination reports are hidden.
+    >
+    >To address all of these issues, make sure that all the dependent reports are available for the audience.
+     
 1. In the **Manage audience access** pane, specify groups or users to add to the current audience group. 
 
     :::image type="content" source="media/service-create-distribute-apps/audience-tab.png" alt-text="Screenshot of Manage audience access tab.":::
     
     >[!IMPORTANT]
-    >If your app relies on datasets from other workspaces, make sure that all app users have access to the underlying datasets.
     >
-    >If the app or report is in the same workspace as the dataset, make sure you add the report associated with the dataset to the app as well.
+    >- If your app relies on datasets from other workspaces, make sure that all app users have access to the underlying datasets.
+    >- If the app or report is in the same workspace as the dataset, make sure you add the report associated with the dataset to the app as well.
      
 1. For each audience group, grant access to either all people in your organization or specific users or groups. You can also expand the **Advanced** option to configure the following settings per audience group: 
 
