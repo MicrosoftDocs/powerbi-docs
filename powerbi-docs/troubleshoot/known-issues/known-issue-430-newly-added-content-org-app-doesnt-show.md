@@ -1,6 +1,6 @@
 ---
 title: Known issue - Newly added content in organizational app doesn't show in first load
-description: A known issue is posted where newly added content in organizational app doesn't show in first load
+description: A known issue is posted where newly added content in an organizational app doesn't show in first load.
 author: mihart
 ms.author: mihart
 ms.topic: troubleshooting  
