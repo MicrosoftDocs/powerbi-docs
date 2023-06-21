@@ -17,17 +17,6 @@ The Revenue Opportunities built-in sample contains a report and dataset for a so
 
 :::image type="content" source="media/sample-revenue-opportunities/revenue-opportunity-dashboard.png" alt-text="Screenshot that shows the dashboard for the Revenue Opportunities sample." lightbox="media/sample-revenue-opportunities/revenue-opportunity-dashboard.png":::
 
-This sample relies on two measures of revenue:
-
-- Revenue: A salesperson's estimate of the revenue.
-- Factored revenue: Calculated as revenue X probability% and is accepted as being a more-accurate predictor of actual sales revenue. The deal's current *sales stage* determines probability:
-
-  - Lead: 10%  
-  - Qualify: 20%  
-  - Solution: 40%  
-  - Proposal: 60%  
-  - Finalize: 80%
-
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created samples using real, anonymized data. The data is available as a built-in sample in the Power BI service and a *.pbix* Power BI Desktop file. For more information, see [Samples for Power BI](sample-datasets.md).
 
 This tour explores the Revenue Opportunities built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
@@ -92,19 +81,19 @@ The Opportunity Overview page of the report has two card visualizations. Card vi
 
 :::image type="content" source="media/sample-revenue-opportunities/power-bi-card-visual.png" alt-text="Screenshot shows two card visualizations that present data from the dataset.":::
 
-Below those cards is a treemap visualization of the **Opportunity Count by Region**. Right-click the **East** region. In the context menu, select **Drill down**.
+A treemap visualization of the **Opportunity Count by Region** appears below those cards. Right-click the **East** region. In the context menu, select **Drill down**.
 
 :::image type="content" source="media/sample-revenue-opportunities/power-bi-drill-down.png" alt-text="Screenshot shows the drilled down data of the region visualization." lightbox="media/sample-revenue-opportunities/power-bi-drill-down.png":::
 
-The visualization now shows the component areas that make up East region. The other visualizations now reflect only the East region.
+The visualization now shows the component areas that make up the East region. The other visualizations now reflect only the East region.
 
 Now select a product from the **Product Code** selector.
 
-:::image type="content" source="media/sample-revenue-opportunities/power-bi-select-product.png" alt-text="Screenshot shows report page with a particular product code selected." lighthbox="media/sample-revenue-opportunities/power-bi-select-product.png lightbox.png":::
+:::image type="content" source="media/sample-revenue-opportunities/power-bi-select-product.png" alt-text="Screenshot shows report page with a particular product code selected." lightbox="media/sample-revenue-opportunities/power-bi-select-product.png":::
 
-Back at **Opportunity Count by Region**, right-click. From the context menu, select **Drill through** > **Detail**. The report opens the **Detail** page for the data that you're examining.
+Right-click **Opportunity Count by Region**. From the context menu, select **Drill through** > **Detail**. The report opens the **Detail** page for the data that you're examining.
 
-:::image type="content" source="media/sample-revenue-opportunities/power-bi-detail.png" alt-text="Screenshot shows detail view that contains numbers reflecting the selected values." lightbox="media/sample-revenue-opportunities/power-bi-detail.png":::
+:::image type="content" source="media/sample-revenue-opportunities/power-bi-detail.png" alt-text="Screenshot shows the detail view that contains numbers reflecting the selected values." lightbox="media/sample-revenue-opportunities/power-bi-detail.png":::
 
 Select the **Opportunity Overview** page to return to that report page. In **Opportunity Count by Region**, right-click. Select **Drill up** to see all regions again.
 
@@ -148,11 +137,11 @@ A dashboard offers the ability to ask questions about data in natural language t
 
 1. Select *what is the revenue by state*. The Dashboard creates a bar chart.
 
-   :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state-bar-chart" alt-text="Screenshot shows a bar char that the dashboard created based on the question." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state-bar-chart":::
+   :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state-bar-chart.png" alt-text="Screenshot shows a bar chart that the dashboard created based on the question." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state-bar-chart.png":::
 
-1. Perhaps a bar chart isn't the best way to present this information. Under **Visualizations**, you can select from a variety of options. This is a pie chart.
+1. You might want a different way to present this information than a bar chart. Under **Visualizations**, you can select from various options. This visual is a pie chart.
 
-   :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state-pie-chart" alt-text="Screenshot shows a bar char that the dashboard created based on the question." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state-pie-chart":::
+   :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state-pie-chart.png" alt-text="Screenshot shows a pie chart that the dashboard created based on the question." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state-pie-chart.png":::
 
    Try out some other visualizations. Find a visualization that presents your data in the best way for your purposes. For more information about visualizations, see [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
@@ -166,4 +155,4 @@ You can save it to this current dashboard or create a new dashboard for it, as y
 
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
-We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn. Connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started creating in the Power BI service](../fundamentals/service-get-started.md).
+We hope this tour has shown how Power BI dashboards and reports can provide insights into sample data. Now it's your turn. Connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started creating in the Power BI service](../fundamentals/service-get-started.md).
