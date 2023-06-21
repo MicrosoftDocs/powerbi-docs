@@ -7,10 +7,13 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/28/2023
+ms.date: 06/21/2023
 LocalizationGroup: Samples
 ---
 # Human Resources sample for Power BI: Take a tour
+
+> [!NOTE]
+> For an updated version of this sample, see [Employee Hiring and History: Take a tour](sample-employee-hiring-history.md).
 
 The Human Resources built-in sample contains a dashboard, report, and dataset for a human resources department. In this sample, the human resources department has the same reporting model across different companies, even when they differ by industry or size. This sample looks at new hires, active employees, and employees who have left. It strives to uncover any trends in the hiring strategy. The main objectives are to understand:
 
