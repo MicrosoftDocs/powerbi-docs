@@ -3,12 +3,12 @@ title: Use on-object interaction with visuals in your report (preview)
 description: Learn how to use on-object interaction in a report in Power BI Desktop.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ''
+ms.reviewer: 'rolevass'
 ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/19/2023
+ms.date: 06/21/2023
 LocalizationGroup: Visualizations
 ---
 # Use on-object interaction with visuals in your report (preview)
@@ -94,11 +94,33 @@ You can edit labels and titles on visuals directly. Double-click the label youâ€
 > [!NOTE]
 > If you set the title or label by conditional formatting, it's possible to override the text with this new feature. It's a known issue we're working to block, and warn users that dynamic text takes precedence.
 
+## Format colors
+
+In the **Format** pane > **Colors**, select the color you want to use. You can also choose to use **Conditional formatting** to color visual elements.
+
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-format-color.png" alt-text="Screenshot showing Select a color.":::
+
 ### Selecting overlapping elements
 
 When selecting an element that's very close or overlapping another, Power BI takes the best guess at your selection. If the selection is incorrect, right-click and use the dropdown menu to change your selection to the element youâ€™d like to format.
 
 :::image type="content" source="media/power-bi-on-object-interaction/select-overlapping-elements.png" alt-text="Screenshot showing selecting overlapping elements.":::
+
+## Attach the build menu to the pane switcher
+
+- Select the drop-down arrow on the **Build a visual** pane > **Move to pane switcher**.
+
+    :::image type="content" source="media/power-bi-on-object-interaction/build-visual-move-switcher.png" alt-text="Screenshot showing Move to pane switcher.":::
+
+- On the **View** ribbon, select **Move Build a visual to pane switcher**.
+
+    :::image type="content" source="media/power-bi-on-object-interaction/view-menu-move-switcher.png" alt-text="Screenshot showing View menu, move to pane switcher.":::
+
+- On the **File** menu, select **Options and settings** > **Options** > **Report settings**. Select **Always show Build a visual menu in the pane switcher**.
+
+    :::image type="content" source="media/power-bi-on-object-interaction/options-menu-show-pane-switcher.png" alt-text="Screenshot showing Options menu, Always show Build a visual.":::
+
+With the **View** ribbon and the **Options** dialog, you can choose to **Always show the pane switcher**.
 
 ## Limitations and known issues
 
