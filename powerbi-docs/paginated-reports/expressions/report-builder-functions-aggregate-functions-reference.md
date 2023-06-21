@@ -111,7 +111,7 @@ The following table summarizes restrictions on which aggregates functions can sp
 | Previous | Yes | Yes | Yes | No | Yes | No | Yes | No |
 | Sum and other Presort functions | No | No | No | No | Yes | No | Yes | No |
 | ReportItem aggregates | No | No | No | No | No | No | No | No |
-| Lookup functions | Yes | Yes<br /><br />Note 1 | Yes<br /><br />Note 1 | Yes<sup>1</sup> | Yes<sup>1</sup> | Yes<sup>1</sup> | No | No |
+| Lookup functions | Yes | Yes<sup>1</sup> | Yes<sup>1</sup> | Yes<sup>1</sup> | Yes<sup>1</sup> | Yes<sup>1</sup> | No | No |
 | Aggregate Function | No | No | No | No | No | No | No | No |
 
 <sup>1</sup> Aggregate functions are only allowed inside the *Source* expression of a Lookup function if the Lookup function is not contained in an aggregate. Aggregate functions are not allowed inside the *Destination* or *Result* expressions of a Lookup function.
