@@ -12,13 +12,15 @@ LocalizationGroup: Samples
 ---
 # Employee Hiring and History sample for Power BI: Take a tour
 
-The Employee Hiring and History built-in sample contains a report and dataset for a human resources department. In this sample, the human resources department has the same reporting model across different companies, even when they differ by industry or size. This sample looks at new hires, active employees, and employees who have left. It strives to uncover any trends in the hiring strategy. The main objectives are to understand:
+The Employee Hiring and History built-in sample contains a report and dataset for a human resources department.
+
+:::image type="content" source="media/sample-employee-hiring-history/power-bi-employee-dashboard.png" alt-text="Screenshot shows a dashboard for the Employee Hiring and History sample." lightbox="media/sample-employee-hiring-history/power-bi-employee-dashboard.png":::
+
+Human resources departments have the same reporting model across different companies, even when they differ by industry or size. This sample looks at new hires, active employees, and employees who have left. It strives to uncover any trends in the hiring strategy. The main objectives are to understand:
 
 - Who you hire
 - Biases in your hiring strategy
 - Trends in voluntary separations
-
-:::image type="content" source="media/sample-employee-hiring-history/power-bi-employee-dashboard.png" alt-text="Screenshot shows a dashboard for the Employee Hiring and History sample." lightbox="media/sample-employee-hiring-history/power-bi-employee-dashboard.png":::
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created samples using real, anonymized data. The data is available in several formats: built-in sample in the Power BI service and *.pbix* Power BI Desktop file. See [Samples for Power BI](sample-datasets.md).
 
@@ -195,7 +197,7 @@ For more information, see [Create tooltips based on report pages](desktop-toolti
 
 ## Create an Employee Hiring and History dashboard
 
-A Power BI *dashboard* is a single page containing visualizations that can come from one or more reports, and each report is based on one dataset. You can also generate visualizations on the dashboard by using the Q&A *Ask a question about your data* feature to explore the data associated with a report. Think of a dashboard as an entryway into the underlying reports and datasets. Select a visualization to take you to the report that was used to create it.
+A Power BI *dashboard* is a single page that contains visualizations that can come from one or more reports, and each report is based on one dataset. You can also generate visualizations on the dashboard by using the Q&A *Ask a question about your data* feature to explore the data associated with a report. Think of a dashboard as an entryway into the underlying reports and datasets. Select a visualization to take you to the report that was used to create it.
 
 To create a dashboard in the Power BI service:
 
