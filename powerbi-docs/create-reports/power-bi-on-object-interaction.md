@@ -68,7 +68,7 @@ You can also change the type of a visual. Select the visual, and in the ribbon v
 
 :::image type="content" source="media/power-bi-on-object-interaction/on-object-ribbon-visualization-gallery.png" alt-text="Screenshot showing changing the visualization type.":::
 
-## Format a visual on object
+## Format a visual on-object
 
 The default behavior when you hover over a visual is to see tooltips, and clicking around a visual, you get the cross-highlight and cross-filter effect. To avoid conflicting with this existing behavior, we introduced a new *format* mode. When you're in format mode, the hover and click behavior changes to show subselection regions.  
 
@@ -94,7 +94,7 @@ You can edit labels and titles on visuals directly. Double-click the label youâ€
 > [!NOTE]
 > If you set the title or label by conditional formatting, it's possible to override the text with this new feature. It's a known issue we're working to block, and warn users that dynamic text takes precedence.
 
-## Format colors
+### Format colors
 
 In the **Format** pane > **Colors**, select the color you want to use. You can also choose to use **Conditional formatting** to color visual elements.
 
