@@ -45,7 +45,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
 1. Select the sample. It opens the report in Reading mode.
 
-   Power BI imports the built-in sample, adding a report and a dataset to your current workspace.
+   Power BI imports the built-in sample, adding a report and a dataset to your **My workspace**.
 
 ### Get the .pbix file for this sample
 
