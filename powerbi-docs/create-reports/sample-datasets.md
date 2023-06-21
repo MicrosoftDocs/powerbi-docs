@@ -51,7 +51,7 @@ There are revised versions of the original samples. These new versions take the 
 
 - Corporate Spend. Take a tour of the [Corporate Spend](sample-corporate-spend.md) sample.
 - Employee Hiring and History. Take a tour of the [Employee Hiring and History](sample-employee-hiring-history.md) sample.
-- Revenue Opportunities
+- Revenue Opportunities. Take a tour of the [Revenue Opportunities](sample-revenue-opportunities.md) sample.
 - Store Sales
 - Competitive marketing Analysis
 - Regional Sales Sample
@@ -117,11 +117,13 @@ In this industry sample, analyze the planned versus actual costs of the IT depar
 
 [Take a tour of the previous version of the sample](sample-it-spend.md)
 
-### Opportunity Analysis sample
+### Opportunity Analysis / Revenue Opportunities sample
 
-[Take a tour of the Opportunity Analysis sample](sample-opportunity-analysis.md)
+[Take a tour of the Revenue  sample](sample-revenue-opportunities.md)
 
 This industry sample explores a software company's sales channel. Sales managers monitor their direct and partner sales channels by tracking opportunities and revenue by region, deal size, and channel.
+
+[Take a tour of the previous version of the sample](sample-opportunity-analysis.md)
 
 ### Procurement Analysis sample
 
@@ -190,6 +192,7 @@ Several of the original built-in samples now have updated versions and these sam
 
    - [Corporate Spend](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Corporate%20Spend.pbix)
    - [Employee Hiring and History](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Employee%20Hiring%20and%20History.pbix)
+   - [Revenue Opportunities sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Revenue%20Opportunities.pbix)
 
    Original samples:
 

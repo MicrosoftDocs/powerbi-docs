@@ -69,65 +69,13 @@ If you'd like to view it in the Power BI service, you can publish it there.
 
    Power BI imports the sample, adding the report and dataset to your selected workspace.
 
-## Explore the pages in the report
+## Explore the report
 
-To open the Corporate Spend report, go to your workspace and select the **Revenue Opportunities** report.
+To open the Revenue Opportunities report, go to your workspace and select the **Revenue Opportunities** report.
 
 :::image type="content" source="media/sample-revenue-opportunities/power-bi-select-report.png" alt-text="Screenshot shows the Revenue Opportunities sample report and dataset links.":::
 
-### Opportunity Count Overview page
-
-:::image type="content" source="media/sample-revenue-opportunities/opportunity-3.png" alt-text="Screenshot that shows the Opportunity Count Overview page." lightbox="media/sample-revenue-opportunities/opportunity-3.png":::
-
-Note the following details:
-
-- East is our biggest region in terms of opportunity counts.  
-- On the **Opportunity Count by Region** pie chart, select each region in turn to filter the page by region. For each region, notice that partners are pursuing significantly more large opportunities.
-- The **Opportunity Count by Partner Driven and Opportunity Size** column chart shows that most of the large opportunities are partner driven, while most of the small and medium opportunities aren't.
-- In the **Opportunity Count by Sales Stage** bar chart, select each **Sales Stage** in turn to see the difference in regional count. Notice that although the East region has the largest opportunity count, all three regions in the Solution, Proposal, and Finalize sales stages have comparable counts. This result means we close a higher percent of deals in the Central and West regions.
-
-### Revenue Analysis page
-
-This page takes a similar look at the data, but uses a revenue perspective instead of count.  
-
-:::image type="content" source="media/sample-revenue-opportunities/opportunity-4.png" alt-text="Screenshot that shows the Revenue Overview page." lightbox="media/sample-revenue-opportunities/opportunity-4.png":::
-
-Note the following details:
-
-- East is our biggest region, not only in opportunity count but also in revenue.  
-- If you filter the **Revenue by Sales Stage and Partner Driven** chart by selecting **Yes** for **Partner Driven**, you see a revenue of \\$1.5 billion and a factored revenue of \\$294 million. Compare these amounts to \\$644 million and \\$166 million for nonpartner driven revenue.
-- Average revenue for large accounts is larger at \\$8 million if the opportunity is partner driven, compared to \\$6 million for nonpartner driven business.  
-- For partner driven businesses, average revenue for large-sized opportunities is almost double that of medium-sized opportunities.  
-- Average revenue for small and medium businesses is comparable for both partner driven and nonpartner driven business.
-
-Clearly our partners are doing a better job than nonpartners selling to customers. It might make sense to funnel more deals through our partners.
-
-### Opportunity Count by Region and Stage
-
-This page of the report looks at data similar to the data on the previous page but breaks it down by region and stage.
-
-:::image type="content" source="media/sample-revenue-opportunities/opportunity-5.png" alt-text="Screenshot that shows the Opportunity Count by Region and Stage." lightbox="media/sample-revenue-opportunities/opportunity-5.png":::
-
-Note the following details:
-
-- If you select **East** in the **Opportunity Count by Region** pie chart to filter by the East region, you see that the opportunities in this region are split almost equally between partner driven and nonpartner driven.
-- Large opportunities are most common in the Central region, small opportunities are most common in the East region, and medium opportunities are most common in the West region.
-
-### Upcoming Opportunities by Month page
-
-This page looks at similar factors, but from a date and time perspective.
-
-:::image type="content" source="media/sample-revenue-opportunities/opportunity-6.png" alt-text="Screenshot that shows Upcoming Opportunities." lightbox="media/sample-revenue-opportunities/opportunity-6.png":::
-
-Our CFO uses this page to manage workload. By looking at the revenue opportunities by sales stage and month, they can plan accordingly.
-
-Note the following details:
-
-- Average revenue for the Finalize sales stage is the highest. Closing these deals is a top priority.
-- If you filter by month (by selecting a month in the **Month** slicer), you see that January has a high proportion of large deals in the Finalize sales stage with a factored revenue of $75 million. February, on the other hand, has mostly medium deals in the Solution and Proposal sales stages.
-- In general, the factored revenue numbers fluctuate based on sales stage, number of opportunities, and deal size. Add filters for these factors by using the **Filter** pane on the right to discover further insights.
-
-## Edit the report
+You can edit current visualizations and create your own visualizations that use the dataset for this sample. This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
 Select **Edit** in the **Power BI** header bar to explore in the editing view:
 
@@ -135,6 +83,34 @@ Select **Edit** in the **Power BI** header bar to explore in the editing view:
 - Add pages and charts, based on the same data.
 - Change the visualization type for each chart.
 - Pin charts of interest to your dashboard.
+
+Save or discard your changes.
+
+### Opportunity Overview page
+
+The Opportunity Overview page of the report has two card visualizations. Card visualizations display a single number, in this case, the value for **Opportunity Revenue** and **Opportunity Count**.
+
+:::image type="content" source="media/sample-revenue-opportunities/power-bi-card-visual.png" alt-text="Screenshot shows two card visualizations that present data from the dataset.":::
+
+Below those cards is a treemap visualization of the **Opportunity Count by Region**. Right-click the **East** region. In the context menu, select **Drill down**.
+
+:::image type="content" source="media/sample-revenue-opportunities/power-bi-drill-down.png" alt-text="Screenshot shows the drilled down data of the region visualization." lightbox="media/sample-revenue-opportunities/power-bi-drill-down.png":::
+
+The visualization now shows the component areas that make up East region. The other visualizations now reflect only the East region.
+
+Now select a product from the **Product Code** selector.
+
+:::image type="content" source="media/sample-revenue-opportunities/power-bi-select-product.png" alt-text="Screenshot shows report page with a particular product code selected." lighthbox="media/sample-revenue-opportunities/power-bi-select-product.png lightbox.png":::
+
+Back at **Opportunity Count by Region**, right-click. From the context menu, select **Drill through** > **Detail**. The report opens the **Detail** page for the data that you're examining.
+
+:::image type="content" source="media/sample-revenue-opportunities/power-bi-detail.png" alt-text="Screenshot shows detail view that contains numbers reflecting the selected values." lightbox="media/sample-revenue-opportunities/power-bi-detail.png":::
+
+Select the **Opportunity Overview** page to return to that report page. In **Opportunity Count by Region**, right-click. Select **Drill up** to see all regions again.
+
+You can select a field in any visualization to view that data for that selection in all the visualizations.
+
+Hover over any field to see the details of that field as a *tooltip*. A Power BI report provides a default value for tooltips. You can add any value to the tooltips for a visualization. For more information, see [Customize tooltips in Power BI](desktop-custom-tooltips.md).
 
 ## Create a Revenue Opportunities dashboard
 
@@ -162,26 +138,29 @@ Your new dashboard now appears in **My workspace**.
 
 For more information, see [Introduction to dashboards for Power BI designers](service-dashboards.md).
 
+### Create new dashboard visualizations
 
-### What's the dashboard telling us?
+A dashboard offers the ability to ask questions about data in natural language to create visuals. It doesn't matter how you create your dashboard or which tiles it has. You can ask questions about any dataset attached to your dashboard.
 
-With the [built-in sample in the Power BI service](#get-the-built-in-sample), you have a report and a dashboard. Let's start the tour at the dashboard that the sales manager has created to track those metrics most important to them. When they see something interesting, they can select a tile to look into the data:
+1. In the dashboard, select **Ask a question about your data**. Power BI suggests several questions as starting points.
 
-- Company revenue is \\$2 billion and factored revenue is \\$461 million.
-- Opportunity count and revenue follow a familiar funnel pattern, with totals decreasing with each subsequent stage.
-- Most of our opportunities are in the East region.
-- Large opportunities generate more revenue than medium or small opportunities.
-- Large partner deals generate more revenue: \\$8 million on average versus \\$6 million for direct sales.
+   :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state.png" alt-text="Screenshot shows suggestions to choose to query the data." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state.png":::
 
-Because the effort to land a deal is the same whether the deal is classified as large, medium, or small, our company should analyze the data to learn more about large opportunities.
+1. Select *what is the revenue by state*. The Dashboard creates a bar chart.
 
-1. In the Power BI service, find the workspace where you saved the sample, then select the **Revenue Opportunities Sample** dashboard.
+   :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state-bar-chart" alt-text="Screenshot shows a bar char that the dashboard created based on the question." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state-bar-chart":::
 
-    If you're using Power BI Desktop, open the *.pbix file* and select the **Opportunity Count** tab.
+1. Perhaps a bar chart isn't the best way to present this information. Under **Visualizations**, you can select from a variety of options. This is a pie chart.
 
-2. Select the **Opportunity Count by Partner Driven, Sales Stage** tile to open the first page of the Revenue Opportunities Sample report.
+   :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state-pie-chart" alt-text="Screenshot shows a bar char that the dashboard created based on the question." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state-pie-chart":::
 
-    :::image type="content" source="media/sample-revenue-opportunities/opportunity-2.png" alt-text="Screenshot that shows the tile for Opportunity Count by Partner Driven, Sales Stage.":::
+   Try out some other visualizations. Find a visualization that presents your data in the best way for your purposes. For more information about visualizations, see [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+
+1. To save your visualization to a dashboard, select **Pin visual**.
+
+   :::image type="content" source="media/sample-revenue-opportunities/power-bi-pin-visual.png" alt-text="Screenshot shows the Pin visual option to add your new visualization to a dashboard.":::
+
+You can save it to this current dashboard or create a new dashboard for it, as you did in the previous section.
 
 ## Next steps
 
