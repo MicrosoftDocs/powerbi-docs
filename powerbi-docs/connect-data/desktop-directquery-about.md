@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 06/05/2023
+ms.date: 06/21/2023
 LocalizationGroup: Connect to data
 ---
 # DirectQuery in Power BI
@@ -524,4 +524,4 @@ This article described aspects of DirectQuery that are common across all data so
 
 - [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
 - [DirectQuery and SAP BW](desktop-directquery-sap-bw.md)
-- [Use DirectQuery for Power BI datasets and Analysis Services (preview)](desktop-directquery-datasets-azure-analysis-services.md)
+- [Use DirectQuery for Power BI datasets and Analysis Services](desktop-directquery-datasets-azure-analysis-services.md)
