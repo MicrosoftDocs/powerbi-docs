@@ -6,7 +6,7 @@ ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.custom: tenant-setting
+ms.custom: tenant-setting, fabric
 ms.topic: how-to
 ms.date: 04/04/2023
 LocalizationGroup: Administration

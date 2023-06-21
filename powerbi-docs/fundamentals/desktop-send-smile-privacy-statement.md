@@ -54,7 +54,7 @@ Microsoft might access or disclose information about you, including the content 
 - Protect the rights or property of Microsoft or our customers, including the enforcement of our agreements or policies governing your use of the services.
 - Act on a good faith belief that such access or disclosure is necessary to protect the personal safety of Microsoft employees, customers, or the public.
 
-Information collected by or sent to Microsoft by *Send a Smile* might be stored and processed in the United States or any other country in which Microsoft or its affiliates, subsidiaries, or service providers maintain facilities. Microsoft abides by the Safe Harbor Framework as set forth by the United States Department of Commerce regarding the collection, use, and retention of data from the European Union.
+Information collected by or sent to Microsoft by *Send a Smile* might be stored and processed in the United States or any other country/region in which Microsoft or its affiliates, subsidiaries, or service providers maintain facilities. Microsoft abides by the Safe Harbor Framework as set forth by the United States Department of Commerce regarding the collection, use, and retention of data from the European Union.
 
 ## Security of your information
 

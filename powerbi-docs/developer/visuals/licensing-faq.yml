@@ -184,7 +184,7 @@ sections:
           If the owner wasn't an admin, the license will continue to work as long as the subscription is active. However, the subscription can't be managed by anyone else.
           
       - question: |
-          We're a global team. Can we assign licenses to someone working in another country?
+          We're a global team. Can we assign licenses to someone working in another country/region?
         answer: |
           You can assign licenses to users in the same tenant that you purchased subscription under regardless of the location.
 

@@ -9,7 +9,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Workspaces in Power BI, Get started with workspaces
 ms.topic: conceptual
 ms.date: 03/13/2023
-ms.custom: contperf-fy20q4
+ms.custom: fabric
 LocalizationGroup: Share your work
 ---
 

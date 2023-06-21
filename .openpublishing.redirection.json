@@ -1535,6 +1535,66 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/paginated-reports/report-builder/report-builder-functions-previous-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-previous-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder/report-builder-functions-multilookup-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-multilookup-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder/report-builder-functions-max-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-max-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder/report-builder-functions-last-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-last-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-design/report-builder-functions-first-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-first-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-design/report-builder-functions-countrows-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-countrows-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-design/report-builder-functions-countdistinct-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-countdistinct-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder/report-builder-functions-avg-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-avg-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-design/expression-uses-reports-report-builder.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/expression-uses-reports-report-builder",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder-expressions.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-expressions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder-expression-examples.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-expression-examples",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-design/built-in-collections-report-group-variables-references-report-builder.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/built-in-collections-report-group-variables-references-report-builder",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/developer/overview-of-power-bi-rest-api.md",
             "redirect_url": "/power-bi/developer/automation/overview-of-power-bi-rest-api",
             "redirect_document_id": false
