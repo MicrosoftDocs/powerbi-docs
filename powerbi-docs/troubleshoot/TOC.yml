@@ -9,6 +9,8 @@
       href: known-issues/power-bi-known-issues.md
     - name: Active known issues for Power BI and Fabric - interactive report
       href: https://support.fabric.microsoft.com/known-issues
+    - name: Newly added content in organizational app doesn't show in first load
+      href: known-issues/known-issue-430-newly-added-content-org-app-doesnt-show.md
     - name: Tenant Settings show as keys instead of descriptions
       href: known-issues/known-issue-407-tenant-settings-show-keys-descriptions.md
     - name: Upload from SharePoint/OneDrive For Business greyed out
