@@ -54,7 +54,7 @@ When you hide a group, all visuals within that group are hidden, indicated by th
 There are a few ways to navigate and select items within a group of visuals. The following list describes the behavior:
 
 * When you select an empty space within a group, such as white space between visuals, it doesn't select anything.
-* When you select a visual within a group selects the entire group, a second click selects the individual visual.
+* When you select a visual within a group, it selects the entire group. A second click selects the individual visual.
 * When you select a group, select another object on the report canvas, then right-click and select **Group**, you create a nested group.
 * When you select two groups, then right-click, it displays an option to merge the selected groups, rather than nesting them.
 
