@@ -22,7 +22,7 @@ The location selected during sign-up determines your default data region. Howeve
 
 ## Prerequisites
 
-- The person who requests the data region move must be assigned the global administrator role. You can learn more about the different admin roles and what they can do in [Understanding Power BI administrator roles](../admin/service-admin-role.md). We can't help identify your global administrator for you. Look for global administrator role holders in Microsoft 365 or Azure Active Directory or ask your help desk.
+- The person who requests the data region move must be assigned the global administrator role. You can learn more about the different admin roles and what they can do in [Understanding Power BI administration roles](../admin/service-admin-role.md). We can't help identify your global administrator for you. Look for global administrator role holders in Microsoft 365 or Azure Active Directory or ask your help desk.
 - We must receive written approval confirming your awareness and agreement of the effect of the tenant migration on your organization.
 - Provide a point of contact for after business hours during the migration.
 
@@ -70,7 +70,7 @@ To find out the best way to contact support, read [Power BI support options](ser
 
 1. Go to [Power Platform Admin Center Help + support](https://admin.powerplatform.microsoft.com/support) and sign in using admin credentials.
 1. Select **New support request**, then select the following options to request a region move:
-   - Product: Power BI Pro
+   - Product: Power BI
    - Tell us what you need help with: Move to a different region
    - Problem type: Administration
    - Problem Subtype: Tenant Management

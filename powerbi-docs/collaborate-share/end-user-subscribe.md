@@ -36,7 +36,7 @@ Your Power BI admin also needs to enable subscriptions in your tenant. If you’
 
 
 ## Subscribe to a report or dashboard
-Whether you're subscribing to a dashboard or to a report page, the process is similar. A single button allows you to subscribe to the Power BI service dashboards and reports. Subscribing to a report offers you a few more field options, so we'll use a report for our example. 
+Whether you're subscribing to a dashboard or to a report page, the process is similar. A single button allows you to subscribe to the Power BI service dashboards and reports. Subscribing to a report offers you a few more field options, so we use a report for our example. 
 
 :::image type="content" source="./media/end-user-subscribe/power-bi-subscribe.png" alt-text="Screenshot showing the Subscribe to report icon on the top menu bar.":::
 
@@ -221,7 +221,7 @@ To see all of your subscriptions, start by selecting **My workspace** to make it
 
 :::image type="content" source="media/end-user-subscribe/power-bi-my-workspace.png" alt-text="Screenshot showing all subscriptions for a user.":::
 
-From here, you'll see a list of all your subscriptions across all workspaces. Power BI displays the name of the subscription, the name of the associated workspace, the name of the content you're subscribing to, and the content type. If you selected **Include my changes**, the **State** column includes the date. Search for subscriptions by keyword or filter by any of these fields. Select **Edit** to make changes to a subscription’s settings. 
+From here, you see a list of all your subscriptions across all workspaces. Power BI displays the name of the subscription, the name of the associated workspace, the name of the content you're subscribing to, and the content type. If you selected **Include my changes**, the **State** column includes the date. Search for subscriptions by keyword or filter by any of these fields. Select **Edit** to make changes to a subscription’s settings. 
 
 Alternately, another way to see all of your subscriptions across all workspaces is to open the **Subscriptions** pane from a dashboard or report in **My workspace**, and select **Manage all subscriptions**.   
 

@@ -1,6 +1,6 @@
 ---
 title: Known issue - Newly added content in organizational app doesn't show in first load
-description: A known issue is posted where newly added content in organizational app doesn't show in first load
+description: A known issue is posted where newly added content in an organizational app doesn't show in first load.
 author: mihart
 ms.author: mihart
 ms.topic: troubleshooting  
@@ -10,7 +10,7 @@ ms.date: 06/20/2023
 ms.custom: known-issue-430
 ---
 
-# Known issue - Newly added content in Organizational App doesn't show in first load
+# Known issue - Newly added content in Organizational app doesn't show in first load
 
 When an organizational app author updates an app by adding new content, it doesn't show up immediately after publish. Refresh the app for a second time to see the newly added content.
 
@@ -18,7 +18,7 @@ When an organizational app author updates an app by adding new content, it doesn
 
 **Status:** Open
 
-**Problem area:** Share and Collaborate
+**Problem area:** Share and collaborate
 
 ## Symptoms
 

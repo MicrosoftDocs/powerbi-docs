@@ -19,7 +19,7 @@ LocalizationGroup: Administration
 
 The admin portal includes settings that govern Power BI for all users in your organization. For example, you can view usage metrics, access the Microsoft 365 admin center, and control how users interact with Power BI.
 
-The full admin portal can be accessed by global admins and users who have the Fabric administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Fabric administrator role, see [Understanding Power BI adminitration roles](service-admin-role.md).
+The full admin portal can be accessed by global admins and users who have the Fabric administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Fabric administrator role, see [Understanding Power BI administration roles](service-admin-role.md).
 
 ## What can I do in the admin portal
 
