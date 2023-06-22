@@ -11,6 +11,7 @@ ms.date: 08/08/2022
 ms.custom: sample-sales-and-marketing, sample-sales-and-returns
 LocalizationGroup: Create reports
 ---
+
 # Group visuals in Power BI Desktop reports
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
@@ -67,6 +68,9 @@ Once you apply a background color, clicking on the space between visuals in the 
 
 
 ## Next steps
+- Grouping is only available with the modern visual header style. Please ensure Options > Current file > Report settings > Visual options > "Use the modern visual header with updated styling options" setting is checked to use grouping.
+
+## Next steps
 For more information about grouping, take a look at the following video:
 
 * [Grouping in Power BI Desktop - video](https://youtu.be/sf4n7VXoQHY?t=10)
@@ -75,3 +79,5 @@ You might also be interested in the following articles:
 
 * [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
 * [Using slicers Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
+
+
