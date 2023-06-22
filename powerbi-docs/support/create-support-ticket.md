@@ -5,7 +5,7 @@
 
 title:       How to create a Fabric and Power BI Support ticket
 description: Creating a support ticket for Fabric and Power BI
-author:      royrubinstein # GitHub alias
+author:      royrubinstein
 ms.author:    mihart
 ms.service:  powerbi
 # ms.prod:   # To use ms.prod, uncomment it and delete ms.service
@@ -16,9 +16,6 @@ ms.date:     06/14/2023
 # Create a support ticket
 
 Before creating a support ticket, get real-time help by using the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/support) (admins roles only) or the [Fabric Support Page](https://support.fabric.microsoft.com/en-US/support). If the issue can't be resolved through self-help, create a support ticket.
-
-The image shows an example for a Power BI dataset refresh issue:  
-![Screenshot of a user's refresh issue.](media/Create-support-ticket/image.png)
 
 ## Prerequisites
 
@@ -103,7 +100,7 @@ The steps you take to create a support ticket vary, depending on your role.
 
 ### For Fabric users and Power BI Pro users
 
-1. On the [abric Support page](https://support.fabric.microsoft.com/en-US/support), select the product you're experiencing an issue with.
+1. On the [Fabric Support page](https://support.fabric.microsoft.com/en-US/support), review the status dashboard, outage/degradation and **Awareness** fields, and **Known issues** to ensure that your issue is not already known. Then, scroll down to **Create a support request** and select the product you're experiencing an issue with.
 
    ![Support page product selection.](media/Create-support-ticket/support-page-product-selection.png)
 
@@ -111,7 +108,7 @@ The steps you take to create a support ticket vary, depending on your role.
 
    ![Iframe issue description.](media/Create-support-ticket/iframe-issue-description.png)
 
-3. If no solution is found, select the problem type and subtype and then choose **See solutions**. For some problem type and subtype selections, you're asked to provide additional information.
+3. If no solution is found, select the problem type and subtype and then choose **Get solutions**. For some problem type and subtype selections, you're asked to provide additional information.
 
    ![iframe ST selection.](media/Create-support-ticket/iframe-st-selection1.png)
 
