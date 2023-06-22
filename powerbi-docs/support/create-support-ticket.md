@@ -79,7 +79,7 @@ The steps you take to create a support ticket vary, depending on your role.
 
    ![Screenshot showing ST selection.](media/Create-support-ticket/st-selection.png)
 
-6. Based on the information you provide, you see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix.
+6. Based on the information you provide, PPAC presents you with a list of possible solutions to your issue. Select the relevant solution and determine if the content can successfully guide you to a fix.
 
    ![Screenshot of suggested olutions.](media/Create-support-ticket/solutions-and-contact-support.png)
 
