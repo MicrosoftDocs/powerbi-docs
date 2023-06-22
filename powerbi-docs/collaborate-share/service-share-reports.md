@@ -22,7 +22,7 @@ You can share the filtered report in several different ways:
 * [Chat in Teams](#share-a-report-in-teams)
 * [Share an individual visual](#share-a-visual)
 * [Direct access sharing](#share-directly)
-* [PowerPoint, via the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
+* [PowerPoint, via the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
 
 In every case, the report is filtered when recipients first open it. They can clear the filter selections in the report. In this example, we're filtering the report page to show only values where **Business Area** equals **Distribution**, **Infrastructure**, or **Manufacturing**.
 
@@ -52,10 +52,10 @@ Power BI also offers [other ways to collaborate and distribute your reports](ser
     
 ## Share a visual 
 
-You can also share individual visuals, or embed them in a PowerPoint presentation via the [Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-about.md).
+You can also share individual visuals.
 
 1. Open a report in [Reading view](../consumer/end-user-reading-view.md) and apply a filter.
-1. Right-click a visual, then select **Share > Link to this visual**. If you're embedding the visual in PowerPoint, you could alternatively select **Open in PowerPoint**.
+1. Right-click a visual, then select **Share > Link to this visual**.
 
     :::image type="content" source="./media/service-share-reports/power-bi-share-visual-menu-link-to-selection.png" alt-text="Screenshot showing Visual right-click menu with Share submenu expanded.":::
  
@@ -66,6 +66,10 @@ You can also share individual visuals, or embed them in a PowerPoint presentatio
 1. In the **Link copied** dialog, select **Copy** for the provided link.
 
     ![Screenshot showing Share visual link copied dialog.](media/service-share-reports/power-bi-share-visual-dialog-link-copied.png)
+
+## Share a report or visual in PowerPoint
+
+You can share live, filtered report pages or visuals by adding them to a PowerPoint presentation and then sharing it with colleagues. For more information, see [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md).
 
 ## Share directly
 
