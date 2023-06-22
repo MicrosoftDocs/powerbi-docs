@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 10/31/2022
+ms.date: 06/22/2023
 LocalizationGroup: Share your work
 ---
 # Share a filtered Power BI report
@@ -51,12 +51,12 @@ Power BI also offers [other ways to collaborate and distribute your reports](ser
     
 ## Share a visual 
 
-You can also share individual visuals.
+You can also share individual visuals, or embed them in a PowerPoint presentation via the [Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-about.md).
 
 1. Open a report in [Reading view](../consumer/end-user-reading-view.md) and apply a filter.
-1. Right-click a visual, then select **Share > Link to selection**.
+1. Right-click a visual, then select **Share > Link to this visual**. If you are embedding the visual in PowerPoint, you could alternatively select **Open in PowerPoint**.
 
-    ![Screenshot showing Visual right-click menu with Share submenu expanded.](media/service-share-reports/power-bi-share-visual-menu-link-to-selection.png)
+    :::image type="content" source="./media/service-share-reports/power-bi-share-visual-menu-link-to-selection.png" alt-text="Screenshot showing Visual right-click menu with Share submenu expanded.":::
  
 1. In the **Copy link** dialog, select **Copy**.
 
@@ -118,7 +118,7 @@ Things to keep in mind about sharing reports:
 * When you share a dataset by managing permissions, by sharing reports or dashboards, or by publishing an app, you're granting access to the entire dataset unless [row-level security (RLS)](../enterprise/service-admin-rls.md) limits access. Report authors may use capabilities that customize user experiences when viewing or interacting with reports, for example hiding columns, limiting the actions on visuals, and others. These customized user experiences don't restrict what data users can access in the dataset. Use [row-level security (RLS)](../enterprise/service-admin-rls.md) in the dataset so that each person's credentials determine which data they can access.
 * The shared report view will automatically expire after 180 days. Each time the link shared report view is accessed the expiration is reset to 180 days.
 * You can't share reports that are distributed to you in an app. Ask the app owner to add the person you want to share the report with, and republish the app. 
-* Share link to selection for visuals in reports creates a shared view with the visual in spotlight mode. It isn't available in organizational apps.
+* Share link to selection for visuals in reports creates a shared view with the visual in spotlight mode.
 
 ## Next steps
 * [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
