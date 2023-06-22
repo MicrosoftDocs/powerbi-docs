@@ -59,7 +59,7 @@ If you'd like to view it in the Power BI service, you can publish it there.
 
 To open the Employee Hiring and History report, go to your workspace and select that report:
 
-:::image type="content" source="media/sample-store-sales/power-bi-select-employee-sample-report.png" alt-text="Screenshot shows My workspace with the Store Sales report highlighted.":::
+:::image type="content" source="media/sample-store-sales/power-bi-select-store-sales-sample-report.png" alt-text="Screenshot shows My workspace with the Store Sales report highlighted.":::
 
 If you're following along in Power BI Desktop, open the *.pbix* file to see the report.
 
