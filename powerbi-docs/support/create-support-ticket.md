@@ -15,7 +15,7 @@ ms.date:     06/14/2023
 
 # Create a support ticket
 
-Before creating a support ticket, get real-time help by using the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/support) (admins roles only) or the [Fabric Support Page](https://support.fabric.microsoft.com/en-US/support). If the issue can't be resolved through self-help, create a support ticket.
+Before creating a support ticket, get real-time help by using the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/support) (admin roles only) or the [Fabric Support Page](https://support.fabric.microsoft.com/en-US/support). If the issue can't be resolved through self-help, create a support ticket.
 
 ## Prerequisites
 
