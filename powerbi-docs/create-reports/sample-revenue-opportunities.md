@@ -131,11 +131,11 @@ For more information, see [Introduction to dashboards for Power BI designers](se
 
 A dashboard offers the ability to ask questions about data in natural language to create visuals. It doesn't matter how you create your dashboard or which tiles it has. You can ask questions about any dataset attached to your dashboard.
 
-1. In the dashboard, select **Ask a question about your data**. Power BI suggests several questions as starting points.
+1. In the dashboard, select **Ask a question about your data**. Power BI suggests several questions as starting points. Select *what is the revenue by state*. 
 
    :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state.png" alt-text="Screenshot shows suggestions to choose to query the data." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state.png":::
 
-1. Select *what is the revenue by state*. The Dashboard creates a bar chart.
+    The dashboard creates a bar chart.
 
    :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state-bar-chart.png" alt-text="Screenshot shows a bar chart that the dashboard created based on the question." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state-bar-chart.png":::
 
