@@ -12,7 +12,7 @@ ms.custom: known-issue-427
 
 # Known issue - Tenant admin settings may not save correctly
 
-Power BI customers may experience issues when making changes to tenant settings and saving. Upon refreshing after making admin tenant setting changes, the customer may notice that the settings never actually saved.
+You may experience issues when making changes to tenant settings and saving. When you refresh after making admin tenant setting changes, the customer may notice that the settings never saved.
 
 **APPLIES TO:** ✔️ Power BI Service
 
