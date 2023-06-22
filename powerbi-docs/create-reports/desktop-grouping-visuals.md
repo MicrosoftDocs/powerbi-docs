@@ -1,5 +1,5 @@
 ---
-title: Use grouping in Power BI Desktop
+title: Group visuals in Power BI Desktop reports
 description: Learn how to group visuals in Power BI Desktop
 author: davidiseminger
 ms.author: davidi
@@ -16,7 +16,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-With **grouping** in **Power BI Desktop**, you can group visuals together in your report, such as buttons, textboxes, shapes, images, and any visual you create, just like you group items in PowerPoint. Grouping visuals in a report lets you treat the group like a single object, making moving, resizing, and working with layers in your report easier, faster, and more intuitive.
+With *grouping* in **Power BI Desktop**, you can group visuals together in your report, such as buttons, textboxes, shapes, images, and any visual you create, just like you group items in PowerPoint. Grouping visuals in a report lets you treat the group like a single object, making moving, resizing, and working with layers in your report easier, faster, and more intuitive.
 
 ![Screenshot showing Using grouping.](media/desktop-grouping-visuals/grouping-visuals-01.png)
 
