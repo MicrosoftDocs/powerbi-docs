@@ -26,7 +26,7 @@ You downloaded [Power BI Report Server](get-started.md), and you have a SQL Serv
 > You can't use a developer product key in a production environment.
 
 ## Purchased Power BI Premium
-If you have purchased Power BI Premium, within the **Capacity settings** tab of the Power BI admin portal, you will have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Fabric administrator role.
+If you have purchased Power BI Premium, within the **Capacity settings** tab of the Power BI admin portal, you'll have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Fabric administrator role.
 
 ![Power BI Report Server key within Premium settings](media/find-product-key/pbirs-product-key.png)
 
