@@ -9,6 +9,8 @@
       href: known-issues/power-bi-known-issues.md
     - name: Active known issues for Fabric + Power BI - interactive report
       href: https://support.fabric.microsoft.com/known-issues
+    - name: Tenant admin settings may not save correctly
+      href: known-issues/known-issue-427-tenant-admin-settings-may-not-save-correctly.md
     - name: New org app content doesn't show in first load
       href: known-issues/known-issue-430-newly-added-content-org-app-doesnt-show.md
     - name: Tenant Settings show as keys instead of descriptions
