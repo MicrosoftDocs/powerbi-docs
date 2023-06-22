@@ -21,7 +21,7 @@ On-object interaction is the new way to build and format a visual, directly on t
 
 ## Turn on preview features
 
-Because on-object is a preview feature, you need to turn it on. You'll also be turning on the new Visualizations and Format pane functionality changes. See the updated [Format and Visualizations panes in Power BI](../fundamentals/desktop-format-pane.md) article for details.
+Because the on-object feature is in preview, you need to turn it on. You'll also be turning on the new Visualizations and Format pane functionality changes. See the updated [Format and Visualizations panes in Power BI](../fundamentals/desktop-format-pane.md) article for details.
 
 1. In Power BI Desktop, select **File** > **Options and settings** > **Options** > **Preview Features** > **On-object interaction**. 
 
@@ -132,10 +132,10 @@ With the **View** ribbon and the **Options** dialog, you can choose to **Always 
 - Format mode isn't currently supported in mobile layout.
 - Format mode isn't currently supported in focus mode.
 
-### Sub-selections
+### Subselections
 
 - Small multiples and analytics pane items aren't currently selectable in format mode. 
-- Sub-selection regions don't scale as expected in spotlight mode and after using zoom sliders.
+- Subselection regions don't scale as expected in spotlight mode and after using zoom sliders.
 - Reset to default might not reset direct text edit and background colors for data and category labels.
 
 ### On-object buttons
@@ -149,7 +149,7 @@ With the **View** ribbon and the **Options** dialog, you can choose to **Always 
 
 ### Custom visuals
 
-We plan to release an API for custom visual developers to be able to define sub-selection regions within their visuals.  
+We plan to release an API for custom visual developers to be able to define subselection regions within their visuals.  
 
 ### Accessibility
 
