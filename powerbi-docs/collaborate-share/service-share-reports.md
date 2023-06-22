@@ -46,7 +46,7 @@ Power BI also offers [other ways to collaborate and distribute your reports](ser
 
     ![Screenshot showing Chat in Teams in action bar.](media/service-share-reports/power-bi-chat-teams-action-bar.png)
 
-1. For the **Chat in Teams** dialog, you need provide the name of the Team or Channel that you wish to share to, then click **Share**:
+1. For the **Chat in Teams** dialog, you need provide the name of the Team or Channel that you wish to share to, then select **Share**:
 
     ![Screenshot showing Chat in teams.](media/service-share-reports/power-bi-share-teams-dialog.png)
     
@@ -55,7 +55,7 @@ Power BI also offers [other ways to collaborate and distribute your reports](ser
 You can also share individual visuals, or embed them in a PowerPoint presentation via the [Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-about.md).
 
 1. Open a report in [Reading view](../consumer/end-user-reading-view.md) and apply a filter.
-1. Right-click a visual, then select **Share > Link to this visual**. If you are embedding the visual in PowerPoint, you could alternatively select **Open in PowerPoint**.
+1. Right-click a visual, then select **Share > Link to this visual**. If you're embedding the visual in PowerPoint, you could alternatively select **Open in PowerPoint**.
 
     :::image type="content" source="./media/service-share-reports/power-bi-share-visual-menu-link-to-selection.png" alt-text="Screenshot showing Visual right-click menu with Share submenu expanded.":::
  
