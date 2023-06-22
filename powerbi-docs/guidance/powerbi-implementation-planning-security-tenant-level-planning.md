@@ -53,7 +53,7 @@ A Power BI administrator belongs to at least one of these [built-in roles](/micr
 **Checklist** - When planning for who will be a Power BI administrator, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Identify who's currently assigned the administrator role:** Verify who's assigned to one of the Power BI administrator roles: Fabric admin, Power Platform admin, and Global administrator.
+> - **Identify who's currently assigned the administrator role:** Verify who's assigned to one of the Power BI administration roles: Fabric admin, Power Platform admin, and Global administrator.
 > - **Determine who should manage the Power BI service:** If there are too many Power BI administrators, create a plan to reduce the total number. If there are users assigned as Power BI administrators who aren't well suited to such a high-privilege role, create a plan to resolve the issue.
 > - **Clarify roles and responsibilities:** For each Power BI administrator, ensure that their responsibilities are clear. Verify that appropriate cross-training has occurred.
 
