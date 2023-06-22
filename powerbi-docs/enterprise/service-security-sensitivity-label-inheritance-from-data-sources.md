@@ -32,7 +32,7 @@ To be operative, [sensitivity label inheritance from data sources must be enable
     1. [Classify your Azure SQL data using Azure Purview labels](/azure/sql-database/scripts/sql-database-import-purview-labels).
     * The scope of the labels must be **Files and emails** and **Azure Purview assets**. See [Extending sensitivity labels to Azure Purview](/azure/purview/create-sensitivity-label#extending-sensitivity-labels-to-azure-purview) and [Creating new sensitivity labels or modifying existing labels](/azure/purview/create-sensitivity-label#creating-new-sensitivity-labels-or-modifying-existing-labels).
 * [Sensitivity labels must be enabled in Power BI](service-security-enable-data-sensitivity-labels.md).
-* All conditions for applying a label must be met.
+* A Power BI Pro or Premium Per User (PPU) license is required for the user whose credentials are used to connect to the data source. In addition, [all other conditions for applying a label must be met](./service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-the-power-bi-service).
 * The **[Apply sensitivity labels from data sources to their data in Power BI (preview)](../admin/service-admin-portal-information-protection.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)** tenant admin setting must be enabled. **Note**: This requirement applies to the Power BI service only. In Desktop, a *.pbix* file will inherit the label from the data source even if the tenant admin setting is off. However, after publishing to the service, upon refresh, changes to the label in the data source will only be inherited by the report and dataset if the setting is enabled. 
 
 ## Inheritance behavior

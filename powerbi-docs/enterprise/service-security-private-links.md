@@ -344,7 +344,7 @@ There are a few considerations to keep in mind while working with private endpoi
 ## Next steps
 
 - [Administering Power BI in your Organization](../admin/service-admin-administering-power-bi-in-your-organization.md)  
-- [Understanding the Power BI administrator role](../admin/service-admin-role.md)  
+- [Understanding Power BI administration roles](../admin/service-admin-role.md)  
 - [Track user activities in Power BI](../admin/service-admin-auditing.md)  
 - [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
 
