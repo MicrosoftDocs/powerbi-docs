@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/08/2022
+ms.date: 06/22/2023
 ms.custom: sample-sales-and-marketing, sample-sales-and-returns
 LocalizationGroup: Create reports
 ---
@@ -21,7 +21,7 @@ With **grouping** in **Power BI Desktop**, you can group visuals together in you
 ![Screenshot showing Using grouping.](media/desktop-grouping-visuals/grouping-visuals-01.png)
 
 
-## Creating groups
+## Create groups
 
 To create a group of visuals in Power BI Desktop, select the first visual from the canvas, then holding the CTRL button, click one or more additional visuals that you want in the group. In the **Format** menu, select **Group**, and from the submenu select **Group**.
 
@@ -49,14 +49,14 @@ You can easily hide or show groups using the **Selection** pane. To hide a group
 
 When you hide a group, all visuals within that group are hidden, indicated by their eye button being grayed out (unavailable to toggle on or off, because the entire group is hidden). To hide only certain visuals within a group, toggle the eye button beside that visual, and only that visual in the group is hidden.
 
-## Selecting visuals within a group
+## Select visuals within a group
 
 There are a few ways to navigate and select items within a group of visuals. The following list describes the behavior:
 
-* Clicking on empty space within a group (such as white space between visuals) doesn't select anything
-* Clicking a visual within a group selects the entire group, a second click selects the individual visual
-* Selecting a group, and then another object on the report canvas, then selecting **Group** from the right-click menu creates a nested group
-* Selecting two groups, then right-clicking displays an option to merge the selected groups, rather than nesting them
+* Clicking on empty space within a group (such as white space between visuals) doesn't select anything.
+* Clicking a visual within a group selects the entire group, a second click selects the individual visual.
+* Selecting a group, and then another object on the report canvas, then selecting **Group** from the right-click menu creates a nested group.
+* Selecting two groups, then right-clicking displays an option to merge the selected groups, rather than nesting them.
 
 ## Apply background color
 
@@ -66,11 +66,12 @@ You can also apply a background color to a group using the **Formatting** sectio
 
 Once you apply a background color, clicking on the space between visuals in the group selects the group (compare this to clicking on the white space between visuals in a group, which doesn't select the group). 
 
+## Considerations and limitations
+
+- Grouping is only available with the modern visual header style. Ensure that the **Options** > **Current file** > **Report settings** > **Visual options** > **Use the modern visual header with updated styling options** setting is checked to use grouping.
 
 ## Next steps
-- Grouping is only available with the modern visual header style. Please ensure Options > Current file > Report settings > Visual options > "Use the modern visual header with updated styling options" setting is checked to use grouping.
 
-## Next steps
 For more information about grouping, take a look at the following video:
 
 * [Grouping in Power BI Desktop - video](https://youtu.be/sf4n7VXoQHY?t=10)
