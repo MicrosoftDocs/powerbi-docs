@@ -84,10 +84,11 @@ End Function
  If you specify a property that is not supported for that field, the expression evaluates to **null** (**Nothing** in Visual Basic). If a data provider does not support extended field properties, or if the field is not found when the query is executed, the value for the property is **null** (**Nothing** in Visual Basic) for properties of type **String** and **Object**, and zero (0) for properties of type **Integer**. A data processing extension may take advantage of predefined properties by optimizing queries that include this syntax.  
   
 ## Next steps
-[Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
-[Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)
-[Data Types in Expressions (Power BI Report Builder)](./data-types-expressions-report-builder.md)
-[Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expression-scope-for-totals-aggregates-and-built-in-collections.md)
-[Report Datasets &#40;Paginated Reports&#41;](/sql/reporting-services/report-data/report-datasets-ssrs)
+
+- [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
+- [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)
+- [Data Types in Expressions (Power BI Report Builder)](./data-types-expressions-report-builder.md)
+- [Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expression-scope-for-totals-aggregates-and-built-in-collections.md)
+- [Report Datasets &#40;Paginated Reports&#41;](/sql/reporting-services/report-data/report-datasets-ssrs)
   
   
