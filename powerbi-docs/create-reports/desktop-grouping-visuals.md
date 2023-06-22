@@ -31,7 +31,7 @@ Groups are displayed in the **Selection** pane. You can have as many groups of v
 
 ![Screenshot showing nesting groups.](media/desktop-grouping-visuals/grouping-visuals-03.png)
 
-Within the **Selection** pane, you can also drag and drop individual visuals to include them in a group, remove them from a group, nest a group, or remove a group or individual visual from a nest. Simply drag the visual you want to adjust, and place it where you want. Layering of visuals, if there's overlap, is determined by their order in the *Layer order* list.
+Within the **Selection** pane, you can also drag and drop individual visuals to include them in a group, remove them from a group, nest a group, or remove a group or individual visual from a nest. Simply drag the visual you want to adjust, and place it where you want. When you layer visuals, if there's overlap, their order is determined by their order in the *Layer order* list.
 
 ![Screenshot showing drag and drop groups.](media/desktop-grouping-visuals/grouping-visuals-04.png)
 
@@ -39,7 +39,7 @@ Renaming a group is easy: just double-click the group name in the **Selection** 
 
 ![Screenshot showing Rename group.](media/desktop-grouping-visuals/rename-group.png)
 
-To ungroup just select the group, right-click and select **ungroup** from the menu that appears.
+To ungroup, just select the group, right-click and select **ungroup** from the menu that appears.
 
 ## Hide and show visuals or groups
 
@@ -53,10 +53,10 @@ When you hide a group, all visuals within that group are hidden, indicated by th
 
 There are a few ways to navigate and select items within a group of visuals. The following list describes the behavior:
 
-* Clicking on empty space within a group (such as white space between visuals) doesn't select anything.
-* Clicking a visual within a group selects the entire group, a second click selects the individual visual.
-* Selecting a group, and then another object on the report canvas, then selecting **Group** from the right-click menu creates a nested group.
-* Selecting two groups, then right-clicking displays an option to merge the selected groups, rather than nesting them.
+* When you select an empty space within a group, such as white space between visuals, it doesn't select anything.
+* When you select a visual within a group selects the entire group, a second click selects the individual visual.
+* When you select a group, select another object on the report canvas, then right-click and select **Group**, you create a nested group.
+* When you select two groups, then right-click, it displays an option to merge the selected groups, rather than nesting them.
 
 ## Apply background color
 
