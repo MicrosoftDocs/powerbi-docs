@@ -3,12 +3,12 @@ title: Use on-object interaction with visuals in your report (preview)
 description: Learn how to use on-object interaction in a report in Power BI Desktop.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ''
+ms.reviewer: 'rolevass'
 ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/19/2023
+ms.date: 06/21/2023
 LocalizationGroup: Visualizations
 ---
 # Use on-object interaction with visuals in your report (preview)
@@ -21,7 +21,7 @@ On-object interaction is the new way to build and format a visual, directly on t
 
 ## Turn on preview features
 
-Because on-object is a preview feature, you need to turn it on. You'll also be turning on the new Visualizations and Format pane functionality changes. See the updated [Format and Visualizations panes in Power BI](../fundamentals/desktop-format-pane.md) article for details.
+Because the on-object feature is in preview, you need to turn it on. You'll also be turning on the new Visualizations and Format pane functionality changes. See the updated [Format and Visualizations panes in Power BI](../fundamentals/desktop-format-pane.md) article for details.
 
 1. In Power BI Desktop, select **File** > **Options and settings** > **Options** > **Preview Features** > **On-object interaction**. 
 
@@ -68,7 +68,7 @@ You can also change the type of a visual. Select the visual, and in the ribbon v
 
 :::image type="content" source="media/power-bi-on-object-interaction/on-object-ribbon-visualization-gallery.png" alt-text="Screenshot showing changing the visualization type.":::
 
-## Format a visual on object
+## Format a visual on-object
 
 The default behavior when you hover over a visual is to see tooltips, and clicking around a visual, you get the cross-highlight and cross-filter effect. To avoid conflicting with this existing behavior, we introduced a new *format* mode. When you're in format mode, the hover and click behavior changes to show subselection regions.  
 
@@ -94,11 +94,35 @@ You can edit labels and titles on visuals directly. Double-click the label youâ€
 > [!NOTE]
 > If you set the title or label by conditional formatting, it's possible to override the text with this new feature. It's a known issue we're working to block, and warn users that dynamic text takes precedence.
 
+### Format colors
+
+In the **Format** pane > **Colors**, select the color you want to use. You can also choose to use **Conditional formatting** to color visual elements.
+
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-format-color.png" alt-text="Screenshot showing Select a color.":::
+
 ### Selecting overlapping elements
 
 When selecting an element that's very close or overlapping another, Power BI takes the best guess at your selection. If the selection is incorrect, right-click and use the dropdown menu to change your selection to the element youâ€™d like to format.
 
 :::image type="content" source="media/power-bi-on-object-interaction/select-overlapping-elements.png" alt-text="Screenshot showing selecting overlapping elements.":::
+
+## Attach the build menu to the pane switcher
+
+You can attach the build menu to the pane switcher, if you'd prefer that. Pick one of these three different ways to attach it:
+
+- Select the drop-down arrow on the **Build a visual** pane > **Move to pane switcher**.
+
+    :::image type="content" source="media/power-bi-on-object-interaction/build-visual-move-switcher.png" alt-text="Screenshot showing Move to pane switcher.":::
+
+- On the **View** ribbon, select **Move Build a visual to pane switcher**.
+
+    :::image type="content" source="media/power-bi-on-object-interaction/view-menu-move-switcher.png" alt-text="Screenshot showing View menu, move to pane switcher.":::
+
+- On the **File** menu, select **Options and settings** > **Options** > **Report settings**. Select **Always show Build a visual menu in the pane switcher**.
+
+    :::image type="content" source="media/power-bi-on-object-interaction/options-menu-show-pane-switcher.png" alt-text="Screenshot showing Options menu, Always show Build a visual.":::
+
+With the **View** ribbon and the **Options** dialog, you can choose to **Always show the pane switcher**.
 
 ## Limitations and known issues
 
@@ -108,10 +132,10 @@ When selecting an element that's very close or overlapping another, Power BI tak
 - Format mode isn't currently supported in mobile layout.
 - Format mode isn't currently supported in focus mode.
 
-### Sub-selections
+### Subselections
 
 - Small multiples and analytics pane items aren't currently selectable in format mode. 
-- Sub-selection regions don't scale as expected in spotlight mode and after using zoom sliders.
+- Subselection regions don't scale as expected in spotlight mode and after using zoom sliders.
 - Reset to default might not reset direct text edit and background colors for data and category labels.
 
 ### On-object buttons
@@ -125,7 +149,7 @@ When selecting an element that's very close or overlapping another, Power BI tak
 
 ### Custom visuals
 
-We plan to release an API for custom visual developers to be able to define sub-selection regions within their visuals.  
+We plan to release an API for custom visual developers to be able to define subselection regions within their visuals.  
 
 ### Accessibility
 
