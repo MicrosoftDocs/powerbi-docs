@@ -40,9 +40,9 @@ Before you can use the sample, get the sample in one of the following ways:
 
 1. Select the sample. It opens in Reading mode.
 
-   Power BI imports the built-in sample, adding a report and dataset to your current workspace.
+   Power BI imports the built-in sample, adding a report and dataset to your **My workspace**.
 
-## Get the .pbix file for this sample
+### Get the .pbix file for this sample
 
 Alternatively, you can download the Revenue Opportunities sample as a *.pbix* file, which is designed for use with Power BI Desktop.
 
@@ -103,7 +103,7 @@ Hover over any field to see the details of that field as a *tooltip*. A Power BI
 
 ## Create a Revenue Opportunities dashboard
 
-A Power BI *dashboard* is a single page containing visualizations that can come from one or more reports, and each report is based on one dataset. You can also generate visualizations on the dashboard by using the Q&A *Ask a question about your data* feature to explore the data associated with a report. Think of a dashboard as an entryway into the underlying reports and datasets. Select a visualization to take you to the report that was used to create it.
+A Power BI *dashboard* is a single page that contains visualizations that can come from one or more reports, and each report is based on one dataset. You can also generate visualizations on the dashboard by using the Q&A *Ask a question about your data* feature to explore the data associated with a report. Think of a dashboard as an entryway into the underlying reports and datasets. Select a visualization to take you to the report that was used to create it.
 
 To create a dashboard in the Power BI service:
 
