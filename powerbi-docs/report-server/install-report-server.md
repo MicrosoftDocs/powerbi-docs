@@ -42,7 +42,7 @@ Read on for details.
 
 #### Power BI Premium
 
-If you've purchased Power BI Premium, within the **Premium settings** tab of the Power BI admin portal, you have access to your Power BI Report Server product key. The admin portal is only available to Global Admins or users assigned the Power BI service administrator role.
+If you've purchased Power BI Premium, within the **Premium settings** tab of the Power BI admin portal, you have access to your Power BI Report Server product key. The admin portal is only available to Global Admins or users assigned the Fabric administrator role.
 
 ![Premium settings](../report-server/media/install-report-server/pbirs-product-key.png "Power BI Report Server key within Premium settings")
 
