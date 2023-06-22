@@ -22,6 +22,7 @@ You can share the filtered report in several different ways:
 * [Chat in Teams](#share-a-report-in-teams)
 * [Share an individual visual](#share-a-visual)
 * [Direct access sharing](#share-directly)
+* [PowerPoint, via the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 
 In every case, the report is filtered when recipients first open it. They can clear the filter selections in the report. In this example, we're filtering the report page to show only values where **Business Area** equals **Distribution**, **Infrastructure**, or **Manufacturing**.
 
