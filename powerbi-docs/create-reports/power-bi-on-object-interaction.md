@@ -108,6 +108,8 @@ When selecting an element that's very close or overlapping another, Power BI tak
 
 ## Attach the build menu to the pane switcher
 
+You can attach the build menu to the pane switcher, if you'd prefer that. Pick one of these three different ways to attach it:
+
 - Select the drop-down arrow on the **Build a visual** pane > **Move to pane switcher**.
 
     :::image type="content" source="media/power-bi-on-object-interaction/build-visual-move-switcher.png" alt-text="Screenshot showing Move to pane switcher.":::
