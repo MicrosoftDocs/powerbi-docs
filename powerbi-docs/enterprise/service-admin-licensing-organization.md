@@ -34,7 +34,7 @@ The following roles are required to manage licensing for an organization.
   - User administrator
   - Global administrator
 
-For information about Power BI service admin roles, see [Understanding Power BI service administrator roles](../admin/service-admin-role.md).
+For information about Power BI service admin roles, see [Understanding Power BI administration roles](../admin/service-admin-role.md).
 
 ## Get Power BI for your organization
 

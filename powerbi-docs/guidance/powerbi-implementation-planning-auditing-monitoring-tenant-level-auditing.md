@@ -1731,7 +1731,7 @@ Here are some user training opportunities that you might identify from the audit
 
 Here are some security situations you may want to actively monitor.
 
-- Too many users assigned to the high-privilege [Power BI administrator role](powerbi-implementation-planning-security-tenant-level-planning.md#power-bi-administration).
+- Too many users assigned to the high-privilege [Fabric administrator role](powerbi-implementation-planning-security-tenant-level-planning.md#power-bi-administration).
 - Too many workspace administrators (when the Member, Contributor, or Viewer [workspace role](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles) would be sufficient).
 - Excessive [Build permissions](powerbi-implementation-planning-security-content-creator-planning.md#read-and-build-permissions-for-underlying-dataset) assigned to datasets (when Read permission would be sufficient).
 - High use of [per-item permissions](powerbi-implementation-planning-security-report-consumer-planning.md#per-item-permissions), when [Power BI app permissions](powerbi-implementation-planning-security-report-consumer-planning.md#power-bi-app-permissions) or the [workspace Viewer role](powerbi-implementation-planning-security-report-consumer-planning.md#workspace-viewer-role) would be a better choice for content consumers.
