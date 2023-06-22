@@ -394,6 +394,7 @@ private async Task<ExportedFile> ExportPowerBIReport(
   * Power Automate
   * Paginated report visual
   * Visio
+  * ArcGis visuals
 
 ## Next steps
 
