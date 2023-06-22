@@ -3,128 +3,129 @@
 		# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
 		# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
 
-title:       How to create a Fabric and Power BI Support Ticket
+title:       How to create a Fabric and Power BI Support ticket
 description: Creating a support ticket for Fabric and Power BI
 author:      royrubinstein # GitHub alias
-ms.author:    rrubinstein
+ms.author:    mihart
 ms.service:  powerbi
 # ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    troubleshooting # Add the ms.topic value
+ms.topic:    troubleshooting 
 ms.date:     06/14/2023
 ---
 
-# Create a Support Ticket
+# Create a support ticket
 
-Fabric and Power BI admin and users can contact support to get self-help solutions in real-time for their issue through either the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/support) (admins only) or the [Fabric Support Page](https://support.fabric.microsoft.com/en-US/support). If the issue can't be resolved through self-help, you can use the same **Contact Support** experience to contact a Microsoft support representative.
+Before creating a support ticket, get real-time help by using the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/support) (admins roles only) or the [Fabric Support Page](https://support.fabric.microsoft.com/en-US/support). If the issue can't be resolved through self-help, create a support ticket.
 
 The image shows an example for a Power BI dataset refresh issue:  
-![User's image](media/Create-support-ticket/image.png)
+![Screenshot of a user's refresh issue.](media/Create-support-ticket/image.png)
 
 ## Prerequisites
 
-- You have a security role that is enabled for creating support requests. Users having one of these security roles can create support requests:
+Support tickets can be created by users with one of the following security roles or licenses.  
 
-   - AAD Role Admin
+- AAD role administrator
 
-   - Environment Administrator (or System Administrator role in Dataverse)
+- Environment administrator (or system administrator role in Dataverse)
 
-   - Company Admin
+- Company administrator
 
-   - Billing Admin
+- Billing administrator
 
-   - Service Admin
+- Service administrator
 
-   - CRM Service Admin
+- CRM service administrator
 
-   - CRM Organization Admin
+- CRM organization administrator
 
-   - Security Admin
+- Security administrator
 
-   - Partner Delegated Admin
+- Partner delegated administrator
 
-   - SharePoint Admin
+- SharePoint administrator
 
-   - Teams Admin
+- Teams administrator
 
-   - Exchange Admin
+- Exchange administrator
 
-   - Power BI Admin
+- Fabric administrator
 
-   - Compliance Admin
+- Compliance administrator
 
-   - Helpdesk Admin
+- Helpdesk administrator
 
 - Power BI Pro users can create support tickets for Power BI.
 
 - Fabric users can create support tickets for Fabric products.
 
-## View solutions or create a support request
+## Steps for creating a support ticket
+The steps you take to create a support ticket vary, depending on your role. 
 
-### Admin Experience
+### For administrators
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with your admin credentials.
 
 2. Select **Help + support** > **Get Help + support**
 
-   ![Help+Supprot](media/Create-support-ticket/help+supprot1.png)
+   ![Screenshot of the Help+Supprot page.](media/Create-support-ticket/help+supprot1.png)
 
 3. Select the product you're experiencing an issue with.
 
    > [!TIP]
-   > You can type the product name to quickly find the requested product
+   > You can type the product name to quickly find the requested product.
 
-4. Fill in the description of the issue and click on the arrow to the right. Solutions matching the issue's description will be presented.
+4. Fill in the description of the issue and select the arrow to the right. Solutions matching the issue's description are presented.
 
-   ![Provide issue description](media/Create-support-ticket/provide-issue-description.png)
+   ![Screenshot of field where you provide issue description.](media/Create-support-ticket/provide-issue-description.png)
 
-5. If no solutions matching the issue's description were found, select problem type and subtype and then to select **See solutions**. For some problem type and subtype selections, you're asked to provide additional information.
+5. If no solution is found, select the problem type and subtype and then choose **See solutions**. For some problem type and subtype selections, you're asked to provide additional information.
 
-   ![ST selection](media/Create-support-ticket/st-selection.png)
+   ![Screenshot showing ST selection.](media/Create-support-ticket/st-selection.png)
 
-6. Based on the information you provided, you see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix.
+6. Based on the information you provide, you see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix.
 
-   ![Solutions and contact support](media/Create-support-ticket/solutions-and-contact-support.png)
+   ![Screenshot of suggested olutions.](media/Create-support-ticket/solutions-and-contact-support.png)
 
 7. If the guidance doesn't resolve your issue, scroll down and select **Contact Support**, and fill in the fields in the following pages.
 
-   ![Support tab](media/Create-support-ticket/support-tab.png)
+   ![Screenshot of the Contact support tab.](media/Create-support-ticket/support-tab.png)
 
-8. If you have a **Unified or Premier** support plan that isn't listed, select **Add new contract** and fill in the fields. If you don't know your access or contract ID, contact your service admin or Incident Manager or Customer Success Account Manager (CSAM).
+8. If you have a **Unified or Premier** support plan that isn't listed, select **Add new contract** and fill in the fields. If you don't know your access or contract ID, contact your service admin, Incident Manager or Customer Success Account Manager (CSAM).
 
-   ![New support contract](media/Create-support-ticket/new-support-contract.png)
+   ![Screenshot of a new support contract.](media/Create-support-ticket/new-support-contract.png)
 
    > [!TIP]
    > 
    >- For **Contract ID/Password**, enter your Unified or Premier contract ID.
-   >- The **Contract ID/Password** defaults to the Unified or Premier contract ID. If you have changed the password when registering online in the Unified/Premier portal, you should use the updated password instead of the contract ID.
+   >- The **Contract ID/Password** defaults to the Unified or Premier contract ID. If you've changed the password when registering online in the Unified/Premier portal, you should use the updated password instead of the contract ID.
 
 
 
-### Non-Admin Experience
+### For Fabric users and Power BI Pro users
 
-1. On the [Fabric Support page](https://support.fabric.microsoft.com/en-US/support), select the product you're experiencing an issue with
+1. On the [abric Support page](https://support.fabric.microsoft.com/en-US/support), select the product you're experiencing an issue with.
 
-   ![Support page product selection](media/Create-support-ticket/support-page-product-selection.png)
+   ![Support page product selection.](media/Create-support-ticket/support-page-product-selection.png)
 
-2. Fill in the description of the issue and click on the arrow to the right. Solutions matching the issue's description will be presented.
+2. Fill in the description of the issue and select the arrow to the right. Solutions matching the issue's description are presented.
 
-   ![Iframe issue description](media/Create-support-ticket/iframe-issue-description.png)
+   ![Iframe issue description.](media/Create-support-ticket/iframe-issue-description.png)
 
-3. If no solutions matching the issue's description were found, select problem type and subtype and then to select **See solutions**. For some problem type and subtype selections, you're asked to provide additional information.
+3. If no solution is found, select the problem type and subtype and then choose **See solutions**. For some problem type and subtype selections, you're asked to provide additional information.
 
-   ![iframe ST selection](media/Create-support-ticket/iframe-st-selection1.png)
+   ![iframe ST selection.](media/Create-support-ticket/iframe-st-selection1.png)
 
-4. Based on the information you provided, you see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix.
+4. Based on the information you provide, you see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix.
 
-   ![Solutions and contact support](media/Create-support-ticket/solutions-and-contact-support.png)
+   ![Solutions and contact support.](media/Create-support-ticket/solutions-and-contact-support.png)
 
 5. If the guidance doesn't resolve your issue, scroll down and select **Contact Support**, and fill in the fields in the following pages.
 
-   ![Support tab](media/Create-support-ticket/support-tab.png)
+   ![Support tab.](media/Create-support-ticket/support-tab.png)
 
 6. If you have a **Unified or Premier** support plan that isn't listed, select **Add new contract** and fill in the fields. If you don't know your access or contract ID, contact your service admin or Incident Manager or Customer Success Account Manager (CSAM).
 
-   ![New support contract](media/Create-support-ticket/new-support-contract.png)
+   ![New support contract.](media/Create-support-ticket/new-support-contract.png)
 
    > [!TIP]
    > 
@@ -134,7 +135,7 @@ The image shows an example for a Power BI dataset refresh issue:
 ### Live Chat
 1. For some of the combinations of problem type and subtype, users might see the option to start a live chat session with a Microsoft Support representative. The option to start a live chat session appears on the **Contact** page. 
 
-   ![PPACLivechat](media/Create-support-ticket/livechat.png)
+   ![PPACLivechat.](media/Create-support-ticket/livechat.png)
 
         
 
