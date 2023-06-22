@@ -828,6 +828,8 @@
           href: ../paginated-reports/expressions/report-builder-functions-union-function.md
         - name: Var function
           href: ../paginated-reports/expressions/report-builder-functions-var-function.md
+        - name: VarP function
+          href: ../paginated-reports/expressions/report-builder-functions-varp-function.md
     - name: Parameters
       items:
       - name: Parameters
