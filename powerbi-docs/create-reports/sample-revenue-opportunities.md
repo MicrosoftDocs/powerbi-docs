@@ -135,15 +135,17 @@ A dashboard offers the ability to ask questions about data in natural language t
 
    :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state.png" alt-text="Screenshot shows suggestions to choose to query the data." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state.png":::
 
-1. Select *what is the revenue by state*. The Dashboard creates a bar chart.
+1. Select a question, such as *what is the opportunity count by state*. The Dashboard creates a bar chart.
 
    :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state-bar-chart.png" alt-text="Screenshot shows a bar chart that the dashboard created based on the question." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state-bar-chart.png":::
 
-1. You might want a different way to present this information than a bar chart. Under **Visualizations**, you can select from various options. This visual is a pie chart.
+   You can add more data fields to your question. Try *what is the opportunity count by state by fact month* or *what is the opportunity count by state by factored revenue*.
 
-   :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state-pie-chart.png" alt-text="Screenshot shows a pie chart that the dashboard created based on the question." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state-pie-chart.png":::
+1. You might want a different way to present this information than a bar chart. Update your question to *what is the opportunity count by state as a map*. The dashboard displays the same data as a map. Look under **Visualizations** where the map is selected.
 
-   Try out some other visualizations. Find a visualization that presents your data in the best way for your purposes. For more information about visualizations, see [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+   :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state-map.png" alt-text="Screenshot shows a pie chart that the dashboard created based on the question." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state-map.png":::
+
+   Try some other visualizations. There are different bar charts, scatter charts, and line charts. You can select a table to display the data as numbers. Find a visualization that presents your data in the best way for your purposes. For more information about visualizations, see [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 1. To save your visualization to a dashboard, select **Pin visual**.
 
