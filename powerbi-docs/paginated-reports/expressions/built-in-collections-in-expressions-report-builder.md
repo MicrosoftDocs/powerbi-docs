@@ -16,7 +16,7 @@ ms.custom: updatefrequency5
 
   In an expression in a paginated report, you can include references to the following built-in collections: ReportItems, Parameters, Fields, DataSets, DataSources, Variables, and built-in fields for global information such as the report name. Not all collections appear in the **Expression** dialog box. The DataSets and DataSources collections are available only at run-time for published reports on the service. The ReportItems collection is a collection of text boxes in a report region, for example, the text boxes on a page or in a page header.  
   
- For more information, see [Expressions &#40;Power BI Report Builder&#41;](./expressions-report-builder.md).
+ For more information, see [Expressions &#40;Power BI Report Builder&#41;](./report-builder-expressions.md).
   
 ##  <a name="Collections"></a> Understanding Built-in Collections  
  The following table lists the built-in collections available when you write an expression. Each row includes the case-sensitive programmatic name for the collection, whether you can use the Expression dialog box to interactively add a reference to the collection, an example, and a description that includes when the collection values are initialized and available for use.  

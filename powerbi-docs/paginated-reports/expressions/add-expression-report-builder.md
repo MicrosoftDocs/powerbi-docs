@@ -16,7 +16,7 @@ ms.custom: updatefrequency5
 
   Expressions are used throughout paginated reports for defining report item properties, filters, groups, sort order, connection strings, and parameter values. Expressions begin with an equal sign (=) and are written in Microsoft Visual Basic. They are evaluated at run time by the report processor, which combines the evaluation result with report layout elements.  
   
- Expressions can be simple or complex. Simple expression refer to a single item in a built-in collection. Complex expressions can contain constants, operators, global collection items, and function calls. For more information, see [Expressions &#40;Power BI Report Builder&#41;](./expressions-report-builder.md).
+ Expressions can be simple or complex. Simple expression refer to a single item in a built-in collection. Complex expressions can contain constants, operators, global collection items, and function calls. For more information, see [Expressions &#40;Power BI Report Builder&#41;](./report-builder-expressions.md).
   
 ## Add an expression to a text box  
   
