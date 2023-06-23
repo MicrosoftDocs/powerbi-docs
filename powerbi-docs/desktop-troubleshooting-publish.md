@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot Desktop Publish
-description: Troubleshoot Desktop Publish
+title: Troubleshoot Desktop publish
+description: Troubleshoot Desktop publish
 author: 
 manager: 
 ms.reviewer: ''
