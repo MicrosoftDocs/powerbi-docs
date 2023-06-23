@@ -29,7 +29,7 @@ This tour explores the Store Sales sample in the Power BI service. Because the r
 - Get the [built-in sample in the service](#get-the-built-in-sample-in-the-power-bi-service).
 - Download the [.pbix file](#get-the-pbix-file-for-this-sample).
 
-## Get the built-in sample in the Power BI service
+### Get the built-in sample in the Power BI service
 
 1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
@@ -39,7 +39,7 @@ This tour explores the Store Sales sample in the Power BI service. Because the r
 
    Power BI imports the built-in sample, adding a report and a dataset to your **My workspace**.
 
-## Get the .pbix file for this sample
+### Get the .pbix file for this sample
 
 Alternatively, you can download the Store Sales sample as a .pbix file, which is designed for use with Power BI Desktop.
 
@@ -90,11 +90,11 @@ Save or discard your changes.
 
 1. In the map, hover over a bubble to see the values for that area.
 
-   :::image type="content" source="media/sample-store-sales/power-bi-map-hover.png" alt-text="Screenshot shows the tooltip for a bubble on the map with details about that area." lightbox="media/sample-store-sales/power-bi-map-hover.png":::
+   :::image type="content" source="media/sample-store-sales/power-bi-map-hover.png" alt-text="Screenshot shows the tooltip for a bubble on the map with details about that area.":::
 
 1. Right-click a bubble. From the context menu, select **Drill through** > **New Stores**.
 
-   :::image type="content" source="media/sample-store-sales/power-bi-map-drill-through.png" alt-text="Screenshot shows the context menu for a bubble with the drill through option." lightbox="media/sample-store-sales/power-bi-map-drill-through.png":::
+   :::image type="content" source="media/sample-store-sales/power-bi-map-drill-through.png" alt-text="Screenshot shows the context menu for a bubble with the drill through option.":::
 
    This action takes you to a different page in the report to see more data.
 
@@ -122,7 +122,7 @@ Under **Pages**, select **District Monthly Sales**. This page includes the follo
 
    Power BI provides an analysis of the change.
 
-   :::image type="content" source="media/sample-store-sales/power-bi-analysis.png" alt-text="Screenshot shows the analysis provided for the decrease in sales." lightbox="media/sample-store-sales/power-bi-analysis.png":::
+   :::image type="content" source="media/sample-store-sales/power-bi-analysis.png" alt-text="Screenshot shows the analysis provided for the decrease in sales.":::
 
 ## Create a Store Sales dashboard
 
@@ -177,7 +177,7 @@ A dashboard offers the ability to ask questions about data in natural language t
 1. Select **Exit Q&A** to return to the dashboard.
 
 > [!NOTE]
-> If you create a useful visual, you can add it to this dashboard or a new dashboard. Select **Pin Visual** and follow the procedure from the previous section.
+> If you create a useful visual, you can add it to this dashboard or a new dashboard. Select **Pin visual** and follow the procedure from the previous section.
 
 ## Next steps
 
