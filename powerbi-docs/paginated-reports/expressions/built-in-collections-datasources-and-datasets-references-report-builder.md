@@ -36,9 +36,10 @@ ms.custom: updatefrequency5
  You can use expressions to define the query that is contained in a dataset. You can use this feature to design reports in which the query changes based on input from the user, data in other datasets, or other variables. For more information about queries, see [Report Embedded Datasets &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs).
   
 ## Next steps
-[Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
-[Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)
-[Data Types in Expressions (Power BI Report Builder)](./data-types-expressions-report-builder.md)
-[Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expression-scope-for-totals-aggregates-and-built-in-collections.md)
+
+- [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
+- [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)
+- [Data Types in Expressions (Power BI Report Builder)](./data-types-expressions-report-builder.md)
+- [Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expression-scope-for-totals-aggregates-and-built-in-collections.md)
   
   

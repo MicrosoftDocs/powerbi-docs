@@ -44,9 +44,8 @@ ms.custom: updatefrequency5
 |*Collection.Member*|`=User.Language`|  
   
 ## Next steps
-[Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
-[Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)
-[Data Types in Expressions (Power BI Report Builder)](./data-types-expressions-report-builder.md)
-[Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expression-scope-for-totals-aggregates-and-built-in-collections.md)
-  
-  
+
+- [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
+- [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)
+- [Data Types in Expressions (Power BI Report Builder)](./data-types-expressions-report-builder.md)
+- [Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expression-scope-for-totals-aggregates-and-built-in-collections.md)
