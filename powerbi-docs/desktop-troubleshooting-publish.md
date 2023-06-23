@@ -26,9 +26,9 @@ When you publish a report and dataset from Power BI Desktop to the Power BI serv
 
 - Check your network connectivity. Verify that you have a stable and suitable internet connection. Connectivity problems or network restrictions can prevent Power BI Desktop from publishing to the Power BI service. Try accessing other websites or running an internet speed test to ensure that your internet connection functions reliably.
 
-- Clear cached data. In Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Data Load** and then select **Clear Cache**.
+- Clear cached data. In Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Data Load**, and then select **Clear Cache**.
 
-- Clear cached credentials. If you've previously connected to the published dataset with different credentials or an expired token, cached credentials might cause connection issues. In Power BI Desktop, go to **File** > **Options and settings** > **Data source settings** and select **Clear Permissions** to clear any cached credentials.
+- Clear cached credentials. If you've previously connected to the published dataset with different credentials or an expired token, cached credentials might cause connection issues. In Power BI Desktop, go to **File** > **Options and settings** > **Data source settings**, and then select **Clear Permissions** to clear any cached credentials.
 
 - Check your dataset permissions. Be sure that you have the permissions that are needed to access the published dataset. Check with the dataset owner or administrator to verify that you've been granted access.
 
