@@ -135,7 +135,7 @@ A dashboard offers the ability to ask questions about data in natural language t
 
    :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state.png" alt-text="Screenshot shows suggestions to choose to query the data." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state.png":::
 
-1. Select a question, such as *what is the opportunity count by state*. The Dashboard creates a bar chart.
+1. Select a question, such as *what is the opportunity count by state*. The dashboard creates a bar chart.
 
    :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state-bar-chart.png" alt-text="Screenshot shows a bar chart that the dashboard created based on the question." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state-bar-chart.png":::
 
