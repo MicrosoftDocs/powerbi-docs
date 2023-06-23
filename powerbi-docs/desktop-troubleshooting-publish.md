@@ -1,8 +1,8 @@
 ---
-title: Troubleshoot Desktop publish
-description: Troubleshoot Desktop publish
-author: 
-manager: 
+title: Troubleshoot Power BI Desktop publishing
+description: Troubleshoot Power BI Desktop publishing
+author: davidiseminger
+manager: davidi
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -11,34 +11,34 @@ ms.topic: conceptual
 ms.date: 06/27/2023
 ms.author:  
 
-LocalizationGroup:  
+LocalizationGroup: Troubleshooting
 ---
 
-# Troubleshoot Desktop publish
+# Troubleshoot Power BI Desktop publishing
 
-There may be times when publishing report and dataset from Power BI Desktop to Power BI Service that you get an unexpected result, or the feature doesn't work as you expected. This page provides common solutions related to publishing from Power BI Desktop to Power BI Service.
+When you publish a report and dataset from Power BI Desktop to the Power BI service, you might sometimes get unexpected results. This article provides troubleshooting guidance for problems related to publishing from Power BI Desktop to the Power BI service.
 
-## Common solutions
+## Solutions to common problems
 
-1. Ensure that you are using the latest version of Power BI Desktop. Visit the Microsoft Power BI website or the Microsoft Store to download and install the latest version of Power BI Desktop. https://powerbi.microsoft.com/downloads/ 
+- Be sure that you're using the latest version of Power BI Desktop. Go to the [Microsoft Power BI website](https://powerbi.microsoft.com/downloads/) or the [Microsoft Store](https://apps.microsoft.com/store/detail/power-bi-desktop/9NTXR16HNW1T) to download and install the latest version of Power BI Desktop. 
 
-1. Firewall and Proxy Settings: If you're behind a firewall or using a proxy server or using anti virus/security software, ensure that the necessary network configurations are in place to allow Power BI Desktop to connect to Power BI Service. Work with your IT department or network administrator to add Power BI URLs to your allowlist: https://learn.microsoft.com/power-bi/admin/power-bi-allow-list-urls 
+- Check your firewall and proxy settings. If you're behind a firewall, using a proxy server, or using antivirus/security software, make sure that your network configurations allow Power BI Desktop to connect to the Power BI service. Work with your IT department or network administrator to [add Power BI URLs to your allowlist](/power-bi/admin/power-bi-allow-list-urls). 
 
-1. Check Network Connectivity: Verify that you have a stable and good internet connection. Connectivity problems or network restrictions could prevent Power BI Desktop from publishing to Power BI Service. Try accessing other websites or running internet speed test to ensure your internet connection is functioning efficiently.
+- Check your network connectivity. Verify that you have a stable and suitable internet connection. Connectivity problems or network restrictions can prevent Power BI Desktop from publishing to the Power BI service. Try accessing other websites or running an internet speed test to ensure that your internet connection functions reliably.
 
-1. Clear Data Load Cache: In Power BI Desktop, go to "File" > "Options and settings" > "Global" > "Data Load" > "Clear Cache" to clear any cached data.
+- Clear cached data. In Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Data Load** and then select **Clear Cache**.
 
-1. Clear Cached Credentials: If you have previously connected to the published dataset using different credentials or an expired token, cached credentials may cause connection issues. In Power BI Desktop, go to "File" > "Options and settings" > "Data source settings" > "Clear All Permissions" to clear any cached credentials.
+- Clear cached credentials. If you've previously connected to the published dataset with different credentials or an expired token, cached credentials might cause connection issues. In Power BI Desktop, go to **File** > **Options and settings** > **Data source settings** and select **Clear Permissions** to clear any cached credentials.
 
-1. Check Dataset Permissions: Ensure that you have the necessary permissions to access the published dataset. Check with the dataset owner or administrator to verify that you have been granted access.
+- Check your dataset permissions. Be sure that you have the permissions that are needed to access the published dataset. Check with the dataset owner or administrator to verify that you've been granted access.
 
-1. Login to Power BI Service, try uploading the Power BI report from the target workspace using the upload option.
+- Log in to the Power BI service and try to upload the Power BI report from the target workspace by using the upload option.
 
-## Other issues
+## Other problems
 
 **Error: "The remote server returned an error: (400) Bad Request."**
 
-This error could occur if you are using Power BI Pro License but trying to publish a report with data model over 1GB, the feature limitation of data model is 1GB for Pro license. Please refer to Pricing and Product Comparison document for model size limitation - https://powerbi.microsoft.com/pricing/  . To publish report with data model over 1GB, either premium per user license or premium capacity subscription is required.
+This error can occur if you have a Power BI Pro license and are trying to publish a report that has a data model that's more than one GB. The feature limitation of data model is 1GB for Pro license. Please refer to Pricing and Product Comparison document for model size limitation - https://powerbi.microsoft.com/pricing/  . To publish report with data model over 1GB, either premium per user license or premium capacity subscription is required.
 
 **Error: "Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host."**
 
