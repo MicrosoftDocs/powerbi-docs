@@ -23,7 +23,7 @@ Subscribe yourself and others to Power BI reports, dashboards, and paginated rep
 
 It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to reports and dashboards that matter most to you, and Power BI emails a snapshot to your inbox. You tell Power BI how often you want to receive the emails and at what time. Set up to 24 subscriptions per report or dashboard, and provide unique recipients, times, and frequencies for each subscription.  
 
-:::image type="content" source="./media/end-user-subscribe/power-bi-email.png" alt-text="Email for subscription to a report.":::
+:::image type="content" source="./media/end-user-subscribe/power-bi-email.png" alt-text="Screenshot showing email for subscription to a report.":::
 
 
 ## Requirements
