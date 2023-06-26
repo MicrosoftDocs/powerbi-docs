@@ -104,14 +104,14 @@ The new **Include my changes** button triggers two new options -- **Preview** an
 
 When you make changes to a report created by someone else, you are given the opportunity to save those changes with the subscription. When **Include my changes** is unchecked, Power BI ignores all changes you might have made to the report, and keeps you subscribed to the report as published by the author. When **Include my changes** is checked, Power BI subscribes you to the report including all changes you've made to the report. Changes include:  
 
-    - filters (filter pane)
-    - slicers
-    - personalized visuals
-    - cross-filtering or cross-highlighting
-    - drill down or drill up
-    - bookmarks
-    - spotlights
-    - focus mode
+- filters (filter pane)
+- slicers
+- personalized visuals
+- cross-filtering or cross-highlighting
+- drill down or drill up
+- bookmarks
+- spotlights
+- focus mode
 
 ### You make changes to your own report
 
