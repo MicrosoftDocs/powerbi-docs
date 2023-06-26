@@ -269,7 +269,7 @@ When you're connected live to an Analysis Services source, there's no local mode
 
 ### Chaining
 
-Datasets, and the datasets and models on which they're based, form a *chain*. This process, called *chaining*, lets you publish a report and dataset based on other Power BI datasets, a feature that previously wasn't possible.
+Datasets and the datasets and models on which they're based form a *chain*. This process, called *chaining*, lets you publish a report and dataset based on other Power BI datasets, a feature that previously wasn't possible.
 
 For example, imagine your colleague publishes a Power BI dataset called *Sales and Budget* that's based on an Analysis Services model called *Sales*, and combines it with an Excel sheet called *Budget*.
 
@@ -412,7 +412,7 @@ With this background in mind, consider the following scenario:
 
 1. Now let's say that Admin_user updates the OLS rules on the enterprise semantic model to stop Finance from seeing the Territory table.
 
-1. Only when the Finance dataset is refreshed will the updated OLS rules be reflected in it. Thus, when the Finance_user refreshes the Finance dataset, the Territory table will no longer be shown in the fields list, and the visual in the Finance report that uses a column from the Territory table will return an error for Finance_user, because they're now not allowed to access the Territory table.
+1. The updated OLS rules are only reflected in the Finance dataset when it's refreshed. Thus, when the Finance_user refreshes the Finance dataset, the Territory table will no longer be shown in the fields list, and the visual in the Finance report that uses a column from the Territory table will return an error for Finance_user, because they're now not allowed to access the Territory table.
 
 To summarize:
 
