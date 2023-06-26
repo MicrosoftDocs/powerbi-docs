@@ -277,7 +277,16 @@ When you publish a new report (and dataset) called *Sales and Budget Europe* tha
 
 ![The process of chaining datasets](media/desktop-composite-models/directquery-datasets-04.png)
 
-The chain in the previous image is of length three, which is the maximum length during this preview period. Extending beyond a chain length of three isn't supported and results in errors.
+The chain in the previous image is of length three, which is the maximum length. Extending beyond a chain length of three isn't supported and results in errors.
+
+### Permissions and licensing
+
+Users accessing reports need to have proper permissions to all datasets and models in the [chain that is formed by the dataset/model they want to access and the datasets/models on which it is based](#chaining). This can be Read or Build depending on whether they need to view the reports or make changes and create new reports.
+
+> [!NOTE]
+> Please refer to [this blogpost for important information about permissions required for composite models on Power BI Datasets and Analysis Services models](https://powerbi.microsoft.com/blog/announcing-general-availability-for-composite-models-on-power-bi-datasets-and-analysis-services-models/).
+
+If any dataset in the chain is in a Premium Per User workspace, the user accessing it will need a [Premium Per User license](../fundamentals/service-features-license-type.md#premium-per-user-ppu-license). If any dataset in the chain is in a Pro workspace, the user accessing it will need a [Pro license](../fundamentals/service-features-license-type.md#pro-license). If all the datasets in the chain are on [Premium capacities](../fundamentals/service-features-license-type.md#premium-capacity), the user accessing it can access it using a [Free license](../fundamentals/service-features-license-type.md#free-per-user-license).
 
 ### Security warning
 
