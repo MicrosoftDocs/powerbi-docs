@@ -32,7 +32,7 @@ When you publish a report and dataset from Power BI Desktop to the Power BI serv
 
 - Check your dataset permissions. Be sure that you have the permissions that are needed to access the published dataset. Check with the dataset owner or administrator to verify that you've been granted access.
 
-- Log in to the Power BI service and try to upload the Power BI report from the target workspace by using the upload option.
+- Sign in to the Power BI service and try to upload the Power BI report from the target workspace by using the upload option.
 
 ## Other problems
 
@@ -48,7 +48,7 @@ This error is most likely caused by a network problem. Try the following trouble
 - Publish the report from a different physical network.
 - Publish the report from a cloud VM.
 - Upload the report to OneDrive or SharePoint and publish it to the Power BI service from there.
-- Reduce the PBIX file size, and then try to publish the reort.
+- Reduce the PBIX file size, and then try to publish the report.
 
 ### Can't publish to a different workspace
 
