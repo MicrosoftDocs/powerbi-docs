@@ -7,10 +7,13 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/20/2023
+ms.date: 06/27/2023
 LocalizationGroup: Samples
 ---
 # Sales and Marketing sample for Power BI: Take a tour
+
+> [!NOTE]
+> For an updated version of this sample, see [Competitive Marketing Analysis: Take a tour](sample-competitive-marketing-analysis.md).
 
 The Sales and Marketing sample contains a dashboard and report for a fictitious manufacturing company named VanArsdel Ltd. The VanArsdel Chief Marketing Officer (CMO) created this dashboard to keep an eye on the industry and the company's market share, product volume, sales, and sentiment.
 

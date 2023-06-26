@@ -53,7 +53,7 @@ There are revised versions of the original samples. These new versions take the 
 - Employee Hiring and History. Take a tour of the [Employee Hiring and History](sample-employee-hiring-history.md) sample.
 - Revenue Opportunities
 - Store Sales
-- Competitive marketing Analysis
+- Competitive Marketing Analysis. Take a tour of the [Competitive Marketing Analysis](sample-competitive-marketing-analysis.md) sample.
 - Regional Sales Sample
 
 To obtain these samples:
@@ -135,11 +135,13 @@ This industry sample analyzes a manufacturing company's spending on vendors by c
 
 This industry sample analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's in these areas: sales, units, gross margin, variance, and new store analysis.
 
-### Sales and Marketing sample
+### Sales and Marketing / Competitive Marketing Analysis sample
 
-[Take a tour of the Sales and Marketing sample](sample-sales-and-marketing.md)
+[Take a tour of the updated Competitive Marketing Analysis sample](sample-competitive-marketing-analysis.md)
 
 This industry sample analyzes a manufacturing company, VanArsdel Ltd. It allows the Chief Marketing Officer to watch the industry and the market share for VanArsdel.  By exploring the sample, you can find the company's market share, product volume, sales, and sentiment.
+
+[Take a tour of the previous version of the sample](sample-sales-and-marketing.md)
 
 ### Supplier Quality sample
 
@@ -188,8 +190,10 @@ Several of the original built-in samples now have updated versions and these sam
 
    Updated samples:
 
+   - [Competitive Marketing Analysis](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Competitive%20Marketing%20Analysis.pbix)
    - [Corporate Spend](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Corporate%20Spend.pbix)
    - [Employee Hiring and History](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Employee%20Hiring%20and%20History.pbix)
+
 
    Original samples:
 

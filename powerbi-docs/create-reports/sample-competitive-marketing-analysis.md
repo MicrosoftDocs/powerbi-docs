@@ -12,7 +12,7 @@ LocalizationGroup: Samples
 ---
 # Competitive Marketing Analysis sample for Power BI: Take a tour
 
-The Competitive Marketing Analysis sample contains a report and dataset for a fictitious manufacturing company named VanArsdel Ltd. The VanArsdel Chief Marketing Officer (CMO) created this dashboard to keep an eye on the industry and the company's market share, product volume, sales, and sentiment.
+The Competitive Marketing Analysis sample contains a report and dataset for a fictitious manufacturing company named VanArsdel Ltd. The VanArsdel Chief Marketing Officer (CMO) created this report to keep an eye on the industry and the company's market share, product volume, sales, and sentiment.
 
 :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-marketing-analysis-report.png" alt-text="Screenshot of a page of the Competitive Marketing Analysis sample." lightbox="media/sample-competitive-marketing-analysis/power-bi-marketing-analysis-report.png":::
 
@@ -63,7 +63,7 @@ If you'd like to view it in the Power BI service, you can publish it there.
 
 To open the Competitive Marketing Analysis report, go to your workspace and select that report:
 
-:::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-marketing-analysis-report.png" alt-text="Screenshot of a page of the Competitive Marketing Analysis sample." lightbox="media/sample-competitive-marketing-analysis/power-bi-marketing-analysis-report.png":::
+:::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-select-martket-sample-report.png" alt-text="Screenshot shows My workspace with the Competitive Marketing Analysis report highlighted.":::
 
 If you're following along in Power BI Desktop, open the *.pbix* file to see the report.
 
@@ -148,7 +148,7 @@ The dashboard shows you the data a table.
 
 :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-return-table.png" alt-text="Screenshot shows the data as a visual and as a table." lightbox="media/sample-competitive-marketing-analysis/power-bi-return-table.png":::
 
-Power BI can also help you understand the causes of your data. Right-click on **ROI by Product**. From the context menu, select **Analyze** > **Find where this distribution is different**. The report provides analysis.
+Power BI can also help you understand the causes of your data. Right-click on **ROI by Product**. From the context menu, select **Analyze** > **Find where this distribution is different**. The report provides this analysis.
 
 :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-return-analysis.png" alt-text="Screenshot shows analysis for the selected field." lightbox="media/sample-competitive-marketing-analysis/power-bi-return-analysis.png":::
 
