@@ -286,7 +286,7 @@ Users accessing reports need to have proper permissions to all datasets and mode
 > [!NOTE]
 > Please refer to [this blogpost for important information about permissions required for composite models on Power BI Datasets and Analysis Services models](https://powerbi.microsoft.com/blog/announcing-general-availability-for-composite-models-on-power-bi-datasets-and-analysis-services-models/).
 
-If any dataset in the chain is in a Premium Per User workspace, the user accessing it will need a [Premium Per User license](../fundamentals/service-features-license-type#premium-per-user-ppu-license). If any dataset in the chain is in a Pro workspace, the user accessing it will need a [Pro license](../fundamentals/service-features-license-type#pro-license). If all the datasets in the chain are on [Premium capacities](../fundamentals/service-features-license-type#premium-capacity), the user accessing it can access it using a [Free license](../fundamentals/service-features-license-type#free-per-user-license).
+If any dataset in the chain is in a Premium Per User workspace, the user accessing it will need a [Premium Per User license](../fundamentals/service-features-license-type.md#premium-per-user-ppu-license). If any dataset in the chain is in a Pro workspace, the user accessing it will need a [Pro license](../fundamentals/service-features-license-type.md#pro-license). If all the datasets in the chain are on [Premium capacities](../fundamentals/service-features-license-type.md#premium-capacity), the user accessing it can access it using a [Free license](../fundamentals/service-features-license-type.md#free-per-user-license).
 
 ### Security warning
 
