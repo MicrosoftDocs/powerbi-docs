@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/30/2023
+ms.date: 06/26/2023
 ---
 
 # Power BI Report Builder change log
@@ -18,7 +18,7 @@ Learn about new items, bug fixes, and known issues for each release of Power BI 
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
 
-## May 2023
+## June 2023
 
 Version 15.7.1804.21, released June 26, 2023
 
