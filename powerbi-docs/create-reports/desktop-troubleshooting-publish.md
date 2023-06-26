@@ -38,7 +38,7 @@ When you publish a report and dataset from Power BI Desktop to the Power BI serv
 
 **Error: "The remote server returned an error: (400) Bad Request."**
 
-This error can occur if you have a Power BI Pro license and are trying to publish a report that has a data model that's more than one GB. The model memory size limit is one GB for Power BI Pro. If you want to publish larger reports, you need either a Premium per user license or a Premium capacity subscription. For more information, see [Power BI pricing](https://powerbi.microsoft.com/pricing/). 
+This error can occur if you have a Power BI Pro license and are trying to publish a report that has a data model that's larger than one GB. The model memory size limit is one GB for Power BI Pro. If you want to publish larger reports, you need either a Premium per user license or a Premium capacity subscription. For more information, see [Power BI pricing](https://powerbi.microsoft.com/pricing/). 
 
 **Error: "Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host."**
 
@@ -52,7 +52,7 @@ This error is most likely caused by a network problem. Try the following trouble
 
 ### Can't publish to a different workspace
 
-This problem can occur if the Power BI tenant setting [Use datasets across workspaces](/power-bi/admin/service-admin-portal-workspace#use-datasets-across-workspaces) is disabled. Work with your Power BI tenant Admin to enable this setting.
+This problem can occur if the Power BI tenant setting [Use datasets across workspaces](/power-bi/admin/service-admin-portal-workspace#use-datasets-across-workspaces) is disabled. Work with your Power BI tenant admin to enable this setting.
 
 ### Can't republish or replace an existing report
 
@@ -60,7 +60,7 @@ This problem can occur in the following scenarios.
 
 - The Power BI tenant setting [Block republish and disable package refresh](/power-bi/admin/service-admin-portal-dataset-security#block-republish-and-disable-package-refresh) is enabled. Work with your Power BI tenant admin to disable this setting.
 
-- If you see the error **A report has already been published with this name**, you're trying to publish a report that's connected via live connection on top of an original report that includes a dataset. If you publish a live-connected report with the same name as the original, the dataset is overwritten. This error is intended to prevent the loss of the dataset. Members of a workspace can't replace an original shared report. If they try to do so, they're prompted to rename the file and publish.
+- If you see the error **A report has already been published with this name**, you're trying to publish a report that's connected via live connection on top of an original report that includes a dataset. If you publish a live-connected report with the same name as the original, the dataset is overwritten. This error is intended to prevent the loss of the dataset. Members of a workspace can't replace an original shared report. If they try to do so, they're prompted to rename the file and then publish.
 
    You can download the original report (not the live-connected one). You should be able to publish that copy correctly to overwrite the original report. If you need a separate live-connected report, you can publish it with a different name.
 
