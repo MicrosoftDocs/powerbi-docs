@@ -281,7 +281,7 @@ The chain in the previous image is of length three, which is the maximum length.
 
 ### Permissions and licensing
 
-Users accessing reports need to have proper permissions to all datasets and models in the [chain that is formed by the dataset or model](#chaining) they want to access and the datasets or models on which the reports are based. This permission can be Read or Build depending on whether they need to view the reports or make changes and create new reports.
+Users accessing reports need to have proper [permissions to all datasets and models in the chain that's formed by the dataset or model](#chaining) that they want to access and the datasets or models on which the reports are based. This permission can be Read or Build depending on whether they need to view the reports or make changes and create new reports.
 
 > [!NOTE]
 > Refer to this blogpost for important information about [permissions required for composite models on Power BI datasets and Analysis Services models](https://powerbi.microsoft.com/blog/announcing-general-availability-for-composite-models-on-power-bi-datasets-and-analysis-services-models/).
