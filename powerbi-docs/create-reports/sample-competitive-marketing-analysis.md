@@ -20,7 +20,7 @@ VanArsdel has many competitors but is the market leader in its industry. The CMO
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created samples using real, anonymized data. The data is available in the following formats: built-in sample in the Power BI service and *.pbix* Power BI Desktop file. See [Samples for Power BI](sample-datasets.md).
 
-This tour explores the Competitive Marketing Analysis sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop. 
+This tour explores the Competitive Marketing Analysis sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
 
 ## Prerequisites
 
@@ -28,184 +28,129 @@ You don't need a Power BI license to explore the samples in Power BI Desktop. Yo
 
 ## Get the sample
 
-Get the sample in one of these ways:
+Before you can use the sample, get the sample in one of the following ways:
 
-- Get the [built-in sample in the Power BI service](#get-the-sample-in-the-power-bi-service). This sample includes a report and a dashboard.
-- Download the [.pbix file](#get-the-pbix-file-for-this-sample) to explore in Power BI Desktop.
-- Download the [Excel workbook](#get-the-excel-workbook-for-this-sample) to view the raw data in Excel, or publish to the Power BI service.
+- Get the [built-in sample in the service](#get-the-built-in-sample).
+- Download the [.pbix file](#get-the-pbix-file-for-this-sample).
 
-## Get the sample in the Power BI service
+### Get the built-in sample
 
 1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
-1. On the Learning center page, under **Sample reports**, scroll until you see the **Competitive Marketing Analysis Sample**.
+1. On the **Learning center** page, under **Sample reports**, scroll until you see **Competitive Marketing Analysis**.
 
-1. Select the sample. It opens in Reading mode.
+1. Select the sample. It opens the report in Reading mode.
 
-1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
+   Power BI imports the built-in sample, adding a report and a dataset to your **My workspace**.
 
-   :::image type="content" source="media/sample-competitive-marketing-analysis/sales11.png" alt-text="Screenshot showing Competitive Marketing Analysis Sample entry.":::
+### Get the .pbix file for this sample
 
-   Select the dashboard to view the sample dashboard.
+Alternatively, you can download the Competitive Marketing Analysis sample as a *.pbix* file, which is designed for use with Power BI Desktop.
 
-### What's the dashboard telling us?
+1. Open the GitHub Samples repository to the [Competitive Marketing Analysis sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Competitive%20Marketing%20Analysis.pbix).
 
-With the [built-in sample in the Power BI service](#get-the-sample-in-the-power-bi-service), you have a report *and* a dashboard. Let's start the tour at the dashboard and look at the tiles the CMO has chosen to pin. We see information about our market share, sales, and sentiment. The dashboard breaks down data by region, time, and competition.
+1. Select **Download** in the upper-right corner. It downloads automatically to your **Downloads** folder.
 
-- The number tiles along the left column show industry sales volume for the past year (50,000), market share (32.86%), sales volume (16,000), sentiment score (68), sentiment gap (4), and total units sold (1 million).
-- The top line chart (**% Units Market Share vs. % Units Market Share Rolling 12 Months**) shows how our market share fluctuates over time. Notice the large drop in June. Our rolling 12-month (R12M) share, which was increasing for a while, is now starting to stall.
-- Our biggest competitor is Aliqui, as evident in the middle column chart tile (**Total Units YTD Variance %**).
-- Most of our business is in the East and Central regions.
-- The line chart at the bottom (**Total Units for 2014**) shows that our dip in June isn't seasonal. None of our competitors show the same trend.
-- The **Total Units Overall** and **Total Units YTD** tiles on the right show units sold, by segment and by region/manufacturer. The largest market segments for our industry are **Productivity** and **Convenience**.
+If you'd like to view it in the Power BI service, you can publish it there.
 
-You can also [use Q&A in the dashboard](#use-qa-to-dig-deeper-in-the-dashboard) to learn more about your data.
+1. Open the file in Power BI Desktop and select **File** > **Publish** > **Publish to Power BI** or choose **Publish** in the **Home** ribbon.
 
-## Get the .pbix file for this sample
+1. In the **Publish to Power BI** dialog box, choose a workspace, and then **Select**.
 
-Alternatively, you can download the Competitive Marketing Analysis sample as a [.pbix file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix). You can explore this sample in Power BI Desktop, and you can upload it to the Power BI service.
+   Power BI imports the sample, adding the report and dataset to your selected workspace.
 
-1. After you open the file in Power BI Desktop, select **File** > **Publish** > **Publish to Power BI** or choose **Publish** in the **Home** ribbon.
+## Explore the report
 
-1. In the **Publish to Power BI** dialog, choose a workspace and then **Select**.
+To open the Competitive Marketing Analysis report, go to your workspace and select that report:
 
-1. In the Power BI service, in your workspace, scroll to the **Competitive Marketing Analysis Sample** report and select to open.
+:::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-marketing-analysis-report.png" alt-text="Screenshot of a page of the Competitive Marketing Analysis sample." lightbox="media/sample-competitive-marketing-analysis/power-bi-marketing-analysis-report.png":::
 
-1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
+If you're following along in Power BI Desktop, open the *.pbix* file to see the report.
 
-The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still [use Q&A in the dashboard](#use-qa-to-dig-deeper-in-the-dashboard) to learn more about your data and make changes to your dashboard.
+You can edit current visualizations and create your own visualizations that use the dataset for this sample. This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
-## Get the Excel workbook for this sample
+Select **Edit** in the **Power BI** header bar to explore in the editing view:
 
-If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot** > **Manage**.
+- See how the pages are made, the fields in each chart, and the filters on the pages.
+- Add pages and charts, based on the same data.
+- Change the visualization type for each chart.
+- Pin charts of interest to your dashboard.
 
-If you want to get and use the Excel file in the Power BI service, follow these steps:
+Save or discard your changes.
 
-1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *Competitive Marketing Analysis Sample-no-PV.xlsx*.
+### Explore the Executive Overview page
 
-1. Open the file in Excel and then select **File** > **Publish** > **Publish to Power BI**.
+The visualizations in a Power BI report aren't just pictures. The tiles allow you to interact with data in order to better understand and analyze that data. There are several ways to interact with the data.
 
-1. Select a workspace, such as **My workspace**, and choose **Export**.
+1. Under **Pages**, select **Executive Overview**. The overview shows high-level results for different sales channels and products over time.
 
-   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
+1. In the **Total Sales by Product and Channel** tile, right-click a bar. From the context menu, select **Drill through** > **Detailed Info**.
 
-1. In the Power BI service, the exported data appears as a dataset in the selected workspace. Select **More options** (...) > **Auto-create report**.
+   :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-overview-drill-through.png" alt-text="Screenshot shows the context menu for a data field with Drill through, then Detailed Info selected.":::
 
-1. Select **Save**, enter a name for your report, and then choose **Save**.
+   The report opens a report page with data for the bar that you selected. This page is only visible by using the drill through feature. If you select **Edit** from the report header to enter Edit mode, the page is visible and editable there.
 
-1. From the **More options** (...) menu, select **Pin to a dashboard**. Select **New dashboard**, enter a name, and choose **Pin live**.
+1. If you entered Edit mode, select **Reading view**. Then select **Executive Overview** to return to that page of the report.
 
-The dashboard that you create this way isn't the same as the sample dashboard created by the built-in sample. You can still [use Q&A in the dashboard](#use-qa-to-dig-deeper-in-the-dashboard) to explore your data and make changes to your dashboard.
+You can also learn about the data by using *tooltips*. To see a tooltip, hover over one of the elements of a tile.
 
-## Use Q&A to dig deeper in the dashboard
+   :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-overview-hover-tooltip.png" alt-text="Screenshot shows a tooltip displayed by hovering over one of the visualizations.":::
 
-No matter whether you downloaded the dashboard or created your own, you can use Q&A in the dashboard to discover other details in the data.
+Power BI automatically generates some tooltips, but you can add values to any visualization.
 
-### Which segments drive sales? Do they match the industry trend?
+1. Select **Edit** and then select the **Total Sales by Product and Channel** tile.
 
-1. Select the **Total Units Overall by Segment** tile, which opens Q&A and populates it with the query, *total units by segment*.
-1. At the end of the existing query, add: *for VanArsdel*. Q&A interprets the question and displays an updated chart with the answer. The product volume is mostly from the **Convenience** and **Moderation** segments.
+1. Under **Visualizations**, scroll down to **Tooltips**.
 
-   :::image type="content" source="media/sample-competitive-marketing-analysis/sales2.png" alt-text="Screenshot of Q&A total units by segment for VanArsdel." lightbox="media/sample-competitive-marketing-analysis/sales2.png":::
+1. Expand **KPI**, then drag **KPI** to the box under **Tooltips**.
 
-1. Our share in the **Moderation** and **Convenience** categories is high. VanArsdel competes in these segments.
-1. Return to the dashboard by selecting the **Competitive Marketing Analysis Sample** from the left navigation bar.
+   :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-overview-add-tooltip.png" alt-text="Screenshot shows the Visualizations pane and the Data pane with a value for the tooltip.":::
 
-### What does total unit market share look like for category (versus region)?
+1. Select **Reading view**. Be sure to save your changes.
 
-1. Notice the **Total Units YTD by Manufacturer, Region** tile. What is the total unit market share by category?
+   Hover over the visual to see your revised tooltip.
 
-   :::image type="content" source="media/sample-competitive-marketing-analysis/sales3.png" alt-text="Screenshot of the Total Units YTD by Manufacturer, Region tile." lightbox="media/sample-competitive-marketing-analysis/sales3.png":::
+   :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-overview-revise-tooltip.png" alt-text="Screenshot shows the tooltip, as revised, displayed by hovering over one of the visualizations.":::
 
-1. Select the question field at the top of the dashboard and type the question, *total units by manufacturer and category for 2014 as a treemap*. The visualization updates as you type the question.
+### Explore the Top 10 Regions page
 
-   :::image type="content" source="media/sample-competitive-marketing-analysis/sales12.png" alt-text="Screenshot of the Q&A Total units by manufacturer and category." lightbox="media/sample-competitive-marketing-analysis/sales12.png":::
+Under **Pages** select **Top 10 Regions** to view that report page. In the **Total Sales by Channel and State**, hover over a value.
 
-1. To compare the findings, pin the chart to your dashboard. Notice this interesting fact: In 2014, VanArsdel sold only products in the **Urban** category.
+:::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-region-hover-tooltip.png" alt-text="Screenshot shows a report page tooltip displayed in the Top 10 Regions page." lightbox="media/sample-competitive-marketing-analysis/power-bi-region-hover-tooltip.png":::
 
-## Competitive Marketing Analysis Sample report
+This tooltip is an entire report page. Such a page can contain as many visualizations as needed. Keep in mind that a large tooltip obscures a large part of your report.
 
-- If you got the [built-in sample in the Power BI service](#get-the-sample-in-the-power-bi-service), you can open the report from the dashboard. Dashboards are entry points into reports. If you create a dashboard tile from an underlying report, selecting that tile opens the report.
-- If you downloaded the [.pbix file](#get-the-pbix-file-for-this-sample), then uploaded it to the Power BI service, you don't have a dashboard, but you have the full report. Open it from the workspace where you saved it.
-- If you downloaded the Excel workbook version of this sample, you don't have the dashboard or the report, but Power BI can auto-create a report for you from the data. See [Get the Excel workbook for this sample](#get-the-excel-workbook-for-this-sample) in this article for details.
+You can add a report page tooltip to any visual.
 
-The report has four pages:
+1. Select **Edit** to enter Edit mode.
 
-- VanArsdel Market Share
-- YTD Category Trend Analysis
-- Sentiment
-- Growth Opportunities
+1. In the tabs at the bottom, select **Top 10 Regions**, then select the **Total Sales and ROI by State and Channel** visualization.
 
-### VanArsdel - Market Share page
+1. Select **Format visual** > **General**, and then expand **Tooltips**. For **Type**, select **Report page**. For **Page**, select **Tooltip**.
 
-Page one of the report focuses on VanArsdel's market share.
+   :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-region-set-tooltip.png" alt-text="Screenshot shows the Tooltips options for a visualization.":::
 
-1. Open the **VanArsdel - Market Share** page of the Competitive Marketing Analysis Sample report.
+1. Select **Reading view** to leave Edit mode. Be sure to save your changes.
 
-   :::image type="content" source="media/sample-competitive-marketing-analysis/sales5.png" alt-text="Screenshot of the VanArsdel Market Share page." lightbox="media/sample-competitive-marketing-analysis/sales5.png":::
+Hover over **Total Sales and ROI by State and Channel** to see the tooltip there.
 
-1. Look at the **Total Units by Month and isVanArsdel** column chart at the bottom of the report. The black column represents VanArsdel (our products), and the green column is our competition. The **% Units Market Share R12M** line in the **% Units Market Share vs. % Units Market Share Rolling 12 Months** chart shows that our market share is no longer increasing over time. It's even declining a bit. Why do we have a large market share dip in June?
+:::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-region-new-tooltip.png" alt-text="Screenshot shows the visual where the new tooltip has been added." lightbox="media/sample-competitive-marketing-analysis/power-bi-region-new-tooltip.png":::
 
-1. The **Total Category Volume by Segment** bar chart on the right is filtered to show VanArsdel's top two segments. Take a closer look at this filter:
+### Explore the Return on Investment page
 
-   1. Select the **Total Category Volume by Segment** chart.
+You can always look at the raw numbers that underlie the visualizations. Power BI also provides tools for analyzing the data.
 
-   1. Select the **Filters** pane on the right to expand it.  
+Under **Pages**, select **Return on Investment**. Right-click on the **ROI by Product** visualization. From the context menu, select **Show as a table**.
 
-   1. Under **Visual level filters**, **Segment** is filtered to include only the **Convenience** and **Moderation** segments.  
+:::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-return-show-table.png" alt-text="Screenshot shows the context menu with the show as a table option.":::
 
-   1. Modify the filter by selecting **Segment** to expand it, and then check **Productivity** to add that segment.  
+The dashboard shows you the data a table.
 
-1. In the **Total Units by Month and isVanArsdel** chart, select **Yes** in the legend to cross-filter the page by **VanArsdel**. In the **Total Category Volume by Segment** chart, notice that we don't compete in the **Productivity** segment.
+:::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-return-table.png" alt-text="Screenshot shows the data as a visual and as a table." lightbox="media/sample-competitive-marketing-analysis/power-bi-return-table.png":::
 
-1. Select the **Yes** again in the legend to remove the filter.
+Power BI can also help you understand the causes of your data. Right-click on **ROI by Product**. From the context menu, select **Analyze** > **Find where this distribution is different**. The report provides analysis.
 
-1. Look at the **% Units Market Share and % Units Market Share R12M by Month** line chart. It shows our monthly market share and rolling 12-month market shares. Rolling-months data helps to smooth out monthly fluctuations and shows the long-term trends. In the **Total Category Volume by Segment** bar chart, select **Convenience**, and then **Moderation** to see the fluctuation in market share for each segment. The **Moderation** segment shows much more fluctuation in market share.
-
-Next, look at the **Sentiment Analysis** page of the report.
-
-### YTD Category Trend Analysis page
-
-Page two of the report focuses on the year-to-date category trend.
-
-:::image type="content" source="media/sample-competitive-marketing-analysis/reportpage2.png" alt-text="Screenshot of the YTD Category Trend Analysis page." lightbox="media/sample-competitive-marketing-analysis/reportpage2.png":::
-
-Notice the following details:
-
-- VanArsdel is the largest company in this category, and its biggest competitors are Natura, Aliqui, and Pirium.
-- Aliqui is growing, but product volume compared to VanArsdel is still low.
-- The treemap shows VanArsdel in green. In the East region, customers prefer the competition, but in the Central region VanArsdel is doing well. VanArsdel's share in the East region is the lowest.
-- Geography relates to units sold. The East region is the dominant region for most manufacturers and VanArsdel has a strong presence in the Central region as well.
-- On the **Total Units YTD Var % by Month and Manufacturer** chart in the bottom right, VanArsdel has positive variance, which is a good sign. VanArsdel is doing better than last year, but so is their competitor, Aliqui.
-
-Next, look at the **Sentiment Analysis** page of the report.
-
-### Sentiment Analysis page
-
-Page three of the report focuses on consumer sentiment.
-
-:::image type="content" source="media/sample-competitive-marketing-analysis/sales6.png" alt-text="Screenshot of the Sentiment Analysis page." lightbox="media/sample-competitive-marketing-analysis/sales6.png":::
-
-Tweets, Facebook posts, blogs, and articles all contribute to consumer sentiment, which appears in the two line charts on left side of the page. The **VanArsdel - Sentiment by Month** chart in the top-left corner shows that sentiment for our products was mostly neutral up until February. Then, a large drop started in February and bottomed out in June. What happened to cause this drop in sentiment?
-
-Let's look at external sources. In February, several articles and blog posts rated VanArsdel's customer service as the worst in the industry. This bad press had a direct correlation to customer sentiment and sales. VanArsdel worked hard to improve customer service, and customers and the industry took note. In July, positive sentiment started to rise and then reached an all-time high in the 60s. The **Total Units by Month** charts on pages one and two of the report reflect the uptick in sentiment. Perhaps this fact partially explains our market share dips for June?
-
-Sentiment gap might be another area to explore. Which districts have the highest sentiment gap? How can management capitalize on it? How can they replicate it in other districts?
-
-### Growth Opportunities page
-
-Page four of the report focuses on competitive product analysis.
-
-:::image type="content" source="media/sample-competitive-marketing-analysis/sales8.png" alt-text="Screenshot of the Growth Opportunities page." lightbox="media/sample-competitive-marketing-analysis/sales8.png":::
-
-Notice the following details:
-
-- The **Total Units by Segment** chart in the bottom-left shows all the category segments, except for VanArsdel's two strongest segments. Select each of the segments in turn to identify potential expansion areas for VanArsdel.
-- The **Extreme** and **Productivity** segments are growing faster than others. However, VanArsdel doesn't compete in those segments. If VanArsdel is to move into these segments, they can use the data to see which segments are popular in which regions. VanArsdel can further investigate such questions as which regions are growing faster and who would be their biggest competitor in that segment.
-- Remember the market share dip in June? June is a significant month for the **Productivity** segment, a segment VanArsdel doesn't compete in at all. This detail could help explain the market share dip in June.
-
-By filtering the visualizations by VanArsdel, by segment, by month, and by region, VanArsdel can discover growth opportunities.
-
+:::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-return-analysis.png" alt-text="Screenshot shows analysis for the selected field." lightbox="media/sample-competitive-marketing-analysis/power-bi-return-analysis.png":::
 
 ## Create a Competitive Marketing Analysis dashboard
 
@@ -232,6 +177,35 @@ To create a dashboard in the Power BI service:
 Your new dashboard now appears in **My workspace**.
 
 For more information, see [Introduction to dashboards for Power BI designers](service-dashboards.md).
+
+## Use Q&A to dig deeper in the dashboard
+
+A dashboard offers the ability to ask questions about data in natural language to create visuals. It doesn't matter how you create your dashboard or which tiles it has. You can ask questions about any dataset attached to your dashboard.
+
+In this section, use the dashboard to find out, which segments drive sales? Do they match the industry trend?
+
+1. In the dashboard, select **Ask a question about your data**.
+
+   Even before you start typing, the dashboard displays suggestions to help you form your question.
+
+1. In **Ask a question about your data**, enter *total units by segment*. The dashboard displays the data as a visualization.
+
+   :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-unit-segment.png" alt-text="Screenshot shows total units by segment as a stacked bar chart." lightbox="media/sample-competitive-marketing-analysis/power-bi-unit-segment.png":::
+
+1. At the end of the query, add: *for VanArsdel*. Q&A interprets the question and displays an updated chart with the answer.
+
+   :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-unit-segment-vanarsdel.png" alt-text="Screenshot shows total units by segment for VanArsel as a stacked bar chart." lightbox="media/sample-competitive-marketing-analysis/power-bi-unit-segment-vanarsdel.png":::
+
+   The product volume is mostly from the **Convenience** and **Moderation** segments your share in the **Moderation** and **Convenience** categories is high. VanArsdel competes in these segments.
+
+1. Add *by region* to the query. The dashboard breaks down the results by region.
+
+   :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-unit-segment-vanarsdel-region.png" alt-text="Screenshot shows total units by segment for VanArsel by region as a stacked bar chart." lightbox="media/sample-competitive-marketing-analysis/power-bi-unit-segment-vanarsdel-region.png":::
+
+   > [!TIP]
+   > Are any of these visualizations useful for future reference? Select **Pin visual** to add a visual to a new or existing dashboard.
+
+1. Select **Exit Q&A** to return to the dashboard.
 
 ## Next steps
 
