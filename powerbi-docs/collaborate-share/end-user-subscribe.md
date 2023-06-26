@@ -17,7 +17,7 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Subscribe yourself and others to Power BI reports, dashboards, and paginated reports. You receive an email on a schedule you set. The email contains a snapshot and link to the report or dashboard or a full attachment of the report or dashboar. If you're a workspace administrator, learn how to manage subscriptions in your workspace, including how to take over subscriptions owned by others.
+Subscribe yourself and others to Power BI reports, dashboards, and paginated reports. You receive an email on a schedule you set. The email contains a snapshot and link to the report or dashboard or a full attachment of the report or dashboard. If you're a workspace administrator, learn how to manage subscriptions in your workspace, including how to take over subscriptions owned by others.
 
 ## Subscribe to a report or dashboard in the Power BI service 
 
@@ -36,7 +36,7 @@ Your Fabric admin (previously Power BI admin) needs to enable subscriptions in y
 
 
 ## Subscribe to a report or dashboard
-Whether you're subscribing to a dashboard or to a report page, the process is similar. A single button allows you to subscribe to the Power BI service dashboards and reports. Subscribing to a report offers you a few more field options, so we are using a report for our example. 
+Whether you're subscribing to a dashboard or to a report page, the process is similar. A single button allows you to subscribe to the Power BI service dashboards and reports. Subscribing to a report offers you a few more field options, so we're using a report for our example. 
 
 :::image type="content" source="./media/end-user-subscribe/power-bi-subscribe.png" alt-text="Screenshot showing the Subscribe to report icon on the top menu bar.":::
 
@@ -50,7 +50,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 
 1. Use the green slider to turn the subscription on and off. Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
-1. Edit or add recipients by email address, ensuring that you have at least one. Unless you are a report owner, you can only subscribe yourself.
+1. Edit or add recipients by email address, ensuring that you have at least one. Unless you're a report owner, you can only subscribe yourself.
 
     > [!NOTE] 
     > B2B guest users can only subscribe themselves. 
@@ -78,7 +78,7 @@ If your subscription is ready, select **Save**. To make your subscription more p
     > By default, a report subscription inherits the name of the active report page. Consider changing the subscription name if you select a different report page. 
 
 1. Include additional information in the email. Select one or more of these checkboxes.
-    - **Permission to view the report/dashboard in Power BI**: Give recipients permission to open and view the report or dashboard in the Power BI service (app.powerbi.com). This option is not available in all situations. 
+    - **Permission to view the report/dashboard in Power BI**: Give recipients permission to open and view the report or dashboard in the Power BI service (app.powerbi.com). This option isn't available in all situations. 
     - **Link to report/dashboard in Power BI**: Include a "Go to report" button in the body of the email that links to the report or dashboard in the Power BI service.
     - **Preview image (for Power BI reports only)**: Include a preview of the report page in the body of the email.
     
@@ -92,17 +92,17 @@ Both report authors and report consumers often make changes to reports by changi
 
 The new **Include my changes** button triggers two new options -- **Preview** and **Update**. **Preview** displays a view-only version of the original subscription that you're subscribed to and, if you have permissions, that you're sending out to your subscribers. **Update** changes the subscription to include the new changes. To edit your subscription:
 
-1. Apply any changes (for example, apply filters,spotlights,drilling, slicers, or cross-highlighting) to the report so that it's in the state you want to send out.
+1. Apply any changes (for example, apply filters, spotlights, drilling, slicers, or cross-highlighting) to the report so that it's in the state you want to send out.
 1. Select **Subscribe to report** from the top menubar of the report canvas to reopen the **Subscriptions** pane.
 1. Select the pencil icon to edit the details of your existing subscription, such as changing the delivery frequency, adding an email message, changing permissions, and more.
 1. Select **More options** > **Include my changes** > **Preview** to double-check that the changes are ready to go.
-1. Select **Back to subscription** and select teh pencil icon. 
+1. Select **Back to subscription** and select the pencil icon. 
 1. Select **<ore options** > **Include my changes** > **Update**
 1. Save your subscription. 
 
 ### You make changes to another's report
 
-When you make changes to a report created by someone else, you are given the opportunity to save those changes with the subscription. When **Include my changes** is unchecked, Power BI ignores all changes you might have made to the report, and keeps you subscribed to the report as published by the author. When **Include my changes** is checked, Power BI subscribes you to the report including all changes you've made to the report. Changes include:  
+When you make changes to a report created by someone else, you're given the opportunity to save those changes with the subscription. When **Include my changes** is unchecked, Power BI ignores all changes you might have made to the report, and keeps you subscribed to the report as published by the author. When **Include my changes** is checked, Power BI subscribes you to the report including all changes you've made to the report. Changes include:  
 
 - filters (filter pane)
 - slicers
@@ -122,9 +122,9 @@ If you're the author of the report, **Include my changes** is a great way to cre
 
     :::image type="content" source="./media/end-user-subscribe/power-bi-my-changes.png" alt-text="Screenshot showing the My changes section of the Subscriptions pane.":::
 
-1. Select **Include my changes** and then choose **Update**.  If you want to review the report before updating, select **Preview**. Preview view displays the version of the report that you are subscribed to.
+1. Select **Include my changes** and then choose **Update**.  If you want to review the report before updating, select **Preview**. Preview view displays the version of the report that you're subscribed to.
 
-    :::image type="content" source="./media/end-user-subscribe/power-bi-preview.png" alt-text="Screenshot showing the the preview version of a report page.":::
+    :::image type="content" source="./media/end-user-subscribe/power-bi-preview.png" alt-text="Screenshot showing the preview version of a report page.":::
 
 1. If the version of the report is the one you want, from the upper right corner, select **Back to subscription**, **select Update**, and save the subscription.
 
@@ -149,11 +149,11 @@ Subscriptions are managed on a workspace level. Subscriptions can be viewed and 
 
 ### Subscriptions in a workspace
 
-To see all subscriptions that you own in a given workspace, select **Manage all**
+To see all of the subscriptions that you own in a given workspace, select **Manage all**
 
 :::image type="content" source="media/end-user-subscribe/power-bi-manage-all.png" alt-text="Screenshot showing the Subscriptions pane with Manage all outlined in red.":::
 
-From here, you see all subscriptions you've created in the currently selected workspace. For each subscription, Power BI displays the name you gave to the subscription, the name of the content you're subscribing to, and the content type. If you selected **Include my changes**, the **State** column includes the date. Search for subscriptions by keyword or filter by any of these fields. 
+From here, you see all the subscriptions you've created in the currently selected workspace. For each subscription, Power BI displays the name you gave to the subscription, the name of the content you're subscribing to, and the content type. If you selected **Include my changes**, the **State** column includes the date. Search for subscriptions by keyword or filter by any of these fields. 
 
 :::image type="content" source="media/end-user-subscribe/power-bi-notifications.png" alt-text="Screenshot showing the Notifications pane with Power BI subscription outlined in red.":::
 
@@ -345,7 +345,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 **Unsupported features**    
 
 * Dataset refresh operations using an XMLA endpoint.
-* Email subscriptions are not supported when  **Block public internet access** is enabled in Power BI. In this case, all subscriptions will fail.
+* Email subscriptions aren't supported when  **Block public internet access** is enabled in Power BI. In this case, all subscriptions will fail.
 
 * The following Power BI visuals aren't supported.  When you subscribe to a report containing these visuals, they display an error symbol. 
     - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
