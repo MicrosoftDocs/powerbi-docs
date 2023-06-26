@@ -225,7 +225,6 @@ Fabric administrators can use the Power BI audit and activity logs to view detai
 See [Operations available in the audit and activity logs](../admin/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs) in "Track user activities in Power BI" for details. 
 
 ---
-
    
 ## Subscribe others 
 
