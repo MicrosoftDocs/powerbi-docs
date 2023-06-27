@@ -7,7 +7,7 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 11/26/2019
+ms.date: 06/30/2023
 LocalizationGroup: Connect to services
 ---
 # Connect to Office365Mon with Power BI
