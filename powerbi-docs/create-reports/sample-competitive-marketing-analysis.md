@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/20/2023
+ms.date: 06/28/2023
 LocalizationGroup: Samples
 ---
 # Competitive Marketing Analysis sample for Power BI: Take a tour
@@ -114,7 +114,7 @@ Power BI automatically generates some tooltips, but you can add values to any vi
 
 ### Explore the Top 10 Regions page
 
-Under **Pages** select **Top 10 Regions** to view that report page. In the **Total Sales by Channel and State**, hover over a value.
+Under **Pages**, select **Top 10 Regions** to view that report page. In the **Total Sales by Channel and State**, hover over a value.
 
 :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-region-hover-tooltip.png" alt-text="Screenshot shows a report page tooltip displayed in the Top 10 Regions page." lightbox="media/sample-competitive-marketing-analysis/power-bi-region-hover-tooltip.png":::
 
@@ -154,7 +154,7 @@ Power BI can also help you understand the causes of your data. Right-click on **
 
 ## Create a Competitive Marketing Analysis dashboard
 
-A Power BI *dashboard* is a single page that contains visualizations that can come from one or more reports, and each report is based on one dataset. You can also generate visualizations on the dashboard by using the Q&A *Ask a question about your data* feature to explore the data associated with a report. Think of a dashboard as an entryway into the underlying reports and datasets. Select a visualization to take you to the report that was used to create it.
+A Power BI *dashboard* is a single page that contains visualizations that can come from one or more reports, and each report is based on one dataset. You can also generate visualizations on the dashboard by using the *Ask a question about your data* feature to explore the data associated with a report. Think of a dashboard as an entryway into the underlying reports and datasets. Select a visualization to take you to the report that was used to create it.
 
 To create a dashboard in the Power BI service:
 
@@ -166,7 +166,7 @@ To create a dashboard in the Power BI service:
 
    Or, to add a single visualization to a dashboard, hover over it and then select **Pin visual**.
 
-1. In **Pin to dashboard**, select **New Dashboard** and enter a name for your dashboard.
+1. In **Pin to dashboard**, select **New dashboard** and enter a name for your dashboard.
 
    :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-new-dashboard.png" alt-text="Screenshot shows the Pin to dashboard dialog box for adding to a new dashboard.":::
 
