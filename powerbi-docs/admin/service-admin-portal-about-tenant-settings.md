@@ -16,11 +16,16 @@ LocalizationGroup: Administration
 
 **Tenant settings** enable fine-grained control over the features that are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization, or you may only want a particular feature to be available to a specific group.
 
-> [!NOTE]
-> Tenant settings that control the availability of features in the Power BI user interface can help to establish governance policies, but they're not a security measure. For example, the **Export data** setting doesn't restrict the permissions of a Power BI user on a dataset. Power BI users with read access to a dataset have the permission to query this dataset and might be able to persist the results without using the **Export data** feature in the Power BI user interface.
+Tenant settings that control the availability of features in the Power BI user interface can help to establish governance policies, but they're not a security measure. For example, the **Export data** setting doesn't restrict the permissions of a Power BI user on a dataset. Power BI users with read access to a dataset have the permission to query this dataset and might be able to persist the results without using the **Export data** feature in the Power BI user interface.
 
 > [!NOTE]
 > It can take up to 15 minutes for a setting change to take effect for everyone in your organization.
+
+## New tenant settings
+
+To help you quickly identify changes and respond, a message at the top of the tenant settings page appears when there's a change. The message lists new tenant settings and changes to existing ones.
+
+You can identify new settings according to their *new* icon.  
 
 ## How to get to the tenant settings
 
@@ -52,8 +57,6 @@ Many of the settings can have one of three states:
 
 ## Tenant setting sections
 
-The sections of the tenant settings page are listed in the table below.
-
 * [Help and support settings](/power-bi/support/service-admin-portal-help-support)
 * [Workspace settings](service-admin-portal-workspace.md)
 * [Information protection](service-admin-portal-information-protection.md)
@@ -76,7 +79,11 @@ The sections of the tenant settings page are listed in the table below.
 * [User experience experiments](service-admin-portal-user-experience-experiments.md)
 * [Share data with your Microsoft 365 services](service-admin-portal-share-data-microsoft-365-services.md)
 * [Insights settings](service-admin-portal-insights.md)
+* [Datamart settings](./service-admin-portal-datamart.md)
+* [Data model settings](./service-admin-portal-data-model.md)
 * [Quick measure suggestions settings](service-admin-portal-quick-measure-suggestions-settings.md)
+* [Scale-out settings](./service-admin-portal-scale-out.md)
+* [Git integration](./service-admin-portal-git-integration.md)
 
 ## Next steps
 

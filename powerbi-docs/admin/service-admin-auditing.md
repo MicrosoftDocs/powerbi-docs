@@ -7,14 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 10/26/2022
-ms.custom: licensing support
+ms.date: 06/19/2023
+ms.custom: licensing support,fabric
 LocalizationGroup: Administration
 ---
 
 # Track user activities in Power BI
 
 Knowing who is taking what action on which item in Power BI can be critical in helping your organization fulfill its requirements, like meeting regulatory compliance and records management. This article discusses two options to track user activity: The [Power BI activity log](#use-the-activity-log) and the [unified audit log](#use-the-audit-log).
+
+> [!NOTE]
+> The procedures described in this article can also be used to track user activities on all items in the Fabric experience. However, currently, for non-Power BI Fabric items, only *create*, *read*, *update*, and *delete* operations are recorded. 
 
 ## Choosing a log source
 
@@ -41,7 +44,7 @@ Power BI administrators can analyze usage for all Power BI resources at the tena
 > [!NOTE]
 > You need to be familiar with the [Power BI Admin API](/rest/api/power-bi/admin) and [Power BI PowerShell modules](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true). PowerShell modules must be installed before you can run commands.
 >
-> There can be a lag of up to 30 minutes to retrieve Power BI events.
+> Most audit events show up within 30 minutes, however, there can be a lag of up to 60 minutes to retrieve Power BI events.
 
 ### Activity log requirements
 
@@ -77,10 +80,6 @@ while(response.ContinuationToken != null)
 }
 completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 ```
-
-> [!NOTE]
-> It can take up to 24 hours for all events to show up, though full data is typically available much sooner.
-
 If the time span between `startDateTime` and `endDateTime` exceeds 1 hour, it takes multiple requests to download the data through `continuationUri` in response.
 
 The following example shows how to download data for 1 hour and 5 minutes:
@@ -155,6 +154,7 @@ Meet these requirements to access audit logs:
     If you can't access the Exchange admin center from the Microsoft 365 admin center, go to https://outlook.office365.com/ecp, and sign in using your credentials.
 
 - If you have access to the audit log but aren't a global admin or Power BI Administrator, you can't get to the Power BI Admin portal. In this case, use a direct link to [Microsoft Purview](https://compliance.microsoft.com/auditlogsearch).
+- For more information about auditing with Microsoft Purview in Microsoft 365, reference [frequently asked questions](/microsoft-365/compliance/audit-log-search?view=o365-worldwide#frequently-asked-questions&preserve-view=true/).
 
 ### Access your audit logs
 
@@ -292,6 +292,8 @@ The following operations are available in both the audit and activity logs.
 
 > [!NOTE]
 > We recently added many Power BI activities to the audit and activity logs. Friendly names can be found in Microsoft Purview, and we'll continue to update this list to identify the operation names used in REST API and PowerShell queries.
+>
+> In the Fabric experience, only *create*, *read*, *update*, and *delete* operations are currently logged.
 
 | Friendly name         | Operation name           | Notes                                  |
 |-----------------------|--------------------------|----------------------------------------|
@@ -403,6 +405,8 @@ The following operations are available in both the audit and activity logs.
 | Get Power BI group users | GetGroupUsers | |
 | Get refresh history via lockbox | GetRefreshHistoryViaLockbox | |
 | Imported file to Power BI   | Import   |           |
+| Import file to Power BI started   | ImportArtifactStart   | Generated when importing Power BI Desktop files (.pbix). When ImportSource is PowerBI, the file import originated from a Power BI client or API. When ImportSource is OneDriveSharePoint, the file import originated from  OneDrive or a SharePoint document library. |
+| Import file to Power BI ended   | ImportArtifactEnd   | Generated when importing Power BI Desktop files (.pbix). ImportSource indicates Power BI or OneDriveSharePoint. ImportType tells you if the file is new (Publish) or is being updated (Republish).   |
 | Initiated Power BI gateway cluster authentication process | | |
 | Inserted or updated current value connection of Power BI metric | UpsertGoalCurrentValueConnection | |
 | Inserted or updated target value connection of Power BI metric | | |

@@ -47,7 +47,7 @@ Most of the examples retrieve raw JSON data. Working with the raw JSON data has 
 
 - All of the information that's available for each activity event is returned. That's helpful for you to learn what data is available. Keep in mind that the contents of an API response differs depending on the actual activity event. For example, the data available for a _CreateApp_ event is different to the _ViewReport_ event.
 - Because data that's available in the activity log changes as Power BI evolves over time, you can expect the API responses to change too. That way, new data that's introduced won't be missed. Your process is also more resilient to change and less likely to fail.
-- The details of an API response can differ for the Power BI commercial cloud and the [national clouds](/azure/active-directory/develop/authentication-national-cloud#Overview).
+- The details of an API response can differ for the Power BI commercial cloud and the [national/regional clouds](/azure/active-directory/develop/authentication-national-cloud#Overview).
 - If you have different team members (such as data engineers) who get involved with this process, simplifying the initial process to extract the data makes it easier for multiple teams to work together.
 
 > [!TIP]
@@ -59,7 +59,7 @@ To use the example scripts, you must meet the following requirements.
 
 - **PowerShell client tool:** Use your preferred tool for running PowerShell commands. All examples were tested by using the [PowerShell extension](https://code.visualstudio.com/docs/languages/powershell) for Visual Studio Code with PowerShell 7. For information about client tools and PowerShell versions, see [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md).
 - **Power BI Management module:** Install all [Power BI PowerShell modules](/powershell/power-bi/overview). If you previously installed them, we recommend that you update the modules to ensure that you're using the latest published version.
-- **Power BI administrator role:** The example scripts are designed to use an interactive authentication flow. Therefore, the user running the PowerShell example scripts must sign in to use the Power BI REST APIs. To retrieve activity log data, the authenticating user must belong to the [Power BI administrator](/power-bi/admin/service-admin-role) role (because retrieving activity events is done with an [admin API](/rest/api/power-bi/admin)). Service principal authentication is out of scope for these learning examples.
+- **Fabric administrator role:** The example scripts are designed to use an interactive authentication flow. Therefore, the user running the PowerShell example scripts must sign in to use the Power BI REST APIs. To retrieve activity log data, the authenticating user must belong to the [Power BI administrator](/power-bi/admin/service-admin-role) role (because retrieving activity events is done with an [admin API](/rest/api/power-bi/admin)). Service principal authentication is out of scope for these learning examples.
 
 The remainder of this article includes sample scripts that show you different ways to retrieve activity log data.
 

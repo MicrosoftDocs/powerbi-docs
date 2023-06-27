@@ -26,7 +26,7 @@ The report refreshes every 24 hours.
 
 ## View the data protection metrics report
 
-You must have a [Power BI administrator role](../admin/service-admin-role.md) to open and view the report.
+You must have a [Fabric administrator role](../admin/service-admin-role.md) to open and view the report.
 To view the report, go to **Settings > Admin portal**, and then select **Protection metrics**.
 
 ![Screenshot showing the Power BI Admin portal. Admin portal and Protection metrics are highlighted.](./media/service-security-data-protection-metrics-report/protection-metrics-admin-portal.png)
@@ -53,5 +53,5 @@ Improved versions of the data protection metrics report are released periodicall
 
 * [Sensitivity labels in Power BI](./service-security-sensitivity-label-overview.md)
 * [Using Microsoft Defender for Cloud Apps controls in Power BI](service-security-using-defender-for-cloud-apps-controls.md)
-* [Understanding Power BI administrator roles](../admin/service-admin-role.md)
+* [Understanding Power BI administration roles](../admin/service-admin-role.md)
 * [Enable sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)

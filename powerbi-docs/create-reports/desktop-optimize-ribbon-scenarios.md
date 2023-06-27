@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/28/2022
+ms.date: 05/22/2023
 LocalizationGroup: Create reports
 ---
 # DirectQuery optimization scenarios with the Optimize ribbon
@@ -15,9 +15,6 @@ LocalizationGroup: Create reports
 In this article, we'll go through several DirectQuery report authoring scenarios showing how you can streamline your experience with the **Optimize** ribbon in Power BI Desktop. With the Optimize ribbon, you can control when visuals refresh with the **Pause visuals** and **Refresh visuals** features, use **Optimization presets** to quickly apply predefined settings, and easily launch **Performance analyzer** to go deeper into the queries themselves, including the SQL queries DirectQuery generates. We'll also show how you can edit relationships right in Model view's Properties pane *without* running queries to preview or validate the data.
 
 Before going through these scenarios, be sure to first check out [Optimize ribbon in Power BI Desktop](desktop-optimize-ribbon.md), which provides a great introduction to these exciting features.
-
-> [!IMPORTANT]
-> The Optimize ribbon with Pause visuals, Refresh visuals, and Optimization presets features described in this article are currently in preview. Along with the Relationship editing in properties pane preview feature, before giving them a try, they must first be enabled in Preview features. To enable, select **File** > **Options and Settings** > **Options** > **Preview features**, and then select the checkboxes for **Optimize ribbon** and **Relationship editing in properties pane**.
 
 ## Change a DirectQuery report *without* running queries
 

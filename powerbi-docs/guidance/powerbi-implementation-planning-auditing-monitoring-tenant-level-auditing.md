@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/25/2023
+ms.date: 05/03/2023
 ---
 
 # Power BI implementation planning: Tenant-level auditing
@@ -1094,7 +1094,7 @@ You use KQL to analyze the activity log events that are stored in Azure Log Anal
 
 There are several ways to access the events stored to Azure Log Analytics. You can use:
 
-- The prebuilt _Log Analytics for Power BI Datasets_ [template app](/power-bi/transform-model/log-analytics/install-as-engine-app).
+- The prebuilt _Log Analytics for Power BI Datasets_ template app.
 - Power BI Desktop [connector](/azure/data-explorer/power-bi-connector) for Azure Data Explorer (Kusto).
 - [Web-based query](/azure/data-explorer/web-query-data) experience in Azure Data Explorer.
 - Any query tool that can send KQL queries.
@@ -1731,7 +1731,7 @@ Here are some user training opportunities that you might identify from the audit
 
 Here are some security situations you may want to actively monitor.
 
-- Too many users assigned to the high-privilege [Power BI administrator role](powerbi-implementation-planning-security-tenant-level-planning.md#power-bi-administration).
+- Too many users assigned to the high-privilege [Fabric administrator role](powerbi-implementation-planning-security-tenant-level-planning.md#power-bi-administration).
 - Too many workspace administrators (when the Member, Contributor, or Viewer [workspace role](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles) would be sufficient).
 - Excessive [Build permissions](powerbi-implementation-planning-security-content-creator-planning.md#read-and-build-permissions-for-underlying-dataset) assigned to datasets (when Read permission would be sufficient).
 - High use of [per-item permissions](powerbi-implementation-planning-security-report-consumer-planning.md#per-item-permissions), when [Power BI app permissions](powerbi-implementation-planning-security-report-consumer-planning.md#power-bi-app-permissions) or the [workspace Viewer role](powerbi-implementation-planning-security-report-consumer-planning.md#workspace-viewer-role) would be a better choice for content consumers.

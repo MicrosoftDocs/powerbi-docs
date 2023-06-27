@@ -5,43 +5,49 @@
   - name: Known issues
     expanded: false
     items:
-    - name: Active known issues for Power BI
-      href: known-issues/power-bi-known-issues.md  
+    - name: Active known issues for Fabric experiences - chart
+      href: known-issues/power-bi-known-issues.md
+    - name: Active known issues for Fabric + Power BI - interactive report
+      href: https://support.fabric.microsoft.com/known-issues
+    - name: Tenant admin settings may not save correctly
+      href: known-issues/known-issue-427-tenant-admin-settings-may-not-save-correctly.md
+    - name: New org app content doesn't show in first load
+      href: known-issues/known-issue-430-newly-added-content-org-app-doesnt-show.md
     - name: Tenant Settings show as keys instead of descriptions
       href: known-issues/known-issue-407-tenant-settings-show-keys-descriptions.md
     - name: Upload from SharePoint/OneDrive For Business greyed out
       href: known-issues/known-issue-398-upload-sharepoint-greyed-out.md
     - name: Tenant migrations paused
       href: known-issues/known-issue-308-tenant-migrations-paused.md
-    - name: Paused visuals in Power BI Desktop Performance analyzer don't refresh
+    - name: Paused visuals in Desktop Performance analyzer don't refresh
       href: known-issues/known-issue-321-paused-visuals-in-performance-analyzer-dont-refresh.md
-    - name: Working in a dataflow shows irrelevant upgrade workspace message
+    - name: Dataflow shows irrelevant upgrade workspace message
       href: known-issues/known-issue-290-dataflow-show-upgrade-workspace-message.md
-    - name: Accessing Power BI app report is denied due to no dataset access
+    - name: Accessing Power BI app report is denied
       href: known-issues/known-issue-284-accessing-app-report-denied-due-to-no-dataset-access.md
     - name: Excel add-in can't find Power BI datasets
       href: known-issues/known-issue-274-excel-add-in-cant-find-datasets.md
-    - name: Search strings that include Japanese symbols don't return matches
+    - name: Japanese symbols in search strings don't return matches
       href: known-issues/known-issue-222-search-strings-japanese-symbols-dont-work.md
-    - name: Gateway data source owners cannot update data source credentials
+    - name: Gateway data source owners can't update credentials
       href: known-issues/known-issue-220-gateway-data-source-owners-cant-update-credentials.md
-    - name: Excel Desktop crashes when opening data model that was refreshed by Power BI Service
+    - name: Excel Desktop crashes when opening data model
       href: known-issues/known-issue-214-excel-desktop-crashes-opening-data-model.md
-    - name: Visual context menus are cut off when using Power BI Embedded
+    - name: Visual context menus cut off when using Power BI Embedded
       href: known-issues/known-issue-213-visual-context-menus-cut-off-embedded.md
-    - name: GetVisuals() API for custom visuals may return a blank title
+    - name: GetVisuals() API for custom visuals returns blank title
       href: known-issues/known-issue-211-getvisuals-api-return-blank-title.md
-    - name: The scorecard visual's display name is blank in the visualizations pane
+    - name: Scorecard visual's display name is blank in the visualizations pane
       href: known-issues/known-issue-210-scorecard-visuals-display-name-blank-visualizations-pane.md
-    - name: Datamart editor doesn't allow saving row-level security (RLS) rules that contain double quotes in the string filter
+    - name: Datamart editor won't save RLS rules that contain double quotes
       href: known-issues/known-issue-208-datamart-editor-doesnt-allow-row-level-security-rules-with-double-quotes.md
     - name: Dremio connector is missing
       href: known-issues/known-issue-204-dremio-connector-missing.md
-    - name: Using a link in a paginated report subscription doesn't apply the report parameters
+    - name: Paginated report subscription link doesn't apply report parameters
       href: known-issues/known-issue-195-link-in-paginated-subscription-doesnt-apply-report-parameters.md
-    - name: Applying Show bar only for data bars doesn't work in Power BI Service or Power BI Desktop
+    - name: Applying Show bar only for data bars doesn't work
       href: known-issues/known-issue-187-show-bar-only-data-bars-doesnt-work.md
-    - name: Multi-role row-level security for composite models may fail
+    - name: Multi-role RLS for composite models fails
       href: known-issues/known-issue-178-multi-role-rls-composite-model-fail.md
     - name: Try it button missing on REST API pages
       href: known-issues/known-issue-169-try-it-button-missing.md            
@@ -50,7 +56,7 @@
     - name: Unable to open protected Desktop files 
       href: known-issues/known-issue-unable-open-protected-desktop-file.md   
   - name: Troubleshoot
-    expanded: false
+    expanded: true
     items:
     - name: Embedded, REST API, PowerShell
       expanded: false

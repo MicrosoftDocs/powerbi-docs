@@ -11,7 +11,7 @@ ms.date: 12/16/2022
 LocalizationGroup: Premium 
 ---
 
-# Configure Power BI Premium capacity notifications
+# Notifications
 
 Power BI Premium allows you to configure email notifications for your capacity. The emails will be sent to the people you specify in the notifications settings.
 
@@ -28,13 +28,15 @@ To configure the capacity notification emails, follow these steps:
 
     :::image type="content" source="media/service-admin-premium-capacity-notifications/admin-portal.png" alt-text="A screenshot showing the Power B I settings menu, with the settings option expanded and the admin portal selection highlighted.":::
 
-2. In the *Admin portal*, select the capacity you want to configure notifications for.
+2. In the *Admin portal*, select **Capacity settings**.
 
-3. Expand the **Notifications** section.
+3. Select the capacity you want to configure notifications for.
+
+4. Expand the **Notifications** section.
 
     :::image type="content" source="media/service-admin-premium-capacity-notifications/admin-portal-notifications.png" alt-text="A screenshot showing the notifications section in the Power B I service admin portal.":::
 
-4. In the section **Send notifications when**, configure your required notifications as follows:
+5. In the section **Send notifications when**, configure your required notifications as follows:
 
     * **You're using ___% of your available capacity** - A notification is sent after the capacity reaches the threshold you enter.
 
@@ -44,13 +46,13 @@ To configure the capacity notification emails, follow these steps:
 
     * **You've reached your Autoscale maximum** - A notification will be sent when all the autoscale v-cores are fully utilized. Throttling will be applied to your capacity if it continues to be overloaded.
 
-5. In the section **Send notifications to**, select who you want the notifications to be emailed to:
+6. In the section **Send notifications to**, select who you want the notifications to be emailed to:
 
     * **Capacity admins** - Email notifications are sent to all the admins of this capacity.
 
     * **These contacts** - Enter the emails of the contacts you want to receive notifications.
 
-6. Select **Apply**.
+7. Select **Apply**.
 
 ## Considerations and limitations
 

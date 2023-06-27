@@ -53,7 +53,7 @@ Several considerations for identifying stakeholders include:
 Several key items to address early in a Power BI implementation include:
 
 - Specific goals for [Power BI adoption](powerbi-adoption-roadmap-overview.md) and where Power BI fits into the overall BI strategy for the organization.
-- How the Power BI administrator role will be handled, particularly in decentralized organizations.
+- How the Fabric administrator role will be handled, particularly in decentralized organizations.
 - Policies related to achieving trusted data: use of authoritative data sources, addressing data quality issues, and use of consistent terminology and common definitions.
 - Security and data privacy strategy for data sources, data models, reports, and content delivery to internal and external users.
 - How internal and external compliance, regulatory, and audit requirements will be met.
