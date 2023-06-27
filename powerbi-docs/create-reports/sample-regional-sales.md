@@ -95,7 +95,7 @@ The **Overview** button has three report page links: **Overview**, **Win/Loss Ov
 
 Next to **Overview**, select **Trends**, which takes you to a different top level page.
 
-:::image type="content" source="media/sample-regional-sales/power-bi-regional-sales-navigation-trends.png" alt-text="Screenshot shows the navigation buttons with Overview > Overview selected.":::
+:::image type="content" source="media/sample-regional-sales/power-bi-regional-sales-navigation-trends.png" alt-text="Screenshot shows the navigation buttons with Trends selected.":::
 
 To see how this navigation works, select **Edit**. In Edit mode, select one of the buttons. Under **Format**, you can see the action for the button.
 
@@ -109,7 +109,7 @@ Look at the tabs along the bottom. Each tab opens a report page for editing. The
 
 Hiding all report pages except for the **Overview** page provides a clear entry point for your users. To see the alternative, unhide one of the report pages and then select **Reading view** to leave Edit mode.
 
-:::image type="content" source="media/sample-regional-sales/power-bi-regional-sales-pages.png" alt-text="Screenshot shows the unhidden report pages under Pages."":::
+:::image type="content" source="media/sample-regional-sales/power-bi-regional-sales-pages.png" alt-text="Screenshot shows the unhidden report pages under Pages.":::
 
 For more information, see [Create page and bookmark navigators](button-navigators.md).
 
