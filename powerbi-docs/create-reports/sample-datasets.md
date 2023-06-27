@@ -47,14 +47,14 @@ You can explore it these ways:
 
 ## Updated samples
 
-There are revised versions of the original samples. These new versions take the original datasets and incorporate the latest visualizations.
+There are revised versions of some of the original samples. These new versions take the original datasets and incorporate the latest visualizations.
 
 - Corporate Spend. Take a tour of the [Corporate Spend](sample-corporate-spend.md) sample.
 - Employee Hiring and History. Take a tour of the [Employee Hiring and History](sample-employee-hiring-history.md) sample.
 - Revenue Opportunities
 - Store Sales
 - Competitive marketing Analysis
-- Regional Sales Sample
+- Regional Sales Sample. Take a tour of the [Regional Sales Sample](sample-regional-sales.md)
 
 To obtain these samples:
 
@@ -129,6 +129,12 @@ This industry sample explores a software company's sales channel. Sales managers
 
 This industry sample analyzes a manufacturing company's spending on vendors by category and location. You can investigate who the top vendors are, what categories the company spends the most on, and which vendors give the best discounts.
 
+### Regional Sales sample
+
+[Take a tour of the Regional Sales sample](sample-regional-sales.md)
+
+This industry sample contains a report for a fictitious company named Contoso. The Contoso sales manager created this report to understand their products and regions' key contributors for revenue won or loss. 
+
 ### Retail Analysis sample
 
 [Take a tour of the Retail Analysis sample](sample-retail-analysis.md)
@@ -190,6 +196,7 @@ Several of the original built-in samples now have updated versions and these sam
 
    - [Corporate Spend](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Corporate%20Spend.pbix)
    - [Employee Hiring and History](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Employee%20Hiring%20and%20History.pbix)
+   - [Regional Sales Sample](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Regional%20Sales%20Sample.pbix).
 
    Original samples:
 
