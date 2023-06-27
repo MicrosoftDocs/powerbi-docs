@@ -26,7 +26,7 @@ When you publish a report and dataset from Power BI Desktop to the Power BI serv
 
 - Check your network connectivity. Verify that you have a stable and suitable internet connection. Connectivity problems or network restrictions can prevent Power BI Desktop from publishing to the Power BI service. Try accessing other websites or running an internet speed test to ensure that your internet connection functions reliably.
 
-- Clear cached data. In Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Data Load**, and then select **Clear Cache**.
+- Clear cached data. In Power BI Desktop, go to **File** > **Options and settings** > **Options**. Under **GLOBAL**, select **Data Load**, and then select **Clear Cache**.
 
 - Clear cached credentials. If you've previously connected to the published dataset with different credentials or an expired token, cached credentials might cause connection issues. In Power BI Desktop, go to **File** > **Options and settings** > **Data source settings**, and then select **Clear Permissions** to clear any cached credentials.
 
@@ -36,11 +36,11 @@ When you publish a report and dataset from Power BI Desktop to the Power BI serv
 
 ## Other problems
 
-**Error: "The remote server returned an error: (400) Bad Request."**
+### Error: "The remote server returned an error: (400) Bad Request."
 
 This error can occur if you have a Power BI Pro license and are trying to publish a report that has a data model that's larger than one GB. The model memory size limit is one GB for Power BI Pro. If you want to publish larger reports, you need either a Premium per user license or a Premium capacity subscription. For more information, see [Power BI pricing](https://powerbi.microsoft.com/pricing/). 
 
-**Error: "Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host."**
+### Error: "Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host."
 
 This error is most likely caused by a network problem. Try the following troubleshooting steps:
 
@@ -52,13 +52,13 @@ This error is most likely caused by a network problem. Try the following trouble
 
 ### Can't publish to a different workspace
 
-This problem can occur if the Power BI tenant setting [Use datasets across workspaces](/power-bi/admin/service-admin-portal-workspace#use-datasets-across-workspaces) is disabled. Work with your Power BI tenant admin to enable this setting.
+This problem can occur if the Power BI tenant setting [Use datasets across workspaces](/power-bi/admin/service-admin-portal-workspace#use-datasets-across-workspaces) is disabled. Work with your Power BI tenant administrator to enable this setting.
 
 ### Can't republish or replace an existing report
 
 This problem can occur in the following scenarios.
 
-- The Power BI tenant setting [Block republish and disable package refresh](/power-bi/admin/service-admin-portal-dataset-security#block-republish-and-disable-package-refresh) is enabled. Work with your Power BI tenant admin to disable this setting.
+- The Power BI tenant setting [Block republish and disable package refresh](/power-bi/admin/service-admin-portal-dataset-security#block-republish-and-disable-package-refresh) is enabled. Work with your Power BI tenant administrator to disable this setting.
 
 - If you see the error **A report has already been published with this name**, you're trying to publish a report that's connected via live connection on top of an original report that includes a dataset. If you publish a live-connected report with the same name as the original, the dataset is overwritten. This error is intended to prevent the loss of the dataset. Members of a workspace can't replace an original shared report. If they try to do so, they're prompted to rename the file and then publish.
 
