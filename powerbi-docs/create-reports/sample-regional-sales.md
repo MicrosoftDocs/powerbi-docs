@@ -135,7 +135,7 @@ The **Key Influencers** page shows the contribution of different factors to succ
 
 ### Use a decomposition tree
 
-Use the decomposition tree visualization, or *decomp tree*, to visualize data across multiple dimensions. You can aggregate data and drill down into your dimensions in any order. This tool is valuable for improvised exploration and conducting root cause analysis.
+Use the decomposition tree visualization, or *decomp tree*, to visualize data across multiple dimensions. You can aggregate the data and drill down into your dimensions in any order. This tool is valuable for improvised exploration and conducting root cause analysis.
 
 1. Select **Insights** > **Decomposition**.
 
@@ -147,7 +147,7 @@ Use the decomposition tree visualization, or *decomp tree*, to visualize data ac
 
    :::image type="content" source="media/sample-regional-sales/power-bi-decomp-value-campaign.png" alt-text="Screenshot shows the value element with its context menu open and Campaign selected.":::
 
-   The visual expands the values for campaign, from highest to lowest.
+   The visual expands the values for **campaign**, from highest to lowest.
 
 1. You can select another field to add a level to the diagram, teasing out the effects of different fields. Instead of selecting a field, select the plus sign again and select **High value**.
 
