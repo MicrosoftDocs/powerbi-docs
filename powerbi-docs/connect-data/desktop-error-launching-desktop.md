@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 01/09/2023
+ms.date: 06/27/2023
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot Power BI Desktop startup
