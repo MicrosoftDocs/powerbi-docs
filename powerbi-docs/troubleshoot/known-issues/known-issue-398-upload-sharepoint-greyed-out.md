@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 05/12/2023
+ms.date: 06/28/2023
 ms.custom: known-issue-398
 ---
 
@@ -16,7 +16,7 @@ Although you have a SharePoint license, you can't use the Upload option from Sha
 
 **APPLIES TO:** ✔️ Power BI Service
 
-**Status:** Open
+**Status:** Fixed: June 28, 2023
 
 **Problem area:** Consume and View
 
