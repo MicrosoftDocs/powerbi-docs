@@ -11,20 +11,24 @@ ms.date: 06/30/2023
 LocalizationGroup: Connect to services
 ---
 # Connect to Office365Mon with Power BI
-Analyzing your Office 365 outages and health performance data is easy with Power BI and the Office365Mon template app. Power BI retrieves your data, including outages and health probes, then builds an out-of-box dashboard and reports based on that data.
+
+Analyzing your Office 365 outages and health performance data is easy with Power BI and the Office365Mon template app. Power BI retrieves your data, including outages and health probes, and then builds an out-of-the-box dashboard and reports based on that data.
 
 Connect to the [Office365Mon template app](https://msit.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) for Power BI.
 
 >[!NOTE]
->An Office365Mon admin account is required to connect and load the Power BI template app.
+>You need an Office365Mon admin account to connect to and load the Power BI template app.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the nav pane.
+
+1. Select **Connect your data** at the top of the screen.
    
-   ![Screenshot of the Get Data button, showing it in the navigation pane.](media/service-connect-to-office365mon/pbi_getdata.png)
-2. In the **Services** box, select **Get**.
+   :::image type="content" source="media/service-connect-to-office365mon/connect-your-data.png" alt-text="Screenshot that shows the Connect your data link." lightbox="media/service-connect-to-office365mon/connect-your-data.png":::
+
+2. In the **Connect to Office365 PowerBI Template Pack** window, select **Next**.
    
-   ![Screenshot of the Services dialog, showing the Get button.](media/service-connect-to-office365mon/pbi_getservices.png) 
+   ![Screenshot that shows the Connect to Office365 PowerBI Template Pack window.]( ) 
+
 3. Select **Office365Mon** \> **Get**.
    
    ![Screenshot of the Office365Mon dialog, showing the Get link.](media/service-connect-to-office365mon/o365mon.png)
