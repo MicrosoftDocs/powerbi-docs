@@ -57,7 +57,7 @@ If you'd like to view it in the Power BI service, you can publish it there.
 
 ## Explore the report
 
-To open the Employee Hiring and History report, go to your workspace and select that report:
+To open the Store Sales report, go to your workspace and select that report:
 
 :::image type="content" source="media/sample-store-sales/power-bi-select-store-sales-sample-report.png" alt-text="Screenshot shows My workspace with the Store Sales report highlighted.":::
 
@@ -104,9 +104,11 @@ Save or discard your changes.
 
 Under **Pages**, select **District Monthly Sales**. This page includes the following visualizations:
 
-- **Last Year Sales, This Year Sales, and Total Sales Variance % by Fiscal Month** (line and clustered column chart)
-- **Total Sales Variance %, Avg $/Unit TY, and This Year Sales by Category** (scatter chart)
-- **Total Sales by Chain and Name** (stacked bar chart)
+- **Last Year Sales, This Year Sales, and Total Sales Variance % by Fiscal Month** (line and clustered column chart).
+- **Total Sales Variance %, Avg $/Unit TY, and This Year Sales by Category** (scatter chart).
+- **Total Sales by Chain and Name** (stacked bar chart).
+
+#### Interact with the page
 
 1. Select **040 - Juniors** in the scatter chart.
 
