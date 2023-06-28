@@ -88,7 +88,7 @@ Watch a short video on applying sensitivity labels and then try it out yourself.
 
 To apply a sensitivity label on the file you're working on, select the sensitivity button in the home tab. In the pop-up menu, choose the desired label.
 
-:::image type="content" source="media/service-security-apply-data-sensitivity-labels/sensitivity-label-menu-desktop.png" alt-text="Screenshot of a portion of the Power BI Desktop menu with the sensitivity label menu expanded." lightbox='media/service-security-apply-data-sensitivity-labels/sensitivity-label-menu-desktop.png" border="false":::
+:::image type="content" source="media/service-security-apply-data-sensitivity-labels/sensitivity-label-menu-desktop.png" alt-text="Screenshot of a portion of the Power BI Desktop menu with the sensitivity label menu expanded." lightbox="media/service-security-apply-data-sensitivity-labels/sensitivity-label-menu-desktop.png" border="false":::
 
 > [!NOTE]
 > If the sensitivity button is greyed out, it might indicate that you don't have an appropriate license or that you don't belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
