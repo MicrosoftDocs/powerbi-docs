@@ -37,7 +37,7 @@ The Power BI administrator is a high-privilege role that has significant control
 - **Access to tenant metadata:** Administrators can access tenant-wide metadata, including the Power BI activity logs and activity events retrieved by the [Power BI admin APIs](/rest/api/power-bi/admin).
 
 > [!TIP]
-> As a best practice, you should assign between two and four users to the Power BI administrator role. That way, you can reduce risk while ensuring there's adequate coverage and cross-training.
+> As a best practice, you should assign between two and four users to the Fabric administrator role. That way, you can reduce risk while ensuring there's adequate coverage and cross-training.
 
 A Power BI administrator belongs to at least one of these [built-in roles](/microsoft-365/admin/add-users/about-admin-roles):
 
@@ -46,14 +46,14 @@ A Power BI administrator belongs to at least one of these [built-in roles](/micr
 - Global administrator (Azure Active Directory)
 
 > [!NOTE]
-> While a Power Platform administrator can manage the Power BI service, the inverse isn't true. Someone assigned to the Power BI administrator role can't manage other applications in the Power Platform.
+> While a Power Platform administrator can manage the Power BI service, the inverse isn't true. Someone assigned to the Fabric administrator role can't manage other applications in the Power Platform.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When planning for who will be a Power BI administrator, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Identify who's currently assigned the administrator role:** Verify who's assigned to one of the Power BI administrator roles: Power BI admin, Power Platform admin, and Global administrator.
+> - **Identify who's currently assigned the administrator role:** Verify who's assigned to one of the Power BI administration roles: Fabric admin, Power Platform admin, and Global administrator.
 > - **Determine who should manage the Power BI service:** If there are too many Power BI administrators, create a plan to reduce the total number. If there are users assigned as Power BI administrators who aren't well suited to such a high-privilege role, create a plan to resolve the issue.
 > - **Clarify roles and responsibilities:** For each Power BI administrator, ensure that their responsibilities are clear. Verify that appropriate cross-training has occurred.
 

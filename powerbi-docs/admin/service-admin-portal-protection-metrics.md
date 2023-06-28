@@ -18,7 +18,7 @@ After you enable information protection for Power BI, data protection metrics ca
 
 ## Opening the protection metrics report
 
-You must have a Power BI administrator role to open and view the report. To view the report, go to **Settings > Admin portal**, and choose **Protection metrics**.
+You must have a Fabric administrator role to open and view the report. To view the report, go to **Settings > Admin portal**, and choose **Protection metrics**.
 
 See [Data protection metrics report](../enterprise/service-security-data-protection-metrics-report.md) for details about the report.
 

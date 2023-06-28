@@ -4,7 +4,7 @@ description: Find out about the values that can be used in expressions to filter
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: rpatkar
-ms.date: 06/16/2023
+ms.date: 06/21/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -77,10 +77,6 @@ You can use expressions to refer to the locale settings on a client computer thr
 
 > [!NOTE]  
 > While you can change the language settings of a report, you must be careful about any display issues this may cause. For example, changing the locale setting of the report can change the date format in the report, but it can also change the currency format. Unless there is a conversion process for the currency, this may cause the incorrect currency symbol to be displayed in the report. To avoid this, set the language information about the individual items that you want to change, or set the item with the currency data to a specific language.
-
-### Identify UserID for Snapshot or History Reports
-
-In some cases, reports that include the *User!UserID* variable will fail to show report data that is specific to the current user who is viewing the report.
 
 ## Next steps
 
