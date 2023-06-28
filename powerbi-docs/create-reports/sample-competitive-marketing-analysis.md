@@ -116,7 +116,7 @@ Power BI automatically generates some tooltips, but you can add values to any vi
 
 Under **Pages**, select **Top 10 Regions** to view that report page. In the **Total Sales by Channel and State**, hover over a value.
 
-:::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-region-hover-tooltip.png" alt-text="Screenshot shows a report page tooltip displayed in the Top 10 Regions page." lightbox="media/sample-competitive-marketing-analysis/power-bi-region-hover-tooltip.png":::
+:::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-region-hover-tooltip.png" alt-text="Screenshot shows a report page tooltip displayed in the Top 10 Regions page.":::
 
 This tooltip is an entire report page. Such a page can contain as many visualizations as needed. Keep in mind that a large tooltip obscures a large part of your report.
 
@@ -134,7 +134,7 @@ You can add a report page tooltip to any visual.
 
 Hover over **Total Sales and ROI by State and Channel** to see the tooltip there.
 
-:::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-region-new-tooltip.png" alt-text="Screenshot shows the visual where the new tooltip has been added." lightbox="media/sample-competitive-marketing-analysis/power-bi-region-new-tooltip.png":::
+:::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-region-new-tooltip.png" alt-text="Screenshot shows the visual where the new tooltip has been added.":::
 
 ### Explore the Return on Investment page
 
