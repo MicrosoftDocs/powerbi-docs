@@ -77,25 +77,27 @@ Save or discard your changes.
 
 ### Opportunity Overview page
 
-The Opportunity Overview page of the report has two card visualizations. Card visualizations display a single number, in this case, the value for **Opportunity Revenue** and **Opportunity Count**.
+The **Opportunity Overview** page of the report has two card visualizations, a tree diagram, and other visualizations. Stakeholders can interact with different visualizations to understand your data.
 
-:::image type="content" source="media/sample-revenue-opportunities/power-bi-card-visual.png" alt-text="Screenshot shows two card visualizations that present data from the dataset.":::
+1. Under **Pages**, select **Opportunity Overview** if the page isn't already open. Card visualizations display a single number. Cards display values for **Opportunity Revenue** and **Opportunity Count**.
 
-A treemap visualization of the **Opportunity Count by Region** appears below those cards. Right-click the **East** region. In the context menu, select **Drill down**.
+   :::image type="content" source="media/sample-revenue-opportunities/power-bi-card-visual.png" alt-text="Screenshot shows two card visualizations that present data from the dataset.":::
 
-:::image type="content" source="media/sample-revenue-opportunities/power-bi-drill-down.png" alt-text="Screenshot shows the drilled down data of the region visualization." lightbox="media/sample-revenue-opportunities/power-bi-drill-down.png":::
+1. A treemap visualization of the **Opportunity Count by Region** appears below those cards. Right-click the **East** region. In the context menu, select **Drill down**.
 
-The visualization now shows the component areas that make up the East region. The other visualizations now reflect only the East region.
+   :::image type="content" source="media/sample-revenue-opportunities/power-bi-drill-down.png" alt-text="Screenshot shows the drilled down data of the region visualization." lightbox="media/sample-revenue-opportunities/power-bi-drill-down.png":::
 
-Now select a product from the **Product Code** selector.
+   The visualization now shows the component areas that make up the East region. The other visualizations now reflect only the East region.
 
-:::image type="content" source="media/sample-revenue-opportunities/power-bi-select-product.png" alt-text="Screenshot shows report page with a particular product code selected." lightbox="media/sample-revenue-opportunities/power-bi-select-product.png":::
+1. Now select a product from the **Product Code** selector.
 
-Right-click **Opportunity Count by Region**. From the context menu, select **Drill through** > **Detail**. The report opens the **Detail** page for the data that you're examining.
+   :::image type="content" source="media/sample-revenue-opportunities/power-bi-select-product.png" alt-text="Screenshot shows report page with a particular product code selected." lightbox="media/sample-revenue-opportunities/power-bi-select-product.png":::
 
-:::image type="content" source="media/sample-revenue-opportunities/power-bi-detail.png" alt-text="Screenshot shows the detail view that contains numbers reflecting the selected values." lightbox="media/sample-revenue-opportunities/power-bi-detail.png":::
+1. Right-click **Opportunity Count by Region**. From the context menu, select **Drill through** > **Detail**. The report opens the **Detail** page for the data that you're examining.
 
-Select the **Opportunity Overview** page to return to that report page. In **Opportunity Count by Region**, right-click. Select **Drill up** to see all regions again.
+   :::image type="content" source="media/sample-revenue-opportunities/power-bi-detail.png" alt-text="Screenshot shows the detail view that contains numbers reflecting the selected values." lightbox="media/sample-revenue-opportunities/power-bi-detail.png":::
+
+1. Select the **Opportunity Overview** page to return to that report page. In **Opportunity Count by Region**, right-click. Select **Drill up** to see all regions again.
 
 You can select a field in any visualization to view that data for that selection in all the visualizations.
 
