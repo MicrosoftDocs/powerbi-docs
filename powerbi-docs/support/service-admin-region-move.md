@@ -146,7 +146,7 @@ No, using Power BI during tenant migration activity isn't recommended.
 
 ### Why do I need to provide three proposed migration dates?
 
-We need to ensure that migration happens outside of the production deployment window. This time-frame is subject to change on a weekly basis. We can only confirm the actual migration date five days before the migration.
+We need to ensure that migration happens outside of the production deployment window. This time frame is subject to change on a weekly basis. We can only confirm the actual migration date five days before the migration.
 
 ### Can I request migration during weekdays (if my company allows) or on any public holiday recognized by my organization?
 
