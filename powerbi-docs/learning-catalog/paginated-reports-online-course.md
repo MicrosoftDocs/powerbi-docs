@@ -34,7 +34,7 @@ After you complete the course, you'll know how to:
 
 Watch the welcome and introduction video to start the course.
 
-[!VIDEO https://www.youtube.com/embed/DN1t5p9aui0]
+> [!VIDEO https://www.youtube.com/embed/DN1t5p9aui0]
 
 ## Course outline
 

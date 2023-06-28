@@ -52,7 +52,7 @@ There are revised versions of some of the original samples. These new versions t
 - Corporate Spend. Take a tour of the [Corporate Spend](sample-corporate-spend.md) sample.
 - Employee Hiring and History. Take a tour of the [Employee Hiring and History](sample-employee-hiring-history.md) sample.
 - Revenue Opportunities
-- Store Sales
+- Store Sales. Take a tour of the [Store Sales](sample-store-sales.md) sample.
 - Competitive marketing Analysis
 - Regional Sales Sample. Take a tour of the [Regional Sales Sample](sample-regional-sales.md)
 
@@ -133,13 +133,15 @@ This industry sample analyzes a manufacturing company's spending on vendors by c
 
 [Take a tour of the Regional Sales sample](sample-regional-sales.md)
 
-This industry sample contains a report for a fictitious company named Contoso. The Contoso sales manager created this report to understand their products and regions' key contributors for revenue won or loss. 
+This industry sample contains a report for a fictitious company named Contoso. The Contoso sales manager created this report to understand their products and regions' key contributors for revenue won or loss.
 
-### Retail Analysis sample
+### Retail Analysis / Store Sales sample
 
-[Take a tour of the Retail Analysis sample](sample-retail-analysis.md)
+[Take a tour of the Store Sales sample](sample-store-sales.md)
 
 This industry sample analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's in these areas: sales, units, gross margin, variance, and new store analysis.
+
+[Take a tour of the previous version of the sample](sample-retail-analysis.md)
 
 ### Sales and Marketing sample
 
