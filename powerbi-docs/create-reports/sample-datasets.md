@@ -52,8 +52,9 @@ There are revised versions of the original samples. These new versions take the 
 - Corporate Spend. Take a tour of the [Corporate Spend](sample-corporate-spend.md) sample.
 - Employee Hiring and History. Take a tour of the [Employee Hiring and History](sample-employee-hiring-history.md) sample.
 - Revenue Opportunities
-- Store Sales
 - Competitive Marketing Analysis. Take a tour of the [Competitive Marketing Analysis](sample-competitive-marketing-analysis.md) sample.
+- Store Sales. Take a tour of the [Store Sales](sample-store-sales.md) sample.
+- Competitive marketing Analysis
 - Regional Sales Sample
 
 To obtain these samples:
@@ -129,9 +130,9 @@ This industry sample explores a software company's sales channel. Sales managers
 
 This industry sample analyzes a manufacturing company's spending on vendors by category and location. You can investigate who the top vendors are, what categories the company spends the most on, and which vendors give the best discounts.
 
-### Retail Analysis sample
+### Retail Analysis / Store Sales sample
 
-[Take a tour of the Retail Analysis sample](sample-retail-analysis.md)
+[Take a tour of the Store Sales sample](sample-store-sales.md)
 
 This industry sample analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's in these areas: sales, units, gross margin, variance, and new store analysis.
 

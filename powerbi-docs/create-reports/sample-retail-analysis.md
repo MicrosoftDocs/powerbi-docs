@@ -7,10 +7,13 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/23/2023
+ms.date: 06/23/2023
 LocalizationGroup: Samples
 ---
 # Retail Analysis sample for Power BI: Take a tour
+
+> [!NOTE]
+> For an updated version of this sample, see [Store Sales sample for Power BI: Take a tour](sample-store-sales.md).
 
 The Retail Analysis built-in sample contains a dashboard, report, and dataset that analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's for sales, units, gross margin, variance, and new-store analysis.
 
