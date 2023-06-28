@@ -51,7 +51,7 @@ There are revised versions of some of the original samples. These new versions t
 
 - Corporate Spend. Take a tour of the [Corporate Spend](sample-corporate-spend.md) sample.
 - Employee Hiring and History. Take a tour of the [Employee Hiring and History](sample-employee-hiring-history.md) sample.
-- Revenue Opportunities
+- Revenue Opportunities. Take a tour of the [Revenue Opportunities](sample-revenue-opportunities.md) sample.
 - Store Sales. Take a tour of the [Store Sales](sample-store-sales.md) sample.
 - Competitive marketing Analysis
 - Regional Sales Sample. Take a tour of the [Regional Sales Sample](sample-regional-sales.md)
@@ -117,11 +117,13 @@ In this industry sample, analyze the planned versus actual costs of the IT depar
 
 [Take a tour of the previous version of the sample](sample-it-spend.md)
 
-### Opportunity Analysis sample
+### Opportunity Analysis / Revenue Opportunities sample
 
-[Take a tour of the Opportunity Analysis sample](sample-opportunity-analysis.md)
+[Take a tour of the Revenue  sample](sample-revenue-opportunities.md)
 
 This industry sample explores a software company's sales channel. Sales managers monitor their direct and partner sales channels by tracking opportunities and revenue by region, deal size, and channel.
+
+[Take a tour of the previous version of the sample](sample-opportunity-analysis.md)
 
 ### Procurement Analysis sample
 
@@ -196,9 +198,12 @@ Several of the original built-in samples now have updated versions and these sam
 
    Updated samples:
 
+   - [Competitive Marketing Analysis](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Competitive%20Marketing%20Analysis.pbix)
    - [Corporate Spend](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Corporate%20Spend.pbix)
    - [Employee Hiring and History](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Employee%20Hiring%20and%20History.pbix)
-   - [Regional Sales Sample](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Regional%20Sales%20Sample.pbix).
+   - [Regional Sales Sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Regional%20Sales%20Sample.pbix)
+   - [Revenue Opportunities sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Revenue%20Opportunities.pbix)
+   - [Store Sales sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Store%20Sales.pbix)
 
    Original samples:
 
