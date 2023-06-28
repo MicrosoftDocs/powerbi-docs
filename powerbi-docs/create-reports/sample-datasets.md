@@ -51,10 +51,10 @@ There are revised versions of the original samples. These new versions take the 
 
 - Corporate Spend. Take a tour of the [Corporate Spend](sample-corporate-spend.md) sample.
 - Employee Hiring and History. Take a tour of the [Employee Hiring and History](sample-employee-hiring-history.md) sample.
-- Store Sales
 - Competitive Marketing Analysis. Take a tour of the [Competitive Marketing Analysis](sample-competitive-marketing-analysis.md) sample.
 - Revenue Opportunities. Take a tour of the [Revenue Opportunities](sample-revenue-opportunities.md) sample.
 - Store Sales. Take a tour of the [Store Sales](sample-store-sales.md) sample.
+- Competitive marketing Analysis
 - Regional Sales Sample
 
 To obtain these samples:
