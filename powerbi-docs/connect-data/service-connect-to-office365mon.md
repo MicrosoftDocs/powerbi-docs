@@ -21,13 +21,13 @@ Connect to the [Office365Mon template app](https://msit.powerbi.com/groups/me/ge
 
 ## How to connect
 
-1. Select **Connect your data** at the top of the screen.
+1. Select **Connect your data** at the top of the screen:
    
    :::image type="content" source="media/service-connect-to-office365mon/connect-your-data.png" alt-text="Screenshot that shows the Connect your data link." lightbox="media/service-connect-to-office365mon/connect-your-data.png":::
 
-2. In the **Connect to Office365 PowerBI Template Pack** window, select **Next**.
+2. In the **Connect to Office365 PowerBI Template Pack** window, select **Next**:
    
-   ![Screenshot that shows the Connect to Office365 PowerBI Template Pack window.]( ) 
+   :::image type="content" source="media/service-connect-to-office365mon/connect-template.png" alt-text="Screenshot that shows the Connect to Office365 PowerBI Template Pack window.":::
 
 3. Select **Office365Mon** \> **Get**.
    
