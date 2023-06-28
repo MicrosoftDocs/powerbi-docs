@@ -8,7 +8,7 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc, intro-overview
-ms.date: 05/25/2023
+ms.date: 06/28/2023
 #Customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
 ---
 
@@ -20,7 +20,8 @@ Power BI Report Server and the Power BI service have many similarities and some 
 
 | Features | Power BI Report Server | Power BI Service | Notes |
 |---------|---------|---------|---------|
-| Analyze in Excel | No | Yes | [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) 
+| Analyze in Excel | No | Yes | [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) |
+| Bookmarks | No | Yes| Bookmarks in the the [Power BI service](../consumer/end-user-bookmarks.md) |
 | Deployment | On-premises or hosted cloud | Cloud | Power BI Report Server can be deployed in Azure VMs (hosted cloud) if licensed through Power BI Premium or SQL Server Enterprise with Software Assurance|
 | Data sources | Cloud and/or on-premises | Cloud and/or on-premises |  |
 | License | Power BI Premium or SQL Server EE with Software Assurance (SA) | Power BI Pro and/or Power BI Premium | |  
