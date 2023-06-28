@@ -13,6 +13,9 @@ LocalizationGroup: Samples
 
 # Opportunity Analysis sample for Power BI: Take a tour
 
+> [!NOTE]
+> For an updated version of this sample, see [Revenue Opportunities sample for Power BI: Take a tour](sample-revenue-opportunities.md).
+
 The Opportunity Analysis built-in sample contains a dashboard, report, and dataset for a software company that has two sales channels: *direct* and *partner*. The sales manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
 
 This sample relies on two measures of revenue:

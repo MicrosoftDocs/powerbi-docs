@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting    
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 06/22/2023
+ms.date: 06/28/2023
 ms.custom:  
 ---
 
@@ -24,7 +24,6 @@ Select the **Title** to view more information about that specific known issue.
 |-----------|------------------------------------|---------|---------------------|
 |  427      |  Administration                    |  [Tenant admin settings may not save correctly](known-issue-427-tenant-admin-settings-may-not-save-correctly.md)    | June 22, 2023  |
 |  430      |  Share and Collaborate             |  [Newly added content in organizational app doesn't show in first load](known-issue-430-newly-added-content-org-app-doesnt-show.md)   |  June 20, 2023  |
-|  398      |  Consume and View                  |  [Upload from SharePoint/OneDrive For Business greyed out](known-issue-398-upload-sharepoint-greyed-out.md)    |   May 12, 2023    |
 |  222      |  Consume and View                  |  [Search strings that include Japanese symbols don't return matches](known-issue-222-search-strings-japanese-symbols-dont-work.md)   |  August 3, 2022  |
 
 ## Recently closed known issues
@@ -33,6 +32,7 @@ Select the **Title** to view more information about that specific known issue. F
 
 |  Issue ID |  Area                              |  Title           |  Issues publish date |  Status  |
 |-----------|------------------------------------|------------------|---------------------|-----------|
+|  398      |  Consume and View                  |  [Upload from SharePoint/OneDrive For Business greyed out](known-issue-398-upload-sharepoint-greyed-out.md)    |   May 12, 2023    |  Fixed: June 28, 2023  |
 |  308      |  Account and License               |  [Tenant migrations paused](known-issue-308-tenant-migrations-paused.md)    |   March 9, 2023    |  Fixed: June 3, 2023  |
 |  407      |  Administration                    |  [Tenant Settings show as keys instead of descriptions](known-issue-407-tenant-settings-show-keys-descriptions.md)    |   May 12, 2023    |  Fixed: June 1, 2023  |
 
