@@ -106,4 +106,4 @@ To become an expert in the art of excellent dashboard design, consider learning 
 
 - [Create a dashboard from a report](service-dashboard-create.md)  
 - [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)  
-- More questions? [Try the Microsoft Power BI Community](https://community.fabric.microsoft.com/t5/Microsoft-Power-BI-Community/ct-p/powerbi)
+- More questions? [Try the Power BI Community](https://community.fabric.microsoft.com/t5/Microsoft-Power-BI-Community/ct-p/powerbi)
