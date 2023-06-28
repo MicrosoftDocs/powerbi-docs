@@ -1,6 +1,6 @@
 ---
 title: Known issue - Upload from SharePoint/OneDrive For Business greyed out
-description: A known issue is posted where a customer can't upload from SharePoint/OneDrive for Business
+description: A known issue is posted where a customer can't upload from SharePoint/OneDrive for Business.
 author: mihart
 ms.author: mihart
 ms.topic: troubleshooting  
@@ -12,7 +12,7 @@ ms.custom: known-issue-398
 
 # Known issue - Upload from SharePoint/OneDrive For Business greyed out
 
-Although you have a SharePoint license, you can't use the Upload option from SharePoint or OneDrive For Business in Power BI.  The option was available previously, but now is greyed out.
+Although you have a SharePoint license, you can't use the Upload option from SharePoint or OneDrive For Business in Power BI. The option was available previously, but now is greyed out.
 
 **APPLIES TO:** ✔️ Power BI Service
 
