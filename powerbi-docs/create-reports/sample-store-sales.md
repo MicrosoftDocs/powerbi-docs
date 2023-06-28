@@ -120,7 +120,7 @@ Under **Pages**, select **District Monthly Sales**. This page includes the follo
 
 1. In **Last Year Sales**, there's a big decrease between March and April. Right-click the sales variance point. From the context menu, select **Analyze** > **Explain the decrease**.
 
-   :::image type="content" source="media/sample-store-sales/power-bi-explain-decrease.png" alt-text="Screenshot shows the sales variance line context menu, hwere you can analyze a change." lightbox="media/sample-store-sales/power-bi-explain-decrease.png":::
+   :::image type="content" source="media/sample-store-sales/power-bi-explain-decrease.png" alt-text="Screenshot shows the sales variance line context menu, where you can analyze a change." lightbox="media/sample-store-sales/power-bi-explain-decrease.png":::
 
    Power BI provides an analysis of the change.
 
