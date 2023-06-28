@@ -38,5 +38,5 @@ You're now ready to view the samples on your mobile device.
 
 ## Next steps
 
-* [Quickstart](mobile-apps-quickstart-view-dashboard-report.md)
-* Questions? Check the [Mobile apps section of the Power BI Community](https://go.microsoft.com/fwlink/?linkid=839277)
+- [Quickstart](mobile-apps-quickstart-view-dashboard-report.md)
+- Questions? Check the [Mobile apps section of the Power BI Community](https://community.fabric.microsoft.com/t5/Mobile-Apps/bd-p/power-bi-mobile)
