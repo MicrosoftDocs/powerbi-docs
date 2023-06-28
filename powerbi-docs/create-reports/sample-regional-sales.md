@@ -11,11 +11,11 @@ LocalizationGroup: Samples
 ---
 # Regional Sales sample for Power BI: Take a tour
 
-The Regional Sales Sample contains a report for a fictitious company named Contoso. The Contoso sales manager created this report to understand their products and regions' key contributors for revenue won or loss. This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards.
+The Regional Sales Sample contains a report for a fictitious company named Contoso. The Contoso sales manager created this report to understand their products and regions' key contributors for revenue wins or losses. This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards.
 
 :::image type="content" source="media/sample-regional-sales/power-bi-regional-sales-report.png" alt-text="Screenshot of opened Regional Sales Sample." lightbox="media/sample-regional-sales/power-bi-regional-sales-report.png":::
 
-This tour explores the Regional Sales sample in the Power BI service. Because the report experience might be similar in Power BI Desktop and in the service, you can also follow along by downloading the sample *.pbix* file in Power BI Desktop.
+This tour explores the Regional Sales sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by downloading the sample *.pbix* file in Power BI Desktop.
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the Employee Hiring and History sample as a .pbix file, which is designed for use with Power BI Desktop.
+Alternatively, you can download the Regional Sales Sample as a .pbix file, which is designed for use with Power BI Desktop.
 
 1. Open the GitHub Samples repository to the [Regional Sales Sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Regional%20Sales%20Sample.pbix).
 
@@ -123,7 +123,7 @@ The **Key Influencers** page shows the contribution of different factors to succ
 
    :::image type="content" source="media/sample-regional-sales/power-bi-close-percent.png" alt-text="Screenshot shows a report tile with the Devices field selected.":::
 
-   The other visualizations on the page now reflect that choice. Look at the **Key influencers** visual in the middle of the page. The influence of various factors appears there. For instance, when the product is E-reader Platinum 8" 32 GB, the likelihood of a **Won** status increases by 2.10 times.
+   The other visualizations on the page now reflect that choice. Look at the **Key influencers** visual in the middle of the page. The influence of various factors appears there. For instance, when the product is **E-reader Platinum 8" 32 GB**, the likelihood of a **Won** status increases by 2.10 times.
 
    :::image type="content" source="media/sample-regional-sales/power-bi-key-influencer.png" alt-text="Screenshot shows the key influencers visual with the top result highlighted." lightbox="media/sample-regional-sales/power-bi-key-influencer.png":::
 
