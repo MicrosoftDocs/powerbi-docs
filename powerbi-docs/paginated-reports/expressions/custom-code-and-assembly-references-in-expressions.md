@@ -4,7 +4,7 @@ description: Find out how to add references to custom code embedded in a paginat
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: rpatkar
-ms.date: 06/16/2023
+ms.date: 06/21/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.custom: updatefrequency5
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  You can add references to custom code embedded in a report or to custom assemblies that you build and save to your computer and deploy to the report server. Use embedded code for custom constants, complex functions or functions that are used multiple times in a single report. Use custom code assemblies to maintain code in a single place and share it for use by multiple reports. Custom code can include new custom constants, variables, functions, or subroutines. You can include read-only references to built-in collections such as the Parameters collection. However, you cannot pass sets of report data values to custom functions; specifically, custom aggregates are not supported.
+  You can add references to custom code embedded in a report. Use embedded code for custom constants, complex functions or functions that are used multiple times in a single report. Custom code can include new custom constants, variables, functions, or subroutines. You can include read-only references to built-in collections such as the Parameters collection. However, you cannot pass sets of report data values to custom functions; specifically, custom aggregates are not supported.
 
 > [!IMPORTANT]  
 > For time-sensitive calculations that are evaluated once at run-time and that you want to remain the same value throughout report processing, consider whether to use a report variable or group variable. For more information, see [Report and Group Variables Collections References (Power BI Report Builder)](/sql/reporting-services/report-design/built-in-collections-report-and-group-variables-references-report-builder).
@@ -33,9 +33,6 @@ To include a reference to other less commonly used CLR namespaces, you must use 
 
 For more information, see [Visual Basic Runtime Library Members](/dotnet/visual-basic/language-reference/runtime-library-members) on MSDN.
 
-## <a id="External"></a> Include References to External Assemblies
-
-To include a reference to a class in an external assembly, you must identify the assembly for the report processor. Use the **References** page of the **Report Properties** dialog box to specify the fully qualified name of the assembly to add to the report. In your expression, you must use the fully qualified name for the class in the assembly. Classes in an external assembly do not appear in the **Expression** dialog box; you must provide the correct name for the class. A fully qualified name includes the namespace, the class name, and the member name.
 
 ## <a id="Embedded"></a> Include Embedded Code
 
@@ -92,7 +89,7 @@ For more information about built-in object collections, see [Built-in Globals an
 
 ## <a id="Parameters"></a> Include References to Parameters from Code
 
-You can reference the global parameters collection via custom code in a Code block of the report definition or in a custom assembly that you provide. The parameters collection is read-only and has no public iterators. You cannot use a Visual Basic **For Each** construct to step through the collection. You need to know the name of the parameter defined in the report definition before you can reference it in your code. You can, however, iterate through all the values of a multi value parameter.
+You can reference the global parameters collection via custom code in a Code block of the report definition. The parameters collection is read-only and has no public iterators. You cannot use a Visual Basic **For Each** construct to step through the collection. You need to know the name of the parameter defined in the report definition before you can reference it in your code. You can, however, iterate through all the values of a multi value parameter.
 
 The following table includes examples of referencing the built-in collection `Parameters` from custom code:
 
