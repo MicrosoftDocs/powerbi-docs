@@ -29,7 +29,7 @@ ms.reviewer: saurkumar
   
 -   [Group expression examples](../../paginated-reports/expressions/group-expression-examples-report-builder.md) 
   
--   [Filter equation examples](../../paginated-reports/expressions/filter-equation-examples-report-builder)  
+-   [Filter equation examples](../../paginated-reports/expressions/filter-equation-examples-report-builder.md)  
   
 -   [Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials)  
   
@@ -71,7 +71,7 @@ ms.reviewer: saurkumar
   
  To group on several dataset fields, add each field to the set of group expressions. You can also write your own group expressions in Microsoft Visual Basic. For example, you can group by a range of values, or by using a report parameter to enable your user to select how to group data in a data region. For more information, see [Group expression examples](../expressions/group-expression-examples-report-builder.md).  
   
- For report presentation, you can add page breaks before and after each group, or each instance of a group, to reduce the amount of data on each page and help you manage report rendering performance. For more information, see [Add page break &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-a-page-break-report-builder-and-ssrs.md).  
+ For report presentation, you can add page breaks before and after each group, or each instance of a group, to reduce the amount of data on each page and help you manage report rendering performance. For more information, see [Add page break &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-a-page-break-report-builder-and-ssrs).  
   
  Creating data region groups is one way to organize data in a report. There are several other ways to organize data, each with its own advantages. For more information, see [Drillthrough, drilldown, subreports, and nested data regions in a paginated report &#40;Power BI Report Builder](../report-design/drillthrough-drilldown-subreports-nested-data-regions.md).  
   
