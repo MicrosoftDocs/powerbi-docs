@@ -1,5 +1,6 @@
 ---
 title: "Importing HTML into a paginated report | Microsoft Docs"
+description: Learn about using a text box to insert HTML-formatted text that you have retrieved from a field in your dataset into a paginated report.
 ms.date: 06/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
