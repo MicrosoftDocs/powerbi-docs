@@ -123,7 +123,7 @@ Add a filter to a dataset, data region, or group to a paginated report when you 
  [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
  [Expression Examples &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expression-examples.md)   
  [Gauges in a paginated report &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/gauges-report-builder.md)   
- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](.../../paginated-reports/report-design/report-builder-tables-matrices-lists.md)   
+ [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/report-builder-tables-matrices-lists)   
  [Charts in Power BI paginated reports &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md)  
   
   
