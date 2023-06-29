@@ -47,14 +47,14 @@ You can explore it these ways:
 
 ## Updated samples
 
-There are revised versions of the original samples. These new versions take the original datasets and incorporate the latest visualizations.
+There are revised versions of some of the original samples. These new versions take the original datasets and incorporate the latest visualizations.
 
+- Competitive Marketing Analysis. Take a tour of the [Competitive Marketing Analysis](sample-competitive-marketing-analysis.md) sample.
 - Corporate Spend. Take a tour of the [Corporate Spend](sample-corporate-spend.md) sample.
 - Employee Hiring and History. Take a tour of the [Employee Hiring and History](sample-employee-hiring-history.md) sample.
-- Revenue Opportunities
+- Revenue Opportunities. Take a tour of the [Revenue Opportunities](sample-revenue-opportunities.md) sample.
 - Store Sales. Take a tour of the [Store Sales](sample-store-sales.md) sample.
-- Competitive marketing Analysis
-- Regional Sales Sample
+- Regional Sales Sample. Take a tour of the [Regional Sales Sample](sample-regional-sales.md)
 
 To obtain these samples:
 
@@ -103,7 +103,7 @@ This industry sample analyzes a CFO's key metrics for the company's executives, 
 
 ### Human Resources / Employee Hiring and History sample
 
-[Take a tour of the Employee Hiring and History sample](sample-employee-hiring-history.md)
+[Take a tour of the updated Employee Hiring and History sample](sample-employee-hiring-history.md)
 
 This industry sample focuses on the hiring strategy for a company by analyzing new hires, active employees, and employees who have left. By exploring the data, you can find trends in voluntary separations and biases in the hiring strategy.
 
@@ -117,11 +117,13 @@ In this industry sample, analyze the planned versus actual costs of the IT depar
 
 [Take a tour of the previous version of the sample](sample-it-spend.md)
 
-### Opportunity Analysis sample
+### Opportunity Analysis / Revenue Opportunities sample
 
-[Take a tour of the Opportunity Analysis sample](sample-opportunity-analysis.md)
+[Take a tour of the Revenue Opportunities sample](sample-revenue-opportunities.md)
 
 This industry sample explores a software company's sales channel. Sales managers monitor their direct and partner sales channels by tracking opportunities and revenue by region, deal size, and channel.
+
+[Take a tour of the previous version of the sample](sample-opportunity-analysis.md)
 
 ### Procurement Analysis sample
 
@@ -129,19 +131,25 @@ This industry sample explores a software company's sales channel. Sales managers
 
 This industry sample analyzes a manufacturing company's spending on vendors by category and location. You can investigate who the top vendors are, what categories the company spends the most on, and which vendors give the best discounts.
 
+### Regional Sales sample
+
+[Take a tour of the Regional Sales sample](sample-regional-sales.md)
+
+This industry sample contains a report for a fictitious company named Contoso. The Contoso sales manager created this report to understand their products and regions' key contributors for revenue won or loss.
+
 ### Retail Analysis / Store Sales sample
 
 [Take a tour of the Store Sales sample](sample-store-sales.md)
 
 This industry sample analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's in these areas: sales, units, gross margin, variance, and new store analysis.
 
-[Take a tour of the previous version of the sample](sample-retail-analysis.md)
+### Sales and Marketing / Competitive Marketing Analysis sample
 
-### Sales and Marketing sample
-
-[Take a tour of the Sales and Marketing sample](sample-sales-and-marketing.md)
+[Take a tour of the updated Competitive Marketing Analysis sample](sample-competitive-marketing-analysis.md)
 
 This industry sample analyzes a manufacturing company, VanArsdel Ltd. It allows the Chief Marketing Officer to watch the industry and the market share for VanArsdel.  By exploring the sample, you can find the company's market share, product volume, sales, and sentiment.
+
+[Take a tour of the previous version of the sample](sample-sales-and-marketing.md)
 
 ### Supplier Quality sample
 
@@ -190,8 +198,13 @@ Several of the original built-in samples now have updated versions and these sam
 
    Updated samples:
 
+   - [Competitive Marketing Analysis](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Competitive%20Marketing%20Analysis.pbix)
    - [Corporate Spend](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Corporate%20Spend.pbix)
    - [Employee Hiring and History](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Employee%20Hiring%20and%20History.pbix)
+   - [Regional Sales Sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Regional%20Sales%20Sample.pbix)
+   - [Revenue Opportunities sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Revenue%20Opportunities.pbix)
+   - [Store Sales sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Store%20Sales.pbix)
+
 
    Original samples:
 
