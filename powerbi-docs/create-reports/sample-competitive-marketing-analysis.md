@@ -18,7 +18,7 @@ The Competitive Marketing Analysis sample contains a report and dataset for a fi
 
 VanArsdel has many competitors but is the market leader in its industry. The CMO wants to increase market share and discover growth opportunities. However, for unknown reasons, VanArsdel's market share has started to decline, with significant dips in June.
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created samples using real, anonymized data. The data is available in the following formats: built-in sample in the Power BI service and *.pbix* Power BI Desktop file. See [Samples for Power BI](sample-datasets.md).
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created samples using real, anonymized data. The data is available in the following formats: built-in sample in the Power BI service and *.pbix* Power BI Desktop file. See [Get the sample](#get-the-sample) in this article.
 
 This tour explores the Competitive Marketing Analysis sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
 
@@ -92,9 +92,11 @@ The visualizations in a Power BI report aren't just pictures. The tiles allow yo
 
 1. If you entered Edit mode, select **Reading view**. Then select **Executive Overview** to return to that page of the report.
 
+### Add a tooltip
+
 You can also learn about the data by using *tooltips*. To see a tooltip, hover over one of the elements of a tile.
 
-   :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-overview-hover-tooltip.png" alt-text="Screenshot shows a tooltip displayed by hovering over one of the visualizations.":::
+:::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-overview-hover-tooltip.png" alt-text="Screenshot shows a tooltip displayed by hovering over one of the visualizations.":::
 
 Power BI automatically generates some tooltips, but you can add values to any visualization.
 
@@ -120,6 +122,8 @@ Under **Pages**, select **Top 10 Regions** to view that report page. In the **To
 
 This tooltip is an entire report page. Such a page can contain as many visualizations as needed. Keep in mind that a large tooltip obscures a large part of your report.
 
+#### Add a report page tooltip
+
 You can add a report page tooltip to any visual.
 
 1. Select **Edit** to enter Edit mode.
@@ -140,7 +144,7 @@ Hover over **Total Sales and ROI by State and Channel** to see the tooltip there
 
 You can always look at the raw numbers that underlie the visualizations. Power BI also provides tools for analyzing the data.
 
-Under **Pages**, select **Return on Investment**. Right-click on the **ROI by Product** visualization. From the context menu, select **Show as a table**.
+Under **Pages**, select **Return on Investment**. Right-click the **ROI by Product** visualization. From the context menu, select **Show as a table**.
 
 :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-return-show-table.png" alt-text="Screenshot shows the context menu with the show as a table option.":::
 
@@ -196,7 +200,7 @@ In this section, use the dashboard to find out, which segments drive sales? Do t
 
    :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-unit-segment-vanarsdel.png" alt-text="Screenshot shows total units by segment for VanArsel as a stacked bar chart." lightbox="media/sample-competitive-marketing-analysis/power-bi-unit-segment-vanarsdel.png":::
 
-   The product volume is mostly from the **Convenience** and **Moderation** segments your share in the **Moderation** and **Convenience** categories is high. VanArsdel competes in these segments.
+   The product volume is mostly from the **Convenience** and **Moderation** segments. Your share in the **Moderation** and **Convenience** categories is high. VanArsdel competes in these segments.
 
 1. Add *by region* to the query. The dashboard breaks down the results by region.
 
