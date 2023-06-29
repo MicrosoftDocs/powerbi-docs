@@ -94,7 +94,7 @@ Watch a short video on how to apply sensitivity labels and then try it out yours
 
 To apply a sensitivity label on a file you're working on, select the **Sensitivity** option on the toolbar. In the dropdown menu, select the appropriate sensitivity label.
 
-:::image type="content" source="media/service-security-apply-data-sensitivity-labels/sensitivity-label-desktop.png" alt-text="Screenshot that shows how to set the sensitivity label for a file in Power BI Desktop." lightbox="media/service-security-apply-data-sensitivity-labels/sensitivity-label-desktop.png" border="false":::
+:::image type="content" source="media/service-security-apply-data-sensitivity-labels/sensitivity-label-desktop.png" alt-text="Screenshot that shows how to set the sensitivity label for a file in Power BI Desktop." border="false":::
 
 > [!NOTE]
 > If the **Sensitivity** option isn't available, you might not have an appropriate license, or you might not belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
@@ -103,7 +103,7 @@ To apply a sensitivity label on a file you're working on, select the **Sensitivi
 
 After you apply the sensitivity label, it's visible in the status bar.
 
-:::image type="content" source="media/service-security-apply-data-sensitivity-labels/sensitivity-label-desktop-status-bar.png" alt-text="Screenshot that shows a sensitivity label highlighted in the Power BI Desktop status bar." lightbox="media/service-security-apply-data-sensitivity-labels/sensitivity-label-desktop-status-bar.png" border="false":::
+:::image type="content" source="media/service-security-apply-data-sensitivity-labels/sensitivity-label-desktop-status-bar.png" alt-text="Screenshot that shows a sensitivity label highlighted in the Power BI Desktop status bar." border="false":::
 
 ### Work with sensitivity labels on uploaded or downloaded files
 
