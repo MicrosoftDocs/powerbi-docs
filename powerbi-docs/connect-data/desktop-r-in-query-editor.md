@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 01/19/2023
+ms.date: 06/07/2023
 LocalizationGroup: Connect to data
 ---
 # Use R in Power Query Editor
@@ -66,7 +66,6 @@ To demonstrate using R in Power Query Editor, this example uses a stock market d
 1. For this example, enter the following script code in the **Script** box of the **Run R script** window. Replace *&lt;Your File Path&gt;* with the path to *EuStockMarkets_NA.csv* on your local file system, for example, *C:/Users/admin/Documents/Microsoft/EuStockMarkets_NA.csv*.
 
     ```r
-       dataset <- read.csv(file="<Your File Path>/EuStockMarkets_NA.csv", header=TRUE, sep=",")
        library(mice)
        tempData <- mice(dataset,m=1,maxit=50,meth='pmm',seed=100)
        completedData <- complete(tempData,1)
@@ -89,7 +88,15 @@ To demonstrate using R in Power Query Editor, this example uses a stock market d
 
 1. Select **Save** to run the script.
 
-   Notice a new column in the **Fields** pane called **completedValues**. This column has a few missing data elements, such as on row 15 and 18. Take a look at how R handles that in the next section.
+   When you run the script, you see the following result:
+
+   :::image type="content" source="media/desktop-r-in-query-editor/r-in-query-editor-11.png" alt-text="Screenshot of results of R script.":::
+   
+   When you select **Table** next to **Output** in the table that appears, the table is presented, as shown in the following image.
+
+   :::image type="content" source="media/desktop-r-in-query-editor/r-in-query-editor-12.png" alt-text="Screenshot of table results from R script.":::
+   
+   Notice the new column in the **Fields** pane called **completedValues**. The SMI missing values column has a few missing data elements. Take a look at how R handles that in the next section.
 
    With just five lines of R script, Power Query Editor filled in the missing values with a predictive model.
 

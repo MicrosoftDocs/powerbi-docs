@@ -128,7 +128,7 @@ When there's an apparent service outage or degradation, Power BI administrators 
 :::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-monitoring/power-bi-support-service-status.png" alt-text="Screenshot of the Power BI support service status page." border="false":::
 
 > [!NOTE]
-> Microsoft typically communicates issues related to the [national clouds](/azure/active-directory/develop/authentication-national-cloud#Overview) in the Microsoft 365 admin center rather than the Power BI support site. If you work with national clouds, work with your Microsoft 365 administrator to monitor Power BI issues.
+> Microsoft typically communicates issues related to the [national/regional clouds](/azure/active-directory/develop/authentication-national-cloud#Overview) in the Microsoft 365 admin center rather than the Power BI support site. If you work with national/regional clouds, work with your Microsoft 365 administrator to monitor Power BI issues.
 
 For more information about Power BI support, see [How to contact support](/power-bi/support/service-support-options).
 

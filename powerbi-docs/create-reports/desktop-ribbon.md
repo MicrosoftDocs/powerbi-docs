@@ -44,7 +44,7 @@ These benefits can be grouped into the following categories:
 
     :::image type="content" source="media/desktop-ribbon/desktop-ribbon-06.png" alt-text="Screenshot showing the new single-line ribbon.":::
 
-* **Keytips to navigate and select buttons** - To help navigate the ribbon, you can press **Alt + Windows Key** to activate keytips. Once activated, you can press the shown keys on your keyboard to navigate.
+* **Keytips to navigate and select buttons** - To help navigate the ribbon, you can press **Alt** to activate keytips. Once activated, you can press the shown keys on your keyboard to navigate.
 
     :::image type="content" source="media/desktop-ribbon/desktop-ribbon-07.png" alt-text="Screenshot showing the new keytips on the ribbon." lightbox="media/desktop-ribbon/desktop-ribbon-07.png":::
 

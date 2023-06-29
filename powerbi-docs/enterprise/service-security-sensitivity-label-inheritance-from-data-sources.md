@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 12/14/2022
+ms.date: 06/13/2023
 LocalizationGroup: Data from files
 ---
 # Sensitivity label inheritance from data sources (preview)
@@ -16,11 +16,11 @@ LocalizationGroup: Data from files
 Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels, so that the data remains classified and secure when brought into Power BI.
 
 Currently supported data sources:
-* Excel*
+* Excel files stored on OneDrive or SharePoint Online*
 * Azure Synapse Analytics (formerly SQL Data Warehouse)
 * Azure SQL Database
 
-*Inheritance from Excel files stored behind a gateway isn't supported. See the [considerations and limitations](#considerations-and-limitations) for more detail.
+*Inheritance from Excel files requires specific configuration and isn't supported for Excel files stored behind a gateway, such as files stored locally. See [Sensitivity label inheritance from Excel files](#sensitivity-label-inheritance-from-excel-files) for more detail.
 
 To be operative, [sensitivity label inheritance from data sources must be enabled on the tenant](../admin/service-admin-portal-information-protection.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview).
 
@@ -32,7 +32,7 @@ To be operative, [sensitivity label inheritance from data sources must be enable
     1. [Classify your Azure SQL data using Azure Purview labels](/azure/sql-database/scripts/sql-database-import-purview-labels).
     * The scope of the labels must be **Files and emails** and **Azure Purview assets**. See [Extending sensitivity labels to Azure Purview](/azure/purview/create-sensitivity-label#extending-sensitivity-labels-to-azure-purview) and [Creating new sensitivity labels or modifying existing labels](/azure/purview/create-sensitivity-label#creating-new-sensitivity-labels-or-modifying-existing-labels).
 * [Sensitivity labels must be enabled in Power BI](service-security-enable-data-sensitivity-labels.md).
-* All conditions for applying a label must be met.
+* A Power BI Pro or Premium Per User (PPU) license is required for the user whose credentials are used to connect to the data source. In addition, [all other conditions for applying a label must be met](./service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-the-power-bi-service).
 * The **[Apply sensitivity labels from data sources to their data in Power BI (preview)](../admin/service-admin-portal-information-protection.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)** tenant admin setting must be enabled. **Note**: This requirement applies to the Power BI service only. In Desktop, a *.pbix* file will inherit the label from the data source even if the tenant admin setting is off. However, after publishing to the service, upon refresh, changes to the label in the data source will only be inherited by the report and dataset if the setting is enabled. 
 
 ## Inheritance behavior
@@ -41,10 +41,22 @@ To be operative, [sensitivity label inheritance from data sources must be enable
 * Labels from data sources never overwrite manually applied labels.
 * Less restrictive labels from the data source never overwrite more restrictive labels on the dataset.
 * In Desktop, if the incoming label is more restrictive than the label that is currently applied in Desktop, a banner will appear that recommends to the user to apply the more restrictive label.
-* Dataset refresh will succeed even if for some reason the label from the data source isn't applied. 
+* Dataset refresh will succeed even if for some reason the label from the data source isn't applied.
 
 >[!NOTE]
 > No inheritance takes place if the dataset owner is not authorized to apply sensitivity labels in Power BI, or if the specific label in question has not been published for the dataset owner.
+
+## Sensitivity label inheritance from Excel files
+
+Sensitivity label inheritance from an Excel file is supported for Excel files stored on OneDrive or SharePoint Online.
+
+To make sure sensitivity label inheritance from an Excel file works:
+
+1. Store the Excel file on OneDrive or SharePoint Online.
+
+1. In Power BI Desktop, connect to the Excel file using the web connector, as described in [Use OneDrive for work or school links in Power BI Desktop](../connect-data/desktop-use-onedrive-business-links.md). The process described in that article applies to both OneDrive and SharePoint Online.
+
+1. After publishing the dataset, to enable refresh, reconfigure the authentication credentials for the dataset, also as described in the above article. Be sure to select **OAuth2** as the authentication method, otherwise you might encounter an error when you attempt to connect or refresh.
 
 ## Considerations and limitations
 

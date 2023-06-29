@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/25/2023
+ms.date: 06/20/2023
 ---
 
 # Power BI implementation planning: Data-level auditing
@@ -69,6 +69,12 @@ Azure Log Analytics is a component of the [Azure Monitor](/azure/azure-monitor/)
 
 You assign a Power BI Premium workspace to a Log Analytics workspace in Azure. You must create a new Log Analytics resource in your Azure subscription to enable this type of logging.
 
+Logs from one or more Power BI workspaces will be sent to a target Log Analytics workspace. Here are some ways you can choose to organize the data.
+
+- **One target workspace for all audit data:** Store all the data in one Log Analytics workspace. That's helpful when the same administrator or users will access all data.
+- **Target workspaces organized by subject area:** Organize the content by subject area. This technique is particularly helpful when different administrators or users are permitted to access the audit data from Azure Log Analytics. For example, when you need to segregate sales data from operations data.
+- **One target workspace for each Power BI workspace:** Set up a one-to-one relationship between a Power BI workspace and an Azure Log Analytics workspace. That's useful when you have particularly sensitive content, or when the data is subject to specific compliance or regulatory requirements.
+
 > [!TIP]
 > Thoroughly review the [documentation](/power-bi/transform-model/log-analytics/desktop-log-analytics-overview) and [frequently asked questions](/power-bi/transform-model/log-analytics/desktop-log-analytics-faq) on this functionality so that you're clear on what's possible and that you understand the technical requirements. Before making this functionality broadly available to workspace administrators in your organization, consider doing a technical proof of concept (POC) with one Power BI workspace.
 
@@ -95,7 +101,7 @@ To optimize cost when using Azure Log Analytics with Power BI:
 
 There are several ways to access the events that are sent to Azure Log Analytics. You can use:
 
-- The prebuilt Log Analytics for Power BI Datasets [template app](/power-bi/transform-model/log-analytics/install-as-engine-app).
+- The prebuilt Log Analytics for Power BI Datasets template app.
 - The Power BI Desktop [connector](/azure/data-explorer/power-bi-connector) for Azure Data Explorer (Kusto). Use the [Kusto Query Language](/azure/data-explorer/kusto/query/) (KQL) to analyze the data that's stored in Log Analytics. If you have SQL query experience, you'll find many similarities with KQL.
 - The [web-based query](/azure/data-explorer/web-query-data) experience in Azure Data Explorer.
 - Any query tool that can run KQL queries.
@@ -114,6 +120,7 @@ There are several ways to access the events that are sent to Azure Log Analytics
 > - **Decide how long to retain Log Analytics data:** Determine whether there's a need to set a longer retention period than the 30-day default.
 > - **Clarify the process for requesting new Log Analytics workspace:** Collaborate with your Azure administrator to clarify how requests for a new Log Analytics resource should be submitted by Power BI workspace administrators.
 > - **Decide how security will work:** Collaborate with your Azure administrator to decide whether it's more feasible for a Power BI workspace administrator to be granted rights to an Azure Log Analytics workspace, or for a Azure administrator to be granted rights to a Power BI workspace. As you make this security decision, consider your plan to connect and disconnect workspaces regularly (for cost optimization).
+> - **Decide how to organize the target Log Analytics workspaces:** Consider how many Azure Log Analytics workspaces will be appropriate to organize the data from one or more Power BI workspaces. Align this decision with your security decisions for who may access the log data.
 > - **Decide which workspace administrators are allowed to connect:** Determine which groups of workspace administrators can connect a Power BI workspace to a Log Analytics workspace. Set the _Azure Log Analytics connection for workspace administrators_ tenant setting to align with this decision.
 > - **Create the Azure Log Analytics resource:** Collaborate with your Azure administrator to create each Log Analytics workspace. Verify and update the permissions that are assigned in Azure to ensure that the Power BI configuration can occur without any issues. Validate that the data stored in Azure is in the correct geographic region.
 > - **Set the Log Analytics connection for each Power BI workspace:** Collaborate with your Power BI workspace administrators to set up the connection to Log Analytics for each Power BI workspace. Verify that the log data is flowing correctly to the Log Analytics workspace.
