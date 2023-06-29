@@ -49,12 +49,11 @@ You can explore it these ways:
 
 There are revised versions of some of the original samples. These new versions take the original datasets and incorporate the latest visualizations.
 
+- Competitive Marketing Analysis. Take a tour of the [Competitive Marketing Analysis](sample-competitive-marketing-analysis.md) sample.
 - Corporate Spend. Take a tour of the [Corporate Spend](sample-corporate-spend.md) sample.
 - Employee Hiring and History. Take a tour of the [Employee Hiring and History](sample-employee-hiring-history.md) sample.
-- Competitive Marketing Analysis. Take a tour of the [Competitive Marketing Analysis](sample-competitive-marketing-analysis.md) sample.
 - Revenue Opportunities. Take a tour of the [Revenue Opportunities](sample-revenue-opportunities.md) sample.
 - Store Sales. Take a tour of the [Store Sales](sample-store-sales.md) sample.
-- Competitive marketing Analysis
 - Regional Sales Sample. Take a tour of the [Regional Sales Sample](sample-regional-sales.md)
 
 To obtain these samples:
@@ -104,7 +103,7 @@ This industry sample analyzes a CFO's key metrics for the company's executives, 
 
 ### Human Resources / Employee Hiring and History sample
 
-[Take a tour of the Employee Hiring and History sample](sample-employee-hiring-history.md)
+[Take a tour of the updated Employee Hiring and History sample](sample-employee-hiring-history.md)
 
 This industry sample focuses on the hiring strategy for a company by analyzing new hires, active employees, and employees who have left. By exploring the data, you can find trends in voluntary separations and biases in the hiring strategy.
 
@@ -120,7 +119,7 @@ In this industry sample, analyze the planned versus actual costs of the IT depar
 
 ### Opportunity Analysis / Revenue Opportunities sample
 
-[Take a tour of the Revenue  sample](sample-revenue-opportunities.md)
+[Take a tour of the Revenue Opportunities sample](sample-revenue-opportunities.md)
 
 This industry sample explores a software company's sales channel. Sales managers monitor their direct and partner sales channels by tracking opportunities and revenue by region, deal size, and channel.
 
