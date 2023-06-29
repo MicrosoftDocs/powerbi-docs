@@ -11,7 +11,7 @@ LocalizationGroup: Samples
 ---
 # Regional Sales sample for Power BI: Take a tour
 
-The Regional Sales Sample contains a report for a fictitious company named Contoso. The Contoso sales manager created this report to understand their products and regions' key contributors for revenue wins or losses. This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards.
+The Regional Sales Sample contains a report for a fictitious company named Contoso. The Contoso sales manager created this report to understand their products and regions' key contributors for revenue wins or losses. This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. See [Get the sample](#get-the-sample) in this article.
 
 :::image type="content" source="media/sample-regional-sales/power-bi-regional-sales-report.png" alt-text="Screenshot of opened Regional Sales Sample." lightbox="media/sample-regional-sales/power-bi-regional-sales-report.png":::
 
