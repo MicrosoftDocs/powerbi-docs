@@ -51,6 +51,7 @@ There are revised versions of the original samples. These new versions take the 
 
 - Corporate Spend. Take a tour of the [Corporate Spend](sample-corporate-spend.md) sample.
 - Employee Hiring and History. Take a tour of the [Employee Hiring and History](sample-employee-hiring-history.md) sample.
+- Competitive Marketing Analysis. Take a tour of the [Competitive Marketing Analysis](sample-competitive-marketing-analysis.md) sample.
 - Revenue Opportunities. Take a tour of the [Revenue Opportunities](sample-revenue-opportunities.md) sample.
 - Store Sales. Take a tour of the [Store Sales](sample-store-sales.md) sample.
 - Competitive marketing Analysis
@@ -137,13 +138,13 @@ This industry sample analyzes a manufacturing company's spending on vendors by c
 
 This industry sample analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's in these areas: sales, units, gross margin, variance, and new store analysis.
 
-[Take a tour of the previous version of the sample](sample-retail-analysis.md)
+### Sales and Marketing / Competitive Marketing Analysis sample
 
-### Sales and Marketing sample
-
-[Take a tour of the Sales and Marketing sample](sample-sales-and-marketing.md)
+[Take a tour of the updated Competitive Marketing Analysis sample](sample-competitive-marketing-analysis.md)
 
 This industry sample analyzes a manufacturing company, VanArsdel Ltd. It allows the Chief Marketing Officer to watch the industry and the market share for VanArsdel.  By exploring the sample, you can find the company's market share, product volume, sales, and sentiment.
+
+[Take a tour of the previous version of the sample](sample-sales-and-marketing.md)
 
 ### Supplier Quality sample
 
@@ -192,9 +193,11 @@ Several of the original built-in samples now have updated versions and these sam
 
    Updated samples:
 
+   - [Competitive Marketing Analysis](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Competitive%20Marketing%20Analysis.pbix)
    - [Corporate Spend](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Corporate%20Spend.pbix)
    - [Employee Hiring and History](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Employee%20Hiring%20and%20History.pbix)
    - [Revenue Opportunities sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Revenue%20Opportunities.pbix)
+
 
    Original samples:
 
