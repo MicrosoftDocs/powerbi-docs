@@ -10,6 +10,9 @@
       href: service-support-options.md
     - name: Create a Support ticket
       href: /power-platform/admin/get-help-support
+    - name: Best practices when creating a support ticket
+      href: best-practices-creating-sr.md
+      displayName: support, support case, best practices
     - name: Consent to access customer data
       href: /power-platform/admin/support-environment
     - name: Policies and communications for Power BI

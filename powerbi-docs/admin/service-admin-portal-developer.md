@@ -25,7 +25,7 @@ You can:
 
 :::image type="content" source="./media/service-admin-portal-developer/developer-settings.png" alt-text="Screenshot of Developer settings options.":::
 
-To manage Power BI developer settings, you must be a Global Admin in Office 365, or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
+To manage Power BI developer settings, you must be a Global Admin in Office 365, or have been assigned the Fabric administrator role. For more information about the Fabric administrator role, see [Understanding Power BI administration roles](service-admin-role.md).
 
 >[!NOTE]
 >The developer settings in the Admin portal are different from and not related to the [developer mode](../developer/visuals/environment-setup.md#set-up-power-bi-service-for-developing-a-visual) setting for debugging visuals.

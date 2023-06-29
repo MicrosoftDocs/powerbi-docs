@@ -107,10 +107,8 @@ Power BI admins and global administrators can change Power BI Premium capacity. 
 
     P SKUs can't be downgraded to EM SKUs. You can hover over any disabled options to see an explanation.
 
-
-
 > [!IMPORTANT]
-> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. See [capacity and reliability notifications](../support/service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. See [Notifications](../admin/service-admin-premium-capacity-notifications.md) for more information.
 
 
 ### Manage user permissions
@@ -197,7 +195,7 @@ A Power BI admin or capacity admin can designate a capacity as the default capac
 
 ## Power BI Report Server product key
 
-On the **Capacity settings** tab of the Power BI admin portal, you'll have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Power BI service administrator role and if you have purchased a Power BI Premium SKU.
+On the **Capacity settings** tab of the Power BI admin portal, you'll have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Fabric administrator role and if you have purchased a Power BI Premium SKU.
 
 ![Power BI Report Server key within Capacity settings](media/service-admin-premium-manage/pbirs-product-key.png)
 

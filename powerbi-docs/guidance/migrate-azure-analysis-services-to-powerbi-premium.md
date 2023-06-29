@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/30/2023
+ms.date: 05/22/2023
 ms.custom: intro-migration
 ---
 
@@ -78,25 +78,25 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Business continuity and disaster recovery (BCDR)](../enterprise/service-admin-failover.yml) with Azure regions and availability zones | No | Yes |
 | **Interactive analysis over big data** |||
 | [Large model sizes](../enterprise/service-premium-large-models.md) (up to 400 GB with compression) | Yes | Yes |
-| [Hybrid tables](../connect-data/service-dataset-modes-understand.md#hybrid-tables), which comprise in-memory and DirectQuery partitions that can help deliver near real-time results over large tables | No | Yes <sup>1</sup> |
+| [Hybrid tables](../connect-data/service-dataset-modes-understand.md#hybrid-tables), which comprise in-memory and DirectQuery partitions that can help deliver near real-time results over large tables | No | Yes  |
 | [Automatic aggregations](../enterprise/aggregations-auto.md), which use state-of-the-art machine learning (ML) to continuously optimize DirectQuery performance | No | Yes |
 | [User-defined aggregations](../transform-model/aggregations-advanced.md), which can improve query performance over very large DirectQuery tables | No | Yes |
 | [Query scale-out](/azure/analysis-services/analysis-services-scale-out), which distributes client queries among replicated servers | Yes | Yes |
 | **Security** |||
 | [Bring Your Own Key (BYOK)](../enterprise/service-encryption-byok.md), which allows customers to use their own encryption key to encrypt data stored in the Microsoft cloud | No | Yes |
-| [Virtual network connectivity](/data-integration/vnet/overview), which allows Power BI to work seamlessly in an organization's virtual network (VNet) | No | Yes <sup>1</sup> |
+| [Virtual network connectivity](/data-integration/vnet/overview), which allows Power BI to work seamlessly in an organization's virtual network (VNet) | No | Yes  |
 | [Azure Private Link](../enterprise/service-security-private-links.md), which provides secure access for data traffic in Power BI | No | Yes |
 | Single sign-on (SSO) for DirectQuery sources, which allows connecting to data sources by using the report user's identity | No | Yes |
 | [Row-level security (RLS)](../enterprise/service-admin-rls.md), which restricts access to specific rows of data for specific users | Yes | Yes |
 | [Object-level security (OLS)](/analysis-services/tabular-models/object-level-security), which restricts access to specific tables or columns for specific users | Yes | Yes |
-| [Firewall](/azure/analysis-services/analysis-services-qs-firewall), which when enabled, allows setting allowed IP address ranges | Yes | No <sup>3</sup> |
+| [Firewall](/azure/analysis-services/analysis-services-qs-firewall), which when enabled, allows setting allowed IP address ranges | Yes | No <sup>1</sup> |
 | **Governance** |||
 | [Microsoft Purview integration](/azure/purview/overview), which helps customers manage and govern Power BI items | No | Yes |
 | Microsoft Information Protection (MIP) [sensitivity labels](../enterprise/service-security-sensitivity-label-overview.md) and integration with [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) for data loss prevention | No | Yes |
 | Content [endorsement](../collaborate-share/service-endorse-content.md), to promote or certify valuable, high-quality Power BI items | No | Yes |
 | **Semantic modeling** |||
 | Compatibility with Power BI Desktop | No | Yes |
-| [Composite models](../transform-model/desktop-composite-models.md) including using [DirectQuery for Power BI datasets and AAS](../connect-data/desktop-directquery-datasets-azure-analysis-services.md) | No | Yes <sup>1</sup> |
+| [Composite models](../transform-model/desktop-composite-models.md) including using [DirectQuery for Power BI datasets and AAS](../connect-data/desktop-directquery-datasets-azure-analysis-services.md) | No | Yes  |
 | [Translations](/analysis-services/tabular-models/translations-in-tabular-models-analysis-services) for multi-language model versions observed by the Power BI service | No | Yes |
 | Analysis Service engine semantic modeling | Yes | Yes |
 | **Model management** |||
@@ -106,7 +106,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Enhanced refresh](../connect-data/asynchronous-refresh.md), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes |
 | [Backup and restore](../enterprise/service-premium-backup-restore-dataset.md) | Yes | Yes |
 | [Dataset workload settings](../enterprise/service-admin-premium-workloads.md#datasets), which control Premium capacity workloads | No | Yes |
-| [Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties | Yes | Yes <sup>1</sup> |
+| [Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties | Yes | Yes  |
 | [Alias server names](/azure/analysis-services/analysis-services-server-alias), which allow connecting to an Analysis Services server instance by using a shorter alias | Yes | No |
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md) enabled APIs for scripting and compatibility with services for automation and ALM including Azure Functions, Azure Automation and Azure DevOps | Yes | Yes |
 | **Connectivity** |||
@@ -119,16 +119,12 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | **Monitoring and diagnostic logging** |||
 | [Premium capacity metrics app](../enterprise/service-premium-metrics-app.md), which provides monitoring capabilities for Power BI capacities | No | Yes |
 | [Power BI audit log](../admin/service-admin-auditing.md#use-the-audit-log), which tracks user activities across Power BI and Microsoft 365 | No | Yes |
-| [Azure Log Analytics (LA) integration](../transform-model/log-analytics/desktop-log-analytics-overview.md), which allows administrators to configure a Log Analytics connection for a Power BI workspace | Yes | Yes <sup>1</sup> |
+| [Azure Log Analytics (LA) integration](../transform-model/log-analytics/desktop-log-analytics-overview.md), which allows administrators to configure a Log Analytics connection for a Power BI workspace | Yes | Yes  |
 | [Metric alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-types#metric-alerts), which provide a way to get notified when one of your multi-dimensional metrics crosses a threshold | Yes | No |
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md), which allows diagnostic logging tool connections, including SQL Server Profiler | Yes | Yes |
 | [SQL Server Extended Events (xEvents)](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events), which is a light-weight tracing and performance monitoring system useful for diagnosing issues | Yes | No |
 
-<sup>1</sup> In public preview
-
-<sup>2</sup> Planned
-
-<sup>3</sup> Use VNet connectivity and Azure Private Link instead
+<sup>1</sup> Use VNet connectivity and Azure Private Link instead
 
 ## Cost comparison
 

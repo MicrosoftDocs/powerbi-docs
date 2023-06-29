@@ -70,7 +70,7 @@ You can integrate a Power BI report in Teams and share it with external users. H
     - Power BI messaging extension, which provides link previews, search, and link unfurling
     - Power BI activity feed notifications
     - Chat in Microsoft Teams
-- In other national clouds, the new **Power BI** tab isn't available. An older version might be available that doesn't support workspaces or reports in Power BI apps.
+- In other national/regional clouds, the new **Power BI** tab isn't available. An older version might be available that doesn't support workspaces or reports in Power BI apps.
 - After you save the tab, you can't change the tab name through the tab settings. Use the **Rename** option to change it.
 - Link previews don't work in meeting chat or private channels.
 - The messaging extension may process request and response data in a region that's different from your Power BI tenant home region.

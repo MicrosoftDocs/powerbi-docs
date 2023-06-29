@@ -254,7 +254,8 @@ Even if you use service principal profiles to separate your customers' data, you
 
 ## Considerations and limitations
 
-Service principal profiles aren't supported with Azure Analysis Services (AAS) in live connection mode.
+* Service Principal Profiles are only supported through the Power [BI REST API](/rest/api/power-bi/) and the [Power BI .NET SDK](https://www.nuget.org/packages/Microsoft.PowerBI.Api/). Service Principal Profiles are not supported in Power BI through the XMLA endpoint or the Tabular Object Model (TOM).
+* Service principal profiles aren't supported with Azure Analysis Services (AAS) in live connection mode.
 
 ### Power BI capacity limitations
 

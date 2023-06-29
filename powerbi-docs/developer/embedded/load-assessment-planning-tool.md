@@ -1,5 +1,5 @@
 ---
-title: Power BI embedded analytics assess load for capacity planning
+title: Power BI embedded analytics assess load for capacity planning.
 description: Learn how to plan your Premium capacity in Power BI embedded analytics.
 author: mberdugo
 ms.author: monaberdugo
@@ -27,20 +27,20 @@ When running the tool, keep in mind the existing load on your capacities and mak
 Here are some examples of how you can use the planning tool.
 
 * Capacity administrators can get a better understanding of how many users their capacity can handle in a given time frame.
-* Report authors can understand the user load effect, as measured with Power BI desktop's [Performance Analyzer](../../create-reports/desktop-performance-analyzer.md).
+* Report authors can understand the user load effect, as measured with the Power BI desktop's [Performance Analyzer](../../create-reports/desktop-performance-analyzer.md).
 * You can see renders happening in real time on your browser.
-* Using SQL Server Profiler, you can [connect to the XMLA endpoints](../../enterprise/service-premium-connect-tools.md) of the capacities being measured, to see the queries being executed.
-* The load test effects are visible in the premium capacity metrics app's Datasets page. Capacity admins can use this tool to generate load, and see how that load shows up.
+* Using [SQL Server Profiler](/sql/tools/sql-server-profiler/start-sql-server-profiler), you can [connect to the XMLA endpoints](../../enterprise/service-premium-connect-tools.md) of the capacities being measured, to see the queries being executed.
+* See the load test effects in the premium capacity metrics app's **Datasets** page. Capacity admins can use this tool to generate load, and see how that load shows up.
 
 ### Review the test results
 
-Review the results of your load assessment using the [Premium] metrics app](../../enterprise/service-premium-metrics-app.md).
+Review the results of your load assessment using the [Premium metrics app](../../enterprise/service-premium-metrics-app.md).
 
 ## Power BI capacity tools GitHub repository
 
 The [Power BI capacity tools GitHub repository](https://github.com/microsoft/PowerBI-Tools-For-Capacities) was created to host the capacity planning tool and other future tools and utilities.
 
-The repository is open source and users are encouraged to contribute, add more tools related to Power BI Premium and Embedded capacities, and improve the existing ones.
+The repository is open source. Users are encouraged to contribute by adding more tools related to Power BI Premium and Embedded capacities, and improving the existing ones.
 
 ## Next steps
 

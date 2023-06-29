@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/02/2023
+ms.date: 05/30/2023
 ---
 
 # Support timeline for Power BI Report Server
@@ -25,6 +25,7 @@ This support policy allows us to deliver innovation to customers at a rapid rate
 
 | **Version** | **Availability date** | **Support end date** |
 | --- | --- | --- |
+| May 2023 | May 2023 | May 2024|
 | January 2023 | January 2023 | January 2024|
 | September 2022 | September 2022 | September 2023|
 | May 2022 | May 2022 | May 2023|

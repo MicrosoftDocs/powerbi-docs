@@ -6,7 +6,7 @@ ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.custom: admin-portal
+ms.custom: admin-portal, fabric
 ms.topic: how-to
 ms.date: 01/19/2023
 LocalizationGroup: Administration
