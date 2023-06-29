@@ -15,7 +15,7 @@ ms.reviewer: saurkumar
 
 A stepped report is a type of paginated report that shows detail rows or child groups indented under a parent group in the same column, as shown in the example below:  
   
- ![Screenshot showing Rendered stepped report](../../reporting-services/report-design/media/stepped-report-rendered.gif "Rendered stepped report")  
+ ![Screenshot showing Rendered stepped report](../report-design/media/stepped-report-rendered.gif "Rendered stepped report")  
   
  Traditional table reports place the parent group in an adjacent column on the report. The new tablix data region enables you to add a group and detail rows or child groups to the same column. To differentiate the group rows from the detail or child group rows, you can apply formatting such as font color, or you can indent the detail rows.  
   
