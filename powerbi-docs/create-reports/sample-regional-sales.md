@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 06/28/2023
+ms.date: 06/29/2023
 LocalizationGroup: Samples
 ---
 # Regional Sales sample for Power BI: Take a tour
@@ -54,7 +54,7 @@ If you'd like to view it in the Power BI service, you can publish it there.
 
    Power BI imports the sample, adding the report and dataset to your selected workspace.
 
-## Explore the Regional Sales Sample report
+## Open the Regional Sales Sample report
 
 To open the Regional Sales report, go to your workspace and select that report:
 
@@ -73,19 +73,19 @@ Select **Edit** in the **Power BI** header bar to explore in the editing view:
 
 Select **Reading view** to leave Edit mode. Save or discard your changes.
 
-## Use report pages
+## Explore the Sales Overview report page
 
 A report can have several pages that work with the same dataset. The visuals display different data from the dataset.
 
 :::image type="content" source="media/sample-regional-sales/power-bi-tiles.png" alt-text="Screenshot shows four visualizations from the sample report." lightbox="media/sample-regional-sales/power-bi-tiles.png":::
 
-In the **Revenue Won** tile, select **Accessories**.
+On the Sales Overview page, in the **Revenue Won** tile, select **Accessories**. The other visualizations now reflect your selection. 
 
 :::image type="content" source="media/sample-regional-sales/power-bi-tiles-select.png" alt-text="Screenshot shows four visualizations from the sample report with values that reflect the selection." lightbox="media/sample-regional-sales/power-bi-tiles-select.png":::
 
-The other visualizations now reflect your selection. Use this feature to explore your data. Select the **Accessories** field again to restore all data to the visualizations.
+Use this feature to explore your data. Select the **Accessories** field again to restore all data to the visualizations.
 
-### Navigate the report
+## Investigate the report navigation
 
 This report uses several buttons to navigate among the report pages.
 
@@ -113,7 +113,7 @@ Hiding all report pages except for the **Overview** page provides a clear entry 
 
 For more information, see [Create page and bookmark navigators](button-navigators.md).
 
-### Review the Key Influencers page
+## Review the Key Influencers page
 
 The **Key Influencers** page shows the contribution of different factors to successes for your company. This page isn't a passive display of data. Stakeholders can use these visualizations to interact and learn.
 
@@ -133,7 +133,7 @@ The **Key Influencers** page shows the contribution of different factors to succ
 
 1. Select **Reading view** to leave Edit mode. Back in the report, you can select different categories, different influencers, or select **Lost** instead of **Won**.
 
-### Use a decomposition tree
+## Drill into data in the decomposition tree
 
 Use the decomposition tree visualization, or *decomp tree*, to visualize data across multiple dimensions. You can aggregate the data and drill down into your dimensions in any order. This tool is valuable for improvised exploration and conducting root cause analysis.
 
@@ -159,7 +159,7 @@ Use the decomposition tree visualization, or *decomp tree*, to visualize data ac
 
 Perhaps the easiest way to interact with a decomp tree is to select **High value** or **Low value** repeatedly to see which fields have the greatest effect.
 
-### Ask questions about your data
+## Ask questions about your data
 
 A natural language query, or *Q&A* visualization, offers the ability to ask questions about data in natural language to explore your data. The report can respond to your queries and make suggestions for useful queries.
 
