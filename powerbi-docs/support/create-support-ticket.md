@@ -21,7 +21,7 @@ Before creating a support ticket, get real-time help by using the [Power Platfor
 
 Support tickets can be created by users with one of the following security roles or licenses.  
 
-- AAD role administrator
+- Azure AD role administrator
 
 - Environment administrator (or system administrator role in Dataverse)
 
@@ -64,8 +64,8 @@ The steps you take to create a support ticket vary, depending on your role.
 
 2. Select **Help + support** > **Get Help + support**
 
-   ![Screenshot of the Help+Supprot page.](media/Create-support-ticket/help+supprot1.png)
-
+   ![Screenshot of the Help+Support page.](media/create-support-ticket/help-supprot-1.png)
+      
 3. Select the product you're experiencing an issue with.
 
    > [!TIP]
@@ -73,23 +73,23 @@ The steps you take to create a support ticket vary, depending on your role.
 
 4. Fill in the description of the issue and select the arrow to the right. Solutions matching the issue's description are presented.
 
-   ![Screenshot of field where you provide issue description.](media/Create-support-ticket/provide-issue-description.png)
+   ![Screenshot of field where you provide issue description.](media/create-support-ticket/provide-issue-description.png)
 
 5. If no solution is found, select the problem type and subtype and then choose **See solutions**. For some problem type and subtype selections, you're asked to provide additional information.
 
-   ![Screenshot showing ST selection.](media/Create-support-ticket/st-selection.png)
+   ![Screenshot showing ST selection.](media/create-support-ticket/support-topic-selection.png)
 
 6. Based on the information you provide, PPAC presents you with a list of possible solutions to your issue. Select the relevant solution and determine if the content can successfully guide you to a fix.
 
-   ![Screenshot of suggested olutions.](media/Create-support-ticket/solutions-and-contact-support.png)
+   ![Screenshot of suggested Solutions.](media/create-support-ticket/solutions-and-contact-support.png)
 
 7. If the guidance doesn't resolve your issue, scroll down and select **Contact Support**, and fill in the fields in the following pages.
 
-   ![Screenshot of the Contact support tab.](media/Create-support-ticket/support-tab.png)
+   ![Screenshot of the Contact support tab.](media/create-support-ticket/support-tab.png)
 
 8. If you have a **Unified or Premier** support plan that isn't listed, select **Add new contract** and fill in the fields. If you don't know your access or contract ID, contact your service admin, Incident Manager or Customer Success Account Manager (CSAM).
 
-   ![Screenshot of a new support contract.](media/Create-support-ticket/new-support-contract.png)
+   ![Screenshot of a new support contract.](media/create-support-ticket/new-support-contract.png)
 
    > [!TIP]
    > 
@@ -102,27 +102,27 @@ The steps you take to create a support ticket vary, depending on your role.
 
 1. On the [Fabric Support page](https://support.fabric.microsoft.com/en-US/support), review the status dashboard, outage/degradation and **Awareness** fields, and **Known issues** to ensure that your issue is not already known. Then, scroll down to **Create a support request** and select the product you're experiencing an issue with.
 
-   ![Support page product selection.](media/Create-support-ticket/support-page-product-selection.png)
+   ![Screenshot of Support page product selection.](media/create-support-ticket/support-page-product-selection.png)
 
 2. Fill in the description of the issue and select the arrow to the right. Solutions matching the issue's description are presented.
 
-   ![Iframe issue description.](media/Create-support-ticket/iframe-issue-description.png)
+   ![Screenshot of Iframe issue description.](media/create-support-ticket/iframe-issue-description.png)
 
 3. If no solution is found, select the problem type and subtype and then choose **Get solutions**. For some problem type and subtype selections, you're asked to provide additional information.
 
-   ![iframe ST selection.](media/Create-support-ticket/iframe-st-selection1.png)
+   ![Screenshot of iframe ST selection.](media/create-support-ticket/iframe-support-topic-selection-1.png)
 
 4. Based on the information you provide, you see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix.
 
-   ![Solutions and contact support.](media/Create-support-ticket/solutions-and-contact-support.png)
+   ![Screenshot of Solutions and contact support.](media/create-support-ticket/solutions-and-contact-support.png)
 
 5. If the guidance doesn't resolve your issue, scroll down and select **Contact Support**, and fill in the fields in the following pages.
 
-   ![Support tab.](media/Create-support-ticket/support-tab.png)
+   ![Screenshot of Support tab.](media/create-support-ticket/support-tab.png)
 
 6. If you have a **Unified or Premier** support plan that isn't listed, select **Add new contract** and fill in the fields. If you don't know your access or contract ID, contact your service admin or Incident Manager or Customer Success Account Manager (CSAM).
 
-   ![New support contract.](media/Create-support-ticket/new-support-contract.png)
+   ![Screenshot of New support contract.](media/create-support-ticket/new-support-contract.png)
 
    > [!TIP]
    > 
@@ -132,7 +132,7 @@ The steps you take to create a support ticket vary, depending on your role.
 ### Live Chat
 1. For some of the combinations of problem type and subtype, users might see the option to start a live chat session with a Microsoft Support representative. The option to start a live chat session appears on the **Contact** page. 
 
-   ![PPACLivechat.](media/Create-support-ticket/livechat.png)
+   ![PPACLivechat.](media/create-support-ticket/livechat.png)
 
         
 
