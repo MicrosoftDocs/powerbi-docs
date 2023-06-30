@@ -58,7 +58,7 @@ Now that you're in the Properties box, you have your choice of actions.
    
 ### Add a bookmark
 
-You can link to bookmarks to a location in the current report. To link to a bookmark, you must first set the **Bookmark** property of a report item. To set the **Bookmark** property, select a report item, and in the Properties pane, type a value or expression for the bookmark ID; for example, SalesChart or 5TopSales.
+You can link to bookmarks to a location in the current report. To link to a bookmark, you must first set the **Bookmark** property of a report item. To set the **Bookmark** property, select a report item, and in the Properties pane, type a value or expression for the bookmark ID; for example, SalesChart or TopSales.
 
 1. On the **Action** tab, select **Go to bookmark**. 
 
