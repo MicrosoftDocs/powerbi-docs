@@ -19,7 +19,7 @@ In Power BI paginated reports, add a group to a data region when you want to org
   
  In a Chart data region, select in the chart to display the drop-zones. Create groups by dragging dataset fields to the category and series drop zones. To add nested groups, add multiple fields to the drop-zone.  
   
- Groups are not defined in a gauge by default. The default behavior for the gauge is to aggregate all values in the specified field into one value that is displayed on the gauge. For more information, see [Gauges (Power BI Report Builder)](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs).  
+ Groups are not defined in a gauge by default. The default behavior for the gauge is to aggregate all values in the specified field into one value that is displayed on the gauge. For more information, see [Gauges (Power BI Report Builder)](../report-design/visualizations/gauges-report-builder.md).  
   
   
 ## Add a parent or child row or column group to a tablix data region  
@@ -112,12 +112,12 @@ In Power BI paginated reports, add a group to a data region when you want to org
   
 ## Next steps  
  [Report and group variables collections references (Power BI Report Builder)](/sql/reporting-services/report-design/built-in-collections-report-and-group-variables-references-report-builder)   
- [Group expression examples (Power BI Report Builder)](/sql/reporting-services/report-design/group-expression-examples-report-builder-and-ssrs)   
+ [Group expression examples (Power BI Report Builder)](../expressions/group-expression-examples-report-builder.md)   
  [Filter, group, and sort data (Power BI Report Builder)](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
  [Tablix data region (Power BI Report Builder)](/sql/reporting-services/report-design/tablix-data-region-report-builder-and-ssrs)   
  [Tables (Power BI Report Builder)](/sql/reporting-services/report-design/tables-report-builder-and-ssrs)   
  [Matrices (Power BI Report Builder)](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs)   
  [Lists (Power BI Report Builder)](/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs)   
- [Tables, Matrices, and Lists (Power BI Report Builder)](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)  
+ [Tables, Matrices, and Lists (Power BI Report Builder)](../report-builder-tables-matrices-lists.md)  
   
   
