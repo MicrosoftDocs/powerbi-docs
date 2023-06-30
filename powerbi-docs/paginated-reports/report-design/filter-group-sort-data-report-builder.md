@@ -15,7 +15,7 @@ ms.reviewer: saurkumar
 
   In a paginated report, expressions are used to help control, organize, and sort report data. By default, as you create datasets and design the report layout, properties of report items are set automatically to expressions based on the dataset fields, parameters, and other items that appear in the Report Data pane. You can also add an interactive sort button to a table or matrix cell to enable a user to interactively change the row sort order for groups or rows within groups.  
   
--   **Filter expressions** A filter expression tests data for inclusion or exclusion based on a comparison that you specify. Filters are applied to data in a report after the data is retrieved from a data connection. You can add any combination of filters to the following items:  a shared dataset definition on the report server; a shared dataset instance or embedded dataset in a report; a data region such as a table or a chart; or a data region group, such as a row group in a table or a category group in a chart.  
+-   **Filter expressions** A filter expression tests data for inclusion or exclusion based on a comparison that you specify. Filters are applied to data in a report after the data is retrieved from a data connection. You can add any combination of filters to the following items: a shared dataset instance or embedded dataset in a report; a data region such as a table or a chart; or a data region group, such as a row group in a table or a category group in a chart.  
   
 -   **Group expressions** A group expression organizes data based on a dataset field or other value. Group expressions are created automatically as you build the report layout. The report processor evaluates group expressions after filters are applied to the data, and as report data and data regions are combined. You can customize a group expression after it is created.  
   
@@ -189,12 +189,11 @@ FROM Production.Product
  [Linking multiple data regions to the same dataset &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/linking-multiple-data-regions-to-the-same-dataset-report-builder-and-ssrs)  
   
 ## Next steps  
- [Expressions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs)   
- [Tables, matrices, and lists &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)   
+ [Expressions &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expressions.md)   
+ [Tables, matrices, and lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists)   
  [Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs)   
- [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   
  [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs)   
- [Gauges &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs)
+ [Gauges &#40;Power BI Report Builder&#41;](../report-design/visualizations/gauges-report-builder.md)
  [Indicators &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/indicators-report-builder-and-ssrs)  
   
   
