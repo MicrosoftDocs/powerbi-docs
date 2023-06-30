@@ -19,7 +19,7 @@ In Power BI paginated reports, add a group to a data region when you want to org
   
  In a Chart data region, select in the chart to display the drop-zones. Create groups by dragging dataset fields to the category and series drop zones. To add nested groups, add multiple fields to the drop-zone.  
   
- Groups are not defined in a gauge by default. The default behavior for the gauge is to aggregate all values in the specified field into one value that is displayed on the gauge. For more information, see [Gauges (Power BI Report Builder)](/visualizations/gauges-report-builder.md).  
+ Groups are not defined in a gauge by default. The default behavior for the gauge is to aggregate all values in the specified field into one value that is displayed on the gauge. For more information, see [Gauges (Power BI Report Builder)](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs).  
   
   
 ## Add a parent or child row or column group to a tablix data region  
