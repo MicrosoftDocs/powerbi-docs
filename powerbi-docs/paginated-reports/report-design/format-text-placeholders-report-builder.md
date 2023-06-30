@@ -57,10 +57,11 @@ A text box can be a paginated report item. It can also be an individual cell wit
  In **Alignment** on the **Text Box Properties** dialog box, you can specify how the text should be aligned horizontally. If you do not specify a value for alignment, the default value of the alignment is **Default**. This means that the text is aligned based on the field type of your placeholder value. If you specify an expression that evaluates to a non-string value, i.e., not a number, the text is aligned to the right. If your expression evaluates to a string value, such as a number, the text is aligned to the left.  
   
 ## Next steps  
- [Expressions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs)   
+ 
+ [Expressions &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expressions.md)   
+ [Tables, matrices, and lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)   
  [Formatting axis labels on a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
  [Formatting scales on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)   
- [Tables, matrices, and lists &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)   
  [Exporting to Microsoft excel &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs)   
  [Text boxes &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/text-boxes-report-builder-and-ssrs)  
   
