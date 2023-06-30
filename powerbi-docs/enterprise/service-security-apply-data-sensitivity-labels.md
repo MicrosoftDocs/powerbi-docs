@@ -42,7 +42,7 @@ When data protection is enabled on your tenant, sensitivity labels appear in the
 
 You can apply or change the sensitivity label on a report or dashboard by following these steps:
 
-1. Open the context menu for a report or dashboard, and select **Settings**.
+1. Open the **More options (...)** menu for a report or dashboard, and select **Settings**.
 1. In the **Settings** side pane, go to the **Sensitivity label** section.
 1. Use the drop-down list to select the appropriate sensitivity label.
 1. Select **Save** to apply the modified settings.
@@ -58,7 +58,7 @@ The following image shows how to set the sensitivity label for a dashboard to _H
 
 You can apply or change the sensitivity label on a dataset or dataflow by following similar steps:
 
-1. Open the context menu for a dataset or dataflow, and select **Settings**.
+1. Open the **More options (...)** menu for a dataset or dataflow, and select **Settings**.
 1. In the **Settings** view, select the **Datasets** or **Dataflows** tab, according to your configuration.
 1. Expand the **Sensitivity label** section.
 1. Use the drop-down list to select the appropriate sensitivity label.
