@@ -19,11 +19,11 @@ Learn how to add hyperlink actions to text boxes, images, charts, and gauges in 
   
 * You can **add a hyperlink that will open a browser with a URL** that you specify. The hyperlink can be a static URL or an expression that evaluates to a URL. If you have a field in a database that contains URLs, the expression can contain that field, resulting in a dynamic list of hyperlinks in the report. Make sure your report readers have access to the URL that you provide.  
    
-* You can also **specify URLs to create drillthroughs** to any reports in the Power BI service that you and your users have permission to view using URL requests. For example, you can specify a report and hide the document map for the user when they first view the report. For more information, see [Specifying Paths to External Items &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specifying-paths-to-external-items-report-builder-and-ssrs).
+* You can also **specify URLs to create drillthroughs** to any reports in the Power BI service that you and your users have permission to view using URL requests. For more information, see [Specifying Paths to External Items (Power BI Report Builder)](/sql/reporting-services/report-design/specifying-paths-to-external-items-report-builder-and-ssrs).
  
  * You can **add a bookmark to a specific place** in the same report. 
   
-Try adding hyperlinks with sample data in [Tutorial: Format Text &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-format-text-report-builder).  
+Try adding hyperlinks with sample data in [Tutorial: Format Text (Power BI Report Builder)](/sql/reporting-services/tutorial-format-text-report-builder).  
   
 > [!NOTE]  
 >  Links that are bound to dataset fields can be vulnerable to tampering for malicious purposes. For more information, see [Secure Reports and Resources](/sql/reporting-services/security/secure-reports-and-resources).  
@@ -89,7 +89,7 @@ You can link to bookmarks to a location in the current report. To link to a book
 1. To test the link, select **Run** to preview the report, and then select the report item that you set this link on.  
   
 ## Next steps  
- [Interactive Sort, Document Maps, and Links &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/interactive-sort-document-maps-and-links-report-builder-and-ssrs)   
- [Create a Document Map &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/create-a-document-map-report-builder-and-ssrs)  
+ [Interactive Sort, Document Maps, and Links (Power BI Report Builder)](/sql/reporting-services/report-design/interactive-sort-document-maps-and-links-report-builder-and-ssrs)   
+ [Create a Document Map (Power BI Report Builder)](/sql/reporting-services/report-design/create-a-document-map-report-builder-and-ssrs)  
   
   
