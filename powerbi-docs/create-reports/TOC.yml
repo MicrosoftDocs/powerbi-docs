@@ -551,7 +551,7 @@
       - name: Add a bookmark to a paginated report
         href: ../paginated-reports/report-design/add-bookmark-report-report-builder.md
       - name: Add a border to a paginated report
-        href: ../paginated-reports/report-design/add-border-to-report-report-builder..md
+        href: ../paginated-reports/report-design/add-border-to-report-report-builder.md
       - name: Add a hyperlink to a URL in a paginated report
         href: ../paginated-reports/report-design/add-hyperlink-to-url-report-builder.md
       - name: Add a page break to a paginated report
