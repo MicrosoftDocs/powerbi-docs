@@ -25,7 +25,7 @@ A stepped report is a type of Power BI paginated report that shows detail rows o
 >  The wizard is available only in Power BI Report Builder.  
   
   
-## To create a stepped report  
+## Create a stepped report  
   
 1. Create a table report. For example, insert a tablix data region and add fields to the Data row.  
   
@@ -77,7 +77,7 @@ A stepped report is a type of Power BI paginated report that shows detail rows o
   
 1. On the **Home** tab select **Run**. The report displays the group with indented levels for the child group values.  
   
-## To create a stepped report with multiple groups  
+## Create a stepped report with multiple groups  
   
 1. Create a report as described in the previous procedure.  
   
