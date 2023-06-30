@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/03/2023
+ms.date: 07/04/2023
 ms.custom: video-l2wy4XgQIu0
 LocalizationGroup: Data from files
 ---
@@ -93,7 +93,7 @@ Where you save your workbook file makes a difference.
 
   Excel also has a **Publish** command on the **File** menu. Using **Publish** is effectively the same as using **Upload** > **Browse** from Power BI. If you regularly make changes to the workbook, it's often easier to update your dataset in Power BI.
 
-- **OneDrive for Business**. Signing in to OneDrive for Business with the same account as Power BI is the most effective way to keep your work in Excel and your Power BI dataset, reports, and dashboards in sync. Both Power BI and OneDrive are in the cloud, so Power BI connects to your workbook file on OneDrive about once an hour. If Power BI finds any changes, it automatically updates your Power BI dataset, reports, and dashboards.
+- **OneDrive for Business**. Signing in to OneDrive for Business with the same account as Power BI is the most effective way to keep your work in Excel in sync with your Power BI dataset, reports, and dashboards. Both Power BI and OneDrive are in the cloud, so Power BI connects to your workbook file on OneDrive about once an hour. If Power BI finds any changes, it automatically updates your Power BI dataset, reports, and dashboards.
 
   As when you have a file saved to a local drive, you can use **Publish** in Excel to update your Power BI dataset and reports immediately. Otherwise, Power BI automatically synchronizes, usually within an hour.
 
@@ -120,12 +120,12 @@ If you use Excel 2016 and later, you can also use **File** > **Publish** > **Upl
 
 - The upload of Excel workbooks to a Power BI workspace isn't supported for sovereign cloud customers.
 
-- Scheduled refresh of Excel workbooks with connections to on-premises SSAS tabular models through a gateway won't work.
+- You can't use scheduled refresh for Excel workbooks that have connections to on-premises SSAS tabular models through a gateway.
 
 ## Next steps
 
 - **Explore your data**. After you get data and reports from your file into Power BI, you can select the new dataset to explore the data. When you select the workbook, it opens in Power BI the same as if it were in Excel Online.
 
-- **Schedule refresh**. If your Excel workbook connects to external data sources, or if you imported from a local drive, you can set up scheduled refresh to make sure your dataset or report is always up-to-date. In most cases, setting up scheduled refresh is easy to do. For more information, see [Data refresh in Power BI](refresh-data.md) to learn more.
+- **Schedule refresh**. If your Excel workbook connects to external data sources, or if you imported from a local drive, you can set up scheduled refresh to make sure your dataset or report is always up-to-date. In most cases, setting up scheduled refresh is easy to do. For more information, see [Data refresh in Power BI](refresh-data.md).
 
 - [Publish to Power BI from Microsoft Excel](service-publish-from-excel.md)
