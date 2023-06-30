@@ -17,9 +17,8 @@ ms.reviewer: saurkumar
   
 -   Execution time    
 -   Page number  
--   Report folder   
 -   Report name   
--   Report server URL  
+-   Render format name 
 -   Total pages  
 -   User ID   
 -   Language  
