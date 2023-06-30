@@ -1575,6 +1575,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/paginated-reports/report-builder/hide-item-report-builder.md",
+            "redirect_url": "/power-bi/paginated-reports/report-builder-power-bi",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/paginated-reports/report-design/expression-uses-reports-report-builder.md",
             "redirect_url": "/power-bi/paginated-reports/expressions/expression-uses-reports-report-builder",
             "redirect_document_id": false
