@@ -21,7 +21,7 @@ A text box can be a Power BI paginated report item. It can also be an individual
   
  In this illustration, the text box itself has a border, and all the text is in the same text box, but the text has a variety of formatting.  
   
- To quickly get started, see [Tutorial: Format Text &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-format-text-report-builder).  
+ To quickly get started, see [Tutorial: Format Text (Power BI Report Builder)](/sql/reporting-services/tutorial-format-text-report-builder).  
     
   
 ## Create placeholder text in a text box  
@@ -31,11 +31,11 @@ A text box can be a Power BI paginated report item. It can also be an individual
   
 - Drag a field from the **Report Data** pane and drop it into the text box. If you drag the expression anywhere else on the report body, a new text box will be created that contains the placeholder. The value of this placeholder will be the field expression that corresponds to the field that was dropped.  
   
-- Right-click anywhere in the text box and select **Insert Placeholder**. In the **Placeholder Properties** dialog box, you can specify an expression as the value of your placeholder. For more information, see [Placeholder properties dialog box, general &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/text-boxes-report-builder-and-ssrs).  
+- Right-click anywhere in the text box and select **Insert Placeholder**. In the **Placeholder Properties** dialog box, you can specify an expression as the value of your placeholder. For more information, see [Placeholder properties dialog box, general (Power BI Report Builder)](/sql/reporting-services/report-design/text-boxes-report-builder-and-ssrs).  
   
 - Type any simple or complex expression into the text box. For example, if you type **Name: [Name]** into the text box, the **[Name]** text will be displayed as a placeholder that represents the expression `=Fields!Name.Value`.  
   
-- Type an expression in an empty text box by starting with an equal sign (=). When you change the focus off the text box, the resulting expression is converted into a placeholder that you can edit. If the text box is not empty, or the equal sign is inserted anywhere but as the first character in the text box, the equal sign is treated as a string literal and a placeholder is not created. For more information about defining simple and complex expressions, see [Expression uses in reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs).  
+- Type an expression in an empty text box by starting with an equal sign (=). When you change the focus off the text box, the resulting expression is converted into a placeholder that you can edit. If the text box is not empty, or the equal sign is inserted anywhere but as the first character in the text box, the equal sign is treated as a string literal and a placeholder is not created. For more information about defining simple and complex expressions, see [Expression uses in reports (Power BI Report Builder)](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs).  
   
 ## Format placeholders and static text in a text box  
  You can format placeholders using the **Placeholder Properties** dialog box. You can format only the entire placeholder, not sections of the placeholder. If you want to see the underlying expression, you can pause your pointer on the placeholder. You can change the underlying expression by double-clicking the placeholder or right-clicking the placeholder and selecting **Placeholder Properties**. You can also specify a UI label using the **Label** property in **General** of the **Placeholder Properties** dialog box. This will be the text that is shown at design-time for the placeholder.  
@@ -51,17 +51,17 @@ A text box can be a Power BI paginated report item. It can also be an individual
 > [!NOTE]  
 >  Actions defined on the text box have a higher priority than actions defined for individual text in a text box.  
   
- For more information about mixed formatting, see [Format text in a text box &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/format-text-in-a-text-box-report-builder-and-ssrs).  
+ For more information about mixed formatting, see [Format text in a text box (Power BI Report Builder)](/sql/reporting-services/report-design/format-text-in-a-text-box-report-builder-and-ssrs).  
   
 ## Align horizontal text using general  
  In **Alignment** on the **Text Box Properties** dialog box, you can specify how the text should be aligned horizontally. If you do not specify a value for alignment, the default value of the alignment is **Default**. This means that the text is aligned based on the field type of your placeholder value. If you specify an expression that evaluates to a non-string value, i.e., not a number, the text is aligned to the right. If your expression evaluates to a string value, such as a number, the text is aligned to the left.  
   
 ## Next steps  
  
- [Expressions &#40;Power BI Report Builder&#41;](../../expressions/report-builder-expressions.md)   
- [Tables, matrices, and lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)   
- [Formatting axis labels on a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
- [Formatting scales on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)   
- [Exporting to Microsoft Excel &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs)   
- [Text boxes &#40;Power BI Report Builder&#41;](../textbox/text-boxes-report-builder-and-service.md)  
+ [Expressions (Power BI Report Builder)](../expressions/report-builder-expressions.md)   
+ [Tables, matrices, and lists (Power BI Report Builder)](../../paginated-reports/report-builder-tables-matrices-lists.md)   
+ [Formatting axis labels on a chart (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
+ [Formatting scales on a gauge (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)   
+ [Exporting to Microsoft Excel (Power BI Report Builder)](/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs)   
+ [Text boxes (Power BI Report Builder)](textbox/text-boxes-report-builder-and-service.md)  
   
