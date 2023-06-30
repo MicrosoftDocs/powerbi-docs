@@ -13,7 +13,7 @@ ms.reviewer: saurkumar
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  The **Language** property on a paginated report or a text box contains the locale setting, which determines the default formats for displaying report data that differ by language and region, for example, date, currency, or number values. The **Language** property on a text box overrides the **Language** property on the report. If no value is specified for **Language**, Reporting Services uses the locale of the operating system on the report server for published reports or of the report authoring computer for report preview.  
+  The **Language** property on a paginated report or a text box contains the locale setting, which determines the default formats for displaying report data that differ by language and region, for example, date, currency, or number values. The **Language** property on a text box overrides the **Language** property on the report. If no value is specified for **Language**, Power BI Services uses the language setting of the browser for published reports.
   
  For HTML reports, you can override the default **Language** value and use the language specified by the HTTP header of the browser client by using the built-in field User!Language in an expression for the **Language** property of a report or a text box.  
   
@@ -44,6 +44,6 @@ ms.reviewer: saurkumar
     -   For the **UnicodeBiDi** property, select the level of bidirectional embedding to use in the text box.  
   
 ## Next steps  
- [Expression uses in reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
+ [Expression uses in reports &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/expression-uses-reports-report-builder.md)  
  [Solution design considerations for multi-lingual or global deployments (Reporting Services)](/previous-versions/sql/)  
   
