@@ -24,28 +24,28 @@ ms.reviewer: saurkumar
   
 ## Add a bookmark  
   
-1.  In report design view, select the text box, image, chart, or other report item to which you want to add a bookmark. The properties for the selected item appear in the Properties pane.  
+1. In report design view, select the text box, image, chart, or other report item to which you want to add a bookmark. The properties for the selected item appear in the Properties pane.  
   
-2.  In the text box next to **Bookmark**, type a string that is the label for this bookmark. For example, you could type **BikePhoto** as the bookmark for an image in your report. Alternatively, select the Expression (**fx**) button to open the **Expression** dialog box to specify an expression that evaluates to a label. For a group, the expression you type should be the group expression.  
+1. In the text box next to **Bookmark**, type a string that is the label for this bookmark. For example, you could type **BikePhoto** as the bookmark for an image in your report. Alternatively, select the Expression (**fx**) button to open the **Expression** dialog box to specify an expression that evaluates to a label. For a group, the expression you type should be the group expression.  
   
     > [!NOTE]  
     >  The bookmark can be any string, but it must be unique in the report. If the bookmark is not unique, a link to the bookmark finds the first matching bookmark.  
   
 ## Add a bookmark link  
   
-1.  In Design view, right-click the text box, image, chart, to which you want to add a link and then select **Properties**.  
+1. In Design view, right-click the text box, image, chart, to which you want to add a link and then select **Properties**.  
   
-2.  In The **Properties** dialog box for that report item, select **Action**.  
+1. In The **Properties** dialog box for that report item, select **Action**.  
   
-3.  Select **Go to bookmark**. An additional section appears in the dialog box for this option.  
+1. Select **Go to bookmark**. An additional section appears in the dialog box for this option.  
   
-4.  In the **Select bookmark** box, type or select a bookmark or an expression that evaluates to a bookmark. Using the previous example, type **BikePhoto** to create a link to the image in your report.  
+1. In the **Select bookmark** box, type or select a bookmark or an expression that evaluates to a bookmark. Using the previous example, type **BikePhoto** to create a link to the image in your report.  
   
-5.  Select **OK**.
+1. Select **OK**.
   
-6.  (Optional) The text is not automatically formatted like a link. For text, it is helpful to change the color and effect of the text to indicate that the text is a link. For example, change the color to blue and the effect to underline in the **Font** section in the Home tab of the Ribbon.  
+1. (Optional) The text is not automatically formatted like a link. For text, it is helpful to change the color and effect of the text to indicate that the text is a link. For example, change the color to blue and the effect to underline in the **Font** section in the Home tab of the Ribbon.  
   
-7.  To test the link, select **Run** to preview the report, and then select the report item that you set this link on..  
+1. To test the link, select **Run** to preview the report, and then select the report item that you set this link on..  
   
 ## Next steps  
 
