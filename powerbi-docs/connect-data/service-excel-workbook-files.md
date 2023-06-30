@@ -99,6 +99,8 @@ Where you save your workbook file makes a difference.
 
 - **SharePoint team site**. Saving your Power BI Desktop files to a SharePoint team site is almost the same as saving them to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
+<a name="one-excel-workbook--two-ways-to-use-it"></a>
+
 ### Upload from OneDrive for Business
 
 When you upload your workbook from OneDrive for Business, it appears in Power BI just like it would in Excel Online. But you also have some great features to help you pin elements from your worksheets to your dashboards.
