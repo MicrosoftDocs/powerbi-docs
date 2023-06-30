@@ -32,29 +32,29 @@ Try adding hyperlinks with sample data in [Tutorial: Format Text (Power BI Repor
   
 1. In report design view, right-click the text box, image, or chart to which you want to add a link and then select **Properties**.  
   
-2. In the Properties dialog box, select the **Action** tab. Read on for information about your options.  
+1. In the Properties dialog box, select the **Action** tab. Read on for information about your options.  
 
 Now that you're in the Properties box, you have your choice of actions.
 
 - [Add drillthrough to another report](#add-drillthrough-to-another-report).
 - [Add a bookmark](#add-a-bookmark).
-- [Add a hyperlink](#add-a-hyperlink).
+- [Add a hyperlink](#add-a-hyperlink-1).
 
 ### Add drillthrough to another report
 
 1. On the **Action** tab, select **Go to report**. 
 
-2. Specify the target report and parameters you want to use. The parameter names must match the parameters defined for the target report. 
+1. Specify the target report and parameters you want to use. The parameter names must match the parameters defined for the target report. 
 
-3. Use the **Add** and **Delete** buttons to add and remove parameters, and the up and down arrows to order the list of parameters.
+1. Use the **Add** and **Delete** buttons to add and remove parameters, and the up and down arrows to order the list of parameters.
 
-4. Type or select a **Value** to pass for the named parameter in the drillthrough report. Select the Expression (fx) button to edit the expression.
+1. Type or select a **Value** to pass for the named parameter in the drillthrough report. Select the Expression (fx) button to edit the expression.
 
-5. Select **Omit** to prevent the parameter from running. By default, this check box is cleared and not active. To select the check box, select the Expression (fx) button and either type True or create an expression. The check box is selected when you select **OK** in the Expression dialog box.
+1. Select **Omit** to prevent the parameter from running. By default, this check box is cleared and not active. To select the check box, select the Expression (fx) button and either type True or create an expression. The check box is selected when you select **OK** in the Expression dialog box.
   
    See [Add a drillthrough action on a paginated report](../../paginated-reports/report-design/add-drillthrough-action-report-report-builder.md) for more information. 
    
-6. Select **OK**.
+1. Select **OK**.
    
 ### Add a bookmark
 
@@ -62,30 +62,30 @@ You can link to bookmarks to a location in the current report. To link to a book
 
 1. On the **Action** tab, select **Go to bookmark**. 
 
-2. Type or select the bookmark ID for the report to jump to. Select the Expression (fx) button to change the expression. 
+1. Type or select the bookmark ID for the report to jump to. Select the Expression (fx) button to change the expression. 
 
    The bookmark ID can be either a static ID or an expression that evaluates to a bookmark ID. The expression can include a field that contains a bookmark ID.
    
    See [Add a bookmark to a report](add-bookmark-report-report-builder.md) for more information.
    
-3. Select **OK**.
+1. Select **OK**.
 
 ### Add a hyperlink 
   
 1. On the **Action** tab, select **Go to URL**. An additional section appears in the dialog box for this option.  
   
-2. In **Select URL**, type or select a URL or an expression that evaluates to a URL, or select the drop-down arrow and select the name of a field that contains a URL. 
+1. In **Select URL**, type or select a URL or an expression that evaluates to a URL, or select the drop-down arrow and select the name of a field that contains a URL. 
 
     For an item published to the Power BI service, use a full or relative path. For example,
    `https://app.powerbi.com/groups/<xxxxxxxxx>/rdlreports/<xxxxxxxxxxxx>?experience=power-bi`. 
       
-3. Select **OK**.
+1. Select **OK**.
 
 ## After you add a hyperlink
   
-1. (Optional) The text is not automatically formatted as a link. For text, it is helpful to change the color and effect of the text to indicate that the text is a link. For example, change the color to blue and the effect to underline in the **Font** section in the Home tab of the Ribbon.  
+1. (Optional) The text isn't automatically formatted as a link. For text, it's helpful to change the color and effect of the text to indicate that the text is a link. For example, change the color to blue and the effect to underline in the **Font** section in the Home tab of the Ribbon.  
   
-2. To test the link, select **Run** to preview the report, and then select the report item that you set this link on.  
+1. To test the link, select **Run** to preview the report, and then select the report item that you set this link on.  
   
 ## Next steps  
  [Add a drillthrough action on a paginated report](../../paginated-reports/report-design/add-drillthrough-action-report-report-builder.md)
