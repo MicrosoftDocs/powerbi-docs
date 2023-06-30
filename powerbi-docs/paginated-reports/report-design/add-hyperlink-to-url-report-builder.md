@@ -66,7 +66,7 @@ You can link to bookmarks to a location in the current report. To link to a book
 
    The bookmark ID can be either a static ID or an expression that evaluates to a bookmark ID. The expression can include a field that contains a bookmark ID.
    
-   See [Add a Bookmark to a Report](/sql/reporting-services/report-design/add-a-bookmark-to-a-report-report-builder-and-ssrs) for more information.
+   See [Add a bookmark to a report](add-bookmark-report-report-builder.md) for more information.
    
 1. Select **OK**.
 
