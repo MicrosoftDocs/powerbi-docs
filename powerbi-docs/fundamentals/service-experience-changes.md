@@ -8,8 +8,8 @@ ms.service: powerbi
 ms.search.form: product-power-bi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 07/08/2022
-Customer intent: As a Power BI customer or potential customer, I'm interested in reading about the new experience in the Power BI service.
+ms.date: 07/05/2023
+#Customer intent: As a Power BI customer or potential customer, I'm interested in reading about the new experience in the Power BI service.
 LocalizationGroup: Get started
 ---
 
