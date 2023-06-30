@@ -76,10 +76,9 @@ You can link to bookmarks to a location in the current report. To link to a book
   
 1. In **Select URL**, type or select a URL or an expression that evaluates to a URL, or select the drop-down arrow and select the name of a field that contains a URL. 
 
-    For an item published to a report server configured for native mode, use a full or relative path. For example, `https://<servername>/images/image1.jpg`. 
-    
-    For an item published to a report server configured in SharePoint integrated mode, use a fully qualified URL. For example, `https://<SharePointservername>/<site>/Documents/images/image1.jpg`.
-  
+    For an item published to the Power BI service, use a full or relative path. For example,
+   `https://app.powerbi.com/groups/me/rdlreports/<xxxxxxxxxxxx>?experience=power-bi`. 
+      
 1. Select **OK**.
 
 ## After you add a hyperlink
