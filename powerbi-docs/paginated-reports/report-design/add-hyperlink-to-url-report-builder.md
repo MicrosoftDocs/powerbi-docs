@@ -77,7 +77,7 @@ You can link to bookmarks to a location in the current report. To link to a book
 2. In **Select URL**, type or select a URL or an expression that evaluates to a URL, or select the drop-down arrow and select the name of a field that contains a URL. 
 
     For an item published to the Power BI service, use a full or relative path. For example,
-   `https://app.powerbi.com/groups/me/rdlreports/<xxxxxxxxxxxx>?experience=power-bi`. 
+   `https://app.powerbi.com/groups/<xxxxxxxxx>/rdlreports/<xxxxxxxxxxxx>?experience=power-bi`. 
       
 3. Select **OK**.
 
@@ -88,7 +88,8 @@ You can link to bookmarks to a location in the current report. To link to a book
 2. To test the link, select **Run** to preview the report, and then select the report item that you set this link on.  
   
 ## Next steps  
- [Interactive Sort, Document Maps, and Links (Power BI Report Builder)](/sql/reporting-services/report-design/interactive-sort-document-maps-and-links-report-builder-and-ssrs)   
- [Create a Document Map (Power BI Report Builder)](/sql/reporting-services/report-design/create-a-document-map-report-builder-and-ssrs)  
+ [Add a drillthrough action on a paginated report](../../paginated-reports/report-design/add-drillthrough-action-report-report-builder.md)
+ [Add a bookmark to a report](add-bookmark-report-report-builder.md)
+
   
   
