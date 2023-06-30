@@ -64,7 +64,7 @@ The steps you take to create a support ticket vary, depending on your role.
 
 2. Select **Help + support** > **Get Help + support**
 
-   ![Screenshot of the Help+Support page.](media/create-support-ticket/help-supprot-1.png)
+   ![Screenshot of the Help+Support page.](media/create-support-ticket/help-support-1.png)
       
 3. Select the product you're experiencing an issue with.
 
