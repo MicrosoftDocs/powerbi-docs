@@ -24,100 +24,100 @@ Add a filter to a dataset, data region, or group to a Power BI paginated report 
   
 ## Set a filter on a data region  
   
-1.  Open a report in **Design** view.  
+1. Open a report in **Design** view.  
   
-2.  Select the data region on the design surface, and then right-click _\<data region>_**Properties**. For a gauge, select **Gauge Panel Properties**. The _\<data region>_**Properties** dialog box opens.  
+1. Select the data region on the design surface, and then right-click _\<data region>_**Properties**. For a gauge, select **Gauge Panel Properties**. The _\<data region>_**Properties** dialog box opens.  
   
     > [!NOTE]  
     >  On a tablix data region, right-click the corner cell or a row or column handle, and then select **Tablix Properties**.  
   
-3.  Select **Filters**. This displays the current list of filter equations. By default, the list is empty.  
+1. Select **Filters**. This displays the current list of filter equations. By default, the list is empty.  
   
-4.  Select **Add**. A new blank filter equation appears.  
+1. Select **Add**. A new blank filter equation appears.  
   
-5.  In **Expression**, type or select the expression for the field to filter. To edit the expression, select the expression (*fx*) button.  
+1. In **Expression**, type or select the expression for the field to filter. To edit the expression, select the expression (*fx*) button.  
   
-6.  From the drop-down box, select the data type that matches the type of data in the expression you created in step 5.  
+1. From the drop-down box, select the data type that matches the type of data in the expression you created in step 5.  
   
-7.  In the **Operator** box, select the operator that you want the filter to use to compare the values in the **Expression** box and the **Value** box. The operator you choose determines the number of values that are used from the next step.  
+1. In the **Operator** box, select the operator that you want the filter to use to compare the values in the **Expression** box and the **Value** box. The operator you choose determines the number of values that are used from the next step.  
   
-8.  In the **Value** box, type the expression or value against which you want the filter to evaluate the value in **Expression**.  
+1. In the **Value** box, type the expression or value against which you want the filter to evaluate the value in **Expression**.  
   
      For examples of filter equations, see [Filter Equation Examples (Power BI Report Builder)](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs).  
   
-9.  Select **OK**.
+1. Select **OK**.
   
 ## Set a filter on a tablix row or column group  
   
-1.  Open a report in **Design** view.  
+1. Open a report in **Design** view.  
   
-2.  Right-click the table, matrix, or list data region on the design surface to select it. The Grouping pane displays the groups for the selected item.  
+1. Right-click the table, matrix, or list data region on the design surface to select it. The Grouping pane displays the groups for the selected item.  
   
-3.  In the Grouping pane, right-click the group, and then select **Edit Group**. The **Tablix Group** dialog box opens.  
+1. In the Grouping pane, right-click the group, and then select **Edit Group**. The **Tablix Group** dialog box opens.  
   
-4.  Select **Filters**. This displays the current list of filter equations. By default, the list is empty.  
+1. Select **Filters**. This displays the current list of filter equations. By default, the list is empty.  
   
-5.  Select **Add**. A new blank filter equation appears.  
+1. Select **Add**. A new blank filter equation appears.  
   
-6.  In **Expression**, type or select the expression for the field to filter. To edit the expression, select the expression (*fx*) button.  
+1. In **Expression**, type or select the expression for the field to filter. To edit the expression, select the expression (*fx*) button.  
   
-7.  From the drop-down box, select the data type that matches the type of data in the expression you created in step 5.  
+1. From the drop-down box, select the data type that matches the type of data in the expression you created in step 5.  
   
-8.  In the **Operator** box, select the operator that you want the filter to use to compare the values in the **Expression** box and the **Value** box. The operator you choose determines the number of values that are used from the next step.  
+1. In the **Operator** box, select the operator that you want the filter to use to compare the values in the **Expression** box and the **Value** box. The operator you choose determines the number of values that are used from the next step.  
   
-9. In the **Value** box, type the expression or value against which you want the filter to evaluate the value in **Expression**.  
+1. In the **Value** box, type the expression or value against which you want the filter to evaluate the value in **Expression**.  
   
      For examples of filter equations, see [Filter Equation Examples (Power BI Report Builder)](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs).  
   
-10. Select **OK**.
+1. Select **OK**.
   
 ## Set a filter on a Chart category group  
   
-1.  Open a report in **Design** view.  
+1. Open a report in **Design** view.  
   
-2.  On the design surface, select the chart twice to bring up data, series and category field drop zones.  
+1. On the design surface, select the chart twice to bring up data, series and category field drop zones.  
   
-3.  Right-click on a field contained in the category field drop zone and select **Category Group Properties**.  
+1. Right-click on a field contained in the category field drop zone and select **Category Group Properties**.  
   
-4.  Select **Filters**. This displays the current list of filter equations. By default, the list is empty.  
+1. Select **Filters**. This displays the current list of filter equations. By default, the list is empty.  
   
-5.  Select **Add**. A new blank filter equation appears.  
+1. Select **Add**. A new blank filter equation appears.  
   
-6.  In **Expression**, type or select the expression for the field to filter. To edit the expression, select the expression (*fx*) button.  
+1. In **Expression**, type or select the expression for the field to filter. To edit the expression, select the expression (*fx*) button.  
   
-7.  From the drop-down box, select the data type that matches the type of data in the expression you created in step 5.  
+1. From the drop-down box, select the data type that matches the type of data in the expression you created in step 5.  
   
-8.  In the **Operator** box, select the operator that you want the filter to use to compare the values in the **Expression** box and the **Value** box. The operator you choose determines the number of values that are used from the next step.  
+1. In the **Operator** box, select the operator that you want the filter to use to compare the values in the **Expression** box and the **Value** box. The operator you choose determines the number of values that are used from the next step.  
   
-9. In the **Value** box, type the expression or value against which you want the filter to evaluate the value in **Expression**.  
+1. In the **Value** box, type the expression or value against which you want the filter to evaluate the value in **Expression**.  
   
      For examples of filter equations, see [Filter Equation Examples (Power BI Report Builder)](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs).  
   
-10. Select **OK**.
+1. Select **OK**.
   
 ## Set a filter on a Chart series group  
   
-1.  Open a report in **Design** view.  
+1. Open a report in **Design** view.  
   
-2.  On the design surface, select the chart twice to bring up data, series and category field drop zones.  
+1. On the design surface, select the chart twice to bring up data, series and category field drop zones.  
   
-3.  Right-click on a field contained in the series field drop zone and select **Series Group Properties**.  
+1. Right-click on a field contained in the series field drop zone and select **Series Group Properties**.  
   
-4.  Select **Filters**. This displays the current list of filter equations. By default, the list is empty.  
+1. Select **Filters**. This displays the current list of filter equations. By default, the list is empty.  
   
-5.  Select **Add**. A new blank filter equation appears.  
+1. Select **Add**. A new blank filter equation appears.  
   
-6.  In **Expression**, type or select the expression for the field to filter. To edit the expression, select the expression (*fx*) button.  
+1. In **Expression**, type or select the expression for the field to filter. To edit the expression, select the expression (*fx*) button.  
   
-7.  From the drop-down box, select the data type that matches the type of data in the expression you created in step 5.  
+1. From the drop-down box, select the data type that matches the type of data in the expression you created in step 5.  
   
-8.  In the **Operator** box, select the operator that you want the filter to use to compare the values in the **Expression** box and the **Value** box. The operator you choose determines the number of values that are used from the next step.  
+1. In the **Operator** box, select the operator that you want the filter to use to compare the values in the **Expression** box and the **Value** box. The operator you choose determines the number of values that are used from the next step.  
   
-9. In the **Value** box, type the expression or value against which you want the filter to evaluate the value in **Expression**.  
+1. In the **Value** box, type the expression or value against which you want the filter to evaluate the value in **Expression**.  
   
      For examples of filter equations, see [Filter Equation Examples (Power BI Report Builder)](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs).  
   
-10. Select **OK**.
+1. Select **OK**.
   
 ## Next steps  
  [Add Dataset Filters, Data Region Filters, and Group Filters (Power BI Report Builder)](../../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
