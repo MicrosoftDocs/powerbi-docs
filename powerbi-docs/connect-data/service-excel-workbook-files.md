@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/04/2023
+ms.date: 07/05/2023
 ms.custom: video-l2wy4XgQIu0
 LocalizationGroup: Data from files
 ---
@@ -68,9 +68,9 @@ When you upload an Excel file, the workbook item appears in Power BI just like i
 
 :::image type="content" source="media/service-excel-workbook-files/workbook-power-bi.png" alt-text="Screenshot that shows an Excel workbook listed in Power BI.":::
 
-If you don't have a subscription, the **OneDrive for Business** and **SharePoint** options are unavailable, but you can still select **Browse** to get local files from your computer. This image shows the unavailable subscription options, but the **Browse** option is enabled:
+If you don't have a subscription, the **OneDrive for Business** and **SharePoint** options are unavailable, but you can still select **Browse** to get local files from your computer. This image shows the unavailable options, but the **Browse** option is enabled:
 
-:::image type="content" source="media/service-excel-workbook-files/excel-files-new-03.png" alt-text="Screen shot of subscription services disabled.":::
+:::image type="content" source="media/service-excel-workbook-files/excel-files-new-03.png" alt-text="Screenshot that shows the unavailable options.":::
 
 You can't use **Upload** to get files from personal OneDrive accounts, but you can upload files from your computer.
 
