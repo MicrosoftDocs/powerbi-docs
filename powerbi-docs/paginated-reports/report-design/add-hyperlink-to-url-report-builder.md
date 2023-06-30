@@ -19,7 +19,7 @@ Learn how to add hyperlink actions to text boxes, images, charts, and gauges in 
   
 * You can **add a hyperlink that will open a browser with a URL** that you specify. The hyperlink can be a static URL or an expression that evaluates to a URL. If you have a field in a database that contains URLs, the expression can contain that field, resulting in a dynamic list of hyperlinks in the report. Make sure your report readers have access to the URL that you provide.  
    
-* You can also **specify URLs to create drillthroughs** to any reports in the Power BI service that you and your users have permission to view using URL requests. For more information, see [Specifying Paths to External Items (Power BI Report Builder)](/sql/reporting-services/report-design/specifying-paths-to-external-items-report-builder-and-ssrs).
+* You can also **specify URLs to create drillthroughs** to any reports in the Power BI service that you and your users have permission to view using URL requests. 
  
  * You can **add a bookmark to a specific place** in the same report. 
   
