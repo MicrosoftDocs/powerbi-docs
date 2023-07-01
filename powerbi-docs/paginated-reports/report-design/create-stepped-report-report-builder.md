@@ -41,7 +41,7 @@ A stepped report is a type of Power BI paginated report that shows detail rows o
   
      You now have a basic tabular report. When it is rendered, you see one column with the group instance value, and one or more columns with grouped detail data. The following figure shows what the data region might look like on the design surface.  
   
-     ![Screenshot showing Table data region with group.](../report-design/media/table-data-region-with-group.gif "Table data region with group")  
+     ![Screenshot showing Table data region with group.](../report-design/media/table-data-region-group.gif "Table data region with group")  
   
      The following figure shows how the rendered data region might look when you view the report.  
   
