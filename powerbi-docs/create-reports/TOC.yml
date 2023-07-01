@@ -551,9 +551,9 @@
       - name: Add a bookmark to a paginated report
         href: ../paginated-reports/report-design/add-bookmark-report-report-builder.md
       - name: Add a border to a paginated report
-        href: ../paginated-reports/report-design/add-border-to-report-report-builder.md
+        href: ../paginated-reports/report-design/add-border-report-report-builder.md
       - name: Add a hyperlink to a URL in a paginated report
-        href: ../paginated-reports/report-design/add-hyperlink-to-url-report-builder.md
+        href: ../paginated-reports/report-design/add-hyperlink-url-report-builder.md
       - name: Add a page break to a paginated report
         href: ../paginated-reports/report-design/add-page-break-report-builder.md
       - name: Create a stepped paginated report
@@ -609,7 +609,7 @@
       - name: Commonly used filters
         href: ../paginated-reports/report-design/commonly-used-filters-report-builder-and-service.md
       - name: Add or delete a group in a data region
-        href: ../paginated-reports/report-design/add-delete-group-in-data-region-report-builder.md
+        href: ../paginated-reports/report-design/add-delete-group-data-region-report-builder.md
     - name: Visualizations in paginated reports
       items: 
       - name: Charts in paginated reports
