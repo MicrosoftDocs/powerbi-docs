@@ -146,4 +146,3 @@ Scorecards do have metric-level permissions roles. While workspace permissions g
 - [Protect your scorecard with metric-level permissions](service-goals-set-permissions.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
-
