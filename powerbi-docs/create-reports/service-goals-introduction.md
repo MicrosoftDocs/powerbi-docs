@@ -130,13 +130,13 @@ Scorecards do have metric-level permissions roles. While workspace permissions g
 
 ## Issues and limitations 
   
-- Metrics don't yet support bring your own key (BYOK). 
-- Metrics don't yet support row-level security (RLS). 
+- Metrics don't yet support bring your own key (BYOK).
+- Metrics don't yet support row-level security (RLS).
 - For now, the maximum number of submetric levels is four.
 - Metrics don't support publish-to-web or app-owns-data scenarios for embedded.
 - Business-to-business sharing (sharing across tenants) isn't supported.
-- Scorecards aren't supported in a [Multi-Geo capacity](../admin/service-admin-premium-multi-geo.md). 
-
+- Scorecards aren't supported in a [Multi-Geo capacity](../admin/service-admin-premium-multi-geo.md).
+- Scorecards aren't supported in [embedded analytics](../developer/embedded/embedded-analytics-power-bi.md).
 
 ## Next steps
 
@@ -146,4 +146,3 @@ Scorecards do have metric-level permissions roles. While workspace permissions g
 - [Protect your scorecard with metric-level permissions](service-goals-set-permissions.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
-
