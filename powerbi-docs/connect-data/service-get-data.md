@@ -13,13 +13,13 @@ LocalizationGroup: Get started
 
 # Data sources for the Power BI service
 
-Data is the core of Power BI. You can explore data by creating charts and dashboards, or by asking questions with **Q&A**. The visualizations and answers get their underlying data from a dataset, which comes from a data source.
+Data is the core of Power BI. You can explore data by creating charts and dashboards or by asking questions with **Q&A**. The visualizations and answers get their underlying data from a dataset, which comes from a data source.
 
-This article covers the data source types you can connect to from the Power BI service. There are many other types of data sources. To use these other data sources in the Power BI service, you might need to use Power BI Desktop or Excel's advanced data query and modeling features first. For more information, see [Other data sources](#other-data-sources).
+This article describes the data source types that you can connect to from the Power BI service. There are many other types of data sources. To use these other data sources in the Power BI service, you might first need to use Power BI Desktop or the advanced data query and modeling features in Excel. For more information, see [Other data sources](#other-data-sources).
 
 To get data from Power BI data sources:
 
-1. On your Power BI site, select **Get data** in the bottom-left corner of the page.
+1. On your Power BI site, select **OneLake data hub** in the navigation pane.
 
    ![Screenshot of Get data in the lower left of Power BI service screen.](media/service-get-data/pbi-getdata-navigation-link.png) 
 
