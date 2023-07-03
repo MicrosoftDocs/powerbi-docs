@@ -289,7 +289,7 @@ A measure group helps you organize different measures by having them in a single
 
 #### Create a dynamic format string
 
-Selecting different **Country** names in the slicer shows the Converted Sales Amount measure result in visuals, but not in the right format for that country.
+Selecting different **Country** names in the slicer shows the Converted Sales Amount measure result in visuals, but not in the right format for that country or region.
 
 1. In the **Data** pane > **Sales measures**, select **Converted Sales Amount**.
 
@@ -305,7 +305,7 @@ Selecting different **Country** names in the slicer shows the Converted Sales Am
 
     :::image type="content" source="media/desktop-dynamic-format-strings/country-currency-format-strings-dynamic-formula.png" alt-text="Country Currency Format Strings dynamic formula":::
 
-1. Select a different Country in the slicer. The table and line chart visuals should now show the converted currency amount, in the correct format, for that country. Try selecting a different county in the slicer to see how the visuals change.
+1. Select a different Country in the slicer. The table and line chart visuals should now show the converted currency amount, in the correct format, for that country or region. Try selecting a different country in the slicer to see how the visuals change.
 
     :::image type="content" source="media/desktop-dynamic-format-strings/converted-sales-amount-visual.png" alt-text="Converted sales amount visual":::
 
