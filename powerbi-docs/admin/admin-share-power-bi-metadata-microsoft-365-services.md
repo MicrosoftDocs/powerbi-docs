@@ -1,14 +1,14 @@
 ---
-title: "Metadata passed from Microsoft Power BI to Microsoft Graph"
-description: When the Microsoft Graph experience for Power BI is turned on, what data is shared with Microsoft 365?
+title: "Metadata passed from Microsoft Fabric to Microsoft Graph"
+description: Learn about sharing Fabric metadata with Microsoft 365 services.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: 'jadelynray'
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/19/2023
-Customer intent: As a Power BI admin, I need to know what information is passed from Power BI and Microsoft Graph to Microsoft 365.
+ms.date: 03/07/2023
+Customer intent: As a Fabric admin, I need to know what information is passed from Fabric and Microsoft Graph to Microsoft 365.
 LocalizationGroup: Admin
 ---
 
@@ -16,43 +16,43 @@ LocalizationGroup: Admin
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-This article is aimed at Power BI administrators and decision makers who need to know how and where Power BI metadata is being used.
+This article is aimed at Fabric administrators and decision makers who need to know how and where Fabric metadata is being used.
 
-Power BI metadata sharing with Microsoft 365 services is a feature that allows metadata from Power BI to be shared with Microsoft 365 services (typically via [Microsoft Graph](/graph/overview) and combined with data from across Microsoft 365, Windows, and Enterprise Mobility + Security (EMS) to build apps for organizations and consumers that interact with millions of users. The feature is disabled by default.
+Fabric metadata sharing with Microsoft 365 services is a feature that allows metadata from Fabric to be shared with Microsoft 365 services (typically via [Microsoft Graph](/graph/overview)) and combined with data from across Microsoft 365, Windows, and Enterprise Mobility + Security (EMS) to build apps for organizations and consumers that interact with millions of users. **The feature is enabled by default**.
 
-When shared with Microsoft 365 services, Power BI content will be listed in the Most Recently Viewed list on the Office.com home page. The Power BI content affected includes reports, dashboards, apps, workbooks, paginated reports, and workspaces. The information required by the Most Recently Viewed functionality includes:
+When shared with Microsoft 365 services, Fabric content will be listed in the Most Recently Viewed list on the Office.com home page. The Fabric content affected includes reports, dashboards, apps, workbooks, paginated reports, and workspaces. The information required by the Most Recently Viewed functionality includes:
 
 * The display name of the content
 * When the content was last accessed
 * The type of content that was accessed (report, dashboard etc.)
 
-See [the complete list of Power BI metadata that is shared with Microsoft 365 services](#data-that-will-be-shared-with-microsoft-365).
+See [the complete list of Fabric metadata that is shared with Microsoft 365 services](#data-that-will-be-shared-with-microsoft-365).
 
-## How to turn on sharing with Microsoft 365 services
+## How to turn sharing with Microsoft 365 services on and off
 
-To enable sharing Power BI metadata with Microsoft 365 services, a Power BI administrator must turn on the **[Share data with your Microsoft 365 services](./service-admin-portal-share-data-microsoft-365-services.md)** tenant setting. Before turning on the experience, the administrator should review the list of [data that will be shared with Microsoft 365](#data-that-will-be-shared-with-microsoft-365).
+Sharing metadata with Microsoft 365 services is controlled by the **Users can see Microsoft Fabric metadata in Microsoft 365** tenant setting. The setting is **ON**** by default. To turn off the feature, or to turn it on again after it's been turned off, go to **Admin portal** > **Tenant settings** > **Users can see Microsoft Fabric metadata in Microsoft 365** and set the toggle as appropriate.
+
+:::image type="content" source="./media/admin-share-power-bi-metadata-microsoft-365-services/fabric-share-metadata-microsoft-365-services-tenant-setting.png" alt-text="Screenshot of Users can see Microsoft Fabric metadata in Microsoft 365 tenant setting.":::
 
 ## Data residency
 
-Power BI and Microsoft 365 are distinct and separately operated Microsoft cloud services each deployed according to their own service specific data center alignment rules, even when purchased together. Accordingly, your Microsoft 365 Services and Power BI service may not be deployed in the same geographic region.
+Fabric and Microsoft 365 are distinct and separately operated Microsoft cloud services, each deployed according to their own service specific data center alignment rules, even when purchased together. As a result, it's possible that your Microsoft 365 Services and your Fabric service are not deployed in the same geographic region.
 
-[!INCLUDE [share metadata across regions](../includes/share-metadata-across-regions.md)]
+By default, Fabric metadata is available only in the region where the Fabric tenant is located. However, you can allow Fabric to share metadata across regions by turning on the second toggle of the **Users can see Microsoft Fabric metadata in Microsoft 365** tenant setting. When you enable this toggle, you acknowledge that Fabric metadata may flow outside the geographic region it's stored in.
 
-### Where Power BI data is stored
+### Where is Fabric data stored?
 
-For more information about data storage locations, see [Find the default region for your organization](./service-admin-where-is-my-tenant-located.md) and [Product Availability by Geography](https://powerplatform.microsoft.com/availability-reports/)
+For more information about data storage locations, see [Find the default region for your organization](./service-admin-where-is-my-tenant-located.md) and [Product Availability by Geography](https://powerplatform.microsoft.com/availability-reports/).
 
-For more information, see:
-
-### Where Microsoft 365 data is stored
+### Where is Microsoft 365 data stored?
 
 For more information about data storage for Microsoft 365, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations) and [Multi-Geo Capabilities in Microsoft 365](https://www.microsoft.com/microsoft-365/business/multi-geo-capabilities).
 
-## Data that will be shared with Microsoft 365
+## Data that is shared with Microsoft 365
 
 The tables below list the data that is shared with Microsoft 365 services.
 
-**Artifact metadata that is mainly used when using the "search" mechanism to look for Power BI content within your Microsoft 365 services**
+**Artifact metadata that is mainly used when using the "search" mechanism to look for Fabric content within your Microsoft 365 services**
 
 |Property|What is Shared|Example|
 |---------|---------|---------|---------|
@@ -72,7 +72,7 @@ The tables below list the data that is shared with Microsoft 365 services.
 |LastModifiedDate|Last modified date for the content|2011-06-30T23:32:46Z|
 |LastModifiedUser|Azure AD User Principal Name for the last person who modified the content|user1@griffin1.org|
 
-**User activity that is leveraged for showing Power BI content within your "Recents" and "Recommended" sections at Office.com**
+**User activity that is leveraged for showing Fabric content within your "Recents" and "Recommended" sections at Office.com**
 
 |Property|What is Shared|Example|
 |---------|---------|---------|---------|
