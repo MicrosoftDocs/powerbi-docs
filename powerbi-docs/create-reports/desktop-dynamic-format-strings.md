@@ -305,7 +305,7 @@ Selecting different **Country** names in the slicer shows the Converted Sales Am
 
     :::image type="content" source="media/desktop-dynamic-format-strings/country-currency-format-strings-dynamic-formula.png" alt-text="Country Currency Format Strings dynamic formula":::
 
-1. Select a different Country in the slicer. The table and line chart visuals should now show the converted currency amount, in the correct format, for that country or region. Try selecting a different country in the slicer to see how the visuals change.
+1. Select a different Country in the slicer. The table and line chart visuals should now show the converted currency amount, in the correct format, for that country or region. Try selecting a different country/region in the slicer to see how the visuals change.
 
     :::image type="content" source="media/desktop-dynamic-format-strings/converted-sales-amount-visual.png" alt-text="Converted sales amount visual":::
 
