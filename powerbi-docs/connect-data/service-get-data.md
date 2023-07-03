@@ -1,17 +1,19 @@
 ---
 title: Data sources for the Power BI service
-description: Read about different data sources, and how to get and refresh data sources and datasets in the Power BI service.
+description: Learn about different data sources and how to get and refresh data sources and datasets in the Power BI service.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/30/2022
+ms.date: 07/07/2023
 LocalizationGroup: Get started
 ---
+
 # Data sources for the Power BI service
-Data is at the heart of Power BI. You can explore data by creating charts and dashboards, or by asking questions with **Q&A**. The visualizations and answers get their underlying data from a dataset, which comes from a data source.
+
+Data is the core of Power BI. You can explore data by creating charts and dashboards, or by asking questions with **Q&A**. The visualizations and answers get their underlying data from a dataset, which comes from a data source.
 
 This article covers the data source types you can connect to from the Power BI service. There are many other types of data sources. To use these other data sources in the Power BI service, you might need to use Power BI Desktop or Excel's advanced data query and modeling features first. For more information, see [Other data sources](#other-data-sources).
 
