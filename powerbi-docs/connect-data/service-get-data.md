@@ -19,13 +19,13 @@ This article describes the data source types that you can connect to from the Po
 
 ## Discover content
 
-You can use the OneLake data hub to discover data and reports that are already prepared.  
+You can use the OneLake data hub to discover existing data and reports.  
 
 On your Power BI site, select **OneLake data hub** in the navigation pane:
 
 :::image type="content" source="media/service-get-data/onelake-data-hub-open.png" alt-text="Screenshot that shows the OneLake data hub in the navigation pane.":::
 
-The tiles at the top of the page show data that's recommended. Data can be recommented because it's promoted by someone in your organization or because it was accessed recently, for example. 
+The tiles at the top of the page show data items that are recommended. For example, data can be recommented because it's promoted by someone in your organization or because it was accessed recently.
 
 :::image type="content" source="media/service-get-data/recommended-data.png" alt-text="Screenshot that shows the Recommended data tiles.":::
 
@@ -37,25 +37,25 @@ On the **Apps** tab, you can discover apps published by other people in your org
 
 :::image type="content" source="media/service-get-data/power-bi-apps.png" alt-text="Screenshot that shows the Apps tab.":::
 
-Many services have *template apps* for Power BI. Most services require that you have an account. For more information, see [Connect to services you use with Power BI](service-connect-to-services.md).
+Many services have *template apps* for Power BI. Most services require an account. For more information, see [Connect to services you use with Power BI](service-connect-to-services.md).
 
 ## Create content
 
-To create content, you can import or create files or databases. 
+To create content, you can import or create files or databases.
 
 ### Files
 
-On the **My worksapce** tab, select **Upload** to upload local files or files from SharePoint or files OneDrive for Business:
+On the **My worksapce** tab, select **Upload** to upload local files or files from SharePoint or OneDrive for Business:
 
 :::image type="content" source="media/service-get-data/upload.png" alt-text="Screenshot that shows the Upload list.":::
 
 - **Excel** workbooks, or *.xlsx* and *.xlsm* files, can include different data types. For example, workbooks can include data that you enter into worksheets yourself, or data that you query and load from external data sources by using Power Query. Power Query is available via **Get & Transform Data** on the **Data** tab of Excel, or via **Get External Data** in Power Pivot. You can import data from tables in worksheets or import data from a data model. For more information, see [Get data from files for Power BI](service-get-data-from-files.md).
 
-- **Power BI Desktop**, or *.pbix* report files, query and load data from external data sources to create reports. In Power BI Desktop, you can extend your data model with measures and relationships, and publish the *.pbix* files to the Power BI service. Power BI Desktop is for advanced users who have a good understanding of their data sources, data query and transformation, and data modeling. For more information, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
+- **Power BI Desktop**, or *.pbix* report files, query and load data from external data sources to create reports. In Power BI Desktop, you can extend your data model by using measures and relationships, and publish the *.pbix* files to the Power BI service. Power BI Desktop is intended for advanced users who have a thoruough understanding of their data sources, data query and transformation, and data modeling. For more information, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
 
 - **Comma-separated value**, or *.csv* files, are simple text files with rows of data that contain values separated by commas. For example, a *.csv* file that contains name and address data might have many rows, each with values for first name, last name, street address, city, and state. You can't import data into a *.csv* file, but many applications, like Excel, can save simple table data as *.csv* files.
 
-- For other file types, like XML (*.xml*) or text (*.txt*), you can use Excel **Get & Transform Data** or Power BI Desktop **Upload** to query, transform, and load the data first. You can then import the Excel or Power BI Desktop file into the Power BI service.
+- For other file types, like XML (*.xml*) or text (*.txt*), you can use Excel **Get & Transform Data** to query, transform, and load the data first. You can then import the Excel file into the Power BI service.
 
 Where you store your files makes a significant difference. OneDrive provides the greatest flexibility and integration with Power BI. You can also keep your files on your local drive, but if you need to refresh the data, there are a few extra steps. For more information, see [Get data from files for Power BI](service-get-data-from-files.md).
 
@@ -81,7 +81,7 @@ In other cases, you might need to query and load the data you want into a file. 
 
 If the logistics data in the database changes every day, you can refresh the Power BI dataset. When you import the data into the dataset, you also import the connection information from Power BI Desktop or the Excel file.
 
-If you configure a scheduled refresh or do a manual refresh on the dataset, Power BI uses the connection information with other settings to connect directly to the database. Power BI then queries for updates and loads those updates into the dataset. You probably need a [Power BI gateway](service-gateway-onprem.md) to help secure any data transfer between an on-premises server and Power BI. When the transfer is complete, visualizations in reports and dashboards refresh automatically.
+If you configure a scheduled refresh or do a manual refresh on the dataset, Power BI uses the connection information with other settings to connect directly to the database. Power BI then queries for updates and loads those updates into the dataset. You probably need an [on-premises data gateway](service-gateway-onprem.md) to help secure any data transfer between an on-premises server and Power BI. When the transfer is complete, visualizations in reports and dashboards refresh automatically.
 
 So even if you can't connect to your data source directly from the Power BI service, you can still get your data into Power BI. It just takes a few more steps and maybe some help from your IT department. For more information, see [Data sources in Power BI Desktop](desktop-data-sources.md).
 
