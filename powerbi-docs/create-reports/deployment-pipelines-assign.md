@@ -16,7 +16,7 @@ ms.search.form: Deployment pipelines operations
 > [!IMPORTANT]
 > Deployment pipelines is moving to Microsoft Fabric and this article will be deprecated soon. For an updated version of this article go to [Assign a workspace to a deployment pipeline](/fabric/cicd/deployment-pipelines/assign-pipeline).
 
-Deployment pipelines enable you to assign and unassign workspaces to any stage in a pipeline. This capability is particularly important for organizations that already have workspaces that are used as development, test, and production environments. In such cases, you can assign each workspace to its corresponding pipeline stage, and continue working in your usual flow.
+Deployment pipelines enable you to assign and unassign workspaces to any stage in a pipeline. This capability is important for organizations that already have workspaces that are used as development, test, and production environments. In such cases, you can assign each workspace to its corresponding pipeline stage, and continue working in your usual flow.
 
 >[!NOTE]
 >This article describes how to assign and unassign a workspace to a deployment pipeline stage in the Power BI service. You can also perform these functions programmatically, using the [Assign Workspace](/rest/api/power-bi/pipelines/assign-workspace) and [Unassign Workspace](/rest/api/power-bi/pipelines/unassign-workspace) Power BI REST APIs.
