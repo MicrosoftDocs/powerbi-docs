@@ -77,7 +77,7 @@ Many of the settings can have one of three states:
 * [Advanced networking](service-admin-portal-advanced-networking.md)
 * [Metrics settings](service-admin-portal-goals-settings.md)
 * [User experience experiments](service-admin-portal-user-experience-experiments.md)
-* [Share data with your Microsoft 365 services](service-admin-portal-share-data-microsoft-365-services.md)
+* [Share data with your Microsoft 365 services](admin-share-power-bi-metadata-microsoft-365-services.md#how-to-turn-sharing-with-microsoft-365-services-on-and-off)
 * [Insights settings](service-admin-portal-insights.md)
 * [Datamart settings](./service-admin-portal-datamart.md)
 * [Data model settings](./service-admin-portal-data-model.md)

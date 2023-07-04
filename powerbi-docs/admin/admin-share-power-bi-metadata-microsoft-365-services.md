@@ -26,7 +26,7 @@ When shared with Microsoft 365 services, Fabric content will be listed in the Mo
 * When the content was last accessed
 * The type of content that was accessed (report, dashboard etc.)
 
-See [the complete list of Fabric metadata that is shared with Microsoft 365 services](#data-that-will-be-shared-with-microsoft-365).
+See [the complete list of Fabric metadata that is shared with Microsoft 365 services](#data-that-is-shared-with-microsoft-365).
 
 ## How to turn sharing with Microsoft 365 services on and off
 
