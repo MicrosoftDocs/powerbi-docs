@@ -7,7 +7,7 @@ ms.reviewer: 'jadelynray'
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/07/2023
+ms.date: 07/04/2023
 Customer intent: As a Fabric admin, I need to know what information is passed from Fabric and Microsoft Graph to Microsoft 365.
 LocalizationGroup: Admin
 ---
@@ -46,7 +46,7 @@ For more information about data storage for Microsoft 365, see [Where your Micro
 
 Sharing metadata with Microsoft 365 services is controlled by the **Users can see Microsoft Fabric metadata in Microsoft 365** tenant setting. The setting is **Enabled** by default. To turn off the feature, or to turn it on again after it's been turned off, go to **Admin portal** > **Tenant settings** > **Users can see Microsoft Fabric metadata in Microsoft 365** and set the toggle as appropriate.
 
-By default, Fabric metadata is available only in the region where the Fabric tenant is located. To allow Fabric to share metadata across regions, set second toggle switch to **Enabled**. When you enable the second toggle, you acknowledge that Fabric metadata may flow outside the geographic region it's stored in.
+By default, Fabric metadata is available only in the region where the Fabric tenant is located. To allow Fabric to share metadata across regions, set the second toggle switch to **Enabled**. When you enable the second toggle, you acknowledge that Fabric metadata may flow outside the geographic region it's stored in.
 
 :::image type="content" source="./media/admin-share-power-bi-metadata-microsoft-365-services/fabric-share-metadata-microsoft-365-services-tenant-setting.png" alt-text="Screenshot of Users can see Microsoft Fabric metadata in Microsoft 365 tenant setting.":::
 
