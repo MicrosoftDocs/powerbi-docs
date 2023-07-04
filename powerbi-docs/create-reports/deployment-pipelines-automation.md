@@ -12,6 +12,9 @@ ms.date: 05/09/2023
 
 # Automate your deployment pipeline by using APIs and Azure DevOps
 
+> [!IMPORTANT]
+> Deployment pipelines is moving to Microsoft Fabric and this article will be deprecated soon. For an updated version of this article go to [Automate your deployment pipeline by using APIs and Azure DevOps](/fabric/cicd/deployment-pipelines/pipeline-automation).
+
 The Power BI [deployment pipelines](deployment-pipelines-overview.md) tool enables business intelligence teams to build an efficient and reusable release process for their Power BI content.
 
 To achieve continuous integration and continuous delivery (CI/CD) of content, many organizations use automation tools, including [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops). Organizations that use Azure DevOps, can use the [Power BI automation tool](#use-the-power-bi-automation-tools-extension) extension, which supports many of the deployment pipelines API operations.
