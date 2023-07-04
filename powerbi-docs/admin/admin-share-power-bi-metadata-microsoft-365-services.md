@@ -44,9 +44,12 @@ For more information about data storage for Microsoft 365, see [Where your Micro
 
 ## How to turn sharing with Microsoft 365 services on and off
 
-Sharing metadata with Microsoft 365 services is controlled by the **Users can see Microsoft Fabric metadata in Microsoft 365** tenant setting. The setting is **Enabled** by default. To turn off the feature, or to turn it on again after it's been turned off, go to **Admin portal** > **Tenant settings** > **Users can see Microsoft Fabric metadata in Microsoft 365** and set the toggle as appropriate.
+Sharing metadata with Microsoft 365 services is controlled by the **Users can see Microsoft Fabric metadata in Microsoft 365** tenant setting. The setting is **Enabled** by default. To turn off the feature, or to turn it on again after it's been turned off, go to **Admin portal** > **Tenant settings** > **Users can see Microsoft Fabric metadata in Microsoft 365** and set the toggle as appropriate. Once the setting is enabled or disabled, it may take up to 24 hours for you to see changes.
 
 By default, Fabric metadata is available only in the region where the Fabric tenant is located. To allow Fabric to share metadata across regions, set the second toggle switch to **Enabled**. When you enable the second toggle, you acknowledge that Fabric metadata may flow outside the geographic region it's stored in.
+
+> [!NOTE]
+> The second toggle is visible only when the main sharing toggle is enabled.
 
 :::image type="content" source="./media/admin-share-power-bi-metadata-microsoft-365-services/fabric-share-metadata-microsoft-365-services-tenant-setting.png" alt-text="Screenshot of Users can see Microsoft Fabric metadata in Microsoft 365 tenant setting.":::
 
