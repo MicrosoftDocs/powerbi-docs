@@ -13,6 +13,9 @@ ms.search.form: Deployment rules
 
 # Create deployment rules
 
+> [!IMPORTANT]
+> Deployment pipelines is moving to Microsoft Fabric and this article will be deprecated soon. For an updated version of this article go to [Create deployment rules](/fabric/cicd/deployment-pipelines/create-rules).
+
 When you're working in a deployment pipeline, different stages may have different configurations. For example, each stage can have different databases or different query parameters. The development stage might query sample data from the database, while the test and production stages query the entire database.
 
 When you deploy content between pipeline stages, you can configure deployment rules to change the content while keeping some settings intact. For example, if you want a dataset in a production stage to point to a production database instead of one in the test stage, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.

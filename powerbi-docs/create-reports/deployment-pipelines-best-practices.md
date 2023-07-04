@@ -13,6 +13,9 @@ ms.search.form: Best practices for deployment pipelines, Create deployment pipel
 
 # Deployment pipelines best practices
 
+> [!IMPORTANT]
+> Deployment pipelines is moving to Microsoft Fabric and this article will be deprecated soon. For an updated version of this article go to [Lifecycle management best practices](/fabric/cicd/best-practices-cicd).
+
 This article provides guidance for business intelligence (BI) creators who are managing their content throughout its lifecycle. The article focuses on the use of deployment pipelines as a BI content lifecycle management tool.
 
 The article is divided into four sections:

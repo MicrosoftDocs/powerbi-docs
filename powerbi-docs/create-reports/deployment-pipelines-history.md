@@ -13,6 +13,9 @@ ms.search.form: Deployment history
 
 # Deployment history
 
+> [!IMPORTANT]
+> Deployment pipelines is moving to Microsoft Fabric and this article will be deprecated soon. For an updated version of this article go to [Deployment history](/fabric/cicd/deployment-pipelines/deployment-history).
+
 Deployment history is a deployment pipelines feature that enables reviewing the past deployments in your pipeline. The feature is designed as a log that lists all the past deployments in the pipeline.
 
 You can use the deployment history log, to check the health of your pipeline, and to troubleshoot problems that occurred during previous deployments.
