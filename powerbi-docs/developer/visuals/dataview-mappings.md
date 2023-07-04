@@ -448,7 +448,7 @@ export class Visual implements IVisual {
         let values: DataViewValueColumnGroup[] = categoricalDataView.values.grouped();
 
         let data = {};
-        // iterate categories/countries
+        // iterate categories/countries-regions
         categories.map((category: PrimitiveValue, categoryIndex: number) => {
             data[category.toString()] = {};
             // iterate series/years

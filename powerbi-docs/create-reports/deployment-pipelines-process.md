@@ -13,6 +13,9 @@ ms.search.form: Introduction to Deployment pipelines, Manage access in Deploymen
 
 # The deployment pipelines process
 
+> [!IMPORTANT]
+> Deployment pipelines is moving to Microsoft Fabric and this article will be deprecated soon. For an updated version of this article go to [The deployment pipelines process](/fabric/cicd/deployment-pipelines/understand-the-deployment-process).
+
 The deployment process lets you clone content from one stage in the deployment pipeline to another, typically from development to test, and from test to production.
 
 During deployment, Power BI copies the content from the current stage, into the target one. The connections between the copied items are kept during the copy process. Power BI also applies the configured deployment rules to the updated content in the target stage. Deploying content may take a while, depending on the number of items being deployed. During this time, you can navigate to other pages in the Power BI portal, but you can't use the content in the target stage.
