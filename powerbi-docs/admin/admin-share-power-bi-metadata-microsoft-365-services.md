@@ -87,4 +87,4 @@ The tables below list the data that is shared with Microsoft 365 services.
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Share data with your Microsoft 365 services tenant settings](service-admin-portal-share-data-microsoft-365-services.md)
+>[About tenant settings](service-admin-portal-about-tenant-settings.md)
