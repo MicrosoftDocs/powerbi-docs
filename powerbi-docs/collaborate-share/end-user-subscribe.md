@@ -123,7 +123,7 @@ When you subscribe to a report created by someone else, you can make changes to 
 
 :::image type="content" source="./media/end-user-subscribe/power-bi-my-changes.png" alt-text="Screenshot showing the My changes section of the Subscriptions pane.":::
 
-When **Include my changes** is unchecked, Power BI ignores all changes you might have made to the report, and keeps you subscribed to the report as published by the author. When **Include my changes** is checked, Power BI updates the the subscription including all changes you've made to the report. Changes include:  
+When **Include my changes** is unchecked, Power BI ignores all changes you might have made to the report, and keeps you subscribed to the report as published by the author. When **Include my changes** is checked, Power BI updates the subscription including all changes you've made to the report. Changes include:  
 
 - filters (filter pane)
 - slicers
@@ -134,7 +134,7 @@ When **Include my changes** is unchecked, Power BI ignores all changes you might
 - spotlights
 - focus mode
 
-Before updating the subscription, Power BI gives you the opportunity to preview the old subscription and compare it to the new state of the report. Comparing the two versions helps you decide whether to update the subscription or not. 
+Before Power BI updates the subscription, you are given the opportunity to preview the old subscription and compare it to the new state of the report. Comparing the two versions helps you decide whether to update the subscription or not. 
 
 ### Preview and update your subscription
 
@@ -144,7 +144,7 @@ Before updating the subscription, Power BI gives you the opportunity to preview 
 
 1. Select **Subscribe to report** from the top menubar of the report canvas to reopen the **Subscriptions** pane.
 1. Select the pencil icon to edit the details of your existing subscription, such as changing the delivery frequency, adding an email message, changing permissions, and more.
-1. Select **More options** > **Include my changes** > **Preview** to displays a view-only version of the original subscription that is being sent out to subscribers. Use this comparison to decide if you want to overwrite the original state of the subscribed report.
+1. Select **More options** > **Include my changes** > **Preview** to display a view-only version of the original subscription that is being sent out to subscribers. Use this comparison to decide if you want to overwrite the original state of the subscribed report.
 1. Select **Back to subscription** and select the pencil icon. 
 1. To update the existing subscription to include your report changes, select **More options** > **Include my changes** > **Update**. **Update** changes the subscription to include the new changes. 
 1. Save your subscription. 
@@ -166,7 +166,7 @@ Your **Subscriptions** page keeps track of all of your subscriptions for the cur
 
 To review a subscription, select the arrow to the left of the subscription. 
 
-:::image type="content" source="./media/end-user-subscribe/power-bi-subscription-review.png" alt-text="Screenshot showing all the details for one subscription.":::
+:::image type="content" source="./media/end-user-subscribe/power-bi-subscription-reviews.png" alt-text="Screenshot showing all the details for one subscription.":::
 
 To test out your subscription, select the  **Run now** to send the email to you right away. It doesn't trigger a data refresh of the underlying dataset. 
 

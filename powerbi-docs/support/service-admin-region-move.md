@@ -6,7 +6,7 @@ ms.author: hfeng
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting 
-ms.date: 06/26/2023
+ms.date: 07/05/2023
 ms.custom: template-how-to; subject-moving-resources
 ---
 
@@ -84,7 +84,7 @@ To find out the best way to contact support, read [Power BI support options](ser
 
    |Information needed | How to find the information |
    |---|---|
-   |Tenant object ID | [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)|
+   |Tenant object ID | [How to find your Azure Active Directory tenant ID](/azure/active-directory/verifiable-credentials/verifiable-credentials-configure-tenant)|
    |Current region | [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md)|
    |Proposed region | [International availability of Microsoft Power Platform](/power-platform/availability)|
    |Proposed date and time for migration |Give us three options in UTC time. The proposed dates should be at least two weeks later than when you submit the request.|
