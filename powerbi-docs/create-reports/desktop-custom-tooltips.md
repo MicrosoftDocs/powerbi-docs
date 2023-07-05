@@ -62,7 +62,7 @@ In the **Settings** pane, select **Tooltip size is affected by canvas size**.
 
 ## Considerations and limitations
 
-- Default tooltips aren't designed to contain large amounts of content, and their look and feel may change as Power BI updates. To have more control the look and feel over the content in the tooltip, [create tooltips based on custom report pages](desktop-tooltips.md) instead.
+- Default tooltips aren't designed to contain large amounts of content, and their look and feel may change with Power BI updates. To have more control over the look and feel of the content in a tooltip, [create tooltips based on custom report pages](desktop-tooltips.md) instead.
 
 ## Next steps
 
