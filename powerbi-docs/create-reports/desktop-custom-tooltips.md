@@ -60,6 +60,8 @@ In the **Settings** pane, select **Tooltip size is affected by canvas size**.
 
 :::image type="content" source="media/desktop-custom-tooltips/service-tooltip-auto-scale-setting.png" alt-text="Screenshot showing Tooltip size is affected by canvas size checkbox in the Power BI service.":::
 
+---
+
 ## Considerations and limitations
 
 - Default tooltips aren't designed to contain large amounts of content, and their look and feel may change with Power BI updates. To have more control over the look and feel of the content in a tooltip, [create tooltips based on custom report pages](desktop-tooltips.md) instead.
