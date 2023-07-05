@@ -68,12 +68,10 @@ Your organization may not allow displaying images stored on OneDrive for work or
 
 - The image needs to be in one of these file formats: .bmp, .jpg, .jpeg, .gif, .png, or .svg
 - The URL must be anonymously accessible, not on a site that requires a sign-in, such as SharePoint. However, if images are hosted on SharePoint or OneDrive, you might be able to get an embed code that points directly to them.
-- The Power BI mobile apps display the image only if the image URL is anonymously accessible, even if you can see the image in Power BI Desktop or in the service.
+- The Power BI mobile apps display the image only if the image URL is anonymously accessible. The image cannot be hosted on a site that requires a sign-in, such as SharePoint, even if you can see the image in Power BI Desktop or in the service.
 
 ## Next steps
 
-[Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
-
-[Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
-
-More questions? [Try the Power BI community](https://community.powerbi.com/)
+* [Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
+* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+* More questions? [Try the Power BI community](https://community.powerbi.com/)
