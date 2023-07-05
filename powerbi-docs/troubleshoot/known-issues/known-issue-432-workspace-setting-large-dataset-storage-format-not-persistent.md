@@ -2,11 +2,10 @@
 title: Known issue - Workspace setting 'large dataset storage format' isn't persistent
 description: A known issue is posted where the workspace setting 'large dataset storage format' isn't persistent
 author: mihart
-ms.author: akangsha1
+ms.author: anirmale
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.topic: troubleshooting  
 ms.date: 06/30/2023
 ms.custom: known-issue-432
 ---
