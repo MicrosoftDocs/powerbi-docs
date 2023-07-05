@@ -154,8 +154,6 @@ Before Power BI updates the subscription, you are given the opportunity to previ
 
 If you're the author of the report, **Include my changes** is a great way to create individualized subscriptions for recipients. 
 
-1. Scroll to the bottom section of the **Subscriptions** pane and select **More options** > **My changes**.  
-
 > [!NOTE]
 > The **Include my changes** field isn't available for dashboards or paginated reports. 
 
