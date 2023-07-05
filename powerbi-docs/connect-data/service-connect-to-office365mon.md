@@ -1,6 +1,6 @@
 ---
 title: Connect to Office365Mon with Power BI
-description: Office365Mon for Power BI
+description: Learn how analyze Office 365 outages and health performance data by using the Power BI and the Office365Mon template app.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: maggiesMSFT
@@ -32,14 +32,14 @@ Connect to the [Office365Mon template app](https://msit.powerbi.com/groups/me/ge
 
 3. In the **Authentication method** box, select **OAuth2**. You can change the privacy level if you want. For more information, select **Learn more** in the window. When you're done, select **Sign in and connect**.
    
-   :::image type="content" source="media/service-connect-to-office365mon/connect-template-2.png" alt-text="Screenshot that shows connection options in the Connect to Office365 PowerBI Template Pack window." lightbox="media/service-connect-to-office365mon/connect-template-2.png":::
+   :::image type="content" source="media/service-connect-to-office365mon/connect-template-2.png" alt-text="Screenshot that shows connection options in the Connect to Office365 PowerBI Template Pack window.":::
 
 4. When prompted, enter your Office365Mon admin credentials and complete the authentication process.
 
 5. After Power BI imports the data, you see a new dashboard, report, and dataset in your workspace. Select **Office365Mon**.
    
-   ![Screenshot that shows the Office365Mon dashboard.](media/service-connect-to-office365mon/office365mon-dashboard.png)
-
+   :::image type="content" source="media/service-connect-to-office365mon/office365mon-dashboard.png" alt-text="Screenshot that shows the Office365Mon dashboard." lightbox="media/service-connect-to-office365mon/office365mon-dashboard.png":::
+  
 **What now?**
 
 * Try [asking a question in the Q&A box](../consumer/end-user-q-and-a.md) at the top of the dashboard.
