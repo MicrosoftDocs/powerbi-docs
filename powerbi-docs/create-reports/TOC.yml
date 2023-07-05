@@ -108,12 +108,12 @@
       href: power-bi-automate-visual.md            
     - name: Creating tooltips
       items: 
+      - name: Customize tooltips
+        href: desktop-custom-tooltips.md
       - name: Add report tooltips to enhance your visuals
         href: desktop-tooltips.md
       - name: Create modern visual tooltips
         href: desktop-visual-tooltips.md        
-      - name: Customize tooltips
-        href: desktop-custom-tooltips.md
     - name: Filters and slicers in reports
       items: 
       - name: Filters and highlighting in reports
@@ -550,18 +550,28 @@
         href: ../paginated-reports/report-builder-planning-report.md
       - name: Design tips
         href: ../paginated-reports/report-builder-design-tips.md
-      - name: Add filters to a paginated report
-        href: ../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md
-      - name: Commonly used filters
-        href: ../paginated-reports/report-design/commonly-used-filters-report-builder-and-service.md
       - name: Format numbers and dates
         href: ../paginated-reports/report-design/format-numbers-dates-report-builder-service.md
       - name: Tables, matrixes, lists
         href: ../paginated-reports/report-builder-tables-matrices-lists.md
       - name: Control page breaks, headings, columns, and rows
         href: ../paginated-reports/report-design/control-page-breaks-headings-columns-rows-report-builder.md
-      - name: Hide an item in a report
-        href: ../paginated-reports/report-builder/hide-item-report-builder.md
+      - name: Add a bookmark to a paginated report
+        href: ../paginated-reports/report-design/add-bookmark-report-report-builder.md
+      - name: Add a border to a paginated report
+        href: ../paginated-reports/report-design/add-border-report-report-builder.md
+      - name: Add a hyperlink to a URL in a paginated report
+        href: ../paginated-reports/report-design/add-hyperlink-url-report-builder.md
+      - name: Add a page break to a paginated report
+        href: ../paginated-reports/report-design/add-page-break-report-builder.md
+      - name: Create a stepped paginated report
+        href: ../paginated-reports/report-design/create-stepped-report-report-builder.md
+      - name: Define colors on a chart using a palette
+        href: ../paginated-reports/report-design/define-colors-chart-using-palette-report-builder.md
+      - name: Display page numbers or other report properties
+        href: ../paginated-reports/report-design/display-page-numbers-other-report-properties-report-builder.md
+      - name: Set the locale for a report or text box
+        href: ../paginated-reports/report-design/set-locale-for-report-text-box-reporting-services.md
       - name: Text boxes
         items:
         - name: Text boxes in paginated reports
@@ -572,6 +582,8 @@
           href: ../paginated-reports/report-design/textbox/allow-a-text-box-to-grow-or-shrink-report-builder-and-service.md
         - name: Format text in a text box
           href: ../paginated-reports/report-design/textbox/format-text-in-a-text-box-report-builder-and-service.md
+        - name: Format text and placeholders in paginated reports
+          href: ../paginated-reports/report-design/format-text-placeholders-report-builder.md
         - name: Set text box orientation
           href: ../paginated-reports/report-design/textbox/set-text-box-orientation-report-builder-and-service.md
     - name: Drillthrough paginated reports
@@ -588,6 +600,24 @@
         href: ../paginated-reports/subreports.md
       - name: Troubleshoot subreports
         href: ../paginated-reports/subreports-troubleshoot.md
+    - name: Filter, group, and sort data in paginated reports
+      items: 
+      - name: Filter, group, and sort data in paginated reports
+        href: ../paginated-reports/report-design/filter-group-sort-data-report-builder.md
+      - name: Understand groups in a paginated report
+        href: ../paginated-reports/report-design/understand-groups-report-builder.md
+      - name: Grouping pane in a paginated report
+        href: ../paginated-reports/report-design/grouping-pane-report-builder.md
+      - name: Sort data in a data region in a paginated report
+        href: ../paginated-reports/report-design/sort-data-data-region-report-builder.md
+      - name: Add a filter to a paginated report
+        href: ../paginated-reports/report-design/add-filter-report-builder.md
+      - name: Add filters to datasets, data regions, and groups
+        href: ../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md
+      - name: Commonly used filters
+        href: ../paginated-reports/report-design/commonly-used-filters-report-builder-and-service.md
+      - name: Add or delete a group in a data region
+        href: ../paginated-reports/report-design/add-delete-group-data-region-report-builder.md
     - name: Visualizations in paginated reports
       items: 
       - name: Charts in paginated reports

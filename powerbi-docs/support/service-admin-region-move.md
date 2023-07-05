@@ -2,11 +2,11 @@
 title: Move Power BI between regions
 description: If the default region for your organization's Power BI data isn't optimal, you might want to move to another region. You can't move regions by yourself. This article describes how to work with support to move between regions. 
 author: kfollis
-ms.author: kfollis
+ms.author: hfeng
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting 
-ms.date: 06/02/2023
+ms.date: 07/05/2023
 ms.custom: template-how-to; subject-moving-resources
 ---
 
@@ -56,7 +56,7 @@ The migration process moves all tenant data to the new region. The GUID assigned
 
    - We can't migrate capacities and Premium workspaces, so you have to delete all capacities before migration. After the region move, these resources can be recreated. If you move resources from a Premium workspace to a shared workspace, datasets larger than 1 GB can't be viewed until they're moved back to Premium capacity.
 
-   - Gateways should be deleted in the target region to avoid conflicts during migration.
+   - Delete any gateways that are already in the target region to avoid conflicts during migration.
 
 - To keep user activity logs, follow the steps in [Track user activities in Power BI](../admin/service-admin-auditing.md). You can get log data from either the Power BI activity log or the Unified audit log.
 
@@ -84,7 +84,7 @@ To find out the best way to contact support, read [Power BI support options](ser
 
    |Information needed | How to find the information |
    |---|---|
-   |Tenant object ID | [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)|
+   |Tenant object ID | [How to find your Azure Active Directory tenant ID](/azure/active-directory/verifiable-credentials/verifiable-credentials-configure-tenant)|
    |Current region | [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md)|
    |Proposed region | [International availability of Microsoft Power Platform](/power-platform/availability)|
    |Proposed date and time for migration |Give us three options in UTC time. The proposed dates should be at least two weeks later than when you submit the request.|
