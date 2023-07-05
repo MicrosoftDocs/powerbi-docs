@@ -72,6 +72,8 @@ If you don't have a subscription, the **OneDrive for Business** and **SharePoint
 
 :::image type="content" source="media/service-excel-workbook-files/excel-files-new-03.png" alt-text="Screenshot that shows the unavailable options.":::
 
+If you want to import data from an Excel file into a Power BI dataset, follow the procedure described in [Import Excel data into Power BI](#import-excel-data-into-power-bi).
+
 You can't use **Upload** to get files from personal OneDrive accounts, but you can upload files from your computer.
 
 ## Prepare your workbook for Power BI
@@ -101,15 +103,64 @@ Where you save your workbook file makes a difference.
 
 <a name="one-excel-workbook--two-ways-to-use-it"></a>
 
-### Upload from OneDrive for Business
+## Import or connect from OneDrive for Business
 
-When you upload your workbook from OneDrive for Business, it appears in Power BI just like it would in Excel Online. But you also have some great features to help you pin elements from your worksheets to your dashboards.
+If you save your workbook files to OneDrive for Business, you have a couple of ways to explore your data in Power BI: import or connect. To connect, use the **Upload** button, as described in [Upload to Power BI](#upload-to-power-bi). 
+
+When you upload your workbook from OneDrive for Business, it appears in Power BI just like it would in Excel Online. But you also have some great features to help you pin elements from your worksheets to your dashboards. twice 
+
+### Import Excel data into Power BI
+
+To import Excel data into Power BI, in your workspace, select **New** > **Dataset** > **Excel**, and then find the file.
+
+The **My files** list allows you to add files from your documents folder and other personal sources.
+
+You can use the **Quick access** list on the left side of the window to add files from SharePoint sites and other shared sources.
+
+Select **Browse this device** to add files from the device you're currently using.
+
+When you import Exel data, Power BI imports any supported data in tables and any data model into a new Power BI dataset.
+
+You can continue editing your workbook. When you save your changes, Power BI synchronizes them with the dataset in Power BI, usually within about an hour. You can also select **Publish** to export your changes immediately. Any visualizations in reports and dashboards are updated, too, based on the following refresh triggers:
+
+|Report tiles  |Dashboard tiles  |
+|---------|---------|
+|Open the report, after the cache expires.|Open the dashboard, after the cache refreshes.|
+|Select **Refresh** in the report.|Select **Refresh** in the dashboard.|
+|     |Automatically for pinned tiles when the cache refreshes, if the dashboard is already open.|
+
+> [!NOTE]
+> Pinned report pages don't have the automatic refresh feature.
+
+You should import your data if you used **Get & Transform Data** or **Power Pivot** to load data into a data model.
+
+### Connect, manage, and view Excel data in Power BI
+
+When you connect to data by using the **Upload** button rather than importing the data, your workbook appears in Power BI just like it would in Excel Online. But you also have some great features to help you pin elements from your worksheets to your dashboards.
 
 You can't edit your workbook in Power BI, but if you need to make changes, you can select **Edit** and then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes save to the workbook on OneDrive.
+
+You should connect to data if you have only data in worksheets, or if you have ranges, PivotTables and charts that you want to pin to dashboards.
 
 If you use Excel 2016 and later, you can also use **File** > **Publish** > **Upload** from Excel. For more information, see [Publish to Power BI from Microsoft Excel](service-publish-from-excel.md).
 
 <a name="import-or-connect-to-an-excel-workbook-from-power-bi"></a>
+
+### Local Excel workbooks
+
+To upload a local Excel file into Power BI:
+
+same process as above? 
+
+Once your workbook is uploaded, you can find it in the navigation pane in the **Workbooks** section of the workspace, and in the content list for the workspace.
+
+![Screenshot of the Workbooks section, showing the Excel workbook.](media/service-excel-workbook-files/excel_import_9.png)
+
+Local Excel workbooks open in Excel Online within Power BI. Unlike Excel workbooks stored on OneDrive or SharePoint team sites, you can't edit local Excel files within Power BI.
+
+## Publish from Excel to your Power BI site
+
+Using the Excel **Publish to Power BI** feature is effectively the same as using Power BI to import or connect to your file. For more information, see [Publish to Power BI from Microsoft Excel](service-publish-from-excel.md).
 
 > [!NOTE]
 > If you upload an Excel workbook that's connected to an on-premises SQL Server Analysis Services (SSAS) cube, you can't refresh the underlying data model in the Power BI service.
