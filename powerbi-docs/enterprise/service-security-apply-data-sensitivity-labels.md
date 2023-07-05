@@ -47,7 +47,7 @@ You can apply or change the sensitivity label on a report or dashboard by follow
 1. Select the appropriate sensitivity label in the drop-down list.
 1. Select **Save** to apply the modified settings.
 
-The following image shows how to set the sensitivity label for a dashboard to _Highly Confidential / Any User  (No Protection)_:
+The following image shows how to set the sensitivity label for a dashboard to _Highly Confidential\Any User  (No Protection)_:
 
 :::image type="content" source="media/service-security-apply-data-sensitivity-labels/set-sensitivity-label-dashboard.png" alt-text="Screenshot that shows how to set the sensitivity label for a dashboard." lightbox="media/service-security-apply-data-sensitivity-labels/set-sensitivity-label-dashboard.png" border="false":::
 
