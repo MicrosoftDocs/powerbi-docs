@@ -32,8 +32,7 @@ The requirements apply to users in the organization and to [Azure Active Directo
 - A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md), or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md) 
 
-Your Fabric admin (previously Power BI admin) needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#users-can-set-up-email-subscriptions). 
-
+Your Fabric admin (previously Power BI admin) needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#users-can-set-up-email-subscriptions).
 
 ## Subscribe to a report or dashboard
 Whether you're subscribing to a dashboard, report page, or to a full report, the process is similar. A single button allows you to subscribe to the Power BI service dashboards and reports. Subscribing to a report offers you a few more field options, so we're using a report for our example. 
@@ -52,7 +51,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 
 1. Edit or add recipients by email address, ensuring that you have at least one. 
 
-1. If the report is in a workspace backed by a Premium capacity or Premium Per User (PPU) license, add the full report as an attachment instead of only a single report page. Select PDF or PowerPoint for the attachment format. The attachment respects all privacy labels for the report. The size of the attachment is limited to no more than 20 pages and less than 25 MB.
+1. If the report is in a workspace backed by a Premium capacity or Premium Per User (PPU) license, add the full report as an attachment instead of only a single report page. Sensitivity labels are applied to the email attachment. Select PDF or PowerPoint for the attachment format. The attachment respects all privacy labels for the report. The size of the attachment is limited to no more than 20 pages and less than 25 MB.
 
    :::image type="content" source="./media/end-user-subscribe/power-bi-attach.png" alt-text="Screenshot showing the Attach full report dropdown.":::
 
@@ -77,12 +76,24 @@ If your subscription is ready, select **Save**. To make your subscription more p
 1. Include additional information in the email. Select one or more of these checkboxes.
     - **Permission to view the report/dashboard in Power BI**: Give recipients permission to open and view the report or dashboard in the Power BI service (app.powerbi.com). This option isn't available in all situations. 
     - **Link to report/dashboard in Power BI**: Include a "Go to report" button in the body of the email that links to the report or dashboard in the Power BI service.
-    - **Preview image (for Power BI reports only)**: Include a preview of the report page in the body of the email.
+    - **Preview image (for Power BI reports only)**: Include a preview of the report page in the body of the email. 
+
+    > [!CAUTION]
+    > Sensitivity labels are not applied to a subscription's email or preview image. To protect against this, turn off **Preview image**.  
     
 You receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.
 
 > [!NOTE]
 > To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**.
+
+## Sensitivity labels
+
+Sensitivity labels are applied to subscription email attachments but not to the subscription's email text or preview images. 
+- Creating a subscription that attaches a copy of a report (including paginated report) to the subscription email is a Power BI Pro feature.  
+- For users with free subscriptions, the subscription email for a report (including paginated report) will not contain a sensitivity label in the email text or the subscription preview image. 
+- To ensure that your subscription has a sensitivity label, turn off **Preview image** in the **Subscriptions** screen. 
+- For subscriptions to dashboards, there is no option to attach a copy of the dashboard to the email.  So, the subscription email won't have a sensitivity label in the text or preview image. 
+
 
 ## Subscribe others 
 
