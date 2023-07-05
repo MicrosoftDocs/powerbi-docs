@@ -7,7 +7,7 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 06/30/2023
+ms.date: 07/05/2023
 LocalizationGroup: Connect to services
 ---
 
@@ -35,19 +35,17 @@ Connect to the [Office365Mon template app](https://msit.powerbi.com/groups/me/ge
    :::image type="content" source="media/service-connect-to-office365mon/connect-template-2.png" alt-text="Screenshot that shows connection options in the Connect to Office365 PowerBI Template Pack window." lightbox="media/service-connect-to-office365mon/connect-template-2.png":::
 
 4. When prompted, enter your Office365Mon admin credentials and complete the authentication process.
-   
-   ![Screenshot that shows the Office365Mon sign-in window.](media/service-connect-to-office365mon/creds2.png)
 
-5. After Power BI imports the data, you see a new dashboard, report, and dataset in the navigation pane. New items are marked with a yellow asterisk (*). Select **Office365Mon**.
+5. After Power BI imports the data, you see a new dashboard, report, and dataset in your workspace. Select **Office365Mon**.
    
-   ![Screenshot that shows the dashboard, report, and dataset in the navigation pane.](media/service-connect-to-office365mon/dashboard4.png)
+   ![Screenshot that shows the Office365Mon dashboard.](media/service-connect-to-office365mon/office365mon-dashboard.png)
 
 **What now?**
 
 * Try [asking a question in the Q&A box](../consumer/end-user-q-and-a.md) at the top of the dashboard.
 * [Change the tiles](../create-reports/service-dashboard-edit-tile.md) in the dashboard.
 * [Select a tile](../consumer/end-user-tiles.md) to open the underlying report.
-* Your dataset is scheduled to refresh daily. You can change the refresh schedule, or refresh it on demand by selecting **Refresh Now**.
+* Change the refresh schedule. The dataset is scheduled to refresh daily. You can change the schedule, or refresh it on demand by selecting **Refresh now** in the workspace.
 
 ## Troubleshooting
 
