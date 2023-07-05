@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/22/2023
+ms.date: 07/05/2023
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -23,7 +23,7 @@ Subscribe yourself and others to Power BI reports, dashboards, and paginated rep
 
 It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to reports and dashboards that matter most to you, and Power BI emails a snapshot to your inbox. You tell Power BI how often you want to receive the emails and at what time. Set up to 24 subscriptions per report or dashboard, and provide unique recipients, times, and frequencies for each subscription.  
 
-:::image type="content" source="./media/end-user-subscribe/power-bi-email.png" alt-text="Screenshot showing email for subscription to a report.":::
+:::image type="content" source="./media/end-user-subscribe/power-bi-emails.png" alt-text="Screenshot showing email for subscription to a report.":::
 
 
 ## Requirements
@@ -32,11 +32,11 @@ The requirements apply to users in the organization and to [Azure Active Directo
 - A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md), or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md) 
 
-Your Fabric admin (previously Power BI admin) needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#users-can-set-up-email-subscriptions). To export or subscribe to paginated reports, [several tenant switches must be enabled](#subscribe-to-paginated-reports).
+Your Fabric admin (previously Power BI admin) needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#users-can-set-up-email-subscriptions). 
 
 
 ## Subscribe to a report or dashboard
-Whether you're subscribing to a dashboard or to a report page, the process is similar. A single button allows you to subscribe to the Power BI service dashboards and reports. Subscribing to a report offers you a few more field options, so we're using a report for our example. 
+Whether you're subscribing to a dashboard, report page, or to a full report, the process is similar. A single button allows you to subscribe to the Power BI service dashboards and reports. Subscribing to a report offers you a few more field options, so we're using a report for our example. 
 
 :::image type="content" source="./media/end-user-subscribe/power-bi-subscribe.png" alt-text="Screenshot showing the Subscribe to report icon on the top menu bar.":::
 
@@ -50,10 +50,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 
 1. Use the green slider to turn the subscription on and off. Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
-1. Edit or add recipients by email address, ensuring that you have at least one. Unless you're a report owner, you can only subscribe yourself.
-
-    > [!NOTE] 
-    > B2B guest users can only subscribe themselves. 
+1. Edit or add recipients by email address, ensuring that you have at least one. 
 
 1. If the report is in a workspace backed by a Premium capacity or Premium Per User (PPU) license, add the full report as an attachment instead of only a single report page. Select PDF or PowerPoint for the attachment format. The attachment respects all privacy labels for the report. The size of the attachment is limited to no more than 20 pages and less than 25 MB.
 
@@ -87,22 +84,46 @@ You receive an email and snapshot of the report or dashboard on the schedule you
 > [!NOTE]
 > To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**.
 
-## Make changes to a subscription
-Both report authors and report consumers often make changes to reports by changing filters, adding bookmarks, filtering and highlighting, and more. After making these changes, you can create a new subscription or apply these changes to your existing subscription.  Creators can compare the old subscription with the new state of the report and decide whether to update the subscription to the new state.  
+## Subscribe others 
 
-The new **Include my changes** button triggers two new options -- **Preview** and **Update**. **Preview** displays a view-only version of the original subscription that you're subscribed to and, if you have permissions, that you're sending out to your subscribers. **Update** changes the subscription to include the new changes. To edit your subscription:
+To create a subscription that includes others, in addition to the [requirements necessary to create your own subscriptions](#requirements), you also need:
 
-1. Apply any changes (for example, apply filters, spotlights, drilling, slicers, or cross-highlighting) to the report so that it's in the state you want to send out.
-1. Select **Subscribe to report** from the top menubar of the report canvas to reopen the **Subscriptions** pane.
-1. Select the pencil icon to edit the details of your existing subscription, such as changing the delivery frequency, adding an email message, changing permissions, and more.
-1. Select **More options** > **Include my changes** > **Preview** to double-check that the changes are ready to go.
-1. Select **Back to subscription** and select the pencil icon. 
-1. Select **<ore options** > **Include my changes** > **Update**
-1. Save your subscription. 
+- A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 
-### You make changes to another's report
+- To be part of the organization. [B2B guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others only themselves. For more information, read [B2B guest users can set up and be subscribed to email subscriptions](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
 
-When you make changes to a report created by someone else, you're given the opportunity to save those changes with the subscription. When **Include my changes** is unchecked, Power BI ignores all changes you might have made to the report, and keeps you subscribed to the report as published by the author. When **Include my changes** is checked, Power BI subscribes you to the report including all changes you've made to the report. Changes include:  
+- If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can still subscribe others. However, they must also have a Power BI Pro or Premium Per User (PPU) license. 
+
+    :::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
+
+> [!NOTE] 
+> B2B guest users can only subscribe themselves. 
+
+### Use group email aliases 
+When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../enterprise/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
+
+|Group type      |Supported in email subscriptions  |
+|---------|---------|
+|[Microsoft 365 groups](/microsoft-365/admin/create-groups/office-365-groups)     |      Yes   |
+|[Distribution groups](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)    |    Yes     |
+|[Dynamic distribution groups](/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)     |      Yes   |
+|[Security groups](/microsoft-365/admin/email/create-edit-or-delete-a-security-group)     |    No     |
+|[Mail-enabled security groups](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide#microsoft-365-groups&preserve-view=true)    |     Yes    |
+
+There are different ways of creating a Microsoft 365 group. For example, you can create a group in Outlook, a distribution group in Teams, or a mail-enabled security group. The Microsoft 365 distribution group for Teams doesn't work for mail enablement, so can't be used for direct sharing and email subscriptions.
+
+> [!NOTE]
+> Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and don't support subscribing group aliases.  
+
+## Save changes to a subscribed report
+
+### Include my changes
+
+When you subscribe to a report created by someone else, you can make changes to that report. At that point, you can create a new subscription that captures those changes or you can save your changes with the existing subscription. 
+
+:::image type="content" source="./media/end-user-subscribe/power-bi-my-changes.png" alt-text="Screenshot showing the My changes section of the Subscriptions pane.":::
+
+When **Include my changes** is unchecked, Power BI ignores all changes you might have made to the report, and keeps you subscribed to the report as published by the author. When **Include my changes** is checked, Power BI updates the the subscription including all changes you've made to the report. Changes include:  
 
 - filters (filter pane)
 - slicers
@@ -113,20 +134,27 @@ When you make changes to a report created by someone else, you're given the oppo
 - spotlights
 - focus mode
 
-### You make changes to your own report
+Before updating the subscription, Power BI gives you the opportunity to preview the old subscription and compare it to the new state of the report. Comparing the two versions helps you decide whether to update the subscription or not. 
+
+### Preview and update your subscription
+
+1. First, customize your report based on conditions such as country/region, team/department, and category. 
+ 
+1. Apply any changes (for example, apply filters, spotlights, drilling, slicers, or cross-highlighting) to the report so that it's in the state you want to subscribe or share.
+
+1. Select **Subscribe to report** from the top menubar of the report canvas to reopen the **Subscriptions** pane.
+1. Select the pencil icon to edit the details of your existing subscription, such as changing the delivery frequency, adding an email message, changing permissions, and more.
+1. Select **More options** > **Include my changes** > **Preview** to displays a view-only version of the original subscription that is being sent out to subscribers. Use this comparison to decide if you want to overwrite the original state of the subscribed report.
+1. Select **Back to subscription** and select the pencil icon. 
+1. To update the existing subscription to include your report changes, select **More options** > **Include my changes** > **Update**. **Update** changes the subscription to include the new changes. 
+1. Save your subscription. 
+
+
+### Customize subscriptions
 
 If you're the author of the report, **Include my changes** is a great way to create individualized subscriptions for recipients. 
 
-1. First, customize your report based on conditions such as country/region, team/department, and category. 
 1. Scroll to the bottom section of the **Subscriptions** pane and select **More options** > **My changes**.  
-
-    :::image type="content" source="./media/end-user-subscribe/power-bi-my-changes.png" alt-text="Screenshot showing the My changes section of the Subscriptions pane.":::
-
-1. Select **Include my changes** and then choose **Update**.  If you want to review the report before updating, select **Preview**. Preview view displays the version of the report that you're subscribed to.
-
-    :::image type="content" source="./media/end-user-subscribe/power-bi-preview.png" alt-text="Screenshot showing the preview version of a report page.":::
-
-1. If the version of the report is the one you want, from the upper right corner, select **Back to subscription**, **select Update**, and save the subscription.
 
 > [!NOTE]
 > The **Include my changes** field isn't available for dashboards or paginated reports. 
@@ -143,7 +171,7 @@ To review a subscription, select the arrow to the left of the subscription.
 To test out your subscription, select the  **Run now** to send the email to you right away. It doesn't trigger a data refresh of the underlying dataset. 
 
 ## Manage subscriptions
-Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the users assigned the *Admin* role. Admins in the workspace can view, edit, and take over all subscriptions inside the workspace. The Fabric admin can view subscriptions, view logs, and turn certain subscription features on and off.
+Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the users assigned the *Admin* role. Admins in the workspace can edit and take over all subscriptions inside the workspace. The Fabric admin can view logs, and turn certain subscription features on and off.
 
 # [Creator](#tab/creator)
 
@@ -226,33 +254,7 @@ See [Operations available in the audit and activity logs](../admin/service-adm
 
 ---
    
-## Subscribe others 
 
-To create a subscription that includes others, in addition to the [requirements necessary to create your own subscriptions](#requirements), you also need:
-
-- A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
-
-- To be part of the organization. [B2B guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others only themselves. For more information, read [B2B guest users can set up and be subscribed to email subscriptions](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
-
-- If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can still subscribe others. However, they must also have a Power BI Pro or Premium Per User (PPU) license. 
-
-    :::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
-
-### Use group email aliases 
-When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../enterprise/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
-
-|Group type      |Supported in email subscriptions  |
-|---------|---------|
-|[Microsoft 365 groups](/microsoft-365/admin/create-groups/office-365-groups)     |      Yes   |
-|[Distribution groups](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)    |    Yes     |
-|[Dynamic distribution groups](/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)     |      Yes   |
-|[Security groups](/microsoft-365/admin/email/create-edit-or-delete-a-security-group)     |    No     |
-|[Mail-enabled security groups](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide#microsoft-365-groups&preserve-view=true)    |     Yes    |
-
-There are different ways of creating a Microsoft 365 group. For example, you can create a group in Outlook, a distribution group in Teams, or a mail-enabled security group. The Microsoft 365 distribution group for Teams doesn't work for mail enablement, so can't be used for direct sharing and email subscriptions.
-
-> [!NOTE]
-> Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and don't support subscribing group aliases.  
 
 ## Subscriptions for users outside your organization
 
