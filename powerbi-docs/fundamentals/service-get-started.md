@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 07/06/2023
+ms.date: 07/07/2023
 #customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 LocalizationGroup: Get started
 ---
@@ -16,18 +16,20 @@ LocalizationGroup: Get started
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-This tutorial is an introduction to some of the features of the *Power BI service*. In this tutorial, you connect to data, create a report and a dashboard, and ask questions of your data. You can do many more tasks in the Power BI service. This tutorial is just to get you started. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md).
+This tutorial is an introduction to some of the features of the *Power BI service*. In this tutorial, you connect to data, create a report and a dashboard, and ask questions about your data. You can do many more tasks in the Power BI service. This tutorial is just to get you started. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md).
 
 Are you a report *reader* rather than a creator? [Getting around in the Power BI service](../consumer/end-user-experience.md) is a good starting place for you.
 
-:::image type="content" source="media/service-get-started/power-bi-service-rearranged-dashboard.png" alt-text="Screenshot that shows the dashboard for the Financial Sample dataset.":::
+Here's an example of a Power BI dashboard you can create in this tutorial:
 
-In this tutorial, you complete the following steps:
+:::image type="content" source="media/service-get-started/dashboard.png" alt-text="Screenshot that shows the dashboard for the Financial Sample dataset." border="false":::
+
+In this tutorial, you complete the following tasks:
 
 > [!div class="checklist"]
 > * Sign in to your Power BI online account, or sign up, if you don't have an account yet.
 > * Open the Power BI service.
-> * Get some data and open it in report view.
+> * Add data and open it in report view.
 > * Use that data to create visualizations and save it as a report.
 > * Create a dashboard by pinning tiles from the report.
 > * Add other visualizations to your dashboard by using the Q&A natural-language tool.
@@ -103,7 +105,7 @@ We can start by adding a column chart to the report in the editor to build a vis
 
 1. In the **Data** pane, select the arrow next to the **financials** heading to show the data items.
 
-   Some data items have a sigma symbol ( &Sigma; ) next to the name. Power BI displays the sigma to identify data that has numeric values.
+   Some data items have a sigma symbol (&Sigma;) next to the name. Power BI displays the sigma to identify data that has numeric values.
 
    :::image type="content" source="media/service-get-started/data-pane-sigma-symbol.png" alt-text="Screenshot that shows items in the Data pane with a sigma symbol to indicate the data has numeric values.":::
 
@@ -161,77 +163,87 @@ We can start by adding a column chart to the report in the editor to build a vis
 
    You can select **Edit** to return to Editing view and continue to explore and pin tiles.
 
+## Step 3: Explore visualizations with Q&A
 
+For a quick exploration of your data, try asking a question in the Q&A question box. Q&A lets you ask natural-language queries about your data.
 
+In the Power BI service, you can find the Q&A question box in two places.
 
-## Step 3: Explore with Q&A
+- On a dashboard, the **Ask a question about your data** Q&A box is at the top of the tile view:
 
-For a quick exploration of your data, try asking a question in the Q&A question box. Q&A lets you ask natural-language queries about your data. In a dashboard, the Q&A box is at the top (**Ask a question about your data**) under the menu bar. In a report, it's in the top menu bar (**Ask a question**).
+   :::image type="content" source="media/service-get-started/dashboard-qna-box.png" alt-text="Screenshot that shows the Q&A question box in the dashboard tile view.":::
 
-1. To go back to the dashboard, select **My workspace** in the black **Power BI** header bar.
+- In the Report editor, the **Ask a question** Q&A box is in the top menu bar:
 
-   :::image type="content" source="media/service-get-started/power-bi-service-go-my-workspace.png" alt-text="Screenshot of Go back to My workspace.":::
+   :::image type="content" source="media/service-get-started/report-editor-qna-box.png" alt-text="Screenshot that shows the Q&A question box in the Report editor menu bar.":::
 
-1. In **My workspace**, select your dashboard.
+When you select the Q&A box, Power BI opens an extended view to help you ask questions and find answers.
 
-   :::image type="content" source="media/service-get-started/power-bi-service-dashboard-tab.png" alt-text="Screenshot of select your dashboard.":::
+Let's try out the Q&A experience for a dashboard.
 
-1. Select **Ask a question about your data**. Q&A automatically offers several suggestions. 
+1. In the Power BI service, select **My workspace**, and then select your dashboard for the Financial Sample.
 
-   :::image type="content" source="media/service-get-started/power-bi-service-new-qanda.png" alt-text="Screenshot of Q&A canvas.":::
+   :::image type="content" source="media/service-get-started/open-my-workspace-dashboard.png" alt-text="Screenshot that shows how to return to My workspace and open the Financial Sample dashboard." border="false":::
 
-1. Some suggestions return a single value. For example, select **what is the average sale**.
+1. At the top of the tile view, select **Ask a question about your data**. The view expands and Q&A offers several suggestions. 
 
-   Q&A searches for an answer and presents it in the form of a *card* visualization.
+   :::image type="content" source="media/service-get-started/dashboard-qna-expand-view.png" alt-text="Screenshot that shows the expanded view of Q&A with suggestions.":::
 
-1. Select **Pin visual** and pin this visualization to the Financial Sample dashboard.
+   You can select a suggestion and see the results, or enter your own question in the Q&A box.
 
-   :::image type="content" source="media/service-get-started/power-bi-qna-pin-tile.png" alt-text="Screenshot of pinning the visual.":::
+1. In the Q&A box, enter the question **what is the average sale**. As you type, Q&A tries to pattern match your text entry for recognized questions.
 
-1. Go back to Q&A and type *total profit by country*. 
+   :::image type="content" source="media/service-get-started/dashboard-qna-ask-question.png" alt-text="Screenshot that shows how Q&A tries to pattern match your text for recognized questions." border="false":::
 
-   :::image type="content" source="media/service-get-started/power-bi-qna-total-profit-country-region.png" alt-text="Screenshot of total profit by country/region.":::
+   Q&A searches for an answer and displays the answer as a *card* visualization.
 
-1. Pin the map to the Financial Sample dashboard, too.
+1. At the top right, select **Pin visual** and pin the visualization to the Financial Sample dashboard.
 
-1. On the dashboard, select the pinned map. See how it opens Q&A again?
+   :::image type="content" source="media/service-get-started/dashboard-qna-pin-average-sale.png" alt-text="Screenshot that shows how to pin the Q&A answer visualization to a dashboard." border="false":::
 
-1. Place the cursor after *by country* in the Q&A box and type *as bar*. Power BI creates a bar chart with the results.
+1. Try another question in the Q&A box. Enter **total profit by country**. 
 
-   :::image type="content" source="media/service-get-started/power-bi-qna-profit-country-region-bar.png" alt-text="Screenshot of bar chart visualization.":::
+   :::image type="content" source="media/service-get-started/dashboard-qna-country-profit.png" alt-text="Screenshot of the Q&A map visualization of the Financial Sample data for total profit by country and region." border="false":::
 
-1. Pin the bar chart to your Financial Sample dashboard, too.
+1. Pin the country/region map visualization to the Financial Sample dashboard.
 
-1. Select **Exit Q&A** to return to your dashboard, where you see the new tiles you created. 
+1. In the **Pin success** pop-up dialog, select **Go to dashboard** to view the newly pinned tiles on your dashboard.
 
-   Even though you changed the map to a bar chart in Q&A, the tile remained a map because the tile was a map when you pinned it. 
+1. On the dashboard, select the pinned country/region map. Notice how the visualization opens in Q&A.
 
-   :::image type="content" source="media/service-get-started/power-bi-service-dashboard-qna.png" alt-text="Screenshot of dashboard with Q&A visuals pinned.":::
+1. Place the cursor after **by country** in the Q&A box and enter **as bar**. Power BI creates a bar chart with the results.
 
-## Step 4: Reposition tiles
+   :::image type="content" source="media/service-get-started/dashboard-qna-country-profit-bar.png" alt-text="Screenshot that shows the Q&A bar chart visualization for the Financial Sample country and region data." border="false":::
+
+1. Pin the bar chart to your Financial Sample dashboard.
+
+1. At the top left, select **Exit Q&A** to return to your dashboard.
+
+You can see the three newly pinned tiles on your dashboard. Even though you changed the map visualization to a bar chart in Q&A, the tile remained a map because the tile was a map when you pinned it. As we described earlier, multiple tiles allow you to have more than one visualization of the same data on your dashboard.
+
+:::image type="content" source="media/service-get-started/dashboard-qna-tiles.png" alt-text="Screenshot of the Financial Sample dashboard with pinned Q&A visualization tiles." border="false":::
+
+## Step 4: Reposition tiles on the dashboard
 
 We can rearrange the tiles to make better use of the dashboard space.
 
-1. Drag the lower-right corner of the *Gross Sales* line chart tile upward, until it snaps at the same height as the *Average of Sales* tile, then release it.
+1. Drag the lower-right corner of the *Gross Sales* line chart tile upward, until the tile snaps at the same height as the *Average of Sales* tile, then release the mouse.
 
-   :::image type="content" source="media/service-get-started/power-bi-service-resize-tile.png" alt-text="Screenshot of resizing the tile.":::
+   :::image type="content" source="media/service-get-started/dashboard-resize-tile.png" alt-text="Screenshot that shows how to resize a tile on the dashboard.":::
 
    Now the two tiles are the same height.
 
-1. Select **More options (...)** for the Average of Sales tile > **Edit details**. 
+1. Select **More options (...)** for the *Average of Sales* tile and select **Edit details**. 
 
-   :::image type="content" source="media/service-get-started/power-bi-tile-edit-details.png" alt-text="Screenshot of More options menu for a tile.":::
+   :::image type="content" source="media/service-get-started/dashboard-tile-edit-details.png" alt-text="Screenshot that shows how to open the details for a tile on the dashboard.":::
 
-1. In the **Title** box, type *Sales Average* > **Apply**.
+1. In the **Tile details** dialog, in the **Title** box, enter **Sales Average**. Select **Apply**.
 
-   :::image type="content" source="media/service-get-started/power-bi-tile-details-dialog.png" alt-text="Screenshot of Edit details dialog box.":::
+   :::image type="content" source="media/service-get-started/edit-tile-details.png" alt-text="Screenshot that shows how to edit the details for a tile on the dashboard." border="false":::
 
-1. Rearrange the other visuals to fit together.
+1. Finally, rearrange the other visuals to make better use of the space on the dashboard. Here's an example:
 
-   That looks better.
-
-   :::image type="content" source="media/service-get-started/power-bi-service-rearranged-dashboard.png" alt-text="Screenshot of rearranged dashboard.":::
-
+   :::image type="content" source="media/service-get-started/dashboard.png" alt-text="Screenshot that shows the tiles rearranged on the dashboard to make better use of the space." border="false":::
 
 ## Clean up resources
 
