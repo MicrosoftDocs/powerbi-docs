@@ -103,7 +103,7 @@ We can start by adding a column chart to the report in the editor to build a vis
 
 1. In the **Data** pane, select the arrow next to the **financials** heading to show the data items.
 
-   Notice that some data items have a sigma symbol (&Sigma;) next to the name. Power BI displays the sigma to identify data items that have numeric values.
+   Some data items have a sigma symbol ( &Sigma; ) next to the name. Power BI displays the sigma to identify data that has numeric values.
 
    :::image type="content" source="media/service-get-started/data-pane-sigma-symbol.png" alt-text="Screenshot that shows items in the Data pane with a sigma symbol to indicate the data has numeric values.":::
 
@@ -130,7 +130,7 @@ We can start by adding a column chart to the report in the editor to build a vis
    
    - Enter a name for the report, such as **Financial Sample report**, and select **Save**.
 
-   Power BI saves the report to the selected location, where the default is **My workspace**. Power BI shows the report in Reading view.
+   Power BI saves the report to the selected location. The default is **My workspace**. Power BI shows the report in Reading view.
 
 1. Position the mouse over the visualization and select the **Pin** icon again. The **Pin to dashboard** pop-up dialog opens.
 
@@ -140,11 +140,11 @@ We can start by adding a column chart to the report in the editor to build a vis
   
    Power BI displays a message dialog after the service adds the visualization to the dashboard. The dialog includes an option to create an optimized layout of the dashboard for your mobile device.
 
-1. On the message dialog, select **Go to dashboard**. Power BI displays your new dashboard. The line chart is pinned on the dashboard as a *tile*.
+1. On the message dialog, select **Go to dashboard**. 
 
    :::image type="content" source="media/service-get-started/open-new-dashboard.png" alt-text="Screenshot of the Pinned to dashboard dialog with the option to go to the new dashboard." border="false":::
 
-   After you pin a visualization, it's stored on the dashboard. The data in the visualization stays up-to-date so you can track the latest value at a glance.
+   After you pin a visualization, it's pinned on the dashboard as a *tile*. The data in the visualization stays up-to-date so you can track the latest value at a glance.
 
    :::image type="content" source="media/service-get-started/dashboard-pin-tile-line-chart.png" alt-text="Screenshot that shows the dashboard with a pinned visualization tile." border="false":::
 
@@ -247,13 +247,12 @@ When you delete a dataset, the Power BI service also deletes all reports and das
 
    :::image type="content" source="media/service-get-started/delete-dataset.png" alt-text="Screenshot that shows how to delete a dataset in My workspace.":::
 
-   Power BI displays a warning message:
-   > _All reports and dashboard tiles containing data from this dataset will also be deleted_.
+   Power BI displays a warning message: _All reports and dashboard tiles containing data from this dataset will also be deleted_.
 
 1. Select **Delete**.
 
 ## Next steps
 
-- [Quickly create a report in the Power BI service](../create-reports/service-quick-create-report.md) by pasting data.
-- Learn all about [Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
-- Become a [Power BI data analyst](/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm).
+- [Create quick reports](../create-reports/service-quick-create-report.md) in the Power BI service.
+- Learn all about [Microsoft Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
+- Become a [Microsoft Certified: Power BI Data Analyst Associate](/certifications/power-bi-data-analyst-associate/).
