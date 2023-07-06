@@ -384,8 +384,9 @@ private async Task<ExportedFile> ExportPowerBIReport(
 * Exported reports can't exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels aren't supported.
 * The number of exports (single visuals or report pages) that can be included in a single exported report is 50 (not including exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
-* [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported.
+* [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported for Power BI report export to file.
 * Exporting a Power BI report to file using the `exportToFile` API, isn't supported for **Premium Per User (PPU)**.
+* The `exportToFile` API will export the report with default value if used without bookmarks or reportLevelFilters.
 * The Power BI visuals listed below aren't supported. When you export a report containing these visuals, the parts of the report that contain these visuals won't render, and will display an error symbol.
   * Uncertified Power BI custom visuals
   * R visuals
