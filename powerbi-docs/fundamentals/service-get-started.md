@@ -58,14 +58,14 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
 
 1. Select **New** > **Dataset** to initiate the import process. The **Add data to start building a report** page opens.
 
-   :::image type="content" source="media/service-get-started/new-dataset.png" alt-text="Screenshot that shows how to create a new dataset to initiate the import process." lightbox="media/service-get-started/new-dataset.png" border="false":::
+   :::image type="content" source="media/service-get-started/new-dataset.png" alt-text="Screenshot that shows how to create a new dataset to initiate the import process." border="false":::
 
    > [!NOTE]
    > If you select **Upload** instead of **New**, the Power BI service uploads the entire Excel workbook. You can then open and edit the workbook in Excel Online.
 
 1. On the **Add data to start building a report** page, select **Excel**.
 
-   :::image type="content" source="media/service-get-started/build-excel-report.png" alt-text="Screenshot that shows how to build a report from an Excel dataset." lightbox="media/service-get-started/build-excel-report.png" border="false":::
+   :::image type="content" source="media/service-get-started/build-excel-report.png" alt-text="Screenshot that shows how to build a report from an Excel dataset." border="false":::
 
 1. On the **Select a file** dialog, browse to the location where you saved the Excel file on your computer.
 
@@ -73,7 +73,7 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
 
    The Power BI service imports the sample data from the Excel file as a dataset and opens the Financial Sample page.
    
-   :::image type="content" source="media/service-get-started/financial-sample-dataset.png" alt-text="Screenshot that shows the imported Financial Sample dataset page." lightbox="media/service-get-started/financial-sample-dataset.png" border="false":::
+   :::image type="content" source="media/service-get-started/financial-sample-dataset.png" alt-text="Screenshot that shows the imported Financial Sample dataset page." border="false":::
    
    You can then use the sample dataset to create reports and dashboards. 
 
@@ -83,7 +83,7 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
 
 The Power BI service opens the new report in **My workspace**. The report canvas is blank and shows the **Filters**, **Visualizations**, and **Data** panes.
 
-:::image type="content" source="media/service-get-started/blank-report-canvas.png" alt-text="Screenshot that shows a blank report canvas in My workspace with the Filters, Visualizations, and Data panes open." lightbox="media/service-get-started/blank-report-canvas.png" border="false":::
+:::image type="content" source="media/service-get-started/blank-report-canvas.png" alt-text="Screenshot that shows a blank report canvas in My workspace with the Filters, Visualizations, and Data panes open." border="false":::
 
 ### Switch between report views
 
@@ -140,7 +140,7 @@ We can start by adding a column chart to the report in the editor to build a vis
 
    :::image type="content" source="media/service-get-started/save-dashboard.png" alt-text="Screenshot that shows how to save a new dashboard so you can pin an item." border="false":::
   
-   Power BI displays a message dialog after the service adds the visualization to the dashboard. The dialog includes an option to create an optimized layout of the dashboard for your mobile device.
+   Power BI displays a success message after the service adds the visualization to the dashboard. The success dialog includes an option to create an optimized layout of the dashboard for your mobile device.
 
 1. On the message dialog, select **Go to dashboard**. 
 
@@ -207,7 +207,7 @@ Let's try out the Q&A experience for a dashboard.
 
 1. Pin the country/region map visualization to the Financial Sample dashboard.
 
-1. In the **Pin success** pop-up dialog, select **Go to dashboard** to view the newly pinned tiles on your dashboard.
+1. In the success dialog, select **Go to dashboard** to view the newly pinned tiles on your dashboard.
 
 1. On the dashboard, select the pinned country/region map. Notice how the visualization opens in Q&A.
 
