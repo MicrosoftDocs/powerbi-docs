@@ -52,9 +52,9 @@ Assign data specific data types in Excel to improve your Power BI experience. Po
 
 ## Import or upload Excel data
 
-There are two ways to explore Excel data in Power BI: upload or import. When you upload your workbook, it appears in Power BI just like it would in Excel Online. But you also have some great features to help you pin elements from your worksheets to your dashboards. When you import your data, Power BI imports any supported data in tables and any data model into a new Power BI dataset.
+There are two ways to explore Excel data in Power BI: upload and import. When you upload your workbook, it appears in Power BI just like it would in Excel Online. But you also have some great features to help you pin elements from your worksheets to your dashboards. When you import your data, Power BI imports any supported data in tables and any data model into a new Power BI dataset.
 
-## Upload to Power BI
+### Upload to Power BI
 
 You can use the **Upload** button to upload files to the Power BI service. In the workspace where you want to add the file, select **Upload** at the top of the page. In the drop-down list, select:
 
@@ -84,11 +84,9 @@ If you don't have a subscription, the **OneDrive for Business** and **SharePoint
 
 :::image type="content" source="media/service-excel-workbook-files/excel-files-new-03.png" alt-text="Screenshot that shows the unavailable options.":::
 
-If you want to import data from an Excel file into a Power BI dataset, follow the procedure described in [Import Excel data into Power BI](#import-excel-data-into-power-bi).
-
 You can't use **Upload** to get files from personal OneDrive accounts, but you can upload files from your computer.
 
-## Import Excel data into Power BI
+### Import Excel data into Power BI
 
 To import Excel data into Power BI, in your workspace, select **New** > **Dataset** > **Excel**, and then find the file.
 
@@ -109,7 +107,7 @@ You can continue editing your workbook. When you save your changes, Power BI syn
 |     |Automatically for pinned tiles when the cache refreshes, if the dashboard is already open.|
 
 > [!NOTE]
-> Pinned report pages don't have the automatic refresh feature.
+> Pinned report pages don't support the automatic refresh feature.
 
 You should import your data if you used **Get & Transform Data** or **Power Pivot** to load data into a data model. 
 
