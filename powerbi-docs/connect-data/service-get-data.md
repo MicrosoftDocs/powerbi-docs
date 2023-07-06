@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 07/07/2023
+ms.date: 07/10/2023
 LocalizationGroup: Get started
 ---
 
@@ -45,13 +45,29 @@ To create content, you can import or create files or databases.
 
 ### Files
 
-On the **My worksapce** tab, select **Upload** to upload local files or files from SharePoint or OneDrive for Business:
+To import files:
 
-:::image type="content" source="media/service-get-data/upload.png" alt-text="Screenshot that shows the Upload list.":::
+1. Go to the workspace to which you want to import the files. Select **New** and then **Dataset**:
+
+   :::image type="content" source="media/service-get-data/new-menu.png" alt-text="Screenshot that shows the New menu.":::
+   
+1. Select **Excel** or **CSV**. You can also paste or manually enter data.
+
+   :::image type="content" source="media/service-get-data/add-data.png" alt-text="Screenshot that shows the choices under Add data to start building a report.":::
+
+When you import Excel or CSV files or manually create a workbook, Power BI imports any supported data in tables and any data model into a new Power BI dataset.
+
+You can also upload files. Use this method for *.pbix* files. When you upload Excel files from OneDrive for Business or SharePoint, Power BI creates a connection to the file. When you add local file, Power BI adds a copy of the file to the workspace. 
+
+To upload files, on the **My worksapce** tab, select **Upload** to upload local files or files from SharePoint or OneDrive for Business:
+
+:::image type="content" source="media/service-get-data/upload.png" alt-text="Screenshot that shows the Upload list."::: 
+
+Following are some types of files that you can add: 
 
 - **Excel** workbooks, or *.xlsx* and *.xlsm* files, can include different data types. For example, workbooks can include data that you enter into worksheets yourself, or data that you query and load from external data sources by using Power Query. Power Query is available via **Get & Transform Data** on the **Data** tab of Excel, or via **Get External Data** in Power Pivot. You can import data from tables in worksheets or import data from a data model. For more information, see [Get data from files for Power BI](service-get-data-from-files.md).
 
-- **Power BI Desktop**, or *.pbix* report files, query and load data from external data sources to create reports. In Power BI Desktop, you can extend your data model by using measures and relationships, and publish the *.pbix* files to the Power BI service. Power BI Desktop is intended for advanced users who have a thoruough understanding of their data sources, data query and transformation, and data modeling. For more information, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
+- **Power BI Desktop**, or *.pbix* report files, query and load data from external data sources to create reports. In Power BI Desktop, you can extend your data model by using measures and relationships, and publish the *.pbix* files to the Power BI service. Power BI Desktop is intended for advanced users who have a thoruough understanding of their data sources, data querying and transformation, and data modeling. For more information, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
 
 - **Comma-separated value**, or *.csv* files, are simple text files with rows of data that contain values separated by commas. For example, a *.csv* file that contains name and address data might have many rows, each with values for first name, last name, street address, city, and state. You can't import data into a *.csv* file, but many applications, like Excel, can save simple table data as *.csv* files.
 
@@ -89,7 +105,7 @@ So even if you can't connect to your data source directly from the Power BI serv
 
 You might see the terms *dataset* and *data source* used synonymously. But datasets and data sources are two different things, although they're related.
 
-Power BI creates a dataset automatically when you connect to data from a file, template app, or live data source. A dataset contains information about the data source and data source credentials. The dataset also often includes a subset of data copied from the data source. When you create visualizations in reports and dashboards, you often look at data from the dataset.
+Power BI creates a dataset automatically when you connect to and import data from a file, template app, or live data source. A dataset contains information about the data source and data source credentials. The dataset also often includes a subset of data copied from the data source. When you create visualizations in reports and dashboards, you often look at data from the dataset.
 
 The data in a dataset comes from a data source. For example, data could come from the following data sources:
 
@@ -99,7 +115,7 @@ The data in a dataset comes from a data source. For example, data could come fro
 
 ## Data refresh
 
-If you save your file on a local drive or a drive in your organization, you might need a Power BI gateway to be able to refresh the dataset in Power BI. The computer that stores the file must be running during the refresh. You can also reimport your file, or use **Publish** from Excel or Power BI Desktop, but those processes aren't automated.
+If you save your file on a local drive or a drive in your organization, you might need an on-premises gateway to be able to refresh the dataset in Power BI. The computer that stores the file must be running during the refresh. You can also reimport your file, or use **Publish** from Excel or Power BI Desktop, but those processes aren't automated.
 
 If you save your files on OneDrive for work or school or on a SharePoint team site, your dataset, reports, and dashboard are always up to date. Because both OneDrive and Power BI are in the cloud, Power BI can connect directly to your files or import the files into Power BI. Power BI connects about once every hour and checks for updates. The dataset and any visualizations refresh automatically if there are any updates.
 
