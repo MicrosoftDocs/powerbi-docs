@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 07/03/2023
+ms.date: 07/06/2023
 #customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 LocalizationGroup: Get started
 ---
@@ -40,7 +40,7 @@ You need a Power BI Pro or Premium Per User (PPU) license to create content in P
 
 :::image type="content" source="media/service-get-started/power-bi-pro.png" alt-text="Screenshot that shows how to choose the type of license to purchase.":::
 
-## Step 1: Get data
+## Step 1: Add data to create a report
 
 Often, when you want to create a Power BI report, you start in Power BI Desktop. Power BI Desktop offers more power. You can transform, shape, and model data, before you start designing reports.
 
@@ -52,7 +52,7 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
 
 1. [Download the Excel file](https://go.microsoft.com/fwlink/?LinkID=521962) that has the Financial Sample data.
 
-1. Select **My workspace** in the left navigation.
+1. Select **My workspace** in the navigation pane.
 
 1. Select **New** > **Dataset** to initiate the import process. The **Add data to start building a report** page opens.
 
@@ -79,11 +79,11 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
 
    :::image type="content" source="media/service-get-started/create-report-from-scratch.png" alt-text="Screenshot that shows how to create a report from scratch.":::
 
-The Power BI service opens the new report in **My workspace**. The report canvas is blank and shows the **Filters**, **Visualizations**, and **Fields** panes.
+The Power BI service opens the new report in **My workspace**. The report canvas is blank and shows the **Filters**, **Visualizations**, and **Data** panes.
 
-:::image type="content" source="media/service-get-started/blank-report-canvas.png" alt-text="Screenshot that shows a blank report canvas in My workspace." lightbox="media/service-get-started/blank-report-canvas.png" border="false":::
+:::image type="content" source="media/service-get-started/blank-report-canvas.png" alt-text="Screenshot that shows a blank report canvas in My workspace with the Filters, Visualizations, and Data panes open." lightbox="media/service-get-started/blank-report-canvas.png" border="false":::
 
-### Switch between views
+### Switch between report views
 
 The new report opens in **Editing** view. To view your report in progress, you can switch to the **Reading** view at the top of the page: 
 
@@ -91,58 +91,78 @@ The new report opens in **Editing** view. To view your report in progress, you c
 
 In the Editing view, you can modify reports because you're the *owner* and *creator* of the report. When you share your report with colleagues, often they can only interact with the report in Reading view. Other users are *consumers* of reports in your **My workspace**.
 
+When you're ready to continue to develop your report, select **Edit**:
+
+:::image type="content" source="media/service-get-started/report-editing-view.png" alt-text="Screenshot that shows how to switch to the Editing view of a report canvas.":::
+
 ## Step 2: Create a chart in a report
 
-Now that you've connected to data, start exploring. When you've found something interesting, you can save it on the report canvas. Then you can pin it to a dashboard to monitor it and see how it changes over time. But first things first
+After you connect data to build a report, you're ready to start exploring. When you find an interesting item, you can save it on the report canvas. You can pin the item to a dashboard to monitor it for changes over time.
 
-1. In the report editor, start in the **Fields** pane on the right side of the page to build a visualization. Select the  **Gross Sales** field, then the **Date** field.
+We can start by adding a column chart to the report in the editor to build a visualization of the data.
 
-   :::image type="content" source="media/service-get-started/power-bi-service-fields-pane-selected.png" alt-text="Screenshot of Fields list.":::
+1. In the **Data** pane, select the arrow next to the **financials** heading to show the data items.
 
-   Power BI analyzes the data and creates a column chart visualization. 
+   Notice that some data items have a sigma symbol (&Sigma;) next to the name. Power BI displays the sigma to identify data items that have numeric values.
+
+   :::image type="content" source="media/service-get-started/data-pane-sigma-symbol.png" alt-text="Screenshot that shows items in the Data pane with a sigma symbol to indicate the data has numeric values.":::
+
+1. Under **financials**, select the **Gross Sales** data item, and then select the **Date** item. 
+
+   :::image type="content" source="media/service-get-started/data-pane-selected-items.png" alt-text="Screenshot that shows the Gross Sales and Date data items selected in the Data pane.":::
+
+   Power BI analyzes the selected data and creates a column chart visualization. 
+
+   :::image type="content" source="media/service-get-started/visualizations-column-chart.png" alt-text="Screenshot that shows a column chart visualization for the selected data items.":::
 
    > [!NOTE]
-   > If you selected the **Date** field first instead of **Gross Sales**, you see a table. No worries! We're going to change the visualization in the next step.
+   > If you select the **Date** item before you select the **Gross Sales** item, Power BI creates a table rather than a column chart. If you selected the data items in this order, it's not a problem. We're going to change the visualization of the data in the next step.
 
-   Some fields have sigma symbols next to them because Power BI detected that they contain numeric values.
+1. Now let's try a different display of the selected data. Line charts are good visuals for showing changes in values over time. In the **Visualizations** pane, select **Line chart**.
 
-   :::image type="content" source="media/service-get-started/power-bi-sigma-fields.png" alt-text="Fields with sigma symbols.":::
+   :::image type="content" source="media/service-get-started/visualizations-select-line-chart.png" alt-text="Screenshot that shows how to select the line chart display in the Visualizations pane.":::
 
-1. Let's switch to a different way of displaying this data. Line charts are good visuals for displaying values over time. Select the **Line chart** icon from the **Visualizations** pane.
+1. The line chart looks interesting, so let's *pin* the visualization to a dashboard. Position the mouse on the visualization and select the **Pin** icon.
 
-   :::image type="content" source="media/service-get-started/power-bi-service-select-line-chart.png" alt-text="Screenshot of Report editor with line chart selected.":::
+   :::image type="content" source="media/service-get-started/visualizations-pin-line-chart.png" alt-text="Screenshot that shows how to pin a visualization to a dashboard.":::
 
-1. This chart looks interesting, so let's *pin* it to a dashboard. Move the mouse over the visualization and select the pin icon that appears.
+   When the report is new, you're prompted to save the report before you can pin the visualization to a dashboard.
+   
+   - Enter a name for the report, such as **Financial Sample report**, and select **Save**.
 
-   :::image type="content" source="media/service-get-started/power-bi-service-pin-visual.png" alt-text="Screenshot of Pin icon.":::
+   Power BI saves the report to the selected location, where the default is **My workspace**. Power BI shows the report in Reading view.
 
-1. Because this report is new, you're prompted to save it before you can pin a visualization to a dashboard. Give your report a name (for example, *Financial Sample report*), then **Save**.
+1. Position the mouse over the visualization and select the **Pin** icon again. The **Pin to dashboard** pop-up dialog opens.
 
-   Now you're looking at the report in Reading view.
+1. In the pop-up dialog, select **New dashboard**, and enter a name for the dashboard, such as **Financial Sample dashboard**. Select **Pin**.
 
-1. Select the **Pin** icon again.
-
-1. Select **New dashboard** and name it *Financial Sample dashboard*, for example. 
-
-   :::image type="content" source="media/service-get-started/power-bi-pin.png" alt-text="Screenshot of Name the dashboard.":::
+   :::image type="content" source="media/service-get-started/save-dashboard.png" alt-text="Screenshot that shows how to save a new dashboard so you can pin an item." border="false":::
   
-   A success message (near the top-right corner) lets you know the visualization was added as a tile to your dashboard.
+   Power BI displays a message dialog after the service adds the visualization to the dashboard. The dialog includes an option to create an optimized layout of the dashboard for your mobile device.
 
-1. Select **Go to dashboard** to see your new dashboard with the line chart that you pinned to it as a tile.
+1. On the message dialog, select **Go to dashboard**. Power BI displays your new dashboard. The line chart is pinned on the dashboard as a *tile*.
 
-   :::image type="content" source="media/service-get-started/power-bi-pin-success.png" alt-text="Screenshot of Pinned to dashboard dialog.":::
+   :::image type="content" source="media/service-get-started/open-new-dashboard.png" alt-text="Screenshot of the Pinned to dashboard dialog with the option to go to the new dashboard." border="false":::
 
-   Now that you've pinned this visualization, it's stored on your dashboard. The data stays up-to-date so you can track the latest value at a glance. However, if you change the visualization type in the report, the visualization on the dashboard doesn't change.
+   After you pin a visualization, it's stored on the dashboard. The data in the visualization stays up-to-date so you can track the latest value at a glance.
 
-   :::image type="content" source="media/service-get-started/power-bi-service-dashboard-tile.png" alt-text="Screenshot of dashboard with visualization pinned.":::
+   :::image type="content" source="media/service-get-started/dashboard-pin-tile-line-chart.png" alt-text="Screenshot that shows the dashboard with a pinned visualization tile." border="false":::
 
-1. Select the new tile on your dashboard. Power BI returns you to the report in Reading view.
+   > [!NOTE]
+   > After you pin a visualization, if you change the visualization type in the report, the pinned visualization on the dashboard **doesn't** change. To see the new visualization, pin it to the dashboard to create another tile. Multiple tiles allows you to have more than one visualization of the same data on your dashboard.
 
-1. To switch back to Editing view, select **More options** (...) in the menu bar > **Edit**.
+1. Now select the tile on the dashboard:
 
-   :::image type="content" source="media/service-get-started/power-bi-service-edit-report.png" alt-text="Screenshot of select Edit to edit the report.":::
+   :::image type="content" source="media/service-get-started/dashboard-select-tile.png" alt-text="Screenshot that shows a selected tile on the dashboard.":::
 
-   Back in Editing view, you can continue to explore and pin tiles.
+   The Power BI service returns you to the Report editor where you can refine the visualization tile:
+
+   :::image type="content" source="media/service-get-started/report-editor-line-chart.png" alt-text="Screenshot that shows a tile open in the Report editor and the Edit option selected." border="false":::
+
+   You can select **Edit** to return to Editing view and continue to explore and pin tiles.
+
+
+
 
 ## Step 3: Explore with Q&A
 
@@ -212,27 +232,28 @@ We can rearrange the tiles to make better use of the dashboard space.
 
    :::image type="content" source="media/service-get-started/power-bi-service-rearranged-dashboard.png" alt-text="Screenshot of rearranged dashboard.":::
 
+
 ## Clean up resources
 
-Now that you've finished the tutorial, you can delete the dataset, report, and dashboard. 
+After you finish the tutorial, it's a good practice to delete the dataset, report, and dashboard.
 
-1. Select **My workspace** in the black **Power BI** header bar.
-1. Select **More options (...)** next to the Financial Sample dataset > **Delete**.
+When you delete a dataset, the Power BI service also deletes all reports and dashboard tiles that use data from the dataset.
 
-   :::image type="content" source="media/service-get-started/power-bi-service-delete-dataset.png" alt-text="Screenshot of deleting the dataset.":::
+1. In the Power BI service, select **My workspace**.
 
-   You see a warning that **All reports and dashboard tiles containing data from this dataset will also be deleted**.
+1. Locate the Financial Sample **dataset**.
+
+1. Select **More options (...)** > **Delete**.
+
+   :::image type="content" source="media/service-get-started/delete-dataset.png" alt-text="Screenshot that shows how to delete a dataset in My workspace.":::
+
+   Power BI displays a warning message:
+   > _All reports and dashboard tiles containing data from this dataset will also be deleted_.
 
 1. Select **Delete**.
 
 ## Next steps
 
-[Quickly create a report by pasting data into the Power BI service](../create-reports/service-quick-create-report.md)
-
-Explore these training resources for Power BI:
-
-> [!div class="nextstepaction"]
->[Learn Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
-
-> [!div class="nextstepaction"]
-> [Become a Power BI data analyst](/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)
+- [Quickly create a report in the Power BI service](../create-reports/service-quick-create-report.md) by pasting data.
+- Learn all about [Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
+- Become a [Power BI data analyst](/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm).
