@@ -111,7 +111,7 @@ You can continue editing your workbook. When you save your changes, Power BI syn
 > [!NOTE]
 > Pinned report pages don't have the automatic refresh feature.
 
-You should import your data if you used **Get & Transform Data** or **Power Pivot** to load data into a data model. does this apply to local as well? 
+You should import your data if you used **Get & Transform Data** or **Power Pivot** to load data into a data model. 
 
 ## Prepare your workbook for Power BI
 
