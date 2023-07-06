@@ -61,7 +61,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 
 ## Considerations and limitations
 
-These considerations and limitations apply to Power BI Report Sever.
+These considerations and limitations apply to Power BI Report Server.
 
 The following Power BI service features are not supported within Power BI Report Server:
 
