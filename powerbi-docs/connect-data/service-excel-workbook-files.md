@@ -54,7 +54,7 @@ Assign data specific data types in Excel to improve your Power BI experience. Po
 
 There are two ways to explore Excel data in Power BI: upload and import. When you upload your workbook, it appears in Power BI just like it would in Excel Online. But you also have some great features to help you pin elements from your worksheets to your dashboards. When you import your data, Power BI imports any supported data in tables and any data model into a new Power BI dataset.
 
-#one-excel-workbook--two-ways-to-use-it
+<a name="one-excel-workbook--two-ways-to-use-it"></a>
 
 ### Upload to Power BI
 
