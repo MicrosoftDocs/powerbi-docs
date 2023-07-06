@@ -1,13 +1,13 @@
 ---
 title: Get data from Excel workbook files
-description: Learn how to import data from Excel workbook files into Power BI.
+description: Learn how to import or upload data from Excel workbook files into Power BI.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/05/2023
+ms.date: 07/07/2023
 ms.custom: video-l2wy4XgQIu0
 LocalizationGroup: Data from files
 ---
@@ -100,7 +100,9 @@ Select **Browse this device** to add files from the device you're currently usin
 
 When you import Exel data, Power BI imports any supported data in tables and any data model into a new Power BI dataset.
 
-You can continue editing your workbook. When you save your changes, Power BI synchronizes them with the dataset in Power BI, usually within about an hour. You can also select **Publish** to export your changes immediately. Any visualizations in reports and dashboards are updated, too, based on the following refresh triggers:
+You should import your data if you used **Get & Transform Data** or **Power Pivot** to load data into a data model. 
+
+If you upload from OneDrive for Business, when you save changes, Power BI synchronizes them with the dataset in Power BI, usually within about an hour. You can also select **Publish** to export your changes immediately. Any visualizations in reports and dashboards are updated, too, based on the following refresh triggers:
 
 |Report tiles  |Dashboard tiles  |
 |---------|---------|
@@ -110,8 +112,6 @@ You can continue editing your workbook. When you save your changes, Power BI syn
 
 > [!NOTE]
 > Pinned report pages don't support the automatic refresh feature.
-
-You should import your data if you used **Get & Transform Data** or **Power Pivot** to load data into a data model. 
 
 ## Prepare your workbook for Power BI
 
@@ -157,7 +157,7 @@ Using the Excel **Publish to Power BI** feature is effectively the same as using
 
 ## Next steps
 
-- **Explore your data**. After you get data and reports from your file into Power BI, you can select the new dataset to explore the data. When you select the workbook, it opens in Power BI the same as if it were in Excel Online.
+- **Explore your data**. After you upload data and reports from your file into Power BI, you can select the new dataset to explore the data. When you select the workbook, it opens in Power BI the same as if it were in Excel Online.
 
 - **Schedule refresh**. If your Excel workbook connects to external data sources, or if you imported from a local drive, you can set up scheduled refresh to make sure your dataset or report is always up-to-date. In most cases, setting up scheduled refresh is easy to do. For more information, see [Data refresh in Power BI](refresh-data.md).
 
