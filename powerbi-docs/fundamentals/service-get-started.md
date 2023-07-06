@@ -239,7 +239,7 @@ We can rearrange the tiles to make better use of the dashboard space.
 
 1. In the **Tile details** dialog, in the **Title** box, enter **Sales Average**. Select **Apply**.
 
-   :::image type="content" source="media/service-get-started/edit-tile-details.png" alt-text="Screenshot that shows how to edit the details for a tile on the dashboard." border="false":::
+   :::image type="content" source="media/service-get-started/edit-tile-details.png" alt-text="Screenshot that shows how to edit the details for a tile on the dashboard.":::
 
 1. Finally, rearrange the other visuals to make better use of the space on the dashboard. Here's an example:
 
