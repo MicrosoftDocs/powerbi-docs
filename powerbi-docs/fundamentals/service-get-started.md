@@ -20,7 +20,7 @@ This tutorial is an introduction to some of the features of the *Power BI servic
 
 :::image type="content" source="media/service-get-started/dashboard.png" alt-text="Screenshot of an example Power BI dashboard with sample dataset visualizations." border="false":::
 
-In the Power BI service, you can accomplish many different tasks, and this tutorial can help you get started. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md).
+In the Power BI service, you can accomplish many different tasks, and this tutorial can help you get started. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md)?
 
 If you're a report *reader* rather than a creator, check out the [Getting around in the Power BI service](../consumer/end-user-experience.md) tutorial.
 
@@ -67,7 +67,7 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
 
    :::image type="content" source="media/service-get-started/build-excel-report.png" alt-text="Screenshot that shows how to build a report from an Excel dataset." border="false":::
 
-1. On the **Select a file** dialog, browse to the location where you saved the Excel file on your computer.
+1. In the **Select a file** dialog, browse to the location where you saved the Excel file on your computer.
 
 1. Select the file and choose **Import**.
 
@@ -124,7 +124,7 @@ We can start by adding a column chart to the report in the editor to build a vis
 
    :::image type="content" source="media/service-get-started/visualizations-select-line-chart.png" alt-text="Screenshot that shows how to select the line chart display in the Visualizations pane.":::
 
-1. The line chart looks interesting, so let's *pin* the visualization to a dashboard. Position the mouse on the visualization and select the **Pin** icon.
+1. The line chart looks interesting, so let's *pin* the visualization to a dashboard. Select the **Pin** icon on the visualization.
 
    :::image type="content" source="media/service-get-started/visualizations-pin-line-chart.png" alt-text="Screenshot that shows how to pin a visualization to a dashboard.":::
 
@@ -142,7 +142,7 @@ We can start by adding a column chart to the report in the editor to build a vis
   
    Power BI displays a success message after the service adds the visualization to the dashboard. The success dialog includes an option to create an optimized layout of the dashboard for your mobile device.
 
-1. On the message dialog, select **Go to dashboard**. 
+1. In the message dialog, select **Go to dashboard**. 
 
    :::image type="content" source="media/service-get-started/open-new-dashboard.png" alt-text="Screenshot of the Pinned to dashboard dialog with the option to go to the new dashboard." border="false":::
 
@@ -263,7 +263,7 @@ Sometimes changing **Tile details** can improve the dashboard presentation.
 
 ### Rearrange tiles
 
-You can move a tile by selecting the tile and dragging the tile to the new location.
+You can move a tile by selecting the tile and dragging it to a new location.
 
 1. Select the country/region map tile, and drag the tile to the right of the bar chart. 
 
