@@ -182,7 +182,11 @@ If the account you're sign-in to in Power BI Desktop and your local OneDrive or 
 
 ### Syncing files to OneDrive and SharePoint through the file system
 
-When you drag a Power BI file to a OneDrive or SharePoint location in the file system, the file is uploaded to the new location in OneDrive or SharePoint. If you try to open the file before the file has completed syncing to OneDrive or SharePoint, the file acts as a local file. Therefore, when you try to share a link to the file, you're prompted to save the file to OneDrive or SharePoint even though the file is syncing there. When you're prompted to save a file that is already saved, wait until the file has finished syncing and try again. Once the file has finished syncing to the new OneDrive or SharePoint location, you're able to share a link to the file without being prompted to save again.   
+When you drag a Power BI file to a OneDrive or SharePoint location in the file system, the file is uploaded to the new location in OneDrive or SharePoint. If you try to open the file before the file has completed syncing to OneDrive or SharePoint, the file acts as a local file. Therefore, when you try to share a link to the file, you're prompted to save the file to OneDrive or SharePoint even though the file is syncing there. When you're prompted to save a file that is already saved, wait until the file has finished syncing and try again. Once the file has finished syncing to the new OneDrive or SharePoint location, you're able to share a link to the file without being prompted to save again.  
+
+### Unable to open document
+
+If you have signed-in to Power BI on multiple different accounts you will be able to see files in the file menu that each account interacted with.  If you try to open one of the files that belongs to another account and receive an error, sign-in to the account that has access to the file and try again. 
 
 
 
