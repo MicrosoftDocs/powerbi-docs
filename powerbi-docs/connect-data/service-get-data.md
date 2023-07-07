@@ -57,7 +57,7 @@ To import files:
 
 When you import Excel or CSV files or manually create a workbook, Power BI imports any supported data in tables and any data model into a new Power BI dataset.
 
-You can also upload files. Use this method for *.pbix* files. When you upload Excel files from OneDrive for Business or SharePoint, Power BI creates a connection to the file. When you add local file, Power BI adds a copy of the file to the workspace. 
+You can also upload files. Use this method for *.pbix* files. When you upload Excel files from OneDrive for Business or SharePoint, Power BI creates a connection to the file. When you upload local file, Power BI adds a copy of the file to the workspace. 
 
 To upload files, on the **My workspace** tab, select **Upload** to upload local files or files from SharePoint or OneDrive for Business:
 
@@ -85,7 +85,7 @@ For more information, see:
 - [Azure SQL Database with DirectQuery](service-azure-sql-database-with-direct-connect.md)
 - [Azure Synapse Analytics with DirectQuery](service-azure-sql-data-warehouse-with-direct-connect.md)
 
-You can also use Power BI Desktop or Excel to connect to, query, and load data into data models for a variety of databases. You can then import the file into Power BI where a dataset exists. If you configure scheduled refresh, Power BI uses the configuration and connection information from the file to connect directly to the data source. Power BI queries for updates and loads the updates into the dataset. For more information, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
+You can also use Power BI Desktop or Excel to connect to, query, and load data into data models for a variety of other databases. You can then import the file into Power BI where a dataset exists. If you configure scheduled refresh, Power BI uses the configuration and connection information from the file to connect directly to the data source. Power BI queries for updates and loads the updates into the dataset. For more information, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
 
 ### Other data sources
 
@@ -121,9 +121,9 @@ If you save your files on OneDrive for work or school or on a SharePoint team si
 
 Template apps from services also automatically update, once a day in most cases. You can manually refresh these apps, but whether you see updated data depends on the service provider. Updates to template apps from people in your organization depend on the data sources they use and how the app creator configured the refresh.
 
-SQL Database, Azure Synapse Analytics, and Spark in Azure HDInsight are cloud data sources. The Power BI service is also in the cloud, so Power BI can connect to those data sources live by using [DirectQuery](desktop-directquery-about.md). With DirectQuery, Power BI is always in sync, and you don't need to set up a scheduled refresh.
+Azure databases like SQL Database, Azure Synapse Analytics, and Spark in Azure HDInsight are cloud data sources. The Power BI service is also in the cloud, so Power BI can connect to those data sources live by using [DirectQuery](desktop-directquery-about.md). With DirectQuery, Power BI is always in sync, and you don't need to set up a scheduled refresh.
 
-SQL Server Analysis Services is a live connection to Power BI just like an Azure cloud database. The difference is that the database is on a server in your organization. This type of connection requires a Power BI gateway, which your IT department can configure.
+SQL Server Analysis Services is a live connection to Power BI just like an Azure cloud database. The difference is that the database is on a server in your organization. This type of connection requires a on-premises gateway, which your IT department can configure.
 
 Data refresh is an important consideration when you use Power BI. For more information, see [Data refresh in Power BI](refresh-data.md).
 
