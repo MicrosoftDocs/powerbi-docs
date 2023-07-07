@@ -23,8 +23,8 @@ When you publish a report and dataset from Power BI Desktop to the Power BI serv
 
 Be sure that you're using the latest version of Power BI Desktop. Go to one of these locations to download and install the latest version of Power BI Desktop:
 
-- [Microsoft Power BI website](https://powerbi.microsoft.com/downloads/).
-- the [Microsoft Store](https://apps.microsoft.com/store/detail/power-bi-desktop/9NTXR16HNW1T).
+- [Microsoft Power BI website](https://powerbi.microsoft.com/downloads/)
+- The [Microsoft Store](https://apps.microsoft.com/store/detail/power-bi-desktop/9NTXR16HNW1T)
 
 ### Check your firewall and proxy settings
 
