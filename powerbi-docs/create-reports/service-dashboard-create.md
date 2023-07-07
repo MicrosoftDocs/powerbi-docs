@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.custom: video-lJKgWnvl6bQ
-ms.date: 11/23/2022
+ms.date: 07/07/2023
 ---
 # Create a Power BI dashboard from a report
 
@@ -84,7 +84,7 @@ Some report formatting options or themes aren't applied to visuals when you pin 
 - Border, shadow, and background settings are ignored in the pinned tile.
 - For card visuals, the text used for the value is shown in dashboards using the 'DIN' font family, with black text. You can change the text color for all the tiles on a dashboard by [creating a custom dashboard theme](service-dashboard-themes.md).
 - Conditional formatting isn't applied.
-- Button visuals that trigger bookmarks or clearing and applying filters on click will have no action in a dashboard tile.  These actions only make sense within the context of a report.
+- Button visuals that trigger bookmarks or clear or apply filters when you select them have no action in a dashboard tile. These actions only make sense within the context of a report.
 - Visuals will adjust their size to fit the size of the tile. This can result in differences in layout as if the visual had been resized on the report.
 - Because some visualizations use background images, pinning might not work if the background image is too large. Try reducing the image size or using image compression.
 
