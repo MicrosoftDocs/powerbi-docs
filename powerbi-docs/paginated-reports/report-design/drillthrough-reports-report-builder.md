@@ -3,11 +3,12 @@ title: "Drillthrough reports in a Power BI paginated report"
 description: Discover drillthrough reports, which open when you select a link in a Power BI paginated report to get details about an item in an original summary report in Power BI Report Builder.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 04/10/2023
+ms.date: 06/27/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ---
+
 # Drillthrough reports in a paginated report (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
@@ -20,7 +21,7 @@ A drillthrough report is a report that a user opens by clicking a link within an
   
 > [!NOTE]  
 > When you are working in Report Builder, you must be connected to the same workspace as the target report.  
-  
+
  To get started quickly with drillthrough reports, see [Tutorial: Creating Drillthrough and Main Reports &#40;Report Builder and SSRS&#41;](/sql/reporting-services/tutorial-creating-drillthrough-and-main-reports-report-builder). 
 
 ## Parameters in drillthrough reports
@@ -50,11 +51,10 @@ A drillthrough report is a report that a user opens by clicking a link within an
 
 ## Considerations and limitations
 
-- Drillthrough doesn't currently work in the Power BI [paginated report visual](../../visuals/paginated-report-visual.md). This is expected to change in the coming weeks.
 - Drillthrough to a report isn't supported in Report Preview.
-  
 ## Next steps
 
 [Drillthrough, drilldown, subreports, and nested data regions in a paginated report (Power BI Report Builder)](drillthrough-drilldown-subreports-nested-data-regions.md)  
   
   
+

@@ -6,14 +6,15 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.custom: contperf-fy21q1, intro-get-started, fabric
+ms.custom: fabric, intro-get-started
 ms.date: 05/09/2023
 ms.search.form: Create a deployment pipeline, Create deployment pipeline, Introduction to Deployment pipelines
 ---
 
 # Get started with deployment pipelines
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+> [!IMPORTANT]
+> Deployment pipelines is moving to Microsoft Fabric and this article will be deprecated soon. For an updated version of this article go to [Get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines).
 
 This article walks you through the basic settings required for using deployment pipelines in Power BI service. It's recommended to read the [deployment pipelines introduction](deployment-pipelines-overview.md), before you proceed.
 
@@ -24,7 +25,7 @@ You can also complete the [Create and manage a Power BI deployment pipeline](/tr
 
 ## Prerequisites
 
-You'll be able to access the deployment pipelines feature, if the following conditions are met:
+You'll be able to access the deployment pipelines feature if the following conditions are met:
 
 * You have one of the following Premium licenses:
 
@@ -35,13 +36,13 @@ You'll be able to access the deployment pipelines feature, if the following cond
 * You're an admin of a Premium [workspace](../collaborate-share/service-create-the-new-workspaces.md).
 
 >[!NOTE]
-> You'll also be able to see the deployment pipelines button, if you previously created a pipeline, or if a pipeline was shared with you.
+> You'll also be able to see the deployment pipelines button if you previously created a pipeline or if a pipeline was shared with you.
 
 :::image type="content" source="media/deployment-pipelines-get-started/creating-pipeline.png" alt-text="A screenshot of the deployment pipelines landing page.":::
 
 ## Step 1 - Create a deployment pipeline
 
-You can create a pipeline from the deployment pipelines tab, or from a workspace.
+You can create a pipeline from the deployment pipelines tab or from a workspace.
 
 After the pipeline is created, you can share it with other users, edit, or delete it. When you share a pipeline with others, those will be given access to the pipeline and will become [pipeline admins](deployment-pipelines-process.md#permissions). Pipeline access enables users to view, share, edit, and delete the pipeline.
 
@@ -65,7 +66,7 @@ You can create a pipeline from an existing workspace, providing you're the admin
 2. In the *Create a deployment pipeline* dialog box, enter a name and description for the pipeline, and select **Create**.
 
 >[!NOTE]
->If the workspace isn't assigned to your organization's Premium capacity, or to your PPU capacity, you'll get a notification to [assign it to a capacity](../enterprise/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
+>If the workspace isn't assigned to your organization's Premium capacity or to your PPU capacity, you'll get a notification to [assign it to a capacity](../enterprise/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
 
 ## Step 2 - Assign a workspace
 
@@ -78,7 +79,7 @@ Follow the instructions in the link to [assign a workspace to a pipeline](deploy
 
 ## Step 3 - Deploy to an empty stage
 
-When you finished working with content in a pipeline stage, you can deploy it to the next stage. Deploying content to another stage is usually done after you've performed some actions in the pipeline. For example, made development changes to your content in the development stage, or tested your content in the test stage. A typical workflow for moving content from stage to stage, is development to test, and then test to production, but you can deploy in any direction. You can learn more about this process, in the [deploy content to an existing workspace](deployment-pipelines-process.md#deploy-content-to-an-existing-workspace) section.
+When you finish working with content in a pipeline stage, you can deploy it to the next stage. Deploying content to another stage is usually done after you've performed some actions in the pipeline such as making development changes to your content in the development stage or testing your content in the test stage. A typical workflow for moving content from stage to stage is development to test and then test to production, but you can deploy in any direction. You can learn more about this process in the [deploy content to an existing workspace](deployment-pipelines-process.md#deploy-content-to-an-existing-workspace) section.
 
 Deployment pipelines offer three options when it comes to deploying your Power BI content:
 
@@ -92,7 +93,7 @@ After you choose how to deploy your Power BI content, you can [Review your deplo
 
 ## Step 4 - Deploy content from one stage to another
 
-Once you have content in a pipeline stage, you can deploy it to the next stage. Deploying content to another stage is usually done after you've performed some actions in the pipeline. For example, made development changes to your content in the development stage, or tested your content in the test stage. A typical workflow for moving content from stage to stage, is development to test, and then test to production. You can learn more about this process, in the [deploy content to an existing workspace](deployment-pipelines-process.md#deploy-content-to-an-existing-workspace) section.
+Once you have content in a pipeline stage, you can deploy it to the next stage. Deploying content to another stage is usually done after you've performed some actions in the pipeline such as making development changes to your content in the development stage or testing your content in the test stage. A typical workflow for moving content from stage to stage is development to test and then test to production. You can learn more about this process in the [deploy content to an existing workspace](deployment-pipelines-process.md#deploy-content-to-an-existing-workspace) section.
 
 To deploy content to the next stage in the deployment pipeline, select the deploy button at the bottom of the stage.
 
@@ -106,7 +107,7 @@ To examine the differences between the two pipelines before you deploy, see [com
 
 When you're working in a deployment pipeline, different stages may have different configurations. For example, each stage can have different databases or different query parameters. The development stage might query sample data from the database, while the test and production stages query the entire database.
 
-When you deploy content between pipeline stages, configuring deployment rules enables you to allow changes to content, while keeping some settings intact. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
+When you deploy content between pipeline stages, configuring deployment rules enables you to allow changes to content while keeping some settings intact. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage under the appropriate dataset. Once the rule is defined, content deployed from test to production will inherit the value as defined in the deployment rule. This will always apply as long as the rule is unchanged and valid.
 
 [Read about how to define deployment rules.](deployment-pipelines-create-rules.md)
 

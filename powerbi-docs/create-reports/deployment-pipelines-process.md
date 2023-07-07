@@ -6,12 +6,15 @@ ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.custom: contperf-fy21q1, intro-deployment, fabric
+ms.custom: fabric, intro-deployment
 ms.date: 05/09/2023
 ms.search.form: Introduction to Deployment pipelines, Manage access in Deployment pipelines, Deployment pipelines operations, Create deployment pipeline
 ---
 
 # The deployment pipelines process
+
+> [!IMPORTANT]
+> Deployment pipelines is moving to Microsoft Fabric and this article will be deprecated soon. For an updated version of this article go to [The deployment pipelines process](/fabric/cicd/deployment-pipelines/understand-the-deployment-process).
 
 The deployment process lets you clone content from one stage in the deployment pipeline to another, typically from development to test, and from test to production.
 
