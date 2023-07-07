@@ -7,10 +7,13 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/20/2023
+ms.date: 06/27/2023
 LocalizationGroup: Samples
 ---
 # Sales and Marketing sample for Power BI: Take a tour
+
+> [!NOTE]
+> For an updated version of this sample, see [Competitive Marketing Analysis: Take a tour](sample-competitive-marketing-analysis.md).
 
 The Sales and Marketing sample contains a dashboard and report for a fictitious manufacturing company named VanArsdel Ltd. The VanArsdel Chief Marketing Officer (CMO) created this dashboard to keep an eye on the industry and the company's market share, product volume, sales, and sentiment.
 
@@ -182,7 +185,7 @@ Page three of the report focuses on consumer sentiment.
 
 :::image type="content" source="media/sample-sales-and-marketing/sales6.png" alt-text="Screenshot of the Sentiment Analysis page." lightbox="media/sample-sales-and-marketing/sales6.png":::
 
-Tweets, Facebook posts, blogs, and articles all contribute to consumer sentiment, which appears in the two line charts on left side of the page. The **VanArsdel - Sentiment by Month** chart in the top-left corner shows that sentiment for our products was mostly neutral up until February. Then, a large drop started in February and bottomed out in June. What happened to cause this drop in sentiment?
+Tweets, Facebook posts, blogs, and articles all contribute to consumer sentiment, which appears in the two line charts on the left side of the page. The **VanArsdel - Sentiment by Month** chart in the top-left corner shows that sentiment for our products was mostly neutral up until February. Then, a large drop started in February and bottomed out in June. What happened to cause this drop in sentiment?
 
 Let's look at external sources. In February, several articles and blog posts rated VanArsdel's customer service as the worst in the industry. This bad press had a direct correlation to customer sentiment and sales. VanArsdel worked hard to improve customer service, and customers and the industry took note. In July, positive sentiment started to rise and then reached an all-time high in the 60s. The **Total Units by Month** charts on pages one and two of the report reflect the uptick in sentiment. Perhaps this fact partially explains our market share dips for June?
 

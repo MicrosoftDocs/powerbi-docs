@@ -46,7 +46,7 @@ HTTP/1.1 403 Forbidden
 
 When you send a [Power BI REST API](/rest/api/power-bi/) request, it might arrive at a cluster that doesn't contain your tenant's data. In that case, redirecting the request might fail due to a timeout.
 
-To fix the timeout exception, resend the request with the `preferClientRouting` parameter set to `true`. If your request arrives at the wrong cluster, the Power BI service returns a *307 Temporary Redirect* HTTP response. In such cases, you need to redirect your request to the new address specified in the response *HTTPS Location header*.
+To fix the timeout exception, resend the request with the `preferClientRouting` URL query parameter set to `true`. If your request arrives at the wrong cluster, the Power BI service returns a *307 Temporary Redirect* HTTP response. In such cases, you need to redirect your request to the new address specified in the response *HTTPS Location header*.
 
 ## The update parameters or update data sources API fails after a few minutes
 
@@ -66,3 +66,4 @@ When using the [Datasets - Update Parameters In Group](/rest/api/power-bi/datase
 >[Power BI Embedded Frequently Asked Questions](embedded-faq.yml)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
+

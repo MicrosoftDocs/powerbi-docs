@@ -6,11 +6,14 @@ ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.custom: contperf-fy21q1, fabric
+ms.custom: fabric
 ms.date: 07/31/2022
 ---
 
 # Deploy content using Deployment pipelines
+
+> [!IMPORTANT]
+> Deployment pipelines is moving to Microsoft Fabric and this article will be deprecated soon. For an updated version of this article go to [Deploy content using Deployment pipelines](/fabric/cicd/deployment-pipelines/deploy-content).
 
 Any [Pro user](../enterprise/service-admin-purchasing-power-bi-pro.md) that's a member or admin in the source workspace, can deploy content to an empty stage (a stage that doesn't contain content). The workspace must reside on a capacity for the deployment to be completed.
 

@@ -14,7 +14,7 @@ ms.date: 03/30/2023
 
 As a Power BI administrator for your organization, you can control the type of Power BI visuals users can access across the organization and limit the actions users can perform.
 
-To manage Power BI visuals, you must be a Global Administrator in Office 365, or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding Power BI administrator roles](service-admin-role.md).
+To manage Power BI visuals, you must be a Global Administrator in Office 365, or have been assigned the Fabric administrator role. For more information about the Fabric administrator role, see [Understanding Power BI administration roles](service-admin-role.md).
 
 [!INCLUDE[Get to the admin settings](../includes/admin-portal-settings.md)]
 
@@ -117,7 +117,6 @@ When this setting is enabled, users can download data from a custom visual into 
 
    :::image type="content" source="media/organizational-visuals/allow-downloads-from-custom-visuals.png" alt-text="Screenshot of the Power BI setting that allows downloads from custom visuals.":::
 
-UI changes to tenant settings apply only to Power BI service. To enable users in your organization to download data from custom visuals in Power BI Desktop, use [Azure AD Group Policy](/azure/active-directory-domain-services/manage-group-policy).
 
 |Key  |Value name  |Value  |
 |---------|---------|---------|
