@@ -16,31 +16,31 @@ LocalizationGroup: Get started
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-This tutorial is an introduction to some of the features of the *Power BI service*. In this tutorial, you connect to data, create a report and a dashboard, and ask questions about your data. You can do many more tasks in the Power BI service. This tutorial is just to get you started. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md).
+This tutorial is an introduction to some of the features of the *Power BI service*. In this tutorial, you connect to data, create a report and a dashboard, and ask questions about your data. The exercises show you how to work with data on a dashboard and design dataset visualizations. Here's an example dashboard:
 
-Are you a report *reader* rather than a creator? [Getting around in the Power BI service](../consumer/end-user-experience.md) is a good starting place for you.
+:::image type="content" source="media/service-get-started/dashboard.png" alt-text="Screenshot of an example Power BI dashboard with sample dataset visualizations." border="false":::
 
-Here's an example of a Power BI dashboard you can create in this tutorial:
+In the Power BI service, you can accomplish many different tasks, and this tutorial can help you get started. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md).
 
-:::image type="content" source="media/service-get-started/dashboard.png" alt-text="Screenshot that shows the dashboard for the Financial Sample dataset." border="false":::
+If you're a report *reader* rather than a creator, check out the [Getting around in the Power BI service](../consumer/end-user-experience.md) tutorial.
 
 In this tutorial, you complete the following tasks:
 
 > [!div class="checklist"]
 > * Sign in to your Power BI online account, or sign up, if you don't have an account yet.
 > * Open the Power BI service.
-> * Add data and open it in report view.
-> * Use that data to create visualizations and save it as a report.
+> * Add and view data in reading or editing mode.
+> * Use data to create visualizations and save designs as a report.
 > * Create a dashboard by pinning tiles from the report.
-> * Add other visualizations to your dashboard by using the Q&A natural-language tool.
+> * Add other visualizations to a dashboard with the Q&A natural-language tool.
 > * Resize, rearrange, and edit details for the tiles on the dashboard.
 > * Clean up resources by deleting the dataset, report, and dashboard.
 
 ## Sign up for the Power BI service
 
-You need a Power BI Pro or Premium Per User (PPU) license to create content in Power BI. If you don't have a Power BI account, and plan on creating content, [sign up for a free Power BI Premium Per User 60 day trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin. Complete the wizard to get a free license. Open the Power BI service (app.powerbi.com), select the **Me** icon, and choose **Buy Pro now** or **Try paid features for free**.
+You need a Power BI Pro or Premium Per User (PPU) license to create content in Power BI. If you don't have a Power BI account, and plan on creating content, [sign up for a free Power BI Premium Per User 60 day trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin. Complete the wizard to get a free license. Open the Power BI service (app.powerbi.com), and select the **Me** icon. Choose **Premium Per User - Start trial** or **Buy Fabric now**.
 
-:::image type="content" source="media/service-get-started/power-bi-pro.png" alt-text="Screenshot that shows how to choose the type of license to purchase.":::
+:::image type="content" source="media/service-get-started/power-bi-pro.png" alt-text="Screenshot that shows how to choose the type of license to purchase." border="false":::
 
 ## Step 1: Add data to create a report
 
@@ -75,7 +75,7 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
    
    :::image type="content" source="media/service-get-started/financial-sample-dataset.png" alt-text="Screenshot that shows the imported Financial Sample dataset page." border="false":::
    
-   You can then use the sample dataset to create reports and dashboards. 
+   You can now use the sample dataset to create reports and dashboards. 
 
 1. On the Financial Sample dataset page, at the top, select **Create a report** > **Start from scratch** to open the report editor.
 
@@ -91,21 +91,21 @@ The new report opens in **Editing** view. To view your report in progress, you c
 
 :::image type="content" source="media/service-get-started/report-reading-view.png" alt-text="Screenshot that shows how to switch to the Reading view of a report canvas.":::
 
-In the Editing view, you can modify reports because you're the *owner* and *creator* of the report. When you share your report with colleagues, often they can only interact with the report in Reading view. Other users are *consumers* of reports in your **My workspace**.
+In the Editing view, you can modify reports because you're the *owner* and *creator* of the report. When you share your report with colleagues, they often can interact with the report in Reading view only. Other users are *consumers* of reports in your **My workspace**.
 
-When you're ready to continue to develop your report, select **Edit**:
+When you're ready to continue to working on your report, select **Edit**:
 
 :::image type="content" source="media/service-get-started/report-editing-view.png" alt-text="Screenshot that shows how to switch to the Editing view of a report canvas.":::
 
 ## Step 2: Create a chart in a report
 
-After you connect data to build a report, you're ready to start exploring. When you find an interesting item, you can save it on the report canvas. You can pin the item to a dashboard to monitor it for changes over time.
+After you connect data to build a report, you're ready to start exploring. When you find an interesting item, you can save it on the report canvas. You can pin the item to a dashboard to monitor the data for changes over time.
 
 We can start by adding a column chart to the report in the editor to build a visualization of the data.
 
 1. In the **Data** pane, select the arrow next to the **financials** heading to show the data items.
 
-   Some data items have a sigma symbol (&Sigma;) next to the name. Power BI displays the sigma to identify data that has numeric values.
+   Some data items have a sigma symbol (&Sigma;) next to the name. Power BI displays the sigma next to data that has numeric values.
 
    :::image type="content" source="media/service-get-started/data-pane-sigma-symbol.png" alt-text="Screenshot that shows items in the Data pane with a sigma symbol to indicate the data has numeric values.":::
 
@@ -120,7 +120,7 @@ We can start by adding a column chart to the report in the editor to build a vis
    > [!NOTE]
    > If you select the **Date** item before you select the **Gross Sales** item, Power BI creates a table rather than a column chart. If you selected the data items in this order, it's not a problem. We're going to change the visualization of the data in the next step.
 
-1. Now let's try a different display of the selected data. Line charts are good visuals for showing changes in values over time. In the **Visualizations** pane, select **Line chart**.
+1. Let's try a different display of the selected data. Line charts are good visuals for showing changes in values over time. In the **Visualizations** pane, select **Line chart**.
 
    :::image type="content" source="media/service-get-started/visualizations-select-line-chart.png" alt-text="Screenshot that shows how to select the line chart display in the Visualizations pane.":::
 
@@ -151,15 +151,15 @@ We can start by adding a column chart to the report in the editor to build a vis
    :::image type="content" source="media/service-get-started/dashboard-pin-tile-line-chart.png" alt-text="Screenshot that shows the dashboard with a pinned visualization tile." border="false":::
 
    > [!NOTE]
-   > After you pin a visualization, if you change the visualization type in the report, the pinned visualization on the dashboard **doesn't** change. To see the new visualization, pin it to the dashboard to create another tile. Multiple tiles allows you to have more than one visualization of the same data on your dashboard.
+   > After you pin a visualization, if you change the visualization type in the report, the pinned visualization on the dashboard **doesn't** change. To see the new visualization, pin it to the dashboard to create another tile. The use of multiple tiles lets you have more than one visualization of the same data on your dashboard.
 
 1. Now select the tile on the dashboard:
 
    :::image type="content" source="media/service-get-started/dashboard-select-tile.png" alt-text="Screenshot that shows a selected tile on the dashboard.":::
 
-   The Power BI service returns you to the Report editor where you can refine the visualization tile:
+   The Power BI service returns you to the report editor where you can refine the visualization:
 
-   :::image type="content" source="media/service-get-started/report-editor-line-chart.png" alt-text="Screenshot that shows a tile open in the Report editor and the Edit option selected." border="false":::
+   :::image type="content" source="media/service-get-started/report-editor-line-chart.png" alt-text="Screenshot that shows a visualization open in the report editor and the Edit option selected." border="false":::
 
    You can select **Edit** to return to Editing view and continue to explore and pin tiles.
 
@@ -173,9 +173,9 @@ In the Power BI service, you can find the Q&A question box in two places.
 
    :::image type="content" source="media/service-get-started/dashboard-qna-box.png" alt-text="Screenshot that shows the Q&A question box in the dashboard tile view.":::
 
-- In the Report editor, the **Ask a question** Q&A box is in the top menu bar:
+- In the report editor, the **Ask a question** Q&A box is in the top menu bar:
 
-   :::image type="content" source="media/service-get-started/report-editor-qna-box.png" alt-text="Screenshot that shows the Q&A question box in the Report editor menu bar.":::
+   :::image type="content" source="media/service-get-started/report-editor-qna-box.png" alt-text="Screenshot that shows the Q&A question box in the report editor menu bar.":::
 
 When you select the Q&A box, Power BI opens an extended view to help you ask questions and find answers.
 
@@ -217,33 +217,63 @@ Let's try out the Q&A experience for a dashboard.
 
 1. Pin the bar chart to your Financial Sample dashboard.
 
-1. At the top left, select **Exit Q&A** to return to your dashboard.
+1. At the top, select **Exit Q&A** to return to your dashboard.
 
-You can see the three newly pinned tiles on your dashboard. Even though you changed the map visualization to a bar chart in Q&A, the tile remained a map because the tile was a map when you pinned it. As we described earlier, multiple tiles allow you to have more than one visualization of the same data on your dashboard.
+You now have four pinned tiles on your dashboard: line chart, numeric average, country/region map, and bar chart.
 
 :::image type="content" source="media/service-get-started/dashboard-qna-tiles.png" alt-text="Screenshot of the Financial Sample dashboard with pinned Q&A visualization tiles." border="false":::
 
-## Step 4: Reposition tiles on the dashboard
+### Pin different views of data with multiple tiles
 
-We can rearrange the tiles to make better use of the dashboard space.
+Notice that although you changed the map visualization to a bar chart in Q&A, the corresponding tile on the dashboard still shows a map.
 
-1. Drag the lower-right corner of the *Gross Sales* line chart tile upward, until the tile snaps at the same height as the *Average of Sales* tile, then release the mouse.
+When you pin a tile to a dashboard, the tile always displays the data by using the original visualization type. If you change the visualization type for an existing tile, and pin the tile, Power BI creates a new tile with the new visualization type. The original tile remains unchanged. The use of multiple tiles enables you to have more than one visualization of the same data on your dashboard.
 
-   :::image type="content" source="media/service-get-started/dashboard-resize-tile.png" alt-text="Screenshot that shows how to resize a tile on the dashboard.":::
+## Step 4: Adjust tile layout on the dashboard
 
-   Now the two tiles are the same height.
+Tiles on the dashboard can be rearranged and adjusted to make better use of the space. You can change tile sizes, reposition tiles, and work with tile details to improve the layout.
 
-1. Select **More options (...)** for the *Average of Sales* tile and select **Edit details**. 
+### Adjust tile size
 
-   :::image type="content" source="media/service-get-started/dashboard-tile-edit-details.png" alt-text="Screenshot that shows how to open the details for a tile on the dashboard.":::
+Let's change the size of the *Gross sales* line chart tile to be the same height as the *Average of Sales* tile.
 
-1. In the **Tile details** dialog, in the **Title** box, enter **Sales Average**. Select **Apply**.
+1. Select the lower-right corner of the *Gross sales* line chart tile and drag the tile outline upward to reduce the overall tile height.
 
-   :::image type="content" source="media/service-get-started/edit-tile-details.png" alt-text="Screenshot that shows how to edit the details for a tile on the dashboard.":::
+1. Continue to drag the tile outline upward until the tile snaps into place at the same height as the *Average of Sales* tile.
 
-1. Finally, rearrange the other visuals to make better use of the space on the dashboard. Here's an example:
+1. When the tile has the desired height, release the mouse.
 
-   :::image type="content" source="media/service-get-started/dashboard.png" alt-text="Screenshot that shows the tiles rearranged on the dashboard to make better use of the space." border="false":::
+:::image type="content" source="media/service-get-started/dashboard-resize-tile.png" alt-text="Screenshot that shows how to resize a tile on the dashboard.":::
+
+The two tiles are now the same height.
+ 
+### Modify tile details
+
+Sometimes changing **Tile details** can improve the dashboard presentation. 
+
+:::image type="content" source="media/service-get-started/dashboard-tile-edit-details.png" alt-text="Screenshot that shows how to open the details for a tile on the dashboard.":::
+
+1. On the *Average of Sales* tile, select **More options (...)** > **Edit details**. 
+
+1. In the **Tile details** dialog, in the **Title** box, enter **Sales Average**.
+
+1. Select **Apply**.
+
+:::image type="content" source="media/service-get-started/edit-tile-details.png" alt-text="Screenshot that shows how to edit the details for a tile on the dashboard.":::
+
+### Rearrange tiles
+
+You can move a tile by selecting the tile and dragging the tile to the new location.
+
+1. Select the country/region map tile, and drag the tile to the right of the bar chart. 
+
+1. When the tile's in the desired position, release the mouse.
+
+Notice that these two tiles take up more width on the dashboard than the *Gross sales* line chart tile and the *Sales Average* tile. You can improve the layout by increasing the overall width of the line chart tile.
+
+Here's an example of the dashboard with the improved layout:
+
+:::image type="content" source="media/service-get-started/dashboard.png" alt-text="Screenshot that shows the tiles rearranged on the dashboard to make better use of the space." border="false":::
 
 ## Clean up resources
 
