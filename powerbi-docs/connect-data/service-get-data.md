@@ -59,7 +59,7 @@ When you import Excel or CSV files or manually create a workbook, Power BI impor
 
 You can also upload files. Use this method for *.pbix* files. When you upload Excel files from OneDrive for Business or SharePoint, Power BI creates a connection to the file. When you add local file, Power BI adds a copy of the file to the workspace. 
 
-To upload files, on the **My worksapce** tab, select **Upload** to upload local files or files from SharePoint or OneDrive for Business:
+To upload files, on the **My workspace** tab, select **Upload** to upload local files or files from SharePoint or OneDrive for Business:
 
 :::image type="content" source="media/service-get-data/upload.png" alt-text="Screenshot that shows the Upload list."::: 
 
@@ -67,7 +67,7 @@ Following are some types of files that you can add:
 
 - **Excel** workbooks, or *.xlsx* and *.xlsm* files, can include different data types. For example, workbooks can include data that you enter into worksheets yourself, or data that you query and load from external data sources by using Power Query. Power Query is available via **Get & Transform Data** on the **Data** tab of Excel, or via **Get External Data** in Power Pivot. You can import data from tables in worksheets or import data from a data model. For more information, see [Get data from files for Power BI](service-get-data-from-files.md).
 
-- **Power BI Desktop**, or *.pbix* report files, query and load data from external data sources to create reports. In Power BI Desktop, you can extend your data model by using measures and relationships, and publish the *.pbix* files to the Power BI service. Power BI Desktop is intended for advanced users who have a thoruough understanding of their data sources, data querying and transformation, and data modeling. For more information, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
+- **Power BI Desktop**, or *.pbix* report files, query and load data from external data sources to create reports. In Power BI Desktop, you can extend your data model by using measures and relationships, and publish the *.pbix* files to the Power BI service. Power BI Desktop is intended for advanced users who have a thorough understanding of their data sources, data querying and transformation, and data modeling. For more information, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
 
 - **Comma-separated value**, or *.csv* files, are simple text files with rows of data that contain values separated by commas. For example, a *.csv* file that contains name and address data might have many rows, each with values for first name, last name, street address, city, and state. You can't import data into a *.csv* file, but many applications, like Excel, can save simple table data as *.csv* files.
 
