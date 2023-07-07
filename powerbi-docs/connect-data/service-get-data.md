@@ -77,15 +77,15 @@ Where you store your files makes a significant difference. OneDrive provides the
 
 ### Databases
 
-From the Power BI service, you can connect live to the following databases in the cloud:
+You can connect Azure databases to Power BI to get analytics and reports that provide real-time insights. For example, you can connect to Azure SQL Database and explore data by creating reports in Power BI. Whenever you slice data or add a field to a visualization, Power BI queries the database directly. 
 
-- Azure SQL Database
-- Azure Synapse Analytics
-- Spark in Azure HDInsight
+For more information, see:
 
-Connections from Power BI to these databases are live. For example, you can connect to SQL Database and explore data by creating reports in Power BI. Whenever you slice data or add a field to a visualization, Power BI queries the database directly. For more information, see [Azure and Power BI](service-azure-and-power-bi.md).
+- [Azure and Power BI](service-azure-and-power-bi.md)
+- [Azure SQL Database with DirectQuery](service-azure-sql-database-with-direct-connect.md)
+- [Azure Synapse Analytics with DirectQuery](service-azure-sql-data-warehouse-with-direct-connect.md)
 
-For other database types, you need to use Power BI Desktop or Excel to connect to, query, and load data into a data model. You can then import that file into Power BI where a dataset exists. If you configure scheduled refresh, Power BI uses the configuration and connection information from the file to connect directly to the data source. Power BI queries for updates and loads the updates into the dataset. For more information, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
+You can also use Power BI Desktop or Excel to connect to, query, and load data into data models for a variety of databases. You can then import the file into Power BI where a dataset exists. If you configure scheduled refresh, Power BI uses the configuration and connection information from the file to connect directly to the data source. Power BI queries for updates and loads the updates into the dataset. For more information, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
 
 ### Other data sources
 
