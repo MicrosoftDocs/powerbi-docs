@@ -226,6 +226,8 @@
       href: service-export-to-pbix.md
     - name: Publish datasets and reports
       href: desktop-upload-desktop-files.md
+    - name: Troubleshoot Power BI Desktop publishing
+      href: desktop-troubleshoot-publish.md
     - name: Mobile-optimized reports
       items:
       - name: About mobile-optimized reports
