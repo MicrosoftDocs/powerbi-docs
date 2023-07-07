@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 
 Data is the core of Power BI. You can explore data by creating charts and dashboards or by asking questions with **Q&A**. The visualizations and answers get their underlying data from a dataset, which comes from a data source.
 
-This article describes the data source types that you can connect to from the Power BI service. There are many other types of data sources. To use these other data sources in the Power BI service, you might first need to use Power BI Desktop or the advanced data query and modeling features in Excel. For more information, see [Other data sources](#other-data-sources).
+This article focuses on data source types that you can connect to from the Power BI service. There are many other types of data sources. To use these other data sources in the Power BI service, you might first need to use Power BI Desktop or the advanced data query and modeling features in Excel. For more information, see [Databases](#databases) and [Other data sources](#other-data-sources).
 
 ## Discover content
 
