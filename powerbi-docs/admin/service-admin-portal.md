@@ -8,15 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal,contperf-fy22q3
 ms.topic: how-to
-ms.date: 10/19/2022
+ms.date: 06/20/2023
 LocalizationGroup: Administration
 ---
 
 # About the admin portal
 
+> [!IMPORTANT]
+> The **Power BI administrator** role has been renamed. The new name of the role is **Fabric administrator**.
+
 The admin portal includes settings that govern Power BI for all users in your organization. For example, you can view usage metrics, access the Microsoft 365 admin center, and control how users interact with Power BI.
 
-The full admin portal can be accessed by global admins and users who have the Power BI administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
+The full admin portal can be accessed by global admins and users who have the Fabric administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Fabric administrator role, see [Understanding Power BI administration roles](service-admin-role.md).
 
 ## What can I do in the admin portal
 
@@ -41,11 +44,11 @@ The many controls in the admin portal are listed in the table below with links t
 
 ## How to get to the admin portal
 
-You must be a global admin or Power BI service admin to access the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, follow these steps:
+You must be a global admin or Fabric admin to access the Power BI admin portal. For more information about the Fabric administrator role, see [Understanding Power BI administration roles](service-admin-role.md). To get to the Power BI admin portal, follow these steps:
 
 1. Sign in to [Power BI](https://app.powerbi.com) using your admin account credentials.
 
-1. From the page header, select **...** > **Settings** > **Admin portal**.
+1. From the page header, select **Settings** > **Admin portal**.
 
    :::image type="content" source="media/service-admin-portal/power-bi-settings-menu.png" alt-text="Settings menu with admin portal selected.":::
 

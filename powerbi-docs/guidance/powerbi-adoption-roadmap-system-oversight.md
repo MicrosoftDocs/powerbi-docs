@@ -27,13 +27,13 @@ System oversight is a broad and deep topic. The goal of this article is to intro
 
 ## Power BI administrators
 
-The Power BI administrator role is a defined role in Microsoft 365, which delegates a [subset of Power BI-specific](/power-platform/admin/use-service-admin-role-manage-tenant#service-administrator-permission-matrix) management activities. Global Microsoft 365 administrators are implicitly Power BI administrators. Power Platform administrators are also implicitly Power BI administrators (however, Power BI administrators don't have the same role in other Power Platform applications).
+The Fabric administrator role is a defined role in Microsoft 365, which delegates a [subset of Power BI-specific](/power-platform/admin/use-service-admin-role-manage-tenant#service-administrator-permission-matrix) management activities. Global Microsoft 365 administrators are implicitly Power BI administrators. Power Platform administrators are also implicitly Power BI administrators (however, Power BI administrators don't have the same role in other Power Platform applications).
 
 A key governance decision is who to assign as a Power BI administrator. It's a centralized role that affects your entire [Power BI tenant](powerbi-implementation-planning-tenant-setup.md). Ideally, there are [2-4 people in the organization](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#security-guidelines-for-assigning-roles) who are capable of managing the Power BI service. Your administrators should operate in close coordination with the [Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md).
 
 ### High privilege role
 
-The Power BI administrator role is a high privilege role because:
+The Fabric administrator role is a high privilege role because:
 
 - **User experience:** Settings that are managed by a Power BI administrator have a significant effect on user capabilities and user experience (described in the [Tenant settings](#tenant-settings) section below).
 - **Full security access:** Power BI administrators can update access permissions for workspaces in the tenant. The result is that an administrator can allow permission to view or download data and reports as they see fit (described in the [Tenant settings](#tenant-settings) section below).
@@ -461,7 +461,7 @@ Every month, Microsoft releases new Power BI features and functionality. To be e
 **Improve system oversight:**
 
 > [!div class="checklist"]
-> - **Verify who is permitted to be a Power BI administrator:** If possible, reduce the number of people granted the Power BI administrator role if it's more than a few people.
+> - **Verify who is permitted to be a Power BI administrator:** If possible, reduce the number of people granted the Fabric administrator role if it's more than a few people.
 > - **Use PIM for occasional administrators:** If you have people who *occasionally* need Power BI administrator rights, consider implementing [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM) in Azure AD. It's designed to assign just-in-time role permissions that expire after a few hours.
 > - **Train administrators:** Check the status of cross-training and documentation in place for handling Power BI administration responsibilities. Ensure that a backup person is trained so that needs can be met timely, in a consistent way.
 

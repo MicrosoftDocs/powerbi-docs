@@ -6,12 +6,15 @@ ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.custom: contperf-fy21q1, fabric
+ms.custom: fabric
 ms.date: 05/09/2023
 ms.search.form: Deployment history
 ---
 
 # Deployment history
+
+> [!IMPORTANT]
+> Deployment pipelines is moving to Microsoft Fabric and this article will be deprecated soon. For an updated version of this article go to [Deployment history](/fabric/cicd/deployment-pipelines/deployment-history).
 
 Deployment history is a deployment pipelines feature that enables reviewing the past deployments in your pipeline. The feature is designed as a log that lists all the past deployments in the pipeline.
 

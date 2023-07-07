@@ -1,20 +1,20 @@
 ---
-title: "Create exportable paginated reports in the Power BI service"
-description: In this article, you learn how to create a paginated report using the interactive editor in the Power BI service.
+title: "Create paginated reports that you can export in the Power BI service"
+description: In this article, you learn how to create a paginated report using the interactive editor in the Power BI service, and then export it.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ebendinsky
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 06/13/2023
+ms.date: 06/20/2023
 ---
 
-# Create exportable paginated reports in the Power BI service
+# Create exportable paginated reports that you can export in the Power BI service
 
 [!INCLUDE [applies-yes-service-no-report-builder-no-desktop](../../includes/applies-yes-service-no-report-builder-no-desktop.md)]
 
-In this article, you learn how to create and export a paginated report with all the data from your Power BI dataset easily. The feature lets you quickly create a paginated report on the web, and apply styling. You can then export it using the rich export functionality of paginated reports, which retains the applied formatting & styling.
+In this article, you learn how to create a paginated report with all the data from your Power BI dataset, and then export it. The feature lets you quickly create a paginated report on the web, and apply styling. You can then export it using the rich export functionality of paginated reports, which retains the applied formatting & styling.
 
 You can use the feature to create paginated reports in any workspace in the Power BI service, including workspaces that aren't in a Power BI Premium capacity.
 
@@ -99,17 +99,35 @@ Now that you have the columns that you want, you can format the table using the 
 
 ## Edit a paginated report
 
-If you navigate to any paginated report that you **authored online**, you have the option to edit the report within the paginated report viewer experience. This option is available in the toolbar above the viewer.
+If you navigate to any paginated report that you've *authored online*, you have the option to edit the report within the paginated report viewer experience. This option is available in the toolbar above the viewer.
 
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-edit.png" alt-text="Screenshot of Edit button.":::
 
 This option takes you back to the online editor experience, where you can make changes to the report.  
 
 > [!NOTE]
-> This **Edit** button isn't the same as the **Edit** button on the **File** menu.  That **Edit** button opens Power BI Report Builder instead. **If you edit this report in Report Builder, you won't be able to edit it online anymore.**
+> This **Edit** button isn't the same as the **Edit** button on the **File** menu.  That **Edit** button opens Power BI Report Builder instead. *If you edit this report in Report Builder, you can't edit it online anymore.*
+
+## Add images to the paginated report
+For any paginated report that you *author online*, you can insert images in the top section of your report to brand or describe your formatted table data below.
+
+### Add an image item
+1. To add an image to your report, select **Insert**, then **Image**.
+
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-image-insert.png" alt-text="Screenshot of insert image button.":::
+
+    > [!NOTE]
+    > At this time, you can only insert external images that are available over the internet without needing authentication.
+
+1. Images are inserted at the top of the first page of your report.
+1. After you insert the image, you can use the **Picture format** tab to set an Alternate text for the image, set padding options, or set the display size option.
+
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-image-picture-format.png" alt-text="Screenshot of picture format options.":::
+
+To learn more about external images, refer to [Add external images to paginated reports](../report-design/add-external-image-report-builder-service.md).
 
 ## Add text to the paginated report
-For any paginated report you **author online**, you may insert text boxes in the top section of your report to brand, title, or describe your formatted table data below. 
+For any paginated report you **author online**, you can insert text boxes in the top section of your report to brand, title, or describe your formatted table data below. 
 
 ### Add a text box and begin typing
 1. To add a text box to your report, select **Insert** and then **Text box**.
@@ -137,7 +155,7 @@ For any paginated report you **author online**, you may insert text boxes in the
 1. To resize a text box, select the text box itself and then select and drag any sizing handle. Alternatively, press the SHIFT + arrow keys to resize horizontally or vertically.
 
     > [!NOTE]
-    > Text that does not fit within the text box area will show only while the text box is selected. Text outside the text box area will not show in the final design of your report. Resize the text box area to show the text you would like visible.
+    > Text that doesn't fit within the text box area shows only while the text box is selected. Text outside the text box area doesn't show in the final design of your report. Resize the text box area to show the text you would like visible.
 
 ### Format and style text in a text box
 
@@ -150,14 +168,14 @@ For any paginated report you **author online**, you may insert text boxes in the
 To delete a text box, right-click a text box and select **Remove**. Alternatively, with a text box selected press <kbd>DELETE</kbd>.
 
 ### Working with sections
-1. When you add text boxes to a paginated report, a section line appears on the first page that separates the text boxes from your formatted table of data. The area above the section line is where text boxes are added. The area below is where your formatted table of data is added.
+1. When you add items to a paginated report, a section line appears on the first page that separates the text or image objects from your formatted table of data. The area above the section line is where items are added. The area below is where your formatted table of data is added.
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-section-line.png" alt-text="Screenshot of the section line.":::
 
     > [!NOTE]
     > The section line only shows when text or image objects are present.
 
-1. To move text objects lower on the page, move the section line down. To move the section line up, move text objects up. Text objects will highlight when moving the section line.
+1. To move text or image objects lower on the page, move the section line down. To move the section line up, move the items up. Text objects will highlight when moving the section line.
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-move-section.gif" alt-text="Animation of moving the section line.":::
 
@@ -175,7 +193,7 @@ To delete a text box, right-click a text box and select **Remove**. Alternativel
 - As with other objects in a report, you can only select one text box at a time. 
 - Text boxes can't be duplicated, or copied and pasted. You can highlight, copy, and paste text within text boxes. 
 - You can only place text boxes above the section line within the boundaries of the print layout, even if web layout is selected. 
-- Text boxes may overlap. You can't change text box layer order. The most recently added text box will be on top. 
+- Text boxes may overlap. You can't change text box layer order. The most recently added text box is on top. 
 - When you enter text in a text box that's larger than the text box area, you can't select the bottom resize handle. Use the bottom corner resize handles or any other resize handles to resize the area. 
 
 ## Export your report

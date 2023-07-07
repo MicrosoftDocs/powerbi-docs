@@ -6,12 +6,15 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.custom: contperf-fy21q1, fabric
+ms.custom: fabric
 ms.date: 05/09/2023
 ms.search.form: Deployment rules
 ---
 
 # Create deployment rules
+
+> [!IMPORTANT]
+> Deployment pipelines is moving to Microsoft Fabric and this article will be deprecated soon. For an updated version of this article go to [Create deployment rules](/fabric/cicd/deployment-pipelines/create-rules).
 
 When you're working in a deployment pipeline, different stages may have different configurations. For example, each stage can have different databases or different query parameters. The development stage might query sample data from the database, while the test and production stages query the entire database.
 
