@@ -187,4 +187,4 @@ When you drag a Power BI file to a OneDrive or SharePoint location in the file s
 
 ### Unable to open document
 
-If you have signed-in to Power BI on multiple different accounts you will be able to see files in the file menu that each account interacted with.  If you try to open one of the files that belongs to another account and receive an error, sign-in to the account that has access to the file and try again. 
+If you have signed-in to Power BI on multiple different accounts you can see files in the file menu that each account interacted with.  If you try to open one of the files that belongs to another account and receive an error, sign-in to the account that has access to the file and try again. 
