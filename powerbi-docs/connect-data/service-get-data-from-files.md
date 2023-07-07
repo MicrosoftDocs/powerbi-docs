@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/09/2023
+ms.date: 07/11/2023
 LocalizationGroup: Data from files
 ---
 # Get data from files for Power BI
