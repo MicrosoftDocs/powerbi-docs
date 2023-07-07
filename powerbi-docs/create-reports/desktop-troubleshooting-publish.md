@@ -1,15 +1,14 @@
 ---
 title: Troubleshoot Power BI Desktop publishing
 description: Troubleshoot Power BI Desktop publishing
-author: davidiseminger
+author: maggiesMSFT
 manager: 
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/27/2023
-ms.author: davidi
+ms.date: 07/05/2023
+ms.author: maggies
 
 LocalizationGroup: Troubleshooting
 ---
@@ -20,19 +19,36 @@ When you publish a report and dataset from Power BI Desktop to the Power BI serv
 
 ## Solutions to common problems
 
-- Be sure that you're using the latest version of Power BI Desktop. Go to the [Microsoft Power BI website](https://powerbi.microsoft.com/downloads/) or the [Microsoft Store](https://apps.microsoft.com/store/detail/power-bi-desktop/9NTXR16HNW1T) to download and install the latest version of Power BI Desktop. 
+### Use the latest version of Power BI Desktop
 
-- Check your firewall and proxy settings. If you're behind a firewall, using a proxy server, or using antivirus/security software, make sure that your network configurations allow Power BI Desktop to connect to the Power BI service. Work with your IT department or network administrator to [add Power BI URLs to your allowlist](/power-bi/admin/power-bi-allow-list-urls). 
+Be sure that you're using the latest version of Power BI Desktop. Go to one of these locations to download and install the latest version of Power BI Desktop:
 
-- Check your network connectivity. Verify that you have a stable and suitable internet connection. Connectivity problems or network restrictions can prevent Power BI Desktop from publishing to the Power BI service. Try accessing other websites or running an internet speed test to ensure that your internet connection functions reliably.
+- [Microsoft Power BI website](https://powerbi.microsoft.com/downloads/).
+- the [Microsoft Store](https://apps.microsoft.com/store/detail/power-bi-desktop/9NTXR16HNW1T).
 
-- Clear cached data. In Power BI Desktop, go to **File** > **Options and settings** > **Options**. Under **GLOBAL**, select **Data Load**, and then select **Clear Cache**.
+### Check your firewall and proxy settings
 
-- Clear cached credentials. If you've previously connected to the published dataset with different credentials or an expired token, cached credentials might cause connection issues. In Power BI Desktop, go to **File** > **Options and settings** > **Data source settings**, and then select **Clear Permissions** to clear any cached credentials.
+If you're behind a firewall, using a proxy server, or using antivirus/security software, make sure that your network configurations allow Power BI Desktop to connect to the Power BI service. Work with your IT department or network administrator to [add Power BI URLs to your allowlist](../admin/power-bi-allow-list-urls.md). 
 
-- Check your dataset permissions. Be sure that you have the permissions that are needed to access the published dataset. Check with the dataset owner or administrator to verify that you've been granted access.
+### Check your network connectivity
 
-- Sign in to the Power BI service and try to upload the Power BI report from the target workspace by using the upload option.
+Verify that you have a stable and suitable internet connection. Connectivity problems or network restrictions can prevent Power BI Desktop from publishing to the Power BI service. Try accessing other websites or running an internet speed test to ensure that your internet connection functions reliably.
+
+### Clear cached data
+
+In Power BI Desktop, go to **File** > **Options and settings** > **Options**. Under **GLOBAL**, select **Data Load**, and then select **Clear Cache**.
+
+### Clear cached credentials
+
+If you've previously connected to the published dataset with different credentials or an expired token, cached credentials might cause connection issues. In Power BI Desktop, go to **File** > **Options and settings** > **Data source settings**, and then select **Clear Permissions** to clear any cached credentials.
+
+### Check your dataset permissions
+
+Be sure that you have the permissions that are needed to access the published dataset. Check with the dataset owner or administrator to verify that you've been granted access.
+
+### Sign in to the Power BI service
+
+Sign in to the Power BI service and try to upload the Power BI report from the target workspace by using the upload option.
 
 ## Other problems
 
@@ -52,16 +68,16 @@ This error is most likely caused by a network problem. Try the following trouble
 
 ### Can't publish to a different workspace
 
-This problem can occur if the Power BI tenant setting [Use datasets across workspaces](/power-bi/admin/service-admin-portal-workspace#use-datasets-across-workspaces) is disabled. Work with your Power BI tenant administrator to enable this setting.
+This problem can occur if the Power BI tenant setting [Use datasets across workspaces](../admin/service-admin-portal-workspace.md#use-datasets-across-workspaces) is disabled. Work with your Power BI tenant administrator to enable this setting.
 
 ### Can't republish or replace an existing report
 
 This problem can occur in the following scenarios.
 
-- The Power BI tenant setting [Block republish and disable package refresh](/power-bi/admin/service-admin-portal-dataset-security#block-republish-and-disable-package-refresh) is enabled. Work with your Power BI tenant administrator to disable this setting.
+- The Power BI tenant setting [Block republish and disable package refresh](../admin/service-admin-portal-dataset-security.md#block-republish-and-disable-package-refresh) is enabled. Work with your Power BI tenant administrator to disable this setting.
 
 - If you see the error **A report has already been published with this name**, you're trying to publish a report that's connected via live connection on top of an original report that includes a dataset. If you publish a live-connected report with the same name as the original, the dataset is overwritten. This error is intended to prevent the loss of the dataset. Members of a workspace can't replace an original shared report. If they try to do so, they're prompted to rename the file and then publish.
 
    You can download the original report (not the live-connected one). You should be able to publish that copy correctly to overwrite the original report. If you need a separate live-connected report, you can publish it with a different name.
 
-For more information about this problem, see [Republish or replace a dataset published from Power BI Desktop](/power-bi/create-reports/desktop-upload-desktop-files#republish-or-replace-a-dataset-published-from-power-bi-desktop).
+For more information about this problem, see [Republish or replace a dataset published from Power BI Desktop](desktop-upload-desktop-files.md#republish-or-replace-a-dataset-published-from-power-bi-desktop).
