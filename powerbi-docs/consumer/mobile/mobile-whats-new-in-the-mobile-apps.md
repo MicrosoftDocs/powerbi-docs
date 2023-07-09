@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/01/2023
+ms.date: 07/10/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -23,9 +23,9 @@ For related "What's New" information, see:
 
 ### Dataset refresh (iOS and Android)
 
-Now you can get notified when a dataset refresh fails and take action right from the app! [Learn more!](./mobile-apps-dataset-refresh.md)
+Now you can get notified when a dataset refresh fails, and take action right from the app! [Learn more!](./mobile-apps-dataset-refresh.md)
 
-:::image type="content" source="./media/mobile-apps-dataset-refresh/power-bi-app-dataset-info-page.png" alt-text="Screenshot showing the dataset info page in the Power BI app for mobile devices." border="false":::
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-app-dataset-refresh.png" alt-text="Screenshot showing the dataset info page in the Power BI app for mobile devices." border="false":::
 
 ## May 2023
 
