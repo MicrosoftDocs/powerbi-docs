@@ -20,7 +20,7 @@ If you're the owner of a dataset or a user who has access to the dataset, use th
 
     :::image type="content" source="./media/mobile-apps-dataset-refresh/power-bi-app-dataset-list.png" alt-text="Screenshot of dataset list page in the Power BI mobile app." border="false":::
 
-1. Tap the dataset you want to refresh. The Dataset info page opens, showing some details about the dataset. If there was a refresh failure, you can tap **Show more** to display failure details. You'll be able to copy the details to facilitate investigating the failure.
+1. Tap the dataset you want to refresh. The Dataset info page opens, showing some details about the dataset. If there was a refresh failure, you can tap **See more** to display failure details. You'll be able to copy the details to facilitate investigating the failure.
 
     :::image type="content" source="./media/mobile-apps-dataset-refresh/power-bi-app-dataset-info-page.png" alt-text="Screenshot of dataset info page in the Power BI mobile app." border="false":::
 
