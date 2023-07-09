@@ -21,11 +21,11 @@ For related "What's New" information, see:
 
 ## July 2023
 
-### Export to Excel (iOS and Android)
+### Dataset refresh (iOS and Android)
 
 Now you can get notified when a dataset refresh fails and take action right from the app! [Learn more!](./mobile-apps-dataset-refresh.md)
 
-:::image type="content" source="./media/mobile-apps-dataset-refresh/power-bi-app-dataset-info-page.png" alt-text="Screenshot showing the dataset info page in the Power BI app for mobile devices.":::
+:::image type="content" source="./media/mobile-apps-dataset-refresh/power-bi-app-dataset-info-page.png" alt-text="Screenshot showing the dataset info page in the Power BI app for mobile devices." border="false":::
 
 ## May 2023
 
