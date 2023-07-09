@@ -18,11 +18,11 @@ If you're the owner of a dataset or a user who has access to the dataset, use th
 
 1. Navigate to the workspace where the dataset is located and tap the **Datasets** tab. All the datasets you have access to in that workspace will be listed. A warning symbol indicates dataset refresh failures.
 
-    :::image type="content" source="./media/mobile-apps-dataset-refresh/power-bi-app-dataset-list.png" alt-text="Screenshot of dataset pages in the Power BI mobile app." border="false":::
+    :::image type="content" source="./media/mobile-apps-dataset-refresh/power-bi-app-dataset-list.png" alt-text="Screenshot of dataset list page in the Power BI mobile app." border="false":::
 
 1. Tap the dataset you want to refresh. The Dataset info page opens, showing some details about the dataset. If there was a refresh failure, you can tap **Show more** to display failure details. You'll be able to copy the details to facilitate investigating the failure.
 
-    :::image type="content" source="./media/mobile-apps-dataset-refresh/power-bi-app-dataset-info-page.png" alt-text="Screenshot of dataset pages in the Power BI mobile app." border="false":::
+    :::image type="content" source="./media/mobile-apps-dataset-refresh/power-bi-app-dataset-info-page.png" alt-text="Screenshot of dataset info page in the Power BI mobile app." border="false":::
 
 3.	Tap **Refresh now** if you want to refresh the dataset. This button is disabled if a refresh is already in progress.
 
