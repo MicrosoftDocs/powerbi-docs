@@ -68,19 +68,17 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
    Ribbon charts connect a category of data over the visualized time continuum by using ribbons. This visualization lets you see how a given category ranks throughout the span of the chart's x-axis (usually the timeline).
 
-1. On the **Data** panel, select the sample data to use for the **X-axis**, **Legend**, and **Y-axis** in the chart.
+1. Select the sample data to use for the **X-axis**, **Legend**, and **Y-axis** in the chart.
 
-   1. Expand **Store** and select **OpenDate**.
+   1. On the **Data** panel, expand **Store** and select **OpenDate**. Under **OpenDate**, make sure **Data Hierarchy** is selected.
+
+   1. On the **Visualizations** panel, for the chart **X-axis**, make sure only **Month** and **Day** are selected under **OpenDate**.
    
-   1. Under **OpenDate**, make sure **Data Hierarchy** is selected.
-
       The sample dataset contains data for one year only, so we can remove the **Year** and **Quarter** data from the **X-axis**.
 
-      - On the **Visualizations** panel, for the chart **X-axis**, under **OpenDate**, make sure only **Month** and **Day** are selected. 
+   1. On the **Data** panel, expand **Sales**, expand **This Year Sales**, and then select **Value**.
 
-   1. Expand **Sales**, expand **This Year Sales**, and then select **Value**.
-
-   1. Expand **Item** and select **Category**.
+   1. On the **Data** panel, expand **Item** and select **Category**.
 
    The following image shows the selected items in the **Data** panel and the modified **Visualizations** panel fields for the ribbon chart.
 
