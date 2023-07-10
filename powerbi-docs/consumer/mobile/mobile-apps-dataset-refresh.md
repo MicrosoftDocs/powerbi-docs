@@ -12,6 +12,8 @@ ms.date: 07/10/2023
 
 As the owner of a dataset, or a user who has access to the dataset, you can view dataset info and refresh status, as well as trigger dataset refresh, directly from your Power BI mobile app. In addition, whenever a dataset you own has a scheduled refresh failure, you and [whoever you've specified to receive scheduled refresh failure notifications](../../connect-data/refresh-data.md#getting-refresh-failure-notifications), will get a notification in the app, so that the issue can be addressed in a timely manner.
 
+Dataset support in the mobile apps focuses on viewing dataset info and refresh status, and triggering dataset refresh to address simple rescheduled refresh errors. Use the Power BI service to perform more advanced dataset management tasks and to handle more complicated dataset refresh errors.
+
 ## View dataset info and refresh a dataset
 
 If you're the owner of a dataset or a user who has access to the dataset, use the following steps to view dataset info and/or refresh the dataset.
