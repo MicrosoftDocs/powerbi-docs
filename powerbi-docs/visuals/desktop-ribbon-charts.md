@@ -64,13 +64,15 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
 1. To create a ribbon chart, select **Ribbon chart** from the **Visualizations** panel.
 
-   :::image type="content" source="media/desktop-ribbon-charts/power-bi-visualizations-select-ribbon-chart.png" alt-text="Screenshot that shows how to select the ribbon chart visualization in Power BI." border="false":::
+   :::image type="content" source="media/desktop-ribbon-charts/power-bi-visualizations-select-ribbon-chart.png" alt-text="Screenshot that shows how to select the ribbon chart visualization in Power BI.":::
 
    Ribbon charts connect a category of data over the visualized time continuum by using ribbons. This visualization lets you see how a given category ranks throughout the span of the chart's x-axis (usually the timeline).
 
 1. On the **Data** panel, select the sample data to use for the **X-axis**, **Legend**, and **Y-axis** in the chart.
 
-   1. Expand **Store** and select **OpenDate**. Under **OpenDate**, make sure **Data Hierarchy** is selected.
+   1. Expand **Store** and select **OpenDate**.
+   
+   1. Under **OpenDate**, make sure **Data Hierarchy** is selected.
 
       The sample dataset contains data for one year only, so we can remove the **Year** and **Quarter** data from the **X-axis**.
 
@@ -82,7 +84,7 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
    The following image shows the selected items in the **Data** panel and the modified **Visualizations** panel fields for the ribbon chart.
 
-   :::image type="content" source="media/desktop-ribbon-charts/power-bi-ribbon-values.png" alt-text="Screenshot that shows the selected Data items and modified Visualization fields for the ribbon chart." border="false":::
+   :::image type="content" source="media/desktop-ribbon-charts/power-bi-ribbon-values.png" alt-text="Screenshot that shows the selected Data items and modified Visualization fields for the ribbon chart.":::
 
 1. The ribbon chart shows rank for every month.
 
