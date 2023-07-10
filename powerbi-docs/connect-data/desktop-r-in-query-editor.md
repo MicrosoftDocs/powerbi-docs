@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 06/07/2023
+ms.date: 07/10/2023
 LocalizationGroup: Connect to data
 ---
 # Use R in Power Query Editor
@@ -131,7 +131,7 @@ There are some limitations to queries that include R scripts created in Power Qu
   
    :::image type="content" source="media/desktop-r-in-query-editor/r-in-query-editor_10.png" alt-text="Screenshot shows Data source settings dialog where you can edit permissions." lightbox="media/desktop-r-in-query-editor/r-in-query-editor_10.png":::
 
-* To schedule refresh of your R visuals or dataset, enable scheduled refresh and install an on-premises data gateway (personal mode) on the computer containing the workbook and R.
+* To schedule refresh of your R visuals or dataset, enable scheduled refresh and install an on-premises data gateway (personal mode) on the computer containing the workbook and R. You cannot use an enterprise gateway to refresh datasets containing R scripts in Power Query.
 
 ## Next Steps
 
