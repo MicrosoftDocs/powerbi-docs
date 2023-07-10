@@ -12,6 +12,7 @@ ms.date: 06/19/2023
 
 LocalizationGroup: Share your work
 ---
+
 # Publish an app in Power BI
 
 In Power BI, you can create official packaged content, then distribute it to a broad audience as an *app*. You [create apps in *workspaces*](service-create-the-new-workspaces.md), where you can collaborate on Power BI content with your colleagues. Then you can publish the finished app to large groups of people in your organization. The [app consumer view](#app-consumer-view) section of this article outlines the app consumer experience in the Power BI service and in the Power BI mobile apps.
@@ -280,7 +281,7 @@ Things to keep in mind about publishing apps:
 * Having multiple audiences isn't fully supported in deployment pipelines. Content visibility of new content that you add to an org app must still be managed manually via audience management.
 * You can't open an added link or see its content if you chose to open the link in the content area.
 * Apps can have a maximum of 200 dashboards.
-* If you include a report that uses chained datasets, also known as [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. 
+* If you include a report that uses chained datasets, also known as [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Azure AD Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning#strategy-for-using-groups).
 
 ## Next steps
 
@@ -289,3 +290,5 @@ Things to keep in mind about publishing apps:
 * [Power BI apps for external services](../connect-data/service-connect-to-services.md)
 * [Power BI Admin Portal](../admin/service-admin-portal.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+
