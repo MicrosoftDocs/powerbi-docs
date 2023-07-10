@@ -25,7 +25,7 @@ On your Power BI site, select **OneLake data hub** in the navigation pane:
 
 :::image type="content" source="media/service-get-data/onelake-data-hub-open.png" alt-text="Screenshot that shows the OneLake data hub in the navigation pane.":::
 
-The tiles at the top of the page show data items that are recommended. For example, data can be recommented because it's promoted by someone in your organization or because it was accessed recently.
+The tiles at the top of the page show recommended data items. For example, data can be recommended because it's promoted by someone in your organization or because it was accessed recently.
 
 :::image type="content" source="media/service-get-data/recommended-data.png" alt-text="Screenshot that shows the Recommended data tiles.":::
 
@@ -33,7 +33,7 @@ Below those tiles is a list of data that you have access to. You can filter to s
 
 :::image type="content" source="media/service-get-data/all-data.png" alt-text="Screenshot that shows the list of existing data.":::
 
-On the **Apps** tab, you can discover apps published by other people in your organization. Select **Get apps** to choose apps from online services that you use:
+You can select **Apps** on the navigation pane to discover apps published by other people in your organization. At the top right of that tab, select **Get apps** to choose apps from online services that you use:
 
 :::image type="content" source="media/service-get-data/power-bi-apps.png" alt-text="Screenshot that shows the Apps tab.":::
 
@@ -57,7 +57,7 @@ To import files:
 
 When you import Excel or CSV files or manually create a workbook, Power BI imports any supported data in tables and any data model into a new Power BI dataset.
 
-You can also upload files. Use this method for *.pbix* files. When you upload Excel files from OneDrive for Business or SharePoint, Power BI creates a connection to the file. When you upload local file, Power BI adds a copy of the file to the workspace. 
+You can also upload files. Use this method for *.pbix* files. When you upload Excel files from OneDrive for Business or SharePoint, Power BI creates a connection to the file. When you upload a local file, Power BI adds a copy of the file to the workspace. 
 
 To upload files, on the **My workspace** tab, select **Upload** to upload local files or files from SharePoint or OneDrive for Business:
 
@@ -123,7 +123,7 @@ Template apps from services also automatically update, once a day in most cases.
 
 Azure databases like SQL Database, Azure Synapse Analytics, and Spark in Azure HDInsight are cloud data sources. The Power BI service is also in the cloud, so Power BI can connect to those data sources live by using [DirectQuery](desktop-directquery-about.md). With DirectQuery, Power BI is always in sync, and you don't need to set up a scheduled refresh.
 
-SQL Server Analysis Services is a live connection to Power BI just like an Azure cloud database. The difference is that the database is on a server in your organization. This type of connection requires a on-premises gateway, which your IT department can configure.
+SQL Server Analysis Services is a live connection to Power BI just like an Azure cloud database. The difference is that the database is on a server in your organization. This type of connection requires an on-premises gateway, which your IT department can configure.
 
 Data refresh is an important consideration when you use Power BI. For more information, see [Data refresh in Power BI](refresh-data.md).
 
