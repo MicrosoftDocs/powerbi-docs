@@ -123,7 +123,7 @@ For information about managing how charts cross-highlight and cross-filter each 
 ## Considerations and troubleshooting
 
 * One line chart can't have dual y axes. You need to use a combo chart instead if you want two y axes.
-* In the preceding examples, some charts are formatted with increased font sizes, changed font colors, added axis titles, centered chart titles and legends, axes that start at zero, and more. The **Format** panel, represented by an icon that shows a paint brush, provides many options for making your charts look the way you want them to. The best way to learn about them is to open the **Format** panel and explore.
+* In the preceding examples, some of the charts are formatted with increased font sizes, changed font colors, added axis titles, centered chart titles and legends, axes that start at zero, and more. The **Format** panel, represented by an icon that shows a paint brush, provides many options for making your charts look the way you want them to. The best way to learn about them is to open the **Format** panel and explore.
 
 ## Next steps
 
