@@ -14,7 +14,7 @@ LocalizationGroup: Data from files
 
 # Get data from files for Power BI
 
-In Power BI, you can connect to or import data and reports from three types of files:
+In Power BI, you can connect to or import data and reports from these types of files:
 
 - Microsoft Excel *.xlsx* and *.xlsm* files
 - Power BI Desktop *.pbix* report files
