@@ -50,7 +50,7 @@ This tutorial uses the Sales and Marketing Sample in the Power BI service.
 
    :::image type="content" source="media/ " alt-text="Screenshot that shows the Sales and Marketing Sample open in report view in the Power BI service." lightbox=" " border="false":::
 
-4. At the top, select **Edit** to display the **Visualizations** panel.
+4. At the top, select **Edit** to display the **Visualizations** pane.
 
 5. At the bottom, select the green plus symbol :::image type="icon" source="media/ "::: to add a new page to the report.
 
@@ -61,17 +61,17 @@ This tutorial uses the Sales and Marketing Sample in the Power BI service.
 
 ## Create a line chart
 
-1. In the **Data** panel, expand **SalesFact** and select the checkbox next to **Total units**. Then expand **Date** and select the checkbox next to **Month**. Power BI creates a column chart on your report canvas:
+1. In the **Data** pane, expand **SalesFact** and select the checkbox next to **Total units**. Then expand **Date** and select the checkbox next to **Month**. Power BI creates a column chart on your report canvas:
 
-    :::image type="content" source="media/power-bi-line-charts/line-chart-1.png" alt-text="Screenshot that shows the Data panel with data fields selected.":::
+    :::image type="content" source="media/power-bi-line-charts/line-chart-1.png" alt-text="Screenshot that shows the Data pane with data fields selected.":::
 
-2. Convert the chart to a line chart by selecting the **Line chart** icon in the **Visualizations** panel:
+2. Convert the chart to a line chart by selecting the **Line chart** icon in the **Visualizations** pane:
 
     :::image type="content" source="media/power-bi-line-charts/line-chart-2.png" alt-text="Screenshot that shows the converted chart.":::
 
-3. Filter your line chart to show data for the years 2012-2014. If the **Filters** panel is collapsed, expand it. Drag **Year** from the **Data** panel to the **Filters** panel. Drop it under the heading **Filters on this visual**:
+3. Filter your line chart to show data for the years 2012-2014. If the **Filters** pane is collapsed, expand it. Drag **Year** from the **Data** pane to the **Filters** pane. Drop it under the heading **Filters on this visual**:
 
-    :::image type="content" source="media/power-bi-line-charts/line-chart-3.png" alt-text="Screenshot that shows the Filters panel with filters added.":::
+    :::image type="content" source="media/power-bi-line-charts/line-chart-3.png" alt-text="Screenshot that shows the Filters pane with filters added.":::
 
     Change **Advanced filtering** to **Basic filtering** and then select **2012**, **2013**, and **2014**.
 
@@ -103,7 +103,7 @@ To display highly diverging values on one chart, you can use a combo chart. For 
 
 ## Highlighting and cross-filtering
 
-For information about using the **Filters** panel, see [Add a filter to a report](../create-reports/power-bi-report-add-filter.md).
+For information about using the **Filters** pane, see [Add a filter to a report](../create-reports/power-bi-report-add-filter.md).
 
 Selecting a data point on a line chart cross-highlights and cross-filters the other visualizations on the report page, and vice versa. To see an example, start by selecting the **Market Share** tab.  
 
@@ -123,7 +123,7 @@ For information about managing how charts cross-highlight and cross-filter each 
 ## Considerations and troubleshooting
 
 * One line chart can't have dual y axes. You need to use a combo chart instead if you want two y axes.
-* In the preceding examples, some of the charts are formatted with increased font sizes, changed font colors, added axis titles, centered chart titles and legends, axes that start at zero, and more. The **Format** panel, represented by an icon that shows a paint brush, provides many options for making your charts look the way you want them to. The best way to learn about them is to open the **Format** panel and explore.
+* In the preceding examples, some of the charts are formatted with increased font sizes, changed font colors, added axis titles, centered chart titles and legends, axes that start at zero, and more. The **Format** pane, represented by an icon that shows a paint brush, provides many options for making your charts look the way you want them to. The best way to learn about them is to open the **Format** pane and explore.
 
 ## Next steps
 
