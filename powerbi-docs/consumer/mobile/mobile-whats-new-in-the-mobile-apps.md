@@ -23,7 +23,7 @@ For related "What's New" information, see:
 
 ### Dataset refresh (iOS and Android)
 
-Now you can view dataset info and refresh status, and even refresh datasets manually, right from the mobile app! Moreover, whenever one of your datasets has a refresh failure, you'll get notified in the mobile app so that you start addressing the issue right away. [Check out the details](./mobile-apps-dataset-refresh.md)!
+Now you can view dataset info and refresh status, and even refresh datasets manually, right from the mobile app! Moreover, whenever one of your datasets has a refresh failure, you'll get notified in the mobile app so that you can start addressing the issue right away. [Check out the details](./mobile-apps-dataset-refresh.md)!
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-app-dataset-refresh.png" alt-text="Screenshot showing the dataset info page in the Power BI app for mobile devices." border="false":::
 
