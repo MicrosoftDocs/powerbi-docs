@@ -1,7 +1,7 @@
 ---
 title: "Set time-out values for Power BI paginated report dataset processing | Microsoft Docs"
 description: In paginated reports, you can specify time-out values to set limits on how system resources are used.
-ms.date:07/11/2023
+ms.date: 07/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
