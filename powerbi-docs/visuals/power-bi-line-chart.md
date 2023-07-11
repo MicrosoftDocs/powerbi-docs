@@ -1,5 +1,5 @@
 ---
-title: Line charts in Power BI
+title: Create line charts in Power BI
 description: Learn how to use line charts in Power BI.
 author: mihart
 ms.author: mihart
@@ -12,7 +12,7 @@ ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
 ---
 
-# Line charts in Power BI
+# Create line charts in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
