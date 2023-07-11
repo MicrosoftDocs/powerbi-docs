@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/11/2023
+ms.date: 07/12/2023
 ms.custom: sample-retailanalysissample
 LocalizationGroup: Visualizations
 ---
@@ -32,11 +32,13 @@ Review the following prerequisites for using ribbon charts in Power BI Desktop o
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-This tutorial uses the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+This tutorial uses the Retail Analysis Sample PBIX file.
 
-1. In Power BI, select **File** > **Open report**.
+1. Download the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) to your desktop.
 
-1. Find your copy of the **Retail Analysis Sample PBIX** file, and select **Open**.
+1. In Power BI Desktop, select **File** > **Open report**.
+
+1. Browse to and select the **Retail Analysis Sample PBIX** file, and then select **Open**.
 
    The **Retail Analysis Sample PBIX** file opens in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
 
@@ -64,7 +66,9 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
 ## Create a ribbon chart
 
-1. To create a ribbon chart, select **Ribbon chart** from the **Visualizations** pane.
+The following steps create a ribbon chart to illustrate the rank for categories in _This Year Sales_ data for every month.
+
+1. To create a ribbon chart, select **Ribbon chart** on the **Visualizations** pane.
 
    :::image type="content" source="media/desktop-ribbon-charts/power-bi-visualizations-select-ribbon-chart.png" alt-text="Screenshot that shows how to select the ribbon chart visualization in Power BI.":::
 
@@ -80,9 +84,9 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
    1. On the **Data** pane, expand **Item** and select the **Category** checkbox.
 
-   The following image shows the selected items in the **Data** pane and the modified **Visualizations** pane fields for the ribbon chart.
+   The following image shows the selected fields in the **Data** pane and the modified fields in the **Visualizations** pane for the ribbon chart.
 
-   :::image type="content" source="media/desktop-ribbon-charts/power-bi-ribbon-values.png" alt-text="Screenshot that shows the selected Data items and modified Visualization fields for the ribbon chart.":::
+   :::image type="content" source="media/desktop-ribbon-charts/power-bi-ribbon-values.png" alt-text="Screenshot that shows the selected Data fields and modified fields in the Visualization for the ribbon chart.":::
 
 1. The new ribbon chart shows the rank for This Year Sales for every month:
 
