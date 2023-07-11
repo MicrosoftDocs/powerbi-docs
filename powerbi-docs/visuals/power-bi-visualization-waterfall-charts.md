@@ -23,7 +23,7 @@ The columns are color coded so you can quickly notice increases and decreases. T
 
 :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-chart.png" alt-text="Screenshot that shows an example of a waterfall chart in Power BI." border="false":::
 
-## Use cases for waterfall charts
+## When to use waterfall charts
 
 Waterfall charts are a great choice for many scenarios:
 
@@ -66,7 +66,7 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
 1. On the **Learning center** page, under **Sample reports**, locate and select the **Retail Analysis Sample** to download it. The sample opens in report view.
 
-   :::image type="content" source="media/desktop-ribbon-charts/power-bi-retail-analysis-sample.png" alt-text="Screenshot that shows the Retail Analysis Sample open in report view in the Power BI service." lightbox="media/power-bi-visualization-waterfall-charts/power-bi-retail-analysis-sample-expanded.png" border="false":::
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-retail-analysis-sample.png" alt-text="Screenshot that shows the Retail Analysis Sample open in report view in the Power BI service." lightbox="media/power-bi-visualization-waterfall-charts/power-bi-retail-analysis-sample-expanded.png" border="false":::
 
 1. At the top, select **Edit** to open the Report editor.
 
@@ -80,13 +80,13 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
 The following steps create a waterfall chart to display sales variance (estimated sales versus actual sales) by month.
 
-1. On the **Data** pane, expand **Sales** and select the **Total Sales Variance** checkbox. By default, Power BI presents the data as a **clustered column chart**. :::image type="icon" source="media/power-bi-visualization-waterfall-charts/power-bi-cluster-column-icon.png":::
+1. On the **Data** pane, expand **Sales** and select the **Total Sales Variance** checkbox. By default, Power BI presents the data as a **clustered column chart**.
 
    This action configures the *Total Sales Variance* data as the **Y-axis** for the chart on the **Visualizations** pane.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-select-total-sales-variance.png" alt-text="Screenshot that shows the Total Sales Variance checkbox selected and the default chart visual created by Power BI." border="false":::
 
-1. To convert the visualization into a waterfall chart for the data, select **Waterfall chart** :::image type="icon" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png"::: on the **Visualizations** pane. 
+1. To convert the visualization into a waterfall chart for the data, select **Waterfall chart** on the **Visualizations** pane. 
 
    This action exposes the **Category** and **Breakdown** options on the **Visualizations** pane.
 
