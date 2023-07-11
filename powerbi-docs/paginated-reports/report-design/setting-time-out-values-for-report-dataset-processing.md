@@ -1,7 +1,7 @@
 ---
 title: "Set time-out values for Power BI paginated report dataset processing | Microsoft Docs"
 description: In paginated reports, you can specify time-out values to set limits on how system resources are used.
-ms.date: 03/28/2023
+ms.date:07/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -28,7 +28,7 @@ Most time-out errors occur during query processing. If you are encountering time
 
 - The Power BI on-premises data gateway has a 600 second query timeout. A paginated report dataset query set to 0 seconds will not override the gateway timeout. So, the report will fail with the error “_Unable to render paginated report. Data for this report could not be fetched in the allocated time. If you continue to experience this error contact the report author or data source owner to increase the time-out._” To override the gateway timeout, set the dataset query timeout greater than 600 seconds.
 - The maximum possible timeout value is 2147483646. However, configuring the dataset query timeout for this long could result in a timeout outside of the paginated report.
-- The report will abort after 12 hours and you will get a <> error. [Process large Power BI paginated reports](../process-large-reports.md) has recommendations.
+- The report will abort after 12 hours and you will get an error. [Process large Power BI paginated reports](process-large-reports.md) has recommendations.
 
 ## Next steps
 
