@@ -1,6 +1,6 @@
 ---
 title: Waterfall charts in Power BI
-description: Learn how to use Waterfall charts in Power BI.
+description: Learn how to create and configure waterfall charts in the Power BI service and Power BI Desktop.
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
@@ -8,7 +8,7 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/14/2022
+ms.date: 07/12/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -19,116 +19,128 @@ LocalizationGroup: Visualizations
 
 Waterfall charts show a running total as Power BI adds and subtracts values. These charts are useful for understanding how an initial value (like net income) is affected by a series of positive and negative changes.
 
-The columns are color coded so you can quickly notice increases and decreases. The initial and the final value columns often [start on the horizontal axis](https://support.microsoft.com/office/create-a-waterfall-chart-8de1ece4-ff21-4d37-acd7-546f5527f185#bkmk_float), while the intermediate values are floating columns. Because of this style, waterfall charts are also called bridge charts.
+The columns are color coded so you can quickly notice increases and decreases. The initial and final value columns often [start on the horizontal axis](https://support.microsoft.com/office/create-a-waterfall-chart-8de1ece4-ff21-4d37-acd7-546f5527f185#bkmk_float), while the intermediate values are floating columns. Because of this style, waterfall charts are also called _bridge charts_.
 
-:::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-chart.png" alt-text="Screenshot of a waterfall chart example.":::
+:::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-chart.png" alt-text="Screenshot that shows an example of a waterfall chart in Power BI." border="false":::
 
-## When to use a waterfall chart
+## Use cases for waterfall charts
 
-Waterfall charts are a great choice:
+Waterfall charts are a great choice for many scenarios:
 
-* When you have changes for the measure across time, a series, or different categories.
+- Represent changes for a measure across time, a series, or different categories.
 
-* To audit the major changes contributing to the total value.
+- Audit major changes that contribute to a total value.
 
-* To plot your company's annual profit by showing various sources of revenue and arrive at the total profit (or loss).
+- Plot your company's annual profit by showing various sources of revenue and arrive at the total profit (or loss).
 
-* To illustrate the beginning and the ending headcount for your company in a year.
+- Illustrate the beginning and ending headcount for your company in a year.
 
-* To visualize how much money you make and spend each month, and the running balance for your account.
+- Visualize how much money you earn and spend each month, and the running balance for your account.
+
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Prerequisites
 
+Review the following prerequisites for using waterfall charts in Power BI Desktop or the Power BI service.
+
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-This tutorial uses the Retail Analysis Sample.
+This tutorial uses the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-1. Download the [sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) to your desktop.
+1. In Power BI, select **File** > **Open report**.
 
-2. Open Power BI Desktop, and from the menu bar, select **File** > **Open report**.
+1. Find your copy of the **Retail Analysis Sample PBIX** file, and select **Open**.
 
-3. Browse to the **Retail Analysis Sample PBIX.pbix** file, then select **Open**.
+   The **Retail Analysis Sample PBIX** file opens in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
 
-4. On the left pane, select the **Report** icon :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png"::: to open the file in report view.
-
-5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 # [Power BI service](#tab/powerbi-service)
 
-This tutorial uses the built-in Retail Analysis Sample in the Power BI service.
+This tutorial uses the Retail Analysis Sample in the Power BI service.
 
-1. Open the Power BI service, then select **Get data** in the bottom left corner.
+1. Sign in to the Power BI service (`app.powerbi.com`).
 
-2. On the Get Data page that appears, select **Samples**.
+1. Select **Learn** in the left navigation.
 
-   :::image type="content" source="media/power-bi-visualization-slicers/get-data-samples.png" alt-text="Screenshot of Get Data box with link to samples.":::
+1. On the **Learning center** page, under **Sample reports**, locate and select the **Retail Analysis Sample** to download it. The sample opens in report view.
 
-3. Select the **Retail Analysis Sample**, and choose **Connect**.
+   :::image type="content" source="media/desktop-ribbon-charts/power-bi-retail-analysis-sample.png" alt-text="Screenshot that shows the Retail Analysis Sample open in report view in the Power BI service." lightbox="media/power-bi-visualization-waterfall-charts/power-bi-retail-analysis-sample-expanded.png" border="false":::
 
-4. Select **Edit** on the menu bar to display the **Visualizations** pane.
+1. At the top, select **Edit** to open the Report editor.
 
-5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-edit-report.png" alt-text="Screenshot that shows how to select Edit to modify the report in the Power BI service." border="false":::
+
+1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 ---
 
-> [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
-
 ## Create a waterfall chart
 
-You'll create a waterfall chart that displays sales variance (estimated sales versus actual sales) by month.
+The following steps create a waterfall chart to display sales variance (estimated sales versus actual sales) by month.
 
-1. From the **Fields** pane, select **Sales** > **Total Sales Variance**.
+1. On the **Data** pane, expand **Sales** and select the **Total Sales Variance** checkbox. By default, Power BI presents the data as a **clustered column chart**. :::image type="icon" source="media/power-bi-visualization-waterfall-charts/power-bi-cluster-column-icon.png":::
 
-   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-bar.png" alt-text="Screenshot of Total Sales Variance field selected and the visual that results.":::
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-select-total-sales-variance.png" alt-text="Screenshot that shows the Total Sales Variance checkbox selected and the default chart visual created by Power BI." border="false":::
 
-1. Select the Waterfall chart icon.
+1. To convert the visualization into a waterfall chart for the data, select **Waterfall chart** :::image type="icon" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png"::: on the **Visualizations** pane. 
 
-    :::image type="content" source="media/power-bi-visualization-waterfall-charts/convert-waterfall.png" alt-text="Screenshot of Visualizations pane with Waterfall icon selected.":::
+   This action configures the *Total Sales Variance* data as the **Y-axis** for the chart on the **Visualizations** pane.
 
-1. Select **Time** > **FiscalMonth** to add it to the **Category** well.
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-convert-to-waterfall.png" alt-text="Screenshot that shows how to select the waterfall chart visualization in Power BI." border="false":::
 
-    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-month.png" alt-text="Screenshot of the total Sales Variance by FiscalMonth waterfall chart.":::
+1. On the **Data** pane, expand **Time** and select the **FiscalMonth** checkbox.
+
+   This action adds a corresponding **Category** on the **Visualizations** pane.
+
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-add-fiscal-month.png" alt-text="Screenshot that shows the total Sales Variance by FiscalMonth waterfall chart." border="false":::
 
 ## Sort the waterfall chart
 
-1. Make sure Power BI sorts the waterfall chart chronologically by month. From the top-right corner of the chart, select **More options** (...).
+Let's make sure Power BI sorts the waterfall chart chronologically by month.
 
-    For this example, select **Sort by** and choose **FiscalMonth**. A check mark next to your selection indicates when your selection option has been applied.
+1. On the *Total Sales Variance* chart, select **More options (...)** > **Sort axis** > **FiscalMonth**.
 
-    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png" alt-text="Screenshot of options box with Sort by FiscalMonth selected.":::
+   This option sorts the **FiscalMonth** category values on the chart in descending order alphabetically.
 
-    To display the months in chronological order, select **Sort ascending**.
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png" alt-text="Screenshot of options box with Sort by FiscalMonth selected.":::
 
-    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-ascending.png" alt-text="Screenshot of options box with Select sort by Ascending order.":::
+1. Open the **More options (...)** > **Sort axis** menu again. Notice the checkmark next to **FiscalMonth** and **Sort descending**.
 
-    Notice that your chart is sorted from January to August for FiscalMonth.  
+   When a checkmark appears next to a menu option, the chart presentation includes the selected option.
+
+1. On the **More options (...)** > **Sort axis** menu, select **Sort ascending**.
+
+   The chart presentation updates to show the months in ascending or chronological order, January to August.
+
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-ascending.png" alt-text="Screenshot of options box with Select sort by Ascending order.":::
 
 ## Explore the waterfall chart
 
 Dig in a little more to see what's contributing most to the changes month to month.
 
-1. Select **Store** > **Territory**, which will add **Territory** to the **Breakdown** bucket.
+1. On the **Data** pane, expand **Store** and the select the **Territory** checkbox.
 
-    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png" alt-text="Screenshot that shows adding Territory to the Breakdown area.":::
+   This action adds a corresponding **Breakdown** field on the **Visualizations** pane.
 
-    Power BI uses the value in **Breakdown** to add more data to the visualization. It adds the top five contributors to increases or decreases for each fiscal month. February, for example, now has six data points instead of just one.  
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png" alt-text="Screenshot that shows adding Territory to the Breakdown area.":::
 
-    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-default.png" alt-text="Screenshot of Territory field added to the Breakdown bucket.":::
+   Power BI uses the **Territory** value in **Breakdown** to add more data to the visualization. It adds the top five contributors to increases or decreases for each fiscal month. The month of February now has six data points instead of only one.  
 
-    Let's say that you're only interested in the top two contributors.
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-default.png" alt-text="Screenshot of Territory field added to the Breakdown bucket.":::
 
-1. In the **Format** pane, select **Breakdown** and set **Max breakdowns** to **2**.
+   Let's say you're only interested in the top two contributors. You can configure the chart to highlight that information.
 
-    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png" alt-text="Screenshot of Max Breakdowns set to two breakdowns.":::
+1. In the **Visualizations > Format** pane, select **Breakdown**, and set the **Maximum breakdowns** value to **2**.
 
-    A quick review reveals that the territories of Ohio and Pennsylvania are the biggest contributors to movement, both negative and positive, in your waterfall chart.
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png" alt-text="Screenshot of Max Breakdowns set to two breakdowns.":::
 
-    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-axis-waterfall.png" alt-text="Screenshot of waterfall chart with territories that are the biggest contributors highlighted.":::
+   A quick review reveals that the territories of Ohio and Pennsylvania are the biggest contributors to increases and decreases in your waterfall chart.
+
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-axis-waterfall.png" alt-text="Screenshot of waterfall chart with territories that are the biggest contributors highlighted.":::
 
 ## Next steps
 
-* [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md)
-
-* [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
+- [Change how visuals interact](../create-reports/service-reports-visual-interactions.md) in a Power BI report.
+- Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
