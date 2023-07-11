@@ -118,7 +118,7 @@ In the following example, we selected a data point that corresponds to:
 
 Notice how the column charts at the top and bottom are cross-highlighted, and the chart in the middle is cross-filtered.
 
-For information, see [Filters and highlighting in Power BI reports](../create-reports/power-bi-reports-filters-and-highlighting).
+For information, see [Filters and highlighting in Power BI reports](../create-reports/power-bi-reports-filters-and-highlighting.md).
 
 ## Considerations and troubleshooting
 
