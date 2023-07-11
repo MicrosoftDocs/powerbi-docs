@@ -46,7 +46,7 @@ This tutorial uses the Sales and Marketing Sample in the Power BI service.
 
 3. On the **Learning center** page, under **Sample reports**, locate and select the **Sales and Marketing Sample** to download it.
 
-   The **Sales and Marketing Sample** opens in report view.
+   The **Sales and Marketing Sample** opens in report view:
 
    :::image type="content" source="media/power-bi-line-charts/sales-marketing-sample.png" alt-text="Screenshot that shows the Sales and Marketing Sample open in report view in the Power BI service." lightbox="media/power-bi-line-charts/sales-marketing-sample.png" border="false":::
 
@@ -83,7 +83,7 @@ This tutorial uses the Sales and Marketing Sample in the Power BI service.
 
 ## Add lines to the chart
 
-Line charts can display multiple lines. In some cases, the values on the lines are so different that the lines don't display well together. In this section, you add lines to the chart and learn how to format the chart when the values represented by the lines are different.
+Line charts can display multiple lines. In some cases, the values on the lines are so different that the lines don't display well together. In this section, you add lines to the chart and learn how to format the chart when the values represented by the lines are different enough to cause display problems.
 
 ### Add lines
 
@@ -116,9 +116,9 @@ In the following example, we selected a data point that corresponds to:
 
 :::image type="content" source="media/power-bi-line-charts/line-chart-7.png" alt-text="Screenshot that shows a data point selected on a line chart.":::
 
-Notice how the column chart is cross-highlighted, and the gauge is cross-filtered.
+Notice how the column charts at the top and bottom are cross-highlighted, and the chart in the middle is cross-filtered.
 
-For information about managing how charts cross-highlight and cross-filter each other, see [Visualization interactions in a Power BI report](../create-reports/service-reports-visual-interactions.md).
+For information, see [Filters and highlighting in Power BI reports](../create-reports/power-bi-reports-filters-and-highlighting).
 
 ## Considerations and troubleshooting
 
