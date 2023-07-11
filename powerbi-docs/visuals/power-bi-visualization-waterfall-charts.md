@@ -82,11 +82,13 @@ The following steps create a waterfall chart to display sales variance (estimate
 
 1. On the **Data** pane, expand **Sales** and select the **Total Sales Variance** checkbox. By default, Power BI presents the data as a **clustered column chart**. :::image type="icon" source="media/power-bi-visualization-waterfall-charts/power-bi-cluster-column-icon.png":::
 
+   This action configures the *Total Sales Variance* data as the **Y-axis** for the chart on the **Visualizations** pane.
+
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-select-total-sales-variance.png" alt-text="Screenshot that shows the Total Sales Variance checkbox selected and the default chart visual created by Power BI." border="false":::
 
 1. To convert the visualization into a waterfall chart for the data, select **Waterfall chart** :::image type="icon" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png"::: on the **Visualizations** pane. 
 
-   This action configures the *Total Sales Variance* data as the **Y-axis** for the chart on the **Visualizations** pane.
+   This action exposes the **Category** and **Breakdown** options on the **Visualizations** pane.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-convert-to-waterfall.png" alt-text="Screenshot that shows how to select the waterfall chart visualization in Power BI." border="false":::
 
