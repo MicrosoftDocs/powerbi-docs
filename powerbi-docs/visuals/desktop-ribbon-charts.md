@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 You can create ribbon charts to visualize data and quickly discover which data category has the highest rank (largest value). A ribbon illustrates how the value of a data category changes over a visualized time period. The ribbon connects the category values across the time continuum so you can easily see when there's an increase or decrease. When the ribbon is large, it means the category value is larger at that time than at other periods within the continuum.
 
-A ribbon chart combines ribbons for multiple categories into a single view. This visualization lets you see how a given category ranks throughout the span of the chart's x-axis (usually the timeline) compared to other categories.
+A ribbon chart combines ribbons for multiple categories into a single view. This visualization lets you see how a given category ranks throughout the span of the chart's X-axis (usually the timeline) compared to other categories.
 
 Ribbon charts are effective at showing how rank can change. The ribbon for the highest rank (value) is always displayed on top of the other ribbons for each time period. The following image illustrates this visualization:
 
@@ -105,7 +105,7 @@ Here are some of the formatting options you can adjust for the ribbon chart:
 - **Transparency** specifies how transparent the ribbons are. The default level is 30.
 - **Border** lets you place a dark border on the top and bottom of the ribbons. By default, borders are off.
 
-Because the ribbon chart doesn't have y-axis labels, you might want to add data labels. In the **Format** section, select **Data labels**. 
+Because the ribbon chart doesn't have Y-axis labels, you might want to add data labels. In the **Format** section, select **Data labels**. 
 
 :::image type="content" source="media/desktop-ribbon-charts/power-bi-labels.png" alt-text="Screenshot that shows formatting options for data labels in Power BI." border="false":::
 
