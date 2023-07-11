@@ -1,6 +1,6 @@
 ---
-title: Part 1, Add visualizations to a Power BI report
-description: 'Part 1, Add visualizations to a Power BI report'
+title: Add visualizations to a Power BI report (part 1)
+description: Learn how to create a visualization in a report. 
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/12/2022
+ms.date: 07/14/2023
 ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
 ---
@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-This article gives a quick introduction to creating a visualization in a report. For more-advanced content, [see Part 2](power-bi-report-add-visualizations-ii.md) of this series.
+This article provides a quick introduction to creating a visualization in a report. For more-advanced content, [see part 2](power-bi-report-add-visualizations-ii.md) of this article.
 
 ## Prerequisites
 
@@ -27,13 +27,13 @@ This tutorial uses the Sales and Marketing Sample.
 
 1. Download the [sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) to your desktop.
 
-2. Open Power BI Desktop, and from the menu bar, select **File** > **Open report**.
+2. In Power BI Desktop, select **File** > **Open report**.
 
-3. Browse to the **Sales and Marketing Sample PBIX** file, then select **Open**.
+3. Browse to and select the **Sales and Marketing Sample PBIX** file, and then select **Open**.
 
-4. On the left pane, select the **Report** icon :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png"::: to open the file in report view.
- 
-5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+   The **Sales and Marketing Sample PBIX** file opens in report view. :::image type="icon" source="media/power-bi-report-add-visualizations-i/power-bi-report-view.png":::
+
+5. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-report-add-visualizations-i/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 # [Power BI service](#tab/powerbi-service)
 
