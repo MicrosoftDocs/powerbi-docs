@@ -34,7 +34,7 @@ This tutorial uses the Sales and Marketing Sample to create a line chart that di
 
 4. The **Sales and Marketing Sample PBIX** file opens in report view.
  
-5. At the bottom, select the green plus symbol :::image type="icon" source="media/ "::: to add a new page to the report.
+5. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-line-charts/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -48,11 +48,11 @@ This tutorial uses the Sales and Marketing Sample in the Power BI service.
 
    The **Sales and Marketing Sample** opens in report view.
 
-   :::image type="content" source="media/ " alt-text="Screenshot that shows the Sales and Marketing Sample open in report view in the Power BI service." lightbox=" " border="false":::
+   :::image type="content" source="media/power-bi-line-charts/sales-marketing-sample.png" alt-text="Screenshot that shows the Sales and Marketing Sample open in report view in the Power BI service." lightbox="media/power-bi-line-charts/sales-marketing-sample.png" border="false":::
 
 4. At the top, select **Edit** to display the **Visualizations** pane.
 
-5. At the bottom, select the green plus symbol :::image type="icon" source="media/ "::: to add a new page to the report.
+5. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-line-charts/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 ---
 
@@ -123,7 +123,7 @@ For information about managing how charts cross-highlight and cross-filter each 
 ## Considerations and troubleshooting
 
 * One line chart can't have dual y axes. You need to use a combo chart instead if you want two y axes.
-* In the preceding examples, some of the charts are formatted with increased font sizes, changed font colors, added axis titles, centered chart titles and legends, axes that start at zero, and more. The **Format** pane, represented by an icon that shows a paint brush, provides many options for making your charts look the way you want them to. The best way to learn about them is to open the **Format** pane and explore.
+* In the preceding examples, you can see charts that are formatted with increased font sizes, changed font colors, added axis titles, centered chart titles and legends, axes that start at zero, and more. The **Format** pane, which you get to by selecting the image that shows a paint brush (:::image type="icon" source="media/power-bi-line-charts/format-icon.png":::), provides many options for making your charts look the way you want them to. The best way to learn about them is to open the **Format** pane and explore.
 
 ## Next steps
 
