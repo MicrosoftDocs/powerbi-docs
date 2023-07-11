@@ -18,7 +18,7 @@ LocalizationGroup: Visualizations
 
 A line chart is a series of data points that are represented by dots and connected by straight lines. A line chart can have one or many lines. Line charts have an x and a y axis. Here's an example: 
 
-:::image type="content" source="media/power-bi-line-charts/power-bi-line.png" alt-text="Simple line chart.":::
+:::image type="content" source="media/power-bi-line-charts/power-bi-line.png" alt-text="Screenshot that shows a simple line chart.":::
 
 ## Prerequisites
 
@@ -114,7 +114,7 @@ In the following example, we selected a data point that corresponds to:
 - % Units Market Share of 34.74 
 - % Units Market Share R12M of 33.16 
 
-:::image type="content" source="media/power-bi-line-charts/line-chart-7.png" alt-text="Screenshot that shows a data point selected on a line chart.":::
+:::image type="content" source="media/power-bi-line-charts/line-chart-7.png" alt-text="Screenshot that shows the results of selecting a data point on a line chart.":::
 
 Notice how the column charts at the top and bottom are cross-highlighted, and the chart in the middle is cross-filtered.
 
@@ -122,7 +122,7 @@ For information, see [Filters and highlighting in Power BI reports](../create-re
 
 ## Considerations and troubleshooting
 
-* One line chart can't have dual y axes. You need to use a combo chart instead if you want two y axes.
+* One line chart can't have dual y axes. You need to use a combo chart if you want two y axes.
 * In the preceding examples, you can see charts that are formatted with increased font sizes, changed font colors, added axis titles, centered chart titles and legends, axes that start at zero, and more. The **Format** pane, which you get to by selecting the image that shows a paint brush (:::image type="icon" source="media/power-bi-line-charts/format-icon.png":::), provides many options for making your charts look the way you want them to. The best way to learn about them is to open the **Format** pane and explore.
 
 ## Next steps
