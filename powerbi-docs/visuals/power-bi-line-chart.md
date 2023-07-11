@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-A line chart is a series of data points that are represented by dots and connected by straight lines. A line chart can have one or many lines. Line charts have an x and a y axis. 
+A line chart is a series of data points that are represented by dots and connected by straight lines. A line chart can have one or many lines. Line charts have an x and a y axis. Here's an example: 
 
 :::image type="content" source="media/power-bi-line-charts/power-bi-line.png" alt-text="Simple line chart.":::
 
@@ -24,7 +24,7 @@ A line chart is a series of data points that are represented by dots and connect
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-This tutorial uses the Sales and Marketing Sample to create a line chart that displays a year's sales by category.
+This tutorial uses the Sales and Marketing Sample to create a line chart that displays sales by category.
 
 1. Download the [sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) to your desktop.
 
