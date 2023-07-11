@@ -50,9 +50,7 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
 1. Select **Learn** in the left navigation.
 
-1. On the **Learning center** page, under **Sample reports**, locate and select the **Retail Analysis Sample** to download it.
-
-   The sample opens in report view.
+1. On the **Learning center** page, under **Sample reports**, locate and select the **Retail Analysis Sample** to download it. The sample opens in report view.
 
    :::image type="content" source="media/desktop-ribbon-charts/power-bi-retail-analysis-sample.png" alt-text="Screenshot that shows the Retail Analysis Sample open in report view in the Power BI service." lightbox="media/desktop-ribbon-charts/power-bi-retail-analysis-sample-expanded.png" border="false":::
 
