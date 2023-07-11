@@ -37,19 +37,21 @@ This tutorial uses the Sales and Marketing Sample.
 
 # [Power BI service](#tab/powerbi-service)
 
-This tutorial uses the built-in Sales and Marketing Sample in the Power BI service.
+This tutorial uses the Sales and Marketing Sample in the Power BI service.
 
-1. Open the Power BI service, then select on **Get data** in the bottom left corner.
+1. Sign in to the Power BI service (`app.powerbi.com`).
 
-2. On the Get Data page that appears, select **Samples**.
+2. Select **Learn** in the navigation pane.
 
-   :::image type="content" source="media/power-bi-visualization-slicers/get-data-samples.png" alt-text="Screenshot of Get Data box with link to samples.":::
+3. On the **Learning center** page, under **Sample reports**, locate and select the **Sales and Marketing Sample** to download it.
 
-3. Select the **Sales and Marketing Sample**, and choose **Connect**.
+4. The **Sales and Marketing Sample** opens in report view:
 
-4. Select **Edit** on the menu bar to display the **Visualizations** pane.
+   :::image type="content" source="media/power-bi-report-add-visualizations-i/sales-marketing-sample.png" alt-text="Screenshot that shows the Sales and Marketing Sample open in report view in the Power BI service." lightbox="media/power-bi-report-add-visualizations-i/sales-marketing-sample.png" border="false":::
 
-5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+4. At the top, select **Edit** to display the **Visualizations** pane.
+
+5. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-report-add-visualizations-i/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 ---
 
