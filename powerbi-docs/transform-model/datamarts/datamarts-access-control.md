@@ -90,6 +90,7 @@ A datamart can get marked as an unavailable datamart when one of the following s
 
 :::image type="content" source="media/datamarts-access-control/datamarts-access-control-01.png" alt-text="Screenshot of the request access setting.":::
 
+Situation 3: When a Premium workspace is migrated to another Premium Capacity in a different region, the datamart would become unavailable with the error "Unable to open the datamart because the workspace region has changed. To open the datamart, reconnect the workspace to the region connected when the datamart was created." This is by design as the region where the Datamarts were created should be the region where the workspace resides, as migrations are not supported
 
 ## Next steps
 This article provided information about controlling access to datamarts. 
