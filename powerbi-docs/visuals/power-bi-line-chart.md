@@ -69,7 +69,7 @@ This tutorial uses the Sales and Marketing Sample in the Power BI service.
 
     :::image type="content" source="media/power-bi-line-charts/line-chart-2.png" alt-text="Screenshot that shows the converted chart.":::
 
-3. Filter your line chart to show data for the years 2012-2014. If the **Filters** pane is collapsed, expand it. Drag **Year** from the **Data** pane to the **Filters** pane. Drop it under the heading **Filters on this visual**:
+3. Filter your line chart to show data for the years 2012-2014. If the **Filters** pane is collapsed, expand it. Drag the **Year** field from the **Data** pane to the **Filters** pane. Drop it under the heading **Filters on this visual**:
 
     :::image type="content" source="media/power-bi-line-charts/line-chart-3.png" alt-text="Screenshot that shows the Filters pane with filters added.":::
 
@@ -118,12 +118,12 @@ In the following example, we selected a data point that corresponds to:
 
 Notice how the column charts at the top and bottom are cross-highlighted, and the chart in the middle is cross-filtered.
 
-For information, see [Filters and highlighting in Power BI reports](../create-reports/power-bi-reports-filters-and-highlighting.md).
+For more information, see [Filters and highlighting in Power BI reports](../create-reports/power-bi-reports-filters-and-highlighting.md).
 
 ## Considerations and troubleshooting
 
 * One line chart can't have dual y axes. You need to use a combo chart if you want two y axes.
-* In the preceding examples, you can see charts that are formatted with increased font sizes, changed font colors, added axis titles, centered chart titles and legends, axes that start at zero, and more. The **Format** pane, which you get to by selecting the image that shows a paint brush (:::image type="icon" source="media/power-bi-line-charts/format-icon.png":::), provides many options for making your charts look the way you want them to. The best way to learn about them is to open the **Format** pane and explore.
+* In the preceding examples, you can see charts that are formatted with increased font sizes, changed font colors, added axis titles, centered chart titles and legends, axes that start at zero, and more. The **Visualizations** > **Format** pane, which you get to by selecting the image that shows a paint brush (:::image type="icon" source="media/power-bi-line-charts/format-icon.png":::), provides many options for making your charts look the way you want them to. The best way to learn about them is to open the **Format** pane and explore.
 
 ## Next steps
 
