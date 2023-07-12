@@ -8,14 +8,14 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/21/2023
+ms.date: 07/11/2023
 LocalizationGroup: Visualizations
 ---
 # Use on-object interaction with visuals in your report (preview)
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-On-object interaction is the new way to build and format a visual, directly on the visual. It puts common actions for creating and formatting visuals on the visuals themselves, actions such as adding fields, changing visualization types, and formatting text.
+On-object interaction is the new way to build and format a visual, directly on the visual in Power BI Desktop. It puts common actions for creating and formatting visuals on the visuals themselves, actions such as adding fields, changing visualization types, and formatting text.
 
 :::image type="content" source="media/power-bi-on-object-interaction/on-object-build-visual.png" alt-text="Screenshot showing building a visual with on-object formatting.":::
 
@@ -124,11 +124,27 @@ You can attach the build menu to the pane switcher, if you'd prefer that. Pick o
 
 With the **View** ribbon and the **Options** dialog, you can choose to **Always show the pane switcher**.
 
+## Customize the pane switcher 
+
+With the new plus (**+**) button on the pane switcher, you can quickly add new panes directly from the pane switcher without having to go to the **View** ribbon. This menu also gives a brief description of what panes are available and what their functions are. Adding panes to the switcher saves them across reports.
+
+:::image type="content" source="media/power-bi-on-object-interaction/customize-pane-switcher.png" alt-text="Screenshot showing Customize the pane switcher.":::
+
+Select the gear icon to access the two preference settings to **Always show the pane switcher**, and **Always show the "Build a visual" menu in the paine switcher**.
+
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-pane-switcher.png" alt-text="Screenshot showing the Options dialog pane switcher options.":::
+
+### Show more than one pane at a time
+
+To open multiple panes at the same time, select <kbd>CTRL</kbd> and select another pane in the pane switcher.
+
+:::image type="content" source="media/power-bi-on-object-interaction/multiple-panes-pane-switcher.png" alt-text="Screenshot showing multiple panes open at the same time.":::
+
 ## Limitations and known issues
 
 ### Supported visuals for on-object formatting
 
-- On-object formatting is currently supported for bar, column, line, area, combo, scatter, card, pie, donut, and table visuals. Small multiples aren't currently supported.
+- On-object formatting is currently supported for bar, column, line, area, combo, scatter, card, pie, donut, tree map, and table visuals. Small multiples aren't currently supported.
 - Format mode isn't currently supported in mobile layout.
 - Format mode isn't currently supported in focus mode.
 
