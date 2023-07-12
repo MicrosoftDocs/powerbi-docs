@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 05/17/2023
+ms.date: 07/12/2023
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -194,8 +194,6 @@ When you share with people outside your organization, they receive an email with
 
 After people sign in, they see the shared report or dashboard in its own browser window, not in the usual Power BI portal. External recipients should bookmark the link to get back to this report or dashboard later.
 
-People outside your organization can't edit any content in the shared report or dashboard. They can interact with the charts and change filters or slicers, but changes aren't saved. 
-
 Only your direct recipients see the shared report or dashboard. For example, if you sent the email to Vicki@contoso.com, only Vicki sees the dashboard. No one else can see the dashboard, even if Vicki forwards them the link. Vicki must use the same email address to access it; if Vicki signs in with any other email address, Vicki won't have access to the dashboard.
 
 People outside your organization don't see any data at all if role- or row-level security is implemented on on-premises Analysis Services tabular models.
@@ -203,10 +201,6 @@ People outside your organization don't see any data at all if role- or row-level
 Use a security group, not a distribution group, to share with a group that includes people with external email addresses. People with external emails in a distribution group can't see the content you share, unless they're Azure Active Directory (Azure AD) B2B guest users. Learn more about [Azure AD B2B guest users](../enterprise/service-admin-azure-ad-b2b.md).
 
 If you send a link from a Power BI mobile app to people outside your organization, clicking the link opens the dashboard in a browser, not in the Power BI mobile app.
-
-### Allow external users to edit content
-
-Your Power BI admin can allow external guest users to edit and manage content in your organization. If so, your external users won't have that consumption-only experience. They can edit and manage content within your organization. Learn more about [distributing Power BI content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
 ## Share with more than 100 separate users
 
