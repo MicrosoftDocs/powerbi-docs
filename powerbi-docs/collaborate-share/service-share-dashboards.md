@@ -194,8 +194,6 @@ When you share with people outside your organization, they receive an email with
 
 After people sign in, they see the shared report or dashboard in its own browser window, not in the usual Power BI portal. External recipients should bookmark the link to get back to this report or dashboard later.
 
-People outside your organization can't edit any content in the shared report or dashboard. They can interact with the charts and change filters or slicers, but changes aren't saved. 
-
 Only your direct recipients see the shared report or dashboard. For example, if you sent the email to Vicki@contoso.com, only Vicki sees the dashboard. No one else can see the dashboard, even if Vicki forwards them the link. Vicki must use the same email address to access it; if Vicki signs in with any other email address, Vicki won't have access to the dashboard.
 
 People outside your organization don't see any data at all if role- or row-level security is implemented on on-premises Analysis Services tabular models.
