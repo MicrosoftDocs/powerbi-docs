@@ -90,13 +90,13 @@ The following steps create a waterfall chart to display sales variance (estimate
 
 1. To convert the visualization into a waterfall chart, select **Waterfall chart** on the **Visualizations** pane. 
 
-   This action exposes the **Category** and **Breakdown** options on the **Visualizations** pane.
+   This action exposes the **Category** and **Breakdown** sections on the **Visualizations** pane.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-convert-to-waterfall.png" alt-text="Screenshot that shows how to select the waterfall chart visualization in Power BI." border="false":::
 
 1. On the **Data** pane, expand **Time** and select the **FiscalMonth** checkbox.
 
-   Power BI updates the waterfall chart with the data in the FiscalMonth category. The initial view of the category data shows the values in ascending order. This action also adds a corresponding **Category** on the **Visualizations** pane.
+   Power BI updates the waterfall chart with the data in the FiscalMonth category. The initial view of the category data shows the values in ascending order. This action also adds a corresponding **Category** field on the **Visualizations** pane.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-add-fiscal-month.png" alt-text="Screenshot that shows the total Sales Variance by FiscalMonth waterfall chart." border="false":::
 
@@ -112,7 +112,7 @@ You can change the sort order to view different perspectives of the data.
    
    This action changes the sort order of the FiscalMonth category to *descending* order by month. Notice that August has the largest value and January has the smallest.
 
-   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort-fiscal-month-options.png" alt-text="Illustration that compares the waterfall charts for FiscalMonth data in descending and ascending sort order." border="false":::
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort-fiscal-month-options.png" alt-text="Illustration that compares the waterfall charts for FiscalMonth data in descending and ascending sort order." lightbox="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort-fiscal-month-options.png"  border="false":::
 
 1. Open the **More options (...)** > **Sort axis** menu again.
 
@@ -122,37 +122,39 @@ You can change the sort order to view different perspectives of the data.
 
    To remove an option from the chart visualization, select the menu item again and the checkmark clears.
 
-1. Change the sort order to examine how the Total Sales Variance data changes over time.
+1. Open the **More options (...)** > **Sort axis** menu again, and select **Total Sales Variance**.
 
-   - On the **More options (...)** > **Sort axis** menu, select **Total Sales Variance**.
-
-   This action changes the chart focus from the FiscalMonth category to the Total Sales Variance. The chart updates to show the *Total Sales Variance* data in descending order.
+   This action changes the chart focus from the FiscalMonth category to the Total Sales Variance. The chart updates to show the Total Sales Variance data in descending order. In this view, the month of March has the largest positive variance and July has the largest negative variance.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort-total-variance.png" alt-text="Illustration that shows the waterfall chart for the Total Sales Variance data over time in descending order." border="false":::
 
+1. On the **More options (...)** > **Sort axis** menu, change the sort back to **FiscalMonth** and **Sort ascending**.
+
 ## Explore the waterfall chart
 
-Let's take a closer look at the data to see what's contributing most to the changes month to month.
+Let's take a closer look at the data to see what's contributing most to the changes from month to month.
 
-1. On the **Data** pane, expand **Store** and the select the **Territory** checkbox.
+1. On the **Data** pane, expand **Store** and select the **Territory** checkbox.
 
    This action adds a corresponding **Breakdown** field on the **Visualizations** pane.
 
-   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png" alt-text="Screenshot that shows adding Territory to the Breakdown area.":::
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-add-territory.png" alt-text="Screenshot that shows the effect of adding the Territory data to the waterfall chart." border="false":::
 
-   Power BI uses the **Territory** value in **Breakdown** to add more data to the visualization. It adds the top five contributors to increases or decreases for each fiscal month. The month of February now has six data points instead of only one.  
+1. Expand the width of the waterfall chart to see more of the data.
 
-   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-default.png" alt-text="Screenshot of Territory field added to the Breakdown bucket.":::
+   Power BI uses the **Territory** value in the **Breakdown** section to add more data to the visualization. The chart now includes the top five contributors to increases or decreases for each fiscal month. Notice the month of February now has six data points instead of only one.  
+
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-expanded.png" alt-text="Screenshot that shows an expanded view of the waterfall chart with the extra Territory data." border="false":::
 
    Let's say you're only interested in the top two contributors. You can configure the chart to highlight that information.
 
-1. In the **Visualizations > Format** pane, select **Breakdown**, and set the **Maximum breakdowns** value to **2**.
+1. On the **Visualizations pane > Format visual** pane, select **Breakdown**, and set the **Maximum breakdowns** value to **2**.
 
-   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png" alt-text="Screenshot of Max Breakdowns set to two breakdowns.":::
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png" alt-text="Screenshot that shows the effect of changing the maximum breakdowns to two in the waterfall chart." border="false":::
 
-   A quick review reveals that the territories of Ohio and Pennsylvania are the biggest contributors to increases and decreases in your waterfall chart.
+   The updated chart reveals Ohio (OH) and Pennsylvania (PA) as top two territories that are the largest contributors to increases and decreases.
 
-   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-axis-waterfall.png" alt-text="Screenshot of waterfall chart with territories that are the biggest contributors highlighted.":::
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-axis-waterfall.png" alt-text="Screenshot of the waterfall chart that reveals Ohio and Pennsylvania as the territories that are the largest contributors.":::
 
 ## Next steps
 
