@@ -130,7 +130,7 @@ With the new plus (**+**) button on the pane switcher, you can quickly add new p
 
 :::image type="content" source="media/power-bi-on-object-interaction/customize-pane-switcher.png" alt-text="Screenshot showing Customize the pane switcher.":::
 
-Select the gear icon to access the two preference settings to **Always show the pane switcher**, and **Always show the "Build a visual" menu in the paine switcher**.
+Select the gear icon to access the two preference settings to **Always show the pane switcher**, and **Always show the "Build a visual" menu in the pane switcher**.
 
 :::image type="content" source="media/power-bi-on-object-interaction/on-object-pane-switcher.png" alt-text="Screenshot showing the Options dialog pane switcher options.":::
 
