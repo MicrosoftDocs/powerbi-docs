@@ -102,23 +102,26 @@ The following steps create a waterfall chart to display sales variance (estimate
 
 ## Sort the waterfall chart
 
-Let's make sure Power BI sorts the waterfall chart chronologically by month.
+You can configure the waterfall chart to ensure Power BI sorts the data chronologically by month.
 
 1. On the *Total Sales Variance* chart, select **More options (...)** > **Sort axis** > **FiscalMonth**.
 
-   This option sorts the **FiscalMonth** category values on the chart in descending order alphabetically.
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png" alt-text="Screenshot that shows how to configure sort axis settings for the waterfall chart." border="false":::
+   
+   This option sorts the **FiscalMonth** category values on the chart in *descending* order alphabetically.
 
-   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png" alt-text="Screenshot of options box with Sort by FiscalMonth selected.":::
+1. Open the **More options (...)** > **Sort axis** menu again.
 
-1. Open the **More options (...)** > **Sort axis** menu again. Notice the checkmark next to **FiscalMonth** and **Sort descending**.
+   Notice the checkmark next to **FiscalMonth** and **Sort descending**. When a checkmark appears next to a menu option, the chart presentation includes the selected option.
 
-   When a checkmark appears next to a menu option, the chart presentation includes the selected option.
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-selected-sort-axis.png" alt-text="Screenshot that shows check marks next to the selected sort items for the waterfall chart." border="false":::
 
 1. On the **More options (...)** > **Sort axis** menu, select **Sort ascending**.
 
    The chart presentation updates to show the months in ascending or chronological order, January to August.
 
-   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-ascending.png" alt-text="Screenshot of options box with Select sort by Ascending order.":::
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-ascending.png" alt-text="Screenshot that shows how to change the waterfall chart sort axis to ascending order." border="false":::
+
 
 ## Explore the waterfall chart
 
