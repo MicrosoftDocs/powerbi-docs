@@ -92,5 +92,5 @@ In this section, you create a visualization and then change its type.
   
 ## Next steps
 
-- [See part 2 of this article](power-bi-report-add-visualizations-ii.md)
+- [Read part 2 of this article](power-bi-report-add-visualizations-ii.md)
 - [Learn about interacting with visualizations](../consumer/end-user-reading-view.md) 
