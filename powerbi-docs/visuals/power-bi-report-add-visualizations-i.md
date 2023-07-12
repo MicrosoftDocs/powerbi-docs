@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-This article provides a quick introduction to creating a visualization in a report. For more-advanced content, [see part 2](power-bi-report-add-visualizations-ii.md) of this article.
+This article provides a quick introduction to creating a visualization in a report. For more advanced content, [see part 2](power-bi-report-add-visualizations-ii.md) of this article.
 
 ## Prerequisites
 
@@ -92,5 +92,5 @@ In this section, you create a visualization and then change its type.
   
 ## Next steps
 
-- [See part 2 of this artcle](power-bi-report-add-visualizations-ii.md)
+- [See part 2 of this article](power-bi-report-add-visualizations-ii.md)
 - [Learn about interacting with the visualizations](../consumer/end-user-reading-view.md) 
