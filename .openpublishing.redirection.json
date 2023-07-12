@@ -5102,6 +5102,11 @@
             "redirect_document_id": false
         },     
         {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-178-multi-role-rls-composite-model-fail.md",
+            "redirect_url": "/power-bi/troubleshoot/known-issues/known-issues",
+            "redirect_document_id": false
+        },     
+        {
             "source_path": "powerbi-docs/connect-data/desktop-connect-pdf.md",
             "redirect_url": "/power-query/connectors/pdf",
             "redirect_document_id": false
