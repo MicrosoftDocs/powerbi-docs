@@ -64,15 +64,15 @@ In this section, you create a visualization by selecting a field from the **Data
 
    - Start with a numeric field like **SalesFact** > **Sales $**. Power BI creates a column chart that has a single column:
 
-      :::image type="content" source="media/power-bi-report-add-visualizations-i/add-visual-1.png" alt-text="Screenshot that shows a column chart with a single column.":::
+      :::image type="content" source="media/power-bi-report-add-visualizations-i/add-visual-1.png" alt-text="Screenshot that shows a column chart with a single column." lightbox="media/power-bi-report-add-visualizations-i/add-visual-1.png":::
 
    - Or start with a field like **Product** > **Category**. Power BI creates a table and adds that field to the **Columns** section:
 
-     :::image type="content" source="media/power-bi-report-add-visualizations-i/add-visual-2.png" alt-text="Screenshot that shows a table with four categories.":::
+     :::image type="content" source="media/power-bi-report-add-visualizations-i/add-visual-2.png" alt-text="Screenshot that shows a table with four categories." lightbox="media/power-bi-report-add-visualizations-i/add-visual-2.png":::
 
    - Or select the **Filled map** button and then select a geography field, like **Geo** > **City**. Power BI and Bing Maps create a map visualization:
 
-     :::image type="content" source="media/power-bi-report-add-visualizations-i/add-visual-3.png" alt-text="Screenshot that shows a map visualization.":::
+     :::image type="content" source="media/power-bi-report-add-visualizations-i/add-visual-3.png" alt-text="Screenshot that shows a map visualization." lightbox="media/power-bi-report-add-visualizations-i/add-visual-3.png":::
 
 ## Change the type of visualization
 
@@ -80,15 +80,15 @@ In this section, you create a visualization and then change its type.
 
 1. On a new page, select **Product** > **Category** and then **Product** > **Count of Product** to add them both to the **Columns** section:
 
-   :::image type="content" source="media/power-bi-report-add-visualizations-i/change-type-1.png" alt-text="Screenshot that shows the Data pane with the fields selected.":::
+   :::image type="content" source="media/power-bi-report-add-visualizations-i/change-type-1.png" alt-text="Screenshot that shows the Data pane with the fields selected." lightbox="media/power-bi-report-add-visualizations-i/change-type-1.png":::
 
 1. Change the visualization to a column chart by selecting the **Stacked column chart** button:
 
-   :::image type="content" source="media/power-bi-report-add-visualizations-i/change-type-2.png" alt-text="Screenshot that shows the Stacked column chart button.":::
+   :::image type="content" source="media/power-bi-report-add-visualizations-i/change-type-2.png" alt-text="Screenshot that shows the Stacked column chart button."lightbox="media/power-bi-report-add-visualizations-i/change-type-2.png":::
 
 1. To change the way the visual is sorted, select **More options** (...) and then **Sort axis**. Use the menu options to change the direction of the sort axis (ascending or descending) or to change the column that's being sorted on:
 
-   :::image type="content" source="media/power-bi-report-add-visualizations-i/change-type-3.png" alt-text="Screenshot that shows the More options list.":::
+   :::image type="content" source="media/power-bi-report-add-visualizations-i/change-type-3.png" alt-text="Screenshot that shows the More options list." lightbox="media/power-bi-report-add-visualizations-i/change-type-3.png":::
   
 ## Next steps
 
