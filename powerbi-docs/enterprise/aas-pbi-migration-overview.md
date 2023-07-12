@@ -19,7 +19,6 @@ Before beginning a migration, be sure to review [Migrate from Azure Analysis Ser
 
 After the migration, you can make modifications to the [server properties in Analysis Services](/analysis-services/server-properties/server-properties-in-analysis-services) if needed.
 
-
 ## Understanding migration
 
 ### Prerequisites

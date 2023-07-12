@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/03/2022
+ms.date: 07/12/2023
 ms.custom: ''
 LocalizationGroup: Premium
 ---
@@ -23,6 +23,10 @@ Workspaces use the [XML for Analysis](/analysis-services/xmla/xml-for-analysis-x
 By default, *read-only* connectivity using the endpoint is enabled for the **Datasets workload** in a capacity. With read-only, data visualization applications and tools can query dataset model data, metadata, events, and schema.
 
 *Read-write* operations using the endpoint can be enabled. Read-write provides more dataset management, governance, advanced semantic modeling, debugging, and monitoring. When enabled, datasets have more parity with Azure Analysis Services and SQL Server Analysis Services enterprise grade tabular modeling tools and processes.
+
+## Analysis Services server properties
+
+Power BI Premium supports many Analysis Services server properties. To review these properties, refer to [Server properties in Analysis Services](/analysis-services/server-properties/server-properties-in-analysis-services).
 
 ## Terms of use
 
