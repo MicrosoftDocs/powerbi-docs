@@ -6,7 +6,7 @@ ms.author: owend
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 05/22/2023
+ms.date: 07/12/2023
 LocalizationGroup: Premium
 ms.custom: engagement-fy23
 ---
@@ -17,6 +17,7 @@ This article describes the Microsoft Azure Analysis Services to Microsoft Power 
 
 Before beginning a migration, be sure to review [Migrate from Azure Analysis Services to Power BI Premium](../guidance/migrate-azure-analysis-services-to-powerbi-premium.md) and [Migration scenarios](../guidance/migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md). These *Guidance* articles provide a detailed comparison of both platforms and can help you determine a migration strategy that best suits your organization.
 
+After the migration, you can make modifications to the [server properties in Analysis Services](/analysis-services/server-properties/server-properties-in-analysis-services) if needed.
 
 ## Understanding migration
 
