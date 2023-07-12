@@ -154,7 +154,7 @@ Let's take a closer look at the data to see what's contributing most to the chan
 
    The updated chart reveals Ohio (OH) and Pennsylvania (PA) as the top two territories that are the largest contributors to increases and decreases.
 
-   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-two-contributors.png" alt-text="Screenshot of the waterfall chart that reveals Ohio and Pennsylvania as the territories that are the largest contributors.":::
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-two-contributors.png" alt-text="Screenshot of the waterfall chart that reveals Ohio and Pennsylvania as the territories that are the largest contributors.":::
 
 ## Next steps
 
