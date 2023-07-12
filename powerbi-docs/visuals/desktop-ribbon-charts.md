@@ -50,7 +50,7 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
 1. Sign in to the Power BI service (`app.powerbi.com`).
 
-1. Select **Learn** in the left navigation.
+1. Select **Learn** in the navigation pane.
 
 1. On the **Learning center** page, under **Sample reports**, locate and select the **Retail Analysis Sample** to download it. The sample opens in report view.
 
