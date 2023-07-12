@@ -148,13 +148,13 @@ Let's take a closer look at the data to see what's contributing most to the chan
 
    Let's say you're only interested in the top two contributors. You can configure the chart to highlight that information.
 
-1. On the **Visualizations pane > Format visual** pane, select **Breakdown**, and set the **Maximum breakdowns** value to **2**.
+1. On the **Visualizations > Format visual** pane, select **Breakdown**, and set the **Maximum breakdowns** value to **2**.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png" alt-text="Screenshot that shows the effect of changing the maximum breakdowns to two in the waterfall chart." border="false":::
 
-   The updated chart reveals Ohio (OH) and Pennsylvania (PA) as top two territories that are the largest contributors to increases and decreases.
+   The updated chart reveals Ohio (OH) and Pennsylvania (PA) as the top two territories that are the largest contributors to increases and decreases.
 
-   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-axis-waterfall.png" alt-text="Screenshot of the waterfall chart that reveals Ohio and Pennsylvania as the territories that are the largest contributors.":::
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-two-contributors.png" alt-text="Screenshot of the waterfall chart that reveals Ohio and Pennsylvania as the territories that are the largest contributors.":::
 
 ## Next steps
 
