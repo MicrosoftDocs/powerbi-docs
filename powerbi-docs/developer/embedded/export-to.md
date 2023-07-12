@@ -151,7 +151,7 @@ Only five pages of a report are processed concurrently. For example, if you're e
 >
 > * Exporting a Power BI report to file using the `exportToFile` API, is not supported for [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
 
-The `exportToFile` API supports concurrent export job requests. The maximum number of concurrent requests supported is 500. To avoid exceeding the limit and getting a *Too Many Requests (429)* error, either distribute the load over time, or get a larger capacity.
+The `exportToFile` API supports concurrent export job requests. The maximum number of concurrent requests supported is 500. To avoid exceeding the limit and getting a *Too Many Requests (429)* error, either distribute the load over time, or across capacities.
 
 <sup>1</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
