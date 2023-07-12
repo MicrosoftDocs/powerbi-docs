@@ -120,7 +120,7 @@ You can configure the waterfall chart to ensure Power BI sorts the data chronolo
 
    The chart presentation updates to show the months in ascending or chronological order, January to August.
 
-   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-ascending.png" alt-text="Screenshot that shows how to change the waterfall chart sort axis to ascending order." border="false":::
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-ascending.png" alt-text="Screenshot that shows the months in the waterfall chart sorted in ascending order." border="false":::
 
 
 ## Explore the waterfall chart
