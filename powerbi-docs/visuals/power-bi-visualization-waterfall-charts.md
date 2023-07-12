@@ -19,7 +19,11 @@ LocalizationGroup: Visualizations
 
 Waterfall charts show a running total as Power BI adds and subtracts values. These charts are useful for understanding how an initial value (like net income) is affected by a series of positive and negative changes.
 
-The columns are color coded so you can quickly notice increases and decreases. The initial and final value columns often [start on the horizontal axis](https://support.microsoft.com/office/create-a-waterfall-chart-8de1ece4-ff21-4d37-acd7-546f5527f185#bkmk_float), while the intermediate values are floating columns. Because of this style, waterfall charts are also called _bridge charts_.
+Each measure of change is a column on the chart. The columns are color coded so you can quickly notice increases and decreases across the data. 
+
+The initial and final value columns are often configured to [always start from the horizontal axis](https://support.microsoft.com/office/create-a-waterfall-chart-8de1ece4-ff21-4d37-acd7-546f5527f185#bkmk_float). The intermediate values are floating columns. A starting point for an intermediate column can be on the horizontal axis or on another axis parallel to the main axis. 
+
+The position of the intermediate columns can fluctuate between the initial and final values. The resulting view creates a picture similar to a concave or convex wave or a random waterfall cascade. Waterfall charts are also called _bridge charts_.
 
 :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-chart.png" alt-text="Screenshot that shows an example of a waterfall chart in Power BI." border="false":::
 
@@ -64,7 +68,7 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
 1. Sign in to the Power BI service (`app.powerbi.com`).
 
-1. Select **Learn** in the left navigation.
+1. Select **Learn** in the navigation pane.
 
 1. On the **Learning center** page, under **Sample reports**, locate and select the **Retail Analysis Sample** to download it. The sample opens in report view.
 
