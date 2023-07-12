@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-This article provides a quick introduction to creating a visualization in a report. For more advanced content, [see part 2](power-bi-report-add-visualizations-ii.md) of this article.
+This article provides a quick introduction to creating a visualization in a report. For more advanced information, [see part 2](power-bi-report-add-visualizations-ii.md) of this article.
 
 ## Prerequisites
 
@@ -86,11 +86,11 @@ In this section, you create a visualization and then change its type.
 
    :::image type="content" source="media/power-bi-report-add-visualizations-i/change-type-2.png" alt-text="Screenshot that shows the Stacked column chart button.":::
 
-1. To change the way the visual is sorted, select **More options** (...) and then **Sort axis**. Use the menu options to change the direction of the Sort axis (ascending or descending) or change the column that is being sorted on.
+1. To change the way the visual is sorted, select **More options** (...) and then **Sort axis**. Use the menu options to change the direction of the sort axis (ascending or descending) or to change the column that's being sorted on:
 
    :::image type="content" source="media/power-bi-report-add-visualizations-i/change-type-3.png" alt-text="Screenshot that shows the More options list.":::
   
 ## Next steps
 
 - [See part 2 of this article](power-bi-report-add-visualizations-ii.md)
-- [Learn about interacting with the visualizations](../consumer/end-user-reading-view.md) 
+- [Learn about interacting with visualizations](../consumer/end-user-reading-view.md) 
