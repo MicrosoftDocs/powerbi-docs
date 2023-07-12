@@ -96,36 +96,43 @@ The following steps create a waterfall chart to display sales variance (estimate
 
 1. On the **Data** pane, expand **Time** and select the **FiscalMonth** checkbox.
 
-   This action adds a corresponding **Category** on the **Visualizations** pane.
+   Power BI updates the waterfall chart with the data in the FiscalMonth category. The initial view of the category data shows the values in ascending order. This action also adds a corresponding **Category** on the **Visualizations** pane.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-add-fiscal-month.png" alt-text="Screenshot that shows the total Sales Variance by FiscalMonth waterfall chart." border="false":::
 
 ## Sort the waterfall chart
 
-You can configure the waterfall chart to ensure Power BI sorts the data chronologically by month.
+When Power BI first applies the waterfall chart visualization, it displays the data in ascending or chronological order for the primary category. In our example, the data is sorted by month in ascending order, January to August, for the FiscalMonth category.
+
+You can change the sort order to view different perspectives of the data.
 
 1. On the *Total Sales Variance* chart, select **More options (...)** > **Sort axis** > **FiscalMonth**.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png" alt-text="Screenshot that shows how to configure sort axis settings for the waterfall chart." border="false":::
    
-   This option sorts the **FiscalMonth** category values on the chart in *descending* order alphabetically.
+   This action changes the sort order of the FiscalMonth category to *descending* order by month. Notice that August has the largest value and January has the smallest.
+
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort-fiscal-month-options.png" alt-text="Illustration that compares the waterfall charts for FiscalMonth data in descending and ascending sort order." border="false":::
 
 1. Open the **More options (...)** > **Sort axis** menu again.
 
-   Notice the checkmark next to **FiscalMonth** and **Sort descending**. When a checkmark appears next to a menu option, the chart presentation includes the selected option.
+   Notice the checkmark next to **FiscalMonth** and **Sort descending**. A checkmark appears next to options represented in the chart visualization.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-selected-sort-axis.png" alt-text="Screenshot that shows check marks next to the selected sort items for the waterfall chart." border="false":::
 
-1. On the **More options (...)** > **Sort axis** menu, select **Sort ascending**.
+   To remove an option from the chart visualization, select the menu item again and the checkmark clears.
 
-   The chart presentation updates to show the months in ascending or chronological order, January to August.
+1. Change the sort order to examine how the Total Sales Variance data changes over time.
 
-   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-change-sort-order.png" alt-text="Screenshot that shows the FiscalMonth data for the waterfall chart in descending and ascending sort order." border="false":::
+   - On the **More options (...)** > **Sort axis** menu, select **Total Sales Variance**.
 
+   This action changes the chart focus from the FiscalMonth category to the Total Sales Variance. The chart updates to show the *Total Sales Variance* data in descending order.
+
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort-total-variance.png" alt-text="Illustration that shows the waterfall chart for the Total Sales Variance data over time in descending order." border="false":::
 
 ## Explore the waterfall chart
 
-Dig in a little more to see what's contributing most to the changes month to month.
+Let's take a closer look at the data to see what's contributing most to the changes month to month.
 
 1. On the **Data** pane, expand **Store** and the select the **Territory** checkbox.
 
