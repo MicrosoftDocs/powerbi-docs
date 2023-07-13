@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 03/23/2023
+ms.date: 07/13/2023
 LocalizationGroup: Share your work
 ---
 
@@ -182,9 +182,10 @@ You need to [find one of these people](/microsoft-365/business-video/admin-cente
 
 ## Considerations and limitations
 
-Publish to web is supported for the vast majority of data sources and reports in the Power BI service. However, the following kinds of reports aren't currently supported or available with Publish to web:
+Publish to web is supported for the vast majority of data sources and reports in the Power BI service. However, the following kinds of reports are currently *not* supported or available with Publish to web:
 
 - Reports using row-level security.
+- Reports connecting to data using DirectQuery. Connect using composite or import mode instead. Read about the (differences between the modes)[../connect-data/service-dataset-modes-understand.md].
 - Reports using any Live Connection data source, including Analysis Services Tabular hosted on-premises, Analysis Services Multidimensional, and Azure Analysis Services.
 - Reports using a [shared dataset](../connect-data/service-datasets-across-workspaces.md) that is stored in a different workspace from the report.
 - [Shared and certified datasets](../connect-data/service-datasets-share.md).
