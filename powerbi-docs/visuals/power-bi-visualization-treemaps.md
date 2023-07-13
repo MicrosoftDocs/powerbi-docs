@@ -16,21 +16,21 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Treemaps display hierarchical data as a set of nested rectangles. Power BI represents each level of the hierarchy by a colored rectangle called a _branch_. Each branch contains smaller rectangles called _leaves_. Power BI uses the measure value to determine the rectangle size for branches and leaves.
+Treemaps display hierarchical data as a set of nested rectangles. Each level of the hierarchy is represented by a colored rectangle called a _branch_ node. Each branch contains smaller rectangles called _leaf_ nodes. Power BI uses the measure value to determine the rectangle size for branches and leaves.
 
-The rectangles are arranged by size with the largest branch rectangle at the top left and the smallest branch at the bottom right. The arrangement of the leave branches within each branch rectangle follow the same order.
+The rectangles are arranged by size with the largest branch node at the top left and the smallest branch at the bottom right. The arrangement of the leaf nodes within each branch follows the same order.
 
-Let's consider a scenario where you need to analyze clothing sales data. You want to track product sales by clothing type and manufacturer. The branch rectangles can represent the clothing categories: **Urban**, **Rural**, **Youth**, and **Mix**. The leaves represent the clothing manufacturer data for products sold in each clothing category. The leave rectangles are sized and shaded based on the number of products sold.
+Let's consider a scenario where you need to analyze clothing sales data. You want to track product sales by clothing type and manufacturer. The branch nodes can represent the clothing categories: **Urban**, **Rural**, **Youth**, and **Mix**. The leaves can represent the clothing manufacturer data for products sold in each clothing category. The leaf nodes are sized and shaded based on the number of products sold.
 
 The treemap represents the product sales hierarchy by clothing type and then by manufacturer. 
 
 :::image type="content" source="media/power-bi-visualization-treemaps/pbi-nancy-viz-treemap.png" alt-text="Screenshot of a treemap that shows the hierarchy of product sales values by clothing type and manufacturer.":::
 
-The largest branch rectangle is for **Urban** clothing and the smallest branch is for **Youth**. Within each branch, the leave rectangles reveal the popularity of each manufacturer.
+The largest branch node is for **Urban** clothing and the smallest branch is for **Youth**. Within each branch, the leaf nodes reveal the popularity of each manufacturer.
 
 Let's look at some of the visualization details:
 
-- **Urban** clothing has the highest sales and **Leo** has the lowest.
+- **Urban** clothing has the highest sales and **Youth** has the lowest.
 
 - The most popular manufacturer of **Urban** clothing is **VanArsdel**. **Natura** and **Fama** are slightly less popular.
 
@@ -38,7 +38,9 @@ Let's look at some of the visualization details:
 
 - Across the four clothing types, clothes manufactured by **Natura** and **Aliqui** produce the best sales.
 
-You can compare the number of products sold across the clothing categories by comparing the size and shading of each leaf node. Larger and darker rectangles mean higher value.
+- **Salvus** yields fairly strong sales for **Youth** clothing, but the manufacturer isn't producing noticeable sales in other categories. 
+
+You can compare the number of products sold across the clothing categories by comparing the size and shading of each leaf node. Larger and darker-shaded rectangles (nodes) indicate higher value.
 
 ## When to use a treemap
 
