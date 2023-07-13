@@ -20,11 +20,11 @@ Treemaps display hierarchical data as a set of nested rectangles. Each level of 
 
 The rectangles are arranged by size with the largest branch node at the top left and the smallest branch at the bottom right. The arrangement of the leaf nodes within each branch follows the same order.
 
-Let's consider a scenario where you need to analyze clothing sales data. You want to track product sales by clothing type and manufacturer. The branch nodes can represent the clothing categories: **Urban**, **Rural**, **Youth**, and **Mix**. The leaves can represent the clothing manufacturer data for products sold in each clothing category. The leaf nodes are sized and shaded based on the number of products sold.
+Consider a scenario where you need to analyze clothing sales data. You want to track product sales by clothing type and manufacturer. The branch nodes can represent the clothing categories: **Urban**, **Rural**, **Youth**, and **Mix**. The leaves can represent the clothing manufacturer data for products sold in each clothing category. The leaf nodes are sized and shaded based on the number of products sold.
 
 The treemap represents the product sales hierarchy by clothing type and then by manufacturer. 
 
-:::image type="content" source="media/power-bi-visualization-treemaps/pbi-nancy-viz-treemap.png" alt-text="Screenshot of a treemap that shows the hierarchy of product sales values by clothing type and manufacturer.":::
+:::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-overview.png" alt-text="Screenshot of a treemap that shows the hierarchy of product sales values by clothing type and manufacturer." border="false":::
 
 The largest branch node is for **Urban** clothing and the smallest branch is for **Youth**. Within each branch, the leaf nodes reveal the popularity of each manufacturer.
 
@@ -107,32 +107,34 @@ The following steps create a report and treemap to display sales over time for d
 
    This action configures the *Last Year Sales* data as the **Y-axis** for the chart on the **Visualizations** pane.
 
-   :::image type="content" source="media/power-bi-visualization-treemaps/treemapfirstvalue-new.png" alt-text="Screenshot that shows how to select Last Year Sales and the resulting treemap.":::
+   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-select-total-sales-last-year.png" alt-text="Screenshot that shows the Last Year Sales checkbox selected and the default chart visual created by Power BI." border="false":::
 
 1. To convert the visualization into a treemap, select **Treemap** on the **Visualizations** pane.
 
-   :::image type="content" source="media/power-bi-visualization-treemaps/treemapconvertto-new.png" alt-text="Screenshot that shows how to convert the visual to a treemap.":::  
+   This action exposes the **Category** and **Details** sections on the **Visualizations** pane. The *Last Year Sales* data becomes the **Values** for the chart on the **Visualizations** pane.
+
+   :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-convert-to-treemap.png" alt-text="Screenshot that shows how to convert the visual to a treemap." border="false":::  
 
 1. On the **Data** pane, expand **Item** and select **Category**. 
 
    Power BI updates the treemap to show the size of the rectangles based on total sales by product. The rectangle color represents the product category. The hierarchy visually describes the relative size of total sales by product category. The **Men's** category has the highest sales and the **Hosiery** category has the lowest.
 
-   :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-complete.png" alt-text="Screenshot that shows a treemap for total sales by product.":::
+   :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-add-item-category.png" alt-text="Screenshot that shows the updated treemap for total sales by product." border="false":::
 
 1. On the **Data** pane, expand **Store** and select **Chain**. You can now compare last year's sales by category and store chain.
 
-   :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-details.png" alt-text="Screenshot that shows the updated treemap for total sales by product and by store chain.":::
+   :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-add-store-chain.png" alt-text="Screenshot that shows the updated treemap for total sales by product and by store chain." border="false":::
 
    > [!NOTE]
-   > **Color Saturation** and **Details** can't be used at the same time.
+   > The **Color Saturation** and **Details** features can't be used at the same time.
 
 1. On the treemap, hover over a **Chain** area to reveal the tooltip for that portion of the **Category**.
 
    Hover over **Fashions Direct** in the **090-Home** rectangle to see the tooltip for Fashion Direct's portion of the Home category.
 
-   :::image type="content" source="media/power-bi-visualization-treemaps/treemaphoverdetail-new.png" alt-text="Screenshot that shows how to reveal tooltips for categories in a treemap.":::
+   :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-category-tooltip.png" alt-text="Screenshot that shows how to reveal tooltips for categories in a treemap." border="false":::
 
-## Highlighting and cross-filtering
+## Use highlighting and cross-filtering
 
 When you highlight a **Category** or **Detail** in a treemap, Power BI cross-highlights and cross-filters the other visualizations on the report page. To follow along, either add some visuals to the report page or copy the treemap to one of the other pages in this report. The following treemap was copied over to the **Overview** page. 
 
