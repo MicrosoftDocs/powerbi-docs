@@ -103,7 +103,7 @@
       href: sql-server-analysis-services-embed.md
     - name: "Embed with Azure Analysis Services (AAS)"
       href: embed-azure-analysis-services.md
-    - name: "Single sign-on systems (SSO)"
+    - name: "Embed with Single sign-on (SSO)"
       href: rls-sso.md
     - name: "Embed with object-level security (OLS)"
       href: embed-object-level-security.md
