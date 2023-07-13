@@ -78,15 +78,15 @@ In this section, you create a visualization by selecting a field from the **Data
 
 In this section, you create a visualization and then change its type.
 
-1. On a new page, select **Product** > **Category** and then **Product** > **Count of Product** to add them both to the **Columns** section:
+1. On a new page, select **Product** > **Category** and then **Product** > **Count of Product** to add both fields to the **Columns** section:
 
    :::image type="content" source="media/power-bi-report-add-visualizations-i/change-type-1.png" alt-text="Screenshot that shows the Data pane with the fields selected." lightbox="media/power-bi-report-add-visualizations-i/change-type-1.png":::
 
-1. Change the visualization to a column chart by selecting the **Stacked column chart** button:
+1. Change the visualization to a column chart by selecting the **Stacked column chart** button on the **Visualizations** pane:
 
    :::image type="content" source="media/power-bi-report-add-visualizations-i/change-type-2.png" alt-text="Screenshot that shows the Stacked column chart button."lightbox="media/power-bi-report-add-visualizations-i/change-type-2.png":::
 
-1. To change the way the visual is sorted, select **More options** (...) and then **Sort axis**. Use the menu options to change the direction of the sort axis (ascending or descending) or to change the column that's being sorted on:
+1. To change the way the visual is sorted, select **More options** (...) and then **Sort axis** on the chart. Use the menu options to change the direction of the sort axis (ascending or descending) or to change the column that's being sorted on:
 
    :::image type="content" source="media/power-bi-report-add-visualizations-i/change-type-3.png" alt-text="Screenshot that shows the More options list." lightbox="media/power-bi-report-add-visualizations-i/change-type-3.png":::
   
