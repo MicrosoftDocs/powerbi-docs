@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/11/2023
+ms.date: 07/13/2023
 LocalizationGroup: Visualizations
 ---
 # Use on-object interaction with visuals in your report (preview)
@@ -136,7 +136,10 @@ Select the gear icon to access the two preference settings to **Always show the 
 
 ### Show more than one pane at a time
 
-To open multiple panes at the same time, select <kbd>CTRL</kbd> and select another pane in the pane switcher.
+There are two ways to open multiple panes at the same time:
+
+- Select <kbd>CTRL</kbd> and select another pane in the pane switcher.
+- Right-click an unselected pane and select **Open in new pane**.
 
 :::image type="content" source="media/power-bi-on-object-interaction/multiple-panes-pane-switcher.png" alt-text="Screenshot showing multiple panes open at the same time.":::
 
