@@ -55,6 +55,8 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-report-add-visualizations-i/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 ---
+> [!NOTE]
+> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses or the report needs to be saved in Premium capacity. For more information, see [Share a filtered Power BI report](../collaborate-share/service-share-reports.md).
 
 ## Add visualizations to the report
 
@@ -66,11 +68,11 @@ Create a visualization by selecting a field in the **Data** pane. The type of vi
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/compare-1.png" alt-text="Screenshot that shows a column chart.":::
 
-1. In the Data pane, expand **Time** and drag **FiscalMonth** into the **X-axis** area:  
+1. In the **Data** pane, expand **Time** and drag **FiscalMonth** into the **X-axis** area:  
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/compare-2.png" alt-text="Screenshot that shows a column chart with FiscalMonth as the axis.":::
 
-1. In this step, you [change the visualization type](power-bi-report-change-visualization-type.md). There are many visualization types to choose from. To decide which type to use, see [descriptions of each, tips for best practices, and tutorials](power-bi-visualization-types-for-reports-and-q-and-a.md). We'll use an area chart. In the **Visualizations** pane, select the area chart button:
+1. In this step, you [change the visualization type](power-bi-report-change-visualization-type.md). There are many visualization types to choose from. To decide which type to use, see [descriptions of each, tips for best practices, and tutorials](power-bi-visualization-types-for-reports-and-q-and-a.md). We'll use an area chart. In the **Visualizations** pane, select the **Area chart** button:
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/compare-3.png" alt-text="Screenshot that shows the Area chart button.":::
 
@@ -78,27 +80,23 @@ Create a visualization by selecting a field in the **Data** pane. The type of vi
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/compare-4.png" alt-text="Screenshot that shows the More options menu.":::
 
-1. [Resize the visualization](power-bi-visualization-move-and-resize.md) by selecting the visualization, grabbing one of the dark frame handles and dragging. Make it wide enough to eliminate the scrollbar and small enough to give us enough room to add another visualization.
+1. [Resize the visualization](power-bi-visualization-move-and-resize.md) by selecting the it and dragging one of the frame handles. Make it wide enough to eliminate the scrollbar but small enough to leave room for another visualization:
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png" alt-text="Screenshot showing the area chart visualization.":::
 
 1. Save the report.
 
-### Add a map visualization that looks at sales by location
+### Add a map visualization that illustrates sales by location
 
-1. From the **Store** table, select **Territory**. Power BI recognizes that **Territory** is a location, and creates a map visualization. Drag **Total Stores** into the **Bubble size** area.
+1. In the **Data** pane, expand **Store** and select **Territory**. Power BI recognizes that **Territory** is a location and creates a map visualization. Drag **Total Stores** into the **Bubble size** area:
 
-   :::image type="content" source="media/power-bi-report-add-visualizations-ii/power-bi-map1.png" alt-text="Screenshot showing an area chart.":::
+   :::image type="content" source="media/power-bi-report-add-visualizations-ii/map-1.png" alt-text="Screenshot showing an area chart.":::
 
-1. Add a legend. To see the data by store name, drag **Store** > **Chain** into the **Legend** area.
+1. To add a legend, drag **Store** > **Chain** to the **Legend** area. You now see the data sorted by store name, and there's a legend above the map:
 
-   :::image type="content" source="media/power-bi-report-add-visualizations-ii/power-bi-chain.png" alt-text="Screenshot showing the report canvas with Chain in fields list and Chain in Legend bucket highlighted.":::
-
-> [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md).
+   :::image type="content" source="media/power-bi-report-add-visualizations-ii/map-2.png" alt-text="Screenshot showing the report canvas with Chain in fields list and Chain in Legend bucket highlighted.":::
 
 ## Next steps
 
-* More about [Visualizations in Power BI reports](power-bi-report-visualizations.md).  
-* More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
+* Learn more about [Visualizations in Power BI reports](power-bi-report-visualizations.md).
+* If you have questions, see the [Power BI Community](https://community.powerbi.com/) site.
