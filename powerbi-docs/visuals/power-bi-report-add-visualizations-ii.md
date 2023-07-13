@@ -82,7 +82,7 @@ You can create a visualization by selecting a field in the **Data** pane. Power 
 
 1. [Resize the visualization](power-bi-visualization-move-and-resize.md) by selecting it and dragging one of the frame handles. Make it wide enough to eliminate the scrollbar but small enough to leave room for another visualization:
 
-   :::image type="content" source="media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png" alt-text="Screenshot showing the area chart visualization.":::
+   :::image type="content" source="media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png" alt-text="Screenshot that shows the area chart visualization.":::
 
 1. Save the report.
 
@@ -90,11 +90,11 @@ You can create a visualization by selecting a field in the **Data** pane. Power 
 
 1. In the **Data** pane, expand **Store** and select **Territory**. Power BI recognizes that **Territory** is a location and creates a map visualization. Drag **Total Stores** into the **Bubble size** area:
 
-   :::image type="content" source="media/power-bi-report-add-visualizations-ii/map-1.png" alt-text="Screenshot showing an area chart.":::
+   :::image type="content" source="media/power-bi-report-add-visualizations-ii/map-1.png" alt-text="Screenshot that shows a map chart.":::
 
 1. To add a legend, drag **Store** > **Chain** to the **Legend** area. You now see the data sorted by store name, and there's a legend above the map:
 
-   :::image type="content" source="media/power-bi-report-add-visualizations-ii/map-2.png" alt-text="Screenshot showing the report canvas with Chain in fields list and Chain in Legend bucket highlighted.":::
+   :::image type="content" source="media/power-bi-report-add-visualizations-ii/map-2.png" alt-text="Screenshot that shows Chain in the fields list and in the Legend area.":::
 
 ## Next steps
 
