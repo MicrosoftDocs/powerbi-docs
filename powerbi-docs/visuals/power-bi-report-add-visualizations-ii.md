@@ -30,7 +30,7 @@ In this tutorial, you use the Retail Analysis Sample dataset to create a few vis
 
 1. In Power BI Desktop, select **File** > **Open report**.
 
-1. Browse to and select the **Retail Analysis Sample PBIX file** file, and then select **Open**.
+1. Browse to and select the **Retail Analysis Sample PBIX** file, and then select **Open**.
 
 1. The **Retail Analysis Sample PBIX** file opens in report view. :::image type="icon" source="media/power-bi-report-add-visualizations-ii/power-bi-report-view.png":::
 
@@ -68,7 +68,7 @@ You can create a visualization by selecting a field in the **Data** pane. Power 
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/compare-1.png" alt-text="Screenshot that shows a column chart.":::
 
-1. In the **Data** pane, expand **Time** and drag **FiscalMonth** to the **X-axis** area:  
+1. In the **Data** pane, expand **Time** and drag **FiscalMonth** to the **X-axis** area. You can now see comparisons by month: 
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/compare-2.png" alt-text="Screenshot that shows a column chart with FiscalMonth as the axis.":::
 
@@ -98,5 +98,5 @@ You can create a visualization by selecting a field in the **Data** pane. Power 
 
 ## Next steps
 
-* Learn more about [Visualizations in Power BI reports](power-bi-report-visualizations.md).
+* Learn more about [visualizations in Power BI reports](power-bi-report-visualizations.md).
 * If you have questions, see the [Power BI Community](https://community.powerbi.com/) site.
