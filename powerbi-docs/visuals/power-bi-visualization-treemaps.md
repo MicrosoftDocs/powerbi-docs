@@ -115,13 +115,13 @@ The following steps create a report and treemap to display sales over time for d
 
    :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-convert-to-treemap.png" alt-text="Screenshot that shows how to convert the visual to a treemap." border="false":::  
 
-1. On the **Data** pane, expand **Item** and select **Category**. 
+1. On the **Data** pane, expand **Item** and select the **Category** checkbox. 
 
    Power BI updates the treemap to show the size of the rectangles based on total sales by product. The rectangle color represents the product category. The hierarchy visually describes the relative size of total sales by product category. The **Men's** category has the highest sales and the **Hosiery** category has the lowest.
 
    :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-add-item-category.png" alt-text="Screenshot that shows the updated treemap for total sales by product." border="false":::
 
-1. On the **Data** pane, expand **Store** and select **Chain**. You can now compare last year's sales by category and store chain.
+1. On the **Data** pane, expand **Store** and select the **Chain** checkbox. You can now compare last year's sales by category and store chain.
 
    :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-add-store-chain.png" alt-text="Screenshot that shows the updated treemap for total sales by product and by store chain." border="false":::
 
