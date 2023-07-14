@@ -107,7 +107,7 @@ The following steps create a report and treemap to display sales over time for d
 
    This action configures the *Last Year Sales* data as the **Y-axis** for the chart on the **Visualizations** pane.
 
-   :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-select-total-sales-last-year.png" alt-text="Screenshot that shows the Last Year Sales checkbox selected and the default chart visual created by Power BI." border="false":::
+   :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-select-total-sales-last-year.png" alt-text="Screenshot that shows the Last Year Sales checkbox selected and the default chart visual created by Power BI." border="false":::
 
 1. To convert the visualization into a treemap, select **Treemap** on the **Visualizations** pane.
 
@@ -128,23 +128,45 @@ The following steps create a report and treemap to display sales over time for d
    > [!NOTE]
    > The **Color Saturation** and **Details** features can't be used at the same time.
 
-1. On the treemap, hover over a **Chain** area to reveal the tooltip for that portion of the **Category**.
-
-   Hover over **Fashions Direct** in the **090-Home** rectangle to see the tooltip for Fashion Direct's portion of the Home category.
+1. On the treemap, hover over **Fashions Direct** in the **090-Home** rectangle to see the tooltip for Fashion Direct's portion of the Home category.
 
    :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-category-tooltip.png" alt-text="Screenshot that shows how to reveal tooltips for categories in a treemap." border="false":::
 
 ## Use highlighting and cross-filtering
 
-When you highlight a **Category** or **Detail** in a treemap, Power BI cross-highlights and cross-filters the other visualizations on the report page. To follow along, either add some visuals to the report page or copy the treemap to one of the other pages in this report. The following treemap was copied over to the **Overview** page. 
+When you highlight a **Category** or **Details** item in a treemap, Power BI cross-highlights and cross-filters the other visualizations on the report page.
 
-1. On the treemap, select either a **Category** or a **Chain** within a **Category**. That action cross-highlights the other visualizations on the page. When you select **050-Shoes**, the visualization shows that last year's sales for shoes was **$15,658,108** with **Fashions Direct** accounting for **$2,193,016** of those sales.
+For this exercise, you need at least one other visual on the report page with the treemap.
 
-   :::image type="content" source="media/power-bi-visualization-treemaps/treemaphiliting.png" alt-text="Screenshot of the Store Sales Overview report showing cross-highlighting.":::
+1. Select **File** > **Save** to save the report page with the treemap.
 
-1. In the **Last Year Sales by Chain** pie chart, select the **Fashions Direct** slice to cross-filter the treemap.
+1. At the bottom, right-click the page tab and rename the page **Treemap**.
 
-   :::image type="content" source="media/power-bi-visualization-treemaps/treemap-pie-chart-selected.png" alt-text="Screenshot demonstrates the cross-filtering feature with the pie chart selected.":::
+1. Switch to the **Overview** report page.
+
+1. Right-click the top menu of the pie chart visual and select **Copy** > **Copy visual**.
+
+   :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-copy-visual.png" alt-text="Screenshot that shows how to copy a visual." border="false":::
+
+1. Switch back to your **Treemap** report page.
+
+1. Enter CTRL + V and paste the copy of the pie chart visual onto the page.
+
+1. Select the top of the pie chart and move the visual so all visualizations on the page are fully visible.
+
+Now you're ready to work with the visuals to try highlighting and cross-filtering.
+
+1. Select the treemap to expose the contributing values on the **Visualizations** and **Data** panes.
+
+1. In the treemap, select either a **Category** or a **Chain** within a **Category**.
+
+   That action cross-highlights the other visualizations on the page. When you select **050-Shoes**, the visualization shows that last year's sales for shoes was **$15,658,108** with **Fashions Direct** accounting for **$2,193,016** of those sales.
+
+   :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-highlights.png" alt-text="Screenshot that demonstrates category and chain cross-highlighting for multiple visuals." border="false":::
+
+1. In the pie chart, select the **Fashions Direct** slice to cross-filter the treemap.
+
+   :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-cross-filter.png" alt-text="Screenshot that demonstrates category and chain cross-filtering for multiple visuals." border="false":::
 
 To manage how charts cross-highlight and cross-filter each other, see [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md).
 
