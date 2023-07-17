@@ -103,9 +103,9 @@
       href: develop-scalable-multitenancy-apps-with-powerbi-embedding.md 
   - name: Build multiple-language reports
     items:
-    - name: Plan translation for multiple-language reports
+    - name: Plan translation for reports
       href: multiple-language-translation.md
-    - name: Use locale values in multiple-language reports
+    - name: Use locale values in reports
       href: multiple-language-locale.md
   - name: Admin and deployment
     items:
