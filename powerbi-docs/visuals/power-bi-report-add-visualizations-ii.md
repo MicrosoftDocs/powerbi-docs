@@ -68,7 +68,7 @@ You can create a visualization by selecting a field in the **Data** pane. Power 
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/compare-1.png" alt-text="Screenshot that shows a column chart.":::
 
-1. In the **Data** pane, expand **Time** and drag **FiscalMonth** to the **X-axis** area. You can now see comparisons by month: 
+1. In the **Data** pane, expand **Time** and drag **FiscalMonth** to the **X-axis** area of the **Visualizations** pane. You can now see comparisons by month: 
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/compare-2.png" alt-text="Screenshot that shows a column chart with FiscalMonth as the axis.":::
 
@@ -88,7 +88,7 @@ You can create a visualization by selecting a field in the **Data** pane. Power 
 
 ### Add a map visualization that illustrates sales by location
 
-1. In the **Data** pane, expand **Store** and select **Territory**. Power BI recognizes that **Territory** is a location and creates a map visualization. Drag **Total Stores** into the **Bubble size** area:
+1. In the **Data** pane, expand **Store** and select **Territory**. Power BI recognizes that **Territory** is a location and creates a map visualization. Drag **Total Stores** to the **Bubble size** area on the **Visualizations** pane:
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/map-1.png" alt-text="Screenshot that shows a map chart.":::
 
