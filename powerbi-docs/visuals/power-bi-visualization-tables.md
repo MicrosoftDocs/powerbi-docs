@@ -131,7 +131,7 @@ There are many ways to format a table. We cover only a few scenarios in this art
    
       You can update all values in the column, the column header, and also the total row.
       
-      :::image type="content" source="media/power-bi-visualization-tables/power-bi-apply-format-options.png" alt-text="Screenshot that shows how to set the Apply settings options to use the formatting changes on the column header, the total row, and all values." border="false":::
+      :::image type="content" source="media/power-bi-visualization-tables/power-bi-apply-column-formatting.png" alt-text="Screenshot that shows how to set the Apply settings options to use the formatting changes on the column header, the total row, and all values." border="false":::
 
 There are other ways to format tables in addition to modifying settings. In the next section, we'll take a look at how to apply *conditional formatting*. For more information, see [Apply conditional formatting in tables and matrixes](../create-reports/desktop-conditional-table-formatting.md). 
 
