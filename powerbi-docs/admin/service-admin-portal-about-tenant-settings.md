@@ -39,21 +39,24 @@ Many of the settings can have one of three states:
 
 * **Disabled for the entire organization**: No one in your organization can use this feature.
 
-    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-disabled.png" alt-text="Disabled all setting.":::
+    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-disabled-all.png" alt-text="Disabled all setting.":::
 
 * **Enabled for the entire organization**: Everyone in your organization can use this feature.
 
-    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled.png" alt-text="Enabled all setting.":::
+    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-all.png" alt-text="Enabled all setting.":::
+
+* **Enabled for the entire organization except for certain groups**: Everyone in your organization can use this feature except for users who belong to the specified groups.
+
+    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-all-except.png" alt-text="Enabled all except setting.":::
 
 * **Enabled for a subset of the organization**: Specific security groups in your organization are allowed to use this feature.
 
-    You can also enable a feature for your entire organization, **Except specific security groups**.
+    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-specific.png" alt-text="Enabled subset setting.":::
 
-    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-except.png" alt-text="Enabled subset setting.":::
+  
+* **Enabled for specific groups except for certain groups**: Members of the specified security groups are allowed to use this feature, unless they also belong to an excluded group. This approach ensures that certain users don't have access to the feature even if they're in the allowed group. The most restrictive setting for a user applies.
 
-    You can also combine settings to enable the feature only for a specific group of users and also disable it for a group of users. Using this approach ensures that certain users don't have access to the feature even if they're in the allowed group. The most restrictive setting for a user applies.
-
-    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-except2.png" alt-text="Enable except setting.":::
+    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-specific-except.png" alt-text="Enable except setting.":::
 
 ## Tenant settings
 
