@@ -20,6 +20,10 @@ Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com
 
 ## July 2023
 
+Version 15.7.1806.11, released July 17, 2023
+
+- Fixed issue displaying localized strings.
+
 Version 15.7.1805.14, released July 5, 2023
 
 - Fixed one additional error when opening reports from Power BI service under certain conditions.
@@ -209,5 +213,6 @@ See the September 2020 Power BI Report Builder blog post for the complete list o
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  
 - [Tutorial: Create a paginated report and upload it to the Power BI service](paginated-reports-quickstart-aw.md)
 - [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md)
+
 
 
