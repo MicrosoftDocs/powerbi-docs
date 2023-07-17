@@ -28,7 +28,7 @@ The treemap represents the product sales hierarchy by clothing type and then by 
 
 The largest branch node is for **Urban** clothing and the smallest branch is for **Youth**. Within each branch, the leaf nodes reveal the popularity of each manufacturer.
 
-Let's look at some of the visualization details:
+Let's look at some details:
 
 - **Urban** clothing has the highest sales and **Youth** has the lowest.
 
@@ -140,7 +140,7 @@ For this exercise, you need at least one other visual on the report page with th
 
 1. Select **File** > **Save** to save the report page with the treemap.
 
-1. At the bottom, right-click the page tab and rename the page **Treemap**.
+1. At the bottom, right-click the **Page 1** tab and rename the tab to **Treemap**.
 
 1. Switch to the **Overview** report page.
 
@@ -154,17 +154,17 @@ For this exercise, you need at least one other visual on the report page with th
 
 1. Select the top of the pie chart and move the visual so all visualizations on the page are fully visible.
 
-Now you're ready to work with the visuals to try highlighting and cross-filtering.
+Now you're ready to try highlighting and cross-filtering.
 
 1. Select the treemap to expose the contributing values on the **Visualizations** and **Data** panes.
 
 1. In the treemap, select either a **Category** or a **Chain** within a **Category**.
 
-   That action cross-highlights the other visualizations on the page. When you select **050-Shoes**, the visualization shows that last year's sales for shoes was **$15,658,108** with **Fashions Direct** accounting for **$2,193,016** of those sales.
+   That action cross-highlights the other visualizations on the page. When you select **050-Shoes**, the visualization shows that last year's sales for shoes was **$15,658,108**. **Fashions Direct** merchandise accounts for **$2,193,016** of the sales.
 
    :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-highlights.png" alt-text="Screenshot that demonstrates category and chain cross-highlighting for multiple visuals." border="false":::
 
-1. In the pie chart, select the **Fashions Direct** slice to cross-filter the treemap.
+1. In the pie chart, select the **Fashions Direct** slice to cross-filter the treemap. Power BI highlights the sales for **Fashions Direct** in the treemap.
 
    :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-cross-filter.png" alt-text="Screenshot that demonstrates category and chain cross-filtering for multiple visuals." border="false":::
 
