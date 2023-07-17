@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 03/17/2022
+ms.date: 07/17/2023
 LocalizationGroup: Administration
 ---
 
@@ -39,21 +39,21 @@ Many of the settings can have one of three states:
 
 * **Disabled for the entire organization**: No one in your organization can use this feature.
 
-    ![Disabled all setting](media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-disabled.png)
+    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-disabled.png" alt-text="Disabled all setting.":::
 
 * **Enabled for the entire organization**: Everyone in your organization can use this feature.
 
-    ![Enabled all setting](media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled.png)
+    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled.png" alt-text="Enabled all setting.":::
 
 * **Enabled for a subset of the organization**: Specific security groups in your organization are allowed to use this feature.
 
     You can also enable a feature for your entire organization, **Except specific security groups**.
 
-    ![Enabled subset setting](media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-except.png)
+    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-except.png" alt-text="Enabled subset setting.":::
 
     You can also combine settings to enable the feature only for a specific group of users and also disable it for a group of users. Using this approach ensures that certain users don't have access to the feature even if they're in the allowed group. The most restrictive setting for a user applies.
 
-    ![Enable except setting](media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-except2.png)
+    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-except2.png" alt-text="Enable except setting.":::
 
 ## Tenant settings
 
