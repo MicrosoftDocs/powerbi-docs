@@ -158,7 +158,7 @@ Your app consumers can also request access to your app by searching for the app 
 
 #### Power BI reports with paginated report visuals
 
-When you include Power BI reports that have paginated report visuals, it is recommended to include the the referred paginated reports in the app. This way, the published Power BI report will work with the published version of paginated report instead of the report stored in the workspace.
+When you include Power BI reports that have paginated report visuals, it is recommended to include the referred paginated reports in the app. This way, the published Power BI report will work with the published version of paginated report instead of the report stored in the workspace.
 
 During publishing, Power BI can detect reports with visuals that point at missing paginated reports:
 
