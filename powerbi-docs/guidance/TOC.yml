@@ -101,6 +101,12 @@
     items:
     - name: "Develop scalable multitenancy applications"
       href: develop-scalable-multitenancy-apps-with-powerbi-embedding.md 
+  - name: Build multiple-language reports
+    items:
+    - name: Plan translation for multiple-language reports
+      href: multiple-language-translation.md
+    - name: Use locale values in multiple-language reports
+      href: multiple-language-locale.md
   - name: Admin and deployment
     items:
     - name: "On-premises data gateway sizing"
