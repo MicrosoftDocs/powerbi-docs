@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/29/2023
+ms.date: 06/14/2023
 LocalizationGroup: Create reports
 ---
 # Bookmarks in the Power BI service
@@ -167,6 +167,8 @@ In this release of **personal bookmarks**, there are a few considerations and li
 - This feature is supported in the Power BI mobile apps for iOS and Android tablets and phones, and in the Power BI Windows app.
 
 - Because personal bookmarks capture the exploration state of the current page, personal bookmarks don't capture changes to other pages. For example, if you have sync-slicers in your report and you personalize the sync-slicer to use a different field and capture a personal bookmark, then the personal bookmark only captures the slicer change on the current page.
+
+- You can create up to 20 bookmarks for a single report.
 
 ## Next steps
 

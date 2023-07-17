@@ -19,7 +19,7 @@ This usage scenario focuses on how a business analyst can produce _real-time_ Po
 Real-time reports allow organizations to monitor and make confident decisions based on up-to-date data.
 
 > [!NOTE]
-> In this article, the term _real-time_actually means _near real-time_. Near real-time means that there's always a degree of delay (known as latency), due to data processing and network transmission time.
+> In this article, the term _real-time_ actually means _near real-time_. Near real-time means that there's always a degree of delay (known as latency), due to data processing and network transmission time.
 
 To develop self-service real-time analytics, the business analyst will first need to create (or connect to) a [DirectQuery model](/power-bi/connect-data/service-dataset-modes-understand#directquery-mode). They can then build a report and set up its [automatic page refresh](/power-bi/create-reports/desktop-automatic-page-refresh) settings. Once set up, Power BI automatically refreshes report pages to show current data.
 
@@ -115,7 +115,7 @@ Typically, a [data gateway](/power-bi/connect-data/service-gateway-onprem) is re
 
 ### System oversight
 
-The [activity log](/power-bi/admin/service-admin-auditing) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-adoption-roadmap-system-oversight.md#auditing) to help them understand usage patterns and adoption.
+The [activity log](/power-bi/admin/service-admin-auditing) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption.
 
 By using the [Premium Capacity Metrics app](/power-bi/enterprise/service-premium-metrics-app) that's available to administrators, you can visualize how much of the capacity is being used by low-priority queries. Low-priority queries consist of automatic page refresh queries and model refresh queries. Change detection queries aren't low priority.
 

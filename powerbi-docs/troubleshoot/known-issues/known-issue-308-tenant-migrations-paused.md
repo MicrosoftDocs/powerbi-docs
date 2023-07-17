@@ -6,17 +6,17 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 03/09/2022
+ms.date: 06/06/2023
 ms.custom: known-issue-308
 ---
 
 # Known issue - Tenant Migrations Paused
 
-For customers who have a tenant migration already in the queue, tenant migrations have been paused.  For customers who want to request a new tenant migration, we aren't accepting new cases.
+For customers who have a tenant migration already in the queue, tenant migrations have resumed. For customers who want to request a new tenant migration, we're now accepting new cases at this time.
 
 **APPLIES TO:** ✔️ Power BI Service
 
-**Status:** Open
+**Status:** Fixed: June 3, 2023
 
 **Problem area:** Account and License
 
@@ -24,16 +24,14 @@ For customers who have a tenant migration already in the queue, tenant migration
 
 **Existing tenant migration requests**
 
-We've investigated and identified the issues blocking tenant migrations:
-1. When a customer deletes Premium capacities to prepare for tenant migration, the workspaces are migrated to Shared capacity as a temporary holding space. We discovered that the datamarts cache the capacity ID from the original capacity and stopped working after the migration.
-1. We also discovered a resource-contention issue that can affect the temporary move to Shared capacity and thus block a migration. While the migration logic attempts to move the workspaces temporarily to Shared capacity, the workspace move may be blocked because tenant migration is in progress.
-
-We're preparing to release code fixes for both issues. These changes require especially thorough testing in preproduction environments. The present ETA for resuming migrations is March 31. Out of an abundance of caution, we note this date could change if unexpected results are discovered during testing. We apologize for the inconvenience of our current inability to provide a guaranteed migration timeline.
+We've resumed migrating tenants for customers who have already requested a migration.
 
 **New tenant migration requests**
 
-For customers who want to request a new tenant migration, we aren't accepting new cases.  We're currently experiencing technical difficulties with executing tenant migration. As a result, and to ensure that we can support customers' migration request appropriately, we aren't accepting new requests. We'll resume offering the service once we reach satisfied reliability levels.
+We've resumed accepting cases requesting tenant migrations. Going forward, only customers with Power BI Premium capacities are eligible for tenant migration.
 
 ## Next steps
 
+- [Move between regions](/power-bi/support/service-admin-region-move)
+- [Power BI migration overview](/power-bi/guidance/powerbi-migration-overview)
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)

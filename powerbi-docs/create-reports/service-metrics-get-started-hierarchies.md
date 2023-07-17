@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Get started with hierarchies in scorecards
 ms.topic: how-to
-ms.date: 03/22/2023
+ms.date: 05/02/2023
 ms.custom: intro-get-started
 ---
 

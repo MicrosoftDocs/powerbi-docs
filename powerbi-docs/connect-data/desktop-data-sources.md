@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/14/2022
+ms.date: 05/23/2023
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -35,6 +35,7 @@ The **Get Data** dialog box organizes data types in the following categories:
 * Power Platform
 * Azure
 * Online Services
+* Fabric
 * Other
 
 The **All** category includes all data connection types from all categories.
@@ -84,7 +85,7 @@ The **Database** category provides the following data connections:
 * Data Virtuality LDW
 * Denodo
 * Dremio Software
-* Dremio Cloud (Beta)
+* Dremio Cloud
 * Exasol
 * Indexima
 * InterSystems IRIS (Beta)
@@ -93,6 +94,7 @@ The **Database** category provides the following data connections:
 * Linkar PICK Style / MultiValue Databases (Beta)
 * MariaDB
 * MarkLogic
+* MongoDB Atlas SQL (Beta)
 * TIBCO® Data Virtualization
 
 
@@ -105,6 +107,8 @@ The **Power Platform** category provides the following data connections:
 
 * Power BI datasets
 * Datamarts (preview)
+* Lakehouses (Preview)
+* Warehouses (Preview)
 * Power BI dataflows (Legacy)
 * Common Data Service (Legacy)
 * Dataverse
@@ -128,6 +132,7 @@ The **Azure** category provides the following data connections:
 * Azure HDInsight Spark
 * HDInsight Interactive Query
 * Azure Cost Management
+* Azure Cosmos DB v2 (Beta)
 * Azure Databricks
 * Azure Synapse Analytics workspace (Beta)
 * Azure Time Series Insights (Beta)
@@ -164,11 +169,13 @@ The **Online Services** category provides the following data connections:
 * Zendesk (Beta)
 * Asana (Beta)
 * Assemble Views
+* Autodesk Construction Cloud
 * Automation Anywhere
 * Automy Data Analytics (Beta)
+* CData Connect Cloud
 * Dynamics 365 Customer Insights (Beta)
-* Databricks (Beta)
-* Digital Construction Works Insights (Beta)
+* Databricks
+* Digital Construction Works Insights
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
 * eWay-CRM
@@ -178,17 +185,30 @@ The **Online Services** category provides the following data connections:
 * Hexagon PPM Smart® API
 * Industrial App Store
 * Intune Data Warehouse (Beta)
-* Projectplace for Power BI
+* Planview Projectplace
 * Product Insights (Beta)
 * Profisee (Beta)
 * Quickbase
 * SoftOne BI (Beta)
-* Spigit (Beta)
+* Planview IdeaPlace
 * TeamDesk (Beta)
 * Webtrends Analytics (Beta)
 * Witivio (Beta)
 * Viva Insights
 * Zoho Creator
+
+### Fabric
+
+The **Fabric** category provides the following data connections:
+
+* Warehouse in Microsoft Fabric
+* Power BI datasets
+* Datamarts (preview)
+* KQL Database in Microsoft Fabric
+* Lakehouse (Beta)
+* Dataflows
+* Warehouse (Beta)
+
 
 ### Other data sources
 
@@ -208,13 +228,14 @@ The **Other** category provides the following data connections:
 * OLE DB
 * Acterys : Model Automation & Planning (Beta)
 * Amazon OpenSearch Service (Beta)
-* Anaplan Connector
-* Autodesk Construction Cloud (Beta)
+* Anaplan
 * Solver
 * BitSight Security Ratings
 * BQE Core
 * Bloomberg Data and Analytics
+* Celonis EMS (Beta)
 * Cherwell (Beta)
+* CloudBluePSA (Beta)
 * Cognite Data Fusion
 * Delta Sharing
 * Eduframe (Beta)
@@ -237,12 +258,13 @@ The **Other** category provides the following data connections:
 * Socialbakers Metrics 1.1.0 (Beta)
 * Starburst Enterprise
 * SumTotal
-* SurveyMonkey (Beta)
+* SurveyMonkey
 * Microsoft Teams Personal Analytics (Beta)
 * Tenforce (Smart)List
 * Usercube (Beta)
 * Vena
 * Vessel Insight
+* Wrike (Beta)
 * Zucchetti HR Infinity (Beta)
 * Blank Query
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 03/13/2023
+ms.date: 05/02/2023
 LocalizationGroup: Transform and shape data
 ---
 # Configure Azure Log Analytics for Power BI
@@ -191,13 +191,29 @@ PowerBIDatasetsWorkspace
 | where EventText contains 'refresh'
 | project PowerBIWorkspaceName, DatasetName = ArtifactName, DurationMs
 
+// query count, distinctUsers, avgCPU, avgDuration by workspace for last 30d
+PowerBIDatasetsWorkspace  
+| where TimeGenerated > ago(30d)
+| where OperationName == "QueryEnd" 
+| summarize QueryCount=count()
+    , Users = dcount(ExecutingUser)
+    , AvgCPU = avg(CpuTimeMs)
+    , AvgDuration = avg(DurationMs)
+by PowerBIWorkspaceId
+
 ```
+
+## Sample Power BI Report Template
+
+Explore and get insights of Azure Log Analytics Power BI data using an open-source [Power BI Report Template](https://github.com/microsoft/PowerBI-LogAnalytics-Template-Reports) on GitHub.
+
+
 
 ## Next steps
 
 The following articles can help you learn more about Power BI and about its integration with Azure Log Analytics.
 
-* [Using Azure Log Analytics in Power BI (Preview)](desktop-log-analytics-overview.md)
-* [Azure Log Analytics in Power BI - FAQ (Preview)](desktop-log-analytics-faq.md)
+* [Using Azure Log Analytics in Power BI](desktop-log-analytics-overview.md)
+* [Azure Log Analytics in Power BI - FAQ](desktop-log-analytics-faq.md)
 * [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
 * [Workspaces in Power BI](../../collaborate-share/service-new-workspaces.md)

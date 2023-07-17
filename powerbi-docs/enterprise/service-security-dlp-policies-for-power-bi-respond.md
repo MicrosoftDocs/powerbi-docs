@@ -1,5 +1,5 @@
 ---
-title: Respond to a DLP policy violation
+title: Respond to a DLP policy violation in Power BI
 description: Learn how to respond to a DLP policy violation in Power BI.
 author: paulinbar
 ms.author: painbar
@@ -12,7 +12,7 @@ ms.date: 04/20/2023
 LocalizationGroup: Data from files
 ---
 
-# Respond to a DLP policy violation
+# Respond to a DLP policy violation in Power BI
 
 When a dataset you own violates a DLP policy, you may see a violation warning icon on the dataset in the data hub or workspace list view. If you go to the dataset details page, you'll see a DLP policy tip banner that informs you about the violation. To view and respond to the policy violation, select the **View** button on the policy tip. The **View** button opens a side pain that displays the details of your dataset's DLP policy violations and provides option for responding to them. This article describes the information you see on the side pane and the actions you can take regarding the violations.
 
@@ -39,9 +39,7 @@ The action or combination of actions you see may vary depending on the policy co
 
 ## Next steps
 
-* [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
-* [Data loss prevention policies for Power BI](./service-security-dlp-policies-for-power-bi-overview.md)
-* [Get started with Data loss prevention policies for Power BI](/microsoft-365/compliance/dlp-powerbi-get-started)
-* [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
-* [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)
+* [Data loss prevention policies for Power BI](./service-security-dlp-policies-for-power-bi-overview.md).
+* [Configure a DLP policy for Power BI](./service-security-dlp-policies-for-power-bi-configure.md).
 * [Power BI implementation planning: Data loss prevention for Power BI](/power-bi/guidance/powerbi-implementation-planning-data-loss-prevention)
+* [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)

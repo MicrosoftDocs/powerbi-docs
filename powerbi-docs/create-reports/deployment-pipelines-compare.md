@@ -6,11 +6,15 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.date: 01/31/2023
+ms.custom: fabric
+ms.date: 05/18/2023
 ms.search.form: Deployment pipelines operations
 ---
 
 # Compare content in different deployment stages
+
+> [!IMPORTANT]
+> Deployment pipelines is moving to Microsoft Fabric and this article will be deprecated soon. For an updated version of this article go to [Compare content in different deployment stages](/fabric/cicd/deployment-pipelines/compare-pipeline-content).
 
 Before you deploy content to a different stage, it can be helpful to see the differences between the two stages. The deployment pipeline home page compares the three deployment stages and indicates if there are any differences. Use the **Compare** and **Change review** buttons to display the content of each pipeline and see exactly which items are different and where those differences are.
 
@@ -106,10 +110,10 @@ Close the window when you finish examining the differences and deploy to the nex
 
 ## Considerations and limitations
 
-- The *change review* feature only supports schema changes for textual item types. Currently it supports datasets, excluding data modeling format v1, and dataflows.
+- The *change review* feature only supports schema changes for textual item types. Currently it supports datasets, excluding data modeling format v1, paginated reports, and dataflows.
 
 - An item can be tagged as *Different*, but still not qualify for change review. In these cases, the **Change review** button is disabled. For example:
-  - Settings changes such as name change.
+  - Settings changes such as item rename or datasource changes.
   - Item type isn't yet supported.
   - Item has an unknown status because the comparison process wasn't completed.
 

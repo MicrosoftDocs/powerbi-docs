@@ -1,13 +1,13 @@
 ﻿---
 title: Private endpoints for secure access to Power BI
 description: Use the Azure private link feature to provide secure access to Power BI using Azure Networking private endpoints. Data is sent privately instead of over the internet.
-author: davidiseminger
-ms.author: davidi
+author: DandanZhang
+ms.author: danzhang
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 04/18/2023
+ms.date: 06/08/2023
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -21,6 +21,9 @@ When private link connections are used, those connections go through the Microso
 To learn more about Azure Private Link, see [What is Azure Private Link](/azure/private-link/private-link-overview).
 
 Enabling private endpoints has an impact on many items, so please review the [considerations and limitations](#considerations-and-limitations) section in this article before enabling private endpoints.
+
+>[!IMPORTANT]
+>Private endpoints are not supported for Microsoft Fabric, including Microsoft Fabric trial capacities.
 
 ## Understand private endpoints
 
@@ -113,6 +116,8 @@ After this process is finished, you can move on to the next step.
       ]
     }
     ```
+    
+    If you're using an Azure Government cloud, location should be the region name of the tenant. For example, if the tenant is in US Gov Texas, you should put  "location": "usgovtexas" in the ARM template. The list of Power BI US Government regions can be found in the [Power BI for US government article](../enterprise/service-govus-overview.md#connect-government-and-global-azure-cloud-services).
 
 4. On the review screen, select **Create** to accept the terms and conditions.
 
@@ -291,6 +296,9 @@ Finally, you can optionally disable public access for Power BI.
 
 If you disable public access for Power BI, certain constraints on access to Power BI services are put into place, described in the next section.
 
+>[!IMPORTANT]
+>When you turn on *Block Internet Access*, Microsoft Fabric is disabled.
+
 To disable public access for Power BI, sign to the [Power BI](https://app.powerbi.com) service as an administrator, and navigate to the **Admin portal**. Select **Tenant settings** and scroll to the **Advanced networking** section. Enable the toggle button in the **Block Public Internet Access** section, as shown in the following image. It takes approximately 15 minutes for the system to disable your organization's access to Power BI from the public Internet.
 
 
@@ -336,7 +344,7 @@ There are a few considerations to keep in mind while working with private endpoi
 ## Next steps
 
 - [Administering Power BI in your Organization](../admin/service-admin-administering-power-bi-in-your-organization.md)  
-- [Understanding the Power BI administrator role](../admin/service-admin-role.md)  
+- [Understanding Power BI administration roles](../admin/service-admin-role.md)  
 - [Track user activities in Power BI](../admin/service-admin-auditing.md)  
 - [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
 

@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 02/09/2023
+ms.date: 05/12/2023
 ms.custom: known-issue-321
 ---
 
@@ -16,7 +16,7 @@ When using the Performance analyzer in Power BI Desktop, you can pause the visua
 
 **APPLIES TO:** ✔️ Power BI Desktop
 
-**Status:** Open
+**Status:** Fixed: March 23, 2023
 
 **Problem area:** Create and Author Data
 

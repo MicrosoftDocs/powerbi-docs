@@ -6,12 +6,15 @@ ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.date: 01/04/2023
-ms.custom: intro-deployment
-ms.search.form: Best practices for deployment pipelines, Create deployment pipeline, Introduction to Deployment pipelines
+ms.date: 05/09/2023
+ms.custom: fabric, intro-deployment
+ms.search.form: Best practices for deployment pipelines, Create deployment pipeline, Introduction to Deployment pipelines, Best practices for Deployment pipelines
 ---
 
 # Deployment pipelines best practices
+
+> [!IMPORTANT]
+> Deployment pipelines is moving to Microsoft Fabric and this article will be deprecated soon. For an updated version of this article go to [Lifecycle management best practices](/fabric/cicd/best-practices-cicd).
 
 This article provides guidance for business intelligence (BI) creators who are managing their content throughout its lifecycle. The article focuses on the use of deployment pipelines as a BI content lifecycle management tool.
 

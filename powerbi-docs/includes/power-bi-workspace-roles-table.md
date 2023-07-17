@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.topic: include
 ms.date: 07/01/2021
 ms.author: maggies
-ms.custom: include file
+ms.custom: include file, fabric
 ---
 
 |Capability   | Admin  | Member  | Contributor  | Viewer |

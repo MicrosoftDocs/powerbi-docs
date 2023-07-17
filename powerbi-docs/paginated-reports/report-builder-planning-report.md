@@ -33,7 +33,7 @@ You might want to narrow the scope of the report to specific users or locations,
   
 ## Do you need to create calculations? 
   
-Sometimes, your data source and datasets don't contain the exact fields that you need for your report. You might have to create your own calculated fields. For example, you can multiply the price per unit times the quantity to get a line item sales amount. Expressions are also used to provide conditional formatting and other advanced features. For more information, see [Expressions in Power BI Report Builder](report-builder-expressions.md).  
+Sometimes, your data source and datasets don't contain the exact fields that you need for your report. You might have to create your own calculated fields. For example, you can multiply the price per unit times the quantity to get a line item sales amount. Expressions are also used to provide conditional formatting and other advanced features. For more information, see [Expressions in Power BI Report Builder](expressions/report-builder-expressions.md).  
   
 ## Do you want to hide report items initially?
   

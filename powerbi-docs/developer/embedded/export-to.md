@@ -45,7 +45,7 @@ To make sure the export doesn't begin before the visual finishes rendering use t
 
 The API is asynchronous. When the [exportToFile](/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
-During polling, the API returns a number that represents the amount of work completed. The work in each export job is calculated based on the total of exports in the job. An export includes exporting a single visual, or a page with or without bookmarks. All exports have the same weight. If, for example, your export job includes exporting a report with 10 pages, and the polling returns 70, it means the API has processed seven out of the 10 pages in the export job.
+During polling, the API returns a number that represents the amount of work completed. The work in each export job is calculated based on the total of exports in the job. An export includes exporting a single visual, or a page with or without bookmarks. All exports have the same weight. If for example, your export job includes exporting a report with 10 pages, and the polling returns 70, it means the API has processed seven out of the 10 pages in the export job.
 
 When the export is complete, the polling API call returns a [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL will be available for 24 hours.
 
@@ -384,8 +384,9 @@ private async Task<ExportedFile> ExportPowerBIReport(
 * Exported reports can't exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels aren't supported.
 * The number of exports (single visuals or report pages) that can be included in a single exported report is 50 (not including exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
-* [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported.
+* [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported for Power BI report export to file.
 * Exporting a Power BI report to file using the `exportToFile` API, isn't supported for **Premium Per User (PPU)**.
+* The `exportToFile` API will export the report with default value if used without bookmarks or reportLevelFilters.
 * The Power BI visuals listed below aren't supported. When you export a report containing these visuals, the parts of the report that contain these visuals won't render, and will display an error symbol.
   * Uncertified Power BI custom visuals
   * R visuals
@@ -394,6 +395,7 @@ private async Task<ExportedFile> ExportPowerBIReport(
   * Power Automate
   * Paginated report visual
   * Visio
+  * ArcGIS visuals
 
 ## Next steps
 

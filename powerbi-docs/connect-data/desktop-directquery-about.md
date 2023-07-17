@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/23/2022
+ms.date: 06/21/2023
 LocalizationGroup: Connect to data
 ---
 # DirectQuery in Power BI
@@ -518,11 +518,10 @@ Power BI uses this pattern because the analyst provides the SQL query directly. 
 
 For more information about DirectQuery in Power BI, see:
 
-- [Data sources supported by DirectQuery](power-bi-data-sources.md)
 - [Use DataQuery in Power BI Desktop](desktop-use-directquery.md)
 
 This article described aspects of DirectQuery that are common across all data sources. See the following articles for details about specific sources:
 
 - [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
 - [DirectQuery and SAP BW](desktop-directquery-sap-bw.md)
-- [Use DirectQuery for Power BI datasets and Analysis Services (preview)](desktop-directquery-datasets-azure-analysis-services.md)
+- [Use DirectQuery for Power BI datasets and Analysis Services](desktop-directquery-datasets-azure-analysis-services.md)

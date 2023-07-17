@@ -8,10 +8,11 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 03/13/2023
+ms.date: 07/10/2023
 
 LocalizationGroup: Share your work
 ---
+
 # Publish an app in Power BI
 
 In Power BI, you can create official packaged content, then distribute it to a broad audience as an *app*. You [create apps in *workspaces*](service-create-the-new-workspaces.md), where you can collaborate on Power BI content with your colleagues. Then you can publish the finished app to large groups of people in your organization. The [app consumer view](#app-consumer-view) section of this article outlines the app consumer experience in the Power BI service and in the Power BI mobile apps.
@@ -96,25 +97,36 @@ On the **Audience** tab, you create and manage audience groups within the app.
     
 1. Select the hide/show icon next to each item in the workspace to determine the content that this app audience can see.
 
+    
+    >[!IMPORTANT]
+    >
+    >- Hiding content from the audience makes it unavailable in the published app for that audience.
+    >- Dashboard tiles pointing at reports that are hidden from the audience no longer work. Instead they display an error: "The report shown in this tile doesn’t exist or you don’t have permission to view it."
+    >- Paginated reports with subreports don't display the content of the subreport if it's hidden from the audience.
+    >- Users of drillthrough reports can't navigate to the destination reports if the destination reports are hidden.
+    >
+    >To address all of these issues, make sure that all the dependent reports are available for the audience.
+     
 1. In the **Manage audience access** pane, specify groups or users to add to the current audience group. 
 
     :::image type="content" source="media/service-create-distribute-apps/audience-tab.png" alt-text="Screenshot of Manage audience access tab.":::
     
     >[!IMPORTANT]
-    >If your app relies on datasets from other workspaces, make sure that all app users have access to the underlying datasets.
     >
-    >If the app or report is in the same workspace as the dataset, make sure you add the report associated with the dataset to the app as well.
+    >- If your app relies on datasets from other workspaces, make sure that all app users have access to the underlying datasets.
+    >- If the app or report is in the same workspace as the dataset, make sure you add the report associated with the dataset to the app as well.
      
 1. For each audience group, grant access to either all people in your organization or specific users or groups. You can also expand the **Advanced** option to configure the following settings per audience group: 
 
-    **Allow users to share the datasets in this app**: This option gives app consumers permission to share the app and underlying datasets of the app audience.
+    **Allow users to share the datasets in this app**: This option gives app consumers permission to share the underlying datasets of the app audience.
     
     **Allow users to build content with the datasets in this app**: This option lets your app consumers create their own reports and dashboards based on the app audience datasets.
     
     :::image type="content" source="media/service-create-distribute-apps/advance-options-manage-audience-access-pane.png" alt-text="Screenshot of Advanced settings in Manage audience access pane.":::
 
     > [!NOTE]
-    > The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least the Contributor role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
+    > - The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least the Contributor role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
+    > - Build permissions only apply to datasets _in the same workspace_ as the app. If datasets are in other workspaces, you must explicitly grant build permissions on those datasets, or add the users as at least the Contributor Role in that workspace.
 
 ### Allow saving a copy of a report
 
@@ -269,7 +281,7 @@ Things to keep in mind about publishing apps:
 * Having multiple audiences isn't fully supported in deployment pipelines. Content visibility of new content that you add to an org app must still be managed manually via audience management.
 * You can't open an added link or see its content if you chose to open the link in the content area.
 * Apps can have a maximum of 200 dashboards.
-* If you include a report that uses chained datasets, also known as [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. 
+* If you include a report that uses chained datasets, also known as [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Azure AD Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
 
 ## Next steps
 
@@ -278,3 +290,5 @@ Things to keep in mind about publishing apps:
 * [Power BI apps for external services](../connect-data/service-connect-to-services.md)
 * [Power BI Admin Portal](../admin/service-admin-portal.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+

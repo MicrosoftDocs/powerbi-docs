@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/14/2023
+ms.date: 07/10/2023
 LocalizationGroup: Data refresh
 ---
 
@@ -278,9 +278,6 @@ To ensure that a parameterized dataset accesses the correct data, you must confi
 
 ![Configure query parameters](media/refresh-data/configure-query-parameters.png)
 
-
-
-
 ## Refresh and dynamic data sources
  
 A *dynamic data source* is a data source in which some or all of the information required to connect can't be determined until Power Query runs its query, because the data is generated in code or returned from another data source. Examples include: the instance name and database of a SQL Server database; the path of a CSV file; or the URL of a web service. 
@@ -318,9 +315,12 @@ Note also that the configured refresh time might not be the exact time when Powe
 
 ### Getting refresh failure notifications
 
-By default, Power BI sends refresh failure notifications through email to the dataset owner so that the owner can act in a timely manner should refresh issues occur. Power BI also sends you a notification when the service disables your schedule due to consecutive failures. Microsoft recommends that you leave the checkbox **Send refresh failure notification emails dataset owner** enabled.
+By default, Power BI sends refresh failure notifications to the dataset owner through email, so that they can act in a timely manner should refresh issues occur. If the owner has the Power BI app on their mobile device, they will also get the failure notification there. Power BI also sends an email notification when the service disables a scheduled refresh due to consecutive failures. Microsoft recommends that you leave the checkbox **Send refresh failure notification emails dataset owner** enabled.
 
-It's also a good idea to specify additional recipients by using the **Email these contacts when the refresh fails** textbox. The specified recipients receive refresh failure notifications in addition to the dataset owner. This might be a colleague taking care of your datasets while you are on vacation. It could also be the email alias of your support team taking care of refresh issues for your department or organization. Sending refresh failure notifications to others in addition to the dataset owner is helpful to ensure issues get noticed and addressed in a timely manner.
+It's also a good idea to specify additional recipients for scheduled refresh failure notifications by using the **Email these contacts when the refresh fails** textbox. Specified recipients receive refresh failure notifications via email and push notifications to the mobile app, just like the dataset owner does. Specified recipients might include a colleague taking care of your datasets while you are on vacation, or the email alias of your support team taking care of refresh issues for your department or organization. Sending refresh failure notifications to others in addition to the dataset owner helps ensure that issues get noticed and addressed in a timely manner.
+
+> [!NOTE]
+> Push notifications to the mobile apps do not support group aliases.
 
 Note that Power BI not only sends notifications on refresh failures but also when the service pauses a scheduled refresh due to inactivity. After two months, when no user has visited any dashboard or report built on the dataset, Power BI considers the dataset inactive. In this situation, Power BI sends an email message to the dataset owner indicating that the service paused the refresh schedule for the dataset. See the following screenshot for an example of such a notification.
 
