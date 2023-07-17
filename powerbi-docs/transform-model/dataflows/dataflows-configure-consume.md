@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/22/2023
+ms.date: 07/17/2023
 LocalizationGroup: Data from files
 ---
 # Configure and consume a dataflow
@@ -43,6 +43,10 @@ The **Settings** options provide many options for your dataflow, as the followin
 
 > [!NOTE]
 > Users with a Pro license or a Premium Per User (PPU) can create a dataflow in a Premium workspace.
+
+> [!CAUTION]
+> If a workspace is deleted that contains dataflows, all dataflows in that workspace are also deleted. Even if recovery of the workspace is possible, you cannot recover deleted dataflows, either directly or through support from Microsoft.
+
 
 ## Refresh a dataflow
 
