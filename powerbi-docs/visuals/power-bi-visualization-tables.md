@@ -119,25 +119,29 @@ There are many ways to format a table. We cover only a few scenarios in this art
 
 1. You can also format individual columns and headers by configuring options in the **Specific column** section.
 
-   1. To start, expand **Specific column** and select the column to format from the drop-down list.
+   1. Expand **Specific column** and select a column to format from the drop-down list.
    
-      The data values in the selected column determine the available formatting options. In this example, we update formatting for the _This Year Sales_ column.
+      The data values in the selected column determine the available formatting options. Let's begin with the _This Year Sales_ column.
 
-   1. Update some format settings, such as font color, background, alignment, and so on.
+   1. Update some format settings, such as font color and background shading.
 
       :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-specific-column.png" alt-text="Screenshot that shows how to select the This year sales column to update the formatting options." border="false":::
    
    1. After you adjust the settings, toggle the options in the **Apply settings to** section to specify how to apply the updated settings.
    
-      You can update all values in the column, the column header, and also the total row.
+      Let's apply the changes to all values in the column and also the total row.
       
       :::image type="content" source="media/power-bi-visualization-tables/power-bi-apply-column-format.png" alt-text="Screenshot that shows how to set the Apply settings options to use the formatting changes on the column header, the total row, and all values." border="false":::
 
-Here's our updated table:
+   1. Adjust specific column settings for the_This Year Sales Status_ column. Specify center alignment for the values only.
+
+   1. Save the report page for the updated table.
+
+Here's an example of an updated table:
 
 :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format-updates.png" alt-text="Screenshot that shows the table with updated format settings for text size, color, and wrapping, gridline color, and background shading." border="false":::
 
-You can format tables in other ways than modifying settings. In the next section, we'll take a look at how to apply *conditional formatting*.
+You can also format tables in other ways. In the next section, we'll take a look at how to apply *conditional formatting*.
 
 ### Conditional formatting
 
