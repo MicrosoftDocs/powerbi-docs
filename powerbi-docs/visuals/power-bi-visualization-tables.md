@@ -252,9 +252,9 @@ To copy the value of a single cell:
 
 ### Copy multiple cells
 
-To copy the values in more than one cell:
+To copy the values for more than one cell:
 
-1. Select a contiguous range of cells, or use CTRL (+ select) to select multiple cells that aren't contiguous.
+1. Select a contiguous range of cells, or use CTRL (+ select) to choose multiple cells that aren't contiguous.
 
 1. Right-click inside a selected cell.
 
@@ -265,7 +265,7 @@ To copy the values in more than one cell:
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-copy-selection.png" alt-text="Screenshot that shows how to copy multiple cell values at the same time to use in other applications." border="false":::
 
-## Adjust table column width
+## Adjust column width
 
 Sometimes Power BI truncates a column heading in a report and on a dashboard. To show the entire column name, hover over the space to the right of the heading to reveal the double arrows icon. Select and move the double arrows icon to resize the column.
 
