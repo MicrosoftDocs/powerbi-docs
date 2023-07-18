@@ -54,7 +54,7 @@ Everyone in a user group gets the role that you've assigned. If someone is in se
 
 <sup>1</sup> Contributors can [update the app that's associated with the workspace](../collaborate-share/service-create-the-new-workspaces.md#allow-contributors-to-update-the-app), if the workspace Admin delegates this permission to them. However, they can't publish a new app or change who has permission to edit it.
 
-<sup>2</sup> Contributors and Viewers can also share items in a workspace or an app, including datasets, if the app creator selected **Allow users to share the datasets in this app**. See the [Create and manage multiple audiences](../collaborate-share/service-create-the-new-workspaces.md#create-and-manage-multiple-audiences) section of "Publish an app in Power BI."
+<sup>2</sup> Contributors and Viewers can also share items in a workspace or an app, including datasets, if the app creator selected **Allow users to share the datasets in this app**. See the [Create and manage multiple audiences](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences) section of "Publish an app in Power BI."
 
 <sup>3</sup> To copy a report to another workspace, and to create a report in another workspace based on a dataset in the current workspace, you need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md). You also need at least the Contributor role on the source and destination workspaces. For datasets in the original workspace, if you have at least the Contributor role, you automatically have Build permission through your workspace role. For details, see [Copy reports from other workspaces](../connect-data/service-datasets-copy-reports.md).
 
