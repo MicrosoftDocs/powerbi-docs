@@ -13,9 +13,6 @@ ms.date: 07/19/2023
 
 Every report that loads in the Power BI service initializes with a user context that identifies a *language* and a geographical region known as a *locale*. In most cases, a locale identifies a country. The Power BI service tracks the combination of the user's language and locale using a *culture name*.
 
-> [!TIP]
-> Refer to this [live demo](https://multilanguagereportdemo.azurewebsites.net/) to see an example of a multiple-language report. You can also [download the demo](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/ProductSalesMultiLanguage.pbix) to see reports in Power BI Desktop.
-
 A culture name is usually a lower-case language identifier and an upper-case locale identifier separated by a hyphen. The culture name `en-US` identifies a user in the United States who speaks English. A culture name of `es-ES` identifies a user in Spain who speaks Spanish. A culture name of `fr-FR` identifies a user in France who speaks French. A culture name of `de-DE` identifies a user in Germany who speaks German.
 
 | USERCULTURE | Language | Locale        |
@@ -27,6 +24,8 @@ A culture name is usually a lower-case language identifier and an upper-case loc
 
 > [!NOTE]
 > In some cases, a culture name also includes other information. For example, there are two different culture names for the language Serbian in Serbia, which are `sr-Cyrl-RS` and `sr-Latn-RS`. The part in the middle known as the script (*Cyrl* and *Latn*) indicates whether to use the Cyrillic alphabet or the Latin alphabet. For more information, see [RFC 4646](https://datatracker.ietf.org/doc/html/rfc4646).
+
+## Organize project for metadata translation
 
 At the start of a project that involves creating a new Power BI dataset with metadata translation, list the culture names that you plan to support. Next, extend the dataset by adding metadata translations for each culture name.
 
@@ -42,7 +41,7 @@ You don't need to supply metadata translations for dataset's default language. P
 
 It's possible to explicitly add metadata translation for the default language. Use this approach sparingly. Power BI Desktop doesn't support loading metadata translations in its report designer. Instead, Power BI Desktop only loads dataset object names. If you explicitly add metadata translations for the default language, Power BI reports look different in Power BI Desktop than they do in the Power BI service.
 
-### Load a report in Power BI
+## Load a report in Power BI
 
 When a user navigates to a Power BI report with an HTTP GET request, the browser transmits an HTTP header named `Accept-Language` with a value set to a valid culture name. The following screenshot shows a GET request that transmits an `Accept-Language` header value of `en-US`.
 
@@ -57,7 +56,7 @@ When you open a Power BI report in the Power BI service, you can override the `A
 > [!NOTE]
 > Adding the `language` parameter to report URLs provides a convenient way to test metadata translations in the Power BI service. This technique doesn't require you to reconfigure any settings on your local machine or in your browser.
 
-### Support multiple locales for a single language
+## Support multiple locales for a single language
 
 You might need to support multiple locales for a single spoken language. Consider a scenario with users who speak French but live in different countries, such as France, Belgium, and Canada. You publish a dataset with a default language of `en-US` and metadata translations for three more culture names including `es-ES`, `fr-FR`, and `de-DE`.
 
@@ -76,13 +75,13 @@ We recommend that you add metadata translation for any culture name you want to 
 
 :::image type="content" source="./media/multiple-language-locale/dataset-definition-english-metadata.png" alt-text="Diagram shows dataset objects and their metadata translations including three French locales." lightbox="./media/multiple-language-locale/dataset-definition-english-metadata.png":::
 
-### Implement translations using measures and USERCULTURE
+## Implement translations using measures and USERCULTURE
 
 Another feature in Power BI that helps with building multiple-language reports is the Data Analysis Expressions (DAX) `USERCULTURE` function. When called inside a measure, the `USERCULTURE` function returns the culture name of the current report loading context. This approach makes it possible to write DAX logic in measures that implement translations dynamically.
 
 You can implement translations dynamically by calling `USERCULTURE` in a measure, but you can't achieve the same result with calculated tables or calculated columns. The DAX expressions for calculated tables and calculated columns get evaluated at dataset load time. If you call the `USERCULTURE` function in the DAX expression for a calculated table or calculated column, it returns the culture name of the dataset's default language. Calling `USERCULTURE` in a measure returns the culture name for the current user.
 
-The live demo displays the `USERCULTURE` return value in the upper right corner of the report banner. You don't typically display a report element like this in a real application.
+The example report displays the `USERCULTURE` return value in the upper right corner of the report banner. You don't typically display a report element like this in a real application.
 
 :::image type="content" source="./media/multiple-language-locale/userculture-function-demo.png" alt-text="Screenshot shows the demo report with the locale displayed in the corner of the browser." lightbox="./media/multiple-language-locale/userculture-function-demo.png":::
 
@@ -99,7 +98,7 @@ Product Sales Report Label = SWITCH( USERCULTURE() ),
 )
 ```
 
-### Format dates and numbers with current user locale
+## Format dates and numbers with current user locale
 
 You can translate dynamically by writing a DAX expression in a measure with conditional logic based on the user's culture name. In most cases, you aren't required to write conditional DAX logic based on the user's locale because Power BI visuals automatically handle locale-specific formatting behind the scenes.
 
@@ -109,12 +108,13 @@ In this simple scenario, you build a report for an audience of report consumers 
 
 Here are a few examples of how a date value formatted with **Short Date** appears when loaded under different locales.
 
-| en-US | 12/31/2022 |
-|-------|------------|
-| en-GB | 31/12/2022 |
-| pt-PT | 31-12-2022 |
-| de-DE | 31.12.2022 |
-| ja-JP | 2022/12/31 |
+| Locale | Format     |
+|:-------|:-----------|
+| en-US  | 12/31/2022 |
+| en-GB  | 31/12/2022 |
+| pt-PT  | 31-12-2022 |
+| de-DE  | 31.12.2022 |
+| ja-JP  | 2022/12/31 |
 
 ## Next steps
 
