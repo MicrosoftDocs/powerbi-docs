@@ -286,6 +286,8 @@
       href: ../visuals/power-bi-visualization-funnel-charts.md
     - name: KPI visuals
       href: ../visuals/power-bi-visualization-kpi.md
+    - name: Line charts
+      href: ../visuals/power-bi-line-chart.md
     - name: Paginated report visuals
       href: ../visuals/paginated-report-visual.md
     - name: Metrics visuals
