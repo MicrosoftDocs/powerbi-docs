@@ -82,7 +82,7 @@ You can create the table shown at the beginning of this article and display sale
 
     :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-1.png" alt-text="Screenshot that shows the Category checkbox selected and the default table visual created by Power BI." border="false":::
 
-    This action configures the *Category* data as a **Column** for the table on the **Visualizations** pane.
+    This action configures the *Category* data as a **Columns** for the table on the **Visualizations** pane.
     
     Let's add more categories to the table.
 
@@ -90,13 +90,13 @@ You can create the table shown at the beginning of this article and display sale
 
     :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-2.png" alt-text="Screenshot that shows several checkboxes selected in the Data pane and the table visual updated by Power BI." border="false":::
 
-    Power BI adds the selected data items to the **Column** sections for the table on the **Visualizations** pane.
+    Power BI adds the selected data items to the **Column*s* sections for the table on the **Visualizations** pane.
 
 1. On the **Visualizations** pane, rearrange the data fields in the **Columns** section to match the order shown in the following image:
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-3.png" alt-text="Screenshot that shows the ordered table data fields in the Columns section of the Visualizations pane." border="false":::
 
-   To move a column on the **Visualizations** pane, select and hold the field in the **Column** section. Drag the field to the new location within the order of columns and then release the field. The order of the columns in the table visual updates to match the new order of the fields in the **Column** section.
+   To move a column on the **Visualizations** pane, select and hold the field in the **Columns** section. Drag the field to the new location within the order of columns and then release the field. The order of the columns in the table visual updates to match the new order of the fields in the **Columns** section.
 
 ## Format the table
 
@@ -123,17 +123,21 @@ There are many ways to format a table. We cover only a few scenarios in this art
    
       The data values in the selected column determine the available formatting options. In this example, we update formatting for the _This Year Sales_ column.
 
-      :::image type="content" source="media/power-bi-visualization-tables/power-bi-column-formatting.png" alt-text="Screenshot that shows how to select the This year sales column to update the formatting options." border="false":::
-
    1. Update some format settings, such as font color, background, alignment, and so on.
+
+      :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-specific-column.png" alt-text="Screenshot that shows how to select the This year sales column to update the formatting options." border="false":::
    
    1. After you adjust the settings, toggle the options in the **Apply settings to** section to specify how to apply the updated settings.
    
       You can update all values in the column, the column header, and also the total row.
       
-      :::image type="content" source="media/power-bi-visualization-tables/power-bi-apply-column-formatting.png" alt-text="Screenshot that shows how to set the Apply settings options to use the formatting changes on the column header, the total row, and all values." border="false":::
+      :::image type="content" source="media/power-bi-visualization-tables/power-bi-apply-column-format.png" alt-text="Screenshot that shows how to set the Apply settings options to use the formatting changes on the column header, the total row, and all values." border="false":::
 
-There are other ways to format tables in addition to modifying settings. In the next section, we'll take a look at how to apply *conditional formatting*. For more information, see [Apply conditional formatting in tables and matrixes](../create-reports/desktop-conditional-table-formatting.md). 
+Here's our updated table:
+
+:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format-updates.png" alt-text="Screenshot that shows the table with updated format settings for text size, color, and wrapping, gridline color, and background shading." border="false":::
+
+You can format tables in other ways than modifying settings. In the next section, we'll take a look at how to apply *conditional formatting*.
 
 ### Conditional formatting
 
@@ -181,8 +185,7 @@ With conditional formatting for tables, you can specify icons, URLs, cell backgr
 
  :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-icons.png" alt-text="Screenshot of table with icons added to column.":::
 
-For more information about conditional formatting, including [totals and subtotals](../create-reports/desktop-conditional-table-formatting.md#totals-and-subtotals), see the article on [conditional formatting](../create-reports/desktop-conditional-table-formatting.md). 
-
+For more information about conditional formatting, see [Apply conditional formatting in tables and matrixes](../create-reports/desktop-conditional-table-formatting.md). The article includes ideas for how to format [totals and subtotals](../create-reports/desktop-conditional-table-formatting.md#totals-and-subtotals).
 
 ## Copy table values into other applications
 
