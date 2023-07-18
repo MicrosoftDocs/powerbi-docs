@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/18/2023
+ms.date: 07/19/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -233,7 +233,7 @@ For more information about conditional formatting, see [Apply conditional format
 
 ## Copy table values into other applications
 
-Your table or matrix might include content that you'd like to use in other applications, such as Dynamics CRM, Excel, and even other Power BI reports. In Power BI, when you right-click inside a cell, you can copy the data in a single cell or a selection of cells onto your clipboard. You can then paste the clipboard contents into the other applications.
+Your table or matrix might include content that you'd like to use in other applications, such as Dynamics CRM, Excel, and even other Power BI reports. In Power BI, when you right-click inside a cell, you can copy the data in a single cell or a selection of cells onto your clipboard. You can then paste the clipboard contents into other applications.
 
 ### Copy single cell
 
@@ -243,9 +243,12 @@ To copy the value of a single cell:
 
 1. Right-click inside the cell.
 
-1. Select **Copy** > **Copy value** to copy the _unformatted_ cell value to your clipboard.
+1. Select **Copy** > **Copy value** to copy the cell value to your clipboard.
 
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-copy-value.png" alt-text="Screenshot shows Copy selected with the Copy value option selected.":::
+   > [!NOTE]
+   > Power BI copies only the data value in the cell. Any formatting applied to the cell value isn't copied.
+
+   :::image type="content" source="media/power-bi-visualization-tables/power-bi-copy-value.png" alt-text="Screenshot that shows how to copy a cell value to use in other applications." border="false":::
 
 ### Copy multiple cells
 
@@ -255,9 +258,12 @@ To copy the values in more than one cell:
 
 1. Right-click inside a selected cell.
 
-1. Select **Copy** > **Copy selection** to copy the _formatted_ cell values to your clipboard.
+1. Select **Copy** > **Copy selection** to copy the cell values to your clipboard.
 
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-copy-selection.png" alt-text="Screenshot shows Copy selected with the Copy selection option selected.":::
+   > [!NOTE]
+   > Power BI copies the data values in the cells along with any applied formatting.
+
+   :::image type="content" source="media/power-bi-visualization-tables/power-bi-copy-selection.png" alt-text="Screenshot that shows how to copy multiple cell values at the same time to use in other applications." border="false":::
 
 ## Adjust table column width
 
