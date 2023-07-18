@@ -8,7 +8,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 07/10/2023
+ms.date: 07/18/2023
 
 LocalizationGroup: Share your work
 ---
@@ -116,7 +116,7 @@ On the **Audience** tab, you create and manage audience groups within the app.
     >- If your app relies on datasets from other workspaces, make sure that all app users have access to the underlying datasets.
     >- If the app or report is in the same workspace as the dataset, make sure you add the report associated with the dataset to the app as well.
      
-1. For each audience group, grant access to either all people in your organization or specific users or groups. You can also expand the **Advanced** option to configure the following settings per audience group: 
+1. For each audience group, grant access to either all people in your organization or specific users or groups. You can also expand the **** option to configure the following settings per audience group: 
 
     **Allow users to share the datasets in this app**: This option gives app consumers permission to share the underlying datasets of the app audience.
     
@@ -125,8 +125,8 @@ On the **Audience** tab, you create and manage audience groups within the app.
     :::image type="content" source="media/service-create-distribute-apps/advance-options-manage-audience-access-pane.png" alt-text="Screenshot of Advanced settings in Manage audience access pane.":::
 
     > [!NOTE]
-    > - The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least the Contributor role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
-    > - Build permissions only apply to datasets _in the same workspace_ as the app. If datasets are in other workspaces, you must explicitly grant build permissions on those datasets, or add the users as at least the Contributor Role in that workspace.
+    > - The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least a Viewer role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
+    > - Build permissions only apply to datasets _in the same workspace_ as the app. If datasets are in other workspaces, you must explicitly grant build permissions on those datasets, or add the users to at least the Viewer role in that workspace.
 
 ### Allow saving a copy of a report
 
