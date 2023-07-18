@@ -39,24 +39,24 @@ Many of the settings can have one of three states:
 
 * **Disabled for the entire organization**: No one in your organization can use this feature.
 
-    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-disabled-all.png" alt-text="Disabled all setting.":::
+    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-disabled-all.png" alt-text="Screenshot of disabled all state tenant setting.":::
 
 * **Enabled for the entire organization**: Everyone in your organization can use this feature.
 
-    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-all.png" alt-text="Enabled all setting.":::
+    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-all.png" alt-text="Screenshot of enabled all state tenant setting.":::
 
 * **Enabled for the entire organization except for certain groups**: Everyone in your organization can use this feature except for users who belong to the specified groups.
 
-    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-all-except.png" alt-text="Enabled all except setting.":::
+    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-all-except.png" alt-text="Screenshot of enabled all except state tenant setting.":::
 
 * **Enabled for a subset of the organization**: Specific security groups in your organization are allowed to use this feature.
 
-    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-specific.png" alt-text="Enabled subset setting.":::
+    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-specific.png" alt-text="Screenshot of enabled subset state tenant setting.":::
 
   
 * **Enabled for specific groups except for certain groups**: Members of the specified security groups are allowed to use this feature, unless they also belong to an excluded group. This approach ensures that certain users don't have access to the feature even if they're in the allowed group. The most restrictive setting for a user applies.
 
-    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-specific-except.png" alt-text="Enable except setting.":::
+    :::image type="content" source="media/service-admin-portal-about-tenant-settings/powerbi-admin-tenant-settings-enabled-specific-except.png" alt-text="Screenshot of enabled except state tenant setting.":::
 
 ## Tenant settings
 
@@ -130,7 +130,7 @@ Many of the settings can have one of three states:
 | Redshift SSO | Enable SSO capability for Redshift. By enabling, user access token information, including name and email, will be sent to Redshift for authentication. |
 | Google BigQuery SSO | Enable SSO capability for Google BigQuery. By enabling, user access token information, including name and email, will be sent to Google BigQuery for authentication. |
 | Oracle SSO | Enable SSO capability for Oracle. By enabling, user access token information, including name and email, will be sent to Oracle for authentication. |
-| Azure AD Single Sign-On (SSO) for Gateway | Enable AAD SSO via the on-premises data gateway for applicable data sources. By enabling user access token information including name and email will be sent to these data sources for authentication via the on-premises data gateway. &nbsp;<a href="https://aka.ms/AADSSOForGatewayLearnMore" target="_blank">Learn More</a> |
+| Azure AD Single Sign-On (SSO) for Gateway | Enable Azure AD SSO via the on-premises data gateway for applicable data sources. By enabling user access token information including name and email will be sent to these data sources for authentication via the on-premises data gateway. &nbsp;<a href="https://aka.ms/AADSSOForGatewayLearnMore" target="_blank">Learn More</a> |
 | Power Platform Solutions Integration (Preview) | Allow integration with Power Platform solutions. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2194433" target="_blank">Learn More</a> |
 | Users can view Power BI items saved in OneDrive and SharePoint (Preview) | Users in the organization can view Power BI items they save in OneDrive for Business or SharePoint document libraries |
 | Users can share links to Power BI files stored in OneDrive and SharePoint through Power BI Desktop | Users who have saved Power BI files (.pbix) to OneDrive and SharePoint can share links to those files using Power BI Desktop.&nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2227462" target="_blank">Learn More</a> |
@@ -174,7 +174,7 @@ Many of the settings can have one of three states:
 | **[User experience experiments](./service-admin-portal-user-experience-experiments.md)** | |
 | Help Power BI optimize your experience | Users in this organization will get minor user experience variations that the Power BI team is experimenting with, including content, layout, and design, before they go live for all users. |
 | **[Share data with your Microsoft 365 services](./service-admin-portal-share-data-microsoft-365-services.md)** | |
-| Users can see Microsoft Fabric metadata in Microsoft 365 | Turn on this setting to store and display certain Microsoft Fabric metadata in Microsoft 365 services. Users might see Microsoft Fabric metadata (including content titles and types or open and sharing history) in M365 services like search results and recommended content lists. Metadata from Microsoft Fabric datasets will not be displayed.<br><br>Users can browse or get recommendations only for content they have access to. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2202379" target="_blank">Learn More</a><br><br>This setting is automatically enabled only if your Microsoft Fabric and M365 tenants are in the same geographical region. You may disable this setting.&nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2237979" target="_blank">Where is my Microsoft Fabric tenant located?</a> |
+| Users can see Microsoft Fabric metadata in Microsoft 365 | Turn on this setting to store and display certain Microsoft Fabric metadata in Microsoft 365 services. Users might see Microsoft Fabric metadata (including content titles and types or open and sharing history) in Microsoft 365 services like search results and recommended content lists. Metadata from Microsoft Fabric datasets will not be displayed.<br><br>Users can browse or get recommendations only for content they have access to. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2202379" target="_blank">Learn More</a><br><br>This setting is automatically enabled only if your Microsoft Fabric and Microsoft 365 tenants are in the same geographical region. You may disable this setting.&nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2237979" target="_blank">Where is my Microsoft Fabric tenant located?</a> |
 | **[Insights settings](./service-admin-portal-insights.md)** | |
 | Receive notifications for top insights (preview) | Users in the organization can enable notifications for top insights in report settings |
 | Show entry points for insights (preview) | Users in the organization can use entry points for requesting insights inside reports |
