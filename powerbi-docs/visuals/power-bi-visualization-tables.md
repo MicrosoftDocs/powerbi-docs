@@ -19,7 +19,7 @@ LocalizationGroup: Visualizations
 
 A table is a grid that contains related data in a logical series of rows and columns. A table can also contain headers and a row for totals. Tables work well with quantitative comparisons where you're looking at many values for a single category. In the following example, the table displays five different measures for **Category**.
 
-:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-gridlines.png" alt-text="Screenshot of a table that displays five different measures for Category.":::
+:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format.png" alt-text="Screenshot of a table that displays five different measures for Category." border="false":::
 
 Create tables in reports and cross-highlight elements within the table with other visuals on the same report page. You can select rows, columns, and even individual cells, and cross-highlight the values. You can also copy and paste individual cells and multiple cell selections into other applications.
 
@@ -133,9 +133,9 @@ There are many ways to format a table. We cover only a few scenarios in this art
       
       :::image type="content" source="media/power-bi-visualization-tables/power-bi-apply-column-format.png" alt-text="Screenshot that shows how to set the Apply settings options to use the formatting changes on the column header, the total row, and all values." border="false":::
 
-   1. Adjust specific column settings for the_This Year Sales Status_ column. Specify center alignment for the values only.
+   1. Adjust specific column settings for the _This Year Sales Status_ column. Specify center alignment for the values only.
 
-   1. Save the report page for the updated table.
+   1. Select **File** > **Save** to save your changes for the table report page.
 
 Here's an example of an updated table:
 
