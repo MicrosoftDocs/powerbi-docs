@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 07/10/2023
+ms.date: 07/19/2023
 ms.custom: licensing support,fabric
 LocalizationGroup: Administration
 ---
@@ -364,7 +364,6 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI dataset rows | DeleteDatasetRows |Indicates that the [Push Datasets - Datasets DeleteRows](/rest/api/power-bi/push-datasets/datasets-delete-rows) API was called   |
 | Deleted Power BI email subscription   | DeleteEmailSubscription   |          |
 | Deleted Power BI folder   | DeleteFolder   |   |
-| Deleted Power BI metric | DeleteGoal | |
 | Deleted Power BI folder access     | DeleteFolderAccess     | Not currently used        |
 | Deleted Power BI gateway      | DeleteGateway                  |        |
 | Deleted Power BI gateway cluster | | |
@@ -536,7 +535,6 @@ The following operations are available in both the audit and activity logs.
 | Updated Power BI dataset data sources   | UpdateDatasources  |   |
 | Updated Power BI dataset parameters    | UpdateDatasetParameters     |    |
 | Updated Power BI discoverable model settings | UpdateDiscoverableModelSettings | Generated when a report is set to feature on home |
-| Updated Power BI gateway data source credentials | UpdateDatasourceCredentials | |
 | Updated Power BI email subscription               | UpdateEmailSubscription                     |     |
 | Updated Power BI folder                           | UpdateFolder                                |    |
 | Updated Power BI folder access                    | UpdateFolderAccess                          |     |
