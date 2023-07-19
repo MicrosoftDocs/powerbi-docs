@@ -7,7 +7,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 01/13/2023
+ms.date: 07/19/2023
 ---
 
 # Multi-Geo support for Power BI Embedded
@@ -72,13 +72,10 @@ To manage capacities with Multi-Geo through APIs, use the following APIs:
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[What is Power BI Embedded?](embedded-analytics-power-bi.md)
+* [What is Power BI Embedded?](embedded-analytics-power-bi.md)
 
->[!div class="nextstepaction"]
->[Create a Power BI Embedded capacity](azure-pbie-create-capacity.md)
+* [Create a Power BI Embedded capacity](azure-pbie-create-capacity.md)
 
->[!div class="nextstepaction"]
->[Multi-Geo in Power BI Premium capacities](../../admin/service-admin-premium-multi-geo.md)
+* [Multi-Geo in Power BI Premium capacities](../../admin/service-admin-premium-multi-geo.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
