@@ -98,11 +98,15 @@ Product Sales Report Label = SWITCH( USERCULTURE() ),
 )
 ```
 
+For more information, see [Learn DAX basics in Power BI Desktop](../transform-model/desktop-quickstart-learn-dax-basics.md).
+
 ## Format dates and numbers with current user locale
 
 You can translate dynamically by writing a DAX expression in a measure with conditional logic based on the user's culture name. In most cases, you aren't required to write conditional DAX logic based on the user's locale because Power BI visuals automatically handle locale-specific formatting behind the scenes.
 
-In this simple scenario, you build a report for an audience of report consumers that live in both New York \(`en-US`) and in London (`en-GB`). All users speak English (`en`), but some live in different regions (`US` and `GB`) where dates and numbers are formatted differently. For example, a user from New York wants to see dates in a `mm/dd/yyyy` format while a user from London wants to see dates in a `dd/mm/yyyy` format. Everything thing works out as long as you configure columns and measures using format strings that support regional formatting. If you're formatting a date, we recommend that you use a format string such as **Short Date** or **Long Date** because they support regional formatting.
+In a simple scenario, you build a report for an audience of report consumers that live in both New York \(`en-US`) and in London (`en-GB`). All users speak English (`en`), but some live in different regions (`US` and `GB`) where dates and numbers are formatted differently. For example, a user from New York wants to see dates in a `mm/dd/yyyy` format while a user from London wants to see dates in a `dd/mm/yyyy` format.
+
+Everything thing works as expected if you configure columns and measures using format strings that support regional formatting. If you're formatting a date, we recommend that you use a format string such as **Short Date** or **Long Date** because they support regional formatting.
 
 :::image type="content" source="./media/multiple-language-locale/date-format.png" alt-text="Screenshot shows various date formats, such as short date, long date, and mmmm d, yyyy.":::
 

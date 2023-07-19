@@ -1,6 +1,6 @@
 ---
 title: "Plan translation for multiple-language reports in Power BI"
-description: Learn about the types of translation used for multiple-language reports in Power BI and how you can package datasets and reports in project files.
+description: Learn about the types of translation used for multiple-language reports in Power BI and how Power BI supports metadata translation.
 author: maggiesMSFT   
 ms.author: maggies
 ms.service: powerbi
@@ -16,7 +16,7 @@ When it comes to localizing Power BI artifacts, such as datasets and reports, th
 - Report label translation
 - Data translation
 
-In this article, learn about these types and about packaging datasets with reports for easy updates and reusability.
+In this article, learn about these types.
 
 You can follow along with the example multiple-language report discussed in this article. You don't need a Power BI license to explore the sample in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
@@ -41,7 +41,9 @@ Metadata translations are the easiest to create, manage, and integrate into a Po
 
 *Metadata translation* is the main localization feature in Power BI to build multiple-language reports. In Power BI, metadata translation support is integrated at the dataset level.
 
-A metadata translation represents the property for a dataset object that's been translated for a specific language. If your dataset contains a table with an English name of *Products*, you can add translations for the **Caption** property of this table object to provide alternative names. These names appear when the report is rendered in a different language. In addition to the **Caption** property, which tracks an object's display name, dataset objects also support adding metadata translations for two other properties, which are **Description** and **DisplayFolder**.
+A metadata translation represents the property for a dataset object that's been translated for a specific language. If your dataset contains a table with an English name of *Products*, you can add translations for the **Caption** property of this table object to provide alternative names. These names appear when the report is rendered in a different language.
+
+In addition to the **Caption** property, which tracks an object's display name, dataset objects also support adding metadata translations for two other properties, which are **Description** and **DisplayFolder**.
 
 When you begin designing a dataset that uses metadata translation, you can assume that you always need translations for the **Caption** property. If you require support for metadata translation for report authors who create and edit reports in the Power BI service, you also need to provide metadata translations for the **Description** and **DisplayFolder** properties.
 
@@ -59,7 +61,7 @@ If you add a textbox or button to a Power BI report and then add a hard-coded te
 
 :::image type="content" source="./media/multiple-language-translation/report-title-translate.png" alt-text="Screenshot shows Power BI report tabs with values translated to German." lightbox="./media/multiple-language-translation/report-title-translate.png":::
 
-Report label translations are harder to create and manage than metadata translations because Power BI provides no built-in feature to track or integrate them. Translations Builder solves this problem using a *Localized Labels*, which is a hidden table in the dataset of a report. Add measures that track the required translations for each report label.
+Report label translations are harder to create and manage than metadata translations because Power BI provides no built-in feature to track or integrate them. Translations Builder solves this problem using a *Localized Labels* table, which is a hidden table in the dataset of a report. Add measures that track the required translations for each report label.
 
 <!--- For more information about a Localized Labels table, see **Understanding the Localized Labels Table**.--->
 
@@ -76,29 +78,6 @@ Data translations also appear in the axes of cartesian visuals and in legends.
 Data translation is harder to design and implement than the other two types of translation. You must redesign the underlying data source with extra text columns for secondary language translations. Once the underlying data source has been extended with extra text columns, you can then use a powerful feature in Power BI Desktop called *Field Parameters*. This feature uses filters to control loading the data translations for a specific language.
 
 A multiple-language report typically requires both metadata translations and report label translations. Some multiple-language projects require data translations, but others don't.
-
-## Package a dataset and reports in project files
-
-Before you proceed, you need to decide how to package your dataset definitions and report layouts for distribution. There are two popular approaches used by content creators who work with Power BI Desktop.
-
-- Single .pbix project file
-- Multiple project files with a shared dataset
-
-For adding multiple-language support to a Power BI solution, choose either of these approaches.
-
-### Single project file
-
-You can package both a report layout and its underlying dataset definition together. Deploy a reporting solution like this by publishing the project into a Power BI service workspace. If you need to update either the report layout or the dataset definition, upgrade by publishing an updated version of the .pbix project file.
-
-:::image type="content" source="./media/multiple-language-translation/single-pbix-scenario.png" alt-text="Diagram shows a report layout and dataset definition in a single pbix file.":::
-
-### Shared dataset
-
-The single project file approach doesn't always provide the flexibility you need. Maybe one team is responsible for creating and updating datasets while other teams are responsible for building reports. It might make sense to share a dataset with reports in separate .pbix project files.
-
-To use the shared dataset approach, create one .pbix project file with a dataset and an empty report, which remains unused. Once this dataset has been deployed to the Power BI service, report builders can connect to it using Power BI Desktop to create report-only .pbix files. This approach makes it possible for the teams building reports to build .pbix project files with report layouts that can be deployed and updated independently of the underlying dataset.
-
-:::image type="content" source="./media/multiple-language-translation/shared-dataset-scenario.png" alt-text="Diagram shows two report layouts in separate files associated with a dataset definition in a third file that also has an unused report.":::
 
 ## Next steps
 
