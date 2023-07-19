@@ -17,21 +17,21 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-A table is a grid that contains related data in a logical series of rows and columns. A table can also contain headers and a row for totals. Tables work well with quantitative comparisons where you're looking at many values for a single category. In the following example, the table displays five different measures for **Category**.
+A table is a grid that contains related data in a logical series of rows and columns. A table can also contain headers and a row for totals. Tables work well with quantitative comparisons where you're looking at many values for a single category. In the following example, the table displays five different measures for the **Category** items, including average prices, year over year sales, and sales goals.
 
-:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format.png" alt-text="Screenshot of a table that displays five different measures for Category." border="false":::
+:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format.png" alt-text="Screenshot of a table that displays five measures for Category items." border="false":::
 
-Create tables in reports and cross-highlight elements within the table with other visuals on the same report page. You can select rows, columns, and even individual cells, and cross-highlight the values. You can also copy and paste individual cells and multiple cell selections into other applications.
+Power BI helps you create tables in reports and cross-highlight elements within the table with other visuals on the same report page. You can select rows, columns, and even individual cells, and cross-highlight the values. You can also copy and paste individual cells and multiple cell selections into other applications.
 
 ## When to use a table
 
 Tables are a great choice for several scenarios:
 
+- Represent numerical data by category with multiple measures.
+
+- Display data as a matrix or in a tabular format with rows and columns.
+
 - Review and compare detailed data and exact values (instead of visual representations).
-
-- Display data in a tabular format.
-
-- Represent numerical data by categories.
 
 > [!NOTE]
 > If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses or the report needs to be saved in Premium capacity. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
@@ -76,13 +76,13 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
 ## Create a table
 
-You can create the table shown at the beginning of this article and display sales values by item category.
+You can create a table similar to the one shown at the beginning of this article and display sales values by item category.
 
-1. On the **Data** pane, expand **Item** and select the **Category** checkbox. Power BI automatically creates a table that lists all the categories.
+1. On the **Data** pane, expand **Item** and select the **Category** checkbox. Power BI automatically creates a table that lists all the categories in the Retail Analysis Sample dataset.
 
     :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-1.png" alt-text="Screenshot that shows the Category checkbox selected and the default table visual created by Power BI." border="false":::
 
-    This action configures the *Category* data as a **Columns** for the table on the **Visualizations** pane.
+    This action configures the *Category* data as a field in the **Columns** section on the **Visualizations** pane.
     
     Let's add more categories to the table.
 
@@ -90,50 +90,68 @@ You can create the table shown at the beginning of this article and display sale
 
     :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-2.png" alt-text="Screenshot that shows several checkboxes selected in the Data pane and the table visual updated by Power BI." border="false":::
 
-    Power BI adds the selected data items to the **Column*s* sections for the table on the **Visualizations** pane.
+    Power BI adds the selected data as fields to the **Columns** section on the **Visualizations** pane.
 
 1. On the **Visualizations** pane, rearrange the data fields in the **Columns** section to match the order shown in the following image:
 
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-3.png" alt-text="Screenshot that shows the ordered table data fields in the Columns section of the Visualizations pane." border="false":::
+   :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-3.png" alt-text="Screenshot that shows the reordered table data fields in the Columns section of the Visualizations pane." border="false":::
 
-   To move a column on the **Visualizations** pane, select and hold the field in the **Columns** section. Drag the field to the new location within the order of columns and then release the field. The order of the columns in the table visual updates to match the new order of the fields in the **Columns** section.
+   To move a column on the **Visualizations** pane, select and hold the field in the **Columns** section. Drag the field to the new location within the order of columns and release the field. The order of the columns in the table visual updates to match the new order of the fields in the **Columns** section.
 
 ## Format the table
 
-There are many ways to format a table. We cover only a few scenarios in this article. A great way to learn about other formatting options is to select the paint brush icon at the top of the **Visualizations** pane to open the **Format** section.
+There are many ways to format a table. We cover only a few scenarios in this article.
 
-1. Try formatting the table **Grid** options.
+The following steps show how to configure settings and options to adjust the presentation of the table data.
 
-   - Change the **Horizontal gridlines** and **Vertical gridlines** to use a blue **Color**.
+1. On the **Visualizations** pane, select the paintbrush icon to open the **Format** section. Make sure the **Visual** section is selected.
+
+   :::image type="content" source="media/power-bi-visualization-tables/power-bi-format-visual.png" alt-text="Screenshot that shows how to access the Format Visual section of the Visualizations pane." border="false":::
+
+1. Try formatting the table grid options.
+
+   1. Expand the **Grid** > **Horizontal gridlines** and **Vertical gridlines** options.
+
+   1. Change the horizontal and vertical gridlines to use a blue **Color**.
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-gridlines.png" alt-text="Screenshot that shows table grid options in the Format section of the Visualizations pane." border="false":::
 
-1. Next, try adjusting the **Column headers** > **Text** options.
+1. Next, try adjusting the column header text.
 
-   - Increase the **Font** size and apply bold (**B**).
-   - Change the **Background color**.
-   - Adjust the **Header alignment** to center the header text.
-   - Turn on **Text wrap** to allow long headings to display across multiple lines.
+   1. Expand the **Column headers** > **Text** options.
+   
+   1. Set the following options:
+
+      - Increase the **Font** size and apply bold (**B**).
+      - Change the **Background color**.
+      - Adjust the **Header alignment** to _center_ the header text.
+      - Turn on **Text wrap** to allow long column headings to display across multiple lines.
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-column-headers.png" alt-text="Screenshot that shows table column header options in the Format section of the Visualizations pane." border="false":::
 
-1. You can also format individual columns and headers by configuring options in the **Specific column** section.
+1. You can also format individual columns and headers.
 
-   1. Expand **Specific column** and select a column to format from the drop-down list.
+   1. Expand the **Specific column** section.
    
-      The data values in the selected column determine the available formatting options. Let's begin with the _This Year Sales_ column.
+   1. For the **Apply settings to** options, select the specific column to format by using the **Series** drop-down list.
 
-   1. Update some format settings, such as font color and background shading.
+      Let's begin by selecting the column **This Year Sales**.
+   
+      The data values in the selected column determine the available formatting options. 
 
-      :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-specific-column.png" alt-text="Screenshot that shows how to select the This year sales column to update the formatting options." border="false":::
+   1. Expand the **Values** options, and update some format settings, such as font color and background shading.
+
+      :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-specific-column.png" alt-text="Screenshot that shows how to select a specific column to update the formatting options." border="false":::
    
-   1. After you adjust the settings, toggle the options in the **Apply settings to** section to specify how to apply the updated settings.
+   1. After you adjust the settings, configure the other **Apply settings to** options to specify how to apply the updated settings.
    
-      Let's apply the changes to all values in the column and also the total row.
+      Let's apply the changes to all **values** in the column and also to the row that shows the **total** of value.
       
       :::image type="content" source="media/power-bi-visualization-tables/power-bi-apply-column-format.png" alt-text="Screenshot that shows how to set the Apply settings options to use the formatting changes on the column header, the total row, and all values." border="false":::
 
-1. Now that you know how to adjust settings for a specific column, let's practice on another field. Update the _This Year Sales Status_ column and specify center alignment for the cell values only.
+1. Practice what you've learned by updating another specific column field. 
+
+   - Update the **This Year Sales Status** column and specify **center** alignment for the cell **values** only.
 
 1. Select **File** > **Save** to save your changes for the table report page.
 
@@ -141,47 +159,57 @@ Here's an example of an updated table:
 
 :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format-updates.png" alt-text="Screenshot that shows the table with updated format settings for text size, color, and wrapping, gridline color, and background shading." border="false":::
 
-You can format tables in other ways that complement the modified settings. In the next section, we review how to apply *conditional formatting*.
+You can format tables in other ways to complement your configuration options and settings. In the next section, we review how to apply *conditional formatting*.
 
 ## Use conditional formats
 
-You can add conditional formatting for subtotals and totals in tables. Power BI can apply conditional formatting for totals values to any field in the **Columns** section of the **Visualizations** pane. Use the **Applies to** option to specify which values should receive the conditional formatting.
+You can add conditional formatting for subtotals and totals in tables. Power BI can apply conditional formatting for totals values to any field in the **Columns** section of the **Visualizations** pane. Use the **Apply settings to** options to specify which table values should receive the conditional formatting.
 
-You specify the thresholds or ranges for the conditional formatting rules. For matrices, the **Values** continue to refer to the lowest visible level of the matrix hierarchy.
+You specify the thresholds or ranges for the conditional formatting rules. For matrices, any **Values** options refer to the lowest visible level of the matrix hierarchy.
 
-With conditional formatting for tables, you can specify icons, URLs, cell background colors, and font colors based on cell values. Gradient coloring can also be used.
+With conditional formatting for tables, you can specify icons, URLs, cell background colors, and font colors based on cell values. You can also apply gradient coloring to show value distribution across a numerical range.
 
 ### Set background color shading
 
-Let's apply conditional formatting to some table data.
+A common use for conditional table formatting is to change the cell background color based on the corresponding numerical data value. You can set static colors for specific custom values, or instruct Power BI to determine the color based on the value.
 
-1. On the **Visualizations** pane, expand the drop-down menu for a field under **Columns**. Let's begin with the _Average Unit Price Last Year_ column.
+The **Background color** option offers a gradient that can range in color from the lowest to highest value for the category. You can configure the color gradient, and also specify how to choose the cell background color based on the gradient.
+
+By default, Power BI uses a gradient that spans across two primary colors, from red to green. The **Minimum** value color applies to the lowest value in the range. This value is the darkest shade of red. The **Maximum** value color applies to the highest value in the range. This value is the darkest shade of green. Mid-range values for the category are colored with shades of red or green depending on the specific value.
+
+Let's modify the background color for a column that has numerical data values.
+
+1. On the **Visualizations** pane, expand the drop-down menu for a field under **Columns**. Choose the **Average Unit Price Last Year** column.
 
 1. On the menu, select **Conditional formatting** > **Background color**.
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-background-color.png" alt-text="Screenshot that shows how to open the Conditional formatting menu for a selected column in the Visualizations pane." border="false":::
 
-   The **Background color** dialog opens. A color gradient bar shows how the value color can change across the range of category values for the column. By default, the gradient spans across two primary colors, from red to green. The **Minimum** value color applies to lower values within the range. These values are shaded red. Higher values closer to the **Maximum** value within the range are shaded green.
+   The **Background color** dialog opens. 
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-background-dialog.png" alt-text="Screenshot that shows the Background color dialog with the color gradient spanning two primary colors, from red to green." border="false":::
 
 1. On the dialog, select the **Add a middle color** option to expose the optional **Center** color value.
 
-   The gradient bar updates to include the default center color value (yellow). The category values for the column can now be represented with a gradient that spans three primary colors.
+   The gradient updates to include the default **Center** color value (yellow). The category values for the column can now be represented with a gradient that spans three primary colors.
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-configure-background-color.png" alt-text="Screenshot that shows the Background color dialog with the center or middle value option available for configuration.":::
 
-1. Choose colors for the **Left**, **Center**, and **Right** fields. Select **OK** to apply your changes to the specified column.
+1. Choose colors for the **Minimum** (lowest) and **Maximum** (highest) values.
+
+1. Choose a color for the **Center** (middle) option for values within the range. 
+
+1. Select **OK** to apply your changes to the specified column.
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-background-column-updates.png" alt-text="Screenshot that shows how Power BI applies the color gradient to the values in the specified column." border="false":::
 
 ### Replace numbers with data bars
 
-You can replace numerical values in the table presentation with _data bars_. Bars of color that represent data can be easier to scan and analyze than many numerical values.
+You can replace numerical values in the table presentation with **Data bars**. Bars of color that represent data can be easier to scan and analyze than many numerical values.
 
-Power BI shows negative and positive data values in the table by using different bar colors. This approach is similar to the endpoints of the color gradient we reviewed in an earlier section.
+Power BI shows negative and positive data values in the table by using different bar colors. By default, **Negative** values are shaded red and **Positive** values are shaded green. This approach is similar to the default settings for the **Minimum** and **Maximum** values in the background color gradient.
 
-The size of the bar represents the numerical amount of the data. A higher number value is shown as a larger bar compared to the other bars in the same column. 
+Each bar is the same height, which is based on the table row cell height. The length of each bar represents the numerical amount of the data. A higher number value is shown with a longer bar compared to other bars in the same column. 
 
 Let's add another column to the table with a field that has both positive and negative data values. We can configure the column data to display as color bars rather than numbers.
 
@@ -191,9 +219,9 @@ Let's add another column to the table with a field that has both positive and ne
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-add-column.png" alt-text="Screenshot that shows how to add the Total Sales Variance column to the table." border="false":::
 
-1. On the **Visualizations** pane, expand the drop-down menu for the _Total Sales Variance_ field under **Columns**, and select **Conditional formatting** > **Data bars**.
+1. On the **Visualizations** pane, expand the drop-down menu for the **Total Sales Variance** field under **Columns**, and select **Conditional formatting** > **Data bars**.
 
-1. On the **Data bars** dialog, configure how to apply conditional formatting for the data in the selected column:
+1. On the **Data bars** dialog, configure how to apply conditional formatting for the data in the selected column.
 
    - Choose colors for the **Positive bar** and **Negative bar** options.
    - Select the **Show bar only** option.
@@ -209,11 +237,11 @@ Let's add another column to the table with a field that has both positive and ne
 
 ### Use visual cues
 
-As a last step, let's add visual cues to the table by using conditional _icons_. Icons are a visual cue similar to data bars. Icons present the data in a more visual manner that's easier to scan and analyze than many numbers.
+As a last step, let's add visual cues to the table by using conditional **Icons**. Icons are similar to data bars. They present the data in a more visual manner that's easier to scan and analyze than many numbers.
 
-1. On the **Visualizations** pane, expand the drop-down menu for the _This Year Sales_ field under **Columns**, and select **Conditional formatting** > **Icons**.
+1. On the **Visualizations** pane, expand the drop-down menu for the **This Year Sales** field under **Columns**, and select **Conditional formatting** > **Icons**.
 
-1. On the **Icons** dialog, configure how to use conditional icons to represent the data in the selected column:
+1. On the **Icons** dialog, configure how to use conditional icons to represent the data in the selected column.
 
    The default presentation uses three different icons based on the numerical value. Each icon represents values for one third of all the values (lowest, middle, and highest) for a range of 33 percentage points. The default position for an icon is to the left of the number within the column.
 
