@@ -17,11 +17,12 @@ When it comes to localizing Power BI artifacts, such as datasets and reports, th
 - Data translation
 
 In this article, learn about these types.
-
+<!---
 You can follow along with the example multiple-language report discussed in this article. You don't need a Power BI license to explore the sample in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 - [Download the example multiple-language report.](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/ProductSalesMultiLanguage.pbix)
 - If you'd like to view it in the Power BI service, open the file in Power BI Desktop and select **File** > **Publish** > **Publish to Power BI** or choose **Publish** in the **Home** ribbon.
+--->
 
 ## Metadata translation
 
