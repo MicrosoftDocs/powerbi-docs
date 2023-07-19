@@ -139,11 +139,11 @@ The following steps show how to configure settings and options to adjust the pre
    
       The data values in the selected column determine the available formatting options. 
 
-   1. Expand the **Values** options, and update some format settings, such as font color and background shading.
+   1. Expand the **Values** options, and update some format settings, such as **Text color** and **Background color**.
 
       :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-specific-column.png" alt-text="Screenshot that shows how to select a specific column to update the formatting options." border="false":::
    
-   1. After you adjust the settings, configure the other **Apply settings to** options to specify how to apply the updated settings.
+   1. Finally, configure the other **Apply settings to** options to specify how to use the updated settings for the column data.
    
       Let's apply the changes to all **values** in the column and also to the row that shows the **total** of value.
       
@@ -151,7 +151,11 @@ The following steps show how to configure settings and options to adjust the pre
 
 1. Practice what you've learned by updating another specific column field. 
 
-   - Update the **This Year Sales Status** column and specify **center** alignment for the cell **values** only.
+   1. Update the **This Year Sales Status** column.
+   
+   1. For the **Values** options, specify _center_ **Alignment**.
+   
+   1. Configure the **Apply settings to** options to use the updated settings for the cell **values** only.
 
 1. Select **File** > **Save** to save your changes for the table report page.
 
@@ -159,11 +163,11 @@ Here's an example of an updated table:
 
 :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format-updates.png" alt-text="Screenshot that shows the table with updated format settings for text size, color, and wrapping, gridline color, and background shading." border="false":::
 
-You can format tables in other ways to complement your configuration options and settings. In the next section, we review how to apply *conditional formatting*.
+You can format tables in other ways to complement your configuration options and settings. In the next section, we explore how to apply conditional formatting.
 
 ## Use conditional formats
 
-You can add conditional formatting for subtotals and totals in tables. Power BI can apply conditional formatting for totals values to any field in the **Columns** section of the **Visualizations** pane. Use the **Apply settings to** options to specify which table values should receive the conditional formatting.
+You can add conditional formatting for subtotals and totals in tables. Power BI can apply conditional formatting for totals values to any field in the **Columns** section of the **Visualizations** pane. Use the **Apply settings to** options to specify which table values should use the conditional formatting.
 
 You specify the thresholds or ranges for the conditional formatting rules. For matrices, any **Values** options refer to the lowest visible level of the matrix hierarchy.
 
@@ -171,11 +175,11 @@ With conditional formatting for tables, you can specify icons, URLs, cell backgr
 
 ### Set background color shading
 
-A common use for conditional table formatting is to change the cell background color based on the corresponding numerical data value. You can set static colors for specific custom values, or instruct Power BI to determine the color based on the value.
+A common use for conditional table formatting is to change the cell background color based on the corresponding numerical data value. You can set static colors for specific custom values, or instruct Power BI to determine the cell color based on the data value.
 
 The **Background color** option offers a gradient that can range in color from the lowest to highest value for the category. You can configure the color gradient, and also specify how to choose the cell background color based on the gradient.
 
-By default, Power BI uses a gradient that spans across two primary colors, from red to green. The **Minimum** value color applies to the lowest value in the range. This value is the darkest shade of red. The **Maximum** value color applies to the highest value in the range. This value is the darkest shade of green. Mid-range values for the category are colored with shades of red or green depending on the specific value.
+By default, Power BI uses a gradient that spans across two primary colors, from red to green. The **Minimum** value color applies to the lowest value in the range. This value is the darkest shade of red. The **Maximum** value color applies to the highest value in the range. This value is the darkest shade of green. Mid-range values for the category are colored with shades of red or green depending on the specific data value.
 
 Let's modify the background color for a column that has numerical data values.
 
@@ -201,7 +205,9 @@ Let's modify the background color for a column that has numerical data values.
 
 1. Select **OK** to apply your changes to the specified column.
 
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-background-column-updates.png" alt-text="Screenshot that shows how Power BI applies the color gradient to the values in the specified column." border="false":::
+The following illustration shows how Power BI applies a color gradient to the cells in the **Average Unit Price Last Year** column. In this example, the column data is sorted in descending order, from highest to lowest value.
+
+:::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-background-column-updates.png" alt-text="Screenshot that shows how Power BI applies the color gradient to the values in the specified column." border="false":::
 
 ### Replace numbers with data bars
 
@@ -237,7 +243,7 @@ Let's add another column to the table with a field that has both positive and ne
 
 ### Use visual cues
 
-As a last step, let's add visual cues to the table by using conditional **Icons**. Icons are similar to data bars. They present the data in a more visual manner that's easier to scan and analyze than many numbers.
+Another formatting option is to add visual cues to the table with conditional **Icons**. Icons are similar to data bars. They present information about the data in a more visual manner that's easier to scan and analyze than numbers.
 
 1. On the **Visualizations** pane, expand the drop-down menu for the **This Year Sales** field under **Columns**, and select **Conditional formatting** > **Icons**.
 
