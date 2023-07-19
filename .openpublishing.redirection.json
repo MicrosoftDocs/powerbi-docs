@@ -5106,7 +5106,13 @@
             "source_path": "powerbi-docs/connect-data/service-data-hub.md",
             "redirect_url": "/fabric/get-started/onelake-data-hub?toc=/power-bi/connect-data/toc.json&bc=/power-bi/connect-data/breadcrumb/toc.json",
             "redirect_document_id": false
-        }                                                                                                                                                                                                      
+        }                                        
+        ,
+        {
+            "source_path": "powerbi-docs/transform-model/datamarts/datamarts-sharing-discovery.md",
+            "redirect_url": "/powerbi-docs/transform-model/datamarts/datamarts-discovery",
+            "redirect_document_id": false
+        }                                                                                                                                                                                    
   ]          
 
 }
