@@ -1,6 +1,6 @@
 ---
-title: Sharing datamarts and managing permissions (preview)
-description: Share and manage permissions using datamarts.
+title: Sharing Power BI datamarts and managing permissions (preview)
+description: Share and manage permissions using Power BI datamarts.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
