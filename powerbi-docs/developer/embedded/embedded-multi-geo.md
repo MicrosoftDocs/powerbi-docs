@@ -34,11 +34,11 @@ When you choose a location other than the default tenant location, a message pro
 
 You can see your capacities' locations easily from the main Power BI Embedded management page in the Azure portal.
 
-:::image type="content" source="media/embedded-multi-geo/pbie-multi-geo-location-different.png" alt-text="Screenshot of the Azure portal Power BI Embedded management page, which shows the highlighted capacity location sorter.":::
+:::image type="content" source="media/embedded-multi-geo/pbie-multi-geo-location-different.png" alt-text="Screenshot of the Azure portal Power BI Embedded management page, which shows the highlighted capacity location sorter." lightbox="media/embedded-multi-geo/pbie-multi-geo-location-different.png":::
 
 The locations are also available in the Admin portal at `PowerBI.com`. In the Admin portal, choose **Capacity settings**, and then switch to the **Power BI Embedded** tab.
 
-:::image type="content" source="media/embedded-multi-geo/pbie-multi-geo-admin-portal.png" alt-text="Screenshot of the PowerBI.com Admin Portal, which shows the highlighted Power BI Embedded tab and the capacity region sorter.":::
+:::image type="content" source="media/embedded-multi-geo/pbie-multi-geo-admin-portal.png" alt-text="Screenshot of the PowerBI.com Admin Portal, which shows the highlighted Power BI Embedded tab and the capacity region sorter." lightbox="media/embedded-multi-geo/pbie-multi-geo-admin-portal.png":::
 
 [Learn more about creating capacities with Power BI Embedded.](azure-pbie-create-capacity.md)
 
