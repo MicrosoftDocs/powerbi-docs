@@ -99,7 +99,7 @@ Let's begin by creating a scatter chart to highlight district sales data in the 
 
    By default, Power BI creates a clustered column chart to display the data. On the **Visualizations** pane, the **District** field is assigned to the **X-axis** and the other two fields are assigned to the **Y-axis**.
 
-   :::image type="content" source="media/power-bi-visualization-scatter/power-bi-clustered-column-chart.png" alt-text="Screenshot that shows the default cluster column chart for the selected data fields." border="false':::
+   :::image type="content" source="media/power-bi-visualization-scatter/power-bi-clustered-column-chart.png" alt-text="Screenshot that shows the default cluster column chart for the selected data fields." border="false":::
 
    You can now convert the clustered column chart visual into a scatter chart.
 
