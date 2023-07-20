@@ -157,7 +157,7 @@ The following steps show how to chart a third data dimension for the Retail Anal
    
    1. Under the **Properties** > **Advanced options** section, adjust the **Number of data points** value.
 
-      :::image type="content" source="media/power-bi-visualization-scatter/power-bi-set-number-data-points.png" alt-text="Screenshot that shows how to change the number of data points for the bubble chart." borer="false":::
+      :::image type="content" source="media/power-bi-visualization-scatter/power-bi-set-number-data-points.png" alt-text="Screenshot that shows how to change the number of data points for the bubble chart." border="false":::
 
       The maximum number of data points is 10,000. When the configured value approaches the maximum, be sure to test your chart output to ensure good performance.
 
