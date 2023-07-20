@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-A single number, such as total sales, market share year over year, or total opportunities, is sometimes the most important thing you want to track. A type of visualization in Power BI called a *card* might be the best way to view that number. As with almost all of the native Power BI visualizations, you can create cards with the report editor or Q&A. Here is an example of a card visualization:
+A single number, such as total sales, market share year over year, or total opportunities, is sometimes the most important thing you want to track. A type of visualization in Power BI called a *card* might be the best way to view that number. As with almost all of the native Power BI visualizations, you can create cards with the report editor or Q&A. Here's an example of a card visualization:
 
 :::image type="content" source="media/power-bi-visualization-card/power-bi-opportunities-card.png" alt-text="Screenshot of card visualization.":::
 
