@@ -22,11 +22,13 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
     - [editorSettings.json](#pbieditorsettingsjson)
     - [cache.abf](#pbicacheabf)
     - [unappliedChanges.json](#pbiunappliedchangesjson)
-- [model.bim](#modelbim)
-- [definition.pbidataset](#definitionpbidataset)
+- [model.bim *](#modelbim)
+- [definition.pbidataset *](#definitionpbidataset)
 - [diagramLayout.json](#diagramlayoutjson)
 - [item.config.json](#itemconfigjson)
 - [item.metadata.json](#itemmetadatajson)
+
+\* required files
 
 Not every project dataset folder includes all of the files and subfolders described here.
 
@@ -60,7 +62,9 @@ When you select **Apply later**, the unapplied changes are saved into the unappl
 
 :::image type="content" source="media/projects-overview/pending-changes.png" alt-text="Image showing pending changes warning.":::
 
-If you select **Apply changes**, Power BI Desktop overwrites the queries in model.bim with the queries from unappliedChanges.json. If you edited queries in model.bim outside of Power BI Desktop, your changes are lost and replaced by the queries in unappliedChanges.json when those changes get applied.
+If you select **Apply changes**, Power BI Desktop overwrites the queries in model.bim with the queries from unappliedChanges.json. If you edited queries in model.bim outside of Power BI Desktop and there is a previous unappliedChanges.json file, your changes are lost and replaced by the queries in unappliedChanges.json when those changes get applied.
+
+The unappliedChanges.json is automatically incorporated into the dataset definition and saved in Git by default. This allows developers to commit their ongoing work to the development branch, serving as a backup or making it accessible to other team members. However, users have the option to exclude this file from Git's tracking, preventing unfinished query work from affecting other developers.
 
 For more information, refer to the [unappliedChanges.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/unappliedChanges.md).
 
