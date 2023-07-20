@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-A single number, such as total sales, market share year over year, or total opportunities, is sometimes the most important thing you want to track. A type of visualization in Power BI called a *card* may be the best way to view that number. As with almost all of the native Power BI visualizations, you can create cards using the report editor or Q&A.
+A single number, such as total sales, market share year over year, or total opportunities, is sometimes the most important thing you want to track. A type of visualization in Power BI called a *card* might be the best way to view that number. As with almost all of the native Power BI visualizations, you can create cards with the report editor or Q&A. Here is an example of a card visualization:
 
 :::image type="content" source="media/power-bi-visualization-card/power-bi-opportunities-card.png" alt-text="Screenshot of card visualization.":::
 
@@ -61,11 +61,11 @@ This tutorial uses the built-in Retail Analysis Sample in the Power BI service.
 
 ## Option 1: Create a card using the report editor
 
-The first method to create a card is to use the report editor in Power BI Desktop.
+The first method to create a card is to use the report editor in Power BI.
 
-1. Select the **Store** \> **Open Store Count** field.
+1. On the **Data** pane, expand **Store** and select the **Open Store Count** checkbox.
 
-    Power BI creates a column chart with the one number.
+    By default, Power BI creates a clustered column chart with the single data value. You can convert the chart to a card visualization.
 
    :::image type="content" source="media/power-bi-visualization-card/power-bi-overview-chart.png" alt-text="Screenshot showing an example number tile chart.":::
 
@@ -77,7 +77,7 @@ You've now successfully created a card with the report editor.
 
 ## Option 2: Create a card from the Q&A question box
 
-The Q&A question box is another option for you to use when creating a card. The Q&A question box is available in Power BI Desktop report view.
+The Q&A question box is another option for you to use when creating a card. The Q&A question box is available in Power BI report view.
 
 1. In the Visualizations pane, select the **Q&A** icon.
 
@@ -85,11 +85,11 @@ The Q&A question box is another option for you to use when creating a card. The 
 
    :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-visualization.png" alt-text="Screenshot showing a new Q&A visualization with a question box.":::
 
-1. As an example, start typing "Total Sales for Tina" in the question box.
+1. Let's try searching for sales data by employee name. Enter the text 'Total Sales for Tina" in the question box.
 
-   The question box provides suggestions and restatements as you type. At some point, the entire **TotalSales** number is displayed until you further qualify it and select **Total Sales for Tina Lassila**.
+   As you enter text, Power BI tries to resolve your search text and shows results that match your input. At some point, you might see **TotalSales** displayed. Continue to refine your input until you see an option for **Total Sales for Tina Lassila (store DM)**. Select that option.
 
-   :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-box.png" alt-text="Question box example.":::
+   :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-box.png" alt-text="Screenshot showing a question box example.":::
 
 1. Select the icon to the right of the question box to convert the Q&A visualization to a card visualization.
 
@@ -97,17 +97,17 @@ The Q&A question box is another option for you to use when creating a card. The 
 
 Power BI makes the conversion. Notice that the card icon is now highlighted in the Visualizations pane.
 
-:::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-card.png" alt-text="Card example from question method.":::
+:::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-card.png" alt-text="Screenshot showing a card example from question method.":::
 
 You've now successfully created a card with the Q&A question box.
 
 ## Format a card
 
-You have many options for changing labels, text, color and more. The best way to learn is to create a card and then explore the **Format** pane. Here are just a few of the formatting options available.
+You have many options for changing labels, text, color and more. The best way to learn is to create a card and then explore the **Format** section of the **Visualizations** pane. Here are just a few of the formatting options available.
 
-The **Format** pane is available when interacting with the card in a report.
+The **Format** section is available when interacting with the card in a report.
 
-1. Start by selecting the paint brush icon to open the **Format** pane.
+1. Start by selecting the paint brush icon at the top of the **Visualizations** pane to open the **Format** section.
 
    :::image type="content" source="media/power-bi-visualization-card/power-bi-format-card-2.png" alt-text="Screenshot of the paint brush icon in the Format pane.":::
 
@@ -131,6 +131,6 @@ The **Format** pane is available when interacting with the card in a report.
 If you don't see a question box at all, contact your Power BI admin.
 
 ## Next steps
-[Combo charts in Power BI](power-bi-visualization-combo-chart.md)
 
-[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
+- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
