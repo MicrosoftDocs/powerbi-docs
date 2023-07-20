@@ -23,11 +23,13 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
 - StaticResources\\
   - [RegisteredResources\\](#registeredresources)
 - [datasetDiagramLayout.json](#datasetdiagramlayoutjson)
-- [definition.pbir](#definitionpbir)
+- [definition.pbir](#definitionpbir)<sup>[1](#reqired)</sup>
 - [mobileState.json](#mobilestatejson)
-- [report.json](#reportjson)
+- [report.json](#reportjson)<sup>[1](#reqired)</sup>
 - [item.config.json](#itemconfigjson)
 - [item.metadata.json](#itemmetadatajson)
+
+<a name="required">1</a> - This file is required.
 
 Not every project report folder includes all of the files and subfolders described here.
 
