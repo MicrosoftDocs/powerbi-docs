@@ -37,7 +37,7 @@ When you find a report you like in a workspace or an app, you can make a copy of
 
     Power BI automatically creates a copy of the report in the workspace you selected. In the list view of that workspace, you won't see the referenced dataset if it is located in another workspace. To see the shared dataset, on the report copy in list view select **More options** > **View lineage**. 
 
-    :::image type="content" source="./media/service-datasets-copy-reports/power-bi-dataset-actions.png" alt-text="Screenshot showing lineage view with dataset in another workspace.":::
+    :::image type="content" source="./media/service-datasets-copy-reports/power-bi-dataset-actions.png" alt-text="Screenshot showing lineage view with dataset in another workspace." lightbox="./media/service-datasets-copy-reports/power-bi-dataset-actions.png":::
 
    In lineage view, datasets that are located in other workspaces show the name of the workspace they're located in. This makes it easy to see which reports and dashboards use datasets that are outside the workspace.
 
