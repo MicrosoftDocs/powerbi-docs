@@ -177,7 +177,7 @@ Power BI creates a dot plot chart from the data in the existing scatter chart. T
 
 In this example, we adjusted the chart visual to display triangles for the data points. Let's see what else you can do with Power BI formatting options.
 
-## Format charts
+## Format your chart
 
 There are many display options available on the **General** and **Visual** sections of the **Visualizations > Format** pane. Take some time to explore the features.
 
@@ -191,11 +191,13 @@ There are many display options available on the **General** and **Visual** secti
 
    Change the marker shape to a diamond, triangle, or square. Using a different marker shape for each line makes it easier for report consumers to differentiate lines (or areas) from each other.
 
-## Add analytics
+## Add analytics to your chart
 
 The following steps show how to add analytics information to your visualization.
 
-1. On the **Visualizations** pane, open the **Analytics** section. :::image type="icon" source="media/power-bi-visualization-scatter/power-bi-analytics.png":::
+1. On the **Visualizations** pane, open the **Analytics** section.
+
+   :::image type="content" source="media/power-bi-visualization-scatter/power-bi-format-analytics.png" alt-text="Screenshot that shows how to access the Analytics section of the Visualizations pane." border="false":::
 
 1. Add a median line. Select **Median line** > **Add line**. By default, Power BI adds a median line for **Sales Per Sq Ft**. This line isn't helpful since we can see that there are 10 data points and know that the median is created with five data points on each side. Instead, switch the **Series** to *Total sales variance %*.  
 
