@@ -8,7 +8,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 07/10/2023
+ms.date: 07/20/2023
 
 LocalizationGroup: Share your work
 ---
@@ -87,6 +87,20 @@ On the **Content** tab, you add the content from the workspace to the app.
 
 1. Select **Next: Add audience**.
 
+#### Add Power BI reports with paginated report visuals
+
+When you include Power BI reports that have paginated report visuals, we recommend including the referred paginated reports in the app. This way, the published Power BI report work with the published version of the paginated report instead of the report stored in the workspace.
+
+During publishing, Power BI can detect reports with visuals that point at missing paginated reports:
+
+:::image type="content" source="media/service-create-distribute-apps/app-successfully-published-with-warning.png" alt-text="Screenshot of successfully published app with warning.":::
+
+You can address the issue in one of two ways:
+
+- Include the paginated report in the app and make sure the audience that has access to the Power BI report also has access to the paginated report.
+
+- Make sure the audience has access to the paginated report in the workspace.
+
 ### Create and manage multiple audiences
 
 On the **Audience** tab, you create and manage audience groups within the app.
@@ -155,20 +169,6 @@ Now that you've decided on the audiences and the content for each audience, it's
     :::image type="content" source="media/service-create-distribute-apps/app-link.png" alt-text="Screenshot showing Copy link option.":::
 
 Your app consumers can also request access to your app by searching for the app from Apps marketplace or AppSource. See the [app consumer view](#app-consumer-view) section of this article for more about the app experience for consumers.
-
-#### Power BI reports with paginated report visuals
-
-When you include Power BI reports that have paginated report visuals, it is recommended to include the referred paginated reports in the app. This way, the published Power BI report will work with the published version of paginated report instead of the report stored in the workspace.
-
-During publishing, Power BI can detect reports with visuals that point at missing paginated reports:
-
-:::image type="content" source="media/service-create-distribute-apps/app-successfully-published-with-warning.png" alt-text="Screenshot of successfully published app with warning.":::
-
-There are two ways to address the issue:
-
-1. Include the paginated report in the app and make sure the audience that has access to the Power BI report also has access to the paginated report.
-
-2. Make sure the audience has access to the paginated report in the workspace.
 
 #### Publish the app to your entire organization
 
