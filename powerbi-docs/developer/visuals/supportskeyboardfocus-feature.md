@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 03/13/2023
+ms.date: 07/20/2023
 ---
 
 # Support keyboard navigation in a custom visual
@@ -46,7 +46,12 @@ This capability adds the following features to your custom visual:
 ## Considerations and limitations
 
 * This feature requires API v2.1.0 or higher.
+
 * This feature can't be applied to image visuals.
+
+* Pressing <kbd>Enter</kbd> on the visual container won't always land on the first focusable element of the visual. To be sure to start at the first element, focus it programmatically after the focus goes into the visual.
+
+* After pressing <kbd>Enter</kbd> on the visual container and after pressing <kbd>Tab</kbd> on the last focusable element, the user might have to press <kbd>Tab</kbd> more than once to get to the next element.
 
 ## Next steps
 
