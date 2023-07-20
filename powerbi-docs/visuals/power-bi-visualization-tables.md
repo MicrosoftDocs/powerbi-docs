@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/19/2023
+ms.date: 07/20/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -21,7 +21,7 @@ A table is a grid that contains related data in a logical series of rows and col
 
 :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format.png" alt-text="Screenshot of a table that displays five measures for Category items." border="false":::
 
-Power BI helps you create tables in reports and cross-highlight elements within the table with other visuals on the same report page. You can select rows, columns, and even individual cells, and cross-highlight the values. You can also copy and paste individual cells and multiple cell selections into other applications.
+Power BI helps you create tables in reports and cross-highlight elements within the table with other visuals on the same report page. You can select rows, columns, and even individual cells, and then cross-highlight the values. You can also copy and paste individual cells and multiple cell selections into other applications.
 
 ## When to use a table
 
@@ -31,10 +31,10 @@ Tables are a great choice for several scenarios:
 
 - Display data as a matrix or in a tabular format with rows and columns.
 
-- Review and compare detailed data and exact values (instead of visual representations).
+- Review and compare detailed data and exact values rather than visual representations.
 
 > [!NOTE]
-> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses or the report needs to be saved in Premium capacity. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Prerequisites
 
@@ -76,7 +76,7 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
 ## Create a table
 
-You can create a table similar to the one shown at the beginning of this article and display sales values by item category.
+You can create a table like the one shown at the beginning of this article and display sales values by item category.
 
 1. On the **Data** pane, expand **Item** and select the **Category** checkbox. Power BI automatically creates a table that lists all the categories in the Retail Analysis Sample dataset.
 
@@ -96,7 +96,7 @@ You can create a table similar to the one shown at the beginning of this article
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-3.png" alt-text="Screenshot that shows the reordered table data fields in the Columns section of the Visualizations pane." border="false":::
 
-   To move a column on the **Visualizations** pane, select and hold the field in the **Columns** section. Drag the field to the new location within the order of columns and release the field. The order of the columns in the table visual updates to match the new order of the fields in the **Columns** section.
+   To move a column on the **Visualizations** pane, select and hold the field in the **Columns** section. Drag the field to the new location within the order of columns and release the field. The order of the columns in the table updates to match the new order of the fields in the **Columns** section.
 
 ## Format the table
 
@@ -145,7 +145,7 @@ The following steps show how to configure settings and options to adjust the pre
    
    1. Finally, configure the other **Apply settings to** options to specify how to use the updated settings for the column data.
    
-      Let's apply the changes to all **values** in the column and also to the row that shows the **total** of value.
+      Let's apply the changes to all **values** in the column and to the row that shows the **total** of value.
       
       :::image type="content" source="media/power-bi-visualization-tables/power-bi-apply-column-format.png" alt-text="Screenshot that shows how to set the Apply settings options to use the formatting changes on the column header, the total row, and all values." border="false":::
 
@@ -177,7 +177,7 @@ With conditional formatting for tables, you can specify icons, URLs, cell backgr
 
 A common use for conditional table formatting is to change the cell background color based on the corresponding numerical data value. You can set static colors for specific custom values, or instruct Power BI to determine the cell color based on the data value.
 
-The **Background color** option offers a gradient that can range in color from the lowest to highest value for the category. You can configure the color gradient, and also specify how to choose the cell background color based on the gradient.
+The **Background color** option offers a gradient that can range in color from the lowest to highest value for the category. You can configure the color gradient, and specify how to choose the cell background color based on the gradient.
 
 By default, Power BI uses a gradient that spans across two primary colors, from red to green. The **Minimum** value color applies to the lowest value in the range. This value is the darkest shade of red. The **Maximum** value color applies to the highest value in the range. This value is the darkest shade of green. Mid-range values for the category are colored with shades of red or green depending on the specific data value.
 
@@ -243,7 +243,7 @@ Let's add another column to the table with a field that has both positive and ne
 
 ### Use visual cues
 
-Another formatting option is to add visual cues to the table with conditional **Icons**. Icons are similar to data bars. They present information about the data in a more visual manner that's easier to scan and analyze than numbers.
+Another formatting option is to add visual cues to the table with conditional **Icons**. Icons are like data bars. They present information about the data in a more visual manner that's easier to scan and analyze than numbers.
 
 1. On the **Visualizations** pane, expand the drop-down menu for the **This Year Sales** field under **Columns**, and select **Conditional formatting** > **Icons**.
 
@@ -288,7 +288,7 @@ To copy the value of a single cell:
 
 To copy the values for more than one cell:
 
-1. Select a contiguous range of cells, or use CTRL (+ select) to choose multiple cells that aren't contiguous.
+1. Select a contiguous range of cells or use CTRL (+ select) to choose multiple cells that aren't contiguous.
 
 1. Right-click inside a selected cell.
 
@@ -309,7 +309,7 @@ Sometimes Power BI truncates a column heading in a report and on a dashboard. To
 
 Review the following considerations for working with tables in Power BI.
 
-- When you apply column formatting, you can choose only one alignment method per column: **Auto**, **Left**, **Center**, and **Right**. Usually, a column contains all text or all numbers, and not a mix of values. In cases where a column contains both numbers and text, the **Auto** option aligns left for text and right for numbers. This behavior supports languages where you read left-to-right.
+- When you apply column formatting, you can choose only one alignment method per column: **Auto**, **Left**, **Center**, or **Right**. Usually, a column contains all text or all numbers, and not a mix of values. In cases where a column contains both numbers and text, the **Auto** option aligns left for text and right for numbers. This behavior supports languages where you read left-to-right.
 
 - If text data in table cells or headers contain new line characters, the characters are ignored by default. If you want Power BI to recognize these formatting characters, enable the **Values** > **Values** > **Text wrap** option for the specific element on the **Format** section of the **Visualizations** pane. 
 
