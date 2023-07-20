@@ -17,7 +17,7 @@ The following screenshot shows the starting point for a simple data model before
 :::image type="content" source="./media/translation-builder-add-language/translations-builder-start.png" alt-text="Screenshot shows Translations Builder with no languages added." lightbox="./media/translation-builder-add-language/translations-builder-start.png":::
 
 > [!NOTE]
-> If you haven't installed Translations Builder yet, see [Create multiple-language reports with Translations Builder](translations-builder.md).
+> If you haven't installed Translations Builder yet, see [Create multiple-language reports with Translations Builder](translation-builder.md).
 
 If you examine the translation grid for this .pbix project, you can see the first three columns contain read-only columns used to identity each metadata translation. Each metadata translation has an **Object Type**, a **Property**, and a **Name**. Translations for the **Caption** property are always used. You can add translations for the **Description** and **DisplayFolder** properties if necessary. The fourth column in the translation grid always displays the translations for the dataset's default language and locale, which in this case is **English [en-US]**.
 

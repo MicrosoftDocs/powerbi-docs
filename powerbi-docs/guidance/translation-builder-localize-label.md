@@ -13,7 +13,7 @@ ms.date: 07/21/2023
 Report label translations provide localized values for text elements on a report that aren't directly associated with a dataset object. Examples of report labels are the text values for report titles, section headings, and button captions. Power BI provides no built-in features to track or integrate report labels. Translations Builder uses *Localized Labels* tables to support this approach.
 
 > [!NOTE]
-> If you haven't installed Translations Builder yet, see [Create multiple-language reports with Translations Builder](translations-builder.md).
+> If you haven't installed Translations Builder yet, see [Create multiple-language reports with Translations Builder](translation-builder.md).
 
 ## Compare localized labels and hard-coded text
 

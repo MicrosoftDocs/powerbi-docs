@@ -26,6 +26,9 @@ Translations Builder generates machine translations by using [Azure AI Translato
 
 To test the support in Translations Builder for generating machine translations, you need a key for an instance of the Azure Translator Service. For more information about obtaining a key, see [What is Azure AI Translator?](/azure/ai-services/translator/translator-overview)
 
+> [!NOTE]
+> If you haven't installed Translations Builder yet, see [Create multiple-language reports with Translations Builder](translation-builder.md).
+
 Translations Builder provides a **Configuration Options** dialog box where you can configure the key and location to access the Azure Translator Service.
 
 :::image type="content" source="./media/translation-builder-machine-translation/configuration-option-dialog.png" alt-text="Screenshot shows Translations Builder Configuration Options where you can specify a key and service location." lightbox="./media/translation-builder-machine-translation/configuration-option-dialog.png":::
