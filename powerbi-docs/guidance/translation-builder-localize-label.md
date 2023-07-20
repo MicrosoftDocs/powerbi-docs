@@ -46,7 +46,7 @@ After a measure has been created for each report label, Power BI can store and m
 
 Translations Builder provides commands to create the **Localized Labels** table and to add a measure each time you need a report label. The **Localized Labels** table is created as a hidden table. You can do all the work to create and manage report labels inside the Translation Builder user experience. There's no need to inspect or modify the **Localized Labels** table using the Power BI Desktop Model or Data views.
 
-Here's an example of the **Localized Labels** table from the example project. It provides localized report labels for the report title, visual titles and captions for navigation buttons used throughout the report.
+Here's an example of the **Localized Labels** table from the example project. It provides localized report labels for the report title, visual titles, and captions for navigation buttons used throughout the report.
 
 :::image type="content" source="./media/translation-builder-localize-label/localize-label.png" alt-text="Screenshot shows the Localized Labels table.":::
 
@@ -104,7 +104,7 @@ To create a **Translated Localized Labels** table, follow these steps.
 
    :::image type="content" source="./media/translation-builder-localize-label/generate-translate-localize-table.png" alt-text="Screenshot shows Translations Builder with Generate Translated Localized Labels Table selected.":::
 
-The first time you generate the **Translated Localized Labels** table, Translations Builder runs code to create the table and populate it with measures. After that, generating the table deletes all the measures in the **Translated Localized Labels** table and recreates them. this action synchronizes all the report label translations between the **Localized Labels** table and the **Translated Localized Labels** table.
+The first time you generate the **Translated Localized Labels** table, Translations Builder runs code to create the table and populate it with measures. After that, generating the table deletes all the measures in the **Translated Localized Labels** table and recreates them. This action synchronizes all the report label translations between the **Localized Labels** table and the **Translated Localized Labels** table.
 
 :::image type="content" source="./media/translation-builder-localize-label/localize-label-table-view.png" alt-text="Screenshot shows the Localized Labels table mapped to the Translated Localized Labels table.":::
 
@@ -114,7 +114,7 @@ Unlike the **Localized Labels** table, the **Translated Localized Labels** table
 
 Every measure in the **Translated Localized Labels** table has a name that ends with the world **Label**. The reason for this is that two measures inside the same dataset can't have the same name. Measure names must be unique on a project-wide basis. It's not possible to create measures in the **Translated Localized Labels** table that have the same name as the measures in the **Localized Labels** table.
 
-If you examine the machine-generated Data Analysis Expressions(DAX) expressions for measures in the **Translated Localized Labels** table, they're based on the same DAX pattern shown earlier. This pattern uses the DAX function `USERCULTURE` together with the `SWITCH` function to return the best translation for the current user. This DAX pattern defaults to the dataset's default language if no match is found.
+If you examine the machine-generated Data Analysis Expressions (DAX) expressions for measures in the **Translated Localized Labels** table, they're based on the same DAX pattern shown earlier. This pattern uses the DAX function `USERCULTURE` together with the `SWITCH` function to return the best translation for the current user. This DAX pattern defaults to the dataset's default language if no match is found.
 
 :::image type="content" source="./media/translation-builder-localize-label/dax-expression.png" alt-text="Screenshot shows Product Sales Report Label derived from a SWITCH command in a DAX expression.":::
 

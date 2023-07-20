@@ -10,7 +10,7 @@ ms.date: 07/21/2023
 ---
 # Generate machine translations using Azure Translator Service
 
-One of the biggest challenges in building multiple-language reports is managing the language translation process. You must ensure that the quality of translations is high. Be sure that the translated names of tables, columns, measures and labels don't lose their meaning when translated to another language. In most cases, acquiring quality translations requires human translators to create or at least review translations as part of the multiple-language report development process.
+One of the biggest challenges in building multiple-language reports is managing the language translation process. You must ensure that the quality of translations is high. Be sure that the translated names of tables, columns, measures, and labels don't lose their meaning when translated to another language. In most cases, acquiring quality translations requires human translators to create or at least review translations as part of the multiple-language report development process.
 
 While human translators are typically an essential part of the end-to-end process, it can take a long time to send out translation files to a translation team and then to wait for them to come back. With all the recent industry advances in AI, you can also generate machine translations using a Web API that can be called directly from an external tool such as Translations Builder. If you generate machine translations, you have something to work with while waiting for a translation team to return their high-quality human translations.
 
@@ -22,7 +22,7 @@ While machine translations aren't always guaranteed to be high quality, they do 
 
 ## Generate machine translations
 
-Translations Builder generates machine translations by using [Azure AI Translator](https://learn.microsoft.com/azure/ai-services/translator/). This product makes it possible to automate enumerating through dataset objects to translate dataset object names from the default language to translations for secondary languages.
+Translations Builder generates machine translations by using [Azure AI Translator](/azure/ai-services/translator/). This product makes it possible to automate enumerating through dataset objects to translate dataset object names from the default language to translations for secondary languages.
 
 To test out the support in Translations Builder for generating machine translations, you need a key for an instance of the Azure Translator Service. For more information about obtaining a key, see [What is Azure AI Translator?](/azure/ai-services/translator/translator-overview).
 

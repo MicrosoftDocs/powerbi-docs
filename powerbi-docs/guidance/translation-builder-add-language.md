@@ -14,7 +14,7 @@ When you open a .pbix project in Translations Builder for the first time, the tr
 
 :::image type="content" source="./media/translation-builder-add-language/translations-builder-start.png" alt-text="Screenshot shows Translations Builder with no languages added." lightbox="./media/translation-builder-add-language/translations-builder-start.png":::
 
-If you examine the translation grid for this .pbix project, you can see the first three columns contain read-only columns used to identity each metadata translation. Each metadata translation has an **Object Type**, a **Property** and a **Name**. Translations for the **Caption** property are always used. You can add translations for the **Description** and **DisplayFolder** properties if necessary. The fourth column in the translation grid always displays the translations for the dataset's default language and locale, which in this case is **English [en-US]**.
+If you examine the translation grid for this .pbix project, you can see the first three columns contain read-only columns used to identity each metadata translation. Each metadata translation has an **Object Type**, a **Property**, and a **Name**. Translations for the **Caption** property are always used. You can add translations for the **Description** and **DisplayFolder** properties if necessary. The fourth column in the translation grid always displays the translations for the dataset's default language and locale, which in this case is **English [en-US]**.
 
 :::image type="content" source="./media/translation-builder-add-language/translation-grid-start.png" alt-text="Screenshot shows a grid of string values for the default language and locale.":::
 
@@ -52,7 +52,7 @@ Adding a new language adds a new column of editable cells to the translations gr
 
 If content creators speak all the languages involved, they can add and update translations for secondary languages directly in the translation grid with an Excel-like editing experience.
 
-:::image type="content" source="./media/translation-builder-add-language/translations-builder-add-grid-fill.png" alt-text="Screenshot shows Translations Builder grid with an empty column for the new language." lightbox="./media/translation-builder-add-language/translations-builder-add-grid-fill.png":::
+:::image type="content" source="./media/translation-builder-add-language/translations-builder-add-grid-fill.png" alt-text="Screenshot shows Translations Builder grid with the new column populated." lightbox="./media/translation-builder-add-language/translations-builder-add-grid-fill.png":::
 
 ## Test translations in the Power BI service
 

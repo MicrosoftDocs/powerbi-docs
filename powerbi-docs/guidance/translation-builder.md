@@ -16,7 +16,7 @@ Content creators can use Translations Builder to add multiple-language support t
 
 Translations Builder is an external tool developed for Power BI Desktop using C#, .NET 6, and Windows Forms. Translations Builder uses an API known as the *Tabular Object Model* (TOM) to update datasets that are loaded into memory and run in a session of Power BI Desktop. 
 
-Translations Builder does most of its work by adding and updating the metadata translations associated with datasets objects including tables, columns and measures. There are also cases in which Translations Builder creates new tables in a dataset to implement strategies to handle aspects of building multiple-language reports.
+Translations Builder does most of its work by adding and updating the metadata translations associated with datasets objects including tables, columns, and measures. There are also cases in which Translations Builder creates new tables in a dataset to implement strategies to handle aspects of building multiple-language reports.
 
 When you open a .pbix project in Power BI Desktop, the dataset defined inside the .pbix file is loaded into memory in a local session of the Analysis Services engine. Translations Builder uses TOM to establish a direct connection to the dataset of the current .pbix project.
 
@@ -28,7 +28,7 @@ If you don't already have Power BI Desktop installed, see [Get Power BI Desktop]
 
 On the same computer where you run Power BI Desktop, download and install Translations Builder by using the [Translations Builder Installation Guide](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Installation%20Guide.md).
 
-After you install Translations Builder, you can open it directly from Power BI Desktop using the **External Tools** tab in the ribbon. The Translations Builder project uses external tools integration support. For more information, see [External tools in Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-external-tools). 
+After you install Translations Builder, you can open it directly from Power BI Desktop using the **External Tools** tab in the ribbon. The Translations Builder project uses external tools integration support. For more information, see [External tools in Power BI Desktop](../transform-model/desktop-external-tools.md).
 
 :::image type="content" source="./media/translation-builder/external-tool-translations-builder.png" alt-text="Screenshot shows the Power BI Desktop External tools ribbon with Translations Builder highlighted." lightbox="./media/translation-builder/external-tool-translations-builder.png":::
 
