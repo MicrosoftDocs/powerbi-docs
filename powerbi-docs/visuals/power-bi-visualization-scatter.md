@@ -19,32 +19,48 @@ LocalizationGroup: Visualizations
 
 This article describes three types of similar chart visualizations in Power BI: scatter charts, bubble charts, and dot plot charts.
 
-- **Scatter charts** show how numerical values along two axes are related. The intersection of values along the two axes creates data points. You can analyze the data points to identify relationships in the data.
+**Scatter charts** display data along a horizontal (X) and vertical (Y) axis. The chart reveals how numerical values along the two axes are related. When data intersects on the two axes, Power BI displays a data point. 
 
-- **Bubble charts** build on the data points in a scatter chart by replacing the points with bubbles. The bubble size represents a third data dimension that's useful for evaluation.
+You can analyze data points to identify relationships in your data. Data points are distributed evenly or unevenly across the horizontal axis depending on the chart data. You can set the number of data points up to a maximum of 10,000.  
 
-- **Dot plot charts** are similar to both bubble and scatter charts. This chart plots the categorical data along the horizontal axis.
+**Bubble charts** expand on the concept of data points by representing two intersected values with a bubble. The bubble size represents a third data dimension that's useful for evaluation. While a scatter chart uses two axes, a bubble chart can support three data series where each series has different sets of values.
 
-Scatter, bubble, and dot plot visualizations help to reveal relationships and patterns in your data. These visualizations can identify interesting information about your data that might not be readily apparent in the numerical values. 
+**Dot plot charts** are similar to both bubble and scatter charts. In a scatter chart, you can adjust the independent scales of the axes to reveal more information about the grouped values. A dot plot chart builds on a scatter chart by supporting category data on the horizontal axis. Your chart settings can highlight patterns in large sets of data, such as showing linear or nonlinear trends, clusters, and outliers. 
 
-A scatter chart displays data along two axes. One set of numerical data is represented on a horizontal axis and another set on a vertical axis. A bubble chart can support three data series where each series has different sets of values.
+These three visual charts help to reveal relationships and patterns in your data. The visualizations can identify interesting information about your data that might not be readily apparent in the numerical values. 
 
-When data in a scatter chart intersects on the X and Y axis, Power BI displays a data point. The data points are distributed evenly or unevenly across the horizontal axis depending on the data in the chart. You can set the number of data points up to a maximum of 10,000.  
-
-A bubble chart builds on the data points created in a scatter chart. Power BI replaces the data points with bubbles. The size of the bubbles represents a third data dimension that's revealed in the relationship of the numerical value intersection. 
-
-In a scatter chart, you can adjust the independent scales of the axes to reveal more information about the grouped values. Your chart settings can highlight patterns in large sets of data, such as showing linear or nonlinear trends, clusters, and outliers. A dot plot chart builds on a scatter chart by supporting categorical data on the horizontal axis.
-
-These three chart visualizations are useful for comparing large numbers of data points without regard to any specific time. The more data you include in your chart, the better the comparisons you can make.
+The scatter, bubble, and dot plot charts are useful for comparing large numbers of data points without regard to any specific time. The more data you include in your chart, the better the comparisons you can make.
 
 ## When to use a scatter, bubble, or dot plot chart
 
-The following table highlights some common scenarios for these chart visualizations.
+Let's review some common usage scenarios for these chart visualizations. The following image provides a comparison of the different display types offered with these visuals.
 
-| Scatter chart | Bubble chart | Dot plot chart |
-| --- | --- | --- |
-| :::image type="content" source="media/power-bi-visualization-scatter/power-bi-scatter-chart.png" alt-text="Screenshot that shows an example of a scatter chart in Power BI."::: | :::image type="content" source="media/power-bi-visualization-scatter/power-bi-bubble-chart.png" alt-text="Screenshot that shows an example of a bubble chart in Power BI."::: |  :::image type="content" source="media/power-bi-visualization-scatter/power-bi-dot-plot-chart.png" alt-text="Screenshot that shows an example of a dot plot chart in Power BI.":::|
-| **Recommended usage** <br> - Show relationships between two numerical values <br> - Plot two groups of numbers as one series of X and Y coordinates <br> - Display worksheet data with pairs or grouped sets of values <br> - Show patterns in large sets of data <br> - Compare large amounts of data points irrespective of time measurements <br> - Convert horizontal axis into logarithmic scale <br> - Substitute for line charts to enable changing horizontal axis scale | **Recommended usage** <br> - Similar scenarios as listed for scatter charts <br> - Visually emphasize value differences with variable bubble size <br> - Support scenarios with three data series that each has sets of values <br> - Present financial data in a visual rather than numerical form <br> - Use with quadrants | **Recommended usage** <br> - Similar scenarios as listed for scatter and bubble charts <br> - Include categorical data along horizontal axis |
+:::image type="content" source="media/power-bi-visualization-scatter/power-bi-compare-charts.png" alt-text="Illustration that compares the visual display for a scatter chart, bubble chart, and dot plot chart in Power BI." border="false":::
+
+### Scatter charts
+
+Scatter charts work well in many scenarios:
+
+- Show relationships between two numerical values
+- Plot two groups of numbers as one series of X and Y coordinates
+- Display worksheet data with pairs or grouped sets of values
+- Show patterns in large sets of data
+- Compare large amounts of data points irrespective of time measurements
+- Convert horizontal axis into logarithmic scale
+- Substitute for line charts to enable changing horizontal axis scale 
+
+### Bubble charts
+
+You can use a bubble chart in many of the same scenarios as a scatter chart. Here are some of the other ways you can use bubble charts:
+
+- Visually emphasize value differences with variable bubble size
+- Support scenarios with three data series that each has sets of values
+- Present financial data in a visual rather than numerical form
+- Display data with quadrants 
+
+### Dot plot charts
+
+Use cases for the dot plot chart are similar to the scenarios described for scatter and bubble charts. The primary advantage of dot plot charts is the ability to include categorical data along the horizontal axis.
 
 > [!NOTE]
 > If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
@@ -99,7 +115,7 @@ Let's begin by creating a scatter chart to highlight district sales data in the 
 
    By default, Power BI creates a clustered column chart to display the data. On the **Visualizations** pane, the **District** field is assigned to the **X-axis** and the other two fields are assigned to the **Y-axis**.
 
-   :::image type="content" source="media/power-bi-visualization-scatter/power-bi-clustered-column-chart.png" alt-text="Screenshot that shows the default cluster column chart for the selected data fields." border="false":::
+   :::image type="content" source="media/power-bi-visualization-scatter/power-bi-clustered-column-chart.png" alt-text="Screenshot that shows the default cluster column chart for the selected data fields.":::
 
    You can now convert the clustered column chart visual into a scatter chart.
 
@@ -107,13 +123,13 @@ Let's begin by creating a scatter chart to highlight district sales data in the 
 
    Notice the changes to the **Visualizations** pane. The **District** field is now listed under **Values**. The chart axes are also different. Power BI plots the **Sales Per Sq Ft** field along the **X Axis** and the **Total Sales Variance %** field along the **Y Axis**.
 
-   :::image type="content" source="media/power-bi-visualization-scatter/power-bi-scatter-initial.png" alt-text="Screenshot that shows the initial scatter chart visualization for the selected Retail Analysis Sample data in Power BI." border="false":::
+   :::image type="content" source="media/power-bi-visualization-scatter/power-bi-scatter-initial.png" alt-text="Screenshot that shows the initial scatter chart visualization for the selected Retail Analysis Sample data in Power BI.":::
 
 1. On the **Visualizations** pane, drag the **District** field from the **Values** section to the **Legend** section.
 
    Power BI creates data points where the data values intersect along the X and Y axes. The data point colors represent different districts.
 
-   :::image type="content" source="media/power-bi-visualization-scatter/power-bi-scatter-district.png" alt-text="Screenshot of the updated scatter chart that shows different colors for the data according to district." border="false":::
+   :::image type="content" source="media/power-bi-visualization-scatter/power-bi-scatter-district.png" alt-text="Screenshot of the updated scatter chart that shows different colors for the data according to district.":::
 
 Now let's add a third dimension by creating a bubble chart for the data.
 
