@@ -24,7 +24,7 @@ Ribbon charts are effective at showing how rank can change. The ribbon for the h
 :::image type="content" source="media/desktop-ribbon-charts/ribbon-charts-01.png" alt-text="Screenshot that shows a ribbon chart with data for Audio, Cell phones, and other categories displayed by year and quarter. The category with the highest rank is ":::
 
 > [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Prerequisites
 
