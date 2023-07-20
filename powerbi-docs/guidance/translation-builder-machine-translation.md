@@ -17,14 +17,14 @@ While human translators are typically an essential part of the end-to-end proces
 While machine translations aren't always guaranteed to be high quality, they do provide value in the multiple-language report development process.
 
 - They can act as translation placeholders so you can begin your testing by loading reports using secondary languages to see if there are layout issues or unexpected line breaks.
-- They can provide human translators with a better starting point as they just need to review and correct translations instead of creating every translation from scratch.
+- They can provide human translators with a better starting point because they just need to review and correct translations instead of creating every translation from scratch.
 - They can be used to quickly add support for languages where there are legal compliance issues and organizations are facing fines or litigation for noncompliance.
 
 ## Generate machine translations
 
 Translations Builder generates machine translations by using [Azure AI Translator](/azure/ai-services/translator/). This product makes it possible to automate enumerating through dataset objects to translate dataset object names from the default language to translations for secondary languages.
 
-To test out the support in Translations Builder for generating machine translations, you need a key for an instance of the Azure Translator Service. For more information about obtaining a key, see [What is Azure AI Translator?](/azure/ai-services/translator/translator-overview).
+To test the support in Translations Builder for generating machine translations, you need a key for an instance of the Azure Translator Service. For more information about obtaining a key, see [What is Azure AI Translator?](/azure/ai-services/translator/translator-overview)
 
 Translations Builder provides a **Configuration Options** dialog box where you can configure the key and location to access the Azure Translator Service.
 

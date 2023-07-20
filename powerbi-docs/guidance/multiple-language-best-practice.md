@@ -10,7 +10,7 @@ ms.date: 07/21/2023
 ---
 # Use best practices to localize Power BI reports
 
-When it comes to localizing software, there are some universal principals to keep in mind. The first is to plan for localization from the start of any project. It's harder to add localization support to an existing dataset or report that was initially built without any regard for Internationalization or localization.
+When it comes to localizing software, there are some universal principals to keep in mind. The first is to plan for localization from the start of any project. It's harder to add localization support to an existing dataset or report that was initially built without any regard for internationalization or localization.
 
 This fact is especially true with Power BI reports because there are so many popular design techniques that don't support localization. Much of the work for adding localization support to existing Power BI reports involves undoing things that don't support localization. Only after that work can you move forward with design techniques that do support localization.
 
@@ -33,9 +33,9 @@ You can package both a report layout and its underlying dataset definition toget
 
 The single project file approach doesn't always provide the flexibility you need. Maybe one team is responsible for creating and updating datasets while other teams are responsible for building reports. It might make sense to share a dataset with reports in separate .pbix project files.
 
-To use the shared dataset approach, create one .pbix project file with a dataset and an empty report, which remains unused. After this dataset has been deployed to the Power BI service, report builders can connect to it using Power BI Desktop to create report-only .pbix files. This approach makes it possible for the teams building reports to build .pbix project files with report layouts that can be deployed and updated independently of the underlying dataset.
-
 :::image type="content" source="./media/multiple-language-best-practice/shared-dataset-scenario.png" alt-text="Diagram shows two report layouts in separate files associated with a dataset definition in a third file that also has an unused report.":::
+
+To use the shared dataset approach, create one .pbix project file with a dataset and an empty report, which remains unused. After this dataset has been deployed to the Power BI service, report builders can connect to it using Power BI Desktop to create report-only .pbix files. This approach makes it possible for the teams building reports to build .pbix project files with report layouts that can be deployed and updated independently of the underlying dataset.
 
 ## Account for text size
 
@@ -45,13 +45,15 @@ Adding a healthy degree of padding to localized labels is the norm when developi
 
 ## Add support for page navigation
 
-You can't display page tabs to the user in a multiple-language report because page tabs in a Power BI report don't support localization. For localization, you must provide some other means for users to navigate from page to page. You can use a design technique where you add a navigation menu that uses buttons. When the user selects a button, the button applies a bookmark to navigate to another page. This section describes the process of building a navigation menu that supports localization using measures from the **Localized Labels** table.
+You can't display page tabs to the user in a multiple-language report because page tabs in a Power BI report don't support localization. For localization, you must provide some other means for users to navigate from page to page.
+
+You can use a design technique where you add a navigation menu that uses buttons. When the user selects a button, the button applies a bookmark to navigate to another page. This section describes the process of building a navigation menu that supports localization using measures from the **Localized Labels** table.
 
 1. Open the report in Power BI Desktop.
 
 1. You need to hide every page in the report except the first page. For each tab that you hide, right-click and select **Hide Page** from the context menu.
 
-   :::image type="content" source="./media/multiple-language-best-practice/report-page-tab.png" alt-text="Screenshot shows the tabs in a Power VI report with all but one tab hidden." lightbox="./media/multiple-language-best-practice/report-page-tab.png":::
+   :::image type="content" source="./media/multiple-language-best-practice/report-page-tab.png" alt-text="Screenshot shows the tabs in a Power VI report with all but one tab hidden.":::
 
 1. From the **View** ribbon, select **Bookmarks** to display the **Bookmarks** pane.
 

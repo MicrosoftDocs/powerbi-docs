@@ -10,9 +10,14 @@ ms.date: 07/21/2023
 ---
 # Add a language to a report in Translations Builder
 
-When you open a .pbix project in Translations Builder for the first time, the translation grid displays a row  for each unhidden table, measure, and column in the project's underlying data model. The translation grid doesn't display rows for dataset objects in the data model that are hidden from the report view. Hidden objects aren't displayed on a report and don't require translations. The following screenshot shows the starting point for a simple data model before it's been modified to support secondary languages.
+When you open a .pbix project in Translations Builder for the first time, the translation grid displays a row  for each unhidden table, measure, and column in the project's underlying data model. The translation grid doesn't display rows for dataset objects in the data model that are hidden from the report view. Hidden objects aren't displayed on a report and don't require translations.
+
+The following screenshot shows the starting point for a simple data model before it's been modified to support secondary languages.
 
 :::image type="content" source="./media/translation-builder-add-language/translations-builder-start.png" alt-text="Screenshot shows Translations Builder with no languages added." lightbox="./media/translation-builder-add-language/translations-builder-start.png":::
+
+> [!NOTE]
+> If you haven't installed Translations Builder yet, see [Create multiple-language reports with Translations Builder](translations-builder.md).
 
 If you examine the translation grid for this .pbix project, you can see the first three columns contain read-only columns used to identity each metadata translation. Each metadata translation has an **Object Type**, a **Property**, and a **Name**. Translations for the **Caption** property are always used. You can add translations for the **Description** and **DisplayFolder** properties if necessary. The fourth column in the translation grid always displays the translations for the dataset's default language and locale, which in this case is **English [en-US]**.
 
@@ -23,7 +28,7 @@ If you examine the translation grid for this .pbix project, you can see the firs
 
 ## Add languages
 
-Translations Builder provides an **Add Language** command to add secondary languages to the project's data model.
+Translations Builder provides an **Add Language** option to add secondary languages to the project's data model.
 
 Translations Builder doesn't add metadata translations for a specific language. Instead, it adds metadata translations for a culture name that identifies both a language and a locale. Translations Builder abstracts away the differences between a language and a culture name to simplify the user experience. Content creators can think in terms of languages and countries instead of culture names.
 

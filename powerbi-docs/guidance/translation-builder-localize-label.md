@@ -12,6 +12,9 @@ ms.date: 07/21/2023
 
 Report label translations provide localized values for text elements on a report that aren't directly associated with a dataset object. Examples of report labels are the text values for report titles, section headings, and button captions. Power BI provides no built-in features to track or integrate report labels. Translations Builder uses *Localized Labels* tables to support this approach.
 
+> [!NOTE]
+> If you haven't installed Translations Builder yet, see [Create multiple-language reports with Translations Builder](translations-builder.md).
+
 ## Compare localized labels and hard-coded text
 
 There are some design techniques for building datasets and reports with Power BI Desktop that you should avoid when you build multiple-language reports. These elements cause problems due to a lack of localization support:
@@ -20,7 +23,7 @@ There are some design techniques for building datasets and reports with Power BI
 - Adding a hard-coded text value for the title of a visual
 - Displaying page tabs to the user
 
-Any hard-coded text value that you add to the report layout can't be localized. Suppose you add a column chart to your report. By default, a Cartesian visual such as a column chart is assigned a dynamic value to its **Title** property. That value is based on the names of the columns and measures that have been added into the data roles such of **Axis**, **Legend**, and **Values**.
+Any hard-coded text value that you add to the report layout can't be localized. Suppose you add a column chart to your report. By default, a Cartesian visual such as a column chart is assigned a dynamic value to its **Title** property. That value is based on the names of the columns and measures that have been added into the data roles, such as **Axis**, **Legend**, and **Values**.
 
 :::image type="content" source="./media/translation-builder-localize-label/power-bi-visual-title.png" alt-text="Screenshot shows a report visual with its generated title highlighted.":::
 
@@ -42,7 +45,7 @@ You might not like the dynamically generated visual **Title**, but don't replace
 
 The Power BI localization features are supported at the dataset level but not at the report layout level. Using localized label tables builds on the fact that Power BI supports metadata translations for specific types of dataset objects, including measures. When you add a report label by using Translations Builder, it automatically adds a new measure to the **Localized Labels** table behind the scenes.
 
-After a measure has been created for each report label, Power BI can store and manage its translations in the exact same fashion that it does for metadata translations. In fact, the **Localized Labels** table strategy uses metadata translations to implement report label translations.
+After a measure has been created for each report label, Power BI can store and manage its translations in the same fashion that it does for metadata translations. In fact, the **Localized Labels** table strategy uses metadata translations to implement report label translations.
 
 Translations Builder provides commands to create the **Localized Labels** table and to add a measure each time you need a report label. The **Localized Labels** table is created as a hidden table. You can do all the work to create and manage report labels inside the Translation Builder user experience. There's no need to inspect or modify the **Localized Labels** table using the Power BI Desktop Model or Data views.
 
@@ -74,7 +77,7 @@ To create your first report label, follow these steps:
 
    :::image type="content" source="./media/translation-builder-localize-label/add-localize-label.png" alt-text="Screenshot shows Translations Builder with Add Labels to Localized Labels Table selected.":::
 
-1. Add report labels one at a time by typing in the text for the label and then selecting **Add Label**.
+1. Add report labels one at a time by typing the text for the label. Then select **Add Label**.
 
    :::image type="content" source="./media/translation-builder-localize-label/add-localize-label-dialog.png" alt-text="Screenshot shows the Add Localized Labels dialog box with the label Product Sales Report.":::
 
@@ -92,7 +95,7 @@ Translations Builder only populates the translation grid with dataset objects th
 
 In the **Localized Labels** table strategy, report labels can be created, managed, and stored in the same .pbix project file that holds the metadata translations for the names of tables, columns, and measures. The **Localized Labels** table strategy is able to merge metadata translations and report label translations together in a unified experience in the translation gird. There's no need to distinguish between metadata translations and report label translations when it comes to editing translations or when using Translations Builder features to generate machine translations.
 
-There are other popular localization techniques that track report label translations in a separate CSV file. While these techniques work fine, they aren't as streamlined as the **Localized Labels** table strategy. Report label translations must be created separately and managed differently from the metadata translations in a .pbix project. The **Localized Labels** table strategy allows for report label translations and metadata translations to be stored together and managed in the exact same way.
+There are other popular localization techniques that track report label translations in a separate CSV file. While these techniques work, they aren't as streamlined as the **Localized Labels** table strategy. Report label translations must be created separately and managed differently from the metadata translations in a .pbix project. The **Localized Labels** table strategy allows for report label translations and metadata translations to be stored together and managed in the same way.
 
 ### Generate the translated Localized Labels table
 
@@ -124,7 +127,7 @@ Don't edit the DAX expressions for measures in the **Translated Localized Labels
 
 ### Surface localized labels on a report page
 
-Report labels are implemented as dynamic measures in the **Translated Localized Labels** table. That makes them easy to surface in a Power BI report. For example, you can add a Card visual to a report and then configure its **Data** role in the **Visualizations** pane with a measure from the **Translated Localized Labels** table.
+Report labels are implemented as dynamic measures in the **Translated Localized Labels** table. That fact makes them easy to surface in a Power BI report. For example, you can add a Card visual to a report and then configure its **Data** role in the **Visualizations** pane with a measure from the **Translated Localized Labels** table.
 
 :::image type="content" source="./media/translation-builder-localize-label/localize-label-card-report.png" alt-text="Screenshot shows a card visual with a translated localized label." lightbox="./media/translation-builder-localize-label/localize-label-card-report.png":::
 
@@ -138,7 +141,7 @@ The **Text** property of a **Rectangle** shape can be configured with a hard-cod
 
    :::image type="content" source="./media/translation-builder-localize-label/text-function-button.png" alt-text="Screenshot shows the function button next to the text box for this rectangle.":::
 
-  Power BI Desktop displays a dialog box that allows you to configure the **Text** property of the **Rectangle** shape.
+   Power BI Desktop displays a dialog box that allows you to configure the **Text** property of the **Rectangle** shape.
 
 1. In the **Text - Style - Text** dialog box, expand the **Translated Localized Labels** table and select any measure.
 
