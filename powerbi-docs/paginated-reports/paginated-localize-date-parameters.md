@@ -7,18 +7,18 @@ ms.reviewer: 'bradsy'
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 07/20/2023
+ms.date: 07/21/2023
 ---
 
 # Localize date parameters in the Power BI service and Power BI Report Builder
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-There are differences between the way date type parameters behave reports in Power BI Report Builder and published reports in the Power BI service. In this article, you learn how to localize the displayed value of date parameters in the multi-value dropdown control to the languages of your choice.
+There are differences between the way date type parameters behave for reports in Power BI Report Builder and published reports in the Power BI service. In this article, you learn how to localize the displayed value of date parameters in the multi-value dropdown control to the languages of your choice.
 
 In Power BI Report Builder, date parameters are seen in the format of the clients' operating system. For instance, if your operating system is set to a German locale, the format of the parameter is dd/mm/yyyy. But when you publish the report to the Power BI service, the drop-down values for the multi-value parameter are in US format, mm/dd/yyyy. This change is because the host server that generates the parameter value is always in US format, for consistent report processing across regions of the world.
 
-Here's a multi-value select all control in the Power BI service. When you have available values, this control is displayed.
+When you have available values, the multi value checkbox control will display.
 
 :::image type="content" source="media/paginated-localize-date-parameters/multi-value-select-all.png" alt-text="Screenshot showing multi-select dropdown calendar.":::
 
