@@ -1,5 +1,5 @@
 ---
-title: "Add a localized labels table to a Power BI report"
+title: "Add a Localized Labels table to a Power BI report"
 description: Learn how report label translations provide localized values for text elements on a report that aren't directly associated with a dataset object.
 author: maggiesMSFT   
 ms.author: maggies
@@ -8,7 +8,7 @@ ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 07/21/2023
 ---
-# Add a localized labels table to a Power BI report
+# Add a Localized Labels table to a Power BI report
 
 Report label translations provide localized values for text elements on a report that aren't directly associated with a dataset object. Examples of report labels are the text values for report titles, section headings, and button captions. Power BI provides no built-in features to track or integrate report labels. Translations Builder uses *Localized Labels* tables to support this approach.
 

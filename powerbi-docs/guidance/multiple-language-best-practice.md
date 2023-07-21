@@ -1,11 +1,11 @@
 ---
 title: Use best practices to localize Power BI reports
-description: Learn about best practices for your multiple-language report projects, such as allowing for text size, page navigation, and packaging reports.
+description: Learn about best practices for your multiple-language report projects, such as allowing for text size, and packaging reports.
 author: maggiesMSFT   
 ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: how-to
+ms.topic: conceptual
 ms.date: 07/21/2023
 ---
 # Use best practices to localize Power BI reports
@@ -42,51 +42,6 @@ To use the shared dataset approach, create one .pbix project file with a dataset
 Another important concept in localization is to plan for growth. A label that's 400 pixels wide when displayed in English could require a greater width when translated into another language. If you optimize the width of your labels for text in English, you might find that translations in other languages introduce unexpected line breaks or get cut off. These effects compromise the user experience.
 
 Adding a healthy degree of padding to localized labels is the norm when developing internationalized software. It's essential that you test your reports with each language you plan to support. You need to be sure that your report layouts look the way you expect with any language you have chosen to support.
-
-## Add support for page navigation
-
-You can't display page tabs to the user in a multiple-language report because page tabs in a Power BI report don't support localization. For localization, you must provide some other means for users to navigate from page to page.
-
-You can use a design technique where you add a navigation menu that uses buttons. When the user selects a button, the button applies a bookmark to navigate to another page. This section describes the process of building a navigation menu that supports localization using measures from the **Localized Labels** table.
-
-1. Open the report in Power BI Desktop.
-
-1. You need to hide every page in the report except the first page. For each tab that you hide, right-click and select **Hide Page** from the context menu.
-
-   :::image type="content" source="./media/multiple-language-best-practice/report-page-tab.png" alt-text="Screenshot shows the tabs in a Power VI report with all but one tab hidden.":::
-
-1. From the **View** ribbon, select **Bookmarks** to display the **Bookmarks** pane.
-
-1. In the **Bookmarks** pane, create a set of bookmarks. Each bookmark navigates to a specific page.
-
-   1. Select a tab, starting with **Sales Summary**, which serves as the landing page.
-   1. In **Bookmarks**, select **Add**.
-   1. Right-click the new bookmark and select **Rename**. Enter a bookmark name, such as **GoToSalesSummary**.
-   1. Right-click the bookmark name and disable **Data** and **Display**. Enable **Current Page** behavior.
-
-      :::image type="content" source="./media/multiple-language-best-practice/report-page-bookmark-context-menu.png" alt-text="Screenshot shows the context menu for a bookmark with Data and Display unselected.":::
-
-   1. Repeat these steps for each of the hidden tabs. The **Bookmark** pane has the following bookmarks:
-
-      :::image type="content" source="./media/multiple-language-best-practice/report-page-bookmark.png" alt-text="Screenshot shows the Bookmarks pan with several values.":::
-
-1. Select a button at the top of the report, starting with **Sales Summary**.
-1. Under **Format**, select **Button** > **Action**. Set **Action** to **On**.
-1. Under **Action**, set **Type** to **Bookmark** and **Bookmark** to the relevant bookmark, starting with **GoToSalesSummary**.
-1. In the same way, configure each button in the navigation menu to apply a bookmark to navigate to a specific page.
-
-   :::image type="content" source="./media/multiple-language-best-practice/bookmark-navigate.png" alt-text="Screenshot shows a report with a bookmark selected and the associated action highlighted." lightbox="./media/multiple-language-best-practice/bookmark-navigate.png":::
-
-1. For each button, select **Button** > **Style** > **Text** and then select the function button.
-
-   :::image type="content" source="./media/multiple-language-best-practice/file-text-function.png" alt-text="Screenshot shows a report with a bookmark selected and the function button selected." lightbox="./media/multiple-language-best-practice/file-text-function.png":::
-
-1. In the **Text - State** dialog box, from the **Translated Localized Labels** table, select the entry that corresponds to that button. For instance, **Sales by Country Label** for **Sales by Country**.
-
-   :::image type="content" source="./media/multiple-language-best-practice/text-state.png" alt-text="Screenshot shows the Text State dialog box with a data field selected." lightbox="./media/multiple-language-best-practice/text-state.png":::
-
-The report now has no visible tabs when you publish it to the Power BI service. The report opens to the **Sales Summary** page. Readers can move from page to page by using the buttons, which are localized by using the **Translated Localized Labels** table.
-
 
 ## Next steps
 
