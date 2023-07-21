@@ -26,7 +26,7 @@ Start by hiding all but one of the tabs.
 
 1. For each tab that you hide, right-click and select **Hide Page** from the context menu.
 
-   :::image type="content" source="./media/multiple-language-page-navigation.md/report-page-tab.png" alt-text="Screenshot shows the tabs in a Power VI report with all but one tab hidden.":::
+   :::image type="content" source="./media/multiple-language-page-navigation/report-page-tab.png" alt-text="Screenshot shows the tabs in a Power VI report with all but one tab hidden.":::
 
 ## Create bookmarks
 
@@ -41,11 +41,11 @@ Each button uses a bookmark to take the reader to a page. For more information o
    1. Right-click the new bookmark and select **Rename**. Enter a bookmark name, such as **GoToSalesSummary**.
    1. Right-click the bookmark name and disable **Data** and **Display**. Enable **Current Page** behavior.
 
-      :::image type="content" source="./media/multiple-language-page-navigation.md/report-page-bookmark-context-menu.png" alt-text="Screenshot shows the context menu for a bookmark with Data and Display unselected.":::
+      :::image type="content" source="./media/multiple-language-page-navigation/report-page-bookmark-context-menu.png" alt-text="Screenshot shows the context menu for a bookmark with Data and Display unselected.":::
 
    1. Repeat these steps for each of the hidden tabs. The **Bookmark** pane has the following bookmarks:
 
-      :::image type="content" source="./media/multiple-language-page-navigation.md/report-page-bookmark.png" alt-text="Screenshot shows the Bookmarks pan with several values.":::
+      :::image type="content" source="./media/multiple-language-page-navigation/report-page-bookmark.png" alt-text="Screenshot shows the Bookmarks pan with several values.":::
 
 ## Configure buttons
 
@@ -56,15 +56,15 @@ The multiple-language demo project contains buttons for navigation. To learn mor
 1. Under **Action**, set **Type** to **Bookmark** and **Bookmark** to the relevant bookmark, starting with **GoToSalesSummary**.
 1. In the same way, configure each button in the navigation menu to apply a bookmark to navigate to a specific page.
 
-   :::image type="content" source="./media/multiple-language-page-navigation.md/bookmark-navigate.png" alt-text="Screenshot shows a report with a bookmark selected and the associated action highlighted." lightbox="./media/multiple-language-page-navigation.md/bookmark-navigate.png":::
+   :::image type="content" source="./media/multiple-language-page-navigation/bookmark-navigate.png" alt-text="Screenshot shows a report with a bookmark selected and the associated action highlighted." lightbox="./media/multiple-language-page-navigation/bookmark-navigate.png":::
 
 1. For each button, select **Button** > **Style** > **Text** and then select the function button.
 
-   :::image type="content" source="./media/multiple-language-page-navigation.md/file-text-function.png" alt-text="Screenshot shows a report with a bookmark selected and the function button selected." lightbox="./media/multiple-language-page-navigation.md/file-text-function.png":::
+   :::image type="content" source="./media/multiple-language-page-navigation/file-text-function.png" alt-text="Screenshot shows a report with a bookmark selected and the function button selected." lightbox="./media/multiple-language-page-navigation/file-text-function.png":::
 
 1. In the **Text - State** dialog box, from the **Translated Localized Labels** table, select the entry that corresponds to that button. For instance, **Sales by Country Label** for **Sales by Country**.
 
-   :::image type="content" source="./media/multiple-language-page-navigation.md/text-state.png" alt-text="Screenshot shows the Text State dialog box with a data field selected." lightbox="./media/multiple-language-page-navigation.md/text-state.png":::
+   :::image type="content" source="./media/multiple-language-page-navigation/text-state.png" alt-text="Screenshot shows the Text State dialog box with a data field selected." lightbox="./media/multiple-language-page-navigation/text-state.png":::
 
 The report now has no visible tabs when you publish it to the Power BI service. The report opens to the **Sales Summary** page. Readers can move from page to page by using the buttons, which are localized by using the **Translated Localized Labels** table.
 
