@@ -35,14 +35,16 @@ The single project file approach doesn't always provide the flexibility you need
 
 :::image type="content" source="./media/multiple-language-best-practice/shared-dataset-scenario.png" alt-text="Diagram shows two report layouts in separate files associated with a dataset definition in a third file that also has an unused report.":::
 
-To use the shared dataset approach, create one .pbix project file with a dataset and an empty report, which remains unused. After this dataset has been deployed to the Power BI service, report builders can connect to it using Power BI Desktop to create report-only .pbix files. This approach makes it possible for the teams building reports to build .pbix project files with report layouts that can be deployed and updated independently of the underlying dataset.
+To use the shared dataset approach, create one .pbix project file with a dataset and an empty report, which remains unused. After this dataset has been deployed to the Power BI service, report builders can connect to it using Power BI Desktop to create report-only .pbix files.
+
+This approach makes it possible for the teams building reports to build .pbix project files with report layouts that can be deployed and updated independently of the underlying dataset. For more information, see [Connect to datasets](../connect-data/desktop-report-lifecycle-datasets.md).
 
 ## Account for text size
 
 Another important concept in localization is to plan for growth. A label that's 400 pixels wide when displayed in English could require a greater width when translated into another language. If you optimize the width of your labels for text in English, you might find that translations in other languages introduce unexpected line breaks or get cut off. These effects compromise the user experience.
 
-Adding a healthy degree of padding to localized labels is the norm when developing internationalized software. It's essential that you test your reports with each language you plan to support. You need to be sure that your report layouts look the way you expect with any language you have chosen to support.
+Adding a healthy degree of padding to localized labels is the norm when developing internationalized software. It's essential that you test your reports with each language you plan to support. You need to be sure that your report layouts look the way you expect with any language you choose to support.
 
 ## Next steps
 
-- [Guidance for Power BI](overview.md)
+- [Create multiple-language reports with Translations Builder](translation-builder.md)

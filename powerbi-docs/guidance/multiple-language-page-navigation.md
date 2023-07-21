@@ -66,6 +66,8 @@ The multiple-language demo project contains buttons for navigation. To learn mor
 
    :::image type="content" source="./media/multiple-language-page-navigation/text-state.png" alt-text="Screenshot shows the Text State dialog box with a data field selected." lightbox="./media/multiple-language-page-navigation/text-state.png":::
 
+1. Select **OK** to save your selection.
+
 The report now has no visible tabs when you publish it to the Power BI service. The report opens to the **Sales Summary** page. Readers can move from page to page by using the buttons, which are localized by using the **Translated Localized Labels** table.
 
 ## Next steps

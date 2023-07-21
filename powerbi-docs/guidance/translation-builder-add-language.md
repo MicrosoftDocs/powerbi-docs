@@ -19,7 +19,9 @@ The following screenshot shows the starting point for a simple data model before
 > [!NOTE]
 > If you haven't installed Translations Builder yet, see [Create multiple-language reports with Translations Builder](translation-builder.md).
 
-If you examine the translation grid for this .pbix project, you can see the first three columns contain read-only columns used to identity each metadata translation. Each metadata translation has an **Object Type**, a **Property**, and a **Name**. Translations for the **Caption** property are always used. You can add translations for the **Description** and **DisplayFolder** properties if necessary. The fourth column in the translation grid always displays the translations for the dataset's default language and locale, which in this case is **English [en-US]**.
+If you examine the translation grid for this .pbix project, you can see the first three columns contain read-only columns used to identity each metadata translation. Each metadata translation has an **Object Type**, a **Property**, and a **Name**. Translations for the **Caption** property are always used. You can add translations for the **Description** and **DisplayFolder** properties if necessary.
+
+The fourth column in the translation grid always displays the translations for the dataset's default language and locale, which in this case is **English [en-US]**.
 
 :::image type="content" source="./media/translation-builder-add-language/translation-grid-start.png" alt-text="Screenshot shows a grid of string values for the default language and locale.":::
 
@@ -30,7 +32,9 @@ If you examine the translation grid for this .pbix project, you can see the firs
 
 Translations Builder provides an **Add Language** option to add secondary languages to the project's data model.
 
-Translations Builder doesn't add metadata translations for a specific language. Instead, it adds metadata translations for a culture name that identifies both a language and a locale. Translations Builder abstracts away the differences between a language and a culture name to simplify the user experience. Content creators can think in terms of languages and countries instead of culture names.
+Translations Builder doesn't add metadata translations for a specific language. Instead, it adds metadata translations for a culture name that identifies both a language and a locale. For more information, see [Use locale values in multiple-language Power BI reports](multiple-language-locale.md).
+
+Translations Builder abstracts away the differences between a language and a culture name to simplify the user experience. Content creators can think in terms of languages and countries instead of culture names.
 
 To add one or more secondary languages, follow these steps.
 
@@ -38,9 +42,11 @@ To add one or more secondary languages, follow these steps.
 
 1. Select a language in the list or use **Ctrl** to select multiple languages.
 
+1. Select **Add Language**.
+
    :::image type="content" source="./media/translation-builder-add-language/translations-builder-add-language.png" alt-text="Screenshot shows the Add Language button in Translations Builder.":::
 
-1. Select **Add Language**. The added language or languages now appear in the **Secondary Languages** list.
+   The added language or languages now appear in the **Secondary Languages** list.
 
    :::image type="content" source="./media/translation-builder-add-language/translations-builder-secondary-language.png" alt-text="Screenshot shows the Add Language dialog box with a language selected and the Add Language button highlighted." lightbox="./media/translation-builder-add-language/translations-builder-secondary-language.png":::
 
@@ -65,21 +71,21 @@ You can't verify your multiple-language work in Power BI Desktop. Instead, you m
 
 1. In Power BI Desktop, save changes to the underlying .pbix file.
 
-1. In the Home ribbon, select **Publish**.
+1. In the **Home** ribbon, select **Publish**.
 
    :::image type="content" source="./media/translation-builder-add-language/power-bi-home-publish.png" alt-text="Screenshot shows the Power BI Desktop Home ribbon with the Publish button highlighted." lightbox="./media/translation-builder-add-language/power-bi-home-publish.png":::
 
 1. In the **Publish to Power BI** dialog box, highlight a workspace and then choose **Select**.
 
 1. When the publishing finishes, select the link to open the project in the Power BI service.
- 
+
 After the report loads with its default language, select the browser address bar and add the following **language** parameter to the report URL.
 
 ```http
 ?language=es-ES
 ```
 
-When you add the **language** parameter to the end of the report URL, assign a value that is a valid culture name. After you add the **language** parameter and press **ENTER**, you can verify that the parameter has been accepted by the browser as it reloads the report.
+When you add the **language** parameter to the end of the report URL, assign a value that is a valid culture name. After you add the **language** parameter and press **Enter**, you can verify that the parameter has been accepted by the browser as it reloads the report.
 
 If you forget to add the question mark (**?**) or if you don't format the **language** parameter correctly, the browser rejects the parameter and removes it from the URL. After you correctly load a report using a **language** parameter value of **es-ES**, you should see the user experience for the entire Power BI service UI change from English to Spanish.
 
@@ -91,7 +97,7 @@ The report also displays the Spanish translations for the names of columns and m
 
 After you test your work and verify that the translations are working properly, you can store the .pbix file in a source control system such as GitHub or [Azure Repos](/azure/devops/repos/). This approach can be part of an application lifecycle management (ALM) strategy where support for secondary languages and translations evolves over time.
 
-As you begin to work with secondary languages and translations to localize a .pbix project, follow the same set of steps again and again:
+As you begin to work with secondary languages and translations to localize a .pbix project, follow the same set of steps:
 
 1. Make changes in Power BI Desktop.
 1. Publish the .pbix project to the Power BI service.
@@ -117,4 +123,4 @@ let report = powerbi.embed(reportContainer, config);
 
 ## Next steps
 
-- [Add a localized labels table to a Power BI report](translation-builder-localize-label.md)
+- [Add a Localized Labels table to a Power BI report](translation-builder-localize-label.md)
