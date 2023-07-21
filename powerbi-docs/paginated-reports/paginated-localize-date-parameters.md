@@ -46,7 +46,7 @@ You already have your report with data, but the Power BI service isn't showing t
 1. [Add a new query parameter](#add-a-new-query-parameter) to use in the dataset query. 
 1. [Use the dataset parameter](#use-the-dataset-parameter-in-the-query) in the query to create a new localized date field. 
 1. [Update the date parameter label field](#update-the-date-parameter-label-field). 
-1. [Move the internal report parameter](#move-the-internal-parameter-before-the-date-parameter) before the date parameter. 
+1. [Move the internal report parameter](#move-the-internal-parameter-ahead-of-the-date-parameter) before the date parameter. 
 1. [Publish the updated report](#publish-the-updated-report). 
 
 ## Add a new internal report parameter 
