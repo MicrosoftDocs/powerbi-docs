@@ -34,7 +34,7 @@ The first control mentioned, multi-value select all control is the target of thi
 
 Here's an example of the parameter label with a dataset field different from the parameter value.
 
-:::image type="content" source="media/paginated-localize-date-parameters/parameter-properties-available-values-pane.png" alt-text="Screenshot showing dataset parameter properties dialog.":::
+:::image type="content" source="media/paginated-localize-date-parameters/parameter-properties-available-values-pane.png" alt-text="Screenshot showing dataset parameter properties dialog." lightbox="media/paginated-localize-date-parameters/parameter-properties-available-values-pane.png":::
 
 Often, you have no control over the data and must get creative with the report data to make it useful to all consumers. You can change or add data when the report is executed. Most data sources allow adding new fields to the dataset when executing a query. This article uses an example with DAX to add a new column to a Power BI dataset so that we can properly localize the label of a multi-value date parameter. 
 
@@ -53,11 +53,11 @@ You already have your report with data, but the Power BI service isn't showing t
 
 In Report Builder, create an internal text report parameter. In this case, the parameter is called "InternalUserDateFormat".  
 
-:::image type="content" source="media/paginated-localize-date-parameters/parameter-internal-properties.png" alt-text="Screenshot showing internal report parameter dialog box.":::
+:::image type="content" source="media/paginated-localize-date-parameters/parameter-internal-properties.png" alt-text="Screenshot showing internal report parameter dialog box." lightbox="media/paginated-localize-date-parameters/parameter-internal-properties.png":::
 
 Then add an expression to the default value to determine the format of the date based on the `Users!Language`.
 
-:::image type="content" source="media/paginated-localize-date-parameters/parameter-internal-expression.png" alt-text="Screenshot showing Expression code set for default values.":::
+:::image type="content" source="media/paginated-localize-date-parameters/parameter-internal-expression.png" alt-text="Screenshot showing Expression code set for default values." lightbox="media/paginated-localize-date-parameters/parameter-internal-expression.png":::
 
 ### Expression code set on default values
 
@@ -77,13 +77,13 @@ User!Language = "jp", "yyyy.dd.mm",
 
 Datasets don't inherently know how to use report level parameters. On the dataset used in the report for the date parameter, add a dataset parameter bound to the new "InternalUserDateFormat" report parameter.
 
-:::image type="content" source="media/paginated-localize-date-parameters/dataset-parameter-properties.png" alt-text="Screenshot showing Dataset properties dialog box.":::
+:::image type="content" source="media/paginated-localize-date-parameters/dataset-parameter-properties.png" alt-text="Screenshot showing Dataset properties dialog box."  lightbox="media/paginated-localize-date-parameters/dataset-parameter-properties.png":::
 
 ## Use the dataset parameter in the query 
 
 Then use the dataset parameter to drive the format of a new date column to be used as the label. The following example is from a Power BI dataset with three date values. Use the ADDCOLUMNS function from DAX to add a new field that's localized based on the information provided from the client's value for the new report parameter. The example query output is for the Finnish locale "fi-FI". Save your dataset. 
 
-:::image type="content" source="media/paginated-localize-date-parameters/query-designer-dialog.png" alt-text="Screenshot showing Query Designer dialog.":::
+:::image type="content" source="media/paginated-localize-date-parameters/query-designer-dialog.png" alt-text="Screenshot showing Query Designer dialog." lightbox="media/paginated-localize-date-parameters/query-designer-dialog.png":::
 
 ### DAX query snippet
 
@@ -98,13 +98,13 @@ EVALUATE SUMMARIZECOLUMNS('FormattedTable'[Date], 'FormattedTable'[FormattedDate
 > [!NOTE]
 > In the query designer, make sure to set a value for the parameter, or the query won't run successfully. It's the first @ icon in the toolbar.
 >
-> :::image type="content" source="media/paginated-localize-date-parameters/query-designer-parameters.png" alt-text="Screenshot showing Query Designer parameters.":::
+> :::image type="content" source="media/paginated-localize-date-parameters/query-designer-parameters.png" alt-text="Screenshot showing Query Designer parameters." lightbox="media/paginated-localize-date-parameters/query-designer-parameters.png":::
 
 ## Update the date parameter label field 
 
 Edit your report parameter. Change the label to use the new "FormattedDate" field the dataset is now generating.
 
-:::image type="content" source="media/paginated-localize-date-parameters/parameter-properties-change-label.png" alt-text="Screenshot showing Parameter properties change the label.":::
+:::image type="content" source="media/paginated-localize-date-parameters/parameter-properties-change-label.png" alt-text="Screenshot showing Parameter properties change the label." lightbox="media/paginated-localize-date-parameters/parameter-properties-change-label.png":::
 
 ## Move the internal parameter ahead of the date parameter 
 
@@ -116,7 +116,7 @@ The internal parameter must be ahead of the date parameter. If it isn't, you hit
 
 After you publish the report to the Power BI service, the date parameter that your report user sees is now in the user's client format. In this example, the body has the language expression set to `User!Language` with a client locale set to "en-NZ":
 
-:::image type="content" source="media/paginated-localize-date-parameters/published-report.png" alt-text="Screenshot showing drop-down menu in the published report.":::
+:::image type="content" source="media/paginated-localize-date-parameters/published-report.png" alt-text="Screenshot showing drop-down menu in the published report." lightbox="media/paginated-localize-date-parameters/published-report.png":::
 
 > [!TIP]
 > To test different locales easily in the Power BI service, add `&language="xx-XX"` to the URL. The Power BI service takes almost any two-part locale. This example uses New Zealand, "en-NZ". 
