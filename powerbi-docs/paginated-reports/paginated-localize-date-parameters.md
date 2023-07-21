@@ -18,7 +18,7 @@ There are differences between the way date type parameters behave reports in Pow
 
 In Power BI Report Builder, date parameters are seen in the format of the clients' operating system. For instance, if your operating system is set to a German locale, the format of the parameter is dd/mm/yyyy. But when you publish the report to the Power BI service, the drop-down values for the multi-value parameter are in US format, mm/dd/yyyy. This change is because the host server that generates the parameter value is always in US format, for consistent report processing across regions of the world.
 
-The multi-value select all control we are talking about in the Power BI service. When you have available values, this control is displayed.
+Here's a multi-value select all control in the Power BI service. When you have available values, this control is displayed.
 
 :::image type="content" source="media/paginated-localize-date-parameters/multi-value-select-all.png" alt-text="Screenshot showing multi-select dropdown calendar.":::
 
@@ -32,9 +32,9 @@ The third variant is when you have a single value parameter. The date value is d
 
 The first control mentioned, multi-value select all control is the target of this article. When the date parameter is bound to a multi-value dataset, there's no way for you as the report author to write an expression to modify the parameter label. Only a dataset value is used. But that doesn't mean the parameter label and the parameter values need to be the same value. The label can be any string you'd like. One example is "EndOfMonth". But the most common case is the date value that's going to be processed to run the report.
 
-Here's an example of the parameter label with a dataset field from the parameter value.
+Here's an example of the parameter label with a dataset field different from the parameter value.
 
-:::image type="content" source="media/paginated-localize-date-parameters/dataset-parameter-properties.png" alt-text="Screenshot showing dataset parameter properties dialog.":::
+:::image type="content" source="media/paginated-localize-date-parameters/parameter-properties-available-values-pane.png" alt-text="Screenshot showing dataset parameter properties dialog.":::
 
 Often, you have no control over the data and must get creative with the report data to make it useful to all consumers. You can change or add data when the report is executed. Most data sources allow adding new fields to the dataset when executing a query. This article uses an example with DAX to add a new column to a Power BI dataset so that we can properly localize the label of a multi-value date parameter. 
 
