@@ -12,7 +12,7 @@ ms.date: 07/20/2023
 
 # Localize date parameters in the Power BI service and Power BI Report Builder
 
-[!INCLUDE [applies-yes-service-yes-report-builder-no-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
 There are differences between the way date type parameters behave reports in Power BI Report Builder and published reports in the Power BI service. In this article, you learn how to localize the displayed value of date parameters in the multi-value dropdown control to the languages of your choice.
 
