@@ -119,7 +119,7 @@ After you publish the report to the Power BI service, the date parameter that yo
 :::image type="content" source="media/paginated-localize-date-parameters/published-report.png" alt-text="Screenshot showing drop-down menu in the published report.":::
 
 > [!TIP]
-> To test different locales easily in the Power BI service, add `&language="xx-XX"` to the URL. The Power BI service takes most any two-part locale. This example uses New Zealand, "en-NZ". 
+> To test different locales easily in the Power BI service, add `&language="xx-XX"` to the URL. The Power BI service takes almost any two-part locale. This example uses New Zealand, "en-NZ". 
 
 ## Next steps
 
