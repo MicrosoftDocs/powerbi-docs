@@ -1575,6 +1575,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/paginated-reports/report-builder/hide-item-report-builder.md",
+            "redirect_url": "/power-bi/paginated-reports/report-builder-power-bi",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/paginated-reports/report-design/expression-uses-reports-report-builder.md",
             "redirect_url": "/power-bi/paginated-reports/expressions/expression-uses-reports-report-builder",
             "redirect_document_id": false
@@ -5107,7 +5112,13 @@
             "source_path": "powerbi-docs/admin/service-admin-portal-share-data-microsoft-365-services.md",
             "redirect_url": "/power-bi/admin/admin-share-power-bi-metadata-microsoft-365-services",
             "redirect_document_id": true
-        }                                                                                                                                                                                                                                                                                                                                                                                 
+        }                                                                                                                                                                                                                                                                                                                                                                                                                         
+        ,
+        {
+            "source_path": "powerbi-docs/transform-model/datamarts/datamarts-sharing-discovery.md",
+            "redirect_url": "/powerbi-docs/transform-model/datamarts/datamarts-discovery",
+            "redirect_document_id": false
+        }                                                                                                                                                                                    
   ]          
 
 }

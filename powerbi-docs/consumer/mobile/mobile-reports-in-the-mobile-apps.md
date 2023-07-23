@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 03/23/2023
+ms.date: 07/19/2023
 ---
 # Explore reports in the Power BI mobile apps
 Applies to:
@@ -145,6 +145,9 @@ Default bookmarks are indicated by a special icon. For personal bookmarks you ca
 When a bookmark view of a report is open, the name of the bookmark appears at the top of the report.
 
 ![bookmark view](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
+
+> [!NOTE]
+> You can't create bookmarks in the mobile apps - you can only use them. Bookmarks are created in Power BI Desktop and in the service.
 
 [Learn more about bookmarks in the Power BI service](../end-user-bookmarks.md).
 

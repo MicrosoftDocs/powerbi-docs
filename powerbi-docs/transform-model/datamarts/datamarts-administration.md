@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 05/31/2023
+ms.date: 07/18/2023
 LocalizationGroup: Data from files
 ---
 
@@ -69,6 +69,7 @@ The following limitations should be considered when using datamarts:
 
 * Datamarts aren't currently supported in the following Power BI SKUs: EM1/EM2 and EM3.
 * Datamarts aren't available in workspaces that are bound to an Azure Data Lake Gen2 storage account.
+* Datamarts aren't available in sovereign or government clouds. 
 * Datamart extract, transform and load (ETL) operations can currently only run for up to 24 hours
 * Datamarts currently officially support data volumes of up to 100 GB.
 * Currently datamarts don’t support the currency data type, and such data types are converted to float.
