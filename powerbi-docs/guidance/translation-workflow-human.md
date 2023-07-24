@@ -18,7 +18,7 @@ Translations Builder generates a file for a selected language using a special na
 
 :::image type="content" source="./media/translation-workflow-human/save-outbox-folder.png" alt-text="Diagram shows Translations Builder exporting two sheets to the Outbox for different languages." lightbox="./media/translation-workflow-human/save-outbox-folder.png":::
 
-Human translators can make edits to a translation sheet using Microsoft Excel. When you received an updated translation sheet from a translator, copy it to the **Inbox** folder. From there, you can import it to integrate those updated translations back into the dataset for the current project.
+Human translators can make edits to a translation sheet using Microsoft Excel. When you receive an updated translation sheet from a translator, copy it to the *Inbox* folder. From there, you can import it to integrate those updated translations back into the dataset for the current project.
 
 :::image type="content" source="./media/translation-workflow-human/translation-workflow.png" alt-text="Diagram shows Translations Builder exporting sheets a translator who works on them and returns them and sends them to the Inbox for import." lightbox="./media/translation-workflow-human/translation-workflow.png":::
 
