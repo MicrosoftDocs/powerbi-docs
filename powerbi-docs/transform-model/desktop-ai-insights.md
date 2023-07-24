@@ -37,7 +37,7 @@ The transformations are executed on the Power BI service and don't require an Az
 
 ### Enable Text Analytics and Vision on Premium capacities
 
-Cognitive Services are supported for Premium capacity nodes EM2, A2, or P1 and other nodes with more resources. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run Cognitive Services. Before you use Cognitive Services in Power BI, you must enable the AI workload in the **capacity settings** of the admin portal. You can turn on the **AI workload** in the **workloads** section and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
+Cognitive Services are supported for Premium capacity nodes EM2, A2, or P1 and other nodes with more resources. A separate AI workload on the capacity is used to run Cognitive Services. Before you use Cognitive Services in Power BI, you must enable the AI workload in the **capacity settings** of the admin portal. You can turn on the **AI workload** in the **workloads** section and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
 
 ### Available functions
 
