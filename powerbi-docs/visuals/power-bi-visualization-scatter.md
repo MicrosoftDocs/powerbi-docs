@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/21/2023
+ms.date: 07/24/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -19,7 +19,7 @@ LocalizationGroup: Visualizations
 
 This article describes how to create scatter chart visualizations in Power BI, which includes support for bubble charts and dot plot charts.
 
-**Scatter charts** display data along a horizontal (X) and vertical (Y) axis. The chart reveals how numerical values along the two axes are related. When data intersects on the two axes, Power BI displays a data point. 
+**Scatter charts** display data along a horizontal (x) and vertical (y) axis. The chart reveals how numerical values along the two axes are related. When data intersects on the two axes, Power BI displays a data point. 
 
 You can analyze data points to identify relationships in your data. Data points are distributed evenly or unevenly across the horizontal axis depending on the chart data. You can set the number of data points up to a maximum of 10,000. Tooltips are available for all data points. The tooltip shows details for the data based on the data represented in the chart.
 
@@ -41,22 +41,22 @@ Let's review some common usage scenarios for these chart visualizations. The fol
 
 Scatter charts work well in many scenarios:
 
-- Show relationships between two numerical values
-- Plot two groups of numbers as one series of X and Y coordinates
-- Display worksheet data with pairs or grouped sets of values
-- Show patterns in large sets of data
-- Compare large amounts of data points irrespective of time measurements
-- Convert horizontal axis into logarithmic scale
-- Substitute for line charts to enable changing horizontal axis scale 
+- Show relationships between two numerical values.
+- Plot two groups of numbers as one series of x and y coordinates.
+- Display worksheet data with pairs or grouped sets of values.
+- Show patterns in large sets of data.
+- Compare large amounts of data points irrespective of time measurements.
+- Convert horizontal axis into logarithmic scale.
+- Substitute for line charts to enable changing horizontal axis scale.
 
 ### Bubble charts
 
 You can use a bubble chart in many of the same scenarios as a scatter chart. Here are some of the other ways you can use bubble charts:
 
-- Visually emphasize value differences with variable bubble size
-- Support scenarios with three data series that each has sets of values
-- Present financial data in a visual rather than numerical form
-- Display data with quadrants 
+- Visually emphasize value differences with variable bubble size.
+- Support scenarios with three data series that each has sets of values.
+- Present financial data in a visual rather than numerical form.
+- Display data with quadrants.
 
 ### Dot plot charts
 
@@ -127,7 +127,7 @@ Let's begin by creating a scatter chart to highlight district sales data in the 
 
 1. On the **Visualizations** pane, drag the **District** field from the **Values** section to the **Legend** section.
 
-   Power BI creates data points where the data values intersect along the X and Y axes. The data point colors represent different districts.
+   Power BI creates data points where the data values intersect along the x and y axes. The data point colors represent different districts.
 
    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-scatter-district.png" alt-text="Screenshot of the updated scatter chart that shows different colors for the data according to district.":::
 
@@ -163,7 +163,7 @@ The following steps show how to chart a third data dimension for the Retail Anal
 
 ## Create a dot plot chart
 
-It's easy to create a dot plot chart from an existing scatter chart. Just replace the numerical field that's aligned to the horizontal X axis with a categorical field.
+It's easy to create a dot plot chart from an existing scatter chart. Just replace the numerical field that's aligned to the horizontal x-axis with a categorical field.
 
 1. On the **Visualizations** pane, in the **Build** section, locate the **X Axis** option.
 
@@ -171,7 +171,7 @@ It's easy to create a dot plot chart from an existing scatter chart. Just replac
 
 1. Add a new field to the **X Axis** option. Drag and paste the **District** > **District Manager** field from the **Data** pane.
 
-Power BI creates a dot plot chart from the data in the existing scatter chart. The dot plot chart adds the **District Manager** category information to the horizontal X axis. You can see the names of the district managers along the bottom edge of the chart.
+Power BI creates a dot plot chart from the data in the existing scatter chart. The dot plot chart adds the **District Manager** category information to the horizontal x-axis. You can see the names of the district managers along the bottom edge of the chart.
 
 :::image type="content" source="media/power-bi-visualization-scatter/power-bi-dot-plot-initial.png" alt-text="Screenshot that shows how to add category information to a scatter chart to easily create a dot plot chart.":::
 
@@ -207,7 +207,7 @@ The following steps show how to add analytics information to your visualization.
 
    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-analytics-median.png" alt-text="Screenshot of the bubble chart with a median line added for the Total Sales Variance Percentage field.":::
 
-   Now that you have a median line, you can add symmetry shading to show which points have a higher value for the X-axis measure compared to the Y-axis measure, and vice-versa. When you activate symmetry shading in the **Analytics** pane, Power BI shows you the background of your scatter chart symmetrically based on your current axis upper and lower boundaries. You can quickly identify which axis measure a data point favors, especially when you have a different axis range for your X and Y axis.
+   Now that you have a median line, you can add symmetry shading to show which points have a higher value for the x-axis measure compared to the y-axis measure, and vice-versa. When you activate symmetry shading in the **Analytics** pane, Power BI shows you the background of your scatter chart symmetrically based on your current axis upper and lower boundaries. You can quickly identify which axis measure a data point favors, especially when you have a different axis range for your x and y axes.
 
 1. Return to the **Build** visual section of the **Visualizations** pane. Change the **Y Axis** option to use the **Gross Margin Last Year %** field.
    
@@ -219,7 +219,7 @@ The following steps show how to add analytics information to your visualization.
 
    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-symmetry.png" alt-text="Screenshot of the bubble chart with symmetry shading added.":::
 
-1. Continue exploring the Analytics pane to discover interesting ways to reveal insights about your data. 
+1. Continue exploring the **Analytics** pane to discover interesting ways to reveal insights about your data. 
 
    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-analytics-example.png" alt-text="Screenshot of a scatter chart with modified analytics settings in Power BI.":::
 
@@ -233,23 +233,23 @@ The maximum number of data points that you can display on any type of scatter ch
 
 The load time for the chart visual increases as the number of data points increases. If you choose to publish a report with a data point limit set at the high end of the scale, you should test internet and mobile access to your report. Confirm the chart performance meets your users' expectations.
 
-<!-- REVIEWERS: The following section depends on the DETAILS well in the Visualizations pane. I'm not able to locate the DETAILS well in the updated UI. Has the option been renamed? -->
+<!-- REVIEWERS: The following section depends on the DETAILS section in the Visualizations pane. I'm not able to locate the DETAILS section in the updated UI. Has the option been renamed? -->
 
 ### Charts with a single data point
 
-Does your scatter chart have only one data point that aggregates all of the values on the X and Y axes, as shown in the following image? Or does it aggregate all the values along a single horizontal or vertical line?
+Does your scatter chart have only one data point that aggregates all of the values on the x and y axes, as shown in the following image? Or does it aggregate all the values along a single horizontal or vertical line?
 
 :::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot.png" alt-text="Screenshot of a scatter chart that has only one data point.":::
 
-In this scenario, you can add a field to the **Details** well for the chart. The field instructs Power BI on how to group the values. The field must be unique for each point you want to plot. You can provide a row number or ID field. In the following example, the **RowNum** ID field from the data is supplied. 
+In this scenario, you can add a field to the **Details** section for the chart. The field instructs Power BI on how to group the values. The field must be unique for each point you want to plot. You can provide a row number or ID field. In the following example, the **RowNum** ID field from the data is supplied. 
 
-:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot-1.png" alt-text="Screenshot of a scatter chart with the RowNum field added to the Details well.":::
+:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot-1.png" alt-text="Screenshot of a scatter chart with the RowNum field added to the Details section.":::
 
-If your data doesn't include a specific row number or ID, you can create a field to concatenate your X and Y values together. The field must be unique for each point you want to plot. In the following example, a new field named **TempTime** is created to hold the concatenated values.
+If your data doesn't include a specific row number or ID, you can create a field to concatenate your x and y values together. The field must be unique for each point you want to plot. In the following example, a new field named **TempTime** is created to hold the concatenated values.
 
-:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot-2.png" alt-text="Screenshot of a scatter chart with a new field named TempTime added to the Details well.":::
+:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot-2.png" alt-text="Screenshot of a scatter chart with a new field named TempTime added to the Details section.":::
 
-To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../create-reports/desktop-add-custom-column.md) to your dataset. Then add this column to your visualization's **Details** well.
+To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../create-reports/desktop-add-custom-column.md) to your dataset. Then add this column to your visualization's **Details** section.
 
 ## Next steps
 
