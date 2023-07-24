@@ -26,7 +26,7 @@ ms.reviewer: saurkumar
 > [!NOTE]  
 >  Links that are bound to dataset fields can be vulnerable to tampering for malicious purposes. For more information, see [Secure reports and resources](/sql/reporting-services/security/secure-reports-and-resources).
   
- You can also let your users control report display and content by designing expressions that include parameter references for sort, filter, and visibility. For more information, see [Report parameters &#40;Power BI Report Builder&#41;](../../paginated-reports/parameters/report-parameters-concepts-report-builder.md), [Filter, group, and sort data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs), and [Add dataset filters, data region filters, and group filters &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md).  
+ You can also let your users control report display and content by designing expressions that include parameter references for sort, filter, and visibility. For more information, see [Report parameters &#40;Power BI Report Builder&#41;](../../paginated-reports/parameters/report-parameters-concepts-report-builder.md), [Filter, group, and sort data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md), and [Add dataset filters, data region filters, and group filters &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md).  
   
   
   
