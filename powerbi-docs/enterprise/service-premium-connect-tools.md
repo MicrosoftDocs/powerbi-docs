@@ -162,22 +162,22 @@ Server name aliases, supported in Azure Analysis Services aren't supported for P
 
 ## Security
 
-In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** must be enabled in the admin portal. If you need to generate Analyze in Excel (AIXL) files that connect to the XMLA endpoint, the tenant-level setting **Allow live connections** should also be enabled. These settings are both enabled by default.
+In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** must be enabled in the admin portal. If you need to generate Analyze in Excel (AIXL) files that connect to the XMLA endpoint, the tenant-level setting ***Users can work with datasets in Excel using a live connection** should also be enabled. These settings are both enabled by default.
 
-**Allow XMLA endpoints and Analyze in Excel with on-premises datasets** is an integration setting.
+**Allow XMLA endpoints and Analyze in Excel with on-premises datasets** is an Integration setting.
 
 :::image type="content" source="media/service-premium-connect-tools/allow-xmla-endpoints.png" alt-text="Integration setting allow XMLA endpoints.":::
 
-The following table describes the implications of the setting **Export data** for XMLA and Analyze in Excel (AIXL):
+**Users can work with datasets in Excel using a live connection** is an Export and sharing setting.
+
+:::image type="content" source="media/service-premium-connect-tools/allow-live-connections.png" alt-text="Export and sharing setting allow live connections.":::
+
+The following table describes the implications of both settings:
 
 |Setting  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **disabled**  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **enabled**  |
 |---------|---------|---------|
-|Allow Live Connections toggle = disabled     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-premises datasets *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-premises datasets *allowed*         |
-|Allow Live Connections toggle = enabled     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-premises datasets *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-premises datasets *allowed*        |
-
-**Allow live connections** is an export and sharing setting.
-
-:::image type="content" source="media/service-premium-connect-tools/allow-live-connections.png" alt-text="Export and sharing setting allow live connections.":::
+|**Users can work with datasets in Excel using a live connection** = disabled     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-premises datasets *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-premises datasets *allowed*         |
+|**Users can work with datasets in Excel using a live connection** = enabled     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-premises datasets *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-premises datasets *allowed*        |
 
 Access through the XMLA endpoint will honor security group membership set at the workspace/app level.
 
