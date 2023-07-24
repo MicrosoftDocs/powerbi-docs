@@ -34,7 +34,7 @@ To configure settings in Translations Builder used as targets for export and imp
 
 1. Select the **set** buttons to update the settings for **Translations Outbox Folder Path** and **Translations Outbox Folder Path**.
 
-   :::image type="content" source="./media/translation-workflow-human/configuration-option-dialog-output.png" alt-text="Screenshot shows the Configuration Options dialog box with the set button and Save Changes button highlighted." lightbox="./translation-workflow-human/configuration-option-dialog-output.png":::
+   :::image type="content" source="./media/translation-workflow-human/configuration-option-dialog-output.png" alt-text="Screenshot shows the Configuration Options dialog box with the set button and Save Changes button highlighted." lightbox="./media/translation-workflow-human/configuration-option-dialog-output.png":::
 
 1. After you have configured paths, select **Save Changes**.
 
