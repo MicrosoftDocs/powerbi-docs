@@ -31,9 +31,8 @@ After you've installed the template app, you can change the dashboard and report
 [!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
 1. Select **Zendesk** \> **Get it now**.
-1. When prompted, select **Install**. Once the app has installed, you'll see it on your Apps page.
 
-    :::image type="content" source="./media/service-connect-to-zendesk/power-bi-zendesk-tile.png" alt-text="Screenshot of Power BI Zendesk app tile.":::
+1. When prompted, select **Install**. Once the app has installed, you'll see it listed on your Apps page.
 
 ## Connect to your Zendesk data source
 
@@ -43,7 +42,7 @@ After you've installed the template app, you can change the dashboard and report
 
 1. Provide the URL associated with your account. The URL has the form **https://company.zendesk.com**. See details on [finding these parameters](#finding-parameters) below.
    
-   ![Connect to Zendesk](media/service-connect-to-zendesk/pbi_zendeskconnect.png)
+   :::image type="content" source="./media/service-connect-to-zendesk/pbi_zendeskconnect.png" alt-text="Screenshot of Zendesk URL dialog.":::
 
 1. When prompted, enter your Zendesk credentials.  Select **oAuth 2** as the Authentication Mechanism and select **Sign In**. Follow the Zendesk authentication flow. (If you're already signed in to Zendesk in your browser, you may not be prompted for credentials.)
    
@@ -51,7 +50,8 @@ After you've installed the template app, you can change the dashboard and report
    > This template app requires that you connect with a Zendesk Admin account. 
    > 
    
-   ![Sign in with oAuth2](media/service-connect-to-zendesk/pbi_zendesksignin.png)
+   :::image type="content" source="./media/service-connect-to-zendesk/pbi_zendesksignin.png" alt-text="Screenshot of Zendesk sign-in dialog.":::
+
 1. Select **Allow** to allow Power BI to access your Zendesk data.
    
    :::image type="content" source="./media/service-connect-to-zendesk/zendesk2.jpg" alt-text="Screenshot of Zendesk allow access dialog.":::
