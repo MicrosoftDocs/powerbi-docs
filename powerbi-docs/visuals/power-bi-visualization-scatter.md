@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/24/2023
+ms.date: 07/25/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -165,7 +165,7 @@ The following steps show how to chart a third data dimension for the Retail Anal
 
 It's easy to create a dot plot chart from an existing scatter chart. Just replace the numerical field that's aligned to the horizontal x-axis with a categorical field.
 
-1. On the **Visualizations** pane, in the **Build** section, locate the **X Axis** option.
+1. On the **Visualizations** > **Build** visual pane, locate the **X Axis** option.
 
 1. Select the **x** at the right of the **Sales Per Sq Ft** field and remove the field.
 
@@ -175,11 +175,11 @@ Power BI creates a dot plot chart from the data in the existing scatter chart. T
 
 :::image type="content" source="media/power-bi-visualization-scatter/power-bi-dot-plot-initial.png" alt-text="Screenshot that shows how to add category information to a scatter chart to easily create a dot plot chart.":::
 
-In this example, we adjusted the chart visual to display triangles for the data points. Let's see what else you can do with Power BI formatting options.
+In this example, we adjusted the chart visual to display triangle markers for the data points. We'll learn how to change the markers and other formatting options in next section.
 
 ## Format your chart
 
-There are many display options available on the **General** and **Visual** sections of the **Visualizations > Format** pane. Take some time to explore the features.
+There are many display options available on the **General** and **Visual** sections of the **Visualizations > Format** visual pane. Take some time to explore the features.
 
 - Try changing the data point or bubble colors, axes labels, chart titles, background shading, and more.
    
@@ -189,21 +189,19 @@ There are many display options available on the **General** and **Visual** secti
 
    :::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-marker.png" alt-text="Screenshot of the Shape Type drop-down list showing the Marker shape options for a chart in Power BI.":::
 
-   Change the marker shape to a diamond, triangle, or square. When you use a different marker shape for each line, it's easier for report consumers to differentiate one line or area from another.
+   Change the marker shape to a diamond, triangle, or square.
 
 ## Add analytics to your chart
 
 The following steps show how to add analytics information to your visualization.
 
-1. On the **Visualizations** pane, switch to the **Analytics** section.
+1. On the **Visualizations** pane, select the magnifier glass icon to switch to the **Analytics** section.
 
    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-format-analytics.png" alt-text="Screenshot that shows how to access the Analytics section of the Visualizations pane." border="false":::
 
 1. Locate the **Median line** section and select **Add line**.
 
-   By default, Power BI adds a median line for the **Sales Per Sq Ft** field, but this line isn't helpful to us. We can easily see the 10 data points and understand that the median is created with five data points on each side. So, let's switch the line to apply a different data field.
-   
-   - For the **Series** option, use the drop-down list to switch to the **Total Sales Variance %** field.  
+   Power BI adds a median line for the **Total Sales Variance %** field.
 
    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-analytics-median.png" alt-text="Screenshot of the bubble chart with a median line added for the Total Sales Variance Percentage field.":::
 
@@ -232,8 +230,6 @@ Review the following considerations for working with scatter charts in Power BI.
 The maximum number of data points that you can display on any type of scatter chart is 10,000. When the number of data points approaches the maximum setting, it's a good practice to test your chart output to ensure good performance.
 
 The load time for the chart visual increases as the number of data points increases. If you choose to publish a report with a data point limit set at the high end of the scale, you should test internet and mobile access to your report. Confirm the chart performance meets your users' expectations.
-
-<!-- REVIEWERS: The following section depends on the DETAILS section in the Visualizations pane. I'm not able to locate the DETAILS section in the updated UI. Has the option been renamed? -->
 
 ### Charts with a single data point
 
