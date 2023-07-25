@@ -165,7 +165,7 @@ sections:
       - question: |
           Can I sign in to Microsoft 365 admin center even if I'm not an admin?
         answer: |
-          Yes. When you purchase a Power BI Visual subscription, you also get access to the Microsoft 365 admin center. You can manage your own license subscription from there, but can’t see or access any other subscriptions.
+          Yes. When you purchase a Power BI Visual subscription, you also get access to the Microsoft 365 admin center. You can manage your own license subscriptions from there, but can’t see or access any other subscriptions.
 
       - question: |
           Do I have to assign a license to myself even if I'm the owner?
