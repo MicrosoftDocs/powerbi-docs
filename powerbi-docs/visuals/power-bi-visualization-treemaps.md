@@ -125,9 +125,6 @@ The following steps create a report and treemap to display sales over time for d
 
    :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-add-store-chain.png" alt-text="Screenshot that shows the updated treemap for total sales by product and by store chain." border="false":::
 
-   > [!NOTE]
-   > The **Color Saturation** and **Details** features can't be used at the same time.
-
 1. On the treemap, hover over **Fashions Direct** in the **090-Home** rectangle to see the tooltip for Fashion Direct's portion of the Home category.
 
    :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-category-tooltip.png" alt-text="Screenshot that shows how to reveal tooltips for categories in a treemap." border="false":::
@@ -170,6 +167,11 @@ Now you're ready to try highlighting and cross-filtering.
 
 To manage how charts cross-highlight and cross-filter each other, see [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md).
 
+## Considerations and limitations
+
+Keep in mind the following information when working with treemaps in Power BI.
+
+- The **Color Saturation** and **Details** features can't be used at the same time.
 
 ## Next steps
 
