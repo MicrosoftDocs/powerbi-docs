@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 07/19/2023
+ms.date: 07/25/2023
 ms.custom: licensing support,fabric
 LocalizationGroup: Administration
 ---
@@ -340,8 +340,7 @@ The following operations are available in both the audit and activity logs.
 | Created Power BI gateway cluster datasource | CreateGatewayClusterDatasource | |
 | Created Power BI group      | CreateGroup            |       |
 | Created Power BI report       | CreateReport <sup>1</sup>      |          |
-| Created Power BI template app | CreateTemplateApp |  |
-| Created workspace for Power BI template app | CreateTemplateApp | |
+| Created Power BI template app | CreateTemplateApp or a workspace for Power BI template app|  |
 | Custom visual requested Azure AD access token         | GenerateCustomVisualAADAccessToken    |   |
 | Custom visual requested Office Web Apps access token    | CustomVisualWACAccessToken          |     |
 | Dataflow migrated to external storage account     | DataflowMigratedToExternalStorageAccount    | Not currently used                       |
@@ -373,10 +372,9 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI note | DeleteNote | |
 | Deleted Power BI scorecard | DeleteScorecard | |
 | Deleted Power BI report    | DeleteReport   |    |
-| Deleted Power BI template app | DeleteTemplateApp | |
+| Deleted Power BI template app | DeleteTemplateApp or a workspace for Power BI template app| |
 | [Deleted sensitivity label from Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md)  | SensitivityLabelRemoved | |
 | Deleted snapshot for user in Power BI tenant | DeleteSnapshot | Generated when a user deletes a snapshot that describes a dataset |
-| Deleted workspace for Power BI template app | DeleteTemplateApp | |
 | Deployed to a pipeline stage     | DeployAlmPipeline    |        |
 | Discovered Power BI dataset data sources      | GetDatasources       | |
 | Downloaded Power BI report     | DownloadReport                   |       |
