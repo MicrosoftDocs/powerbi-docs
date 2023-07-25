@@ -63,7 +63,7 @@ Treemaps are a great choice for many scenarios:
 
 ## Get the sample
 
-To follow along, download the Retain Analysis sample .pbix file in Power BI Desktop or the Power BI service.
+To follow along, download the Retail Analysis sample .pbix file in Power BI Desktop or the Power BI service.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
