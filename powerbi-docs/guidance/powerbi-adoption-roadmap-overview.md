@@ -127,4 +127,4 @@ Experienced Power BI partners are available to help your organization succeed wi
 
 ## Acknowledgments
 
-The Power BI implementation planning articles are written by Melissa Coates, Kurt Buhler, and Peter Myers. Matthew Roche, from the Fabric Customer Advisory Team, provides strategic guidance and feedback to the subject matter experts.
+The Power BI adoption roadmap articles are written by Melissa Coates, Kurt Buhler, and Peter Myers. Matthew Roche, from the Fabric Customer Advisory Team, provides strategic guidance and feedback to the subject matter experts. Reviewers include Cory Moore, James Ward, Timothy Bindas, Greg Moir, Chuy Varela, Daniel Rubiolo, and Sanjay Raut.
