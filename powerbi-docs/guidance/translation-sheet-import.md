@@ -12,7 +12,7 @@ ms.date: 07/24/2023
 
 When you use Translations Builder with external translators, you need to export a *translation sheet* that contains the default language and empty cells or machine generated translations. Translators update the .csv file and return it to you.
 
-Suppose you generate a translation sheet to send to a Spanish translator. When opened in Excel, this translation sheet looks like the following screenshot.
+Suppose you generate a translation sheet to send to a translator. When opened in Excel, this translation sheet looks like the following screenshot.
 
 :::image type="content" source="./media/translation-sheet-import/spanish-excel-sheet.png" alt-text="Screenshot shows a .csv translation sheet in Excel with one language column highlighted." lightbox="./media/translation-sheet-import/spanish-excel-sheet.png":::
 

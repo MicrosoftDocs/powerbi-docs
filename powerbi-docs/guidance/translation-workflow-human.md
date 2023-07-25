@@ -24,9 +24,7 @@ Human translators can make edits to a translation sheet using Microsoft Excel. W
 
 ## Configure import and export folders
 
-If you work with external translators, you need to manage the translation sheet files that are generated and sent to them and the files that are returned and ready for import. By default, folder paths for *Outbox* and *Inbox* are the *Documents* folder of the current user.
-
-To configure settings in Translations Builder used as targets for export and import operations, follow these steps.
+By default, folder paths for *Outbox* and *Inbox* in Translations Builder are the *Documents* folder of the current user. To configure settings used as targets for export and import operations, follow these steps.
 
 1. From the **Dataset Connection** menu, select **Configure Settings** to display the **Configuration Options** dialog box.
 
@@ -38,9 +36,9 @@ To configure settings in Translations Builder used as targets for export and imp
 
 1. After you have configured paths, select **Save Changes**.
 
-   :::image type="content" source="./media/translation-workflow-human/export-import-translation.png" alt-text="Screenshot shows Translations Builder with the Export/Import Translations pane highlighted." lightbox="./media/translation-workflow-human/export-import-translation.png":::
+After you configure the folder paths for *Outbox* and *Inbox*, you can begin to export and import translation sheets by using the **Export/Import Translations** options.
 
-After you configure the folder paths for *Outbox* and *Inbox*, you can begin to export and import translation sheets.
+:::image type="content" source="./media/translation-workflow-human/export-import-translation.png" alt-text="Screenshot shows Translations Builder with the Export/Import Translations pane highlighted." lightbox="./media/translation-workflow-human/export-import-translation.png":::
 
 ## Next steps
 

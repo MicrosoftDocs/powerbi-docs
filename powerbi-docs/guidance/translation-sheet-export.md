@@ -12,7 +12,7 @@ ms.date: 07/24/2023
 
 When you use Translations Builder with external translators, you need to export a *translation sheet* that contains the default language and empty cells or machine generated translations. Translators update the .csv file and return it to you.
 
-You can export the following options:
+You can export the following translations sheets:
 
 - A translation sheet for a single language
 - Translations sheets for all supported languages
@@ -30,7 +30,7 @@ You can export the following options:
 
    :::image type="content" source="./media/translation-sheet-export/export-translation-sheet.png" alt-text="Screenshot shows the Export/Import Translations pane with the Export Translations Sheet selected.":::
 
-The result of the export operation is a .csv file in the *Outbox* directory.
+The result of the export operation is a .csv file in the *Outbox* directory. If you selected **Open Export in Excel**, you also see the result in Excel.
 
 :::image type="content" source="./media/translation-sheet-export/translation-sheet-excel.png" alt-text="Screenshot shows part of the spreadsheet created by the export operation." lightbox="./media/translation-sheet-export/translation-sheet-excel.png":::
 
