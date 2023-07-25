@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 07/21/2023
+ms.date: 07/24/2023
 ---
 # Add a Localized Labels table to a Power BI report
 
@@ -19,9 +19,9 @@ Report label translations provide localized values for text elements on a report
 
 There are some design techniques for building datasets and reports with Power BI Desktop that you should avoid when you build multiple-language reports. These elements cause problems due to a lack of localization support:
 
-- Using text boxes or buttons with hard-coded text values
-- Adding a hard-coded text value for the title of a visual
-- Displaying page tabs to the user
+- Using text boxes or buttons with hard-coded text values.
+- Adding a hard-coded text value for the title of a visual.
+- Displaying page tabs to the user.
 
 Any hard-coded text value that you add to the report layout can't be localized. Suppose you add a column chart to your report. By default, a Cartesian visual such as a column chart is assigned a dynamic value to its **Title** property. That value is based on the names of the columns and measures that have been added into the data roles, such as **Axis**, **Legend**, and **Values**.
 
@@ -93,7 +93,7 @@ After you add the report labels to your .pbix project, they appear in the transl
 
 Translations Builder only populates the translation grid with dataset objects that aren't hidden from **Report View**. The measures in the **Localized Labels** table are hidden from **Report View** and they provide the one exception to the rule that excludes hidden objects from being displayed in the translation grid.
 
-In the Localized Labels table strategy, report labels can be created, managed, and stored in the same .pbix project file that holds the metadata translations for the names of tables, columns, and measures. The Localized Labels table strategy is able to merge metadata translations and report label translations together in a unified experience in the translation gird. There's no need to distinguish between metadata translations and report label translations when it comes to editing translations or when using Translations Builder features to generate machine translations.
+In the Localized Labels table strategy, you can create, manage, and store report labels in the same .pbix project file that holds the metadata translations for the names of tables, columns, and measures. The Localized Labels table strategy can merge metadata translations and report label translations together in a unified experience in the translation grid. There's no need to distinguish between metadata translations and report label translations when it comes to editing translations or when using Translations Builder features to generate machine translations.
 
 There are other popular localization techniques that track report label translations in a separate CSV file. While these techniques work, they aren't as streamlined. Report label translations must be created separately and managed differently from the metadata translations in a .pbix project. This strategy allows for report label translations and metadata translations to be stored together and managed in the same way.
 
