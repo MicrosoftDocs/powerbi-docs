@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to
-ms.date: 07/21/2023
+ms.date: 07/24/2023
 ---
 # Generate machine translations using Azure Translator Service
 
@@ -39,4 +39,4 @@ After you configure an **Azure Translator Service Key**, Translations Builder di
 
 ## Next steps
 
-- [Use best practices to localize Power BI reports](multiple-language-best-practice.md)
+- [Add support for multiple-language page navigation](multiple-language-page-navigation.md)
