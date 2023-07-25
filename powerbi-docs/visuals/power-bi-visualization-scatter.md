@@ -175,7 +175,7 @@ Power BI creates a dot plot chart from the data in the existing scatter chart. T
 
 :::image type="content" source="media/power-bi-visualization-scatter/power-bi-dot-plot-initial.png" alt-text="Screenshot that shows how to add category information to a scatter chart to easily create a dot plot chart.":::
 
-In this example, we adjusted the chart visual to display triangle markers for the data points. We'll learn how to change the markers and other formatting options in next section.
+In this example, we adjusted the chart visual to display triangle markers for the data points. We'll learn how to change the markers and other formatting options in the next section.
 
 ## Format your chart
 
