@@ -26,7 +26,7 @@ Start by hiding all but one of the tabs.
 
 1. For each tab that you hide, right-click and select **Hide Page** from the context menu.
 
-   :::image type="content" source="./media/multiple-language-page-navigation/report-page-tab.png" alt-text="Screenshot shows the tabs in a Power VI report with all but one tab hidden.":::
+   :::image type="content" source="./media/multiple-language-page-navigation/report-page-tab.png" alt-text="Screenshot shows the tabs in a Power BI report with all but one tab hidden.":::
 
 ## Create bookmarks
 
@@ -45,7 +45,7 @@ Each button uses a bookmark to take the reader to a page. For more information o
 
    1. Repeat these steps for each of the hidden tabs. The **Bookmark** pane has the following bookmarks:
 
-      :::image type="content" source="./media/multiple-language-page-navigation/report-page-bookmark.png" alt-text="Screenshot shows the Bookmarks pan with several values.":::
+      :::image type="content" source="./media/multiple-language-page-navigation/report-page-bookmark.png" alt-text="Screenshot shows the Bookmarks pane with several values.":::
 
 ## Configure buttons
 

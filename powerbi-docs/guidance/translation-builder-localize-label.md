@@ -59,7 +59,7 @@ You can create the **Localized Labels** table for a .pbix project:
 
 1. From the **Generate Translated Tables** menu, select **Create Localized Labels Table**.
 
-   :::image type="content" source="./media/translation-builder-localize-label/generate-translate-table.png" alt-text="Screenshot shows Translations Builder withe the Create Localized Labels Table selected.":::
+   :::image type="content" source="./media/translation-builder-localize-label/generate-translate-table.png" alt-text="Screenshot shows Translations Builder with the Create Localized Labels Table selected.":::
 
 1. An informational dialog box asks if you want more information about the **Localized Labels** table strategy. Select **Yes** to review documentation or **No** to proceed.
 
@@ -103,9 +103,9 @@ The **Localized Labels** table contains a measure with translations for each rep
 
 To create a **Translated Localized Labels** table, follow these steps.
 
-1. In Translations Builder, from the **Generate Translated Tables** menu, select **Generate Translated Localized Labels Table**.
+- In Translations Builder, from the **Generate Translated Tables** menu, select **Generate Translated Localized Labels Table**.
 
-   :::image type="content" source="./media/translation-builder-localize-label/generate-translate-localize-table.png" alt-text="Screenshot shows Translations Builder with Generate Translated Localized Labels Table selected.":::
+  :::image type="content" source="./media/translation-builder-localize-label/generate-translate-localize-table.png" alt-text="Screenshot shows Translations Builder with Generate Translated Localized Labels Table selected.":::
 
 The first time you generate the **Translated Localized Labels** table, Translations Builder creates the table and populates it with measures. After that, generating the table deletes all the measures in the **Translated Localized Labels** table and recreates them. This action synchronizes all the report label translations between the **Localized Labels** table and the **Translated Localized Labels** table.
 
