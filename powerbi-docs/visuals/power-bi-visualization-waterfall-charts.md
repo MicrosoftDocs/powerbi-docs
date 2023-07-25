@@ -100,13 +100,13 @@ The following steps create a waterfall chart to display sales variance (estimate
 
 1. On the **Data** pane, expand **Time** and select the **FiscalMonth** checkbox.
 
-   Power BI updates the waterfall chart with the data in the FiscalMonth category. The initial view of the category data shows the values in ascending order. This action also adds a corresponding **Category** field on the **Visualizations** pane.
-
+   Power BI updates the waterfall chart with the data in the FiscalMonth category. The initial view of the category data shows the values in ascending order.
+   
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-add-fiscal-month.png" alt-text="Screenshot that shows the total Sales Variance by FiscalMonth waterfall chart." border="false":::
 
 ## Sort the waterfall chart
 
-When Power BI first applies the waterfall chart visualization, it displays the data in ascending or chronological order for the primary category. In our example, the data is sorted by month in ascending order, January to August, for the FiscalMonth category.
+When Power BI creates the waterfall chart, the data is displayed in ascending or chronological order for the category. In our example, the data is sorted by month in ascending order, January to August, for the FiscalMonth category.
 
 You can change the sort order to view different perspectives of the data.
 
