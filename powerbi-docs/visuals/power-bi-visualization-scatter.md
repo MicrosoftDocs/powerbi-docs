@@ -149,7 +149,7 @@ Now let's add a third dimension.
 
     Change the marker shape to a diamond, triangle, or square. Using a different marker shape for each line makes it easier for report consumers to differentiate lines (or areas) from each other.
 
-1. Change the marker range scale to Auto, Magnitude, or Data Range. This option is available if the **Size&** well is populated. These modes work as the following:
+1. Change the marker range scale to Auto, Magnitude, or Data Range. This option is available only if the **Size** well is populated, and for **All** series when chart includes multiple series. These modes work as the following:
 
    - Magnitude: Any negative data values used for sizing are converted to positive value with same magnitude (e.g. -15 converted to 15). The size of the bubbles scale from zero to the maximum magnitude value.
    - Data Range: The size of the bubbles range based on the extend of the data input. Smallest data value, whether positive or negative, is shown as the smallest bubble size. Similarly, the largest data value is shown with the largest bubble size.
