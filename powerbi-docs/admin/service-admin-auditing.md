@@ -393,8 +393,7 @@ The following operations are available in both the audit and activity logs.
 | Export Power BI activity events | ExportActivityEvents | |
 | Exported Power BI item to another file format | ExportArtifact | |
 | Exported Power BI dataflow   | ExportDataflow |  |
-| Exported Power BI report to another file format | ExportReport | |
-| Exported Power BI report visual data    | ExportReport    |     |
+| Exported Power BI report to another file format or exported report visual data | ExportReport | |
 | Exported Power BI tile data    | ExportTile       |         |
 | Generated Power BI dataflow SAS token    | GenerateDataflowSasToken   |  |
 | Generated Power BI Embed Token     | GenerateEmbedToken  |        |
