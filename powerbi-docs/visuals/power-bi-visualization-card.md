@@ -1,13 +1,13 @@
 ---
-title: Card visualizations (large number tiles)
-description: Create a Card visualization in Power BI.
-author: mihart
-ms.author: mihart
+title: New Card visualizations (large number tiles)
+description: Create a New Card visualization in Power BI.
+author: v-peabundio
+ms.author: v-peabundio
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/13/2022
+ms.date: 07/21/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-A single number, such as total sales, market share year over year, or total opportunities, is sometimes the most important thing you want to track. A type of visualization in Power BI called a *card* may be the best way to view that number. As with almost all of the native Power BI visualizations, cards can be created using the report editor or Q&A.
+The new card is a helpful visual that presents important metrics such as total sales, profit growth, count of opportunities, or performance status. It is designed to be displayed in a visual container with multiple cards, enabling users to select the most relevant OKRs (Objectives and Key Results) and define an area for them.
 
 :::image type="content" source="media/power-bi-visualization-card/power-bi-opportunities-card.png" alt-text="Screenshot of card visualization.":::
 
@@ -36,96 +36,107 @@ This tutorial uses the Retail Analysis Sample.
 
 5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
-# [Power BI service](#tab/powerbi-service)
-
-This tutorial uses the built-in Retail Analysis Sample in the Power BI service.
-
-1. Open the Power BI service, then select **Get data** in the bottom left corner.
-
-2. On the Get Data page that appears, select **Samples**.
-
-   :::image type="content" source="media/power-bi-visualization-slicers/get-data-samples.png" alt-text="Screenshot of Get Data box with link to samples.":::
-
-3. Select the **Retail Analysis Sample**, and choose **Connect**.
-
-4. Select **Edit** on the menu bar to display the **Visualizations** pane.
-
-5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
-
 ---
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
 
+## Build a new card visual
+
+# [On the ribbon](#tab/On-the-ribbon)
+
+
 ## Option 1: Create a card using the report editor
 
 The first method to create a card is to use the report editor in Power BI Desktop.
 
-1. Select the **Store** \> **Open Store Count** field.
+1. In the ribbon, select **Visual gallery** under **Insert**.
 
-    Power BI creates a column chart with the one number.
+  
+1. In the Visual gallery menu, select the **New card visual** icon.
 
-   :::image type="content" source="media/power-bi-visualization-card/power-bi-overview-chart.png" alt-text="Screenshot showing an example number tile chart.":::
+ 
+1. To add fields or measures, select the **+Add data** button. Each added data will be displayed as a distinct card.
 
-1. In the Visualizations pane, select the **Card** icon.
+   :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-visualization.png" alt-text="Once selected, an empty visual list will be integrated to add data.":::
 
-   :::image type="content" source="media/power-bi-visualization-card/power-bi-card-visualization.png" alt-text="Screenshot showing an example number title card.":::
 
-You've now successfully created a card with the report editor. Below is the second option for creating a card using the Q&A question box.
 
-## Option 2: Create a card from the Q&A question box
+# [On the report canvas](#tab/On-the-report-canvas)
 
-The Q&A question box is another option for you to use when creating a card. The Q&A question box is available in Power BI Desktop report view.
+You can create a card directly from the report canvas.
 
-1. In the Visualizations pane, select the **Q&A** icon.
+1. In the report canvas, right click to display a menu, then select the **+Add visual** button.
 
-   Power BI creates a Q&A visualization with a box for you to "Ask a question about your data."
+1. In the On-object menu, expand the Visual types dropdown to select the **New card visual** icon.
 
-   :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-visualization.png" alt-text="Screenshot showing a new Q&A visualization with a question box.":::
+1. To add fields or measures, select the **+Add data** button. Each added data will be displayed as a distinct card.
 
-1. For example, type "Total Sales for Tina" in the question box.
+   :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-box.png" alt-text="Once the visual is selected, it is time to add the data directly to the upper icon integrated into the visual..":::
 
-   The question box helps you with suggestions and restatements. At this point, the entire **TotalSales** number is displayed until you further qualify it and select **Total Sales for Tina Lassila (store DM)**.
 
-   :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-box.png" alt-text="Question box example.":::
 
-1. Select the icon to the right of the question box to convert the Q&A visualization to a card visualization.
+# [In the data pane](#tab/In-the-data-pane)
 
-   :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-conversion.png" alt-text="Screenshot showing a Q&A visualization with the 'Turn this Q&A result into a standard visual' icon highlighted.":::
+Another commonly employed approach for creating a new card visual is to start the process from the data pane.
 
-Power BI makes the conversion. Notice that the card icon is now highlighted in the Visualizations pane.
+1. In the report canvas, right click to display a menu, then select the **+Add visual** button.
 
-:::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-card.png" alt-text="Card example from question method.":::
+1. In the Data pane, select some measures or fields.
 
-You've now successfully created a card with the Q&A question box. Below are steps for formatting your card to your specific needs.
+1. In the On-object menu, we can see the **data fields** applied on the visual.
 
-## Format a card
+   :::image type="content" source="media/power-bi-visualization-card/power-bi-format-card-2.png" alt-text="The data dragged from the data panel will be reflected in the panel of each vidual..":::
 
-You have many options for changing labels, text, color and more. The best way to learn is to create a card and then explore the Format pane. Here are just a few of the formatting options available. 
+---
 
-The Format pane is available when interacting with the card in a report.
+## Formatting the new card visual
 
-1. Start by selecting the paint brush icon to open the Format pane.
+The new card visual provides a wide range of options for customization. To gain a better understanding of these options, we recommend creating a new card visual with multiple values and exploring the Format pane. This will allow you to experiment with various formatting options and discover the full range of features available. 
 
-   :::image type="content" source="media/power-bi-visualization-card/power-bi-format-card-2.png" alt-text="Screenshot of the paint brush icon in the Format pane.":::
+To access the Format pane, simply interact with the card within the report.
 
-1. With the card selected, expand **Callout value** and change the **Font**, **Text size**, and **Color**. If you had thousands of stores, you could use **Display units** to show the number of stores by thousands and control the decimal places as well. For example, 125.8K instead of 125,832.00.
+1. Keeping the new card visual selected, start by selecting the paint brush icon to open the format pane.
 
-   :::image type="content" source="media/power-bi-visualization-card/power-bi-card-format-2.png" alt-text="Screenshot of Callout value expanded to change font and color.":::
+   :::image type="content" source="media/power-bi-visualization-card/power-bi-overview-chart.png" alt-text="The format panel is activated in the View tab of Power BI.":::
 
-1. Expand **Category label** and change the **Font**, **Text size**, and **Color**.
+1. Expand the **Callout** section and **Apply settings** to all series to change the **font family**, **font size**, **color**, and **transparency**. By doing so, you will be able to modify all cards simultaneously.
 
-   :::image type="content" source="media/power-bi-visualization-card/power-bi-card-format-category.png" alt-text="Screenshot of Category label expanded to change font and color.":::
+      :::image type="content" source="media/power-bi-visualization-card/power-bi-card-visualization.png" alt-text="Apply to allows us to apply a change in general or individually style a specific field.":::
 
-1. Choose **General**, then expand **Background** under **Effects**. Move the slider to On. Now you can change the background **Color** and **Transparency**.
+1. In **Apply settings to**, select a single series and then change the **color** and **horizontal alignment**. If you need to format a value in a specific way, you can use the **Custom** display units option and enter a format code in the text field. For example, typing **$#,#** as the format code will change the data type to currency format.
 
-   :::image type="content" source="media/power-bi-visualization-card/power-bi-format-color-2.png" alt-text="Screenshot of Background expanded to change color.":::
+   :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-card.png" alt-text="Once a specific change is applied to a series, that series will not be affected when we make changes in general.":::
 
-1. Continue to explore the formatting options until your card is exactly how you'd like it.
+1. In **Apply settings to**, select all series and then change **font size**, **position** and turn on **text wrap** and adjust the space between the value and label by using **vertical spacing.**.
+
+   :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-conversion.png" alt-text="However, it is important to note that this feature only works when applied to all series.":::
+
+1. Expand the **Layout** section and change the **vertical alignment**, **orientation**, and **space between cards**.
+
+   :::image type="content" source="media/power-bi-visualization-card/power-bi-card-format-2.png" alt-text="As shown in the image settings such as alignment can be managed independently.":::
+
+1. To modify all cards at once, expand the **Cards** section, select All series under **Apply settings to** and adjust **padding**, **fill color**, **fill transparency**, and **border color**.
+
+   :::image type="content" source="media/power-bi-visualization-card/power-bi-card-format-category.png" alt-text="For a more precise style we have to be switching between All series and a specific series.":::
+
+1. To modify a single card, select a series under **Apply settings to** and adjust **fill color**** and border color**.
+
+   :::image type="content" source="media/power-bi-visualization-card/power-bi-format-color-2.png" alt-text="Finally we select a series to apply the last configuration and thus we obtain a card with better style.":::
+
+
 
 ## Considerations and troubleshooting
 
-If you don't see a question box at all, contact your Power BI admin.
+* The new card visual is a preview feature turned on by default. However, if you prefer to disable the preview, or control when you see it, you can still find toggle under **Options** > **Preview features** > **New card visual**. As this addition does not affect existing card visuals, we believe it will not cause any disruption to the user experience.
+* Please note that certain settings will only take effect if the 'Apply settings to' option is set to 'All'.
+* We're aware that the shape corner feature is currently based on percentage, which can make it difficult to control. To improve precision, we're planning to replace the percentage-based system with one that uses pixels instead.
+* Currently, the shadow and glow effect can cause the size of all cards to change unexpectedly. Our team is actively working on a solution to this issue.
+* When using the 'Edit interactions' and 'Filters on this visual' features, any changes made will affect all cards within the container.
+* It is not possible to pin individual cards to a dashboard. Instead, all cards within the dashboard will be pinned together.
+* While there are no limits to the number of cards that can be added to the new card visual, it's important to note that a large number of cards may cause the report to experience latency.
+* Please be aware that the new card visual currently does not support scrolling or pagination. As a result, if the container is very small and multiple cards are added, they may appear very small. Our team is actively working on a solution to this issue.
+
 
 ## Next steps
 [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
