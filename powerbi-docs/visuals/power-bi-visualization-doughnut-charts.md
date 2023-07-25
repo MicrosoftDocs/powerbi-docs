@@ -19,10 +19,13 @@ A doughnut chart is similar to a pie chart in that it shows the relationship of 
 
 Doughnut charts work best when you use them to compare a particular section to the whole, rather than comparing individual sections with each other.
 
-> [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that you have saved the report in Premium capacity.
-
 ## Prerequisites
+
+Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that you have saved the report in Premium capacity.
+
+## Get the sample
+
+To follow along, download the Retail Analysis sample .pbix file in Power BI Desktop or the Power BI service.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
