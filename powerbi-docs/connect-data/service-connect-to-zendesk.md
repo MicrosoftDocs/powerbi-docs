@@ -7,7 +7,7 @@ ms.reviewer: sarinas
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 06/19/2023
+ms.date: 07/25/2023
 LocalizationGroup: Connect to services
 ---
 # Connect to Zendesk with Power BI
@@ -54,9 +54,12 @@ After you've installed the template app, you can change the dashboard and report
    ![Sign in with oAuth2](media/service-connect-to-zendesk/pbi_zendesksignin.png)
 1. Select **Allow** to allow Power BI to access your Zendesk data.
    
-   ![Click Allow](media/service-connect-to-zendesk/zendesk2.jpg)
+   :::image type="content" source="./media/service-connect-to-zendesk/zendesk2.jpg" alt-text="Screenshot of Zendesk allow access dialog.":::
+
 1. Select **Connect** to begin the import process. 
+
 1. After Power BI imports the data, you see the content list for your Zendesk app: a new dashboard, report, and dataset.
+
 1. Select the dashboard to start the exploration process.
 
     ![Zendesk dashboard](media/service-connect-to-zendesk/power-bi-zendesk-dashboard.png)
