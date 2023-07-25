@@ -36,9 +36,9 @@ Tables are a great choice for several scenarios:
 > [!NOTE]
 > If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
 
-## Prerequisites
+## Get the sample
 
-Review the following prerequisites for using tables in Power BI Desktop or the Power BI service.
+To follow along, download the Retail Analysis sample .pbix file in Power BI Desktop or the Power BI service.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
