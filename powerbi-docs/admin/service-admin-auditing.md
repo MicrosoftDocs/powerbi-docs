@@ -372,7 +372,7 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI note | DeleteNote | |
 | Deleted Power BI scorecard | DeleteScorecard | |
 | Deleted Power BI report    | DeleteReport   |    |
-| DeleteTemplateApp | Deleted a  template app or a workspace for a template app| |
+| DeleteTemplateApp | Deleted a  Power BI template app or a workspace for a template app| |
 | [Deleted sensitivity label from Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md)  | SensitivityLabelRemoved | |
 | Deleted snapshot for user in Power BI tenant | DeleteSnapshot | Generated when a user deletes a snapshot that describes a dataset |
 | Deployed to a pipeline stage     | DeployAlmPipeline    |        |
