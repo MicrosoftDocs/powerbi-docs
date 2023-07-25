@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/14/2023
+ms.date: 07/25/2023
 ms.custom: sample-retailanalysissample
 LocalizationGroup: Visualizations
 ---
@@ -61,19 +61,19 @@ Treemaps are a great choice for many scenarios:
 > [!NOTE]
 > If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
 
-## Prerequisites
+## Get the sample
 
-Review the following prerequisites for using treemaps in Power BI Desktop or the Power BI service.
+To follow along, download the Retain Analysis sample .pbix file in Power BI Desktop or the Power BI service.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-This tutorial uses the Retail Analysis Sample PBIX file.
+This tutorial uses the Retail Analysis Sample .pbix file.
 
 1. Download the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) to your desktop.
 
 1. In Power BI Desktop, select **File** > **Open report**.
 
-1. Browse to and select the **Retail Analysis Sample PBIX** file, and then select **Open**.
+1. Browse to and select the **Retail Analysis Sample ** file, and then select **Open**.
 
    The **Retail Analysis Sample PBIX** file opens in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
 
