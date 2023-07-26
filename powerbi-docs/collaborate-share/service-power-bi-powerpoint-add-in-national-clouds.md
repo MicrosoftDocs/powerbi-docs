@@ -61,6 +61,10 @@ To download and deploy the add-in:
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-admin/power-bi-powerpoint-addin-download-option.png" alt-text="Screenshot of the Power BI for PowerPoint add-in download option.":::
 
 1. Deploy the add-in according to the instructions at [Deploy add-ins in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins).
+1. 
+Export menu - no Embed live data option
+Share menu - no PowerPoint option.
+Visual - no Open in PowerPoint option.
 
 ## Next Steps
 
