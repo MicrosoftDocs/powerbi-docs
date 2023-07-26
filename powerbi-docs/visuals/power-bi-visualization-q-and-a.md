@@ -1,63 +1,75 @@
 ---
 title: Create a Q&A visual in a report
-description: How to create and format a Q&A visual in a report in Power BI Desktop or the Power BI service.
+description: Learn how to create and format a Q&A visual in a report in Power BI Desktop or the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: rien
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 06/30/2022
+ms.date: 07/26/2023
 ms.custom: sample-salesandmarketingsample
 ---
+
 # Create a Q&A visual in a report in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 The Q&A visual allows users to ask natural language questions and get answers in the form of a visual. *Consumers* can use it to quickly get answers to their data. *Designers* can also use it to create visuals quickly. If you're a report designer, this article is for you. You can double-click anywhere on a report and use natural language to get started. In this article, you create, format, and customize a Q&A visual. It supports themes and other default formatting options available inside Power BI. After you create it, it behaves like any other visual, supporting cross-filtering, cross-highlighting, and bookmarks. 
 
-Looking for more background about Q&A in Power BI? Check out [Introduction to Q&A](../natural-language/q-and-a-intro.md).
+If you're looking for more background about Q&A in Power BI, see [Introduction to Q&A](../natural-language/q-and-a-intro.md).
 
-![Q&A visual walkthrough](../natural-language/media/qna-visual-walkthrough.gif)
+![Video that provides a Q&A visual walkthrough.](../natural-language/media/qna-visual-walkthrough.gif)
 
 The Q&A visual consists of four core components:
 
-- The question box. This is where users type in their question and are shown suggestions to help them complete their question.
+- The question box. This is where users enter a question and see suggestions to help answer their question.
 - A pre-populated list of suggested questions.
-- Icon to convert the Q&A visual into a standard visual. 
-- Icon to open Q&A tooling, which allows designers to configure the underlying natural language engine.
+- An icon to convert the Q&A visual into a standard visual. 
+- An icon to open Q&A tooling, which allows designers to configure the underlying natural language engine.
 
 ## Prerequisites
+
+Review the following prerequisites for using Q&A in Power BI Desktop or the Power BI service.
+
 # [Power BI Desktop](#tab/powerbi-desktop)
-1. Download the [Sales and Marketing Sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) to follow along.
 
-1. In the upper left section of the Power BI Desktop, select **File** > **Open report**.
+This tutorial uses the Sales and Marketing Sample .pbix file.
 
-1. Find your copy of the **Sales and Marketing Sample PBIX file**.
+1. Download the [Sales and Marketing Sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) to your desktop.
 
-1. Open the file in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
+1. In Power BI Desktop, select **File** > **Open report**.
 
-1. Select the plus sign :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+1. Browse to and select the **Sales and Marketing Sample** .pbix file, and then select **Open**.
+
+   The **Sales and Marketing Sample** .pbix file opens in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
+
+1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 # [Power BI service](#tab/powerbi-service)
+
 This tutorial uses the Sales and Marketing Sample in the Power BI service.
 
-1. Sign in to the Power BI service.
+1. Sign in to the Power BI service (`app.powerbi.com`).
 
-1. From the lower left corner, select **Get data**.
+1. Select **Learn** in the navigation pane.
 
-1. Select **Samples**, then **Sales and Marketing Sample**. Select **Connect**.
+1. On the **Learning center** page, under **Sample reports**, locate and select the **Sales and Marketing Sample** to download it. The sample opens in report view.
 
-1. In your workspace, select the Sales and Marketing Sample report to open it.
+   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-sales-marketing-sample.png" alt-text="Screenshot that shows the Sales and Marketing Sample open in report view in the Power BI service." lightbox="media/power-bi-visualization-q-and-a/power-bi-sales-marketing-sample-expanded.png" border="false":::
 
-1. Select **Edit** and then select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+1. At the top, select **Edit** to open the Report editor.
+
+   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-edit-report.png" alt-text="Screenshot that shows how to select Edit to modify the report in the Power BI service." border="false":::
+
+1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 ---
 
 If you see an error when creating a Q&A visual, be sure to check the [Q&A limitations](../natural-language/q-and-a-limitations.md) article to see if the data source configuration is supported.  
 
 > [!NOTE]
-> Sharing your report with a Power BI colleague requires that either you both have individual Power BI Pro or Premium Per User (PPU) licenses or you save the report in a Premium capacity workspace. See [sharing reports](../collaborate-share/service-share-dashboards.md).
+> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Create a Q&A visual using a suggested question
 
