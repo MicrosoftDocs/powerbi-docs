@@ -1,23 +1,29 @@
 ---
-title: Power BI Dataset Scale-Out
-description: Learn how Power BI Dataset Scale-Out improves your Power BI performance by reducing dataset query and refresh times
+title: Power BI dataset scale-out
+description: Learn how Power BI dataset scale-out improves your Power BI performance by reducing dataset query and refresh times
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 02/07/2023
+ms.date: 07/25/2023
 LocalizationGroup: Premium
 ---
 
-# Power BI Dataset Scale-Out (preview)
+# Power BI dataset scale-out (preview)
 
-Power BI Dataset Scale-Out helps Power BI deliver fast performance while your reports and dashboards are consumed by a large audience. Scale-Out uses your Premium capacity to host copies of your dataset. By increasing throughput, the dataset copies ensure that performance doesn’t slow down when multiple users submit queries at the same time.
+> [!IMPORTANT]
+> Power BI dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-When Power BI creates the dataset copies, it separates *read-only* copies of the dataset from a *read/write* copy of the dataset. The *read-only* dataset copies serve the Power BI report and dashboard consumption, and the *read/write* dataset copy is used when write operations and refreshes are performed. During write operations and refreshes, the *read-only* dataset copies continue to serve your reports and dashboards without being disrupted. When needed, the *read-only* and *read/write* datasets are synced so that the *read-only* copies are kept up-to-date. Using this method, Power BI Dataset Scale-Out reduces the impact of write operations and dataset refreshes on your capacity.
+Power BI dataset scale-out helps Power BI deliver fast performance while your reports and dashboards are consumed by a large audience. Dataset scale-out uses your Premium capacity to host one or more read-only *replicas* of your *primary* dataset. By increasing throughput, the read-only replicas ensure performance doesn’t slow down when multiple users submit queries at the same time.
 
-Only XMLA endpoints and advanced APIs connect to the *read/write* dataset copy. All other operations connect to the *read-only* dataset copy. The table below lists the required sync for each refresh method, when Power BI Dataset Scale-Out is enabled.
+> [!NOTE]
+> During PREVIEW, Power BI dataset scale-out creates only one dataset replica. When generally available, the maximum number of read-only dataset replicas is determined by your Premium capacity.
+
+When Power BI creates the dataset read-only replicas, it separates them from the primary read-write dataset. The read-only dataset replicas serve the Power BI report and dashboard consumption, and the read-write dataset is used when write operations and refreshes are performed. During write operations and refreshes, the read-only dataset replicas continue to serve your reports and dashboards without being disrupted. When needed, the read-only and read-write datasets are synchronized so that the read-only copies are kept up-to-date. By using this method, Power BI dataset scale-out reduces the impact of write operations and dataset refreshes on your capacity.
+
+Only applications using the XMLA endpoint and advanced APIs connect to the primary read-write dataset. All other operations connect to a read-only dataset replica. The following table lists the required synchronization for each refresh method, when Power BI dataset scale-out is enabled:
 
 | Refresh method    | Sync                 |
 |-------------------|----------------------|
@@ -29,23 +35,25 @@ Only XMLA endpoints and advanced APIs connect to the *read/write* dataset copy. 
 
 ## Prerequisites
 
-Before you enable Power BI Dataset Scale-Out, verify that the following Prerequisites are met.
+By default, Power BI dataset scale-out is enabled provided the following prerequisites are met:
+
+* The **Scale-out queries for large datasets** in your tenant settings is enabled. By default, this setting is enabled.
 
 * Your workspace resides on a Power BI Premium [capacity](service-premium-what-is.md#capacities-and-skus):
-    * P SKUs
-    * A SKUs for Power BI Embedded (also known as [embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers)).
+    * Premium Per User (PPU)
+    * Power BI Premium P SKUs
+    * Power BI A SKUs for Power BI Embedded (also known as [embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers)).
+    * Fabric F SKUs
 
 * Your workspace is configured to use the [Large datasets](service-premium-large-models.md) storage format.
 
-* [XMLA read/write](service-premium-connect-tools.md#enable-xmla-read-write) is enabled.
-
-* Power BI Management cmdlets. Install by opening PowerShell in Administrator mode, and running the command:
+* To manage datasets by using the REST API, [Power BI Management cmdlets](/powershell/power-bi/overview?view=powerbi-ps). Install by opening PowerShell in Administrator mode, and running the command:
 
     ```powershell
     Install-Module -Name MicrosoftPowerBIMgmt
     ```
 
-* The following (or higher) app, library and service versions:
+* The following (or higher) app, library, and service versions:
 
     | App, library or service  | Version |
     |--------------------------|---------|
@@ -57,84 +65,30 @@ Before you enable Power BI Dataset Scale-Out, verify that the following Prerequi
     | Tabular Editor 3         | 3.2.3    |
     | DAX Studio               | 3.0.0    |
 
-## Enable Dataset Scale-Out
+## Configure scale-out for a dataset
 
-Power BI Dataset Scale-Out is enabled by default for your tenant. However, you'll need to enable it for each workspace individually.
+Power BI dataset scale-out is enabled by default for your tenant. To learn how to get dataset scale-out status, enable, or disable scale-out for a dataset by using PowerShell, see [Configure Power BI dataset scale-out](service-premium-scale-out-configure.md).
 
-### Enable Scale-Out for your workspace
+## Connect to a specific dataset type
 
-Use the XMLA endpoint to turn on Scale-Out for each workspace you want to enable it for. Make sure that the XMLA endpoint has been [enabled for read-write](service-premium-connect-tools.md#enable-xmla-read-write).
+When dataset scale-out is enabled, the following connections are maintained:
 
-1. Start SQL Server Management Studio (SSMS) and in the **Connect to Server** dialog box, fill in the fields as listed below.
+* Power BI Desktop connects to the *read-only* dataset by default.
 
-    | Field          | Value |
-    |----------------|-------|
-    | **Server type**    | Analysis Services |
-    | **Server name**    | Paste the workspace connection string. You can get the connection string by going into your workspace settings, selecting Premium and copying the *Workspace Connection* string. |
-    | **Authentication** | Select the correct authentication type for your environment |
-    | **User name**      | Provide a valid UPN |
+* [Live connection](./../connect-data/desktop-report-lifecycle-datasets.md) reports connect to a read-only dataset replica.
 
-2. Select **Connect**.
+* XMLA clients connect to the primary read-write dataset by default.
 
-3. In the *Object Explorer* pane, select the **Databases** node.
+* Refreshes in Power BI service and refreshes using the [Enhanced Refresh REST API](./../connect-data/asynchronous-refresh.md) are connected to the read-write dataset.
 
-4. In the toolbar, select **XMLA**. If a *Connect to Analysis Services* dialog box appears, select *Connect*.
+You can connect to a read-only dataset or read-write replica by appending one of the following strings to the dataset's URL:
 
-5. Paste the following request into the XMLA window. Replace `[WorkspaceName]` with the name of your workspace.  
+* **Read-only** - `?readonly`
+* **Read/write** - `?readwrite`
 
-    ```xml
-    <Execute xmlns="urn:schemas-microsoft-com:xml-analysis"> 
-        <Command> 
-            <Batch xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"> 
-                <Alter ObjectExpansion="ObjectProperties" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"> 
-                    <Object /> 
-                    <ObjectDefinition>
-                       <Server xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                                xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" 
-                                xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" 
-                                xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" 
-                                xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" 
-                                xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" 
-                                xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" 
-                                xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" 
-                                xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" 
-                                xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" 
-                                xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" 
-                                xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500"> 
-                            <Name>[WorkspaceName]</Name> 
-                            <ServerProperties> 
-                                <ServerProperty> 
-                                    <Name>Feature\PBIP\QueryScaleOut</Name> 
-                                    <Value>1</Value> 
-                                </ServerProperty> 
-                            </ServerProperties> 
-                        </Server> 
-                    </ObjectDefinition> 
-                </Alter> 
-            </Batch> 
-        </Command> 
-        <Properties /> 
-    </Execute>  
-    ```
+## Disable dataset scale-out for your tenant
 
-6. Select **Execute**.
-
-    :::image type="content" source="media/service-premium-scale-out/ssms-connect.png" alt-text="A screenshot showing how to add the Scale-Out XMLA script to S Q L Server Management Studio (S S M S).":::
-
-### Disable Scale Out for your workspace
-
-To disable Power BI Dataset Scale out for your workspace, set the `value` field to zero.
-
-```xml
-<Value>0</Value>
-```
-
-For more information, see the code snippet in [Enable Scale-Out for your workspace](#enable-scale-out-for-your-workspace), step 5.
-
-### Disable Scale-Out for your tenant
-
-Power BI Dataset Scale-Out is enabled by default for each tenant. A Power BI admin can disable this tenant setting. To disable Dataset Scale-Out, follow the instructions below.
+Power BI dataset scale-out is enabled by default for each tenant. Power BI tenant admins can disable this setting. To disable dataset scale-out, do the following:
 
 1. Go to your [tenant settings](./../admin/service-admin-portal-about-tenant-settings.md)
 
@@ -146,48 +100,34 @@ Power BI Dataset Scale-Out is enabled by default for each tenant. A Power BI adm
 
     :::image type="content" source="media/service-premium-scale-out/disable-scale-out.png" alt-text="A screenshot showing how to disable the scale out tenant settings in the Power BI admin portal.":::
 
-## Connect to a specific dataset type
-
-When Scale-Out is enabled, the following connections are maintained.
-
-* Power BI Desktop connects to the *read-only* dataset by default.
-
-* [Live connection](./../connect-data/desktop-report-lifecycle-datasets.md) reports, are connected to the *read-only* dataset copy.
-
-* XMLA clients are connected to the *read/write* dataset copy by default.
-
-* Refreshes in Power BI service and refreshes using the [Enhanced Refresh REST API](./../connect-data/asynchronous-refresh.md), are connected to the *read/write* dataset copy.
-
-You can connect to specific type of dataset copy by appending one of the following strings to the dataset's URL.
-
-* **Read-only** - `?readonly`
-* **Read/write** - `?readwrite`
-
 ## Considerations and limitations
 
-* Client applications can connect to the *read-only* dataset copy through the XMLA endpoint, provided they support the mode specified on the connection string. Client applications can also connect to the *read/write* instance using XMLA endpoint.
+* Client applications can connect to a read-only replica through the XMLA endpoint, provided they support the mode specified in the connection string. Client applications can also connect to the read-write instance by using the XMLA endpoint.
 
-* Manual and scheduled refreshes are automatically synchronized with the latest version of the *read-only* dataset copies. REST API refreshes must be synced with the *read-only* dataset copies using the manual sync REST API.
+* Manual and scheduled refreshes are automatically synchronized with the latest version of the read-only dataset replicas. REST API refreshes must be synced with the read-only dataset copies by using the manual sync REST API.
 
-* XMLA updates and refreshes must be synced with the *read-only* dataset copies using the Sync REST API.
+* XMLA updates and refreshes must be synced with the read-only dataset copies by using the sync REST API.
 
-* When deleting a Power BI Scale-Out dataset, and creating another dataset with the same name. Allow five minutes to pass before creating the new dataset. It might take Power BI a short while to remove the copies of the original dataset.
+* When deleting a Power BI scale-out dataset, and creating another dataset with the same name, allow five minutes to pass before creating the new dataset. It might take Power BI a while to remove the replicas of the primary dataset.
 
-* Backup and restore operations are not supported for Power BI Scale-Out datasets. If you want to restore a dataset, disable Scale-Out before you restore the dataset. After the restore operation ends, you can enable Scale-Out again.
+* Backup and restore operations are not supported for Power BI scale-out datasets. If you want to restore a dataset, disable scale-out before you restore the dataset. After the restore operation ends, you can enable scale-out again.
 
-* When Power BI Dataset Scale-Out is turned on, changes to the following features, are not supported:
+* When Power BI dataset scale-out is enabled, changes to the following features, are not supported:
     * Model roles for RLS and OLS
     * Tables that use DirectQuery and Dual data sources
 
-    To make changes to these features, disable Scale-Out and allow a few minutes for the change to take place.
+    To make changes to these features, disable scale-out and allow a few minutes for the change to take place before reenabling.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Tutorial: Test Power BI Dataset Scale-Out](service-premium-scale-out-test.md)
+> [Configure Power BI dataset scale-out](service-premium-scale-out-configure.md)
 
 > [!div class="nextstepaction"]
-> [Sync a read-only Scale-Out replica](service-premium-scale-out-sync-replica.md)
+> [Tutorial: Test Power BI dataset scale-out](service-premium-scale-out-test.md)
 
 > [!div class="nextstepaction"]
-> [Compare Scale-Out dataset copies](service-premium-scale-out-app.md)
+> [Sync a read-only scale-out replica](service-premium-scale-out-sync-replica.md)
+
+> [!div class="nextstepaction"]
+> [Compare scale-out dataset copies](service-premium-scale-out-app.md)
