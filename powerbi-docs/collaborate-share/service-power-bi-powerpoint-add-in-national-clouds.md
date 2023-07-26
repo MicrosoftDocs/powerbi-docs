@@ -12,23 +12,38 @@ LocalizationGroup: Share your work
 ms.date: 03/05/2023
 ---
 
-# Deploying the Power BI add-in for PowerPoint in national/regional clouds
+# The Power BI add-in for PowerPoint in national/regional clouds
 
-This article describes how to deploy the Power BI add-in for PowerPoint in national/regional clouds, and explains the differences between public cloud versus national/regional cloud deployment.
+Users of the Power BI add-in for PowerPoint in national/regional clouds enjoy the same interactive data visualization storytelling capabilities as users in public clouds. However, because there is no connection to the Microsoft Office add-in store in national/regional clouds, there are some differences in how the add-in is deployed, and in how you can embed live Power BI data in a PowerPoint presentation. This article summarizes and describes these differences. The differences are also called out in the rest of the storytelling documentation where relevant.
 
-Here are the differences
+Here are the differences. Click the links to see more detail.
 
-Because in national/regional clouds there is no connection to the Microsoft add-ins store, certain features are not available. The section below summarizes how the add-in is different in national/regional cloud deployments.
+* In national/regional clouds, the add-in must be downloaded from Power BI by an administrator and deployed as an admin managed add-in via centralized deployment, since the Office add-in store isn't accessible. It isn't available as part of a subscription, nor can users install it themselves from the Office add-in store. For more information about deploying the add-in as an admin managed add-in, see [Deploying the add-in in national/regional clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-nationalregional-clouds).
+* The tenant administrator doesn't have to enable the **[Enable Power BI add-in for PowerPoint](../admin/service-admin-portal-export-sharing.md#enable-power-bi-add-in-for-powerpoint)** tenant setting. In national/region clouds, this setting is irrelevant and can be ignored.
+* In the Power BI service, the **Open in PowerPoint** option is not available. You must copy the link to the report or visual and paste it into the add-in manually.
+* In PowerPoint, the add-in button doesn't appear on the Insert ribbon. Instead, to insert the add-in, you must find it among your "manageed add-ins".
 
-**For users**
-* In the Power BI service, the **Open in PowerPoint** option is not available.
-* In PowerPoint, the add-in button won't appear on the XXX ribbonT. To insert the add-in button users need to go to **Managed add-ins**.
+
+
 
 **For admins**
 * You must download the add-in from Power BI and deploy it via centralized deployment.
 * You don't have to enable the **[Enable Power BI add-in for PowerPoint](../admin/service-admin-portal-export-sharing.md#enable-power-bi-add-in-for-powerpoint)** tenant setting. In national/region clouds, the setting is irrelevant and can be ignored. 
 
-In national/regional clouds, the add-in must be deployed as an admin managed add-in, since the Office add-in store isn't accessible from national/regional clouds. For more information, see [Deploying the add-in in national/regional clouds](#deploying-the-add-in-in-nationalregional-clouds).
+* In national/regional clouds, the add-in must be deployed by an administrator as an admin managed add-in, since the Office add-in store isn't accessible. It isn't available as part of a subscription, nor can users install it themselves from the Office add-in store. For more information about deploying the add-in as an admin managed add-in, see [Deploying the add-in in national/regional clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-nationalregional-clouds).
+* In PowerPoint, the add-in button won't appear on the Insert ribbon. Instead, to insert the add-in, users need to go to **Managed add-ins**.
+
+
+
+
+**For users**
+* In the Power BI service, the **Open in PowerPoint** option is not available.
+
+**For admins**
+* You must download the add-in from Power BI and deploy it via centralized deployment.
+* You don't have to enable the **[Enable Power BI add-in for PowerPoint](../admin/service-admin-portal-export-sharing.md#enable-power-bi-add-in-for-powerpoint)** tenant setting. In national/region clouds, the setting is irrelevant and can be ignored. 
+
+* In national/regional clouds, the add-in must be deployed as an admin managed add-in, since the Office add-in store isn't accessible from national/regional clouds. For more information, see [Deploying the add-in in national/regional clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-nationalregional-clouds).
 
 ## Requirements
 
