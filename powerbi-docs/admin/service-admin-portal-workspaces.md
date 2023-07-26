@@ -102,7 +102,7 @@ Power BI admins can designate a default capacity for My workspaces. However, eve
 
 ### Restore a deleted My workspace as an app workspace
 
-When users leave the company, their My workspaces show up as Deleted in the State column on the Workspaces page in the Admin portal. Power BI admins can restore deleted My workspaces as app workspaces that other users can collaborate in.
+When users are deleted from the company's Active Directory, their My workspaces show up as Deleted in the State column on the Workspaces page in the Admin portal. Power BI admins can restore deleted My workspaces as app workspaces that other users can collaborate in.
 
 During this restoration process, the Power BI admin needs to assign at least one Workspace admin in the new app workspace, as well as give the new workspace a name. After the workspace has been restored, it will show up as *Workspace* in the Type column on the Workspaces page in the Admin portal.
 

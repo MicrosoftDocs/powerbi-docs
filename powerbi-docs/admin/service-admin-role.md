@@ -1,13 +1,13 @@
 ---
 title: Understanding Power BI administration roles
 description: This article describes the Fabric administrator and the specific roles that provide administrator privileges in Power BI.
-author: kfollis
-ms.author: kfollis
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/18/2023
+ms.date: 07/23/2023
 LocalizationGroup: Administration
 ---
 
@@ -67,24 +67,21 @@ You can also assign users to roles by using PowerShell. Users are managed in Azu
     ```powershell
     Get-AzureADDirectoryRole
     ```
-
-    > [!NOTE] 
-    > In the output produced by the PowerShell command, look for the *Power BI Service Administrator* in the DisplayName column. This is the legacy name for the *Fabric administrator*.
     
     ```output
-    ObjectId                             DisplayName                        Description
-    --------                             -----------                        -----------
-    00f79122-c45d-436d-8d4a-2c0c6ca246bf Power BI Service Administrator     Full access in the Power BI Service.
-    250d1222-4bc0-4b4b-8466-5d5765d14af9 Helpdesk Administrator             Helpdesk Administrator has access to perform..
-    3ddec257-efdc-423d-9d24-b7cf29e0c86b Directory Synchronization Accounts Directory Synchronization Accounts
-    50daa576-896c-4bf3-a84e-1d9d1875c7a7 Company Administrator              Company Administrator role has full access t..
-    6a452384-6eb9-4793-8782-f4e7313b4dfd Device Administrators              Device Administrators
-    9900b7db-35d9-4e56-a8e3-c5026cac3a11 AdHoc License Administrator        Allows access manage AdHoc license.
-    a3631cce-16ce-47a3-bbe1-79b9774a0570 Directory Readers                  Allows access to various read only tasks in ..
-    f727e2f3-0829-41a7-8c5c-5af83c37f57b Email Verified User Creator        Allows creation of new email verified users.
+    ObjectId                             DisplayName                                Description
+    --------                             -----------                                -----------
+    6ebd1a24-c502-446f-94e5-fa2997fd26c3 Fabric Administrator                       Manages all aspects of Microsoft Fabric.
+    70fd9723-a627-48ef-8b2c-82c22b65211e SharePoint Administrator                   Can manage all aspects of the SharePoint service.
+    727aeffc-89db-4d43-a680-8b36f56b38c5 Windows Update Deployment Administrator    Can create and manage all aspects of Windows Update deployments through the Windows Update for Business deployment service.
+    7297504b-c536-41f6-af7c-d742d59b2541 Security Operator                          Creates and manages security events.
+    738e1e1e-f7ec-4d99-b6b4-1c190d880b4d Application Administrator                  Can create and manage all aspects of app registrations and enterprise apps.
+    782450d2-5aae-468e-a4fb-1103e1be6833 Service Support Administrator              Can read service health information and manage support tickets.
+    80f7e906-2e72-4db0-bd50-3b40545685a5 Attribute Assignment Administrator         Assign custom security attribute keys and values to supported Azure AD objects.
+    831d152c-42b8-4dc9-826e-42f8419afc9c Partner Tier2 Support                      Do not use - not intended for general use.
     ```
 
-    In this case, the role's **ObjectId** is 00f79122-c45d-436d-8d4a-2c0c6ca246bf.
+    In this case, the role's **ObjectId** is 6ebd1a24-c502-446f-94e5-fa2997fd26c3.
 
 1. Next, get the user's **ObjectId**. You can find that by running [Get-AzureADUser](/powershell/module/azuread/get-azureaduser).
 
@@ -106,7 +103,7 @@ You can also assign users to roles by using PowerShell. Users are managed in Azu
     | RefObjectId |The members ObjectId. |
 
     ```powershell
-    Add-AzureADDirectoryRoleMember -ObjectId 00f79122-c45d-436d-8d4a-2c0c6ca246bf -RefObjectId 6a2bfca2-98ba-413a-be61-6e4bbb8b8a4c
+    Add-AzureADDirectoryRoleMember -ObjectId 6ebd1a24-c502-446f-94e5-fa2997fd26c3 -RefObjectId 6a2bfca2-98ba-413a-be61-6e4bbb8b8a4c
     ```
 To learn more about using PowerShell to assign admin roles, see [AzureAD Directory Roles](/powershell/module/azuread/#directory-roles).
 
