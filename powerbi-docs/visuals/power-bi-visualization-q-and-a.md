@@ -23,8 +23,8 @@ If you're looking for more background about Q&A in Power BI, see [Introduction t
 
 The Q&A visual consists of four core components:
 
-- The question box. This is where users enter a question and see suggestions to help answer their question.
-- A pre-populated list of suggested questions.
+- The question box, where users enter a question and see suggestions to help answer their question.
+- A prepopulated list of suggested questions.
 - An icon to convert the Q&A visual into a standard visual. 
 - An icon to open Q&A tooling, which allows designers to configure the underlying natural language engine.
 
@@ -66,7 +66,7 @@ This tutorial uses the Sales and Marketing Sample in the Power BI service.
 
 ---
 
-If you see an error when creating a Q&A visual, be sure to check the [Q&A limitations](../natural-language/q-and-a-limitations.md) article to see if the data source configuration is supported.  
+If you see an error when creating a Q&A visual, check the [Q&A limitations](../natural-language/q-and-a-limitations.md) article and confirm your data source configuration is supported.  
 
 > [!NOTE]
 > If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
@@ -109,7 +109,7 @@ The following image shows the report canvas with all Power BI suggestions visibl
 
 1. Start to enter a question in the **Q&A** question box.
 
-   As you enter text, Power BI adds a red double underline to words it doesn't recognize. When possible, Power BI helps define unrecognized words. The following example shows suggestions from Power BI for the unrecognized term "vanA." The last two suggestions can satisfy our intended question.
+   As you enter text, Power BI adds a red double underline to words it doesn't recognize. When possible, Power BI helps define unrecognized words. The following example shows suggestions from Power BI for an unrecognized term. The last two suggestions can satisfy our intended question.
 
    :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-red-suggest.png" alt-text="Screenshot of the Q&A question box with unrecognized words underlined in red and suggested questions from Power BI." border="false":::
 
