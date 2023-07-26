@@ -16,7 +16,7 @@ LocalizationGroup: Premium
 > [!IMPORTANT]
 > Power BI dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-This article details how you can test the [Power BI dataset scale-out](service-premium-scale-out.md) feature.
+This article describes how you can test the Power BI dataset scale-out feature.
 
 ## Step 1 - Create a scale-out query
 
@@ -123,7 +123,7 @@ If you followed [step 3](#step-3---connect-to-the-readwrite-dataset-copy-optiona
 > [Configure Power BI dataset scale-out](service-premium-scale-out-configure.md)
 
 > [!div class="nextstepaction"]
-> [Sync a read-only scale-out replica](service-premium-scale-out-sync-replica.md)
+> [Sync a read-only replica](service-premium-scale-out-sync-replica.md)
 
 > [!div class="nextstepaction"]
-> [Compare scale-out dataset copies](service-premium-scale-out-app.md)
+> [Compare dataset scale-out replicas](service-premium-scale-out-app.md)

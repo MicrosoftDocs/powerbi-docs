@@ -1,5 +1,5 @@
 ---
-title: Compare scale-out dataset replicas
+title: Compare Power BI dataset scale-out replicas
 description: Learn how to compare Power BI dataset replicas when using the Power BI Dataset scale-out feature
 author: KesemSharabi
 ms.author: kesharab
@@ -11,14 +11,14 @@ ms.date: 07/25/2023
 LocalizationGroup: Premium
 ---
 
-# Compare scale-out dataset replicas
+# Compare dataset scale-out replicas
 
 > [!IMPORTANT]
-> Power BI Dataset Scale-Out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Power BI dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-After enabling [Power BI dataset scale-out](service-premium-scale-out.md), you might want to compare dataset replicas. The `syncStatus` REST API shows if the *read/write* and *read-only* dataset copies are in sync. You can also use the Tabular Object Model (TOM) to build a custom application that connects to both datasets and compares timestamps, metadata, and query results between them.
+The `syncStatus` REST API shows if the read-write and read-only replicas are in sync. You can also use the Tabular Object Model (TOM) to build a custom application that connects to both datasets and compares timestamps, metadata, and query results between them.
 
-This section provides a few Visual Studio app examples for comparing dataset properties when Power BI Dataset Scale-Out is enabled.
+This section provides a few Visual Studio app examples for comparing dataset properties when Power BI dataset scale-out is enabled.
 
 ## App 1 - Check the database object properties
 
@@ -142,7 +142,10 @@ Console.Read();
 > [Power BI dataset scale-out](service-premium-scale-out.md)
 
 > [!div class="nextstepaction"]
+> [Configure Power BI dataset scale-out](service-premium-scale-out-configure.md)
+
+> [!div class="nextstepaction"]
 > [Tutorial: Test Power BI dataset scale-out](service-premium-scale-out-test.md)
 
 > [!div class="nextstepaction"]
-> [Sync a read-only scale-out replica](service-premium-scale-out-sync-replica.md)
+> [Sync a read-only replica](service-premium-scale-out-sync-replica.md)

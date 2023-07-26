@@ -16,12 +16,12 @@ LocalizationGroup: Premium
 > [!IMPORTANT]
 > Power BI dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-Power BI dataset scale-out helps Power BI deliver fast performance while your reports and dashboards are consumed by a large audience. Dataset scale-out uses your Premium capacity to host one or more read-only *replicas* of your *primary* dataset. By increasing throughput, the read-only replicas ensure performance doesn’t slow down when multiple users submit queries at the same time.
+Dataset scale-out helps Power BI deliver fast performance while your reports and dashboards are consumed by a large audience. Dataset scale-out uses your Premium capacity to host one or more read-only *replicas* of your *primary* dataset. By increasing throughput, the read-only replicas ensure performance doesn’t slow down when multiple users submit queries at the same time.
 
 > [!NOTE]
-> During PREVIEW, Power BI dataset scale-out creates only one dataset replica. When generally available, the maximum number of read-only dataset replicas is determined by your Premium capacity.
+> During PREVIEW, dataset scale-out creates only one read-only replica. When generally available, the maximum number of read-only replicas is determined by your Premium capacity.
 
-When Power BI creates the dataset read-only replicas, it separates them from the primary read-write dataset. The read-only dataset replicas serve the Power BI report and dashboard consumption, and the read-write dataset is used when write operations and refreshes are performed. During write operations and refreshes, the read-only dataset replicas continue to serve your reports and dashboards without being disrupted. When needed, the read-only and read-write datasets are synchronized so that the read-only copies are kept up-to-date. By using this method, Power BI dataset scale-out reduces the impact of write operations and dataset refreshes on your capacity.
+When Power BI creates read-only replicas, it separates them from the primary read-write dataset. The read-only replicas serve Power BI report and dashboard queries, and the read-write dataset is used when write and refresh operations are performed. During write and refresh operations, the read-only replicas continue to serve your reports and dashboard queries without being disrupted. When needed, the read-only and read-write datasets are synchronized so that the read-only replicas are kept up-to-date. By using this method, Power BI dataset scale-out reduces the impact of dataset write and refresh operations on your capacity.
 
 Only applications using the XMLA endpoint and advanced APIs connect to the primary read-write dataset. All other operations connect to a read-only dataset replica. The following table lists the required synchronization for each refresh method, when Power BI dataset scale-out is enabled:
 
@@ -37,7 +37,7 @@ Only applications using the XMLA endpoint and advanced APIs connect to the prima
 
 By default, Power BI dataset scale-out is enabled provided the following prerequisites are met:
 
-* The **Scale-out queries for large datasets** in your tenant settings is enabled. By default, this setting is enabled.
+* The **Scale-out queries for large datasets** in your tenant settings is enabled (default).
 
 * Your workspace resides on a Power BI Premium [capacity](service-premium-what-is.md#capacities-and-skus):
     * Premium Per User (PPU)
@@ -67,19 +67,19 @@ By default, Power BI dataset scale-out is enabled provided the following prerequ
 
 ## Configure scale-out for a dataset
 
-Power BI dataset scale-out is enabled by default for your tenant. To learn how to get dataset scale-out status, enable, or disable scale-out for a dataset by using PowerShell, see [Configure Power BI dataset scale-out](service-premium-scale-out-configure.md).
+Power BI dataset scale-out is enabled by default for your tenant. To learn how to get scale-out status, enable, or disable scale-out for a dataset by using PowerShell, see [Configure Power BI dataset scale-out](service-premium-scale-out-configure.md).
 
 ## Connect to a specific dataset type
 
-When dataset scale-out is enabled, the following connections are maintained:
+When dataset scale-out is enabled, the following connections are retained:
 
 * Power BI Desktop connects to the *read-only* dataset by default.
 
 * [Live connection](./../connect-data/desktop-report-lifecycle-datasets.md) reports connect to a read-only dataset replica.
 
-* XMLA clients connect to the primary read-write dataset by default.
+* XMLA client applications connect to the read-write dataset by default.
 
-* Refreshes in Power BI service and refreshes using the [Enhanced Refresh REST API](./../connect-data/asynchronous-refresh.md) are connected to the read-write dataset.
+* Refreshes in the Power BI service and refreshes using the [Enhanced Refresh REST API](./../connect-data/asynchronous-refresh.md) connect to the read-write dataset.
 
 You can connect to a read-only dataset or read-write replica by appending one of the following strings to the dataset's URL:
 
@@ -88,7 +88,7 @@ You can connect to a read-only dataset or read-write replica by appending one of
 
 ## Disable dataset scale-out for your tenant
 
-Power BI dataset scale-out is enabled by default for each tenant. Power BI tenant admins can disable this setting. To disable dataset scale-out, do the following:
+Power BI dataset scale-out is enabled by default for each tenant. Power BI tenant admins can disable this setting. To disable dataset scale-out for the tenant, do the following:
 
 1. Go to your [tenant settings](./../admin/service-admin-portal-about-tenant-settings.md)
 
@@ -127,7 +127,7 @@ Power BI dataset scale-out is enabled by default for each tenant. Power BI tenan
 > [Tutorial: Test Power BI dataset scale-out](service-premium-scale-out-test.md)
 
 > [!div class="nextstepaction"]
-> [Sync a read-only scale-out replica](service-premium-scale-out-sync-replica.md)
+> [Sync a read-only replica](service-premium-scale-out-sync-replica.md)
 
 > [!div class="nextstepaction"]
-> [Compare scale-out dataset copies](service-premium-scale-out-app.md)
+> [Compare dataset scale-out replicas](service-premium-scale-out-app.md)
