@@ -73,7 +73,7 @@ Let's begin by creating a simple radial gauge chart in Power BI. We can track gr
     The Power BI service opens in Edit mode with a blank page and the Financials data in the Data pane.
 ---
 
-1. In the **Data** pane, expand **financials** and select the **Gross Sales** checkbox.
+4. In the **Data** pane, expand **financials** and select the **Gross Sales** checkbox.
 
    By default, Power BI creates a clustered column chart to display the data. On the **Visualizations** > **Build** visual pane, the **Y-axis** option is aligned to the **Sum of Gross Sales** value. Notice that by default, Power BI shows the _sum_ value for the selected field.
 
