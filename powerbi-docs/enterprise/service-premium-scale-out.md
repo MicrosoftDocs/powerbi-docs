@@ -11,7 +11,7 @@ ms.date: 07/25/2023
 LocalizationGroup: Premium
 ---
 
-# Power BI dataset scale-out (preview)
+# Power BI dataset scale-out
 
 > [!IMPORTANT]
 > Power BI dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
@@ -21,9 +21,9 @@ Dataset scale-out helps Power BI deliver fast performance while your reports and
 > [!NOTE]
 > During PREVIEW, dataset scale-out creates only one read-only replica. When generally available, the maximum number of read-only replicas is determined by your Premium capacity.
 
-When Power BI creates read-only replicas, it separates them from the primary read-write dataset. The read-only replicas serve Power BI report and dashboard queries, and the read-write dataset is used when write and refresh operations are performed. During write and refresh operations, the read-only replicas continue to serve your reports and dashboard queries without being disrupted. When needed, the read-only and read-write datasets are synchronized so that the read-only replicas are kept up-to-date. By using this method, Power BI dataset scale-out reduces the impact of dataset write and refresh operations on your capacity.
+When Power BI creates read-only replicas, it separates them from the primary read-write dataset. The read-only replicas serve Power BI report and dashboard queries, and the read-write dataset is used when write and refresh operations are performed. During write and refresh operations, the read-only replicas continue to serve your reports and dashboard queries without being disrupted. By default, the read-only and read-write datasets are automatically synchronized so that the read-only replicas are kept up-to-date. However, you can disable automatic sync, and choose to synchronize manually at the command line or by script.
 
-Only applications using the XMLA endpoint and advanced APIs connect to the primary read-write dataset. All other operations connect to a read-only dataset replica. The following table lists the required synchronization for each refresh method, when Power BI dataset scale-out is enabled:
+The following table lists the required synchronization for each refresh method, when Power BI dataset scale-out is enabled:
 
 | Refresh method    | Sync                 |
 |-------------------|----------------------|
@@ -47,7 +47,7 @@ By default, Power BI dataset scale-out is enabled provided the following prerequ
 
 * Your workspace is configured to use the [Large datasets](service-premium-large-models.md) storage format.
 
-* To manage datasets by using the REST API, [Power BI Management cmdlets](/powershell/power-bi/overview?view=powerbi-ps). Install by opening PowerShell in Administrator mode, and running the command:
+* To manage datasets by using the REST API, use [Power BI Management cmdlets](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true). Install by opening PowerShell in Administrator mode, and running the command:
 
     ```powershell
     Install-Module -Name MicrosoftPowerBIMgmt

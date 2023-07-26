@@ -11,14 +11,14 @@ ms.date: 07/25/2023
 LocalizationGroup: Premium
 ---
 
-# Configure Power BI dataset scale-out (preview)
+# Configure dataset scale-out
 
 > [!IMPORTANT]
 > Power BI dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-This article describes using Power BI REST APIs to configure scale-out for datasets.
+This article describes using the Power BI REST APIs to configure dataset scale-out.
 
-Before configuring scale-out for datasets, be sure to read the [Power BI dataset scale-out](service-premium-scale-out.md) overview.
+Before configuring dataset scale-out, be sure to read the [Power BI dataset scale-out](service-premium-scale-out.md) overview.
 
 ## Get datasetId
 
@@ -145,7 +145,7 @@ Invoke-PowerBIRestMethod -Url "groups/$workspaceId/datasets/$datasetId" -Method 
 > [Power BI dataset scale-out](service-premium-scale-out.md)
 
 > [!div class="nextstepaction"]
-> [Tutorial: Test Power BI dataset scale-out](service-premium-scale-out-test.md)
+> [Tutorial: Test dataset scale-out](service-premium-scale-out-test.md)
 
 > [!div class="nextstepaction"]
 > [Sync a read-only replica](service-premium-scale-out-sync-replica.md)

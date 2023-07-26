@@ -184,16 +184,18 @@
       href: service-security-private-links.md
     - name: Configure mobile apps with Intune
       href: service-admin-mobile-intune.md   
-  - name: Power BI Scale-Out
+  - name: Power BI Scale-Out (preview)
     expanded: false
     items:
-    - name: Power BI Dataset Scale-Out
+    - name: Power BI dataset scale-out 
       href: service-premium-scale-out.md
-    - name: Test Power BI Dataset Scale-Out
+    - name: Configure dataset scale-out
+      href: service-premium-scale-out-configure.md
+    - name: Test dataset scale-out
       href: service-premium-scale-out-test.md
-    - name: Sync a read-only scale-out replica   
+    - name: Sync a read-only replica   
       href: service-premium-scale-out-sync-replica.md  
-    - name: Compare scale-out dataset copies      
+    - name: Compare dataset scale-out replicas      
       href: service-premium-scale-out-app.md                     
   - name: Automation tools
     expanded: false

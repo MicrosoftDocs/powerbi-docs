@@ -1,5 +1,5 @@
 ---
-title: Sync a Power BI dataset scale-out read-only replica
+title: Synchronize a Power BI dataset scale-out read-only replica
 description: Learn how to sync a Power BI dataset replica when using the Power BI dataset scale-out feature
 author: KesemSharabi
 ms.author: kesharab
@@ -11,7 +11,7 @@ ms.date: 07/25/2023
 LocalizationGroup: Premium
 ---
 
-# Sync a read-only replica
+# Synchronize a read-only replica
 
 > [!IMPORTANT]
 > Power BI dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
@@ -163,10 +163,10 @@ Follow these steps to sync the replicas by using Windows PowerShell:
 > [Power BI dataset scale-out](service-premium-scale-out.md)
 
 > [!div class="nextstepaction"]
-> [Configure Power BI dataset scale-out](service-premium-scale-out-configure.md)
+> [Configure dataset scale-out](service-premium-scale-out-configure.md)
 
 > [!div class="nextstepaction"]
-> [Tutorial: Test Power BI dataset scale-out](service-premium-scale-out-test.md)
+> [Tutorial: Test dataset scale-out](service-premium-scale-out-test.md)
 
 > [!div class="nextstepaction"]
 > [Compare dataset scale-out replicas](service-premium-scale-out-app.md)
