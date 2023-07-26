@@ -147,7 +147,7 @@ When you select a theme, that theme is applied to the entire report page. There 
 
 1. Let's change the theme for our report. In the **Power BI** section, select the **Colorblind safe** theme. This theme colors all elements in the visual to ensure all content is readable and not hidden as a result of color blindness.
 
-   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-themes-color-bind-safe.png" alt-text="Screenshot that shows how to change the theme for a report in Power BI Desktop.":::
+   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-themes-color-blind-safe.png" alt-text="Screenshot that shows how to change the theme for a report in Power BI Desktop.":::
 
    Power BI updates the report view to use the color-bind safe theme:
 
@@ -161,13 +161,13 @@ Power BI lets you format the Q&A visual, including the question field and how to
 
    In this example, we configure settings in the **Question field** section. We add a gray background for text in the question field and change the underline colors for accepted and unrecognized terms.
 
-   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-q-and-a-format-visual.png" alt-text="Screenshot that shows how to configure some visual formatting options, including the question field and text underline colors." border="false":::
+   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-qna-format-visual.png" alt-text="Screenshot that shows how to configure some visual formatting options, including the question field and text underline colors." border="false":::
    
 1. Now select the **General** section on the **Visualizations** > **Format** pane, and scan the options. 
    
    In this example, we adjust settings in the **Title** section. We add the title "VanArsdel revenue by year" and center the text on a cyan blue background.
 
-   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-q-and-a-format-general.png" alt-text="Screenshot that shows how to configure some general formatting options, including the visual title." border="false":::
+   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-qna-format-general.png" alt-text="Screenshot that shows how to configure some general formatting options, including the visual title." border="false":::
 
 Here's what our updates look like in the Q&A visual on the report canvas. There's an unrecognized term "revenue" shown with a double underline in purple. Power BI indicates a warning for the term "VansArsdel" by applying a dotted underline in orange. Accepted terms are underlined in cyan blue.
 
@@ -195,11 +195,11 @@ At this point, you have a Q&A visual that displays data as a clustered column ch
 
 Select the gear icon to open the Q&A visual **Tooling** pane.
 
-:::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling.png" alt-text="Screenshot that shows the Q&A visual with the Tooling icon selected.":::
+:::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-qna-tooling.png" alt-text="Screenshot that shows the Q&A visual with the Tooling icon selected.":::
 
 Use the Tooling pane to teach Q&A terms it doesn't recognize, to manage those terms, and to manage the suggested questions for this dataset and report. In the Tooling pane, you can also review questions that users have asked in this Q&A visual and see questions that users have flagged. To learn more, see [Intro to Q&A tooling to train Power BI Q&A](../natural-language/q-and-a-tooling-intro.md).
 
-:::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling-pane.png" alt-text="The Q&A Tooling pane.":::
+:::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-qna-tooling-pane.png" alt-text="The Q&A Tooling pane.":::
 
 ## Considerations and troubleshooting
 
