@@ -39,13 +39,20 @@ Radial gauges are a great choice in many scenarios:
 
 ## Prerequisites
 
-Review the following prerequisites for using radial gauge charts in Power BI Desktop or the Power BI service.
+If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both of you don't have individual Power BI Pro licenses, you need to save the report to a workspace in a Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+
+## Download the sample data
+
+To follow along with the procedure, download the Financial Sample Excel file. Then you can open it either in Power BI Desktop or in the Power BI service. See the article [Download the Financial Sample Excel workbook for Power BI](../create-reports/sample-financial-download.md) for details. 
+
+
+
+
+## Create a gauge chart
+
+Let's begin by creating a simple radial gauge chart in Power BI. We can track gross sales by using data from the Financial Sample Excel file.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
-
-This tutorial uses the Financial Sample Excel file.
-
-1. Download the [Financial Sample Excel file](https://go.microsoft.com/fwlink/?LinkID=521962) to your desktop.
 
 1. In Power BI Desktop, select **File** > **Open report**.
 
@@ -57,40 +64,16 @@ This tutorial uses the Financial Sample Excel file.
 
 # [Power BI service](#tab/powerbi-service)
 
-This tutorial uses the Financial Sample in the Power BI service.
+1. Open the Financial Sample Excel file in Excel, and on the **File** menu, select **Publish** > **Publish to Power BI**.
 
-1. Sign in to the Power BI service (`app.powerbi.com`).
+1. Select **Export workbook data to Power BI**.
 
-1. Select **Learn** in the navigation pane.
+1. You may need to sign in to the Power BI service (`app.powerbi.com`). Select **Go to Power BI**.
 
-1. On the **Learning center** page, under **Sample reports**, locate and select the **Financial Sample** to download it. The sample opens in report view.
-
-   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-financial-sample.png" alt-text="Screenshot that shows the Financial Sample open in report view in the Power BI service." lightbox="media/power-bi-visualization-radial-gauge-charts/power-bi-financial-sample-expanded.png" border="false":::
-
-   <!--- REVIEWERS: The link in the following Note will work after PR 10501 is merged into the repo. ---------------
-
-   > [!NOTE]
-   > If you don't see the **Financial Sample** listed under **Sample reports**, follow the steps in [Get started creating in the Power BI service > Add data to create a report](../fundamentals/service-get-started#step-1-add-data-to-create-a-report) to load the sample data into Power BI service. 
-
-   -->
-
-1. At the top, select **Edit** to open the Report editor.
-
-   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-edit-report.png" alt-text="Screenshot that shows how to select Edit to modify the report in the Power BI service." border="false":::
-
-1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
-
+    The Power BI service opens in Edit mode with a blank page and the Financials data in the Data pane.
 ---
 
-> [!NOTE]
-> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
-
-
-## Create a gauge chart
-
-Let's begin by creating a simple radial gauge chart in Power BI. We can track gross sales by using data from the Financial Sample Excel file.
-
-1. On the **Data** pane, expand **financials** and select the **Gross Sales** checkbox.
+1. In the **Data** pane, expand **financials** and select the **Gross Sales** checkbox.
 
    By default, Power BI creates a clustered column chart to display the data. On the **Visualizations** > **Build** visual pane, the **Y-axis** option is aligned to the **Sum of Gross Sales** value. Notice that by default, Power BI shows the _sum_ value for the selected field.
 
