@@ -71,27 +71,33 @@ If you see an error when creating a Q&A visual, be sure to check the [Q&A limita
 > [!NOTE]
 > If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
 
-## Create a Q&A visual using a suggested question
+## Create a Q&A visual with a suggested question
 
-In this exercise, we'll select one of the suggested questions to create our Q&A visual. 
+In this exercise, we select a suggested question from Power BI to create a custom Q&A visual. 
 
-1. Start on a blank report page and select the Q&A visual icon from the Visualizations pane.
+1. Start on a blank report page and select the **Q&A visual** icon from the **Visualizations** > **Build** visual pane.
 
-   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-icon.png" alt-text="Visualization pane with Q&A visual icon outlined.":::
+   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-icon.png" alt-text="Screenshot that shows how to select the Q&A visual on the Visualizations pane in Power BI.":::
 
-1. Drag the border to resize the visual.
+   Power BI creates a new Q&A visual and supplies several Q&A suggestions to get you started, such as **top geo states by total OTHER units**.
 
-   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-qna.png" alt-text="Q&A visual on report canvas.":::
+1. Select the Q&A visual and drag the border to resize the visual.
 
-1. To create the visual, select one of the suggested questions or start typing in the question box. In this example, we've selected **top geo states by sum of revenue**. Power BI does its best to select which visual type to use. In this case, it's a map.
+   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-qna.png" alt-text="Screenshot of the resized Q&A visual on the report canvas in Power BI.":::
 
-   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-map.png" alt-text="Q&A visual map.":::
+1. To customize your visual, select a suggested question or enter text in the question box. In this example, we select the suggestion **top geo states by sum of revenue**.
+   
+   Power BI determines the appropriate visual type based on the specified suggestion or entered text. In our example, Power BI determines that a map visual is best suited.
 
-   But you can tell Power BI which visual type to use by adding it to your natural language query. Keep in mind that not all visual types will work or make sense with your data. For example, this data wouldn't produce a meaningful scatter chart. But it works as a filled map.
+   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-map.png" alt-text="Screenshot that shows the Q&A visual map created by Power BI to display the specific Q&A." border="false":::
 
-   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-specify-map.png" alt-text="Q&A visual as a filled map.":::
+   You can also instruct Power BI to use a specific visual type by adding the type to the text you enter in the question box. (Text entered in the question box is referred to as a _natural language query_.)
+   
+   Keep in mind that not all visual types are useful for presenting all types of data. Certain visual types only make sense for specific types of data. For example, the data in our example isn't meaningful on a scatter chart, but it's helpful when presented as a filled map.
 
-## Create a Q&A visual using a natural language query
+   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-specify-map.png" alt-text="Screenshot that shows the Q&A visual converted to a filled map on the report canvas." border="false":::
+
+## Create a Q&A visual with a natural language query
 
 In the example above, we selected one of the suggested questions to create our Q&A visual.  In this exercise, we'll type our own question. As we type our question, Power BI helps us with autocomplete, suggestion, and feedback.
 
@@ -157,9 +163,9 @@ If you're using the ***Power BI Service***, you can now pin the visual to a dash
 
 ## Advanced features of the Q&A visual
 
-Selecting the cog icon opens the Q&A visual Tooling pane.
+Select the gear icon to open the Q&A visual **Tooling** pane.
 
-:::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling.png" alt-text="Q&A visual with Tooling icon selected.":::
+:::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling.png" alt-text="Screenshot that shows the Q&A visual with the Tooling icon selected.":::
 
 Use the Tooling pane to teach Q&A terms it doesn't recognize, to manage those terms, and to manage the suggested questions for this dataset and report. In the Tooling pane, you can also review questions that users have asked in this Q&A visual and see questions that users have flagged. To learn more, see [Intro to Q&A tooling to train Power BI Q&A](../natural-language/q-and-a-tooling-intro.md).
 
@@ -167,11 +173,11 @@ Use the Tooling pane to teach Q&A terms it doesn't recognize, to manage those te
 
 ## Considerations and troubleshooting
 
-The Q&A visual integrates with Office and Bing to attempt to match unrecognized common words with fields in your dataset.  
+The Q&A visual integrates with Microsoft Office and Bing to attempt to match unrecognized common words with fields in your dataset.  
 
 ## Next steps
 
 There are several ways you can integrate natural language. For more information, see the following articles:
 
-- [Q&A Tooling](../natural-language/q-and-a-tooling-intro.md)
-- [Q&A Best Practices](../natural-language/q-and-a-best-practices.md)
+- [Q&A tooling](../natural-language/q-and-a-tooling-intro.md)
+- [Q&A best practices](../natural-language/q-and-a-best-practices.md)
