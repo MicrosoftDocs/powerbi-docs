@@ -14,9 +14,9 @@ LocalizationGroup: Premium
 # Synchronize a read-only replica
 
 > [!IMPORTANT]
-> Power BI dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-This article describes how to synchronize a Power BI dataset scale-out read-only replica by using PowerShell at the command line or by script.
+This article describes how to synchronize a dataset scale-out read-only replica by using PowerShell at the command line or by script.
 
 When you're working against the primary read-write dataset, and dataset users are using the read-only replicas, you can perform dataset metadata updates and refreshes without affecting them. However, changes to the dataset model and refreshes take place in the primary dataset. To copy the changes to the read-only dataset, it must be synchronized with the read-write dataset.
 
@@ -155,7 +155,6 @@ Follow these steps to sync the replicas by using Windows PowerShell:
     The sync status information in the output indicates the read-write dataset and the read-only replicas are out of sync, which is expected because you just triggered the sync.  
 
 6. To verify the sync is complete, run the `syncStatus` command in *step 4* again. You might need to run the command a few times depending on the length of the time that's required to sync the dataset copies. When the sync is complete, check the values of `syncStartTime` and `syncEndTime ` to see how long the sync took.  
-
 
 ## Next steps
 

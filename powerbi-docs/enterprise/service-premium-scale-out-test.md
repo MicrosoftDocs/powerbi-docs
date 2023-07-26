@@ -14,9 +14,9 @@ LocalizationGroup: Premium
 # Test dataset scale-out
 
 > [!IMPORTANT]
-> Power BI dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-This article describes how you can test the Power BI dataset scale-out feature.
+This article describes how you can test the dataset scale-out feature.
 
 ## Step 1 - Create a scale-out query
 
@@ -100,7 +100,7 @@ By default, Power BI Desktop connects to a read-only replica. To connect to the 
 
 ## Step 4 - Validate the read/write connection (optional)
 
-If you followed [step 3](#step-3---connect-to-the-readwrite-dataset-copy-optional), you're connected to the read-write dataset. You can validate this connection by following these steps:
+If you followed step 3, you're connected to the read-write dataset. You can validate this connection by following these steps:
 
 1. In SQL Server Management Studio (SSMS), right-click your dataset, select **Process Database**.
 

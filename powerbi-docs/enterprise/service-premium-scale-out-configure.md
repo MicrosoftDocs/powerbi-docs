@@ -14,7 +14,7 @@ LocalizationGroup: Premium
 # Configure dataset scale-out
 
 > [!IMPORTANT]
-> Power BI dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 This article describes using the Power BI REST APIs to configure dataset scale-out.
 

@@ -184,10 +184,10 @@
       href: service-security-private-links.md
     - name: Configure mobile apps with Intune
       href: service-admin-mobile-intune.md   
-  - name: Power BI Scale-Out (preview)
+  - name: Dataset scale-out (preview)
     expanded: false
     items:
-    - name: Power BI dataset scale-out 
+    - name: Dataset scale-out overview
       href: service-premium-scale-out.md
     - name: Configure dataset scale-out
       href: service-premium-scale-out-configure.md

@@ -14,7 +14,7 @@ LocalizationGroup: Premium
 # Power BI dataset scale-out
 
 > [!IMPORTANT]
-> Power BI dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 Dataset scale-out helps Power BI deliver fast performance while your reports and dashboards are consumed by a large audience. Dataset scale-out uses your Premium capacity to host one or more read-only *replicas* of your *primary* dataset. By increasing throughput, the read-only replicas ensure performance doesn’t slow down when multiple users submit queries at the same time.
 
@@ -35,7 +35,7 @@ The following table lists the required synchronization for each refresh method, 
 
 ## Prerequisites
 
-By default, Power BI dataset scale-out is enabled provided the following prerequisites are met:
+By default, dataset scale-out is enabled provided the following prerequisites are met:
 
 * The **Scale-out queries for large datasets** in your tenant settings is enabled (default).
 
@@ -67,7 +67,7 @@ By default, Power BI dataset scale-out is enabled provided the following prerequ
 
 ## Configure scale-out for a dataset
 
-Power BI dataset scale-out is enabled by default for your tenant. To learn how to get scale-out status, enable, or disable scale-out for a dataset by using PowerShell, see [Configure Power BI dataset scale-out](service-premium-scale-out-configure.md).
+Dataset scale-out is enabled by default for your tenant. To learn how to get scale-out status, enable, or disable scale-out for a dataset by using PowerShell, see [Configure dataset scale-out](service-premium-scale-out-configure.md).
 
 ## Connect to a specific dataset type
 
@@ -90,11 +90,11 @@ You can connect to a read-only dataset or read-write replica by appending one of
 
 Power BI dataset scale-out is enabled by default for each tenant. Power BI tenant admins can disable this setting. To disable dataset scale-out for the tenant, do the following:
 
-1. Go to your [tenant settings](./../admin/service-admin-portal-about-tenant-settings.md)
+1. Go to your [tenant settings](./../admin/service-admin-portal-about-tenant-settings.md).
 
 2. In **Scale-out settings**, expand **Scale-out queries for large datasets**.
 
-3. Toggle the switch so that it shows **Disabled**.
+3. Toggle the switch to **Disabled**.
 
 4. Select **Apply**.
 
