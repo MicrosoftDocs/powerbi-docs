@@ -8,7 +8,7 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/12/2023
+ms.date: 07/26/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -114,21 +114,19 @@ You can change the sort order to view different perspectives of the data.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png" alt-text="Screenshot that shows how to configure sort axis settings for the waterfall chart." border="false":::
    
-   This action changes the sort order of the FiscalMonth category to *descending* order by month. Notice that August has the largest value and January has the smallest.
+   This action changes the sort order of the FiscalMonth category to *descending* by month. Notice that August has the largest variance and January has the smallest variance.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort-fiscal-month-options.png" alt-text="Illustration that compares the waterfall charts for FiscalMonth data in descending and ascending sort order." lightbox="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort-fiscal-month-options.png"  border="false":::
 
-1. Open the **More options (...)** > **Sort axis** menu again.
+1. Open the **More options (...)** > **Sort axis** menu.
 
    Notice the checkmark next to **FiscalMonth** and **Sort descending**. A checkmark appears next to options represented in the chart visualization.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-selected-sort-axis.png" alt-text="Screenshot that shows check marks next to the selected sort items for the waterfall chart." border="false":::
 
-   To remove an option from the chart visualization, select the menu item again and the checkmark clears.
+1. On the **More options (...)** > **Sort axis** menu, select **Total Sales Variance**.
 
-1. Open the **More options (...)** > **Sort axis** menu again, and select **Total Sales Variance**.
-
-   This action changes the chart focus from the FiscalMonth category to the Total Sales Variance. The chart updates to show the Total Sales Variance data in descending order. In this view, the month of March has the largest positive variance and July has the largest negative variance.
+   This action changes the sort from the FiscalMonth category to the Total Sales Variance. The chart updates to show the Total Sales Variance data in descending order. In this view, the month of March has the largest positive variance and July has the largest negative variance.
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort-total-variance.png" alt-text="Illustration that shows the waterfall chart for the Total Sales Variance data over time in descending order." border="false":::
 
