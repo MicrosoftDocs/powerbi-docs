@@ -123,7 +123,7 @@ If you followed step 3, you're connected to the read-write dataset. You can vali
 > [Configure dataset scale-out](service-premium-scale-out-configure.md)
 
 > [!div class="nextstepaction"]
-> [Sync a read-only replica](service-premium-scale-out-sync-replica.md)
+> [Synchronize scale-out replicas](service-premium-scale-out-sync-replica.md)
 
 > [!div class="nextstepaction"]
 > [Compare dataset scale-out replicas](service-premium-scale-out-app.md)

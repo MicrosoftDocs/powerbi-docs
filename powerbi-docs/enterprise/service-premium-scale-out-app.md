@@ -148,4 +148,4 @@ Console.Read();
 > [Tutorial: Test dataset scale-out](service-premium-scale-out-test.md)
 
 > [!div class="nextstepaction"]
-> [Synchronize a read-only replica](service-premium-scale-out-sync-replica.md)
+> [Synchronize scale-out replicas](service-premium-scale-out-sync-replica.md)

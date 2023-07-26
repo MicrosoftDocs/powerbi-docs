@@ -193,7 +193,7 @@
       href: service-premium-scale-out-configure.md
     - name: Test dataset scale-out
       href: service-premium-scale-out-test.md
-    - name: Sync a read-only replica   
+    - name: Synchronize scale-out replicas   
       href: service-premium-scale-out-sync-replica.md  
     - name: Compare dataset scale-out replicas      
       href: service-premium-scale-out-app.md                     

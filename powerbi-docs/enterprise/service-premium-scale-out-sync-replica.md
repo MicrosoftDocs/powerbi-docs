@@ -1,6 +1,6 @@
 ---
-title: Synchronize a Power BI dataset scale-out read-only replica
-description: Learn how to sync a Power BI dataset replica when using the Power BI dataset scale-out feature
+title: Synchronize a Power BI dataset scale-out replicas
+description: Learn how to sync a Power BI dataset replicas when using the Power BI dataset scale-out feature
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -11,14 +11,14 @@ ms.date: 07/25/2023
 LocalizationGroup: Premium
 ---
 
-# Synchronize a read-only replica
+# Synchronize scale-out replicas
 
 > [!IMPORTANT]
 > Dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-This article describes how to synchronize a dataset scale-out read-only replica by using PowerShell at the command line or by script.
+This article describes how to synchronize a dataset scale-outreplicas by using PowerShell at the command line or by script.
 
-When you're working against the primary read-write dataset, and dataset users are using the read-only replicas, you can perform dataset metadata updates and refreshes without affecting them. However, changes to the dataset model and refreshes take place in the primary dataset. To copy the changes to the read-only dataset, it must be synchronized with the read-write dataset.
+When you're working against the primary read-write dataset, and dataset users are using the read-only replicas, you can perform dataset metadata updates and refreshes without affecting them. However, changes to the dataset model and refreshes take place in the primary dataset. To copy the changes to the read-only dataset replicas, it must be synchronized with the read-write dataset.
 
 By default, the `autoSyncReadOnlyReplicas` parameter is set to `true` - Power BI synchronizes the dataset replicas automatically. You can disable auto sync by setting `autoSyncReadOnlyReplicas` to `false`. However, you can choose to sync manually by using `syncStatus` and `sync` REST APIs.
 
