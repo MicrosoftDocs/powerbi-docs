@@ -239,11 +239,11 @@ Does your scatter chart have only one data point that aggregates all of the valu
 
 In this scenario, you can add a field to the **Values** option for the chart on the **Visualizations** > **Build visual** pane. The field instructs Power BI on how to group the values. The field must be unique for each point you want to plot. You can provide a row number or ID field. In the following example, we set the **Values** option to the **RowNum** ID field from the dataset. 
 
-:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot-1.png" alt-text="Screenshot of a scatter chart with the RowNum field added to the Values option." border="false":::
+:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot-1.png" alt-text="Screenshot of a scatter chart with the RowNum field added to the Values option." border="true":::
 
 If your data doesn't include a specific row number or ID, you can create a field to concatenate your x and y values together. The field must be unique for each point you want to plot. In the following example, we set the **Values** option to a new field named **TempTime** to hold the concatenated values.
 
-:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot-2.png" alt-text="Screenshot of a scatter chart with a new field named TempTime added to the Values option." border="false":::
+:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot-2.png" alt-text="Screenshot of a scatter chart with a new field named TempTime added to the Values option." border="true":::
 
 To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../create-reports/desktop-add-custom-column.md) to your dataset. Then add this column to your visual's **Values** option.
 
