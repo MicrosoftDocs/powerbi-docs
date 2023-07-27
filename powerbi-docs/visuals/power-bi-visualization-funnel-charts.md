@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-A funnel chart helps you visualize a linear process that has sequential connected stages. A common use for a funnel chart is to track sales customers through stages, such as Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
+A funnel chart helps you visualize a linear process that has sequential, connected stages. A common use for a funnel chart is to track sales customers through stages, such as Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
 
 Each funnel stage represents a percentage of the total. In most cases, a funnel chart is shaped like a funnel where the first stage is the largest and each subsequent stage is smaller than its predecessor. A pear-shaped funnel is also useful and can help identify a problem in the process. Typically, the first stage (called the _intake_ stage) is the largest.
 
@@ -37,7 +37,6 @@ Funnel charts are a great choice for many scenarios:
 - Track the progress and success of click-through advertising and marketing campaigns.
 
 Watch the following video to see how to create a funnel chart by using data from the Sales and Marketing sample.
-
 <br><iframe width="560" height="315" src="https://www.youtube.com/embed/qKRZPBnaUXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 > [!NOTE]  
