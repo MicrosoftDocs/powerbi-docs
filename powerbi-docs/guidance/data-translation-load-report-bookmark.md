@@ -24,7 +24,7 @@ If you plan to publish a Power BI report with data translations for access by us
 
    :::image type="content" source="./media/data-translation-load-report-bookmark/set-language-bookmark-data.png" alt-text="Screenshot shows the context menu for a bookmark with Data selected.":::
 
-1. Supply  a second parameter in the report URL to apply the bookmark for a specific language.
+1. To apply the bookmark for a specific language, supply a second parameter in the report URL.
 
    ```http
    ?language=es&bookmarkGuid=Bookmark856920573e02a8ab1c2a

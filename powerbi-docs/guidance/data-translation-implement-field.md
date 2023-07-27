@@ -87,7 +87,7 @@ Up to this point, you've looked at the field parameter in Report view. Now open 
 
 The names of the columns in a field parameter are generated based on the name you give to the top-level field parameter. You should rename the columns to simplify the data model and to improve readability.
 
-1. Double-click a field in the field parameter node to rename it. Rename **Translated Product Names** to *Product*.
+1. Double-click a field in the field parameter node. Rename **Translated Product Names** to *Product*.
 
    :::image type="content" source="./media/data-translation-implement-field/report-view-product.png" alt-text="Screenshot shows a table in the Data view with the column name changed to Product." lightbox="./media/data-translation-implement-field/report-view-product.png":::
 
@@ -97,7 +97,7 @@ The names of the columns in a field parameter are generated based on the name yo
 
 ## Add a language ID column
 
-The field parameter is a table with three columns named **Product**, **Fields** and **SortOrder**. The next step is to add a fourth column with a language identifier to enable filtering by language. You can add the column by modifying the DAX expression for the field parameter.
+The field parameter is a table with three columns named **Product**, **Fields**, and **SortOrder**. The next step is to add a fourth column with a language identifier to enable filtering by language. You can add the column by modifying the DAX expression for the field parameter.
 
 1. Add a fourth string parameter to the row for each language with the lower-case two character language identifier.
 

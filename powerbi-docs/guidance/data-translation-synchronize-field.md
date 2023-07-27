@@ -19,7 +19,7 @@ A field parameter can support translations for a column in a multiple-language r
 1. In the **Parameters** dialog box, enter the name *Translated Category Names*.
 1. Populate the fields with the columns from the **Products** table for the desired languages.
 
-   :::image type="content" source="./media/data-translation-synchronize-field/parameter-field-category.png" alt-text="Screenshot shows the Parameters dialog box with a name added and several fields selected." lightbox="./media/data-translation-synchronize-field/parameter-field-category.png.png":::
+   :::image type="content" source="./media/data-translation-synchronize-field/parameter-field-category.png" alt-text="Screenshot shows the Parameters dialog box with a name added and several fields selected." lightbox="./media/data-translation-synchronize-field/parameter-field-category.png":::
 
 1. Select **Create**.
 

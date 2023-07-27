@@ -106,7 +106,7 @@ When you run these two queries for the first time, they create two tables in the
 
 ## Integrate translation tables
 
-The next step is to integrate the two tables into the data model with a **Calendar** table. The **Calendar** table is a calculated table based on the following DAX expression.
+The next step is to integrate the two tables into the data model with a **Calendar** table. The **Calendar** table is a calculated table based on the following Data Analysis Expressions (DAX) expression.
 
 :::image type="content" source="./media/data-translation-calendar-table/dax-expression-table.png" alt-text="Screenshot shows the table with its DAX code." lightbox="./media/data-translation-calendar-table/dax-expression-table.png":::
 
