@@ -37,7 +37,7 @@ When you receive the translation sheet back from the translator with updates, fo
 
 ## Import master translation sheet
 
-The usual workflow is to import updated translation sheets that only contain translations for a single language. However, you can also import a master translation sheet which has multiple columns for secondary languages. This approach provides a way to back up and restore the work you have done with translations on a project-wide basis. You can also use this approach to reuse translations across multiple projects.
+The usual workflow is to import updated translation sheets that only contain translations for a single language. However, you can also import a master translation sheet that has multiple columns for secondary languages. This approach provides a way to back up and restore the work you have done with translations on a project-wide basis. You can also use this approach to reuse translations across multiple projects.
 
 Here's a simple example. After you generate the current master translation sheet for a project, imagine you delete French as a language from the project by right-clicking the **French [fr-FR]** column header and selecting **Delete This Language From Data Model**.
 
