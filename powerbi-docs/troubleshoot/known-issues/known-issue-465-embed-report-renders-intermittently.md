@@ -3,8 +3,9 @@ title: Known issue - report Embed edit app bar intermittently not rendered
 description: A known issue is posted where Report Embed edit app bar Intermittently not rendered
 author: mihart
 ms.author: mihart
-ms.author: anirmale
-ms.topic: troubleshooting   
+ms.topic: troubleshooting  
+ms.service: powerbi
+ms.subservice: pbi-troubleshooting 
 ms.date: 07/27/2023
 ms.custom: known-issue-465
 ---
