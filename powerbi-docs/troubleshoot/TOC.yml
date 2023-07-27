@@ -15,8 +15,8 @@
       href: known-issues/known-issue-461-scheduled-refresh-dataflow-hangs-intermittently.md   
     - name: deployment pipeline stuck in loading
       href: known-issues/known-issue-443-deploy-pipeline-stuck-to-load.md  
-    - name: Workspace setting- "large dataset storage format" isn't persistent
-      href: known-issues/known-issue-432-large-dataset-storage-format-not-consistent.md
+    - name: Workspace settings- "large dataset storage format" isn't persistent
+      href: known-issues/known-issue-432-large-dataset-storage-settings-not-consistent.md
     - name: Tenant admin settings may not save correctly
       href: known-issues/known-issue-427-tenant-admin-settings-may-not-save-correctly.md
     - name: New org app content doesn't show in first load
