@@ -55,6 +55,12 @@ Another way to locate content quickly is to use the content list **Filter**. Dis
 
 :::image type="content" source="./media/end-user-search-sort/power-bi-sort-filters-new.png" alt-text="Screenshot of the filter on a Recent content list.":::
 
+## Limitations
+* Search is not enabled for B2B users
+* Search currently supports only English characters
+* Global search is currently supported only in Public cloud
+
+
 ## Next steps
 
 - [Change how a chart is sorted in a Power BI report](end-user-change-sort.md)

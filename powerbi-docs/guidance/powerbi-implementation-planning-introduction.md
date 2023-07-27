@@ -92,7 +92,7 @@ This series is certain to be helpful for organizations that are in their early s
 
 ## Acknowledgments
 
-This series of articles was written by Melissa Coates, Data Platform MVP and owner of [Coates Data Strategies](https://www.coatesdatastrategies.com/) with significant contributions from Peter Myers, Matthew Roche, Alex Powers, and Chris Webb.
+The Power BI implementation planning articles are written by Melissa Coates, Kurt Buhler, and Peter Myers. Matthew Roche, from the Fabric Customer Advisory Team, provides strategic guidance and feedback to the subject matter experts.
 
 ## Next steps
 
