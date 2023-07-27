@@ -10,7 +10,11 @@ ms.topic: how-to
 ms.date: 03/22/2023
 LocalizationGroup: Data from files
 ---
+
 # Introduction to dataflows and self-service data prep
+
+>[!TIP]
+>Try out Dataflows Gen2 in [Microsoft Fabric Data Factory](/fabric/data-factory/), an all-in-one analytics solution for enterprises. [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview) covers everything from data movement to data science, real-time analytics, business intelligence, and reporting. Learn how to [start a new trial](/fabric/get-started/fabric-trial) for free!
 
 As data volume continues to grow, so does the challenge of wrangling that data into well-formed, actionable information. We want data that’s ready for analytics, to populate visuals, reports, and dashboards, so we can quickly turn our volumes of data into actionable insights. With self-service data prep for big data in Power BI, you can go from data to Power BI insights with just a few actions.
 
