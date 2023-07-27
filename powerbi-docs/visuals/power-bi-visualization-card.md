@@ -69,7 +69,7 @@ The first method to create a card is to use the report editor in Power BI.
 
    :::image type="content" source="media/power-bi-visualization-card/power-bi-overview-chart.png" alt-text="Screenshot showing an example number tile chart.":::
 
-1. In the Visualizations pane, select the **Card** icon.
+1. In the **Visualizations** pane, select the **Card** icon.
 
    :::image type="content" source="media/power-bi-visualization-card/power-bi-card-visualization.png" alt-text="Screenshot showing an example number title card.":::
 
@@ -79,7 +79,7 @@ You've now successfully created a card with the report editor.
 
 The Q&A question box is another option for you to use when creating a card. The Q&A question box is available in Power BI report view.
 
-1. In the Visualizations pane, select the **Q&A** icon.
+1. In the **Visualizations** pane, select the **Q&A** icon.
 
    Power BI creates a Q&A visualization with a box for you to "Ask a question about your data."
 
@@ -95,11 +95,14 @@ The Q&A question box is another option for you to use when creating a card. The 
 
    :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-conversion.png" alt-text="Screenshot showing a Q&A visualization with the 'Turn this Q&A result into a standard visual' icon highlighted.":::
 
-Power BI makes the conversion. Notice that the card icon is now highlighted in the Visualizations pane.
+Power BI makes the conversion. Notice that the card icon is now highlighted in the **Visualizations** pane.
 
 :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-card.png" alt-text="Screenshot showing a card example from question method.":::
 
 You've now successfully created a card with the Q&A question box.
+
+> [!NOTE]
+> If you don't see a question box at all, contact your Power BI admin.
 
 ## Format a card
 
@@ -109,7 +112,7 @@ The **Format** section is available when interacting with the card in a report.
 
 1. Start by selecting the paint brush icon at the top of the **Visualizations** pane to open the **Format** section.
 
-   :::image type="content" source="media/power-bi-visualization-card/power-bi-format-card-2.png" alt-text="Screenshot of the paint brush icon in the Format pane.":::
+   :::image type="content" source="media/power-bi-visualization-card/power-bi-format-card-2.png" alt-text="Screenshot of the paint brush icon in the **Format** pane.":::
 
 1. With the card selected, expand **Callout value** and change the **Font**, **Text size**, and **Color**. If you had thousands of stores, you could use **Display units** to show the number of stores by thousands and control the decimal places as well. For example, 125.8 K instead of 125,832.00.
 
@@ -125,10 +128,6 @@ The **Format** section is available when interacting with the card in a report.
    :::image type="content" source="media/power-bi-visualization-card/power-bi-format-color-2.png" alt-text="Screenshot of Background expanded to change color.":::
 
 1. Continue to explore the formatting options until your card is exactly how you'd like it.
-
-## Considerations and troubleshooting
-
-If you don't see a question box at all, contact your Power BI admin.
 
 ## Next steps
 
