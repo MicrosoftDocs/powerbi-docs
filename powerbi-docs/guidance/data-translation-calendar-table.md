@@ -1,6 +1,6 @@
 ---
 title: 
-description: 
+description: Learn how to add translation support in multiple-language reports for text-based columns in calendar tables in Power BI.
 author: maggiesMSFT   
 ms.author: maggies
 ms.service: powerbi
@@ -10,21 +10,21 @@ ms.date: 07/26/2023
 ---
 # Implement data translations for a calendar table
 
-If you're implementing data translations, you can make your users happy by adding translation support for text-based columns in a **Calendar** table such as the names of months and days of the week. For example, you might have added a custom **Calendar** table to your data model, which makes it possible to visualize a breakdown of sales by the month or by the day.
+If you're implementing data translations, you can add translation support for text-based columns in calendar tables. These tables include translations for the names of months or the days of the week. This approach allows you to create visuals that mention days or months.
 
-:::image type="content" source="./media/data-translation-calendar-table/calendar-table.png" alt-text="Image alt text." lightbox="./media/data-translation-calendar-table/calendar-table.png":::
+:::image type="content" source="./media/data-translation-calendar-table/calendar-table.png" alt-text="Screenshot shows report visuals that display the names of months and days." lightbox="./media/data-translation-calendar-table/calendar-table.png":::
 
-To properly implement data translations for columns in a calendar table, you need a strategy to translate month names and day of the week names into the secondary languages you plan to support.
+Translated versions make the visual easy to read in your supported languages.
 
-:::image type="content" source="./media/data-translation-calendar-table/calendar-table-translate.png" alt-text="Image alt text." lightbox="./media/data-translation-calendar-table/calendar-table-translate.png":::
+:::image type="content" source="./media/data-translation-calendar-table/calendar-table-translate.png" alt-text="Screenshot shows report visuals that display the names of months and days localized." lightbox="./media/data-translation-calendar-table/calendar-table-translate.png":::
 
-The strategy presented in this article for implementing **Calendar** table column translations is based on Power Query and the power of the M query language. Power Query provides several built-in functions such as **Date.MonthName** which accept a **Date** parameter and return a text-based calendar name. If your .pbix project has **en-US** as its default language and locale, the following Power Query function call evaluates to a text-based value of **January**.
+The strategy in this article for calendar table column translations uses Power Query and the M query language. Power Query provides built-in functions, such as `Date.MonthName`, which accept a `Date` parameter and return a text-based calendar name. If your .pbix project has **en-US** as its default language and locale, the following Power Query function call evaluates to a text-based value of *January*.
 
 ```powerquery-m
 Date.MonthName( #date(2023, 1, 1) )
 ```
 
-The **Date.MonthName** function accepts an second, optional string parameter to pass a specific language and locale.
+The `Date.MonthName` function accepts an second, optional string parameter to pass a specific language and locale.
 
 ```powerquery-m
 Date.MonthName( #date(2023, 1, 1), "en-US")
@@ -36,15 +36,17 @@ If you want to translate the month name into French, you can pass a text value o
 Date.MonthName( #date(2022, 12, 1), "fr-FR")
 ```
 
-Now, let's revisit the **Languages** table you saw earlier. Now we can reveal why it includes the **DefaultCulture** column.
+## Generate calendar translation table
 
-:::image type="content" source="./media/data-translation-calendar-table/language-table.png" alt-text="Image alt text." lightbox="./media/data-translation-calendar-table/language-table.png":::
+Look at the **Languages** table used in previous examples. It includes a **DefaultCulture** column.
 
-Power Query is built on a functional query language named M that makes it possible to enumerate through the rows of the **Languages** table to discover what languages and what default cultures are supported in the current project. This approach makes it possible to write a query that uses the **Languages** table as its source to generate a calendar translation table with the names of months or weekdays.
+:::image type="content" source="./media/data-translation-calendar-table/language-table.png" alt-text="Screenshot shows the Languages table, which as a default culture column." lightbox="./media/data-translation-calendar-table/language-table.png":::
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/lanaguage-month-day-table.png"    />
+Power Query is built on a functional query language named M. With that language, you can iterate through the rows of the **Languages** table to discover what languages and what default cultures the project supports. You can write a query that uses the **Languages** table as its source to generate a calendar translation table with the names of months or weekdays.
 
-Here's the code listing for the M code used to generate the **Translated Month Names Table**.
+:::image type="content" source="./media/data-translation-calendar-table/lanaguage-month-day-table.png" alt-text="Diagram shows the Languages table used as the source of a Power Query transform to create month and day name tables." lightbox="./media/data-translation-calendar-table/lanaguage-month-day-table.png":::
+
+Here's the M code that generates the **Translated Month Names Table**.
 
 ```powerquery-m
 let
@@ -78,48 +80,56 @@ in
   QueryOutput
 ```
 
-> OK, so maybe this M code is a bit complicated. Don't worry. You're not Chris Webb after all, so  don't feel you need to be able to understand or explain this industrial-strength M code to others. You can simply copy and paste the M code from [**ProductSalesMultiLanguage.pbix**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/ProductSalesMultiLanguage.pbix) whenever you need to add calendar translation tables to your project.
+> [!TIP]
+> You can simply copy and paste the M code from the *ProductSalesMultiLanguage.pbix* sample whenever you need to add calendar translation tables to your project.
 
-If the **Languages** table contains four rows for English, Spanish, French and German, the **Translated Month Names Table** query generates a table with four translation columns as shown in the following screenshot.
+If the **Languages** table contains four rows for English, Spanish, French, and German, the **Translated Month Names Table** query generates a table with four translation columns as shown in the following screenshot.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/lanaguage-month-table.png"   />
+:::image type="content" source="./media/data-translation-calendar-table/lanaguage-month-table.png" alt-text="Screenshot shows Translated Month Names Table query and the table it creates." lightbox="./media/data-translation-calendar-table/lanaguage-month-table.png":::
 
 Likewise, the query named **Translated Day Names Table** generates a table with weekday name translations.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/lanaguage-day-table.png"    />
+:::image type="content" source="./media/data-translation-calendar-table/lanaguage-day-table.png" alt-text="Screenshot shows Translated Day Names Table query and the table it creates." lightbox="./media/data-translation-calendar-table/lanaguage-day-table.png":::
 
-There's an important observation about the two queries named **Translated Month Names Table** and **Translated Day Names Table**. These queries have been written to be generic. In other words, they don't contains any hard-coded column names. This approach lowers ongoing maintenance because these queries don't require any modifications in the future when you add or remove languages from the project. All you need to do is to update the data rows in the query, which generates the **Languages** table and the other two queries named **Translated Month Names Table** and **Translated Day Names Table** automatically adapt to those changes.
+The two queries named **Translated Month Names Table** and **Translated Day Names Table** have been written to be generic. They don't contains any hard-coded column names. These queries don't require any modifications in the future when you add or remove languages from the project. All you need to do is to update the data rows in the query.
 
-:::image type="content" source="./media/data-translation-calendar-table/advanced-editor-language.png" alt-text="Image alt text." lightbox="./media/data-translation-calendar-table/advanced-editor-language.png":::
+:::image type="content" source="./media/data-translation-calendar-table/advanced-editor-language.png" alt-text="Screenshot shows the Advanced Editor with languages selected in the Sort Order block." lightbox="./media/data-translation-calendar-table/advanced-editor-language.png":::
 
-> Once again, always strive to use localize techniques that lower the overhead of adding new languages in the future.
+## Configure sort values
 
-When you run these two queries for the first time, they create two new tables in the dataset with the names **Translated Month Names Table** and **Translated Day Names Table** with a translation column for each language. One more task you have is to configure the sort column for each of the translation columns. For example, all the translation columns in **Translated Month Names Table** should be configured to use the sort column  **MonthNumber**  while all the translations columns in **Translated Day Names Table** should be configured to use the sort column **DayNumber**.
+When you run these two queries for the first time, they create two tables in the dataset with the names **Translated Month Names Table** and **Translated Day Names Table**. There's a translation column for each language. You need to configure the sort column for each of the translation columns:
 
-:::image type="content" source="./media/data-translation-calendar-table/sort-column-month-number.png" alt-text="Image alt text." lightbox="./media/data-translation-calendar-table/sort-column-month-number.png":::
+- Configure the translation columns in **Translated Month Names Table** to use the sort column  **MonthNumber**
+- Configure the translations columns in **Translated Day Names Table** to use the sort column **DayNumber**
 
-You've now seen how to generate the two translation tables named **Translated Month Names Table** and **Translated Day Names Table**. The next step is to integrate these two tables into the data model with a **Calendar** table. The **Calendar** table can be defined as a calculated table based on the following DAX expression.
+:::image type="content" source="./media/data-translation-calendar-table/sort-column-month-number.png" alt-text="Screenshot shows a column of month names being set to sort by month number." lightbox="./media/data-translation-calendar-table/sort-column-month-number.png":::
 
-:::image type="content" source="./media/data-translation-calendar-table/dax-expression-table.png" alt-text="Image alt text." lightbox="./media/data-translation-calendar-table/dax-expression-table.png":::
+## Integrate translation tables
 
-With a **Calendar** table like this, you typically create a relationship between the **Calendar** table and other fact tables such as **Sales** using the **Date** column to create a one-to-many relationship. The relationships created between the **Calendar** table and the two translations tables are based on the **MonthNumber** column and the **DayNumber** column.
+The next step is to integrate the two tables into the data model with a **Calendar** table. The **Calendar** table is a calculated table based on the following DAX expression.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/calendar-month-associate.png"  />
+:::image type="content" source="./media/data-translation-calendar-table/dax-expression-table.png" alt-text="Screenshot shows the table with its DAX code." lightbox="./media/data-translation-calendar-table/dax-expression-table.png":::
 
-Once you have created the required relationships with the **Calendar** table, the next step is to create a new Field Parameter for each of the two calendar translations tables. Fortunately, creating a Field Parameter for a calendar translation table is just like creating the Field Parameters for product names and category names shown earlier.
+Create a relationship between the **Calendar** table and the fact tables, such as **Sales**, using the **Date** column to create a one-to-many relationship. The relationships created between the **Calendar** table and the two translations tables are based on the **MonthNumber** column and the **DayNumber** column.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image111.png"   />
+:::image type="content" source="./media/data-translation-calendar-table/calendar-month-associate.png" alt-text="Screenshot shows the Model view with the Translated Month Names table in a relationship with the Calendar table." lightbox="./media/data-translation-calendar-table/calendar-month-associate.png":::
 
-Don't forget that you need to add a relationship between these new Field Parameter tables and the **Languages** table to ensure the language filtering strategy works as expected.
+After you create the required relationships with the **Calendar** table, create a new field parameter for each of the two calendar translations tables. Creating a field parameter for a calendar translation table is just like creating the field parameters for product names and category names shown earlier.
 
-:::image type="content" source="./media/data-translation-calendar-table/image112.png" alt-text="Image alt text." lightbox="./media/data-translation-calendar-table/image112.png":::
+:::image type="content" source="./media/data-translation-calendar-table/translate-month-name.png" alt-text="Screenshot shows Data view of the Translated Month Names table." lightbox="./media/data-translation-calendar-table/translate-month-name.png":::
 
-Once you have created the Field Parameters for **Translated Month Names** and **Translated Day Names**, you can begin to surface them in a report using cartesian visuals, tables and matrices.
+Add a relationship between these new field parameter tables and the **Languages** table to ensure the language filtering strategy works as expected.
 
-:::image type="content" source="./media/data-translation-calendar-table/image113.png" alt-text="Image alt text." lightbox="./media/data-translation-calendar-table/image113.png":::
+:::image type="content" source="./media/data-translation-calendar-table/translate-table-relationship.png" alt-text="Screenshot shows the Languages table in relationships with several translated tables." lightbox="./media/data-translation-calendar-table/translate-table-relationship.png":::
 
-Once everything is set up correctly, you should be able test your work using a report-level filter on the **Languages** table to switch between languages and to verify translations for names of months and days of the week work as expected.
+After you create the field parameters for **Translated Month Names** and **Translated Day Names**, you can begin to surface them in a report using cartesian visuals, tables, and matrices.
 
-:::image type="content" source="./media/data-translation-calendar-table/image114.png" alt-text="Image alt text." lightbox="./media/data-translation-calendar-table/image114.png":::
+:::image type="content" source="./media/data-translation-calendar-table/surface-translate-date.png" alt-text="Screenshot shows the Day value for x-axis in a visual." lightbox="./media/data-translation-calendar-table/surface-translate-date.png":::
+
+After you set up everything, you can test your work using a report-level filter on the **Languages** table to switch between languages and to verify translations for names of months and days of the week work as expected.
+
+:::image type="content" source="./media/data-translation-calendar-table/report-level-filter.png" alt-text="Screenshot shows a filter with a language selected and the visuals reflecting the selection." lightbox="./media/data-translation-calendar-table/report-level-filter.png":::
 
 ## Next steps
+
+- [Load multiple-language reports](data-translation-load-report-bookmark.md)

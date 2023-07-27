@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Synchronize multiple field parameters
+description: Learn how to synchronize a selected language can be synchronized across multiple field parameters in a multiple-language report in Power BI. 
 author: maggiesMSFT   
 ms.author: maggies
 ms.service: powerbi
@@ -10,33 +10,55 @@ ms.date: 07/26/2023
 ---
 # Synchronize multiple field parameters
 
-At this point, we have added a Field Parameter to translate product names. However, most real-world reports contain more than just one column that requires data translations. Therefore, you must ensure the mechanism you use to select a language can be synchronized across multiple field parameters. To test this approach, let's create a second Field Parameter to translate product category names from the **Products** table.
+A field parameter can support translations for a column in a multiple-language report in Power BI. Most reports contain more than just one column that requires data translations. You must ensure the mechanism you use to select a language can be synchronized across multiple field parameters. To test this approach, create a second field parameter to translate product category names from the **Products** table.
 
-Let's assume the **Products** table contains four columns with translated category names similar to the translated product name columns. You can create a new Field Parameter named **Translated Category Names** using this DAX expression.
+## Create a field parameter
 
-```
-Translated Category Names = {
-  ("Category", NAMEOF('Products'[CategoryTranslationEnglish]), 0, "en"),
-  ("Categoría", NAMEOF('Products'[CategoryTranslationSpanish]), 1, "es"),
-  ("Catégorie", NAMEOF('Products'[CategoryTranslationFrench]), 2, "fr"),
-  ("Kategorie", NAMEOF('Products'[CategoryTranslationGerman]), 3, "de")
-}
-```
+1. In Power BI Desktop, in the **Modeling** ribbon, select **New parameter** > **Fields**.
 
-After creating the Field Parameter named **Translated Category Names**, let's update the field names and configure the sort column as we did earlier for the Field parameter named **Translated Product Names**.
+1. In the **Parameters** dialog box, enter the name *Translated Category Names*.
+1. Populate the fields with the columns from the **Products** table for the desired languages.
 
-:::image type="content" source="./media/data-translation-synchronize-field/translate-category-name.png" alt-text="Image alt text." lightbox="./media/data-translation-synchronize-field/translate-category-name.png":::
+   :::image type="content" source="./media/data-translation-synchronize-field/parameter-field-category.png" alt-text="Screenshot shows the Parameters dialog box with a name added and several fields selected." lightbox="./media/data-translation-implement-field/parameter-field-synchronize.png":::
 
-The next step is to move to **Model** view where you can create a relationship based on the **LanguageId** column between **Languages** table and the **Translated Category Names** Field Parameter.
+1. Select **Create**.
 
-:::image type="content" source="./media/data-translation-synchronize-field/language-relationship.png" alt-text="Image alt text." lightbox="./media/data-translation-synchronize-field/language-relationship.png":::
+1. Open the Data view. Select the table to view the Data Analysis Expressions (DAX) code. Update the code to match the following code.
 
-Now you should be able to add the **Category** column to the **Table** visual along with the **Product** column. As you change the **Language** selection in the **Filter** pane, the two Field Parameters are now synchronized to display the same language.
+   ```dax
+   Translated Category Names = {
+     ("Category", NAMEOF('Products'[CategoryTranslationEnglish]), 0, "en"),
+     ("Categoría", NAMEOF('Products'[CategoryTranslationSpanish]), 1, "es"),
+     ("Catégorie", NAMEOF('Products'[CategoryTranslationFrench]), 2, "fr"),
+     ("Kategorie", NAMEOF('Products'[CategoryTranslationGerman]), 3, "de")
+   }
+   ```
 
-:::image type="content" source="./media/data-translation-synchronize-field/synchronize-parameter.png" alt-text="Image alt text." lightbox="./media/data-translation-synchronize-field/synchronize-parameter.png":::
+   After you make your changes, the **Category** value is localized and there's a new column.
 
-You have now learned how to synchronize the selection of language across multiple Field Parameters. This example involves two Field Parameters. If your project involves a greater number of columns requiring data translations such as 10, 20 or even 50, you have now learned a repeatable approach that can scale as high as you need.
+1. Double-click **Value4** and change the name to *LanguageID*.
 
-One thing that can be confusing is trying to distinguish between the three different types of translations while testing. You can quickly test out your implementation of data translations in Power BI Desktop by changing the filter on the **Languages** table. However, the other two types of translations don't work correctly in Power BI Desktop. The metadata translations and report label translations you've added must always be tested in the Power BI service.
+   :::image type="content" source="./media/data-translation-synchronize-field/translate-category-name.png" alt-text="Screenshot shows the column with the new name, LanguageId." lightbox="./media/data-translation-synchronize-field/translate-category-name.png":::
+
+## Update the model
+
+After you create the new field parameter, you need to update the model to use it.
+
+1. In Power BI Desktop, open the Model view.
+1. Locate the **Translated Category Names** table and the **Languages** table. 
+1. Drag **LanguageId** from **Translated Category Names** to the **Languages** table to create a one-to-one relationship.
+
+   :::image type="content" source="./media/data-translation-synchronize-field/language-relationship.png" alt-text="Screenshot shows the Model view with three tables, including the newly added Translated Category Name, in a one-to-one relationship to Languages." lightbox="./media/data-translation-synchronize-field/language-relationship.png":::
+
+The language filter now affects categories.
+
+:::image type="content" source="./media/data-translation-synchronize-field/synchronize-parameter.png" alt-text="Screenshot shows the Filters on all pages Language filter with German selected and product and category values translated in a table." lightbox="./media/data-translation-synchronize-field/synchronize-parameter.png":::
+
+You have now learned how to synchronize the selection of language across multiple field parameters. This example involves two field parameters. If your project involves a greater number of columns requiring data translations such as 10, 20 or even 50, you can repeat this approach and scale up as much as you need.
+
+> [!NOTE]
+> You can test your implementation of data translations in Power BI Desktop by changing the filter on the **Languages** table. However, the other two types of translations don't work correctly in Power BI Desktop. You have to test metadata and report label translations in the Power BI service.
 
 ## Next steps
+
+- [Implement data translations for a calendar table](data-translation-calendar-table.md)

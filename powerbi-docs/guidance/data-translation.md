@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Implement a data translation strategy 
+description: Understand when to choose data translation for your multiple-language project in Power BI and what elements to consider.
 author: maggiesMSFT   
 ms.author: maggies
 ms.service: powerbi
@@ -8,34 +8,36 @@ ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 07/26/2023
 ---
-# Implement a data translations strategy
+# Implement a data translation strategy
 
-While all multiple-language reports require metadata translations and report label translations, you can't assume the same for data translations. Some projects require data translations and others don't. In order to determine whether your project requires data translations, think through the use cases that you plan to support with your reporting solution. Adding support for data translations can involve a good deal of planning and effort. You might decide to only support data translations if they're a hard requirement for your project.
+All multiple-language reports require metadata translation and report label translation, but not necessarily data translation. To determine whether your project requires data translation, think through the use cases that you plan to support. Using data translation involves planning and effort. You might decide not to support data translation unless it's a hard requirement for your project.
 
-Implementing data translations is different from implementing metadata translations or report label translations. They're different because Power BI doesn't offer any localization features to assist you with data translations. Instead, you must implement a data translation strategy. Such a strategy involves extending the underlying data source with extra columns to track translations for text in rows of data such as the names of products, categories, and countries.
+Implementing data translation is different from implementing metadata translation or report label translation. Power BI doesn't offer any localization features to assist you with data translation. Instead, you must implement a data translation strategy. Such a strategy involves extending the underlying data source with extra columns to track translations for text in rows of data, such as the names of products, categories, and countries.
 
-## Determine whether your solution really requires data translations
+## Determine whether your solution requires data translation
 
-To determine whether you need to implement data translations, start by thinking about how to deploy your reporting solution and think about the use case for its intended audience. That leads to a key question. **Do you have people who speak different languages looking at the same database instance?**
+To determine whether you need to implement data translation, start by thinking about how to deploy your reporting solution. Think about the use case for its intended audience. That exercise leads to a key question: *Do you have people who speak different languages looking at the same database instance?*
 
-Imagine a scenario where you're developing a report template for a SaaS application with a well-known database schema. Now let's say some customers maintain their database instance in English while others maintain their database instances in other languages such as Spanish or German. There's no need to implement data translations in this use case because the data from any database instance. Users view the data each in a single language.
+Suppose you're developing a report template for a software as a service (SaaS) application with a well-known database schema. Some customers maintain their database instance in English while others maintain their database instances in other languages, such as Spanish or German. There's no need to implement data translations in this use case because the data from any database instance because users view the data each in a single language.
 
-:::image type="content" source="./media/data-translation/customer-deployment.png" alt-text="Image alt text." lightbox="./media/data-translation/customer-deployment.png":::
+:::image type="content" source="./media/data-translation/customer-deployment.png" alt-text="Diagram shows three customer deployments, each of which a different database in its own language." lightbox="./media/data-translation/customer-deployment.png":::
 
-The important observation is that each customer deployment uses a single language for its database and all its users. Both metadata translations and report label translations must be implemented in this use case so you can deploy a single version of the .pbix file across all customer deployments. However, there's no need to implement data translations when no database instance ever needs to be viewed in multiple-languages.
+Each customer deployment uses a single language for its database and all its users. Both metadata translations and report label translations must be implemented in this use case so you can deploy a single version of the .pbix file across all customer deployments. However, there's no need to implement data translations when no database instance ever needs to be viewed in multiple languages.
 
-Now let's examine a different use case that introduces the requirement of data translations. The use case is for the [**ProductSalesMultiLanguage.pbix**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/ProductSalesMultiLanguage.pbix) live demo, which involves a single database instance containing sales performance data across several European countries. This reporting solution has the requirement to display its report in different languages while the data being analyzed is coming from a single database instance.
+A different use case introduces the requirement of data translations. The example .pbix project file uses a single database instance that contains sales performance data across several European countries. This solution must display its reports in different languages with data from a single database instance.
 
-:::image type="content" source="./media/data-translation/customer-deployment-import.png" alt-text="Image alt text." lightbox="./media/data-translation/customer-deployment-import.png":::
+:::image type="content" source="./media/data-translation/customer-deployment-import.png" alt-text="Diagram shows a customer deployment with a single data source that serves multiple languages." lightbox="./media/data-translation/customer-deployment-import.png":::
 
-Once again, the key question to ask is whether you have people who speak different languages looking at the same database instance. If the answer to that question is ***NO***, then you aren't required to implement data translations. If the answer to that question is ***YES***, then you should ask more questions because there are other consideration you should think through before deciding whether it makes sense to implement data translations.
+If you have people that use different languages and locales to interact with the same database instance, you still need to address other considerations.
 
-When you're considering whether to implement data translations, examine the text-based columns that are candidates for translation. Determine how hard translating those text values is. Columns with short text values for things like product names, product categories and country names are good candidates for data translations because the values are short and easy to translate. What if you have a column for product descriptions where each row has two to three sentences of text. While you can provide translations for product descriptions, they require more effort to generate high quality translations. In general, columns with longer text values are less ideal as candidates for data translations.
+- Examine the text-based columns that are candidates for translation. Determine how hard translating those text values is. Columns with short text values for things like product names, product categories, and country names are good candidates for data translations. Suppose that there's column for product descriptions where each row has two to three sentences of text. Such descriptions require more effort to generate high quality translations.
 
-You should also consider the number of distinct column values that require translation. You can easily translate product names in a database that holds 100 products. You can probably translate product names when the number gets up to 1000. However, what happens if the number of translated values reaches 10,000 or 100,000. If you can't rely on machine-generate translations, your translation team might have trouble scaling up to handle that volume of human translations.
+- Consider the number of distinct values that require translation. You can easily translate product names in a database that holds 100 products. You can probably translate product names when the number gets up to 1000. What happens if the number of translated values reaches 10,000 or 100,000? If you can't rely on machine-generate translations, your translation team might have trouble scaling up to handle that volume of human translations.
 
-You also have to consider that your commitment to implement data translations might require on-going maintenance. Every time someone adds a new record to the underlying database, there's the potential to introduce new text values that require translation. This approach is different from implementing metadata translations or report label translations. In those situations, you create a finite number of translations and then your work is done. Metadata translations and report label translations don't require on-going maintenance as long as the underlying dataset schema and the report layout remain the same.
+- Consider whether there's on-going maintenance. Every time someone adds a new record to the underlying database, there's the potential to introduce new text values that require translation. This consideration doesn't apply to metadata translation or report label translation. In those situations, you create a finite number of translations and then your work is done. Metadata translation and report label translation don't require on-going maintenance as long as the underlying dataset schema and the report layout remain the same.
 
-In summary, there are many factors that go into deciding whether you should implement data translations. You must decide whether it's worth the time and effort required to implement data translations properly. In certain scenarios, you might decide that implementing metadata translations and report label translations goes far enough. If your primary goal is to make your reporting solution compliant with laws or regulations, you might also find that implementing data translations isn't a requirement.
+There are several factors that go into deciding whether to use data translation. You must decide whether it's worth the time and effort required to implement data translation properly. You might decide that implementing metadata translations and report label translations goes far enough. If your primary goal is to make your reporting solution compliant with laws or regulations, you might also find that implementing data translations isn't a requirement.
 
 ## Next steps
+
+- [Extend the data source schema to support data translations](data-translation-extend-schema.md)
