@@ -16,9 +16,9 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-A funnel chart helps you visualize a linear process that has sequential, connected stages. A common use for a funnel chart is to track sales customers through stages: Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
+A funnel chart helps you visualize a linear process that has sequential connected stages. A common use for a funnel chart is to track sales customers through stages, such as Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
 
-Each funnel stage represents a percentage of the total. In most cases, a funnel chart is shaped like a funnel where the first stage is the largest and each subsequent stage is smaller than its predecessor. A pear-shaped funnel is also useful and can help identify a problem in the process. Typically, the first stage called the _intake_ stage is the largest.
+Each funnel stage represents a percentage of the total. In most cases, a funnel chart is shaped like a funnel where the first stage is the largest and each subsequent stage is smaller than its predecessor. A pear-shaped funnel is also useful and can help identify a problem in the process. Typically, the first stage (called the _intake_ stage) is the largest.
 
 :::image type="content" source="media/power-bi-visualization-funnel-charts/power-bi-funnel-plain.png" alt-text="Diagram that shows a sample blue funnel.":::
 
@@ -28,7 +28,7 @@ Funnel charts support many capabilities, such as sorting and displaying multiple
 
 Funnel charts are a great choice for many scenarios:
 
-- Chart sequential data as it progresses through at least four stages.
+- Chart the progress of sequential data through at least four stages.
 - Chart items where the amount in the first stage is expected to be greater than the amount in the final stage.
 - Calculate potential, such as for revenue, sales, deals, and so on, by stages.
 - Calculate and track conversion and retention rates.
@@ -38,7 +38,7 @@ Funnel charts are a great choice for many scenarios:
 
 Watch the following video to see how to create a funnel chart by using data from the Sales and Marketing sample.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qKRZPBnaUXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<br><iframe width="560" height="315" src="https://www.youtube.com/embed/qKRZPBnaUXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 > [!NOTE]  
 > The video might use earlier versions of Power BI Desktop or the Power BI service.
@@ -88,23 +88,21 @@ This tutorial uses the Opportunity Analysis Sample in the Power BI service.
 
 Let's create a funnel chart to show the number of opportunities in each sales stage in the Opportunity Analysis Sample data.
 
-1. On the **Data** pane, expand **SalesStage** and select the **Sales Stage** checkbox.
-
-   By default, Power BI creates a table visual to display the data. On the **Visualizations** pane, the **Sales Stage** field is added to the **Columns** option.
+1. On the **Data** pane, expand **SalesStage** and select the **Sales Stage** checkbox. By default, Power BI creates a table visual to display the data.
 
    :::image type="content" source="media/power-bi-visualization-funnel-charts/power-bi-select-field.png" alt-text="Screenshot that shows how to select the Sales Stage field on the Data pane in Power BI Desktop.":::
 
    You can now convert the table visual into a funnel chart.
 
-1. Select the table visual, and then select **Funnel chart** on the **Visualizations** pane. Power converts the visual type to a funnel chart.
+1. Select the table visual, and then select **Funnel** on the **Visualizations** pane. Power converts the visual type to a funnel chart.
 
 1. On the **Fields** pane, expand **Fact** and select the **Opportunity Count** checkbox.
 
-   Power updates the funnel chart and adds the **Opportunity Count** field to the **Values** option on the **Visualizations** pane.
+   Power updates the funnel chart and updates the **Visualizations** pane. The **Opportunity Count** field is added to the **Values** option and the **Sales Stage** field is added to the **Category** option.
 
    :::image type="content" source="media/power-bi-visualization-funnel-charts/power-bi-funnel-chart.png" alt-text="Screenshot that shows how to convert the visual to a funnel chart and add another data field.":::
 
-1. When you hover over a bar in the chart, Power BI displays the details for that data. Let's try hovering over the **Proposal** bar.
+1. When you hover over a bar in the chart, Power BI displays the details for that data. Hover over the **Proposal** bar.
 
    Some of the details include:
    - The name of the stage.
