@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/25/2023
+ms.date: 07/27/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -235,17 +235,17 @@ The load time for the chart visual increases as the number of data points increa
 
 Does your scatter chart have only one data point that aggregates all of the values on the x and y axes, as shown in the following image? Or does it aggregate all the values along a single horizontal or vertical line?
 
-:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot.png" alt-text="Screenshot of a scatter chart that has only one data point.":::
+:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot.png" alt-text="Screenshot of a scatter chart that has only one data point." border="false":::
 
-In this scenario, you can add a field to the **Details** section for the chart. The field instructs Power BI on how to group the values. The field must be unique for each point you want to plot. You can provide a row number or ID field. In the following example, the **RowNum** ID field from the data is supplied. 
+In this scenario, you can add a field to the **Values** option for the chart on the **Visualizations** > **Build visual** pane. The field instructs Power BI on how to group the values. The field must be unique for each point you want to plot. You can provide a row number or ID field. In the following example, we set the **Values** option to the **RowNum** ID field from the dataset. 
 
-:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot-1.png" alt-text="Screenshot of a scatter chart with the RowNum field added to the Details section.":::
+:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot-1.png" alt-text="Screenshot of a scatter chart with the RowNum field added to the Values option." border="false":::
 
-If your data doesn't include a specific row number or ID, you can create a field to concatenate your x and y values together. The field must be unique for each point you want to plot. In the following example, a new field named **TempTime** is created to hold the concatenated values.
+If your data doesn't include a specific row number or ID, you can create a field to concatenate your x and y values together. The field must be unique for each point you want to plot. In the following example, we set the **Values** option to a new field named **TempTime** to hold the concatenated values.
 
-:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot-2.png" alt-text="Screenshot of a scatter chart with a new field named TempTime added to the Details section.":::
+:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot-2.png" alt-text="Screenshot of a scatter chart with a new field named TempTime added to the Values option." border="false":::
 
-To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../create-reports/desktop-add-custom-column.md) to your dataset. Then add this column to your visualization's **Details** section.
+To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../create-reports/desktop-add-custom-column.md) to your dataset. Then add this column to your visual's **Values** option.
 
 ## Next steps
 
