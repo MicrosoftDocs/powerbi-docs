@@ -10,7 +10,7 @@ ms.date: 07/24/2023
 ---
 # Enable workflows for human translation in Power BI reports
 
-When you create multiple-language reports for Power BI, you can work quickly and efficiently by using Translations Builder and by generating machine translations. However, machine-generated translations alone are inadequate for many production needs. You need to integrate other people acting as translators into a human workflow process.
+When you create multiple-language reports for Power BI, you can work quickly and efficiently by using Translations Builder and by generating machine translations. However, machine generated translations alone are inadequate for many production needs. You need to integrate other people acting as translators into a human workflow process.
 
 Translations Builder uses a *translation sheet*, which is a .csv file that you export to send to a translator. The human acting as a translator updates the translation sheet and then returns it to you. You then import the revised sheet to integrate the changes into the current dataset.
 

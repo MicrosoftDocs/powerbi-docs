@@ -15,7 +15,7 @@ When you use Translations Builder with external translators, you need to export 
 You can export the following translations sheets:
 
 - A translation sheet for a single language
-- Translations sheets for all supported languages
+- Translation sheets for all supported languages
 - A translation sheet that contains all supported languages
 
 ## Export translation sheet for a single language
