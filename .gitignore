@@ -46,11 +46,4 @@ power-bi-apps-permissions.png
 /.vs/ProjectSettings.json
 /.vs/powerbi-docs-pr-main/v16
 /.vs
-powerbi-docs/troubleshoot/known-issues/known-issue-432-workspace-setting-large-dataset-storage-format-not-persistent.md
-powerbi-docs/troubleshoot/known-issues/known-issue-430-newly-added-content-org-app-doesnt-show.md
-powerbi-docs/troubleshoot/known-issues/known-issue-432-workspace-setting-large-dataset-storage-format-not-persistent.md
-powerbi-docs/troubleshoot/known-issues/known-issue-432-large-dataset-storage-not-persistent.md
-powerbi-docs/troubleshoot/known-issues/known-issue-432-workspace-setting-large-dataset-storage-format-not-persistent.md
-powerbi-docs/troubleshoot/known-issues/known-issue-432-large-dataset-storage-format-not-consistent.md
-powerbi-docs/troubleshoot/known-issues/known-issue-432-large-dataset-storage-format-not-consistent.md
-powerbi-docs/troubleshoot/known-issues/known-issue-432-large-dataset-storage-format-not-consistent.md
+
