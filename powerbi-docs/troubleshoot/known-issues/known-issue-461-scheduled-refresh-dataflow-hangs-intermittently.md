@@ -2,6 +2,7 @@
 title: Known issue - dataflow scheduled refresh of dataset, intermittently hangs and following scheduled refresh is skipped
 description: A known issue is posted where dataflow scheduled refresh of dataset, intermittently hangs and following scheduled refresh is skipped
 author: mihart
+ms.author: anirmale
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
