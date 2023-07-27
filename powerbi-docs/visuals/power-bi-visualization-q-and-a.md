@@ -143,7 +143,7 @@ When you select a theme, that theme is applied to the entire report page. There 
 
 1. On the Power BI menu bar, select **View**, and then select the **Themes** drop-down menu.
 
-   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-themes.png" alt-text="Screenshot that shows how to select the Themes drop-down menu in Power BI Desktop." border="false":::
+   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-themes.png" alt-text="Screenshot that shows how to select the Themes drop-down menu in Power BI Desktop." lightbox="media/power-bi-visualization-q-and-a/power-bi-themes-expanded.png" border="false":::
 
    The current theme for **This report** is shown at the top. Our current theme is "Classic."
 
