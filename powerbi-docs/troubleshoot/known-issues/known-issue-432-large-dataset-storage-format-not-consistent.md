@@ -2,6 +2,7 @@
 title: Known issue - Workspace setting- "large dataset storage format" isn't persistent - UI issue
 description: A known issue is posted where Workspace setting- "large dataset storage format" isn't persistent - UI issue
 author: mihart
+ms.author: anirmale
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting 
@@ -20,7 +21,7 @@ Workspace setting- "large dataset storage format" isn't consistent. You may expe
 
 ## Symptoms
 
-The steps to reproduce the issue are:
+The steps to reproduce the issue:
 1.Access the workspace setting, change the storage format to "Large dataset storage format" and select on "Apply"
 2.Refresh the page
 3.See the change is reverted or changed back to "Small dataset storage format"
