@@ -16,13 +16,13 @@ Implementing data translation is different from implementing metadata translatio
 
 ## Determine whether your solution requires data translation
 
-To determine whether you need to implement data translation, start by thinking about how to deploy your reporting solution. Think about the use case for its intended audience. That exercise leads to a key question: *Do you have people who speak different languages looking at the same database instance?*
+To determine whether you need to implement data translation, start by thinking about how to deploy your reporting solution. Think about the use case for its intended audience. That exercise leads to a key question: *Do you have people who use different languages looking at the same database instance?*
 
 Suppose you're developing a report template for a software as a service (SaaS) application with a well-known database schema. Some customers maintain their database instance in English while others maintain their database instances in other languages, such as Spanish or German. There's no need to implement data translations in this use case because the data from any database instance because users view the data each in a single language.
 
 :::image type="content" source="./media/data-translation/customer-deployment.png" alt-text="Diagram shows three customer deployments, each of which a different database in its own language." lightbox="./media/data-translation/customer-deployment.png":::
 
-Each customer deployment uses a single language for its database and all its users. Both metadata translations and report label translations must be implemented in this use case so you can deploy a single version of the .pbix file across all customer deployments. However, there's no need to implement data translations when no database instance ever needs to be viewed in multiple languages.
+Each customer deployment uses a single language for its database and all its users. Both metadata translations and report label translations must be implemented in this use case. You deploy a single version of the .pbix file across all customer deployments. However, there's no need to implement data translations when no database instance ever needs to be viewed in multiple languages.
 
 A different use case introduces the requirement of data translations. The example .pbix project file uses a single database instance that contains sales performance data across several European countries. This solution must display its reports in different languages with data from a single database instance.
 

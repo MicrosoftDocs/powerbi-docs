@@ -21,17 +21,17 @@ This article shows you how to implement data translation by using a field parame
 
 1. To create a field parameter in Power BI Desktop, in **Modeling**, select **New parameter** > **Fields**.
 
-   :::image type="content" source="./media/data-translation-implement-field/new-parameter-field.png" alt-text="Screenshot shows the Modeling ribbon with the New parameter button selected and Fields highlighted." lightbox="./media/data-translation-implement-field/new-parameter-field.png":::
+   :::image type="content" source="./media/data-translation-implement-field/new-parameter-field.png" alt-text="Screenshot shows the Modeling ribbon with the New parameter button selected and Fields highlighted.":::
 
 1. In the **Parameters** dialog box, enter a name *Translated Product Names*.
 1. Populate the fields connection of this field parameter with the columns from the **Products** table with the translated product names.
 
-   :::image type="content" source="./media/data-translation-implement-field/parameter-field-add.png" alt-text="Screenshot shows the Parameters dialog box with a name added and several fields selected." lightbox="./media/data-translation-implement-field/parameter-field-add.png":::
+   :::image type="content" source="./media/data-translation-implement-field/parameter-field-add.png" alt-text="Screenshot shows the Parameters dialog box with a name added and several fields selected.":::
 
-1. Be sure that **Add slicer to page** is enabled.
+1. Be sure that **Add slicer to this page** is enabled.
 1. Select **Create**.
 
-After you created a field parameter, it appears in the **Fields** list on the right as a new table. Under Data, select **Translated Product Names** to see the Data Analysis Expressions (DAX) code that defines the field parameter, as shown in the following screenshot.
+After you create a field parameter, it appears in the **Fields** list on the right as a new table. Under **Data**, select **Translated Product Names** to see the Data Analysis Expressions (DAX) code that defines the field parameter, as shown in the following screenshot.
 
 :::image type="content" source="./media/data-translation-implement-field/field-parameter-definition.png" alt-text="Screenshot shows DAX code for the field parameter." lightbox="./media/data-translation-implement-field/field-parameter-definition.png":::
 
@@ -41,7 +41,7 @@ After you created a field parameter, it appears in the **Fields** list on the ri
 
    :::image type="content" source="./media/data-translation-implement-field/product-table.png" alt-text="Screenshot shows the translated product names table." lightbox="./media/data-translation-implement-field/product-table.png":::
 
-   You can see the table type under **Visualizations** and **Translated Product Names** as the **Columns** value.Position both the slicer and the data table anywhere on the canvas.
+   You can see the table type under **Visualizations** and **Translated Product Names** as the **Columns** value. Position both the slicer and the data table anywhere on the canvas.
 
 1. Select one item in the slicer, such as **ProductTranslationSpanish**. The table now shows a single corresponding column.
 
@@ -87,7 +87,7 @@ Up to this point, you've looked at the field parameter in Report view. Now open 
 
 The names of the columns in a field parameter are generated based on the name you give to the top-level field parameter. You should rename the columns to simplify the data model and to improve readability.
 
-1. Double-click a field in the field parameter node. Rename **Translated Product Names** to *Product*.
+1. To rename a column label, double-click the field. Rename **Translated Product Names** to *Product*.
 
    :::image type="content" source="./media/data-translation-implement-field/report-view-product.png" alt-text="Screenshot shows a table in the Data view with the column name changed to Product." lightbox="./media/data-translation-implement-field/report-view-product.png":::
 
@@ -118,15 +118,15 @@ The field parameter is a table with three columns named **Product**, **Fields**,
 
    :::image type="content" source="./media/data-translation-implement-field/report-view-rename-value.png" alt-text="Screenshot shows a table in the Data view with a new column renamed to LaguageId." lightbox="./media/data-translation-implement-field/report-view-rename-value.png":::
 
-1. Select **LanguageId** to highlight it. From the control ribbon, select **Sort by column** > **Sort Order**. 
+1. Select **LanguageId** to highlight it. From the control ribbon, select **Sort by column** > **Sort Order**.
 
-   :::image type="content" source="./media/data-translation-implement-field/report-view-sort-column.png" alt-text="Screenshot shows a table in the Data view with the LanguageID column selected and SortOrder selected as its sort order." lightbox="./media/data-translation-implement-field/report-view-sort-column.png":::
+   :::image type="content" source="./media/data-translation-implement-field/report-view-sort-column.png" alt-text="Screenshot shows a table in the Data view with the Language ID column selected and SortOrder selected as its sort order." lightbox="./media/data-translation-implement-field/report-view-sort-column.png":::
 
    You don't need to configure the sort column for the two pre-existing fields. Power BI Desktop configured them when you set up the field parameter.
 
 1. Open the Model view and, next to **LanguageId** select **More options** (three dots). Select **Hide in report view**.
 
-:::image type="content" source="./media/data-translation-implement-field/hidden-table.png" alt-text="Screenshot shows a table in the Model view with the LanguageId marked as hidden." lightbox="./media/data-translation-implement-field/hidden-table.png":::
+:::image type="content" source="./media/data-translation-implement-field/hidden-table.png" alt-text="Screenshot shows a table in the Model view with the LanguageId marked as hidden.":::
 
    Report authors never need to see this column because it's used to select a language by filtering behind the scenes.
 

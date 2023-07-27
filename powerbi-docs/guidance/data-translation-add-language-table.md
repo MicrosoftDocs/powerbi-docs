@@ -16,7 +16,7 @@ As a content creator working with Power BI Desktop, there are many different way
 
 1. In Power BI Desktop, from the **Home** ribbon, select **Transform data** > **Transform data** to open the Power Query Editor.
 
-1. Under Queries, right-click and select **New Query** > **Blank Query** from the context menu.
+1. Under **Queries**, right-click and select **New Query** > **Blank Query** from the context menu.
 
 1. Select the new query. Under **Query Settings** > **Properties** > **Name**, enter *Languages* as the name of the query.
 

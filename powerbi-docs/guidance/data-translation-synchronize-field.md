@@ -10,7 +10,7 @@ ms.date: 07/26/2023
 ---
 # Synchronize multiple field parameters
 
-A field parameter can support translations for a column in a multiple-language report in Power BI. Most reports contain more than just one column that requires data translations. You must ensure the mechanism you use to select a language can be synchronized across multiple field parameters. To test this approach, create a second field parameter to translate product category names from the **Products** table.
+A field parameter can support translations for a column in a multiple-language report in Power BI. Most reports contain more than just one column that requires data translations. You must ensure the mechanism you use to select a language can be synchronized across multiple field parameters. To test this approach working with the project in this series of articles, create a second field parameter to translate product category names from the **Products** table.
 
 ## Create a field parameter
 
@@ -36,7 +36,7 @@ A field parameter can support translations for a column in a multiple-language r
 
    After you make your changes, the **Category** value is localized and there's a new column.
 
-1. Double-click **Value4** and change the name to *LanguageID*.
+1. Double-click **Value4** and change the name to *LanguageId*.
 
    :::image type="content" source="./media/data-translation-synchronize-field/translate-category-name.png" alt-text="Screenshot shows the column with the new name, LanguageId." lightbox="./media/data-translation-synchronize-field/translate-category-name.png":::
 
