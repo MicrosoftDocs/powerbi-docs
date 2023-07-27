@@ -10,7 +10,7 @@ ms.date: 06/30/2023
 ms.custom: known-issue-432
 ---
 
-# Known issue - Workspace setting 'large dataset storage format' isn't persistent
+# Known issue - Workspace setting 'large dataset storage format' isn't persistent 
 
 The workspace setting 'Large dataset storage format' isn't consistent. You may experience issues while making changes to dataset storage format in the workspace settings in Power BI. The default storage format is shown as a 'Large dataset storage format' but if you refresh the entire page (F5) the storage format changes to 'small dataset storage format'
 
