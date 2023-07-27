@@ -22,7 +22,12 @@ Select the **Title** to view more information about that specific known issue.
 
 |  Issue ID |  Area                              |  Title  |  Issue publish date |  
 |-----------|------------------------------------|---------|---------------------|
-|  432      |  Administration                    |  [Workspace setting 'large dataset storage format' isn't persistent](known-issue-432-workspace-setting-large-dataset-storage-format-not-persistent.md)    | June 30, 2023  |
+|  465      |  Embedded, REST API or PowerShell  |  [Report embed edit app Bar intermittently not rendered]
+(known-issue-465-embed-report-renders-intermittently.md)    |July 27, 2023  |
+|  461      |  Create and Author Data            |  [dataflow scheduled refresh of dataset, intermittently hangs and following scheduled refresh is skipped](known-issue-461-scheduled-refresh-dataflow-hangs-intermittently.md)    |July 27, 2023  |
+|  443      |  Power BI                    |  [deployment pipeline stuck in loading]
+(known-issue-443-deploy-pipeline-stuck-loading.md)    | July 27, 2023  |
+|  432      |  Administration                    |  [Workspace setting- "large dataset storage format" isn't persistent - UI issue](known-issue-432-large-dataset-storage-not-persistent.md)    | July 27, 2023  |
 |  427      |  Administration                    |  [Tenant admin settings may not save correctly](known-issue-427-tenant-admin-settings-may-not-save-correctly.md)    | June 22, 2023  |
 |  430      |  Share and Collaborate             |  [Newly added content in organizational app doesn't show in first load](known-issue-430-newly-added-content-org-app-doesnt-show.md)   |  June 20, 2023  |
 |  222      |  Consume and View                  |  [Search strings that include Japanese symbols don't return matches](known-issue-222-search-strings-japanese-symbols-dont-work.md)   |  August 3, 2022  |
@@ -39,6 +44,6 @@ Select the **Title** to view more information about that specific known issue. F
 
 ## Next steps
 
-- [Go to the Power BI report version of this page](https://support.fabric.microsoft.com/known-issues/)
+- [Go to the Power BI Embedded report version of this page](https://support.fabric.microsoft.com/known-issues/)
 - [Service level outages](https://support.powerbi.com)
 - [Get your questions answered by the Power BI community](https://community.powerbi.com)
