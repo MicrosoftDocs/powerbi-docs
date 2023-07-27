@@ -2,8 +2,9 @@
 title: Known issue - deployment pipeline stuck in loading
 description: A known issue is posted where deployment pipeline stuck in loading
 author: mihart
-ms.author: anirmale
-ms.topic: troubleshooting 
+ms.topic: troubleshooting  
+ms.service: powerbi
+ms.subservice: pbi-troubleshooting 
 ms.date: 07/27/2023
 ms.custom: known-issue-443
 ---
