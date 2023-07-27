@@ -34,7 +34,7 @@ A *field parameter* is a table in which each row represents a field and where ea
 
 When you create a field parameter, you can populate the fields collection using either measures or columns.
 
-:::image type="content" source="./media/data-translation-extend-schema/product-data-source.png" alt-text="Diagram shows how the Product data field is related to a translated product value." lightbox="./media/data-translation-implement-field/product-data-source.png":::
+:::image type="content" source="./media/data-translation-extend-schema/product-data-source.png" alt-text="Diagram shows how the Product data field is related to a translated product value." lightbox="./media/data-translation-extend-schema/product-data-source.png":::
 
 When you use field parameters to implement data translations, use columns instead of measures. The primary role that field parameters play in implementing data translations is providing a single, unified field use in report authoring that can be dynamically switched between source columns.
 
