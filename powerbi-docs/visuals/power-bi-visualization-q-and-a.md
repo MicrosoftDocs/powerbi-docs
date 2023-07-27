@@ -19,7 +19,7 @@ The Q&A visual allows users to ask natural language questions and get answers in
 
 In this article, you create, format, and customize a Q&A visual. This visual type supports themes and other default formatting options available in Power BI. After you create the visual, it behaves like any other Power BI visual and supports cross-filtering, cross-highlighting, and bookmarks. 
 
-The following demonstration video shows how to ask questions and use suggestions with the Q&A visual in Power BI. When Power BI successfully interprets the _question_, it displays the corresponding data as the _answer_. When you interact with data in the Q&A visual, such as selecting a column or data point, Power BI cross-highlights and cross-filters the related data in other visuals in the report.
+The following demonstration video shows how to ask questions and use suggestions with the Q&A visual in Power BI. When Power BI successfully interprets the _question_, it displays the corresponding data as the _answer_. When you select a column or data point in the Q&A visual, Power BI cross-highlights and cross-filters the related data in other visuals in the report.
 
 ![Demonstration that shows how to use the Q&A visual in Power BI.](../natural-language/media/qna-visual-walkthrough.gif)
 
