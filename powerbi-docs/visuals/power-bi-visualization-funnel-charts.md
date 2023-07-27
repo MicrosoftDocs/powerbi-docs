@@ -97,7 +97,7 @@ Let's create a funnel chart to show the number of opportunities in each sales st
 
 1. On the **Fields** pane, expand **Fact** and select the **Opportunity Count** checkbox.
 
-   Power updates the funnel chart and updates the **Visualizations** pane. The **Opportunity Count** field is added to the **Values** option and the **Sales Stage** field is added to the **Category** option.
+   Power updates the funnel chart and the **Visualizations** pane. The **Opportunity Count** field is added to the **Values** option and the **Sales Stage** field is added to the **Category** option.
 
    :::image type="content" source="media/power-bi-visualization-funnel-charts/power-bi-funnel-chart.png" alt-text="Screenshot that shows how to convert the visual to a funnel chart and add another data field.":::
 
@@ -107,7 +107,7 @@ Let's create a funnel chart to show the number of opportunities in each sales st
    - The name of the stage.
    - The number of opportunities currently in this stage.
    - The overall conversion rate (% of Lead).
-   - The stage-to-stage value (also known as the _Drop Rate_), which is the percentage of the previous stage. In our example, the stage-to-stage value equals **Proposal Stage** divided by **Solution Stage**.
+   - The stage-to-stage value (also known as the _Drop Rate_), which is the percentage of the previous stage. In our example, the stage-to-stage value equals **Proposal Stage**/**Solution Stage**.
 
    :::image type="content" source="media/power-bi-visualization-funnel-charts/power-bi-funnel-hover.png" alt-text="Screenshot that shows how to hover over a bar in a funnel chart to see details about the data." border="false":::
 
