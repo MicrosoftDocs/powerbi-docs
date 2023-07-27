@@ -7,7 +7,7 @@ ms.reviewer: rien
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 07/26/2023
+ms.date: 07/27/2023
 ms.custom: sample-salesandmarketingsample
 ---
 
@@ -17,9 +17,11 @@ ms.custom: sample-salesandmarketingsample
 
 The Q&A visual allows users to ask natural language questions and get answers in the form of a visual. *Consumers* can use it to quickly get answers to their data. *Designers* can also use it to create visuals quickly. If you're a report designer, this article is for you. You can double-click anywhere on a report and use natural language to get started. In this article, you create, format, and customize a Q&A visual. It supports themes and other default formatting options available inside Power BI. After you create it, it behaves like any other visual, supporting cross-filtering, cross-highlighting, and bookmarks. 
 
-If you're looking for more background about Q&A in Power BI, see [Introduction to Q&A](../natural-language/q-and-a-intro.md).
+The following demonstration shows how to ask questions and use suggestions with the Q&A visual in Power BI. When the Q&A visual shows data results, Power BI cross-highlights and cross-filters the related data in the other visuals on the report canvas.
 
-![Video that provides a Q&A visual walkthrough.](../natural-language/media/qna-visual-walkthrough.gif)
+![Demonstration that shows how to use the Q&A visual in Power BI.](../natural-language/media/qna-visual-walkthrough.gif)
+
+If you're looking for more background about Q&A in Power BI, see [Introduction to Power BI Q&A](../natural-language/q-and-a-intro.md).
 
 The Q&A visual consists of four core components:
 
@@ -129,7 +131,7 @@ The following image shows the report canvas with all Power BI suggestions visibl
 
    In the following example, we have a line chart, column chart, a map, and a bar chart. Power BI cross-filters the line chart and map and cross-highlights the bar chart.
 
-   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-filters.png" alt-text="Screenshot that shows the Q&A visual with one bar selected, and the effect on the other three visuals on the report page" border="false":::
+   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-filters.png" alt-text="Screenshot that shows the Q&A visual with a single bar selected, and the effect on the other three visuals on the report page.":::
 
 ## Format and customize the Q&A visual
 
@@ -193,13 +195,13 @@ At this point, you have a Q&A visual that displays data as a clustered column ch
 
 ## Advanced features of the Q&A visual
 
-Select the gear icon to open the Q&A visual **Tooling** pane.
+To access advanced features for your Q&A visual, select the gear icon at the top right to open the Q&A **Tooling** pane.
 
-:::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-qna-tooling.png" alt-text="Screenshot that shows the Q&A visual with the Tooling icon selected.":::
+:::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-qna-tooling.png" alt-text="Screenshot that shows how to open the Q&A Tooling pane from the gear icon on the Q&A visual." border="false":::
 
-Use the Tooling pane to teach Q&A terms it doesn't recognize, to manage those terms, and to manage the suggested questions for this dataset and report. In the Tooling pane, you can also review questions that users have asked in this Q&A visual and see questions that users have flagged. To learn more, see [Intro to Q&A tooling to train Power BI Q&A](../natural-language/q-and-a-tooling-intro.md).
+Use the **Tooling** pane to teach Q&A terms it doesn't recognize, to manage those terms, and to manage the suggested questions for this dataset and report. In the **Tooling** pane, you can also review questions users have asked in this Q&A visual and see questions users have flagged. For more information, see [Intro to Q&A tooling to train Power BI Q&A](../natural-language/q-and-a-tooling-intro.md).
 
-:::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-qna-tooling-pane.png" alt-text="The Q&A Tooling pane.":::
+:::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-qna-tooling-pane.png" alt-text="Screenshot that shows the Q&A Tooling pane.":::
 
 ## Considerations and troubleshooting
 
@@ -213,5 +215,5 @@ Keep in mind the following points when creating Q&A visuals in Power BI.
 
 There are several ways you can integrate natural language. For more information, see the following articles:
 
-- [Q&A tooling](../natural-language/q-and-a-tooling-intro.md)
-- [Q&A best practices](../natural-language/q-and-a-best-practices.md)
+- [Power BI Q&A tooling](../natural-language/q-and-a-tooling-intro.md)
+- [Power BI Q&A best practices](../natural-language/q-and-a-best-practices.md)
