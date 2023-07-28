@@ -14,7 +14,7 @@ LocalizationGroup: Premium
 # Test dataset scale-out
 
 > [!IMPORTANT]
-> Dataset scale-out is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Dataset scale-out is currently in **preview**.
 
 This article describes how you can test the dataset scale-out feature.
 
