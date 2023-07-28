@@ -13,7 +13,7 @@ ms.date: 05/31/2023
 # Power BI Desktop projects (PREVIEW)
 
 > [!IMPORTANT]
-> Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Power BI Desktop projects is currently in **preview**.
 
 Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a ***Power BI Project*** (PBIP). As a project, report and dataset *artifact* definitions are saved as individual plain text files in a simple, intuitive folder structure.
 
@@ -35,7 +35,7 @@ See Power BI Desktop projects and other developer mode features being introduced
 
 ## Enable preview features
 
-Saving as a project in Power BI Desktop is currently in **PREVIEW**. Before giving it a try, you must first enable it in **Preview features**.
+Saving as a project in Power BI Desktop is currently in **preview**. Before giving it a try, you must first enable it in **Preview features**.
 
 To enable, in Power BI Desktop > **File** > **Options and settings** > **Options** > **Preview features**, select the checkbox for **Power BI Project (.pbip) save option**.
 
@@ -96,7 +96,7 @@ If possible, Power BI Desktop indicates the file and location of error:
 
 :::image type="content" source="media/projects-overview/pbip-unable-to-open-file.png" alt-text="Screen grab of unable to open file error.":::
 
-Schema details for the following files aren't documented. During **PREVIEW**, changes to these files outside of Power BI Desktop aren't supported:
+Schema details for the following files aren't documented. During **preview**, changes to these files outside of Power BI Desktop aren't supported:
 
 - Report\
   - [report.json](projects-report.md#reportjson)
@@ -197,7 +197,7 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 
 **Question:** The Publish button is disabled when I'm working in a PBIP. How can I publish my content?
 
-**Answer:** Publish is disabled while this feature is in **PREVIEW**. You can either use Fabric Git Integration to publish your work, or save as a PBIX to publish.
+**Answer:** Publish is disabled while this feature is in **preview**. You can either use Fabric Git Integration to publish your work, or save as a PBIX to publish.
 
 **Question:** Can I deploy a Power BI Desktop project to Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS)?
 
