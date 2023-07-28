@@ -27,17 +27,16 @@ Any hard-coded text value that you add to the report layout can't be localized. 
 
 :::image type="content" source="./media/translation-builder-localize-label/power-bi-visual-title.png" alt-text="Screenshot shows a report visual with its generated title highlighted.":::
 
-The default **Title** property for a Cartesian visual is dynamically parsed together in a fashion that supports localization. As long as you supply metadata translations for the names of columns and measures in the underlying dataset definition, the **Title** property of the visual uses the translations. So, if you translate **Sales Revenue**, **Country**, and **Year**, the visual creates a localized title.
+The default **Title** property for a Cartesian visual is dynamically parsed together in a fashion that supports localization. As long as you supply metadata translations for the names of columns and measures in the underlying dataset definition, the **Title** property of the visual uses the translations. So, if you translate **Sales Revenue**, **Day**, and **Year**, the visual creates a localized title.
 
 The following table shows how the default **Title** property of this visual is updated for each of these five languages.
 
 | Language        | Visual Title                         |
 |-----------------|--------------------------------------|
-| English (en-US) | Sales Revenue by Country and Year    |
-| Spanish (es-ES) | Ingresos por ventas por país y año   |
-| French (fr-FR)  | Chiffre d'affaires par pays et année |
-| German (de-DE)  | Umsatz nach Land und Jahr            |
-| Dutch (nl-NL)   | Omzet per land en jaar               |
+| English (en-US) | Sales Revenue by Day and Year        |
+| Spanish (es-ES) | Ingresos Por Ventas por Día y Año    |
+| French (fr-FR)  | Chiffre D'Affaires par Jour et Année |
+| German (de-DE)  | Umsatz nach Tag und Jahr             |
 
 You might not like the dynamically generated visual **Title**, but don't replace it with hard-coded text. Any hard-coded text for the **Title** property can't be localized. Either leave the visual **Title** property with its default value or use the Localized Labels table strategy to create report labels that support localization.
 
@@ -87,7 +86,7 @@ To create your first report label, follow these steps:
 
 After you add the report labels to your .pbix project, they appear in the translation grid. Now you can add and edit localized label translations just like any other type of translation in the translation grid.
 
-:::image type="content" source="./media/translation-builder-localize-label/label-translation-grid.png" alt-text="Screenshot shows the Translations Builder grid with the report labels added.":::
+:::image type="content" source="./media/translation-builder-localize-label/label-translation-grid.png" alt-text="Screenshot shows the Translations Builder grid with the report labels added." lightbox="./media/translation-builder-localize-label/label-translation-grid.png":::
 
 ### About the Localized Labels table
 

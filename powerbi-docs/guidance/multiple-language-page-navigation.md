@@ -62,7 +62,7 @@ The multiple-language demo project contains buttons for navigation. To learn mor
 
    :::image type="content" source="./media/multiple-language-page-navigation/file-text-function.png" alt-text="Screenshot shows a report with a bookmark selected and the function button selected." lightbox="./media/multiple-language-page-navigation/file-text-function.png":::
 
-1. In the **Text - State** dialog box, from the **Translated Localized Labels** table, select the entry that corresponds to that button. For instance, **Sales by Country Label** for **Sales by Country**.
+1. In the **Text - State** dialog box, from the **Translated Localized Labels** table, select the entry that corresponds to that button. For instance, **Time Slices Label** for **Time Slices**.
 
    :::image type="content" source="./media/multiple-language-page-navigation/text-state.png" alt-text="Screenshot shows the Text State dialog box with a data field selected." lightbox="./media/multiple-language-page-navigation/text-state.png":::
 
