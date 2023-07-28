@@ -142,7 +142,7 @@ Console.Read();
 > [Power BI dataset scale-out](service-premium-scale-out.md)
 
 > [!div class="nextstepaction"]
-> [Configure Power BI dataset scale-out](service-premium-scale-out-configure.md)
+> [Configure dataset scale-out](service-premium-scale-out-configure.md)
 
 > [!div class="nextstepaction"]
 > [Tutorial: Test dataset scale-out](service-premium-scale-out-test.md)
