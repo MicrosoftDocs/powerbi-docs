@@ -37,7 +37,7 @@ The following table shows the required synchronization for each refresh method w
 
 By default, scale-out is enabled for your tenant, but it's not enabled for datasets in your tenant. To enable scale-out for a dataset, you must use the [Power BI REST APIs](/rest/api/power-bi/datasets/update-dataset-in-group). Before enabling, the following prerequisites must be met:
 
-* The **Scale-out queries for large datasets** in your tenant settings is enabled (default).
+* The **Scale-out queries for large datasets** setting for your tenant is enabled (default).
 
 * Your workspace resides on a Power BI Premium [capacity](service-premium-what-is.md#capacities-and-skus):
     * Premium Per User (PPU)
@@ -45,7 +45,7 @@ By default, scale-out is enabled for your tenant, but it's not enabled for datas
     * Power BI A SKUs for Power BI Embedded (also known as [embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers)).
     * Fabric F SKUs
 
-* [Large dataset storage format](service-premium-large-models.md) is enabled.
+* The [Large dataset storage format](service-premium-large-models.md) setting is enabled.
 
 * To manage datasets by using the REST API, use [Power BI Management cmdlets](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true). Install by opening PowerShell in Administrator mode, and running the command:
 
