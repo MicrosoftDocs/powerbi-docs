@@ -46,7 +46,7 @@ Q&A is available in reports if the report designer added a specific type of inte
 
 ### Use Q&A in mobile apps and embedded reports
 
-&A is available in [Power BI iOS apps](mobile/mobile-apps-ios-qna.md) and in [Power BI embedded analytics](../developer/embedded/qanda.md) as well. 
+Q&A is available in [Power BI iOS apps](mobile/mobile-apps-ios-qna.md) and in [Power BI embedded analytics](../developer/embedded/qanda.md) as well. 
 
 ## Considerations and troubleshooting
 
