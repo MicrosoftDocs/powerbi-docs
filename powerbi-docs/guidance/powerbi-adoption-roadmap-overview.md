@@ -127,4 +127,4 @@ Experienced Power BI partners are available to help your organization succeed wi
 
 ## Acknowledgments
 
-This series of articles was written by Melissa Coates, Data Platform MVP, and owner of [Coates Data Strategies](https://www.coatesdatastrategies.com/), with significant contributions from Matthew Roche. Reviewers include Cory Moore, James Ward, Timothy Bindas, Greg Moir, Chuy Varela, Daniel Rubiolo, Sanjay Raut, and Peter Myers.
+The Power BI adoption roadmap articles are written by Melissa Coates, Kurt Buhler, and Peter Myers. Matthew Roche, from the Fabric Customer Advisory Team, provides strategic guidance and feedback to the subject matter experts. Reviewers include Cory Moore, James Ward, Timothy Bindas, Greg Moir, Chuy Varela, Daniel Rubiolo, and Sanjay Raut.

@@ -116,7 +116,7 @@
       - name: User experience experiments
         href: service-admin-portal-user-experience-experiments.md
       - name: Share data with your Microsoft 365 services
-        href: service-admin-portal-share-data-microsoft-365-services.md
+        href: admin-share-power-bi-metadata-microsoft-365-services.md#how-to-turn-sharing-with-microsoft-365-services-on-and-off
       - name: Insights settings
         href: service-admin-portal-insights.md
       - name: Datamart settings

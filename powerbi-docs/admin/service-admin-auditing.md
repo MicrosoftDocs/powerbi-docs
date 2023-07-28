@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 07/10/2023
+ms.date: 07/19/2023
 ms.custom: licensing support,fabric
 LocalizationGroup: Administration
 ---
@@ -328,7 +328,7 @@ The following operations are available in both the audit and activity logs.
 | Created a Power BI scorecard | CreateScorecard | |
 | Created an organizational custom visual     | InsertOrganizationalGalleryItem   |    |
 | Created deployment pipeline      | CreateAlmPipeline       |  |
-| Created install ticket for installing Power BI template app | CreateTemplateAppInstallTicket | |
+| Created an install ticket for installing Power BI template app | CreateTemplateAppInstallTicket | |
 | Created Power BI app      | CreateApp           |       |
 | Created Power BI dashboard    | CreateDashboard  |       |
 | Created Power BI dataflow      | CreateDataflow            |                        |
@@ -340,8 +340,7 @@ The following operations are available in both the audit and activity logs.
 | Created Power BI gateway cluster datasource | CreateGatewayClusterDatasource | |
 | Created Power BI group      | CreateGroup            |       |
 | Created Power BI report       | CreateReport <sup>1</sup>      |          |
-| Created Power BI template app | CreateTemplateApp |  |
-| Created workspace for Power BI template app | CreateTemplateApp | |
+| Created a Power BI template  or a workspace for a template app | CreateTemplateApp |  |
 | Custom visual requested Azure AD access token         | GenerateCustomVisualAADAccessToken    |   |
 | Custom visual requested Office Web Apps access token    | CustomVisualWACAccessToken          |     |
 | Dataflow migrated to external storage account     | DataflowMigratedToExternalStorageAccount    | Not currently used                       |
@@ -364,7 +363,6 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI dataset rows | DeleteDatasetRows |Indicates that the [Push Datasets - Datasets DeleteRows](/rest/api/power-bi/push-datasets/datasets-delete-rows) API was called   |
 | Deleted Power BI email subscription   | DeleteEmailSubscription   |          |
 | Deleted Power BI folder   | DeleteFolder   |   |
-| Deleted Power BI metric | DeleteGoal | |
 | Deleted Power BI folder access     | DeleteFolderAccess     | Not currently used        |
 | Deleted Power BI gateway      | DeleteGateway                  |        |
 | Deleted Power BI gateway cluster | | |
@@ -374,10 +372,9 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI note | DeleteNote | |
 | Deleted Power BI scorecard | DeleteScorecard | |
 | Deleted Power BI report    | DeleteReport   |    |
-| Deleted Power BI template app | DeleteTemplateApp | |
+| DeleteTemplateApp | Deleted a  Power BI template app or a workspace for a template app| |
 | [Deleted sensitivity label from Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md)  | SensitivityLabelRemoved | |
 | Deleted snapshot for user in Power BI tenant | DeleteSnapshot | Generated when a user deletes a snapshot that describes a dataset |
-| Deleted workspace for Power BI template app | DeleteTemplateApp | |
 | Deployed to a pipeline stage     | DeployAlmPipeline    |        |
 | Discovered Power BI dataset data sources      | GetDatasources       | |
 | Downloaded Power BI report     | DownloadReport                   |       |
@@ -396,8 +393,7 @@ The following operations are available in both the audit and activity logs.
 | Export Power BI activity events | ExportActivityEvents | |
 | Exported Power BI item to another file format | ExportArtifact | |
 | Exported Power BI dataflow   | ExportDataflow |  |
-| Exported Power BI report to another file format | ExportReport | |
-| Exported Power BI report visual data    | ExportReport    |     |
+| Exported Power BI report to another file format or exported report visual data | ExportReport | |
 | Exported Power BI tile data    | ExportTile       |         |
 | Generated Power BI dataflow SAS token    | GenerateDataflowSasToken   |  |
 | Generated Power BI Embed Token     | GenerateEmbedToken  |        |
@@ -536,7 +532,6 @@ The following operations are available in both the audit and activity logs.
 | Updated Power BI dataset data sources   | UpdateDatasources  |   |
 | Updated Power BI dataset parameters    | UpdateDatasetParameters     |    |
 | Updated Power BI discoverable model settings | UpdateDiscoverableModelSettings | Generated when a report is set to feature on home |
-| Updated Power BI gateway data source credentials | UpdateDatasourceCredentials | |
 | Updated Power BI email subscription               | UpdateEmailSubscription                     |     |
 | Updated Power BI folder                           | UpdateFolder                                |    |
 | Updated Power BI folder access                    | UpdateFolderAccess                          |     |
