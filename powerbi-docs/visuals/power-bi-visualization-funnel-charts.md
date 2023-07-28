@@ -94,11 +94,11 @@ Let's create a funnel chart to show the number of opportunities in each sales st
 
    You can now convert the table visual into a funnel chart.
 
-1. Select the table visual, and then select **Funnel** on the **Visualizations** pane. Power converts the visual type to a funnel chart.
+1. Select the table visual, and then select **Funnel** on the **Visualizations** pane. Power BI converts the visual type to a funnel chart.
 
 1. On the **Fields** pane, expand **Fact** and select the **Opportunity Count** checkbox.
 
-   Power updates the funnel chart and the **Visualizations** pane. The **Opportunity Count** field is added to the **Values** option and the **Sales Stage** field is added to the **Category** option.
+   Power BI updates the funnel chart and the **Visualizations** pane. The **Opportunity Count** field is added to the **Values** option and the **Sales Stage** field is added to the **Category** option.
 
    :::image type="content" source="media/power-bi-visualization-funnel-charts/power-bi-funnel-chart.png" alt-text="Screenshot that shows how to convert the visual to a funnel chart and add another data field.":::
 
@@ -118,7 +118,7 @@ Let's create a funnel chart to show the number of opportunities in each sales st
 
 Highlighting a bar in a funnel chart cross-filters the other visualizations on the same report page and vice versa. To follow along, add a few more visuals to the report page that contains the funnel chart.
 
-On the funnel chart visual, select the **Proposal** bar. This action cross-highlights the related data in the other visualizations on the report page. You can use CTRL to multi-select bars in the chart.
+On the funnel chart visual, select the **Proposal** bar. This action cross-highlights the related data in the other visualizations on the report page. You can use CTRL (+ select) to select multiple bars in the chart.
 
 :::image type="content" source="media/power-bi-visualization-funnel-charts/power-bi-funnel-cross-filter.png" alt-text="Screenshot of two bars selected in the funnel chart and cross-highlights and cross-filters on other visuals on the page." border="false":::
 
