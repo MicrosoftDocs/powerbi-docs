@@ -22,7 +22,7 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 Use Q&A to explore your data using natural language capabilities and receive answers in the form of charts and graphs. Unlike a search engine, Q&A only provides results about the data in Power BI datasets.
 
-To learn more about Q&A, see [Explore your data and create visuals using Q&A](../create-reports/power-bi-tutorial-q-and-a.md)
+To learn how to use Q&A, see [Explore your data and create visuals using Q&A](../create-reports/power-bi-tutorial-q-and-a.md)
 
 ## Which visualizations does Q&A use?
 
