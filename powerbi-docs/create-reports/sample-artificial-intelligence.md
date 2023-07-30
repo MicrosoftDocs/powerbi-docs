@@ -30,12 +30,12 @@ Before you can use the sample, get the sample in one of the following ways:
 
 ### Get the built-in sample
 
-1. Open the Power BI service (`app.powerbi.com`). and make sure you're in the Power BI experience.
+1. Open the Power BI service (`app.powerbi.com`), and make sure you're in the Power BI experience.
 
     :::image type="content" source="media/sample-artificial-intelligence/power-bi-experience-selector.png" alt-text="Screenshot of Power BI experience selector.":::
 
 
-1. Select  **Learn** in the left navigation.
+1. Select  **Learn** in the navigation pane.
 
     :::image type="content" source="media/sample-artificial-intelligence/power-bi-learn-icon.png" alt-text="Screenshot of Learn icon in navigation pane.":::
 
