@@ -39,11 +39,11 @@ Before you can use the sample, get the sample in one of the following ways:
 
     :::image type="content" source="media/sample-artificial-intelligence/power-bi-learn-icon.png" alt-text="Screenshot of Learn icon in navigation pane.":::
 
-1. On the Learning center page, under **Sample reports**, scroll horizontally until you see the **Artificial Intelligence Sample**.
+1. On the Learning center page, under **Sample reports**, scroll horizontally until you see the **Artificial Intelligence Sample**. Select the sample.
 
    :::image type="content" source="media/sample-artificial-intelligence/power-bi-ai-sample.png" alt-text="Screenshot of Sample reports.":::
 
-1. Select the sample. Power BI saves the report and dataset to your *My workspace*.
+    Power BI saves the report and dataset to your *My workspace*.
 
    :::image type="content" source="media/sample-artificial-intelligence/power-bi-ai-sample-report-list.png" alt-text="Screenshot showing Artificial Intelligence sample report listed in My workspace.":::
 
