@@ -11,7 +11,7 @@ ms.date: 07/19/2023
 
 # Use locale values in multiple-language Power BI reports
 
-Every report that loads in the Power BI service initializes with a user context that identifies a *language* and a geographical region known as a *locale*. In most cases, a locale identifies a country. The Power BI service tracks the combination of the user's language and locale using a *culture name*.
+Every report that loads in the Power BI service initializes with a user context that identifies a *language* and a geographical region known as a *locale*. In most cases, a locale identifies a country/region. The Power BI service tracks the combination of the user's language and locale using a *culture name*.
 
 A culture name is usually a lower-case language identifier and an upper-case locale identifier separated by a hyphen. The culture name `en-US` identifies a user in the United States who speaks English. A culture name of `es-ES` identifies a user in Spain who speaks Spanish. A culture name of `fr-FR` identifies a user in France who speaks French. A culture name of `de-DE` identifies a user in Germany who speaks German.
 
