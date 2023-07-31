@@ -61,7 +61,7 @@ Select **Source Control**. In the source control pane, select the file and commi
 
 :::image type="content" source="media/paginated-reports-git-integration/<>" alt-text="Screenshot of Commit":::
 
-Once you commit the file, the **Git status** will change to ## Sync ##
+Once you commit the file, the **Git status** will change to **Sync**
 
 :::image type="content" source="media/paginated-reports-git-integration/<>" alt-text="Screenshot of Git Synced":::
 
