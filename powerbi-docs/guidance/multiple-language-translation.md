@@ -36,7 +36,7 @@ Metadata translation is also used to display column names and measure names in t
 
 :::image type="content" source="./media/multiple-language-translation/display-column-name-translate.png" alt-text="Screenshot shows a Power BI report with a table with column names and measures in German." lightbox="./media/multiple-language-translation/display-column-name-translate.png":::
 
-Metadata translations are the easiest to create, manage, and integrate into a Power BI report. By applying the features of Translations Builder to generate machine translations, you can add the metadata translations you need to build and test a Power BI report. Adding metadata translations to your dataset is an essential first step.
+Metadata translations are the easiest to create, manage, and integrate into a Power BI report. By applying the features of Translations Builder to generate machine translations, you can add the metadata translations you need to build and test a Power BI report. Adding metadata translations to your dataset is an essential first step. For more information, see [Create multiple-language reports with Translations Builder](translation-builder.md).
 
 ### Power BI support for metadata translation
 
@@ -82,4 +82,4 @@ A multiple-language report typically requires both metadata translations and rep
 
 ## Next steps
 
-[Use locale values in multiple-language Power BI reports](multiple-language-locale.md)
+- [Use locale values in multiple-language Power BI reports](multiple-language-locale.md)
