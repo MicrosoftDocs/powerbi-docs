@@ -24,15 +24,15 @@ Git Integration for Microsoft Fabric: [Introduction to git integration](https://
 
 ## Get started
 
-In the Power BI service, navigate to the Workspace that you would like to sync with your github repository by selecting *Workspace* in the left nav.
+In the Power BI service, navigate to the Workspace that you would like to sync with your github repository by selecting **Workspace** in the left nav.
 
 :::image type="content" source="media/paginated-reports-git-integration/<>" alt-text="Screenshot of the Workspace":::
 
-Select ## Workspace Settings ## in the Workspace
+Select **Workspace Settings** in the Workspace
 
 :::image type="content" source="media/paginated-reports-git-integration/<>" alt-text="Screenshot of the Workspace Settings":::
 
-Select ## Git integration ## in the Workspace Settings 
+Select **Git integration** in the Workspace Settings 
 
 :::image type="content" source="media/paginated-reports-git-integration/<>" alt-text="Screenshot of Git Integration":::
 
@@ -40,12 +40,12 @@ Enter the information required to connect to your git workspace
 
 :::image type="content" source="media/paginated-reports-git-integration/<>" alt-text="Screenshot of the information to connect to workspace":::
 
-Click on "Connect and sync". 
+Click on **Connect and sync**. 
 
 :::image type="content" source="media/paginated-reports-git-integration/<>" alt-text="Screenshot of the Connect and sync":::
 
 
- If the branch is new, you will be prompted to “Create and sync”.
+ If the branch is new, you will be prompted to **Create and sync**.
 
 :::image type="content" source="media/paginated-reports-git-integration/<>" alt-text="Screenshot of the Create and sync":::
 
@@ -53,15 +53,15 @@ Upload your rdl to the workspace on the service. We don't support OneDrive and S
 
 :::image type="content" source="media/paginated-reports-git-integration/<>" alt-text="Screenshot of the Upload button":::
 
-Once the file is uploaded, you should see the report and the Git status “Uncommitted” and “Source control”.
+Once the file is uploaded, you should see the report and the Git status **Uncommitted** and **Source control**.
 
 :::image type="content" source="media/paginated-reports-git-integration/<>" alt-text="Screenshot of status":::
 
-Select ## Source Control ## . In the source control pane, select the file and commit.  
+Select **Source Control**. In the source control pane, select the file and commit.  
 
 :::image type="content" source="media/paginated-reports-git-integration/<>" alt-text="Screenshot of Commit":::
 
-Once you commit the file, the ##Git status ## will change to ## Sync ##
+Once you commit the file, the **Git status** will change to ## Sync ##
 
 :::image type="content" source="media/paginated-reports-git-integration/<>" alt-text="Screenshot of Git Synced":::
 
