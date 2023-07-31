@@ -13,7 +13,7 @@ LocalizationGroup: Admin
 # Direct Lake (PREVIEW)
 
 > [!IMPORTANT]
-> Direct Lake is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here. Before testing in your environment, be sure to read [Known issues and limitations](#known-issues-and-limitations) later in this article.
+> Direct Lake is currently in **preview**. Before testing in your environment, be sure to read [Known issues and limitations](#known-issues-and-limitations) later in this article.
 
 *Direct Lake* mode is a groundbreaking new dataset capability for analyzing very large data volumes in Power BI. Direct Lake is based on loading parquet-formatted files directly from a data lake without having to query a Lakehouse endpoint, and without having to import or duplicate data into a Power BI dataset. Direct Lake is a fast-path to load the data from the lake straight into the Power BI engine, ready for analysis. The following diagram shows how classic import and DirectQuery modes compare with the new Direct Lake mode.
 
