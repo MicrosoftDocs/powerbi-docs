@@ -6,7 +6,7 @@ ms.author: alpowers
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 05/01/2023
+ms.date: 05/30/2023
 LocalizationGroup: Samples
 ---
 # Artificial Intelligence sample for Power BI: Take a tour
@@ -30,17 +30,24 @@ Before you can use the sample, get the sample in one of the following ways:
 
 ### Get the built-in sample
 
-1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
+1. Open the Power BI service (`app.powerbi.com`), and make sure you're in the Power BI experience.
 
-1. On the Learning center page, under **Sample reports**, scroll until you see the **Artificial Intelligence Sample**.
+    :::image type="content" source="media/sample-artificial-intelligence/power-bi-experience-selector.png" alt-text="Screenshot of Power BI experience selector.":::
+
+
+1. Select  **Learn** in the navigation pane.
+
+    :::image type="content" source="media/sample-artificial-intelligence/power-bi-learn-icon.png" alt-text="Screenshot of Learn icon in navigation pane.":::
+
+1. On the Learning center page, under **Sample reports**, scroll horizontally until you see the **Artificial Intelligence Sample**. Select the sample.
 
    :::image type="content" source="media/sample-artificial-intelligence/power-bi-ai-sample.png" alt-text="Screenshot of Sample reports.":::
 
-1. Select the sample. Power BI saves the report and dataset to your workspace.
+    Power BI saves the report and dataset to your *My workspace*.
 
-   :::image type="content" source="media/sample-it-spend/it-spend-analysis-sample-entry.png" alt-text="Screenshot shows the IT Spend Analysis sample dashboard link.":::
+   :::image type="content" source="media/sample-artificial-intelligence/power-bi-ai-sample-report-list.png" alt-text="Screenshot showing Artificial Intelligence sample report listed in My workspace.":::
 
-   Select the report to view the sample.
+   Select the report to view the sample report.
 
 ### Get the .pbix file for this sample
 
