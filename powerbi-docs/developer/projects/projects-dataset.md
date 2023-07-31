@@ -13,7 +13,7 @@ ms.date: 05/31/2023
 # Power BI Desktop project dataset folder
 
 > [!IMPORTANT]
-> Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Power BI Desktop projects is currently in **preview**.
 
 This article describes the files and subfolders in a Microsoft Power BI Desktop project's **Dataset** folder. The files and subfolders here represent a Power BI dataset. Depending on your project, the dataset folder can include:
 
