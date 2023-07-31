@@ -20,7 +20,7 @@ For service level outages or degradation notifications, check [https://support.p
 
 Select the **Title** to view more information about that specific known issue.
 
-|  Issue ID |  Area                              |  Title  |  Issue publish date |  
+|  Issue ID |  Area                              |  Title  |  Issues publish date |  
 |-----------|------------------------------------|---------|---------------------|
 |  465      |  Embedded, REST API or PowerShell  |  [Report embed edit app Bar intermittently not rendered]
 (known-issue-465-embed-report-renders-intermittently.md)    |July 27, 2023  |
