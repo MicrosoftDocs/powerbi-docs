@@ -11,9 +11,9 @@
       href: https://support.fabric.microsoft.com/known-issues
     - name: Report embed edit app Bar intermittently not rendered
       href: known-issues/known-issue-465-embed-report-renders-intermittently.md     
-    - name: dataflow scheduled refresh of dataset, intermittently hangs and following scheduled refresh is skipped
+    - name: Dataflow scheduled refresh of dataset, intermittently hangs and following scheduled refresh is skipped
       href: known-issues/known-issue-461-scheduled-refresh-dataflow-hangs-intermittently.md   
-    - name: deployment pipeline stuck in loading
+    - name: Deployment pipeline stuck in loading
       href: known-issues/known-issue-443-deploy-pipeline-stuck-to-load.md  
     - name: Workspace setting 'large dataset storage format' isn't persistent 
       href: known-issues/known-issue-432-workspace-setting-large-dataset-storage-format-not-persistent.md

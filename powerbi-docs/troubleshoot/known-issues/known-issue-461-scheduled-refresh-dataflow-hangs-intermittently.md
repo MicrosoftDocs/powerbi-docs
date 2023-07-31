@@ -1,6 +1,6 @@
 ---
 title: Known issue - dataflow scheduled refresh of dataset, intermittently hangs and following scheduled refresh is skipped
-description: A known issue is posted where dataflow scheduled refresh of dataset, intermittently hangs and following scheduled refresh is skipped
+description: A known issue is posted where dataflow scheduled refresh of dataset, intermittently hangs and following scheduled refresh is skipped.
 author: mihart
 ms.author: anirmale
 ms.topic: troubleshooting  
@@ -12,7 +12,7 @@ ms.custom: known-issue-461
 
 # Known issue - dataflow scheduled refresh of dataset, intermittently hangs and immediate scheduled refresh is skipped
 
- dataflow scheduled dataset refresh hangs intermittently and the immediate scheduled refresh may be skipped.
+ Dataflow scheduled dataset refresh hangs intermittently and the immediate scheduled refresh may be skipped.
 
 **APPLIES TO:** ✔️ Power BI
 
@@ -22,11 +22,11 @@ ms.custom: known-issue-461
 
 ## Symptoms
 
-user experiences skipped scheduled refresh on datasets that use dataflow as data source. The schedule time under the "scheduled refresh" option on the dataset settings page displays correctly, however if you refer to the "Refresh history" you find that the refresh didn't take place.
+User experiences skipped scheduled refresh on datasets that use dataflow as data source. The schedule time under the "scheduled refresh" option on the dataset settings page displays correctly, however if you refer to the "Refresh history" you find that the refresh didn't take place.
 
 ## Solutions and workarounds
 
-only available workaround at the moment is to republish the dataset under a different name to the same workspace.
+Only available workaround at the moment is to republish the dataset under a different name to the same workspace.
 
 ## Next steps
 
