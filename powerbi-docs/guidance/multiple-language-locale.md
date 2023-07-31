@@ -122,4 +122,4 @@ Here are a few examples of how a date value formatted with **Short Date** appear
 
 ## Next steps
 
-[Guidance for Power BI](overview.md)
+- [Create multiple-language reports with Translations Builder](translation-builder.md)
