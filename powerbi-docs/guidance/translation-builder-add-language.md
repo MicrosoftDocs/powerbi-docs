@@ -34,7 +34,7 @@ Translations Builder provides an **Add Language** option to add secondary langua
 
 Translations Builder doesn't add metadata translations for a specific language. Instead, it adds metadata translations for a culture name that identifies both a language and a locale. For more information, see [Use locale values in multiple-language Power BI reports](multiple-language-locale.md).
 
-Translations Builder abstracts away the differences between a language and a culture name to simplify the user experience. Content creators can think in terms of languages and countries instead of culture names.
+Translations Builder abstracts away the differences between a language and a culture name to simplify the user experience. Content creators can think in terms of languages instead of culture names.
 
 To add one or more secondary languages, follow these steps.
 
