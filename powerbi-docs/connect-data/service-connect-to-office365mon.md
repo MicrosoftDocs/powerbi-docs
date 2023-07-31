@@ -26,13 +26,13 @@ Connect to the [Office365Mon template app](https://msit.powerbi.com/groups/me/ge
    
    :::image type="content" source="media/service-connect-to-office365mon/connect-your-data.png" alt-text="Screenshot that shows the Connect your data link." lightbox="media/service-connect-to-office365mon/connect-your-data.png":::
 
-2. In the **Connect to Office365 PowerBI Template Pack** window, select **Next**:
+2. In the **Connect to Office365 Power BI Template Pack** window, select **Next**:
    
-   :::image type="content" source="media/service-connect-to-office365mon/connect-template.png" alt-text="Screenshot that shows the Connect to Office365 PowerBI Template Pack window.":::
+   :::image type="content" source="media/service-connect-to-office365mon/connect-template.png" alt-text="Screenshot that shows the Connect to Office365 Power BI Template Pack window.":::
 
 3. In the **Authentication method** box, select **OAuth2**. You can change the privacy level if you want. For more information, select **Learn more** in the window. When you're done, select **Sign in and connect**.
    
-   :::image type="content" source="media/service-connect-to-office365mon/connect-template-2.png" alt-text="Screenshot that shows connection options in the Connect to Office365 PowerBI Template Pack window.":::
+   :::image type="content" source="media/service-connect-to-office365mon/connect-template-2.png" alt-text="Screenshot that shows connection options in the Connect to Office365 Power BI Template Pack window.":::
 
 4. When prompted, enter your Office365Mon admin credentials and complete the authentication process.
 
