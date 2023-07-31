@@ -207,13 +207,13 @@ Power BI supports highlighting locations in a filled map to cross-filter related
 
 1. Enter CTRL+V to paste the copy of the map visual onto the Sentiment report page.
 
-   :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-report.png" alt-text="Screenshot that shows the filled map added to the Sentiment report page and aligned with the other visuals.":::
+   :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-report.png" alt-text="Screenshot that shows the filled map added to the Sentiment report page and aligned with the other visuals." lightbox="media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-report.png":::
 
 1. On the filled map, select a state to cross-highlight and cross-filter the other visualizations on the page.
 
    In our example, we select Texas (TX). Power BI cross-filters the cards and cross-highlights the bar chart for the related data for Texas. At the top of the report page, the multi-row card visual shows the **Sentiment** as **75**. In the clustered bar chart, we see Texas is located in **Central District #23**.
 
-   :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-cross-filter-state.png" alt-text="Screenshot that shows the cross-highlight and cross-filter results in other visuals when we select Texas on the filled map.":::
+   :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-cross-filter-state.png" alt-text="Screenshot that shows the cross-highlight and cross-filter results in other visuals when we select Texas on the filled map." lightbox="media/power-bi-visualization-filled-maps-choropleths/power-bi-cross-filter-state.png":::
 
 1. Select a data point on the _VanArsdel - Sentiment by Month_ line chart.
 
