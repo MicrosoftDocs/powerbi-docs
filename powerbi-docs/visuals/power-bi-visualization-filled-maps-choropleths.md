@@ -207,7 +207,7 @@ Power BI supports highlighting locations in a filled map to cross-filter related
 
 1. Enter CTRL+V to paste the copy of the map visual onto the Sentiment report page.
 
-   :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-report.png" alt-text="Screenshot that shows the filled map added to the Sentiment report page and aligned with the other visuals." lightbox="media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-report-expanded.png":::
+   :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-report.png" alt-text="Screenshot that shows the filled map added to the Sentiment report page and aligned with the other visuals.":::
 
 1. On the filled map, select a state to cross-highlight and cross-filter the other visualizations on the page.
 
