@@ -89,7 +89,7 @@ Console.Read();
 
 ## App 3 - Query the dataset data
 
-Use `ADOMD.NET` to query the data in the dataset replicas. Replace `<WorkspaceUrl>` with your workspace's URL, and `<DatasetName>` with your dataset's name.
+Use `ADOMD.NET` to query the data in the replicas. Replace `<WorkspaceUrl>` with your workspace's URL, and `<DatasetName>` with your dataset's name.
 
 ```typescript
 string workspaceUrl = "<WorkspaceUrl>";  // Replace WorkspaceUrl with the URL of your workspace 

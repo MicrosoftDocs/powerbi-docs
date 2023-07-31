@@ -73,15 +73,15 @@ To learn how to enable or disable scale-out for a dataset, or get scale-out stat
 
 When scale-out is enabled, the following connections are retained:
 
-* By default, Power BI Desktop connects to a dataset replica.
+* By default, Power BI Desktop connects to a read-only replica.
 
-* [Live connection](./../connect-data/desktop-report-lifecycle-datasets.md) reports connect to a dataset replica.
+* [Live connection](./../connect-data/desktop-report-lifecycle-datasets.md) reports connect to a read-only replica.
 
 * XMLA client applications connect to the read-write dataset by default.
 
 * Refreshes in the Power BI service and refreshes using the [Enhanced Refresh REST API](./../connect-data/asynchronous-refresh.md) connect to the read-write dataset.
 
-You can connect to a read-only dataset replica or the read-write dataset by appending one of the following strings to the dataset's URL:
+You can connect to a read-only replica or the read-write dataset by appending one of the following strings to the dataset's URL:
 
 * **Read-only** - `?readonly`
 * **Read-write** - `?readwrite`
@@ -104,7 +104,7 @@ Power BI dataset scale-out is enabled by default for a tenant. Power BI tenant a
 
 * Client applications can connect to a read-only replica through the XMLA endpoint, provided they support the mode specified in the connection string. Client applications can also connect to the read-write instance by using the XMLA endpoint.
 
-* Manual and scheduled refreshes are always automatically synchronized with the latest version of the read-only dataset replicas. REST API refreshes respect the automatic sync configuration. If automatic sync is disabled, your dataset must be synced with the read-only replicas by using the manual sync REST API.
+* Manual and scheduled refreshes are always automatically synchronized with the latest version of the read-only  replicas. REST API refreshes respect the automatic sync configuration. If automatic sync is disabled, your dataset must be synced with the read-only replicas by using the manual sync REST API.
 
 * With automatic sync disabled, XMLA updates and refreshes must be synced with the read-only dataset copies by using the sync REST API.
 

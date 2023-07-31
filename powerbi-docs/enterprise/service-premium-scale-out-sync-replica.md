@@ -18,11 +18,11 @@ LocalizationGroup: Premium
 
 This article describes how to synchronize a dataset scale-out replicas by using PowerShell at the command line or by script.
 
-When you're working against the primary read-write dataset, and dataset users are using the read-only replicas, you can perform dataset metadata updates and refreshes without affecting them. However, changes to the dataset model and refreshes take place in the primary dataset. To copy the changes to the read-only dataset replicas, it must be synchronized with the read-write dataset.
+When you're working against the primary read-write dataset, and dataset users are using the read-only replicas, you can perform dataset metadata updates and refreshes without affecting them. However, changes to the dataset model and refreshes take place in the primary dataset. To copy the changes to the read-only replicas, it must be synchronized with the read-write dataset.
 
-By default, the `autoSyncReadOnlyReplicas` parameter is set to `true` - Power BI synchronizes the dataset replicas automatically. You can disable auto sync by setting `autoSyncReadOnlyReplicas` to `false`. However, you can choose to sync manually by using `syncStatus` and `sync` REST APIs.
+By default, the `autoSyncReadOnlyReplicas` parameter is set to `true` - Power BI synchronizes the replicas automatically. You can disable auto sync by setting `autoSyncReadOnlyReplicas` to `false`. However, you can choose to sync manually by using `syncStatus` and `sync` REST APIs.
 
-To check the sync status of your dataset replicas, use the `SyncStatus` REST API. This article describes the PowerShell commands for using this API.
+To check the sync status of your replicas, use the `SyncStatus` REST API. This article describes the PowerShell commands for using this API.
 
 ## Check replica sync status
 
