@@ -12,7 +12,7 @@ ms.date: 07/26/2023
 
 All multiple-language reports require metadata translation and report label translation, but not necessarily data translation. To determine whether your project requires data translation, think through the use cases that you plan to support. Using data translation involves planning and effort. You might decide not to support data translation unless it's a hard requirement for your project.
 
-Implementing data translation is different from implementing metadata translation or report label translation. Power BI doesn't offer any localization features to assist you with data translation. Instead, you must implement a data translation strategy. Such a strategy involves extending the underlying data source with extra columns to track translations for text in rows of data, such as the names of products, categories, and countries.
+Implementing data translation is different from implementing metadata translation or report label translation. Power BI doesn't offer any localization features to assist you with data translation. Instead, you must implement a data translation strategy. Such a strategy involves extending the underlying data source with extra columns to track translations for text in rows of data, such as the names of products and categories.
 
 ## Determine whether your solution requires data translation
 
@@ -24,13 +24,13 @@ Suppose you're developing a report template for a software as a service (SaaS) a
 
 Each customer deployment uses a single language for its database and all its users. Both metadata translations and report label translations must be implemented in this use case. You deploy a single version of the .pbix file across all customer deployments. However, there's no need to implement data translations when no database instance ever needs to be viewed in multiple languages.
 
-A different use case introduces the requirement of data translations. The example .pbix project file uses a single database instance that contains sales performance data across several European countries. This solution must display its reports in different languages with data from a single database instance.
+A different use case introduces the requirement of data translations. The example .pbix project file uses a single database instance that contains sales performance data across several European countries/regions. This solution must display its reports in different languages with data from a single database instance.
 
 :::image type="content" source="./media/data-translation/customer-deployment-import.png" alt-text="Diagram shows a customer deployment with a single data source that serves multiple languages." lightbox="./media/data-translation/customer-deployment-import.png":::
 
 If you have people that use different languages and locales to interact with the same database instance, you still need to address other considerations.
 
-- Examine the text-based columns that are candidates for translation. Determine how hard translating those text values is. Columns with short text values for things like product names, product categories, and country names are good candidates for data translations. Suppose that there's column for product descriptions where each row has two to three sentences of text. Such descriptions require more effort to generate high quality translations.
+- Examine the text-based columns that are candidates for translation. Determine how hard translating those text values is. Columns with short text values for things like product names and product categories, are good candidates for data translations. Suppose that there's column for product descriptions where each row has two to three sentences of text. Such descriptions require more effort to generate high quality translations.
 
 - Consider the number of distinct values that require translation. You can easily translate product names in a database that holds 100 products. You can probably translate product names when the number gets up to 1000. What happens if the number of translated values reaches 10,000 or 100,000? If you can't rely on machine-generate translations, your translation team might have trouble scaling up to handle that volume of human translations.
 

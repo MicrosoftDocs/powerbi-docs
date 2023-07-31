@@ -91,13 +91,13 @@ The names of the columns in a field parameter are generated based on the name yo
 
    :::image type="content" source="./media/data-translation-implement-field/report-view-product.png" alt-text="Screenshot shows a table in the Data view with the column name changed to Product." lightbox="./media/data-translation-implement-field/report-view-product.png":::
 
-1. Rename the two hidden fields with shorter names, such as *Fields* and *SortOrder*.
+1. Rename the two hidden fields with shorter names, such as *Fields* and *Sort Order*.
 
-   :::image type="content" source="./media/data-translation-implement-field/report-view-rename-hidden-field.png" alt-text="Screenshot shows a table in the Data view with the column names changed to Fields and SortOrder.":::
+   :::image type="content" source="./media/data-translation-implement-field/report-view-rename-hidden-field.png" alt-text="Screenshot shows a table in the Data view with the column names changed to Fields and Sort Order.":::
 
 ## Add a language ID column
 
-The field parameter is a table with three columns named **Product**, **Fields**, and **SortOrder**. The next step is to add a fourth column with a language identifier to enable filtering by language. You can add the column by modifying the DAX expression for the field parameter.
+The field parameter is a table with three columns named **Product**, **Fields**, and **Sort Order**. The next step is to add a fourth column with a language identifier to enable filtering by language. You can add the column by modifying the DAX expression for the field parameter.
 
 1. Add a fourth string parameter to the row for each language with the lower-case two character language identifier.
 

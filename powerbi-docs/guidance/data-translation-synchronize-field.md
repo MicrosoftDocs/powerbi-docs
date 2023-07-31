@@ -48,7 +48,7 @@ After you create the new field parameter, you need to update the model to use it
 1. Locate the **Translated Category Names** table and the **Languages** table. 
 1. Drag **LanguageId** from **Translated Category Names** to the **Languages** table to create a one-to-one relationship.
 
-   :::image type="content" source="./media/data-translation-synchronize-field/language-relationship.png" alt-text="Screenshot shows the Model view with three tables, including the newly added Translated Category Name, in a one-to-one relationship to Languages." lightbox="./media/data-translation-synchronize-field/language-relationship.png":::
+   :::image type="content" source="./media/data-translation-synchronize-field/language-relationship.png" alt-text="Screenshot shows the Model view with three tables, including the newly added Translated Category Name, in a one-to-one relationship to Languages.":::
 
 The language filter now affects categories.
 
