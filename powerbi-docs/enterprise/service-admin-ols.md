@@ -18,7 +18,7 @@ Object-level security (OLS) enables model authors to secure specific tables or c
 
 Like RLS, OLS is also defined within model roles. Currently, you can't create OLS definitions natively in Power BI Desktop.
 
-To create roles on **Power BI Desktop** datasets, use [external tools](../transform-model/desktop-external-tools.md) such as [Tabular Editor](https://tabulareditor.github.io/).  
+To create roles on **Power BI Desktop** datasets, use [external tools](../transform-model/desktop-external-tools.md) such as [Tabular Editor](https://tabulareditor.com).  
 
 ### Configure object level security using tabular editor
 
