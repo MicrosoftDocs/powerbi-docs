@@ -42,15 +42,15 @@ Select **Git integration** in the Workspace Settings and enter the information r
 
 Upload your rdl to the workspace on the service. We don't support OneDrive and Sharepoint yet.
 
-:::image type="content" source="media/page-view/paginated-reports-workspace-upload" alt-text="Screenshot of the Upload button":::
+:::image type="content" source="media/page-view/paginated-reports-workspace-upload.png" alt-text="Screenshot of the Upload button":::
 
 Once the file is uploaded, you should see the report and the Git status **Uncommitted** and **Source control**.
 
-:::image type="content" source="media/page-view/paginated-reports-git-source-control.png" alt-text="Screenshot of status":::
+:::image type="content" source="media/page-view/paginated-reports-source-control.png" alt-text="Screenshot of status":::
 
 Select **Source Control**. In the source control pane, select the file and commit.  
 
-:::image type="content" source="media/page-view/paginated-reports-git-source-control-1.png" alt-text="Screenshot of Commit":::
+:::image type="content" source="media/page-view/paginated-reports-source-control-1.png" alt-text="Screenshot of Commit":::
 
 Once you commit the file, the **Git status** will change to **Sync**
 
