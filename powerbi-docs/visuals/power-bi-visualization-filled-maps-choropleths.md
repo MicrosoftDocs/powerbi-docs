@@ -40,12 +40,12 @@ For more information about the data sent to Bing, and for tips to increase your 
 
 Filled maps are a great choice in many scenarios:
 
-- Display quantitative information on a map
-- Show spatial patterns and relationships
-- Support standardized data
-- Work with socioeconomic data
-- Support defined regions
-- Display an overview of distribution across geographic locations
+- Display quantitative information on a map.
+- Show spatial patterns and relationships.
+- Support standardized data.
+- Work with socioeconomic data.
+- Support defined regions.
+- Display an overview of distribution across geographic locations.
 
 ## Prerequisites
 
@@ -177,7 +177,7 @@ Power BI supports tooltips for areas on a filled map and for specific fields. Wh
 
 1. Expand the **Data** and **Visualizations** panes, if they're collapsed.
 
-1. On the **Data** pane, locate the **SalesFact** > **Sentiment gap** field. Drag the field onto the **Tooltips** option on the **Visualizations** pane.
+1. On the **Data** pane, locate the **SalesFact** > **Sentiment Gap** field. Drag the field onto the **Tooltips** option on the **Visualizations** pane.
 
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-add-tooltip-field.png" alt-text="Screenshot that shows how to add a field from the Data pane to the Tooltips option on the Visualizations pane.":::
 
