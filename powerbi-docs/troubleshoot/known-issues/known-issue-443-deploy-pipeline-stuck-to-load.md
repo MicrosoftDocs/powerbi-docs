@@ -11,7 +11,7 @@ ms.custom: known-issue-443
 ---
 
 # Known issue - deployment pipeline stuck in loading
-Deployment pipeline stuck in loading
+When using a deployment pipeline, it doesn't load.
 
 **Status:** Open
 
