@@ -24,7 +24,7 @@ Git Integration for Microsoft Fabric: [Introduction to git integration](https://
 
 ## Get started
 
-In the Power BI service, navigate to the Workspace that you would like to sync with your github repository by selecting **Workspace** in the left nav.
+In the Power BI service, navigate to the Workspace that you would like to sync with your git repository by selecting **Workspace** in the left nav.
 
 :::image type="content" source="media/page-view/paginated-reports-workspace-selection.png" alt-text="Screenshot of the Workspace":::
 
@@ -68,7 +68,7 @@ You will see a folder in your git repository which contains the .rdl and 2 .json
 
 2. The paginated report will not render if you start with the files in git.  
 
-3. When deleting the paginated report from the Power BI service, delete the entire folder and not just the RDL report.  
+3. When deleting the paginated report from git, delete the entire folder and not just the RDL report.  
 
 4. If you move the paginated report to a different workspace, it will still be connected to the original dataset. If the dataset needs to be updated, please update the dataset in Power BI Report builder.
 
