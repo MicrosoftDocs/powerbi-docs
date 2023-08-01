@@ -107,6 +107,18 @@
       href: multiple-language-translation.md
     - name: Use locale values in reports
       href: multiple-language-locale.md
+    - name: Use best practices to localize reports
+      href: multiple-language-best-practice.md
+    - name: Create reports with Translations Builder
+      href: translation-builder.md
+    - name: Add a language to a report
+      href: translation-builder-add-language.md
+    - name: Add a Localized Labels table
+      href: translation-builder-localize-label.md
+    - name: Generate machine translations
+      href: translation-builder-machine-translation.md
+    - name: Multiple-language page navigation
+      href: multiple-language-page-navigation.md
     - name: Implement data translation
       href: data-translation.md
     - name: Support data translations
