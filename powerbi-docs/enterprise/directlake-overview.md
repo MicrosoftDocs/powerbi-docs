@@ -13,7 +13,7 @@ LocalizationGroup: Admin
 # Direct Lake (PREVIEW)
 
 > [!IMPORTANT]
-> Direct Lake is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here. Before testing in your environment, be sure to read [Known issues and limitations](#known-issues-and-limitations) later in this article.
+> Direct Lake is currently in **preview**. Before testing in your environment, be sure to read [Known issues and limitations](#known-issues-and-limitations) later in this article.
 
 *Direct Lake* mode is a groundbreaking new dataset capability for analyzing very large data volumes in Power BI. Direct Lake is based on loading parquet-formatted files directly from a data lake without having to query a Lakehouse endpoint, and without having to import or duplicate data into a Power BI dataset. Direct Lake is a fast-path to load the data from the lake straight into the Power BI engine, ready for analysis. The following diagram shows how classic import and DirectQuery modes compare with the new Direct Lake mode.
 
@@ -69,6 +69,7 @@ The following are known issues and limitations during **PREVIEW**:
 - The dataset user interface might display a warning icon on a table even though the table has no issues. This will be addressed in a future update.
 
 - The initial, default/auto-generated dataset may not be in Direct Lake mode if there's only a single table in the Lakehouse. To get the dataset to use Direct Lake mode, make a small change on the table in the Lakehouse, like renaming the table. The rename should cause the dataset to switch to Direct Lake mode.
+- Tables based TSQL-based views cannot be queried in Direct Lake mode. DAX queries that use these tables fallback to DirectQuery mode.
 
 ## Create a Lakehouse
 
