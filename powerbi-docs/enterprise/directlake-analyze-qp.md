@@ -13,7 +13,7 @@ LocalizationGroup: Admin
 # Analyze query processing for Direct Lake datasets (PREVIEW)
 
 > [!IMPORTANT]
-> Direct Lake is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Direct Lake is currently in **preview**.
 
 Power BI datasets in [*Direct Lake*](directlake-overview.md) mode read delta tables directly from OneLake — unless they have to fall back to *DirectQuery* mode. Typical fall back reasons include memory pressures that can prevent loading of columns required to process a DAX query, and certain features at the data source might not support Direct Lake mode, like SQL views in a Warehouse. In general, Direct Lake mode provides the best DAX query performance unless a fall back to DirectQuery mode is necessary. Because fall back to DirectQuery mode can impact DAX query performance, it's important to analyze query processing for a Direct Lake dataset to identify if and how often fallbacks occur.
 
