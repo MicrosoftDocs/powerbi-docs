@@ -8,7 +8,7 @@ ms.reviewer: painbar
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 07/12/2023
+ms.date: 08/02/2023
 LocalizationGroup: Administration
 ---
 
@@ -33,7 +33,7 @@ Make sure you enable the [Invite external users to your organization](../admin/s
 Most email addresses are supported for guest user invitations, including personal email accounts like gmail.com, outlook.com, and hotmail.com. Azure AD B2B calls these addresses *social identities*.
 
 > [!NOTE]
-> In Azure AD, external users can be set to UserType Member. UserType Member **is not** currently supported in Power BI.
+> In Azure AD, external users can be set to UserType Member. In Power BI, support for UserType Member is currently in preview. In some situations, users may see errors during their first sign-in attempt. To unblock these external members, grant them permission to a Power BI item and then have them sign in again.
 
 ## Invite guest users
 
