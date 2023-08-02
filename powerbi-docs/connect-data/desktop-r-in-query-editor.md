@@ -13,7 +13,7 @@ LocalizationGroup: Connect to data
 ---
 # Use R in Power Query Editor
 
-[The R language](https://mran.microsoft.com/documents/what-is-r) is a powerful programming language that many statisticians, data scientists, and data analysts use. You can use R in Power BI Desktop's Power Query Editor to:
+The R language is a powerful programming language that many statisticians, data scientists, and data analysts use. You can use R in Power BI Desktop's Power Query Editor to:
 
 * Prepare data models.
 * Create reports.
@@ -21,7 +21,7 @@ LocalizationGroup: Connect to data
 
 ## Install R
 
-You can download R for free from the [Revolution R Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
+You can download R for free from the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
 
 ## Install mice
 
