@@ -1,6 +1,6 @@
 ---
-title: Known issue - dataflow scheduled refresh of dataset, intermittently hangs and following scheduled refresh is skipped
-description: A known issue is posted where dataflow scheduled refresh of dataset, intermittently hangs and following scheduled refresh is skipped.
+title: Known issue - the dataflow scheduled refresh of the dataset intermittently hangs and the following scheduled refresh is skipped
+description: A known issue is posted where dataflow scheduled refresh of dataset intermittently hangs and the following scheduled refresh is skipped.
 author: mihart
 ms.author: anirmale
 ms.topic: troubleshooting  
@@ -22,11 +22,11 @@ ms.custom: known-issue-461
 
 ## Symptoms
 
-User experiences skipped scheduled refresh on datasets that use dataflow as data source. The schedule time under the "scheduled refresh" option on the dataset settings page displays correctly, however if you refer to the "Refresh history" you find that the refresh didn't take place.
+The customer experiences skipped scheduled refresh on datasets that use a dataflow as the data source. The schedule time under the **cheduled refresh** option on the Dataset settings page displays correctly, however if you refer to the **Refresh history** you find that the refresh didn't take place.
 
 ## Solutions and workarounds
 
-Only available workaround at the moment is to republish the dataset under a different name to the same workspace.
+Ohe oly available workaround at the moment is to republish the dataset under a different name to the same workspace.
 
 ## Next steps
 
