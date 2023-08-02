@@ -85,9 +85,9 @@ The Q&A question box is another option for you to use when creating a card. The 
 
    :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-visualization.png" alt-text="Screenshot showing a new Q&A visualization with a question box.":::
 
-1. Let's try searching for sales data by employee name. Enter the text 'Total Sales for Tina" in the question box.
+1. Let's try searching for sales data by employee name. Enter the text "show me the open store count" in the question box.
 
-   As you enter text, Power BI tries to resolve your search text and shows results that match your input. At some point, you might see **TotalSales** displayed. Continue to refine your input until you see an option for **Total Sales for Tina Lassila (store DM)**. Select that option.
+   As you enter text, Power BI tries to resolve your search text and shows results that match your input. Continue entering your input until you see an option for **show me the open store count**. Select that option.
 
    :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-box.png" alt-text="Screenshot showing a question box example.":::
 
