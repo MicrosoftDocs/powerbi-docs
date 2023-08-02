@@ -10,9 +10,9 @@ ms.date: 07/27/2023
 ms.custom: known-issue-465
 ---
 
-# Known issue - Report embed edit app Bar intermittently not rendered
+# Known issue - Report embed edit app bar intermittently not rendered
 
-When loading report in embed edit mode, the app bar isn't rendered intermittently. Instead a black bar is shown.
+When loading a report in embed edit mode, the app bar isn't always shown. Instead a black bar is shown.
 
 **APPLIES TO:** ✔️ Power BI
 
@@ -22,7 +22,7 @@ When loading report in embed edit mode, the app bar isn't rendered intermittentl
 
 ## Symptoms
 
-1. App bar not appearing in report embed edit mode
+The app bar does not appear in report embed edit mode.
 
 ## Solutions and workarounds
 
