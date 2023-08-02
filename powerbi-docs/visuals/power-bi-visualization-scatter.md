@@ -161,6 +161,16 @@ The following steps show how to chart a third data dimension for the Retail Anal
 
       The maximum number of data points is 10,000. When the configured value approaches the maximum, be sure to test your chart output to ensure good performance.
 
+1. Change the marker range scale to Auto, Magnitude, or Data Range. This option is available only if the **Size** well is populated, and for **All** series when a chart includes multiple series.
+
+   - Magnitude: Any negative data values used for sizing are converted to positive values with the same magnitude (e.g. -15 converted to 15). The size of the bubbles scale from zero to the maximum magnitude value.
+   - Data Range: The size of the bubbles range based on the extend of the data input. The smallest data value, whether positive or negative, is shown as the smallest bubble size. Similarly, the largest data value is shown with the largest bubble size.
+   - Auto: If the data contains only positive, or only negative values, Magnitude mode is used. Otherwise, if the data includes both positive and negative values, Data Range mode is used.
+  
+1. Open the Analytics pane :::image type="icon" source="media/power-bi-visualization-scatter/power-bi-analytics.png"::: to add additional information to your visualization.
+  
+    - Add a median line. Select **Median line** > **Add line**. By default, Power BI adds a median line for *Sales per sq ft*. This line isn't helpful since we can see that there are 10 data points and know that the median will be created with five data points on each side. Instead, switch the **Series** to *Total sales variance %*.  
+
 ## Create a dot plot chart
 
 It's easy to create a dot plot chart from an existing scatter chart. Just replace the numerical field that's aligned to the horizontal x-axis with a categorical field.
