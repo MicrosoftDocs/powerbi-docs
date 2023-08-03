@@ -24,9 +24,9 @@ You can export the following translations sheets:
 
    :::image type="content" source="./media/translation-sheet-export/select-german.png" alt-text="Screenshot shows the Export/Import Translations pane with a language selected.":::
 
-1. (Optional) Select **Open Export in Excel** to view the exported file immediately.
-
 1. Select **Export Translations Sheet** to generate a translation sheet for that language.
+
+   You can select **Open Export in Excel** to view the exported file immediately.
 
    :::image type="content" source="./media/translation-sheet-export/export-translation-sheet.png" alt-text="Screenshot shows the Export/Import Translations pane with the Export Translations Sheet selected.":::
 
@@ -41,7 +41,7 @@ You can export translations sheets for all the languages supported for your proj
 :::image type="content" source="./media/translation-sheet-export/export-all-translation-sheet.png" alt-text="Screenshot shows the Export/Import Translations pane with the Export All Translation sheets option highlighted.":::
 
 > [!TIP]
-> Don't select **Open Export in Excel**.
+> Don't select **Open Export in Excel**. That option opens all of the files in Excel.
 
 Translations Builder generates the complete set of translation sheets to be sent to translators.
 
