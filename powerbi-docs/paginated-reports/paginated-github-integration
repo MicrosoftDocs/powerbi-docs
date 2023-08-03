@@ -37,12 +37,12 @@ Select **Git integration** in the Workspace Settings and enter the information r
 :::image type="content" source="media/page-view/paginated-reports-workspace-settings-repository-info.png" alt-text="Screenshot of the information to connect to workspace":::
 
 
-**Note:** If the branch is new, you will be prompted to **Create and sync**.
+**Note:** If the branch is new, you are prompted to **Create and sync**.
 
 
 Upload your rdl to the workspace on the service. We don't support OneDrive and Sharepoint yet.
 
-:::image type="content" source="media/page-view/paginated-reports-workspace-upload.png" alt-text="Screenshot of the Upload button":::
+:::image type="content" source="media/page-view/paginated-reports-upload.png" alt-text="Screenshot of the Upload button":::
 
 Once the file is uploaded, you should see the report and the Git status **Uncommitted** and **Source control**.
 
@@ -56,7 +56,7 @@ Once you commit the file, the **Git status** will change to **Sync**
 
 :::image type="content" source="media/page-view/paginated-reports-git-status-sync.png" alt-text="Screenshot of Git Synced":::
 
-You will see a folder in your git repository which contains the .rdl and 2 .json files. You may have to refresh your repository.
+You will see a folder in your git repository, which contains the .rdl and 2 .json files. You may have to refresh your repository.
 
 :::image type="content" source="media/page-view/paginated-report-git-repo.png" alt-text="Screenshot of Git repo":::
 
@@ -69,5 +69,5 @@ You will see a folder in your git repository which contains the .rdl and 2 .json
 
 3. When deleting the paginated report from git, delete the entire folder and not just the RDL report.  
 
-4. If you move the paginated report to a different workspace, it will still be connected to the original dataset. If the dataset needs to be updated, please update the dataset in Power BI Report builder.
+4. If you move the paginated report to a different workspace, it will be connected to the original dataset. If the dataset needs to be updated, update the dataset in Power BI Report builder.
 
