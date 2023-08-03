@@ -76,11 +76,25 @@ The following are known issues and limitations during **preview**:
     
     ```
 
+- Currently, Direct Lake datasets can only contain tables from a single Lakehouse.
+
+- Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same dataset. Composite models are not yet supported.
+
+- Direct Lake datasets do not currently support calculation groups.
+
 - Calculated columns and calculated tables are not yet supported.
+
+- DateTime relationships are not supported in Direct Lake datasets.
 
 - Some data types may not be supported.
 
-- Only Single Sign-On (SSO) is supported.
+- Direct Lake tables do not support complex delta table column types. Binary and Guid semantic types are also unsupported. You must convert these data types into strings or other supported data types.
+
+- Table relationships require the data types of their key columns to coincide. Primary key columns must contain unique values. DAX queries will fail if duplicate primary key values are detected.
+
+- The length of string column values is limited to 4,000 Unicode characters.
+
+- Direct Lake datasets currently work in Single Sign-On (SSO) mode only. You cannot disable SSO or use stored credentials yet.
 
 - Embedded scenarios that rely on service principals are not yet supported. Direct Lake models use Single Sign-On (SSO).
 
