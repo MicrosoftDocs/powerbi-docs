@@ -22,11 +22,11 @@ Scheduled refreshes of datasets connected to dataflows may hang intermittently a
 
 ## Symptoms
 
-You may experience a skipped scheduled refresh on datasets connected to a dataflow. The schedule time under the "Scheduled Refresh" option on the dataset settings page displays correctly, however if you refer to the "Refresh history" you find that the refresh didn't take place.
+You may experience a skipped scheduled refresh on datasets connected to a dataflow. The schedule time under the **Scheduled Refres** option on the dataset settings page displays correctly, however if you refer to the "**efresh history** you find that the refresh didn't take place.
 
 ## Solutions and workarounds
 
-To work around this issue, you can republish the dataset under a different name to the same workspace.
+To work around this issue, republish the dataset under a different name to the same workspace.
 
 ## Next steps
 

@@ -28,7 +28,7 @@ Here are some workarounds that help to avoid the issue:
 
 1. Avoid the use of view permission to the pipeline workspaces.
 2. Make use of the Microsoft public api for deployment - [Git integration] (/power-bi/pipelines/selective-deploy).
-3. Make manual changes in the browser url and load the pipeline page. Deploy the deployment pipeline. If the page doesn't function properly, append 'unmin=1' to the url and validate the page loads, select 'F12' to open the Dev Tools and switch to the 'Sources' tab. Select 'Ctrl+Shift+F' and look for text: 'allSlotsFoldersArtifactRelationsLoaded'. Select the second result and set a break point on the line number. Refreshing the page with the Dev Tools opened, should stop on the set break point. Change to 'Console' tab and copy the part where: 'allSlotsFoldersArtifactRelationsLoaded = true' and select enter. Close the dev tools to load the page.
+3. Make manual changes in the browser url and load the pipeline page. Deploy the deployment pipeline. If the page doesn't function properly, append "unmin=1" to the url and validate the page loads, select **F12** to open the Dev Tools and switch to the **Sources** tab. Select **Ctrl+Shift+F** and look for text: "allSlotsFoldersArtifactRelationsLoaded". Select the second result and set a break point on the line number. Refreshing the page with the Dev Tools opened should stop on the set break point. Change to the **Console** tab and copy "allSlotsFoldersArtifactRelationsLoaded = true" and select **Enter**. Close the dev tools to load the page.
 
 ## Next steps
 
