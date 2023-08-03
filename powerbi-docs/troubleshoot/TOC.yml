@@ -9,8 +9,8 @@
       href: known-issues/power-bi-known-issues.md
     - name: Active known issues for Fabric + Power BI - interactive report
       href: https://support.fabric.microsoft.com/known-issues
-    - name: Embedded report show a black bar in edit mode
-      href: known-issues/known-issue-465-embedded-report-show-black-bar.md   
+    - name: Embedded report shows a black bar in edit mode
+      href: known-issues/known-issue-465-embedded-report-shows-black-bar.md   
     - name: A scheduled refresh of a dataset intermittently hangs when connected to a dataflow
       href: known-issues/known-issue-461-scheduled-refresh-dataset-hangs.md   
     - name: Deployment pipeline stuck in loading
