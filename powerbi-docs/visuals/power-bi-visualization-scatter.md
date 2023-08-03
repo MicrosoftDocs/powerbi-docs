@@ -173,7 +173,7 @@ The following steps show how to chart a third data dimension for the Retail Anal
 
 1. Open the Analytics pane to add additional information to your visualization.
 
-    :::image type="icon" source="media/power-bi-visualization-scatter/power-bi-median.png" alt-txt="Screenshot of Analytics pane with Median line outlined in red."::: 
+    :::image type="icon" source="media/power-bi-visualization-scatter/power-bi-median.png" alt-text="Screenshot of Analytics pane with Median line outlined in red."::: 
 
 1. Add a median line. Select **Median line** > **Add line**. By default, Power BI adds a median line for *Sales per sq ft*. This line isn't helpful since we can see that there are 10 data points and know that the median will be created with five data points on each side. Instead, switch the **Series** to *Total sales variance %*.  
 
