@@ -60,6 +60,10 @@ When connecting to a standalone dataset through the XMLA endpoint, the metadata 
 
 - Direct Lake partitions use shared expressions called `DatabaseQuery` to define data sources. The expression points to the SQL endpoint of a Lakehouse. Direct Lake uses the SQL endpoint to discover the Lakehouse schema but loads the data directly from the delta tables (unless Direct Lake must fallback to DirectQuery mode for any reason).
 
+Here's an example XMLA query in SSMS:
+
+:::image type="content" source="media/dl-dataset-metadata.png" alt-text="XMLA query in SSMS":::
+
 To learn more about tool support through the XMLA endpoint, see [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md).
 
 ## Known issues and limitations
