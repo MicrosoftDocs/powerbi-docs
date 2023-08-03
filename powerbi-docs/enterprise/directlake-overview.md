@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 05/16/2023
 LocalizationGroup: Admin
 ---
-# Direct Lake (PREVIEW)
+# Direct Lake
 
 > [!IMPORTANT]
 > Direct Lake is currently in **preview**. Before testing in your environment, be sure to read [Known issues and limitations](#known-issues-and-limitations) later in this article.
@@ -20,7 +20,7 @@ LocalizationGroup: Admin
 :::image type="content" source="media/directlake-overview/directlake-diagram.png" border="false" alt-text="Direct Lake feature diagram.":::
 
 > [!NOTE]
-> Data Warehouse is not currently supported in **PREVIEW**.
+> Data Warehouse is not currently supported in **preview**.
 
 In DirectQuery mode, the Power BI engine queries the data at the source, which can be slow but avoids having to copy the data. Any changes at the data source are immediately reflected in the query results.
 
@@ -42,13 +42,31 @@ To learn how to provision a Lakehouse, create a delta table in the Lakehouse, an
 
 As part of provisioning a Lakehouse, a SQL endpoint for SQL querying and a default dataset for reporting are created and updated with any tables added to the Lakehouse. While Direct Lake mode doesn't query the SQL endpoint when loading data directly from OneLake, it's required when a Direct Lake dataset must seamlessly fall back to DirectQuery mode, such as when the data source uses specific features like advanced security or views that can't be read through Direct Lake.
 
+## Dataset write support with XMLA endpoint
+
+Direct Lake datasets support write operations through the XMLA endpoint by using tools such as SQL Server Management Studio (19.1 and higher) , and the latest versions of external BI tools like Tabular Editor and DAX studio. Dataset write operations through the XMLA endpoint support:
+
+- Customizing, merging, scripting, debugging, and testing Direct Lake dataset metadata.
+
+- Source and version control, continuous integration and continuous deployment (CI/CD) with Azure DevOps and GitHub.
+
+- Automation tasks like refreshing, and applying changes to Direct Lake datasets by using PowerShell and REST APIs.
+
+When connecting to a standalone dataset through the XMLA endpoint, the metadata looks like any other dataset. However, Direct Lake datasets show the following differences:
+
+- The `compatibilityLevel` property of the database object is 1604 or higher.
+
+- The `Mode` property of Direct Lake partitions is set to `directLake`.
+
+- Direct Lake partitions use shared expressions called `DatabaseQuery` to define data sources. The expression points to the SQL endpoint of a Lakehouse. Direct Lake uses the SQL endpoint to discover the Lakehouse schema but loads the data directly from the delta tables (unless Direct Lake must fallback to DirectQuery mode for any reason).
+
+To learn more about tool support through the XMLA endpoint, see [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md).
+
 ## Known issues and limitations
 
-The following are known issues and limitations during **PREVIEW**:
+The following are known issues and limitations during **preview**:
 
-- Direct Lake size limits are likely to change during **PREVIEW**. More definitive limits will be determined and described in this article by GA (General Availability). If limits are reached, queries are executed in DirectQuery mode. Limits are based on row count per table used by a DAX query. Row counts differ depending on the size of the SKU. To determine if queries fall back to DirectQuery mode, see [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md).
-
-- You must use the Web modeling experience integrated into Lakehouse to generate Direct Lake datasets. Creating Direct Lake datasets by using Power BI Desktop or XMLA-based automation tools aren't yet supported.
+- Direct Lake size limits are likely to change during **preview**. More definitive limits will be determined and described in this article by GA (General Availability). If limits are reached, queries are executed in DirectQuery mode. Limits are based on row count per table used by a DAX query. Row counts differ depending on the size of the SKU. To determine if queries fall back to DirectQuery mode, see [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md).
 
 - When generating a Direct Lake dataset in a QSO-enabled workspace, you must sync the dataset manually using the following PowerShell commands with the Power BI Management cmdlets installed (replace WorkspaceID and DatasetID with the GUIDs of your workspace and dataset):
 
@@ -169,7 +187,7 @@ There are multiple options to load data into a Lakehouse, including data pipelin
 
     :::image type="content" source="media/directlake-overview/directlake-web-modeling.png" alt-text="Screenshot showing Web modeling in Power BI.":::
 
-When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and query the dataset through XMLA endpoints in much the same way as any other dataset. During **PREVIEW**, XMLA write operations are not yet supported.
+When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and query the dataset through XMLA endpoints in much the same way as any other dataset. During **preview**, XMLA write operations are not yet supported.
 
 ## Refresh
 
