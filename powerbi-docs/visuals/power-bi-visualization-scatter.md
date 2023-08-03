@@ -165,7 +165,7 @@ The following steps show how to chart a third data dimension for the Retail Anal
 
 1. Change the marker range scale to Auto, Magnitude, or Data Range. This option is available only if the **Size** well is populated, and for **All** series when a chart includes multiple series.
 
-    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-range.png" alt-text="Screenshot of the format pane with the Range scaling section outlined in red.":::
+    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-ranges.png" alt-text="Screenshot of the format pane with the Range scaling section outlined in red.":::
 
    - Magnitude: Any negative data values used for sizing are converted to positive values with the same magnitude (e.g. -15 converted to 15). The size of the bubbles scale from zero to the maximum magnitude value.
    - Data Range: The size of the bubbles varies based on the data input. The smallest data value, whether positive or negative, is shown as the smallest bubble size. Similarly, the largest data value is shown with the largest bubble size.
