@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/27/2023
+ms.date: 07/31/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -121,7 +121,7 @@ Let's begin by creating a scatter chart to highlight district sales data in the 
 
 1. Select the chart visual, and then select **Scatter chart** on the **Visualizations** pane.
 
-   Notice the changes to the **Visualizations** pane. The **District** field is now listed under **Values**. The chart axes are also different. Power BI plots the **Sales Per Sq Ft** field along the **X Axis** and the **Total Sales Variance %** field along the **Y Axis**.
+   Notice the changes to the **Visualizations** pane. The **District** field is now listed under **Values**. The chart axes are also different. Make sure that Power BI plots the **Sales Per Sq Ft** field along the **X Axis** and the **Total Sales Variance %** field along the **Y Axis**.
 
    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-scatter-initial.png" alt-text="Screenshot that shows the initial scatter chart visualization for the selected Retail Analysis Sample data in Power BI.":::
 
@@ -149,17 +149,33 @@ The following steps show how to chart a third data dimension for the Retail Anal
 
    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-bubble-hover.png" alt-text="Screenshot that shows how to display a tooltip for a data point or bubble to see information about the corresponding numerical value." border="false":::
 
-1. Change the number of data points displayed in your bubble chart.
+### Change the number of data points displayed in your bubble chart.
 
-   1. On the **Visualizations** pane, select the paintbrush icon to open the **Format** section. Make sure the **General** section is selected.
+1. On the **Visualizations** pane, select the paintbrush icon to open the **Format** section. Make sure the **General** section is selected.
 
       :::image type="content" source="media/power-bi-visualization-scatter/power-bi-format-general.png" alt-text="Screenshot that shows how to access the Format General section of the Visualizations pane." border="false":::
    
-   1. Under the **Properties** > **Advanced options** section, adjust the **Number of data points** value.
+1. Under the **Properties** > **Advanced options** section, adjust the **Number of data points** value.
 
       :::image type="content" source="media/power-bi-visualization-scatter/power-bi-set-number-data-points.png" alt-text="Screenshot that shows how to change the number of data points for the bubble chart." border="false":::
 
       The maximum number of data points is 10,000. When the configured value approaches the maximum, be sure to test your chart output to ensure good performance.
+
+1. Because we have a value in the **Size** field well (This year sales), we can adjust the marker range. To do this, select the paint brush icon and choose **Visual** > **Markers**. 
+
+1. Change the marker range scale to Auto, Magnitude, or Data Range. This option is available only if the **Size** well is populated, and for **All** series when a chart includes multiple series.
+
+    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-range.png" alt-text="Screenshot of the format pane with the Range scaling section outlined in red.":::
+
+   - Magnitude: Any negative data values used for sizing are converted to positive values with the same magnitude (e.g. -15 converted to 15). The size of the bubbles scale from zero to the maximum magnitude value.
+   - Data Range: The size of the bubbles range based on the extend of the data input. The smallest data value, whether positive or negative, is shown as the smallest bubble size. Similarly, the largest data value is shown with the largest bubble size.
+   - Auto: If the data contains only positive, or only negative values, Magnitude mode is used. Otherwise, if the data includes both positive and negative values, Data Range mode is used.
+
+1. Open the Analytics pane to add additional information to your visualization.
+
+    :::image type="icon" source="media/power-bi-visualization-scatter/power-bi-median.png" alt-txt="Screenshot of Analytics pane with Median line outlined in red."::: 
+
+1. Add a median line. Select **Median line** > **Add line**. By default, Power BI adds a median line for *Sales per sq ft*. This line isn't helpful since we can see that there are 10 data points and know that the median will be created with five data points on each side. Instead, switch the **Series** to *Total sales variance %*.  
 
 ## Create a dot plot chart
 
