@@ -26,7 +26,7 @@ When you're working in edit mode, you experience a black bar.
 
 ## Solutions and workarounds
 
-Interact with the report (expand/collapse a pane for example), and it should render.
+To make the black bar disappear, interact with the report (expand/collapse a pane for example).
 
 ## Next steps
 
