@@ -1,6 +1,6 @@
 ---
 title: Known issue - Embedded report shows a black bar in edit mode
-description: A known issue is posted where an embedded report shows a black bar in edit mode
+description: A known issue is posted where an embedded report shows a black bar in edit mode.
 author: mihart
 ms.author: mihart
 ms.topic: troubleshooting  
@@ -22,7 +22,7 @@ When using an embedded report, you may see a black bar appear intermittently. Th
 
 ## Symptoms
 
-when you're working in edit mode, you experience a black bar.
+When you're working in edit mode, you experience a black bar.
 
 ## Solutions and workarounds
 

@@ -1,6 +1,6 @@
 ---
 title: Known issue - A scheduled refresh of a dataset intermittently hangs when connected to a dataflow
-description: A known issue is posted where a scheduled refresh of a dataset intermittently hangs when connected to a dataflow
+description: A known issue is posted where a scheduled refresh of a dataset intermittently hangs when connected to a dataflow.
 author: mihart
 ms.author: anirmale
 ms.topic: troubleshooting  

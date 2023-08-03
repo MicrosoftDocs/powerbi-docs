@@ -22,11 +22,9 @@ Select the **Title** to view more information about that specific known issue.
 
 |  Issue ID |  Area                              |  Title  |  Issues publish date |  
 |-----------|------------------------------------|---------|---------------------|
-|  465      |  Embedded, REST API or PowerShell  |  [Embedded report shows a black bar in edit mode]
-(known-issue-465-embedded-report-shows-black-bar.md)    | July 27, 2023  |
+|  465      |  Embedded, REST API or PowerShell  |  [Embedded report shows a black bar in edit mode](known-issue-465-embedded-report-show-black-bar.md)    | July 27, 2023  |
 |  461      |  Create and Author Data            |  [A scheduled refresh of a dataset intermittently hangs when connected to a dataflow](known-issue-461-scheduled-refresh-dataset-hangs.md)    | July 27, 2023  |
-|  443      |  Power BI                    |  [Deployment pipeline stuck in loading]
-(known-issue-443-deployment-pipeline-stuck-loading.md)    | July 27, 2023  |
+|  443      |  Power BI                    |   [Deployment pipeline stuck in loading](known-issue-443-deployment-pipeline-stuck-loading.md)    | July 27, 2023  |
 |  432      |  Administration                    |  [Workspace setting 'large dataset storage format' isn't persistent](known-issue-432-workspace-setting-large-dataset-storage-format-not-persistent.md)    | June 30, 2023  |
 |  427      |  Administration                    |  [Tenant admin settings may not save correctly](known-issue-427-tenant-admin-settings-may-not-save-correctly.md)    | June 22, 2023  |
 |  430      |  Share and Collaborate             |  [Newly added content in organizational app doesn't show in first load](known-issue-430-newly-added-content-org-app-doesnt-show.md)   |  June 20, 2023  |
