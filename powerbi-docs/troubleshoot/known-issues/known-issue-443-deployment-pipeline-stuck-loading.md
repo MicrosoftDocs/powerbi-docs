@@ -1,5 +1,5 @@
 ---
-title: Known issue - deployment pipeline stuck in loading
+title: Known issue - Deployment pipeline stuck in loading
 description: A known issue is posted where deployment pipeline load endless once user is assigned 'viewer' permission on workspace.
 author: mihart
 ms.author: anirmale
@@ -10,17 +10,21 @@ ms.date: 07/27/2023
 ms.custom: known-issue-443
 ---
 
-# Known issue - deployment pipeline stuck in loading
-When using Deployment pipeline doesn't load.
+# Known issue - Deployment pipeline stuck in loading
+
+There's a known issue where the deployment pipeline doesn't load based on the following scenario. You create a deployment pipeline and assign a workspace to a pipeline stage and then change your workspace permission to Viewer. If you refresh the deployment pipeline, the deployment pipeline stages don't load.
 
 **Status:** Open
 
 **Product Experience:** Power BI
 
 ## Symptoms
-Deployment pipeline not loading and endless spinning.
+
+When you open a deployment pipeline, the pipeline stages don't load and show an endless spinning icon.
 
 ## Solutions and workarounds
+
+Here are some workarounds that help to avoid the issue:
 
 1. Avoid the use of view permission to the pipeline workspaces.
 2. Make use of the Microsoft public api for deployment - [Git integration] (/power-bi/pipelines/selective-deploy).
