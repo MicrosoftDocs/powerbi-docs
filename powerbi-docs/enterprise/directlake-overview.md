@@ -60,6 +60,10 @@ When connecting to a standalone dataset through the XMLA endpoint, the metadata 
 
 - Direct Lake partitions use shared expressions called `DatabaseQuery` to define data sources. The expression points to the SQL endpoint of a Lakehouse. Direct Lake uses the SQL endpoint to discover the Lakehouse schema but loads the data directly from the delta tables (unless Direct Lake must fallback to DirectQuery mode for any reason).
 
+Here's an example XMLA query in SSMS:
+
+:::image type="content" source="media/dl-dataset-metadata.png" alt-text="XMLA query in SSMS":::
+
 To learn more about tool support through the XMLA endpoint, see [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md).
 
 ## Known issues and limitations
@@ -213,4 +217,4 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 ## Analyze query processing
 
-To determine if a report visual's DAX queries to the data source are providing the best performance by using Direct Lake mode, or falling back to DirectQuery mode, you can use Performance analyzer in Power BI Desktop to analyze queries. To learn more, see [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md).
+To determine if a report visual's DAX queries to the data source are providing the best performance by using Direct Lake mode, or falling back to DirectQuery mode, you can use Performance analyzer in Power BI Desktop, SQL Server Profiler, or other third party tools to analyze queries. To learn more, see [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md).
