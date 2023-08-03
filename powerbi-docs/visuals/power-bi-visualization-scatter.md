@@ -167,9 +167,11 @@ The following steps show how to chart a third data dimension for the Retail Anal
 
     :::image type="content" source="media/power-bi-visualization-scatter/power-bi-ranges.png" alt-text="Screenshot of the format pane with the Range scaling section outlined in red.":::
 
+   - Auto: This is the default setting. If the data contains only positive, or only negative values, Magnitude mode is used. Otherwise, if the data includes both positive and negative values, Data Range mode is used.
    - Magnitude: Any negative data values used for sizing are converted to positive values with the same magnitude (e.g. -15 converted to 15). The size of the bubbles scale from zero to the maximum magnitude value.
    - Data Range: The size of the bubbles varies based on the data input. The smallest data value, whether positive or negative, is shown as the smallest bubble size. Similarly, the largest data value is shown with the largest bubble size.
-   - Auto: If the data contains only positive, or only negative values, Magnitude mode is used. Otherwise, if the data includes both positive and negative values, Data Range mode is used.
+   - Deprecated: Reports saved in earlier versions of Power BI display **Deprecated**. This mode is no longer supported for new reports. 
+   
 
 1. Open the Analytics pane to add additional information to your visualization.
 
