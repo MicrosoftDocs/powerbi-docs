@@ -46,13 +46,13 @@ In the navigation pane in the Power BI service, you can select the **Create**�
      > [!NOTE]
      > If you select to upload your file from your local computer, we will automatically upload your file to your OneDrive for business
 
-    :::image type="content" source="media/service-report-create-excel-connector/connect-to-data-source.png" alt-text="Screenshot of the Power BI service, uploading an excel file as the data source.":::
+    :::image type="content" source="media/service-reports-create-excel-connector/connect-to-data-source.png" alt-text="Screenshot of the Power BI service, uploading an excel file as the data source.":::
 
  1. Select **Next** once you've successfully uploaded the file or pasted the file path or URL. 
 
  1. Select up to 8 tables you want to add to your dataset in the navigation UI and select **Create**. As you go through the creation process, Power BI creates a new dataset for you and autofills the data pane with the tables you selected.
      
-    :::image type="content" source="media/service-report-create-excel-connector/choose-data-tables.png" alt-text="Screenshot of the Power BI service, selecting tables from the uploaded excel file to create a dataset.":::
+    :::image type="content" source="media/service-reports-create-excel-connector/choose-data-tables.png" alt-text="Screenshot of the Power BI service, selecting tables from the uploaded excel file to create a dataset.":::
 
  1. Use the **Your data** pane to add or remove fields from the report. 
 
