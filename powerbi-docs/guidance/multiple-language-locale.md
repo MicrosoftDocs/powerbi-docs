@@ -25,6 +25,8 @@ A culture name is usually a lower-case language identifier and an upper-case loc
 > [!NOTE]
 > In some cases, a culture name also includes other information. For example, there are two different culture names for the language Serbian in Serbia, which are `sr-Cyrl-RS` and `sr-Latn-RS`. The part in the middle known as the script (*Cyrl* and *Latn*) indicates whether to use the Cyrillic alphabet or the Latin alphabet. For more information, see [RFC 4646](https://datatracker.ietf.org/doc/html/rfc4646).
 
+For a list of culture name values, see [ISO 639 Language codes](https://www.iso.org/iso-639-language-codes.html) and [Online Browsing Platform](https://www.iso.org/obp/ui/#search).
+
 ## Organize project for metadata translation
 
 At the start of a project that involves creating a new Power BI dataset with metadata translation, list the culture names that you plan to support. Next, extend the dataset by adding metadata translations for each culture name.
@@ -69,7 +71,7 @@ Measures currently act differently than tables and columns in Power BI. With mea
 With tables and columns, the Power BI service requires an exact match between the culture name in the request and the supported metadata translations. If there isn't an exact match, the Power BI service falls back to loading dataset object names. The names of tables and columns in this scenario would load using English dataset object names.
 
 > [!NOTE]
-> This behavior is a known issue for Power BI.
+> This use of the default language for the names of tables and columns is a known issue for Power BI.
 
 We recommend that you add metadata translation for any culture name you want to support. In this example, add three sets of French translations to support the culture names of `fr-FR`, `fr-BE` and `fr-CA`. The approach handles the scenario where the French translations for users in France are different from French translations for users in Canada.
 
