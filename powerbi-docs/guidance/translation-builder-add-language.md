@@ -50,7 +50,7 @@ To add one or more secondary languages, follow these steps.
 
    :::image type="content" source="./media/translation-builder-add-language/translations-builder-secondary-language.png" alt-text="Screenshot shows the Add Language dialog box with a language selected and the Add Language button highlighted." lightbox="./media/translation-builder-add-language/translations-builder-secondary-language.png":::
 
-1. In Power BI Desktop, select the save icon.
+1. In Power BI Desktop, select **Save**.
 
    :::image type="content" source="./media/translation-builder-add-language/power-bi-save-icon.png" alt-text="Screenshot shows the Power BI Desktop window with the save icon highlighted." lightbox="./media/translation-builder-add-language/power-bi-save-icon.png":::
 

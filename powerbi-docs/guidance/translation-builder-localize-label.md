@@ -31,12 +31,12 @@ The default **Title** property for a Cartesian visual is dynamically parsed toge
 
 The following table shows how the default **Title** property of this visual is updated for each of these five languages.
 
-| Language        | Visual Title                         |
-|-----------------|--------------------------------------|
-| English (en-US) | Sales Revenue by Day and Year        |
-| Spanish (es-ES) | Ingresos Por Ventas por Día y Año    |
-| French (fr-FR)  | Chiffre D'Affaires par Jour et Année |
-| German (de-DE)  | Umsatz nach Tag und Jahr             |
+| Language        | Visual Title                           |
+|-----------------|----------------------------------------|
+| English (en-US) | `Sales Revenue by Day and Year`        |
+| Spanish (es-ES) | `Ingresos Por Ventas por Día y Año`    |
+| French (fr-FR)  | `Chiffre D'Affaires par Jour et Année` |
+| German (de-DE)  | `Umsatz nach Tag und Jahr`             |
 
 You might not like the dynamically generated visual **Title**, but don't replace it with hard-coded text. Any hard-coded text for the **Title** property can't be localized. Either leave the visual **Title** property with its default value or use the Localized Labels table strategy to create report labels that support localization.
 
