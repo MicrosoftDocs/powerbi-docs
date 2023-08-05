@@ -80,7 +80,7 @@ Open **File Explorer**, right-click **This PC**, and choose **Properties**. In t
 
 ## Adding a registry key
 
-If you have a Microsoft 365 Office subscription, and the Office build on your device is 16.0.13530.20424 or later but earlier than 16.0.14326.xxxxx, someone with admin permissions on your device can use the following steps to create a registry key that will enable you to use the add-in.
+If you have a Microsoft 365 Office subscription, and the Office build on your device is 16.0.13530.20424 or later but earlier than 16.0.14326.xxxxx, someone with admin permissions on your device can use the following steps to create a registry key that enables you to use the add-in.
 
 1. Open the Registry Editor by typing *regedit* in the Start menu search bar and selecting the Registry Editor app.
 
