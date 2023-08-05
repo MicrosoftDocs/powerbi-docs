@@ -10,16 +10,30 @@ ms.date: 08/05/2023
 ---
 # Choose a start-up view on your Power BI mobile app
 
-Ordinarily, when you open your Power BI mobile app, you land on the app’s home page and then navigate to the item you want to view. If you have a report, dashboard, scorecard, or app that you always go to when you open your app, you can save time by making it your app's *launch item*. A launch item is an item your mobile app displays whenever you open the app. By making your most frequently viewed item the launch item, you won’t have to waste time navigating to it every time you open the app – rather, it’ll be the first thing you see when the app opens.
+If you have a report, dashboard, scorecard, or app that you always go to when you open your app, you can save time by making it your app's *launch item*. A launch item is the item your mobile app displays whenever you open the app. By making your most frequently viewed item the launch item, you won’t have to waste time navigating to it every time you open the app – rather, it’ll be the first thing you see when the app opens.
 
 ## Set up a launch item
 
-To create launch item, open the item you want to see when the app opens. Tap **More options (…)**, and choose **Set as launch item**.
+To create a launch item, open the item you want to get to whenever you open the app. Tap **More options (…)**, and choose **Set as launch item**.
 
 :::image type="content" source="./media/mobile-apps-launch-item/set-as-launch-item-option.png" alt-text="Screenshot of Set as launch item option in the Power BI mobile apps." border="false":::
 
-If you don’t see the **Set as launch item** option, it means that the launch item feature is not enabled on your device. To enable the feature, see [Manage your launch item](#manage-your-launch-item).
+Once you set an item the launch item, it will be identifiable in the app by an icon.
 
-## Remove a launch item
+:::image type="content" source="./media/mobile-apps-launch-item/set-as-launch-item-icon.png" alt-text="Screenshot of launch item icon in the Power BI mobile apps.":::
+
+## Pick a different launch item
+
+If you want to change your launch item, just open the desired item and mark it as described above. The previous item will automatically be removed as the launch item.
+
+## Removing a launch item
+
+If you want stop using an item as the launch item, just go to the item, open the **More options (...)** menu and tap **Remove as launch item**.
+
+:::image type="content" source="./media/mobile-apps-launch-item/remove-as-launch-item-option.png" alt-text="Screenshot of Remove as launch item option in the Power BI mobile apps." border="false":::
+
+When you remove the launch item, the next time you start up your app, it will open to the home page, unless your organization has set up a launch item for you. In that case, you'll be asked either to approve the configuration, after which the app will navigate to the item, or to decline in which case the app will open to the home page. 
+
+## Organizational launch items
 
 ## Manage your launch item
