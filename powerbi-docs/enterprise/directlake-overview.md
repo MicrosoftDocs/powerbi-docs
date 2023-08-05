@@ -52,6 +52,28 @@ Direct Lake datasets support write operations through the XMLA endpoint by using
 
 - Automation tasks like refreshing, and applying changes to Direct Lake datasets by using PowerShell and REST APIs.
 
+### Enable XMLA read-write
+
+Before performing write operations on Direct Lake datasets through the XMLA endpoint, XMLA read-write must be enabled for the capacity.
+
+For Power BI Premium capacities, see [Enable XMLA read-write](service-premium-connect-tools.md#enable-xmla-read-write).
+
+For **Fabric trial** capacities, the trial user has the admin privileges necessary to enable XMLA read-write.
+
+1. In the Admin portal, select **Capacity settings**. 
+
+1. Click on the **Trial** tab.
+
+1. Select the capacity with **Trial** and your username in the capacity name. 
+
+1. Expand **Power BI workloads**, and then in the **XMLA Endpoint** setting, select **Read Write**.
+
+    :::image type="content" source="media/directlake-overview/fabric-enable-xmla-readwrite.png" alt-text="Enable XMLA read write for a Fabric trial capacity":::
+
+Keep in mind, the XMLA Endpoint setting applies to all workspaces and datasets assigned to the capacity.
+
+### Direct Lake dataset metadata
+
 When connecting to a standalone dataset through the XMLA endpoint, the metadata looks like any other dataset. However, Direct Lake datasets show the following differences:
 
 - The `compatibilityLevel` property of the database object is 1604 or higher.

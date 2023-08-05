@@ -32,7 +32,7 @@ After you install Translations Builder, you can open it directly from Power BI D
 
 :::image type="content" source="./media/translation-builder/external-tool-translations-builder.png" alt-text="Screenshot shows the Power BI Desktop External tools ribbon with Translations Builder highlighted." lightbox="./media/translation-builder/external-tool-translations-builder.png":::
 
-When you launch an external tool like Translations Builder, Power BI Desktop passes the application startup parameters including a connection string. Translations Builder uses the connection string to establish a connection back to the dataset that's loaded in Power BI Desktop.
+When you launch an external tool like Translations Builder, Power BI Desktop passes startup parameters to the application, including a connection string. Translations Builder uses the connection string to establish a connection back to the dataset that's loaded in Power BI Desktop.
 
 This approach allows Translations Builder to display dataset information and to provide commands to automate adding metadata translations. For more information, see [Translations Builder Developers Guide](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Developer%20Guide.md).
 
