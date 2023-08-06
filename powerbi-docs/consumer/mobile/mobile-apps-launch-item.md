@@ -40,3 +40,10 @@ When you remove the launch item, the next time you start up your app, it will op
 
 ## Manage your launch item
 
+You can manage your launch items in the Launch items section of your app's settings. In the settings you'll see the item you've marked as the launch item, if any. If the item is selected and the toggle is on, it means that the item is currently active as the launch item. If the toggle is off, it means that the launch item is currently inactive.
+
+:::image type="content" source="{source}" alt-text="{alt-text}":::
+
+If your organization has configured a launch item for you it will be listed in the settings. You can toggle back and forth between an item you've chosen as the launch item and the item that the organization has configured.
+
+:::image type="content" source="{source}" alt-text="{alt-text}":::
