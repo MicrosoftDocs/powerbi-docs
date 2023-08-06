@@ -24,15 +24,7 @@ This article walks you through publishing a paginated report and keeping it in s
 
 ## Get started
 
-1. In the Power BI service, navigate to the Workspace that you want to sync with your git repository by selecting **Workspace** in the left nav.
-
-    :::image type="content" source="media/page-view/paginated-reports-workspace-selection.png" alt-text="Screenshot of the Workspace":::
-
-1. Select **Workspace Settings** in the Workspace.
-
-    :::image type="content" source="media/page-view/paginated-reports-workspace-settings.png" alt-text="Screenshot of the Workspace Settings":::
-
-1. Select **Git integration** in the Workspace Settings and enter the information required to connect to your git workspace. Select **Connect and sync**. 
+1. Connect your workspace to your git repository by following the directions in [Connect a workspace to an Azure repo](/fabric/cicd/git-integration/git-get-started#connect-a-workspace-to-an-azure-repo)
 
     :::image type="content" source="media/page-view/paginated-reports-workspace-settings-repository-info.png" alt-text="Screenshot of the information to connect to workspace":::
 
@@ -40,7 +32,7 @@ This article walks you through publishing a paginated report and keeping it in s
     **Note:** If the branch is new, you'll be prompted to **Create and sync**.
 
 
-1. Upload your .rdl to the workspace on the service. We don't support OneDrive and Sharepoint yet.
+1. Upload your *.rdl* file to the workspace on the service. We don't support OneDrive and Sharepoint yet.
 
     :::image type="content" source="media/page-view/paginated-reports-upload.png" alt-text="Screenshot of the Upload button":::
 
@@ -57,7 +49,7 @@ This article walks you through publishing a paginated report and keeping it in s
     :::image type="content" source="media/page-view/paginated-reports-git-status-sync.png" alt-text="Screenshot of Git Synced":::
 
 
-You'll see a folder in your git repository which contains the .rdl and 2 .json files. You may have to refresh your repository.
+You'll see a folder in your git repository which contains the *.rdl* and two *.json* files. You may have to refresh your repository.
 
 :::image type="content" source="media/page-view/paginated-report-git-repo.png" alt-text="Screenshot of Git repo":::
 
@@ -68,5 +60,5 @@ You'll see a folder in your git repository which contains the .rdl and 2 .json f
 
 - When you delete a paginated report from git, delete the *entire folder* and not just the .rdl report.  
 
-- The paginated remains connected to the orginal dataset when you move the paginated report to a different workspace. Update the dataset in Power BI Report builder and re-publish the paginated report to the Power BI service.
+- The paginated report remains connected to the orginal dataset when you move it to a different workspace. If you move a paginated report to a different workspace, update the dataset in Power BI Report builder and re-publish the paginated report to the Power BI service.
 
