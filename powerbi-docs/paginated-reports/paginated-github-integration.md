@@ -19,42 +19,42 @@ This article walks you through publishing a paginated report and keeping it in s
 ## Prerequisites
 
 [!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
-Git Integration for Microsoft Fabric: [Introduction to git integration](https://learn.microsoft.com/fabric/cicd/git-integration/intro-to-git-integration)
+- [Git Integration for Microsoft Fabric](https://learn.microsoft.com/fabric/cicd/git-integration/intro-to-git-integration)
 
 
 ## Get started
 
-In the Power BI service, navigate to the Workspace that you want to sync with your git repository by selecting **Workspace** in the left nav.
+1. In the Power BI service, navigate to the Workspace that you want to sync with your git repository by selecting **Workspace** in the left nav.
 
-:::image type="content" source="media/page-view/paginated-reports-workspace-selection.png" alt-text="Screenshot of the Workspace":::
+    :::image type="content" source="media/page-view/paginated-reports-workspace-selection.png" alt-text="Screenshot of the Workspace":::
 
-Select **Workspace Settings** in the Workspace.
+1. Select **Workspace Settings** in the Workspace.
 
-:::image type="content" source="media/page-view/paginated-reports-workspace-settings.png" alt-text="Screenshot of the Workspace Settings":::
+    :::image type="content" source="media/page-view/paginated-reports-workspace-settings.png" alt-text="Screenshot of the Workspace Settings":::
 
-Select **Git integration** in the Workspace Settings and enter the information required to connect to your git workspace. Select **Connect and sync**. 
+1. Select **Git integration** in the Workspace Settings and enter the information required to connect to your git workspace. Select **Connect and sync**. 
 
-:::image type="content" source="media/page-view/paginated-reports-workspace-settings-repository-info.png" alt-text="Screenshot of the information to connect to workspace":::
-
-
-**Note:** If the branch is new, you'll be prompted to **Create and sync**.
+    :::image type="content" source="media/page-view/paginated-reports-workspace-settings-repository-info.png" alt-text="Screenshot of the information to connect to workspace":::
 
 
-Upload your rdl to the workspace on the service. We don't support OneDrive and Sharepoint yet.
+    **Note:** If the branch is new, you'll be prompted to **Create and sync**.
 
-:::image type="content" source="media/page-view/paginated-reports-upload.png" alt-text="Screenshot of the Upload button":::
 
-Once the file is uploaded, you should see the report and the Git status **Uncommitted** and **Source control**.
+1. Upload your .rdl to the workspace on the service. We don't support OneDrive and Sharepoint yet.
 
-:::image type="content" source="media/page-view/paginated-reports-source-control.png" alt-text="Screenshot of status":::
+    :::image type="content" source="media/page-view/paginated-reports-upload.png" alt-text="Screenshot of the Upload button":::
 
-Select **Source Control**. In the source control pane, select the file and commit.  
+    Once the file is uploaded, you should see the report and the Git status **Uncommitted** and **Source control**.
 
-:::image type="content" source="media/page-view/paginated-reports-source-control-1.png" alt-text="Screenshot of Commit":::
+    :::image type="content" source="media/page-view/paginated-reports-source-control.png" alt-text="Screenshot of status":::
 
-Once you commit the file, the **Git status** will change to **Sync**.
+1. Select **Source Control**. In the source control pane, select the file and commit.  
 
-:::image type="content" source="media/page-view/paginated-reports-git-status-sync.png" alt-text="Screenshot of Git Synced":::
+    :::image type="content" source="media/page-view/paginated-reports-source-control-1.png" alt-text="Screenshot of Commit":::
+
+    Once you commit the file, the **Git status** will change to **Sync**.
+
+    :::image type="content" source="media/page-view/paginated-reports-git-status-sync.png" alt-text="Screenshot of Git Synced":::
 
 
 You'll see a folder in your git repository which contains the .rdl and 2 .json files. You may have to refresh your repository.
@@ -64,9 +64,9 @@ You'll see a folder in your git repository which contains the .rdl and 2 .json f
 
 ## Considerations and limitations
 
-1. Publish/upload the paginated report to the service and use git. The paginated report won't render if you start with the files in git.  
+- Publish/upload the paginated report to the service and then use git. The paginated report won't render if you start with the files in git.  
 
-2. When you delete a paginated report from git, delete the entire folder and not just the RDL report.  
+- When you delete a paginated report from git, delete the *entire folder* and not just the .rdl report.  
 
-3. The paginated report will remain connected to the orginal dataset when you move the paginated report to a different workspace. Update the dataset in Power BI Report builder and re-publish the paginated report to the Power BI service.
+- The paginated remains connected to the orginal dataset when you move the paginated report to a different workspace. Update the dataset in Power BI Report builder and re-publish the paginated report to the Power BI service.
 
