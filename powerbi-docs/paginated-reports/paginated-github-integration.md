@@ -1,6 +1,6 @@
 ---
 title: "Git integration with paginated reports"
-description: You can view paginated reports in your local or preferred language in the Power BI service.
+description: You can edit paginated reports using git integration in the Power BI service.
 author: nirusrin
 ms.author: nisrinivasan
 ms.reviewer: ''
@@ -19,7 +19,7 @@ This article walks you through publishing a paginated report and keeping it in s
 ## Prerequisites
 
 [!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
-- [Git Integration for Microsoft Fabric](https://learn.microsoft.com/fabric/cicd/git-integration/intro-to-git-integration)
+- [Git Integration for Microsoft Fabric](/fabric/cicd/git-integration/intro-to-git-integration)
 
 
 ## Get started
