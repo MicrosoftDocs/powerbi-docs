@@ -6,15 +6,19 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/05/2023
+ms.date: 08/07/2023
 ---
 # Choose a start-up view on your Power BI mobile app
 
-By default, when you launch your Power BI mobile app, it opens to the app's home page. However, if you have a specific report, dashboard, scorecard, or app that you always go to when you open the mobile app, you [can specify that item as the *launch item*](#set-up-a-launch-item). A launch item is the item your mobile app will display first whenever you open the app. Making your most frequently viewed item the launch item saves you time - you won't have to waste time navigating to it every time you open the app. Rather, it'll be the first thing you see when you open your app.
+A launch item is an item that has been configured to display whenever you launch your mobile app instead of the app home page. It is useful if you have specific content that you always go to when you open your app, and you want to save time by being taken directly to that content rather than having to navigate to it every time.
 
-Your organization can also create launch items for groups of users. If your organization has created a launch item for you, when you start up your app, you'll see an option to accept or decline the organization's selection. If you accept, the organization-defined launch item will display, and from then on you'll be taken to that item whenever you open the app. If you decline, you'll either be taken to the app home page, or, if you have defined a launch item for yourself, to your self-defined launch item.
+A launch item can be a report, dashboard, scorecard, or app.
 
-You can always change your mind and accept the org's launch item suggestion in the [Launch item settings](#manage-your-launch-item).
+Individual users can configure a launch item for themselves, and organizations can configure launch items for groups of users. However, at any one time, only one launch item can be active for a user's Power BI mobile app. The individual user decides whether to use their own launch item or their organization's launch item.
+
+If your organization has created a launch item, when you start up your app, you'll have the option of accepting or declining the organization's selection. If you decline the selection, You can always change your mind and activate the org's launch item suggestion in the [Launch item settings](#manage-your-launch-item).
+
+If both you and your organization have configured launch items, you can choose which to use in your mobile app settings. See [Manange your launch item](#manage-your-launch-items).
 
 ## Set up a launch item
 
@@ -28,7 +32,7 @@ Once you set an item as the launch item, it will be readily identifiable by an i
 
 ## Change your launch item
 
-If you want to change your launch item, just open the desired item and mark it as [described above](#set-up-a-launch-item). The previous item will automatically be removed as the launch item.
+If you want to change your launch item, just open the new desired item and set it as the launch item as [described above](#set-up-a-launch-item). The previous item will automatically be removed as the launch item.
 
 ## Remove your launch item
 
@@ -36,14 +40,18 @@ If you want stop using an item as the launch item, just go to the item, open the
 
 :::image type="content" source="./media/mobile-apps-launch-item/remove-as-launch-item-option.png" alt-text="Screenshot of Remove as launch item option in the Power BI mobile apps." border="false":::
 
-When you remove the launch item, the next time you start up your app, it will open to the home page, unless your organization has suggested a launch item for you. In that case, you'll see an option to accept or decline the organization's selection. If you accept, the organization-defined launch item will display, and from then on you'll be taken to that item whenever you open the app. If you decline, you'll be taken to the app home page.
+## Manage your launch items
 
-## Manage your launch item
+You can manage your launch items in the **Launch item** section of your app's settings.
 
-You can manage your launch items in the Launch items section of your app's settings. In the settings you'll see the item you've marked as the launch item, if any. If the item is selected and the toggle is on, it means that the item is currently active as the launch item. If the toggle is off, it means that the launch item is currently inactive.
+First, open your app's settings. If there is an active launch item, you'll see it indicated there.
 
-:::image type="content" source="{source}" alt-text="{alt-text}":::
+:::image type="content" source="./media/mobile-apps-launch-item/launch-item-indication-app-settings.png" alt-text="Screenshot showing Launch item indication in app settings." border="false":::
 
-If your organization has configured a launch item for you it will be listed in the settings. You can toggle back and forth between an item you've chosen as the launch item and the item that the organization has configured.
+To manage the launch items, tap the setting to open the **Launch item** settings.
 
-:::image type="content" source="{source}" alt-text="{alt-text}":::
+In the settings your personal launch item, if any, and any item that the organization has suggested as the launch item.
+
+:::image type="content" source="./media/mobile-apps-launch-item/launch-item-settings.png" alt-text="Screenshot of Launch item settings." border="false":::
+
+Use the radio buttons to choose which launch item to use. Use the toggle switch to enable/disable the launch item functionality.
