@@ -8,7 +8,7 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/07/2023
 ---
-# Choose a start-up view on your Power BI mobile app
+# Choose a launch item for your Power BI mobile app
 
 A launch item is an item that has been configured to display whenever you launch your mobile app instead of the app home page. It is useful if you have specific content that you always go to when you open your app, and you want to save time by being taken directly to that content rather than having to navigate to it every time.
 
