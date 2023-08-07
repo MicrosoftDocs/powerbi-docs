@@ -19,8 +19,9 @@ This article walks you through publishing a paginated report and keeping it in s
 ## Prerequisites
 
 [!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
-License for git integration  [Fabric Prerequisites](https://learn.microsoft.com/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git#fabric-prerequisites) 
-Introduction to git integration for Microsoft Fabric: [Introduction to git integration](https://learn.microsoft.com/fabric/cicd/git-integration/intro-to-git-integration)
+License requirements for git integration: Refer [Fabric Prerequisites](https://learn.microsoft.com/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git#fabric-prerequisites) 
+
+Read about the integration of git with Microsoft Fabric: [Introduction to git integration](https://learn.microsoft.com/fabric/cicd/git-integration/intro-to-git-integration)
 
 
 
@@ -34,7 +35,7 @@ Introduction to git integration for Microsoft Fabric: [Introduction to git integ
     **Note:** If the branch is new, you'll be prompted to **Create and sync**.
 
 
-1. Upload your *.rdl* file to the workspace on the service. We don't support OneDrive and Sharepoint yet.
+2. Upload your *.rdl* file to the workspace on the service. We don't support OneDrive and Sharepoint yet.
 
     :::image type="content" source="media/page-view/paginated-reports-upload.png" alt-text="Screenshot of the Upload button":::
 
@@ -42,11 +43,11 @@ Introduction to git integration for Microsoft Fabric: [Introduction to git integ
 
     :::image type="content" source="media/page-view/paginated-reports-source-control.png" alt-text="Screenshot of status":::
 
-1. Select **Source Control**. In the source control pane, select the file and commit.  
+3. Select **Source Control**. In the source control pane, select the file and commit.  
 
     :::image type="content" source="media/page-view/paginated-reports-source-control-1.png" alt-text="Screenshot of Commit":::
 
-    Once you commit the file, the **Git status** will change to **Sync**.
+4. Once you commit the file, the **Git status** will change to **Sync**.
 
     :::image type="content" source="media/page-view/paginated-reports-git-status-sync.png" alt-text="Screenshot of Git Synced":::
 
@@ -55,6 +56,9 @@ You'll see a folder in your git repository which contains the *.rdl* and two *.j
 
 :::image type="content" source="media/page-view/paginated-report-git-repo.png" alt-text="Screenshot of Git repo":::
 
+5. If you want to edit a paginated report, you can edit the paginated report in Power BI Report Builder. Once you edit the .rdl file, add it to your git repository and sync the git repository to the Workspace.
+
+    **Note:** Uploading an updated version of the file to the Workspace will result in your git repository being out of sync with the Workspace.
 
 ## Considerations and limitations
 
