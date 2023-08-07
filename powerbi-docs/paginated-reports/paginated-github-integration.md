@@ -58,7 +58,7 @@ You'll see a folder in your git repository which contains the *.rdl* and two *.j
 
 5. If you want to edit a paginated report, you can edit the paginated report in Power BI Report Builder. Once you edit the .rdl file, add it to your git repository and sync the git repository to the Workspace.
 
-    **Note:** Uploading an updated version of the file to the Workspace will result in your git repository being out of sync with the Workspace.
+    **Note:** Uploading an updated version of the file to the Workspace will result in your git repository being out of sync with the git repository.
 
 ## Considerations and limitations
 
