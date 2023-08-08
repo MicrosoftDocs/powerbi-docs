@@ -16,7 +16,7 @@ A launch item can be a report, dashboard, scorecard, or app.
 
 Individual users can configure a launch item for themselves, and organizations can configure launch items for groups of users. However, at any one time, only one launch item can be active for a user's Power BI mobile app. The individual user decides whether to use their own launch item or their organization's launch item.
 
-If your organization has created a launch item, when you start up your app, you'll have the option of accepting or declining the organization's selection. If you decline the selection, You can always change your mind and activate the org's launch item suggestion in the [Launch item settings](#manage-your-launch-items).
+If your organization has created a launch item, when you start up your app, you'll have the option of accepting or declining the organization's selection. If you decline the selection, you can always change your mind and activate the org's launch item suggestion in the [Launch item settings](#manage-your-launch-items).
 
 If both you and your organization have configured launch items, you can choose which to use in your mobile app settings. See [Manange your launch item](#manage-your-launch-items).
 
