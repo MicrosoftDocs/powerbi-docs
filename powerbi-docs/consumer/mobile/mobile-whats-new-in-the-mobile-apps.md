@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/10/2023
+ms.date: 08/08/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,16 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## August 2023
+
+### Customize your launch experience with launch items
+
+If you always go right to a particular report, dashboard, scorecard, or app when you open your Power BI mobile app, you can now save time by configuring that item to be your launch item. The item will then open automatically whenever you start up your app. You'll no longer have to waste time navigating to it every time. [Check out the details](./mobile-apps-launch-item.md)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/set-as-launch-item-option.png" alt-text="Screenshot of the Set as launch item option on a report in the Power BI mobile app." border="false":::
+
+Organizations can also configure a launch item for groups of users via mobile device management. See [Remotely configure Power BI app using mobile device management (MDM) tool](./mobile-app-configuration.md#launch-item-configuration-ios-and-android) for details.
 
 ## July 2023
 
