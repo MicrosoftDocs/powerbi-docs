@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/11/2022
+ms.date: 08/08/2023
 ---
 
 # Identity filter API
@@ -76,6 +76,7 @@ To use the Identity filter API, your powerbi-models version needs to be 1.9.1 or
 this.visualHost.applyJsonFilter(this.filter, "general", "filter", powerbi.FilterAction.merge);
 ```
 
+<!--
 ## Sample JSON filter
 
 Some sample JSON filter code is shown in the following
@@ -83,6 +84,7 @@ Some sample JSON filter code is shown in the following
 ## Example: Identity filter API
 
 The following example shows how the visual calls a filter operation.
+-->
 
 ## Migrating visuals with old API
 
