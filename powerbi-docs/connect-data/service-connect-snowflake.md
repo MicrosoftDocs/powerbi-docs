@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/14/2023
+ms.date: 08/09/2023
 LocalizationGroup: Connect to services
 ---
 # Connect to Snowflake in the Power BI service
@@ -58,7 +58,7 @@ To turn on SSO for a dataset:
    :::image type="content" source="media/service-connect-snowflake/dataset-settings-2.png" alt-text="Screenshot of datasets and dataflows in a workspace with more and settings highlighted.":::
 
 1. Select **Data source credentials** and sign in. The dataset can be signed into Snowflake with Basic or OAuth2 (Azure AD) credentials. By using Azure AD, you can enable SSO in the next step.
-1. Select the option **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**. This setting will enable Azure AD SSO. Whether the first user signs in with Basic authentication or OAuth2 (Azure AD), the Azure AD credentials are sent for SSO.
+1. Select the option **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**. This setting will enable Azure AD SSO. The Azure AD credentials are sent for SSO.
 
    :::image type="content" source="media/service-connect-snowflake/snowflake-sso-cred-ui.png" alt-text="Screenshot of the configuration dialog with OAuth2 selected as the authentication method.":::
 
