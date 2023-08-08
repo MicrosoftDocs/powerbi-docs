@@ -56,10 +56,15 @@ You'll see a folder in your git repository which contains the *.rdl* and two *.j
 
 :::image type="content" source="media/page-view/paginated-report-git-repo.png" alt-text="Screenshot of Git repo":::
 
-5. If you want to edit a paginated report, you can edit the paginated report in Power BI Report Builder. Once you edit the .rdl file, add it to your git repository and sync the git repository to the Workspace.
+5. If you want to edit a paginated report, follow the steps below:
+    - Open the .rdl file from the local git repository in Power BI Report Builder.
+    - Make the desired edits.
+    - Commit and push your changes to the remote repository.
+    - Create a PR to the main branch
+    - Once approved, the PR is merged to the main branch
+    - From the main branch, upload the changes to the relevant workspace.
 
-    **Note:** Uploading an updated version of the file to the Workspace will result in your git repository being out of sync with the git repository.
-
+  
 ## Considerations and limitations
 
 - Publish/upload the paginated report to the service and then use git. The paginated report won't render if you start with the files in git.  
