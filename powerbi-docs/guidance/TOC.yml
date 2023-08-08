@@ -119,6 +119,14 @@
       href: translation-builder-machine-translation.md
     - name: Multiple-language page navigation
       href: multiple-language-page-navigation.md
+    - name: Enable workflows for human translation
+      href: translation-workflow-human.md
+    - name: Export translation sheets
+      href: translation-sheet-export.md
+    - name: Import translation sheets
+      href: translation-sheet-import.md
+    - name: Manage enterprise-level translations
+      href: translation-manage-dataset-enterprise.md
   - name: Admin and deployment
     items:
     - name: "On-premises data gateway sizing"

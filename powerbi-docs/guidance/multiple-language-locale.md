@@ -11,7 +11,7 @@ ms.date: 07/19/2023
 
 # Use locale values in multiple-language Power BI reports
 
-Every report that loads in the Power BI service initializes with a user context that identifies a *language* and a geographical region known as a *locale*. In most cases, a locale identifies a country. The Power BI service tracks the combination of the user's language and locale using a *culture name*.
+Every report that loads in the Power BI service initializes with a user context that identifies a *language* and a geographical region known as a *locale*. In most cases, a locale identifies a country/region. The Power BI service tracks the combination of the user's language and locale using a *culture name*.
 
 A culture name is usually a lower-case language identifier and an upper-case locale identifier separated by a hyphen. The culture name `en-US` identifies a user in the United States who speaks English. A culture name of `es-ES` identifies a user in Spain who speaks Spanish. A culture name of `fr-FR` identifies a user in France who speaks French. A culture name of `de-DE` identifies a user in Germany who speaks German.
 
@@ -24,6 +24,8 @@ A culture name is usually a lower-case language identifier and an upper-case loc
 
 > [!NOTE]
 > In some cases, a culture name also includes other information. For example, there are two different culture names for the language Serbian in Serbia, which are `sr-Cyrl-RS` and `sr-Latn-RS`. The part in the middle known as the script (*Cyrl* and *Latn*) indicates whether to use the Cyrillic alphabet or the Latin alphabet. For more information, see [RFC 4646](https://datatracker.ietf.org/doc/html/rfc4646).
+
+For a list of culture name values, see [ISO 639 Language codes](https://www.iso.org/iso-639-language-codes.html) and [Online Browsing Platform](https://www.iso.org/obp/ui/#search).
 
 ## Organize project for metadata translation
 
@@ -69,7 +71,7 @@ Measures currently act differently than tables and columns in Power BI. With mea
 With tables and columns, the Power BI service requires an exact match between the culture name in the request and the supported metadata translations. If there isn't an exact match, the Power BI service falls back to loading dataset object names. The names of tables and columns in this scenario would load using English dataset object names.
 
 > [!NOTE]
-> This behavior is a known issue for Power BI.
+> This use of the default language for the names of tables and columns is a known issue for Power BI.
 
 We recommend that you add metadata translation for any culture name you want to support. In this example, add three sets of French translations to support the culture names of `fr-FR`, `fr-BE` and `fr-CA`. The approach handles the scenario where the French translations for users in France are different from French translations for users in Canada.
 

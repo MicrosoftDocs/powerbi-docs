@@ -52,6 +52,28 @@ Direct Lake datasets support write operations through the XMLA endpoint by using
 
 - Automation tasks like refreshing, and applying changes to Direct Lake datasets by using PowerShell and REST APIs.
 
+### Enable XMLA read-write
+
+Before performing write operations on Direct Lake datasets through the XMLA endpoint, XMLA read-write must be enabled for the capacity.
+
+For Power BI Premium capacities, see [Enable XMLA read-write](service-premium-connect-tools.md#enable-xmla-read-write).
+
+For **Fabric trial** capacities, the trial user has the admin privileges necessary to enable XMLA read-write.
+
+1. In the Admin portal, select **Capacity settings**. 
+
+1. Click on the **Trial** tab.
+
+1. Select the capacity with **Trial** and your username in the capacity name. 
+
+1. Expand **Power BI workloads**, and then in the **XMLA Endpoint** setting, select **Read Write**.
+
+    :::image type="content" source="media/directlake-overview/fabric-enable-xmla-readwrite.png" alt-text="Enable XMLA read write for a Fabric trial capacity":::
+
+Keep in mind, the XMLA Endpoint setting applies to all workspaces and datasets assigned to the capacity.
+
+### Direct Lake dataset metadata
+
 When connecting to a standalone dataset through the XMLA endpoint, the metadata looks like any other dataset. However, Direct Lake datasets show the following differences:
 
 - The `compatibilityLevel` property of the database object is 1604 or higher.
@@ -59,6 +81,10 @@ When connecting to a standalone dataset through the XMLA endpoint, the metadata 
 - The `Mode` property of Direct Lake partitions is set to `directLake`.
 
 - Direct Lake partitions use shared expressions called `DatabaseQuery` to define data sources. The expression points to the SQL endpoint of a Lakehouse. Direct Lake uses the SQL endpoint to discover the Lakehouse schema but loads the data directly from the delta tables (unless Direct Lake must fallback to DirectQuery mode for any reason).
+
+Here's an example XMLA query in SSMS:
+
+:::image type="content" source="media/dl-dataset-metadata.png" alt-text="XMLA query in SSMS":::
 
 To learn more about tool support through the XMLA endpoint, see [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md).
 
@@ -213,4 +239,4 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 ## Analyze query processing
 
-To determine if a report visual's DAX queries to the data source are providing the best performance by using Direct Lake mode, or falling back to DirectQuery mode, you can use Performance analyzer in Power BI Desktop to analyze queries. To learn more, see [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md).
+To determine if a report visual's DAX queries to the data source are providing the best performance by using Direct Lake mode, or falling back to DirectQuery mode, you can use Performance analyzer in Power BI Desktop, SQL Server Profiler, or other third party tools to analyze queries. To learn more, see [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md).
