@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 01/20/2023
+ms.date: 08/08/2023
 ---
 
 # Remotely configure Power BI app using mobile device management (MDM) tool
@@ -19,6 +19,7 @@ The Power BI mobile app supports the following configuration scenarios:
 - Data protection settings (iOS and Android)
 - Disable single sign-on (iOS and Android)
 - Interaction settings (iOS and Android)
+- Launch item configurationf (iOS and Android)
 
 ## Report server configuration (iOS and Android)
 
@@ -68,6 +69,18 @@ The Power BI app for iOS and Android offers administrators the ability to config
 | com.microsoft.powerbi.mobile.EnableMultiSelect | Boolean |  <nobr>True</nobr><br><nobr>False</nobr> | Configure whether a tap on a data point will replace the current selection or be added to the current selection. |
 | com.microsoft.powerbi.mobile.RefreshAction | String |  <nobr>pull-to-refresh</nobr><br>button | Configure whether the user will have a button to refresh the report or should use pull to refresh. |
 | com.microsoft.powerbi.mobile.FooterAppearance | String |  docked<br>dynamic | Configure whether the report footer will be docked to the bottom of the report or auto-hidden. |
+
+## Launch item configuration (iOS and Android)
+
+If groups of users in an organization always need to get to a specific report, dashboard, scorecard, or app, admins can configure that item as a [launch item](./mobile-apps-launch-item.md) for them. A launch item is an item that opens upon app start up instead of the usual app home page. Launch items save users time by getting them immediately to the content they need. They don't have to waste time navigating to it every time they open their app.
+
+When an admin has configured a launch item for a group of users, those users will be able to accept it or reject it. If they reject it, they can configure their own launch item, or they can just not use any launch item at all. 
+
+| Key | Type | Description |
+|---|---|---|---|
+| com.microsoft.powerbi.mobile.LaunchItemURI | URI/String | Any valid URI to a report, dashboard, scorecard, or app. |
+
+For more information about launch items, see [Choose a launch item for your Power BI mobile app](./mobile-apps-launch-item.md).
 
 ## Deploy app configuration settings
 
