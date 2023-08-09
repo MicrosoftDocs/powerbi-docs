@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.date: 01/30/2023
 LocalizationGroup: Data from files
 ---
+
 # Understand datamarts
 
 This article describes and explains important concepts about datamarts.
@@ -32,7 +33,8 @@ During preview, default dataset connectivity is available using [DirectQuery](..
 
 Default datasets are different from traditional Power BI datasets in the following ways:
 
-* The XMLA endpoint supports read-only operations and users can't edit the dataset directly.
+* The XMLA endpoint supports read-only operations and users can't edit the dataset directly.  
+Note: With XMLA read-only permission you can query the data in a query window, but the Object Explorer in SQL Server Management Studio will not show the dataset. 
 * The default datasets don't have data source settings and users don't need to enter credentials. Rather, they use automatic single sign-on (SSO) for queries. 
 * For refresh operations, datasets use the dataset author credentials to connect to the managed datamart’s SQL endpoint.
 
@@ -112,3 +114,5 @@ For more information about dataflows and transforming data, see the following ar
 
 * [Introduction to dataflows and self-service data prep](../dataflows/dataflows-introduction-self-service.md)
 * [Tutorial: Shape and combine data in Power BI Desktop](../../connect-data/desktop-shape-and-combine-data.md)
+
+
