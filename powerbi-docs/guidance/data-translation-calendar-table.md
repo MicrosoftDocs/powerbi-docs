@@ -120,7 +120,7 @@ After you create the required relationships with the **Calendar** table, create 
 
 Add a relationship between these new field parameter tables and the **Languages** table to ensure the language filtering strategy works as expected.
 
-:::image type="content" source="./media/data-translation-calendar-table/translate-table-relationship.png" alt-text="Screenshot shows the Languages table in relationships with several translated tables.":::
+:::image type="content" source="./media/data-translation-calendar-table/translate-table-relationship.png" alt-text="Screenshot shows the Languages table in relationship to several translated tables.":::
 
 After you create the field parameters for **Translated Month Names** and **Translated Day Names**, you can begin to surface them in a report using cartesian visuals, tables, and matrices.
 
