@@ -111,7 +111,7 @@ The comments in the following code caption from the `pbiviz.json` file describe 
 > [!NOTE]
 >
 > * From version 3.x.x of the **pbiviz** tool,`externalJS` isn't supported.
-> * Version numbers must be in the format `x.x.x.x`.
+> * Version numbers should contain four digits in the following format `x.x.x.x`.
 > * For localization support, [add the Power BI locale to your visual](./localization.md).
 
 ```json
