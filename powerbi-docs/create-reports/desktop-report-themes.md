@@ -291,7 +291,7 @@ Other than **name**, everything else is optional, which means you're free to onl
 
 Under **name**, you can add the following basic data color-related properties:
 
-- **dataColors**: The list of color hexadecimal codes to use to color shapes that represent data in Power BI Desktop visuals. This list can have as many or as few colors as you want. Once all colors from this list have been used, if the visual still needs more colors, it reverts back to using Power BI's default color palette.
+- **dataColors**: The list of color hexadecimal codes to use to color shapes that represent data in Power BI Desktop visuals. This list can have as many or as few colors as you want. Once all colors from this list have been used, if the visual still needs more colors, it rotates the theme color palette slightly with saturation/hue adjustment and cycle over and over to generate unique colors without repetition. 
 - **good**, **neutral**, **bad**: These properties set the status colors used by the waterfall chart and the KPI visual.
 - **maximum**, **center**, **minimum**, **null**: These colors set the various gradient colors in the conditional formatting dialog box.
 
