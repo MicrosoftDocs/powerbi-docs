@@ -33,8 +33,7 @@ During preview, default dataset connectivity is available using [DirectQuery](..
 
 Default datasets are different from traditional Power BI datasets in the following ways:
 
-* The XMLA endpoint supports read-only operations and users can't edit the dataset directly.  
-Note: With XMLA read-only permission you can query the data in a query window, but the Object Explorer in SQL Server Management Studio will not show the dataset. 
+* The XMLA endpoint supports read-only operations and users can't edit the dataset directly. With XMLA read-only permission you can query the data in a query window, but the Object Explorer in SQL Server Management Studio will not show the dataset. 
 * The default datasets don't have data source settings and users don't need to enter credentials. Rather, they use automatic single sign-on (SSO) for queries. 
 * For refresh operations, datasets use the dataset author credentials to connect to the managed datamart’s SQL endpoint.
 
