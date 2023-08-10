@@ -309,7 +309,7 @@ The following operations are available in both the audit and activity logs.
 | Analyzed Power BI report    | AnalyzeInExcel   | Generated when a user selects **Analyze in Excel** on a report or dataset in the service and successfully generates an Excel workbook |
 | Applied a change to model in Power BI | ApplyChangeToPowerBIModel | A user makes a change to an existing model. This occurs whenever any edit is made to the model (ex: write a DAX measure, manage relationships, etc.) |
 | [Applied sensitivity label to Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
-| Requested access to a Power BI report or dashboard | ArtifactAccessRequest | |
+| Completed an artifact access request action in Power BI | ArtifactAccessRequest | |
 | Assigned a workspace to a deployment pipeline | AssignWorkspaceToPipeline  | |
 | Attached dataflow storage account     | AttachedDataflowStorageAccount | |
 | Binded monikers to Power BI datasources | BindMonikerstoDatasources | |
