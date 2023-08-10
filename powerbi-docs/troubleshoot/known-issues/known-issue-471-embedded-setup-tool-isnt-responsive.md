@@ -3,7 +3,6 @@ title: Known issue - Power BI Embedded setup tool isn't responsive
 description: A known issue is posted where Power BI Embedded setup tool isn't responsive
 author: mihart
 ms.author: jessicamo
-ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting  

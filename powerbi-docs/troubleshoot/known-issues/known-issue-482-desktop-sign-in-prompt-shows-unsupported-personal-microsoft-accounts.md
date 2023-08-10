@@ -3,10 +3,9 @@ title: Known issue - Power BI Desktop sign-in prompt shows unsupported personal 
 description: A known issue is posted where Power BI Desktop sign-in prompt shows unsupported personal Microsoft accounts
 author: mihart
 ms.author: jessicamo
-ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.topic: troubleshooting  
+ms.topic: troubleshooting
 ms.date: 08/10/2023
 ms.custom: known-issue-482
 ---
