@@ -150,18 +150,8 @@ Only five pages of a report are processed concurrently. For example, if you're e
 >[!NOTE]
 >
 > * Exporting a Power BI report to file using the `exportToFile` API, is not supported for [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
-> * The maximum limit for concurrent paginated reports is different and discussed in [Export paginated report to file](export-paginated-report.md).
 
-| Azure SKU      | Office SKU      | Maximum concurrent report pages |
-|----------------|-----------------|---------------------------------|
-| A1             | EM1             |  20                             |
-| A2             | EM2             |  25                             |
-| A3             | EM3             |  35                             |
-| A4             | P1              |  55                             |
-| A5             | P2              |  95                             |
-| A6             | P3              | 175                             |
-| A7<sup>1</sup> | P4<sup>1</sup>  | 200                             |
-| A8<sup>1</sup> | P5<sup>1</sup>  | 200                             |
+The `exportToFile` API supports concurrent export job requests. The maximum number of concurrent requests supported is 500. To avoid exceeding the limit and getting a *Too Many Requests (429)* error, either distribute the load over time or across capacities.
 
 <sup>1</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
@@ -384,8 +374,9 @@ private async Task<ExportedFile> ExportPowerBIReport(
 * Exported reports can't exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels aren't supported.
 * The number of exports (single visuals or report pages) that can be included in a single exported report is 50 (not including exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
-* [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported.
+* [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported for Power BI report export to file.
 * Exporting a Power BI report to file using the `exportToFile` API, isn't supported for **Premium Per User (PPU)**.
+* The `exportToFile` API will export the report with default value if used without bookmarks or reportLevelFilters.
 * The Power BI visuals listed below aren't supported. When you export a report containing these visuals, the parts of the report that contain these visuals won't render, and will display an error symbol.
   * Uncertified Power BI custom visuals
   * R visuals

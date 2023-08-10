@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/06/2023
+ms.date: 07/17/2023
 LocalizationGroup: Connect to data
 ---
 # Connect to datasets in the Power BI service from Power BI Desktop
@@ -108,6 +108,7 @@ Now you and others can create and share custom reports, all from the same datase
 When you use the Power BI service live connection, keep a few considerations and limitations in mind.
 
 - Only users with Build permission for a dataset can connect to a published dataset by using the Power BI service live connection.
+- Hidden columns will become visible to users with Build permissions when they create live connections to the dataset in Power BI Desktop.
 - Free users only see datasets that are in their **My Workspace** and in Premium-based workspaces.
 - Because this connection is live, left navigation and modeling are disabled. The behavior is similar to a SQL Server Analysis Services (SSAS) connection. However, composite models in Power BI make it possible to combine data from different sources. For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
 - Because this connection is live, row-level security (RLS) and similar connection behaviors are enforced. This behavior is the same as when connected to SSAS.

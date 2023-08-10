@@ -44,12 +44,20 @@
       href: sample-employee-hiring-history.md
     - name: Human Resources sample
       href: sample-human-resources.md
+    - name: Revenue Opportunities
+      href: sample-revenue-opportunities.md
     - name: Opportunity Analysis sample
       href: sample-opportunity-analysis.md
     - name: Procurement Analysis sample
       href: sample-procurement.md
+    - name: Regional Sales sample
+      href: sample-regional-sales.md
+    - name: Store Sales sample
+      href: sample-store-sales.md
     - name: Retail Analysis sample
       href: sample-retail-analysis.md 
+    - name: Competitive Marketing Analysis
+      href: sample-competitive-marketing-analysis.md
     - name: Sales and Marketing sample
       href: sample-sales-and-marketing.md
     - name: Sales & Marketing sample template app
@@ -100,12 +108,12 @@
       href: power-bi-automate-visual.md            
     - name: Creating tooltips
       items: 
+      - name: Customize tooltips
+        href: desktop-custom-tooltips.md
       - name: Add report tooltips to enhance your visuals
         href: desktop-tooltips.md
       - name: Create modern visual tooltips
         href: desktop-visual-tooltips.md        
-      - name: Customize tooltips
-        href: desktop-custom-tooltips.md
     - name: Filters and slicers in reports
       items: 
       - name: Filters and highlighting in reports
@@ -218,6 +226,8 @@
       href: service-export-to-pbix.md
     - name: Publish datasets and reports
       href: desktop-upload-desktop-files.md
+    - name: Troubleshoot Power BI Desktop publishing
+      href: desktop-troubleshoot-publish.md
     - name: Mobile-optimized reports
       items:
       - name: About mobile-optimized reports
@@ -276,6 +286,8 @@
       href: ../visuals/power-bi-visualization-funnel-charts.md
     - name: KPI visuals
       href: ../visuals/power-bi-visualization-kpi.md
+    - name: Line charts
+      href: ../visuals/power-bi-line-chart.md
     - name: Paginated report visuals
       href: ../visuals/paginated-report-visual.md
     - name: Metrics visuals
@@ -790,28 +802,42 @@
         href: ../paginated-reports/expressions/report-builder-expression-examples.md
       - name: Expression uses
         href: ../paginated-reports/expressions/expression-uses-reports-report-builder.md
-      - name: "Built-in collections: Report and group variables references"
-        href: ../paginated-reports/expressions/built-in-collections-report-group-variables-references-report-builder.md
       - name: Add an assembly reference to a paginated report
         href: ../paginated-reports/expressions/add-assembly-reference.md
       - name: Add code to a paginated report
         href: ../paginated-reports/expressions/add-code-to-a-report.md
-      - name: "Built-in collections: Globals and User references"
-        href: ../paginated-reports/expressions/built-in-collections-built-in-globals-and-users-references-report-builder.md
+      - name: Add an expression to a paginated report
+        href: ../paginated-reports/expressions/add-expression-report-builder.md
       - name: Create recursive hierarchy groups in a paginated report
         href: ../paginated-reports/expressions/creating-recursive-hierarchy-groups-report-builder.md
+      - name: Constants in expressions in paginated reports
+        href: ../paginated-reports/expressions/constants-expressions-report-builder.md
       - name: Custom code in expressions in a paginated report
         href: ../paginated-reports/expressions/custom-code-and-assembly-references-in-expressions.md
       - name: Data types in expressions
         href: ../paginated-reports/expressions/data-types-expressions-report-builder.md
-      - name: Expression scope for totals, aggregates, and built-in collections
-        href: ../paginated-reports/expressions/expression-scope-for-totals-aggregates-and-built-in-collections.md
       - name: Filter equation examples in a paginated report
         href: ../paginated-reports/expressions/filter-equation-examples-report-builder.md
       - name: Group expression examples in paginated reports
         href: ../paginated-reports/expressions/group-expression-examples-report-builder.md
       - name: Operators in expressions in paginated reports
         href: ../paginated-reports/expressions/operators-in-expressions-report-builder.md
+      - name: Built-in collections
+        items:
+        - name: Expression scope for totals, aggregates, and built-in collections
+          href: ../paginated-reports/expressions/expression-scope-for-totals-aggregates-and-built-in-collections.md
+        - name: "Built-in collections: Globals and User references"
+          href: ../paginated-reports/expressions/built-in-collections-built-in-globals-and-users-references-report-builder.md
+        - name: "Built-in collections: Report and group variables references"
+          href: ../paginated-reports/expressions/built-in-collections-report-group-variables-references-report-builder.md
+        - name: "Built-in collections: Dataset Fields collection references in a paginated report"
+          href: ../paginated-reports/expressions/built-in-collections-dataset-fields-collection-references-report-builder.md
+        - name: "Built-in collections: DataSources and DataSets references in a paginated report"
+          href: ../paginated-reports/expressions/built-in-collections-datasources-and-datasets-references-report-builder.md
+        - name: "Built-in collections in expressions in a paginated report"
+          href: ../paginated-reports/expressions/built-in-collections-in-expressions-report-builder.md
+        - name: "Built-in collections: ReportItems collection references in a paginated report"
+          href: ../paginated-reports/expressions/built-in-collections-reportitems-collection-references-report-builder.md
       - name: Expression reference
         items:
         - name: Aggregate functions reference in paginated reports
@@ -860,6 +886,8 @@
           href: ../paginated-reports/expressions/report-builder-functions-union-function.md
         - name: Var function
           href: ../paginated-reports/expressions/report-builder-functions-var-function.md
+        - name: VarP function
+          href: ../paginated-reports/expressions/report-builder-functions-varp-function.md
     - name: Parameters
       items:
       - name: Parameters
@@ -880,12 +908,14 @@
         href: ../paginated-reports/parameters/customize-parameters-pane-report-builder.md
       - name: Add a multi-value parameter
         href: ../paginated-reports/parameters/add-multi-value-parameter-to-report.md
+      - name: Add a multi-value parameter
+        href: ../paginated-reports/parameters/add-multi-value-parameter-to-report.md
       - name: Built-in parameters collection references
         href: ../paginated-reports/parameters/built-in-collections-parameters-collection-references-report-builder.md
       - name: Add or modify parameters
         href: ../paginated-reports/parameters/add-change-delete-report-parameter-report-builder.md
-      - name: Add or modify values for parameters
-        href: ../paginated-reports/parameters/add-change-or-delete-available-values-for-a-report-parameter.md
+      - name: Localize date parameters in the Power BI service
+        href: ../paginated-reports/paginated-localize-date-parameters.md
       - name: Add or modify default values for parameters
         href: ../paginated-reports/parameters/add-change-or-delete-default-values-for-a-report-parameter.md
       - name: Add a subreport and parameters

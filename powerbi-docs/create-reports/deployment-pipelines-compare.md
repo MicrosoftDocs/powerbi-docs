@@ -13,6 +13,9 @@ ms.search.form: Deployment pipelines operations
 
 # Compare content in different deployment stages
 
+> [!IMPORTANT]
+> Deployment pipelines is moving to Microsoft Fabric and this article will be deprecated soon. For an updated version of this article go to [Compare content in different deployment stages](/fabric/cicd/deployment-pipelines/compare-pipeline-content).
+
 Before you deploy content to a different stage, it can be helpful to see the differences between the two stages. The deployment pipeline home page compares the three deployment stages and indicates if there are any differences. Use the **Compare** and **Change review** buttons to display the content of each pipeline and see exactly which items are different and where those differences are.
 
 ## Compare stages

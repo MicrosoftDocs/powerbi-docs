@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 01/09/2023
+ms.date: 06/27/2023
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot Power BI Desktop startup
@@ -114,7 +114,7 @@ If you still have issues, submit a support incident to [Power BI support](https:
   |%localappdata%\Temp\ | msedge_installer.log|
   |%localappdata%\Temp\ | MicrosoftEdgeUpdate.log|
 
-- **Event Viewer logs.** Start Event Viewer from the **Start** menu. In Event Viewer, go to **Applications and Services log** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**. Right-click **Operational** in the left pane and choose **Save All Events As**. Store the file somewhere you can retrieve it.
+- **Event Viewer logs.** Start Event Viewer from the **Start** menu. In Event Viewer, go to **Applications and Services log** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**. Right-click **Operational** in the left pane and choose **Save All Events As**. Store the file somewhere you can retrieve it. Do the same for **Windows Logs** > **Application**.
 
   :::image type="content" source="media/desktop-error-launching-desktop/eventviewer-save-all-events-as.png" alt-text="Screenshot of Event viewer showing the context menu with Save All Events As highlighted.":::
 

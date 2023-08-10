@@ -216,7 +216,7 @@ However, if a measure doesn't refer to items from a single remote source group e
 
 In this scenario, the **Internet Sales measure** isn't impacted by the calculation group defined in the remote model because they aren't part of the same model. However, the calculation group can change the result of the **Reseller Sales** measure, because they are in the same model. This fact means that the results returned by the **Total Sales** measure must be evaluated carefully. Imagine we use the calculation group in the remote model to return year-to-date results. The result returned by **Reseller Sales** is now a year-to-date value, while the result returned by **Internet Sales** is still an actual. The result of **Total Sales** is now likely unexpected, as it adds an actual to a year-to-date result.
 
-## Composite models on Power BI datasets and Azure Analysis Services
+## Composite models on Power BI datasets and Analysis Services
 
 Using composite models with Power BI datasets and Analysis Services, you can build a composite model using a DirectQuery connection to connect to Power BI datasets, Azure Analysis Services (AAS), and SQL Server 2022 Analysis Services. Using a composite model, you can combine the data in these sources with other DirectQuery and imported data. Report authors who want to combine the data from their enterprise semantic model with other data they own, such as an Excel spreadsheet, or want to personalize or enrich the metadata from their enterprise semantic model, will find this functionality especially useful. 
 
@@ -300,10 +300,10 @@ Data may be pushed from one data source to another, which is the same security w
 
 You can build composite models using data from Power BI datasets or Analysis Services models to service the following scenarios: 
 
-- Connecting to data from various sources: Import (such as files), Power BI datasets, Azure Analysis Services
+- Connecting to data from various sources: Import (such as files), Power BI datasets, Analysis Services models
 - Creating relationships between different data sources
 - Writing measures that use fields from different data sources
-- Creating new columns for tables from Power BI datasets of Azure Analysis Services
+- Creating new columns for tables from Power BI datasets or Analysis Services models
 - Creating visuals that use columns from different data sources
 - You can remove a table from your model using the field list, to keep models as concise and lean as possible (if you connect to a perspective, you can't remove tables from the model) 
 - You can specify which tables to load, rather than having to load all tables when you only want a specific subset of tables. See Loading a subset of tables later in this document. 
@@ -348,7 +348,7 @@ The following **limitations** apply when working with DirectQuery for Power BI d
     * Data imported from Excel or CSV files on the Service
     * Usage metrics
     * Datasets stored in “My workspace”
-* Using Power BI Embedded with datasets that include a DirectQuery connection to an Azure Analysis Services model isn't currently supported.
+* Using Power BI Embedded with datasets that include a DirectQuery connection to an Analysis Services model isn't currently supported.
 * Publishing a report to web using the publish to web feature isn't supported.
 * Calculation groups on remote sources aren't supported, with undefined query results.
 * Calculated tables aren't supported in the Service using this feature. Attempting to perform a refresh on a dataset with a calculated table or a calculated column that references a DirectQuery data source will result in a "Single sign-on (SSO) credential isn't provided" error message.

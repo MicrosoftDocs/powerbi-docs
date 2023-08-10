@@ -13,7 +13,7 @@ ms.date: 05/31/2023
 # Power BI Desktop project report folder
 
 > [!IMPORTANT]
-> Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Power BI Desktop projects is currently in **preview**.
 
 This article describes the files and subfolders in a Microsoft Power BI Desktop project's **Report** folder. The files and subfolders here represent a Power BI report. Depending on your project, the report folder can include:
 
@@ -23,11 +23,13 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
 - StaticResources\\
   - [RegisteredResources\\](#registeredresources)
 - [datasetDiagramLayout.json](#datasetdiagramlayoutjson)
-- [definition.pbir](#definitionpbir)
+- [definition.pbir](#definitionpbir)<sup>[1](#required)</sup>
 - [mobileState.json](#mobilestatejson)
-- [report.json](#reportjson)
+- [report.json](#reportjson)<sup>[1](#required)</sup>
 - [item.config.json](#itemconfigjson)
 - [item.metadata.json](#itemmetadatajson)
+
+<a name="required">1</a> - This file is required.
 
 Not every project report folder includes all of the files and subfolders described here.
 
@@ -58,11 +60,11 @@ Developers are responsible for the files here and changes are supported. For exa
 - Authoring custom themes outside of Power BI Desktop by using the public schema.
 - Applying batch changes by changing the resource file on multiple reports. For example, you can switch the corporate custom theme, change between light and dark themes, and change logo images.
 
-Every resource file must have a corresponding entry in the report.json file, which during **PREVIEW** doesn't support editing. Edits to RegisteredResources files are only supported for already loaded resources that cause Power BI Desktop to register the resource in report.json.
+Every resource file must have a corresponding entry in the report.json file, which during **preview** doesn't support editing. Edits to RegisteredResources files are only supported for already loaded resources that cause Power BI Desktop to register the resource in report.json.
 
 #### datasetDiagramLayout.json
 
-Contains data model diagrams describing the structure of the dataset associated with the report. During **PREVIEW**, this file doesn't support external editing.
+Contains data model diagrams describing the structure of the dataset associated with the report. During **preview**, this file doesn't support external editing.
 
 #### definition.pbir
 
@@ -126,7 +128,7 @@ Contains report appearance and behavior settings when rendering on a mobile devi
 
 #### report.json
 
-Defines a report including visuals, page layout, and intended interactions. During **PREVIEW**, this file doesn't support external editing.
+Defines a report including visuals, page layout, and intended interactions. During **preview**, this file doesn't support external editing.
 
 #### item.config.json
 
