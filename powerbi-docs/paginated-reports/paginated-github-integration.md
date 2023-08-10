@@ -62,7 +62,7 @@ You'll see a folder in your git repository which contains the *.rdl* and two *.j
     - Commit and push your changes to the remote repository.
     - Create a PR to the main branch
     - Once approved, the PR is merged to the main branch
-    - From the main branch, upload the changes to the relevant workspace.
+    - From the main branch, apply your revised changes to the relevant workspace.
 
   
 ## Considerations and limitations
