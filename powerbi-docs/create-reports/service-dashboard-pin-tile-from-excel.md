@@ -32,7 +32,7 @@ Watch Will demonstrate several ways to import data from, and connect to, Excel w
 
 When you choose **Connect**, your workbook appears in Power BI just like it would in Excel Online. However, unlike Excel Online, you have some great features to help you pin elements from your worksheets right to your dashboards.
 
-You can’t edit your workbook in Power BI, but if you need to make some changes, you can select **Edit** from the **Workbooks** tab of your workspace. Then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive
+You can’t edit your workbook in Power BI, but if you need to make some changes, you can select **Edit** from the **Workbooks** tab of your workspace. Then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
 
 1. Upload your workbook to your OneDrive for work or school.
 
