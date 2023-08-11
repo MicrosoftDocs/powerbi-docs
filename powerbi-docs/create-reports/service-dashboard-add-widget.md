@@ -196,11 +196,13 @@ You can paste or type in any HTML content, as a tile, to your report or dashboar
 * For iframes, use a secure source. If you enter your iframe embed code and get a blank tile, verify you're not using *http* for the iframe source. If you are, change it to *https*.
   
   ```html
+  <iframe src="https://xyz.com">
   ```
 
 * Edit width and height information. The embed code embeds a video and sets the video player to 560 x 315 pixels. This size doesn't change as you resize the tile.
   
   ```html
+  <iframe width="560" height="315"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
   ```
@@ -208,6 +210,7 @@ You can paste or type in any HTML content, as a tile, to your report or dashboar
   If you'd like the player to resize to fit the tile size, set the width and height to 100%.
 
   ```html
+  <iframe width="100%" height="100%"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
   ```
