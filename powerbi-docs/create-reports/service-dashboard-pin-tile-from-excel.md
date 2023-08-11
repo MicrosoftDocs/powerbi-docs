@@ -26,13 +26,13 @@ Watch Will demonstrate several ways to import data from, and connect to, Excel w
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/l8JoB7w0zJA" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/l8JoB7w0zJA]
 
 ## Connect your Excel workbook from OneDrive for work or school to Power BI
 
 When you choose **Connect**, your workbook appears in Power BI just like it would in Excel Online. However, unlike Excel Online, you have some great features to help you pin elements from your worksheets right to your dashboards.
 
-You canâ€™t edit your workbook in Power BI, but if you need to make some changes, you can select **Edit** from the **Workbooks** tab of your workspace. Then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
+You can’t edit your workbook in Power BI, but if you need to make some changes, you can select **Edit** from the **Workbooks** tab of your workspace. Then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
 
 1. Upload your workbook to your OneDrive for work or school.
 
@@ -84,7 +84,7 @@ A tile created from a table or PivotTable shows the entire table. If you add, re
 
 ## View the workbook linked to the tile
 
-Selecting a workbook tile opens the linked workbook in Power BI. Since the workbook file is located on the ownerâ€™s OneDrive for work or school, viewing the workbook requires you to have read permissions for the workbook. If you don't have permission, you receive an error message.
+Selecting a workbook tile opens the linked workbook in Power BI. Since the workbook file is located on the owner’s OneDrive for work or school, viewing the workbook requires you to have read permissions for the workbook. If you don't have permission, you receive an error message.
 
 > [!NOTE]
 > The animation might use earlier versions of the Power BI service.

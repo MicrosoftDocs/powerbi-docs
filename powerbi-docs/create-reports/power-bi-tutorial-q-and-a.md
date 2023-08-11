@@ -26,7 +26,7 @@ Q&A is interactive and fun. Often one question leads to others as the visualizat
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qMf7OLJfCz8?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/qMf7OLJfCz8?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP]
 
 ## Part 1: Use Q&A on a dashboard in the Power BI service
 
