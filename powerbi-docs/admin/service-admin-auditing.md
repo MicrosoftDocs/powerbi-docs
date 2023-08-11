@@ -320,6 +320,7 @@ The following operations are available in both the audit and activity logs.
 | Changed Power BI gateway admins   | ChangeGatewayAdministrators  |       |
 | Changed Power BI gateway data source users  | ChangeGatewayDatasourceUsers   |       |
 | [Changed sensitivity label for Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md) | SensitivityLabelChanged  | |
+| Completed an artifact access request action in Power BI | ArtifactAccessRequest | |
 | Connected to Power BI dataset from external app | ConnectFromExternalApplication | |
 | Copied Power BI dashboard | CopyDashboard | |
 | Copied Power BI report | CopyReport  |  |
