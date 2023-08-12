@@ -58,6 +58,8 @@
         href: mobile-oauth-ssrs.md
     - name: iOS and Android
       items: 
+      - name: "Admin: Configuration using mobile device management"
+        href: mobile-app-configuration.md
       - name: "View reports optimized for your phone"
         href: mobile-apps-view-phone-report.md
       - name: "View on-premises reports in the mobile apps"
@@ -82,8 +84,6 @@
         href: mobile-app-interaction-settings.md
       - name: "Work side by side with other apps"
         href: mobile-apps-split-screen.md
-      - name: "Configure using mobile device management"
-        href: mobile-app-configuration.md
     - name: iOS
       items: 
       - name: "Get started with the iOS app"
