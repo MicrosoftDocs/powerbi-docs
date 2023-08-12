@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/08/2023
+ms.date: 08/12/2023
 ---
 
 # Remotely configure Power BI app using mobile device management (MDM) tool
@@ -74,11 +74,13 @@ The Power BI app for iOS and Android offers administrators the ability to config
 
 If groups of users in an organization always need to get to a specific report, dashboard, scorecard, or app, admins can configure that item as a [launch item](./mobile-apps-launch-item.md) for them. A launch item is an item that opens upon app start up instead of the usual app home page. Launch items save users time by getting them immediately to the content they need. They don't have to waste time navigating to it every time they open their app.
 
-When an admin has configured a launch item for a group of users, those users will be able to accept it or reject it. If they reject it, they can configure their own launch item, or they can just not use any launch item at all. 
+When an admin has configured a launch item for a group of users, those users will be able to accept it or reject it. If they reject it, they can configure their own launch item, or they can just not use any launch item at all.
+
+A launch item can be a report, a specific report page, a dashboard, a scorecard, an app, or even a specific report within an app.
 
 | Key | Type | Description |
 |---|---|---|---|
-| com.microsoft.powerbi.mobile.LaunchItemURI | URI/String | Any valid URI to a report, dashboard, scorecard, or app. |
+| com.microsoft.powerbi.mobile.LaunchItemURI | URI/String | Any valid URI to a report, report page, dashboard, scorecard, app, or report within an app. |
 
 For more information about launch items, see [Choose a launch item for your Power BI mobile app](./mobile-apps-launch-item.md).
 
