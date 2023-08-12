@@ -59,7 +59,7 @@ Here's a simple example Python script that imports pandas and uses a data frame:
 ```python
 import pandas as pd
 data = [['Alex',10],['Bob',12],['Clarke',13]]
-df = pd.DataFrame(data,columns=['Name','Age'],dtype=float)
+df = pd.DataFrame(data,columns=['Name','Age'])
 print (df)
 ```
 
