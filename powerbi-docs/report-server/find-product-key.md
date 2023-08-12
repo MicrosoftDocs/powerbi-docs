@@ -16,7 +16,7 @@ Learn how you can find your Power BI Report Server product key to install your s
 > [!NOTE]  
 > This video might use earlier versions of Power BI Report Server or the Power BI service.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/6CQnf-NGtpU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/6CQnf-NGtpU?rel=0&amp;showinfo=0]
 
 You downloaded [Power BI Report Server](get-started.md), and you have a SQL Server Enterprise Software Assurance agreement. Or, you purchased [Power BI Premium](../enterprise/service-premium-what-is.md). You want to install the server in a production environment, but you need a product key in order to do that. Where is the product key? The product key will be in one of two places depending on what you purchased. 
 
@@ -25,7 +25,7 @@ You downloaded [Power BI Report Server](get-started.md), and you have a SQL Serv
 >
 > You can't use a developer product key in a production environment.
 >
-> For more details, see the section "Use of Power BI Report Server â€“ SQL Server Enterprise Edition" in [SQL Server licensing](https://www.microsoft.com/licensing/terms/productoffering/SQLServer/EAEAS).
+> For more details, see the section "Use of Power BI Report Server – SQL Server Enterprise Edition" in [SQL Server licensing](https://www.microsoft.com/licensing/terms/productoffering/SQLServer/EAEAS).
 
 ## Purchased Power BI Premium
 If you have purchased Power BI Premium, within the **Capacity settings** tab of the Power BI admin portal, you'll have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Fabric administrator role.
