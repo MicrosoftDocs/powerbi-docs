@@ -71,7 +71,7 @@ The smart narrative summary is highly customizable. You can edit or add to the e
 :::image type="content" source="media/power-bi-visualization-smart-narratives/6.png" alt-text="Screenshot showing text-formatting commands on a toolbar.":::
 
   
-To customize the summary or add your own insights, use *dynamic values*. You can map text to existing fields and measures or use natural language to define a new measure to map to text. For example, to add information about the number of returned items in the sample file, add a value.
+To customize the summary or add your own insights, use *dynamic values*. You can map text to existing fields and measures or use natural language to define a new measure to map to text. For example, to add information about the number of returned items in the sample file, add a value. 
 
 As you type a value name, you can choose from a list of suggestions as you do in a Q&A visual. So, in addition to asking questions of your data in a Q&A visual, you can now create your own calculations without even using Data Analysis Expressions (DAX). 
   
@@ -140,7 +140,7 @@ The smart narrative feature doesn't support the following functionality:
 - Multi-row card with more than three categorical fields
 - Cards with non-numeric measures
 - Tables, matrices, R visuals or Python visuals, custom visuals 
-- Summaries of visuals whose columns are grouped by other columns and for visuals that are built on a data group field 
+- Summaries of visuals whose columns are grouped by other columns and for visuals that are built on a data group field 
 - Cross-filtering out of a visual
 - Renaming dynamic values or editing automatically generated dynamic values
 - Summaries of visuals that contain on-the-fly calculations like QnA arithmetic, complex measures such as percentage of grand total and measures from extension schemas.
