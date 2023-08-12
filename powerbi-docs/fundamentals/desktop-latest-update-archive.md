@@ -1783,7 +1783,7 @@ The following updates are new to Power BI Desktop this month:
 ### Modeling
 * Shortcut expression for CALCULATE now supports aggregation functions   [[video]](https://youtu.be/IagiPEZ_eIY?t=379)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2021-feature-summary/#post-17174-_Toc81908309)  [[article]](/dax/calculate-function-dax)
 * New parameter for XIRR function [[video]](https://youtu.be/IagiPEZ_eIY?t=409) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2021-feature-summary/#post-17174-_Toc81908310)  [[article]](/dax/xirr-function-dax)
-* Making it easier to format based on a user’s locale [[video]](https://youtu.be/IagiPEZ_eIY?t=430) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2021-feature-summary/#post-17174-_Toc81908311)  [[article]](/dax/format-function-dax)
+* Making it easier to format based on a userâ€™s locale [[video]](https://youtu.be/IagiPEZ_eIY?t=430) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2021-feature-summary/#post-17174-_Toc81908311)  [[article]](/dax/format-function-dax)
 
 
 ### Data connectivity
@@ -2593,7 +2593,7 @@ The following video describes each of these updates. You can also watch this vid
 # [Power BI service](#tab/powerbi-service)
 
 - Certified and Promoted reports and apps
-- The ‘new look’ of the Power BI service is live
+- The â€˜new lookâ€™ of the Power BI service is live
 
 ---
 
