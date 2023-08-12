@@ -1,4 +1,4 @@
-ï»¿---
+---
 title: Previous monthly updates to Power BI Desktop and the Power BI service
 description: Feature updates from previous releases of Power BI Desktop
 author: davidiseminger
@@ -1783,7 +1783,7 @@ The following updates are new to Power BI Desktop this month:
 ### Modeling
 * Shortcut expression for CALCULATE now supports aggregation functions   [[video]](https://youtu.be/IagiPEZ_eIY?t=379)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2021-feature-summary/#post-17174-_Toc81908309)  [[article]](/dax/calculate-function-dax)
 * New parameter for XIRR function [[video]](https://youtu.be/IagiPEZ_eIY?t=409) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2021-feature-summary/#post-17174-_Toc81908310)  [[article]](/dax/xirr-function-dax)
-* Making it easier to format based on a userâ€™s locale [[video]](https://youtu.be/IagiPEZ_eIY?t=430) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2021-feature-summary/#post-17174-_Toc81908311)  [[article]](/dax/format-function-dax)
+* Making it easier to format based on a user’s locale [[video]](https://youtu.be/IagiPEZ_eIY?t=430) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2021-feature-summary/#post-17174-_Toc81908311)  [[article]](/dax/format-function-dax)
 
 
 ### Data connectivity
@@ -2593,7 +2593,7 @@ The following video describes each of these updates. You can also watch this vid
 # [Power BI service](#tab/powerbi-service)
 
 - Certified and Promoted reports and apps
-- The â€˜new lookâ€™ of the Power BI service is live
+- The ‘new look’ of the Power BI service is live
 
 ---
 
@@ -3575,7 +3575,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/neq0THnRJzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/neq0THnRJzo]
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -3638,7 +3638,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sf4n7VXoQHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/sf4n7VXoQHY]
 
 
 
@@ -3708,7 +3708,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/l7OMRUF9UYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/l7OMRUF9UYg]
 
 
 # [Power BI service](#tab/powerbi-service)
@@ -3791,7 +3791,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7k-nP38uHyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/7k-nP38uHyQ]
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -3868,7 +3868,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/O8GlHDz8xUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/O8GlHDz8xUQ]
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -3948,7 +3948,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video channel describes and shows each of these updates. You can also see the videos from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vih35kSrEHU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/vih35kSrEHU]
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -4029,7 +4029,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video channel describes and shows each of these updates. You can also see the videos from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rBPGH6eYlT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/rBPGH6eYlT0]
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -4100,7 +4100,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video channel describes and shows each of these updates. You can also see the videos from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dMD25wfElLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/dMD25wfElLg]
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -4202,7 +4202,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video channel describes and shows each of these updates. You can also see the videos from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AHNlkjRFdYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/AHNlkjRFdYI]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -4254,7 +4254,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video channel describes and shows each of these updates. You can also see the videos from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1xsXXoyTxfk?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/1xsXXoyTxfk?controls=0]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -4312,7 +4312,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video channel describes and shows each of these updates. You can also see the videos from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cT3L2VzgBRU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/cT3L2VzgBRU]
 
 
 > [!NOTE]
@@ -4360,7 +4360,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Rzw2WyI09kY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/Rzw2WyI09kY]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -4409,7 +4409,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dgv5HhHxxe8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/dgv5HhHxxe8]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -4467,7 +4467,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Mtig3rmIUe0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/Mtig3rmIUe0]
 
 
 > [!NOTE]
@@ -4515,7 +4515,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4VpGtWSrssE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/4VpGtWSrssE]
 
 
 > [!NOTE]
@@ -4570,7 +4570,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-_GMCE1TLvQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/-_GMCE1TLvQ]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -4616,7 +4616,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/W_Nb73Od_AI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/W_Nb73Od_AI]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -4661,7 +4661,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kuI6MMzDh34" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/kuI6MMzDh34]
 
 
 > [!NOTE]
@@ -4725,7 +4725,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KeVB5RwMzJo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/KeVB5RwMzJo]
 
 
 > [!NOTE]
@@ -4775,7 +4775,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/W8Pp5wuCXJw" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/W8Pp5wuCXJw]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -4831,7 +4831,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZPU8B-1BxjI" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/ZPU8B-1BxjI]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -4887,7 +4887,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sI3yRjdnJ7w" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/sI3yRjdnJ7w]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -4945,7 +4945,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jksjtR8GnBE" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/jksjtR8GnBE]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -4985,7 +4985,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/moTQJlnClJw" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/moTQJlnClJw]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -5030,7 +5030,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ND8U0yXroaQ" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/ND8U0yXroaQ]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -5080,7 +5080,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4X96ow7FnSY" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/4X96ow7FnSY]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -5125,7 +5125,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YlNVE5dgcSI" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/YlNVE5dgcSI]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -5172,7 +5172,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CKISVNHcHVA" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/CKISVNHcHVA]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -5217,7 +5217,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AWMaIaI8G2Y" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/AWMaIaI8G2Y]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -5260,7 +5260,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaRTON3lJqw" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/CaRTON3lJqw]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -5308,7 +5308,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mn75-LOPxMA" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/mn75-LOPxMA]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -5344,7 +5344,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/C1-f0T8vZ7M" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/C1-f0T8vZ7M]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -5397,7 +5397,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kERJ_WOLuLk" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/kERJ_WOLuLk]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -5450,7 +5450,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UXEYSvgvMaQ" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/UXEYSvgvMaQ]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -5508,7 +5508,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pcUr6E8g_KI" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/pcUr6E8g_KI]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -5569,7 +5569,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0VvG7Eqoke8" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/0VvG7Eqoke8]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -5612,7 +5612,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/g8ccfjffWmw" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/g8ccfjffWmw]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
@@ -5665,7 +5665,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sZsL2l6oS4A" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/sZsL2l6oS4A]
 
 
 > [!NOTE]
@@ -5721,7 +5721,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KnDs4amt9-c" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/KnDs4amt9-c]
 
 
 > [!NOTE]
@@ -5770,7 +5770,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7IFZTYJR3Gk" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/7IFZTYJR3Gk]
 
 
 > [!NOTE]
@@ -5822,7 +5822,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eAayYDF9QzY" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/eAayYDF9QzY]
 
 
 > [!NOTE]
@@ -5880,7 +5880,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J5gZ65Wexh4" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/J5gZ65Wexh4]
 
 
 > [!NOTE]
@@ -5921,7 +5921,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ek8dwi33-24" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/ek8dwi33-24]
 
 
 ## December 2015 Update (2.30.4246.181)
@@ -5976,7 +5976,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="500" height="281" src="https://www.youtube.com/embed/iW5VH8iIyfE" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/iW5VH8iIyfE]
 
 
 
@@ -6031,7 +6031,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="500" height="281" src="https://www.youtube.com/embed/ErHvpkyQjSg" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/ErHvpkyQjSg]
 
 
 
@@ -6076,7 +6076,7 @@ October brings another large collection of updates to Power BI Desktop:
 
 You can view a video of all these updates, too.
 
-<iframe width="500" height="281" src="https://www.youtube.com/embed/Jbocn1ZNkxM" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/Jbocn1ZNkxM]
 
 
 For more information, [check out the blog announcement](https://powerbi.microsoft.com/blog/custom-visualizations-support-and-22-other-features-in-the-power-bi-desktop-october-update/) that describes more details about each update.
@@ -6147,7 +6147,7 @@ The following massive collection of 44 features has been added to this update:
 
 The following video covers these features in more detail.
 
-<iframe width="500" height="281" src="https://www.youtube.com/embed/Jm44dLXdarQ" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/Jm44dLXdarQ]
 
 For more information about this update, [check out the blog announcement](https://powerbi.microsoft.com/blog/44-new-features-in-the-power-bi-desktop-september-update/) that describes more details about each update.
 
@@ -6191,7 +6191,7 @@ The following features have been added to this update:
 
 Take a look at the following video for more details about this update:
 
-<iframe width="500" height="281" src="https://www.youtube.com/embed/2v7LUD7MJaw" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/2v7LUD7MJaw]
 
 ## July 2015 Update (2.25.4095.554)
 
@@ -6217,7 +6217,7 @@ In addition to all these new features, we're also making **Power BI Desktop avai
 
 Take a look at the following video for more details:
 
-<iframe width="500" height="281" src="https://www.youtube.com/embed/JCaCcdMnsyM" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/JCaCcdMnsyM]
 
 ## May 2015 Update (2.23.4036.161)
 
@@ -6245,7 +6245,7 @@ The following features have been added in this update:
 
 Take a look at the following video for details:
 
-<iframe width="500" height="281" src="https://www.youtube.com/embed/LS0zMfup1pQ" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/LS0zMfup1pQ]
 
 
 ## April 2015 Update (2.22.4009.122)
@@ -6294,7 +6294,7 @@ The following features have been added in this update:
 
 You can watch the following video for details: 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FuL8agVKrcg" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/FuL8agVKrcg]
 
 ## March 2015 Update (2.21.3975.261)
 
@@ -6316,7 +6316,7 @@ The following features have been added in this update:
 
 You can watch the following video for more details:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xJTcGro08TI" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/xJTcGro08TI]
 
 ## February 2015 Update (2.20.3945.102)
 
@@ -6340,7 +6340,7 @@ The following features have been added or improved in this update:
 - Report Pages Navigation - Key boarding support
 - Lots of bug fixes
 
-<iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/-bZFeS1S1wU]
 
 **January 2015 Update (2.19.3923.101)**
 

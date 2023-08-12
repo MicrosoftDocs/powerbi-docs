@@ -31,7 +31,7 @@ Saving your work as a project has the following benefits:
 
 See Power BI Desktop projects and other developer mode features being introduced at Microsoft Build 2023.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OdkS7DF7ElY?start=277" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/OdkS7DF7ElY?start=277]
 
 ## Enable preview features
 
@@ -138,7 +138,7 @@ Keep in mind:
 
 - Any changes to open files made outside Power BI Desktop requires a restart for those changes to be shown in Power BI Desktop. Power BI Desktop isn't aware of changes to project files made by other tools.
 
-- Power BI Desktop doesnâ€™t support tables with multiple partitions. Only a single partition for each table is supported. Creating tables with empty partitions or more than one partition results in an error when opening the report.
+- Power BI Desktop doesn’t support tables with multiple partitions. Only a single partition for each table is supported. Creating tables with empty partitions or more than one partition results in an error when opening the report.
 
 - Automatic date tables created by Power BI Desktop shouldn't be changed by using external tools.
 
