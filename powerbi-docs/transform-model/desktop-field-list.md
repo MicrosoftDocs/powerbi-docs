@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 02/09/2023
+ms.date: 08/10/2023
 LocalizationGroup: Transform and shape data
 ---
 
 # Use the Field list in Power BI Desktop
 
-The **Field** lists are being unified across Model view, Data view and Report view in Power BI Desktop. Unifying these views creates consistency for functionality and the user interface (UI) across views, and addresses customer feedback.
+The lists in the **Field** pane, called the **Data** pane in current releases of Power BI Desktop, are being unified across Model view, Data view and Report view in Power BI Desktop. Unifying these views creates consistency for functionality and the user interface (UI) across views, and addresses customer feedback.
 
 The following changes across the views are:
 
@@ -24,7 +24,7 @@ The following changes across the views are:
 * Tooltips
 * Accessibility improvements
 
-The intent is to improve Power BI Desktop usability. The changes should be minimal on your typical data workflow.
+The intent is to improve Power BI Desktop usability. The changes should be minimal on your typical data workflow. To view the **Fields** pane (or the **Data** pane in current releases of Power BI Desktop), add data to your model and select the pane from the area to the right of the canvas.
 
 ## Field list changes
 
