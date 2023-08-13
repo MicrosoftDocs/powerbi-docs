@@ -9,8 +9,14 @@
       href: known-issues/power-bi-known-issues.md
     - name: Active known issues for Fabric + Power BI - interactive report
       href: https://support.fabric.microsoft.com/known-issues
-    - name: Workspace setting 'large dataset storage format' isn't persistent
-      href: known-issues/known-issue-432-workspace-setting-large-dataset-storage-format-not-persistent.md  
+    - name: Embedded report shows a black bar in edit mode
+      href: known-issues/known-issue-465-embedded-report-shows-black-bar.md
+    - name: A scheduled refresh of a dataset intermittently hangs when connected to a dataflow
+      href: known-issues/known-issue-461-scheduled-refresh-dataset-hangs.md   
+    - name: Deployment pipeline stuck in loading
+      href: known-issues/known-issue-443-deployment-pipeline-stuck-loading.md 
+    - name: Workspace setting 'large dataset storage format' isn't persistent 
+      href: known-issues/known-issue-432-workspace-setting-large-dataset-storage-format-not-persistent.md
     - name: Tenant admin settings may not save correctly
       href: known-issues/known-issue-427-tenant-admin-settings-may-not-save-correctly.md
     - name: New org app content doesn't show in first load
@@ -21,42 +27,8 @@
       href: known-issues/known-issue-398-upload-sharepoint-greyed-out.md
     - name: Tenant migrations paused
       href: known-issues/known-issue-308-tenant-migrations-paused.md
-    - name: Paused visuals in Desktop Performance analyzer don't refresh
-      href: known-issues/known-issue-321-paused-visuals-in-performance-analyzer-dont-refresh.md
-    - name: Dataflow shows irrelevant upgrade workspace message
-      href: known-issues/known-issue-290-dataflow-show-upgrade-workspace-message.md
-    - name: Accessing Power BI app report is denied
-      href: known-issues/known-issue-284-accessing-app-report-denied-due-to-no-dataset-access.md
-    - name: Excel add-in can't find Power BI datasets
-      href: known-issues/known-issue-274-excel-add-in-cant-find-datasets.md
-    - name: Japanese symbols in search strings don't return matches
-      href: known-issues/known-issue-222-search-strings-japanese-symbols-dont-work.md
     - name: Gateway data source owners can't update credentials
       href: known-issues/known-issue-220-gateway-data-source-owners-cant-update-credentials.md
-    - name: Excel Desktop crashes when opening data model
-      href: known-issues/known-issue-214-excel-desktop-crashes-opening-data-model.md
-    - name: Visual context menus cut off when using Power BI Embedded
-      href: known-issues/known-issue-213-visual-context-menus-cut-off-embedded.md
-    - name: GetVisuals() API for custom visuals returns blank title
-      href: known-issues/known-issue-211-getvisuals-api-return-blank-title.md
-    - name: Scorecard visual's display name is blank in the visualizations pane
-      href: known-issues/known-issue-210-scorecard-visuals-display-name-blank-visualizations-pane.md
-    - name: Datamart editor won't save RLS rules that contain double quotes
-      href: known-issues/known-issue-208-datamart-editor-doesnt-allow-row-level-security-rules-with-double-quotes.md
-    - name: Dremio connector is missing
-      href: known-issues/known-issue-204-dremio-connector-missing.md
-    - name: Paginated report subscription link doesn't apply report parameters
-      href: known-issues/known-issue-195-link-in-paginated-subscription-doesnt-apply-report-parameters.md
-    - name: Applying Show bar only for data bars doesn't work
-      href: known-issues/known-issue-187-show-bar-only-data-bars-doesnt-work.md
-    - name: Multi-role RLS for composite models fails
-      href: known-issues/known-issue-178-multi-role-rls-composite-model-fail.md
-    - name: Try it button missing on REST API pages
-      href: known-issues/known-issue-169-try-it-button-missing.md            
-    - name: Long running, failed or stuck dataflow in Power BI Premium 
-      href: known-issues/known-issue-dataflow-on-premium.md   
-    - name: Unable to open protected Desktop files 
-      href: known-issues/known-issue-unable-open-protected-desktop-file.md   
   - name: Troubleshoot
     expanded: true
     items:

@@ -13,7 +13,7 @@ ms.date: 05/31/2023
 # Power BI Desktop project dataset folder
 
 > [!IMPORTANT]
-> Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Power BI Desktop projects is currently in **preview**.
 
 This article describes the files and subfolders in a Microsoft Power BI Desktop project's **Dataset** folder. The files and subfolders here represent a Power BI dataset. Depending on your project, the dataset folder can include:
 
@@ -22,11 +22,13 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
     - [editorSettings.json](#pbieditorsettingsjson)
     - [cache.abf](#pbicacheabf)
     - [unappliedChanges.json](#pbiunappliedchangesjson)
-- [model.bim](#modelbim)
-- [definition.pbidataset](#definitionpbidataset)
+- [model.bim](#modelbim)<sup>[1](#required)</sup>
+- [definition.pbidataset](#definitionpbidataset)<sup>[1](#required)</sup>
 - [diagramLayout.json](#diagramlayoutjson)
 - [item.config.json](#itemconfigjson)
 - [item.metadata.json](#itemmetadatajson)
+
+<a name="required">1</a> - This file is required.
 
 Not every project dataset folder includes all of the files and subfolders described here.
 
@@ -60,7 +62,9 @@ When you select **Apply later**, the unapplied changes are saved into the unappl
 
 :::image type="content" source="media/projects-overview/pending-changes.png" alt-text="Image showing pending changes warning.":::
 
-If you select **Apply changes**, Power BI Desktop overwrites the queries in model.bim with the queries from unappliedChanges.json. If you edited queries in model.bim outside of Power BI Desktop, your changes are lost and replaced by the queries in unappliedChanges.json when those changes get applied.
+If you select **Apply changes**, Power BI Desktop overwrites the queries in model.bim with the queries from unappliedChanges.json. If you edited queries in model.bim outside of Power BI Desktop and there is a previous unappliedChanges.json file, your changes are lost and replaced by the queries in unappliedChanges.json when those changes are applied.
+
+The unappliedChanges.json file is automatically incorporated into the dataset definition and saved in Git by default. This allows you to commit your ongoing work to the development branch, serving as a backup and making it accessible to other team members. However, you have the option to exclude this file from Git's tracking, preventing unfinished query work from affecting other developers.
 
 For more information, refer to the [unappliedChanges.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/unappliedChanges.md).
 

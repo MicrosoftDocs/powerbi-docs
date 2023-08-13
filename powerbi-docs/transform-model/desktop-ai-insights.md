@@ -6,8 +6,9 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
+ms.custom: build-2023, build-2023-dataai
 ms.topic: how-to
-ms.date: 03/02/2023
+ms.date: 08/10/2023
 LocalizationGroup: Connect to data
 ---
 # Use AI Insights in Power BI Desktop
@@ -37,7 +38,7 @@ The transformations are executed on the Power BI service and don't require an Az
 
 ### Enable Text Analytics and Vision on Premium capacities
 
-Cognitive Services are supported for Premium capacity nodes EM2, A2, or P1 and other nodes with more resources. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run Cognitive Services. Before you use Cognitive Services in Power BI, you must enable the AI workload in the **capacity settings** of the admin portal. You can turn on the **AI workload** in the **workloads** section and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
+Cognitive Services are supported for Premium capacity nodes EM2, A2, or P1 and other nodes with more resources. A separate AI workload on the capacity is used to run Cognitive Services. Before you use Cognitive Services in Power BI, you must enable the AI workload in the **capacity settings** of the admin portal. You can turn on the **AI workload** in the **workloads** section and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
 
 ### Available functions
 
@@ -199,6 +200,7 @@ The following considerations and limitations apply to Azure Machine Learning in 
 * Models created by using the Azure Machine Learning visual interface don't currently support schema generation. Support is anticipated in subsequent releases.
 * Incremental refresh is supported but can cause performance issues when used on queries with AI insights.
 * Direct Query isn't supported.
+* Users with a Premium Per User (PPU) only license cannot use AI Insights from Power BI Desktop; you must use a non-PPU Premium license with its corresponding Premium capacity. You can still use AI Insights with a PPU license the Power BI service.
 
 ## Next steps
 

@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 
 When working with Power BI, consider the different types of users who might interact with your reports. You can create reports that are easily navigated and understood by keyboard or screen reader users. Such reports enable users who might have visual or physical impairments to benefit from your reports.
 
-![Screenshot showing a high-contrast color setting in Power BI service.](media/desktop-accessibility/accessibility-05b.png)
+![High-contrast color setting in Power BI service showing yellow text and visuals on a black background.](media/desktop-accessibility/accessibility-05b.png)
 
 This article provides an overview of Power BI and accessibility. Other articles provide guidance, and tools, which can help you create great reports with accessibility in mind.
 

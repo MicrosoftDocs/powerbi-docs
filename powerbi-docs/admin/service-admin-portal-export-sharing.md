@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 05/15/2023
+ms.date: 07/12/2023
 LocalizationGroup: Administration
 ---
 
@@ -52,7 +52,7 @@ To turn on the setting:
 
 ## Allow Azure Active Directory guest users to edit and manage content in the organization
 
-This setting allows Azure AD B2B guest users to have full access to the browsing experience using the left-hand navigation pane in the organization. To learn more about sending Power BI content to Azure AD B2B guest users, read [Distribute Power BI content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
+This setting allows Azure AD B2B guest users to have full access to the browsing experience using the left-hand navigation pane in the organization. Guest users who have been assigned workspace roles or specific item permissions will continue to have those roles and/or permissions, even if the this setting is disabled. To learn more about sending Power BI content to Azure AD B2B guest users, read [Distribute Power BI content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
 To turn on the setting:
 

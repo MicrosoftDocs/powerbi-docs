@@ -5022,6 +5022,91 @@
             "redirect_document_id": false
         },                                             
         {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-321-paused-visuals-in-performance-analyzer-dont-refresh.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-290-dataflow-show-upgrade-workspace-message.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-284-accessing-app-report-denied-due-to-no-dataset-access.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-274-excel-add-in-cant-find-datasets.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-222-search-strings-japanese-symbols-dont-work.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-214-excel-desktop-crashes-opening-data-model.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-213-visual-context-menus-cut-off-embedded.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-211-getvisuals-api-return-blank-title.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-210-scorecard-visuals-display-name-blank-visualizations-pane.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-208-datamart-editor-doesnt-allow-row-level-security-rules-with-double-quotes.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-204-dremio-connector-missing.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-195-link-in-paginated-subscription-doesnt-apply-report-parameters.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-187-show-bar-only-data-bars-doesnt-work.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-169-try-it-button-missing.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-unable-open-protected-desktop-file.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-dataflow-on-premium.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-178-multi-role-rls-composite-model-fail.md",
+            "redirect_url": "/power-bi-known-issues/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
             "source_path": "powerbi-docs/connect-data/desktop-connect-pdf.md",
             "redirect_url": "/power-query/connectors/pdf",
             "redirect_document_id": false
@@ -5106,7 +5191,19 @@
             "source_path": "powerbi-docs/connect-data/service-data-hub.md",
             "redirect_url": "/fabric/get-started/onelake-data-hub?toc=/power-bi/connect-data/toc.json&bc=/power-bi/connect-data/breadcrumb/toc.json",
             "redirect_document_id": false
-        }                                                                                                                                                                                                      
+        }
+        ,
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-share-data-microsoft-365-services.md",
+            "redirect_url": "/power-bi/admin/admin-share-power-bi-metadata-microsoft-365-services",
+            "redirect_document_id": true
+        }                                                                                                                                                                                                                                                                                                                                                                                                                         
+        ,
+        {
+            "source_path": "powerbi-docs/transform-model/datamarts/datamarts-sharing-discovery.md",
+            "redirect_url": "/powerbi-docs/transform-model/datamarts/datamarts-discovery",
+            "redirect_document_id": false
+        }                                                                                                                                                                                    
   ]          
 
 }
