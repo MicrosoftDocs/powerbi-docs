@@ -35,7 +35,7 @@ Watch Amanda create a new dashboard by pinning visualizations from a report. The
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/lJKgWnvl6bQ]
 
 ## Pin tiles to a dashboard
 
