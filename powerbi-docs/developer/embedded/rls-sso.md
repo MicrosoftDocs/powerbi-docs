@@ -40,11 +40,6 @@ The token-based identity only works for DirectQuery models on a capacity - conne
 
 Send a [Gateways - Update Datasource API](/rest/api/power-bi/gateways/update-datasource) call with `useEndUserOAuth2Credentials = True` for the desired dataset. The request body should look as follows:
 
-
----
-
-## Token-based identity SDK additions
-
 ```json
 {
   "credentialDetails": {
@@ -59,6 +54,10 @@ Send a [Gateways - Update Datasource API](/rest/api/power-bi/gateways/update-dat
 ```
 
 ---
+
+## Token-based identity SDK additions
+
+
 The identity blob property was added to our effective identity in the token generation scenario.
 
 ```JSON
