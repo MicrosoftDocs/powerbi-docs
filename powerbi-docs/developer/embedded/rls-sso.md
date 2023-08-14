@@ -72,8 +72,8 @@ To create an access token for Azure SQL, the app must have *Access Azure SQL DB 
 
 ### Generate embed token
 
-To Embed a report with token-based identity, we need to generate an embed token which contains the token base identity for the desired ISV user.
-See the example below for generating embed token for different scenarios.
+To Embed a report with token-based identity, generate an embed token that contains the token base identity of the desired ISV user.
+See the following examples for generating embed tokens for different scenarios.
 
 #### [Power BI report with SSO](#tab/Power-BI-report-with-SSO)
 
