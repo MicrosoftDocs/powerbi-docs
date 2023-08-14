@@ -1,6 +1,6 @@
 ---
-title: Power BI add-in for PowerPoint - Admin info
-description: See information about the Power BI add-in for PowerPoint that Power BI administrators need to be aware of.
+title: The Power BI add-in for PowerPoint in national/regional clouds
+description: See a summary of how and why the add-in when it's deployed in a national/regional cloud differs slightly from when it's deployed in a public cloud.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
