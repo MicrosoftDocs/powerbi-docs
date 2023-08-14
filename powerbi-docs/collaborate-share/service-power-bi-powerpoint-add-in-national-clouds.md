@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 03/05/2023
+ms.date: 08/14/2023
 ---
 
 # The Power BI add-in for PowerPoint in national/regional clouds
