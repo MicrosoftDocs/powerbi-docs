@@ -26,7 +26,7 @@ When generating the embed token, specify the identity of the user in Azure SQL b
 
 The token-based identity only works for DirectQuery models on a capacity - connected to an Azure SQL Database, which is configured to allow Azure AD authentication ([learn more about Azure AD authentication for Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity.
 
-### Set up in portal (#tab/portal)
+### Set up in portal(#tab/portal)
 
 1. From the Power BI portal,select **Dataset > Settings > Data source credentials > More Options**.
 
@@ -36,7 +36,7 @@ The token-based identity only works for DirectQuery models on a capacity - conne
 
    :::image type="content" source="media/rls-sso/token-based-configure-azure-sql-db.png" alt-text="Screenshot of configure Azure SQL server.":::
 
-### Set up with API (#tab/API)
+### Set up with API(#tab/API)
 
 Send a [Gateways - Update Datasource API](/rest/api/power-bi/gateways/update-datasource) call with `useEndUserOAuth2Credentials = True` for the desired dataset. The request body should look as follows:
 
