@@ -29,7 +29,7 @@ Read about the integration of git with Microsoft Fabric: [Introduction to git in
 
 1. Connect your workspace to your git repository by following the directions in [Connect a workspace to an Azure repo](/fabric/cicd/git-integration/git-get-started#connect-a-workspace-to-an-azure-repo)
 
-    :::image type="content" source="media/page-view/paginated-reports-workspace-settings-repository-info.png" alt-text="Screenshot of the information to connect to workspace":::
+    :::image type="content" source="media/page-view/paginated-reports-workspace-settings-repository-info.png" alt-text="Screenshot of the information to connect to workspace.":::
 
 
     **Note:** If the branch is new, you'll be prompted to **Create and sync**.
@@ -37,24 +37,24 @@ Read about the integration of git with Microsoft Fabric: [Introduction to git in
 
 2. Upload your *.rdl* file to the workspace on the service. We don't support OneDrive and Sharepoint yet.
 
-    :::image type="content" source="media/page-view/paginated-reports-upload.png" alt-text="Screenshot of the Upload button":::
+    :::image type="content" source="media/page-view/paginated-reports-upload.png" alt-text="Screenshot of the Upload button.":::
 
     Once the file is uploaded, you should see the report and the Git status **Uncommitted** and **Source control**.
 
-    :::image type="content" source="media/page-view/paginated-reports-source-control.png" alt-text="Screenshot of status":::
+    :::image type="content" source="media/page-view/paginated-reports-source-control.png" alt-text="Screenshot of status.":::
 
 3. Select **Source Control**. In the source control pane, select the file and commit.  
 
-    :::image type="content" source="media/page-view/paginated-reports-source-control-1.png" alt-text="Screenshot of Commit":::
+    :::image type="content" source="media/page-view/paginated-reports-source-control-1.png" alt-text="Screenshot of Commit.":::
 
 4. Once you commit the file, the **Git status** will change to **Sync**.
 
-    :::image type="content" source="media/page-view/paginated-reports-git-status-sync.png" alt-text="Screenshot of Git Synced":::
+    :::image type="content" source="media/page-view/paginated-reports-git-status-sync.png" alt-text="Screenshot of Git Synced.":::
 
 
 You'll see a folder in your git repository which contains the *.rdl* and two *.json* files. You may have to refresh your repository.
 
-:::image type="content" source="media/page-view/paginated-report-git-repo.png" alt-text="Screenshot of Git repo":::
+:::image type="content" source="media/page-view/paginated-report-git-repo.png" alt-text="Screenshot of Git repo.":::
 
 5. If you want to edit a paginated report, follow the steps below:
     - Open the .rdl file from the local git repository in Power BI Report Builder.
