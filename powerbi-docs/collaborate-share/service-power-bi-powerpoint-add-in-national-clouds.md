@@ -25,7 +25,9 @@ Here are the differences:
 
     * In the Power BI service, the **Open in PowerPoint** option isn't available. To embed a report or visual in the add-in users must copy the link to the item in the Power BI service, then paste it into the add-in in PowerPoint manually.
 
-* **Power BI add-in button**: In national/regional clouds, the add-in button doesn't appear on PowerPoint's **Insert** ribbon. Instead, to insert the add-in, users must find it under **Managed add-ins**.
+* **Power BI add-in button**: In national/regional clouds, the add-in button doesn't appear on PowerPoint's **Insert** ribbon. Instead, to insert the add-in, users must find it under **Insert** > **My Add-ins** > **ADMIN MANAGED**.
+
+    :::image type="content" source="./media/service-power-bi-powerpoint-add-in-national-clouds/microsoft-power-bi-add-in-powerpoint-admin-managed.png" alt-text="Screenshot showing Microsoft Power BI add-in for PowerPoint as Admin Managed add-in.":::
 
 ## Next Steps
 
