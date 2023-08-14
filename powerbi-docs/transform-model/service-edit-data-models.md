@@ -235,7 +235,8 @@ There are still many functional gaps between the model view in Power BI desktop 
 * Autodetect relationships
 * Q&A setup and configuration including editing synonyms
 * Classifying sensitivity of your report
-*  External tools integration
+* External tools integration
+* When modifying your data model within the Service, creating a relationship between DirectQuery tables from the same Power BI dataset or Azure Analysis Services instance will not be properly prevented. Like Desktop, this scenario is not supported, but no error will be generated when you try to perform this action.
 
 ### Accessibility
 Full accessibility isn’t currently supported for data model editing in the Power BI service.
