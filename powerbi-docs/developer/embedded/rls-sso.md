@@ -22,7 +22,6 @@ When generating the embed token, specify the identity of the user in Azure SQL b
 
 :::image type="content" source="media/rls-sso/pass-identity-using-token.png" alt-text="Schematic drawing showing ISV passing the effective identity to the SQL tenant and the customer passing an embed token back.":::
 
-
 ## Set up token-based identity
 
 The token-based identity only works for DirectQuery models on a capacity - connected to an Azure SQL Database, which is configured to allow Azure AD authentication ([learn more about Azure AD authentication for Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity.
