@@ -38,7 +38,7 @@ The token-based identity only works for DirectQuery models on a capacity - conne
 
 ### [Set up with API](#tab/API)
 
-Send a [Gateways - Update Datasource API](/rest/api/power-bi/gateways/update-datasource) call with `useEndUserOAuth2Credentials = True` for the desired dataset. The request body should look as follows:
+Send a [Gateways - Update Datasource API](/rest/api/power-bi/gateways/update-datasource) call with `useEndUserOAuth2Credentials = True` for the desired dataset. The request body should look something like this:
 
 ```json
 {
@@ -55,63 +55,175 @@ Send a [Gateways - Update Datasource API](/rest/api/power-bi/gateways/update-dat
 
 ---
 
-## Token-based identity SDK additions
+## Generate an identity token
 
+### Set up Azure AD app registration
 
-The identity blob property was added to our effective identity in the token generation scenario.
+To create an access token for Azure SQL, the app must have *Access Azure SQL DB and Data Warehouse* delegated permission to **Azure SQL Database API** on the Azure AD app registration configuration in the Azure portal.
 
-```JSON
-[JsonProperty(PropertyName = "identityBlob")]
-public IdentityBlob IdentityBlob { get; set; }
-```
+:::image type="content" source="media/rls-sso/api-permissions.png" alt-text="Screenshot of Azure AD app registration configuration settings in the Azure portal.":::
 
-The IdentityBlob type is a simple JSON structure holding a value string property
+### Generate embed token
 
-```JSON
-[JsonProperty(PropertyName = "value")]
-public string value { get; set; }
-```
+To Embed a report with token-based identity, we need to generate an embed token which contains the token base identity for the desired ISV user.
+See the example below for generating embed token for different scenarios.
 
-The EffectiveIdentity can be created with identity blob using the following call:
+Example of generating an embed token for Power BI report with SSO:
 
-```C#
-public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null, IdentityBlob identityBlob = null);
-```
-
-Identity blob can be created using the following call.
-
-```C#
-public IdentityBlob(string value);
-```
-
-## Token-based identity REST API usage
-
-If you're calling the [REST API](/rest/api/power-bi/embedtoken/reports_generatetokeningroup#definitions), you can add identity blob inside each identity.
-
-```JSON
+```json
 {
-    "accessLevel": "View",
-    "identities": [
+  "datasets": [
+    {
+      "id": "66ba5010-xxxx-xxxx-xxxx-f2bf0125abeb",
+      "xmlaPermissions": "ReadOnly"
+    }
+  ],
+  "reports": [
+    {
+      "allowEdit": false,
+      "id": "9e6da541-xxxx-xxxx-xxxx-7d9442827cce"
+    }
+  ],
+  "datasourceIdentities": [
+    {
+      "identityBlob": "eyJ…",
+      "datasources": [
         {
-            "datasets": ["fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc"],
-        "identityBlob": {
-            "value": "eyJ0eXAiOiJKV1QiLCJh…."
-         }
+          "datasourceType": "Sql",
+          "connectionDetails": {
+            "server": "YourServerName.database.windows.net",
+            "database": "YourDataBaseName"
+          }
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
 
-The value provided in the identity blob should be a valid access token to Azure SQL Server.
+Example of generating an embed token for paginated report with SSO:
 
-   > [!Note]
-   > To be able to create an access token for Azure SQL, the application must have **Access Azure SQL DB and Data Warehouse** delegated permission to **Azure SQL Database** API on Azure AD app registration configuration in the Azure portal.
+```json
+{
+  "reports": [
+    {
+      "allowEdit": false,
+      "id": "2b0a27c7-xxxx-xxxx-xxxx-4d2036b42f90"
+    }
+  ],
+  "datasourceIdentities": [
+    {
+      "identityBlob": "eyJ…",
+      "datasources": [
+        {
+          "datasourceType": "Sql",
+          "connectionDetails": {
+            "server": "YourServerName.database.windows.net",
+            "database": "YourDataBaseName"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
 
-  :::image type="content" source="media/rls-sso/token-based-app-reg-azure-portal.png" alt-text="Screenshot of token based app registration." lightbox="media/rls-sso/token-based-app-reg-azure-portal.png":::
+Example of generating an embed token for Power BI report with SSO and RLS on the dataset:
+
+```json
+{
+  "datasets": [
+    {
+      "id": "fff1a505-xxxx-xxxx-xxxx-e69f81e5b974",
+      "xmlaPermissions": "ReadOnly"
+    }
+  ],
+  "reports": [
+    {
+      "allowEdit": false,
+      "id": "10ce71df-xxxx-xxxx-xxxx-814a916b700d"
+    }
+  ],
+  "identities": [
+    {
+      "username": "YourUsername",
+      "datasets": [
+        "fff1a505-xxxx-xxxx-xxxx-e69f81e5b974"
+      ],
+      "roles": [
+        "YourRole"
+      ]
+    }
+  ],
+  "datasourceIdentities": [
+    {
+      "identityBlob": "eyJ…",
+      "datasources": [
+        {
+          "datasourceType": "Sql",
+          "connectionDetails": {
+            "server": "YourServerName.database.windows.net",
+            "database": "YourDataBaseName"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+Example of generating an embed token for paginated report connected to Power BI dataset with RLS and SSO data source, that is connected with DirectQuery to another Power BI dataset:
+
+```json
+{
+  "datasets": [
+    {
+      "id": "35a4a948-xxxx-xxxx-xxxx-2e6ad7a02dc7",
+      "xmlaPermissions": "ReadOnly"
+    },
+    {
+      "id": "064ef46d-xxxx-xxxx-xxxx-fd6dda7a467b",
+      "xmlaPermissions": "ReadOnly"
+    }
+  ],
+  "reports": [
+    {
+      "allowEdit": false,
+      "id": "9e81ebf7-xxxx-xxxx-xxxx-5a6294b43d55"
+    }
+  ],
+  "identities": [
+    {
+      "username": "YourUsename",
+      "datasets": [
+        "35a4a948-xxxx-xxxx-xxxx-2e6ad7a02dc7"
+      ],
+      "roles": [
+        "YourRole"
+      ]
+    }
+  ],
+  "datasourceIdentities": [
+    {
+      "identityBlob": "eyJ…",
+      "datasources": [
+        {
+          "datasourceType": "Sql",
+          "connectionDetails": {
+            "server": " YourServerName.database.windows.net",
+            "database": " YourDatabaseName "
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
 
 ## Next steps
 
 * [Generate an embed token](./generate-embed-token.md)
 * [Row-Level security (RLS) with Power BI](../../enterprise/service-admin-rls.md)
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
