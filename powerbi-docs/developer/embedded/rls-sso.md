@@ -55,6 +55,13 @@ Send a [Gateways - Update Datasource API](/rest/api/power-bi/gateways/update-dat
 
 ---
 
+Authenticate and acquire a token for the user from the [Azure AD V2 endpoint](https://login.microsoftonline.com/organizations/oauth2/v2.0/token) for the following scope: https://database.windows.net/.default
+
+Note:
+See MSAL code samples for help
+Code samples for Microsoft identity platform authentication and authorization - Microsoft Entra | Microsoft Learn
+Microsoft identity platform and OAuth 2.0 authorization code flow
+
 ## Generate an identity token
 
 ### Set up Azure AD app registration
@@ -68,7 +75,7 @@ To create an access token for Azure SQL, the app must have *Access Azure SQL DB 
 To Embed a report with token-based identity, we need to generate an embed token which contains the token base identity for the desired ISV user.
 See the example below for generating embed token for different scenarios.
 
-Example of generating an embed token for Power BI report with SSO:
+#### [Power BI report with SSO](#tab/Power-BI-report-with-SSO)
 
 ```json
 {
@@ -101,7 +108,7 @@ Example of generating an embed token for Power BI report with SSO:
 }
 ```
 
-Example of generating an embed token for paginated report with SSO:
+#### [Paginated report with SSO](#tab/Paginated-report-with-SSO)
 
 ```json
 {
@@ -128,7 +135,7 @@ Example of generating an embed token for paginated report with SSO:
 }
 ```
 
-Example of generating an embed token for Power BI report with SSO and RLS on the dataset:
+#### [Power BI report with SSO and RLS on the dataset](#tab/report-with-sso-and-rls)
 
 ```json
 {
@@ -172,7 +179,7 @@ Example of generating an embed token for Power BI report with SSO and RLS on the
 }
 ```
 
-Example of generating an embed token for paginated report connected to Power BI dataset with RLS and SSO data source, that is connected with DirectQuery to another Power BI dataset:
+#### [Paginated report connected to Power BI dataset with RLS, and SSO data source that is connected with DirectQuery to another Power BI dataset](#tab/paginated-report-rls-directquery)
 
 ```json
 {
@@ -220,6 +227,11 @@ Example of generating an embed token for paginated report connected to Power BI 
 }
 ```
 
+---
+
+The following example shows an embedded Power BI report with SSO and RLS applied to the dataset:
+
+:::image type="content" source="media/rls-sso/report-example.png" alt-text="Screenshot of an embedded Power BI report with SSO and RLS applied to the dataset.":::
 
 ## Next steps
 
