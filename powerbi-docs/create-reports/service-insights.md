@@ -34,7 +34,7 @@ Watch Amanda run quick insights on a dataset and open an insight in Focus mode. 
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/et_MLSL2sA8]
 
 Now it's your turn. Explore insights by using the [Supplier Quality Analysis sample](sample-supplier-quality.md).
 

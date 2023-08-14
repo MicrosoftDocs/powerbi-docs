@@ -1,0 +1,76 @@
+---
+title: "Git integration with paginated reports"
+description: You can edit paginated reports using git integration in the Power BI service.
+author: nirusrin
+ms.author: nisrinivasan
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: report-builder
+ms.topic: how-to
+ms.date: 07/31/2023
+---
+
+# Git integration with paginated reports
+
+[!INCLUDE [applies-yes-service-yes-report-builder-no-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)]
+
+This article walks you through publishing a paginated report and keeping it in sync with your git workspace. Developers can apply their development processes, tools, and best practices.  
+
+## Prerequisites
+
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
+License requirements for git integration: Refer [Fabric Prerequisites](/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git#fabric-prerequisites) 
+
+Read about the integration of git with Microsoft Fabric: [Introduction to git integration](/fabric/cicd/git-integration/intro-to-git-integration)
+
+
+
+## Get started
+
+1. Connect your workspace to your git repository by following the directions in [Connect a workspace to an Azure repo](/fabric/cicd/git-integration/git-get-started#connect-a-workspace-to-an-azure-repo)
+
+    :::image type="content" source="media/page-view/paginated-reports-workspace-settings-repository-info.png" alt-text="Screenshot of the information to connect to workspace." lightbox="media/page-view/paginated-reports-workspace-settings-repository-info.png":::
+
+
+    > [!Note]
+    > If the branch is new, you'll be prompted to **Create and sync**.
+
+
+2. Upload your *.rdl* file to the workspace on the service. We don't support OneDrive and Sharepoint yet.
+
+    :::image type="content" source="media/page-view/paginated-reports-upload.png" alt-text="Screenshot of the Upload button." lightbox="media/page-view/paginated-reports-upload.png":::
+
+    Once the file is uploaded, you should see the report and the Git status **Uncommitted** and **Source control**.
+
+    :::image type="content" source="media/page-view/paginated-reports-source-control.png" alt-text="Screenshot of status." lightbox="media/page-view/paginated-reports-source-control.png":::
+
+3. Select **Source Control**. In the source control pane, select the file and commit.  
+
+    :::image type="content" source="media/page-view/paginated-reports-source-control-1.png" alt-text="Screenshot of Commit." lightbox="media/page-view/paginated-reports-source-control-1.png":::
+
+4. Once you commit the file, the **Git status** will change to **Sync**.
+
+    :::image type="content" source="media/page-view/paginated-reports-git-status-sync.png" alt-text="Screenshot of Git Synced." lightbox="media/page-view/paginated-reports-git-status-sync.png":::
+
+
+You'll see a folder in your git repository which contains the *.rdl* and two *.json* files. You may have to refresh your repository.
+
+:::image type="content" source="media/page-view/paginated-report-git-repo.png" alt-text="Screenshot of Git repo." lightbox="media/page-view/paginated-report-git-repo.png":::
+
+5. If you want to edit a paginated report, follow the steps below:
+    - Open the .rdl file from the local git repository in Power BI Report Builder.
+    - Make the desired edits.
+    - Commit and push your changes to the remote repository.
+    - Create a PR to the main branch
+    - Once approved, the PR is merged to the main branch
+    - From the main branch, apply your revised changes to the relevant workspace.
+
+  
+## Considerations and limitations
+
+- Publish/upload the paginated report to the service and then use git. The paginated report won't render if you start with the files in git.  
+
+- When you delete a paginated report from git, delete the *entire folder* and not just the .rdl report.  
+
+- The paginated report remains connected to the original dataset when you move it to a different workspace. If you move a paginated report to a different workspace, update the dataset in Power BI Report builder and re-publish the paginated report to the Power BI service.
+
