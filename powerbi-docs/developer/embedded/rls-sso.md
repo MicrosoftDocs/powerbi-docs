@@ -14,22 +14,52 @@ ms.date: 01/07/2023
 
 [!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
 
-The **token-based identity** allows you to specify the effective identity for an embed token using an [Azure Active Directory (Azure AD) access token](/azure/databricks/dev-tools/api/latest/aad/app-aad-token) for an **Azure SQL Database**.
+The **token-based identity** allows an ISV to use an [Azure Active Directory (Azure AD) access token](/azure/databricks/dev-tools/api/latest/aad/app-aad-token) to pass the identity of a customer to an **Azure SQL database** managed in the customer tenant.
 
-Customers that keep their data in **Azure SQL Database** can manage users and their access to data in Azure SQL when integrating with **Power BI Embedded**.
+ISV customers that keep and manage their data in **Azure SQL Database** can keep their data secure in their tenant when integrating with **Power BI Embedded** in the ISV app.
 
-When generating the embed token, specify the effective identity of a user in Azure SQL. You can specify the effective identity of a user by passing the Azure AD access token to the server. The access token is used to pull only the relevant data for that user from Azure SQL, for that specific session.
+When generating the embed token, specify the identity of the user in Azure SQL by passing that user's Azure AD access token for the Azure SQL server. The access token is used to pull only the relevant data for that user from Azure SQL, for that specific session.
 
-It can be used to manage each user's view in Azure SQL or to sign in to Azure SQL as a specific customer in a multi-tenant DB. It can also apply row-level security on that session in Azure SQL and retrieve only the relevant data for that session, removing the need to manage RLS in Power BI.
+:::image type="content" source="media/rls-sso/pass-identity-using-token.png" alt-text="Schematic drawing showing ISV passing the effective identity to the SQL tenant and the customer passing an embed token back.":::
 
-Such effective identity issues apply to RLS rules directly on the Azure SQL Server. Power BI Embedded uses the provided access token when querying data from the Azure SQL Server. The UPN of the user (for which the access token was provided) is accessible as a result of the USER_NAME() SQL function.
+
+## Set up token-based identity
 
 The token-based identity only works for DirectQuery models on a capacity - connected to an Azure SQL Database, which is configured to allow Azure AD authentication ([learn more about Azure AD authentication for Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity.
 
+### Set up in portal (#tab/portal)
+
+1. From the Power BI portal,select **Dataset > Settings > Data source credentials > More Options**.
+
+   :::image type="content" source="media/rls-sso/dataset-settings.png" alt-text="Screenshot dataset settings option in Power BI portal.":::
+
+1. Check the **OAuth2 option** box.
+
    :::image type="content" source="media/rls-sso/token-based-configure-azure-sql-db.png" alt-text="Screenshot of configure Azure SQL server.":::
+
+### Set up with API (#tab/API)
+
+Send a [Gateways - Update Datasource API](/rest/api/power-bi/gateways/update-datasource) call with `useEndUserOAuth2Credentials = True` for the desired dataset. The request body should look as follows:
+
+
+---
 
 ## Token-based identity SDK additions
 
+```json
+{
+  "credentialDetails": {
+    "credentials": "{\"credentialData\":[{\"name\":\"accessToken\",\"value\":\"eyJ…"}]}",
+    "credentialType": "OAuth2",
+    "encryptedConnection": "Encrypted",
+    "encryptionAlgorithm": "None",
+    "privacyLevel": "Organizational",
+    "useEndUserOAuth2Credentials": true
+  }
+}
+```
+
+---
 The identity blob property was added to our effective identity in the token generation scenario.
 
 ```JSON
