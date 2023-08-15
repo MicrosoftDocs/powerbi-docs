@@ -48,21 +48,21 @@ Read about the integration of git with Microsoft Fabric at Introduction to git i
 
     :::image type="content" source="media/page-view/paginated-reports-git-status-sync.png" alt-text="Screenshot of Git Synced." lightbox="media/page-view/paginated-reports-git-status-sync.png":::
 
-    You'll see a folder in your git repository that contains the *.rdl* and two *.json* files. You might have to refresh your repository.
+    A folder appears in your git repository that contains the *.rdl* and two *.json* files. You might have to refresh your repository.
 
     :::image type="content" source="media/page-view/paginated-report-git-repo.png" alt-text="Screenshot of Git repo." lightbox="media/page-view/paginated-report-git-repo.png":::
 
-4. To edit a paginated report, do the following:
-    - Open the .rdl file from the local git repository in Power BI Report Builder.
-    - Make the desired edits.
-    - Commit and push your changes to the remote repository.
-    - Create a PR to the main branch
-    - Once approved, the PR is merged to the main branch
-    - From the main branch, apply your revised changes to the relevant workspace.
+4. To edit a paginated report:
+    1. Open the .rdl file from the local git repository in Power BI Report Builder.
+    1. Make the desired edits.
+    1. Commit and push your changes to the remote repository.
+    1. Create a PR to the main branch
+    1. Once approved, the PR is merged to the main branch
+    1. From the main branch, apply your revised changes to the relevant workspace.
 
 ## Considerations and limitations
 
-- Publish/upload the paginated report to the service and then use git. The paginated report won't render if you start with the files in git.  
+- Publish/upload the paginated report to the service and then use git. Paginated reports don't render if you start with the files in git.  
 
 - When you delete a paginated report from git, delete the *entire folder* and not just the .rdl report.  
 
