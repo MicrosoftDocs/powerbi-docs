@@ -24,7 +24,7 @@ By default, row-level security filtering uses single-directional filters, whethe
 
 For more information, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](../transform-model/desktop-bidirectional-filtering.md) and the [Securing the Tabular BI Semantic Model](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) technical article.
 
- :::image type="content" source="(media/service-admin-rls/rls-apply-security-filter.png" alt-text="Screenshot of the apply Security Filter.":::
+ :::image type="content" source="media/service-admin-rls/rls-apply-security-filter.png" alt-text="Screenshot of the apply Security Filter.":::
 
 ## Define roles and rules in Power BI Desktop using enhanced row-level security editor (Preview)
 
