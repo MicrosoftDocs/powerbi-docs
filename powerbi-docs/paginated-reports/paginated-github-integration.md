@@ -19,11 +19,9 @@ This article walks you through publishing a paginated report and keeping it in s
 ## Prerequisites
 
 [!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
-License requirements for git integration: Refer [Fabric Prerequisites](/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git#fabric-prerequisites) 
+For license requirements for git integration, refer to [Fabric Prerequisites](/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git#fabric-prerequisites).
 
-Read about the integration of git with Microsoft Fabric: [Introduction to git integration](/fabric/cicd/git-integration/intro-to-git-integration)
-
-
+Read about the integration of git with Microsoft Fabric at Introduction to git integration](/fabric/cicd/git-integration/intro-to-git-integration).
 
 ## Get started
 
@@ -31,12 +29,10 @@ Read about the integration of git with Microsoft Fabric: [Introduction to git in
 
     :::image type="content" source="media/page-view/paginated-reports-workspace-settings-repository-info.png" alt-text="Screenshot of the information to connect to workspace." lightbox="media/page-view/paginated-reports-workspace-settings-repository-info.png":::
 
-
     > [!Note]
     > If the branch is new, you'll be prompted to **Create and sync**.
 
-
-2. Upload your *.rdl* file to the workspace on the service. We don't support OneDrive and Sharepoint yet.
+2. Upload your *.rdl* file to the workspace on the service. We don't support OneDrive or Sharepoint yet.
 
     :::image type="content" source="media/page-view/paginated-reports-upload.png" alt-text="Screenshot of the Upload button." lightbox="media/page-view/paginated-reports-upload.png":::
 
@@ -48,16 +44,15 @@ Read about the integration of git with Microsoft Fabric: [Introduction to git in
 
     :::image type="content" source="media/page-view/paginated-reports-source-control-1.png" alt-text="Screenshot of Commit." lightbox="media/page-view/paginated-reports-source-control-1.png":::
 
-4. Once you commit the file, the **Git status** will change to **Sync**.
+    Once you commit the file, the **Git status** changes to **Sync**.
 
     :::image type="content" source="media/page-view/paginated-reports-git-status-sync.png" alt-text="Screenshot of Git Synced." lightbox="media/page-view/paginated-reports-git-status-sync.png":::
 
+    You'll see a folder in your git repository that contains the *.rdl* and two *.json* files. You might have to refresh your repository.
 
-You'll see a folder in your git repository which contains the *.rdl* and two *.json* files. You may have to refresh your repository.
+    :::image type="content" source="media/page-view/paginated-report-git-repo.png" alt-text="Screenshot of Git repo." lightbox="media/page-view/paginated-report-git-repo.png":::
 
-:::image type="content" source="media/page-view/paginated-report-git-repo.png" alt-text="Screenshot of Git repo." lightbox="media/page-view/paginated-report-git-repo.png":::
-
-5. If you want to edit a paginated report, follow the steps below:
+4. To edit a paginated report, do the following:
     - Open the .rdl file from the local git repository in Power BI Report Builder.
     - Make the desired edits.
     - Commit and push your changes to the remote repository.
@@ -65,12 +60,14 @@ You'll see a folder in your git repository which contains the *.rdl* and two *.j
     - Once approved, the PR is merged to the main branch
     - From the main branch, apply your revised changes to the relevant workspace.
 
-  
 ## Considerations and limitations
 
 - Publish/upload the paginated report to the service and then use git. The paginated report won't render if you start with the files in git.  
 
 - When you delete a paginated report from git, delete the *entire folder* and not just the .rdl report.  
 
-- The paginated report remains connected to the original dataset when you move it to a different workspace. If you move a paginated report to a different workspace, update the dataset in Power BI Report builder and re-publish the paginated report to the Power BI service.
+- The paginated report remains connected to the original dataset when you move it to a different workspace. If you move a paginated report to a different workspace, update the dataset in Power BI Report builder and republish the paginated report to the Power BI service.
 
+## Next steps
+
+- [Introduction to git integration](/fabric/cicd/git-integration/intro-to-git-integration)
