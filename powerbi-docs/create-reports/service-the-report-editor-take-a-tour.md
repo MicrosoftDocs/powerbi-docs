@@ -24,7 +24,7 @@ This video shows the report editor in Power BI Desktop.
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/IkJda4O7oGs]
 
 In the Power BI service, the report editor is only available in Editing View. To open a report in Editing view, you must be a report owner or creator, or have at least a Contributor role in the workspace that houses the report.
 
