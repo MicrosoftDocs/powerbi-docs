@@ -102,7 +102,9 @@ The following are known issues and limitations during **preview**:
     
     ```
 
-- Currently, Direct Lake datasets can only contain tables from a single Lakehouse.
+- Direct Lake datasets created or modified by using XMLA-based tools cannot be opened in the Web modelling feature.
+
+- Currently, Direct Lake datasets can only contain tables and views from a single Lakehouse.
 
 - Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same dataset. Composite models are not yet supported.
 
@@ -127,7 +129,8 @@ The following are known issues and limitations during **preview**:
 - The dataset user interface might display a warning icon on a table even though the table has no issues. This will be addressed in a future update.
 
 - The initial, default/auto-generated dataset may not be in Direct Lake mode if there's only a single table in the Lakehouse. To get the dataset to use Direct Lake mode, make a small change on the table in the Lakehouse, like renaming the table. The rename should cause the dataset to switch to Direct Lake mode.
-- Tables based on TSQL-based views cannot be queried in Direct Lake mode. DAX queries that use these tables fallback to DirectQuery mode.
+
+- Tables based on TSQL-based views cannot be queried in Direct Lake mode. DAX queries that use these dataset tables fallback to DirectQuery mode.
 
 ## Create a Lakehouse
 
