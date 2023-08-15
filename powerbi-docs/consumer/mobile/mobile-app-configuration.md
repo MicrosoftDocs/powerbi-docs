@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/12/2023
+ms.date: 08/15/2023
 ---
 
 # Remotely configure Power BI app using mobile device management (MDM) tool
@@ -72,7 +72,7 @@ The Power BI app for iOS and Android offers administrators the ability to config
 
 ## Launch item configuration (iOS and Android)
 
-If groups of users in an organization always need to get to a specific report, dashboard, scorecard, or app, admins can configure that item as a [launch item](./mobile-apps-launch-item.md) for them. A launch item is an item that opens upon app start up instead of the usual app home page. Launch items save users time by getting them immediately to the content they need. They don't have to waste time navigating to it every time they open their app.
+If groups of users in an organization always need to get to a specific report, dashboard, scorecard, or app, admins can configure that item as a [launch item](./mobile-apps-launch-item.md) for them. A launch item is an item that opens upon app startup instead of the usual app home page. Launch items save users time by getting them immediately to the content they need. They don't have to waste time navigating to it every time they open their app.
 
 When an admin has configured a launch item for a group of users, those users will be able to accept it or reject it. If they reject it, they can configure their own launch item, or they can just not use any launch item at all.
 
@@ -93,7 +93,7 @@ The following are the steps you need to create an app configuration policy. Once
 3. Choose which users to distribute this app configuration policy to.
 4. Create key-value pairs for the setting you want to push to your users.
 
-The Intune portal enables administrators to easily deploy these settings to the Power BI app via app configuration policies. However, any MDM provider is supported. If you aren't using Intune, you need to consult with your MDM documentation about how to deploy these settings.
+The Intune portal enables administrators to easily deploy these settings to the Power BI app via app configuration policies by selecting **Apps** > **App configuration policies** > **Add** > **Managed devices**. For further information, see [Add app configuration policies for managed iOS/iPadOS devices](/mem/intune/apps/app-configuration-policies-use-ios). However, any MDM provider is supported. If you aren't using Intune, you need to consult with your MDM documentation about how to deploy these settings.
 
 ## Next steps
 
