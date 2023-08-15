@@ -19,7 +19,7 @@ The region where your data is stored is important because it can affect the inte
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0fOxaHJPvdM?showinfo=0" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/0fOxaHJPvdM?showinfo=0]
 
 The first user in your organization to sign up for Power BI or Microsoft 365 chooses the country or region for the business identity. Azure Active Directory, the shared identity and access management service for the cloud, creates a tenant in the data center region closest to the selected country or region. Azure Active Directory is a multi-tenant service, and each organization is represented as an individual tenant in the data center.
 

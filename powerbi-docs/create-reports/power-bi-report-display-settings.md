@@ -23,7 +23,7 @@ The default display view is **Fit to page** and the default display size is **16
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5tg-OXzxe2g" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/5tg-OXzxe2g]
 
 ## Where to find page view settings
 
