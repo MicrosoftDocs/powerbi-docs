@@ -7,7 +7,7 @@ ms.reviewer: 'kayu'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.date: 08/08/2023
+ms.date: 08/15/2023
 ms.topic: how-to
 LocalizationGroup: Reports
 ---
@@ -229,7 +229,7 @@ There are a couple of things to be aware of when using the query string paramete
     `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * Report URL filters have a 10-expression limit (10 filters connected by AND).
 * The long data type is (2^53-1) due to JavaScript limitations.
-* URL query strings are limited to 2048 characters. This limit includes escape codes for special characters (e.g., a space, %, +).  
+* URL query strings are limited to 2000 characters. This limit includes escape codes for special characters (e.g., a space, %, +).  
 * You can't filter on table or column names that start with the capital letters _INF_, including, for example, a table name starting with "INFORMATION". Upper-case INF is a special value in OData. If you want to start a table or column name with "INF", make it lower-case "inf" instead.
 * Table and field names can contain Chinese characters expressed in Unicode form.
 
