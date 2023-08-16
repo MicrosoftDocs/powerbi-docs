@@ -109,6 +109,8 @@
       href: service-power-bi-powerpoint-add-in-view-present.md
     - name: "Information for the Power BI admin"
       href: service-power-bi-powerpoint-add-in-admin.md
+    - name: "Deploying the add-in in national clouds"
+      href: service-power-bi-powerpoint-add-in-national-clouds.md
     - name: "What's new in the Power BI add-in for PowerPoint"
       href: service-power-bi-powerpoint-add-in-whats-new.md
     - name: "Troubleshoot the Power BI add-in"
