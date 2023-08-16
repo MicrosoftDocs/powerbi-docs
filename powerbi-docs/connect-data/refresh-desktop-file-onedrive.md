@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/23/2022
+ms.date: 08/16/2023
 LocalizationGroup: Data refresh
 ---
 # Refresh a dataset stored on OneDrive or SharePoint Online
@@ -26,6 +26,34 @@ When you import your Power BI Desktop file from OneDrive or SharePoint Online, y
 ![Screenshot of the dataset in Power B I Desktop, showing the Schedule refresh selection.](media/refresh-desktop-file-onedrive/powerbi-service-refresh.png)
 
 When you refresh the dataset, Power BI doesn't connect to the file on OneDrive or SharePoint Online to query for updated data. It uses information in the dataset to connect directly to the data sources and query for updated data. Then, it loads that data into the dataset. This refreshed data in the dataset isn't synchronized back to the file on OneDrive or SharePoint Online.
+
+## Automatic versus manual updates of model information
+
+By default, Power BI updates model information from OneDrive and SharePoint on an hourly basis, but you can disable automatic OneDrive refresh if you want to perform these updates manually. In the dataset settings, expand OneDrive refresh and switch the toggle to **Off**.
+
+:::image type="content" source="./media/refresh-desktop-file-onedrive/powerbi-service-onedrive-refresh-off.png" alt-text="Screenshot showing automatic OneDrive refresh off toggle.":::
+ 
+## Dataset owners versus users with write permission
+
+By default, dataset owners and dataset users with write permission can manually refresh the model information and data in a dataset by using **Refresh now**. As part of a manual refresh, Power BI retrieves the latest model information from OneDrive or SharePoint and then refreshes the data. The latest model information can include new and modified data connections and tables added to the files in OneDrive or SharePoint.
+
+You can restrict the ability to add new data sources to a dataset in Power BI by limiting model information updates to dataset owners. In the dataset settings, expand **Sync with OneDrive and SharePoint** and select **Restrict updates**. 
+
+:::image type="content" source="./media/refresh-desktop-file-onedrive/powerbi-service-onedrive-refresh-restrict-updates.png" alt-text="Screenshot showing automatic OneDrive refresh restrict updates option.":::
+
+With restricted updates, only dataset owners can update the model information in the dataset with changes made to the version stored in OneDrive or SharePoint. Dataset owners must manually refresh datasets for the changes to be reflected. If a dataset user with write permission refreshes the dataset, changes from files stored in OneDrive or SharePoint are not reflected.
+
+If you want dataset owners and dataset users with write permission to update the model information, you can explicitly select **Automatic updates**. The difference between **Automatic updates** and **Default updates** is that the **Automatic updates** option explicitly declares that it is OK for dataset users with write permission to update the model information. On the other hand, **Default updates** highlights that the dataset is currently using the legacy behavior before the introduction of the **Sync with OneDrive and SharePoint** setting.
+
+## Enforcing restricted updates
+
+Tenant admins can enforce restricted updates across all datasets in their organization by disabling the tenant setting **Dataset owners can choose to automatically update datasets from files imported from OneDrive or SharePoint**.
+
+:::image type="content" source="./media/refresh-desktop-file-onedrive/powerbi-service-onedrive-automatic-dataset-refresh-off-tenant-setting.png" alt-text="Screenshot showing automatic OneDrive refresh disabled in tenant settings.":::
+ 
+With restricted updates enforced at the tenant level, dataset owners can no longer enable automatic updates in the **Sync with OneDrive and SharePoint** section. An info block reminds the user that an admin has disabled automatic updates for the organization.
+
+:::image type="content" source="./media/refresh-desktop-file-onedrive/powerbi-service-onedrive-automatic-dataset-refresh-owner-blocked-note.png" alt-text="Screenshot showing dataset settings note that owner can't enable automatic updates.":::
 
 ## What’s supported?
 Power BI supports **Refresh** and **Schedule refresh** for datasets created from Power BI Desktop files imported from a local drive where you use **Get data** or **Power Query Editor** to connect to and load data from the following data sources.
