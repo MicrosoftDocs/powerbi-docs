@@ -113,10 +113,10 @@ Depending on the configuration, a map can have the following:
 
 ### Maps: Azure Maps
 
-- Latitude, longitude: 30,000 For more information, see [High density line sampling](../create-reports/desktop-high-density-sampling.md).
-- Location: 3,500
+- Latitude, longitude: 30,000 
+- Location: 30,000
 
-For more information, see [High density line sampling](../create-reports/desktop-high-density-sampling.md).
+For more information, see [High density scatter charts](../create-reports/desktop-high-density-scatter-charts.md).
 
 ### Matrix
 - Rows: Virtualization by using Window of 500 rows at a time.
