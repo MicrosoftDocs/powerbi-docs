@@ -1,6 +1,6 @@
 ---
 title: Refresh a dataset from OneDrive or SharePoint Online
-description: Refresh a dataset created from a Power BI Desktop file on OneDrive, or SharePoint Online
+description: Refresh a dataset created from a Power BI Desktop file on OneDrive, or SharePoint Online.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: kayu
@@ -21,7 +21,7 @@ You can do a one-time, manual refresh right in Power BI Desktop by selecting **R
 
 ![Screenshot of the Home ribbon in Power B I Desktop, showing the Refresh selection.](media/refresh-desktop-file-onedrive/pbix-refresh.png)
 
-When you import your Power BI Desktop file from OneDrive or SharePoint Online, you load data and model information into a dataset in Power BI. You'll want to refresh the dataset in the Power BI service because that's what your reports are based on. Because the data sources are external, you can manually refresh the dataset by using **Refresh now** or you can set up a refresh schedule by using **Schedule refresh**. 
+When you import your Power BI Desktop file from OneDrive or SharePoint Online, you load data and model information into a dataset in Power BI. After that, you refresh the dataset in the Power BI service because that's what your reports are based on. Because the data sources are external, you can manually refresh the dataset by using **Refresh now** or you can set up a refresh schedule by using **Schedule refresh**. 
 
 ![Screenshot of the dataset in Power B I Desktop, showing the Schedule refresh selection.](media/refresh-desktop-file-onedrive/powerbi-service-refresh.png)
 
@@ -41,9 +41,9 @@ You can restrict the ability to add new data sources to a dataset in Power BI by
 
 :::image type="content" source="./media/refresh-desktop-file-onedrive/powerbi-service-onedrive-refresh-restrict-updates.png" alt-text="Screenshot showing automatic OneDrive refresh restrict updates option.":::
 
-With restricted updates, only dataset owners can update the model information in the dataset with changes made to the version stored in OneDrive or SharePoint. Dataset owners must manually refresh datasets for the changes to be reflected. If a dataset user with write permission refreshes the dataset, changes from files stored in OneDrive or SharePoint are not reflected.
+With restricted updates, only dataset owners can update the model information in the dataset with changes made to the version stored in OneDrive or SharePoint. Dataset owners must manually refresh datasets for the changes to be reflected. If a dataset user with write permission refreshes the dataset, changes from files stored in OneDrive or SharePoint aren't reflected.
 
-If you want dataset owners and dataset users with write permission to update the model information, you can explicitly select **Automatic updates**. The difference between **Automatic updates** and **Default updates** is that the **Automatic updates** option explicitly declares that it is OK for dataset users with write permission to update the model information. On the other hand, **Default updates** highlights that the dataset is currently using the legacy behavior before the introduction of the **Sync with OneDrive and SharePoint** setting.
+If you want dataset owners and dataset users with write permission to update the model information, you can explicitly select **Automatic updates**. The difference between **Automatic updates** and **Default updates** is that the **Automatic updates** option explicitly declares that it's OK for dataset users with write permission to update the model information. On the other hand, **Default updates** highlights that the dataset is currently using the legacy behavior before the introduction of the **Sync with OneDrive and SharePoint** setting.
 
 ## Enforcing restricted updates
 
@@ -90,12 +90,12 @@ For details on how to set up schedule refresh, see [Configure scheduled refresh]
 ## When things go wrong
 When things go wrong, it’s usually because Power BI can’t sign into data sources. Things may also go wrong if the dataset tries to connect to an on-premises data source but the gateway is offline. To avoid these issues, make sure Power BI can sign into data sources. Try signing into your data sources in **Data Source Credentials**. Sometimes the password you use to sign into a data source changes or Power BI gets signed out from a data source.
 
-When you save your changes to the Power BI Desktop file on OneDrive and you don't see those changes in Power BI within an hour or so, it could be because Power BI can't connect to your OneDrive. Try connecting to the file on OneDrive again. If you’re prompted to sign in, make sure you select **Keep me signed in**. Because Power BI wasn't able to connect to your OneDrive to synchronize with the file, you’ll need to import your file again.
+When you save your changes to the Power BI Desktop file on OneDrive and you don't see those changes in Power BI within an hour or so, it could be because Power BI can't connect to your OneDrive. Try connecting to the file on OneDrive again. If you’re prompted to sign in, make sure you select **Keep me signed in**. Because Power BI wasn't able to connect to your OneDrive to synchronize with the file, you need to import your file again.
 
-* Import of sensitivity-labeled *.pbix* files (both protected and unprotected) stored on OneDrive or SharePoint Online, as well as on-demand and automatic dataset refresh from such files, is supported, with the exception of the following scenarios:
+* Import of sensitivity-labeled *.pbix* files (both protected and unprotected) stored on OneDrive or SharePoint Online, as well as on-demand and automatic dataset refresh from such files, is supported, except for the following scenarios:
 
     * Protected live-connected *.pbix* files and protected Azure Analysis Services *.pbix* files. Refresh will fail. Neither report content nor label will be updated.
-    * Labeled unprotected Live Connect *.pbix* files: Report content will be updated but label will not be updated.
+    * Labeled unprotected Live Connect *.pbix* files: Report content will be updated but label won't be updated.
     * When the *.pbix* file has had a new sensitivity label applied that the dataset owner doesn't have usage rights to. In this case, refresh will fail. Neither report content nor label will be updated.
     * If the dataset owner's access token for OneDrive/SharePoint has expired. In this case, refresh will fail. Neither report content nor label will be updated.
 
