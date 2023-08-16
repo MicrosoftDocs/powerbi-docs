@@ -178,6 +178,7 @@ It's important to understand that differences can occur when comparing usage met
 * Certain types of views aren't included in usage metrics, as described earlier in this article.
 * Usage metrics may sometimes overcount activities, in situations where the client refreshes without the need for a request being sent back to the Power BI service. For example, switching report pages doesn't issue a request a report load to the server since the page definition is already in the browser.
 * Sharing is disabled for the usage metrics report. To give people read access to the report, you first need to give them access to the workspace.
+* Certain metrics in usage metrics report are not included in audit logs. For example, report page views are not part of audit logs.
 
 ### Discrepancies between REST APIs and usage metrics
 
