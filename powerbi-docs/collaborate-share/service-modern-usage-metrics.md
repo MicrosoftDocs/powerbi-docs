@@ -321,6 +321,7 @@ In addition to the above differences between previous and improved usage metrics
     - Dataset re-initialization
        - Each time a new dataset is created, a new report could be created.
 - The usage metrics report is not supported in My Workspace.
+- During the process of disaster recovery (while BCDR is in progress) any new incoming data experiencing data loss may be irrecoverable.
 - Certain metrics in usage metrics report are not included in audit logs. For example, report page views are not part of audit logs.
 - When a report is deleted, the ReportIds can show up in the usage metrics but not be available in the Reports dataset.
 
