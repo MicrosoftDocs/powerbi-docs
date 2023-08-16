@@ -114,7 +114,7 @@ Unlike the **Localized Labels** table, the **Translated Localized Labels** table
 
 :::image type="content" source="./media/translation-builder-localize-label/translate-localize-label-data.png" alt-text="Screenshot shows the Data pane with the Translated Localized Labels field selected.":::
 
-Every measure in the **Translated Localized Labels** table has a name that ends with the world **Label**. The reason for this fact is that two measures in the same dataset can't have the same name. Measure names must be unique on a project-wide basis. It's not possible to create measures in the **Translated Localized Labels** table that have the same name as the measures in the **Localized Labels** table.
+Every measure in the **Translated Localized Labels** table has a name that ends with the word **Label**. The reason for this fact is that two measures in the same dataset can't have the same name. Measure names must be unique on a project-wide basis. It's not possible to create measures in the **Translated Localized Labels** table that have the same name as the measures in the **Localized Labels** table.
 
 If you examine the machine-generated Data Analysis Expressions (DAX) expressions for measures in the **Translated Localized Labels** table, they're based on the same DAX pattern shown in [Implement translations using measures and USERCULTURE](multiple-language-locale.md#implement-translations-using-measures-and-userculture). This pattern uses the DAX function `USERCULTURE` together with the `SWITCH` function to return the best translation for the current user. This DAX pattern defaults to the dataset's default language if no match is found.
 
