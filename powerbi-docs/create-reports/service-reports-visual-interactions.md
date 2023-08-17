@@ -30,7 +30,7 @@ The terms *cross-filter* and *cross-highlight* distinguish the behavior describe
 >
 >
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/N_xYsCbyHPw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/N_xYsCbyHPw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP]
 
 
 ## Enable the visual interaction controls

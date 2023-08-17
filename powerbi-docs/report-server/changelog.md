@@ -32,6 +32,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
     - Introduced new Accessibility property that lets report authors to add accessible headers to tables and Heading levels to text boxes
     - Added ability to configure Cleanup Batch Size and Cleanup Max Limit
+    - Custom Visual API shipped with release - version v5.4.0
 
 - Bug fixes
 
@@ -58,6 +59,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Added ability to speed up History Snapshots loading by disabling its size calculation 
             - Accessibility improvements
             - New Teal style theme introduced
+            - Custom Visual API shipped with release - version v5.2.0
         - Bug fixes
             - Fixed issue with datetime type conversion in PBIX reports using MySQL
             - Fixed disabling tooltips in PBIX reports
@@ -639,3 +641,4 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+

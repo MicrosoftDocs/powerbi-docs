@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 12/20/2022
-ms.custom: video-9rh_qSK-UKQ, video-RxsT9TtOYok, video-abTASA8iOjQ
+ms.custom: video-9rh_qSK-UKQ, video-RxsT9TtOYok, video-abTASA8iOjQ, build-2023, build-2023-dataai
 ---
 # Power BI videos
 
