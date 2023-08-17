@@ -6,7 +6,7 @@ ms.author: anirmale
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 06/30/2023
+ms.date: 08/10/2023
 ms.custom: known-issue-432
 ---
 
@@ -16,7 +16,7 @@ The workspace setting 'Large dataset storage format' isn't consistent. You may e
 
 **APPLIES TO:** ✔️ Power BI
 
-**Status:** Open
+**Status:** Fixed: August 10, 2023
 
 **Problem area:** Administration
 
