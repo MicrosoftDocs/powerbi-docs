@@ -33,7 +33,12 @@ Make sure you enable the [Invite external users to your organization](../admin/s
 Most email addresses are supported for guest user invitations, including personal email accounts like gmail.com, outlook.com, and hotmail.com. Azure AD B2B calls these addresses *social identities*.
 
 > [!NOTE]
-> In Azure AD, external users can be set to UserType Member. In Power BI, support for UserType Member is currently in preview. In some situations, users may see errors during their first sign-in attempt. To unblock these external members, grant them permission to a Power BI item, such as a workspace, dataset, or report, and then have them sign in again.
+> In Azure AD, external users can be set to UserType Member. In Power BI, support for UserType Member is currently in preview. Please note the following:
+> * External members must have at least a free license in their home tenant to be able to sign in to the provider tenant.
+> * External members are similar to internal users in terms of licensing and permissions. To be able to access content and perform activities in the provider tenant, external users must be granted the appropriate licenses and permissions in the provider tenant.
+> * Microsoft Information Protection is not supported for external members. Admins are advised not to enable information protection for external members.
+>
+> In some situations, external members may see errors during their first sign-in attempt on the provider tenant. To unblock these external members, grant them permission to a Power BI item, such as a workspace, dataset, or report, and then have them sign in again.
 
 ## Invite guest users
 
