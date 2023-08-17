@@ -29,7 +29,7 @@ When you refresh the dataset, Power BI doesn't connect to the file on OneDrive o
 
 ## Automatic versus manual updates of model information
 
-By default, Power BI updates model information from OneDrive and SharePoint on an hourly basis, but you can disable automatic OneDrive refresh if you want to perform these updates manually. In the dataset settings, expand OneDrive refresh and switch the toggle to **Off**.
+By default, Power BI updates model information from OneDrive and SharePoint on an hourly basis. If you want these updates to occur manually, you can disable automatic OneDrive refresh in the dataset settings. Open the dataset settings, expand the **OneDrive refresh** section, and set the toggle to **Off**.
 
 :::image type="content" source="./media/refresh-desktop-file-onedrive/powerbi-service-onedrive-refresh-off.png" alt-text="Screenshot showing automatic OneDrive refresh off toggle.":::
  
@@ -37,13 +37,25 @@ By default, Power BI updates model information from OneDrive and SharePoint on a
 
 By default, dataset owners and dataset users with write permission can manually refresh the model information and data in a dataset by using **Refresh now**. As part of a manual refresh, Power BI retrieves the latest model information from OneDrive or SharePoint and then refreshes the data. The latest model information can include new and modified data connections and tables added to the files in OneDrive or SharePoint.
 
-You can restrict the ability to add new data sources to a dataset in Power BI by limiting model information updates to dataset owners. In the dataset settings, expand **Sync with OneDrive and SharePoint** and select **Restrict updates**. 
+You can restrict the ability to add new data sources to a dataset in Power BI by limiting model information updates to dataset owners. In the dataset settings, expand **Sync with OneDrive and SharePoint**, select **Restrict updates**, and then select **Apply**. 
 
 :::image type="content" source="./media/refresh-desktop-file-onedrive/powerbi-service-onedrive-refresh-restrict-updates.png" alt-text="Screenshot showing automatic OneDrive refresh restrict updates option.":::
 
-With restricted updates, only dataset owners can update the model information in the dataset with changes made to the version stored in OneDrive or SharePoint. Dataset owners must manually refresh datasets for the changes to be reflected. If a dataset user with write permission refreshes the dataset, changes from files stored in OneDrive or SharePoint aren't reflected.
+With restricted updates, only dataset owners can update the model information in the dataset with changes made to the version stored in OneDrive or SharePoint. Dataset owners must manually refresh datasets for the changes to be reflected. If a dataset user with write permission refreshes the dataset, changes from files stored in OneDrive or SharePoint won't be reflected.
 
-If you want dataset owners and dataset users with write permission to update the model information, you can explicitly select **Automatic updates**. The difference between **Automatic updates** and **Default updates** is that the **Automatic updates** option explicitly declares that it's OK for dataset users with write permission to update the model information. On the other hand, **Default updates** highlights that the dataset is currently using the legacy behavior before the introduction of the **Sync with OneDrive and SharePoint** setting.
+If you want dataset owners and dataset users with write permission to have the ability to update the model information, you can explicitly select **Automatic updates**. Datasets in the Power BI service will automatically be updated with changes made to the versions of the datasets stored in OneDrive and SharePoint.  
+
+Existing datasets will be set to **Default updates**. Once the setting is changed to either **Restrict updates** or **Automatic updates**, **Default updates** will no longer be an option for the dataset.  
+
+New datasets will be assigned **Restricted updates** upon creation. This setting can then be changed to **Automatic updates** if desired, with no option to apply the **Default updates** setting.  
+
+The difference between **Automatic updates** and **Default updates** is that the **Default updates** setting is applied to existing datasets, while the **Automatic updates** setting needs to be applied after a new dataset is created, since new datasets default to **Restricted updates**.
+
+| Setting name | Who can make updates | Refresh type | Availability | Default setting |
+|--------------|----------------------|--------------|--------------|-----------------|
+| Restrict updates | Dataset owners only | Manual | Always an option | On new datasets |
+| Automatic updates | Dataset owners and dataset users with write permission | Automatic | Always an option | Never | 
+| Default updates | Dataset owners and dataset users with write permission | Automatic | Once another setting is applied, no longer an option | On existing datasets |
 
 ## Enforcing restricted updates
 
@@ -51,7 +63,7 @@ Tenant admins can enforce restricted updates across all datasets in their organi
 
 :::image type="content" source="./media/refresh-desktop-file-onedrive/powerbi-service-onedrive-automatic-dataset-refresh-off-tenant-setting.png" alt-text="Screenshot showing automatic OneDrive refresh disabled in tenant settings.":::
  
-With restricted updates enforced at the tenant level, dataset owners can no longer enable automatic updates in the **Sync with OneDrive and SharePoint** section. An info block reminds the user that an admin has disabled automatic updates for the organization.
+With restricted updates enforced at the tenant level, dataset owners can no longer enable automatic updates in the **Sync with OneDrive and SharePoint** section. An information block shows the user that an admin has disabled automatic updates for the organization.
 
 :::image type="content" source="./media/refresh-desktop-file-onedrive/powerbi-service-onedrive-automatic-dataset-refresh-owner-blocked-note.png" alt-text="Screenshot showing dataset settings note that owner can't enable automatic updates.":::
 
