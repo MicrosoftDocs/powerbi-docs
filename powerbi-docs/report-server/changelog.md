@@ -20,6 +20,12 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ### Power BI Report Server
 
+*Version: 1.17.8621.39162(build 15.0.1112.79), Released: August 15, 2023*
+
+- Bug fixes
+    - Fixed issue with Portal process stopping working during a high load 
+    - Fixed issue with accessing some URLs using custom authentication 
+
 *Version: 1.17.8552.27722(build 15.0.1112.48), Released: June 6, 2023*
 
 - Bug fixes
@@ -641,4 +647,5 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
 
