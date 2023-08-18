@@ -17,7 +17,7 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Dynamic per recipient subscriptions let you send out an unique view of a paginated report to each recipient. Based on the mapping defined in a Power BI dataset, you can define which view of the report an individual receives by specifying what parameters should be applied to their version of the report. 
+Dynamic per recipient subscriptions let you send out a unique view of a paginated report to each recipient. Based on the mapping defined in a Power BI dataset, you define which view of the report an individual receives by specifying what parameters should be applied to their version of the report. 
 Customize the paginated report subscriptions you create by recipient. Choose one or more report parameters from a dataset so that your recipients see only data that they need. Their view of the report changes based on the set of parameters that you've selected. The dynamic subscription parameters are stored in a separate database that xyz <who creates this database?>. In order for you to set the parameters on a per-recipient basis, the dataset includes all potential recipient email aliases.
 
 :::image type="content" source="media/dynamic-subscriptions/power-bi-paginated-report.png" alt-text="Screenshot of a paginated report.":::
@@ -28,8 +28,6 @@ Customize the paginated report subscriptions you create by recipient. Choose one
 
 
 
-Have you wanted to create one subscription that sends customized views of the report to your subscribers based on a set of parameters that you set?  Perhaps you're a training director and want to send a report to team managers showing the completion status of only their employees.  Perhaps Y. Now you can create a subscription and customize the report by selecting parameters from a dataset. 
-
 ## Prerequisites
 - A paginated report with parameters to share.
 - Creating a dynamic subscription requires that the workspace is saved in a Power BI Premium capacity or a Fabric capacity. 
@@ -38,6 +36,10 @@ Have you wanted to create one subscription that sends customized views of the re
 - Your Fabric admin can enable and disable this preview feature in your admin portal tenant settings. For Dynamic subscriptions to work, your admin must leave this feature enabled.  
 
 ## Create a dynamic subscription
+
+
+
+Have you wanted to create one subscription that sends customized views of the report to your subscribers based on a set of parameters that you set?  Perhaps you're a training director and want to send a report to team managers showing the completion status of only their employees.  Now you can create a subscription and customize the report by selecting parameters from a separate dataset. 
 
 Start with a paginated report that has parameters. You'll know that it has parameters if you select **Parameters** and see dropdown options in the header.  This report has a parameter for **Manager name** and a parameter for **Employee**. 
 
@@ -76,6 +78,9 @@ Start with a paginated report that has parameters. You'll know that it has param
 
 1. On the **Email details page**, name your subscription, select recipients using the dropdown, 
 1. select the email subject. This can be dynamically set to equal a column in the dataset if you'd like each recipient to get a unique subject.
+
+ :::image type="content" source="media/dynamic-subscriptions/power-bi-email.png" alt-text="Screenshot of the Power BI service showing dynamic parameter options on the Email details window.":::
+
 1. Add a message
 1. Provide the link.
 
