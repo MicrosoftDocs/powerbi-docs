@@ -57,7 +57,7 @@ To learn about authentication with Analysis Services live connections in Power B
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Qb5EEjkHoLg" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/Qb5EEjkHoLg]
 
 Each time a user interacts with a report connected to Analysis Services, the effective user name passes to the gateway and then passes on to your on-premises Analysis Services server. The email address that you use to sign in to Power BI passes to Analysis Services as the effective user in the [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services#effectiveusername) connection property.
 
@@ -70,7 +70,7 @@ You can also map your Power BI sign-in name to a local directory UPN. To learn a
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eATPS-c7YRU" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/eATPS-c7YRU]
 
 Power BI allows mapping user names for Analysis Services data sources. You can configure rules to map a Power BI sign-in user name to an `EffectiveUserName` that passes to the Analysis Services connection. This feature is a great workaround when your Azure Active Directory (Azure AD) user name doesn't match a UPN in your local Active Directory instance. For example, if your email address is `meganb@contoso.onmicrosoft.com`, you can map it to `meganb@contoso.com`, and that value passes on to the gateway.
 

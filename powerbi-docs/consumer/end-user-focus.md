@@ -19,7 +19,7 @@ LocalizationGroup: Common tasks
 > [!NOTE]  
 > This video might use earlier versions of Power BI.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/dtdLul6otYE]
 
 
 You want your reports, dashboards, visuals, and tiles to display a certain way. Power BI offers you many options to get it just right. Two of those options: the **View** menu and **Focus mode**, are discussed in this article. Used together, you can achieve the display that you want. And these display options aren't just for viewing, you can interact with the reports, dashboards, and visuals in all of these display modes. Most of these display options are also available in Power BI Desktop. 
