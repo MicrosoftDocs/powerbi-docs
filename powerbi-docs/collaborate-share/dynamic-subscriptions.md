@@ -18,7 +18,7 @@ LocalizationGroup: Common tasks
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 Dynamic per recipient subscriptions let you send out a unique view of a paginated report to each recipient. Based on the mapping defined in a Power BI dataset, you define which view of the report an individual receives by specifying what parameters should be applied to their version of the report. 
-The dynamic subscription parameters are stored in a separate database. In some organizations, there might be a corparate employee database that fits the purpose.  Or, you may need to create a new dataset that contains employee email ddresses, geographies, managers, etc. The critical piece of data is the email addresses -- in order for you to set the parameters on a per-recipient basis, the dataset nees to include the email addresses of all potential recipients.
+The dynamic subscription parameters are stored in a separate database. In some organizations, there might be a corporate employee database that fits the purpose. Or, you may need to create a new dataset that contains employee email addresses, geographies, managers, etc. The critical piece of data is the email addresses. In order for you to set the parameters on a per-recipient basis, the dataset needs to include the email addresses of all potential recipients.
 
 :::image type="content" source="media/dynamic-subscriptions/power-bi-paginated-report.png" alt-text="Screenshot of a paginated report.":::
 
@@ -29,17 +29,17 @@ The dynamic subscription parameters are stored in a separate database. In some o
 
 
 ## Prerequisites
-- A paginated report with parameters to share.
-- A workspace saved in a Power BI Premium capacity or a Fabric capacity. 
+- A paginated report with parameters to share
+- A workspace saved in a Power BI Premium capacity or a Fabric capacity
 - A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](service-roles-new-workspaces.md).
 - A Power BI dataset that contains recipient data. Recipient data includes recipient email addresses and the parameters that you're interested in assigning for each recipient. 
-- Your Fabric admin can enable and disable this preview feature in your admin portal tenant settings. For Dynamic subscriptions to work, your admin must leave the email subscriptions feature enabled.  For more information, see [subscribe to reports](end-user-subscribe.md#subscribe-to-paginated-reports)
+- Your Fabric admin can enable and disable this preview feature in your admin portal tenant settings. For Dynamic subscriptions to work, your admin must leave the email subscriptions feature enabled. For more information, see [subscribe to reports](end-user-subscribe.md#subscribe-to-paginated-reports)
 
 ## Create a dynamic subscription
 
-Have you wanted to create one subscription that sends customized views of a report to your subscribers based on a set of parameters that you set?  Perhaps you're a training director and want to send a report to team managers showing the completion status of only their employees.  Now you can create a subscription and customize the report by selecting parameters from a separate dataset. 
+Have you wanted to create one subscription that sends customized views of a report to your subscribers based on parameters that you set? Perhaps you're a training director and want to send a report to team managers showing the completion status of only their employees. Now you can create a subscription and customize the report by selecting parameters from a separate dataset. 
 
-Start with a paginated report that has parameters. You'll know that the report has parameters if you select **Parameters** and see dropdown options in the header.  This report has a parameter for **Manager name** and a parameter for **Employee**. 
+Start with a paginated report that has parameters. You know that the report has parameters if you select **Parameters** and see dropdown options in the header. This report has a parameter for **Manager name** and a parameter for **Employee**. 
 
 :::image type="content" source="media/dynamic-subscriptions/power-bi-parameters.png" alt-text="Screenshot of the Power BI service showing two parameters.":::
 
@@ -112,11 +112,11 @@ In the **Set the schedule** window, create a schedule for your dynamic subscript
 
     :::image type="content" source="media/dynamic-subscriptions/power-bi-subscription.png" alt-text="Screenshot of the Power BI service showing the Schedule window.":::
 
-1. To turn the subscription on, select **Active subscription**.
+1. To turn on the subscription, select **Active subscription**.
 
 ### Review and finish creating the dynamic subscription
 
-In the **Review and finish** window, select a heading to review your settings. If all the setting look correct, select **Save and close**.
+In the **Review and finish** window, select a heading to review your settings. If all the settings look correct, select **Save and close**.
 
  :::image type="content" source="media/dynamic-subscriptions/power-bi-review-subscription.png" alt-text="Screenshot of the Power BI service showing the Review and finish window.":::
 
@@ -126,12 +126,12 @@ Another way to review your subscription is to select the arrow in the **Subscrip
 
 :::image type="content" source="media/dynamic-subscriptions/power-bi-review-again.png" alt-text="Screenshot of the Power BI service showing the Subscriptions pane.":::
 
-Just as with other subscriptions, you can edit, delete, turn on, and turn off the subscription. 
+As with other subscriptions, you can edit, delete, turn on, and turn off the subscription. 
 
 ## Considerations and limitations
-- Rendering the report uses some of your capacity. It is classified as a **Background** activity.
-- Your recipient dataset has a limit of 50 rows of recipients. If the recipient list exceeds this at any point, only the first 50 recipients will receive the subscription email and the subscription creator will receive an error email. 
-- Receiving the subscription email doesn't guarantee access to the report.  Report access must be set separately.
+- Rendering the report uses some of your capacity. It's classified as a **Background** activity.
+- Your recipient dataset has a limit of 50 rows of recipients. If the recipient list exceeds 50 rows at any point, only the first 50 recipients receive the subscription email and the subscription creator receives an error email. 
+- Receiving the subscription email doesn't guarantee access to the report. Report access must be set separately.
 - [Parameter values attempt to map to the *value* and not to the *label*](../paginated-reports/parameters/associate-query-parameter-report-parameter-report-builder.md#associate-a-query-parameter-with-a-report-parameter)  
 
 ## Next steps
