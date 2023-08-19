@@ -116,13 +116,23 @@ In the **Set the schedule** window, create a schedule for your dynamic subscript
 
 ### Review and finish creating the dynamic subscription
 
+In the **Review and finish** window, select a heading to review your settings. If all the setting look correct, select **Save and close**.
 
-     :::image type="content" source="media/dynamic-subscriptions/power-bi-review-subscription.png" alt-text="Screenshot of the Power BI service showing the Review and finish window.":::
+ :::image type="content" source="media/dynamic-subscriptions/power-bi-review-subscription.png" alt-text="Screenshot of the Power BI service showing the Review and finish window.":::
+
+Your **Subscriptions** pane lists the new subscriptions. The link icon ![Image of the dynamic content link icon.](media/dynamic-subscriptions/power-bi-icon.png) lets you know that dynamic content is being used. 
+
+Another way to review your subscription is to select the arrow in the **Subscriptions** pane. 
+
+:::image type="content" source="media/dynamic-subscriptions/power-bi-review-again.png" alt-text="Screenshot of the Power BI service showing the Subscriptions pane.":::
+
+Just as with other subscriptions, you can edit, delete, turn on, and turn off the subscription. 
 
 ## Considerations and limitations
-- Rendering the report uses some of your capacity. 
+- Rendering the report uses some of your capacity. It is classified as a **Background** activity.
 - Your recipient dataset has a limit of 50 rows of recipients. If the recipient list exceeds this at any point, only the first 50 recipients will receive the subscription email and the subscription creator will receive an error email. 
 - Receiving the subscription email doesn't guarantee access to the report.  Report access must be set separately.
+- [Parameter values attempt to map to the *value* and not to the *label*](../paginated-reports/parameters/associate-query-parameter-report-parameter-report-builder.md#associate-a-query-parameter-with-a-report-parameter)  
 
 ## Next steps
 
