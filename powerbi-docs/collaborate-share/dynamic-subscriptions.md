@@ -31,7 +31,7 @@ The dynamic subscription parameters are stored in a separate database. In some o
 ## Prerequisites
 - A paginated report with parameters to share.
 - A workspace saved in a Power BI Premium capacity or a Fabric capacity. 
-- A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](service-roles-new-workspaces).
+- A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](service-roles-new-workspaces.md).
 - A Power BI dataset that contains recipient data. Recipient data includes recipient email addresses and the parameters that you're interested in assigning for each recipient. 
 - Your Fabric admin can enable and disable this preview feature in your admin portal tenant settings. For Dynamic subscriptions to work, your admin must leave the email subscriptions feature enabled.  For more information, see [subscribe to reports](end-user-subscribe.md#subscribe-to-paginated-reports)
 
@@ -106,7 +106,7 @@ In the **Set the schedule** window, create a schedule for your dynamic subscript
 1. Use the **Repeat** dropdown to select a frequency for your subscription. You may choose hourly, daily, weekly, monthly, or after data refresh (once daily). Most of the options require that you set a time zone as well.
 
     > [!Tip]
-> To receive a subscription email only on certain days, select Hourly or Weekly and then select the week day checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
+    > To receive a subscription email only on certain days, select Hourly or Weekly and then select the week day checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
 
 1. If you choose Hourly, Daily, Weekly, or Monthly, choose a Scheduled Time for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past for a specified time zone. If you choose Hourly, select the Scheduled time you want the subscription to start, and it will run every hour after the Scheduled time.
 
