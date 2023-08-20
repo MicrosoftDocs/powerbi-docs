@@ -28,22 +28,22 @@ The token-based identity only works for DirectQuery models on a capacity connect
 
 ### [Set up in portal](#tab/portal)
 
-1. From the Power BI portal,select **Dataset > Settings > Data source credentials > More Options**.
+1. From the Power BI portal, select **Dataset > More Options (three dots) > Settings > Data source credentials > Edit credentials**.
 
    :::image type="content" source="media/rls-sso/dataset-settings.png" alt-text="Screenshot dataset settings option in Power BI portal.":::
 
-1. Check the **OAuth2 option** box.
+1. Check the **OAuth2** option box.
 
    :::image type="content" source="media/rls-sso/token-based-configure-azure-sql-db.png" alt-text="Screenshot of configure Azure SQL server.":::
 
 ### [Set up with API](#tab/API)
 
-Send a [Gateways - Update Datasource API](/rest/api/power-bi/gateways/update-datasource) call with `useEndUserOAuth2Credentials = True` for the desired dataset. The request body should look something like this:
+Send a [Gateways - Update Datasource](/rest/api/power-bi/gateways/update-datasource) API call with `"useEndUserOAuth2Credentials" = True` and `"credentialType": "OAuth2"` for the desired dataset. The request body should look something like this:
 
 ```json
 {
   "credentialDetails": {
-    "credentials": "{\"credentialData\":[{\"name\":\"accessToken\",\"value\":\"eyJ…"}]}",
+    "credentials": "{\"credentialData\":[{\"name\":\"accessToken\",\"value\":\"eyJ…\"}]}",
     "credentialType": "OAuth2",
     "encryptedConnection": "Encrypted",
     "encryptionAlgorithm": "None",
@@ -57,7 +57,7 @@ Send a [Gateways - Update Datasource API](/rest/api/power-bi/gateways/update-dat
 
 ## Generate an identity token
 
-To create an access token for Azure SQL, the app must have *Access Azure SQL DB and Data Warehouse* delegated permission to **Azure SQL Database API** on the Azure AD app registration configuration in the Azure portal.
+To create an access token for Azure SQL, the app must have *Access Azure SQL DB and Data Warehouse* delegated permission to **Azure SQL Database** API on the Azure AD app registration configuration in the Azure portal.
 
 :::image type="content" source="media/rls-sso/api-permissions.png" alt-text="Screenshot of Azure AD app registration configuration settings in the Azure portal.":::
 Authenticate and acquire a token for the user from the [Azure AD V2 endpoint](https://login.microsoftonline.com/organizations/oauth2/v2.0/token) for the following scope: https://database.windows.net/.default
@@ -229,10 +229,3 @@ See the following examples for generating embed tokens for different scenarios.
 The following example shows an embedded Power BI report with SSO and RLS applied to the dataset:
 
 :::image type="content" source="media/rls-sso/report-example.png" alt-text="Screenshot of an embedded Power BI report with SSO and RLS applied to the dataset.":::
-
-## Next steps
-
-* [Generate an embed token](./generate-embed-token.md)
-* [Row-Level security (RLS) with Power BI](../../enterprise/service-admin-rls.md)
-
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
