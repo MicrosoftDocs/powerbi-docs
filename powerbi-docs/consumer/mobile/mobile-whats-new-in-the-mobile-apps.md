@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/16/2023
+ms.date: 08/20/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -28,12 +28,6 @@ If you always go right to a particular report, dashboard, scorecard, or app when
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/set-as-launch-item-option.png" alt-text="Screenshot of the Set as launch item option on a report in the Power BI mobile app." border="false":::
 
 Organizations can also configure a launch item for groups of users via mobile device management. See [Remotely configure Power BI app using mobile device management (MDM) tool](./mobile-app-configuration.md#launch-item-configuration-ios-and-android) for details.
-
-### New layout switcher makes creating mobile-optimized reports easier
-
-Now it's easy to quickly switch between web and mobile layouts when you're developing your reports. You'll find the new switcher buttons down at the bottom of the screen, right next to the page navigator. [Check it out](../../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md#how-to-open-mobile-layout-view)!
-
-:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-layout-switcher.png" alt-text="Screenshot showing the mobile report layout switcher.":::
 
 ## July 2023
 
