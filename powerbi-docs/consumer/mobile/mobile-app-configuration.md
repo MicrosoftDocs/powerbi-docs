@@ -82,6 +82,14 @@ A launch item can be a report, a specific report page, a dashboard, a scorecard,
 |---|---|---|---|
 | com.microsoft.powerbi.mobile.LaunchItemURI | URI/String | Any valid URI to a report, report page, dashboard, scorecard, app, or report within an app. |
 
+To get a valid URL, use one of the following methods:
+
+* Open the desired launch item in the Power BI service and then copy the URL from the browser's address bar.
+
+* Copy the link from the item's **Share** option.
+
+* For apps - [fom within the app](./mobile-apps-deep-link-specific-location.md#links-to-apps-and-items-in-apps)
+
 For more information about launch items, see [Choose a launch item for your Power BI mobile app](./mobile-apps-launch-item.md).
 
 ## Deploy app configuration settings
