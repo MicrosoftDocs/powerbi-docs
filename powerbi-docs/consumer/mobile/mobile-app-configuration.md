@@ -88,7 +88,7 @@ To get a valid URL, use one of the following methods:
 
 * Copy the link from the item's **Share** option.
 
-* For apps - [fom within the app](./mobile-apps-deep-link-specific-location.md#links-to-apps-and-items-in-apps)
+* For apps - [from within the app](./mobile-apps-deep-link-specific-location.md#links-to-apps-and-items-in-apps)
 
 For more information about launch items, see [Choose a launch item for your Power BI mobile app](./mobile-apps-launch-item.md).
 
