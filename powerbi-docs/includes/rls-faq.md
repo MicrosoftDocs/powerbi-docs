@@ -14,3 +14,6 @@
 
 **Question:** My data source already has security roles defined (for example SQL Server roles or SAP BW roles). What's the relationship between these and RLS?  
 **Answer:** The answer depends on whether you're importing data or using DirectQuery. If you're importing data into your Power BI dataset, the security roles in your data source aren't used. In this case, you should define RLS to enforce security rules for users who connect in Power BI. If you're using DirectQuery, the security roles in your data source are used. When a user opens a report, Power BI sends a query to the underlying data source, which applies security rules to the data based on the user's credentials.
+
+**Question:** Can a user belong to more than one role?  
+**Answer:** A user can belong to multiple roles, and the roles are additive. For example, if a user belongs to both the "Sales" and "Marketing" roles, they will be able to see data for both these roles.
