@@ -45,7 +45,7 @@ In the following video, Microsoft Most Valued Professional - Data Platform Peter
 > [!NOTE]  
 > This video might use earlier versions of Power BI Report Builder or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jXTiYJKw1Rs?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/jXTiYJKw1Rs?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT]
 
 This video is part of an eight-module video-based course, [Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md). The course is designed to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
 
