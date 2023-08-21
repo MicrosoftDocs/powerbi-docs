@@ -17,7 +17,7 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscripbtion. Based on the mapping defined in a Power BI dataset, you define which view of the report an individual receives by specifying what parameters should be applied to their version of the report. 
+Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. Based on the mapping defined in a Power BI dataset, you define which view of the report an individual receives by specifying what parameters should be applied to their version of the report. 
 The dynamic subscription parameters are stored in a separate database. In some organizations, there might be a corporate employee database that fits the purpose. Or, you may need to create a new dataset that contains employee email addresses, geographies, managers, etc. The critical piece of data is the email addresses. In order for you to set the parameters on a per-recipient basis, the dataset needs to include the email addresses of all potential recipients.
 
 :::image type="content" source="media/dynamic-subscriptions/power-bi-paginated-report.png" alt-text="Screenshot of a paginated report.":::
@@ -29,17 +29,17 @@ The dynamic subscription parameters are stored in a separate database. In some o
 
 
 ## Prerequisites
-- A paginated report with parameters to share that is saved in a workspace backed by a capacity(i.e., [Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric (Preview) trial](/fabric/get-started/fabric-trial.md), or [Microsoft Fabric capacity](/fabric/enterprise/licenses.md))
-- Build permissions to a Power BI dataset that contains the email addresses of your recipients and parameter value(s) that should be applied for each recipient  
+- A paginated report with parameters to share that is saved in a workspace backed by a capacity( [Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric (Preview) trial](fabric/get-started/fabric-trial.md), or [Microsoft Fabric capacity](/fabric/enterprise/licenses.md))
+- Build permissions to a Power BI dataset that contains the email addresses of your recipients and parameter values that should be applied for each recipient  
 - A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [Roles in workspaces](service-roles-new-workspaces.md).
 - A Power BI dataset that contains recipient data. Recipient data includes recipient email addresses and the parameters that you're interested in assigning for each recipient. 
 - Your Fabric admin can enable and disable this preview feature in your admin portal tenant settings. For Dynamic subscriptions to work, your admin must leave the email subscriptions feature enabled. For more information, see [subscribe to reports](end-user-subscribe.md#subscribe-to-paginated-reports)
 
 ## Create a dynamic subscription
 
-Have you wanted to create one subscription that sends customized views of a report to your subscribers based on parameters that you set? Perhaps you're a training director and want to send a report to various managers, each interested in the completion progress of their employees. Now you can create a subscription and customize the report so that each manager only sees data related to their own employees. This is done by connecting to a Power BI dataset that defines the mapping between recipients and parameters. When it's time to send out the report, the latest data available in this dataset determines which manager receives a report in their inbox and what parameters are applied to that report.
+Have you wanted to create one subscription that sends customized views of a report to your subscribers based on parameters that you set? Perhaps you're a training director and want to send a report to various managers, each interested in the completion progress of their employees. Now you can create a subscription and customize the report so that each manager only sees data related to their own employees. This is done by connecting to a Power BI dataset that defines the mapping between recipients and parameters. When it's time to send out the report, the latest data available in this dataset determines which manager receives a report in their inbox, and what parameters are applied to that report.
 
-For users familiar with SQL Server Reporting Services (SSRS), this feature is very similar to data-driven subscriptions. 
+For users familiar with SQL Server Reporting Services (SSRS), this feature is similar to data-driven subscriptions. 
 
 Start with a paginated report that has parameters. You know that the report has parameters if you select **Parameters** and see dropdown options in the header. This report has a parameter for **Manager name** and a parameter for **Employee**. 
 
@@ -134,12 +134,12 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 
 ## Considerations and limitations
 - Rendering the report uses some of your capacity. It's classified as a **Background** activity.
-- Your recipient dataset has a limit of 50 rows of recipients. If the recipient list exceeds 50 rows at any point, only the first 50 recipients receive the subscription email and the subscription creator receives an error email. 
+- Your recipient dataset has a limit of 50 rows of recipients. If the recipient list exceeds 50 rows at any point, only the first 50 recipients receive the subscription email, and the subscription creator receives an error email. 
 - Receiving the subscription email doesn't guarantee access to the report. Report access must be set separately.
 - [Parameter values attempt to map to the *value* and not to the *label*](../paginated-reports/parameters/associate-query-parameter-report-parameter-report-builder.md#associate-a-query-parameter-with-a-report-parameter)  
 - As a Preview feature, it’s not available to customers located in Sovereign Clouds.  
 
 ## Next steps
 
-[Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml)   
-[Search for and sort content](../consumer/end-user-search-sort.md)
+[Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml).   
+[Search for and sort content](../consumer/end-user-search-sort.md).
