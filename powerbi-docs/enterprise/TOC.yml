@@ -182,6 +182,8 @@
       href: service-premium-service-tags.md
     - name: Use private links for Power BI
       href: service-security-private-links.md
+    - name: Use private links for Power BI for on-premises clients
+      href: service-security-private-links-on-premises.md      
     - name: Configure mobile apps with Intune
       href: service-admin-mobile-intune.md   
   - name: Dataset scale-out (preview)
