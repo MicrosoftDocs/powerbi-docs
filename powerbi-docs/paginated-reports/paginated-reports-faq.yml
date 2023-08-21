@@ -226,9 +226,9 @@ sections:
           For paginated reports running longer than 10 minutes, we recommend using  the XMLA endpoint to connect to the Power BI dataset.
 
       - question: |
-          External tenant user accounts aren't currently supported with Power BI Report Builder
+          External tenant user accounts aren't supported with Power BI Report Builder
         answer: |
-          In some customer scenarios, admins have allowed external users to their organization access to workspaces and content. What is an external user? One example would be a BikeManufacturer(`user@MyBikes.com`) account has been given access to the Contoso(`user@Contoso.com`) tenant. An external user may see an "Access denied" error or see no content with Power BI Report Builder when accessing workspaces, or editing or creating reports. We'll look to adding this functionality in a future update.
+          In some customer scenarios, admins have allowed external users to their organization access to workspaces and content. What is an external user? One example would be a BikeManufacturer (`user@MyBikes.com`) account that has been given access to the Contoso (`user@Contoso.com`) tenant. An external user may see an "Access denied" error or see no content with Power BI Report Builder when accessing workspaces, or editing or creating reports. We'll look to adding this functionality in a future update.
           
 additionalContent: |
 
