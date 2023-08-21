@@ -110,15 +110,14 @@ The following screenshot shows an example of DNS Conditional Forwarder entries i
 
 As final step for your configuration, sign in to the on-premises Windows client and perform a verification by using nslookup. If properly configured, you'll receive a response similar to the following message.
 
-    ```
-    C:\ > nslookup <tenant-object-id-without-hyphens>-api.privatelink.analysis.windows.net
-    Server:  UnKnown
-    Address:  10.1.21.10           <- IP address of on-premises DNs server
-
-    Non-authoritative answer:
-    Name:    <tenant-object-id-without-hyphens>-api.privatelink.analysis.windows.net
-    Address:  10.7.0.5              
-    ```
+```
+C:\ > nslookup <tenant-object-id-without-hyphens>-api.privatelink.analysis.windows.net
+Server:  UnKnown
+Address:  10.1.21.10           <- IP address of on-premises DNs server
+Non-authoritative answer:
+Name:    <tenant-object-id-without-hyphens>-api.privatelink.analysis.windows.net
+Address:  10.7.0.5              
+```
 
 The Power BI service URL is translated into the private IP that's assigned to the private endpoint, which is configured in the VNet and connected to the Power BI service.
 
