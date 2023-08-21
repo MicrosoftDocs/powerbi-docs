@@ -17,7 +17,7 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Dynamic per recipient subscriptions let you send out a unique view of a paginated report to each recipient. Based on the mapping defined in a Power BI dataset, you define which view of the report an individual receives by specifying what parameters should be applied to their version of the report. 
+Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscripbtion. Based on the mapping defined in a Power BI dataset, you define which view of the report an individual receives by specifying what parameters should be applied to their version of the report. 
 The dynamic subscription parameters are stored in a separate database. In some organizations, there might be a corporate employee database that fits the purpose. Or, you may need to create a new dataset that contains employee email addresses, geographies, managers, etc. The critical piece of data is the email addresses. In order for you to set the parameters on a per-recipient basis, the dataset needs to include the email addresses of all potential recipients.
 
 :::image type="content" source="media/dynamic-subscriptions/power-bi-paginated-report.png" alt-text="Screenshot of a paginated report.":::
@@ -29,15 +29,17 @@ The dynamic subscription parameters are stored in a separate database. In some o
 
 
 ## Prerequisites
-- A paginated report with parameters to share
-- A workspace saved in a Power BI Premium capacity or a Fabric capacity
-- A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](service-roles-new-workspaces.md).
+- A paginated report with parameters to share that is saved in a workspace backed by a capacity(i.e., [Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric (Preview) trial](/fabric/get-started/fabric-trial.md), or [Microsoft Fabric capacity](/fabric/enterprise/licenses.md))
+- Build permissions to a Power BI dataset that contains the email addresses of your recipients and parameter value(s) that should be applied for each recipient  
+- A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [Roles in workspaces](service-roles-new-workspaces.md).
 - A Power BI dataset that contains recipient data. Recipient data includes recipient email addresses and the parameters that you're interested in assigning for each recipient. 
 - Your Fabric admin can enable and disable this preview feature in your admin portal tenant settings. For Dynamic subscriptions to work, your admin must leave the email subscriptions feature enabled. For more information, see [subscribe to reports](end-user-subscribe.md#subscribe-to-paginated-reports)
 
 ## Create a dynamic subscription
 
-Have you wanted to create one subscription that sends customized views of a report to your subscribers based on parameters that you set? Perhaps you're a training director and want to send a report to team managers showing the completion status of only their employees. Now you can create a subscription and customize the report by selecting parameters from a separate dataset. 
+Have you wanted to create one subscription that sends customized views of a report to your subscribers based on parameters that you set? Perhaps you're a training director and want to send a report to various managers, each interested in the completion progress of their employees. Now you can create a subscription and customize the report so that each manager only sees data related to their own employees. This is done by connecting to a Power BI dataset that defines the mapping between recipients and parameters. When it's time to send out the report, the latest data available in this dataset determines which manager receives a report in their inbox and what parameters are applied to that report.
+
+For users familiar with SQL Server Reporting Services (SSRS), this feature is very similar to data-driven subscriptions. 
 
 Start with a paginated report that has parameters. You know that the report has parameters if you select **Parameters** and see dropdown options in the header. This report has a parameter for **Manager name** and a parameter for **Employee**. 
 
@@ -64,9 +66,11 @@ Start with a paginated report that has parameters. You know that the report has 
 
 ### Select and filter data
 
+Select the columns from your dataset that you want to be varied for each recipient. Email address, email subject, report parameters, and even the attachment format can be set dynamically based on data in a dataset. 
+
 1. The **Select and filter data** window displays the list of fields from the *Training data* dataset that can be used to dynamically filter your *Manager training* report subscription. In this example, we have **Email address**, **Email subject**, **Report parameters**, and **Attachment file type**. These fields from the *Training data* dataset can be tied to the subscription. 
 
-    Select the relevant fields that you'd like to filter dynamically. Optionally, add filters. As you add data, Power BI builds a table. In this window, narrow down who should receive the report. For our example, we select only those employees who are also managers. 
+    Select the relevant fields that you'd like to filter dynamically. Optionally, add filters and change the method of aggregation by expanding the **Filter** and **Build** panes. As you add data, Power BI builds a table. In this window, narrow down who should receive the report. For our example, we select only those employees who are also managers. 
 
     :::image type="content" source="media/dynamic-subscriptions/power-bi-managers.png" alt-text="Screenshot of the Power BI service showing the Select and filter data page for dynamic subscriptions.":::
 
