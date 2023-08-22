@@ -17,8 +17,8 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. Based on the mapping defined in a Power BI dataset, you define which view of the report an individual receives by specifying what parameters should be applied to their version of the report. 
-The dynamic subscription parameters are stored in a separate database. In some organizations, there might be a corporate employee database that fits the purpose. Or, you may need to create a new dataset that contains employee email addresses, geographies, managers, etc. The critical piece of data is the email addresses. In order for you to set the parameters on a per-recipient basis, the dataset needs to include the email addresses of all potential recipients.
+Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which parameters are applied to their version of the report. 
+The dynamic subscription parameters are stored in a separate database. In some organizations, there might be a corporate employee database that fits the purpose. Or, you may need to create a new dataset that contains employee email addresses, geographies, and other parameters. The critical piece of data is the email addresses. In order for you to set the parameters on a per-recipient basis, the dataset needs to include the email addresses of all potential recipients.
 
 :::image type="content" source="media/dynamic-subscriptions/power-bi-paginated-report.png" alt-text="Screenshot of a paginated report.":::
 
@@ -29,7 +29,7 @@ The dynamic subscription parameters are stored in a separate database. In some o
 
 
 ## Prerequisites
-- A paginated report with parameters to share that is saved in a workspace backed by a capacity( [Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric (Preview) trial](/fabric/get-started/fabric-trial), or [Microsoft Fabric capacity](/fabric/enterprise/licenses))
+- A paginated report with parameters to share that is saved in a workspace backed by a capacity ([Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric (Preview) trial](/fabric/get-started/fabric-trial), or [Microsoft Fabric capacity](/fabric/enterprise/licenses))
 - Build permissions to a Power BI dataset that contains the email addresses of your recipients and parameter values that should be applied for each recipient  
 - A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [Roles in workspaces](service-roles-new-workspaces.md).
 - A Power BI dataset that contains recipient data. Recipient data includes recipient email addresses and the parameters that you're interested in assigning for each recipient. 
@@ -108,10 +108,11 @@ In the **Set the schedule** window, create a schedule for your dynamic subscript
 1. Select a Start date and optionally, an End date for your subscription. By default, the start date is the date you created the subscription and the end date is one year later. You can change it to any date in the future at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You receive notifications before the scheduled end date to ask if you'd like to extend it.
 
 1. Use the **Repeat** dropdown to select a frequency for your subscription. You may choose hourly, daily, weekly, monthly, or after data refresh (once daily). Most of the options require that you set a time zone as well.
+ 
+    > [!TIP]
+> To receive a subscription email only on certain days, select Hourly or Weekly and then select the week day checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
 
-    > [!Tip]
-    > To receive a subscription email only on certain days, select Hourly or Weekly and then select the week day checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
-
+    
 1. If you choose Hourly, Daily, Weekly, or Monthly, choose a Scheduled Time for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past for a specified time zone. If you choose Hourly, select the Scheduled time you want the subscription to start, and it will run every hour after the Scheduled time.
 
     :::image type="content" source="media/dynamic-subscriptions/power-bi-subscription.png" alt-text="Screenshot of the Power BI service showing the Schedule window.":::
