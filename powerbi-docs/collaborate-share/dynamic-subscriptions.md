@@ -29,7 +29,7 @@ The dynamic subscription parameters are stored in a separate database. In some o
 
 
 ## Prerequisites
-- A paginated report with parameters to share that is saved in a workspace backed by a capacity( [Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric (Preview) trial](fabric/get-started/fabric-trial.md), or [Microsoft Fabric capacity](/fabric/enterprise/licenses.md))
+- A paginated report with parameters to share that is saved in a workspace backed by a capacity( [Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric (Preview) trial](/fabric/get-started/fabric-trial), or [Microsoft Fabric capacity](/fabric/enterprise/licenses))
 - Build permissions to a Power BI dataset that contains the email addresses of your recipients and parameter values that should be applied for each recipient  
 - A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [Roles in workspaces](service-roles-new-workspaces.md).
 - A Power BI dataset that contains recipient data. Recipient data includes recipient email addresses and the parameters that you're interested in assigning for each recipient. 
