@@ -70,7 +70,7 @@ The error **Error: Invalid connection credentials** appears when the gateway can
 
 :::image type="content" source="media/service-gateway-sso-test-configuration/sso-test-failed-credentials.png" alt-text="Screenshot of the error dialog when testing fails because the UPN doesn't have access to the data source.":::
 
-Check whether the user has access to the data source, and if not, add the user to the data source by following the instructions in [Manage users](service-gateway-data-sources.md#manage-users).
+Check whether the data source has been misconfigured to deny access to the user. You may need to work with your data source/database administrator to access the data source's configuration and settings.
 
 ## Next steps
 
