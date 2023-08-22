@@ -17,8 +17,8 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which parameters are applied to their version of the report. 
-The dynamic subscription parameters are stored in a separate database. In some organizations, there might be a corporate employee database that fits the purpose. Or, you may need to create a new dataset that contains employee email addresses, geographies, and other parameters. The critical piece of data is the email addresses. In order for you to set the parameters on a per-recipient basis, the dataset needs to include the email addresses of all potential recipients.
+Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a paginated report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which parameters are applied to their version of the report. 
+The dynamic subscription parameters are stored in a separate Power BI dataset. The dataset defines the mapping between recipients and respective parameters. When it’s time to send out the report, the latest data available in your dataset will determine who receives a subscription and with what parameter(s) applied. 
 
 :::image type="content" source="media/dynamic-subscriptions/power-bi-paginated-report.png" alt-text="Screenshot of a paginated report.":::
 
@@ -56,21 +56,23 @@ Start with a paginated report that has parameters. You know that the report has 
 
     :::image type="content" source="media/dynamic-subscriptions/power-bi-create-subscription.png" alt-text="Screenshot of the Power BI service showing the Subscriptions screen with no subscriptions yet.":::
 
-1. Select **Dynamic per recipient**.
+1. Select **Dynamic per recipient (preview)**.
 
     :::image type="content" source="media/dynamic-subscriptions/power-bi-dynamic-option.png" alt-text="Screenshot of the Power BI service showing the New subscriptions screen and the option for Dynamic per recipient.":::
 
-1. Highlight the Power BI dataset that contains your recipient data. Recipient data includes a list of email addresses of colleagues and other parameter values that can be set on a per user basis. Select **Next**. In this example, our parameter mapping dataset is named **Training data**. 
+1. Highlight the Power BI dataset that contains your recipient data. Recipient data includes columns for email address, parameters that can be varied per recipient, and optionally, attachment type and email subject. 
+
+    In some organizations, there might be a corporate employee Power BI dataset that fits the purpose. Or, you may need to create a new dataset that contains employee email addresses, geographies, and other parameters. The critical piece of data is the email addresses. In order for you to set the parameters on a per-recipient basis, the dataset needs to include the email addresses of all potential recipients. Select **Next**. In this example, our parameter mapping dataset is named **Training data**. 
 
     :::image type="content" source="media/dynamic-subscriptions/power-bi-training-data.png" alt-text="Screenshot of the Power BI service showing Connect to recipient data step of the wizard, with Training data outlined in red.":::
 
 ### Select and filter data
 
-Select the columns from your dataset that you want to be varied for each recipient. Email address, email subject, report parameters, and even the attachment format can be set dynamically based on data in a dataset. 
+The **Select and filter data** window lists the fields that can be set dynamically. In this example we have a field for email address and we have several parameters. Select the columns from your dataset that you want to be varied for each recipient. Email address and parameters can be set dynamically based on data in the Power BI dataset. 
 
 1. The **Select and filter data** window displays the list of fields from the *Training data* dataset that can be used to dynamically filter your *Manager training* report subscription. In this example, we have **Email address**, **Email subject**, **Report parameters**, and **Attachment file type**. These fields from the *Training data* dataset can be tied to the subscription. 
 
-    Select the relevant fields that you'd like to filter dynamically. Optionally, add filters and change the method of aggregation by expanding the **Filter** and **Build** panes. As you add data, Power BI builds a table. In this window, narrow down who should receive the report. For our example, we select only those employees who are also managers. 
+    Select the relevant fields that you'd like to be varied per recipient. Here we have **Email** and two fields for parameters: **Employee name** and **Manager name**. Optionally, add filters and change the method of aggregation by expanding the **Filter** and **Build** panes. As you add data, Power BI builds a table. In this window, narrow down who should receive the report. For our example, we select only those employees who are also managers. 
 
     :::image type="content" source="media/dynamic-subscriptions/power-bi-managers.png" alt-text="Screenshot of the Power BI service showing the Select and filter data page for dynamic subscriptions.":::
 
@@ -78,7 +80,7 @@ Select the columns from your dataset that you want to be varied for each recipie
 
 ### Enter email details
 
-In the **Email details** window, name the subscription, add recipients and a subject, and select the type of attachment to use. Many of these fields offer the option to use the dynamic parameters. In this example, **Recipients** are dynamically added from the *Training data* dataset, using the **Email** parameter. And, the email **Subject** is dynamically created using the **Manager name** parameter. The link icon ![Image of the dynamic content link icon.](media/dynamic-subscriptions/power-bi-icon.png) lets you know that dynamic content is being used. 
+In the **Email details** window, name the subscription, add recipients and a subject, and select the type of attachment to use. Many of these fields offer the option to use the dynamic parameters. In this example, **Recipients** are dynamically added from the *Training data* dataset, using the **Email** field. And, the email **Subject** is dynamically set using the **Manager name** parameter. The link icon ![Image of the dynamic content link icon.](media/dynamic-subscriptions/power-bi-icon.png) lets you know that dynamic content is being used. 
 
 1. Name your subscription. 
 1. Manually enter recipient email addresses, or use the dropdown to select a value that dynamically selects recipients from the *Training data* dataset.
@@ -86,21 +88,21 @@ In the **Email details** window, name the subscription, add recipients and a sub
 
     :::image type="content" source="media/dynamic-subscriptions/power-bi-email.png" alt-text="Screenshot of the Power BI service showing dynamic parameter options on the Email details window.":::
 
-1. Optionally, add a message and use the toggles to add a link to the report in Power BI and to include a report preview. 
+1. Optionally, add a message and use the toggles to add a link to the report in Power BI and to include a preview image of the first page of the report in the email. The preview image shows the report with the recipient's unique parameters applied.
 
-1. Select the **Attach full report** dropdown to display the list of options. Select a format. Sensitivity labels are applied to the email attachment and the attachment respects all privacy labels for the report. The size of the attachment is limited to no more than 20 pages and less than 25 MB.  
+1. Select the **Attach full report** dropdown to display the list of options. Select a format. Sensitivity labels are applied to the email attachment and the attachment respects all privacy labels for the report. The size of the attachment is limited to less than 25 MB.  
 
 1. Choose **Next**.  
 
 ### Select the parameters
 
-In the **Parameters** window, Power BI displays the parameters that you opted to use in your email. Paginated reports allow you to specify the view of the report people receive in the subscription by setting the parameters in the **Parameters** window. For each parameter, decide whether to use the current value, default value, or dynamic value. For our scenario, sending training completion reports to managers, it makes sense to use the Manager name dynamic parameter and the Employee name dynamic parameter. But there are other scenarios where you might want to use a mix of static and dynamic parameters. For example, if your report had continent and country-region data, you might want to set the continent as South America and use dynamic parameters for the states.
+The **Parameters** window displays all of your report parameters, and you choose which to set dynamically based on a column in the Power BI dataset. Paginated reports allow you to specify the view of the report people receive in the subscription by setting the parameters in the **Parameters** window. For each parameter, decide whether to use the current value, default value, or dynamic value. For our scenario, sending training completion reports to managers, it makes sense to use the Manager name dynamic parameter and the Employee name dynamic parameter. But there are other scenarios where you might want to use a mix of static and dynamic parameters. For example, if your report had continent and country-region data, you might want to set the continent as South America and use dynamic parameters for the countries.
 
 :::image type="content" source="media/dynamic-subscriptions/power-bi-employee-parameter.png" alt-text="Screenshot of the Power BI service showing dynamic parameter options on the Parameters window.":::
 
 - **Current** uses the value from the currently selected active version of the report. To update the current values, re-render the paginated report with different values, open the **Subscribe to report** wizard, and select **Current**.
 - **Default** uses the value set by the report author. For example, if the report author has set expression-based parameters (for example, the default is always today's date), the subscription uses that as the default value. 
-- **Get from data** displays a dropdown of the parameter options for this dataset.  
+- **Get from data** lets you select a column from your dataset to define a different parameter for each recipient.  
 
 ### Set the schedule
 
