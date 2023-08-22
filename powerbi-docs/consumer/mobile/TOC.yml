@@ -31,7 +31,9 @@
   - name: How to
     items: 
     - name: All mobile apps
-      items: 
+      items:
+      - name: "Download samples in the Power BI service"
+        href: mobile-apps-download-samples.md
       - name: "Dashboards for mobile Power BI"
         href: mobile-apps-view-dashboard.md
       - name: "Reports in the mobile apps"
