@@ -6,6 +6,7 @@ ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
+ms.custom: has-azure-ad-ps-ref
 ms.topic: conceptual
 ms.date: 04/23/2019
 LocalizationGroup: Troubleshooting

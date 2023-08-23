@@ -6,6 +6,7 @@ ms.author: v-kurtbuhler
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
+ms.custom: has-azure-ad-ps-ref
 ms.topic: conceptual
 ms.date: 05/03/2023
 ---
