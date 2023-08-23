@@ -22,7 +22,7 @@ LocalizationGroup: Data refresh
 > The following capabilities are deprecated and will no longer be available starting October 31, 2023:
 > - Viewing local workbooks in Power BI workspaces
 >
-> If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](service-excel-workbook-files#Migrating-your-Excel-workbooks).  
+> If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](../service-excel-workbook-files#migrating-your-excel-workbooks).  
 
 In Power BI, Refresh Now and Schedule Refresh is supported for datasets created from Excel workbooks imported from a local drive where Power Query or Power Pivot is used to connect to any of the following data sources and load data into the Excel data model. Power Query is *Get & Transform data* in Excel 2016.
 
