@@ -5042,11 +5042,6 @@
             "redirect_document_id": false
         },     
         {
-            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-222-search-strings-japanese-symbols-dont-work.md",
-            "redirect_url": "/power-bi/troubleshoot/index",
-            "redirect_document_id": false
-        },     
-        {
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-214-excel-desktop-crashes-opening-data-model.md",
             "redirect_url": "/power-bi/troubleshoot/index",
             "redirect_document_id": false
