@@ -13,6 +13,16 @@ LocalizationGroup: Data refresh
 
 # Refresh a dataset created from an Excel workbook on OneDrive or SharePoint Online
 
+> [!IMPORTANT]
+> The following capabilities are deprecated and will no longer be available starting September 29th, 2023:
+> - Upload of local workbooks
+> - Refresh of data models in Excel workbooks
+>
+> The following capabilities are deprecated and will no longer be available starting October 31, 2023:
+> - Viewing local workbooks in Power BI workspaces
+>
+> If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](service-excel-workbook-files#Migrating-your-Excel-workbooks).  
+
 You can import Excel workbooks from your local machine, or from cloud storage such as OneDrive for work or school or SharePoint Online. This article explores the advantages of using cloud storage for your Excel files. For more information about how to import Excel files into Power BI, see [Get data from Excel workbook files](service-excel-workbook-files.md).
 
 ## What are the advantages?
