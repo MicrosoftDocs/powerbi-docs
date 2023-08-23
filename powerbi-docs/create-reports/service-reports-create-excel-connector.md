@@ -28,7 +28,7 @@ In the navigation pane in the Power BI service, you can select theâ€¯**Create**â
      1. Browse your OneDrive and the select the file
      1. Upload the file from your local computer
      > [!NOTE]
-     > If you select to upload your file from your local computer, we will automatically upload your file to your OneDrive for business.
+     > If you select to upload your file from your local computer, we will automatically upload your file to your OneDrive for business. To see where this file is located, select the three dots to open the context menu then select **Open file location**.
 
     :::image type="content" source="media/service-reports-create-excel-connector/connect-to-data-source.png" alt-text="Screenshot of the Power BI service, uploading an excel file as the data source.":::
 
