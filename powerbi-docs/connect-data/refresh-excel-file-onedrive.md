@@ -59,7 +59,6 @@ Power BI supports the **Refresh Now** and **Schedule Refresh** options for datas
 If you have both a personal OneDrive and OneDrive for work or school, it’s recommended you keep files you want to import in OneDrive for work or school. Here’s why: You likely use two different accounts to sign in and access your files.
 
 In Power BI, connecting to OneDrive for work or school is typically seamless because you likely use the same account to sign in to Power BI as OneDrive for work or school. But with personal OneDrive, it's more common to sign in with a different [Microsoft account](https://account.microsoft.com).
->>>>>>> 837e862abf2aaf7c124dd4017ed51c5416d7e5b2
 
 When you sign in to OneDrive for work or school with your Microsoft account, select **Keep me signed in**. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI.  
 
