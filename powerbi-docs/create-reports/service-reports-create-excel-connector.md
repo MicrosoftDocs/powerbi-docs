@@ -1,14 +1,14 @@
 ---
 title: 'Create reports from Excel files in the Power BI service'
 description: Learn how to create Power BI reports from Excel files in the Power BI service without using desktop or a workspace.
-author: maggiesMSFT
-ms.author: maggies
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Create report from Excel file without a workspace
 ms.topic: how-to
-ms.date: 08/07/2023
+ms.date: 08/23/2023
 LocalizationGroup: Reports
 ---
 # Create reports automatically from Excel files in the Power BI service (Preview)
@@ -28,7 +28,7 @@ In the navigation pane in the Power BI service, you can select theâ€¯**Create**â
      1. Browse your OneDrive and the select the file
      1. Upload the file from your local computer
      > [!NOTE]
-     > If you select to upload your file from your local computer, we will automatically upload your file to your OneDrive for business
+     > If you select to upload your file from your local computer, we will automatically upload your file to your OneDrive for business.
 
     :::image type="content" source="media/service-reports-create-excel-connector/connect-to-data-source.png" alt-text="Screenshot of the Power BI service, uploading an excel file as the data source.":::
 
