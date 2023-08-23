@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/29/2022
+ms.date: 08/23/2023
 LocalizationGroup: Data refresh
 ---
 
