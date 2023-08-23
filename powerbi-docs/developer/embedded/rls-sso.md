@@ -74,6 +74,8 @@ See the following examples for generating embed tokens for different scenarios.
 
 #### [Power BI report with SSO](#tab/Power-BI-report-with-SSO)
 
+<!--
+
 ```json
 {
   "datasets": [
@@ -104,6 +106,36 @@ See the following examples for generating embed tokens for different scenarios.
   ]
 }
 ```
+-->
+
+```json
+{
+  "datasets": [
+    {
+      "id": "66ba5010-xxxx-xxxx-xxxx-f2bf0125abeb",
+    }
+  ],
+  "reports": [
+    {
+      "allowEdit": false,
+      "id": "9e6da541-xxxx-xxxx-xxxx-7d9442827cce"
+    }
+  ],
+  "datasourceIdentities": [
+    {
+      "identityBlob": "eyJ…",
+      "datasources": [
+        {
+          "datasourceType": "Sql",
+          "connectionDetails": {
+            "server": "YourServerName.database.windows.net",
+            "database": "YourDataBaseName"
+          }
+        }
+      ]
+    }
+  ]
+}
 
 #### [Paginated report with SSO](#tab/Paginated-report-with-SSO)
 
@@ -134,12 +166,55 @@ See the following examples for generating embed tokens for different scenarios.
 
 #### [Power BI report with SSO and RLS on the dataset](#tab/report-with-sso-and-rls)
 
+<!--
 ```json
 {
   "datasets": [
     {
       "id": "fff1a505-xxxx-xxxx-xxxx-e69f81e5b974",
       "xmlaPermissions": "ReadOnly"
+    }
+  ],
+  "reports": [
+    {
+      "allowEdit": false,
+      "id": "10ce71df-xxxx-xxxx-xxxx-814a916b700d"
+    }
+  ],
+  "identities": [
+    {
+      "username": "YourUsername",
+      "datasets": [
+        "fff1a505-xxxx-xxxx-xxxx-e69f81e5b974"
+      ],
+      "roles": [
+        "YourRole"
+      ]
+    }
+  ],
+  "datasourceIdentities": [
+    {
+      "identityBlob": "eyJ…",
+      "datasources": [
+        {
+          "datasourceType": "Sql",
+          "connectionDetails": {
+            "server": "YourServerName.database.windows.net",
+            "database": "YourDataBaseName"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+-->
+
+```json
+{
+  "datasets": [
+    {
+      "id": "fff1a505-xxxx-xxxx-xxxx-e69f81e5b974",
     }
   ],
   "reports": [
