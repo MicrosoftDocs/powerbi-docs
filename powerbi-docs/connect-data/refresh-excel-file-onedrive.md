@@ -21,7 +21,7 @@ LocalizationGroup: Data refresh
 > The following capabilities are deprecated and will no longer be available starting October 31, 2023:
 > - Viewing local workbooks in Power BI workspaces
 >
-> If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](service-excel-workbook-files#Migrating-your-Excel-workbooks).  
+> If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](service-excel-workbook-files#migrating-your-excel-workbooks).  
 
 You can import Excel workbooks from your local machine, or from cloud storage such as OneDrive for work or school or SharePoint Online. This article explores the advantages of using cloud storage for your Excel files. For more information about how to import Excel files into Power BI, see [Get data from Excel workbook files](service-excel-workbook-files.md).
 
