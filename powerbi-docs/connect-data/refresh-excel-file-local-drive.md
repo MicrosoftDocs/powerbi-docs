@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/20/2023
+ms.date: 08/23/2023
 LocalizationGroup: Data refresh
 ---
 # Refresh a dataset created from an Excel workbook on a local drive
