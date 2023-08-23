@@ -73,7 +73,7 @@ When you select **Insert PivotTable**, a blank PivotTable is added to a new work
 
 When you select **Insert Table**, the **Create Table** dialog opens, where you can use the Data, Build, and Filters panes to design the table you'd like. Use the **Insert Table** button to add the table to the Excel sheet.  
 
-::image type="content" source="media/service-connect-excel-power-bi-datasets/create-table-insert-table.png" alt-text="Screenshot showing the Create Table dialog." lightbox="media/service-connect-excel-power-bi-datasets/create-table-insert-table.png":::
+:::image type="content" source="media/service-connect-power-bi-datasets-excel/create-table-insert-table.png" alt-text="Screenshot showing the Create Table dialog." lightbox="media/service-connect-power-bi-datasets-excel/create-table-insert-table.png":::
 
 
 ## Considerations and limitations 
