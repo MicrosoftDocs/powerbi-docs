@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 07/14/2023
+ms.date: 08/22/2023
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## July 2023 Update (2.119.323.0)
+## August 2023 Update (2.120.731.0)
 
-July brings us celebrations that look like fireworks for the Power BI Desktop and the Power BI service, enabling you to create stunning visuals and revolutionary data models in your march toward business intelligence independence. 
+August is full of sunshine, dry grass, bored summer students and a fine collection of updates for Power BI Desktop and the Power BI service. 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -41,45 +41,46 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 
 The following updates are new to Power BI Desktop this month:
 
+
 ### Reporting
-* Smoothed and leader lines (updates)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2023-feature-summary/#smoothed-and-leader-lines) 
-* On-Object interaction (updates)  [[video]](https://youtu.be/berUCt4EHIk?t=82)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2023-feature-summary/#post-24176-_Toc1573847150) 
+* New switcher layout   [[video]](https://youtu.be/oVT0JrOLwS8?t=65)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989123) 
+* New bubble range scaling setting  [[video]](https://youtu.be/oVT0JrOLwS8?t=78)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989124) 
+* On-object interactions (updates) (Preview) [[video]](https://youtu.be/oVT0JrOLwS8?t=154)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989125) 
 
 ### Modeling
-* Edit your data model in the Power BI service (updates)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2023-feature-summary/#post-24176-_Toc2087254483) [[article]](../transform-model/service-edit-data-models.md)
-* Relationship validation   [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2023-feature-summary/#post-24176-_Toc373590927) 
+* Updates to ORDERBY function  [[video]](https://youtu.be/oVT0JrOLwS8?t=237)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989129) 
+
 
 ### Data connectivity
-* Many connector updates  [[video]](https://youtu.be/berUCt4EHIk?t=188)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2023-feature-summary/#post-24176-_Toc1095178652) 
+* New modern data connectivity and discovery experience in dataflows  [[video]](https://youtu.be/oVT0JrOLwS8?t=295)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989132) 
+* Lakehouses (connector update)  [[video]](https://youtu.be/oVT0JrOLwS8?t=337)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989133) 
 
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
 
 ### Visuals
-* Many new and updated visuals  [[video]](https://youtu.be/berUCt4EHIk?t=498) [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2023-feature-summary/#post-24176-_Toc1345279724)
+* Many new and updated visuals  [[video]](https://youtu.be/oVT0JrOLwS8?t=630) [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989141)
 
 
 # [Power BI service](#tab/powerbi-service)
 
 The following updates are new to the Power BI service this month:
 
-* Dataset details page revamp  [[video]](https://youtu.be/berUCt4EHIk?t=307)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2023-feature-summary/#post-24176-_Toc1675616134) 
+* XMLA write support for Direct Lake datasets  [[video]](https://youtu.be/oVT0JrOLwS8?t=361)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989135) 
+* Automatic replica synchronization for dataset scale-out  [[video]](https://youtu.be/oVT0JrOLwS8?t=443)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989136) 
 
 
 ---
 
-### Others
-* WebView2 - generally available [[video]](https://youtu.be/berUCt4EHIk?t=663)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2023-feature-summary/#post-24176-_Toc277520133)
 
-
-For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-july-2023-feature-summary/).
+For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/).
 
 
 ### Power BI monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post.
 
-> [!VIDEO https://www.youtube.com/embed/berUCt4EHIk]
+> [!VIDEO https://www.youtube.com/embed/oVT0JrOLwS8]
 
 > [!NOTE]
 > The video might use earlier versions of Power BI Desktop or the Power BI service.

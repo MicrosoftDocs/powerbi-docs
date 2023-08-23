@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 02/24/2023
+ms.date: 08/20/2023
 
 ---
 
@@ -169,6 +169,8 @@ Follow the steps in the [embed content for your organization](embed-sample-for-y
 Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organization.md#step-3---create-and-publish-a-power-bi-report) and work with the paginated report you uploaded, instead of the sample report suggested in the tutorial.
 
 ---
+
+For more information on embedding tokens, see [Embedded analytics access tokens](embed-tokens.md).
 
 ## Considerations and limitations
 

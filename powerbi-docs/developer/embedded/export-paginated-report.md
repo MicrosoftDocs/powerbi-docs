@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 06/06/2023
+ms.date: 08/23/2023
 ---
 
 # Export paginated report to file
@@ -32,7 +32,7 @@ The `exportToFile` API enables exporting a Power BI paginated report by using a 
 
 ## Usage examples
 
-You can use the export feature in a variety of ways. Here are a couple of examples:
+You can use the export feature in various ways. Here are a couple of examples:
 
 * **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx. When it's complete, the user can receive the file as a download. Using report parameters and format settings you can export the report in a specific state, including filtered data, custom page sizes, and other format-specific settings. As the API is asynchronous, it may take some time for the file to be available.
 
@@ -42,21 +42,22 @@ You can use the export feature in a variety of ways. Here are a couple of exampl
 
 ### Rendering events
 
-To make sure the export doesn't begin before the visual finishes rendering use the ["Rendering" events API](../visuals/event-service.md) and only begin the export when rendering is finished.
+To make sure the export doesn't begin before the visual finishes rendering, use the ["Rendering" events API](../visuals/event-service.md) and only begin the export when rendering is finished.
 
 ### Polling
 
 The API is asynchronous. When the [exportToFile](/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
-When the export is complete, the polling API call returns a [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL will be available for 24 hours.
-[!Note]
-Exporting a Power BI report to file using the exportToFile API, isn't supported for Power BI Pro licenses.
+When the export is complete, the polling API call returns a [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL is available for 24 hours.
+
+>[!Note]
+>Exporting a Power BI report to file using the exportToFile API, isn't supported for Power BI Pro licenses.
 
 ## Supported features
 
 ### Format settings
 
-Specify a variety of format settings for each file format. The supported properties and values are equivalent to [Device Info parameters](../../paginated-reports/report-builder-url-parameters.md#report-commands-rdl) for paginated report URL parameters.
+Specify various format settings for each file format. The supported properties and values are equivalent to [Device Info parameters](../../paginated-reports/report-builder-url-parameters.md#report-commands-rdl) for paginated report URL parameters.
 
 Here are two examples. The first is for exporting the first four pages of a report using the report page size to a .pptx file. The second example is for exporting the third page of a report to a .jpeg file.
 
@@ -172,7 +173,7 @@ Here's an example for supplying an effective identity (user name) with an access
 
 The `exportToFile` API supports concurrent export job requests. The maximum number of concurrent report pages depends on the type and number of SKUs you have. The maximum number of [concurrent paginated report render requests](../../paginated-reports/paginated-capacity-planning.md#concurrent-requests), is 500. To avoid exceeding the limit and getting a *Too Many Requests (429)* error, either distribute the load over time or across capacities.
 
-when using [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml), the `exportToFile` API allows just *one* request in a five-minute window. Multiple requests within a five-minute window will result in a *Too Many Requests* (429) error.
+With [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml), the `exportToFile` API allows just *one* request in a five-minute window. Multiple requests within the five-minute window result in a *Too Many Requests* (429) error.
 
 ## Code examples
 
@@ -344,22 +345,20 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 * Exporting a paginated report that has a Power BI dataset as its data source, isn't supported in the following cases:
 
-  * The caller is a service principal profile.
+  * The caller is a [service principal profile](./embed-multi-tenancy.md).
   * One of the dataset's data sources is configured with single sign-on (SSO) enabled and an effective identity was provided.
   * The Power BI dataset has DirectQuery to Azure Analysis Services or to another Power BI dataset, and an effective identity was provided.
 
 * Exporting a paginated report that has Azure Analysis Services data source configured with single sign-on (SSO) enabled, isn't supported in the following cases:
 
-  * The caller is a service principal profile.
+  * The caller is a [service principal profile](./embed-multi-tenancy.md).
   * The caller is a master user and an effective identity was provided.
 
-* When exporting a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
+* To export a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
 
-* Export of a report is limited to 60 minutes, which matches the life of the user access token.
+* Export of a report is limited to 60 minutes, which matches the life of the user access token. If you get a timeout error past the 60-minute mark when exporting large amounts of data, consider reducing the amount of data using appropriate filters.
 
-* If you get a timeout error past the 60-minute mark while exporting large amounts of data, consider reducing the amount of data using appropriate filters.
-
-* The file share URL hyperlink (file share /UNC path) does not works when exporting a published paginated report on Power BI service online.  
+* The file share URL hyperlink (file share /UNC path) doesn't works when exporting a published paginated report on Power BI service online.  
 
 ## Next steps
 

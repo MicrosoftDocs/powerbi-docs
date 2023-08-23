@@ -6,6 +6,7 @@ ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
+ms.custom: has-azure-ad-ps-ref
 ms.topic: conceptual
 ms.date: 07/23/2023
 LocalizationGroup: Administration
