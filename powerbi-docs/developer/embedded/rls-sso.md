@@ -136,6 +136,7 @@ See the following examples for generating embed tokens for different scenarios.
     }
   ]
 }
+```
 
 #### [Paginated report with SSO](#tab/Paginated-report-with-SSO)
 
