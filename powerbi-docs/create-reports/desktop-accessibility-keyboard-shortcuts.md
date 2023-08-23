@@ -163,10 +163,40 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Show or hide "Read more" tooltips | **Ctrl + I** |
 
 ## Enter data
-
 | To do this action           | Press                |
 | :------------------- | :------------------- |
 | Exit editable grid | **Ctrl + Tab** |
+
+## Model view navigation
+
+| To do this action           | Press                |
+| :------------------- | :------------------- |
+| Move focus to first card in relationship diagram | **Tab** |
+| Move focus to the next card | **Tab** / **Right arrow key** / **Down arrow key** |
+| Move focus to the previous card | **Shift + Tab** / **Left arrow key** / **Up arrow key** |
+
+## On card in model view
+
+| To do this action           | Press                |
+| :------------------- | :------------------- |
+| Move focus to relationship line connected to card | **Ctrl + Alt + R** |
+| Move focus to first field list item on the card | **Enter** |
+| Move focus to next item within the card | **Tab** |
+| Move focus back to entire card | **Esc** |
+| Open context menu | **Shift + F10** |
+| Move focus to the next field list item | **Right arrow key** / **Down arrow key** |
+| Move focus to the previous field list item | **Up arrow key** / **Left arrow key** |
+
+## On relationship in model view
+
+| To do this action           | Press                |
+| :------------------- | :------------------- |
+| Move focus to next card connected to relationship line | **Ctrl + Alt + R** |
+| Move focus to previously focused card connected to relationship line | **Shift + Alt + R** |
+| Open relationship properties pane | **Enter** |
+| Move focus to next relationship line connected to card | **Tab** / **Right arrow key** / **Down arrow key** |
+| Move focus to previous relationship line connected to card | **Shift + Tab** / **Left arrow key** / **Up arrow key** |
+| Select focused relationship | **Enter** |
 
 ## Considerations and limitations
 
