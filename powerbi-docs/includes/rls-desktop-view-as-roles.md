@@ -20,7 +20,7 @@ After you've created your roles, test the results of the roles within Power BI D
 
    It's best to supply the User Principal Name (UPN) because that's what the Power BI service and Power BI Report Server use.
 
-   Within Power BI Desktop, **Other user** displays different results only if you're using dynamic security based on your DAX expressions.
+   Within Power BI Desktop, **Other user** displays different results only if you're using dynamic security based on your DAX expressions. In this case, you need to include the username as well as the role.
 
 1. Select **OK**.
 

@@ -25,7 +25,7 @@ In lineage view, you see the lineage relationships between all the artifacts in 
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.microsoft.com/videoplayer/embed/RE4HmJG" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HmJG]
 
 ## Explore lineage view
 

@@ -28,7 +28,7 @@ These benefits can be grouped into the following categories:
 
 <!--    Watch this video to see it in action.
 
-    > [!VIDEO <iframe width="560" height="315" src="https://www.microsoft.com/videoplayer/embed/RWyUE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyUE]
 -->
 * **Improved look, feel, and organization** - Icons and functionality in the updated Power BI Desktop ribbon are aligned to the look, feel, and organization of ribbon items found in Office applications.
 

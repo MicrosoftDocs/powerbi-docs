@@ -205,23 +205,7 @@ The following scenarios don't support opening the data model for a dataset in th
 * Datasets that haven't yet been upgraded to enhanced metadata format. You can upgrade to enhanced metadata format by opening the corresponding pbix in Desktop and republishing. 
 * Datasets that have automatic aggregations configured.
 * Datasets that have a live connection.
-* Not all datasets in Pro workspaces are currently supported in the following regions: 
-    * Brazil South
-    * Canada Central
-    * Central US
-    * East US
-    * East US 2
-    * India Central
-    * Japan East
-    * North Central US
-    * North Europe
-    * South Africa North
-    * South Central US
-    * Southeast Asia
-    * UAE North
-    * UK South
-    * West US
-    * West US 2
+* Not all datasets in Pro workspaces are currently supported in UAE North.
 
 To see which limitation is preventing you from opening your data model, hover over the **Open data model** button in the dataset details page. This displays a tooltip indicating which limitation is causing the **Open data model** button to be disabled.
 
@@ -247,7 +231,9 @@ There are still many functional gaps between the model view in Power BI desktop 
 * Autodetect relationships
 * Q&A setup and configuration including editing synonyms
 * Classifying sensitivity of your report
-*  External tools integration
+* External tools integration
+* When modifying your data model within the Service, creating a relationship between DirectQuery tables from the same Power BI dataset or Azure Analysis Services instance will not be properly prevented. Like Desktop, this scenario is not supported, but no error will be generated when you try to perform this action.
+* When modifying your data model within the Service, changing the name of data fields will not automatically update in existing visuals in downstream artifacts that depend on that dataset.
 
 ### Accessibility
 Full accessibility isn’t currently supported for data model editing in the Power BI service.

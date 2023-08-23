@@ -5,6 +5,7 @@ author: mohaali
 ms.author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
+ms.custom: build-2023, build-2023-dataai
 ms.topic: conceptual
 ms.date: 01/05/2023
 ---

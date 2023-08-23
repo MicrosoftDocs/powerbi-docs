@@ -18,9 +18,6 @@ LocalizationGroup: Premium
 
 Dataset scale-out helps Power BI deliver fast performance while your reports and dashboards are consumed by a large audience. Dataset scale-out uses your Premium capacity to host one or more read-only *replicas* of your *primary* dataset. By increasing throughput, the read-only replicas ensure performance doesn’t slow down when multiple users submit queries at the same time.
 
-> [!NOTE]
-> During preview, dataset scale-out creates only one read-only replica. When generally available, the maximum number of read-only replicas is determined by your Premium capacity.
-
 When Power BI creates read-only replicas, it separates them from the primary read-write dataset. The read-only replicas serve Power BI report and dashboard queries, and the read-write dataset is used when write and refresh operations are performed. During write and refresh operations, the read-only replicas continue to serve your reports and dashboard queries without being disrupted. By default, the read-only and read-write datasets are automatically synchronized so that the read-only replicas are kept up-to-date. However, you can disable automatic sync, and choose to synchronize manually at the command line or by script.
 
 The following table shows the required synchronization for each refresh method when Power BI dataset scale-out is *enabled*, and automatic synchronization is *disabled*:

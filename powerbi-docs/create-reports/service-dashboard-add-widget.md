@@ -23,7 +23,7 @@ Watch Amanda add tiles to a dashboard.
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/e2PD8m1Q0vU]
 
 ## Add an image, video, or other tile
 You can add an image, text box, video, streaming data, or web code directly to your dashboard.
@@ -119,7 +119,7 @@ You can use PubNub to add streaming data, such as Twitter feeds or sensor data, 
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/kOuINwgkEkQ]
 
 1. From the **Add tile** window, select **Custom Streaming Data** > **Next**.
 2. Select **Add streaming dataset**.

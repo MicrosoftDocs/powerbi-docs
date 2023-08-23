@@ -75,8 +75,6 @@ else
 
 To enable dataset scale-out, set `maxReadOnlyReplicas` to `-1`, or any non-0 value. A value of `-1` allows Power BI to create as many read-only replicas as your Power BI capacity supports. You can also explicitly set the replica count to a value lower than that of the capacity maximum. Setting `maxReadOnlyReplicas` to `-1` is recommended.
 
-During **PREVIEW** dataset scale-out is limited to a single read-only replica.
-
 ```powershell
 ###
 # Enable scale-out

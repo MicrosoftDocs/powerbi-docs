@@ -32,7 +32,7 @@ In the following video, watch Will view related content for a dashboard. Then fo
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M#t=3m05s" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/B2vd4MQrz4M#t=3m05s]
 
 With a dashboard or report open, select **More options** (...) in the menu bar, and choose **See related content** from the dropdown.
 
