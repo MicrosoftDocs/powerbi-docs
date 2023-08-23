@@ -205,7 +205,7 @@ You can use PowerShell to call the API as shown in the example below:
 Invoke-PowerBIRestMethod -Url "https://api.powerbi.com/v1.0/myorg/admin/workbooks" -Method GET
 ```
 
-To use PowerShell, first install the required **MicrosoftPowerBIMgmt** module. See [Power BI Cmdlets reference](../../powershell/power-bi/overview) for details. You will need to call **Login-PowerBIServiceAccount** commandlet before calling **Invoke-PowerBIRestMethod**.
+To use PowerShell, first install the required **MicrosoftPowerBIMgmt** module. See [Power BI Cmdlets reference](https://learn.microsoft.com/powershell/power-bi/overview) for details. You will need to call **Login-PowerBIServiceAccount** commandlet before calling **Invoke-PowerBIRestMethod**.
 
 
 ## Troubleshooting and limitations
