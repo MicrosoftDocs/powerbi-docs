@@ -44,7 +44,7 @@ To connect to live Power BI datasets from inside Excel, use one of these two opt
 
 After you've selected **From Power BI** using either of these options, a pane opens on the right of the screen that shows Power BI datasets you have access to.
 
-:::image type="content" source="media/service-connect-excel-power-bi-datasets/excel-power-bi-dataset-list.png" alt-text="Screenshot showing list of Power BI dataset in Excel.":::
+:::image type="content" source="media/service-connect-power-bi-datasets-excel/excel-datasets-pane.png" alt-text="Screenshot showing list of Power BI dataset in Excel.":::
 
 Each dataset card shows the following information:
 
