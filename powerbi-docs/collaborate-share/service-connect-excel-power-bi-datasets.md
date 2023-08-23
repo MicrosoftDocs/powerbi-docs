@@ -3,11 +3,11 @@ title: Power BI dataset experience in Excel
 description: In Excel Desktop or Excel for the web, you can discover all the Power BI datasets that you have access to. You can explore that data in Excel spreadsheets using PivotTables and other Excel capabilities.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ikedeagu
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 06/06/2023
+ms.date: 08/22/2023
 LocalizationGroup: Share your work
 ---
 # Power BI dataset experience in Excel
@@ -63,13 +63,18 @@ Near the search bar in the pane, there's also a redirect web link to the Power B
 
 To start exploring your Power BI data in Excel, select one of the pre-loaded datasets in the pane or find additional datasets by typing your search parameters in the search bar and pressing Enter on your keyboard.
 
-When you find the dataset you want, select **Insert PivotTable** in the card. A blank PivotTable is added to a new worksheet in your Excel workbook.
+When you find the dataset you want, select **Insert PivotTable** or **Insert Table** in the card. 
 
-:::image type="content" source="media/service-connect-excel-power-bi-datasets/insert-pivottable-button.png" alt-text="Screenshot showing a dataset card and Insert PivotTable.":::
+:::image type="content" source="media/service-connect-excel-power-bi-datasets/insert-pivottable-inserttable-button.png" alt-text="Screenshot showing a dataset card and Insert PivotTable and Insert Table buttons.":::
 
-In **PivotTable Fields**, you can see all the tables and measures from your Power BI dataset. You can start building your report in Excel.
+When you select **Insert PivotTable**, a blank PivotTable is added to a new worksheet in your Excel workbook. In **PivotTable Fields**, you can see all the tables and measures from your Power BI dataset. You can start building your report in Excel.
 
 :::image type="content" source="media/service-connect-excel-power-bi-datasets/pivottable-fields-excel.png" alt-text="Screenshot showing the PivotTable Fields list in Excel." lightbox="media/service-connect-excel-power-bi-datasets/pivottable-fields-excel.png":::
+
+When you select **Insert Table**, the **Create Table** dialog opens, where you can use the Data, Build, and Filters panes to design the table you'd like. Use the **Insert Table** button to add the table to the Excel sheet.  
+
+::image type="content" source="media/service-connect-excel-power-bi-datasets/create-table-insert-table.png" alt-text="Screenshot showing the Create Table dialog." lightbox="media/service-connect-excel-power-bi-datasets/create-table-insert-table.png":::
+
 
 ## Considerations and limitations 
 
