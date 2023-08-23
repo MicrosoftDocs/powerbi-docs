@@ -14,9 +14,9 @@ LocalizationGroup: Share your work
 
 In Excel Desktop or Excel for the web, you can discover all the Power BI datasets that you have access to. You can explore that data in Excel spreadsheets using PivotTables and other Excel capabilities. With the Power BI dataset experience in Excel, you can:  
 
-- Easily search for your Power BI data in Excel and analyze that data using PivotTables.
+- Easily search for your Power BI data in Excel and analyze that data using PivotTables and connected tables.
 - Navigate to the Data hub in the Power BI service (`https://app.powerbi.com`), where you can discover other data artifacts (including Power BI datamarts) and trusted data in your organization.
-- Derive additional insights on the dataset you are exploring in Excel by viewing related Power BI reports.
+- Get additional insights on the dataset you are exploring in Excel by viewing related Power BI reports.
 
 ## Requirements 
 
