@@ -8,7 +8,7 @@ ms.reviewer: painbar
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/17/2023
+ms.date: 08/23/2023
 LocalizationGroup: Administration
 ---
 
