@@ -90,16 +90,16 @@
           href: service-interact-quick-report.md
         - name: Create quick reports in the service
           href: service-quick-create-report.md
-        - name: Create a report from Excel in the service using a workspace
+        - name: Manually build dataset create a report in the service
           href: service-report-create-new.md
-        - name: Create a report from Excel directly in the service
-          href: service-reports-create-excel-connector.md
         - name: Create a report quickly from a SharePoint list
           href: service-quick-create-sharepoint-list.md
         - name: Visualize data quickly from Power Apps and Dynamics 365 apps
           href: dynamics-quick-create-report.md
         - name: Create a quick report in Jupyter
           href: jupyter-quick-report.md
+    - name: Create a report from Excel automatically in the service
+      href: service-reports-create-excel-connector.md
     - name: Enable automatic page refresh
       href: desktop-automatic-page-refresh.md
     - name: Examine report elements with Performance Analyzer

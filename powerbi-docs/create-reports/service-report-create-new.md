@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 04/03/2023
 LocalizationGroup: Reports
 ---
-# Create a report from an Excel file in the Power BI service workspace
+# Manually build a dataset to create report in the Power BI service 
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
