@@ -27,7 +27,7 @@
       href: service-troubleshoot-sharing.md
     - name: "Subscribe to reports and dashboards"
       href: end-user-subscribe.md
-    - name: "Create dynamic per-user subscriptions (preview)"
+    - name: "Create dynamic per recipient subscriptions (preview)"
       href:  dynamic-subscriptions.md
     - name: "Troubleshoot creating and using subscriptions"  
       href: service-troubleshoot-subscribe.yml
