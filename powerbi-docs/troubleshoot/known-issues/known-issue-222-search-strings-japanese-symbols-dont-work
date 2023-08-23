@@ -1,6 +1,6 @@
 ---
 title: Known issue - Search strings that include Japanese symbols don't return matches
-description: A known issue is posted where you may see unexpected results when the search string contains Japanese symbols
+description: A known issue is posted where you may see unexpected results when the search string contains Japanese symbols.
 author: mihart
 ms.author: mihart
 ms.topic: troubleshooting  
