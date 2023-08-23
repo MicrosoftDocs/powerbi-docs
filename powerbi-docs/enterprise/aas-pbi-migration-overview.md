@@ -101,7 +101,13 @@ The following applications connecting to a migrated dataset through redirection 
 
 Server redirection for a migration can be enabled by using an On/Off setting. When you enable server redirection, the Azure Analysis Services server must exist and can't be paused. The current user must be both server administrator and workspace administrator.
 
-When Redirection status for the migration shows Server Redirection Enabled, you can then pause your server in the Azure portal or by using the Azure Analysis Services REST API. Client applications, tools, and processes are redirected to the dataset in Power BI. You aren't billed while your server is paused. Deleting servers with server redirect is currently not supported.
+When Redirection status for the migration shows Server Redirection Enabled, you can then pause your server in the Azure portal or by using the Azure Analysis Services REST API. Client applications, tools, and processes are redirected to the dataset in Power BI. You aren't billed while your server is paused. Deleting servers with server redirect is currently not supported. To learn more, see [Enable redirection](#enable-redirection) later in this article.
+
+### Rebind
+
+Unlike server redirection, which redirects XMLA endpoint-based client tools to the new dataset in Power BI, *rebind* redirects live connect reports in the Power BI service to use the new dataset in Power BI.
+
+Like server redirection, it's not something done for you automatically as part of the migration. It's something you have control over after your migration has completed. You can enable rebind, check the status of a rebind, or undo the rebind and revert reports back to querying model data in Azure Analysis Services. To learn more, see [Enable rebind](#enable-rebind) later in this article.
 
 ## Important considerations
 
@@ -178,6 +184,18 @@ The **Server Redirection** flyout shows the status of redirection.
 :::image type="content" source="media/aas-pbi-migration-overview/dataset-migration-redirection-status-flyout.png" alt-text="Redirection status flyout.":::
 
 To disable server redirection, on the **Azure Analysis Services to Power BI Premium** page, under **All migrations**, simply move the **Server Redirection Enabled** slider to Off.
+
+#### Enable rebind
+
+If you have reports in the Power BI service that connected to and queried your data model in Azure Analysis Services, after your migration has successfully completed, you can then rebind reports in the Power BI service to query the dataset in Power BI.
+
+To rebind reports, on the **Azure Analysis Services to Power BI Premium** page, under **All migrations** > **Azure Analysis Services server**, select your server migration. Then, on the **Migration details** page, for your newly migrated dataset, select **Rebind reports**.
+
+:::image type="content" source="media/aas-pbi-migration-overview/dataset-migration-details-rebind.png" alt-text="Migration server connection":::
+
+The rebind operation can take a few minutes to complete. To check the status of your rebind, select **Rebind status**.
+
+To undo the rebind and revert reports back to querying model data in Azure Analysis Services, select **Undo rebind**.
 
 #### Pause server
 
