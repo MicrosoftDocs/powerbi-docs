@@ -63,7 +63,7 @@ Near the search bar in the pane, there's also a redirect web link to the Power B
 
 To start exploring your Power BI data in Excel, select one of the pre-loaded datasets in the pane or find additional datasets by typing your search parameters in the search bar and pressing Enter on your keyboard.
 
-When you find the dataset you want, select **Insert PivotTable** or **Insert Table** in the card. 
+When you find the dataset you want, select **Insert PivotTable** or **Insert Table** in the card. The **Insert Table** option is available in Excel Desktop.
 
 :::image type="content" source="media/service-connect-excel-power-bi-datasets/insert-pivottable-inserttable-button.png" alt-text="Screenshot showing a dataset card and Insert PivotTable and Insert Table buttons.":::
 
