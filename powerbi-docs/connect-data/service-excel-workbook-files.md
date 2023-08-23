@@ -28,7 +28,7 @@ Power BI supports importing or connecting to workbooks created in Excel 2007 and
 > The following capabilities are deprecated and will no longer be available starting October 31, 2023:
 > - Viewing local workbooks in Power BI workspaces
 >
-> If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](#Migrating-your-Excel-workbooks).  
+> If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](#migrating-your-excel-workbooks).  
 
 ### Workbooks with ranges or tables of data
 
