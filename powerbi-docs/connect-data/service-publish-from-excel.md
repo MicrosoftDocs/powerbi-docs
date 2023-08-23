@@ -19,7 +19,7 @@ LocalizationGroup: Data from files
 > The following capabilities are deprecated and will no longer be available starting October 31, 2023:
 > - Viewing local workbooks in Power BI workspaces
 >
-> If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](service-excel-workbook-files#Migrating-your-Excel-workbooks).  
+> If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](service-excel-workbook-files.md#migrating-your-excel-workbooks).  
 
 With Microsoft Excel 2016 and later, you can publish your Excel workbooks directly to your [Power BI](https://powerbi.microsoft.com) workspace. In Power BI, you can create highly interactive reports and dashboards based on your workbook data. You can then share your insights with others in your organization.
 
