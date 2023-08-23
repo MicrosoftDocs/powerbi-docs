@@ -10,7 +10,7 @@ ms.author: maggies
 ms.custom: include file
 ---
 
-License requirements for Power BI paginated reports (.rdl files) are the same as for [Power BI reports](license-capabilities.md) (.pbix files).
+License requirements for Power BI paginated reports (.rdl files) are the same as for [Power BI reports](../fundamentals/service-features-license-type.md) (.pbix files).
 
 - You don't need a license to [download Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center for free.
 - With a free license, you can publish paginated reports to My Workspace in the Power BI service. For more information, see [Feature availability for users with free licenses in the Power BI service](../consumer/end-user-features.md#licenses).
