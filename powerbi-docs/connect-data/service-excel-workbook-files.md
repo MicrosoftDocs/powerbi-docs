@@ -3,11 +3,11 @@ title: Get data from Excel workbook files
 description: Learn how to import or upload data from Excel workbook files into Power BI.
 author: davidiseminger
 ms.author: davidi
-ms.reviewer: ''
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/07/2023
+ms.date: 08/23/2023
 ms.custom: video-l2wy4XgQIu0
 LocalizationGroup: Data from files
 ---
@@ -19,6 +19,16 @@ Microsoft Excel is one of the most widely used business applications and one of 
 ## Supported workbooks
 
 Power BI supports importing or connecting to workbooks created in Excel 2007 and later. Some features that this article describes are available only in later versions of Excel. Workbooks must be in the .xlsx or .xlsm file type and be smaller than 1 GB.
+
+> [!IMPORTANT]
+> The following capabilities are deprecated and will no longer be available starting September 29th, 2023:
+> - Upload of local workbooks
+> - Refresh of data models in Excel workbooks
+>
+> The following capabilities are deprecated and will no longer be available starting October 31, 2023:
+> - Viewing local workbooks in Power BI workspaces
+>
+> If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](#Migrating-your-Excel-workbooks).  
 
 ### Workbooks with ranges or tables of data
 
@@ -146,6 +156,57 @@ Using the Excel **Publish to Power BI** feature is effectively the same as using
 
 > [!NOTE]
 > If you upload an Excel workbook that's connected to an on-premises SQL Server Analysis Services (SSAS) cube, you can't refresh the underlying data model in the Power BI service.
+
+## Migrating your Excel workbooks
+
+For local Excel workbooks uploaded to a Power BI workspace, use the **Download Excel file** option to download the workbook. Then save it to OneDrive for Business or a SharePoint Document library (ODSP). You can then import the workbook from ODSP to the workspace again.
+
+![Screenshot that shows the download Excel file option for local workbooks.](media/service-excel-workbook-files/download-local-workbook.png)  
+
+To refresh data in Excel data models, you'll need to publish the data model as a Power BI dataset. We recomment using the Power BI Desktop to import the model because it upgrades your data model to the latest version. This gives you the best future experience. Use the **Import** from **Power Query, Power Pivot, Power View** option on Power BI Desktop's **File** menu. 
+
+To build new workbooks connected to a semantic data model in your Excel workbook, you should first publish the data model as a Power BI dataset. Then in Excel use the **From Power BI (Microsoft)** option to connect your workbook to the dataset. This option is available in the **Data ribbon**, under **Get Data** in the **From Power Platform** menu.
+For cases where you include a workbook in a Power BI organizational app, remember to republish the app with the new items.
+
+To learn which workbooks can be affeced by the deprecation of local workbooks and refresh capabilties, use the **workbooks** Power BI admin REST API. It lists the workbooks in your organization. You must be a member of the Power BI admin role or a Global Administrator to call this API.
+
+```
+GET https://api.powerbi.com/v1.0/myorg/admin/workbooks
+```
+
+The API provides a  list of all the Excel workbooks published in your organization. The list is formatted in JSON. 
+
+Below is an example output for the API. 
+
+```
+[
+    {
+        "DisplayName": "Workbook without a Data Model",
+        "WorkspaceName": "My workspace",
+        "HasDataModel": false,
+        "HasScheduledRefreshOnDataModel": false,
+        "UploadedOn": "2023-07-28T10:54:17.093"
+    },
+    {
+        "DisplayName": "Workbook with Data Model",
+        "WorkspaceName": "My workspace",
+        "HasDataModel": true,
+        "HasScheduledRefreshOnDataModel": true,
+        "UploadedBy": "user@contoso.com",
+        "UploadedOn": "2022-11-16T09:51:17.497"
+    }
+]
+```
+You can check if the Excel workbook is a local workbook by navigating to it in Power BI and seeing if it has the Download Excel file option is available.
+
+You can use PowerShell to call the API as shown in the example below:
+
+```
+Invoke-PowerBIRestMethod -Url "https://api.powerbi.com/v1.0/myorg/admin/workbooks" -Method GET
+```
+
+To use PowerShell, first install the required **MicrosoftPowerBIMgmt** module. See [Power BI Cmdlets reference](..\..\powershell\power-bi\overview) for details. You will need to call **Login-PowerBIServiceAccount** commandlet before calling **Invoke-PowerBIRestMethod**.
+
 
 ## Troubleshooting and limitations
 
