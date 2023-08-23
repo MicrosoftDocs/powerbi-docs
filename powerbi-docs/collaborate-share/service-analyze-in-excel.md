@@ -101,7 +101,7 @@ While viewing a Power BI visual, you may want to further explore the visual data
     > [!NOTE]
     > The **ExportHeaders** worksheet in the Excel workbook contains details about the filters applied to the Power BI visual that the data was exported from.
 
-In addition, you can use the OneLake Data Hub's Tables pane to create export a Excel workbook with a live connection. 
+In addition, you can use the OneLake Data Hub's Table Preview to export an Excel workbook with a live connection. 
 
     :::image type="content" source="media/service-analyze-in-excel/security-warning-excel.png" alt-text="Screenshot showing the Export with live connect security warning.":::
 
