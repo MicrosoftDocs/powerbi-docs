@@ -79,6 +79,7 @@ When you select **Insert Table**, the **Create Table** dialog opens, where you c
 ## Considerations and limitations 
 
 - After you select **From Power BI** in the Excel ribbon, the artifacts loaded in the pane are not all the datasets you have access to. They're a selection of your most used datasets. Use the search bar in the pane to get additional datasets.
+- The **Insert Table** option is only available in Excel Desktop. 
 
 - The order of Power BI datasets in the pane may be different from their order in the Data hub in the Power BI service.
 
