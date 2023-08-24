@@ -71,6 +71,8 @@
     items: 
     - name: "Connect to data sources in Power BI Desktop"
       href: desktop-connect-to-data.md
+    - name: "Connect to cloud data sources in the Power BI service (Preview)"
+      href: service-connect-cloud-data-sources.md      
     - name: Connect to data
       items: 
       - name: "Connect to data sources"
