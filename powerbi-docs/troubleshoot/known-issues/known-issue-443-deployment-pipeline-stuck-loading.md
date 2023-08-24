@@ -6,7 +6,7 @@ ms.author: anirmale
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting 
-ms.date: 07/27/2023
+ms.date: 08/24/2023
 ms.custom: known-issue-443
 ---
 
@@ -14,7 +14,7 @@ ms.custom: known-issue-443
 
 There's a known issue where the deployment pipeline doesn't load based on the following scenario. You create a deployment pipeline and assign a workspace to a pipeline stage and then change your workspace permission to Viewer. If you refresh the deployment pipeline, the deployment pipeline stages don't load.
 
-**Status:** Open
+**Status:** Fixed: August 24, 2023
 
 **Product Experience:** Power BI
 
