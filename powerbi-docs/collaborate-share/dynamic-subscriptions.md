@@ -61,7 +61,7 @@ Start with a paginated report that has parameters. You know that the report has 
 
 1. Highlight the Power BI dataset that contains your recipient data. Recipient data includes columns for email address, parameters that can be varied per recipient, and optionally, attachment type and email subject. 
 
-    In some organizations, there might be a corporate employee Power BI dataset that fits the purpose. Or, you may need to create a new dataset that contains employee email addresses, geographies, and other parameters. The critical piece of data is the email addresses. In order for you to set the parameters on a per-recipient basis, the dataset needs to include the email addresses of all potential recipients. Select **Next**. In this example, our parameter mapping dataset is named **Training data**. 
+    In some organizations, there might be a corporate employee Power BI dataset that fits the purpose. Or, you may need to create a new dataset that contains email addresses, and values for report parameters. The critical piece of data is the email addresses. In order for you to set the parameters on a per-recipient basis, the dataset needs to include the email addresses of all potential recipients. Select **Next**. In this example, our parameter mapping dataset is named **Training data**. 
 
     :::image type="content" source="media/dynamic-subscriptions/power-bi-training-data.png" alt-text="Screenshot of the Power BI service showing Connect to recipient data step of the wizard, with Training data outlined in red.":::
 
