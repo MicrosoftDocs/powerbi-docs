@@ -3,11 +3,11 @@ title: Create Excel workbooks with refreshable Power BI data
 description: Learn how to build refreshable reports in Excel with Power BI datasets so you can analyze the data like you would with a dataset that is local to Excel.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ikedeagu
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 05/25/2023
+ms.date: 08/22/2023
 LocalizationGroup: Share your work
 ---
 # Create Excel workbooks with refreshable Power BI data
@@ -100,6 +100,10 @@ While viewing a Power BI visual, you may want to further explore the visual data
 
     > [!NOTE]
     > The **ExportHeaders** worksheet in the Excel workbook contains details about the filters applied to the Power BI visual that the data was exported from.
+
+In addition, you can use the OneLake Data Hub's Table Preview to export an Excel workbook with a live connection.
+
+:::image type="content" source="media/service-analyze-in-excel/export-live-connection-datahub.png" alt-text="Screenshot showing the Export with live connection (.xlsx) option for the Table preview in OneLake Data hub." lightbox="media/service-analyze-in-excel/export-live-connection-datahub.png":::
 
 ## Considerations and limitations
 
