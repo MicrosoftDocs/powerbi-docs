@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 11/15/2022
-ms.custom: licensing support
+ms.custom: licensing support, has-azure-ad-ps-ref
 LocalizationGroup: Administration
 ---
 

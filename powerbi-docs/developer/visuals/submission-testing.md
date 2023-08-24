@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/30/2022
+ms.date: 08/09/2023
 ---
 
 # Test a Power BI custom visual before submitting it for publication
@@ -19,6 +19,7 @@ For more information about the publishing process, see [Publish Power BI visuals
 ## Testing a new version of a published visual
 
 By default, Power BI loads the latest published version of the visual from AppSource, even if you import the visual from a local file.
+Version numbers consist of four digits in the following format: `X.X.X.X`.
 
 When testing or updating a visual that's already published, make sure you're using the correct version of the visual **without changing the GUID**. To override the AppSource version with a local file version, enable Developer mode in either Power BI Desktop or Power BI service.
 

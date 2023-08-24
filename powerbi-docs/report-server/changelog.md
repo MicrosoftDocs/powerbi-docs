@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 06/06/2023
+ms.date: 08/17/2023
 ---
 
 # Change log for Power BI Report Server
@@ -19,6 +19,12 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 ## May 2023
 
 ### Power BI Report Server
+
+*Version: 1.17.8621.39162(build 15.0.1112.79), Released: August 15, 2023*
+
+- Bug fixes
+    - Fixed issue with Portal process stopping working during a high load 
+    - Fixed issue with accessing some URLs using custom authentication 
 
 *Version: 1.17.8552.27722(build 15.0.1112.48), Released: June 6, 2023*
 
@@ -32,6 +38,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
     - Introduced new Accessibility property that lets report authors to add accessible headers to tables and Heading levels to text boxes
     - Added ability to configure Cleanup Batch Size and Cleanup Max Limit
+    - Custom Visual API shipped with release - version v5.4.0
 
 - Bug fixes
 
@@ -58,6 +65,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Added ability to speed up History Snapshots loading by disabling its size calculation 
             - Accessibility improvements
             - New Teal style theme introduced
+            - Custom Visual API shipped with release - version v5.2.0
         - Bug fixes
             - Fixed issue with datetime type conversion in PBIX reports using MySQL
             - Fixed disabling tooltips in PBIX reports
@@ -639,3 +647,5 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+
