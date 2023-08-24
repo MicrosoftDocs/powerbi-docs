@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 05/16/2023
 LocalizationGroup: Admin
 ---
-# Direct Lake (PREVIEW)
+# Direct Lake
 
 > [!IMPORTANT]
-> Direct Lake is currently in **PREVIEW**. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here. Before testing in your environment, be sure to read [Known issues and limitations](#known-issues-and-limitations) later in this article.
+> Direct Lake is currently in **preview**. Before testing in your environment, be sure to read [Known issues and limitations](#known-issues-and-limitations) later in this article.
 
 *Direct Lake* mode is a groundbreaking new dataset capability for analyzing very large data volumes in Power BI. Direct Lake is based on loading parquet-formatted files directly from a data lake without having to query a Lakehouse endpoint, and without having to import or duplicate data into a Power BI dataset. Direct Lake is a fast-path to load the data from the lake straight into the Power BI engine, ready for analysis. The following diagram shows how classic import and DirectQuery modes compare with the new Direct Lake mode.
 
 :::image type="content" source="media/directlake-overview/directlake-diagram.png" border="false" alt-text="Direct Lake feature diagram.":::
 
 > [!NOTE]
-> Data Warehouse is not currently supported in **PREVIEW**.
+> Data Warehouse is not currently supported in **preview**.
 
 In DirectQuery mode, the Power BI engine queries the data at the source, which can be slow but avoids having to copy the data. Any changes at the data source are immediately reflected in the query results.
 
@@ -42,13 +42,57 @@ To learn how to provision a Lakehouse, create a delta table in the Lakehouse, an
 
 As part of provisioning a Lakehouse, a SQL endpoint for SQL querying and a default dataset for reporting are created and updated with any tables added to the Lakehouse. While Direct Lake mode doesn't query the SQL endpoint when loading data directly from OneLake, it's required when a Direct Lake dataset must seamlessly fall back to DirectQuery mode, such as when the data source uses specific features like advanced security or views that can't be read through Direct Lake.
 
+## Dataset write support with XMLA endpoint
+
+Direct Lake datasets support write operations through the XMLA endpoint by using tools such as SQL Server Management Studio (19.1 and higher) , and the latest versions of external BI tools like Tabular Editor and DAX studio. Dataset write operations through the XMLA endpoint support:
+
+- Customizing, merging, scripting, debugging, and testing Direct Lake dataset metadata.
+
+- Source and version control, continuous integration and continuous deployment (CI/CD) with Azure DevOps and GitHub.
+
+- Automation tasks like refreshing, and applying changes to Direct Lake datasets by using PowerShell and REST APIs.
+
+### Enable XMLA read-write
+
+Before performing write operations on Direct Lake datasets through the XMLA endpoint, XMLA read-write must be enabled for the capacity.
+
+For Power BI Premium capacities, see [Enable XMLA read-write](service-premium-connect-tools.md#enable-xmla-read-write).
+
+For **Fabric trial** capacities, the trial user has the admin privileges necessary to enable XMLA read-write.
+
+1. In the Admin portal, select **Capacity settings**. 
+
+1. Click on the **Trial** tab.
+
+1. Select the capacity with **Trial** and your username in the capacity name. 
+
+1. Expand **Power BI workloads**, and then in the **XMLA Endpoint** setting, select **Read Write**.
+
+    :::image type="content" source="media/directlake-overview/fabric-enable-xmla-readwrite.png" alt-text="Enable XMLA read write for a Fabric trial capacity":::
+
+Keep in mind, the XMLA Endpoint setting applies to all workspaces and datasets assigned to the capacity.
+
+### Direct Lake dataset metadata
+
+When connecting to a standalone dataset through the XMLA endpoint, the metadata looks like any other dataset. However, Direct Lake datasets show the following differences:
+
+- The `compatibilityLevel` property of the database object is 1604 or higher.
+
+- The `Mode` property of Direct Lake partitions is set to `directLake`.
+
+- Direct Lake partitions use shared expressions called `DatabaseQuery` to define data sources. The expression points to the SQL endpoint of a Lakehouse. Direct Lake uses the SQL endpoint to discover the Lakehouse schema but loads the data directly from the delta tables (unless Direct Lake must fallback to DirectQuery mode for any reason).
+
+Here's an example XMLA query in SSMS:
+
+:::image type="content" source="media/dl-dataset-metadata.png" alt-text="XMLA query in SSMS":::
+
+To learn more about tool support through the XMLA endpoint, see [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md).
+
 ## Known issues and limitations
 
-The following are known issues and limitations during **PREVIEW**:
+The following are known issues and limitations during **preview**:
 
-- Direct Lake size limits are likely to change during **PREVIEW**. More definitive limits will be determined and described in this article by GA (General Availability). If limits are reached, queries are executed in DirectQuery mode. Limits are based on row count per table used by a DAX query. Row counts differ depending on the size of the SKU. To determine if queries fall back to DirectQuery mode, see [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md).
-
-- You must use the Web modeling experience integrated into Lakehouse to generate Direct Lake datasets. Creating Direct Lake datasets by using Power BI Desktop or XMLA-based automation tools aren't yet supported.
+- Direct Lake size limits are likely to change during **preview**. More definitive limits will be determined and described in this article by GA (General Availability). If limits are reached, queries are executed in DirectQuery mode. Limits are based on row count per table used by a DAX query. Row counts differ depending on the size of the SKU. To determine if queries fall back to DirectQuery mode, see [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md).
 
 - When generating a Direct Lake dataset in a QSO-enabled workspace, you must sync the dataset manually using the following PowerShell commands with the Power BI Management cmdlets installed (replace WorkspaceID and DatasetID with the GUIDs of your workspace and dataset):
 
@@ -58,17 +102,37 @@ The following are known issues and limitations during **PREVIEW**:
     
     ```
 
+- Direct Lake datasets created or modified by using XMLA-based tools cannot be opened in the Web modelling feature.
+
+- Currently, Direct Lake datasets can only contain tables and views from a single Lakehouse.
+
+- Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same dataset. Composite models are not yet supported.
+
+- Direct Lake datasets do not currently support calculation groups.
+
+- Direct Lake datasets do not currently support Publish to Web because SSO requires authenticated users.
+
 - Calculated columns and calculated tables are not yet supported.
+
+- DateTime relationships are not supported in Direct Lake datasets.
 
 - Some data types may not be supported.
 
-- Only Single Sign-On (SSO) is supported.
+- Direct Lake tables do not support complex delta table column types. Binary and Guid semantic types are also unsupported. You must convert these data types into strings or other supported data types.
+
+- Table relationships require the data types of their key columns to coincide. Primary key columns must contain unique values. DAX queries will fail if duplicate primary key values are detected.
+
+- The length of string column values is limited to 4,000 Unicode characters.
+
+- Direct Lake datasets currently work in Single Sign-On (SSO) mode only. You cannot disable SSO or use stored credentials yet.
 
 - Embedded scenarios that rely on service principals are not yet supported. Direct Lake models use Single Sign-On (SSO).
 
 - The dataset user interface might display a warning icon on a table even though the table has no issues. This will be addressed in a future update.
 
 - The initial, default/auto-generated dataset may not be in Direct Lake mode if there's only a single table in the Lakehouse. To get the dataset to use Direct Lake mode, make a small change on the table in the Lakehouse, like renaming the table. The rename should cause the dataset to switch to Direct Lake mode.
+
+- Tables based on TSQL-based views cannot be queried in Direct Lake mode. DAX queries that use these dataset tables fallback to DirectQuery mode.
 
 ## Create a Lakehouse
 
@@ -168,7 +232,7 @@ There are multiple options to load data into a Lakehouse, including data pipelin
 
     :::image type="content" source="media/directlake-overview/directlake-web-modeling.png" alt-text="Screenshot showing Web modeling in Power BI.":::
 
-When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and query the dataset through XMLA endpoints in much the same way as any other dataset. During **PREVIEW**, XMLA write operations are not yet supported.
+When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and query the dataset through XMLA endpoints in much the same way as any other dataset. During **preview**, XMLA write operations are not yet supported.
 
 ## Refresh
 
@@ -180,4 +244,4 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 ## Analyze query processing
 
-To determine if a report visual's DAX queries to the data source are providing the best performance by using Direct Lake mode, or falling back to DirectQuery mode, you can use Performance analyzer in Power BI Desktop to analyze queries. To learn more, see [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md).
+To determine if a report visual's DAX queries to the data source are providing the best performance by using Direct Lake mode, or falling back to DirectQuery mode, you can use Performance analyzer in Power BI Desktop, SQL Server Profiler, or other third party tools to analyze queries. To learn more, see [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md).

@@ -13,7 +13,7 @@ ms.date: 05/31/2023
 # Power BI Desktop projects (PREVIEW)
 
 > [!IMPORTANT]
-> Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Power BI Desktop projects is currently in **preview**.
 
 Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a ***Power BI Project*** (PBIP). As a project, report and dataset *artifact* definitions are saved as individual plain text files in a simple, intuitive folder structure.
 
@@ -31,11 +31,11 @@ Saving your work as a project has the following benefits:
 
 See Power BI Desktop projects and other developer mode features being introduced at Microsoft Build 2023.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OdkS7DF7ElY?start=277" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/OdkS7DF7ElY?start=277]
 
 ## Enable preview features
 
-Saving as a project in Power BI Desktop is currently in **PREVIEW**. Before giving it a try, you must first enable it in **Preview features**.
+Saving as a project in Power BI Desktop is currently in **preview**. Before giving it a try, you must first enable it in **Preview features**.
 
 To enable, in Power BI Desktop > **File** > **Options and settings** > **Options** > **Preview features**, select the checkbox for **Power BI Project (.pbip) save option**.
 
@@ -76,6 +76,8 @@ Dataset and report subfolders each have default git ignored files specified in .
 
 The PBIP file contains a pointer to a report folder, opening a PBIP opens the targeted report and model for authoring.
 
+For more information, refer to the [pbip schema document](https://github.com/microsoft/powerbi-desktop-samples/blob/main/item-schemas/common/pbip.md).
+
 ## Open a Power BI Project
 
 You can open Power BI Desktop from the Power BI Project folder either by opening the **[pbip](#project-namepbip)** file or the **[pbir](./projects-report.md#definitionpbir)** file in the report folder. Both options open the report for editing, and the dataset, if there's a relative reference to a dataset.
@@ -94,7 +96,7 @@ If possible, Power BI Desktop indicates the file and location of error:
 
 :::image type="content" source="media/projects-overview/pbip-unable-to-open-file.png" alt-text="Screen grab of unable to open file error.":::
 
-Schema details for the following files aren't documented. During **PREVIEW**, changes to these files outside of Power BI Desktop aren't supported:
+Schema details for the following files aren't documented. During **preview**, changes to these files outside of Power BI Desktop aren't supported:
 
 - Report\
   - [report.json](projects-report.md#reportjson)
@@ -120,6 +122,7 @@ Objects that support write operations:
 | Columns                       | Yes <sup>[1](#rc)</sup>, <sup>[2](#dt)</sup>| Yes        |
 | Calculated tables             | Yes                        | Yes        |
 | Calculated columns            | Yes                        | Yes        |
+| Hierarchies                   | Yes                        | Yes        |
 | Relationships                 | Yes                        | Yes        |
 | Measures                      | Yes                        | Yes        |
 | Model KPIs                    | Yes                        | Yes        |
@@ -134,9 +137,12 @@ Objects that support write operations:
 Keep in mind:
 
 - Any changes to open files made outside Power BI Desktop requires a restart for those changes to be shown in Power BI Desktop. Power BI Desktop isn't aware of changes to project files made by other tools.
+
 - Power BI Desktop doesn’t support tables with multiple partitions. Only a single partition for each table is supported. Creating tables with empty partitions or more than one partition results in an error when opening the report.
+
 - Automatic date tables created by Power BI Desktop shouldn't be changed by using external tools.
-- When changing a model that uses Direct Query to connect a Power BI dataset or Analysis Services model, you must update the ChangedProperties collection for the changed object to include any modified properties.  If ChangedProperties isn't updated, Power BI Desktop may overwrite any changes the next time the query is edited or the model is refreshed in Power BI Desktop.
+
+- When changing a model that uses Direct Query to connect a Power BI dataset or Analysis Services model, you must update the ChangedProperties and PBI_RemovedChildren collection for the changed object to include any modified or removed properties.  If ChangedProperties and/or PBI_RemovedChildren isn't updated, Power BI Desktop may overwrite any changes the next time the query is edited or the model is refreshed in Power BI Desktop.
 
 - <a name="rc">1</a> - Changing a column's data type is supported. However, renaming columns isn't supported when connecting to the AS instance.
 
@@ -166,6 +172,10 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 - Download PBIX isn't supported for workspaces with Git integration.
 - Diagram view is ignored when editing models in the Service.
 - When saving as a Power BI Project, the maximum length of the project files path is 260 characters.
+- In Power BI Desktop, you can't save as a PBIP directly to OneDrive for Business and SharePoint.
+- When editing PBIP files outside of Power BI Desktop, they should be saved using UTF-8 without BOM encoding.
+- Report Linguistic Schema is not supported with Power BI projects.
+- Power BI Desktop uses CRLF as end-of-line. To avoid problems in your diffs, configure Git to handle line endings by enabling [autocrlf](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
 
 ## Frequently asked questions
 
@@ -187,7 +197,7 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 
 **Question:** The Publish button is disabled when I'm working in a PBIP. How can I publish my content?
 
-**Answer:** Publish is disabled while this feature is in **PREVIEW**. You can either use Fabric Git Integration to publish your work, or save as a PBIX to publish.
+**Answer:** Publish is disabled while this feature is in **preview**. You can either use Fabric Git Integration to publish your work, or save as a PBIX to publish.
 
 **Question:** Can I deploy a Power BI Desktop project to Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS)?
 

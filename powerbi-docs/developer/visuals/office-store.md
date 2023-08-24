@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/18/2022
+ms.date: 08/09/2023
 ---
 
 # Publish Power BI visuals to the Microsoft commercial marketplace
@@ -35,7 +35,7 @@ When you're ready to submit your Power BI visual, verify that your visual meets 
 
 | Item | Required | Description |
 | --- | --- | --- |
-| Pbiviz package |Yes |[Pack your Power BI visual into a *.pbiviz* package](package-visual.md). Ensure the *pbiviz.json* file contains all the required metadata: <br>- Visual name<br>- Display name<br> - GUID<br> - Version<br> - Description<br> - Support URL<br> - Author name and email |
+| Pbiviz package |Yes |[Pack your Power BI visual into a *.pbiviz* package](package-visual.md). Ensure the *pbiviz.json* file contains all the required metadata: <br>- Visual name<br>- Display name<br> - GUID<br> - Version (four digits: `x.x.x.x`)<br> - Description<br> - Support URL<br> - Author name and email |
 | Sample *.pbix* report file |Yes |To help users become familiar with the visual, highlight the value that the visual brings to the user and give examples of usage and formatting. You can also add a *"hints"* page at the end with some tips and tricks and things to avoid.<br>The sample *.pbix* report file must work offline, without any external connections. |
 | Logo |Yes |Include the custom visual logo that will appear in the Marketplace listing. It should be in PNG format and exactly 300 x 300 px.<BR>**Important!** Review the [AppSource store images guide](/office/dev/store/craft-effective-appsource-store-images) carefully, before submitting the logo. |
 | Screenshots |Yes |Provide at least one screenshot, and up to five, in PNG format. The dimensions must be exactly 1366 px (width) by 768 px (height), and the size not larger than 1024 kb.<br>Add text bubbles to explain the value of key features shown in each screenshot. |

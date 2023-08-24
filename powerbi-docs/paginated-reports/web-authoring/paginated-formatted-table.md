@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 06/20/2023
 ---
 
-# Create exportable paginated reports that you can export in the Power BI service
+# Create paginated reports that you can export in the Power BI service
 
 [!INCLUDE [applies-yes-service-no-report-builder-no-desktop](../../includes/applies-yes-service-no-report-builder-no-desktop.md)]
 

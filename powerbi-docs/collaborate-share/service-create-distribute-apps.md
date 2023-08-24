@@ -8,10 +8,11 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 06/19/2023
+ms.date: 07/20/2023
 
 LocalizationGroup: Share your work
 ---
+
 # Publish an app in Power BI
 
 In Power BI, you can create official packaged content, then distribute it to a broad audience as an *app*. You [create apps in *workspaces*](service-create-the-new-workspaces.md), where you can collaborate on Power BI content with your colleagues. Then you can publish the finished app to large groups of people in your organization. The [app consumer view](#app-consumer-view) section of this article outlines the app consumer experience in the Power BI service and in the Power BI mobile apps.
@@ -85,6 +86,20 @@ On the **Content** tab, you add the content from the workspace to the app.
     :::image type="content" source="media/service-create-distribute-apps/moveup-move-down-content.png" alt-text="Screenshot of Move up or Move down content.":::
 
 1. Select **Next: Add audience**.
+
+#### Add Power BI reports with paginated report visuals
+
+When you include Power BI reports that have paginated report visuals, we recommend including the referred paginated reports in the app. This way, the published Power BI report work with the published version of the paginated report instead of the report stored in the workspace.
+
+During publishing, Power BI can detect reports with visuals that point at missing paginated reports:
+
+:::image type="content" source="media/service-create-distribute-apps/app-successfully-published-with-warning.png" alt-text="Screenshot of successfully published app with warning.":::
+
+You can address the issue in one of two ways:
+
+- Include the paginated report in the app and make sure the audience that has access to the Power BI report also has access to the paginated report.
+
+- Make sure the audience has access to the paginated report in the workspace.
 
 ### Create and manage multiple audiences
 
@@ -280,7 +295,7 @@ Things to keep in mind about publishing apps:
 * Having multiple audiences isn't fully supported in deployment pipelines. Content visibility of new content that you add to an org app must still be managed manually via audience management.
 * You can't open an added link or see its content if you chose to open the link in the content area.
 * Apps can have a maximum of 200 dashboards.
-* If you include a report that uses chained datasets, also known as [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. 
+* If you include a report that uses chained datasets, also known as [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Azure AD Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
 
 ## Next steps
 
@@ -289,3 +304,5 @@ Things to keep in mind about publishing apps:
 * [Power BI apps for external services](../connect-data/service-connect-to-services.md)
 * [Power BI Admin Portal](../admin/service-admin-portal.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+

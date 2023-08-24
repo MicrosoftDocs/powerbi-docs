@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 08/07/2022
+ms.date: 07/20/2023
 LocalizationGroup: Premium
 ---
 
@@ -148,6 +148,8 @@ The default setting is 0, which results in the following SKU-specific automatic 
 | **Automatic Query Memory Limit** | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   | 10 GB   | 10 GB   |
 
 To safeguard the performance of the system, a hard ceiling of 10 GB is enforced for all queries executed by Power BI reports, regardless of the query memory limit configured by the user. This hard ceiling doesn't apply to queries issued by tools that use the Analysis Services protocol (also known as XMLA). Users should consider simplifying the query or its calculations if the query is too memory intensive.
+
+The query limit for a workspace that isn't assigned to a Premium capacity is 1GB.
 
 #### Query Timeout
 

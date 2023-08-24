@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: video-6CQnf-NGtpU
-ms.date: 08/08/2022
+ms.date: 07/12/2023
 ---
 # How to find your report server product key
 Learn how you can find your Power BI Report Server product key to install your server in a production environment.
@@ -16,14 +16,16 @@ Learn how you can find your Power BI Report Server product key to install your s
 > [!NOTE]  
 > This video might use earlier versions of Power BI Report Server or the Power BI service.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/6CQnf-NGtpU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/6CQnf-NGtpU?rel=0&amp;showinfo=0]
 
-You downloaded [Power BI Report Server](get-started.md), and you have a SQL Server Enterprise Software Assurance agreement. Or, you purchased [Power BI Premium](../enterprise/service-premium-what-is.md). You want to install the server in a production environment, but you need a product key in order to do that. Where is the product key? The product key will be in one of two places depending on what you purchased.
+You downloaded [Power BI Report Server](get-started.md), and you have a SQL Server Enterprise Software Assurance agreement. Or, you purchased [Power BI Premium](../enterprise/service-premium-what-is.md). You want to install the server in a production environment, but you need a product key in order to do that. Where is the product key? The product key will be in one of two places depending on what you purchased. 
 
 > [!NOTE]
-> If you’re using a subscription license for SQL Server that also grants use rights to Power BI Report Server, submit a support request through the software portal you normally use to get assistance for this scenario.
+> If you have a subscription license for SQL Server Enterprise Edition with Software Assurance, it also grants use rights to Power BI Report Server. Submit a support request through the software portal you normally use to get assistance for this scenario.
 >
 > You can't use a developer product key in a production environment.
+>
+> For more details, see the section "Use of Power BI Report Server – SQL Server Enterprise Edition" in [SQL Server licensing](https://www.microsoft.com/licensing/terms/productoffering/SQLServer/EAEAS).
 
 ## Purchased Power BI Premium
 If you have purchased Power BI Premium, within the **Capacity settings** tab of the Power BI admin portal, you'll have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Fabric administrator role.

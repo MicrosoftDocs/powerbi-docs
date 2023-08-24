@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/01/2023
+ms.date: 08/22/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,30 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## August 2023
+
+### Customize your launch experience with launch items
+
+If you always go right to a particular report, dashboard, scorecard, or app when you open your Power BI mobile app, you can now save time by configuring that item to be your launch item. The item will then open automatically whenever you start up your app. You'll no longer have to waste time navigating to it every time. [Check out the details](./mobile-apps-launch-item.md)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/set-as-launch-item-option.png" alt-text="Screenshot of the Set as launch item option on a report in the Power BI mobile app." border="false":::
+
+Organizations can also configure a launch item for groups of users via mobile device management. See [Remotely configure Power BI app using mobile device management (MDM) tool](./mobile-app-configuration.md#launch-item-configuration-ios-and-android) for details.
+
+### New layout switcher makes creating mobile-optimized reports easier
+
+Now it's easy to quickly switch between web and mobile layouts when you're developing your reports. You'll find the new switcher buttons down at the bottom of the screen, right next to the page navigator. [Check it out](../../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md#how-to-open-mobile-layout-view)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-layout-switcher.png" alt-text="Screenshot showing the mobile report layout switcher.":::
+
+## July 2023
+
+### Dataset refresh (iOS and Android)
+
+Now you can view dataset info and refresh status, and even refresh datasets manually, right from the mobile app! Moreover, whenever one of your datasets has a refresh failure, you'll get notified in the mobile app so that you can start addressing the issue right away. [Check out the details](./mobile-apps-dataset-refresh.md)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-app-dataset-refresh.png" alt-text="Screenshot showing the dataset info page in the Power BI app for mobile devices." border="false":::
 
 ## May 2023
 

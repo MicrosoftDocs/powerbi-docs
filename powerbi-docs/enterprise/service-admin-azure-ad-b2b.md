@@ -8,7 +8,7 @@ ms.reviewer: painbar
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 06/18/2023
+ms.date: 08/23/2023
 LocalizationGroup: Administration
 ---
 
@@ -33,7 +33,11 @@ Make sure you enable the [Invite external users to your organization](../admin/s
 Most email addresses are supported for guest user invitations, including personal email accounts like gmail.com, outlook.com, and hotmail.com. Azure AD B2B calls these addresses *social identities*.
 
 > [!NOTE]
-> In Azure AD, external users can be set to UserType Member. UserType Member **is not** currently supported in Power BI.
+> In Azure AD, external users can be set to UserType Member. In Power BI, support for UserType Member is currently in preview. Note the following:
+> * External members currently can't use the Power BI license they have in their home tenant to access content and perform activities in the provider tenant. Rather, they must explicitly be granted an appropriate license in the provider tenant. External members are similar to internal users on the provider tenant.
+> * Microsoft Purview Information Protection is not supported for external members. Admins in the provider tenant are advised not to enable information protection for external members.
+>
+> In some situations, external members may see errors during their first sign-in attempt on the provider tenant. To unblock these external members, grant them permission to a Power BI item, such as a workspace, dataset, or report, and then have them sign in again.
 
 ## Invite guest users
 
@@ -198,7 +202,8 @@ Additionally, to use in-place dataset sharing, tenant admins need to enable the 
 
 * This feature isn't currently available with the Power BI SharePoint Online report web part.
 
-* If you share directly to a guest user, Power BI will send them an email with the link. To avoid sending an email, add the guest user to a security group and share to the security group.  
+* If you share directly to a guest user, Power BI will send them an email with the link. To avoid sending an email, add the guest user to a security group and share to the security group.
+* If you disable the **Allow Azure Active Directory guest users to edit and manage content in the organization** tenant setting, guest users will continue to have any workspace role and item permissions that they have previously been granted, or will be granted, in the provider environment. For more information about the **Allow Azure Active Directory guest users to edit and manage content in the organization** tenant setting, see [Allow Azure Active Directory guest users to edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organization).  
 
 ## Next steps
 

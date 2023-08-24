@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/14/2023
+ms.date: 08/09/2023
 LocalizationGroup: Connect to services
 ---
 # Connect to Snowflake in the Power BI service
@@ -24,7 +24,7 @@ To configure Azure AD integration and optionally enable SSO:
 
 ### Admin portal
 
-To enable SSO, a global admin has to turn on the setting in the Power BI Admin portal. This setting approves sending Azure AD authentication tokens to Snowflake from within the Power BI service. This setting is set at an orginaztional level. Follow these steps to enable SSO:
+To enable SSO, a global admin has to turn on the setting in the Power BI Admin portal. This setting approves sending Azure AD authentication tokens to Snowflake from within the Power BI service. This setting is set at an organizational level. Follow these steps to enable SSO:
 
 1. [Sign in to Power BI](https://app.powerbi.com) using global admin credentials.
 1. Select **Settings** from the page header menu, then select **Admin portal**.
@@ -58,7 +58,7 @@ To turn on SSO for a dataset:
    :::image type="content" source="media/service-connect-snowflake/dataset-settings-2.png" alt-text="Screenshot of datasets and dataflows in a workspace with more and settings highlighted.":::
 
 1. Select **Data source credentials** and sign in. The dataset can be signed into Snowflake with Basic or OAuth2 (Azure AD) credentials. By using Azure AD, you can enable SSO in the next step.
-1. Select the option **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**. This setting will enable Azure AD SSO. Whether the first user signs in with Basic authentication or OAuth2 (Azure AD), the Azure AD credentials are sent for SSO.
+1. Select the option **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**. This setting will enable Azure AD SSO. The Azure AD credentials are sent for SSO.
 
    :::image type="content" source="media/service-connect-snowflake/snowflake-sso-cred-ui.png" alt-text="Screenshot of the configuration dialog with OAuth2 selected as the authentication method.":::
 

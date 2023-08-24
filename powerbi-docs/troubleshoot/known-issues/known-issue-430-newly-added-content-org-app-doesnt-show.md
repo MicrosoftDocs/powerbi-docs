@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 06/20/2023
+ms.date: 08/10/2023
 ms.custom: known-issue-430
 ---
 
@@ -16,7 +16,7 @@ When an organizational app author updates an app by adding new content, it doesn
 
 **APPLIES TO:** ✔️ Power BI Service
 
-**Status:** Open
+**Status:** Fixed: August 10, 2023
 
 **Problem area:** Share and collaborate
 

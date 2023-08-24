@@ -8,12 +8,12 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 06/07/2023
+ms.date: 08/02/2023
 LocalizationGroup: Connect to data
 ---
 # Use R in Power Query Editor
 
-[The R language](https://mran.microsoft.com/documents/what-is-r) is a powerful programming language that many statisticians, data scientists, and data analysts use. You can use R in Power BI Desktop's Power Query Editor to:
+The R language is a powerful programming language that many statisticians, data scientists, and data analysts use. You can use R in Power BI Desktop's Power Query Editor to:
 
 * Prepare data models.
 * Create reports.
@@ -21,7 +21,7 @@ LocalizationGroup: Connect to data
 
 ## Install R
 
-You can download R for free from the [Revolution R Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
+You can download R for free from the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
 
 ## Install mice
 
@@ -131,13 +131,12 @@ There are some limitations to queries that include R scripts created in Power Qu
   
    :::image type="content" source="media/desktop-r-in-query-editor/r-in-query-editor_10.png" alt-text="Screenshot shows Data source settings dialog where you can edit permissions." lightbox="media/desktop-r-in-query-editor/r-in-query-editor_10.png":::
 
-* To schedule refresh of your R visuals or dataset, enable scheduled refresh and install an on-premises data gateway (personal mode) on the computer containing the workbook and R.
+* To schedule refresh of your R visuals or dataset, enable scheduled refresh and install an on-premises data gateway (personal mode) on the computer containing the workbook and R. You can't use an enterprise gateway to refresh datasets containing R scripts in Power Query.
 
 ## Next Steps
 
 There are all sorts of things you can do with R and custom queries. Explore and shape your data just the way you want it to appear.
 
-* [Introduction to R](https://mran.microsoft.com/documents/what-is-r)
 * [Run R scripts in Power BI Desktop](desktop-r-scripts.md)
 * [Use an external R IDE with Power BI](desktop-r-ide.md)
 * [Create visuals by using R packages in the Power BI service](service-r-packages-support.md)

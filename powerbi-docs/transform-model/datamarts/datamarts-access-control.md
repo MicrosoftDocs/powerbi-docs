@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 06/16/2022
+ms.date: 07/12/2023
 LocalizationGroup: Data from files
 ---
 
@@ -48,7 +48,8 @@ Row-level security (RLS) can be used to restrict data access for specified users
 
 You can configure RLS for datamarts in the **Datamart editor**. The configured RLS on datamarts automatically gets applied to downstream items, including the auto-generated datasets and reports. 
 
-
+> [!NOTE]
+> Datamarts use the enhanced row-level security editor, which means that not all row-level security filters supported in Power BI can be defined. Limitations include expressions that today can only be defined using DAX including dynamic rules such as USERNAME() or USERPRINCIPALNAME(). To define roles using these filters switch to use the DAX editor.
 
 ### Define Row Level Security (RLS) roles and rules for Datamarts
 
@@ -90,6 +91,7 @@ A datamart can get marked as an unavailable datamart when one of the following s
 
 :::image type="content" source="media/datamarts-access-control/datamarts-access-control-01.png" alt-text="Screenshot of the request access setting.":::
 
+**Situation 3:** When a Premium workspace is migrated to another Premium capacity in a different region, the datamart will become unavailable with the error: "Unable to open the datamart because the workspace region has changed. To open the datamart, reconnect the workspace to the region connected when the datamart was created." This behavior is by design since the region where the datamarts were created must be the region where the workspace resides, and migrations are not supported.
 
 ## Next steps
 This article provided information about controlling access to datamarts. 
