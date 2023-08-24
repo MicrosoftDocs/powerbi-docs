@@ -119,6 +119,7 @@ Learn more about how users can [view Power BI files in their browser](../collabo
 -	These features don’t work with personal OneDrive accounts.
 -	Opening, saving, and sharing to OneDrive and SharePoint features aren't available in sovereign cloud tenants.   
 -	When you share a link to a file with another person, the recipient has to sign-in before they can view the file.
+-	Only **.PBIX files** can be saved to OneDrive and SharePoint. 
 
 ### File save load time
 

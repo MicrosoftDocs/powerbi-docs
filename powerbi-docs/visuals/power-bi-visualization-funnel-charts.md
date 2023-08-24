@@ -38,7 +38,7 @@ Funnel charts are a great choice for many scenarios:
 
 Watch the following video to see how to create a funnel chart by using data from the Sales and Marketing sample.
 
-<br><iframe width="560" height="315" src="https://www.youtube.com/embed/qKRZPBnaUXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/qKRZPBnaUXM]
 
 > [!NOTE]  
 > The video might use earlier versions of Power BI Desktop or the Power BI service.

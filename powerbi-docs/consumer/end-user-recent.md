@@ -38,7 +38,7 @@ In the following video, watch Amanda demonstrate some of the features for naviga
 > [!NOTE]  
 > This video uses earlier versions of Power BI Desktop and Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/G26dr2PsEpk]
 
 ## Actions available from the Recent content list
 
