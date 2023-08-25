@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting 
-ms.date: 07/27/2023
+ms.date: 08/24/2023
 ms.custom: known-issue-465
 ---
 
@@ -16,7 +16,7 @@ When using an embedded report, you may see a black bar appear intermittently. Th
 
 **APPLIES TO:** ✔️ Power BI
 
-**Status:** Open
+**Status:** Fixed: August 24, 2023
 
 **Problem area:** Embedded, REST API or PowerShell
 
