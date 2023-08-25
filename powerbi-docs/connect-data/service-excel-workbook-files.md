@@ -172,6 +172,7 @@ For local Excel workbooks uploaded to a Power BI workspace, use the **Download E
 To refresh data in Excel data models, you'll need to publish the data model as a Power BI dataset. We recommend using the Power BI Desktop to import the model because it upgrades your data model to the latest version. This gives you the best future experience. Use the **Import** from **Power Query, Power Pivot, Power View** option on Power BI Desktop's **File** menu. 
 
 To build new workbooks connected to a semantic data model in your Excel workbook, you should first publish the data model as a Power BI dataset. Then in Excel use the **From Power BI (Microsoft)** option to connect your workbook to the dataset. This option is available in the **Data ribbon**, under **Get Data** in the **From Power Platform** menu.
+
 For cases where you include a workbook in a Power BI organizational app, remember to republish the app with the new items.
 
 To learn which workbooks can be affeced by the deprecation of local workbooks and refresh capabilties, use the **workbooks** Power BI admin REST API. It lists the workbooks in your organization. You must be a member of the Power BI admin role or a Global Administrator to call this API.
