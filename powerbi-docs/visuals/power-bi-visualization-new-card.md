@@ -20,6 +20,9 @@ The card (new) is a helpful visual that presents important metrics such as total
 
 :::image type="content" source="media/power-bi-visualization-new-card/power-bi-opportunities-card.png" alt-text="Screenshot of card visualization.":::
 
+> [!IMPORTANT]
+    > The card (new) visual is currently in PREVIEW and only available for Power BI Desktop. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+
 ## Prerequisites 
 
 Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. This visual applies only to Desktop and isn’t available in Power BI service.
@@ -138,6 +141,7 @@ To access the Format panel, it's necessary to select a visual object. In this ca
 
 ## Considerations and limitations (preview)
 
+* The card (new) visual is currently being developed and is being updated over several releases. Once it reaches its final stage, it replaces the existing Card, Multi-row card, and KPI card. However, reports that continue to use these older visuals are still supported.
 * The card (new) visual is a preview feature turned on by default. However, if you prefer to disable the preview, or control when you see it, go to **Options** > **Preview features** > **New card visual**. This addition doesn’t influence existing card visuals.
 * Certain settings only take effect if the **Apply settings to** option is set to **All**. Other settings can only be configured by selecting an independent measure series.
 * We plan to replace the current percentage-based **shape corner** system with one that uses pixels instead to improve precision.
