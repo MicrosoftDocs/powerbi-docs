@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 08/02/2023
+ms.date: 08/24/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
