@@ -211,7 +211,7 @@ In addition to Microsoft content and custom content produced by your organizatio
 If you do make the investment to create custom in-house training, consider creating short, targeted content that focuses on solving one specific problem. It makes the training easier to find and consume. It's also easier to maintain and update over time.
 
 > [!TIP]
-> The **Help and Support** menu in the Power BI service is customizable. Once your centralized location for training documentation is operational, update the [tenant setting in the Admin portal](/power-bi/admin/service-admin-portal-help-support) with the link. The link can then be accessed from menu when users select the **Get Help** option. Also, be sure to teach users about the **Help** ribbon tab in Power BI Desktop. It includes links to guided learning, training videos, documentation, and more.
+> The **Help and Support** menu in the Power BI service is customizable. Once your centralized location for training documentation is operational, update the [tenant setting in the Admin portal](/fabric/admin/service-admin-portal-help-support) with the link. The link can then be accessed from menu when users select the **Get Help** option. Also, be sure to teach users about the **Help** ribbon tab in Power BI Desktop. It includes links to guided learning, training videos, documentation, and more.
 
 ## Documentation
 

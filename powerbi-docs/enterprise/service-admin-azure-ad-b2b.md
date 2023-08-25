@@ -23,10 +23,10 @@ This article provides a basic introduction to Azure AD B2B in Power BI. For more
 
 ## Enable access
 
-Make sure you enable the [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md) feature in the Power BI admin portal before inviting guest users. Even when this option is enabled, the user must be granted the Guest Inviter role in Azure Active Directory to invite guest users.  
+Make sure you enable the [Invite external users to your organization](/fabric/admin/service-admin-portal-export-sharing) feature in the Power BI admin portal before inviting guest users. Even when this option is enabled, the user must be granted the Guest Inviter role in Azure Active Directory to invite guest users.  
 
 > [!NOTE]
-> The [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md) setting controls whether Power BI allows inviting external users to your organization. After an external user accepts the invite, they become an Azure AD B2B guest user in your organization. They appear in people pickers throughout the Power BI experience. If the setting is disabled, existing guest users in your organization continue to have access to any items they already had access to and continue to be listed in people picker experiences. Additionally, if guests are added through the [planned invite](#planned-invites) approach they will also appear in people pickers. To prevent guest users from accessing Power BI, use an Azure AD conditional access policy.
+> The [Invite external users to your organization](/fabric/admin/service-admin-portal-export-sharing) setting controls whether Power BI allows inviting external users to your organization. After an external user accepts the invite, they become an Azure AD B2B guest user in your organization. They appear in people pickers throughout the Power BI experience. If the setting is disabled, existing guest users in your organization continue to have access to any items they already had access to and continue to be listed in people picker experiences. Additionally, if guests are added through the [planned invite](#planned-invites) approach they will also appear in people pickers. To prevent guest users from accessing Power BI, use an Azure AD conditional access policy.
 
 ## Who can you invite?
 
@@ -163,10 +163,10 @@ There are some limitations to the B2B experience that you should be aware of:
 ## Admin Info for B2B Collaboration 
 
 The following tenant level settings in Power BI provide controls to admins. See [Export and sharing admin settings]() for documentation on these settings: 
-  * [Allow Azure Active Directory guest users to access Power BI](../admin/service-admin-portal-export-sharing.md#allow-azure-active-directory-guest-users-to-access-microsoft-fabric)
-  * [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md#invite-external-users-to-your-organization)
-  * [Allow Azure Active Directory guest users to edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organization)
-  * [Show Azure Active Directory guests in lists of suggested people](../admin/service-admin-portal-export-sharing.md#show-azure-active-directory-guests-in-lists-of-suggested-people) 
+  * [Allow Azure Active Directory guest users to access Power BI](/fabric/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-access-microsoft-fabric)
+  * [Invite external users to your organization](/fabric/admin/service-admin-portal-export-sharing#invite-external-users-to-your-organization)
+  * [Allow Azure Active Directory guest users to edit and manage content in the organization](/fabric/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organization)
+  * [Show Azure Active Directory guests in lists of suggested people](/fabric/admin/service-admin-portal-export-sharing#show-azure-active-directory-guests-in-lists-of-suggested-people) 
 
 There are also Azure Active Directory settings that can limit what external guest users can do within your organization. Those settings also apply to your Power BI environment. The following documentation discusses the settings: 
   * [Manage External Collaboration Settings](/azure/active-directory/external-identities/external-collaboration-settings-configure#configure-b2b-external-collaboration-settings)
@@ -203,7 +203,7 @@ Additionally, to use in-place dataset sharing, tenant admins need to enable the 
 * This feature isn't currently available with the Power BI SharePoint Online report web part.
 
 * If you share directly to a guest user, Power BI will send them an email with the link. To avoid sending an email, add the guest user to a security group and share to the security group.
-* If you disable the **Allow Azure Active Directory guest users to edit and manage content in the organization** tenant setting, guest users will continue to have any workspace role and item permissions that they have previously been granted, or will be granted, in the provider environment. For more information about the **Allow Azure Active Directory guest users to edit and manage content in the organization** tenant setting, see [Allow Azure Active Directory guest users to edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organization).  
+* If you disable the **Allow Azure Active Directory guest users to edit and manage content in the organization** tenant setting, guest users will continue to have any workspace role and item permissions that they have previously been granted, or will be granted, in the provider environment. For more information about the **Allow Azure Active Directory guest users to edit and manage content in the organization** tenant setting, see [Allow Azure Active Directory guest users to edit and manage content in the organization](/fabric/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organization).  
 
 ## Next steps
 

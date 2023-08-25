@@ -64,22 +64,22 @@ Many of the settings can have one of three states:
 |------|-------|
 | **[Microsoft Fabric (Preview)](/fabric/admin/fabric-switch)** | |
 | Users can create Fabric items (public preview) | Users can create Fabric items with new capabilities in Microsoft Fabric. This setting can be managed at both the tenant and the capacity levels. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2205006" target="_blank">Learn More</a> |
-| **[Help and support settings](../support/service-admin-portal-help-support.md)** | |
+| **[Help and support settings](/fabric/admin/service-admin-portal-help-support)** | |
 | Publish "Get Help" information | Users in the organization can go to internal help and support resources from the Power BI help menu. |
 | Receive email notifications for service outages or incidents | Mail-enabled security groups will receive email notifications if this tenant is impacted by a service outage or incident. |
 | Users can try Microsoft Fabric paid features | When users sign up for a Microsoft Fabric trial, they can try Fabric paid features for free for 60 days from the day they signed up. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2227896" target="_blank">Learn More</a> |
 | Show a custom message before publishing reports | When people attempt to publish a report, they'll see a custom message before it gets published. |
-| **[Workspace settings](./service-admin-portal-workspace.md)** | |
+| **[Workspace settings](/fabric/admin/portal-workspace)** | |
 | Create workspaces (new workspace experience) | Users in the organization can create app workspaces to collaborate on dashboards, reports, and other content. Even if this setting is disabled, an upgraded workspace will be created when a template app is installed. |
 | Use datasets across workspaces | Users in the organization can use datasets across workspaces if they have the required Build permission. |
 | Block users from reassigning personal workspaces (My Workspace) | Turn on this setting to prevent users from reassigning their personal workspaces (My Workspace) from Premium capacities to shared capacities. &nbsp;<a href="https://aka.ms/RestrictMyFolderCapacity" target="_blank">Learn More</a> |
-| **[Information protection](./service-admin-portal-information-protection.md)** | |
+| **[Information protection](/fabric/admin/service-admin-portal-information-protection)** | |
 | Allow users to apply sensitivity labels for content | With this setting enabled, Microsoft Purview Information Protection sensitivity labels published to users by your organization can be applied. All &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2144840" target="_blank">prerequisite steps</a> must be completed before enabling this setting.<br><br>Note: Sensitivity label settings, such as encryption and content marking for files and emails, are not applied to content. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2143053" target="_blank">Learn More</a><br><br>Visit the &nbsp;<a href="https://protection.officeppe.com/sensitivity?flight=EnableMIPLabels" target="_blank">Microsoft Purview compliance portal</a> to view sensitivity label settings for your organization.<br><br>Note: Sensitivity labels and protection are only applied to files exported to Excel, PowerPoint, or PDF files, that are controlled by "Export to Excel" and "Export reports as PowerPoint presentation or PDF documents" settings. All other export and sharing options do not support the application of sensitivity labels and protection. |
 | Apply sensitivity labels from data sources to their data in Power BI | Only sensitivity labels from supported data sources will be applied. Please see the documentation for details about supported data sources and how their sensitivity labels are applied in Power BI. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2149746" target="_blank">Learn about supported data sources</a> |
 | Automatically apply sensitivity labels to downstream content | With this setting enabled, whenever a sensitivity label is changed or applied to Fabric content, the label will also be applied to its eligible downstream content. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2153971" target="_blank">Learn More</a> |
 | Allow workspace admins to override automatically applied sensitivity labels | With this setting enabled, workspace admins can change or remove sensitivity labels that were applied automatically by Fabric, for example, as a result of label inheritance. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2154646" target="_blank">Learn More</a> |
 | Restrict content with protected labels from being shared via link with everyone in your organization | This setting will prevent content with protection settings in the sensitivity label from being shared via link with everyone in your organization. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2160554" target="_blank">Learn More</a> |
-| **[Export and sharing settings](./service-admin-portal-export-sharing.md)** | |
+| **[Export and sharing settings](/fabric/admin/service-admin-portal-export-sharing)** | |
 | Allow Azure Active Directory guest users to access Microsoft Fabric | Azure Active Directory business-to-business (B2B) guest users can access Microsoft Fabric and Fabric contents that they have permissions to. |
 | Invite external users to your organization | Users can invite external users to the organization through Power BI sharing and permission experiences for reports, dashboards, and apps. Once invited, external users will become Azure Active Directory business-to-business (B2B) guest users. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2038485" target="_blank">Learn More</a> |
 | Allow Azure Active Directory guest users to edit and manage content in the organization |  Users can invite Azure Active Directory business-to-business (B2B) guest users to have the browse experience and request access to content. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2038485" target="_blank">Learn More</a>. |
@@ -109,15 +109,15 @@ Many of the settings can have one of three states:
 | Allow DirectQuery connections to Power BI datasets | DirectQuery connections allow users to make changes to existing datasets or use them to build new ones. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2179788" target="_blank">Learn More</a> |
 | Guest users can work with shared datasets in their own tenants | Authorized guest users can discover datasets shared with them in the OneLake data hub (in Power BI Desktop), and then work with these datasets in their own Power BI tenants. |
 | Allow specific users to turn on external data sharing | Turn off this setting to prevent all users from turning on external data sharing. If this setting is on, all or specific users can turn on the external data sharing option, allowing them to share data with authorized guest users. Authorized guest users can then discover, connect to, and work with these shared datasets in their own Power BI tenants. |
-| **[Discovery settings](./service-admin-portal-discovery.md)** | |
+| **[Discovery settings](/fabric/admin/service-admin-portal-discovery)** | |
 | Make promoted content discoverable | Allow users in this org who can promote content to make content they promote discoverable by users who don't have access to it. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2156467" target="_blank">Learn More</a>  |
 | Make certified content discoverable  | Allow users in the org who can certify content to make content they certify discoverable by users who don't have access to it. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2156467" target="_blank">Learn More</a> |
 | Discover content | Allow users to find and request access to content they don't have access to if it was made discoverable by its owners. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2156467" target="_blank">Learn More</a> |
-| **[Content pack and app settings](./service-admin-portal-content-pack-app.md)** | |
+| **[Content pack and app settings](/fabric/admin/service-admin-portal-content-pack-app)** | |
 | Create template organizational content packs and apps | Users in the organization can create template content packs and apps that use datasets built on one data source in Power BI Desktop. |
 | Push apps to end users | Users can share apps directly with end users without requiring installation from AppSource. |
 | Publish content packs and apps to the entire organization | Users in the organization can publish content packs and apps to the entire organization. |
-| **[Integration settings](./service-admin-portal-integration.md)** | |
+| **[Integration settings](/fabric/admin/service-admin-portal-integration)** | |
 | Allow XMLA endpoints and Analyze in Excel with on-premises datasets | Users in the organization can use Excel to view and interact with on-premises Power BI datasets. This also allows connections to XMLA endpoints. |
 | Dataset Execute Queries REST API | Users in the organization can query datasets by using Data Analysis Expressions (DAX) through Power BI REST APIs. |
 | Use ArcGIS Maps for Power BI | Users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. |
@@ -134,63 +134,63 @@ Many of the settings can have one of three states:
 | Power Platform Solutions Integration (Preview) | Allow integration with Power Platform solutions. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2194433" target="_blank">Learn More</a> |
 | Users can view Power BI items saved in OneDrive and SharePoint (Preview) | Users in the organization can view Power BI items they save in OneDrive for Business or SharePoint document libraries |
 | Users can share links to Power BI files stored in OneDrive and SharePoint through Power BI Desktop | Users who have saved Power BI files (.pbix) to OneDrive and SharePoint can share links to those files using Power BI Desktop.&nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2227462" target="_blank">Learn More</a> |
-| **[Power BI visuals](./service-admin-portal-power-bi-visuals.md)** | |
+| **[Power BI visuals](/fabric/admin/service-admin-portal-power-bi-visuals)** | |
 | Allow visuals created using the Power BI SDK | Users in the organization can add, view, share, and interact with visuals imported from AppSource or from a file. Visuals allowed in the "Organizational visuals" page are not affected by this setting. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2121300" target="_blank">Learn More</a> |
 | Add and use certified visuals only (block uncertified) | Users in the organization with permissions to add and use visuals can add and use certified visuals only. Visuals allowed in the "Organizational visuals" page are not affected by this setting, regardless of certification. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2036068" target="_blank">Learn More</a> |
 | Allow downloads from custom visuals | Enabling this setting will let custom visuals download any information available to the visual (such as summarized data and visual configuration) upon user consent. It is not affected by download restrictions applied in your organization's Export and sharing settings. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2185233&amp;clcid=0x409" target="_blank">Learn More</a> |
-| **[R and Python visuals settings](./service-admin-portal-r-python-visuals.md)** | |
+| **[R and Python visuals settings](/fabric/admin/service-admin-portal-r-python-visuals)** | |
 | Interact with and share R and Python visuals | Users in the organization can interact with and share visuals created with R or Python scripts. |
-| **[Audit and usage settings](./service-admin-portal-audit-usage.md)** | |
+| **[Audit and usage settings](/fabric/admin/service-admin-portal-audit-usage)** | |
 | Usage metrics for content creators | Users in the organization can see usage metrics for dashboards, reports and datasets that they have appropriate permissions to. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2152884" target="_blank">Learn More</a> |
 | Per-user data in usage metrics for content creators | Usage metrics for content creators will expose display names and email addresses of users who are accessing content. |
 | Azure Log Analytics connections for workspace administrators | NO DESCRIPTION IN UI |
-| **[Dashboard settings](./service-admin-portal-dashboard.md)** | |
+| **[Dashboard settings](/fabric/admin/service-admin-portal-dashboard)** | |
 | Web content on dashboard tiles | Users in the organization can add and view web content tiles on Power BI dashboards. Note: This may expose your org to security risks via malicious web content. |
-| **[Developer settings](./service-admin-portal-developer.md)** | |
+| **[Developer settings](/fabric/admin/service-admin-portal-developer)** | |
 | Embed content in apps | Users in the organization can embed Power BI dashboards and reports in Web applications using "Embed for your customers" method. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2141877" target="_blank">Learn More</a> |
 | Allow service principals to use Power BI APIs | Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access Power BI APIs without a signed in user. To allow an app to use service principal authentication its service principal must be included in an allowed security group. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2055030" target="_blank">Learn More</a> |
 | Allow service principals to create and use profiles | Allow service principals in your organization to create and use profiles. |
 | Block ResourceKey Authentication | For extra security, block using resource key based authentication. This means users not allowed to use streaming datasets API using resource key. |
-| **[Admin API settings](./service-admin-portal-admin-api-settings.md)** | |
+| **[Admin API settings](/fabric/admin/service-admin-portal-admin-api-settings)** | |
 | Allow service principals to use read-only admin APIs | Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access read-only admin APIs without a signed in user. To allow an app to use service principal authentication, its service principal must be included in an allowed security group. By including the service principal in the allowed security group, you're giving the service principal read-only access to all the information available through admin APIs (current and future). For example, user names and emails, dataset and report detailed metadata. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2110545" target="_blank">Learn More</a> |
 | Enhance admin APIs responses with detailed metadata | Users and service principals allowed to call Power BI admin APIs may get detailed metadata about Power BI items. For example, responses from GetScanResult APIs will contain the names of dataset tables and columns. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2153790" target="_blank">Learn More</a><br><br>Note: For this setting to apply to service principals, make sure the tenant setting allowing service principals to use read-only admin APIs is enabled. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2110545" target="_blank">Learn More</a> |
 | Enhance admin APIs responses with DAX and mashup expressions | Users and service principals eligible to call Power BI admin APIs will get detailed metadata about queries and expressions comprising Power BI items. For example, responses from GetScanResult API will contain DAX and mashup expressions. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2153889" target="_blank">Learn More</a><br><br>Note: For this setting to apply to service principals, make sure the tenant setting allowing service principals to use read-only admin APIs is enabled. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2110545" target="_blank">Learn More</a> |
-| **[Dataflow settings](./service-admin-portal-dataflow.md)** | |
+| **[Dataflow settings](/fabric/admin/service-admin-portal-dataflow)** | |
 | Create and use dataflows | Users in the organization can create and use dataflows. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=869491" target="_blank">Learn More</a> |
-| **[Template app settings](./service-admin-portal-template-app.md)** | |
+| **[Template app settings](/fabric/admin/service-admin-portal-template-app)** | |
 | Publish template apps | Users in the organization can publish template apps for distribution to clients outside of the organization. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2091856" target="_blank">Learn More</a>. |
 | Install template apps | Users in the organization can install template apps created outside the organization. When a template app is installed, an upgraded workspace is created. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2091014" target="_blank">Learn More</a> |
 | Install template apps not listed in AppSource | Users in the organization who have been granted permission to install template apps which were not published to Microsoft AppSource. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2091200" target="_blank">Learn More</a>. |
-| **[Q&amp;A settings](./service-admin-portal-qa.md)** | |
+| **[Q&amp;A settings](/fabric/admin/service-admin-portal-qa)** | |
 | Review questions | Allow dataset owners to review questions people asked about their data. |
 | Synonym sharing | Allow people to share Q&amp;A synonyms with your organization. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2163449" target="_blank">Learn More</a> |
-| **[Dataset Security](./service-admin-portal-dataset-security.md)** | |
+| **[Dataset Security](/fabric/admin/service-admin-portal-dataset-security)** | |
 | Block republish and disable package refresh | Disable package refresh, and only allow the dataset owner to publish updates. |
-| **[Advanced networking](./service-admin-portal-advanced-networking.md)** | |
+| **[Advanced networking](/fabric/admin/service-admin-portal-advanced-networking)** | |
 | Azure Private Link | Increase security by allowing people to use a Private Link to access your Power BI tenant. Someone will need to finish the set-up process in Azure. If that's not you, grant permission to the right person or group by entering their email. &nbsp;<a href="https://aka.ms/PrivateLinksLearnMore" target="_blank">Learn More</a>  &nbsp;<a href="https://aka.ms/PrivateLinksSetupInstructions" target="_blank">Set-up instructions</a> |
 | Block Public Internet Access | For extra security, block access to your Power BI tenant via the public internet. This means people who don't have access to the Private Link won't be able to get in. Keep in mind, turning this on could take 10 to 20 minutes to take effect.&nbsp;<a href="https://aka.ms/PrivateLinksLearnMore" target="_blank">Learn More</a>&nbsp;<a href="https://aka.ms/PrivateLinksSetupInstructions" target="_blank">Set-up instructions</a> |
-| **[Metrics settings](./service-admin-portal-goals-settings.md)** | |
+| **[Metrics settings](/fabric/admin/service-admin-portal-goals-settings)** | |
 | Create and use Metrics | Users in the organization can create and use Metrics |
-| **[User experience experiments](./service-admin-portal-user-experience-experiments.md)** | |
+| **[User experience experiments](/fabric/admin/service-admin-portal-user-experience-experiments)** | |
 | Help Power BI optimize your experience | Users in this organization will get minor user experience variations that the Power BI team is experimenting with, including content, layout, and design, before they go live for all users. |
-| **[Share data with your Microsoft 365 services](./service-admin-portal-share-data-microsoft-365-services.md)** | |
+| **[Share data with your Microsoft 365 services](/fabric/admin/admin-share-power-bi-metadata-microsoft-365-services)** | |
 | Users can see Microsoft Fabric metadata in Microsoft 365 | Turn on this setting to store and display certain Microsoft Fabric metadata in Microsoft 365 services. Users might see Microsoft Fabric metadata (including content titles and types or open and sharing history) in Microsoft 365 services like search results and recommended content lists. Metadata from Microsoft Fabric datasets will not be displayed.<br><br>Users can browse or get recommendations only for content they have access to. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2202379" target="_blank">Learn More</a><br><br>This setting is automatically enabled only if your Microsoft Fabric and Microsoft 365 tenants are in the same geographical region. You may disable this setting.&nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2237979" target="_blank">Where is my Microsoft Fabric tenant located?</a> |
-| **[Insights settings](./service-admin-portal-insights.md)** | |
+| **[Insights settings](/fabric/admin/service-admin-portal-insights)** | |
 | Receive notifications for top insights (preview) | Users in the organization can enable notifications for top insights in report settings |
 | Show entry points for insights (preview) | Users in the organization can use entry points for requesting insights inside reports |
-| **[Datamart settings](./service-admin-portal-datamart.md)** | |
+| **[Datamart settings](/fabric/admin/service-admin-portal-datamart)** | |
 | Create Datamarts (Preview) | Users in the organization can create Datamarts |
-| **[Data model settings](./service-admin-portal-data-model.md)** | |
+| **[Data model settings](/fabric/admin/service-admin-portal-data-model)** | |
 | Users can edit data models in the Power BI service (preview) | Turn on this setting to allow users to edit data models in the service. This setting doesn't apply to DirectLake datasets or editing a dataset through an API or XMLA endpoint. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2227332" target="_blank">Learn More</a> |
-| **[Quick measure suggestions](./service-admin-portal-quick-measure-suggestions-settings.md)** | |
+| **[Quick measure suggestions](/fabric/admin/service-admin-portal-quick-measure-suggestions-settings)** | |
 | Allow quick measure suggestions (preview) | Allow users to use natural language to generate suggested measures. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2177910" target="_blank">Learn More</a> |
 | Allow user data to leave their geography | Quick measure suggestions are currently processed in the US. When this setting is enabled, users will get quick measure suggestions for data outside the US. &nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2177910" target="_blank">Learn More</a> |
-| **[Scale-out settings](./service-admin-portal-scale-out.md)** | |
+| **[Scale-out settings](/fabric/admin/service-admin-portal-scale-out)** | |
 | Scale out queries for large datasets (Preview) | For datasets that use the large dataset storage format, Power BI Premium can automatically distribute queries across additional dataset replicas when query volume is high. |
 | **[OneLake settings](/fabric/onelake/onelake-security#allow-apps-running-outside-of-fabric-to-access-data-via-onelake)** | |
 | Users can access data stored in OneLake with apps external to Fabric | Users can access data stored in OneLake with apps external to the Fabric environment, such as custom applications created with Azure Data Lake Storage (ADLS) APIs, OneLake File Explorer, and Databricks. Users can already access data stored in OneLake with apps internal to the Fabric environment, such as Spark, Data Engineering, and Data Warehouse.&nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2231198" target="_blank">Learn More</a> |
 | Users can sync data in OneLake with the OneLake File Explorer app | Turn on this setting to allow users to use OneLake File Explorer. This app will sync OneLake items to Windows File Explorer, similar to OneDrive.&nbsp;<a href="https://go.microsoft.com/fwlink/?linkid=2231052" target="_blank">Learn More</a> |
-| **[Git integration](./service-admin-portal-git-integration.md)** | |
+| **[Git integration](/fabric/admin/service-admin-portal-git-integration)** | |
 | Users can synchronize workspace items with their Git repositories (Preview) | Users can import and export workspace items to Git repositories for collaboration and version control. Turn off this setting to prevent users from syncing workspace items with their Git repositories. |
 | Users can export items to Git repositories in other geographical locations (Preview) | The workspace and the Git repository may reside in different geographies. Turn on this setting to allow users to export items to Git repositories in other geographies. |
 | Users can export workspace items with applied sensitivity labels to Git repositories (Preview) | Turn on this setting to allow users to export items with applied sensitivity labels to their Git repositories. |
