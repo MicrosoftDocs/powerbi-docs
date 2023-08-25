@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 03/10/2023
+ms.date: 08/25/2023
 LocalizationGroup: Gateways
 ---
 
@@ -62,7 +62,7 @@ You can also configure a report that is set up for refresh in the Power BI servi
 
 ## Next steps
 
-Now that you understand the basics of enabling SSO through the gateway, read more detailed information about Kerberos and SAML:
+Now that you understand the basics of SSO through the gateway, read detailed information about setting up SSO here:
 
 * [Active Directory (AD) SSO](service-gateway-active-directory-sso.md)
 * [Azure Active Directory (Azure AD) SSO](service-gateway-azure-active-directory-sso.md)
