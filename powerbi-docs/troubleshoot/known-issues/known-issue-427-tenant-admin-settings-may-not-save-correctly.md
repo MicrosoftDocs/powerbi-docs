@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 06/22/2023
+ms.date: 08/24/2023
 ms.custom: known-issue-427
 ---
 
@@ -16,7 +16,7 @@ You may experience issues when making changes to tenant settings and saving. Whe
 
 **APPLIES TO:** ✔️ Power BI Service
 
-**Status:** Open
+**Status:** Fixed: August 24, 2023
 
 **Problem area:** Administration
 
