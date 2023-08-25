@@ -195,10 +195,6 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 
 **Answer:** No. You can only convert a PBIX into a PBIP and vice-versa using Power BI Desktop's **File** > **Save as**.
 
-**Question:** The Publish button is disabled when I'm working in a PBIP. How can I publish my content?
-
-**Answer:** Publish is disabled while this feature is in **preview**. You can either use Fabric Git Integration to publish your work, or save as a PBIX to publish.
-
 **Question:** Can I deploy a Power BI Desktop project to Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS)?
 
 **Answer:** No. Power BI Desktop project report definitions aren't supported in AAS and SSAS. And model definitions use an enhanced metadata unique to Power BI. For AAS and SSAS projects, use Microsoft Visual Studio for model authoring, Git, and Azure DevOps integration.
