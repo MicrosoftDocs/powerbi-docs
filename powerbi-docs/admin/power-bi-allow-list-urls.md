@@ -13,7 +13,7 @@ ms.custom: ''
 
 # Add Power BI URLs to your allowlist
 
-[//]: # "suparnap, miwehnia, natham are contacts for maintaining this list"
+[//]: # "suparnap, miwehnia, natham are contacts for maintaining this list."
 
 The Power BI service requires internet connectivity. The endpoints listed in the following tables should be reachable for customers who use the Power BI service.
 
@@ -32,7 +32,7 @@ Wildcards (*) represent all levels under the root domain. N/A is used when infor
 
 Power BI depends on the required endpoints in the Microsoft 365 authentication and identity sections. To use Power BI, you must be able to connect to the endpoints in the following linked site.
 
-| Purpose | Destination(s) | Port(s) |
+| Purpose | Destination(s) | Port |
 | --- | --- | --- |
 | **Required:** Authentication and identity | See the documentation for [Microsoft 365 Common and Office Online URLs](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online)  | N/A |
 
@@ -40,7 +40,7 @@ Power BI depends on the required endpoints in the Microsoft 365 authentication a
 
 For the general use of Power BI, you must be able to connect to the endpoints and linked sites in the following table.
 
-| Purpose | Destination(s) | Port(s) |
+| Purpose | Destination(s) | Port |
 | --- | --- | --- |
 | **Required:** Backend APIs | api.powerbi.com | TCP 443 |
 | **Required:** Backend APIs | *.analysis.windows.net | TCP 443 |
@@ -56,15 +56,15 @@ For the general use of Power BI, you must be able to connect to the endpoints an
 
 To perform administrative functions in Power BI, you must be able to connect to the endpoints in the following linked sites.
 
-| Purpose | Destination(s) | Port(s) |
+| Purpose | Destination(s) | Port |
 | --- | --- | --- |
 | **Required:** For managing users and viewing audit logs | See the documentation for [Microsoft 365 Common and Office Online URLs](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
 
 ## Getting data
 
-To get data from specific data sources, such as OneDrive, you must be able to connect to the endpoints in the following table. Access to additional internet domains and URLs might be required for specific data sources that your organization uses.
+To get data from specific data sources, such as OneDrive, you must be able to connect to the endpoints in the following table. Access to other internet domains and URLs might be required for specific data sources that your organization uses.
 
-| Purpose | Destination(s) | Port(s) |
+| Purpose | Destination(s) | Port |
 | --- | --- | --- |
 | **Required:** AppSource (internal or external apps in Power BI) | appsource.microsoft.com <br> *.s-microsoft.com  | TCP 443 |
 | **Optional:** Import files From OneDrive personal | See the [Required URLs and ports for OneDrive site](/onedrive/required-urls-and-ports) | N/A |
@@ -75,7 +75,7 @@ To get data from specific data sources, such as OneDrive, you must be able to co
 
 Power BI depends on certain endpoints to support your dashboards and reports. You must be able to connect to the endpoints and linked sites in the following table.
 
-| Purpose | Destination(s) | Port(s) |
+| Purpose | Destination(s) | Port |
 | --- | --- | --- |
 | **Required:** Excel integration | See the documentation for [Microsoft 365 Common and Office Online URLs](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
 
@@ -83,7 +83,7 @@ Power BI depends on certain endpoints to support your dashboards and reports. Yo
 
 Power BI depends on certain endpoints to view and access Power BI visuals. You must be able to connect to the endpoints and linked sites in the following table.
 
-| Purpose | Destination(s) | Port(s) |
+| Purpose | Destination(s) | Port |
 | --- | --- | --- |
 | **Required:** Import a custom visual from the Marketplace interface or from a file | *.osi.office.net <br> *.msecnd.net <br> store.office.com <br> web.vortex.data.microsoft.com <br> store-images.s-microsoft.com <br> visuals.azureedge.net <br> *.powerbi.com | TCP 443 |
 | **Optional:**  Azure Maps | `https://atlas.microsoft.com`<br>`https://us.atlas.microsoft.com`<br>`https://eu.atlas.microsoft.com` | N/A |
@@ -96,7 +96,7 @@ Power BI depends on certain endpoints to view and access Power BI visuals. You m
 
 Power BI depends on certain endpoints to support integration with OneDrive for Business and SharePoint Online. You must be able to connect to the endpoints and linked sites in the following table.
 
-| Purpose | Destination(s) | Port(s) |
+| Purpose | Destination(s) | Port |
 | --- | --- | --- |
 | **Required:** OneDrive and SharePoint integration | See the documentation for  [SharePoint Online and OneDrive for Business URLs](/office365/enterprise/urls-and-ip-address-ranges##sharepoint-online-and-onedrive-for-business) | N/A |
 
@@ -104,7 +104,7 @@ Power BI depends on certain endpoints to support integration with OneDrive for B
 
 Power BI links to other related sites. These sites host documentation, support, new feature requests, and more. Access to these sites doesn't affect the functionality of Power BI, so adding them to allowlists is optional.
 
-| Purpose | Destination(s) | Port(s) |
+| Purpose | Destination(s) | Port |
 | --- | --- | --- |
 | **Optional:** Community site | community.powerbi.com <br> oxcrx34285.i.lithium.com | TCP 443 |
 | **Optional:** Documentation site | learn.microsoft.com <br> img-prod-cms-rt-microsoft-com.akamaized.net <br> statics-uhf-eas.akamaized.net <br> cdnssl.clicktale.net <br> ing-district.clicktale.net | TCP 443 |
