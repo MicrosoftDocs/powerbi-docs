@@ -1,14 +1,14 @@
 ---
 title: "Power BI implementation planning"
 description: "An introduction to the Power BI implementation planning series of articles."
-author: data-goblin
-ms.author: v-kurtbuhler
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.custom: video-RWUWA9
 ms.topic: conceptual
-ms.date: 04/17/2023
+ms.date: 08/27/2023
 ---
 
 # Power BI implementation planning
@@ -25,7 +25,7 @@ When you implement Power BI, there are many subject areas to consider. The follo
 
 - BI strategy
 - User needs and opportunities
-- Authoring tools and user machines
+- [User tools and devices](powerbi-implementation-user-tools-and-devices.md)
 - [Tenant setup](powerbi-implementation-planning-tenant-setup.md)
 - Subscriptions, licenses, and trials
 - Roles and responsibilities
