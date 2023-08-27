@@ -12,9 +12,10 @@ ms.custom: ''
 ---
 
 # Add Power BI URLs to your allowlist
+
 [//]: # "suparnap, miwehnia, natham are contacts for maintaining this list"
 
-The Power BI service requires connectivity to the internet. The endpoints listed in the tables in this article should be reachable for customers who use the Power BI service.
+The Power BI service requires internet connectivity. The endpoints listed in the following tables should be reachable for customers who use the Power BI service.
 
 To use the Power BI service, you must be able to connect to the endpoints marked **required** in the tables in this article, and to any endpoints marked **required** on the linked sites. If the link to an external site refers to a specific section, you only need to review the endpoints in that section.
 
@@ -84,7 +85,7 @@ Power BI depends on certain endpoints to view and access Power BI visuals. You m
 
 | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- |
-| **Required:** Import a custom visual from the Marketplace interface or from a file | *.osi.office.net <br> *.msecnd.net <br> store.office.com <br> web.vortex.data.microsoft.com <br> store-images.s-microsoft.com | TCP 443 |
+| **Required:** Import a custom visual from the Marketplace interface or from a file | *.osi.office.net <br> *.msecnd.net <br> store.office.com <br> web.vortex.data.microsoft.com <br> store-images.s-microsoft.com <br> visuals.azureedge.net <br> *.powerbi.com | TCP 443 |
 | **Optional:**  Azure Maps | `https://atlas.microsoft.com`<br>`https://us.atlas.microsoft.com`<br>`https://eu.atlas.microsoft.com` | N/A |
 | **Optional:** Bing Maps | bing.com <br> platform.bing.com <br> r.bing.com <br> *.virtualearth.net | TCP 443 |
 | **Optional:** Esri Maps | *.esri.com <br> *.arcgis.com | TCP 443 |
