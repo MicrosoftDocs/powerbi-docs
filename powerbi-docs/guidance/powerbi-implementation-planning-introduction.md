@@ -25,7 +25,7 @@ When you implement Power BI, there are many subject areas to consider. The follo
 
 - BI strategy
 - User needs and opportunities
-- [User tools and devices](powerbi-implementation-user-tools-and-devices.md)
+- [User tools and devices](powerbi-implementation-planning-user-tools-devices.md)
 - [Tenant setup](powerbi-implementation-planning-tenant-setup.md)
 - Subscriptions, licenses, and trials
 - Roles and responsibilities

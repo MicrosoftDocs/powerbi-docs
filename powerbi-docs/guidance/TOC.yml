@@ -204,7 +204,7 @@
       - name: "Introduction"
         href: powerbi-implementation-planning-introduction.md
       - name: "User tools and devices"
-        href: powerbi-implementation-user-tools-and-devices.md
+        href: powerbi-implementation-planning-user-tools-devices.md
       - name: "Tenant setup"
         href: powerbi-implementation-planning-tenant-setup.md
       - name: Workspaces
