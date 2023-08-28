@@ -128,7 +128,7 @@
       - name: Scale-out settings
         href: /fabric/admin/service-admin-portal-scale-out.md
       - name: Git integration settings
-        href: /fabric/admin/service-admin-portal-git-integration.md
+        href: /fabric/admin/git-integration-admin-settings.md
   - name: Capacity settings
     expanded: false
     items:
