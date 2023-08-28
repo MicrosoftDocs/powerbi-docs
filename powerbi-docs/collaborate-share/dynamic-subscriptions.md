@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/25/2023
+ms.date: 08/26/2023
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -108,13 +108,13 @@ The **Parameters** window displays all of your report parameters, and you choose
 In the **Set the schedule** window, create a schedule for your dynamic subscription. 
 1. Select a Start date and optionally, an End date for your subscription. By default, the start date is the date you created the subscription and the end date is one year later. You can change it to any date in the future at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You receive notifications before the scheduled end date to ask if you'd like to extend it.
 
-1. Use the **Repeat** dropdown to select a frequency for your subscription. You may choose hourly, daily, weekly, monthly, or after data refresh (once daily). Most of the options require that you set a time zone as well.
+1. Use the **Repeat** dropdown to select a frequency for your subscription. You may choose daily, weekly, or monthly. You also have the option to adjust your time zone. 
  
     > [!TIP]
-   > To receive a subscription email only on certain days, select Hourly or Weekly and then select the week day checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
+   > To receive a subscription email only on certain days, select Weekly and then select the week day checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
 
     
-1. If you choose Hourly, Daily, Weekly, or Monthly, choose a Scheduled Time for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past for a specified time zone. If you choose Hourly, select the Scheduled time you want the subscription to start, and it runs every hour after the Scheduled time.
+1. Choose a Scheduled Time for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past for a specified time zone. 
 
     :::image type="content" source="media/dynamic-subscriptions/power-bi-subscription.png" alt-text="Screenshot of the Power BI service showing the Schedule window.":::
 
