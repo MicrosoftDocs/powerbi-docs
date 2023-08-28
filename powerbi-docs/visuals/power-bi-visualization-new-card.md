@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 08/24/2023
+ms.date: 08/28/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -21,7 +21,7 @@ The card (new) is a helpful visual that presents important metrics such as total
 :::image type="content" source="media/power-bi-visualization-new-card/power-bi-opportunities-card.png" alt-text="Screenshot of card visualization.":::
 
 > [!IMPORTANT]
-    > The card (new) visual is currently in PREVIEW and only available for Power BI Desktop. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> The card (new) visual is currently in PREVIEW and only available for Power BI Desktop. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 ## Prerequisites 
 
