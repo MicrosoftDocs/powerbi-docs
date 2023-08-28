@@ -440,7 +440,7 @@ In this situation, if we try to combine *Purchase[VenID]* and *Sales[CustID]* in
 
 :::image type="content" source="media/desktop-create-and-manage-relationships/create-manage-relationships-02.png" alt-text="Screenshot of an error dialog when relationship can’t be inferred. Alternatively, Screenshot of an error dialog where relationship isn’t inferred.":::
 
-**Scenario 4: Non-star schema and measure constraint provided.** If we take the example from Scenario 3, and add a user provided constraint in the form of a summarized column (*Count of Product[ProdID]* for example) or a model measure (*Sales[Total Qty]*) Power, BI can generate a query in the form of *Correlate Purchase[VenID]* and *Sales[CustID]* where *MeasureConstraint* isn't blank.
+**Scenario 4: Non-star schema and measure constraint provided.** If we take the example from Scenario 3, and add a user provided constraint in the form of a summarized column (*Count of Product[ProdID]* for example) or a model measure (*Sales[Total Qty]*), Power BI can generate a query in the form of *Correlate Purchase[VenID]* and *Sales[CustID]* where *MeasureConstraint* isn't blank.
 
 In this case, Power BI respects the user's constraint as being the sole constraint Power BI needs to apply, and return the combinations that produce non-blank values for it. The user has guided Power BI to the scenario it wants, and Power BI applies the guidance.
 
