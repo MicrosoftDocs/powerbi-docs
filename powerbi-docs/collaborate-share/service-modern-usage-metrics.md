@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/13/2023
+ms.date: 08/29/2023
 LocalizationGroup: Dashboards
 ---
 
@@ -321,10 +321,13 @@ In addition to the above differences between previous and improved usage metrics
     - Dataset re-initialization
        - Each time a new dataset is created, a new report could be created.
 - The usage metrics report is not supported in My Workspace.
+- During the process of [disaster recovery (while Business continuity and disaster recovery (BCDR)](/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery) is in progress) any new incoming data experiencing data loss may be irrecoverable.
+- Certain metrics in usage metrics report aren't included in audit logs. For example, report page views aren't part of audit logs.
+- When a report is deleted, the ReportIds can show up in the usage metrics but not be available in the Reports dataset.
 
 ## Frequently asked questions
 
-In addition to the above considerations and limitations, the following questions and answers about usage metrics might be helpful for users and administrators:
+In addition to the above considerations and limitations, the following questions and answers about usage metrics might be helpful for users and administrators.
 
 #### **Why do I see fewer Report Page Views than Report Views, shouldn't they be at least the same?** 
 Report Views rely on server telemetry that is generated when the report is first opened. Once a report is open, its page definitions are already loaded onto the user's device. Report Page Views rely on usage information from the user's device reaching Power BI. This can sometimes be blocked, as described in [Considerations and Limitations](#considerations-and-limitations).
@@ -433,3 +436,4 @@ Follow these steps to delete the dataset and then create a fresh data refresh re
 [Administering Power BI in the admin portal](../admin/service-admin-portal.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
+
