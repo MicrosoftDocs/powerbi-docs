@@ -7,11 +7,27 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/29/2022
+ms.date: 08/23/2023
 LocalizationGroup: Data refresh
 ---
 
 # Refresh a dataset created from an Excel workbook on OneDrive or SharePoint Online
+
+> [!IMPORTANT]
+> The following capabilities are deprecated and will no longer be available starting September 29th, 2023:
+> - Upload of local workbooks to Power BI workspaces will no longer be allowed.
+> - Configuring scheduling of refresh and refresh now for Excel files that don’t already have scheduled refresh configured will no longer be allowed.
+>
+> The following capabilities are deprecated and will no longer be available starting October 31, 2023:
+> - Scheduled refresh and refresh now for existing Excel files that were previously configured for scheduled refresh will no longer be allowed.
+> - Local workbooks uploaded to Power BI workspaces will no longer open in Power BI.
+>
+> After October 31, 2023:
+> - You can download existing local workbooks from your Power BI workspace.
+> - You can publish your Excel data model as a Power BI dataset and schedule refresh.
+> - You can import Excel workbooks from OneDrive and SharePoint Document libraries to view them in Power BI.
+>
+> If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](service-excel-workbook-files.md#migrating-your-excel-workbooks).  
 
 You can import Excel workbooks from your local machine, or from cloud storage such as OneDrive for work or school or SharePoint Online. This article explores the advantages of using cloud storage for your Excel files. For more information about how to import Excel files into Power BI, see [Get data from Excel workbook files](service-excel-workbook-files.md).
 
@@ -49,7 +65,6 @@ Power BI supports the **Refresh Now** and **Schedule Refresh** options for datas
 If you have both a personal OneDrive and OneDrive for work or school, it’s recommended you keep files you want to import in OneDrive for work or school. Here’s why: You likely use two different accounts to sign in and access your files.
 
 In Power BI, connecting to OneDrive for work or school is typically seamless because you likely use the same account to sign in to Power BI as OneDrive for work or school. But with personal OneDrive, it's more common to sign in with a different [Microsoft account](https://account.microsoft.com).
->>>>>>> 837e862abf2aaf7c124dd4017ed51c5416d7e5b2
 
 When you sign in to OneDrive for work or school with your Microsoft account, select **Keep me signed in**. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI.  
 
