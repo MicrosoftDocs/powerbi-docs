@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/13/2023
+ms.date: 08/29/2023
 LocalizationGroup: Dashboards
 ---
 
@@ -209,7 +209,7 @@ In addition to potential differences between usage metrics and audit logs, the f
 
 **A1:** Admins can turn off this feature for their organization.  Contact your admin to see if this is the case.
 
-**A2:** Usage metrics is a Power BI Pro feature.
+**A2:** Usage metrics reports are a Power BI Pro feature.
 
 ### The data doesn't seem up to date. For example, distribution methods don't show up, report pages are missing, and so on.
 
