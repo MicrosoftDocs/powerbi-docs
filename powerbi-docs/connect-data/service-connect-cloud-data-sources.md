@@ -12,9 +12,8 @@ LocalizationGroup: Connect to data
 ---
 # Connect to cloud data sources in the Power BI service (Preview)
 
-With Power BI, you can share cloud connections for datasets and paginated reports, enabling you to create multiple connection objects to the same cloud data source. For example, you can create separate connections to the same data source, with different credentials or privacy settings, and share the connections with others, alleviating the need for those users to manage their own separate cloud connections. 
+With Power BI, you can share cloud connections for datasets and paginated reports, datamarts and dataflows, as well as Power Query Online experiences in *Get data*, enabling you to create multiple connection objects to the same cloud data source. For example, you can create separate connections to the same data source, with different credentials or privacy settings, and share the connections with others, alleviating the need for those users to manage their own separate cloud connections. 
 
-Previously, shareable cloud connections were only available with Data Pipelines and Kusto. Now shareable cloud connections are also available to datasets and paginated reports.
 
 ## Types of data connections
 
@@ -28,9 +27,9 @@ The following table shows how various types of connections map to the two primar
 
 ## Advantages of shareable cloud connections
 
-Connections using a personal data gateway come with several limitations. For example, with a personal data gateway connection you can only create a single personal connection object to a given data source. All datasets that connect to the data source use the same personal connection object, so if you change the credentials of the personal data gateway connection, all datasets using that personal data connection are affected. Often that's not a desired outcome.
+Connections using a personal cloud connection come with several limitations. For example, with a personal cloud connection you can only create a single personal cloud connection object to a given data source. All datasets that connect to the data source use the same personal cloud connection object, so if you change the credentials of the personal cloud connection, all datasets using that personal cloud connection are affected. Often that's not a desired outcome.
 
-Another limitation of personal data gateway connections is that they can't be shared with others, so other users can't bind their datasets and paginated reports to the personal data gateway connections you own; users must maintain their own personal connections. 
+Another limitation of personal cloud connection is that they can't be shared with others, so other users can't bind their datasets and paginated reports to the personal cloud connection you own; users must maintain their own personal cloud connections. 
 
 Shareable connections have no such limitations, and provide for more streamlined, more flexible connection management, including the following:
 
@@ -46,7 +45,7 @@ By default, when you create a Power BI Desktop report that connects to a cloud d
 
 In contrast, if you have access to at least one shareable cloud connection to the same data source, you can use the shareable cloud connection, which has already been configured for you by its owner, instead of having to use your only available personal cloud connection for the data source. 
 
-To use the shareable cloud connection, on the **Datasets** settings page, under **Gateway connections**, find **Cloud connections** and can select the shareable cloud connection you want to use for the connection, then select **Apply**. The following screenshot shows the settings.
+To use the shareable cloud connection, on the **Datasets** settings page, under **Gateway and cloud connections**, find **Cloud connections** and can select the shareable cloud connection you want to use for the connection, then select **Apply**. The following screenshot shows the settings.
 
 :::image type="content" source="media/service-connect-cloud-data-sources/service-connect-cloud-data-sources-01.png" alt-text="Screenshot of connecting to a shareable cloud connection.":::
 
@@ -77,10 +76,7 @@ Selecting **Manage** presents a page with several tabs. Select the **Reports** t
 
 ## Limitations and considerations
 
-* **Shareable cloud connections also share your credentials** - when you allow others to user your shareable cloud connections, it's important to understand that you're also sharing its connection details, including the credentials. Users who can use  your shareable cloud connections can use the credentials *you provided* to connect their own datasets, paginated reports, and other artifacts to the corresponding data sources. So, make sure you only share your shareable cloud connection (and thus, its credentials) that you're authorized to share.
-
-* **Not available for OneDrive or Sharepoint Online** - Power BI Desktop files (PBIX files) stored on OneDrive or SharePoint Online don't currently support shareable cloud connections.
-
+* **Shareable cloud connections also share your credentials** - when you allow others to user your shareable cloud connections, it's important to understand that you're letting others connect their own datasets, paginated reports, and other artifacts to the corresponding data sources by using the connection details and credentials you provided. Make sure you only share connections (and their credentials) that you're authorized to share.
 
 
 ## Next steps

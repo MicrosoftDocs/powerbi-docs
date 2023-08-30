@@ -12,7 +12,7 @@ LocalizationGroup: Connect to data
 ---
 # Create and share cloud data sources in the Power BI service (Preview)
 
-With Power BI, you can create, share, and manage cloud connections for datasets and paginated reports, all within the Power BI service user experience.
+With Power BI, you can create, share, and manage cloud connections for datasets and paginated reports, datamarts and dataflows, as well as Power Query Online experiences in *Get data*, all within the Power BI service user experience.
 
 This article shows you how to create a shareable cloud connection, and then shows you how to share that connection with others. Creating and sharing shareable cloud connections have many advantages, as described in [advantages of shareable cloud connections](service-connect-cloud-data-sources.md#advantages-of-shareable-cloud-connections).
 
@@ -40,7 +40,7 @@ To share a shareable cloud connection that you've already created, go to your **
 
 :::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-04.png" alt-text="Screenshot of adding users to a shareable connection.":::
 
-The **Manage users** window appears, where you can search users by name or by their email address, and then grant them the permission level you want them to have. You must at least grant *User* permission level to any users whom you want to be able to use the connection.
+The **Manage users** window appears, where you can search users by name or by their email address, and then grant them the permission level you want them to have. You must at least grant *User* permission to allow users to connect their artifacts to the connection's data source.
 
 :::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-05.png" alt-text="Screenshot of applying user permission to a shareable cloud connection.":::
 
@@ -55,7 +55,7 @@ Open the settings for the dataset to which you want the shareable connection to 
 
 :::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-06.png" alt-text="Screenshot of cloud connection defaulting to personal cloud connection.":::
 
-From the **Maps to** drop down, select the name of the shareable connection you create and want to use, then select **Apply**.
+From the **Maps to** drop down, select the name of the shareable connection you created and want to use, then select **Apply**.
 
 :::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-07.png" alt-text="Screenshot of selecting a shareable cloud connection for a dataset.":::
 
