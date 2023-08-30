@@ -183,7 +183,7 @@ If user information is excluded, the usage report refers to users as 'Unnamed Us
 
     ![Screenshot of disabling per-user metrics.](media/service-modern-usage-metrics/power-bi-admin-disable-per-user-metrics.png)
 
-When admins disable usage metrics for their entire organization, they can use the **Delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
+When disabling usage metrics for their entire organization, admins can use the Delete all existing usage metrics content option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and configure the Per-user data in usage metrics for content creators setting.
@@ -346,7 +346,7 @@ The usage report includes activity data up until the last complete day based on 
 Note that it might take up to 24 hours for new activity data to appear in the usage report.
 
 #### **What is the data source for the usage data?**
-The Usage Metrics Report dataset imports data from a Power BI internal usage metrics store by using a custom Usage Metrics Data Connector. You can update the credentials for the Usage Metrics Data Connector on the Usage Metrics Report dataset settings page.
+The Usage Metrics Report dataset imports data from a Power BI-internal usage metrics store by using a custom Usage Metrics Data Connector. You can update the credentials for the Usage Metrics Data Connector on the Usage Metrics Report dataset settings page.
 
 #### **How can I connect to the data? Or change the default report?**
 You can create a copy of the read-only, pre-built usage report. The report copy connects to the same Usage Metrics Report dataset and enables you to edit the report details.
