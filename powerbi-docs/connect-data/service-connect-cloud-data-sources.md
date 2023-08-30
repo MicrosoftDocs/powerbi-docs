@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/23/2023
+ms.date: 08/30/2023
 LocalizationGroup: Connect to data
 ---
 # Connect to cloud data sources in the Power BI service (Preview)
@@ -84,6 +84,11 @@ Selecting **Manage** presents a page with several tabs. Select the **Reports** t
 
 
 ## Next steps
+
+For more information about creating shareable cloud connections:
+
+[Create and share cloud data sources in the Power BI service (Preview)](service-create-share-cloud-data-sources.md)
+
 
 You can do all sorts of things with the Power BI service and Power BI Desktop. For more information on its capabilities, check out the following resources:
 
