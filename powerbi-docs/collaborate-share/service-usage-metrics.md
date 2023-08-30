@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/13/2023
+ms.date: 08/29/2023
 LocalizationGroup: Dashboards
 ---
 
@@ -178,6 +178,7 @@ It's important to understand that differences can occur when comparing usage met
 * Certain types of views aren't included in usage metrics, as described earlier in this article.
 * Usage metrics may sometimes overcount activities, in situations where the client refreshes without the need for a request being sent back to the Power BI service. For example, switching report pages doesn't issue a request a report load to the server since the page definition is already in the browser.
 * Sharing is disabled for the usage metrics report. To give people read access to the report, you first need to give them access to the workspace.
+* Certain metrics in usage metrics report aren't included in audit logs. For example, report page views aren't part of audit logs.
 
 ### Discrepancies between REST APIs and usage metrics
 
@@ -208,7 +209,7 @@ In addition to potential differences between usage metrics and audit logs, the f
 
 **A1:** Admins can turn off this feature for their organization.  Contact your admin to see if this is the case.
 
-**A2:** Usage metrics is a Power BI Pro feature.
+**A2:** Usage metrics reports are a Power BI Pro feature.
 
 ### The data doesn't seem up to date. For example, distribution methods don't show up, report pages are missing, and so on.
 
