@@ -183,7 +183,7 @@ If user information is excluded, the usage report refers to users as 'Unnamed Us
 
     ![Screenshot of disabling per-user metrics.](media/service-modern-usage-metrics/power-bi-admin-disable-per-user-metrics.png)
 
-When admons disable usage metrics for their entire organization, they can use the **Delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
+When admins disable usage metrics for their entire organization, they can use the **Delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and configure the Per-user data in usage metrics for content creators setting.
