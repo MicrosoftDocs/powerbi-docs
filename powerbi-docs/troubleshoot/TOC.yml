@@ -101,7 +101,7 @@
       - name: Troubleshoot Power BI REST APIs
         href: ../developer/embedded/troubleshoot-rest-api.md  
       - name: Troubleshoot deployment pipelines
-        href: ../create-reports/deployment-pipelines-troubleshooting.yml     
+        href: /fabric/cicd/troubleshoot-cicd     
     - name: Account and license
       expanded: false
       items:

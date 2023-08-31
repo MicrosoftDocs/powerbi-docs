@@ -101,7 +101,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | Analysis Service engine semantic modeling | Yes | Yes |
 | **Model management** |||
 | [Incremental refresh](../connect-data/incremental-refresh-overview.md), which uses policies to automate partition management and can help deliver near real-time reporting (see hybrid tables) | No | Yes |
-| [Deployment pipelines](../create-reports/deployment-pipelines-overview.md), which manage the lifecycle of Power BI content | No | Yes |
+| [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines), which manage the lifecycle of Power BI content | No | Yes |
 | [Scheduled refresh](../connect-data/refresh-scheduled-refresh.md), which keeps cached dataset data current | No | Yes |
 | [Enhanced refresh](../connect-data/asynchronous-refresh.md), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes |
 | [Backup and restore](../enterprise/service-premium-backup-restore-dataset.md) | Yes | Yes |

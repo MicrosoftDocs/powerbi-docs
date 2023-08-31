@@ -220,7 +220,7 @@ Common characteristics of phase 3 solution adoption include:
 Common characteristics of phase 4 solution adoption include:
 
 - Target users actively and routinely use the solution, and it's considered essential for decision-making purposes.
-- The solution resides in a [production workspace](/power-bi/create-reports/deployment-pipelines-overview) well-separated from development and test content. Change management and release management are carefully controlled due to the impact of changes.
+- The solution resides in a [production workspace](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) well-separated from development and test content. Change management and release management are carefully controlled due to the impact of changes.
 - A subset of users regularly provides feedback to ensure the solution continues to meet requirements.
 - Expectations for the success of the solution are clear and are measured.
 - Expectations for support of the solution are clear, especially if there are service level agreements.

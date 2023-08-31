@@ -1015,31 +1015,7 @@
     - name: Embed a paginated report
       href: ../paginated-reports/paginated-reports-embed.md      
     - name: PDF Rendering Extension conformance to ISO 14289-1
-      href: ../report-server/rendering-extension-support.md
-  - name: Deployment pipelines
-    items:
-    - name: Introduction to deployment pipelines
-      href: deployment-pipelines-overview.md
-    - name: The deployment pipelines process
-      href: deployment-pipelines-process.md
-    - name: Get started
-      href: deployment-pipelines-get-started.md   
-    - name: Assign a workspace
-      href: deployment-pipelines-assign.md
-    - name: Compare content in different stages
-      href: deployment-pipelines-compare.md
-    - name: Deploy content to the next stage
-      href: deployment-pipelines-deploy.md
-    - name: Deployment history
-      href: deployment-pipelines-history.md  
-    - name: Deployment rules
-      href: deployment-pipelines-create-rules.md                      
-    - name: Automate deployment pipelines
-      href: deployment-pipelines-automation.md         
-    - name: Best practices
-      href: deployment-pipelines-best-practices.md
-    - name: Troubleshooting
-      href: deployment-pipelines-troubleshooting.yml      
+      href: ../report-server/rendering-extension-support.md  
   - name: Accessibility
     items:       
     - name: About accessibility

@@ -311,7 +311,7 @@ The following list includes items that you may choose to prioritize when introdu
 - Allowed or encouraged use of [personal gateways](/power-bi/connect-data/service-gateway-personal-mode)
 - Allowed or encouraged use of [self-service purchasing](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide&preserve-view=true) of user licenses
 - Requirements for who may [certify](/power-bi/collaborate-share/service-endorse-content) datasets, as well as requirements that must be met
-- Application lifecycle management for managing content through its entire lifecycle, including [development, test, and production stages](/power-bi/create-reports/deployment-pipelines-overview)
+- Application lifecycle management for managing content through its entire lifecycle, including [development, test, and production stages](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines)
 - Additional requirements applicable to critical content, such as data quality verifications and documentation
 - Requirements to use standardized master data and common data definitions to improve consistency across datasets and reports
 - Recommendations and requirements for use of [external tools](/power-bi/transform-model/desktop-external-tools) by advanced content creators
