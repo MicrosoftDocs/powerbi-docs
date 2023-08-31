@@ -3,7 +3,7 @@
 # For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
 # For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
 
-title:       Consent to Access Customer Data
+title:       Consent to Access Customer Data #ms.topic
 description: Getting customer's consent to access their data
 author:      royrubinstein # GitHub alias
 ms.author:   royrubinstein # Microsoft alias
@@ -21,7 +21,7 @@ Microsoft may need to access customer data in your tenant to investigate and tro
 
 You may grant a varying degree of consent or deny consent altogether when you submit a support request.
 
-![Screenshot of a support request with Allow access for advanced investigation and creation of support environment highlighted.](https://learn.microsoft.com/en-us/power-platform/admin/media/support-allow-access.png)
+![Screenshot of a support request with Allow access for advanced investigation and creation of support environment highlighted.](https://learn.microsoft.com/power-platform/admin/media/support-allow-access.png)
 
 ### What does my consent allow?
 
@@ -55,6 +55,6 @@ A change in consent takes effect immediately.
 
 1. Select a consent option, and then select **Save**.
 
-![Screenshot of a support request with consent information highlighted.](https://learn.microsoft.com/en-us/power-platform/admin/media/support-consent-ticket.png)
+![Screenshot of a support request with consent information highlighted.](https://learn.microsoft.com/power-platform/admin/media/support-consent-ticket.png)
 
 
