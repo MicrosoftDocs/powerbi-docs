@@ -1,13 +1,13 @@
 ---
 title: "Power BI adoption roadmap: System oversight"
 description: Apply system oversight consisting of administrative activities to drive strong and successful adoption of Power BI.
-author: data-goblin
-ms.author: v-kurtbuhler
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 05/29/2023
+ms.date: 08/31/2023
 ---
 
 # Power BI adoption roadmap: System oversight
@@ -133,9 +133,19 @@ Key topics for managing the Power BI service include:
 
 ## User machines and devices
 
-The management of user machines and devices is usually a responsibility of the IT department. The adoption of Power BI depends directly on content creators and consumers having the applications they need installed and configured correctly.
+The management of user machines and devices is usually a responsibility of the IT department. The adoption of Power BI depends directly on content creators and consumers having the applications they need.
 
-The following [software installations](https://powerbi.microsoft.com/downloads/) are available for content creators:
+Here are some questions that can help you plan for user machines and devices.
+
+- How will users request access to new tools? Will access to licenses, data, and training be available to help users use tools effectively?
+- How will content consumers view content that's been published by others?
+- How will content creators develop, manage, and publish content? What's your criteria for deciding which tools and applications are appropriate for each use case?
+- How will you install and set up tools? Does that include related prerequisites and data connectivity components?
+- How will you manage ongoing updates for tools and applications?  
+
+For more information, see [User tools and devices](powerbi-implementation-planning-user-tools-devices.md).
+
+The following [software installations](https://powerbi.microsoft.com/downloads/) are available for content creators.
 
 | **Software** | **Audience** |
 | --- | --- |

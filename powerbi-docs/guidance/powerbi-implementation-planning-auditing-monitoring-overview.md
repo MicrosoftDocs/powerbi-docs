@@ -1,13 +1,13 @@
 ---
 title: "Power BI implementation planning: Auditing and monitoring"
 description: "An introduction to the Power BI auditing and monitoring planning articles."
-author: data-goblin
-ms.author: v-kurtbuhler
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/25/2023
+ms.date: 08/31/2023
 ---
 
 # Power BI implementation planning: Auditing and monitoring
@@ -92,7 +92,7 @@ It's useful to understand which users are most active. The types of questions yo
 > [!TIP]
 > For analytical reporting, it's important that you add classifications to the data model to analyze users based on their level of usage, or to analyze content based on its level of usage. For more information, see [Create classifications](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#create-classifications)
 
-For more information about the Power BI activity log, see [Access user activity data](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data).
+For more information about the Power BI activity log, see [Access user activity data](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data). For more information about pre-built reports, see [What is the admin monitoring workspace?](/fabric/admin/monitoring-workspace).
 
 ### Understand published items
 
@@ -139,6 +139,7 @@ Auditing data helps you to:
 - **Review data sources:** Determine whether unknown or unexpected data sources are used by datasets, dataflows, or datamarts. You might also determine what types of data source are in use (such as files or databases). You might also check whether files are stored in an appropriate location (such as OneDrive for work or school).
 - **Information protection:** Review how sensitivity labels are used to reduce the risk of data leakage and misuse of data. For more information, see the [information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) series of articles.
 - **Mentoring and user enablement:** Take action to change user behaviors when necessary. As you gain more knowledge about what users need and what actions they are taking, you can influence [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) activities.
+- **Monitor tenant setting changes:** Use the activity log data to determine when a [tenant setting](/power-bi/admin/service-admin-portal-about-tenant-settings) has changed. If you see that an unexpected change has occurred, or that it was done by an unexpected user, you can act quickly to correct or revert the setting. You can also use the [Get Tenant Settings](/rest/api/fabric/admin/tenants/get-tenant-settings) REST API to regularly extract a snapshot of the tenant settings.
 
 ### Improve compliance
 

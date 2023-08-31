@@ -26,9 +26,11 @@ The following table shows the required synchronization for each refresh method w
 |-------------------|----------------------|
 | OnDemand UI       | Always syncs         |
 | Scheduled Refresh | Always syncs         |
-| Basic REST API    | Manual sync required |
-| Advanced REST API | Manual sync required |
-| XMLA              | Manual sync required |
+| Basic REST API    | Manual sync required <sup>[1](#setting)</sup>|
+| Advanced REST API | Manual sync required <sup>[1](#setting)</sup>|
+| XMLA              | Manual sync required <sup>[1](#setting)</sup>|
+
+<a name="setting">1</a> - With `autoSyncReadOnlyReplicas` in `queryScaleOutSettings` set to false.
 
 ## Prerequisites
 
