@@ -496,7 +496,7 @@ You can use your preferred tool and your preferred language to send requests to 
 
 ###### Microsoft Purview audit search
 
-The [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-worldwide&preserve-view=true) (formerly the Microsoft 365 compliance center) includes a user interface that allows you to view and search the [audit logs](http://microsoft-365/compliance/audit-log-search?view=o365-worldwide&preserve-view=true). The unified audit logs include Power BI, and all other services that support Microsoft 365 unified audit logs.
+The [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-worldwide&preserve-view=true) (formerly the Microsoft 365 compliance center) includes a user interface that allows you to view and search the [audit logs](/microsoft-365/compliance/audit-log-search?view=o365-worldwide&preserve-view=true). The unified audit logs include Power BI, and all other services that support Microsoft 365 unified audit logs.
 
 The data captured in the unified audit log is the exact same data that's contained in the [Power BI activity log](/power-bi/admin/service-admin-auditing). When you do an audit log search in the Microsoft Purview compliance portal, it adds your request to the queue. It may take a few minutes (or longer, depending on the volume of data) for the data to be ready.
 
