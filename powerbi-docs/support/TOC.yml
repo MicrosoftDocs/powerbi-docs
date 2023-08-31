@@ -16,8 +16,6 @@
       displayName: support, support case, best practices
     - name: Consent to access customer data
       href: access-customer-data.md
-    - name: Consent to access customer data
-      href: /power-platform/admin/support-environment
     - name: Policies and communications for Power BI
       href: /power-platform/admin/policies-communications
 
