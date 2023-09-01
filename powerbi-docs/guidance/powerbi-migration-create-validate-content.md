@@ -128,7 +128,7 @@ Documentation can be stored wherever it's most easily accessed by the target aud
 - **Within individual Power BI Desktop files:** Model elements, like tables and columns, can define a description. These descriptions appear as tooltips in the **Fields** pane when authoring reports.
 
 > [!TIP]
-> If you create a site to serve as a hub for Power BI-related documentation, consider [customizing the Get Help menu](/fabric/support/service-admin-portal-help-support#publish-get-help-information) with its URL location.
+> If you create a site to serve as a hub for Power BI-related documentation, consider [customizing the Get Help menu](/fabric/admin/service-admin-portal-help-support#publish-get-help-information) with its URL location.
 
 ### Create dataset documentation
 
