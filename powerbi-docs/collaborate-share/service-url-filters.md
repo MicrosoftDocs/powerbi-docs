@@ -231,7 +231,7 @@ There are a couple of things to be aware of when using the query string paramete
 * The long data type is (2^53-1) due to JavaScript limitations.
 * URL query strings are limited to 2000 characters. This limit includes escape codes for special characters (e.g., a space, %, +).  
 * You can't filter on table or column names that start with the capital letters _INF_, including, for example, a table name starting with "INFORMATION". Upper-case INF is a special value in OData. If you want to start a table or column name with "INF", make it lower-case "inf" instead.
-* Table and field names can contain Chinese characters expressed in Unicode form. For example, say you want to apply a filter that 表/人 eq '张力' (this means Table/Person eq '张力'). The filter is converted to `_x8868_`/`_x4eba_` eq '张力'.
+* Table and field names can contain Chinese characters expressed in Unicode form. For example, say you want to apply a filter that 表/人 eq '张力' (this means Table/Person eq '张力'). The filter is converted to \_x8868\_/\_x4eba_\ eq '张力'.
 
     :::image type="content" source="media/service-url-filters/filter-chinese-characters.png" alt-text="Screenshot of Chinese characters converted to Unicode format in a search string.":::
 
