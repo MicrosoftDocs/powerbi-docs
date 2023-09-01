@@ -1,14 +1,14 @@
 ---
 title: "Power BI implementation planning: Tenant-level auditing"
 description: "Learn about tenant-level auditing planning for Power BI."
-author: data-goblin
-ms.author: v-kurtbuhler
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.custom: has-azure-ad-ps-ref
 ms.topic: conceptual
-ms.date: 05/03/2023
+ms.date: 08/31/2023
 ---
 
 # Power BI implementation planning: Tenant-level auditing
@@ -382,7 +382,9 @@ The first planning phase involves making the following decisions.
 
 The first thing you need to decide is _how_ to access the audit data.
 
-Most audit data is accessed by using an API (application program interface). APIs are designed to exchange data over the internet. The [Power BI REST APIs](/rest/api/power-bi/) support requests for data by using the HTTP protocol. Any language or tool can invoke Power BI REST APIs when it's capable of sending an HTTP request and receiving a JSON response.
+The easiest way to get started is to use the pre-built reports available in the [admin monitoring workspace](/fabric/admin/monitoring-workspace).
+
+When you need to access the data directly and build your own solution, you'll use an API (application program interface). APIs are designed to exchange data over the internet. The [Power BI REST APIs](/rest/api/power-bi/) support requests for data by using the HTTP protocol. Any language or tool can invoke Power BI REST APIs when it's capable of sending an HTTP request and receiving a JSON response.
 
 > [!TIP]
 > The PowerShell cmdlets use the Power BI REST APIs to access the audit data. For more information, see [Choose APIs or PowerShell cmdlets](#choose-apis-or-powershell-cmdlets) later in this article.
@@ -397,6 +399,7 @@ Here are some technologies you can use to retrieve data by using the Power BI RE
 
 | **Technology** | **Good choice for manual auditing processes** | **Good choice for automated auditing processes** |
 | --- | :-: | :-: |
+| Admin monitoring workspace | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="Admin monitoring workspace is a good choice for manual auditing processes." border="false"::: | |
 | Try-it | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="Try-it is a good choice for manual auditing processes." border="false"::: | |
 | PowerShell | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="PowerShell is a good choice for manual auditing processes." border="false"::: | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="PowerShell is a good choice for automated auditing processes." border="false"::: |
 | Power BI Desktop | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="Power BI Desktop is a good choice for manual auditing processes." border="false"::: | |
@@ -409,6 +412,10 @@ Here are some technologies you can use to retrieve data by using the Power BI RE
 | Postman | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="Postman is a good choice for manual auditing processes." border="false"::: | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="Postman is a good choice for automated auditing processes." border="false"::: |
 
 The remainder of this section provides a brief introduction to each of the options presented in the table.
+
+###### Admin monitoring workspace
+
+The [admin monitoring workspace](/fabric/admin/monitoring-workspace) contains pre-defined reports and datasets in the Power BI service. It's a convenient way for Fabric administrators and global administrators to view recent audit data and help them understand user activities.
 
 ###### Try-it in API documentation
 
@@ -489,7 +496,7 @@ You can use your preferred tool and your preferred language to send requests to 
 
 ###### Microsoft Purview audit search
 
-The [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-worldwide&preserve-view=true) (formerly the Microsoft 365 compliance center) includes a user interface that allows you to view and search the [audit logs](http://microsoft-365/compliance/audit-log-search?view=o365-worldwide&preserve-view=true). The unified audit logs include Power BI, and all other services that support Microsoft 365 unified audit logs.
+The [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-worldwide&preserve-view=true) (formerly the Microsoft 365 compliance center) includes a user interface that allows you to view and search the [audit logs](/microsoft-365/compliance/audit-log-search?view=o365-worldwide&preserve-view=true). The unified audit logs include Power BI, and all other services that support Microsoft 365 unified audit logs.
 
 The data captured in the unified audit log is the exact same data that's contained in the [Power BI activity log](/power-bi/admin/service-admin-auditing). When you do an audit log search in the Microsoft Purview compliance portal, it adds your request to the queue. It may take a few minutes (or longer, depending on the volume of data) for the data to be ready.
 
@@ -904,7 +911,7 @@ Here are several reasons why storing the raw data in its original state is a bes
 
 Here are some options for storing raw data.
 
-- **Data lake or object storage:** A cloud service such as [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction) that specializes in storing files of any structure. It's an ideal choice for storing the raw audit data.
+- **Data lake or object storage:** A cloud service such as [OneLake](/fabric/onelake/onelake-overview) that specializes in storing files of any structure. It's an ideal choice for storing the raw audit data. In a data lake architecture, raw data should be stored in the bronze layer.
 - **File system:** A file system (such as Windows or Linux) is a common choice for storing the raw audit data.
 - **Database:** It's possible to store JSON data in a relational database, like [Azure SQL Database](/azure/azure-sql/database/json-features?view=azuresql&preserve-view=true). However, it's less common than storing the data in a data lake or file system. That's because querying and maintaining JSON data can become challenging and expensive, especially as data volumes grow.
 
@@ -924,6 +931,7 @@ Here are some considerations to help you choose your raw data storage.
 - **Is there a preferred storage technology?** There may be an existing storage technology that's in use within the organization, so it's a logical choice.
 - **Will users access the storage directly?** The security model is an important consideration. Usually, very few users are granted access to raw data. Access to the curated data is typically made available to Power BI content creators who are responsible for creating the centralized data model (the dataset that serves as the semantic layer for reporting).
 - **Do you have data residency requirements?** Some organizations have legal or regulatory data residency requirements to store data in a specific data region.
+- **How will the data be organized?** Use of the [medallion architecture](/fabric/data-engineering/tutorial-lakehouse-introduction) is a common practice, particularly in data lake and lakehouse implementations. The goal is to store your data in bronze, silver, and gold data layers. The bronze layer contains the original raw data. The silver layer contains validated and deduplicated data used for transformations. The gold layer contains the curated, highly refined data that's ready for analysis.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -946,11 +954,11 @@ You can choose to create curated data in different ways. You need to decide how 
 
 ##### Data lake
 
-You can apply transformations and create curated data files in a data lake. You should use a different zone for curated data so that it's logically separate from the raw data. Separating the data in zones also allows you to set different user access permissions.
+You can apply transformations and create curated data files in a data lake. You should use a gold layer for curated data so that it's logically separate from the raw data that's stored in the bronze layer. Separating the data in layers also simplifies setting different user access permissions.
 
 Use a data lake to transform and curate the data when:
 
-- You expect that there will be multiple Power BI data models that serve reporting (which justifies the creation of an intermediary data layer).
+- You expect that there'll be multiple Power BI data models that serve reporting (which justifies the creation of an intermediary silver layer).
 - You need to support multiple self-service content creators who need access to tenant-level audit data.
 - You have existing tools and processes that you want to use to transform and load data.
 - You want to minimize the data preparation that needs to be done (and potentially duplicated) within one or more Power BI data models.
@@ -977,8 +985,8 @@ For more information about what dimension tables and fact tables you might inclu
 
 > [!div class="checklist"]
 > - **Decide where transformations should be done:** Consider how far upstream the transformation work should be done, and where that fits into your plan for the entire architecture.
-> - **Decide what tool to use to transform the data into a star schema:** Confirm what tools and services will be used for transforming the raw data into curated data.
-> - **Decide where curated data should be stored:** Determine the best choice for storing the raw data that's been transformed into a star schema format. Decide whether an intermediary data layer is useful in the end-to-end architecture.
+> - **Decide what tool to use to transform the data into a star schema:** Confirm which tools and services will be used for transforming the raw data into curated data.
+> - **Decide where curated data should be stored:** Determine the best choice for storing the raw data that's been transformed into a star schema format. Decide whether an intermediary silver layer is useful in the end-to-end architecture.
 > - **Create a naming convention:** Determine what naming convention to use for curated data files and folders (if applicable). Include the details in your technical documentation.
 > - **Consider how security for curated data will work:** While designing the curated data storage location, consider who'll need to access the data and how security will be assigned.
 
@@ -1089,7 +1097,7 @@ Retrieving the audit data programmatically from the Office 365 Management Activi
 > [!TIP]
 > Azure Log Analytics is based on the same architecture used by the workspace-level dataset event logs. For more information about dataset events logs, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md#dataset-event-logs).
 
-Because it's a separate Azure service, any administrator or user that you want to run [Kusto Query Language](/azure/data-explorer/kusto/query/) (KQL) queries must be granted permissions in Azure Log Analytics (Azure Monitor). When they have permission, they can query the audit data stored in the _PowerBIActivity_ table. However, keep in mind that in most cases you'll grant users access to the curated data rather than the raw data.
+Because it's a separate Azure service, any administrator or user that you want to run [Kusto Query Language](/azure/data-explorer/kusto/query/) (KQL) queries must be granted permissions in Azure Log Analytics (Azure Monitor). When they have permission, they can query the audit data stored in the _PowerBIActivity_ table. However, keep in mind that in most cases you'll grant users access to the curated data in the gold layer rather than the raw data in the bronze layer.
 
 You use KQL to analyze the activity log events that are stored in Azure Log Analytics. If you have SQL experience, you'll find many similarities with KQL.
 
@@ -1386,7 +1394,7 @@ As described earlier, we recommend using a technology that allows you to write t
 **Checklist** – When creating a storage account, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Create a storage account:** Create, or submit a request, for creating a storage account. Use immutable storage settings for the raw data, when possible.
+> - **Create a storage account:** Create, or submit a request, for creating a storage account. Use immutable storage settings for the raw data, whenever possible.
 > - **Set permissions:** Determine which permissions should be set for the storage account.
 > - **Test access:** Do a small test to ensure that you can read and write to the storage account.
 > - **Confirm responsibilities:** Ensure that you're clear on who'll manage the storage account on an ongoing basis.
@@ -1523,7 +1531,7 @@ For more information about how an auditing and monitoring solution grows over ti
 
 ### Create the curated data
 
-At this point, the raw data is extracted and stored. The next step is to create a separate curated data layer. Its goal is to transform and store the data files in a [star schema](star-schema.md). A star schema comprises dimension tables and fact tables, and it's intentionally optimized for analysis and reporting. The files in the curated data layer become the source of a Power BI data model (described in the next topic).
+At this point, the raw data is extracted and stored. The next step is to create a separate gold data layer for the curated data. Its goal is to transform and store the data files in a [star schema](star-schema.md). A star schema comprises dimension tables and fact tables, and it's intentionally optimized for analysis and reporting. The files in the curated data layer become the source of a Power BI data model (described in the next topic).
 
 > [!TIP]
 > When you expect there to be more than one data model, investing in a centralized curated data layer is particularly useful.
@@ -1533,7 +1541,7 @@ At this point, the raw data is extracted and stored. The next step is to create 
 **Checklist** - When creating the curated data layer, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Confirm requirements and priorities:** If you intend to use an intermediary data layer for the transformed data, clarify the requirements and objectives for what you need to accomplish.
+> - **Confirm requirements and priorities:** If you intend to use an intermediary silver layer for the transformed data, clarify the requirements and objectives for what you need to accomplish.
 > - **Set up a process to transform the raw data and load it into the curated data zone:** Create a process to transform and load the data into a [star schema](star-schema.md). Test that the process works as intended.
 > - **Create a schedule to run the processes:** Set up a recurring schedule to populate the curated data layer.
 > - **Confirm security is set up correctly:** Verify that access permissions are set up correctly for the curated data. Ensure that developers of the data model can access the curated data.
@@ -1542,7 +1550,7 @@ At this point, the raw data is extracted and stored. The next step is to create 
 
 The topic is about setting up an analytical _data model_. A data model is query-able data resource optimized for analytics. Sometimes it's referred to as a _semantic model_, or simply a _model_. For your auditing and monitoring solution, the data model will likely be implemented as a Power BI dataset.
 
-In the context of auditing and monitoring, a data model sources data from the curated data layer. If you choose not to create a curated data layer, the data model sources its data directly from the raw data.
+In the context of auditing and monitoring, a data model sources data from the curated (gold) data layer. If you choose not to create a curated data layer, the data model sources its data directly from the raw data.
 
 We recommend that your Power BI data model implements a star schema design. When the source data is the curated data layer, the Power BI data model star schema should mirror the curated data layer star schema.
 

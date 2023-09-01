@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 01/24/2023
+ms.date: 08/25/2023
 LocalizationGroup: Gateways
 ---
 
@@ -47,6 +47,8 @@ For more information on SSO, and a list of supported data sources for Azure AD S
 ## Query steps when running Azure AD SSO
 
 ![Diagram that shows the path that an Azure AD token takes to establish a connection to the data source.](media/service-gateway-azure-active-directory-sso/aad-sso-query-steps.png)
+
+## Enable Azure AD SSO for Gateway
 
 Since the Azure AD token of the user is passed via the gateway, it's possible for an admin of the gateway computer to obtain access to these tokens. To make sure a user with malicious intent isn't able to intercept these tokens, the following safeguard mechanisms are available:
 

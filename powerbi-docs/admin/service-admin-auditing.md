@@ -311,7 +311,7 @@ The following operations are available in both the audit and activity logs.
 | [Applied sensitivity label to Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
 | Assigned a workspace to a deployment pipeline | AssignWorkspaceToPipeline  | |
 | Attached dataflow storage account     | AttachedDataflowStorageAccount | |
-| Binded monikers to Power BI datasources | BindMonikerstoDatasources | |
+| Binded monikers to Power BI datasources | BindMonikersToDatasources | |
 | Binded Power BI dataset to gateway  | BindToGateway        |     |
 | Canceled Power BI dataflow refresh    | CancelDataflowRefresh |    |
 | Changed capacity state        | ChangeCapacityState  |      |
@@ -373,7 +373,7 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI note | DeleteNote | |
 | Deleted Power BI scorecard | DeleteScorecard | |
 | Deleted Power BI report    | DeleteReport   |    |
-| DeleteTemplateApp | Deleted a  Power BI template app or a workspace for a template app| |
+| Deleted a Power BI template app or a workspace for a template app | DeleteTemplateApp | |
 | [Deleted sensitivity label from Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md)  | SensitivityLabelRemoved | |
 | Deleted snapshot for user in Power BI tenant | DeleteSnapshot | Generated when a user deletes a snapshot that describes a dataset |
 | Deployed to a pipeline stage     | DeployAlmPipeline    |        |
@@ -553,7 +553,6 @@ The following operations are available in both the audit and activity logs.
 | Viewed Power BI report    | ViewReport     | A report is also generated per page when exporting a report. Some fields such as *CapacityID* and *CapacityName*, will return null if the report or dashboard is viewed from a Power BI app, rather than a Power BI workspace. |
 | Viewed Power BI tile       | ViewTile      |     |
 | Viewed Power BI usage metrics   | ViewUsageMetrics    |   |
-|   |  |   |
 
 <sup>1</sup> Publishing from Power BI Desktop to the service is a CreateReport event in the service.
 
