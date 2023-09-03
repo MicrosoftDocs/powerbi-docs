@@ -5200,57 +5200,57 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "power-bi/create-reports/deployment-pipelines-overview.md",
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-overview.md",
             "redirect_url": "/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines",
             "redirect_document_id": false
         },
         {
-            "source_path": "power-bi/create-reports/deployment-pipelines-process.md",
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-process.md",
             "redirect_url": "/fabric/cicd/deployment-pipelines/understand-the-deployment-process",
             "redirect_document_id": false
         },
         {
-            "source_path": "power-bi/create-reports/deployment-pipelines-get-started.md",
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-get-started.md",
             "redirect_url": "/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines",
             "redirect_document_id": false
         },
         {
-            "source_path": "power-bi/create-reports/deployment-pipelines-assign.md",
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-assign.md",
             "redirect_url": "/fabric/cicd/deployment-pipelines/assign-pipeline",
             "redirect_document_id": false
         },
         {
-            "source_path": "power-bi/create-reports/deployment-pipelines-compare.md",
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-compare.md",
             "redirect_url": "/fabric/cicd/deployment-pipelines/compare-pipeline-content",
             "redirect_document_id": false
         },
         {
-            "source_path": "power-bi/create-reports/deployment-pipelines-deploy.md",
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-deploy.md",
             "redirect_url": "/fabric/cicd/deployment-pipelines/deploy-content",
             "redirect_document_id": false
         },
         {
-            "source_path": "power-bi/create-reports/deployment-pipelines-history.md",
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-history.md",
             "redirect_url": "/fabric/cicd/deployment-pipelines/deployment-history",
             "redirect_document_id": false
         },
         {
-            "source_path": "power-bi/create-reports/deployment-pipelines-create-rules.md",
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-create-rules.md",
             "redirect_url": "/fabric/cicd/deployment-pipelines/create-rules",
             "redirect_document_id": false
         },
         {
-            "source_path": "power-bi/create-reports/deployment-pipelines-automation.md",
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-automation.md",
             "redirect_url": "/fabric/cicd/deployment-pipelines/pipeline-automation",
             "redirect_document_id": false
         },
         {
-            "source_path": "power-bi/create-reports/deployment-pipelines-best-practices.md",
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-best-practices.md",
             "redirect_url": "/fabric/cicd/best-practices-cicd",
             "redirect_document_id": false
         },
         {
-            "source_path": "power-bi/create-reports/deployment-pipelines-troubleshooting.md",
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-troubleshooting.md",
             "redirect_url": "/fabric/cicd/troubleshoot-cicd",
             "redirect_document_id": false
         }                                                                                                                                                                                       
