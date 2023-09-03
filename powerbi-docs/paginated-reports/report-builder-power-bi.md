@@ -66,7 +66,7 @@ In the Power BI service, you can use the deployment pipeline tool with paginated
 - Test
 - Production
 
-Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
+Read about how to [get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines) in the Power BI service.
 
 ## Considerations and limitations
 

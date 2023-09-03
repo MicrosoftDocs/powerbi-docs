@@ -104,7 +104,7 @@ The following table lists the information to collect in a request for a new work
 | **Information needed** | **Example** | **Validation required** |
 | --- | --- | --- |
 | Workspace name | SLS-Field Sales Analytics | Does the name adhere to naming conventions? </br></br>Does another workspace with the same name exist? |
-| Stages needed | SLS-Field Sales Analytics \[Dev\], SLS-Field Sales Analytics \[Test\], and SLS-Field Sales Analytics | Are multiple workspaces necessary to properly support the content? </br></br>If so, should a [deployment pipeline](/power-bi/create-reports/deployment-pipelines-overview) be created too? |
+| Stages needed | SLS-Field Sales Analytics \[Dev\], SLS-Field Sales Analytics \[Test\], and SLS-Field Sales Analytics | Are multiple workspaces necessary to properly support the content? </br></br>If so, should a [deployment pipeline](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) be created too? |
 | Description | Customer sales and order history for monthly, quarterly, and yearly analysis. | Is there an expectation that sensitive data, or regulated data, will be stored? </br></br>If so, will that affect how the workspace is governed? |
 | Target audience | Global field sales organization | How broad is the content delivery scope? </br></br>How will that affect how the workspace is governed? |
 | License mode assigned to the workspace | A Fabric capacity for the sales team is needed because a large number of the salespeople are viewers only and they have a free license | What level of [Fabric capacity](/fabric/enterprise/licenses#capacity-and-skus) is required? |
