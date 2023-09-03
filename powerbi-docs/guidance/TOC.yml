@@ -150,7 +150,7 @@
     - name: "Troubleshoot report performance"
       href: report-performance-troubleshoot.md
     - name: "Deployment pipelines best practices"
-      href: https://learn.microsoft.com/en-us/fabric/cicd/best-practices-cicd
+      href: /fabric/cicd/best-practices-cicd
     - name: "Access the Power BI activity log"
       href: admin-activity-log.md
   - name: Migrate to Power BI
