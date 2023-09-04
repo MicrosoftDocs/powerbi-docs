@@ -1,6 +1,6 @@
 ---
 title: "Add or remove margins from a Power BI paginated report chart | Microsoft Docs"
-description: Add or remove margins from a column or scatter chart in Power BI Report Builder. Improve readability or appearance of Power BI paginated reports. 
+description: Add or remove margins from a column or scatter chart in Power BI Report Builder. To improve the readability or appearance of Power BI paginated reports. 
 ms.date: 07/14/2023
 ms.service: powerbi
 ms.subservice: report-builder
@@ -13,20 +13,20 @@ ms.reviewer: saurkumar
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-For Column and Scatter chart types in paginated reports, the chart automatically adds side margins on the ends of the x-axis. In Bar chart types, the chart automatically adds side margins on the ends of the y-axis. In all other chart types, the chart does not add side margins. You cannot change the size of the margin.  
+For Column and Scatter chart types in Power BI paginated reports, the chart automatically adds side margins on the ends of the x-axis. In Bar chart types, the chart automatically adds side margins on the ends of the y-axis. In all other chart types, the chart does not add side margins. You cannot change the size of the margin.  
   
  This topic does not apply to pie, doughnut, funnel, or pyramid chart types.  
   
   
 ## To enable or disable side margins  
   
-1.  Right-click the axis and select **Axis Properties**. The **Vertical** or **HorizontalAxis Properties** dialog box appears.  
+1.  Right-click the axis and select **Axis Properties**. The **Vertical** or **HorizontalAxis Properties** dialog box will appear.  
   
-1.  On the **Axis Options** page, set the **Side margins** property:  
+1.  On the **Axis Options** page, you canset the **Side margins** property:  
   
-    -   **Auto** The chart will determine whether to add a side margin based on the chart type.  
+    -   If **Auto** selected, then the chart will determine whether to add a side margin based on the chart type.  
   
-    -   **Disabled** Bar, column, and scatter charts will have no side margins.  
+    -   If **Disabled** selected then the Bar , column, and scatter charts will have no side margins.  
   
 1.  Select **OK**.
   
