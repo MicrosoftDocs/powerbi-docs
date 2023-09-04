@@ -1,5 +1,5 @@
 ---
-title: 'Power BI app configuration settings'
+title: 'Set up shared device mode for the Power BI mobile app'
 description: Learn about running the Power BI mobile app in shared device mode to support your organization's frontline workers who use shared devices.
 author: paulinbar
 ms.author: painbar
