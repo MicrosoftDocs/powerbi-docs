@@ -13,10 +13,10 @@ ms.reviewer: saurkumar
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  Rectangles and lines can help create visual effects within a Power BI paginated report. You can set display properties on the report items from the Border section of the Home tab, and then set other properties in the Properties pane. You can add features like a background color or image, a tooltip, or a bookmark to a rectangle.  
+  Rectangles and lines can help create visual effects within a Power BI paginated report. You can set display properties on the report items from the border section of the Home tab, and then set other properties in the Properties pane. You can also add features like a background color or image, a tooltip, or a bookmark to a rectangle.  
   
 ##  <a name="RectangleAsContainer"></a> Using a rectangle as a container  
- You can use a rectangle as a container for other items. When you move the rectangle, the items that are contained within the rectangle also move along with it. An item within the rectangle shows the name of the rectangle in its **Parent** property. For more information about how to use a rectangle as a container, see [Add a rectangle or container &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-a-rectangle-or-container-report-builder-and-ssrs) and [Display the same data on a matrix and a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/display-the-same-data-on-a-matrix-and-a-chart-report-builder).  
+ You can use a rectangle as a container for other items as well. When you move the rectangle, the items that are contained within the rectangle also move along with it. An item within the rectangle shows the name of the rectangle in its **Parent** property. For more information about how to use a rectangle as a container, see [Add a rectangle or container &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-a-rectangle-or-container-report-builder-and-ssrs) and [Display the same data on a matrix and a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/display-the-same-data-on-a-matrix-and-a-chart-report-builder).  
   
 > [!NOTE]  
 >  A rectangle is only a container for items that you either create in the rectangle or drag into the rectangle. If you draw a rectangle around an item that already exists on the design surface, then the rectangle will not act as its container. The rectangle will not be listed in the item's Parent property.  
