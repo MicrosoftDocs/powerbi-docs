@@ -15,7 +15,7 @@ ms.reviewer: saurkumar
 
 In paginated reports, a recursive hierarchy group organizes data from a single report dataset that includes multiple hierarchical levels, such as the report-to structure for manager-employee relationships in an organizational hierarchy.  
   
- Before you can organize data in a table as a recursive hierarchy group, you must have a single dataset that contains all the hierarchical data, You must have separate fields for the item to group and for the item to group by. For example, a dataset where you want to group employees recursively under their manager might contain a name, an employee name, an employee ID, and a manager ID.  
+ Before you can organize data in a table as a recursive hierarchy group, you must have a single dataset that contains all the hierarchical data. You must have separate fields for the item to group and for the item to group by. For example, a dataset where you want to group employees recursively under their manager might contain a name, an employee name, an employee ID, and a manager ID.  
   
  
 ## To create a recursive hierarchy group  
@@ -34,7 +34,7 @@ In paginated reports, a recursive hierarchy group organizes data from a single r
   
 1.  Select **OK**.
   
-     Run the report. The report displays the recursive hierarchy group, although there is no indent to show the hierarchy  
+     Run the report. The report displays the recursive hierarchy group, although there is no indent to show the hierarchy.  
   
 ## To format a recursive hierarchy group with indent levels  
   
