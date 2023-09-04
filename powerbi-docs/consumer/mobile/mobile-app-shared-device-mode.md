@@ -16,7 +16,7 @@ The Power BI mobile apps for iOS and Android devices support shared device mode.
 ## What is Shared Device mode
 
 Shared device mode is a feature of Azure Active Directory (Azure AD) that allows organizations to build and deploy applications that support frontline workers and educational scenarios that require shared Android and iOS devices.
-With shared device mode, frontline workers can pick a device from their organization's pool of devices and sign in to "make it theirs" for the duration of their shift. This sign in is global - they are signed in to all supported apps. At the end of their shift, they sign out of the device (again, the sign out is global), and all their personal and company information is removed, so that the device can safely be returned to the device pool, clean and ready for the next user.
+With shared device mode, frontline workers can pick a device from their organization's pool of devices and sign in to "make it theirs" for the duration of their shift. This sign in is global - they're signed in to all supported apps. At the end of their shift, they sign out of the device (again, the sign out is global), and all their personal and company information is removed, so that the device can safely be returned to the device pool, clean and ready for the next user.
 
 ## App behavior in shared device mode
 
@@ -40,7 +40,7 @@ For more information about shared device mode and about setting it up for your o
 ## Considerations and limitations
 
 * **Shortcuts**: Shortcuts remain and can be used by all users. Users can access the items the shortcuts point to if they have the required permissions for them.
-* **Apple watch**: Apple watch integration is not possible for devices running in shared device mode.
+* **Apple watch**: Apple watch integration isn't possible for devices running in shared device mode.
 
 ## Next steps
 
