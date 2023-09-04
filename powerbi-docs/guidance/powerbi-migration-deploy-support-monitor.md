@@ -31,7 +31,7 @@ The output from this stage is a production solution ready for use by the busines
 
 For IT-managed solutions, or solutions that are critical to business productivity, there's generally a test environment. A test environment sits between development and production, and it's not necessary for all Power BI solutions. A test workspace can serve as a stable location, separated from development, for user acceptance testing (UAT) to occur before release to production.
 
-If your content has been published to a workspace on Premium capacity, [deployment pipelines](../create-reports/deployment-pipelines-overview.md) can simplify the deployment process to development, test, and production workspaces. Alternatively, publishing may be done manually or with [PowerShell scripts](https://powerbi.microsoft.com/blog/duplicating-workspaces-by-using-power-bi-cmdlets/).
+If your content has been published to a workspace on Premium capacity, [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) can simplify the deployment process to development, test, and production workspaces. Alternatively, publishing may be done manually or with [PowerShell scripts](https://powerbi.microsoft.com/blog/duplicating-workspaces-by-using-power-bi-cmdlets/).
 
 ### Deploy to test workspace
 
@@ -85,7 +85,7 @@ Key activities during a deployment to the production workspace typically include
 - **Rollback plan:** With a migration, the expectation is that it's the migration of a new solution for the first time. If content does already exist, it's wise to have a plan to revert to the previous version, should it become necessary. Having previous versions of the Power BI Desktop files (using SharePoint or OneDrive versioning) works well for this purpose.
 - **Connection strings and parameters:** Adjust dataset connection strings when the data source differs between test and production. [Parameterization](../connect-data/service-parameters.md) can be used effectively for this purpose.
 - **Data refresh:** [Schedule the dataset refresh](../connect-data/refresh-scheduled-refresh.md) for any imported datasets.
-- **Workspace content:** Publish datasets and reports to the production workspace, and create dashboards. [Deployment pipelines](../create-reports/deployment-pipelines-overview.md) can simplify the process to deploy to development, test, and production workspaces if your content has been published to workspaces on Premium capacity.
+- **Workspace content:** Publish datasets and reports to the production workspace, and create dashboards. [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) can simplify the process to deploy to development, test, and production workspaces if your content has been published to workspaces on Premium capacity.
 - **App:** If apps are part of your content distribution strategy, publish an [app](../consumer/end-user-apps.md) using the content from the production workspace.
 - **Security:** Update and verify [workspace roles](../collaborate-share/service-roles-new-workspaces.md) based on your content distribution and collaboration strategy.
 - **Dataset settings:** Update and verify settings for each dataset, including:
