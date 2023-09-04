@@ -31,7 +31,7 @@ ms.reviewer: saurkumar
   
   
 ## In This Section  
- [Interactive sort &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/interactive-sort-report-builder-and-ssrs)  
+ [Interactive sort &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/interactive-sort-report-builder.md)  
  Explains how to add interactive sort buttons to column headers.  
   
  [Add a bookmark to a report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-a-bookmark-to-a-report-report-builder-and-ssrs)  
