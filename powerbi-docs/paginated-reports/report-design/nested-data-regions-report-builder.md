@@ -15,7 +15,7 @@ ms.reviewer: saurkumar
 
   You can nest one data region in a paginated report, such as a chart, inside another data region, such as a matrix, typically to display data summaries in a concise manner or to provide a visual display as well as a table or matrix display.  
   
- For example, for a matrix (also called a *tablix*) that contains sales orders grouped by Store on rows and by Quarter on columns, you can add a table or chart to the corner cell to summarize the sales for all stores, or add a chart to a matrix column header to show the sales contribution of the data in the column as a percentage of all sales.  
+ For example, for a matrix (also called a *tablix*) that contains sales orders grouped by Store on rows and by Quarter on columns, you can add a table or chart to the corner cell to summarize the sales for all stores. Or add a chart to a matrix column header to show the sales contribution of the data in the column as a percentage of all sales.  
   
  ![Screenshot showing nested data region.](../report-design/media/nested-data-region.gif "Screenshot showing nested data region")  
  Text box in with a text label and a placeholder.
@@ -64,7 +64,7 @@ ms.reviewer: saurkumar
   
  You must set the minimum and maximum values that will be displayed on the gauge scale. To specify the maximum value of the gauge, you can use an expression, such as `=Max!MyField.Value`. However, because this expression will be evaluated within the scope of the data in the cell only, the maximum of each gauge will not be the same for all rows in the tablix. This may make comparisons between gauges in the tablix more difficult to understand. Alternatively, you can specify a static value for the maximum. All rows inside of the tablix will show a gauge with this maximum value. For more information, see [Set a minimum or maximum on a gauge &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/set-minimum-maximum-gauge-report-builder.md).  
   
- If the data becomes too large on the gauge, consider using a scale multiplier to reduce the amount of digits displayed. To specify a multiplier, you can right-click on the scale and select **Scale Properties**. When the **Scale Properties** dialog box opens, specify a value for **Multiplier**.  
+ If the data becomes too large on the gauge, consider using a scale multiplier to reduce the number of digits displayed. To specify a multiplier, you can right-click on the scale and select **Scale Properties**. When the **Scale Properties** dialog box opens, specify a value for **Multiplier**.  
   
 ## Nesting a table or matrix and a chart in a list  
  To nest multiple data regions in a List add a rectangle first, and then add the data regions to the rectangle.  
