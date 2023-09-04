@@ -13,9 +13,9 @@ ms.reviewer: saurkumar
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-For Column and Scatter chart types in Power BI paginated reports, the chart automatically adds side margins on the ends of the x-axis. In Bar chart types, the chart automatically adds side margins on the ends of the y-axis. In all other chart types, the chart does not add side margins. You cannot change the size of the margin.  
+For the Column and Scatter chart types in Power BI paginated reports, the chart automatically adds side margins on the ends of the x-axis. In Bar chart types, the chart automatically adds side margins at the ends of the y-axis. In all other chart types, the chart do not add side margins. You cannot change the size of the margin.  
   
- This topic does not apply to pie, doughnut, funnel, or pyramid chart types.  
+ Do keep in mind that this topic does not applies to pie, doughnut, funnel, or pyramid chart types.  
   
   
 ## To enable or disable side margins  
@@ -24,9 +24,9 @@ For Column and Scatter chart types in Power BI paginated reports, the chart auto
   
 1.  On the **Axis Options** page, you canset the **Side margins** property:  
   
-    -   If **Auto** selected, then the chart will determine whether to add a side margin based on the chart type.  
+    -   **Auto** The chart will determine whether to add a side margin based on the chart type.  
   
-    -   If **Disabled** selected then the Bar , column, and scatter charts will have no side margins.  
+    -   **Disabled** Bar , column, and scatter charts will have no side margins.  
   
 1.  Select **OK**.
   
