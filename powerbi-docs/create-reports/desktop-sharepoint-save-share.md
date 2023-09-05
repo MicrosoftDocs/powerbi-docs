@@ -22,7 +22,7 @@ Work seamlessly in Power BI Desktop with the ability to open, save, and share fi
 > [!NOTE]
 > Sharing from Power BI Desktop is **enabled by default** and also requires individual users to turn on the preview features in Power BI Desktop.
 
-Admins can [**disable** sharing through the Admin portal](../admin/service-admin-portal-integration.md#users-can-share-links-to-power-bi-files-stored-in-onedrive-and-sharepoint-through-power-bi-desktop).
+Admins can [**disable** sharing through the Admin portal](/fabric/admin/service-admin-portal-integration#users-can-share-links-to-power-bi-files-stored-in-onedrive-and-sharepoint-through-power-bi-desktop).
 
 ## How to enable Power BI Desktop and SharePoint integrations
 
@@ -147,7 +147,7 @@ When you select **Save as** in the file menu, the file name box is empty regardl
 
 ### Power BI OneDrive and SharePoint sharing link behavior by license type
 
-The following use cases apply when sharing a link to a Power BI file saved in OneDrive or SharePoint depending on the license status of each user. All of these scenarios assume that the user has a Microsoft 365 license and that OneDrive and SharePoint viewing is [enabled in their organization](../admin/service-admin-portal-integration.md#users-can-view-power-bi-items-saved-in-onedrive-and-sharepoint-preview).
+The following use cases apply when sharing a link to a Power BI file saved in OneDrive or SharePoint depending on the license status of each user. All of these scenarios assume that the user has a Microsoft 365 license and that OneDrive and SharePoint viewing is [enabled in their organization](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview).
 
 | License status of the person who shares the link | License status of the person who selects the shared link | Experience for the person who shares the link | Experience for the person who selects the link |
 | --- | --- | --- | --- |
