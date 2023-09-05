@@ -116,7 +116,7 @@ Users can share links to Power BI Desktop files (.pbix) saved to OneDrive and Sh
 
 Learn more about [sharing links through Power BI Desktop](../create-reports/desktop-sharepoint-save-share.md).
 
-:::image type="content" source="media/service-admin-portal-integration-update/admin-integration-desktop-sharing.png" alt-text="Screenshot of admin setting called: Users can share links to Power BI files stored in OneDrive and SharePoint through Power BI Desktop (Preview) - UPDATE.":::
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-desktop-sharing.png" alt-text="Screenshot of admin setting called: Users can share links to Power BI files stored in OneDrive and SharePoint through Power BI Desktop (Preview) - UPDATE.":::
 
 During public preview, if a user has enabled share through the Power BI Desktop menu, but the admin setting is disabled for the tenant, a **Share** button will still appear in Power BI Desktop, but the user will be notified that the capability is disabled when they attempt to share. 
 
