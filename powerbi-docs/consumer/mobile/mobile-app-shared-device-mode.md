@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 09/04/2023
+ms.date: 09/05/2023
 ---
 
 # Set up shared device mode for the Power BI mobile app
@@ -15,15 +15,22 @@ The Power BI mobile apps for iOS and Android devices support shared device mode.
 
 ## What is shared device mode
 
-Shared device mode is a feature of Azure Active Directory (Azure AD) that allows organizations to build and deploy applications that support frontline workers and educational scenarios that require shared Android and iOS devices.
-With shared device mode, frontline workers can pick a device from their organization's pool of devices and sign in to "make it theirs" for the duration of their shift. This sign in is global - they're signed in to all supported apps. At the end of their shift, they sign out of the device (again, the sign out is global), and all their personal and company information is removed, so that the device can safely be returned to the device pool, clean and ready for the next user.
+Shared device mode is a feature of Azure AD that enables you to configure devices to be shared by employees. This feature enables single sign-on (SSO) and device-wide sign out for the Power BI mobile app and all other apps that support shared device mode. When a device is in shared device mode, applications that leverage Microsoft Authentication Library (MSAL) can detect that they’re running on a shared device and determine who the current active user is. With this information, applications can accomplish these authentication controls:
+
+* **Automatic single sign-on**: If a user has already signed into another MSAL application, the user will be logged into any application compatible with shared device mode.
+* **Single sign-out**: When a user signs out of an app using MSAL, all other applications integrated with shared device mode can stop background processes and commence sign-out data clearing processes to prevent unauthorized or unintended access by the next user.
+
+Here's how shared device mode works, using the Power BI mobile app as an example. When an employee signs in to the app at the start of their shift, they're automatically signed in to all other apps that support shared device mode on the device. At the end of their shift, when they sign out of the app, they're signed out globally from all other apps that support shared device mode. After sign out, the employee's data and company data in the app and in all other apps that support shared device mode can no longer be accessed. The device is ready for the next employee and can be safely handed off.
 
 ## App behavior in shared device mode
 
-When the Power BI app is running in shared device mode, its behavior is slightly modified to better suit the frontline worker scenario.
+Using the app in shared device mode is just like using the app in standard, single user mode, with a few minor exceptions to better suit the frontline worker scenario:
 
-* The welcome experience and intro tips are suppressed. 
-* Notifications are generalized to exclude confidential and sensitive information such as specific data and personal information.
+* The welcome experience and intro tips are suppressed, the assumption being that those features are more of a hindrance than a help for frontline workers who use the app for their work on a daily basis. 
+* Notifications are generalized to exclude confidential and sensitive information such as specific data and personal information. This is done because notifications are asynchronous and can conceivably arrive at the device after the user has signed out. Generalizing the notifications reduces the chance of sensitive or confidential data or information being exposed to unauthorized access.
+
+> [!NOTE]
+> Shortcuts created by a user remain after they sign out, and can be used by all users. Users can access the items the shortcuts point to if they have the required permissions.
 
 ## Set up shared device mode
 
@@ -36,11 +43,6 @@ For more information about shared device mode and about setting it up for your o
 * [Overview of shared device mode](/azure/active-directory/develop/msal-shared-devices)
 * [Shared device mode for iOS devices](/azure/active-directory/develop/msal-ios-shared-devices)
 * [Shared device mode for Android devices](/azure/active-directory/develop/msal-android-shared-devices)
-
-## Considerations and limitations
-
-* **Shortcuts**: Shortcuts remain and can be used by all users. Users can access the items the shortcuts point to if they have the required permissions for them.
-* **Apple watch**: Apple watch integration isn't possible for devices running in shared device mode.
 
 ## Next steps
 
