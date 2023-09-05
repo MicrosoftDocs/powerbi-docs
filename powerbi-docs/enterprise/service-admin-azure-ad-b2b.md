@@ -101,7 +101,7 @@ The discoverability for B2B content feature in Power BI makes accessing shared B
 
 The following table lists the licensing requirements for B2B access to Power BI. The columns on the left indicate the workspace type and the per user license for the user sharing data externally. The license limitations across Free user, Pro user, and PPU user outlines limitations for the user consuming the data from an external tenant. Also note to invite guest users, a Power BI Pro or Premium Per User (PPU) license is needed: 
 
-|Provider|Provider||Consumer User Type||
+|Provider|Provider| . |Consumer User Type| . |
 |-----|-----|------|------|------|
 |**Workspace Type**|**User Type**|**Free User**|**Pro User**|**PPU User**|
 |All Workspaces|Free User|Not Supported|Not Supported|Not Supported| 
