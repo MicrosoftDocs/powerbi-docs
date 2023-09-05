@@ -213,7 +213,7 @@ When becoming acquainted with Power BI, many system administrators assume it's a
 Power BI Premium can play a significant role in your BI strategy. Some top reasons to invest in Premium include:
 
 - [Unlimited content distribution](/power-bi/enterprise/service-premium-what-is#unlimited-content-sharing) to large numbers of read-only (content consumption with a free Power BI license is available in Premium capacity only, not PPU).
-- [Deployment pipelines](/power-bi/create-reports/deployment-pipelines-overview) to manage the publication of content to development, test, and production workspaces. They're highly recommended for critical content to improve release stability.
+- [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) to manage the publication of content to development, test, and production workspaces. They're highly recommended for critical content to improve release stability.
 - [Paginated reports](/power-bi/paginated-reports/paginated-reports-report-builder-power-bi) to deliver highly formatted, pixel-perfect reports. This report type allows content creators to meet other types of information delivery requirements.
 - [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools), which is an industry standard protocol for managing and publishing a dataset, or querying the dataset from any XMLA-compliant tool.
 - Increased model size limits, including [large dataset](/power-bi/enterprise/service-premium-large-models) support.
