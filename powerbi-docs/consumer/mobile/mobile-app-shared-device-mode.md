@@ -26,8 +26,8 @@ Here's how shared device mode works, using the Power BI mobile app as an example
 
 Using the Power BI mobile app in shared device mode is just like using the app in standard, single user mode, with a few minor differences to better suit the frontline worker scenario:
 
-* The welcome experience and intro tips are suppressed. The assumption here is that those features are more of a hindrance than a help for frontline workers who use the app for their work on a daily basis. 
-* Notifications are generalized to exclude confidential and sensitive information such as specific data and personal information. This is done because notifications are asynchronous and can conceivably arrive at the device after the user has signed out. Generalizing the notifications reduces the chance of sensitive or confidential data or information being exposed to unauthorized users.
+* The welcome experience and intro tips are suppressed to enable an unterrupted workflow for frontline workers.
+* Notifications are generalized to exclude confidential and sensitive information such as specific data and personal information.
 
 > [!NOTE]
 > * **Shortcuts**: Shortcuts created by a user remain after they sign out, and can be used by all users. Users can access the items the shortcuts point to if they have the required permissions.
