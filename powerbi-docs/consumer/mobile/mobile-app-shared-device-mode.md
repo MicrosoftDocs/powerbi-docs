@@ -35,12 +35,16 @@ Using the Power BI mobile app in shared device mode is just like using the app i
 
 ## Set up shared device mode
 
-If your organization is already using shared device mode, no special configuration is required for the Power BI mobile apps. If shared device mode hasn't been set up, contact your organization's mobile device management team about getting it set up. Refer them to [Overview of shared device mode](/azure/active-directory/develop/msal-shared-devices) if they are unfamiliar with the feature.
+If your organization is already using shared device mode, no special configuration is required for the Power BI mobile apps. If shared device mode hasn't been set up, contact your organization's mobile device management team about getting it set up. Refer them to the following articles if they are unfamiliar with the feature:
+
+* [Overview of shared device mode](/azure/active-directory/develop/msal-shared-devices)
+* [Manage devices for frontline workers](/microsoft-365/frontline/flw-devices)
 
 ## Related content
 
 * [Overview of shared device mode](/azure/active-directory/develop/msal-shared-devices)
 * [Shared device mode for iOS devices](/azure/active-directory/develop/msal-ios-shared-devices)
 * [Shared device mode for Android devices](/azure/active-directory/develop/msal-android-shared-devices)
+* [Manage devices for frontline workers](/microsoft-365/frontline/flw-devices)
 * Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
 * Join the conversation at the [Power BI Community](https://community.powerbi.com/)
