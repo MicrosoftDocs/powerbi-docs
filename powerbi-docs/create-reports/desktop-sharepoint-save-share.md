@@ -22,7 +22,7 @@ Work seamlessly in Power BI Desktop with the ability to open, save, and share fi
 > [!NOTE]
 > Sharing from Power BI Desktop is **enabled by default** and also requires individual users to turn on the preview features in Power BI Desktop.
 
-Admins can [**disable** sharing through the Admin portal](../admin/service-admin-portal-integration.md#users-can-share-links-to-power-bi-files-stored-in-onedrive-and-sharepoint-through-power-bi-desktop).
+Admins can [**disable** sharing through the Admin portal](/fabric/admin/service-admin-portal-integration#users-can-share-links-to-power-bi-files-stored-in-onedrive-and-sharepoint-through-power-bi-desktop).
 
 ## How to enable Power BI Desktop and SharePoint integrations
 
