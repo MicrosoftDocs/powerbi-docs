@@ -82,6 +82,9 @@ When you long tap (tap and hold) a data point, a tooltip that shows the values t
 
 :::image type="content" source="./media/mobile-reports-in-the-mobile-apps/report-tooltip.png" alt-text="Screenshot of a tool tip on a visual." border="false":::
 
+> [!IMPORTANT]
+> Remember, the mobile apps support tooltips on data points only.
+
 If the report author configured a report page tooltip, the default tooltip is replaced with the report page tooltip:
 
 :::image type="content" source="./media/mobile-reports-in-the-mobile-apps/report-page-tooltip.png" alt-text="Screenshot of a report-page tooltip." border="false":::
