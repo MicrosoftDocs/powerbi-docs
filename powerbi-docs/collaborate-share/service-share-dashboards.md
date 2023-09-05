@@ -61,7 +61,7 @@ You can also change how you share this report.  Select **People in your organiza
 :::image type="content" source="media/service-share-dashboards/power-bi-share-links-2.png" alt-text="Share link options dialog box.":::
 
    > [!NOTE] 
-   > Your organization may not allow you to create shareable links to **People in your organization**. Learn more about this [tenant setting](../admin/service-admin-portal-export-sharing.md#allow-shareable-links-to-grant-access-to-everyone-in-your-organization) in the admin portal documentation.
+   > Your organization may not allow you to create shareable links to **People in your organization**. Learn more about this [tenant setting](/fabric/admin/service-admin-portal-export-sharing#allow-shareable-links-to-grant-access-to-everyone-in-your-organization) in the admin portal documentation.
    
 Selecting **Copy link** will automatically generate and copy a shareable link to your clipboard:
 
