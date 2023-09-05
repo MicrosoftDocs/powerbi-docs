@@ -30,7 +30,8 @@ Using the app in shared device mode is just like using the app in standard, sing
 * Notifications are generalized to exclude confidential and sensitive information such as specific data and personal information. This is done because notifications are asynchronous and can conceivably arrive at the device after the user has signed out. Generalizing the notifications reduces the chance of sensitive or confidential data or information being exposed to unauthorized access.
 
 > [!NOTE]
-> Shortcuts created by a user remain after they sign out, and can be used by all users. Users can access the items the shortcuts point to if they have the required permissions.
+> * **Shortcuts**: Shortcuts created by a user remain after they sign out, and can be used by all users. Users can access the items the shortcuts point to if they have the required permissions.
+> * **Apple watch**: Apple watch integration isn't possible for devices running in shared device mode.
 
 ## Set up shared device mode
 
