@@ -19,6 +19,12 @@ For related "What's New" information, see:
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
 
+## September 2023
+
+### Introducing shared device mode (iOS and Android)
+
+The Power BI mobile app now supports sharing devices among multiple team members. With shared device mode, organizations can deploy the app safely across a pool of shared devices without risk of exposing confidential data and personal information to unauthorized access after users sign out and return their device to the pool. [Check out the details](./mobile-app-shared-device-mode.md)!
+
 ## August 2023
 
 ### Customize your launch experience with launch items

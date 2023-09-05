@@ -62,6 +62,8 @@
       items: 
       - name: "Admin: Configuration using mobile device management"
         href: mobile-app-configuration.md
+      - name: "Admin: Shared device mode"
+        href: mobile-app-shared-device-mode.md
       - name: "View reports optimized for your phone"
         href: mobile-apps-view-phone-report.md
       - name: "View on-premises reports in the mobile apps"

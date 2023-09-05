@@ -1,5 +1,5 @@
 ---
-title: 'Set up shared device mode for the Power BI mobile app'
+title: 'Shared device mode for the Power BI mobile app'
 description: Learn about running the Power BI mobile app in shared device mode to support your organization's frontline workers who use shared devices.
 author: paulinbar
 ms.author: painbar
@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.date: 09/05/2023
 ---
 
-# Set up shared device mode for the Power BI mobile app
+# Shared device mode for the Power BI mobile app
 
 The Power BI mobile apps for iOS and Android devices support shared device mode. With shared device mode, organizations can deploy the Power BI mobile app safely across a pool of shared devices without risk of exposing confidential data and personal information to unauthorized access after users sign out and return their device to the pool.
 
