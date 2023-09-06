@@ -195,5 +195,5 @@ Admins can see the workspaces created in the Power BI service on the **Workspace
 
 Admins can't modify workspaces (delete, modify access) from the Power BI Service. 
 
-Data for this feature will reside in the location of your tenant's Power BI [home region](../admin/service-admin-where-is-my-tenant-located.md) regardless of your organization's Microsoft 365 data residency.
+When you open a Power BI report in OneDrive or SharePoint the data is stored in your Power BI [home tenant region](../admin/service-admin-where-is-my-tenant-located.md) until the file is deleted or unopened for a few days. 
 
