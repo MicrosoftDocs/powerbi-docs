@@ -64,5 +64,5 @@ Endorsing an app or a report by promoting it automatically checks the **Feature 
 
 * [How should I collaborate on and share dashboards and reports?](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
 * Admins: [Manage featured content in the Admin portal](../admin/service-admin-portal-featured-content.md)
-* Admins: [Enable/disable featured content in your organization](../admin/service-admin-portal-export-sharing.md#featured-content)
+* Admins: [Enable/disable featured content in your organization](/fabric/admin/service-admin-portal-export-sharing#featured-content)
 * Questions? [Try the Power BI Community](https://community.powerbi.com/)

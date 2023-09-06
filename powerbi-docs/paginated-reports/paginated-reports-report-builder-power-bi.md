@@ -104,11 +104,12 @@ For details, see "Subscribe to paginated reports" in the article [Email subscrip
 ## Use deployment pipelines with paginated reports
 
 In the Power BI service, you can use the deployment pipeline tool with paginated reports. Deployment pipelines let you develop and test your Power BI paginated reports before you release them to your users. The tool is a pipeline with three stages:
+
 - Development
 - Test
 - Production
 
-Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
+Read about how to [get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines) in the Power BI service.
 
 ## Embed Power BI paginated reports
 

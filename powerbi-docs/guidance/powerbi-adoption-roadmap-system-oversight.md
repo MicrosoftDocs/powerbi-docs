@@ -1,13 +1,13 @@
 ---
 title: "Power BI adoption roadmap: System oversight"
 description: Apply system oversight consisting of administrative activities to drive strong and successful adoption of Power BI.
-author: data-goblin
-ms.author: v-kurtbuhler
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 05/29/2023
+ms.date: 08/31/2023
 ---
 
 # Power BI adoption roadmap: System oversight
@@ -133,9 +133,19 @@ Key topics for managing the Power BI service include:
 
 ## User machines and devices
 
-The management of user machines and devices is usually a responsibility of the IT department. The adoption of Power BI depends directly on content creators and consumers having the applications they need installed and configured correctly.
+The management of user machines and devices is usually a responsibility of the IT department. The adoption of Power BI depends directly on content creators and consumers having the applications they need.
 
-The following [software installations](https://powerbi.microsoft.com/downloads/) are available for content creators:
+Here are some questions that can help you plan for user machines and devices.
+
+- How will users request access to new tools? Will access to licenses, data, and training be available to help users use tools effectively?
+- How will content consumers view content that's been published by others?
+- How will content creators develop, manage, and publish content? What's your criteria for deciding which tools and applications are appropriate for each use case?
+- How will you install and set up tools? Does that include related prerequisites and data connectivity components?
+- How will you manage ongoing updates for tools and applications?  
+
+For more information, see [User tools and devices](powerbi-implementation-planning-user-tools-devices.md).
+
+The following [software installations](https://powerbi.microsoft.com/downloads/) are available for content creators.
 
 | **Software** | **Audience** |
 | --- | --- |
@@ -203,7 +213,7 @@ When becoming acquainted with Power BI, many system administrators assume it's a
 Power BI Premium can play a significant role in your BI strategy. Some top reasons to invest in Premium include:
 
 - [Unlimited content distribution](/power-bi/enterprise/service-premium-what-is#unlimited-content-sharing) to large numbers of read-only (content consumption with a free Power BI license is available in Premium capacity only, not PPU).
-- [Deployment pipelines](/power-bi/create-reports/deployment-pipelines-overview) to manage the publication of content to development, test, and production workspaces. They're highly recommended for critical content to improve release stability.
+- [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) to manage the publication of content to development, test, and production workspaces. They're highly recommended for critical content to improve release stability.
 - [Paginated reports](/power-bi/paginated-reports/paginated-reports-report-builder-power-bi) to deliver highly formatted, pixel-perfect reports. This report type allows content creators to meet other types of information delivery requirements.
 - [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools), which is an industry standard protocol for managing and publishing a dataset, or querying the dataset from any XMLA-compliant tool.
 - Increased model size limits, including [large dataset](/power-bi/enterprise/service-premium-large-models) support.
@@ -380,7 +390,7 @@ In a [cloud shared responsibility model](/azure/security/fundamentals/shared-res
 
 The COE should provide [documentation and training](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) where relevant to assist content creators with best practices (particularly situations for dealing with ultra-sensitive data).
 
-Administrators can be help by following best practices themselves. Administrators can also raise concerns when they see issues that could be discovered when [managing workspaces](/power-bi/admin/service-admin-portal-workspaces), [auditing user activities](/power-bi/admin/service-admin-auditing), or managing [gateway credentials and users](/power-bi/connect-data/service-gateway-data-sources#add-a-data-source). There are also several [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings) that are usually restricted except for a few users (for instance, the ability to [publish to web](/power-bi/admin/service-admin-portal-export-sharing#publish-to-web) or the ability to [publish apps to the entire organization](/power-bi/admin/service-admin-portal-content-pack-app#publish-content-packs-and-apps-to-the-entire-organization)).
+Administrators can be help by following best practices themselves. Administrators can also raise concerns when they see issues that could be discovered when [managing workspaces](/power-bi/admin/service-admin-portal-workspaces), [auditing user activities](/power-bi/admin/service-admin-auditing), or managing [gateway credentials and users](/power-bi/connect-data/service-gateway-data-sources#add-a-data-source). There are also several [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings) that are usually restricted except for a few users (for instance, the ability to [publish to web](/power-bi/admin/service-admin-portal-export-sharing#publish-to-web) or the ability to [publish apps to the entire organization](/fabric/admin/service-admin-portal-content-pack-app#publish-content-packs-and-apps-to-the-entire-organization)).
 
 ### External guest users
 
@@ -470,7 +480,7 @@ Every month, Microsoft releases new Power BI features and functionality. To be e
 > [!div class="checklist"]
 > - **Review tenant settings:** Conduct a review of all tenant settings to ensure they're aligned with [data culture](powerbi-adoption-roadmap-data-culture.md) objectives and [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies. Verify which groups are assigned for each setting.
 > - **Document the tenant settings:** Create documentation of your tenant settings for the internal Power BI community and post it in the centralized portal. Include which groups a user would need to request to be able to use a feature.
-> - **Customize the Get Help links:** When user resources are established, as described in the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, update the [tenant setting](/power-bi/support/service-admin-portal-help-support) to customize the links under the **Get Help** menu option. It will direct users to your documentation, community, and help.
+> - **Customize the Get Help links:** When user resources are established, as described in the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, update the [tenant setting](/fabric/admin/service-admin-portal-help-support) to customize the links under the **Get Help** menu option. It will direct users to your documentation, community, and help.
 
 **Improve management of user machines and devices:**
 

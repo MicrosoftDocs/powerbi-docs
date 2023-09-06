@@ -22,7 +22,7 @@ Currently supported data sources:
 
 *Inheritance from Excel files requires specific configuration and isn't supported for Excel files stored behind a gateway, such as files stored locally. See [Sensitivity label inheritance from Excel files](#sensitivity-label-inheritance-from-excel-files) for more detail.
 
-To be operative, [sensitivity label inheritance from data sources must be enabled on the tenant](../admin/service-admin-portal-information-protection.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview).
+To be operative, [sensitivity label inheritance from data sources must be enabled on the tenant](/fabric/admin/service-admin-portal-information-protection#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview).
 
 ## Requirements
 * The data in the data source must be labeled with sensitivity labels from Microsoft Purview Information Protection.
@@ -33,7 +33,7 @@ To be operative, [sensitivity label inheritance from data sources must be enable
     * The scope of the labels must be **Files and emails** and **Azure Purview assets**. See [Extending sensitivity labels to Azure Purview](/azure/purview/create-sensitivity-label#extending-sensitivity-labels-to-azure-purview) and [Creating new sensitivity labels or modifying existing labels](/azure/purview/create-sensitivity-label#creating-new-sensitivity-labels-or-modifying-existing-labels).
 * [Sensitivity labels must be enabled in Power BI](service-security-enable-data-sensitivity-labels.md).
 * A Power BI Pro or Premium Per User (PPU) license is required for the user whose credentials are used to connect to the data source. In addition, [all other conditions for applying a label must be met](./service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-the-power-bi-service).
-* The **[Apply sensitivity labels from data sources to their data in Power BI (preview)](../admin/service-admin-portal-information-protection.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)** tenant admin setting must be enabled. **Note**: This requirement applies to the Power BI service only. In Desktop, a *.pbix* file will inherit the label from the data source even if the tenant admin setting is off. However, after publishing to the service, upon refresh, changes to the label in the data source will only be inherited by the report and dataset if the setting is enabled. 
+* The **[Apply sensitivity labels from data sources to their data in Power BI (preview)](/fabric/admin/service-admin-portal-information-protection#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)** tenant admin setting must be enabled. **Note**: This requirement applies to the Power BI service only. In Desktop, a *.pbix* file will inherit the label from the data source even if the tenant admin setting is off. However, after publishing to the service, upon refresh, changes to the label in the data source will only be inherited by the report and dataset if the setting is enabled. 
 
 ## Inheritance behavior
 * In the Power BI service, when the dataset is connected to the data source, Power BI inherits the label and applies it automatically to the dataset. Subsequently, inheritance occurs upon dataset refresh. In Power BI Desktop, when you connect to the data source via **Get data**, Power BI inherits the label and automatically applies it to the *.pbix* file (both the dataset and report). Subsequently inheritance occurs upon refresh. 
@@ -65,5 +65,5 @@ To make sure sensitivity label inheritance from an Excel file works:
 * Inheritance from data sources isn't supported in connections via gateways or Azure Virtual Network (VNet). This means that inheritance from an Excel file located on a local machine won't work, because this requires a gateway. 
 
 ## Next steps
-* [Enable sensitivity label inheritance from data sources](../admin/service-admin-portal-information-protection.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)
+* [Enable sensitivity label inheritance from data sources](/fabric/admin/service-admin-portal-information-protection#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)
 * [Sensitivity label overview](service-security-sensitivity-label-overview.md)

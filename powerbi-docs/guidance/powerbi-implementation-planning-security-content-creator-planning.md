@@ -296,7 +296,7 @@ When a workspace is co-owned by multiple individuals or teams, it can make manag
 There are two variations to the four workspace roles (described previously).
 
 - By default, only workspace administrators and members can create, publish, and update the app for the workspace. The _[Allow contributors to update the app option for this workspace](/power-bi/collaborate-share/service-create-the-new-workspaces#allow-contributors-to-update-the-app)_ setting is a workspace-level setting, which lets workspace administrators delegate the ability to update the app for the workspace to contributors. However, contributors can't publish a new app or change who has permission to edit it. This setting is useful when you want contributors to be able to update the app (when one exists for the workspace), yet not grant the other permissions available to members.
-- The _[Block republish and disable package refresh](/power-bi/admin/service-admin-portal-dataset-security#block-republish-and-disable-package-refresh)_ tenant setting only allows dataset owners to publish updates. When enabled, workspace administrators, members, and contributors can't publish changes unless they first take over the dataset as its owner. Because this setting applies to the entire organization, enable it with a measure of caution because it affects all datasets for the tenant. Be sure to communicate to your dataset creators what to expect because it changes the normal behavior of workspace roles.
+- The _[Block republish and disable package refresh](/fabric/admin/service-admin-portal-dataset-security#block-republish-and-disable-package-refresh)_ tenant setting only allows dataset owners to publish updates. When enabled, workspace administrators, members, and contributors can't publish changes unless they first take over the dataset as its owner. Because this setting applies to the entire organization, enable it with a measure of caution because it affects all datasets for the tenant. Be sure to communicate to your dataset creators what to expect because it changes the normal behavior of workspace roles.
 
 > [!IMPORTANT]
 > Per-item permissions can also be thought of as an override of the standard workspace roles. For more information about per-item permissions, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#per-item-permissions) article.
@@ -742,7 +742,7 @@ Content creators will need administrator, member, or contributor role access to 
 
 Except for [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md), content creators should be encouraged to publish content to standard workspaces, instead of their personal workspace.
 
-The _[Block republish and disable package refresh](/power-bi/admin/service-admin-portal-dataset-security#block-republish-and-disable-package-refresh)_ tenant setting changes the behavior for publishing datasets. When enabled, workspace administrators, members, or contributors can't publish changes to a dataset. Only the dataset owner is permitted to publish an update (forcing the takeover of a dataset before publishing an updated dataset). Because this tenant setting applies to the entire organization, enable it with a measure of caution because it affects all datasets for the entire tenant. Be sure to communicate to your dataset creators what to expect because it changes the normal behavior of workspace roles.
+The _[Block republish and disable package refresh](/fabric/admin/service-admin-portal-dataset-security#block-republish-and-disable-package-refresh)_ tenant setting changes the behavior for publishing datasets. When enabled, workspace administrators, members, or contributors can't publish changes to a dataset. Only the dataset owner is permitted to publish an update (forcing the takeover of a dataset before publishing an updated dataset). Because this tenant setting applies to the entire organization, enable it with a measure of caution because it affects all datasets for the entire tenant. Be sure to communicate to your dataset creators what to expect because it changes the normal behavior of workspace roles.
 
 #### Power Apps synchronization
 
@@ -754,14 +754,14 @@ For more information about synchronizing Power Apps roles with Power BI workspac
 
 #### Deployment pipeline access
 
-Content creators and owners can use Power BI [deployment pipelines](/power-bi/create-reports/deployment-pipelines-overview) for self-service content publishing. Deployment pipelines simplify the publication process and improve the level of control when releasing new content.
+Content creators and owners can use Power BI [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) for self-service content publishing. Deployment pipelines simplify the publication process and improve the level of control when releasing new content.
 
-You manage pipeline permissions (for users who can deploy content with a deployment pipeline) separately from the workspace roles. [Access to both the workspace and the deployment pipeline](/power-bi/create-reports/deployment-pipelines-process#permissions) are required for the users conducting a deployment.
+You manage pipeline permissions (for users who can deploy content with a deployment pipeline) separately from the workspace roles. [Access to both the workspace and the deployment pipeline](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#permissions) are required for the users conducting a deployment.
 
 Content creators might also need:
 
 - Workspace creation permissions (when workspaces need to be created by the pipeline).
-- [Premium capacity permissions](/power-bi/create-reports/deployment-pipelines-process#creating-a-premium-workspace) (when workspaces are assigned by the pipeline).
+- [Premium or Fabric capacity permissions](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#create-a-workspace) (when workspaces are assigned by the pipeline).
 
 For more information, see [Deployment pipeline access](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md#access-for-deployment-pipeline).
 

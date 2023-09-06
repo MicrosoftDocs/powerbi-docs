@@ -67,7 +67,7 @@ If you don't have a gateway installed, [install an on-premises data gateway](/da
    * Azure Data Explorer
    * Snowflake
 
-   For more information about **Use SSO via Azure AD for DirectQuery queries**, see [Azure AD single sign-on (SSO) for Gateway](../admin/service-admin-portal-integration.md#azure-ad-single-sign-on-sso-for-gateway).
+   For more information about **Use SSO via Azure AD for DirectQuery queries**, see [Azure AD single sign-on (SSO) for Gateway](/fabric/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway).
 
     >[!NOTE]
     > SSO for Import queries is available only for the SSO data sources that use [Kerberos constrained delegation](service-gateway-sso-kerberos.md).

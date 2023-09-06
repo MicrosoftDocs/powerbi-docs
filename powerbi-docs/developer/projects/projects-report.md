@@ -87,7 +87,7 @@ Example definition.pbir:
 
 The definition includes the `datasetReference` property, which references the dataset used in the report. The reference can be either:
 
-`byPath` - Specifies a relative path to the target dataset folder. Absolute paths aren't supported. A backslash (/) is used as a folder separator. When used, Power BI Desktop also opens the dataset in full edit mode.
+`byPath` - Specifies a relative path to the target dataset folder. Absolute paths aren't supported. A backslash (\) is used as a folder separator. When used, Power BI Desktop also opens the dataset in full edit mode.
 
 `byConnection` - Specifies a remote dataset in the Power BI service by using a connection string. When a `byConnection` reference is used, Power BI Desktop doesn't open the dataset in edit mode.
 

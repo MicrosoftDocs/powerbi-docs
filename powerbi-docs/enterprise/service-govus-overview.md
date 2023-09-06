@@ -24,7 +24,7 @@ The Power BI service that's designed for US government customers differs from th
 
 ## Government cloud instances
 
-If you're a new customer, you have to validate your organization's eligibility before you can sign up for a Microsoft 365 Government plan.  Get started by completing the [Microsoft 365 for Government eligibility validation form](https://www.microsoft.com/microsoft-365/government/eligibility-validation). 
+If you're a new customer, you have to validate your organization's eligibility before you can sign up for a Microsoft 365 Government plan. Get started by completing the [Microsoft 365 for Government eligibility validation form](https://www.microsoft.com/microsoft-365/government/eligibility-validation). 
 
 Microsoft 365 provides different environments for government agencies to meet varying compliance requirements. To ensure that you're selecting the right plan for your organization, consult the Microsoft 365 US Government service description for each environment:
 
@@ -94,7 +94,7 @@ Authentication, identity, and administration for Power BI depend on connectivity
 
 ## Connect government and global Azure cloud services
 
-Azure is distributed across multiple clouds. By default, you can enable firewall rules to open a connection to a cloud-specific instance, but cross-cloud networking is different. To communicate between services in the public cloud and services in the Government Community Cloud, you have to configure specific firewall rules. For example, if you want to access public cloud instances of a SQL database from your government cloud deployment of Power BI, you need a firewall rule in the SQL database. Configure specific firewall rules for SQL databases to allow connections to the Azure Government Cloud for the following datacenters:
+Azure is distributed across multiple clouds. By default, you can enable firewall rules to open a connection to a cloud-specific instance, but cross-cloud networking is different. To communicate between services in the public cloud and services in the Government Community Cloud, you have to configure specific firewall rules. For example, if you want to access public cloud instances of an SQL database from your government cloud deployment of Power BI, you need a firewall rule in the SQL database. Configure specific firewall rules for SQL databases to allow connections to the Azure Government Cloud for the following datacenters:
 
 * USGov Iowa
 * USGov Virginia
@@ -119,7 +119,7 @@ There are some limitations to the B2B experience that you should be aware of:
 
 * New external users can be invited to the organization through Power BI sharing, permissions, and subscription experiences.
 
-* On the Home page, the “From external orgs” tab won't list content shared from other clouds.
+* On the Home page, the **From external orgs** tab won't list content shared from other clouds.
 
 ## Power BI feature availability
 
@@ -140,8 +140,8 @@ If a release is planned for an environment, we include the quarter of estimated 
 |[Azure B2B collaboration between government and commercial cloud](service-admin-azure-ad-b2b.md)<sup>1</sup>|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)
 |[Template apps](../connect-data/service-template-apps-overview.md)<sup>2</sup>|![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)| ![Image of "Available" button.](../media/yes.png)|
 |[Embed in SharePoint Online by using the Power BI web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|
-|[Data Loss Prevention policies](service-security-dlp-policies-for-power-bi-overview.md]|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|
-|[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|
+|[Data Loss Prevention policies](./service-security-dlp-policies-for-power-bi-overview.md)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|
+|[Data Protection (MIP labels)](./service-security-sensitivity-label-overview.md)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|
 |[Dataflows - Direct Query](../transform-model/dataflows/dataflows-configure-consume.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|Not planned |
 |[Dataflows - SQL Compute engine optimization](../transform-model/dataflows/dataflows-premium-features.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|Not planned |
 |[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|
@@ -154,7 +154,7 @@ If a release is planned for an environment, we include the quarter of estimated 
 
 <sup>2</sup> Because marketplace apps aren't available to US government cloud instances, template apps are limited to private and organizational apps.
 
-<sup>3</sup> Currently available for Power BI Desktop only. Publishing to the Power BI service is not yet available.
+<sup>3</sup> Currently available for Power BI Desktop only. Publishing to the Power BI service isn't yet available.
 
 For more information about support for Power BI components in Power Apps, see [Power Apps US Government feature limitations](/power-platform/admin/powerapps-us-government#power-apps-us-government-feature-limitations).
 

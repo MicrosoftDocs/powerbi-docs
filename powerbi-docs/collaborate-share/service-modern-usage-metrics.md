@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/13/2023
+ms.date: 08/29/2023
 LocalizationGroup: Dashboards
 ---
 
@@ -27,7 +27,7 @@ If you create reports in workspaces, you have access to improved usage metrics r
 
 - You need a Power BI Pro or Premium Per User (PPU) license to run and access the usage metrics data. However, the usage metrics feature captures usage information from all users, regardless of the license they're assigned.
 - To access usage metrics for a report, you must have edit access to the report.
-- Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal-audit-usage.md).
+- Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](/fabric/admin/service-admin-portal-audit-usage).
 
 ## Create and view a new usage metrics report
 
@@ -163,7 +163,7 @@ If dataset owners in your workspace leave, are no longer a part of your organiza
 
 ## Disable usage metrics reports
 
-Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization. See [Audit and usage metrics](../admin/service-admin-portal-audit-usage.md) in the Admin portal article for details on these settings.
+Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization. See [Audit and usage metrics](/fabric/admin/service-admin-portal-audit-usage) in the Admin portal article for details on these settings.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and edit settings.
@@ -183,7 +183,7 @@ If user information is excluded, the usage report refers to users as 'Unnamed Us
 
     ![Screenshot of disabling per-user metrics.](media/service-modern-usage-metrics/power-bi-admin-disable-per-user-metrics.png)
 
-When disabling usage metrics for their entire organization, admins can use the Delete all existing usage metrics content option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
+When admins disable usage metrics for their entire organization, they can use the **Delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and configure the Per-user data in usage metrics for content creators setting.
@@ -321,10 +321,13 @@ In addition to the above differences between previous and improved usage metrics
     - Dataset re-initialization
        - Each time a new dataset is created, a new report could be created.
 - The usage metrics report is not supported in My Workspace.
+- During the process of [disaster recovery (while Business continuity and disaster recovery (BCDR)](/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery) is in progress) any new incoming data experiencing data loss may be irrecoverable.
+- Certain metrics in usage metrics report aren't included in audit logs. For example, report page views aren't part of audit logs.
+- When a report is deleted, the ReportIds can show up in the usage metrics but not be available in the Reports dataset.
 
 ## Frequently asked questions
 
-In addition to the above considerations and limitations, the following questions and answers about usage metrics might be helpful for users and administrators:
+In addition to the above considerations and limitations, the following questions and answers about usage metrics might be helpful for users and administrators.
 
 #### **Why do I see fewer Report Page Views than Report Views, shouldn't they be at least the same?** 
 Report Views rely on server telemetry that is generated when the report is first opened. Once a report is open, its page definitions are already loaded onto the user's device. Report Page Views rely on usage information from the user's device reaching Power BI. This can sometimes be blocked, as described in [Considerations and Limitations](#considerations-and-limitations).
@@ -343,7 +346,7 @@ The usage report includes activity data up until the last complete day based on 
 Note that it might take up to 24 hours for new activity data to appear in the usage report.
 
 #### **What is the data source for the usage data?**
-The Usage Metrics Report dataset imports data from a Power BI-internal usage metrics store by using a custom Usage Metrics Data Connector. You can update the credentials for the Usage Metrics Data Connector on the Usage Metrics Report dataset settings page.
+The Usage Metrics Report dataset imports data from a Power BI internal usage metrics store by using a custom Usage Metrics Data Connector. You can update the credentials for the Usage Metrics Data Connector on the Usage Metrics Report dataset settings page.
 
 #### **How can I connect to the data? Or change the default report?**
 You can create a copy of the read-only, pre-built usage report. The report copy connects to the same Usage Metrics Report dataset and enables you to edit the report details.
@@ -433,3 +436,4 @@ Follow these steps to delete the dataset and then create a fresh data refresh re
 [Administering Power BI in the admin portal](../admin/service-admin-portal.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
+

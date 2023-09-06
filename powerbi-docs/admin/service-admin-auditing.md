@@ -158,7 +158,7 @@ Meet these requirements to access audit logs:
 
 ### Access your audit logs
 
-To access logs, first enable logging in Power BI. For more information, see [Audit and usage settings](service-admin-portal-audit-usage.md#create-audit-logs-for-internal-activity-auditing-and-compliance) in the admin portal documentation. There may be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. You might experience a similar delay between getting permission to view audit logs and being able to access the logs.
+To access logs, first enable logging in Power BI. For more information, see [Audit and usage settings](/fabric/admin/service-admin-portal-audit-usage#create-audit-logs-for-internal-activity-auditing-and-compliance) in the admin portal documentation. There may be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. You might experience a similar delay between getting permission to view audit logs and being able to access the logs.
 
 The Power BI audit logs are available directly through [Microsoft Purview](https://compliance.microsoft.com/auditlogsearch). There's also a link from the Power BI admin portal:
 
@@ -311,7 +311,7 @@ The following operations are available in both the audit and activity logs.
 | [Applied sensitivity label to Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
 | Assigned a workspace to a deployment pipeline | AssignWorkspaceToPipeline  | |
 | Attached dataflow storage account     | AttachedDataflowStorageAccount | |
-| Binded monikers to Power BI datasources | BindMonikerstoDatasources | |
+| Binded monikers to Power BI datasources | BindMonikersToDatasources | |
 | Binded Power BI dataset to gateway  | BindToGateway        |     |
 | Canceled Power BI dataflow refresh    | CancelDataflowRefresh |    |
 | Changed capacity state        | ChangeCapacityState  |      |
@@ -373,7 +373,7 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI note | DeleteNote | |
 | Deleted Power BI scorecard | DeleteScorecard | |
 | Deleted Power BI report    | DeleteReport   |    |
-| DeleteTemplateApp | Deleted a  Power BI template app or a workspace for a template app| |
+| Deleted a Power BI template app or a workspace for a template app | DeleteTemplateApp | |
 | [Deleted sensitivity label from Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md)  | SensitivityLabelRemoved | |
 | Deleted snapshot for user in Power BI tenant | DeleteSnapshot | Generated when a user deletes a snapshot that describes a dataset |
 | Deployed to a pipeline stage     | DeployAlmPipeline    |        |
@@ -553,7 +553,6 @@ The following operations are available in both the audit and activity logs.
 | Viewed Power BI report    | ViewReport     | A report is also generated per page when exporting a report. Some fields such as *CapacityID* and *CapacityName*, will return null if the report or dashboard is viewed from a Power BI app, rather than a Power BI workspace. |
 | Viewed Power BI tile       | ViewTile      |     |
 | Viewed Power BI usage metrics   | ViewUsageMetrics    |   |
-|   |  |   |
 
 <sup>1</sup> Publishing from Power BI Desktop to the service is a CreateReport event in the service.
 
