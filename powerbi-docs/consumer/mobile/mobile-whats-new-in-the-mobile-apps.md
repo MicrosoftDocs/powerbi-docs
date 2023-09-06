@@ -23,7 +23,9 @@ For related "What's New" information, see:
 
 ### Introducing shared device mode (iOS and Android) (preview)
 
-The Power BI mobile app now supports sharing devices among multiple team members. With shared device mode, organizations can deploy the app safely across a pool of shared devices without risk of exposing confidential data and personal information to unauthorized access after users sign out and return their device to the pool. [Check out the details](./mobile-app-shared-device-mode.md)!
+Shared devices are company-owned devices that are shared between employees, often frontline workers, across tasks, shifts, or locations. Most mobile apps, however, are designed for single users, and optimize their experience for use by a single user, with single sign on (SSO) across applications and keeping users signed in on their device. However, this behavior is undesirable for devices that are shared by multiple users. With shared devices, employees expect to pick a device from the pool and perform a single gesture to "make it theirs" during their shift. At the end of their shift, they expect to be able to perform another gesture to sign out globally on the device, and have all their personal and company information removed so they can return the device to the pool. Furthermore, if an employee forgets to sign out, the device should automatically sign them out at the end of their shift and/or after a period of inactivity, and any user-related or business data should be removed from the device.
+
+With the new shared device mode support in the Power BI Mobile apps, organizations can now safely deploy the app across a pool of shared devices. [Check out the details](./mobile-app-shared-device-mode.md)!
 
 ## August 2023
 
