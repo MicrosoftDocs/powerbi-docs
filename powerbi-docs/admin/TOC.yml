@@ -76,59 +76,59 @@
       expanded: false
       items:
       - name: Help and support settings
-        href: service-admin-portal-help-support.md?toc=/power-bi/admin/TOC.json&bc=/power-bi/admin/breadcrumb/toc.json       
+        href: /fabric/admin/service-admin-portal-help-support
       - name: Workspace settings
-        href: service-admin-portal-workspace.md       
+        href: /fabric/admin/portal-workspace
       - name: Information protection
-        href: service-admin-portal-information-protection.md     
+        href: /fabric/admin/service-admin-portal-information-protection
       - name: Export and sharing settings
-        href: service-admin-portal-export-sharing.md      
+        href: /fabric/admin/service-admin-portal-export-sharing
       - name: Discovery settings
-        href: service-admin-portal-discovery.md
+        href: /fabric/admin/service-admin-portal-discovery
       - name: Content pack and app settings
-        href: service-admin-portal-content-pack-app.md
+        href: /fabric/admin/service-admin-portal-content-pack-app
       - name: Integration settings
-        href: service-admin-portal-integration.md
+        href: /fabric/admin/service-admin-portal-integration
       - name: Power BI visuals
-        href: service-admin-portal-power-bi-visuals.md
+        href: /fabric/admin/service-admin-portal-power-bi-visuals
       - name: R and Python visuals settings
-        href: service-admin-portal-r-python-visuals.md
+        href: /fabric/admin/service-admin-portal-r-python-visuals
       - name: Audit and usage settings
-        href: service-admin-portal-audit-usage.md
+        href: /fabric/admin/service-admin-portal-audit-usage
       - name: Dashboard settings
-        href: service-admin-portal-dashboard.md
+        href: /fabric/admin/service-admin-portal-dashboard
       - name: Developer settings
-        href: service-admin-portal-developer.md
+        href: /fabric/admin/service-admin-portal-developer
       - name: Admin API settings
-        href: service-admin-portal-admin-api-settings.md
+        href: /fabric/admin/service-admin-portal-admin-api-settings
       - name: Dataflow settings
-        href: service-admin-portal-dataflow.md    
+        href: /fabric/admin/service-admin-portal-dataflow
       - name: Template app settings
-        href: service-admin-portal-template-app.md           
+        href: /fabric/admin/service-admin-portal-template-app
       - name: Q&A settings
-        href: service-admin-portal-qa.md
+        href: /fabric/admin/service-admin-portal-qa
       - name: Dataset Security
-        href: service-admin-portal-dataset-security.md
-      - name: Advanced networking 
-        href: service-admin-portal-advanced-networking.md
+        href: /fabric/admin/service-admin-portal-dataset-security
+      - name: Advanced networking
+        href: /fabric/admin/service-admin-portal-advanced-networking
       - name: Metrics settings
-        href: service-admin-portal-goals-settings.md
+        href: /fabric/admin/service-admin-portal-goals-settings
       - name: User experience experiments
-        href: service-admin-portal-user-experience-experiments.md
+        href: /fabric/admin/service-admin-portal-user-experience-experiments
       - name: Share data with your Microsoft 365 services
-        href: admin-share-power-bi-metadata-microsoft-365-services.md#how-to-turn-sharing-with-microsoft-365-services-on-and-off
+        href: /fabric/admin/admin-share-power-bi-metadata-microsoft-365-services
       - name: Insights settings
-        href: service-admin-portal-insights.md
+        href: /fabric/admin/service-admin-portal-insights
       - name: Datamart settings
-        href: service-admin-portal-datamart.md
+        href: /fabric/admin/service-admin-portal-datamart
       - name: Data model settings
-        href: service-admin-portal-data-model.md
+        href: /fabric/admin/service-admin-portal-data-model
       - name: Quick measure suggestions settings
-        href: service-admin-portal-quick-measure-suggestions-settings.md
+        href: /fabric/admin/service-admin-portal-quick-measure-suggestions-settings
       - name: Scale-out settings
-        href: service-admin-portal-scale-out.md
+        href: /fabric/admin/service-admin-portal-scale-out
       - name: Git integration settings
-        href: service-admin-portal-git-integration.md
+        href: /fabric/admin/git-integration-admin-settings
   - name: Capacity settings
     expanded: false
     items:

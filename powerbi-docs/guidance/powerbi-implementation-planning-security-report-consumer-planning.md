@@ -164,7 +164,7 @@ After you publish a Power BI app, a user typically needs to [install](/power-bi/
 
 An alternative approach to install an app is to _push_ it to app consumers. It results in the pre-installation of the app so that it automatically shows up in the Apps page in the Power BI service. This approach is a convenience for consumers because they don't need to find and install the app. However, pre-installed apps can become an annoyance for users because they may become overwhelmed by too many apps that aren't relevant to them.
 
-The _[Push apps to end users](/power-bi/admin/service-admin-portal-content-pack-app#push-apps-to-end-users)_ tenant setting controls who's allowed to automatically install apps. We recommend that you use this feature because it's convenient for users. However, we also recommend that you educate your content creators on when to use it so that it isn't overused.
+The _[Push apps to end users](/fabric/admin/service-admin-portal-content-pack-app#push-apps-to-end-users)_ tenant setting controls who's allowed to automatically install apps. We recommend that you use this feature because it's convenient for users. However, we also recommend that you educate your content creators on when to use it so that it isn't overused.
 
 > [!TIP]
 > When publishing an app, if you select the option to install the app automatically, you can't set the audience to be the entire organization (if enabled by the _Push apps to end users_ tenant setting).
