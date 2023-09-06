@@ -20,9 +20,9 @@ For the integration to work, the Power Platform Solutions Integration (Preview) 
 
 ## Enable the Power BI/Power Apps Solutions integration in Power BI
 
-* For information about enabling the integration on the Power BI side, see [Power Platform Solutions Integration (Preview)](../admin/service-admin-portal-integration.md#power-platform-solutions-integration-preview).
+* For information about enabling the integration on the Power BI side, see [Power Platform Solutions Integration (Preview)](/fabric/admin/service-admin-portal-integration#power-platform-solutions-integration-preview).
 
-* For information about enabling cross-geo operations on the Power BI side, see [Power Platform interregional access](../admin/service-admin-portal-integration.md#power-platform-interregional-access). For cross-geo operations to work, interregional information sharing must also be enabled on the Power Platform side.
+* For information about enabling cross-geo operations on the Power BI side, see [Power Platform interregional access](/fabric/admin/service-admin-portal-integration#power-platform-interregional-access). For cross-geo operations to work, interregional information sharing must also be enabled on the Power Platform side.
 
 ## Power BI/Power Apps Solutions integration in Power Platform
 
