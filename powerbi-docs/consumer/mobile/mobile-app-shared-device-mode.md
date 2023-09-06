@@ -11,22 +11,19 @@ ms.date: 09/05/2023
 
 # Shared device mode for the Power BI mobile app (preview)
 
-The Power BI mobile apps for iOS and Android devices support shared device mode. With shared device mode, organizations can deploy the Power BI mobile app safely across a pool of devices shared by multiple users without risk of exposing confidential data and personal information to unauthorized access after users sign out and return their device to the pool.
+The Power BI mobile apps for iOS and Android devices support the Azure Active Directory (Azure AD) feature *shared device mode*. Shared device mode enables organizations to deploy the Power BI mobile app safely across a pool of devices shared by multiple users without risk of exposing confidential data and personal information to unauthorized access after users sign out and return their device to the pool.
 
-## What is shared device mode
+Many organizations maintain a pool of mobile devices that are shared between employees, often frontline workers, across tasks, shifts, or locations. Most mobile apps, however, are designed for single users, and optimize their experience for use by a single user, with single sign-on (SSO) across applications and keeping users signed in on their device. This behavior isn't suitable for devices that are shared by multiple users. With shared devices, employees expect to pick out a device from the pool, "make it theirs" for the duration of their shift, and then, at the end of their shift, to sign out from the device globally and have all their personal and company information removed so they can safely return the device to the pool.
 
-Shared device mode is a feature of Azure AD that enables you to configure devices to be shared by employees. This feature enables single sign-on (SSO) and device-wide sign out for the Power BI mobile app and all other apps that support shared device mode. When a device is in shared device mode, supported applications detect that they're running on a shared device and determine who the current active user is. With this information, the apps applications can accomplish these authentication controls:
+Azure AD's shared device mode enables this functionality. It enables out single sign-on and device-wide sign-out and clears the user's data to prevent unauthorized or unintended access by the next user.
 
-* **Automatic single sign-on**: If a user has already signed into another MSAL application, the user will be logged into any application compatible with shared device mode.
-* **Single sign-out**: When a user signs out of an app using MSAL, all other applications integrated with shared device mode can stop background processes and commence sign-out data clearing processes to prevent unauthorized or unintended access by the next user.
-
-Here's how shared device mode works, using the Power BI mobile app as an example. When an employee signs in to the app at the start of their shift, they're automatically signed in to all other apps that support shared device mode on the device. At the end of their shift, when they sign out of the app, they're signed out globally from all other apps that support shared device mode. After sign out, the employee's data and company data in the app and in all other apps that support shared device mode can no longer be accessed. The device is ready for the next employee and can be safely handed off.
+Here's how shared device mode works, using the Power BI mobile app as an example. When an employee signs on to the app at the start of their shift, they're automatically signed on to all other apps that support shared device mode on the device. At the end of their shift, when they sign out of the app, they're signed out globally from all other apps that support shared device mode. After sign-out, the employee's data and company data in the app and in all other apps that support shared device mode can no longer be accessed. The device is ready for the next employee and can be safely handed off.
 
 ## App behavior in shared device mode
 
 Using the Power BI mobile app in shared device mode is just like using the app in standard, single user mode, with a few minor differences to better suit the frontline worker scenario:
 
-* The welcome experience and intro tips are suppressed to enable an unterrupted workflow for frontline workers.
+* The welcome experience and intro tips are suppressed to enable an uninterrupted workflow for frontline workers.
 * Notifications are generalized to exclude confidential and sensitive information such as specific data and personal information.
 
 > [!NOTE]
@@ -35,7 +32,7 @@ Using the Power BI mobile app in shared device mode is just like using the app i
 
 ## Set up shared device mode
 
-If your organization is already using shared device mode, no special configuration is required for the Power BI mobile apps. If shared device mode hasn't been set up, contact your organization's mobile device management team about getting it set up. Refer them to the following articles if they are unfamiliar with the feature:
+If your organization is already using shared device mode, no special configuration is required for the Power BI mobile apps. If shared device mode hasn't been set up, contact your organization's mobile device management team about getting it set up. Refer them to the following articles if they're unfamiliar with the feature:
 
 * [Overview of shared device mode](/azure/active-directory/develop/msal-shared-devices)
 * [Manage devices for frontline workers](/microsoft-365/frontline/flw-devices)
