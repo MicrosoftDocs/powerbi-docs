@@ -15,7 +15,7 @@ The Power BI mobile apps for iOS and Android devices support shared device mode.
 
 ## What is shared device mode
 
-Shared device mode is a feature of Azure AD that enables you to configure devices to be shared by employees. This feature enables single sign-on (SSO) and device-wide sign out for the Power BI mobile app and all other apps that support shared device mode. When a device is in shared device mode, applications that leverage Microsoft Authentication Library (MSAL) can detect that they're running on a shared device and determine who the current active user is. With this information, applications can accomplish these authentication controls:
+Shared device mode is a feature of Azure AD that enables you to configure devices to be shared by employees. This feature enables single sign-on (SSO) and device-wide sign out for the Power BI mobile app and all other apps that support shared device mode. When a device is in shared device mode, supported applications detect that they're running on a shared device and determine who the current active user is. With this information, the apps applications can accomplish these authentication controls:
 
 * **Automatic single sign-on**: If a user has already signed into another MSAL application, the user will be logged into any application compatible with shared device mode.
 * **Single sign-out**: When a user signs out of an app using MSAL, all other applications integrated with shared device mode can stop background processes and commence sign-out data clearing processes to prevent unauthorized or unintended access by the next user.
