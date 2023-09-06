@@ -181,7 +181,7 @@ The response body might look like the following example:
 The Power BI REST API supports limiting the requested number of entries in the refresh history by using the optional `$top` parameter. If not specified, the default is all available entries.
 
 ```http
-GET https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/refreshes?$top={$top}      
+GET https://api.powerbi.com/v1.0/myorg/groups/{groupId}/datasets/{datasetId}/refreshes?$top={$top}      
 ```
 
 ## GET /refreshes/\<requestId>
