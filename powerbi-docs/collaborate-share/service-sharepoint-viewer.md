@@ -194,3 +194,6 @@ Admins can see the workspaces created in the Power BI service on the **Workspace
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-workspace.png" alt-text="Screenshot of Power BI admin workspace creation naming." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-workspace.png":::
 
 Admins can't modify workspaces (delete, modify access) from the Power BI Service. 
+
+Data for this feature will reside in the location of your tenant's Power BI [home region](../admin/service-admin-where-is-my-tenant-located.md) regardless of your organization's Microsoft 365 data residency.
+
