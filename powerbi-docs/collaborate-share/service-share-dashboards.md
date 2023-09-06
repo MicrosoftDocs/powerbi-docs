@@ -37,6 +37,12 @@ Sujata demonstrates how to share in the Power BI service.
 - Your recipients also need Power BI Pro or Premium Per User (PPU) licenses, unless the content is in a [Premium capacity](../enterprise/service-premium-what-is.md). 
 - If you want to allow recipients to edit a shared report, you have to assign the user a workspace role that allows editing. To learn more about role-level permissions and how to assign roles, read [Roles in workspaces](service-roles-new-workspaces.md).
 
+>[!NOTE]
+>
+>* Only **P SKU**s and **F SKU**s larger than F32 allow free Power BI users to consume Power BI apps and shared content in Power BI service. Smaller **F SKU**s require a Pro license to consume Power BI content.
+>* The **F SKU** is part of Fabric. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
+
+
 ### Where you can share
 
 - You can share reports and dashboards from My Workspace. 
