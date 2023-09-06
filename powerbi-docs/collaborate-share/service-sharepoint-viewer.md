@@ -24,7 +24,7 @@ You can quickly view Power BI files in OneDrive and SharePoint without needing t
 > [!NOTE]
 > Viewing Power BI files in OneDrive and SharePoint is currently **disabled by default**. Work with your Power BI Admin to enable this capability. The capability will be turned **on by default** the first week of October, 2023 unless action is taken by your admin. 
 
-Currently, admins must [**enable** the capability in the Admin portal](/fabric/admin//service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview).
+Currently, admins must [**enable** the capability in the Admin portal](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-items-saved-in-onedrive-and-sharepoint-preview).
 
 If you **do not** want to have the capability to view files in OneDrive and SharePoint on by default in your tenant starting the first week of October, your admin will need to [**disable** the capability in the Admin portal](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview---update) by Septemeber 29th. .
 

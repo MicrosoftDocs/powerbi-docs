@@ -204,14 +204,14 @@ A curated set of online resources is valuable to help community members focus an
 - [LinkedIn Learning](https://www.linkedin.com/learning/topics/power-bi)
 - [Virtual workshops and training](https://www.microsoft.com/store/workshops-training-and-events/#keyword=Power%20BI)
 
-Consider using [Microsoft Viva Learning](https://resources.techcommunity.microsoft.com/viva-learning/), which is integrated into Microsoft Teams. It includes content from sources such as [Microsoft Learn](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link) and [LinkedIn Learning](https://www.linkedin.com/learning/topics/power-bi). Custom content produced by your organization can be included as well.
+Consider using [Microsoft Viva Learning](https://www.microsoft.com/microsoft-viva/learning), which is integrated into Microsoft Teams. It includes content from sources such as [Microsoft Learn](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link) and [LinkedIn Learning](https://www.linkedin.com/learning/topics/power-bi). Custom content produced by your organization can be included as well.
 
 In addition to Microsoft content and custom content produced by your organization, you may choose to provide your user community with a curated set of recommended links to trusted online sources. There's a wide array of videos, blogs, and articles produced by the worldwide community. The community comprises Power BI experts, [Microsoft Most Valued Professions (MVPs)](https://mvp.microsoft.com/), and enthusiasts. Providing a curated learning path that contains specific, reputable, current, and high quality resources will provide the most value to your user community.
 
 If you do make the investment to create custom in-house training, consider creating short, targeted content that focuses on solving one specific problem. It makes the training easier to find and consume. It's also easier to maintain and update over time.
 
 > [!TIP]
-> The **Help and Support** menu in the Power BI service is customizable. Once your centralized location for training documentation is operational, update the [tenant setting in the Admin portal](/power-bi/admin/service-admin-portal-help-support) with the link. The link can then be accessed from menu when users select the **Get Help** option. Also, be sure to teach users about the **Help** ribbon tab in Power BI Desktop. It includes links to guided learning, training videos, documentation, and more.
+> The **Help and Support** menu in the Power BI service is customizable. Once your centralized location for training documentation is operational, update the [tenant setting in the Admin portal](/fabric/admin/service-admin-portal-help-support) with the link. The link can then be accessed from menu when users select the **Get Help** option. Also, be sure to teach users about the **Help** ribbon tab in Power BI Desktop. It includes links to guided learning, training videos, documentation, and more.
 
 ## Documentation
 

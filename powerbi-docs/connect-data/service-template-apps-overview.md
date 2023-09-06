@@ -55,7 +55,7 @@ The general process to develop and submit a template app involves several stages
 
 ## Before you begin
 
-To create the template app, you need permissions to create one. For more information, see [Template app tenant settings](../admin/service-admin-portal-template-app.md).
+To create the template app, you need permissions to create one. For more information, see [Template app tenant settings](/fabric/admin/service-admin-portal-template-app).
 
 To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Partner Center publisher](/azure/marketplace/become-publisher).
 
@@ -83,7 +83,7 @@ Here are the high-level steps.
 
 ## Requirements
 
-To create the template app, you need permissions to create one. For more information, see [Template app tenant settings](../admin/service-admin-portal-template-app.md).
+To create the template app, you need permissions to create one. For more information, see [Template app tenant settings](/fabric/admin/service-admin-portal-template-app).
 
 To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Partner Center publisher](/azure/marketplace/become-publisher).
 

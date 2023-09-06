@@ -41,7 +41,7 @@ When enabled, a **Share** button is in the top right corner of Power BI Desktop.
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-share-button-plain.png" alt-text="Screenshot of the Share button in Power BI." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-share-button-plain.png":::
 
-If your Power BI admin has turned off the capability for your organization, you receive a notification that states *Sharing has been disabled* when you select the Share button. [Learn more](../admin/service-admin-portal-integration.md#users-can-share-links-to-power-bi-files-stored-in-onedrive-and-sharepoint-through-power-bi-desktop) about the Admin setting.
+If your Power BI admin has turned off the capability for your organization, you receive a notification that states *Sharing has been disabled* when you select the Share button. [Learn more](/fabric/admin/service-admin-portal-integration#users-can-share-links-to-power-bi-files-stored-in-onedrive-and-sharepoint-through-power-bi-desktop) about the Admin setting.
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-sharing-disabled.png" alt-text="Screenshot of notification when sharing is disabled." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-sharing-disabled.png":::
 
@@ -147,7 +147,7 @@ When you select **Save as** in the file menu, the file name box is empty regardl
 
 ### Power BI OneDrive and SharePoint sharing link behavior by license type
 
-The following use cases apply when sharing a link to a Power BI file saved in OneDrive or SharePoint depending on the license status of each user. All of these scenarios assume that the user has a Microsoft 365 license and that OneDrive and SharePoint viewing is [enabled in their organization](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview).
+The following use cases apply when sharing a link to a Power BI file saved in OneDrive or SharePoint depending on the license status of each user. All of these scenarios assume that the user has a Microsoft 365 license and that OneDrive and SharePoint viewing is [enabled in their organization](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-items-saved-in-onedrive-and-sharepoint-preview).
 
 | License status of the person who shares the link | License status of the person who selects the shared link | Experience for the person who shares the link | Experience for the person who selects the link |
 | --- | --- | --- | --- |
