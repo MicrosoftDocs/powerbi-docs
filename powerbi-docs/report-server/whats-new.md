@@ -38,11 +38,8 @@ Text box properties work similarly to row properties. They allow report authors 
 See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary) blog for details about these feature updates.
 
 - [Set conditional formatting rules based on string fields](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917169).
-
-- [Format image dimensions individually in tables and matrixes](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917170).
-  
+- [Format image dimensions individually in tables and matrixes](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917170).  
 - [Decide which report pages are visible in the Page navigator visual](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917171).
-
 - [Visual container improvements](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917174)
 
     - Turn on a subtitle that can be used to add extra context to your visuals.
@@ -50,13 +47,9 @@ See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/bl
     - Control the space below each component.
 
 - [Apply all slicers button, Clear all slicers button, and Optimization presets update](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917175)
-
 - [Format Pane – new styling](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917176)
-
 - [New tooltip auto-scale](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917177)
-
 - [Measure-driven data labels](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917178)
-
 - [Mobile formatting options](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917182)
 
 **Accessibility improvements**
@@ -72,16 +65,12 @@ See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/bl
 
 #### Modeling
 
-- New DAX functions: LINEST and LINESTX
-
-    These functions are especially useful in predicting unknown values (Y) given known values (X).
+- New DAX functions LINEST and LINESTX. These functions are especially useful in predicting unknown values (Y) given known values (X).
 
     - [LINEST](/dax/linest-function-dax)
-    - [LINESTX](/dax/linestx-function-dax).
+    - [LINESTX](/dax/linestx-function-dax)
 
-- New DAX functions: RANK and ROWNUMBER
-
-    These functions return a number indicating the rank for the current context within the specified partition, sorted by the specified order.
+- New DAX functions RANK and ROWNUMBER. These functions return a number indicating the rank for the current context within the specified partition, sorted by the specified order.
   
     - [RANK](/dax/rank-function-dax)
     - [ROWNUMBER](dax/rownumber-function-dax)
