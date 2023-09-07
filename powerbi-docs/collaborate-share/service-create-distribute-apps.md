@@ -8,7 +8,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 07/20/2023
+ms.date: 09/07/2023
 
 LocalizationGroup: Share your work
 ---
@@ -139,8 +139,8 @@ On the **Audience** tab, you create and manage audience groups within the app.
     :::image type="content" source="media/service-create-distribute-apps/advance-options-manage-audience-access-pane.png" alt-text="Screenshot of Advanced settings in Manage audience access pane.":::
 
     > [!NOTE]
-    > - The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least the Contributor role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
-    > - Build permissions only apply to datasets _in the same workspace_ as the app. If datasets are in other workspaces, you must explicitly grant build permissions on those datasets, or add the users as at least the Contributor Role in that workspace.
+    > - The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least a Viewer role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
+    > - Build permissions only apply to datasets _in the same workspace_ as the app. If datasets are in other workspaces, you must explicitly grant build permissions on those datasets, or add the users to at least the Viewer role in that workspace.
 
 ### Allow saving a copy of a report
 
@@ -254,7 +254,7 @@ Keep these things in mind when pushing apps to end users:
 * Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 
 ## App consumer view
-App consumers in the Power BI service and in the Power BI mobile apps only see the content based on the access permissions for their respective audience groups. Consumers who have access to multiple audience groups see group tabs on the top bar to switch between different audience views easily. For example, if the user is part of both product team and sales team groups, they will see three view tabs, as shown in the following image. By default, consumers see the All tab view, which is a consolidated view showing all content that they have access to. App consumers can browse different audience group tabs to see the content for each group. 
+App consumers in the Power BI service and in the Power BI mobile apps only see the content based on the access permissions for their respective audience groups. Consumers who have access to multiple audience groups see group tabs on the top bar to switch between different audience views easily. For example, if the user is part of both product team and sales team groups, they see three view tabs, as shown in the following image. By default, consumers see the All tab view, which is a consolidated view showing all content that they have access to. App consumers can browse different audience group tabs to see the content for each group. 
 
 **The consolidated *All* view**
 :::image type="content" source="media/service-create-distribute-apps/audience-all-view.png" alt-text="Screenshot showing All view for app consumers.":::
