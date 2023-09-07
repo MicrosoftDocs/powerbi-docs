@@ -30,6 +30,11 @@ You can use the export feature in several ways. Here are a couple of examples:
 
 ## Using the API
 
+### License requirements
+
+* The report you're exporting must reside in a workspace backed by a Premium, Embedded, or Fabric capacity.
+* The `exportToFile` API, is *not* supported for [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
+
 ### Admin settings
 
 Before using the API, verify that the following [admin tenant settings](../../admin/service-admin-portal-about-tenant-settings.md) are enabled:
@@ -142,11 +147,7 @@ To export a report while it's connected to a dataset other then the default data
 ## Concurrent requests
 
 The exportToFile API supports a limited number of concurrent requests. The maximum number of concurrent requests supported is 500 per capacity. To avoid exceeding the limit and getting a Too Many Requests (429) error, either distribute the load over time or across capacities.
-Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in 10 sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel. 
-
->[!NOTE]
->
-> * Exporting a Power BI report to file using the `exportToFile` API, is not supported for [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
+Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in 10 sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel.
 
 ## Code examples
 
@@ -362,7 +363,6 @@ private async Task<ExportedFile> ExportPowerBIReport(
 ## Considerations and limitations
 
 * An export API operation load will be evaluated as a slow-running background operation, as described in [Premium capacity load evaluation](../../enterprise/service-premium-concepts.md).
-* The report you're exporting must reside on a Premium or Embedded capacity.
 * All related datasets in the report you're exporting must reside on a Premium or Embedded capacity, including datasets with a Direct Query connection.
 * Exported reports can't exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels aren't supported.
