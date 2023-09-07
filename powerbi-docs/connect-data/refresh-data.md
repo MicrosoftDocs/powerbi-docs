@@ -378,7 +378,7 @@ The following images shows how **Refresh history** separates those operations, a
 
 Significant use of dashboard tiles or premium caching can increase refresh duration, since either can queue many queries after each refresh. You can either reduce the number of dashboards or [disable automatic cache refresh](/analysis-services/server-properties/general-properties?view=power-bi-premium-current) setting to help reduce the number of queries.
 
-The data and query cache phases are independent of each other, so either can succeed while the other does not. 
+The data and query cache phases are independent of each other, but run in sequence. The data refresh runs first and when that succeeds, the query cache refresh runs. If the data refresh fails, the query refresh is not initiated. It's possible that the data refresh can run successfully, but the query cache refresh fails. 
 
 Refreshes made using the [enhanced refresh API](asynchronous-refresh.md) or [XMLA Endpoint](../enterprise/service-premium-connect-tools.md#dataset-refresh) won't show attempt details in the **Refresh history** window.
 
