@@ -21,8 +21,8 @@ Download [Power BI Report Server and Power BI Desktop for Power BI Report Server
 This release has a number of new features like the Report Server accessibility tagging for screen-reader report consumers, new accessibility for matrix navigation and selection, and updates to existing features for modeling and reporting. See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary) blog for all the details. 
 
 ### Report Server
-- [Accessibility options for row properties](#Accessibility-options-for-Row-Properties)
-- [Accessibility options for text box properties](#Accessibility-options-for-Text-box-Properties)
+- [Accessibility options for row properties](#accessibility-options-for-row-properties)
+- [Accessibility options for text box properties](#accessibility-options-for-text-box-properties)
 
 
 #### Accessibility options for row properties
