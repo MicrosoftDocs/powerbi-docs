@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Roles in workspaces
 ms.topic: conceptual
-ms.date: 07/18/2023
+ms.date: 09/07/2023
 ms.custom: fabric
 LocalizationGroup: Share your work
 ---
