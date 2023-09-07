@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 12/24/2022
+ms.date: 09/05/2023
 ---
 
 # Export Power BI report to file
@@ -29,6 +29,11 @@ You can use the export feature in several ways. Here are a couple of examples:
 * **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives. For more information, see [Export and email a Power BI report with Power Automate](../../collaborate-share/service-automate-power-bi-report-export.md)
 
 ## Using the API
+
+### License requirements
+
+* The report you're exporting must reside in a workspace backed by a Premium, Embedded, or Fabric capacity.
+* The `exportToFile` API, is *not* supported for [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
 
 ### Admin settings
 
@@ -141,19 +146,8 @@ To export a report while it's connected to a dataset other then the default data
 
 ## Concurrent requests
 
-The `exportToFile` API supports concurrent export job requests. The table below shows the number of jobs you can run at the same time, depending on the SKU your report resides on. Concurrent requests refer to report pages. For example, 55 pages in one export request on an A4 SKU, will be processed concurrently. This process will take roughly the same amount of time as sending 55 export requests with one page each.
-
-A job that exceeds its number of concurrent requests doesn't terminate. For example, if you export 30 pages in an A2 SKU, the first 25 jobs will run, and the remaining five will wait for the next execution cycle.
-
-Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in 10 sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel. For example, if you have an A1 SKU with a limit of processing 20 max concurrent pages per export, you can process four 50 page reports at the same time. Only five pages from each job are being processed at a given time. As a result, the overall time to complete the four jobs will be shorter than exporting the entire report in one job.
-
->[!NOTE]
->
-> * Exporting a Power BI report to file using the `exportToFile` API, is not supported for [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
-
-The `exportToFile` API supports concurrent export job requests. The maximum number of concurrent requests supported is 500. To avoid exceeding the limit and getting a *Too Many Requests (429)* error, either distribute the load over time or across capacities.
-
-<sup>1</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+The exportToFile API supports a limited number of concurrent requests. The maximum number of concurrent requests supported is 500 per capacity. To avoid exceeding the limit and getting a Too Many Requests (429) error, either distribute the load over time or across capacities.
+Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in 10 sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel.
 
 ## Code examples
 
@@ -369,7 +363,6 @@ private async Task<ExportedFile> ExportPowerBIReport(
 ## Considerations and limitations
 
 * An export API operation load will be evaluated as a slow-running background operation, as described in [Premium capacity load evaluation](../../enterprise/service-premium-concepts.md).
-* The report you're exporting must reside on a Premium or Embedded capacity.
 * All related datasets in the report you're exporting must reside on a Premium or Embedded capacity, including datasets with a Direct Query connection.
 * Exported reports can't exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels aren't supported.
