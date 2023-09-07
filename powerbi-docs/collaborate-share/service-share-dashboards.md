@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 07/12/2023
+ms.date: 09/06/2023
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -39,7 +39,7 @@ Sujata demonstrates how to share in the Power BI service.
 
 >[!NOTE]
 >
->* Only **P SKU**s and **F SKU**s larger than F32 allow free Power BI users to consume Power BI apps and shared content in Power BI service. Smaller **F SKU**s require a Pro license to consume Power BI content.
+>* Only **P SKU**s and **F SKU**s larger than F32 allow users with a Microsoft Fabric free license who have Viewer role on the workspace containing the content to consume Power BI apps and shared content in the Power BI service. Smaller **F SKU**s require a Pro license to consume Power BI content.
 >* The **F SKU** is part of Fabric. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
 
