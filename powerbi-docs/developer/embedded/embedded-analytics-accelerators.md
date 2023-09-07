@@ -12,15 +12,13 @@ ms.date: 09/03/2023
 
 # Embedded analytics accelerator solutions from Microsoft partner
 
-Microsoft partners offer accelerators to facilitate embedded analytics for ISVs. These accelerators are designed to help you quickly embed Power BI analytics into your application. The following table lists the different accelerators from our partners:
-
-Embedded analytics accelerators are a cost-effective way to speed up time-to-market or expedite a PoC/pilot for your multi-tenant, customer facing Power BI embedded analytics solution​.
+To facilitate embedded analytics for ISVs, Microsoft partners offer accelerators designed to help quickly embed Power BI analytics into your application. Embedded analytics accelerators are a cost-effective way to speed up time-to-market or expedite a PoC or pilot for your multi-tenant, customer facing Power BI embedded analytics solution​. They can simplify the process of keeping track of customers and generating tokens. They can also help you manage your Power BI capacity and billing.
 
 * Accelerators provide enhanced personalized user experience and added functionality for embedding Power BI for customers (App Owns Data) embedding scenario with flexible end user authentication and authorization options​.
 
 * Accelerators don't require coding. Some need minimal code development for the client front-end, while hiding the implementation details of a Power BI embedded solution that supports multi-tenancy and end user permissions management.​
 
-* Once installed you can white-label the solution, configure its capabilities and customize the user experience.​
+* Once installed, you can white-label the solution, configure its capabilities and customize the user experience.​
 
 * Accelerators are developed and owned by our partners and are available for self-deployment from Azure marketplace into your Azure environment using your Power BI/Fabric tenant. ​
 
@@ -36,19 +34,7 @@ There are several partner accelerators that vary in their deployment, acquisitio
 
 ## Accelerator deployment options
 
-### Option A: Stand alone
-
-In this option, the accelerator is deployed as a stand-alone application in your Azure environment. The accelerator is a web application that your end users access via a URL. The following diagram illustrates this option:
-
-### Option B: URL redirect
-
-### Option C: Embedded in App’s iFrame
-
-### Option D: Backend only + SDK
-
-### Frontend customization options
-
-Different accelerators provide different frontend capabilities and options including any of the following:
+Different accelerators provide different frontend capabilities and options including the following:
 
 * Integration with exiting ISV app​ (deployment options)
 
@@ -130,11 +116,11 @@ The following tables compare features of the different accelerators from our par
 
 ### Deployment options
 
-| **Partner** <br> (accelerator)                  | [**Option A**](#option-a-stand-alone)​ <br>(Stand alone) | [**Option B**](#option-b-url-redirect)​ <br>(URL redirect) | [**Option C**](#option-c-embedded-in-apps-iframe)​ <br>(Embedded in App’s iFrame) | [**Option D**](#option-d-backend-only--sdk)​ <br>(backend only+ SDK) |
-|-------------------------------------------------|--------------------------------|----------------------------------|---------------------------------------------|--------------------------------------|
-| [**Shift Analytics**](https://shiftanalytics.ca/)​ <br> [(The Reporting Hub)](https://thereportinghub.com/)    | ✔️​                            | ✔️​                               | ✔️​                                          | ​                                     |
-| [**MAQ Software**](https://maqsoftware.com/)​ <br>(Embed Fast)               | under development             | under development​                 | ​                                            | ✔️​                                   |
-| [**iLink Digital​**](https://www.ilink-digital.com/) <br>(BiHub)                           | ✔️​                            | ​                                 | ​                                            | ​                                      |
+| **Partner** <br> (accelerator)                                                                             | Stand alone        | URL redirect      | Embedded in App’s iFrame | Backend + SDK only |
+|-------------------------------------------------                                                           |--------------------|-------------------|--------------------------|--------------------|
+| [**Shift Analytics**](https://shiftanalytics.ca/)​ <br> [(The Reporting Hub)](https://thereportinghub.com/) | ✔️​                | ✔️​                | ✔️​                      | ​                   |
+| [**MAQ Software**](https://maqsoftware.com/)​ <br>(Embed Fast)                                              | under development  | under development​ | ​                         | ✔️​                |
+| [**iLink Digital​**](https://www.ilink-digital.com/) <br>(BiHub)                                            | ✔️​                | ​                  | ​                         | ​                   |
 
 ### Acquisition and billing options
 
@@ -154,4 +140,4 @@ The following tables compare features of the different accelerators from our par
 
 ## Next steps
 
-- [Embed Power BI analytics into an application for your customers](./embed-for-customers.md)
+* [Embed Power BI analytics into an application for your customers](./embed-sample-for-customers.md)
