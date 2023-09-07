@@ -41,12 +41,12 @@ See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/bl
 
 - [Format image dimensions individually in tables and matrixes](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917170).
   
-- [Decide which report pages are visible visible pages in the Page navigator visual](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917171).
+- [Decide which report pages are visible in the Page navigator visual](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917171).
 
 - [Visual container improvements](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917174)
 
     - Turn on a subtitle that can be used to add extra context to your visuals.
-    - To visually separate the visual header from its contents, add a divider line.
+    - Add a divider line to visually separate the visual header from its contents.
     - Control the space below each component.
 
 - [Apply all slicers button, Clear all slicers button, and Optimization presets update](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917175)
@@ -75,14 +75,16 @@ See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/bl
 - New DAX functions: LINEST and LINESTX
 
     These functions are especially useful in predicting unknown values (Y) given known values (X).
-    [LINEST](/dax/linest-function-dax)
-    [LINESTX] (/dax/linestx-function-dax).
+
+    - [LINEST](/dax/linest-function-dax)
+    - [LINESTX](/dax/linestx-function-dax).
 
 - New DAX functions: RANK and ROWNUMBER
 
     These functions return a number indicating the rank for the current context within the specified partition, sorted by the specified order.
-    [RANK](/dax/rank-function-dax)
-    [ROWNUMBER](dax/rownumber-function-dax)
+  
+    - [RANK](/dax/rank-function-dax)
+    - [ROWNUMBER](dax/rownumber-function-dax)
   
 ## January 2023
 
