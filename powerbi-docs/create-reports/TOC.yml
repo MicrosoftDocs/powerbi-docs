@@ -90,7 +90,7 @@
           href: service-interact-quick-report.md
         - name: Create quick reports in the service
           href: service-quick-create-report.md
-        - name: Manually build dataset create a report in the service
+        - name: Create a report quickly from Excel data in the service
           href: service-report-create-new.md
         - name: Create a report quickly from a SharePoint list
           href: service-quick-create-sharepoint-list.md
@@ -98,7 +98,7 @@
           href: dynamics-quick-create-report.md
         - name: Create a quick report in Jupyter
           href: jupyter-quick-report.md
-    - name: Create a report from Excel automatically in the service
+    - name: Create a dataset from Excel data in the service
       href: service-reports-create-excel-connector.md
     - name: Enable automatic page refresh
       href: desktop-automatic-page-refresh.md

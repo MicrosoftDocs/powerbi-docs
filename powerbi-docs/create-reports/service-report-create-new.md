@@ -1,6 +1,6 @@
 ---
-title: 'Create a report from an Excel file in the Power BI service workspace'
-description: Learn how to create a Power BI report from an Excel file in the Power BI service through a workspace by using the Retail Analysis sample.
+title: 'Create a report from an Excel file in the Power BI service'
+description: Learn how to create a Power BI report from an Excel file in the Power BI service by using the Retail Analysis sample.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,10 +8,10 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Create a report from an Excel file
 ms.topic: how-to
-ms.date: 04/03/2023
+ms.date: 09/06/2023
 LocalizationGroup: Reports
 ---
-# Manually build a dataset to create report in the Power BI service 
+# Create a report from an Excel file in the Power BI service
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -33,9 +33,9 @@ This method of creating a report starts with a file and a blank report canvas. I
 
     :::image type="content" source="media/service-report-create-new/power-bi-excel.png" alt-text="Screenshot of the Add data to get started dialog, highlighting Excel.":::
 
-1. Select **Browse this device**. Go to the location where you saved the Retail Analysis sample then select **Open**.
+1. Select **Browse this device**. Go to the location where you saved your Excel file, or the Retail Analysis sample, then select **Open**.
 
-    :::image type="content" source="media/service-report-create-new/power-bi-select-files.png" alt-text="Screenshot of Select a file dialog, highlighting the Retail Analysis Sample.":::
+    :::image type="content" source="media/service-report-create-new/power-bi-select-files.png" alt-text="Screenshot of Select a file dialog, highlighting the Retail Analysis Sample." lightbox="media/service-report-create-new/power-bi-select-files.png":::
 
     After the Excel file imports, it's listed as a *dataset* in the workspace list.
 
