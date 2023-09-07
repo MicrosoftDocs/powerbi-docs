@@ -13,7 +13,7 @@ ms.custom: intro-whats-new
 
 # What's new in Power BI Report Server
 
-Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
+Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log fPower BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
@@ -508,7 +508,7 @@ Among the highlights of this update are the hierarchical slicer and decompositio
 - Buttons now support fill images
 - Multi-column sort for tables
 - Dual axis for line charts
-- Rectangle select for visuals
+- Rectangle selection for visuals
 - Conditional formatting for totals and subtotals in tables and matrices
 - Customize theme dialog
 - Conditional formatting discoverability
