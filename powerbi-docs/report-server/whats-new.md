@@ -73,7 +73,7 @@ See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/bl
 - New DAX functions RANK and ROWNUMBER. These functions return a number indicating the rank for the current context within the specified partition, sorted by the specified order.
   
     - [RANK](/dax/rank-function-dax)
-    - [ROWNUMBER](dax/rownumber-function-dax)
+    - [ROWNUMBER](/dax/rownumber-function-dax)
   
 ## January 2023
 
