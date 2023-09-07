@@ -17,15 +17,17 @@ LocalizationGroup: Reports
 
 You can upload an Excel file from the navigation pane of the Power BI service. You can upload files directly on the web. You don't need to download Power BI Desktop to create a report. For more information about reports, read [Reports in Power BI](../consumer/end-user-reports.md).
 
+## Prerequisites
+
+* [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md).
+
 ## Create a dataset from Excel data 
 
-1. In the navigation pane in the Power BI service, select the **Create** button.
-
-    A page opens, where you can select your data source.
+1. Open the workspace where you want to create the dataset and select **New** > **Dataset**.
 
 1. Select the Excel tile to upload an Excel file.
 
-1. You see a dialog to connect to your Excel data source. You have a few options to connect to the data source:
+1. In the **Select a file** dialog, navigate to your Excel data source, and select **Import**. You have a few options to connect to the data source:
 
      1. Paste the file path or URL of the Excel file stored in your OneDrive.
      1. Browse your OneDrive and the select the file.
@@ -33,9 +35,11 @@ You can upload an Excel file from the navigation pane of the Power BI service. Y
      > [!NOTE]
      > If you select to upload your file from your local computer, Power BI automatically uploads your file to your OneDrive for Business. To see where this file is located, select **Options** (...) to open the context menu, then select **Open file location**.
 
+1. In the Power Query **Connect to data source** dialog, complete the **Connection credentials**.
+
     :::image type="content" source="media/service-reports-create-excel-connector/connect-to-data-source.png" alt-text="Screenshot of the Power BI service, uploading an Excel file as the data source." lightbox="media/service-reports-create-excel-connector/connect-to-data-source.png":::
 
-1. Select **Next** once you've successfully uploaded the file or pasted the file path or URL.
+1. Select **Next**.
 
 1. Select up to eight tables that you want to add to your dataset in the navigation UI and select **Create**. As you go through the creation process, Power BI creates a new dataset for you and autofills the data pane with the tables you selected.
 
@@ -48,6 +52,7 @@ You can upload an Excel file from the navigation pane of the Power BI service. Y
 - During public preview, you can't select more than eight tables in the navigation UI.
 
 - During public preview, use file sizes no larger than 10 MB for better performance. For now, use the Power BI Desktop application for larger files.
+- Table preview doesn't support measures. 
 
 - If you upload your file from your local computer, the file automatically uploads to your OneDrive for Business as well.
 
