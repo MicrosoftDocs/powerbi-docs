@@ -361,7 +361,7 @@ The following screenshot shows a failed refresh, with details about each time Po
 
 :::image type="content" source="media/refresh-data/refresh-history-01.png" alt-text="Screenshot of refresh history details.":::
 
-You can also see when Power BI succeeds in when previous attempts failed, as shown in the following image, which reveals that Power BI succeeded only after three previous failures.
+You can also see when Power BI succeeds in when previous attempts failed, as shown in the following image, which reveals that Power BI succeeded only after three previous failures. Notice the successful data refresh and query cache share the same index number, indicating they both were successful on the fourth attempt.
 
 :::image type="content" source="media/refresh-data/refresh-history-02.png" alt-text="Screenshot of refresh history when successful.":::
 
