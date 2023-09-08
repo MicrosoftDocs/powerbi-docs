@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/10/2023
+ms.date: 09/07/2023
 LocalizationGroup: Data refresh
 ---
 
@@ -349,6 +349,40 @@ The warning icon helps to indicate current dataset issues, but it's also a good 
 Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces and [embedded workspaces](../developer/embedded/embedded-capacity.md).
 
 Learn more about automatic page refresh in the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) article.
+
+
+## Dataset refresh history
+
+Refresh attempts for Power BI datasets may not always go smoothly, or may take longer than expected. You can use the **Refresh history** page to help you diagnose why a refresh may not have happened as you expected. 
+
+Power BI automatically makes multiple attempts to refresh a dataset if it experiences a refresh failure. Without insight into refresh history activities, it may just seem like a refresh is taking longer than expected. With the **Refresh history** page, you can see those failed attempts and gain insight into the reason for the failure. 
+
+The following screenshot shows a failed refresh, with details about each time Power BI automatically attempted to successfully complete the refresh. 
+
+:::image type="content" source="media/refresh-data/refresh-history-01.png" alt-text="Screenshot of refresh history details.":::
+
+You can also see when Power BI succeeds in when previous attempts failed, as shown in the following image, which reveals that Power BI succeeded only after three previous failures. Notice the successful data refresh and query cache share the same index number, indicating they both were successful on the fourth attempt.
+
+:::image type="content" source="media/refresh-data/refresh-history-02.png" alt-text="Screenshot of refresh history when successful.":::
+
+You can select the *Show* link beside a failure to get more information about the failed refresh attempt, which can help with troubleshooting the issue.
+
+In addition, each Power BI refresh attempt is divided into two operations:
+
+* **Data** – Load data into the dataset
+* **Query Cache** – Premium query caches and/or dashboard tiles refresh
+
+The following images show how **Refresh history** separates those operations, and provides information about each.
+
+:::image type="content" source="media/refresh-data/refresh-history-03.png" alt-text="Screenshot of refresh history with refresh operations separated.":::
+
+Significant use of dashboard tiles or premium caching can increase refresh duration, since either can queue many queries after each refresh. You can either reduce the number of dashboards or [disable automatic cache refresh](/analysis-services/server-properties/general-properties?view=power-bi-premium-current) setting to help reduce the number of queries.
+
+The data and query cache phases are independent of each other, but run in sequence. The data refresh runs first and when that succeeds, the query cache refresh runs. If the data refresh fails, the query refresh is not initiated. It's possible that the data refresh can run successfully, but the query cache refresh fails. 
+
+Refreshes made using the [enhanced refresh API](asynchronous-refresh.md) or [XMLA Endpoint](../enterprise/service-premium-connect-tools.md#dataset-refresh) won't show attempt details in the **Refresh history** window.
+
+
 
 ## Refresh cancellation
 

@@ -7,16 +7,74 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/27/2023
+ms.date: 09/07/2023
 ms.custom: intro-whats-new
 ---
 
 # What's new in Power BI Report Server
 
-Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
+Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log fPower BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
+## May 2023
+This release has a number of new features like the Report Server accessibility tagging for screen-reader report consumers, new accessibility for matrix navigation and selection, and updates to existing features for modeling and reporting. See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary) blog for all the details. 
+
+### Report Server
+- [Accessibility options for row properties](#accessibility-options-for-row-properties)
+- [Accessibility options for text box properties](#accessibility-options-for-text-box-properties)
+
+
+#### Accessibility options for row properties
+Accessibility options are new features for report authors. You can enable them from the Power BI Report Builder authoring tool. Accessibility options for row properties allow report authors to tag rows for headers and data cells within a paginated report.
+
+#### Accessibility options for text box properties
+Text box properties work similarly to row properties. They allow report authors to tag heading elements to text boxes within a paginated report. To enable text box properties, right-click a text box to select the Accessibility menu and determine which structure type you wish to overwrite.
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary) blog for details about these feature updates.
+
+- [Set conditional formatting rules based on string fields](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917169).
+- [Format image dimensions individually in tables and matrixes](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917170).  
+- [Decide which report pages are visible in the Page navigator visual](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917171).
+- [Visual container improvements](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917174)
+
+    - Turn on a subtitle that can be used to add extra context to your visuals.
+    - Add a divider line to visually separate the visual header from its contents.
+    - Control the space below each component.
+
+- [Apply all slicers button, Clear all slicers button, and Optimization presets update](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917175)
+- [Format Pane – new styling](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917176)
+- [New tooltip auto-scale](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917177)
+- [Measure-driven data labels](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917178)
+- [Mobile formatting options](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917182)
+
+**Accessibility improvements**
+
+- [New accessible report themes](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917172) provide good contrast across their colors.
+- [Matrix accessibility improvements](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917173).
+- Improved keyboard navigation and new keyboard shortcuts.
+- A two-toned focus outline.
+- New support for screen reader announcements.
+- Added screen reader support for conditional formatting icons and data bars.
+- Removed browser (default) tooltips.
+- Overall performance improvements for scrolling and rendering.
+
+#### Modeling
+
+- New DAX functions LINEST and LINESTX. These functions are especially useful in predicting unknown values (Y) given known values (X).
+
+    - [LINEST](/dax/linest-function-dax)
+    - [LINESTX](/dax/linestx-function-dax)
+
+- New DAX functions RANK and ROWNUMBER. These functions return a number indicating the rank for the current context within the specified partition, sorted by the specified order.
+  
+    - [RANK](/dax/rank-function-dax)
+    - [ROWNUMBER](/dax/rownumber-function-dax)
+  
 ## January 2023
 
 This release has updates for the Report Server web portal, modeling, and reporting. See the [Power BI Report Server January 2023](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2023-feature-summary) blog for all the details.
@@ -450,7 +508,7 @@ Among the highlights of this update are the hierarchical slicer and decompositio
 - Buttons now support fill images
 - Multi-column sort for tables
 - Dual axis for line charts
-- Rectangle select for visuals
+- Rectangle selection for visuals
 - Conditional formatting for totals and subtotals in tables and matrices
 - Customize theme dialog
 - Conditional formatting discoverability
