@@ -110,8 +110,6 @@ The following are known issues and limitations during **preview**:
 
 - Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same dataset. Composite models are not yet supported.
 
-- Direct Lake datasets do not currently support calculation groups.
-
 - Direct Lake datasets do not currently support Publish to Web because SSO requires authenticated users.
 
 - Calculated columns and calculated tables are not yet supported.
