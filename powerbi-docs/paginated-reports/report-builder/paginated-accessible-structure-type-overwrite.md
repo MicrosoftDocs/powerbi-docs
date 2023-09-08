@@ -86,7 +86,7 @@ You can set the heading value in two different ways:
 ### Benefits of headings
 
 - Screen readers announce headings are announced as "Heading level 1", "Heading level 2", and so on.
-- Users can press the shortcut <kbd>H</kbd> key to jump to the next header in a report, when you're viewing reports in Power BI Report Server.
+- You can press the shortcut <kbd>H</kbd> key to jump to the next header in a report, when you're viewing reports in Power BI Report Server.
 - Headings are marked correctly in tagged PDF.
 
 ## Set header cells for tables in Report Builder
@@ -127,7 +127,7 @@ The default value is *None*. Here are the available values:
 
 1. In the **Row Properties** dialog on the **Accessibility** tab, set the new property.
 
-    :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-row-properties-accessibility.png" alt-text="set row properties onteh accessibility tab.":::
+    :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-row-properties-accessibility.png" alt-text="set row properties on the accessibility tab.":::
 
 ### Considerations and limitations  
 
