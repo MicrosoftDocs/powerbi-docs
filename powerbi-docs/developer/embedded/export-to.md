@@ -146,7 +146,7 @@ To export a report while it's connected to a dataset other then the default data
 
 ## Concurrent requests
 
-The exportToFile API supports a limited number of concurrent requests. The maximum number of concurrent requests supported is 500 per capacity. To avoid exceeding the limit and getting a Too Many Requests (429) error, either distribute the load over time or across capacities.
+The `exportToFile` API supports a limited number of concurrent requests. The maximum number of concurrent requests supported is 500 per capacity. To avoid exceeding the limit and getting a Too Many Requests (429) error, either distribute the load over time or across capacities.
 Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in 10 sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel.
 
 ## Code examples

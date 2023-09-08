@@ -222,7 +222,7 @@ Using composite models with Power BI datasets and Analysis Services, you can bui
 
 ### Managing composite models on Power BI datasets
 
-To enable the creation of composite models on Power BI datasets, your tenant needs to have the following switches enabled:
+To enable the creation and consumption of composite models on Power BI datasets, your tenant needs to have the following switches enabled:
 
 - [Allow XMLA Endpoints and Analyze in Excel with on-premises datasets](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets). If this switch is disabled a DirectQuery connection to a Power BI dataset can't be made.
 - [Users can work with Power BI datasets in Excel using a live connection](/fabric/admin/service-admin-portal-export-sharing#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection). If this switch is disabled, users can't make live connections to Power BI datasets so the **Make changes to this model** button can't be reached.
@@ -281,7 +281,7 @@ The chain in the previous image is of length three, which is the maximum length.
 
 ### Permissions and licensing
 
-Users accessing reports need to have proper [permissions to all datasets and models in the chain that's formed by the dataset or model](#chaining) that they want to access and the datasets or models on which the reports are based. This permission can be Read or Build depending on whether they need to view the reports or make changes and create new reports.
+Users accessing reports need to have proper [permissions to all datasets and models in the chain that's formed by the dataset or model](#chaining) that they want to access and the datasets or models on which the reports are based. This permission can be Read or Build depending on whether they need to view the reports or make changes and create new reports. Also notice that [these tenant switches](#managing-composite-models-on-power-bi-datasets) should be enabled for the user.
 
 > [!NOTE]
 > Refer to this blogpost for important information about [permissions required for composite models on Power BI datasets and Analysis Services models](https://powerbi.microsoft.com/blog/announcing-general-availability-for-composite-models-on-power-bi-datasets-and-analysis-services-models/).
