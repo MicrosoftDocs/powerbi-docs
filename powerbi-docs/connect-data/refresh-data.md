@@ -372,7 +372,7 @@ In addition, each Power BI refresh attempt is divided into two operations:
 * **Data** – Load data into the dataset
 * **Query Cache** – Premium query caches and/or dashboard tiles refresh
 
-The following images shows how **Refresh history** separates those operations, and provides information about each.
+The following images show how **Refresh history** separates those operations, and provides information about each.
 
 :::image type="content" source="media/refresh-data/refresh-history-03.png" alt-text="Screenshot of refresh history with refresh operations separated.":::
 
