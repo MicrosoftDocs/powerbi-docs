@@ -30,10 +30,10 @@ To delete an item, mouseover and select the item, and then click the trash can t
 
 ## Enable/disable featured content
 
-The featured content feature is enabled, disabled, and configured (for example, specifying who can feature content) via an admin setting. See [Featured content](service-admin-portal-export-sharing.md#featured-content) for detail.
+The featured content feature is enabled, disabled, and configured (for example, specifying who can feature content) via an admin setting. See [Featured content](/fabric/admin/service-admin-portal-export-sharing#featured-content) for detail.
 
 ## Next steps
 
-* [Enable/disable featured content](service-admin-portal-export-sharing.md#featured-content)
+* [Enable/disable featured content](/fabric/admin/service-admin-portal-export-sharing#featured-content)
 * [Feature content on colleagues' Power BI Home page](../collaborate-share/service-featured-content.md)
 * [About the Admin portal](service-admin-portal.md)

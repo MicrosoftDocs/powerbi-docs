@@ -313,7 +313,7 @@ You can assign sensitivity labels to a supported data source in different ways.
 > [!WARNING]
 > The details for how to assign sensitivity labels to a data source are out of scope for this article. The technical capabilities are evolving with respect to what's supported for inheritance in Power BI. We recommend that you conduct a technical proof of concept to verify your goals, ease of use, and whether the capabilities meet your requirements.
 
-Inheritance will happen only when you enable the **Apply sensitivity labels from data sources to their data in Power BI** [tenant setting](/power-bi/admin/service-admin-portal-information-protection). For more information about tenant settings, see the [Power BI tenant settings](#power-bi-tenant-settings) section later in this article.
+Inheritance will happen only when you enable the **Apply sensitivity labels from data sources to their data in Power BI** [tenant setting](/fabric/admin/service-admin-portal-information-protection). For more information about tenant settings, see the [Power BI tenant settings](#power-bi-tenant-settings) section later in this article.
 
 > [!TIP]
 > You'll need to become familiar with the [inheritance behavior](/power-bi/enterprise/service-security-sensitivity-label-inheritance-from-data-sources#inheritance-behavior). Be sure to include various circumstances in your test plan.
@@ -447,7 +447,7 @@ There are several Power BI tenant settings that are related to information prote
 
 ### Users who can apply labels
 
-You should decide who will be allowed to apply sensitivity labels to Power BI content. This decision will determine how you set the **Allow users to apply sensitivity labels for content** [tenant setting](/power-bi/admin/service-admin-portal-information-protection).
+You should decide who will be allowed to apply sensitivity labels to Power BI content. This decision will determine how you set the **Allow users to apply sensitivity labels for content** [tenant setting](/fabric/admin/service-admin-portal-information-protection).
 
 It's typically the content creator or owner who assigns the label during their normal workflow. The most straightforward approach is to enable this tenant setting, which allows all Power BI users to apply labels. In this case, standard workspace roles will determine who can edit items in the Power BI service (including applying a label). You can use the activity log to track when a user assigns or changes a label.
 
@@ -455,19 +455,19 @@ It's typically the content creator or owner who assigns the label during their n
 
 You should decide whether you want sensitivity labels to be inherited from supported data sources that are upstream from Power BI. For example, if columns in an Azure SQL Database have been defined with the _Highly Restricted_ sensitivity label, then a Power BI dataset that imports data from that source will inherit that label.
 
-If you decide to enable inheritance from upstream data sources, set the **Apply sensitivity labels from data sources to their data in Power BI** [tenant setting](/power-bi/admin/service-admin-portal-information-protection). We recommend that you plan to enable inheritance of data source labels to promote consistency and reduce effort.
+If you decide to enable inheritance from upstream data sources, set the **Apply sensitivity labels from data sources to their data in Power BI** [tenant setting](/fabric/admin/service-admin-portal-information-protection). We recommend that you plan to enable inheritance of data source labels to promote consistency and reduce effort.
 
 ### Labels for downstream content
 
 You should decide whether sensitivity labels should be inherited by downstream content. For example, if a Power BI dataset has a sensitivity label of _Highly Restricted_, then all downstream reports will inherit this label from the dataset.
 
-If you decide to enable inheritance by downstream content, set the **Automatically apply sensitivity labels to downstream content** [tenant setting](/power-bi/admin/service-admin-portal-information-protection). We recommend that you plan to enable inheritance by downstream content to promote consistency and reduce effort.
+If you decide to enable inheritance by downstream content, set the **Automatically apply sensitivity labels to downstream content** [tenant setting](/fabric/admin/service-admin-portal-information-protection). We recommend that you plan to enable inheritance by downstream content to promote consistency and reduce effort.
 
 ### Workspace administrator overrides
 
 This setting applies for labels that were applied automatically (such as when default labels are applied, or when labels are automatically inherited). When a label has protection settings, Power BI allows only authorized users to change the label. This setting enables workspace administrators to change a label that was applied automatically, even if there are protection settings on the label.
 
-If you decide to allow label updates, set the **Allow workspace administrators to override automatically applied sensitivity labels** [tenant setting](/power-bi/admin/service-admin-portal-information-protection). This setting applies to the entire organization (not individual groups). It allows workspace administrators to change labels that were automatically applied.
+If you decide to allow label updates, set the **Allow workspace administrators to override automatically applied sensitivity labels** [tenant setting](/fabric/admin/service-admin-portal-information-protection). This setting applies to the entire organization (not individual groups). It allows workspace administrators to change labels that were automatically applied.
 
 We recommend that you consider allowing Power BI workspace administrators to update labels. You can use the activity log to track when they assign or change a label.
 
@@ -475,7 +475,7 @@ We recommend that you consider allowing Power BI workspace administrators to upd
 
 You should decide whether protected (encrypted) content can be shared with everyone in your organization.
 
-If you decide to disallow sharing of protected content, set the **Restrict content with protected labels from being shared via link with everyone in your organization** [tenant setting](/power-bi/admin/service-admin-portal-information-protection). This setting applies to the entire organization (not individual groups).
+If you decide to disallow sharing of protected content, set the **Restrict content with protected labels from being shared via link with everyone in your organization** [tenant setting](/fabric/admin/service-admin-portal-information-protection). This setting applies to the entire organization (not individual groups).
 
 We strongly recommend that you plan to enable this tenant setting to disallow sharing of protected content. When enabled, it disallows sharing operations with the entire organization for more sensitive content (defined by the labels that have encryption defined). By enabling this setting, you'll reduce the possibility of data leakage.
 

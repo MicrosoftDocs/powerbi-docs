@@ -96,8 +96,8 @@ Here are a few guidelines to help you become successful with team BI.
 - Make purposeful decisions about how [workspace management](powerbi-implementation-planning-workspaces-workspace-level-planning.md) will be handled. The workspace is a place to organize related content, a permissions boundary, and the scope for a Power BI app. It's tempting to start with one workspace per team, but that may not be flexible enough to satisfy all needs.
 - See the techniques described for business-led self-service BI and managed self-service BI in the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article. They're highly relevant techniques that help content creators create efficient and effective team BI solutions.
   
-  > [!TIP]
-  > For more information, see [Workspace-level planning](powerbi-implementation-planning-workspaces-workspace-level-planning.md).
+> [!TIP]
+> For more information, see [Workspace-level planning](powerbi-implementation-planning-workspaces-workspace-level-planning.md).
 
 ## Departmental BI
 
@@ -121,7 +121,7 @@ Here are a few guidelines to help you become successful with departmental BI del
 - Ensure that adequate training, mentoring, and documentation is available to support content creators. Best practices for data preparation, data modeling, and data presentation will result in better quality solutions.
 - Provide guidance on the best way to use the [promoted endorsement](/power-bi/collaborate-share/service-endorse-content#promote-content), and when the [certified endorsement](/power-bi/collaborate-share/service-endorse-content#certify-content) may be permitted for departmental BI solutions.
 - Ensure that the owner is identified for all departmental content. Clarity on ownership is helpful, including who to contact with questions, feedback, enhancement requests, or support requests. In the Fabric portal, content owners can set the [contact list property](/power-bi/create-reports/service-item-contact) for many types of items (like reports and dashboards). The contact list is also used in security workflows. For example, when a user is sent a URL to open an app but they don't have permission, they'll be presented with an option to make a request for access.
-- Consider using [deployment pipelines](/power-bi/create-reports/deployment-pipelines-overview) in conjunction with separate [workspaces](/power-bi/collaborate-share/service-create-the-new-workspaces). Deployment pipelines can support development, test, and production environments, which provide more stability for consumers.
+- Consider using [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) in conjunction with separate [workspaces](/power-bi/collaborate-share/service-create-the-new-workspaces). Deployment pipelines can support development, test, and production environments, which provide more stability for consumers.
 - Consider enforcing the use of [sensitivity labels](/power-bi/enterprise/service-security-data-protection-overview) to implement [information protection](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) on all content.
 - Include consistent branding on reports by:
   - Using departmental colors and styling to indicate who produced the content. For more information, see [Content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md).
@@ -141,8 +141,7 @@ Here are the characteristics of enterprise BI delivery.
 - Formal delivery of reports and Power BI apps is a high priority to ensure consumers have the best experience.
 - The content is highly sensitive, subject to regulatory requirements, or is considered extremely critical.
 - Published enterprise-level datasets and dataflows may be used as a source for self-service creators, thus creating a chain of dependencies to the source data.
-- Stability and a consistent experience for consumers are highly important. [Lifecycle management](/fabric/cicd/cicd-overview) techniques are commonly used.
-- Change management processes to review and approve changes before they're deployed are commonly used for enterprise BI content, for example, by a change review board or similar group.
+- Stability and a consistent experience for consumers are highly important. Application lifecycle management, such as [deployment pipelines](/power-bi/create-reports/deployment-pipelines-overview) and [DevOps techniques](https://powerbi.microsoft.com/blog/automate-deployments-with-deployment-pipelines-api-preview/), is commonly used. Change management processes to review and approve changes before they're deployed are commonly used for enterprise BI content, for example, by a change review board or similar group.
 - Processes exist to gather requirements, prioritize efforts, and plan for new projects or enhancements to existing content.
 - Integration with other enterprise-level data architecture and management services may exist, possibly with other Azure services and Power Platform products.
 

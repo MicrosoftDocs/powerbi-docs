@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 07/24/2023
+ms.date: 09/07/2023
 LocalizationGroup: Data from files
 ---
 # Dataflows considerations and limitations
@@ -53,7 +53,7 @@ More about supported dataflows REST APIs can be found in the [REST API reference
 
 * Exporting and Importing a dataflow gives that dataflow a new ID.
 
-* Importing dataflows that contain linked tables doesn't fix the existing references within the dataflow (these queries should be fixed manually before importing the dataflow).
+* Importing dataflows that contain linked tables doesn't update the existing references within the dataflow (these queries should be updated manually before importing the dataflow).
 
 * When you deploy a dataflow, you can use the conflict handlers *GenerateUniqueName* and *Abort* parameters to either abort the operation when it already exists or instruct the API to automatically create a unique name instead. Dataflows can be overwritten with the *CreateOrOverwrite* parameter, if they have initially been created using the import API.
 

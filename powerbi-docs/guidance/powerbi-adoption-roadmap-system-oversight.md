@@ -203,9 +203,9 @@ When becoming acquainted with Power BI, many system administrators assume it's a
 
 The use of capacity can play a significant role in your strategy for creating, managing, publishing, and distributing content. A few of the top reasons to invest in capacity include:
 
-- [Unlimited content distribution](/power-bi/enterprise/service-premium-what-is#unlimited-content-sharing) to large numbers of read-only users. Content consumption by users with a free Power BI license is available in Premium capacity only, not PPU. Content consumption by free users us is also available with an F64 Fabric capacity license or higher.
+- [Unlimited content distribution](/power-bi/enterprise/service-premium-what-is#unlimited-content-sharing) to large numbers of read-only users. Content consumption by users with a free Power BI license is available in Premium capacity only, not PPU. Content consumption by free users is also available with an F64 Fabric capacity license or higher.
 - Access to [Fabric experiences](/fabric/enterprise/licenses#workspace) for producing end-to-end analytics.
-- [Deployment pipelines](/power-bi/create-reports/deployment-pipelines-overview) to manage the publication of content to development, test, and production workspaces. They're highly recommended for critical content to improve release stability.
+- [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) to manage the publication of content to development, test, and production workspaces. They're highly recommended for critical content to improve release stability.
 - [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools), which is an industry standard protocol for managing and publishing a dataset, or querying the dataset from any XMLA-compliant tool.
 - Increased model size limits, including [large dataset](/power-bi/enterprise/service-premium-large-models) support.
 - More frequent [data refreshes](/power-bi/connect-data/refresh-data#power-bi-refresh-types).
@@ -387,7 +387,7 @@ In a [cloud shared responsibility model](/azure/security/fundamentals/shared-res
 
 The COE should provide [documentation and training](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) where relevant to assist content creators with best practices (particularly situations for dealing with ultra-sensitive data).
 
-Administrators can be help by following best practices themselves. Administrators can also raise concerns when they see issues that could be discovered when [managing workspaces](/power-bi/admin/service-admin-portal-workspaces), [auditing user activities](/power-bi/admin/service-admin-auditing), or managing [gateway credentials and users](/power-bi/connect-data/service-gateway-data-sources#add-a-data-source). There are also several [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings) that are usually restricted except for a few users (for instance, the ability to [publish to web](/power-bi/admin/service-admin-portal-export-sharing#publish-to-web) or the ability to [publish apps to the entire organization](/power-bi/admin/service-admin-portal-content-pack-app#publish-content-packs-and-apps-to-the-entire-organization)).
+Administrators can be help by following best practices themselves. Administrators can also raise concerns when they see issues that could be discovered when [managing workspaces](/power-bi/admin/service-admin-portal-workspaces), [auditing user activities](/power-bi/admin/service-admin-auditing), or managing [gateway credentials and users](/power-bi/connect-data/service-gateway-data-sources#add-a-data-source). There are also several [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings) that are usually restricted except for a few users (for instance, the ability to [publish to web](/power-bi/admin/service-admin-portal-export-sharing#publish-to-web) or the ability to [publish apps to the entire organization](/fabric/admin/service-admin-portal-content-pack-app#publish-content-packs-and-apps-to-the-entire-organization)).
 
 ### External guest users
 
@@ -476,8 +476,8 @@ Every month, Microsoft releases new Power BI features and functionality. To be e
 
 > [!div class="checklist"]
 > - **Review tenant settings:** Conduct a review of all tenant settings to ensure they're aligned with [data culture](powerbi-adoption-roadmap-data-culture.md) objectives and [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies. Verify which groups are assigned for each setting.
-> - **Document the tenant settings:** Create documentation of your tenant settings for the internal Power BI community and post it in the centralized portal. Include which groups a user would need to request to be able to use a feature. Use the Get Tenant Settings REST API to make the process more efficient, and to create snapshots of the settings on a regular basis.
-> - **Customize the Get Help links:** When user resources are established, as described in the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, update the [tenant setting](/power-bi/support/service-admin-portal-help-support) to customize the links under the **Get Help** menu option. It will direct users to your documentation, community, and help.
+> - **Document the tenant settings:** Create documentation of your tenant settings for the internal Power BI community and post it in the centralized portal. Include which groups a user would need to request to be able to use a feature. Use the [Get Tenant Settings REST API](/rest/api/fabric/admin/tenants/get-tenant-settings) to make the process more efficient, and to create snapshots of the settings on a regular basis.
+> - **Customize the _Get Help_ links:** When user resources are established, as described in the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, update the [tenant setting](/fabric/admin/service-admin-portal-help-support) to customize the links under the _Get Help_ menu option. It will direct users to your documentation, community, and help.
 
 **Improve management of user machines and devices:**
 

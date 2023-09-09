@@ -9,6 +9,10 @@
       href: known-issues/power-bi-known-issues.md
     - name: Active known issues for Fabric + Power BI - interactive report
       href: https://support.fabric.microsoft.com/known-issues
+    - name: Export to CSV file truncated at 300 rows
+      href: known-issues/known-issue-498-export-csv-file-truncated-300-rows.md
+    - name: Cancel refresh operation fails using virtual network gateway
+      href: known-issues/known-issue-491-cancel-refresh-operation-fails-using-virtual-network-gateway.md
     - name: Desktop sign-in prompt shows unsupported personal Microsoft accounts
       href: known-issues/known-issue-482-desktop-sign-in-prompt-shows-unsupported-personal-microsoft-accounts.md
     - name: Power BI Embedded setup tool isn't responsive
@@ -101,7 +105,7 @@
       - name: Troubleshoot Power BI REST APIs
         href: ../developer/embedded/troubleshoot-rest-api.md  
       - name: Troubleshoot deployment pipelines
-        href: ../create-reports/deployment-pipelines-troubleshooting.yml     
+        href: /fabric/cicd/troubleshoot-cicd     
     - name: Account and license
       expanded: false
       items:

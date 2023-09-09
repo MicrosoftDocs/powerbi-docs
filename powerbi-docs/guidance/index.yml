@@ -136,7 +136,7 @@ landingContent:
           - text: Troubleshoot report performance
             url: report-performance-troubleshoot.md
           - text: Deployment pipelines best practices
-            url: ../create-reports/deployment-pipelines-best-practices.md
+            url: /fabric/cicd/best-practices-cicd
           - text: Access the Power BI activity log
             url: admin-activity-log.md
 

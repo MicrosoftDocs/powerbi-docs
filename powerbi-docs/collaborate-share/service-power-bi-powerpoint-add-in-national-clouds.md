@@ -25,7 +25,7 @@ In national/regional clouds, the add-in is supported as an admin managed add-in 
 
 National/regional clouds don't support entry points to the add-in from Power BI. This means that:
 
-* In the Power BI service, the tenant setting **[Enable Power BI add-in for PowerPoint](../admin/service-admin-portal-export-sharing.md#enable-power-bi-add-in-for-powerpoint)** is irrelevant. If you're a tenant admin, you can ignore it.
+* In the Power BI service, the tenant setting **[Enable Power BI add-in for PowerPoint](/fabric/admin/service-admin-portal-export-sharing#enable-power-bi-add-in-for-powerpoint)** is irrelevant. If you're a tenant admin, you can ignore it.
 
 * In the Power BI service, the **Open in PowerPoint** option isn't available. To embed a report or visual in the add-in users must copy the link to the item in the Power BI service, then paste it into the add-in in PowerPoint manually.
 

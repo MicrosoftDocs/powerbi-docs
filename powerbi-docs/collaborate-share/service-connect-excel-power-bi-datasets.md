@@ -20,8 +20,8 @@ In Excel Desktop or Excel for the web, you can discover all the Power BI dataset
 
 ## Requirements 
 
-- Your organization’s tenant administrator must enable the **Users can work with Power BI datasets in Excel using a live connection** tenant setting. Learn more about the [Excel live connection](../admin/service-admin-portal-export-sharing.md#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
-- For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
+- Your organization’s tenant administrator must enable the **Users can work with Power BI datasets in Excel using a live connection** tenant setting. Learn more about the [Excel live connection](/fabric/admin/service-admin-portal-export-sharing#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
+- For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
 - You must have Excel Desktop (Builds greater than or equal to **16.0.15128**) and Excel for the web. To see if you have the right build for Excel Desktop, open **File** > **Account** > **About Excel** and confirm that the first five digits of the Build number are greater than or equal to 15128.
 
     :::image type="content" source="media/service-analyze-in-excel/build-excel-number.png" alt-text="Screenshot showing About Excel with Build number.":::

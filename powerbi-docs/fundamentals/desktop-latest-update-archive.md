@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 08/22/2023
+ms.date: 09/05/2023
 LocalizationGroup: Get started
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
@@ -110,8 +110,8 @@ You can also download previous versions of Power BI Desktop if your organization
 
 Select the following links to download this earlier version: 
 
-* [June 2023 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2023-07.exe)
-* [June 2023 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2023-07_x64.exe)
+* [July 2023 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2023-07.exe)
+* [July 2023 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2023-07_x64.exe)
 
 
 
@@ -174,7 +174,7 @@ The following updates are new to the Power BI service this month:
 
 * Storytelling in PowerPoint  [[video]](https://youtu.be/5O30NI4x4ho?t=264)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2023-feature-summary/#post-23927-_Toc137015472) 
 * Edit your data model in the Power BI service (updates)  [[video]](https://youtu.be/5O30NI4x4ho?t=278)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2023-feature-summary/#post-23927-_Toc137015473)  [[article]](../transform-model/service-edit-data-models.md)
-* New admin setting to control email subscriptions  [[video]](https://youtu.be/5O30NI4x4ho?t=142)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2023-feature-summary/#post-23927-_Toc137015474)  [[article]](../admin/service-admin-portal-export-sharing.md#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions)
+* New admin setting to control email subscriptions  [[video]](https://youtu.be/5O30NI4x4ho?t=142)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2023-feature-summary/#post-23927-_Toc137015474)  [[article]](/fabric/admin/service-admin-portal-export-sharing#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions)
 * Admin monitoring  [[video]](https://youtu.be/5O30NI4x4ho?t=307)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2023-feature-summary/#post-23927-_Toc137015475)
 * Power BI implementation planning guidance  [[video]](https://youtu.be/5O30NI4x4ho?t=468)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2023-feature-summary/#post-23927-_Toc137015476)  [[article]](https://aka.ms/PowerBIImplementationPlanning)
 
@@ -392,7 +392,7 @@ The following updates are new to Power BI Desktop this month:
 
 The following updates are new to the Power BI service this month:
 
-* New features to Deployment Pipeline [[video]](https://youtu.be/rQfUo3PN0zw?t=585)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-21693-_Toc1745634143)   [[article]](../create-reports/deployment-pipelines-get-started.md)
+* New features to Deployment Pipeline [[video]](https://youtu.be/rQfUo3PN0zw?t=585)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-21693-_Toc1745634143)   [[article]](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines)
 * Storytelling in PowerPoint - new style option   [[video]](https://youtu.be/rQfUo3PN0zw?t=368)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-21693-_Toc783019515)
 * Visualizing views in Power Apps with Power BI quick report enabled by default    [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-21693-_Toc1140694008)  [[article]](/power-apps/user/visualize-in-power-bi)
 
@@ -834,7 +834,7 @@ The following updates are new to the Power BI service this month:
 * Guest users can now create their own email subscriptions  [[video]](https://youtu.be/Vlo7dJgr4WM?t=961)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053193) [[article]](../enterprise/service-admin-azure-ad-b2b.md)
 * Downloading a PBIX now available for more scenarios  [[video]](https://youtu.be/Vlo7dJgr4WM?t=1028)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053194)  [[article]](../create-reports/service-export-to-pbix.md)
 * Administration and governance  [[video]](https://youtu.be/Vlo7dJgr4WM?t=1068)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053195)
-* Deployment pipelines updates  [[video]](https://youtu.be/Vlo7dJgr4WM?t=1100)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053197) [[article]](../create-reports/deployment-pipelines-history.md)
+* Deployment pipelines updates  [[video]](https://youtu.be/Vlo7dJgr4WM?t=1100)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053197) [[article]](/fabric/cicd/deployment-pipelines/deployment-history)
 
 ---
 
@@ -1528,7 +1528,7 @@ The following updates are new to Power BI Desktop this month:
 The following updates are new to the Power BI service this month:
 
 * Power BI Goals enhancements   [[video]](https://youtu.be/vNK4xygN8Xw?t=924)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419013)   [[article]](/power-bi/create-reports/service-goals-introduction)
-* Deployment pipelines enhancements   [[video]](https://youtu.be/vNK4xygN8Xw?t=947)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419017)  [[article]](/power-bi/create-reports/deployment-pipelines-overview)
+* Deployment pipelines enhancements   [[video]](https://youtu.be/vNK4xygN8Xw?t=947)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419017)  [[article]](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines)
 * Download .pbix improvements   [[video]](https://youtu.be/vNK4xygN8Xw?t=975)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419018)  
 
 
@@ -1793,7 +1793,7 @@ The following updates are new to the Power BI service this month:
 
 * Power BI Premium is now generally available  [[video]](https://youtu.be/4uVNk9xH2S0?t=686)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2021-feature-summary/#post-17563-_Toc84518700)  [[article]](../enterprise/service-premium-what-is.md)
 * APIs to determine who has access to what Power BI items (preview)  [[video]](https://youtu.be/4uVNk9xH2S0?t=742)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2021-feature-summary/#post-17563-_Toc84518701)
-* Deployment pipeline APIs now generally available  [[video]](https://youtu.be/4uVNk9xH2S0?t=787)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2021-feature-summary/#post-17563-_Toc84518702)  [[article]](../create-reports/deployment-pipelines-overview.md)
+* Deployment pipeline APIs now generally available  [[video]](https://youtu.be/4uVNk9xH2S0?t=787)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2021-feature-summary/#post-17563-_Toc84518702)  [[article]](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines)
 * Upcoming automatic installation of the Power BI app for Microsoft Teams  [[video]](https://youtu.be/4uVNk9xH2S0?t=827)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2021-feature-summary/#post-17563-_Toc84518703)  [[article]](https://powerbi.microsoft.com/blog/pre-announcing-automatic-installation-of-the-power-bi-app-for-microsoft-teams/)
 
 

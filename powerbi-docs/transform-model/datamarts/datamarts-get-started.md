@@ -157,9 +157,7 @@ To set up incremental refresh for a datamart, select the table for which you wan
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-06.png" alt-text="Screenshot of configure incremental refresh for a table in a datamart.":::
 
 ## Datamarts and deployment pipelines
-Datamarts are supported in deployment pipelines. Using deployment pipelines, you can deploy updates to your datamart across a designated pipeline. You can also use rules to connect to relevant data in each stage of the pipeline. To learn how to use deployment pipelines, see [Get started with deployment pipeline](../../create-reports/deployment-pipelines-get-started.md)s.
-
-
+Datamarts are supported in deployment pipelines. Using deployment pipelines, you can deploy updates to your datamart across a designated pipeline. You can also use rules to connect to relevant data in each stage of the pipeline. To learn how to use deployment pipelines, see [Get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines).
 
 ## Access or load an existing datamart
 

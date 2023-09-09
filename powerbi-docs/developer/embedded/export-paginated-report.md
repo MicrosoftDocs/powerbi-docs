@@ -40,6 +40,11 @@ You can use the export feature in various ways. Here are a couple of examples:
 
 ## Using the API
 
+### License requirements
+
+* The report you're exporting must reside in a workspace backed by a Premium, Embedded, or Fabric capacity.
+* The `exportToFile` API, has [limited support](#concurrent-requests) in [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
+
 ### Rendering events
 
 To make sure the export doesn't begin before the visual finishes rendering, use the ["Rendering" events API](../visuals/event-service.md) and only begin the export when rendering is finished.
@@ -49,9 +54,6 @@ To make sure the export doesn't begin before the visual finishes rendering, use 
 The API is asynchronous. When the [exportToFile](/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
 When the export is complete, the polling API call returns a [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL is available for 24 hours.
-
->[!Note]
->Exporting a Power BI report to file using the exportToFile API, isn't supported for Power BI Pro licenses.
 
 ## Supported features
 
@@ -171,7 +173,7 @@ Here's an example for supplying an effective identity (user name) with an access
 
 ## Concurrent requests
 
-The `exportToFile` API supports concurrent export job requests. The maximum number of concurrent report pages depends on the type and number of SKUs you have. The maximum number of [concurrent paginated report render requests](../../paginated-reports/paginated-capacity-planning.md#concurrent-requests), is 500. To avoid exceeding the limit and getting a *Too Many Requests (429)* error, either distribute the load over time or across capacities.
+The `exportToFile` supports a limited number of concurrent requests. The maximum number of [concurrent paginated report render requests](../../paginated-reports/paginated-capacity-planning.md#concurrent-requests) is 500. To avoid exceeding the limit and getting a Too Many Requests (429) error, either distribute the load over time or across capacities.
 
 With [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml), the `exportToFile` API allows just *one* request in a five-minute window. Multiple requests within the five-minute window result in a *Too Many Requests* (429) error.
 
