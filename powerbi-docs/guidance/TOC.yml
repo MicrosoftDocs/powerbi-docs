@@ -207,6 +207,16 @@
     items: 
       - name: "Introduction"
         href: powerbi-implementation-planning-introduction.md
+      - name: "BI strategy"
+        items:
+        - name: "BI strategy overview"
+          href: powerbi-implementation-planning-bi-strategy-overview.md
+        - name: "Strategic planning"
+          href: powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md
+        - name: "Tactical planning"
+          href: powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md
+        - name: "Solution planning"
+          href: powerbi-implementation-planning-bi-strategy-bi-solution-planning.md
       - name: "User tools and devices"
         href: powerbi-implementation-planning-user-tools-devices.md
       - name: "Tenant setup"

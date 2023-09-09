@@ -197,6 +197,8 @@ landingContent:
         links:
           - text: Introduction
             url: powerbi-implementation-planning-introduction.md
+          - text: BI strategy
+            url: powerbi-implementation-planning-bi-strategy-overview.md
           - text: User tools and devices
             url: powerbi-implementation-planning-user-tools-devices.md
           - text: Tenant setup
