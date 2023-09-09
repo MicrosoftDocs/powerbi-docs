@@ -1,20 +1,20 @@
 ---
 title: Power BI adoption roadmap conclusion
 description: A conclusion and extra resources of the Power BI adoption roadmap series of articles.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/31/2022
+ms.date: 09/09/2023
 ---
 
 # Power BI adoption roadmap conclusion
 
 [!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
 
-This article concludes the series on Power BI adoption. The strategic and tactical considerations and action items presented in this series will assist you in your Power BI adoption efforts, and with creating a productive data culture in your organization.
+This article concludes the series on Power BI adoption. The strategic and tactical considerations and action items presented in this series will assist you in your analytics adoption efforts, and with creating a productive data culture in your organization.
 
 This series covered the following aspects of Power BI adoption.
 
@@ -37,18 +37,18 @@ The rest of this article includes suggested next actions to take. It also includ
 
 It can be overwhelming to decide where to start. The following series of steps provides a process to help you approach your next actions.
 
-1. **Learn:** First, read this series of articles end-to-end. Become familiar with the strategic and tactical considerations and action items that directly lead to successful Power BI adoption. They'll help you to build a data culture in your organization. Discuss the concepts with your colleagues.
+1. **Learn:** First, read this series of articles end-to-end. Become familiar with the strategic and tactical considerations and action items that directly lead to successful analytics adoption. They'll help you to build a data culture in your organization. Discuss the concepts with your colleagues.
 1. **Assess current state:** For each area of the adoption roadmap, assess your current state. Document your findings. Your goal is to have full clarity on where you're now so that you can make informed decisions about what to do next.
-1. **Clarify strategy:** Ensure that you're clear on what your organization's goals are for adopting Power BI. Confirm that your Power BI adoption goals align with your organization's broader strategic goals for the use of data, analytics, and business intelligence in general. Focus on what your immediate strategy is for the next 3-12 months.
-1. **Identify future state:** For each area of the roadmap, identify the gaps between what you want to happen (your future state) and what's happening (your current state). Focus on the next 3-12 months for identifying your desired future state.
-1. **Customize maturity levels:** Using the information you have on your strategy and future state, customize the maturity levels for each area of the roadmap. Update or delete the description for each maturity level so that they're realistic, based on your goals and strategy. Your current state, priorities, staffing, and funding will influence the time and effort it will take to advance to the higher maturity levels.
-1. **Prioritize:** Clarify what's most important to achieve in the next 3-12 months. For instance, you might identify specific user enablement or risk reduction items that are a higher priority than other items. Determine which advancements in maturity levels you should prioritize first.
-1. **Define measurable goals:** Create KPIs (key performance indicators) or OKRs (objectives and key results) to define specific goals. Ensure that the goals are measurable and achievable. Confirm that each goal aligns with your strategy and desired future state.
-1. **Create action items:** Add specific action items to your project plan. Action items will identify who will do what, and when. Include short, medium, and longer-term (backlog) items in your project plan to make it easy to track and reprioritize.
+1. **Clarify BI strategic goals:** Ensure that you're clear on what your organization's goals are for adopting Power BI. Confirm that your BI adoption and data culture goals align with your organization's broader strategic goals for the use of data, analytics, and business intelligence in general. Focus on what your immediate strategy is for the next 3-12 months. For more information about defining your BI goals, see [BI strategic planning](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md).
+1. **Prioritize:** Clarify what's most important to achieve in the next 12-18 months. For instance, you might identify specific user enablement or risk reduction areas that are a higher priority than other areas. Determine which advancements in maturity levels you should prioritize first. For more information about defining your BI priorities, see [BI strategic planning](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md).
+1. **Identify future state:** For each area of the roadmap, identify the gaps between what you want to happen (your future state) and what's happening (your current state). Focus on the next 12-18 months for identifying your desired future state.
+1. **Customize maturity levels:** Using the information you have on your strategy and future state, customize the maturity levels for each area of the roadmap. Update or delete the description for each maturity level so that they're realistic, based on your goals and strategy. Your current state, priorities, staffing, and funding will influence the time and effort it will take to advance to higher maturity levels.
+1. **Define measurable objectives:** Create KPIs (key performance indicators) or OKRs (objectives and key results) to define specific goals for the next quarter. Ensure that the objectives have clear owners, are measurable, time-bound, and achievable. Confirm that each objective aligns with your strategic BI goals and priorities.
+1. **Create tactical plans:** Add specific action items to your project plan. Action items will identify who will do what, and when. Include short, medium, and longer-term (backlog) items in your project plan to make it easy to track and reprioritize.
 1. **Track action items:** Use your preferred project planning software to track continual, incremental progress of your action items. Summarize progress and status every quarter for your executive sponsor.
-1. **Adjust:** As new information becomes available—and as priorities change—reevaluate and adjust your focus. Reexamine your strategy, goals, and action items once a quarter so you're certain that you're focusing on the right actions.
+1. **Adjust:** As new information becomes available—and as priorities change—reevaluate and adjust your focus. Reexamine your strategic goals, objectives, and action items once a quarter so you're certain that you're focusing on the right actions.
 1. **Celebrate:** Pause regularly to appreciate your progress. Celebrate your wins. Reward and recognize people who take the initiative and help achieve your goals. Encourage healthy partnerships between IT and the different areas of the business.
-1. **Repeat:** Continue learning, experimenting, and adjusting as you progress with your Power BI implementation. Use feedback loops to continually learn from everyone in the organization. Ensure that continual, gradual, improvement is a priority.
+1. **Repeat:** Continue learning, experimenting, and adjusting as you progress with your implementation. Use feedback loops to continually learn from everyone in the organization. Ensure that continual, gradual, improvement is a priority.
 
 A few important key points are implied within the previous suggestions.
 
@@ -59,29 +59,27 @@ A few important key points are implied within the previous suggestions.
 
 ## Power BI implementation planning
 
-Successfully implementing Power BI throughout the organization requires deliberate thought and planning. The [Power BI implementation planning](powerbi-implementation-planning-introduction.md) series of articles, which is a work in progress, is intended to complement the Power BI adoption roadmap. It will include key considerations, actions, decision-making criteria, recommendations, and it will describe implementation patterns for important common usage scenarios.
+Successfully implementing analytics throughout the organization requires deliberate thought and planning. The [Power BI implementation planning](powerbi-implementation-planning-introduction.md) series of articles, which is a work in progress, is intended to complement the Power BI adoption roadmap. It includes key considerations, actions, decision-making criteria, recommendations, and it describes implementation patterns for important common usage scenarios.
 
 ## Power BI adoption framework
 
-The [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption) describes additional aspects of *how* to adopt Power BI in more detail. The original intent of the framework was to support Microsoft partners with a lightweight set of resources for use when helping their customers deploy and adopt Power BI.
+The [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption) describes additional aspects of _how_ to adopt Power BI in more detail. The original intent of the framework was to support Microsoft partners with a lightweight set of resources for use when helping their customers deploy and adopt Power BI.
 
-The framework can augment this Power BI adoption roadmap series. The roadmap series focuses on the *why* and *what* of adopting Power BI, more so than the *how*.
+The framework can augment this Power BI adoption roadmap series. The roadmap series focuses on the _why_ and _what_ of adopting Power BI, more so than the _how_.
 
 > [!NOTE]
 > When completed, the Power BI implementation planning series (described in the previous section) will replace the Power BI adoption framework.
 
 ## Enterprise deployment whitepaper
 
-The [Planning a Power BI enterprise deployment](https://aka.ms/PBIEnterpriseDeploymentWP) whitepaper provides a comprehensive overview for Power BI implementers. Its primary goal is awareness of options, key considerations, decisions, and best practices. Because of the breadth of content, different sections of the whitepaper will appeal to managers, IT professionals, and self-service authors.
-
-The whitepaper goes deeper into the *what* and *how* of adopting Power BI, with a strong focus on technology. When you've finished reading the series of Power BI adoption articles, the whitepaper will fill you in with extra information to help put your plans into action.
+The [Planning a Power BI enterprise deployment](https://aka.ms/PBIEnterpriseDeploymentWP) whitepaper was published in 2020 as an overview for Power BI implementers. It has a strong focus on technology. Its primary goal is awareness of options, key considerations, decisions, and best practices. Because of the breadth of content, different sections of the whitepaper will appeal to managers, IT professionals, and self-service content creators.
 
 > [!NOTE]
 > The Enterprise deployment whitepaper won't be updated again. When completed, the Power BI implementation planning series (described in the previous section) will replace the Enterprise deployment whitepaper.
 
 ## Microsoft's BI transformation
 
-Consider reading about [Microsoft's journey and experience with driving a data culture](center-of-excellence-microsoft-business-intelligence-transformation.md). This article describes the importance of two terms: *discipline at the core* and *flexibility at the edge*. It also shares Microsoft's views and experience about the importance of establishing a COE.
+Consider reading about [Microsoft's journey and experience with driving a data culture](center-of-excellence-microsoft-business-intelligence-transformation.md). This article describes the importance of two terms: _discipline at the core_ and _flexibility at the edge_. It also shares Microsoft's views and experience about the importance of establishing a COE.
 
 ## Power Platform adoption
 
@@ -118,4 +116,4 @@ The [Data Management Book of Knowledge](https://www.dama.org/cpages/body-of-know
 
 ## Partner community
 
-Experienced Power BI partners are available to help your organization succeed with Power BI. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
+Experienced partners are available to help your organization succeed with adoption initiatives. To engage a partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).

@@ -181,6 +181,8 @@
         href: powerbi-adoption-roadmap-data-culture.md
       - name: "Executive sponsorship"
         href: powerbi-adoption-roadmap-executive-sponsorship.md
+      - name: "Business alignment"
+        href: powerbi-adoption-roadmap-business-alignment.md
       - name: "Content ownership"
         href: powerbi-adoption-roadmap-content-ownership-and-management.md
       - name: "Content delivery scope"
@@ -197,6 +199,8 @@
         href: powerbi-adoption-roadmap-user-support.md
       - name: "System oversight"
         href: powerbi-adoption-roadmap-system-oversight.md
+      - name: "Change management"
+        href: powerbi-adoption-roadmap-change-management.md
       - name: "Conclusion"
         href: powerbi-adoption-roadmap-conclusion.md
   - name: Implementation planning

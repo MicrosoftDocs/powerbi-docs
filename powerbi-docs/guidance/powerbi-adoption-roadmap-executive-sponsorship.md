@@ -1,35 +1,36 @@
 ---
 title: "Power BI adoption roadmap: Executive sponsorship"
 description: Appoint an executive sponsor to drive strong and successful adoption of Power BI.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/31/2022
+ms.date: 09/09/2023
 ---
 
 # Power BI adoption roadmap: Executive sponsorship
 
 [!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
 
-When planning to advance the data culture and the state of organizational adoption for Power BI, it's crucial to have executive support. An executive sponsor is imperative because adopting Power BI is far more than just a technology project.
+When planning to advance the [data culture](powerbi-adoption-roadmap-data-culture.md) and the state of [organizational adoption](powerbi-adoption-roadmap-maturity-levels.md#organizational-adoption-maturity-levels) for analytics, it's crucial to have executive support. An executive sponsor is imperative because analytics adoption is far more than just a technology project.
 
 Although some successes can be achieved by a few determined individual contributors, the organization is in a significantly better position when a senior leader is engaged, supportive, informed, and available to assist with the following activities.
 
-- Formulating a strategic vision and priorities for BI and analytics.
-- Leading by example by actively using Power BI in a way that's consistent with data culture and adoption goals.
+- Formulating a strategic vision, goals, and priorities for BI and analytics.
+- Providing top-down guidance and reinforcement for the BI strategy by regularly promoting, motivating, and investing in BI strategic and tactical planning.
+- Leading by example by actively using analytics in a way that's consistent with data culture and adoption goals.
 - Allocating staffing and prioritizing resources.
-- Approving funding (for example, Power BI licenses).
+- Approving funding (for example, [Fabric licenses](/fabric/enterprise/license)).
 - Removing barriers to enable action.
 - Communicating announcements that are of critical importance, to help them gain traction.
-- Decision-making, particularly for strategic-level governance decisions.
+- Decision-making, particularly for strategic-level [governance](powerbi-adoption-roadmap-governance.md) decisions.
 - Dispute resolution (for escalated issues that can't be resolved by operational or tactical personnel).
 - Supporting organizational change initiatives (for example, creating or expanding the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md)).
 
 > [!IMPORTANT]
-> The ideal executive sponsor has sufficient credibility, influence, and authority throughout the organization.
+> The ideal executive sponsor has sufficient credibility, influence, and authority throughout the organization. They also have an invested stake in BI efforts and the BI strategy. When the BI strategy is successful, the ideal executive sponsor also experiences success in their role.
 
 ## Identifying an executive sponsor
 
@@ -42,7 +43,7 @@ An executive sponsor may be selected by a more senior executive. For example, th
 Here's another example: The CEO may empower an existing executive, such as the Chief Financial Officer (CFO), because they have a good track record leading data and analytics in their organization. As the new executive sponsor, the CFO could then lead efforts to replicate the finance team's success to other areas of the organization.
 
 > [!NOTE]
-> Having a Power BI executive sponsor at the C-level is an excellent indicator. It indicates that the organization recognizes the importance of data as a strategic asset and is advancing its data culture in a positive direction.
+> Having an executive sponsor at the C-level is an excellent leading indicator. It indicates that the organization recognizes the importance of data as a strategic asset and is advancing its data culture in a positive direction.
 
 ### Bottom-up pattern
 
@@ -58,7 +59,7 @@ With a bottom-up approach, the sponsor may be able to make some progress, but th
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
-**Checklist** - Here's a list of considerations and key actions you can take to establish or strengthen executive support for Power BI.
+**Checklist** - Here's a list of considerations and key actions you can take to establish or strengthen executive support for analytics.
 
 > [!div class="checklist"]
 > - **Identify an executive sponsor with broad authority:** Find someone in a sufficient position of influence and authority (across organizational boundaries) who understands the value and impact of business intelligence. It is important that the individual has a vested interest in the success of analytics in the organization.
@@ -67,20 +68,37 @@ With a bottom-up approach, the sponsor may be able to make some progress, but th
 > - **Identify a backup for the sponsor:** Consider naming a backup executive sponsor. The backup can attend meetings in the sponsor's absence and make time-sensitive decisions when necessary.
 > - **Identify business advocates:** Find influential advocates in each business unit. Determine how their cooperation and involvement can help you to accomplish your objectives. Consider involving advocates from various levels in the organization chart.
 
+## Questions to ask
+
+:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+
+Use questions like those found below to assess data literacy.
+
+- Has an executive sponsor of Power BI or other analytical tools been identified?
+- If so, who's the executive sponsor?
+- If not, is there an informal executive sponsor? Who's the closest to this role? Can you define the business impact of having no executive sponsor?
+- To what extent is the strategic importance of Power BI and analytics understood and endorsed by executives?
+- Are executives using Power BI and the results of BI initiatives? What's the sentiment among executives for the effectiveness of BI solutions?
+- Is the executive sponsor leading by example in the effective use of data and BI tools?
+- Does the executive sponsor provide the appropriate resources for BI initiatives?
+- Is the executive sponsor involved in dispute resolution and change management?
+- Does the executive sponsor engage with all of the user community?
+- Does the executive sponsor have sufficient credibility and healthy relationships across organizational boundaries (particularly the business and IT)?
+
 ## Maturity levels
 
 :::image type="icon" source="media/common/maturity-levels.png" border="false":::
 
 The following maturity levels will help you assess your current state of executive support.
 
-| **Level** | **State of Power BI executive support** |
+| **Level** | **State of executive support** |
 | --- | --- |
-| 100: Initial | There may be awareness from at least one executive about the strategic importance of how Power BI can play a part in advancing the organization's data culture goals. However, neither a Power BI sponsor nor an executive-level decision-maker is identified. |
-| 200: Repeatable | Informal executive support exists for Power BI through informal channels and relationships. |
-| 300: Defined | An executive sponsor is identified. Expectations are clear for the role. |
-| 400: Capable | An executive sponsor is well established with someone with sufficient authority across organizational boundaries. </br></br>A healthy and productive partnership exists between the executive sponsor, COE, business units, and IT. The teams are working towards shared data culture goals. |
-| 500: Efficient | The executive sponsor is highly engaged. They're a key driver for advancing the organization's data culture vision. </br></br>The executive sponsor is involved with ongoing organizational adoption improvements. KPIs (key performance indicators) or OKRs (objectives and key results) are used to track data culture goals and the results of BI efforts. |
+| 100: Initial | &bull; There may be awareness from at least one executive about the strategic importance of how analytics can advance the organization's data culture goals. However, neither a sponsor nor an executive-level decision-maker is identified. |
+| 200: Repeatable | &bull; Informal executive support exists for analytics through informal channels and relationships. |
+| 300: Defined | &bull; An executive sponsor is identified. Expectations are clear for the role. |
+| 400: Capable | &bull; An executive sponsor is well established with someone with sufficient authority across organizational boundaries. </br></br>&bull; A healthy and productive partnership exists between the executive sponsor, COE, business units, and IT. The teams are working towards shared data culture goals. |
+| 500: Efficient | &bull; The executive sponsor is highly engaged. They're a key driver for advancing the organization's data culture vision. </br></br>&bull; The executive sponsor is involved with ongoing organizational adoption improvements. KPIs (key performance indicators) or OKRs (objectives and key results) are used to track data culture goals and the results of BI efforts. |
 
 ## Next steps
 
-In the [next article](powerbi-adoption-roadmap-content-ownership-and-management.md) in the Power BI adoption roadmap series, learn more about content ownership and management, and its effect on business-led self-service BI, managed self-service BI, and enterprise BI.
+In the [next article](powerbi-adoption-roadmap-business-alignment.md) in the Power BI adoption roadmap series, learn about the importance of business alignment with organizational goals.
