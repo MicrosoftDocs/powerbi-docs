@@ -45,7 +45,7 @@ Your business strategy should directly inform your BI strategy. As your business
 
 The following diagram depicts how a BI strategy supports the business strategy by enabling business users.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-overview/powerbi-implementation-planning-bi-strategy-overview-business-strategy.png" alt-text="Image shows the purpose of a BI strategy is to support the business strategy by enabling business users. Concepts shown in the image are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-overview/business-strategy.png" alt-text="Image shows the purpose of a BI strategy is to support the business strategy by enabling business users. Concepts shown in the image are described in the table below." border="false":::
 
 The diagram depicts the following concepts.
 
@@ -80,7 +80,7 @@ Your BI strategy describes how [successful Power BI adoption](powerbi-adoption-r
 
 The following diagram depicts how a BI strategy is a subset of a data strategy, and how they share concepts related to data culture and technology.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-overview/powerbi-implementation-planning-bi-strategy-overview-data-strategy.png" alt-text="Image shows that a BI strategy is a subset of a data strategy. Concepts shown in the image are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-overview/data-strategy.png" alt-text="Image shows that a BI strategy is a subset of a data strategy. Concepts shown in the image are described in the table below." border="false":::
 
 The diagram depicts the following concepts.
 
@@ -102,7 +102,7 @@ There are many ways to define a BI strategy. Typically, when you define a BI str
 
 You The following diagram depicts how you can define your BI strategy at three different planning levels, as depicted in the following diagram.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-overview/powerbi-implementation-planning-bi-strategy-overview-three-levels.png" alt-text="Image shows the three levels of a BI strategy. Concepts shown in the image are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-overview/three-levels.png" alt-text="Image shows the three levels of a BI strategy. Concepts shown in the image are described in the table below." border="false":::
 
 The diagram depicts the following three planning levels.
 
@@ -180,7 +180,7 @@ There are many ways to iteratively plan your BI strategy. A common approach is t
 
 The following diagram depicts recommendations for how you can schedule planning revisions.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-overview/powerbi-implementation-planning-bi-strategy-overview-iterative-planning.png" alt-text="Image shows how to iteratively plan a BI strategy with different planning periods. Concepts shown in the image are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-overview/iterative-planning.png" alt-text="Image shows how to iteratively plan a BI strategy with different planning periods. Concepts shown in the image are described in the table below." border="false":::
 
 The diagram depicts how you can iteratively structure your BI strategy planning the following concepts.
 
@@ -195,7 +195,7 @@ The diagram depicts how you can iteratively structure your BI strategy planning 
 
 This series of articles presents a structured framework that helps you to plan the three levels of your BI strategy, as depicted in the following diagram.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-overview/powerbi-implementation-planning-bi-strategy-overview-planning-levels.png" alt-text="Image shows strategic, tactical, and solution planning for business intelligence. Each type of planning is described in the text below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-overview/planning-levels.png" alt-text="Image shows strategic, tactical, and solution planning for business intelligence. Each type of planning is described in the text below." border="false":::
 
 The diagram shows three levels of BI strategy planning, which are each described in separate articles. We recommend that you read these articles in the following order.
 

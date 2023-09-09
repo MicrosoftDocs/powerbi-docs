@@ -31,7 +31,7 @@ In short, this article describes how you can perform strategic planning to defin
 
 The following high-level diagram depicts how to conduct BI strategic planning.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/powerbi-implementation-planning-bi-strategy-bi-strategic-planning-planning-levels.png" alt-text="Image shows an overview of strategic, tactical, and solution planning for business intelligence. Strategic planning is highlighted. The details about strategic planning are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/planning-levels.png" alt-text="Image shows an overview of strategic, tactical, and solution planning for business intelligence. Strategic planning is highlighted. The details about strategic planning are described in the table below." border="false":::
 
 You take the following steps to define your strategic BI goals and priorities.
 
@@ -48,13 +48,13 @@ This article describes each step of the BI strategic planning process.
 
 Your first step when defining your BI strategy is to establish a _working team_. A working team leads the initiative to describe and plan the BI strategy. It's a cross-functional group of experts that's enabled by the support of the executive sponsor. The group should have a deep understanding of technical and business processes across the organization.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/powerbi-implementation-planning-bi-strategy-bi-strategic-planning-step-1.png" alt-text="Image shows step 1 in a series of four steps to define BI goals and priorities with BI strategic planning. Step 1 is about assembling a working team." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/step-1.png" alt-text="Image shows step 1 in a series of four steps to define BI goals and priorities with BI strategic planning. Step 1 is about assembling a working team." border="false":::
 
 Ideally, the working team should represent each department, business unit, and region that's in scope for the initiative.
 
 The following diagram depicts the following roles that appoint the working team members, and the types of members in a working team.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/powerbi-implementation-planning-bi-strategy-bi-strategic-planning-working-team.png" alt-text="Image shows the roles and relationships involved with establishing a working team. Each role is described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/working-team.png" alt-text="Image shows the roles and relationships involved with establishing a working team. Each role is described in the table below." border="false":::
 
 The diagram depicts the following roles.
 
@@ -177,7 +177,7 @@ Efficient and structured communication between working team members and stakehol
 
 The following diagram depicts how to use a communication hub to centralize BI strategic planning and input.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/powerbi-implementation-planning-bi-strategy-bi-strategic-planning-communication-hub.png" alt-text="Image shows how to create a communication hub to centralize strategic planning. The concepts and processes are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/communication-hub.png" alt-text="Image shows how to create a communication hub to centralize strategic planning. The concepts and processes are described in the table below." border="false":::
 
 The diagram conveys the following concepts or processes.
 
@@ -228,7 +228,7 @@ After you assemble the working team (step 1), the newly assembled working team c
 
 These activities are prerequisites for the workshops and complete assessments (step 3).
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/powerbi-implementation-planning-bi-strategy-bi-strategic-planning-step-2.png" alt-text="Image shows step 2 in a series of four steps to define BI goals and priorities with BI strategic planning. Step 2 is about planning workshops and conducting research." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/step-2.png" alt-text="Image shows step 2 in a series of four steps to define BI goals and priorities with BI strategic planning. Step 2 is about planning workshops and conducting research." border="false":::
 
 ### Conduct independent research
 
@@ -253,7 +253,7 @@ COE members in the working team should use their expertise to lead the effort to
 
 The following diagram depicts topics typically addressed with independent research.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/powerbi-implementation-planning-bi-strategy-bi-strategic-planning-independent-research.png" alt-text="Image shows how to conduct independent research to inform assessments. The concepts and processes are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/independent-research.png" alt-text="Image shows how to conduct independent research to inform assessments. The concepts and processes are described in the table below." border="false":::
 
 The diagram depicts the following concepts and processes.
 
@@ -297,7 +297,7 @@ Identifying the right stakeholders is essential in order to run successful works
 
 The following diagram depicts the process to identify and inform the right key stakeholders about the BI strategy initiative.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/powerbi-implementation-planning-bi-strategy-bi-strategic-planning-involving-stakeholders.png" alt-text="Image shows how to identify and involve the right key stakeholders. The steps involved in the process are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/involve-stakeholders.png" alt-text="Image shows how to identify and involve the right key stakeholders. The steps involved in the process are described in the table below." border="false":::
 
 The diagram depicts the following steps.
 
@@ -345,7 +345,7 @@ The working team combines the stakeholder input together with independent resear
 
 With this understanding, the working team evaluates the maturity and effectiveness of the current state of BI adoption and implementation. This evaluation is summarized in a data culture assessment and a technical assessment, which are the key outputs of the workshops. The objective of these assessments is to clearly identify both weaknesses and opportunities in the data culture, and technical areas that should be prioritized for the BI strategy.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/powerbi-implementation-planning-bi-strategy-bi-strategic-planning-step-3.png" alt-text="Image shows step 3 in a series of four steps to define BI goals and priorities with BI strategic planning. Step 3 is about running workshops and completing assessments." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/step-3.png" alt-text="Image shows step 3 in a series of four steps to define BI goals and priorities with BI strategic planning. Step 3 is about running workshops and completing assessments." border="false":::
 
 > [!IMPORTANT]
 > If no working team members have experience running and moderating interactive meetings or workshops, the working team should first undertake training or seek support to help run the workshops.
@@ -424,7 +424,7 @@ The data culture assessment evaluates the current state of BI adoption. In order
 
 The following diagram depicts how the working team assesses the organizational data culture in BI strategic planning for specific data culture areas.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/powerbi-implementation-planning-bi-strategy-bi-strategic-planning-data-culture-areas.png" alt-text="Image shows examples of data culture areas to assess in BI strategic planning. Each data culture area is described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/data-culture-areas.png" alt-text="Image shows examples of data culture areas to assess in BI strategic planning. Each data culture area is described in the table below." border="false":::
 
 The diagram depicts the following data culture areas.
 
@@ -463,7 +463,7 @@ The following diagram depicts technical areas that you might assess when definin
 > [!NOTE]
 > If you're adopting [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview), be aware that many of these areas are represented as separate parts of the Fabric analytics platform.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/powerbi-implementation-planning-bi-strategy-bi-strategic-planning-technical-areas.png" alt-text="Image shows examples of technical areas to assess in BI strategic planning. Each technical area is described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/technical-areas.png" alt-text="Image shows examples of technical areas to assess in BI strategic planning. Each technical area is described in the table below." border="false":::
 
 The diagram depicts the following technical areas.
 
@@ -508,7 +508,7 @@ The diagram depicts the following technical areas.
 
 After you run the workshops and complete assessments (step 3), the working team, together with the executive sponsor, decide on the BI goals and priorities to address in tactical planning.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/powerbi-implementation-planning-bi-strategy-bi-strategic-planning-step-4.png" alt-text="Image shows step 4 in a series of four steps to define BI goals and priorities with BI strategic planning. Step 4 is about deciding on the BI goals and priorities." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/step-4.png" alt-text="Image shows step 4 in a series of four steps to define BI goals and priorities with BI strategic planning. Step 4 is about deciding on the BI goals and priorities." border="false":::
 
 > [!NOTE]
 > While the working team should be involved in clarifying and documenting goals and priorities, it isn't responsible for defining them. The executive sponsor and equivalent decision makers own these decisions. The executive sponsor and other decision makers have the authority to decide and allocate resources to deliver on these goals and priorities.

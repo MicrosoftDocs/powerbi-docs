@@ -31,7 +31,7 @@ In short, this article describes how the working team can perform tactical plann
 
 The following high-level diagram depicts how to conduct BI tactical planning.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-tactical-planning/powerbi-implementation-planning-bi-strategy-bi-tactical-planning-planning-levels.png" alt-text="Image shows an overview of strategic, tactical, and solution planning for business intelligence. Tactical planning is highlighted. The details about tactical planning are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-tactical-planning/planning-levels.png" alt-text="Image shows an overview of strategic, tactical, and solution planning for business intelligence. Tactical planning is highlighted. The details about tactical planning are described in the table below." border="false":::
 
 You take the following steps to conduct BI tactical planning.
 
@@ -45,7 +45,7 @@ You take the following steps to conduct BI tactical planning.
 
 Your first step to conduct tactical planning involves identifying specific objectives for your prioritized BI goals. This process shifts the focus from _strategic_ planning to _tactical_ planning.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-tactical-planning/powerbi-implementation-planning-bi-strategy-bi-tactical-planning-step-1.png" alt-text="Image shows step 1 in a series of three steps to conduct technical planning to define objectives and actions for the BI strategy. Step 1 is about identifying and describing objectives." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-tactical-planning/step-1.png" alt-text="Image shows step 1 in a series of three steps to conduct technical planning to define objectives and actions for the BI strategy. Step 1 is about identifying and describing objectives." border="false":::
 
 Objectives describe paths to your desired future state. They're specific, actionable, and achievable within a defined period of time. To make progress toward the desired future state, you should identify objectives that address the business data needs, BI goals, and priorities that you identified during BI strategic planning.
 
@@ -224,7 +224,7 @@ After you've favorably assessed organizational readiness, you should proceed wit
 
 Once you've defined your objectives and you're sure that you can achieve them, you're ready to take the next step. In step 2 of tactical planning, you define success and how it's measured for each of your objectives.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-tactical-planning/powerbi-implementation-planning-bi-strategy-bi-tactical-planning-step-2.png" alt-text="Image shows step 2 in a series of three steps to conduct technical planning to define objectives and actions for the BI strategy. Step 2 is about defining success and how it's measured." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-tactical-planning/step-2.png" alt-text="Image shows step 2 in a series of three steps to conduct technical planning to define objectives and actions for the BI strategy. Step 2 is about defining success and how it's measured." border="false":::
 
 ### Define and measure success
 
@@ -251,7 +251,7 @@ KPIs and OKRs provide measurable success criteria that you monitor to take corre
 
 You should identify and describe indicators, such as KPIs or OKRs, for your objectives. To this end, you should first have a clear understanding of the hierarchical relationship between your BI goals, objectives, and the KPIs or OKRs you want to measure.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-tactical-planning/powerbi-implementation-planning-bi-strategy-bi-tactical-planning-goals.png" alt-text="Image shows the hierarchical relationship between BI goals, objectives, and KPIs or OKRs as already described in this section." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-tactical-planning/goals.png" alt-text="Image shows the hierarchical relationship between BI goals, objectives, and KPIs or OKRs as already described in this section." border="false":::
 
 Here are some examples of BI goals together with related objectives and the KPIs to track them.
 
@@ -301,7 +301,7 @@ When you've clearly defined success for your objectives, you should get approval
 
 The business and technology context of your organization regularly changes. As such, you should periodically reevaluate and reassess your BI strategy and tactical planning. The goal is to keep them relevant and useful for your organization. In step 3 of tactical planning, you take practical steps to iteratively reevaluate and reassess planning.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-tactical-planning/powerbi-implementation-planning-bi-strategy-bi-tactical-planning-step-3.png" alt-text="Image shows step 3 in a series of three steps to conduct technical planning to define objectives and actions for the BI strategy. Step 3 is about preparing to reevaluate and assess planning." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-tactical-planning/step-3.png" alt-text="Image shows step 3 in a series of three steps to conduct technical planning to define objectives and actions for the BI strategy. Step 3 is about preparing to reevaluate and assess planning." border="false":::
 
 ### Prepare iterative planning and anticipate change
 
@@ -309,7 +309,7 @@ To ensure BI and business strategic alignment, you should establish continuous i
 
 We recommend that you conduct tactical planning at regular intervals with evaluation and assessment, as depicted in the following diagram.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-tactical-planning/powerbi-implementation-planning-bi-strategy-bi-tactical-planning-reevaluate.png" alt-text="Image shows how to revise tactical planning quarterly to plan and evaluate BI objectives." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-tactical-planning/reevaluate.png" alt-text="Image shows how to revise tactical planning quarterly to plan and evaluate BI objectives." border="false":::
 
 The diagram depicts how you can iteratively revise the BI strategy to achieve incremental progress.
 

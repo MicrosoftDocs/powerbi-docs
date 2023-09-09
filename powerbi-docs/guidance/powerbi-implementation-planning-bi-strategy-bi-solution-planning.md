@@ -29,7 +29,7 @@ There are many approaches to plan and implement BI solutions. This article descr
 
 The following high-level diagram depicts how to conduct BI solution planning.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/powerbi-implementation-planning-bi-strategy-bi-solution-planning-planning-levels.png" alt-text="Image shows an overview of strategic, tactical, and solution planning for business intelligence. Solution planning is highlighted. The details about solution planning are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/planning-levels.png" alt-text="Image shows an overview of strategic, tactical, and solution planning for business intelligence. Solution planning is highlighted. The details about solution planning are described in the table below." border="false":::
 
 You take the following steps to conduct BI solution planning.
 
@@ -52,7 +52,7 @@ You commence solution planning by first gathering requirements and defining the 
 
 **Note:** Strategic and tactical planning is led by a _working team_, which leads the initiative. In contrast, solution planning is led by a _project team_, which consists of content owners and creators.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/powerbi-implementation-planning-bi-strategy-bi-solution-planning-step-1.png" alt-text="Image shows step 1 in a series of five steps to deliver value iteratively from BI solution planning. Step 1 is about gathering requirements." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/step-1.png" alt-text="Image shows step 1 in a series of five steps to deliver value iteratively from BI solution planning. Step 1 is about gathering requirements." border="false":::
 
 Gathering the right requirements is critical to achieve successful solution deployment and adoption. An effective way to gather requirements is to identify and involve the right stakeholders, collaboratively define the problem to be solved, and use that shared understanding of the problem to create a solution design.
 
@@ -114,7 +114,7 @@ The purpose of the business design sessions is to:
 
 The following diagram depicts how to gather business requirements and define the solution design by using a business design approach.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/powerbi-implementation-planning-bi-strategy-bi-solution-planning-business-design.png" alt-text="Image shows a process for business design, which is about gathering business requirements and defining the solution. Each step in the process is described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/business-design.png" alt-text="Image shows a process for business design, which is about gathering business requirements and defining the solution. Each step in the process is described in the table below." border="false":::
 
 The diagram depicts the following steps.
 
@@ -177,7 +177,7 @@ The project team engages stakeholders in technical design sessions to address te
 
 The following diagram depicts how to translate business requirements into technical requirements by using a technical design.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/powerbi-implementation-planning-bi-strategy-bi-solution-planning-technical-design.png" alt-text="Image shows a process for technical design, which is about validating and finalizing the outcomes of the business design, and translating business requirements to technical requirements. Each step in the process is described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/technical-design.png" alt-text="Image shows a process for technical design, which is about validating and finalizing the outcomes of the business design, and translating business requirements to technical requirements. Each step in the process is described in the table below." border="false":::
 
 The diagram depicts the following steps.
 
@@ -227,7 +227,7 @@ The technical design concludes with a solution plan, which consists of the follo
 
 When the project team finishes gathering requirements, creating the solution plan, and receiving approval to proceed, it's ready to plan for solution deployment.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/powerbi-implementation-planning-bi-strategy-bi-solution-planning-step-2.png" alt-text="Image shows step 2 in a series of five steps to deliver value iteratively from BI solution planning. Step 2 is about planning for deployment." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/step-2.png" alt-text="Image shows step 2 in a series of five steps to deliver value iteratively from BI solution planning. Step 2 is about planning for deployment." border="false":::
 
 Deployment planning tasks differ depending on the solution, your development workflow, and your deployment process. A deployment plan typically pertains to many activities involving the planning and setup of tools and processes for the solution.
 
@@ -270,7 +270,7 @@ For more information about deployment planning, see [Plan deployment to migrate 
 
 The project team conducts a solution _[proof of concept (POC)](powerbi-migration-proof-of-concept.md)_ to validate outstanding assumptions and to demonstrate early benefits for business users. A POC is an initial design implementation that's limited in scope and maturity. A well-run POC is particularly important for large or complex solutions because it can identify and address complexities (or exceptions) that weren't detected in the technical design.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/powerbi-implementation-planning-bi-strategy-bi-solution-planning-step-3.png" alt-text="Image shows step 3 in a series of five steps to deliver value iteratively from BI solution planning. Step 3 is about conducting a proof of concept." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/step-3.png" alt-text="Image shows step 3 in a series of five steps to deliver value iteratively from BI solution planning. Step 3 is about conducting a proof of concept." border="false":::
 
 We recommend factoring in the following considerations when preparing a POC.
 
@@ -308,7 +308,7 @@ We recommend factoring in the following considerations when preparing a POC.
 
 When the POC is successful, the project team shifts from the POC to creating and validating content. The project team can develop the BI solution with iterative development and validation cycles. These cycles consist of iterative releases, where the project team creates content in a development environment and releases it to a test environment. During development, the project team gradually onboards the user community in a pilot process to early (beta) versions of the solution in the test environment.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/powerbi-implementation-planning-bi-strategy-bi-solution-planning-step-4.png" alt-text="Image shows step 4 in a series of five steps to deliver value iteratively from BI solution planning. Step 4 is about creating and validating content." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/step-4.png" alt-text="Image shows step 4 in a series of five steps to deliver value iteratively from BI solution planning. Step 4 is about creating and validating content." border="false":::
 
 > [!TIP]
 > Iterative delivery encourages early validation and feedback that can mitigate change requests, promote solution adoption, and realize benefits before the production release.
@@ -317,7 +317,7 @@ Iterative development and validation cycles proceed until the project team arriv
 
 The following diagram depicts how the project team can iteratively deliver BI solutions with development and validation cycles.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/powerbi-implementation-planning-bi-strategy-bi-solution-planning-development-and-validation-cycles.png" alt-text="Image shows a process for the development and validation cycle, which is about iteratively building and testing solutions. Each step in the process is described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/development-and-validation-cycles.png" alt-text="Image shows a process for the development and validation cycle, which is about iteratively building and testing solutions. Each step in the process is described in the table below." border="false":::
 
 The diagram depicts the following steps.
 
@@ -383,7 +383,7 @@ This article describes only high-level planning and actionable items. For more i
 
 When ready, the project team deploys the validated solution to the production environment. The project team should take key adoption and support actions to ensure that the deployment is successful.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/powerbi-implementation-planning-bi-strategy-bi-solution-planning-step-5.png" alt-text="Image shows step 5 in a series of five steps to deliver value iteratively from BI solution planning. Step 5 is about deploying, supporting, and monitoring." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/step-5.png" alt-text="Image shows step 5 in a series of five steps to deliver value iteratively from BI solution planning. Step 5 is about deploying, supporting, and monitoring." border="false":::
 
 To ensure a successful deployment, you perform the following support and adoption tasks.
 
