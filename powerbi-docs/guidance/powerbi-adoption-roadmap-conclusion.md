@@ -105,7 +105,7 @@ A wide variety of other adoption guides for individual technologies can be found
 
 - [Microsoft Teams adoption guide](https://adoption.microsoft.com/files/tft/#p=1).
 - [Microsoft Security and Compliance adoption guide](https://adoption.microsoft.com/files/sec/).
-- [SharePoint Adoption Resources](https://resources.techcommunity.microsoft.com/resources/sharepoint-adoption/).
+- [SharePoint Adoption Resources](https://adoption.microsoft.com/sharepoint/).
 
 ## Industry guidance
 

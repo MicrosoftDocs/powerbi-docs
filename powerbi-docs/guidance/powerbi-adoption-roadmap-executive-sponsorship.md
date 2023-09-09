@@ -22,7 +22,7 @@ Although some successes can be achieved by a few determined individual contribut
 - Providing top-down guidance and reinforcement for the BI strategy by regularly promoting, motivating, and investing in BI strategic and tactical planning.
 - Leading by example by actively using analytics in a way that's consistent with data culture and adoption goals.
 - Allocating staffing and prioritizing resources.
-- Approving funding (for example, [Fabric licenses](/fabric/enterprise/license)).
+- Approving funding (for example, [Fabric licenses](/fabric/enterprise/licenses)).
 - Removing barriers to enable action.
 - Communicating announcements that are of critical importance, to help them gain traction.
 - Decision-making, particularly for strategic-level [governance](powerbi-adoption-roadmap-governance.md) decisions.

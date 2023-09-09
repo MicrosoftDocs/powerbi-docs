@@ -137,7 +137,7 @@ The business design concludes with the following deliverables.
 The business design deliverables are used in, and validated by, the technical design.
 
 > [!TIP]
-> Solution mock-ups, prototypes, or wireframe diagrams can create a clear understanding of the expected result, both for developers and end users. Creating effective mock-ups doesn't require artistic skill or talent. You can use simple tools like [Microsoft Whiteboard](/microsoft-365/microsoft-whiteboard/digital-whiteboard-app), PowerPoint, or even just a pen and paper to illustrate the design.
+> Solution mock-ups, prototypes, or wireframe diagrams can create a clear understanding of the expected result, both for developers and end users. Creating effective mock-ups doesn't require artistic skill or talent. You can use simple tools like [Microsoft Whiteboard](https://www.microsoft.com/microsoft-365/microsoft-whiteboard/digital-whiteboard-app), PowerPoint, or even just a pen and paper to illustrate the design.
 
 ### Gather technical requirements
 
@@ -241,7 +241,7 @@ The project team should plan for key areas of solution deployment. Typically, pl
 - **Workspaces:** Decide how to [set up and use workspaces](powerbi-implementation-planning-workspaces-workspace-level-planning.md). Determine whether the solution requires lifecycle management tools like [Git integration](/fabric/cicd/git-integration/intro-to-git-integration) and [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines), and whether it requires advanced logging with [Azure Log Analytics](/power-bi/transform-model/log-analytics/desktop-log-analytics-overview).
 - **Support:** Establish who's responsible for supporting and maintaining the solution after production deployment. If the individuals responsible for support are different than the project team, involve these individuals in development. Ensure that whoever will support the solution understands the solution design, the problem it should address, who should use it, and how.
 - **User training:** Anticipate the efforts needed to train the user community so they can effectively use the solution. Consider whether any specific [change management](powerbi-adoption-roadmap-change-management.md) actions are necessary.
-- **Governance:** Identify any potential governance risks for the solution. Anticipate the effort needed to enable users to effectively use the solution, while mitigating any governance risk (for example, by using [sensitivity labels](powerbi-implementation-planning-info-protection.md#sensitivity-label-structurepowerbi-implementation-planning-info-protection.md) and [policies](powerbi-implementation-planning-info-protection.md#published-label-policies)).
+- **Governance:** Identify any potential governance risks for the solution. Anticipate the effort needed to enable users to effectively use the solution, while mitigating any governance risk (for example, by using [sensitivity labels](powerbi-implementation-planning-info-protection.md#sensitivity-label-structure) and [policies](powerbi-implementation-planning-info-protection.md#published-label-policies)).
 
 ### Conduct initial setup
 
