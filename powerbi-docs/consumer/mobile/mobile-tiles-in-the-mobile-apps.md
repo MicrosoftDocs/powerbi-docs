@@ -12,9 +12,9 @@ ms.date: 04/06/2021
 # Explore tiles in the Power BI mobile apps
 Applies to:
 
-| ![iPhone](./media/mobile-tiles-in-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-tiles-in-the-mobile-apps/ipad-logo-50-px.png) | ![Android phone](./media/mobile-tiles-in-the-mobile-apps/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-tiles-in-the-mobile-apps/android-tablet-logo-50-px.png) | ![Windows 10 devices](./media/mobile-tiles-in-the-mobile-apps/win-10-logo-50-px.png) |
+| ![iPhone](./media/mobile-tiles-in-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-tiles-in-the-mobile-apps/ipad-logo-50-px.png) | ![Android phone](./media/mobile-tiles-in-the-mobile-apps/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-tiles-in-the-mobile-apps/android-tablet-logo-50-px.png) | ![Windows devices](./media/mobile-tiles-in-the-mobile-apps/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
-| iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
+| iPhones |iPads |Android phones |Android tablets |Windows devices |
 
 Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. **You [add tiles to a dashboard in the Power BI service](../end-user-tiles.md).** 
 
@@ -78,12 +78,12 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
     After you open the link in the Power BI app, you can copy the link and open it in a browser window instead.
 4. Tap the arrow in the upper-left corner to close the tile and return to the dashboard.
 
-## Tiles in the Windows 10 mobile app
+## Tiles in the Windows mobile app
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
-1. Open a [dashboard in the Power BI mobile app](mobile-apps-view-dashboard.md) for Windows 10.
+1. Open a [dashboard in the Power BI mobile app](mobile-apps-view-dashboard.md) for Windows.
 2. Tap the vertical ellipsis on the tile. From here, you can: 
    
     ![Screenshot of a tile, showing a vertical ellipsis to Open link.](media/mobile-tiles-in-the-mobile-apps/pbi_win10tileellpslink.png)
@@ -108,7 +108,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    Tap the **Switch to presentation mode** icon ![Image of switch to presentation icon.](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) to open the tile in presentation mode, without the navigation and menu bars.
    
    > [!NOTE]
-   > You can also [view dashboards and reports in presentation mode](mobile-windows-10-app-presentation-mode.md) in the Power BI mobile app for Windows 10.
+   > You can also [view dashboards and reports in presentation mode](mobile-windows-10-app-presentation-mode.md) in the Power BI mobile app for Windows.
    > 
    > 
    

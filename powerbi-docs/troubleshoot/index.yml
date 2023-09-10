@@ -1,0 +1,52 @@
+### YamlMime:Landing
+
+title: Power BI known issues and troubleshooting
+summary: Self-service guidance to identify feature issues that are already known by Microsoft, to troubleshoot problems you are experiencing, and to learn how to contact Support.
+
+metadata:
+  title: Power BI known issues and troubleshooting
+  description: Self-service guidance to identify feature issues that are already known by Microsoft, to troubleshoot problems you are experiencing, and to learn how to contact Support.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: pbi-fundamentals
+  ms.topic: landing-page # Required
+  ms.collection: collection
+  author: mihart
+  ms.author: mihart
+  ms.date: 05/23/2023
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+  # Card (optional)
+  - title: Known issues
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: What are the current known issues for Power BI - chart
+            url: known-issues/power-bi-known-issues.md
+          - text: Current known issues for Power BI and Fabric - report
+            url: https://support.fabric.microsoft.com/known-issues
+          - text: Are there any service-wide outages
+            url: https://support.powerbi.com
+          - text: See more >
+            url: /known-issues/power-bi-known-issues.md
+  # Card (optional)
+  - title: Troubleshooting
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshoot refresh scenarios
+            url: ../connect-data/refresh-troubleshooting-refresh-scenarios.md
+          - text: Troubleshoot subscribing to reports and dashboards
+            url: ../collaborate-share/service-troubleshoot-subscribe.yml
+          - text: Troubleshoot gateways
+            url: ../connect-data/service-gateway-onprem-tshoot.md
+          - text: Troubleshoot tile errors
+            url: ../connect-data/refresh-troubleshooting-tile-errors.md 
+
+
+            

@@ -1,6 +1,6 @@
 ---
 title: Intro to dashboard tiles for Power BI designers
-description: This article describes dashboard tiles in Power BI, which includes tiles that are created from SQL Server Reporting Services (SSRS) reports.
+description: This article describes dashboard tiles in Power BI, which includes tiles that are created from a report, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,12 +8,14 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/12/2021
+ms.date: 07/18/2022
 LocalizationGroup: Dashboards
 ---
 # Intro to dashboard tiles for Power BI designers
 
-A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.  This screenshot shows many different tiles pinned to a dashboard.
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
+A tile is a snapshot of your data, pinned to the dashboard. You can create tiles from a report, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.  This screenshot shows many different tiles pinned to a dashboard.
 
 ![Power BI dashboard](media/service-dashboard-tiles/power-bi-dashboard.png)
 
@@ -32,9 +34,9 @@ Need help with understanding the building blocks that make up Power BI? See [Bas
 There are many different ways to add (pin) a tile to a dashboard. You can pin tiles from:
 
 * [Power BI Q&A](service-dashboard-pin-tile-from-q-and-a.md)
-* [A report](service-dashboard-pin-tile-from-report.md)
+* [A report](service-dashboard-create.md)
 * [Another dashboard](service-pin-tile-to-another-dashboard.md)
-* [Excel workbook on OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
+* [Excel workbook on OneDrive for work or school](service-dashboard-pin-tile-from-excel.md)
 * [Quick Insights](service-insights.md)
 * [An on-premises paginated report in Power BI Report Server or SQL Server Reporting Services](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 

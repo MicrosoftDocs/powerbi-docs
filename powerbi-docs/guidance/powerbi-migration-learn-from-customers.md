@@ -1,13 +1,13 @@
 ---
 title: Learn from customer Power BI migrations
 description: Learn from customers when migrating to Power BI.
-author: peter-myers
-ms.author: kfollis
-ms.reviewer: asaxton
+author: davidiseminger
+ms.author: davidi
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 02/27/2022
 ---
 
 # Learn from customer Power BI migrations
@@ -68,9 +68,9 @@ With such a high volume of BI assets, change management for the business-owned r
 
 ### Create an internal community
 
-The company established a Center of Excellence (COE) to provide internal training classes and resources. The COE also serves as an internal consultancy group that's ready to assist content authors with technical issues, resolution of roadblocks, and best practice guidance.
+The company established a [Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md) to provide internal training classes and resources. The COE also serves as an internal consultancy group that's ready to assist content authors with technical issues, resolution of roadblocks, and best practice guidance.
 
-There's also an internal Power BI community, which has been a massive success counting in excess of 1,600 members. The community is managed in Yammer. Members can ask internally relevant questions and receive answers adhering to best practices and framed within organizational constraints. This type of user-to-user interaction alleviates much of the support burden from the COE. However, the COE does monitor the questions and answers, and it gets involved in conversations when appropriate.
+There's also an [internal Power BI community](powerbi-adoption-roadmap-community-of-practice.md), which has been a massive success counting in excess of 1,600 members. The community is managed in Yammer. Members can ask internally relevant questions and receive answers adhering to best practices and framed within organizational constraints. This type of user-to-user interaction alleviates much of the support burden from the COE. However, the COE does monitor the questions and answers, and it gets involved in conversations when appropriate.
 
 An extension of the internal community is the newer Power BI expert network. It includes a small number of pre-selected Power BI champions from within the organization. They are highly skilled Power BI practitioners from the business units, who are enthusiastic champions, and who actively want to solve challenges within the business. Members of the Power BI expert network are expected to abide by best practices and guidelines established by the COE, and help the broader internal Power BI community understand and implement them. Although the Power BI expert network collaborates with the COE, and can receive dedicated training, Power BI experts operate independently from the COE. Each Power BI expert may define the parameters for how they operate, bearing in mind they have other responsibilities and priorities in their official role.
 
@@ -118,7 +118,7 @@ The empowerment of data analysts within the company resulted in immediate positi
 The company's data warehouse platform is DB2. Based on the current data warehouse design, the company found that DirectQuery models—instead of Import models—worked best for their requirements.
 
 > [!IMPORTANT]
-> Conduct a technical proof of concept to evaluate the model storage mode that works best. Also, teach data modelers about model storage modes and how they can choose an appropriate mode for their project.
+> Conduct a [technical proof of concept](powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md) to evaluate the model storage mode that works best. Also, teach data modelers about model storage modes and how they can choose an appropriate mode for their project.
 
 ### Educate authors about Premium licensing
 
@@ -138,18 +138,18 @@ Early on, the company had many personal gateways. Using an on-premises data gate
 
 ### Formalize your support plan
 
-As the adoption of Power BI grew within the organization, the company found that a multi-tier support approach worked well:
+As the adoption of Power BI grew within the organization, the company found that a [multi-tier support approach](powerbi-adoption-roadmap-user-support.md) worked well:
 
 - **Layer 1: Intra-team:** People learn from, and teach, each other on a day-to-day basis.
 - **Layer 2: Power BI community:** People ask questions of the internal Teams community to learn from each other and communicate important information.
-- **Layer 3: Central BI team and COE:** People submit email requests for assistance. _Office hour_ sessions are held twice per week to collectively discuss problems and share ideas.
+- **Layer 3: Central BI team and COE:** People submit email requests for assistance. *Office hour* sessions are held twice per week to collectively discuss problems and share ideas.
 
 > [!IMPORTANT]
 > Although the first two layers are less formal, they're equally important as the third layer of support. Experienced users tend to rely mostly on people they know, whereas newer users (or those who are the single data analyst for a business unit or shared service) tend to rely more on formal support.
 
 ### Invest in training and governance
 
-Over the past year, the company improved its internal training offerings and enhanced its data governance program. The governance committee includes key members from each of the distributed analytics groups, plus the COE.
+Over the past year, the company improved its internal training offerings and enhanced its [data governance](powerbi-adoption-roadmap-governance.md) program. The governance committee includes key members from each of the distributed analytics groups, plus the [COE](powerbi-adoption-roadmap-center-of-excellence.md).
 
 There are now six internal Power BI courses in their internal catalog. The [Dashboard in a Day](https://powerbi.microsoft.com/diad/) course remains a popular course for beginners. To help users deepen their skills, they deliver a series of three Power BI courses and two DAX courses.
 

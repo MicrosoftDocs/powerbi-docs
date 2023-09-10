@@ -7,8 +7,9 @@ ms.reviewer: mihart
 featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.search.form: Set alerts on dashboards
 ms.topic: how-to
-ms.date: 08/13/2021
+ms.date: 07/12/2022
 #Customer intent: As a Power BI service consumer, I want to learn how to create and update a data alert so that I get notified when important data changes above/below my set threshold.
 LocalizationGroup: Dashboards
 ---
@@ -21,22 +22,7 @@ Set alerts in the Power BI service to notify you when data on a dashboard change
 
 :::image type="content" source="media/end-user-alerts/card-gauge-kpi.png" alt-text="Screenshot showing part of a dashboard that includes a tile, a card, and a KPI.":::
 
-Alerts can be created on dashboards:
-- that you have created and saved in **My workspace**
-- that have been shared with you in a [Premium reserved capacity](end-user-license.md). 
-- in any workspace you can access, if you have a Power BI Pro or Premium Per User (PPU) license.    
-
 Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered. 
-
-This feature is still evolving, so refer to the [Tips and troubleshooting section below](#tips-and-troubleshooting).
-
-
-
-Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](mobile/mobile-set-data-alerts-in-the-mobile-apps.md), in Power BI for Teams, and in the Power BI service. 
-
-> [!WARNING]
-> These alerts provide information about your data. If you view your Power BI data on a mobile device and that device gets stolen, we recommend using the Power BI service to turn off all alerts.
-> 
 
 This tutorial covers the following.
 > [!div class="checklist"]
@@ -49,27 +35,28 @@ This tutorial covers the following.
 
 ## Prerequisites
 
-If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+- A Power BI license. If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+- Access to a dashboard with one of the following types of tile: gauge, KPI, or card. 
+- A dataset that refreshes.
 
-1. This example uses a dashboard card tile from the Sales & Marketing sample. Open the Power BI service (app.powerbi.com), sign in, and open your **My Workspace**.
+## Who can set alerts
 
-   :::image type="content" source="media/end-user-alerts/power-bi-my-workspace.png" alt-text="Screenshot showing the left panel of Power BI, with My workspace called out.":::
+Alerts can be created in the Power BI service by customers with any license type. Set alerts on dashboard tiles:
+- that you have created and saved in **My workspace**
+- that have been shared with you in a [Premium reserved capacity](end-user-license.md). 
+- in any workspace you can access, if you have a Power BI Pro or Premium Per User (PPU) license.
 
-2. In the bottom-left corner, select **Get data**.
+## Who can see alerts I create?
 
-   :::image type="content" source="media/end-user-alerts/power-bi-get-data.png" alt-text="Screenshot showing the Get data menu item.":::
+Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts in the Power BI service,  [in the Power BI mobile apps](mobile/mobile-set-data-alerts-in-the-mobile-apps.md), and in Power BI for Teams. 
 
-3. On the Get data page that appears, select **Samples**.
+> [!WARNING]
+> These alerts provide information about your data. If you view your Power BI data on a mobile device and that device gets stolen, we recommend using the Power BI service to turn off all alerts.
 
-4. Select the Sales and Marketing Sample, then choose **Connect**.
-
-   :::image type="content" source="media/end-user-alerts/power-bi-sample.png" alt-text="Screenshot showing various samples, including the Sales amd Marketing sample.":::
-
-5. After Power BI has connected to the sample, select **Go to dashboard** from the dialog that appears.
-
-   :::image type="content" source="media/end-user-alerts/power-bi-go-to-dashboard.png" alt-text="Screenshot showing a message indicating that the dashboard is ready and a button labeled Go to dashboard.":::
 
 ## Add an alert to a dashboard tile
+
+Alerts can be set on three types of tiles (gauges, KPIs, and cards) on a Power BI dashboard. This tutorial uses the Sales and Marketing sample.  To follow along, [get the sample](../create-reports/sample-sales-and-marketing.md). 
 
 1. From a dashboard gauge, KPI, or card tile, select the ellipsis.
 
@@ -83,9 +70,9 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 
    :::image type="content" source="media/end-user-alerts/power-bi-alert-manage.png" alt-text="Screenshot showing the Add alert rule window. The Alert title box contains a title, and the Active slider is set to On.":::
 
-1. Scroll down and enter the alert details.  In this example we'll create an alert that notifies us once a day if our market share increases to 40 or higher. Alerts will appear in our [Notification center](end-user-notification-center.md). And we'll have Power BI send us an email as well.
+1. Scroll down and enter the alert details.  In this example we'll create an alert that notifies us once a day if our market share increases to 40% (.4) or higher. Alerts will appear in our Notification center. We'll have Power BI send us an email as well.
 
-   :::image type="content" source="media/end-user-alerts/power-bi-manage-alert-detail.png" alt-text="Screenshot showing the Manage alerts window. The Condition box is set to Above, the Threshold box contains 40, and the email check box is selected.":::
+   :::image type="content" source="media/end-user-alerts/power-bi-threshold.png" alt-text="Screenshot showing the Manage alerts window. The Condition box is set to Above, the Threshold box contains 40, and the email check box is selected.":::
 
 1. Select **Save and close**.
 
@@ -134,7 +121,7 @@ There are many ways to manage your alerts: from the dashboard tile itself, from 
 
 3. From here you can turn alerts on and off, open the **Manage alerts** window to make changes, or delete the alert.
 
-## Tips and troubleshooting 
+## Considerations and limitations 
 
 * If you are unable to set an alert for a gauge, KPI, or card, contact your Power BI admin or IT help desk for help. Sometimes alerts are turned off or unavailable for your dashboard or for specific types of dashboard tiles.
 * Alerts only work on data that is refreshed. They do not work on static data. Most of the samples supplied by Microsoft are static. 
@@ -147,5 +134,3 @@ Instructions for deleting alerts are explained above. In brief, select the gear 
 
 > [!div class="nextstepaction"]
 > [Set data alerts on your mobile device](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-
-

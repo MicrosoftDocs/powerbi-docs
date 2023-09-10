@@ -10,4 +10,4 @@
  ms.custom: include file
 ---
 
-✔️&nbsp;Power&nbsp;BI&nbsp;service
+:::image type="icon" source="media/yes-icon.svg" border="false":::&nbsp;Power&nbsp;BI&nbsp;service

@@ -1,6 +1,6 @@
 ---
-title: Introduction to use SVG utils in Power BI visual
-description: This article describes how to use SVG utils to simplify SVG manipulations for Power BI visuals.
+title: Introduction to SVG utils in Power BI visuals
+description: Learn about the SVG utils package and see examples of how you can use them to simplify SVG manipulations for Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
 manager: rkarlin
@@ -8,12 +8,12 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 07/15/2021
+ms.date: 01/10/2023
 ---
 
 # SVG utils
 
-SVGUtils is a set of functions and classes to simplify SVG manipulations for Power BI visuals
+SVGUtils is a set of functions and classes to simplify SVG manipulations for Power BI visuals.
 
 ## Installation
 
@@ -42,7 +42,7 @@ interface ClassAndSelector {
 
 ### createClassAndSelector
 
-This function creates an instance of ClassAndSelector with the given name of the class.
+This function creates an instance of ClassAndSelector with the name of the class.
 
 ```typescript
 function createClassAndSelector(className: string): ClassAndSelector;
@@ -63,13 +63,13 @@ divSelector.class === "sample-block"; // returns: true
 
 ## manipulation
 
-The `manipulation` provides some special functions to generate strings for using with SVG transform property.
+The `manipulation` method provides some special functions to generate strings that you can use with the SVG transform property.
 
 The module provides the following functions:
 
 ### translate
 
-This function creates a translate string for using with the SVG transform property.
+This function creates a translate string for use with the SVG transform property.
 
 ```typescript
 function translate(x: number, y: number): string;
@@ -88,7 +88,7 @@ manipulation.translate(100, 100);
 
 ### translateXWithPixels
 
-This function creates a translateX string for using with the SVG transform property.
+This function creates a translateX string for use with the SVG transform property.
 
 ```typescript
 function translateXWithPixels(x: number): string;
@@ -107,7 +107,7 @@ manipulation.translateXWithPixels(100);
 
 ### translateWithPixels
 
-This function creates a translate string for using with the SVG transform property.
+This function creates a translate string for use with the SVG transform property.
 
 ```typescript
 function translateWithPixels(x: number, y: number): string;
@@ -126,7 +126,7 @@ manipulation.translateWithPixels(100, 100);
 
 ### translateAndRotate
 
-This function creates a translate-rotate string for using with the SVG transform property.
+This function creates a translate-rotate string for use with the SVG transform property.
 
 ```typescript
 function translateAndRotate(
@@ -151,7 +151,7 @@ manipulation.translateAndRotate(100, 100, 50, 50, 35);
 
 ### scale
 
-This function creates a scale string for using in a CSS transform property.
+This function creates a scale string for use in a CSS transform property.
 
 ```typescript
 function scale(scale: number): string;
@@ -170,7 +170,7 @@ manipulation.scale(50);
 
 ### transformOrigin
 
-This function creates a transform-origin string for using in a CSS transform-origin property.
+This function creates a transform-origin string for use in a CSS transform-origin property.
 
 ```typescript
 function transformOrigin(xOffset: string, yOffset: string): string;
@@ -282,7 +282,7 @@ Rect.getOffset({ left: 25, top: 25, width: 100, height: 100 });
 
 ### getSize
 
-This function returns size of the rectangle.
+This function returns the size of the rectangle.
 
 ```typescript
 function getSize(rect: IRect): ISize;
@@ -305,7 +305,7 @@ Rect.getSize({ left: 25, top: 25, width: 100, height: 100 });
 
 ### setSize
 
-This function modifies size of the rectangle.
+This function modifies the size of the rectangle.
 
 ```typescript
 function setSize(rect: IRect, value: ISize): void;
@@ -433,7 +433,7 @@ This function returns a bottom-right position of the rectangle.
 function bottomRight(rect: IRect): IPoint;
 ```
 
-### Example
+Example:
 
 ```typescript
 import { shapes } from "powerbi-visuals-utils-svgutils";
@@ -469,7 +469,7 @@ Rect.clone({ left: 25, top: 25, width: 100, height: 100 });
 
 ### toString
 
-This function converts rectangle to string.
+This function converts the rectangle to a string.
 
 ```typescript
 function toString(rect: IRect): string;
@@ -489,7 +489,7 @@ Rect.toString({ left: 25, top: 25, width: 100, height: 100 });
 
 ### offset
 
-This function applies given offset to the rectangle.
+This function applies an offset to the rectangle.
 
 ```typescript
 function offset(rect: IRect, offsetX: number, offsetY: number): IRect;
@@ -542,7 +542,7 @@ Rect.add(
 
 ### getClosestPoint
 
-This function returns the closest point on the rect to the given point.
+This function returns the closest point on the rectangle to a specific point.
 
 ```typescript
 function getClosestPoint(rect: IRect, x: number, y: number): IPoint;
@@ -611,7 +611,7 @@ Rect.equalWithPrecision(
 
 ### isEmpty
 
-This function checks if rectangle is empty.
+This function checks if a rectangle is empty.
 
 ```typescript
 function isEmpty(rect: IRect): boolean;
@@ -631,7 +631,7 @@ Rect.isEmpty({ left: 0, top: 0, width: 0, height: 0 });
 
 ### containsPoint
 
-This function checks if rectangle contains the point.
+This function checks if a rectangle contains a specific point.
 
 ```typescript
 function containsPoint(rect: IRect, point: IPoint): boolean;

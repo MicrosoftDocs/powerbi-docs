@@ -1,13 +1,13 @@
 ---
 title: Conduct proof of concept to migrate to Power BI
 description: Guidance on conducting a proof of concept when migrating to Power BI.
-author: peter-myers
-ms.author: kfollis
-ms.reviewer: asaxton
+author: davidiseminger
+ms.author: davidi
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 02/27/2022
 ---
 
 # Conduct proof of concept to migrate to Power BI
@@ -46,14 +46,14 @@ When conducting a POC, focus on the following goals:
 
 The POC scope is dependent on what the unknowns are, or which goals need to be validated with colleagues. To reduce complexity, keep a POC as narrow as possible in terms of scope.
 
-Most often with a migration, requirements are well known because there's an existing solution to start from. However, depending on the extent of improvements to be made or existing Power BI skills, a POC still provides significant value. In addition, rapid prototyping with consumer feedback may be appropriate to quickly clarify requirements—especially if enhancements are made.
+Most often with a migration, requirements are well known because there's an existing solution to start from. However, depending on the extent of improvements to be made or existing Power BI skills, a POC still provides significant value. In addition, [rapid prototyping](powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md) with consumer feedback may be appropriate to quickly clarify requirements—especially if enhancements are made.
 
 > [!IMPORTANT]
 > Even if a POC includes only a subset of data, or includes only limited visuals, it's often important to take it from start to finish. That is, from development in Power BI Desktop to deployment to a development workspace in the Power BI service. It's the only way to fully accomplish the POC objectives. It's particularly true when the Power BI service must deliver critical functionality that you haven't used before, like a DirectQuery dataset using single sign-on. During the POC, focus your efforts on aspects you're uncertain about or need to verify with others.
 
 ## Handle differences in Power BI
 
-Power BI can be used as a _model-based tool_ or as a _report-based tool_. A model-based solution involves developing a data model, whereas a report-based solution connects to an already-deployed data model.
+Power BI can be used as a *model-based tool* or as a *report-based tool*. A model-based solution involves developing a data model, whereas a report-based solution connects to an already-deployed data model.
 
 Due to its extreme flexibility, there are some aspects about Power BI that may be fundamentally different from the legacy BI platform you're migrating from.
 
@@ -70,11 +70,11 @@ If you're migrating from a legacy BI platform where reports reference relational
 
 In the BI industry, a dashboard is a collection of visuals that displays key metrics on a single page. However, in Power BI, a dashboard represents a specific visualization feature that can only be created in the Power BI service. When migrating a dashboard from a legacy BI platform, you have two choices:
 
-1. The legacy dashboard can be recreated as a Power BI _report_. Most reports are created with Power BI Desktop. Paginated reports and Excel reports are alternative options, too.
-2. The legacy dashboard can be recreated as a Power BI _dashboard_. [Dashboards](../fundamentals/service-basic-concepts.md#dashboards) are a visualization feature of the Power BI service. Dashboard visuals are often created by pinning visuals from one or more reports, Q&A, or Quick Insights.
+1. The legacy dashboard can be recreated as a Power BI *report*. Most reports are created with Power BI Desktop. Paginated reports and Excel reports are alternative options, too.
+2. The legacy dashboard can be recreated as a Power BI *dashboard*. [Dashboards](../fundamentals/service-basic-concepts.md#dashboards) are a visualization feature of the Power BI service. Dashboard visuals are often created by pinning visuals from one or more reports, Q&A, or Quick Insights.
 
 > [!TIP]
-> Because dashboards are a Power BI content type, refrain from using the word _dashboard_ in the report or dashboard name.
+> Because dashboards are a Power BI content type, refrain from using the word *dashboard* in the report or dashboard name.
 
 ### Focus on the big picture when recreating visuals
 

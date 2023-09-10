@@ -1,8 +1,8 @@
 ---
 title: On-premises data gateway sizing
 description: Guidance for working sizing the On-premises data gateway.
-author: peter-myers
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -58,12 +58,12 @@ Determining the correct sizing for your gateway machine can depend on the follow
   - The number of visuals on report pages (each visual sends at least one query)
   - The frequency of Power BI dashboard query cache updates
   - The number of real-time reports using the [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) feature
-  - Whether datasets enforce [Row-level Security (RLS)](../create-reports/desktop-rls.md)
+  - Whether datasets enforce [Row-level Security (RLS)](../enterprise/service-admin-rls.md)
 
 Generally, Live Connection and DirectQuery workloads require sufficient CPU, while Cache data workloads require more CPU and memory. Both workloads depend on good connectivity with the Power BI service, and the data sources.
 
 > [!NOTE]
-> Power BI capacities impose limits on model refresh parallelism, and Live Connection and DirectQuery throughput. There's no point sizing your gateways to deliver more than what the Power BI service supports. Limits differ by Premium SKU (and equivalently sized A SKU). For more information, see [What is Power BI Premium? (Capacity nodes)](../admin/service-premium-what-is.md#capacity-nodes).
+> Power BI capacities impose limits on model refresh parallelism, and Live Connection and DirectQuery throughput. There's no point sizing your gateways to deliver more than what the Power BI service supports. Limits differ by Premium SKU (and equivalently sized A SKU). For more information, see [What is Power BI Premium? (Capacity nodes)](../enterprise/service-premium-what-is.md#capacities-and-skus).
 
 ## Recommendations
 
@@ -107,7 +107,7 @@ For Import datasets:
 For DirectQuery datasets:
 
 - Optimize data sources, model, and report designs—for more information, see [DirectQuery model guidance in Power BI Desktop](directquery-model-guidance.md)
-- Create [aggregations](../admin/aggregations-auto.md) to cache higher-level results to reduce the number of DirectQuery requests
+- Create [aggregations](../enterprise/aggregations-auto.md) to cache higher-level results to reduce the number of DirectQuery requests
 - Restrict [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) intervals, in report designs and capacity settings
 - Especially when dynamic RLS is enforced, restrict dashboard cache update frequency
 - Especially for smaller data volumes or for non-volatile data, convert the design to an Import or [Composite](../connect-data/service-dataset-modes-understand.md#composite-mode) model

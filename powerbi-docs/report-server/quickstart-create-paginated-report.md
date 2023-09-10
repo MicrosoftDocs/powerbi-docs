@@ -7,9 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/07/2020
+ms.date: 06/22/2022
 ---
 # Create a paginated report for Power BI Report Server
+
 In this article, you create a paginated report for Power BI Report Server in a few simple steps.
 
 Looking for help with creating paginated reports in Report Builder for the Power BI service? See [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) instead.
@@ -80,10 +81,27 @@ And you can add all sorts of other visualizations: gauges, tables, matrixes, tab
 ![Report Builder Design view](media/quickstart-create-paginated-report/reportserver-paginated-finished-design-report.png)
 
 ## Step 4: Save your report to the report server
-When your report is ready, save it to Power BI Report Server.
 
-1. On the **File** menu, select **Save as**, and save it to the report server. 
-2. Now you can view it in the browser.
+When your report is ready, save it to Power BI Report Server. You can [start in the report server](#upload-to-the-report-server) and upload it, or you can [start in Microsoft Report Builder](#save-as-from-microsoft-report-builder), and save it.
+
+However, you can't start in Power BI Report Builder and save it. Use the [upload to the report server](#upload-to-the-report-server) option instead.
+
+### Upload to the report server
+
+1. In the report server, select **Upload**.
+
+    :::image type="content" source="media/quickstart-create-paginated-report/report-server-upload.png" alt-text="Screenshot of Select Upload in Power BI Report Server.":::
+
+1. Browse to the paginated report and select **Open**.
+
+### Save As from Microsoft Report Builder
+
+1. On the **File** menu in Microsoft Report Builder, select **Save As**.
+1. Select **Recent Sites and Servers**, select the server, and select **Save**.
+
+    :::image type="content" source="media/quickstart-create-paginated-report/microsoft-report-builder-recent-sites-servers.png" alt-text="Screenshot of Save as to Recent Sites and Servers.":::
+
+    Whether you upload it or save it, now you can view it in the browser.
    
     ![Paginated report in the browser](media/quickstart-create-paginated-report/reportserver-paginated-report.png)
 

@@ -1,0 +1,69 @@
+### YamlMime:Landing
+
+title: Power BI support
+summary: Self-service guidance to solve common support issues or to learn how to contact Support.
+
+metadata:
+  title: Power BI support
+  description: Self-service guidance to solve common support issues or to learn how to contact Support.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: pbi-fundamentals
+  ms.topic: landing-page # Required
+  ms.collection: collection
+  author: mihart
+  ms.author: mihart
+  ms.date: 11/29/2022
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+  # Card (optional)
+  - title: About Support requests
+    linkLists: 
+      - linkListType: how-to-guide
+        links:
+          - text: Support overview
+            url: /power-platform/admin/support-overview.md
+          - text: How to contact Support #can we eliminate the PBI version?
+            url: service-support-options.md
+          - text: Create a Support ticket
+            url: /power-platform/admin/get-help-support.md
+
+# Card (optional)
+  - title: Support-related admin settings
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Help and Support settings
+            url: ../admin/service-admin-portal-help-support.md
+          - text: Service interruption notifications
+            url: service-interruption-notifications.md
+
+  # Card (optional)
+  - title: Before you contact Support
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: View current and historical service health in the Microsoft 365 admin center
+            url:  service-admin-health.md
+          - text: Are there any service-wide outages
+            url: https://support.powerbi.com
+          - text: Is this a known issue?
+            url: ../troubleshoot/known-issues/power-bi-known-issues.md
+          - text: Look for an answer in the Community forum
+            url: https://community.powerbi.com
+          - text: Tips for getting answers to your Power BI questions
+            url: service-tips-for-finding-help.md
+
+  # Card
+  - title: Troubleshooting guides
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Power BI
+            url: ../troubleshoot/index.yml
+            

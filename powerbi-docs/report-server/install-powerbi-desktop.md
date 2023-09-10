@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 09/09/2021
+ms.date: 05/24/2023
 ms.custom: intro-installation
 ---
 
 # Install Power BI Desktop for Power BI Report Server
 
-To create Power BI reports for Power BI Report Server, you need to download and install the version of Power BI Desktop that's optimized for Power BI Report Server. This release is different from the Power BI Desktop used with the Power BI service. For example, the version of Power BI Desktop for the Power BI service includes preview features. Those features aren't in the Power BI Report Server version until they're generally available. Using this release makes sure that the report server can interact with a known version of the reports and model. 
+To create Power BI reports for Power BI Report Server, you need to download and install the version of Power BI Desktop that's optimized for Power BI Report Server. This release is different from the Power BI Desktop used with the Power BI service. For example, the version of Power BI Desktop for the Power BI service includes preview features. Those features aren't in the Power BI Report Server version until they're generally available. Other features require Power BI service environment and are [unavailable in the Power BI Report Server](./compare-report-server-service.md). Using this release makes sure that the report server can interact with a known version of the reports and model. 
 
 Not to worry. You can install Power BI Desktop, and Power BI Desktop for Power BI Report Server, side by side on the same computer.
 
@@ -39,6 +39,9 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 2. At the end of the installation, select **Launch Power BI Desktop**.
 
     It starts automatically and you're ready to go.
+
+> [!IMPORTANT]
+> Power BI Desktop is not supported in Virtualized Environment (eg. Citrix). 
 
 ## Verify you're using the correct version
 It's easy to verify that you're using the correct Power BI Desktop: Look at the launch screen or title bar within Power BI Desktop. You can tell you have the right version because **Power BI Desktop (January 2021)** or later is in the title bar. Also, the Power BI logo colors are reversed, yellow on black instead of black on yellow.
@@ -79,7 +82,7 @@ Power BI Report Server reports support almost all visualizations, including Powe
 
 Power BI Report Server reports support all the basic functionality in the [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md), including:
 
-* [Phone report layout](../create-reports/desktop-create-phone-report.md): You can optimize a report for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon ![Phone report layout icon](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png), and layout.
+* [Phone report layout](../create-reports/power-bi-create-mobile-optimized-report-about.md): You can optimize a report for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon ![Phone report layout icon](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png), and layout.
   
     ![Report optimized for phones](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-report.png)
 

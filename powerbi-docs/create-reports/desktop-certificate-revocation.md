@@ -1,18 +1,18 @@
 ---
 title: Certificate revocation check, Power BI Desktop
-description: How to check to see if you're using revoked certificates in Power BI Desktop in the UI and in the registry
+description: Learn how to check to see if you're using revoked certificates in Power BI Desktop in the UI and in the registry.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 05/18/2021
+ms.date: 03/06/2023
 LocalizationGroup: Create reports
 ---
 # Certificate revocation check, Power BI Desktop
 
-Certificates ensure the security of your connections to online data sources. You can check to see if a certificate has been revoked before you connect. Power BI offers two ways to enable or disable a certificate check: 
+Certificates ensure the security of your connections to online data sources. You can check to see if a certificate is revoked before you connect. Power BI offers two ways to enable or disable a certificate check:
 
 - In Options in Power BI Desktop.
 - By editing the registry.
@@ -21,15 +21,15 @@ Certificates ensure the security of your connections to online data sources. You
 
 Both methods offer three possible settings:
 
-- **Comprehensive check**: Reject certificates that have been revoked, and certificates without revocation information.
-- **Basic check**: Only reject certificates that have been revoked. Certificates without revocation information are allowed through. This is important for some organizations with corporate proxy services.
-- **None**, or **Disabled**:  Power BI doesn't check revocation information. All valid certificates are allowed through.
+- **Comprehensive check**: Reject certificates that are revoked and certificates without revocation information.
+- **Basic check**: Only reject certificates that are revoked. Certificates without revocation information are allowed through. This is important for some organizations with corporate proxy services.
+- **None** or **Disabled**: Power BI doesn't check revocation information. All valid certificates are allowed through.
 
 |Certificate revocation information status | Comprehensive check | Basic check | None / Disabled |
 |---------|---------|---------|---------|
-|Revoked     |  ❌  | ❌  | ✔   |
-|Unknown  |  ❌    |  ✔   |    ✔  |
-|Not revoked  | ✔  |    ✔ |    ✔  |
+|Revoked     |  :::image type="icon" source="../includes/media/no-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/no-icon.svg" border="false":::  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::   |
+|Unknown  |  :::image type="icon" source="../includes/media/no-icon.svg" border="false":::    |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::   |    :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |
+|Not revoked  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |    :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |    :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |
 
 ## In Power BI Desktop
 
@@ -41,7 +41,7 @@ You can enable or disable the check in the user interface in Power BI Desktop. O
 
 **Basic check** is the default selection.
 
-:::image type="content" source="media/desktop-certificate-revocation/desktop-check-certificate-revocation.png" alt-text="Check certification revocation dialog box":::
+:::image type="content" source="media/desktop-certificate-revocation/desktop-check-certificate-revocation-2.png" alt-text="Screenshot of the check certification revocation dialog box.":::
 
 ## In registry settings
 
@@ -63,7 +63,7 @@ Or:
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop
 ```
 
-Set the registry value to one of the following values: 
+Set the registry value to one of the following values:
 
 |Value  |Mode  |Configuration  |
 |---------|---------|---------|

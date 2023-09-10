@@ -1,19 +1,22 @@
 ---
 title: Install Power BI Report Server
-description: 'Learn how to install Power BI Report Server.'
+description: 'Learn how to install Power BI Report Server, or create a virtual machine running Power BI Report Server on Azure.'
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 03/14/2021
+ms.date: 06/22/2022
 ms.custom: intro-installation
 ---
 
 # Install Power BI Report Server
 
 Learn how to install Power BI Report Server.
+
+> [!TIP]
+> Another option is to create a [virtual machine (VM) with a Power BI Report Server Enterprise Image](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftpowerbi.pbirs?tab=overview) on Windows Server 2019 from Azure Marketplace.
 
 ## Download Power BI Report Server
 
@@ -39,7 +42,7 @@ Read on for details.
 
 #### Power BI Premium
 
-If you've purchased Power BI Premium, within the **Premium settings** tab of the Power BI admin portal, you have access to your Power BI Report Server product key. The admin portal is only available to Global Admins or users assigned the Power BI service administrator role.
+If you've purchased Power BI Premium, within the **Premium settings** tab of the Power BI admin portal, you have access to your Power BI Report Server product key. The admin portal is only available to Global Admins or users assigned the Fabric administrator role.
 
 ![Premium settings](../report-server/media/install-report-server/pbirs-product-key.png "Power BI Report Server key within Premium settings")
 

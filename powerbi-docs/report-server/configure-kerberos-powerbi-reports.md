@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: video-vCH8Fa3OpQ0
-ms.date: 11/01/2017
+ms.date: 05/12/2022
 ---
 # Configure Kerberos to use Power BI reports
 
@@ -17,7 +17,7 @@ Learn how to configure your report server for Kerberos authentication to data so
 > [!NOTE]  
 > This video might use earlier versions of Power BI Report Server.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0]
 
 Power BI Report Server includes the ability to host Power BI reports. Many data sources are supported by your report server. While this article focuses specifically on SQL Server Analysis Services, you can use the concepts and apply that to other data sources such as SQL Server.
 
@@ -132,8 +132,8 @@ Setspn -a HTTP/contosoreports ContosoRS
 Placing the SPN on a domain user account, for both the FQDN and NetBIOS SPN, would look similar to the following if you were using the machine name for the host of the SPN.
 
 ```console
-Setspn -a HTTP/ContosoRS.contoso.com RSService
-Setspn -a HTTP/ContosoRS RSService
+Setspn -S HTTP/ContosoRS.contoso.com RSService
+Setspn -S HTTP/ContosoRS RSService
 ```
 
 ## SPNs for the Analysis Services service
@@ -156,15 +156,15 @@ We can use the SetSPN tool to add the SPN. For this example, the machine name wi
 Placing the SPN on a machine account, for both the FQDN and NetBIOS SPN, would look similar to the following.
 
 ```console
-Setspn -a MSOLAPSvc.3/ContosoAS.contoso.com ContosoAS
-Setspn -a MSOLAPSvc.3/ContosoAS ContosoAS
+Setspn -S MSOLAPSvc.3/ContosoAS.contoso.com ContosoAS
+Setspn -S MSOLAPSvc.3/ContosoAS ContosoAS
 ```
 
 Placing the SPN on a domain user account, for both the FQDN and NetBIOS SPN, would look similar to the following.
 
 ```console
-Setspn -a MSOLAPSvc.3/ContosoAS.contoso.com OLAPService
-Setspn -a MSOLAPSvc.3/ContosoAS OLAPService
+Setspn -S MSOLAPSvc.3/ContosoAS.contoso.com OLAPService
+Setspn -S MSOLAPSvc.3/ContosoAS OLAPService
 ```
 
 ## SPNs for the SQL Browser service
@@ -190,8 +190,8 @@ We can use the SetSPN tool to add the SPN. For this example, the machine name wi
 Placing the SPN on the machine account, for both the FQDN and NetBIOS SPN, would look similar to the following.
 
 ```console
-Setspn -a MSOLAPDisco.3/ContosoAS.contoso.com ContosoAS
-Setspn -a MSOLAPDisco.3/ContosoAS ContosoAS
+Setspn -S MSOLAPDisco.3/ContosoAS.contoso.com ContosoAS
+Setspn -S MSOLAPDisco.3/ContosoAS ContosoAS
 ```
 
 For more information, see [An SPN for the SQL Server Browser service is required](https://support.microsoft.com/kb/950599).

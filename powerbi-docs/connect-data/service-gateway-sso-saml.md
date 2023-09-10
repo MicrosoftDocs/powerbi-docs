@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/24/2021
+ms.date: 05/17/2022
 LocalizationGroup: Gateways
 ---
 
@@ -213,13 +213,12 @@ Finally, add the certificate thumbprint to the gateway configuration:
 
 Now you can use the **Manage Gateway** page in Power BI to configure the SAP HANA data source. Under **Advanced Settings**, enable SSO via SAML. By doing so, you can publish reports and datasets binding to that data source.
 
-   ![Screenshot of the "Advanced settings" section in Power BI.](media/service-gateway-sso-saml/advanced-settings.png)
+   :::image type="content" source="media/service-gateway-sso-saml/enable-ss-saml.png" alt-text=" Screenshot of advanced settings with single sign-on for SAML.":::
 
 > [!NOTE]
 > SSO uses Windows Authentication so make sure the windows account can access the gateway machine. If not sure, make sure to add NT-AUTHORITY\Authenticated Users (S-1-5-11) to the local machine “Users” group.
 
 ## Troubleshoot using SAML for single sign-on to SAP HANA
-
 This section provides extensive steps to troubleshoot using SAML for single sign-on to SAP HANA. Using these steps can help you self-diagnose and correct any issues you might face.
 
 ### Rejected credentials
@@ -277,7 +276,7 @@ When you investigate the Mashup[date]*.log, you'll see the following error messa
 
 To resolve this SSL error, go to the data source connection and then, in the **Validate Server Certificate** dropdown list, select **No**, as shown in the following image:
 
-:::image type="content" source="media/service-gateway-sso-saml/sap-hana-kerberos-troubleshooting-02.png" alt-text="Screenshot showing the SSL error being resolved on the 'Data Source Settings' pane.":::
+:::image type="content" source="media/service-gateway-sso-saml/validate-server-certificate.png" alt-text="Screenshot showing the S S L error being resolved on the 'Data Source Settings' pane.":::
 
 After you've selected this setting, the error message will no longer appear.
 

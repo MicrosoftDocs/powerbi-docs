@@ -1,13 +1,13 @@
 ---
 title: Create date tables in Power BI Desktop
 description: Techniques and guidance for creating date tables in Power BI Desktop.
-author: peter-myers
-ms.author: kfollis
-ms.reviewer: asaxton
+author: davidiseminger  
+ms.author: davidi
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/24/2020
+ms.date: 07/02/2022
 ---
 
 # Create date tables in Power BI Desktop
@@ -22,7 +22,7 @@ To work with Data Analysis Expressions (DAX) [time intelligence functions](/dax/
 > - The date column must not contain BLANKs.
 > - The date column must not have any missing dates.
 > - The date column must span full years. A year isn't necessarily a calendar year (January-December).
-> - The date table must be [marked as a date table](../transform-model/desktop-date-tables.md#setting-your-own-date-table).
+> - The date table must be [marked as a date table](../transform-model/desktop-date-tables.md#set-your-own-date-table).
 
 You can use any of several techniques to add a date table to your model:
 
@@ -62,6 +62,9 @@ You can generate a date table in your model by creating a calculated table using
 
 - Use the **CALENDAR** function when you want to define a date range. You pass in two values: the start date and end date. These values can be defined by other DAX functions, like `MIN(Sales[OrderDate])` or `MAX(Sales[OrderDate])`.
 - Use the **CALENDARAUTO** function when you want the date range to automatically encompass all dates stored in the model. You can pass in a single optional parameter that's the end month of the year (if your year is a calendar year, which ends in December, you don't need to pass in a value). It's a helpful function, because it ensures that full years of dates are returned—it's a requirement for a marked date table. What's more, you don't need to manage extending the table to future years: When a data refresh completes, it triggers the recalculation of the table. A recalculation will automatically extend the table's date range when dates for a new year are loaded into the model.
+
+> [!TIP]
+> For more information about creating calculated tables, including an example of how to create a date table, work through the [Add calculated tables and columns to Power BI Desktop models](/training/modules/dax-power-bi-add-calculated-tables/) learning module.
 
 ## Clone with DAX
 

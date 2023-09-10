@@ -7,24 +7,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 07/01/2021
+ms.date: 07/14/2022
+ms.custom: "https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx"
 LocalizationGroup: Reports
 ---
 # Tutorial: From dimensional model to stunning report in Power BI Desktop 
 
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 In this tutorial, you start with a dimensional model and build a beautiful report from start to finish in 45 minutes.
 
-You work at AdventureWorks and your manager wants to see a report on your latest sales figures. They have requested an executive summary of: 
+You work at AdventureWorks and your manager wants to see a report on your latest sales figures. They've requested an executive summary of: 
 
 - Which day had the most sales in February 2019? 
-- Which country is the company seeing the most success in? 
+- Which country/region is the company seeing the most success in? 
 - Which product category and reseller business types should the company continue to invest in? 
 
-Using our [AdventureWorks Sales sample Excel workbook](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx), we can build this report in no time. Here’s what the final report will look like. 
+Using our [AdventureWorks Sales sample Excel workbook](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx), we can build this report in no time. Here’s what the final report will look like.
 
-:::image type="content" source="media/desktop-dimensional-model-report/adventureworks-finished-report.png" alt-text="Finished AdventureWorks report.":::
+:::image type="content" source="media/desktop-dimensional-model-report/adventureworks-finished-report.png" alt-text="Screenshot of Finished AdventureWorks report.":::
 
 Want to see the finished product? You can also download the [completed Power BI .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix).
+
+>[!NOTE]
+>If you'd rather work with data in SQL databases, the **[AdventureWorks sample databases](/sql/samples/adventureworks-install-configure)** article features links to downloadable AdventureWorks SQL sample databases in a GitHub repository. If you do go with a SQL database, you'll have to modify various steps in this tutorial.
 
 Let’s get started! 
 
@@ -56,11 +62,11 @@ In the Navigator pane, you have the option to *transform* or *load* the data. Th
 
 Select all tables, and choose **Transform Data**. Make sure not to select the sheets (labeled *_data*). 
 
-:::image type="content" source="media/desktop-dimensional-model-report/desktop-load-tables.png" alt-text="Load tables in Navigator.":::
+:::image type="content" source="media/desktop-dimensional-model-report/desktop-load-tables.png" alt-text="Screenshot of Load tables in Navigator.":::
 
-Check that the data types of the columns match those in the following table. To let Power BI detect data types for you, select a query, then select one or more columns. On the **Transform** tab, select **Detect Data Type**. To make any changes to the detected data type, on the **Home** tab, select **Data Type**, then select the appropriate data type from the list.
+Check that the data types of the columns match the data types in the following table. To let Power BI detect data types for you, select a query, then select one or more columns. On the **Transform** tab, select **Detect Data Type**. To make any changes to the detected data type, on the **Home** tab, select **Data Type**, then select the appropriate data type from the list.
 
-:::image type="content" source="media/desktop-dimensional-model-report/power-query-change-data-types.png" alt-text="Check the data types of the columns.":::
+:::image type="content" source="media/desktop-dimensional-model-report/power-query-change-data-types.png" alt-text="Screenshot of Check the data types of the columns.":::
 
 
 |Query  |Column  |Data type  |
@@ -93,7 +99,7 @@ Check that the data types of the columns match those in the following table. To 
 
 Back on the **Home** tab, select **Close & Apply**. 
 
-:::image type="content" source="media/desktop-dimensional-model-report/power-query-close-and-apply.png" alt-text="Power Query Close and Apply button.":::
+:::image type="content" source="media/desktop-dimensional-model-report/power-query-close-and-apply.png" alt-text="Screenshot of Power Query Close and Apply button.":::
 
 ## Model your data 
 
@@ -101,18 +107,18 @@ The data you loaded is almost ready for reporting. Let’s inspect the data mode
 
 Select **Model View** on the left. 
 
-:::image type="content" source="media/desktop-dimensional-model-report/desktop-select-model-view.png" alt-text="Select Model view in Power BI Desktop.":::
+:::image type="content" source="media/desktop-dimensional-model-report/desktop-select-model-view.png" alt-text="Screenshot of Select Model view in Power BI Desktop.":::
 
 Your data model should look like the following image, with each table in a box. 
 
-:::image type="content" source="media/desktop-dimensional-model-report/desktop-data-model-1.png" alt-text="The data model to start with.":::
+:::image type="content" source="media/desktop-dimensional-model-report/desktop-data-model-1.png" alt-text="Screenshot of The data model to start with.":::
 
 ### Create relationships
 
 This model is a typical *star schema* that you might see from data warehouses: It resembles a star. The center of the star is a Fact table. The surrounding tables are called Dimension tables, which are related to the Fact table with relationships. The Fact table contains numerical information about sales transactions, such as Sales Amount and Product Standard Cost. The Dimensions provide context so you can, among other things, analyze: 
 
 - What Product was sold... 
-- to which Customer.. 
+- to which Customer... 
 - by which Reseller... 
 - in which Sales Territory.  
 
@@ -120,14 +126,14 @@ If you look closely, you notice that all Dimension tables are related to the Fac
 
 The relationship is "one-to-many" because we have one or more Sales orders for a given Date. If each date had only one Sales order, the relationship would be "one-to-one". The little arrow in the middle of the line indicates the "cross-filtering direction." It indicates that you can use values from the Date table to filter the Sales table, so the relationship allows you to analyze when a Sales order was placed.  
 
-:::image type="content" source="media/desktop-dimensional-model-report/desktop-date-sales-relationship.png" alt-text="Relationship between the Sales and Date table.":::
+:::image type="content" source="media/desktop-dimensional-model-report/desktop-date-sales-relationship.png" alt-text="Screenshot of Relationship between the Sales and Date table.":::
 
 The Sales table contains more information about dates related to Sales orders, such as Due Date and Ship Date. Let’s add two more relationships to the Date table by dragging: 
 
 - DateKey to DueDateKey 
 - DateKey to ShipDateKey 
     
-:::image type="content" source="media/desktop-dimensional-model-report/desktop-date-sales-relationships-done.png" alt-text="Three relationships between Sales and Date tables.":::
+:::image type="content" source="media/desktop-dimensional-model-report/desktop-date-sales-relationships-done.png" alt-text="Screenshot of Three relationships between Sales and Date tables.":::
 
 You notice that the first relationship, on OrderDateKey, is active, shown by the continuous line. The other two are inactive, shown by the dashed lines. Power BI uses the active relationship by default to relate Sales and Date. Hence, a sum of SalesAmount is calculated by Order Date, not Due Date or Ship Date. You can influence this behavior. See [Extra credit: Write a measure in DAX](#extra-credit-write-a-measure-in-dax) later in this tutorial.
 
@@ -139,13 +145,13 @@ Go over all tables and hide any column whose name ends with *Key*:
 
 Select the **Eye** icon next to the column and choose **Hide in report view**.
 
-:::image type="content" source="media/desktop-dimensional-model-report/desktop-column-visible.png" alt-text="Visible column with Eye icon.":::
+:::image type="content" source="media/desktop-dimensional-model-report/desktop-column-visible.png" alt-text="Screenshot of Visible column with Eye icon.":::
 
 You can also select the **Eye** icon next to the column in the Properties pane.
 
 Hidden fields have this icon, an eye with a line through it. 
 
-:::image type="content" source="media/desktop-dimensional-model-report/desktop-column-hidden.png" alt-text="Field with the hidden Eye icon.":::
+:::image type="content" source="media/desktop-dimensional-model-report/desktop-column-hidden.png" alt-text="Screenshot of Field with the hidden Eye icon.":::
  
 Hide these fields.
 
@@ -169,7 +175,7 @@ Hide these fields.
 
 Your data model should now look like this data model, with relationships between Sales and all the other tables, and all the key fields hidden: 
 
-:::image type="content" source="media/desktop-dimensional-model-report/desktop-data-model-2-hidden-columns.png" alt-text="Data model with hidden key columns.":::
+:::image type="content" source="media/desktop-dimensional-model-report/desktop-data-model-2-hidden-columns.png" alt-text="Screenshot of Data model with hidden key columns.":::
 
 ### Create hierarchies
 
@@ -183,7 +189,7 @@ Create the following hierarchies.
 
 1. Then **Apply Level Changes**. 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/desktop-hierarchy-properties.png" alt-text="Hierarchy Properties pane.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/desktop-hierarchy-properties.png" alt-text="Screenshot of Hierarchy Properties pane.":::
 
 You can also rename levels in a hierarchy in the Properties pane after you add them. You'll need to rename the Year and Quarter level of the Fiscal hierarchy in the Date table. 
 
@@ -212,12 +218,12 @@ Here are the hierarchies you need to create.
 | SalesOrder  | Sales Orders | Sales Order |
 |     |         | Sales Order Line |
 | SalesTerritory    | Sales Territories | Group |
-|     |         | Country |
+|     |         | Country-Region |
 |     |         | Region |
  
 Your data model should now look like the following data model. It has the same tables, but each dimension table contains a hierarchy: 
 
-:::image type="content" source="media/desktop-dimensional-model-report/desktop-data-model-3-added-hierarchies.png" alt-text="Data model with dimension tables with hierarchies.":::
+:::image type="content" source="media/desktop-dimensional-model-report/desktop-data-model-3-added-hierarchies.png" alt-text="Screenshot of Data model with dimension tables with hierarchies.":::
 
 ### Rename tables
 
@@ -232,7 +238,7 @@ This step is necessary because Excel table names can't contain spaces.
 
 Now your final data model is ready.
 
-:::image type="content" source="media/desktop-dimensional-model-report/desktop-data-model-4-renamed-tables.png" alt-text="Completed data model with renamed tables.":::
+:::image type="content" source="media/desktop-dimensional-model-report/desktop-data-model-4-renamed-tables.png" alt-text="Screenshot of Completed data model with renamed tables.":::
 
 ## Extra credit: Write a measure in DAX 
 
@@ -240,11 +246,11 @@ Writing *measures* in the DAX formula language is super powerful for data modeli
 
 1. Select Data View on the left. 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/desktop-open-data-view.png" alt-text="Select Data view on the left.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/desktop-open-data-view.png" alt-text="Screenshot of Select Data view on the left.":::
 
 1. Select the Sales table in the Fields list.
 
-    :::image type="content" source="media/desktop-dimensional-model-report/desktop-select-sales-table.png" alt-text="Select the Sales table in the Fields list.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/desktop-select-sales-table.png" alt-text="Screenshot of Select the Sales table in the Fields list.":::
 
 1. On the **Home** ribbon, select **New Measure**. 
 
@@ -256,7 +262,7 @@ Writing *measures* in the DAX formula language is super powerful for data modeli
 
 1. Select the check mark to commit. 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/desktop-adding-a-dax-measure.png" alt-text="Select the check mark to commit the DAX measure.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/desktop-adding-a-dax-measure.png" alt-text="Screenshot of Select the check mark to commit the DAX measure.":::
 
 ## Build your report 
 
@@ -264,17 +270,17 @@ Now that you’ve modeled your data, it's time to create your report. Go to Repo
 
 Let’s build the final report, one visual at a time. 
 
-:::image type="content" source="media/desktop-dimensional-model-report/adventureworks-finished-report-with-numbers.png" alt-text="Finished report, with numbers marking each visual":::
+:::image type="content" source="media/desktop-dimensional-model-report/adventureworks-finished-report-with-numbers.png" alt-text="Screenshot of Finished report, with numbers marking each visual.":::
 
 ### Visual 1: Add a title 
 
-1. On the **Insert** ribbon, select **Text Box**. Type "Executive Summary – Sales Report". 
+1. On the **Insert** ribbon, select **Text Box**. Type *Executive Summary – Sales Report*. 
 
 1. Select the text you typed. Set the font size to **20** and **Bold**. 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/executive-summary-text-box.png" alt-text="Format the Executive Summary text.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/executive-summary-text-box.png" alt-text="Screenshot of Format the Executive Summary text.":::
 
-1. In the Visualizations pane, toggle the **Background** to **Off**. 
+1. In the **Format text box** pane, under **Effects**, toggle the **Background** to **Off**. 
 
 1. Resize the box to fit on one line. 
 
@@ -286,34 +292,34 @@ Next you create a line chart to see which month and year had the highest sales a
 
 1. Drag the **Month** field from the **Fiscal** hierarchy in the **Date** table and drop it on the column chart. 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-year.png" alt-text="Create a column chart with a column for each year.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-year.png" alt-text="Screenshot of Create a column chart with a column for each year.":::
 
-1. In the **Fields** section of the Visualizations pane, remove the **Year** and **Quarter** fields: 
+1. In the **Fields** section of the Visualizations pane, in the X-axis box, remove the **Fiscal Year** and **Fiscal Quarter** fields: 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-year-remove-year-and-quarter.png" alt-text="In the Fields section of the Visualizations pane, remove the Year and Quarter fields.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-year-remove-year-and-quarter.png" alt-text="Screenshot of In the Fields section of the Visualizations pane, remove the Year and Quarter fields.":::
 
 1. In the Visualizations pane, change the visualization type to **Area Chart**. 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-year-change-to-area.png" alt-text="Change the column chart to an area chart.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-year-change-to-area.png" alt-text="Screenshot of Change the column chart to an area chart.":::
 
-1. If you added the DAX measure in the extra credit above, add it to **Values** as well. 
-1. Open the Format pane, open Data colors and change the color of **Sales Amount by Due Date** to a more contrasting color, such as red.
+1. If you added the DAX measure in the extra credit above, add it to **Y-axis** as well. 
+1. Open the Format pane, expand the **Lines** section, and in **Colors**, change **Sales Amount by Due Date** to a more contrasting color, such as red.
 
-    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-year-add-DAX-measure.png" alt-text="Sales Amount by Due Date as area chart.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-year-add-DAX-measure.png" alt-text="Screenshot of Sales Amount by Due Date as area chart.":::
 
     As you can see, Sales Amount by Due Date trails slightly behind Sales Amount. This proves that it uses the relationship between the Sales and Date tables that uses DueDateKey. 
 
  
 
-### Visual 3: Order Quantity by Reseller Country 
+### Visual 3: Order Quantity by Reseller Country-Region 
 
-Now we'll create a map to see in which Country the Resellers have the highest Order Quantity Amount.
+Now we'll create a map to see in which Country or Region the Resellers have the highest Order Quantity Amount.
 
 1. From the Fields pane, drag the **Country-Region** field from the **Reseller** table to a blank area on your report canvas. Power BI creates a map. 
 
-1. Drag the **Order Quantity** field from the **Sales** table and drop it on the map. Make sure **Country-Region** is in the **Location** well and **Order Quantity** in the **Size** well. 
+1. Drag the **Order Quantity** field from the **Sales** table and drop it on the map. Make sure **Country-Region** is in the **Location** well and **Order Quantity** in the **Bubble size** well. 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-order-quantity-by-reseller-country.png" alt-text="Map of order quantity by country/region.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-order-quantity-by-reseller-country-region.png" alt-text="Screenshot of Map of order quantity by country/region.":::
 
 ### Visual 4: Sales Amount by Product Category and Reseller Business type 
 
@@ -324,29 +330,28 @@ Next we create a column chart to investigate which products are sold by what typ
 1. Select a blank area in the lower half of your report canvas. 
 
 1. In the Fields pane, select **Sales Amount** from **Sales**, **Product Category** from **Product**, and **Business Type** from **Reseller**.
-    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-field-well.png" alt-text="Check that Category and Business Type are on Rows and Sales Amount is selected as Values.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-field-well.png" alt-text="Screenshot of Check that Category and Business Type are on Rows and Sales Amount is selected as Values.":::
     
     Power BI automatically creates a clustered column chart. Change the visualization to a **Matrix**: 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-change-to-matrix.png" alt-text="Change the clustered column chart to a matrix.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-change-to-matrix.png" alt-text="Screenshot of Change the clustered column chart to a matrix.":::
 
+1. Drag the **Business Type** field from **Columns**, and put it under **Category** in **Rows**.
 1. With the matrix still selected, in the Filters pane, under **Business Type**, **Select all**, then clear the **[Not Applicable]** box. 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-filter-not-applicable.png" alt-text="Filter out Not Applicable business type.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-filter-not-applicable.png" alt-text="Screenshot of Filter out Not Applicable business type.":::
 
 1. Drag the matrix so it's wide enough to fill the space under the two upper charts. 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-increase-width.png" alt-text="Widen the matrix to fill the report.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-increase-width.png" alt-text="Screenshot of Widen the matrix to fill the report.":::
 
-1. In the Formatting pane for the matrix, open the **Conditional formatting** section and turn on **Data bars**. Select **Advanced controls** and set a lighter color for the positive bar. Select **OK**. 
+1. In the Formatting pane for the matrix, search for *conditional*. In the **Cell elements** section, turn on **Data bars**. Select the **fx** option, and set a lighter color for the positive bar. Select **OK**. 
 
-1. Increase the width of the Sales Amount column so it covers the whole area by dragging the matrix.
+1. Increase the width of the Sales Amount column so it fills the whole area by dragging the matrix.
 
-    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-add-databars.png" alt-text="Matrix with data bars for Sales Amount.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-add-databars.png" alt-text="Screenshot of Matrix with data bars for Sales Amount.":::
 
 It looks like Bikes have a higher Sales Amount overall and the Value Added Resellers sell the most, closely followed by Warehouses. For Components, the Warehouses sell more than the Value Added Resellers. 
-
- 
 
 ### Visual 5: Fiscal calendar slicer 
 
@@ -356,11 +361,11 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 
 1. In the Visualizations pane, choose **Slicer**. 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-add-fiscal-calendar-slicer.png" alt-text="Add a report sales calendar slicer.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-add-fiscal-calendar-slicer.png" alt-text="Screenshot of Add a report sales calendar slicer.":::
 
 1. In the Fields section of the Visualizations pane, remove **Quarter** and **Date** so only **Year** and **Month** are left. 
  
-    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-add-fiscal-calendar-slicer-remove-quarter-and-date.png" alt-text="Remove Quarter and Date from the Fiscal slicer.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-add-fiscal-calendar-slicer-remove-quarter-and-date.png" alt-text="Screenshot of Remove Quarter and Date from the Fiscal slicer.":::
 
 Now if your manager asks to see data only for a specific month, you can use the slicer to switch between years or specific months in each year. 
 
@@ -372,66 +377,76 @@ If you want to do some light formatting on this report to add more polish, here 
 
 - On the **View** ribbon, select **Themes**, and change the theme to **Executive**. 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/formatting-report-change-theme.png" alt-text="Choose the Executive theme.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/formatting-report-change-theme.png" alt-text="Screenshot of Choose the Executive theme.":::
 
 ### Spruce up the visuals 
 
-Make the following changes on the **Format** tab in the Visualizations pane. 
+Make the following changes on the **Format** tab in the Visualizations pane.
 
 :::image type="content" source="media/desktop-dimensional-model-report/formatting-report-formatting-pane.png" alt-text="Screenshot of the Format tab in the Visualizations pane.":::
+
+> [!TIP]
+> A quick way to find the setting you want to change is by typing in the **Search** box in the Format pane.
 
 **Visual 2, Sales Amount by Date**
 
 1. Select Visual 2, Sales Amount by Date. 
-1. In the **Title** section, if you didn't add the DAX measure, change **Title** text to "Sales Amount by Order Date". 
+1. In the **Title** section, if you didn't add the DAX measure, change **Text** to "Sales Amount by Order Date". 
 
-    If you did add the DAX measure, change **Title text** to "Sales Amount by Order Date / Due Date". 
+    If you did add the DAX measure, change **Text** to "Sales Amount by Order Date / Due Date". 
+
+    Make sure you get the **Title** section for the visual itself, because the axes and the legend can also have titles.
+
+    :::image type="content" source="media/desktop-dimensional-model-report/visual-2-title.png" alt-text="Screenshot of Title section of the Format pane.":::
 
 1. Set **Text** size to **16 pt**. 
-1. Toggle **Shadow** to **On**. 
+1. On the **General** tab, toggle **Shadow** to **On**. 
 
-**Visual 3, Order Quantity by Reseller Country**
+**Visual 3, Order Quantity by Reseller Country-Region**
 
-1. Select Visual 3, Order Quantity by Reseller Country. 
-1. In the **Map styles** section, change **Theme** to **Grayscale**. 
-1. In the **Title** section, change **Title text** to "Order Quantity by Reseller Country".
+1. Select Visual 3, Order Quantity by Reseller Country-Region. 
+1. In the **Map setting** section, change **Style** to **Grayscale**. 
+1. On the **General** tab, in the **Title** section, change **Text** to "Order Quantity by Reseller Country-Region".
 1. Set **Text size** to **16 pt**. 
-1. Toggle **Shadow** to **On**.  
+1. Also on the **General** tab, toggle **Shadow** to **On**.
 
 **Visual 4, Sales Amount by Product Category and Reseller Business Type**
 
 1. Select Visual 4, Sales Amount by Product Category and Reseller Business Type. 
-1. In the **Title** section, change **Title text** to "Sales Amount by Product Category and Reseller Business Type".
+1. On the **General** tab, in the **Title** section, change **Text** to "Sales Amount by Product Category and Reseller Business Type".
 1. Set **Text size** to **16 pt**. 
-1. Toggle **Shadow** to **On**. 
+1. Also on the **General** tab, toggle **Shadow** to **On**.
 
 **Visual 5, Fiscal calendar slicer**
 
 1. Select Visual 5, Fiscal calendar slicer.
-1. In the **Selection controls** section, toggle **Show "Select all"** option to **On**. 
+1. In the **Slicer settings** section, under **Selection**, toggle **Show "Select all"** option to **On**. 
 1. In the **Slicer header** section, set **Text size** to **16 pt**. 
 
 ### Add a background shape for the title 
 
 1. On the **Insert** ribbon, select **Shapes** > **Rectangle**. 
 1. Place it at the top of the page, and stretch it to be the width of the page and height of the title. 
-1. In the **Format shape** pane, in the **Line** section, change **Transparency** to **100%**. 
+1. In the **Style** pane, in the **Border** section, change **Transparency** to **100%**. 
 1. In the **Fill** section, change **Fill color** to **Theme color 5 #6B91C9 (blue)**. 
-1. On the **Format** tab, select **Send backward** > **Send to back**. 
+1. On the **Format** ribbon, select **Send backward** > **Send to back**. 
+
+    :::image type="content" source="media/desktop-dimensional-model-report/format-ribbon-send-back.png" alt-text="Screenshot of the Format ribbon, Send to back menu option.":::
+
 1. Select the text in Visual 1, the title, and change **Font color** to **White**. 
 
 ## Finished report 
 
 Select **FY2019** in the slicer.
 
-:::image type="content" source="media/desktop-dimensional-model-report/adventureworks-finished-report.png" alt-text="Your final completed report.":::
+:::image type="content" source="media/desktop-dimensional-model-report/adventureworks-finished-report.png" alt-text="Screenshot of Your final completed report.":::
 
 In summary, this report answers your manager’s top questions: 
 
 - Which day had the most sales in February 2019? 
     February 25, with a sales amount of $253,915.47. 
 
-- Which country is the company seeing the most success in? 
+- Which country/region is the company seeing the most success in? 
     In the United States, with an order quantity of 132,748. 
 
 - Which product category and reseller business types should the company continue to invest in? 
@@ -458,6 +473,6 @@ To share your report with your manager and colleagues, publish it to the Power B
 ## Next steps 
 
 - Download the [completed Power BI .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix)
-- Learn more about [DAX and data modeling in Power BI Desktop](/learn/modules/dax-power-bi-models/)
+- Learn more about [DAX and data modeling in Power BI Desktop](/training/modules/dax-power-bi-models/)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

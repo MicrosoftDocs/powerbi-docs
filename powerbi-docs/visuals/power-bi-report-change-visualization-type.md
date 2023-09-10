@@ -7,7 +7,8 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/28/2019
+ms.date: 07/01/2022
+ms.custom: salesandmarketingsample
 LocalizationGroup: Visualizations
 ---
 # Change the type of visualization in a Power BI report
@@ -18,12 +19,16 @@ LocalizationGroup: Visualizations
 
 Try different types of visualizations in the Power BI service and Power BI Desktop to see which one illustrates your data best. 
 
-1. Open a report that already has at least one visualization.   
-2. Select a visualization to make it active. An active visualization has handles and a border.    
-3. In the Visualizations pane, select the new visualization type. 
-   
-   ![video showing changing column chart to line chart](media/power-bi-report-change-visualization-type/change-viz/change-viz.gif).
-4. (Optional) [Pin your visualization](../create-reports/service-dashboard-pin-tile-from-report.md) to your dashboard as a tile. 
+1. Open a report that already has at least one visualization.
+1. Select a visualization to make it active. An active visualization has handles and a border.
+
+   ![Screenshot shows a column chart selected, next to the Visualizations.](media/power-bi-report-change-visualization-type/change-vizualization-before.png).
+
+1. In the Visualizations pane, select the new visualization type.
+
+   ![Screenshot shows the chart changed to a line chart.](media/power-bi-report-change-visualization-type/change-vizualization-after.png).
+
+1. (Optional) [Pin your visualization](../create-reports/service-dashboard-create.md) to your dashboard as a tile. 
 
 ## Considerations and troubleshooting
 If you change the visualization type in the report after you pinned it to your dashboard, the dashboard tile does not automatically update. So, if you used the Power BI service to pin the visualization as a line chart and then, in the report, changed it to a bar chart, the already-pinned version of this data will remain a line chart. Pin the bar chart to see it too on the dashboard.

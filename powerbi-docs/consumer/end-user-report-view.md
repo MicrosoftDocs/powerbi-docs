@@ -1,74 +1,70 @@
 ---
 title: Change the display size and ratio of a report page
-description: 'Change the display settings for a page in a Power BI report'
+description: Learn how to change the display settings for a page in a Power BI report by using the View menu or browser settings.
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/12/2021
+ms.date: 02/13/2023
 LocalizationGroup: Reports
 ---
 
 # Change the display of a report page
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyny.md)]
 
+You can view reports on many devices with varying screen sizes and aspect ratios. Learn how to change the display of a report page, so it fits your needs.
 
-People view reports on many different devices with varying screen sizes and aspect ratios. Change the way a report page displays to fit your needs.
-
-![Screenshot of how a report displays on the canvas.](media/end-user-report-view/power-bi-canvas.png)
+:::image type="content" source="media/end-user-report-view/power-bi-canvas.png" alt-text="A screenshot showing a report on the canvas." lightbox="media/end-user-report-view/power-bi-canvas.png#lightbox":::
 
 ## Explore the View menu
 
-![Screenshot of the View drop-down options.](media/end-user-report-view/power-bi-menu-view.png)
+The options in the **View** menu give you flexibility to display report pages at the size and width you choose.
 
+:::image type="content" source="media/end-user-report-view/power-bi-menu-view.png" alt-text="A screenshot of the View menu options on the action bar.":::
 
-The options in the **View** menu give you flexibility to display report pages at the size and width you choose:
+If you view a report on a small device, it might be hard to see titles and legends. Select **View** > **Actual size** to increase the size of the report page. Use the scroll bars to move around the report.
 
-- Let's say you're viewing a report on a small device and it's hard to see titles and legends.  Select **View** > **Actual size** to increase the size of the report page. Use the scroll bars to move around the report.
+:::image type="content" source="media/end-user-report-view/power-bi-view-actual.png" alt-text="A screenshot of a report set to Actual size with two scroll bars.":::
 
-    ![Screenshot of a report set to Actual size with two scroll bars called out.](media/end-user-report-view/power-bi-view-actual.png)
+Fit the report to your screen width by selecting **Fit to width** from the **View** menu. Because it adjusts the width and not the height, you might need to use the vertical scroll bar.
 
-- Another option is to fit the report to your screen width by selecting **Fit to width**. Since it's just the width and not the height, you may still need to use the vertical scroll bar.
+:::image type="content" source="media/end-user-report-view/power-bi-view-width.png" alt-text="A screenshot of a report set to Fit to width with a vertical scroll bar.":::
 
-  ![Screenshot of a report set to Fit to width with the vertical scroll bar called out.](media/end-user-report-view/power-bi-view-width.png)
+If you don't want any scroll bars, but you want to make the best use of your screen size, select **Fit to Page** from the **View** menu.
 
-- If you don't want any scroll bars, but want to make the best use of your screen size, select **Fit to Page**.
+:::image type="content" source="media/end-user-report-view/power-bi-view-fit.png" alt-text="A screenshot of a report set to Fit to page.":::
 
-   ![Screenshot of a report set to Fit to page.](media/end-user-report-view/power-bi-view-fit.png)
+Change your display colors by selecting **High contrast colors** in the **View** menu. Select one of the options, such as High-contrast #1, High-contrast #2, High-contrast black, or High-contrast white. This feature gives people with impaired vision options to see the reports better. The example below is the High-contrast #1 option.
 
-- You can also choose from four **High contrast colors**: High contrast #1, High contrast #2, High contrast black, and High contrast white. It's an accessibility feature that you can use so people who may have impaired vision can see the reports better. The example below is high contrast 1. 
+:::image type="content" source="media/end-user-report-view/power-bi-contrast1.png" alt-text="A screenshot of a report set to High contrast number 1.":::
 
-    ![Screenshot of a report set to High contrast #1.](media/end-user-report-view/power-bi-contrast1.png)
+Select **Full screen** in the **View** menu to display your report page without menu bars and headers. Full screen is a good choice for small screens where the details might be hard to see. Full screen can also be a good choice when projecting report pages on a large screen for people to view but not interact with.  
 
-- The final option, **Full screen**, displays your report page without menu bars and headers. Full screen may be a good choice for small screens where the details are hard to see.  Full screen may also be a good choice when projecting report pages on large screens for people to view but not interact.  
+:::image type="content" source="media/end-user-report-view/power-bi-full-screen.png" alt-text="A screenshot of a report in full screen mode.":::
 
-    ![report displays full screen](media/end-user-report-view/power-bi-full-screen.png)
-
-When you exit the report, your **View** settings aren't saved, but revert to the default. If it's important to you to save these settings, use [bookmarks](end-user-bookmarks.md).
+When you exit the report, your **View** settings aren't saved. The changes revert to the default view settings. If you want to save these settings, you can preserve them as a [bookmark](end-user-bookmarks.md).
 
 ## Use your browser to change page display
 
-The zoom controls in your browser increase and decrease the available canvas area. Decreasing the zoom causes the available canvas area to expand, and vice versa. 
+Use the zoom controls in your browser to increase or decrease the available canvas area. Decreasing the zoom expands the available canvas area, and increasing the zoom decreases the available canvas area.
 
-![browser zoom controls](media/end-user-report-view/power-bi-zoom.png)
-
-Resizing your entire browser is another way to change the display size of your report. 
-
-![short video showing browser resizing](media/end-user-report-view/power-bi-resize-browser.gif)
+:::image type="content" source="media/end-user-report-view/power-bi-zoom.png" alt-text="A screenshot showing the browser zoom controls.":::
 
 ## Zoom in on a visual
-Sometimes it's difficult to see the details in a visual. You can make that visual display bigger, and by itself. For more information, see [Focus mode and Full screen mode](end-user-focus.md)
 
-### A visual in *Focus* mode
+Sometimes it's difficult to see the details in a visual. You can focus on one visual by itself to make it bigger by using Focus mode. For more information, see [Focus mode and Full screen mode](end-user-focus.md).
 
-![Screenshot of a visual open in focus mode.](media/end-user-report-view/power-bi-focus.png)
+The following example shows a visual in Focus mode.
 
-### A visual in *Full screen* mode
-![Screenshot of a visual open in full screen mode.](media/end-user-report-view/power-bi-visual-full-screen.png)
+:::image type="content" source="media/end-user-report-view/power-bi-focus.png" alt-text="A screenshot of a visual open in focus mode.":::
+
+The next example shows a visual in Full screen mode.
+
+:::image type="content" source="media/end-user-report-view/power-bi-visual-full-screen.png" alt-text="A screenshot of a visual open in full screen mode.":::
 
 ## Next steps
-
-* [Take a tour of the report Filters pane](end-user-report-filter.md)
+- [Compare focus mode and full screen mode](end-user-focus.md)
+- [Take a tour of the report Filters pane](end-user-report-filter.md) 

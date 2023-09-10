@@ -1,13 +1,13 @@
 ---
 title: Optimization guide for Power BI
-description: Optimization guide for Power BI.
-author: peter-myers
-ms.author: kfollis
-ms.reviewer: asaxton
+description: This article provides guidance that enables developers and administrators to produce and maintain optimized Power BI solutions. You can optimize your solution at different architectural layers.
+author: davidiseminger
+ms.author: davidi
+ms.reviewer: nisrinivasan
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 12/15/2022
 ---
 
 # Optimization guide for Power BI
@@ -21,7 +21,7 @@ This article provides guidance that enables developers and administrators to pro
 
 ## Optimizing the data model
 
-The data model supports the entire visualization experience. Data models are either external-hosted or internal-hosted, and in Power BI they are referred to as _datasets_. It's important to understand your options, and to choose the appropriate dataset type for your solution. There are three dataset modes: Import, DirectQuery, and Composite. For more information, see [Datasets in the Power BI service](../connect-data/service-datasets-understand.md), and  [Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md).
+The data model supports the entire visualization experience. Data models are either hosted in the Power BI ecosystem or externally (using DirectQuery or Live Connection), and in Power BI they are referred to as *datasets*. It's important to understand your options, and to choose the appropriate dataset type for your solution. There are three dataset modes: Import, DirectQuery, and Composite. For more information, see [Datasets in the Power BI service](../connect-data/service-datasets-understand.md), and  [Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md).
 
 For specific dataset mode guidance, see:
 
@@ -31,13 +31,13 @@ For specific dataset mode guidance, see:
 
 ## Optimizing visualizations
 
-Power BI visualizations can be dashboards, Power BI reports, or Power BI paginated reports. Each has different architectures, and so each has their own guidance. 
+Power BI visualizations can be dashboards, Power BI reports, or Power BI paginated reports. Each has different architectures, and so each has their own guidance.
 
 ### Dashboards
 
-It's important to understand that Power BI maintains a cache for your dashboard tiles—except live report tiles, and streaming tiles. For more information, see [Data refresh in Power BI (Tile refresh)](../connect-data/refresh-data.md#tile-refresh). If your dataset enforces dynamic [row-level security (RLS)](../admin/service-admin-rls.md), be sure to understand performance implications as tiles will cache on a per-user basis.
+It's important to understand that Power BI maintains a cache for your dashboard tiles—except live report tiles, and streaming tiles. If your dataset enforces dynamic [row-level security (RLS)](../enterprise/service-admin-rls.md), be sure to understand performance implications as tiles will cache on a per-user basis.
 
-When you pin live report tiles to a dashboard, they're not served from the query cache. Instead, they behave like reports, and make queries to back-end cores on the fly.
+When you pin live report tiles to a dashboard, they're not served from the query cache. Instead, they behave like reports, and make queries to v-cores on the fly.
 
 As the name suggests, retrieving the data from the cache provides better and more consistent performance than relying on the data source. One way to take advantage of this functionality is to have dashboards be the first landing page for your users. Pin often-used and highly requested visuals to the dashboards. In this way, dashboards become a valuable "first line of defense", which delivers consistent performance with less load on the capacity. Users can still click through to a report to analyze details.
 
@@ -70,7 +70,7 @@ Be sure to put each custom visual through its paces to ensure high performance. 
 
 Power BI paginated report designs can be optimized by applying best practice design to the report's data retrieval. For more information, see [Data retrieval guidance for paginated reports](report-paginated-data-retrieval.md).
 
-Also, ensure your capacity has sufficient memory allocated to the [paginated reports workload](../admin/service-admin-premium-workloads.md#paginated-reports).
+Also, ensure your capacity has sufficient memory allocated to the [paginated reports workload](../enterprise/service-admin-premium-workloads.md#paginated-reports).
 
 ## Optimizing the environment
 
@@ -78,8 +78,7 @@ You can optimize the Power BI environment by configuring capacity settings, sizi
 
 ### Capacity settings
 
-When using capacities—available with Power BI Premium (P SKUs), Premum Per User (PPU) licenses, or
-Power BI Embedded (A SKUs, A4-A6)—you can manage capacity settings. For more information, see [Managing Premium capacities](../admin/service-premium-capacity-manage.md). For guidance on how to optimize your capacity, see [Optimizing Premium capacities](../admin/service-premium-capacity-optimize.md).
+When using capacities—available with Power BI Premium (P SKUs), Premium Per User (PPU) licenses, or Power BI Embedded (A SKUs, A4-A6)—you can manage capacity settings. For more information, see [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md).
 
 ### Gateway sizing
 
@@ -96,7 +95,7 @@ Network latency can impact report performance by increasing the time required fo
 
 When users from a tenant access the Power BI service, their requests always route to this region. As requests reach the Power BI service, the service may then send additional requests—for example, to the underlying data source, or a data gateway—which are also subject to network latency.
 
-Tools such as [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI cluster as close as possible. Preferably, they reside within the same region. If network latency is an issue, try locating gateways and data sources closer to your Power BI cluster by placing them inside cloud-hosted virtual machines.
+Tools such as [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI capacity as close as possible. Preferably, they reside within the same region. If network latency is an issue, try locating gateways and data sources closer to your Power BI capacity by placing them inside cloud-hosted virtual machines.
 
 ## Monitoring performance
 
@@ -108,10 +107,6 @@ For more information about this article, check out the following resources:
 
 - [Power BI guidance](index.yml)
 - [Monitoring report performance](monitor-report-performance.md)
-- Whitepaper: [Planning a Power BI Enterprise Deployment](https://go.microsoft.com/fwlink/?linkid=2057861)
+- [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
-
-
-
-
