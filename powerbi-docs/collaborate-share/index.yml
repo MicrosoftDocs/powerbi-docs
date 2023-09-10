@@ -27,9 +27,9 @@ landingContent:
         links:
           - text: Ways to share your work
             url: service-how-to-collaborate-distribute-dashboards-reports.md
-      - linkListType: how-to-guide
+      - linkListType: concept
         links:
-          - text: "The new workspaces"
+          - text: "Workspaces"
             url: service-new-workspaces.md
 
   # Card (optional)
@@ -75,6 +75,8 @@ landingContent:
             url: service-analyze-in-excel.md
       - linkListType: how-to-guide
         links:
+          - text: "Add a live report page to PowerPoint"
+            url: service-power-bi-powerpoint-add-in-about.md
           - text: "Embed in SharePoint Online"
             url: service-embed-report-spo.md
 

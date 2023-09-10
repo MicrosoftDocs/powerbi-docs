@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 07/02/2021
+ms.date: 06/15/2022
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 In this tutorial, you build a beautiful report from start to finish in 20 minutes! 
 
@@ -19,7 +21,7 @@ In this tutorial, you build a beautiful report from start to finish in 20 minute
 Your manager wants to see a report on your latest sales figures. They've requested an executive summary of: 
 
 - Which month and year had the most profit? 
-- Where is the company seeing the most success (by country)? 
+- Where is the company seeing the most success (by country/region)? 
 - Which product and segment should the company continue to invest in? 
 
 Using our sample finance workbook, we can build this report in no time. Here’s what the final report will look like. Let’s get started! 
@@ -153,7 +155,7 @@ Let’s build the final report, one visual at a time.
 ### Visual 1: Add a title 
 
 1. On the **Insert** ribbon, select **Text Box**. Type “Executive Summary – Finance Report”. 
-1. Select the text you typed. Set the font size to 20 and bold. 
+1. Select the text you typed. Set the **Font Size** to 20 and **Bold**. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-title-executive-summary.png" alt-text="Screenshot of formatting title.":::
 
@@ -170,7 +172,7 @@ Now, you create a line chart to see which month and year had the highest profit.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Screenshot of Profit column chart.":::
 
-1. In the **Fields** section of the Visualizations pane, select the drop-down in the **Axis** value. Change **Date** from **Date Hierarchy** to **Date**.
+1. In the **Fields** section of the Visualizations pane, select the drop-down in the **X-axis** value. Change **Date** from **Date Hierarchy** to **Date**.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy.png" alt-text="Screenshot of changing Date hierarchy to Date.":::
 
@@ -184,9 +186,9 @@ Now, you create a line chart to see which month and year had the highest profit.
 
     Now you can easily see that December 2014 had the most profit.
 
-### Visual 3: Profit by Country 
+### Visual 3: Profit by Country/Region 
 
-Create a map to see which country had the highest profits.
+Create a map to see which country/region had the highest profits.
 
 1. From the Fields pane, drag the **Country** field to a blank area on your report canvas to create a map.
 1. Drag the **Profit** field to the map.
@@ -210,7 +212,7 @@ Create a bar chart to determine which companies and segments to invest in.
 
 1. Drag the chart so it's wide enough to fill the space under the two upper charts.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-clustered-column-chart.png" alt-text="Screenshot of a clustered column chart.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-clustered-column-chart-inline.png" alt-text="Screenshot of a clustered column chart." lightbox="media/desktop-excel-stunning-report/power-bi-clustered-column-chart-expanded.png":::
 
     Looks like the company should continue to invest in the Paseo product and target the Small Business and Government segments.  
 
@@ -242,7 +244,7 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-hierarchy-date-slicer.png" alt-text="Screenshot of date hierarchy slicer.":::
 
-    This is the slicer we'll use in the finished report.
+    We'll use this slicer in the finished report.
 
 Now if your manager asks to see just 2013 data, you can use either slicer to select years, or specific months of each year.
 
@@ -300,7 +302,7 @@ In summary, this report answers your manager’s top questions:
 
     December 2014 
 
-- Which country is the company seeing the most success in? 
+- Which country/region is the company seeing the most success in? 
 
     In Europe, specifically France and Germany. 
 

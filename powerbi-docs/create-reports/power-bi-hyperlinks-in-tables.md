@@ -8,11 +8,14 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/02/2021
+ms.date: 08/03/2022
 LocalizationGroup: Visualizations
 ---
 # Add hyperlinks (URLs) to a table or matrix
-This topic teaches how to add hyperlinks (URLs) to a table. You use Power BI Desktop to add hyperlinks (URLs) to a dataset. You can add those hyperlinks to your report tables and matrixes in either Power BI Desktop or the Power BI service. Then you can display the URL or a link icon, or format another column as link text.
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
+This topic teaches how to add hyperlinks (URLs) to a table. You use Power BI Desktop to add hyperlinks (URLs) to a dataset. You can add those hyperlinks to your report tables and matrixes in either Power BI Desktop or the Power BI service. Then you can display the URL or a link icon, or format another column as link text. When report readers select a link, it opens in another browser page.
 
 ![Table with hyperlinks](media/power-bi-hyperlinks-in-tables/power-bi-url-link-text.png)
 
@@ -51,16 +54,16 @@ If you don't want to display a long URL in a table, you can display a hyperlink 
 
 > [!NOTE]
 > You can't display icons in a matrix.
-   
+
 1. First, [create a table with a hyperlink](#create-a-table-or-matrix-with-a-hyperlink).
 
 2. Select the table to make it active.
 
-    Select the **Format** icon ![Paint roller icon](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) to open the Formatting tab.
+    Select the **Format** icon to open the Formatting tab.
 
-    Expand **Values**, locate **URL icon**, and turn it to **On**.
+    Under **Visual** > **URL icon**, for **Values**, select **On**.
 
-    ![Turn on URL icon](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
+    ![Screenshot shows the U R L icon value set to On.](media/power-bi-hyperlinks-in-tables/power-bi-desktop-url-icon-on.png)
 
 1. (Optional) [Publish the report](desktop-upload-desktop-files.md) from Power BI Desktop to the Power BI service. When you open the report in the Power BI service, the hyperlinks work there, too.
 
@@ -71,32 +74,42 @@ You can also format another field in a table as the hyperlink, and not have a co
 > [!NOTE]
 > You can't format another field as the hyperlink in a matrix.
 
+### Create a column with a hyperlink
+
 1. If a field with a hyperlink doesn't already exist in your dataset, use Power BI Desktop to add it as a [custom column](../transform-model/desktop-common-query-tasks.md). Again, you can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
 
-2. In Data view, select the column that contains the URL. 
+1. In Data view, select the column that contains the URL. 
 
-3. On the **Column tools** tab, select **Data Category**. Make sure the column is formatted as **Uncategorized**.
+1. On the **Column tools** tab, select **Data Category**. Make sure the column is formatted as **Uncategorized**.
 
-2. In Report view, create a table or matrix with the URL column and the column you're going to format as link text.
+### Format the link text
 
-3. With the table selected, select the **Format** icon ![Paint roller icon](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) to open the Formatting tab.
+# [Power BI Desktop](#tab/powerbi-desktop)
 
-4. Expand **Conditional formatting**, making sure the name in the box is the column you want as link text. Locate **Web URL**, and turn it to **On**.
+1. In Report view, create a table or matrix with the URL column and the column you're going to format as link text.
 
-    ![Conditional formatting Web URL](media/power-bi-hyperlinks-in-tables/power-bi-format-conditional-web-url.png)
+# [Power BI service](#tab/powerbi-service)
+
+1. In your report in the Power BI service, select **Edit**. Create a table or matrix with the URL column and the column you're going to format as link text.
+
+---
+
+2. With the table selected, select the **Format** icon to open the Formatting tab.
+
+1. Under **Visual**, expand **Cell elements**. For **Apply settings to**, make sure the name in the box is the column you want as link text. Locate **Web URL**, and set it to **On**.
+
+    ![Screenshot shows the Web U R L setting with a value of On.](media/power-bi-hyperlinks-in-tables/power-bi-desktop-format-conditional-web-url.png)
 
     > [!NOTE]
-    > If you don't see a **Web URL** option, make sure the column that contains the hyperlinks is *not* formatted as **Web URL** in the **Data Category** dropdown box. Also, make sure that you're using Desktop version February 2020 or later.
+    > If you don't see a **Web URL** option, in Power BI Desktop make sure the column that contains the hyperlinks is *not* formatted as **Web URL** in the **Data Category** dropdown box.
 
-5. In the **Web URL** dialog box, select the field that contains the URL in the **Based on field** box > **OK**.
+1. In the **Web URL** dialog box, select the field that contains the URL in the **Based on field** box > **OK**.
 
     ![Web URL dialog box](media/power-bi-hyperlinks-in-tables/power-bi-format-web-url-dialog.png)
 
     Now the text in that column is formatted as the link.
 
     ![Text formatted as hyperlink](media/power-bi-hyperlinks-in-tables/power-bi-url-link-text.png)
-
-1. (Optional) [Publish the report](desktop-upload-desktop-files.md) from Power BI Desktop to the Power BI service. When you open the report in the Power BI service, the hyperlinks work there, too.
 
 ## Create a table or matrix hyperlink in Excel Power Pivot
 
@@ -124,7 +137,7 @@ Another way to add hyperlinks to your Power BI tables and matrixes is to create 
 
 ## Considerations and troubleshooting
 
-URLS must start with one of the following:
+URLs must start with one of the following:
 - http
 - https
 - mailto

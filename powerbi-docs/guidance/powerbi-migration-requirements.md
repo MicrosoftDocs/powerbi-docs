@@ -1,13 +1,13 @@
 ---
 title: Gather requirements to migrate to Power BI
 description: Guidance on gathering and prioritizing requirements when migrating to Power BI.
-author: peter-myers
-ms.author: kfollis
-ms.reviewer: asaxton
+author: davidiseminger
+ms.author: davidi
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 02/27/2022
 ---
 
 # Gather requirements to migrate to Power BI
@@ -25,13 +25,15 @@ The output from Stage 1 includes detailed requirements that have been prioritize
 
 > [!IMPORTANT]
 > Stages 1-5 represent activities related to one specific solution. There are decisions and activities at the organizational/tenant level which impact the process at the solution level. Some of those higher-level planning activities are discussed in the [Power BI migration overview](powerbi-migration-overview.md) article. When appropriate, defer to the organizational-level decisions for efficiency and consistency.
+>
+> The [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md) describes these types of strategic and tactical considerations. It has an emphasis on [organizational adoption](powerbi-adoption-roadmap-maturity-levels.md#organizational-adoption-maturity-levels).
 
 > [!TIP]
 > Most of the topics discussed in this article also apply to a standard Power BI implementation project.
 
 ## Compile requirements
 
-The inventory of existing BI artifacts, compiled in the [pre-migration steps](powerbi-migration-pre-migration-steps.md), become the input for the requirements of the new solution to be created in Power BI. Collecting requirements is about understanding the current state, as well as what items users would like changed or refactored when reports are redesigned in Power BI. Detailed requirements will useful for solution deployment planning in [Stage 2](powerbi-migration-planning.md), during creation of a proof of concept in [Stage 3](powerbi-migration-proof-of-concept.md), and when creating the production-ready solution in [Stage 4](powerbi-migration-create-validate-content.md).
+The inventory of existing BI items, compiled in the [pre-migration steps](powerbi-migration-pre-migration-steps.md), become the input for the requirements of the new solution to be created in Power BI. Collecting requirements is about understanding the current state, as well as what items users would like changed or refactored when reports are redesigned in Power BI. Detailed requirements will useful for solution deployment planning in [Stage 2](powerbi-migration-planning.md), during creation of a proof of concept in [Stage 3](powerbi-migration-proof-of-concept.md), and when creating the production-ready solution in [Stage 4](powerbi-migration-create-validate-content.md).
 
 ### Gather report requirements
 
@@ -39,19 +41,19 @@ Compile thorough, easy-to-reference, information about reports, such as:
 
 - **Purpose, audience, and expected action:** Identify the purpose and business process applicable to each report, as well as the audience, analytical workflow, and expected action to be taken by report consumers.
 - **How consumers use the report:** Consider sitting with report consumers of the existing report to understand exactly what they do with it. You may learn that certain elements of the report can be eliminated or improved in the new Power BI version. This process involves additional time investment but it's valuable for critical reports or reports that are used often.
-- **Owner and subject matter expert:** Identify the report owner and any subject matter expert(s) associated with the report or data domain. They may become the owners of the new Power BI report going forward. Include any specific change management requirements (which typically differ between IT-managed and business-managed solutions) as well as approvals and sign-offs, which will be required when changes are made in the future.
+- **Owner and subject matter expert:** Identify the report owner and any subject matter expert(s) associated with the report or data domain. They may become the owners of the new Power BI report going forward. Include any specific change management requirements (which typically differ between IT-managed and business-managed solutions) as well as approvals and sign-offs, which will be required when changes are made in the future. For more information, see [this article](powerbi-adoption-roadmap-content-ownership-and-management.md).
 - **Content delivery method:** Clarify report consumer expectations for content delivery. It may be on-demand, interactive execution, embedded within a custom application, or delivery on a schedule using an e-mail subscription. There may also be requirements to trigger alert notifications.
-- **Interactivity needs:** Determine _must-have_ and _nice-to-have_ interactivity requirements, such as filters, drill-down actions, or drillthrough actions.
+- **Interactivity needs:** Determine *must-have* and *nice-to-have* interactivity requirements, such as filters, drill-down actions, or drillthrough actions.
 - **Data sources:** Ensure all data sources required by the report are discovered, and data latency needs (data freshness) are understood. Identify historical data, trending, and data snapshot requirements for each report so they can be aligned with the data requirements. Data source documentation can also be useful later on when performing data validation of a new report with its source data.
 - **Security requirements:** Clarify security requirements (such as allowed viewers, allowed editors, and any row-level security needs), including any exceptions to normal organizational security. Document any data sensitivity level, data privacy, or regulatory/compliance needs.
 - **Calculations, KPIs, and business rules:** Identify and document all calculations, KPIs, and business rules that are currently defined within the existing report so they can be aligned with the data requirements.
 - **Usability, layout, and cosmetic requirements:** Identify specific usability, layout, and cosmetic needs related to data visualizations, grouping and sorting requirements, and conditional visibility. Include any specific considerations related to mobile device delivery.
-- **Printing and exporting needs:** Determine whether there are any requirements specific to printing, exporting, or pixel-perfect layout. These needs will influence which type of report will be most suitable (such as a Power BI, Excel, or paginated report). Be aware that report consumers tend to place a lot of importance on how they've always done things, so don't be afraid to challenge their way of thinking. Be sure to talk in terms of _enhancements_ rather than _change_.
+- **Printing and exporting needs:** Determine whether there are any requirements specific to printing, exporting, or pixel-perfect layout. These needs will influence which type of report will be most suitable (such as a Power BI, Excel, or paginated report). Be aware that report consumers tend to place a lot of importance on how they've always done things, so don't be afraid to challenge their way of thinking. Be sure to talk in terms of *enhancements* rather than *change*.
 - **Risks or concerns:** Determine whether there are other technical or functional requirements for reports, as well as any risks or concerns regarding the information being presented in them.
 - **Open issues and backlog items:** Identify any future maintenance, known issues, or deferred requests to add to the backlog at this time.
 
 > [!TIP]
-> Consider ranking requirements by classifying them as _must have_ or _nice to have_. Frequently consumers ask for everything they may possibly need up-front because they believe it may be their only chance to make requests. Also, when addressing priorities in multiple iterations, make the backlog available to stakeholders. It helps with communication, decision-making, and the tracking of pending commitments.
+> Consider ranking requirements by classifying them as *must have* or *nice to have*. Frequently consumers ask for everything they may possibly need up-front because they believe it may be their only chance to make requests. Also, when addressing priorities in multiple iterations, make the backlog available to stakeholders. It helps with communication, decision-making, and the tracking of pending commitments.
 
 ### Gather data requirements
 
@@ -62,10 +64,10 @@ Compile detailed information pertaining to data, such as:
 - **Data structure and cleansing needs:** Determine the data structure for each requisite data source, and to what extent [data cleansing](../transform-model/desktop-query-overview.md) activities are necessary.
 - **Data integration:** Assess how data integration will be handled when there are multiple data sources, and how [relationships](../transform-model/desktop-create-and-manage-relationships.md) can be defined between each model table. Identify specific data elements needed to simplify the model and [reduce its size](import-modeling-data-reduction.md).
 - **Acceptable data latency:** Determine the data latency needs for each data source. It will influence decisions about which [data storage mode](../transform-model/desktop-storage-mode.md) to use. Data refresh frequency for Import model tables is important to know too.
-- **Data volume and scalability:** Evaluate data volume expectations, which will factor into decisions about [large model support](../admin/service-premium-large-models.md) and designing DirectQuery or [Composite models](../transform-model/desktop-composite-models.md). Considerations related to historical data needs are essential to know too. For larger datasets, determining [incremental data refresh](../connect-data/incremental-refresh-overview.md) will also be necessary.
+- **Data volume and scalability:** Evaluate data volume expectations, which will factor into decisions about [large model support](../enterprise/service-premium-large-models.md) and designing DirectQuery or [Composite models](../transform-model/desktop-composite-models.md). Considerations related to historical data needs are essential to know too. For larger datasets, determining [incremental data refresh](../connect-data/incremental-refresh-overview.md) will also be necessary.
 - **Measures, KPIs, and business rules:** Assess needs for measures, KPIs, and business rules. They will impact decisions regarding where to apply the logic: in the dataset or the data integration process.
 - **Master data and data catalog:** Consider whether there are master data issues requiring attention. Determine if integration with an enterprise data catalog is appropriate for enhancing discoverability, accessing definitions, or producing consistent terminology accepted by the organization.
-- **Security and data privacy:** Determine whether there are any specific security or data privacy considerations for datasets, including [row-level security](../admin/service-admin-rls.md) requirements.
+- **Security and data privacy:** Determine whether there are any specific security or data privacy considerations for datasets, including [row-level security](../enterprise/service-admin-rls.md) requirements.
 - **Open issues and backlog items:** Add any known issues, known data quality defects, future maintenance, or deferred requests to the backlog at this time.
 
 > [!IMPORTANT]
@@ -84,7 +86,7 @@ In most situations, some modifications and improvements occur. It's rare that a 
 
 ## Prioritize and assess complexity
 
-At this point, the initial inventory is available and may include specific requirements. When prioritizing the initial set of BI artifacts ready for migration, reports and data should be considered collectively as well as independently of each other.
+At this point, the initial inventory is available and may include specific requirements. When prioritizing the initial set of BI items ready for migration, reports and data should be considered collectively as well as independently of each other.
 
 Identify high priority reports, which may include reports that:
 

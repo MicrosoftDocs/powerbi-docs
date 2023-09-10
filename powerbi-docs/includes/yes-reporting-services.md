@@ -10,4 +10,4 @@
  ms.custom: include file
 ---
 
-✔️&nbsp;SQL&nbsp;Server&nbsp;Reporting&nbsp;Services&nbsp;paginated&nbsp;reports
+:::image type="icon" source="media/yes-icon.svg" border="false":::&nbsp;SQL&nbsp;Server&nbsp;Reporting&nbsp;Services&nbsp;paginated&nbsp;reports

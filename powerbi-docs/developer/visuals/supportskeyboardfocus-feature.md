@@ -1,57 +1,59 @@
 ---
 title: Keyboard navigation feature in Power BI
-description: This article describes how to enable using the keyboard to navigate visuals in Power BI.
+description: Learn how to enable the accessibility feature that uses the keyboard to navigate through visuals in Power BI.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 07/20/2023
 ---
 
-# Enable keyboard navigation of a visual
+# Support keyboard navigation in a custom visual
 
-This article describes how to enable the user to navigate through a Power BI visual using the keyboard. This feature helps makes Power BI more accessible to people with disabilities and allows everyone more choice when interacting with reports.
+This article explains how to support navigation through a Power BI visual using the keyboard. Keyboard navigation makes Power BI more accessible to people with disabilities and provides more options for interacting with reports.
 
-The `supportsKeyboardFocus` feature makes it possible to navigate the data points of the visual using the keyboard only.
+The `supportsKeyboardFocus` feature makes it possible to navigate the data points of the visual by using only the keyboard.
 
-## How to navigate using the keyboard
+## Basic keyboard accessibility features
 
-For a brief illustration of how keyboard navigation works:
+All visuals come with the following basic keyboard accessibility:
 
-1. Open any visual that has the `supportsKeyboardFocus` feature enables. (Try a visual from the [Retail Analysis sample](../../create-reports/sample-retail-analysis.md#get-the-sample), for example.)
-2. Select any data point within the visual and press the **Tab** key.
-    The focus moves to the next data point each time you hit **Tab**.
-3. Press **Enter** to select the highlighted data point.
+* Press <kbd>Esc</kbd> to move the focus from inside the visual to the visual container.
+* Press <kbd>Tab</kbd> from inside a custom visual to navigate through tabbable elements in the visual. Pressing <kbd>Tab</kbd> after the last tababble element moves the focus back outside of the visual.
 
-> [!div class="mx-imgBorder"]
-> ![Supports keyboard focus example](./media/supportskeyboardfocus-feature/supports-keyboard-focus-example.png)
+## Enhanced keyboard accessibility
 
-To learn more about keyboard navigation for visuals, see [Keyboard Navigation](../../create-reports/desktop-accessibility-consuming-tools.md#keyboard-navigation).
-
-## Enable the support keyboard navigation feature
-
-To enable the `supportsKeyboardFocus` feature, add the following code to the *capabilities.json* file of your visual.
-This capability allows the visual to receive focus through keyboard navigation.
+To make your custom visual even more accessible, add the `supportsKeyboardFocus` capability to your visual by adding the following line to the "capabilities.json" file:
 
 ```json
     {   
-            ...
+        ...
         "supportsKeyboardFocus": true
-            ...
+        ...
     }
 ```
+
+This capability adds the following features to your custom visual:
+
+* Press <kbd>Enter</kbd> when the focus is on the visual container to move the focus to inside the custom visual.
+* Press <kbd>Tab</kbd> from inside the custom visual to navigate through tabbable elements. The focus stays inside the visual until you press <kbd>Esc</kbd>.
+
+> [!NOTE]
+> Not all HTML elements are tabbable by default (for example, div and span). Consider adding the correct attribute (e.g tabindex) to these elements to make them tabbable.
 
 ## Considerations and limitations
 
 * This feature requires API v2.1.0 or higher.
+
 * This feature can't be applied to image visuals.
+
+* Pressing <kbd>Enter</kbd> on the visual container won't always land on the first focusable element of the visual. To be sure to start at the first element, focus it programmatically after the focus goes into the visual.
+
+* After pressing <kbd>Enter</kbd> on the visual container and after pressing <kbd>Tab</kbd> on the last focusable element, the user might have to press <kbd>Tab</kbd> more than once to get to the first element.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Design Power BI reports for accessibility](../../create-reports/desktop-accessibility-creating-reports.md)
-
-> [!div class="nextstepaction"]
-> [Developing a Power BI circle card visual](develop-circle-card.md)
+* [Design Power BI reports for accessibility](../../create-reports/desktop-accessibility-creating-reports.md)
+* [Developing a Power BI circle card visual](develop-circle-card.md)

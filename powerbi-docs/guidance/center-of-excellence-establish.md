@@ -1,25 +1,28 @@
 ---
-title: Establish a Center of Excellence
+title: How Microsoft established a Center of Excellence
 description: Learn how a Center of Excellence helped Microsoft create a standardized analytics and data platform to unlock insights with the right operating model, stakeholder engagement, and shared and dedicated investments.
-author: peter-myers
-ms.author: kfollis
-ms.reviewer: asaxton
+author: davidiseminger
+ms.author: davidi
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/19/2020
+ms.date: 03/11/2022
 ---
-# Establish a Center of Excellence
+# How Microsoft established a Center of Excellence
+
+> [!TIP]
+> This article focuses on Microsoft's experience establishing a [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md). When setting up your own Center of Excellence, we recommend that you also review the information covered in the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md).
 
 This article targets IT professionals and IT managers. You'll learn how to set up a BI and analytics Center of Excellence (COE) in your organization, and how Microsoft has set up theirs.
 
 For some, there's a misconception that a COE is just a help desk—this thinking, however, is far from reality.
 
-Generally, a BI and analytics COE is a team of professionals that's responsible for establishing and maintaining a BI platform. It's also responsible for creating a single source of truth, and defining a set of consistent company-wide metrics to unlock and accelerate insights. Yet, a COE is a broad term. As such, it can be implemented and managed in different ways, and its structure and scope can vary from organization to organization. At its core, it's always about a robust platform delivering the right data and insight capabilities to the right people at the right time. Ideally, it also promotes evangelizing, training, and support. At Microsoft, it's described as _[discipline at the core](center-of-excellence-microsoft-business-intelligence-transformation.md#discipline-at-the-core)_, and it's delivered as our BI platform and single source of truth.
+Generally, a BI and analytics COE is a team of professionals that's responsible for establishing and maintaining a BI platform. It's also responsible for creating a single source of truth, and defining a set of consistent company-wide metrics to unlock and accelerate insights. Yet, a COE is a broad term. As such, it can be implemented and managed in different ways, and its structure and scope can vary from organization to organization. At its core, it's always about a robust platform delivering the right data and insight capabilities to the right people at the right time. Ideally, it also promotes evangelizing, training, and support. At Microsoft, it's described as *[discipline at the core](center-of-excellence-microsoft-business-intelligence-transformation.md#discipline-at-the-core)*, and it's delivered as our BI platform and single source of truth.
 
-In larger organizations, you could find multiple COEs with the core COE _extended_ by satellite COEs—often at department level. This way, a satellite COE is a group of experts familiar with taxonomies and definitions, who know how to transform core data into what makes sense _for their department_. Departmental analysts are granted permissions to core data, and they trust it for use in their own reports. They build solutions that rely upon carefully prepared core dimensions, facts, and business logic. At times, they might also extend it with smaller, department-specific datasets and business logic. Importantly, satellite COEs aren't ever disconnected nor do they act in isolation. At Microsoft, satellite COEs promote _[flexibility at the edge](center-of-excellence-microsoft-business-intelligence-transformation.md#flexibility-at-the-edge)_.
+In larger organizations, you could find multiple COEs with the core COE *extended* by satellite COEs—often at department level. This way, a satellite COE is a group of experts familiar with taxonomies and definitions, who know how to transform core data into what makes sense *for their department*. Departmental analysts are granted permissions to core data, and they trust it for use in their own reports. They build solutions that rely upon carefully prepared core dimensions, facts, and business logic. At times, they might also extend it with smaller, department-specific datasets and business logic. Importantly, satellite COEs aren't ever disconnected nor do they act in isolation. At Microsoft, satellite COEs promote *[flexibility at the edge](center-of-excellence-microsoft-business-intelligence-transformation.md#flexibility-at-the-edge)*.
 
-For this extended scenario to succeed, departments must _pay to play_. In other words, departments must financially invest in the core COE. This way, there isn't concern that they're "not getting their fair share" or that their requirements are ever de-prioritized.
+For this extended scenario to succeed, departments must *pay to play*. In other words, departments must financially invest in the core COE. This way, there isn't concern that they're "not getting their fair share" or that their requirements are ever de-prioritized.
 
 To support this scenario, the core COE must scale to meet funded departmental needs. Once several datasets have been onboarded economies of scale set in. At Microsoft, it quickly became evident that working centrally is more economic and brings about faster results. When each new subject area was onboarded, we experienced even greater economies of scale that allowed for leveraging and contributing across the entire platform, reinforcing our underlying data culture.
 
@@ -76,6 +79,7 @@ Establish and grow a community within your organization by:
 For more information about this article, check out the following resources:
 
 - [BI solution architecture in the COE](center-of-excellence-business-intelligence-solution-architecture.md)
+- [Power BI adoption roadmap: Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
 

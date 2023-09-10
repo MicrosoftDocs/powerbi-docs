@@ -1,231 +1,136 @@
-﻿- name: "Power BI admin and enterprise"
+- name: Power BI administration
   href: index.yml
-  expanded: true
+  expanded: false
   items:
-  - name: Overview
-    expanded: true
-    items: 
-    - name: "What is Power BI administration?"
-      href: service-admin-administering-power-bi-in-your-organization.md
-    - name: "What is Power BI Premium Gen2?"
-      href: service-premium-gen2-what-is.md
-  - name: Concepts
-    expanded: true
+  - name: General info for admins
+    expanded: false
     items:
-    - name: "Administration role in Microsoft 365"
-      href: service-admin-role.md
-    - name: "Licensing for your organization"
-      href: service-admin-licensing-organization.md
-    - name: "Power BI for US Government"
-      items:
-      - name: "Power BI for US Government"
-        href: service-govus-overview.md
-      - name: "Enroll a US Government organization"
-        href: service-govus-signup.md
-    - name: "Frequently asked questions (FAQ)"
-      href: service-admin-faq.yml
-    - name: "High availability and failover FAQ"
-      href: service-admin-failover.yml
-    - name: Power BI Premium Gen2
-      items:
-      - name: What is Power BI Premium Gen2?
-        href: service-premium-gen2-what-is.md
-      - name: Plan your transition to Power BI Premium Gen2
-        href: service-premium-transition-gen1-to-gen2.md
-      - name: Premium Gen2 architecture
-        href: service-premium-architecture.md
-      - name: Premium Gen2 capacity load evaluation
-        href: service-premium-concepts.md      
-      - name: Managing capacities
-        items:            
-        - name: Managing Premium Gen2 capacities
-          href: service-premium-capacity-manage-gen2.md  
-        - name: Using autoscale with Premium Gen2
-          href: service-premium-auto-scale.md
-        - name: Install the Gen2 metrics app
-          href: service-premium-install-gen2-app.md                
-        - name: Using the Premium Gen2 metrics app
-          href: service-premium-gen2-metrics-app.md
-      - name: Power BI Premium Gen2 FAQ
-        href: service-premium-gen2-faq.yml
-      - name: Power BI Premium Per User
-        href: service-premium-per-user-faq.yml
-      - name: Power BI Premium (original version)
-        items:
-        - name: What is Power BI Premium?
-          href: service-premium-what-is.md
-        - name: Monitoring Power BI capacities
-          href: service-premium-capacity-manage.md
-        - name: Optimizing Premium capacities
-          href: service-premium-capacity-optimize.md
-        - name: Premium capacity scenarios
-          href: service-premium-capacity-scenarios.md
-        - name: Power BI Premium FAQ
-          href: service-premium-faq.yml
-        - name: Backup and restore Power BI Premium datasets (preview)
-          href: service-premium-backup-restore-dataset.md
-        - name: Using service tags with Power BI
-          href: service-premium-service-tags.md      
-    - name: Information protection
-      items:
-      - name: Default label policy (preview)
-        href: service-security-sensitivity-label-default-label-policy.md
-      - name: Mandatory label policy (preview)
-        href: service-security-sensitivity-label-mandatory-label-policy.md
-      - name: Sensitivity label downstream inheritance (preview)
-        href: service-security-sensitivity-label-downstream-inheritance.md
-      - name: Sensitivity label inheritance from data sources (preview)
-        href: service-security-sensitivity-label-inheritance-from-data-sources.md
-      - name: Sensitivity label change enforcement
-        href: service-security-sensitivity-label-change-enforcement.md
-      - name: Custom help link for sensitivity labels
-        href: service-security-sensitivity-label-custom-help-link.md
-      - name: Audit schema for sensitivity labels
-        href: service-security-sensitivity-label-audit-schema.md
-      - name: Sensitivity label support for paginated reports (preview)
-        href: service-security-sensitivity-label-paginated-reports.md
-    - name: Metadata scanning
-      items:
-      - name: "Run metadata scanning"
-        href: service-admin-metadata-scanning.md
-      - name: "Set up metadata scanning in your org (admin)"
-        href: service-admin-metadata-scanning-setup.md
-  - name: How to
-    items: 
-    - name: "Licensing and sign-up"
-      items:
-      - name: "Get Power BI for your organization"
-        href: service-admin-org-subscription.md
-      - name: "Purchase Power BI Pro"
-        href: service-admin-purchasing-power-bi-pro.md
-      - name: "Disable self-service sign-up"
-        href: service-admin-disable-self-service.md
-      - name: "View and manage user licenses"
-        href: service-admin-manage-licenses.md
-      - name: "Sign up with a Microsoft 365 Trial"
-        href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-      - name: "Add Power BI with a Microsoft 365 partner"
-        href: service-admin-syndication-partner.md
-    - name: "Power BI and datacenter regions"
-      items:
-      - name: "Find where data is stored"
-        href: service-admin-where-is-my-tenant-located.md
-      - name: "Move between regions"
-        href: service-admin-region-move.md
-    - name: "Using the admin portal"
-      href: service-admin-portal.md
-    - name: "Add custom branding"
-      href: service-admin-custom-branding.md
-    - name: "Use private links for Power BI"
-      href: service-security-private-links.md      
-    - name: "Manage Power BI visuals admin settings"
-      href: organizational-visuals.md
-    - name: "Find users that have signed in"
-      href: service-admin-access-usage.md
-    - name: "Track user activities"
-      href: service-admin-auditing.md
-    - name: "Track service health"
-      href: service-admin-health.md
-    - name: "Enable service principal authentication for read-only admin APIs"
-      href: read-only-apis-service-principal-authentication.md
-    - name: "Closing your account"
-      href: service-admin-closing-your-account.md
-    - name: "Using Azure AD B2B"
-      href: service-admin-azure-ad-b2b.md
-    - name: "Manage Power BI Desktop sign-in form"
-      href: desktop-admin-sign-in-form.md
-    - name: "Data protection"
-      items:
-      - name: "Data protection in Power BI"
-        href: service-security-data-protection-overview.md
-      - name: "Sensitivity label overview"
-        href: service-security-sensitivity-label-overview.md
-      - name: "Enable sensitivity labeling"
-        href: service-security-enable-data-sensitivity-labels.md
-      - name: "How to apply sensitivity labels"
-        href: service-security-apply-data-sensitivity-labels.md
-      - name: "Set or remove sensitivity labels programmatically"
-        href: service-security-sensitivity-label-inheritance-set-remove-api.md
-      - name: "Use Microsoft Cloud App Security with Power BI"
-        href: service-security-using-microsoft-cloud-app-security-controls.md
-      - name: "Protection metrics report"
-        href: service-security-data-protection-metrics-report.md
-    - name: "Row-level security"
-      href: service-admin-rls.md
-    - name: Enable content certification
-      href: service-admin-setup-certification.md
-    - name: Configure mobile apps with Intune
-      href: service-admin-mobile-intune.md
-    - name: Power BI Premium (original version)
-      items:
-      - name: Purchase Power BI Premium
-        href: service-admin-premium-purchase.md
-      - name: Configure and manage capacities
-        href: service-admin-premium-manage.md
-      - name: Configure workloads
-        href: service-admin-premium-workloads.md
-      - name: Purchase Power BI Premium for testing
-        href: service-admin-premium-testing.md        
-      - name: Monitor capacities with the app
-        href: service-admin-premium-monitor-capacity.md
-      - name: Monitor Premium workload metrics
-        href: service-premium-metrics-app.md      
-      - name: Monitor capacities in the Admin portal
-        href: service-admin-premium-monitor-portal.md
-      - name: Configure large datasets
-        href: service-premium-large-models.md
-      - name: Configure Multi-Geo
-        href: service-admin-premium-multi-geo.md
-      - name: Bring your own encryption keys
-        href: service-encryption-byok.md
-      - name: Use customer managed keys
-        href: service-encryption-customer-managed-keys.md        
-      - name: Restart a Premium capacity
-        href: service-admin-premium-restart.md
-      - name: Dataset connectivity with the XMLA endpoint
-        href: service-premium-connect-tools.md
-      - name: Automation with service principals
-        href: service-premium-service-principal.md
-      - name: Troubleshoot XMLA endpoint connectivity
-        href: troubleshoot-xmla-endpoint.md
-    - name: Automatic aggregations
-      items:     
-      - name: Automatic aggregations overview
-        href: aggregations-auto.md
-      - name: Configure automatic aggregations
-        href: aggregations-auto-configure.md        
-  - name: Reference
-    items: 
-    - name: "PowerShell, REST APIs, and .NET SDK"
-      href: service-admin-reference.md
-    - name: "Power BI cmdlets for PowerShell"
-      href: /powershell/power-bi/
-      maintainContext: true
+    - name: What is Power BI administration?
+      href: service-admin-administering-power-bi-in-your-organization.md
+    - name: Administration role in Microsoft 365
+      href: service-admin-role.md      
+    - name: How to use the same account login for Power BI and Azure
+      href: service-admin-how-to-use-the-same-account-as-azure.md 
+    - name: Frequently asked questions (FAQ)
+      href: service-admin-faq.yml                       
+  - name: System administration
+    expanded: false
+    items:
+    - name: Manage Power BI Desktop sign-in form
+      href: desktop-admin-sign-in-form.md   
+    - name: Manage Power BI visuals admin settings
+      href: organizational-visuals.md           
     - name: Service URL reference
-      href: power-bi-allow-list-urls.md
-  - name: Resources
-    items: 
-    - name: "Power BI governance and deployment approaches"
-      href: service-admin-governance.md
-    - name: "Power BI security"
-      href: service-admin-power-bi-security.md      
-    - name: "Privacy levels"
-      href: desktop-privacy-levels.md
-    - name: "Power BI site reliability engineering model"
-      href: service-admin-site-reliability-engineering-model.md      
-  - name: Troubleshoot
-    items: 
-    - name: "Can't sign in?"
-      href: power-bi-cannot-sign-in.md
-    - name: "Power BI support options"
-      href: service-support-options.md
-    - name: "Service interruption notifications"
-      href: service-interruption-notifications.md
-    - name: "Forgot your password for Power BI?"
-      href: service-admin-forgot-your-password.md
-    - name: "Capture diagnostic information from the Power BI service"
-      href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
-    - name: "Alternate email address for Power BI"
-      href: service-admin-alternate-email-address-for-power-bi.md
-    - name: "How to use the same account login for Power BI and Azure"
-      href: service-admin-how-to-use-the-same-account-as-azure.md
+      href: power-bi-allow-list-urls.md     
+    - name: Share metadata with Microsoft 365 services
+      href: admin-share-power-bi-metadata-microsoft-365-services.md
+    - name: Find where data is stored
+      href: service-admin-where-is-my-tenant-located.md  
+    - name: Configure Multi-Geo support for Power BI Premium
+      href: service-admin-premium-multi-geo.md           
+    - name: Move between regions
+      href: /power-bi/support/service-admin-region-move
+    - name: Track service health
+      href: /power-bi/support/service-admin-health
+    - name: Find users that have signed in
+      href: service-admin-access-usage.md
+    - name: Track user activities
+      href: service-admin-auditing.md
+  - name: Monitor and manage Power BI
+    expanded: false
+    items:
+    - name: About the Admin portal
+      href: service-admin-portal.md      
+    - name: Configure Azure connections
+      href: service-admin-portal-azure-connections.md
+    - name: Customize Power BI branding
+      href: service-admin-custom-branding.md
+    - name: Manage capacity settings
+      href: service-admin-portal-capacity-settings.md
+    - name: Manage embed codes
+      href: service-admin-portal-embed-codes.md
+    - name: Manage featured content
+      href: service-admin-portal-featured-content.md
+    - name: Manage organizational visuals
+      href: service-admin-portal-organizational-visuals.md
+    - name: Manage Premium Per User
+      href: service-admin-portal-premium-per-user.md
+    - name: Manage users
+      href: service-admin-portal-users.md
+    - name: Manage workspaces
+      href: service-admin-portal-workspaces.md
+    - name: View audit logs
+      href: service-admin-portal-audit-logs.md
+    - name: View information protection metrics
+      href: service-admin-portal-protection-metrics.md
+    - name: View refresh summary
+      href: service-admin-portal-refresh-summary.md
+    - name: View usage metrics
+      href: service-admin-portal-usage-metrics.md
+  - name: Tenant settings
+    expanded: false
+    items:
+    - name: About tenant settings
+      href: service-admin-portal-about-tenant-settings.md
+    - name: Tenant settings list
+      expanded: false
+      items:
+      - name: Help and support settings
+        href: /fabric/admin/service-admin-portal-help-support
+      - name: Workspace settings
+        href: /fabric/admin/portal-workspace
+      - name: Information protection
+        href: /fabric/admin/service-admin-portal-information-protection
+      - name: Export and sharing settings
+        href: /fabric/admin/service-admin-portal-export-sharing
+      - name: Discovery settings
+        href: /fabric/admin/service-admin-portal-discovery
+      - name: Content pack and app settings
+        href: /fabric/admin/service-admin-portal-content-pack-app
+      - name: Integration settings
+        href: /fabric/admin/service-admin-portal-integration
+      - name: Power BI visuals
+        href: /fabric/admin/service-admin-portal-power-bi-visuals
+      - name: R and Python visuals settings
+        href: /fabric/admin/service-admin-portal-r-python-visuals
+      - name: Audit and usage settings
+        href: /fabric/admin/service-admin-portal-audit-usage
+      - name: Dashboard settings
+        href: /fabric/admin/service-admin-portal-dashboard
+      - name: Developer settings
+        href: /fabric/admin/service-admin-portal-developer
+      - name: Admin API settings
+        href: /fabric/admin/service-admin-portal-admin-api-settings
+      - name: Dataflow settings
+        href: /fabric/admin/service-admin-portal-dataflow
+      - name: Template app settings
+        href: /fabric/admin/service-admin-portal-template-app
+      - name: Q&A settings
+        href: /fabric/admin/service-admin-portal-qa
+      - name: Dataset Security
+        href: /fabric/admin/service-admin-portal-dataset-security
+      - name: Advanced networking
+        href: /fabric/admin/service-admin-portal-advanced-networking
+      - name: Metrics settings
+        href: /fabric/admin/service-admin-portal-goals-settings
+      - name: User experience experiments
+        href: /fabric/admin/service-admin-portal-user-experience-experiments
+      - name: Share data with your Microsoft 365 services
+        href: /fabric/admin/admin-share-power-bi-metadata-microsoft-365-services
+      - name: Insights settings
+        href: /fabric/admin/service-admin-portal-insights
+      - name: Datamart settings
+        href: /fabric/admin/service-admin-portal-datamart
+      - name: Data model settings
+        href: /fabric/admin/service-admin-portal-data-model
+      - name: Quick measure suggestions settings
+        href: /fabric/admin/service-admin-portal-quick-measure-suggestions-settings
+      - name: Scale-out settings
+        href: /fabric/admin/service-admin-portal-scale-out
+      - name: Git integration settings
+        href: /fabric/admin/git-integration-admin-settings
+  - name: Capacity settings
+    expanded: false
+    items:
+    - name: Notifications
+      href: service-admin-premium-capacity-notifications.md

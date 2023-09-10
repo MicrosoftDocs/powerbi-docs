@@ -1,9 +1,9 @@
 ---
 title: "Previewing reports in Power BI Report Builder"
-description: While you create a Report Builder paginated report, it's helpful to preview the report often to verify that the report displays what you want.
+description: While you're creating a Report Builder paginated report, it's helpful to preview the report often to verify that the report displays what you want.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 06/06/2019
+ms.date: 07/14/2022
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -11,15 +11,22 @@ ms.assetid: ba6b5bdd-d8c6-4aa8-ba32-3a10b11969d4
 ---
 # Previewing reports in Power BI Report Builder
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
-While you create a Report Builder paginated report, it's helpful to preview the report often to verify that the report displays what you want. To preview your report, click **Run**. The report renders in preview mode.  
-  
- Report Builder improves the preview experience by using edit sessions when connected to a report server. The edit session creates a data cache and makes the datasets in the cache available for repeated report previews. An edit session is not a feature that you interact with directly, but understanding when the cached dataset is refreshed will help you improve performance when you preview a report and understand why the report renders faster or slower.  
+While you're creating a Report Builder paginated report, it's helpful to preview the report often to verify that the report displays what you want. 
 
-  
+To preview your report, select **Run**. 
+
+:::image type="content" source="media/report-builder-previewing/paginated-run-button-preview.png" alt-text="Screenshot showing the Run button in Report Builder.":::
+
+The report renders in preview mode.
+
+:::image type="content" source="media/report-builder-previewing/paginated-report-preview.png" alt-text="Screenshot showing preview of paginated report in Report Builder.":::
+
+Report Builder improves the preview experience by using _edit sessions_. The edit session creates a data cache and makes the datasets in the cache available for repeated report previews. An edit session isn't a feature that you interact with directly. But understanding when the cached dataset is refreshed helps you improve performance when you preview a report, and understand why the report renders faster or slower.  
+
 > [!NOTE]  
-> There are some differences between previewing in Report Builder and viewing in a browser. For example, a calendar control, which is added to a report when you specify a Date/Time type parameter, is different in Report Builder and in a browser. 
+> There are some differences between previewing in Report Builder and viewing in a browser. For example, a calendar control, which is added to a report when you specify a Date/Time type parameter, is different in Report Builder and in a browser.
   
 ## Improving preview performance  
  How you create and update reports affects how fast the report renders in preview. The first time that you preview a report that relies on a server reference, an edit session is created for you and the data used when the report is run is added to a data cache that is stored. When you make changes to the report that does not affect the data, the cached copy of the data is used by the report. This means that you will not see data change each time you preview the report. If you want new data, click the **Refresh** button on the ribbon.  
@@ -69,5 +76,5 @@ Frequently, you preview a report as a step in updating and then saving a report 
   
 ## Next steps
 
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
   

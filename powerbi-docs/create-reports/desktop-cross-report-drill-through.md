@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/11/2021
+ms.date: 08/18/2022
 LocalizationGroup: Create reports
 ---
 # Use cross-report drillthrough in Power BI
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 With the Power BI *cross-report drillthrough* feature, you can contextually jump from one report to another report in the same Power BI service workspace or app. You can use cross-report drillthrough to connect two or more reports that have related content, and to pass filter context along with the cross-report connection. 
 
@@ -35,19 +37,24 @@ For example, if you want to pass a filter on a field **State** within a table **
 
 After you validate your models, enable the source report to use cross-report drillthrough. 
 
-1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**. 
+# [Power BI Desktop](#tab/powerbi-desktop)
+ 
+1. Go to **File** > **Options and settings** > **Options**. 
 1. In the **Options** window left navigation, at the bottom of the **Current file** section, select **Report settings**. 
 1. At bottom right, under **Cross-report drillthrough**, select **Allow visuals in this report to use drillthrough targets from other reports**. 
 1. Select **OK**. 
    
    ![Enable cross-report drillthrough in Power B I Desktop](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
 
-You can also enable cross-report drillthrough from the Power BI service.
-1. In Power BI service, select the workspace that contains your target and source reports.
+# [Power BI service](#tab/powerbi-service)
+
+1. Select the workspace that contains your target and source reports.
 1. Next to the source report name in the workspace list, select the **More options** symbol, and then select **Settings**. 
 1. Near the bottom of the **Settings** pane, under **Cross-report drillthrough**, select **Allow visuals in this report to use drill-through targets from other reports**, and then select **Save**.
    
    ![Enable cross-report drillthrough in the Power B I service](media/desktop-cross-report-drill-through/cross-report-drill-through-02a.png)
+
+---
 
 ## Set up a cross-report drillthrough target
 
@@ -59,7 +66,7 @@ You can set up a target for cross-report drillthrough in Power BI Desktop or Pow
 1. Drag the fields you want to use as drillthrough targets into **Add drill-through fields here**. For each field, select whether you want to allow drillthrough when the field is used as a category, or when it's summarized like a measure. 
 1. Select whether you want to **Keep all filters** for the visual. If you don't want to pass filters applied to the source visual to your target visual, select **Off**.
    
-   ![Visualizations pane, with Drillthrough options highlighted](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
+   ![Visualizations pane, with Drillthrough options highlighted](media/desktop-cross-report-drill-through/cross-report-drill-through-visualizations-pane.png)
    
 1. If you're using the page for cross-report drillthrough only, delete the **Back** button that's automatically added to the canvas. The **Back** button only works for navigation within a report. 
 1. After you configure the target page, save the report if you're using the Power BI service, or save and publish the report if you're using Power BI Desktop.
@@ -88,9 +95,9 @@ If you set **Keep all filters** to **On** when you set up the target page, filte
 
 When you land on the target report for drillthrough, Power BI only applies filters for fields that have exact string matches for field name and table name. 
 
-Power BI doesn't apply sticky filters from the target report, but it does apply your default personal bookmark if you have one. For example, if your default personal bookmark includes a report-level filter for *Country = US*, Power BI applies that filter before applying the filter context from the source visual. 
+Power BI doesn't apply sticky filters from the target report, but it does apply your default personal bookmark if you have one. For example, if your default personal bookmark includes a report-level filter for *Country/Region = US*, Power BI applies that filter before applying the filter context from the source visual. 
 
-For cross-report drillthrough, Power BI passes the filter context to standard pages in the target report. Power BI doesn't pass filter context for tooltip pages, because tooltip pages are filtered based on the source visual that invokes the tooltip.
+For cross-report drillthrough, Power BI passes the filter context to all standard pages in the target report. Power BI doesn't pass filter context for tooltip pages, because tooltip pages are filtered based on the source visual that invokes the tooltip.
 
 If you want to return to the source report after the cross-report drillthrough action, use the browser's **Back** button. 
 

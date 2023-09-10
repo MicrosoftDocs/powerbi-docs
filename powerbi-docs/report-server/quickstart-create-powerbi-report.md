@@ -75,6 +75,9 @@ For example, you could create a funnel chart of customers and group values by ye
 
 Read much more about [designing a Power BI report](../create-reports/desktop-report-view.md).
 
+> [!NOTE]
+> Some visuals such as paginated report visual will only work on the Power BI service only. Rendering these visuals on Power BI Report Server will give an "Unsupported visual" error.
+
 ## Step 4: Save your report to the report server
 When your report is ready, you save it to the Power BI Report Server you chose in Step 2.
 
@@ -93,7 +96,7 @@ When your report is ready, you save it to the Power BI Report Server you chose i
 There are so many great resources for creating reports in Power BI Desktop. This link is a good starting point.
 
 * [Get started with Power BI Desktop](../fundamentals/desktop-getting-started.md)
-* Guided learning: [Explore Power BI Desktop](/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop)
+* Guided learning: [Explore Power BI Desktop](/training/modules/get-data-power-bi/2-getting-started-power-bi-desktop)
 
 ### Power BI Report Server
 * [Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  

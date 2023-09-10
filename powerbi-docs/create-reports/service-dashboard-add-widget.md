@@ -8,10 +8,13 @@ ms.custom: video-e2PD8m1Q0vU, video-kOuINwgkEkQ, video-Cle_rKBpZ28
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/10/2021
+ms.date: 08/25/2022
 LocalizationGroup: Dashboards
 ---
+
 # Add images, videos, and more to your dashboard
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 By adding a tile to your dashboard, you can place an image, text box, video, streaming data, or web code on your dashboard. 
 
@@ -20,7 +23,7 @@ Watch Amanda add tiles to a dashboard.
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/e2PD8m1Q0vU]
 
 ## Add an image, video, or other tile
 You can add an image, text box, video, streaming data, or web code directly to your dashboard.
@@ -116,7 +119,7 @@ You can use PubNub to add streaming data, such as Twitter feeds or sensor data, 
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/kOuINwgkEkQ]
 
 1. From the **Add tile** window, select **Custom Streaming Data** > **Next**.
 2. Select **Add streaming dataset**.
@@ -189,16 +192,15 @@ You can paste or type in any HTML content, as a tile, to your report or dashboar
    ![Dashboard with four tiles](media/service-dashboard-add-widget/pbi-widget-code-added-new.png)
 
 ### Tips for embedding web content
+
 * For iframes, use a secure source. If you enter your iframe embed code and get a blank tile, verify you're not using *http* for the iframe source. If you are, change it to *https*.
   
   ```html
   <iframe src="https://xyz.com">
   ```
+
 * Edit width and height information. The embed code embeds a video and sets the video player to 560 x 315 pixels. This size doesn't change as you resize the tile.
   
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
   ```html
   <iframe width="560" height="315"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
@@ -207,21 +209,18 @@ You can paste or type in any HTML content, as a tile, to your report or dashboar
   
   If you'd like the player to resize to fit the tile size, set the width and height to 100%.
 
-  > [!NOTE]  
-  > This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-
   ```html
   <iframe width="100%" height="100%"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
   ```
-* This code embeds a tweet and retains, as separate links on the dashboard, links for the AFK podcast, \@GuyInACube's Twitter page, Follow, #analytics, reply, retweet, and like.  Selecting the tile itself takes you to the podcast on Twitter.
+
+* This code embeds a tweet and retains, as separate links on the dashboard, links for the AFK podcast, \@MeganB's Twitter page, Follow, #analytics, reply, retweet, and like.  Selecting the tile itself takes you to the podcast on Twitter.
   
   ```html
   <blockquote class="twitter-tweet" data-partner="tweetdeck">
   <p lang="en" dir="ltr">Listen to
-  <a href="https://twitter.com/GuyInACube">@GuyInACube</a> talk to
+  <a href="https://twitter.com/MeganB">@MeganB</a> talk to
   us about making videos about Microsoft Business Intelligence
   platform
   <a href="https://t.co/TmRgalz7tv">https://t.co/TmRgalz7tv </a>

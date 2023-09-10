@@ -1,6 +1,6 @@
 ### On-premises data gateway
 
-#### Data source
+On-premises data gateway supports refresh for the following data sources:
 
 * Analysis Services Tabular
 * Analysis Services Multidimensional

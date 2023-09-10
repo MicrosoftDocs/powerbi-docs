@@ -1,39 +1,39 @@
 ---
-title: Highlighting in Power BI
-description: Data points selections highlighting in Power BI Visuals.
+title: Highlight data points in Power BI
+description: Learn how to highlight data points on Power BI visuals with categorical and matrix data view mapping.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: rkarlin
+ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/21/2021
+ms.date: 01/17/2023
 ---
 
 # Highlight data points in Power BI Visuals
 
 This article describes how to highlight data on Power BI visuals.
 
-By default, whenever an element is selected, the `values` array in the `dataView` [object](objects-properties.md) is filtered to just the selected values. This filtering causes all other visuals on the page to display just the selected data.
+By default, when an element is selected, the `values` array in the `dataView` [object](objects-properties.md) is filtered to only show the selected values. When the `values` array is filtered, all other visuals on the page only show the selected data.
 
-If you set the `supportsHighlight` property in your `capabilities.json` to `true`, you'll receive the full unfiltered `values` array along with a `highlights` array. The `highlights` array will be the same length as the values array and any non-selected values will be set to `null`. With this property enabled the visual will highlight the appropriate data by comparing the `values` array to the `highlights` array.
+If you set the `supportsHighlight` property in your `capabilities.json` file to `true`, it results in the full unfiltered `values` array along with a `highlights` array. The `highlights` array is the same length as the values array, and any unselected values are set to `null`. With this property enabled, the appropriate data in the visual is highlighted by comparing the `values` array to the `highlights` array.
 
 ### [No highlight support](#tab/Standard)
 
-![highlight `dataview` default behavior](media/highlight/dataview-support.png)
+:::image type="content" source="media/highlight/dataview-support.png" alt-text="Screenshot of the default dataView behavior without highlighting." lightbox="media/highlight/dataview-support.png":::
 
 ### [Highlight support](#tab/Highlight)
 
-![`dataview` supports highlight](media/highlight/highlight-support.png)
+:::image type="content" source="media/highlight/highlight-support.png" alt-text="Screenshot of the dataView that supports highlighting." lightbox="media/highlight/highlight-support.png":::
 
 ---
 
-In the example, you'll notice:
+In the example, notice that:
 
-* **Without** highlight support, the selection is the only value in the `values` array, and the only bar presented in the data view.
-* **With** highlight support, all values are in the `values` array. The `highlights` array contains a `null` value for non-highlighted elements. All bars appear in the data view with highlighted bar a different color.
+* **Without** highlight support, the selection is the only value in the `values` array and the only bar presented in the data view.
+* **With** highlight support, all values are in the `values` array. The `highlights` array contains a `null` value for non-highlighted elements. All bars appear in the data view, and the highlighted bar is a different color.
 
-There can also be multiple selections and partial highlights. The highlighted values will be presented in the data view.
+There can also be multiple selections and partial highlights. The highlighted values are presented in the data view.
 
 > [!NOTE]
 > Table data view mapping doesn't support the highlights feature.
@@ -76,48 +76,44 @@ For visuals with [categorical data view mapping](dataview-mappings.md#categorica
 }
 ```
 
-The default visual source code after removing unnecessary code will look like this:
+After you remove unnecessary code, the default visual source code looks like the following example:
 
 ```typescript
 "use strict";
 
 // ... default imports list
 
+import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
+
 import DataViewCategorical = powerbi.DataViewCategorical;
 import DataViewCategoryColumn = powerbi.DataViewCategoryColumn;
 import PrimitiveValue = powerbi.PrimitiveValue;
 import DataViewValueColumn = powerbi.DataViewValueColumn;
 
-import { VisualSettings } from "./settings";
+import { VisualFormattingSettingsModel } from "./settings";
 
 export class Visual implements IVisual {
     private target: HTMLElement;
-    private settings: VisualSettings;
+    private formattingSettings: VisualFormattingSettingsModel;
+    private formattingSettingsService: FormattingSettingsService;
 
     constructor(options: VisualConstructorOptions) {
         console.log('Visual constructor', options);
+        this.formattingSettingsService = new FormattingSettingsService();
         this.target = options.element;
         this.host = options.host;
-
     }
 
     public update(options: VisualUpdateOptions) {
-        this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
+        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
         console.log('Visual update', options);
 
     }
 
-    private static parseSettings(dataView: DataView): VisualSettings {
-        return <VisualSettings>VisualSettings.parse(dataView);
-    }
-
-    /**
-     * This function gets called for each of the objects defined in the capabilities files and allows you to select which of the
-     * objects and properties you want to expose to the users in the property pane.
-     *
-     */
-    public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstance[] | VisualObjectInstanceEnumerationObject {
-        return VisualSettings.enumerateObjectInstances(this.settings || VisualSettings.getDefault(), options);
+    // Returns properties pane formatting model content hierarchies, properties and latest formatting values, Then populate properties pane. 
+    // This method is called once every time we open properties pane or when the user edit any format property. 
+    public getFormattingModel(): powerbi.visuals.FormattingModel {
+        return this.formattingSettingsService.buildFormattingModel(this.formattingSettings);
     }
 }
 ```
@@ -131,17 +127,19 @@ import PrimitiveValue = powerbi.PrimitiveValue;
 import DataViewValueColumn = powerbi.DataViewValueColumn;
 ```
 
-Create root `div` element for category values:
+Create the root `div` element for category values:
 
 ```typescript
 export class Visual implements IVisual {
     private target: HTMLElement;
-    private settings: VisualSettings;
+    private formattingSettings: VisualFormattingSettingsModel;
+    private formattingSettingsService: FormattingSettingsService;
 
     private div: HTMLDivElement; // new property
 
     constructor(options: VisualConstructorOptions) {
         console.log('Visual constructor', options);
+        this.formattingSettingsService = new FormattingSettingsService();
         this.target = options.element;
         this.host = options.host;
 
@@ -155,12 +153,12 @@ export class Visual implements IVisual {
 }
 ```
 
-Clear content of div elements before rendering new data:
+Clear the contents of the div elements before rendering new data:
 
 ```typescript
 // ...
 public update(options: VisualUpdateOptions) {
-    this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
+    this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
     console.log('Visual update', options);
 
     while (this.div.firstChild) {
@@ -170,11 +168,11 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Get categories and measure values from `dataView` object:
+Get the categories and measure values from the `dataView` object:
 
 ```typescript
 public update(options: VisualUpdateOptions) {
-    this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
+    this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
     console.log('Visual update', options);
 
     while (this.div.firstChild) {
@@ -193,13 +191,12 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Where `categoryValues` is an array of category values, `measureValues` is an array of measures, and `measureHighlights` is highlighted parts of values.
+Where `categoryValues` is an array of category values, `measureValues` is an array of measures, and `measureHighlights` is the highlighted parts of values.
 
 > [!NOTE]
-> Values of `measureHighlights` property can be less that values of `categoryValues` property.
-> In means that value was higlighted partially.
+> If values of the `measureHighlights` property are less than values of the `categoryValues` property, then the value was partially highlighted.
 
-Enumerate `categoryValues` array and get corresponding values and highlights:
+Enumerate the `categoryValues` array and get corresponding values and highlights:
 
 ```typescript
 // ...
@@ -213,7 +210,7 @@ categoryValues.forEach((category: PrimitiveValue, index: number) => {
 });
 ```
 
-Create `div` and `p` elements to display and visualize data view values in visual DOM:
+Create `div` and `p` elements to display and visualize data view values in the visual DOM:
 
 ```typescript
 categoryValues.forEach((category: PrimitiveValue, index: number) => {
@@ -254,7 +251,7 @@ categoryValues.forEach((category: PrimitiveValue, index: number) => {
 });
 ```
 
-Apply required styles for elements to use `flexbox` and define colors for div elements:
+Apply the required styles for elements to use `flexbox`, and define colors for div elements:
 
 ```css
 div.vertical {
@@ -277,7 +274,7 @@ div.value {
 }
 ```
 
-In the result, you should have the following view of the visual.
+The following view of the visual is the result:
 
 ![The visuals with categorical data view mapping and highlight](media/highlight/dev-categorical-visual-highlight-demo.gif)
 
@@ -329,7 +326,7 @@ For visuals with [matrix data view mapping](dataview-mappings.md#matrix-data-map
 }
 ```
 
-The sample data to create hierarchy for matrix data view mapping:
+The sample data to create a hierarchy for matrix data view mapping:
 
 |   Row1   |   Row2   |   Row3   |   Column1   |   Column2   |   Column3   |   Values   |
 |-----|-----|------|-------|-------|-------|-------|
@@ -352,50 +349,47 @@ The sample data to create hierarchy for matrix data view mapping:
 |   R2   |   R23   |   R232   |   C2   |   C23   |   C232   |   18   |
 |   R2   |   R23   |   R233   |   C2   |   C23   |   C233   |   19   |
 
-Create the default visual project and apply sample of `capabilities.json`.
+Create the default visual project, and apply the sample of the `capabilities.json` file.
 
-Default visual source code after removing unessesray code will look:
+After you remove the unnecessary code, the default visual source code looks like the following example:
 
 ```typescript
 "use strict";
 
 // ... default imports
 
-import { VisualSettings } from "./settings";
+import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
+import { VisualFormattingSettingsModel } from "./settings";
 
 export class Visual implements IVisual {
     private target: HTMLElement;
-    private settings: VisualSettings;
-
+    private formattingSettings: VisualFormattingSettingsModel;
+    private formattingSettingsService: FormattingSettingsService;
 
     constructor(options: VisualConstructorOptions) {
         console.log('Visual constructor', options);
+        this.formattingSettingsService = new FormattingSettingsService();
         this.target = options.element;
         this.host = options.host;
     }
 
     public update(options: VisualUpdateOptions) {
-        this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
+        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
         console.log('Visual update', options);
 
     }
 
-    private static parseSettings(dataView: DataView): VisualSettings {
-        return <VisualSettings>VisualSettings.parse(dataView);
-    }
-
-    /**
-     * This function gets called for each of the objects defined in the capabilities files and allows you to select which of the
-     * objects and properties you want to expose to the users in the property pane.
-     *
+   /**
+     * Returns properties pane formatting model content hierarchies, properties and latest formatting values, Then populate properties pane.
+     * This method is called once every time we open properties pane or when the user edit any format property. 
      */
-    public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstance[] | VisualObjectInstanceEnumerationObject {
-        return VisualSettings.enumerateObjectInstances(this.settings || VisualSettings.getDefault(), options);
+    public getFormattingModel(): powerbi.visuals.FormattingModel {
+        return this.formattingSettingsService.buildFormattingModel(this.formattingSettings);
     }
 }
 ```
 
-Import required interfaces to process data from Power BI:
+Import the required interfaces to process data from Power BI:
 
 ```typescript
 import DataViewMatrix = powerbi.DataViewMatrix;
@@ -403,7 +397,7 @@ import DataViewMatrixNode = powerbi.DataViewMatrixNode;
 import DataViewHierarchyLevel = powerbi.DataViewHierarchyLevel;
 ```
 
-Create two `div` elements for visual layout:
+Create two `div` elements for the visual layout:
 
 ```typescript
 constructor(options: VisualConstructorOptions) {
@@ -417,11 +411,11 @@ constructor(options: VisualConstructorOptions) {
 }
 ```
 
-Check the data in `update` method, to ensure that visual gets data:
+Check the data in the `update` method to ensure that the visual gets data:
 
 ```typescript
 public update(options: VisualUpdateOptions) {
-    this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
+    this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
     console.log('Visual update', options);
 
     const dataView: DataView = options.dataViews[0];
@@ -436,7 +430,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Clear content of `div` elements before rendering new data:
+Clear the contents of the `div` elements before rendering new data:
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -462,7 +456,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Create `treeWalker` function to traverse matrix data structure:
+Create the `treeWalker` function to traverse the matrix data structure:
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -476,7 +470,7 @@ public update(options: VisualUpdateOptions) {
 
 Where `matrixNode` is the current node, `levels` is metadata columns of this hierarchy level, `div` - parent element for child HTML elements.
 
-The `treeWalker` is recursive function, need to create `div` element and `p` for text as header, and call the function for child elements of node:
+The `treeWalker` is the recursive function, need to create `div` element and `p` for text as header, and call the function for child elements of node:
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -501,7 +495,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Call the function for root elements of column and row of matrix data view structure:
+Call the function for root elements of the column and row of the matrix data view structure:
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -554,9 +548,9 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-The main step of using highlighting is to create an additional array of values.
+The main step of highlighting is to create another array of values.
 
-If you inspect the object of terminal node, you can see that the values array has two properties - value and highlight:
+The object of terminal node has two properties for the values array, value and highlight:
 
 ```javascript
 JSON.stringify(options.dataViews[0].matrix.rows.root.children[0].children[0].children[0], null, " ");
@@ -588,11 +582,11 @@ JSON.stringify(options.dataViews[0].matrix.rows.root.children[0].children[0].chi
 }
 ```
 
-Where `value` represents the value of the node without applying a selection from other visual, and `highlight` indicates which part of the data was highlighted.
+Where `value` represents the value of the node without applying a selection from the other visual, `highlight` indicates which part of the data was highlighted.
 
 > [!NOTE]
 > If the value of `highlight` is less than the value of `value`,
-> It means that `value` was highlighted partially.
+> then `value` was partially highlighted.
 
 Add code to process the `values` array of the node if it's presented:
 
@@ -649,17 +643,11 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-As the result you'll get the visual with buttons and values `highlighted value/default value`
+The result is a visual with buttons and values, like `highlighted value/default value`.
 
-![The visual with matrix data views mapping and highlight](media/highlight/dev-matrix-visual-highlight-demo.gif)
+:::image type="content" source="media/highlight/dev-matrix-visual-highlight-demo.gif" alt-text="Animation selecting data points on the visual, with matrix data views mapping and highlight." lightbox="media/highlight/dev-matrix-visual-highlight-demo.gif":::
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Matrix data view mappings](dataview-mappings.md#matrix-data-mapping)
-
->[!div class="nextstepaction"]
->[Capabilities of the visual](capabilities.md)
-
->[!div class="nextstepaction"]
->[Add interactivity to visual using selections](selection-api.md)
+* [Matrix data mappings](dataview-mappings.md#matrix-data-mapping)
+* [Add interactivity into visual by Power BI visuals selections](selection-api.md)

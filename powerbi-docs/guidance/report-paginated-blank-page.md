@@ -1,8 +1,8 @@
 ---
 title: Avoid blank pages when printing paginated reports
 description: Guidance for designing paginated reports to avoid blank pages when printed.
-author: peter-myers
-ms.author: kfollis
+author: maggiemsft
+ms.author: maggies
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -86,7 +86,7 @@ Lastly, if you're printing the report to paper, ensure the printer has the corre
 
 For more information related to this article, check out the following resources:
 
-- [What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [Pagination in Power BI paginated reports](../paginated-reports/paginated-reports-pagination.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

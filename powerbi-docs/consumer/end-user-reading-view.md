@@ -1,6 +1,6 @@
 ---
-title: Power BI consumer capabilities in Power BI service
-description: In this quickstart, **consumers** will learn about Power BI, apps, reports, and dashboards.
+title: Power BI consumer and end user and business user capabilities in Power BI service
+description: In this quickstart, **business users** learn about Power BI, apps, reports, and dashboards.
 author: mihart
 ms.author: mihart
 services: powerbi
@@ -13,16 +13,16 @@ ms.subservice: pbi-explore
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/30/2020
+ms.date: 03/27/2023
 ms.custom: mode-portal, intro-quickstart
 ---
 # Quickstart: learn about the Power BI capabilities for *business users*
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-In this quickstart, you'll learn how to interact with Power BI to discover data-driven business insights. This article isn't intended to be a deep dive, but rather a quick trip through many of the actions available for Power BI **business users**.
+This quickstart demonstrates how to interact with the Power BI service to discover data-driven business insights. This article isn't intended to be a deep dive, but rather a quick trip through many of the actions available for Power BI **business users**.
 
-If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+If you're not signed up for the Power BI service, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
 ## What is Power BI? 
 Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Whether your data is a simple Excel spreadsheet, or a collection of data from different data sources, Power BI lets you easily connect to your data sources, visualize (or discover) what's important, and share that with anyone or everyone you want. 
@@ -34,15 +34,22 @@ Open the Power BI service, in a browser or on a mobile device. You and your coll
 ## Reading view
 There are two modes for interacting with reports in the Power BI service: Editing view and Reading view.  If you are a *business user*, then you are more likely to use Reading view to consume reports created by others. Editing view is used by report *designers*, who create the reports and share them with you. Reading view is your way to explore and interact with reports created by colleagues. 
 
+## Select Editing view and Reading view
+Most reports open in Reading view. To switch from Reading view to Editing view, select **Edit** from the action bar. If **Edit** is grayed out, that means that you don't have permissions to edit the report.
 
+:::image type="content" source="media/end-user-reading-view/power-bi-edit.png" alt-text="Screenshot of action bar with the word Edit outlined in red.":::
+
+To switch back to Reading view, select **Reading view** from the action bar. 
+
+:::image type="content" source="media/end-user-reading-view/power-bi-reading.png" alt-text="Screenshot showing action bar with the words Reading view outlined in red.":::
 
 Even in Reading view, the content isn't static. You can dig in, looking for trends, insights, and other business intelligence. Slice and dice the content, and even ask it questions using your own words. Or, sit back and let your data discover interesting insights for you; send you alerts when data changes, and email reports to you on a schedule you set. All your data, any time, in the cloud or on-premises, from any device. 
 
-Read on to learn about these and more.
+Read on to learn about these features and more.
 
 
 ## Power BI content
-When we use the term "content" in Power BI, we're referring to reports, dashboards, and apps. These are the building blocks you'll use to explore your data and make business decisions. 
+When we use the term "content" in Power BI, we're referring to reports, dashboards, and apps. These are the building blocks you use to explore your data and make business decisions. 
 
 > [!NOTE]
 > Dashboards, reports, and apps can be viewed and shared on mobile devices, too.
@@ -88,18 +95,18 @@ Learn more about [commenting](end-user-comment.md)
 Two of the ways that the Power BI service does the work for you is with subscriptions and alerts. 
 
 #### Subscribe to a dashboard (or report)
-It's not necessary to open Power BI to monitor a dashboard.  You can subscribe instead, and Power BI will email you a snapshot of that dashboard on a schedule you set. 
+It's not necessary to open Power BI to monitor a dashboard.  You can subscribe instead, and Power BI emails you a snapshot of that dashboard on a schedule you set. 
 
 ![select the Subscribe icon](./media/end-user-reading-view/power-bi-subscribe-and-email.png)
 
- Learn more about [Power BI subscriptions](end-user-subscribe.md)
+ Learn more about [Power BI subscriptions](/power-bi/collaborate-share/end-user-subscribe)
 
 #### Get alerts when your data reaches a threshold
-Your data is live, and your visuals update automatically to reflect this. If you want to get notified when data changes above or below a threshold you set, use data alerts. Alerts work on gauges, KPIs, and cards.    
-![tile, card, kpi](media/end-user-alerts/card-gauge-kpi.png)
+Your data is live, and your visuals update automatically. If you want to get notified when data changes above or below a threshold you set, use data alerts. Alerts work on gauges, KPIs, and cards.    
+:::image type="content" source="media/end-user-alerts/card-gauge-kpi.png" alt-text="Screenshot showing gauge, kpi, and card.":::
 
 Power BI sends you an email when the value increases or decreases past the limit you set.  
-![Alert email](media/end-user-alerts/power-bi-email.png)
+:::image type="content" source="media/end-user-alerts/power-bi-email.png" alt-text="Alert email.":::
 
 Learn more about [Power BI alerts](end-user-alerts.md)
 
@@ -115,21 +122,6 @@ Learn more about [Power BI Q&A](end-user-q-and-a.md)
 Visuals are made up of datapoints, and by hovering over a datapoint, you can view the details.
 
 ![hover to see details](media/end-user-reading-view/power-bi-hover.gif)
-
-### Favorite a dashboard
-When you make content a *favorite*,  you'll be able to access it from [Home](end-user-home.md) and from the nav pane. The nav pane is visible from just about every area of the Power BI service. Favorites are typically the dashboards, report pages, and apps that you visit most often.
-
-To save content as a favorite, from the upper right corner of the Power BI service, select the star icon. 
-   
-![Screenshot showing upper right corner of a dashboard, with the star icon outlined in red.](./media/end-user-reading-view/power-bi-favorite-icon.png)
-
-To see your favorites, select **Favorites** from the nav pane.
-
-![Screenshot of Home with Favorites selected and outlined in red.](./media/end-user-reading-view/power-bi-list-favorite.png)
-
-Take a look at the other actions available in the menu bar.  We don't cover all of them in this article, but we do cover them in other articles.  Learn more by using the Power BI table of contents or **Search** field. 
-
-Learn more about [favorites and featured](end-user-favorite.md)
 
 ### Adjust the display dimensions
 Reports are viewed on many different devices, with varying screen sizes and aspect ratios.  The default rendering may not be what you want to see on your device.  
@@ -158,7 +150,7 @@ Easily navigate between the visualizations on the report page.
     ![report Selection pane](media/end-user-reading-view/power-bi-selection-pane-new.png) -->
 
 ### Zoom in on individual visuals
-Hover over a visual and select the **Focus mode** icon ![select Focus mode from menu ](media/end-user-reading-view/pbi_popouticon.jpg). When you view a visualization in Focus mode, it expands to fill the entire report canvas as shown below.
+Hover over a visual and select the **Focus mode** icon ![select Focus mode from menu ](media/end-user-reading-view/pbi_popouticon.jpg). When you view a visualization in Focus mode, it expands to fill the entire report canvas.
 
 ![Screenshot with arrow pointing to the icon for Focus mode.](media/end-user-reading-view/power-bi-fullscreen.png)
 
@@ -186,19 +178,16 @@ A Power BI visualization is constructed using data from underlying datasets. If 
 
 With a visual active, select **More options** (...) and choose **Show as a table**.
    
-   ![Screenshot showing an area chart at top and a table with the data below.](./media/end-user-show-data/power-bi-show-data-table.png)
+   ![Screenshot showing an area chart at top and a table with the data below.](../create-reports/media/end-user-show-data/power-bi-show-data-table.png)
 
 
 ### Export data to Excel
-In addition to showing the data that is used to create a visual, you can also export that data and view it in Microsoft Excel. When you export to Excel, you're creating a separate document, a spreadsheet that isn't part of Power BI. Any changes that you make in the Excel file won't impact the data in Power BI. Whether you want to take a closer look at the data, or you want to use the data in another application or for another purpose, Power BI gives you that flexibility.
+In addition to showing the data that is used to create a visual, you can also export that data and view it in Microsoft Excel. When you export to Excel, you're creating a separate document, a spreadsheet that isn't part of Power BI. Any changes that you make in the Excel file won't impact the data in Power BI. Whether you want to take a closer look at the data, or you want to use the data in another application or for another purpose, Power BI gives you that flexibility. For more information, visit [Export the data that was used to create a visualization](../visuals/power-bi-visualization-export-data.md).
 
-![data exported to Excel](./media/end-user-reading-view/power-bi-export-powerpoint.png)
+Exporting isn't limited to individual visuals; you can export entire reports to Excel or PowerPoint to share with your colleagues. For more information, see [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) and [Power BI in PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-about.md).
 
-<!-- Exporting isn't limited to individual visuals; you can export entire reports to PowerPoint or PDF to share with your colleagues.
 
-![data exported to PowerPoint](./media/end-user-reading-view/power-bi-export-powerpoint.png) -->
-
-This has been a quick overview of just some of the things *business users* can do with the Power BI service.  
+This article has been a quick overview of just some of the things *business users* can do with the Power BI service.  
 
 ## Clean up resources
 - If you connected to an app, from the nav pane, select **Apps** to open the Apps content list. Hover over the app to delete, and select the trashcan icon.

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 05/11/2021
+ms.date: 03/29/2022
 LocalizationGroup: Gateways
 ---
 
@@ -17,6 +17,9 @@ This article describes how to configure your SAP BW data source to enable SSO fr
 
 > [!NOTE]
 > Before you attempt to refresh a SAP BW-based report that uses Kerberos SSO, complete both the steps in this article and the steps in [Configure Kerberos SSO](service-gateway-sso-kerberos.md). Using CommonCryptoLib as your SNC library enables SSO connections to both SAP BW Application Servers and SAP BW Message Servers.
+
+> [!NOTE]
+> Configuring both libraries(sapcrypto and gx64krb5) on the same gateway server is an unsupported scenario. It's not recommended to configure both libraries on the same gateway server as it'll lead to a mix of libraries. If you want to use both libraries, please fully separate the gateway server. For example, configure gx64krb5 for server A then sapcrypto for server B. Please remember that any failure on server A which uses gx64krb5 is not supported, as gx64krb5 is no longer supported by SAP and Microsoft.
 
 ## Configure SAP BW to enable SSO using CommonCryptoLib
 
@@ -80,7 +83,7 @@ This article describes how to configure your SAP BW data source to enable SSO fr
 
     ![Restart gateway service](media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/restart-gateway-service.png)
 
-1. [Run a Power BI report](service-gateway-sso-kerberos.md#run-a-power-bi-report)
+1. [Run a Power BI report](service-gateway-sso-kerberos.md#section-3-validate-configuration)
 
 ## Troubleshooting
 
@@ -105,50 +108,50 @@ If you're unable to refresh the report in the Power BI service, you can use gate
    ![CPIC tracing](media/service-gateway-sso-kerberos/cpic-tracing.png)
 
 3. Reproduce the issue and ensure that **CPIC\_TRACE\_DIR** contains trace files.
- 
-	CPIC tracing can diagnose higher level issues such as a failure to load the sapcrypto.dll library. For example, here is a snippet from a CPIC trace file where a .dll load error occurred:
 
-	```
-	[Thr 7228] *** ERROR => DlLoadLib()==DLENOACCESS - LoadLibrary("C:\Users\test\Desktop\sapcrypto.dll")
-	Error 5 = "Access is denied." [dlnt.c       255]
-	```
+    CPIC tracing can diagnose higher level issues such as a failure to load the sapcrypto.dll library. For example, here is a snippet from a CPIC trace file where a .dll load error occurred:
 
-	If you encounter such a failure but you've set the Read & Execute permissions on sapcrypto.dll and sapcrypto.ini as described [in the section above](#configure-sap-bw-to-enable-sso-using-commoncryptolib), try setting the same Read & Execute permissions on the folder that contains the files.
+    ```output
+    [Thr 7228] *** ERROR => DlLoadLib()==DLENOACCESS - LoadLibrary("C:\Users\test\Desktop\sapcrypto.dll")
+    Error 5 = "Access is denied." [dlnt.c       255]
+    ```
 
-	If you're still unable to load the .dll, try turning on [auditing for the file](/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder). Examining the resulting audit logs in the Windows Event Viewer might help you determine why the file is failing to load. Look for a failure entry initiated by the impersonated Active Directory user. For example, for the impersonated user `MYDOMAIN\mytestuser` a failure in the audit log would look something like this:
+    If you encounter such a failure but you've set the Read & Execute permissions on sapcrypto.dll and sapcrypto.ini as described [in the section above](#configure-sap-bw-to-enable-sso-using-commoncryptolib), try setting the same Read & Execute permissions on the folder that contains the files.
 
-	```
-	A handle to an object was requested.
+    If you're still unable to load the .dll, try turning on [auditing for the file](/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder). Examining the resulting audit logs in the Windows Event Viewer might help you determine why the file is failing to load. Look for a failure entry initiated by the impersonated Active Directory user. For example, for the impersonated user `MYDOMAIN\mytestuser` a failure in the audit log would look something like this:
 
-	Subject:
-		Security ID:		MYDOMAIN\mytestuser
-		Account Name:		mytestuser
-		Account Domain:		MYDOMAIN
-		Logon ID:		0xCF23A8
+    ```output
+    A handle to an object was requested.
 
-	Object:
-		Object Server:		Security
-		Object Type:		File
-		Object Name:		<path information>\sapcrypto.dll
-		Handle ID:		0x0
-		Resource Attributes:	-
+    Subject:
+        Security ID:        MYDOMAIN\mytestuser
+        Account Name:       mytestuser
+        Account Domain:     MYDOMAIN
+        Logon ID:           0xCF23A8
 
-	Process Information:
-		Process ID:		0x2b4c
-		Process Name:		C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe
+    Object:
+        Object Server:      Security
+        Object Type:        File
+        Object Name:        <path information>\sapcrypto.dll
+        Handle ID:          0x0
+        Resource Attributes:    -
 
-	Access Request Information:
-		Transaction ID:		{00000000-0000-0000-0000-000000000000}
-		Accesses:		ReadAttributes
-				
-	Access Reasons:		ReadAttributes:	Not granted
-				
-	Access Mask:		0x80
-	Privileges Used for Access Check:	-
-	Restricted SID Count:	0
-	```
+    Process Information:
+        Process ID:     0x2b4c
+        Process Name:   C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe
 
-### CommonCryptoLib tracing 
+    Access Request Information:
+        Transaction ID:     {00000000-0000-0000-0000-000000000000}
+        Accesses:           ReadAttributes
+
+    Access Reasons:     ReadAttributes: Not granted
+
+    Access Mask:        0x80
+    Privileges Used for Access Check:   -
+    Restricted SID Count:   0
+    ```
+
+### CommonCryptoLib tracing
 
 1. Turn on CommonCryptoLib tracing by adding these lines to the sapcrypto.ini file you created earlier:
 
@@ -234,7 +237,7 @@ The error becomes clearer in the sectraces from the Gateway machine *sec-Microso
 [2020.10.15 20:31:38.396000][2][Microsoft.Mashup.Con][Kerberos ][ 3616] Error for requested algorithm 3: 0/C000018B The security database on the server does not have a computer account for this workstation trust relationship.
 ```
 
-When looking at WireShark traces, the issue can also be seen.
+You can also see the issue if you look at WireShark traces.
 
 :::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-02.png" alt-text="Screenshot of tracing program showing an error":::
 
@@ -248,7 +251,7 @@ You may run into a similar, but not identical error that manifests in WireShark 
 
 :::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-03.png" alt-text="Screenshot of WireShark program showing a different error":::
 
-This error indicates the **spn SAP/BW5** could be found, but it's not in the *Services to which this account can present delegated credentials* at the Delegation tab from the Gateway service account. To fix this issue, follow the steps to [configure the gateway service account for standard kerberos constrained delegation](./service-gateway-sso-kerberos.md). 
+This error indicates the **SPN SAP/BW5** could be found, but it's not in the *Services to which this account can present delegated credentials* at the Delegation tab from the Gateway service account. To fix this issue, follow the steps to [configure the gateway service account for standard kerberos constrained delegation](./service-gateway-sso-kerberos.md). 
 
 **Validation**: Proper configuration will prevent generic or unexpected errors to be presented by the gateway. If you still see errors, check the configuration of the gateway itself, or the configuration of the BW server.
 

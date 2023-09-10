@@ -23,6 +23,9 @@ This tutorial walks you through creating a Power BI report based on a machine le
 > * Publish that report to the Power BI service.
 > * Set up scheduled refresh for the report.
 
+> [!NOTE]
+> Currently, Online endpoints (v2 endpoint) are not supported in Power BI yet. ACI/AKS web services (v1 web services) are only supported. 
+
 ## Prerequisites
 
 Before starting this tutorial, you need to:

@@ -89,3 +89,23 @@ landingContent:
             url: ./dataflows/dataflows-create.md
           - text: "Streaming dataflows (preview)"
             url: ./dataflows/dataflows-streaming.md
+
+  # Card (optional)
+  - title: Datamarts (preview)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "Introduction to datamarts (preview)"
+            url: ./datamarts/datamarts-overview.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Get started with datamarts (preview)"
+            url: ./datamarts/datamarts-get-started.md
+      - linkListType: concept
+        links:
+          - text: "Understand datamarts (preview)"
+            url: ./datamarts/datamarts-understand.md
+          - text: "Create reports with datamarts (preview)"
+            url: ./datamarts/datamarts-create-reports.md            
+          - text: "Datamart administration (preview)"
+            url: ./datamarts/datamarts-administration.md                    

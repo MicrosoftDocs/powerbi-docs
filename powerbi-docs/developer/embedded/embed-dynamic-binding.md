@@ -6,10 +6,12 @@ ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 01/17/2021
+ms.date: 06/07/2022
 ---
 
-# Connect a report to a dataset using dynamic binding 
+# Connect a report to a dataset using dynamic binding
+
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
 
 When a report is connected to a dataset, you can use dynamic binding. The connection between the report and the dataset, is known as *binding*. When the binding is determined at the point of embedding, as opposed to being predetermined earlier, the binding is known as dynamic binding.
 
@@ -27,12 +29,15 @@ Dynamic binding is supported for both *Embedding for your organization* and *Emb
 
 |Scenario  |Data ownership  |Token  |Requirements  |
 |---------|---------|---------|---------|
-|*Embedding for your organization*    |User owns data         |Access token for Power BI users         |The user who's Azure AD token is used, must have appropriate permissions for all artifacts.         |
-|*Embedding for your customers*     |App owns data         |Access token for non-Power BI users         |Must include permissions for both the report and the dynamically bound dataset. Use the [API for generating an embed token for multiple items](/rest/api/power-bi/embed-token/generate-token), to generate an embed token that supports multiple artifacts.         |
+|*Embedding for your organization*    |User owns data         |Access token for Power BI users         |The user who's Azure AD token is used, must have appropriate permissions for all items (reports, datasets, etc.).         |
+|*Embedding for your customers*     |App owns data         |Access token for non-Power BI users         |Must include permissions for both the report and the dynamically bound dataset. Use the [API for generating an embed token for multiple items](/rest/api/power-bi/embed-token/generate-token), to generate an embed token that supports multiple items.         |
+
+>[!NOTE]
+> The maximum number of data sources allowed per user is 1000. This limit implies that the combined number of datas sources used in the dynamic binding between reports and datasets by this user cannot exceed 1000.
 
 ## Adjusting the config object
 
-For dynamic binding to work, you need to add `datasetBinding` to the config object. To learn how this is done, see [Bind datasets dynamically to a report](/javascript/api/overview/powerbi/bind-report-datasets). 
+For dynamic binding to work, you need to add `datasetBinding` to the config object. To learn how this is done, see [Bind datasets dynamically to a report](/javascript/api/overview/powerbi/bind-report-datasets).
 
 ## Next steps
 

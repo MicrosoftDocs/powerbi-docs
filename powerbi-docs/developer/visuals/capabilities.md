@@ -1,23 +1,26 @@
 ---
 title: Capabilities and properties of Power BI visuals
-description: This article describes the capabilities and properties of Power BI visuals.
+description: This article describes the capabilities.json file and properties of Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 07/21/2021
+ms.date: 10/12/2022
 ---
 
-# Capabilities and properties of Power BI visuals 
+# Capabilities and properties of Power BI visuals
 
-Every visual has a *capabilities.json file* that describes the visual to the host. The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. All properties in the *capabilities.json* file are **optional**.
+Every visual has a *capabilities.json* file that is created automatically when you run the `pbiviz new <visual project name>` command to [create a new visual](develop-circle-card.md). The *capabilities.json* file describes the visual to the host.
 
-The *capabilities.json* file has the following format:
+The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. Starting from API v4.6.0, **all properties on the capabilities model are *optional* except `privileges`, which are *required*.**
+
+The *capabilities.json* file lists the root objects in the following format:
 
 ```json
 {
+    "privileges": [ ... ],
     "dataRoles": [ ... ],
     "dataViewMappings": [ ... ],
     "objects":  { ... },
@@ -30,28 +33,121 @@ The *capabilities.json* file has the following format:
 
 When you create a new visual, the default *capabilities.json* file includes the following root objects:
 
+* [privileges](#privileges-define-the-special-permissions-that-your-visual-requires)
 * [dataRoles](#dataroles-define-the-data-fields-that-your-visual-expects)
 * [dataViewMappings](#dataviewmappings-how-you-want-the-data-mapped)
 * [objects](#objects-define-property-pane-options)
 
 The above objects are the ones needed for data-binding. They can be edited as necessary for your visual.
 
-The following additional root objects can be added as needed:
+The following additional root objects are optional and can be added as needed:
 
 * [tooltips](add-tooltips.md#add-tooltips-support-to-the-report-page)
 * [supportsHighlight](highlight.md)
 * [sorting](sort-options.md)
 * [drilldown](drill-down-support.md)
-* suppressDefaultTitle
+* [expandCollapse](dataview-mappings.md#expand-and-collapse-row-headers)
 * [supportsKeyboardFocus](supportskeyboardfocus-feature.md)
 * [supportsSynchronizingFilterState](enable-sync-slicers.md)
 * [advancedEditModeSupport](advanced-edit-mode.md)
 * [supportsLandingPage](landing-page.md#creating-a-landing-page)
 * [supportsEmptyDataView](landing-page.md#creating-a-landing-page)
 * [supportsMultiVisualSelection](supportsmultivisualselection-feature.md)
-* subtotals
+* [subtotals](total-subtotal-api.md)
+* [keepAllMetadataColumns](dataview-mappings.md#keep-all-metadata-columns)
+* [migration](identity-filter-api.md)
 
 You can find all these objects and their parameters in the [*capabilities.json* schema](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
+
+## privileges: define the special permissions that your visual requires
+
+Privileges are special operations your visual requires access to in order to operate. Privileges take an array of `privilege` objects, which defines all privilege properties. The following sections describe the privileges that are available in Power BI.
+
+> [!NOTE]
+> From API v4.6.0, privileges **must** be specified in the *capabilities.json* file.  In earlier versions, remote access is automatically granted and downloading to files isn't possible. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
+
+### Define privileges
+
+A JSON privilege definition contains these components:
+
+* `name` - (string) The name of the privilege.
+* `essential` - (Boolean) Indicates whether the visual functionality requires this privilege. A value of `true` means the privilege is required; `false` means the privilege isn't mandatory.
+* `parameters` - (string array)(optional) Arguments. If `parameters` is missing, it's considered an empty array.
+
+There are two types of privileges that must be defined:
+
+* Access External resources
+* Download to file
+
+>[!NOTE]
+>Even with these privileges granted in the visual, the admin has to enable the switch in the admin settings to allow people in their organization to benefit from these settings.
+
+### Allow web access
+
+To allow a visual to access an external resource or web site, add that information as a privilege in the capabilities section. The privilege definition includes an optional list of URLs the visual is allowed to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
+
+#### Example of privileges setting allowing access to external resources
+
+```json
+{
+    "name": "WebAccess",
+    "essential": true,
+    "parameters": [ "https://*.microsoft.com", "http://example.com" ]
+}
+```
+
+The preceding `WebAccess` privilege means that the visual needs to access any subdomain of the `microsoft.com` domain via HTTPS protocol only and `example.com` without subdomains via HTTP, and that this access privilege is essential for the visual to work.
+
+### Download to file
+
+To allow the user to export data from a visual into a file, set `ExportContent` to `true`.
+
+This `ExportContent` setting enables the visual to export data to files in the following formats:
+
+* .txt
+* .csv
+* .json
+* .tmplt
+* .xml
+* .pdf
+* .xlsx
+
+This setting is separate from and not affected by download restrictions applied in the organization's [export and sharing](/power-bi/admin/service-admin-portal-export-sharing) tenant settings.
+
+#### Example of privileges setting allowing downloading to a file
+
+```json
+"privileges": [
+    {
+        "name": "ExportContent",
+        "essential": true
+    }
+]
+```
+
+### Example of a privileges definition
+
+```json
+"privileges": [
+    {
+        "name": "WebAccess",
+        "essential": true,
+        "parameters": [ "https://*.virtualearth.net" ]
+    },
+    {
+        "name": "ExportContent",
+        "essential": false
+    }
+]
+```
+
+### No privileges needed
+
+If the visual doesn't requires any special permissions, the `privileges` array should be empty:
+
+```json
+  "privileges": []
+```
 
 ## dataroles: define the data fields that your visual expects
 
@@ -66,9 +162,9 @@ DataRoles are defined by the following properties:
 * **name**: The internal name of this data field (must be unique).
 * **displayName**: The name displayed to the user in the **Properties** pane.
 * **kind**: The kind of field:
-    * `Grouping`: Discrete values that are used to group measure fields.
-    * `Measure`: Numeric data values.
-    * `GroupingOrMeasure`: Values that can be used as either a grouping or a measure.
+  * `Grouping`: Set of discrete values that are used to group measure fields.
+  * `Measure`: Single numeric values.
+  * `GroupingOrMeasure`: Values that can be used as either a grouping or a measure.
 * **description**: A short text description of the field (optional).
 * **requiredTypes**: The required type of data for this data role. Values that don't match are set to null (optional).
 * **preferredTypes**: The preferred type of data for this data role (optional).
@@ -160,7 +256,6 @@ Objects describe customizable properties that are associated with the visual. Th
 ```json
 "objects": {
     "myCustomObject": {
-        "displayName": "My Object Name",
         "properties": { ... }
     }
 }
@@ -170,14 +265,6 @@ For more information, see [Objects and properties of Power BI visuals](objects-p
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Understand data view mapping in Power BI visuals](dataview-mappings.md)
-
-> [!div class="nextstepaction"]
-> [Objects and properties of Power BI visuals](objects-properties.md)
-
-> [!div class="nextstepaction"]
-> [Advanced edit mode in Power BI visuals](advanced-edit-mode.md)
-
-> [!div class="nextstepaction"]
-> [Sorting options for Power BI visuals](sort-options.md)
+* [Understand data view mapping in Power BI visuals](dataview-mappings.md)
+* [Objects and properties of Power BI visuals](objects-properties.md)
+* [Sorting options for Power BI visuals](sort-options.md)

@@ -1,13 +1,13 @@
 ---
 title: "Active vs inactive relationship guidance"
 description: Guidance for using active or inactive model relationships.
-author: peter-myers
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/02/2020
+ms.date: 05/04/2023
 ---
 
 # Active vs inactive relationship guidance
@@ -20,7 +20,7 @@ This article targets you as a data modeler working with Power BI Desktop. It pro
 
 Generally, we recommend defining active relationships whenever possible. They widen the scope and potential of how your model can be used by report authors, and users working with Q&A.
 
-Consider an example of an Import model designed to analyze airline flight on-time performance (OTP). The model has a **Flight** table, which is a fact-type table storing one row per flight. Each row records the flight date, flight number, departure and arrival airports, and any delay time (in minutes). There's also an **Airport** table, which is a dimension-type table storing one row per airport. Each row describes the airport code, airport name, and the country.
+Consider an example of an Import model designed to analyze airline flight on-time performance (OTP). The model has a **Flight** table, which is a fact-type table storing one row per flight. Each row records the flight date, flight number, departure and arrival airports, and any delay time (in minutes). There's also an **Airport** table, which is a dimension-type table storing one row per airport. Each row describes the airport code, airport name, and the country or region.
 
 Here's a partial model diagram of the two tables.
 
@@ -111,9 +111,12 @@ The report page filters by quarter 2019 Q4. The table visual groups by month and
 
 Notice that the quarter slicer includes a BLANK item. This slicer item appears as a result of [table expansion](../transform-model/desktop-relationships-understand.md#regular-relationships). While each **Sales** table row has an order date, some rows have a BLANK ship date—these orders are yet to be shipped. Table expansion considers inactive relationships too, and so BLANKs can appear due to BLANKs on the many-side of the relationship, or due to data integrity issues.
 
+> [!NOTE]
+> Row-level security filters only propagate through active relationships. Row-level security filters will not propagate for inactive relationships even if UseRelationship is added explicitly to a measure definition.
+
 ## Recommendations
 
-In summary, we recommend defining active relationships whenever possible. They widen the scope and potential of how your model can be used by report authors, and users working with Q&A. It means that role-playing dimension-type tables should be duplicated in your model.
+In summary, we recommend defining active relationships whenever possible, especially when row-level security roles are defined for your data model. They widen the scope and potential of how your model can be used by report authors, and users working with Q&A. It means that role-playing dimension-type tables should be duplicated in your model.
 
 In specific circumstances, however, you can define one or more inactive relationships for a role-playing dimension-type table. You can consider  this design when:
 

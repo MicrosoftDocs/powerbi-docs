@@ -1,220 +1,320 @@
 ---
-title: Power BI embedded analytics multi-tenancy solutions
-description: Choose the Power BI embedded application multi-tenant that is best for you
+title: Use service principal profiles to manage customer data in multitenant apps
+description: Create, import, update, and assign multitenant workspaces in embedded analytics using service principal profiles.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: nishalit
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/24/2021
+ms.date: 10/18/2022
 ---
 
-# Multi-tenancy solutions with Power BI embedded analytics
+# Service principal profiles for multitenancy apps in Power BI Embedded
 
-When designing a multi-tenant application as part of your *embed for your customers* solution, you must carefully choose the tenancy model that best fits your needs. A tenancy model determines how each tenant's data is mapped and managed within Power BI. Your tenancy model impacts application design and management. Switching to a different model later may become costly and disruptive.
+This article explains how an [ISV](pbi-glossary.md#independent-software-vendor-isv) or any other Power BI Embedded app owner with many customers can use service principal profiles to map and manage each customer's data as part of their Power BI *embed for your customers* solution. Service principal profiles allow the ISV to build scalable applications that enable better customer data isolation and establish [tighter security](#data-separation) boundaries between customers. This article discusses the advantages and the limitations of this solution.
 
-In this article we refer to tenants as an organization or a company. A multi-tenant solution, is an embedded application used by a number of companies, where each company is referred to as a Power BI tenant.
+> [!NOTE]
+> The word *tenant* in Power BI can sometimes refer to an Azure AD tenant. In this article, however, we use the term *multitenancy* to describe a solution where a single instance of a software application serves multiple customers or organizations (tenants) requiring physical and logical separation of data. . For example, the Power BI app builder can allocate a separate workspace for each if its customers (or tenants) as we show below. These customers are not necessarily Azure AD tenants, so don’t confuse the term *multitenant application* that we use here, with the [Azure AD multitenant application](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
-This article describes the two different approaches and analyzes them according to several evaluation criteria. The recommended approach is the *workspace separation* solution, which is described on the left tab throughout the article. The *row-level security separation* solution, also known as *RLS*, is described on the right tab. You can also view a [summary](#comparison-summary) of this evaluation, at the end of the article.
+A *service principal profile* is a profile created by a [service principal](./embed-service-principal.md). The ISV app calls the Power BI APIs using a service principal profile, as explained in this article.
 
->[!TIP]
->* **Workspace separation** is the recommended embedded analytics **multi-tenancy** solution.
->* Within each tenant, **RLS** is the recommended embedded analytics solution for securely filtering data.
+The ISV application [service principal](pbi-glossary.md#service-principal) creates a different Power BI profile for each customer, or [tenant](./pbi-glossary.md#tenant). When a customer visits the ISV app, the app uses the corresponding profile to generate an [embed token](pbi-glossary.md#embed-token) that will be used to render a report in the browser.
 
-## Separation method
+Using service principal profiles enables the ISV app to host multiple customers on a single [Power BI tenant](pbi-glossary.md#power-bi-tenant). Each profile represents one customer in Power BI. In other words, each profile creates and manages Power BI content for one specific customer's data.
 
-# [Workspace](#tab/workspace)
+ :::image type="content" source="media/embed-multi-tenancy/multi-tenant-saas-profiles.png" alt-text="Diagram of SP Profiles and multitenancy.":::
 
-With Power BI workspace-based separation, your app supports multiple tenants from a single Power BI tenant. The separation of tenants is done at the Power BI workspace level, by creating multiple workspaces. Each workspace contains the relevant datasets, reports, and dashboards for that tenant. Also, each workspace is connected only to that tenant's data.
+>[!NOTE]
+>This article is aimed at organizations that want to set up a multitenant app using service principal profiles.
+>If your organization already has an app that supports multitenancy, and you want to migrate to the service principal profile model, see [Migrate to the service principal profiles model](migration-to-sp-profiles.md).
 
->[!TIP]
->If you require additional separation, create a *service principal* or a *master user* for each workspace and its content.
+Setting up your Power BI content involves the following steps:
 
-![A diagram describing the workspace separation method](media/embed-multi-tenancy/multi-tenant-saas-workspace.png)
+* [Create a profile](#create-a-profile)
+* [Set the profile permissions](#profile-permissions)
+* [Create a workspace](#create-a-workspace) for each customer
+* [Import reports and datasets](#import-reports-and-datasets) into the workspace
+* [Set the dataset connection details](#set-the-dataset-connection) to connect to the customer's data
+* Remove permissions from the service principal (optional, but helps with [scalability](#scalability))
+* [Embed a report](#embed-a-report) into the application
 
-# [RLS](#tab/rls)
+All the above steps can be fully automated using [Power BI REST APIs](/rest/api/power-bi/).
 
-With row-level security-based separation, your multi-tenant app uses a single workspace to host multiple tenants. Each Power BI item (such as reports, dashboards and datasets) is created once and is used by all tenants. Data separation between tenants is accomplished using [row-level security](embedded-row-level-security.md) on the multi-tenant dataset. When end users log into the app and open content, an embed token is generated for that user's session, with the roles and filters that ensure that users only see the data they're permitted to see. If users from the same tenant are not permitted to view the same data, the application developer needs to implement hierarchical roles both between tenants and within the same tenant.
+## Prerequisites
 
-![A diagram describing the row level security separation method](media/embed-multi-tenancy/multi-tenant-saas-rls.png)
+Before you can create service principal profiles, you need to:
 
----
+* Set up the service principal by following the *first three steps* of [Embed Power BI content with service principal](embed-service-principal.md#step-1---create-an-azure-ad-app).
+* From a Power BI tenant admin account, enable creating profiles in the tenant *using the same security group you used when you created the service principal*.
 
-## Data architecture
+ :::image type="content" source="./media/embed-multi-tenancy/service-principal-profile-feature-switch.png" alt-text="Screenshot of Admin portal switch.":::
 
-# [Workspace](#tab/workspace)
+## Create a profile
 
-There are two main approaches for managing tenant's data.
+Profiles can be created, updated, and deleted using [Profiles REST API](/rest/api/power-bi/).
 
-* **A separate database per tenant** - If your multi-tenant app storage is keeping separate databases per tenant, then the natural choice is to use single-tenant datasets in Power BI, with the connection string for each dataset pointing to the matching database.
+For example, to create a profile:
 
-* **A single multi-tenant database** - If your multi-tenant app storage is using a multi-tenancy database for all tenants, it's easy to separate tenants by workspaces. You can configure the database connection for the Power BI dataset with a parameterized database query that only retrieves the relevant tenant's data. You can update the connection using [Power BI Desktop](../../transform-model/desktop-query-overview.md), the Power BI service or with [APIs](/rest/api/power-bi/datasets/updatedatasourcesingroup) and [parameters](/rest/api/power-bi/datasets/updateparametersingroup).
+```rest
+POST https://api.powerbi.com/v1.0/myorg/profiles HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJK…UUPA
+Content-Type: application/json; charset=utf-8
 
-# [RLS](#tab/rls)
+{"displayName":"ContosoProfile"}
+```
 
-Implementing row-level security separation is most comfortable when all tenants' data is stored in a single data warehouse. In this case, the application developer can pass only the relevant data from the data warehouse into the Power BI dataset, either via Direct Query or data import. If data in the database is separated per tenant, it needs to be combined into a single dataset, which results in a lower degree of separation between tenants that existed in the database.
+A service principal can also call [GET Profiles REST API](/rest/api/power-bi/) to get a list of its profiles. For example:
 
----
+```rest
+GET https://api.powerbi.com/v1.0/myorg/profiles HTTP/1.1
+Authorization: Bearer eyJ0eXA…UUPA
+```
 
-### Data separation
+## Profile permissions
 
-# [Workspace](#tab/workspace)
+Any API that grants a user permission to Power BI items can also grant a profile permission to Power BI items. For example, [Add Group User API](/rest/api/power-bi/groups/add-group-user) can be used to grant a profile permission to a workspace.
 
-Data in this tenancy model is separated at the workspace level. A simple mapping between a workspace and a tenant prevents users from one tenant seeing content from another tenant. Using a single *service principal* or *master user* allows you to have access to all the different workspaces. The configuration of which data to show an end user is defined during the [generation of the embed token](/rest/api/power-bi/embedtoken), a backend-only process which end users can't see, or change.
+The following points are important to understand when using profiles:
 
-To achieve additional separation, an application developer can define a *service principal*, *master user* or an application per workspace, rather than a single *service principal*, *master user* or application with access to multiple workspaces.
+* A profile belongs to the service principal that created it, and can only be used by that service principal.
+* A profile owner can't be changed after creation.
+* A profile isn't a standalone identity. It needs the service principal [Azure AD](pbi-glossary.md#azure-ad-azure-active-directory) token to call Power BI REST APIs.
 
->[!TIP]
->With highly sensitive data, we recommend using a service principal per workspace.
+ISV apps call Power BI REST APIs by providing the service principal Azure AD token in the *Authorization* header, and the profile ID in the *X-PowerBI-Profile-Id* header. For example:
 
-# [RLS](#tab/rls)
+```rest
+  GET https://api.powerbi.com/v1.0/myorg/groups HTTP/1.1
+  Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUz.....SXBwasfg
+  X-PowerBI-Profile-Id: 5f1aa5ed-5983-46b5-bd05-999581d361a5
+```
 
-With row-level security-based separation, data separation is accomplished using [row-level security definitions](embedded-row-level-security.md) on the dataset. In this solution, all the data coexist in the same dataset. This form of data separation is more susceptible to data leakage through developer error. Even though row-level security is done on the backend and secured from an end user, if the data is highly sensitive or customers are asking for data separation, it might be better to use workspace-based separation.
+## Create a workspace
 
----
+Power BI [workspaces](pbi-glossary.md#workspace) are used to host Power BI items such as reports and datasets.
+
+Each profile needs to:
+
+* Create at least one [Power BI workspace](../../collaborate-share/service-create-the-new-workspaces.md)
+
+  ```rest
+  POST https://api.powerbi.com/v1.0/myorg/groups HTTP/1.1
+  Authorization: Bearer eyJ0eXA…ZUiIsg
+  Content-Type: application/json; charset=utf-8
+  X-PowerBI-Profile-Id: a4df5235-6f18-4141-9e99-0c3512f41306
+
+  {
+    "name": "ContosoWorkspace"
+  }
+  ```
+
+* Grant [access permissions](/power-bi/consumer/end-user-workspaces#permissions-in-the-workspaces) to the workspace. The service principal profile must have *Admin* access to the workspace.
+
+* [Assign the workspace to a capacity](azure-pbie-create-capacity.md)
+
+  ```rest
+  POST https://api.powerbi.com/v1.0/myorg/groups/f313e682-c86b-422c-a3e2-b1a05426c4a3/AssignToCapacity HTTP/1.1
+  Authorization: Bearer eyJ0eXAiOiJK…wNkZUiIsg
+  Content-Type: application/json; charset=utf-8
+  X-PowerBI-Profile-Id: a4df5235-6f18-4141-9e99-0c3512f41306
+
+  {
+    "capacityId": "13f73071-d6d3-4d44-b9de-34590f3e3cf6"
+  }
+  ```
+
+Read more about [Power BI workspaces](/power-bi/consumer/end-user-workspaces).
+
+## Import reports and datasets
+
+Use [Power BI Desktop](../../transform-model/desktop-query-overview.md) to prepare reports that are connected to the customer's data or sample data. Then, you can use the [Import API](/rest/api/power-bi/imports) to import the content into the created workspace.
+
+```rest
+POST https://api.powerbi.com/v1.0/myorg/groups/f313e682-c86b-422c-a3e2-b1a05426c4a3/imports?datasetDisplayName=ContosoSales HTTP/1.1
+Authorization: Bearer eyJ...kZUiIsg
+Content-Type: multipart/form-data; boundary="8b071895-b380-4769-9c62-7e586d717ed7"
+X-PowerBI-Profile-Id: a4df5235-6f18-4141-9e99-0c3512f41306
+Fiddler-Encoding: base64
+
+LS04YjA3MTg5NS1iMzgwLTQ3...Tg2ZDcxN2VkNy0tDQo=
+```
+
+Use [dataset parameters](/rest/api/power-bi/datasets/update-parameters-in-group) to create a dataset that can connect to different customers' data sources.
+Then, use the *Update parameters* API to define which customers' data the dataset connects to.
+
+## Set the dataset connection
+
+ISVs usually store their customers' data in one of two ways:
+
+* [A separate database for each customer](#a-separate-database-for-each-customer)
+* [A single multitenant database](#a-single-multitenant-database)
+
+In either case, you should end up with single-tenant datasets (one dataset per customer) in Power BI.  
+
+### A separate database for each customer
+
+If the ISV application has a separate database for each customer, create single-tenant datasets in Power BI. Provide each dataset with connection details that point to its matching database. Use one of the following methods to avoid creating multiple identical reports with different connection details:
+
+* **Dataset parameters:** Create a dataset with [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) in the connection details (such as SQL server name, SQL database name). Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) to match the customer's database details.
+
+* **Update Datasource API:** Create a .pbix that points to a data source with sample content. Then, import the .pbix into a customer's workspace and change the connection details using the [Update Datasource API](/rest/api/power-bi/datasets/update-datasources-in-group).
+
+### A single multitenant database
+
+If the ISV application uses one database for all its customers, separate the customers into different datasets in Power BI as follows:
+
+Create a report using [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) that only retrieve the relevant customer's data. Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) to retrieve the relevant customer's data only.
+
+## Embed a report
+
+After the setup is complete, you can embed customer reports and other items into your application using an embed token.
+
+When a customer visits your application, use the corresponding profile to call the [GenerateToken API](/rest/api/power-bi/embed-token). Use the generated embed token to embed a report or other items in the customer's browser.
+
+To generate an embed token:
+
+```rest
+POST https://api.powerbi.com/v1.0/myorg/GenerateToken HTTP/1.1
+Authorization: Bearer eyJ0eXAiOi…kZUiIsg
+Content-Type: application/json; charset=utf-8
+X-PowerBI-Profile-Id: a4df5235-6f18-4141-9e99-0c3512f41306
+
+{
+  "datasets": [
+    {
+      "id": "3b1c8f74-fbbe-45e0-bf9d-19fce69262e3"
+    }
+  ],
+  "reports": [
+    {
+      "id": "3d474b89-f2d5-43a2-a436-d24a6eb2dc8f"
+    }
+  ]
+}
+```
+
+## Design aspects
+
+Before setting up a profile-based multitenant solution, you should be aware of the following issues:
+
+* [Scalability](#scalability)
+* [Automation & operational complexity](#automation-and-operational-complexity)
+* [Multi-Geo needs](#multi-geo-needs)
+* [Cost efficiency](#cost-efficiency)
+* [Row level security](#row-level-security)
 
 ### Scalability
 
-# [Workspace](#tab/workspace)
+By separating the data into separate datasets for each customer, you minimize the need for [large datasets](/power-bi/enterprise/service-premium-large-models). When the capacity gets overloaded, it can evict unused datasets to free memory for active datasets. This optimization is impossible for a [single large dataset](#row-level-security). By using multiple datasets, you can also separate tenants into multiple Power BI capacities if necessary.
 
-One advantage of the *workspace-based separation* model is that separating the data into multiple datasets for each tenant overcomes the [size limits of a single dataset](../../admin/service-premium-what-is.md#large-datasets). When the capacity is overloaded, it can evict unused datasets to free memory for active datasets. This task isn't possible with a single large dataset. Using multiple datasets, it is also possible to separate tenants into multiple Power BI capacities if needed.
+Without profiles, a service principal is limited to 1,000 [workspaces](pbi-glossary.md#workspace). To overcome this limit, a service principal can create multiple profiles, where each profile can create up to 1,000 workspaces. With multiple profiles, the ISV app can isolate each customer's content using distinct logical containers.
 
-A *service principal* or a *master user* is limited to 1,000 workspaces. By creating a new service principal or master user per each tenant, you’re not only getting additional separation between tenants, you’re also making sure that you won’t reach the 1,000 workspaces limitation, when onboarding new tenants.
+Once a service principal profile has access to a workspace, its parent service principal’s access to the workspace can be removed to avoid scalability problems.
 
-Despite these advantages, consider the scale that your multi-tenant app can reach in the future. The capacity SKU used introduces a limit on the size of memory that datasets need to fit in. When using a *Gen 1* capacity, you also have to consider how many refreshes can run at the same time and the maximum frequency of data refreshes. We recommend that you test your app when managing hundreds or thousands of datasets. It is also recommended to consider the average and peak volume of usage, as well as any specific tenants with large datasets, or different usage patterns, that are managed differently than other tenants.
-
-# [RLS](#tab/rls)
-
-With row-level security-based separation, the data needs to fit within the dataset size limit. With the introduction of [incremental refresh](../../connect-data/incremental-refresh-overview.md) and the release of an XMLA endpoint for Power BI datasets, the dataset size limit is expected to increase significantly. However, the data still needs to fit into the capacity's memory, with enough remaining memory for data refreshes to run. Large-scale deployments need a large capacity to avoid users experiencing issues due to memory exceeding the limits of the current capacity. Alternative ways to handle scale include using [aggregations](../../admin/aggregations-auto.md) or connecting to the data source directly using DirectQuery or Live connection, rather than caching all the data in the Power BI capacity.
-
----
+Even with these advantages, you should consider the potential scale of your application. For example, the number of workspace items a profile can access is limited. Today, a profile has the same limits as a regular user. If the ISV application allows end users to save [a personalized copy](#customizing-and-authoring-content) of their embedded reports, a customer's profile will have access to all the created reports of all its users. This model can eventually exceed the limit.
 
 ### Automation and operational complexity
 
-# [Workspace](#tab/workspace)
+With Power BI profile-based separation, you might need to manage hundreds or thousands of items. Therefore, it's important to define the processes that frequently happen in your application lifecycle management, and ensure you have the right set of tools to do these operations at scale. Some of these operations include:
 
-With Power BI workspace-based separation, an application developer might need to manage hundreds or thousands of Power BI items. It's essential to define the processes that frequently happen in your application lifecycle management, and ensure you have the right set of tools to perform these operations at scale in this tenancy model. Some example operations include:
+* Adding a new tenant
+* Updating a report for some or all tenants
+* Updating the dataset schema for some or all tenants
+* Unplanned customizations for specific tenants
+* Frequency of dataset refreshes
 
-   * Adding a new tenant (customer)
-   * Updating a report or dashboard for some or all the tenants
-   * Updating the dataset schema for some or all the tenants
-   * Unplanned customizations for specific tenants
-   * Frequency of dataset refreshes
+For example, creating a profile and a workspace for a new tenant is a common task, which can be [fully automated](https://www.powerbidevcamp.net/sessions/session11/) with the [Power BI REST API](/rest/api/power-bi/).
 
-When using the same report for multiple tenants, you can simplify your workspace-base separation deployment using [dynamic binding](embed-dynamic-binding.md). Dynamic binding lets you bind a report to multiple datasets, allowing you to use one report for all tenants, instead of a copy of the same report in each tenant.
+### Multi-Geo needs  
 
-# [RLS](#tab/rls)
+Multi-Geo support for Power BI Embedded means that ISVs and organizations that build applications using Power BI Embedded to embed analytics into their apps can now deploy their data in different regions around the world. To support different customers in different regions, assign the customer's workspace to a capacity in the desired region. This task is a simple operation that doesn't involve extra cost. However, if you have customers that need data from multiple regions, the tenant profile should duplicate all items into multiple workspaces that are assigned to different regional capacities. This duplication may increase both cost and management complexity.
 
-Managing Power BI items is easier using row-level security separation, as there is only one version of a Power BI item for each environment, instead of a version per tenant.
+For compliance reasons, you may still want to create multiple Power BI tenants in different regions. Read more about [multi-geo](../../admin/service-admin-premium-multi-geo.md).
 
-Adding or changing roles can only be done manually in the Power BI Desktop. Applying an RLS hierarchy can be complicated and error-prone to manage.
+### Cost efficiency
 
----
+Application developers using Power BI Embedded need to [purchase a Power BI Embedded capacity](move-to-production.md). The profile-based separation model works well with capacities because:
 
-### Multi-Geo needs
+* The smallest object you can independently assign to a capacity is a [workspace](pbi-glossary.md#workspace) (you can't assign a report, for example). By separating customers by profiles, you get different workspaces - one per customer. This way, you get full flexibility to manage each customer according to their performance needs, and optimize capacity utilization by scaling up or down. For example, you can manage large and essential customers with high volume and volatility in a separate capacity to ensure a consistent level of service, while grouping smaller customers in another capacity to optimize costs.
 
-# [Workspace](#tab/workspace)
+* Separating workspaces also means separating datasets between tenants so that data models are in smaller chunks, rather than a single large dataset. These smaller models enable the capacity to manage memory usage more efficiently. Small, unused datasets can be evicted after a period of inactivity, in order to maintain good performance.
 
-Multi-geo involves purchasing capacity in the desired regions and assigning a workspace to that capacity. If you need to support different tenants in different regions, you need to assign the tenant's workspace to a capacity in the desired region. This task is a simple operation and one where the cost is not more than having all workspaces in the same capacity. However, if you have tenants that need data to reside in multiple regions, all Power BI items in the workspace need to be duplicated in each regional capacity, increasing both cost and management complexity.
+When buying a capacity, consider the limit on the number of parallel refreshes, as refresh processes might need extra capacity when you have multiple datasets.
 
-# [RLS](#tab/rls)
+### Row Level Security
 
-Since all the data is stored in a single dataset, it is challenging to meet data residency requirements that require certain data to be bound to specific locations. It can also significantly increase the cost of using multiple regions as all the data is replicated and stored in each region.
+This article explains how to use profiles to create a separate dataset for each customer. Alternatively, ISV applications can store all their customers' data in one large dataset and use [Row-level security (RLS)](embedded-row-level-security.md) to protect each customer's data. This approach can be convenient for ISVs that have relatively few customers and small to medium-sized datasets because:
 
-If only a limited number of tenants need different geographies, consider keeping only those tenants' data in a different region, using the *workspace-based separation* model.
+* There's only one report and one dataset to maintain
+* The onboarding process for new customers can be simplified
 
----
+Before using RLS, however, make sure you understand its limitations. All the data for all customers are in one large Power BI dataset. This dataset runs in a single capacity with its own scaling and other limitations.
 
-### Cost
+Even if you use service principal profiles to separate your customers' data, you can still use RLS within a single customer's dataset to give different groups access to different parts of the data. For example, you could use [RLS]( ../../admin/service-admin-rls.md) to prevent members of one department from accessing data of another department in the same organization.
 
-Both [Power BI Embedded](./embedded-analytics-power-bi.md) and **Power BI Premium** have a resource-based purchase model. You purchase one or more capacities with fixed computing power and memory. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. If you're using a *master user* instead of a *service principal*, a [Power BI Pro license](../../admin/service-admin-licensing-organization.md) is required.
+## Considerations and limitations
 
-We recommend testing and measuring the expected load on your capacity by simulating live environment and usage. You can measure the load and performance with the various metrics available in the Azure capacity or [Premium capacity metrics app](../../admin/service-admin-premium-monitor-capacity.md).
+* Service Principal Profiles are only supported through the Power [BI REST API](/rest/api/power-bi/) and the [Power BI .NET SDK](https://www.nuget.org/packages/Microsoft.PowerBI.Api/). Service Principal Profiles are not supported in Power BI through the XMLA endpoint or the Tabular Object Model (TOM).
+* Service principal profiles aren't supported with Azure Analysis Services (AAS) in live connection mode.
 
-# [Workspace](#tab/workspace)
+### Power BI capacity limitations
 
-The workspace-based separation model sits well with capacities for the following reasons:
+* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/power-bi/enterprise/service-premium-what-is). For the recommended dataset size for each SKU, reference [Premium large datasets](/power-bi/enterprise/service-premium-what-is#large-datasets).
+* To use a dataset larger than 10 GB, use a Premium capacity and enable the [Large datasets](/power-bi/enterprise/service-premium-large-models) setting.
+* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/power-bi/enterprise/service-premium-what-is#capacity-nodes).
 
-   * By separating tenants by workspaces, you get full flexibility in managing each tenant and its performance needs, and optimizing capacity utilization by scaling up or down. For example, large and essential tenants with high volume and volatility can be managed in a separate capacity to ensure a consistent service level, while grouping smaller tenants in another capacity to optimize costs.
+### Manage service principals
 
-   * Separating workspaces also means separating datasets between tenants so that data models can be in smaller chunks, rather than in a single large dataset. This task allows the capacity to manage memory usage better, evicting small, and unused datasets when not needed, while keeping users satisfied with the performance.
+#### Change a service principal
 
->[!TIP]
->Consider the number of parallel refreshes you require, as refresh processes might need extra capacity when you have multiple datasets.
+In Power BI, a profile belongs to the service principal that created it. That means, a profile can't be shared with other principals. With this limitation, if you want to change the service principal for any reason, you'll need to recreate all the profiles and provide the new profiles access to the relevant workspaces.
+Often, the ISV application needs to save a mapping between a profile ID and a customer ID in order to pick the right profile when needed. If you change the service principal and recreate the profiles, the IDs will also change, and you may need to update the mapping in the ISV application database.
 
-# [RLS](#tab/rls)
+#### Delete a service principal
 
-The primary cost driver with row-level security-based separation is the memory footprint of the dataset. You need enough capacity to store the dataset and keep some additional memory buffer for any peaks in memory demand. One way to mitigate this situation is to store the data in a SQL Server database or SQL Server Analysis Services cube, and use a Direct Query or a Live connection to retrieve the data from the data source in real time. This approach increases the cost of the data sources, but reduces the need for a large capacity because of memory needs, therefore reducing the cost of Power BI capacity.
+> [!WARNING]
+> Be very careful when deleting a service principal. You don't want to accidentally lose data from all its associated profiles.
 
----
+If you delete the service principal in the active directory, all its profiles in Power BI will be deleted. However, Power BI won't delete the content immediately, so the tenant admin can still access the workspaces. Be careful when deleting a service principal used in a production system, especially when you created profiles using this service principal in Power BI.
+If you do delete a service principal that has created profiles, be aware that you'll need to recreate all the profiles, provide the new profiles access to the relevant workspaces, and update the profile IDs in the ISV application database.
 
-### Content customization and authoring
+### Data separation
 
-# [Workspace](#tab/workspace)
+When data is separated by service principal profiles, a simple mapping between a profile and customer prevents one customer from seeing another customer's content. Using a single *service principal* requires that the service principal has access to all the different workspaces in all the profiles.
 
-For the primary use cases of content creation, the application developer needs to carefully consider which tenants can have editing capabilities, and how many users in each tenant can edit. Permitting multiple users to edit in each tenant, can result in a lot of content being generated. Generating a lot of content, may cause reaching a dataset limitation such as the number of reports per dataset, or the number of Power BI items in a workspace. If you give users editing capabilities, we recommend monitoring the content generation closely and scaling up as needed. For the same reasons and to allow report updates, we don't recommend using the editing capability for content personalization, where each user can make small changes to a report and save it. If your multi-tenant app allows content personalization, consider introducing and communicating workspace retention policies for user-specific content, to facilitate the flow of content deletion when end users move to a new position, leave the company, or stop using the platform. If you allow users to edit content, you'll also need to remap the newly created content so that the new version is available for your customers in your app.
+To add extra separation, assign a separate service principal to each tenant, instead of having a single service principal access multiple workspaces using different profiles. Assigning separate service principals has several advantages, including:
 
-# [RLS](#tab/rls)
+* Human error or a credential leak won't cause multiple tenants' data to be exposed.
+* Certificate rotation can be done separately for each tenant.
 
-As end users edit or create reports, they can use the production multi-tenant dataset. We advise only using the embedded iFrame option to [edit or create reports](/javascript/api/overview/powerbi/create-edit-report-embed-view), as it relies on the same dataset, with row-level security applied. Having users uploading PBIX files with additional datasets can be costly and difficult to manage with row-level security separation. Also, you need to build a robust mechanism to distinguish which content is connected to which tenant, so that when users generate new content that is in the same workspace, you can make sure the production workspace doesn't hit its limits.
+However, using multiple service principals comes with a high management cost. Select this path only if you need the extra separation. Keep in mind that the configuration of which data to show an end user is defined when you [generate the embed token](/rest/api/power-bi/embedtoken), a backend-only process that end users can't see or change. Requesting an embed token using a tenant-specific profile will generate an embed token for that specific profile, which will give you customer separation in consumption.
 
----
+#### One report, multiple datasets
 
-## Comparison summary
+Generally, you have one report and one dataset per tenant. If you have hundreds of reports, you'll have hundreds of datasets. Sometimes, you might have one report format, with different datasets (for example, different parameters or connection details). Each time you have a new version of the report, you'll need to update all the reports for all tenants. Although you can automate this, it's easier to manage if you have just one copy of the report. Create a workspace that contains the report to embed. During a session runtime, bind the report to the tenant-specific dataset. Read [dynamic bindings](embed-dynamic-binding.md) for more details.
 
-The table below provides a summary of the detailed comparison between the two separation methods.
+#### Customizing and authoring content
 
-|| Workspace (recommended)   | RLS  |
-|---------------------|-------------------|---------------------------|
-| **Data architecture** | Easiest when there's a separate database per tenant.  | Easiest when all the data for all tenants is in a single data warehouse.   |
-| **Data separation** | ![an icon that symbolizes good](../../includes/media/yes.png) Good.<br>Each tenant has a dedicated dataset.  | ![an icon that symbolizes moderate](../../includes/media/maybe.png) Moderate.<br> All data is in the same shared dataset which is managed through access-control.  |
-| **Scalability** | ![an icon that symbolizes moderate](../../includes/media/maybe.png) Moderate.<br> Breaking data into multiple datasets enables optimization.  | ![an icon that symbolizes low](../../includes/media/no.png) Lowest.<br>Constrained by dataset limits.  |
-| **Multi-Geo needs** | ![an icon that symbolizes good](../../includes/media/yes.png) Good.<br> Data and capacity should be in the same geo.  | ![an icon that symbolizes low](../../includes/media/no.png) Not recommended.<br> You'll have to keep the entire dataset stored in multiple regions.  |
-| **Automation and operational complexity** | Good automation for the individual tenant.<br> Complex to manage many artifacts at scale.<br><br>When using the same report for all tenets, use [dynamic binding](embed-dynamic-binding.md) to simplify deployments.  | Easy to manage Power BI items.<br> Complex to manage RLS at scale.  |
-| **Cost** | Low-medium.<br> You can optimize utilization to reduce cost-per-tenant. Cost might increase when frequent refreshes are needed.  | Medium-high if using Import mode.<br> Low- medium if using Direct Query mode.  |
-| **Content customization and authoring** | ![an icon that symbolizes good](../../includes/media/yes.png) Good.<br> Might hit limitations at large scale.  | ![an icon that symbolizes moderate](../../includes/media/maybe.png) Moderate.<br> Use content generation in embedded iFrame only.  |
+When you create content, carefully consider who has permission to edit it. If you allow multiple users in each tenant to edit, it's easy to exceed dataset limitations. If you decide to give users editing capability, monitor their content generation closely, and scale up as needed. For the same reason, we don't recommend using this capability for content personalization, where each user can make small changes to a report and save it for themselves. If the ISV application allows content personalization, consider introducing workspace retention policies for user-specific content. Retention policies make it easier to delete content when users move to a new position, leave the company, or stop using the platform.
 
-## Deployment considerations and limitations
+#### System-Managed identity
 
-Before selecting the separation model that best suits your needs, review the following considerations and limitations.
+Instead of a service principal, you can use a user-assigned or system-assigned[managed identity](/azure/active-directory/managed-identities-azure-resources/overview) to create profiles. Managed identities reduce the need for secrets and certificates.
 
-### Power BI items
+Be careful when using a system-managed identity because:
 
-Power BI items include reports, dashboards and datasets.
+* If a system-assigned managed identity is accidentally turned off, you'll lose access to the profiles. This situation is similar to a case where a [service principal is deleted](#delete-a-service-principal).
+* A system-assigned managed identity is connected to a resource in Azure (web app). If you delete the resource, the identity will be deleted.
+* Using multiple resources (different web apps in different regions) will result in multiple identities that need to be managed separately (each identity will have its own profiles).
 
-* The number of classic workspaces that a single user or application can be a member or admin of is 250.
+Due to the above considerations, we recommend that you use a user-assigned managed identity.
 
-* The number of the [new workspaces](../../collaborate-share/service-new-workspaces.md#new-and-classic-workspace-differences) that a single user or application can be a member or admin of is 1000.
+## Example
 
-* The number of datasets in a single workspace is 1000.
-
-* The number of reports or dashboards connected to a single dataset is 1000.
-
-* The dataset memory size limit to upload a PBIX file is 10 GB.
-
-### Power BI capacity
-
-Considerations and limitations for Power BI [capacities](embedded-capacity.md).
-
-* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](embedded-capacity.md#which-sku-should-i-use).
-
-* To establish the recommended dataset size for each SKU, reference [Premium large datasets](../../admin/service-premium-what-is.md#large-datasets).
-
-* To establish the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](../../admin/service-premium-what-is.md#capacity-nodes).
-
-* The average time of scaling a capacity is between one to two minutes. During that time, the capacity isn't available. We recommend using a scale-out approach to [avoid downtime](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script).
+For an example of how to use service principal profiles to manage a multitenant environment with Power BI and App-Owns-Data embedding, download the [App owns data multitenant](https://github.com/PowerBiDevCamp/AppOwnsDataMultiTenant) repository from [Power BI Dev Camp](https://www.powerbidevcamp.net/) (third party site).
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Embedded analytics with Power BI](./embedded-analytics-power-bi.md)
-
->[!div class="nextstepaction"]
->[Power BI Embedded](./embedded-analytics-power-bi.md)
-
->[!div class="nextstepaction"]
->[Power BI Premium](../../admin/service-premium-what-is.md)
-
->[!div class="nextstepaction"]
->[Row-level security](embedded-row-level-security.md)
+* [Use the Power BI SDK with service principals](service-principal-profile-sdk.md)
+* [Migrate multitenancy apps to the service principal profiles model](migration-to-sp-profiles.md)
+* [Develop scalable multitenancy applications with Power BI embedding](/power-bi/guidance/develop-scalable-multitenancy-apps-with-powerbi-embedding)

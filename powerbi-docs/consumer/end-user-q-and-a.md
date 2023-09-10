@@ -1,83 +1,79 @@
 ---
 title: Q&A for Power BI business users
-description: Documentation overview topic for Power BI Q&A natural language queries.
+description: Learn how you can use the Power BI Q&A feature and natural language capabilities with your report visuals.
 author: mihart
 ms.author: mihart
 ms.reviewer: mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai
-ms.topic: how-to
-ms.date: 09/01/2021
+ms.topic: conceptual
+ms.date: 07/27/2023
 LocalizationGroup: Ask questions of your data
 ---
 # Q&A for Power BI business users
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-
 ## What is Q&A?
-Sometimes the fastest way to get an answer from your data is to ask a question using natural language. For example, "what were total sales last year."
 
-Use Q&A to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. Q&A is different from a search engine -- Q&A only provides results about the data in Power BI datasets.
+Sometimes the fastest way to get an answer from your data is to ask a question using natural language. For example, "show total units by year and product manufacturer."
 
-## Which visualization does Q&A use?
-Q&A picks the best chart or graph based on the data being displayed. Sometimes data in the underlying dataset is defined as a certain type or category and this helps Q&A know how to display it. For example, if data is defined as a date type, it is more likely to be displayed as a line chart. Data that is categorized as a city is more likely to be displayed as a map.
+:::image type="content" source="media/end-user-q-and-a/power-bi-example.png" alt-text="Image showing the Q&A question and resulting line chart.":::
 
-You can also tell Q&A which visual to use by adding it to your question. But keep in mind that it may not always be possible for Q&A to display the data using the visual type you requested. Q&A will prompt you with a list of workable visual types.
+Use Q&A to explore your data using natural language capabilities and receive answers in the form of charts and graphs. Unlike a search engine, Q&A only provides results about the data in Power BI datasets.
+
+To learn how to use Q&A, see [Explore your data and create visuals using Q&A](../create-reports/power-bi-tutorial-q-and-a.md)
+
+## Which visualizations does Q&A use?
+
+Q&A picks the best visual based on the data. Sometimes data is defined as a certain type or category, which helps Q&A know how to display it. For example, if data is defined as a date type, it's more likely to be displayed as a line chart. Data that is categorized as a city is more likely to be displayed as a map.
+
+If you want a specific type of visual, tell Q&A which one to use by adding it to your question. For example, "show me total sales by category as a treemap". But keep in mind that it isn't always possible for Q&A to display the data using the visual type you requested. Q&A prompts you with a list of workable visual types.
 
 ## Where can I use Q&A?
-You'll find Q&A on dashboards in the Power BI service, and at the bottom of the dashboard in Power BI mobile. Unless the designer has given you edit permissions, you'll be able to use Q&A to explore data but won't be able to save any visualizations created with Q&A.
 
-![question box](media/end-user-q-and-a/power-bi-qna.png)
+### Use Q&A on a dashboard
 
-You'll also find Q&A on reports, if the report *designer* added an interactive [Q&A visual](../visuals/power-bi-visualization-q-and-a.md).   
+Q&A is available on dashboards in the Power BI service, and at the bottom of the dashboard in Power BI mobile. If the dashboard designer has given you edit permissions, save the visual by [pinning it to your dashboard](../create-reports/service-dashboard-pin-tile-from-q-and-a.md). 
 
-![Q&A visual](media/end-user-q-and-a/power-bi-q-and-a-default.png)
+![Screenshot of Ask a question about your data in a red box on the visual dashboard.](media/end-user-q-and-a/power-bi-qna.png)
 
-## Q&A on dashboards
+### Use Q&A in a report
 
-**Power BI Q&A** is available with a Pro or Premium license.  [Q&A in the Power BI mobile apps](mobile/mobile-apps-ios-qna.md) and [Q&A with Power BI Embedded](../developer/embedded/qanda.md) are covered in separate articles. At the current time, **Power BI Q&A** only supports answering natural language queries asked in English, although there is a preview available for Spanish that can be enabled by your Power BI administrator.
+Q&A is available in reports if the report designer added a specific type of interactive visual called a [Q&A visual](../visuals/power-bi-visualization-q-and-a.md) or added a [Q&A button](../natural-language/q-and-a-intro.md#add-qa-to-a-report). Ask natural language questions and create new report visuals that represent the answers to your questions. 
 
+![Screenshot of the Q&A question box highlighted by a red box on the report.](media/end-user-q-and-a/power-bi-q-and-a-default.png)
 
-![q&a created treemap](media/end-user-q-and-a/power-bi-treemaps.png)
+### Use Q&A in mobile apps and embedded reports
 
-Asking the question is just the beginning.  Have fun traveling through your data refining or expanding your question, uncovering trust-worthy new information, zeroing in on details and zooming out for a broader view. 
-You'll be delighted by the insights and discoveries you make.
-
-The experience is truly interactive…and fast! Powered by an in-memory storage, response is almost instantaneous.
-
-
-## The Q&A visual in Power BI reports
-
-In Power BI reports, there is a specific type of interactive visual called the Q&A visual. When a report designer adds this visual to a report, report end users can ask natural language questions and create a new report visual that represents the answer to that question. The Q&A visual behaves like other visual in a report, it can be cross-filtered/cross-highlighted and also supports bookmarks and comments. 
-
-You can identify a Q&A visual by its question box across the top. This is where you'll enter or type questions using natural language. The Q&A visual can be used over and over again to ask questions about your data. When you leave the report, the Q&A visual resets to its default. 
-
-![Screenshot of default Q&A visual](media/end-user-q-and-a/power-bi-q-and-a-default.png)
-
+Q&A is available in [Power BI iOS apps](mobile/mobile-apps-ios-qna.md) and in [Power BI embedded analytics](../developer/embedded/qanda.md) as well. 
 
 ## Considerations and troubleshooting
 
-**Question**: I don't see Q&A on this dashboard.    
-**Answer 1**: If you don't see a question box, first check your settings. To do this, select the cog icon in the upper right corner of your Power BI toolbar, or from the **More options** (...) dropdown menu.   
-![cog icon](media/end-user-q-and-a/power-bi-cog.png)
+**Question**: I don't see Q&A on this dashboard.
 
-Then choose **Settings** > **Dashboards**. Make sure there is a check mark next to **Show the Q&A search box on this dashboard**.    
-![Q&A settings for dashboard](media/end-user-q-and-a/power-bi-om.png)  
+**Answer 1**: If you don't see a question box, check your settings. Select the **Settings** icon in the upper right corner of your Power BI toolbar.
+![Screenshot of the Power BI toolbar with a red box highlight around the settings icon.](media/end-user-q-and-a/power-bi-cog.png)
 
+Choose **Power BI Settings** > **Dashboards**. Make sure there's a check mark next to **Show the Q&A search box on this dashboard**.
+![Screenshot of Settings Dashboards enabling Q&A settings for dashboard.](media/end-user-q-and-a/power-bi-om.png)  
 
-**Answer 2**: Sometimes you won't have access to the settings. If the dashboard owner or your administrator turned Q&A off, check with them to see if it's OK to turn it back on. To look up the owner, select the name of the dashboard from the top menu bar.
+**Answer 2**: Sometimes you don't have access to the settings. If the dashboard owner or your administrator turned Q&A off, check with them to see if it's OK to turn it back on. To look up the owner, select the name of the dashboard from the top menu bar.
 
-![Screenshot of report name drop down](media/end-user-q-and-a/power-bi-owner.png)    
+![Screenshot of the top menu bar on a report with the drop-down featuring the report admin name.](media/end-user-q-and-a/power-bi-owner.png)
 
-**Question**: I'm not getting the results I'd like to see when I type a question.    
-**Answer**: Select the option to contact the report or dashboard owner. You can do this directly from the Q&A dashboard page or the Q&A visual. Or, you can look up the owner from the Power BI header.  There are many things the owner can do to improve the Q&A results. For example, the owner can rename columns in the dataset to use terms that are easily understood (`CustomerFirstName` instead of `CustFN`). Since the owner knows the dataset really well, they can also come up with helpful questions and add them to the Q&A suggested questions.
+**Question**: I'm not getting the results I'd like to see when I type a question.
 
-![Display contact information](media/end-user-q-and-a/power-bi-contact.png)
+**Answer**: Select the option to contact the report or dashboard owner. You can find the report or dashboard owner from the Q&A dashboard page or the Q&A visual. Or, you can look up the owner from the Power BI header.  There are many things the owner can do to improve the Q&A results. For example, the owner can rename columns in the dataset to use terms that are easily understood (`CustomerFirstName` instead of `CustFN`). Since the owner knows the dataset, they can also come up with helpful questions and add them to the Q&A suggested questions.
+
+![Screenshot of Display contact information.](media/end-user-q-and-a/power-bi-contact.png)
 
 ## Privacy
 
-Microsoft may use your questions to improve Power BI. Please review the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839) for more information.
+Microsoft might use your questions to improve Power BI. For more information about how Microsoft uses your questions, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839) for more information.
 
 ## Next steps
-Learn how to ask your own natural language questions and create answers in the form of visuals. [Q&A Tutorial](end-user-q-and-a-tutorial.md) 
+
+To learn how to ask your own natural language questions and create answers in the form of visuals, see the [Q&A Tutorial](../create-reports/power-bi-tutorial-q-and-a.md).
+
+For tips on forming questions, see [How to ask questions with Q&A](../natural-language/q-and-a-intro.md).

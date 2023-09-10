@@ -1,20 +1,20 @@
 ---
 title: Troubleshoot report performance in Power BI
 description: Troubleshooting guide to diagnose slow report performance in Power BI.
-author: peter-myers
-ms.author: kfollis
-ms.reviewer: asaxton
+author: davidiseminger
+ms.author: davidi
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: troubleshooting
-ms.date: 04/15/2020
+ms.date: 03/17/2022
 ---
 
 # Troubleshoot report performance in Power BI
 
 This article provides guidance that enables developers and administrators to troubleshoot slow report performance. It applies to Power BI reports, and also Power BI paginated reports.
 
-Slow reports can be identified by report users who experience reports that are slow to load, or slow to update when interacting with slicers or other features. When reports are hosted on a Premium capacity, slow reports can also be identified by monitoring the [Power BI Premium Metrics app](../admin/service-admin-premium-monitor-capacity.md). This app helps you to monitor the health and capacity of your Power BI Premium subscription.
+Slow reports can be identified by report users who experience reports that are slow to load, or slow to update when interacting with slicers or other features. When reports are hosted on a Premium capacity, slow reports can also be identified by monitoring the [Power BI Premium Metrics app](/power-bi/enterprise/service-premium-metrics-app). This app helps you to monitor the health and capacity of your Power BI Premium subscription.
 
 ## Follow flowchart steps
 
@@ -39,7 +39,7 @@ The first consideration is to understand if the slow report is hosted on a Premi
 
 ### Premium capacity
 
-When the report is hosted on a Premium capacity, use the **Power BI Premium Metrics app** to determine if the report-hosting capacity frequently exceeds capacity resources. It's the case for CPU when it frequently exceeds 80%. For memory, it's when the [active memory metric](../admin/service-premium-metrics-app.md#the-active-memory-metric) exceeds 50. When there's pressure on resources, it may be time to [manage or scale the capacity](../admin/service-admin-premium-manage.md) (flowchart terminator 1). When there are adequate resources, investigate capacity activity during typical report usage (flowchart terminator 2).
+When the report is hosted on a Premium capacity, use the [Power BI Premium Metrics app](../enterprise/service-premium-metrics-app.md) to determine if the report-hosting capacity frequently exceeds capacity resources. When there's pressure on resources, it may be time to [manage or scale the capacity](../enterprise/service-admin-premium-manage.md) (flowchart terminator 1). When there are adequate resources, investigate capacity activity during typical report usage (flowchart terminator 2).
 
 ### Shared capacity
 
@@ -55,7 +55,7 @@ If you determine there's no time pattern, next consider if slow performance is i
 - Changing architecture by using [Azure Analysis Services](/azure/analysis-services/analysis-services-overview) (flowchart terminator 3).
 - Optimizing [on-premises data gateway performance](/data-integration/gateway/service-gateway-performance) (flowchart terminator 3).
 
-Finally, if you determine there's no time pattern _and_ slow performance occurs in all regions, investigate whether slow performance occurs on specific devices, clients, or web browsers. If it doesn't, use Power BI Desktop [Performance Analyzer](../create-reports/desktop-performance-analyzer.md), as described earlier, to optimize the report or model (flowchart terminator 5).
+Finally, if you determine there's no time pattern *and* slow performance occurs in all regions, investigate whether slow performance occurs on specific devices, clients, or web browsers. If it doesn't, use Power BI Desktop [Performance Analyzer](../create-reports/desktop-performance-analyzer.md), as described earlier, to optimize the report or model (flowchart terminator 5).
 
 When you determine specific devices, clients, or web browsers contribute to slow performance, we recommend creating a support ticket through the [Power BI support page](https://powerbi.microsoft.com/support/) (flowchart terminator 6).
 
@@ -66,6 +66,6 @@ For more information about this article, check out the following resources:
 - [Power BI guidance](index.yml)
 - [Monitoring report performance](monitor-report-performance.md)
 - [Performance Analyzer](../create-reports/desktop-performance-analyzer.md)
-- Whitepaper: [Planning a Power BI Enterprise Deployment](https://go.microsoft.com/fwlink/?linkid=2057861)
+- [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

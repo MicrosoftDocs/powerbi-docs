@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Create reports and dashboards in Power BI - documentation
-summary: Power BI documentation provides expert information for creating reports, dashboards, goals, and paginated reports.
+summary: Power BI documentation provides expert information for creating reports, dashboards, metrics, and paginated reports.
 
 metadata:
   title: Create reports and dashboards in Power BI - documentation
-  description: Power BI documentation provides expert information for creating reports, dashboards, goals, and paginated reports.
+  description: Power BI documentation provides expert information for creating reports, dashboards, metrics, and paginated reports.
   services: powerbi
   ms.service: powerbi
   ms.subservice: pbi-reports-dashboards
@@ -99,7 +99,7 @@ landingContent:
             url: ../visuals/power-bi-visualization-influencers.md
 
   # Card (optional)
-  - title: Goals and scorecards (preview)
+  - title: Metrics and scorecards (preview)
     linkLists:
       - linkListType: concept
         links:
@@ -178,6 +178,6 @@ landingContent:
           - text: "Create a dashboard"
             url: service-dashboard-create.md
           - text: "Pin a tile to a dashboard"
-            url: service-dashboard-pin-tile-from-report.md
+            url: service-dashboard-create.md
           - text: "Add images or video to a dashboard"
             url: service-dashboard-add-widget.md

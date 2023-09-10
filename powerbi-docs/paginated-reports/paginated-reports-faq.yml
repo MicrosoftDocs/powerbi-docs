@@ -3,21 +3,20 @@ metadata:
   title: "Paginated reports in Power BI: FAQ"
   description: This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. 
   author: maggiesMSFT
-  ms.author: maggies
+  ms.author: petebro
   ms.reviewer: ''
   ms.service: powerbi
   ms.subservice: report-builder
-  ms.topic: conceptual
-  ms.date: 10/18/2021
-    
+  ms.topic: faq
+  ms.date: 09/01/2023
+
 title: "Paginated reports in Power BI: FAQ"
 summary: |
-  [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
+  [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
   
   This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
   
-  This article answers many common questions people have about paginated reports in Power BI Premium, and about Report Builder, the standalone tool for authoring paginated reports. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in workspaces, as long as the workspace is in a Power BI Premium capacity. If you have a Premium Per User license, you can convert any workspace, including My Workspace, to a Premium workspace. See the [Power BI Premium Per User FAQ](../admin/service-premium-per-user-faq.yml#end-user-experience) for details.
-  
+  This article answers many common questions people have about paginated reports in Power BI, and about Power BI Report Builder, the standalone tool for authoring paginated reports. You don't need a [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license or a [Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md) to publish paginated reports to My Workspace. You do need a PPU or Power BI Pro license and write access to publish to other workspaces. Users with free, Pro, and PPU licenses can view the content. To learn more about licensing, see [Licensing the Power BI service for users in your organization](../enterprise/service-admin-licensing-organization.md)
 
 sections:
   - name: Administration
@@ -25,16 +24,7 @@ sections:
       - question: |
           What size Premium capacity do I need for paginated reports?
         answer: |
-          The paginated reports workload is available on P1 – P3 SKUs for Premium Gen1. You may also use it with A4 – A6 SKUs for embed or test/dev scenarios.
-
-          > [!NOTE]
-          > Power BI recently released a new version of Premium, called **Premium Gen2**. In **Premium Gen2**, the paginated reports workload is available on EM1-EM3 SKUs, P1-P3 SKUs and A1-A6 SKUs.  It also is available on a per user basis with Premium per user, which is built on Premium Gen2. 
-          >
-          >Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](../admin/service-premium-what-is.md#power-bi-premium-generation-2).
-          >
-          >To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).      
-          >  
-
+          Size of recommended Premium capacity would depend upon expected usage. Use the [capacity planning](paginated-capacity-planning.md) documentation for estimating the size of Premium capacity needed. Note that paginated reports are also available as part of a Power BI Pro license without needing to purchase a Premium capacity.
       - question: |
           What is the maximum memory threshold I can put for paginated reports in my capacity?
         answer: |
@@ -44,13 +34,6 @@ sections:
           How does user access work for paginated reports?
         answer: |
           User access for paginated reports is the same as user access for all other content in the Power BI service. 
-
-      - question: |
-          How do I turn on/off my paginated reports workload in a Gen1 Premium capacity?
-        answer: |
-          A Gen1 Premium capacity admin can enable or disable the paginated reports workload in the capacity admin portal page.  By default, the workload will be on for any new capacities you create.
-          
-          In a [Gen2 Premium capacity](../admin/service-premium-gen2-what-is.md#paginated-reports-and-premium-gen2), the paginated report workload is always on.
 
       - question: |
           How can I monitor usage of paginated reports in my tenant?
@@ -66,20 +49,14 @@ sections:
           
           Also, the audit logs provide the following events for paginated reports:
           
-          - Binded Power BI dataset to gateway
+          - Bound Power BI dataset to gateway
           - Discover Power BI Datasource
           - TakeOverDatasource
-          
-      - question: |
-          Can I monitor this workload through the Premium Capacity Monitoring App?
-        answer: |
-          Yes, monitoring is available as a new tab with the same relevant details you have for your Power BI datasets. This app is not supported in Power BI Premium Gen2.
 
       - question: |
           Do I need a Pro license to create and publish paginated reports?
         answer: |
-          You can upload paginated reports to your My Workspace without a Pro license, provided it's in a Premium Capacity.  For other workspaces, you must have a Pro license to author and publish content to them. If you have a Premium Per User license, you can convert any workspace, including My Workspace, to a Premium workspace. See the [Power BI Premium Per User FAQ](../admin/service-premium-per-user-faq.yml#end-user-experience) for details. We encourage you to download and use Power BI Report Builder even without the Pro license, but you can't publish the paginated reports you create without it.
-
+          You don't need a Power BI Pro license or a PPU license to create paginated reports, or to publish them to My Workspace in the Power BI service. We encourage you to [download and use Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513). You do need a Power BI Pro license or a PPU license to publish paginated reports to other workspaces.
       - question: |
           What if I have a paginated report in a workspace and the paginated report workload is turned off?
         answer: |
@@ -98,9 +75,6 @@ sections:
           
           :::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Paginated reports Capacity settings tab":::
           
-          > [!NOTE]
-          > **Premium Gen2** doesn't require you to change memory settings. The underlying system manages memory in Premium Gen2 automatically. Paginated reports workload is available on EM1-EM3 SKUs, P1-P3 SKUs and A1-A6 SKUs in **Premium Gen2**.
-          
   - name: General
     questions:
       - question: |
@@ -109,7 +83,16 @@ sections:
           Power BI reports are optimized for exploration and interactivity.  A sales report where different salespeople want to slice the data in the same report for their specific region/industry/customer and see how the numbers change would be best served by a Power BI report.
           
           For more information, see [When to use paginated reports in Power BI](../guidance/report-paginated-or-power-bi.md).
+ 
+      - question: |
+          Why is my report rendering differently than I expected? 
+        answer: |
+          If your report renders differently than you expected, check if you're using preview features. 
           
+          - On the **File** menu, look for a button labeled **Disable preview features**. If that button is there, select it, and allow the page to refresh. 
+          
+          If the report now renders as expected, leave preview features disabled for now. Otherwise, you can reenable preview features by selecting the **Enable preview features** button on the **File** menu. After 30 days, preview features are automatically reenabled, but you can disable them again through the same steps.   
+ 
       - question: |
           The documentation says Power BI Report Builder is the preferred authoring tool. Can I create paginated reports in SQL Server Data Tools for Power BI?
         answer: |
@@ -123,7 +106,9 @@ sections:
       - question: |
           How do I move existing reports I have saved in SQL Server Reporting Services to Power BI?
         answer: |
-          A project on GitHub now supports migrating content from SQL Server Reporting Services to Power BI.  View details and download the tool here: [https://github.com/microsoft/RdlMigration](https://github.com/microsoft/RdlMigration)
+          If you're using SQL Server 2022 Reporting Services, this article, [Publish .rdl files to Power BI from Reporting Services](../guidance/publish-reporting-services-power-bi-service.md), explains how to migrate.
+          
+          If you're using previous versions of SQL Server Reporting Services, a project on GitHub supports migrating content from SQL Server Reporting Services to Power BI.  View details and download the: [RDL Migration Tool](https://github.com/microsoft/RdlMigration).
           
       - question: |
           Can I open reports and publish directly to the service?
@@ -137,7 +122,6 @@ sections:
           
           - Shared data sources
           - Shared datasets
-          - Drillthrough and click-through to other reports
           - Linked reports
           - Custom fonts
           
@@ -181,7 +165,7 @@ sections:
       - question: |
           Can I run custom code in my report?
         answer: |
-          Yes, we support the ability to run code in your reports as you can in SSRS.
+          Yes, we support the ability to run code in your reports using code blocks or [Azure Functions](https://github.com/chmitch/ssrs-assembly-alternatives). Referencing custom code DLL files within a report is not supported.
 
       - question: |
           Can I use Power BI embedded to embed my paginated reports into an app I'm hosting?
@@ -196,7 +180,7 @@ sections:
       - question: |
           Can I share my paginated report content through a Power BI app?
         answer: |
-          Yes, paginated reports are supported to be deployed with apps from both v1 and v2 workspaces. 
+          Yes, you can deploy paginated reports in apps. 
 
       - question: |
           Will other report-specific features in Power BI, like pinning report tiles to dashboards, work with paginated reports?
@@ -216,15 +200,21 @@ sections:
   - name: Considerations and troubleshooting
     questions:
       - question: |
+          Do I need to set a query time-out for an embedded dataset in a paginated report?
+        answer: |
+          Query time-out values are specified during report authoring when you define an embedded dataset. The time-out value is stored with the report, in the Timeout element of the report definition. By default, this value is set to 600 seconds. For longer running queries, set a max timeout value of 2147483646 in the Dataset Properties dialog in Power BI Report Builder.
+      - question: |
           What are globalization limitations related to DateTime parameters?
         answer: |
           When working with DateTime fields in paginated reports, keep in mind that currently there are some globalization limitations related to DateTime parameters. All DateTime parameters in the Power BI service are fetched in US format (MM/DD/YYYY) regardless of how you design the DataTime in Power BI Report Builder.
-          
-          When viewing paginated reports in the Power BI service, sessions may time out, presenting the user with the following notification:
+      - question: |
+          I get a "Your session has expired" message. Why? 
+        answer: |
+          When you're viewing paginated reports in the Power BI service, sessions may time out, presenting you with a "Your session has expired" notification:
           
           :::image type="content" source="media/paginated-reports-faq/expired-session-notification.png" alt-text="Paginated reports session expired notification":::
           
-          The session will time out after 60 minutes of inactivity, or earlier when the device is locked or inactive, or when the report isn't displayed in the active tab of the browser.
+          The session will time out after 60 minutes of inactivity, or earlier when the device is locked or inactive, when the report is displayed in the active tab of the browser. The session will time out after 10 minutes of inactivity, or earlier when the device is locked or inactive, when the report isn't displayed in the active tab of the browser.
 
       - question: |
           I get an "error communicating with Analysis Services." Why? 
@@ -235,6 +225,11 @@ sections:
           
           For paginated reports running longer than 10 minutes, we recommend using  the XMLA endpoint to connect to the Power BI dataset.
 
+      - question: |
+          External tenant user accounts aren't supported with Power BI Report Builder
+        answer: |
+          In some customer scenarios, admins have allowed external users to their organization access to workspaces and content. What is an external user? One example would be a BikeManufacturer (`user@MyBikes.com`) account that has been given access to the Contoso (`user@Contoso.com`) tenant. An external user may see an "Access denied" error or see no content with Power BI Report Builder when accessing workspaces, or editing or creating reports. We'll look to adding this functionality in a future update.
+          
 additionalContent: |
 
   ## Next steps

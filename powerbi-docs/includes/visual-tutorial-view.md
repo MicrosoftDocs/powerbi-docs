@@ -5,7 +5,7 @@ services: powerbi
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: include
-ms.date: 12/30/2020
+ms.date: 08/07/2022
 ms.custom: include file
 ---
 
@@ -18,7 +18,7 @@ You can also use your own report to test the visual.
 
 1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/) and open the **US Sales Analysis** report.
 
-2. Select **More options** > **Edit**.
+2. Select **Edit**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the edit option in Power B I service.](media/visual-tutorial-view/edit-report.png)
@@ -43,7 +43,7 @@ You can also use your own report to test the visual.
     This is a simple visual that displays the number of times its update method has been called. At this stage, the visual does not retrieve any data.
 
     >[!NOTE]
-    >If the visual displays a connection error message, open a new tab in your browser, navigate to `https://localhost:8080/assets/status`, and authorize your browser to use this address.
+    >If the visual displays a connection error message, open a new tab in your browser, navigate to `https://localhost:8080/assets`, and authorize your browser to use this address.
     >
     >![Screenshot of the new visual displaying a connection error.](media/visual-tutorial-view/connection-error.png)
 

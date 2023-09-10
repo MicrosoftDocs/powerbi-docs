@@ -1,13 +1,13 @@
 ---
 title: On-premises data gateway in-depth
-description: This article looks at the on-premises gateway in-depth. This looks at how the service works with Azure Active Directory and your local Active Directory when working with Analysis Services
+description: Use these resources about how the Power BI service works with Azure Active Directory and your local Active Directory when working with Analysis Services. 
 author: arthiriyer
 ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/15/2019
+ms.date: 12/30/2022
 LocalizationGroup: Gateways
 ---
 
@@ -23,7 +23,7 @@ See [On-premises data gateway architecture](/data-integration/gateway/service-ga
 
 ## List of available data source types
 
-See [Manage data sources](service-gateway-data-sources.md).
+See [Add or remove a gateway data source](service-gateway-data-sources.md).
 
 ## Authentication to on-premises data sources
 
@@ -61,12 +61,12 @@ See [Synchronize an on-premises Active Directory with Azure Active Directory](/d
 
 See the articles on data sources:
 
-[Manage data sources](service-gateway-data-sources.md)
-[Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
-[Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
-[Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
-[Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md)  
-[Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
+- [Add or remove a gateway data source](service-gateway-data-sources.md)
+- [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
+- [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
+- [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
+- [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md)  
+- [Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 
 ## Where things can go wrong
 
@@ -98,6 +98,5 @@ See [Restart a gateway](/data-integration/gateway/service-gateway-restart).
 
 ## Next steps
 
-[What is the on-premises data gateway?](service-gateway-onprem.md)
-
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+- [What is the on-premises data gateway?](service-gateway-onprem.md)
+- More questions? [Try the Power BI Community](https://community.powerbi.com/)

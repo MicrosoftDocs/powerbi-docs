@@ -7,40 +7,43 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.devlang: csharp, javascript
 ms.topic: how-to
-ms.reviewer: zakharb
+ms.reviewer: 
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 10/20/2021
+ms.date: 07/13/2022
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
 
-This article walks through how to create a [Power BI Embedded](embedded-analytics-power-bi.md#power-bi-embedded) capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
+This article walks you through how to create a [Power BI Embedded](embedded-analytics-power-bi.md) capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
 
-## Before you begin
+## Prerequisites
 
-To complete this quickstart, you need:
+Before you can create a capacity, you need the following:
 
-* **Azure subscription:** Visit [Azure Free Trial](https://azure.microsoft.com/free/) to create an account.
+1. An **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (Azure AD) *organizational* tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft personal accounts aren't supported. To learn more, see [Authentication and user permissions](/azure/analysis-services/analysis-services-manage-users).
 
-* **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (Azure AD) tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft accounts aren't supported. To learn more, see [Authentication and user permissions](/azure/analysis-services/analysis-services-manage-users).
+2. A **Power BI tenant:** At least one account in your Azure AD tenant must be signed up for Power BI. Sign into Power BI from that account.
 
-* **Power BI tenant:** At least one account in your Azure AD tenant must have signed up for Power BI.
+3. **Azure subscription:** Visit [Azure Free Trial](https://azure.microsoft.com/free/) to create an account, if you don't already have one.
 
-* **Resource group:** Use a resource group you already have or [create a new one](/azure/azure-resource-manager/resource-group-overview).
+4. **Resource group:** Use a resource group you already have or [create a new one](/azure/azure-resource-manager/resource-group-overview).
 
 ## Create a capacity
 
-Before creating a Power BI Embedded capacity, make sure you have signed into Power BI at least once.
+>[!NOTE]
+>To create or manage a capacity, you must have the built-in role of [contributor](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) or higher.
+
+Before creating a Power BI Embedded capacity, make sure you're signed into Power BI at least once.
 
 ### [Portal](#tab/portal)
 
 1. Sign into the [Azure portal](https://portal.azure.com/).
 
-2. In the search box, search for *Power BI Embedded*.
+2. Under **Azure services**, select *Power BI Embedded*.
 
-3. Within Power BI Embedded, select **Add**.
+3. Within Power BI Embedded, select **Create**.
 
-4. Fill in the required information and then click **Review + Create**.
+4. Fill in the required information and then select **Review + Create**.
 
     > [!div class="mx-imgBorder"]
     >![Screenshot shows the Basics tab of the Power B I Embedded page to create new capacity in the Azure portal.](media/azure-pbie-create-capacity/azure-create-capacity.png)
@@ -53,7 +56,7 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
 
     * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](embedded-multi-geo.md).
 
-    * **Size** - The [A SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md).
+    * **Size** - The [A SKU](../../enterprise/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md).
 
     * **Power BI capacity administrator** - An admin for the capacity.
         >[!NOTE]
@@ -62,18 +65,9 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
         >* You can select a different user or service principal, as capacity administrator.
         >* The capacity administrator must belong to the tenant where the capacity is provisioned. Business to business (B2B) users cannot be capacity administrators.
 
-    * **Resource mode** - Select between these two Power BI Embedded resource modes:
-
-        * **Embedded Generation 1** - The classic Power BI Embedded resource.
-
-        * **Embedded Generation 2** - The new Power BI Embedded resource, offering improved experience. For more information, see [Power BI Embedded Premium Generation 2](power-bi-embedded-generation-2.md).
-
-        >[!IMPORTANT]
-        >Once you create a capacity resource, you cannot switch generations. If you want to change your Power BI Embedded generation, you can create another resource using a different generation, and reassign your workspaces to it. You can also automate this process using Azure Resource Manager APIs.
-
 ### [Azure CLI](#tab/CLI)
 
-### Use Azure Cloud Shell
+#### Use Azure Cloud Shell
 
 Azure hosts Azure Cloud Shell, an interactive shell environment that you can use through your browser. You can use either Bash or PowerShell with Cloud Shell to work with Azure services. You can use the Cloud Shell preinstalled commands to run the code in this article without having to install anything on your local environment.
 
@@ -91,17 +85,17 @@ To run the code in this article in Azure Cloud Shell:
 
 2. Select the **Copy** button on a code block to copy the code.
 
-3. Paste the code into the Cloud Shell session by selecting **Ctrl**+**Shift**+**V** on Windows and Linux or by selecting **Cmd**+**Shift**+**V** on macOS.
+3. Paste the code into the Cloud Shell session by selecting <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> on Windows and Linux or by selecting <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> on macOS.
 
-4. Select **Enter** to run the code.
+4. Select <kbd>Enter</kbd> to run the code.
 
-### Prepare your environment
+#### Prepare your environment
 
 Power BI embedded capacity commands require version 2.3.1 or later of the Azure CLI. Run `az --version` to find the version and dependent libraries that are installed. To install or upgrade, see [Install Azure CLI](/cli/azure/install-azure-cli).
 
 1. Sign in.
 
-   Sign in using the [az login](/cli/azure/reference-index#az_login) command if you're using a local install of the CLI.
+   Sign in using the [az login](/cli/azure/reference-index#az-login) command if you're using a local install of the CLI.
 
     ```azurecli
     az login
@@ -111,7 +105,7 @@ Power BI embedded capacity commands require version 2.3.1 or later of the Azure 
 
 2. Install the Azure CLI extension.
 
-    When working with extension references for the Azure CLI, you must first install the extension.  Azure CLI extensions give you access to experimental and pre-release commands that have not yet shipped as part of the core CLI.  To learn more about extensions including updating and uninstalling, see [Use extensions with Azure CLI](/cli/azure/azure-cli-extensions-overview).
+    When working with extension references for the Azure CLI, you must first install the extension.  Azure CLI extensions give you access to experimental and pre-release commands that haven't yet shipped as part of the core CLI.  To learn more about extensions including updating and uninstalling, see [Use extensions with Azure CLI](/cli/azure/azure-cli-extensions-overview).
 
     Install the extension for Power BI embedded capacity by running the following command:
 
@@ -121,7 +115,7 @@ Power BI embedded capacity commands require version 2.3.1 or later of the Azure 
 
 ### Create a capacity with Azure CLI
 
-Use the [az Power BI embedded-capacity create](/cli/azure/powerbi/embedded-capacity#az_powerbi_embedded_capacity_create) command to create a capacity.
+Use the [az Power BI embedded-capacity create](/cli/azure/powerbi/embedded-capacity#az-powerbi-embedded-capacity-create) command to create a capacity.
 
 ```azurecli
 az powerbi embedded-capacity create --location westeurope
@@ -133,7 +127,7 @@ az powerbi embedded-capacity create --location westeurope
 
 ### Delete a capacity with Azure CLI
 
-To delete a capacity using Azure CLI, use the [Azure Power BI embedded-capacity delete](/cli/azure/powerbi/embedded-capacity#az_powerbi_embedded_capacity_delete) command.
+To delete a capacity using Azure CLI, use the [Azure Power BI embedded-capacity delete](/cli/azure/powerbi/embedded-capacity#az-powerbi-embedded-capacity-delete) command.
 
 ```azurecli
 az powerbi embedded-capacity delete --name
@@ -156,11 +150,9 @@ If you don't have an Azure subscription, create a [free](https://azure.microsoft
 
 The templates used in this quickstart are from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/power-bi-embedded/).
 
-Once Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) - Create a Power BI Embedded capacity.
+Once Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) - create a Power BI Embedded capacity.
 
-#### Embedded Gen2
-
-Use this template to create an [Embedded Gen 2](power-bi-embedded-generation-2.md) resource.
+Use this template to create a Power BI Embedded resource.
 
 ```json
 {
@@ -222,78 +214,13 @@ Use this template to create an [Embedded Gen 2](power-bi-embedded-generation-2.m
 }
 ```
 
-#### Embedded Gen1
-
-Use this template to create a classic Power BI Embedded resource.
-
-```json
-{
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-        "name": {
-            "type": "string",
-            "metadata": {
-                "description": "The capacity name, which is displayed in the Azure portal and the Power BI admin portal"
-            }
-        },
-        "location": {
-            "type": "string",
-            "defaultValue": "[resourceGroup().location]",
-            "metadata": {
-                "description": "The location where Power BI is hosted for your tenant"
-            }
-        },
-        "sku": {
-            "type": "string",
-            "allowedValues": [
-                "A1",
-                "A2",
-                "A3",
-                "A4",
-                "A5",
-                "A6"
-            ],
-            "metadata": {
-                "description": "The pricing tier, which determines the v-core count and memory size for the capacity"
-            }
-        },
-        "admin": {
-            "type": "string",
-            "metadata": {
-                "description": "A user within your Power BI tenant, who will serve as an admin for this capacity"
-            }
-        }
-    },
-    "resources": [
-        {
-            "type": "Microsoft.PowerBIDedicated/capacities",
-            "apiVersion": "2021-01-01",
-            "name": "[parameters('name')]",
-            "location": "[parameters('location')]",
-            "sku": {
-                "name": "[parameters('sku')]"
-            },
-            "properties": {
-                "administration": {
-                    "members": [
-                        "[parameters('admin')]"
-                    ]
-                },
-                "mode": "Gen1"
-            }
-        }
-    ]
-}
-```
-
 ### Deploy the template
 
 1. Select the following link to sign in to Azure and open a template. The template creates a Power BI Embedded capacity.
 
     [![Deploy to Azure link](media/azure-pbie-create-capacity/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3a%2f%2fraw.githubusercontent.com%2fAzure%2fazure-quickstart-templates%2fmaster%2f101-power-bi-embedded%2fazuredeploy.json)
 
-2. Fill in the required information and then click **Review + Create**.
+2. Fill in the required information and then select **Review + Create**.
 
     ![Screenshot shows the Basics tab of the Create a Power B I Embedded capacity page to create new capacity in the Azure portal.](media/azure-pbie-create-capacity/arm-template.png)
 
@@ -308,7 +235,7 @@ Use this template to create a classic Power BI Embedded resource.
     * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](./embedded-multi-geo.md
 ).
 
-    * **SKU** - The [A SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md).
+    * **SKU** - The [A SKU](../../enterprise/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md).
 
     * **Admin** - An admin for the capacity.
         >[!NOTE]
@@ -327,7 +254,7 @@ To validate the deployment, do the following:
 
 3. Review the list of Power BI Embedded capacities, and verify that the new capacity you created is listed.
 
-    ![Screenshot of a Power BI Embedded capacity list in the Azure portal](media/azure-pbie-create-capacity/capacity-list.png)
+    :::image type="content" source="media/azure-pbie-create-capacity/capacity-list.png" alt-text="Screenshot of a Power BI Embedded capacity list in the Azure portal.":::
 
 ### Clean up resources
 
@@ -337,26 +264,24 @@ To delete the capacity you created, follow these steps:
 
 2. In the search box, search for *Power BI Embedded*.
 
-3. Open the context menu of the capacity you created and click **Delete**.
+3. Open the context menu of the capacity you created and select **Delete**.
 
-    ![Screenshot of the delete capacity option available from the context menu on the right of each capacity listing](media/azure-pbie-create-capacity/delete-capacity.png)
+    :::image type="content" source="media/azure-pbie-create-capacity/delete-capacity.png" alt-text="Screenshot of the delete capacity option available from the context menu on the right of each capacity listing.":::
 
-4. In the confirmation page, enter the name of the capacity and click **Delete**.
+4. In the confirmation page, enter the name of the capacity and select **Delete**.
 
-    ![Screenshot of the delete capacity warning and confirmation page in the Azure portal](media/azure-pbie-create-capacity/confirm-delete-capacity.png)
+    :::image type="content" source="media/azure-pbie-create-capacity/confirm-delete-capacity.png" alt-text="Screenshot of the delete capacity warning and confirmation page in the Azure portal.":::
 
 ---
 
+## Considerations and limitations
+
+Your subscription must be associated with an Azure Active Directory (Azure AD) organizational account. Microsoft personal accounts aren't supported
+
 ## Next steps
 
->[!div class="nextstepaction"]
->[Manage capacities](../../admin/service-admin-premium-manage.md)
+* [Manage capacities](../../enterprise/service-admin-premium-manage.md)
+* [Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md)
+* [Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
 
->[!div class="nextstepaction"]
->[Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md)
-
->[!div class="nextstepaction"]
->[Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
-
->[!div class="nextstepaction"]
->[More questions? Try asking the Power BI Community](https://community.powerbi.com/)
+[More questions? Try asking the Power BI Community](https://community.powerbi.com/)

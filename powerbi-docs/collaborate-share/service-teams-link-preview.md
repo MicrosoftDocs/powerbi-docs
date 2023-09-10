@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/06/2021
+ms.date: 01/18/2023
 ---
 
 # Get a Power BI link preview in Microsoft Teams
@@ -28,21 +28,15 @@ Follow these steps to get a link preview for content in the Power BI service.
 
 1. Copy a link to a report, a dashboard, or an app in the Power BI service. For example, copy the link from the browser address bar.
 
-1. Paste the link in the Microsoft Teams message box. Sign in to the link preview service if prompted. You might need to wait a few seconds for the link preview to load.
-
-    ![Screenshot of Sign in to Power B I bot.](media/service-teams-link-preview/service-teams-link-preview-sign-in-needed.png)
+1. Paste the link in the Microsoft Teams message box. Sign in to the link preview service if prompted.
 
 1. The basic link preview appears after successful sign-in.
 
     ![Screenshot of Basic link preview.](media/service-teams-link-preview/service-teams-link-preview-basic.png)
 
-1. Select the **Expand** icon to show the rich preview card.
+1. Use the **Expand** or **Collapse** icon to toggle between the rich preview card and the collapsed preview card. The rich link preview card shows the link and relevant action buttons, while the collapsed preview card shows only the link to the information.
 
-    ![Screenshot of Expand icon.](media/service-teams-link-preview/service-teams-link-preview-expand-icon.png)
-
-1. The rich link preview card shows the link and relevant action buttons.
-
-    ![Screenshot of Rich link preview card.](media/service-teams-link-preview/service-teams-link-preview-nice-card.png)
+    ![Screenshot of Expanded link preview.](media/service-teams-link-preview/service-teams-link-preview-expanded.png)
 
 1. Send the message.
 
@@ -55,4 +49,4 @@ Follow these steps to get a link preview for content in the Power BI service.
 
 - [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md)
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
+More questions? [Ask the Power BI Community](https://community.powerbi.com/).

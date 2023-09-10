@@ -20,15 +20,19 @@
       href: desktop-getting-started.md
     - name: "Get started with the Power BI service"
       href: service-get-started.md
+    - name: "Get started with Microsoft Fabric and Power BI"
+      href: fabric-get-started.md      
   - name: Concepts
     expanded: true
     items: 
     - name: "What's new in the latest Power BI update?"
       href: desktop-latest-update.md
+    - name: "The new experience in the Power BI service"
+      href: service-experience-changes.md
     - name: "Understand the Power BI service"
       href: service-basic-concepts.md
     - name: "Ten tips for getting help"
-      href: service-tips-for-finding-help.md
+      href: ../support/service-tips-for-finding-help.md
     - name: Licensing
       items: 
       - name: "What is self-service sign-up and self-service purchase?"
@@ -62,8 +66,6 @@
       href: videos.md
     - name: "Webinars"
       href: webinars.md                     
-    - name: "Power BI Desktop videos"
-      href: desktop-videos.md
     - name: "Power BI updates archive"
       href: desktop-latest-update-archive.md
     - name: "Power BI Desktop change log"

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/26/2021
+ms.date: 02/14/2023
 ---
 
 # Hardware and software requirements for installing Power BI Report Server
@@ -23,7 +23,7 @@ This article lays out the minimum hardware and software requirements to install 
 | Memory |**Minimum:** 1 GB<br/><br/> **Recommended:** At least 4 GB |
 | Processor speed |**Minimum:** x64 Processor: 1.4 GHz<br/><br/> **Recommended:** 2.0 GHz or faster |
 | Processor type |x64 Processor: AMD Opteron, AMD Athlon 64, Intel Xeon with Intel EM64T support, Intel Pentium IV with EM64T support |
-| Operating system |Windows Server 2019 Datacenter<br><br>Windows Server 2019 Standard<br><br>Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br> |
+| Operating system |Windows Server 2022<br><br>Windows Server 2019 Datacenter<br><br>Windows Server 2019 Standard<br><br>Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 11<br>|
 
 > [!NOTE]
 > Installation of Power BI Report Server is supported on x64 processors only.
@@ -34,6 +34,7 @@ This article lays out the minimum hardware and software requirements to install 
 SQL Server is used to host the report server databases. The SQL Server Database Engine instance can be a local or remote instance. The following are the supported versions of SQL Server Database Engine that can be used to host the report server databases:
 
 * Azure SQL Managed Instance (Power BI Report Server January 2020 version and later)
+* SQL Server 2022
 * SQL Server 2019
 * SQL Server 2017
 * SQL Server 2016

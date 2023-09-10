@@ -1,13 +1,13 @@
----
+﻿---
 title: Deploy to Power BI
 description: Guidance on deploying, supporting, and monitoring content when migrating to Power BI.
-author: peter-myers
-ms.author: v-petermyers
-ms.reviewer: asaxton
+author: davidiseminger
+ms.author: davidi
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/15/2021
+ms.date: 02/27/2022
 ms.custom: intro-deployment
 ---
 
@@ -31,7 +31,7 @@ The output from this stage is a production solution ready for use by the busines
 
 For IT-managed solutions, or solutions that are critical to business productivity, there's generally a test environment. A test environment sits between development and production, and it's not necessary for all Power BI solutions. A test workspace can serve as a stable location, separated from development, for user acceptance testing (UAT) to occur before release to production.
 
-If your content has been published to a workspace on Premium capacity, [deployment pipelines](../create-reports/deployment-pipelines-overview.md) can simplify the deployment process to development, test, and production workspaces. Alternatively, publishing may be done manually or with [PowerShell scripts](https://powerbi.microsoft.com/blog/duplicating-workspaces-by-using-power-bi-cmdlets/).
+If your content has been published to a workspace on Premium capacity, [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) can simplify the deployment process to development, test, and production workspaces. Alternatively, publishing may be done manually or with [PowerShell scripts](https://powerbi.microsoft.com/blog/duplicating-workspaces-by-using-power-bi-cmdlets/).
 
 ### Deploy to test workspace
 
@@ -71,11 +71,11 @@ During the deployment process, you may need to work with your Power BI administr
 
 - **Gateway maintenance:** A [new data source](../connect-data/service-gateway-data-sources.md) registration in the data gateway may be required.
 - **Gateway drivers and connectors:** A new proprietary data source may require installation of a new driver or custom connector on each server in the gateway cluster.
-- **Create a new Premium capacity:** You may be able to use an existing [Premium capacity](../admin/service-premium-capacity-manage.md). Or, there may be situations when a new Premium capacity is warranted. It could be the case when you purposely wish to separate a departmental workload.
+- **Create a new Premium capacity:** You may be able to use an existing [Premium capacity](../enterprise/service-premium-what-is.md). Or, there may be situations when a new Premium capacity is warranted. It could be the case when you purposely wish to separate a departmental workload.
 - **Set up a Power BI dataflow:** Data preparation activities can be set up once in a [Power BI dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) using Power Query Online. It helps avoid replicating data preparation work in many different Power BI Desktop files.
 - **Register a new organizational visual:** [Organizational visual](../developer/visuals/power-bi-custom-visuals-organization.md) registration can be done in the admin portal for custom visuals that didn't originate from AppSource.
 - **Set featured content:** A tenant setting exists that controls who may [feature content](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/) in the Power BI service home page.
-- **Set up sensitivity labels:** All [sensitivity labels](../admin/service-security-data-protection-overview.md) are integrated with Microsoft Information Protection.
+- **Set up sensitivity labels:** All [sensitivity labels](../enterprise/service-security-data-protection-overview.md) are integrated with Microsoft Purview Information Protection.
 
 ### Deploy to production workspace
 
@@ -85,7 +85,7 @@ Key activities during a deployment to the production workspace typically include
 - **Rollback plan:** With a migration, the expectation is that it's the migration of a new solution for the first time. If content does already exist, it's wise to have a plan to revert to the previous version, should it become necessary. Having previous versions of the Power BI Desktop files (using SharePoint or OneDrive versioning) works well for this purpose.
 - **Connection strings and parameters:** Adjust dataset connection strings when the data source differs between test and production. [Parameterization](../connect-data/service-parameters.md) can be used effectively for this purpose.
 - **Data refresh:** [Schedule the dataset refresh](../connect-data/refresh-scheduled-refresh.md) for any imported datasets.
-- **Workspace content:** Publish datasets and reports to the production workspace, and create dashboards. [Deployment pipelines](../create-reports/deployment-pipelines-overview.md) can simplify the process to deploy to development, test, and production workspaces if your content has been published to workspaces on Premium capacity.
+- **Workspace content:** Publish datasets and reports to the production workspace, and create dashboards. [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) can simplify the process to deploy to development, test, and production workspaces if your content has been published to workspaces on Premium capacity.
 - **App:** If apps are part of your content distribution strategy, publish an [app](../consumer/end-user-apps.md) using the content from the production workspace.
 - **Security:** Update and verify [workspace roles](../collaborate-share/service-roles-new-workspaces.md) based on your content distribution and collaboration strategy.
 - **Dataset settings:** Update and verify settings for each dataset, including:
@@ -96,7 +96,7 @@ Key activities during a deployment to the production workspace typically include
 - **Report and dashboard settings:** Update and verify settings for each report and dashboard. The most important settings include:
   - Description
   - Contact person or group
-  - [Sensitivity label](../admin/service-security-apply-data-sensitivity-labels.md)
+  - [Sensitivity label](../enterprise/service-security-apply-data-sensitivity-labels.md)
   - [Featured content](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/)
 - **Subscriptions:** Set up report subscriptions, if necessary.
 
@@ -154,11 +154,14 @@ Here's some questions that can be addressed by reviewing the activity log:
 
 Although the migration is complete, the post-migration period is vital for addressing issues and handling any performance concerns. Over time, the migrated solution will likely undergo changes as business needs evolve.
 
-Support tends to happen a little differently depending on how self-service BI is managed across the organization. Power BI champions throughout the business units often informally act as first-line support. Although it's an informal role, it's a vital one that should be encouraged.
+[Support](powerbi-adoption-roadmap-user-support.md) tends to happen a little differently depending on how self-service BI is managed across the organization. Power BI champions throughout the business units often informally act as first-line support. Although it's an informal role, it's a vital one that should be encouraged.
 
 Having a formal support process, staffed by IT with support tickets, is also essential for handling routine system-oriented requests and for escalation purposes.
 
-You may also have a [Center of Excellence (COE)](center-of-excellence-establish.md) that acts like internal consultants who support, educate, and govern Power BI in the organization. A COE can be responsible for curating helpful Power BI content in an internal portal.
+> [!NOTE]
+> The different types of [internal and external support](powerbi-adoption-roadmap-user-support.md#types-of-user-support) are described in the Power BI adoption roadmap.
+
+You may also have a [Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md) that acts like internal consultants who support, educate, and govern Power BI in the organization. A COE can be responsible for curating helpful Power BI content in an internal portal.
 
 Lastly, it should be clear to content consumers to know who to contact with questions about the content, and to have a mechanism for providing feedback on issues or improvements.
 

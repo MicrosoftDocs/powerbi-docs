@@ -1,13 +1,13 @@
 ---
 title: BI solution architecture in the Center of Excellence
 description: Learn what to consider when designing and developing a robust BI platform.
-author: peter-myers
-ms.author: kfollis
-ms.reviewer: asaxton
+author: davidiseminger
+ms.author: davidi
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 03/11/2022
 ---
 # BI solution architecture in the Center of Excellence
 
@@ -58,7 +58,7 @@ In a cloud BI platform, enterprise models can be deployed to a [Synapse SQL pool
 
 Business capabilities are enabled not by data alone, but by BI semantic models that describe concepts, relationships, rules, and standards. This way, they represent intuitive and easy-to-understand structures that define data relationships and encapsulate business rules as calculations. They can also enforce fine-grained data permissions, ensuring the right people have access to the right data. Importantly, they accelerate query performance, providing extremely responsive interactive analytics—even over terabytes of data. Like enterprise models, BI semantic models adopt naming conventions ensuring consistency.
 
-In a cloud BI platform, BI developers can deploy BI semantic models to [Azure Analysis Services](/azure/analysis-services/) or [Power BI Premium capacities](../admin/service-premium-what-is.md#reserved-capacities). We recommend deploying to Power BI when it's used as your reporting and analytics layer. These products support different storage modes, allowing data model tables to cache their data or to use [DirectQuery](directquery-model-guidance.md), which is a technology that passes queries through to the underlying data source. DirectQuery is an ideal storage mode when model tables represent large data volumes or there's a need to deliver near-real time results. The two storage modes can be combined: [Composite models](composite-model-guidance.md) combine tables that use different storage modes in a single model.
+In a cloud BI platform, BI developers can deploy BI semantic models to [Azure Analysis Services](/azure/analysis-services/) or [Power BI Premium capacities](../enterprise/service-premium-what-is.md#capacities-and-skus). We recommend deploying to Power BI when it's used as your reporting and analytics layer. These products support different storage modes, allowing data model tables to cache their data or to use [DirectQuery](directquery-model-guidance.md), which is a technology that passes queries through to the underlying data source. DirectQuery is an ideal storage mode when model tables represent large data volumes or there's a need to deliver near-real time results. The two storage modes can be combined: [Composite models](composite-model-guidance.md) combine tables that use different storage modes in a single model.
 
 For heavily queried models, [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) can be used to evenly distribute the query load across model replicas. It also allows you to scale your applications and create highly available BI semantic models.
 
@@ -151,6 +151,7 @@ Typically, data consumption patterns differ based on role:
 
 For more information about this article, check out the following resources:
 
+- [Power BI adoption roadmap: Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md)
 - [Enterprise BI in Azure with Azure Synapse Analytics](/azure/architecture/reference-architectures/data/enterprise-bi-synapse)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
