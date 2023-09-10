@@ -108,7 +108,7 @@ We recommend you enable this policy only on a per-app basis.
 
 To create this policy, you need to be a **Global Administrator** for the directory where you're creating the policy and assigning it. Here's a sample script for creating the policy and assigning it to the SP for this application:
 
-1. Install the [Microsoft Graph PowerShell Module](/powershell/microsoftgraph/#install-the-microsoft-graph-powershell-sdk).
+1. Install the [Microsoft Graph PowerShell Module](/powershell/microsoftgraph/installation).
 
 2. Run the following PowerShell commands line-by-line (making sure the variable `$sp` doesn't have more than one application as a result).
 
