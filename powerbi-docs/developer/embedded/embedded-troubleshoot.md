@@ -24,7 +24,7 @@ This article discusses some common issues you may get when embedding content fro
 
 ### F12 in Browser for front-end debugging
 
-F12 launches the developer window within your browser. This tool provides the ability to look at network traffic and other information.
+F12 launches the developer window within your browser. This tool lets you see network traffic and other information.
 
 ![F12 Browser debugging](media/embedded-troubleshoot/browser-f12.png)
 
@@ -54,7 +54,7 @@ Provide the Request ID when approaching Microsoft support.
 
 ### App registration failure
 
-Error messages within the Azure portal or the Power BI app registration page mention insufficient privileges. To register an application, you must be an admin in the Azure AD tenant or application registrations must be enabled for non-admin users.
+Error messages within the Azure portal or the Power BI app registration page mention insufficient privileges. To register an application, you must be an admin in the Azure AD tenant or application registrations must be enabled for nonadmin users.
 
 ### Power BI Service doesn't appear in the Azure portal when registering a new App
 
@@ -151,7 +151,7 @@ There's a way to turn this back on using an [Azure AD Policy](/azure/active-dire
 
 We recommend you enable this policy only as a per-app basis.
 
-To create this policy, you need to be a **Global Administrator** for the directory where you're creating the policy and assigning. Here is a sample script for creating the policy and assigning it to the SP for this application:
+To create this policy, you need to be a **Global Administrator** for the directory where you're creating the policy and assigning. Here's a sample script for creating the policy and assigning it to the SP for this application:
 
 1. Install the [Microsoft Graph PowerShell Module](/powershell/microsoftgraph/#install-the-microsoft-graph-powershell-sdk).
 
@@ -196,7 +196,7 @@ To verify which it is, try the steps below.
 ### AADSTS90094: The grant requires admin permission
 
 **_Symptoms:_**<br>
-When a non-admin user tries to sign in to an application for the first time while granting consent, then gets one of the following errors:
+When a nonadmin user tries to sign in to an application for the first time while granting consent, then gets one of the following errors:
 
 * ConsentTest needs permission to access resources in your organization that only an admin can grant. Ask an admin to grant permission to this app before you can use it.
 * AADSTS90094: The grant requires admin permission.
@@ -210,7 +210,7 @@ User consent is disabled for the tenant.
 
 **_Several fixes are possible:_**
 
-*Enable user consent for the entire tenant (all users, all applications)*
+*Enable user consent for the entire tenant (all users, all applications).*
 
 1. In the Azure portal, navigate to "Azure Active Directory" => "Users and groups" => "User settings"
 2. Enable the "Users can consent to apps accessing company data on their behalf" setting and save the changes
@@ -249,11 +249,11 @@ A data source can have a single set of credentials for one master user. If you n
 
 Use the [**IError object** returned by the *error* event from the **JavaScript SDK**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts) to debug your application and better understand the cause of your errors.
 
-After acquiring the IError object, you should look at the appropriate common errors table that fits the embed type you're using. Compare the **IError properties** with the ones in the table and find the possible reason(s) for the failure.
+After acquiring the IError object, you should look at the appropriate common errors table that fits the embed type you're using. Compare the **IError properties** with the ones in the table and find the one or more possible reasons for the failure.
 
 ### Typical errors when embedding for Power BI users
 
-| Message | Detailed Message | Error Code | Possible reason(s) |
+| Message | Detailed Message | Error Code | Possible reason |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
 | PowerBIEntityNotFound | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn't exist  |
@@ -283,7 +283,7 @@ After acquiring the IError object, you should look at the appropriate common err
 
 ### Manage which portion of the data your users can see
 
-Any user with read permissions for a dataset can see the entire schema (tables, columns and measures) and all the data. You cannot separately control viewing permissions to raw and aggregated data in the same dataset.
+Any user with read permissions for a dataset can see the entire schema (tables, columns, and measures) and all the data. You can't separately control viewing permissions to raw and aggregated data in the same dataset.
 
 To manage which portion of the data your users can view, use one of these methods:
 
