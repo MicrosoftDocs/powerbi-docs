@@ -1,7 +1,7 @@
 ---
 title: "Create a recursive hierarchy group in a Power BI paginated report | Microsoft Docs"
 description: Learn about organizing data in a Power BI paginated report, from a single report dataset that includes hierarchical levels, by using a recursive hierarchy group.
-ms.date: 07/14/2023
+ms.date: 09/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -18,7 +18,7 @@ In paginated reports, a recursive hierarchy group organizes data from a single r
  Before you can organize data in a table as a recursive hierarchy group, you must have a single dataset that contains all the hierarchical data. You must have separate fields for the item to group and for the item to group by. For example, a dataset where you want to group employees recursively under their manager might contain a name, an employee name, an employee ID, and a manager ID.  
   
  
-## To create a recursive hierarchy group  
+## Create a recursive hierarchy group  
   
 1.  In Design view, add a table, and drag the dataset fields to display. Typically, the field that you want to show as a hierarchy is in the first column.  
   
@@ -28,7 +28,7 @@ In paginated reports, a recursive hierarchy group organizes data from a single r
   
 1.  In the **Group on** list, type or select the field to group.  
   
-1.  Click **Advanced**.  
+1.  Select **Advanced**.  
   
 1.  In the **Recursive Parent** list, enter or select the field to group on.  
   
@@ -36,12 +36,12 @@ In paginated reports, a recursive hierarchy group organizes data from a single r
   
      Run the report. The report displays the recursive hierarchy group, although there is no indent to show the hierarchy.  
   
-## To format a recursive hierarchy group with indent levels  
+## Format a recursive hierarchy group with indent levels  
   
-1.  Click the text box that contains the field to which you want to add indent levels to display a hierarchy format. The properties for the text box appear in the Properties pane.  
+1.  Select the text box that contains the field to which you want to add indent levels to display a hierarchy format. The properties for the text box appear in the Properties pane.  
   
     > [!NOTE]  
-    >  If you do not see the Properties pane, select **Properties** on the **View** tab.  
+    >  If you don't see the Properties pane, select **Properties** on the **View** tab.  
   
 1.  In the Properties pane, expand the **Padding** node, select **Left**, and from the drop-down list, select **\<Expression...>**.  
   
@@ -56,7 +56,7 @@ In paginated reports, a recursive hierarchy group organizes data from a single r
      Run the report. The report displays a hierarchical view of the grouped data.  
   
 ## Next steps  
- [Creating recursive hierarchy groups &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/creating-recursive-hierarchy-groups-report-builder.md)
+ [Creating recursive hierarchy groups &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/creating-recursive-hierarchy-groups-report-builder.md)   
  [Filter, group, and sort data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)   
  [Aggregate functions reference &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md)   
  [Tables &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-report-builder-and-ssrs)   
