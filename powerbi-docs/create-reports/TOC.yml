@@ -278,6 +278,8 @@
       href: ../visuals/power-bi-visualization-basic-area-chart.md
     - name: Create card visuals (big number tiles)
       href: ../visuals/power-bi-visualization-card.md
+    - name: Create a card (new) visualization (big number tiles)
+      href: ../visuals/power-bi-visualization-new-card.md
     - name: Combo charts
       href: ../visuals/power-bi-visualization-combo-chart.md
     - name: Doughnut charts
