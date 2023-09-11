@@ -1,7 +1,7 @@
 ---
-title: "Add a Filter to a Dataset (Power BI Report Builder)"
+title: "Add a filter to a dataset (Power BI Report Builder)"
 description: Learn how to add a filter to a dataset to limit the data in a report after the data is retrieved from an external data source.
-ms.date: 09/07/2023
+ms.date: 09/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: rpatkar
 ---
-# Add a Filter to a Dataset (Power BI Report Builder)
+# Add a filter to a dataset (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
@@ -17,17 +17,17 @@ ms.reviewer: rpatkar
   
  To add a filter, you must specify one or more conditions that are filter equations. A filter equation consists of an expression that identifies the data that you want to filter, an operator, and the value to compare to. The data types of the filtered data and the value must match. Filtering on aggregate values for a dataset is not supported.  
 
-### To add a filter to an embedded dataset instance  
+## Add a filter to an embedded dataset instance  
   
 1.  Open a report in report design mode.
   
-2.  Right-click a dataset in the **Report Data** pane and then click **Dataset Properties**. The **Dataset Properties** dialog box opens.  
+2.  Right-click a dataset in the **Report Data** pane and then select **Dataset Properties**. The **Dataset Properties** dialog box opens.  
   
-3.  Click **Filters**. This displays the current list of filter equations. By default, the list is empty.  
+3.  Select **Filters**. This displays the current list of filter equations. By default, the list is empty.  
   
-4.  Click **Add**. A new blank filter equation appears.  
+4.  Select **Add**. A new blank filter equation appears.  
   
-5.  In **Expression**, type or select the expression for the field to filter. To edit the expression, click the expression (*fx*) button.  
+5.  In **Expression**, type or select the expression for the field to filter. To edit the expression, select the expression (*fx*) button.  
   
 6.  From the drop-down box, select the data type that matches the type of data in the expression you created in step 5.  
   
@@ -35,12 +35,12 @@ ms.reviewer: rpatkar
   
 8.  In the **Value** box, type the expression or value against which you want the filter to evaluate the value in **Expression**.  
   
-     For examples of filter equations, see [Filter Equation Examples &#40;Report Builder&#41;](../expressions/filter-equation-examples-report-builder.md).
+     For examples of filter equations, see [Filter Equation Examples (Report Builder)](../expressions/filter-equation-examples-report-builder.md).
   
 9.  Select **OK**.
   
 ## Next steps
- [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Report Builder&#41;](../report-design/add-dataset-filters-data-region-filters-and-group-filters.md)
- [Expression Examples &#40;Report Builder&#41;](../expressions/report-builder-expression-examples.md)
- [Add a Filter &#40;Report Builder&#41;](../report-design/add-filter-report-builder.md)
+ [Add Dataset Filters, Data Region Filters, and Group Filters (Report Builder)](../report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
+ [Expression Examples (Report Builder)](../expressions/report-builder-expression-examples.md)   
+ [Add a Filter (Report Builder)](../report-design/add-filter-report-builder.md)   
   
