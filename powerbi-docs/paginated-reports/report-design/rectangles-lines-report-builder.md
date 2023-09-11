@@ -24,10 +24,10 @@ ms.reviewer: saurkumar
  When using rectangles to contain report items, consider how the report items will be affected as a whole during the report rendering. Report items that contain repeated rows of data (for example, tables) will expand to accommodate the data that is returned by a query, and this affects the positioning of other report items in the rectangle. A table will push the report items down if they are positioned below the data region. To anchor a report item in place, you can place the report item inside of a rectangle that has an upper edge above the lower edge of the table. For more information, see [Rendering behaviors &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-behaviors-report-builder-service.md).  
   
 ##  <a name="ReportBorder"></a> Adding a report border  
- You can add a border to a report by adding borders to the headers, footers, and report body themselves, without adding lines or rectangles. For more information, see [Add a border to a report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-a-border-to-a-report-report-builder-and-ssrs).  
+ You can add a border to a report by adding borders to the headers, footers, and report body themselves, without adding lines or rectangles. For more information, see [Add a border to a report &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/add-border-report-report-builder.md)  .  
   
 ##  <a name="HowTo"></a> How-to topics  
- [Add a border to a report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-a-border-to-a-report-report-builder-and-ssrs)    
+ [Add a border to a report &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/add-border-report-report-builder.md)    
  [Add a rectangle or container &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-a-rectangle-or-container-report-builder-and-ssrs)    
  [Add and modify a line &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-and-modify-a-line-report-builder-and-ssrs)  
   
