@@ -33,9 +33,9 @@ This topic does not applies to pie, doughnut, funnel, or pyramid chart types.
   
    
 ## Next steps  
- [Formatting Axis Labels on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
+ [Formatting Axis Labels on a Chart &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/format-axis-labels-chart-report-builder.md)
  [Axis Properties Dialog Box, Axis Options &#40;Power BI Report Builder&#41;](/previous-versions/sql/)   
- [Specify an Axis Interval &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-an-axis-interval-report-builder-and-ssrs)   
- [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/format-axis-labels-as-dates-or-currencies-report-builder-and-ssrs)   
- [Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs)  
+ [Specify an Axis Interval &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/specify-axis-interval-report-builder.md)   
+ [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/format-axis-labels-dates-currencies-report-builder.md)   
+ [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md)  
   
