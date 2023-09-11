@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 08/28/2023
+ms.date: 09/11/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -43,7 +43,9 @@ This tutorial uses the Retail Analysis Sample.
 
 1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-visualization-new-card/add-1.png"::: to add a new page to the report.
 
-## Build a card (new) visual
+---
+
+## Build a new card visualization
 
 # [On the ribbon](#tab/On-the-ribbon)
 
