@@ -26,13 +26,13 @@ ms.reviewer: saurkumar
   
   
 ## In this section  
- [Formatting text and placeholders &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)  
+ [Formatting text and placeholders &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/format-text-placeholders-report-builder.md)  
  Describes how to format text and customize format options for different blocks of text within a text box.  
   
- [Formatting numbers and dates &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-numbers-and-dates-report-builder-and-ssrs)  
+ [Formatting numbers and dates &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/format-numbers-dates-report-builder-service.md)    
  Describes how to use standard and custom formatting strings that are supported.
   
- [Formatting lines, colors, and images &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-lines-colors-and-images-report-builder-and-ssrs)  
+ [Formatting lines, colors, and images &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/format-lines-colors-images-report-builder-service.md)  
  Describes how to format lines, gridlines, colors, and images within report items and data regions.  
   
   
