@@ -1,7 +1,7 @@
 ---
 title: "Interactive sort in a Power BI paginated report | Microsoft Docs"
 description: Add interactive sort buttons to enable a user to toggle between ascending and descending order for rows in a table in a Power BI paginated report.
-ms.date: 07/17/2023
+ms.date: 09/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -20,17 +20,17 @@ ms.reviewer: saurkumar
   
  When you add an interactive sort, you must specify the following items:  
   
--   **What to sort:** Rows or columns?  
+- **What to sort:** Rows or columns?  
   
--   **What to sort by:** A field that is displayed in a table column? A field that is not displayed?  
+- **What to sort by:** A field that is displayed in a table column? A field that is not displayed?  
   
--   **What context to sort in:** For example, you can sort on rows associated with row groups; columns associated with column groups; detail rows; child groups within a parent group; or parent and child group together.  
+- **What context to sort in:** For example, you can sort on rows associated with row groups; columns associated with column groups; detail rows; child groups within a parent group; or parent and child group together.  
   
--   **Which text box to add the sort button to:** In the column header or in the group row header?  
+- **Which text box to add the sort button to:** In the column header or in the group row header?  
   
--   **Whether to synchronize the sort for multiple data regions:** You can design a report so that when the user toggles the sort order, other data regions with the same ancestor also sort.  
+- **Whether to synchronize the sort for multiple data regions:** You can design a report so that when the user toggles the sort order, other data regions with the same ancestor also sort.  
   
- For step-by-step instructions, see [Add Interactive sort to a table or matrix &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-interactive-sort-to-a-table-or-matrix-report-builder-and-ssrs).  
+ For step-by-step instructions, see [Add Interactive sort to a table or matrix (Power BI Report Builder)](/sql/reporting-services/report-design/add-interactive-sort-to-a-table-or-matrix-report-builder-and-ssrs).  
   
  The following table summarizes the effects you can achieve by using interactive sort buttons.  
   
@@ -42,16 +42,16 @@ ms.reviewer: saurkumar
 |Sort rows for multiple row groups and detail rows in a table|Groups, but you must redefine the group expression|Column header|Aggregate of dataset field to sort by|Data region|  
 |Synchronize the sort order for multiple data regions|Groups|Typically, column header|Group expression|Dataset|  
   
- The report processor applies interactive sort after all data region and group sort expressions are applied. For more information, see [Filter, group, and sort data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md).  
+ The report processor applies interactive sort after all data region and group sort expressions are applied. For more information, see [Filter, group, and sort data (Power BI Report Builder)](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md).  
   
-## Adding interactive sort for multiple groups  
+## Add interactive sort for multiple groups  
  In a table with nested row groups each based on a single dataset field, you can add an interactive sort button that sorts parent group values, child group values, or detail rows. However, you might want to provide the user with the ability to sort the table by both the parent and child group values without having to click multiple times.  
   
- To do this, you must redesign the table to group on an expression that combines multiple fields. For example, for a dataset with inventory counts, if the original table grouped by size and then by color, you can specify a single group with a group expression that is a combination of size and color. For more information, see [Add interactive sort to a table or matrix &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-interactive-sort-to-a-table-or-matrix-report-builder-and-ssrs).  
+ To do this, you must redesign the table to group on an expression that combines multiple fields. For example, for a dataset with inventory counts, if the original table grouped by size and then by color, you can specify a single group with a group expression that is a combination of size and color. For more information, see [Add interactive sort to a table or matrix (Power BI Report Builder)](/sql/reporting-services/report-design/add-interactive-sort-to-a-table-or-matrix-report-builder-and-ssrs).  
   
 ## Next steps  
- [Sort data in a data region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/sort-data-data-region-report-builder.md)   
- [Filter, group, and sort data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)   
- [Add interactive sort to a table or matrix &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-interactive-sort-to-a-table-or-matrix-report-builder-and-ssrs)  
+ [Sort data in a data region (Power BI Report Builder)](../../paginated-reports/report-design/sort-data-data-region-report-builder.md)   
+ [Filter, group, and sort data (Power BI Report Builder)](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)   
+ [Add interactive sort to a table or matrix (Power BI Report Builder)](/sql/reporting-services/report-design/add-interactive-sort-to-a-table-or-matrix-report-builder-and-ssrs)  
   
   
