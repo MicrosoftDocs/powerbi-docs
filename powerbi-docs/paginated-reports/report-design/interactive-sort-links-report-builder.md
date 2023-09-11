@@ -34,7 +34,7 @@ ms.reviewer: saurkumar
  [Interactive sort &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/interactive-sort-report-builder.md)  
  Explains how to add interactive sort buttons to column headers.  
   
- [Add a bookmark to a report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-a-bookmark-to-a-report-report-builder-and-ssrs)  
+ [Add a bookmark to a report &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/add-bookmark-report-report-builder.md)
  Explains how to add bookmarks to create links within a report.  
   
  [Add a hyperlink to a URL &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/add-hyperlink-url-report-builder.md)  
