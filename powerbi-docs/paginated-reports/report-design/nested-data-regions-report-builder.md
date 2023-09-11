@@ -1,7 +1,7 @@
 ---
 title: "Nested data regions in a Power BI paginated report | Microsoft Docs"
 description: Discover ways to nest a data region inside another data region in Power BI Report Builder. Display data summaries in a Power BI paginated report in a concise table or matrix. 
-ms.date: 07/17/2023
+ms.date: 09/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -25,7 +25,7 @@ ms.reviewer: saurkumar
  By definition, nested data regions are based on the same report dataset. You cannot nest data regions that are based on different datasets. To display data from different datasets, consider using drillthrough reports or subreports. For more information, see [Drillthrough, drilldown, subreports, and nested data regions &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/drillthrough-drilldown-subreports-nested-data-regions.md).  
   
  
-## Understanding scope for a nested data region  
+## Understand scope for a nested data region  
  The scope for data in a nested data region is automatically defined by its placement in the parent data region. For example, the scope for data for a chart nested in a tablix corner cell is the data from the dataset bound to the tablix data region after the filters are applied for the dataset, the tablix data region, and the chart data region. The scope for a tablix nested in a tablix cell is the same as the scope for the corner cell, but additionally scoped to the row and column group memberships of the cell in which it is nested, with the corresponding group filters applied. For more information about scope, see [Expression scope for totals, aggregates, and built-in collections &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/expression-scope-for-totals-aggregates-and-built-in-collections.md).  
   
  The following list describes the scope for cells in the following tablix areas:  
@@ -40,7 +40,7 @@ ms.reviewer: saurkumar
   
  For more information, see [Tablix data region areas &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tablix-data-region-areas-report-builder-and-ssrs).  
   
-## Nesting a chart, sparkline, or data bar in a tablix  
+## Nest a chart, sparkline, or data bar in a tablix  
  When you add a chart (including a sparkline or data bar) to a tablix column group header or group footer row, or to a tablix body cell, the data passed to the chart is scoped to the subset of data for that cell. By default, when you add a chart to a tablix cell, the chart dimensions expand to fill the cell.  
   
 > [!NOTE]  
@@ -48,10 +48,10 @@ ms.reviewer: saurkumar
   
  By default, the chart legend colors are determined by the color of the data points in the chart series. To control colors so that nested chart data regions all use the same color for the same category of data, you must use custom colors and set sort expressions on the data. For more information, see [Specify consistent colors across multiple shape charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/specify-consistent-colors-across-multiple-shape-charts-report-builder.md) and [Sort data in a data region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/sort-data-data-region-report-builder.md).  
   
-## Nesting a gauge or an indicator in a tablix  
+## Nest a gauge or an indicator in a tablix  
  You can nest a gauge or an indicator inside of a table, matrix, or list in order to show a key performance indicator (KPI). When you place a gauge or indicator inside of a table, it will be rendered for each row in the tablix. For more information about adding indicators to a tablix, see [Indicators &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/indicators-report-builder.md).  
   
-### Adding a gauge to a tablix  
+### Add a gauge to a tablix  
  There are two ways to add a gauge to a tablix data region:  
   
 -   Select inside the tablix cell and insert a gauge. The **Select Gauge Type** dialog box appears. Once you have selected a gauge type, the Gauge data region is placed inside of the selected tablix cell. You will likely need to resize the tablix in order to format the gauge.  
@@ -66,7 +66,7 @@ ms.reviewer: saurkumar
   
  If the data becomes too large on the gauge, consider using a scale multiplier to reduce the number of digits displayed. To specify a multiplier, you can right-click on the scale and select **Scale Properties**. When the **Scale Properties** dialog box opens, specify a value for **Multiplier**.  
   
-## Nesting a table or matrix and a chart in a list  
+## Nest a table or matrix and a chart in a list  
  To nest multiple data regions in a List add a rectangle first, and then add the data regions to the rectangle.  
   
  You can define a group for a List data region, and then add a tablix and a chart to provide different views of the same data. To achieve this effect, you must define identical group and sort expressions for the embedded tablix and chart. By definition, the tablix and chart use data from the dataset of the parent list data region.  
