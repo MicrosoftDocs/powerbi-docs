@@ -1,7 +1,7 @@
 ---
 title: "Format Power BI paginated report items | Microsoft Docs"
 description:  Discover how formatting enhances readability and makes your Power BI paginated reports more attractive in Power BI Report Builder.
-ms.date: 07/14/2023
+ms.date: 09/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -25,18 +25,16 @@ ms.reviewer: saurkumar
   
   
   
-## In this section  
- [Formatting text and placeholders &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/format-text-placeholders-report-builder.md)  
+## Next steps
+ [Format text and placeholders (Power BI Report Builder)](../../paginated-reports/report-design/format-text-placeholders-report-builder.md)  
  Describes how to format text and customize format options for different blocks of text within a text box.  
   
- [Formatting numbers and dates &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/format-numbers-dates-report-builder-service.md)    
+ [Format numbers and dates (Power BI Report Builder)](../../paginated-reports/report-design/format-numbers-dates-report-builder-service.md)    
  Describes how to use standard and custom formatting strings that are supported.
   
- [Formatting lines, colors, and images &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/format-lines-colors-images-report-builder-service.md)  
+ [Format lines, colors, and images (Power BI Report Builder)](../../paginated-reports/report-design/format-lines-colors-images-report-builder-service.md)  
  Describes how to format lines, gridlines, colors, and images within report items and data regions.  
   
-  
-## Next steps  
- [Format a Chart &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/formatting-chart-report-builder.md)  
+ [Format a Chart (Power BI Report Builder)](../../paginated-reports/report-design/visualizations/formatting-chart-report-builder.md)  
   
   
