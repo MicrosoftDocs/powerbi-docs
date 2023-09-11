@@ -1,7 +1,7 @@
 ---
 title: "Show ToolTips on a series in a Power BI paginated report | Microsoft Docs"
 description: Learn how to add a ToolTip to each data point on the series of a chart in a Power BI paginated report to display related information in Power BI Report Builder.
-ms.date: 07/17/2023
+ms.date: 09/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -18,7 +18,7 @@ ms.reviewer: saurkumar
  You cannot add a ToolTip to a calculated series.  
   
   
-## To specify a ToolTip on each data point  
+## Specify a ToolTip on each data point  
   
 1.  Right-click on the series or right-click on the field in the **Values** area, and select **Series Properties**.  
   
