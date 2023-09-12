@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 06/13/2023
+ms.date: 09/12/2023
 LocalizationGroup: Data from files
 ---
 # Sensitivity label downstream inheritance
@@ -68,6 +68,7 @@ By default, downstream inheritance operates in user consent mode. To switch down
 * Downstream inheritance never overwrites manually applied labels. See [below](#downstream-inheritance-between-datasets-and-reports-published-from-pbix-files) for a significant consideration.
 * Downstream inheritance never replaces a label on downstream content with a label that's less restrictive than the currently applied label.
 * [Sensitivity labels inherited from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md) are automatically propagated downstream only when fully automated downstream inheritance mode is enabled.
+* Downstream inheritance isn't triggered when the label on the parent item is applied using the Power BI REST [SetLabelasAdmin API](/rest/api/power-bi/admin/information-protection-set-labels-as-admin).
 
 ### Downstream inheritance between datasets and reports published from *.pbix* files
 

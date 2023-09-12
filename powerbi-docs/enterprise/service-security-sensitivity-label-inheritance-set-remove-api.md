@@ -30,6 +30,10 @@ The APIs set or remove labels from artifacts by artifact ID.
 * [setLabels](/rest/api/power-bi/admin/information-protection-set-labels-as-admin)
 * [removeLabels](/rest/api/power-bi/admin/information-protection-remove-labels-as-admin)
 
+## Considerations and limitations
+
+Setting a label via the Power BI admin REST [SetLabelsAsAdmin API](/rest/api/power-bi/admin/information-protection-set-labels-as-admin) doesn't trigger downstream inheritance to downstream items.
+
 ## Sample
 
 The following sample demonstrates how to set and remove sensitivity labels on Power BI dashboards. Similar code can be used to set and remove labels on datasets, reports, and dataflows.
