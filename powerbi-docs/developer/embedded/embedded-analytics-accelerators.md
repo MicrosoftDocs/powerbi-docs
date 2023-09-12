@@ -114,7 +114,7 @@ The following tables compare features of the different accelerators from our par
 
 ### Deployment options
 
-| **Partner** <br> (accelerator)                                                                             | Stand alone        | URL redirect      | Embedded in App’s iFrame | Backend + SDK only |
+| Partner <br> **(accelerator)**                                                                             | Stand alone        | URL redirect      | Embedded in App’s iFrame | Backend + SDK only |
 |-------------------------------------------------                                                           |--------------------|-------------------|--------------------------|--------------------|
 | [**Shift Analytics**](https://shiftanalytics.ca/)​ <br> [The Reporting Hub](https://thereportinghub.com/) | ✔️​                | ✔️​                | ✔️​                      | ​                   |
 | [**MAQ Software**](https://maqsoftware.com/)​ <br>[Embed Fast](https://maqsoftware.com/embedfast)                                              | under development  | under development​ | ​                         | ✔️​                |
@@ -122,7 +122,7 @@ The following tables compare features of the different accelerators from our par
 
 ### Acquisition and billing options
 
-| **Partner** <br> (accelerator)               |  **Monthly subscriptions:** <br> Direct billing     |  **Monthly subscriptions:** <br> Azure Marketplace | **Free trial** | **One time purchase** ​ | **As part of consulting engagement**​ |
+| Partner <br> **(accelerator)**               |  Monthly subscriptions: <br> **Direct billing**     |  Monthly subscriptions: <br> **Azure Marketplace** | Free trial | One time purchase ​ | As part of consulting engagement​ |
 |----------------------------------------------|-----------------------------------------------------|----------------------------------------------------|----------------|------------------------|--------------------------------------|
 | **Shift Analytics**​ <br> [The Reporting Hub](https://thereportinghub.com/) | ✔️​                                                 | under development​                                  | ✔️​             | ​                       | ​                                     |
 | **MAQ Software**​ <br>[Embed Fast](https://maqsoftware.com/embedfast)            |  under development                                  | under development                                  | ​               | ✔️​                    | ✔️​                                   |
@@ -130,7 +130,7 @@ The following tables compare features of the different accelerators from our par
 
 ### Added capabilities
 
-| **Partner**                                  | Personal​<br>bookmarks | Report​<br>Printout | Control​<br> UX options | Navigation​<br>Menu | Multi-tenancy​ | Tenant specific​<br>authN &​<br>white-labeling​ | Power BI item​<br>publishing | Report subs.​<br>**scheduling & ​<br>distribution​ | Tenant billing​<br>& payment​<br>processing​ | Multi-language​<br>portal support​ |
+| Partner                                  | Personal​<br>bookmarks | Report​<br>Printout | Control​<br> UX options | Navigation​<br>Menu | Multi-tenancy​ | Tenant specific​<br>authN &​<br>white-labeling​ | Power BI item​<br>publishing | Report subs.​<br>scheduling & ​<br>distribution​ | Tenant billing​<br>& payment​<br>processing​ | Multi-language​<br>portal support​ |
 |----------------------------------------------|--------------------------------------------|-----------------------------------------|---------------------------------------------|---------------------|-------------------|--------------------------------------------|------------------------------|--------------------------------------------|-----------------------------------------|-----------------------------------|
 | **Shift Analytics**​ <br> [The Reporting Hub](https://thereportinghub.com/)​ | ✔️                                         | ✔️                                     | ✔️                                          | ✔️                 | ✔️                | ✔️                                        | ​                             | ✔️​                                         | ✔️​                                     | ✔️                               |
 | **MAQ Software**​ <br>[Embed Fast](https://maqsoftware.com/embedfast)​            | ✔️​                                         | ✔️​                                     | ✔️                                          | ✔️​                 |✔️​                 | ​                                          |✔️​                            | ✔️​                                         | ​                                       | ​                                   |
