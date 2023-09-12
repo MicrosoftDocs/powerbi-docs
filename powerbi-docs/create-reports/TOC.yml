@@ -556,26 +556,52 @@
         href: ../paginated-reports/report-builder-planning-report.md
       - name: Design tips
         href: ../paginated-reports/report-builder-design-tips.md
-      - name: Format numbers and dates
-        href: ../paginated-reports/report-design/format-numbers-dates-report-builder-service.md
+      - name: Link multiple data regions to the same dataset
+        href: ../paginated-reports/report-design/linking-multiple-data-regions-to-same-dataset-report-builder.md
+      - name: Format paginated report items
+        items:
+        - name: Format paginated report items
+          href: ../paginated-reports/report-design/format-report-items-report-builder.md
+        - name: Format numbers and dates
+          href: ../paginated-reports/report-design/format-numbers-dates-report-builder-service.md
       - name: Tables, matrixes, lists
-        href: ../paginated-reports/report-builder-tables-matrices-lists.md
+        items:
+        - name: Tables, matrixes, lists
+          href: ../paginated-reports/report-builder-tables-matrices-lists.md
+        - name: Insert or delete a column
+          href: ../paginated-reports/report-design/insert-delete-column-report-builder.md
+        - name: Create a recursive hierarchy group
+          href: ../paginated-reports/report-design/create-recursive-hierarchy-group-report-builder.md
+        - name: Nested data regions
+          href: ../paginated-reports/report-design/nested-data-regions-report-builder.md
       - name: Control page breaks, headings, columns, and rows
         href: ../paginated-reports/report-design/control-page-breaks-headings-columns-rows-report-builder.md
-      - name: Add a bookmark to a paginated report
-        href: ../paginated-reports/report-design/add-bookmark-report-report-builder.md
+      - name: Interactive sort and links
+        items:
+        - name: Interactive sort and links
+          href: ../paginated-reports/report-design/interactive-sort-links-report-builder.md
+        - name: Interactive sort in a paginated report
+          href: ../paginated-reports/report-design/interactive-sort-report-builder.md
+        - name: Add a bookmark to a paginated report
+          href: ../paginated-reports/report-design/add-bookmark-report-report-builder.md
+        - name: Add a hyperlink to a URL in a paginated report
+          href: ../paginated-reports/report-design/add-hyperlink-url-report-builder.md
       - name: Add a border to a paginated report
         href: ../paginated-reports/report-design/add-border-report-report-builder.md
-      - name: Add a hyperlink to a URL in a paginated report
-        href: ../paginated-reports/report-design/add-hyperlink-url-report-builder.md
       - name: Add a page break to a paginated report
         href: ../paginated-reports/report-design/add-page-break-report-builder.md
       - name: Create a stepped paginated report
         href: ../paginated-reports/report-design/create-stepped-report-report-builder.md
-      - name: Define colors on a chart using a palette
-        href: ../paginated-reports/report-design/define-colors-chart-using-palette-report-builder.md
       - name: Display page numbers or other report properties
         href: ../paginated-reports/report-design/display-page-numbers-other-report-properties-report-builder.md
+      - name: Rectangles and lines in a paginated report
+        items:
+        - name: Rectangles and lines in a paginated report
+          href: ../paginated-reports/report-design/rectangles-lines-report-builder.md
+        - name: Add a rectangle or container
+          href: ../paginated-reports/report-design/add-rectangle-container-report-builder.md
+        - name: Add and modify a line
+          href: ../paginated-reports/report-design/add-modify-line-report-builder.md
       - name: Set the locale for a report or text box
         href: ../paginated-reports/report-design/set-locale-for-report-text-box-reporting-services.md
       - name: Text boxes
@@ -624,6 +650,8 @@
         href: ../paginated-reports/report-design/commonly-used-filters-report-builder-and-service.md
       - name: Add or delete a group in a data region
         href: ../paginated-reports/report-design/add-delete-group-data-region-report-builder.md
+      - name: Add or delete a group in a report chart
+        href: ../paginated-reports/report-design/add-delete-group-in-chart-report-builder.md
     - name: Visualizations in paginated reports
       items: 
       - name: Charts in paginated reports
@@ -666,12 +694,16 @@
           href: ../paginated-reports/report-design/visualizations/formatting-chart-report-builder.md
         - name: Add a border frame to a chart
           href: ../paginated-reports/report-design/visualizations/add-border-frame-to-chart-report-builder.md
+        - name: Add or remove margins from a report chart
+          href: ../paginated-reports/report-design/add-remove-margins-from-chart-report-builder.md
         - name: Add empty points to a chart
           href: ../paginated-reports/report-design/visualizations/add-empty-points-chart-report-builder.md
         - name: Add a moving average to a chart
           href: ../paginated-reports/report-design/visualizations/add-moving-average-chart-report-builder.md
         - name: Add or delete an indicator in a report
           href: ../paginated-reports/report-design/visualizations/add-delete-indicator-report-builder.md
+        - name: Show ToolTips on a series
+          href: ../paginated-reports/report-design/show-tooltips-series-report-builder.md
         - name: Change indicator icons and indicator sets
           href: ../paginated-reports/report-design/visualizations/change-indicator-icons-indicator-sets-report-builder.md
         - name: "Chart effects: 3D, bevel, and others"
@@ -684,6 +716,8 @@
           href: ../paginated-reports/report-design/visualizations/formatting-series-colors-on-chart-report-builder.md
         - name: Format data points on a report chart
           href: ../paginated-reports/report-design/visualizations/formatting-data-points-on-chart-report-builder.md
+        - name: Define colors on a chart using a palette
+          href: ../paginated-reports/report-design/define-colors-chart-using-palette-report-builder.md
         - name: Format the legend on a chart
           href: ../paginated-reports/report-design/visualizations/chart-legend-formatting-report-builder.md
         - name: Format axis labels on a paginated report chart
