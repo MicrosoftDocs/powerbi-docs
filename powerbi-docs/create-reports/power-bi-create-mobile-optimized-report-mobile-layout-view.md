@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 08/16/2023
+ms.date: 09/12/2023
 LocalizationGroup: Create reports
 ---
 # Mobile layout view
@@ -45,12 +45,20 @@ The mobile layout view will open.
 
 The features of the mobile layout view are described below.
 
-* **Mobile layout canvas**: You create your mobile optimized layout on the mobile layout canvas. The canvas features a fine-grained grid to help you lay out your visuals. Canvas controls enable you to turn off the grid, enable/disable snap-to-grid, and lock visuals in place to prevent them from accidentally being moved around. The grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
+* **Mobile layout canvas**: You create your mobile optimized layout on the interactive mobile layout canvas. The canvas features a fine-grained grid to help you lay out your visuals. Canvas controls enable you to turn off the grid, enable/disable snap-to-grid, and lock visuals in place to prevent them from accidentally being moved around. The grid scales across phones of different sizes, so your report looks good on small- and large-screen phones. The canvas is interactive, so you can see how your buttons, slicers, and visuals behave before you publish the report. Some [limitations](#considerations-and-limitations) apply.
 * **Page visuals pane**: The page visuals pane lists all of the visuals that are included on the original report page. You create your mobile-optimized layout by dragging and dropping visuals from page visuals pane onto the layout canvas. See [Create an initial layout](power-bi-create-mobile-optimized-report-initial-layout.md).
 * **Visualizations pane**: The visuals pane shows the format settings of the visual that is selected on the canvas. You use the visualizations pane to style and format visuals. See [Optimize visual formatting](power-bi-create-mobile-optimized-report-format-visuals.md). The visualizations pane is empty until you select a visual on the canvas.
 * **Selection pane**: The selection pane enables you to change the layering order of visuals on the canvas. See [Rearrange visual layering](power-bi-create-mobile-optimized-report-order-layers.md).
 
 Start creating your mobile-optimized view by [choosing your visuals and creating an initial layout](power-bi-create-mobile-optimized-report-initial-layout.md).
+
+## Considerations and limitations
+
+Several limitations apply to the mobile layout canvas:
+
+* Tooltips are disabled.
+* Metric visuals are not interactive.​
+* Slicer selections made on the mobile layout canvas don't carry over when you switch to web layout. Also, when you switch back from web layout to mobile layout, any slicer selections will come from the web layout. Likewise, when the report is published, any slicer selections will be those that were defined in web layout, regardless of whether the report is being viewed in the regular desktop-view or a mobile-optimized view.
 
 ## Next steps
 
