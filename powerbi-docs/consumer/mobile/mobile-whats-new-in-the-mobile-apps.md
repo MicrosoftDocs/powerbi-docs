@@ -27,8 +27,6 @@ Interactivity has come to the mobile layout canvas! You can now test how buttons
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-interactive-canvas.gif" alt-text="Screenshot illustrating interactivity on the mobile layout canvas.":::
 
-:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/mobile-apps-interactive-canvas.png" alt-text="Screenshot showing interactivity on the mobile layout canvas." border="false":::
-
 ### Introducing shared device mode (iOS and Android) (preview)
 
 The Power BI mobile apps now support the Azure Active Directory (Azure AD) feature *shared device mode*.
