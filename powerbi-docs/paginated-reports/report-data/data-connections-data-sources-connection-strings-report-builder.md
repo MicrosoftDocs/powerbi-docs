@@ -1,7 +1,7 @@
 ---
-title: "Create data connection strings - Power BI Report Builder"
+title: "Create data connection strings (Power BI Report Builder)"
 description: Learn how to create data connection strings and learn important information related to data source credentials.
-ms.date: 09/07/2023
+ms.date: 09/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: rpatkar
 ---
-# Create data connection strings - Power BI Report Builder
+# Create data connection strings (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
@@ -21,7 +21,7 @@ ms.reviewer: rpatkar
 ##  <a name="bkmk_connection_examples"></a> Common connection string examples  
  Connection strings are the text representation of connection properties for a data provider. The following table lists some examples of connections strings for various data connection types.  
  
- > [!NOTE]  
+> [!NOTE]  
 >  [Connectionstrings.com](https://www.connectionstrings.com/) is another resource to get examples for connection strings. 
   
 |**Data source**|**Example**|**Description**|  
@@ -34,7 +34,6 @@ ms.reviewer: rpatkar
 |Teradata data source|`Database=<database name>; Data Source=<NNN>.<NNN>.<NNN>.<NNN>; Use X Views=False; Restrict to Default Database=True`|Set the data source type to **Teradata**, similar to the previous example. Only use the default database that is specified in the Database tag, and do not automatically discover data relationships.|
 | Power BI Dataset | `Data Source=powerbi://api.powerbi.com/v1.0/myorg/<workspacename>;  Initial Catalog=<datasetname>` | Set data source type to **Microsoft SQL Server Analysis Services** and under Credentials tab, select "Do not use credentials". |
 
-  
 ##  <a name="bkmk_Expressions_in_connection_strings"></a> Expression-based connection strings  
  > [!NOTE]  
  > Expression-based connection strings are not supported on Power BI service

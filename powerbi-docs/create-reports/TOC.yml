@@ -832,8 +832,8 @@
         href: ../paginated-reports/report-data/report-embedded-datasets-report-builder.md
       - name: Create an embedded dataset
         href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
-      - name: Set a No Data Message for a Data Region
-        href: ../paginated-reports/report-data/set-a-no-data-message-for-a-data-region-report-builder.md
+      - name: Set a No Data message for a data region
+        href: ../paginated-reports/report-data/set-no-data-message-data-region-report-builder.md
       - name: Report data pane
         href: ../paginated-reports/report-data/report-data-pane.md
       - name: Create data connection strings

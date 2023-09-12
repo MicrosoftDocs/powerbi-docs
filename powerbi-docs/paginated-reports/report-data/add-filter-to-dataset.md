@@ -19,25 +19,25 @@ ms.reviewer: rpatkar
 
 ## Add a filter to an embedded dataset instance  
   
-1.  Open a report in report design mode.
+1. Open a report in report design mode.
   
-2.  Right-click a dataset in the **Report Data** pane and then select **Dataset Properties**. The **Dataset Properties** dialog box opens.  
+1. Right-click a dataset in the **Report Data** pane and then select **Dataset Properties**. The **Dataset Properties** dialog box opens.  
   
-3.  Select **Filters**. This displays the current list of filter equations. By default, the list is empty.  
+1. Select **Filters**. This displays the current list of filter equations. By default, the list is empty.  
   
-4.  Select **Add**. A new blank filter equation appears.  
+1. Select **Add**. A new blank filter equation appears.  
   
-5.  In **Expression**, type or select the expression for the field to filter. To edit the expression, select the expression (*fx*) button.  
+1. In **Expression**, type or select the expression for the field to filter. To edit the expression, select the expression (*fx*) button.  
   
-6.  From the drop-down box, select the data type that matches the type of data in the expression you created in step 5.  
+1. From the drop-down box, select the data type that matches the type of data in the expression you created in step 5.  
   
-7.  In the **Operator** box, select the operator that you want the filter to use to compare the values in the **Expression** box and the **Value** box. The operator you choose determines the number of values that are used from the next step.  
+1. In the **Operator** box, select the operator that you want the filter to use to compare the values in the **Expression** box and the **Value** box. The operator you choose determines the number of values that are used from the next step.  
   
-8.  In the **Value** box, type the expression or value against which you want the filter to evaluate the value in **Expression**.  
+1. In the **Value** box, type the expression or value against which you want the filter to evaluate the value in **Expression**.  
   
      For examples of filter equations, see [Filter Equation Examples (Report Builder)](../expressions/filter-equation-examples-report-builder.md).
   
-9.  Select **OK**.
+1. Select **OK**.
   
 ## Next steps
  [Add Dataset Filters, Data Region Filters, and Group Filters (Report Builder)](../report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
