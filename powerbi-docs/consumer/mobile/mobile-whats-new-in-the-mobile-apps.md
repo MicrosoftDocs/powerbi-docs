@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/22/2023
+ms.date: 09/12/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -20,6 +20,10 @@ For related "What's New" information, see:
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
 
 ## September 2023
+
+### Interactive mobile layout canvas
+
+Interactivity has come to the mobile layout canvas! You can now test how buttons, slicers, and visuals will behave in your mobile-optimized report while you're designing it, before it's published. And that's not all! You can also interact with visuals directly as well as adjust table and matrix column headers to perfectly fit mobile screens. [Check it out today](../../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md)!
 
 ### Introducing shared device mode (iOS and Android) (preview)
 
