@@ -25,9 +25,9 @@ For related "What's New" information, see:
 
 Interactivity has come to the mobile layout canvas! You can now test how buttons, slicers, and visuals will behave in your mobile-optimized report while you're designing it, before it's published. And that's not all! You can also interact with visuals directly, as well as adjust table and matrix column headers to perfectly fit mobile screens. [Check it out today](../../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md)!
 
-:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-interactive-canvas.gif" alt-text="{alt-text}":::
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-interactive-canvas.gif" alt-text="Screenshot illustrating interactivity on the mobile layout canvas.":::
 
-:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/mobile-apps-interactive-canvas.png" alt-text="Screenshot showing illustrating interactivity on the mobile layout canvas." border="false":::
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/mobile-apps-interactive-canvas.png" alt-text="Screenshot showing interactivity on the mobile layout canvas." border="false":::
 
 ### Introducing shared device mode (iOS and Android) (preview)
 
