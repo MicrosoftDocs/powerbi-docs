@@ -22,6 +22,7 @@ The APIs set or remove labels from artifacts by artifact ID.
 * Users must have administrator rights (such as Microsoft 365 global administrator or Fabric administrator) to call these APIs.
 * The admin user (and the delegated user, if provided) must have sufficient [usage rights](/azure/information-protection/configure-usage-rights) to set or remove labels.
 * To set a sensitivity label using the setLabels API, the admin user (or the delegated user, if provided) must have the label included in their label policy.
+* Setting a label via the setLabels API doesn't trigger [downstream inheritance](./service-security-sensitivity-label-downstream-inheritance.md) to downstream items.
 * The APIs allow a maximum of 25 requests per hour. Each request can update up to 2000 artifacts.
 * **Required scope**: Tenant.ReadWrite.All
 
@@ -29,10 +30,6 @@ The APIs set or remove labels from artifacts by artifact ID.
 
 * [setLabels](/rest/api/power-bi/admin/information-protection-set-labels-as-admin)
 * [removeLabels](/rest/api/power-bi/admin/information-protection-remove-labels-as-admin)
-
-## Considerations and limitations
-
-Setting a label via the Power BI admin REST [SetLabelsAsAdmin API](/rest/api/power-bi/admin/information-protection-set-labels-as-admin) doesn't trigger downstream inheritance to downstream items.
 
 ## Sample
 
