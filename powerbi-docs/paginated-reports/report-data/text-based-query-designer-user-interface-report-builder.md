@@ -59,7 +59,7 @@ SELECT Name FROM Person.ContactType
   
 ## Command type StoredProcedure
 
- When you select **Command typeStoredProcedure**, the text-based query designer presents two panes: the Query pane and the Result pane. Enter the stored procedure name in the Query pane and select **Run** on the toolbar. If the stored procedures uses parameters, the **Define Query Parameters** dialog box opens. Enter the parameter values for the stored procedure. A report parameter is created for every stored procedure input parameter.  
+ When you select **Command typeStoredProcedure**, the text-based query designer presents two panes: the Query pane and the Result pane. Enter the stored procedure name in the Query pane and select **Run** on the toolbar. If the stored procedure uses parameters, the **Define Query Parameters** dialog box opens. Enter the parameter values for the stored procedure. A report parameter is created for every stored procedure input parameter.  
   
  The following figure shows the Query and Results panes when you run a stored procedure. In this case, the input parameters are constants.  
   
