@@ -50,6 +50,4 @@ A change in consent takes effect immediately.
 
 1. Select a consent option, and then select **Save**.
 
-![Screenshot of a support request with consent information highlighted.](https://learn.microsoft.com/power-platform/admin/media/support-consent-ticket.png)
-
-
+![Screenshot of a support request with consent information highlighted.](/power-platform/admin/media/support-consent-ticket.png)
