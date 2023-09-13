@@ -2,7 +2,7 @@
 title: Consent to access customer data
 description: Getting customer's consent to access their data
 author: royrubinstein  
-ms.author: royrubinstein  
+ms.author: mihart  
 ms.service: fabric
 ms.topic: conceptual
 ms.date: 08/31/2023
@@ -16,7 +16,7 @@ Microsoft never accesses your customer data without your consent. Microsoft resp
 
 You may grant a varying degree of consent or deny consent altogether when you submit a support request.
 
-![Screenshot of a support request with Allow access for advanced investigation and creation of support environment highlighted.](media/support-allow-access.png)
+![Screenshot of a support request with Allow access for advanced investigation and creation of support environment highlighted.](media/access-customer-data/support-allow-access.png)
 
 ### What does my consent allow?
 
