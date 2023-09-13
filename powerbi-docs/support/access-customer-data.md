@@ -1,13 +1,11 @@
 ---
-# Required metadata
-# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
+https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
 
-title:       Consent to Access Customer Data #ms.topic
+title:       Consent to access customer data
 description: Getting customer's consent to access their data
-author:      royrubinstein # GitHub alias
-ms.author:   royrubinstein # Microsoft alias
-ms.service:  # Add the ms.service or ms.prod value
+author:      royrubinstein  
+ms.author:   royrubinstein  
+ms.service:  fabric
 # ms.prod:   # To use ms.prod, uncomment it and delete ms.service
 ms.topic:    # Add the ms.topic value
 ms.date:     08/31/2023
@@ -15,13 +13,13 @@ ms.date:     08/31/2023
 
 # Consent to access customer data
 
-Microsoft may need to access customer data in your tenant to investigate and troubleshoot issues for which you've requested support. Microsoft respects your privacy and puts you in control of the level of consent you grant as part of receiving support. We'll never access your customer data. You can give your consent at the time you request support directly onto the support ticket which will help eliminate delays in the issue resolution time and/or help expedite the issue resolution. Your consent is temporary, and you can revoke it at any time. This consent does not grant [lockbox](/power-platform/admin/about-lockbox) request approval and/or revoke it.
+Microsoft never accesses your customer data without your consent. Microsoft respects your privacy and puts you in control of the level of consent you grant as part of receiving support. If you've requested support and Microsoft believes that access to customer data may help us investigate, troubleshoot, and resolve your support issue, we will contact you. You also have the option on your support request to give your consent at the time you request support. Doing this will help eliminate delays in the issue resolution time and/or help expedite the issue resolution. Your consent is temporary, and you can revoke it at any time. This consent does not grant [lockbox](/power-platform/admin/about-lockbox) request approval and/or revoke it.
 
 ## Consent information
 
 You may grant a varying degree of consent or deny consent altogether when you submit a support request.
 
-![Screenshot of a support request with Allow access for advanced investigation and creation of support environment highlighted.](https://learn.microsoft.com/power-platform/admin/media/support-allow-access.png)
+![Screenshot of a support request with Allow access for advanced investigation and creation of support environment highlighted.](media/support-allow-access.png)
 
 ### What does my consent allow?
 
