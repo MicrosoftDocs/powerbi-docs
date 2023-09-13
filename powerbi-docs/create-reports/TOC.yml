@@ -419,7 +419,11 @@
   - name: Natural language Q&A
     items: 
     - name: Q&A introduction
+      href: ../consumer/end-user-q-and-a.md
+    - name: Get started with Q&A
       href: ../natural-language/q-and-a-intro.md
+    - name: Use Power BI Q&A on a dashboard
+      href: ../natural-language/end-user-q-and-a-tutorial.md  
     - name: Q&A data sources
       href: ../natural-language/q-and-a-data-sources.md
     - name: Q&A tooling introduction
