@@ -1,12 +1,11 @@
 ---
-title:       Consent to access customer data
+title: Consent to access customer data
 description: Getting customer's consent to access their data
-author:      royrubinstein  
-ms.author:   royrubinstein  
-ms.service:  fabric
-# ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    # Add the ms.topic value
-ms.date:     08/31/2023
+author: royrubinstein  
+ms.author: royrubinstein  
+ms.service: fabric
+ms.topic: conceptual
+ms.date: 08/31/2023
 ---
 
 # Consent to access customer data
