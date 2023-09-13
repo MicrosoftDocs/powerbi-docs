@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/10/2022
+ms.date: 09/12/2023
 LocalizationGroup: Create reports
 ---
 
@@ -114,6 +114,10 @@ If you make the slicer responsive, as you change its size and shape it shows mor
 ![Power BI responsive slicer](media/power-bi-create-mobile-optimized-report-format-visuals/desktop-create-phone-report-8.gif)
  
 Read more about [creating responsive slicers](power-bi-slicer-filter-responsive.md).
+
+## Test the behavior of buttons, slicers, and visuals
+
+The mobile layout canvas is interactive, so you can test the behavior of buttons, slicers, and other visuals while you're designing your mobile optimized view. You don't have to publish the report to see how the visuals interact. Some [limitations](./power-bi-create-mobile-optimized-report-mobile-layout-view.md#considerations-and-limitations) apply.
 
 ## Next steps
 * [Arrange layering of visuals](power-bi-create-mobile-optimized-report-order-layers.md)
