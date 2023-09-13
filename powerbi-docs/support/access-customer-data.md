@@ -1,6 +1,4 @@
 ---
-https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
 title:       Consent to access customer data
 description: Getting customer's consent to access their data
 author:      royrubinstein  
