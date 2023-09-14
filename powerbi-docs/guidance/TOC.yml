@@ -150,7 +150,7 @@
     - name: "Troubleshoot report performance"
       href: report-performance-troubleshoot.md
     - name: "Deployment pipelines best practices"
-      href: ../create-reports/deployment-pipelines-best-practices.md
+      href: /fabric/cicd/best-practices-cicd
     - name: "Access the Power BI activity log"
       href: admin-activity-log.md
   - name: Migrate to Power BI
@@ -181,6 +181,8 @@
         href: powerbi-adoption-roadmap-data-culture.md
       - name: "Executive sponsorship"
         href: powerbi-adoption-roadmap-executive-sponsorship.md
+      - name: "Business alignment"
+        href: powerbi-adoption-roadmap-business-alignment.md
       - name: "Content ownership"
         href: powerbi-adoption-roadmap-content-ownership-and-management.md
       - name: "Content delivery scope"
@@ -197,12 +199,24 @@
         href: powerbi-adoption-roadmap-user-support.md
       - name: "System oversight"
         href: powerbi-adoption-roadmap-system-oversight.md
+      - name: "Change management"
+        href: powerbi-adoption-roadmap-change-management.md
       - name: "Conclusion"
         href: powerbi-adoption-roadmap-conclusion.md
   - name: Implementation planning
     items: 
       - name: "Introduction"
         href: powerbi-implementation-planning-introduction.md
+      - name: "BI strategy"
+        items:
+        - name: "BI strategy overview"
+          href: powerbi-implementation-planning-bi-strategy-overview.md
+        - name: "BI strategic planning"
+          href: powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md
+        - name: "BI tactical planning"
+          href: powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md
+        - name: "BI solution planning"
+          href: powerbi-implementation-planning-bi-strategy-bi-solution-planning.md
       - name: "User tools and devices"
         href: powerbi-implementation-planning-user-tools-devices.md
       - name: "Tenant setup"

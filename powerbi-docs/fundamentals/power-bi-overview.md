@@ -67,7 +67,7 @@ Here's a detailed [comparison of Power BI Desktop and the Power BI service](../f
 
 ### Use the deployment pipeline tool
 
-In the Power BI service, you can use the [deployment pipeline tool](../create-reports/deployment-pipelines-overview.md) to test your content before you release it to your users. The deployment pipeline tool can help you deploy reports, dashboards, datasets, and paginated reports. Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
+In the Power BI service, you can use the [deployment pipeline tool](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) to test your content before you release it to your users. The deployment pipeline tool can help you deploy reports, dashboards, datasets, and paginated reports. Read about how to [get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines) in the Power BI service.
 
 ## Paginated reports in the Power BI service
 

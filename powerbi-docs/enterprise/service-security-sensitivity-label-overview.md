@@ -183,7 +183,7 @@ Sensitivity labels can be applied to paginated reports hosted in the Power BI se
 
 ## Sensitivity labels in deployment pipelines
 
-Sensitivity labels are supported in deployment pipelines. See the [deployment pipeline documentation](../create-reports/deployment-pipelines-process.md#item-properties-copied-during-deployment) for details about how sensitivity labels are handled as content is deployed from stage to stage.
+Sensitivity labels are supported in deployment pipelines. See the [deployment pipeline documentation](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#item-properties-copied-during-deployment) for details about how sensitivity labels are handled as content is deployed from stage to stage.
 
 ## Sensitivity labels in the Power BI mobile apps
 

@@ -100,7 +100,7 @@ Use of a [P SKU](../enterprise/service-premium-what-is.md#capacities-and-skus) (
 
 ### Manage lifecycle of content
 
-Generally, enterprise BI solutions require stability for production content. One aspect is controlling when and how content is deployed to production. Use of [deployment pipelines](../create-reports/deployment-pipelines-overview.md) is described in the [self-service content publishing](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md) scenario.
+Generally, enterprise BI solutions require stability for production content. One aspect is controlling when and how content is deployed to production. Use of [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) is described in the [self-service content publishing](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md) scenario.
 
 ### Reuse existing datasets
 

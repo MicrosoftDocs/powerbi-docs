@@ -32,7 +32,7 @@ The requirements apply to users in the organization and to [Azure Active Directo
 - A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md), or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md) 
 
-Your Fabric admin (previously Power BI admin) needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#users-can-set-up-email-subscriptions).
+Your Fabric admin (previously Power BI admin) needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](/fabric/admin/service-admin-portal-export-sharing#users-can-set-up-email-subscriptions).
 
 ## Subscribe to a report or dashboard
 Whether you're subscribing to a dashboard, report page, or to a full report, the process is similar. A single button allows you to subscribe to the Power BI service dashboards and reports. Subscribing to a report offers you a few more field options, so we're using a report for our example. 
@@ -240,12 +240,12 @@ Admins can also take over ownership of subscriptions in the workspaces they mana
 
 Fabric administrators have levers of control over subscriptions. 
 
-- [Users can set up email subscriptions](../admin/service-admin-portal-export-sharing.md) for all members of the organization. 
+- [Users can set up email subscriptions](/fabric/admin/service-admin-portal-export-sharing) for all members of the organization. 
 
-- Enable all members of the organization, or specific users, to send email subscriptions to external users. See [Users can send email subscriptions to external users](../admin/service-admin-portal-export-sharing.md). 
+- Enable all members of the organization, or specific users, to send email subscriptions to external users. See [Users can send email subscriptions to external users](/fabric/admin/service-admin-portal-export-sharing). 
 
-- [Enable specific attachment formats](../admin/service-admin-portal-export-sharing.md) for paginated report subscriptions (PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML).
-- [B2B guest users can set up and be subscribed to email subscriptions](../admin/service-admin-portal-export-sharing.md#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions) to allow B2B guest users to create and subscribe to their own email subscriptions. 
+- [Enable specific attachment formats](/fabric/admin/service-admin-portal-export-sharing) for paginated report subscriptions (PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML).
+- [B2B guest users can set up and be subscribed to email subscriptions](/fabric/admin/service-admin-portal-export-sharing#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions) to allow B2B guest users to create and subscribe to their own email subscriptions. 
 
 ### View subscription audit and activity logs 
 
@@ -279,12 +279,12 @@ You can subscribe external users to a report or dashboard if your report or dash
 
 B2B guest users can create their own content subscription to which they have access and users in the organization can subscribe them to emails. B2B users must first be added by member of the organization to set up and subscribe to email content. For more information about B2B guest users and how to add them to your organization, read [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
-In addition to B2B guest users meeting the requirements to subscribe themselves, the Power BI tenant admin must turn on a setting to allow B2B guest users to create email subscriptions. For more information on how to turn on this setting, read [Export and sharing tenant settings](../admin/service-admin-portal-export-sharing.md#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
+In addition to B2B guest users meeting the requirements to subscribe themselves, the Power BI tenant admin must turn on a setting to allow B2B guest users to create email subscriptions. For more information on how to turn on this setting, read [Export and sharing tenant settings](/fabric/admin/service-admin-portal-export-sharing#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
 
 ## Subscribe to paginated reports 
 
 ### Subscribe yourself or others to paginated reports
-Your Power BI admin must [enable subscriptions in your tenant](../admin/service-admin-portal-export-sharing.md). In addition, the relevant tenant switches have to be enabled:
+Your Power BI admin must [enable subscriptions in your tenant](/fabric/admin/service-admin-portal-export-sharing). In addition, the relevant tenant switches have to be enabled:
 - Export to Excel
 - Export to .csv
 - Export reports as PowerPoint presentations or PDF documents

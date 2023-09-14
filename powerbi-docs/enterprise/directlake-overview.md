@@ -106,9 +106,9 @@ The following are known issues and limitations during **preview**:
 
 - Currently, Direct Lake datasets can only contain tables and views from a single Lakehouse.
 
-- Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same dataset. Composite models are not yet supported.
+- If using the Web modeling experience with your dataset, if a column change is made to an *existing* delta table, for example, a new column is added, the column data type is changed, or a column is renamed, that change is not automatically reflected in the dataset. For the dataset to reflect the change, the table must be removed from the dataset and then added back. To remove the table from the dataset, in the Web modeling experience's **Edit dataset** dialog, deselect the table and confirm. Then select it and confirm to add the table back.
 
-- Direct Lake datasets do not currently support calculation groups.
+- Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same dataset. Composite models are not yet supported.
 
 - Direct Lake datasets do not currently support Publish to Web because SSO requires authenticated users.
 

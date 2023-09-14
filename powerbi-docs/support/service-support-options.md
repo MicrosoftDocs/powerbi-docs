@@ -46,8 +46,8 @@ Verify whether Microsoft support is your admin's preferred option when you need 
 If Microsoft support is your admin's preferred option:
 
 1. Check for service outages or degradation at [Power BI and Fabric Support](https://support.fabric.microsoft.com).
-2. Check for [known issues with Power BI or Fabric features](https://support.fabric.com/known-issues). 
-1. See if your issue has already been addressed by the [Community](https://community.fabric.com).
+2. Check for [known issues with Power BI or Fabric features](https://support.fabric.microsoft.com/known-issues). 
+1. See if your issue has already been addressed by the [Community](https://community.fabric.microsoft.com).
 
 1. Review the [Fabric troubleshooting documentation ](/fabric/get-started/)or the [Power BI troubleshooting documentation](/power-bi/troubleshoot/).
 
@@ -99,11 +99,5 @@ Contact your Microsoft Customer Account Manager for details. If you don't alread
 
 ## Next steps
 
-* [Help and support tenant settings](service-admin-portal-help-support.md)
+* [Help and support tenant settings](/fabric/admin/service-admin-portal-help-support)
 * [Find the right Power BI training for you](/training/powerplatform/power-bi?WT.mc_id=powerbi_docs-link)
-
-
-
-```
-
-```
