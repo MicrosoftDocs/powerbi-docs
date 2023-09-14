@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 09/13/2023
 ---
 
-# Embedded analytics accelerator solutions from Microsoft partners
+# Embedded analytics solution accelerators from Microsoft partners
 
 To expedite embedded analytics for ISVs, Microsoft partners offer accelerator tools designed to help quickly embed Power BI analytics into your application. Embedded analytics accelerators are a cost-effective way to speed up time-to-market or advance a PoC or pilot for your multi-tenant, customer facing Power BI embedded analytics solution​. They simplify the implementation process and can also help you manage your Power BI capacity and billing.
 
@@ -36,7 +36,7 @@ There are several partner accelerators that vary in their deployment, acquisitio
 | :::image type="content" source="./media/embedded-analytics-accelerators/maq-logo.png" alt-text="The logo of Maq Software.":::               | The EmbedFAST is designed for Independent Software Vendors (ISVs) and enterprise customers. However, any organization can benefit from EmbedFAST to unleash the power of Power BI. Save time, effort, costs, and resources by embedding Power BI using our ready-to-use API. Seamlessly embed with comprehensive features, without having to build from scratch. | [Embed Fast](https://maqsoftware.com/embedfast) |
 | :::image type="content" source="./media/embedded-analytics-accelerators/ilink-digital-logo.png" alt-text="The logo of Count.":::                           | The BiHub presents a seamless, no-code reporting gateway designed for Power BI, using cutting-edge Embedded technology. The BiHub is a cloud-based application that is installed and deployed within your Azure environment. It integrates with existing Microsoft tenants and communicates with Power BI Embedded via Microsoft APIs. | [BiHub](https://www.ilink-digital.com/bihub/) |
 
-## Accelerator deployment options
+## Accelerator capabilities
 
 Different accelerators provide different frontend and backend capabilities including the following options:
 
@@ -142,4 +142,12 @@ The following tables compare features of the different accelerators from our par
 
 ## Next steps
 
-* [Embed Power BI analytics into an application for your customers](./embed-sample-for-customers.md)
+* To learn more about each partner’s solution accelerator, please visit their corresponding product website:
+
+  * [The Reporting Hub](https://thereportinghub.com/)
+
+  * [Embed Fast](https://maqsoftware.com/embedfast)
+
+  * [BiHub](https://www.ilink-digital.com/bihub/)
+
+* [Find a Microsoft partner](https://partner.microsoft.com/partnership/find-a-partner)
