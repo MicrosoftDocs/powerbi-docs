@@ -16,7 +16,7 @@ Microsoft never accesses your customer data without your consent. Microsoft resp
 
 You may grant a varying degree of consent or deny consent altogether when you submit a support request.
 
-![Screenshot of a support request with Allow access for advanced investigation and creation of support environment highlighted.](media/access-customer-data/support-allow-access.png)
+![Screenshot of a support request with Allow access for advanced investigation and creation of support environment highlighted.](media/access-customer-data/image.png)
 
 ### What does my consent allow?
 
@@ -51,3 +51,4 @@ A change in consent takes effect immediately.
 1. Select a consent option, and then select **Save**.
 
 ![Screenshot of a support request with consent information highlighted.](/power-platform/admin/media/support-consent-ticket.png)
+
