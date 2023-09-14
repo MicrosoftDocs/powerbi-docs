@@ -109,8 +109,6 @@
       href: embed-object-level-security.md
   - name: Partner solutions
     items:
-    - name: "Embedded analytics solution partners"
-      href: embedded-partners.md
     - name: "Embedded analytics solution accelerators"
       href: embedded-analytics-accelerators.md
   - name: Support
