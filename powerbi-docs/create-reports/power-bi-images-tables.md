@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/16/2023
+ms.date: 09/14/2023
 LocalizationGroup: Visualizations
 ---
 # Display images in a table, matrix, or slicer in a report
