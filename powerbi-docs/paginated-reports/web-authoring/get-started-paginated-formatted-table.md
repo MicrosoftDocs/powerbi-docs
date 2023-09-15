@@ -7,7 +7,7 @@ ms.reviewer: nisrinivasan
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 08/22/2023
+ms.date: 09/14/2023
 ---
 
 # Get started creating paginated reports in the Power BI service
@@ -25,7 +25,7 @@ To create a paginated report from the Power BI service, you can start in a numbe
 
 ## Prerequisites
 
-[!INCLUDE [power-bi-paginated-service-prerequisites](../../includes/power-bi-paginated-service-prerequisites.md)]
+For Power BI prerequisites, see the Prerequisites section in [Get started creating paginated reports in the Power BI service](web-authoring/get-started-paginated-formatted-table.md#prerequisites).
 
 ## List view in the Power BI service
 

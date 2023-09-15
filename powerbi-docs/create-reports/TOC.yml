@@ -534,21 +534,21 @@
         href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
     - name: Paginated reports in the service
       items: 
-      - name: Get started creating paginated reports in the Power BI service
+      - name: Get started creating paginated reports
         href: ../paginated-reports/web-authoring/get-started-paginated-formatted-table.md
-      - name: Create exportable paginated reports in the service
+      - name: Create exportable paginated reports
         href: ../paginated-reports/web-authoring/paginated-formatted-table.md
-      - name: Add filters to paginated reports in the Power BI service
+      - name: Add filters to paginated reports
         href: ../paginated-reports/web-authoring/filters-paginated-service.md
-      - name: View a paginated report in the Power BI service
+      - name: View a paginated report
         href: ../consumer/paginated-reports-view-power-bi-service.md
-      - name: Interact with parameters in the Power BI service
+      - name: Interact with parameters
         href: ../consumer/paginated-reports-view-parameters.md
       - name: View paginated report diagnostics
         href: ../paginated-reports/paginated-reports-diagnostics.md
       - name: Create translations in tabular models
         href: /analysis-services/tabular-models/translations-in-tabular-models-analysis-services
-      - name: View localized reports in the Power BI service
+      - name: View localized reports
         href: ../paginated-reports/paginated-localization.md
       - name: Git integration with paginated reports
         href: ../paginated-reports/paginated-github-integration.md   
