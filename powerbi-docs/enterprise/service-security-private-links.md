@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 06/08/2023
+ms.date: 09/14/2023
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -20,7 +20,7 @@ When private link connections are used, those connections go through the Microso
 
 To learn more about Azure Private Link, see [What is Azure Private Link](/azure/private-link/private-link-overview).
 
-Enabling private endpoints has an impact on many items, so please review the [considerations and limitations](#considerations-and-limitations) section in this article before enabling private endpoints.
+Enabling private endpoints has an impact on many items, so you should review the [considerations and limitations](#considerations-and-limitations) section in this article before enabling private endpoints.
 
 >[!IMPORTANT]
 >Private endpoints are not supported for Microsoft Fabric, including Microsoft Fabric trial capacities.
@@ -47,18 +47,18 @@ Using private endpoints with Power BI provides the following benefits:
 
 ## Use secure private endpoints to access Power BI
 
-In Power BI, you can configure and use an endpoint that allows your organization to access Power BI privately. To configure private endpoints, you must be a Power BI administrator and have permissions in Azure to create and configure resources such as virtual machines (VMs) and virtual networks (V-Net).
+In Power BI, you can configure and use an endpoint that allows your organization to access Power BI privately. To configure private endpoints, you must be a Fabric administrator and have permissions in Azure to create and configure resources such as virtual machines (VMs) and virtual networks (V-Net).
 
 The steps that allow you to securely access Power BI from private endpoints are:
 
-1. [Set up private endpoints for Power BI](#enable-private-endpoints-for-power-bi)
-2. [Create a Power BI resource in the Azure portal](#create-a-power-bi-resource-in-the-azure-portal)
-3. [Create a virtual network](#create-a-virtual-network)
-4. [Create a virtual machine (VM)](#create-a-virtual-machine-vm)
-5. [Create a private endpoint](#create-a-private-endpoint)
-6. [Connect to a VM using Remote Desktop (RDP)](#connect-to-a-vm-using-remote-desktop-rdp)
-7. [Access Power BI privately from the virtual machine](#access-power-bi-privately-from-the-vm)
-8. [Disable public access for Power BI](#disable-public-access-for-power-bi)
+1. [Set up private endpoints for Power BI](#enable-private-endpoints-for-power-bi).
+2. [Create a Power BI resource in the Azure portal](#create-a-power-bi-resource-in-the-azure-portal).
+3. [Create a virtual network](#create-a-virtual-network).
+4. [Create a virtual machine (VM)](#create-a-virtual-machine-vm).
+5. [Create a private endpoint](#create-a-private-endpoint).
+6. [Connect to a VM using Remote Desktop (RDP)](#connect-to-a-vm-using-remote-desktop-rdp).
+7. [Access Power BI privately from the virtual machine](#access-power-bi-privately-from-the-vm).
+8. [Disable public access for Power BI](#disable-public-access-for-power-bi).
 
 The following sections provide additional information for each step.
 
@@ -116,7 +116,7 @@ After this process is finished, you can move on to the next step.
       ]
     }
     ```
-    
+
     If you're using an Azure Government cloud, location should be the region name of the tenant. For example, if the tenant is in US Gov Texas, you should put  "location": "usgovtexas" in the ARM template. The list of Power BI US Government regions can be found in the [Power BI for US government article](../enterprise/service-govus-overview.md#connect-government-and-global-azure-cloud-services).
 
 4. On the review screen, select **Create** to accept the terms and conditions.
@@ -125,7 +125,9 @@ After this process is finished, you can move on to the next step.
 
 ### Create a virtual network
 
-The next step is to create a virtual network and subnet. Replace the sample parameters in the following table with your own to create a virtual network and subnet.
+The next step is to create a virtual network and subnet. The number of IP address your subnet will need is made up of the number of capacities on your tenant plus three. For example, if you're creating a subnet for a tenant with seven capacities, you'll need ten IP addresses.
+
+Replace the sample parameters in the following table with your own to create a virtual network and subnet.
 
 | Parameter | Value | 
 |---------|---------|
@@ -190,9 +192,9 @@ The next step is to create a VM.
 
 3. Select **Next: Disks**.
 
-1. In the **Disks** tab, leave the defaults and select **Next: Networking**.
+4. In the **Disks** tab, leave the defaults and select **Next: Networking**.
 
-1. In the **Networking** tab, select the following information:
+5. In the **Networking** tab, select the following information:
 
     |Settings |	Value |
     |-------------------|---------|
@@ -204,15 +206,17 @@ The next step is to create a VM.
     |Select inbound ports|	Select **RDP**|
 
 6. Select **Review + create**. You're taken to the **Review + create** page where Azure validates your configuration.
-7. When you see the **Validation passed** message, select **Create**.
 
+7. When you see the **Validation passed** message, select **Create**.
 
 ### Create a private endpoint
 
 The next step is to create a private endpoint for Power BI.
 
 1. On the upper-left side of the Azure portal screen **Create a resource > Networking > Private Link**.
+
 2. In **Private Link Center - Overview**, under the option to **Build a private connection to a service**, select **Create private endpoint**.
+
 3. In the **Create a private endpoint - Basics** tab, enter or select the following information:
 
     |Settings |	Value |
@@ -227,7 +231,7 @@ The next step is to create a private endpoint for Power BI.
     The following image shows the **Create a private endpoint - Basics** window.
 
     :::image type="content" source="media/service-security-private-links/service-private-links-06.png" alt-text="Screenshot of the Basics tab in Create a private endpoint.":::
-    
+
 4. Once that information is complete, select **Next: Resource** and in the **Create a private endpoint - Resource** page, enter or select the following information:
 
     |Settings |	Value |
@@ -252,7 +256,7 @@ The next step is to create a private endpoint for Power BI.
     |**PRIVATE DNS INTEGRATION** ||
     |Integrate with private DNS zone|	Select **Yes** |
     |Private DNS Zone	|Select <br> *(New)privatelink.analysis.windows.net* <br> *(New)privatelink.pbidedicated.windows.net* <br> *(New)privatelink.prod.powerquery.microsoft.com* |
-    
+
     The following image shows the **Create a private endpoint - Configuration** window.
 
     :::image type="content" source="media/service-security-private-links/service-private-links-08.png" alt-text="Screenshot of the Configuration tab in Create a private endpoint.":::
@@ -264,19 +268,27 @@ The next step is to create a private endpoint for Power BI.
 After you create your VM, called **myVM**, connect to it from the internet using the following steps:
 
 1. In the portal's search bar, enter *myVm*.
-1. Select the **Connect** button, and choose **RDP** from the dropdown menu.
-1. Enter an IP address, then select **Download RDP File**. Azure creates a Remote Desktop Protocol (.rdp) file and downloads it to your computer.
-1. Open the *.rdp* file to start Remote Desktop Connection, then select **Connect**.
-1. Enter the username and password you specified when creating the VM in the previous step.
-1. Select **OK**.
-1. You might receive a certificate warning during the sign-in process. If you receive a certificate warning, select **Yes** or **Continue**.
+
+2. Select the **Connect** button, and choose **RDP** from the dropdown menu.
+
+3. Enter an IP address, then select **Download RDP File**. Azure creates a Remote Desktop Protocol (.rdp) file and downloads it to your computer.
+
+4. Open the *.rdp* file to start Remote Desktop Connection, then select **Connect**.
+
+5. Enter the username and password you specified when creating the VM in the previous step.
+
+6. Select **OK**.
+
+7. You might receive a certificate warning during the sign-in process. If you receive a certificate warning, select **Yes** or **Continue**.
 
 ### Access Power BI privately from the VM
 
 The next step is to access Power BI privately, from the virtual machine you created in the previous step, using the following steps: 
 
 1. In the Remote Desktop of myVM, open PowerShell.
+
 2. Enter `nslookup <tenant-object-id-without-hyphens>-api.privatelink.analysis.windows.net`.
+
 3. You receive a response similar to the following message:
 
     ```
@@ -301,7 +313,6 @@ If you disable public access for Power BI, certain constraints on access to Powe
 
 To disable public access for Power BI, sign to the [Power BI](https://app.powerbi.com) service as an administrator, and navigate to the **Admin portal**. Select **Tenant settings** and scroll to the **Advanced networking** section. Enable the toggle button in the **Block Public Internet Access** section, as shown in the following image. It takes approximately 15 minutes for the system to disable your organization's access to Power BI from the public Internet.
 
-
 ## Completion of private endpoint configuration
 
 Once you've followed the steps in the previous sections and the private link is successfully configured, your organization implements private links based on the following configuration selections, whether the selection is set upon initial configuration or subsequently changed. 
@@ -319,7 +330,6 @@ If Azure Private Link is properly configured and **Block public Internet access*
 * Traffic from the virtual network targeting endpoints and scenarios that support private links are transported through the private link.
 * Traffic from the virtual network targeting endpoints and scenarios that do *not* support private links are transported through the public Internet, and will be allowed by Power BI services.
 * If the virtual network is configured to block public Internet access, scenarios which do not support private links will be blocked by the virtual network, and will not work.
-
 
 ## Considerations and limitations
 
