@@ -25,7 +25,7 @@ To create a paginated report from the Power BI service, you can start in a numbe
 
 ## Prerequisites
 
-[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
+[!INCLUDE [power-bi-paginated-prerequisites](../../includes/power-bi-paginated-prerequisites.md)]
 
 ## List view in the Power BI service
 
