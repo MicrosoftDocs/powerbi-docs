@@ -34,9 +34,11 @@ To access the Git integration feature, you need one of the following:
 
 In addition, your organization’s administrator has to [enable the Fabric switch](/fabric/admin/fabric-switch). If this switch is disabled, contact your administrator.
 
-For Power BI prerequisites, see the Prerequisites section in [Get started creating paginated reports in the Power BI service](web-authoring/get-started-paginated-formatted-table.md#prerequisites).
-
 Read about the integration of git with Microsoft Fabric at [Introduction to git integration](/fabric/cicd/git-integration/intro-to-git-integration).
+
+### Power BI prerequisites
+
+For Power BI prerequisites, see the Prerequisites section in [Get started creating paginated reports in the Power BI service](web-authoring/get-started-paginated-formatted-table.md#prerequisites).
 
 ## Add a paginated report to GitHub
 
