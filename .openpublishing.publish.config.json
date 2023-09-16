@@ -44,7 +44,7 @@
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
       "branch": "main",
       "branch_mapping": {}
-    }
+    },
     {
       "path_to_root": "Fabric repo",
       "url": "https://github.com/MicrosoftDocs/fabric/",
