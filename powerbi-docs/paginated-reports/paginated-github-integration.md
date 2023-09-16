@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 09/14/2023
+ms.date: 09/15/2023
 ---
 
 # Git integration with paginated reports
@@ -18,7 +18,21 @@ This article walks you through publishing a paginated report and keeping it in s
 
 ## Prerequisites
 
-[!INCLUDE [GitHub Prereqs Include](~/../learn.microsoft.com/fabric/includes/github-prereqs.md)]
+To integrate Git with your Microsoft Fabric workspace, you need to set up the following prerequisites in both Azure DevOps and Fabric.
+
+### Azure DevOps prerequisites
+
+- An active Azure account registered to the same user that is using the Fabric workspace. [Create a free account](https://azure.microsoft.com/products/devops/).
+- Access to an existing repository.
+
+### Fabric prerequisites
+
+To access the Git integration feature, you need one of the following:
+
+- [Power BI Premium license](/power-bi/enterprise/service-premium-what-is). Your Power BI premium license still works for all Power BI features.
+- [Fabric capacity](../enterprise/licenses.md#capacity-and-skus). A Fabric capacity is required to use all supported Fabric items.
+
+In addition, your organization’s administrator has to [enable the Fabric switch](../admin/fabric-switch.md). If this switch is disabled, contact your administrator.
 
 For Power BI prerequisites, see the Prerequisites section in [Get started creating paginated reports in the Power BI service](web-authoring/get-started-paginated-formatted-table.md#prerequisites).
 
