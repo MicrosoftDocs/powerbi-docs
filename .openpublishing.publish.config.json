@@ -45,6 +45,12 @@
       "branch": "main",
       "branch_mapping": {}
     }
+    {
+      "path_to_root": "Fabric repo",
+      "url": "https://github.com/MicrosoftDocs/fabric/",
+      "branch": "main",
+      "branch_mapping": {}
+    }
   ],
   "branch_target_mapping": {
     "live": [
