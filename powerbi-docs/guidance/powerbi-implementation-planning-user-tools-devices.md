@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/31/2023
+ms.date: 09/17/2023
 ---
 
 # Power BI implementation planning: User tools and devices
@@ -332,7 +332,7 @@ Content creators that have client tools installed, such as Power BI Desktop, sho
 There are two main ways to handle versioning of development files.
 
 - **Teams, OneDrive for Business, SharePoint:** Self-service content creators often [save files](/power-bi/create-reports/desktop-sharepoint-save-share) in Teams, OneDrive for work or school, or SharePoint. Users find these tools are familiar and simple to use. Shared libraries can be organized, secured for appropriate coworkers, and versioning is built in.
-- **Source control plug-ins:** Advanced content creators may need to integrate with a source control tool. It typically involves installing [Git](https://git-scm.com/book/) for source control, then using a source control management tool like [Visual Studio Code](https://code.visualstudio.com/docs) to commit content changes to a remote repository, such as [Azure DevOps Repos](/azure/devops/repos/get-started/what-is-repos). For Power BI Desktop, creators can use [developer mode](/power-bi/developer/projects/). In this mode, content is saved as a Power BI project (.pbip) file, which is compatible for use with a preferred source control system. When working with Fabric, [Git integration](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools) is supported for working with a client tool.
+- **Source control plug-ins:** Advanced content creators may need to integrate with a source control tool. For example, this typically involves installing [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for source control, then using a source control management tool like [Visual Studio Code](/training/modules/work-source-control-git/) to commit content changes to a remote repository, such as [Azure DevOps Repos](/azure/devops/repos/get-started/what-is-repos). For Power BI Desktop, [developer mode](/power-bi/developer/projects/) can be used. In this mode, content is saved as a Power BI project (.pbip) file, which is compatible for use with your preferred source control system. When working with Fabric, [Git integration](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools) is supported for working with a client tool.
 
 For more information, see [Strategy for file locations](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-file-locations).
 

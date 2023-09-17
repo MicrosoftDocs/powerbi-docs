@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 09/09/2023
+ms.date: 09/17/2023
 ---
 
 # Power BI adoption roadmap: System oversight
@@ -134,40 +134,15 @@ Key topics for managing the Power BI service include:
 
 ## User machines and devices
 
-The management of user machines and devices is usually a responsibility of the IT department. Successful adoption depends directly on content creators and consumers having the applications they need installed and configured correctly.
+The adoption of Power BI depends directly on content creators and consumers having the tools and applications they need. Here are some important questions to consider.
 
-Many items can be created or edited directly in the Fabric portal. Additionally, the following [software installations](https://powerbi.microsoft.com/downloads/) are available for content creators:
+- How will users request access to new tools? Will access to licenses, data, and training be available to help users use tools effectively?
+- How will content consumers view content that's been published by others?
+- How will content creators develop, manage, and publish content? What's your criteria for deciding which tools and applications are appropriate for which use cases?
+- How will you install and set up tools? Does that include related prerequisites and data connectivity components?
+- How will you manage ongoing updates for tools and applications?
 
-| **Software** | **Audience** |
-| --- | --- |
-| Power BI Desktop | Content creators who develop data models and interactive reports for deployment to the Power BI service. |
-| Power BI Desktop Optimized for Report Server | Content creators who develop data models and interactive reports for deployment to Power BI Report Server. |
-| Power BI Report Builder | Content creators who develop paginated reports for deployment to the Power BI service or Power BI Report Server. |
-| Power BI Mobile Application | Content creators or consumers who interact with content that's been published to the Power BI service or Power BI Report Server, using iOS, Android, or Windows applications. |
-| On-premises data gateway (personal mode) | Content creators who publish datasets to the Power BI service and manage scheduled data refresh. This feature should be used minimally (see more detail in the [Gateway architecture and management](#gateway-architecture-and-management) section of this article). |
-| Third-party tools | Advanced content creators may optionally use third-party tools for [advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md). |
-
-> [!IMPORTANT]
-> Not all the listed software will be necessary for all content creators. Power BI Desktop is the most common requirement and is the starting point when in doubt.
-
-All content creators who collaborate with others should use the same version of the software—especially [Power BI Desktop](/power-bi/fundamentals/desktop-get-the-desktop), which is updated monthly. Ideally, software updates are available from the Microsoft Store or installed by an automated IT process. This way, users don't have to take any specific action to obtain updates.
-
-Because new capabilities are continually released, software updates should be released promptly. This way, users can take advantage of the new capabilities, and their experience is aligned to online documentation.
-
-Other common items that may need to be installed on user machines include:
-
-- Drivers to support data connectivity, for example, Oracle, HANA, or the Microsoft Access Database Engine
-- The [Analyze in Excel](/power-bi/collaborate-share/service-analyze-in-excel) provider
-- [External tools](/power-bi/transform-model/desktop-external-tools). For example, Tabular Editor, DAX Studio, or ALM Toolkit.
-- [Custom data source connectors](/power-bi/connect-data/desktop-connector-extensibility)
-
-In addition to software installations, user machines may be managed for:
-
-- **Group policy settings:** For example, group policy can specify the allowed usage of [custom visuals](/admin/organizational-visuals#certified-power-bi-visuals) in Power BI Desktop. The objective is for a consistent user experience in Power BI Desktop and the Power BI service. The objective is to prevent user frustration (if they were allowed to create content in Power BI Desktop that can't be displayed in the Power BI service).
-- **Registry settings:** For example, you can choose to disable the Power BI Desktop [sign-in form](/power-bi/admin/desktop-admin-sign-in-form) or [tune Query Editor performance](/power-bi/create-reports/desktop-evaluation-configuration).
-
-> [!TIP]
-> Effective management of software, drivers, and settings can make a big difference to the user experience, and that can translate to increased [user adoption](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages) and satisfaction, and reduced [user support](powerbi-adoption-roadmap-user-support.md) costs.
+For more information, see [User tools and devices](powerbi-implementation-planning-user-tools-devices.md).
 
 ## Architecture
 
