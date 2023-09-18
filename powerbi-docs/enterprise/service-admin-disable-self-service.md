@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 10/18/2022
+ms.date: 09/18/2023
 ms.custom: licensing support, has-azure-ad-ps-ref
 LocalizationGroup: Administration
 ---
@@ -36,12 +36,3 @@ Turning off self-service sign-up keeps users from exploring Power BI for data vi
 - Your organization prohibits use of the Power BI service due to data privacy or other concerns and needs to closely control the assignment of Power BI free licenses.
 - You want to ensure that all Power BI Pro or Premium Per User licenses fall under an enterprise agreement that takes advantage of a negotiated or discounted licensing rate.
 - Current users with a Power BI free license are prompted to try or directly purchase a Power BI Pro license. Your organization might not want these users to upgrade because of security, privacy, or expense.
-
-
-## Use PowerShell, Azure AD, and Microsoft 365 to enable and disable self-service
-
-Use PowerShell commands to change the settings that control self-service sign-up and purchasing.
-
-- If you want to disable all self-service sign-ups: In Azure Active Directory, change the **AllowAdHocSubscriptions** setting using the MSOL PowerShell module. For instructions, see [Set MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings). This option turns off self-service sign-up for *all* Microsoft cloud-based apps and services.
-
-- If you want to prevent users from purchasing their own Pro license: Change the **AllowSelfServicePurchase** setting using MSCommerce PowerShell commands. This setting turns off self-service purchase for specific products. For instructions, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell).
