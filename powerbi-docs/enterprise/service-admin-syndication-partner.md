@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 11/15/2022
+ms.date: 09/18/2023
 ms.custom: licensing support, has-azure-ad-ps-ref
 LocalizationGroup: Administration
 ---
@@ -54,7 +54,7 @@ By default, individual sign-ups (also known as ad-hoc subscriptions) are disable
 
 ![Screenshot showing the Power BI sorry image and message.](media/service-admin-syndication-partner/sorry.png)
 
-To enable ad-hoc subscriptions, you can contact your partner and request that they turn them on. If you're an administrator of your tenant, and know how to use Azure Active Directory (Azure AD) PowerShell commands, you can enable ad-hoc subscriptions yourself. For more information, follow the steps in [Enable or disable self-service purchasing](service-admin-disable-self-service.md).
+To enable ad-hoc subscriptions, you can contact your partner and request that they turn them on. If you're an administrator of your tenant you can enable ad-hoc subscriptions yourself. For more information, follow the steps in [Enable or disable self-service purchasing](service-admin-disable-self-service.md).
 
 ## Next steps
 
