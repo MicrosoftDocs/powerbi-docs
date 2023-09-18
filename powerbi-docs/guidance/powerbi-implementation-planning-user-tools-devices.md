@@ -221,7 +221,7 @@ Here are some important points to consider when determining whether Excel is an 
 
 [Power BI Report Builder](/power-bi/paginated-reports/report-builder-power-bi) is a tool for creating a paginated report (.rdl) file. Paginated reports can be deployed to either the Power BI service or Power BI Report Server. If you have experience creating reports in SQL Server Reporting Services (SSRS), you'll find it's a similar report creation experience.
 
-Paginated reports are best suited to highly formatted, or pixel-perfect, reports such as financial statements. They're also suitable for reports that are intended to be printed or for PDF generation, and when user input (with report parameters) is required.
+Paginated reports are best suited to highly formatted, or print-ready, reports such as financial statements. They're also suitable for reports that are intended to be printed or for PDF generation, and when user input (with report parameters) is required.
 
 > [!TIP]
 > For other scenarios that favor choosing paginated reports, see [When to use paginated reports in Power BI](report-paginated-or-power-bi.md).
