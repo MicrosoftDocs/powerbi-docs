@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting    
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 09/07/2023
+ms.date: 09/18/2023
 ms.custom:  
 ---
 
@@ -23,7 +23,6 @@ Select the **Title** to view more information about that specific known issue.
 |  Issue ID |  Area                              |  Title  |  Issues publish date |  
 |-----------|------------------------------------|---------|---------------------|
 |  498      |  Consume and View  |  [Export to CSV file truncated at 300 rows](known-issue-498-export-csv-file-truncated-300-rows.md)    | September 7, 2023  |
-|  491      |  Gateway  |  [Cancel refresh operation fails using virtual network gateway](known-issue-491-cancel-refresh-operation-fails-using-virtual-network-gateway.md)    | September 7, 2023  |
 |  482      |  Account & License  |  [Power BI Desktop sign-in prompt shows unsupported personal Microsoft accounts](known-issue-482-desktop-sign-in-prompt-shows-unsupported-personal-microsoft-accounts.md)    | August 10, 2023  |
 |  471      |  Embedded, REST API or PowerShell  |  [Power BI Embedded setup tool isn't responsive](known-issue-471-embedded-setup-tool-isnt-responsive.md)    | August 10, 2023  |
 |  461      |  Create and Author Data            |  [A scheduled refresh of a dataset intermittently hangs when connected to a dataflow](known-issue-461-scheduled-refresh-dataset-hangs.md)    | July 27, 2023  |
@@ -35,6 +34,7 @@ Select the **Title** to view more information about that specific known issue. F
 
 |  Issue ID |  Area                              |  Title           |  Issues publish date |  Status  |
 |-----------|------------------------------------|------------------|---------------------|-----------|
+|  491      |  Gateway  |  [Cancel refresh operation fails using virtual network gateway](known-issue-491-cancel-refresh-operation-fails-using-virtual-network-gateway.md)    | September 7, 2023  | Fixed: September 18, 2023 |
 |  465      |  Embedded, REST API or PowerShell  |  [Embedded report shows a black bar in edit mode](known-issue-465-embedded-report-shows-black-bar.md)    | July 27, 2023  | Fixed: August 24, 2023 |
 |  443      |  Power BI                    |   [Deployment pipeline stuck in loading](known-issue-443-deployment-pipeline-stuck-loading.md)    | July 27, 2023  | Fixed: August 24, 2023 |
 |  427      |  Administration                    |  [Tenant admin settings may not save correctly](known-issue-427-tenant-admin-settings-may-not-save-correctly.md)    | June 22, 2023  | Fixed: August 24, 2023 |
