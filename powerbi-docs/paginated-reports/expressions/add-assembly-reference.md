@@ -14,22 +14,8 @@ ms.custom: updatefrequency5
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  When you embed custom code that contains references to Microsoft .NET Framework classes that are not in <xref:System.Math> or <xref:System.Convert>, you must provide an assembly reference to the report so that the report processor can resolve the names. For more information, see [Add Code to a Report (Power BI Report Builder)](./add-code-to-a-report.md).
-
-## Add an assembly reference to a report
-
-1. In **Design** view, right-click the design surface outside the border of the report and select **Report Properties**.
-
-1. Select **References**.
-
-1. In **Add or remove assemblies**, select **Add** and then select the ellipsis button to browse to the assembly.
-
-1. In **Add or remove classes**, select **Add** and then type the name of the class and provide an instance name to use within the report.
-
-    > [!NOTE]  
-    >  Specify a class and instance name only for instance-based members. Do not specify static members in the **Classes** list. For more information, see [Custom Code and Assembly References in Expressions (Power BI Report Builder)](./custom-code-and-assembly-references-in-expressions.md).
-
-1. Select **OK**.
+> [!NOTE]
+> Custom assemblies are not supported in paginated reports on Power BI. Consider converting logic from custom assembly to [embedded code](./custom-code-and-assembly-references-in-expressions.md). For examples of alternatives to consider, check [assembly alternatives](https://github.com/chmitch/ssrs-assembly-alternatives).
 
 ## Next steps
 

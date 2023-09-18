@@ -14,7 +14,7 @@ ms.custom: updatefrequency5
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  You can add references to custom code embedded in a report. Use embedded code for custom constants, complex functions or functions that are used multiple times in a single report. Custom code can include new custom constants, variables, functions, or subroutines. You can include read-only references to built-in collections such as the Parameters collection. However, you cannot pass sets of report data values to custom functions; specifically, custom aggregates are not supported.
+  You can add custom code embedded in a report. Use embedded code for custom constants, complex functions or functions that are used multiple times in a single report. Custom code can include new custom constants, variables, functions, or subroutines. You can include read-only references to built-in collections such as the Parameters collection. However, you cannot pass sets of report data values to custom functions; specifically, custom aggregates are not supported.
 
 > [!IMPORTANT]  
 > For time-sensitive calculations that are evaluated once at run-time and that you want to remain the same value throughout report processing, consider whether to use a report variable or group variable. For more information, see [Report and Group Variables Collections References (Power BI Report Builder)](/sql/reporting-services/report-design/built-in-collections-report-and-group-variables-references-report-builder).
@@ -36,7 +36,7 @@ For more information, see [Visual Basic Runtime Library Members](/dotnet/visual-
 
 ## <a id="Embedded"></a> Include Embedded Code
 
-To add embedded code to a report, use the Code tab of the **Report Properties** dialog box. The code block you create can contain multiple methods. Methods in embedded code must be written in Microsoft Visual Basic and must be instance-based. The report processor automatically adds references for the System.Convert and System.Math namespaces. Use the **References** page of the **Report Properties** dialog box to add additional assembly references. For more information, see [Add an Assembly Reference to a Report](./add-assembly-reference.md).
+To add embedded code to a report, use the Code tab of the **Report Properties** dialog box. The code block you create can contain multiple methods. Methods in embedded code must be written in Microsoft Visual Basic and must be instance-based. The report processor automatically adds references for the System.Convert and System.Math namespaces.
 
 Methods in embedded code are available through a globally defined **Code** member. You access these by referring to the **Code** member and the method name. The following example calls the method **ToUSD**, which converts the value in the `StandardCost` field to a dollar value:
 
@@ -132,9 +132,9 @@ End Function
 ```
 
 > [!NOTE]  
-> Custom assemblies are not supported in paginated reports on Power BI.
+> Custom assemblies are not supported in paginated reports on Power BI. Consider converting logic from custom assembly to embedded code. For examples of alternatives to consider, check [assembly alternatives](https://github.com/chmitch/ssrs-assembly-alternatives).
 
-## See also
+## Next steps
 
 - [Add Code to a Report (Power BI Report Builder)](./add-code-to-a-report.md)
 - [Add an Assembly Reference to a Report (Power BI Report Builder)](./add-assembly-reference.md)

@@ -16,7 +16,7 @@ ms.custom: updatefrequency5
 
 In any expression, you can call your own custom code in a paginated report.
 
-Embed code written in Visual Basic directly in your report. If your code refers to a Microsoft .NET Framework that is not <xref:System.Math> or <xref:System.Convert>, you must add the reference to the report. For more information, see [Add an Assembly Reference to a Paginated Report](./add-assembly-reference.md). For more information about other references you can make from your code, see [Custom Code and Assembly References in Expressions (Power BI Report Builder)](./custom-code-and-assembly-references-in-expressions.md).
+Embed code written in Visual Basic directly in your report. For more information about other references you can make from your code, see [Custom Code in Expressions (Power BI Report Builder)](./custom-code-and-assembly-references-in-expressions.md).
 
 ## Add embedded code to a report
 
