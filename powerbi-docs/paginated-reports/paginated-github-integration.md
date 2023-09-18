@@ -18,7 +18,7 @@ This article walks you through publishing a paginated report and keeping it in s
 
 ## Prerequisites
 
-[!INCLUDE [github-prereqs](~/../fabric-repo/fabric-docs-pr/includes/github-prereqs.md)]
+[!INCLUDE [github-prereqs](~/../fabric-docs-pr/includes/github-prereqs.md)]
 
 Read about the integration of git with Microsoft Fabric at [Introduction to git integration](/fabric/cicd/git-integration/intro-to-git-integration).
 
