@@ -56,8 +56,6 @@ If your volume licensing has moved to the Microsoft 365 Admin Center, you can fi
 
     :::image type="content" source="media/find-product-key/m365-downloads.png" alt-text="Screenshot of Additional instructions dialog.":::
 
-    The Power BI Report Server Software Assurance information is displayed with your license key.
-
 1. Find the Power BI Report Server Software Assurance information displayed with your license key.
 
     :::image type="content" source="media/find-product-key/m365-additional-instructions.png" alt-text="Screenshot of View additional instructions.":::
