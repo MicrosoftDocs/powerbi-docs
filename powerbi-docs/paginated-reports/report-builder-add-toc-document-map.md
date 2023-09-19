@@ -1,6 +1,6 @@
 ---
 title: "Create a document map or table of contents in paginated reports"
-description: Learn how to use a document map to provide a table of contents or a set of navigational links to report items in a rendered paginated report in Report Builder.
+description: Learn how to use a document map to provide a table of contents or a set of navigational links to report items in a rendered paginated report in Power BI Report Builder.
 author: maggiesMSFT
 ms.author: nisrinivasan
 ms.date: 09/18/2023
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.custom: updatefrequency5
 ---
 
-# Create a document map or table of contents in paginated reports (Report Builder)
+# Create a document map or table of contents in paginated reports (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
@@ -103,10 +103,10 @@ Create a document map to provide a set of links, like a table of contents, in yo
 1. Paste the URL in the web portal, and then press ENTER. The report runs, and the document map is hidden.  
   
 > [!NOTE]  
-> For more information about downloading sample reports, see [Report Builder and Report Designer sample reports](https://social.technet.microsoft.com/wiki/contents/articles/1093.reporting-services-samples-on-codeplex-sql-server-reporting-services-ssrs.aspx).  
->
-> For more information, see [SQL Server Reporting Services URL Access](/sql/reporting-services/url-access-ssrs).
+> For more information about downloading sample reports, see [Report Builder and Report Designer sample reports](https://social.technet.microsoft.com/wiki/contents/articles/1093.reporting-services-samples-on-codeplex-sql-server-reporting-services-ssrs.aspx).
 
 ## See also 
+
+[SQL Server Reporting Services URL Access](/sql/reporting-services/url-access-ssrs)
 
 More questions? [Try asking the Reporting Services forum](/answers/search.html?c=&f=&includeChildren=&q=ssrs+OR+reporting+services&redirect=search%2fsearch&sort=relevance&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user)
