@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/07/2023
+ms.date: 09/19/2023
 ms.custom: intro-whats-new
 ---
 
@@ -17,7 +17,103 @@ Learn about what's new in the latest versions of Power BI Report Server and Powe
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
+## September 2023
+
+Welcome to the September 2023 Power BI Report Server release! This release focuses on new features that enhance viewing, like the Report Server mobile view port improvements, full screen for PBIX and RDL report viewing, and mobile layout switcher. We're excited to support Power BI Desktop Developer mode for Developers, and bubble range scaling for Reporting. These features have been inclusively designed with better UX for report viewing and sharing! Read on for the details.
+
+ 
+
+## Power BI Report Server  
+
+### Full-screen view 
+
+You have requested the ability to allow report consumers to present reports in full-screen mode. We're excited to share that we've fulfilled this request. The full-screen viewing option has been added to the view menu for PBIX reports and to the toolbar for RDL reports. To change view, select the view menu item and choose full-screen view as shown below.  
+
+PBIX full-screen feature image  
+
+Full-screen view in PBIX report  
+
+The full-screen view has been added to the toolbar in RDL reports, located on the far right side of the pagination toolbar as shown in the following image. 
+
+Full screen image of RDL report  
+
+Full screen view in RDL report  
+
+Responsive view navigation 
+
+For customers logging into Power BI Report Server with varying devices, we have enhanced the view port for smaller screens. This makes viewing reports more accessible. Users no longer need to scroll across to locate menu items. The view port has responsive design enabled for smaller viewers. The additional menu items are collapsed to accommodate the smaller screen size.  
+
+collapsed menu items image 
+
+Reporting 
+
+New layout switcher 
+
+We’ve added new buttons that make it easy for you to quickly switch between web and mobile layouts while you’re developing your reports. You’ll find the new switcher buttons down at the bottom of the screen, right next to the page navigator. 
+
+new layout switcher 
+
+New bubble range scaling setting 
+
+We are introducing the new bubble range scaling setting for scatter chart and map visuals! This setting gives report creators more control over how the bubble (marker) sizes respond to the data, making it more accurate or distinctive based on preference. 
+
+With the magnitude option, the bubble areas closely follow the data proportions. With the data-range option, the bubble size limits are mapped to data minimum and maximum. The auto option, which is the default setting for new reports, selects the appropriate option based on data characteristics. For more information, visit our docs. 
+
+This setting can be adjusted in formatting panel, Markers > Shape > Range scaling for scatter charts or Bubbles > Size > Range scaling for maps. 
+
+For reports authored in earlier Power BI versions, these settings default to (Deprecated) for scatter charts (which differs in handling negative values), and Data range for map charts. 
+
+Azure Maps charts will also include this feature in a coming product update. 
+
+ 
+
+In the figure above, the size of each country represents Urban Population, which is also shown on the y-axis. 
+
+ 
+
+ 
+
+### Power BI Desktop Developer Mode
+
+Power BI customers demand enterprise BI solutions that scale to all users across the largest organizations. This depends on enabling team collaboration and automation of deployments across development, test, and production environments to meet the needs of mission-critical BI systems. We are thrilled to announce the public preview of Power BI Desktop Developer Mode, taking advantage of Microsoft’s deep heritage in enterprise BI, and bringing Pro BI developer experiences right into Power BI Desktop.
+
+Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a Power BI Project (PBIP). When saving as project, report, and dataset definitions are saved as individual plain text files in a simple, intuitive folder structure. 
+
+ 
+
+As a developer, you can use this integration to: 
+
+Use Power BI Desktop to author report and dataset metadata files in source-control friendly formats. 
+
+Enable multiple developer collaboration, source control integration to track version history, compare different revisions (diff), and revert to previous versions. 
+
+Build continuous integration and continuous delivery (CI/CD) workflows to enforce quality gates prior to reaching production environments. 
+
+Enable code reviews, automated testing, and automated build to validate the integrity of a deployment. 
+
+With the combination of Power BI Desktop Developer Mode, Fabric Git Integration, Azure DevOps and Deployment Pipelines, developers gain the ability to seamlessly sync their Power BI workspaces with Git repositories, ensuring consistency and facilitating CI/CD workflows. 
+
+ 
+
+By utilizing Git as the centralized repository for your developments, you establish it as the “source of truth”. This integration allows you to start your report development in Power BI Desktop, seamlessly transition to the Service, and return to Power BI Desktop, where every modification is securely backed up and versioned by Git. 
+
+Watch the recording of the [Empower every BI professional to do more with data](https://www.youtube.com/embed/OdkS7DF7ElY?start=277) session at Microsoft Build for an end-to-end demonstration of Power BI Desktop Developer Mode together with Fabric Git Integration. 
+
+Saving as a Power BI Project file is in public preview. To use this feature, go to **File** > **Options and settings** > **Options** > **Preview features** and check the box next to **Power BI Project (.pbip) save option**. 
+
+ 
+
+For more information, visit [Power BI Desktop projects](https://aka.ms/pbidesktopdevmode ).
+
+Follow this blog for updates in the next release. Remember that Power BI Report Server release cadence is September, January, and May.
+
+### Want to get involved?
+
+- To be a part of our customer research for paginated reports and provide product feedback, prototype assessment and staying abreast with what’s new,join the [Paginated Operational Reports Feedback Panel](https://ux.microsoft.com/Panel/PBIPaginatedFeedback). 
+- Or join our [Reporting Services - Migration to Power BI](https://community.fabric.microsoft.com/t5/Reporting-Services-Migration-to/gh-p/ReportingServices-MigrationtoPowerBI) user group. Join the fun and tune in to our monthly events.
+
 ## May 2023
+
 This release has a number of new features like the Report Server accessibility tagging for screen-reader report consumers, new accessibility for matrix navigation and selection, and updates to existing features for modeling and reporting. See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary) blog for all the details. 
 
 ### Report Server
