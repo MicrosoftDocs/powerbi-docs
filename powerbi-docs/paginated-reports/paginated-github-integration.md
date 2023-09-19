@@ -18,23 +18,7 @@ This article walks you through publishing a paginated report and keeping it in s
 
 ## Prerequisites
 
-To integrate Git with your Microsoft Fabric workspace, you need to set up the following prerequisites in both Azure DevOps and Fabric.
-
-### Azure DevOps prerequisites
-
-- An active Azure account registered to the same user that is using the Fabric workspace. [Create a free account](https://azure.microsoft.com/products/devops/).
-- Access to an existing repository.
-
-### Fabric prerequisites
-
-To access the Git integration feature, you need one of the following:
-
-- [Power BI Premium license](../enterprise/service-premium-what-is.md) (../enterprise/service-premium-what-is.md). Your Power BI premium license still works for all Power BI features.
-- [Fabric capacity](/fabric/enterprise/licenses#capacity-and-skus). A Fabric capacity is required to use all supported Fabric items.
-
-In addition, your organization’s administrator has to [enable the Fabric switch](/fabric/admin/fabric-switch). If this switch is disabled, contact your administrator.
-
-Read about the integration of git with Microsoft Fabric at [Introduction to git integration](/fabric/cicd/git-integration/intro-to-git-integration).
+[!INCLUDE [github-prereqs](~/../fabric-repo/docs/includes/github-prereqs.md)]
 
 ### Power BI prerequisites
 
