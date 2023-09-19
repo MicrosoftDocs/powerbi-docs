@@ -6,7 +6,7 @@ ms.author: jessicamo
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 09/07/2023
+ms.date: 09/18/2023
 ms.custom: known-issue-491
 ---
 
@@ -16,7 +16,7 @@ When you try to cancel a hung data refresh through a virtual network data gatewa
 
 **APPLIES TO:** ✔️ Virtual network data gateway
 
-**Status:** Open
+**Status:** Fixed: September 18, 2023
 
 **Problem area:** Gateway
 
