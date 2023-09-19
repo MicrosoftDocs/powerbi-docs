@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: video-6CQnf-NGtpU
-ms.date: 07/12/2023
+ms.date: 09/19/2023
 ---
 # How to find your report server product key
 Learn how you can find your Power BI Report Server product key to install your server in a production environment.
@@ -43,6 +43,20 @@ If you have a SQL Server Enterprise SA agreement, you can get your product key f
 > You need to look under the download section. Not the keys section.
 
 ![Screenshot of SQL Server Enterprise showing Downloads and Keys tab with Power B I Report integration information.](media/find-product-key/vlsc-download.png "Volume Licensing Service Center")
+
+### Volume licensing in the Microsoft 365 Admin Center
+
+If your volume licensing has moved to the Microsoft 365 Admin Center, you can find your product key by choosing a SQL Server version and then looking under the **Downloads** section.
+
+1. Select the **View additional instructions** link.
+
+    :::image type="content" source="media/find-product-key/m365-additional-instructions.png" alt-text="Screenshot of Additional instructions dialog.":::
+
+    The Power BI Report Server Software Assurance information is displayed with your license key.
+
+1. Select the key next to the version of the software that you have.
+
+    :::image type="content" source="media/find-product-key/m365-choose-version.png" alt-text="Screenshot of the key next to the version of the software that you have.":::
  
 ## Next steps
 [Install Power BI Report Server](install-report-server.md)  
