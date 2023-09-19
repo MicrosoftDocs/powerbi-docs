@@ -6,18 +6,20 @@
     expanded: false
     items:
     - name: What is Power BI administration?
-      href: service-admin-administering-power-bi-in-your-organization.md
+      href: /fabric/admin/microsoft-fabric-admin
     - name: Administration role in Microsoft 365
-      href: service-admin-role.md      
+      href: /fabric/admin/roles
     - name: How to use the same account login for Power BI and Azure
-      href: service-admin-how-to-use-the-same-account-as-azure.md 
+      href: /fabric/admin/microsoft-fabric-admin 
     - name: Frequently asked questions (FAQ)
-      href: service-admin-faq.yml                       
+      href: /fabric/admin/microsoft-fabric-admin                       
   - name: System administration
     expanded: false
     items:
     - name: Manage Power BI Desktop sign-in form
       href: desktop-admin-sign-in-form.md   
+    - name: About the admin portal
+      href: /fabric/admin/admin-center
     - name: Manage Power BI visuals admin settings
       href: organizational-visuals.md           
     - name: Service URL reference
@@ -25,9 +27,9 @@
     - name: Share metadata with Microsoft 365 services
       href: admin-share-power-bi-metadata-microsoft-365-services.md
     - name: Find where data is stored
-      href: service-admin-where-is-my-tenant-located.md  
+      href: /fabric/admin/find-fabric-home-region 
     - name: Configure Multi-Geo support for Power BI Premium
-      href: service-admin-premium-multi-geo.md           
+      href: /fabric/admin/service-admin-premium-multi-geo.md           
     - name: Move between regions
       href: /power-bi/support/service-admin-region-move
     - name: Track service health
@@ -36,37 +38,6 @@
       href: service-admin-access-usage.md
     - name: Track user activities
       href: service-admin-auditing.md
-  - name: Monitor and manage Power BI
-    expanded: false
-    items:
-    - name: About the Admin portal
-      href: service-admin-portal.md      
-    - name: Configure Azure connections
-      href: service-admin-portal-azure-connections.md
-    - name: Customize Power BI branding
-      href: service-admin-custom-branding.md
-    - name: Manage capacity settings
-      href: service-admin-portal-capacity-settings.md
-    - name: Manage embed codes
-      href: service-admin-portal-embed-codes.md
-    - name: Manage featured content
-      href: service-admin-portal-featured-content.md
-    - name: Manage organizational visuals
-      href: service-admin-portal-organizational-visuals.md
-    - name: Manage Premium Per User
-      href: service-admin-portal-premium-per-user.md
-    - name: Manage users
-      href: service-admin-portal-users.md
-    - name: Manage workspaces
-      href: service-admin-portal-workspaces.md
-    - name: View audit logs
-      href: service-admin-portal-audit-logs.md
-    - name: View information protection metrics
-      href: service-admin-portal-protection-metrics.md
-    - name: View refresh summary
-      href: service-admin-portal-refresh-summary.md
-    - name: View usage metrics
-      href: service-admin-portal-usage-metrics.md
   - name: Tenant settings
     expanded: false
     items:
