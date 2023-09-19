@@ -35,7 +35,7 @@ Create a document map to provide a set of links, like a table of contents, in yo
   
 - Atom, TIFF, XML, and CSV ignore document maps.  
   
- For more information, see [Interactive Functionality for Different Report Rendering Extensions (Report Builder and SSRS)](/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions).  
+ For more information, see [Interactive Functionality for Different Report Rendering Extensions (Report Builder and SSRS)](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions).  
   
 ##  <a name="AddRptItemToMap"></a> Add a report item to a document map  
   
@@ -105,7 +105,7 @@ Create a document map to provide a set of links, like a table of contents, in yo
 > [!NOTE]  
 > For more information about downloading sample reports, see [Report Builder and Report Designer sample reports](https://social.technet.microsoft.com/wiki/contents/articles/1093.reporting-services-samples-on-codeplex-sql-server-reporting-services-ssrs.aspx).  
 >
-> For more information, see [URL Access](../url-access-ssrs.md). 
+> For more information, see [SQL Server Reporting Services URL Access](/sql/reporting-services/url-access-ssrs).
 
 ## See also 
 
