@@ -48,17 +48,22 @@ If you have a SQL Server Enterprise SA agreement, you can get your product key f
 
 If your volume licensing has moved to the Microsoft 365 Admin Center, you can find your product key by choosing a SQL Server version and then looking under the **Downloads** section.
 
-1. Select the **View additional instructions** link.
-
-    :::image type="content" source="media/find-product-key/m365-additional-instructions.png" alt-text="Screenshot of Additional instructions dialog.":::
-
-    The Power BI Report Server Software Assurance information is displayed with your license key.
-
 1. Select the key next to the version of the software that you have.
 
     :::image type="content" source="media/find-product-key/m365-choose-version.png" alt-text="Screenshot of the key next to the version of the software that you have.":::
- 
+
+1. Under Downloads, select the **View additional instructions** link.
+
+    :::image type="content" source="media/find-product-key/m365-downloads.png" alt-text="Screenshot of Additional instructions dialog.":::
+
+    The Power BI Report Server Software Assurance information is displayed with your license key.
+
+1. Find the Power BI Report Server Software Assurance information displayed with your license key.
+
+    :::image type="content" source="media/find-product-key/m365-additional-instructions.png" alt-text="Screenshot of View additional instructions.":::
+
 ## Next steps
+
 [Install Power BI Report Server](install-report-server.md)  
 [Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
