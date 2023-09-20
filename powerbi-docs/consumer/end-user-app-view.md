@@ -128,13 +128,15 @@ You can't copy a link to an Excel workbook in an app.
 
 ### Copy the link
 
-1. Select More options (...) next to the item whose link you want to copy.
+1. Select **More options (...)** next to the item whose link you want to copy.
 
 1. Select **Copy link**.
 
     :::image type="content" source="../collaborate-share/media/service-create-distribute-apps/copy-link-app.png" alt-text="Screenshot showing the Copy link option on the More options list.":::
 
 1. In the **App link** dialog box, select **Copy** and then **Close**.
+
+    :::image type="content" source="media/end-user-app-view/consumer-app-link-copy.png" alt-text="Screenshot showing Copy the app link and Close.":::
 
 ## Update an app 
 
