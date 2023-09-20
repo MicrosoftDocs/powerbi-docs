@@ -46,19 +46,21 @@ To create or update an app, you need a Power BI Pro or Premium Per User (PPU) li
 ## Create and publish your app
 When the content in your workspace is ready, you can start the publishing process. You decide how many different audience groups you need. Then you choose which content you want to publish to each audience. You can create up to ten audience groups in one app. 
 
+### Set up the app
+
 1. In the workspace list view, select **Create app** to start the process of creating and publishing an app from the workspace.
-   
+
     :::image type="content" source="media/service-create-distribute-apps/create-app-button.png" alt-text="Screenshot of the Create app button.":::
 
-1. On **Setup**, give it a name and add a description to help people find the app. You can also set a theme color, add a link to a support site, and specify contact information.
-   
+1. On the **Setup** tab, give it a name and add a description to help people find the app. You can also set a theme color, add a link to a support site, and specify contact information.
+
     :::image type="content" source="media/service-create-distribute-apps/setup-page.png" alt-text="Screenshot of Setup for your app.":::
 
 1. Select **Next: Add content**.
 
-### Allow saving a copy of a report
+#### Allow saving a copy of a report
 
-Before you leave the **Setup** tab, you can decide if you want to allow app users who have build permissions to save copies of reports to their workspace. Once they save the reports, the app users can customize the reports copies to meet their needs. 
+Before you leave the **Setup** tab, you can decide if you want to allow app users who have build permissions to save copies of reports to their workspace. Once they save the reports, app users can customize the reports copies to meet their needs. 
 
 1. Expand **Advanced settings** and select **Allow users to make a copy of the reports in this app**.
 
@@ -68,7 +70,7 @@ Before you leave the **Setup** tab, you can decide if you want to allow app user
 
 1. Select **Next: Add content**.
 
-### Allow access to hidden content
+#### Allow access to hidden content
 
 Also before you leave the **Setup** tab, you can decide if you want users to have access to hidden content. If a user has a link to hidden content in your app, that user can access that content, even if that item is visually hidden from users in the nav pane.
 
@@ -82,7 +84,7 @@ Also before you leave the **Setup** tab, you can decide if you want users to hav
 
 ### Add content to the app
 
-On the **Content** tab, you add the content from the workspace to the app. 
+On the **Content** tab, you add the content from the workspace to the app.
 
 1. Select **Add content** on the **Content** tab.
  
@@ -138,12 +140,12 @@ On the **Audience** tab, you create and manage audience groups within the app.
     
     >[!IMPORTANT]
     >
-    >- Hiding content from the audience makes it unavailable in the published app for that audience.
+    >- Hiding content from the audience makes it unavailable in the published app for that audience. However, if you selected [Allow access to hidden content](#allow-access-to-hidden-content), people with a direct link to the content will still be able to access it.
     >- Dashboard tiles pointing at reports that are hidden from the audience no longer work. Instead they display an error: "The report shown in this tile doesn’t exist or you don’t have permission to view it."
     >- Paginated reports with subreports don't display the content of the subreport if it's hidden from the audience.
     >- Users of drillthrough reports can't navigate to the destination reports if the destination reports are hidden.
     >
-    >To address all of these issues, make sure that all the dependent reports are available for the audience.
+    >To address these issues, make sure that all the dependent reports are available for the audience.
      
 1. In the **Manage audience access** pane, specify groups or users to add to the current audience group. 
 

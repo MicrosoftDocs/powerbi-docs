@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Install and use apps
 ms.topic: how-to
-ms.date: 01/25/2023
+ms.date: 09/19/2023
 ms.custom: licensing support, intro-installation
 LocalizationGroup: Share your work
 ---
@@ -21,6 +21,7 @@ Now that you have a [basic understanding of apps](end-user-apps.md), you can lea
 
 ## Ways to get a new app
 You can get a new app:
+
 * From the Power BI apps marketplace in the Power BI service.
 * By using a direct link to an app that you receive from the app designer. 
 * When an app designer in your organization installs the app automatically in your Power BI account.
