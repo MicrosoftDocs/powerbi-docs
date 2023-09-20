@@ -19,59 +19,60 @@ Download [Power BI Report Server and Power BI Desktop for Power BI Report Server
 
 ## September 2023
 
-Welcome to the September 2023 Power BI Report Server release! This release focuses on new features that enhance viewing, like the Report Server mobile view port improvements, full screen for PBIX and RDL report viewing, and mobile layout switcher. We're excited to support Power BI Desktop Developer mode for Developers, and bubble range scaling for Reporting. These features have been inclusively designed with better UX for report viewing and sharing! Read on for the details.
+Welcome to the September 2023 Power BI Report Server release! This release focuses on new features that enhance viewing, like the Report Server mobile view port improvements, full screen for PBIX and RDL report viewing, and mobile layout switcher. We're excited to support Power BI Desktop Developer mode for developers, and bubble range scaling for reporting. These features have been inclusively designed with better UX for report viewing and sharing. Read on for the details.
 
- 
-
-## Power BI Report Server  
+## Power BI Report Server
 
 ### Full-screen view 
 
-You have requested the ability to allow report consumers to present reports in full-screen mode. We're excited to share that we've fulfilled this request. The full-screen viewing option has been added to the view menu for PBIX reports and to the toolbar for RDL reports. To change view, select the view menu item and choose full-screen view as shown below.  
+You've requested the ability to allow your report consumers to present reports in full-screen mode. We're excited to share that we've fulfilled this request. The full-screen viewing option has been added to the **View** menu for Power BI (.pbix) reports and to the toolbar for paginated (.rdl) reports. To change view, on the **View** menu item, select **Full screen**  as shown in the following image.  
 
-PBIX full-screen feature image  
+:::image type="content" source="media/whats-new/full-screen-view.png" alt-text="Screenshot showing Full-screen view of a Power BI report.":::
 
-Full-screen view in PBIX report  
+*Full-screen view in a Power BI report*
 
-The full-screen view has been added to the toolbar in RDL reports, located on the far right side of the pagination toolbar as shown in the following image. 
+Full-screen view has been added to the toolbar in paginated (.rdl) reports, located on the far right side of the pagination toolbar as shown in the following image.
 
-Full screen image of RDL report  
+:::image type="content" source="media/whats-new/full-screen-paginated-rdl-report.png" alt-text="Screenshot showing full-screen view of a paginated report.":::
 
-Full screen view in RDL report  
+*Full-screen view in paginated (.rdl) report*
 
-Responsive view navigation 
+### Responsive view navigation 
 
-For customers logging into Power BI Report Server with varying devices, we have enhanced the view port for smaller screens. This makes viewing reports more accessible. Users no longer need to scroll across to locate menu items. The view port has responsive design enabled for smaller viewers. The additional menu items are collapsed to accommodate the smaller screen size.  
+For customers logging into Power BI Report Server with varying devices, we have enhanced the view port for smaller screens. This makes viewing reports more accessible. Users no longer need to scroll across to locate menu items. The view port has responsive design enabled for smaller viewers. Additional menu items are collapsed to accommodate the smaller screen size.
 
-collapsed menu items image 
+:::image type="content" source="media/whats-new/collapsed-menu-items-small-screen.png" alt-text="Screenshot showing collapsed menu on a small screen.":::
 
-Reporting 
+*Collapsed menu items*
 
-New layout switcher 
+### Reporting 
 
-We’ve added new buttons that make it easy for you to quickly switch between web and mobile layouts while you’re developing your reports. You’ll find the new switcher buttons down at the bottom of the screen, right next to the page navigator. 
+### New layout switcher 
 
-new layout switcher 
+We’ve added new buttons in Power BI Desktop that make it easy to switch quickly between web and mobile layouts while you’re developing reports. The new switcher buttons are in the lower-left corner of the screen, next to the page navigator. 
 
-New bubble range scaling setting 
+:::image type="content" source="media/whats-new/new-layout-switcher-web-mobile.png" alt-text="Screenshot showing new layout switcher between web and mobile views.":::
 
-We are introducing the new bubble range scaling setting for scatter chart and map visuals! This setting gives report creators more control over how the bubble (marker) sizes respond to the data, making it more accurate or distinctive based on preference. 
+*new layout switcher from web to mobile layout*
 
-With the magnitude option, the bubble areas closely follow the data proportions. With the data-range option, the bubble size limits are mapped to data minimum and maximum. The auto option, which is the default setting for new reports, selects the appropriate option based on data characteristics. For more information, visit our docs. 
+### New bubble range scaling setting 
 
-This setting can be adjusted in formatting panel, Markers > Shape > Range scaling for scatter charts or Bubbles > Size > Range scaling for maps. 
+We're introducing the new bubble range scaling setting for scatter chart and map visuals. This setting gives report creators more control over how the bubble (marker) sizes respond to the data, making it more accurate or distinctive, based on preference. 
 
-For reports authored in earlier Power BI versions, these settings default to (Deprecated) for scatter charts (which differs in handling negative values), and Data range for map charts. 
+With the **magnitude** option, the bubble areas closely follow the data proportions. With the **data-rang**e option, the bubble size limits are mapped to data minimum and maximum. The **auto** option is the default setting for new reports. It selects the appropriate option based on data characteristics. For more information, see [Scatter charts, bubble charts, and dot plot charts in Power BI](../visuals/power-bi-visualization-scatter.md)
 
-Azure Maps charts will also include this feature in a coming product update. 
+You can adjust this setting in the Format pane in Power BI Desktop.
 
- 
+- For scatter charts, under **Markers**, select **Shape** and **Range scaling**.
+- For maps, select **Bubbles** > **Size** > **Range scaling**.
 
-In the figure above, the size of each country represents Urban Population, which is also shown on the y-axis. 
+For reports authored in earlier Power BI versions, these settings default to **(Deprecated)** for scatter charts, which differs in handling negative values, and **Data range** for maps. 
 
- 
+Azure Maps will also include this feature in a coming product update.
 
- 
+In the following figure, the size of each country represents Urban Population, which is also shown on the y-axis. 
+
+:::image type="content" source="media/whats-new/scatter-chart-bubble-size-range-scaling.png" alt-text="Screenshot showing scatter chart bubble size range scaling.":::
 
 ### Power BI Desktop Developer Mode
 
