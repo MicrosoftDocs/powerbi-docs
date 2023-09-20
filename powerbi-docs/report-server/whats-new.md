@@ -21,7 +21,7 @@ Download [Power BI Report Server and Power BI Desktop for Power BI Report Server
 
 Welcome to the September 2023 Power BI Report Server release! This release focuses on new features that enhance viewing, like the Report Server mobile view port improvements, full screen for PBIX and RDL report viewing, and mobile layout switcher. We're excited to support Power BI Desktop Developer mode for developers, and bubble range scaling for reporting. These features have been inclusively designed with better UX for report viewing and sharing. Read on for the details.
 
-## Power BI Report Server
+### Power BI Report Server
 
 ### Full-screen view 
 
