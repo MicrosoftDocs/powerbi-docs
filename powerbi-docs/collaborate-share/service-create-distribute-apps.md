@@ -56,6 +56,30 @@ When the content in your workspace is ready, you can start the publishing proces
 
 1. Select **Next: Add content**.
 
+### Allow saving a copy of a report
+
+Before you leave the **Setup** tab, you can decide if you want to allow app users who have build permissions to save copies of reports to their workspace. Once they save the reports, the app users can customize the reports copies to meet their needs. 
+
+1. Expand **Advanced settings** and select **Allow users to make a copy of the reports in this app**.
+
+    :::image type="content" source="media/service-create-distribute-apps/allow-copying-reports.png" alt-text="Screenshot of save a copy checkbox in Setup tab.":::
+
+    When you select that, app users who have build permissions can save a copy of a report from the app consumer view. You can also grant build permissions to your app users through the app using **Advanced** option under **Manager audience access** pane. 
+
+1. Select **Next: Add content**.
+
+### Allow access to hidden content
+
+Also before you leave the **Setup** tab, you can decide if you want users to have access to hidden content. If a user has a link to hidden content in your app, that user can access that content, even if that item is visually hidden from users in the nav pane.
+
+1. Expand **Advanced settings**.
+
+1. Under **Access to hidden content**, slide the toggle to **On**.
+
+    :::image type="content" source="media/service-create-distribute-apps/access-hidden-content.png" alt-text="Screenshot showing turning on Access to hidden content. ":::
+
+1. Select **Next: Add content**.
+
 ### Add content to the app
 
 On the **Content** tab, you add the content from the workspace to the app. 
@@ -142,16 +166,6 @@ On the **Audience** tab, you create and manage audience groups within the app.
     > - The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least a Viewer role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
     > - Build permissions only apply to datasets _in the same workspace_ as the app. If datasets are in other workspaces, you must explicitly grant build permissions on those datasets, or add the users to at least the Viewer role in that workspace.
 
-### Allow saving a copy of a report
-
-You can allow app users who have build permissions to save copies of reports to their workspace. Once they save the reports, the app users can customize the reports copies to meet their needs. 
-
-To enable your app users to save a copy, select the **Allow users to make a copy of the reports in the app** checkbox on the **Setup** tab.
-
-:::image type="content" source="media/service-create-distribute-apps/save-copy.png" alt-text="Screenshot of save a copy checkbox in Setup tab.":::
-    
-When you select that, your app users who have build permissions can save a copy of a report from the app consumer view. You can also grant build permissions to your app users through the app using **Advanced** option under **Manager audience access** pane. 
-
 ### Publish the app
 
 Now that you've decided on the audiences and the content for each audience, it's time to publish your app. You can install the app automatically for the recipients, if your Power BI admin has enabled this setting for you in the Power BI Admin Portal. Read more about [automatically installing an app](#automatically-install-apps-for-end-users) in this article.
@@ -226,6 +240,25 @@ After you publish your app, you may want to change or update it.
     
     > [!Note]
     > If you removed app permissions as part of the update, new app installers won't get those permissions. However, **the update won't remove the permissions from users who already have them.** To remove such existing access, go to the Direct access tab on the datasets manage permissions page and remove the permissions manually. 
+
+## Copy a link to an item in an app
+
+### Prerequisites to copying a link
+
+Before you can copy a link to an item in an app, it has to meet these prerequisites:
+
+- The app must be already published. An app that you're creating doesn't show the **Copy link** in the Content tab for the item.
+- The item must be a Power BI report, paginated report, dashboard, or scorecard. Excel workbooks aren't supported.  
+
+### Copy the link
+
+1. In the app, select **More options (...)** next to the item whose link you want to copy.
+
+1. Select **Copy link**.
+
+1. In the **App link** dialog box, select **Copy** and then **Close** or **Go to app**.
+
+    :::image type="content" source="media/service-create-distribute-apps/app-link-copy.png" alt-text="Screenshot showing the App link dialog, where you can copy the link.":::
 
 ## Automatically install apps for end users
 If an admin gives you permission, you can install apps automatically, pushing them to app consumers. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from the Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](/fabric/admin/service-admin-portal-content-pack-app#push-apps-to-end-users) in the Power BI admin portal article.

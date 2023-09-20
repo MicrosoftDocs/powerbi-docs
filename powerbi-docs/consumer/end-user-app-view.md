@@ -112,6 +112,29 @@ You can explore the associated workspace if you've been given access. When you i
 
 ![Screenshot of the Sales and Marketing workspace showing one report and one dataset.](./media/end-user-app-view/power-bi-new-workspace.png)
 
+## Copy a link to an item in an app
+
+### Items you can copy a link to
+
+You can only copy a link to these items in an app:
+
+- A Power BI report
+- A paginated report
+- A dashboard
+- A scorecard
+
+You can't copy a link to an Excel workbook in an app.
+
+### Copy the link
+
+1. Select More options (...) next to the item whose link you want to copy.
+
+1. Select **Copy link**.
+
+    :::image type="content" source="../collaborate-share/media/service-create-distribute-apps/copy-link-app.png" alt-text="Screenshot showing the Copy link option on the More options list.":::
+
+1. In the **App link** dialog box, select **Copy** and then **Close**.
+
 ## Update an app 
 
 Sometimes app designers release new versions of their apps. How you get the new version depends on how you received the original. 
