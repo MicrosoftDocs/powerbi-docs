@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 08/22/2023
+ms.date: 09/18/2023
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## August 2023 Update (2.120.731.0)
+## September 2023 Update (2.121.644.0)
 
-August is full of sunshine, dry grass, bored summer students and a fine collection of updates for Power BI Desktop and the Power BI service. 
+September brings a new classroom full of Power BI updates, its curriculum chock full of features and new insights for your data, your visuals, and the models you can't wait to share with new-found friends. 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -25,8 +25,6 @@ The links beside each feature in the list are follows:
 * \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
 * \[article\]: Some features have an article that provides more detail.
 * The remaining features are self-explanatory and don't need an article or video.
-
-You can also watch the entire [Power BI monthly update video](#power-bi-monthly-update-video).
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -43,47 +41,46 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Reporting
-* New switcher layout   [[video]](https://youtu.be/oVT0JrOLwS8?t=65)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989123) 
-* New bubble range scaling setting  [[video]](https://youtu.be/oVT0JrOLwS8?t=78)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989124) 
-* On-object interactions (updates) (Preview) [[video]](https://youtu.be/oVT0JrOLwS8?t=154)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989125) 
+* Mobile layout interactive canvas  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2023-feature-summary/#post-24646-_Toc145515960) 
+* Smart narrative improvements  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2023-feature-summary/#post-24646-_Toc145515962)  [[article]](../visuals/power-bi-visualization-smart-narrative.md)
+
 
 ### Modeling
-* Updates to ORDERBY function  [[video]](https://youtu.be/oVT0JrOLwS8?t=237)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989129) 
+* Edit your data model in the Power BI service - updates  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2023-feature-summary/#post-24646-_Toc145515964) 
+* Edit linguistic relationships in Q&A setup  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2023-feature-summary/#post-24646-_Toc145515965) 
+* Updates to MINX and MAXX DAX functions  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2023-feature-summary/#post-24646-_Toc145515966)  [[article - MINX]](/dax/minx-function-dax)  [[article - MAXX]](/dax/maxx-function-dax)
+* Edit relationships in the Properties pane (general availability)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2023-feature-summary/#post-24646-_Toc145515967)  [[article]](../transform-model/desktop-create-and-manage-relationships.md#edit-a-relationship)
 
 
 ### Data connectivity
-* New modern data connectivity and discovery experience in dataflows  [[video]](https://youtu.be/oVT0JrOLwS8?t=295)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989132) 
-* Lakehouses (connector update)  [[video]](https://youtu.be/oVT0JrOLwS8?t=337)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989133) 
+* SAP HANA (updates)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2023-feature-summary/#post-24646-_Toc145515969) 
+
 
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
 
 ### Visuals
-* Many new and updated visuals  [[video]](https://youtu.be/oVT0JrOLwS8?t=630) [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989141)
+* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2023-feature-summary/#post-24646-_Toc145515981)
 
 
 # [Power BI service](#tab/powerbi-service)
 
 The following updates are new to the Power BI service this month:
 
-* XMLA write support for Direct Lake datasets  [[video]](https://youtu.be/oVT0JrOLwS8?t=361)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989135) 
-* Automatic replica synchronization for dataset scale-out  [[video]](https://youtu.be/oVT0JrOLwS8?t=443)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989136) 
+* Row-level security test as role improvements  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2023-feature-summary/#post-24646-_Toc145515972)  [[article]](../enterprise/service-admin-rls.md#validating-the-role-within-the-power-bi-service)
+
 
 
 ---
 
+### Other
+* Upgrade Power BI Desktop .NET Framework to 4.7.2 or newer  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2023-feature-summary/#post-24646-_Toc145515962)
 
-For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/).
+
+For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-september-2023-feature-summary/).
 
 
-### Power BI monthly update video
-The following video describes each of these updates. You can also watch this video from the blog post.
-
-> [!VIDEO https://www.youtube.com/embed/oVT0JrOLwS8]
-
-> [!NOTE]
-> The video might use earlier versions of Power BI Desktop or the Power BI service.
 
 ## More videos
 

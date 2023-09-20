@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 06/26/2023
+ms.date: 09/18/2023
 Localizat2onGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
@@ -331,7 +331,7 @@ When working with DirectQuery for Power BI datasets and Analysis Services, consi
 
 * The maximum length of a chain of models is three. Extending beyond the chain length of three isn't supported and results in errors.
 * A discourage chaining flag can be set on a model to prevent a chain from being created or extended. See Manage DirectQuery connections to a published dataset for more information.
-* The connection to a Power BI dataset won't be shown in Power Query.
+* The connection to a Power BI dataset or Analysis Services model won't be shown in Power Query.
 
 The following **limitations** apply when working with DirectQuery for Power BI datasets and Analysis Services:
 
