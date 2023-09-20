@@ -25,21 +25,23 @@ Welcome to the September 2023 Power BI Report Server release! This release focus
 
 ### Full-screen view 
 
-You've requested the ability to allow your report consumers to present reports in full-screen mode. We're excited to share that we've fulfilled this request. The full-screen viewing option has been added to the **View** menu for Power BI (.pbix) reports and to the toolbar for paginated (.rdl) reports. To change view, on the **View** menu item, select **Full screen**  as shown in the following image.  
+You've asked for the ability to allow your report consumers to present reports in full-screen mode. We're excited to share that we've fulfilled this request. The full-screen viewing option has been added to the **View** menu for Power BI (.pbix) reports and to the toolbar for paginated (.rdl) reports. 
 
-:::image type="content" source="media/whats-new/full-screen-view.png" alt-text="Screenshot showing Full-screen view of a Power BI report.":::
+- **In a Power BI report**: To change the view, on the **View** menu item, select **Full screen**  as shown in the following image.  
 
-*Full-screen view in a Power BI report*
+    :::image type="content" source="media/whats-new/full-screen-view.png" alt-text="Screenshot showing Full-screen view of a Power BI report.":::
 
-Full-screen view has been added to the toolbar in paginated (.rdl) reports, located on the far right side of the pagination toolbar as shown in the following image.
+    *Full-screen view in a Power BI report*
 
-:::image type="content" source="media/whats-new/full-screen-paginated-rdl-report.png" alt-text="Screenshot showing full-screen view of a paginated report.":::
+- **In a paginated (.rdl) report**: We added full-screen view to the toolbar. It's located on the far right side of the pagination toolbar, as shown in the following image.
 
-*Full-screen view in paginated (.rdl) report*
+    :::image type="content" source="media/whats-new/full-screen-paginated-rdl-report.png" alt-text="Screenshot showing full-screen view of a paginated report.":::
+
+    *Full-screen view in paginated (.rdl) report*
 
 ### Responsive view navigation 
 
-For customers logging into Power BI Report Server with varying devices, we have enhanced the view port for smaller screens. This makes viewing reports more accessible. Users no longer need to scroll across to locate menu items. The view port has responsive design enabled for smaller viewers. Additional menu items are collapsed to accommodate the smaller screen size.
+Customers log in to Power BI Report Server with varying devices. We've enhanced the view port for smaller screens to make viewing reports more accessible. Users no longer need to scroll across to locate menu items. The view port has a responsive design enabled for smaller viewers. Additional menu items are collapsed to accommodate the smaller screen size.
 
 :::image type="content" source="media/whats-new/collapsed-menu-items-small-screen.png" alt-text="Screenshot showing collapsed menu on a small screen.":::
 
@@ -51,7 +53,7 @@ For customers logging into Power BI Report Server with varying devices, we have 
 
 We’ve added new buttons in Power BI Desktop that make it easy to switch quickly between web and mobile layouts while you’re developing reports. The new switcher buttons are in the lower-left corner of the screen, next to the page navigator. 
 
-:::image type="content" source="media/whats-new/new-layout-switcher-web-mobile.png" alt-text="Screenshot showing new layout switcher between web and mobile views.":::
+:::image type="content" source="media/whats-new/new-layout-switcher-web-mobile.png" alt-text="Screenshot showing new layout switcher between web and mobile views." lightbox="media/whats-new/new-layout-switcher-web-mobile.png":::
 
 *New layout switcher from web to mobile layout*
 
@@ -72,7 +74,7 @@ Azure Maps will also include this feature in a coming product update.
 
 In the following figure, the size of each country represents Urban Population, which is also shown on the y-axis. 
 
-:::image type="content" source="media/whats-new/scatter-chart-bubble-size-range-scaling.png" alt-text="Screenshot showing scatter chart bubble size range scaling.":::
+:::image type="content" source="media/whats-new/scatter-chart-bubble-size-range-scaling.png" alt-text="Screenshot showing scatter chart bubble size range scaling." lightbox="media/whats-new/scatter-chart-bubble-size-range-scaling.png":::
 
 ### Power BI Desktop Developer mode
 
@@ -80,13 +82,13 @@ Power BI customers demand enterprise BI solutions that scale to all users across
 
 Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a *Power BI project* (.pbip). When you save as a project, the report and dataset definitions are saved as individual plain text files in a simple, intuitive folder structure. 
 
-:::image type="content" source="media/whats-new/save-type-power-bi-project-files.png" alt-text="Screenshot showing saving as type Power BI project files.":::
+:::image type="content" source="media/whats-new/save-type-power-bi-project-files.png" alt-text="Screenshot showing saving as type Power BI project files." lightbox="media/whats-new/save-type-power-bi-project-files.png":::
 
-As a developer,with this integration you can: 
+As a developer, with this integration you can: 
 
 - Use Power BI Desktop to author report and dataset metadata files in source-control friendly formats.
 
-- Enable multiple developer collaboration, source control integration to track version history, compare different revisions (diff), and revert to previous versions.
+- Enable multiple-developer collaboration, source control integration to track version history, compare different revisions (diff), and revert to previous versions.
 
 - Build continuous integration and continuous delivery (CI/CD) workflows to enforce quality gates prior to reaching production environments.
 
@@ -94,7 +96,7 @@ As a developer,with this integration you can:
 
 With the combination of Power BI Desktop Developer mode, Fabric Git Integration, Azure DevOps and Deployment Pipelines, developers gain the ability to seamlessly sync their Power BI workspaces with Git repositories, ensuring consistency and facilitating CI/CD workflows. 
 
-:::image type="content" source="media/whats-new/power-bi-git-integration-diagram.png" alt-text="Diagram showing Power BI and Git integration.":::
+:::image type="content" source="media/whats-new/power-bi-git-integration-diagram.png" alt-text="Diagram showing Power BI and Git integration." lightbox="media/whats-new/power-bi-git-integration-diagram.png":::
 
 By using Git as the central repository for your developments, you establish it as the “source of truth”. This integration allows you to start your report development in Power BI Desktop, seamlessly transition to the Power BI service, and return to Power BI Desktop, where every modification is securely backed up and versioned by Git. 
 
@@ -106,7 +108,7 @@ Saving as a Power BI Project file is in public preview.
 
 - Go to **File** > **Options and settings** > **Options** > **Preview features** and check the box next to **Power BI Project (.pbip) save option**. 
 
-    :::image type="content" source="media/whats-new/power-bi-project-pbip-preview.png" alt-text="Screenshot showing enabling Power BI Project preview.":::
+    :::image type="content" source="media/whats-new/power-bi-project-pbip-preview.png" alt-text="Screenshot showing enabling Power BI Project preview." lightbox="media/whats-new/power-bi-project-pbip-preview.png" :::
 
 For more information, visit [Power BI Desktop projects](https://aka.ms/pbidesktopdevmode).
 
