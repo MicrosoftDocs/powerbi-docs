@@ -35,7 +35,7 @@ You've asked for the ability to allow your report consumers to present reports i
 
 - **In a paginated (.rdl) report**: We added full-screen view to the toolbar. It's located on the far right side of the pagination toolbar, as shown in the following image.
 
-    :::image type="content" source="media/whats-new/full-screen-paginated-rdl-report.png" alt-text="Screenshot showing full-screen view of a paginated report.":::
+    :::image type="content" source="media/whats-new/full-screen-paginated-rdl-report.png" alt-text="Screenshot showing full-screen view of a paginated report." lightbox="media/whats-new/full-screen-paginated-rdl-report.png":::
 
     *Full-screen view in paginated (.rdl) report*
 
