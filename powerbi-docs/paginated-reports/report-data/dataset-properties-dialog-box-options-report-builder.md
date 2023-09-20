@@ -49,5 +49,5 @@ Indicates that the Power BI service should attempt to derive the value from the 
   
 ## Next steps
 
- [Filter, Group, and Sort Data (Power BI Report Builder)](../report-design/filter-group-sort-data-report-builder.md)
- [Report Embedded Datasets (Power BI Report Builder)](./report-embedded-datasets-report-builder.md)   
+- [Filter, Group, and Sort Data (Power BI Report Builder)](../report-design/filter-group-sort-data-report-builder.md)
+- [Report Embedded Datasets (Power BI Report Builder)](./report-embedded-datasets-report-builder.md)

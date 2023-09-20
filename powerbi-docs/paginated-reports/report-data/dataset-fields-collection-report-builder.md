@@ -78,8 +78,8 @@ ms.reviewer: rpatkar
   
 ## Next steps
 
-[Report Embedded Datasets and Shared Datasets &#40;Power BI Report Builder&#41;](../report-data/report-embedded-datasets-report-builder.md)
-[Supported data sources for Power BI paginated reports](../paginated-reports-data-sources.md)
-[On-premises data gateway in-depth](../../connect-data/service-gateway-onprem-indepth.md)
-[Add or remove a gateway data source](../../connect-data/service-gateway-data-sources.md)
-  
+- [Report Embedded Datasets and Shared Datasets &#40;Power BI Report Builder&#41;](../report-data/report-embedded-datasets-report-builder.md)
+- [Supported data sources for Power BI paginated reports](../paginated-reports-data-sources.md)
+- [On-premises data gateway in-depth](../../connect-data/service-gateway-onprem-indepth.md)
+- [Add or remove a gateway data source](../../connect-data/service-gateway-data-sources.md)
+

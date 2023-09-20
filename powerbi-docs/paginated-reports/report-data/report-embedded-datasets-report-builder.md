@@ -21,7 +21,7 @@ ms.reviewer: rpatkar
   
  A dataset also includes parameters, filters, and data options that specify character sensitivities, such as case, kana type, width, accent, and collation information.  
   
- ![rs_DatasetStory](../media/report-builder-data/paginated-dataset-story.gif)
+ ![Diagram that shows the different elements of the embedded dataset.](../media/report-builder-data/paginated-dataset-story.gif)
   
 1. **Datasets in the Report Data pane** A dataset appears in the Report Data pane after you create an embedded dataset. A dataset is based on a data source.  
   
@@ -163,5 +163,5 @@ ms.reviewer: rpatkar
   
 ## Next steps
 
-[Manage Report Data Sources](../../connect-data/service-gateway-data-sources.md)
-[Data retrieval guidance for paginated reports](../../guidance/report-paginated-data-retrieval.md)
+- [Manage Report Data Sources](../../connect-data/service-gateway-data-sources.md)
+- [Data retrieval guidance for paginated reports](../../guidance/report-paginated-data-retrieval.md)

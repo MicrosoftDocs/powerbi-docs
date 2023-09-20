@@ -63,7 +63,7 @@ SELECT Name FROM Person.ContactType
   
  The following figure shows the Query and Results panes when you run a stored procedure. In this case, the input parameters are constants.  
   
- ![Stored procedure in text-based query designer](../media/report-builder-data/text-based-query-designer.gif "Stored procedure in text-based query designer")  
+ ![Stored procedure in text-based query designer.](../media/report-builder-data/text-based-query-designer.gif "Stored procedure in text-based query designer")  
   
  The following table describes the function of each pane.  
   
@@ -89,7 +89,7 @@ uspGetWhereUsedProductID
   
  For the specified date, the result set displays a list of 13 product identifiers that used the specified component number.  
   
-## Command Type TableDirect
+## Command type TableDirect
 
  When you select **Command typeTableDirect**, the text-based query designer presents two panes: the Query pane and the Result pane. When you enter a table and select the **Run** button, all the columns for that table are returned.  
   

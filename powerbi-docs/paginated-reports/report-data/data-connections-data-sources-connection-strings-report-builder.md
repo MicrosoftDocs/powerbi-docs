@@ -40,6 +40,6 @@ ms.reviewer: rpatkar
 
 ## Next steps
 
-[Supported data sources for Power BI paginated reports](../paginated-reports-data-sources.md)
-[On-premises data gateway in-depth](../../connect-data/service-gateway-onprem-indepth.md)
-[Add or remove a gateway data source](../../connect-data/service-gateway-data-sources.md)
+- [Supported data sources for Power BI paginated reports](../paginated-reports-data-sources.md)
+- [On-premises data gateway in-depth](../../connect-data/service-gateway-onprem-indepth.md)
+- [Add or remove a gateway data source](../../connect-data/service-gateway-data-sources.md)

@@ -58,9 +58,7 @@ At run time, the report processor runs the query for each dataset in a report an
   
 ## Next steps
 
- [Subreports (Power BI Report Builder)](../subreports.md)
- [Tables, Matrices, and Lists (Power BI Report Builder)](../report-builder-tables-matrices-lists.md)
- [Charts (Power BI Report Builder)](../report-design/visualizations/charts-report-builder.md)   
- [Maps (Report Builder)](../report-builder/data-regions-maps-report-builder.md)
-  
-  
+- [Subreports (Power BI Report Builder)](../subreports.md)
+- [Tables, Matrices, and Lists (Power BI Report Builder)](../report-builder-tables-matrices-lists.md)
+- [Charts (Power BI Report Builder)](../report-design/visualizations/charts-report-builder.md)   
+- [Maps (Report Builder)](../report-builder/data-regions-maps-report-builder.md)

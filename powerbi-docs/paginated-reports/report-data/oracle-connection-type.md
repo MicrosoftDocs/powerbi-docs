@@ -99,6 +99,6 @@ For more information about platform and version support, see [Supported data sou
 
 ## Next steps
 
-[Manage your data source - Oracle](../../connect-data/service-gateway-onprem-manage-oracle.md)  
-[Filter, Group, and Sort Data (Power BI Report Builder)](../report-design/filter-group-sort-data-report-builder.md)
-[Expressions (Power BI Report Builder)](../expressions/expression-uses-reports-report-builder.md)
+- [Manage your data source - Oracle](../../connect-data/service-gateway-onprem-manage-oracle.md)  
+- [Filter, Group, and Sort Data (Power BI Report Builder)](../report-design/filter-group-sort-data-report-builder.md)
+- [Expressions (Power BI Report Builder)](../expressions/expression-uses-reports-report-builder.md)

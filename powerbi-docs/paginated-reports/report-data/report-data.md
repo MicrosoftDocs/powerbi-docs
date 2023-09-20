@@ -43,7 +43,7 @@ ms.reviewer: rpatkar
   
 - **Credentials.** Credentials are the authentication information that must be provided to allow you access to external data.  
   
-##  <a name="BkMk_ReportDataTips"></a> Tips for Specifying Report Data
+##  <a name="BkMk_ReportDataTips"></a> Tips for specifying report data
 
  Use the following information to design your report data strategy.  
   
@@ -63,7 +63,7 @@ ms.reviewer: rpatkar
   
 - **Display data from a dataset** Data from a dataset is typically displayed on one or more data regions, for example, a table and a chart.  
   
-- **Display data from multiple datasets**  You can write expressions in a data region based on one dataset that look up values or aggregates in other datasets. You can include subreports in a table based on one dataset to display data from a different data source.  
+- **Display data from multiple datasets**  You can write expressions in a data region based on one dataset that looks up values or aggregates in other datasets. You can include subreports in a table based on one dataset to display data from a different data source.  
   
  Use the following list to help define sources of data for a report.  
   
