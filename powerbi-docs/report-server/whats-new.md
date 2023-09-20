@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/19/2023
+ms.date: 09/20/2023
 ms.custom: intro-whats-new
 ---
 
@@ -53,7 +53,7 @@ We’ve added new buttons in Power BI Desktop that make it easy to switch quickl
 
 :::image type="content" source="media/whats-new/new-layout-switcher-web-mobile.png" alt-text="Screenshot showing new layout switcher between web and mobile views.":::
 
-*new layout switcher from web to mobile layout*
+*New layout switcher from web to mobile layout*
 
 ### New bubble range scaling setting 
 
@@ -74,43 +74,45 @@ In the following figure, the size of each country represents Urban Population, w
 
 :::image type="content" source="media/whats-new/scatter-chart-bubble-size-range-scaling.png" alt-text="Screenshot showing scatter chart bubble size range scaling.":::
 
-### Power BI Desktop Developer Mode
+### Power BI Desktop Developer mode
 
-Power BI customers demand enterprise BI solutions that scale to all users across the largest organizations. This depends on enabling team collaboration and automation of deployments across development, test, and production environments to meet the needs of mission-critical BI systems. We are thrilled to announce the public preview of Power BI Desktop Developer Mode, taking advantage of Microsoft’s deep heritage in enterprise BI, and bringing Pro BI developer experiences right into Power BI Desktop.
+Power BI customers demand enterprise BI solutions that scale to all users across the largest organizations. This depends on enabling team collaboration and automation of deployments across development, test, and production environments to meet the needs of mission-critical BI systems. We are thrilled to announce the public preview of *Power BI Desktop Developer Mode*, taking advantage of Microsoft’s deep heritage in enterprise BI, and bringing Pro BI developer experiences right into Power BI Desktop.
 
-Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a Power BI Project (PBIP). When saving as project, report, and dataset definitions are saved as individual plain text files in a simple, intuitive folder structure. 
+Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a *Power BI project* (.pbip). When you save as a project, the report and dataset definitions are saved as individual plain text files in a simple, intuitive folder structure. 
 
- 
+:::image type="content" source="media/whats-new/save-type-power-bi-project-files.png" alt-text="Screenshot showing saving as type Power BI project files.":::
 
-As a developer, you can use this integration to: 
+As a developer,with this integration you can: 
 
-Use Power BI Desktop to author report and dataset metadata files in source-control friendly formats. 
+- Use Power BI Desktop to author report and dataset metadata files in source-control friendly formats.
 
-Enable multiple developer collaboration, source control integration to track version history, compare different revisions (diff), and revert to previous versions. 
+- Enable multiple developer collaboration, source control integration to track version history, compare different revisions (diff), and revert to previous versions.
 
-Build continuous integration and continuous delivery (CI/CD) workflows to enforce quality gates prior to reaching production environments. 
+- Build continuous integration and continuous delivery (CI/CD) workflows to enforce quality gates prior to reaching production environments.
 
-Enable code reviews, automated testing, and automated build to validate the integrity of a deployment. 
+- Enable code reviews, automated testing, and automated build to validate the integrity of a deployment.
 
-With the combination of Power BI Desktop Developer Mode, Fabric Git Integration, Azure DevOps and Deployment Pipelines, developers gain the ability to seamlessly sync their Power BI workspaces with Git repositories, ensuring consistency and facilitating CI/CD workflows. 
+With the combination of Power BI Desktop Developer mode, Fabric Git Integration, Azure DevOps and Deployment Pipelines, developers gain the ability to seamlessly sync their Power BI workspaces with Git repositories, ensuring consistency and facilitating CI/CD workflows. 
 
- 
+:::image type="content" source="media/whats-new/power-bi-git-integration-diagram.png" alt-text="Diagram showing Power BI and Git integration.":::
 
-By utilizing Git as the centralized repository for your developments, you establish it as the “source of truth”. This integration allows you to start your report development in Power BI Desktop, seamlessly transition to the Service, and return to Power BI Desktop, where every modification is securely backed up and versioned by Git. 
+By using Git as the central repository for your developments, you establish it as the “source of truth”. This integration allows you to start your report development in Power BI Desktop, seamlessly transition to the Power BI service, and return to Power BI Desktop, where every modification is securely backed up and versioned by Git. 
 
 Watch the recording of the [Empower every BI professional to do more with data](https://www.youtube.com/embed/OdkS7DF7ElY?start=277) session at Microsoft Build for an end-to-end demonstration of Power BI Desktop Developer Mode together with Fabric Git Integration. 
 
-Saving as a Power BI Project file is in public preview. To use this feature, go to **File** > **Options and settings** > **Options** > **Preview features** and check the box next to **Power BI Project (.pbip) save option**. 
+### Turn on Power BI Project file preview
 
- 
+Saving as a Power BI Project file is in public preview. 
 
-For more information, visit [Power BI Desktop projects](https://aka.ms/pbidesktopdevmode ).
+- Go to **File** > **Options and settings** > **Options** > **Preview features** and check the box next to **Power BI Project (.pbip) save option**. 
 
-Follow this blog for updates in the next release. Remember that Power BI Report Server release cadence is September, January, and May.
+    :::image type="content" source="media/whats-new/power-bi-project-pbip-preview.png" alt-text="Screenshot showing enabling Power BI Project preview.":::
+
+For more information, visit [Power BI Desktop projects](https://aka.ms/pbidesktopdevmode).
 
 ### Want to get involved?
 
-- To be a part of our customer research for paginated reports and provide product feedback, prototype assessment and staying abreast with what’s new,join the [Paginated Operational Reports Feedback Panel](https://ux.microsoft.com/Panel/PBIPaginatedFeedback). 
+- To be a part of our customer research for paginated reports, and provide product feedback, prototype assessment, and staying abreast with what’s new, join the [Paginated Operational Reports Feedback Panel](https://ux.microsoft.com/Panel/PBIPaginatedFeedback). 
 - Or join our [Reporting Services - Migration to Power BI](https://community.fabric.microsoft.com/t5/Reporting-Services-Migration-to/gh-p/ReportingServices-MigrationtoPowerBI) user group. Join the fun and tune in to our monthly events.
 
 ## May 2023
