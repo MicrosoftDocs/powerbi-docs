@@ -5438,11 +5438,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/admin/service-admin-portal-workspaces.md",
-            "redirect_url": "fabric/admin/service-admin-portal-workspaces",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "powerbi-docs/transform-model/datamarts/datamarts-sharing-discovery.md",
             "redirect_url": "/powerbi-docs/transform-model/datamarts/datamarts-discovery",
             "redirect_document_id": false
