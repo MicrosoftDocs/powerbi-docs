@@ -860,8 +860,6 @@
         href: ../paginated-reports/expressions/report-builder-expression-examples.md
       - name: Expression uses
         href: ../paginated-reports/expressions/expression-uses-reports-report-builder.md
-      - name: Add an assembly reference to a paginated report
-        href: ../paginated-reports/expressions/add-assembly-reference.md
       - name: Add code to a paginated report
         href: ../paginated-reports/expressions/add-code-to-a-report.md
       - name: Add an expression to a paginated report
