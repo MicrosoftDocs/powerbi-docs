@@ -21,7 +21,7 @@ ms.reviewer: rpatkar
   
  A dataset also includes parameters, filters, and data options that specify character sensitivities, such as case, kana type, width, accent, and collation information.  
   
- ![Diagram that shows the different elements of the embedded dataset.](../media/report-builder-data/paginated-dataset-story.gif)
+ ![Diagram that shows the different elements of the embedded dataset.](../media/report-builder-data/paginated-dataset-story.png)
   
 1. **Datasets in the Report Data pane** A dataset appears in the Report Data pane after you create an embedded dataset. A dataset is based on a data source.  
   

@@ -18,7 +18,7 @@ ms.reviewer: rpatkar
 
 ## Data in Report Builder
 
- ![Diagram of the dataset story in Report Builder.](../media/report-builder-data/paginated-dataset-story.gif)  
+ ![Diagram of the dataset story in Report Builder.](../media/report-builder-data/paginated-dataset-story.png)  
   
 1. **Data sources in the Report Data pane** A data source appears in the Report Data pane after you create an embedded data source.  
   
