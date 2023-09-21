@@ -1,7 +1,7 @@
 ---
 title: Expression uses in Power BI paginated reports | Microsoft Docs
 description: Specify or calculate values with paginated report expressions for parameters, queries, filters, and text box properties in Power BI Report Builder.
-ms.date: 04/25/2023
+ms.date: 09/21/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
