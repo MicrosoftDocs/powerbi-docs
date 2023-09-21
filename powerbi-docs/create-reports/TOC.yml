@@ -818,6 +818,8 @@
         href: ../paginated-reports/report-design/add-background-image-report-builder-service.md
     - name: Data sources and datasets
       items: 
+      - name: Introduction to paginated report data
+        href: ../paginated-reports/report-data/report-data.md
       - name: Understand paginated report data
         href: ../paginated-reports/report-builder-data.md
       - name: Supported data sources
@@ -826,10 +828,30 @@
         href: ../paginated-reports/paginated-reports-odbc-support.md
       - name: Create an embedded data source
         href: ../paginated-reports/paginated-reports-embedded-data-source.md
+      - name: Report embedded datasets
+        href: ../paginated-reports/report-data/report-embedded-datasets-report-builder.md
       - name: Create an embedded dataset
         href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
+      - name: Set a No Data message for a data region
+        href: ../paginated-reports/report-data/set-no-data-message-data-region-report-builder.md
+      - name: Report data pane
+        href: ../paginated-reports/report-data/report-data-pane.md
+      - name: Create data connection strings
+        href: ../paginated-reports/report-data/data-connections-data-sources-connection-strings-report-builder.md
+      - name: Dataset fields collection
+        href: ../paginated-reports/report-data/dataset-fields-collection-report-builder.md
+      - name: Dataset properties options
+        href: ../paginated-reports/report-data/dataset-properties-dialog-box-options-report-builder.md
       - name: Set time-out values for paginated report dataset processing
         href: ../paginated-reports/report-design/setting-time-out-values-for-report-dataset-processing.md
+      - name: Use a text-based query designer
+        href: ../paginated-reports/report-data/text-based-query-designer-user-interface-report-builder.md
+      - name: Add a filter to a dataset
+        href: ../paginated-reports/report-data/add-filter-to-dataset.md
+    - name: Data from external sources
+      items:
+      - name: Oracle connection type
+        href: ../paginated-reports/report-data/oracle-connection-type.md
     - name: Expressions
       items:
       - name: Expressions in Power BI Report Builder
