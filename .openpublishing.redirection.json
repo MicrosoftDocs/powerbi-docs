@@ -816,6 +816,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/paginated-reports/expressions/add-assembly-reference.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/custom-code-and-assembly-references-in-expressions",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/paginated-reports-view-power-bi-service.md",
             "redirect_url": "/power-bi/consumer/paginated-reports-view-power-bi-service",
             "redirect_document_id": true

@@ -124,7 +124,7 @@ sections:
           - Shared datasets
           - Linked reports
           - Custom fonts
-          - Custom assemblies. Consider converting logic from custom assembly to [embedded code](./expressions/custom-code-and-assembly-references-in-expressions.md). For examples of alternatives to consider, check [assembly alternatives](https://github.com/chmitch/ssrs-assembly-alternatives).
+          - Custom assemblies. Consider converting logic from custom assembly to [embedded code](./expressions/custom-code-and-assembly-references-in-expressions.md). For examples of alternatives to consider, check [assembly alternatives](https://github.com/chmitch/ssrs-assembly-alternatives). 
           
           You get an error message if you try to upload a file that has an unsupported feature in the Power BI service.
           

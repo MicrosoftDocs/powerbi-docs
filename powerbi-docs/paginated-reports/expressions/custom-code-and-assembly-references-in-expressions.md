@@ -137,5 +137,4 @@ End Function
 ## Next steps
 
 - [Add Code to a Report (Power BI Report Builder)](./add-code-to-a-report.md)
-- [Add an Assembly Reference to a Report (Power BI Report Builder)](./add-assembly-reference.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)
