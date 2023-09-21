@@ -16,6 +16,9 @@ ms.custom: updatefrequency5
 
   You can add custom code embedded in a report. Use embedded code for custom constants, complex functions or functions that are used multiple times in a single report. Custom code can include new custom constants, variables, functions, or subroutines. You can include read-only references to built-in collections such as the Parameters collection. However, you cannot pass sets of report data values to custom functions; specifically, custom aggregates are not supported.
 
+> [!NOTE]  
+> Custom assemblies are not supported in paginated reports on Power BI. Consider converting logic from custom assembly to embedded code. For examples of alternatives to consider, check [assembly alternatives](https://github.com/chmitch/ssrs-assembly-alternatives).
+
 > [!IMPORTANT]  
 > For time-sensitive calculations that are evaluated once at run-time and that you want to remain the same value throughout report processing, consider whether to use a report variable or group variable. For more information, see [Report and Group Variables Collections References (Power BI Report Builder)](/sql/reporting-services/report-design/built-in-collections-report-and-group-variables-references-report-builder).
 
@@ -130,9 +133,6 @@ Public Function ShowParameterValues(ByVal parameter as Parameter)
    Return s
 End Function
 ```
-
-> [!NOTE]  
-> Custom assemblies are not supported in paginated reports on Power BI. Consider converting logic from custom assembly to embedded code. For examples of alternatives to consider, check [assembly alternatives](https://github.com/chmitch/ssrs-assembly-alternatives).
 
 ## Next steps
 
