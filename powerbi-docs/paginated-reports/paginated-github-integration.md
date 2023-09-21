@@ -21,7 +21,7 @@ This article walks you through publishing a paginated report and keeping it in s
 [!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
 For license requirements for git integration, refer to [Fabric Prerequisites](/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git#fabric-prerequisites).
 
-Read about the integration of git with Microsoft Fabric at Introduction to git integration](/fabric/cicd/git-integration/intro-to-git-integration).
+Read about the integration of git with Microsoft Fabric at [Introduction to git integration](/fabric/cicd/git-integration/intro-to-git-integration).
 
 ## Get started
 
