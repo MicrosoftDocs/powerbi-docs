@@ -4,7 +4,7 @@ description: Find out how to call your own custom code for any expression you ha
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: rpatkar
-ms.date: 06/16/2023
+ms.date: 09/21/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
