@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.custom: video-RWUWA9
 ms.topic: conceptual
-ms.date: 08/31/2023
+ms.date: 09/21/2023
 ---
 
 # Power BI implementation planning
@@ -24,8 +24,8 @@ Successfully implementing Power BI throughout the organization requires delibera
 When you implement Power BI, there are many subject areas to consider. The following subject areas form part of the Power BI implementation planning series:
 
 - [BI strategy](powerbi-implementation-planning-bi-strategy-overview.md)
-- [User tools and devices](powerbi-implementation-planning-user-tools-devices.md)
 - [Tenant setup](powerbi-implementation-planning-tenant-setup.md)
+- [User tools and devices](powerbi-implementation-planning-user-tools-devices.md)
 - Subscriptions, licenses, and trials
 - Roles and responsibilities
 - Power BI service administration
