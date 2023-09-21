@@ -4,7 +4,7 @@ description: Find out how to add references to custom code embedded in a paginat
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: rpatkar
-ms.date: 06/21/2023
+ms.date: 09/21/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
