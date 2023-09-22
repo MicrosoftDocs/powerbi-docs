@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 01/19/2023
+ms.date: 09/21/2023
 ---
 
 # Create an embedded data source for paginated reports in the Power BI service
@@ -78,6 +78,7 @@ Paginated reports that connect to Power BI datasets follow the rules for shared 
 |.rdl in same workspace as dataset (different user)   | Supported  |
 |.rdl in different workspace as dataset (different user)   |  You need *Read* permission assigned for each user viewing the report at the dataset level     |
 |Row-level security | You need *Read* permission assigned for each user viewing the report at the dataset level to have it enforced   |
+|Hidden datasets | Not supported. |
 
 ## Next steps
 
