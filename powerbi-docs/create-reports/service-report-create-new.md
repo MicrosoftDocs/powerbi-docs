@@ -1,14 +1,14 @@
 ---
 title: 'Create a report from an Excel file in the Power BI service'
 description: Learn how to create a Power BI report from an Excel file in the Power BI service by using the Retail Analysis sample.
-author: maggiesMSFT
-ms.author: maggies
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Create a report from an Excel file
 ms.topic: how-to
-ms.date: 09/06/2023
+ms.date: 09/22/2023
 LocalizationGroup: Reports
 ---
 # Create a report from an Excel file in the Power BI service
