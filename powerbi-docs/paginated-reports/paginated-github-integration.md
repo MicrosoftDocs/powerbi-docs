@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 09/20/2023
+ms.date: 09/22/2023
 ---
 
 # Git integration with paginated reports
@@ -18,15 +18,13 @@ This article walks you through publishing a paginated report and keeping it in s
 
 ## Prerequisites
 
-### Power BI prerequisites
-
-[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
-
-### Git prerequisites
-
 [!INCLUDE [github-prereqs](~/../fabric-repo/docs/includes/github-prereqs.md)]
 
 Read about the integration of Git with Microsoft Fabric at [Introduction to git integration](/fabric/cicd/git-integration/intro-to-git-integration).
+
+### Power BI prerequisites
+
+See the **Prerequisites** section in [Get started creating paginated reports in the Power BI service](get-started-paginated-formatted-table.md#prerequisites).
 
 ## Add a paginated report to GitHub
 

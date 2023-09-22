@@ -7,7 +7,7 @@ ms.reviewer: nisrinivasan
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 06/20/2023
+ms.date: 06/22/2023
 ---
 
 # Create paginated reports that you can export in the Power BI service
@@ -20,8 +20,7 @@ You can use the feature to create paginated reports in any workspace in the Powe
 
 ## Prerequisites
 
-[!INCLUDE [power-bi-paginated-service-prerequisites](../../includes/power-bi-paginated-service-prerequisites.md)]
-- You need [Build permission for the dataset](../../connect-data/service-datasets-build-permissions.md).
+See the **Prerequisites** section in [Get started creating paginated reports in the Power BI service](get-started-paginated-formatted-table.md#prerequisites).
 
 ## Get started
 

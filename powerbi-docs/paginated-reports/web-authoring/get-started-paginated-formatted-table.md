@@ -7,7 +7,7 @@ ms.reviewer: nisrinivasan
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 09/14/2023
+ms.date: 09/222023
 ---
 
 # Get started creating paginated reports in the Power BI service
