@@ -1,14 +1,14 @@
 ---
 title: 'Create a dataset from an Excel file in the Power BI service'
 description: Learn how to create a Power BI dataset from an Excel file in the Power BI service, without using Power BI Desktop.
-author: maggiesMSFT
-ms.author: maggies
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Create dataset from Excel file
 ms.topic: how-to
-ms.date: 09/06/2023
+ms.date: 09/22/2023
 LocalizationGroup: Reports
 ---
 # Create a dataset from an Excel file in the Power BI service (preview)
