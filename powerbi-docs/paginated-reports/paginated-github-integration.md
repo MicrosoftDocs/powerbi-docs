@@ -24,7 +24,7 @@ Read about the integration of Git with Microsoft Fabric at [Introduction to git 
 
 ### Power BI prerequisites
 
-See the **Prerequisites** section in [Get started creating paginated reports in the Power BI service](get-started-paginated-formatted-table.md#prerequisites).
+See the **Prerequisites** section in [Get started creating paginated reports in the Power BI service](web-authoring/get-started-paginated-formatted-table.md#prerequisites).
 
 ## Add a paginated report to GitHub
 
