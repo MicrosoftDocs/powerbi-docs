@@ -104,6 +104,13 @@ When things go wrong, it’s usually because Power BI can’t sign into data sou
 
 When you save your changes to the Power BI Desktop file on OneDrive and you don't see those changes in Power BI within an hour or so, it could be because Power BI can't connect to your OneDrive. Try connecting to the file on OneDrive again. If you’re prompted to sign in, make sure you select **Keep me signed in**. Because Power BI wasn't able to connect to your OneDrive to synchronize with the file, you need to import your file again.
 
+Datasets stored on OneDrive or SharePoint are set to **restrict updates** by default. If the dataset is set to restrict updates, then updates can only happen when the dataset owner manually refreshes the dataset, which can cause changes to Power BI files on OneDrive and SharePoint to not be reflected in the Power BI service. A dataset owner might run into an error message after updating a file in OneDrive or SharePoint. The dataset owner can fix the error by choosing to always manually refresh the dataset, or changing the dataset setting to **automatic updates**.
+
+If the dataset owner is unable to change the setting of the dataset to **automatic updates**, the tenant admin has likely enforced restricted updates across all datasets in the organization. To enable the dataset owner to change the setting, they must to contact their Fabric admin and request that the admin enable the **Dataset owners can choose to automatically update from files imported from OneDrive or SharePoint** setting.
+
+If the dataset owner has set up scheduled refresh on datasets, then the model will still refresh on schedule. However, the other contents of the report, such as visuals, will not refresh unless manual updates are made. 
+
+
 * Import of sensitivity-labeled *.pbix* files (both protected and unprotected) stored on OneDrive or SharePoint Online, as well as on-demand and automatic dataset refresh from such files, is supported, except for the following scenarios:
 
     * Protected live-connected *.pbix* files and protected Azure Analysis Services *.pbix* files. Refresh will fail. Neither report content nor label will be updated.
