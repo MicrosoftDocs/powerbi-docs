@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/20/2023
+ms.date: 09/25/2023
 ---
 
 # Datasets in the Power BI service
@@ -46,6 +46,11 @@ SQL Server Analysis Services supports both multidimensional models, or cubes, an
 You can use Power BI Desktop, a client application for Power BI development, to develop a model. A Power BI Desktop model is effectively an Analysis Services tabular model.
 
 You can develop three different types, or *modes*, of models by using Power BI Desktop: Import, DirectQuery, and Composite. You develop models by importing data from dataflows and then integrating them with external data sources. The mode depends on whether data is imported into the model, or whether it remains in the data source. For more information about the modes, see [Dataset modes in the Power BI service](service-dataset-modes-understand.md).
+
+### Dataset ownership
+
+When working with datasets using gateway and cloud connections, your ability to make changes to the dataset is dependent on ownership of the dataset. If you're not the owner, a warning is displayed stating that you're viewing the section of the dataset information in read-only mode because you're not the dataset owner. To make changes, you must either contact the dataset owner to make changes, or take over ownership of the dataset.
+
 
 ### Row-level security
 
