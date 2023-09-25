@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/12/2023
+ms.date: 07/19/2023
 ms.custom: licensing support,fabric
 LocalizationGroup: Administration
 ---
@@ -44,7 +44,7 @@ Power BI administrators can analyze usage for all Power BI resources at the tena
 > [!NOTE]
 > You need to be familiar with the [Power BI Admin API](/rest/api/power-bi/admin) and [Power BI PowerShell modules](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true). PowerShell modules must be installed before you can run commands.
 >
-> There can be a lag of up to 30 minutes to retrieve Power BI events.
+> Most audit events show up within 30 minutes, however, there can be a lag of up to 60 minutes to retrieve Power BI events.
 
 ### Activity log requirements
 
@@ -80,10 +80,6 @@ while(response.ContinuationToken != null)
 }
 completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 ```
-
-> [!NOTE]
-> It can take up to 24 hours for all events to show up, though full data is typically available much sooner.
-
 If the time span between `startDateTime` and `endDateTime` exceeds 1 hour, it takes multiple requests to download the data through `continuationUri` in response.
 
 The following example shows how to download data for 1 hour and 5 minutes:
@@ -158,10 +154,11 @@ Meet these requirements to access audit logs:
     If you can't access the Exchange admin center from the Microsoft 365 admin center, go to https://outlook.office365.com/ecp, and sign in using your credentials.
 
 - If you have access to the audit log but aren't a global admin or Power BI Administrator, you can't get to the Power BI Admin portal. In this case, use a direct link to [Microsoft Purview](https://compliance.microsoft.com/auditlogsearch).
+- For more information about auditing with Microsoft Purview in Microsoft 365, reference [frequently asked questions](/microsoft-365/compliance/audit-log-search?view=o365-worldwide#frequently-asked-questions&preserve-view=true/).
 
 ### Access your audit logs
 
-To access logs, first enable logging in Power BI. For more information, see [Audit and usage settings](service-admin-portal-audit-usage.md#create-audit-logs-for-internal-activity-auditing-and-compliance) in the admin portal documentation. There may be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. You might experience a similar delay between getting permission to view audit logs and being able to access the logs.
+To access logs, first enable logging in Power BI. For more information, see [Audit and usage settings](/fabric/admin/service-admin-portal-audit-usage#create-audit-logs-for-internal-activity-auditing-and-compliance) in the admin portal documentation. There may be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. You might experience a similar delay between getting permission to view audit logs and being able to access the logs.
 
 The Power BI audit logs are available directly through [Microsoft Purview](https://compliance.microsoft.com/auditlogsearch). There's also a link from the Power BI admin portal:
 
@@ -314,7 +311,7 @@ The following operations are available in both the audit and activity logs.
 | [Applied sensitivity label to Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
 | Assigned a workspace to a deployment pipeline | AssignWorkspaceToPipeline  | |
 | Attached dataflow storage account     | AttachedDataflowStorageAccount | |
-| Binded monikers to Power BI datasources | BindMonikerstoDatasources | |
+| Binded monikers to Power BI datasources | BindMonikersToDatasources | |
 | Binded Power BI dataset to gateway  | BindToGateway        |     |
 | Canceled Power BI dataflow refresh    | CancelDataflowRefresh |    |
 | Changed capacity state        | ChangeCapacityState  |      |
@@ -323,6 +320,7 @@ The following operations are available in both the audit and activity logs.
 | Changed Power BI gateway admins   | ChangeGatewayAdministrators  |       |
 | Changed Power BI gateway data source users  | ChangeGatewayDatasourceUsers   |       |
 | [Changed sensitivity label for Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md) | SensitivityLabelChanged  | |
+| Completed an artifact access request action in Power BI | ArtifactAccessRequest | |
 | Connected to Power BI dataset from external app | ConnectFromExternalApplication | |
 | Copied Power BI dashboard | CopyDashboard | |
 | Copied Power BI report | CopyReport  |  |
@@ -331,7 +329,7 @@ The following operations are available in both the audit and activity logs.
 | Created a Power BI scorecard | CreateScorecard | |
 | Created an organizational custom visual     | InsertOrganizationalGalleryItem   |    |
 | Created deployment pipeline      | CreateAlmPipeline       |  |
-| Created install ticket for installing Power BI template app | CreateTemplateAppInstallTicket | |
+| Created an install ticket for installing Power BI template app | CreateTemplateAppInstallTicket | |
 | Created Power BI app      | CreateApp           |       |
 | Created Power BI dashboard    | CreateDashboard  |       |
 | Created Power BI dataflow      | CreateDataflow            |                        |
@@ -343,8 +341,7 @@ The following operations are available in both the audit and activity logs.
 | Created Power BI gateway cluster datasource | CreateGatewayClusterDatasource | |
 | Created Power BI group      | CreateGroup            |       |
 | Created Power BI report       | CreateReport <sup>1</sup>      |          |
-| Created Power BI template app | CreateTemplateApp |  |
-| Created workspace for Power BI template app | CreateTemplateApp | |
+| Created a Power BI template  or a workspace for a template app | CreateTemplateApp |  |
 | Custom visual requested Azure AD access token         | GenerateCustomVisualAADAccessToken    |   |
 | Custom visual requested Office Web Apps access token    | CustomVisualWACAccessToken          |     |
 | Dataflow migrated to external storage account     | DataflowMigratedToExternalStorageAccount    | Not currently used                       |
@@ -367,7 +364,6 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI dataset rows | DeleteDatasetRows |Indicates that the [Push Datasets - Datasets DeleteRows](/rest/api/power-bi/push-datasets/datasets-delete-rows) API was called   |
 | Deleted Power BI email subscription   | DeleteEmailSubscription   |          |
 | Deleted Power BI folder   | DeleteFolder   |   |
-| Deleted Power BI metric | DeleteGoal | |
 | Deleted Power BI folder access     | DeleteFolderAccess     | Not currently used        |
 | Deleted Power BI gateway      | DeleteGateway                  |        |
 | Deleted Power BI gateway cluster | | |
@@ -377,10 +373,9 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI note | DeleteNote | |
 | Deleted Power BI scorecard | DeleteScorecard | |
 | Deleted Power BI report    | DeleteReport   |    |
-| Deleted Power BI template app | DeleteTemplateApp | |
+| Deleted a Power BI template app or a workspace for a template app | DeleteTemplateApp | |
 | [Deleted sensitivity label from Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md)  | SensitivityLabelRemoved | |
 | Deleted snapshot for user in Power BI tenant | DeleteSnapshot | Generated when a user deletes a snapshot that describes a dataset |
-| Deleted workspace for Power BI template app | DeleteTemplateApp | |
 | Deployed to a pipeline stage     | DeployAlmPipeline    |        |
 | Discovered Power BI dataset data sources      | GetDatasources       | |
 | Downloaded Power BI report     | DownloadReport                   |       |
@@ -399,8 +394,7 @@ The following operations are available in both the audit and activity logs.
 | Export Power BI activity events | ExportActivityEvents | |
 | Exported Power BI item to another file format | ExportArtifact | |
 | Exported Power BI dataflow   | ExportDataflow |  |
-| Exported Power BI report to another file format | ExportReport | |
-| Exported Power BI report visual data    | ExportReport    |     |
+| Exported Power BI report to another file format or exported report visual data | ExportReport | |
 | Exported Power BI tile data    | ExportTile       |         |
 | Generated Power BI dataflow SAS token    | GenerateDataflowSasToken   |  |
 | Generated Power BI Embed Token     | GenerateEmbedToken  |        |
@@ -408,6 +402,8 @@ The following operations are available in both the audit and activity logs.
 | Get Power BI group users | GetGroupUsers | |
 | Get refresh history via lockbox | GetRefreshHistoryViaLockbox | |
 | Imported file to Power BI   | Import   |           |
+| Import file to Power BI started   | ImportArtifactStart   | Generated when importing Power BI Desktop files (.pbix). When ImportSource is PowerBI, the file import originated from a Power BI client or API. When ImportSource is OneDriveSharePoint, the file import originated from  OneDrive or a SharePoint document library. |
+| Import file to Power BI ended   | ImportArtifactEnd   | Generated when importing Power BI Desktop files (.pbix). ImportSource indicates Power BI or OneDriveSharePoint. ImportType tells you if the file is new (Publish) or is being updated (Republish).   |
 | Initiated Power BI gateway cluster authentication process | | |
 | Inserted or updated current value connection of Power BI metric | UpsertGoalCurrentValueConnection | |
 | Inserted or updated target value connection of Power BI metric | | |
@@ -503,6 +499,8 @@ The following operations are available in both the audit and activity logs.
 | Retrieved status of Power BI gateway cluster datasource | | |
 | Retrieved upstream dataflows from Power BI dataflow | GetDataflowUpstreamDataflowsAsAdmin | |
 | Rotated Power BI gateway tenant key | | |
+| Saved an autogenerated dataset to Power BI | SaveAutogeneratedDataset | After exploring an autogenerated Power BI dataset in an external application, a user saved it to the Power BI service.|
+| Saved an autogenerated report to Power BI | SaveAutogeneratedReport | After exploring an autogenerated Power BI report in an external application, a user saved it to the Power BI service.|
 | Sent a scan request in Power BI tenant | GetWorkspacesInfoAPI | |
 | Set dataflow storage location for a workspace   | SetDataflowStorageLocationForWorkspace      | |
 | Set scheduled refresh on Power BI dataflow        | SetScheduledRefreshOnDataflow               |     |
@@ -535,7 +533,6 @@ The following operations are available in both the audit and activity logs.
 | Updated Power BI dataset data sources   | UpdateDatasources  |   |
 | Updated Power BI dataset parameters    | UpdateDatasetParameters     |    |
 | Updated Power BI discoverable model settings | UpdateDiscoverableModelSettings | Generated when a report is set to feature on home |
-| Updated Power BI gateway data source credentials | UpdateDatasourceCredentials | |
 | Updated Power BI email subscription               | UpdateEmailSubscription                     |     |
 | Updated Power BI folder                           | UpdateFolder                                |    |
 | Updated Power BI folder access                    | UpdateFolderAccess                          |     |
@@ -549,13 +546,13 @@ The following operations are available in both the audit and activity logs.
 | Updated settings for Power BI template app | UpdateTemplateAppSettings | |
 | Updated testing permissions for Power BI template app | UpdateTemplateAppTestPackagePermissions | |
 | Updated workspace Analysis Services settings | SetASSeverPropertyOnWorkspaceFromExternalApplicationDetailedInfo | |
+| Used Power BI to explore data in an external application | ExploreDataExternally | Someone used Power BI to explore their data in an external application. |
 | Viewed Power BI dashboard    | ViewDashboard     |Some fields such as *CapacityID* and *CapacityName*, will return null if the report or dashboard is viewed from a Power BI app, rather than a Power BI workspace      |
 | Viewed Power BI dataflow     | ViewDataflow       |     |
 | Viewed Power BI metadata | ViewMetadata | |
 | Viewed Power BI report    | ViewReport     | A report is also generated per page when exporting a report. Some fields such as *CapacityID* and *CapacityName*, will return null if the report or dashboard is viewed from a Power BI app, rather than a Power BI workspace. |
 | Viewed Power BI tile       | ViewTile      |     |
 | Viewed Power BI usage metrics   | ViewUsageMetrics    |   |
-|   |  |   |
 
 <sup>1</sup> Publishing from Power BI Desktop to the service is a CreateReport event in the service.
 

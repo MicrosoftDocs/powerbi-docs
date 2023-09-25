@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/11/2023
+ms.date: 07/12/2023
 LocalizationGroup: Connect to data
 ---
 # Data types in Power BI Desktop
@@ -93,7 +93,7 @@ Power BI Desktop supports five **Date/Time** data types in Power Query Editor. B
 
 ## Text type
 
-The **Text** data type is a Unicode character data string, which can be letters, numbers, or dates represented in a text format. The maximum string length is 268,435,456 Unicode characters (256 mega characters), or 536,870,912 bytes.
+The **Text** data type is a Unicode character data string, which can be letters, numbers, or dates represented in a text format. The practical maximum limit for string length is approximately 32,000 Unicode characters, based on Power BI's underlying Power Query engine, and its limits on **text** data type lengths. Text data types beyond the practical maximum limit are likely to result in errors.
 
 The way Power BI stores text data can cause the data to display differently in certain situations. The next sections describe common situations that can cause **Text** data to change appearance slightly between querying data in Power Query Editor and loading it into Power BI.
 

@@ -6,9 +6,9 @@ ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.custom: admin-portal
+ms.custom: admin-portal, fabric
 ms.topic: how-to
-ms.date: 01/19/2023
+ms.date: 07/27/2023
 LocalizationGroup: Administration
 ---
 
@@ -42,8 +42,8 @@ The possible workspace states are described below.
 |---------|---------|
 | **Active** | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
 | **Orphaned** | A workspace with no admin user. You need to assign an admin. |
-| **Deleted** | A deleted workspace. A Power BI administrator can restore the workspace up to 90 days after it was deleted. When the 90 days pass, the workspace enters the *Removing* state.<br>If you delete a *MyWorkspace* workspace, it moves to the *Removing* state immediately, without the 90 days grace period. |
-| **Removing** | After you delete a workspace, and once the 90 day grace period passes, the workspace moves into the *Removing* state. During this state, the workspace is permanently removed. Permanently removing a workspace takes a short while, and depends on the service and folder content. |
+| **Deleted** | A deleted workspace. A Power BI administrator can restore the workspace up to 30 days after it was deleted. When the 30 days pass, the workspace enters the *Removing* state.<br>If you delete a *MyWorkspace* workspace, it moves to the *Removing* state immediately, without the 30 days grace period. |
+| **Removing** | After you delete a workspace, and once the 30 day grace period passes, the workspace moves into the *Removing* state. During this state, the workspace is permanently removed. Permanently removing a workspace takes a short while, and depends on the service and folder content. |
 | **Not found** | If the customer's API request includes a workspace ID for a workspace that doesn't belong to the customer's tenant, "Not found" is returned as the status for that ID. |
 
 ## Workspace options
@@ -102,7 +102,7 @@ Power BI admins can designate a default capacity for My workspaces. However, eve
 
 ### Restore a deleted My workspace as an app workspace
 
-When users leave the company, their My workspaces show up as Deleted in the State column on the Workspaces page in the Admin portal. Power BI admins can restore deleted My workspaces as app workspaces that other users can collaborate in.
+When users are deleted from the company's Active Directory, their My workspaces show up as Deleted in the State column on the Workspaces page in the Admin portal. Power BI admins can restore deleted My workspaces as app workspaces that other users can collaborate in.
 
 During this restoration process, the Power BI admin needs to assign at least one Workspace admin in the new app workspace, as well as give the new workspace a name. After the workspace has been restored, it will show up as *Workspace* in the Type column on the Workspaces page in the Admin portal.
 

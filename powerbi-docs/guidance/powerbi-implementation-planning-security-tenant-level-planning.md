@@ -37,7 +37,7 @@ The Power BI administrator is a high-privilege role that has significant control
 - **Access to tenant metadata:** Administrators can access tenant-wide metadata, including the Power BI activity logs and activity events retrieved by the [Power BI admin APIs](/rest/api/power-bi/admin).
 
 > [!TIP]
-> As a best practice, you should assign between two and four users to the Power BI administrator role. That way, you can reduce risk while ensuring there's adequate coverage and cross-training.
+> As a best practice, you should assign between two and four users to the Fabric administrator role. That way, you can reduce risk while ensuring there's adequate coverage and cross-training.
 
 A Power BI administrator belongs to at least one of these [built-in roles](/microsoft-365/admin/add-users/about-admin-roles):
 
@@ -46,14 +46,14 @@ A Power BI administrator belongs to at least one of these [built-in roles](/micr
 - Global administrator (Azure Active Directory)
 
 > [!NOTE]
-> While a Power Platform administrator can manage the Power BI service, the inverse isn't true. Someone assigned to the Power BI administrator role can't manage other applications in the Power Platform.
+> While a Power Platform administrator can manage the Power BI service, the inverse isn't true. Someone assigned to the Fabric administrator role can't manage other applications in the Power Platform.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When planning for who will be a Power BI administrator, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Identify who's currently assigned the administrator role:** Verify who's assigned to one of the Power BI administrator roles: Power BI admin, Power Platform admin, and Global administrator.
+> - **Identify who's currently assigned the administrator role:** Verify who's assigned to one of the Power BI administration roles: Fabric admin, Power Platform admin, and Global administrator.
 > - **Determine who should manage the Power BI service:** If there are too many Power BI administrators, create a plan to reduce the total number. If there are users assigned as Power BI administrators who aren't well suited to such a high-privilege role, create a plan to resolve the issue.
 > - **Clarify roles and responsibilities:** For each Power BI administrator, ensure that their responsibilities are clear. Verify that appropriate cross-training has occurred.
 
@@ -144,9 +144,6 @@ There are two aspects to enabling and managing how external user access will wor
 
 - [Azure AD settings](whitepaper-azure-b2b-power-bi.md#additional-azure-ad-settings-that-affect-experiences-in-power-bi-related-to-azure-ad-b2b) that are managed by an Azure AD administrator. These Azure AD settings are a prerequisite.
 - [Power BI tenant settings](/power-bi/admin/service-admin-portal-export-sharing) that are managed by a Power BI administrator in the admin portal. These settings will control the user experience in the Power BI service.
-
-> [!TIP]
-> Most external users are read-only consumers. However, sometimes you may want to allow an external user to edit and manage content in Power BI. In that situation, you must work within some [limitations](whitepaper-azure-b2b-power-bi.md#enabling-external-users-to-edit-and-manage-content-within-power-bi). We recommend that you thoroughly test the capabilities that you intend to implement.
 
 ### Guest invitation process
 
@@ -306,7 +303,7 @@ Consider the following use cases for groups.
 | **Managing data gateways** | Includes one or more groups of users who are allowed to administer a gateway cluster. There may be several groups of this type when there are multiple gateways or when decentralized teams manage gateways. | Power BI gateway administrators </br></br> Power BI gateway data source creators </br></br>Power BI gateway data source owners  </br></br>Power BI gateway data source users |
 | **Managing Premium capacities** | Includes users allowed to manage a Premium capacity. There may be several groups of this type when there are multiple capacities or when decentralized teams manage capacities. | Power BI capacity contributors |
 | **Securing workspaces, apps, and items** | Many groups that are based on subject areas and allowed access for managing security of Power BI workspace roles, app permissions, and per-item permissions. | Power BI workspace administrators  </br></br>Power BI workspace members  </br></br>Power BI workspace contributors  </br></br>Power BI workspace viewers  </br></br>Power BI app viewers |
-| **Deploying content** | Includes the users that can deploy content by using a Power BI [deployment pipeline](/power-bi/create-reports/deployment-pipelines-overview). This group is used in conjunction with workspace permissions. | Power BI deployment pipeline administrators |
+| **Deploying content** | Includes the users that can deploy content by using a Power BI [deployment pipeline](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines). This group is used in conjunction with workspace permissions. | Power BI deployment pipeline administrators |
 | **Automating administrative operations** | Includes the service principals that are allowed to use Power BI APIs for embedding or administrative purposes. | Power BI service principals |
 
 #### Groups for Power BI tenant settings

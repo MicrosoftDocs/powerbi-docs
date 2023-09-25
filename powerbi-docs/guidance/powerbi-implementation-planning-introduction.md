@@ -1,14 +1,14 @@
 ---
 title: "Power BI implementation planning"
 description: "An introduction to the Power BI implementation planning series of articles."
-author: data-goblin
-ms.author: v-kurtbuhler
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.custom: video-RWUWA9
 ms.topic: conceptual
-ms.date: 04/17/2023
+ms.date: 09/21/2023
 ---
 
 # Power BI implementation planning
@@ -23,21 +23,20 @@ Successfully implementing Power BI throughout the organization requires delibera
 
 When you implement Power BI, there are many subject areas to consider. The following subject areas form part of the Power BI implementation planning series:
 
-- BI strategy
-- User needs and opportunities
-- Authoring tools and user machines
+- [BI strategy](powerbi-implementation-planning-bi-strategy-overview.md)
 - [Tenant setup](powerbi-implementation-planning-tenant-setup.md)
+- [User tools and devices](powerbi-implementation-planning-user-tools-devices.md)
 - Subscriptions, licenses, and trials
 - Roles and responsibilities
-- Power BI service oversight
+- Power BI service administration
 - [Workspaces](powerbi-implementation-planning-workspaces-overview.md)
 - Data management
+- Content deployment
 - Content distribution and sharing
-- Change management and deployment
 - [Security](powerbi-implementation-planning-security-overview.md)
 - [Information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md)
 - Power BI Premium
-- Gateways
+- Data gateways
 - Integration with other services
 - [Auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md)
 - Adoption tracking
@@ -92,7 +91,7 @@ This series is certain to be helpful for organizations that are in their early s
 
 ## Acknowledgments
 
-This series of articles was written by Melissa Coates, Data Platform MVP and owner of [Coates Data Strategies](https://www.coatesdatastrategies.com/) with significant contributions from Peter Myers, Matthew Roche, Alex Powers, and Chris Webb.
+The Power BI implementation planning articles are written by Melissa Coates, Kurt Buhler, and Peter Myers. Matthew Roche, from the Fabric Customer Advisory Team, provides strategic guidance and feedback to the subject matter experts.
 
 ## Next steps
 

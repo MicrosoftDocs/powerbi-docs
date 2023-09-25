@@ -1,20 +1,20 @@
 ### YamlMime:FAQ
 metadata:
   title: "Paginated reports in Power BI: FAQ"
-  description: This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. 
+  description: This article answers frequently asked questions about paginated reports. These reports are highly formatted, print-ready output optimized for printing or PDF generation. 
   author: maggiesMSFT
   ms.author: petebro
   ms.reviewer: ''
   ms.service: powerbi
   ms.subservice: report-builder
   ms.topic: faq
-  ms.date: 04/11/2023
+  ms.date: 09/21/2023
 
 title: "Paginated reports in Power BI: FAQ"
 summary: |
   [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
   
-  This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
+  This article answers frequently asked questions about paginated reports. These reports are highly formatted, print-ready output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
   
   This article answers many common questions people have about paginated reports in Power BI, and about Power BI Report Builder, the standalone tool for authoring paginated reports. You don't need a [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license or a [Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md) to publish paginated reports to My Workspace. You do need a PPU or Power BI Pro license and write access to publish to other workspaces. Users with free, Pro, and PPU licenses can view the content. To learn more about licensing, see [Licensing the Power BI service for users in your organization](../enterprise/service-admin-licensing-organization.md)
 
@@ -120,12 +120,13 @@ sections:
         answer: |
           Currently, paginated reports don't support the following items:
           
-          - Shared data sources
+          - Shared data sources. Consider using a similar feature called named connections on Power BI service, [learn more](https://powerbi.microsoft.com/en-us/blog/streamlining-cloud-connection-management-for-datasets-paginated-reports-and-other-artifacts/).
           - Shared datasets
           - Linked reports
           - Custom fonts
+          - Custom assemblies. Consider converting logic from custom assembly to [embedded code](./expressions/custom-code-and-assembly-references-in-expressions.md). For examples of alternatives to consider, check [assembly alternatives](https://github.com/chmitch/ssrs-assembly-alternatives). 
           
-          You get an error message if you try to upload a file that has an unsupported feature in the Power BI service, other than toggle/sort.
+          You get an error message if you try to upload a file that has an unsupported feature in the Power BI service.
           
       - question: |
           What data sources do you support currently for paginated reports?
@@ -224,8 +225,12 @@ sections:
           "There was an error communicating with Analysis Services. Please verify that the data source is available and your credentials are correct. The connection either timed out or was lost." 
           
           For paginated reports running longer than 10 minutes, we recommend using  the XMLA endpoint to connect to the Power BI dataset.
+
+      - question: |
+          External tenant user accounts aren't supported with Power BI Report Builder
+        answer: |
+          In some customer scenarios, admins have allowed external users to their organization access to workspaces and content. What is an external user? One example would be a BikeManufacturer (`user@MyBikes.com`) account that has been given access to the Contoso (`user@Contoso.com`) tenant. An external user may see an "Access denied" error or see no content with Power BI Report Builder when accessing workspaces, or editing or creating reports. We'll look to adding this functionality in a future update.
           
-     
 additionalContent: |
 
   ## Next steps

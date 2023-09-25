@@ -14,7 +14,7 @@ ms.date: 03/30/2023
 
 As a Power BI administrator for your organization, you can control the type of Power BI visuals users can access across the organization and limit the actions users can perform.
 
-To manage Power BI visuals, you must be a Global Administrator in Office 365, or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding Power BI administrator roles](service-admin-role.md).
+To manage Power BI visuals, you must be a Global Administrator in Office 365, or have been assigned the Fabric administrator role. For more information about the Fabric administrator role, see [Understanding Power BI administration roles](service-admin-role.md).
 
 [!INCLUDE[Get to the admin settings](../includes/admin-portal-settings.md)]
 
@@ -53,7 +53,7 @@ Use the following instructions to enable users in your organization to upload *.
 
    ![A screenshot showing the tenant settings menu in the Power BI admin settings. In the Power BI visuals section, the allow visuals created by using the Power BI S D K option is expanded, and the enabled button is turned on.](media/organizational-visuals/tenant-settings.png)
 
-UI changes to tenant settings apply only to Power BI service. To enable users in your organization to upload *.pbiviz* files, and add visuals from AppSource to their visualization pane in  Power BI Desktop, use [Azure AD Group Policy](/azure/active-directory-domain-services/manage-group-policy).
+UI changes to tenant settings apply only to Power BI service. To enable users in your organization to upload *.pbiviz* files, and add visuals from AppSource to their visualization pane in  Power BI Desktop, use AD Group Policy.
 
 |Key  |Value name  |Value  |
 |---------|---------|---------|
@@ -74,7 +74,7 @@ When this setting is enabled, only certified Power BI visuals will render in you
 
    ![A screenshot showing the tenant settings menu in the Power BI admin settings. In the Power BI visuals section, the add and use certified visuals only (block uncertified) option is expanded, and the enabled button is turned on.](media/organizational-visuals/certified-visuals.png)
 
-UI changes to tenant settings apply only to Power BI service. To manage the certified visuals tenant setting in Power BI Desktop, use [Azure AD Group Policy](/azure/active-directory-domain-services/manage-group-policy).
+UI changes to tenant settings apply only to Power BI service. To manage the certified visuals tenant setting in Power BI Desktop, use AD Group Policy.
 
 |Key  |Value name  |Value  |
 |---------|---------|---------|
@@ -91,7 +91,7 @@ When this setting is enabled, all visuals created with an API earlier than v4.6.
 
 ### Export data to file
 
-When this setting is enabled, users can download data from a custom visual into a file on their storage device. This setting is separate from and not affected by download restrictions applied in your organization's [export and sharing](/power-bi/admin/service-admin-portal-export-sharing) tenant settings.
+When this setting is enabled, users can download data from a custom visual into a file on their storage device. This setting is separate from and not affected by download restrictions applied in your organization's [export and sharing](/fabric/admin/service-admin-portal-export-sharing) tenant settings.
 
 >[!NOTE]
 >When this setting is enabled, a custom visual can export to files of the following types:
@@ -117,7 +117,7 @@ When this setting is enabled, users can download data from a custom visual into 
 
    :::image type="content" source="media/organizational-visuals/allow-downloads-from-custom-visuals.png" alt-text="Screenshot of the Power BI setting that allows downloads from custom visuals.":::
 
-UI changes to tenant settings apply only to Power BI service. To enable users in your organization to download data from custom visuals in Power BI Desktop, use [Azure AD Group Policy](/azure/active-directory-domain-services/manage-group-policy).
+UI changes to tenant settings apply only to Power BI service. To enable users in your organization to download data from custom visuals in Power BI Desktop, use AD Group Policy.
 
 |Key  |Value name  |Value  |
 |---------|---------|---------|

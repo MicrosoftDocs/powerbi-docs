@@ -11,7 +11,7 @@ ms.custom: include file
 
 ## Access the Power BI admin portal settings
 
-You have to be a global admin or Power BI service admin to access the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding Power BI administrator roles](../admin/service-admin-role.md). To get to the Power BI admin portal, follow these steps:
+You have to be a global admin or Fabric administrator to access the Power BI admin portal. For more information about the Fabric administrator role, see [Understanding Power BI administration roles](../admin/service-admin-role.md). To get to the Power BI admin portal, follow these steps:
 
 1. Sign in to [Power BI](https://app.powerbi.com) by using your admin account credentials.
 

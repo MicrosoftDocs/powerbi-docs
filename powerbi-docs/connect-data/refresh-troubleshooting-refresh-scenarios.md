@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 05/31/2023
+ms.date: 06/05/2023
 LocalizationGroup: Data refresh
 ---
 
@@ -80,6 +80,8 @@ Scheduled refresh for imported datasets time out after two hours. This time-out 
 ## Scheduled refresh disabled
 
 If a scheduled refresh fails four times in a row, Power BI disables the refresh. Address the underlying problem, and then re-enable the scheduled refresh.
+
+However, if the dataset resides in a workspace under Embedded capacity, and that capacity is switched off off, the *first* attempt at refresh will fail(since the capacity is switched off), and in this circumstance its scheduled refresh is immediately disabled.
 
 ## Access to the resource is forbidden  
 

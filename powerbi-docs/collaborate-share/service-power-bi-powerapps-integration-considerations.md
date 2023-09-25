@@ -36,7 +36,7 @@ When you perform a cross-geo operation, before you can complete the operation a 
 
 Cross-geo operations are controlled by two feature settings, one in Power BI and the other in Power Platform. The settings in both places must be ON in order for cross-geo operations to take place. The settings are on by default.
 
-* For detail about enabling/disabling the setting on the Power BI side, see [Power Platform interregional access](../admin/service-admin-portal-integration.md#power-platform-interregional-access).
+* For detail about enabling/disabling the setting on the Power BI side, see [Power Platform interregional access](/fabric/admin/service-admin-portal-integration#power-platform-interregional-access).
 
 * For detail about enabling/disabling the setting on the Power Platform side, see [Manage feature settings](/power-platform/admin/settings-features) in the Power Platform documentation and look for the Power BI components setting **Allow information sharing between this environment and Power BI workspaces in other geographic regions**.
 

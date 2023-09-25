@@ -128,7 +128,7 @@ When there's an apparent service outage or degradation, Power BI administrators 
 :::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-monitoring/power-bi-support-service-status.png" alt-text="Screenshot of the Power BI support service status page." border="false":::
 
 > [!NOTE]
-> Microsoft typically communicates issues related to the [national clouds](/azure/active-directory/develop/authentication-national-cloud#Overview) in the Microsoft 365 admin center rather than the Power BI support site. If you work with national clouds, work with your Microsoft 365 administrator to monitor Power BI issues.
+> Microsoft typically communicates issues related to the [national/regional clouds](/azure/active-directory/develop/authentication-national-cloud#Overview) in the Microsoft 365 admin center rather than the Power BI support site. If you work with national/regional clouds, work with your Microsoft 365 administrator to monitor Power BI issues.
 
 For more information about Power BI support, see [How to contact support](/power-bi/support/service-support-options).
 
@@ -138,7 +138,7 @@ For more information about how to support users in your organization, see [User 
 
 You can receive alert notifications by email to inform you when there's a service outage, interruption, or degradation occurring in your Power BI tenant. These notifications are available only for Premium workspaces.
 
-To set up email alerts, enable the _Receive email notifications for service outages or incidents_ [tenant setting](/power-bi/admin/service-admin-portal-help-support#receive-email-notifications-for-service-outages-or-incidents). Because its purpose is to send email, you must assign a mail-enabled security group to this setting. We recommend that you use a group name like _Power BI System Support_. You should add your Power BI administrators, key personnel from your [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md) (COE), and your [help desk](powerbi-adoption-roadmap-user-support.md#help-desk-support) that handles user support to this group.
+To set up email alerts, enable the _Receive email notifications for service outages or incidents_ [tenant setting](/fabric/admin/service-admin-portal-help-support#receive-email-notifications-for-service-outages-or-incidents). Because its purpose is to send email, you must assign a mail-enabled security group to this setting. We recommend that you use a group name like _Power BI System Support_. You should add your Power BI administrators, key personnel from your [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md) (COE), and your [help desk](powerbi-adoption-roadmap-user-support.md#help-desk-support) that handles user support to this group.
 
 > [!TIP]
 > When you need to notify your internal users, we recommend that your COE sends a customized message that uses non-technical language. That way, the message can include additional context, and use the preferred communication platform, like a Teams channel.

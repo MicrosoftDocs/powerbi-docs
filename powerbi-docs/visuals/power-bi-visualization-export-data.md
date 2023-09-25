@@ -38,7 +38,7 @@ Watch Will export the data from one of the visualizations in a report, save it a
 
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KjheMTGjDXw" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/KjheMTGjDXw]
 
 ## Data is protected when it's exported out of Power BI
 

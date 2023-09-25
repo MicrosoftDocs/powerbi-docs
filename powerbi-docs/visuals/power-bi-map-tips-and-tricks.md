@@ -51,9 +51,9 @@ These data categories help Bing correctly encode the data. To learn more, see [D
 
 ### 2. Use more than one location column
 
- Sometimes, even setting the data categories for mapping isn't enough for Bing to correctly guess your intent. Some designations are ambiguous because the location exists in multiple countries or regions. For example, there's a ***Southampton*** in England, Pennsylvania, and New York.
+ Sometimes, even setting the data categories for mapping isn't enough for Bing to correctly guess your intent. Some designations are ambiguous because the location exists in multiple countries/regions. For example, there's a ***Southampton*** in England, Pennsylvania, and New York.
 
-Power BI uses Bing's [unstructured URL template service](/bingmaps/rest-services/locations/find-a-location-by-address) to get the latitude and longitude coordinates based on a set of address values for any country. If your data doesn't contain enough location data, add those columns and categorize them appropriately.
+Power BI uses Bing's [unstructured URL template service](/bingmaps/rest-services/locations/find-a-location-by-address) to get the latitude and longitude coordinates based on a set of address values for any country/region. If your data doesn't contain enough location data, add those columns and categorize them appropriately.
 
  For example, if you only have a City column, Bing may have a hard time geo-coding. Add other geo columns to make the location unambiguous. Sometimes all it takes is adding one more location column to the dataset - in this case state/province. And don't forget to categorize it properly, see [Tip 1](#1-categorize-geographic-fields-in-power-bi-desktop).
 
@@ -66,7 +66,7 @@ Add latitude and longitude values to your dataset. This data removes any ambigui
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/ajTPGNpthcg]
 
 ### 4. Use Place category for columns with full location information
 
@@ -89,9 +89,9 @@ When your dataset already has different levels of location data, you and your co
 
 When drilling with geo-hierarchies, it is important to know how each drill button works and what gets sent to Bing Maps. 
 
-* The drill button on the far right, called Drill Mode :::image type="icon" source="media/power-bi-map-tips-and-tricks/power-bi-drill-down.png":::, allows you to select a map Location and drill down into that specific location one level at a time. For example, if you turn on the drill-down option and select North America, you move down in the hierarchy to the next level -- states in North America. For geo-coding, Power BI sends Bing Maps country and state data for North America only.  
-* On the left, there are two other drill options. The first option, :::image type="icon" source="media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png":::, drills to the next level of the hierarchy for all locations at once. For example, if you are currently looking at countries/regions and then use this option to move to the next level, states, Power BI displays state data for all countries. For geo-coding, Power BI sends Bing Maps state data (no country data) for all locations. This option is useful if each level of your hierarchy is unrelated to the level above it. 
-* The second option, :::image type="icon" source="./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png":::, is similar to the drill-down option, except that you don't need to click on the map.  It expands down to the next level of the hierarchy remembering the current level's context. For example, if you are currently looking at countries and select this icon, you move down in the hierarchy to the next level--states. For geo-coding, Power BI sends data for each state and its corresponding country to help Bing Maps geocode more accurately. In most maps, you use either this option or the drill down option on the far right, so you can send Bing as much information as possible to get accurate location information. 
+* The drill button on the far right, called Drill Mode :::image type="icon" source="media/power-bi-map-tips-and-tricks/power-bi-drill-down.png":::, allows you to select a map Location and drill down into that specific location one level at a time. For example, if you turn on the drill-down option and select North America, you move down in the hierarchy to the next level -- states in North America. For geo-coding, Power BI sends Bing Maps country/region and state data for North America only.  
+* On the left, there are two other drill options. The first option, :::image type="icon" source="media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png":::, drills to the next level of the hierarchy for all locations at once. For example, if you are currently looking at countries/regions and then use this option to move to the next level, states, Power BI displays state data for all countries/regions. For geo-coding, Power BI sends Bing Maps state data (no country/region data) for all locations. This option is useful if each level of your hierarchy is unrelated to the level above it. 
+* The second option, :::image type="icon" source="./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png":::, is similar to the drill-down option, except that you don't need to click on the map.  It expands down to the next level of the hierarchy remembering the current level's context. For example, if you are currently looking at countries/regions and select this icon, you move down in the hierarchy to the next level--states. For geo-coding, Power BI sends data for each state and its corresponding country/region to help Bing Maps geocode more accurately. In most maps, you use either this option or the drill down option on the far right, so you can send Bing as much information as possible to get accurate location information. 
 
 ## Next steps
 [Drill down in a Power BI visualization](../consumer/end-user-drill.md)

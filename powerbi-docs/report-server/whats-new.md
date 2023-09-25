@@ -7,16 +7,175 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/27/2023
+ms.date: 09/20/2023
 ms.custom: intro-whats-new
 ---
 
 # What's new in Power BI Report Server
 
-Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
+Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log fPower BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
+## September 2023
+
+Welcome to the September 2023 Power BI Report Server release! This release focuses on new features that enhance viewing, like the Report Server mobile view port improvements, full screen for PBIX and RDL report viewing, and mobile layout switcher. We're excited to support Power BI Desktop Developer mode for developers, and bubble range scaling for reporting. These features have been inclusively designed with better UX for report viewing and sharing. Read on for the details.
+
+### Power BI Report Server
+
+### Full-screen view 
+
+You've asked for the ability to allow your report consumers to present reports in full-screen mode. We're excited to share that we've fulfilled this request. The full-screen viewing option has been added to the **View** menu for Power BI (.pbix) reports and to the toolbar for paginated (.rdl) reports. 
+
+- **In a Power BI report**: To change the view, on the **View** menu item, select **Full screen**  as shown in the following image.  
+
+    :::image type="content" source="media/whats-new/full-screen-view.png" alt-text="Screenshot showing Full-screen view of a Power BI report.":::
+
+    *Full-screen view in a Power BI report*
+
+- **In a paginated (.rdl) report**: We added full-screen view to the toolbar. It's located on the far right side of the pagination toolbar, as shown in the following image.
+
+    :::image type="content" source="media/whats-new/full-screen-paginated-rdl-report.png" alt-text="Screenshot showing full-screen view of a paginated report." lightbox="media/whats-new/full-screen-paginated-rdl-report.png":::
+
+    *Full-screen view in paginated (.rdl) report*
+
+### Responsive view navigation 
+
+Customers log in to Power BI Report Server with varying devices. We've enhanced the view port for smaller screens to make viewing reports more accessible. Users no longer need to scroll across to locate menu items. The view port has a responsive design enabled for smaller viewers. Additional menu items are collapsed to accommodate the smaller screen size.
+
+:::image type="content" source="media/whats-new/collapsed-menu-items-small-screen.png" alt-text="Screenshot showing collapsed menu on a small screen.":::
+
+*Collapsed menu items*
+
+### Reporting 
+
+### New layout switcher 
+
+We’ve added new buttons in Power BI Desktop that make it easy to switch quickly between web and mobile layouts while you’re developing reports. The new switcher buttons are in the lower-left corner of the screen, next to the page navigator. 
+
+:::image type="content" source="media/whats-new/new-layout-switcher-web-mobile.png" alt-text="Screenshot showing new layout switcher between web and mobile views." lightbox="media/whats-new/new-layout-switcher-web-mobile.png":::
+
+*New layout switcher from web to mobile layout*
+
+### New bubble range scaling setting 
+
+We're introducing the new bubble range scaling setting for scatter chart and map visuals. This setting gives report creators more control over how the bubble (marker) sizes respond to the data, making it more accurate or distinctive, based on preference. 
+
+With the **magnitude** option, the bubble areas closely follow the data proportions. With the **data-rang**e option, the bubble size limits are mapped to data minimum and maximum. The **auto** option is the default setting for new reports. It selects the appropriate option based on data characteristics. For more information, see [Scatter charts, bubble charts, and dot plot charts in Power BI](../visuals/power-bi-visualization-scatter.md)
+
+You can adjust this setting in the Format pane in Power BI Desktop.
+
+- For scatter charts, under **Markers**, select **Shape** and **Range scaling**.
+- For maps, select **Bubbles** > **Size** > **Range scaling**.
+
+For reports authored in earlier Power BI versions, these settings default to **(Deprecated)** for scatter charts, which differs in handling negative values, and **Data range** for maps. 
+
+Azure Maps will also include this feature in a coming product update.
+
+In the following figure, the size of each country represents Urban Population, which is also shown on the y-axis. 
+
+:::image type="content" source="media/whats-new/scatter-chart-bubble-size-range-scaling.png" alt-text="Screenshot showing scatter chart bubble size range scaling." lightbox="media/whats-new/scatter-chart-bubble-size-range-scaling.png":::
+
+### Power BI Desktop Developer mode
+
+Power BI customers demand enterprise BI solutions that scale to all users across the largest organizations. This depends on enabling team collaboration and automation of deployments across development, test, and production environments to meet the needs of mission-critical BI systems. We are thrilled to announce the public preview of *Power BI Desktop Developer Mode*, taking advantage of Microsoft’s deep heritage in enterprise BI, and bringing Pro BI developer experiences right into Power BI Desktop.
+
+Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a *Power BI project* (.pbip). When you save as a project, the report and dataset definitions are saved as individual plain text files in a simple, intuitive folder structure. 
+
+:::image type="content" source="media/whats-new/save-type-power-bi-project-files.png" alt-text="Screenshot showing saving as type Power BI project files." lightbox="media/whats-new/save-type-power-bi-project-files.png":::
+
+As a developer, with this integration you can: 
+
+- Use Power BI Desktop to author report and dataset metadata files in source-control friendly formats.
+
+- Enable multiple-developer collaboration, source control integration to track version history, compare different revisions (diff), and revert to previous versions.
+
+- Build continuous integration and continuous delivery (CI/CD) workflows to enforce quality gates prior to reaching production environments.
+
+- Enable code reviews, automated testing, and automated build to validate the integrity of a deployment.
+
+With the combination of Power BI Desktop Developer mode, Fabric Git Integration, Azure DevOps and Deployment Pipelines, developers gain the ability to seamlessly sync their Power BI workspaces with Git repositories, ensuring consistency and facilitating CI/CD workflows. 
+
+:::image type="content" source="media/whats-new/power-bi-git-integration-diagram.png" alt-text="Diagram showing Power BI and Git integration." lightbox="media/whats-new/power-bi-git-integration-diagram.png":::
+
+By using Git as the central repository for your developments, you establish it as the “source of truth”. This integration allows you to start your report development in Power BI Desktop, seamlessly transition to the Power BI service, and return to Power BI Desktop, where every modification is securely backed up and versioned by Git. 
+
+Watch the recording of the [Empower every BI professional to do more with data](https://www.youtube.com/embed/OdkS7DF7ElY?start=277) session at Microsoft Build for an end-to-end demonstration of Power BI Desktop Developer Mode together with Fabric Git Integration. 
+
+### Turn on Power BI Project file preview
+
+Saving as a Power BI Project file is in public preview. 
+
+- Go to **File** > **Options and settings** > **Options** > **Preview features** and check the box next to **Power BI Project (.pbip) save option**. 
+
+    :::image type="content" source="media/whats-new/power-bi-project-pbip-preview.png" alt-text="Screenshot showing enabling Power BI Project preview." lightbox="media/whats-new/power-bi-project-pbip-preview.png" :::
+
+For more information, visit [Power BI Desktop projects](https://aka.ms/pbidesktopdevmode).
+
+### Want to get involved?
+
+- To be a part of our customer research for paginated reports, and provide product feedback, prototype assessment, and staying abreast with what’s new, join the [Paginated Operational Reports Feedback Panel](https://ux.microsoft.com/Panel/PBIPaginatedFeedback). 
+- Or join our [Reporting Services - Migration to Power BI](https://community.fabric.microsoft.com/t5/Reporting-Services-Migration-to/gh-p/ReportingServices-MigrationtoPowerBI) user group. Join the fun and tune in to our monthly events.
+
+## May 2023
+
+This release has a number of new features like the Report Server accessibility tagging for screen-reader report consumers, new accessibility for matrix navigation and selection, and updates to existing features for modeling and reporting. See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary) blog for all the details. 
+
+### Report Server
+- [Accessibility options for row properties](#accessibility-options-for-row-properties)
+- [Accessibility options for text box properties](#accessibility-options-for-text-box-properties)
+
+
+#### Accessibility options for row properties
+Accessibility options are new features for report authors. You can enable them from the Power BI Report Builder authoring tool. Accessibility options for row properties allow report authors to tag rows for headers and data cells within a paginated report.
+
+#### Accessibility options for text box properties
+Text box properties work similarly to row properties. They allow report authors to tag heading elements to text boxes within a paginated report. To enable text box properties, right-click a text box to select the Accessibility menu and determine which structure type you wish to overwrite.
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary) blog for details about these feature updates.
+
+- [Set conditional formatting rules based on string fields](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917169).
+- [Format image dimensions individually in tables and matrixes](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917170).  
+- [Decide which report pages are visible in the Page navigator visual](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917171).
+- [Visual container improvements](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917174)
+
+    - Turn on a subtitle that can be used to add extra context to your visuals.
+    - Add a divider line to visually separate the visual header from its contents.
+    - Control the space below each component.
+
+- [Apply all slicers button, Clear all slicers button, and Optimization presets update](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917175)
+- [Format Pane – new styling](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917176)
+- [New tooltip auto-scale](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917177)
+- [Measure-driven data labels](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917178)
+- [Mobile formatting options](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917182)
+
+**Accessibility improvements**
+
+- [New accessible report themes](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917172) provide good contrast across their colors.
+- [Matrix accessibility improvements](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917173).
+- Improved keyboard navigation and new keyboard shortcuts.
+- A two-toned focus outline.
+- New support for screen reader announcements.
+- Added screen reader support for conditional formatting icons and data bars.
+- Removed browser (default) tooltips.
+- Overall performance improvements for scrolling and rendering.
+
+#### Modeling
+
+- New DAX functions LINEST and LINESTX. These functions are especially useful in predicting unknown values (Y) given known values (X).
+
+    - [LINEST](/dax/linest-function-dax)
+    - [LINESTX](/dax/linestx-function-dax)
+
+- New DAX functions RANK and ROWNUMBER. These functions return a number indicating the rank for the current context within the specified partition, sorted by the specified order.
+  
+    - [RANK](/dax/rank-function-dax)
+    - [ROWNUMBER](/dax/rownumber-function-dax)
+  
 ## January 2023
 
 This release has updates for the Report Server web portal, modeling, and reporting. See the [Power BI Report Server January 2023](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2023-feature-summary) blog for all the details.
@@ -450,7 +609,7 @@ Among the highlights of this update are the hierarchical slicer and decompositio
 - Buttons now support fill images
 - Multi-column sort for tables
 - Dual axis for line charts
-- Rectangle select for visuals
+- Rectangle selection for visuals
 - Conditional formatting for totals and subtotals in tables and matrices
 - Customize theme dialog
 - Conditional formatting discoverability
