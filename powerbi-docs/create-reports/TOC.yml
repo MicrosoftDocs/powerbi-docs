@@ -534,19 +534,21 @@
         href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
     - name: Paginated reports in the service
       items: 
-      - name: Create exportable paginated reports on the service
+      - name: Get started creating paginated reports
+        href: ../paginated-reports/web-authoring/get-started-paginated-formatted-table.md
+      - name: Create exportable paginated reports
         href: ../paginated-reports/web-authoring/paginated-formatted-table.md
-      - name: Add filters to paginated reports in the Power BI service
+      - name: Add filters to paginated reports
         href: ../paginated-reports/web-authoring/filters-paginated-service.md
-      - name: View a paginated report in the Power BI service
+      - name: View a paginated report
         href: ../consumer/paginated-reports-view-power-bi-service.md
-      - name: Interact with parameters in the Power BI service
+      - name: Interact with parameters
         href: ../consumer/paginated-reports-view-parameters.md
       - name: View paginated report diagnostics
         href: ../paginated-reports/paginated-reports-diagnostics.md
       - name: Create translations in tabular models
         href: /analysis-services/tabular-models/translations-in-tabular-models-analysis-services
-      - name: View localized reports in the Power BI service
+      - name: View localized reports
         href: ../paginated-reports/paginated-localization.md
       - name: Git integration with paginated reports
         href: ../paginated-reports/paginated-github-integration.md   
@@ -742,30 +744,30 @@
           href: ../paginated-reports/report-design/visualizations/chart-effects-add-bevel-emboss-or-texture-report-builder.md
         - name: Add scale breaks to a report chart
           href: ../paginated-reports/report-design/visualizations/add-scale-breaks-to-chart-report-builder.md
-      - name: Change the text of a legend item
-        href: ../paginated-reports/report-design/visualizations/chart-legend-change-item-text-report-builder.md
-      - name: Display data point labels outside a pie chart
-        href: ../paginated-reports/report-design/visualizations/display-data-point-labels-outside-pie-chart-report-builder.md
-      - name: Display percentage values on pie charts
-        href: ../paginated-reports/report-design/visualizations/display-percentage-values-pie-chart-report-builder.md
-      - name: Collect small slices on a pie chart
-        href: ../paginated-reports/report-design/visualizations/collect-small-slices-pie-chart-report-builder.md
-      - name: Empty and null data points in paginated report charts
-        href: ../paginated-reports/report-design/visualizations/empty-null-data-points-charts-report-builder.md
-      - name: Position labels in paginated report charts
-        href: ../paginated-reports/report-design/visualizations/position-labels-chart-report-builder.md
-      - name: Specify an axis interval in paginated reports
-        href: ../paginated-reports/report-design/visualizations/specify-axis-interval-report-builder.md
-      - name: Specify logarithmic scale in paginated reports
-        href: ../paginated-reports/report-design/visualizations/specify-logarithmic-scale-report-builder.md
-      - name: Include indicators and gauges in a gauge panel
-        href: ../paginated-reports/report-design/visualizations/include-indicators-gauges-gauge-panel-report-builder.md
-      - name: Specify a chart area for a series
-        href: ../paginated-reports/report-design/visualizations/specify-chart-area-series-report-builder.md
-      - name: Start pie chart values at the top of the pie
-        href: ../paginated-reports/report-design/visualizations/start-pie-chart-values-top-pie-report-builder.md
-      - name: Vary polygon, line, and point display in a paginated report
-        href: ../paginated-reports/report-design/visualizations/vary-polygon-line-point-display-by-rules-analytical-data.md
+        - name: Change the text of a legend item
+          href: ../paginated-reports/report-design/visualizations/chart-legend-change-item-text-report-builder.md
+        - name: Display data point labels outside a pie chart
+          href: ../paginated-reports/report-design/visualizations/display-data-point-labels-outside-pie-chart-report-builder.md
+        - name: Display percentage values on pie charts
+          href: ../paginated-reports/report-design/visualizations/display-percentage-values-pie-chart-report-builder.md
+        - name: Collect small slices on a pie chart
+          href: ../paginated-reports/report-design/visualizations/collect-small-slices-pie-chart-report-builder.md
+        - name: Empty and null data points in paginated report charts
+          href: ../paginated-reports/report-design/visualizations/empty-null-data-points-charts-report-builder.md
+        - name: Position labels in paginated report charts
+          href: ../paginated-reports/report-design/visualizations/position-labels-chart-report-builder.md
+        - name: Specify an axis interval in paginated reports
+          href: ../paginated-reports/report-design/visualizations/specify-axis-interval-report-builder.md
+        - name: Specify logarithmic scale in paginated reports
+          href: ../paginated-reports/report-design/visualizations/specify-logarithmic-scale-report-builder.md
+        - name: Include indicators and gauges in a gauge panel
+          href: ../paginated-reports/report-design/visualizations/include-indicators-gauges-gauge-panel-report-builder.md
+        - name: Specify a chart area for a series
+          href: ../paginated-reports/report-design/visualizations/specify-chart-area-series-report-builder.md
+        - name: Start pie chart values at the top of the pie
+          href: ../paginated-reports/report-design/visualizations/start-pie-chart-values-top-pie-report-builder.md
+        - name: Vary polygon, line, and point display in a paginated report
+          href: ../paginated-reports/report-design/visualizations/vary-polygon-line-point-display-by-rules-analytical-data.md
       - name: Troubleshoot charts in paginated reports
         href: ../paginated-reports/report-design/visualizations/troubleshoot-charts-report-builder.md
     - name: Headers and footers in paginated reports
