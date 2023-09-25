@@ -41,13 +41,13 @@ You can restrict the ability to add new data sources to a dataset in Power BI by
 
 :::image type="content" source="./media/refresh-desktop-file-onedrive/powerbi-service-onedrive-refresh-restrict-updates.png" alt-text="Screenshot showing automatic OneDrive refresh restrict updates option.":::
 
-With restricted updates, only dataset owners can update the model information in the dataset with changes made to the version stored in OneDrive or SharePoint. Dataset owners must manually refresh datasets for the changes to be reflected. If a dataset user with write permission refreshes the dataset, changes from files stored in OneDrive or SharePoint won't be reflected.
+With restricted updates, only dataset owners can update the model information in the dataset with changes made to the version stored in OneDrive and SharePoint. Dataset owners must manually refresh datasets for the changes to be reflected. If a dataset user with write permission refreshes the dataset, changes from files stored in OneDrive or SharePoint won't be reflected.
 
-If you want dataset owners and dataset users with write permission to have the ability to update the model information, you can explicitly select **Automatic updates**. Datasets in the Power BI service will automatically be updated with changes made to the versions of the datasets stored in OneDrive and SharePoint.  
+If you want dataset owners and dataset users with write permission to have the ability to update the model information, select **Automatic updates**. Datasets in the Power BI service are automatically updated with changes made to the versions of the datasets stored in OneDrive and SharePoint.  
 
 Existing datasets will be set to **Default updates**. Once the setting is changed to either **Restrict updates** or **Automatic updates**, **Default updates** will no longer be an option for the dataset.  
 
-New datasets will be assigned **Restricted updates** upon creation. This setting can then be changed to **Automatic updates** if desired, with no option to apply the **Default updates** setting.  
+New datasets will be assigned **Restricted updates** upon creation. The setting can be changed to **Automatic updates** if desired, with no option to apply the **Default updates** setting.
 
 The difference between **Automatic updates** and **Default updates** is that the **Default updates** setting is applied to existing datasets, while the **Automatic updates** setting needs to be applied after a new dataset is created, since new datasets default to **Restricted updates**.
 
