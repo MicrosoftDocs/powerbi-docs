@@ -1,7 +1,7 @@
 ---
 title: Expression uses in Power BI paginated reports | Microsoft Docs
 description: Specify or calculate values with paginated report expressions for parameters, queries, filters, and text box properties in Power BI Report Builder.
-ms.date: 04/25/2023
+ms.date: 09/21/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -14,11 +14,11 @@ ms.reviewer: rodolfoc
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-In Power BI paginated reports, expressions are used throughout the report definition to specify or calculate values for parameters, queries, filters, report item properties, group and sort definitions, text box properties, bookmarks, document maps, dynamic page header and footer content, images, and dynamic data source definitions. This topic provides examples of the many places you can use expressions to vary the content or appearance of a report. This list isn't comprehensive. You can set an expression for any property in a dialog box that displays the expression (**fx**) button or in a drop-down list that displays **\<Expression...>**.  
+In Power BI paginated reports, expressions are used throughout the report definition to specify or calculate values for parameters, queries, filters, report item properties, group and sort definitions, text box properties, bookmarks, document maps, dynamic page header and footer content and images. This topic provides examples of the many places you can use expressions to vary the content or appearance of a report. This list isn't comprehensive. You can set an expression for any property in a dialog box that displays the expression (**fx**) button or in a drop-down list that displays **\<Expression...>**.  
   
  Expressions can be simple or complex. *Simple expressions* contain a reference to a single dataset field, parameter, or built-in field. Complex expressions can contain multiple built-in references, operators, and function calls. For example, a complex expression might include the Sum function applied to the Sales field.  
   
- Expressions are written in [!INCLUDE[msCoName](../../includes/msconame-md.md)] Visual Basic. An expression begins with an equal sign (=) followed by a combination of references to built-in collections such as dataset fields and parameters, constants, functions, and operators.  
+ Expressions are written in Microsoft Visual Basic. An expression begins with an equal sign (=) followed by a combination of references to built-in collections such as dataset fields and parameters, constants, functions, and operators.  
   
 ##  <a name="Simple"></a> Use simple expressions  
  Simple expressions appear on the design surface and in dialog boxes in brackets, for example, a dataset field appears as `[ProductID]`. Simple expressions are created for you automatically when you drag a field from a dataset onto a text box. A placeholder is created and the expression defines the underlying value. You can also type expressions directly into a data region cell or text box, both on the design surface or in a dialog box (for example, `[ProductID]`).  
@@ -52,7 +52,6 @@ In Power BI paginated reports, expressions are used throughout the report defini
 |Include specific values for more than one field from a dataset.|Filter equation for a group in a tablix. Use **Tablix Properties Dialog Box, Filters**.|For data type, select **Boolean**.<br /><br /> `=IIF(InStr(Fields!Subcat.Value,"Shorts")=0 AND (Fields!Size.Value="M" OR Fields!Size.Value="S"),TRUE, FALSE)`<br /><br /> `=`<br /><br /> `TRUE`|  
 |Hide a text box on the design surface that can be toggled by the user using a Boolean parameter named *Show*.|Hidden property on a text box. Use **Text Box Properties Dialog Box, Visibility**.|`=Not Parameters!` *Show\<boolean parameter>* `.Value`|  
 |Specify dynamic page header or footer content.|Value for a placeholder inside of a text box that is placed in the page header or footer.|`="Page " & Globals!PageNumber & " of "  & Globals!TotalPages`|  
-|Specify a data source dynamically by using a parameter.|Connection string on the Data source. Use **Data Source Properties Dialog Box, General**.|`="Data Source=" & Parameters!ServerName.Value & ";initial catalog=AdventureWorks2012"`|  
 |Identify all the values for a multivalue parameter chosen by the user.|Value for a placeholder inside of a text box. Use **Tablix Properties Dialog Box, Filters**.|`=Join(Parameters!MyMultivalueParameter.Value,", ")`|  
 |Specify page breaks for every 20 rows in a tablix with no other groups.|Group expression for a group in a tablix. Use **Group Properties Dialog Box, Page Breaks**. Select the option **Between each instance of a group**.|`=Ceiling(RowNumber(Nothing)/20)`|  
 |Specify conditional visibility based on a parameter.|Hidden property for a tablix. Use **Tablix Properties Dialog Box, Visibility**.|`=Not Parameters!<` *boolean parameter* `>.Value`|  

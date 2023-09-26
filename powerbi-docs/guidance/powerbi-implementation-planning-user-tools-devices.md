@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/31/2023
+ms.date: 09/17/2023
 ---
 
 # Power BI implementation planning: User tools and devices
@@ -221,7 +221,7 @@ Here are some important points to consider when determining whether Excel is an 
 
 [Power BI Report Builder](/power-bi/paginated-reports/report-builder-power-bi) is a tool for creating a paginated report (.rdl) file. Paginated reports can be deployed to either the Power BI service or Power BI Report Server. If you have experience creating reports in SQL Server Reporting Services (SSRS), you'll find it's a similar report creation experience.
 
-Paginated reports are best suited to highly formatted, or pixel-perfect, reports such as financial statements. They're also suitable for reports that are intended to be printed or for PDF generation, and when user input (with report parameters) is required.
+Paginated reports are best suited to highly formatted, or print-ready, reports such as financial statements. They're also suitable for reports that are intended to be printed or for PDF generation, and when user input (with report parameters) is required.
 
 > [!TIP]
 > For other scenarios that favor choosing paginated reports, see [When to use paginated reports in Power BI](report-paginated-or-power-bi.md).
@@ -332,7 +332,7 @@ Content creators that have client tools installed, such as Power BI Desktop, sho
 There are two main ways to handle versioning of development files.
 
 - **Teams, OneDrive for Business, SharePoint:** Self-service content creators often [save files](/power-bi/create-reports/desktop-sharepoint-save-share) in Teams, OneDrive for work or school, or SharePoint. Users find these tools are familiar and simple to use. Shared libraries can be organized, secured for appropriate coworkers, and versioning is built in.
-- **Source control plug-ins:** Advanced content creators may need to integrate with a source control tool. It typically involves installing [Git](https://git-scm.com/book/) for source control, then using a source control management tool like [Visual Studio Code](https://code.visualstudio.com/docs) to commit content changes to a remote repository, such as [Azure DevOps Repos](/azure/devops/repos/get-started/what-is-repos). For Power BI Desktop, creators can use [developer mode](/power-bi/developer/projects/). In this mode, content is saved as a Power BI project (.pbip) file, which is compatible for use with a preferred source control system. When working with Fabric, [Git integration](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools) is supported for working with a client tool.
+- **Source control plug-ins:** Advanced content creators may need to integrate with a source control tool. For example, this typically involves installing [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for source control, then using a source control management tool like [Visual Studio Code](/training/modules/work-source-control-git/) to commit content changes to a remote repository, such as [Azure DevOps Repos](/azure/devops/repos/get-started/what-is-repos). For Power BI Desktop, [developer mode](/power-bi/developer/projects/) can be used. In this mode, content is saved as a Power BI project (.pbip) file, which is compatible for use with your preferred source control system. When working with Fabric, [Git integration](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools) is supported for working with a client tool.
 
 For more information, see [Strategy for file locations](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-file-locations).
 

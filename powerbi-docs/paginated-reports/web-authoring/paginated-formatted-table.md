@@ -3,11 +3,11 @@ title: "Create paginated reports that you can export in the Power BI service"
 description: In this article, you learn how to create a paginated report using the interactive editor in the Power BI service, and then export it.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ebendinsky
+ms.reviewer: nisrinivasan
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 06/20/2023
+ms.date: 06/22/2023
 ---
 
 # Create paginated reports that you can export in the Power BI service
@@ -20,41 +20,13 @@ You can use the feature to create paginated reports in any workspace in the Powe
 
 ## Prerequisites
 
-[!INCLUDE [power-bi-paginated-prerequisites](../../includes/power-bi-paginated-prerequisites.md)]
-- You need [Build permission for the dataset](../../connect-data/service-datasets-build-permissions.md).
+See the **Prerequisites** section in [Get started creating paginated reports in the Power BI service](get-started-paginated-formatted-table.md#prerequisites).
 
 ## Get started
 
-To create a paginated report from the Power BI service, you can start in one of three places:
+See the article [Get started creating paginated reports in the Power BI service](get-started-paginated-formatted-table.md) for all the ways you can get started creating paginated reports in the Power BI service.
 
-- [In list view](#in-list-view)
-- [In Data hub view](#in-data-hub-view)
-- [On the Dataset details page](#on-the-dataset-details-page)
-
-### In list view
-
-1. Go to list view for any workspace, including My Workspace.
-1. Select **More options (...)** for a Power BI dataset, then select **Create formatted table**. 
-
-    :::image type="content" source="media/paginated-formatted-table/formatted-table-list-view-1.png" alt-text="Screenshot of Create paginated report in the Power BI service.":::
-
-### In Data hub view
-
-1. Go to Data hub view in the Power BI service.
-
-1. Select **More options (...)** next to a dataset > **Create paginated report**.
-
-    :::image type="content" source="media/paginated-formatted-table/formatted-table-data-hub-1.png" alt-text="Screenshot of Create paginated report in the Data hub.":::
-
-### On the Dataset details page
-
-1. Select a dataset in the Data hub view of the Power BI service.
-
-1. Under **Visualize this data**, select **Create a report** > **Paginated report**.
-
-    :::image type="content" source="media/paginated-formatted-table/formatted-table-dataset-details-create-report-1.png" alt-text="Screenshot of Paginated report on the Dataset details page.":::
-
-No matter where you start, the new paginated report online editing experience opens. 
+No matter which way you start, the new paginated report online editing experience opens.
 
 ## Create a table
 

@@ -78,7 +78,7 @@ To gain a better understanding of your capacity's performance, you can sort this
 
 * **Items** - A list of Power BI items active during the selected period of time. The item name is a string with the syntax: `item name \ item type \ workspace name`. You can expand each entry to show the various operations (such as queries and refreshes) the item performed.
 
-* **CPU (s)** - CPU processing time in seconds. Sort to view the top CPUs that consumed Power BI items over the past two weeks.
+* **CPU (s)** - CPU processing time in seconds. Sort to view the top CPUs that processed Power BI items over the past two weeks.
 
 * **Duration (s)** - Processing time in seconds. Sort to view the Power BI items that needed the longest processing time during the past two weeks.
 

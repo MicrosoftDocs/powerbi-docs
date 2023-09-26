@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 06/26/2023
+ms.date: 09/25/2023
 Localizat2onGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
@@ -331,7 +331,7 @@ When working with DirectQuery for Power BI datasets and Analysis Services, consi
 
 * The maximum length of a chain of models is three. Extending beyond the chain length of three isn't supported and results in errors.
 * A discourage chaining flag can be set on a model to prevent a chain from being created or extended. See Manage DirectQuery connections to a published dataset for more information.
-* The connection to a Power BI dataset won't be shown in Power Query.
+* The connection to a Power BI dataset or Analysis Services model won't be shown in Power Query.
 
 The following **limitations** apply when working with DirectQuery for Power BI datasets and Analysis Services:
 
@@ -433,7 +433,9 @@ This dialog won't be shown for live connections.
 
 ## Considerations and limitations
 
-Composite models present a few limitations:
+Composite models present a few considerations and limitations:
+
+**Mixed-mode connections** - When using a mixed mode connection that contains online data (such as a Power BI dataset) and an on-premises dataset (such as an Excel workbook), you must have gateway mapping established for visuals to properly appear.
 
 Currently, [incremental refresh](../connect-data/incremental-refresh-overview.md) is supported for composite models connecting to SQL, Oracle, and Teradata data sources only.
 

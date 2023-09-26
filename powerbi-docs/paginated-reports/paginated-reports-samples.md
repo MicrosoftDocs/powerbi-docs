@@ -45,7 +45,7 @@ To download the reports successfully, you need to download the repo as a zip fil
 :::image type="content" source="media/paginated-reports-samples/paginated-report-invoice.png" alt-text="Screenshot of sample Power BI paginated report invoice.":::
 
 
-This paginated report is a self-contained invoice. The scenario for this report is that you want a pixel-perfect printable invoice. It needs to show the total sales with details listing item descriptions, quantities, discounts, and cost.
+This paginated report is a self-contained invoice. The scenario for this report is that you want a print-ready invoice. It needs to show the total sales with details listing item descriptions, quantities, discounts, and cost.
 
 This sample highlights unique characteristics for creating real-world invoices, such as:  
 
@@ -90,7 +90,7 @@ Data source: Included in the .rdl
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-letter.png" alt-text="Screenshot of sample Power BI paginated report letter.":::
 
-This self-contained paginated report sample is designed for creating real world mailing letters. The scenario for this report is that you want a pixel-perfect printable letter with dynamic content.
+This self-contained paginated report sample is designed for creating real world mailing letters. The scenario for this report is that you want a print-ready letter with dynamic content.
 
 This sample has unique characteristics, such as: 
 
@@ -106,7 +106,7 @@ Data source: Included in the .rdl
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-transcript.png" alt-text="Screenshot of sample Power BI paginated report transcript.":::
 
-The scenario for this report is that you want a pixel-perfect printable transcript. It needs to contain dynamic content listing program description details and dates for each student.
+The scenario for this report is that you want a print-ready transcript. It needs to contain dynamic content listing program description details and dates for each student.
 
 This self-contained paginated report sample has unique characteristics such as: 
 
@@ -120,7 +120,7 @@ Data source: Included in the .rdl
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-sales-performance.png" alt-text="Screenshot of sample Power BI paginated report for Sales Performance.":::
 
-Country Sales Performance is a self-contained paginated report sample. The scenario for this report is that you want a pixel-perfect printable invoice to see total sales and details. It showcases these features:
+Country Sales Performance is a self-contained paginated report sample. The scenario for this report is that you want a print-ready invoice to see total sales and details. It showcases these features:
 
 - The use of a parameter to expand details in the table.
 - Headers and footers.
@@ -135,7 +135,7 @@ Data source: Included in the .rdl
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-regional-sales.png" alt-text="Screenshot of sample Power BI paginated report for Regional Sales.":::
 
-Regional Sales is a self-contained paginated report sample. The scenario for this report is that you want a pixel-perfect printable report to see total sales vs. quota. It showcases these features:
+Regional Sales is a self-contained paginated report sample. The scenario for this report is that you want a print-ready report to see total sales vs. quota. It showcases these features:
 
 - The use of a parameter to show selected details in the table.
 - Headers and footers.
@@ -149,7 +149,7 @@ Data source: Included in the .rdl
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-organization-expenditures.png" alt-text="Screenshot of sample Power BI paginated report for Organization Expenditures.":::
 
-Organization Expenditures is a self-contained paginated report sample. The scenario for this report is that you want a pixel-perfect printable expense report to see breakdown of expenses in your organization. It showcases these features:
+Organization Expenditures is a self-contained paginated report sample. The scenario for this report is that you want a print-ready expense report to see breakdown of expenses in your organization. It showcases these features:
 
 - Headers and footers.
 - Report items such as text boxes, lines, and rectangles using expression placeholders.
