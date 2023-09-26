@@ -7,33 +7,34 @@ ms.reviewer: ofer
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/13/2023
+ms.date: 09/26/2023
 ---
 
 # Embedded analytics solution accelerators from Microsoft partners
 
-To expedite embedded analytics for ISVs, Microsoft partners offer accelerator tools designed to help quickly embed Power BI analytics into your application. Embedded analytics accelerators are a cost-effective way to speed up time-to-market or advance a PoC or pilot for your multi-tenant, customer facing Power BI embedded analytics solution​. They simplify the implementation process and can also help you manage your Power BI capacity and billing.
+To expedite embedded analytics for ISVs, Microsoft partners offer accelerator tools designed to help quickly embed Power BI analytics into your application. Embedded analytics accelerators are a cost-effective way to speed up time-to-market or advance a PoC or pilot for your multi-tenant, customer-facing Power BI embedded analytics solution​. They simplify the implementation process and can also help you manage your Power BI capacity and billing.
 
 :::image type="content" source="./media/embedded-analytics-accelerators/accelerator-workflow.png" alt-text="Diagram showing how accelerators work.":::
 
 Here are some advantages of using an accelerator:
 
-* Accelerators provide enhanced personalized user experience and added functionality for embedding Power BI for customers (App Owns Data) embedding scenario with flexible end user authentication and authorization options​.
+* Accelerators provide an enhanced personalized user experience and added functionality for [Embed for your customers](./embedded-analytics-power-bi.md#embed-for-your-customers) scenario with flexible end-user authentication and authorization options and support for multi-tenancy and end-user permissions management.
 
-* Accelerators don't require coding. Some need minimal code development for the client front-end, while hiding the implementation details of a Power BI embedded solution that supports multi-tenancy and end user permissions management.​
+* Implementation details of the sophisticated Power Bl embedded solution they provide are hidden.
+Some accelerator provide backend only functionality via an SDK and require code development for the client front-end.​
 
 * Once installed, you can white-label the solution, configure its capabilities, and customize the user experience.​
 
-* Accelerators are developed and owned by our partners. They're available for self-deployment from Azure Marketplace into your Azure environment using your existing Power BI/Fabric tenant. ​
+* Accelerators are developed, owned, and need to be purchased directly from the corresponding partner. The accelerators implement cloud based solutions that are deployed into your Azure environment and use Azure and Power BI/Fabric services that need to be acquired from Microsoft. You can reuse an existing subscription or license if you already have one. Some accelerators may offer a deployment option via the Azure Marketplace. ​
 
-* An accelerator can coexist or be fully integrated with your original application​.
+* An accelerator can coexist as stand-alone applications or be fully integrated with your original application as described in the [Deployment and integration options table](#deployment-and-integration-options).
 
 There are several partner accelerators that vary in their deployment, acquisition/billing options and their capabilities. ​
 
 | **Partner** <br> (accelerator)                  | **Description** | Website/Product link |
 |-------------------------------------------------|--------------------------------|---------|
 | :::image type="content" source="./media/embedded-analytics-accelerators/reporting-hub-logo.png" alt-text="The logo of the Reporting Hub.":::    | The Reporting Hub is a web-based business intelligence platform that seamlessly integrates with Power BI using Embedded technology. It's a plug 'n' play white label application that deploys to your Azure environment and allows you to instantly deliver Power BI in a more efficient and simplified manner. | [The Reporting Hub](https://thereportinghub.com/) |
-| :::image type="content" source="./media/embedded-analytics-accelerators/maq-logo.png" alt-text="The logo of Maq Software.":::               | The EmbedFAST is designed for Independent Software Vendors (ISVs) and enterprise customers. However, any organization can benefit from EmbedFAST to unleash the power of Power BI. Save time, effort, costs, and resources by embedding Power BI using our ready-to-use API. Seamlessly embed with comprehensive features, without having to build from scratch. | [Embed Fast](https://maqsoftware.com/embedfast) |
+| :::image type="content" source="./media/embedded-analytics-accelerators/maq-logo.png" alt-text="The logo of Maq Software.":::               | The EmbedFAST is a ready-to-use API that embeds Power BI into your existing apps with ease. Seamlessly embed Power BI with comprehensive features such as role-based access management and no per user licenses—without having to build from scratch. Save time, effort, costs, and resources by using the EmbedFAST. | [EmbedFAST](https://maqsoftware.com/embedfast) |
 | :::image type="content" source="./media/embedded-analytics-accelerators/ilink-digital-logo.png" alt-text="The logo of Count.":::                           | The BiHub presents a seamless, no-code reporting gateway designed for Power BI, using cutting-edge Embedded technology. The BiHub is a cloud-based application that is installed and deployed within your Azure environment. It integrates with existing Microsoft tenants and communicates with Power BI Embedded via Microsoft APIs. | [BiHub](https://www.ilink-digital.com/bihub/) |
 
 ## Accelerator capabilities
@@ -62,7 +63,7 @@ Different accelerators provide different frontend and backend capabilities inclu
 
   * Allow switching to edit mode based on user permissions (access level on report) ​
 
-* Multi language support for web frontend
+* Multi-language support for web frontend
 
 To see which partner's solution contains which options, see the [comparison tables](#comparison-of-accelerators-from-our-partners).
 
@@ -72,13 +73,13 @@ The following features and capabilities are available in the backend and admin m
 
 #### Backend module​
 
-* Support multiple end user authentication providers, potentially different one per tenant​
+* Support multiple end user authentication providers, potentially a different one per tenant​
 
 * Generate and refresh access and embed tokens per tenant workspace isolation and user permissions​
 
 * Support frontend features: asynchronous print to file and report subscriptions, scheduling & distribution​
 
-* Expose backend SDK for your custom frontend embedded as iFrame in existing ISV app​
+* Expose backend SDK for your custom frontend embedded as iFrame in the existing ISV app​
 
 #### Admin module (including UI and config database)​
 
@@ -90,7 +91,7 @@ The following features and capabilities are available in the backend and admin m
 
   * Isolate tenant PBI access with dedicated service principal profile identity to create/access tenant’s workspace​
 
-  * Optionally sync & reuse existing information on app’s tenants their end users​
+  * Optionally sync & reuse existing information on the app’s tenants and their end users​
 
   * Manage tenant's end user access of PBI items and data (with RLS/dynamic binding for dataset) ​
 
@@ -112,33 +113,33 @@ To see which partner's solution contains which options, see the [comparison tabl
 
 The following tables compare features of the different accelerators from our partners. The tables are divided into the following sections:
 
-* [Deployment options](#deployment-options)
+* [Deployment options](#deployment-and-integration-options)
 * [Acquisition and billing options](#acquisition-and-billing-options)
 * [Added capabilities](#added-capabilities)
 
-### Deployment options
+### Deployment and integration options
 
 | Partner <br> **(accelerator)**                                                                             | Stand alone        | URL redirect      | Embedded in App’s iFrame | Backend + SDK only |
 |-------------------------------------------------                                                           |--------------------|-------------------|--------------------------|--------------------|
-| [**Shift Analytics**](https://shiftanalytics.ca/)​ <br> [The Reporting Hub](https://thereportinghub.com/) | ✔️​                | ✔️​                | ✔️​                      | ​                   |
-| [**MAQ Software**](https://maqsoftware.com/)​ <br>[Embed Fast](https://maqsoftware.com/embedfast)                                              | under development  | under development​ | ​                         | ✔️​                |
-| [**iLink Digital​**](https://www.ilink-digital.com/) <br>[BiHub](https://www.ilink-digital.com/bihub/)                                            | ✔️​                | ​                  | ​                         | ​                   |
+| [**Shift Analytics**](https://shiftanalytics.ca/)​ <br> [The Reporting Hub](https://thereportinghub.com/) | ✔​                | ✔​                | ✔​                      | ​                   |
+| [**MAQ Software**](https://maqsoftware.com/)​ <br>[EmbedFAST](https://maqsoftware.com/embedfast)                                              |   | ​ | ​                         | ✔​                |
+| [**iLink Digital​**](https://www.ilink-digital.com/) <br>[BiHub](https://www.ilink-digital.com/bihub/)                                            | ✔​                | ​                  | ​                         | ​                   |
 
 ### Acquisition and billing options
 
 | Partner <br> **(accelerator)**               |  Monthly subscriptions: <br> **Direct billing**     |  Monthly subscriptions: <br> **Azure Marketplace** | Free trial | One time purchase ​ | As part of consulting engagement​ |
 |----------------------------------------------|-----------------------------------------------------|----------------------------------------------------|----------------|------------------------|--------------------------------------|
-| **Shift Analytics**​ <br> [The Reporting Hub](https://thereportinghub.com/) | ✔️​                                                 | under development​                                  | ✔️​             | ​                       | ​                                     |
-| **MAQ Software**​ <br>[Embed Fast](https://maqsoftware.com/embedfast)            |  under development                                  | under development                                  | ​               | ✔️​                    | ✔️​                                   |
-| **iLink​** <br>[BiHub](https://www.ilink-digital.com/bihub/)                        |  ​                                                   | under development ​                                | ✔️​              | ​                      | ✔️​                                   |
+| **Shift Analytics**​ <br> [The Reporting Hub](https://thereportinghub.com/) | ✔​                                                 | under development​                                  | ✔​             | ​                       | ​                                     |
+| **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedfast)            |                                    | under development                                  | ​               | ✔​                    | ✔​                                   |
+| **iLink​** <br>[BiHub](https://www.ilink-digital.com/bihub/)                        |  ​                                                   | ​                                | ✔​              | ​                      | ✔​                                   |
 
 ### Added capabilities
 
 | Partner                                  | Personal​<br>bookmarks | Report​<br>Printout | Control​<br> UX options | Navigation​<br>Menu | Multi-tenancy​ | Tenant specific​<br>authN &​<br>white-labeling​ | Power BI item​<br>publishing | Report subs.​<br>scheduling & ​<br>distribution​ | Tenant billing​<br>& payment​<br>processing​ | Multi-language​<br>portal support​ |
 |----------------------------------------------|--------------------------------------------|-----------------------------------------|---------------------------------------------|---------------------|-------------------|--------------------------------------------|------------------------------|--------------------------------------------|-----------------------------------------|-----------------------------------|
-| **Shift Analytics**​ <br> [The Reporting Hub](https://thereportinghub.com/)​ | ✔️                                         | ✔️                                     | ✔️                                          | ✔️                 | ✔️                | ✔️                                        | ​                             | ✔️​                                         | ✔️​                                     | ✔️                               |
-| **MAQ Software**​ <br>[Embed Fast](https://maqsoftware.com/embedfast)​            | ✔️​                                         | ✔️​                                     | ✔️                                          | ✔️​                 |✔️​                 | ​                                          |✔️​                            | ✔️​                                         | ​                                       | ​                                   |
-| **iLink Digital​** <br> [BiHub](https://www.ilink-digital.com/bihub/)                                   | ✔️​                                         | ✔️​                                     | ✔️                                          | ✔️​                 | ✔️                 | ​                                         | ✔️                           | ​                                           | ​                                        | ​                                  |
+| **Shift Analytics**​ <br> [The Reporting Hub](https://thereportinghub.com/)​ | ✔                                         | ✔                                     | ✔                                          | ✔                 | ✔                | ✔                                        | ​                             | ✔​                                         | ✔​                                     | ✔                               |
+| **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedfast)​            | ✔​                                         | ✔​                                     | ✔                                          | ✔​                 |✔​                 | ​                                          |✔​                            | ✔​                                         | ​                                       | ​                                   |
+| **iLink Digital​** <br> [BiHub](https://www.ilink-digital.com/bihub/)                                   | ✔​                                         | ✔​                                     | ✔                                          | ✔​                 | ✔                 | ​                                         | ✔                           | ​                                           | ​                                        | ​                                  |
 
 ## Next steps
 
@@ -146,8 +147,8 @@ The following tables compare features of the different accelerators from our par
 
   * [The Reporting Hub](https://thereportinghub.com/)
 
-  * [Embed Fast](https://maqsoftware.com/embedfast)
+  * [EmbedFAST](https://maqsoftware.com/embedfast)
 
   * [BiHub](https://www.ilink-digital.com/bihub/)
 
-* [Find a Microsoft partner](https://partner.microsoft.com/partnership/find-a-partner)
+[Find a Microsoft partner](https://partner.microsoft.com/partnership/find-a-partner)
