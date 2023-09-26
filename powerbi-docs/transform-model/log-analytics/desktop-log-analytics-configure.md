@@ -155,7 +155,7 @@ The following table describes the **schema**.
 | **EventText** | TextData_s | Contains verbose information associated with the operation, for example, DAX Query. |
 | **CustomerTenantId** | | Customer's Power BI tenant identifier. |
 | **XmlaRequestId** | RootActivityId_g | Unique Identifier of request. |
-| **ReplicaId** |  | Replica identifier that will let you identify the replica when [Query Scale Out (QSO)](https://learn.microsoft.com/power-bi/enterprise/service-premium-scale-out) is enabled. Read-write replica always has ReplicaId='AAA' and read-only replicas have ReplicaId starting 'AAB' onwards. For non-QSO enabled datasets the ReplicaId is always 'AAA'  |
+| **ReplicaId** |  | Replica identifier that will let you identify the replica when [Query Scale Out (QSO)](../../enterprise/service-premium-scale-out.md) is enabled. Read-write replica always has ReplicaId='AAA' and read-only replicas have ReplicaId starting 'AAB' onwards. For non-QSO enabled datasets the ReplicaId is always 'AAA'  |
 
 ## Sample Log Analytics KQL queries
 
