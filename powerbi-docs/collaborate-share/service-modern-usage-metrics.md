@@ -102,6 +102,15 @@ The improved usage metrics report includes the following report pages:
 | Report performance | seven-day performance | The performance for 25%, 50%, and 75% of the open report actions calculated across the past seven days for each date. |
 | Report performance | Consumption method | How users opened the report, such as via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
 | Report performance | Browsers | What browser the users used to open the report, such as Firefox, Edge, and Chrome. |
+| Report list | Active reports | What reports are being used across the workspace. |
+| Report list | Total views | Total report opens across the workspace. |
+| Report list | Total viewers | Total report viewers across the workspace. |
+| Report list | View trend | The view trend reflects view count changes over time. It compares the first half of the selected time period with the second half. |
+| Report list | Unused  reports | Count of reports that have not been opened over time. |
+| Report list | Report usage (table) | Shows which reports contribute to individual counts shown in cards. Shows report open percentages, users interacting with report, viewing trends and days. |
+| Report list | Distribution method | How users got access to the report, such as being members of a workspace, having the report shared with them, or installing an app. |
+| Report list | Platform slicer | If the report was accessed via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
+| Report list | Unique viewers | A viewer is someone who opened the report at least once during the time period (based on the Azure AD user account). Shows number of report opens by individual viewers. |
 
 ### Worked example of View and Viewer metrics
 
