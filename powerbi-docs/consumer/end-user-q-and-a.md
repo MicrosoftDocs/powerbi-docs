@@ -22,7 +22,7 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 Use Q&A to explore your data using natural language capabilities and receive answers in the form of charts and graphs. Unlike a search engine, Q&A only provides results about the data in Power BI datasets.
 
-To learn how to use Q&A, see [Explore your data and create visuals using Q&A](../natural-language-q-and-a-intro.md)
+To learn how to use Q&A, see [Explore your data and create visuals using Q&A](../natural-language/q-and-a-intro.md)
 
 ## Which visualizations does Q&A use?
 
@@ -42,7 +42,7 @@ Q&A is available on dashboards in the Power BI service, and at the bottom of the
 
 ### Use Q&A in a report
 
-Q&A is available in reports if the report designer added a specific type of interactive visual called a [Q&A visual](../visuals/power-bi-visualization-q-and-a.md) or added a [Q&A button](../natural-language/q-and-a-intro.md#add-qa-to-a-report). Ask natural language questions and create new report visuals that represent the answers to your questions. If you have edit permissions for the report, turn the results into a new visual in the report.
+Q&A is available in reports if the report designer added a specific type of interactive visual called a [Q&A visual](../visuals/power-bi-visualization-q-and-a.md) or added a [Q&A button](../create-reports/desktop-buttons.md#select-the-action-for-a-button). Ask natural language questions and create new report visuals that represent the answers to your questions. If you have edit permissions for the report, turn the results into a new visual in the report.
 
 ![Screenshot of the Q&A question box highlighted by a red box on the report.](media/end-user-q-and-a/power-bi-q-and-a-default.png)
 
@@ -78,8 +78,8 @@ Microsoft might use your questions to improve Power BI. For more information abo
 
 ## Next steps
 
-To learn how to ask your own natural language questions and create answers in the form of visuals, see [Use Q&A on a dashboard](../create-reports/end-user-q-and-a-tutorial.md) or [Use Q&A in a report](../new-article).
+To learn how to ask your own natural language questions and create answers in the form of visuals, see [Use Q&A on a dashboard](../natural-language/end-user-q-and-a-tutorial.md)<!-- or [Use Q&A in a report](../new-article)>.
 
 For tips on forming questions, see [How to ask questions with Q&A](end-user-q-and-a-tips.md).
 
-If you have edit permissions, learn how to [create a Q&A visual on a dashboard](../create-reports/power-bi-visualization-visualization-introduction-to-q-and-a.md) and [add a Q&A visual in a report](../visuals/power-bi-visualization-q-and-a.md).
+If you have edit permissions, learn how to [create a Q&A visual on a dashboard](../create-reports/power-bi-visualization-introduction-to-q-and-a.md) and [add a Q&A visual in a report](../visuals/power-bi-visualization-q-and-a.md).

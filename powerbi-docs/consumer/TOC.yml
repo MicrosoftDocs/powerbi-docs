@@ -141,7 +141,7 @@
     - name: "Q&A in Power BI"
       href: end-user-q-and-a.md
     - name: "Q&A tutorial"
-      href: end-user-q-and-a-tutorial.md
+      href: ../natural-language/end-user-q-and-a-tutorial.md
     - name: "Tips and tricks for asking questions with Q&A in Power BI"
       href: end-user-q-and-a-tips.md
   - name: Resources
