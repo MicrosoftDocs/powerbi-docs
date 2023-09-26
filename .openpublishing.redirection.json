@@ -1221,9 +1221,14 @@
         },
         {
             "source_path": "powerbi-docs/service-cortana-answer-cards.md",
-            "redirect_url": "/power-bi/create-reports/power-bi-tutorial-q-and-a",
+            "redirect_url": "/power-bi/natural-language/power-bi-tutorial-q-and-a",
             "redirect_document_id": false
         },
+        {
+            "source_path": "powerbi-docs/create-reports/power-bi-tutorial-q-and-a.md",
+            "redirect_url": "/power-bi/natural-language/power-bi-tutorial-q-and-a",
+            "redirect_document_id": false
+        },      
         {
             "source_path": "powerbi-docs/service-cortana-intro.md",
             "redirect_url": "/power-bi/create-reports/power-bi-tutorial-q-and-a",
