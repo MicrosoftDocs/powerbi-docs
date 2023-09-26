@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 05/02/2023
+ms.date: 09/26/2023
 LocalizationGroup: Transform and shape data
 ---
 # Configure Azure Log Analytics for Power BI
@@ -27,10 +27,9 @@ The following sections take you through the steps in to do both.
 
 Before you can configure Log Analytics integration from Power BI, you need to [create a Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace) in the Azure portal. You must also give permission in Azure for the Power BI service to write logs. The exact requirements are:
 
+* Contributor access to Azure subscription.
 * Register the 'microsoft.insights' resource provider in the Azure subscription where you'll collect Power BI log data.
 * The user who sets up Log Analytics integration in Power BI must be in the Log Analytics Contributor role for the Log Analytics Workspace. See FAQ for workarounds if the Owner role can't be given.
-
-The following section shows you how to meet these three requirements.
 
 ### Enable the 'microsoft.insights' resource provider
 
@@ -156,7 +155,7 @@ The following table describes the **schema**.
 | **EventText** | TextData_s | Contains verbose information associated with the operation, for example, DAX Query. |
 | **CustomerTenantId** | | Customer's Power BI tenant identifier. |
 | **XmlaRequestId** | RootActivityId_g | Unique Identifier of request. |
-| **ReplicaId** |  | Replica identifier that will let you identify the replica when [Query Scale Out (QSO)](https://learn.microsoft.com/power-bi/enterprise/service-premium-scale-out) is enabled. Read-write replica always has ReplicaId='AAA' and read-only replicas have ReplicaId starting 'AAB' onwards. For non-QSO enabled datasets the ReplicaId is always 'AAA'  |
+| **ReplicaId** |  | Replica identifier that will let you identify the replica when [Query Scale Out (QSO)](../../enterprise/service-premium-scale-out.md) is enabled. Read-write replica always has ReplicaId='AAA' and read-only replicas have ReplicaId starting 'AAB' onwards. For non-QSO enabled datasets the ReplicaId is always 'AAA'  |
 
 ## Sample Log Analytics KQL queries
 

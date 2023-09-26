@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 08/30/2023
+ms.date: 09/18/2023
 ---
 
 # Change log for Power BI Desktop
@@ -17,6 +17,15 @@ This change log is for Power BI Desktop and lists new items along with bug fixes
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
  
+## September 2023 QFE 1
+
+*Version: 2.121.762.0, Released: September 18, 2023*
+ 
+Bug fixes/improvements:
+
+* Fix to On Object. Now customers can select all sections on Pie/Donut chart.
+ 
+
 
 ## August 2023 QFE 1
 
