@@ -783,7 +783,7 @@
         {
             "source_path": "powerbi-docs/consumer/end-user-q-and-a-tutorial.md",
             "redirect_url": "/power-bi/natural-language/end-user-q-and-a-tutorial.md",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-getting-started-with-color-formatting-and-axis-properties.md",
