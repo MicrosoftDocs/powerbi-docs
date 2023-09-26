@@ -44,7 +44,7 @@ Q&A is available throughout Power BI, and this article focuses on using Q&A on a
 
 ## Get started using Q&A on a dashboard
 
-In the [Power BI service](/app.powerbi.com), a dashboard contains tiles pinned from one or more datasets, so you can ask questions about any of the data contained in any of those datasets. To see what reports and datasets were used to create the dashboard, select **More options (...)** from the menu bar, and then choose **See related content**.
+In the Power BI service (app.powerbi.com), a dashboard contains tiles pinned from one or more datasets, so you can ask questions about any of the data contained in any of those datasets. To see what reports and datasets were used to create the dashboard, select **More options (...)** from the menu bar, and then choose **See related content**.
 
 ![Screenshot of the Power BI service, highlighting the more options icon and the See related content option.](media/end-user-q-and-a-tutorial/power-bi-view-related.png)
 
@@ -85,7 +85,7 @@ Let's try it out.
 
     ![Screenshot shows a Power BI dashboard with an option to Ask a question about your data.](media/end-user-q-and-a-tutorial/powerbi-qna.png)
 
-    Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and complete questions containing the names of the tables in the underlying datasets and might even see complete questions listed if the dataset owner has created [featured questions](service-q-and-a-create-featured-questions.md).
+    Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and complete questions containing the names of the tables in the underlying datasets and might even see complete questions listed if the dataset owner has created [featured questions](../create-reports/service-q-and-a-create-featured-questions.md).
 
     :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-show-all.png" alt-text="Screenshot shows Q&A with Show all suggestions selected.":::
 
@@ -123,15 +123,14 @@ Let's try it out.
 
 ## Considerations and troubleshooting
 
-- If you've connected to a dataset using a live connection or gateway, Q&A needs to be [enabled for that dataset](service-q-and-a-direct-query.md).
+- If you've connected to a dataset using a live connection or gateway, Q&A needs to be [enabled for that dataset](../create-reports/service-q-and-a-direct-query.md).
 
 - At the current time, Power BI Q&A only supports answering natural language queries asked in English. There's a preview available for Spanish that your Power BI administrator can enable.
 
 ## Next steps
 
 - [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
-- [Tips for asking questions in Power BI Q&A](end-user-q-and-a-tips.md)
-- [Make Excel data work well with Q&A in Power BI](service-prepare-data-for-q-and-a.md)
-- [Enable Q&A for live connections in Power BI](service-q-and-a-direct-query.md)
-- [Pin a tile to the dashboard from Q&A](service-dashboard-pin-tile-from-q-and-a.md)
-
+- [Tips for asking questions in Power BI Q&A](../consumer/end-user-q-and-a-tips.md)
+- [Make Excel data work well with Q&A in Power BI](../create-reports/service-prepare-data-for-q-and-a.md)
+- [Enable Q&A for live connections in Power BI](../create-reports/service-q-and-a-direct-query.md)
+- [Pin a tile to the dashboard from Q&A](../create-reports/service-dashboard-pin-tile-from-q-and-a.md)
