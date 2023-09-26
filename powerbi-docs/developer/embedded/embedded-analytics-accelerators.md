@@ -12,13 +12,13 @@ ms.date: 09/26/2023
 
 # Embedded analytics solution accelerators from Microsoft partners
 
-To expedite embedded analytics for ISVs, Microsoft partners offer accelerator tools designed to help quickly embed Power BI analytics into your application. Embedded analytics accelerators are a cost-effective way to speed up time-to-market or advance a PoC or pilot for your multi-tenant, customer-facing Power BI embedded analytics solution​. They simplify the implementation process and can also help you manage your Power BI capacity and billing.
+To expedite embedded analytics for ISVs, Microsoft partners offer accelerator tools designed to help quickly embed Power BI analytics into your application. Embedded analytics accelerators are a cost-effective way to speed up time-to-market or advance a PoC or pilot for your multitenant, customer-facing Power BI embedded analytics solution​. They simplify the implementation process and can also help you manage your Power BI capacity and billing.
 
 :::image type="content" source="./media/embedded-analytics-accelerators/accelerator-workflow.png" alt-text="Diagram showing how accelerators work.":::
 
 Here are some advantages of using an accelerator:
 
-* Accelerators provide an enhanced personalized user experience and added functionality for [Embed for your customers](./embedded-analytics-power-bi.md#embed-for-your-customers) scenario with flexible end-user authentication and authorization options and support for multi-tenancy and end-user permissions management.
+* Accelerators provide an enhanced personalized user experience and added functionality for [Embed for your customers](./embedded-analytics-power-bi.md#embed-for-your-customers) scenario with flexible end-user authentication and authorization options and support for multitenancy and end-user permissions management.
 
 * Implementation details of the sophisticated Power BI embedded solution they provide are hidden.
 Some accelerators provide backend only functionality via an SDK and require code development for the client front-end.​
@@ -27,7 +27,7 @@ Some accelerators provide backend only functionality via an SDK and require code
 
 * Accelerators are developed, owned, and need to be purchased directly from the corresponding partner. The accelerators implement cloud based solutions that are deployed into your Azure environment and use Azure and Power BI/Fabric services that need to be acquired from Microsoft. You can reuse an existing subscription or license if you already have one. Some accelerators may offer a deployment option via the Azure Marketplace. ​
 
-* An accelerator can coexist as stand-alone applications or be fully integrated with your original application as described in the [Deployment and integration options table](#deployment-and-integration-options).
+* An accelerator can exist as stand-alone applications or be fully integrated with your original application, as described in the [Deployment and integration options table](#deployment-and-integration-options).
 
 There are several partner accelerators that vary in their deployment, acquisition/billing options and their capabilities. ​
 
@@ -55,7 +55,7 @@ Different accelerators provide different frontend and backend capabilities inclu
 
   * Report subscriptions and scheduling of printouts​
 
-* Seamless multi-tenancy and user permissions support​
+* Seamless multitenancy and user permissions support​
 
   * Show each tenant user only their own data even when using the same report across the tenant
 
@@ -83,7 +83,7 @@ The following features and capabilities are available in the backend and admin m
 
 #### Admin module (including UI and config database)​
 
-* Multi-tenancy solution management within the same Power BI tenant
+* Multitenancy solution management within the same Power BI tenant
 
   * Auto provision workspace when on-boarding a new tenant​
 
@@ -129,7 +129,7 @@ The following tables compare features of the different accelerators from our par
 
 | Partner <br> **(accelerator)**               |  Monthly subscriptions: <br> **Direct billing**     |  Monthly subscriptions: <br> **Azure Marketplace** | Free trial | One time purchase ​ | As part of consulting engagement​ |
 |----------------------------------------------|-----------------------------------------------------|----------------------------------------------------|----------------|------------------------|--------------------------------------|
-| **Shift Analytics**​ <br> [The Reporting Hub](https://thereportinghub.com/) | ✔​                                                 | :::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::​                                  | ✔​             | ​                       | ​                                     |
+| **Shift Analytics**​ <br> [The Reporting Hub](https://thereportinghub.com/) | ✔​                                                 | :::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" width="50" border="false":::​                                  | ✔​             | ​                       | ​                                     |
 | **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedfast)            |                                    | :::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::                                  | ​               | ✔​                    | ✔​                                   |
 | **iLink​** <br>[BiHub](https://www.ilink-digital.com/bihub/)                        |  ​                                                   | ​                                | ✔​              | ​                      | ✔​                                   |
 
