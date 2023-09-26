@@ -20,10 +20,10 @@ Here are some advantages of using an accelerator:
 
 * Accelerators provide an enhanced personalized user experience and added functionality for [Embed for your customers](./embedded-analytics-power-bi.md#embed-for-your-customers) scenario with flexible end-user authentication and authorization options and support for multi-tenancy and end-user permissions management.
 
-* Implementation details of the sophisticated Power Bl embedded solution they provide are hidden.
-Some accelerator provide backend only functionality via an SDK and require code development for the client front-end.​
+* Implementation details of the sophisticated Power BI embedded solution they provide are hidden.
+Some accelerators provide backend only functionality via an SDK and require code development for the client front-end.​
 
-* Once installed, you can white-label the solution, configure its capabilities, and customize the user experience.​
+* White-label the solution, configure its capabilities, and customize the user experience once installed.​
 
 * Accelerators are developed, owned, and need to be purchased directly from the corresponding partner. The accelerators implement cloud based solutions that are deployed into your Azure environment and use Azure and Power BI/Fabric services that need to be acquired from Microsoft. You can reuse an existing subscription or license if you already have one. Some accelerators may offer a deployment option via the Azure Marketplace. ​
 
@@ -129,8 +129,8 @@ The following tables compare features of the different accelerators from our par
 
 | Partner <br> **(accelerator)**               |  Monthly subscriptions: <br> **Direct billing**     |  Monthly subscriptions: <br> **Azure Marketplace** | Free trial | One time purchase ​ | As part of consulting engagement​ |
 |----------------------------------------------|-----------------------------------------------------|----------------------------------------------------|----------------|------------------------|--------------------------------------|
-| **Shift Analytics**​ <br> [The Reporting Hub](https://thereportinghub.com/) | ✔​                                                 | under development​                                  | ✔​             | ​                       | ​                                     |
-| **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedfast)            |                                    | under development                                  | ​               | ✔​                    | ✔​                                   |
+| **Shift Analytics**​ <br> [The Reporting Hub](https://thereportinghub.com/) | ✔​                                                 | :::image type="icon" source="./marketplace-logo.png" border="false":::​                                  | ✔​             | ​                       | ​                                     |
+| **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedfast)            |                                    | :::image type="icon" source="./marketplace-logo.png" border="false":::                                  | ​               | ✔​                    | ✔​                                   |
 | **iLink​** <br>[BiHub](https://www.ilink-digital.com/bihub/)                        |  ​                                                   | ​                                | ✔​              | ​                      | ✔​                                   |
 
 ### Added capabilities
@@ -143,7 +143,7 @@ The following tables compare features of the different accelerators from our par
 
 ## Next steps
 
-* To learn more about each partner’s solution accelerator, please visit their corresponding product website:
+* To learn more about each partner’s solution accelerator, visit their corresponding product website:
 
   * [The Reporting Hub](https://thereportinghub.com/)
 
