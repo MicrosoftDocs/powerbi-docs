@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/20/2023
+ms.date: 09/25/2023
 ms.custom: intro-whats-new
 ---
 
@@ -56,6 +56,18 @@ We’ve added new buttons in Power BI Desktop that make it easy to switch quickl
 :::image type="content" source="media/whats-new/new-layout-switcher-web-mobile.png" alt-text="Screenshot showing new layout switcher between web and mobile views." lightbox="media/whats-new/new-layout-switcher-web-mobile.png":::
 
 *New layout switcher from web to mobile layout*
+
+### Mobile layout interactive canvas
+
+In this latest update, we've made the mobile canvas interactive. 
+
+With this new capability, you can test how buttons, slicers, and visuals behave in the app before you publish the report.  
+
+:::image type="content" source="media/whats-new/mobile-layout-test-interactivity.png" alt-text="Screenshot of testing mobile functionality while authoring a report.":::
+
+This canvas interactivity means that your report users can now interact with visuals directly. They can adjust table and matrix column headers to make them fit perfectly in mobile screens.
+
+:::image type="content" source="media/whats-new/mobile-adjust-column-widths.png" alt-text="Screenshot of adjusting column widths to fit mobile screen.":::
 
 ### New bubble range scaling setting 
 
