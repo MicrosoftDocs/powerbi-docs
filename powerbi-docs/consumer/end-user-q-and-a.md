@@ -78,7 +78,7 @@ Microsoft might use your questions to improve Power BI. For more information abo
 
 ## Next steps
 
-To learn how to ask your own natural language questions and create answers in the form of visuals, see [Use Q&A on a dashboard](../natural-language/end-user-q-and-a-tutorial.md)<!-- or [Use Q&A in a report](../new-article)>.
+To learn how to ask your own natural language questions and create answers in the form of visuals, see [Use Q&A on a dashboard](../natural-language/end-user-q-and-a-tutorial.md) or [Use Q&A in a report](../natural-language/power-bi-tutorial-q-and-a.md)>.
 
 For tips on forming questions, see [How to ask questions with Q&A](end-user-q-and-a-tips.md).
 
