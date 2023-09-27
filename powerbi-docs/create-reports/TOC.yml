@@ -630,8 +630,6 @@
         href: ../paginated-reports/report-design/drilldown-action-report-builder.md
       - name: Subreports
         href: ../paginated-reports/subreports.md
-      - name: Troubleshoot subreports
-        href: ../paginated-reports/subreports-troubleshoot.md
     - name: Filter, group, and sort data in paginated reports
       items: 
       - name: Filter, group, and sort data in paginated reports
@@ -766,8 +764,6 @@
         href: ../paginated-reports/report-design/visualizations/start-pie-chart-values-top-pie-report-builder.md
       - name: Vary polygon, line, and point display in a paginated report
         href: ../paginated-reports/report-design/visualizations/vary-polygon-line-point-display-by-rules-analytical-data.md
-      - name: Troubleshoot charts in paginated reports
-        href: ../paginated-reports/report-design/visualizations/troubleshoot-charts-report-builder.md
     - name: Headers and footers in paginated reports
       items: 
       - name: Headers and footers in paginated reports
@@ -796,8 +792,6 @@
         href: ../paginated-reports/report-builder/add-custom-locations-map-report-builder.md
       - name: Plan for adding a map
         href: ../paginated-reports/report-builder/plan-map-report-report-builder.md
-      - name: Troubleshoot map reports
-        href: ../paginated-reports/report-builder/troubleshoot-reports-map-reports-report-builder.md
       - name: Map Wizard and Map Layer Wizard
         href: ../paginated-reports/report-builder/map-wizard-map-layer-wizard-report-builder.md
     - name: Images, text boxes, rectangles, and lines
@@ -1036,6 +1030,18 @@
         href: ../paginated-reports/report-builder/paginated-use-accessibility-tools.md
       - name: Interact with paginated reports with accessibility tools 
         href: ../paginated-reports/report-builder/paginated-consume-accessible-reports.md
+    - name: Troubleshoot paginated reports 
+      items:
+      - name: Troubleshoot charts in paginated reports
+        href: ../paginated-reports/report-design/visualizations/troubleshoot-charts-report-builder.md
+      - name: Troubleshoot map reports
+        href: ../paginated-reports/report-builder/troubleshoot-reports-map-reports-report-builder.md
+      - name: Troubleshoot paginated report design issues 
+        href: ../paginated-reports/troubleshoot-paginated-reports-design-issues.md
+      - name: Troubleshoot subreports
+        href: ../paginated-reports/subreports-troubleshoot.md
+      - name: Troubleshoot paginated report execution issues
+        href: ../paginated-reports/troubleshoot-paginated-reports-execution-issues.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
     - name: Paginated reports capacity planning
