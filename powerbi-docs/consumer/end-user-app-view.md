@@ -117,6 +117,16 @@ You can explore the associated workspace if you've been given access. When you i
 
 ![Screenshot of the Sales and Marketing workspace showing one report and one dataset.](./media/end-user-app-view/power-bi-new-workspace.png)
 
+### Share reports and dashboards from an app
+
+You can share reports and dashboards that are in an app the same way you share any other report or dashboard: 
+
+- Open the report or dashboard, and select **Share**.
+
+    :::image type="content" source="../collaborate-share/media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-new-look.png" alt-text="Screenshot of the Share button on the ribbon.":::
+
+See the article [Share Power BI reports and dashboards with coworkers and others](../collaborate-share/service-share-dashboards.md) for more information.
+
 ## Get an update of an app 
 
 Sometimes app designers release new versions of their apps. How you get the new version depends on how you received the original. 
