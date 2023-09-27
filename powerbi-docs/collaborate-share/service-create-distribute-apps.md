@@ -1,6 +1,6 @@
 ---
 title: Publish an app in Power BI
-description: Learn how to publish the new apps, which are collections of dashboards and reports with built-in navigation.
+description: Learn how to publish apps, which are collections of dashboards and reports with built-in navigation.
 author: maggiesMSFT
 ms.author: maggies
 ms.service: powerbi
@@ -40,8 +40,8 @@ Your app consumers can't modify the contents of the app. They can interact with 
 ## Licenses for apps
 To create or update an app, you need a Power BI Pro or Premium Per User (PPU) license. For app *consumers*, there are two options.
 
-* **The workspace for this app is *not* in a Power BI Premium capacity**: All business users need Power BI Pro or Premium Per User (PPU) licenses to view your app. 
-* **The workspace for this app *is* in a Power BI Premium capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses in your organization can view app content. However, they can't copy the reports, or create reports based on the underlying datasets. Read [What is Power BI Premium?](../enterprise/service-premium-what-is.md) for details.
+- **The workspace for this app is *not* in a Power BI Premium capacity**: All business users need Power BI Pro or Premium Per User (PPU) licenses to view your app. 
+- **The workspace for this app *is* in a Power BI Premium capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses in your organization can view app content. However, they can't copy the reports, or create reports based on the underlying datasets. Read [What is Power BI Premium?](../enterprise/service-premium-what-is.md) for details.
 
 ## Create and publish your app
 When the content in your workspace is ready, you can start the publishing process. You decide how many different audience groups you need. Then you choose which content you want to publish to each audience. You can create up to ten audience groups in one app. 
@@ -273,33 +273,37 @@ You can't copy a link to an Excel workbook in an app.
 
 1. In the **App link** dialog box, select **Copy** and then **Close** or **Go to app**.
 
-    :::image type="content" source="media/end-user-app-view/consumer-app-link-copy.png" alt-text="Screenshot showing Copy the app link and Close.":::
+    :::image type="content" source="media/service-create-distribute-apps/consumer-app-link-copy.png" alt-text="Screenshot showing Copy the app link and Close.":::
 
 ## Automatically install apps for end users
+
 If an admin gives you permission, you can install apps automatically, pushing them to app consumers. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from the Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](/fabric/admin/service-admin-portal-content-pack-app#push-apps-to-end-users) in the Power BI admin portal article.
 
 ### How to push an app automatically to end users
+
 Once the admin has assigned permissions to you, you have a new option to **install the app automatically**. When you check the box and select **Publish app** (or **Update app**), the app is pushed to all audience groups defined in the **Audience** tab of the app.
 
 :::image type="content" source="media/service-create-distribute-apps/install-app-automatically.png" alt-text="Screenshot shows Power B I Publish app option with Install app automatically selected.":::
 
 ### How users get the apps that you push to them
+
 After you push an app, it shows up in their Apps list automatically. In this way, you can curate the apps that specific users or job roles in your organization need to have at their fingertips.
 
 :::image type="content" source="media/service-create-distribute-apps/get-app.png" alt-text="Screenshot shows Power B I apps with your published app included.":::
 
 ### Considerations for automatically installing apps
+
 Keep these things in mind when pushing apps to end users:
 
-* You can't automatically install an app for an entire organization. You notice that when you select the checkbox for **install app automatically**, the option for **entire organization** becomes inactive.
+- You can't automatically install an app for an entire organization. You notice that when you select the checkbox for **install app automatically**, the option for **entire organization** becomes inactive.
 
-* Installing an app automatically to users can take time. Most apps install immediately for users, but pushing apps can take time.  It depends on the number of items in the app and the number of people given access. We recommend pushing apps during off hours with plenty of time before users need them. Verify with several users before sending broad communication about the apps' availability.
+- Installing an app automatically to users can take time. Most apps install immediately for users, but pushing apps can take time.  It depends on the number of items in the app and the number of people given access. We recommend pushing apps during off hours with plenty of time before users need them. Verify with several users before sending broad communication about the apps' availability.
 
-* If users don't immediately see the app in the **Apps** list, they should refresh or close and reopen their browser.
+- If users don't immediately see the app in the **Apps** list, they should refresh or close and reopen their browser.
 
-* Try not to overwhelm users. Be careful not to push too many apps, so your users perceive the pre-installed apps are useful to them. It's best to control who can push apps to end users to coordinate timing. Establish a point of contact for getting apps in your organization pushed to end users.
+- Try not to overwhelm users. Be careful not to push too many apps, so your users perceive the pre-installed apps are useful to them. It's best to control who can push apps to end users to coordinate timing. Establish a point of contact for getting apps in your organization pushed to end users.
 
-* Guest users who haven't accepted an invite don't get apps automatically installed for them.  
+- Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 
 ## App consumer view
 App consumers in the Power BI service and in the Power BI mobile apps only see the content based on the access permissions for their respective audience groups. Consumers who have access to multiple audience groups see group tabs on the top bar to switch between different audience views easily. For example, if the user is part of both product team and sales team groups, they see three view tabs, as shown in the following image. By default, consumers see the All tab view, which is a consolidated view showing all content that they have access to. App consumers can browse different audience group tabs to see the content for each group. 
@@ -318,7 +322,7 @@ Read more about how [app consumers experience apps](../consumer/end-user-app-vie
 ## Unpublish an app
 Any Admin or Member of a workspace can unpublish the app.
 
-* In a workspace, select  **More options (...)** > **Unpublish app**.
+- In a workspace, select  **More options (...)** > **Unpublish app**.
   
   :::image type="content" source="media/service-create-distribute-apps/unpublish-app.png" alt-text="Screenshot of Select the Unpublish app button.":::
 
@@ -331,26 +335,26 @@ This action uninstalls the app for everyone you've published it to, and they no 
 ## Considerations and limitations
 Things to keep in mind about publishing apps:
 
-* AppSource is an external service that only has public-facing service apps. For organizational apps, users can just go to Apps marketplace to find them. Template apps are also available from Apps marketplace.
-* You can create up to ten audience groups per app.
-* We have temporarily relaxed the access list limit from 100 users or groups per audience group for the app. However, please note that this is temporary, and we might change the limit in the near future. We still recommend you use one or more user groups that contain all the desired users.
-* If the user you added to the app access list already has access to the app through the workspace, they're not shown in the access list for the app.  
-* You can either pin an entire report page to a dashboard using Live pin or pin a single visual as a tile from a report to the dashboard. 
-* When you select a visual pinned as a tile in a dashboard in a published app, you're directed to the underlying report in the app. If the app creator chose not to include a report that has a related dashboard in the app, you're not directed to the underlying report when you select the related tile.
-* In order to see an entire report page pinned as a live pin to a dashboard or a drill-down report to work, the app creators have to include the report in the app audience. 
-* The support site URL is shown in the item information card.
-* By default, all the newly added content, to an already published app, is marked as invisible. You must go to each audience group and manually unhide it.
-* Having multiple audiences isn't fully supported in deployment pipelines. Content visibility of new content that you add to an org app must still be managed manually via audience management.
-* You can't open an added link or see its content if you chose to open the link in the content area.
-* Apps can have a maximum of 200 dashboards.
-* If you include a report that uses chained datasets, also known as [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Azure AD Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
+- AppSource is an external service that only has public-facing service apps. For organizational apps, users can just go to Apps marketplace to find them. Template apps are also available from Apps marketplace.
+- You can create up to ten audience groups per app.
+- We have temporarily relaxed the access list limit from 100 users or groups per audience group for the app. However, please note that this is temporary, and we might change the limit in the near future. We still recommend you use one or more user groups that contain all the desired users.
+- If the user you added to the app access list already has access to the app through the workspace, they're not shown in the access list for the app.  
+- You can either pin an entire report page to a dashboard using Live pin or pin a single visual as a tile from a report to the dashboard. 
+- When you select a visual pinned as a tile in a dashboard in a published app, you're directed to the underlying report in the app. If the app creator chose not to include a report that has a related dashboard in the app, you're not directed to the underlying report when you select the related tile.
+- In order to see an entire report page pinned as a live pin to a dashboard or a drill-down report to work, the app creators have to include the report in the app audience. 
+- The support site URL is shown in the item information card.
+- By default, all the newly added content, to an already published app, is marked as invisible. You must go to each audience group and manually unhide it.
+- Having multiple audiences isn't fully supported in deployment pipelines. Content visibility of new content that you add to an org app must still be managed manually via audience management.
+- You can't open an added link or see its content if you chose to open the link in the content area.
+- Apps can have a maximum of 200 dashboards.
+- If you include a report that uses chained datasets, also known as [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Azure AD Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
 
 ## Next steps
 
-* [Create apps in *workspaces*](service-create-the-new-workspaces.md)
-* [Install and use apps in Power BI](../consumer/end-user-apps.md)
-* [Power BI apps for external services](../connect-data/service-connect-to-services.md)
-* [Power BI Admin Portal](../admin/service-admin-portal.md)
-* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- [Create apps in *workspaces*](service-create-the-new-workspaces.md)
+- [Install and use apps in Power BI](../consumer/end-user-apps.md)
+- [Power BI apps for external services](../connect-data/service-connect-to-services.md)
+- [Power BI Admin Portal](../admin/service-admin-portal.md)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
 
