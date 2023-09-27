@@ -8,7 +8,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 09/26/2023
+ms.date: 09/27/2023
 
 LocalizationGroup: Share your work
 ---
@@ -246,14 +246,22 @@ After you publish your app, you may want to change or update it.
     > [!Note]
     > If you removed app permissions as part of the update, new app installers won't get those permissions. However, **the update won't remove the permissions from users who already have them.** To remove such existing access, go to the Direct access tab on the datasets manage permissions page and remove the permissions manually. 
 
-## Copy a link to an item in an app
+## Copy a link to a specific item in an app
 
-### Prerequisites to copying a link
+### Prerequisite to copying a link
 
-Before you can copy a link to an item in an app, it has to meet these prerequisites:
+Before you can copy a link to an item in an app, you have to publish it first. An app that you're creating doesn't show the **Copy link** in the Content tab for the item.
 
-- The app must be already published. An app that you're creating doesn't show the **Copy link** in the Content tab for the item.
-- The item must be a Power BI report, paginated report, dashboard, or scorecard. Excel workbooks aren't supported.  
+### Items you can copy a link to
+
+You can copy a link to these items in an app:
+
+- A Power BI report
+- A paginated report
+- A dashboard
+- A scorecard
+
+You can't copy a link to an Excel workbook in an app.
 
 ### Copy the link
 
@@ -261,9 +269,11 @@ Before you can copy a link to an item in an app, it has to meet these prerequisi
 
 1. Select **Copy link**.
 
+    :::image type="content" source="../collaborate-share/media/service-create-distribute-apps/copy-link-app.png" alt-text="Screenshot showing the Copy link option on the More options list.":::
+
 1. In the **App link** dialog box, select **Copy** and then **Close** or **Go to app**.
 
-    :::image type="content" source="media/service-create-distribute-apps/app-link-copy.png" alt-text="Screenshot showing the App link dialog, where you can copy the link.":::
+    :::image type="content" source="media/end-user-app-view/consumer-app-link-copy.png" alt-text="Screenshot showing Copy the app link and Close.":::
 
 ## Automatically install apps for end users
 If an admin gives you permission, you can install apps automatically, pushing them to app consumers. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from the Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](/fabric/admin/service-admin-portal-content-pack-app#push-apps-to-end-users) in the Power BI admin portal article.

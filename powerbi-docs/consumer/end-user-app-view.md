@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Install and use apps
 ms.topic: how-to
-ms.date: 09/19/2023
+ms.date: 09/27/2023
 ms.custom: licensing support, intro-installation
 LocalizationGroup: Share your work
 ---
@@ -20,6 +20,7 @@ LocalizationGroup: Share your work
 Now that you have a [basic understanding of apps](end-user-apps.md), you can learn how to open and interact with them. 
 
 ## Ways to get a new app
+
 You can get a new app:
 
 * From the Power BI apps marketplace in the Power BI service.
@@ -29,6 +30,7 @@ You can get a new app:
 With Power BI mobile, you can only install an app from a direct link. The Power BI apps marketplace isn't available in Power BI mobile. If the app designer installs the app automatically, you'll see it in your list of apps.
 
 ## Apps and licenses
+
 Not all Power BI users can view and interact with apps. If you have a free license, you can open apps that are stored in Premium capacity and that are shared with you. If you have a Pro license or a Premium Per User license, you can open apps that are shared with you.
 
 So, if you can't open an app, contact your administrator or help desk. For information about licensing, see [Power BI licensing](end-user-license.md).
@@ -71,6 +73,7 @@ You can find and install apps from the Power BI apps marketplace. In the apps ma
    > If you're using a free user license, you can download apps but you can't view them unless you upgrade to a Power BI Pro or Premium Per User license or unless the app is stored in a Premium capacity. For more information, see [Licenses for business users](end-user-license.md).
 
 ## Install an app from a direct link
+
 You can also install an organizational app from a direct link:
 
 - **On your computer**. When you select the link in an email, the [Power BI service](https://app.powerbi.com) opens the app in your browser. 
@@ -78,6 +81,7 @@ You can also install an organizational app from a direct link:
 - **On your iOS or Android mobile device**. When you select the link in an email on your mobile device, the app installs automatically and opens in the mobile app. You might have to sign in first. 
 
 ## Interact with the dashboards and reports in the app
+
 Take some time to explore the data in the dashboards and reports that make up the app. You have access to all of the standard Power BI interactions, such as filtering, highlighting, sorting, and drilling down. The extent of what you can do with an app is controlled by the permissions that the *designer* assigned to you. How you can interact with the app's dashboards and reports is controlled by the access and roles that the *designer* assigned to you. 
 
 Still a little confused by the difference between dashboards and reports?  Learn more about [dashboards](end-user-dashboards.md) or [reports](end-user-reports.md) in Power BI.  
@@ -113,32 +117,7 @@ You can explore the associated workspace if you've been given access. When you i
 
 ![Screenshot of the Sales and Marketing workspace showing one report and one dataset.](./media/end-user-app-view/power-bi-new-workspace.png)
 
-## Copy a link to an item in an app
-
-### Items you can copy a link to
-
-You can only copy a link to these items in an app:
-
-- A Power BI report
-- A paginated report
-- A dashboard
-- A scorecard
-
-You can't copy a link to an Excel workbook in an app.
-
-### Copy the link
-
-1. Select **More options (...)** next to the item whose link you want to copy.
-
-1. Select **Copy link**.
-
-    :::image type="content" source="../collaborate-share/media/service-create-distribute-apps/copy-link-app.png" alt-text="Screenshot showing the Copy link option on the More options list.":::
-
-1. In the **App link** dialog box, select **Copy** and then **Close** or **Go to app**.
-
-    :::image type="content" source="media/end-user-app-view/consumer-app-link-copy.png" alt-text="Screenshot showing Copy the app link and Close.":::
-
-## Update an app 
+## Get an update of an app 
 
 Sometimes app designers release new versions of their apps. How you get the new version depends on how you received the original. 
 
@@ -165,11 +144,11 @@ Sometimes app designers release new versions of their apps. How you get the new 
 
 ## Considerations and troubleshooting
 
-- The ability to install apps can be turned on and off by your Power BI administrator. Contact your IT department or help desk if you need this feature enabled.    
+- The ability to install apps can be turned on and off by your Power BI administrator. Contact your IT department or help desk if you need this feature enabled.
 - The use of apps requires either a Pro or Premium Per User license or for the app to be stored in a workspace in Premium shared capacity. [Learn about licenses](end-user-license.md).
 
-
 ## Next steps
+
 * [Back to the apps overview](end-user-apps.md)
 * [View a Power BI report](end-user-report-open.md)
 * [Other ways content is shared with you](../collaborate-share/end-user-shared-with-me.md)
