@@ -15,7 +15,7 @@ Report design issues may occur when you are creating the report layout in Design
   
 ## Why does my text box show only a single value and not repeat for every row?  
 
-### Answer: The text box parent is the report body  
+### The text box parent is the report body  
 
 If you add a text box with a dataset field reference directly to the design surface, it renders only once and displays the first value in the dataset. It can only display an aggregate value for a dataset.  
   
@@ -25,7 +25,7 @@ If you want text boxes that show each value in a dataset, use a data region, suc
   
 ## Why can't I add Total Pages to my report?  
 
-### The built-in fields `[&PageNumber]` and `[&TotalPages]` aren't valid in the report body.   
+### The built-in fields `[&PageNumber]` and `[&TotalPages]` aren't valid in the report body
   
 The built-in fields [&PageNumber] and [&TotalPages] are valid only in the page header and page footer.   
   
