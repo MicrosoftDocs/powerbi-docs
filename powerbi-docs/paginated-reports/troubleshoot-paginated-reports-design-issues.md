@@ -23,9 +23,9 @@ To verify the parent container of a text box, select the text box, and in the Pr
   
 If you want text boxes that show each value in a dataset, use a data region, such as a table or matrix. By default, each cell in a table or matrix contains a text box. Drag dataset fields to each cell.   
   
-## Why can't I add Total Pages to my Report?  
+## Why can't I add Total Pages to my report?  
 
-### Answer: The built-in fields `[&PageNumber]` and `[&TotalPages]` aren't valid in the report body.   
+### The built-in fields `[&PageNumber]` and `[&TotalPages]` aren't valid in the report body.   
   
 The built-in fields [&PageNumber] and [&TotalPages] are valid only in the page header and page footer.   
   
@@ -37,7 +37,7 @@ To add [&PageNumber] or [&TotalPages] to a report, you must first add a page hea
 ## How do I design two tables or a chart and a table to display side-by-side?  
 Designing a report is not a WYSISYG ("what you see is what you get") experience. The report processor combines data, report items, report layout information such as white space, containers, and expressions to produce a compiled report which is then passed to a report renderer that "lays out" that report for the specified viewing experience: interactive for an HTML browser or as a file format. The automatic layout algorithms may produce a report layout that you want to change.   
   
-### Rendering Rules Use Page Size, Containers, Peer Objects, Relative Placement, and White Space to Determine Layout  
+### Rendering rules use page size, containers, peer objects, relative placement, and white space to determine layout  
 In general, a report grows to accommodate its data and pushes other report items aside.   
   
 To group multiple data regions or report items together, place them in the same parent container. For example, place a chart and table in a rectangle container and align their top edges to display them side by side. For more information, see [Rendering Behaviors in Report Builder](./report-design/render-behaviors-report-builder-service.md).
