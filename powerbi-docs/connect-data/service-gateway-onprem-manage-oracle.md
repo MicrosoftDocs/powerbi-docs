@@ -26,7 +26,7 @@ Supported Oracle versions are:
 - Oracle Database Server 12c (12.1.0.2) and later
 - Oracle Autonomous Database - all versions
 
-After you install and configure OCMT properly, you may use Power BI Desktop or another test client to verify correct installation and configuration on the gateway.
+After you install and configure OCMT properly, you can use Power BI Desktop or another test client to verify the correct installation and configuration on the gateway.
 
 ## Add a data source
 
@@ -34,9 +34,9 @@ After you install and configure OCMT properly, you may use Power BI Desktop or a
 
    :::image type="content" source="media/service-gateway-onprem-manage-oracle/add-data-source-oracle.png" alt-text="Screenshot of adding an Oracle data source to the gateway." :::
 
-1. In **Server**, enter the name for the data source, such as your Oracle net service name (i.e., myADB_high) or Easy Connect Plus connection string.
+1. In **Server**, enter the name for the data source, such as your Oracle net service name (for example, myADB_high) or Easy Connect Plus connection string.
 
-1. Under **Authentication method**, choose either **Windows** or **Basic**. Choose **Basic** if you plan to login as an Oracle database user. Then enter the credentials to use for this data source. Choose **Windows** when using Windows operating system authentication and with both the Oracle client and server running on Windows.
+1. Under **Authentication method**, choose either **Windows** or **Basic**. Choose **Basic** if you plan to log in as an Oracle database user. Then enter the credentials to use for this data source. Choose **Windows** when using Windows operating system authentication and with both the Oracle client and server running on Windows.
 
    > [!NOTE]
    > All queries to the data source run with these credentials. To learn more about credential storage, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
