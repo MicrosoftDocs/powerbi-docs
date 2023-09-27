@@ -76,8 +76,9 @@ For soft page-break renderers, to view all the data on one page, in Report prope
 For more information about categories of renderers, see [Rendering Behaviors](./report-design/render-behaviors-report-builder-service.md).
 
 ## Next steps
-[Troubleshoot Design Issues With Paginated Reports](./troubleshoot-paginated-reports-design-issues.md)
-[Data retrieval guidance for paginated reports](../guidance/report-paginated-data-retrieval.md)
-[Paginated reports capacity planning](./paginated-capacity-planning.md)
-[Troubleshoot subreports in Power BI paginated reports](./subreports-troubleshoot.md)
-[Paginated reports in Power BI: FAQ](./paginated-reports-faq.yml)
+
+- [Troubleshoot Design Issues With Paginated Reports](./troubleshoot-paginated-reports-design-issues.md)
+- [Data retrieval guidance for paginated reports](../guidance/report-paginated-data-retrieval.md)
+- [Paginated reports capacity planning](./paginated-capacity-planning.md)
+- [Troubleshoot subreports in Power BI paginated reports](./subreports-troubleshoot.md)
+- [Paginated reports in Power BI: FAQ](./paginated-reports-faq.yml)
