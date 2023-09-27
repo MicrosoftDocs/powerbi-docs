@@ -71,7 +71,7 @@ You can find and install apps from the Power BI apps marketplace. In the apps ma
    > If you're using a free user license, you can download apps but you can't view them unless you upgrade to a Power BI Pro or Premium Per User license or unless the app is stored in a Premium capacity. For more information, see [Licenses for business users](end-user-license.md).
 
 ## Install an app from a direct link
-You can also install an organizational app from a direct link:    
+You can also install an organizational app from a direct link:
 
 - **On your computer**. When you select the link in an email, the [Power BI service](https://app.powerbi.com) opens the app in your browser. 
 

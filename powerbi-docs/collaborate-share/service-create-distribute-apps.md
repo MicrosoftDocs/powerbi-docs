@@ -8,7 +8,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 09/07/2023
+ms.date: 09/26/2023
 
 LocalizationGroup: Share your work
 ---
@@ -56,7 +56,7 @@ When the content in your workspace is ready, you can start the publishing proces
 
     :::image type="content" source="media/service-create-distribute-apps/setup-page.png" alt-text="Screenshot of Setup for your app.":::
 
-1. Select **Next: Add content**.
+1. Select **Next: [Add content](#add-content-to-the-app)**.
 
 #### Allow saving a copy of a report
 
@@ -66,13 +66,16 @@ Before you leave the **Setup** tab, you can decide if you want to allow app user
 
     :::image type="content" source="media/service-create-distribute-apps/allow-copying-reports.png" alt-text="Screenshot of save a copy checkbox in Setup tab.":::
 
-    When you select that, app users who have build permissions can save a copy of a report from the app consumer view. You can also grant build permissions to your app users through the app using **Advanced** option under **Manager audience access** pane. 
+    When you select that, app users who have build permissions can save a copy of a report from the app consumer view. You can also grant build permissions to your app users through the app using **Advanced** option under **Manage audience access** pane. 
 
-1. Select **Next: Add content**.
+1. Select **Next: [Add content](#add-content-to-the-app)**.
 
 #### Allow access to hidden content
 
-Also before you leave the **Setup** tab, you can decide if you want users to have access to hidden content. If a user has a link to hidden content in your app, that user can access that content, even if that item is visually hidden from users in the nav pane.
+Also, before you leave the **Setup** tab, you can decide if you want users to have access to hidden content.
+
+> [!CAUTION]
+> If users have a direct link to *any* of the content in your app, they can access the hidden content, even if that item is visually hidden in the navigation pane for that audience.
 
 1. Expand **Advanced settings**.
 
@@ -80,7 +83,7 @@ Also before you leave the **Setup** tab, you can decide if you want users to hav
 
     :::image type="content" source="media/service-create-distribute-apps/access-hidden-content.png" alt-text="Screenshot showing turning on Access to hidden content. ":::
 
-1. Select **Next: Add content**.
+1. Select **Next: [Add content](#add-content-to-the-app)**.
 
 ### Add content to the app
 
@@ -140,12 +143,12 @@ On the **Audience** tab, you create and manage audience groups within the app.
     
     >[!IMPORTANT]
     >
-    >- Hiding content from the audience makes it unavailable in the published app for that audience. However, if you selected [Allow access to hidden content](#allow-access-to-hidden-content), people with a direct link to the content will still be able to access it.
+    >- Hiding content from the audience makes it unavailable in the published app for that audience. However, if you select [Allow access to hidden content](#allow-access-to-hidden-content), a user with a direct link to *any* of the content in the app can access the hidden content, even if that item is visually hidden in the navigation pane for that audience.
     >- Dashboard tiles pointing at reports that are hidden from the audience no longer work. Instead they display an error: "The report shown in this tile doesn’t exist or you don’t have permission to view it."
     >- Paginated reports with subreports don't display the content of the subreport if it's hidden from the audience.
     >- Users of drillthrough reports can't navigate to the destination reports if the destination reports are hidden.
     >
-    >To address these issues, make sure that all the dependent reports are available for the audience.
+    >To address these issues, make sure that all the dependent reports are available for the audience, or select **Allow access to hidden content**.
      
 1. In the **Manage audience access** pane, specify groups or users to add to the current audience group. 
 
@@ -166,7 +169,7 @@ On the **Audience** tab, you create and manage audience groups within the app.
 
     > [!NOTE]
     > - The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least a Viewer role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
-    > - Build permissions only apply to datasets _in the same workspace_ as the app. If datasets are in other workspaces, you must explicitly grant build permissions on those datasets, or add the users to at least the Viewer role in that workspace.
+    > - Build permissions only apply to datasets _in the same workspace_ as the app. If datasets are in other workspaces, you must explicitly grant build permissions on those datasets, or at least add the users to the Viewer role in the other workspace.
 
 ### Publish the app
 
