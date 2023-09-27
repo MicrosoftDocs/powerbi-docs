@@ -16,6 +16,24 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. For information about Report Builder versions, see the [Power BI Report Builder change log](../paginated-reports/paginated-reports-change-log.md).
 
+## September 2023
+
+- **Power BI Report Server**
+
+    - *Version: 1.18.8668.33514(build 15.0.1113.162), Released: September 27, 2023*
+        - Features
+            - Full-screen view for PBIX and RDL reports
+            - Responsive navigation adapted to a small view port
+            - Custom Visual API shipped with release - version v5.4.0
+        - Bug fixes
+            - Fixed appearance of links in Document Map of RDL report
+            
+- **Power BI Desktop (optimized for Power BI Report Server)**   
+    - *Version: 2.121.903.0 (September 2023), Released: September 26, 2023*   
+        - Support for September 2023 Power BI Report Server
+        - New layout switcher from web to mobile layout
+        - New bubble range scaling setting
+
 ## May 2023
 
 ### Power BI Report Server
@@ -647,5 +665,6 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
 
 
