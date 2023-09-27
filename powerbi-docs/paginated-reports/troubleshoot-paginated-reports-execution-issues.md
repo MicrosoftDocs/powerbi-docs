@@ -13,7 +13,7 @@ ms.date: 09/25/2023
 
 After the report processor retrieves the report data, it combines the data and layout information. Each report item property that has an expression is evaluated in the context of the combined data and layout.
 
-After the report data and layout information is combined, the compiled report is sent to a report renderer. For example, when you preview a report locally, you are using the HTML renderer to view the compiled report. Use this topic to help troubleshoot issues specific to report processing and rendering.
+After the report data and layout information are combined, the compiled report is sent to a report renderer. For example, when you preview a report locally, you are using the HTML renderer to view the compiled report. Use this topic to help troubleshoot issues specific to report processing and rendering.
 
 ## My report definition isn't valid
 
