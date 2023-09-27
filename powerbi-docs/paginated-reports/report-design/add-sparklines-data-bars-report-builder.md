@@ -21,7 +21,7 @@ ms.reviewer: saurkumar
   
 1.  If you have not done so already, create a [table](/sql/reporting-services/report-design/tables-report-builder-and-ssrs) or [matrix](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs) with the data you want to display.  
   
-1.  Insert a column in your table or matrix. For more information, see [Insert or Delete a Column &#40;Power BI Report BuilderS&#41;](../../paginated-reports/report-design/insert-delete-column-report-builder).  
+1.  Insert a column in your table or matrix. For more information, see [Insert or Delete a Column &#40;Power BI Report BuilderS&#41;](../../paginated-reports/report-design/insert-delete-column-report-builder.md).  
   
 1.  On the **Insert** tab, select **Sparkline** or **Data Bar**, and then select in a cell in the new column.  
   
