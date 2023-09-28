@@ -25,7 +25,7 @@ These articles cover using Q&A in other scenarios in Power BI:
 
 ## Use Q&A in a report
 
-There are two ways report creators add Q&A functionality to a report--with a Q&A visual and with a Q&A button. You don't have access to Q&A in a report unless a report creator has added one of these Q&A options. If you have Edit permissions to a report, [add a Q&A button to a report](../consumer/end-user-buttons.md#qa-buttons) or [add a Q&A visual to a report](../visuals/power-bi-visualization-q-and-a.md) 
+There are two ways report creators add Q&A functionality to a report--with a Q&A visual and with a Q&A button. You don't have access to Q&A in a report unless a report creator has added one of these Q&A options. If you have Edit permissions to a report, [add a Q&A button to a report](../consumer/end-user-buttons.md) or [add a Q&A visual to a report](../visuals/power-bi-visualization-q-and-a.md) 
 
 ### Create a Q&A visual using a suggested question
 
@@ -105,4 +105,4 @@ At the current time, Power BI Q&A only supports answering natural language queri
 - [Q&A basics](../consumer/end-user-q-and-a.md)
 - [Use a Q&A visual on a dashboard](end-user-q-and-a-tutorial.md)
 - [Convert a Q&A visual into a standalone visual in a report](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md#convert-your-q&a-visual-into-a-standard-visual)
-- [Pin a tile to the dashboard from Q&A](service-dashboard-pin-tile-from-q-and-a.md)
+- [Pin a tile to the dashboard from Q&A](../create-reports/service-dashboard-pin-tile-from-q-and-a.md)
