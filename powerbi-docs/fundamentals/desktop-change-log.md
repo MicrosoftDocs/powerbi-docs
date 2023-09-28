@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/18/2023
+ms.date: 09/28/2023
 ---
 
 # Change log for Power BI Desktop
@@ -17,6 +17,18 @@ This change log is for Power BI Desktop and lists new items along with bug fixes
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
  
+## September 2023 QFE 2
+
+*Version: 2.121.903.0, Released: September 25, 2023*
+
+Bug fixes/improvements:
+
+* Formula bar fix. An error message now appears when a user types an expression in the formula bar that results in an error from AS and reverting their expression.
+* Fix to data exporting. Customers exporting data from a visual are no longer restricted to 300 rows.
+ 
+
+
+
 ## September 2023 QFE 1
 
 *Version: 2.121.762.0, Released: September 18, 2023*
