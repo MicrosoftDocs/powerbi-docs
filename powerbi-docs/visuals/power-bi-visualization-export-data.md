@@ -78,7 +78,7 @@ Exporting data from a report visual in Power BI Desktop is straightforward. When
 
 You have many more options when exporting data from a report visual in the Power BI service. To illustrate the different options, we've created a stacked column chart that includes:
 
-- A [hierarchy](../power-bi/consumer/end-user-drill.md) made up of **Country/Region** and **City**. With that hierarchy, we can drill down from **Country/Region** to **City**, and back up again.
+- A [hierarchy](../consumer/end-user-drill.md) made up of **Country/Region** and **City**. With that hierarchy, we can drill down from **Country/Region** to **City**, and back up again.
 - A filter for **City**.
 - An aggregate for **Discount percent** (count was changed to average).
 
@@ -188,7 +188,7 @@ These considerations and limitations apply to Power BI Desktop and the Power BI 
 There are many considerations related to exporting to Excel. This is one of those features that report designers and Power BI administrators may disable for individuals or even for an entire organization. They do this to ensure that private data isn't exposed to the wrong audience.
 
 If you find that you can't use this feature, reach out to the report owner and your administrator to understand why you can't export data from a particular visual or from all visuals. It may be that this feature has been purposely disabled and perhaps they can  enable it for you. Other times, there may be particular reasons an export doesn't work. It could be related to permissions, data contents, data type, visual type, how the designer named the fields, and more. When contacting the report owner or administrator, refer them to these articles:
-[Admin tenant settings](../admin/service-admin-portal-about-tenant-settings), [Row level security](/power-bi/enterprise/service-admin-rls.md), and [Data protection](../enterprise/service-security-data-protection-overview.md).
+[Admin tenant settings](../admin/service-admin-portal-about-tenant-settings.md), [Row level security](../enterprise/service-admin-rls.md), and [Data protection](../enterprise/service-security-data-protection-overview.md).
 
 - When you're exporting data to Excel, the speed of download of the generated workbook can vary depending on network bandwidth.
 
