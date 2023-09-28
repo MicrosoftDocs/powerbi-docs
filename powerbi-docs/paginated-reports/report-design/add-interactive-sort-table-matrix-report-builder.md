@@ -212,5 +212,5 @@ ms.reviewer: saurkumar
  [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)   
  [Interactive Sort &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/interactive-sort-report-builder.md)   
  [Sort Data in a Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/sort-data-data-region-report-builder.md)   
- [Exploring the Flexibility of a Tablix Data Region &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs)  
+ [Exploring the Flexibility of a Tablix Data Region &#40;Power BI Report Builder&#41;](explore-flexibility-tablix-data-region-report-builder.md)  
   

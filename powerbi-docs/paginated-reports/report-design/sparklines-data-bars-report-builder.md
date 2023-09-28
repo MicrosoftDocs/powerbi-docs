@@ -21,8 +21,6 @@ ms.reviewer: saurkumar
   
  To quickly get started with sparklines, see [Tutorial: Add a Sparkline to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-sparkline-to-your-report-report-builder) and the videos [How to: Create a Sparkline in a Table](../../create-reports/power-bi-sparklines-tables.md) and [Sparklines, Bar Charts, and Indicators in Power BI Report Builder](/previous-versions/dn912438(v=msdn.10)) .  
   
-> [!NOTE]  
->  You can publish sparklines and data bars with their parent table, matrix, or list, separately from a report as a report part. Read more about [Report Parts](/sql/reporting-services/report-design/report-parts-report-builder-and-ssrs). However, report parts are discontinued starting in SQL Server Reporting Services 2022 and Power BI Report Server.
   
 ##  <a name="KindsofSparklines"></a> Types of sparklines  
  You can create almost as many types of sparklines as there are regular charts. In general, you cannot make 3D sparklines. You can make sparkline versions of these full charts:  
@@ -51,7 +49,7 @@ ms.reviewer: saurkumar
 -   [Column Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/column-charts-report-builder.md): Basic, stacked, and 100% stacked column charts. Column charts can be either sparklines or data bars.  
   
 ##  <a name="AlignDatainTableMatrix"></a> Aligning sparkline data in a table or matrix  
- When you insert a sparkline in a table or matrix, it is usually important for the data points in each sparkline to align with the data points of the other sparklines in that column. Otherwise it is hard to compare the data in the different rows. For example, when you compare sales data by month for different salespeople in your company, you would want the months to align. If an employee was out for the month of April, there would be no data for that employee for that month. You would want to see a gap for that month, and see the data for subsequent months align with the data for the other employees. You can do this by aligning the horizontal axis. For more information, see the section about sparklines in [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/expression-scope-for-totals-aggregates-and-built-in-collections.md), and see [Align the Data in a Chart in a Table or Matrix &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/align-the-data-in-a-chart-in-a-table-or-matrix-report-builder-and-ssrs).  
+ When you insert a sparkline in a table or matrix, it is usually important for the data points in each sparkline to align with the data points of the other sparklines in that column. Otherwise it is hard to compare the data in the different rows. For example, when you compare sales data by month for different salespeople in your company, you would want the months to align. If an employee was out for the month of April, there would be no data for that employee for that month. You would want to see a gap for that month, and see the data for subsequent months align with the data for the other employees. You can do this by aligning the horizontal axis. For more information, see the section about sparklines in [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/expression-scope-for-totals-aggregates-and-built-in-collections.md), and see [Align the Data in a Chart in a Table or Matrix &#40;Power BI Report Builder&#41;](align-data-chart-table-matrix-report-builder.md).  
   
  Likewise, to be comparable across rows, data must also align vertically, meaning that the height of the bars or lines in one sparkline or data bar must be relative to the height of the bars and lines in all the other sparklines or data bars. Otherwise, you can't compare the rows to each other.  
   
@@ -69,9 +67,9 @@ ms.reviewer: saurkumar
 >  You cannot convert a full chart to a sparkline or data bar with one click. However, you can make a sparkline or data bar from a full chart just by deleting all the chart elements that are not in sparklines and data bars.  
   
 ##  <a name="HowTo"></a> How-to topics  
- [Add Sparklines and Data Bars &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-sparklines-and-data-bars-report-builder-and-ssrs)  
+ [Add Sparklines and Data Bars &#40;Power BI Report Builder&#41;](add-sparklines-data-bars-report-builder.md)  
   
- [Align the Data in a Chart in a Table or Matrix &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/align-the-data-in-a-chart-in-a-table-or-matrix-report-builder-and-ssrs)  
+ [Align the Data in a Chart in a Table or Matrix &#40;Power BI Report Builder&#41;](align-data-chart-table-matrix-report-builder.md)  
   
 ### Other how-to topics for charts  
  Because sparklines and data bars are a type of chart, you might also find the following how-to topics for charts helpful and relevant:  
@@ -80,7 +78,7 @@ ms.reviewer: saurkumar
   
  [Add Empty Points to a Chart &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/add-empty-points-chart-report-builder.md)  
   
- [Add or Remove Margins from a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-or-remove-margins-from-a-chart-report-builder-and-ssrs)  
+ [Add or Remove Margins from a Chart &#40;Power BI Report Builder&#41;](add-remove-margins-from-chart-report-builder.md)  
   
  [Change a Chart Type &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/change-chart-type-report-builder.md)  
   

@@ -18,7 +18,7 @@ Read about properties you can set in a paginated report for a table, matrix, or 
 ## Controlling the appearance of data  
 Table, matrix, and list data regions are all examples of *tablix* data regions. The following features help control the appearance of a tablix data region:  
   
--   **Formatting data.** To format data in a table, matrix, or list, set the format properties of the text box in the cell. You can set properties for multiple cells at the same time. To format data in a chart, set formatting properties on the series. For more information, see [Formatting Report Items &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-report-items-report-builder-and-ssrs) and [Formatting a Chart &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/formatting-chart-report-builder.md).  
+-   **Formatting data.** To format data in a table, matrix, or list, set the format properties of the text box in the cell. You can set properties for multiple cells at the same time. To format data in a chart, set formatting properties on the series. For more information, see [Formatting a Chart &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/formatting-chart-report-builder.md).  
   
 -   **Writing expressions**. For more information, see [Expression Uses in Reports &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/expression-uses-reports-report-builder.md), and [Expression Examples &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expression-examples.md).  
   
@@ -28,7 +28,7 @@ Table, matrix, and list data regions are all examples of *tablix* data regions. 
   
 -   **Conditionally hiding data**. To conditionally control whether to show or hide a data region or parts of a data region, you can set the Hidden property to **True** or to an expression. Expressions can include references to report parameters. You can also specify a toggle item, so that user can decide to display detail data. For more information, see [Drilldown Action &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/drilldown-action-report-builder.md).  
   
--   **Merging cells.** Multiple contiguous cells within a table can be combined into a single cell. This is known as a column span or a cell merge. Cells can only be combined horizontally or vertically. When you merge cells, only the data in the first cell is preserved. Data in other cells is removed. Merged cells can be split into their original columns. For more information, see [Merge Cells in a Data Region &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/merge-cells-in-a-data-region-report-builder-and-ssrs).  
+-   **Merging cells.** Multiple contiguous cells within a table can be combined into a single cell. This is known as a column span or a cell merge. Cells can only be combined horizontally or vertically. When you merge cells, only the data in the first cell is preserved. Data in other cells is removed. Merged cells can be split into their original columns. For more information, see [Merge Cells in a Data Region &#40;Power BI Report Builder&#41;](merge-cells-data-region-report-builder.md).  
   
 ## Controlling tablix data region position and expansion on a page  
  The following features help control the way a tablix data region displays in a rendered report:  
@@ -57,7 +57,7 @@ Table, matrix, and list data regions are all examples of *tablix* data regions. 
   
  The following list describes ways that you can help control how a tablix data region appears in a report:  
   
--   **Repeating row and column headers on multiple pages**.You can display row and column headers on each page that a tablix data region spans. For more information, see [Display Row and Column Headers on Multiple Pages &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/display-row-and-column-headers-on-multiple-pages-report-builder-and-ssrs).  
+-   **Repeating row and column headers on multiple pages**.You can display row and column headers on each page that a tablix data region spans. For more information, see [Display Row and Column Headers on Multiple Pages &#40;Power BI Report Builder&#41;](display-row-column-headers-multiple-pages-report-builder.md).  
   
 -   **Keeping row and column headers in view when scrolling**. You can control whether to keep the row and column headers in view when you scroll a report using a browser. For more information, see [Keep Headers Visible When Scrolling Through a Report &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/keep-headers-visible-when-scrolling-through-report-report-builder-service.md).  
   

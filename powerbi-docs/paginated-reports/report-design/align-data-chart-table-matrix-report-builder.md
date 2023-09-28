@@ -17,11 +17,11 @@ ms.reviewer: saurkumar
   
  ![Screenshot of a Sparkline Align Data](media/sparkline-align-data.gif "Screenshot of a Sparkline Align Data")  
   
- In this image, the column chart shows daily sales for each employee. Note that for days that an employee has no sales, the chart leaves a blank and aligns subsequent days horizontally. It also aligns the charts vertically by making the sizes of the different charts relative to each other. For more information, see [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs).  
+ In this image, the column chart shows daily sales for each employee. Note that for days that an employee has no sales, the chart leaves a blank and aligns subsequent days horizontally. It also aligns the charts vertically by making the sizes of the different charts relative to each other. For more information, see [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](sparklines-data-bars-report-builder.md).  
   
 ## Align the data in a sparkline or data bar  
   
-1.  [Add a sparkline or data bar](/sql/reporting-services/report-design/add-sparklines-and-data-bars-report-builder-and-ssrs) to a table or matrix.  
+1.  [Add a sparkline or data bar](sparklines-data-bars-report-builder.md) to a table or matrix.  
   
 1. Select the sparkline or data bar, and then select **Horizontal Axis Properties** or **Vertical Axis Properties**.  
   
@@ -31,6 +31,6 @@ ms.reviewer: saurkumar
   
 ## Next steps  
  [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md)   
- [Add Sparklines and Data Bars &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-sparklines-and-data-bars-report-builder-and-ssrs)  
+ [Add Sparklines and Data Bars &#40;Power BI Report Builder&#41;](sparklines-data-bars-report-builder.md)  
   
   

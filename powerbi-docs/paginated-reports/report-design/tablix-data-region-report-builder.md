@@ -31,7 +31,7 @@ ms.reviewer: saurkumar
   
 *  Static and dynamic rows and columns, and how they relate to groups.  
   
- This article spells out these concepts to explain the structure that Report Builder and Report Designer add for you when you add templates and create groups, so you can modify the structure to suit your own needs. Report Builder and Report Designer provide multiple visual indicators to help you recognize tablix data region structure. For more information, see [Tablix Data Region Cells, Rows, and Columns &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tablix-data-region-cells-rows-and-columns-report-builder-and-ssrs).  
+ This article spells out these concepts to explain the structure that Report Builder and Report Designer add for you when you add templates and create groups, so you can modify the structure to suit your own needs. Report Builder and Report Designer provide multiple visual indicators to help you recognize tablix data region structure. For more information, see [Tablix Data Region Cells, Rows, and Columns &#40;Power BI Report Builder&#41;](tablix-data-region-cells-rows-columns-report-builder.md).  
   
   
 ## Understanding detail and grouped data  
@@ -55,7 +55,7 @@ ms.reviewer: saurkumar
   
  Cells in the tablix corner area are created automatically when you have both row groups and column groups defined. Cells in this area can display labels, or you can merge the cells and create a title.  
   
- For more information, see [Tablix Data Region Areas &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tablix-data-region-areas-report-builder-and-ssrs).  
+ For more information, see [Tablix Data Region Areas &#40;Power BI Report Builder&#41;](tablix-data-region-areas-report-builder.md).  
   
 ## Understanding static and dynamic rows and columns  
  A tablix data region organizes cells in rows and columns that are associated with groups. Group structures for row groups and columns are identical. This example uses row groups, but you can apply the same concepts to column groups.  
@@ -68,12 +68,12 @@ ms.reviewer: saurkumar
   
  Dynamic group rows are created when you add a row group or column group to an existing tablix data region. Cells in dynamic group rows display aggregated values for the default scope.  
   
- The Add Total feature automatically creates a row outside the current group on which to display values that are scoped to the group. You can also add static and dynamic rows manually. Visual indicators help you understand which rows are static and which rows are dynamic. For more information, see [Tablix Data Region Cells, Rows, and Columns &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tablix-data-region-cells-rows-and-columns-report-builder-and-ssrs).  
+ The Add Total feature automatically creates a row outside the current group on which to display values that are scoped to the group. You can also add static and dynamic rows manually. Visual indicators help you understand which rows are static and which rows are dynamic. For more information, see [Tablix Data Region Cells, Rows, and Columns &#40;Power BI Report Builder&#41;](tablix-data-region-cells-rows-columns-report-builder.md).  
   
 ## Next steps  
- [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/linking-multiple-data-regions-to-the-same-dataset-report-builder-and-ssrs)   
- [Controlling the Tablix Data Region Display on a Report Page &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/controlling-the-tablix-data-region-display-on-a-report-page)   
- [Exploring the Flexibility of a Tablix Data Region &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs)   
+ [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](linking-multiple-data-regions-to-same-dataset-report-builder.md)   
+ [Control the Tablix Data Region Display on a Report Page &#40;Power BI Report Builder&#41;](control-tablix-data-region-display-report-page.md)   
+ [Exploring the Flexibility of a Tablix Data Region &#40;Power BI Report Builder&#41;](explore-flexibility-tablix-data-region-report-builder.md)   
  [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
   
   

@@ -13,13 +13,13 @@ ms.reviewer: saurkumar
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  Sparklines and data bars are small, spare charts that convey a lot of information with little extraneous detail in a paginated report. For more information about them, see [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs).  
+  Sparklines and data bars are small, spare charts that convey a lot of information with little extraneous detail in a paginated report. For more information about them, see [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](sparklines-data-bars-report-builder.md).  
   
  In paginated reports, sparklines and data bars are most commonly placed in cells in a table or matrix. Sparklines usually display only one series each. Data bars can contain one or more data points. Both sparklines and data bars derive their impact from repeating the series information for each row in the table or matrix.  
   
 ## To add a sparkline or data bar to a table or matrix  
   
-1.  If you have not done so already, create a [table](/sql/reporting-services/report-design/tables-report-builder-and-ssrs) or [matrix](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs) with the data you want to display.  
+1.  If you have not done so already, create a [table](tables-report-builder.md) or [matrix](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs) with the data you want to display.  
   
 1.  Insert a column in your table or matrix. For more information, see [Insert or Delete a Column &#40;Power BI Report BuilderS&#41;](../../paginated-reports/report-design/insert-delete-column-report-builder.md).  
   
@@ -42,6 +42,6 @@ ms.reviewer: saurkumar
   
 ## Next steps  
  [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md) 
- [Align the Data in a Chart in a Table or Matrix &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/align-the-data-in-a-chart-in-a-table-or-matrix-report-builder-and-ssrs)  
+ [Align the Data in a Chart in a Table or Matrix &#40;Power BI Report Builder&#41;](align-data-chart-table-matrix-report-builder.md)  
   
   

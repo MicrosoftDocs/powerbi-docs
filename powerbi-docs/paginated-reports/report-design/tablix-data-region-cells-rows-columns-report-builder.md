@@ -13,7 +13,7 @@ ms.reviewer: saurkumar
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  To control how the rows and columns of a tablix data region display data in a paginated report, you must understand how to specify rows and columns for detail data, for group data, and for labels and totals. In many cases, you can use the default structures for a table, matrix, or list to display your data. For more information, see [Tables &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-report-builder-and-ssrs),  [Matrixes](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs), or [Lists](/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs) .  
+  To control how the rows and columns of a tablix data region display data in a paginated report, you must understand how to specify rows and columns for detail data, for group data, and for labels and totals. In many cases, you can use the default structures for a table, matrix, or list to display your data. For more information, see [Tables &#40;Power BI Report Builder&#41;](tables-report-builder.md),  [Matrixes](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs), or [Lists](/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs) .  
   
  A tablix data region displays detail data on detail rows and detail columns and grouped data on group rows and group columns. When you add row groups and column groups to a tablix data region, rows and columns on which to display the data are automatically added. You can manually add and remove rows and columns to customize a tablix data region and control the way your data displays in the report.  
   
@@ -82,10 +82,10 @@ ms.reviewer: saurkumar
   
  To remove rows and columns associated to a group, you can delete the group. When you delete a group, you have the choice between deleting the group definition only or deleting the group and all its associated rows and columns. By deleting just the group, you preserve the row and column layout on the data region. When you delete the group and its related rows and columns, you are deleting all static rows and columns (including group headers and footers) and dynamic rows and columns (including group instances) that are associated with that group.  
   
- For step-by-step instructions about adding or deleting rows and columns, see [Insert or Delete a Row &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/insert-or-delete-a-row-report-builder-and-ssrs) and [Insert or Delete a Column &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/insert-delete-column-report-builder.md).  
+ For step-by-step instructions about adding or deleting rows and columns, see [Insert or Delete a Row &#40;Power BI Report Builder&#41;](insert-delete-row-report-builder.md) and [Insert or Delete a Column &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/insert-delete-column-report-builder.md).  
   
 ## Understanding tablix cells  
- Tablix cells belong to one of four tablix areas: the tablix body, tablix row or tablix column group areas, or the tablix corner. Although each cell can potentially display any value in the dataset, the default function for each cell is determined by its location. For detailed information about tablix areas, see [Tablix Data Region Areas &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tablix-data-region-areas-report-builder-and-ssrs).  
+ Tablix cells belong to one of four tablix areas: the tablix body, tablix row or tablix column group areas, or the tablix corner. Although each cell can potentially display any value in the dataset, the default function for each cell is determined by its location. For detailed information about tablix areas, see [Tablix Data Region Areas &#40;Power BI Report Builder&#41;](tablix-data-region-report-builder.md).  
   
  By default, cells in tablix row and column group areas represent group members. Group members are organized into multiple tree structures in the report definition. The row group hierarchy expands horizontally. The column group hierarchy expands vertically. These cells are added automatically when you create a group, and display the unique values for a group at run time.  
   
@@ -103,11 +103,11 @@ ms.reviewer: saurkumar
   
  In the tablix body area, cells can only be merged horizontally. Merging cells vertically is not supported.  
   
- For more information, see [Merge Cells in a Data Region &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/merge-cells-in-a-data-region-report-builder-and-ssrs).  
+ For more information, see [Merge Cells in a Data Region &#40;Power BI Report Builder&#41;](merge-cells-data-region-report-builder.md).  
   
  You can split a cell that was previously merged. You can split cells horizontally across columns or vertically down rows. To split a cell into a block of cells, split the cell horizontally first, and then split vertically as many times as necessary.  
   
 ## Next steps  
- [Tablix Data Region &#40;Power BI Report Builder#41;](/sql/reporting-services/report-design/tablix-data-region-report-builder-and-ssrs)  
+ [Tablix Data Region &#40;Power BI Report Builder#41;](tablix-data-region-report-builder.md)  
   
   

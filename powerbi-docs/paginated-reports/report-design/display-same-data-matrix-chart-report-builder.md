@@ -15,7 +15,7 @@ ms.reviewer: saurkumar
 
   When you want to show the same data in a matrix and a chart in a paginated report, you must set properties on both data regions to specify the same dataset, and also the same expressions for filters, groups, sorts, and data.  
   
- Because both data regions will have the same ancestor for data (the report dataset), you can add an interactive sort button to the matrix that, when the user clicks it, changes the sort order for both the matrix and the chart. For more information, see [Add Interactive Sort to a Table or Matrix &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-interactive-sort-to-a-table-or-matrix-report-builder-and-ssrs).  
+ Because both data regions will have the same ancestor for data (the report dataset), you can add an interactive sort button to the matrix that, when the user clicks it, changes the sort order for both the matrix and the chart. For more information, see [Add Interactive Sort to a Table or Matrix &#40;Power BI Report Builder&#41;](add-interactive-sort-table-matrix-report-builder.md).  
   
  To use the matrix column group values as a legend for the chart, you must specify the colors for the series data on the chart, and then use the same colors as the fill colors for the background of the text boxes in the matrix cell that displays the group values. For more information, see [Specify Consistent Colors across Multiple Shape Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/specify-consistent-colors-across-multiple-shape-charts-report-builder.md).  
   

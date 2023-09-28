@@ -15,7 +15,7 @@ ms.reviewer: saurkumar
 
   Use a matrix to display grouped data and summary information in a paginated report. You can group data by multiple fields or expressions in row and column groups. Matrices provide functionality similar to crosstabs and pivot tables. At run time, as the report data and data regions are combined, a matrix grows horizontally and vertically on the page. Values in matrix cells display aggregate values scoped to the intersection of the row and column groups to which the cell belongs. You can format the rows and columns to highlight the data you want to emphasize. You can also include drilldown toggles that initially hide detail data; the user can then select the toggles to display more or less detail as needed.  
   
- After your initial design, you can continue to develop a matrix to improve the viewing experience for the user. For more information, see [Controlling the Tablix Data Region Display on a Report Page &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/controlling-the-tablix-data-region-display-on-a-report-page).  
+ After your initial design, you can continue to develop a matrix to improve the viewing experience for the user. For more information, see [Controlling the Tablix Data Region Display on a Report Page &#40;Power BI Report Builder&#41;](control-tablix-data-region-display-report-page.md).  
   
  To quickly get started with matrices, see [Tutorial: Creating a Matrix Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-creating-a-matrix-report-report-builder).  
   
@@ -39,7 +39,7 @@ ms.reviewer: saurkumar
   
  ![Screenshot of a Preview for rendered matrix with expanded groups](media/basic-matrix-preview.gif "Screenshot of a Preview for rendered matrix with expanded groups")  
   
- The matrix you start with is a template based on the tablix data region. You can continue to develop your matrix design by adding nested or adjacent row groups or column groups, or even adding detail rows. For more information, see [Exploring the Flexibility of a Tablix Data Region &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs).  
+ The matrix you start with is a template based on the tablix data region. You can continue to develop your matrix design by adding nested or adjacent row groups or column groups, or even adding detail rows. For more information, see [Exploring the Flexibility of a Tablix Data Region &#40;Power BI Report Builder&#41;](explore-flexibility-tablix-data-region-report-builder.md).  
   
   
 ##  <a name="AddingParentGroupChild"></a> Adding a parent group or child group to a matrix  
@@ -53,7 +53,7 @@ ms.reviewer: saurkumar
   
 -   In the new column, a row group cell appears for the default data rows from the report dataset. Cells in the tablix body for this row are now members of the row group. If there are any column groups defined, cells that are in the columns are members of those column groups. Group indicators provide visual cues for the group membership of each cell.  
   
- To customize the group after it is created, use the **Tablix Group** dialog box. You can change the group name, and edit or add additional expressions to the group definition. To add or remove rows from the table, see [Insert or Delete a Row &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/insert-or-delete-a-row-report-builder-and-ssrs).  
+ To customize the group after it is created, use the **Tablix Group** dialog box. You can change the group name, and edit or add additional expressions to the group definition. To add or remove rows from the table, see [Insert or Delete a Row &#40;Power BI Report Builder&#41;](insert-delete-row-report-builder.md).  
   
  When the report runs, dynamic column headers expand right (or left, if the Direction property of the matrix is set to RTL) for as many columns as there are unique group values. Dynamic rows expand down the page. The data that appears in the tablix body cells are aggregates based on the intersections of row and column groups, as shown in the following figure.  
   
@@ -79,7 +79,7 @@ ms.reviewer: saurkumar
   
  ![Screenshot of a Preview of adjacent column groups](media/basic-matrix-adjacent-groups-preview.gif "Screenshot of a Preview of adjacent column groups")  
   
- To add a total column for an adjacent column group, select in the column group definition cell and use the **Add Total** command. A new static column is added next to the column group, with a default aggregate sum for every numeric field in the existing rows. To change the expression, manually edit the default aggregate, for example, `Avg([Sales])`. For more information, see [Add a Total to a Group or Tablix Data Region &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-a-total-to-a-group-or-tablix-data-region-report-builder-and-ssrs).  
+ To add a total column for an adjacent column group, select in the column group definition cell and use the **Add Total** command. A new static column is added next to the column group, with a default aggregate sum for every numeric field in the existing rows. To change the expression, manually edit the default aggregate, for example, `Avg([Sales])`. For more information, see [Add a Total to a Group or Tablix Data Region &#40;Power BI Report Builder&#41;](add-total-group-tablix-data-region-report-builder.md).  
   
   
 ## Next steps  

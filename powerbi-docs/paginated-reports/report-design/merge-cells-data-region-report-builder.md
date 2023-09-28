@@ -28,9 +28,9 @@ You can only merge cells within each area of a data region: corner, column heade
   
 ## Next steps  
 [Tablix Data Region](../../paginated-reports/report-design/render-data-regions-report-builder-service.md)  
- [Tables &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-report-builder-and-ssrs)   
- [Create a Matrix](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs)   
- [Create Invoices and Forms with Lists](/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs)  
+ [Tables &#40;Power BI Report Builder&#41;](tables-report-builder.md)   
+ [Create a Matrix](create-matrix-report-builder.md)   
+ [Create Invoices and Forms with Lists](create-invoices-forms-lists-report-builder.md)  
 [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
   
   

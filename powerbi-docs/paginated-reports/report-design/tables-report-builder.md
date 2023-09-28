@@ -43,7 +43,7 @@ ms.reviewer: saurkumar
   
  ![Screenshot of a Preview of table with bold column headers](media/basic-table-details-formatted-preview.png "Screenshot of a Preview of table with bold column headers")  
   
- The table that you start with is a template based on the tablix data region. You can enhance the design of your table by adding features that are supported by the underlying tablix data region. For more information, see [Controlling the Tablix Data Region Display on a Report Page &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/controlling-the-tablix-data-region-display-on-a-report-page). You can also continue to develop your table by adding row groups, column groups, and by adding or removing detail groups. For more information, see [Exploring the Flexibility of a Tablix Data Region &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs).  
+ The table that you start with is a template based on the tablix data region. You can enhance the design of your table by adding features that are supported by the underlying tablix data region. For more information, see [Controlling the Tablix Data Region Display on a Report Page &#40;Power BI Report Builder&#41;](control-tablix-data-region-display-report-page.md). You can also continue to develop your table by adding row groups, column groups, and by adding or removing detail groups. For more information, see [Exploring the Flexibility of a Tablix Data Region &#40;Power BI Report Builder&#41;](explore-flexibility-tablix-data-region-report-builder.md).  
   
 ### Adding totals for detail data  
  To add totals, select cells with numeric data, and then use the shortcut menu to automatically add labels and totals for detail data for numeric fields. You can also specify other labels and totals manually. The following figure shows a typical totals row that includes both automatic and manually specified totals:  
@@ -54,7 +54,7 @@ ms.reviewer: saurkumar
   
  ![Screenshot of a Preview with table and total row](media/basic-table-details-total-preview.gif "Screenshot of a Preview with table and total row")  
   
- For more information, see [Add a Total to a Group or Tablix Data Region &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-a-total-to-a-group-or-tablix-data-region-report-builder-and-ssrs).  
+ For more information, see [Add a Total to a Group or Tablix Data Region &#40;Power BI Report Builder&#41;](add-total-group-tablix-data-region-report-builder.md).  
   
 ##  <a name="AddingRowGroups"></a> Adding row groups to a table  
  Just as you can drag a field from the Report Data pane to a cell to display detail data, you can drag a field to the Grouping pane to add a group. For a table, drag the field to the Row Groups pane. After you add a group, the table automatically adds cells in new columns in the row group area in which to display the group values. For more information about areas, see [Tablix Data Region Areas &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-data-regions-report-builder-service.md).  
@@ -78,7 +78,7 @@ ms.reviewer: saurkumar
   
  ![Screenshot of a Preview, Table with Group Totals, last rows](media/basic-table-groups-totals-color-preview-bottom.gif "Screenshot of a Preview, Table with Group Totals, last rows")  
   
- For more information, see [Add a Total to a Group or Tablix Data Region &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-a-total-to-a-group-or-tablix-data-region-report-builder-and-ssrs).  
+ For more information, see [Add a Total to a Group or Tablix Data Region &#40;Power BI Report Builder&#41;](add-total-group-tablix-data-region-report-builder.md).  
   
 ##  <a name="RemovingHidingRows"></a> Removing or hiding detail rows  
  After you preview a table in a report, you may decide to remove existing detail rows. Or you might decide to hide them by default and allow the user to toggle between viewing more or less detail, as in a drilldown report.  
@@ -96,7 +96,7 @@ ms.reviewer: saurkumar
   
  ![Screenshot of a Preview, table with groups but no detail rows](media/basic-table-groups-no-details-preview.gif "Screenshot of a Preview, table with groups but no detail rows")  
   
- To add or remove rows from the table, see [Insert or Delete a Row &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/insert-or-delete-a-row-report-builder-and-ssrs).  
+ To add or remove rows from the table, see [Insert or Delete a Row &#40;Power BI Report Builder&#41;](insert-delete-row-report-builder.md).  
   
  You can also hide the detail rows when the report is initially viewed. To do so, you can create a drilldown report, in which only the parent group data is displayed. For each inner group (including the details group), add a visibility toggle to the grouping cell of the containing group. For example, for the details group, add a toggle to the text box that displays the order number group value. For the order number group, add a toggle to the text box that displays the date group value. The following figure shows the row for September 01, 2001, expanded to display the first few orders.  
   
