@@ -196,5 +196,7 @@ When you open a Power BI report in OneDrive or SharePoint the data is stored in 
 
 ### Collaborating on reports 
 
-When collaborating on reports with other coauthors, the best practice is to store files in a SharePoint document library where all coauthors have access. This allows all collaborators to open the report in Power BI Desktop directly from SharePoint, make edits, and easily save changes to the file in SharePoint. When files are stored in an individual’s OneDrive library other coauthors won’t be able to save changes to the OneDrive location unless they have edit access to the folder of the OneDrive file. If sharing a report with a colleague is mainly for viewing purposes either OneDrive or SharePoint is a viable option. Once the ability to Open in App on a shared link is released, users will be able to make and save edits to reports stored in either OneDrive or SharePoint through taking the open in app action.  
+When collaborating on reports with other coauthors, the best practice is to store files in a **SharePoint** document library where all coauthors have access. This allows all collaborators to open the report in Power BI Desktop directly from SharePoint, make edits, and easily save changes to the file in SharePoint. 
+
+When files are stored in an individual’s **OneDrive** library other coauthors won’t be able to save changes to the OneDrive location unless they have edit access to the folder of the OneDrive file. If sharing a report with a colleague is mainly for viewing purposes either OneDrive or SharePoint is a viable option. Once the ability to **Open in App** on a shared link is released, users will be able to make and save edits to reports stored in either OneDrive or SharePoint through taking the open in app action.  
 
