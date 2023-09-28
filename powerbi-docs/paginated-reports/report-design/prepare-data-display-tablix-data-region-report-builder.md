@@ -25,7 +25,7 @@ ms.reviewer: saurkumar
 =IIF(Fields!Size.Value IS NOTHING,"Null",Fields!Size.Value)  
 ```  
   
- For more information about eliminating nulls in your data before retrieving the data from a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] data source using [!INCLUDE[tsql](../../includes/tsql-md.md)] queries, see [NULL and UNKNOWN (Transact-SQL)](../../t-sql/language-elements/null-and-unknown-transact-sql.md).  
+ For more information about eliminating nulls in your data before retrieving the data from a SQL Server data source using Transact-SQL queries, see [NULL and UNKNOWN (Transact-SQL)](/sql/t-sql/language-elements/null-and-unknown-transact-sql).  
   
 ## Handling null field names  
  Testing for null values in an expression is fine as long as the field itself exists in the query result set. From custom code, you can test whether the field itself is present in the collection fields returned from the data source at run time. For more information, see [Dataset Fields Collection References &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/built-in-collections-dataset-fields-collection-references-report-builder.md).  

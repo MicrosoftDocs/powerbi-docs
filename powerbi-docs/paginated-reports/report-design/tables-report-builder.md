@@ -19,9 +19,7 @@ ms.reviewer: saurkumar
   
  To quickly get started with tables, see [Tutorial: Creating a Basic Table Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-creating-a-basic-table-report-report-builder) or [Create a Basic Table Report &#40;SSRS Tutorial&#41;](/sql/reporting-services/create-a-basic-table-report-ssrs-tutorial).  
   
-> [!NOTE]  
->  You can publish tables separately from a report as report parts. Read more about [Report Parts](/sql/reporting-services/report-design/report-parts-report-builder-and-ssrs). However, report parts are discontinued starting in SQL Server Reporting Services 2022 and Power BI Report Server.
-  
+ 
   
 ##  <a name="AddingTable"></a> Adding a table to display detail data  
  Add a table to the design surface from the Insert tab on the ribbon. You can add a table by using the Table or Matrix Wizard, which includes creating a data source connection and dataset and configuring the table, or a table based on the table template, which you configure manually.  

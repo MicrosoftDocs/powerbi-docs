@@ -23,7 +23,7 @@ Cells in each area have a distinct function. You add cells to the tablix body ar
   
 On the design surface, dotted lines denote the four areas of a selected tablix data region. The following figure shows the areas for a tablix region with nested row groups based on category and subcategory, nested column groups based on geography and country/region, and an adjacent column group based on year.  
   
- ![Screenshot of a Tablix data region areas](/media/tablix-areas.gif "Screenshot of a Tablix data region areas")  
+ ![Screenshot of a Tablix data region areas](media/tablix-areas.gif "Screenshot of a Tablix data region areas")  
   
  The following list describes each area:  
   

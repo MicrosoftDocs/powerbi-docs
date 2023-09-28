@@ -19,8 +19,6 @@ ms.reviewer: saurkumar
   
  To quickly get started with matrices, see [Tutorial: Creating a Matrix Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-creating-a-matrix-report-report-builder).  
   
-> [!NOTE]  
->  You can publish lists separately from a report as report parts. Read more about [Report Parts (Power BI Report Builder)](/sql/reporting-services/report-design/report-parts-report-builder-and-ssrs). However, report parts are discontinued starting in SQL Server Reporting Services 2022 and Power BI Report Server.
   
 ##  <a name="AddingMatrix"></a> Adding a matrix to your report  
  Add a matrix to the design surface from the Insert tab on the ribbon.   

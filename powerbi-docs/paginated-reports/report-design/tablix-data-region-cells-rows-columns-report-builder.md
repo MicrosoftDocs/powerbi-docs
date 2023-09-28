@@ -29,7 +29,7 @@ ms.reviewer: saurkumar
 |Icon|Description|  
 |----------|-----------------|  
 |![Screenshot of a Row handle with 3 parallel lines for details row](media/icon-tablix-details-row.gif "Screenshot of a Row handle with 3 parallel lines for details row")|Only the details group on the row group hierarchy|  
-|![Screenshot of a Row handle with details row and one outer group](media/icon-tablix-group-details.gif.gif "Screenshot of a Row handle with details row and one outer group")|One outer group and the child details group|  
+|![Screenshot of a Row handle with details row and one outer group](media/icon-tablix-group-details.gif "Screenshot of a Row handle with details row and one outer group")|One outer group and the child details group|  
 |![Screenshot of a Two parallel brackets showing nested groups](media/icon-tablix-nested-group-no-details.gif "Screenshot of a Two parallel brackets showing nested groups")|One outer group, one inner group; no details group|  
 |![Screenshot of a 2 brackets & 3 stacked lines for nested & details](media/icon-tablix-nested-group-details.gif "Screenshot of a 2 brackets & 3 stacked lines for nested & details")|One outer group, one inner group, and the child details group|  
 |![Screenshot of a One outer group with footer row, one inner group](media/icon-tablix-nested-group-parent-footer.gif "Screenshot of a One outer group with footer row, one inner group")|One outer group with a footer row for totals and one inner group|  
@@ -108,6 +108,6 @@ ms.reviewer: saurkumar
  You can split a cell that was previously merged. You can split cells horizontally across columns or vertically down rows. To split a cell into a block of cells, split the cell horizontally first, and then split vertically as many times as necessary.  
   
 ## Next steps  
- [Tablix Data Region &#40;Power BI Report Builder#41;](../../reporting-services/report-design/tablix-data-region-report-builder-and-ssrs.md)  
+ [Tablix Data Region &#40;Power BI Report Builder#41;](/sql/reporting-services/report-design/tablix-data-region-report-builder-and-ssrs)  
   
   
