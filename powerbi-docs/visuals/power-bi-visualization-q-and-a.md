@@ -2,12 +2,12 @@
 title: Create a Q&A visual in a report
 description: Learn how to create and format a Q&A visual in a report in Power BI Desktop or the Power BI service.
 author: maggiesMSFT
-ms.author: maggies
+ms.author: mihart
 ms.reviewer: rien
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 07/27/2023
+ms.date: 09/27/2023
 ms.custom: sample-salesandmarketingsample
 ---
 
@@ -15,9 +15,9 @@ ms.custom: sample-salesandmarketingsample
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-The Q&A visual allows users to ask natural language questions and get answers in the form of a visual. *Consumers* can use the Q&A functionality to quickly get answers to their data. *Designers* can use the Q&A features to quickly create visuals. If you're a report designer, this article is for you. You can double-click anywhere on a report and use natural language to get started.
+The Q&A visual allows users to ask natural language questions and get answers in the form of a visual. Business users can use the Q&A functionality to quickly get answers from their report data. *Designers* can use the Q&A features to quickly create visuals. If you're a report designer, this article is for you. You can double-click anywhere on a report and use natural language to get started.
 
-In this article, you create, format, and customize a Q&A visual. This visual type supports themes and other default formatting options available in Power BI. After you create the visual, it behaves like any other Power BI visual and supports cross-filtering, cross-highlighting, and bookmarks. 
+In this article, you create, format, and customize a Q&A visual. This visual type supports themes and other default formatting options available in Power BI. After you create the visual and save the report, the Q&A visual is available to your report users. Report users use the Q&A visual to ask questions about the data in the report, and see the answers to those questions in the form of charts and graphs. The one Q&A visual can be used over and over again. If the end user has edit permissions, they can save the charts and graphs as standalone visuals in the report. If the end user doesn't have edit permissions, they can use the Q&A visual to explore the report data but can't save the answers to their questions (in the form of charts and graphs) to the report. The Q&A visual behaves like any other Power BI visual and supports cross-filtering, cross-highlighting, and bookmarks. 
 
 The following demonstration video shows how to ask questions and use suggestions with the Q&A visual in Power BI. When Power BI successfully interprets the _question_, it displays the corresponding data as the _answer_. When you select a column or data point in the Q&A visual, Power BI cross-highlights and cross-filters the related data in other visuals in the report.
 
@@ -71,7 +71,7 @@ This tutorial uses the Sales and Marketing Sample in the Power BI service.
 ---
 
 > [!NOTE]
-> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+> If you want to share your report with a colleague, you both need to have individual Power BI paid licenses. If both parties don't have individual Power BI paid licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Create a Q&A visual with a suggested question
 
