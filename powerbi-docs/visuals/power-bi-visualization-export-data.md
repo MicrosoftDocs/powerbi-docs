@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/19/2022
+ms.date: 09/28/2023
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY, sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-To see the data that's used to create a visual, [you can display that data in Power BI](/power-bi/consumer/end-user-show-data.md), or export it to Excel. This article shows you how to **export to Excel**. Data can be exported to Excel from a Power BI dashboard tile and from a report visual.
+To see the data that's used to create a visual, [you can display that data in Power BI](../consumer/end-user-show-data.md), or export it to Excel. This article shows you how to **export to Excel**. Data can be exported to Excel from a Power BI dashboard tile and from a report visual.
 
 :::image type="content" source="media/power-bi-visualization-export-data/power-bi-introduction.png" alt-text="Power BI service showing dropdown for More actions (...).":::
 
@@ -42,13 +42,13 @@ Watch Will export the data from one of the visualizations in a report, save it a
 
 ## Data is protected when it's exported out of Power BI
 
-Report owners can classify and label reports using [sensitivity labels](/power-bi/enterprise/service-security-data-protection-overview.md) from Microsoft Purview Information Protection. If the sensitivity label has protection settings, Power BI will apply these protection settings when exporting report data to Excel, PowerPoint, or PDF files. Only authorized users will be able to open protected files.
+Report owners can classify and label reports using [sensitivity labels](../enterprise/service-security-data-protection-overview.md) from Microsoft Purview Information Protection. If the sensitivity label has protection settings, Power BI will apply these protection settings when exporting report data to Excel, PowerPoint, or PDF files. Only authorized users will be able to open protected files.
 
-Security and Power BI administrators can use [Microsoft Defender for Cloud Apps](/power-bi/enterprise/service-security-data-protection-overview.md) to monitor user access and activity, perform real-time risk analysis, and set label-specific controls. For example, organizations can use Microsoft Defender for Cloud Apps to configure a policy that prevents users from downloading sensitive data from Power BI to unmanaged devices.
+Security and Power BI administrators can use [Microsoft Defender for Cloud Apps](../enterprise/service-security-data-protection-overview.md) to monitor user access and activity, perform real-time risk analysis, and set label-specific controls. For example, organizations can use Microsoft Defender for Cloud Apps to configure a policy that prevents users from downloading sensitive data from Power BI to unmanaged devices.
 
 ## Export data from a Power BI dashboard
 
-1. Open a [dashboard](/power-bi/create-reports/service-dashboards.md) in the Power BI service and select a tile with a visual.
+1. Open a [dashboard](../create-reports/service-dashboards.md) in the Power BI service and select a tile with a visual.
 
 1. From the upper right corner of the tile, open the **More options (...)** dropdown and select **Export to .csv**.
 
@@ -78,7 +78,7 @@ Exporting data from a report visual in Power BI Desktop is straightforward. When
 
 You have many more options when exporting data from a report visual in the Power BI service. To illustrate the different options, we've created a stacked column chart that includes:
 
-- A [hierarchy](/power-bi/consumer/end-user-drill.md) made up of **Country/Region** and **City**. With that hierarchy, we can drill down from **Country/Region** to **City**, and back up again.
+- A [hierarchy](../power-bi/consumer/end-user-drill.md) made up of **Country/Region** and **City**. With that hierarchy, we can drill down from **Country/Region** to **City**, and back up again.
 - A filter for **City**.
 - An aggregate for **Discount percent** (count was changed to average).
 
@@ -101,7 +101,7 @@ Select the option for **Summarized data** if you want to export data for what yo
 
 If the visual has filters applied, then the data you export will also be filtered. If your visual has aggregates (sum, average, and so on), the export will also be aggregated.
 
-For help understanding aggregates, see [Aggregates in Power BI](/power-bi/create-reports/service-aggregates.md).
+For help understanding aggregates, see [Aggregates in Power BI](../create-reports/service-aggregates.md).
 
 > [!NOTE]
 > In Power BI Desktop, you'll only have the option to export summarized data as a .csv file.
@@ -188,7 +188,7 @@ These considerations and limitations apply to Power BI Desktop and the Power BI 
 There are many considerations related to exporting to Excel. This is one of those features that report designers and Power BI administrators may disable for individuals or even for an entire organization. They do this to ensure that private data isn't exposed to the wrong audience.
 
 If you find that you can't use this feature, reach out to the report owner and your administrator to understand why you can't export data from a particular visual or from all visuals. It may be that this feature has been purposely disabled and perhaps they can  enable it for you.  Other times, there may be particular reasons an export does not work.  It could be related to permissions, data contents, data type, visual type, how the designer named the fields, and more. When contacting the report owner or administrator, refer them to these articles:
-[Admin tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings), [Row level security](/power-bi/enterprise/service-admin-rls.md), and [Data protection](/power-bi/enterprise/service-security-data-protection-overview.md).
+[Admin tenant settings](../admin/service-admin-portal-about-tenant-settings), [Row level security](/power-bi/enterprise/service-admin-rls.md), and [Data protection](../enterprise/service-security-data-protection-overview.md).
 
 - When you're exporting data to Excel, the speed of download of the generated workbook can vary depending on network bandwidth.
 
