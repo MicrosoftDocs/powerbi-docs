@@ -17,7 +17,7 @@ Power BI Q&A is free and available to all users. Use these links to find the art
 
 - [Use Q&A on a dashboard](../natural-language/end-user-q-and-a-tutorial.md). Every dashboard has a Q&A field in the upper left corner. Type a natural language question to explore your data.
 - [Create and save Q&A results to a dashboard or report](../visuals/power-bi-visualization-q-and-a.md). Report designers use Q&A to explore data and create visualizations in reports.
-- [Use a Q&A visual in a report](../visuals/power-bi-visualization-q-and-a.md). If a report creator has added a Q&A visual to a report, use and re-use that visual to explore your data. 
+- [Use a Q&A visual in a report](../visuals/power-bi-visualization-q-and-a.md). If a report creator has added a Q&A visual to a report, use and reuse that visual to explore your data. 
 - [Create a Q&A visual in a report](power-bi-tutorial-q-and-a.md) and share it with others. 
 - [Use Q&A in mobile apps](../consumer/mobile/tutorial-mobile-apps-ios-qna.md). Use the Q&A virtual assistant in iOS and the Q&A visual on Android devices. 
 - If you have edit permission, you can save your Q&A visualization results [on a dashboard](end-user-q-and-a-tutorial.md) or [in a report](../create-reports/power-bi-visualization-introduction-to-q-and-a.md).
@@ -85,7 +85,7 @@ You can integrate natural language in your reports in various ways. For more inf
 
 [Use Q&A to explore a dashboard](../natural-language/end-user-q-and-a-tutorial.md). Every dashboard has a Q&A field in the upper left corner. Type a natural language question to explore your data.
 
-[Use a Q&A visual in a report](../visuals/power-bi-visualization-q-and-a.md). If a report creator has added a Q&A visual to a report, use and re-use that visual to explore your data. 
+[Use a Q&A visual in a report](../visuals/power-bi-visualization-q-and-a.md). If a report creator has added a Q&A visual to a report, use and reuse that visual to explore your data. 
 
 [Create and save Q&A results to a dashboard or report](../visuals/power-bi-visualization-q-and-a.md). Report designers use Q&A to explore data and create visualizations in reports.
 

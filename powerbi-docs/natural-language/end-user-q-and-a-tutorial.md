@@ -15,7 +15,7 @@ LocalizationGroup: Ask questions of your data
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Q&A is available throughout Power BI, and this article focuses on using Q&A on a dashboard. We'll import a sample and use Q&A to explore our data and pin interesting findings to our dashboard.
+Q&A is available throughout Power BI, and this article focuses on using Q&A on a dashboard. We import a sample and use Q&A to explore our data and pin interesting findings to our dashboard.
 
 ## Prerequisites  
 
@@ -24,14 +24,14 @@ Q&A is available throughout Power BI, and this article focuses on using Q&A on a
 
 - Open the Power BI service in a browser.
 
-- [Download and open the Retail analysis sample](#import-the-sample-in-the-power-bi-service)
+- [Download and open the Retail analysis sample.](#import-the-sample-in-the-power-bi-service)
 
 
 ## Import the sample in the Power BI service
 
 1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation pane.
 
-1. On the **Learning center** page, under **Sample reports**, scroll until you see the **Retail Analysis Sample**.
+1. On the **Learning center** page, under **Sample reports**, scroll until you see the **Retail Analysis Sample.**
 
 1. Select the sample. It opens in Reading mode.
 
@@ -48,7 +48,7 @@ In the Power BI service (app.powerbi.com), a dashboard contains tiles pinned fro
 
 ![Screenshot of the Power BI service, highlighting the more options icon and the See related content option.](media/end-user-q-and-a-tutorial/power-bi-view-related.png)
 
-When you type a question, Power BI looks for the best answer using any dataset that has a tile on that dashboard. If all the tiles are from *datasetA*, then your answer will come from *datasetA*. If there are tiles from *datasetA* and *datasetB*, then Q&A searches for the best answer from those two datasets.
+When you type a question, Power BI looks for the best answer using any dataset that has a tile on that dashboard. If all the tiles are from *datasetA*, then your answer comes from *datasetA*. If there are tiles from *datasetA* and *datasetB*, then Q&A searches for the best answer from those two datasets.
 
 > [!TIP]
 > Be careful. If you only have one tile from *datasetA* and you remove it from your dashboard, Q&A will no longer have access to *datasetA*.
@@ -74,7 +74,7 @@ Don't see the Q&A box? See [Considerations and troubleshooting](../consumer/end-
 
 ## Use Q&A on a dashboard in the Power BI service
 
-The Q&A field is where you type your question using natural language. It's located in the upper-left corner of your dashboard. Q&A recognizes the words you type and figures out where, and in which dataset, to find the answer. [Q&A also helps you form your question with auto-completion, restatement, and other textual and visual aids](q-and-a-intro.md). 
+The Q&A field is where you type your question using natural language. It's located in the upper-left corner of your dashboard. Q&A recognizes the words you type and figures out where, and in which dataset, to find the answer. [Q&A also helps you form your question with autocompletion, restatement, and other textual and visual aids](q-and-a-intro.md). 
 
 Let's try it out. 
 
