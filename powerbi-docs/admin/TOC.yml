@@ -16,33 +16,25 @@
   - name: System administration
     expanded: false
     items:
-    - name: Manage Power BI Desktop sign-in form
-      href: desktop-admin-sign-in-form.md   
     - name: About the admin portal
       href: /fabric/admin/admin-center
     - name: Manage Power BI visuals admin settings
-      href: organizational-visuals.md           
-    - name: Service URL reference
-      href: power-bi-allow-list-urls.md     
-    - name: Share metadata with Microsoft 365 services
-      href: admin-share-power-bi-metadata-microsoft-365-services.md
+      href: /fabric/admin/organizational-visuals         
     - name: Find where data is stored
       href: /fabric/admin/find-fabric-home-region 
     - name: Configure Multi-Geo support for Power BI Premium
-      href: /fabric/admin/service-admin-premium-multi-geo.md           
+      href: /fabric/admin/service-admin-premium-multi-geo        
     - name: Move between regions
       href: /power-bi/support/service-admin-region-move
     - name: Track service health
       href: /power-bi/support/service-admin-health
     - name: Find users that have signed in
-      href: service-admin-access-usage.md
-    - name: Track user activities
-      href: service-admin-auditing.md
+      href: /fabric/admin/service-admin-access-usage
   - name: Tenant settings
     expanded: false
     items:
     - name: About tenant settings
-      href: service-admin-portal-about-tenant-settings.md
+      href: /fabric/admin/tenant-settings-index
     - name: Tenant settings list
       expanded: false
       items:
@@ -104,4 +96,4 @@
     expanded: false
     items:
     - name: Notifications
-      href: service-admin-premium-capacity-notifications.md
+      href: /fabric/admin/service-admin-premium-capacity-notifications
