@@ -6,7 +6,7 @@ ms.author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 09/26/2023
+ms.date: 09/28/2023
 ms.custom: video-qMf7OLJfCz8
 LocalizationGroup: Ask questions of your data
 ---

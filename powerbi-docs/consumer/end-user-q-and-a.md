@@ -7,7 +7,7 @@ ms.reviewer: mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 09/11/2023
+ms.date: 09/28/2023
 LocalizationGroup: Ask questions of your data
 ---
 # Q&A for Power BI business users

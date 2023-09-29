@@ -7,7 +7,7 @@ ms.reviewer: rien
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 09/27/2023
+ms.date: 09/28/2023
 ms.custom: sample-salesandmarketingsample
 ---
 
