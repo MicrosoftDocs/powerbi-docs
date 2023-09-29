@@ -781,6 +781,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-q-and-a-tutorial.md",
+            "redirect_url": "/power-bi/natural-language/end-user-q-and-a-tutorial.md",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-getting-started-with-color-formatting-and-axis-properties.md",
             "redirect_url": "/power-bi/visuals/service-getting-started-with-color-formatting-and-axis-properties",
             "redirect_document_id": true
@@ -1221,9 +1226,14 @@
         },
         {
             "source_path": "powerbi-docs/service-cortana-answer-cards.md",
-            "redirect_url": "/power-bi/create-reports/power-bi-tutorial-q-and-a",
+            "redirect_url": "/power-bi/natural-language/power-bi-tutorial-q-and-a",
             "redirect_document_id": false
         },
+        {
+            "source_path": "powerbi-docs/create-reports/power-bi-tutorial-q-and-a.md",
+            "redirect_url": "/power-bi/natural-language/power-bi-tutorial-q-and-a",
+            "redirect_document_id": false
+        },      
         {
             "source_path": "powerbi-docs/service-cortana-intro.md",
             "redirect_url": "/power-bi/create-reports/power-bi-tutorial-q-and-a",
