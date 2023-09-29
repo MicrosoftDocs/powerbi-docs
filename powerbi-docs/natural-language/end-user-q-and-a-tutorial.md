@@ -91,7 +91,7 @@ Let's try it out.
 
 1. You can select any of these options to add them to the question box and then refine the question to find a specific answer.
 
-    :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-results.png" alt-text="Screenshot shows Q&A with a query.":::
+   :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-results.png" alt-text="Screenshot shows Q&A with a query.":::
 
 1. If you're unsure what type of questions to ask or terminology to use, expand **Show all suggestions** or look through the other visuals in the report. These techniques get you familiar with the terms and content of the dataset.
 
@@ -112,7 +112,7 @@ Let's try it out.
 
 1. Don't like the default visualization that Power BI Q&A chose? Edit the natural language question to include the visualization type that you'd prefer.
 
-:::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-specify.png" alt-text="Screenshot shows Q&A visual with as a column chart added to the question.":::
+    :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-specify.png" alt-text="Screenshot shows Q&A visual with as a column chart added to the question.":::
 
 
 1. When you're happy with the result, pin the visualization to a dashboard by selecting the pin icon in the top right corner. If the dashboard was shared with you, or is part of an app, you might not be able to pin.
