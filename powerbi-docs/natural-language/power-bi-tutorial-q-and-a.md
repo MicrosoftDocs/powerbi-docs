@@ -106,5 +106,5 @@ At the current time, Power BI Q&A only supports answering natural language queri
 
 - [Q&A basics](../consumer/end-user-q-and-a.md)
 - [Use a Q&A visual on a dashboard](end-user-q-and-a-tutorial.md)
-- [Convert a Q&A visual into a standalone visual in a report](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md#convert-your-q&a-visual-into-a-standard-visual)
+- [Convert a Q&A visual into a standalone visual in a report](../visuals/power-bi-visualization-q-and-a?tabs=powerbi-desktop#convert-your-qa-visual-into-a-standard-visual#convert-your-q&a-visual-into-a-standard-visual)
 - [Pin a tile to the dashboard from Q&A](../create-reports/service-dashboard-pin-tile-from-q-and-a.md)

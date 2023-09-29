@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.search.form: Visualization types in Power BI
 ms.topic: conceptual
-ms.date: 09/27/2022
+ms.date: 09/28/2022
 ms.custom: retail-analysis-sample-PBIX
 LocalizationGroup: Visualizations
 ---

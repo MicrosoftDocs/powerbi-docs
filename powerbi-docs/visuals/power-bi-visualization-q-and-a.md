@@ -21,7 +21,7 @@ In this article, you create, format, and customize a Q&A visual. This visual typ
 
 The following demonstration video shows how to ask questions and use suggestions with the Q&A visual in Power BI. When Power BI successfully interprets the _question_, it displays the corresponding data as the _answer_. When you select a column or data point in the Q&A visual, Power BI cross-highlights and cross-filters the related data in other visuals in the report.
 
-![Demonstration that shows how to use the Q&A visual in Power BI.](media/power-bi-visualization-q-and-q/qna-visual-walkthrough.gif)
+![Demonstration that shows how to use the Q&A visual in Power BI.](media/power-bi-visualization-q-and-a/qna-visual-walkthrough.gif)
 
 If you're looking for more background about Q&A in Power BI, see [Introduction to Power BI Q&A](../natural-language/q-and-a-intro.md).
 

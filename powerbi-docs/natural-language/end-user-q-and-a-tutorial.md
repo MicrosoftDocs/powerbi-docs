@@ -70,7 +70,7 @@ Once you're familiar with the data, head back to the dashboard and place your cu
 
 :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-suggestion.png" alt-text="Screenshot shows the Q&A screen with suggested questions.":::
 
-Don't see the Q&A box? See [Considerations and troubleshooting](../consumer/end-user-q-and-a.md#considerations-and-troubleshooting) in the **Q&A for for Power BI business users** article. 
+Don't see the Q&A box? See [Considerations and limitations](../consumer/end-user-q-and-a.md#considerations-and-limitations) in the **Q&A for for Power BI business users** article. 
 
 ## Use Q&A on a dashboard in the Power BI service
 
@@ -121,7 +121,7 @@ Let's try it out.
 
 
 
-## Considerations and troubleshooting
+## Considerations and limitations
 
 - If you've connected to a dataset using a live connection or gateway, Q&A needs to be [enabled for that dataset](../create-reports/service-q-and-a-direct-query.md).
 
