@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/12/2022
+ms.date: 09/29/2023
 ---
 
 # Power BI implementation planning: Information protection and data loss prevention
@@ -30,6 +30,10 @@ The focus for this set of articles includes:
 - **What:** An overview of what the end-to-end process involves.
 - **Who:** Which teams participate in the end-to-end process.
 - **Prerequisites:** The things that need to be in place before the information protection and DLP capabilities can be enabled for Power BI.
+
+
+> [!IMPORTANT]
+> The **Power BI administrator** role has been renamed. The new name of the role is **Fabric administrator**.
 
 ## Protect organizational data
 
