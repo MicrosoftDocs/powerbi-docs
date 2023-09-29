@@ -330,7 +330,7 @@ When working with DirectQuery for Power BI datasets and Analysis Services, consi
     For more information on using date columns versus date hierarchies, see [apply auto date or time in Power BI Desktop](desktop-auto-date-time.md).
 
 * The maximum length of a chain of models is three. Extending beyond the chain length of three isn't supported and results in errors.
-* A discourage chaining flag can be set on a model to prevent a chain from being created or extended. See Manage DirectQuery connections to a published dataset for more information.
+* A discourage chaining flag can be set on a model to prevent a chain from being created or extended. See [Manage DirectQuery connections to a published dataset](../connect-data/desktop-discourage-directquery-connections-to-dataset.md) for more information.
 * The connection to a Power BI dataset or Analysis Services model won't be shown in Power Query.
 
 The following **limitations** apply when working with DirectQuery for Power BI datasets and Analysis Services:
