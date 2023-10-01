@@ -60,7 +60,7 @@ Send a [Gateways - Update Datasource](/rest/api/power-bi/gateways/update-datasou
 To create an access token for Azure SQL, the app must have *Access Azure SQL DB and Data Warehouse* delegated permission to **Azure SQL Database** API on the Azure AD app registration configuration in the Azure portal.
 
 :::image type="content" source="media/rls-sso/api-permissions.png" alt-text="Screenshot of Azure AD app registration configuration settings in the Azure portal.":::
-Authenticate and acquire a token for the user from the [Azure AD V2 endpoint](https://login.microsoftonline.com/organizations/oauth2/v2.0/token) for the following scope: https://database.windows.net/.default
+Authenticate and acquire a token for the user from the [Azure AD V2 endpoint](https://login.microsoftonline.com/organizations/oauth2/v2.0/token) for the following scope: `https://database.windows.net/.default`
 
 See the following MSAL code samples for help:
 
