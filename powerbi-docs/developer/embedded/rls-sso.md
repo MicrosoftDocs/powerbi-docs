@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/07/2023
+ms.date: 09/07/2023
 ---
 
 # Embed a report with token-based identity (SSO)
