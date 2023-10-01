@@ -24,7 +24,7 @@ When generating the embed token, specify the identity of the user in Azure SQL b
 
 ## Set up token-based identity
 
-The token-based identity only works for DirectQuery models on a capacity connected to an Azure SQL Database that's configured to allow Azure AD authentication ([learn more about Azure AD authentication for Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity.
+The token-based identity only works for DirectQuery models on a capacity connected to an Azure SQL Database that's configured to allow Azure AD authentication. The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity. [Learn more about Azure AD authentication for Azure SQL Database](/azure/sql-database/sql-database-manage-logins).
 
 ### [Set up in portal](#tab/portal)
 
