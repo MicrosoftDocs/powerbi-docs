@@ -123,7 +123,8 @@ The following aren't supported for **Export to PDF**.  Either the **PDF** export
 * Visuals in a drilled down state are exported in their default state. 
 * The feature doesn't export any wallpaper you may have applied to the report. Since wallpaper isn't exported to the PDF, you should pay special attention to reports that use dark wallpaper. If the text in your report is light or white, it will be difficult to read in the export to PDF process since the dark wallpaper won't be exported with the rest of the report. 
 * All Power BI reports have a page margin when exported to PDF. That is, there will be a band of white space at the top and bottom of the exported file. 
-* Export to PDF is not currently supported for tenants in the China North region. 
+* Export to PDF is not currently supported for tenants in the China North region.
+* Exporting a Power BI report as PDF or PowerPoint is not supported when you enable Azure Private Link in Power BI.
 
 ## Next steps
 
