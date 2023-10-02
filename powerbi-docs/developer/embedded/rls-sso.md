@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/07/2023
+ms.date: 09/07/2023
 ---
 
 # Embed a report with token-based identity (SSO)
@@ -24,7 +24,7 @@ When generating the embed token, specify the identity of the user in Azure SQL b
 
 ## Set up token-based identity
 
-The token-based identity only works for DirectQuery models on a capacity connected to an Azure SQL Database that's configured to allow Azure AD authentication ([learn more about Azure AD authentication for Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity.
+The token-based identity only works for DirectQuery models on a capacity connected to an Azure SQL Database that's configured to allow Azure AD authentication. The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity. [Learn more about Azure AD authentication for Azure SQL Database](/azure/sql-database/sql-database-manage-logins).
 
 ### [Set up in portal](#tab/portal)
 
@@ -60,7 +60,7 @@ Send a [Gateways - Update Datasource](/rest/api/power-bi/gateways/update-datasou
 To create an access token for Azure SQL, the app must have *Access Azure SQL DB and Data Warehouse* delegated permission to **Azure SQL Database** API on the Azure AD app registration configuration in the Azure portal.
 
 :::image type="content" source="media/rls-sso/api-permissions.png" alt-text="Screenshot of Azure AD app registration configuration settings in the Azure portal.":::
-Authenticate and acquire a token for the user from the [Azure AD V2 endpoint](https://login.microsoftonline.com/organizations/oauth2/v2.0/token) for the following scope: https://database.windows.net/.default
+Authenticate and acquire a token for the user from the [Azure AD V2 endpoint](https://login.microsoftonline.com/organizations/oauth2/v2.0/token) for the following scope: `https://database.windows.net/.default`
 
 See the following MSAL code samples for help:
 
