@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Install and use apps
 ms.topic: how-to
-ms.date: 09/27/2023
+ms.date: 10/02/2023
 ms.custom: licensing support, intro-installation
 LocalizationGroup: Share your work
 ---
@@ -108,7 +108,7 @@ Apps have different layouts, visuals, colors, and options, but they all have mos
 
 1. Name of the app and last updated time. Select the dropdown arrow to look up the owner and Help contact.
 2. Select **Power BI** to return to [Home](end-user-home.md).
-3. Your action bar. 
+3. Your menu bar. 
 4. The report page canvas.
 5. The app navigation pane.  Below the name of the app is the list of content. This app has one report with six pages. Select a report page name to open it. We currently have the *Return rate* page open. 
 6. Select the arrow to expand the **Filters** pane.

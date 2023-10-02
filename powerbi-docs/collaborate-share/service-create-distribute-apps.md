@@ -8,7 +8,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 09/27/2023
+ms.date: 10/02/2023
 
 LocalizationGroup: Share your work
 ---
@@ -40,8 +40,8 @@ Your app consumers can't modify the contents of the app. They can interact with 
 ## Licenses for apps
 To create or update an app, you need a Power BI Pro or Premium Per User (PPU) license. For app *consumers*, there are two options.
 
-- **The workspace for this app is *not* in a Power BI Premium capacity**: All business users need Power BI Pro or Premium Per User (PPU) licenses to view your app. 
-- **The workspace for this app *is* in a Power BI Premium capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses in your organization can view app content. However, they can't copy the reports, or create reports based on the underlying datasets. Read [What is Power BI Premium?](../enterprise/service-premium-what-is.md) for details.
+- **If the workspace for this app is *not* in a Power BI Premium capacity**: All business users need Power BI Pro or Premium Per User (PPU) licenses to view your app. 
+- **If the workspace for this app *is* in a Power BI Premium capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses in your organization can view app content. However, they can't copy the reports, or create reports based on the underlying datasets. Read [What is Power BI Premium?](../enterprise/service-premium-what-is.md) for details.
 
 ## Create and publish your app
 When the content in your workspace is ready, you can start the publishing process. You decide how many different audience groups you need. Then you choose which content you want to publish to each audience. You can create up to ten audience groups in one app. 
@@ -60,7 +60,7 @@ When the content in your workspace is ready, you can start the publishing proces
 
 #### Allow saving a copy of a report
 
-Before you leave the **Setup** tab, you can decide if you want to allow app users who have build permissions to save copies of reports to their workspace. Once they save the reports, app users can customize the reports copies to meet their needs. 
+Before you leave the **Setup** tab, you can decide if you want to allow app users who have build permissions to save copies of reports to their workspace. Once they save the reports, app users can customize their report copies to meet their needs. 
 
 1. Expand **Advanced settings** and select **Allow users to make a copy of the reports in this app**.
 
