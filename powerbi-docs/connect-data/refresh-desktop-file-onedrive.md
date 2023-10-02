@@ -106,7 +106,7 @@ When you save your changes to the Power BI Desktop file on OneDrive and you don'
 
 Datasets stored on OneDrive or SharePoint are set to **restrict updates** by default. If the dataset is set to restrict updates, then updates can only happen when the dataset owner manually refreshes the dataset, which can cause changes to Power BI files on OneDrive and SharePoint to not be reflected in the Power BI service. A dataset owner might run into an error message after updating a file in OneDrive or SharePoint. The dataset owner can fix the error by choosing to always manually refresh the dataset, or changing the dataset setting to **automatic updates**.
 
-If the dataset owner is unable to change the setting of the dataset to **automatic updates**, the tenant admin has likely enforced restricted updates across all datasets in the organization. To enable the dataset owner to change the setting, they must to contact their Fabric admin and request that the admin enable the **Dataset owners can choose to automatically update from files imported from OneDrive or SharePoint** setting.
+If the dataset owner is unable to change the setting of the dataset to **automatic updates**, the tenant admin has likely enforced restricted updates across all datasets in the organization. To enable the dataset owner to change the setting, they must contact their Fabric admin and request that the admin enable the **Dataset owners can choose to automatically update from files imported from OneDrive or SharePoint** setting.
 
 If the dataset owner has set up scheduled refresh on datasets, then the model will still refresh on schedule. However, the other contents of the report, such as visuals, will not refresh unless manual updates are made. 
 
