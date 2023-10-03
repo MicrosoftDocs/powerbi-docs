@@ -1,7 +1,7 @@
 ---
 title: "Add sparklines and data bars in a Power BI paginated report | Microsoft Docs"
 description: "Add sparklines and data bars in a paginated report."
-ms.date: 09/22/2023
+ms.date: 10/03/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -17,7 +17,7 @@ ms.reviewer: saurkumar
   
  In paginated reports, sparklines and data bars are most commonly placed in cells in a table or matrix. Sparklines usually display only one series each. Data bars can contain one or more data points. Both sparklines and data bars derive their impact from repeating the series information for each row in the table or matrix.  
   
-## To add a sparkline or data bar to a table or matrix  
+## Add a sparkline or data bar to a table or matrix  
   
 1.  If you have not done so already, create a [table](tables-report-builder.md) or [matrix](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs) with the data you want to display.  
   
@@ -38,7 +38,7 @@ ms.reviewer: saurkumar
   
 1.  In the **Category Groups** area, select the **Add Fields** plus sign (**+**), and then select the field whose values you want to group by.  
   
-     Typically for sparklines and data bars, you will not add a field to the **Series Group** area because you only want one series for each row.  
+     Typically for sparklines and data bars, you don't add a field to the **Series Group** area because you only want one series for each row.  
   
 ## Next steps  
  [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md) 
