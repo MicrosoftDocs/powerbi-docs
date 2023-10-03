@@ -13,10 +13,9 @@ ms.reviewer: saurkumar
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-In a paginated report, the detail data from a report dataset is specified as a group with no group expression. Add a detail group to an existing tablix data region when you want to display the detail data for a matrix, add back detail data that you have deleted from a table or list, or to add additional detail groups. For more information about groups, see [Understanding Groups &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/understand-groups-report-builder.md).  
+In a paginated report, the detail data from a report dataset is specified as a group with no group expression. Add a detail group to an existing tablix data region when you want to display the detail data for a matrix, add back detail data that you have deleted from a table or list, or add additional detail groups. For more information about groups, see [Understanding Groups &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/understand-groups-report-builder.md).  
   
-  
-## To add a details group to a tablix data region  
+## Add a details group to a tablix data region  
   
 1.  On the design surface, select anywhere in a tablix data region to select it. The Grouping pane displays the row and column groups for the selected data region.  
   
