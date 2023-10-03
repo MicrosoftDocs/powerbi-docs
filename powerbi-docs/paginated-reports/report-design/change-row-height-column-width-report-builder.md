@@ -1,7 +1,7 @@
 ---
 title: "Change row height or column width in a Power BI paginated report | Microsoft Docs"
-description: Learn about setting a a column width or a fixed row height with text box properties for rendered paginated reports in Power BI Report Builder. 
-ms.date: 09/25/2023
+description: Learn about setting a column width or a fixed row height with text box properties for rendered paginated reports in Power BI Report Builder. 
+ms.date: 10/03/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -20,7 +20,7 @@ ms.reviewer: saurkumar
  If a cell in a row or column contains a rectangle or data region, the minimum height and width of the cell is determined by the height and width of the contained item. For more information, see [Rendering Behaviors &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-behaviors-report-builder-service.md).  
   
   
-### To change row height by moving row handles  
+## Change row height by moving row handles  
   
 1.  In Design view, select anywhere in the tablix data region to select it. Gray row handles appear on the outside border of the tablix data region.  
   
@@ -28,7 +28,7 @@ ms.reviewer: saurkumar
   
 1.  Select to grab the edge of the row and move it higher or lower to adjust the row height.  
   
-### To change row height by setting cell properties  
+## Change row height by setting cell properties  
   
 1.  In Design view, select a cell in the table row.  
   
@@ -36,9 +36,9 @@ ms.reviewer: saurkumar
   
 1.  In the **Properties** pane that displays, modify the **Height** property, and then select anywhere outside the **Properties** pane.  
   
-     ![Screenshot of Properties Pane for selected table cell](media/cell-properties-pane.png "Screenshot of Properties Pane for selected table cell")  
+     ![Screenshot of Properties Pane for selected table cell.](media/cell-properties-pane.png "Screenshot of Properties Pane for selected table cell.")  
   
-### To prevent a row from automatically expanding vertically  
+## Prevent a row from automatically expanding vertically  
   
 1.  In Design view, select anywhere in the tablix data region to select it. Gray row handles appear on the outside border of the tablix data region.  
   
@@ -49,7 +49,7 @@ ms.reviewer: saurkumar
     > [!NOTE]  
     >  If you cannot see the Properties pane, from the **View** menu, select **Properties**.  
   
-### To change column width  
+## Change column width  
   
 1.  In Design view, select anywhere in the tablix data region to select it. Gray column handles appear on the outside border of the tablix data region.  
   
