@@ -1,7 +1,7 @@
 ---
 title: "Add, move, or delete a table, matrix, or list in a Power BI paginated report | Microsoft Docs"
 description: Arrange your table or matrix data regions in a paginated report by using the New Table Wizard or New Matrix Wizard in Power BI Report Builder. 
-ms.date: 09/22/2023
+ms.date: 10/03/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Add, move, or delete a table, matrix, or list in a Power BI paginated report (Power BI Report Builder)
+# Add, move, or delete a table, matrix, or list in a paginated report (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
