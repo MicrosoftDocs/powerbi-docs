@@ -49,7 +49,7 @@ The tablix body is located in the lower right corner (lower left for RTL layout)
   
  ![Screenshot of a Preview, Tablix corner, row & column groups, body.](media/tablix-areas-preview.gif "Screenshot of a Preview, Tablix corner, row & column groups, body")  
   
- The row group area displays two category group instances for Clothing and Components. The column group are displays a geography group instance for North America, with two nested country/region group instances for Canada (CA) and the United States (US). In addition, the adjacent column displays two year group instances for 2003 and 2004. The Total column row displays the row totals; the totals row that repeats with the category group shows subcategory totals, and the grand total row displays the category totals once for the data region.  
+ The row group area displays two category group instances for Clothing and Components. The column group displays a geography group instance for North America, with two nested country/region group instances for Canada (CA) and the United States (US). In addition, the adjacent column displays two year group instances for 2003 and 2004. The Total column row displays the row totals; the totals row that repeats with the category group shows subcategory totals, and the grand total row displays the category totals once for the data region.  
   
 ## Next steps  
  [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)   
