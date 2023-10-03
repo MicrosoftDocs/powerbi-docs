@@ -1,7 +1,7 @@
 ---
-title: "Change an item within a cell in a Power BI paginated report | Microsoft Docs"
+title: "Change an item in a cell in a Power BI paginated report | Microsoft Docs"
 description: Replace a non-container item, such as a text box, line, or image, in Power BI paginated reports with a new report item in Power BI Report Builder.
-ms.date: 09/25/2023
+ms.date: 10/03/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Change an item within a cell in a Power BI paginated report (Power BI Report Builder)
+# Change an item in a cell in a Power BI paginated report (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
@@ -19,8 +19,7 @@ In paginated reports, only a non-container item, such as a text box, line, or im
   
  By default, all cells in a table, matrix, or list data region contain a text box.  
   
-  
-## To change an item within a cell  
+## Change an item in a cell  
   
 -   On the **Insert** tab, in the **Data Regions** or **Report Items** group, select the item that you want to add to the report, and then select the report. The item is added to the report.  
   
