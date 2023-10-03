@@ -15,9 +15,9 @@ ms.reviewer: saurkumar
 
   In a paginated report, a data region displays data from a report dataset. Data regions include table, matrix, list, chart, and gauge. To nest one data region inside another, add each data region separately, and then drag the child data region onto the parent data region.  
   
- The simplest way to add a table or matrix data region to your report is to run the New Table or New Matrix Wizard. These wizards will guide you through the process of choosing a connection to a data source, arranging fields, and choosing the layout and style. The wizards are only available in Report Builder.  
+ The simplest way to add a table or matrix data region to your report is to run the New Table or New Matrix Wizard. These wizards guide you through the process of choosing a connection to a data source, arranging fields, and choosing the layout and style. The wizards are only available in Report Builder.  
   
-## To add a table or matrix to a report by using the new table or new matrix wizard  
+## Add a table or matrix to a report by using the new table or new matrix wizard  
   
 1.  On the **Insert** tab, select **Table** or **Matrix**, and then select **Table Wizard** or **Matrix Wizard**.  
   
@@ -27,7 +27,7 @@ ms.reviewer: saurkumar
   
 4.  On the **Run** tab, select **Design** to continue working on the report.  
   
-## To add a data region  
+## Add a data region  
   
 1.  On the **Ribbon**, in the **Data Regions** group, select the data region to add.  
   
@@ -35,7 +35,7 @@ ms.reviewer: saurkumar
   
 3.  Drag a report dataset field from the Report Data pane onto a data region cell. The data region is now bound to data from the report dataset.  
   
-## To select a data region  
+## Select a data region  
   
 -   For a tablix data region, right-click the corner handle. For a chart or gauge data region, select the data region.  
   
@@ -43,7 +43,7 @@ ms.reviewer: saurkumar
   
      For nested data regions, right-click in the nested data region, select **Select**, and then select the report item you want. To verify which report item is selected, use the Properties pane. The name of the selected item on the design surface appears in the toolbar of the Properties pane.  
   
-## To move a data region  
+## Move a data region  
   
 -   To move a data region, select the selection handle of the data region and drag it. Use snaplines to align it to existing report items.  
   
@@ -51,7 +51,7 @@ ms.reviewer: saurkumar
   
      Alternatively, use the arrow keys to move the selected data region on the design surface.  
   
-## To delete a data region  
+## Delete a data region  
   
 -   Select the data region, right-click in the data region, and then select **Delete**.  
   
