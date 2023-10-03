@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Change row height or column width in a Power BI paginated report (Power BI Report Builder)
+# Change row height or column width in a paginated report (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
