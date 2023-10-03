@@ -1,7 +1,7 @@
 ---
 title: "Add a total to a group or tablix in a Power BI paginated report | Microsoft Docs"
 description: Add totals in a tablix data region of a paginated report in Report Builder for a group or for the entire data region. 
-ms.date: 09/22/2023
+ms.date: 10/03/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -17,7 +17,7 @@ ms.reviewer: saurkumar
   
  After you add a total, you can change the default function Sum to a different aggregate function from the list of built-in report functions. For more information, see [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md). 
   
-## To add a total for an individual value in the tablix body area  
+## Add a total for an individual value in the tablix body area  
   
 -   In the tablix data region body area, right-click the cell where you want to add the total. The cell must contain a numeric field. Point to **Add Total**, and then select **Row** or **Column**.  
   
@@ -25,13 +25,13 @@ ms.reviewer: saurkumar
   
      If the tablix data region is a table, a row is automatically added.  
   
-## To add totals for a row group  
+## Add totals for a row group  
   
 -   In the tablix data region row group area, right-click a cell in the row group area for which you want totals, point to **Add Total**, and then select **Before** or **After**.  
   
      A new row outside the current group is added to the data region, and then a default total is added for each numeric field in the row.  
   
-## To add totals for a column group  
+## Add totals for a column group  
   
 -   In the tablix data region row group area, right-click a cell in the column group area for which you want totals, then point to **Add Total**, and select **Before** or **After**.  
   
