@@ -1,7 +1,7 @@
 ---
 title: "Align the data in a Power BI paginated report chart in a table or matrix | Microsoft Docs"
 description: Discover uses for paginated report sparklines and data bars in Report Builder. These small, simple charts convey a lot of information with the minimum amount of detail.
-ms.date: 09/26/2023
+ms.date: 10/03/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Align the data in a Power BI paginated report chart in a table or matrix (Power BI Report Builder)
+# Align the data in a paginated report chart in a table or matrix (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
