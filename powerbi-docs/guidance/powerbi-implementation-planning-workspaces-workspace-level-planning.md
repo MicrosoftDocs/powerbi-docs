@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/23/2023
+ms.date: 10/04/2023
 ---
 
 # Power BI implementation planning: Workspace-level workspace planning
@@ -339,42 +339,9 @@ Lastly, the examples show one workspace - _Quarterly Financials_ - but often it'
 
 ## Workspace domain
 
-As described earlier in this article, it's critical to have clarity on workspace [ownership](#workspace-ownership). That clarity is even more essential when responsibilities for creating and managing data are _decentralized_ among many departments and business units. Sometimes this approach is referred to as a _distributed_, _federated_, or _data mesh_ architecture.
+As described earlier in this article, it's critical to have clarity on workspace ownership. One way to further support workspace ownership in Fabric is with _domains_. A domain is a way to logically group multiple workspaces that have similar characteristics.
 
-One way to further support workspace ownership in Fabric is with _domains_. A [domain](/fabric/governance/domains) is a way to logically group multiple workspaces that have similar characteristics. For example, you might create a domain to group all of your sales workspaces together, and another domain for your finance workspaces.
-
-Here are two key advantages to domains.
-
-- They group similar workspaces into a single management boundary.
-- They help users find relevant data (for example, by using filters in the [OneLake data hub](/fabric/get-started/onelake-data-hub#display-only-data-items-belonging-to-a-particular-domain)).
-
-The following table lists several ways you might choose to organize similar workspaces.
-
-| **Method for organizing workspaces** | **Method for organizing workspaces** |
-|---|---|
-| By subject area/domain/content type | The _Finance_ domain includes each workspace related to finance content. |
-| By the team who owns and manages the content | The _Enterprise BI_ domain includes all workspaces that the team is directly responsible for managing. |
-| By organizational business unit | The _European division_ domain includes all workspaces that are related directly to the operations in Europe. |
-| By project | The _Subsidiary acquisition_ domain includes all workspaces for a highly sensitive project. |
-
-Here are some considerations when planning for Fabric domains.
-
-- **What's the best way to map each workspace to a domain?** Once a domain exists, each workspace may be assigned to only one domain (rather than multiple domains). You can reassign the domain in the workspace settings, or the admin portal, if you discover that you need to reorganize workspaces.
-- **Are there specific compliance needs or restrictions, such as geographic area?** Keep in mind that the geographic area for [data storage](powerbi-implementation-planning-tenant-setup.md#location-for-data-storage) is set for each capacity. Therefore, consider how workspaces are assigned to a domain and also to a capacity.
-- **Who are the domain administrators?** A domain administrator is authorized to manage an existing domain. When possible, assign domain administrator(s) who directly own and manage the content for the domain. The domain administrators should be experts who are familiar with internal, regional, and governmental regulations for the subject area. They should also be familiar with all internal governance and security requirements.
-- **How are domain contributors handled?** A domain contributor defines who can assign a workspace to an existing domain. If you allow the entire organization to assign workspaces to a domain, you'll need to frequently [audit](/fabric/governance/metadata-scanning-overview) the accuracy of the assigned groupings. If you allow only specific groups of users, or Fabric admins and domain admins, you'll have more control over how they're assigned.
-
-:::image type="icon" source="media/common/checklist.png" border="false":::
-
-**Checklist** - When planning for workspace domains, key decisions and actions include:
-
-> [!div class="checklist"]
-> - **Validate how content ownership works:** Ensure that you deeply understand how content ownership and management is happening throughout the organization. Factor that information into needs for grouping and managing workspaces.
-> - **Plan workspace domains:** Have discussions to plan how to best organize workspaces into domains. Confirm all key decisions with the Center of Excellence as well as your executive sponsor.
-> - **Decide how to handle domain contributors:** Consider which users should have permission to assign workspaces to each domain.
-> - **Educate Fabric administrators:** Ensure that your tenant administrators are familiar with how to create a domain, and how to manage domain administrators.
-> - **Educate domain administrators:** Ensure that your domain administrators understand their expectations for this role in managing a domain.
-> - **Create an auditing process:** On a regular basis, validate the assigned domain groupings are correct.
+For more information about planning for domains in your tenant, see [Workspace domains](powerbi-implementation-planning-workspaces-tenant-level-planning.md#workspace-domains).
 
 ## Workspace settings
 
