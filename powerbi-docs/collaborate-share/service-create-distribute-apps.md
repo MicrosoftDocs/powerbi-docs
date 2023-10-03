@@ -17,7 +17,7 @@ LocalizationGroup: Share your work
 
 In Power BI, you can create official packaged content, then distribute it to a broad audience as an *app*. You [create apps in *workspaces*](service-create-the-new-workspaces.md), where you can collaborate on Power BI content with your colleagues. Then you can publish the finished app to large groups of people in your organization. The [app consumer view](#app-consumer-view) section of this article outlines the app consumer experience in the Power BI service and in the Power BI mobile apps.
 
-:::image type="content" source="media/service-create-distribute-apps/power-bi-apps.png" alt-text="Screenshot of Power Bi Apps":::
+:::image type="content" source="media/service-create-distribute-apps/power-bi-apps.png" alt-text="Screenshot of Power BI Apps." lightbox="media/service-create-distribute-apps/power-bi-apps.png":::
 
 Here are the steps to publishing an app in power BI:
 
@@ -81,7 +81,7 @@ Also, before you leave the **Setup** tab, you can decide if you want users to ha
 
 1. Under **Access to hidden content**, slide the toggle to **On**.
 
-    :::image type="content" source="media/service-create-distribute-apps/access-hidden-content.png" alt-text="Screenshot showing turning on Access to hidden content. ":::
+    :::image type="content" source="media/service-create-distribute-apps/access-hidden-content.png" alt-text="Screenshot showing turning on Access to hidden content.":::
 
 1. Select **Next: [Add content](#add-content-to-the-app)**.
 

@@ -1,8 +1,8 @@
 ---
 title: Install and use apps with dashboards and reports in Power BI
 description: Learn how to get apps from the Power BI apps marketplace and direct links, open apps from the navigation pane, and update apps in the Power BI service.
-author: mihart
-ms.author: mihart
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
@@ -47,11 +47,11 @@ You can find and install apps from the Power BI apps marketplace. In the apps ma
 2. Select **Apps > Get apps**.  
    If you're brand new to Power BI, your App page looks like the following example. If you already have apps installed, select **Get apps** from the upper right corner of the page.
 
-    :::image type="content" source="./media/end-user-app-view/power-bi-get-apps.png" alt-text="Screenshot of the Apps page on the navigation pane.":::
+    :::image type="content" source="./media/end-user-app-view/power-bi-get-apps.png" alt-text="Screenshot of the Apps page on the navigation pane." lightbox="./media/end-user-app-view/power-bi-get-apps.png":::
 
 3. The Power BI apps marketplace opens.
 
-   :::image type="content" source="./media/end-user-app-view/power-bi-app-marketplace.png" alt-text="Screenshot of the Power BI apps marketplace.":::
+   :::image type="content" source="./media/end-user-app-view/power-bi-app-marketplace.png" alt-text="Screenshot of the Power BI apps marketplace." lightbox="./media/end-user-app-view/power-bi-app-marketplace.png":::
 
    Three tabs are available for you to use:
    * **All apps** - Browse both template apps and all the organizational apps that are available to you. Template apps are distinguished by the shopping bag icon in the upper right corner of their tiles.
@@ -102,7 +102,7 @@ Still a little confused by the difference between dashboards and reports?  Learn
 
 4. The **Sales and Marketing Sample** app opens to a report. The layout might look different if your app opens to a dashboard. If you select a report in the dashboard, the layout will look like the following example.
 
-   :::image type="content" source="./media/end-user-app-view/power-bi-app-number.png" alt-text="Screenshot of the Sales and Marketing app with different areas identified by numbers.":::
+   :::image type="content" source="./media/end-user-app-view/power-bi-app-number.png" alt-text="Screenshot of the Sales and Marketing app with different areas identified by numbers." lightbox="./media/end-user-app-view/power-bi-app-number.png":::
 
 Apps have different layouts, visuals, colors, and options, but they all have most of the features shown in this example:
 
