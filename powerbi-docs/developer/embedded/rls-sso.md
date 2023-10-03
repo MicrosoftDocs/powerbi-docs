@@ -1,6 +1,6 @@
 ---
-title: Using row-level security with embedded content in Power BI embedded analytics
-description: Learn about the steps you need to take to embed Power BI content within your application.
+title: Use row-level security with token based identities in Power BI embedded analytics
+description: Learn about embedding single Power BI content within your application using token based, single sign-on (SSO) identities.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: 
