@@ -112,7 +112,7 @@ The following are known issues and limitations during **preview**:
 
 - Direct Lake datasets do not currently support Publish to Web because SSO requires authenticated users.
 
-- Calculated columns and calculated tables are not yet supported.
+- Calculated columns, calculated tables, and field parameters are not yet supported.
 
 - DateTime relationships are not supported in Direct Lake datasets.
 
