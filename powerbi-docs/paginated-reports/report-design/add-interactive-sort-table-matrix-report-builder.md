@@ -15,7 +15,7 @@ ms.reviewer: saurkumar
 
   Add interactive sort buttons to enable users to change the sort order of rows and columns in tables and matrices in paginated reports. This feature is supported only in rendering formats that support user interaction, such as HTML.  
   
- When you create an interactive sort button, you must specify what to sort, what to sort by, and the scope to which to apply the sort. For example, you can sort detail rows by customer last name, subcategory group values within a category group by sales, or category and subcategory group values combined by totals.  
+ When you create an interactive sort button, you must specify what to sort, what to sort by, and the scope to which to apply the sort. For example, you can sort detail rows by customer family name, subcategory group values within a category group by sales, or category and subcategory group values combined by totals.  
   
  When you view the report, columns that support interactive sorting have arrow icons that change to indicate the sort order. The first time you select an interactive sort button, items are sorted in ascending order. Subsequent clicks toggle the sort order between ascending and descending order.  
   
@@ -98,7 +98,7 @@ ms.reviewer: saurkumar
   ![Screenshot of a Arrow icon used with Back to Top link](media/up-arrow.gif "Screenshot of a Arrow icon used with Back to Top link") [Back to Top](#BackToTop)  
   
 ##  <a name="SortingMultipleRowGroups"></a> Sort rows based on a complex group expression  
- Add an interactive sort button to a column header to enable a user to select the column header and sort the combined parent and child groups. To achieve this affect, you must change the group expression to be a composite of both groups. For example, suppose a matrix displays inventory totals for a store for items grouped by both color and size. To sort the rows based on the combination of color and size, instead of having a separate group for color and a separate group for size, you can define a group based on the combination of color and size. For more information about defining group expressions, see [Group Expression Examples &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/group-expression-examples-report-builder.md).  
+ Add an interactive sort button to a column header to enable a user to select the column header and sort the combined parent and child groups. To achieve this effect, you must change the group expression to be a composite of both groups. For example, suppose a matrix displays inventory totals for a store for items grouped by both color and size. To sort the rows based on the combination of color and size, instead of having a separate group for color and a separate group for size, you can define a group based on the combination of color and size. For more information about defining group expressions, see [Group Expression Examples &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/group-expression-examples-report-builder.md).  
   
  In the following procedure, terms specify tablix data region areas. For more information, see [Tablix Data Region Areas &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-data-regions-report-builder-service.md).  
   
