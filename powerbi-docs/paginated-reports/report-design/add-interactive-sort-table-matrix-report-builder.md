@@ -19,23 +19,18 @@ ms.reviewer: saurkumar
   
  When you view the report, columns that support interactive sorting have arrow icons that change to indicate the sort order. The first time you select an interactive sort button, items are sorted in ascending order. Subsequent clicks toggle the sort order between ascending and descending order.  
   
+##  <a name="BackToTop"></a> In this article 
 
+ [Sort detail rows for a table with no groups](#SortingDetailRows)  
+ [Sort a top level parent row group for a table or matrix](#SortingTopLevelParent)  
+ [Sort child groups or detail rows for a group](#SortingChildGroups) 
+ [Sort rows based on a complex group expression](#SortingMultipleRowGroups)  
+ [Synchronize sort order for multiple data regions](#SynchronizingSortOrder)  
   
-##  <a name="BackToTop"></a> In this Article  
- [Sorting detail rows for a table with no groups](#SortingDetailRows)  
-  
- [Sorting a top level parent row group for a table or matrix](#SortingTopLevelParent)  
-  
- [Sorting child groups or detail rows for a group](#SortingChildGroups)  
-  
- [Sorting rows based on a complex group expression](#SortingMultipleRowGroups)  
-  
- [Synchronizing sort order for multiple data regions](#SynchronizingSortOrder)  
-  
-##  <a name="SortingDetailRows"></a> Sorting detail rows for a table with no groups  
+##  <a name="SortingDetailRows"></a> Sort detail rows for a table with no groups  
  Add an interactive sort button to a column header to enable a user to select the column header and sort the details rows in a table by the value displayed in that column.  
   
-#### To add an interactive sort button to a column header to sort the table by value  
+### Add an interactive sort button to a column header to sort the table by value  
   
 1.  In report design view, in a table with no groups, right-click the text box in the column header to which you want to add an interactive sort button, and then select **Text Box Properties**.  
   
@@ -55,10 +50,10 @@ ms.reviewer: saurkumar
   
  ![Screenshot of a Arrow icon used with Back to Top link](media/up-arrow.gif "Screenshot of a Arrow icon used with Back to Top link") [Back to Top](#BackToTop)  
   
-##  <a name="SortingTopLevelParent"></a> Sorting a top-level parent row group for a table or matrix  
+##  <a name="SortingTopLevelParent"></a> Sort a top-level parent row group for a table or matrix  
  Add an interactive sort button to a column header to enable a user to select the column header and sort the parent group rows in a table or matrix by the value displayed in that column. The order of child groups remains unchanged.  
   
-#### To add an interactive sort button to a column header to sort groups  
+### Add an interactive sort button to a column header to sort groups  
   
 1.  In a table or matrix in report design view, right-click the text box in the column header for the group to which you want to add an interactive sort button, and then select **Text Box Properties**.  
   
@@ -79,10 +74,10 @@ ms.reviewer: saurkumar
   
  ![Screenshot of a Arrow icon used with Back to Top link](media/up-arrow.gif "Screenshot of a Arrow icon used with Back to Top link") [Back to Top](#BackToTop)  
   
-##  <a name="SortingChildGroups"></a> Sorting child groups or detail rows for a group  
+##  <a name="SortingChildGroups"></a> Sort child groups or detail rows for a group  
  Add an interactive sort button to a group header row to enable the user to sort the values of a child group from a parent group or to sort the detail rows for the innermost child group.  
   
-#### To add an interactive sort button to a text box in a group row header to sort child groups or detail rows  
+### Add an interactive sort button to a text box in a group row header to sort child groups or detail rows  
   
 1.  In report design view, right-click the text box in the group header row to which you want to add an interactive sort button, and then select **Text Box Properties**.  
   
@@ -102,20 +97,20 @@ ms.reviewer: saurkumar
   
   ![Screenshot of a Arrow icon used with Back to Top link](media/up-arrow.gif "Screenshot of a Arrow icon used with Back to Top link") [Back to Top](#BackToTop)  
   
-##  <a name="SortingMultipleRowGroups"></a> Sorting rows based on a complex group expression  
+##  <a name="SortingMultipleRowGroups"></a> Sort rows based on a complex group expression  
  Add an interactive sort button to a column header to enable a user to select the column header and sort the combined parent and child groups. To achieve this affect, you must change the group expression to be a composite of both groups. For example, suppose a matrix displays inventory totals for a store for items grouped by both color and size. To sort the rows based on the combination of color and size, instead of having a separate group for color and a separate group for size, you can define a group based on the combination of color and size. For more information about defining group expressions, see [Group Expression Examples &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/group-expression-examples-report-builder.md).  
   
  In the following procedure, terms specify tablix data region areas. For more information, see [Tablix Data Region Areas &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-data-regions-report-builder-service.md).  
   
  Typically, when you sort rows based on multiple groups, you want to see totals for the sorted rows, regardless of column groups. In this procedure, no column groups are used. You start by adding a matrix and removing the default column group. Alternatively, you could start by adding a table and removing the details group.  
   
-#### To add an interactive sort button to a column header to sort multiple groups  
+### Add an interactive sort button to a column header to sort multiple groups  
   
 1.  In report design view, add a matrix.  
   
 1.  Drag a numeric field to the data cell to link the dataset to the matrix.  
   
-     Next, you will create a group with a group expression that specifies multiple fields, and a group header to use to display the group values.  
+     Next, you create a group with a group expression that specifies multiple fields, and a group header to use to display the group values.  
   
 1.  Verify that the matrix is selected on the design surface. The Grouping pane displays a default row and column group.  
   
@@ -133,11 +128,11 @@ ms.reviewer: saurkumar
   
      For this scenario, the first column in the tablix row groups area is not needed. To delete the column, right-click the column header, and then select **Delete Columns**. A dialog box asks whether to delete the associated groups. Select **No**. The row group area is deleted and only the tablix body area remains.  
   
-     Next, you will remove the default column group.  
+     Next, you remove the default column group.  
   
 1. In the Column Groups pane, right-click the default column group, and then select **Delete Group**. A dialog box asks whether to delete the group and related rows and columns or the group only. Select **Delete group only**. The column group is deleted, and the column group area is deleted. Only the tablix body area remains.  
   
-     Next, you will add an interactive sort button to the text box that spans the matrix.  
+     Next, you add an interactive sort button to the text box that spans the matrix.  
   
 1. Select the text box in the first row and then select **Text Box Properties**.  
   
@@ -159,12 +154,12 @@ ms.reviewer: saurkumar
   
  ![Screenshot of a Arrow icon used with Back to Top link](media/up-arrow.gif "Screenshot of a Arrow icon used with Back to Top link") [Back to Top](#BackToTop)  
   
-##  <a name="SynchronizingSortOrder"></a> Synchronizing sort order for multiple data regions  
+##  <a name="SynchronizingSortOrder"></a> Synchronize sort order for multiple data regions  
  Add an interactive sort button that enables a user to select one sort button and sort multiple data regions. When you create an interactive sort button, you can specify whether to synchronize the sort for multiple data regions based on the same report dataset. For example, a report might include a matrix and a chart that graphically displays the data. When a user changes the sort order of the rows in the matrix, the chart automatically displays the same sort order.  
   
  To synchronize the sort order, you must use identical sort expressions for the data regions or groups to sort, and define the scope for the sort to be a mutual ancestor of both data regions. The mutual ancestor can be either the dataset to which both data regions are linked or a containing data region within which both data regions appear. For example, assume a report has both a matrix and a chart that display data from the same dataset and that are contained in a list. To synchronize the sort action, you must specify the interactive sort on a column in the matrix and set the scope to the list. When the user sorts the matrix, the chart is also sorted.  
   
-#### To synchronize sort order with a chart for an interactive sort button on a matrix data region  
+### Synchronize sort order with a chart for an interactive sort button on a matrix data region  
   
 1.  In report design view, add a matrix to the report.  
   
