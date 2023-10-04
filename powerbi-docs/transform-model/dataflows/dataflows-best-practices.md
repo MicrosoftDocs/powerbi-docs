@@ -18,6 +18,16 @@ Power BI dataflows are an enterprise-focused data prep solution, enabling an eco
 
 Dataflows can be used across various Power Platform technologies, such as Power Query, Microsoft Dynamics 365, and other Microsoft offerings. For more information about how dataflows can work across the Power Platform, see [What are dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365).
 
+## Note: There is no way to recover a dataflow that has been deleted. Remember to create a back up of your dataflow. There are multiple ways of creating a backup:
+
+You can enable the Azure storage connection on your Power BI workspace, which will automatically store a copy of your dataflow definition and snapshots in a data lake. This way, you can recover a deleted or modified dataflow by downloading the model.json file from the lake and importing it back to Power BI.
+
+You can use Power Automate or Azure Logic Apps to export your dataflow definition to a JSON file and store it in SharePoint or Azure Data Lake Gen2. This option allows you to backup your dataflow in different file storage options and automate the process.
+
+You can manually export your dataflow to a JSON file and import it to another workspace or location. This option is simple and quick, but requires you to do it manually every time you want to backup your dataflow. 
+
+You can also backup and restore your Power BI datasets using SQL Server Management Studio (SSMS) or other tools that connect to Power BI via XMLA endpoints. This option is useful if you want to backup your entire dataset, not just the dataflow. 
+
 ## Dataflows best practices table and links
 
 The following table provides a collection of links to articles that describe best practices when creating or working with dataflows. The links include information about developing business logic, developing complex dataflows, reuse of dataflows, and how to achieve enterprise-scale with your dataflows.
@@ -38,7 +48,6 @@ The following table provides a collection of links to articles that describe bes
 |Use Schema view      |Improve the authoring experience when working with a wide table and performing schema level operations         |[Schema view](/power-query/schema-view)         |
 |Linked tables      |Reusing and referencing transformations         |[Create a dataflow by using linked tables](./dataflows-create.md#create-a-dataflow-by-using-linked-tables)         |
 |Incremental refresh      |Load the latest or changed data versus a full reload         |[Using incremental refresh with dataflows](/power-query/dataflows/incremental-refresh)         |
-|||
 
 ## Next steps
 
