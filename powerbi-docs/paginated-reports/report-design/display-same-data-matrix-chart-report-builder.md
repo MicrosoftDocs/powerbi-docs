@@ -22,7 +22,7 @@ ms.reviewer: saurkumar
  At run-time, your report may appear cluttered if there are too many group values for your group definitions. You might need to filter values, combine groups, or adjust the threshold for the chart to combine groups for you. For more information, see [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/linking-multiple-data-regions-to-same-dataset-report-builder.md)  
   
   
-### Add a matrix and chart to display the same data  
+## Add a matrix and chart to display the same data  
   
 1.  Open a report in design view.  
   

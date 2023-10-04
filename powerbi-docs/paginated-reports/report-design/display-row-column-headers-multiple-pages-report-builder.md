@@ -18,7 +18,7 @@ ms.reviewer: saurkumar
   
  How you control the rows and columns depends on whether the tablix data region has group headers. When you select a tablix data region that has group headers, a dotted line shows the tablix areas, as shown in the following figure:  
   
- ![Screenshot of the Tablix data region areas.](media/tablix-parts.gif "Screenshot of the Tablix data region areas")  
+ ![Screenshot of the Tablix data region areas.](media/tablix-parts.gif "Screenshot of the Tablix data region areas.")  
   
  Row and column group headers are created automatically when you add groups by using the New Table or Matrix wizard or the New Chart wizard, by adding fields to the Grouping pane, or by using context menus. If the tablix data region has only a tablix body area and no group headers, the rows and columns are tablix members.  
   

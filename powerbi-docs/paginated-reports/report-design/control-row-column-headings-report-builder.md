@@ -55,11 +55,11 @@ ms.reviewer: saurkumar
 ###  <a name="Matrix"></a> Matrix  
  By default, a simple matrix has one row group and one column group. The following figure shows a matrix with a row group that is based on Category and a column group that is based on Geography:  
   
- ![Screenshot of a Matrix, Category row and Geography column group](media/basic-matrix-design.gif "Screenshot of a Matrix, Category row and Geography column group")  
+ ![Screenshot of a Matrix, Category row and Geography column group.](media/basic-matrix-design.gif "Screenshot of a Matrix, Category row and Geography column group.")  
   
  The dotted lines show the four tablix areas. The row group area has a row group header that controls the category labels in the first column. Similarly, the column group area has a column group header that controls the geography labels in the first row. In preview, as the matrix expands across the page, the first row displays the column headings, as shown in the following figure:  
   
- ![Screenshot of a Preview for rendered matrix with expanded groups](media/basic-matrix-preview.gif "Screenshot of a Preview for rendered matrix with expanded groups")  
+ ![Screenshot of a Preview for rendered matrix with expanded groups.](media/basic-matrix-preview.gif "Screenshot of a Preview for rendered matrix with expanded groups.")  
   
  To repeat or freeze column headings in the first row, set properties for column headers on the tablix data region. Column headers for nested column groups are automatically included.  
   
@@ -70,19 +70,19 @@ ms.reviewer: saurkumar
 ###  <a name="TableNoGroups"></a> Table with no row groups  
  By default, a simple table with no groups does include the details group. The following figure shows a table that displays category, order number, and sales data:  
   
- ![Screenshot of a Design, table with one static, one dynamic row.](media/table-header-static-design.gif "Screenshot of a Design, table with one static, one dynamic row")  
+ ![Screenshot of a Design, table with one static, one dynamic row.](media/table-header-static-design.gif "Screenshot of a Design, table with one static, one dynamic row.")  
   
  There are no dotted lines because the table consists only of the tablix body area. The first row displays column headers, and represents a static tablix member that isn't associated with a group. The second row displays detail data, and represents a dynamic tablix member that is associated with the details group. The following figure shows the table in preview:  
   
- ![Screenshot of a Preview, table with one static, one dynamic row.](media/table-header-static-preview.gif "Screenshot of a Preview, table with one static, one dynamic row")  
+ ![Screenshot of a Preview, table with one static, one dynamic row.](media/table-header-static-preview.gif "Screenshot of a Preview, table with one static, one dynamic row.")  
   
  To repeat or freeze column headings, set properties on the tablix member for static row that is part of the tablix data region definition. To select the static row, you must use the Advanced mode of the Grouping pane. The following figure shows the Row Groups pane:  
   
- ![Screenshot of a Row Groups, table with 1 static, 1 dynamic row.](media/table-header-static-grouping-pane-default.gif "Screenshot of a Row Groups, table with 1 static, 1 dynamic row")  
+ ![Screenshot of a Row Groups, table with 1 static, 1 dynamic row.](media/table-header-static-grouping-pane-default.gif "Screenshot of a Row Groups, table with 1 static, 1 dynamic row.")  
   
  In Advanced mode, the following figure shows the static and dynamic tablix members for the row groups in the table:  
   
- ![Screenshot of a Row Groups, Advanced for default table.](media/table-header-static-grouping-pane-advanced.gif "Screenshot of a Row Groups, Advanced for default table")  
+ ![Screenshot of a Row Groups, Advanced for default table.](media/table-header-static-grouping-pane-advanced.gif "Screenshot of a Row Groups, Advanced for default table.")  
   
  To repeat or freeze column headings for the tablix member, select the static row that is labeled (**Static**). The properties pane displays the properties for the selected tablix member. By setting properties for this tablix member, you can control how the first row repeats or stays in view.  
   
@@ -91,19 +91,19 @@ ms.reviewer: saurkumar
 ###  <a name="TableRowGroupsGroupHeader"></a> Table with row groups and a row group area  
  If you add a row group to a simple table, a row group area is added to the table on the design surface. The following figure shows a table with a row group that is based on Category:  
   
- ![Screenshot of a Design, table with one row group and details.](media/table-header-dynamic-group-header-cell-design.gif "Screenshot of a Design, table with one row group and details")  
+ ![Screenshot of a Design, table with one row group and details.](media/table-header-dynamic-group-header-cell-design.gif "Screenshot of a Design, table with one row group and details.")  
   
  The dotted lines show the tablix row groups area and the tablix body area. The row group area has a row group header but no column group header. The following figure shows this table in preview:  
   
- ![Screenshot of a Preview, table with one row group and details.](media/table-header-dynamic-group-header-cell-preview.gif "Screenshot of a Preview, table with one row group and details")  
+ ![Screenshot of a Preview, table with one row group and details.](media/table-header-dynamic-group-header-cell-preview.gif "Screenshot of a Preview, table with one row group and details.")  
   
  To repeat or freeze column headings, use the same approach as the previous example. The following figure shows the default view of the Row Groups pane:  
   
- ![Screenshot of a Row Groups, Default with dynamic members.](media/table-header-dynamic-grouping-pane-default.gif "Screenshot of a Row Groups, Default with dynamic members")  
+ ![Screenshot of a Row Groups, Default with dynamic members.](media/table-header-dynamic-grouping-pane-default.gif "Screenshot of a Row Groups, Default with dynamic members.")  
   
  Use the **Advanced** mode of the Row Groups pane to display the tablix members, as shown in the following figure:  
   
- ![Screenshot of a Row Groups, Advanced mode with static members.](media/table-header-dynamic-group-header-cell-advanced.gif "Screenshot of a Row Groups, Advanced mode with static members")  
+ ![Screenshot of a Row Groups, Advanced mode with static members.](media/table-header-dynamic-group-header-cell-advanced.gif "Screenshot of a Row Groups, Advanced mode with static members.")  
   
  For tablix members are listed: **Static**, (**Static**), Category, and (**Details**). A tablix member that includes parentheses () indicates that there's no corresponding group header. To repeat or freeze column headings, select the top Static tablix member, and set properties in the Properties pane.  
   
@@ -118,15 +118,15 @@ ms.reviewer: saurkumar
   
  The following figure shows a table with a row group but no row group area on the design surface:  
   
- ![Screenshot of a Design, table has row group but no group header.](media/table-header-dynamic-no-group-header-cell-design.gif "Screenshot of a Design, table has row group but no group header")  
+ ![Screenshot of a Design, table has row group but no group header.](media/table-header-dynamic-no-group-header-cell-design.gif "Screenshot of a Design, table has row group but no group header.")  
   
  The table has three rows. The first row contains column headers. The second row contains the group value and subtotals. The third row contains the detail data. There are no dotted lines because there's only a tablix body area. The following figure shows this table in preview:  
   
- ![Screenshot of a Preview, table has row group but no group header.](media/table-header-dynamic-no-group-header-cell-preview.gif "Screenshot of a Preview, table has row group but no group header")  
+ ![Screenshot of a Preview, table has row group but no group header.](media/table-header-dynamic-no-group-header-cell-preview.gif "Screenshot of a Preview, table has row group but no group header.")  
   
  To control how the rows repeat or stay in view, you must set properties on the tablix member for each row. In default mode, there's no difference between this example and the previous example for a table with a row group and a group header. The following figure shows the Grouping pane in default mode for this table:  
   
- ![Screenshot of a Row Groups, Default with dynamic members.](media/table-header-dynamic-grouping-pane-default.gif "Screenshot of a Row Groups, Default with dynamic members")  
+ ![Screenshot of a Row Groups, Default with dynamic members.](media/table-header-dynamic-grouping-pane-default.gif "Screenshot of a Row Groups, Default with dynamic members.")  
   
  However, in advanced mode, this layout structure shows a different set of tablix members. The following figure shows the Grouping pane in advanced mode for this table:  
   
@@ -153,7 +153,7 @@ ms.reviewer: saurkumar
   
  For more information, see [Rendering Behaviors &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-behaviors-report-builder-service.md).  
   
-## Next Steps  
+## Next steps  
  [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)   
  [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)   
  [Pagination &#40;Power BI Report Builder&#41;](../../paginated-reports/paginated-reports-pagination.md)   

@@ -17,7 +17,7 @@ ms.reviewer: saurkumar
     
   In reports, sparklines and data bars are often used in tables and matrices. Their impact comes from viewing many of them together and being able to quickly compare them one above the other, rather than viewing them singly. They make it easy to see the outliers, the rows that are not performing like the others. Although they are small, each sparkline often represents multiple data points, often over time. Data bars can represent multiple data points, but typically illustrate only one. Each sparkline typically presents a single series. You cannot add a sparkline to a detail group in a table. Because sparklines display aggregated data, they must go in a cell associated with a group. Sparklines and data bars have the same basic chart elements of categories, series, and values, but they have no legend, axis lines, labels, or tick marks.  
   
- ![Screenshot of a Sparkline Example.](media/sparkline-example.gif "Screenshot of a Sparkline Example")  
+ ![Screenshot of a Sparkline Example.](media/sparkline-example.gif "Screenshot of a Sparkline Example.")  
   
  To quickly get started with sparklines, see [Tutorial: Add a Sparkline to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-sparkline-to-your-report-report-builder) and the videos [How to: Create a Sparkline in a Table](../../create-reports/power-bi-sparklines-tables.md) and [Sparklines, Bar Charts, and Indicators in Power BI Report Builder](/previous-versions/dn912438(v=msdn.10)) .  
   
@@ -38,7 +38,7 @@ ms.reviewer: saurkumar
 ##  <a name="DataBars"></a> Data bars  
  Data bars typically represent a single data point, though they can represent multiple data points, just like regular bar charts. They often contain several series with no category, or have series grouping.  
   
- ![Screenshot of a Data Bars.](media/data-bars.gif "Screenshot of a Data Bars")  
+ ![Screenshot of a Data Bars.](media/data-bars.gif "Screenshot of a Data Bars.")  
   
  In this example using stacked data bars, each data bar, although only one bar, illustrates more than one data point. For example, the three different colors of the bar could represent tasks of three levels of priority with the length of the bar representing the total number of tasks assigned to each person. If you made these 100% stacked data bars instead, each bar would fill the cell, and the different colors would represent the percentage of the whole for each priority level.  
   
@@ -53,7 +53,7 @@ ms.reviewer: saurkumar
   
  Likewise, to be comparable across rows, data must also align vertically, meaning that the height of the bars or lines in one sparkline or data bar must be relative to the height of the bars and lines in all the other sparklines or data bars. Otherwise, you can't compare the rows to each other.  
   
- ![Screenshot of a Sparkline Align Data.](media/sparkline-align-data.gif "Screenshot of a Sparkline Align Data")  
+ ![Screenshot of a Sparkline Align Data.](media/sparkline-align-data.gif "Screenshot of a Sparkline Align Data.")  
   
  In this image, the column chart shows daily sales for each employee. Note that for days that an employee has no sales, the chart leaves a blank and aligns subsequent days. This is an example of horizontal alignment. Also note that for some employees, every bar is short, and no bar reaches the top of the cell. This is an example of vertical alignment; without it, in the rows with no tall bars, the short bars would expand to fill the height of the cell.  
   

@@ -28,13 +28,13 @@ ms.reviewer: saurkumar
   
 |Icon|Description|  
 |----------|-----------------|  
-|![Screenshot of a Row handle with 3 parallel lines for details row](media/icon-tablix-details-row.gif "Screenshot of a Row handle with 3 parallel lines for details row")|Only the details group on the row group hierarchy|  
-|![Screenshot of a Row handle with details row and one outer group](media/icon-tablix-group-details.gif "Screenshot of a Row handle with details row and one outer group")|One outer group and the child details group|  
-|![Screenshot of a Two parallel brackets showing nested groups](media/icon-tablix-nested-group-no-details.gif "Screenshot of a Two parallel brackets showing nested groups")|One outer group, one inner group; no details group|  
-|![Screenshot of a 2 brackets & 3 stacked lines for nested & details](media/icon-tablix-nested-group-details.gif "Screenshot of a 2 brackets & 3 stacked lines for nested & details")|One outer group, one inner group, and the child details group|  
-|![Screenshot of a One outer group with footer row, one inner group](media/icon-tablix-nested-group-parent-footer.gif "Screenshot of a One outer group with footer row, one inner group")|One outer group with a footer row for totals and one inner group|  
-|![Screenshot of a outer group bracket, inner group bracket, details](media/icon-tablix-nested-group-details-totals.gif "Screenshot of a outer group bracket, inner group bracket, details")|One outer group with a footer row for totals, one inner group with a footer row for totals, and one details row|  
-|![Screenshot of a parent header and footer, and also child group](media/icon-tablix-nested-group-parent-header-footer.gif "Screenshot of a parent header and footer, and also child group")|One outer group with a header for labels and a footer for totals, and an inner group; no details group|  
+|![Screenshot of a Row handle with 3 parallel lines for details row.](media/icon-tablix-details-row.gif "Screenshot of a Row handle with 3 parallel lines for details row.")|Only the details group on the row group hierarchy|  
+|![Screenshot of a Row handle with details row and one outer group.](media/icon-tablix-group-details.gif "Screenshot of a Row handle with details row and one outer group.")|One outer group and the child details group|  
+|![Screenshot of a Two parallel brackets showing nested groups.](media/icon-tablix-nested-group-no-details.gif "Screenshot of a Two parallel brackets showing nested groups.")|One outer group, one inner group; no details group|  
+|![Screenshot of a 2 brackets & 3 stacked lines for nested & details.](media/icon-tablix-nested-group-details.gif "Screenshot of a 2 brackets & 3 stacked lines for nested & details.")|One outer group, one inner group, and the child details group|  
+|![Screenshot of a One outer group with footer row, one inner group.](media/icon-tablix-nested-group-parent-footer.gif "Screenshot of a One outer group with footer row, one inner group.")|One outer group with a footer row for totals and one inner group|  
+|![Screenshot of an outer group bracket, inner group bracket, details.](media/icon-tablix-nested-group-details-totals.gif "Screenshot of an outer group bracket, inner group bracket, details.")|One outer group with a footer row for totals, one inner group with a footer row for totals, and one details row|  
+|![Screenshot of a parent header and footer, and also child group.](media/icon-tablix-nested-group-parent-header-footer.gif "Screenshot of a parent header and footer, and also child group.")|One outer group with a header for labels and a footer for totals, and an inner group; no details group|  
   
 ### Group rows  
  Rows inside a group repeat once per unique group value and are typically used for aggregate summaries. Rows outside a group repeat once with respect to the group and are used for labels or subtotals. When you select a tablix cell, row and column handles and brackets inside the tablix data region show the groups to which a cell belongs. This figure displays the following visual cues:  
@@ -45,17 +45,17 @@ ms.reviewer: saurkumar
   
 -   Group indicators that show all group memberships for a selected cell.  
   
- ![Screenshot of a Table with detail and nested row groups](media/tablix-row-group-visual-cues.gif "Screenshot of a Table with detail and nested row groups")  
+ ![Screenshot of a Table with detail and nested row groups.](media/tablix-row-group-visual-cues.gif "Screenshot of a Table with detail and nested row groups.")  
   
 ### Total rows  
  After you add row and column groups, you can add a row to display totals for columns and a column to display totals for rows. The following figure shows a matrix with both row and column groups, and a total row and a total column.  
   
- ![Screenshot of a Tablix data region](media/tablix-parts.gif "Screenshot of a Tablix data region")  
+ ![Screenshot of a Tablix data region.](media/tablix-parts.gif "Screenshot of a Tablix data region.")  
   
 ### Grouping pane  
  The Grouping pane displays the row and column groups for the currently selected tablix data region on the design surface. The following figure shows the Grouping pane for this tablix data region.  
   
- ![Screenshot of a Grouping pane for nested row and column groups](media/basic-tablix-design-grouping-pane-default-view.gif "Screenshot of a Grouping pane for nested row and column groups")  
+ ![Screenshot of a Grouping pane for nested row and column groups.](media/basic-tablix-design-grouping-pane-default-view.gif "Screenshot of a Grouping pane for nested row and column groups.")  
   
  The Row Groups pane shows the parent group Category and child group Subcat. The Column groups pane shows the parent group Geography and child group CountryRegion, and also the Year group, which is an adjacent group to the Geography group. When you select the Subcat group in the Row Groups pane, the group bar turns a darker shade of orange, and the corresponding row group member cell is selected on the design surface.  
   
@@ -72,11 +72,11 @@ ms.reviewer: saurkumar
   
  The following figure shows a tablix data region with nested row groups and a details group.  
   
- ![Screenshot of a Design view, add total rows to group and table](media/basic-table-groups-totals-color-design.gif "Screenshot of a Design view, add total rows to group and table")  
+ ![Screenshot of a Design view, add total rows to group and table.](media/basic-table-groups-totals-color-design.gif "Screenshot of a Design view, add total rows to group and table.")  
   
  For a tablix data region that displays detail data, the details group is the innermost child group. Rows that you add to a details group repeat once per row in the result set for the query for the dataset linked to this tablix data region. The following figure shows the last page of the rendered report. In this figure, you can see the last detail rows and the subtotal row for the last order.  
   
- ![Screenshot of a Preview, Table with Group Totals, last rows](media/basic-table-groups-totals-color-preview-bottom.gif "Screenshot of a Preview, Table with Group Totals, last rows")  
+ ![Screenshot of a Preview, Table with Group Totals, last rows.](media/basic-table-groups-totals-color-preview-bottom.gif "Screenshot of a Preview, Table with Group Totals, last rows.")  
   
  For each column in a tablix data region, the same principles apply. For example, a column is either inside or outside each column group; to display totals, add a column outside the group.  
   
@@ -94,7 +94,7 @@ ms.reviewer: saurkumar
  Cells in the tablix body area can display detail data when the cell is in a detail row or column and aggregated group data when the cell is in a group row or column. The scope for the data in a cell is the intersection of the innermost row group and innermost column group to which the cell belongs.  
   
 > [!NOTE]  
->  The actual data that is displayed for each cell is the evaluated expression for the report item that the cell contains, which is typically a text box. In a cell that belongs to a detail row or column, the expression defaults to the detail data (for example, **[LineTotal])**. In a cell that does not belong to a detail row or column, the expression defaults to an aggregate function (for example, **Sum[LineTotal])**. If an expression does not specify an aggregate function even though the cell belongs to a group row or column, the first value in the group is displayed. For more information about aggregates, see [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/expression-scope-for-totals-aggregates-and-built-in-collections.md).  
+>  The actual data that is displayed for each cell is the evaluated expression for the report item that the cell contains, which is typically a text box. In a cell that belongs to a detail row or column, the expression defaults to the detail data (for example, **[LineTotal]**). In a cell that does not belong to a detail row or column, the expression defaults to an aggregate function (for example, **Sum[LineTotal]**). If an expression does not specify an aggregate function even though the cell belongs to a group row or column, the first value in the group is displayed. For more information about aggregates, see [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/expression-scope-for-totals-aggregates-and-built-in-collections.md).  
   
 ### Merging and splitting cells  
  Inside a tablix area, you can merge multiple adjacent cells together. For example, you can create cells for labels that span multiple columns or rows.  
@@ -108,6 +108,6 @@ ms.reviewer: saurkumar
  You can split a cell that was previously merged. You can split cells horizontally across columns or vertically down rows. To split a cell into a block of cells, split the cell horizontally first, and then split vertically as many times as necessary.  
   
 ## Next steps  
- [Tablix Data Region &#40;Power BI Report Builder#41;](tablix-data-region-report-builder.md)  
+ [Tablix Data Region &#40;Power BI Report Builder&#41;](tablix-data-region-report-builder.md)  
   
   

@@ -23,7 +23,7 @@ Cells in each area have a distinct function. You add cells to the tablix body ar
   
 On the design surface, dotted lines denote the four areas of a selected tablix data region. The following figure shows the areas for a tablix region with nested row groups based on category and subcategory, nested column groups based on geography and country/region, and an adjacent column group based on year.  
   
- ![Screenshot of the Tablix data region areas.](media/tablix-areas.gif "Screenshot of a Tablix data region areas")  
+ ![Screenshot of the Tablix data region areas.](media/tablix-areas.gif "Screenshot of a Tablix data region areas.")  
   
  The following list describes each area. 
   
@@ -47,7 +47,7 @@ The tablix body is located in the lower right corner (lower left for RTL layout)
   
  The following figure shows the tablix data region in Preview.  
   
- ![Screenshot of a Preview, Tablix corner, row & column groups, body.](media/tablix-areas-preview.gif "Screenshot of a Preview, Tablix corner, row & column groups, body")  
+ ![Screenshot of a Preview, Tablix corner, row & column groups, body.](media/tablix-areas-preview.gif "Screenshot of a Preview, Tablix corner, row & column groups, body.")  
   
  The row group area displays two category group instances for Clothing and Components. The column group displays a geography group instance for North America, with two nested country/region group instances for Canada (CA) and the United States (US). In addition, the adjacent column displays two year group instances for 2003 and 2004. The Total column row displays the row totals; the totals row that repeats with the category group shows subcategory totals, and the grand total row displays the category totals once for the data region.  
   

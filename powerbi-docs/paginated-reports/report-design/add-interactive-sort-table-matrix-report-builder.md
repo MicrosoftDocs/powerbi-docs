@@ -48,7 +48,7 @@ ms.reviewer: saurkumar
   
  To verify the sort action, select **Run** to preview the report, and then select the interactive sort buttons.  
   
- ![Screenshot of a Arrow icon used with Back to Top link](media/up-arrow.gif "Screenshot of a Arrow icon used with Back to Top link") [Back to Top](#BackToTop)  
+ ![Screenshot of an arrow icon used with Back to Top link.](media/up-arrow.gif "Screenshot of an arrow icon used with Back to Top link.") [Back to Top](#BackToTop)  
   
 ##  <a name="SortingTopLevelParent"></a> Sort a top-level parent row group for a table or matrix  
  Add an interactive sort button to a column header to enable a user to select the column header and sort the parent group rows in a table or matrix by the value displayed in that column. The order of child groups remains unchanged.  
@@ -72,7 +72,7 @@ ms.reviewer: saurkumar
   
  To verify the sort action, select **Run** to preview the report, and then select the interactive sort buttons.  
   
- ![Screenshot of a Arrow icon used with Back to Top link](media/up-arrow.gif "Screenshot of a Arrow icon used with Back to Top link") [Back to Top](#BackToTop)  
+ ![Screenshot of a Arrow icon used with Back to Top link.](media/up-arrow.gif "Screenshot of a Arrow icon used with Back to Top link.") [Back to Top](#BackToTop)  
   
 ##  <a name="SortingChildGroups"></a> Sort child groups or detail rows for a group  
  Add an interactive sort button to a group header row to enable the user to sort the values of a child group from a parent group or to sort the detail rows for the innermost child group.  
@@ -95,7 +95,7 @@ ms.reviewer: saurkumar
   
  To verify the sort action, select **Run** to preview the report, and then select the interactive sort buttons.  
   
-  ![Screenshot of a Arrow icon used with Back to Top link](media/up-arrow.gif "Screenshot of a Arrow icon used with Back to Top link") [Back to Top](#BackToTop)  
+  ![Screenshot of a Arrow icon used with Back to Top link.](media/up-arrow.gif "Screenshot of a Arrow icon used with Back to Top link.") [Back to Top](#BackToTop)  
   
 ##  <a name="SortingMultipleRowGroups"></a> Sort rows based on a complex group expression  
  Add an interactive sort button to a column header to enable a user to select the column header and sort the combined parent and child groups. To achieve this effect, you must change the group expression to be a composite of both groups. For example, suppose a matrix displays inventory totals for a store for items grouped by both color and size. To sort the rows based on the combination of color and size, instead of having a separate group for color and a separate group for size, you can define a group based on the combination of color and size. For more information about defining group expressions, see [Group Expression Examples &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/group-expression-examples-report-builder.md).  
@@ -152,7 +152,7 @@ ms.reviewer: saurkumar
   
  To verify the sort action, select **Run** to preview the report, and then select the interactive sort button. The matrix sorts by the combined values of the group expression, although each individual value displays in its own column.  
   
- ![Screenshot of a Arrow icon used with Back to Top link](media/up-arrow.gif "Screenshot of a Arrow icon used with Back to Top link") [Back to Top](#BackToTop)  
+ ![Screenshot of a Arrow icon used with Back to Top link.](media/up-arrow.gif "Screenshot of a Arrow icon used with Back to Top link.") [Back to Top](#BackToTop)  
   
 ##  <a name="SynchronizingSortOrder"></a> Synchronize sort order for multiple data regions  
  Add an interactive sort button that enables a user to select one sort button and sort multiple data regions. When you create an interactive sort button, you can specify whether to synchronize the sort for multiple data regions based on the same report dataset. For example, a report might include a matrix and a chart that graphically displays the data. When a user changes the sort order of the rows in the matrix, the chart automatically displays the same sort order.  
@@ -201,7 +201,7 @@ ms.reviewer: saurkumar
   
  To verify the sort action, select **Run** to preview the report, and then select the interactive sort button. The matrix sorts by the combined values of the group expression, although each individual value displays in its own column.  
   
- ![Screenshot of a Arrow icon used with Back to Top link](media/up-arrow.gif "Screenshot of a Arrow icon used with Back to Top link") [Back to Top](#BackToTop)  
+ ![Screenshot of a Arrow icon used with Back to Top link.](media/up-arrow.gif "Screenshot of a Arrow icon used with Back to Top link.") [Back to Top](#BackToTop)  
   
 ## Next steps  
  [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)   
