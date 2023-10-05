@@ -88,42 +88,6 @@ In the following figure, the size of each country represents Urban Population, w
 
 :::image type="content" source="media/whats-new/scatter-chart-bubble-size-range-scaling.png" alt-text="Screenshot showing scatter chart bubble size range scaling." lightbox="media/whats-new/scatter-chart-bubble-size-range-scaling.png":::
 
-### Power BI Desktop Developer mode
-
-Power BI customers demand enterprise BI solutions that scale to all users across the largest organizations. This depends on enabling team collaboration and automation of deployments across development, test, and production environments to meet the needs of mission-critical BI systems. We are thrilled to announce the public preview of *Power BI Desktop Developer Mode*, taking advantage of Microsoft’s deep heritage in enterprise BI, and bringing Pro BI developer experiences right into Power BI Desktop.
-
-Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a *Power BI project* (.pbip). When you save as a project, the report and dataset definitions are saved as individual plain text files in a simple, intuitive folder structure. 
-
-:::image type="content" source="media/whats-new/save-type-power-bi-project-files.png" alt-text="Screenshot showing saving as type Power BI project files." lightbox="media/whats-new/save-type-power-bi-project-files.png":::
-
-As a developer, with this integration you can: 
-
-- Use Power BI Desktop to author report and dataset metadata files in source-control friendly formats.
-
-- Enable multiple-developer collaboration, source control integration to track version history, compare different revisions (diff), and revert to previous versions.
-
-- Build continuous integration and continuous delivery (CI/CD) workflows to enforce quality gates prior to reaching production environments.
-
-- Enable code reviews, automated testing, and automated build to validate the integrity of a deployment.
-
-With the combination of Power BI Desktop Developer mode, Fabric Git Integration, Azure DevOps and Deployment Pipelines, developers gain the ability to seamlessly sync their Power BI workspaces with Git repositories, ensuring consistency and facilitating CI/CD workflows. 
-
-:::image type="content" source="media/whats-new/power-bi-git-integration-diagram.png" alt-text="Diagram showing Power BI and Git integration." lightbox="media/whats-new/power-bi-git-integration-diagram.png":::
-
-By using Git as the central repository for your developments, you establish it as the “source of truth”. This integration allows you to start your report development in Power BI Desktop, seamlessly transition to the Power BI service, and return to Power BI Desktop, where every modification is securely backed up and versioned by Git. 
-
-Watch the recording of the [Empower every BI professional to do more with data](https://www.youtube.com/embed/OdkS7DF7ElY?start=277) session at Microsoft Build for an end-to-end demonstration of Power BI Desktop Developer Mode together with Fabric Git Integration. 
-
-### Turn on Power BI Project file preview
-
-Saving as a Power BI Project file is in public preview. 
-
-- Go to **File** > **Options and settings** > **Options** > **Preview features** and check the box next to **Power BI Project (.pbip) save option**. 
-
-    :::image type="content" source="media/whats-new/power-bi-project-pbip-preview.png" alt-text="Screenshot showing enabling Power BI Project preview." lightbox="media/whats-new/power-bi-project-pbip-preview.png" :::
-
-For more information, visit [Power BI Desktop projects](https://aka.ms/pbidesktopdevmode).
-
 ### Want to get involved?
 
 - To be a part of our customer research for paginated reports, and provide product feedback, prototype assessment, and staying abreast with what’s new, join the [Paginated Operational Reports Feedback Panel](https://ux.microsoft.com/Panel/PBIPaginatedFeedback). 
@@ -456,14 +420,16 @@ Note the following:
  
 As an administrator, you can disable this preview, force V3 off, and hide the preview feature check box. Set the following DWORD value to 0 in the registry: AllowV3Models in either:
 
-```
+
+```yaml
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS]
 "AllowV3Models"=dword:00000000
 ```
 
 or
 
-```
+
+```yaml
 [HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS]
 "AllowV3Models"=dword:00000000
 ```
@@ -860,7 +826,6 @@ Here's the complete list of features.
 - Improvements to M Intellisense
 - New Transform: Split column by positions
 - Copy to clipboard from data profiling
-
 
 ## May 2019
 
@@ -1261,3 +1226,4 @@ Check these sources to keep up-to-date on new features in Power BI Report Server
 - [Microsoft Power BI blog](https://powerbi.microsoft.com/blog/)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+

@@ -42,7 +42,7 @@ For users familiar with SQL Server Reporting Services (SSRS), this feature is si
 
 Start with a paginated report that has parameters. You know that the report has parameters if you select **Parameters** and see dropdown options in the header. This report has a parameter for **Manager name** and a parameter for **Employee**. 
 
-:::image type="content" source="media/dynamic-subscriptions/power-bi-parameters.png" alt-text="Screenshot of the Power BI service showing two parameters.":::
+:::image type="content" source="media/dynamic-subscriptions/power-bi-choose-parameter.png" alt-text="Screenshot of the Power BI service showing two parameters.":::
 
 ### Connect to recipient data
 

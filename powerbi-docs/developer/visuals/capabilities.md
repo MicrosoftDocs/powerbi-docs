@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 10/12/2022
+ms.date: 07/12/2023
 ---
 
 # Capabilities and properties of Power BI visuals
@@ -259,6 +259,23 @@ Objects describe customizable properties that are associated with the visual. Th
         "properties": { ... }
     }
 }
+```
+
+For example, to support [dynamic format strings](../../create-reports/desktop-custom-format-strings.md) in your custom visual, define the following object:
+
+```json
+"objects": {
+        "general": {
+            "properties": {
+                "formatString": {
+                    "type": {
+                        "formatting": {
+                            "formatString": true
+                        }
+                    }
+                }
+            }
+        },
 ```
 
 For more information, see [Objects and properties of Power BI visuals](objects-properties.md).
