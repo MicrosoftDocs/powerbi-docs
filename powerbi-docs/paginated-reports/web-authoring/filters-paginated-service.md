@@ -1,7 +1,7 @@
 ---
 title: "Add filters when you create paginated reports in the Power BI service | Microsoft Docs"
 description:  Learn how to add filters while you author a paginated report on the service.
-ms.date: 03/24/2023
+ms.date: 10/06/2023
 ms.service: powerbi 
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -31,9 +31,10 @@ There are two ways to add a column to the Filters pane.
 
 ## Filtering
 
-Filters show a list of all the column values. You can select the value from the list.
+You can use either "Basic" or "Advanced" Filtering from the dropdown in the Filter pane. When you select "Basic filtering", you can select  from the list of all the column values. When you select "Advanced filtering", you can specify conditions that will determine what's visible on the report.
 
-:::image type="content" source="media/filters-paginated-service/paginated-select-values.png" alt-text="Screenshot of selected values for columns.":::
+:::image type="content" source="media/filters-paginated-service/paginated-advanced-basic.png" alt-text="Screenshot of selected values for columns.":::
+
 
 You can also search for the value that you are looking for.
 
@@ -42,9 +43,9 @@ You can also search for the value that you are looking for.
 ## Considerations and limitations
 
 - Once you apply filters on a report that you author in the service, and then you edit it on Power BI Report Builder, you can no longer edit the report in the service.
-- You can't specify conditions such as greater than, less than, date ranges, and so on, to filter reports yet.
 - You can't search within numeric and date fields in the Filters pane.
 - You can't search in fields that are numeric.
+- You can add upto 2 conditions when you use "Advanced filtering"
 - Authors can't make the Filters pane visible to consumers.
 - Consumers and viewers of the report can't modify filters. 
 
