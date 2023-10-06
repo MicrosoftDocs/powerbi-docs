@@ -101,7 +101,7 @@ Power BI security is built upon the foundation of an [Azure Active Directory (Az
 - **User access:** Access to the Power BI service requires a user account (in addition to a Power BI [license](/power-bi/fundamentals/service-features-license-type): Free, Power BI Pro, or Premium Per User - PPU). You can add both internal users and guest users to Azure AD, or they can be synchronized with an on-premises Active Directory (AD). For more information about guest users, see [Strategy for external users](#strategy-for-external-users).
 - **Security groups:** Azure AD security groups are required when making certain features available in the Power BI [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings). You may also need groups to effectively secure Power BI workspace content or for distributing content. For more information, see [Strategy for using groups](#strategy-for-using-groups).
 - **Conditional access policies:** You can set up conditional access to the Power BI service and the Power BI mobile app. Azure AD [conditional access](/azure/active-directory/conditional-access/overview) can restrict authentication in various situations. For example, you could enforce policies that:
-  - Require multi-factor authentication for some or all users.
+  - Require multifactor authentication for some or all users.
   - Allow only devices that comply with organizational policies.
   - Allow connectivity from a specific network or IP range(s).
   - Block connectivity from a non-domain-joined machine.
