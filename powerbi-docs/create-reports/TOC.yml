@@ -419,7 +419,11 @@
   - name: Natural language Q&A
     items: 
     - name: Q&A introduction
+      href: ../consumer/end-user-q-and-a.md
+    - name: Get started with Q&A
       href: ../natural-language/q-and-a-intro.md
+    - name: Use Power BI Q&A on a dashboard
+      href: ../natural-language/end-user-q-and-a-tutorial.md  
     - name: Q&A data sources
       href: ../natural-language/q-and-a-data-sources.md
     - name: Q&A tooling introduction
@@ -566,16 +570,66 @@
           href: ../paginated-reports/report-design/format-report-items-report-builder.md
         - name: Format numbers and dates
           href: ../paginated-reports/report-design/format-numbers-dates-report-builder-service.md
-      - name: Tables, matrixes, lists
+      - name: About tables, matrixes, lists
         items:
         - name: Tables, matrixes, lists
           href: ../paginated-reports/report-builder-tables-matrices-lists.md
+        - name: Tablix data regions
+          href: ../paginated-reports/report-design/tablix-data-region-report-builder.md
+        - name: Tablix data region areas
+          href: ../paginated-reports/report-design/tablix-data-region-areas-report-builder.md
+        - name: Explore the flexibility of tablix data regions
+          href: ../paginated-reports/report-design/explore-flexibility-tablix-data-region-report-builder.md
+        - name: Tables in paginated reports
+          href: ../paginated-reports/report-design/tables-report-builder.md
+        - name: Cells, rows, and columns in tablix data regions
+          href: ../paginated-reports/report-design/tablix-data-region-cells-rows-columns-report-builder.md
+      - name: Edit tables, matrixes, lists
+        items:
         - name: Insert or delete a column
           href: ../paginated-reports/report-design/insert-delete-column-report-builder.md
         - name: Create a recursive hierarchy group
           href: ../paginated-reports/report-design/create-recursive-hierarchy-group-report-builder.md
         - name: Nested data regions
           href: ../paginated-reports/report-design/nested-data-regions-report-builder.md
+        - name: Create a matrix in a paginated report
+          href: ../paginated-reports/report-design/create-matrix-report-builder.md
+        - name: Add data to a tablix data region
+          href: ../paginated-reports/report-design/add-data-tablix-data-region-report-builder.md
+        - name: Merge cells in a data region
+          href: ../paginated-reports/report-design/merge-cells-data-region-report-builder.md
+        - name: Prepare data for display in a tablix data region
+          href: ../paginated-reports/report-design/prepare-data-display-tablix-data-region-report-builder.md
+        - name: Sparklines and data bars in tables and matrixes
+          href: ../paginated-reports/report-design/sparklines-data-bars-report-builder.md
+        - name: Add a details group to a tablix
+          href: ../paginated-reports/report-design/add-details-group-report-builder.md
+        - name: Add interactive sort to a table or matrix 
+          href: ../paginated-reports/report-design/add-interactive-sort-table-matrix-report-builder.md
+        - name: Add, move, or delete a table, matrix, or list
+          href: ../paginated-reports/report-design/add-move-delete-table-matrix-list-report-builder.md
+        - name: Add sparklines and data bars to a table or matrix 
+          href: ../paginated-reports/report-design/add-sparklines-data-bars-report-builder.md
+        - name: Insert or delete a row in a data region
+          href: ../paginated-reports/report-design/insert-delete-row-report-builder.md
+        - name: Display the same data in a matrix and a chart
+          href: ../paginated-reports/report-design/display-same-data-matrix-chart-report-builder.md
+        - name: Add a total row to a group or tablix
+          href: ../paginated-reports/report-design/add-total-group-tablix-data-region-report-builder.md
+        - name: Align the data in a chart in a table or matrix
+          href: ../paginated-reports/report-design/align-data-chart-table-matrix-report-builder.md
+        - name: Change an item in a cell in a table or matrix 
+          href: ../paginated-reports/report-design/change-item-cell-report-builder.md
+        - name: Change row height or column width
+          href: ../paginated-reports/report-design/change-row-height-column-width-report-builder.md
+        - name: Control row and column headings
+          href: ../paginated-reports/report-design/control-row-column-headings-report-builder.md
+        - name: Control the tablix data region display
+          href: ../paginated-reports/report-design/control-tablix-data-region-display-report-page.md
+        - name: Show row and column headers on multiple pages
+          href: ../paginated-reports/report-design/display-row-column-headers-multiple-pages-report-builder.md
+        - name: Create invoices and forms with lists
+          href: ../paginated-reports/report-design/create-invoices-forms-lists-report-builder.md
       - name: Control page breaks, headings, columns, and rows
         href: ../paginated-reports/report-design/control-page-breaks-headings-columns-rows-report-builder.md
       - name: Interactive sort and links

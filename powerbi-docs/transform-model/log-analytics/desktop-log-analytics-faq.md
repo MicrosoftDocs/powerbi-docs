@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 05/02/2023
+ms.date: 09/27/2023
 LocalizationGroup: Transform and shape data
 ---
 # Azure Log Analytics in Power BI - FAQ
@@ -39,10 +39,6 @@ For workspace level configuration, you can add an Azure admin as a Power BI work
 **Question:**  I can't get workspace Admin permissions for Power BI in my organization, is there a workaround?  
 
 *Answer:*  Yes. Refer to option 2 in the previous question.  
-
-**Question:**  The schema only contains some Globally Unique Identifiers (GUID), can you include the item names?  
-
-*Answer:*  We hope to expose report name, workspace name, and others as the feature progresses towards general availability.  
 
 **Question:**  What happens if I send logs from many Power BI workspaces to the same Log Analytics workspace? How do I differentiate?  
 
