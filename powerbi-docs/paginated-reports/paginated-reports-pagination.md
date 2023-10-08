@@ -58,6 +58,9 @@ You specify columns in the **Report Properties** pane or **Page Setup** dialog b
   
 ![Diagram of physical page with columns.](media/paginated-reports-pagination/power-bi-paginated-rs-page-columns.png)
   
+> [!NOTE]
+> Newsletter-style column reports are not supported in Subreports. For more information about subreports, see [Subreports](./subreports.md).
+
 ## Page breaks and page names
 
 A report might be more readable, and its data easier to audit and export, when the report has page names. Report Builder provides properties for these items:
