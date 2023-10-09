@@ -25,11 +25,10 @@ In addition to all the old formatting pane capabilities, the [new formatting mod
 
 :::image type="content" source="media/format-pane/formatting-model.png" alt-text="Screenshot of the new formatting pane.":::
 
-To upgrade to API version 5.1+, set the `apiVersion` in your *pbiviz.json* file to `5.1` or later.
+To upgrade to API version 5.1+, set the `apiVersion` in your *pbiviz.json* file to `5.1` or later and do **one** of the following:
 
-And follow one out of two 2 ways:
-1. Use [formattingmodel util](./utils-formatting-model.md). **Recommended**
-2. Without this util, using pure API. The following method is described below.
+* Use [formattingmodel util](./utils-formatting-model.md). **Recommended**
+* Without this util, use only APIs according to the following method.
 
 ## Create a visual that supports the new format pane
 
