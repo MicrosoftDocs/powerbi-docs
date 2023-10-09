@@ -88,22 +88,23 @@ If the query includes query variables, corresponding report parameters are autom
 
 Before you can connect an Oracle data source, the system administrator must have installed the version of the .NET Data Provider for Oracle that supports retrieving data from the Oracle database. This data provider must be installed on the same computer as Power BI Report Builder and also on machine hosting Power BI Gateway. For more information, see [Manage your data source - Oracle](../../connect-data/service-gateway-onprem-manage-oracle.md)
 
-> [!NOTE]
-> When you use an Oracle data source, if the paginated report has query type set as Stored Procedure, it fails to execute in the Power BI service due to a Power BI Gateway limitation. As a workaround, if you're using Oracle 12 or above, set query type to text and call the stored procedure inline like the following example.
->
-> ```
->DECLARE OUT_RPT_DATA SYS_REFCURSOR;
->BEGIN
->   SYSTEM.<Procedure_Name>(OUT_RPT_DATA);
->   DBMS_SQL.RETURN_RESULT(OUT_RPT_DATA);
->END;
->```
-
-![Screenshot of the Dataset properties dialog.](../media/paginated-reports-create-embedded-dataset/power-bi-dataset-query-type.png)
-
 ### Platform and version information  
 
 For more information about platform and version support, see [Supported data sources for Power BI paginated reports](../paginated-reports-data-sources.md).
+
+## Troubleshooting the query type
+
+When you use an Oracle data source, if the paginated report has query type set as Stored Procedure, it fails to execute in the Power BI service due to a Power BI Gateway limitation. As a workaround, if you're using Oracle 12 or above, set query type to text and call the stored procedure inline like the following example.
+
+![Screenshot of the Dataset properties dialog.](../media/paginated-reports-create-embedded-dataset/power-bi-dataset-query-type.png)
+
+```
+DECLARE OUT_RPT_DATA SYS_REFCURSOR;
+BEGIN
+   SYSTEM.<Procedure_Name>(OUT_RPT_DATA);
+   DBMS_SQL.RETURN_RESULT(OUT_RPT_DATA);
+END;
+```
 
 ## Next steps
 
