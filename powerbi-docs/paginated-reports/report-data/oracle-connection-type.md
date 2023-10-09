@@ -86,7 +86,7 @@ If the query includes query variables, corresponding report parameters are autom
   
 ##  <a name="Remarks"></a> Remarks  
 
-Before you can connect an Oracle data source, the system administrator must have installed the version of the .NET Data Provider for Oracle that supports retrieving data from the Oracle database. This data provider must be installed on the same computer as Power BI Report Builder and also on machine hosting Power BI Gateway. For more information, see [Manage your data source - Oracle](../../connect-data/service-gateway-onprem-manage-oracle.md)
+Before you can connect an Oracle data source, the system administrator must have installed the version of the .NET Data Provider for Oracle that supports retrieving data from the Oracle database. This data provider must be installed on the same computer as Power BI Report Builder and also on machine hosting Power BI Gateway. For more information, see [Manage your data source - Oracle](../../connect-data/service-gateway-onprem-manage-oracle.md).
 
 ### Platform and version information  
 
@@ -94,7 +94,7 @@ For more information about platform and version support, see [Supported data sou
 
 ## Troubleshooting the query type
 
-When you use an Oracle data source, if the paginated report has query type set as Stored Procedure, it fails to execute in the Power BI service due to a Power BI Gateway limitation. As a workaround, if you're using Oracle 12 or above, set query type to text and call the stored procedure inline like the following example.
+When you use an Oracle data source, if the paginated report has query type set as Stored Procedure, it fails to execute in the Power BI service due to a Power BI Gateway limitation. As a workaround, if you're using Oracle 12 or above, set query type to text and call the stored procedure inline, as in the following example.
 
 ![Screenshot of the Dataset properties dialog.](../media/paginated-reports-create-embedded-dataset/power-bi-dataset-query-type.png)
 
