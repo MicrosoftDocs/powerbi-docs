@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/12/2023
+ms.date: 10/09/2023
 ---
 # Pagination in Power BI paginated reports
 
@@ -59,7 +59,7 @@ You specify columns in the **Report Properties** pane or **Page Setup** dialog b
 ![Diagram of physical page with columns.](media/paginated-reports-pagination/power-bi-paginated-rs-page-columns.png)
   
 > [!NOTE]
-> Newsletter-style column reports are not supported in Subreports. For more information about subreports, see [Subreports](./subreports.md).
+> Newsletter-style column reports aren't supported in subreports. For more information, see [Subreports in Power BI paginated reports](./subreports.md).
 
 ## Page breaks and page names
 
