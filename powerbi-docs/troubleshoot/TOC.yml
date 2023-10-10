@@ -9,6 +9,10 @@
       href: known-issues/power-bi-known-issues.md
     - name: Active known issues for Fabric + Power BI - interactive report
       href: https://support.fabric.microsoft.com/known-issues
+    - name: Combo chart custom labels don't display
+      href: known-issues/known-issue-523-combo-chart-custom-labels-dont-display.md
+    - name: Failures in the Fabric Capacity Metrics app
+      href: known-issues/known-issue-522-failures-fabric-capacity-metrics-app.md
     - name: Export to CSV file truncated at 300 rows
       href: known-issues/known-issue-498-export-csv-file-truncated-300-rows.md
     - name: Cancel refresh operation fails using virtual network gateway
