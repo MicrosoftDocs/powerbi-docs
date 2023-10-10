@@ -45,7 +45,7 @@ sections:
           
           *Background utilization* is evaluated by considering all the background operations that completed during the past twenty-four hours, where each background operation contributes only 1/2880 of its total CPU cost (there are 2880 evaluation cycles in each 24-hour period).
           
-          A capacity consists of a defined number of v-cores. The [Power BI Premium Utilization and Metrics](service-premium-metrics-app.md) app tracks the utilization of your capacity v-cores. The CPU usage reported in the app drives the need to autoscale.
+          A capacity consists of a defined number of v-cores. The [Microsoft Fabric Capacity Metrics](/fabric/enterprise/metrics-app) app tracks the utilization of your capacity v-cores. The CPU usage reported in the app drives the need to autoscale.
           
           If you have a P1 subscription with eight v-cores, each evaluation cycle quota is 240 (8 × 30) seconds of CPU utilization. If the sum of both utilizations exceeds the total v-quota in your capacity, your capacity will autoscale using an additional v-core for the next 24 hours.
           
@@ -106,7 +106,7 @@ sections:
         answer: |
           When you buy a capacity, you get a predefined number of v-cores, as listed in [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
           
-          By displaying your capacity's CPU usage levels, the [Power BI Premium Utilization and Metrics](service-premium-metrics-app.md) app helps you understand how your capacity is performing. To provide a simple way of measuring your capacity's performance, the app reports CPU usage for the number of v-cores your capacity has. Power BI makes throttling and autoscale decisions based on the data that's displayed in the app.      
+          By displaying your capacity's CPU usage levels, the [Microsoft Fabric Capacity Metrics](/fabric/enterprise/metrics-app) app helps you understand how your capacity is performing. To provide a simple way of measuring your capacity's performance, the app reports CPU usage for the number of v-cores your capacity has. Power BI makes throttling and autoscale decisions based on the data that's displayed in the app.      
           
       - question: |
           Premium Per User (PPU)
