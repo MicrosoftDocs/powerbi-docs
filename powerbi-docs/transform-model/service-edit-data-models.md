@@ -179,7 +179,8 @@ For more information on accessing your audit logs, see the [Access your audit lo
 
 
 ## Capacity utilization and reporting
-You can monitor the impact editing data models in the service has on your Power BI Premium capacities using the [Premium metrics app](../enterprise/service-premium-metrics-app.md). Capacity impact can be monitored for editing data models in the web using the following [operations](../enterprise/service-premium-interactive-background-operations.md#background-operations).
+
+You can monitor the impact editing data models in the service has on your Power BI Premium capacities using the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app). Capacity impact can be monitored for editing data models in the web using the following [operations](../enterprise/service-premium-interactive-background-operations.md#background-operations).
 
 
 |Operation  |Description  |Workload |Type  |
