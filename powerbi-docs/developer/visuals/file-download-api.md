@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 04/18/2022
+ms.date: 10/10/2023
 ---
 
 # File download API
@@ -33,7 +33,7 @@ Use the **file download API** to export to files of the following types:
 * .pdf
 * .xlsx
 
-Before the download begins, a window will pop up asking to confirm that the visual is from a trusted source.
+Before the download begins, a window appears asking to confirm that the visual is from a trusted source.
 
 :::image type="content" source="./media/file-download-api/custom-visual-download-confirm.png" alt-text="Screenshot asking to confirm download only if it is from a trusted source.":::
 
@@ -52,10 +52,10 @@ The `exportVisualsContent` method has four parameters:
 
 * content: string
 * filename: string
-* fileType: string - When exporting to a *.pdf* or *.xlsx* file, the `fileType` parameter should be `base64`.
+* fileType: string - When exporting to a *.pdf* or *.xlsx* file, the `fileType` parameter should be `base64`
 * fileDescription: string
 
-This method returns a promise that will be resolved for a Boolean value
+This method returns a promise that will be resolved for a Boolean value.
 
 ### The `exportVisualsContentExtended` method
 
@@ -63,10 +63,10 @@ The `exportVisualsContentExtended` method also has four parameters:
 
 * content: string
 * filename: string
-* fileType: string - When exporting to a *.pdf* or *.xlsx* file, the `fileType` parameter should be `base64`.
+* fileType: string - When exporting to a *.pdf* or *.xlsx* file, the `fileType` parameter should be `base64`
 * fileDescription: string
 
-This method returns a promise which will be resolved with a result of type `ExportContentResultInfo` which contains the following:
+This method returns a promise, which will be resolved with a result of type `ExportContentResultInfo` that contains the following parameters:
 
 * downloadCompleted – if the download completed successfully.
 * filename – the exported file name.
@@ -123,12 +123,11 @@ export class Visual implements IVisual {
 
 ## Considerations and limitations
 
-The size limit for a downloaded file size is 30 MB.
+* The API is supported only in the Power BI service and Power BI desktop
+* The size limit for a downloaded file is 30 MB.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Visual API](visual-api.md)
+* [Learn about the Visual API](visual-api.md)
 
-> [!div class="nextstepaction"]
-> [Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
+* [Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
