@@ -57,7 +57,7 @@ You can tune the behavior of the workloads, by configuring workload settings for
 
 ### Monitor workloads
 
-Use the [Microsoft Fabric Capacity Metrics app](Microsoft Fabric Capacity Metrics) to monitor your capacity's activity.
+Use the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) to monitor your capacity's activity.
 
 > [!IMPORTANT]
 > If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. For more information, see [Notifications](../admin/service-admin-premium-capacity-notifications.md).
