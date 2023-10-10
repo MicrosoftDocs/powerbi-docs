@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 04/18/2022
+ms.date: 10/10/2023
 ---
 
 # File download API
@@ -123,12 +123,11 @@ export class Visual implements IVisual {
 
 ## Considerations and limitations
 
-The size limit for a downloaded file size is 30 MB.
+* The API is supported only in the PowerBI service and PowerBI desktop
+* The size limit for a downloaded file is 30 MB.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Visual API](visual-api.md)
+* [Visual API](visual-api.md)
 
-> [!div class="nextstepaction"]
-> [Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
+* [Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
