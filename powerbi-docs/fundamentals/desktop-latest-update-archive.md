@@ -3950,7 +3950,7 @@ The following video describes and shows each of these updates. You can also see 
 Here were the updates in the Power BI service.
 
 * Public preview of [Shared and Certified datasets](../connect-data/service-datasets-across-workspaces.md).
-* AI metrics available in the [Premium Capacity Metrics app](../enterprise/service-premium-metrics-app.md).
+* AI metrics available in the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app).
 * General availability of Power BI [template apps](../connect-data/service-template-apps-overview.md).
 * General availability of [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) in Power BI.
 * Public preview of Bring Your Own Key ([BYOK](../enterprise/service-encryption-byok.md)) for Power BI Premium.

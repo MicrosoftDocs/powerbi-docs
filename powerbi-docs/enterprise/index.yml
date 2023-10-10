@@ -39,9 +39,7 @@ landingContent:
           - text: Power BI for US government
             url: service-govus-overview.md
       - linkListType: how-to-guide
-        links:
-          - text: Use the Premium utilization and metrics app
-            url: service-premium-metrics-app.md         
+        links:        
           - text: Enroll a US government organization
             url: service-govus-signup.md
 

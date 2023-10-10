@@ -2331,7 +2331,7 @@
         },
         {
             "source_path": "powerbi-docs/service-premium-metrics-app.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
+            "redirect_url": "/fabric/enterprise/metrics-app",
             "redirect_document_id": true
         },
         {
@@ -4692,7 +4692,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-premium-metrics-app.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
+            "redirect_url": "/fabric/enterprise/metrics-app",
             "redirect_document_id": false
         }, 
         {
@@ -5430,7 +5430,17 @@
             "source_path": "powerbi-docs/create-reports/deployment-pipelines-troubleshooting.md",
             "redirect_url": "/fabric/cicd/troubleshoot-cicd",
             "redirect_document_id": false
-        }                                                                                                                                                                                       
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-install-app.md",
+            "redirect_url": "/fabric/enterprise/metrics-app-install",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-metrics-app.md",
+            "redirect_url": "/fabric/enterprise/metrics-app",
+            "redirect_document_id": false
+        }                                                                                                                                                                                                           
   ]          
 
 }

@@ -16,7 +16,7 @@ ms.date: 02/28/2023
 See [Monitor Power BI Embedded](monitor-power-bi-embedded.md) for details on collecting and analyzing monitoring data for Power BI Embedded.
 
 >[!TIP]
->Use the [Premium metrics app](../../enterprise/service-premium-metrics-app.md) to monitor your capacity.
+>Use the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) to monitor your capacity.
 
 ## Metrics
 
