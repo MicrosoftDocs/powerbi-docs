@@ -20,6 +20,10 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 - **Power BI Report Server**
 
+    - *Version: 1.18.8683.7488(build 15.0.1113.165), Released: October 10, 2023*
+        - Bug fixes
+            - Fixed the excessive memory status logging in a ReportingServicesService log by moving status message to verbose
+
     - *Version: 1.18.8668.33514(build 15.0.1113.162), Released: September 27, 2023*
         - Features
             - Full-screen view for PBIX and RDL reports
@@ -665,6 +669,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
 
 
 
