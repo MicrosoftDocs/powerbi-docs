@@ -29,7 +29,7 @@ If you're using an old version of the Capacity Metrics app, you have one of the 
 
 ## Solutions and workarounds
 
-You need to uninstall the old app and install the new Fabric Capacity Metrics app: https://learn.microsoft.com/fabric/enterprise/metrics-app-install?tabs=1st
+You need to uninstall the old app and install the [new Fabric Capacity Metrics app](/fabric/enterprise/metrics-app-install?tabs=1st).
 
 ## Next steps
 
