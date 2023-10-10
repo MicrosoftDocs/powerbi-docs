@@ -2332,7 +2332,7 @@
         {
             "source_path": "powerbi-docs/service-premium-metrics-app.md",
             "redirect_url": "/fabric/enterprise/metrics-app",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-premium-what-is.md",
