@@ -14,6 +14,8 @@
       href: desktop-tutorial-create-measures.md
     - name: "Create calculated columns"
       href: desktop-tutorial-create-calculated-columns.md
+    - name: "Create calculation groups"
+      href: calculation-groups.md      
   - name: Concepts
     expanded: true
     items:
@@ -21,6 +23,8 @@
       href: service-edit-data-models.md  
     - name: "Work with Modeling view"
       href: desktop-modeling-view.md  
+    - name: "Work with Model explorer (preview)"
+      href: model-explorer.md        
     - name: "Understand model relationships"
       href: desktop-relationships-understand.md
     - name: "Many-to-many relationships"
