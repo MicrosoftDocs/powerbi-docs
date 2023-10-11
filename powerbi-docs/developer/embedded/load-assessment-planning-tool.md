@@ -34,7 +34,7 @@ Here are some examples of how you can use the planning tool.
 
 ### Review the test results
 
-Review the results of your load assessment using the [Premium metrics app](../../enterprise/service-premium-metrics-app.md).
+Review the results of your load assessment using the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app).
 
 ## Power BI capacity tools GitHub repository
 
