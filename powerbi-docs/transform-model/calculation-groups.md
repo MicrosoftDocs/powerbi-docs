@@ -94,7 +94,7 @@ To reorder the calculation items in whatever logical way you prefer, you can sel
 
 ### Add a dynamic format string to a calculation item
 
-Calculation items use the underlying measure formatting by default. We may want to instead display *YOY%* as a percentage. To do so, select the *YOY%* calculation item, then turn on **Dynamic format string** in the properties pane, which allows you to specify a DAX expression to create a format string. For this example, it doesn’t require any conditional elements, so simply *#,##0.00%* will change the format to a percentage when this calculation item is applied, as shown in the following image.
+Calculation items use the underlying measure formatting by default. We might want to instead display *YOY%* as a percentage. To do so, select the *YOY%* calculation item, then turn on **Dynamic format string** in the properties pane, which allows you to specify a DAX expression to create a format string. For this example, it doesn’t require any conditional elements, so simply *#,##0.00%* will change the format to a percentage when this calculation item is applied, as shown in the following image.
 
 :::image type="content" source="media/calculation-groups/calculation-groups-14.png" alt-text="Screenshot of changing format of underlying data items." lightbox="media/calculation-groups/calculation-groups-14.png":::
 

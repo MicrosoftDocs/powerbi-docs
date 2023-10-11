@@ -19,21 +19,21 @@ With **Model view** in **Power BI Desktop**, you can view and work with complex 
 
 To access **Model view**, select the **Model icon** found on the left side of **Power BI Desktop**, as shown in the following image.
 
-:::image type="content" source="media/desktop-modeling-view/modeling-view_02.png" alt-text="Screenshot of the Modeling view icon in Power BI Desktop.":::
+:::image type="content" source="media/desktop-modeling-view/modeling-view-02.png" alt-text="Screenshot of the Modeling view icon in Power BI Desktop.":::
 
 ## Create separate diagrams
 
 With **Model view**, you can create diagrams of your model that contain only a subset of the tables in your model. This reorganization can help provide a clearer view into the tables you want to work with, and make working with complex datasets easier. To create a new diagram with only a subset of the tables, select the **+** button next to the **All tables** tab along the bottom of the Power BI Desktop window.
 
-:::image type="content" source="media/desktop-modeling-view/modeling-view_03.png" alt-text="Screenshot of the + sign button in the tabs section that creates a new diagram.":::
+:::image type="content" source="media/desktop-modeling-view/modeling-view-03.png" alt-text="Screenshot of the + sign button in the tabs section that creates a new diagram.":::
 
 You can then drag a table from the **Data pane** onto the diagram surface. Right-click the table, and then select **Add related tables** from the menu that appears.
 
-:::image type="content" source="media/desktop-modeling-view/modeling-view_04.png" alt-text="Screenshot of the Add related tables options after right clicking a table.":::
+:::image type="content" source="media/desktop-modeling-view/modeling-view-04.png" alt-text="Screenshot of the Add related tables options after right clicking a table.":::
 
 When you do, tables that are related to the original table are displayed in the new diagram. The following image shows how related tables are displayed after selecting the **Add related tables** menu option.
 
-:::image type="content" source="media/desktop-modeling-view/modeling-view_05.png" alt-text="Screenshot of the related tables add in the new Modeling view tab.":::
+:::image type="content" source="media/desktop-modeling-view/modeling-view-05.png" alt-text="Screenshot of the related tables add in the new Modeling view tab.":::
 
 >[!NOTE]
 >You can also find the **Add related tables** option in the context menu on the background of the model view. When selected, any table that has any relationship to any table already included in the layout will be added to the layout.
@@ -43,7 +43,7 @@ When you do, tables that are related to the original table are displayed in the 
 
 To access Model explorer, make sure you're in **Model view** by selecting the **Model** icon found on the left side of **Power BI Desktop**. Then in the **Data pane**, select **Model** as shown in the following image.
 
-:::image type="content" source="media/desktop-modeling-view/modeling-view_07.png" alt-text="Screenshot of Model view." lightbox="media/desktop-modeling-view/modeling-view_07.png":::
+:::image type="content" source="media/desktop-modeling-view/modeling-view-07.png" alt-text="Screenshot of Model view." lightbox="media/desktop-modeling-view/modeling-view-07.png":::
 
 The **Model explorer** shows a tree view of the semantic model or data model with the number of items in each node displayed. Learn more about [Model explorer](model-explorer.md).
 
@@ -54,7 +54,7 @@ You can select multiple objects at once in **Model view** by holding down the **
 
 For example, you could change the [visibility](desktop-storage-mode.md) for multiple tables in your diagram view by holding down the **Ctrl** key, selecting tables, then changing the *is hidden* setting in the **Properties** pane.
 
-:::image type="content" source="media/desktop-modeling-view/modeling-view_06.png" alt-text="Screenshot highlighting changing the Storage mode on multiple tables." lightbox="media/desktop-modeling-view/modeling-view_06.png":::
+:::image type="content" source="media/desktop-modeling-view/modeling-view-06.png" alt-text="Screenshot highlighting changing the Storage mode on multiple tables." lightbox="media/desktop-modeling-view/modeling-view-06.png":::
 
 ## Next steps
 
