@@ -86,10 +86,6 @@
         href: service-admin-premium-manage.md                                   
       - name: Premium capacity load evaluation
         href: service-premium-concepts.md
-      - name: Install the Premium metrics app
-        href: service-premium-install-app.md
-      - name: Using the Premium metrics app
-        href: service-premium-metrics-app.md 
       - name: Performance smoothing
         href: service-premium-smoothing.md                    
       - name: Backup and restore Power BI Premium datasets

@@ -77,7 +77,7 @@ To avoid congestion, plan your concurrent requests load in advance. If you excee
 
 ## Using the metrics app
 
-Using the [Premium metrics app](./../enterprise/service-premium-metrics-app.md) you can estimate the impact of your paginate report on your capacity. The app measures your CPU usage over time, allowing you to understand how your capacity is performing.
+Using the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) you can estimate the impact of your paginate report on your capacity. The app measures your CPU usage over time, allowing you to understand how your capacity is performing.
 
 To test your paginated report, we suggest that you use a dedicated clean capacity. A clean capacity helps isolate results from the impact of other users and workloads. For this test, we suggest using an *A SKU*.
 

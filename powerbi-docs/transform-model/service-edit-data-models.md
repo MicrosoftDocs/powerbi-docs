@@ -146,9 +146,6 @@ You can then drag a table from the **Data** pane onto the new layout. Right-clic
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-20.png" alt-text="Screenshot of selecting add related tables menu item." lightbox="media/service-edit-data-models/service-edit-data-models-20.png":::
 
 
-> [!NOTE]
-> When uploading a .PBIX file to the Service the data model will not include any existing layout changes, including custom layouts created in Desktop. Similarly, when downloading the .PBIX file, any layout changes made in the Service, including custom layouts, will not appear in Power BI Desktop.
-
 ### Create reports
 You can create a new report from the data model editing in the service experience by selecting the **New report** button in the ribbon. This opens a new browser tab to the report editing canvas to a new report that is built on the dataset. 
 
@@ -182,7 +179,8 @@ For more information on accessing your audit logs, see the [Access your audit lo
 
 
 ## Capacity utilization and reporting
-You can monitor the impact editing data models in the service has on your Power BI Premium capacities using the [Premium metrics app](../enterprise/service-premium-metrics-app.md). Capacity impact can be monitored for editing data models in the web using the following [operations](../enterprise/service-premium-interactive-background-operations.md#background-operations).
+
+You can monitor the impact editing data models in the service has on your Power BI Premium capacities using the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app). Capacity impact can be monitored for editing data models in the web using the following [operations](../enterprise/service-premium-interactive-background-operations.md#background-operations).
 
 
 |Operation  |Description  |Workload |Type  |
@@ -211,8 +209,6 @@ To see which limitation is preventing you from opening your data model, hover ov
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-23.png" alt-text="Screenshot of hovering over the open data model button.":::
 
-### Layouts
-When uploading a .PBIX file to the Service the data model will not include any existing layout changes, including custom layouts created in Desktop. Similarly, when downloading the .PBIX file, any layout changes made in the Service, including custom layouts, will not appear in Power BI Desktop.
 
 ### Limitations
 There are still many functional gaps between the model view in Power BI desktop and service. Functionality not yet supported in the service includes:

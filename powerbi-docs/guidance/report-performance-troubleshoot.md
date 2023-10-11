@@ -39,7 +39,7 @@ The first consideration is to understand if the slow report is hosted on a Premi
 
 ### Premium capacity
 
-When the report is hosted on a Premium capacity, use the [Power BI Premium Metrics app](../enterprise/service-premium-metrics-app.md) to determine if the report-hosting capacity frequently exceeds capacity resources. When there's pressure on resources, it may be time to [manage or scale the capacity](../enterprise/service-admin-premium-manage.md) (flowchart terminator 1). When there are adequate resources, investigate capacity activity during typical report usage (flowchart terminator 2).
+When the report is hosted on a Premium capacity, use the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) to determine if the report-hosting capacity frequently exceeds capacity resources. When there's pressure on resources, it may be time to [manage or scale the capacity](../enterprise/service-admin-premium-manage.md) (flowchart terminator 1). When there are adequate resources, investigate capacity activity during typical report usage (flowchart terminator 2).
 
 ### Shared capacity
 

@@ -42,8 +42,8 @@ The following table describes the data that's captured in the diagnostics dialog
 | Row Count            | Number of rows returned from queries.|
 | Processing Time      | Number of milliseconds (ms) spent processing the report. |
 | Rendering Time       | Number of milliseconds (ms) spent rendering the report. |
-| Rendering ID         | Paginated Render and ProcessParameters IDs can be used to correlate the OperationName in the [Premium metrics app](../enterprise/service-premium-metrics-app.md). |
-| Start Time in UTC    | Start time in UTC indicates the duration of a report process. It can be used in conjunction with the rendering ID (OperationName) start and end time in the [Premium metrics app.](../enterprise/service-premium-metrics-app.md). |
+| Rendering ID         | Paginated Render and ProcessParameters IDs can be used to correlate the OperationName in the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app). |
+| Start Time in UTC    | Start time in UTC indicates the duration of a report process. It can be used in conjunction with the rendering ID (OperationName) start and end time in the [Microsoft Fabric Capacity Metrics app.](/fabric/enterprise/metrics-app). |
 | Render Format        | JSONRPL, PDF, XLSX  |
 | Content Size         | Size of rendered reports in kilobytes (kb). |
 
