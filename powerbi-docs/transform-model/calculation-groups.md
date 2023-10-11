@@ -43,7 +43,7 @@ SELECTEDMEASURE() is a DAX function that acts as a placeholder for the measure t
 
 ## Time intelligence example
 
-There's a Time Intelligence example of a calculation group available at in the [Calculation groups in Analysis Services tabular models](/analysis-services/tabular-models/calculation-groups?view=asallproducts-allversions) article, which we can use to populate some calculation items. The example can be added to any model with values by date and a Date table that is marked as a date table, or you can download the Adventure Works DW 2020 PBIX from [DAX sample model - DAX](/dax/dax-sample-model). 
+There's a Time Intelligence example of a calculation group available at in the [Calculation groups in Analysis Services tabular models](/analysis-services/tabular-models/calculation-groups) article, which we can use to populate some calculation items. The example can be added to any model with values by date and a Date table that is marked as a date table, or you can download the Adventure Works DW 2020 PBIX from [DAX sample model - DAX](/dax/dax-sample-model). 
 
 
 ### Rename a calculation group
@@ -142,7 +142,7 @@ Finally, if you add additional calculation groups to the model and you want to s
 
 :::image type="content" source="media/calculation-groups/calculation-groups-17.png" alt-text="Screenshot of setting calculation group precedence.":::
 
-You can learn more about calculation groups precedence in the [Calculation groups in Analysis Services tabular models](/analysis-services/tabular-models/calculation-groups?view=asallproducts-allversions) article. 
+You can learn more about calculation groups precedence in the [Calculation groups in Analysis Services tabular models](/analysis-services/tabular-models/calculation-groups) article. 
 
 
 ## Next steps

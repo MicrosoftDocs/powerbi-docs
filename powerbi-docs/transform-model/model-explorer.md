@@ -41,13 +41,13 @@ The semantic model is all the metadata about your data, and it impacts how your 
 
 #### Calculation groups
 
-You can create or edit calculation groups to reduce redundant measures. You can learn more about calculation groups in the [Create calculation groups](desktop-calculation-groups.md) article.
+You can create or edit calculation groups to reduce redundant measures. You can learn more about calculation groups in the [Create calculation groups](calculation-groups.md) article.
 
 :::image type="content" source="media/model-explorer/model-explorer-04.png" alt-text="Screenshot of the calculation groups area in Model explorer.":::
 
 #### Cultures
 
-In the **Cultures** area of Model explorer, you can view all translated versions of the data model. Learn more in the [Translations in tabular models](/analysis-services/tabular-models/translations-in-tabular-models-analysis-services?view=asallproducts-allversions) article.
+In the **Cultures** area of Model explorer, you can view all translated versions of the data model. Learn more in the [Translations in tabular models](/analysis-services/tabular-models/translations-in-tabular-models-analysis-services) article.
 
 :::image type="content" source="media/model-explorer/model-explorer-05.png" alt-text="Screenshot of the cultures area in Model explorer.":::
 
@@ -59,7 +59,7 @@ You can create or edit a measure and view all the measures in your model togethe
 
 #### Perspectives
 
-View perspectives created by hiding tables, columns, or measures. Perspectives are commonly used in personalized visuals. Learn more about perspectives in the [Perspectives in Analysis Services](/analysis-services/tabular-models/perspectives-ssas-tabular?view=asallproducts-allversions) article.
+View perspectives created by hiding tables, columns, or measures. Perspectives are commonly used in personalized visuals. Learn more about perspectives in the [Perspectives in Analysis Services](/analysis-services/tabular-models/perspectives-ssas-tabular) article.
 
 :::image type="content" source="media/model-explorer/model-explorer-07.png" alt-text="Screenshot of the perspectives area in Model explorer.":::
 
