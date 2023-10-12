@@ -239,7 +239,7 @@ In this tutorial, the `appsettings.json` file contains sensitive information suc
     * `ClientSecret` - [Client secret](#client-secret)
 
 >[!NOTE]
->In the code snippet above, the `PowerBi:ServiceRootUrl` parameter is added as a custom configuration value to track the base URL to the Power BI service. When programming against the Power BI service in the Microsoft public cloud, the URL is <https://api.powerbi.com/>. However, the root URL for the Power BI service will be different in other clouds such as the government cloud. Therefore, this value is stored as a project configuration value so it is easy to change when required.
+>In the code snippet above, the `PowerBi:ServiceRootUrl` parameter is added as a custom configuration value to track the base URL to the Power BI service. When programming against the Power BI service in the Microsoft public cloud, the URL is `https://api.powerbi.com/`. However, the root URL for the Power BI service will be different in other clouds such as the government cloud. Therefore, this value is stored as a project configuration value so it is easy to change when required.
 
 ### Get the Azure AD access token and call the Power BI service
 
