@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/12/2022
+ms.date: 09/29/2023
 ---
 
 # Power BI implementation planning: Report consumer security planning
@@ -34,6 +34,10 @@ When you talk with other people, determine whether they're using the term _shari
 
 - The term _sharing_ is often used in a general way related to sharing content with colleagues. There are several techniques for delivering read-only content, which are described in this article.
 - _Sharing_ is also a specific feature in Power BI. It's a capability where a user or group is granted access to a single item. Sharing links and direct access sharing are described in this article.
+
+
+> [!IMPORTANT]
+> The **Power BI administrator** role has been renamed. The new name of the role is **Fabric administrator**.
 
 ## Strategy for read-only consumers
 

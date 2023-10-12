@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/17/2023
+ms.date: 10/10/2023
 ---
 
 # Change log for Power BI Report Server
@@ -16,39 +16,61 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. For information about Report Builder versions, see the [Power BI Report Builder change log](../paginated-reports/paginated-reports-change-log.md).
 
+## September 2023
+
+- **Power BI Report Server**
+
+    - *Version: 1.18.8683.7488(build 15.0.1113.165), Released: October 10, 2023*
+        - Bug fixes
+            - Fixed the excessive memory status logging in a ReportingServicesService log by moving status message to verbose
+
+    - *Version: 1.18.8668.33514(build 15.0.1113.162), Released: September 27, 2023*
+        - Features
+            - Full-screen view for PBIX and RDL reports
+            - Responsive navigation adapted to a small view port
+            - Custom Visual API shipped with release - version v5.4.0
+        - Bug fixes
+            - Fixed appearance of links in Document Map of RDL report
+            
+- **Power BI Desktop (optimized for Power BI Report Server)**   
+    - *Version: 2.121.903.0 (September 2023), Released: September 27, 2023*   
+        - Support for September 2023 Power BI Report Server
+        - New layout switcher from web to mobile layout
+        - New bubble range scaling setting
+
 ## May 2023
 
-### Power BI Report Server
+- **Power BI Report Server**
 
-*Version: 1.17.8621.39162(build 15.0.1112.79), Released: August 15, 2023*
+    - *Version: 1.17.8621.39162(build 15.0.1112.79), Released: August 15, 2023*
 
-- Bug fixes
-    - Fixed issue with Portal process stopping working during a high load 
-    - Fixed issue with accessing some URLs using custom authentication 
+        - Bug fixes
+            - Fixed issue with Portal process stopping working during a high load 
+            - Fixed issue with accessing some URLs using custom authentication 
 
-*Version: 1.17.8552.27722(build 15.0.1112.48), Released: June 6, 2023*
+    - *Version: 1.17.8552.27722(build 15.0.1112.48), Released: June 6, 2023*
 
-- Bug fixes
+        - Bug fixes
 
-    - Fixed an issue with the RTL browser setting viewing pbix reports
+            - Fixed an issue with the RTL browser setting viewing pbix reports
     
-*Version: 1.17.8546.6252(build 15.0.1112.41), Released: May 26, 2023*
+    - *Version: 1.17.8546.6252(build 15.0.1112.41), Released: May 26, 2023*
 
-- Features
+        - Features
 
-    - Introduced new Accessibility property that lets report authors to add accessible headers to tables and Heading levels to text boxes
-    - Added ability to configure Cleanup Batch Size and Cleanup Max Limit
-    - Custom Visual API shipped with release - version v5.4.0
+            - Introduced new Accessibility property that lets report authors to add accessible headers to tables and Heading levels to text boxes
+            - Added ability to configure Cleanup Batch Size and Cleanup Max Limit
+            - Custom Visual API shipped with release - version v5.4.0
 
-- Bug fixes
+        - Bug fixes
 
-    - Fixed issue with SAP Hana DQ Connection using integrated security in PBIX reports
-    - Fixed Web Service page localization problem
-    - Fixed issue with lack of permission on shared data source affecting loading of the containing folder
-    - Fixed back page navigator button for PBIX reports in Hebrew browser language
-    - Fixed slowness of Large MDX Query as an Expression 
-    - Fixed compromised characters on Row Level Security setting page
-    - Fixed setting calendar days to a single day for monthly schedules
+            - Fixed issue with SAP Hana DQ Connection using integrated security in PBIX reports
+            - Fixed Web Service page localization problem
+            - Fixed issue with lack of permission on shared data source affecting loading of the containing folder
+            - Fixed back page navigator button for PBIX reports in Hebrew browser language
+            - Fixed slowness of Large MDX Query as an Expression 
+            - Fixed compromised characters on Row Level Security setting page
+            - Fixed setting calendar days to a single day for monthly schedules
             
 ### Power BI Desktop (optimized for Power BI Report Server)
 
@@ -647,5 +669,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+
 
 

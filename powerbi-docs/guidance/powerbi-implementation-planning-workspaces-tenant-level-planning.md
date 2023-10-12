@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/23/2023
+ms.date: 10/04/2023
 ---
 
 # Power BI implementation planning: Tenant-level workspace planning
@@ -90,6 +90,46 @@ The following list describes more considerations related to workspace naming.
 > - **Review existing workspace names:** Update existing workspace names as appropriate so that they're good examples for users to follow. When users see existing workspace being renamed, they'll interpret that as an implied standard to adopt.
 > - **Create documentation for workspace naming conventions:** Provide reference documentation about workspace naming convention requirements and preferences. Be sure to include examples that show the correct use of acronyms, prefixes, and suffixes. Make the information available in your centralized portal and training materials.
 
+## Workspace domains
+
+Clarity on how content is owned and managed is always essential. That clarity is particularly critical when responsibilities for creating and managing data assets are decentralized among many departments or business units. Sometimes this approach is referred to as a _distributed_, _federated_, or _data mesh_ architecture.
+
+One way to support workspace ownership and management in Fabric is with _domains_. A domain provides a way to logically group multiple workspaces that have similar characteristics. For example, you might create a domain to group all your sales workspaces together, and another domain for your finance workspaces.
+
+Here are the key advantages of using domains.
+
+- They group similar workspaces into a single management boundary.
+- They permit certain tenant settings to be managed at the domain level. For more information, see [Override tenant-level settings](/fabric/governance/domains#override-tenant-level-settings).
+- They help users find relevant data. For example, they can use filters in the [OneLake data hub](/fabric/get-started/onelake-data-hub#display-only-data-items-belonging-to-a-particular-domain).
+
+The following table lists different ways you might choose to organize related workspaces.
+
+| **Method for organizing workspaces** | **Example domain** |
+|---|---|
+| By subject area/domain/content type | The _Finance_ domain includes each workspace related to finance content. |
+| By the team/department who owns and manages the content | The _Enterprise BI_ domain includes all workspaces that the team is directly responsible for managing. |
+| By organizational business unit or segment | The _European division_ domain includes all workspaces that are related directly to the operations in Europe. |
+| By project | The _Subsidiary acquisition_ domain includes all workspaces for a highly sensitive project. |
+
+Here are some considerations when planning for Fabric domains in your tenant.
+
+- **How will you map each workspace to a domain?** Each workspace may be assigned to only one domain (rather than multiple domains), so be prepared to do some planning. Consider creating a matrix diagram with workspaces in the rows, and domains in the columns, to help you plan how they're assigned. You can reassign the domain in the workspace settings, or the admin portal, if you discover that you need to reorganize workspaces.
+- **Who will be authorized to manage a domain?** Members of the _Domain admin_ role are authorized to manage an existing domain. When possible, assign domain administrator(s) who directly own and manage the content for the domain. Domain administrators should be experts who are familiar with internal, regional, and governmental regulations for the subject area. They should also be familiar with all internal governance and security requirements. For more information, see [Domain roles](/fabric/governance/domains#domain-roles).
+- **Who will be allowed to assign workspaces to a domain?** Members of the _Domain contributor_ role define which users (who are also workspace administrators) can assign a workspace to a domain. If you allow more users to assign workspaces to a domain, you should frequently audit the accuracy of the assigned groupings. If you allow only specific groups of users, or Fabric admins and Domain admins, you'll have more control over how they're assigned. For more information, see [Domain roles](/fabric/governance/domains#domain-roles).
+- **Are there specific compliance needs or restrictions, such as geographic area?** Keep in mind that the geographic area for data storage is set for each capacity (rather than for the domain). Consider how assigning a workspace to a domain—and to a capacity—affects your planning process.
+
+:::image type="icon" source="media/common/checklist.png" border="false":::
+
+**Checklist** - When planning for workspace domains, key decisions and actions include:
+
+> [!div class="checklist"]
+> - **Validate how content ownership works:** Ensure that you deeply understand how content ownership and management is happening throughout the organization. Factor that information into your plans to organize workspaces into domains.
+> - **Plan workspace domains:** Have discussions to plan how to best organize workspaces into domains. Confirm all key decisions with the Center of Excellence as well as your executive sponsor.
+> - **Educate Fabric administrators:** Ensure that your tenant administrators are familiar with how to create a domain, and how to assign and manage domain administrators.
+> - **Educate domain administrators:** Ensure that your domain administrators understand the expectations for this role in managing a domain.
+> - **Decide how to handle domain contributors:** Consider which users should have permission to assign workspaces to a domain.
+> - **Create an auditing process:** On a regular basis, validate that the assigned domain groupings are correct.
+
 ## Workspace creation process
 
 If you've decided to limit who can create workspaces, then the broader user population will need to know what the process is to request a new workspace. In this case, it's important to establish a request process that's easy and convenient for users to find and follow.
@@ -103,14 +143,14 @@ The following table lists the information to collect in a request for a new work
 
 | **Information needed** | **Example** | **Validation required** |
 | --- | --- | --- |
-| Workspace name | SLS-Field Sales Analytics | Does the name adhere to naming conventions? </br></br>Does another workspace with the same name exist? |
-| Stages needed | SLS-Field Sales Analytics \[Dev\], SLS-Field Sales Analytics \[Test\], and SLS-Field Sales Analytics | Are multiple workspaces necessary to properly support the content? </br></br>If so, should a [deployment pipeline](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) be created too? |
-| Description | Customer sales and order history for monthly, quarterly, and yearly analysis. | Is there an expectation that sensitive data, or regulated data, will be stored? </br></br>If so, will that affect how the workspace is governed? |
-| Target audience | Global field sales organization | How broad is the content delivery scope? </br></br>How will that affect how the workspace is governed? |
-| License mode assigned to the workspace | A Fabric capacity for the sales team is needed because a large number of the salespeople are viewers only and they have a free license | What level of [Fabric capacity](/fabric/enterprise/licenses#capacity-and-skus) is required? |
-| Data storage requirements | Data residency in Canada | Are there data residency needs that will require [Multi-Geo](/power-bi/admin/service-admin-premium-multi-geo)? </br></br>What are the expected data volumes? |
-| Workspace administrators | FabricContentAdmins-FieldSalesAnalytics | Is the administrator (preferably) a group? </br></br>Are there at least two administrators? |
-| Person submitting the request | requestor@contoso.com | Does the person submitting the request work in a role or line of business related to the information provided? |
+| Workspace name | SLS-Field Sales Analytics | &bull; Does the name adhere to naming conventions? </br></br>&bull; Does another workspace with the same name exist? |
+| Stages needed | SLS-Field Sales Analytics \[Dev\], SLS-Field Sales Analytics \[Test\], and SLS-Field Sales Analytics | &bull; Are multiple workspaces necessary to properly support the content? </br></br>&bull; If so, should a [deployment pipeline](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) be created too? |
+| Description | Customer sales and order history for monthly, quarterly, and yearly analysis. | &bull; Is there an expectation that sensitive data, or regulated data, will be stored? </br></br>&bull; If so, will that affect how the workspace is governed? |
+| Target audience | Global field sales organization | &bull; How broad is the content delivery scope? </br></br>&bull; How will that affect how the workspace is governed? |
+| License mode assigned to the workspace | A Fabric capacity for the sales team is needed because a large number of the salespeople are viewers only and they have a free license | &bull; What level of [Fabric capacity](/fabric/enterprise/licenses#capacity-and-skus) is required? |
+| Data storage requirements | Data residency in Canada | &bull; Are there data residency needs that will require [Multi-Geo](/power-bi/admin/service-admin-premium-multi-geo)? </br></br>&bull; What are the expected data volumes? |
+| Workspace administrators | FabricContentAdmins-FieldSalesAnalytics | &bull; Is the administrator (preferably) a group? </br></br>&bull; Are there at least two administrators? |
+| Person submitting the request | requestor@contoso.com | &bull; Does the person submitting the request work in a role or line of business related to the information provided? |
 
 The above table includes the minimum amount of information required to set up a workspace. However, it doesn't include all possible configurations. In most cases, a workspace administrator will take responsibility for completing the setup once the workspace is created. For more information, see the [Workspace-level settings](powerbi-implementation-planning-workspaces-workspace-level-planning.md) article.
 
@@ -151,15 +191,15 @@ The following table lists some of the most common requirements when a workspace 
 
 | **Category** | **Potential governance requirement** |
 | --- | --- |
-| Ownership and support | [Ownership](powerbi-adoption-roadmap-content-ownership-and-management.md) is assigned with clear responsibilities for the technical content owner and/or the subject matter expert. </br></br>[User support](powerbi-adoption-roadmap-user-support.md) team/person is assigned, and users understand how to request help or submit issues. </br></br>A mechanism is in place for user feedback, questions, and enhancement requests. </br></br>A [communication plan](powerbi-adoption-roadmap-community-of-practice.md#communication-plan) exists to announce important changes to content in the workspace. |
-| Workspace setup | The workspace is well-organized with a well-defined purpose. </br></br>A specific naming convention is used. </br></br>Workspace description, image, and contacts are required. |
-| Accuracy | All content is [certified](/power-bi/collaborate-share/service-endorse-content). </br></br>Data validations are automated so that content owners become aware of data quality issues on a timely basis. |
-| Distribution | A [Power BI app](/power-bi/collaborate-share/service-create-distribute-apps) is used for distributing reports and dashboards. |
-| Security and data protection | [Security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) are used (instead of individual accounts) for managing [workspace roles](/fabric/get-started/roles-workspaces#workspace-roles). </br></br>Sensitivity labels are used for [information protection](powerbi-implementation-planning-info-protection.md). </br></br>Only sanctioned (or approved) data sources are permitted. </br></br>All source files reside in a secure location that's backed up. |
-| Change management | Separate development, test, and production workspaces are used. </br></br>Source control (such as [Git integration](/fabric/cicd/git-integration/intro-to-git-integration)) is used for all Power BI Desktop files and items in the Fabric portal. </br></br>Versioning or source control is used for all data source files. </br></br>[Lifecycle management](/fabric/cicd/best-practices-cicd) and change management processes, including deployment pipelines and/or DevOps processes, are followed. |
-| Capacity | The workspace is assigned to an appropriate [Fabric capacity](/fabric/enterprise/licenses#capacity-and-skus) level. </br></br> The Fabric capacity is managed and monitored. |
-| Gateway | A [data gateway](powerbi-adoption-roadmap-system-oversight.md#gateway-architecture-and-management) in standard mode (non-personal) is used. </br></br>All gateway data source credentials use approved credentials. |
-| Auditing and monitoring | Active [auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md) processes are in place for tracking adoption, usage patterns, and performance. |
+| Ownership and support | &bull; [Ownership](powerbi-adoption-roadmap-content-ownership-and-management.md) is assigned with clear responsibilities for the technical content owner and/or the subject matter expert. </br></br>&bull; [User support](powerbi-adoption-roadmap-user-support.md) team/person is assigned, and users understand how to request help or submit issues. </br></br>&bull; A mechanism is in place for user feedback, questions, and enhancement requests. </br></br>&bull; A [communication plan](powerbi-adoption-roadmap-community-of-practice.md#communication-plan) exists to announce important changes to content in the workspace. |
+| Workspace setup | &bull; The workspace is well-organized with a well-defined purpose. </br></br>&bull; A specific naming convention is used. </br></br>&bull; The workspace is assigned to a specific [domain](/fabric/governance/domains). </br></br>&bull; Workspace description, image, and contacts are required. |
+| Accuracy | &bull; All content is [certified](/power-bi/collaborate-share/service-endorse-content). </br></br>&bull; Data validations are automated so that content owners become aware of data quality issues on a timely basis. |
+| Distribution | &bull; A [Power BI app](/power-bi/collaborate-share/service-create-distribute-apps) is used for distributing reports and dashboards. |
+| Security and data protection | &bull; [Security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) are used (instead of individual accounts) for managing [workspace roles](/fabric/get-started/roles-workspaces#workspace-roles). </br></br>&bull; Sensitivity labels are used for [information protection](powerbi-implementation-planning-info-protection.md). </br></br>&bull; Only sanctioned (or approved) data sources are permitted. </br></br>&bull; All source files reside in a secure location that's backed up. |
+| Change management | &bull; Separate development, test, and production workspaces are used. </br></br>&bull; Source control (such as [Git integration](/fabric/cicd/git-integration/intro-to-git-integration)) is used for all Power BI Desktop files and items in the Fabric portal. </br></br>&bull; Versioning or source control is used for all data source files. </br></br>&bull; [Lifecycle management](/fabric/cicd/best-practices-cicd) and change management processes, including deployment pipelines and/or DevOps processes, are followed. |
+| Capacity | &bull; The workspace is assigned to an appropriate [Fabric capacity](/fabric/enterprise/licenses#capacity-and-skus) level. </br></br>&bull;  The Fabric capacity is managed and monitored. |
+| Gateway | &bull; A [data gateway](powerbi-adoption-roadmap-system-oversight.md#gateway-architecture-and-management) in standard mode (non-personal) is used. </br></br>&bull; All gateway data source credentials use approved credentials. |
+| Auditing and monitoring | &bull; Active [auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md) processes are in place for tracking adoption, usage patterns, and performance. |
 
 > [!TIP]
 > Governance requirements usually aren't optional. For this reason, timely auditing is important, and enforcement becomes necessary in certain situations. For example, if governed workspaces require all files be in a secure location and an unapproved file location is detected during auditing, then action should be taken to update the file location.

@@ -54,6 +54,3 @@ The table below lists the Power BI operations. It provides a short description f
 
 > [!div class="nextstepaction"]
 > [Managing Premium capacities](service-premium-capacity-manage.md)
-
-> [!div class="nextstepaction"]
-> [Use the metrics app](service-premium-metrics-app.md)
