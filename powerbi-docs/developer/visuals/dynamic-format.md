@@ -36,7 +36,7 @@ To allow the visual to operate with dynamic format strings, the following fields
 
 After that, the custom visual will receive a dynamic format string through the `update()` options shown below: 
 
-    :::image type="content" source="media/dynamic-format/dynamic-format-strings-example.png" alt-text="Format change warning":::
+:::image type="content" source="media/dynamic-format/dynamic-format-strings-example.png" alt-text="Format change warning":::
 
 There are two arrays inside of `options.dataViews[0].categorical.values[0]`:
 1. `values` - values from the dataset
