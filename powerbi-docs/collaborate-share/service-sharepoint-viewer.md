@@ -8,7 +8,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: View Power BI file in SharePoint and OneDrive
 ms.topic: how-to
 ms.custom: 
-ms.date: 05/08/2023
+ms.date: 10/11/2023
 
 LocalizationGroup: Share your work
 ---
