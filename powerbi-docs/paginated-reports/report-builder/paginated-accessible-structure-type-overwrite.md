@@ -1,26 +1,26 @@
 ---
-title: "Use StructureTypeOverwrite to improve accessibility in Power BI paginated reports | Microsoft Docs"
+title: "Improve accessibility in Power BI paginated reports by using StructureTypeOverwrite | Microsoft Docs"
 description:  Learn about using the StructureTypeOverwrite property to improve accessibility in paginated reports.
-ms.date: 09/25/2023
+ms.date: 10/11/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: cookiemccray
+ms.reviewer: rvpatkar
 ---
-# Use StructureTypeOverwrite to improve accessibility in paginated reports (Power BI Report Builder)
+# Improve accessibility in paginated reports by using StructureTypeOverwrite (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)] 
 
 The StructureTypeOverwrite property has been added to the .rdl model. You can use it to improve accessibility in paginated reports in Microsoft Report Builder and Power BI Report Builder. Report Viewer also respects the property in Power BI Report Server.
 
-There are two different options how you can use this new property:
+There are two different ways that you can use this new property:
 
 - To set heading levels H1 through H6 for text boxes.
 - To specify table cells as table headers.  
 
-Let’s see an easy example how they can be helpful.  
+Let’s see an example how they can be helpful.  
 
 Here's the design of a simple report. It has a report title and two tables with data. Each table has a text box label.  
 
@@ -46,7 +46,7 @@ You see that now you have a *Heading 1 (H1)* for the report title, and two *Head
 
 The first row of the table is correctly set with a <TH> tag that allows the PDF document to determine which cells are headers, and which data cells should be associated with them.  
 
-New screen reader preview:  
+Here's the new screen reader preview:  
 
 :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-screen-reader-preview-after.png" alt-text="Screenshot showing Screen reader with structure.":::
 
@@ -75,7 +75,7 @@ You can set the heading value in two different ways:
 
     :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-text-box-properties-accessibility.png" alt-text="Screenshot showing Overwrite structure type box.":::
 
-### Textbox Property Grid
+### Textbox Property grid
 
 1. If the Property grid isn't open, on the **View** tab, select the **Properties** checkbox.
 1. Select a text box.
@@ -85,7 +85,7 @@ You can set the heading value in two different ways:
 
 ### Benefits of headings
 
-- Screen readers announce headings are announced as "Heading level 1", "Heading level 2", and so on.
+- Screen readers announce headings as "Heading level 1", "Heading level 2", and so on.
 - You can press the shortcut <kbd>H</kbd> key to jump to the next header in a report, when you're viewing reports in Power BI Report Server.
 - Headings are marked correctly in tagged PDF.
 
@@ -121,7 +121,7 @@ The default value is *None*. Here are the available values:
 ### Set a value for a whole row
 
 1. Select inside a table.
-1. Select the gray rectangle next to the row you want to set property for and select **Row Properties**.
+1. Select the gray rectangle next to the row you want to set a property for and select **Row Properties**.
 
     :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-select-row.png" alt-text="Screenshot showing selecting row properties.":::
 
@@ -129,22 +129,19 @@ The default value is *None*. Here are the available values:
 
     :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-row-properties-accessibility.png" alt-text="Screenshot showing setting row properties on the Accessibility tab.":::
 
-### Considerations and limitations  
-
-- You can't set this property for cells in the property grid. When you select a table cell, the properties in the grid are related to the text box, and not to the cell. When you select a table cell, in the property grid you see Heading1 through Heading6 options. They're associated with the text box of this cell, and not the cell itself.  
-- You can't set this property can't be set for the top row or the left column of a matrix. For a matrix, the top row and left column headers are set automatically.
-- You can set a column header cell and a row header cell.  
-
 ### Benefits of setting cell values
 
 - Screen readers announce table headers as "Header".
 - Some screen readers (for example, NVDA) can announce related header titles when reading data cell values, which is important for users that rely on screen readers. 
 - Table headers are marked correctly in tagged PDF, and associated with data cells. 
 
-## Limitations  
+### Considerations and limitations  
 
-- Setting a row header (a horizontal header) for a table with right-to-left layout doesn't associate data cells on the left of it with the header in an exported tagged PDF.  
-
+- You can't set this property for cells in the property grid. When you select a table cell, the properties in the grid are related to the text box, and not to the cell. When you select a table cell, in the property grid you see Heading1 through Heading6 options. They're associated with the text box of this cell, and not the cell itself.  
+- You can't set this property for the top row or the left column of a matrix. For a matrix, the top row and left column headers are set automatically.
+- You can set a column header cell and a row header cell.  
+- Setting a row header (a horizontal header) for a table with right-to-left layout doesn't associate data cells on the left of it with the header in an exported tagged PDF.
+ 
 ## Next steps
 
 - [Accessibility in Power BI paginated reports (Power BI Report Builder)](paginated-accessibility-overview.md)
