@@ -1,5 +1,5 @@
 ---
-title: "Improve accessibility in Power BI paginated reports by using StructureTypeOverwrite | Microsoft Docs"
+title: "Improve accessibility in Power BI paginated reports with StructureTypeOverwrite | Microsoft Docs"
 description:  Learn about using the StructureTypeOverwrite property to improve accessibility in paginated reports.
 ms.date: 10/11/2023
 ms.service: powerbi
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: rvpatkar
 ---
-# Improve accessibility in paginated reports by using StructureTypeOverwrite (Power BI Report Builder)
+# Improve accessibility in paginated reports with StructureTypeOverwrite (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)] 
 
