@@ -43,4 +43,16 @@ There are two arrays inside of `options.dataViews[0].categorical.values[0]`:
 2. `objects` - objects with `general.formatString` property
 
 Each `object` corresponds to a `value`. As an example value `12519995905.9842` from the screenshot above has the format `¥ #,0`.
-To apply this format to the value you can use the [format method](./utils-formatting.md#format) from [powerbi-visuals-utils-formattingutils](./utils-formatting.md).
+To apply this format to the value you can use the optional second argument `format?: string` of [format method](./utils-formatting.md#format) from [powerbi-visuals-utils-formattingutils](./utils-formatting.md).
+```typescript
+import { valueFormatter } from "powerbi-visuals-utils-formattingutils";
+
+class Visual {
+    public update(options){
+        const { values, objects } = options.dataViews[0].categorical.values[0]
+        const formattedValues = values.map((value, index) => valueFormatter.format(value, `${objects[index].general.formatString}`))
+    }
+}
+
+```
+There's a usage example in the [Sample Bar Chart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/main). Changes related to dynamic format see in [this commit](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/84c96da074d38e6abcca309ca2dd539f4edefdf1).
