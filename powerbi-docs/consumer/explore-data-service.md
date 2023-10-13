@@ -37,7 +37,7 @@ Introducing the public preview of the new Explore feature, where you have a ligh
 
 For a given dataset, report, or datamart, begin your exploration by selecting the **More options (…)** menu from a workspace list or the data hub list view. 
 
-:::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing selecting Explore this data." lightbox="media/explore-data-service/more-options-explore-data.png":::
+:::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing selecting Explore this data.":::
 
 You also see this option in the Data hub details page as part of the **Discover business insights** action card: 
 
