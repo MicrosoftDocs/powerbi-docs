@@ -36,7 +36,7 @@ Software installations are usually the responsibility of the IT department. To e
 
 - **Process for users to request software installation.** There are several ways to handle software installation requests:
   - Common tools can be included in a standard machine setup. IT teams sometimes refer to it as the _standard build_.
-  - Certain applications might be installed automatically based on job role. The software that's installed could be based on an attribute in the [user profile](/azure/active-directory/fundamentals/how-to-manage-user-profile-info) in Microsoft Entra ID (Azure Active Directory).
+  - Certain applications might be installed automatically based on job role. The software that's installed could be based on an attribute in the [user profile](/azure/active-directory/fundamentals/how-to-manage-user-profile-info) in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)).
   - For custom requests, using a standard request form works well. A form (rather than email) builds up a history of requests. When prerequisites or more licenses are required, approval can be included in the workflow.
 - **Process for installing software updates.** The timely installation of software updates is important. The goal is to stay as current as possible. Be aware that users can read online what's possible and might become confused or frustrated when newer features aren't available to them. For more information, see [Client tools](#client-tools) later in this article.
 
@@ -232,7 +232,7 @@ Here are some important points to consider when deciding on using Power BI Repor
 - Developing paginated reports involves more skill than creating Power BI reports. However, the main benefit is fine-grained control over data retrieval, layout, and placement.
 - A paginated report is concerned with both data retrieval and layout. You're required to develop a query (known as a _dataset_—not to be confused with a Power BI dataset) to retrieve data from an external data source, which might involve writing a native query statement (in DAX, T-SQL, or other language). The dataset belongs to one report, so it can't be published and used by other paginated reports.
 - Report consumers become accustomed to the built-in interactivity of Power BI reports. However, report interactivity isn't a strength of paginated reports. Attempting to achieve similar interactivity in paginated reports can be challenging or impossible.
-- If you need to access data by using a database stored procedure (such as an Azure SQL database stored procedure), that's possible with paginated reports.
+- If you need to access data by using a database stored procedure (such as an Azure SQL Database stored procedure), that's possible with paginated reports.
 - There are some [feature differences](/power-bi/paginated-reports/paginated-reports-faq#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) and unsupported capabilities depending on whether the paginated report is published to the Power BI service or Power BI Report Server. We recommend that you conduct a proof of concept to determine what's possible for your target environment.
 
 > [!TIP]

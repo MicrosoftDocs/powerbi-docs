@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Defender for Cloud Apps for Power BI"
 description: "Learn about using Defender for Cloud Apps with Power BI."
-author: paulinbar
-ms.author: painbar
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -89,9 +89,9 @@ Access policies and session policies allow you to:
   - Help users make the right decisions during their normal workflow.
   - Guide users to follow your [data classification and protection policy](powerbi-implementation-planning-info-protection.md#data-classification-and-protection-policy) without affecting their productivity.
 
-To provide real-time controls, access policies and session policies work with Azure Active Directory (Azure AD), relying on the reverse proxy capabilities of [Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad). Instead of user requests and responses going through the app (the Power BI service in this case), they go through a reverse proxy (Defender for Cloud Apps).
+To provide real-time controls, access policies and session policies work with Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)), relying on the reverse proxy capabilities of [Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad). Instead of user requests and responses going through the app (the Power BI service in this case), they go through a reverse proxy (Defender for Cloud Apps).
 
-Redirection doesn't affect the user experience. However, the [URL for the Power BI service](/defender-cloud-apps/proxy-intro-aad#how-session-control-works) will change to _https://app.powerbi.com.mcas.ms_ once you've set up Azure AD for conditional access app control with Power BI. Also, users will receive a notification when they sign in to the Power BI service that announces that the app is monitored by Defender for Cloud Apps.
+Redirection doesn't affect the user experience. However, the [URL for the Power BI service](/defender-cloud-apps/proxy-intro-aad#how-session-control-works) will change to _https://app.powerbi.com.mcas.ms_ once you've set up Microsoft Entra ID for conditional access app control with Power BI. Also, users will receive a notification when they sign in to the Power BI service that announces that the app is monitored by Defender for Cloud Apps.
 
 > [!IMPORTANT]
 > Access policies and session policies operate in real time. Other policy types in Defender for Cloud Apps involve a short delay in alerting. Most other types of DLP and auditing also experience latency, including [DLP for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi-override) and the [Power BI activity log](/power-bi/admin/service-admin-auditing).
@@ -161,12 +161,12 @@ The types of activity policy alerts described in this section are commonly handl
 
 ### Users impacted
 
-One of the compelling reasons to integrate Power BI with Defender for Cloud Apps is to benefit from real-time controls when users interact with the Power BI service. This type of integration requires [conditional access app control](/azure/active-directory/conditional-access/overview) in Azure AD.
+One of the compelling reasons to integrate Power BI with Defender for Cloud Apps is to benefit from real-time controls when users interact with the Power BI service. This type of integration requires [conditional access app control](/azure/active-directory/conditional-access/overview) in Microsoft Entra ID.
 
-Before setting up conditional access app control in Azure AD, you'll need to consider which users will be included. Usually, all users are included. However, there may be reasons to exclude specific users.
+Before setting up conditional access app control in Microsoft Entra ID, you'll need to consider which users will be included. Usually, all users are included. However, there may be reasons to exclude specific users.
 
 > [!TIP]
-> When setting up the conditional access policy, it's likely that your Azure AD administrator will exclude specific administrator accounts. That approach will prevent locking out administrators. We recommend that the excluded accounts are Azure AD administrators rather than standard Power BI users.
+> When setting up the conditional access policy, it's likely that your Microsoft Entra ID administrator will exclude specific administrator accounts. That approach will prevent locking out administrators. We recommend that the excluded accounts are Microsoft Entra ID administrators rather than standard Power BI users.
 
 Certain types of policies in Defender for Cloud Apps can apply to certain users and groups. Most often, these types of policies are applicable to all users. However, it's possible that you'll encounter a situation when you'll need to purposefully exclude certain users.
 
@@ -175,8 +175,8 @@ Certain types of policies in Defender for Cloud Apps can apply to certain users 
 **Checklist** - When considering which users are affected, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Consider which users are included:** Confirm whether all users will be included in your Azure AD conditional access app control policy.
-> - **Identify which administrator accounts should be excluded:** Determine which specific administrator accounts should be purposefully excluded from the Azure AD conditional access app control policy.
+> - **Consider which users are included:** Confirm whether all users will be included in your Microsoft Entra conditional access app control policy.
+> - **Identify which administrator accounts should be excluded:** Determine which specific administrator accounts should be purposefully excluded from the Microsoft Entra ID conditional access app control policy.
 > - **Determine whether certain Defender policies apply to subsets of users:** For valid use cases, consider whether they should be applicable to all or some users (when possible).
 
 ### User messaging
@@ -277,7 +277,7 @@ Specific licenses must be in place to monitor a Power BI tenant. Administrators 
 - **Microsoft Defender for Cloud Apps:** Provides Defender for Cloud Apps capabilities for all supported applications (including the Power BI service).
 - **Office 365 Cloud App Security:** Provides Defender for Cloud Apps capabilities for Office 365 apps that are part of the Office 365 E5 suite (including the Power BI service).
 
-Also, if users need to use real-time access policies or session policies in Defender for Cloud Apps, they will need an [Azure AD Premium P1 license](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses).
+Also, if users need to use real-time access policies or session policies in Defender for Cloud Apps, they will need an [Microsoft Entra ID P1 license](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses).
 
 >[!TIP]
 > If you need clarifications about licensing requirements, talk to your Microsoft account team.
@@ -329,9 +329,9 @@ You may need to create documentation for the help desk and conduct some knowledg
 
 After the decisions have been made, and a rollout plan has been prepared, it's time to start the implementation.
 
-If you intend to use real-time policies (session policies or access policies), your first task is to set up Azure AD [conditional access app control](/defender-cloud-apps/proxy-deployment-aad). You'll need to set up the Power BI service as a [catalog app](/defender-cloud-apps/proxy-deployment-aad#to-deploy-catalog-apps) that will be controlled by Defender for Cloud Apps.
+If you intend to use real-time policies (session policies or access policies), your first task is to set up Microsoft Entra [conditional access app control](/defender-cloud-apps/proxy-deployment-aad). You'll need to set up the Power BI service as a [catalog app](/defender-cloud-apps/proxy-deployment-aad#to-deploy-catalog-apps) that will be controlled by Defender for Cloud Apps.
 
-When Azure AD conditional access app control is set up and tested, you can then create policies in Defender for Cloud Apps.
+When Microsoft Entra conditional access app control is set up and tested, you can then create policies in Defender for Cloud Apps.
 
 > [!IMPORTANT]
 > We recommend that you introduce this functionality to a small number of test users first. There's also a monitor-only mode that you may find helpful to introduce this functionality in an orderly way.
@@ -347,7 +347,7 @@ The following checklist includes a summarized list of the end-to-end implementat
 > - **Carry out the decision-making process:** Review and discuss all the decisions that are required. This task should occur prior to setting up anything in production.
 > - **Review licensing requirements:** Ensure that you understand the product licensing and user licensing requirements. If necessary, procure and assign more licenses.
 > - **Publish user documentation:** Publish information that users will need to answer questions and clarify expectations. Provide guidance, communications, and training to your users so they're prepared.
-> - **Create an Azure AD conditional access policy:** Create a conditional access policy in Azure AD to enable real-time controls for monitoring the Power BI service. At first, enable the Azure AD conditional access policy for a few test users.
+> - **Create a Microsoft Entra conditional access policy:** Create a conditional access policy in Microsoft Entra ID to enable real-time controls for monitoring the Power BI service. At first, enable the Microsoft Entra conditional access policy for a few test users.
 > - **Set Power BI as a connected app in Defender for Cloud Apps:** Add or verify that Power BI appears as a connected app in Defender for Cloud Apps for conditional access app control.
 > - **Perform initial testing:** Sign in to the Power BI service as one of the test users. Verify that access works. Also verify that the message displayed informs you that the Power BI service is monitored by Defender for Cloud Apps.
 > - **Create and test a real-time policy:** Using the use cases already compiled, create an access policy or a session policy in Defender for Cloud Apps.
@@ -355,7 +355,7 @@ The following checklist includes a summarized list of the end-to-end implementat
 > - **Gather user feedback:** Obtain feedback on the process and user experience. Identify areas of confusion, unexpected results with sensitive information types, and other technical issues.
 > - **Continue iterative releases:** Gradually add more policies in Defender for Cloud Apps until all use cases are addressed.
 > - **Review the built-in policies:** Locate the built-in anomaly detection policies in Defender for Cloud Apps (that have Power BI in their name). Update the alert settings for the built-in policies, when necessary.
-> - **Proceed with a broader rollout:** Continue to work through your iterative rollout plan. Update the Azure AD conditional access policy to apply to a broader set of users, as appropriate. Update individual policies in Defender for Cloud Apps to apply to a broader set of users, as appropriate.
+> - **Proceed with a broader rollout:** Continue to work through your iterative rollout plan. Update the Microsoft Entra conditional access policy to apply to a broader set of users, as appropriate. Update individual policies in Defender for Cloud Apps to apply to a broader set of users, as appropriate.
 > - **Monitor, tune, and adjust:** Invest resources to review policy match alerts and audit logs on a frequent basis. Investigate any false positives and adjust policies when necessary.
 
 > [!TIP]

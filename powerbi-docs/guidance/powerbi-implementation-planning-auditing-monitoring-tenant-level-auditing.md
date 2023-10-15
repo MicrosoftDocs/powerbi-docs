@@ -50,7 +50,7 @@ When you plan to build a tenant-level auditing solution, plan to spend time on t
 - **Phase 2: Prerequisites and setup**
   - [Create storage account](#create-storage-account)
   - [Install software and set up services](#install-software-and-set-up-services)
-  - [Register an Azure AD application](#register-an-azure-ad-application)
+  - [Register a Microsoft Entra application](#register-an-azure-ad-application)
   - [Set Power BI tenant settings](#set-power-bi-tenant-settings)
 - **Phase 3: Solution development and analytics**
   - [Extract and store the raw data](#extract-and-store-the-raw-data)
@@ -187,7 +187,7 @@ There are two main ways to build a tenant inventory. For more information about 
 
 #### Users and groups data
 
-As your analytical needs grow, you'll likely determine that you'd like to include data about users and groups in your end-to-end auditing solution. To retrieve that data, you can use [Microsoft Graph](/graph/overview-major-services), which is the authoritative source for information about Azure Active Directory (Azure AD) users and groups.
+As your analytical needs grow, you'll likely determine that you'd like to include data about users and groups in your end-to-end auditing solution. To retrieve that data, you can use [Microsoft Graph](/graph/overview-major-services), which is the authoritative source for information about Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) users and groups.
 
 Data that's retrieved from the Power BI REST APIs includes an email address to describe the user, or the name of a security group. This data is a snapshot at a given point in time.
 
@@ -347,7 +347,7 @@ It's also possible that different people perform different roles, depending on t
 Consider several examples.
 
 - **Example 1:** The audit data shows that some users frequently export data to Excel. _Action taken:_ The COE contacts the specific users to understand their needs and to teach them better alternatives.
-- **Example 2:** The audit data shows external user access occurs in an unexpected way. _Actions taken:_ An IT system administrator updates the relevant Azure AD settings for external user access. The Power BI administrator updates the tenant setting related to external user access. The COE updates documentation and training for content creators who manage security. For more information, see [Strategy for external users](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-external-users).
+- **Example 2:** The audit data shows external user access occurs in an unexpected way. _Actions taken:_ An IT system administrator updates the relevant Microsoft Entra ID settings for external user access. The Power BI administrator updates the tenant setting related to external user access. The COE updates documentation and training for content creators who manage security. For more information, see [Strategy for external users](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-external-users).
 - **Example 3:** The audit data shows that several data models define the same measure differently (available from the [metadata scanning APIs](/power-bi/enterprise/service-admin-metadata-scanning), if allowed by the detailed metadata tenant settings). _Action taken:_ The data governance committee starts a project to define common definitions. The COE updates documentation and training for content creators who create data models. The COE also works with content creators to update their models, as appropriate. For more information about retrieving detailed metadata, see [Access tenant inventory data](#access-tenant-inventory-data) later in this article.
 
 > [!NOTE]
@@ -512,7 +512,7 @@ For administrators with sufficient permissions, the audit log search tool in the
 
 ###### Defender for Cloud Apps user interface
 
-[Defender for Cloud Apps](powerbi-implementation-planning-defender-for-cloud-apps.md) is available to administrators in Microsoft 365 Defender (Microsoft 365 portal). It includes a user interface to view and search activity logs for various cloud services, including Power BI. It displays the same log events that originate in the Microsoft Purview compliance portal, in addition to other events like user sign-in activity from Azure AD.
+[Defender for Cloud Apps](powerbi-implementation-planning-defender-for-cloud-apps.md) is available to administrators in Microsoft 365 Defender (Microsoft 365 portal). It includes a user interface to view and search activity logs for various cloud services, including Power BI. It displays the same log events that originate in the Microsoft Purview compliance portal, in addition to other events like user sign-in activity from Microsoft Entra ID.
 
 The audit log interface in Defender for Cloud Apps is a good option for manual auditing processes. For more information, see [Defender for Cloud Apps](#defender-for-cloud-apps) later in this article.
 
@@ -553,26 +553,26 @@ We recommend that you review the remainder of this article before choosing a tec
 How you plan to set up authentication is a critical decision. It's often one of the most difficult aspects when you get started with auditing and monitoring. You should carefully consider available options to make an informed decision.
 
 > [!IMPORTANT]
-> Consult with your IT and security teams on this matter. Take the time to learn the basics of how security in Azure AD works.
+> Consult with your IT and security teams on this matter. Take the time to learn the basics of how security in Microsoft Entra works.
 
-Not every API on the internet requires authentication. However, all the Power BI REST APIs require authentication. When you access tenant-level auditing data, the authentication process is managed by the [Microsoft identity platform](/azure/active-directory/develop/v2-overview). It's an evolution of the Azure AD identity service that's built on industry standard protocols.
+Not every API on the internet requires authentication. However, all the Power BI REST APIs require authentication. When you access tenant-level auditing data, the authentication process is managed by the [Microsoft identity platform](/azure/active-directory/develop/v2-overview). It's an evolution of the Microsoft Entra identity service that's built on industry standard protocols.
 
 > [!TIP]
 > The Microsoft identity platform [glossary of terms](/azure/active-directory/develop/developer-glossary) is a resource that helps you become familiar with the basic concepts.
 
 Before you retrieve audit data, you must first _authenticate_, which is known as _signing in_. The concepts of [authentication and authorization](/azure/active-directory/develop/authentication-vs-authorization) are separate, yet related. An _authentication_ process verifies the identity of _who_ is making the request. An _authorization_ process grants (or denies) access to a system or resource by verifying _what_ the user or service principal has permission to do.
 
-When a user or service principal authenticates, an Azure AD access token is issued to a resource server, such as a Power BI REST API or a Microsoft Graph API. By default, an access token expires after one hour. A refresh token can be requested, if needed.
+When a user or service principal authenticates, a Microsoft Entra access token is issued to a resource server, such as a Power BI REST API or a Microsoft Graph API. By default, an access token expires after one hour. A refresh token can be requested, if needed.
 
 There are two types of access tokens:
 
 - **User tokens:** Issued on behalf of a user with a known identity.
-- **App-only tokens:** Issued on behalf of an Azure AD application (service principal).
+- **App-only tokens:** Issued on behalf of a Microsoft Entra application (service principal).
 
-For more information, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals#application-object).
+For more information, see [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals#application-object).
 
 > [!NOTE]
-> An Azure AD application is an identity configuration that allows an automated process to integrate with Azure AD. In this article, it's referred to as an _app registration_. The term _service principal_ is also used commonly in this article. These terms are described in more detail later in this section.
+> A Microsoft Entra application is an identity configuration that allows an automated process to integrate with Microsoft Entra ID. In this article, it's referred to as an _app registration_. The term _service principal_ is also used commonly in this article. These terms are described in more detail later in this section.
 
 > [!TIP]
 > The easiest way to authenticate is to use the [Connect-PowerBIServiceAccount](/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount) cmdlet from the Power BI Management module. You may see other authentication-related cmdlets in articles and blog posts online. For example, there are the `Login-PowerBI` and `Login-PowerBIServiceAccount` cmdlets, which are aliases for `Connect-PowerBIServiceAccount` cmdlet. There's also the [Disconnect-PowerBIServiceAccount](/powershell/module/microsoftpowerbimgmt.profile/disconnect-powerbiserviceaccount) cmdlet that you can use to explicitly sign out at the end of a process.
@@ -595,7 +595,7 @@ User authentication is useful in the following situations.
   - **User permissions for user APIs:** You need to use your Power BI user permissions to send a request to a _user API_. For more information, see [Choose a user API or admin API](#choose-a-user-api-or-admin-api).
 - **Interactive sign in:** You want to sign in interactively, which requires you to input your email address and password. For example, you must sign in interactively to use the [Try-it](#try-it-in-api-documentation) experience, which is found in Microsoft API documentation.
 - **Track who accessed tenant metadata:** When individual users and administrators send API requests, you might want to audit who those individuals are. When you authenticate with a service principal (described [next](#service-principal-authentication)), the user ID captured by the activity log is the Application ID. If multiple administrators authenticate with the same service principal, it might be difficult to know which administrator accessed the data.
-- **Shared administrator account:** Some IT teams use a shared administrator account. Depending on how it's implemented and controlled, it may not be a best practice. Instead of a shared account, you should consider using Azure AD [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM), which can grant occasional and temporary Power BI administrator rights for a user.
+- **Shared administrator account:** Some IT teams use a shared administrator account. Depending on how it's implemented and controlled, it may not be a best practice. Instead of a shared account, you should consider using Microsoft Entra [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM), which can grant occasional and temporary Power BI administrator rights for a user.
 - **APIs that only support user authentication:** Occasionally, you might need to use an API that doesn't support authentication by a service principal. In documentation, each API notes whether a service principal can call it.
 
 > [!IMPORTANT]
@@ -603,15 +603,15 @@ User authentication is useful in the following situations.
 
 ##### Service principal authentication
 
-Most organizations have one Azure AD tenant, so the terms _app registration_ and _service principal_ tend to be used interchangeably. When you [register](/azure/active-directory/develop/app-objects-and-service-principals#application-registration) an Azure AD app, there are two components.
+Most organizations have one Microsoft Entra tenant, so the terms _app registration_ and _service principal_ tend to be used interchangeably. When you [register](/azure/active-directory/develop/app-objects-and-service-principals#application-registration) a Microsoft Entra app, there are two components.
 
-- **App registration:** An [app registration](/azure/active-directory/develop/app-objects-and-service-principals#application-object) is globally unique. It's the global definition of a registered Azure AD app that can be used by multiple tenants. An app registration is also known as a _client application_ or the _actor_. Typically, the term _client application_ implies a user machine. However, that's not the situation for app registrations. In the Azure portal, Azure AD applications are found on the _App registrations_ page in Azure AD.
-- **Service principal:** A [service principal](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is the local representation of the app registration for use in your specific tenant. The service principal is derived from the registered Azure AD app. For organizations with multiple Azure AD tenants, the same app registration can be referenced by more than one service principal. In the Azure portal, service principals can be found on the _Enterprise applications_ page in Azure AD.
+- **App registration:** An [app registration](/azure/active-directory/develop/app-objects-and-service-principals#application-object) is globally unique. It's the global definition of a registered Microsoft Entra app that can be used by multiple tenants. An app registration is also known as a _client application_ or the _actor_. Typically, the term _client application_ implies a user machine. However, that's not the situation for app registrations. In the Azure portal, Microsoft Entra applications are found on the _App registrations_ page in Microsoft Entra ID.
+- **Service principal:** A [service principal](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is the local representation of the app registration for use in your specific tenant. The service principal is derived from the registered Microsoft Entra app. For organizations with multiple Microsoft Entra tenants, the same app registration can be referenced by more than one service principal. In the Azure portal, service principals can be found on the _Enterprise applications_ page in Microsoft Entra ID.
 
 Because the service principal is the local representation, the term _service principal authentication_ is the most common way to refer to sign-ins.
 
 > [!TIP]
-> Your Azure AD administrator can tell you who's allowed to [create](/azure/active-directory/develop/active-directory-how-applications-are-added#who-has-permission-to-add-applications-to-my-azure-ad-instance), and consent to, an app registration in your organization.
+> Your Microsoft Entra administrator can tell you who's allowed to [create](/azure/active-directory/develop/active-directory-how-applications-are-added#who-has-permission-to-add-applications-to-my-azure-ad-instance), and consent to, an app registration in your organization.
 
 Service principal authentication is useful in the following situations.
 
@@ -621,7 +621,7 @@ Service principal authentication is useful in the following situations.
 - **Use by multiple administrators:** You want to allow multiple administrators or users to use the same service principal.
 - **Technical blockers:** There's a technical blocker that prevents the use of user authentication. Common technical blockers include:
   - **Multi-factor authentication (MFA):** Automated auditing processes (that run unattended) can't authenticate by using a user account when multi-factor authentication is enabled.
-  - **Password hash synchronization:** Azure AD requires [password hash synchronization](/azure/active-directory/hybrid/whatis-phs) for a user account to authenticate. Sometimes, IT or a cybersecurity team might disable this functionality.
+  - **Password hash synchronization:** Microsoft Entra ID requires [password hash synchronization](/azure/active-directory/hybrid/whatis-phs) for a user account to authenticate. Sometimes, IT or a cybersecurity team might disable this functionality.
 
 ###### App registration purpose and naming convention
 
@@ -634,7 +634,7 @@ Here are the parts of the naming convention.
 - **Workload:** Usually equivalent to a data source (for example, Power BI data or Microsoft Graph data).
 - **Purpose:** Similar to the level of permissions (for example, Read versus ReadWrite). As described below, the purpose helps you to follow the [principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access) when you create separate app registrations that can only read data.
 - **Target audience:** Optional. Depending on the workload and purpose, the target audience allows you to determine the intended users of the app registration.
-- **Object type:** _AADApp_ is included for clarity.
+- **Object type:** _EntraApp_ is included for clarity.
 
 Your naming convention can be more specific when you have multiple tenants or multiple environments (such as development and production).
 
@@ -642,9 +642,9 @@ The following table shows examples of app registrations that could be used to ex
 
 | **App registration name** | **Purpose** | **Target audience** |
 | --- | --- | --- |
-| PowerBIData-Read-AdminAPIs-AADApp | Extract tenant-wide metadata for auditing and administration of Power BI. Admin APIs are always read-only and may not have permissions granted in Azure AD (Power BI tenant setting only). | Power BI administrators and the Center of Excellence |
-| PowerBIData-ReadWrite-PowerBIAdministrators-AADApp | Manage the Power BI tenant. Requires read/write permissions to create or update resources. | Power BI administrators and the Center of Excellence |
-| GraphData-Read-PowerBIAdministrators-AADApp | Extract users and groups data for auditing and administration of Power BI. Requires read permissions. | Power BI administrators and the Center of Excellence |
+| PowerBIData-Read-AdminAPIs-EntraApp | Extract tenant-wide metadata for auditing and administration of Power BI. Admin APIs are always read-only and may not have permissions granted in Microsoft Entra ID (Power BI tenant setting only). | Power BI administrators and the Center of Excellence |
+| PowerBIData-ReadWrite-PowerBIAdministrators-EntraApp | Manage the Power BI tenant. Requires read/write permissions to create or update resources. | Power BI administrators and the Center of Excellence |
+| GraphData-Read-PowerBIAdministrators-EntraApp | Extract users and groups data for auditing and administration of Power BI. Requires read permissions. | Power BI administrators and the Center of Excellence |
 
 Managing multiple app registrations for different purposes involves more effort. However, you can benefit from several advantages.
 
@@ -657,7 +657,7 @@ Managing multiple app registrations for different purposes involves more effort.
 
 There are two main ways that an app registration can access data and resources. It involves [permissions and consent](/azure/active-directory/develop/permissions-consent-overview).
 
-- **App-only permissions:** Access and authorization are handled by the service principal without a signed-in user. That method of authentication is helpful for automation scenarios. When using app-only permissions, it's critical to understand that permissions are _not_ assigned in Azure AD. Rather, permissions are assigned in one of two ways:
+- **App-only permissions:** Access and authorization are handled by the service principal without a signed-in user. That method of authentication is helpful for automation scenarios. When using app-only permissions, it's critical to understand that permissions are _not_ assigned in Microsoft Entra ID. Rather, permissions are assigned in one of two ways:
   - **For running admin APIs:** Certain Power BI tenant settings allow access to the endpoints for the admin APIs (that return tenant-wide auditing metadata). For more information, see [Set Power BI tenant settings](#set-power-bi-tenant-settings) later in this article.
   - **For running user APIs:** Power BI workspace and item permissions apply. Standard Power BI permissions control what data can be returned to a service principal when running user APIs (that return auditing data based on permissions of the user or service principal that's invoking the API).
 - **Delegated permissions:** Scope-based permissions are used. The service principal accesses data on behalf of the user that's currently signed in. It means that the service principal can't access anything beyond what the signed-in user can access. Be aware that this it's a different concept from user-only authentication, described previously. Because a custom application is required to properly handle the combination of user and app permissions, delegated permissions are rarely used for auditing scenarios. This concept is commonly misunderstood, leading to many app registrations that are overprovisioned with permissions.
@@ -665,7 +665,7 @@ There are two main ways that an app registration can access data and resources. 
 > [!IMPORTANT]
 > In this article, the focus is only on user authentication or app-only authentication. Delegated permissions (with an interactive user and the service principal) could play an important role when programmatically embedding Power BI content. However, we strongly discourage you from setting up delegated permissions for extracting auditing data. Every API limits how frequently it can be run (with throttling in place), so it isn't practical to have different users directly accessing the raw audit data. Instead, we recommend that you extract the raw audit data once (with a centralized process), and then make the curated audit data available to authorized users downstream.
 
-For more information, see [Register an Azure AD app](#register-an-azure-ad-application) later in this article.
+For more information, see [Register a Microsoft Entra app](#register-an-azure-ad-application) later in this article.
 
 ###### App registration secrets
 
@@ -696,12 +696,12 @@ Here are several secure methods you can use to manage passwords, secrets, and ke
 
 ##### Microsoft Authentication Library
 
-Support for Azure AD Authentication Library (ADAL) ended in December  2022. Going forward, you should use [Microsoft Authentication Library](/azure/active-directory/develop/msal-overview) (MSAL). The security team in your organization should be familiar with this significant change.
+Support for Azure AD Authentication Library (ADAL) ended in December 2022. Going forward, you should use [Microsoft Authentication Library](/azure/active-directory/develop/msal-overview) (MSAL). The security team in your organization should be familiar with this significant change.
 
 While it's not important for Power BI professionals to deeply understand the transition to MSAL, you should adhere to the following recommendations.
 
 - Use the latest version of the Power BI Management module when you authenticate with the [Connect-PowerBIServiceAccount](/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount) PowerShell cmdlet. It switched from ADAL to MSAL in version 1.0.946 (February 26, 2021).
-- Use the Azure AD V2 endpoint when you authenticate directly in your script. The Azure AD V2 endpoint uses MSAL, whereas the Azure AD V1 endpoint uses ADAL.
+- Use the Microsoft Entra V2 endpoint when you authenticate directly in your script. The Microsoft Entra V2 endpoint uses MSAL, whereas the Microsoft Entra V1 endpoint uses ADAL.
 - Discontinue the use of APIs and modules that are deprecated. For more information, see [Deprecated APIs and modules](#deprecated-apis-and-modules) later in this article.
 - If you find a community solution online, be sure that it's using MSAL for authentication rather than ADAL.
 
@@ -1032,7 +1032,7 @@ The user interface in the Microsoft Purview compliance portal is useful for manu
 
 The portal in [Defender for Cloud Apps](powerbi-implementation-planning-defender-for-cloud-apps.md) is a convenient place to view activities and alerts without the need to create a script to extract and download the data. It also allows you to view data from the Power BI activity log and user sign-ins.
 
-Defender for Cloud Apps includes a user interface to view and search activity logs for various cloud services, including Power BI. It displays the same log events that originate in the Microsoft Purview unified audit log, and it includes other events like user sign-in activity from Azure AD.
+Defender for Cloud Apps includes a user interface to view and search activity logs for various cloud services, including Power BI. It displays the same log events that originate in the Microsoft Purview unified audit log, and it includes other events like user sign-in activity from Microsoft Entra ID.
 
 Like the Microsoft Purview compliance portal (described in the previous section), Defender for Cloud Apps has a searchable user interface. However, the filter options are different. In addition to the standard 30-day history, you can use Defender for Cloud Apps to view up to six months of activity log history (in seven-day increments).
 
@@ -1221,9 +1221,9 @@ Here's the sequence of steps your process should follow when using the scanner A
 
 In addition to the identifying information (like an email address) that's included in the user activity data, it's valuable to retrieve additional information such as location or organizational details. You can use [Microsoft Graph](/graph/overview) to retrieve data about users, groups, service principals, and licenses. Microsoft Graph comprises a set of APIs and client libraries that allow you to retrieve audit data from a wide variety of services.
 
-Here are some details about the Azure AD objects that you can access.
+Here are some details about the Microsoft Entra objects that you can access.
 
-- **[User](/azure/active-directory/fundamentals/add-users-azure-active-directory):** An identity that exists in Azure AD as a work, school, or Microsoft account. The term _domain user_ is often used to describe organizational users, while the formal term is _user principal name_ (UPN). A UPN is usually the same value as the user's email address (however, if an email address changes, the UPN doesn't change because it's immutable). There's also a unique Microsoft Graph ID for each user. Often, a user account is associated with one person. Some organizations create users that are _service accounts_ that are used for automated activities or for administrative tasks.
+- **[User](/azure/active-directory/fundamentals/add-users-azure-active-directory):** An identity that exists in Microsoft Entra as a work, school, or Microsoft account. The term _domain user_ is often used to describe organizational users, while the formal term is _user principal name_ (UPN). A UPN is usually the same value as the user's email address (however, if an email address changes, the UPN doesn't change because it's immutable). There's also a unique Microsoft Graph ID for each user. Often, a user account is associated with one person. Some organizations create users that are _service accounts_ that are used for automated activities or for administrative tasks.
 - **[Service principal](/azure/active-directory/develop/app-objects-and-service-principals):** A different type of identity, that's provisioned when you create an [app registration](/azure/active-directory/develop/quickstart-register-app). A service principal is intended for unattended, automated activities. For more information, see [Determine the authentication method](#determine-the-authentication-method) earlier in this article.
 - **[Group](/azure/active-directory/fundamentals/concept-learn-about-groups):** A collection of users and service principals. There are several [types of groups](powerbi-implementation-planning-security-tenant-level-planning.md#type-of-group) that you can use to simplify permissions management. For more information, see [Strategy for using groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
 
@@ -1233,14 +1233,14 @@ Here are some details about the Azure AD objects that you can access.
 The users and groups data that you retrieve is a _snapshot_ that describes the current state at a given point in time.
 
 > [!TIP]
-> For more information about users, service principals, and groups, see [Integration with Azure AD](powerbi-implementation-planning-security-tenant-level-planning.md#integration-with-azure-ad).
+> For more information about users, service principals, and groups, see [Integration with Microsoft Entra ID](powerbi-implementation-planning-security-tenant-level-planning.md#integration-with-microsoft-entra-id).
 
 ##### Analytical attributes
 
 For Power BI tenant-level auditing, you might extract and store the following attributes from Microsoft Graph.
 
 - **Full name of users:** Many data sources only include the email address of the user that performed an activity or who's assigned to a role. Use this attribute when you want to display the full name (display name) in analytical reports. Using the full name makes reports more user-friendly.
-- **Other user properties:** Other descriptive attributes about users may be available in Azure AD. Some examples of built-in [user profile attributes](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) that have analytical value include job title, department, manager, region, and office location.
+- **Other user properties:** Other descriptive attributes about users may be available in Microsoft Entra ID. Some examples of built-in [user profile attributes](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) that have analytical value include job title, department, manager, region, and office location.
 - **Members of a security group:** Most data sources provide the name of a group (for example, the Power BI activity log records that a security group was assigned to a workspace role). Retrieving the group membership improves your ability to fully analyze what an individual user is doing or has access to.
 - **User licenses:** It's useful to analyze which [user licenses](/power-bi/fundamentals/service-features-license-type)—free, Power BI Pro, or Power BI Premium Per User (PPU)—are assigned to users. This data can help you to identify who's not using their license. It also helps you to analyze all users (distinct users with a license) versus active users (with recent activities). If you're considering adding or expanding your Power BI Premium licenses, we recommend that you analyze the user license data together with user activity data to perform a cost analysis.
 - **Members of the administrator roles:** You can compile a list of your Power BI administrators are (which includes Power Platform administrators and global administrators).
@@ -1257,7 +1257,7 @@ Here are some other attributes you might extract and store.
 - **Disabled users:** When a user leaves the organization, usually an administrator disables their account. You can create a process to check whether disabled users are workspace administrators or dataset owners.
 
 > [!TIP]
-> The Power BI [activity log](/power-bi/admin/service-admin-auditing) includes an event that records when a user signs up for a [trial license](/power-bi/fundamentals/service-self-service-signup-purchase-for-power-bi#information-about-power-bi-trials). You can combine that event with the user license data (sourced from Azure AD) to produce a complete picture.
+> The Power BI [activity log](/power-bi/admin/service-admin-auditing) includes an event that records when a user signs up for a [trial license](/power-bi/fundamentals/service-self-service-signup-purchase-for-power-bi#information-about-power-bi-trials). You can combine that event with the user license data (sourced from Microsoft Entra ID) to produce a complete picture.
 
 ##### Retrieve users and groups data
 
@@ -1290,7 +1290,7 @@ Use [this link](https://developer.microsoft.com/graph/graph-explorer) to open Gr
 
 ###### Microsoft Graph APIs and SDKs
 
-Use the [Microsoft Graph APIs](/graph/api/overview) to retrieve users and groups data. You can also use it to retrieve data from services such as Azure AD, SharePoint Online, Teams, Exchange, Outlook, and more.
+Use the [Microsoft Graph APIs](/graph/api/overview) to retrieve users and groups data. You can also use it to retrieve data from services such as Microsoft Entra ID, SharePoint Online, Teams, Exchange, Outlook, and more.
 
 The [Microsoft Graph SDKs](/graph/sdks/sdks-overview) act as an _API wrapper_ on top of the underlying Microsoft Graph APIs. An SDK is a _software development kit_ that bundles tools and functionality together. The Microsoft Graph SDKs expose the entire set of Microsoft Graph APIs.
 
@@ -1330,13 +1330,13 @@ Beginning with Az version 7, the Az cmdlets now reference the Microsoft Graph AP
 You might find articles and blog posts online that suggest alternative options that aren't presented in this section. We strongly recommend that you _**do not**_ create new solutions (and/or migrate your existing solutions) by using any of the following APIs or modules.
 
 - **AzureRM PowerShell modules:** Deprecated and will be retired. They've been replaced with the Az PowerShell module.
-- **Azure AD Graph API and Azure AD PowerShell module:** Deprecated and will be retired. This change is the result of the migration from Azure AD Graph to Microsoft Graph (note that Graph appears in both names, but _Microsoft Graph_ is the future direction). All future PowerShell investments will be made in the Microsoft Graph PowerShell SDK.
+- **Azure AD Graph API and Azure AD PowerShell module:** Deprecated and will be retired. This change is the result of the migration from Azure AD Graph to Microsoft Graph (note that Graph appears in both names, but _Microsoft Graph_ is the future direction). All future PowerShell investments will be made in the Microsoft Graph PowerShell SDK. (Azure AD is [now known as Microsoft Entra ID](/azure/active-directory/fundamentals/new-name).)
 - **MS Online (MSOL) PowerShell module:** Deprecated and will be retired. All future PowerShell investments will be made in the Microsoft Graph PowerShell SDK.
 
 > [!CAUTION]
 > Be sure to confirm the status of any deprecated API or module that you're currently using. For more information about the retirement of AzureRM, see [this announcement](https://azure.microsoft.com/updates/update-your-scripts-to-use-az-powershell-modules-by-29-february-2024/).
 >
-> For more information about Azure AD and MSOL, see [this retirement announcement post](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-september-2022-train/ba-p/2967454).
+> For more information about Microsoft Entra ID and MSOL, see [this retirement announcement post](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-september-2022-train/ba-p/2967454).
 >
 > If you have questions or require clarification on the future direction of programmatic data access, contact your Microsoft account team.
 
@@ -1422,19 +1422,19 @@ If you've chosen to use any Azure services (such as Azure Functions, Azure Autom
 > - **Set up servers:** If applicable, install the necessary tools on any servers or virtual machines that are present in your architecture.
 > - **Set up Azure services:** If applicable, provision and set up each Azure service. Assign permissions for each administrator/developer who'll be doing development work.
 
-### Register an Azure AD application
+### Register a Microsoft Entra application
 
-At this point, you've decided [how to authenticate](#determine-the-authentication-method). We recommend that you register an Azure AD application (service principal). Commonly referred to as an _app registration_, it should be used for unattended operations that you'll automate.
+At this point, you've decided [how to authenticate](#determine-the-authentication-method). We recommend that you register a Microsoft Entra application (service principal). Commonly referred to as an _app registration_, it should be used for unattended operations that you'll automate.
 
 For more information about how to create an app registration to retrieve tenant-level auditing data, see [Enable service principal authentication for read-only admin APIs](/power-bi/enterprise/read-only-apis-service-principal-authentication).
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
-**Checklist** - When registering an Azure AD application, key decisions and actions include:
+**Checklist** - When registering a Microsoft Entra application, key decisions and actions include:
 
 > [!div class="checklist"]
 > - **Check whether an existing app registration exists:** Verify with IT whether an existing app registration is available for the purpose of running admin APIs. If so, determine whether the existing one should be used, or whether a new one should be created.
-> - **Create a new app registration:** Create an app registration when appropriate. Consider using an app name such as _PowerBI-AdminAPIs-AADApp_, which clearly describes its purpose.
+> - **Create a new app registration:** Create an app registration when appropriate. Consider using an app name such as _PowerBI-AdminAPIs-EntraApp_, which clearly describes its purpose.
 > - **Create a secret for the app registration:** Once the app registration exists, create a secret for it. Set the expiration date based on how often you intend to rotate the secret.
 > - **Securely save the values:** Store the secret, app ID (client ID), and the tenant ID because you'll need them to authenticate with the service principal. Use a location that's secure, such as an organizational password vault. (If you need to request creation of an app registration from IT, specify that you need these values returned to you.)
 > - **Create a security group:** Create (or request) a security group that will be used for Power BI. Consider using group name such as _Power BI admin service principals_, which signifies that the group will be used to access tenant-wide metadata.

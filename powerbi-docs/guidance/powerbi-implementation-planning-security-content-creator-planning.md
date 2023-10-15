@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Content creator security planning"
 description: "Learn about content creator security planning for Power BI."
-author: data-goblin
-ms.author: v-kurtbuhler
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -663,8 +663,8 @@ Sharing a datamart is targeted at content creators (rather than consumers). It g
 
 Sharing a datamart allows content creators to:
 
-- **Build content by using the auto-generated dataset.** The dataset is the semantic layer on which Power BI reports can be built. Most report creators should use the dataset.
-- **Connect to and query the Azure SQL Database.** The relational database is useful for content creators who want to create new datasets or paginated reports. They can write structured query language (SQL) queries to retrieve data by using the SQL endpoint.
+- **Build content by using the auto-generated dataset:** The dataset is the semantic layer on which Power BI reports can be built. Most report creators should use the dataset.
+- **Connect to and query the Azure SQL Database:** The relational database is useful for content creators who want to create new datasets or paginated reports. They can write structured query language (SQL) queries to retrieve data by using the SQL endpoint.
 
 #### Datamart row-level security
 
@@ -859,7 +859,7 @@ If a different user needs to set up refresh or set dataset parameters, they must
 > [!CAUTION]
 > Taking dataset ownership permanently removes any stored credentials for the dataset. Credentials must be re-entered to allow data refresh operations to resume.
 
-Ideally, the dataset owner is the user who's responsible for the dataset. You should update the dataset owner when they leave the organization or change roles. Also, be aware that when the dataset owner's user account is disabled in Azure Active Directory (Azure AD), data refresh is automatically disabled. In this case, another user must take ownership of the dataset to allow data refresh operations to resume.
+Ideally, the dataset owner is the user who's responsible for the dataset. You should update the dataset owner when they leave the organization or change roles. Also, be aware that when the dataset owner's user account is disabled in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)), data refresh is automatically disabled. In this case, another user must take ownership of the dataset to allow data refresh operations to resume.
 
 ### Dataflow owner
 

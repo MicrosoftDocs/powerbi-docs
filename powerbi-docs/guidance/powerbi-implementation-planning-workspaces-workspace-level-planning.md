@@ -159,7 +159,7 @@ Different business units and departments may use workspaces slightly differently
 
 The following options present some suggestions about how you can organize workspaces by subject and scope.
 
-In some cases, you may already have some useful [Azure Active Directory (Azure AD) groups](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) in place. You can then use them to manage access to resources for the defined subject area and scope. However, you might need to create some new groups to suit this purpose. See the [workspace access](#workspace-access) section below for considerations.
+In some cases, you may already have some useful [groups](/azure/active-directory/fundamentals/new-name) established in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)). You can then use them to manage access to resources for the defined subject area and scope. However, you might need to create some new groups to suit this purpose. See the [workspace access](#workspace-access) section below for considerations.
 
 #### Option 1: Workspace per subject area or project
 
@@ -188,7 +188,7 @@ The advantages of option 2 include:
 
 - Getting started with planning is simple. All content needed by the people that work in that department will reside in one workspace.
 - It's easy for users to know which workspace to use since all of their content is published to the workspace associated with their department or team.
-- Managing security roles can be straightforward, especially when Azure AD groups are assigned to workspace roles (which is a best practice).
+- Managing security roles can be straightforward, especially when Microsoft Entra groups are assigned to workspace roles (which is a best practice).
 
 The disadvantages of option 2 include:
 
@@ -422,8 +422,8 @@ It's possible to connect a workspace to an Azure Data Lake Storage Gen2 (ADLS Ge
 **Checklist** - When considering workspace integration with ADLS Gen2, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Decide whether the workspace will be used in ways that require Azure storage:** Consider whether a bring-your-own-data-lake scenario would be useful for the storage of dataflows and/or whether you have requirements to use the dataset backup and restore functionality.
-> - **Determine which Azure storage account will be used:** Select an Azure Storage account that has the [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled (ADLS Gen2) for tenant-level (centralized) storage of dataflows data or dataset backups. Ensure you have the Azure storage account information readily available.
+> - **Decide whether the workspace will be used in ways that require Azure Storage:** Consider whether a bring-your-own-data-lake scenario would be useful for the storage of dataflows and/or whether you have requirements to use the dataset backup and restore functionality.
+> - **Determine which Azure Storage account will be used:** Select an Azure Storage account that has the [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled (ADLS Gen2) for tenant-level (centralized) storage of dataflows data or dataset backups. Ensure you have the Azure Storage account information readily available.
 > - **Configure the tenant-level storage account:** In the Fabric admin portal, set the tenant-level ADLS Gen2 storage account.
 > - **Decide whether workspace administrators may connect a storage account:** Have discussions to understand the needs of decentralized teams, and whether individual teams are currently maintaining their own Azure Storage accounts. Decide whether this capability should be enabled.
 > - **Configure the admin setting for workspace-level storage:** In the Fabric admin portal, enable the option that allows workspace administrators to connect their own storage account.

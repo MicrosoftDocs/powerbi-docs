@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Organization-level information protection"
 description: "Learn about getting started with information protection with organization-level planning activities for Power BI."
-author: paulinbar
-ms.author: painbar
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -84,7 +84,7 @@ Your team should also include the following system administrators:
 
 - Microsoft Purview administrator
 - Microsoft 365 administrator
-- Azure Active Directory (Azure AD) administrator
+- Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) administrator
 - Defender for Cloud Apps administrator
 - Power BI administrator
 
