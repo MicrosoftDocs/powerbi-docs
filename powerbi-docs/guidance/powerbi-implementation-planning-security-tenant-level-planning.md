@@ -142,7 +142,7 @@ There are advantages when an external user is from another organization that als
 
 There are two aspects to enabling and managing how external user access will work:
 
-- [Microsoft Entra ID settings](whitepaper-azure-b2b-power-bi.md#additional-azure-ad-settings-that-affect-experiences-in-power-bi-related-to-azure-ad-b2b) that are managed by a Microsoft Entra ID administrator. These Microsoft Entra ID settings are a prerequisite.
+- [Microsoft Entra ID settings](whitepaper-azure-b2b-power-bi.md#additional-microsoft-entra-id-settings-that-affect-experiences-in-power-bi-related-to-microsoft-entra-b2b) that are managed by a Microsoft Entra ID administrator. These Microsoft Entra ID settings are a prerequisite.
 - [Power BI tenant settings](/power-bi/admin/service-admin-portal-export-sharing) that are managed by a Power BI administrator in the admin portal. These settings will control the user experience in the Power BI service.
 
 ### Guest invitation process
@@ -150,7 +150,7 @@ There are two aspects to enabling and managing how external user access will wor
 There are two ways to invite guest users to your tenant.
 
 - **Planned invitations:** You can set up [external users](/azure/devops/organizations/accounts/add-external-user) ahead of time in Microsoft Entra ID. That way, the guest account is ready whenever a Power BI user needs to use it for assigning permissions (for example, app permissions). Although it requires some up-front planning, it's the most consistent process because all Power BI security capabilities are supported. An administrator can use [PowerShell](/azure/active-directory/external-identities/b2b-quickstart-invite-powershell) to efficiently add a large number of external users.
-- **Ad hoc invitations:** A guest account can be automatically generated in Microsoft Entra ID at the time that a Power BI user shares or distributes content to an external user (who wasn't previously set up). This approach is useful when you don't know ahead of time who the external users will be. However, this capability must first be [enabled in Microsoft Entra ID](whitepaper-azure-b2b-power-bi.md#additional-microsoft-entra-id-settings-that-affect-experiences-in-power-bi-related-to-azure-ad-b2b). The ad hoc invitation approach works for [ad hoc per-item permissions](whitepaper-azure-b2b-power-bi.md#ad-hoc-per-item-sharing) and app permissions.
+- **Ad hoc invitations:** A guest account can be automatically generated in Microsoft Entra ID at the time that a Power BI user shares or distributes content to an external user (who wasn't previously set up). This approach is useful when you don't know ahead of time who the external users will be. However, this capability must first be [enabled in Microsoft Entra ID](whitepaper-azure-b2b-power-bi.md#additional-microsoft-entra-id-settings-that-affect-experiences-in-power-bi-related-to-microsoft-entra-b2b). The ad hoc invitation approach works for [ad hoc per-item permissions](whitepaper-azure-b2b-power-bi.md#ad-hoc-per-item-sharing) and app permissions.
 
 > [!TIP]
 > Not every security option in the Power BI service supports triggering an ad hoc invitation. For this reason, there's an inconsistent user experience when assigning permissions (for example workspace security versus per-item permissions versus app permissions). Whenever possible, we recommend that you use the planned invitation approach because it results in a consistent user experience.
