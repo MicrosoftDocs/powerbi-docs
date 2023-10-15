@@ -50,7 +50,7 @@ When you plan to build a tenant-level auditing solution, plan to spend time on t
 - **Phase 2: Prerequisites and setup**
   - [Create storage account](#create-storage-account)
   - [Install software and set up services](#install-software-and-set-up-services)
-  - [Register a Microsoft Entra application](#register-an-azure-ad-application)
+  - [Register a Microsoft Entra application](#register-a-microsoft-entra-application)
   - [Set Power BI tenant settings](#set-power-bi-tenant-settings)
 - **Phase 3: Solution development and analytics**
   - [Extract and store the raw data](#extract-and-store-the-raw-data)
@@ -665,7 +665,7 @@ There are two main ways that an app registration can access data and resources. 
 > [!IMPORTANT]
 > In this article, the focus is only on user authentication or app-only authentication. Delegated permissions (with an interactive user and the service principal) could play an important role when programmatically embedding Power BI content. However, we strongly discourage you from setting up delegated permissions for extracting auditing data. Every API limits how frequently it can be run (with throttling in place), so it isn't practical to have different users directly accessing the raw audit data. Instead, we recommend that you extract the raw audit data once (with a centralized process), and then make the curated audit data available to authorized users downstream.
 
-For more information, see [Register a Microsoft Entra app](#register-an-azure-ad-application) later in this article.
+For more information, see [Register a Microsoft Entra app](#register-a-microsoft-entra-application) later in this article.
 
 ###### App registration secrets
 
