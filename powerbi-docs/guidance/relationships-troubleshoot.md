@@ -12,7 +12,7 @@ ms.date: 10/14/2023
 
 # Relationship troubleshooting guidance
 
-This article targets you as a data modeler working with Power BI Desktop. It provides guidance on how to troubleshoot specific issues that you may encounter when developing models and reports.
+This article targets you as a data modeler working with Power BI Desktop. It provides guidance on how to troubleshoot specific issues that you might encounter when developing models and reports.
 
 [!INCLUDE [relationships-prerequisite-reading](includes/relationships-prerequisite-reading.md)]
 
