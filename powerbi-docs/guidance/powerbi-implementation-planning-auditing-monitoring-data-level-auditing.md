@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Data-level auditing"
 description: "Learn about data-level auditing planning for Power BI."
-author: data-goblin
-ms.author: v-kurtbuhler
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

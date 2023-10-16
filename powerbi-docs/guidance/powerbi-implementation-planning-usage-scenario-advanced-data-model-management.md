@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Advanced data model management"
 description: "Learn how Power BI advanced data model management is about empowering creators with advanced data modeling and publishing capabilities."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

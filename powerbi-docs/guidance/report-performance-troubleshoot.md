@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot report performance in Power BI
 description: Troubleshooting guide to diagnose slow report performance in Power BI.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -24,14 +24,14 @@ Use the following flowchart to help understand the cause of slow performance, an
 
 There are six flowchart terminators, each describing action to take:
 
-|Terminator|Action(s)|
-|---------|---------|
-|![Flowchart terminator 1.](media/common/icon-01-red-30x30.png)|Manage capacity<br />Scale capacity |
-|![Flowchart terminator 2.](media/common/icon-02-red-30x30.png)|Investigate capacity activity during typical report usage|
-|![Flowchart terminator 3.](media/common/icon-03-red-30x30.png)|Architecture change<br />Consider Azure Analysis Services<br />Check on-premises gateway|
-|![Flowchart terminator 4.](media/common/icon-04-red-30x30.png)|Consider Azure Analysis Services<br />Consider Power BI Premium|
-|![Flowchart terminator 5.](media/common/icon-05-red-30x30.png)|Use Power BI Desktop Performance Analyzer<br />Optimize report, model, or DAX|
-|![Flowchart terminator 6.](media/common/icon-06-red-30x30.png)|Raise support ticket|
+| **Terminator** | **Action(s)** |
+|---|---|
+| ![Flowchart terminator 1.](media/common/icon-01-red-30x30.png) | &bull;&nbsp;Manage capacity. <br/>&bull;&nbsp;Scale capacity. |
+| ![Flowchart terminator 2.](media/common/icon-02-red-30x30.png) | &bull;&nbsp;Investigate capacity activity during typical report usage. |
+| ![Flowchart terminator 3.](media/common/icon-03-red-30x30.png) | &bull;&nbsp;Architecture change. <br/>&bull;&nbsp;Consider Azure Analysis Services. <br/>&bull;&nbsp;Check on-premises gateway. |
+| ![Flowchart terminator 4.](media/common/icon-04-red-30x30.png) | &bull;&nbsp;Consider Azure Analysis Services. <br/>&bull;&nbsp;Consider Power BI Premium. |
+| ![Flowchart terminator 5.](media/common/icon-05-red-30x30.png) | &bull;&nbsp;Use Power BI Desktop Performance Analyzer. <br/>&bull;&nbsp;Optimize report, model, or DAX. |
+| ![Flowchart terminator 6.](media/common/icon-06-red-30x30.png) | &bull;&nbsp;Raise support ticket. |
 
 ## Take action
 
