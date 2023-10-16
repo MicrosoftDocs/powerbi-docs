@@ -1,5 +1,5 @@
 ---
-title: "Explore your data in the Power BI service"
+title: "Explore your data in the Power BI service (Preview)"
 description: In this article, you learn how to explore your data in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,10 +7,10 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/13/2023
+ms.date: 10/16/2023
 ---
 
-# Explore your data in the Power BI service
+# Explore your data in the Power BI service (Preview)
 
 In Power BI, sometimes you just want to do some ad hoc exploration of your data. Maybe you're an analyst who just got access to a new semantic model or data source, and you want to spend time learning about it before you build a report off it. Or maybe you're a business user who needs to answer a specific question about the data to include in a PowerPoint presentation, but the report you’re using doesn’t answer your exact question. Creating a new report from scratch in these cases is a big hurdle, when you just need a quick answer or screenshot for a slide deck.
 
@@ -67,7 +67,7 @@ You can expand the visual representation of the matrix on the lower part of the 
 
 :::image type="content" source="media/explore-data-service/explore-matrix-plus-visual.png" alt-text="Screenshot showing exploring a matrix and a visual with the same data." lightbox="media/explore-data-service/explore-matrix-plus-visual.png" :::
 
-If you'd rather, you can swap the layout to show the visual and matrix side by side instead of one on top of the other by using the layout buttons in the top right to adjust the orientation.  
+If you prefer, you can swap the layout to show the visual and matrix side by side instead of one on top of the other by using the layout buttons in the top right to adjust the orientation.  
 
 :::image type="content" source="media/explore-data-service/change-layout-view.png" alt-text="Screenshot showing switching the layout to side by side." lightbox="media/explore-data-service/change-layout-view.png":::
 
