@@ -39,7 +39,7 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
   
 - In a plain area chart, if the values in multiple series are similar, the areas may overlap, obscuring important data point values. You can resolve this issue by changing the chart type to a stacked area chart, which is designed to show multiple series on an area chart.  
   
-- If your stacked area chart contains gaps, it is possible that your dataset includes empty values, which will be shown as a vacant section on a stacked area chart. If your dataset includes empty values, consider inserting empty points on the chart. Adding empty points will fill in the empty areas on the chart with a different color to indicate null or zero values. For more information, see [Add empty points to a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-empty-points-to-a-chart-report-builder-and-ssrs).  
+- If your stacked area chart contains gaps, it is possible that your dataset includes empty values, which will be shown as a vacant section on a stacked area chart. If your dataset includes empty values, consider inserting empty points on the chart. Adding empty points will fill in the empty areas on the chart with a different color to indicate null or zero values. For more information, see [Add empty points to a chart &#40;Power BI Report Builder&#41;](add-empty-points-chart-report-builder.md).  
   
 - Area chart types are similar to column and line charts in behavior. If you are making a comparison between multiple series, consider using a column chart instead. If you are analyzing trends over a period of time, consider using a line chart.  
   

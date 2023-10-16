@@ -14,7 +14,7 @@ ms.custom: updatefrequency5
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  In a data region in a paginated report, you can group data by a single field, or create more complex expressions that identify the data on which to group. Complex expressions include references to multiple fields or parameters, conditional statements, or custom code. When you define a group for a data region, you add these expressions to the **Group** properties. For more information, see [Add or Delete a Group in a Data Region (Report Builder and SSRS)](/sql/reporting-services/report-design/add-or-delete-a-group-in-a-data-region-report-builder-and-ssrs).
+  In a data region in a paginated report, you can group data by a single field, or create more complex expressions that identify the data on which to group. Complex expressions include references to multiple fields or parameters, conditional statements, or custom code. When you define a group for a data region, you add these expressions to the **Group** properties. For more information, see [Add or Delete a Group in a Data Region (Report Builder and SSRS)](../report-design/add-delete-group-data-region-report-builder.md).
 
 To merge two or more groups that are based on simple field expressions, add each field to the group expressions list in the group definition.
 
@@ -33,5 +33,5 @@ The following table provides examples of group expressions that you can use to d
 
 ## See also
 
-- [Filter, Group, and Sort Data (Power BI Report Builder)](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)
+- [Filter, Group, and Sort Data (Power BI Report Builder)](/report-design/filter-group-sort-data-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)
