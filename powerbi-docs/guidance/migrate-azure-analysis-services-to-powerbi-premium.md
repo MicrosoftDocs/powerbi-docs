@@ -1,8 +1,8 @@
 ---
 title: Migrate from Azure Analysis Services to Power BI Premium or Power BI Embedded
 description: Guidance to help you migrate your Azure Analysis Services (AAS) data models to Power BI Premium or Power BI Embedded.
-author: minewiskan
-ms.author: owend
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -279,9 +279,9 @@ SQL Server Extended Events (xEvents) are supported in AAS but not in Power BI Pr
 
 ### Business-to-business (B2B)
 
-Both AAS and Power BI support [Azure AD B2B collaboration](/azure/active-directory/external-identities/what-is-b2b), which enables and governs sharing with external users. Notably, the User Principal Name (UPN) format required by AAS is different to Power BI.
+Both AAS and Power BI support [Microsoft Entra B2B collaboration](/azure/active-directory/external-identities/what-is-b2b), which enables and governs sharing with external users. Notably, the User Principal Name (UPN) format required by AAS is different to Power BI.
 
-To identify the user, Power BI utilizes a unique name claim in Azure AD while AAS uses an email claim. While there may be many instances where these two identifiers align, the unique name format is more stringent. If using dynamic RLS in Power BI, ensure that the value in the user identity table matches the account used to sign in to Power BI.
+To identify the user, Power BI utilizes a unique name claim in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) while AAS uses an email claim. While there may be many instances where these two identifiers align, the unique name format is more stringent. If using dynamic RLS in Power BI, ensure that the value in the user identity table matches the account used to sign in to Power BI.
 
 ### Scale-out
 

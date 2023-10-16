@@ -62,7 +62,7 @@ There are several [types of Fabric administrators](/power-bi/admin/service-admin
 The Fabric ecosystem of workloads is broad and deep. There are many ways that Fabric integrates with other systems and platforms. From time to time, it will be necessary to work with other system administrators and IT professionals, such as:
 
 - Global Microsoft 365 administrator
-- Azure Active Directory (Azure AD) administrator
+- Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) administrator
 - Teams administrator
 - OneDrive administrator
 - SharePoint administrator
@@ -292,7 +292,7 @@ Managed by IT:
 
 ## User licenses
 
-Every user needs a commercial license, which is integrated with an Azure AD identity. The user license may be Free, Power BI Pro, or Power BI Premium Per User.
+Every user needs a commercial license, which is integrated with a Microsoft Entra identity. The user license may be Free, Power BI Pro, or Power BI Premium Per User.
 
 A user license is obtained via a subscription, which authorizes a certain number of licenses with a start and end date.
 
@@ -354,7 +354,7 @@ The [Power BI security whitepaper](whitepaper-powerbi-security.md) is an excelle
 
 Some organizations ask Power BI users to accept a self-service user acknowledgment. It's a document that explains the user's responsibilities and expectations for safeguarding organizational data.
 
-One way to automate its implementation is with an [Azure AD terms of use policy](/azure/active-directory/conditional-access/terms-of-use). The user is required to view and agree to the policy before they're permitted to visit the Power BI service for the first time. You can also require it to be acknowledged on a recurring basis, like an annual renewal.
+One way to automate its implementation is with a [Microsoft Entra terms of use policy](/azure/active-directory/conditional-access/terms-of-use). The user is required to view and agree to the policy before they're permitted to visit the Power BI service for the first time. You can also require it to be acknowledged on a recurring basis, like an annual renewal.
 
 ### Data security
 
@@ -368,7 +368,7 @@ Administrators can be help by following best practices themselves. Administrator
 
 External users—such as partners, customers, vendors, and consultants—are a common occurrence for some organizations, and rare for others. How you handle external users is a governance decision.
 
-External user access is controlled by [tenant settings](/power-bi/admin/service-admin-portal-export-sharing) and certain Azure AD settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Azure AD B2B](whitepaper-azure-b2b-power-bi.md) whitepaper.
+External user access is controlled by [tenant settings](/power-bi/admin/service-admin-portal-export-sharing) and certain Microsoft Entra ID settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md) whitepaper.
 
 ### Information protection and data loss prevention
 
@@ -444,7 +444,7 @@ Every month, Microsoft releases new Power BI features and functionality. To be e
 
 > [!div class="checklist"]
 > - **Verify who is permitted to be a Fabric administrator:** If possible, reduce the number of people granted the Fabric administrator role if it's more than a few people.
-> - **Use PIM for occasional administrators:** If you have people who _occasionally_ need Fabric administrator rights, consider implementing [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM) in Azure AD. It's designed to assign just-in-time role permissions that expire after a few hours.
+> - **Use PIM for occasional administrators:** If you have people who _occasionally_ need Fabric administrator rights, consider implementing [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM) in Microsoft Entra ID. It's designed to assign just-in-time role permissions that expire after a few hours.
 > - **Train administrators:** Check the status of cross-training and documentation in place for handling Fabric administration responsibilities. Ensure that a backup person is trained so that needs can be met timely, in a consistent way.
 
 **Improve management of the Power BI service:**
@@ -521,7 +521,7 @@ Use questions like those found below to assess system oversight.
 - Are there atypical administration settings enabled or disabled? For example, is the entire organization allowed to publish to web (we strongly advise restricting this feature).
 - Do administration settings and policies align with, or inhibit, business the way user work?
 - Is there a process in place to critically appraise new settings and decide how to set them? Alternatively, are only the most restrictive settings set as a precaution?
-- Are Azure AD security groups used to manage who can do what?
+- Are Microsoft Entra ID security groups used to manage who can do what?
 - Do central teams have visibility of effective [auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md) tools?
 - Do monitoring solutions depict information about the data assets, user activities, or both?
 - Are auditing and monitoring tools actionable? Are there clear thresholds and actions set, or do monitoring reports simply describe what's in the data estate?
