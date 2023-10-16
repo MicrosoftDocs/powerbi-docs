@@ -31,7 +31,7 @@ The following diagram illustrates the end-to-end scenario with two development w
    1. Commit changes to remote repository branch using **VS Code**
    1. Create Pull Request to main branch using Azure DevOps
 
-1. At the same time, *User 2* develops [using another Fabric workspace](/fabric/git-integration/manage-branches#develop-using-another-workspace).
+1. At the same time, *User 2* develops [using another Fabric workspace](/fabric/cicd/git-integration/manage-branches#develop-using-another-workspace).
 
    1. Create branch from main using Fabric Git (feature/reportchange)
    1. Make report changes in the Fabric workspace
@@ -52,9 +52,9 @@ The following diagram illustrates the end-to-end scenario with two development w
 
 ## Step 1 - Connect Fabric Workspace to Azure DevOps
 
-[Connect your Fabric workspace to Azure DevOps](https://learn.microsoft.com/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git#connect-a-workspace-to-an-azure-repo):
+[Connect your Fabric workspace to Azure DevOps](/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git#connect-a-workspace-to-an-azure-repo):
 
-:::image type="content" source="./media/projects-adzo-pipelines/connect.png" alt-text="Screenshot showing the Git integration tab of the workspace settings.":::
+:::image type="content" source="./media/projects-adzo-pipelines/connect.png" alt-text="Screenshot showing the Git connection to DevOps.":::
 
 When Fabric Git integration finishes exporting your workspace items, your Azure DevOps branch will contain a folder for each item in your workspace:
 
@@ -66,7 +66,7 @@ To create a new build pipeline:
 
 1. From the **Pipelines** tab of the left navigation menu, select **Create Pipeline** :
 
-   :::image type="content" source="./media/projects-adzo-pipelines/create-pipeline.png" alt-text="Screenshot showing the Git integration tab of the workspace settings.":::
+   :::image type="content" source="./media/projects-adzo-pipelines/create-pipeline.png" alt-text="Screenshot showing how to create a pipeline.":::
 
 1. Select **Azure Repos Git** and select the first repository (the same repository that's connected to the Fabric workspace):
 
@@ -80,7 +80,7 @@ To create a new build pipeline:
 
    The following YAML code appears in the editor:
 
-   :::image type="content" source="./media/projects-adzo-pipelines/review-yaml.png" alt-text="Screenshot showing the starter pipeline icon selected.":::
+   :::image type="content" source="./media/projects-adzo-pipelines/review-yaml.png" alt-text="Screenshot showing the default YAML code.":::
 
 1. Copy and paste the YAML code from the following link into the pipeline you created:
 
@@ -125,7 +125,7 @@ If your report or dataset fails a rule with a higher severity level, the build f
 
 ## Branch Policies
 
-Once the pipeline is up and running, enable **Branch Policies** on the *main* branch. This step ensures that no commits can be made directly into main. A ["pull request"](https://learn.microsoft.com/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=browser) is always required to merge changes back into *main* and you can configure the build pipeline to run with every pull request.
+Once the pipeline is up and running, enable **Branch Policies** on the *main* branch. This step ensures that no commits can be made directly into main. A ["pull request"](/azure/devops/repos/git/pull-requests?tabs=browser) is always required to merge changes back into *main* and you can configure the build pipeline to run with every pull request.
 
 1. Select **Branches** > **main Branch** > **Branch policies**:
 
