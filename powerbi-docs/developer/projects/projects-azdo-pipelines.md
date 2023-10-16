@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: tutorial
-ms.date: 10/15/2023
+ms.date: 10/16/2023
 ---
 
 # Power BI Project (PBIP) and Azure DevOps Pipelines
@@ -22,7 +22,7 @@ Learn more about PBIP and Fabric Git Integration in our [blog post](https://powe
 
 The following diagram illustrates the end-to-end scenario with two development workflows that trigger the Azure DevOps build pipeline to validate development quality:
 
-:::image type="content" source="./media/projects-adzo-pipelines/pipeline.png" alt-text="Diagram showing workflow of build pipeline.":::
+:::image type="content" source="./media/projects-azdo-pipelines/pipeline.png" alt-text="Diagram showing workflow of build pipeline.":::
 
 1. *User 1* develops [using Power BI Desktop](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools).
 
@@ -54,11 +54,11 @@ The following diagram illustrates the end-to-end scenario with two development w
 
 [Connect your Fabric workspace to Azure DevOps](/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git#connect-a-workspace-to-an-azure-repo):
 
-:::image type="content" source="./media/projects-adzo-pipelines/connect.png" alt-text="Screenshot showing the Git connection to DevOps.":::
+:::image type="content" source="./media/projects-azdo-pipelines/connect.png" alt-text="Screenshot showing the Git connection to DevOps.":::
 
 When Fabric Git integration finishes exporting your workspace items, your Azure DevOps branch will contain a folder for each item in your workspace:
 
-:::image type="content" source="./media/projects-adzo-pipelines/connected-branch.png" alt-text="Screenshot showing the Azure DevOps branch with folders for different workspace items.":::
+:::image type="content" source="./media/projects-azdo-pipelines/connected-branch.png" alt-text="Screenshot showing the Azure DevOps branch with folders for different workspace items.":::
 
 ## Step 2 - Create and Run an Azure DevOps Build Pipeline
 
@@ -66,39 +66,39 @@ To create a new build pipeline:
 
 1. From the **Pipelines** tab of the left navigation menu, select **Create Pipeline** :
 
-   :::image type="content" source="./media/projects-adzo-pipelines/create-pipeline.png" alt-text="Screenshot showing how to create a pipeline.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/create-pipeline.png" alt-text="Screenshot showing how to create a pipeline.":::
 
 1. Select **Azure Repos Git** and select the first repository (the same repository that's connected to the Fabric workspace):
 
-   :::image type="content" source="./media/projects-adzo-pipelines/code.png" alt-text="Screenshot showing Azure repo Git selected as the code source for the pipeline.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/code.png" alt-text="Screenshot showing Azure repo Git selected as the code source for the pipeline.":::
 
-   :::image type="content" source="./media/projects-adzo-pipelines/select-repo.png" alt-text="Screenshot showing the Demo-ADObuild repo selected.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/select-repo.png" alt-text="Screenshot showing the Demo-ADObuild repo selected.":::
 
 1. Select **Starter pipeline**.
 
-   :::image type="content" source="./media/projects-adzo-pipelines/configure-pipeline.png" alt-text="Screenshot showing the starter pipeline icon selected.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/configure-pipeline.png" alt-text="Screenshot showing the starter pipeline icon selected.":::
 
    The following YAML code appears in the editor:
 
-   :::image type="content" source="./media/projects-adzo-pipelines/review-yaml.png" alt-text="Screenshot showing the default YAML code.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/review-yaml.png" alt-text="Screenshot showing the default YAML code.":::
 
 1. Copy and paste the YAML code from the following link into the pipeline you created:
 
    [powerbi-devmode-pipelines/azure-pipelines-build.yml at main · RuiRomano/powerbi-devmode-pipelines (github.com)](https://github.com/RuiRomano/powerbi-devmode-pipelines/blob/main/azure-pipelines-build.yml)
 
-   :::image type="content" source="./media/projects-adzo-pipelines/yaml-code-1.png" alt-text="Screenshot showing YAML code to be added.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/yaml-code-1.png" alt-text="Screenshot showing YAML code to be added.":::
 
-   :::image type="content" source="./media/projects-adzo-pipelines/demo-build.png" alt-text="Screenshot showing second part of YAML code.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/demo-build.png" alt-text="Screenshot showing second part of YAML code.":::
 
 1. Select **Save and Run** to commit your new pipeline to the repository.
 
-   :::image type="content" source="./media/projects-adzo-pipelines/review-pipeline-yaml.png" alt-text="Screenshot a review of the YAML code.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/review-pipeline-yaml.png" alt-text="Screenshot a review of the YAML code.":::
 
-   :::image type="content" source="./media/projects-adzo-pipelines/save-run.png" alt-text="Screenshot showing save and run selection.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/save-run.png" alt-text="Screenshot showing save and run selection.":::
 
 Azure DevOps runs the pipeline and start two build jobs in parallel:
 
-:::image type="content" source="./media/projects-adzo-pipelines/setup-pipeline.png" alt-text="Screenshot showing Azure DevOps building a pipeline.":::
+:::image type="content" source="./media/projects-azdo-pipelines/setup-pipeline.png" alt-text="Screenshot showing Azure DevOps building a pipeline.":::
 
 * Build_Datasets
   * Downloads Tabular Editor binaries.
@@ -111,17 +111,17 @@ Azure DevOps runs the pipeline and start two build jobs in parallel:
 
 When it finishes, Azure DevOps provides you with a report of all the warnings and errors it encountered:
 
-:::image type="content" source="./media/projects-adzo-pipelines/errors.png" alt-text="Screenshot showing error report.":::
+:::image type="content" source="./media/projects-azdo-pipelines/errors.png" alt-text="Screenshot showing error report.":::
 
 Select on the link to open a more detailed view of the two build jobs:
 
-:::image type="content" source="./media/projects-adzo-pipelines/view-log.png" alt-text="Screenshot showing view log button.":::
+:::image type="content" source="./media/projects-azdo-pipelines/view-log.png" alt-text="Screenshot showing view log button.":::
 
-:::image type="content" source="./media/projects-adzo-pipelines/report-rules.png" alt-text="Screenshot showing expanded error log.":::
+:::image type="content" source="./media/projects-azdo-pipelines/report-rules.png" alt-text="Screenshot showing expanded error log.":::
 
 If your report or dataset fails a rule with a higher severity level, the build fails, and the error is highlighted:
 
-:::image type="content" source="./media/projects-adzo-pipelines/manual-run.png" alt-text="Screenshot showing highlighter errors.":::
+:::image type="content" source="./media/projects-azdo-pipelines/manual-run.png" alt-text="Screenshot showing highlighter errors.":::
 
 ## Branch Policies
 
@@ -129,19 +129,19 @@ Once the pipeline is up and running, enable **Branch Policies** on the *main* br
 
 1. Select **Branches** > **main Branch** > **Branch policies**:
 
-   :::image type="content" source="./media/projects-adzo-pipelines/branch-policies.png" alt-text="Screenshot showing branch policies.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/branch-policies.png" alt-text="Screenshot showing branch policies.":::
 
 1. Configure the created pipeline as a *Build Policy* for the branch:
 
-   :::image type="content" source="./media/projects-adzo-pipelines/build-policy.png" alt-text="Screenshot showing the build policy UI.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/build-policy.png" alt-text="Screenshot showing the build policy UI.":::
 
-   :::image type="content" source="./media/projects-adzo-pipelines/build-policy-2.png" alt-text="Screenshot showing second part of the build policy UI.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/build-policy-2.png" alt-text="Screenshot showing second part of the build policy UI.":::
 
 ## Changes and Pull Request
 
 If you return to your Fabric Workspace, make a modification to one of the reports or datasets, and attempt to commit the change, you receive the following error:
 
-:::image type="content" source="./media/projects-adzo-pipelines/commit-change.png" alt-text="Screenshot showing the unable to commit change error.":::
+:::image type="content" source="./media/projects-azdo-pipelines/commit-change.png" alt-text="Screenshot showing the unable to commit change error.":::
 
 You can only make changes to the main branch through a pull request. To create a pull request checkout a new branch to make the changes on:
 
@@ -149,26 +149,26 @@ Create a branch directly from the Fabric Workspace:
 
 1. In the Source Control pane, select on **Checkout new branch** and provide a name for the branch:
 
-   :::image type="content" source="./media/projects-adzo-pipelines/source-control.png" alt-text="Screenshot showing the source control screen to checkout a new branch.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/source-control.png" alt-text="Screenshot showing the source control screen to checkout a new branch.":::
 
-   :::image type="content" source="./media/projects-adzo-pipelines/checkout-branch.png" alt-text="Screenshot showing how to checkout a new branch.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/checkout-branch.png" alt-text="Screenshot showing how to checkout a new branch.":::
 
    Alternatively, you can choose to develop within a separate, isolated workspace or in Power BI Desktop. For more information, see [develop using another workspace](/fabric/cicd/git-integration/manage-branches#develop-using-another-workspace)
 
 1. Commit your changes to this new branch.
 
-   :::image type="content" source="./media/projects-adzo-pipelines/commit-change-to-branch.png" alt-text="Screenshot showing commit changes to branch.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/commit-change-to-branch.png" alt-text="Screenshot showing commit changes to branch.":::
 
 1. Following the commit, create a pull request into the *main* branch from the Azure DevOps portal.
 
-:::image type="content" source="./media/projects-adzo-pipelines/create-pull-request.png" alt-text="Screenshot showing a new pull request created.":::
+:::image type="content" source="./media/projects-azdo-pipelines/create-pull-request.png" alt-text="Screenshot showing a new pull request created.":::
 
-:::image type="content" source="./media/projects-adzo-pipelines/new-pull-request.png" alt-text="Screenshot showing created pull request.":::
+:::image type="content" source="./media/projects-azdo-pipelines/new-pull-request.png" alt-text="Screenshot showing created pull request.":::
 
 The pull request workflow not only allows you to validate and review the changes, but also automatically triggers the build pipeline.
 
-:::image type="content" source="./media/projects-adzo-pipelines/report-change.png" alt-text="Screenshot showing report change.":::
+:::image type="content" source="./media/projects-azdo-pipelines/report-change.png" alt-text="Screenshot showing report change.":::
 
 If there's a high-severity build error in one of the rules, you can't finalize the pull request and merge the changes back into the main branch.
 
-:::image type="content" source="./media/projects-adzo-pipelines/complete-pull-request.png" alt-text="Screenshot completed pull request.":::
+:::image type="content" source="./media/projects-azdo-pipelines/complete-pull-request.png" alt-text="Screenshot completed pull request.":::
