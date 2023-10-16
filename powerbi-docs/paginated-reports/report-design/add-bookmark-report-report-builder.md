@@ -45,7 +45,7 @@ ms.reviewer: saurkumar
   
 6. (Optional) The text is not automatically formatted like a link. For text, it is helpful to change the color and effect of the text to indicate that the text is a link. For example, change the color to blue and the effect to underline in the **Font** section in the Home tab of the Ribbon.  
   
-7. To test the link, select **Run** to preview the report, and then select the report item that you set this link on..  
+7. To test the link, select **Run** to preview the report, and then select the report item that you set this link on.
   
 ## Next steps  
 
