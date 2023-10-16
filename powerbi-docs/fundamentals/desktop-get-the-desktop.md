@@ -95,7 +95,7 @@ The following list provides the minimum requirements to run Power BI Desktop:
 > Power BI Desktop is no longer supported on Windows 7.
 
 * Windows 8.1 or Windows Server 2012 R2 or later.
-* .NET 4.6.2 or later.
+* .NET 4.7.2 or later.
 * Microsoft Edge browser (Internet Explorer is no longer supported)
 * Memory (RAM): At least 2 GB available, 4 GB or more recommended.
 * Display: At least 1440x900 or 1600x900 (16:9) required. Lower resolutions such as 1024x768 or 1280x800 aren't supported because some controls (such as closing the startup screens) display beyond those resolutions.
