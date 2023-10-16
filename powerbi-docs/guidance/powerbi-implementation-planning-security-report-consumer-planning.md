@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Report consumer security planning"
 description: "Learn about report consumer security planning for Power BI."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -252,7 +252,7 @@ When you share an individual item, the default experience results in a [sharing 
 
 - **People in your organization:** When enabled in your Power BI tenant settings, this type of sharing link is a straightforward way to provide read-only access to everyone within the organization. However, the sharing link won't work for external users. This option is best suited to when anyone can view the content, and the link can be freely shared throughout the organization. Unless it's disabled by the _Allow shareable links to grant access to everyone in your organization_ tenant setting, this type of sharing is the default.
 - **People with existing access:** This option doesn't create a new sharing link. Rather, it allows you to retrieve the URL so you can send it to someone who already has access.
-- **Specific people:** This option produces a sharing link for specific users or groups. We recommend that you use this option most of the time because it provides specific access. If you commonly work with external users, you can use this type of link for guest users who already exist in Azure Active Directory (Azure AD). For more information about the planned invitation process to create guest users, see the [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md) article.
+- **Specific people:** This option produces a sharing link for specific users or groups. We recommend that you use this option most of the time because it provides specific access. If you commonly work with external users, you can use this type of link for guest users who already exist in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)). For more information about the planned invitation process to create guest users, see the [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md) article.
 
 > [!IMPORTANT]
 > We recommend that you consider restricting the _[Allow shareable links to grant access to everyone in your organization](/power-bi/admin/service-admin-portal-export-sharing#allow-shareable-links-to-grant-access-to-everyone-in-your-organization)_ tenant setting to members of a group. You can create a group name like _Power BI Share to Entire Organization_, and then add a small number of users who understand the implications of organization-wide sharing. If you're concerned about existing organization-wide links, you can use the [admin API](/rest/api/power-bi/admin/widely-shared-artifacts-links-shared-to-whole-organization) to find all items that have been shared with the entire organization.
@@ -416,11 +416,11 @@ For datasets, a data modeler can set up RLS in Power BI Desktop by creating one 
 
 #### RLS role mappings
 
-After you publish the model to the Power BI service, you must set up [role mappings](/power-bi/enterprise/service-admin-rls#manage-security-on-your-model) in advance of users accessing related reports. Role mapping involves assigning Azure AD security objects to roles. Security objects can be user accounts or security groups.
+After you publish the model to the Power BI service, you must set up [role mappings](/power-bi/enterprise/service-admin-rls#manage-security-on-your-model) in advance of users accessing related reports. Role mapping involves assigning Microsoft Entra ID security objects to roles. Security objects can be user accounts or security groups.
 
 Whenever possible, it's a best practice to map roles to [security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups). That way, there will be fewer mappings, and group membership management can be handled by the owner of the group.
 
-We recommend that you make security account information from Azure AD available to your content creators. One option is to create a [dataflow](/power-bi/transform-model/dataflows/dataflows-create) with data that's kept in sync with Azure AD. That way, content creators can integrate the dataflow data to produce a data-driven dataset.
+We recommend that you make security account information from Microsoft Entra ID available to your content creators. One option is to create a [dataflow](/power-bi/transform-model/dataflows/dataflows-create) with data that's kept in sync with Microsoft Entra ID. That way, content creators can integrate the dataflow data to produce a data-driven dataset.
 
 > [!TIP]
 > It's possible to define a role that has no rules. In this case, the role provides access to all rows of all model tables. Setting up this type of role is suitable when an administrator or user is allowed to view all data in the model.

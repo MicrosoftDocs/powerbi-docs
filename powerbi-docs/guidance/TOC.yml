@@ -319,5 +319,5 @@
       href: whitepaper-powerbi-enterprise-deployment.md      
     - name: "Power BI Premium deployment"
       href: whitepaper-powerbi-premium-deployment.md
-    - name: "Distribute Power BI externally using Azure Active Directory B2B"
+    - name: "Distribute Power BI externally using Microsoft Entra B2B"
       href: whitepaper-azure-b2b-power-bi.md

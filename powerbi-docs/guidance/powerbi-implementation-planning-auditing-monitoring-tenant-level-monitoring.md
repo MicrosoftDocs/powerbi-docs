@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Tenant-level monitoring"
 description: "Learn about tenant-level monitoring planning for Power BI."
-author: data-goblin
-ms.author: v-kurtbuhler
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -76,7 +76,7 @@ There are several monitoring aspects related to security and threats.
 - Monitor and raise alerts based on specific activities.
 - Create DLP policies.
 - Detect unusual behaviors and risky sessions.
-- Limit activities performed by applications (with [Azure AD conditional access app control](/cloud-app-security/proxy-intro-aad)).
+- Limit activities performed by applications (with [Microsoft Entra conditional access app control](/cloud-app-security/proxy-intro-aad)).
 
 Some powerful [Power BI monitoring and protection](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/protect-your-power-bi-instance-using-microsoft-cloud-app/ba-p/2166872) capabilities are available with Defender for Cloud Apps. For example, you can:
 
@@ -235,7 +235,7 @@ The [Azure status](https://azure.status.microsoft/) page shows the status for Az
 
 Common Azure services that integrate with Power BI include:
 
-- **Azure Active Directory:** Your [Power BI tenant](powerbi-implementation-planning-tenant-setup.md) relies on Azure Active Directory (Azure AD) for identity and access management.
+- **Microsoft Entra ID:** Your [Power BI tenant](powerbi-implementation-planning-tenant-setup.md) relies on Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) for identity and access management.
 - **Azure Power BI Embedded:** Azure Power BI Embedded supports programmatic [embedding](/power-bi/developer/embedded/embedded-analytics-power-bi) of Power BI content in apps for your customers. Power BI Embedded is also applicable for customers who have enabled [autoscale](/power-bi/enterprise/service-premium-auto-scale) for their Power BI Premium capacity. For more information about when to use Power BI Embedded, see the [embed for your customers](powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md) usage scenario.
 - **Azure storage accounts:** Azure Data Lake Storage Gen2 (ADLS Gen2) can be used for workspace-level [data storage](/power-bi/admin/service-admin-portal-azure-connections), including dataflows storage and dataset backups. For more information about dataflow storage, see the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario.
 - **Azure Log Analytics:** You can enable [workspace auditing](/power-bi/transform-model/log-analytics/desktop-log-analytics-overview) to capture dataset event logs. For more information, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md).

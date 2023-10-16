@@ -1,8 +1,8 @@
 ---
 title: "Power BI modeling guidance for Power Platform"
 description: "Guidance on how to create Power BI data models for Dataverse, PowerApps, and Dynamics 365."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -367,9 +367,9 @@ For more information on table storage modes including dual storage, see [Manage 
 
 ### Enable single-sign on
 
-When you publish a DirectQuery model to the Power BI service, you can use the dataset settings to enable single sign-on (SSO) by using Azure Active Directory (Azure AD) OAuth2 for your report users. You should enable this option when Dataverse queries must execute in the security context of the report user.
+When you publish a DirectQuery model to the Power BI service, you can use the dataset settings to enable single sign-on (SSO) by using Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) OAuth2 for your report users. You should enable this option when Dataverse queries must execute in the security context of the report user.
 
-When the SSO option is enabled, Power BI sends the report user's authenticated Azure AD credentials in the queries to Dataverse. This option enables Power BI to honor the security settings that are set up in the data source.
+When the SSO option is enabled, Power BI sends the report user's authenticated Microsoft Entra credentials in the queries to Dataverse. This option enables Power BI to honor the security settings that are set up in the data source.
 
 :::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/enable-single-sign-on.png" alt-text="Screenshot shows the dataset credentials window with the SSO option enabled." border="false":::
 
@@ -401,7 +401,7 @@ in
     dbo_account
 ```
 
-When you publish the model to the Power BI service, you must enable single sign-on (SSO) so that Power BI will send the report user's authenticated Azure AD credentials to Dataverse.
+When you publish the model to the Power BI service, you must enable single sign-on (SSO) so that Power BI will send the report user's authenticated Microsoft Entra credentials to Dataverse.
 
 ### Create supplementary import models
 
