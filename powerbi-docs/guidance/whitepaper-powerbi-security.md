@@ -513,7 +513,7 @@ The following questions are common security questions and answers for Power BI. 
 
 **How does Microsoft treat connections for customers who have Power BI Premium subscriptions? Are those connections different than those established for the non-Premium Power BI service?**
 
-* The connections established for customers with Power BI Premium subscriptions implement an [Microsoft Entra business-to-business (B2B)](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) authorization process, using Microsoft Entra ID to enable access control and authorization. Power BI handles connections from Power BI Premium subscribers to Power BI Premium resources just as it would any other Microsoft Entra user.
+* The connections established for customers with Power BI Premium subscriptions implement a [Microsoft Entra business-to-business (B2B)](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) authorization process, using Microsoft Entra ID to enable access control and authorization. Power BI handles connections from Power BI Premium subscribers to Power BI Premium resources just as it would any other Microsoft Entra user.
 
 **How does server-side authentication work in the WFE?**
 
