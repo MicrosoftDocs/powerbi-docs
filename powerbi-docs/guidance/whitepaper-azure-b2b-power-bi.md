@@ -172,7 +172,7 @@ While Contoso created a radiator reliability report for one Supplier, now Contos
 
 When an organization needs to distribute standardized data and insights to many external users/organizations, they can use the Ad hoc or planned sharing of Power BI Apps scenario to build a BI Portal quickly and without extensive development costs. The process to build such a portal using a Power BI app is covered in the Case Study: Building a BI Portal using Power BI + Microsoft Entra B2B – Step-by-Step instructions later in this document.
 
-A common variant of this case is when an organization is attempting to share insights with consumers, especially when looking to use Microsoft Entra B2C with Power BI. Power BI doesn't natively support Microsoft Entra B2C. If you're evaluating options for this case, consider using Alternative Option 2 in the Common alternative approaches the section later in this document.
+A common variant of this case is when an organization is attempting to share insights with consumers, especially when looking to use Azure Active Directory B2C with Power BI. Power BI doesn't natively support Azure Active Directory B2C. If you're evaluating options for this case, consider using Alternative Option 2 in the Common alternative approaches the section later in this document.
 
 ## Case Study: Building a BI Portal using Power BI + Microsoft Entra B2B – Step-by-Step instructions
 
@@ -481,7 +481,7 @@ Often, organizations have existing partner portals that centralize access to all
 
 ![Many partner portals](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_45.png)
 
-In the example above, users from each supplier sign in to Contoso's Partner Portal that uses Microsoft Entra ID as an identity provider. It could use Microsoft Entra B2B, Microsoft Entra B2C, native identities, or federate with any number of other identity providers. The user would sign in and access a partner portal build using Azure Web App or a similar infrastructure.
+In the example above, users from each supplier sign in to Contoso's Partner Portal that uses Microsoft Entra ID as an identity provider. It could use Microsoft Entra B2B, Azure Active Directory B2C, native identities, or federate with any number of other identity providers. The user would sign in and access a partner portal build using Azure Web App or a similar infrastructure.
 
 Within the web app, Power BI reports are embedded from a Power BI Embedded deployment. The web app would streamline access to the reports and any related services in a cohesive experience aimed to make it easy for suppliers to interact with Contoso. This portal environment would be isolated from the Contoso internal Microsoft Entra ID and Contoso's internal Power BI environment to ensure suppliers couldn't access those resources. Typically, data would be stored in a separate Partner data warehouse to ensure isolation of data as well. This isolation has benefits since it limits the number of external users with direct access to your organization's data, limiting what data could potentially be available to the external user, and limiting accidental sharing with external users.
 
