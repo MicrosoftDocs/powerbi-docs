@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Information protection for Power BI"
 description: "Learn about labeling and classification of data assets for use with Power BI."
-author: paulinbar
-ms.author: painbar
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -357,7 +357,7 @@ Authorized users and groups are set in the Microsoft Purview compliance portal w
 > [!div class="checklist"]
 > - **Determine which labels apply to all users:** Discuss and decide which sensitivity labels should be available for use by all users.
 > - **Determine which sub-labels apply to a subset of users:** Discuss and decide whether there are any sub-labels that will be available for use only by a specific set of users or groups.
-> - **Identify whether any new groups are needed:** Determine whether any new Azure Active Directory (Azure AD) groups will need to be created to support the authorized users and groups.
+> - **Identify whether any new groups are needed:** Determine whether any new Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) groups will need to be created to support the authorized users and groups.
 > - **Create a planning document:** If the mapping of authorized users to sensitivity labels is complicated, create a mapping of users and groups for each label policy.
 
 ### Default label for Power BI content
@@ -540,7 +540,7 @@ Here are some of the key pieces of information that you might include in your da
 > [!TIP]
 > When creating your data classification and protection policy, focus on making it a straightforward reference for users. It should be as short and clear as possible. If it's too complex, users won't always take the time to understand it.
 
-One way to automate the implementation of a policy, such as the data classification and protection policy, is with [Azure AD terms of use](/azure/active-directory/conditional-access/terms-of-use). When a terms of use policy is set up, users are required to acknowledge the policy before they're permitted to visit the Power BI service for the first time. It's also possible to ask them to agree again on a recurring basis, for example every 12 months.
+One way to automate the implementation of a policy, such as the data classification and protection policy, is with [Microsoft Entra terms of use](/azure/active-directory/conditional-access/terms-of-use). When a terms of use policy is set up, users are required to acknowledge the policy before they're permitted to visit the Power BI service for the first time. It's also possible to ask them to agree again on a recurring basis, for example every 12 months.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 

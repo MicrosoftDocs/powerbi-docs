@@ -1,8 +1,8 @@
 ---
 title: Plan deployment to migrate to Power BI
 description: Guidance on planning for deployment when migrating to Power BI.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -48,8 +48,8 @@ For more information about architectural considerations, see **Section 3** of th
 - Will separate workspaces be needed to accommodate development, test, and production?
 - Will separate workspaces be used for data and reports, or will a single workspace be sufficient? Separate workspaces have numerous advantages, especially for securing datasets. When necessary, they can be managed separately from those users who publish reports.
 - What are the security requirements for the workspace? It influences planning for [workspace roles](../collaborate-share/service-roles-new-workspaces.md). If an app will be used by content consumers, [audience permissions for the app](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences) are managed separately from the workspace. Distinct permissions for app viewers allow additional flexibility in meeting security requirements for read-only consumers of reports or dashboards.
-- Can existing groups be used for securing the new content? Both Azure Active Directory and Microsoft 365 groups are supported. When aligned with existing processes, using groups makes permissions management easier than assignments to individual users.
-- Are there any security considerations related to external guest users? You may need to work with your Azure Active Directory administrator and your Power BI administrator to configure [guest user access](../enterprise/service-admin-azure-ad-b2b.md).
+- Can existing groups be used for securing the new content? Both groups in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) and Microsoft 365 are supported. When aligned with existing processes, using groups makes permissions management easier than assignments to individual users.
+- Are there any security considerations related to external guest users? You may need to work with your Microsoft Entra administrator and your Power BI administrator to set up [guest user access](../enterprise/service-admin-azure-ad-b2b.md).
 
 > [!TIP]
 > Consider creating a workspace for a specific business activity or project. You may be tempted to start off structuring workspaces based on your organizational structure (such as a workspace per department), but this approach frequently ends up being too broad.
