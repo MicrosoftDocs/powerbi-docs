@@ -160,7 +160,7 @@ FROM Production.Product
   
  [Create a recursive hierarchy group (Power BI Report Builder)](/sql/reporting-services/report-design/create-a-recursive-hierarchy-group-report-builder-and-ssrs)  
   
- [Add or delete a group in a data region (Power BI Report Builder)](/sql/reporting-services/report-design/add-or-delete-a-group-in-a-data-region-report-builder-and-ssrs)  
+ [Add or delete a group in a data region (Power BI Report Builder)](add-delete-group-data-region-report-builder.md)  
   
  [Display headers and footers with a group (Power BI Report Builder)](/sql/reporting-services/report-design/display-headers-and-footers-with-a-group-report-builder-and-ssrs)  
   
