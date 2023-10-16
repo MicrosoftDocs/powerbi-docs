@@ -97,7 +97,7 @@ ms.reviewer: monaraya
 
  After you have added a field to the gauge, you can add one data group. The gauge differs from all other data regions in Power BI paginated reports, which can display multiple groups in one data region. When you add a group by defining a group expression on the gauge, it is the same as when you add a row group on the Tablix data region. However, when the group is added, only the value of the last group is displayed as the pointer value on the gauge. For example, if you add a grouping expression on Year, the pointer will point to the value that represents the aggregate sales value for the last year in the dataset. For more information about groups, see [Understanding Groups &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/understanding-groups-report-builder-and-ssrs).  
   
- You might want to add a group on the gauge if, for example, you are displaying multiple gauges in a table or list and you want to display data aggregated by group. For more information, see [Add or Delete a Group in a Data Region &#40;Power BI Report Builder&#41;](../report-design/add-delete-group-data-region-report-builder.md).  
+ You might want to add a group on the gauge if, for example, you are displaying multiple gauges in a table or list and you want to display data aggregated by group. For more information, see [Add or Delete a Group in a Data Region (Power BI Report Builder)](../add-delete-group-data-region-report-builder.md).  
   
 ##  <a name="PositioningData"></a> Position elements in a gauge  
  The gauge panel is the top-level container that holds one or more gauges. You can view the **Gauge Panel Properties** dialog box by clicking just outside the gauge. Each gauge, in turn, contains several gauge elements: a gauge scale, a gauge range, and a gauge pointer. When you are using the gauge, you will need to understand how elements are measured in the gauge panel in order to modify the size and location of these elements.  
@@ -149,7 +149,7 @@ ms.reviewer: monaraya
 ## Next steps
 
  [Expressions in Power BI Report Builder](../../expressions/report-builder-expressions.md)
- [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](/report-design/filter-group-sort-data-report-builder.md)   
+ [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](../filter-group-sort-data-report-builder.md)
  [Report parameters in Power BI Report Builder](../../parameters/report-builder-parameters.md)
  [Charts in Power BI paginated reports (Power BI Report Builder)](charts-report-builder.md)
  [Tables, matrixes, and lists in Power BI Report Builder](../../report-builder-tables-matrices-lists.md)

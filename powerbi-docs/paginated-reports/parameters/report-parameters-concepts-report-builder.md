@@ -28,7 +28,7 @@ You create report parameters in the following ways:
   
  For more information, see [Report Parameters &#40;Report Builder and Report Designer&#41;](report-builder-parameters.md).  
   
- Parameters are frequently used to filter report data both before and after the data is returned to the report. For more information, see [Filter, Group, and Sort Data &#40;Report Builder and SSRS&#41;](/report-design/filter-group-sort-data-report-builder.md).  
+ Parameters are frequently used to filter report data both before and after the data is returned to the report. For more information, see [Filter, Group, and Sort Data &#40;Report Builder and SSRS&#41;](../report-design/filter-group-sort-data-report-builder.md).  
   
  When you design a report, report parameters are saved in the report definition. When you publish a report, report parameters are saved and managed separately from the report definition. After you save the report to the report server, you can do the following:  
 

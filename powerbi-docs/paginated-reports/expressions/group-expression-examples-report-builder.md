@@ -33,5 +33,5 @@ The following table provides examples of group expressions that you can use to d
 
 ## See also
 
-- [Filter, Group, and Sort Data (Power BI Report Builder)](/report-design/filter-group-sort-data-report-builder.md)
+- [Filter, Group, and Sort Data (Power BI Report Builder)](../report-design/filter-group-sort-data-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

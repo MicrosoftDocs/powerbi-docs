@@ -29,7 +29,7 @@ Before you start planning which capacity you need, review the [Capacities and SK
 
 When you plan your capacity, consider the following:
 
-* The complexity of the report design. Nested [tablix](../../paginated-reports/report-builder-tables-matrices-lists.md),  multiple subreport and multiple row and column groups add to the complexity of the design, and require capacity resources. report-builder-tables-matrices-lists
+* The complexity of the report design. Nested [tablix](report-builder-tables-matrices-lists.md),  multiple subreport and multiple row and column groups add to the complexity of the design, and require capacity resources. report-builder-tables-matrices-lists
 
 * The amount of data retrieved by the report. The more data the report needs, the more resources it requires from your capacity.
 

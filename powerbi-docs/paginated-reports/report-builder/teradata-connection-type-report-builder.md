@@ -55,7 +55,7 @@ data source=<IP Address>
 ## Next steps
 
  [Report parameters in Power BI Report Builder](../parameters/report-builder-parameters.md)
- [Filter, Group, and Sort Data &#40;Report Builder and Service&#41;](/report-design/filter-group-sort-data-report-builder.md)   
+ [Filter, Group, and Sort Data &#40;Report Builder and Service&#41;](../report-design/filter-group-sort-data-report-builder.md)
  [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md)  
   
   
