@@ -13,7 +13,7 @@ ms.reviewer: saurkumar
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-In a paginated report, the detail data from a report dataset is specified as a group with no group expression. Add a detail group to an existing tablix data region when you want to display the detail data for a matrix, add back detail data that you have deleted from a table or list, or add additional detail groups. For more information about groups, see [Understanding Groups &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/understand-groups-report-builder.md).  
+In a paginated report, the detail data from a report dataset is specified as a group with no group expression. Add a detail group to an existing tablix data region when you want to display the detail data for a matrix, add back detail data that you have deleted from a table or list, or add additional detail groups. For more information about groups, see [Understanding Groups (Power BI Report Builder)](../../paginated-reports/report-design/understand-groups-report-builder.md).  
   
 ## Add a details group to a tablix data region  
   
@@ -27,12 +27,12 @@ In a paginated report, the detail data from a report dataset is specified as a g
   
 1.  Select **OK**.
   
-     A new details group is added as a child group in the Grouping pane, and the row handle for the group you selected in step 1 displays the details group icon. For more information about handles, see [Tablix Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-data-regions-report-builder-service.md).  
+     A new details group is added as a child group in the Grouping pane, and the row handle for the group you selected in step 1 displays the details group icon. For more information about handles, see [Tablix Data Region (Power BI Report Builder)](../../paginated-reports/report-design/render-data-regions-report-builder-service.md).  
   
 ## Next steps  
- [Add or Delete a Group in a Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/add-delete-group-data-region-report-builder.md)   
- [Understanding Groups &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/understand-groups-report-builder.md)   
- [Tablix Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-data-regions-report-builder-service.md)   
- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
+ [Add or Delete a Group in a Data Region (Power BI Report Builder)](../../paginated-reports/report-design/add-delete-group-data-region-report-builder.md)   
+ [Understanding Groups (Power BI Report Builder)](../../paginated-reports/report-design/understand-groups-report-builder.md)   
+ [Tablix Data Region (Power BI Report Builder)](../../paginated-reports/report-design/render-data-regions-report-builder-service.md)   
+ [Tables, Matrices, and Lists (Power BI Report Builder)](../../paginated-reports/report-builder-tables-matrices-lists.md)  
   
   

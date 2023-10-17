@@ -86,7 +86,7 @@ A stepped report is a type of Power BI paginated report that shows detail rows o
     1. In the Row Groups pane, right-click the group, select **Add Group**, and then choose the type of group you want to add.  
   
         > [!NOTE]  
-        >  There are several ways to add groups to a data region. For more information, see [Add or delete a group in a data region (Power BI Report Builder)](/sql/reporting-services/report-design/add-or-delete-a-group-in-a-data-region-report-builder-and-ssrs).  
+        >  There are several ways to add groups to a data region. For more information, see [Add or delete a group in a data region (Power BI Report Builder)](add-delete-group-data-region-report-builder.md).  
   
     1. In the **Tablix Group** dialog box, type a name.  
   
