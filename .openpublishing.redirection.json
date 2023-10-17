@@ -5202,6 +5202,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/admin/index.yml",
+            "redirect_url": "/fabric/admin/index",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/admin/service-admin-portal-share-data-microsoft-365-services.md",
             "redirect_url": "/fabric/admin/admin-share-power-bi-metadata-microsoft-365-services",
             "redirect_document_id": false
