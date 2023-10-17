@@ -31,8 +31,6 @@ Introducing the public preview of the new Explore feature, where you have a ligh
 
 1. [Save and share your exploration](#4-save-and-share-your-exploration). 
 
- 
-
 ## 1. Find a dataset or report you’d like to explore
 
 For a given dataset, report, or datamart, begin your exploration by selecting the **More options (…)** menu from a workspace list or the data hub list view. 
@@ -117,7 +115,6 @@ To save and share your exploration, select the **Save** button in the upper-left
 ### Share your exploration
 
 Now you’re ready to share your exploration with others. Select the **Share** button in the upper-right corner. 
- 
 
 Select **People in your organization can view**.
 
@@ -129,18 +126,21 @@ Choose your audience and their permissions, and select **Apply**.
 
 Provide email addresses and a message, then select **Send**.
 
-Or select **Copy link** and send it by another means. 
+Or select **Copy link** and send it by another means.
 
 :::image type="content" source="media/explore-data-service/copy-link-send.png" alt-text="Screenshot showing selecting copy link to share it another way.":::
 
-Continue to add your recipient’s email address and share. You're immediately prompted to share the underlying dataset so the recipient can view the contents of your exploration.  
+Continue to add your recipients' email addresses and share. You should be immediately prompted to share the underlying dataset so the recipients can view the contents of your exploration. If you're not prompted, ensure that you [share the dataset](../connect-data/service-datasets-share.md) with read permissions.
 
 > [!NOTE]
-> Usually for reports, sharing the underlying dataset is done behind the scenes. We’re working to remove this extra step. 
+> Usually for reports, sharing the underlying dataset is done behind the scenes. We’re working to remove this extra step.
 
 You may want to save your exploration as a report instead. You can do so by choosing **Save**, then **Save as report**. This saves your exploration as a single page report matching the layout when saved. For example, if you're viewing both the matrix and the visual, you get one page with a matrix on the top half and the visual on the bottom half of the page.  
 
-You can share this new report as with other reports by using the **Share** button. 
+You can share this new report as with other reports by using the **Share** button.
+
+
+
 
 ## Considerations and limitations 
 
