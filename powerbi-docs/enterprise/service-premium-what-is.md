@@ -114,6 +114,13 @@ The following known limitations currently apply to Power BI Premium.
 
     In some cases, manually installing the most recent client libraries may be necessary to reduce potential connection and operation errors. To learn more about verifying existing installed client library versions and manually installing the most recent versions, see [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true).
 
+* **Incompatible datasets** - The following datasets are no longer compatible with Power BI:
+    * Datasets created in the Power BI service from CSV files.
+    * Datasets in the [admin monitoring workspace](/fabric/admin/monitoring-workspace) and usage metrics models.
+    * Datasets that still use 1103 compatibility level.
+    * [Push datasets](../connect-data/service-real-time-streaming#push-dataset).
+    * Datasets that use deprecated features such as content packs.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
