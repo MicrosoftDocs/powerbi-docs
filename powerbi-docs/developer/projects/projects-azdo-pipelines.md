@@ -14,7 +14,7 @@ ms.date: 10/16/2023
 
 Combining Fabric Git Integration with Azure DevOps, enables you to connect a workspace to a branch in an Azure DevOps repository and automatically synchronizes between them.
 
-Integrating the PBIP format with Azure DevOps lets you use Azure Pipelines to automate Continuous Integration/Continuous Deployment (CI/CD) pipelines. These pipelines process the PBIP metadata files and apply a series of quality checks to your development before deploying it to the production system.
+Integrating the PBIP format with Azure DevOps lets you use Azure Pipelines to automate [Continuous Integration/Continuous Deployment](/azure/devops/pipelines/architectures/devops-pipelines-baseline-architecture) (CI/CD) pipelines. These pipelines process the PBIP metadata files and apply a series of quality checks to your development before deploying it to the production system.
 
 In this article, we'll focus on continuous integration and describe how to create an Azure DevOps build pipeline that guarantees best practices for all datasets and reports within a Fabric workspace. By implementing automated quality tests, you can prevent common mistakes, and enhances team efficiency. For example, this approach ensures that new team members adhere to established standards for dataset and report development.
 
@@ -23,6 +23,8 @@ Learn more about PBIP and Fabric Git Integration in [project-overview](./project
 The following diagram illustrates the end-to-end scenario with two development workflows that trigger the Azure DevOps build pipeline to validate development quality:
 
 :::image type="content" source="./media/projects-azdo-pipelines/pipeline.png" alt-text="Diagram showing workflow of build pipeline.":::
+
+The build execute does the following actions:
 
 1. *User 1* develops [using Power BI Desktop](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools).
 
@@ -45,8 +47,8 @@ The following diagram illustrates the end-to-end scenario with two development w
 >
 >In this example, the build pipeline uses two open-source community tools that enable a developer to apply (customizable) best practice rules to the metadata of datasets and reports within a Power BI Project folder:
 >
->* [Tabular Editor](https://github.com/TabularEditor/TabularEditor) (by Daniel Otykier) and [Best Practice Rules](https://github.com/microsoft/Analysis-Services/tree/master/BestPracticeRules) (by Michael Kovalsky)
->* [PBI Inspector](https://github.com/NatVanG/PBI-Inspector) (by Nat Van Gulck)
+>* [Tabular Editor](https://github.com/TabularEditor/TabularEditor) and [Best Practice Rules](https://github.com/microsoft/Analysis-Services/tree/master/BestPracticeRules)
+>* [PBI Inspector](https://github.com/NatVanG/PBI-Inspector)
 >
 >The same approach would apply any similar. This article doesn't delve into the specifics of the community tools mentioned previously nor rule creation and editing. For in-depth information on these topics, refer to the links provided. The focus of this article is on the *process* of establishing a quality gate between source control and Fabric Workspace. It's important to note that the referred community tools are developed by third-party contributors, and Microsoft does not offer support or documentation for them.
 
@@ -82,9 +84,7 @@ To create a new build pipeline:
 
    :::image type="content" source="./media/projects-azdo-pipelines/review-yaml.png" alt-text="Screenshot showing the default YAML code.":::
 
-1. Copy and paste the YAML code from the following link into the pipeline you created:
-
-   [powerbi-devmode-pipelines/azure-pipelines-build.yml at main · RuiRomano/powerbi-devmode-pipelines (github.com)](https://github.com/RuiRomano/powerbi-devmode-pipelines/blob/main/azure-pipelines-build.yml)
+1. Copy and paste the [YAML code from the Power BI developer mode pipeline](https://aka.ms/pbidevmode-ado-cipipeline) into the pipeline you created:
 
    :::image type="content" source="./media/projects-azdo-pipelines/yaml-code-1.png" alt-text="Screenshot showing YAML code to be added.":::
 
@@ -106,7 +106,7 @@ Azure DevOps runs the pipeline and start two build jobs in parallel:
   * Cycle through all the dataset item folders and run Tabular Editor BPA Rules.
 * Build_Reports
   * Download PBI Inspector binaries.
-  * Download PBI Inspector [default rules](https://github.com/NatVanG/PBI-Inspector/blob/main/Rules/Base%20rules.json). To customize the rules, add a *Rules-Report.json* to the root of the repository.
+  * Download PBI Inspector [default rules](https://github.com/NatVanG/PBI-Inspector/blob/main/Rules/Base-rules.json). To customize the rules, add a *Rules-Report.json* to the root of the repository.
   * Cycle through all the report item folders and run Power BI Inspector rules.
 
 When it finishes, Azure DevOps provides you with a report of all the warnings and errors it encountered:
@@ -123,7 +123,7 @@ If your report or dataset fails a rule with a higher severity level, the build f
 
 :::image type="content" source="./media/projects-azdo-pipelines/manual-run.png" alt-text="Screenshot showing highlighter errors.":::
 
-## Branch Policies
+## Step 3 - Define Branch Policies
 
 Once the pipeline is up and running, enable **Branch Policies** on the *main* branch. This step ensures that no commits can be made directly into main. A ["pull request"](/azure/devops/repos/git/pull-requests?tabs=browser) is always required to merge changes back into *main* and you can configure the build pipeline to run with every pull request.
 
@@ -137,7 +137,7 @@ Once the pipeline is up and running, enable **Branch Policies** on the *main* br
 
    :::image type="content" source="./media/projects-azdo-pipelines/build-policy-2.png" alt-text="Screenshot showing second part of the build policy UI.":::
 
-## Changes and Pull Request
+## Step 4 - Create pull request
 
 If you return to your Fabric Workspace, make a modification to one of the reports or datasets, and attempt to commit the change, you receive the following error:
 
