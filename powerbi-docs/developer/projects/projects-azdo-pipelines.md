@@ -50,7 +50,7 @@ The build execute does the following actions:
 >* [Tabular Editor](https://github.com/TabularEditor/TabularEditor) and [Best Practice Rules](https://github.com/microsoft/Analysis-Services/tree/master/BestPracticeRules)
 >* [PBI Inspector](https://github.com/NatVanG/PBI-Inspector)
 >
->The same approach would apply any similar. This article doesn't delve into the specifics of the community tools mentioned previously nor rule creation and editing. For in-depth information on these topics, refer to the links provided. The focus of this article is on the *process* of establishing a quality gate between source control and Fabric Workspace. It's important to note that the referred community tools are developed by third-party contributors, and Microsoft does not offer support or documentation for them.
+>An approach similar to the example in this article would apply to other community tools. This article doesn't delve into the specifics of the community tools mentioned previously nor rule creation and editing. For in-depth information on these topics, refer to the links provided. The focus of this article is on the *process* of establishing a quality gate between source control and Fabric Workspace. It's important to note that the referred community tools are developed by third-party contributors, and Microsoft does not offer support or documentation for them.
 
 ## Step 1 - Connect Fabric Workspace to Azure DevOps
 
@@ -172,6 +172,5 @@ The pull request workflow not only allows you to validate and review the changes
 If there's a high-severity build error in one of the rules, you can't finalize the pull request and merge the changes back into the main branch.
 
 :::image type="content" source="./media/projects-azdo-pipelines/complete-pull-request.png" alt-text="Screenshot completed pull request.":::
-
 
 Learn more about PBIP and Fabric Git Integration in [blog post](https://powerbi.microsoft.com/blog/deep-dive-into-power-bi-desktop-developer-mode-preview/).
