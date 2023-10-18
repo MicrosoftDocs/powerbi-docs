@@ -345,11 +345,11 @@ The following maturity levels will help you assess the current state of your men
 
 | **Level** | **State of mentoring and user enablement** |
 | --- | --- |
-| 100: Initial | &bull; Some documentation and resources exist. However, they're siloed and inconsistent. </br></br>&bull; Few users are aware of, or take advantage of, available resources. |
-| 200: Repeatable | &bull; A centralized portal exists with a library of helpful documentation and resources. </br></br>&bull; A curated list of training links and resources are available in the centralized portal. </br></br>&bull; Office hours are available so the user community can get assistance from the COE. |
-| 300: Defined | &bull; The centralized portal is the primary hub for community members to locate training, documentation, and resources. The resources are commonly referenced by champions and community members when supporting and learning from each other. </br></br>&bull; The COE's skills mentoring program is in place to assist users in the community in various ways. |
-| 400: Capable | &bull; Office hours have regular and active participation from all business units in the organization. </br></br>&bull; Best practices reviews from the COE are regularly requested by business units. </br></br>&bull; Co-development projects are repeatedly executed with success by the COE and members of business units. |
-| 500: Efficient | &bull; Training, documentation, and resources are continually updated and improved by the COE to ensure the community has current and reliable information. </br></br>&bull; Measurable and tangible business value is gained from the mentoring program by using KPIs or OKRs. |
+| 100: Initial | &bull;&nbsp;Some documentation and resources exist. However, they're siloed and inconsistent. <br/><br/>&bull;&nbsp;Few users are aware of, or take advantage of, available resources. |
+| 200: Repeatable | &bull;&nbsp;A centralized portal exists with a library of helpful documentation and resources. <br/><br/>&bull;&nbsp;A curated list of training links and resources are available in the centralized portal. <br/><br/>&bull;&nbsp;Office hours are available so the user community can get assistance from the COE. |
+| 300: Defined | &bull;&nbsp;The centralized portal is the primary hub for community members to locate training, documentation, and resources. The resources are commonly referenced by champions and community members when supporting and learning from each other. <br/><br/>&bull;&nbsp;The COE's skills mentoring program is in place to assist users in the community in various ways. |
+| 400: Capable | &bull;&nbsp;Office hours have regular and active participation from all business units in the organization. <br/><br/>&bull;&nbsp;Best practices reviews from the COE are regularly requested by business units. <br/><br/>&bull;&nbsp;Co-development projects are repeatedly executed with success by the COE and members of business units. |
+| 500: Efficient | &bull;&nbsp;Training, documentation, and resources are continually updated and improved by the COE to ensure the community has current and reliable information. <br/><br/>&bull;&nbsp;Measurable and tangible business value is gained from the mentoring program by using KPIs or OKRs. |
 
 ## Next steps
 

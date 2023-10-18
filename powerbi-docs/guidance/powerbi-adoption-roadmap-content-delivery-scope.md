@@ -201,11 +201,11 @@ The following maturity levels will help you assess the current state of your con
 
 | **Level** | **State of content delivery** |
 | --- | --- |
-| 100: Initial | &bull; Content is published for consumers by self-service creators in an uncontrolled way, without a specific strategy. |
-| 200: Repeatable | &bull; Pockets of good practices exist. However, good practices are overly dependent on the knowledge, skills, and habits of the content creator. |
-| 300: Defined | &bull; Clear guidelines are defined and communicated to describe what can and can't occur within each delivery scope. These guidelines are followed by some—but not all—groups across the organization. |
-| 400: Capable | &bull; Criteria are defined to align governance requirements for self-service versus enterprise content. </br></br>&bull; Guidelines for content delivery scope are followed by most, or all, groups across the organization. </br></br>&bull; Change management requirements are in place to approve critical changes for content that's distributed to a larger-sized audience. </br></br>&bull; Changes are announced and follow a communication plan. Content creators are aware of the downstream effects on their content. Consumers are aware of when reports and apps are changed. |
-| 500: Efficient | &bull; Proactively take steps to communicate with users occur when any concerning activities are detected in the activity log. Education and information are provided to make gradual improvements or reduce risk. </br></br>&bull; The business value that's achieved for deployed solutions is regularly evaluated. |
+| 100: Initial | &bull;&nbsp;Content is published for consumers by self-service creators in an uncontrolled way, without a specific strategy. |
+| 200: Repeatable | &bull;&nbsp;Pockets of good practices exist. However, good practices are overly dependent on the knowledge, skills, and habits of the content creator. |
+| 300: Defined | &bull;&nbsp;Clear guidelines are defined and communicated to describe what can and can't occur within each delivery scope. These guidelines are followed by some—but not all—groups across the organization. |
+| 400: Capable | &bull;&nbsp;Criteria are defined to align governance requirements for self-service versus enterprise content. <br/><br/>&bull;&nbsp;Guidelines for content delivery scope are followed by most, or all, groups across the organization. <br/><br/>&bull;&nbsp;Change management requirements are in place to approve critical changes for content that's distributed to a larger-sized audience. <br/><br/>&bull;&nbsp;Changes are announced and follow a communication plan. Content creators are aware of the downstream effects on their content. Consumers are aware of when reports and apps are changed. |
+| 500: Efficient | &bull;&nbsp;Proactively take steps to communicate with users occur when any concerning activities are detected in the activity log. Education and information are provided to make gradual improvements or reduce risk. <br/><br/>&bull;&nbsp;The business value that's achieved for deployed solutions is regularly evaluated. |
 
 ## Next steps
 

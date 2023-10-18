@@ -232,11 +232,11 @@ The following maturity levels will help you assess the current state of your COE
 
 | **Level** | **State of the Center of Excellence** |
 | --- | --- |
-| 100: Initial | &bull; One or more COEs exist, or the activities are performed within the BI team or IT. There's no clarity on the specific goals nor expectations for responsibilities. </br></br>&bull; Requests for assistance from the COE are handled in an unplanned manner. |
-| 200: Repeatable | &bull; The COE is in place with a specific charter to mentor, guide, and educate self-service users. The COE seeks to maximize benefits of self-service BI while reducing the risks. </br></br>&bull; The goals, scope of responsibilities, staffing, structure, and funding model are established for the COE. |
-| 300: Defined | &bull; The COE operates with active involvement from all business units in a unified or federated mode. |
-| 400: Capable | &bull; The goals of the COE align with organizational goals, and they are reassessed regularly. </br></br>&bull; The COE is well-known throughout the organization, and consistently proves its value to the internal user community. |
-| 500: Efficient | &bull; Regular reviews of KPIs or OKRs evaluate COE effectiveness in a measurable way. </br></br>&bull; Agility and implementing continual improvements from lessons learned (including scaling out methods that work) are top priorities for the COE. |
+| 100: Initial | &bull;&nbsp;One or more COEs exist, or the activities are performed within the BI team or IT. There's no clarity on the specific goals nor expectations for responsibilities. <br/><br/>&bull;&nbsp;Requests for assistance from the COE are handled in an unplanned manner. |
+| 200: Repeatable | &bull;&nbsp;The COE is in place with a specific charter to mentor, guide, and educate self-service users. The COE seeks to maximize benefits of self-service BI while reducing the risks. <br/><br/>&bull;&nbsp;The goals, scope of responsibilities, staffing, structure, and funding model are established for the COE. |
+| 300: Defined | &bull;&nbsp;The COE operates with active involvement from all business units in a unified or federated mode. |
+| 400: Capable | &bull;&nbsp;The goals of the COE align with organizational goals, and they are reassessed regularly. <br/><br/>&bull;&nbsp;The COE is well-known throughout the organization, and consistently proves its value to the internal user community. |
+| 500: Efficient | &bull;&nbsp;Regular reviews of KPIs or OKRs evaluate COE effectiveness in a measurable way. <br/><br/>&bull;&nbsp;Agility and implementing continual improvements from lessons learned (including scaling out methods that work) are top priorities for the COE. |
 
 ## Next steps
 

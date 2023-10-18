@@ -93,11 +93,11 @@ The following maturity levels will help you assess your current state of executi
 
 | **Level** | **State of executive support** |
 | --- | --- |
-| 100: Initial | &bull; There may be awareness from at least one executive about the strategic importance of how analytics can advance the organization's data culture goals. However, neither a sponsor nor an executive-level decision-maker is identified. |
-| 200: Repeatable | &bull; Informal executive support exists for analytics through informal channels and relationships. |
-| 300: Defined | &bull; An executive sponsor is identified. Expectations are clear for the role. |
-| 400: Capable | &bull; An executive sponsor is well established with someone with sufficient authority across organizational boundaries. </br></br>&bull; A healthy and productive partnership exists between the executive sponsor, COE, business units, and IT. The teams are working towards shared data culture goals. |
-| 500: Efficient | &bull; The executive sponsor is highly engaged. They're a key driver for advancing the organization's data culture vision. </br></br>&bull; The executive sponsor is involved with ongoing organizational adoption improvements. KPIs (key performance indicators) or OKRs (objectives and key results) are used to track data culture goals and the results of BI efforts. |
+| 100: Initial | &bull;&nbsp;There may be awareness from at least one executive about the strategic importance of how analytics can advance the organization's data culture goals. However, neither a sponsor nor an executive-level decision-maker is identified. |
+| 200: Repeatable | &bull;&nbsp;Informal executive support exists for analytics through informal channels and relationships. |
+| 300: Defined | &bull;&nbsp;An executive sponsor is identified. Expectations are clear for the role. |
+| 400: Capable | &bull;&nbsp;An executive sponsor is well established with someone with sufficient authority across organizational boundaries. <br/><br/>&bull;&nbsp;A healthy and productive partnership exists between the executive sponsor, COE, business units, and IT. The teams are working towards shared data culture goals. |
+| 500: Efficient | &bull;&nbsp;The executive sponsor is highly engaged. They're a key driver for advancing the organization's data culture vision. <br/><br/>&bull;&nbsp;The executive sponsor is involved with ongoing organizational adoption improvements. KPIs (key performance indicators) or OKRs (objectives and key results) are used to track data culture goals and the results of BI efforts. |
 
 ## Next steps
 

@@ -203,11 +203,11 @@ The following maturity levels will help you assess the current state of your com
 
 | **Level** | **State of the community of practice** |
 | --- | --- |
-| 100: Initial | &bull; Some self-service content creators are doing great work throughout the organization. However, their efforts aren't recognized. </br></br>&bull; Efforts to purposefully share knowledge across the organizational boundaries are rare and unstructured. </br></br>&bull; Communication is inconsistent, without a purposeful plan. |
-| 200: Repeatable | &bull; The first set of champions are identified. </br></br>&bull; The goals for a champions network are identified. </br></br>&bull; Knowledge sharing practices are gaining traction. |
-| 300: Defined | &bull; Knowledge sharing in multiple forms is a normal occurrence. Information sharing happens frequently and purposefully. </br></br>&bull; Goals for transparent communication with the user community are defined. |
-| 400: Capable | &bull; Champions are identified for all business units. They actively support colleagues in their self-service efforts. </br></br>&bull; Incentives to recognize and reward knowledge sharing efforts are a common occurrence. </br></br>&bull; Regular and frequent communication occurs based on a predefined communication plan. |
-| 500: Efficient | &bull; Bidirectional feedback loops exist between the champions network and the COE. </br></br>&bull; Key performance indicators measure community engagement and satisfaction. </br></br>&bull; Automation is in place when it adds direct value to the user experience (for example, automatic access to a group that provides community resources). |
+| 100: Initial | &bull;&nbsp;Some self-service content creators are doing great work throughout the organization. However, their efforts aren't recognized. <br/><br/>&bull;&nbsp;Efforts to purposefully share knowledge across the organizational boundaries are rare and unstructured. <br/><br/>&bull;&nbsp;Communication is inconsistent, without a purposeful plan. |
+| 200: Repeatable | &bull;&nbsp;The first set of champions are identified. <br/><br/>&bull;&nbsp;The goals for a champions network are identified. <br/><br/>&bull;&nbsp;Knowledge sharing practices are gaining traction. |
+| 300: Defined | &bull;&nbsp;Knowledge sharing in multiple forms is a normal occurrence. Information sharing happens frequently and purposefully. <br/><br/>&bull;&nbsp;Goals for transparent communication with the user community are defined. |
+| 400: Capable | &bull;&nbsp;Champions are identified for all business units. They actively support colleagues in their self-service efforts. <br/><br/>&bull;&nbsp;Incentives to recognize and reward knowledge sharing efforts are a common occurrence. <br/><br/>&bull;&nbsp;Regular and frequent communication occurs based on a predefined communication plan. |
+| 500: Efficient | &bull;&nbsp;Bidirectional feedback loops exist between the champions network and the COE. <br/><br/>&bull;&nbsp;Key performance indicators measure community engagement and satisfaction. <br/><br/>&bull;&nbsp;Automation is in place when it adds direct value to the user experience (for example, automatic access to a group that provides community resources). |
 
 ## Next steps
 
