@@ -118,7 +118,7 @@ The following known limitations currently apply to Power BI Premium.
     * Datasets created in the Power BI service from CSV files.
     * Datasets in the [admin monitoring workspace](/fabric/admin/monitoring-workspace) and usage metrics models.
     * Datasets that still use 1103 compatibility level.
-    * [Push datasets](../connect-data/service-real-time-streaming#push-dataset).
+    * [Push datasets](../connect-data/service-real-time-streaming.md#push-dataset).
     * Datasets that use deprecated features such as content packs.
 
 ## Next steps
