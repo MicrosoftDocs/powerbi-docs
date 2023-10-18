@@ -29,7 +29,7 @@ Before you start planning which capacity you need, review the [Capacities and SK
 
 When you plan your capacity, consider the following:
 
-* The complexity of the report design. Nested [tablix](/sql/reporting-services/report-design/tablix-data-region-report-builder-and-ssrs),  multiple subreport and multiple row and column groups add to the complexity of the design, and require capacity resources. report-builder-tables-matrices-lists
+* The complexity of the report design. Nested [tablix](report-builder-tables-matrices-lists.md),  multiple subreport and multiple row and column groups add to the complexity of the design, and require capacity resources. report-builder-tables-matrices-lists
 
 * The amount of data retrieved by the report. The more data the report needs, the more resources it requires from your capacity.
 
@@ -37,7 +37,7 @@ When you plan your capacity, consider the following:
 
 * The number of report parameters and parameter values used by your reports. More values and parameters, require more resources from your capacity.
 
-* Exporting large reports into formats such as Excel and PDF, requires more resources than reading every page, using toggles and searching within the reports.
+* When you export large reports into formats such as Excel and PDF, it requires more resources than reading every page, using toggles, and searching within the reports.
 
 ### How many users can a SKU handle?
 

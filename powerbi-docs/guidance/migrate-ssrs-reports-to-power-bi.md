@@ -1,9 +1,9 @@
 ---
 title: Plan to migrate .rdl reports to Power BI
 description: Guidance to help you migrate your .rdl reports from Power BI Report Server and SQL Server Reporting Services (SSRS) to Power BI.
-author: maggiesMSFT
-ms.author: maggies
-ms.reviewer: cookiemccray
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
@@ -149,7 +149,7 @@ Anyone with permission to access to the report server instance and the Power BI 
 
 1. Open the report server portal that contains the reports you want to migrate.
 1. Download each report definition, saving the .rdl files locally.
-1. Open _the latest version_ of Power BI Report Builder, and connect to the Power BI service using your Azure AD credentials.
+1. Open _the latest version_ of Power BI Report Builder, and connect to the Power BI service using your Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) credentials.
 1. Open each report in Power BI Report Builder, and then:
    1. Verify all data sources and datasets are embedded in the report definition, and that they're [supported data sources](../paginated-reports/paginated-reports-data-sources.md).
    1. Preview the report to ensure it renders correctly.
