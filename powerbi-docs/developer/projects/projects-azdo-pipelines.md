@@ -12,13 +12,13 @@ ms.date: 10/16/2023
 
 # Power BI Project (PBIP) and Azure DevOps Pipelines
 
-Combining Fabric Git Integration with Azure DevOps, enables you to can connect a workspace to a branch in an Azure DevOps repository and automatically synchronizes between them.
+Combining Fabric Git Integration with Azure DevOps, enables you to connect a workspace to a branch in an Azure DevOps repository and automatically synchronizes between them.
 
 Integrating the PBIP format with Azure DevOps lets you use Azure Pipelines to automate Continuous Integration/Continuous Deployment (CI/CD) pipelines. These pipelines process the PBIP metadata files and apply a series of quality checks to your development before deploying it to the production system.
 
 In this article, we'll focus on continuous integration and describe how to create an Azure DevOps build pipeline that guarantees best practices for all datasets and reports within a Fabric workspace. By implementing automated quality tests, you can prevent common mistakes, and enhances team efficiency. For example, this approach ensures that new team members adhere to established standards for dataset and report development.
 
-Learn more about PBIP and Fabric Git Integration in our [blog post](https://powerbi.microsoft.com/blog/deep-dive-into-power-bi-desktop-developer-mode-preview/).
+Learn more about PBIP and Fabric Git Integration in [project-overview](./projects-overview.md) and [Fabiric Git integration overview](/fabric/cicd/git-integration/intro-to-git-integration).
 
 The following diagram illustrates the end-to-end scenario with two development workflows that trigger the Azure DevOps build pipeline to validate development quality:
 
@@ -172,3 +172,6 @@ The pull request workflow not only allows you to validate and review the changes
 If there's a high-severity build error in one of the rules, you can't finalize the pull request and merge the changes back into the main branch.
 
 :::image type="content" source="./media/projects-azdo-pipelines/complete-pull-request.png" alt-text="Screenshot completed pull request.":::
+
+
+Learn more about PBIP and Fabric Git Integration in [blog post](https://powerbi.microsoft.com/blog/deep-dive-into-power-bi-desktop-developer-mode-preview/).
