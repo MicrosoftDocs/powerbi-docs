@@ -30,7 +30,7 @@ To create a paginated report from the Power BI service, you can start in a numbe
 ## List view in the Power BI service
 
 1. Go to list view for any workspace, including My Workspace.
-1. Select **More options (...)** for a Power BI dataset, then select **Create formatted table**. 
+1. Select **More options (...)** for a Power BI semantic model, then select **Create formatted table**. 
 
     :::image type="content" source="media/paginated-formatted-table/formatted-table-list-view-1.png" alt-text="Screenshot of Create paginated report in the Power BI service.":::
 
@@ -76,7 +76,7 @@ To create a paginated report from the Power BI service, you can start in a numbe
 ## Considerations and limitations
 
 - You can create a paginated report in any workspace.
-- You can't create a paginated report from Power BI datasets based on a live connection.
+- You can't create a paginated report from Power BI semantic models based on a live connection.
 - The online editor does *not* replicate all existing Power BI Report Builder functionality.  
 
 ## Next steps

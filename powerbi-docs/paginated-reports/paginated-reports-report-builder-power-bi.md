@@ -66,7 +66,7 @@ A single paginated report can have a number of different data sources. It doesn'
 - Azure SQL Database and Azure Synapse Analytics (via Basic and oAuth)
 - Azure Analysis Services (via SSO)
 - SQL Server via a gateway
-- Power BI datasets
+- Power BI semantic models
 - Oracle
 - Teradata
 
