@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/23/2023
+ms.date: 10/18/2023
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -32,10 +32,10 @@ The **Get Data** dialog box organizes data types in the following categories:
 * All
 * File
 * Database
+* Microsoft Fabric (Preview)
 * Power Platform
 * Azure
 * Online Services
-* Fabric
 * Other
 
 The **All** category includes all data connection types from all categories.
@@ -78,6 +78,7 @@ The **Database** category provides the following data connections:
 * Vertica
 * Snowflake
 * Essbase
+* AtScale Models
 * Actian (Beta)
 * Amazon Athena
 * AtScale cubes
@@ -101,14 +102,21 @@ The **Database** category provides the following data connections:
 > [!NOTE]
 > Some database connectors require that you enable them by selecting **File** > **Options and settings** > **Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as **Beta** or **Preview** has limited support and functionality, and shouldn't be used in production environments.
 
+### Microsoft Fabric (Preview)
+
+The **Microsoft Fabric (Preview)** category provides the following data connections:
+
+* Power BI datasets
+* Dataflows
+* Datamarts (preview)
+* Warehouses (preview)
+* Lakehouses (preview)
+* KQL Database (preview)
+
 ### Power Platform data sources
 
 The **Power Platform** category provides the following data connections:
 
-* Power BI datasets
-* Datamarts (preview)
-* Lakehouses (Preview)
-* Warehouses (Preview)
 * Power BI dataflows (Legacy)
 * Common Data Service (Legacy)
 * Dataverse
@@ -132,6 +140,7 @@ The **Azure** category provides the following data connections:
 * Azure HDInsight Spark
 * HDInsight Interactive Query
 * Azure Cost Management
+* Azure HDInsight on AKS Trino (Beta)
 * Azure Cosmos DB v2 (Beta)
 * Azure Databricks
 * Azure Synapse Analytics workspace (Beta)
@@ -160,7 +169,7 @@ The **Online Services** category provides the following data connections:
 * LinkedIn Sales Navigator (Beta)
 * Marketo (Beta)
 * Mixpanel (Beta)
-* Planview Enterprise One - PRM (Beta)
+* Planview Portfolios
 * QuickBooks Online (Beta)
 * Smartsheet
 * SparkPost (Beta)
@@ -185,7 +194,8 @@ The **Online Services** category provides the following data connections:
 * Hexagon PPM Smart® API
 * Industrial App Store
 * Intune Data Warehouse (Beta)
-* Planview Projectplace
+* Planview OKR (Beta)
+* Planview ProjectPlace
 * Product Insights (Beta)
 * Profisee (Beta)
 * Quickbase
@@ -197,17 +207,7 @@ The **Online Services** category provides the following data connections:
 * Viva Insights
 * Zoho Creator
 
-### Fabric
 
-The **Fabric** category provides the following data connections:
-
-* Warehouse in Microsoft Fabric
-* Power BI datasets
-* Datamarts (preview)
-* KQL Database in Microsoft Fabric
-* Lakehouse (Beta)
-* Dataflows
-* Warehouse (Beta)
 
 
 ### Other data sources
@@ -239,7 +239,7 @@ The **Other** category provides the following data connections:
 * Cognite Data Fusion
 * Delta Sharing
 * Eduframe (Beta)
-* EQuIS (Beta)
+* EQuIS
 * FactSet RMS (Beta)
 * FHIR
 * Google Sheets
@@ -256,6 +256,7 @@ The **Other** category provides the following data connections:
 * SingleStore Direct Query Connector 1.0 (Beta)
 * Siteimprove
 * Socialbakers Metrics 1.1.0 (Beta)
+* SolarWinds Service Desk (Beta)
 * Starburst Enterprise
 * SumTotal
 * SurveyMonkey
