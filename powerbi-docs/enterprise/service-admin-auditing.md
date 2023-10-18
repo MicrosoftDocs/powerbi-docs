@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 07/19/2023
+ms.date: 09/29/2023
 ms.custom: licensing support,fabric
 LocalizationGroup: Administration
 ---
@@ -180,7 +180,7 @@ Search for Power BI activities by following these steps. For a list of activitie
 
 2. Enter *Power BI* to go to the list of Power BI activities.
 
-   [![Screenshot of the Audit log search with Power B I activities called out.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png#lightbox)
+   [![Screenshot of the Audit log search with Power BI activities called out.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png#lightbox)
 
 3. Select each of the Power BI activities that you want to track.
 
@@ -564,8 +564,8 @@ The following operations are available in both the audit and activity logs.
 
 ## Next steps
 
-- [What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md)
-- [Power BI Admin Portal](service-admin-portal.md)
+- [What is Microsoft Fabric admin?](/fabric/admin/microsoft-fabric-admin)
+- [What is the admin portal?](/fabric/admin/admin-center)
 - [Access the Power BI activity log](../guidance/admin-activity-log.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- Questions? [Ask the Power BI Community](https://community.powerbi.com)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

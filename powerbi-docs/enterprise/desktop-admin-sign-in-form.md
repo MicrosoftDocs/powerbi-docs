@@ -7,10 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 12/13/2022
+ms.date: 09/29/2023
 ---
 
-# Administrators: Manage the Power BI Desktop sign-in form
+# Manage the Power BI Desktop sign-in form
 
 The first time Power BI Desktop is launched, a sign-in form is displayed. Information can be filled in, or sign in to Power BI to continue. Administrators manage this form by using a registry key.
 
@@ -30,6 +30,6 @@ Key: HKEY_CURRENT_USER\SOFTWARE\Microsoft\Microsoft Power BI Desktop
 valueName: ShowLeadGenDialog
 ```
 
-A value of 0 will disable the dialog.
+A value of 0 disables the dialog.
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com)
