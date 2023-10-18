@@ -188,7 +188,6 @@ Additionally, to use in-place dataset sharing, tenant admins need to enable the 
   * Direct publishing from Power BI desktop to the Power BI service
   * Guest users can't use Power BI desktop to connect to service datasets or dataflows in the Power BI service
   * Sending ad hoc invites isn't supported for workspace access lists
-  * Power BI Publisher for Excel isn't supported for guest users
   * Guest users can't install a Power BI Gateway and connect it to your organization
   * Guest users can't install apps published to the entire organization
   * Guest users can't use Analyze in Excel
