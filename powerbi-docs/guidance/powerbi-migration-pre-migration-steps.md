@@ -1,8 +1,8 @@
 ---
 title: Prepare to migrate to Power BI
 description: Guidance on pre-migration steps when migrating to Power BI.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -89,11 +89,11 @@ Some critical items to address early in a Power BI implementation include:
 
 Your [BI solution architecture](powerbi-implementation-planning-usage-scenario-overview.md) will evolve and mature over time. Power BI setup tasks to handle right away include:
 
-- Power BI tenant setup and integration with Azure Active Directory.
+- Power BI tenant setup and integration with Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)).
 - Define [Power BI administrators](../admin/service-admin-role.md).
 - Procure and assign initial [user licenses](../enterprise/service-admin-licensing-organization.md).
 - Configure and review [Power BI tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings).
-- Setup [workspace roles](../collaborate-share/service-roles-new-workspaces.md) and assign access to Azure Active Directory security groups and users.
+- Setup [workspace roles](../collaborate-share/service-roles-new-workspaces.md) and assign access to Microsoft Entra security groups and users.
 - Configure an initial [data gateway](../connect-data/service-gateway-deployment-guidance.md) cluster—with a plan to update regularly.
 - Procure initial [Premium capacity license](../enterprise/service-admin-premium-purchase.md) (if applicable).
 - Configure [Premium capacity workloads](../enterprise/service-admin-premium-workloads.md)—with a plan to manage on an ongoing basis.

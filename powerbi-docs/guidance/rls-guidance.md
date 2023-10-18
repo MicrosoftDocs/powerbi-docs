@@ -1,8 +1,8 @@
 ---
 title: Row-level security (RLS) guidance in Power BI Desktop
 description: Guidance for enforcing row-level security (RLS) in your data models with Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -63,7 +63,7 @@ It's possible to measure the performance impact of RLS filters in Power BI Deskt
 
 Once published to Power BI, you must map members to dataset roles. Only dataset owners or workspace admins can add members to roles. For more information, see [Row-level security (RLS) with Power BI (Manage security on your model)](/power-bi/enterprise/service-admin-rls#manage-security-on-your-model).
 
-Members can be user accounts, security groups, distribution groups or mail enabled groups. Whenever possible, we recommend you map security groups to dataset roles. It involves managing security group memberships in Azure Active Directory. Possibly, it delegates the task to your network administrators. 
+Members can be user accounts, security groups, distribution groups or mail enabled groups. Whenever possible, we recommend you map security groups to dataset roles. It involves managing security group memberships in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)). Possibly, it delegates the task to your network administrators.
 
 ## Validate roles
 

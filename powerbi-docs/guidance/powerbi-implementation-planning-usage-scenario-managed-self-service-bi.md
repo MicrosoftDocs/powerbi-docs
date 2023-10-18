@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Managed self-service BI"
 description: "Learn how Power BI managed self-service BI is about reuse of centralized shared datasets by other report creators."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

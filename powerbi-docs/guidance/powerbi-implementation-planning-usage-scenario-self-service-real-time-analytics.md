@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Self-service real-time analytics"
 description: "Learn how business analysts can produce real-time Power BI reports."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
