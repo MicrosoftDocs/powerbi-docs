@@ -37,7 +37,8 @@ For example, if you want to pass a filter on a field **State** within a table **
 
 After you validate your models, enable the source report to use cross-report drillthrough. 
 
-# [Power BI Desktop](#tab/powerbi-desktop)
+
+# Step 1: [Power BI Desktop]
  
 1. Go to **File** > **Options and settings** > **Options**. 
 1. In the **Options** window left navigation, at the bottom of the **Current file** section, select **Report settings**. 
@@ -46,7 +47,9 @@ After you validate your models, enable the source report to use cross-report dri
    
    ![Enable cross-report drillthrough in Power B I Desktop](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
 
-# [Power BI service](#tab/powerbi-service)
+
+
+# Step 2: [Power BI service]
 
 1. Select the workspace that contains your target and source reports.
 1. Next to the source report name in the workspace list, select the **More options** symbol, and then select **Settings**. 
