@@ -587,7 +587,7 @@
         - name: Add a hyperlink to a URL
           href: ../paginated-reports/report-design/add-hyperlink-url-report-builder.md
         - name: Add a document map
-          href: ../paginated-reports/report-builder-add-toc-document-map.md
+          href: ../paginated-reports/report-builder-add-document-map.md
       - name: Add a border to a paginated report
         href: ../paginated-reports/report-design/add-border-report-report-builder.md
       - name: Add a page break to a paginated report
