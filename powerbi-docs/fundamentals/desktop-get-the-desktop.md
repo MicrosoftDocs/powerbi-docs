@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 09/25/2023
+ms.date: 10/18/2023
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -68,7 +68,7 @@ To download the Power BI Desktop executable from the Download Center, select **D
 
 You're prompted to run the installation file after you finish downloading it.
 
-Power BI Desktop ships as a single *.exe* installation package that contains all supported languages, with separate *.exe* files for the 32-bit and 64-bit versions. The *.msi* packages are no longer available. You need the executable for installation. This approach makes distribution, updates, and installation much easier and more convenient, especially for administrators. You can also use command-line parameters to customize the installation process, as described in [Using command-line options during installation](#use-command-line-options-during-installation).
+Power BI Desktop ships as a single *.exe* installation package that contains all supported languages, with separate *.exe* files for the 32-bit and 64-bit versions. The *.msi* packages are no longer available. You need the executable for installation. This approach makes distribution, updates, and installation easier and more convenient, especially for administrators. You can also use command-line parameters to customize the installation process, as described in [Using command-line options during installation](#use-command-line-options-during-installation).
 
 After you launch the installation package, Power BI Desktop installs as an application and runs on your desktop.
 
@@ -95,7 +95,7 @@ The following list provides the minimum requirements to run Power BI Desktop:
 > Power BI Desktop is no longer supported on Windows 7.
 
 * Windows 8.1 or Windows Server 2012 R2 or later.
-* .NET 4.6.2 or later.
+* .NET 4.7.2 or later.
 * Microsoft Edge browser (Internet Explorer is no longer supported)
 * Memory (RAM): At least 2 GB available, 4 GB or more recommended.
 * Display: At least 1440x900 or 1600x900 (16:9) required. Lower resolutions such as 1024x768 or 1280x800 aren't supported because some controls (such as closing the startup screens) display beyond those resolutions.
@@ -161,13 +161,13 @@ If you're deploying Power BI Desktop to your users with a tool that requires a W
 
     The output folder contains a folder named *AttachedContainer*, which includes the *.msi* files.
 
-Upgrading an install from an *.exe* to a *.msi* that you've extracted from an *.exe* isn't supported. In order to make this upgrade, first you'll need to uninstall the older version of Power BI Desktop that you have.
+Upgrading an install from an *.exe* to an .msi* that you've extracted from an *.exe* isn't supported. In order to make this upgrade, first you'll need to uninstall the older version of Power BI Desktop that you have.
 
 ### Power BI Desktop in a virtualized environment
 
 Power BI Desktop is fully supported on [Azure Virtual Desktop](/azure/virtual-desktop/overview) (formerly Windows Virtual Desktop) and [Windows 365](/windows-365/overview). 
 
-Running Power BI Desktop as a virtualized application (for example, as a Citrix application) is not supported.
+Running Power BI Desktop as a virtualized application (for example, as a Citrix application) isn't supported.
 
 ### Issues with previous releases of Power BI Desktop
 

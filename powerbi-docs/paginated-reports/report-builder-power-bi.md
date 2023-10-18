@@ -39,7 +39,7 @@ Create reports that display aggregated data against a geographic or geometric ba
   
 -   **Create paginated reports with table, matrix, chart, and free-form report layouts.** Create table reports for column-based data, matrix reports (like cross-tab or PivotTable reports) for summarized data, chart reports for graphical data, and free-form reports for anything else. Reports can embed other reports and charts, together with lists, graphics, and controls for dynamic Web-based applications.  
   
--   **Report from a variety of data sources.** You can create reports that use relational and multidimensional data from SQL Server and Analysis Services, Oracle, Power BI datasets, and other databases.  
+-   **Report from a variety of data sources.** You can create reports that use relational and multidimensional data from SQL Server and Analysis Services, Oracle, Power BI semantic models, and other databases.  
   
 -   **Modify existing reports.** By using Report Builder, you can customize and update reports that were created in SQL Server Data Tools (SSDT) Report Designer.  
   
