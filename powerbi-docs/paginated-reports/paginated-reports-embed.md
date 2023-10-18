@@ -18,11 +18,11 @@ This article provides an overview of the differences between embedding a Power B
 
 ## Dataset considerations
 
-A Power BI report is always bound to a single data source. However, a paginated report doesn't require a Power BI dataset as a data source. A paginated report can also be built on multiple datasets. This means you cannot rely on the `datasetId` property of a report object, when embedding a paginated report.
+A Power BI report is always bound to a single data source. However, a paginated report doesn't require a Power BI semantic model as a data source. A paginated report can also be built on multiple datasets. This means you cannot rely on the `datasetId` property of a report object, when embedding a paginated report.
 
 ## Token considerations
 
-There are some special considerations when generating an embed token for a paginated report with an [Embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers) solution. If the paginated report has one or more Power BI datasets configured as its data sources, you must create a [GenerateTokenRequestV2Dataset](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) object for each dataset, with the following parameters:
+There are some special considerations when generating an embed token for a paginated report with an [Embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers) solution. If the paginated report has one or more Power BI semantic models configured as its data sources, you must create a [GenerateTokenRequestV2Dataset](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) object for each dataset, with the following parameters:
 
 * `xmlaPermissions` must be set to `ReadOnly`
 
@@ -46,7 +46,7 @@ Before embedding a paginated report, consider the following Power BI features wh
  
 ## Code example
 
-The following code listing demonstrates generating an embed token to embed a paginated report built on top of a Power BI dataset.
+The following code listing demonstrates generating an embed token to embed a paginated report built on top of a Power BI semantic model.
 
 ```javascript
 string datasetId = "11111111-1111-1111-1111-111111111111";

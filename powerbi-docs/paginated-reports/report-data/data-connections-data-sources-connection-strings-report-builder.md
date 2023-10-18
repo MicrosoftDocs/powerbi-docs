@@ -32,7 +32,7 @@ ms.reviewer: rpatkar
 |Azure Analysis Services|`Data Source=asazure://aspaaseastus2.asazure.windows.net/<server name>; Initial Catalog=AdventureWorks`|Set data source type to **Azure Analysis Services**.| 
 |Oracle server|`Data Source=<host>`|Set the data source type to **Oracle Database**. The Oracle client tools must be installed on the Report Builder computer and on the machine hosting Power BI Gateway. For more information, see [Oracle Connection Type &#40;Power BI Report Builder&#41;](./oracle-connection-type.md).|
 |Teradata data source|`Database=<database name>; Data Source=<NNN>.<NNN>.<NNN>.<NNN>; Use X Views=False; Restrict to Default Database=True`|Set the data source type to **Teradata**, similar to the previous example. Only use the default database that is specified in the Database tag, and do not automatically discover data relationships.|
-| Power BI Dataset | `Data Source=powerbi://api.powerbi.com/v1.0/myorg/<workspacename>;  Initial Catalog=<datasetname>` | Set data source type to **Microsoft SQL Server Analysis Services** and under Credentials tab, select "Do not use credentials". |
+| Power BI semantic model | `Data Source=powerbi://api.powerbi.com/v1.0/myorg/<workspacename>;  Initial Catalog=<datasetname>` | Set data source type to **Microsoft SQL Server Analysis Services** and under Credentials tab, select "Do not use credentials". |
 
 ##  <a name="bkmk_Expressions_in_connection_strings"></a> Expression-based connection strings  
  > [!NOTE]  

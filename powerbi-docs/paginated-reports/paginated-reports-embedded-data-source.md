@@ -19,7 +19,7 @@ This article explains how to create and modify an embedded data source for a pag
 - Azure SQL Database and Azure Synapse Analytics through Basic and oAuth
 - Azure Analysis Services through SSO
 - SQL Server through a gateway
-- Power BI datasets
+- Power BI semantic models
 - Oracle
 - Teradata
 
@@ -68,7 +68,7 @@ For more information, see [Understanding report data in Power BI Report Builder]
 
 ## Considerations and limitations
 
-Paginated reports that connect to Power BI datasets follow the rules for shared datasets in Power BI with some minor changes.  For users to properly view paginated reports that use Power BI datasets, and to ensure row-level security (RLS) is enabled and enforced for your viewers, follow these rules:
+Paginated reports that connect to Power BI semantic models follow the rules for shared datasets in Power BI with some minor changes.  For users to properly view paginated reports that use Power BI semantic models, and to ensure row-level security (RLS) is enabled and enforced for your viewers, follow these rules:
 
 |Scenario  |Rule  |
 |---------|---------|
