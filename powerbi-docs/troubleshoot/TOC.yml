@@ -9,6 +9,10 @@
       href: known-issues/power-bi-known-issues.md
     - name: Active known issues for Fabric + Power BI - interactive report
       href: https://support.fabric.microsoft.com/known-issues
+    - name: Sign in fails for securely embedded reports using Chrome browser
+      href: known-issues/known-issue-532-sign-in-fails-securely-embedded-reports-using-chrome-browser.md
+    - name: Dataflow REST API returns more data sources and gateways than expected
+      href: known-issues/known-issue-526-dataflow-rest-api-returns-more-data-sources-gateways.md
     - name: Combo chart custom labels don't display
       href: known-issues/known-issue-523-combo-chart-custom-labels-dont-display.md
     - name: Failures in the Fabric Capacity Metrics app
