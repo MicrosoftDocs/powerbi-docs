@@ -36,7 +36,7 @@ Here's an example of the parameter label with a dataset field different from the
 
 :::image type="content" source="media/paginated-localize-date-parameters/parameter-properties-available-values-pane.png" alt-text="Screenshot showing dataset parameter properties dialog." lightbox="media/paginated-localize-date-parameters/parameter-properties-available-values-pane.png":::
 
-Often, you have no control over the data and must get creative with the report data to make it useful to all consumers. You can change or add data when the report is executed. Most data sources allow adding new fields to the dataset when executing a query. This article uses an example with DAX to add a new column to a Power BI dataset so that we can properly localize the label of a multi-value date parameter. 
+Often, you have no control over the data and must get creative with the report data to make it useful to all consumers. You can change or add data when the report is executed. Most data sources allow adding new fields to the dataset when executing a query. This article uses an example with DAX to add a new column to a Power BI semantic model so that we can properly localize the label of a multi-value date parameter. 
 
 ## Localize the displayed value of date parameters
 
@@ -81,7 +81,7 @@ Datasets don't inherently know how to use report level parameters. On the datase
 
 ## Use the dataset parameter in the query 
 
-Then use the dataset parameter to drive the format of a new date column to be used as the label. The following example is from a Power BI dataset with three date values. Use the ADDCOLUMNS function from DAX to add a new field that's localized based on the information provided from the client's value for the new report parameter. The example query output is for the Finnish locale "fi-FI". Save your dataset. 
+Then use the dataset parameter to drive the format of a new date column to be used as the label. The following example is from a Power BI semantic model with three date values. Use the ADDCOLUMNS function from DAX to add a new field that's localized based on the information provided from the client's value for the new report parameter. The example query output is for the Finnish locale "fi-FI". Save your dataset. 
 
 :::image type="content" source="media/paginated-localize-date-parameters/query-designer-dialog.png" alt-text="Screenshot showing Query Designer dialog." lightbox="media/paginated-localize-date-parameters/query-designer-dialog.png":::
 
