@@ -16,15 +16,13 @@ Combining Fabric Git Integration with Azure DevOps, enables you to connect a wor
 
 Integrating the PBIP format with Azure DevOps lets you use Azure Pipelines to automate [Continuous Integration/Continuous Deployment](/azure/devops/pipelines/architectures/devops-pipelines-baseline-architecture) (CI/CD) pipelines. These pipelines process the PBIP metadata files and apply a series of quality checks to your development before deploying it to the production system.
 
-In this article, we'll focus on continuous integration and describe how to create an Azure DevOps build pipeline that guarantees best practices for all datasets and reports within a Fabric workspace. By implementing automated quality tests, you can prevent common mistakes, and enhances team efficiency. For example, this approach ensures that new team members adhere to established standards for dataset and report development.
+In this article, we focus on continuous integration and describe how to create an Azure DevOps build pipeline that guarantees best practices for all datasets and reports within a Fabric workspace. By implementing automated quality tests, you can prevent common mistakes, and enhances team efficiency. For example, this approach ensures that new team members adhere to established standards for dataset and report development.
 
-Learn more about PBIP and Fabric Git Integration in [project-overview](./projects-overview.md) and [Fabiric Git integration overview](/fabric/cicd/git-integration/intro-to-git-integration).
+Learn more about PBIP and Fabric Git Integration in [project-overview](./projects-overview.md) and [Fabric Git integration overview](/fabric/cicd/git-integration/intro-to-git-integration).
 
-The following diagram illustrates the end-to-end scenario with two development workflows that trigger the Azure DevOps build pipeline to validate development quality:
+The following diagram illustrates the end-to-end scenario with two development workflows that trigger the Azure DevOps build pipeline to validate development quality. The build execute does the following actions:
 
 :::image type="content" source="./media/projects-azdo-pipelines/pipeline.png" alt-text="Diagram showing workflow of build pipeline.":::
-
-The build execute does the following actions:
 
 1. *User 1* develops [using Power BI Desktop](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools).
 
@@ -109,7 +107,7 @@ Azure DevOps runs the pipeline and start two build jobs in parallel:
   * Download PBI Inspector [default rules](https://github.com/NatVanG/PBI-Inspector/blob/main/Rules/Base-rules.json). To customize the rules, add a *Rules-Report.json* to the root of the repository.
   * Cycle through all the report item folders and run Power BI Inspector rules.
 
-When it finishes, Azure DevOps provides you with a report of all the warnings and errors it encountered:
+When it finishes, Azure DevOps creates a report of all the warnings and errors it encountered:
 
 :::image type="content" source="./media/projects-azdo-pipelines/errors.png" alt-text="Screenshot showing error report.":::
 
@@ -147,7 +145,7 @@ You can only make changes to the main branch through a pull request. To create a
 
 Create a branch directly from the Fabric Workspace:
 
-1. In the Source Control pane, select on **Checkout new branch** and provide a name for the branch:
+1. In the Source Control pane, select on **Checkout new branch** and provide a name for the branch.
 
    :::image type="content" source="./media/projects-azdo-pipelines/source-control.png" alt-text="Screenshot showing the source control screen to checkout a new branch.":::
 
@@ -161,9 +159,9 @@ Create a branch directly from the Fabric Workspace:
 
 1. Following the commit, create a pull request into the *main* branch from the Azure DevOps portal.
 
-:::image type="content" source="./media/projects-azdo-pipelines/create-pull-request.png" alt-text="Screenshot showing a new pull request created.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/create-pull-request.png" alt-text="Screenshot showing a new pull request created.":::
 
-:::image type="content" source="./media/projects-azdo-pipelines/new-pull-request.png" alt-text="Screenshot showing created pull request.":::
+   :::image type="content" source="./media/projects-azdo-pipelines/new-pull-request.png" alt-text="Screenshot showing created pull request.":::
 
 The pull request workflow not only allows you to validate and review the changes, but also automatically triggers the build pipeline.
 
