@@ -77,7 +77,7 @@ The first step in using a Power BI service live connection to manage report life
 
 1. The last step is to set Build permission in the Power BI service for the dataset the report is based on. Build permission determines who can see and use your dataset. You can set Build permission in the workspace itself, or when you share an app from the workspace. For more information, see [Build permission for shared datasets](service-datasets-build-permissions.md).
 
-### Establish a Power BI service live connection to the published dataset
+### Establish a Power BI service live connection to the published semantic model
 
 Teammates who have access to the workspace where the report and dataset were published can connect to the dataset and build their own reports. To establish a connection to a published report and create your own report based on the published dataset:
 
