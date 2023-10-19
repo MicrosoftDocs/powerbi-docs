@@ -114,7 +114,7 @@ The following known limitations currently apply to Power BI Premium.
 
     In some cases, manually installing the most recent client libraries may be necessary to reduce potential connection and operation errors. To learn more about verifying existing installed client library versions and manually installing the most recent versions, see [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true).
 
-* **Datasets compatibility** - Datasets that are incompatible with the Power BI service include:
+* **Datasets compatibility** - Some datasets are incompatible with Power BI service:
     * Datasets created in the Power BI service from CSV files.
     * Datasets in the [admin monitoring workspace](/fabric/admin/monitoring-workspace) and usage metrics models.
     * Datasets that still use 1103 compatibility level.
