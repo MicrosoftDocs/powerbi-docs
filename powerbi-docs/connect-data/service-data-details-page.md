@@ -15,5 +15,5 @@ The data details pages help you explore, monitor, and apply the data in your org
 
 Select a data item type to see the details documentation for that type.
 
-* [Dataset](service-semantic model-details-page.md)
+* [Semantic model](service-dataset-details-page.md)
 * [Datamart](service-datamart-details-page.md)

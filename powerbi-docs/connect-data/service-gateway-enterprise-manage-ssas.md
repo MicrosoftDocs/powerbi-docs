@@ -175,7 +175,7 @@ For the Active Directory lookup to work properly at runtime, you must change the
 
 Each time a user interacts with Analysis Services, the effective user name is passed to the gateway and then to the on-premises Analysis Services server. The UPN, which is typically the email address you use to sign in to the cloud, is passed to Analysis Services as the effective user in the `EffectiveUserName` connection property.
 
-When the semantic model is in Import Mode, the gateway will send the EffectiveUserName of the UPN of the semantic model owner. This means that the UPN of the semantic model owner will be passed to Analysis Services as the effective user in the `EffectiveUserName` connection property.
+When the dataset is in Import Mode, the gateway will send the EffectiveUserName of the UPN of the dataset owner. This means that the UPN of the dataset owner will be passed to Analysis Services as the effective user in the `EffectiveUserName` connection property.
 
 This email address should match a defined UPN within the local Active Directory domain. The UPN is a property of an AD account. A Windows account must be present in an Analysis Services role to have access to the server. If no match is found in Active Directory, the sign-in won't be successful.
 
@@ -239,11 +239,11 @@ After you add the SSAS data source, it's available to use with either live conne
 > [!NOTE]
 > The server and database name must match between Power BI Desktop and the data source within the on-premises data gateway.
 
-The link between your semantic model and the data source within the gateway is based on your server name and database name. These names must match. For example, if you supply an IP address for the server name within Power BI Desktop, you must use the IP address for the data source within the gateway configuration. If you use *SERVER\INSTANCE* in Power BI Desktop, you also must use *SERVER\INSTANCE* within the data source configured for the gateway. This requirement holds for both live connections and scheduled refresh.
+The link between your dataset and the data source within the gateway is based on your server name and database name. These names must match. For example, if you supply an IP address for the server name within Power BI Desktop, you must use the IP address for the data source within the gateway configuration. If you use *SERVER\INSTANCE* in Power BI Desktop, you also must use *SERVER\INSTANCE* within the data source configured for the gateway. This requirement holds for both live connections and scheduled refresh.
 
 ### Use the data source with live connections
 
-You can use a live connection against tabular or multidimensional instances. You select a live connection in Power BI Desktop when you first connect to the data. Make sure that the server and database name matches between Power BI Desktop and the configured data source for the gateway. Also, to be able to publish live connection semantic models, your users must appear under **Users** in the data source list.
+You can use a live connection against tabular or multidimensional instances. You select a live connection in Power BI Desktop when you first connect to the data. Make sure that the server and database name matches between Power BI Desktop and the configured data source for the gateway. Also, to be able to publish live connection datasets, your users must appear under **Users** in the data source list.
 
 After you publish reports, either from Power BI Desktop or by getting data in the Power BI service, your data connection should start to work. It might take several minutes after you create the data source in the gateway before you can use the connection.
 

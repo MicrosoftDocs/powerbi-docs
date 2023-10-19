@@ -17,7 +17,7 @@ The R language is a powerful programming language that many statisticians, data 
 
 * Prepare data models.
 * Create reports.
-* Do data cleansing, advanced data shaping, and semantic model analytics, which include missing data completion, predictions, clustering, and more.  
+* Do data cleansing, advanced data shaping, and dataset analytics, which include missing data completion, predictions, clustering, and more.  
 
 ## Install R
 
@@ -39,7 +39,7 @@ To install the mice library:
 
 ## Use an R script in Power Query Editor
 
-To demonstrate using R in Power Query Editor, this example uses a stock market semantic model contained in a .csv file.
+To demonstrate using R in Power Query Editor, this example uses a stock market dataset contained in a .csv file.
 
 1. [Download the EuStockMarkets_NA.csv file](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Remember where you save it.
 
@@ -67,14 +67,14 @@ To demonstrate using R in Power Query Editor, this example uses a stock market s
 
     ```r
        library(mice)
-       tempData <- mice(semantic model,m=1,maxit=50,meth='pmm',seed=100)
+       tempData <- mice(dataset,m=1,maxit=50,meth='pmm',seed=100)
        completedData <- complete(tempData,1)
-       output <- semantic model
+       output <- dataset
        output$completedValues <- completedData$"SMI missing values"
     ```
 
     > [!NOTE]
-    > You might need to overwrite a variable named *output* to properly create the new semantic model with the filters applied.
+    > You might need to overwrite a variable named *output* to properly create the new dataset with the filters applied.
 
 1. Select **OK**. Power Query Editor displays a warning about data privacy.
 
@@ -113,7 +113,7 @@ You can save all completed visuals in one Power BI Desktop .pbix file and use th
 
 After you've uploaded the .pbix file to the Power BI service, you need to take other steps to enable service data refresh and updated visuals:  
 
-* **Enable scheduled refresh for the semantic model**: To enable scheduled refresh for the workbook containing your semantic model with R scripts, see [Configuring scheduled refresh](refresh-scheduled-refresh.md). This article also includes information about on-premises data gateways.
+* **Enable scheduled refresh for the dataset**: To enable scheduled refresh for the workbook containing your dataset with R scripts, see [Configuring scheduled refresh](refresh-scheduled-refresh.md). This article also includes information about on-premises data gateways.
 
 * **Install a gateway**: You need an on-premises data gateway (personal mode) installed on the machine where the file and R are located. The Power BI service accesses that workbook and re-renders any updated visuals. For more information, see [use personal gateways in Power BI](service-gateway-personal-mode.md).
 
@@ -131,7 +131,7 @@ There are some limitations to queries that include R scripts created in Power Qu
   
    :::image type="content" source="media/desktop-r-in-query-editor/r-in-query-editor_10.png" alt-text="Screenshot shows Data source settings dialog where you can edit permissions." lightbox="media/desktop-r-in-query-editor/r-in-query-editor_10.png":::
 
-* To schedule refresh of your R visuals or semantic model, enable scheduled refresh and install an on-premises data gateway (personal mode) on the computer containing the workbook and R. You can't use an enterprise gateway to refresh semantic models containing R scripts in Power Query.
+* To schedule refresh of your R visuals or dataset, enable scheduled refresh and install an on-premises data gateway (personal mode) on the computer containing the workbook and R. You can't use an enterprise gateway to refresh datasets containing R scripts in Power Query.
 
 ## Next Steps
 

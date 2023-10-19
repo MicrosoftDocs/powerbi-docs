@@ -42,7 +42,7 @@ When the import is complete, the new app appears on the Apps page.
 
 ## What's included
 
-After connecting to a service, you see a newly created app and workspace with a dashboard, reports, and semantic model. The data from the service is focused on a specific scenario and might not include all the information from the service. The data is scheduled to refresh automatically once per day. You can control the schedule by selecting the semantic model.
+After connecting to a service, you see a newly created app and workspace with a dashboard, reports, and dataset. The data from the service is focused on a specific scenario and might not include all the information from the service. The data is scheduled to refresh automatically once per day. You can control the schedule by selecting the dataset.
 
 You can also [connect to many services in Power BI Desktop](desktop-data-sources.md), such as Google Analytics, and create your own customized dashboards and reports.  
 

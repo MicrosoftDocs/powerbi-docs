@@ -12,7 +12,7 @@ LocalizationGroup: Connect to data
 ---
 # Use Python in Power Query Editor
 
-You can use *Python*, a programming language widely used by statisticians, data scientists, and data analysts, in the Power BI Desktop **Power Query Editor**. This integration of Python into **Power Query Editor** lets you perform data cleansing using Python, and perform advanced data shaping and analytics in semantic models, including completion of missing data, predictions, and clustering, just to name a few. Python is a powerful language, and can be used in **Power Query Editor** to prepare your data model and create reports.
+You can use *Python*, a programming language widely used by statisticians, data scientists, and data analysts, in the Power BI Desktop **Power Query Editor**. This integration of Python into **Power Query Editor** lets you perform data cleansing using Python, and perform advanced data shaping and analytics in datasets, including completion of missing data, predictions, and clustering, just to name a few. Python is a powerful language, and can be used in **Power Query Editor** to prepare your data model and create reports.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ You'll need to install Python and pandas before you begin.
 
 ## Use Python with Power Query Editor
 
-To show how to use Python in **Power Query Editor**, take this example from a stock market semantic model, based on a CSV file that you can [download from here](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv) and follow along. The steps for this example are the following procedure:
+To show how to use Python in **Power Query Editor**, take this example from a stock market dataset, based on a CSV file that you can [download from here](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv) and follow along. The steps for this example are the following procedure:
 
 1. First, load your data into **Power BI Desktop**. In this example, load the *EuStockMarkets_NA.csv* file and select **Get data** > **Text/CSV** from the **Home** ribbon in **Power BI Desktop**.
 
@@ -50,8 +50,8 @@ To show how to use Python in **Power Query Editor**, take this example from a st
 
     ```python
     import pandas as pd
-    completedData = semantic model.fillna(method='backfill', inplace=False)
-    semantic model["completedValues"] =  completedData["SMI missing values"]
+    completedData = dataset.fillna(method='backfill', inplace=False)
+    dataset["completedValues"] =  completedData["SMI missing values"]
    ```
 
    > [!NOTE]
@@ -86,7 +86,7 @@ Once that visual is complete, and any other visuals you might want to create usi
 
 Once you upload the .pbix file to the Power BI service, a couple more steps are necessary to enable data to refresh in the service and to enable visuals to be updated in the service. The data needs access to Python for visuals to be updated. The other steps are the following steps:
 
-* **Enable scheduled refresh for the semantic model**. To enable scheduled refresh for the workbook that contains your semantic model with Python scripts, see [Configuring scheduled refresh](refresh-scheduled-refresh.md), which also includes information about **Personal Gateway**.
+* **Enable scheduled refresh for the dataset**. To enable scheduled refresh for the workbook that contains your dataset with Python scripts, see [Configuring scheduled refresh](refresh-scheduled-refresh.md), which also includes information about **Personal Gateway**.
 * **Install the Personal Gateway**. You need a *Personal Gateway* installed on the machine where the file is located, and where Python is installed. The Power BI service must access that workbook and re-render any updated visuals. For more information, see [install and configure Personal Gateway](service-gateway-personal-mode.md).
 
 ## Considerations and limitations
@@ -101,7 +101,7 @@ There are some limitations to queries that include Python scripts created in **P
   
   ![Screenshot of the Data source settings dialog, showing the Privacy Level is set to Public.](media/desktop-python-in-query-editor/python-in-query-editor-10.png)
 
-* To enable scheduled refresh of your Python visuals or semantic model, you need to enable **Scheduled refresh** and have a Personal Gateway installed on the computer that houses the workbook and the Python installation. For more information on both, see the previous section in this article, which provides links to learn more about each.
+* To enable scheduled refresh of your Python visuals or dataset, you need to enable **Scheduled refresh** and have a Personal Gateway installed on the computer that houses the workbook and the Python installation. For more information on both, see the previous section in this article, which provides links to learn more about each.
 * Nested tables, which are table of tables, are currently not supported.
 
 There are all sorts of things you can do with Python and custom queries, so explore and shape your data just the way you want it to appear.

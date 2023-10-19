@@ -18,7 +18,7 @@ LocalizationGroup: Gateways
 You can use the on-premises data gateway to merge or append on-premises and cloud data sources in the same query. This solution is helpful when you want to combine data from multiple sources without having to use separate queries.
 
 > [!NOTE]
-> This article applies only to semantic models that have cloud and on-premises data sources merged or appended in a single query. For semantic models that include separate queries, for instance, one that connects to an on-premises data source and the other to a cloud data source, the gateway doesn't execute the query for the cloud data source.
+> This article applies only to datasets that have cloud and on-premises data sources merged or appended in a single query. For datasets that include separate queries, for instance, one that connects to an on-premises data source and the other to a cloud data source, the gateway doesn't execute the query for the cloud data source.
 
 ## Prerequisites
 
@@ -44,7 +44,7 @@ You can use the on-premises data gateway to merge or append on-premises and clou
 
 1. Upload to the Power BI service your Power BI Desktop file with the queries that combine on-premises and cloud data sources.
 
-With the cloud credentials set, you can now refresh the semantic model by using the **Refresh now** option. Or, you can schedule it to refresh periodically.
+With the cloud credentials set, you can now refresh the dataset by using the **Refresh now** option. Or, you can schedule it to refresh periodically.
 
 ## Next steps
 

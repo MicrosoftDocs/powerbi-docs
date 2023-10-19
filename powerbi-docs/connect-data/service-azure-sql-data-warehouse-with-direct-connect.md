@@ -22,7 +22,7 @@ When you use the Azure Synapse Analytics connector:
 * Ensure firewall rules for the server are configured to "Allow access to Azure services".
 * Every action such as selecting a column or adding a filter will directly query the data warehouse.
 * Tiles are set to refresh approximately every 15 minutes and you don't need to schedule a refresh.  You can adjust refresh in the Advanced settings when you connect.
-* Q&A isn't available for DirectQuery semantic models.
+* Q&A isn't available for DirectQuery datasets.
 * Schema changes aren't picked up automatically.
 
 These restrictions and notes can change as we continue to improve the experience. Steps to connect are in the next section.

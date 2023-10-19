@@ -36,7 +36,7 @@ Connect to the [Office365Mon template app](https://msit.powerbi.com/groups/me/ge
 
 4. When prompted, enter your Office365Mon admin credentials and complete the authentication process.
 
-5. After Power BI imports the data, you see a new dashboard, report, and semantic model in your workspace. Select **Office365Mon**.
+5. After Power BI imports the data, you see a new dashboard, report, and dataset in your workspace. Select **Office365Mon**.
    
    :::image type="content" source="media/service-connect-to-office365mon/office365mon-dashboard.png" alt-text="Screenshot that shows the Office365Mon dashboard." lightbox="media/service-connect-to-office365mon/office365mon-dashboard.png":::
   
@@ -45,7 +45,7 @@ Connect to the [Office365Mon template app](https://msit.powerbi.com/groups/me/ge
 * Try [asking a question in the Q&A box](../consumer/end-user-q-and-a.md) at the top of the dashboard.
 * [Change the tiles](../create-reports/service-dashboard-edit-tile.md) in the dashboard.
 * [Select a tile](../consumer/end-user-tiles.md) to open the underlying report.
-* Change the refresh schedule. The semantic model is scheduled to refresh daily. You can change the schedule, or refresh it on demand by selecting **Refresh now** in the workspace.
+* Change the refresh schedule. The dataset is scheduled to refresh daily. You can change the schedule, or refresh it on demand by selecting **Refresh now** in the workspace.
 
 ## Troubleshooting
 

@@ -105,7 +105,7 @@ The **Database** category provides the following data connections:
 
 The **Power Platform** category provides the following data connections:
 
-* Power BI semantic models
+* Power BI datasets
 * Datamarts (preview)
 * Lakehouses (Preview)
 * Warehouses (Preview)
@@ -202,7 +202,7 @@ The **Online Services** category provides the following data connections:
 The **Fabric** category provides the following data connections:
 
 * Warehouse in Microsoft Fabric
-* Power BI semantic models
+* Power BI datasets
 * Datamarts (preview)
 * KQL Database in Microsoft Fabric
 * Lakehouse (Beta)

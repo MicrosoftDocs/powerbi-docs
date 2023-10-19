@@ -13,10 +13,10 @@ LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting unsupported data source for refresh
 
-You might see an error when trying to configure a semantic model for scheduled refresh.
+You might see an error when trying to configure a dataset for scheduled refresh.
 
 ```output
-You cannot schedule refresh for this semantic model because it gets data from sources that currently don't support refresh.
+You cannot schedule refresh for this dataset because it gets data from sources that currently don't support refresh.
 ```
 
 This issue happens when the data source you used, within Power BI Desktop, isn't supported for refresh. You need to find the data source that you're using and compare that against the list of supported data sources at [Refresh data in Power BI](refresh-data.md).

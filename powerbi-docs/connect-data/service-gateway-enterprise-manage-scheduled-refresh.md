@@ -49,17 +49,17 @@ After you create the data source, it's available to use with either DirectQuery 
 > [!NOTE]
 > The server and database names must match between Power BI Desktop and the data source within the on-premises data gateway.
 
-The link between your semantic model and the data source within the gateway is based on your server name and database name. These names must match. For example, if you supply an IP address for the server name within Power BI Desktop, you must use the IP address for the data source within the gateway configuration. If you use *SERVER\INSTANCE* in Power BI Desktop, you also must use it within the data source configured for the gateway.
+The link between your dataset and the data source within the gateway is based on your server name and database name. These names must match. For example, if you supply an IP address for the server name within Power BI Desktop, you must use the IP address for the data source within the gateway configuration. If you use *SERVER\INSTANCE* in Power BI Desktop, you also must use it within the data source configured for the gateway.
 
 If you're listed in the **Users** tab of the data source configured within the gateway and the server name and database name match, you see the gateway as an option to use with scheduled refresh.
 
 ![Displaying the users](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-gateway-enterprise-schedule-refresh.png)
 
 > [!IMPORTANT]
-> Upon republish, the data set owner must associate the semantic model to a gateway and corresponding data source again. The previous association is not maintained after republishing.
+> Upon republish, the data set owner must associate the dataset to a gateway and corresponding data source again. The previous association is not maintained after republishing.
 
 > [!WARNING]
-> If your semantic model contains multiple data sources, each data source must be added within the gateway. If one or more data sources aren't added to the gateway, you don't see the gateway as available for scheduled refresh.
+> If your dataset contains multiple data sources, each data source must be added within the gateway. If one or more data sources aren't added to the gateway, you don't see the gateway as available for scheduled refresh.
 
 ## Next steps
 

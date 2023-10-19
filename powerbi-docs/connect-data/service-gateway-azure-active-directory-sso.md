@@ -18,7 +18,7 @@ Azure Active Directory (Azure AD) SSO enables single sign-on to the data gateway
 While Azure Virtual Networks (VNets) offer network isolation and security for your resources on the Microsoft cloud, you now require a secure way to connect to these data sources. On-premises data gateways help you achieve that. Azure AD SSO as explained previously allows users to see only data that they have access to.
 
 >[!NOTE]
-> VNet data gateways, which are available in public preview for Power BI Premium Datasets, eliminate the need to install an on-premises data gateway for connecting to your VNet data sources. To learn more about VNet gateways and their current limitations, see [What is a virtual network (VNet) data gateway](/data-integration/vnet/overview).
+> VNet data gateways, which are available in public preview for Power BI Premium Semantic models, eliminate the need to install an on-premises data gateway for connecting to your VNet data sources. To learn more about VNet gateways and their current limitations, see [What is a virtual network (VNet) data gateway](/data-integration/vnet/overview).
 
 The following data sources aren't supported with Azure AD SSO using an on-premises data gateway behind an Azure VNet:
 

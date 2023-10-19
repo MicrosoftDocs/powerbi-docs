@@ -88,7 +88,7 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whe
   
   **Answer:** Many situations can trigger a request for credentials. The most common scenario is that you reinstalled the on-premises data gateway (personal mode) on a different machine than your original Power BI personal gateway. There could also be an issue in the data source, or Power BI failed to make a test connection, or a timeout or system error occurred.
   
-  To update your credentials in the Power BI service, select the gear icon in the header and then choose **Settings**. On the **Datasets** tab, select the semantic model, and then choose **Data source credentials**.
+  To update your credentials in the Power BI service, select the gear icon in the header and then choose **Settings**. On the **Semantic models** tab, select the dataset, and then choose **Data source credentials**.
 
 - **Question:** How long is a personal gateway offline during an upgrade?
   

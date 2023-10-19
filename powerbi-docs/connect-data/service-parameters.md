@@ -24,11 +24,11 @@ As a report creator, you define parameters in Power BI Desktop. When you [publis
 
    ![Screenshot shows the Settings cog icon in the Power BI service.](media/service-parameters/power-bi-cog.png)
 
-1. Select the tab for **Datasets** and highlight a semantic model in the list.
+1. Select the tab for **Semantic models** and highlight a dataset in the list.
 
-    ![Screenshot shows the Settings window with Datasets tab selected.](media/service-parameters/power-bi-select-dataset-2.png)
+    ![Screenshot shows the Settings window with Semantic models tab selected.](media/service-parameters/power-bi-select-dataset-2.png)
 
-1. Expand **Parameters**.  If the selected semantic model has no parameters, you see a message with a link to **Learn more** about query parameters. If the semantic model does have parameters, expand the **Parameters** heading to reveal those parameters.
+1. Expand **Parameters**.  If the selected dataset has no parameters, you see a message with a link to **Learn more** about query parameters. If the dataset does have parameters, expand the **Parameters** heading to reveal those parameters.
 
     ![Screenshot shows the Settings window with Parameters expanded.](media/service-parameters/power-bi-settings.png)
 

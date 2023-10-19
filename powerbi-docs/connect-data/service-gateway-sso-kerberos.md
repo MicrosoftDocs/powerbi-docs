@@ -339,7 +339,7 @@ The settings  **Use SSO via Kerberos for DirectQuery queries** and **Use SSO via
 
 **Use SSO via Kerberos for DirectQuery And Import queries**:
 * For DirectQuery based report, SSO credentials of the user are used.
-* For Import based report, the SSO credentials of the semantic model owner are used, regardless of the user triggering the Import.
+* For Import based report, the SSO credentials of the dataset owner are used, regardless of the user triggering the Import.
 
 ### Step 2: Test single sign-on
 

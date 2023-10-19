@@ -143,14 +143,14 @@ The following considerations and limitations apply to the Azure Cost Management 
 
     For more information on reusing data sources, see the following:
 
-    * [Introduction to semantic models across workspaces](service-datasets-across-workspaces.md)
-    * [Create reports based on semantic models from different workspaces](service-datasets-discover-across-workspaces.md)
+    * [Introduction to datasets across workspaces](service-datasets-across-workspaces.md)
+    * [Create reports based on datasets from different workspaces](service-datasets-discover-across-workspaces.md)
 
 
 You might receive a *400 bad request* from the **RI usage details** when you try to refresh the data if you've chosen date parameter greater than three months. To mitigate the error, take the following steps:
 
 1.	In Power BI Desktop, select **Home > Transform data**.
-2.	In Power Query Editor, select the **RI usage details** semantic model and select **Advanced Editor**.
+2.	In Power Query Editor, select the **RI usage details** dataset and select **Advanced Editor**.
 3.	Update the Power Query code as shown in the following paragraph(s), which will split the calls into three-month chunks. Make sure you note and retain your enrollment number, or billing account/billing profile ID.
     
     For **EA** use the following code update:
