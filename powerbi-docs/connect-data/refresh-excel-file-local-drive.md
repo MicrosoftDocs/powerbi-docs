@@ -1,6 +1,6 @@
 ---
-title: Refresh a dataset created from an Excel workbook - local
-description: Learn how to use Refresh Now and Schedule Refresh for datasets created from Excel workbooks imported from a local drive.
+title: Refresh a semantic model created from an Excel workbook - local
+description: Learn how to use Refresh Now and Schedule Refresh for semantic models created from Excel workbooks imported from a local drive.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: kayu
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 08/23/2023
 LocalizationGroup: Data refresh
 ---
-# Refresh a dataset created from an Excel workbook on a local drive
+# Refresh a semantic model created from an Excel workbook on a local drive
 
 ## What's supported?
 
@@ -25,12 +25,12 @@ LocalizationGroup: Data refresh
 >
 > After October 31, 2023:
 > - You can download existing local workbooks from your Power BI workspace.
-> - You can publish your Excel data model as a Power BI dataset and schedule refresh.
+> - You can publish your Excel data model as a Power BI semantic model and schedule refresh.
 > - You can import Excel workbooks from OneDrive and SharePoint Document libraries to view them in Power BI.
 >   
 > If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](service-excel-workbook-files.md#migrating-your-excel-workbooks).  
 
-In Power BI, Refresh Now and Schedule Refresh is supported for datasets created from Excel workbooks imported from a local drive where Power Query or Power Pivot is used to connect to any of the following data sources and load data into the Excel data model. Power Query is *Get & Transform data* in Excel 2016.
+In Power BI, Refresh Now and Schedule Refresh is supported for semantic models created from Excel workbooks imported from a local drive where Power Query or Power Pivot is used to connect to any of the following data sources and load data into the Excel data model. Power Query is *Get & Transform data* in Excel 2016.
 
 ### Power BI Gateway - Personal
 
@@ -44,14 +44,14 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created 
 
 Keep the following notes in mind:
 
-* A gateway must be installed and running in order for the Power BI service to connect to on-premises data sources and refresh the dataset.
+* A gateway must be installed and running in order for the Power BI service to connect to on-premises data sources and refresh the semantic model.
 * When using Excel 2013, make sure you've updated Power Query to the latest version.
-* Refresh isn't supported for Excel workbooks imported from a local drive where data exists only in worksheets or linked tables. Refresh is supported for worksheet data if it's stored and imported from OneDrive. To learn more, see [Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online](refresh-excel-file-onedrive.md).
-* When you refresh a dataset created from an Excel workbook imported from a local drive, only the data queried from data sources is refreshed.
+* Refresh isn't supported for Excel workbooks imported from a local drive where data exists only in worksheets or linked tables. Refresh is supported for worksheet data if it's stored and imported from OneDrive. To learn more, see [Refresh a semantic model created from an Excel workbook on OneDrive, or SharePoint Online](refresh-excel-file-onedrive.md).
+* When you refresh a semantic model created from an Excel workbook imported from a local drive, only the data queried from data sources is refreshed.
 
-  If you change the structure of the data model in Excel or Power Pivot, for example, create a new measure or change the name of a column, those changes aren't copied to the dataset. If you make such changes, reupload or republish the workbook.
+  If you change the structure of the data model in Excel or Power Pivot, for example, create a new measure or change the name of a column, those changes aren't copied to the semantic model. If you make such changes, reupload or republish the workbook.
 
-  If you expect to make regular changes to the structure of your workbook and you want those changes to be reflected in the dataset in the Power BI service without having to reupload, consider putting your workbook on OneDrive. The Power BI service automatically refreshes both the structure and worksheet data from workbooks stored and imported from OneDrive.
+  If you expect to make regular changes to the structure of your workbook and you want those changes to be reflected in the semantic model in the Power BI service without having to reupload, consider putting your workbook on OneDrive. The Power BI service automatically refreshes both the structure and worksheet data from workbooks stored and imported from OneDrive.
 
 ## How do I make sure data is loaded to the Excel data model?
 
@@ -78,13 +78,13 @@ No problem. Whenever you use Power Pivot to connect to and query data from an on
 
 ## How do I schedule refresh?
 
-When you set up a refresh schedule, Power BI connects directly to the data sources using connection information and credentials in the dataset to query for updated data, then loads the updated data into the dataset. Any visualizations in reports and dashboards based on that dataset in the Power BI service are also updated.
+When you set up a refresh schedule, Power BI connects directly to the data sources using connection information and credentials in the semantic model to query for updated data, then loads the updated data into the semantic model. Any visualizations in reports and dashboards based on that semantic model in the Power BI service are also updated.
 
 For details on how to setup schedule refresh, see [Configure Schedule Refresh](refresh-scheduled-refresh.md).
 
 ## When things go wrong
 
-When things go wrong, it's usually because Power BI can't sign into data sources, or if the dataset connects to an on-premises data source, the gateway is offline. Make sure Power BI can sign into data sources. If a password you use to sign into a data source changes, or Power BI gets signed out from a data source, be sure to try signing into your data sources again in Data Source Credentials.
+When things go wrong, it's usually because Power BI can't sign into data sources, or if the semantic model connects to an on-premises data source, the gateway is offline. Make sure Power BI can sign into data sources. If a password you use to sign into a data source changes, or Power BI gets signed out from a data source, be sure to try signing into your data sources again in Data Source Credentials.
 
 Be sure to leave the **Send refresh failure notification email to me** selected. You want to know right away if a scheduled refresh fails.
 

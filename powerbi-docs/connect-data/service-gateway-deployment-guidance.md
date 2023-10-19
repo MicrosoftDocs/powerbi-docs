@@ -59,7 +59,7 @@ If you intend to use the Power BI service gateway with Azure Analysis Services, 
 
 ### Optimizing performance
 
-By default, the gateway spools data before returning it to the dataset, potentially causing slower performance during data load and refresh operations. The default behavior can be overridden.
+By default, the gateway spools data before returning it to the semantic model, potentially causing slower performance during data load and refresh operations. The default behavior can be overridden.
 
 1. In the *C:\Program Files\On-Premises data gateway\\**Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*** file, set the `StreamBeforeRequestCompletes` property to `True`, and then save.
 

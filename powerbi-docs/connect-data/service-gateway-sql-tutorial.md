@@ -13,16 +13,16 @@ LocalizationGroup: Gateways
 
 # Refresh data from an on-premises SQL Server database
 
-In this tutorial, you explore how to refresh a Power BI dataset from a relational database that exists on premises in your local network. Specifically, this tutorial uses a sample SQL Server database, which Power BI must access through an on-premises data gateway.
+In this tutorial, you explore how to refresh a Power BI semantic model from a relational database that exists on premises in your local network. Specifically, this tutorial uses a sample SQL Server database, which Power BI must access through an on-premises data gateway.
 
 In this tutorial, you complete the following steps:
 
 > [!div class="checklist"]
 >
 > * Create and publish a Power BI Desktop *.pbix* file that imports data from an on-premises SQL Server database.
-> * Configure data source and dataset settings in Power BI for SQL Server connectivity through a data gateway.
-> * Configure a refresh schedule to ensure your Power BI dataset has recent data.
-> * Do an on-demand refresh of your dataset.
+> * Configure data source and semantic model settings in Power BI for SQL Server connectivity through a data gateway.
+> * Configure a refresh schedule to ensure your Power BI semantic model has recent data.
+> * Do an on-demand refresh of your semantic model.
 > * Review the refresh history to analyze the outcomes of past refresh cycles.
 > * Clean up resources by deleting the items you created in this tutorial.
 
@@ -35,11 +35,11 @@ In this tutorial, you complete the following steps:
 * [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install) on the same local computer as SQL Server. In production, the gateway would usually be on a different computer.
 
 > [!NOTE]
-> If you're not a gateway administrator, or don't want to install a gateway yourself, ask a gateway administrator in your organization to create the required data source definition to connect your dataset to your SQL Server database.
+> If you're not a gateway administrator, or don't want to install a gateway yourself, ask a gateway administrator in your organization to create the required data source definition to connect your semantic model to your SQL Server database.
 
 ## Create and publish a Power BI Desktop file
 
-Use the following procedure to create a basic Power BI report that uses the AdventureWorksDW2017 sample database. Publish the report to the Power BI service to get a Power BI dataset, which you configure and refresh in later steps.
+Use the following procedure to create a basic Power BI report that uses the AdventureWorksDW2017 sample database. Publish the report to the Power BI service to get a Power BI semantic model, which you configure and refresh in later steps.
 
 1. In Power BI Desktop, on the **Home** tab, select **Get data** > **SQL Server**.
 
@@ -95,15 +95,15 @@ Use the following procedure to create a basic Power BI report that uses the Adve
 
    ![Screenshot of the Publish to Power BI screen.](./media/service-gateway-sql-tutorial/publish-to-power-bi.png)
 
-## Connect the dataset to the SQL Server database
+## Connect the semantic model to the SQL Server database
 
-In Power BI Desktop, you connected directly to your on-premises SQL Server database. In the Power BI service, you need a data gateway to act as a bridge between the cloud and your on-premises network. Follow these steps to add your on-premises SQL Server database as a data source to a gateway and connect your dataset to this data source.
+In Power BI Desktop, you connected directly to your on-premises SQL Server database. In the Power BI service, you need a data gateway to act as a bridge between the cloud and your on-premises network. Follow these steps to add your on-premises SQL Server database as a data source to a gateway and connect your semantic model to this data source.
 
 1. In the Power BI service, in the upper-right corner of the screen, select the settings gear icon and then select **Settings**.
 
    ![Screenshot that shows selecting Settings on the Power BI Home page.](./media/service-gateway-sql-tutorial/power-bi-settings.png)
 
-1. Select the **Datasets** tab, and then select the **AdventureWorksProducts** dataset from the list of datasets.
+1. Select the **Datasets** tab, and then select the **AdventureWorksProducts** semantic model from the list of semantic models.
 
 1. Expand **Gateway connection** and verify that at least one gateway is listed. If you don't see a gateway, make sure you followed the instructions to [install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
@@ -136,14 +136,14 @@ In Power BI Desktop, you connected directly to your on-premises SQL Server datab
 
 ## Configure a refresh schedule
 
-Now that you've connected your Power BI dataset to your SQL Server on-premises database through a data gateway, follow these steps to configure a refresh schedule. Refreshing your dataset on a scheduled basis helps ensure that your reports and dashboards have the most recent data.
+Now that you've connected your Power BI semantic model to your SQL Server on-premises database through a data gateway, follow these steps to configure a refresh schedule. Refreshing your semantic model on a scheduled basis helps ensure that your reports and dashboards have the most recent data.
 
 1. In the left navigation pane, expand **My Workspace**.
 
-1. In the **Datasets** section, point to the **AdventureWorksProducts** dataset, select the **Open menu** three vertical dots icon, and then select **Schedule refresh**.
+1. In the **Datasets** section, point to the **AdventureWorksProducts** semantic model, select the **Open menu** three vertical dots icon, and then select **Schedule refresh**.
 
    > [!TIP]
-   > Make sure you point to the **AdventureWorksProducts** dataset, not the report with the same name, which doesn't have a **Schedule refresh** option.
+   > Make sure you point to the **AdventureWorksProducts** semantic model, not the report with the same name, which doesn't have a **Schedule refresh** option.
 
 2. In the **Scheduled refresh** section, under **Keep your data up to date**, set refresh to **On**.
 
@@ -154,11 +154,11 @@ Now that you've connected your Power BI dataset to your SQL Server on-premises d
    ![Screenshot that shows configuring scheduled refresh.](./media/service-gateway-sql-tutorial/configure-scheduled-refresh.png)
 
    > [!NOTE]
-   > You can configure up to eight daily time slots if your dataset is on shared capacity, or 48 time slots on Power BI Premium.
+   > You can configure up to eight daily time slots if your semantic model is on shared capacity, or 48 time slots on Power BI Premium.
 
 4. Leave the checkbox under **Send refresh failure notifications to** set to **Dataset owner**, and select **Apply**.
 
-Now that you've configured a refresh schedule, Power BI refreshes your dataset at the next scheduled time, within a margin of 15 minutes.
+Now that you've configured a refresh schedule, Power BI refreshes your semantic model at the next scheduled time, within a margin of 15 minutes.
 
 ## Do an on-demand refresh
 
@@ -174,11 +174,11 @@ WHERE EnglishProductName ='Road-250 Red, 58'
 
 ```
 
-Follow these steps to make the updated data flow through the gateway connection to the dataset and into the Power BI reports:
+Follow these steps to make the updated data flow through the gateway connection to the semantic model and into the Power BI reports:
 
 1. In the Power BI service, expand **My Workspace** in the left navigation pane.
 
-2. In the **Datasets** section, hover over the **AdventureWorksProducts** dataset, select the three vertical dots **Open menu** icon, and then select **Refresh now**.
+2. In the **Datasets** section, hover over the **AdventureWorksProducts** semantic model, select the three vertical dots **Open menu** icon, and then select **Refresh now**.
 
    ![Screenshot that shows selecting Refresh now.](./media/service-gateway-sql-tutorial/refresh-now.png)
 
@@ -194,7 +194,7 @@ It's a good idea to periodically use the refresh history to check the outcomes o
 
 1. In the upper-right corner of the Power BI screen, select the settings gear icon and then select **Settings**.
 
-2. On the **Datasets** tab, select the dataset you want to examine, such as **AdventureWorksProducts**.
+2. On the **Datasets** tab, select the semantic model you want to examine, such as **AdventureWorksProducts**.
 
 3. Select the **Refresh history** link.
 
@@ -205,7 +205,7 @@ It's a good idea to periodically use the refresh history to check the outcomes o
    ![Screenshot that shows the Refresh history screen.](./media/service-gateway-sql-tutorial/refresh-history-details.png)
 
    > [!NOTE]
-   > The OneDrive tab is relevant only for datasets that are connected to Power BI Desktop files, Excel workbooks, or CSV files on OneDrive or SharePoint Online. For more information, see [Data refresh in Power BI](refresh-data.md).
+   > The OneDrive tab is relevant only for semantic models that are connected to Power BI Desktop files, Excel workbooks, or CSV files on OneDrive or SharePoint Online. For more information, see [Data refresh in Power BI](refresh-data.md).
 
 ## Clean up resources
 
@@ -213,14 +213,14 @@ Follow these instructions to clean up the resources you created for this tutoria
 
 - If you don't want to use the sample data anymore, use SSMS to drop the database.
 - If you don't want to use the SQL Server data source, remove the data source from your data gateway. Also consider uninstalling the data gateway, if you installed it only for this tutorial.
-- Also delete the AdventureWorksProducts dataset and report that Power BI created when you published the *AdventureWorksProducts.pbix* file.
+- Also delete the AdventureWorksProducts semantic model and report that Power BI created when you published the *AdventureWorksProducts.pbix* file.
 
 ## Next steps
 
 This tutorial explored how to:
 
-- Import data from an on-premises SQL Server database into a Power BI dataset.
-- Refresh the Power BI dataset on a scheduled and on-demand basis to update the reports and dashboards that use the dataset.
+- Import data from an on-premises SQL Server database into a Power BI semantic model.
+- Refresh the Power BI semantic model on a scheduled and on-demand basis to update the reports and dashboards that use the semantic model.
 
 Now, you can learn more about Power BI data refresh and managing data gateways and data sources.
 

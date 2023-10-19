@@ -21,7 +21,7 @@ You can get seamless single sign-on (SSO) connectivity, enabling Power BI report
 * Azure Active Directory (Azure AD) SSO.
 
 > [!NOTE]
-> SSO is only supported by Power BI datasets and not by Power BI dataflows.
+> SSO is only supported by Power BI semantic models and not by Power BI dataflows.
 
 ## Supported data sources for SSO
 
@@ -58,7 +58,7 @@ Power BI supports the following data sources:
 
 When a user interacts with a DirectQuery report in the Power BI service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying data source. When you configure SSO for the data source, queries execute under the identity of the user that interacts with Power BI. That is, they run through the web experience or Power BI mobile apps. Therefore, each user sees precisely the data for which they have permissions in the underlying data source.
 
-You can also configure a report that is set up for refresh in the Power BI service to use SSO. When you configure SSO for this data source, queries execute under the identity of the dataset owner within Power BI. Therefore, the refresh happens based on the dataset owner's permissions on the underlying data source. Refresh using SSO is currently enabled only for data sources using [Kerberos](service-gateway-sso-kerberos.md) constrained delegation.
+You can also configure a report that is set up for refresh in the Power BI service to use SSO. When you configure SSO for this data source, queries execute under the identity of the semantic model owner within Power BI. Therefore, the refresh happens based on the semantic model owner's permissions on the underlying data source. Refresh using SSO is currently enabled only for data sources using [Kerberos](service-gateway-sso-kerberos.md) constrained delegation.
 
 ## Next steps
 

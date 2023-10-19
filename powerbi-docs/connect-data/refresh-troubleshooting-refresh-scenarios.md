@@ -27,18 +27,18 @@ After you've confirmed these requirements are met, take a look through the follo
 
 ## Email notifications
 
-If you're coming to this article from an email notification, and you no longer want to receive emails about refresh issues, contact your Power BI admin. Ask them to remove your email, or an email list you're subscribed to, from the appropriate datasets in Power BI. An admin uses the following area in the Power BI admin portal.
+If you're coming to this article from an email notification, and you no longer want to receive emails about refresh issues, contact your Power BI admin. Ask them to remove your email, or an email list you're subscribed to, from the appropriate semantic models in Power BI. An admin uses the following area in the Power BI admin portal.
 
 :::image type="content" source="media/refresh-troubleshooting-refresh-scenarios/refresh-email.png" alt-text="Screenshot of admin area for changing Power BI email refresh notifications.":::
 
 
 ## Refresh using Web connector doesn't work properly
 
-If you have a Web connector script that's using the [**Web.Page**](/powerquery-m/web-page) function, and you've updated your dataset or report after November 18, 2016, you must use a gateway for refresh to work properly.
+If you have a Web connector script that's using the [**Web.Page**](/powerquery-m/web-page) function, and you've updated your semantic model or report after November 18, 2016, you must use a gateway for refresh to work properly.
 
 ## Unsupported data source for refresh
 
-When you configure a dataset, you might get an error indicating the dataset uses an unsupported data source for refresh. For details, see
+When you configure a semantic model, you might get an error indicating the semantic model uses an unsupported data source for refresh. For details, see
 [Troubleshooting unsupported data source for refresh](service-admin-troubleshoot-unsupported-data-source-for-refresh.md).
 
 ## Dashboard doesn't reflect changes after refresh
@@ -71,17 +71,17 @@ If you want to connect to a data source from Power BI service by using OAuth2, t
 
 ## Uncompressed data limits for refresh
 
-The maximum size for datasets imported into the **Power BI service** is 1 GB. These datasets are heavily compressed to ensure high performance. In addition, in shared capacity, the service places a limit of 10 GB on the amount of uncompressed data that's processed during refresh. This limit accounts for the compression, and therefore is much higher than the 1-GB maximum dataset size. Datasets in Power BI Premium aren't subject to these limits. If refresh in the Power BI service fails for this reason, reduce the amount of data being imported to Power BI and try again.
+The maximum size for semantic models imported into the **Power BI service** is 1 GB. These semantic models are heavily compressed to ensure high performance. In addition, in shared capacity, the service places a limit of 10 GB on the amount of uncompressed data that's processed during refresh. This limit accounts for the compression, and therefore is much higher than the 1-GB maximum semantic model size. Datasets in Power BI Premium aren't subject to these limits. If refresh in the Power BI service fails for this reason, reduce the amount of data being imported to Power BI and try again.
 
 ## Scheduled refresh time-out
 
-Scheduled refresh for imported datasets time out after two hours. This time-out is increased to five hours for datasets in **Premium** workspaces. If you encounter this limit, consider reducing the size or complexity of your dataset, or consider refactoring the large dataset into multiple smaller datasets.
+Scheduled refresh for imported semantic models time out after two hours. This time-out is increased to five hours for semantic models in **Premium** workspaces. If you encounter this limit, consider reducing the size or complexity of your semantic model, or consider refactoring the large semantic model into multiple smaller semantic models.
 
 ## Scheduled refresh disabled
 
 If a scheduled refresh fails four times in a row, Power BI disables the refresh. Address the underlying problem, and then re-enable the scheduled refresh.
 
-However, if the dataset resides in a workspace under Embedded capacity, and that capacity is switched off off, the *first* attempt at refresh will fail(since the capacity is switched off), and in this circumstance its scheduled refresh is immediately disabled.
+However, if the semantic model resides in a workspace under Embedded capacity, and that capacity is switched off off, the *first* attempt at refresh will fail(since the capacity is switched off), and in this circumstance its scheduled refresh is immediately disabled.
 
 ## Access to the resource is forbidden  
 
@@ -99,25 +99,25 @@ Visuals created in Power BI Desktop by using such columns might behave or appear
 
 ## Resolve the error: Container exited unexpectedly with code 0x0000DEAD
 
-If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try to disable the scheduled refresh and republish the dataset.
+If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try to disable the scheduled refresh and republish the semantic model.
 
 ## Refresh operation throttled by Power BI Premium
 
-A Premium capacity might throttle data refresh operations when too many datasets are being processed concurrently. Throttling can occur in Power BI Premium capacities. When a refresh operation is canceled, the following error messages are logged into the refresh history:
+A Premium capacity might throttle data refresh operations when too many semantic models are being processed concurrently. Throttling can occur in Power BI Premium capacities. When a refresh operation is canceled, the following error messages are logged into the refresh history:
 
-*You've exceeded the capacity limit for dataset refreshes. Try again when fewer datasets are being processed.*
+*You've exceeded the capacity limit for semantic model refreshes. Try again when fewer semantic models are being processed.*
  
 If the error occurs frequently, use the [schedule view](refresh-summaries.md#refresh-schedule) to determine whether the scheduled refresh events are properly spaced. To understand the maximum number of concurrent refreshes allowed per SKU, review the [Capacities and SKUs](../enterprise/service-premium-what-is.md#capacities-and-skus) table.
 
-To resolve this error, you can modify your refresh schedule to perform the refresh operation when fewer datasets are being processed. You can also increase the time between refresh operations for all datasets in your refresh schedule on the affected Premium capacity. You can retry the operation if you're using custom [XMLA operations](/analysis-services/xmla/xml-for-analysis-xmla-reference).
+To resolve this error, you can modify your refresh schedule to perform the refresh operation when fewer semantic models are being processed. You can also increase the time between refresh operations for all semantic models in your refresh schedule on the affected Premium capacity. You can retry the operation if you're using custom [XMLA operations](/analysis-services/xmla/xml-for-analysis-xmla-reference).
 
 *Capacity level limit exceeded.*
  
-This error indicates you have too many datasets running refresh at the same time, based on the capacity your organization has purchased. You can retry the refresh operation, or reschedule the refresh time to address this error.
+This error indicates you have too many semantic models running refresh at the same time, based on the capacity your organization has purchased. You can retry the refresh operation, or reschedule the refresh time to address this error.
 
 *Node level limit exceeded.*
  
-This error indicates a system error in Power BI Premium based on datasets residing on a given physical node. You can retry the refresh operation, or reschedule the refresh time to address this error.
+This error indicates a system error in Power BI Premium based on semantic models residing on a given physical node. You can retry the refresh operation, or reschedule the refresh time to address this error.
 
 ## Dataflows or datamart failures in Premium workspaces
 

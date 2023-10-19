@@ -132,7 +132,7 @@ You can add more visualizations if you wish. In the interest of brevity, in this
 
      :::image type="content" source="media/service-aml-integrate/publish-success.png" alt-text="Screenshot showing successful publish.":::
 
-## Enable datasets to refresh
+## Enable semantic models to refresh
 
 In a scenario where the data source is refreshed with new data to score, you need to update your credentials so the data can be scored. 
 
@@ -146,7 +146,7 @@ Select **Datasets**, expand **Data source credentials**, then select **Edit Cred
 
 Follow the instructions for both **azureMLFunctions** and **Web**. Make sure that you select a privacy level. You can now set a **Scheduled refresh** of the data. Select a **Refresh frequency** and **Time zone**. You can also select an email address where Power BI can send refresh failure notifications.
 
-:::image type="content" source="media/service-aml-integrate/schedule-refresh.png" alt-text="Screenshot showing dataset and scoring refresh.":::
+:::image type="content" source="media/service-aml-integrate/schedule-refresh.png" alt-text="Screenshot showing semantic model and scoring refresh.":::
 
 Select **Apply**.
 
@@ -169,7 +169,7 @@ If you don't plan to use the resources that you created, delete them so you don'
    ![Screenshot of the selections to delete a resource group in the Azure portal.](./media/service-aml-integrate/delete-resources.png)
 
 1. Enter the resource group name. Then select **Delete**.
-1. In My Workspace in the Power BI service, delete the report and the related dataset. You don't need to delete Power BI Desktop or the report on your computer. Power BI Desktop is free.
+1. In My Workspace in the Power BI service, delete the report and the related semantic model. You don't need to delete Power BI Desktop or the report on your computer. Power BI Desktop is free.
 
 ## Next steps
 

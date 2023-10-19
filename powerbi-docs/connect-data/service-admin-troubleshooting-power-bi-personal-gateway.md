@@ -40,15 +40,15 @@ Many issues can surface when the gateway version is out of date. It's a good gen
 
 **Error: The credential stored in the cloud is missing.**
 
-You might get this error in settings for a dataset if you have a scheduled refresh and then you uninstalled and reinstalled the gateway (personal mode). When you uninstall a gateway (personal mode), the data source credentials for a dataset that was configured for refresh are removed from the Power BI service.
+You might get this error in settings for a semantic model if you have a scheduled refresh and then you uninstalled and reinstalled the gateway (personal mode). When you uninstall a gateway (personal mode), the data source credentials for a semantic model that was configured for refresh are removed from the Power BI service.
 
-**Solution:** In the Power BI service, go to the refresh settings for a dataset. In **Manage Data Sources**, for any data source with an error, select **Edit credentials**. Then sign in to the data source again.
+**Solution:** In the Power BI service, go to the refresh settings for a semantic model. In **Manage Data Sources**, for any data source with an error, select **Edit credentials**. Then sign in to the data source again.
 
-**Error: The credentials provided for the dataset are invalid. Please update the credentials through a refresh or in the Data Source Settings dialog to continue.**
+**Error: The credentials provided for the semantic model are invalid. Please update the credentials through a refresh or in the Data Source Settings dialog to continue.**
 
 **Solution:** If you get a credentials message, it could mean:
 
-- The usernames and passwords that you used to sign in to data sources aren't up to date. In the Power BI service, go to refresh settings for the dataset. In **Manage Data Sources**, select **Edit credentials** to update the credentials for the data source.
+- The usernames and passwords that you used to sign in to data sources aren't up to date. In the Power BI service, go to refresh settings for the semantic model. In **Manage Data Sources**, select **Edit credentials** to update the credentials for the data source.
 - Mashups between a cloud source and an on-premises source, in a single query, fail to refresh in the gateway (personal mode) if one of the sources is using OAuth for authentication. An example of this issue is a mashup between CRM Online and a local SQL Server instance. The mashup fails because CRM Online requires OAuth.
   
   This error is a known issue, and it's being looked at. To work around the problem, have a separate query for the cloud source and the on-premises source. Then, use a merge or append query to combine them.
@@ -74,7 +74,7 @@ You might get this error in settings for a dataset if you have a scheduled refre
 
 ## Data sources
 
-**Missing data provider:** The gateway (personal mode) operates on 64-bit versions only. It requires a 64-bit version of the data providers to be installed on the same computer where the gateway (personal mode) is installed. For example, if the data source in the dataset is Microsoft Access, you must install the 64-bit ACE provider on the same computer where you installed the gateway (personal mode).
+**Missing data provider:** The gateway (personal mode) operates on 64-bit versions only. It requires a 64-bit version of the data providers to be installed on the same computer where the gateway (personal mode) is installed. For example, if the data source in the semantic model is Microsoft Access, you must install the 64-bit ACE provider on the same computer where you installed the gateway (personal mode).
 
 > [!NOTE]
 > If you have a 32-bit version of Excel, you can't install a 64-bit version ACE provider on the same computer.
@@ -107,7 +107,7 @@ If you receive an error when dashboard tiles refresh, see [Troubleshooting tile 
 
 With **Refresh history**, you can see what errors occurred and find useful data if you need to create a support request. You can view both scheduled and on-demand refreshes. Here's how you get to **Refresh history**.
 
-1. In the Power BI service navigation pane, in **Datasets**, select a dataset. Open the **More options (...)** menu, and select **Schedule refresh**.
+1. In the Power BI service navigation pane, in **Datasets**, select a semantic model. Open the **More options (...)** menu, and select **Schedule refresh**.
 
    ![Screenshot shows selecting Schedule refresh from the navigation pane.](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh.png)
 

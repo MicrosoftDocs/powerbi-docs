@@ -105,13 +105,13 @@ Work with your domain administrators to verify the trust relationship between do
 
 Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gateway, check with the administrator of the gateway and ask them to verify. Only accounts in the **Users** list can see the data source listed in the Analysis Services list.
 
-### Error: You don't have any gateway installed or configured for the data sources in this dataset.
+### Error: You don't have any gateway installed or configured for the data sources in this semantic model.
 
 Ensure that you've added one or more data sources to the gateway, as described in [Add a data source](service-gateway-data-sources.md#add-a-data-source). If the gateway doesn't appear in the admin portal under **Manage gateways**, clear your browser cache or sign out of the service and then sign back in.
 
 ### Error: Your data source can't be refreshed because the credentials are invalid. Please update your credentials and try again.
 
-You were able to connect and refresh the dataset, with no runtime errors for the connection, yet in the Power BI service this error bar appears. When the user attempts to update the credentials with known-good credentials, an error appears stating that the credentials supplied were invalid. 
+You were able to connect and refresh the semantic model, with no runtime errors for the connection, yet in the Power BI service this error bar appears. When the user attempts to update the credentials with known-good credentials, an error appears stating that the credentials supplied were invalid. 
 
 This error can occur when the gateway attempts a test connection, even if the credentials supplied are acceptable and the refresh operation is successful. This occurs because when the gateway performs a connection test, it does not include any optional parameters during the connection attempt, and some data connectors (such as Snowflake, for example) require optional connection parameters in order to connect.
 
@@ -144,7 +144,7 @@ The exact limitation is 10 GB of uncompressed data per table. If you're hitting 
 
 A few different scenarios could be responsible for this error
 
-- Gateway process may have restarted when the dataset refresh was in progress.
+- Gateway process may have restarted when the semantic model refresh was in progress.
 - The gateway machine is cloned where gateway is running. We should not clone gateway machine.
 
 ## Reports
@@ -153,7 +153,7 @@ A few different scenarios could be responsible for this error
 
 This error is usually caused by one of the following:
 
-- The data source information doesn't match what's in the underlying dataset. The server and database name need to match between the data source defined for the on-premises data gateway and what you supply within Power BI Desktop. If you use an IP address in Power BI Desktop, the data source for the on-premises data gateway needs to use an IP address as well.
+- The data source information doesn't match what's in the underlying semantic model. The server and database name need to match between the data source defined for the on-premises data gateway and what you supply within Power BI Desktop. If you use an IP address in Power BI Desktop, the data source for the on-premises data gateway needs to use an IP address as well.
 - There's no data source available on any gateway within your organization. You can configure the data source on a new or existing on-premises data gateway.
 
 ### Error: Data source access error. Please contact the gateway administrator.
@@ -259,7 +259,7 @@ Gateway logs are required for troubleshooting and creating a support ticket. Use
 
 1. Identify the gateway cluster.
 
-    If you're a dataset owner, first check the gateway cluster name associated with your dataset. In the following image, *IgniteGateway* is the gateway cluster.
+    If you're a semantic model owner, first check the gateway cluster name associated with your semantic model. In the following image, *IgniteGateway* is the gateway cluster.
 
     ![Gateway cluster](media/service-gateway-onprem-tshoot/gateway-cluster.png)
 
@@ -288,7 +288,7 @@ Gateway logs are required for troubleshooting and creating a support ticket. Use
 
 When you use the gateway for a scheduled refresh, **Refresh history** can help you see what errors occurred. It can also provide useful data if you need to create a support request. You can view scheduled and on-demand refreshes. The following steps show how you can get to the refresh history.
 
-1. In the Power BI nav pane, in **Datasets**, select a dataset. Open the menu, and select **Schedule refresh**.
+1. In the Power BI nav pane, in **Datasets**, select a semantic model. Open the menu, and select **Schedule refresh**.
 
     ![How to select schedule refresh](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 

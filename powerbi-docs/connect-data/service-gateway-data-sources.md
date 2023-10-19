@@ -57,7 +57,7 @@ If you don't have a gateway installed, [install an on-premises data gateway](/da
 
    If you use **Use SSO via Kerberos for DirectQuery queries** and use this data source for a DirectQuery-based report, the report uses the credentials of the user that signs in to the Power BI service. A refresh-based report uses the credentials that you enter in the **Username** and **Password** fields and the **Authentication** method you choose.
 
-   When you use **Use SSO via Kerberos for DirectQuery And Import queries**, you don't need to provide any credentials. If this data source is used for DirectQuery-based reports, the report uses the user that's mapped to the Azure AD user that signs in to the Power BI service. A refresh-based report uses the dataset owner's security context.
+   When you use **Use SSO via Kerberos for DirectQuery And Import queries**, you don't need to provide any credentials. If this data source is used for DirectQuery-based reports, the report uses the user that's mapped to the Azure AD user that signs in to the Power BI service. A refresh-based report uses the semantic model owner's security context.
 
    For more information about **Use SSO via Kerberos for DirectQuery queries** and **Use SSO via Kerberos for DirectQuery And Import queries**, see [Overview of single sign-on (SSO) for gateways in Power BI](service-gateway-sso-overview.md).
 
@@ -95,14 +95,14 @@ To remove a data source, select the data source from the **Data (preview)** scre
 
 After you create the data source, it's available to use with DirectQuery connections or through scheduled refresh. You can learn more about setting up scheduled refresh in [Configure scheduled refresh](refresh-scheduled-refresh.md).
 
-The link between your dataset and the data source in the gateway is based on your server name and database name. These names must match. For example, if you supply an IP address for the server name in Power BI Desktop, you must use the IP address for the data source in the gateway configuration. If you use `SERVER\INSTANCE` in Power BI Desktop, you must use the same format in the data source you configure for the gateway.
+The link between your semantic model and the data source in the gateway is based on your server name and database name. These names must match. For example, if you supply an IP address for the server name in Power BI Desktop, you must use the IP address for the data source in the gateway configuration. If you use `SERVER\INSTANCE` in Power BI Desktop, you must use the same format in the data source you configure for the gateway.
 
 If you're listed in the **Users** tab of the data source configured in the gateway, and the server and database name match, you see the gateway listed as **Running** under **Gateway connections** in the **Settings** for your data source. You can select **Scheduled refresh** to set up scheduled refresh for the data source.
 
 :::image type="content" source="media/service-gateway-data-sources/gateway-connection.png" alt-text="Screenshot of how to create gateway connection.":::
 
 > [!IMPORTANT]
-> If your dataset contains multiple data sources, each data source must be added in the gateway. If one or more data sources aren't added to the gateway, you won't see the gateway as available for scheduled refresh.
+> If your semantic model contains multiple data sources, each data source must be added in the gateway. If one or more data sources aren't added to the gateway, you won't see the gateway as available for scheduled refresh.
 
 ## Manage users
 
@@ -111,7 +111,7 @@ After you add a data source to a gateway, you give users and security groups acc
 You can also give users and security groups administrative access to the gateway.
 
 > [!NOTE]
-> Users with access to the data source can associate datasets to the data source, and connect, based on either the stored credentials or SSO you selected while creating a data source.
+> Users with access to the data source can associate semantic models to the data source, and connect, based on either the stored credentials or SSO you selected while creating a data source.
 
 ### Add users to a data source
 

@@ -186,7 +186,7 @@ If you still have issues, submit a support incident to [Power BI support](https:
 
 ## Data connection time-outs
 
-When you try to create a new connection or connect to an existing Power BI dataset, Power BI Desktop might time out without establishing the connection. The connection spinner might continue to turn, but the connection never completes.
+When you try to create a new connection or connect to an existing Power BI semantic model, Power BI Desktop might time out without establishing the connection. The connection spinner might continue to turn, but the connection never completes.
 
 This situation can happen if your machine has a security product such as Digital Guardian or other security products installed. In some cases, the installed security product can interfere with outgoing network connection request calls, causing the connection attempt to time out or fail.
 

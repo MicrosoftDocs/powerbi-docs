@@ -34,7 +34,7 @@ Follow these instructions to add a SQL Server data source to your on-premises da
    
    :::image type="content" source="media/service-gateway-enterprise-manage-sql/authentification-sql.png" alt-text=" Screenshot of filling in the data source settings." :::
 
-   All queries to the data source run using these credentials unless you configure and enable Kerberos single sign-on (SSO) for the data source. With SSO, datasets use the current Power BI user's SSO credentials to execute the queries.
+   All queries to the data source run using these credentials unless you configure and enable Kerberos single sign-on (SSO) for the data source. With SSO, semantic models use the current Power BI user's SSO credentials to execute the queries.
 
    For more information about storing and using credentials, see:
    - [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud)
@@ -58,13 +58,13 @@ After you create the data source, it's available to use with either DirectQuery 
 
 ### Server and database names must match
 
-The link between your dataset and the data source in the gateway is based on your server name and database name. These names must match exactly.
+The link between your semantic model and the data source in the gateway is based on your server name and database name. These names must match exactly.
 
 For example, if you supply an IP address for the server name in Power BI Desktop, you must use the IP address for the data source in the gateway configuration. If you use *SERVER\INSTANCE* in Power BI Desktop, you must use *SERVER\INSTANCE* in the data source you configure for the gateway. This requirement holds for both DirectQuery and scheduled refresh.
 
 ### Use the data source with DirectQuery connections
 
-Make sure that the server and database names match between Power BI Desktop and the configured data source for the gateway. Also, to be able to publish DirectQuery datasets, your users must appear under **Users** in the data source list.
+Make sure that the server and database names match between Power BI Desktop and the configured data source for the gateway. Also, to be able to publish DirectQuery semantic models, your users must appear under **Users** in the data source list.
 
 You select the DirectQuery connection method in Power BI Desktop when you first connect to data. For more information about how to use DirectQuery, see [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md).
 

@@ -69,7 +69,7 @@ The Emissions Impact Dashboard for Azure is supported for EA Direct, MCA, and MP
 
     ![Pick an account.](media/service-connect-to-emissions-impact-dashboard/pick-account.png)
 
-1. Wait for the view to build. This can take up to 24 hours. Refresh the dataset after 24 hours.
+1. Wait for the view to build. This can take up to 24 hours. Refresh the semantic model after 24 hours.
 
 ## Update the app
 
@@ -81,13 +81,13 @@ Select **Update the workspace and the app**, and then select **Install**. This w
 
 ### Issues
 
-If there are any issues with the dataset refresh/app update during the updating process, validate these steps and refresh the dataset.
+If there are any issues with the semantic model refresh/app update during the updating process, validate these steps and refresh the semantic model.
 
-Follow the steps below to make sure your dataset configurations are set correctly:
+Follow the steps below to make sure your semantic model configurations are set correctly:
 
 1. Go to the workspace panel and open the app workspace.
 
-1. Open the **Scheduled Refresh** option in the dataset settings and make sure the [billing account ID](#finding-your-companys-billing-account-id) is correct.
+1. Open the **Scheduled Refresh** option in the semantic model settings and make sure the [billing account ID](#finding-your-companys-billing-account-id) is correct.
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/schedule-refresh.png" alt-text="Screenshot of schedule refresh.":::
 
@@ -99,7 +99,7 @@ Follow the steps below to make sure your dataset configurations are set correctl
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/data-refresh.png" alt-text="Screenshot of data refresh.":::
 
-1. After the dataset has refreshed successfully, select the **Update App** option at the top-right corner of the app workspace.
+1. After the semantic model has refreshed successfully, select the **Update App** option at the top-right corner of the app workspace.
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/updating-app.png" alt-text="Screenshot of Updating App.":::
 

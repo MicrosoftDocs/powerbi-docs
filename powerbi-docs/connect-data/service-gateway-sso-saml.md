@@ -211,7 +211,7 @@ Finally, add the certificate thumbprint to the gateway configuration:
 
 ## Run a Power BI report
 
-Now you can use the **Manage Gateway** page in Power BI to configure the SAP HANA data source. Under **Advanced Settings**, enable SSO via SAML. By doing so, you can publish reports and datasets binding to that data source.
+Now you can use the **Manage Gateway** page in Power BI to configure the SAP HANA data source. Under **Advanced Settings**, enable SSO via SAML. By doing so, you can publish reports and semantic models binding to that data source.
 
    :::image type="content" source="media/service-gateway-sso-saml/enable-ss-saml.png" alt-text=" Screenshot of advanced settings with single sign-on for SAML.":::
 

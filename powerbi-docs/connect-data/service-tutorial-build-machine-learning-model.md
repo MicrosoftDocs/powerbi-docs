@@ -16,7 +16,7 @@ LocalizationGroup: Connect to services
 
 In this tutorial, you use *automated machine learning* to create and apply a binary prediction model in Power BI. You create a Power BI dataflow, and use the entities you define in the dataflow to train and validate a machine learning model directly in Power BI. You then use that model to score new data and generate predictions.
 
-First, you create a binary prediction machine learning model to predict the purchase intent of online shoppers, based on a set of their online session attributes. You use a benchmark machine learning dataset for this exercise. Once you train a model, Power BI automatically generates a validation report that explains the model results. You can then review the validation report and apply the model to your data for scoring.
+First, you create a binary prediction machine learning model to predict the purchase intent of online shoppers, based on a set of their online session attributes. You use a benchmark machine learning semantic model for this exercise. Once you train a model, Power BI automatically generates a validation report that explains the model results. You can then review the validation report and apply the model to your data for scoring.
 
 This tutorial consists of the following steps:
 > [!div class="checklist"]
@@ -32,9 +32,9 @@ Create a dataflow with input data by following these steps.
 
 ### Get data
 
-The first step in creating a dataflow is to have your data sources ready. In this case, you use a machine learning dataset from a set of online sessions, some of which culminated in a purchase. The dataset contains a set of attributes about these sessions, which you use to train your model.
+The first step in creating a dataflow is to have your data sources ready. In this case, you use a machine learning semantic model from a set of online sessions, some of which culminated in a purchase. The semantic model contains a set of attributes about these sessions, which you use to train your model.
 
-You can download the dataset from the UC Irvine website or by downloading the [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv). Later in this tutorial, you connect to the dataset by specifying its URL.
+You can download the semantic model from the UC Irvine website or by downloading the [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv). Later in this tutorial, you connect to the semantic model by specifying its URL.
 
 ### Create the tables
 
@@ -112,9 +112,9 @@ Select your dataflow under **Dataflows**, expand **Data source credentials**, an
 
 ### Track training status
 
-The training process begins by sampling and normalizing your historical data and splitting your dataset into two new entities: **Purchase Intent Prediction Training Data** and **Purchase Intent Prediction Testing Data**.
+The training process begins by sampling and normalizing your historical data and splitting your semantic model into two new entities: **Purchase Intent Prediction Training Data** and **Purchase Intent Prediction Testing Data**.
 
-Depending on the size of the dataset, the training process can take anywhere from a few minutes up to the training time you selected. You can confirm that the model is being trained and validated through the status of the dataflow. The status appears as a data refresh in progress in the **Datasets + dataflows** tab of the workspace.
+Depending on the size of the semantic model, the training process can take anywhere from a few minutes up to the training time you selected. You can confirm that the model is being trained and validated through the status of the dataflow. The status appears as a data refresh in progress in the **Datasets + dataflows** tab of the workspace.
 
 [ ![Screenshot that shows the model under training.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-15.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-15.png#lightbox)
 

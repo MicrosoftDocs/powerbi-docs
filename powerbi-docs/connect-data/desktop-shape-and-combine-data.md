@@ -280,7 +280,7 @@ In this case, we want to merge the queries:
 
 1. To apply your changes and close Power Query Editor, select **Close & Apply** from the **Home** ribbon tab. 
 
-   The transformed dataset appears in Power BI Desktop, ready to be used for creating reports.
+   The transformed semantic model appears in Power BI Desktop, ready to be used for creating reports.
 
    :::image type="content" source="media/desktop-shape-and-combine-data/close-and-apply.png" alt-text="Screenshot of Power Query Editor's Close & Apply button.":::
 

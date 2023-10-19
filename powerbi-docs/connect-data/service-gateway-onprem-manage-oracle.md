@@ -58,11 +58,11 @@ After you create the data source, it's available to use with either DirectQuery 
 > [!IMPORTANT]
 > The server and database names must match between Power BI Desktop and the data source within the on-premises data gateway.
 
-The link between your dataset and the data source within the gateway is based on your server name and database name. These names must match exactly. For example, if you supply an IP address for the server name within Power BI Desktop, you must use the IP address for the data source within the gateway configuration. This name also has to match a net service name or alias that the *tnsnames.ora* file defines. This requirement is the case for both DirectQuery and scheduled refresh.
+The link between your semantic model and the data source within the gateway is based on your server name and database name. These names must match exactly. For example, if you supply an IP address for the server name within Power BI Desktop, you must use the IP address for the data source within the gateway configuration. This name also has to match a net service name or alias that the *tnsnames.ora* file defines. This requirement is the case for both DirectQuery and scheduled refresh.
 
 ### Use the data source with DirectQuery connections
 
-Make sure that the server and database names match between Power BI Desktop and the configured data source for the gateway. Also, to be able to publish DirectQuery datasets, your users must appear under **Users** in the data source listing.
+Make sure that the server and database names match between Power BI Desktop and the configured data source for the gateway. Also, to be able to publish DirectQuery semantic models, your users must appear under **Users** in the data source listing.
 
 After you publish reports, either from Power BI Desktop or by getting data in Power BI service, your database connection should work. It might take several minutes after you create the data source in the gateway to be able to use the connection.
 

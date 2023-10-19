@@ -58,7 +58,7 @@ After you've installed the template app, you can change the dashboard and report
 
 1. Select **Connect** to begin the import process. 
 
-1. After Power BI imports the data, you see the content list for your Zendesk app: a new dashboard, report, and dataset.
+1. After Power BI imports the data, you see the content list for your Zendesk app: a new dashboard, report, and semantic model.
 
 1. Select the dashboard to start the exploration process.
 

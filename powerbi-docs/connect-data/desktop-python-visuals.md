@@ -55,7 +55,7 @@ Work through [Run Python scripts in Power BI Desktop](desktop-python-scripts.md)
 
    Based on your selections, the Python script editor generates the following binding code.
 
-   - The editor creates a *dataset* dataframe with the fields you add.
+   - The editor creates a *semantic model* dataframe with the fields you add.
    - The default aggregation is **Don't summarize**.
    - Similar to table visuals, fields are grouped and duplicate rows appear only once.
 
@@ -67,9 +67,9 @@ Work through [Run Python scripts in Power BI Desktop](desktop-python-scripts.md)
 
 - Your Python script can use only fields that are added to the **Values** section. You can add or remove fields while you work on your Python script. Power BI Desktop automatically detects field changes. As you select or remove fields from the **Values** section, supporting code in the Python script editor is automatically generated or removed.
 
-- In some cases, you might not want automatic grouping to occur, or you might want all rows to appear, including duplicates. In those cases, you can add an index field to your dataset that causes all rows to be considered unique and prevents grouping.
+- In some cases, you might not want automatic grouping to occur, or you might want all rows to appear, including duplicates. In those cases, you can add an index field to your semantic model that causes all rows to be considered unique and prevents grouping.
 
-- You can access columns in the dataset by using their names. For example, you can code `dataset["Age"]` in your Python script to access the age field.
+- You can access columns in the semantic model by using their names. For example, you can code `semantic model["Age"]` in your Python script to access the age field.
 
 - Power BI Desktop replots the visual when you select **Run** from the **Python script editor** title bar, or whenever a data change occurs due to data refresh, filtering, or highlighting.
 
@@ -85,7 +85,7 @@ Create a scatter plot to see if there's a correlation between age and weight.
 
    ```python
    import matplotlib.pyplot as plt 
-   dataset.plot(kind='scatter', x='Age', y='Weight', color='red')
+   semantic model.plot(kind='scatter', x='Age', y='Weight', color='red')
    plt.show() 
    ```
 
@@ -108,8 +108,8 @@ Create a line plot for each person that shows their number of children and pets.
    ```python
    import matplotlib.pyplot as plt 
    ax = plt.gca() 
-   dataset.plot(kind='line',x='Fname',y='Children',ax=ax) 
-   dataset.plot(kind='line',x='Fname',y='Pets', color='red', ax=ax) 
+   semantic model.plot(kind='line',x='Fname',y='Children',ax=ax) 
+   semantic model.plot(kind='line',x='Fname',y='Pets', color='red', ax=ax) 
    plt.show() 
    ```
 
@@ -125,7 +125,7 @@ Create a bar plot for each person's age.
 
    ```python
    import matplotlib.pyplot as plt 
-   dataset.plot(kind='bar',x='Fname',y='Age') 
+   semantic model.plot(kind='bar',x='Fname',y='Age') 
    plt.show() 
    ```
 
@@ -139,7 +139,7 @@ Python visuals in Power BI Desktop have the following limitations:
 
 - The data the Python visual uses for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used, and a message appears on the image. The input data also has a limit of 250 MB.
 
-- If the input dataset of a Python visual has a column that contains a string value longer than 32,766 characters, that value is truncated.
+- If the input semantic model of a Python visual has a column that contains a string value longer than 32,766 characters, that value is truncated.
 
 - All Python visuals display at 72 DPI resolution.
 

@@ -102,7 +102,7 @@ You can set the following options under **Advanced options** on the SAP BW conne
 
   The default value is **BasXmlGzip**. This mode can improve performance for low latency or high volume queries.
 
-- **Batch size** specifies the maximum number of rows to retrieve at a time when executing an MDX statement. A small number means more calls to the server while retrieving a large dataset. A large value might improve performance, but could cause memory issues on the SAP BW server. The default value is **50000**.
+- **Batch size** specifies the maximum number of rows to retrieve at a time when executing an MDX statement. A small number means more calls to the server while retrieving a large semantic model. A large value might improve performance, but could cause memory issues on the SAP BW server. The default value is **50000**.
 
 - **Enable characteristic structures** changes the way the **Navigator** displays characteristic structures. The default value for this option is false, or unchecked. This option affects the list of objects available for selection, and isn't supported in native query mode.
 
@@ -113,11 +113,11 @@ The following list describes other Implementation 2.0 improvements:
 - Better performance.
 - Ability to retrieve several million rows of data, and fine-tuning through the batch size parameter.
 - Ability to switch execution modes.
-- Support for compressed mode, especially beneficial for high-latency connections or large datasets.
+- Support for compressed mode, especially beneficial for high-latency connections or large semantic models.
 - Improved detection of `Date` variables.
 - `Date` (ABAP type `DATS`) and `Time` (ABAP type `TIMS`) dimensions exposed as dates and times, instead of text values. For more information, see [Support for typed dates in SAP BW](/power-query/connectors/sap-bw/implementation-details#support-for-typed-dates-in-sap-bw).
 - Better exception handling. Errors that occur in BAPI calls are now surfaced.
-- Column folding in `BasXml` and `BasXmlGzip` modes. For example, if the generated MDX query retrieves 40 columns but the current selection only needs 10, this request passes on to the server to retrieve a smaller dataset.
+- Column folding in `BasXml` and `BasXmlGzip` modes. For example, if the generated MDX query retrieves 40 columns but the current selection only needs 10, this request passes on to the server to retrieve a smaller semantic model.
 
 ## Update existing Implementation 1.0 reports
 
