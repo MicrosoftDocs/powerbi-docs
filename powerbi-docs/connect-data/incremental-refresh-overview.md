@@ -155,7 +155,7 @@ The current date and time is based on the system date at the time of refresh. If
 
 ## Configure incremental refresh and real-time data
 
-This sections describes important concepts of configuring incremental refresh and real-time data. When you're ready for more detailed step-by-step instructions, see [Configure incremental refresh and real-time data for datasets](incremental-refresh-configure.md).
+This section describes important concepts of configuring incremental refresh and real-time data. When you're ready for more detailed step-by-step instructions, see [Configure incremental refresh and real-time data for datasets](incremental-refresh-configure.md).
 
 Configuring incremental refresh is done in Power BI Desktop. For most models, only a few tasks are required. However, keep the following points in mind:
 

@@ -105,7 +105,7 @@ For example, consider a model with a **Product** dimension-type table in Dual mo
 
 ## Hybrid tables
 
-Data modelers who develop Composite models can also configure fact tables as hybrid tables. A hybrid table is a table with one or multiple Import partitions and one DirectQuery partition. The advantage of a hybrid table is it could be efficiently and quickly queried from in-memory while at the same time including the latest data changes from the data source that occurred after the last import cycle, as the following visualization illustrates.
+Data modelers who develop Composite models can also configure fact tables as hybrid tables. A hybrid table is a table with one or multiple Import partitions and one DirectQuery partition. The advantage of a hybrid table is that it could be efficiently and quickly queried from in-memory while at the same time including the latest data changes from the data source that occurred after the last import cycle, as the following visualization illustrates.
 
 :::image type="content" source="media/service-dataset-modes-understand/hybrid-tables-partition.gif" alt-text="Screenshot shows a hybrid table partition with Archived, Incremental refresh, and Real time rows marked.":::
 
