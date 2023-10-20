@@ -216,7 +216,7 @@
       href: service-interact-with-a-report-in-editing-view.md
     - name: Analyze in Excel
       href: ../collaborate-share/service-analyze-in-excel.md
-    - name: Work with aggregates in the service
+    - name: Work with aggregates
       href: service-aggregates.md
     - name: Create a QR code for a report
       href: service-create-qr-code-for-report.md
