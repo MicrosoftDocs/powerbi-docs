@@ -45,14 +45,14 @@ By default, when you create a Power BI Desktop report that connects to a cloud d
 
 In contrast, if you have access to at least one shareable cloud connection to the same data source, you can use the shareable cloud connection, which has already been configured for you by its owner, instead of having to use your only available personal cloud connection for the data source. 
 
-To use the shareable cloud connection, on the **Datasets** settings page, under **Gateway and cloud connections**, find **Cloud connections** and can select the shareable cloud connection you want to use for the connection, then select **Apply**. The following screenshot shows the settings.
+To use the shareable cloud connection, on the **Semantic models** settings page, under **Gateway and cloud connections**, find **Cloud connections** and can select the shareable cloud connection you want to use for the connection, then select **Apply**. The following screenshot shows the settings.
 
 :::image type="content" source="media/service-connect-cloud-data-sources/service-connect-cloud-data-sources-01.png" alt-text="Screenshot of connecting to a shareable cloud connection.":::
 
 
 ## Create a new shareable cloud connection
 
-You can create a new shareable cloud connection directly from the **Dataset** settings page. Under **Gateway connections** > **Cloud connections**, select the **Maps to** dropdown and then select **Create a connection**.
+You can create a new shareable cloud connection directly from the **Semantic model** settings page. Under **Gateway connections** > **Cloud connections**, select the **Maps to** dropdown and then select **Create a connection**.
 
 :::image type="content" source="media/service-connect-cloud-data-sources/service-connect-cloud-data-sources-02.png" alt-text="Screenshot of selecting to create a new connection.":::
 

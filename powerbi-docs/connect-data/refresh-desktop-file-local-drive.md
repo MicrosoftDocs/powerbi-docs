@@ -52,7 +52,7 @@ For details on how to set up scheduled refresh, see [Configure scheduled refresh
 
 When things go wrong, it's usually because Power BI can't sign into data sources. Make sure Power BI can sign into your data sources. If the dataset connects to an on-premises data source, the gateway might be offline. If the password you use to sign in to the data source changes, or Power BI gets signed out, try signing into your data sources again in **Data source credentials**.
 
-Be sure to set **Send refresh failure notifications** to **Dataset owner**, so you know right away if a scheduled refresh fails.
+Be sure to set **Send refresh failure notifications** to **Semantic model owner**, so you know right away if a scheduled refresh fails.
 
 Sometimes refreshing data might not go as you expect. This issue often involves a gateway. For tools and known issues, see the following gateway troubleshooting articles:
 

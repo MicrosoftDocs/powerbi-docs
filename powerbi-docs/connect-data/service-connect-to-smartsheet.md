@@ -60,7 +60,7 @@ You've installed the Smartsheet template app. That means you've also created the
 
     ![Smartsheet content list](media/service-connect-to-smartsheet/power-bi-smartsheet-workspace-content.png)
 
-2. Select **Reports** and **Datasets** to see the other elements in the workspace.
+2. Select **Reports** and **Semantic models** to see the other elements in the workspace.
 
     Read about [distributing apps](../collaborate-share/service-create-distribute-apps.md) to your colleagues.
 
@@ -73,5 +73,5 @@ To connect directly to individual sheets in your account, you can use the Smarts
 
 * [Create workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
 * [Install and use apps in Power BI](../consumer/end-user-apps.md)
-* [COnnect to Power BI apps for external services](service-connect-to-services.md)
+* [Connect to Power BI apps for external services](service-connect-to-services.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

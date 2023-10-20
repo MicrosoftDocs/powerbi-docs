@@ -46,9 +46,9 @@ You can also specify a short date/time period in the `RangeStart` and `RangeEnd`
 
 If you determine the query isn't being folded, refer to [Query folding guidance in Power BI Desktop](../guidance/power-query-folding.md) and [Power Query query folding](/power-query/power-query-folding) for help with identifying what might be preventing query folding and how, or if, the data source can even support query folding.
 
-## Dataset refresh in the service
+## Semantic model refresh in the service
 
-Troubleshooting incremental refresh issues in the service differ depending on the type of capacity your dataset has been published to. Datasets on Premium capacities support using tools like SQL Server Management Studio (SSMS) to view and selectively refresh individual partitions. Power BI Pro datasets on the other hand don't provide tool access through the XMLA endpoint, so troubleshooting incremental refresh issues might require a little more trial and error.
+Troubleshooting incremental refresh issues in the service differ depending on the type of capacity your dataset has been published to. Semantic models on Premium capacities support using tools like SQL Server Management Studio (SSMS) to view and selectively refresh individual partitions. Power BI Pro datasets on the other hand don't provide tool access through the XMLA endpoint, so troubleshooting incremental refresh issues might require a little more trial and error.
 
 ### Problem: Initial refresh times out
 

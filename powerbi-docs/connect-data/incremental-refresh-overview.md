@@ -21,7 +21,7 @@ With incremental refresh and real-time data:
 - **Refreshes are faster.** Only the most recent data that has changed needs to be refreshed.
 - **Refreshes are more reliable.** Long-running connections to volatile data sources aren't necessary. Queries to source data run faster, reducing potential for network problems to interfere.
 - **Resource consumption is reduced.** Less data to refresh reduces overall consumption of memory and other resources in both Power BI and data source systems.
-- **Large datasets are enabled.** Datasets with potentially billions of rows can grow without the need to fully refresh the entire dataset with each refresh operation.
+- **Large datasets are enabled.** Semantic models with potentially billions of rows can grow without the need to fully refresh the entire dataset with each refresh operation.
 - **Setup is easy.** Incremental refresh *policies* are defined in Power BI Desktop with just a few tasks. When Power BI Desktop publishes the report, the service automatically applies those policies with each refresh.  
 
 When you publish a Power BI Desktop model to the service, each table in the new dataset has a single partition. That single partition contains all rows for that table. If the table is large, say with tens of millions of rows or more, a refresh for that table can take a long time and consume an excessive amount of resources.
@@ -155,7 +155,7 @@ The current date and time is based on the system date at the time of refresh. If
 
 ## Configure incremental refresh and real-time data
 
-This sections describes important concepts of configuring incremental refresh and real-time data. When you're ready for more detailed step-by-step instructions, see [Configure incremental refresh and real-time data for datasets](incremental-refresh-configure.md).
+This section describes important concepts of configuring incremental refresh and real-time data. When you're ready for more detailed step-by-step instructions, see [Configure incremental refresh and real-time data for datasets](incremental-refresh-configure.md).
 
 Configuring incremental refresh is done in Power BI Desktop. For most models, only a few tasks are required. However, keep the following points in mind:
 
@@ -228,7 +228,7 @@ In some cases, enabling the **Detect data changes*** option can be further enhan
 After configuring the incremental refresh policy, you publish the model to the service. When publishing is complete, you can perform the initial refresh operation on the *dataset*.
 
 > [!NOTE]
-> Datasets with an incremental refresh policy to get the latest data in real time with DirectQuery can only be published to a Premium workspace.
+> Semantic models with an incremental refresh policy to get the latest data in real time with DirectQuery can only be published to a Premium workspace.
 
 For datasets published to workspaces assigned to Premium capacities, if you think the dataset will grow beyond 1 GB, you can improve refresh operation performance and ensure the dataset doesn't max out size limits by enabling Large dataset storage format *before* performing the first refresh operation in the service. To learn more, see [Large datasets in Power BI Premium](../enterprise/service-premium-large-models.md).
 

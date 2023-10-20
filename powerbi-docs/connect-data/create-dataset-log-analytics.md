@@ -81,5 +81,5 @@ If you've never previously connected to Log Analytics from Power BI, Power BI wi
 ## Next steps
 
 * [Log Analytics integration with Power BI](/azure/azure-monitor/logs/log-powerbi)
-* [Dataset details](./service-dataset-details-page.md)
+* [Semantic model details](./service-dataset-details-page.md)
 * [Share access to a dataset](./service-datasets-share.md)

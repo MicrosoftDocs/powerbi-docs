@@ -46,7 +46,7 @@ For more information including steps for using Azure AD, SSO, and Snowflake, see
 
 For information about how you can use the on-premises data gateway, see [What is an on-premises data gateway?](service-gateway-onprem.md)
 
-If you aren't using the gateway, you're all set. When you have Snowflake credentials configured on your on-premises data gateway, but you're only using that data source in your model, switch the Dataset settings to off on the gateway for that data model.
+If you aren't using the gateway, you're all set. When you have Snowflake credentials configured on your on-premises data gateway, but you're only using that data source in your model, switch the Semantic model settings to off on the gateway for that data model.
 
 :::image type="content" source="media/service-connect-snowflake/snowflake-gateway-toggle-off.png" alt-text="Screenshot of the expanded gateway connection settings with the toggle set to off.":::
 

@@ -71,7 +71,7 @@ If you want to connect to a data source from Power BI service by using OAuth2, t
 
 ## Uncompressed data limits for refresh
 
-The maximum size for datasets imported into the **Power BI service** is 1 GB. These datasets are heavily compressed to ensure high performance. In addition, in shared capacity, the service places a limit of 10 GB on the amount of uncompressed data that's processed during refresh. This limit accounts for the compression, and therefore is much higher than the 1-GB maximum dataset size. Datasets in Power BI Premium aren't subject to these limits. If refresh in the Power BI service fails for this reason, reduce the amount of data being imported to Power BI and try again.
+The maximum size for datasets imported into the **Power BI service** is 1 GB. These datasets are heavily compressed to ensure high performance. In addition, in shared capacity, the service places a limit of 10 GB on the amount of uncompressed data that's processed during refresh. This limit accounts for the compression, and therefore is much higher than the 1-GB maximum dataset size. Semantic models in Power BI Premium aren't subject to these limits. If refresh in the Power BI service fails for this reason, reduce the amount of data being imported to Power BI and try again.
 
 ## Scheduled refresh time-out
 
@@ -81,7 +81,7 @@ Scheduled refresh for imported datasets time out after two hours. This time-out 
 
 If a scheduled refresh fails four times in a row, Power BI disables the refresh. Address the underlying problem, and then re-enable the scheduled refresh.
 
-However, if the dataset resides in a workspace under Embedded capacity, and that capacity is switched off off, the *first* attempt at refresh will fail(since the capacity is switched off), and in this circumstance its scheduled refresh is immediately disabled.
+However, if the dataset resides in a workspace under Embedded capacity, and that capacity is switched off, the *first* attempt at refresh will fail (since the capacity is switched off), and in this circumstance its scheduled refresh is immediately disabled.
 
 ## Access to the resource is forbidden  
 

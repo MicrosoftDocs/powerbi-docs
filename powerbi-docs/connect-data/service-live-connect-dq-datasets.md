@@ -12,7 +12,7 @@ ms.date: 12/12/2022
 
 # Live connection and DirectQuery comparison
 
-[Live connection](desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) is a way of connecting a Power BI report to a published Power BI dataset. [DirectQuery](refresh-data.md#datasets-in-directquery-mode) is a method you can use to connect your dataset to data. This article describes the main differences between these concepts.
+[Live connection](desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) is a way of connecting a Power BI report to a published Power BI dataset. [DirectQuery](refresh-data.md#semantic-models-in-directquery-mode) is a method you can use to connect your dataset to data. This article describes the main differences between these concepts.
 
 ## Live connection
 
@@ -43,7 +43,7 @@ You can also use *DirectQuery* with Analysis Services, as described in [Using Di
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Dataset modes in the Power BI service](service-dataset-modes-understand.md)
+>[Semantic model modes in the Power BI service](service-dataset-modes-understand.md)
 
 >[!div class="nextstepaction"]
 >[Connect to datasets in the Power BI service from Power BI Desktop](desktop-report-lifecycle-datasets.md)

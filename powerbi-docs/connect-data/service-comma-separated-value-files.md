@@ -44,7 +44,7 @@ If you have a CSV, it’s time to get it into your Power BI site as a dataset wh
 
    :::image type="content" source="media/service-comma-separated-value-files/add-data-to-get-started.png" alt-text="Screenshot of file type icons with CSV highlighted.":::
 
-3. Go to the file you want to upload and then choose **Import**. A new **Dataset details** window appears in the main pane of Power BI.
+3. Go to the file you want to upload and then choose **Import**. A new **Semantic model details** window appears in the main pane of Power BI.
 
    :::image type="content" source="media/service-comma-separated-value-files/uploaded-financial-file.png" alt-text="Screenshot of the workspace with the uploaded CSV file.":::
 

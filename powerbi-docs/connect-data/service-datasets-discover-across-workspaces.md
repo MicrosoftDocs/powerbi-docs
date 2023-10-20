@@ -44,7 +44,7 @@ The entry shows information about the dataset, and a few select actions.
 
 ## Find an endorsed dataset
 
-There are two different kinds of endorsed datasets. Dataset owners can *promote* a dataset that they recommend to you. Also, the Power BI admin can designate experts in your organization who can *certify* datasets for everyone to use. Promoted and certified datasets both display *badges* that you see both when looking for a dataset, and in the list of datasets in a workspace. The name of the person who certified a dataset is displayed in a tooltip during the dataset discovery experience. Hover over the **Certified** label and you see it.
+There are two different kinds of endorsed datasets. Semantic model owners can *promote* a dataset that they recommend to you. Also, the Power BI admin can designate experts in your organization who can *certify* datasets for everyone to use. Promoted and certified datasets both display *badges* that you see both when looking for a dataset, and in the list of datasets in a workspace. The name of the person who certified a dataset is displayed in a tooltip during the dataset discovery experience. Hover over the **Certified** label and you see it.
 
 - In the Power BI service: **Data hub**.
 - In Power BI Desktop: **Get data** > **Power BI datasets**.

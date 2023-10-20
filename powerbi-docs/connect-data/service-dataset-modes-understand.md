@@ -1,5 +1,5 @@
 ---
-title: Dataset modes in the Power BI service
+title: Semantic model modes in the Power BI service
 description: Understand Power BI service dataset modes, Import, DirectQuery, and Composite, including the rationale for each mode.
 author: davidiseminger
 ms.author: davidi
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 12/30/2022
 ---
 
-# Dataset modes in the Power BI service
+# Semantic model modes in the Power BI service
 
 This article provides a technical explanation of Power BI dataset modes. It applies to datasets that represent a live connection to an external-hosted Analysis Services model, and also to models developed in Power BI Desktop. The article emphasizes the rationale for each mode, and possible impacts on Power BI capacity resources.
 
@@ -105,7 +105,7 @@ For example, consider a model with a **Product** dimension-type table in Dual mo
 
 ## Hybrid tables
 
-Data modelers who develop Composite models can also configure fact tables as hybrid tables. A hybrid table is a table with one or multiple Import partitions and one DirectQuery partition. The advantage of a hybrid table is it could be efficiently and quickly queried from in-memory while at the same time including the latest data changes from the data source that occurred after the last import cycle, as the following visualization illustrates.
+Data modelers who develop Composite models can also configure fact tables as hybrid tables. A hybrid table is a table with one or multiple Import partitions and one DirectQuery partition. The advantage of a hybrid table is that it could be efficiently and quickly queried from in-memory while at the same time including the latest data changes from the data source that occurred after the last import cycle, as the following visualization illustrates.
 
 :::image type="content" source="media/service-dataset-modes-understand/hybrid-tables-partition.gif" alt-text="Screenshot shows a hybrid table partition with Archived, Incremental refresh, and Real time rows marked.":::
 

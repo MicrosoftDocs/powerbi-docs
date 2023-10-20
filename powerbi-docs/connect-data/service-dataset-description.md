@@ -1,5 +1,5 @@
 ---
-title: Dataset description
+title: Semantic model description
 description: Learn what a dataset description is, how it's useful, and how to provide it. Users see dataset descriptions in the dataset details page, information tooltips, and other places throughout the Power BI user interface.
 author: paulinbar
 ms.author: painbar
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 02/02/2023
 LocalizationGroup: Share your work
 ---
-# Dataset description
+# Semantic model description
 
 To help members of your organization quickly identify datasets that might be useful for them, provide a concise, informative description of your dataset in the dataset's settings. Users see this description in the tooltip next to the dataset's name in the datasets hub and on the dataset's details page.
 
@@ -17,9 +17,9 @@ Providing a meaningful description helps foster dataset reuse. For instance, bas
 
 ## Provide a dataset description
 
-To provide a description for a dataset, go to dataset's settings page, find the Dataset description section, and enter your description in the text box.
+To provide a description for a dataset, go to dataset's settings page, find the Semantic model description section, and enter your description in the text box.
 
-In the settings page, find the **Dataset description** section, and enter your description in the text box. Select **Apply** to save your description.
+In the settings page, find the **Semantic model description** section, and enter your description in the text box. Select **Apply** to save your description.
 
 :::image type="content" source="media/service-dataset-description/dataset-description-section-in-dataset-settings.png" alt-text="Screenshot of dataset description text box on the dataset settings page." lightbox="media/service-dataset-description/dataset-description-section-in-dataset-settings.png":::
 

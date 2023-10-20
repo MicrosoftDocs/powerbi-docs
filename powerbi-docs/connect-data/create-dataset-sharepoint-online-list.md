@@ -85,5 +85,5 @@ If you've never previously connected to the SharePoint site from Power BI, Power
 
 ## Next steps
 
-* [Dataset details](./service-dataset-details-page.md)
+* [Semantic model details](./service-dataset-details-page.md)
 * [Share access to a dataset](./service-datasets-share.md)

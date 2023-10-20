@@ -1,5 +1,5 @@
 ---
-title: Dataset permissions
+title: Semantic model permissions
 description: Describes dataset permissions and how they are acquired by users.
 author: paulinbar
 ms.author: painbar
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 11/08/2022
 LocalizationGroup: Share your work
 ---
-# Dataset permissions
+# Semantic model permissions
 
 This article describes dataset permissions in the Power BI service and how these permissions are acquired by users.
 
@@ -56,9 +56,9 @@ Users may acquire permissions on a dataset used in an app if the app owner allow
 
 ### Permissions granted via REST APIs
 
-Dataset permissions can be set via REST APIs. For more information, see [Dataset permissions in the context of the Power BI REST APIs](../developer/embedded/datasets-permissions.md).
+Semantic model permissions can be set via REST APIs. For more information, see [Semantic model permissions in the context of the Power BI REST APIs](../developer/embedded/datasets-permissions.md).
 
-## Dataset permissions and row-level security (RLS)
+## Semantic model permissions and row-level security (RLS)
 
 Row-level security may affect the ability of users with read or build permission on a dataset to read data from the dataset.
 
@@ -70,4 +70,4 @@ Row-level security may affect the ability of users with read or build permission
 ## Next steps
 * [Share access to a dataset](./service-datasets-share.md)
 * [Manage dataset permissions](service-datasets-manage-access-permissions.md)
-* [Dataset permissions in the context of the Power BI REST APIs](../developer/embedded/datasets-permissions.md)
+* [Semantic model permissions in the context of the Power BI REST APIs](../developer/embedded/datasets-permissions.md)

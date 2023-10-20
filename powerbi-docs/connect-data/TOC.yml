@@ -13,7 +13,7 @@
       href: /fabric/get-started/onelake-data-hub?toc=/power-bi/connect-data/toc.json&bc=/power-bi/connect-data/breadcrumb/toc.json
     - name: "Data details pages: Index"
       href: service-data-details-page.md
-    - name: "Dataset details page"
+    - name: "Semantic model details page"
       href: service-dataset-details-page.md
     - name: "Datamart details page"
       href: service-datamart-details-page.md
@@ -52,9 +52,9 @@
     items: 
     - name: "Power BI data sources"
       href: power-bi-data-sources.md
-    - name: "Datasets in the Power BI service"
+    - name: "Semantic models in the Power BI service"
       href: service-datasets-understand.md      
-    - name: "Dataset modes in the Power BI service"
+    - name: "Semantic model modes in the Power BI service"
       href: service-dataset-modes-understand.md        
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
@@ -169,7 +169,7 @@
         href: service-dataset-description.md
       - name: "Share dataset access (preview)"
         href: service-datasets-share.md
-      - name: "Dataset permissions"
+      - name: "Semantic model permissions"
         href: service-datasets-permissions.md
       - name: "Manage dataset access (preview)"
         href: service-datasets-manage-access-permissions.md

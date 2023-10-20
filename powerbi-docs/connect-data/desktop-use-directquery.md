@@ -61,7 +61,7 @@ To provide credentials for opening the report and refreshing the data:
 
    ![Screenshot of the Power BI service Settings dropdown menu.](media/desktop-use-directquery/directquery_pbiservicesettings.png)
 
-1. On the **Settings** page, select the **Datasets** tab, and choose the dataset that uses DirectQuery.
+1. On the **Settings** page, select the **Semantic models** tab, and choose the dataset that uses DirectQuery.
 
 1. Under **Data source connection**, provide the credentials to connect to the data source.
 

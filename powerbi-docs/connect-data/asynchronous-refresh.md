@@ -235,7 +235,7 @@ The refresh operation has the following considerations and limitations:
 
 If capacity is paused manually in the Power BI portal or by using PowerShell, or a system outage occurs, the status of any ongoing enhanced refresh operation remains `InProgress` for a maximum of six hours. If the capacity resumes within six hours, the refresh operation resumes automatically. If the capacity resumes after longer than six hours, the refresh operation might return a timeout error. You must then restart the refresh operation.
 
-#### Dataset eviction
+#### Semantic model eviction
 
 Power BI uses dynamic memory management to optimize capacity memory. If the dataset is evicted from memory during a refresh operation, the following error might return:
 

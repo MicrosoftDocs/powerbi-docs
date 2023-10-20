@@ -37,11 +37,11 @@ A Power BI dataset can operate in one of the following modes to access data from
 - LiveConnect mode
 - Push mode
 
-The following diagram illustrates the different data flows, based on storage mode. The most significant point is that only Import mode datasets require a source data refresh. They require refresh because only this type of dataset imports data from its data sources, and the imported data might be updated on a regular or ad-hoc basis. DirectQuery datasets and datasets in LiveConnect mode to Analysis Services don't import data; they query the underlying data source with every user interaction. Datasets in push mode don't access any data sources directly but expect you to push the data into Power BI. Dataset refresh requirements vary depending on the storage mode/dataset type.
+The following diagram illustrates the different data flows, based on storage mode. The most significant point is that only Import mode datasets require a source data refresh. They require refresh because only this type of dataset imports data from its data sources, and the imported data might be updated on a regular or ad-hoc basis. DirectQuery datasets and datasets in LiveConnect mode to Analysis Services don't import data; they query the underlying data source with every user interaction. Semantic models in push mode don't access any data sources directly but expect you to push the data into Power BI. Semantic model refresh requirements vary depending on the storage mode/dataset type.
 
 ![Storage modes and dataset types](media/refresh-data/storage-modes-dataset-types-diagram.png)
 
-#### Datasets in Import mode
+#### Semantic models in Import mode
 
 Power BI imports the data from the original data sources into the dataset. Power BI report and dashboard queries submitted to the dataset return results from the imported tables and columns. You might consider such a dataset a point-in-time copy. Because Power BI copies the data, you must refresh the dataset to fetch changes from the underlying data sources.
 
@@ -53,7 +53,7 @@ We recommend that you plan your capacity usage to ensure that the extra memory n
 
 For more information about large datasets in Premium capacities, see [large datasets](../enterprise/service-premium-large-models.md).
 
-#### Datasets in DirectQuery mode
+#### Semantic models in DirectQuery mode
 
 Power BI doesn't import data over connections that operate in DirectQuery mode. Instead, the dataset returns results from the underlying data source whenever a report or dashboard queries the dataset. Power BI transforms and forwards the queries to the data source.
 
@@ -65,7 +65,7 @@ Because Power BI doesn't import the data, you don't need to run a data refresh. 
 ![Refresh schedule](media/refresh-data/refresh-schedule.png)
 
 > [!NOTE]
-> * Datasets in import mode and composite datasets that combine import mode and DirectQuery mode don't require a separate tile refresh, because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh. Datasets that are updated based on the XMLA endpoint will only clear the cached tile data (invalidate cache). The tile caches aren't refreshed until each user accesses the dashboard. For import models, you can find the refresh schedule in the "Scheduled refresh" section of the **Datasets** tab. For composite datasets, the  "Scheduled refresh" section is located in the **Optimize Performance** section. 
+> * Semantic models in import mode and composite datasets that combine import mode and DirectQuery mode don't require a separate tile refresh, because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh. Semantic models that are updated based on the XMLA endpoint will only clear the cached tile data (invalidate cache). The tile caches aren't refreshed until each user accesses the dashboard. For import models, you can find the refresh schedule in the "Scheduled refresh" section of the **Semantic models** tab. For composite datasets, the  "Scheduled refresh" section is located in the **Optimize Performance** section. 
 > * Power BI does not support cross-border live connections to Azure Analysis Services (AAS) in a sovereign cloud.
 
 #### Push datasets
@@ -104,11 +104,11 @@ Another way to consider the different refresh types is what they impact and wher
 
 #### Data refresh
 
-For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight scheduled daily dataset refreshes. The eight time values are stored in the backend database and are based on the *local time* zone that was selected on the Dataset Settings page. The scheduler checks which model should be refreshed and at what time(s).  The quota of eight refreshes resets daily at 12:01 a.m. local time.
+For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight scheduled daily dataset refreshes. The eight time values are stored in the backend database and are based on the *local time* zone that was selected on the Semantic model Settings page. The scheduler checks which model should be refreshed and at what time(s).  The quota of eight refreshes resets daily at 12:01 a.m. local time.
 
 ![Data refresh schedule in Database settings.](media/refresh-data/power-bi-refresh-data.png)
 
-If the dataset resides on a Premium capacity, you can schedule up to 48 refreshes per day in the dataset settings. For more information, see [Configure scheduled refresh](#configure-scheduled-refresh) later in this article. Datasets on a Premium capacity with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) enabled for read-write support unlimited refresh operations when configured programmatically with TMSL or PowerShell.
+If the dataset resides on a Premium capacity, you can schedule up to 48 refreshes per day in the dataset settings. For more information, see [Configure scheduled refresh](#configure-scheduled-refresh) later in this article. Semantic models on a Premium capacity with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) enabled for read-write support unlimited refresh operations when configured programmatically with TMSL or PowerShell.
 
 It's also important to call out that the shared-capacity limitation for daily refreshes applies to both scheduled refreshes and API refreshes combined. You can also trigger an on-demand refresh by selecting **Refresh now** in the dataset menu, as the following screenshot depicts. On-demand refreshes aren't included in the refresh limitation. Also note that datasets on a Premium capacity don't impose limitations for API refreshes. If you're interested in building your own refresh solution by using the Power BI REST API, see [Datasets - Refresh Dataset](/rest/api/power-bi/datasets/refreshdataset).
 
@@ -136,7 +136,7 @@ To review past synchronization cycles, check the OneDrive tab in the refresh his
 
 As the above screenshot shows, Power BI identified this OneDrive refresh as a **Scheduled** refresh, but it isn't possible to configure the refresh interval. You can only deactivate OneDrive refresh in the dataset's settings. Deactivating refresh is useful if you don't want your datasets and reports in Power BI to pick up any changes from the source files automatically.
 
-The dataset settings page only shows the **OneDrive Credentials** and **OneDrive refresh** sections if the dataset is connected to a file in OneDrive or SharePoint Online, as in the following screenshot. Datasets that aren't connected to sources file in OneDrive or SharePoint Online don't show these sections.
+The dataset settings page only shows the **OneDrive Credentials** and **OneDrive refresh** sections if the dataset is connected to a file in OneDrive or SharePoint Online, as in the following screenshot. Semantic models that aren't connected to sources file in OneDrive or SharePoint Online don't show these sections.
 
 ![OneDrive Credentials and OneDrive refresh](media/refresh-data/onedrive-credentials-refresh.png)
 
@@ -210,7 +210,7 @@ Unlike for an enterprise data gateway, you don't need to add data source definit
 
 ### Accessing cloud data sources
 
-Datasets that use cloud data sources, such as Azure SQL DB, don't require a data gateway if Power BI can establish a direct network connection to the source. Accordingly, you can manage the configuration of these data sources by using the **Data source credentials** section in the dataset settings. As the following screenshot shows, you don't need to configure a gateway connection.
+Semantic models that use cloud data sources, such as Azure SQL DB, don't require a data gateway if Power BI can establish a direct network connection to the source. Accordingly, you can manage the configuration of these data sources by using the **Data source credentials** section in the dataset settings. As the following screenshot shows, you don't need to configure a gateway connection.
 
 ![Configure data source credentials without a gateway](media/refresh-data/configure-data-source-credentials.png)
 
@@ -333,7 +333,7 @@ To resume scheduled refresh, visit a report or dashboard built using this datase
 
 ### Checking refresh status and history
 
-In addition to failure notifications, it's a good idea to check your datasets periodically for refresh errors. A quick way is to view the list of datasets in a workspace. Datasets with errors show a small warning icon. Select the warning icon to obtain additional information, as in the following screenshot. For more information about troubleshooting specific refresh errors, see [Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md).
+In addition to failure notifications, it's a good idea to check your datasets periodically for refresh errors. A quick way is to view the list of datasets in a workspace. Semantic models with errors show a small warning icon. Select the warning icon to obtain additional information, as in the following screenshot. For more information about troubleshooting specific refresh errors, see [Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md).
 
 ![Refresh status warning](media/refresh-data/refresh-status-warning.png)
 
@@ -351,7 +351,7 @@ Automatic page refresh works at a report page level, and allows report authors t
 Learn more about automatic page refresh in the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) article.
 
 
-## Dataset refresh history
+## Semantic model refresh history
 
 Refresh attempts for Power BI datasets may not always go smoothly, or may take longer than expected. You can use the **Refresh history** page to help you diagnose why a refresh may not have happened as you expected. 
 
@@ -388,10 +388,10 @@ Refreshes made using the [enhanced refresh API](asynchronous-refresh.md) or [XML
 
 Stopping a dataset refresh is useful when you want to stop a refresh of a large dataset during peak time. Use the refresh cancellation feature to stop refreshing datasets that reside on [Premium](./../enterprise/service-premium-what-is.md), [Premium Per User (PPU)](./../enterprise/service-premium-per-user-faq.yml) or [Power BI Embedded](./../developer/embedded/embedded-analytics-power-bi.md) capacities.
 
-To cancel a dataset refresh, you need to be a contributor, member or an admin of the dataset's workspace. Dataset refresh cancellation only works with datasets that use [import mode](./../connect-data/service-dataset-modes-understand.md#import-mode) or [composite mode](./../connect-data/service-dataset-modes-understand.md#composite-mode).
+To cancel a dataset refresh, you need to be a contributor, member or an admin of the dataset's workspace. Semantic model refresh cancellation only works with datasets that use [import mode](./../connect-data/service-dataset-modes-understand.md#import-mode) or [composite mode](./../connect-data/service-dataset-modes-understand.md#composite-mode).
 
 >[!NOTE]
->Datasets created as part of datamarts aren't supported.
+>Semantic models created as part of datamarts aren't supported.
 
 To start a refresh go to the dataset you want to refresh, and select **Refresh now**.
 

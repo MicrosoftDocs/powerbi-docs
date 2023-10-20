@@ -58,7 +58,7 @@ In Power BI Desktop, you can edit variables by selecting **Transform data** > **
 After you publish a report that enables editing SAP variables, the **Edit variables** link appears in the **Filter** pane for the report in the Power BI service. The first time you publish the report, it might take up to five minutes before the **Edit variables** link appears.
 
 > [!NOTE]
-> If the link doesn't appear, manually refresh the dataset by selecting it from the list in the **Datasets** tab of the workspace, and then selecting the **Refresh** icon.
+> If the link doesn't appear, manually refresh the dataset by selecting it from the list in the **Semantic models** tab of the workspace, and then selecting the **Refresh** icon.
 
 To edit the variables in the Power BI service, report users can:
 

@@ -33,7 +33,7 @@ By default, Power BI updates model information from OneDrive and SharePoint on a
 
 :::image type="content" source="./media/refresh-desktop-file-onedrive/powerbi-service-onedrive-refresh-off.png" alt-text="Screenshot showing automatic OneDrive refresh off toggle.":::
  
-## Dataset owners versus users with write permission
+## Semantic model owners versus users with write permission
 
 By default, dataset owners and dataset users with write permission can manually refresh the model information and data in a dataset by using **Refresh now**. As part of a manual refresh, Power BI retrieves the latest model information from OneDrive or SharePoint and then refreshes the data. The latest model information can include new and modified data connections and tables added to the files in OneDrive or SharePoint.
 
@@ -41,9 +41,9 @@ You can restrict the ability to add new data sources to a dataset in Power BI by
 
 :::image type="content" source="./media/refresh-desktop-file-onedrive/powerbi-service-onedrive-refresh-restrict-updates.png" alt-text="Screenshot showing automatic OneDrive refresh restrict updates option.":::
 
-With restricted updates, only dataset owners can update the model information in the dataset with changes made to the version stored in OneDrive and SharePoint. Dataset owners must manually refresh datasets for the changes to be reflected. If a dataset user with write permission refreshes the dataset, changes from files stored in OneDrive or SharePoint won't be reflected.
+With restricted updates, only dataset owners can update the model information in the dataset with changes made to the version stored in OneDrive and SharePoint. Semantic model owners must manually refresh datasets for the changes to be reflected. If a dataset user with write permission refreshes the dataset, changes from files stored in OneDrive or SharePoint won't be reflected.
 
-If you want dataset owners and dataset users with write permission to have the ability to update the model information, select **Automatic updates**. Datasets in the Power BI service are automatically updated with changes made to the versions of the datasets stored in OneDrive and SharePoint.  
+If you want dataset owners and dataset users with write permission to have the ability to update the model information, select **Automatic updates**. Semantic models in the Power BI service are automatically updated with changes made to the versions of the datasets stored in OneDrive and SharePoint.  
 
 Existing datasets will be set to **Default updates**. Once the setting is changed to either **Restrict updates** or **Automatic updates**, **Default updates** will no longer be an option for the dataset.  
 
@@ -53,13 +53,13 @@ The difference between **Automatic updates** and **Default updates** is that the
 
 | Setting name | Who can make updates | Refresh type | Availability | Default setting |
 |--------------|----------------------|--------------|--------------|-----------------|
-| Restrict updates | Dataset owners only | Manual | Always an option | On new datasets |
-| Automatic updates | Dataset owners and dataset users with write permission | Automatic | Always an option | Never | 
-| Default updates | Dataset owners and dataset users with write permission | Automatic | Once another setting is applied, no longer an option | On existing datasets |
+| Restrict updates | Semantic model owners only | Manual | Always an option | On new datasets |
+| Automatic updates | Semantic model owners and dataset users with write permission | Automatic | Always an option | Never | 
+| Default updates | Semantic model owners and dataset users with write permission | Automatic | Once another setting is applied, no longer an option | On existing datasets |
 
 ## Enforcing restricted updates
 
-Tenant admins can enforce restricted updates across all datasets in their organization by disabling the tenant setting **Dataset owners can choose to automatically update datasets from files imported from OneDrive or SharePoint**.
+Tenant admins can enforce restricted updates across all datasets in their organization by disabling the tenant setting **Semantic model owners can choose to automatically update datasets from files imported from OneDrive or SharePoint**.
 
 :::image type="content" source="./media/refresh-desktop-file-onedrive/powerbi-service-onedrive-automatic-dataset-refresh-off-tenant-setting.png" alt-text="Screenshot showing automatic OneDrive refresh disabled in tenant settings.":::
  
@@ -104,9 +104,9 @@ When things go wrong, it’s usually because Power BI can’t sign into data sou
 
 When you save your changes to the Power BI Desktop file on OneDrive and you don't see those changes in Power BI within an hour or so, it could be because Power BI can't connect to your OneDrive. Try connecting to the file on OneDrive again. If you’re prompted to sign in, make sure you select **Keep me signed in**. Because Power BI wasn't able to connect to your OneDrive to synchronize with the file, you need to import your file again.
 
-Datasets stored on OneDrive or SharePoint are set to **restrict updates** by default. If the dataset is set to restrict updates, then updates can only happen when the dataset owner manually refreshes the dataset, which can cause changes to Power BI files on OneDrive and SharePoint to not be reflected in the Power BI service. A dataset owner might run into an error message after updating a file in OneDrive or SharePoint. The dataset owner can fix the error by choosing to always manually refresh the dataset, or changing the dataset setting to **automatic updates**.
+Semantic models stored on OneDrive or SharePoint are set to **restrict updates** by default. If the dataset is set to restrict updates, then updates can only happen when the dataset owner manually refreshes the dataset, which can cause changes to Power BI files on OneDrive and SharePoint to not be reflected in the Power BI service. A dataset owner might run into an error message after updating a file in OneDrive or SharePoint. The dataset owner can fix the error by choosing to always manually refresh the dataset, or changing the dataset setting to **automatic updates**.
 
-If the dataset owner is unable to change the setting of the dataset to **automatic updates**, the tenant admin has likely enforced restricted updates across all datasets in the organization. To enable the dataset owner to change the setting, they must contact their Fabric admin and request that the admin enable the **Dataset owners can choose to automatically update from files imported from OneDrive or SharePoint** setting.
+If the dataset owner is unable to change the setting of the dataset to **automatic updates**, the tenant admin has likely enforced restricted updates across all datasets in the organization. To enable the dataset owner to change the setting, they must contact their Fabric admin and request that the admin enable the **Semantic model owners can choose to automatically update from files imported from OneDrive or SharePoint** setting.
 
 If the dataset owner has set up scheduled refresh on datasets, then the model will still refresh on schedule. However, the other contents of the report, such as visuals, will not refresh unless manual updates are made. 
 

@@ -24,7 +24,7 @@ To share a dataset
 
         ![Screenshot of data item share option on the data hub.](media/service-datasets-share/power-bi-dataset-share-dataset.png)
 
-    * **Dataset info page**: Click the **Share** icon on the action bar at the top of the page.
+    * **Semantic model info page**: Click the **Share** icon on the action bar at the top of the page.
 
         ![Screenshot of dataset share icon on the dataset info page.](media/service-datasets-share/power-bi-dataset-share-icon.png)
 
@@ -48,7 +48,7 @@ To monitor, change, or remove user access to your dataset, see [Manage dataset a
 
 ## Next steps
 
-* [Dataset permissions](service-datasets-permissions.md)
+* [Semantic model permissions](service-datasets-permissions.md)
 * [Manage dataset access permissions](service-datasets-manage-access-permissions.md)
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
 * [Share a report via link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)

@@ -106,7 +106,7 @@ You can't use **Upload** to get files from personal OneDrive accounts, but you c
 
 ### Import Excel data into Power BI
 
-To import Excel data into Power BI, in **My workspace**, select **New** > **Dataset** > **Excel**, and then find the file.
+To import Excel data into Power BI, in **My workspace**, select **New** > **Semantic model** > **Excel**, and then find the file.
 
 The **My files** list allows you to add files from your documents folder and other personal sources.
 

@@ -65,10 +65,10 @@ The following list explains and offers solutions for common tile refresh errors.
 
   To see the filtered data immediately, you can force a tile refresh. Select the **Refresh** icon at the upper right of a Power BI dashboard.
 
-  As a dataset owner, you can also increase the tile refresh frequency to 15 minutes to accelerate tile refresh. Select the gear icon in the upper right corner of the Power BI service, and then select **Settings**. On the **Datasets** tab, expand **Scheduled refresh**, and under **Automatic dashboard tile and metric refresh**, change **Refresh frequency**. Make sure you reset the configuration to the original refresh frequency after Power BI does the next tile refresh.
+  As a dataset owner, you can also increase the tile refresh frequency to 15 minutes to accelerate tile refresh. Select the gear icon in the upper right corner of the Power BI service, and then select **Settings**. On the **Semantic models** tab, expand **Scheduled refresh**, and under **Automatic dashboard tile and metric refresh**, change **Refresh frequency**. Make sure you reset the configuration to the original refresh frequency after Power BI does the next tile refresh.
 
   > [!NOTE]
-  > **Automatic dashboard tile and metric refresh** is available only for datasets in DirectQuery or Live Connection modes. Datasets in Import mode don't need a separate tile refresh because the tiles refresh automatically during the next scheduled data refresh.
+  > **Automatic dashboard tile and metric refresh** is available only for datasets in DirectQuery or Live Connection modes. Semantic models in Import mode don't need a separate tile refresh because the tiles refresh automatically during the next scheduled data refresh.
 
 ## Support contact
 

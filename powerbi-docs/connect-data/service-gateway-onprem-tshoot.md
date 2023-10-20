@@ -118,7 +118,7 @@ This error can occur when the gateway attempts a test connection, even if the cr
 When your refresh is completing properly and you do not experience runtime errors, you can ignore these test connection errors for data sources that requires optional parameters. 
 
 
-## Datasets
+## Semantic models
 
 ### Error: There is not enough space for this row.
 
@@ -288,7 +288,7 @@ Gateway logs are required for troubleshooting and creating a support ticket. Use
 
 When you use the gateway for a scheduled refresh, **Refresh history** can help you see what errors occurred. It can also provide useful data if you need to create a support request. You can view scheduled and on-demand refreshes. The following steps show how you can get to the refresh history.
 
-1. In the Power BI nav pane, in **Datasets**, select a dataset. Open the menu, and select **Schedule refresh**.
+1. In the Power BI nav pane, in **Semantic models**, select a dataset. Open the menu, and select **Schedule refresh**.
 
     ![How to select schedule refresh](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 

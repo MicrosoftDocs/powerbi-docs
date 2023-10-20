@@ -47,7 +47,7 @@ To create content, you can import or create files or databases.
 
 To import files:
 
-1. Go to the workspace to which you want to import the files. Select **New** and then **Dataset**:
+1. Go to the workspace to which you want to import the files. Select **New** and then **Semantic model**:
 
    :::image type="content" source="media/service-get-data/new-menu.png" alt-text="Screenshot that shows the New menu.":::
    
@@ -101,7 +101,7 @@ If you configure a scheduled refresh or do a manual refresh on the dataset, Powe
 
 So even if you can't connect to your data source directly from the Power BI service, you can still get your data into Power BI. It just takes a few more steps and maybe some help from your IT department. For more information, see [Data sources in Power BI Desktop](desktop-data-sources.md).
 
-## Datasets and data sources
+## Semantic models and data sources
 
 You might see the terms *dataset* and *data source* used synonymously. But datasets and data sources are two different things, although they're related.
 
@@ -131,7 +131,7 @@ Data refresh is an important consideration when you use Power BI. For more infor
 
 Data sources for the Power BI service have the following limitations. Other limitations apply to specific features, but the following list applies to the full Power BI service:
 
-- **Dataset size limit**. Datasets stored in shared capacities in the Power BI service have a 1-GB size limit. For larger datasets, use [Power BI Premium](../enterprise/service-premium-what-is.md).
+- **Semantic model size limit**. Semantic models stored in shared capacities in the Power BI service have a 1-GB size limit. For larger datasets, use [Power BI Premium](../enterprise/service-premium-what-is.md).
 
 - **Distinct values in a column**. When a Power BI dataset caches data in Import mode, it can store a limit of 1,999,999,997 distinct values in a column.
 

@@ -20,7 +20,7 @@ This article describes the options available for scheduled refresh for the [On-p
 
 To get to the **Schedule refresh** screen:
 
-1. In the navigation pane, under **Datasets**, select a dataset.
+1. In the navigation pane, under **Semantic models**, select a dataset.
 
 1. Select **Refresh** > **Schedule refresh**.
 
