@@ -1,6 +1,6 @@
 ---
 title: Power BI custom visual dynamic format API.
-description: This article describes the API used to allow a Power BI custom visual display values with dynamic format strings.
+description: This article describes the API used to allow a Power BI custom visual process value with dynamic format strings.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
@@ -34,7 +34,7 @@ To allow the visual to operate with dynamic format strings, the following fields
 }
 ```
 
-After that, the custom visual will receive a dynamic format string through the `update()` options shown below. 
+After that, the custom visual will receive a dynamic format string through the `update()` options as shown on the screenshot. 
 
 :::image type="content" source="media/dynamic-format/dynamic-format-strings-example.png" alt-text="Format change warning":::
 
@@ -42,5 +42,5 @@ There are two arrays inside of `options.dataViews[0].categorical.values[0]`:
 1. `values` - values from the dataset
 2. `objects` - objects with `general.formatString` property
 
-Each `object` corresponds to a `value`. As an example value `12519995905.9842` from the screenshot above has the format `¥ #,0`.
-To apply this format to the value you can use the [format method](./utils-formatting.md#format) from [powerbi-visuals-utils-formattingutils](./utils-formatting.md).
+Each `object` corresponds to a `value`. As an example value `12519995905.9842` from the screenshot has the format `¥ #,0`.
+To apply this format to the value, you can use the [format method](./utils-formatting.md#format) from [powerbi-visuals-utils-formattingutils](./utils-formatting.md).
