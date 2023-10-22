@@ -22,9 +22,9 @@ Applies to:
 
 ## Access shared external content
 
-Before you can access content from external orgs, someone first needs to share something with you. If this is the first item shared with you as an external guest user of an org, you must first claim the invitation in a browser. You cannot claim the invitation in the Power BI app.
+Before you can access content from external orgs, someone first needs to share something with you. If this is the first item shared with you as an external guest user of an org, you must first claim the invitation in a browser. You can't claim the invitation in the Power BI app.
 
-To access content that has been shared with you from external organizations, on the home page, tap the arrow on the **Recommended** strip and choose **Content from external orgs**. The name of the strip will change to **From external orgs**, and a number of external items will be shown on the strip.
+To access content that has been shared with you from external organizations, on the home page, tap the arrow on the **Recommended** strip and choose **Content from external orgs**. The name of the strip changes to **From external orgs**, and a number of external items will be shown on the strip.
 
 :::image type="content" source="./media/mobile-apps-b2b/power-bi-mobile-external-content-strip.gif" alt-text="Animation showing how to switch the Recommended strip to the From external orgs strip." border="false":::
 
@@ -45,7 +45,7 @@ From the **From external orgs** strip or from the list of shared external conten
 
 ::::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list.png" alt-text="Screenshot of guest view navigation." border="false":::
 
-In the header you can see that you are connected as a guest. To see all the content that's been shared with you in that organization, tap the arrow to the left of the item's name. To get back to your home organization, tap **Exit**.
+In the header you can see that you're connected as a guest. To see all the content that's been shared with you in that organization, tap the arrow to the left of the item's name. To get back to your home organization, tap **Exit**.
 
 The following image shows your **Shared with me** page in the external organization you're connected to as a guest. It shows you all the content in that organization that you can access.
 
@@ -53,7 +53,7 @@ The following image shows your **Shared with me** page in the external organizat
 
 ## Access external shared content via email link 
 
-When someone shares an item with you, you get an email with a link to the item. If the item is in an external organization, you can still access the item by clicking the link. When you click the link, the app will open, you'll be asked to confirm switching to the external organization, and then the item will open.
+When someone shares an item with you, you get an email with a link to the item. If the item is in an external organization, you can still access the item by clicking the link. When you select the link, the app will open, you'll be asked to confirm switching to the external organization, and then the item will open.
 
 ## Considerations and limitations
 
