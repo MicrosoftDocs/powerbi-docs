@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 12/13/2022
+ms.date: 10/23/2023
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -113,6 +113,13 @@ The following known limitations currently apply to Power BI Premium.
     | ADOMD          | 19.12.7.0  |
 
     In some cases, manually installing the most recent client libraries may be necessary to reduce potential connection and operation errors. To learn more about verifying existing installed client library versions and manually installing the most recent versions, see [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true).
+
+* **Datasets compatibility** - Some datasets are incompatible with the Power BI service modern infrastructure:
+    * Datasets created in Power BI service from CSV files.
+    * Datasets in the [admin monitoring workspace](/fabric/admin/monitoring-workspace) and usage metrics models.
+    * Datasets that still use 1103 compatibility level.
+    * [Push datasets](../connect-data/service-real-time-streaming.md#push-dataset).
+    * Datasets that use deprecated features such as content packs.
 
 ## Next steps
 

@@ -1,13 +1,13 @@
 ---
 title: Add Power BI URLs to allowlist
-description: This article lists URL endpoints and ports with their associated linked sites to add to your allowlist for connectivity to Power BI.
+description: Learn about URL endpoints and ports with their associated linked sites to add to your allowlist for connectivity to Power BI.
 author: kesharab
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/05/2023
+ms.date: 09/29/2023
 ms.custom: ''
 ---
 
