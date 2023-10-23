@@ -36,7 +36,7 @@ The following table displays the toolbar icons for the **Map** pane.
   
  At the bottom of the Map pane is the Map view area. To change the center or zoom options for the map, use the arrow keys to adjust the view center and the slider to adjust the zoom level.  
   
- For more information about layers, see [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs).  
+ For more information about layers, see [Maps &#40;Power BI Report Builder&#41;](/report-builder/maps-report-builder.md).  
   
 ##  <a name="AddLayer"></a> Add a layer from the map layer wizard  
   
@@ -93,9 +93,9 @@ The following table displays the toolbar icons for the **Map** pane.
   
 1.  Select **General** on the **Map Point Properties** dialog box to change label, tooltip, and marker type options for the following map elements:  
   
-    - All dynamic or embedded points on a point layer. Color rules, size rules, and marker type rules for points override these options. To override options for a specific embedded point, use the [Map Embedded Point Properties Dialog Box, Marker](/sql/reporting-services/report-design/maps-report-builder-and-ssrs) page.  
+    - All dynamic or embedded points on a point layer. Color rules, size rules, and marker type rules for points override these options. To override options for a specific embedded point, use the [Map Embedded Point Properties Dialog Box, Marker](../report-builder/maps-report-builder.md) page.  
   
-    - The center point for all dynamic or embedded polygons on a polygon layer. Color rules, size rules, and marker type rules for center points override these options. To override options for a specific center point, use the [Map Embedded Point Properties Dialog Box, Marker](/sql/reporting-services/report-design/maps-report-builder-and-ssrs) page.  
+    - The center point for all dynamic or embedded polygons on a polygon layer. Color rules, size rules, and marker type rules for center points override these options. To override options for a specific center point, use the [Map Embedded Point Properties Dialog Box, Marker](../report-builder/maps-report-builder.md) page.  
   
 ##  <a name="Embedded"></a> Specify embedded data as a source of spatial data  
   
@@ -206,6 +206,6 @@ The following table displays the toolbar icons for the **Map** pane.
   
 ## Next steps
 
- [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   
+ [Maps &#40;Power BI Report Builder&#41;](../report-builder/maps-report-builder.md)   
  [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md)  
   

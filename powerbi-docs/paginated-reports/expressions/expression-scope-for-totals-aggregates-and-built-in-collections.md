@@ -117,7 +117,7 @@ For more information about these subjects:
 - Interpreting visual cues on tablix data regions: [Tablix Data Region Cells, Rows, and Columns (Power BI Report Builder)](/sql/reporting-services/report-design/tablix-data-region-cells-rows-and-columns-report-builder-and-ssrs).
 - The tablix data region: [Tablix Data Region Cells, Rows, and Columns (Report Builder)](/sql/reporting-services/report-design/tablix-data-region-cells-rows-and-columns-report-builder-and-ssrs).
 - Expressions: [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
-- Aggregates: [Aggregate Functions Reference (Power BI Report Builder)](./report-builder-functions-aggregate-functions-reference.md).
+- Aggregates: [Aggregate Functions Reference (Power BI Report Builder)](../report-builder-functions-aggregate-functions-reference.md).
 
 ## <a id="Sparklines"></a> Synchronize Scales for Sparklines
 

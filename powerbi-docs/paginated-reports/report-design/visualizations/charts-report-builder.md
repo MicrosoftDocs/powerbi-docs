@@ -87,7 +87,7 @@ The more time you spend carefully preparing and understanding your data before y
   
  `=Sum(CDbl(Fields!MyField.Value))`  
   
- For more information about aggregate expressions, see [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).  
+ For more information about aggregate expressions, see [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](../expressions/report-builder-functions-aggregate-functions-reference.md).  
    
 ##  <a name="InThisSection"></a> In this section  
  [Add a Chart to a Report &#40;Power BI Report Builder&#41;](add-chart-report-report-builder.md)  
