@@ -31,7 +31,7 @@ In this article, you learn how to:
 
 To install *node.js*:
 
-1. Navigate to [node.js](https://nodejs.org), from your web browser, .
+1. Navigate to [node.js](https://nodejs.org), from your web browser.
 
 2. Download the latest recommended MSI installer.
 
@@ -63,7 +63,7 @@ Confirm that the Power BI visuals tools package is installed. In PowerShell, run
 
 ## Set up Power BI desktop for developing a visual
 
-To develop a Power BI visual, enable the *Develop a visual* option in the Power BI desktop. To enable this option, follow the instructions in this section .
+To develop a Power BI visual, enable the *Develop a visual* option in the Power BI desktop. To enable this option, follow the instructions in this section.
 
 1. From the Power BI desktop, navigate to **File** > **Options and settings**  > **Options**
    :::image type="content" source="./media/environment-setup/desktop-options.png" alt-text="Screenshot of Options menu in the Power BI desktop.":::
@@ -74,7 +74,7 @@ To develop a Power BI visual, enable the *Develop a visual* option in the Power 
 ## Set up Power BI service for developing a visual
 
 To develop a Power BI visual, enable custom visual developer mode in Power BI service.
-To enable this option, follow the instructions in this section .
+To enable this option, follow the instructions in this section.
 
 1. Sign in to [Power BI developer settings](https://app.powerbi.com/user/user-settings/developer-settings?experience=power-bi).
 
