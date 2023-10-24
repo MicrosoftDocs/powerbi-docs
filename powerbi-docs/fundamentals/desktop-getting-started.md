@@ -104,7 +104,7 @@ For more information about connecting to data, see [Connect to data in Power BI 
 Now that you're connected to a data source, you can adjust the data to meet your needs. To *shape* data, you provide Power Query Editor with step-by-step instructions for adjusting the data while loading and presenting it. Shaping doesn't affect the original data source, only this particular view of the data. 
 
 > [!NOTE]
-> The table data used in this guide is fictitious and for illustrative purposes. As such, the steps you need to follow with the data you find and use may vary, requiring you to be creative about how you adjust steps or outcomes, which is all part of the fun of learning. 
+> The table data used in this guide is fictitious and for illustrative purposes. As such, the steps you need to follow with the data you find and use might vary, requiring you to be creative about how you adjust steps or outcomes, which is all part of the fun of learning. 
 
 Shaping can mean *transforming* the data, such as renaming columns or tables, removing rows or columns, or changing data types. Power Query Editor captures these steps sequentially under **Applied Steps** in the **Query Settings** pane. Each time this query connects to the data source, those steps are carried out, so the data is always shaped the way you specify. This process occurs when you use the query in Power BI Desktop, or when anyone uses your shared query, such as in the Power BI service. 
 
@@ -301,7 +301,7 @@ To publish to the **Power BI** service from Power BI Desktop, from the **Home** 
 
 ![Screenshot of Power B I Desktop showing the Publish option.](media/desktop-getting-started/gsg_syw_1.png)
 
-You may be prompted to sign in to Power BI, or to select a destination.
+You might be prompted to sign in to Power BI, or to select a destination.
 
 When the publish process is complete, you see the following dialog:
 
