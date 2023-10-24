@@ -43,8 +43,8 @@ There are multiple ways to achieve business alignment of BI activities and initi
 Effective and consistent communication is critical to aligning processes. Consider the following actions and activities when you want to improve communication for successful business alignment.
 
 - Make and follow a plan for central teams and the user community to follow.
-- Plan regular alignment meetings between different teams and groups. For example, central teams can plan regular planning and priority alignments with business units. Another example are when central teams schedule regular meetings to mentor and enable self-service users.
-- Setup a [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) to consolidate communication and documentation for user communities. For strategic solutions and initiatives, consider using a [communication hub](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#create-a-communication-hub).
+- Plan regular alignment meetings between different teams and groups. For example, central teams can plan regular planning and priority alignments with business units. Another example is when central teams schedule regular meetings to mentor and enable self-service users.
+- Set up a [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) to consolidate communication and documentation for user communities. For strategic solutions and initiatives, consider using a [communication hub](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#create-a-communication-hub).
 - Limit complex business and technical terminology in cross-functional communications.
 - Strive for concise communication and documentation that's formatted and well organized. That way, people can easily find the information that they need.
 - Consider maintaining a visible roadmap that shows the planned BI solutions and activities relevant to the user community in the next quarter.
@@ -87,7 +87,7 @@ To achieve executive alignment, consider the following key considerations and ac
 - Deliver monthly executive summaries that highlight relevant information, including:
   - [Key performance indicators (KPIs)](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md#define-and-measure-success) that measure progress toward BI goals.
   - Power BI adoption and implementation milestones.
-  - Technology changes that may impact organizational business goals.
+  - Technology changes that might impact organizational business goals.
 
 > [!IMPORTANT]
 > Don't underestimate the importance of the role your [executive sponsor](powerbi-adoption-roadmap-executive-sponsorship.md) has in achieving and maintaining effective business alignment.
@@ -102,7 +102,7 @@ Business alignment is a continual process. To maintain business alignment, consi
 - **Schedule regular re-alignment sessions:** Ensure that BI strategic planning and tactical planning occur alongside relevant business strategy planning (when business leadership review business goals and objectives).
 
 > [!NOTE]
-> Because business objectives continually evolve, you should understand that solutions and initiatives will change over time. Don't assume that requirements for BI projects are rigid and can't be altered. If you struggle with changing requirements, it may be an indication that your requirements-gathering process is ineffective or inflexible, or that your development workflows don't sufficiently incorporate regular feedback.
+> Because business objectives continually evolve, you should understand that solutions and initiatives will change over time. Don't assume that requirements for BI projects are rigid and can't be altered. If you struggle with changing requirements, it might be an indication that your requirements-gathering process is ineffective or inflexible, or that your development workflows don't sufficiently incorporate regular feedback.
 
 > [!IMPORTANT]
 > To effectively maintain business alignment, it's essential that user feedback be promptly and directly addressed. Regularly review and analyze feedback, and consider how you can integrate it into iterative strategic planning, tactical planning, and solution planning processes.

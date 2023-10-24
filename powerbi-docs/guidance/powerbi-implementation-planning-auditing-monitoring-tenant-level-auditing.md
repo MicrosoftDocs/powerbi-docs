@@ -17,8 +17,8 @@ ms.date: 08/31/2023
 
 This tenant-level audit planning article is primarily targeted at:
 
-- **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators may need to collaborate with IT, security, internal audit, and other relevant teams.
-- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They may need to collaborate with Power BI administrators and other relevant teams.
+- **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators might need to collaborate with IT, security, internal audit, and other relevant teams.
+- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators and other relevant teams.
 
 > [!IMPORTANT]
 > We recommend that you closely follow the [Power BI release plan](https://powerbi.microsoft.com/roadmap/) to learn about future enhancements of the auditing and monitoring capabilities.
@@ -209,7 +209,7 @@ For more information and recommendations about how to access data from Microsoft
 
 #### Security data
 
-You may have a requirement to perform regular security audits.
+You might have a requirement to perform regular security audits.
 
 Here are some common questions that the [Power BI REST APIs](/rest/api/power-bi/) can answer.
 
@@ -253,7 +253,7 @@ For more information about using the admin APIs versus user APIs (including how 
 
 Tenant-level auditing is either done manually or with automated processes.
 
-Most new auditing processes start off as a manual process, particularly during development and while testing occurs. A manual auditing process may evolve to become an automated process. However, not every auditing process needs to be fully automated.
+Most new auditing processes start off as a manual process, particularly during development and while testing occurs. A manual auditing process can evolve to become an automated process. However, not every auditing process needs to be fully automated.
 
 #### Manual auditing processes
 
@@ -310,7 +310,7 @@ You should decide who can access the auditing data directly. There are multiple 
 - **Who should be a Power BI administrator?** A Power BI administrator has access to all tenant metadata, including the [admin APIs](/rest/api/power-bi/admin). For more information about deciding who should be a Power BI administrator, see [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md#power-bi-administration).
 - **Who can use an existing service principal?** To use a service principal (instead of user permissions) to accessing auditing data, a secret must be provided to authorized users so they can perform password-based authentication. Access to secrets (and keys) should be very tightly controlled.
 - **Does access need to be tightly controlled?** Certain industries with regulatory and compliance requirements must control access more tightly than other industries.
-- **Are there large activity data volumes?** To avoid reaching API throttling limits, you may need to tightly control who's allowed to directly access the APIs that produce auditing data. In this case, it's helpful to ensure that there aren't duplicate or overlapping efforts.
+- **Are there large activity data volumes?** To avoid reaching API throttling limits, you might need to tightly control who's allowed to directly access the APIs that produce auditing data. In this case, it's helpful to ensure that there aren't duplicate or overlapping efforts.
 
 ##### Access to extracted raw data
 
@@ -328,8 +328,8 @@ Decide which users or team will be responsible for the following activities.
 
 | **Role** | **Types of responsibilities** | **Role typically performed by** |
 | --- | --- | --- |
-| Communicate to stakeholders | Communication activities and requirements gathering. | COE in partnership with IT. May also include select people from key business units. |
-| Decide priorities, and provide direction on requirements | Decision-making activities related to the end-to-end auditing solution, including how to meet requirements. | The team that oversees Power BI in the organization, such as the COE. The executive sponsor or a data governance steering committee may become involved to make critical decisions or escalate issues. |
+| Communicate to stakeholders | Communication activities and requirements gathering. | COE in partnership with IT. Might also include select people from key business units. |
+| Decide priorities, and provide direction on requirements | Decision-making activities related to the end-to-end auditing solution, including how to meet requirements. | The team that oversees Power BI in the organization, such as the COE. The executive sponsor or a data governance steering committee could become involved to make critical decisions or escalate issues. |
 | Extract and store the raw data | Creation of scripts and processes to access and extract the data. Also involves writing the raw data to storage. | Data engineering staff, usually in IT and in partnership with the COE. |
 | Create the curated data | Data cleansing, transformation, and the creation of the curated data in star schema design. | Data engineering staff, usually in IT and in partnership with the COE. |
 | Create a data model | Creation of an analytical data model, based on the curated data. | Power BI content creator(s), usually in IT or the COE. |
@@ -498,7 +498,7 @@ You can use your preferred tool and your preferred language to send requests to 
 
 The [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-worldwide&preserve-view=true) (formerly the Microsoft 365 compliance center) includes a user interface that allows you to view and search the [audit logs](/microsoft-365/compliance/audit-log-search?view=o365-worldwide&preserve-view=true). The unified audit logs include Power BI, and all other services that support Microsoft 365 unified audit logs.
 
-The data captured in the unified audit log is the exact same data that's contained in the [Power BI activity log](/power-bi/admin/service-admin-auditing). When you do an audit log search in the Microsoft Purview compliance portal, it adds your request to the queue. It may take a few minutes (or longer, depending on the volume of data) for the data to be ready.
+The data captured in the unified audit log is the exact same data that's contained in the [Power BI activity log](/power-bi/admin/service-admin-auditing). When you do an audit log search in the Microsoft Purview compliance portal, it adds your request to the queue. It can take a few minutes (or longer, depending on the volume of data) for the data to be ready.
 
 Here are some common ways to use the audit log search tool. You can:
 
@@ -575,7 +575,7 @@ For more information, see [Application and service principal objects in Microsof
 > A Microsoft Entra application is an identity configuration that allows an automated process to integrate with Microsoft Entra ID. In this article, it's referred to as an _app registration_. The term _service principal_ is also used commonly in this article. These terms are described in more detail later in this section.
 
 > [!TIP]
-> The easiest way to authenticate is to use the [Connect-PowerBIServiceAccount](/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount) cmdlet from the Power BI Management module. You may see other authentication-related cmdlets in articles and blog posts online. For example, there are the `Login-PowerBI` and `Login-PowerBIServiceAccount` cmdlets, which are aliases for `Connect-PowerBIServiceAccount` cmdlet. There's also the [Disconnect-PowerBIServiceAccount](/powershell/module/microsoftpowerbimgmt.profile/disconnect-powerbiserviceaccount) cmdlet that you can use to explicitly sign out at the end of a process.
+> The easiest way to authenticate is to use the [Connect-PowerBIServiceAccount](/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount) cmdlet from the Power BI Management module. You might see other authentication-related cmdlets in articles and blog posts online. For example, there are the `Login-PowerBI` and `Login-PowerBIServiceAccount` cmdlets, which are aliases for `Connect-PowerBIServiceAccount` cmdlet. There's also the [Disconnect-PowerBIServiceAccount](/powershell/module/microsoftpowerbimgmt.profile/disconnect-powerbiserviceaccount) cmdlet that you can use to explicitly sign out at the end of a process.
 
 The following table describes the two authentication options.
 
@@ -595,7 +595,7 @@ User authentication is useful in the following situations.
   - **User permissions for user APIs:** You need to use your Power BI user permissions to send a request to a _user API_. For more information, see [Choose a user API or admin API](#choose-a-user-api-or-admin-api).
 - **Interactive sign in:** You want to sign in interactively, which requires you to input your email address and password. For example, you must sign in interactively to use the [Try-it](#try-it-in-api-documentation) experience, which is found in Microsoft API documentation.
 - **Track who accessed tenant metadata:** When individual users and administrators send API requests, you might want to audit who those individuals are. When you authenticate with a service principal (described [next](#service-principal-authentication)), the user ID captured by the activity log is the Application ID. If multiple administrators authenticate with the same service principal, it might be difficult to know which administrator accessed the data.
-- **Shared administrator account:** Some IT teams use a shared administrator account. Depending on how it's implemented and controlled, it may not be a best practice. Instead of a shared account, you should consider using Microsoft Entra [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM), which can grant occasional and temporary Power BI administrator rights for a user.
+- **Shared administrator account:** Some IT teams use a shared administrator account. Depending on how it's implemented and controlled, it might not be a best practice. Instead of a shared account, you should consider using Microsoft Entra [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM), which can grant occasional and temporary Power BI administrator rights for a user.
 - **APIs that only support user authentication:** Occasionally, you might need to use an API that doesn't support authentication by a service principal. In documentation, each API notes whether a service principal can call it.
 
 > [!IMPORTANT]
@@ -642,7 +642,7 @@ The following table shows examples of app registrations that could be used to ex
 
 | **App registration name** | **Purpose** | **Target audience** |
 | --- | --- | --- |
-| PowerBIData-Read-AdminAPIs-EntraApp | Extract tenant-wide metadata for auditing and administration of Power BI. Admin APIs are always read-only and may not have permissions granted in Microsoft Entra ID (Power BI tenant setting only). | Power BI administrators and the Center of Excellence |
+| PowerBIData-Read-AdminAPIs-EntraApp | Extract tenant-wide metadata for auditing and administration of Power BI. Admin APIs are always read-only and might not have permissions granted in Microsoft Entra ID (Power BI tenant setting only). | Power BI administrators and the Center of Excellence |
 | PowerBIData-ReadWrite-PowerBIAdministrators-EntraApp | Manage the Power BI tenant. Requires read/write permissions to create or update resources. | Power BI administrators and the Center of Excellence |
 | GraphData-Read-PowerBIAdministrators-EntraApp | Extract users and groups data for auditing and administration of Power BI. Requires read permissions. | Power BI administrators and the Center of Excellence |
 
@@ -650,7 +650,7 @@ Managing multiple app registrations for different purposes involves more effort.
 
 - **See what the app registration is _intended_ to be used for and why:** When you see the client ID from the app registration show up in your auditing data, you'll have an idea of what it was used for and why. That's a significant advantage of creating separate app registrations (rather than using only one for all purposes).
 - **See who the app registration is _intended_ to be used by:** When you see the client ID from the app registration show up in your auditing data, you'll have an idea of who was using it.
-- **Avoid overprovisioning permissions:** You can follow the principle of least privilege by providing separate app registrations to different sets of people who have different needs. You can avoid overprovisioning permissions by using a read-only app registration when write permissions aren't necessary. For example, you may have some highly capable self-service users who want to gather data about their datasets; they need access to a service principal with _read_ permission. Whereas there might be satellite members of the Center of Excellence working for the Finance team who programmatically manage datasets; they need access to a service principal with _write_ permission.
+- **Avoid overprovisioning permissions:** You can follow the principle of least privilege by providing separate app registrations to different sets of people who have different needs. You can avoid overprovisioning permissions by using a read-only app registration when write permissions aren't necessary. For example, you might have some highly capable self-service users who want to gather data about their datasets; they need access to a service principal with _read_ permission. Whereas there might be satellite members of the Center of Excellence working for the Finance team who programmatically manage datasets; they need access to a service principal with _write_ permission.
 - **Know who _should_ be in possession of the secret:** The secret for each app registration should only be shared with the people who need it. When the secret is _rotated_ (described later in this section), the impact is smaller when you use separate app registrations for different needs. That's helpful when you need to rotate the secret because a user leaves the organization or changes roles.
 
 ###### App registration permissions
@@ -922,13 +922,13 @@ Consider an example involving a raw data zone of a data lake. The zone has a fol
 
 We strongly recommend that you use a technology that allows you to write the raw data to _immutable storage_. Immutable storage guarantees that once the data is written, it can't be overwritten or deleted. That distinction is important to auditors, and it allows you to trust that the raw data is reliable.
 
-You also need to consider how to securely store the raw data. Typically, very few users require access the raw data. Access to raw data is typically provided on a needs-basis, typically for data engineers and system administrators. Your internal auditors may also need access. The team members who are responsible for creating the curated data (described next) also require access to the raw data.
+You also need to consider how to securely store the raw data. Typically, very few users require access the raw data. Access to raw data is typically provided on a needs-basis, typically for data engineers and system administrators. Your internal auditors might also need access. The team members who are responsible for creating the curated data (described next) also require access to the raw data.
 
 Here are some considerations to help you choose your raw data storage.
 
 - **Is it a manual or automated auditing process?** An automated auditing process typically has stricter requirements for how and where data is stored.
 - **Is the subject area particularly sensitive?** Depending on the type of data and how sensitive it is, your organization might have a requirement for how and where it's stored. Power BI audit data contains identifying user information and IP addresses, so it should be stored in a secure area.
-- **Is there a preferred storage technology?** There may be an existing storage technology that's in use within the organization, so it's a logical choice.
+- **Is there a preferred storage technology?** There might be an existing storage technology that's in use within the organization, so it's a logical choice.
 - **Will users access the storage directly?** The security model is an important consideration. Usually, very few users are granted access to raw data. Access to the curated data is typically made available to Power BI content creators who are responsible for creating the centralized data model (the dataset that serves as the semantic layer for reporting).
 - **Do you have data residency requirements?** Some organizations have legal or regulatory data residency requirements to store data in a specific data region.
 - **How will the data be organized?** Use of the [medallion architecture](/fabric/data-engineering/tutorial-lakehouse-introduction) is a common practice, particularly in data lake and lakehouse implementations. The goal is to store your data in bronze, silver, and gold data layers. The bronze layer contains the original raw data. The silver layer contains validated and deduplicated data used for transformations. The gold layer contains the curated, highly refined data that's ready for analysis.
@@ -965,7 +965,7 @@ Use a data lake to transform and curate the data when:
 
 ##### Power BI data model
 
-You may be able to complete all the transformation work in Power BI. Use Power Query to access and transform the data from its raw state to the curated format.
+You might be able to complete all the transformation work in Power BI. Use Power Query to access and transform the data from its raw state to the curated format.
 
 Use a Power BI data model when:
 
@@ -1189,7 +1189,7 @@ The `Get Groups as Admin` REST API or the `Get-PowerBIWorkspace` PowerShell cmdl
 The [metadata scanning APIs](/power-bi/enterprise/service-admin-metadata-scanning), commonly called the _scanner APIs_, are a set of APIs that return a list of workspaces and their Power BI items (datasets, reports, and other items). Conceptually, they provide the same data (and more) as the Groups APIs or the workspace cmdlet, which are described in the previous section. However, the method you use to retrieve the data is different and better suited to extracting the tenant inventory.
 
 > [!NOTE]
-> Take notice of how some people use the term _scanner APIs_ or the phrase _scanning the tenant_. They often use those terms to mean _compiling a tenant inventory_, distinguishing it from the user activity events. They may, or may not, be literally referring to the use of the metadata scanning APIs.
+> Take notice of how some people use the term _scanner APIs_ or the phrase _scanning the tenant_. They often use those terms to mean _compiling a tenant inventory_, distinguishing it from the user activity events. They may or may not be literally referring to the use of the metadata scanning APIs.
 
 There are two primary reasons why you should consider using the metadata scanning APIs instead of the `Get Groups as Admin` REST API or the `Get-PowerBIWorkspace` cmdlet (described previously).
 
@@ -1240,7 +1240,7 @@ The users and groups data that you retrieve is a _snapshot_ that describes the c
 For Power BI tenant-level auditing, you might extract and store the following attributes from Microsoft Graph.
 
 - **Full name of users:** Many data sources only include the email address of the user that performed an activity or who's assigned to a role. Use this attribute when you want to display the full name (display name) in analytical reports. Using the full name makes reports more user-friendly.
-- **Other user properties:** Other descriptive attributes about users may be available in Microsoft Entra ID. Some examples of built-in [user profile attributes](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) that have analytical value include job title, department, manager, region, and office location.
+- **Other user properties:** Other descriptive attributes about users might be available in Microsoft Entra ID. Some examples of built-in [user profile attributes](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) that have analytical value include job title, department, manager, region, and office location.
 - **Members of a security group:** Most data sources provide the name of a group (for example, the Power BI activity log records that a security group was assigned to a workspace role). Retrieving the group membership improves your ability to fully analyze what an individual user is doing or has access to.
 - **User licenses:** It's useful to analyze which [user licenses](/power-bi/fundamentals/service-features-license-type)—free, Power BI Pro, or Power BI Premium Per User (PPU)—are assigned to users. This data can help you to identify who's not using their license. It also helps you to analyze all users (distinct users with a license) versus active users (with recent activities). If you're considering adding or expanding your Power BI Premium licenses, we recommend that you analyze the user license data together with user activity data to perform a cost analysis.
 - **Members of the administrator roles:** You can compile a list of your Power BI administrators are (which includes Power Platform administrators and global administrators).
@@ -1248,7 +1248,7 @@ For Power BI tenant-level auditing, you might extract and store the following at
 For the authoritative reference of Power BI license information that you can find in the audit data from Microsoft Graph, see [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
 
 > [!TIP]
-> Retrieving members from groups can be one of the most challenging aspects of obtaining audit data. You will need to do a _transitive search_ to flatten out all nested members and nested groups. You can do a transitive search for [group members](/graph/api/group-list-transitivemembers). This type of search is especially challenging when there are thousands of groups in your organization. In that case, there might consider better alternatives to retrieve the data. One option is to extract all groups and group members from Microsoft Graph. However, that may not be practical when only a small number of groups is used for Power BI security. Another option is to pre-build a reference list of groups that are used by any type of Power BI security (workspace roles, app permissions, per-item sharing, row-level security, and others). You can then loop through the reference list to retrieve [group members](/graph/api/group-list-transitivemembers) from Microsoft Graph.
+> Retrieving members from groups can be one of the most challenging aspects of obtaining audit data. You will need to do a _transitive search_ to flatten out all nested members and nested groups. You can do a transitive search for [group members](/graph/api/group-list-transitivemembers). This type of search is especially challenging when there are thousands of groups in your organization. In that case, there might consider better alternatives to retrieve the data. One option is to extract all groups and group members from Microsoft Graph. However, that might not be practical when only a small number of groups is used for Power BI security. Another option is to pre-build a reference list of groups that are used by any type of Power BI security (workspace roles, app permissions, per-item sharing, row-level security, and others). You can then loop through the reference list to retrieve [group members](/graph/api/group-list-transitivemembers) from Microsoft Graph.
 
 Here are some other attributes you might extract and store.
 
@@ -1647,7 +1647,7 @@ Consider some examples that demonstrate how simple classification logic might mi
 - A manager viewed one report this week. However, prior to that week, the manager hadn't viewed any reports in the last six months. You shouldn't consider this manager to be a frequent user based on recent usage alone.
 - A report creator publishes a new report every week. When you analyze usage by frequent users, the report creator's regular activity appears to be positive. However, upon further investigation you discover that this user has been republishing a new report (with a new report name) every time they edit the report. It would be useful for the report creator to have more training.
 - An executive views a report sporadically, and so their usage classification changes frequently. You might need to analyze certain types of users, such as executives, differently.
-- An internal auditor views critical reports once per year. The internal auditor may appear to be an inactive user because of their infrequent usage. Someone might take steps to remove their Pro or PPU license. Or, someone might believe that a report should be retired since it's used infrequently.
+- An internal auditor views critical reports once per year. The internal auditor might appear to be an inactive user because of their infrequent usage. Someone might take steps to remove their Pro or PPU license. Or, someone might believe that a report should be retired since it's used infrequently.
 
 > [!TIP]
 > You can calculate averages and trends by using the DAX time intelligence functions. To learn how to use these functions, work through the [Use DAX time intelligence functions in Power BI Desktop models](/training/modules/dax-power-bi-time-intelligence/) learning module.
@@ -1665,7 +1665,7 @@ Consider some examples that demonstrate how simple classification logic might mi
 
 At this point, the auditing data has been extracted and stored, and you've published a data model. The next step is to create analytical reports.
 
-Focus on the key information that's most relevant for each audience. You may have several audiences for your auditing reports. Each audience will be interested in different information, and for different purposes. The audiences you might serve with your reports include:
+Focus on the key information that's most relevant for each audience. You might have several audiences for your auditing reports. Each audience will be interested in different information, and for different purposes. The audiences you might serve with your reports include:
 
 - Executive sponsor
 - Center of Excellence
@@ -1676,9 +1676,9 @@ Focus on the key information that's most relevant for each audience. You may hav
 - Power BI developers and content creators
 - Auditors
 
-Here are some of the most common analytical requirements that you may want to start with when creating your auditing reports.
+Here are some of the most common analytical requirements that you might want to start with when you create your auditing reports.
 
-- **Top content views:** Your executive sponsor and leadership teams may predominantly be interested in summary information and trends over time. Your workspace administrators, developers, and content creators will be more interested in the details.
+- **Top content views:** Your executive sponsor and leadership teams might predominantly be interested in summary information and trends over time. Your workspace administrators, developers, and content creators will be more interested in the details.
 - **Top user activities:** Your Center of Excellence will be interested in who's using Power BI, how, and when. Your Premium capacity administrators will be interested in who's using the capacity to ensure its health and stability.
 - **Tenant inventory:** Your Power BI administrators, workspace administrators, and auditors will be interested in understanding what content exists, where, lineage, and its security settings.
 
@@ -1738,7 +1738,7 @@ Here are some user training opportunities that you might identify from the audit
 
 #### Security
 
-Here are some security situations you may want to actively monitor.
+Here are some security situations you might want to actively monitor.
 
 - Too many users assigned to the high-privilege [Fabric administrator role](powerbi-implementation-planning-security-tenant-level-planning.md#power-bi-administration).
 - Too many workspace administrators (when the Member, Contributor, or Viewer [workspace role](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles) would be sufficient).
@@ -1750,7 +1750,7 @@ For more information, see the [Security planning](powerbi-implementation-plannin
 
 #### Governance and risk mitigation
 
-Here are some situations that you may encounter. Consider explicitly looking for these types of situations in your auditing reports, so you're prepared to act quickly.
+Here are some situations that you might encounter. Consider explicitly looking for these types of situations in your auditing reports, so you're prepared to act quickly.
 
 - High number of views for reports (and underlying datasets) that aren't [endorsed](/power-bi/collaborate-share/service-endorse-content).
 - Significant use of unknown or unsanctioned data sources.
@@ -1797,7 +1797,7 @@ A production-level auditing process has been _operationalized_. An operationaliz
 - **Reuse and modularization:** To minimize duplication, code and configuration values (like connection strings or email addresses for notifications) are modularized so that other scripts and processes can reuse them.
 
 > [!TIP]
-> You don't have to do everything listed above all at once. As you gain experience, you can incrementally improve the solution so that it becomes complete and robust. Be aware that most examples you find online are simple, one-off script snippets that may not be production quality.
+> You don't have to do everything listed above all at once. As you gain experience, you can incrementally improve the solution so that it becomes complete and robust. Be aware that most examples you find online are simple, one-off script snippets that might not be production quality.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -1839,7 +1839,7 @@ Depending on the level of criticality for your auditing solution, you might have
 Support documentation is sometimes referred to as a _knowledge base_ or a _runbook_. This documentation is targeted at your help desk or support team, and it should include:
 
 - Troubleshooting guidance for when something goes wrong. For example, when there's a data refresh failure.
-- Actions to take on an ongoing basis. For example, there may be some manual steps that someone needs to do regularly until an issue is resolved.
+- Actions to take on an ongoing basis. For example, there could be some manual steps that someone needs to do regularly until an issue is resolved.
 
 #### Content creator documentation
 

@@ -40,10 +40,10 @@ With these two examples in mind, consider two specific aspects of workspace purp
 
 The primary objective of a workspace in the Fabric portal is to facilitate [collaboration](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports#collaborate-in-a-workspace) among multiple people. There are many ways that collaboration can happen in a workspace:
 
-- **Team-based development:** Multiple people can work together to build, test, and publish content. One user may work on the design of a [lakehouse](/fabric/data-engineering/lakehouse-overview). Another user may work on the design of the dataset, while other users may focus on building reports.
-- **Testing and validations:** Users may need to perform data validations for new content. Subject matter experts from the business unit may need to perform user acceptance testing (UAT), or a data quality team may need to validate the accuracy of the dataset.
-- **Enhancements:** Stakeholders and consumers of the content may suggest enhancements to the content as circumstances change.
-- **Ownership transfer:** Another person or team may [take over responsibility](powerbi-adoption-roadmap-content-ownership-and-management.md#ownership-transfers) for content that was created by someone else.
+- **Team-based development:** Multiple people can work together to build, test, and publish content. One user might work on the design of a [lakehouse](/fabric/data-engineering/lakehouse-overview). Another user might work on the design of the dataset, while other users might focus on building reports.
+- **Testing and validations:** Users might need to perform data validations for new content. Subject matter experts from the business unit might need to perform user acceptance testing (UAT), or a data quality team might need to validate the accuracy of the dataset.
+- **Enhancements:** Stakeholders and consumers of the content might suggest enhancements to the content as circumstances change.
+- **Ownership transfer:** Another person or team might [take over responsibility](powerbi-adoption-roadmap-content-ownership-and-management.md#ownership-transfers) for content that was created by someone else.
 
 One of the key areas of the Power BI adoption roadmap is [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md). The type of collaboration that will occur in a workspace will differ based on the approach used for content ownership and management:
 
@@ -100,7 +100,7 @@ Another key area of the Power BI adoption roadmap is [content delivery scope](po
 
 There are two types of workspaces:
 
-- **Personal workspaces:** Every user has a personal workspace. A personal workspace may be used for publishing certain types of content to the Fabric portal. Its primary purpose is to support [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) usage scenarios.
+- **Personal workspaces:** Every user has a personal workspace. A personal workspace can be used for publishing certain types of content to the Fabric portal. Its primary purpose is to support [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) usage scenarios.
 - **Workspaces:** The primary purpose of a [workspace](/power-bi/collaborate-share/service-new-workspaces) is to support collaboration among multiple users. Secondarily, a workspace can also be used for viewing content.
 
 Using a personal workspace for anything other than learning [personal BI](powerbi-adoption-roadmap-content-delivery-scope.md#personal-bi), temporary content, or testing purposes can be risky because content in a personal workspace is managed and maintained by one person. Further, a personal workspace doesn't support collaboration with others.
@@ -153,13 +153,13 @@ When the intent for collaboration involves decentralization and multiple teams b
 
 How to organize workspaces is one of the most important aspects of workspace planning.
 
-Different business units and departments may use workspaces slightly differently depending on their collaboration requirements. When you need a new workspace, we recommend that you consider the factors described in this section.
+Different business units and departments might use workspaces slightly differently depending on their collaboration requirements. When you need a new workspace, we recommend that you consider the factors described in this section.
 
 ### Workspace subject and scope
 
 The following options present some suggestions about how you can organize workspaces by subject and scope.
 
-In some cases, you may already have some useful [groups](/azure/active-directory/fundamentals/new-name) established in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)). You can then use them to manage access to resources for the defined subject area and scope. However, you might need to create some new groups to suit this purpose. See the [workspace access](#workspace-access) section below for considerations.
+In some cases, you might already have some useful [groups](/azure/active-directory/fundamentals/new-name) established in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)). You can then use them to manage access to resources for the defined subject area and scope. However, you might need to create some new groups to suit this purpose. See the [workspace access](#workspace-access) section below for considerations.
 
 #### Option 1: Workspace per subject area or project
 
@@ -259,7 +259,7 @@ The disadvantages for separating data workspaces from reporting workspaces inclu
 - Extra user education is required to ensure that content authors and consumers know where to publish and find content.
 - Sometimes it's challenging to clearly delineate the item types that should be contained within a workspace. Over time, a workspace can end up containing more types of content than was originally intended.
 - Use of separate workspaces results in a larger number of workspaces that you need to manage and audit. As you plan for purpose, scope, and other considerations (such as the separation of development, test, and production content) the approach to workspace design can become more complicated.
-- Extra change management processes may be required to track and prioritize requested changes to centralized data items, particularly when report creators have requirements beyond what can be handled by [composite models](/power-bi/transform-model/desktop-composite-models) and report-level measures.
+- Extra change management processes could be required to track and prioritize requested changes to centralized data items, particularly when report creators have requirements beyond what can be handled by [composite models](/power-bi/transform-model/desktop-composite-models) and report-level measures.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -315,9 +315,9 @@ When multiple workspaces exist for development, test, and production, it results
 The previous examples are intended to convey that the use of groups that map to workspace roles can quickly become unmanageable.
 
 > [!TIP]
-> There are times when fewer groups are needed, particularly in development. For example, you may not need to specify a workspace viewers group in development; that group may only be needed for testing and production. Or you might be able to use the same workspace admins group for development, test, and production. For more information about development, test, and production, see [Workspace lifecycle management](#workspace-lifecycle-management) later in this article.
+> There are times when fewer groups are needed, particularly in development. For example, you might not need to specify a workspace viewers group in development; that group is only needed for testing and production. Or you might be able to use the same workspace admins group for development, test, and production. For more information about development, test, and production, see [Workspace lifecycle management](#workspace-lifecycle-management) later in this article.
 
-The effective use of groups for workspace roles can require considerable planning. Be prepared to encounter scenarios when existing groups (that may be aligned with the organizational chart) don't meet all your needs for managing Fabric content. In this case, we recommend that you create groups specifically for this purpose. That's why the words _Fabric_ or _Power BI_ are included in the group name examples shown above. If you have multiple business intelligence tools, you may choose to use only _BI_ as the prefix instead. That way, you can use the same groups across multiple tools.
+The effective use of groups for workspace roles can require considerable planning. Be prepared to encounter scenarios when existing groups (that might be aligned with the organizational chart) don't meet all your needs for managing Fabric content. In this case, we recommend that you create groups specifically for this purpose. That's why the words _Fabric_ or _Power BI_ are included in the group name examples shown above. If you have multiple business intelligence tools, you can choose to use only _BI_ as the prefix instead. That way, you can use the same groups across multiple tools.
 
 Lastly, the examples show one workspace - _Quarterly Financials_ - but often it's possible to manage a collection of workspaces with one set of groups. For example, multiple workspaces owned and managed by the finance team might be able to use the same groups.
 
@@ -383,7 +383,7 @@ In Fabric, there are two main components of lifecycle management.
 - **Version control of content:** [Git integration](/fabric/cicd/git-integration/intro-to-git-integration) allows content owners and creators to create versions of their work. It can be used with [web-based development in a workspace](/fabric/cicd/git-integration/manage-branches#develop-using-another-workspace), or when developing in a [client tool](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools), such as Power BI Desktop. Version control (also known as _source control_) is achieved by tracking all revisions to a project by using _branches_ associated with local and remote _repositories_ in [Azure DevOps](/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git&preserve-view=true). Changes are _[committed](/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git&preserve-view=true)_ at regular intervals to branches in the remote repository. When a content creator has completed revisions that are tested and approved, their branch is _merged_ with the latest version of the solution in the main remote repository (after resolving any merge [conflicts](/fabric/cicd/git-integration/conflict-resolution)). Git integration can be specified for each workspace in the Fabric portal, providing the feature has been enabled in the [tenant settings](/fabric/admin/git-integration-admin-settings).
 - **Promoting content:** [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) are primarily focused on release management in order to maintain a stable environment for users. You can assign a workspace to a stage (development, test, or production) in a deployment pipeline. Then, you can easily and systematically _promote_, or _deploy_, your content to the next stage.
 
-When combining the lifecycle management features, there are [best practices](/fabric/cicd/best-practices-cicd) to consider during your planning process. For example, you may choose to use Git integration for your development workspace and deployment pipelines to publish to your test and production workspaces. Those types of decisions require using the agreed-upon practice consistently. We recommend that you do a proof of concept to fully test your setup, processes, and [permissions model](/fabric/cicd/best-practices-cicd#plan-your-permission-model).
+When combining the lifecycle management features, there are [best practices](/fabric/cicd/best-practices-cicd) to consider during your planning process. For example, you might choose to use Git integration for your development workspace and deployment pipelines to publish to your test and production workspaces. Those types of decisions require using the agreed-upon practice consistently. We recommend that you do a proof of concept to fully test your setup, processes, and [permissions model](/fabric/cicd/best-practices-cicd#plan-your-permission-model).
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -425,7 +425,7 @@ It's possible to connect a workspace to an Azure Data Lake Storage Gen2 (ADLS Ge
 > - **Decide whether the workspace will be used in ways that require Azure Storage:** Consider whether a bring-your-own-data-lake scenario would be useful for the storage of dataflows and/or whether you have requirements to use the dataset backup and restore functionality.
 > - **Determine which Azure Storage account will be used:** Select an Azure Storage account that has the [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled (ADLS Gen2) for tenant-level (centralized) storage of dataflows data or dataset backups. Ensure you have the Azure Storage account information readily available.
 > - **Configure the tenant-level storage account:** In the Fabric admin portal, set the tenant-level ADLS Gen2 storage account.
-> - **Decide whether workspace administrators may connect a storage account:** Have discussions to understand the needs of decentralized teams, and whether individual teams are currently maintaining their own Azure Storage accounts. Decide whether this capability should be enabled.
+> - **Decide whether workspace administrators can connect a storage account:** Have discussions to understand the needs of decentralized teams, and whether individual teams are currently maintaining their own Azure Storage accounts. Decide whether this capability should be enabled.
 > - **Configure the admin setting for workspace-level storage:** In the Fabric admin portal, enable the option that allows workspace administrators to connect their own storage account.
 > - **Set the workspace-level Azure Storage connections:** Specify the Azure Storage account for each individual workspace. You must set the storage account prior to creating any Power BI dataflows in the workspace. If you intend to use dataset backups, ensure the workspace license mode is set to capacity or PPU.
 > - **Update your workspace management documentation:** Ensure that your workspace management documentation includes information about how to assign ADLS Gen2 storage accounts correctly. Make the information available in your centralized portal and training materials.
@@ -484,9 +484,9 @@ Here are some suggestions for how to set these key settings to improve the exper
 
 ### Other technical factors
 
-There are other technical factors that may influence your workspace setup.
+There are other technical factors that might influence your workspace setup.
 
-- If you integrate content with other tools and services, there may be licensing implications. For example, if you embed a [Power Apps visual](/power-apps/maker/canvas-apps/powerapps-custom-visual) in a Power BI report, you'll need appropriate Power Apps licenses.
+- If you integrate content with other tools and services, there could be licensing implications. For example, if you embed a [Power Apps visual](/power-apps/maker/canvas-apps/powerapps-custom-visual) in a Power BI report, you'll need appropriate Power Apps licenses.
 - There are [per-workspace storage limits](/power-bi/admin/service-admin-manage-your-data-storage-in-power-bi#shared-capacity-limits) that apply to the amount of data you can store in a Pro workspace. If using capacity or PPU isn't an option, consider how to work within the storage limits during the workspace planning process.
 - When you install a [template app](/power-bi/connect-data/service-template-apps-install-distribute) from AppSource, it will create a new workspace that will have a narrow subject and scope.
 

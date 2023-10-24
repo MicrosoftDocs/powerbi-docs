@@ -15,7 +15,7 @@ ms.date: 09/09/2023
 [!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
 
 > [!NOTE]
-> The Power BI implementation planning [usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) explore many concepts discussed in this article. The usage scenario articles include detailed diagrams that you may find helpful to support your planning and decision making.
+> The Power BI implementation planning [usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) explore many concepts discussed in this article. The usage scenario articles include detailed diagrams that you might find helpful to support your planning and decision making.
 
 There are three primary strategies for how business intelligence (BI) content is owned and managed: business-led self-service BI, managed self-service BI, and enterprise BI. For the purposes of this series of articles, the term _content_ refers to any type of data item (like a report or dashboard). It's synonymous with _solution_.
 
@@ -61,12 +61,12 @@ As stated in the [adoption maturity levels](powerbi-adoption-roadmap-maturity-le
 
 ## Ownership and stewardship
 
-There are many roles related to data management. Roles can be defined many ways and can be easily misunderstood. The following table presents possible ways you may conceptually define these roles:
+There are many roles related to data management. Roles can be defined many ways and can be easily misunderstood. The following table presents possible ways you might conceptually define these roles:
 
 | **Role** | **Description** |
 | --- | --- |
 | Data steward | Responsible for defining and/or managing acceptable data quality levels as well as master data management (MDM). |
-| Subject matter expert (SME) | Responsible for defining what the data means, what it's used for, who may access it, and how the data is presented to others. Collaborates with domain owner as needed and supports colleagues in their use of data. |
+| Subject matter expert (SME) | Responsible for defining what the data means, what it's used for, who might access it, and how the data is presented to others. Collaborates with domain owner as needed and supports colleagues in their use of data. |
 | Technical owner | Responsible for creating, maintaining, publishing, and securing access to data and reporting items. |
 | Domain owner | Higher-level decision-maker who collaborates with governance teams on data management policies, processes, and requirements. Decision-maker for defining appropriate and inappropriate uses of the data. Participates on the data governance board, as described in the [governance](powerbi-adoption-roadmap-governance.md) article. |
 
@@ -86,7 +86,7 @@ Guidelines for being successful with ownership:
 
 - Define how ownership and stewardship terminology is used in your organization, including expectations for these roles.
 - Set [contacts for each workspace](/power-bi/collaborate-share/service-create-the-new-workspaces#create-a-contact-list) and for individual items to communicate ownership and/or support responsibilities.
-- Specify between two and four [workspace administrators](/power-bi/collaborate-share/service-roles-new-workspaces) and conduct an [audit](/rest/api/power-bi/admin/groups_getgroupusersasadmin) of workspace admins regularly (perhaps twice a year). Workspace admins might be directly responsible for managing workspace content, or it may be that those tasks are assigned to colleagues who do the hands-on work. In all cases, workspace admins should be able to easily contact owners of specific content.
+- Specify between two and four [workspace administrators](/power-bi/collaborate-share/service-roles-new-workspaces) and conduct an [audit](/rest/api/power-bi/admin/groups_getgroupusersasadmin) of workspace admins regularly (perhaps twice a year). Workspace admins might be directly responsible for managing workspace content, or it could be that those tasks are assigned to colleagues who do the hands-on work. In all cases, workspace admins should be able to easily contact owners of specific content.
 - Include consistent branding on reports to indicate who produced the content and who to contact for help. A small image or text label located in the report footer is valuable, especially when the report is exported from the Power BI service. A standard [template file](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#template-files) can encourage and simplify the consistent use of branding.
 - Make use of [best practices reviews](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#best-practices-reviews) and [co-development projects](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#co-development-projects) with the [COE](powerbi-adoption-roadmap-center-of-excellence.md).
 
@@ -112,7 +112,7 @@ Here are some guidelines to help become successful with business-led self-servic
 - Teach your creators to use the same techniques that IT would use, like [shared datasets](/power-bi/connect-data/service-datasets-across-workspaces) and [dataflows](/power-bi/transform-model/dataflows/dataflows-introduction-self-service). Make use of a well-organized [OneLake](/fabric/onelake/onelake-overview). Centralize data to reduce maintenance, improve consistency, and reduce risk.
 - Focus on providing mentoring, training, resources, and documentation (described in the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article). The importance of these efforts can't be overstated. Be prepared for skill levels of self-service content creators to vary significantly. It's also common for a solution to deliver excellent business value yet be built in such a way that it won't scale or perform well over time (as historic data volumes increase). Having the [COE](powerbi-adoption-roadmap-center-of-excellence.md) available to help when these situations arise is very valuable.
 - Provide guidance on the best way to use endorsements. The [promoted endorsement](/power-bi/collaborate-share/service-endorse-content#promote-content) is for content produced by self-service creators. Consider reserving use of the [certified endorsement](/power-bi/collaborate-share/service-endorse-content#certify-content) for enterprise BI content and managed self-service BI content (described next).
-- Analyze the [activity log](/power-bi/admin/service-admin-auditing) to discover situations where the COE could proactively contact self-service owners to offer helpful information. It's especially useful when a suboptimal usage pattern is detected. For example, log activity could reveal overuse of individual item sharing when [Power BI app audiences](powerbi-implementation-planning-security-report-consumer-planning.md#app-audience) or [workspace roles](powerbi-implementation-planning-security-content-creator-planning.md#workspace-roles) may be a better choice. The data from the activity log allows the COE to offer support and advice to the business units. In turn, this information can help increase the quality of solutions, while allowing the business to retain full ownership and control of their content. For more information, see [Auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md).
+- Analyze the [activity log](/power-bi/admin/service-admin-auditing) to discover situations where the COE could proactively contact self-service owners to offer helpful information. It's especially useful when a suboptimal usage pattern is detected. For example, log activity could reveal overuse of individual item sharing when [Power BI app audiences](powerbi-implementation-planning-security-report-consumer-planning.md#app-audience) or [workspace roles](powerbi-implementation-planning-security-content-creator-planning.md#workspace-roles) might be a better choice. The data from the activity log allows the COE to offer support and advice to the business units. In turn, this information can help increase the quality of solutions, while allowing the business to retain full ownership and control of their content. For more information, see [Auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md).
 
 ## Managed self-service BI
 
@@ -158,7 +158,7 @@ Here are some guidelines to help you become successful with enterprise BI:
 
 ## Ownership transfers
 
-Occasionally, the ownership of a particular solution may need to be transferred to another team. An ownership transfer from a business unit to a centralized team can happen when:
+Occasionally, the ownership of a particular solution might need to be transferred to another team. An ownership transfer from a business unit to a centralized team can happen when:
 
 - A business-led solution is used by a significant number of users, or it now supports critical business decisions. In these cases, the solution should be managed by a team with processes in place to implement higher levels of governance and support.
 - A business-led solution is a candidate to be used far more broadly throughout the organization, so it needs to be managed by a team who can set security and deploy content widely throughout the organization.
@@ -166,10 +166,10 @@ Occasionally, the ownership of a particular solution may need to be transferred 
 - The size or complexity of a solution has grown to a point where a different data architecture or redesign is required.
 - A proof of concept is ready to be operationalized.
 
-The [COE](powerbi-adoption-roadmap-center-of-excellence.md) should have well-documented procedures for identifying when a solution is a candidate for ownership transfer. It's very helpful if help desk personnel know what to look for as well. Having a customary pattern for self-service creators to build and grow a solution, and hand it off in certain circumstances, is an indicator of a productive and healthy data culture. A simple ownership transfer may be addressed during COE [office hours](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#office-hours); a more complex transfer may warrant a small project managed by the COE.
+The [COE](powerbi-adoption-roadmap-center-of-excellence.md) should have well-documented procedures for identifying when a solution is a candidate for ownership transfer. It's very helpful if help desk personnel know what to look for as well. Having a customary pattern for self-service creators to build and grow a solution, and hand it off in certain circumstances, is an indicator of a productive and healthy data culture. A simple ownership transfer could be addressed during COE [office hours](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#office-hours); a more complex transfer could warrant a small project managed by the COE.
 
 > [!NOTE]
-> There's potential that the new owner will need to do some refactoring and data validations before they're willing to take full ownership. Refactoring is most likely to occur with the less visible aspects of data preparation, data modeling, and calculations. If there are any manual steps or flat file sources, it's an ideal time to apply those enhancements. The branding of reports and dashboards may also need to change (for example, if there's a footer indicating report contact or a text label indicating that the content is certified).
+> There's potential that the new owner will need to do some refactoring and data validations before they're willing to take full ownership. Refactoring is most likely to occur with the less visible aspects of data preparation, data modeling, and calculations. If there are any manual steps or flat file sources, it's an ideal time to apply those enhancements. The branding of reports and dashboards might also need to change (for example, if there's a footer indicating report contact or a text label indicating that the content is certified).
 
 It's also possible for a centralized team to transfer ownership to a business unit. It could happen when:
 

@@ -17,7 +17,7 @@ ms.date: 09/29/2023
 This article introduces the Power BI information protection and data loss prevention (DLP) articles. These articles are targeted at multiple audiences:
 
 - **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators need to collaborate with information security teams and other relevant teams.
-- **Center of Excellence, IT, and BI teams:** The teams that are responsible for overseeing Power BI in the organization. They may need to collaborate with Power BI administrators, information security teams, and other relevant teams.
+- **Center of Excellence, IT, and BI teams:** The teams that are responsible for overseeing Power BI in the organization. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
 
 > [!IMPORTANT]
 > Information protection and DLP is a significant organization-wide undertaking. Its scope and impact are far greater than Power BI alone. This type of initiative requires funding, prioritization, and planning. Expect to involve several cross-functional teams in your planning, usage, and oversight efforts.

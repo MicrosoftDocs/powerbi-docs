@@ -68,20 +68,20 @@ When completed, the series will:
 To set yourself up for success, we recommend that you work through the following steps:
 
 1. Read the complete [Power BI adoption roadmap](/power-bi/guidance/powerbi-adoption-roadmap-overview), familiarizing yourself with each roadmap subject area. Assess your current state of Power BI adoption, and gain clarity on the data culture objectives for your organization.
-1. Explore Power BI implementation planning articles that are relevant to you. Start with the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md), which convey how you can use Power BI in diverse ways. Be sure to understand which usage scenarios apply to your organization, and by whom. Also, consider how these usage scenarios may influence the implementation strategies you decide on.
-1. Read the articles for each of the subject areas that are listed above. You might choose to initially do a broad review of the contents from top to bottom. Or you may choose to start with subject areas that are your highest priority. Carefully review the key decisions and actions that are included for each topic (at the end of each section). We recommend that you use them as a starting point for creating and customizing your plan.
+1. Explore Power BI implementation planning articles that are relevant to you. Start with the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md), which convey how you can use Power BI in diverse ways. Be sure to understand which usage scenarios apply to your organization, and by whom. Also, consider how these usage scenarios might influence the implementation strategies you decide on.
+1. Read the articles for each of the subject areas that are listed above. You might choose to initially do a broad review of the contents from top to bottom. Or you might choose to start with subject areas that are your highest priority. Carefully review the key decisions and actions that are included for each topic (at the end of each section). We recommend that you use them as a starting point for creating and customizing your plan.
 1. When necessary, refer to [Power BI documentation](/power-bi/) for details on specific topics.
 
 ## Target audience
 
-The intended audience of this series of articles may be interested in the following outcomes:
+The intended audience of this series of articles might be interested in the following outcomes:
 
 - Identifying areas to improve or strengthen their Power BI implementation.
 - Increasing their ability to efficiently manage and securely deliver Power BI content.
 - Planning the implementation of Power BI within their organization.
 - Increasing their organization's return on investment (ROI) in Power BI.
 
-This series is certain to be helpful for organizations that are in their early stages of a Power BI implementation or are planning an expanded implementation. It may also be helpful for those who work in an organization with one or more of the following characteristics:
+This series is certain to be helpful for organizations that are in their early stages of a Power BI implementation or are planning an expanded implementation. It might also be helpful for those who work in an organization with one or more of the following characteristics:
 
 - Power BI has pockets of viral adoption and success in the organization, but it's not consistently well-managed or purposefully governed.
 - Power BI is deployed with some meaningful scale, but there are many unrealized opportunities for improvement.

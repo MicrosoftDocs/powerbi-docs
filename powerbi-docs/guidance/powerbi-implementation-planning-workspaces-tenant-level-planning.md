@@ -19,7 +19,7 @@ This article covers tenant-level Fabric workspace planning, with an emphasis on 
 - **Fabric administrators:** The administrators who are responsible for overseeing Fabric in the organization.
 - **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing analytics and supporting self-service users throughout the organization.
 
-Secondarily, this article may also be of interest to self-service creators who need to create, publish, and manage content in workspaces.
+Secondarily, this article might also be of interest to self-service creators who need to create, publish, and manage content in workspaces.
 
 Because workspaces can be used in different ways, most tactical decisions will be made at the workspace level (described in the [next article](powerbi-implementation-planning-workspaces-workspace-level-planning.md)). However, there are some strategic planning decisions to make at the tenant level, too.
 
@@ -69,11 +69,11 @@ We recommend that you include the workspace naming conventions in your [centrali
 
 The following list describes more considerations related to workspace naming.
 
-- **Use short yet descriptive names:** The workspace name should accurately reflect its contents, with the most important part at the beginning of the name. In the Fabric portal, long workspace names may become truncated in user interfaces, requiring the user to hover the cursor over the workspace name to reveal the full name in a tooltip. Here's an example of a short yet descriptive name: _Quarterly Financials_.
+- **Use short yet descriptive names:** The workspace name should accurately reflect its contents, with the most important part at the beginning of the name. In the Fabric portal, long workspace names can become truncated in user interfaces, requiring the user to hover the cursor over the workspace name to reveal the full name in a tooltip. Here's an example of a short yet descriptive name: _Quarterly Financials_.
 - **Use a standard prefix:** A standard prefix can arrange similar workspaces together when sorted. For example: _FIN-Quarterly Financials_.
 - **Use a standard suffix:** You can add a suffix for additional information, such as when you use different workspaces for development, test, and production. We recommend appending _\[Dev\]_ or _\[Test\]_ suffixes but leaving production as a user-friendly name without a suffix. For example: _FIN-Quarterly Financials \[Dev\]_.
 - **Be consistent with the Power BI app name:** The workspace name and its Power BI app can be different, particularly if it improves usability or understandability for app consumers. We recommend keeping the names similar to avoid confusion.
-- **Omit unnecessary words:** The following words may be redundant, so avoid them in your workspace names:
+- **Omit unnecessary words:** The following words might be redundant, so avoid them in your workspace names:
   - The word _workspace_.
   - The words _Fabric_ or _Power BI_. Many Fabric workspaces contain items from various workloads. However, you might create a workspace that's intended to target only a specific workload (such as Power BI, Data Factory, or Synapse Data Engineering). In that case, you might choose a short suffix so that the workspace purpose is made clear.
   - The name of the organization. However, when the primary audience is external users, including the organization's name can be helpful.
@@ -113,7 +113,7 @@ The following table lists different ways you might choose to organize related wo
 
 Here are some considerations when planning for Fabric domains in your tenant.
 
-- **How will you map each workspace to a domain?** Each workspace may be assigned to only one domain (rather than multiple domains), so be prepared to do some planning. Consider creating a matrix diagram with workspaces in the rows, and domains in the columns, to help you plan how they're assigned. You can reassign the domain in the workspace settings, or the admin portal, if you discover that you need to reorganize workspaces.
+- **How will you map each workspace to a domain?** Each workspace can be assigned to only one domain (rather than multiple domains), so be prepared to do some planning. Consider creating a matrix diagram with workspaces in the rows, and domains in the columns, to help you plan how they're assigned. You can reassign the domain in the workspace settings, or the admin portal, if you discover that you need to reorganize workspaces.
 - **Who will be authorized to manage a domain?** Members of the _Domain admin_ role are authorized to manage an existing domain. When possible, assign domain administrator(s) who directly own and manage the content for the domain. Domain administrators should be experts who are familiar with internal, regional, and governmental regulations for the subject area. They should also be familiar with all internal governance and security requirements. For more information, see [Domain roles](/fabric/governance/domains#domain-roles).
 - **Who will be allowed to assign workspaces to a domain?** Members of the _Domain contributor_ role define which users (who are also workspace administrators) can assign a workspace to a domain. If you allow more users to assign workspaces to a domain, you should frequently audit the accuracy of the assigned groupings. If you allow only specific groups of users, or Fabric admins and Domain admins, you'll have more control over how they're assigned. For more information, see [Domain roles](/fabric/governance/domains#domain-roles).
 - **Are there specific compliance needs or restrictions, such as geographic area?** Keep in mind that the geographic area for data storage is set for each capacity (rather than for the domain). Consider how assigning a workspace to a domain—and to a capacity—affects your planning process.
@@ -134,7 +134,7 @@ Here are some considerations when planning for Fabric domains in your tenant.
 
 If you've decided to limit who can create workspaces, then the broader user population will need to know what the process is to request a new workspace. In this case, it's important to establish a request process that's easy and convenient for users to find and follow.
 
-It's also critical to respond quickly to a request for a new workspace. A service level agreement (SLA) of 2-4 hours is ideal. If the process to request a new workspace is too slow or burdensome, people will use the workspaces they have so they can keep moving. If they elect to skip creating a new workspace, what they use instead may be suboptimal. They might choose to reuse an existing workspace that isn't well-suited to the new content, or they might share content from their personal workspace.
+It's also critical to respond quickly to a request for a new workspace. A service level agreement (SLA) of 2-4 hours is ideal. If the process to request a new workspace is too slow or burdensome, people will use the workspaces they have so they can keep moving. If they elect to skip creating a new workspace, what they use instead could be suboptimal. They might choose to reuse an existing workspace that isn't well-suited to the new content, or they might share content from their personal workspace.
 
 > [!TIP]
 > The goal when creating a new process is to make it easy for people to comply with the process. As with all data governance decisions, the point is to make it easy for users to do the right thing.
@@ -185,7 +185,7 @@ There are four key decision criteria to determine the level of governance:
 > [!NOTE]
 > For more information about the four key decision criteria, see the [governance](powerbi-adoption-roadmap-governance.md#decision-criteria) article that forms part of the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md).
 
-You might start out with two levels of workspaces: governed and ungoverned. We recommend that you keep the governance levels as simple as possible. However, depending on your specific circumstances, you might need to subdivide the governed classification. For example, critical content that's managed by the enterprise BI team might have one set of governance requirements. Whereas critical content that's owned and managed directly by business units may be subject to a slightly different set of requirements. In some cases, decisions will be tailored to individual business units.
+You might start out with two levels of workspaces: governed and ungoverned. We recommend that you keep the governance levels as simple as possible. However, depending on your specific circumstances, you might need to subdivide the governed classification. For example, critical content that's managed by the enterprise BI team might have one set of governance requirements. Whereas critical content that's owned and managed directly by business units could be subject to a slightly different set of requirements. In some cases, decisions will be tailored to individual business units.
 
 The following table lists some of the most common requirements when a workspace is considered governed.
 

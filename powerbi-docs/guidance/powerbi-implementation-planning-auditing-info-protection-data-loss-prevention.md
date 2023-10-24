@@ -17,7 +17,7 @@ ms.date: 09/15/2022
 This article describes the type of auditing you can do after implementing information protection and data loss prevention (DLP). It's targeted at:
 
 - **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators need to collaborate with information security and other relevant teams.
-- **Center of Excellence, IT, and BI teams:** Others who are responsible for overseeing Power BI in the organization. They may need to collaborate with Power BI administrators, information security teams, and other relevant teams.
+- **Center of Excellence, IT, and BI teams:** Others who are responsible for overseeing Power BI in the organization. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
 
 It's important to understand how [information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) is used in your organization. You can achieve that by performing auditing, which can:
 
@@ -34,7 +34,7 @@ It's important to understand how [information protection and data loss preventio
 > [!div class="checklist"]
 > - **Decide what's most important to audit:** Consider what's most important from an auditing perspective. Prioritize areas of risk, major inefficiencies, or non-compliance with regulatory requirements. When a situation arises that could be improved, educate users on appropriate ways to do things.
 > - **Implement relevant auditing processes:** Put processes in place to extract, integrate, model, and create reports so that auditing can be done.
-> - **Take appropriate action:** Using the information obtained from the auditing processes, make sure that someone has the authority and time to take appropriate action. Depending on the situation, it may involve adjusting which sensitivity labels are assigned to content. Other situations might involve user education or training.
+> - **Take appropriate action:** Using the information obtained from the auditing processes, make sure that someone has the authority and time to take appropriate action. Depending on the situation, it could involve adjusting which sensitivity labels are assigned to content. Other situations might involve user education or training.
 
 The remainder of this article describes useful auditing processes and suggestions.
 

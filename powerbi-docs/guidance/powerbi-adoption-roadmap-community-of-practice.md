@@ -56,7 +56,7 @@ Often, people aren't directly asked to become champions. Commonly, champions are
 Different approaches will be more effective for different organizations, and each organization will find what works best for them as their maturity level increases.
 
 > [!IMPORTANT]
-> Someone very well may be acting in the role of a champion without even knowing it, and without any formal recognition. The COE should always be on the lookout for champions. COE members should actively monitor the discussion channel to see who's particularly helpful. The COE should deliberately encourage and support potential champions, and when appropriate, invite them into a champions network to make the recognition formal.
+> Someone very well might be acting in the role of a champion without even knowing it, and without any formal recognition. The COE should always be on the lookout for champions. COE members should actively monitor the discussion channel to see who's particularly helpful. The COE should deliberately encourage and support potential champions, and when appropriate, invite them into a champions network to make the recognition formal.
 
 ## Knowledge sharing
 
@@ -85,7 +85,7 @@ Incentives that the entire community (including champions) find particularly rew
 
 - **Contests with a small gift card or time off:** For example, you might hold a performance tuning event with the winner being the person who successfully reduced the size of their data model the most.
 - **Ranking based on help points:** The more frequently someone participates in Q&A, they achieve a change in status on a leaderboard. This type of gamification promotes healthy competition and excitement. By getting involved in more conversations, the participant learns and grows personally in addition to helping their colleagues.
-- **Leadership communication:** Reach out to a manager when someone goes above and beyond so that their leader, who may not be active in the community, sees the value that their staff member provides.
+- **Leadership communication:** Reach out to a manager when someone goes above and beyond so that their leader, who might not be active in the community, sees the value that their staff member provides.
 
 ### Rewarding champions
 

@@ -40,7 +40,7 @@ Office hours are an excellent user enablement approach because:
 
 - Content creators and the COE actively collaborate to answer questions and solve problems together.
 - Real work is accomplished while learning and problem solving.
-- Others may observe, learn, and participate.
+- Others might observe, learn, and participate.
 - Individual groups can head to a breakout room to solve a specific problem.
 
 Office hours benefit the COE as well because:
@@ -77,19 +77,19 @@ Co-development projects can deliver significant short- and long-term benefits. I
 
 ### Best practices reviews
 
-The COE may also offer _best practices reviews_. A best practices review can be extremely helpful for content creators who would like to validate their work. They might also be known as _advisory services_, _internal consulting time_, or _technical reviews_. Unlike a co-development project (described previously), a best practices review occurs after the solution has been developed.
+The COE could also offer _best practices reviews_. A best practices review can be extremely helpful for content creators who would like to validate their work. They might also be known as _advisory services_, _internal consulting time_, or _technical reviews_. Unlike a co-development project (described previously), a best practices review occurs after the solution has been developed.
 
 During a review, an expert from the COE evaluates self-service Power BI content developed by a member of the community and identifies areas of risk or opportunities for improvement.
 
 Here are some examples of when a best practices review could be beneficial.
 
 - The sales team has a [Power BI app](/power-bi/consumer/end-user-apps) that they intend to distribute to thousands of users throughout the organization. Since the app represents high priority content distributed to a large audience, they'd like to have it [certified](/power-bi/collaborate-share/service-endorsement-overview). The standard process to certify content includes a best practices review.
-- The finance team would like to [assign a workspace to Premium capacity](/power-bi/enterprise/service-admin-premium-manage#assign-a-workspace-to-a-capacity). A review of the workspace content is required to ensure sound development practices were followed. This type of review is common when the capacity is shared among multiple business units. (A review may not be required when the capacity is assigned to only one business unit.)
+- The finance team would like to [assign a workspace to Premium capacity](/power-bi/enterprise/service-admin-premium-manage#assign-a-workspace-to-a-capacity). A review of the workspace content is required to ensure sound development practices were followed. This type of review is common when the capacity is shared among multiple business units. (A review might not be required when the capacity is assigned to only one business unit.)
 - The operations team is creating a new solution they expect to be widely used. They would like to request a best practices review before it goes into user acceptance testing (UAT), or before a request is submitted to the change management board.
 
 A best practices review is most often focused on the dataset design, though the review can encompass all types of data items (such as a lakehouse, data warehouse, data pipeline, dataflow, or dataset). The review can also encompass reporting items (such as reports, dashboards, or metrics).
 
-Before content is deployed, a best practices review may be used to verify other design decisions, like:
+Before content is deployed, a best practices review can be used to verify other design decisions, like:
 
 - [Data sources](/power-bi/connect-data/desktop-data-sources) used are appropriate and [query folding](power-query-folding.md) is invoked whenever possible.
 - [Connectivity mode](/power-bi/connect-data/service-dataset-modes-understand) and [storage mode](/power-bi/transform-model/desktop-storage-mode) choices (for example, import, live connection, DirectQuery, and composite model frameworks) are appropriate.
@@ -104,7 +104,7 @@ Before content is deployed, a best practices review may be used to verify other 
 - Approved common definitions and terminology are used.
 - Good [data visualization](https://powerbi.microsoft.com/data-visualization/) practices are followed, including [designing for accessibility](/power-bi/create-reports/desktop-accessibility-creating-reports).
 
-Once the content has been deployed, the best practices review isn't necessarily complete yet. Completing the remainder of the review may also include items such as:
+Once the content has been deployed, the best practices review isn't necessarily complete yet. Completing the remainder of the review could also include items such as:
 
 - The target [workspace](/fabric/get-started/workspaces) is suitable for the content.
 - [Workspace security roles](/power-bi/collaborate-share/service-roles-new-workspaces) are appropriate for the content.
@@ -117,7 +117,7 @@ Once the content has been deployed, the best practices review isn't necessarily 
 
 ### Extended support
 
-From time to time, the COE may get involved with complex issues escalated from the help desk. For more information, see the [User support](powerbi-adoption-roadmap-user-support.md) article.
+From time to time, the COE might get involved with complex issues escalated from the help desk. For more information, see the [User support](powerbi-adoption-roadmap-user-support.md) article.
 
 > [!NOTE]
 > Offering mentoring services might be a culture shift for your organization. Your reaction might be that users don't usually ask for help with a tool like Excel, so why would they with Power BI? The answer lies in the fact that Power BI and Fabric are extraordinarily powerful tools. They provide data preparation and data modeling capabilities in addition to data visualization. Having the ability to aid and enable users can significantly improve their skills and increase the quality of their solutions—it reduces risks too.
@@ -143,7 +143,7 @@ A single centralized portal, or hub, is where the user community can find:
 
 The goal is to consistently direct users in the community to the centralized portal to find information. The corresponding obligation for the COE is to ensure that the information users need is available in the centralized portal. Keeping the portal updated requires discipline when everyone is busy.
 
-In larger organizations, it may be difficult to implement one single centralized portal. When it's not practical to consolidate into a single portal, a centralized hub can serve as an aggregator, which contains links to the other locations.
+In larger organizations, it can be difficult to implement one single centralized portal. When it's not practical to consolidate into a single portal, a centralized hub can serve as an aggregator, which contains links to the other locations.
 
 > [!IMPORTANT]
 > Although saving time finding information is important, the goal of a centralized portal is more than that. It's about making information readily available to help your user community do the right thing. They should be able to find information during their normal course of work, with as little friction as possible. Until it's easier to complete a task within the guardrails established by the COE and data governance team, some users will continue to complete their tasks by circumventing policies that are put in place. The recommended path must become the path of least resistance. Having a centralized portal can help achieve this goal.
@@ -181,7 +181,7 @@ The advantages of encouraging knowledge sharing among colleagues are described i
 > [!TIP]
 > Whenever practical, learning should be correlated with building something meaningful and realistic. However, simple demo data does have value during a training course. It allows a learner to focus on how to use the technology rather than the data itself. After completion of introductory session(s), consider offering a _bring your own data_ type of session. These types of sessions encourage the learner to apply their new technical skills to an actual business problem. Try to include multiple facilitators from the COE during this type of follow-up session so questions can be answered quickly.
 
-The types of users you may target for training include:
+The types of users you might target for training include:
 
 - Content owners, subject matter experts (SMEs), and workspace administrators
 - Data creators (for example, users who create datasets for report creators to use, or who create dataflows for other dataset creators to use)
@@ -201,7 +201,7 @@ Give some consideration to how you want to handle users at various stages of [us
 - Users with minimal experience.
 - More experienced users.
 
-How the COE invests its time in creating and curating training materials will change over time as adoption and maturity grows. You may also find over time that some community champions want to run their own tailored set of training classes within their functional business unit.
+How the COE invests its time in creating and curating training materials will change over time as adoption and maturity grows. You might also find over time that some community champions want to run their own tailored set of training classes within their functional business unit.
 
 ### Sources for trusted Power BI training content
 
@@ -214,7 +214,7 @@ A curated set of online resources is valuable to help community members focus an
 
 Consider using [Microsoft Viva Learning](https://www.microsoft.com/microsoft-viva/learning), which is integrated into Microsoft Teams. It includes content from sources such as [Microsoft Learn](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link) and [LinkedIn Learning](https://www.linkedin.com/learning/topics/power-bi). Custom content produced by your organization can be included as well.
 
-In addition to Microsoft content and custom content produced by your organization, you may choose to provide your user community with a curated set of recommended links to trusted online sources. There's a wide array of videos, blogs, and articles produced by the worldwide community. The community comprises Power BI experts, [Microsoft Most Valued Professions (MVPs)](https://mvp.microsoft.com/), and enthusiasts. Providing a curated learning path that contains specific, reputable, current, and high-quality resources will provide the most value to your user community.
+In addition to Microsoft content and custom content produced by your organization, you might choose to provide your user community with a curated set of recommended links to trusted online sources. There's a wide array of videos, blogs, and articles produced by the worldwide community. The community comprises Power BI experts, [Microsoft Most Valued Professions (MVPs)](https://mvp.microsoft.com/), and enthusiasts. Providing a curated learning path that contains specific, reputable, current, and high-quality resources will provide the most value to your user community.
 
 If you do make the investment to create custom in-house training, consider creating short, targeted content that focuses on solving one specific problem. It makes the training easier to find and consume. It's also easier to maintain and update over time.
 
@@ -259,9 +259,9 @@ Documentation should be located in your centralized portal, which is a searchabl
 > [!IMPORTANT]
 > One of the most helpful pieces of documentation you can publish for the community is a description of the [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings), and the group memberships required for each tenant setting. Users read about features and functionality online, and sometimes find that it doesn't work for them. When they are able to quickly look up your organization's tenant settings, it can save them from becoming frustrated and attempting workarounds. Effective documentation can reduce the number of help desk tickets that are submitted. It can also reduce the number of people who need to be assigned the Fabric administrator role (who might have this role solely for the purpose of viewing settings).
 
-Over time, you may choose to allow certain types of documentation to be maintained by the community if you have willing volunteers. In this case, you may want to introduce an approval process for changes.
+Over time, you might choose to allow certain types of documentation to be maintained by the community if you have willing volunteers. In this case, you might want to introduce an approval process for changes.
 
-When you see questions repeatedly arise in the Q&A forum (as described in the [User support](powerbi-adoption-roadmap-user-support.md) article), during office hours, or during lunch and learns, it's a great indicator that creating new documentation may be appropriate. When the documentation exists, it allows colleagues to reference it when needed. It contributes to user enablement and a self-sustaining community.
+When you see questions repeatedly arise in the Q&A forum (as described in the [User support](powerbi-adoption-roadmap-user-support.md) article), during office hours, or during lunch and learns, it's a great indicator that creating new documentation might be appropriate. When the documentation exists, it allows colleagues to reference it when needed. It contributes to user enablement and a self-sustaining community.
 
 > [!TIP]
 > When creating custom documentation or training materials, reference existing Microsoft sites using links whenever possible. Most community bloggers don't keep blog posts or videos up to date.
@@ -308,7 +308,7 @@ You can use Power BI project files with [Power BI Desktop developer mode](/power
 **Checklist** - Considerations and key actions you can take to establish, or improve, mentoring and user enablement.
 
 > [!div class="checklist"]
-> - **Consider what mentoring services the COE can support:** Decide what types of mentoring services the COE is capable of offering. Types may include office hours, co-development projects, and best practices reviews.
+> - **Consider what mentoring services the COE can support:** Decide what types of mentoring services the COE is capable of offering. Types can include office hours, co-development projects, and best practices reviews.
 > - **Communicate about mentoring services regularly:** Decide how you will communicate and advertise mentoring services, such as office hours, to the user community.
 > - **Establish a regular schedule for office hours:** Ideally, hold office hours at least once per week (depending on demand from users as well as staffing and scheduling constraints).
 > - **Decide what the expectations will be for office hours:** Determine what the scope of allowed topics or types of issues users can bring to office hours. Also, determine how the queue of office hours requests will work, whether any information should be submitted ahead of time, and whether any follow up afterwards can be expected.

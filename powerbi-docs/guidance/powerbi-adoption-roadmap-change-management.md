@@ -90,7 +90,7 @@ Change management can be a significant undertaking. Taking an incremental approa
 The following steps outline how you can incrementally address change.
 
 1. **Define what's changing:** Describe the change by outlining the before and after states. Clarify the specific parts of the process or situation that you'll change, remove, or introduce. Justify why this change is necessary, and when it should occur.
-1. **Describe the impact of the change:** For each of these changes, estimate the business impact. Identify which processes, teams, or individuals the change affects, and how disruptive it will be for them. Also consider any downstream effects the change has on other dependent solutions or processes. Downstream effects may result in other changes. Additionally, consider how long the situation remained the same before it was changed. Changes to longer-standing processes tend to have a higher impact, as preferences and dependencies arise over time.
+1. **Describe the impact of the change:** For each of these changes, estimate the business impact. Identify which processes, teams, or individuals the change affects, and how disruptive it will be for them. Also consider any downstream effects the change has on other dependent solutions or processes. Downstream effects might result in other changes. Additionally, consider how long the situation remained the same before it was changed. Changes to longer-standing processes tend to have a higher impact, as preferences and dependencies arise over time.
 1. **Identify priorities:** Focus on the changes with the highest potential impact. For each change, outline a more detailed description of the changes and how it will affect people.
 1. **Plan how to incrementally implement the change:** Identify whether any high-impact changes can be broken into stages or parts. For each part, describe how it might be incrementally implemented in phases to limit its impact. Determine whether there are any constraints or dependencies (such as when changes can be made, or by whom).
 1. **Create an action plan for each phase:** Plan the actions you will take to implement and support each phase of the change. Also, plan for how you can mitigate disruption in high-impact phases. Be sure to include a rollback plan in your action plan, whenever possible.
@@ -102,7 +102,7 @@ When you plan to mitigate the impact of changes on Power BI adoption, consider t
 
 ### Effectively communicate change
 
-Ensure that you clearly and concisely describe planned changes for the user community. Important communication should be originate from the executive sponsor, or another leader with relevant authority. Be sure to communicate the following details.
+Ensure that you clearly and concisely describe planned changes for the user community. Important communication should  originate from the executive sponsor, or another leader with relevant authority. Be sure to communicate the following details.
 
 - **What's changing:** What the situation is now and what it will be after the change.
 - **Why it's changing:** The benefit and value of the change for the audience.
@@ -117,7 +117,7 @@ Consider maintaining a history of communications in your [centralized portal](po
 
 ### Plan training and support
 
-Changes to tools, processes, and solutions typically require training to use them effectively. Additionally, extra support may be required to address questions or respond to support requests.
+Changes to tools, processes, and solutions typically require training to use them effectively. Additionally, extra support might be required to address questions or respond to support requests.
 
 Here are some actions you can take to plan for training and support.
 

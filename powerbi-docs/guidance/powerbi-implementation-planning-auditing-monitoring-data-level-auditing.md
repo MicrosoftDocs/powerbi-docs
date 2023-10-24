@@ -17,12 +17,12 @@ ms.date: 06/20/2023
 This data-level auditing article is targeted at multiple audiences:
 
 - **Data creators and workspace administrators:** Users who need to understand usage, adoption, and performance of the datasets, dataflows, and datamarts that they create, publish, and share.
-- **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators may need to collaborate with IT, security, internal audit, and other relevant teams. Power BI administrators may also need to collaborate with content creators when troubleshooting performance.
-- **Power BI capacity administrators:** The administrators responsible for overseeing Premium capacity in the organization. Power BI capacity administrators may need to collaborate with content creators when troubleshooting performance.
-- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They may need to collaborate with Power BI administrators and other relevant teams.
+- **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators might need to collaborate with IT, security, internal audit, and other relevant teams. Power BI administrators might also need to collaborate with content creators when troubleshooting performance.
+- **Power BI capacity administrators:** The administrators responsible for overseeing Premium capacity in the organization. Power BI capacity administrators might need to collaborate with content creators when troubleshooting performance.
+- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators and other relevant teams.
 - **System administrators:** The team that's responsible for creating and securing [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-workspace-overview) resources, and the database administrators who manage data sources.
 
-The concepts covered in this article apply primarily to solutions created for three [content delivery scopes](powerbi-adoption-roadmap-content-delivery-scope.md), specifically enterprise BI, departmental BI, and team BI. Creators of personal BI solutions may find the information in this article useful as well; however, they're not the primary target.
+The concepts covered in this article apply primarily to solutions created for three [content delivery scopes](powerbi-adoption-roadmap-content-delivery-scope.md), specifically enterprise BI, departmental BI, and team BI. Creators of personal BI solutions might find the information in this article useful as well; however, they're not the primary target.
 
 Achieving good performance in reports and visuals isn't possible when the underlying dataset and/or data source isn't performing well. This article focuses on auditing and monitoring of datasets, dataflows, and datamarts. It's the second article in the auditing and monitoring series because the tools and techniques are more complex than what's described in the [Report-level auditing](powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md) article. Ideally, you create shared datasets (intended for reuse among many reports) before users create reports. Therefore, we recommend that you read this article together with the [Report-level auditing](powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md) article.
 
@@ -35,7 +35,7 @@ The remainder of this article primarily focuses on models published to the Power
 
 ## Dataset event logs
 
-Over time, data creators and owners may experience situations with their datasets. A dataset can:
+Over time, data creators and owners might experience situations with their datasets. A dataset can:
 
 - Become more complex and include complex measures.
 - Grow larger in data volume.
@@ -120,7 +120,7 @@ There are several ways to access the events that are sent to Azure Log Analytics
 > - **Decide how long to retain Log Analytics data:** Determine whether there's a need to set a longer retention period than the 30-day default.
 > - **Clarify the process for requesting new Log Analytics workspace:** Collaborate with your Azure administrator to clarify how requests for a new Log Analytics resource should be submitted by Power BI workspace administrators.
 > - **Decide how security will work:** Collaborate with your Azure administrator to decide whether it's more feasible for a Power BI workspace administrator to be granted rights to an Azure Log Analytics workspace, or for a Azure administrator to be granted rights to a Power BI workspace. As you make this security decision, consider your plan to connect and disconnect workspaces regularly (for cost optimization).
-> - **Decide how to organize the target Log Analytics workspaces:** Consider how many Azure Log Analytics workspaces will be appropriate to organize the data from one or more Power BI workspaces. Align this decision with your security decisions for who may access the log data.
+> - **Decide how to organize the target Log Analytics workspaces:** Consider how many Azure Log Analytics workspaces will be appropriate to organize the data from one or more Power BI workspaces. Align this decision with your security decisions for who can access the log data.
 > - **Decide which workspace administrators are allowed to connect:** Determine which groups of workspace administrators can connect a Power BI workspace to a Log Analytics workspace. Set the _Azure Log Analytics connection for workspace administrators_ tenant setting to align with this decision.
 > - **Create the Azure Log Analytics resource:** Collaborate with your Azure administrator to create each Log Analytics workspace. Verify and update the permissions that are assigned in Azure to ensure that the Power BI configuration can occur without any issues. Validate that the data stored in Azure is in the correct geographic region.
 > - **Set the Log Analytics connection for each Power BI workspace:** Collaborate with your Power BI workspace administrators to set up the connection to Log Analytics for each Power BI workspace. Verify that the log data is flowing correctly to the Log Analytics workspace.
@@ -171,7 +171,7 @@ The _Allow XMLA endpoints and Analyze in Excel with on-premises datasets_ tenant
 **Checklist** - When planning to use SQL Profiler, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Decide who may have SSMS or DAX Studio installed:** Determine whether you'll allow all the Power BI content creators in your organization to install SSMS and/or DAX Studio so they can use SQL Profiler. Decide whether these ancillary tools are installed upon request, or part of a standard set of software that's installed for approved data creators in the organization.
+> - **Decide who can have SSMS or DAX Studio installed:** Determine whether you'll allow all the Power BI content creators in your organization to install SSMS and/or DAX Studio so they can use SQL Profiler. Decide whether these ancillary tools are installed upon request, or part of a standard set of software that's installed for approved data creators in the organization.
 > - **Add SQL Profiler to the External Tools menu in Power BI Desktop:** If data creators will use SQL Profiler often, ask IT to automatically add it to the External Tools menu in Power BI Desktop for these users.
 > - **Decide who can use the XMLA endpoint:** Determine whether all users are permitted to connect to published datasets by using the XMLA endpoint, or whether it's limited to approved data creators only. Set the _Allow XMLA endpoints and Analyze in Excel with on-premises datasets_ tenant setting to align with this decision.
 > - **Provide guidance and sample queries for analyzing the data:** Create documentation for your data creators so they understand the recommended way to audit and monitor datasets. Provide guidance for common use cases to make it easier for them to get started gathering and analyzing trace data.
@@ -231,15 +231,15 @@ BPA can also help you audit and govern your data models. For example, you can ve
 BPA can expose design issues that can help the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md) determine whether more training or documentation is necessary. It can take action to educate data creators on best practices and organizational guidelines.
 
 > [!TIP]
-> Keep in mind that BPA can detect the _existence_ of a characteristic (such as row-level security). However, it may be difficult to determine whether it's set up correctly. For that reason, a subject matter expert may need to conduct a review . Conversely, the _non-existence_ of a particular characteristic doesn't necessarily mean a bad design; the data modeler may have a good reason for producing a particular design.
+> Keep in mind that BPA can detect the _existence_ of a characteristic (such as row-level security). However, it might be difficult to determine whether it's set up correctly. For that reason, a subject matter expert might need to conduct a review . Conversely, the _non-existence_ of a particular characteristic doesn't necessarily mean a bad design; the data modeler might have a good reason for producing a particular design.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When planning to access metadata for data models, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Decide who may have SSMS installed:** Determine whether you'll allow all Power BI content creators in your organization to install SSMS so that they can connect to published datasets. Decide whether it's installed upon request, or as part of a standard set of software that's installed for approved data creators in the organization.
-> - **Decide who may have third-party tools installed:** Determine whether you'll allow all Power BI content creators in your organization to install third-party tools (such as DAX Studio and Tabular Editor) so that they can monitor local data models and/or published datasets. Decide whether they're installed upon request, or as part of a standard set of software that's installed for approved data creators in the organization.
+> - **Decide who can have SSMS installed:** Determine whether you'll allow all Power BI content creators in your organization to install SSMS so that they can connect to published datasets. Decide whether it's installed upon request, or as part of a standard set of software that's installed for approved data creators in the organization.
+> - **Decide who can have third-party tools installed:** Determine whether you'll allow all Power BI content creators in your organization to install third-party tools (such as DAX Studio and Tabular Editor) so that they can monitor local data models and/or published datasets. Decide whether they're installed upon request, or as part of a standard set of software that's installed for approved data creators in the organization.
 > - **Set up best practice rules:** Decide which Best Practice Analyzer rules can scan the data models in your organization.
 > - **Decide who can use the XMLA endpoint:** Determine whether all users are permitted to connect to datasets by using the XMLA endpoint, or whether it's limited to approved data creators only. Set the _Allow XMLA endpoints and Analyze in Excel with on-premises datasets_ tenant setting to align with this decision.
 > - **Provide guidance for content creators:** Create documentation for your data creators so that they understand the recommended way(s) to analyze datasets. Provide guidance for common use cases to make it easier for them to start gathering and analyzing DMV results and/or using Best Practice Analyzer.
@@ -306,7 +306,7 @@ Use the Premium metrics app to troubleshoot and optimize datasets. For example, 
 
 ## Data source monitoring
 
-Sometimes it's necessary to directly monitor a specific data source that Power BI connects to. For example, you may have a data warehouse that's experiencing an increased workload, and users are reporting performance degradation. Typically, a database administrator or system administrator monitors data sources.
+Sometimes it's necessary to directly monitor a specific data source that Power BI connects to. For example, you might have a data warehouse that's experiencing an increased workload, and users are reporting performance degradation. Typically, a database administrator or system administrator monitors data sources.
 
 You can monitor a data source to:
 

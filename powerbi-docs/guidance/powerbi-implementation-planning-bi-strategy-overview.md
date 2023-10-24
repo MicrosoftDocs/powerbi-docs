@@ -41,7 +41,7 @@ A BI strategy is a plan to implement, use, and manage data and analytics to bett
 
 ### Relationship between BI strategy and business strategy
 
-Your business strategy should directly inform your BI strategy. As your business objectives evolve, your BI processes and tools may also need to evolve, especially as new data needs arise. New opportunities and insights learned from BI solutions can also lead to changes to your business strategy. Understanding and supporting the relationship between your business and BI strategies is essential in order to make valuable BI solutions, and to ensure that people use them effectively.
+Your business strategy should directly inform your BI strategy. As your business objectives evolve, your BI processes and tools might also need to evolve, especially as new data needs arise. New opportunities and insights learned from BI solutions can also lead to changes to your business strategy. Understanding and supporting the relationship between your business and BI strategies is essential in order to make valuable BI solutions, and to ensure that people use them effectively.
 
 The following diagram depicts how a BI strategy supports the business strategy by enabling business users.
 
@@ -94,7 +94,7 @@ The diagram depicts the following concepts.
 A BI strategy can encompass many data culture and technical areas. However, when planning your BI strategy, you should be cautious not to attempt to address too many of these areas at first. A successful BI strategy starts small. It focuses on a few prioritized areas and broadens scope over time, ensuring consistent progress. Later, as you experience sustainable success with your BI strategy, it can incrementally evolve to encompass more areas.
 
 > [!IMPORTANT]
-> This series of BI strategy articles focuses on the Power BI workload in Fabric. However, planning a BI strategy is a technology-agnostic exercise. As such, the concepts described in the articles may apply irrespective of your chosen BI tools and technologies.
+> This series of BI strategy articles focuses on the Power BI workload in Fabric. However, planning a BI strategy is a technology-agnostic exercise. As such, the concepts described in the articles can apply irrespective of your chosen BI tools and technologies.
 
 ## Defining a BI strategy
 

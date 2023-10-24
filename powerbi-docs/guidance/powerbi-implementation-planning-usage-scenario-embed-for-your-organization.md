@@ -77,7 +77,7 @@ When embedding for your organization, you can embed the following Power BI conte
 
 There's no limitation on where the content resides. The content could reside in a personal workspace or a regular workspace. What matters is that the app user has permission to view (or create or edit) the content. For example, it's possible to embed content from the app user's personal workspace.
 
-Any content the user can see in the Power BI service may be embedded in a custom application. If the user has permission to create or edit content, it's possible for a custom app to support that functionality (for Power BI reports only).
+Any content the user can see in the Power BI service can be embedded in a custom application. If the user has permission to create or edit content, it's possible for a custom app to support that functionality (for Power BI reports only).
 
 ### Authentication
 

@@ -182,7 +182,7 @@ Data literacy refers to the ability to accurately and effectively interpret, cre
 
 Training efforts, as described in the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, often focus on how to use the technology itself. Technology skills are important to producing high-quality solutions, but it's also important to consider how to purposely advance data literacy throughout the organization. Put another way, successful adoption takes a lot more than merely providing software and licenses to users.
 
-How you go about improving data literacy in your organization depends on many factors, such as current user skillsets, complexity of the data, and the types of analytics that are required. You may choose to focus on these types of activities related to data literacy:
+How you go about improving data literacy in your organization depends on many factors, such as current user skillsets, complexity of the data, and the types of analytics that are required. You might choose to focus on these types of activities related to data literacy:
 
 - Interpreting charts and graphs
 - Assessing the validity of data

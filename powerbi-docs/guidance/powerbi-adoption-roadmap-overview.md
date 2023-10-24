@@ -85,7 +85,7 @@ The remaining articles in this Power BI adoption series discuss the following as
 - [Conclusion and additional resources](powerbi-adoption-roadmap-conclusion.md)
 
 > [!IMPORTANT]
-> You may be wondering how this Power BI adoption roadmap is different from the [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption). The adoption framework was created primarily to support Microsoft partners. It's a lightweight set of resources to help partners deploy Power BI solutions for their customers.
+> You might be wondering how this Power BI adoption roadmap is different from the [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption). The adoption framework was created primarily to support Microsoft partners. It's a lightweight set of resources to help partners deploy Power BI solutions for their customers.
 >
 > This Power BI adoption series is more current. It's intended to guide any person or organization that is using—or considering using—Power BI. If you're seeking to improve your existing Power BI implementation, or planning a new Power BI implementation, this adoption roadmap is a great place to start.
 

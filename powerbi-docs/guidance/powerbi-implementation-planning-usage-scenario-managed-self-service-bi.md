@@ -84,7 +84,7 @@ The [data hub](../connect-data/service-data-hub.md) helps report creators find, 
 
 ### Request dataset access
 
-A report creator may find a dataset in the [data hub](../connect-data/service-data-hub.md) that they want to use. If they don't have Build permission for the dataset, they can request access. Depending on the [request access setting](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) for the dataset, an email will be submitted to the dataset owner or custom instructions will be presented to the person who is requesting access.
+A report creator might find a dataset in the [data hub](../connect-data/service-data-hub.md) that they want to use. If they don't have Build permission for the dataset, they can request access. Depending on the [request access setting](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) for the dataset, an email will be submitted to the dataset owner or custom instructions will be presented to the person who is requesting access.
 
 ### Live connection to the shared dataset
 
@@ -104,7 +104,7 @@ First, there's clarity on who's responsible for managing content in which worksp
 
 ### Dependency and impact analysis
 
-When a shared dataset is used by many reports, those reports can exist in many workspaces. The [lineage view](../collaborate-share/service-data-lineage.md) helps identify and understand the downstream dependencies. When planning a dataset change, first perform [impact analysis](../collaborate-share/service-dataset-impact-analysis.md#perform-dataset-impact-analysis) to understand which dependent reports may require editing or testing.
+When a shared dataset is used by many reports, those reports can exist in many workspaces. The [lineage view](../collaborate-share/service-data-lineage.md) helps identify and understand the downstream dependencies. When planning a dataset change, first perform [impact analysis](../collaborate-share/service-dataset-impact-analysis.md#perform-dataset-impact-analysis) to understand which dependent reports might require editing or testing.
 
 ### Gateway setup
 

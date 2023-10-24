@@ -139,7 +139,7 @@ For more information about up-front planning, see the [Preparing to migrate to P
 
 ## Governance challenges
 
-If your organization has implemented Power BI without a governance approach or strategic direction (as described above by method 1), there could be numerous challenges requiring attention. Depending on the approach you've taken and your current state, some of the following challenges may be applicable to your organization.
+If your organization has implemented Power BI without a governance approach or strategic direction (as described above by method 1), there could be numerous challenges requiring attention. Depending on the approach that you've taken and your current state, some of the following challenges could be applicable to your organization.
 
 ### Strategy challenges
 
@@ -185,7 +185,7 @@ If your organization has implemented Power BI without a governance approach or s
 - Coping with the speed of change for cloud services
 
 >[!TIP]
-> Identifying your current challenges—as well as your strengths—is essential to do proper governance planning. There's no single straightforward solution to the challenges listed above. Each organization needs to find the right balance and approach that solves the challenges that are most important to them. The challenges presented above will help you identify how they may affect your organization, so you can start thinking about what the right solution is for your circumstances.
+> Identifying your current challenges—as well as your strengths—is essential to do proper governance planning. There's no single straightforward solution to the challenges listed above. Each organization needs to find the right balance and approach that solves the challenges that are most important to them. The challenges presented above will help you identify how they might affect your organization, so you can start thinking about what the right solution is for your circumstances.
 
 ## Governance planning
 
@@ -196,7 +196,7 @@ If a formal governance body doesn't currently exist in your organization, then t
 > [!IMPORTANT]
 > Governance is a big undertaking, and it's never completely _done_. Relentlessly prioritizing and iterating on improvements will make the scope more manageable. If you track your progress and accomplishments each week and each month, you'll be amazed at the impact over time. The [maturity levels](#maturity-levels) at the end of each article in this series can help you to assess where you are currently.
 
-Some potential governance planning activities and outputs that you may find valuable are described next.
+Some potential governance planning activities and outputs that you might find valuable are described next.
 
 ### Strategy
 
@@ -252,7 +252,7 @@ Some potential governance planning activities and outputs that you may find valu
 - Prioritize data policies to be addressed by order of importance.
 - Identify existing processes in place that work well and can be formalized.
 - Determine how new data policies will be socialized.
-- Decide to what extent data policies may differ or be customized for different groups.
+- Decide to what extent data policies might differ or be customized for different groups.
 
 **Key output:**
 
@@ -291,7 +291,7 @@ How we go about making governance decisions depends on:
 - **Who owns and manages the BI content?** The [Content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article introduced three types of strategies: business-led self-service BI, managed self-service BI, and enterprise BI. Who owns and manages the content has a significant impact on governance requirements.
 - **What is the scope for delivery of the BI content?** The [Content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) article introduced four scopes for delivery of content: personal BI, team BI, departmental BI, and enterprise BI. The scope of delivery has a considerable impact on governance requirements.
 - **What is the data subject area?** The data itself, including its sensitivity level, is an important factor. Some data domains inherently require tighter controls. For instance, personally identifiable information (PII), or data subject to regulations, should be subject to stricter governance requirements than less sensitive data.
-- **Is the data, and/or the BI solution, considered critical?** If you can't make an informed decision easily without this data, you're dealing with critical data elements. Certain reports and apps may be deemed critical because they meet a set of predefined criteria. For instance, the content is delivered to executives. Predefined criteria for what's considered _critical_ helps everyone have clear expectations. Critical data is usually subject to stricter governance requirements.
+- **Is the data, and/or the BI solution, considered critical?** If you can't make an informed decision easily without this data, you're dealing with critical data elements. Certain reports and apps could be deemed critical because they meet a set of predefined criteria. For instance, the content is delivered to executives. Predefined criteria for what's considered _critical_ helps everyone have clear expectations. Critical data is usually subject to stricter governance requirements.
 
 > [!TIP]
 > Different combinations of the above four criteria will result in different governance requirements for Power BI content.
@@ -300,7 +300,7 @@ How we go about making governance decisions depends on:
 
 As you explore your goals and objectives and pursue more tactical data governance decisions as described above, it will be important to determine what the highest priorities are. Deciding where to focus your efforts can be challenging.
 
-The following list includes items that you may choose to prioritize when introducing governance for Power BI.
+The following list includes items that you might choose to prioritize when introducing governance for Power BI.
 
 - Recommendations and requirements for [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md)
 - Recommendations and requirements for [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md)
@@ -316,7 +316,7 @@ The following list includes items that you may choose to prioritize when introdu
 - [Security](/power-bi/enterprise/service-admin-power-bi-security), privacy, and data protection requirements, and allowed actions for content assigned to each [sensitivity label](/power-bi/enterprise/service-security-apply-data-sensitivity-labels)
 - Allowed or encouraged use of [personal gateways](/power-bi/connect-data/service-gateway-personal-mode)
 - Allowed or encouraged use of [self-service purchasing](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide&preserve-view=true) of user licenses
-- Requirements for who may [certify](/power-bi/collaborate-share/service-endorse-content) content, as well as requirements that must be met
+- Requirements for who can [certify](/power-bi/collaborate-share/service-endorse-content) content, as well as requirements that must be met
 - Application lifecycle management for managing content through its entire lifecycle, including [development, test, and production stages](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines)
 - Additional requirements applicable to critical content, such as data quality verifications and documentation
 - Requirements to use standardized master data and common data definitions to improve consistency across data assets
@@ -328,7 +328,7 @@ Although not every governance decision needs to be made upfront, it's important 
 
 ### Data policies
 
-A data policy is a document that defines what users can and can't do. You may call it something different, but the goal remains the same: when decisions—such as those discussed in the previous section—are made, they're documented for use and reference by the community of users.
+A data policy is a document that defines what users can and can't do. You might call it something different, but the goal remains the same: when decisions—such as those discussed in the previous section—are made, they're documented for use and reference by the community of users.
 
 A data policy should be as short as possible. That way, it's easy for people to understand what is being asked of them.
 
@@ -349,13 +349,13 @@ A data policy should include:
 > [!NOTE]
 > Locate, or link to, data policies from your [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal).
 
-Here are three common data policy examples you may choose to prioritize:
+Here are three common data policy examples you might choose to prioritize.
 
 | **Policy** | **Description** |
 | --- | --- |
 | Data ownership policy | Specifies when an owner is required for a data asset, and what the data owner's responsibilities include, such as: supporting colleagues who view the content, maintaining appropriate confidentiality and security, and ensuring compliance. |
-| Data certification (endorsement) policy | Specifies the process that is followed to certify content. Requirements may include activities such as: data accuracy validation, data source and lineage review, technical review of the data model, security review, and documentation review. |
-| Data classification and protection policy | Specifies activities that are allowed and not allowed per classification (sensitivity level). It should specify activities such as: allowed sharing with external users (with or without NDA), encryption requirements, and ability to download the data. Sometimes, it's also called a _data handling policy_ or a _data usage policy_. For more information, see the [Information protection for Power BI](powerbi-implementation-planning-info-protection.md#data-classification-and-protection-policy) article. |
+| Data certification (endorsement) policy | Specifies the process that is followed to certify content. Requirements might include activities such as: data accuracy validation, data source and lineage review, technical review of the data model, security review, and documentation review. |
+| Data classification and protection policy | Specifies activities that are allowed and not allowed per classification (sensitivity level). It should specify activities such as: allowed sharing with external users, with or without a non-disclosure agreement (NDA), encryption requirements, and ability to download the data. Sometimes, it's also called a _data handling policy_ or a _data usage policy_. For more information, see the [Information protection for Power BI](powerbi-implementation-planning-info-protection.md#data-classification-and-protection-policy) article. |
 
 > [!CAUTION]
 > Having a lot of documentation can lead to a false sense that everything is under control, which can lead to complacency. The level of engagement that the [COE](powerbi-adoption-roadmap-center-of-excellence.md) has with the user community is one way to improve the chances that governance guidelines and policies are consistently followed. Auditing and monitoring activities are also important.
@@ -393,7 +393,7 @@ Governance decisions will rarely be one-size-fits-all across the entire organiza
 
 ## Staffing and accountability
 
-The organizational structure for data governance varies substantially between organizations. In larger organizations there may be a data governance office with dedicated staff. Some organizations have a data governance board, council, or steering committee with assigned members coming from different business units. Depending on the extent of the data governance body within the organization, there may be an executive team separate from a functional team of people.
+The organizational structure for data governance varies substantially between organizations. In larger organizations there might be a data governance office with dedicated staff. Some organizations have a data governance board, council, or steering committee with assigned members coming from different business units. Depending on the extent of the data governance body within the organization, there could be an executive team separate from a functional team of people.
 
 > [!IMPORTANT]
 > Regardless of how the governance body is structured, it's important that there's a person or group with sufficient influence over data governance decisions. This person should have authority to enforce those decisions across organizational boundaries.
@@ -420,7 +420,7 @@ Starting at the bottom, the levels in the above diagram include:
 
 Once you have a sense for your governance strategy, roles and responsibilities should be defined to establish clear expectations.
 
-Governance team structure, roles (including terminology), and responsibilities vary widely among organizations. Very generalized roles are described in the table below. In some cases, the same person may serve multiple roles. For instance, the Chief Data Officer (CDO) may also be the executive sponsor.
+Governance team structure, roles (including terminology), and responsibilities vary widely among organizations. Very generalized roles are described in the table below. In some cases, the same person could serve multiple roles. For instance, the Chief Data Officer (CDO) could also be the executive sponsor.
 
 | **Role** | **Description** |
 | --- | --- |
