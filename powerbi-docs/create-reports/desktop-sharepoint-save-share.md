@@ -26,7 +26,7 @@ Admins can [**disable** sharing through the Admin portal](/fabric/admin/service-
 
 ## How to enable Power BI Desktop and SharePoint integrations
 
-The ability to open, save, and share files from OneDrive and SharePoint directly in Power BI Desktop is now enabled by default. 
+The ability to open, save, and share files from OneDrive and SharePoint directly in Power BI Desktop is now **enabled by default**. 
 
 If you'd like to disable the preview for opening, saving, and sharing Power BI files to OneDrive and SharePoint in Power BI Desktop, uncheck the **Save to OneDrive and SharePoint** and **Share to OneDrive and SharePoint** options by selecting the file tab **Options and settings > Options > Preview features**.
 
