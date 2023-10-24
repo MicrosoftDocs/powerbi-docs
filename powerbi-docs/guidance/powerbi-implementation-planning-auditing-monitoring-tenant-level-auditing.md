@@ -1189,7 +1189,7 @@ The `Get Groups as Admin` REST API or the `Get-PowerBIWorkspace` PowerShell cmdl
 The [metadata scanning APIs](/power-bi/enterprise/service-admin-metadata-scanning), commonly called the _scanner APIs_, are a set of APIs that return a list of workspaces and their Power BI items (datasets, reports, and other items). Conceptually, they provide the same data (and more) as the Groups APIs or the workspace cmdlet, which are described in the previous section. However, the method you use to retrieve the data is different and better suited to extracting the tenant inventory.
 
 > [!NOTE]
-> Take notice of how some people use the term _scanner APIs_ or the phrase _scanning the tenant_. They often use those terms to mean _compiling a tenant inventory_, distinguishing it from the user activity events. They may or may not be literally referring to the use of the metadata scanning APIs.
+> Take notice of how some people use the term _scanner APIs_ or the phrase _scanning the tenant_. They often use those terms to mean _compiling a tenant inventory_, distinguishing it from the user activity events. They might, or might not, be literally referring to the use of the metadata scanning APIs.
 
 There are two primary reasons why you should consider using the metadata scanning APIs instead of the `Get Groups as Admin` REST API or the `Get-PowerBIWorkspace` cmdlet (described previously).
 

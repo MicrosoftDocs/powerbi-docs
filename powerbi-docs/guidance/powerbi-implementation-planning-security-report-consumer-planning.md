@@ -28,7 +28,7 @@ To get the most from this article, it's helpful to understand the meaning of the
 
 _Sharing_ is where one user gives another user (or group of users) access to a specific item of content. The sharing capability in the Power BI service is scoped to one item. It most commonly takes place between individuals who know each other and work closely together.
 
-_Distribution_ is where content is delivered to other users, who are known as recipients. It often involves a larger number of users across multiple teams. Recipients might not have explicitly requested the content, but it's recognized that they need it to perform their role. Recipients who consume distributed content may or may not know the original creator of the content. As such, distribution as a concept is more formal than sharing.
+_Distribution_ is where content is delivered to other users, who are known as recipients. It often involves a larger number of users across multiple teams. Recipients might not have explicitly requested the content, but it's recognized that they need it to perform their role. Recipients who consume distributed content might or might not know the original creator of the content. As such, distribution as a concept is more formal than sharing.
 
 When you talk with other people, determine whether they're using the term _sharing_ in a general way, or literally. Use of the term _sharing_ can be interpreted in two ways.
 
@@ -437,7 +437,7 @@ The presence of RLS changes the default experience for consumers.
 > [!NOTE]
 > Some organizations enforce RLS as an additional layer of security, especially when sensitive data is involved. For this reason, you might choose to require RLS for datasets that are [certified](/power-bi/collaborate-share/service-endorse-content). That requirement can be accomplished with an internal review and approval process prior to certifying the dataset.
 
-When a user views a report in either a workspace or an app, RLS may or may not be enforced depending on their dataset permissions. For this reason, it's critical that content consumers and creators _only_ possess Read permission on the underlying dataset when RLS must be enforced.
+When a user views a report in either a workspace or an app, RLS might or might not be enforced depending on their dataset permissions. For this reason, it's critical that content consumers and creators _only_ possess Read permission on the underlying dataset when RLS must be enforced.
 
 Here are the permission rules that determine whether RLS is enforced.
 

@@ -34,7 +34,7 @@ Office hours are a very popular and productive activity in many organizations. S
 The COE publishes the times for regular office hours when one or more COE members are available. Ideally, office hours are held on a regular and frequent basis. For instance, it could be every Tuesday and Thursday. Consider offering different time slots or rotating times if you have a global workforce.
 
 > [!TIP]
-> One option is to set specific office hours each week. However, users may or may not show up, so that can end up being inefficient. Alternatively, consider leveraging [Microsoft Bookings](https://www.microsoft.com/microsoft-365/business/scheduling-and-booking-app) to schedule office hours. It shows the blocks of time when each COE expert is available, with Outlook integration ensuring availability is up to date.
+> One option is to set specific office hours each week. However, users might not show up, so that can end up being inefficient. Alternatively, consider leveraging [Microsoft Bookings](https://www.microsoft.com/microsoft-365/business/scheduling-and-booking-app) to schedule office hours. It shows the blocks of time when each COE expert is available, with Outlook integration ensuring availability is up to date.
 
 Office hours are an excellent user enablement approach because:
 
