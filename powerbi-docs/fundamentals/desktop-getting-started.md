@@ -8,7 +8,7 @@ ms.custom: contperf-fy21q1, intro-get-started
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 06/13/2022
+ms.date: 10/24/2023
 LocalizationGroup: Get started
 ---
 # Get started with Power BI Desktop
@@ -73,15 +73,18 @@ With Power BI Desktop installed, you're ready to connect to the ever-expanding w
 
 ![Screenshot of Power B I Desktop showing the Get Data tool.](media/desktop-getting-started/getdataweb.png)
 
-Imagine you're a data analyst working for a sunglasses retailer. You want to help your client target sunglasses sales where the sun shines most frequently. The Bankrate.com [Best and worst states for retirement](https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/) page has interesting data on this subject.
+Imagine you're a data analyst working for a sunglasses retailer. You want to help your client target sunglasses sales where the sun shines most frequently. So you might want to find some information on the web about sunny locations.
 
 On the Power BI Desktop **Home** tab, select **Get Data** > **Web** to connect to a web data source. 
 
 ![Screenshot of Power B I Desktop showing the Web option of the Get Data tool.](media/desktop-getting-started/gsg_syw_2.png)
 
-In the **From Web** dialog box, paste the address *https:\//www.bankrate.com/retirement/best-and-worst-states-for-retirement/* into the **URL** field, and select **OK**. 
+In the **From Web** dialog box, paste an address about sunny locations into the **URL** field, and select **OK**.
 
-![Screenshot of Power B I Desktop showing the From Web dialog box.](media/desktop-getting-started/gettingstarted_8.png)
+![Screenshot of Power B I Desktop showing the From Web dialog box.](media/desktop-getting-started/gettingstarted-8.png)
+
+> [!NOTE]
+> The URL used in this example is fictitious, you can find your own data in various tables and sites on the web.
 
 If prompted, on the **Access Web Content** screen, select **Connect** to use anonymous access. 
 
@@ -101,7 +104,7 @@ For more information about connecting to data, see [Connect to data in Power BI 
 Now that you're connected to a data source, you can adjust the data to meet your needs. To *shape* data, you provide Power Query Editor with step-by-step instructions for adjusting the data while loading and presenting it. Shaping doesn't affect the original data source, only this particular view of the data. 
 
 > [!NOTE]
-> The table data used in this guide might change over time. As such, the steps you need to follow might vary, requiring you to be creative about how you adjust steps or outcomes, which is all part of the fun of learning. 
+> The table data used in this guide is fictitious and for illustrative purposes. As such, the steps you need to follow with the data you find and use may vary, requiring you to be creative about how you adjust steps or outcomes, which is all part of the fun of learning. 
 
 Shaping can mean *transforming* the data, such as renaming columns or tables, removing rows or columns, or changing data types. Power Query Editor captures these steps sequentially under **Applied Steps** in the **Query Settings** pane. Each time this query connects to the data source, those steps are carried out, so the data is always shaped the way you specify. This process occurs when you use the query in Power BI Desktop, or when anyone uses your shared query, such as in the Power BI service. 
 
