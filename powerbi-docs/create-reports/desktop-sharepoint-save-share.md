@@ -39,8 +39,6 @@ After saving your preference, restart Power BI Desktop. If the capability is tur
 -	Users have not turned off the sharing preview feature in Power BI Desktop.
 -	The Admin tenant setting is enabled (the setting is **enabled by default** and requires that admins disable it for it to be turned off).   
 
-When enabled, a **Share** button is in the top right corner of Power BI Desktop. 
-
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-share-button-plain.png" alt-text="Screenshot of the Share button in Power BI." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-share-button-plain.png":::
 
 If your Power BI admin has turned off the capability for your organization, you receive a notification that states *Sharing has been disabled* when you select the Share button. [Learn more](/fabric/admin/service-admin-portal-integration#users-can-share-links-to-power-bi-files-stored-in-onedrive-and-sharepoint-through-power-bi-desktop) about the Admin setting.
