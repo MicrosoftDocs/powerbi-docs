@@ -185,7 +185,7 @@ Sometimes you might want to investigate one specific type of activity for a seri
 
 The script declares two variables:
 
-- `$ActivityType`: The [operation name](/powerbi-docs/enterprise/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) for the activity that you're investigating.
+- `$ActivityType`: The [operation name](/power-bi/enterprise/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) for the activity that you're investigating.
 - `$NbrOfDaysToCheck`: How many days you're interested in checking. It performs a loop working backward from the current day. The maximum value allowed is 30 days (because the earliest date that you can retrieve is 30 days before the current day).
 
 ```powershell
@@ -323,7 +323,7 @@ Sometimes you might want to investigate several related activities. This example
 The script declares the following variables:
 
 - `$NbrOfDaysToCheck`: How many days you're interested in checking. It performs a loop that works backward from the current day. The maximum value allowed is 30 days (because the earliest date that you can retrieve is 30 days before the current day).
-- `$Activity1`: The [operation name](/powerbi-docs/enterprise/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) for the first activity that you're investigating. In this example, it's searching for Power BI app creation activities.
+- `$Activity1`: The [operation name](/power-bi/enterprise/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) for the first activity that you're investigating. In this example, it's searching for Power BI app creation activities.
 - `$Activity2`: The second operation name. In this example, it's searching for Power BI app update activities.
 - `$Activity3`: The third operation name. In this example, it's searching for Power BI app installation activities.
 
