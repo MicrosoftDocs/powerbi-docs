@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/30/2022
+ms.date: 10/22/2023
 ---
 
 # Visual interactions in Power BI visuals
@@ -17,7 +17,7 @@ Sometimes you want to allow the user to interact with the visual by selecting, z
 Visuals can query the value of the `allowInteractions` flag, which indicates if the visual allows visual interactions. For example, visuals can be interactive during [report](../../create-reports/desktop-report-view.md) viewing or editing, but visuals can be non-interactive when they're viewed in a [dashboard](../../create-reports/service-dashboards.md). These interactions include *click*, *pan*, *zoom*, *selection*, and others.
 
 > [!NOTE]
-> You should [enable tooltips](add-tooltips.md#manage-tooltips) in all scenarios, regardless of the indicated flag.
+> Best practice is to [enable tooltips](add-tooltips.md#manage-tooltips) in all scenarios, regardless of the indicated flag.
 
 ## Set interactive permissions
 
@@ -29,7 +29,7 @@ The following code sample shows how to use the `allowInteractions` flag to set i
 
 ```typescript
    ...
-   let allowInteractions = options.host.allowInteractions;
+   let allowInteractions = options.host.hostCapabilities.allowInteractions;
    bars.on('click', function(d) {
        if (allowInteractions) {
            selectionManager.select(d.selectionId);
