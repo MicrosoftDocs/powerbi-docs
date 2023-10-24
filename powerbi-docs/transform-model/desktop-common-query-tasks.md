@@ -47,7 +47,7 @@ Connecting to different types of data is a similar process. To connect to a Web 
 
 The **From Web** dialog box appears, where you can type in the URL of the webpage.
 
-:::image type="content" source="../fundamentals/media/desktop-getting-started/gettingstarted-8.png" alt-text="Screenshot of the From Web dialog box showing a connection to the data source from a URL.":::
+:::image type="content" source="../fundamentals/media/desktop-getting-started/getting-started-8.png" alt-text="Screenshot of the From Web dialog box showing a connection to the data source from a URL.":::
 
 Select **OK**. Like before, Power BI Desktop inspects the webpage data and shows preview options in the **Navigator** dialog box. When you select a table, it displays a preview of the data.
 

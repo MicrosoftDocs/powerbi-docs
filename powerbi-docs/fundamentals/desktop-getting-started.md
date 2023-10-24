@@ -81,7 +81,7 @@ On the Power BI Desktop **Home** tab, select **Get Data** > **Web** to connect t
 
 In the **From Web** dialog box, paste an address about sunny locations into the **URL** field, and select **OK**.
 
-![Screenshot of Power B I Desktop showing the From Web dialog box.](media/desktop-getting-started/gettingstarted-8.png)
+![Screenshot of Power B I Desktop showing the From Web dialog box.](media/desktop-getting-started/getting-started-8.png)
 
 > [!NOTE]
 > The URL used in this example is fictitious, you can find your own data in various tables and sites on the web.
