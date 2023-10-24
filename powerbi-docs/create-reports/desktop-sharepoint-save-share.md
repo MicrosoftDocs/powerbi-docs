@@ -32,7 +32,7 @@ If you'd like to disable the preview for opening, saving, and sharing Power BI f
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-preview-settings.png" alt-text="Screenshot of settings to turn on preview features." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-preview-settings.png":::
 
-After saving your preference, restart Power BI Desktop. If the capability is turned on, you will see a **Share** button at the top right of Power BI Desktop. 
+After saving your preference, restart Power BI Desktop. If the capability is turned on, you see a **Share** button at the top right of Power BI Desktop. 
 
 **Sharing** files stored in OneDrive and SharePoint directly from Power BI Desktop only works when **both** of the following two statements are true:
 
@@ -57,7 +57,7 @@ Your files from OneDrive for Business and SharePoint are available for you to op
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-open-file.png" alt-text="Screenshot of OneDrive files in file menu." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-open-file.png":::
 
-Select a file stored in OneDrive or SharePoint to open it in Power BI Desktop. 
+Select the file to open it in Power BI Desktop.  
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-opened-report.png" alt-text="Screenshot of report opened from OneDrive or SharePoint" lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-opened-report.png":::
 
@@ -125,13 +125,13 @@ Learn more about how users can [view Power BI files in their browser](../collabo
 
 ### Collaborating on reports 
 
-When collaborating on reports with other coauthors, the best practice is to store files in a SharePoint document library where all coauthors have access. This allows all collaborators to open the report in Power BI Desktop directly from SharePoint, make edits, and easily save changes to the file in SharePoint.  
+When collaborating on reports with other coauthors, the best practice is to store files in a SharePoint document library where all coauthors have access. Working with files in SharePoint allows all collaborators to open the report in Power BI Desktop directly from SharePoint, make edits, and easily save changes to the file in SharePoint.  
 
-When files are stored in an individual’s OneDrive library other coauthors won’t be able to save changes to the OneDrive location unless they have edit access to the folder of the OneDrive file.  
+When files are stored in an individual’s OneDrive library other coauthors can't save changes to the OneDrive location unless they have edit access to the folder of the OneDrive file.  
 
-If sharing a report with a colleague is mainly for viewing purposes either OneDrive or SharePoint is a viable option.  
+If sharing a report with a colleague is mainly for viewing purposes, either OneDrive or SharePoint is a viable option.  
 
-When the ability to Open in App on a shared link is released, users will be able to make and save edits to reports stored in either OneDrive or SharePoint through taking the open in app action.  
+When the ability to Open in App on a shared link is available, users will be able to make and save edits to reports stored in either OneDrive or SharePoint through taking the open in app action.  
 
 ### File save load time
 
@@ -196,4 +196,4 @@ When you drag a Power BI file to a OneDrive or SharePoint location in the file s
 
 ### Unable to open document
 
-If you have signed-in to Power BI on multiple different accounts you can see files in the file menu that each account interacted with.  If you try to open one of the files that belongs to another account and receive an error, sign-in to the account that has access to the file and try again. 
+If you have signed-in to Power BI on multiple different accounts, you can see files in the file menu that each account interacted with.  If you try to open one of the files that belongs to another account and receive an error, sign-in to the account that has access to the file and try again. 
