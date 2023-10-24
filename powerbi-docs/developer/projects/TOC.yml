@@ -16,7 +16,7 @@
     - name: "Azure DevOps integration"
       href: projects-azdo.md
     - name: "Azure DevOps build pipelines"
-      href: projects-azdo-pipelines.md
+      href: projects-build-pipelines.md
   - name: External tools
     items:
     - name: External tools in Power BI Desktop
