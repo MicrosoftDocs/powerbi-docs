@@ -94,7 +94,7 @@ To create a new build pipeline:
 
    :::image type="content" source="./media/projects-build-pipelines/save-run.png" alt-text="Screenshot showing save and run selection.":::
 
-Azure DevOps runs the pipeline and start two build jobs in parallel:
+Azure DevOps runs the pipeline and starts two build jobs in parallel:
 
 :::image type="content" source="./media/projects-build-pipelines/set-up-pipeline.png" alt-text="Screenshot showing Azure DevOps building a pipeline.":::
 
