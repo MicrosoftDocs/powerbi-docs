@@ -52,7 +52,6 @@ The series includes usage scenarios that illustrate different ways that creators
 - [Content collaboration and delivery](powerbi-implementation-planning-usage-scenario-overview.md#content-collaboration-and-delivery-scenarios)
 - [Self-service BI](powerbi-implementation-planning-usage-scenario-overview.md#self-service-bi-scenarios)
 - [Content management and deployment](powerbi-implementation-planning-usage-scenario-overview.md#content-management-and-deployment-scenarios)
-- [Real-time](powerbi-implementation-planning-usage-scenario-overview.md#real-time-scenarios)
 - [Embedding and hybrid](powerbi-implementation-planning-usage-scenario-overview.md#embedding-and-hybrid-scenarios)
 
 ## Purpose
