@@ -112,7 +112,7 @@ The first task is to understand what success looks like for migrating an individ
     - Cost reduction in licensing cost year over year.
 
 > [!TIP]
-> The [Power BI activity log](../admin/service-admin-auditing.md) can be used as a source for measuring KPI progress.
+> The [Power BI activity log](../enterprise/service-admin-auditing.md) can be used as a source for measuring KPI progress.
 
 ## Prepare inventory of existing reports
 

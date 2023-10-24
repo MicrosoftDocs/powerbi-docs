@@ -94,7 +94,7 @@ To provide real-time controls, access policies and session policies work with Mi
 Redirection doesn't affect the user experience. However, the [URL for the Power BI service](/defender-cloud-apps/proxy-intro-aad#how-session-control-works) will change to _https://app.powerbi.com.mcas.ms_ once you've set up Microsoft Entra ID for conditional access app control with Power BI. Also, users will receive a notification when they sign in to the Power BI service that announces that the app is monitored by Defender for Cloud Apps.
 
 > [!IMPORTANT]
-> Access policies and session policies operate in real time. Other policy types in Defender for Cloud Apps involve a short delay in alerting. Most other types of DLP and auditing also experience latency, including [DLP for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi-override) and the [Power BI activity log](/power-bi/admin/service-admin-auditing).
+> Access policies and session policies operate in real time. Other policy types in Defender for Cloud Apps involve a short delay in alerting. Most other types of DLP and auditing also experience latency, including [DLP for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi-override) and the [Power BI activity log](/power-bi/enterprise/service-admin-auditing).
 
 ##### Access policies
 
@@ -137,7 +137,7 @@ It's also possible to control file uploads with session policies. However, typic
 
 [Activity policies](/defender-cloud-apps/user-activity-policies) in Defender for Cloud Apps don't operate in real time.
 
-You can set up an activity policy to check events recorded in the [Power BI activity log](/power-bi/admin/service-admin-auditing). The policy can act on a single activity, or it can act on repeated activities by a single user (when a specific activity occurs more than a set number of times within a set number of minutes).
+You can set up an activity policy to check events recorded in the [Power BI activity log](/power-bi/enterprise/service-admin-auditing). The policy can act on a single activity, or it can act on repeated activities by a single user (when a specific activity occurs more than a set number of times within a set number of minutes).
 
 You can use activity policies to monitor activity in the Power BI service in different ways. Here are some examples of what you can achieve.
 

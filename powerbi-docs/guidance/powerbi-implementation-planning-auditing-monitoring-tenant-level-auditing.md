@@ -498,7 +498,7 @@ You can use your preferred tool and your preferred language to send requests to 
 
 The [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-worldwide&preserve-view=true) (formerly the Microsoft 365 compliance center) includes a user interface that allows you to view and search the [audit logs](/microsoft-365/compliance/audit-log-search?view=o365-worldwide&preserve-view=true). The unified audit logs include Power BI, and all other services that support Microsoft 365 unified audit logs.
 
-The data captured in the unified audit log is the exact same data that's contained in the [Power BI activity log](/power-bi/admin/service-admin-auditing). When you do an audit log search in the Microsoft Purview compliance portal, it adds your request to the queue. It can take a few minutes (or longer, depending on the volume of data) for the data to be ready.
+The data captured in the unified audit log is the exact same data that's contained in the [Power BI activity log](/power-bi/enterprise/service-admin-auditing). When you do an audit log search in the Microsoft Purview compliance portal, it adds your request to the queue. It can take a few minutes (or longer, depending on the volume of data) for the data to be ready.
 
 Here are some common ways to use the audit log search tool. You can:
 
@@ -1060,7 +1060,7 @@ For information about which option to use, see [Choose APIs or PowerShell cmdlet
 > [!TIP]
 > For examples of how to access the Power BI activity log with PowerShell, see [Access the Power BI activity log](admin-activity-log.md).
 
-Power BI activity log data is available to all Power BI administrators, Power Platform administrators, and global administrators. The data can be accessed from the unified audit log, available to certain Exchange Online roles. For more information, see [Audit log requirements](/power-bi/admin/service-admin-auditing#audit-log-requirements).
+Power BI activity log data is available to all Power BI administrators, Power Platform administrators, and global administrators. The data can be accessed from the unified audit log, available to certain Exchange Online roles. For more information, see [Audit log requirements](/power-bi/enterprise/service-admin-auditing#audit-log-requirements).
 
 We recommend that you use the Power BI activity log when your intention is to only retrieve Power BI audit log records.
 
@@ -1124,7 +1124,7 @@ Here are some considerations to help you choose your source for user activity da
   - Your files will be simpler to work with when you always extract a full 24 hours at a time, which avoids partial day results.
   - You'll minimize the risk of missing some audit events. Usually, audit events arrive within 30 minutes. Occasionally some events can take up to 24 hours to arrive in the unified audit log.
 - **Do you need more than Power BI data?** Consider the most efficient way to access what you need.
-  - When you only need Power BI user activity data, use the [Power BI activity log](/power-bi/admin/service-admin-auditing).
+  - When you only need Power BI user activity data, use the [Power BI activity log](/power-bi/enterprise/service-admin-auditing).
   - When you need audit logs from multiple services, use the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) to access the unified audit log.
 - **Who will develop the solution?** Plan to invest some time to build out the solution. It can take significant effort to produce a production-ready script.
 
@@ -1257,7 +1257,7 @@ Here are some other attributes you might extract and store.
 - **Disabled users:** When a user leaves the organization, usually an administrator disables their account. You can create a process to check whether disabled users are workspace administrators or dataset owners.
 
 > [!TIP]
-> The Power BI [activity log](/power-bi/admin/service-admin-auditing) includes an event that records when a user signs up for a [trial license](/power-bi/fundamentals/service-self-service-signup-purchase-for-power-bi#information-about-power-bi-trials). You can combine that event with the user license data (sourced from Microsoft Entra ID) to produce a complete picture.
+> The Power BI [activity log](/power-bi/enterprise/service-admin-auditing) includes an event that records when a user signs up for a [trial license](/power-bi/fundamentals/service-self-service-signup-purchase-for-power-bi#information-about-power-bi-trials). You can combine that event with the user license data (sourced from Microsoft Entra ID) to produce a complete picture.
 
 ##### Retrieve users and groups data
 

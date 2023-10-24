@@ -494,7 +494,7 @@ However, highly regulated industries could have a requirement to restrict export
 Not all export formats support information protection. Unsupported formats, such as .csv, .xml, .mhtml, or .png files (available when using the [ExportToFile API](/power-bi/developer/embedded/export-to)) might be disabled in the Power BI tenant settings.
 
 > [!TIP]
-> We recommend that you restrict exporting capabilities only when you must meet specific regulatory requirements. In typical scenarios, we recommend that you use the [Power BI activity log](/power-bi/admin/service-admin-auditing) to identify which users are performing exports. You can then teach these users about more efficient and secure alternatives.
+> We recommend that you restrict exporting capabilities only when you must meet specific regulatory requirements. In typical scenarios, we recommend that you use the [Power BI activity log](/power-bi/enterprise/service-admin-auditing) to identify which users are performing exports. You can then teach these users about more efficient and secure alternatives.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 

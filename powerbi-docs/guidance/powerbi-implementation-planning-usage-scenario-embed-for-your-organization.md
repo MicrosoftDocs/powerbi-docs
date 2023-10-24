@@ -48,7 +48,7 @@ There are several reasons why you might embed Power BI content for your organiza
 
 - **Internal business intelligence portal:** You might want to create an internal business intelligence (BI) portal as a replacement for the Power BI service. That way, you can create a custom application that integrates content from Power BI and other BI tools.
 - **Internal app:** You might want to develop an intranet app that shows data visualizations. For example, an intranet site for a manufacturing department could show real-time visuals that provide up-to-date information about the production line.
-- **Customized logging:** You might want to log custom events to record Power BI content access and use, beyond what the [activity log](/power-bi/admin/service-admin-auditing) records.
+- **Customized logging:** You might want to log custom events to record Power BI content access and use, beyond what the [activity log](/power-bi/enterprise/service-admin-auditing) records.
 
 > [!TIP]
 > If you're looking to create a BI portal styled for your organization, you might be able to achieve that by simply adding [custom branding to the Power BI service](/power-bi/admin/service-admin-custom-branding).
@@ -107,7 +107,7 @@ Typically, a [data gateway](/power-bi/connect-data/service-gateway-onprem) is re
 
 ### System oversight
 
-The [activity log](/power-bi/admin/service-admin-auditing) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. Logged events will describe the consumption method as _Embedding for your organization_. There's presently no way to determine whether content was viewed in a no-code embedding experience in a custom application.
+The [activity log](/power-bi/enterprise/service-admin-auditing) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. Logged events will describe the consumption method as _Embedding for your organization_. There's presently no way to determine whether content was viewed in a no-code embedding experience in a custom application.
 
 ## Next steps
 
