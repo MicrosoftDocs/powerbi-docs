@@ -38,22 +38,22 @@ There are multiple ways to identify an executive sponsor.
 
 ### Top-down pattern
 
-An executive sponsor may be selected by a more senior executive. For example, the Chief Executive Officer (CEO) may hire a Chief Data Officer (CDO) or Chief Analytics Officer (CAO) to explicitly advance the organization's data culture objectives or lead digital transformation efforts. The CDO or CAO then becomes the ideal candidate to serve as the executive sponsor for Power BI (or analytics in general).
+An executive sponsor might be selected by a more senior executive. For example, the Chief Executive Officer (CEO) could hire a Chief Data Officer (CDO) or Chief Analytics Officer (CAO) to explicitly advance the organization's data culture objectives or lead digital transformation efforts. The CDO or CAO then becomes the ideal candidate to serve as the executive sponsor for Power BI (or analytics in general).
 
-Here's another example: The CEO may empower an existing executive, such as the Chief Financial Officer (CFO), because they have a good track record leading data and analytics in their organization. As the new executive sponsor, the CFO could then lead efforts to replicate the finance team's success to other areas of the organization.
+Here's another example: The CEO might empower an existing executive, such as the Chief Financial Officer (CFO), because they have a good track record leading data and analytics in their organization. As the new executive sponsor, the CFO could then lead efforts to replicate the finance team's success to other areas of the organization.
 
 > [!NOTE]
 > Having an executive sponsor at the C-level is an excellent leading indicator. It indicates that the organization recognizes the importance of data as a strategic asset and is advancing its data culture in a positive direction.
 
 ### Bottom-up pattern
 
-Alternatively, a candidate for the executive sponsor role could emerge due to the success they've experienced with creating BI solutions. For example, a business unit within the organization, such as Finance, has organically achieved great success with their use of data and analytics. Essentially, they've successfully formed their own data culture on a small scale. A junior-level leader who hasn't reached the executive level (such as a director) may then grow into the executive sponsor role by sharing successes with other business units across the organization.
+Alternatively, a candidate for the executive sponsor role could emerge due to the success they've experienced with creating BI solutions. For example, a business unit within the organization, such as Finance, has organically achieved great success with their use of data and analytics. Essentially, they've successfully formed their own data culture on a small scale. A junior-level leader who hasn't reached the executive level (such as a director) might then grow into the executive sponsor role by sharing successes with other business units across the organization.
 
-The bottom-up approach is more likely to occur in smaller organizations. It may be because the return on investment and strategic imperative of a data culture (or digital transformation) isn't an urgent priority for C-level executives.
+The bottom-up approach is more likely to occur in smaller organizations. It might be because the return on investment and strategic imperative of a data culture (or digital transformation) isn't an urgent priority for C-level executives.
 
 The success for a leader using the bottom-up pattern depends on being recognized by senior leadership.
 
-With a bottom-up approach, the sponsor may be able to make some progress, but they won't have formal authority over other business units. Without clear authority, it's only a matter of time until challenges occur that are beyond their level of authority. For this reason, the top-down approach has a higher probability of success. However, initial successes with a bottom-up approach can convince leadership to increase their level of sponsorship, which may start a healthy competition across other business units in the adoption of BI.
+With a bottom-up approach, the sponsor might be able to make some progress, but they won't have formal authority over other business units. Without clear authority, it's only a matter of time until challenges occur that are beyond their level of authority. For this reason, the top-down approach has a higher probability of success. However, initial successes with a bottom-up approach can convince leadership to increase their level of sponsorship, which might start a healthy competition across other business units in the adoption of BI.
 
 ## Considerations and key actions
 
@@ -93,11 +93,11 @@ The following maturity levels will help you assess your current state of executi
 
 | **Level** | **State of executive support** |
 | --- | --- |
-| 100: Initial | &bull; There may be awareness from at least one executive about the strategic importance of how analytics can advance the organization's data culture goals. However, neither a sponsor nor an executive-level decision-maker is identified. |
-| 200: Repeatable | &bull; Informal executive support exists for analytics through informal channels and relationships. |
-| 300: Defined | &bull; An executive sponsor is identified. Expectations are clear for the role. |
-| 400: Capable | &bull; An executive sponsor is well established with someone with sufficient authority across organizational boundaries. </br></br>&bull; A healthy and productive partnership exists between the executive sponsor, COE, business units, and IT. The teams are working towards shared data culture goals. |
-| 500: Efficient | &bull; The executive sponsor is highly engaged. They're a key driver for advancing the organization's data culture vision. </br></br>&bull; The executive sponsor is involved with ongoing organizational adoption improvements. KPIs (key performance indicators) or OKRs (objectives and key results) are used to track data culture goals and the results of BI efforts. |
+| 100: Initial | &bull;&nbsp;There might be awareness from at least one executive about the strategic importance of how analytics can advance the organization's data culture goals. However, neither a sponsor nor an executive-level decision-maker is identified. |
+| 200: Repeatable | &bull;&nbsp;Informal executive support exists for analytics through informal channels and relationships. |
+| 300: Defined | &bull;&nbsp;An executive sponsor is identified. Expectations are clear for the role. |
+| 400: Capable | &bull;&nbsp;An executive sponsor is well established with someone with sufficient authority across organizational boundaries. <br/><br/>&bull;&nbsp;A healthy and productive partnership exists between the executive sponsor, COE, business units, and IT. The teams are working towards shared data culture goals. |
+| 500: Efficient | &bull;&nbsp;The executive sponsor is highly engaged. They're a key driver for advancing the organization's data culture vision. <br/><br/>&bull;&nbsp;The executive sponsor is involved with ongoing organizational adoption improvements. KPIs (key performance indicators) or OKRs (objectives and key results) are used to track data culture goals and the results of BI efforts. |
 
 ## Next steps
 

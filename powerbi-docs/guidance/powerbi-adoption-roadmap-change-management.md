@@ -90,7 +90,7 @@ Change management can be a significant undertaking. Taking an incremental approa
 The following steps outline how you can incrementally address change.
 
 1. **Define what's changing:** Describe the change by outlining the before and after states. Clarify the specific parts of the process or situation that you'll change, remove, or introduce. Justify why this change is necessary, and when it should occur.
-1. **Describe the impact of the change:** For each of these changes, estimate the business impact. Identify which processes, teams, or individuals the change affects, and how disruptive it will be for them. Also consider any downstream effects the change has on other dependent solutions or processes. Downstream effects may result in other changes. Additionally, consider how long the situation remained the same before it was changed. Changes to longer-standing processes tend to have a higher impact, as preferences and dependencies arise over time.
+1. **Describe the impact of the change:** For each of these changes, estimate the business impact. Identify which processes, teams, or individuals the change affects, and how disruptive it will be for them. Also consider any downstream effects the change has on other dependent solutions or processes. Downstream effects might result in other changes. Additionally, consider how long the situation remained the same before it was changed. Changes to longer-standing processes tend to have a higher impact, as preferences and dependencies arise over time.
 1. **Identify priorities:** Focus on the changes with the highest potential impact. For each change, outline a more detailed description of the changes and how it will affect people.
 1. **Plan how to incrementally implement the change:** Identify whether any high-impact changes can be broken into stages or parts. For each part, describe how it might be incrementally implemented in phases to limit its impact. Determine whether there are any constraints or dependencies (such as when changes can be made, or by whom).
 1. **Create an action plan for each phase:** Plan the actions you will take to implement and support each phase of the change. Also, plan for how you can mitigate disruption in high-impact phases. Be sure to include a rollback plan in your action plan, whenever possible.
@@ -102,7 +102,7 @@ When you plan to mitigate the impact of changes on Power BI adoption, consider t
 
 ### Effectively communicate change
 
-Ensure that you clearly and concisely describe planned changes for the user community. Important communication should be originate from the executive sponsor, or another leader with relevant authority. Be sure to communicate the following details.
+Ensure that you clearly and concisely describe planned changes for the user community. Important communication should  originate from the executive sponsor, or another leader with relevant authority. Be sure to communicate the following details.
 
 - **What's changing:** What the situation is now and what it will be after the change.
 - **Why it's changing:** The benefit and value of the change for the audience.
@@ -117,7 +117,7 @@ Consider maintaining a history of communications in your [centralized portal](po
 
 ### Plan training and support
 
-Changes to tools, processes, and solutions typically require training to use them effectively. Additionally, extra support may be required to address questions or respond to support requests.
+Changes to tools, processes, and solutions typically require training to use them effectively. Additionally, extra support might be required to address questions or respond to support requests.
 
 Here are some actions you can take to plan for training and support.
 
@@ -197,11 +197,11 @@ The following maturity levels will help you assess your current state of change 
 
 | **Level** | **State of change management** |
 | --- | --- |
-| **100: Initial** | &bull; Change is usually reactive, and it's also poorly communicated and communicated. </br></br>&bull; The purpose or benefits of change aren't well understood, and resistance to change causes conflict and disruption. </br></br>&bull; No clear teams or roles are responsible for managing change for data initiatives. |
-| **200: Repeatable** | &bull; Executive leadership and decision makers recognize the need for change management in BI projects and initiatives. </br></br>&bull; Some efforts are taken to plan or communicate change, but they're inconsistent and often reactive. Resistance to change is still common. Change often disrupts existing processes and tools. |
-| **300: Defined** | &bull; Formal change management plans or roles are in place. These plans include communication tactics and training, but they're not consistently or reliably followed. Change occasionally disrupts existing processes and tools. </br></br>&bull; Successful change management is championed by key individuals that bridge organizational boundaries. |
-| **400: Capable** | &bull; Empathy and effective communication are integral to change management strategies. </br></br>&bull; Change management efforts are owned by particular roles or teams, and effective communication results in a clear understanding of the purpose and benefits of change. Change rarely interrupts existing processes and tools. |
-| **500: Efficient** | &bull; Change is an integral part of the organization. People in the organization understand the inevitability of change, and see it as a source for momentum instead of disruption. Change almost never unnecessarily interrupts existing processes or tools. </br></br>&bull; Systematic processes address change as a challenge of people and not processes. |
+| **100: Initial** | &bull;&nbsp;Change is usually reactive, and it's also poorly communicated and communicated. <br/><br/>&bull;&nbsp;The purpose or benefits of change aren't well understood, and resistance to change causes conflict and disruption. <br/><br/>&bull;&nbsp;No clear teams or roles are responsible for managing change for data initiatives. |
+| **200: Repeatable** | &bull;&nbsp;Executive leadership and decision makers recognize the need for change management in BI projects and initiatives. <br/><br/>&bull;&nbsp;Some efforts are taken to plan or communicate change, but they're inconsistent and often reactive. Resistance to change is still common. Change often disrupts existing processes and tools. |
+| **300: Defined** | &bull;&nbsp;Formal change management plans or roles are in place. These plans include communication tactics and training, but they're not consistently or reliably followed. Change occasionally disrupts existing processes and tools. <br/><br/>&bull;&nbsp;Successful change management is championed by key individuals that bridge organizational boundaries. |
+| **400: Capable** | &bull;&nbsp;Empathy and effective communication are integral to change management strategies. <br/><br/>&bull;&nbsp;Change management efforts are owned by particular roles or teams, and effective communication results in a clear understanding of the purpose and benefits of change. Change rarely interrupts existing processes and tools. |
+| **500: Efficient** | &bull;&nbsp;Change is an integral part of the organization. People in the organization understand the inevitability of change, and see it as a source for momentum instead of disruption. Change almost never unnecessarily interrupts existing processes or tools. <br/><br/>&bull;&nbsp;Systematic processes address change as a challenge of people and not processes. |
 
 ## Next steps
 

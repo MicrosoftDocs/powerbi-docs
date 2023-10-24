@@ -24,7 +24,7 @@ The focus of Stage 3 is to address unknowns and mitigate risks as early as possi
 The output from this stage is a Power BI solution that's narrow in scope, addresses the initial open questions, and is ready for additional work in [Stage 4](powerbi-migration-create-validate-content.md) to make it production-ready.
 
 > [!IMPORTANT]
-> We don't intend for the POC to be disposable work. Rather, we expect it to be an early iteration of the production-ready solution. In your organization, you may refer to this activity as a prototype, pilot, mockup, quick start, or minimally viable product (MVP). Conducting a POC isn't always necessary and it could even happen informally.
+> We don't intend for the POC to be disposable work. Rather, we expect it to be an early iteration of the production-ready solution. In your organization, you might refer to this activity as a prototype, pilot, mockup, quick start, or minimally viable product (MVP). Conducting a POC isn't always necessary and it could even happen informally.
 
 > [!TIP]
 > Most of the topics discussed in this article also apply to a standard Power BI implementation project. As your organization becomes more experienced with Power BI, the need to conduct POCs diminishes. However, due to the fast release cadence with Power BI and the continual introduction of new features, you might regularly conduct technical POCs for learning purposes.
@@ -46,7 +46,7 @@ When conducting a POC, focus on the following goals:
 
 The POC scope is dependent on what the unknowns are, or which goals need to be validated with colleagues. To reduce complexity, keep a POC as narrow as possible in terms of scope.
 
-Most often with a migration, requirements are well known because there's an existing solution to start from. However, depending on the extent of improvements to be made or existing Power BI skills, a POC still provides significant value. In addition, [rapid prototyping](powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md) with consumer feedback may be appropriate to quickly clarify requirements—especially if enhancements are made.
+Most often with a migration, requirements are well known because there's an existing solution to start from. However, depending on the extent of improvements to be made or existing Power BI skills, a POC still provides significant value. In addition, [rapid prototyping](powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md) with consumer feedback could be appropriate to quickly clarify requirements—especially if enhancements are made.
 
 > [!IMPORTANT]
 > Even if a POC includes only a subset of data, or includes only limited visuals, it's often important to take it from start to finish. That is, from development in Power BI Desktop to deployment to a development workspace in the Power BI service. It's the only way to fully accomplish the POC objectives. It's particularly true when the Power BI service must deliver critical functionality that you haven't used before, like a DirectQuery dataset using single sign-on. During the POC, focus your efforts on aspects you're uncertain about or need to verify with others.
@@ -55,13 +55,13 @@ Most often with a migration, requirements are well known because there's an exis
 
 Power BI can be used as a *model-based tool* or as a *report-based tool*. A model-based solution involves developing a data model, whereas a report-based solution connects to an already-deployed data model.
 
-Due to its extreme flexibility, there are some aspects about Power BI that may be fundamentally different from the legacy BI platform you're migrating from.
+Due to its extreme flexibility, there are some aspects about Power BI that might be fundamentally different from the legacy BI platform you're migrating from.
 
 ### Consider redesigning the data architecture
 
-If you're migrating from a legacy BI platform that has its own semantic layer, then the creation of an Import dataset is likely to be a good option. Power BI functions best with a [star schema](star-schema.md) table design. Therefore, if the legacy semantic layer is not a star schema, it's possible that some redesign may be required to fully benefit from Power BI. Putting effort into defining a semantic layer adhering to star schema design principles (including relationships, commonly used measures, and friendly organizational terminology) serves as an excellent starting point for self-service report authors.
+If you're migrating from a legacy BI platform that has its own semantic layer, then the creation of an Import dataset is likely to be a good option. Power BI functions best with a [star schema](star-schema.md) table design. Therefore, if the legacy semantic layer is not a star schema, it's possible that some redesign might be required to fully benefit from Power BI. Putting effort into defining a semantic layer adhering to star schema design principles (including relationships, commonly used measures, and friendly organizational terminology) serves as an excellent starting point for self-service report authors.
 
-If you're migrating from a legacy BI platform where reports reference relational data sources using SQL queries or stored procedures, and if you're planning to use Power BI in [DirectQuery mode](../connect-data/desktop-use-directquery.md), you may be able to achieve close to a one-to-one migration of the data model.
+If you're migrating from a legacy BI platform where reports reference relational data sources using SQL queries or stored procedures, and if you're planning to use Power BI in [DirectQuery mode](../connect-data/desktop-use-directquery.md), you might be able to achieve close to a one-to-one migration of the data model.
 
 > [!CAUTION]
 > If you see the creation of lots of Power BI Desktop files comprising a single imported table, it's usually an indicator that the design isn't optimal. Should you notice this situation, investigate whether the use of [shared datasets](../connect-data/service-datasets-across-workspaces.md) that are created using a [star schema](star-schema.md) design could achieve a better result.
@@ -78,7 +78,7 @@ In the BI industry, a dashboard is a collection of visuals that displays key met
 
 ### Focus on the big picture when recreating visuals
 
-Every BI tool has its strengths and focus areas. For this reason, the exact report visuals you depended on in a legacy BI platform may not have a close equivalent in Power BI.
+Every BI tool has its strengths and focus areas. For this reason, the exact report visuals you depended on in a legacy BI platform might not have a close equivalent in Power BI.
 
 When recreating report visuals, focus more on the big picture business questions that are being addressed by the report. It removes the pressure to replicate the design of every visual in precisely the same way. While content consumers appreciate consistency when using migrated reports, it's important not to get caught up in time-consuming debates about small details.
 
