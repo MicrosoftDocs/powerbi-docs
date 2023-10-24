@@ -15,7 +15,7 @@
       href: projects-git.md
     - name: "Azure DevOps integration"
       href: projects-azdo.md
-    - name: "Azure DevOps pipelines"
+    - name: "Azure DevOps build pipelines"
       href: projects-azdo-pipelines.md
   - name: External tools
     items:

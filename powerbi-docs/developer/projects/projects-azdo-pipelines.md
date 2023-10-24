@@ -1,5 +1,5 @@
 ---
-title: Azure DevOps pipeline integration with Power BI Desktop projects
+title: Azure DevOps build pipeline integration with Power BI Desktop projects
 description: Learn about Azure Pipelines and how to use them with Desktop projects.
 author: mberdugo
 ms.author: monaberdugo
@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.date: 10/16/2023
 ---
 
-# Power BI Project (PBIP) and Azure DevOps Pipelines
+# Power BI Project (PBIP) and Azure DevOps build pipelines for Continuous Integration
 
 Combining Fabric Git Integration with Azure DevOps, enables you to connect a workspace to a branch in an Azure DevOps repository and automatically synchronizes between them.
 
