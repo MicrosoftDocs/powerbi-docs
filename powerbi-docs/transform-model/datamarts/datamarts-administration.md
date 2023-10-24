@@ -78,10 +78,11 @@ The following limitations should be considered when using datamarts:
 * Datamarts only support Microsoft Azure Active Directory (Azure AD) and do *not* support managed identities or service principals at this time.
 * Beginning February 2023, datamarts support any SQL client.
 * Datamarts aren't currently available in the following Azure regions:
-    * Sweden Central and South
     * West India
     * UAE Central 
-    * Japan West 
+    * Poland
+    * Israel
+    * Italy
 
 Datamarts are supported in all other Azure regions.
 
