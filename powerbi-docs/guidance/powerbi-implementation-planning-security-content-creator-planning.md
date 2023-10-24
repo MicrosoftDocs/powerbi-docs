@@ -17,7 +17,7 @@ ms.date: 12/12/2022
 This security planning article describes strategies for content creators who are responsible for creating datasets, dataflows, datamarts, reports, or dashboards. It's primarily targeted at:
 
 - **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization.
-- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They may need to collaborate with Power BI administrators, information security teams, and other relevant teams.
+- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
 - **Content creators and owners:** Self-service BI creators who need to create, publish, secure, and manage content that others consume.
 
 The series of articles is intended to expand upon the content in the [Power BI security white paper](whitepaper-powerbi-security.md). While the Power BI security white paper focuses on key technical topics such as authentication, data residency, and network isolation, the primary goal of the series is to provide you with considerations and decisions to help you plan for security and privacy.
@@ -152,7 +152,7 @@ The _Request access_ message reads: _For standard sales reporting of MTD/QTD/YTD
 
 There are three tenant settings related to discovery.
 
-- The _Discover content_ tenant setting allows Power BI administrators to set which groups of users are allowed to discover data. It's primarily targeted at report creators who may need to locate existing datasets when creating reports. It's also useful for dataset creators who might look for existing data that they can use in their composite model development. While it's possible to set it for specific security groups, it's a good idea to enable the setting for the entire organization. The discovery setting on individual datasets and dataflows will control what's discoverable. Less commonly, you might consider restricting this capability only to approved content creators.
+- The _Discover content_ tenant setting allows Power BI administrators to set which groups of users are allowed to discover data. It's primarily targeted at report creators who might need to locate existing datasets when creating reports. It's also useful for dataset creators who might look for existing data that they can use in their composite model development. While it's possible to set it for specific security groups, it's a good idea to enable the setting for the entire organization. The discovery setting on individual datasets and dataflows will control what's discoverable. Less commonly, you might consider restricting this capability only to approved content creators.
 - The _Make certified content discoverable_ tenant setting allows Power BI administrators to set which groups can set content to be discoverable (when they also have permission to edit the item as well as permission to certify content, which is granted by the _Certification_ tenant setting). The ability to certify content should be tightly controlled. In most cases, the same users who are allowed to certify content should be allowed to set it as discoverable. In some situations, you might want to restrict this capability only to approved data creators.
 - The _Make promoted content discoverable_ tenant setting allows Power BI administrators to set which groups can set the content as discoverable (when they also have permissions to edit the data). Because the ability to promote content is open to all content creators, in most cases, this capability should be available to all users. Less commonly, you might consider restricting this capability to only approved content creators.
 
@@ -175,7 +175,7 @@ A user can request access to content in two ways.
 - **For content consumers:** A user receives a link to an existing report or app in the Power BI service. To view the item, the consumer can select the _Request access_ button. For more information, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#request-access-workflow-for-consumers) article.
 - **For content creators:** The user discovers a dataset or datamart in the data hub. To create a new report or composite model based on the existing data, the content creator can select the _Request access_ button. This experience is the focus of this section.
 
-By default, a request for access to a dataset or a datamart goes to the [owner](/power-bi/connect-data/service-datasets-build-permissions#configure-how-users-request-build-permission). The owner is the user who last scheduled data refresh or input credentials. Relying on one user to process access requests might be acceptable for team datasets. However, that may not be practical or reliable.
+By default, a request for access to a dataset or a datamart goes to the [owner](/power-bi/connect-data/service-datasets-build-permissions#configure-how-users-request-build-permission). The owner is the user who last scheduled data refresh or input credentials. Relying on one user to process access requests might be acceptable for team datasets. However, that might not be practical or reliable.
 
 Instead of relying on one owner, you can define [custom instructions](/power-bi/connect-data/service-datasets-build-permissions#changing-the-access-request-behavior) that are presented to users when they request access to a dataset or datamart. Custom instructions are helpful when:
 
@@ -248,7 +248,7 @@ Take care to ensure that only trusted and reliable individuals are workspace adm
 
 We recommend that there are at least two administrators so that one serves as a backup should the primary administrator be unavailable. A workspace that doesn't have an administrator is known as an _orphaned workspace_. The orphaned status occurs when a user leaves the organization and there's no alternative administrator assigned to the workspace. For more information about how to detect and rectify orphaned workspaces, see the [View workspaces](/power-bi/admin/service-admin-portal-workspaces) article.
 
-Ideally, you should be able to determine who's responsible for the workspace content by who the workspace administrators and members are (and the contacts specified for the workspace). However, some organizations adopt a [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) strategy that restricts workspace creation to specific users or groups. They typically have an established [workspace creation process](powerbi-implementation-planning-workspaces-tenant-level-planning.md#workspace-creation-process) that may be managed by the IT department. In this case, the workspace administrators may be the IT department rather than the users who directly create and publish the content.
+Ideally, you should be able to determine who's responsible for the workspace content by who the workspace administrators and members are (and the contacts specified for the workspace). However, some organizations adopt a [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) strategy that restricts workspace creation to specific users or groups. They typically have an established [workspace creation process](powerbi-implementation-planning-workspaces-tenant-level-planning.md#workspace-creation-process) that is managed by the IT department. In this case, the workspace administrators would be the IT department rather than the users who directly create and publish the content.
 
 #### Workspace member
 
@@ -287,7 +287,7 @@ Consider an example where the following actions are taken to set up a new worksp
 
 The previous example shows an effective way to allow a decentralized business unit the ability to act independently. It also shows the [principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access).
 
-For governed content, or critical content that's more tightly managed, it's a best practice to assign groups rather than individual user accounts to workspace roles. That way, you can manage the group membership separately from the workspace. However, when you assign groups to roles, it's possible that users may become assigned to multiple workspace roles (because the user belongs to multiple groups). In that case, their effective permissions are based on the highest role that they're assigned to. For more considerations, see [Strategy for using groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
+For governed content, or critical content that's more tightly managed, it's a best practice to assign groups rather than individual user accounts to workspace roles. That way, you can manage the group membership separately from the workspace. However, when you assign groups to roles, it's possible that users become assigned to multiple workspace roles (because the user belongs to multiple groups). In that case, their effective permissions are based on the highest role that they're assigned to. For more considerations, see [Strategy for using groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
 
 When a workspace is co-owned by multiple individuals or teams, it can make management of the content complicated. Try to avoid multi-team ownership scenarios by separating out workspaces. That way, responsibilities are clear and role assignments are straightforward to set up.
 
@@ -308,7 +308,7 @@ There are two variations to the four workspace roles (described previously).
 > [!div class="checklist"]
 > - **Create a responsibility matrix:** Map out who is expected to handle each function when creating, maintaining, publishing, securing, and supporting content. Use this information when planning your workspace roles.
 > - **Decide on your strategy for assigning workspace roles for content creators:** Determine which users should be an administrator, member, or contributor, and in what circumstances (such as job role or subject area). If there are mismatches that cause a security concern, reconsider how your workspaces could be better organized.
-> - **Determine how security groups versus individuals should be used for workspace roles:** Determine the use cases and purposes you'll need to use groups. Be specific about when security may be applied by using user accounts versus when a group is required or preferred.
+> - **Determine how security groups versus individuals should be used for workspace roles:** Determine the use cases and purposes you'll need to use groups. Be specific about when security should be applied by using user accounts versus when a group is required or preferred.
 > - **Provide guidance for content creators about managing workspace roles:** Include documentation for content creators about how to manage workspace roles. Publish this information to your centralized portal and training materials.
 > - **Set up and test workspace role assignments:** Verify that content creators have the functionality they need for editing and publishing content.
 
@@ -316,7 +316,7 @@ There are two variations to the four workspace roles (described previously).
 
 Content creators who are workspace administrators or members can create and publish a Power BI app.
 
-A workspace administrator may also specify a setting in the workspace which [allows workspace contributors to update the app](/power-bi/collaborate-share/service-create-the-new-workspaces#allow-contributors-to-update-the-app). It's a variation to workspace role security because it grants contributors one other permission they wouldn't normally have. This setting is set on a per-workspace basis.
+A workspace administrator can also specify a setting in the workspace which [allows workspace contributors to update the app](/power-bi/collaborate-share/service-create-the-new-workspaces#allow-contributors-to-update-the-app). It's a variation to workspace role security because it grants contributors one other permission they wouldn't normally have. This setting is set on a per-workspace basis.
 
 > [!TIP]
 > For more information about delivering content to read-only consumers, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md) article. This article includes information about app permissions for app consumers, including audiences for the app.
@@ -331,7 +331,7 @@ A workspace administrator may also specify a setting in the workspace which [all
 
 ### Data source permissions
 
-When a data creator starts a new project, permissions required to access external data sources are one of their first security-related considerations. They may also need guidance on other data source related matters, including privacy levels, native database queries, and custom connectors.
+When a data creator starts a new project, permissions required to access external data sources are one of their first security-related considerations. They might also need guidance on other data source related matters, including privacy levels, native database queries, and custom connectors.
 
 #### Access to data source
 
@@ -381,7 +381,7 @@ There are three privacy levels.
 
 When combining queries from different data sources, it's important that you set the correct privacy levels. When privacy levels are set correctly, there's the potential for data from one data source to be transmitted to another data source to efficiently query data.
 
-Consider a scenario where a dataset creator has two data sources: an Excel workbook and a table in an Azure SQL Database. They want to filter the data in the Azure SQL Database table by using a value sourced from the Excel workbook. The most efficient way for Power Query to generate a SQL statement for the Azure SQL Database is to apply a WHERE clause to perform the necessary filtering. However, that SQL Statement will contain a WHERE clause predicate with a value sourced from the Excel workbook. If the Excel workbook contains sensitive data, it may represent a security breach because the database administrator could view the SQL statement by using a tracing tool. While less efficient, the alternative is for the Power Query mashup engine to download the entire result set of the database table and perform the filtering itself in the Power BI service. This approach will be less efficient and slow, but secure.
+Consider a scenario where a dataset creator has two data sources: an Excel workbook and a table in an Azure SQL Database. They want to filter the data in the Azure SQL Database table by using a value sourced from the Excel workbook. The most efficient way for Power Query to generate a SQL statement for the Azure SQL Database is to apply a WHERE clause to perform the necessary filtering. However, that SQL Statement will contain a WHERE clause predicate with a value sourced from the Excel workbook. If the Excel workbook contains sensitive data, it could represent a security breach because the database administrator could view the SQL statement by using a tracing tool. While less efficient, the alternative is for the Power Query mashup engine to download the entire result set of the database table and perform the filtering itself in the Power BI service. This approach will be less efficient and slow, but secure.
 
 Privacy levels can be set for each data source:
 
@@ -410,7 +410,7 @@ Developers can use the [Power Query SDK](/power-query/installingsdk) to create _
 
 There's a Power BI Desktop [data extension security option](/power-bi/connect-data/desktop-connector-extensibility) that restricts the use of non-certified connectors. By default, an error is raised when an attempt is made to load a non-certified connector. By setting this option to allow non-certified connectors, custom connectors will load without validation or warning.
 
-We recommend that you keep your data extension security level at the higher level, which prevents loading of non-certified code. However, there may be cases where you want to load specific connectors, perhaps connectors that you've developed, or connectors provided to you by a trusted consultant or vendor outside the Microsoft certification path.
+We recommend that you keep your data extension security level at the higher level, which prevents loading of non-certified code. However, there might be cases where you want to load specific connectors, perhaps connectors that you've developed, or connectors provided to you by a trusted consultant or vendor outside the Microsoft certification path.
 
 > [!NOTE]
 > Developers of in-house-developed connectors can take steps to sign a connector with a certificate, allowing you to use the connector without the need to change your security settings. For more information, see [Trusted third-party connectors](/power-bi/connect-data/desktop-trusted-third-party-connectors).
@@ -515,7 +515,7 @@ For RLS and OLS targeted at other report creators, see data security in the [Rep
 
 Power BI datasets can connect to other datasets in a process known as _chaining_, which are connections to upstream datasets. For more information, see [Using DirectQuery for Power BI datasets and Analysis Services](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services#chaining).
 
-The _Allow DirectQuery connections to Power BI datasets_ tenant setting allows Power BI administrators to set up which groups of content creators can create chained datasets. If you don't want to restrict dataset creators from chaining datasets, you can leave this setting enabled for the entire organization and rely on workspace access and dataset permissions. In some cases, you may consider restricting this capability to approved content creators.
+The _Allow DirectQuery connections to Power BI datasets_ tenant setting allows Power BI administrators to set up which groups of content creators can create chained datasets. If you don't want to restrict dataset creators from chaining datasets, you can leave this setting enabled for the entire organization and rely on workspace access and dataset permissions. In some cases, you might consider restricting this capability to approved content creators.
 
 > [!NOTE]
 > As a dataset creator, you can restrict chaining to your dataset. It's done by enabling the _Discourage DirectQuery connection to this dataset_ option in Power BI Desktop. For more information, see [Manage DirectQuery connections to a published dataset](/power-bi/connect-data/desktop-discourage-directquery-connections-to-dataset#discourage-directquery-connections-to-a-dataset-using-power-bi-desktop).
@@ -524,7 +524,7 @@ The _Allow DirectQuery connections to Power BI datasets_ tenant setting allows P
 
 In some situations, you might want to execute a DAX query by using the Power BI REST API. For example, you might want to perform data quality validations. For more information, see [Datasets - Execute Queries](/rest/api/power-bi/datasets/execute-queries).
 
-The _Dataset Execute Queries REST API_ tenant setting allows Power BI administrators to set which groups of users can send DAX queries by using the Power BI REST API. In most cases, you can leave this setting enabled for the entire organization and rely on workspace access and dataset permissions. In some cases, you may consider restricting this capability to approved content creators.
+The _Dataset Execute Queries REST API_ tenant setting allows Power BI administrators to set which groups of users can send DAX queries by using the Power BI REST API. In most cases, you can leave this setting enabled for the entire organization and rely on workspace access and dataset permissions. In some cases, you might consider restricting this capability to approved content creators.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -555,9 +555,9 @@ Unlike datasets, there isn't a Write permission for reports. To support report c
 
 Report creators must have Read and Build permissions on the datasets that their reports will use, which includes [chained datasets](#chained-datasets). That permission can be granted explicitly on the individual datasets, or it can be granted implicitly for workspace datasets when the report creator is a workspace administrator, member, or contributor.
 
-The _Use datasets across workspaces_ tenant setting allows Power BI administrators to set up which groups of users can create reports that use datasets located in other workspaces. This setting is targeted at dataset and report creators. Usually, we recommend that you leave this setting enabled for the entire organization and relying on workspace access settings and dataset permissions. That way, you can encourage the use of existing datasets. In some cases, you may consider restricting this capability only to approved content creators.
+The _Use datasets across workspaces_ tenant setting allows Power BI administrators to set up which groups of users can create reports that use datasets located in other workspaces. This setting is targeted at dataset and report creators. Usually, we recommend that you leave this setting enabled for the entire organization and relying on workspace access settings and dataset permissions. That way, you can encourage the use of existing datasets. In some cases, you might consider restricting this capability only to approved content creators.
 
-There's also the _Allow live connections_ tenant setting, which allows Power BI administrators to set up which groups of users can create live connections to datasets in Power BI Desktop or Excel. It's targeted specifically at report creators, and it also requires that they're granted Read and Build permission on the dataset that the report will use. We recommend that you leave this setting enabled for the entire organization and rely on workspace access and dataset permissions. That way, you can encourage the use of existing datasets. In some cases, you may consider restricting this capability only to approved content creators.
+There's also the _Allow live connections_ tenant setting, which allows Power BI administrators to set up which groups of users can create live connections to datasets in Power BI Desktop or Excel. It's targeted specifically at report creators, and it also requires that they're granted Read and Build permission on the dataset that the report will use. We recommend that you leave this setting enabled for the entire organization and rely on workspace access and dataset permissions. That way, you can encourage the use of existing datasets. In some cases, you might consider restricting this capability only to approved content creators.
 
 #### Data security for underlying dataset
 
@@ -710,7 +710,7 @@ Consistent with other content types in the Power BI service, the per-item permis
 
 #### Metric-level permissions
 
-Each scorecard has a set of [metric-level permissions](/power-bi/create-reports/service-goals-set-permissions) that you can set up in the scorecard settings. The metric-level permissions (within a scorecard) may be granted differently from the workspace or the scorecard (per-item) permissions.
+Each scorecard has a set of [metric-level permissions](/power-bi/create-reports/service-goals-set-permissions) that you can set up in the scorecard settings. The metric-level permissions (within a scorecard) can be granted differently from the workspace or the scorecard (per-item) permissions.
 
 The metric-level roles allow you to set:
 
@@ -800,7 +800,7 @@ The _Enable Power BI add-in for PowerPoint_ tenant setting allows Power BI admin
 > [!NOTE]
 > For this capability to work, users must install the Power BI add-in for PowerPoint. To use the add-in, users must either have access to the Office add-in store, or the add-in must be made available to them as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins). For more information, see [Power BI add-in for PowerPoint](/power-bi/collaborate-share/service-power-bi-powerpoint-add-in-about).
 
-Educate report creators to be cautious about where they save their PowerPoint presentations and who they share them with. That's because an image of the Power BI report visuals is shown to users when they open the presentation. That image is captured from the last time the PowerPoint file was connected. However, the image may inadvertently reveal data that the receiving user doesn't have permission to see.
+Educate report creators to be cautious about where they save their PowerPoint presentations and who they share them with. That's because an image of the Power BI report visuals is shown to users when they open the presentation. That image is captured from the last time the PowerPoint file was connected. However, the image could inadvertently reveal data that the receiving user doesn't have permission to see.
 
 > [!NOTE]
 > The image can be useful when the receiving user doesn't yet have the add-in, or until the add-in connects to the Power BI service to retrieve data. Once the user connects, only data the user can see (enforcing any RLS) is retrieved from Power BI.

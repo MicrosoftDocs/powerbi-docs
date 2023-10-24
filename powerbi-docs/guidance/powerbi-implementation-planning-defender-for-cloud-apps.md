@@ -17,7 +17,7 @@ ms.date: 09/15/2022
 This article describes the planning activities related to implementing Defender for Cloud Apps as it relates to monitoring Power BI. It's targeted at:
 
 - **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators need to collaborate with information security and other relevant teams.
-- **Center of Excellence, IT, and BI teams:** Others who are responsible for overseeing Power BI in the organization. They may need to collaborate with Power BI administrators, information security teams, and other relevant teams.
+- **Center of Excellence, IT, and BI teams:** Others who are responsible for overseeing Power BI in the organization. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
 
 > [!IMPORTANT]
 > Monitoring and data loss prevention (DLP) is a significant organization-wide undertaking. Its scope and impact are far greater than Power BI alone. These types of initiative require funding, prioritization, and planning. Expect to involve several cross-functional teams in planning, usage, and oversight efforts.
@@ -39,7 +39,7 @@ Here are some examples of other capabilities that aren't real time.
 - **Monitor advanced security activities:** You can view and monitor sign-ins and security activities, anomalies, and violations. Alerts can be raised for situations such as suspicious activity, unexpected locations, or a new location.
 - **Monitor user activities:** You can view and monitor user activities. For example, a Power BI administrator could be assigned permission to view the Power BI activity log, in addition to user sign-in frequency within Defender for Cloud Apps.
 - **Detect and alert unusual behavior in the Power BI service:** There are built-in policies for anomaly detection. For example, when a user downloads or exports content from the Power BI service significantly more often than normal patterns, you can receive an email alert.
-- **Find unsanctioned applications:** You can find unsanctioned applications in use within the organization. For example, you may become concerned about users sharing files (like Power BI Desktop files or Excel files) on a third-party file sharing system. You can block use of an unsanctioned application, and then contact users to educate them on appropriate ways to share and collaborate with others.
+- **Find unsanctioned applications:** You can find unsanctioned applications in use within the organization. For example, you might become concerned about users sharing files (like Power BI Desktop files or Excel files) on a third-party file sharing system. You can block use of an unsanctioned application, and then contact users to educate them on appropriate ways to share and collaborate with others.
 
 > [!TIP]
 > The portal in Defender for Cloud Apps is a convenient place to view activities and alerts without creating a script to extract and download the data. This advantage includes viewing data from the Power BI activity log.
@@ -94,7 +94,7 @@ To provide real-time controls, access policies and session policies work with Mi
 Redirection doesn't affect the user experience. However, the [URL for the Power BI service](/defender-cloud-apps/proxy-intro-aad#how-session-control-works) will change to _https://app.powerbi.com.mcas.ms_ once you've set up Microsoft Entra ID for conditional access app control with Power BI. Also, users will receive a notification when they sign in to the Power BI service that announces that the app is monitored by Defender for Cloud Apps.
 
 > [!IMPORTANT]
-> Access policies and session policies operate in real time. Other policy types in Defender for Cloud Apps involve a short delay in alerting. Most other types of DLP and auditing also experience latency, including [DLP for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi-override) and the [Power BI activity log](/power-bi/admin/service-admin-auditing).
+> Access policies and session policies operate in real time. Other policy types in Defender for Cloud Apps involve a short delay in alerting. Most other types of DLP and auditing also experience latency, including [DLP for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi-override) and the [Power BI activity log](/power-bi/enterprise/service-admin-auditing).
 
 ##### Access policies
 
@@ -108,7 +108,7 @@ Here are some examples of how you might use access policies to block access to t
 - **Location:** You can block access for a location where you don't have offices or users, or from an unknown IP address.
 
 > [!TIP]
-> If you have external users that access your Power BI tenant or employees who travel frequently, that may affect how you define your access control policies. These types of policies are usually managed by IT.
+> If you have external users that access your Power BI tenant or employees who travel frequently, that can affect how you define your access control policies. These types of policies are usually managed by IT.
 
 ##### Session policies
 
@@ -137,7 +137,7 @@ It's also possible to control file uploads with session policies. However, typic
 
 [Activity policies](/defender-cloud-apps/user-activity-policies) in Defender for Cloud Apps don't operate in real time.
 
-You can set up an activity policy to check events recorded in the [Power BI activity log](/power-bi/admin/service-admin-auditing). The policy can act on a single activity, or it can act on repeated activities by a single user (when a specific activity occurs more than a set number of times within a set number of minutes).
+You can set up an activity policy to check events recorded in the [Power BI activity log](/power-bi/enterprise/service-admin-auditing). The policy can act on a single activity, or it can act on repeated activities by a single user (when a specific activity occurs more than a set number of times within a set number of minutes).
 
 You can use activity policies to monitor activity in the Power BI service in different ways. Here are some examples of what you can achieve.
 
@@ -163,7 +163,7 @@ The types of activity policy alerts described in this section are commonly handl
 
 One of the compelling reasons to integrate Power BI with Defender for Cloud Apps is to benefit from real-time controls when users interact with the Power BI service. This type of integration requires [conditional access app control](/azure/active-directory/conditional-access/overview) in Microsoft Entra ID.
 
-Before setting up conditional access app control in Microsoft Entra ID, you'll need to consider which users will be included. Usually, all users are included. However, there may be reasons to exclude specific users.
+Before setting up conditional access app control in Microsoft Entra ID, you'll need to consider which users will be included. Usually, all users are included. However, there might be reasons to exclude specific users.
 
 > [!TIP]
 > When setting up the conditional access policy, it's likely that your Microsoft Entra ID administrator will exclude specific administrator accounts. That approach will prevent locking out administrators. We recommend that the excluded accounts are Microsoft Entra ID administrators rather than standard Power BI users.
@@ -192,7 +192,7 @@ Some types of policies in Defender for Cloud Apps can have a customized message.
 
 **Example 1:** You can define a real-time session control policy that prevents all exports and downloads when the sensitivity label for the Power BI item (like a report or dataset) is set to _Highly Restricted_. The customized block message in Defender for Cloud Apps reads: _Files with a Highly Restricted label are not permitted to be downloaded from the Power BI service. Please view the content online in the Power BI service. Contact the Power BI support team with any questions._
 
-**Example 2:** You can define a real-time access policy that prevents a user from signing in to the Power BI service when they're not using a machine managed by the organization. The customized block message in Defender for Cloud Apps reads: _The Power BI service may not be accessed on a personal device. Please use the device provided by the organization. Contact the Power BI support team with any questions._
+**Example 2:** You can define a real-time access policy that prevents a user from signing in to the Power BI service when they're not using a machine managed by the organization. The customized block message in Defender for Cloud Apps reads: _The Power BI service might not be accessed on a personal device. Please use the device provided by the organization. Contact the Power BI support team with any questions._
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -219,7 +219,7 @@ Here are two examples of administrator alerts.
 **Example 2:** You can define an activity policy that tracks whether an external user has viewed a highly privileged report that's provided to the board of directors. A high severity alert can be set up to ensure that the activity is promptly investigated.
 
 > [!TIP]
-> Example 2 highlights the differences between information protection and security. Its activity policy can help identify scenarios where self-service BI users have permission to manage security for content. Yet these users may take actions that are discouraged by the organizational policy. We recommend that you set up these types of policies only in specific circumstances when the information is especially sensitive.
+> Example 2 highlights the differences between information protection and security. Its activity policy can help identify scenarios where self-service BI users have permission to manage security for content. Yet these users can take actions that are discouraged by the organizational policy. We recommend that you set up these types of policies only in specific circumstances when the information is especially sensitive.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -314,14 +314,14 @@ FAQs and examples are especially helpful for user documentation.
 
 It's important to verify who will be responsible for [user support](powerbi-adoption-roadmap-user-support.md). It's common that using Defender for Cloud Apps to monitor Power BI is done by a centralized IT help desk.
 
-You may need to create documentation for the help desk and conduct some knowledge transfer sessions to ensure the help desk is ready to respond to support requests.
+You might need to create documentation for the help desk and conduct some knowledge transfer sessions to ensure the help desk is ready to respond to support requests.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When preparing for the user support function, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Identify who will provide user support:** When you're defining roles and responsibilities, make sure to account for how users will get help with issues that they may encounter.
+> - **Identify who will provide user support:** When you're defining roles and responsibilities, make sure to account for how users will get help with issues that they might encounter.
 > - **Ensure the user support team is ready:** Create documentation and conduct knowledge transfer sessions to ensure that the help desk is ready to support these processes.
 > - **Communicate between teams:** Discuss messages users might see and the process to resolve open alerts with your Power BI administrators and Center of Excellence. Make sure that everyone involved is prepared for potential questions from Power BI users.
 
@@ -334,7 +334,7 @@ If you intend to use real-time policies (session policies or access policies), y
 When Microsoft Entra conditional access app control is set up and tested, you can then create policies in Defender for Cloud Apps.
 
 > [!IMPORTANT]
-> We recommend that you introduce this functionality to a small number of test users first. There's also a monitor-only mode that you may find helpful to introduce this functionality in an orderly way.
+> We recommend that you introduce this functionality to a small number of test users first. There's also a monitor-only mode that you might find helpful to introduce this functionality in an orderly way.
 
 The following checklist includes a summarized list of the end-to-end implementation steps. Many of the steps have other details that were covered in previous sections of this article.
 
