@@ -405,7 +405,7 @@ Here are several common uses of registry settings related to Power BI Desktop.
 
 - Disable [notifications](/power-bi/fundamentals/desktop-get-the-desktop#disable-notifications) that a software update is available. That's useful when you're certain that IT will obtain the Power BI Desktop update, perform validations, and then push updates to user devices through their normal process.
 - Set the global [privacy level](/power-bi/enterprise/desktop-privacy-levels). It's wise to set this setting to _Organizational_ as the default because it can help to avoid data privacy violations when different data sources are merged.
-- Disable the Power BI Desktop [sign-in form](/power-bi/admin/desktop-admin-sign-in-form). Disabling the form is useful when organizational machines are automatically signed in. In this case, the user doesn't ever need to be prompted.
+- Disable the Power BI Desktop [sign-in form](/power-bi/enterprise/desktop-admin-sign-in-form). Disabling the form is useful when organizational machines are automatically signed in. In this case, the user doesn't ever need to be prompted.
 - Tune [Query Editor performance](/power-bi/create-reports/desktop-evaluation-configuration). This setting is useful when you need to influence query execution behavior by changing defaults.
 - Disable the [external tools](/power-bi/transform-model/desktop-external-tools#disabling-the-external-tools-ribbon) ribbon tab. You might disable the ribbon tab when you know you can't approve or support the use of external tools.
 
