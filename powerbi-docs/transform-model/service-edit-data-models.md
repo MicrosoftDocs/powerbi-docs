@@ -39,9 +39,9 @@ You can open the data model for your dataset in the following ways:
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-03.png" alt-text="Screenshot of opening the data model from the more options menu." lightbox="media/service-edit-data-models/service-edit-data-models-03.png":::
 
-* From the datahub content list, select **More options (...)** for the dataset and select **Open data model**.
+* From the data hub content list, select **More options (...)** for the dataset and select **Open data model**.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-04.png" alt-text="Screenshot of opening the data model from the datahub content list." lightbox="media/service-edit-data-models/service-edit-data-models-04.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-04.png" alt-text="Screenshot of opening the data model from the data hub content list." lightbox="media/service-edit-data-models/service-edit-data-models-04.png":::
 
 * From the dataset details page, select **Open data model**.
 
@@ -168,7 +168,7 @@ You can define [security roles](../enterprise/service-admin-rls.md) by taking th
 
     :::image type="content" source="media/service-edit-data-models/service-edit-data-models-16.png" alt-text="Screenshot of switching to the DAX editor." lightbox="media/service-edit-data-models/service-edit-data-models-16.png":::
     
-    When defining a role using the DAX editor that can't be defined in the default editor, if you attempt to switch to the default editor you'll be prompted with a warning that switching editors may result in some information being lost. To keep this information, select **Cancel** and continue only editing this role in the DAX editor.
+    When defining a role using the DAX editor that can't be defined in the default editor, if you attempt to switch to the default editor you'll be prompted with a warning that switching editors might result in some information being lost. To keep this information, select **Cancel** and continue only editing this role in the DAX editor.
     
     :::image type="content" source="media/service-edit-data-models/service-edit-data-models-17.png" alt-text="Screenshot of warning about switching to the default editor.":::
 
@@ -199,7 +199,7 @@ You can create a new report from the data model editing in the service experienc
 
 When you save your new report, you're prompted to choose a workspace, provided you have write permissions for that workspace. If you don't have write permissions, or if you're a free user and the dataset resides in a Premium-capacity workspace, the new report is saved in your *My workspace*.
 
-## Autosave
+## AutoSave
 As you made changes to your data model, your changes are automatically saved. Changes are permanent with no option to undo.
 
 ## Permissions
@@ -225,7 +225,7 @@ For more information on accessing your audit logs, see the [Access your audit lo
 
 
 ## Capacity utilization and reporting
-You can monitor the impact editing data models in the service has on your Power BI Premium capacities using the [Premium metrics app](../enterprise/service-premium-metrics-app.md). Capacity impact can be monitored for editing data models in the web using the following [operations](../enterprise/service-premium-interactive-background-operations.md#background-operations).
+You can monitor the affect editing data models in the service has on your Power BI Premium capacities using the [Premium metrics app](../enterprise/service-premium-metrics-app.md). Capacity affect can be monitored for editing data models in the web using the following [operations](../enterprise/service-premium-interactive-background-operations.md#background-operations).
 
 
 |Operation  |Description  |Workload |Type  |
