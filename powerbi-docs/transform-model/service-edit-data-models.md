@@ -4,7 +4,7 @@ description: Learn how to edit data models in the Power BI service.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.service: powerbi
+ms.service: powerbi 
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 05/04/2023
