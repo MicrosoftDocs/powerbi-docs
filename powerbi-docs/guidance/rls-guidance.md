@@ -190,7 +190,7 @@ When a specific user can't see any data, it could be because their UPN isn't sto
 
 Creators and consumers with only Read permission on the dataset will only be able to view the data they're allowed to see (based on their RLS role mapping).
 
-When a user views a report in either a workspace or an app, RLS may or may not be enforced depending on their dataset permissions. For this reason, it's critical that content consumers and creators only possess Read permission on the underlying dataset when RLS must be enforced. For details about the permissions rules that determine whether RLS is enforced, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#rls-user-experience) article.
+When a user views a report in either a workspace or an app, RLS might or might not be enforced depending on their dataset permissions. For this reason, it's critical that content consumers and creators only possess Read permission on the underlying dataset when RLS must be enforced. For details about the permissions rules that determine whether RLS is enforced, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#rls-user-experience) article.
 
 ## Next steps
 

@@ -28,27 +28,27 @@ The output from this stage is a Power BI solution that has been validated in a d
 
 ## Create the production solution
 
-At this juncture, the same person who performed the POC may carry on with producing the production-ready Power BI solution. Or, someone different may be involved. If timelines are not jeopardized, it's great to get people involved who will be responsible for Power BI development in the future. This way, they can actively learn.
+At this juncture, the same person who performed the POC might carry on with producing the production-ready Power BI solution. Or, someone different could be involved. If timelines are not jeopardized, it's great to get people involved who will be responsible for Power BI development in the future. This way, they can actively learn.
 
 > [!IMPORTANT]
 > Reuse as much of the work from the POC as possible.
 
 ### Develop new import dataset
 
-You may choose to create a new Import dataset when an existing Power BI dataset doesn't already exist to meet your needs, or if it can't be enhanced to meet your needs.
+You might choose to create a new Import dataset when an existing Power BI dataset doesn't already exist to meet your needs, or if it can't be enhanced to meet your needs.
 
 Ideally, from the very beginning, consider decoupling the development work for data and reports. [Decoupling data and reports](report-separate-from-model.md) will facilitate the separation of work, and permissions, when different people are responsible for data modeling and reports. It makes for a more scalable approach and encourages data reusability.
 
 The essential activities related to development of an Import dataset include:
 
-- [Acquire data](../connect-data/desktop-quickstart-connect-to-data.md) from one or more data sources (which may be a Power BI dataflow).
+- [Acquire data](../connect-data/desktop-quickstart-connect-to-data.md) from one or more data sources (which could be a Power BI dataflow).
 - [Shape, combine, and prepare](../connect-data/desktop-shape-and-combine-data.md) data.
 - Create the [dataset model](../transform-model/desktop-modeling-view.md), including [date tables](../transform-model/desktop-date-tables.md).
 - Create and verify [model relationships](../transform-model/desktop-create-and-manage-relationships.md).
 - Define [measures](../transform-model/desktop-measures.md).
 - Set up [row-level security](../enterprise/service-admin-rls.md), if necessary.
 - Configure synonyms and [optimize Q&A](../natural-language/q-and-a-best-practices.md).
-- Plan for scalability, performance, and concurrency, which may influence your decisions about data storage modes, such as using a [Composite model](../transform-model/desktop-composite-models.md) or [aggregations](../enterprise/aggregations-auto.md).
+- Plan for scalability, performance, and concurrency, which might influence your decisions about data storage modes, such as using a [Composite model](../transform-model/desktop-composite-models.md) or [aggregations](../enterprise/aggregations-auto.md).
 
 > [!TIP]
 > If you have different development/test/production environments, consider [parameterizing](/power-query/power-query-query-parameters) data sources. It will make deployment, described in [Stage 5](powerbi-migration-deploy-support-monitor.md), significantly easier.
@@ -110,7 +110,7 @@ During the development process, the Power BI solution should be published to a d
 
 ### Validate performance
 
-Performance of the Power BI solution is important for consumer experience. Most reports should present visuals in under 10 seconds. If you have reports that take longer to load, pause and reconsider what may be contributing to delays. Report performance should be assessed regularly in the Power BI service, in addition to Power BI Desktop.
+Performance of the Power BI solution is important for consumer experience. Most reports should present visuals in under 10 seconds. If you have reports that take longer to load, pause and reconsider what might be contributing to delays. Report performance should be assessed regularly in the Power BI service, in addition to Power BI Desktop.
 
 Many performance issues arise from substandard [DAX (Data Analysis eXpressions)](../transform-model/desktop-quickstart-learn-dax-basics.md), poor dataset design, or suboptimal report design (for instance, trying to render too many visuals on a single page). Technical environment issues, such as the network, an overloaded data gateway, or how a Premium capacity is configured can also contribute to performance issues. For more information, see the [Optimization guide for Power BI](power-bi-optimization.md) and [Troubleshoot report performance in Power BI](report-performance-troubleshoot.md).
 
@@ -123,8 +123,8 @@ There are two main types of documentation that are useful for a Power BI solutio
 
 Documentation can be stored wherever it's most easily accessed by the target audience. Common options include:
 
-- **Within a SharePoint site:** A SharePoint site may exist for your Center of Excellence or an internal Power BI community site.
-- **Within an app:** URLs may be configured when publishing a Power BI app to direct the consumer to more information.
+- **Within a SharePoint site:** A SharePoint site might exist for your Center of Excellence or an internal Power BI community site.
+- **Within an app:** URLs can be set up when publishing a Power BI app to direct the consumer to more information.
 - **Within individual Power BI Desktop files:** Model elements, like tables and columns, can define a description. These descriptions appear as tooltips in the **Fields** pane when authoring reports.
 
 > [!TIP]
@@ -142,7 +142,7 @@ Dataset documentation is targeted at users who will be managing the dataset in t
 - Future maintenance needs.
 - Known open issues or deferred backlog items.
 
-You may also elect to create a change log that summarizes the most important changes that have happened to the dataset over time.
+You might also elect to create a change log that summarizes the most important changes that have happened to the dataset over time.
 
 ### Create report documentation
 
