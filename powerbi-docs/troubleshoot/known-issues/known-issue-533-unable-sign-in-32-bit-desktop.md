@@ -26,7 +26,7 @@ When you attempt to sign in, you get the following error: "Sorry, encountered an
 
 ## Solutions and workarounds
 
-You can download and use the 64-bit version of Power BI Desktop or use the Power BI Desktop Microsoft Store App. If you're restricted to using the 32-bit version of the app, you can use the previous release, [September 2023 (2.121.644.0)](power-bi/fundamentals/desktop-latest-update-archive?tabs=powerbi-desktop#september-2023-update-21216440).
+You can download and use the 64-bit version of Power BI Desktop or use the Power BI Desktop Microsoft Store App. If you're restricted to using the 32-bit version of the app, you can use the previous release, [September 2023 (2.121.644.0)](/power-bi/fundamentals/desktop-latest-update-archive?tabs=powerbi-desktop#september-2023-update-21216440).
 
 ## Next steps
 
