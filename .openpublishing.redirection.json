@@ -5493,22 +5493,22 @@
         },
         {
             "source_path": "powerbi-docs/admin/desktop-admin-sign-in-form.md",
-            "redirect_url": "/powerbi-docs/enterprise/desktop-admin-sign-in-form",
+            "redirect_url": "/power-bi/enterprise/desktop-admin-sign-in-form",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-auditing.md",
-            "redirect_url": "/powerbi-docs/enterprise/service-admin-auditing",
+            "redirect_url": "/power-bi/enterprise/service-admin-auditing",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/admin/power-bi-allow-list-urls.md",
-            "redirect_url": "/powerbi-docs/enterprise/power-bi-allow-list-urls",
+            "redirect_url": "/power-bi/enterprise/power-bi-allow-list-urls",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/transform-model/datamarts/datamarts-sharing-discovery.md",
-            "redirect_url": "/powerbi-docs/transform-model/datamarts/datamarts-discovery",
+            "redirect_url": "/power-bi/transform-model/datamarts/datamarts-discovery",
             "redirect_document_id": false
         },
         {
