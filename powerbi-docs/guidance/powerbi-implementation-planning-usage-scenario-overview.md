@@ -30,7 +30,7 @@ Use the scenarios to help you with Power BI architecture planning and implementa
 - After understanding the areas of your BI operations that you want to implement or strengthen, create a project plan that defines tactical steps to arrive at your desired future state.
 
 > [!TIP]
-> You may need to mix and match the ideas described in the usage scenarios to create a Power BI implementation strategy that fits your circumstances. To support the needs of users from different departments and business units, expect to draw from multiple Power BI implementation methods simultaneously. That way, you'll be able to support diverse content creators and various solutions.
+> You might need to mix and match the ideas described in the usage scenarios to create a Power BI implementation strategy that fits your circumstances. To support the needs of users from different departments and business units, expect to draw from multiple Power BI implementation methods simultaneously. That way, you'll be able to support diverse content creators and various solutions.
 
 ## Content collaboration and delivery scenarios
 
@@ -54,7 +54,8 @@ The self-service BI scenarios presented here primarily emphasize the use of *man
 - **[Customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md):** The focus is on the dataset creator customizing or extending an existing dataset to satisfy new requirements. This scenario describes publishing a customized data model where some tables are new while others are dependent on the existing shared dataset.
 - **[Self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md):** The focus is on centralizing data preparation activities to improve consistency and reduce effort. This scenario describes creating Power BI dataflows to avoid repeating data preparation Power Query logic in many different Power BI Desktop files. A dataflow can be consumed as a data source by numerous datasets.
 - **[Advanced data preparation](powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md):** The focus is on improving the reach and reusability of dataflows for multiple users, teams, and use cases. This scenario describes use of multiple workspaces based on purpose: staging, cleansed, and final.
-- **[Prototyping and sharing](powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md):** Prototyping techniques are very useful for validating requirements for visuals and calculations by subject matter experts. Prototyping solutions may be temporary, short-lived solutions, or they may ultimately evolve into a solution that's fully validated and released. This scenario describes using Power BI Desktop during an interactive prototyping session. It's followed by sharing in the Power BI service when additional feedback is needed from a subject matter expert.
+- **[Self-service real-time analytics](powerbi-implementation-planning-usage-scenario-self-service-real-time-analytics.md):** The focus is on how a business analyst can produce real-time Power BI reports.
+- **[Prototyping and sharing](powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md):** Prototyping techniques are very useful for validating requirements for visuals and calculations by subject matter experts. Prototyping solutions might be temporary, short-lived solutions, or they might ultimately evolve into a solution that's fully validated and released. This scenario describes using Power BI Desktop during an interactive prototyping session. It's followed by sharing in the Power BI service when additional feedback is needed from a subject matter expert.
 
     > [!NOTE]
     > Additional information about [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md), and [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md), which affect self-service BI activities and decisions, are described in the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md).
@@ -66,13 +67,6 @@ The following *content management and deployment* scenarios describe approaches 
 - **[Self-service content publishing](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md):** The focus is on ensuring that content is stable for consumers. This scenario describes using a Power BI deployment pipeline to publish content through development, test, and production workspaces. It also describes how (optionally) Premium per user license mode can be used for development and test workspaces, and Premium per capacity license mode for the production workspace.
 - **[Enterprise content publishing](powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md):** The focus is on using more sophisticated and programmatic techniques to publish content through development, test, and production workspaces. In this scenario, it describes how you can use Azure DevOps to orchestrate collaboration and content publication.
 - **[Advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md):** The focus is on empowering creators with advanced data modeling and publishing capabilities. This scenario describes managing a data model by using Tabular Editor, which is a third-party tool. Data modelers publish their models to the Power BI service by using the XMLA endpoint, which is available with Power BI Premium.
-
-## Real-time scenarios
-
-*Real-time* scenarios describe different techniques to allow presenting data updates in near real-time. Monitoring data in real-time allows the organization to react faster when time-sensitive decisions must be made.
-
-- **[Self-service real-time analytics](powerbi-implementation-planning-usage-scenario-self-service-real-time-analytics.md):** The focus is on how a business analyst can produce real-time Power BI reports.
-- **Programmatic real-time analytics (usage scenario article not currently available):** The focus is on how a developer can produce real-time Power BI reports.
 
 ## Embedding and hybrid scenarios
 

@@ -17,7 +17,7 @@ ms.date: 12/12/2022
 This article describes the planning activities related to implementing information protection in Power BI. It's targeted at:
 
 - **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators need to collaborate with information security and other relevant teams.
-- **Center of Excellence, IT, and BI teams:** Others who are responsible for overseeing Power BI in the organization. They may need to collaborate with Power BI administrators, information security teams, and other relevant teams.
+- **Center of Excellence, IT, and BI teams:** Others who are responsible for overseeing Power BI in the organization. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
 
 > [!IMPORTANT]
 > Information protection and data loss prevention (DLP) is a significant organization-wide undertaking. Its scope and impact are far greater than Power BI alone. This type of initiative requires funding, prioritization, and planning. Expect to involve several cross-functional teams in your planning, usage, and oversight efforts.
@@ -74,7 +74,7 @@ This section provides an overview of the phases that we recommend you include in
 
 In the first phase, focus on planning, decision-making, and preparatory activities. Most of the remainder of this article focuses this first phase.
 
-As early as possible, clarify where the initial testing will occur. That choice will impact where you'll initially set up, publish, and test. For the initial testing, you may want to use a non-production tenant (if you have access to one).
+As early as possible, clarify where the initial testing will occur. That choice will impact where you'll initially set up, publish, and test. For the initial testing, you can use a non-production tenant (if you have access to one).
 
 > [!TIP]
 > Most organizations have access to one tenant, so it can be challenging to explore new features in an isolated way. For those organizations that have a separate development or test tenant, we recommend that you use it for the initial testing phase. For more information about managing tenants and how to create a trial tenant to test out new features, see [Tenant setup](powerbi-implementation-planning-tenant-setup.md).
@@ -118,7 +118,7 @@ During this phase, be certain to test:
 Be sure to check the functionality and user experience by using a web browser and also mobile devices that are commonly used. Update your [user documentation](#user-documentation-and-training) accordingly.
 
 > [!IMPORTANT]
-> Even if only a few members of the team are authorized to set a sensitivity label, all users will be able to see labels that are assigned to content. If you're using your production tenant, users may wonder why they see labels assigned to items in a workspace in the Power BI service. Be ready to support and respond to user questions.
+> Even if only a few members of the team are authorized to set a sensitivity label, all users will be able to see labels that are assigned to content. If you're using your production tenant, users might wonder why they see labels assigned to items in a workspace in the Power BI service. Be ready to support and respond to user questions.
 
 ### Phase 7: Gather user feedback
 
@@ -147,7 +147,7 @@ There are many aspects to auditing information protection. For more information,
 
 The investments you make in setting up information protection can be used in DLP policies for Power BI, which are set up in the Microsoft Purview compliance portal. For more information, including a description of DLP capabilities, see [Data loss prevention for Power BI](powerbi-implementation-planning-data-loss-prevention.md).
 
-Information protection can also be used to create policies in Microsoft Defender for Cloud Apps. For more information, including a description of capabilities that you may find helpful, see [Defender for Cloud Apps for Power BI](powerbi-implementation-planning-defender-for-cloud-apps.md).
+Information protection can also be used to create policies in Microsoft Defender for Cloud Apps. For more information, including a description of capabilities that you might find helpful, see [Defender for Cloud Apps for Power BI](powerbi-implementation-planning-defender-for-cloud-apps.md).
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -183,7 +183,7 @@ A label structure includes:
 
 Labels form a hierarchy, beginning with the least sensitive classification to the most sensitive classification.
 
-Sometimes Power BI content contains data that spans multiple labels. For example, a dataset may contain product inventory information (_General Internal Use_) and the current quarter sales figures _(Restricted_). When choosing which label to assign to the Power BI dataset, users should be taught to apply the most restrictive label.
+Sometimes Power BI content contains data that spans multiple labels. For example, a dataset could contain product inventory information (_General Internal Use_) and the current quarter sales figures _(Restricted_). When choosing which label to assign to the Power BI dataset, users should be taught to apply the most restrictive label.
 
 > [!TIP]
 > The next section describes the _Data classification and protection policy_ that can provide users with guidance on when to use each label.
@@ -226,7 +226,7 @@ A sensitivity label scope limits the use of a label. While you can't specify Pow
 
 Events related to sensitivity labels are recorded in the [activity explorer](/microsoft-365/compliance/data-classification-activity-explorer-available-events). Logged details of these events will be significantly richer when the scope is broader. You'll also be better prepared to protect data across a broader spectrum of applications and services.
 
-When defining the initial set of sensitivity labels, consider making the initial set of labels available to all scopes. That's because it can become confusing for users when they see different labels in different applications and services. Over time, however, you may discover use cases for more specific sub-labels. However, it's safer to start with a consistent and simple set of initial labels.
+When defining the initial set of sensitivity labels, consider making the initial set of labels available to all scopes. That's because it can become confusing for users when they see different labels in different applications and services. Over time, however, you might discover use cases for more specific sub-labels. However, it's safer to start with a consistent and simple set of initial labels.
 
 The label scope is set in the Microsoft Purview compliance portal when the label is set up.
 
@@ -242,11 +242,11 @@ The label scope is set in the Microsoft Purview compliance portal when the label
 
 There are multiple options for protection with a sensitivity label.
 
-- **Encryption:** Encryption settings pertain to files or emails. For example, a Power BI Desktop file may be encrypted.
+- **Encryption:** Encryption settings pertain to files or emails. For example, a Power BI Desktop file can be encrypted.
 - **Markings:** Refers to headers, footers, and watermarks. Markings are useful for Microsoft Office files, but they aren't shown on Power BI content.
 
 > [!TIP]
-> Usually when someone refers to a label as _protected_, they're referring to encryption. It may be sufficient that only higher-level labels, like _Restricted_ and _Highly Restricted_, are encrypted.
+> Usually when someone refers to a label as _protected_, they're referring to encryption. It might be sufficient that only higher-level labels, like _Restricted_ and _Highly Restricted_, are encrypted.
 
 Encryption is a way to cryptographically encode information. Encryption has several key advantages.
 
@@ -272,7 +272,7 @@ To open a protected Power BI Desktop file, or an exported file, a user must meet
 
 - **Internet connectivity:** The user must be connected to the internet. An active internet connection is required to communicate with Azure RMS.
 - **RMS permissions:** The user must have [RMS permissions](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide&preserve-view=true#assign-permissions-to-specific-users-or-groups), which are defined within the label (rather than within the label policy). RMS permissions allow authorized users to decrypt, open, and view supported file formats.
-- **Allowed user:** Users or groups must be specified in the [label policy](/microsoft-365/compliance/create-sensitivity-labels). Typically, assigning authorized users is only required for content creators and owners so they can apply labels. However, when using encryption protection there's [another requirement](/power-bi/enterprise/service-security-sensitivity-label-overview#power-bi-desktop). Each user that needs to open a protected file must be specified in the label policy. This requirement means that [information protection licensing](#licensing-requirements) may be required for more users.
+- **Allowed user:** Users or groups must be specified in the [label policy](/microsoft-365/compliance/create-sensitivity-labels). Typically, assigning authorized users is only required for content creators and owners so they can apply labels. However, when using encryption protection there's [another requirement](/power-bi/enterprise/service-security-sensitivity-label-overview#power-bi-desktop). Each user that needs to open a protected file must be specified in the label policy. This requirement means that [information protection licensing](#licensing-requirements) might be required for more users.
 
 > [!TIP]
 > The **Allow workspace administrators to override automatically applied sensitivity labels** tenant setting enables workspace administrators to change a label that was automatically applied, even if protection (encryption) is enabled for the label. This capability is particularly helpful when a label was automatically assigned or inherited but the workspace administrator isn't an authorized user.
@@ -306,8 +306,8 @@ Consider an example where the organization's working definition for the sensitiv
 
 You can assign sensitivity labels to a supported data source in different ways.
 
-- **Data discovery and classification:** You can scan a supported database to identify columns that may contain sensitive data. Based on the scan results, you can apply some or all the label recommendations. [Data Discovery & Classification](/azure/azure-sql/database/data-discovery-and-classification-overview) is supported for databases such as Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics. [SQL Data Discovery & Classification](/sql/relational-databases/security/sql-data-discovery-and-classification) is supported for on-premises SQL Server databases.
-- **Manual assignments:** You can assign a sensitivity label to an Excel file. You may also manually assign labels to database columns in Azure SQL Database or SQL Server.
+- **Data discovery and classification:** You can scan a supported database to identify columns that could contain sensitive data. Based on the scan results, you can apply some or all the label recommendations. [Data Discovery & Classification](/azure/azure-sql/database/data-discovery-and-classification-overview) is supported for databases such as Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics. [SQL Data Discovery & Classification](/sql/relational-databases/security/sql-data-discovery-and-classification) is supported for on-premises SQL Server databases.
+- **Manual assignments:** You can assign a sensitivity label to an Excel file. You might also manually assign labels to database columns in Azure SQL Database or SQL Server.
 - **Auto-labeling in Microsoft Purview:** Sensitivity labels can be [applied](/azure/purview/create-sensitivity-label) to supported data sources that are registered as assets in the Microsoft Purview Data Map.
 
 > [!WARNING]
@@ -421,7 +421,7 @@ A [Microsoft Purview Information Protection](https://www.microsoft.com/security/
 - **Administrators:** The administrators who will set up, manage, and oversee labels.
 - **Users:** The content creators and owners who will be responsible for applying labels to content. Users also includes those who need to decrypt, open, and view protected (encrypted) files.
 
-You might already have these capabilities because they're included in license suites, such as [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans). Alternatively, [Microsoft 365 E5 Compliance](https://www.microsoft.com/security/business/compliance/e5-compliance) capabilities may be purchased as a standalone license.
+You might already have these capabilities because they're included in license suites, such as [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans). Alternatively, [Microsoft 365 E5 Compliance](https://www.microsoft.com/security/business/compliance/e5-compliance) capabilities can be purchased as a standalone license.
 
 A [Power BI Pro or Premium Per User (PPU)](/power-bi/fundamentals/service-features-license-type#licenses-and-license-types) license is also required for users who will apply and manage sensitivity labels in the Power BI service or Power BI Desktop.
 
@@ -486,15 +486,15 @@ We strongly recommend that you plan to enable this tenant setting to disallow sh
 
 In the Power BI admin portal, there are many export and sharing tenant settings. In most circumstances, we recommend that the ability to export data be available to all (or most) users so as not to limit user productivity.
 
-However, highly regulated industries may have a requirement to restrict exports when information protection can't be enforced for the output format. A sensitivity label that's applied in the Power BI service follows the content when it's exported to a supported file path. It includes Excel, PowerPoint, PDF, and Power BI Desktop files. Since the sensitivity label stays with the exported file, protection benefits (encryption that prevents unauthorized users from opening the file) are retained for these supported file formats.
+However, highly regulated industries could have a requirement to restrict exports when information protection can't be enforced for the output format. A sensitivity label that's applied in the Power BI service follows the content when it's exported to a supported file path. It includes Excel, PowerPoint, PDF, and Power BI Desktop files. Since the sensitivity label stays with the exported file, protection benefits (encryption that prevents unauthorized users from opening the file) are retained for these supported file formats.
 
 > [!WARNING]
 > When exporting from Power BI Desktop to a PDF file, the protection is not retained for the exported file. We recommend that you educate your content creators to export from the Power BI service to achieve maximum information protection.
 
-Not all export formats support information protection. Unsupported formats, such as .csv, .xml, .mhtml, or .png files (available when using the [ExportToFile API](/power-bi/developer/embedded/export-to)) may be disabled in the Power BI tenant settings.
+Not all export formats support information protection. Unsupported formats, such as .csv, .xml, .mhtml, or .png files (available when using the [ExportToFile API](/power-bi/developer/embedded/export-to)) might be disabled in the Power BI tenant settings.
 
 > [!TIP]
-> We recommend that you restrict exporting capabilities only when you must meet specific regulatory requirements. In typical scenarios, we recommend that you use the [Power BI activity log](/power-bi/admin/service-admin-auditing) to identify which users are performing exports. You can then teach these users about more efficient and secure alternatives.
+> We recommend that you restrict exporting capabilities only when you must meet specific regulatory requirements. In typical scenarios, we recommend that you use the [Power BI activity log](/power-bi/enterprise/service-admin-auditing) to identify which users are performing exports. You can then teach these users about more efficient and secure alternatives.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -528,10 +528,10 @@ Here are some of the key pieces of information that you might include in your da
 - **Label required:** Describes whether assigning a label is mandatory for all new and changed content.
 - **Default label:** Describes whether this label is a default label that's automatically applied to new content.
 - **Access restrictions:** Additional information that clarifies whether internal and/or external users are permitted to see content assigned to this label. Here are some examples:
-  - All users, including internal users, external users, and third parties with active confidentiality agreement (NDA) in place may access this information.
-  - Internal users only may access this information. No partners, vendors, contractors, or third parties, regardless of NDA or confidentiality agreement status.
+  - All users, including internal users, external users, and third parties with active non-disclosure agreements (NDAs) in place can access this information.
+  - Internal users only can access this information. No partners, vendors, contractors, or third parties, regardless of NDA or confidentiality agreement status.
   - Internal access to information is based on job role authorization.
-- **Encryption requirements:** Describes whether data is required to be encrypted at-rest and in-transit. This information will correlate to how the sensitivity label is set up and will affect the protection policies that may be implemented for file (RMS) encryption.
+- **Encryption requirements:** Describes whether data is required to be encrypted at-rest and in-transit. This information will correlate to how the sensitivity label is set up and will affect the protection policies that can be implemented for file (RMS) encryption.
 - **Downloads allowed and/or offline access:** Describes whether offline access is permitted. It can also define whether downloads are permitted to organizational or personal devices.
 - **How to request an exception:** Describes whether a user can request an exception to the standard policy, and how that can be done.
 - **Audit frequency:** Specifies the frequency of compliance reviews. Higher sensitive labels should involve more frequent and thorough auditing processes.
@@ -549,7 +549,7 @@ One way to automate the implementation of a policy, such as the data classificat
 > [!div class="checklist"]
 > - **Create a data classification and protection policy:** For each sensitivity label in your structure, create a centralized policy document. This document should define what can or can't be done with content that's been assigned each label.
 > - **Obtain consensus on the data classification and protection policy:** Ensure that all necessary people in the team you assembled have agreed to the provisions.
-> - **Consider how to handle exceptions to the policy:** Highly decentralized organizations might need to consider whether exceptions may arise. Though it's preferable to have a standardized data classification and protection policy, decide how you'll address exceptions when new requests are made.
+> - **Consider how to handle exceptions to the policy:** Highly decentralized organizations should consider whether exceptions might arise. Though it's preferable to have a standardized data classification and protection policy, decide how you'll address exceptions when new requests are made.
 > - **Consider where to locate your internal policy:** Give some thought to where the data classification and protection policy should be published. Ensure that all users can easily access it. Plan to include it on the custom help page when you publish the label policy.
 
 ## User documentation and training
@@ -591,7 +591,7 @@ FAQs and examples are especially helpful for user documentation.
 
 It's important to verify who will be responsible for [user support](powerbi-adoption-roadmap-user-support.md). It's common that sensitivity labels are supported by a centralized IT help desk.
 
-You may need to create guidance for the help desk (sometimes known as a _runbook_). You may also need to conduct knowledge transfer sessions to ensure that the help desk is ready to respond to support requests.
+You might need to create guidance for the help desk (sometimes known as a _runbook_). You might also need to conduct knowledge transfer sessions to ensure that the help desk is ready to respond to support requests.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
