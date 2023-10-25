@@ -83,7 +83,7 @@ You can also consider using [incremental refresh](/power-bi/connect-data/increme
 
 When there's a need to enforce role-based security, it can directly influence the choice of Power BI model framework.
 
-Dataverse can enforce complex [role-based security](/power-platform/admin/wp-security-cds) to control access of specific records to specific users. For example, a salesperson may be permitted to see only their sales opportunities, while the sales manager can see all sales opportunities for all salespeople. You can tailor the level of complexity based on the needs of your organization.
+Dataverse can enforce complex [role-based security](/power-platform/admin/wp-security-cds) to control access of specific records to specific users. For example, a salesperson might be permitted to see only their sales opportunities, while the sales manager can see all sales opportunities for all salespeople. You can tailor the level of complexity based on the needs of your organization.
 
 A DirectQuery model based on Dataverse can connect by using the security context of the report user. That way, the report user will only see the data they're permitted to access. This approach can simplify the report design, providing performance is acceptable.
 
@@ -121,7 +121,7 @@ Resist combining multiple topic areas into a single model just because the repor
 
 ### Design a star schema
 
-Dataverse developers and administrators who are comfortable with the Dataverse schema may be tempted to reproduce the same schema in Power BI. This approach is an anti-pattern, and it's probably the toughest to overcome because it just *feels right* to maintain consistency.
+Dataverse developers and administrators who are comfortable with the Dataverse schema might be tempted to reproduce the same schema in Power BI. This approach is an anti-pattern, and it's probably the toughest to overcome because it just *feels right* to maintain consistency.
 
 Dataverse, as a relational model, is well suited for its purpose. However, it's not designed as an analytic model that's optimized for [analytical reports](/learn/modules/power-bi-effective-structure/1-introduction). The most prevalent pattern for modeling analytics data is a *star schema* design. Star schema is a mature modeling approach widely adopted by relational data warehouses. It requires modelers to classify their model tables as either dimension or fact. Reports can filter or group by using dimension table columns and summarize fact table columns.
 
