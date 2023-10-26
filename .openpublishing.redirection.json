@@ -4231,7 +4231,7 @@
         },                                                         
         {
             "source_path": "powerbi-docs/admin/power-bi-whitelist-urls.md",
-            "redirect_url": "/power-bi/admin/power-bi-allow-list-urls",
+            "redirect_url": "/power-bi/enterprise/power-bi-allow-list-urls",
             "redirect_document_id": false
         },
         {
