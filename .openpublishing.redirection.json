@@ -1976,8 +1976,8 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-auditing.md",
-            "redirect_url": "/power-bi/admin/service-admin-auditing",
-            "redirect_document_id": true
+            "redirect_url": "/fabric/admin/service-admin-portal-audit-usage",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-admin-azure-ad-b2b.md",
@@ -5498,7 +5498,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-auditing.md",
-            "redirect_url": "/power-bi/enterprise/service-admin-auditing",
+            "redirect_url": "/fabric/admin/service-admin-portal-audit-usage",
             "redirect_document_id": false
         },
         {
