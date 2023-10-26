@@ -39,9 +39,9 @@ You can open the data model for your dataset in the following ways:
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-03.png" alt-text="Screenshot of opening the data model from the more options menu." lightbox="media/service-edit-data-models/service-edit-data-models-03.png":::
 
-* From the datahub content list, select **More options (...)** for the dataset and select **Open data model**.
+* From the data hub content list, select **More options (...)** for the dataset and select **Open data model**.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-04.png" alt-text="Screenshot of opening the data model from the datahub content list." lightbox="media/service-edit-data-models/service-edit-data-models-04.png":::
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-04.png" alt-text="Screenshot of opening the data model from the data hub content list." lightbox="media/service-edit-data-models/service-edit-data-models-04.png":::
 
 * From the dataset details page, select **Open data model**.
 
@@ -80,13 +80,56 @@ To create a [calculated table](desktop-calculated-tables.md) select the table in
 
 Enter the calculated table into the formula bar. Similar to Power BI Desktop, the DAX editing experience in the Power BI service presents a rich editor complete with autocomplete for formulas (intellisense). You can now see the newly created calculated table in your model.
 
-### Create relationships
-To create a relationship, drag the column from one table to the column of the other table to initiate the relationship. In the window that appears, configure the relationship properties.
+### Create a relationship
+There are two ways to create a new relationship in the Power BI Service.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-10.png" alt-text="Screenshot of creating a relationship." lightbox="media/service-edit-data-models/service-edit-data-models-10.png":::
+The first method is to drag the column from one table in the relationship diagram to the column of the other table to create the relationship.
 
-Select the **Confirm** button when your relationship is complete to save the relationship information.
+The other method of creating a relationship is by selecting **Manage relationships** in the ribbon as shown in the following image.
 
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-24.png" alt-text="Screenshot of manage relationships dialog ribbon entry point." lightbox="media/service-edit-data-models/service-edit-data-models-24.png":::
+
+This will open the revamped **Manage relationships** dialog. From here, you can select **New relationship** to create a new relationship in your model.
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-25.png" alt-text="Screenshot of creating a new relationship from manage relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-25.png":::
+
+From here, configure the relationship properties, and select the **Ok** button when your relationship is complete to save the relationship information.
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-26.png" alt-text="Screenshot of editing properties for a new relationship created in the manage relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-26.png":::
+
+### Edit a relationship
+There are three ways to edit an existing relationship in the Power BI Service.
+
+The first method to edit a relationship is using the **Editing relationships in the Properties pane**, where you can select any line between two tables to see the relationship options in the **Properties** pane. Be sure to expand the **Properties** pane to see the relationship options.
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-27.png" alt-text="Screenshot of editing properties for a new relationship in the Properties pane." lightbox="media/service-edit-data-models/service-edit-data-models-27.png":::
+
+The next method is to right-click an existing relationship in the diagram view and select **Properties**.
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-28.png" alt-text="Screenshot of entering the experience to edit properties of an existing relationship." lightbox="media/service-edit-data-models/service-edit-data-models-28.png":::
+
+In the window that appears, configure the relationship properties, and select the **Ok** button when your relationship is complete to save the relationship information.
+
+The third method is by selecting **Manage relationships** in the ribbon. In the **Manage relationships** dialog you can choose a relationship to edit and then select **Edit**.
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-29.png" alt-text="Screenshot of selecting edit in the ribbon of the manage relationships dialog to edit an existing relationship." lightbox="media/service-edit-data-models/service-edit-data-models-29.png":::
+
+Alternatively, you can select **Edit** from the context menu of a given relationship in the dialog.
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-30.png" alt-text="Screenshot of selecting edit in the context menu of the manage relationships dialog to edit an existing relationship." lightbox="media/service-edit-data-models/service-edit-data-models-30.png":::
+
+From here, configure the relationship properties, and select the **Ok** button when editing your relationship is complete to save the relationship information.
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-31.png" alt-text="Screenshot of editing properties of an existing relationship from the manage relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-31.png":::
+
+### See a list of all your relationships
+Selecting **Manage relationships** in the ribbon opens the revamped **Manage relationships** dialog which provides a comprehensive view of all your relationships, along with their key properties, in one convenient location. From here you can then choose to create new relationships or edit an existing relationship.
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-32.png" alt-text="Screenshot of a list of relationships within the manage relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-32.png":::
+
+Additionally, you have the option to filter and focus on specific relationships in your model based on cardinality and cross filter direction.
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-33.png" alt-text="Screenshot of filtering relationships shown in the relationship list within the manage relationships dialog." lightbox="media/service-edit-data-models/service-edit-data-models-33.png":::
 
 ### Set properties
 You can change the properties for a given object using the **Properties** pane. You can set common properties across multiple objects at once by holding down the **Ctrl** key and selecting multiple objects either in the relationship diagram or Data pane. When multiple objects are highlighted, changes applied in the **Properties** pane apply to all selected objects.
@@ -125,7 +168,7 @@ You can define [security roles](../enterprise/service-admin-rls.md) by taking th
 
     :::image type="content" source="media/service-edit-data-models/service-edit-data-models-16.png" alt-text="Screenshot of switching to the DAX editor." lightbox="media/service-edit-data-models/service-edit-data-models-16.png":::
     
-    When defining a role using the DAX editor that can't be defined in the default editor, if you attempt to switch to the default editor you'll be prompted with a warning that switching editors may result in some information being lost. To keep this information, select **Cancel** and continue only editing this role in the DAX editor.
+    When defining a role using the DAX editor that can't be defined in the default editor, if you attempt to switch to the default editor you'll be prompted with a warning that switching editors might result in some information being lost. To keep this information, select **Cancel** and continue only editing this role in the DAX editor.
     
     :::image type="content" source="media/service-edit-data-models/service-edit-data-models-17.png" alt-text="Screenshot of warning about switching to the default editor.":::
 
@@ -153,7 +196,7 @@ You can create a new report from the data model editing in the service experienc
 
 When you save your new report, you're prompted to choose a workspace, provided you have write permissions for that workspace. If you don't have write permissions, or if you're a free user and the dataset resides in a Premium-capacity workspace, the new report is saved in your *My workspace*.
 
-## Autosave
+## AutoSave
 As you made changes to your data model, your changes are automatically saved. Changes are permanent with no option to undo.
 
 ## Permissions
@@ -179,9 +222,7 @@ For more information on accessing your audit logs, see the [Access your audit lo
 
 
 ## Capacity utilization and reporting
-
-You can monitor the impact editing data models in the service has on your Power BI Premium capacities using the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app). Capacity impact can be monitored for editing data models in the web using the following [operations](../enterprise/service-premium-interactive-background-operations.md#background-operations).
-
+You can monitor the effect editing data models in the service has on your Power BI Premium capacities using the [Premium metrics app](../enterprise/service-premium-metrics-app.md). Capacity effect can be monitored for editing data models in the web using the following [operations](../enterprise/service-premium-interactive-background-operations.md#background-operations).
 
 |Operation  |Description  |Workload |Type  |
 |---------|---------|---------|---------|
