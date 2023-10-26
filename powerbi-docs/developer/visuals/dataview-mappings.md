@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 02/13/2023
+ms.date: 07/12/2023
 ---
 
 # Understand data view mapping in Power BI visuals
@@ -448,7 +448,7 @@ export class Visual implements IVisual {
         let values: DataViewValueColumnGroup[] = categoricalDataView.values.grouped();
 
         let data = {};
-        // iterate categories/countries
+        // iterate categories/countries-regions
         categories.map((category: PrimitiveValue, categoryIndex: number) => {
             data[category.toString()] = {};
             // iterate series/years
@@ -820,12 +820,14 @@ The visual gets its data structure as described in the following code (only the 
 
 ### Expand and collapse row headers
 
-For **API 4.1.0** or later, matrix data supports [expanding and collapsing row headers](../../visuals/desktop-matrix-visual.md#expanding-and-collapsing-row-headers).
+For **API 4.1.0** or later, matrix data supports [expanding and collapsing row headers](../../visuals/desktop-matrix-visual.md#expanding-and-collapsing-row-headers). From **API 4.2** you can expand/collapse entire level programmatically.
 The expand and collapse feature optimizes fetching data to the dataView by allowing the user to expand or collapse a row without fetching all the data for the next level. It only fetches the data for the selected row. The row header’s expansion state remains consistent across bookmarks and even across saved reports. It's not specific to each visual.
 
 Expand and collapse commands can be added to the context menu by supplying the `dataRoles` parameter to the `showContextMenu` method.
 
 :::image type="content" source="media/dataview-mappings/expand-collapse-context-menu.png" alt-text="Screenshot showing context menu with expand and collapse options.":::
+
+To expand a large number of data points, use the [fetch more data API](./fetch-more-data.md) with the expand/collapse API.
 
 #### API features
 
@@ -1027,8 +1029,5 @@ You can apply the data reduction algorithm to the `rows` and `columns` sections 
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Add drill-down support](drill-down-support.md)
-
-> [!div class="nextstepaction"]
-> [Create custom Power BI visuals without data binding](no-dataroles-support.md)
+* [Add drill-down support](drill-down-support.md)
+* [Create custom Power BI visuals without data binding](no-dataroles-support.md)

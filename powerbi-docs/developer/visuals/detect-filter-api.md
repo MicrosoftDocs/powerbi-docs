@@ -15,7 +15,7 @@ ms.date: 06/19/2022
 > [!NOTE]
 > This feature is available from API version 5.4
 
-The `isDataFilterApplied` boolean parameter in the `DataViewMetadata` object notes if the rendered visual or report has any filters applied to it. The developer can then adjust the display accordingly (for exmaple, by adding or removing text depending on if there's a filter). This feature applies whether the filter is applied to the entire report, page, or specific visual.
+The `isDataFilterApplied` boolean parameter in the `DataViewMetadata` object notes if the rendered visual or report has any filters applied to it. The developer can then adjust the display accordingly (for example, by adding or removing text depending on if there's a filter). This feature applies whether the filter is applied to the entire report, page, or specific visual.
 
 To use the `isDataFilterApplied` parameter:
 

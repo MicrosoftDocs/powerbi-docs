@@ -1,8 +1,8 @@
 ---
 title: Row-level security (RLS) with Power BI
 description: How to configure row-level security for imported datasets, and DirectQuery, within the Power BI service.
-author: paulinbar
-ms.author: painbar
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -24,7 +24,7 @@ By default, row-level security filtering uses single-directional filters, whethe
 
 For more information, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](../transform-model/desktop-bidirectional-filtering.md) and the [Securing the Tabular BI Semantic Model](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) technical article.
 
-![Apply Security Filter](media/service-admin-rls/rls-apply-security-filter.png)
+ :::image type="content" source="media/service-admin-rls/rls-apply-security-filter.png" alt-text="Screenshot of the apply Security Filter.":::
 
 ## Define roles and rules in Power BI Desktop using enhanced row-level security editor (Preview)
 
@@ -77,13 +77,13 @@ To manage security on your data model, open the workspace where you saved your r
 
 1. In the Power BI service, select the **More options** menu for a dataset. This menu appears when you hover on a dataset name, whether you select it from the navigation menu or the workspace page.
 
-    ![More options menu in workspace](media/service-admin-rls/dataset-leftnav-more-options.png)
+    :::image type="content" source="media/service-admin-rls/dataset-leftnav-more-options.png" alt-text="Screenshot showing the more options menu in the workspace.":::
 
-    ![More options menu in navigation menu](media/service-admin-rls/dataset-canvas-more-options.png)
+    :::image type="content" source="media/service-admin-rls/dataset-canvas-more-options.png" alt-text="Screenshot showing the more options menu in navigation menu.":::
 
 1. Select **Security**.
 
-   ![Select security from more options menu](media/service-admin-rls/dataset-more-options-menu.png)
+    :::image type="content" source="media/service-admin-rls/dataset-more-options-menu.png" alt-text="Screenshot showing the more options menu with Security selected.":::
 
 Security takes you to the Role-Level Security page where you add members to a role you created in Power BI Desktop. Contributor (and higher workspace roles) will see **Security** and can assign users to a role.
 
@@ -99,21 +99,21 @@ You can use the following groups to set up row level security.
 
 - Distribution Group
 - Mail-enabled Group
-- Security Group
+- [Azure Active Directory Security Group](/azure/active-directory/fundamentals/groups-view-azure-portal)
 
 Note, however, that Microsoft 365 groups aren't supported and can't be added to any roles.
 
-![Add a member](media/service-admin-rls/rls-add-member.png)
+ :::image type="content" source="media/service-admin-rls/rls-add-member.png" alt-text="Screenshot showing how to add a member.":::
 
 You can also see how many members are part of the role by the number in parentheses next to the role name, or next to Members.
 
-![Members in role](media/service-admin-rls/rls-member-count.png)
+ :::image type="content" source="media/service-admin-rls/rls-member-count.png" alt-text="Screenshot showing members in role.":::
 
 ### Remove members
 
 You can remove members by selecting the X next to their name.
 
-![Remove member](media/service-admin-rls/rls-remove-member.png)
+ :::image type="content" source="media/service-admin-rls/rls-remove-member.png" alt-text="Screenshot showing how to remove a member.":::
 
 ## Validating the role within the Power BI service
 
@@ -122,17 +122,17 @@ You can validate that the role you defined is working correctly in the Power BI 
 1. Select **More options** (...) next to the role.
 2. Select **Test data as role**.
 
-![Test as role](media/service-admin-rls/rls-test-role.png)
+ :::image type="content" source="media/service-admin-rls/rls-test-role.png" alt-text="Screenshot of test as role option.":::
 
 You're redirected to the report that was published from Power BI Desktop with this dataset, if it exists. Dashboards aren't available for testing using the  **Test as role** option.
 
 In the page header, the role being applied is shown.
 
-![Screenshot of Now viewing as Eastern US.](media/service-admin-rls/rls-test-role2.png)
+ :::image type="content" source="media/service-admin-rls/rls-test-role2.png" alt-text="Screenshot of Now viewing as Eastern US.":::
 
 Test other roles, or a combination of roles, by selecting **Now viewing as**.
 
-![Test other roles](media/service-admin-rls/rls-test-role3.png)
+ :::image type="content" source="media/service-admin-rls/rls-test-role3.png" alt-text="Screenshot showing the test other roles option.":::
 
 You can choose to view data as a specific person or you can select a combination of available roles to validate they're working.
 
@@ -156,5 +156,7 @@ If you publish your Power BI Desktop report to a [workspace](../collaborate-shar
 - [Restrict data access with row-level security (RLS) for Power BI Desktop](../enterprise/service-admin-rls.md)
 - [Row-level security (RLS) guidance in Power BI Desktop](../guidance/rls-guidance.md)
 - [Power BI implementation planning: Report consumer security planning](/power-bi/guidance/powerbi-implementation-planning-security-report-consumer-planning#enforce-data-security-based-on-consumer-identity)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- [RLS for Embedded scenarios for ISVs](../developer/embedded/embedded-row-level-security.md)
+
+Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

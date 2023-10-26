@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Advanced data model management"
 description: "Learn how Power BI advanced data model management is about empowering creators with advanced data modeling and publishing capabilities."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -19,7 +19,7 @@ This usage scenario focuses on *advanced data model management*, which is when a
 Data models are hosted in either the Power BI service, Azure Analysis Services (AAS), or SQL Server Analysis Services (SSAS). This usage scenario focuses on using the XMLA endpoint in the Power BI service.
 
 > [!TIP]
-> Many people refer to third-party tools as *external tools*. However, there are distinctions in how different tools may be used. Connecting to a local data model in Power BI Desktop is the most literal interpretation of the term *external tool*. This advanced data model management usage scenario focuses on connecting to a remote data model (a dataset hosted in the Power BI service) by using the XMLA endpoint. More details on the different ways to use third-party tools are described [later in this article](#third-party-applications-and-tools).
+> Many people refer to third-party tools as *external tools*. However, there are distinctions in how different tools can be used. Connecting to a local data model in Power BI Desktop is the most literal interpretation of the term *external tool*. This advanced data model management usage scenario focuses on connecting to a remote data model (a dataset hosted in the Power BI service) by using the XMLA endpoint. More details on the different ways to use third-party tools are described [later in this article](#third-party-applications-and-tools).
 
 You can achieve connectivity to a data model by using the *[XML for Analysis (XMLA)](/analysis-services/xmla/xml-for-analysis-xmla-reference)* protocol. The XMLA protocol is an industry standard protocol that's supported by more than 25 vendors, including Microsoft. All tools, including [third-party tools](/power-bi/enterprise/service-premium-connect-tools#client-applications-and-tools), that are compliant with the XMLA protocol use Microsoft [client libraries](/power-bi/enterprise/service-premium-connect-tools#client-libraries) to read and/or write data to a data model. Connectivity is achieved with an XMLA endpoint, which is an API exposed by a data model that broadens the development and management capabilities available to dataset creators.
 
@@ -147,7 +147,7 @@ Typically, a data gateway is required when accessing data sources that reside wi
 
 ### System oversight
 
-The [activity log](../admin/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-adoption-roadmap-system-oversight.md#auditing) to help them understand [activities that connect through XMLA endpoints](/power-bi/enterprise/service-premium-connect-tools#audit-logs).
+The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand [activities that connect through XMLA endpoints](/power-bi/enterprise/service-premium-connect-tools#audit-logs).
 
 ## Next steps
 

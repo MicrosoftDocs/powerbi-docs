@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 08/07/2022
+ms.date: 07/20/2023
 LocalizationGroup: Premium
 ---
 
@@ -57,10 +57,10 @@ You can tune the behavior of the workloads, by configuring workload settings for
 
 ### Monitor workloads
 
-Use the [Power BI Premium utilization and metrics app](../enterprise/service-premium-metrics-app.md) to monitor your capacity's activity.
+Use the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) to monitor your capacity's activity.
 
 > [!IMPORTANT]
-> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. For more information, see [capacity and reliability notifications](../support/service-interruption-notifications.md#capacity-and-reliability-notifications).
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. For more information, see [Notifications](../admin/service-admin-premium-capacity-notifications.md).
 
 ## AI (Preview)
 
@@ -148,6 +148,8 @@ The default setting is 0, which results in the following SKU-specific automatic 
 | **Automatic Query Memory Limit** | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   | 10 GB   | 10 GB   |
 
 To safeguard the performance of the system, a hard ceiling of 10 GB is enforced for all queries executed by Power BI reports, regardless of the query memory limit configured by the user. This hard ceiling doesn't apply to queries issued by tools that use the Analysis Services protocol (also known as XMLA). Users should consider simplifying the query or its calculations if the query is too memory intensive.
+
+The query limit for a workspace that isn't assigned to a Premium capacity is 1GB.
 
 #### Query Timeout
 

@@ -36,7 +36,7 @@ Watch Will create a combo chart using the Sales and Marketing sample.
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>  
+> [!VIDEO https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP]  
 
 <a name="create"></a>
 
@@ -169,7 +169,8 @@ Highlighting a column or line in a combo chart cross-highlights and cross-filter
 
 ## Considerations and limitations
 
-Depending on the size of your combo chart, the data labels may or may not display.  If you don't see data labels, resize the combo chart. 
+* The secondary y-axis (line values) will automatically show or hide by default if its data range sufficiently overlaps with the primary y-axis (column values).  To force show or hide the secondary y-axis, toggle the top-level toggle switch to "On" or "Off" on the "Secondary y-axis" formatting card to override this automatic behavior.
+* Depending on the size of your combo chart, the data labels may or may not display.  If you don't see data labels, resize the combo chart. 
 
 ## Next steps
 

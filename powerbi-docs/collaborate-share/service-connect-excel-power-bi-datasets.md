@@ -3,25 +3,25 @@ title: Power BI dataset experience in Excel
 description: In Excel Desktop or Excel for the web, you can discover all the Power BI datasets that you have access to. You can explore that data in Excel spreadsheets using PivotTables and other Excel capabilities.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ikedeagu
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/13/2023
+ms.date: 08/22/2023
 LocalizationGroup: Share your work
 ---
 # Power BI dataset experience in Excel
 
 In Excel Desktop or Excel for the web, you can discover all the Power BI datasets that you have access to. You can explore that data in Excel spreadsheets using PivotTables and other Excel capabilities. With the Power BI dataset experience in Excel, you can:  
 
-- Easily search for your Power BI data in Excel and analyze that data using PivotTables.
+- Easily search for your Power BI data in Excel and analyze that data using PivotTables and connected tables.
 - Navigate to the Data hub in the Power BI service (`https://app.powerbi.com`), where you can discover other data artifacts (including Power BI datamarts) and trusted data in your organization.
-- Derive additional insights on the dataset you are exploring in Excel by viewing related Power BI reports.
+- Get additional insights on the dataset you are exploring in Excel by viewing related Power BI reports.
 
 ## Requirements 
 
-- Your organization’s tenant administrator must enable the **Users can work with Power BI datasets in Excel using a live connection** tenant setting. Learn more about the [Excel live connection](../admin/service-admin-portal-export-sharing.md#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
-- For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
+- Your organization’s tenant administrator must enable the **Users can work with Power BI datasets in Excel using a live connection** tenant setting. Learn more about the [Excel live connection](/fabric/admin/service-admin-portal-export-sharing#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
+- For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
 - You must have Excel Desktop (Builds greater than or equal to **16.0.15128**) and Excel for the web. To see if you have the right build for Excel Desktop, open **File** > **Account** > **About Excel** and confirm that the first five digits of the Build number are greater than or equal to 15128.
 
     :::image type="content" source="media/service-analyze-in-excel/build-excel-number.png" alt-text="Screenshot showing About Excel with Build number.":::
@@ -44,7 +44,7 @@ To connect to live Power BI datasets from inside Excel, use one of these two opt
 
 After you've selected **From Power BI** using either of these options, a pane opens on the right of the screen that shows Power BI datasets you have access to.
 
-:::image type="content" source="media/service-connect-excel-power-bi-datasets/excel-power-bi-dataset-list.png" alt-text="Screenshot showing list of Power BI dataset in Excel.":::
+:::image type="content" source="media/service-connect-power-bi-datasets-excel/excel-datasets-pane.png" alt-text="Screenshot showing list of Power BI dataset in Excel.":::
 
 Each dataset card shows the following information:
 
@@ -63,21 +63,29 @@ Near the search bar in the pane, there's also a redirect web link to the Power B
 
 To start exploring your Power BI data in Excel, select one of the pre-loaded datasets in the pane or find additional datasets by typing your search parameters in the search bar and pressing Enter on your keyboard.
 
-When you find the dataset you want, select **Insert PivotTable** in the card. A blank PivotTable is added to a new worksheet in your Excel workbook.
+When you find the dataset you want, select **Insert PivotTable** or **Insert Table** in the card. The **Insert Table** option is available in Excel Desktop.
 
-:::image type="content" source="media/service-connect-excel-power-bi-datasets/insert-pivottable-button.png" alt-text="Screenshot showing a dataset card and Insert PivotTable.":::
+:::image type="content" source="media/service-connect-power-bi-datasets-excel/insert-pivot-table-insert-table-button.png" alt-text="Screenshot showing a dataset card and Insert PivotTable and Insert Table buttons.":::
 
-In **PivotTable Fields**, you can see all the tables and measures from your Power BI dataset. You can start building your report in Excel.
+When you select **Insert PivotTable**, a blank PivotTable is added to a new worksheet in your Excel workbook. In **PivotTable Fields**, you can see all the tables and measures from your Power BI dataset. You can start building your report in Excel.
 
 :::image type="content" source="media/service-connect-excel-power-bi-datasets/pivottable-fields-excel.png" alt-text="Screenshot showing the PivotTable Fields list in Excel." lightbox="media/service-connect-excel-power-bi-datasets/pivottable-fields-excel.png":::
+
+When you select **Insert Table**, the **Create Table** dialog opens, where you can use the Data, Build, and Filters panes to design the table you'd like. Use the **Insert Table** button to add the table to the Excel sheet.  
+
+:::image type="content" source="media/service-connect-power-bi-datasets-excel/create-table-insert-table.png" alt-text="Screenshot showing the Create Table dialog." lightbox="media/service-connect-power-bi-datasets-excel/create-table-insert-table.png":::
+
 
 ## Considerations and limitations 
 
 - After you select **From Power BI** in the Excel ribbon, the artifacts loaded in the pane are not all the datasets you have access to. They're a selection of your most used datasets. Use the search bar in the pane to get additional datasets.
+- The **Insert Table** option is only available in Excel Desktop. 
 
 - The order of Power BI datasets in the pane may be different from their order in the Data hub in the Power BI service.
 
 - For newly created datasets, recently refreshed datasets, or datasets that you just got access to, it may take up to 24 hours for these datasets to show up in the Power BI Datasets pane. If you don't see the dataset you want, navigate to the Power BI Data hub (`https://app.powerbi.com/datahub`) from the Power BI Datasets pane in Excel and use **Analyze in Excel** to create an Excel workbook for that dataset.
+
+- Excel and Power BI visuals use different query languages and data load behaviors, so data load performance can be different between Excel and Power BI.
 
 ## Next steps
 

@@ -20,6 +20,12 @@ As we make improvements to the Power BI service, we'll release some new function
 
 Some preview features can be toggled on and off from your Power BI dashboard, Home, or report itself. While other preview features are made available from your *Settings* menu. This article shows you how to access preview features via the Settings menu.
 
+Preview features come with some disclaimers. Preview features:
+* Aren't meant for production use.
+* Aren't supported by Microsoft Support for production use. Microsoft Support is, however, eager to get your feedback on the preview functionality, and might provide best-effort support in certain cases.
+* May have limited or restricted functionality.
+* May not be available in all geographic areas.
+
 ## Find previews and turn them on (and off)
 1. Open your Settings menu by selecting the gear icon in the upper-right corner of your Power BI screen and choosing **Settings**.
    

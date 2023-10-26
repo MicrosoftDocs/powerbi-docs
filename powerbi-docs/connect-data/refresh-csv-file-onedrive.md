@@ -8,12 +8,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/23/2023
+ms.date: 06/05/2023
 LocalizationGroup: Data refresh
 ---
 # Refresh a dataset created from a .CSV file on OneDrive or SharePoint
 
 When you connect to a comma separated value (*.csv*) file on OneDrive or SharePoint, a dataset is created in Power BI. Data from the *.csv* file is imported into the dataset in Power BI. Power BI then automatically connects to the file and refreshes any changes with the dataset in Power BI. If you edit the *.csv* file in OneDrive, or SharePoint, after you save, those changes will appear in Power BI, usually within about an hour. Any visualizations in Power BI based on the dataset are automatically updated.
+
+> [!NOTE]
+> By default, using the **Get Data** experience for specific file type connectors in Power BI Desktop uses a local reference to the file stored on OneDrive, which will not automatically update unless you have a gateway configured. To have your CSV automatically update without having to configure a gateway, rather than using the **Text/CSV** connector, use the **Web** connector and reference the online version of your CSV. 
 
 ## Advantages
 

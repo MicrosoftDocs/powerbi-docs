@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Team BI"
 description: "Learn how Power BI team BI is about small team collaboration."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -47,7 +47,7 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 10.](media/common/icon-10-red-30x30.png) | Scheduled data refresh can be set up in the Power BI service to keep imported data—in datasets or dataflows—up to date. |
 | ![Item 11.](media/common/icon-11-red-30x30.png) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required for data refresh. |
 | ![Item 12.](media/common/icon-12-red-30x30.png) | Other self-service content creators can author new reports using an existing dataset. They can choose to use Power BI Desktop, Excel, or Power BI Report Builder (not depicted in the scenario diagram). The [reuse of existing datasets](../connect-data/desktop-report-lifecycle-datasets.md) in this manner is highly encouraged. |
-| ![Item 13.](media/common/icon-13-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. Team BI solutions may be subject to more governance requirements than [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md), but fewer than [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) and [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) solutions. |
+| ![Item 13.](media/common/icon-13-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. Team BI solutions could be subject to more governance requirements than [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md), but fewer than [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) and [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) solutions. |
 
 ## Key points
 
@@ -100,7 +100,7 @@ Typically, a data gateway is required when accessing data sources that reside wi
 
 ### System oversight
 
-The [activity log](../admin/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-adoption-roadmap-system-oversight.md#auditing) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements.
+The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements.
 
 ## Next steps
 

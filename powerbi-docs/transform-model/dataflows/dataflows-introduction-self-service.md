@@ -7,10 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/22/2023
+ms.date: 08/10/2023
 LocalizationGroup: Data from files
 ---
+
 # Introduction to dataflows and self-service data prep
+
+>[!TIP]
+>You can also try Dataflow Gen2 in [Data Factory in Microsoft Fabric](/fabric/data-factory/), an all-in-one analytics solution for enterprises. [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview) covers everything from data movement to data science, real-time analytics, business intelligence, and reporting. Learn how to [start a new trial](/fabric/get-started/fabric-trial) for free.
 
 As data volume continues to grow, so does the challenge of wrangling that data into well-formed, actionable information. We want data that’s ready for analytics, to populate visuals, reports, and dashboards, so we can quickly turn our volumes of data into actionable insights. With self-service data prep for big data in Power BI, you can go from data to Power BI insights with just a few actions.
 
@@ -33,7 +37,7 @@ Dataflows are designed to support the following scenarios:
 You can use Power BI Desktop and the Power BI service with dataflows to create datasets, reports, dashboards, and apps that use the Common Data Model. From these resources, you can gain deep insights into your business activities. Dataflow refresh scheduling is managed directly from the workspace in which your dataflow was created, just like your datasets.
 
 > [!NOTE]
-> Dataflows are not available in the Power BI service for U.S. Government DoD customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
+> Dataflows may not be available in the Power BI service for all U.S. Government DoD customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
 
 
 ## Next steps

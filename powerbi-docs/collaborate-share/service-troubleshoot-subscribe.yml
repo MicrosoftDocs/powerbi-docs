@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: pbi-explore
   ms.topic: troubleshooting
-  ms.date: 02/09/2023
+  ms.date: 09/21/2023
   LocalizationGroup: Share your work
     
 title: Frequently asked questions about Troubleshooting Power BI subscriptions
@@ -55,7 +55,7 @@ sections:
           - If you have an alternate email address but no primary, Power BI uses that to deliver the subscription. 
           
           ### Admin portal settings
-          - Email subscriptions aren't supported when Block Public Internet Access is enabled in the Power BI admin portal. 
+          - If your admin has enabled the tenant setting for **Block Public Internet Access**, then email subscriptions with full report attachment (FRA) or report preview aren't delivered.  
 
       - question: |
           The links in my email subscription no longer work

@@ -23,7 +23,7 @@ The add-in currently supports adding individual report pages and individual visu
 * When you add a whole report page, the left-hand page navigation pane isn't brought in by the add-in, but any page navigation visuals on the report page itself will function normally as they do in the Power BI service.
 * Adding individual visuals is useful when you want your slide to focus on a single chart, graph, or table.
 
-You can add report pages or visuals to PowerPoint presentations starting from either PowerPoint or Power BI. For Power BI to be used as the starting point, Power BI storytelling functionality must be [enabled in your organization](../admin/service-admin-portal-export-sharing.md#enable-power-bi-add-in-for-powerpoint).
+You can add report pages or visuals to PowerPoint presentations starting from either PowerPoint or Power BI. For Power BI to be used as the starting point, Power BI storytelling functionality must be [enabled in your organization](/fabric/admin/service-admin-portal-export-sharing#enable-power-bi-add-in-for-powerpoint).
 
 To start adding live Power BI data to your presentations, see [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md).
 
@@ -47,7 +47,7 @@ If you're a Power BI administrator, see [Information for Power BI administrators
 * The add-in currently supports Power BI report pages and visuals only. Other types of items such as dashboards and paginated reports aren't supported.
 * [Business-to-business (B2B)](../enterprise/service-admin-azure-ad-b2b.md) scenarios aren't supported.
 * The [add-in side pane options](./service-power-bi-powerpoint-add-in-view-present.md#add-in-side-pane) **Delete**, **Reload**, and **Show as Saved Image** are available only in the PowerPoint desktop application. This is because PowerPoint for the web doesn't support the add-in side menu.
-* **In national clouds, the add-in is supported as an admin managed add-in only**, as the Office add-in store isn't accessible from national clouds. Admins should see [Deploying the add-in in sovereign clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-national-clouds) for information about how to get and deploy the add-in.
+* **In national/regional clouds, the add-in is supported as an admin managed add-in only**, as the Office add-in store isn't accessible from national/regional clouds. Admins should see [Deploying the add-in in sovereign clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-nationalregional-clouds) for information about how to get and deploy the add-in.
 
 ## Next Steps
 

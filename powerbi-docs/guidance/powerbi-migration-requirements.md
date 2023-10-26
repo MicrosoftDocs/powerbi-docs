@@ -1,8 +1,8 @@
 ---
 title: Gather requirements to migrate to Power BI
 description: Guidance on gathering and prioritizing requirements when migrating to Power BI.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -40,20 +40,20 @@ The inventory of existing BI items, compiled in the [pre-migration steps](powerb
 Compile thorough, easy-to-reference, information about reports, such as:
 
 - **Purpose, audience, and expected action:** Identify the purpose and business process applicable to each report, as well as the audience, analytical workflow, and expected action to be taken by report consumers.
-- **How consumers use the report:** Consider sitting with report consumers of the existing report to understand exactly what they do with it. You may learn that certain elements of the report can be eliminated or improved in the new Power BI version. This process involves additional time investment but it's valuable for critical reports or reports that are used often.
-- **Owner and subject matter expert:** Identify the report owner and any subject matter expert(s) associated with the report or data domain. They may become the owners of the new Power BI report going forward. Include any specific change management requirements (which typically differ between IT-managed and business-managed solutions) as well as approvals and sign-offs, which will be required when changes are made in the future. For more information, see [this article](powerbi-adoption-roadmap-content-ownership-and-management.md).
-- **Content delivery method:** Clarify report consumer expectations for content delivery. It may be on-demand, interactive execution, embedded within a custom application, or delivery on a schedule using an e-mail subscription. There may also be requirements to trigger alert notifications.
+- **How consumers use the report:** Consider sitting with report consumers of the existing report to understand exactly what they do with it. You might learn that certain elements of the report can be eliminated or improved in the new Power BI version. This process involves additional time investment but it's valuable for critical reports or reports that are used often.
+- **Owner and subject matter expert:** Identify the report owner and any subject matter expert(s) associated with the report or data domain. They might become the owners of the new Power BI report going forward. Include any specific change management requirements (which typically differ between IT-managed and business-managed solutions) as well as approvals and sign-offs, which will be required when changes are made in the future. For more information, see [this article](powerbi-adoption-roadmap-content-ownership-and-management.md).
+- **Content delivery method:** Clarify report consumer expectations for content delivery. It could be on-demand, interactive execution, embedded within a custom application, or delivery on a schedule using an e-mail subscription. There might also be requirements to trigger alert notifications.
 - **Interactivity needs:** Determine *must-have* and *nice-to-have* interactivity requirements, such as filters, drill-down actions, or drillthrough actions.
 - **Data sources:** Ensure all data sources required by the report are discovered, and data latency needs (data freshness) are understood. Identify historical data, trending, and data snapshot requirements for each report so they can be aligned with the data requirements. Data source documentation can also be useful later on when performing data validation of a new report with its source data.
 - **Security requirements:** Clarify security requirements (such as allowed viewers, allowed editors, and any row-level security needs), including any exceptions to normal organizational security. Document any data sensitivity level, data privacy, or regulatory/compliance needs.
 - **Calculations, KPIs, and business rules:** Identify and document all calculations, KPIs, and business rules that are currently defined within the existing report so they can be aligned with the data requirements.
 - **Usability, layout, and cosmetic requirements:** Identify specific usability, layout, and cosmetic needs related to data visualizations, grouping and sorting requirements, and conditional visibility. Include any specific considerations related to mobile device delivery.
-- **Printing and exporting needs:** Determine whether there are any requirements specific to printing, exporting, or pixel-perfect layout. These needs will influence which type of report will be most suitable (such as a Power BI, Excel, or paginated report). Be aware that report consumers tend to place a lot of importance on how they've always done things, so don't be afraid to challenge their way of thinking. Be sure to talk in terms of *enhancements* rather than *change*.
+- **Printing and exporting needs:** Determine whether there are any requirements specific to exporting or print-ready layout. These needs will influence which type of report will be most suitable (such as a Power BI, Excel, or paginated report). Be aware that report consumers tend to place a lot of importance on how they've always done things, so don't be afraid to challenge their way of thinking. Be sure to talk in terms of *enhancements* rather than *change*.
 - **Risks or concerns:** Determine whether there are other technical or functional requirements for reports, as well as any risks or concerns regarding the information being presented in them.
 - **Open issues and backlog items:** Identify any future maintenance, known issues, or deferred requests to add to the backlog at this time.
 
 > [!TIP]
-> Consider ranking requirements by classifying them as *must have* or *nice to have*. Frequently consumers ask for everything they may possibly need up-front because they believe it may be their only chance to make requests. Also, when addressing priorities in multiple iterations, make the backlog available to stakeholders. It helps with communication, decision-making, and the tracking of pending commitments.
+> Consider ranking requirements by classifying them as *must have* or *nice to have*. Frequently consumers ask for everything they might possibly need up-front because they believe it's their only chance to make requests. Also, when addressing priorities in multiple iterations, make the backlog available to stakeholders. It helps with communication, decision-making, and the tracking of pending commitments.
 
 ### Gather data requirements
 
@@ -75,9 +75,9 @@ Compile detailed information pertaining to data, such as:
 
 ## Identify improvement opportunities
 
-In most situations, some modifications and improvements occur. It's rare that a direct one-to-one migration occurs without any refactoring or enhancement. Three types of improvements you may consider include:
+In most situations, some modifications and improvements occur. It's rare that a direct one-to-one migration occurs without any refactoring or enhancement. Three types of improvements you can consider include:
 
-- **Consolidation of reports:** Similar reports may be consolidated using techniques such as filters, bookmarks, or personalization. Having fewer reports, which are each more flexible, can significantly improve the experience for report consumers. Consider optimizing datasets for [Q&A (natural language querying)](../natural-language/q-and-a-best-practices.md) to deliver even greater flexibility to report consumers, allowing them to create their own visualizations.
+- **Consolidation of reports:** Similar reports might be consolidated using techniques such as filters, bookmarks, or personalization. Having fewer reports, which are each more flexible, can significantly improve the experience for report consumers. Consider optimizing datasets for [Q&A (natural language querying)](../natural-language/q-and-a-best-practices.md) to deliver even greater flexibility to report consumers, allowing them to create their own visualizations.
 - **Efficiency improvements:** During requirements gathering, improvements can often be identified. For instance, when analysts compile numbers manually or when a workflow can be streamlined. [Power Query](../transform-model/desktop-query-overview.md) can play a large role in replacing manual activities that are currently performed. If business analysts find themselves performing the same activities to cleanse and prepare data on a regular basis, repeatable Power Query data preparation steps can yield significant time savings and reduce errors.
 - **Centralization of data model:** An authoritative and certified dataset serves as the backbone for managed self-service BI. In this case, the data is managed once, and analysts have flexibility to use and augment that data to meet their reporting and analysis needs.
 
@@ -86,20 +86,20 @@ In most situations, some modifications and improvements occur. It's rare that a 
 
 ## Prioritize and assess complexity
 
-At this point, the initial inventory is available and may include specific requirements. When prioritizing the initial set of BI items ready for migration, reports and data should be considered collectively as well as independently of each other.
+At this point, the initial inventory is available and might include specific requirements. When prioritizing the initial set of BI items ready for migration, reports and data should be considered collectively as well as independently of each other.
 
-Identify high priority reports, which may include reports that:
+Identify high priority reports, which might include reports that:
 
 - Bring significant value to the business.
 - Are executed frequently.
 - Are required by senior leadership or executives.
 - Involve a reasonable level of complexity (to improve chances of success during the initial migration iterations).
 
-Identify high priority data, which may include data that:
+Identify high priority data, which might include data that:
 
 - Contains critical data elements.
 - Is common organizational data that serves many use cases.
-- May be used to create a shared dataset for reuse by reports and many report authors.
+- Can be used to create a shared dataset for reuse by reports and many report authors.
 - Involves a reasonable level of complexity (to improve chances of success when in the initial migration iterations).
 
 ## Next steps

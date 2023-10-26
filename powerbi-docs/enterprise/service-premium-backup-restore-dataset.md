@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.date: 11/11/2022
 LocalizationGroup: Premium
 ---
+
 # Backup and restore datasets with Power BI Premium
 
 You can use the **Backup and Restore** feature with Power BI datasets if you have a Power BI Premium or Premium Per User (PPU) license, similar to the backup and restore operations available in tabular models for Azure Analysis Services.
@@ -65,11 +66,11 @@ If you rename a workspace, the backup folder in the *power-bi-backup* container 
 
 When using the **Backup and Restore** feature with Power BI, keep the following in mind.
 
-* Power BI must be able to access your ADLS Gen2 directly. Your ADLS Gen2 can't be located in a VNET.
+* Power BI must be able to access your ADLS Gen2 directly. Your ADLS Gen2 can't be located in a VNET and the firewall can't be turned on.
+
 * If your ADLS Gen2 is already working with **Backup and Restore**, and you disconnect and later reconfigure it to work with **Backup and Restore** again. You must first rename or move the previous backup folder, or the attempt will result in errors and failure.
 * **Restore** only supports restoring the database as a **Large Model (Premium)** database.
 * Only **enhanced format model (V3 model)** is allowed to be restored.
-* **Password** encryption in the backup command isn't supported
 * There's a new property, `ignoreIncompatibilities`, for the `restore` command that addresses Row-level security (RLS) incompatibilities between Azure Analysis Services (AAS) and Power BI Premium. Power BI Premium only supports the read permission for roles, but AAS supports all permissions. If you try to restore a backup file for which some roles don't have *read* permissions, you must specify the `ignoreIncompatibilities` property in the `restore` command. If not specified, restore can fail. When specified, the role without the *read* permission is dropped. Currently, there's no setting in SSMS that supports the `ignoreIncompatibilities` property, however, you can specify it in a `restore` command using Tabular Model Scripting Language (TMSL). For example:
 
     ```json
@@ -125,3 +126,4 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 * [Configuring tenant and workspace storage](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/).
+

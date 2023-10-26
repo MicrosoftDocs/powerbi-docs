@@ -7,14 +7,14 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 10/12/2022
+ms.date: 07/12/2023
 ---
 
 # Capabilities and properties of Power BI visuals
 
 Every visual has a *capabilities.json* file that is created automatically when you run the `pbiviz new <visual project name>` command to [create a new visual](develop-circle-card.md). The *capabilities.json* file describes the visual to the host.
 
-The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. Starting from API v4.6.0, **all properties on the capabilities model are *optional* except `privileges`, which are *mandatory*.**
+The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. Starting from API v4.6.0, **all properties on the capabilities model are *optional* except `privileges`, which are *required*.**
 
 The *capabilities.json* file lists the root objects in the following format:
 
@@ -261,10 +261,27 @@ Objects describe customizable properties that are associated with the visual. Th
 }
 ```
 
+For example, to support [dynamic format strings](../../create-reports/desktop-custom-format-strings.md) in your custom visual, define the following object:
+
+```json
+"objects": {
+        "general": {
+            "properties": {
+                "formatString": {
+                    "type": {
+                        "formatting": {
+                            "formatString": true
+                        }
+                    }
+                }
+            }
+        },
+```
+
 For more information, see [Objects and properties of Power BI visuals](objects-properties.md).
 
 ## Next steps
 
 * [Understand data view mapping in Power BI visuals](dataview-mappings.md)
 * [Objects and properties of Power BI visuals](objects-properties.md)
-*[Sorting options for Power BI visuals](sort-options.md)
+* [Sorting options for Power BI visuals](sort-options.md)

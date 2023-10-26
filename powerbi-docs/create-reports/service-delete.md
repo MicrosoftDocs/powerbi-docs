@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/12/2023
+ms.date: 07/18/2023
 LocalizationGroup: Common tasks
 ---
 # Delete almost anything in the Power BI service
@@ -55,15 +55,13 @@ Only workspace admins can remove people from a workspace. If you're an admin, yo
 
 ## Delete a workspace
 
-If you're a workspace admin, you can delete a workspace with no effect on any Microsoft 365 groups. As an admin for a workspace, you can delete it or remove others from it. When you delete the workspace, the associated app is also deleted for all group members, and the app is removed from AppSource.
+If you're a workspace admin, you can delete a workspace with no effect on any Microsoft 365 groups. As an admin for a workspace, you can delete it or remove others from it. When you delete the workspace, the associated app is also deleted for all group members, and the app is removed from AppSource. Everything contained in the workspace is permanently deleted after 30 days.
 
-1. From the nav pane, select **Workspaces**
+1. From the nav pane, open **Workspaces**, and open the workspace you want to delete.
 
-2. Select **More options** (...) to the right of the workspace to be deleted and choose **Workspace settings**.
+2. Select **More options** (...) to the top banner of the workspace and select **Workspace settings**.
 
-    ![Screenshot of Workspace options, highlighting the more options icon and Workspace settings.](media/service-delete/power-bi-delete-workspace.png)
-
-3. In the **Workspace settings** pane, select **Delete workspace** > **Delete**.
+3. In the **Workspace settings** pane, select **Other** > **Remove this workspace**.
 
 ## Considerations and limitations
 

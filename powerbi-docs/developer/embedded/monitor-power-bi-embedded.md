@@ -16,7 +16,7 @@ ms.date: 03/01/2023
 When you have critical applications and business processes that rely on Azure resources, you want to monitor those resources for their availability, performance, and operation. This article describes the monitoring data that Microsoft Power BI Embedded generates and how you can use the features of Azure Monitor to analyze and set alerts for this data.
 
 >[!TIP]
->You can also use the [Premium metrics app](../../enterprise/service-premium-metrics-app.md) to monitor your capacity.
+>You can also use the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) to monitor your capacity.
 
 ## Power BI Embedded Overview page
 

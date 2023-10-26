@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/12/2023
+ms.date: 10/09/2023
 ---
 # Pagination in Power BI paginated reports
 
@@ -58,6 +58,9 @@ You specify columns in the **Report Properties** pane or **Page Setup** dialog b
   
 ![Diagram of physical page with columns.](media/paginated-reports-pagination/power-bi-paginated-rs-page-columns.png)
   
+> [!NOTE]
+> Newsletter-style column reports aren't supported in subreports. For more information, see [Subreports in Power BI paginated reports](./subreports.md).
+
 ## Page breaks and page names
 
 A report might be more readable, and its data easier to audit and export, when the report has page names. Report Builder provides properties for these items:
@@ -88,7 +91,7 @@ The page break includes the following properties:
  
 You can set the *BreakLocation* property in the **Tablix Properties**, **Rectangle Properties**, or **Group Properties** dialog boxes, but you must set the *Disabled*, *ResetPageNumber*, and *PageName* properties in the Report Builder Properties pane. If the properties in the Properties pane are organized by category, you find the properties in the **PageBreak** category. For groups, the **PageBreak** category is inside the **Group** category.  
   
-You can use constants and simple or complex expressions to set the value of the *Disabled* and *ResetPageNumber* properties. However, you can't use expressions with the *BreakLocation* property. For more information about writing and using expressions, see [Expressions in Power BI Report Builder](report-builder-expressions.md).  
+You can use constants and simple or complex expressions to set the value of the *Disabled* and *ResetPageNumber* properties. However, you can't use expressions with the *BreakLocation* property. For more information about writing and using expressions, see [Expressions in Power BI Report Builder](expressions/report-builder-expressions.md).  
   
 In your report, you can write expressions that reference the current page names or page numbers by using the **Globals** collection. For more information, see [Built-in Globals and Users References](/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder) in the Report Builder and Reporting Services documentation.
   

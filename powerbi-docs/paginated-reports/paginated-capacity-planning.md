@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/04/2023
+ms.date: 06/06/2023
 LocalizationGroup: Premium
 ---
 
@@ -29,7 +29,7 @@ Before you start planning which capacity you need, review the [Capacities and SK
 
 When you plan your capacity, consider the following:
 
-* The complexity of the report design. Nested [tablix](/sql/reporting-services/report-design/tablix-data-region-report-builder-and-ssrs),  multiple subreport and multiple row and column groups add to the complexity of the design, and require capacity resources. report-builder-tables-matrices-lists
+* The complexity of the report design. Nested [tablix](report-builder-tables-matrices-lists.md),  multiple subreport and multiple row and column groups add to the complexity of the design, and require capacity resources. report-builder-tables-matrices-lists
 
 * The amount of data retrieved by the report. The more data the report needs, the more resources it requires from your capacity.
 
@@ -37,7 +37,7 @@ When you plan your capacity, consider the following:
 
 * The number of report parameters and parameter values used by your reports. More values and parameters, require more resources from your capacity.
 
-* Exporting large reports into formats such as Excel and PDF, requires more resources than reading every page, using toggles and searching within the reports.
+* When you export large reports into formats such as Excel and PDF, it requires more resources than reading every page, using toggles, and searching within the reports.
 
 ### How many users can a SKU handle?
 
@@ -69,9 +69,15 @@ Take into consideration that the numbers in the table refer to designated capaci
 
 * Data filtering
 
+## Concurrent requests
+
+Each workload on a capacity, including the paginated reports workload, has a maximum of 500 concurrent report renders at any given time. If your capacity is rendering 100 reports and has 200 requests for [exporting paginated reports](./../developer/embedded/export-paginated-report.md), you have 200 concurrent report render requests left.
+
+To avoid congestion, plan your concurrent requests load in advance. If you exceed the concurrent requests limit, you’ll encounter the *Too Many Requests (429)* error.
+
 ## Using the metrics app
 
-Using the [Premium metrics app](./../enterprise/service-premium-metrics-app.md) you can estimate the impact of your paginate report on your capacity. The app measures your CPU usage over time, allowing you to understand how your capacity is performing.
+Using the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) you can estimate the impact of your paginate report on your capacity. The app measures your CPU usage over time, allowing you to understand how your capacity is performing.
 
 To test your paginated report, we suggest that you use a dedicated clean capacity. A clean capacity helps isolate results from the impact of other users and workloads. For this test, we suggest using an *A SKU*.
 

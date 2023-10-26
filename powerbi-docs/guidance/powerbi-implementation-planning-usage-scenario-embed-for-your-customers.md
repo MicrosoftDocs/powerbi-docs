@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Embed for your customers"
 description: "Learn how a developer can programmatically embed Power BI content in a custom application for your customers."
-author: mberdugo
-ms.author: monaberdugo
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -33,9 +33,9 @@ The above diagram depicts the following user actions, tools, and features:
 | ![Item 2.](media/common/icon-02-red-30x30.png) | When ready, the content creator publishes the Power BI Desktop file (.pbix) to the [Power BI service](/power-bi/fundamentals/power-bi-service-overview). |
 | ![Item 3.](media/common/icon-03-red-30x30.png) | To connect to any data sources that reside within a private organizational network, an [on-premises data gateway](/power-bi/connect-data/service-gateway-onprem) is required for data refresh. |
 | ![Item 4.](media/common/icon-04-red-30x30.png) | A Power BI workspace contains Power BI items ready for embedding. An embedding identity, either a service principal or master user account, must belong to either the [workspace Admin or Member role](powerbi-implementation-planning-security-content-creator-planning.md#workspace-roles). In a multi-tenancy solution, the separation of tenants is achieved by creating one workspace for each tenant. This design pattern is known as _workspace separation_. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | The custom application prompts the app user to authenticate by using any authentication method (not necessarily Azure AD). |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | When authentication succeeds, the custom application uses the embedding identity to acquire and cache an Azure AD access token. |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | The custom application uses the Azure AD access token to make Power BI REST API calls on behalf of the embedding identity. Specifically, the application uses the access token to retrieve metadata about workspace items. Metadata includes properties required to embed content in the custom application. It also uses the access token to generate and cache embed tokens, which represent facts about Power BI content and how the application can access it. |
+| ![Item 5.](media/common/icon-05-red-30x30.png) | The custom application prompts the app user to authenticate by using any authentication method (not necessarily Microsoft Entra ID—[previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)). |
+| ![Item 6.](media/common/icon-06-red-30x30.png) | When authentication succeeds, the custom application uses the embedding identity to acquire and cache a Microsoft Entra access token. |
+| ![Item 7.](media/common/icon-07-red-30x30.png) | The custom application uses the Microsoft Entra access token to make Power BI REST API calls on behalf of the embedding identity. Specifically, the application uses the access token to retrieve metadata about workspace items. Metadata includes properties required to embed content in the custom application. It also uses the access token to generate and cache embed tokens, which represent facts about Power BI content and how the application can access it. |
 | ![Item 8.](media/common/icon-08-red-30x30.png) | The custom application embeds a specific Power BI item in an `iframe` HTML element. The application can support the creation and editing of Power BI reports, providing the embedding identity has permission to do so. |
 | ![Item 9.](media/common/icon-09-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. |
 
@@ -64,22 +64,22 @@ There's no limitation on where the content resides, except the content can't res
 
 ### Authentication
 
-The authentication flow is _non-interactive authentication_ with Azure AD (also known as _silent authentication_). Non-interactive authentication means that the app user isn't required to have a Power BI account, and even when they do, it isn't used. So a dedicated Azure AD identity, known as the embedding identity, authenticates with Azure AD. An embedding identity can be a service principal or a master user account (described later).
+The authentication flow is _non-interactive authentication_ with Microsoft Entra ID (also known as _silent authentication_). Non-interactive authentication means that the app user isn't required to have a Power BI account, and even when they do, it isn't used. So a dedicated Microsoft Entra identity, known as the embedding identity, authenticates with Microsoft Entra ID. An embedding identity can be a service principal or a master user account (described later).
 
-The authentication flow attempts to acquire an Azure token in a way in which the authentication service can't prompt the user for additional information. Once the app user authenticates with the app (the app can use any authentication method), the app uses the embedding identity to acquire an Azure AD token by using a non-interactive authentication flow.
+The authentication flow attempts to acquire a Microsoft Entra token in a way in which the authentication service can't prompt the user for additional information. Once the app user authenticates with the app (the app can use any authentication method), the app uses the embedding identity to acquire a Microsoft Entra token by using a non-interactive authentication flow.
 
-Once the app acquires an Azure AD token, it caches it and then uses it to generate an _embed token_. An embed token represents facts about Power BI content and how to access them. The app uses the embed token to embed content inside an `iframe` HTML element.
+Once the app acquires a Microsoft Entra token, it caches it and then uses it to generate an _embed token_. An embed token represents facts about Power BI content and how to access them. The app uses the embed token to embed content inside an `iframe` HTML element.
 
 #### Service principal
 
-An app can use a service principal to acquire an Azure AD token. An Azure service principal is a security identity used by apps. It defines the access policy and permissions for the app in the Azure AD tenant, enabling core features such as authentication of the app during sign in, and authorization during resource access. A service principal can authenticate by using an app secret or certificate. A service principal can only use Power BI REST APIs, when the _Allow service principals to use Power BI APIs_ tenant setting is enabled, and the service principal belongs to an allowed group.
+An app can use a service principal to acquire a Microsoft Entra token. A Microsoft Entra service principal is a security identity used by apps. It defines the access policy and permissions for the app in the Microsoft Entra tenant, enabling core features such as authentication of the app during sign in, and authorization during resource access. A service principal can authenticate by using an app secret or certificate. A service principal can only use Power BI REST APIs, when the _Allow service principals to use Power BI APIs_ tenant setting is enabled, and the service principal belongs to an allowed group.
 
 > [!TIP]
-> We recommend using a service principal for production apps. It provides the highest security and for this reason it's the approach recommended by Azure AD. Also, it supports better automation and scale and there's less management overhead. However, it requires Power BI admin rights to set up and manage.
+> We recommend using a service principal for production apps. It provides the highest security and for this reason it's the approach recommended by Microsoft Entra ID. Also, it supports better automation and scale and there's less management overhead. However, it requires Power BI admin rights to set up and manage.
 
 #### Master user account
 
-An app can use a _master user account_ to acquire an AD token. A master user account is a regular Azure AD user. In Power BI, the account must belong to the workspace Amin or Member role to embed workspace content. It must also have either a Power BI Pro or Power BI Premium Per User (PPU) license.
+An app can use a _master user account_ to acquire an AD token. A master user account is a regular Microsoft Entra user. In Power BI, the account must belong to the workspace Amin or Member role to embed workspace content. It must also have either a Power BI Pro or Power BI Premium Per User (PPU) license.
 
 > [!NOTE]
 > It's not possible to use a master user account to embed paginated reports.
@@ -145,7 +145,7 @@ Typically, a [data gateway](/power-bi/connect-data/service-gateway-onprem) is re
 
 ### System oversight
 
-The [activity log](/power-bi/admin/service-admin-auditing) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-adoption-roadmap-system-oversight.md#auditing) to help them understand usage patterns and adoption.
+The [activity log](/power-bi/enterprise/service-admin-auditing) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption.
 
 ## Next steps
 

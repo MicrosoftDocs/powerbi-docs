@@ -3,11 +3,11 @@ title: Create Excel workbooks with refreshable Power BI data
 description: Learn how to build refreshable reports in Excel with Power BI datasets so you can analyze the data like you would with a dataset that is local to Excel.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ikedeagu
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/27/2023
+ms.date: 08/22/2023
 LocalizationGroup: Share your work
 ---
 # Create Excel workbooks with refreshable Power BI data
@@ -18,8 +18,8 @@ In this article, you learn how to create Excel workbooks containing connected Po
 
 ## Prerequisites
 
-- Your organization’s tenant administrator must enable the **Users can work with Power BI datasets in Excel using a live connection** tenant setting. Learn more about the [Excel live connection](../admin/service-admin-portal-export-sharing.md#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
-- For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
+- Your organization’s tenant administrator must enable the **Users can work with Power BI datasets in Excel using a live connection** tenant setting. Learn more about the [Excel live connection](/fabric/admin/service-admin-portal-export-sharing#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
+- For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
 - You must have **Build** permission to the Power BI dataset or have at least a **Contributor** role in the Power BI workspace containing your dataset.
 - You must have a Power BI license: Free, Pro or Premium Per User (PPU). Power BI Free license users can only work with datasets in My workspace or a Power BI Premium capacity. Learn more about [Power BI licenses](../fundamentals/service-features-license-type.md).
 - You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
@@ -101,6 +101,10 @@ While viewing a Power BI visual, you may want to further explore the visual data
     > [!NOTE]
     > The **ExportHeaders** worksheet in the Excel workbook contains details about the filters applied to the Power BI visual that the data was exported from.
 
+In addition, you can use the OneLake Data Hub's Table Preview to export an Excel workbook with a live connection.
+
+:::image type="content" source="media/service-analyze-in-excel/export-live-connection-datahub.png" alt-text="Screenshot showing the Export with live connection (.xlsx) option for the Table preview in OneLake Data hub." lightbox="media/service-analyze-in-excel/export-live-connection-datahub.png":::
+
 ## Considerations and limitations
 
 - Row-level security (RLS) and object-level security (OLS) are supported for Analyze in Excel and Export with Live Connection. RLS is enforced at the data-model level while OLS is enforced at the table or column level and both security layers apply to all users who access data in a specific Power BI report. Read more about [row-level security](../enterprise/service-admin-rls.md) and [object-level security](../enterprise/service-admin-ols.md).
@@ -108,7 +112,7 @@ While viewing a Power BI visual, you may want to further explore the visual data
 - Analyze in Excel doesn't support specifying a locale by modifying the connection string after the workbook has been generated.
 - You might see an error message if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. For more information, see [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 - Users external to the tenant hosting the Power BI dataset can't analyze Power BI data in Excel.
-- Analyze in Excel and Export with live connection aren't supported in Power BI Report Server or Power BI PaaS Embedded.
+- Analyze in Excel and Export with live connection aren't supported in Power BI Report Server or Power BI PaaS Embedded, except for Power BI reports in Premium capacities.
 - Analyze in Excel might not work as expected if field parameters are used in the underlying Power BI dataset.
 - Analyze in Excel and Export with live connection aren't available for Power BI datasets with a live connection to Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS).
 - Say you have a Power BI report that's built on a live connection to a data source, and you add other measures to the report in Power BI. If you use the Export with live connection option to export data from a visual in that report, the measures that you added won't be available in the data you export to Excel. Only measures from the data source will be available in the exported data.

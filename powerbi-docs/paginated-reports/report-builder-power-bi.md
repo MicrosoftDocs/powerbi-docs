@@ -3,7 +3,7 @@ title: "Power BI Report Builder"
 description: Power BI Report Builder is a tool for authoring paginated reports that you can publish to the Power BI service. Paginated reports are designed to be printed or shared. They're formatted to fit well on a page, and they display *all* the data in a table, even if the table spans multiple pages.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 07/21/2022
+ms.date: 05/24/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -29,7 +29,7 @@ The following paginated report is a sample of an invoice. You can download it an
 
 ## Start with the Table, Matrix, or Chart wizard
 
-Create a data source connection, drag and drop fields to create a dataset query, select a layout and style, and customize your report.  
+Create a data source connection, drag and drop fields to create a dataset query, select a layout and style, add accessibility row properties, and customize your report.  
   
 ## Start with the Map wizard
 
@@ -39,7 +39,7 @@ Create reports that display aggregated data against a geographic or geometric ba
   
 -   **Create paginated reports with table, matrix, chart, and free-form report layouts.** Create table reports for column-based data, matrix reports (like cross-tab or PivotTable reports) for summarized data, chart reports for graphical data, and free-form reports for anything else. Reports can embed other reports and charts, together with lists, graphics, and controls for dynamic Web-based applications.  
   
--   **Report from a variety of data sources.** You can create reports that use relational and multidimensional data from SQL Server and Analysis Services, Oracle, Power BI datasets, and other databases.  
+-   **Report from a variety of data sources.** You can create reports that use relational and multidimensional data from SQL Server and Analysis Services, Oracle, Power BI semantic models, and other databases.  
   
 -   **Modify existing reports.** By using Report Builder, you can customize and update reports that were created in SQL Server Data Tools (SSDT) Report Designer.  
   
@@ -66,7 +66,7 @@ In the Power BI service, you can use the deployment pipeline tool with paginated
 - Test
 - Production
 
-Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
+Read about how to [get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines) in the Power BI service.
 
 ## Considerations and limitations
 

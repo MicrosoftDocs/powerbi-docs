@@ -72,12 +72,6 @@
       href: analytics-pane.md
     - name: "Add format pane"
       href: format-pane.md
-    - name: "Filter visuals" 
-      href: filter-api.md
-    - name: "Identity filter" 
-      href: identity-filter-api.md
-    - name: "Detect filter API"
-      href: detect-filter-api.md
     - name: "Fetch more data" 
       href: fetch-more-data.md
     - name: "Add bookmarks support"
@@ -144,6 +138,12 @@
       href: visual-api.md
     - name: "Local storage API" 
       href: local-storage.md
+    - name: "Filter visuals API" 
+      href: filter-api.md
+    - name: "Identity filter API" 
+      href: identity-filter-api.md
+    - name: "Detect filter API"
+      href: detect-filter-api.md
     - name: "'Rendering' events API" 
       href: event-service.md
     - name: "Drilldown API"

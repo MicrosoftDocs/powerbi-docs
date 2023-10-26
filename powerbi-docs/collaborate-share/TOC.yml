@@ -27,6 +27,8 @@
       href: service-troubleshoot-sharing.md
     - name: "Subscribe to reports and dashboards"
       href: end-user-subscribe.md
+    - name: "Create dynamic per recipient subscriptions (preview)"
+      href:  dynamic-subscriptions.md
     - name: "Troubleshoot creating and using subscriptions"  
       href: service-troubleshoot-subscribe.yml
     - name: "Filter a report using parameters in the URL"
@@ -37,6 +39,8 @@
       href: service-featured-content.md
     - name: "Embed report in SharePoint Online"
       href: service-embed-report-spo.md
+    - name: "View reports in SharePoint and OneDrive"
+      href: service-sharepoint-viewer.md      
     - name: "Embed report in a secure portal or website"
       href: service-embed-secure.md
     - name: "Publish from Power BI to the web"
@@ -107,6 +111,8 @@
       href: service-power-bi-powerpoint-add-in-view-present.md
     - name: "Information for the Power BI admin"
       href: service-power-bi-powerpoint-add-in-admin.md
+    - name: "Deploying the add-in in national clouds"
+      href: service-power-bi-powerpoint-add-in-national-clouds.md
     - name: "What's new in the Power BI add-in for PowerPoint"
       href: service-power-bi-powerpoint-add-in-whats-new.md
     - name: "Troubleshoot the Power BI add-in"
