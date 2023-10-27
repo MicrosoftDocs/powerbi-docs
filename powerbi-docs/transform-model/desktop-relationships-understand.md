@@ -1,13 +1,13 @@
 ---
 title: Model relationships in Power BI Desktop
 description: Introduce theory about model relationships in Power BI Desktop
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 09/25/2022
+ms.date: 10/27/2023
 ---
 
 # Model relationships in Power BI Desktop
