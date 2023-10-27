@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 10/09/2023
+ms.date: 10/26/2023
 ---
 
 # Supported data sources for Power BI paginated reports
@@ -27,7 +27,7 @@ Paginated reports natively support the following list of data sources:
 | Data source | Authentication | Notes |
 | --- | --- | --- |
 | Azure SQL Database <br>Azure Synapse Analytics | Basic, single sign-on (SSO), OAuth2 | You can use an Enterprise Gateway with Azure SQL Database.   |
-| Azure SQL Managed Instance | Basic | Through public or private endpoints (private endpoints need to be routed through Enterprise Gateway)  |
+| Azure SQL Managed Instance | Basic, SSO, OAuth2 | Through public or VNet-local endpoints (VNet-local endpoints need to be routed through Enterprise Gateway)  |
 | Azure Analysis Services | SSO, OAuth2 | The Azure Analysis Services firewall must be disabled or configured to allow all IP ranges in the Azure Germany region. This applies only in the Azure Germany region. SSO from external tenant isn't supported. |
 | Power BI semantic model | SSO | Premium and non-Premium Power BI semantic models. Requires Read permission. Only Import mode and DirectQuery Power BI semantic models are supported. Report queries using a DirectQuery Power BI semantic model as a data source have a fixed 10-minute time-out. For report queries that take longer than 10 minutes, use the Power BI semantic model's [XMLA Read/Write endpoint](../enterprise/service-premium-connect-tools.md) as the report data source. |
 | Premium Power BI semantic model (XMLA) | SSO | To ensure proper connectivity in Power BI Report Builder, ensure that the **Do not use credentials** option is selected when setting your data source.<br> Access through the XMLA honors security group membership set at the workspace or app level.<br> Users with at least a [Contributor role in a workspace](../collaborate-share/service-roles-new-workspaces.md) can render paginated reports with Premium Power BI semantic models. Other users need [Build permission on the underlying datasets](../connect-data/service-datasets-build-permissions.md).    |
