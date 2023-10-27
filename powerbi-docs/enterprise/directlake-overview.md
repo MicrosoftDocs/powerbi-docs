@@ -110,8 +110,6 @@ The following are known issues and limitations during **preview**:
 
 - Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same dataset. Composite models are not yet supported.
 
-- Direct Lake datasets do not currently support Publish to Web because SSO requires authenticated users.
-
 - Calculated columns, calculated tables, and field parameters are not yet supported.
 
 - DateTime relationships are not supported in Direct Lake datasets.
@@ -124,9 +122,7 @@ The following are known issues and limitations during **preview**:
 
 - The length of string column values is limited to 4,000 Unicode characters.
 
-- Direct Lake datasets currently work in Single Sign-On (SSO) mode only. You cannot disable SSO or use stored credentials yet.
-
-- Embedded scenarios that rely on service principals are not yet supported. Direct Lake models use Single Sign-On (SSO).
+- Embedded scenarios that rely on service principals are not yet supported.
 
 - The dataset user interface might display a warning icon on a table even though the table has no issues. This will be addressed in a future update.
 
@@ -233,6 +229,26 @@ There are multiple options to load data into a Lakehouse, including data pipelin
     :::image type="content" source="media/directlake-overview/directlake-web-modeling.png" alt-text="Screenshot showing Web modeling in Power BI.":::
 
 When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and query the dataset through XMLA endpoints in much the same way as any other dataset. During **preview**, XMLA write operations are not yet supported.
+
+##### To configure a Direct Lake model with a fixed identity
+
+1. In your Direct Lake model's settings, expand **Gateway and cloud connections**. Note that your Direct Lake model has a SQL Server data source pointing to a lakehouse or data warehouse in Fabric.
+
+    :::image type="content" source="media/directlake-overview/directlake-settings-fixed-identity.png" alt-text="Direct Lake model settings":::
+
+1. In the **Maps to** listbox, select **Create a connection**. A **New connection** pane appears with some data source information already entered for you. Specify a connection name.
+
+1. In **Authentication method**, select **OAuth 2.0** or **Service Principal**,  and then specify credentials for the fixed identity you want to use.
+
+    :::image type="content" source="media/directlake-overview/directlake-settings-fixed-identity-new-connection.png" alt-text="Specify authentication credentials in new connection settings":::
+
+1. In **Single sign-on**, ensure **SSO via Azure AD for DirectQuery queries** is *not* selected.
+
+    :::image type="content" source="media/directlake-overview/directlake-settings-fixed-identity-new-connection-sso.png" alt-text="Ensure Use SSO in new connection settings is not selected":::
+
+1. Configure any additional parameters if needed and then click **Create**.
+
+1. In the Direct Lake model settings, verify the data source is now associated with the non-SSO cloud connection.
 
 ## Refresh
 
