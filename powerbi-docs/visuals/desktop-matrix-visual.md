@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 06/30/2022
+ms.date: 10/27/2023
 ms.custom: [pbibetadocbug, sample-Opportunity-Analysis]
 LocalizationGroup: Visualizations
 ---
@@ -117,7 +117,7 @@ When you select **Drill Down**, the next level of the column hierarchy for *Regi
 The rest of the menu items work on columns in the same way they do for rows (see the previous section, **Drill down on row headers**). You can **Show Next Level** and **Expand to next level** with columns just as you can with rows.
 
 > [!NOTE]
-> The drill-down and drill-up icons only apply to rows. In order to drill down on columns, you must use the right-click menu.
+> The drill-down and drill-up icons apply to rows, and you can drill-up on columns when they're selected. In order to drill down on columns, you must use the right-click menu. 
 
 ## Stepped layout with matrix visuals
 

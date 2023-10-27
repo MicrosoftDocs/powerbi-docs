@@ -6,7 +6,7 @@ ms.author: hfeng
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting 
-ms.date: 07/06/2023
+ms.date: 10/27/2023
 ms.custom: template-how-to; subject-moving-resources
 ---
 
@@ -78,9 +78,9 @@ To find out the best way to contact support, read [Power BI support options](ser
    
    Select **See solutions** to move to the next screen.
 
-     :::image type="content" source="media\service-admin-region-move\ppac-new-support-request.png" alt-text="Screen capture showing field entries for a new support request for a region move in the Power Platform Admin Center.":::
+     :::image type="content" source="media\service-admin-region-move\support-request-dialog.png" alt-text="Screen capture showing field entries for a new support request for a region move in the Power Platform Admin Center.":::
 
-1. Select **Next** to continue to **Select your support plan**. Choose your support plan. Add a description and include the information in the following table:
+1. Select the arrow button to continue to **Select your support plan**. Choose your support plan. Add a description and include the information in the following table:
 
    |Information needed | How to find the information |
    |---|---|
