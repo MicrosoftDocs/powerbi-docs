@@ -245,7 +245,7 @@ For more information, see [Ribbon charts in Power BI](desktop-ribbon-charts.md).
 
 ### Scatter, bubble, and dot plot chart
 
-A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points may be distributed evenly or unevenly across the horizontal axis, depending on the data.
+A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points might be distributed evenly or unevenly across the horizontal axis, depending on the data.
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-scatter-chart.png" alt-text="Screenshot of a scatter chart, with points at the intersection of the x and y axis.":::
 
@@ -306,7 +306,7 @@ For more information, see [Add an image widget to a dashboard](../create-reports
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/table-type.png" alt-text="Screenshot of a Table visual.":::
 
-A table is a grid that contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons where you are looking at many values for a single category. For example, this table displays five different measures for Category.
+A table is a grid that contains related data in a logical series of rows and columns. It might also contain headers and a row for totals. Tables work well with quantitative comparisons where you are looking at many values for a single category. For example, this table displays five different measures for Category.
 
 Tables are a great choice:
 
