@@ -1,13 +1,13 @@
 ---
 title: "Auto date/time in Power BI Desktop"
 description: Learn how to use the auto date/time functionality to give you more options for data filtering in Power BI Desktop.
-author: kfollis
-ms.author: kfollis
-ms.reviewer: asaxton
+author: davidiseminger
+ms.author: davidi
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/19/2023
+ms.date: 10/27/2023
 ---
 
 # Apply auto date/time in Power BI Desktop
