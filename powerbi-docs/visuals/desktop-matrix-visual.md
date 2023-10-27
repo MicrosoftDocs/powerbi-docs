@@ -175,7 +175,7 @@ In addition, using Ctrl+Click also works for cross-highlighting. For example, in
 
 ## Copying values from Power BI for use in other applications
 
-Your matrix or table may have content that you'd like to use in other applications: Dynamics CRM, Excel, and other Power BI reports. With the Power BI right-click, you can copy a single cell or a selection of cells onto your clipboard. Then, paste them into the other application.
+Your matrix or table might have content that you'd like to use in other applications: Dynamics CRM, Excel, and other Power BI reports. With the Power BI right-click, you can copy a single cell or a selection of cells onto your clipboard. Then, paste them into the other application.
 
 * To copy the value of a single cell, select the cell,  right-click, and choose **Copy value**. With the _unformatted_ cell value on your clipboard, you can now paste it into another application.
 
@@ -221,7 +221,7 @@ Select a definitions icon to display a dialog that you can use to make adjustmen
 
 ## Ragged hierarchy
 
-A ragged hierarchy has levels with no data.  A good example is a company employee matrix. A company has many levels, from CEO on down.  The CEO is the highest level in the hierarchy and reports to no other employees.  Any other company employee, on the other hand, may report to a chain of managers who report to a vice-president who reports to the CEO. Depending on their level in the hierarchy and the way their department is organized, employees may have data for one, two, five, or ten levels in the hierarchy. And, for any given employee, there may be no data for particular hierarchy levels.  
+A ragged hierarchy has levels with no data.  A good example is a company employee matrix. A company has many levels, from CEO on down.  The CEO is the highest level in the hierarchy and reports to no other employees.  Any other company employee, on the other hand, might report to a chain of managers who report to a vice-president who reports to the CEO. Depending on their level in the hierarchy and the way their department is organized, employees might have data for one, two, five, or ten levels in the hierarchy. And, for any given employee, there might be no data for particular hierarchy levels.  
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-ragged-hr.png" alt-text="Screenshot of a matrix visual. Values are missing from several cells.":::
 
