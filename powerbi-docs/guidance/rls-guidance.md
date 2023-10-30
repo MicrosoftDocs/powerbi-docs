@@ -1,8 +1,8 @@
 ---
 title: Row-level security (RLS) guidance in Power BI Desktop
 description: Guidance for enforcing row-level security (RLS) in your data models with Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -63,7 +63,7 @@ It's possible to measure the performance impact of RLS filters in Power BI Deskt
 
 Once published to Power BI, you must map members to dataset roles. Only dataset owners or workspace admins can add members to roles. For more information, see [Row-level security (RLS) with Power BI (Manage security on your model)](/power-bi/enterprise/service-admin-rls#manage-security-on-your-model).
 
-Members can be user accounts, security groups, distribution groups or mail enabled groups. Whenever possible, we recommend you map security groups to dataset roles. It involves managing security group memberships in Azure Active Directory. Possibly, it delegates the task to your network administrators. 
+Members can be user accounts, security groups, distribution groups or mail enabled groups. Whenever possible, we recommend you map security groups to dataset roles. It involves managing security group memberships in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)). Possibly, it delegates the task to your network administrators.
 
 ## Validate roles
 
@@ -190,7 +190,7 @@ When a specific user can't see any data, it could be because their UPN isn't sto
 
 Creators and consumers with only Read permission on the dataset will only be able to view the data they're allowed to see (based on their RLS role mapping).
 
-When a user views a report in either a workspace or an app, RLS may or may not be enforced depending on their dataset permissions. For this reason, it's critical that content consumers and creators only possess Read permission on the underlying dataset when RLS must be enforced. For details about the permissions rules that determine whether RLS is enforced, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#rls-user-experience) article.
+When a user views a report in either a workspace or an app, RLS might or might not be enforced depending on their dataset permissions. For this reason, it's critical that content consumers and creators only possess Read permission on the underlying dataset when RLS must be enforced. For details about the permissions rules that determine whether RLS is enforced, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#rls-user-experience) article.
 
 ## Next steps
 

@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/06/2023
+ms.date: 08/10/2023
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop
@@ -294,7 +294,7 @@ The following sections describe each in detail.
 
 Under `name`, you can add the following basic data color-related properties:
 
-- `dataColors`: These hexadecimal codes determine the color of shapes that represent data in Power BI Desktop visuals. This list can have as many colors as you want. After all colors from this list have been used, if the visual still needs more colors, it reverts back to using Power BI's default color palette.
+- `dataColors`: These hexadecimal codes determine the color of shapes that represent data in Power BI Desktop visuals. This list can have as many colors as you want. After all colors from this list have been used, if the visual still needs more colors, it rotates the theme color palette slightly with saturation/hue adjustment and cycle over and over to generate unique colors without repetition.
 - `good`, `neutral`, `bad`: These properties set the status colors used by the waterfall chart and the KPI visual.
 - `maximum`, `center`, `minimum`, `null`: These colors set the various gradient colors in the conditional formatting dialog box.
 

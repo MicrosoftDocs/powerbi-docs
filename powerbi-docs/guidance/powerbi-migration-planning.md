@@ -1,8 +1,8 @@
 ---
 title: Plan deployment to migrate to Power BI
 description: Guidance on planning for deployment when migrating to Power BI.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -23,7 +23,7 @@ The focus of Stage 2 is on defining how the requirements that were defined in St
 
 The output from Stage 2 includes as many specific decisions as possible to guide the deployment process.
 
-Decision-making of this nature is an iterative and non-linear process. Some planning will have already occurred in the [pre-migration steps](powerbi-migration-pre-migration-steps.md). Learnings from a proof of concept (described in [Stage 3](powerbi-migration-proof-of-concept.md)) may occur in parallel with deployment planning. Even while creating the solution (described in [Stage 4](powerbi-migration-create-validate-content.md)), additional information may arise that influences deployment decisions.
+Decision-making of this nature is an iterative and non-linear process. Some planning will have already occurred in the [pre-migration steps](powerbi-migration-pre-migration-steps.md). Learnings from a proof of concept (described in [Stage 3](powerbi-migration-proof-of-concept.md)) can occur in parallel with deployment planning. Even while creating the solution (described in [Stage 4](powerbi-migration-create-validate-content.md)), additional information might arise that influences deployment decisions.
 
 > [!IMPORTANT]
 > Stages 1-5 represent activities related to one specific solution. There are decisions and activities at the organizational/tenant level which impact the process at the solution level. Some of those higher-level planning activities are discussed in the [Power BI migration overview](powerbi-migration-overview.md) article. When appropriate, defer to the organizational-level decisions for efficiency and consistency.
@@ -48,11 +48,11 @@ For more information about architectural considerations, see **Section 3** of th
 - Will separate workspaces be needed to accommodate development, test, and production?
 - Will separate workspaces be used for data and reports, or will a single workspace be sufficient? Separate workspaces have numerous advantages, especially for securing datasets. When necessary, they can be managed separately from those users who publish reports.
 - What are the security requirements for the workspace? It influences planning for [workspace roles](../collaborate-share/service-roles-new-workspaces.md). If an app will be used by content consumers, [audience permissions for the app](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences) are managed separately from the workspace. Distinct permissions for app viewers allow additional flexibility in meeting security requirements for read-only consumers of reports or dashboards.
-- Can existing groups be used for securing the new content? Both Azure Active Directory and Microsoft 365 groups are supported. When aligned with existing processes, using groups makes permissions management easier than assignments to individual users.
-- Are there any security considerations related to external guest users? You may need to work with your Azure Active Directory administrator and your Power BI administrator to configure [guest user access](../enterprise/service-admin-azure-ad-b2b.md).
+- Can existing groups be used for securing the new content? Both groups in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) and Microsoft 365 are supported. When aligned with existing processes, using groups makes permissions management easier than assignments to individual users.
+- Are there any security considerations related to external guest users? You might need to work with your Microsoft Entra administrator and your Power BI administrator to set up [guest user access](../enterprise/service-admin-azure-ad-b2b.md).
 
 > [!TIP]
-> Consider creating a workspace for a specific business activity or project. You may be tempted to start off structuring workspaces based on your organizational structure (such as a workspace per department), but this approach frequently ends up being too broad.
+> Consider creating a workspace for a specific business activity or project. You might be tempted to start off structuring workspaces based on your organizational structure (such as a workspace per department), but this approach frequently ends up being too broad.
 
 ## Determine how content will be consumed
 
@@ -62,7 +62,7 @@ It's helpful to understand how consumers of a solution prefer to view reports an
 - Will certain reports and dashboards be embedded elsewhere, such as [Teams](../collaborate-share/service-embed-report-microsoft-teams.md), [SharePoint Online](../collaborate-share/service-embed-report-spo.md), or a [secure portal or website](../collaborate-share/service-embed-secure.md)?
 - Will consumers access content using [mobile devices](../consumer/mobile/mobile-apps-for-mobile-devices.md)? Requirements to deliver reports to small form factor devices will influence some [report design decisions](../create-reports/power-bi-create-mobile-optimized-report-about.md).
 
-## Decide if other content may be created
+## Decide whether other content can be created
 
 There are several key decisions to be made related to allowing consumers to create new content, such as:
 
@@ -84,7 +84,7 @@ Additional capabilities are available when a workspace is stored on a [Premium c
 
 ## Determine data acquisition method
 
-The data required by a report may influence several decisions. Questions to ask include:
+The data required by a report might influence several decisions. Questions to ask include:
 
 - Can an existing Power BI [shared dataset](../connect-data/service-datasets-share.md) be used, or is the creation of a new Power BI dataset appropriate for this solution?
 - Does an existing shared dataset need to be augmented with new data or measures to meet additional needs?

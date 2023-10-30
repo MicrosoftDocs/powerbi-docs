@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/14/2023
+ms.date: 09/07/2023
 LocalizationGroup: Data refresh
 ---
 
@@ -115,7 +115,7 @@ It's also important to call out that the shared-capacity limitation for daily re
 ![Refresh now](media/refresh-data/refresh-now.png)
 
 > [!NOTE]
-> Data refreshes must complete in less than 2 hours on shared capacity. If your datasets require longer refresh operations, consider moving the dataset onto a Premium capacity. On Premium, the maximum refresh duration is 5 hours.
+> Data refreshes must complete in less than 2 hours on shared capacity. If your datasets require longer refresh operations, consider moving the dataset onto a Premium capacity. On Premium, the maximum refresh duration is 5 hours, but using XMLA endpoint to refresh data can bypass the 5-hour limit.
 
 #### OneDrive refresh
 
@@ -278,9 +278,6 @@ To ensure that a parameterized dataset accesses the correct data, you must confi
 
 ![Configure query parameters](media/refresh-data/configure-query-parameters.png)
 
-
-
-
 ## Refresh and dynamic data sources
  
 A *dynamic data source* is a data source in which some or all of the information required to connect can't be determined until Power Query runs its query, because the data is generated in code or returned from another data source. Examples include: the instance name and database of a SQL Server database; the path of a CSV file; or the URL of a web service. 
@@ -318,9 +315,12 @@ Note also that the configured refresh time might not be the exact time when Powe
 
 ### Getting refresh failure notifications
 
-By default, Power BI sends refresh failure notifications through email to the dataset owner so that the owner can act in a timely manner should refresh issues occur. Power BI also sends you a notification when the service disables your schedule due to consecutive failures. Microsoft recommends that you leave the checkbox **Send refresh failure notification emails dataset owner** enabled.
+By default, Power BI sends refresh failure notifications to the dataset owner through email, so that they can act in a timely manner should refresh issues occur. If the owner has the Power BI app on their mobile device, they will also get the failure notification there. Power BI also sends an email notification when the service disables a scheduled refresh due to consecutive failures. Microsoft recommends that you leave the checkbox **Send refresh failure notification emails dataset owner** enabled.
 
-It's also a good idea to specify additional recipients by using the **Email these contacts when the refresh fails** textbox. The specified recipients receive refresh failure notifications in addition to the dataset owner. This might be a colleague taking care of your datasets while you are on vacation. It could also be the email alias of your support team taking care of refresh issues for your department or organization. Sending refresh failure notifications to others in addition to the dataset owner is helpful to ensure issues get noticed and addressed in a timely manner.
+It's also a good idea to specify additional recipients for scheduled refresh failure notifications by using the **Email these contacts when the refresh fails** textbox. Specified recipients receive refresh failure notifications via email and push notifications to the mobile app, just like the dataset owner does. Specified recipients might include a colleague taking care of your datasets while you are on vacation, or the email alias of your support team taking care of refresh issues for your department or organization. Sending refresh failure notifications to others in addition to the dataset owner helps ensure that issues get noticed and addressed in a timely manner.
+
+> [!NOTE]
+> Push notifications to the mobile apps do not support group aliases.
 
 Note that Power BI not only sends notifications on refresh failures but also when the service pauses a scheduled refresh due to inactivity. After two months, when no user has visited any dashboard or report built on the dataset, Power BI considers the dataset inactive. In this situation, Power BI sends an email message to the dataset owner indicating that the service paused the refresh schedule for the dataset. See the following screenshot for an example of such a notification.
 
@@ -349,6 +349,40 @@ The warning icon helps to indicate current dataset issues, but it's also a good 
 Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces and [embedded workspaces](../developer/embedded/embedded-capacity.md).
 
 Learn more about automatic page refresh in the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) article.
+
+
+## Dataset refresh history
+
+Refresh attempts for Power BI datasets may not always go smoothly, or may take longer than expected. You can use the **Refresh history** page to help you diagnose why a refresh may not have happened as you expected. 
+
+Power BI automatically makes multiple attempts to refresh a dataset if it experiences a refresh failure. Without insight into refresh history activities, it may just seem like a refresh is taking longer than expected. With the **Refresh history** page, you can see those failed attempts and gain insight into the reason for the failure. 
+
+The following screenshot shows a failed refresh, with details about each time Power BI automatically attempted to successfully complete the refresh. 
+
+:::image type="content" source="media/refresh-data/refresh-history-01.png" alt-text="Screenshot of refresh history details.":::
+
+You can also see when Power BI succeeds in when previous attempts failed, as shown in the following image, which reveals that Power BI succeeded only after three previous failures. Notice the successful data refresh and query cache share the same index number, indicating they both were successful on the fourth attempt.
+
+:::image type="content" source="media/refresh-data/refresh-history-02.png" alt-text="Screenshot of refresh history when successful.":::
+
+You can select the *Show* link beside a failure to get more information about the failed refresh attempt, which can help with troubleshooting the issue.
+
+In addition, each Power BI refresh attempt is divided into two operations:
+
+* **Data** – Load data into the dataset
+* **Query Cache** – Premium query caches and/or dashboard tiles refresh
+
+The following images show how **Refresh history** separates those operations, and provides information about each.
+
+:::image type="content" source="media/refresh-data/refresh-history-03.png" alt-text="Screenshot of refresh history with refresh operations separated.":::
+
+Significant use of dashboard tiles or premium caching can increase refresh duration, since either can queue many queries after each refresh. You can either reduce the number of dashboards or [disable automatic cache refresh](/analysis-services/server-properties/general-properties?view=power-bi-premium-current) setting to help reduce the number of queries.
+
+The data and query cache phases are independent of each other, but run in sequence. The data refresh runs first and when that succeeds, the query cache refresh runs. If the data refresh fails, the query refresh is not initiated. It's possible that the data refresh can run successfully, but the query cache refresh fails. 
+
+Refreshes made using the [enhanced refresh API](asynchronous-refresh.md) or [XMLA Endpoint](../enterprise/service-premium-connect-tools.md#dataset-refresh) won't show attempt details in the **Refresh history** window.
+
+
 
 ## Refresh cancellation
 

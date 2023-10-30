@@ -45,9 +45,9 @@ In the following video, Microsoft Most Valued Professional - Data Platform Peter
 > [!NOTE]  
 > This video might use earlier versions of Power BI Report Builder or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jXTiYJKw1Rs?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/jXTiYJKw1Rs?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT]
 
-This video is part of an eight-module video-based course, [Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md). The course is designed to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
+This video is Module 1, part of an eight-module video-based course, [Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md). The course is designed to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
 
 ## Create reports in Power BI Report Builder
 
@@ -66,7 +66,7 @@ A single paginated report can have a number of different data sources. It doesn'
 - Azure SQL Database and Azure Synapse Analytics (via Basic and oAuth)
 - Azure Analysis Services (via SSO)
 - SQL Server via a gateway
-- Power BI datasets
+- Power BI semantic models
 - Oracle
 - Teradata
 
@@ -104,11 +104,12 @@ For details, see "Subscribe to paginated reports" in the article [Email subscrip
 ## Use deployment pipelines with paginated reports
 
 In the Power BI service, you can use the deployment pipeline tool with paginated reports. Deployment pipelines let you develop and test your Power BI paginated reports before you release them to your users. The tool is a pipeline with three stages:
+
 - Development
 - Test
 - Production
 
-Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
+Read about how to [get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines) in the Power BI service.
 
 ## Embed Power BI paginated reports
 

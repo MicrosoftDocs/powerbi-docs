@@ -53,9 +53,9 @@ Web Content Accessibility Guidelines (WCAG) are guidelines for making web conten
 
     Paginated reports support the use of screen readers. 
 
-### US Section 508 
+### US Accessibility Conformance
 
-US Section 508 is a standard that requires governments and federal agencies to make their electronic and information technology accessible to people with disabilities. 
+US Accessibility Conformance requires governments and federal agencies to make their electronic and information technology accessible to people with disabilities. 
 
 ### EN 301 549 
 

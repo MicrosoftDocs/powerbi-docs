@@ -7,10 +7,13 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/28/2023
+ms.date: 06/14/2023
 LocalizationGroup: Samples
 ---
 # IT Spend Analysis sample for Power BI: Take a tour
+
+> [!NOTE]
+> For an updated version of this sample, see [Corporate Spend sample for Power BI: Take a tour](sample-it-spend.md).
 
 The IT Spend Analysis built-in sample contains a dashboard, report, and dataset that analyzes the planned vs. actual costs of an IT department. This comparison helps you understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new latest estimate (LE) to help analyze changes in IT spend over the fiscal year.
 

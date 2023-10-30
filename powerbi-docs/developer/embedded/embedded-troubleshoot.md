@@ -6,6 +6,7 @@ ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
+ms.custom: has-azure-ad-ps-ref
 ms.topic: troubleshooting
 ms.date: 01/24/2023
 ---
@@ -142,9 +143,9 @@ After assigning the policy, wait approximately 15-20 seconds for propagation bef
 To determine the problem, try the following steps:
 
 * Run [get dataset](/rest/api/power-bi/datasets). Is the property `IsEffectiveIdentityRequired` true?
-* Username is mandatory for any `EffectiveIdentity`.
+* Username is required for any `EffectiveIdentity`.
 * If `IsEffectiveIdentityRolesRequired` is true, Role is required.
-* `DatasetId` is mandatory for any `EffectiveIdentity`.
+* `DatasetId` is required for any `EffectiveIdentity`.
 * For Analysis Services, the master user has to be a gateway admin.
 
 ### AADSTS90094: The grant requires admin permission

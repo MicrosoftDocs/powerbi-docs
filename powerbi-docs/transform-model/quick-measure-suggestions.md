@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 04/13/2023
+ms.date: 09/21/2023
 LocalizationGroup: Create reports
 ---
 # Quick measure suggestions
@@ -208,6 +208,7 @@ Examples:
 
 ## Limitations and considerations
 - Quick measure suggestions are NOT a replacement for learning DAX. The suggestions provided by the feature are meant to help fast track measure creation; however, you will still need to validate the DAX suggestions because they can be wrong or not match your intent.
+- The feature isn't supported for LiveConnect data models.
 -	The feature is powered by a machine learning model that is currently only deployed to US datacenters (East US and West US). If your data is outside the US, the feature will be disabled by default unless your tenant admin enables **Allow user data to leave their geography tenant setting**:
  
 :::image type="content" source="media/quick-measure-suggestions/quick-measure-suggestions-admin-setting.png" alt-text="Screenshot of the admin setting for measure suggestions.":::

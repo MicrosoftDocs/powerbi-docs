@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 05/02/2023
+ms.date: 09/26/2023
 LocalizationGroup: Transform and shape data
 ---
 # Configure Azure Log Analytics for Power BI
@@ -27,11 +27,9 @@ The following sections take you through the steps in to do both.
 
 Before you can configure Log Analytics integration from Power BI, you need to [create a Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace) in the Azure portal. You must also give permission in Azure for the Power BI service to write logs. The exact requirements are:
 
+* Contributor access to Azure subscription.
 * Register the 'microsoft.insights' resource provider in the Azure subscription where you'll collect Power BI log data.
-* The user who sets up Log Analytics integration in Power BI must be in the Owner role for the Log Analytics Workspace. See FAQ for workarounds if the Owner role can't be given.
-* The service principal 'Power BI Service' must be in the Owner role for the Log Analytics Workspace.
-
-The following section shows you how to meet these three requirements.
+* The user who sets up Log Analytics integration in Power BI must be in the Log Analytics Contributor role for the Log Analytics Workspace. See FAQ for workarounds if the Owner role can't be given.
 
 ### Enable the 'microsoft.insights' resource provider
 
@@ -47,9 +45,9 @@ Log Analytics requires the 'microsoft.insights' resource provider enabled at the
 
 ### Set permissions
 
-1. Make sure the user configuring Log Analytics integration and the Power BI Service principal are in the **Owner** role of the Log Analytics workspace. When you select **Access control (IAM)** for the subscription in the Azure portal, and then select **Role assignments** from the top selections in the panel, the current user must see at least two entries: **Owner** for the user who configures Log Analytics (1, in the following image), and **Owner** for the Power BI service (2, in the following image).
+1. Make sure the user configuring Log Analytics integration has **Log Analytics Contributor** role of the Log Analytics workspace. When you select **Access control (IAM)** for the subscription in the Azure portal, and then select **Role assignments** from the top selections in the panel, the current user must see one entry: **Log Analytics Contributor** for the user who configures Log Analytics:
 
-    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-10.png" alt-text="Screenshot of the Access control pane with two owners highlighted.":::
+    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-10.png" alt-text="Screenshot of the Access control pane with role highlighted.":::
 
 After you complete those steps, the Azure Log Analytics configuration portion is complete. The next section shows you how to continue and complete the configuration in the Power BI Admin portal.
 
@@ -122,46 +120,42 @@ After you enable Azure Log Analytics, it starts to log the following **event cat
 * Query
 * Session Initialize
 * VertiPaqSEQuery
+* Notification
 
 The following table describes the **schema**.
 
 | Property | Existing Azure Analysis Services property | Description |
 | --- | --- | --- |
+| **TimeGenerated** | | The timestamp (UTC) of when the log was generated. |
+| **OperationName** | EventClass_s | The operation associated with the log record. |
+| **CorrelationId** | | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
+| **PowerBIWorkspaceId** | | Unique identifier of the workspace containing the artifact being operated on. |
+| **PremiumCapacityId** | | Unique identifier of the Premium capacity hosting the artifact being operated on. |
 | **ApplicationContext** | ApplicationContext_s | Property bag of unique identifiers providing details about the application executing the request. for example, report ID. |
 | **ApplicationName** | ApplicationName_s | Contains the name of the client application that created the connection to the server. This column is populated with the values passed by the application rather than the displayed name of the program. |
 | **ArtifactId** | | Unique identifier of the resource logging the data. |
 | **ArtifactKind** | | Type of artifact logging the operation, for example,  Dataset. |
+| **CpuTimeMs** | CPUTime_s | Amount of CPU time (in milliseconds) used by the event. |
 | **ArtifactName** | DatabaseName_s | The name of the Power BI artifact logging this operation. |
 | **LogAnalyticsCategory**  | Unique | Category of the events, like Audit/Security/Request. |
-| **CorrelationId** | | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
-| **CpuTimeMs** | CPUTime_s | Amount of CPU time (in milliseconds) used by the event. |
-| **CustomerTenantId** | | Customer's Power BI tenant identifier. |
 | **DatasetMode** | | The mode of the dataset. Import, DirectQuery, or Composite. |
 | **DurationMs** | Duration_s | Amount of time (in milliseconds) taken by the operation. |
-| **EventText** | TextData_s | Contains verbose information associated with the operation, for example, DAX Query. |
-| **ExecutingUser** | EffectiveUsername_s | The user running the operation. |
-| **Identity** | | Information about user and claims. |
-| **Level** | Severity_s | Contains the severity level of the operation being logged. Success, Informational, Warning, or Error. |
-| **OperationDetailName** | EventSubclass_s | More details about the operation. |
-| **OperationName** | EventClass_s | The operation associated with the log record. |
-| **PremiumCapacityId** | | Unique identifier of the Premium capacity hosting the artifact being operated on. |
-| **ProgressCounter** | ProgressTotal_s | Progress counter. |
-| **ProgressReportBegin** | | Collects all progress report begin events since the trace was started.  |
-| **ProgressReportCurrent** | | Collects all progress report current events since the trace was started.    |
-| **ProgressReportError** | | Collects all progress report error events since the trace was started.  |
-| **Status** | | Status of the operation.  |
-| **StatusCode** | Error_s | Status code of the operation. It covers success and failure. |
-| **TenantId** | | Unique identifier of Microsoft's Power BI tenant. This property doesn't refer to the customer tenant. |
-| **TimeGenerated** | | The timestamp (UTC) of when the log was generated. |
 | **User** | User_s | The user associated with the running operation. Used when an end-user identity must be impersonated on the server. |
-| **VertipaqSEQueryBegin** |  | Vertipaq storage engine query start time.   |
-| **VertipaqSEQueryEnd** |  | Vertipaq storage engine query end time.   |
-| **PowerBIWorkspaceId** | | Unique identifier of the workspace containing the artifact being operated on. |
-| **WorkspaceName** | ServerName_s | Name of the workspace containing the artifact. |
+| **ExecutingUser** | EffectiveUsername_s | The user running the operation. |
+| **OperationDetailName** | EventSubclass_s | More details about the operation. |
 | **XmlaObjectPath** | ObjectPath_s | Object path. A comma-separated list of parents, starting with the object's parent. |
+| **PowerBIWorkspaceName** |  | Name of the Power BI workspace containing the artifact. |
+| **StatusCode** | Error_s | Status code of the operation. It covers success and failure. |
+| **ProgressCounter** | ProgressTotal_s | Progress counter. |
 | **XmlaProperties** | RequestProperties_s | Properties of the XMLA request. |
-| **XmlaRequestId** | RootActivityId_g | Unique Identifier of request. |
 | **XmlaSessionId** | SPID_s | Analysis Services session identifier. |
+| **Level** | Severity_s | Contains the severity level of the operation being logged. Success, Informational, Warning, or Error. |
+| **Identity** | | Information about user and claims. |
+| **Status** | | Status of the operation.  |
+| **EventText** | TextData_s | Contains verbose information associated with the operation, for example, DAX Query. |
+| **CustomerTenantId** | | Customer's Power BI tenant identifier. |
+| **XmlaRequestId** | RootActivityId_g | Unique Identifier of request. |
+| **ReplicaId** |  | Replica identifier that will let you identify the replica when [Query Scale Out (QSO)](../../enterprise/service-premium-scale-out.md) is enabled. Read-write replica always has ReplicaId='AAA' and read-only replicas have ReplicaId starting 'AAB' onwards. For non-QSO enabled datasets the ReplicaId is always 'AAA'  |
 
 ## Sample Log Analytics KQL queries
 

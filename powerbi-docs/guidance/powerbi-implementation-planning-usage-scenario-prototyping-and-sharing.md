@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Prototyping and sharing"
 description: "Learn how Power BI prototyping and sharing is about rapid exploration of user requirements."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -16,7 +16,7 @@ ms.date: 02/27/2022
 
 As described in the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md), exploration, experimentation, and obtaining useful feedback from a small group of users is the purpose of [phase 1 of solution adoption](powerbi-adoption-roadmap-maturity-levels.md#solution-adoption-phases).
 
-A prototype—or proof of concept (POC)—is a Power BI solution that's intended to address unknowns and mitigate risk. This solution may be shared with others to get feedback during development iterations. The solution may be a temporary, short-lived solution, or it may ultimately evolve into a solution that's fully validated and released. Creating a prototype is commonly done for [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) and [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenarios (and may occasionally be done for [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) scenarios).
+A prototype—or proof of concept (POC)—is a Power BI solution that's intended to address unknowns and mitigate risk. This solution can be shared with others to get feedback during development iterations. The solution might be a temporary, short-lived solution, or it might ultimately evolve into a solution that's fully validated and released. Creating a prototype is commonly done for [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) and [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenarios (and can occasionally be done for [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) scenarios).
 
 Prototyping often occurs naturally during self-service BI development efforts. Or a prototype might be a small project that has specific [goals and a scope](powerbi-migration-proof-of-concept.md#set-poc-goals-and-scope).
 
@@ -58,7 +58,7 @@ Interactive prototyping sessions are valuable to get immediate feedback when exp
 Publishing prototyping solutions to the Power BI service is optional. It can be useful when there's a need to share preliminary results for feedback and decision-making purposes.
 
 > [!TIP]
-> Prototyping solutions should be clearly separated from other production content so that consumers have proper expectations for a non-production solution. For example, consumers of a prototype report may not expect it to include all the data or be refreshed on a schedule. A prototype report shouldn't be used for business decisions until it's fully validated, finalized, and published to a production workspace.
+> Prototyping solutions should be clearly separated from other production content so that consumers have proper expectations for a non-production solution. For example, consumers of a prototype report might not expect it to include all the data or be refreshed on a schedule. A prototype report shouldn't be used for business decisions until it's fully validated, finalized, and published to a production workspace.
 
 ### Workspace
 
@@ -80,7 +80,7 @@ Typically, a data gateway is required when accessing data sources that reside wi
 
 ### System oversight
 
-The [activity log](../admin/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and detect risky activities. Auditing and governance requirements are typically less stringent for prototyping and [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) scenarios.
+The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and detect risky activities. Auditing and governance requirements are typically less stringent for prototyping and [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) scenarios.
 
 ## Next steps
 

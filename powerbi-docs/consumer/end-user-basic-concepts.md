@@ -215,4 +215,4 @@ Now that you've been introduced to the building blocks that make up the Power BI
     > [!NOTE]  
     > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
+    > [!VIDEO https://www.youtube.com/embed/B2vd4MQrz4M]

@@ -9,7 +9,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Create a workspace
 ms.topic: how-to
 ms.date: 04/12/2023
-ms.custom: contperf-fy21q3, contperf-fy21q1, contperf-fy20q4
+ms.custom: fabric
 LocalizationGroup: Share your work
 ---
 # Create a workspace in Power BI

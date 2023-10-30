@@ -1,5 +1,5 @@
 ---
-title: Permission tokens needed for embedding a Power BI app
+title: Permission tokens needed to embed a Power BI app
 description: Learn which tokens your Power BI app needs to authenticate against Azure and Power BI service.
 author: mberdugo
 ms.author: monaberdugo
@@ -16,16 +16,16 @@ ms.date: 02/05/2023
 
 Consuming Power BI content (such as reports, dashboards and tiles) requires an access token. Depending on your solution, this token can be either an [Azure AD token](#azure-ad-token), an [embed token](#embed-token), or both.
 
-In the *embed for your customers* solution, the application generates an embed token that grants your web users access to Power BI content.
+In the [*embed for your customers*](./embedded-analytics-power-bi.md#embed-for-your-customers) solution, the application generates an embed token that grants your web users access to Power BI content.
 
 >[!NOTE]
 >When you use the *embed for your customers* solution, you can use any authentication method to allow access to your web app.
 
-In the *embed for your organization* solution, your web app users authenticate against [Azure AD](pbi-glossary.md#azure-ad-azure-active-directory) by using their own credentials. Your customers have access to the Power BI content that they have permission to access on the Power BI service.
+In the [*embed for your organization*](./embedded-analytics-power-bi.md#embed-for-your-organization) solution, your web app users authenticate against [Azure AD](pbi-glossary.md#azure-ad-azure-active-directory) by using their own credentials. Your customers have access to the Power BI content that they have permission to access on the Power BI service.
 
 ## Azure AD token
 
-For both *embed for your customers* and *embed for your organization* solutions, you need an [Azure AD token](/azure/databricks/dev-tools/api/latest/aad/). The Azure AD token is required for all [REST API](/rest/api/power-bi/) operations, and it expires after an hour.
+For both [*embed for your customers*](./embedded-analytics-power-bi.md#embed-for-your-customers) and [*embed for your organization*](./embedded-analytics-power-bi.md#embed-for-your-organization) solutions, you need an [Azure AD token](/azure/databricks/dev-tools/api/latest/aad/). The Azure AD token is required for all [REST API](/rest/api/power-bi/) operations, and it expires after an hour.
 
 * In the *embed for your customers* solution, the Azure AD token is used to generate the embed token.
 
@@ -42,7 +42,7 @@ You can acquire an Azure AD token in one of the following ways:
   * For *Embed for your organization* see [this OwinOpenIdConnect.cs file](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/Embed%20for%20your%20organization/UserOwnsData/Services/Security/OwinOpenIdConnect.cs). Find `authorityUrl` at [UserOwnsData/Web.config](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/Embed%20for%20your%20organization/UserOwnsData/Web.config).
 
   > [!NOTE]
-  > You can find the `authorityUrl` and `scopeBase` values for some sovereign clouds in [Embed content in your app for government and national clouds](embed-sample-for-customers-national-clouds.md).
+  > You can find the `authorityUrl` and `scopeBase` values for some sovereign clouds in [Embed content in your app for government and national/regional clouds](embed-sample-for-customers-national-clouds.md).
 
 ## Embed token
 
@@ -132,10 +132,7 @@ This diagram shows an example of the authentication flow for the *embed for your
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Considerations when generating an embed token](generate-embed-token.md)
-
->[!div class="nextstepaction"]
->[Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
+* [Considerations when generating an embed token](generate-embed-token.md)
+* [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 
 More questions? Try asking the [Power BI Community](https://community.powerbi.com/)

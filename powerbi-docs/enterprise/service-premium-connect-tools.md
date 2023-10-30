@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/03/2022
+ms.date: 07/12/2023
 ms.custom: ''
 LocalizationGroup: Premium
 ---
@@ -23,6 +23,10 @@ Workspaces use the [XML for Analysis](/analysis-services/xmla/xml-for-analysis-x
 By default, *read-only* connectivity using the endpoint is enabled for the **Datasets workload** in a capacity. With read-only, data visualization applications and tools can query dataset model data, metadata, events, and schema.
 
 *Read-write* operations using the endpoint can be enabled. Read-write provides more dataset management, governance, advanced semantic modeling, debugging, and monitoring. When enabled, datasets have more parity with Azure Analysis Services and SQL Server Analysis Services enterprise grade tabular modeling tools and processes.
+
+## Analysis Services server properties
+
+Power BI Premium supports many Analysis Services server properties. To review these properties, refer to [Server properties in Analysis Services](/analysis-services/server-properties/server-properties-in-analysis-services).
 
 ## Terms of use
 
@@ -53,7 +57,7 @@ Common applications and tools used with Azure Analysis Services and SQL Server A
 
 **Power BI Report Builder** - A tool for authoring paginated reports. Create a report definition that specifies the data to retrieve, where to get it, and how to display it. You can preview your report in Report Builder and then publish your report to the Power BI service. Requires XMLA read-only. To learn more, see [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
 
-**Tabular Editor** - An open-source tool for creating, maintaining, and managing tabular models using an intuitive, lightweight editor. A hierarchical view shows all objects in your tabular model. Organizes objects by display folders with support for multi-select property editing and DAX syntax highlighting. Requires XMLA read-only for query operations. Requires read-write for metadata operations. To learn more, see [tabulareditor.github.io](https://tabulareditor.github.io/).
+**Tabular Editor** - An open-source tool for creating, maintaining, and managing tabular models using an intuitive, lightweight editor. A hierarchical view shows all objects in your tabular model. Organizes objects by display folders with support for multi-select property editing and DAX syntax highlighting. Requires XMLA read-only for query operations. Requires read-write for metadata operations. To learn more, see [tabulareditor.github.io](https://github.com/TabularEditor/tabulareditor.github.io).
 
 **DAX Studio** – An open-source tool for DAX authoring, diagnosis, performance tuning, and analysis. Features include object browsing, integrated tracing, query execution breakdowns with detailed statistics, DAX syntax highlighting and formatting. Requires XMLA read-only for query operations. To learn more, see [daxstudio.org](https://daxstudio.org/).
 
@@ -158,22 +162,22 @@ Server name aliases, supported in Azure Analysis Services aren't supported for P
 
 ## Security
 
-In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** must be enabled in the admin portal. If you need to generate Analyze in Excel (AIXL) files that connect to the XMLA endpoint, the tenant-level setting **Allow live connections** should also be enabled. These settings are both enabled by default.
+In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** must be enabled in the admin portal. If you need to generate Analyze in Excel (AIXL) files that connect to the XMLA endpoint, the tenant-level setting ***Users can work with datasets in Excel using a live connection** should also be enabled. These settings are both enabled by default.
 
-**Allow XMLA endpoints and Analyze in Excel with on-premises datasets** is an integration setting.
+**Allow XMLA endpoints and Analyze in Excel with on-premises datasets** is an Integration setting.
 
 :::image type="content" source="media/service-premium-connect-tools/allow-xmla-endpoints.png" alt-text="Integration setting allow XMLA endpoints.":::
 
-The following table describes the implications of the setting **Export data** for XMLA and Analyze in Excel (AIXL):
+**Users can work with datasets in Excel using a live connection** is an Export and sharing setting.
+
+:::image type="content" source="media/service-premium-connect-tools/allow-live-connections.png" alt-text="Export and sharing setting allow live connections.":::
+
+The following table describes the implications of both settings:
 
 |Setting  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **disabled**  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **enabled**  |
 |---------|---------|---------|
-|Allow Live Connections toggle = disabled     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-premises datasets *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-premises datasets *allowed*         |
-|Allow Live Connections toggle = enabled     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-premises datasets *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-premises datasets *allowed*        |
-
-**Allow live connections** is an export and sharing setting.
-
-:::image type="content" source="media/service-premium-connect-tools/allow-live-connections.png" alt-text="Export and sharing setting allow live connections.":::
+|**Users can work with datasets in Excel using a live connection** = disabled     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-premises datasets *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-premises datasets *allowed*         |
+|**Users can work with datasets in Excel using a live connection** = enabled     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-premises datasets *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-premises datasets *allowed*        |
 
 Access through the XMLA endpoint will honor security group membership set at the workspace/app level.
 

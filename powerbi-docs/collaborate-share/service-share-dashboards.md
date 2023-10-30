@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 05/17/2023
+ms.date: 09/06/2023
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -37,6 +37,12 @@ Sujata demonstrates how to share in the Power BI service.
 - Your recipients also need Power BI Pro or Premium Per User (PPU) licenses, unless the content is in a [Premium capacity](../enterprise/service-premium-what-is.md). 
 - If you want to allow recipients to edit a shared report, you have to assign the user a workspace role that allows editing. To learn more about role-level permissions and how to assign roles, read [Roles in workspaces](service-roles-new-workspaces.md).
 
+>[!NOTE]
+>
+>* Only **P SKU**s and **F SKU**s larger than F32 allow users with a Microsoft Fabric free license who have Viewer role on the workspace containing the content to consume Power BI apps and shared content in the Power BI service. Smaller **F SKU**s require a Pro license to consume Power BI content.
+>* The **F SKU** is part of Fabric. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
+
+
 ### Where you can share
 
 - You can share reports and dashboards from My Workspace. 
@@ -61,7 +67,7 @@ You can also change how you share this report.  Select **People in your organiza
 :::image type="content" source="media/service-share-dashboards/power-bi-share-links-2.png" alt-text="Share link options dialog box.":::
 
    > [!NOTE] 
-   > Your organization may not allow you to create shareable links to **People in your organization**. Learn more about this [tenant setting](../admin/service-admin-portal-export-sharing.md#allow-shareable-links-to-grant-access-to-everyone-in-your-organization) in the admin portal documentation.
+   > Your organization may not allow you to create shareable links to **People in your organization**. Learn more about this [tenant setting](/fabric/admin/service-admin-portal-export-sharing#allow-shareable-links-to-grant-access-to-everyone-in-your-organization) in the admin portal documentation.
    
 Selecting **Copy link** will automatically generate and copy a shareable link to your clipboard:
 
@@ -194,8 +200,6 @@ When you share with people outside your organization, they receive an email with
 
 After people sign in, they see the shared report or dashboard in its own browser window, not in the usual Power BI portal. External recipients should bookmark the link to get back to this report or dashboard later.
 
-People outside your organization can't edit any content in the shared report or dashboard. They can interact with the charts and change filters or slicers, but changes aren't saved. 
-
 Only your direct recipients see the shared report or dashboard. For example, if you sent the email to Vicki@contoso.com, only Vicki sees the dashboard. No one else can see the dashboard, even if Vicki forwards them the link. Vicki must use the same email address to access it; if Vicki signs in with any other email address, Vicki won't have access to the dashboard.
 
 People outside your organization don't see any data at all if role- or row-level security is implemented on on-premises Analysis Services tabular models.
@@ -203,10 +207,6 @@ People outside your organization don't see any data at all if role- or row-level
 Use a security group, not a distribution group, to share with a group that includes people with external email addresses. People with external emails in a distribution group can't see the content you share, unless they're Azure Active Directory (Azure AD) B2B guest users. Learn more about [Azure AD B2B guest users](../enterprise/service-admin-azure-ad-b2b.md).
 
 If you send a link from a Power BI mobile app to people outside your organization, clicking the link opens the dashboard in a browser, not in the Power BI mobile app.
-
-### Allow external users to edit content
-
-Your Power BI admin can allow external guest users to edit and manage content in your organization. If so, your external users won't have that consumption-only experience. They can edit and manage content within your organization. Learn more about [distributing Power BI content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
 ## Share with more than 100 separate users
 

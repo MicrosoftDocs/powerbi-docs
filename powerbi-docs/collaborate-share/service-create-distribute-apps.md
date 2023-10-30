@@ -8,10 +8,11 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 05/02/2023
+ms.date: 09/07/2023
 
 LocalizationGroup: Share your work
 ---
+
 # Publish an app in Power BI
 
 In Power BI, you can create official packaged content, then distribute it to a broad audience as an *app*. You [create apps in *workspaces*](service-create-the-new-workspaces.md), where you can collaborate on Power BI content with your colleagues. Then you can publish the finished app to large groups of people in your organization. The [app consumer view](#app-consumer-view) section of this article outlines the app consumer experience in the Power BI service and in the Power BI mobile apps.
@@ -86,6 +87,20 @@ On the **Content** tab, you add the content from the workspace to the app.
 
 1. Select **Next: Add audience**.
 
+#### Add Power BI reports with paginated report visuals
+
+When you include Power BI reports that have paginated report visuals, we recommend including the referred paginated reports in the app. This way, the published Power BI report work with the published version of the paginated report instead of the report stored in the workspace.
+
+During publishing, Power BI can detect reports with visuals that point at missing paginated reports:
+
+:::image type="content" source="media/service-create-distribute-apps/app-successfully-published-with-warning.png" alt-text="Screenshot of successfully published app with warning.":::
+
+You can address the issue in one of two ways:
+
+- Include the paginated report in the app and make sure the audience that has access to the Power BI report also has access to the paginated report.
+
+- Make sure the audience has access to the paginated report in the workspace.
+
 ### Create and manage multiple audiences
 
 On the **Audience** tab, you create and manage audience groups within the app.
@@ -96,14 +111,24 @@ On the **Audience** tab, you create and manage audience groups within the app.
     
 1. Select the hide/show icon next to each item in the workspace to determine the content that this app audience can see.
 
+    
+    >[!IMPORTANT]
+    >
+    >- Hiding content from the audience makes it unavailable in the published app for that audience.
+    >- Dashboard tiles pointing at reports that are hidden from the audience no longer work. Instead they display an error: "The report shown in this tile doesn’t exist or you don’t have permission to view it."
+    >- Paginated reports with subreports don't display the content of the subreport if it's hidden from the audience.
+    >- Users of drillthrough reports can't navigate to the destination reports if the destination reports are hidden.
+    >
+    >To address all of these issues, make sure that all the dependent reports are available for the audience.
+     
 1. In the **Manage audience access** pane, specify groups or users to add to the current audience group. 
 
     :::image type="content" source="media/service-create-distribute-apps/audience-tab.png" alt-text="Screenshot of Manage audience access tab.":::
     
     >[!IMPORTANT]
-    >If your app relies on datasets from other workspaces, make sure that all app users have access to the underlying datasets.
     >
-    >If the app or report is in the same workspace as the dataset, make sure you add the report associated with the dataset to the app as well.
+    >- If your app relies on datasets from other workspaces, make sure that all app users have access to the underlying datasets.
+    >- If the app or report is in the same workspace as the dataset, make sure you add the report associated with the dataset to the app as well.
      
 1. For each audience group, grant access to either all people in your organization or specific users or groups. You can also expand the **Advanced** option to configure the following settings per audience group: 
 
@@ -114,8 +139,8 @@ On the **Audience** tab, you create and manage audience groups within the app.
     :::image type="content" source="media/service-create-distribute-apps/advance-options-manage-audience-access-pane.png" alt-text="Screenshot of Advanced settings in Manage audience access pane.":::
 
     > [!NOTE]
-    > - The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least the Contributor role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
-    > - Build permissions only apply to datasets _in the same workspace_ as the app. If datasets are in other workspaces, you must explicitly grant build permissions on those datasets, or add the users as at least the Contributor Role in that workspace.
+    > - The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least a Viewer role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
+    > - Build permissions only apply to datasets _in the same workspace_ as the app. If datasets are in other workspaces, you must explicitly grant build permissions on those datasets, or add the users to at least the Viewer role in that workspace.
 
 ### Allow saving a copy of a report
 
@@ -155,7 +180,7 @@ However, this option is disabled in these three scenarios:
 
 - You've selected **Install this app automatically** on the **Setup** tab. We don't allow automatic installation of an app for an entire organization 
 - You're a guest user who has been assigned a workspace role. 
-- Your admin doesn't allow you to assign an app to your entire organization. You can ask your admin to change this setting in the [Content pack and app tenant settings](../admin/service-admin-portal-content-pack-app.md#publish-content-packs-and-apps-to-the-entire-organization) section of tenant settings in the Admin portal. 
+- Your admin doesn't allow you to assign an app to your entire organization. You can ask your admin to change this setting in the [Content pack and app tenant settings](/fabric/admin/service-admin-portal-content-pack-app#publish-content-packs-and-apps-to-the-entire-organization) section of tenant settings in the Admin portal. 
 
 ## Manage app access requests
 
@@ -203,7 +228,7 @@ After you publish your app, you may want to change or update it.
     > If you removed app permissions as part of the update, new app installers won't get those permissions. However, **the update won't remove the permissions from users who already have them.** To remove such existing access, go to the Direct access tab on the datasets manage permissions page and remove the permissions manually. 
 
 ## Automatically install apps for end users
-If an admin gives you permission, you can install apps automatically, pushing them to app consumers. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from the Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](../admin/service-admin-portal-content-pack-app.md#push-apps-to-end-users) in the Power BI admin portal article.
+If an admin gives you permission, you can install apps automatically, pushing them to app consumers. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from the Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](/fabric/admin/service-admin-portal-content-pack-app#push-apps-to-end-users) in the Power BI admin portal article.
 
 ### How to push an app automatically to end users
 Once the admin has assigned permissions to you, you have a new option to **install the app automatically**. When you check the box and select **Publish app** (or **Update app**), the app is pushed to all audience groups defined in the **Audience** tab of the app.
@@ -229,7 +254,7 @@ Keep these things in mind when pushing apps to end users:
 * Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 
 ## App consumer view
-App consumers in the Power BI service and in the Power BI mobile apps only see the content based on the access permissions for their respective audience groups. Consumers who have access to multiple audience groups see group tabs on the top bar to switch between different audience views easily. For example, if the user is part of both product team and sales team groups, they will see three view tabs, as shown in the following image. By default, consumers see the All tab view, which is a consolidated view showing all content that they have access to. App consumers can browse different audience group tabs to see the content for each group. 
+App consumers in the Power BI service and in the Power BI mobile apps only see the content based on the access permissions for their respective audience groups. Consumers who have access to multiple audience groups see group tabs on the top bar to switch between different audience views easily. For example, if the user is part of both product team and sales team groups, they see three view tabs, as shown in the following image. By default, consumers see the All tab view, which is a consolidated view showing all content that they have access to. App consumers can browse different audience group tabs to see the content for each group. 
 
 **The consolidated *All* view**
 :::image type="content" source="media/service-create-distribute-apps/audience-all-view.png" alt-text="Screenshot showing All view for app consumers.":::
@@ -270,7 +295,7 @@ Things to keep in mind about publishing apps:
 * Having multiple audiences isn't fully supported in deployment pipelines. Content visibility of new content that you add to an org app must still be managed manually via audience management.
 * You can't open an added link or see its content if you chose to open the link in the content area.
 * Apps can have a maximum of 200 dashboards.
-* If you include a report that uses chained datasets, also known as [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. 
+* If you include a report that uses chained datasets, also known as [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Azure AD Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
 
 ## Next steps
 
@@ -279,3 +304,5 @@ Things to keep in mind about publishing apps:
 * [Power BI apps for external services](../connect-data/service-connect-to-services.md)
 * [Power BI Admin Portal](../admin/service-admin-portal.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+
