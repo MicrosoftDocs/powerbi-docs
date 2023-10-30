@@ -21,9 +21,9 @@ This article provides recommendations for faster rendering of reports, dashboard
 
 Keep tools and SDK packages up-to-date.
 
-* Always use the latest version of [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
+* Use the latest version of [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 * Install the latest version of the [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript). We continuously release new enhancements, so make sure to follow up from time to time.
-* Use the latest version of [Tabular Editor](https://github.com/otykier/TabularEditor/releases/latest)
+* Use the latest version of [Tabular Editor](https://github.com/otykier/TabularEditor/releases/latest).
 
 ## Initialize embedding
 
@@ -45,7 +45,7 @@ For example, one of the use cases for this feature, is to run the iFrame bootstr
 > [!TIP]
 > Use the [bootstrap API](/javascript/api/overview/powerbi/bootstrap-better-performance) when possible to generate the iFrame before it's visible to the end user.
 
-​When embedding a report or other Power BI items, make sure that the embed container is part of the DOM and that the display CSS attribute is not set to *none* as this can cause unexpected behaviors. If you want to hide the embed container, consider using the visibility CSS attribute.
+​When you embed a report or other Power BI item, make sure the embed container is part of the DOM and that the display CSS attribute isn't set to *none* to avoid unexpected behaviors. If you want to hide the embed container, consider using the visibility CSS attribute.
 
 ## Embed parameters
 
@@ -63,7 +63,7 @@ Provide **View** permissions if you don't intend to embed a report in edit mode.
 
 Usually, report visuals are saved with cached data. Reports render the cached data while queries are executed. If filters, bookmarks, or slicers are provided, cached data isn't used and the visuals are rendered only after the visual query has ended.
 
-If you embed reports with the same filters, bookmarks, and slicers, save the report with the filters, bookmarks, and slicers already applied. When you save the report this way, it will render using the cached data that includes the filters, bookmarks, and slicers, which improves performance.
+If you embed reports with the same filters, bookmarks, and slicers, save the report with the filters, bookmarks, and slicers already applied. When you save the report this way, it renders using the cached data that includes the filters, bookmarks, and slicers, which improves performance.
 
 ## Switching between reports
 
@@ -76,15 +76,15 @@ When embedding multiple reports to the same space, don't generate a new [iFrame]
 
 When embedding several visuals from the same report, don't generate a new [iFrame](pbi-glossary.md#inline-frame-iframe) for each visual. Use a single iFrame to [render the report](/javascript/api/overview/powerbi/embed-report) with the [specified visuals](/javascript/api/overview/powerbi/embed-visual).
 
-When embedding multiple visuals into a single iFrame, consider the following:
+When embedding multiple visuals into a single iFrame, consider the following points:
 
-* Power BI uses iFrames to embed a report. Sometimes you might want to add more content between the visuals (for example, text or graphics that don't come from the report). In that case, you may need a different iFrame to render different visuals. For best performance, try and arrange the visuals so that you use the fewest iFrames possible. To reduce the number of iFrames, please consider using the [custom-layout feature](/javascript/api/overview/powerbi/custom-layout).
+* Power BI uses iFrames to embed a report. Sometimes you might want to add more content between the visuals (for example, text or graphics that don't come from the report). In that case, you might need a different iFrame to render different visuals. For best performance, try and arrange the visuals so that you use the fewest iFrames possible. To reduce the number of iFrames, consider using the [custom-layout feature](/javascript/api/overview/powerbi/custom-layout).
 
 * If you have visuals from different reports or different datasets, consider joining the datasets and creating a new report so that you can include all the visuals in the same iFrame.
 
-* Another alternative, if you have non-contiguous regions, or data from multiple datasets, is to create a [dashboard](/power-bi/create-reports/service-dashboard-tiles) and pin the visuals to it. This allows you to:
+* Another alternative, if you have noncontiguous regions, or data from multiple datasets, is to create a [dashboard](/power-bi/create-reports/service-dashboard-tiles) and pin the visuals to it. This allows you to:
 
-  * Embed the individual [tiles](/javascript/api/overview/powerbi/embed-dashboard-tile) into non-contiguous iFrames. Dashboard tiles are lighter than reports and load faster.
+  * Embed the individual [tiles](/javascript/api/overview/powerbi/embed-dashboard-tile) into noncontiguous iFrames. Dashboard tiles are lighter than reports and load faster.
   * Embed the entire dashboard into one iFrame. This allows you to have visuals from different reports or datasets in one iFrame without creating a new report.
 
   Keep in mind, however, that dashboard tiles aren't interactive and don't [refresh](/power-bi/connect-data/refresh-data) with the same frequency as visuals.
@@ -99,9 +99,9 @@ Organizations with Power BI Premium capacity or Power BI Embedded capacity can t
 
 ### Performance events
 
-To measure embedded performance, you may use two events:
+To measure embedded performance, you can use two events:
 
-1. Loaded event: The time until the report is initialized (the Power BI logo will disappear when the load is finished).
+1. Loaded event: The time until the report is initialized (the Power BI logo disappears when the load is finished).
 2. Rendered event: The time until the report is fully rendered, using the actual data. The rendered event is fired each time the report is re-rendered (for example, after applying filters). To measure a report, make sure you do the calculations on the first raised event.
 
 Cached data is rendered when available but no other event is generated.
@@ -111,7 +111,7 @@ Cached data is rendered when available but no other event is generated.
 ### Performance Analyzer
 
 To examine the performance of the report elements, you might use the Performance Analyzer in Power BI Desktop.
-The Performance Analyzer will allow you to see and record logs that measure how each of your report elements performs.
+The Performance Analyzer allows you to see and record logs that measure how each of your report elements performs.
 
 [Learn more about Performance Analyzer](../../create-reports/desktop-performance-analyzer.md).
 
