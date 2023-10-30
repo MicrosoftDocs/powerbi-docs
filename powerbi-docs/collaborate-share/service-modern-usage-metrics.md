@@ -342,7 +342,6 @@ In addition to the above considerations and limitations, the following questions
 #### **Why do I see fewer Report Page Views than Report Views, shouldn't they be at least the same?** 
 Report Views rely on server telemetry that is generated when the report is first opened. Once a report is open, its page definitions are already loaded onto the user's device. Report Page Views rely on usage information from the user's device reaching Power BI. This can sometimes be blocked, as described in [Considerations and Limitations](#considerations-and-limitations).
 
-
 #### **I can't run usage metrics on a report.**
 You can only see usage metrics for reports you own or have permissions to edit.
 
