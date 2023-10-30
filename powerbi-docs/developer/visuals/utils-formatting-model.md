@@ -91,7 +91,7 @@ A *formatting settings card* specifies a formatting card in the formatting or an
 
 Adding slices to a formatting settings card puts all of these slices into one formatting card.
 
-Cards, Slices and Groups can be hidden dynamically by setting the `visible` parameter to *false* (*true* by default)
+Cards, Slices, and Groups can be hidden dynamically by setting the `visible` parameter to *false* (*true* by default).
 
 The card can populate either the formatting pane or analytics pane by setting the `analyticsPane` parameter to *true* or *false*.
 
