@@ -25,8 +25,6 @@ Keep tools and SDK packages up-to-date.
 * Install the latest version of the [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript). We continuously release new enhancements, so make sure to follow up from time to time.
 * Use the latest version of [Tabular Editor](https://github.com/otykier/TabularEditor/releases/latest)
 
-* Use the latest version of [Tabular Editor](https://github.com/otykier/TabularEditor/releases/latest)
-
 ## Initialize embedding
 
 ### Preload
