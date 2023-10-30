@@ -53,7 +53,7 @@ The `powerbi.embed(element, config)` method receives an element and a config par
 
 ### Embed URL
 
-Avoid generating the embed URL yourself. Instead, make sure you get the Embed URL by calling [Get reports](/rest/api/power-bi/reports/getreportsingroup), [Get dashboards](/rest/api/power-bi/dashboards/getdashboardsingroup), or [Get tiles](/rest/api/power-bi/dashboards/gettilesingroup) API. The **_config_** parameter in the URL is used for performance improvements.
+Avoid generating the embed URL yourself. Instead, make sure you get the Embed URL by calling [Get reports](/rest/api/power-bi/reports/getreportsingroup), [Get dashboards](/rest/api/power-bi/dashboards/getdashboardsingroup), or [Get tiles](/rest/api/power-bi/dashboards/gettilesingroup) API. The ***config*** parameter in the URL is used for performance improvements.
 
 ### Permissions
 
