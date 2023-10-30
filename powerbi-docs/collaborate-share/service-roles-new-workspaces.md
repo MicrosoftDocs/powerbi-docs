@@ -8,8 +8,8 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Roles in workspaces
 ms.topic: conceptual
-ms.date: 05/09/2023
-ms.custom: contperf-fy20q4
+ms.date: 09/07/2023
+ms.custom: fabric
 LocalizationGroup: Share your work
 ---
 
@@ -31,30 +31,30 @@ Everyone in a user group gets the role that you've assigned. If someone is in se
 
 |Capability   | Admin  | Member  | Contributor  | Viewer |
 |---|---|---|---|---|
-| Update and delete the workspace.  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |   |   |   | 
-| Add or remove people, including other admins.  |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |   |   |   |
-| Allow Contributors to update the app for the workspace.  |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |   |   |   |
-| Add members or others with lower permissions.  |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |   |
-| Publish, unpublish, and change permissions for an app. |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |   |
-| Update an app. |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |  If allowed <sup>1</sup>  |   |
-| Share an item or share an app.<sup>2</sup> |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |   |
-| Allow others to reshare items.<sup>2</sup> |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |   |
-| Feature apps on colleagues' home. |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |   |
-| Manage dataset permissions.<sup>3</sup> | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |  |  |
-| Feature dashboards and reports on colleagues' home. |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |   |
-| Create, edit, and delete content, such as reports, in the workspace.  |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |
-| Publish reports to the workspace, and delete content.  |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |
-| Create a report in another workspace based on a dataset in this workspace.<sup>3</sup> |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |
-| Copy a report.<sup>3</sup> | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |  |
-| Create metrics that's based on a dataset in the workspace.<sup>3</sup> | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |  |
-| Schedule data refreshes via the on-premises gateway.<sup>4</sup> | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |  |
-| Modify gateway connection settings.<sup>4</sup> | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |  |
-| View and interact with an item.<sup>5</sup> |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |
-| Read data that's stored in workspace dataflows. | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| Update and delete the workspace.  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |   |   |   | 
+| Add or remove people, including other admins.  |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |   |   |   |
+| Allow Contributors to update the app for the workspace.  |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |   |   |   |
+| Add members or others with lower permissions.  |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |   |   |
+| Publish, unpublish, and change permissions for an app. |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |   |   |
+| Update an app. |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |  If allowed <sup>1</sup>  |   |
+| Share items in apps, including datasets.<sup>2</sup> |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |   |   |
+| Allow others to reshare items.<sup>2</sup> |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |   |   |
+| Feature apps on colleagues' home. |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |   |   |
+| Manage dataset permissions.<sup>3</sup> | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |  |  |
+| Feature dashboards and reports on colleagues' home. |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |   |
+| Create, edit, and delete content, such as reports, in the workspace.  |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |   |
+| Publish reports to the workspace, and delete content.  |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |   |
+| Create a report in another workspace based on a dataset in this workspace.<sup>3</sup> |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |   |
+| Copy a report.<sup>3</sup> | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |  |
+| Create metrics that's based on a dataset in the workspace.<sup>3</sup> | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |  |
+| Schedule data refreshes via the on-premises gateway.<sup>4</sup> | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |  |
+| Modify gateway connection settings.<sup>4</sup> | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |  |
+| View and interact with an item.<sup>5</sup> |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |
+| Read data that's stored in workspace dataflows. | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |
 
 <sup>1</sup> Contributors can [update the app that's associated with the workspace](../collaborate-share/service-create-the-new-workspaces.md#allow-contributors-to-update-the-app), if the workspace Admin delegates this permission to them. However, they can't publish a new app or change who has permission to edit it.
 
-<sup>2</sup> Contributors and Viewers can also share items in a workspace, if they have Reshare permissions.
+<sup>2</sup> Contributors and Viewers can also share items in a workspace or an app, including datasets, if the app creator selected **Allow users to share the datasets in this app**. See the [Create and manage multiple audiences](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences) section of "Publish an app in Power BI."
 
 <sup>3</sup> To copy a report to another workspace, and to create a report in another workspace based on a dataset in the current workspace, you need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md). You also need at least the Contributor role on the source and destination workspaces. For datasets in the original workspace, if you have at least the Contributor role, you automatically have Build permission through your workspace role. For details, see [Copy reports from other workspaces](../connect-data/service-datasets-copy-reports.md).
 
@@ -80,7 +80,10 @@ Publishing reports to the workspace enforces existing licensing rules. If you tr
 
 ### Guest users
 
-By default, [Azure AD B2B Guest users](../enterprise/service-admin-azure-ad-b2b.md) can't access workspaces. Power BI admins can [allow external guest users to edit and manage content in the organization](../enterprise/service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). Enabled Guest users can access workspaces to which they have permission.
+[Azure AD B2B Guest users](../enterprise/service-admin-azure-ad-b2b.md) who have been assigned a workspace role or granted specific item permissions, will be able to perform the operations permitted by those roles or permissions.
+
+> [!NOTE]
+> Guest users who have been assigned workspace roles or specific item permissions will continue to have those roles and/or permissions, even if the **[Allow Azure Active Directory guest users to edit and manage content in the organization](/fabric/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organization)** tenant setting is disabled.
 
 ## Considerations and limitations
 

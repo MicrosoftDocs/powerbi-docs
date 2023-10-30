@@ -35,7 +35,7 @@ The following video shows the report editor in Power BI Desktop.
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/IkJda4O7oGs]
 
 ## Work in the Power BI service
 

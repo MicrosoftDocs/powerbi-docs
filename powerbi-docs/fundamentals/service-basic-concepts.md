@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 manager: kfollis
 ms.reviewer: ''
-ms.custom: video-B2vd4MQrz4M
+ms.custom: video-B2vd4MQrz4M, build-2023, build-2023-dataai
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
@@ -101,8 +101,8 @@ You can't have dashboards or reports without data (well, you can have empty dash
 
 ### Dig deeper into dataflows
 
-- [Introduction to dataflows and self-service data prep](../transform-model/dataflows/dataflows-introduction-self-service.md
--- [Configure and consume a dataflow](../transform-model/dataflows/dataflows-configure-consume.md)
+- [Introduction to dataflows and self-service data prep](../transform-model/dataflows/dataflows-introduction-self-service.md)
+- [Configure and consume a dataflow](../transform-model/dataflows/dataflows-configure-consume.md)
 - [Creating a dataflow](../transform-model/dataflows/dataflows-create.md)
 
 ## Datasets

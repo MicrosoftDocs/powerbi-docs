@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 04/11/2023
+ms.date: 09/25/2023
 Localizat2onGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
@@ -216,17 +216,17 @@ However, if a measure doesn't refer to items from a single remote source group e
 
 In this scenario, the **Internet Sales measure** isn't impacted by the calculation group defined in the remote model because they aren't part of the same model. However, the calculation group can change the result of the **Reseller Sales** measure, because they are in the same model. This fact means that the results returned by the **Total Sales** measure must be evaluated carefully. Imagine we use the calculation group in the remote model to return year-to-date results. The result returned by **Reseller Sales** is now a year-to-date value, while the result returned by **Internet Sales** is still an actual. The result of **Total Sales** is now likely unexpected, as it adds an actual to a year-to-date result.
 
-## Composite models on Power BI datasets and Azure Analysis Services
+## Composite models on Power BI datasets and Analysis Services
 
 Using composite models with Power BI datasets and Analysis Services, you can build a composite model using a DirectQuery connection to connect to Power BI datasets, Azure Analysis Services (AAS), and SQL Server 2022 Analysis Services. Using a composite model, you can combine the data in these sources with other DirectQuery and imported data. Report authors who want to combine the data from their enterprise semantic model with other data they own, such as an Excel spreadsheet, or want to personalize or enrich the metadata from their enterprise semantic model, will find this functionality especially useful. 
 
 ### Managing composite models on Power BI datasets
 
-To enable the creation of composite models on Power BI datasets, your tenant needs to have the following switches enabled:
+To enable the creation and consumption of composite models on Power BI datasets, your tenant needs to have the following switches enabled:
 
-- [Allow XMLA Endpoints and Analyze in Excel with on-premises datasets](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets). If this switch is disabled a DirectQuery connection to a Power BI dataset can't be made.
-- [Users can work with Power BI datasets in Excel using a live connection](../admin/service-admin-portal-export-sharing.md#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection). If this switch is disabled, users can't make live connections to Power BI datasets so the **Make changes to this model** button can't be reached.
-- [Allow DirectQuery connection to Power BI datasets](../admin/service-admin-portal-export-sharing.md#allow-directquery-connections-to-power-bi-datasets). See the following paragraphs for more information on this switch and the effect of disabling it.
+- [Allow XMLA Endpoints and Analyze in Excel with on-premises datasets](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets). If this switch is disabled a DirectQuery connection to a Power BI dataset can't be made.
+- [Users can work with Power BI datasets in Excel using a live connection](/fabric/admin/service-admin-portal-export-sharing#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection). If this switch is disabled, users can't make live connections to Power BI datasets so the **Make changes to this model** button can't be reached.
+- [Allow DirectQuery connection to Power BI datasets](/fabric/admin/service-admin-portal-export-sharing#allow-directquery-connections-to-power-bi-datasets). See the following paragraphs for more information on this switch and the effect of disabling it.
 
 Additionally, for Premium capacities and Premium Per User the ["XMLA endpoint" setting should be enabled and set to to either "Read Only" or "Read/Write"](../enterprise/service-premium-connect-tools.md#enable-xmla-read-write).
 
@@ -236,11 +236,11 @@ Tenant administrators can enable or disable DirectQuery connections to Power BI 
 
 Existing reports that leverage a composite model on a Power BI dataset will continue to work and users can still create the composite model in using Desktop but won't be able to publish to the service. Instead, when you create a DirectQuery connection to the Power BI dataset by selecting **Make changes to this model** you'll see the following warning message:
 
-![Warning message informing the user that publication of a composite model that uses a Power BI dataset is not allowed, because DirectQuery connections are not allowed by the admin. The user can still create the model using Desktop.](media/desktop-composite-models/directquery-connection-disabled-warning.png)
+![Screenshot showing Warning message informing the user that publication of a composite model that uses a Power BI dataset is not allowed, because DirectQuery connections are not allowed by the admin. The user can still create the model using Desktop.](media/desktop-composite-models/directquery-connection-disabled-warning.png)
 
 This way you can still explore the dataset in your local Power BI Desktop environment and create the composite model. However, you won't be able to publish the report to the Service. When you publish the report and model you'll see the following error message and publication will be blocked:
 
-![Error message that blocks publication of a composite model that uses a Power BI dataset because DirectQuery connections are not allowed by the admin.](media/desktop-composite-models/directquery-connection-disabled-publish-error.png)
+![Screenshot showing Error message that blocks publication of a composite model that uses a Power BI dataset because DirectQuery connections are not allowed by the admin.](media/desktop-composite-models/directquery-connection-disabled-publish-error.png)
 
 Note that live connections to Power BI datasets aren't influenced by the switch, nor are live or DirectQuery connections to Analysis Services. These will continue to work regardless of if the switch has been turned off. Also, any published reports that leverage a composite model on a Power BI dataset will continue to work even if the switch has been turned off after they were published.
 
@@ -251,39 +251,48 @@ Building a composite model on a Power BI dataset or Analysis Services model requ
 
 To see which connections are being used in your model, check the status bar in the bottom right corner of Power BI Desktop. If you're only connected to an Analysis Services source, you see a message like the following image:
 
-![Analysis Services only connection](media/desktop-composite-models/directquery-datasets-01.png)
+![Screenshot showing Analysis Services only connection.](media/desktop-composite-models/directquery-datasets-01.png)
 
 If you're connected to a Power BI dataset, you see a message telling you which Power BI dataset you're connected to:
 
-![Power BI dataset connection](media/desktop-composite-models/directquery-datasets-01b.png)
+![Screenshot showing Power BI dataset connection.](media/desktop-composite-models/directquery-datasets-01b.png)
 
 If you want to customize the metadata of fields in your live connected dataset, select **Make changes to this model** in the status bar. Alternatively, you can select the **Make changes to this model** button in the ribbon, as shown in the following image. In **Report View** the **Make changes to this model** button in the **Modeling** tab. In Model View, the button is in the **Home** tab.
 
-![Make changes to this model button](media/desktop-composite-models/directquery-datasets-02.png)
+![Screenshot showing Make changes to this model button.](media/desktop-composite-models/directquery-datasets-02.png)
 
 Selecting the button displays a dialog confirming addition of a local model. Select **Add a local model** to enable creating new columns or modifying the metadata, for fields from Power BI datasets or Analysis Services. The following image shows the dialog that's displayed. 
 
-![Create local model dialog](media/desktop-composite-models/directquery-datasets-03.png)
+![Screenshot showing Create local model dialog.](media/desktop-composite-models/directquery-datasets-03.png)
 
 When you're connected live to an Analysis Services source, there's no local model. To use DirectQuery for live connected sources, such as Power BI datasets and Analysis Services, you must add a local model to your report. When you publish a report with a local model to the Power BI service, a dataset for that local model is published a well.
 
 ### Chaining
 
-Datasets, and the datasets and models on which they're based, form a *chain*. This process, called **chaining**, lets you publish a report and dataset based on other Power BI datasets, a feature that previously wasn't possible.
+Datasets and the datasets and models on which they're based form a *chain*. This process, called *chaining*, lets you publish a report and dataset based on other Power BI datasets, a feature that previously wasn't possible.
 
 For example, imagine your colleague publishes a Power BI dataset called *Sales and Budget* that's based on an Analysis Services model called *Sales*, and combines it with an Excel sheet called *Budget*.
 
 When you publish a new report (and dataset) called *Sales and Budget Europe* that's based on the *Sales and Budget* Power BI dataset published by your colleague, making some further modifications or extensions as you do so, you're effectively adding a report and dataset to a chain of length three, which started with the *Sales* Analysis Services model, and ends with your *Sales and Budget Europe* Power BI dataset. The following image visualizes this chaining process.
 
-![The process of chaining datasets](media/desktop-composite-models/directquery-datasets-04.png)
+![Screenshot showing The process of chaining datasets.](media/desktop-composite-models/directquery-datasets-04.png)
 
-The chain in the previous image is of length three, which is the maximum length during this preview period. Extending beyond a chain length of three isn't supported and results in errors.
+The chain in the previous image is of length three, which is the maximum length. Extending beyond a chain length of three isn't supported and results in errors.
+
+### Permissions and licensing
+
+Users accessing reports need to have proper [permissions to all datasets and models in the chain that's formed by the dataset or model](#chaining) that they want to access and the datasets or models on which the reports are based. This permission can be Read or Build depending on whether they need to view the reports or make changes and create new reports. Also notice that [these tenant switches](#managing-composite-models-on-power-bi-datasets) should be enabled for the user.
+
+> [!NOTE]
+> Refer to this blogpost for important information about [permissions required for composite models on Power BI datasets and Analysis Services models](https://powerbi.microsoft.com/blog/announcing-general-availability-for-composite-models-on-power-bi-datasets-and-analysis-services-models/).
+
+If any dataset in the chain is in a Premium Per User workspace, the user accessing it needs a [Premium Per User license](../fundamentals/service-features-license-type.md#premium-per-user-ppu-license). If any dataset in the chain is in a Pro workspace, the user accessing it needs a [Pro license](../fundamentals/service-features-license-type.md#pro-license). If all the datasets in the chain are on [Premium capacities](../fundamentals/service-features-license-type.md#premium-capacity), a user can access it using a [Free license](../fundamentals/service-features-license-type.md#free-per-user-license).
 
 ### Security warning
 
 Using the **DirectQuery for Power BI datasets and Analysis Services** feature will present you with a security warning dialog, shown in the following image.
 
-![Security warning](media/desktop-composite-models/directquery-datasets-05.png)
+![Screenshot showing Security warning.](media/desktop-composite-models/directquery-datasets-05.png)
 
 Data may be pushed from one data source to another, which is the same security warning for combining DirectQuery and import sources in a data model. To learn more about this behavior, please see [using composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
 
@@ -291,10 +300,10 @@ Data may be pushed from one data source to another, which is the same security w
 
 You can build composite models using data from Power BI datasets or Analysis Services models to service the following scenarios: 
 
-- Connecting to data from various sources: Import (such as files), Power BI datasets, Azure Analysis Services
+- Connecting to data from various sources: Import (such as files), Power BI datasets, Analysis Services models
 - Creating relationships between different data sources
 - Writing measures that use fields from different data sources
-- Creating new columns for tables from Power BI datasets of Azure Analysis Services
+- Creating new columns for tables from Power BI datasets or Analysis Services models
 - Creating visuals that use columns from different data sources
 - You can remove a table from your model using the field list, to keep models as concise and lean as possible (if you connect to a perspective, you can't remove tables from the model) 
 - You can specify which tables to load, rather than having to load all tables when you only want a specific subset of tables. See Loading a subset of tables later in this document. 
@@ -321,8 +330,8 @@ When working with DirectQuery for Power BI datasets and Analysis Services, consi
     For more information on using date columns versus date hierarchies, see [apply auto date or time in Power BI Desktop](desktop-auto-date-time.md).
 
 * The maximum length of a chain of models is three. Extending beyond the chain length of three isn't supported and results in errors.
-* A discourage chaining flag can be set on a model to prevent a chain from being created or extended. See Manage DirectQuery connections to a published dataset for more information.
-* The connection to a Power BI dataset won't be shown in Power Query.
+* A discourage chaining flag can be set on a model to prevent a chain from being created or extended. See [Manage DirectQuery connections to a published dataset](../connect-data/desktop-discourage-directquery-connections-to-dataset.md) for more information.
+* The connection to a Power BI dataset or Analysis Services model won't be shown in Power Query.
 
 The following **limitations** apply when working with DirectQuery for Power BI datasets and Analysis Services:
 
@@ -339,7 +348,7 @@ The following **limitations** apply when working with DirectQuery for Power BI d
     * Data imported from Excel or CSV files on the Service
     * Usage metrics
     * Datasets stored in “My workspace”
-* Using Power BI Embedded with datasets that include a DirectQuery connection to an Azure Analysis Services model isn't currently supported.
+* Using Power BI Embedded with datasets that include a DirectQuery connection to an Analysis Services model isn't currently supported.
 * Publishing a report to web using the publish to web feature isn't supported.
 * Calculation groups on remote sources aren't supported, with undefined query results.
 * Calculated tables aren't supported in the Service using this feature. Attempting to perform a refresh on a dataset with a calculated table or a calculated column that references a DirectQuery data source will result in a "Single sign-on (SSO) credential isn't provided" error message.
@@ -403,7 +412,7 @@ With this background in mind, consider the following scenario:
 
 1. Now let's say that Admin_user updates the OLS rules on the enterprise semantic model to stop Finance from seeing the Territory table.
 
-1. Only when the Finance dataset is refreshed will the updated OLS rules be reflected in it. Thus, when the Finance_user refreshes the Finance dataset, the Territory table will no longer be shown in the fields list, and the visual in the Finance report that uses a column from the Territory table will return an error for Finance_user, because they're now not allowed to access the Territory table.
+1. The updated OLS rules are only reflected in the Finance dataset when it's refreshed. Thus, when the Finance_user refreshes the Finance dataset, the Territory table will no longer be shown in the fields list, and the visual in the Finance report that uses a column from the Territory table will return an error for Finance_user, because they're now not allowed to access the Territory table.
 
 To summarize:
 
@@ -413,7 +422,8 @@ To summarize:
 * If the source model updates its OLS rules, those changes will only affect the composite model when it's refreshed.  
 
 ### Loading a subset of tables from a Power BI dataset or Analysis Services model
-When connecting to a Power BI dataset or Analysis Services model using a DirectQuery connection, you can decide which tables to connect to. You can also choose to automatically add any table that might get added to the dataset or model after you make the connection to your model. When you connect to a perspective your model will contain all tables in the dataset or model and any tables not included in the perspective will be hidden. Moreover, any table that might get added to the perspective will be added automatically.
+When connecting to a Power BI dataset or Analysis Services model using a DirectQuery connection, you can decide which tables to connect to. You can also choose to automatically add any table that might get added to the dataset or model after you make the connection to your model. When you connect to a perspective your model will contain all tables in the dataset or model and any tables not included in the perspective will be hidden. Moreover, any table that might get added to the perspective will be added automatically. In the **Settings** menu you can decide to automatically connect to tables that are added to the dataset or model after you first set up the connection.
+
 This dialog won't be shown for live connections.
 
 >[!NOTE]
@@ -421,10 +431,30 @@ This dialog won't be shown for live connections.
 
 :::image type="content" source="media/desktop-composite-models/directquery-datasets-subset.png" alt-text="Dialog that allows specifying what tables to load from a Power BI dataset or Analysis Services model.":::
 
+### Setting up deduplication rules
+You can specify deduplication rules to keep measure and table names unique in a composite model by using the **Settings** option in the dialog shown above:
+
+:::image type="content" source="media/desktop-composite-models/directquery-datasets-deduplication-rules.png" alt-text="Dialog that allows specifying deduplication rules to apply when loading from a Power BI dataset or Analysis Services model.":::
+
+In the example above we have decided to add ' (marketing)' as a suffix to any table or measure name that is in conflict with another source in the composite model. 
+Note that you can: 
+- enter a text to be added to the name of conflicting tables or measures
+- specify whether you want the text to be added to the table or measure name as a prefix or a suffix 
+- apply the deduplication rule to tables, measures or both 
+- Choose to apply the deduplication rule only when a name conflict occurs or apply it all the time. The default is to apply the rule only when duplication occurs. In our example, any table or measure from the marketing source that does not have a duplicate in the sales source will not get a name change. 
+
+After you make the connections and set up the deduplication rule, your field list will show both ‘Customer’ and ‘Customer (marketing)’ according to the deduplication rule set up in our example:
+
+:::image type="content" source="media/desktop-composite-models/directquery-datasets-name-deduplication-rules-effect.png" alt-text="Dialog that allows specifying deduplication rules to apply when loading from a Power BI dataset or Analysis Services model.":::
+
+
+If you do not specify a deduplication rule or the deduplication rules you specified do not resolve the name conflict the standard deduplication rules  are still applied. The standard deduplication rules add a number to the name of a the conflicting item. In case of a name conflict on the 'Customer' table one of the 'Customer' tables will be renamed 'Customer 2'.
 
 ## Considerations and limitations
 
-Composite models present a few limitations:
+Composite models present a few considerations and limitations:
+
+**Mixed-mode connections** - When using a mixed mode connection that contains online data (such as a Power BI dataset) and an on-premises dataset (such as an Excel workbook), you must have gateway mapping established for visuals to properly appear.
 
 Currently, [incremental refresh](../connect-data/incremental-refresh-overview.md) is supported for composite models connecting to SQL, Oracle, and Teradata data sources only.
 

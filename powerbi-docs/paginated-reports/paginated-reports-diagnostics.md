@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/17/2023
+ms.date: 06/19/2023
 ---
 
 # View diagnostics for Power BI paginated reports
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
+[!INCLUDE [applies-yes-service-no-report-builder-no-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)]
 
 In this article, you learn how to view, read, and use the diagnostics feature of a paginated report rendered in the Power BI service. Diagnostics data provides report viewers with the ability to read displayed data on performance metrics and rendering. 
 
@@ -42,8 +42,8 @@ The following table describes the data that's captured in the diagnostics dialog
 | Row Count            | Number of rows returned from queries.|
 | Processing Time      | Number of milliseconds (ms) spent processing the report. |
 | Rendering Time       | Number of milliseconds (ms) spent rendering the report. |
-| Rendering ID         | Paginated Render and ProcessParameters IDs can be used to correlate the OperationName in the [Premium metrics app](../enterprise/service-premium-metrics-app.md). |
-| Start Time in UTC    | Start time in UTC indicates the duration of a report process. It can be used in conjunction with the rendering ID (OperationName) start and end time in the [Premium metrics app.](../enterprise/service-premium-metrics-app.md). |
+| Rendering ID         | Paginated Render and ProcessParameters IDs can be used to correlate the OperationName in the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app). |
+| Start Time in UTC    | Start time in UTC indicates the duration of a report process. It can be used in conjunction with the rendering ID (OperationName) start and end time in the [Microsoft Fabric Capacity Metrics app.](/fabric/enterprise/metrics-app). |
 | Render Format        | JSONRPL, PDF, XLSX  |
 | Content Size         | Size of rendered reports in kilobytes (kb). |
 

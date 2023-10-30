@@ -12,6 +12,12 @@
         href: aggregations-auto.md
       - name: Configure automatic aggregations
         href: aggregations-auto-configure.md
+    - name: Manage the Power BI Desktop sign-in form
+      href: desktop-admin-sign-in-form.md
+    - name: Track user activities in Power BI
+      href: service-admin-auditing.md
+    - name: Add Power BI URLs to your allowlist
+      href: power-bi-allow-list-urls.md
     - name: Power BI site reliability engineering model
       href: service-admin-site-reliability-engineering-model.md
     - name: Release management and deployment process
@@ -86,10 +92,6 @@
         href: service-admin-premium-manage.md                                   
       - name: Premium capacity load evaluation
         href: service-premium-concepts.md
-      - name: Install the Premium metrics app
-        href: service-premium-install-app.md
-      - name: Using the Premium metrics app
-        href: service-premium-metrics-app.md 
       - name: Performance smoothing
         href: service-premium-smoothing.md                    
       - name: Backup and restore Power BI Premium datasets
@@ -182,18 +184,22 @@
       href: service-premium-service-tags.md
     - name: Use private links for Power BI
       href: service-security-private-links.md
+    - name: Use private links for Power BI for on-premises clients
+      href: service-security-private-links-on-premises.md      
     - name: Configure mobile apps with Intune
       href: service-admin-mobile-intune.md   
-  - name: Power BI Scale-Out
+  - name: Dataset scale-out (preview)
     expanded: false
     items:
-    - name: Power BI Dataset Scale-Out
+    - name: Dataset scale-out overview
       href: service-premium-scale-out.md
-    - name: Test Power BI Dataset Scale-Out
+    - name: Configure dataset scale-out
+      href: service-premium-scale-out-configure.md
+    - name: Test dataset scale-out
       href: service-premium-scale-out-test.md
-    - name: Sync a read-only scale-out replica   
+    - name: Synchronize scale-out replicas   
       href: service-premium-scale-out-sync-replica.md  
-    - name: Compare scale-out dataset copies      
+    - name: Compare dataset scale-out replicas      
       href: service-premium-scale-out-app.md                     
   - name: Automation tools
     expanded: false

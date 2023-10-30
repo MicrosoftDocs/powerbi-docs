@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Data loss prevention for Power BI"
 description: "Learn about data loss prevention for Power BI."
-author: paulinbar
-ms.author: painbar
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -17,7 +17,7 @@ ms.date: 09/15/2022
 This article describes the planning activities related to implementing data loss prevention (DLP) in Power BI. It's targeted at:
 
 - **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators need to collaborate with information security teams and other relevant teams.
-- **Center of Excellence, IT, and BI teams:** Others who are responsible for overseeing Power BI in the organization. They may need to collaborate with Power BI administrators, information security teams, and other relevant teams.
+- **Center of Excellence, IT, and BI teams:** Others who are responsible for overseeing Power BI in the organization. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
 
 > [!IMPORTANT]
 > Data loss prevention (DLP) is a significant organization-wide undertaking. Its scope and impact are far greater than Power BI alone. This type of initiative requires funding, prioritization, and planning. Expect to involve several cross-functional teams in your planning, usage, and oversight efforts.
@@ -56,12 +56,12 @@ The goal for this type of DLP policy is to bring awareness to users and inform a
 
 ### Microsoft Defender for Cloud Apps
 
-[Microsoft Defender for Cloud Apps](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls) is a tool with many capabilities. Some policies that can be set up in Microsoft Defender for Cloud Apps (with integration with Azure Active Directory) include DLP. These policies can block, log, or alert when certain user activities happen. For example, when a user attempts to download a report from the Power BI service that's been assigned a _Highly Restricted_ sensitivity label, the download action is blocked.
+[Microsoft Defender for Cloud Apps](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls) is a tool with many capabilities. Some policies that can be set up in Microsoft Defender for Cloud Apps (with integration with Microsoft Entra ID—[previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) include DLP. These policies can block, log, or alert when certain user activities happen. For example, when a user attempts to download a report from the Power BI service that's been assigned a _Highly Restricted_ sensitivity label, the download action is blocked.
 
 The [Defender for Cloud Apps for Power BI](powerbi-implementation-planning-defender-for-cloud-apps.md) article covers using Defender for Cloud Apps for monitoring the Power BI service. The remainder of this article focuses on DLP for Power BI.
 
 > [!IMPORTANT]
-> A DLP policy for Power BI that's set up in the Microsoft Purview compliance portal may be applied only for content that's stored in a Power BI [Premium](/power-bi/enterprise/service-premium-what-is) workspace. However, policies that are set up in Defender for Cloud Apps don't have a similar Power BI Premium prerequisite. Be aware that the functionality, purpose, and available actions differ for the two toolsets. To achieve maximum effect, we recommend that you consider using both toolsets.
+> A DLP policy for Power BI that's set up in the Microsoft Purview compliance portal can be applied only for content that's stored in a Power BI [Premium](/power-bi/enterprise/service-premium-what-is) workspace. However, policies that are set up in Defender for Cloud Apps don't have a similar Power BI Premium prerequisite. Be aware that the functionality, purpose, and available actions differ for the two toolsets. To achieve maximum effect, we recommend that you consider using both toolsets.
 
 ## Prerequisites for DLP for Power BI
 
@@ -179,7 +179,7 @@ Consider the following example of how you could define a DLP policy for detectin
 
 Rule 1 is more urgent than rule 2. Rule 1 is intended to communicate that there's a problem that requires action. The second rule is more informational. For urgent issues, it's a good idea to set up alerting. Alerting for administrators is described in the [next section](#administrator-alerting).
 
-When deciding what notifications users should receive, we recommend that you focus on showing only highly important notifications. If there are too many policy notifications, users may become overwhelmed by them. The result is that some notifications may be overlooked.
+When deciding what notifications users should receive, we recommend that you focus on showing only highly important notifications. If there are too many policy notifications, users could become overwhelmed by them. The result is that some notifications might be overlooked.
 
 Users can take action by [reporting an issue](/power-bi/enterprise/service-security-dlp-policies-for-power-bi-override) when they believe it's a false positive (misidentified). It's also possible to allow the user to override the policy. These capabilities are intended to allow communication between Power BI users and the security administrators who manage DLP for Power BI.
 
@@ -215,7 +215,7 @@ Here are two examples of how alerts can be used.
 - **Rule 1:** This rule detects credit card numbers. Alerting is enabled with a high severity. An email is generated too.
 - **Rule 2:** This rule detects financial accounts. Alerting is enabled with a high severity.
 
-**Example 2:** You've defined a DLP policy that's invoked when the _Highly Restricted\Executive Committee and Board Members_ sensitivity label is assigned to a dataset in the Power BI service. It doesn't generate a user notification. In this situation, you may not want to generate an alert because you only want to log the occurrence. If needed, you can obtain more information from the [activity explorer](powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md#microsoft-purview-activity-explorer).
+**Example 2:** You've defined a DLP policy that's invoked when the _Highly Restricted\Executive Committee and Board Members_ sensitivity label is assigned to a dataset in the Power BI service. It doesn't generate a user notification. In this situation, you might not want to generate an alert because you only want to log the occurrence. If needed, you can obtain more information from the [activity explorer](powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md#microsoft-purview-activity-explorer).
 
 When an email alert is required, we recommend that you use a mail-enabled security group. For example, you might use a group named _Security and Privacy Admin Alerting_.
 
@@ -255,7 +255,7 @@ For more information about workspace, see the [workspace planning](powerbi-imple
 
 ## Licensing requirements
 
-To use DLP, there are several [licensing requirements](/power-bi/enterprise/service-security-dlp-policies-for-power-bi#licensing-and-permissions). A [Microsoft Purview Information Protection](https://www.microsoft.com/security/business/information-protection/microsoft-purview-information-protection) license is required for the administrators who will set up, manage, and oversee DLP. You might already have these licenses because they're included in some license suites, such as [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans). Alternatively, [Microsoft 365 E5 Compliance](https://www.microsoft.com/security/business/compliance/e5-compliance) capabilities may be purchased as a standalone license.
+To use DLP, there are several [licensing requirements](/power-bi/enterprise/service-security-dlp-policies-for-power-bi#licensing-and-permissions). A [Microsoft Purview Information Protection](https://www.microsoft.com/security/business/information-protection/microsoft-purview-information-protection) license is required for the administrators who will set up, manage, and oversee DLP. You might already have these licenses because they're included in some license suites, such as [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans). Alternatively, [Microsoft 365 E5 Compliance](https://www.microsoft.com/security/business/compliance/e5-compliance) capabilities can be purchased as a standalone license.
 
 Also, DLP policies for Power BI require [Power BI Premium](/power-bi/enterprise/service-premium-what-is). This [licensing requirement](/power-bi/enterprise/service-security-dlp-policies-for-power-bi#considerations-and-limitations) can be met with a Premium capacity or a Premium Per User (PPU) license.
 
@@ -298,7 +298,7 @@ FAQs and examples are especially helpful for user documentation.
 
 It's important to verify who will be responsible for [user support](powerbi-adoption-roadmap-user-support.md). It's common that DLP is supported by a centralized IT help desk.
 
-You may need to create guidance for the help desk (sometimes known as a _runbook_). You may also need to conduct knowledge transfer sessions to ensure that the help desk is ready to respond to support requests.
+You might need to create guidance for the help desk (sometimes known as a _runbook_). You might also need to conduct knowledge transfer sessions to ensure that the help desk is ready to respond to support requests.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 

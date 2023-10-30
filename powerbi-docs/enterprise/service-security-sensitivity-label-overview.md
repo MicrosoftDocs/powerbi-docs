@@ -183,7 +183,7 @@ Sensitivity labels can be applied to paginated reports hosted in the Power BI se
 
 ## Sensitivity labels in deployment pipelines
 
-Sensitivity labels are supported in deployment pipelines. See the [deployment pipeline documentation](../create-reports/deployment-pipelines-process.md#item-properties-copied-during-deployment) for details about how sensitivity labels are handled as content is deployed from stage to stage.
+Sensitivity labels are supported in deployment pipelines. See the [deployment pipeline documentation](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#item-properties-copied-during-deployment) for details about how sensitivity labels are handled as content is deployed from stage to stage.
 
 ## Sensitivity labels in the Power BI mobile apps
 
@@ -197,12 +197,12 @@ Power BI restricts permission to change or remove sensitivity labels from Purvie
 
 ## Supported clouds
 
-Sensitivity labels are supported for tenants in global (public) clouds, and the following national clouds:
+Sensitivity labels are supported for tenants in global (public) clouds, and the following national/regional clouds:
 
 * [US Government](service-govus-overview.md#power-bi-feature-availability): GCC, GCC High, DoD
 * China
 
-Sensitivity labels aren't currently supported in other national clouds.
+Sensitivity labels aren't currently supported in other national/regional clouds.
 
 ## Licensing and requirements
 

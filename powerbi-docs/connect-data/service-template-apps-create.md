@@ -25,7 +25,7 @@ Here are the requirements for building a template app:
 - A [Power BI pro license](../fundamentals/service-self-service-signup-for-power-bi.md)
 - [Power BI Desktop](../fundamentals/desktop-get-the-desktop.md) (optional)
 - Familiarity with [basic Power BI concepts](../fundamentals/service-basic-concepts.md)
-- Permissions to share a template app publicly as shown in [Template app tenant settings](../admin/service-admin-portal-template-app.md)
+- Permissions to share a template app publicly as shown in [Template app tenant settings](/fabric/admin/service-admin-portal-template-app)
 
 ## Create the template workspace
 
@@ -176,7 +176,7 @@ To go through the release stages:
    >[!NOTE]
    > When you promote the app, it becomes publicly available outside your organization.
 
-   If you don't see the **Promote app** option, contact your Power BI admin to grant you [permissions for template app development](../admin/service-admin-portal-template-app.md) in the admin portal.
+   If you don't see the **Promote app** option, contact your Power BI admin to grant you [permissions for template app development](/fabric/admin/service-admin-portal-template-app) in the admin portal.
 
 1. In the dialog box, select **Promote**.
 

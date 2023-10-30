@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/22/2023
+ms.date: 09/07/2023
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows
@@ -26,6 +26,9 @@ The following sections describe each of these features in detail.
 
 > [!NOTE]
 > Dataflows are not available in the Power BI service for U.S. Government DoD customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
+
+> [!IMPORTANT]
+> This article applies to the first generation of dataflows (Gen1), and does not apply to the second generation (Gen2) of dataflows, which are available in Microsoft Fabric (preview). For more information, see [Getting from dataflows Generation 1 to dataflows Generation 2](/fabric/data-factory/dataflows-gen2-overview).
 
 ## The enhanced compute engine
 

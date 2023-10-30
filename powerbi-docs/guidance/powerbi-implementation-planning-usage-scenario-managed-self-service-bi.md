@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Managed self-service BI"
 description: "Learn how Power BI managed self-service BI is about reuse of centralized shared datasets by other report creators."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -84,7 +84,7 @@ The [data hub](../connect-data/service-data-hub.md) helps report creators find, 
 
 ### Request dataset access
 
-A report creator may find a dataset in the [data hub](../connect-data/service-data-hub.md) that they want to use. If they don't have Build permission for the dataset, they can request access. Depending on the [request access setting](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) for the dataset, an email will be submitted to the dataset owner or custom instructions will be presented to the person who is requesting access.
+A report creator might find a dataset in the [data hub](../connect-data/service-data-hub.md) that they want to use. If they don't have Build permission for the dataset, they can request access. Depending on the [request access setting](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) for the dataset, an email will be submitted to the dataset owner or custom instructions will be presented to the person who is requesting access.
 
 ### Live connection to the shared dataset
 
@@ -104,7 +104,7 @@ First, there's clarity on who's responsible for managing content in which worksp
 
 ### Dependency and impact analysis
 
-When a shared dataset is used by many reports, those reports can exist in many workspaces. The [lineage view](../collaborate-share/service-data-lineage.md) helps identify and understand the downstream dependencies. When planning a dataset change, first perform [impact analysis](../collaborate-share/service-dataset-impact-analysis.md#perform-dataset-impact-analysis) to understand which dependent reports may require editing or testing.
+When a shared dataset is used by many reports, those reports can exist in many workspaces. The [lineage view](../collaborate-share/service-data-lineage.md) helps identify and understand the downstream dependencies. When planning a dataset change, first perform [impact analysis](../collaborate-share/service-dataset-impact-analysis.md#perform-dataset-impact-analysis) to understand which dependent reports might require editing or testing.
 
 ### Gateway setup
 
@@ -115,7 +115,7 @@ Typically, a data gateway is required when accessing data sources that reside wi
 
 ### System oversight
 
-The [activity log](../admin/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements. With a managed self-service BI scenario, it's particularly helpful to track usage of shared datasets. A high report-to-dataset ratio indicates good reuse of datasets.
+The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements. With a managed self-service BI scenario, it's particularly helpful to track usage of shared datasets. A high report-to-dataset ratio indicates good reuse of datasets.
 
 ## Next steps
 

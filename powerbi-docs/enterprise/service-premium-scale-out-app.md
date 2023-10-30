@@ -1,21 +1,24 @@
 ---
-title: Compare scale-out dataset copies
-description: Learn how to compare Power BI dataset copies when using the Power BI Dataset Scale-Out feature
+title: Compare Power BI dataset scale-out replicas
+description: Learn how to compare Power BI dataset replicas when using the Power BI dataset scale-out feature
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/19/2023
+ms.date: 07/25/2023
 LocalizationGroup: Premium
 ---
 
-# Compare scale-out dataset copies
+# Compare dataset scale-out replicas
 
-After enabling [Power BI Dataset Scale-Out](service-premium-scale-out.md), you might want to compare dataset replicas. The `syncStatus` REST API shows if the *read/write* and *read-only* dataset copies are in sync. You can also use the Tabular Object Model (TOM) to build a custom application that connects to both datasets and compares timestamps, metadata, and query results between them.
+> [!IMPORTANT]
+> Dataset scale-out is currently in **preview**.
 
-This section provides a few Visual Studio app examples for comparing dataset properties when Power BI Dataset Scale-Out is enabled.
+This article provides a few Visual Studio app examples for comparing dataset properties when Power BI dataset scale-out is enabled.
+
+The `syncStatus` REST API shows if the read-write dataset and read-only replicas are in sync. You can also use the Tabular Object Model (TOM) to build a custom application that connects to both datasets and compares timestamps, metadata, and query results between them.
 
 ## App 1 - Check the database object properties
 
@@ -50,7 +53,7 @@ Console.Read();
 
 ## App 2 - Compare the dataset's metadata
 
-Use the code below to compare the metadata of the *read/write* dataset copy with the metadata of the *read-only* dataset copy. Replace `<WorkspaceUrl>` with your workspace's URL, and `<DatasetName>` with your dataset's name.
+Use the code below to compare the metadata of the primary read-write dataset with the metadata of a read-only replica. Replace `<WorkspaceUrl>` with your workspace's URL, and `<DatasetName>` with your dataset's name.
 
 ```typescript
 string workspaceUrl = "<WorkspaceUrl>";  // Replace <WorkspaceUrl> with the URL of your workspace 
@@ -86,7 +89,7 @@ Console.Read();
 
 ## App 3 - Query the dataset data
 
-Use `ADOMD.NET` to query the data in the dataset replicas. Replace `<WorkspaceUrl>` with your workspace's URL, and `<DatasetName>` with your dataset's name.
+Use `ADOMD.NET` to query the data in the replicas. Replace `<WorkspaceUrl>` with your workspace's URL, and `<DatasetName>` with your dataset's name.
 
 ```typescript
 string workspaceUrl = "<WorkspaceUrl>";  // Replace WorkspaceUrl with the URL of your workspace 
@@ -136,10 +139,13 @@ Console.Read();
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Power BI Dataset Scale-Out](service-premium-scale-out.md)
+> [Power BI dataset scale-out](service-premium-scale-out.md)
 
 > [!div class="nextstepaction"]
-> [Tutorial: Test Power BI Dataset Scale-Out](service-premium-scale-out-test.md)
+> [Configure dataset scale-out](service-premium-scale-out-configure.md)
 
 > [!div class="nextstepaction"]
-> [Sync a read-only scale-out replica](service-premium-scale-out-sync-replica.md)
+> [Tutorial: Test dataset scale-out](service-premium-scale-out-test.md)
+
+> [!div class="nextstepaction"]
+> [Synchronize scale-out replicas](service-premium-scale-out-sync-replica.md)

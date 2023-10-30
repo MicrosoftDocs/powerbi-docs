@@ -1,19 +1,19 @@
 ---
 title: Move Power BI between regions
 description: If the default region for your organization's Power BI data isn't optimal, you might want to move to another region. You can't move regions by yourself. This article describes how to work with support to move between regions. 
-author: kfollis
-ms.author: kfollis
+author: mihart
+ms.author: hfeng
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting 
-ms.date: 06/02/2023
+ms.date: 10/27/2023
 ms.custom: template-how-to; subject-moving-resources
 ---
 
 # Move between regions
 
 > [!IMPORTANT]
-> At this time, we only offer the tenant migration service to customers with Power BI Premium capacities. We currently don't support tenant migration for Fabric. 
+> At this time, we only offer the tenant migration service to customers with a P (Premium) SKU.  
 
 The location selected during sign-up determines your default data region. However, this region might not be optimal if most of your users are located in a different geographic location. You might want to move to another region to reduce latency or to ensure data governance. You can’t move your organization’s tenant between regions by yourself. Self-service migration of Power BI resources stored in Azure isn’t supported. If you need to change your default data location from the current region to another region, you have to contact Microsoft support to manage the migration for you.
 
@@ -22,7 +22,7 @@ The location selected during sign-up determines your default data region. Howeve
 
 ## Prerequisites
 
-- The person who requests the data region move must be assigned the global administrator role. You can learn more about the different admin roles and what they can do in [Understanding Power BI administrator roles](../admin/service-admin-role.md). We can't help identify your global administrator for you. Look for global administrator role holders in Microsoft 365 or Azure Active Directory or ask your help desk.
+- The person who requests the data region move must be assigned the global administrator role. You can learn more about the different admin roles and what they can do in [Understanding Power BI administration roles](../admin/service-admin-role.md). We can't help identify your global administrator for you. Look for global administrator role holders in Microsoft 365 or Azure Active Directory or ask your help desk.
 - We must receive written approval confirming your awareness and agreement of the effect of the tenant migration on your organization.
 - Provide a point of contact for after business hours during the migration.
 
@@ -32,8 +32,8 @@ The migration process moves all tenant data to the new region. The GUID assigned
 
 ### Awareness
 
-- **The end-to-end migration process may take up to six months**. We prioritize service reliability and deployment schedules can change, so we may need to reschedule during migration at any time. We can't guarantee successful migration due to inconsistent data or bugs.
-- During the migration process, it's possible to encounter unforeseen issues that may result in multiple failures. Allow for multiple attempts to ensure a successful migration.
+- **The end-to-end migration process might take up to six months**. We prioritize service reliability and deployment schedules can change, so we might need to reschedule during migration at any time. We can't guarantee successful migration due to inconsistent data or bugs.
+- During the migration process, it's possible to encounter unforeseen issues that might result in multiple failures. Allow for multiple attempts to ensure a successful migration.
 
 - Migration requires about six hours of down time. During migration, users can't access Power BI and an error message similar to the one shown in the following screenshot is displayed. The actual down time depends on the volume of data to be migrated.
 
@@ -56,7 +56,7 @@ The migration process moves all tenant data to the new region. The GUID assigned
 
    - We can't migrate capacities and Premium workspaces, so you have to delete all capacities before migration. After the region move, these resources can be recreated. If you move resources from a Premium workspace to a shared workspace, datasets larger than 1 GB can't be viewed until they're moved back to Premium capacity.
 
-   - Gateways should be deleted in the target region to avoid conflicts during migration.
+   - Delete any gateways that are already in the target region to avoid conflicts during migration.
 
 - To keep user activity logs, follow the steps in [Track user activities in Power BI](../admin/service-admin-auditing.md). You can get log data from either the Power BI activity log or the Unified audit log.
 
@@ -70,7 +70,7 @@ To find out the best way to contact support, read [Power BI support options](ser
 
 1. Go to [Power Platform Admin Center Help + support](https://admin.powerplatform.microsoft.com/support) and sign in using admin credentials.
 1. Select **New support request**, then select the following options to request a region move:
-   - Product: Power BI Pro
+   - Product: Power BI
    - Tell us what you need help with: Move to a different region
    - Problem type: Administration
    - Problem Subtype: Tenant Management
@@ -78,13 +78,13 @@ To find out the best way to contact support, read [Power BI support options](ser
    
    Select **See solutions** to move to the next screen.
 
-     :::image type="content" source="media\service-admin-region-move\ppac-new-support-request.png" alt-text="Screen capture showing field entries for a new support request for a region move in the Power Platform Admin Center.":::
+     :::image type="content" source="media\service-admin-region-move\support-request-dialog.png" alt-text="Screen capture showing field entries for a new support request for a region move in the Power Platform Admin Center.":::
 
-1. Select **Next** to continue to **Select your support plan**. Choose your support plan. Add a description and include the information in the following table:
+1. Select the arrow button to continue to **Select your support plan**. Choose your support plan. Add a description and include the information in the following table:
 
    |Information needed | How to find the information |
    |---|---|
-   |Tenant object ID | [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)|
+   |Tenant object ID | [How to find your Azure Active Directory tenant ID](/azure/active-directory/verifiable-credentials/verifiable-credentials-configure-tenant)|
    |Current region | [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md)|
    |Proposed region | [International availability of Microsoft Power Platform](/power-platform/availability)|
    |Proposed date and time for migration |Give us three options in UTC time. The proposed dates should be at least two weeks later than when you submit the request.|
@@ -146,7 +146,7 @@ No, using Power BI during tenant migration activity isn't recommended.
 
 ### Why do I need to provide three proposed migration dates?
 
-We need to ensure that migration happens outside of the production deployment window. This time-frame is subject to change on a weekly basis. We can only confirm the actual migration date five days before the migration.
+We need to ensure that migration happens outside of the production deployment window. This time frame is subject to change on a weekly basis. We can only confirm the actual migration date five days before the migration.
 
 ### Can I request migration during weekdays (if my company allows) or on any public holiday recognized by my organization?
 

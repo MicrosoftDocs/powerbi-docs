@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/06/2023
+ms.date: 06/21/2023
 LocalizationGroup: Samples
 ---
 # Get samples for Power BI
@@ -44,6 +44,22 @@ You can explore it these ways:
 
 - Download the *.pbix* file and explore it in depth. Look "behind the curtain" to see how Miguel made it. This link opens the [GitHub repo for Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix). Select **Download** to download the Sales & Returns sample *.pbix* file to your computer.
 - Read about the report in the Power BI blog post, [Take a tour of the new Sales & Returns sample report](https://powerbi.microsoft.com/blog/take_a_tour_of_the_new_sales_returns_sample_report/).
+
+## Updated samples
+
+There are revised versions of some of the original samples. These new versions take the original datasets and incorporate the latest visualizations.
+
+- Competitive Marketing Analysis. Take a tour of the [Competitive Marketing Analysis](sample-competitive-marketing-analysis.md) sample.
+- Corporate Spend. Take a tour of the [Corporate Spend](sample-corporate-spend.md) sample.
+- Employee Hiring and History. Take a tour of the [Employee Hiring and History](sample-employee-hiring-history.md) sample.
+- Revenue Opportunities. Take a tour of the [Revenue Opportunities](sample-revenue-opportunities.md) sample.
+- Store Sales. Take a tour of the [Store Sales](sample-store-sales.md) sample.
+- Regional Sales Sample. Take a tour of the [Regional Sales Sample](sample-regional-sales.md)
+
+To obtain these samples:
+
+- Install the [built-in samples](#install-built-in-samples) in the Power BI service.
+- Download the [Power BI report files (.pbix)](https://github.com/microsoft/powerbi-desktop-samples/tree/main/new-power-bi-service-samples) from the Power BI Samples GitHub repository.
 
 ## Eight original samples
 
@@ -85,23 +101,29 @@ By clicking any of the following links to download the Excel workbook files or *
 
 This industry sample analyzes a CFO's key metrics for the company's executives, products, and customers. You can investigate what factors affect the company's profitability.
 
-### Human Resources sample
+### Human Resources / Employee Hiring and History sample
 
-[Take a tour of the HR sample](sample-human-resources.md)
+[Take a tour of the updated Employee Hiring and History sample](sample-employee-hiring-history.md)
 
 This industry sample focuses on the hiring strategy for a company by analyzing new hires, active employees, and employees who have left. By exploring the data, you can find trends in voluntary separations and biases in the hiring strategy.
 
-### IT Spend Analysis sample
+[Take a tour of the previous version of the sample](sample-human-resources.md)
 
-[Take a tour of the IT Spend Analysis sample](sample-it-spend.md)
+### IT Spend Analysis / Corporate Spend sample
+
+[Take a tour of the updated Corporate Spend sample](sample-corporate-spend.md)
 
 In this industry sample, analyze the planned versus actual costs of the IT department of a company. This comparison helps understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new Latest Estimate (LE) to help analyze changes in IT spend over the fiscal year.
 
-### Opportunity Analysis sample
+[Take a tour of the previous version of the sample](sample-it-spend.md)
 
-[Take a tour of the Opportunity Analysis sample](sample-opportunity-analysis.md)
+### Opportunity Analysis / Revenue Opportunities sample
+
+[Take a tour of the Revenue Opportunities sample](sample-revenue-opportunities.md)
 
 This industry sample explores a software company's sales channel. Sales managers monitor their direct and partner sales channels by tracking opportunities and revenue by region, deal size, and channel.
+
+[Take a tour of the previous version of the sample](sample-opportunity-analysis.md)
 
 ### Procurement Analysis sample
 
@@ -109,17 +131,25 @@ This industry sample explores a software company's sales channel. Sales managers
 
 This industry sample analyzes a manufacturing company's spending on vendors by category and location. You can investigate who the top vendors are, what categories the company spends the most on, and which vendors give the best discounts.
 
-### Retail Analysis sample
+### Regional Sales sample
 
-[Take a tour of the Retail Analysis sample](sample-retail-analysis.md)
+[Take a tour of the Regional Sales sample](sample-regional-sales.md)
+
+This industry sample contains a report for a fictitious company named Contoso. The Contoso sales manager created this report to understand their products and regions' key contributors for revenue won or loss.
+
+### Retail Analysis / Store Sales sample
+
+[Take a tour of the Store Sales sample](sample-store-sales.md)
 
 This industry sample analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's in these areas: sales, units, gross margin, variance, and new store analysis.
 
-### Sales and Marketing sample
+### Sales and Marketing / Competitive Marketing Analysis sample
 
-[Take a tour of the Sales and Marketing sample](sample-sales-and-marketing.md)
+[Take a tour of the updated Competitive Marketing Analysis sample](sample-competitive-marketing-analysis.md)
 
 This industry sample analyzes a manufacturing company, VanArsdel Ltd. It allows the Chief Marketing Officer to watch the industry and the market share for VanArsdel.  By exploring the sample, you can find the company's market share, product volume, sales, and sentiment.
+
+[Take a tour of the previous version of the sample](sample-sales-and-marketing.md)
 
 ### Supplier Quality sample
 
@@ -146,17 +176,37 @@ Let's start with the *built-in samples*. The built-in samples are available in t
 
 1. Select the sample. It opens in Reading mode.
 
-1. Power BI imports the built-in sample and adds a new dashboard, report, and dataset to My workspace. Use the samples to take Power BI for a test run.  
+1. Power BI imports the built-in sample. It adds a new report, and dataset to **My workspace**. Some samples also include a dashboard. Use the samples to take Power BI for a test run.  
 
    :::image type="content" source="media/sample-datasets/power-bi-retail-analysis-workspace.png" alt-text="Screenshot shows the new content in a workspace." lightbox="media/sample-datasets/power-bi-retail-analysis-workspace.png" border="true":::
 
 Now that you have data, you're on your way.  Try out some of our tutorials using the built-in samples or just open the Power BI service and explore.
 
-## Download original sample .pbix Power BI files
+## Download updated sample .pbix Power BI files
 
-Six of the built-in samples are also available as Power BI *.pbix* files. The *.pbix* files are designed to be used with Power BI Desktop.  
+The updated samples are also available as Power BI *.pbix* files. The *.pbix* files are designed to be used with Power BI Desktop.
 
 1. Download the files individually using these links. Selecting these links saves the file automatically to your Downloads folder.
+
+1. In Power BI Desktop, select **File** > **Open**, navigate to the location where you saved the sample *.pbix* file, and select the *.pbix* file to open it in Power BI Desktop.
+
+## Download original sample .pbix Power BI files
+
+Several of the original built-in samples now have updated versions and these samples are available as *.pbix* files. Also, six of the original built-in samples are available as Power BI *.pbix* files. The *.pbix* files are designed to be used with Power BI Desktop.  
+
+1. Download the files individually using these links. Selecting these links saves the file automatically to your Downloads folder.
+
+   Updated samples:
+
+   - [Competitive Marketing Analysis](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Competitive%20Marketing%20Analysis.pbix)
+   - [Corporate Spend](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Corporate%20Spend.pbix)
+   - [Employee Hiring and History](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Employee%20Hiring%20and%20History.pbix)
+   - [Regional Sales Sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Regional%20Sales%20Sample.pbix)
+   - [Revenue Opportunities sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Revenue%20Opportunities.pbix)
+   - [Store Sales sample .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/new-power-bi-service-samples/Store%20Sales.pbix)
+
+
+   Original samples:
 
    - [Customer Profitability Sample PBIX](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
    - [Human Resources Sample PBIX](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)

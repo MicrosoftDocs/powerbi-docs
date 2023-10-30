@@ -1,0 +1,46 @@
+### YamlMime:Landing
+
+title: Power BI Desktop developer mode documentation
+summary: Microsoft Power BI Desktop developer mode brings Pro BI developer experiences right into Power BI Desktop. It provides a suite of features that enable developer focused capabilities like external tool support, script and API support, source control with Git integration, and Continuous Integration/Continuous Delivery (CI\CD) with Azure DevOps.
+
+metadata:
+  title: Power BI Desktop developer mode documentation
+  description: Power BI Desktop developer mode is a suite a of tools for Pro BI developers.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page # Required
+  ms.collection: collection
+  author: minewiskan
+  ms.author: owend
+  ms.date: 05/30/2023
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Power BI Desktop projects
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Power BI Desktop projects overview"
+            url: projects-overview.md
+          - text: "Project dataset folder"
+            url: projects-dataset.md
+          - text: "Project report folder"
+            url: projects-report.md
+          - text: "Project Git integration"
+            url: projects-git.md
+          - text: "Project Azure DevOps integration"
+            url: projects-azdo.md
+  # Card (optional)
+  - title: External tools
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: "External tools in Power BI Desktop"
+          url: ../../transform-model/desktop-external-tools.md
+        - text: "Register an external tool"
+          url: ../../transform-model/desktop-external-tools-register.md
