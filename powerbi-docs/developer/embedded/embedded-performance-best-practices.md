@@ -25,28 +25,6 @@ Keep tools and SDK packages up-to-date.
 * Install the latest version of the [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript). We continuously release new enhancements, so make sure to follow up from time to time.
 * Use the latest version of [Tabular Editor](https://github.com/otykier/TabularEditor/releases/latest).
 
-## Initialize embedding
-
-### Preload
-
-Use `powerbi.preload()` to improve the end-user performance. The method `powerbi.preload()` downloads JavaScript, css files, and other [items](./pbi-glossary.md#item), which are used later to embed a report.
-
-Call `powerbi.preload()` if you're not embedding the report immediately. For example, if the embedded Power BI content doesn't appear in the home page, use `powerbi.preload()` to download and cache the items that are used for embedding the content.
-
-### Bootstrap the iFrame
-
-> [!NOTE]
-> [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript) version 2.9 is required to bootstrap the iFrame.
-
-`powerbi.bootstrap(element, config)` allows you to start embedding before all required parameters are available. The bootstrap API prepares and initializes the iFrame.
-When using the bootstrap API, it's still required to call `powerbi.embed(element, config)` on the same HTML element.
-
-For example, one of the use cases for this feature, is to run the iFrame bootstrap and the back-end calls for embedding, in parallel.
-> [!TIP]
-> Use the [bootstrap API](/javascript/api/overview/powerbi/bootstrap-better-performance) when possible to generate the iFrame before it's visible to the end user.
-
-​When you embed a report or other Power BI item, make sure the embed container is part of the DOM and that the display CSS attribute isn't set to *none* to avoid unexpected behaviors. If you want to hide the embed container, consider using the visibility CSS attribute.
-
 ## Embed parameters
 
 The `powerbi.embed(element, config)` method receives an element and a config parameter. The config parameter includes fields that have performance implications.
