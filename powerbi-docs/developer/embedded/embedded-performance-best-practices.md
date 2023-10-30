@@ -7,7 +7,7 @@ ms.reviewer: noam, or, may
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/06/2023
+ms.date: 09/06/2023
 ---
 
 # Best practices for faster performance in Power BI embedded analytics
@@ -33,7 +33,7 @@ Use `powerbi.preload()` to improve the end-user performance. The method `powerbi
 
 Call `powerbi.preload()` if you're not embedding the report immediately. For example, if the embedded Power BI content doesn't appear in the home page, use `powerbi.preload()` to download and cache the items that are used for embedding the content.
 
-### Bootstrapping the iFrame
+### Bootstrap the iFrame
 
 > [!NOTE]
 > [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript) version 2.9 is required to bootstrap the iFrame.
