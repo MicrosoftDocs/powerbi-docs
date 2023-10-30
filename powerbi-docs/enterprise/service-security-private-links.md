@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 09/14/2023
+ms.date: 10/30/2023
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -345,7 +345,9 @@ There are a few considerations to keep in mind while working with private endpoi
 * [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) doesn't currently support Private Links. This means that in [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop) running in an isolated network, the Sensitivity button will be grayed out, label information will not appear, and decryption of *.pbix* files will fail.
 
    To enable these capabilities in Power BI Desktop, admins can configure [service tags](/azure/virtual-network/service-tags-overview) for the underlying services that support MIP, [EOP](/azure/virtual-network/service-tags-overview#eopexternalpublishedips), and AIP. Make sure you understand the implications of using service tags in a private links isolated network.
-* Gateways enabled for Power BI private endpoints don't work properly with non-Power BI scenarios. For some scenarios, a potential workaround is to turn off private links, configure the gateway in a *remote* region (a region other than the recommended region), and then re-enable the private links. After the private links are re-enabled, the gateway in the remote region won't use private links.
+* Gateways enabled for Power BI private endpoints don't work properly with non-Power BI scenarios. 
+    > [!CAUTION]
+    > For some scenarios, a potential workaround is to turn off private links, configure the gateway in a *remote* region (a region other than the recommended region), and then re-enable the private links. After the private links are re-enabled, the gateway in the remote region won't use private links.
 * When private links are enabled for Power BI, an on-premises data gateway (personal mode) fails to register.
 * Private links resource REST APIs don't support tags.
 * You can't set up a private link to be used by more than one tenant. 
