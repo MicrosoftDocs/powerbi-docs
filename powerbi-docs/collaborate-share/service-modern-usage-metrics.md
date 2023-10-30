@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 09/26/2023
+ms.date: 10/30/2023
 LocalizationGroup: Dashboards
 ---
 
@@ -312,7 +312,7 @@ In addition to the above differences between previous and improved usage metrics
 - Performance data and Report Page View metrics rely on the client/device sending data to Power BI. Depending on network latency, ad blockers, firewalls, and network rules set by your organization, this data may never reach Power BI. Therefore, the performance and Report Page View data may not include all views or all users.
 - Certain types of views aren't included in performance measurements. For example, when a user selects a link to a report in an email message, the Report View is accounted for in the report usage but there is no event in the performance metrics.
 - Report performance metrics aren't available for Paginated Reports. The Pages tab on the Report usage page as well as the charts on the Report performance page don't show data for these types of reports.
-- User masking isn't working as expected when using nested groups. If your organization has disabled Per-user data in usage metrics for content creators in the Power BI admin portal tenant settings, only the members on the top level are being masked. Members of subgroups are still visible.
+- User masking isn't working as expected when using nested groups. Nested groups (subgroups) are groups that are members of existing groups. If your organization has disabled Per-user data in usage metrics for content creators in the Power BI admin portal tenant settings, only the members on the top level are being masked. Members of subgroups are still visible.
 - If you're using user masking in an embed scenario in your report, the usage metrics dataset refresh will fail.
 - Initializing the Usage Metrics Report dataset might take a few minutes, resulting in showing a blank usage metrics report because the Power BI user interface does not wait for the refresh to finish. Check the refresh history in the Usage Metrics Report dataset settings to verify that the refresh operation succeeded.
 - Initializing the Usage Metrics Report dataset might fail due to a timeout encountered during refresh. Refer to the [Troubleshooting section](#troubleshoot-refresh-issues) below to resolve this or any general refresh issue.
@@ -333,6 +333,7 @@ In addition to the above differences between previous and improved usage metrics
 - During the process of [disaster recovery (while Business continuity and disaster recovery (BCDR)](/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery) is in progress) any new incoming data experiencing data loss may be irrecoverable.
 - Certain metrics in usage metrics report aren't included in audit logs. For example, report page views aren't part of audit logs.
 - When a report is deleted, the ReportIds can show up in the usage metrics but not be available in the Reports dataset.
+- Customers may be unable to view or download the usage metrics semantic model from Power BI service.
 
 ## Frequently asked questions
 
@@ -445,4 +446,3 @@ Follow these steps to delete the dataset and then create a fresh data refresh re
 [Administering Power BI in the admin portal](../admin/service-admin-portal.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
