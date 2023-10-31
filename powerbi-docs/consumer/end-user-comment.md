@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/06/2022
+ms.date: 10/31/2023
 LocalizationGroup: Consumer
 ---
 # Add comments to a dashboard or report
@@ -92,6 +92,10 @@ Here's a conversation I'm having with the visualization *designer*. They're usin
 :::image type="content" source="media/end-user-comment/power-bi-comment-conversation.png" alt-text="Screenshot showing two comments with at mentions.":::  
 
 ## Considerations and troubleshooting
+
+- The commenting feature can be disabled by users with edit access to the report settings. Select **File** > **Settings** and deselect *Allow people to comment on this report or dashboard*.
+
+   :::image type="content" source="media/end-user-comment/power-bi-disable-comment.png" alt-text="Screenshot showing toggle for disabling comments on a dashboard.":::
 
 - Comments are limited to 2000 characters, including @mentions of other users and spaces.
 - The maximum number of conversations on a dashboard or report is 100. The maximum number of comments per conversation is 1000. To add a new conversation or comment, delete prior conversations or comments.
