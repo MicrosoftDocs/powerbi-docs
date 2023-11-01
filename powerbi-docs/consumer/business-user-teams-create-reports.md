@@ -1,8 +1,8 @@
 ---
 title: Create reports from data in Microsoft Teams
 description: Learn to create, explore, and enhance Power BI reports from a dataset in your organization in Microsoft Teams. 
-author: maggiesMSFT
-ms.author: maggies
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
