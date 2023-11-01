@@ -1,8 +1,8 @@
 ---
 title: Analyze Teams usage in the Power BI app for Teams
 description: Learn how to use the Power BI app in Microsoft Teams to automatically generate a report to view and analyze your Teams activity.
-author: maggiesMSFT
-ms.author: maggies
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
