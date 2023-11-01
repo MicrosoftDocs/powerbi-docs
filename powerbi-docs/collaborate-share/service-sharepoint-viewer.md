@@ -3,14 +3,13 @@ title: View Power BI files in OneDrive and SharePoint
 description: Learn how to view Power BI Desktop files in SharePoint document libraries and OneDrive for Business.
 author: ajburnle
 ms.author: ajburnle
-ms.reviewer:lukaszp
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: View Power BI file in SharePoint and OneDrive
 ms.topic: how-to
 ms.custom: 
 ms.date: 10/11/2023
-
 LocalizationGroup: Share your work
 ---
 # View Power BI files in OneDrive and SharePoint
