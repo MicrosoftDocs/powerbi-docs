@@ -23,7 +23,7 @@ To learn more about Azure Private Link, see [What is Azure Private Link](/azure/
 Enabling private endpoints has an impact on many items, so you should review the [considerations and limitations](#considerations-and-limitations) section in this article before enabling private endpoints.
 
 >[!IMPORTANT]
->Private endpoints are not supported for Microsoft Fabric, including Microsoft Fabric trial capacities.
+>Private endpoints are not supported for most items in Microsoft Fabric, including Microsoft Fabric trial capacities. When **Block public Internet access** is **enabled**, you can continue using PBI, Dataset and Pipeline while rest items will be disabled or return error and third-party app access to OneLake APIs will be turned off too.
 
 ## Understand private endpoints
 
@@ -345,10 +345,9 @@ There are a few considerations to keep in mind while working with private endpoi
 * [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) doesn't currently support Private Links. This means that in [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop) running in an isolated network, the Sensitivity button will be grayed out, label information will not appear, and decryption of *.pbix* files will fail.
 
    To enable these capabilities in Power BI Desktop, admins can configure [service tags](/azure/virtual-network/service-tags-overview) for the underlying services that support MIP, [EOP](/azure/virtual-network/service-tags-overview#eopexternalpublishedips), and AIP. Make sure you understand the implications of using service tags in a private links isolated network.
-* Gateways enabled for Power BI private endpoints don't work properly with non-Power BI scenarios. 
+ * When private links are enabled, an on-premises data gateway fails to register.
     > [!CAUTION]
     > For some scenarios, a potential workaround is to turn off private links, configure the gateway in a *remote* region (a region other than the recommended region), and then re-enable the private links. After the private links are re-enabled, the gateway in the remote region won't use private links.
-* When private links are enabled for Power BI, an on-premises data gateway (personal mode) fails to register.
 * Private links resource REST APIs don't support tags.
 * You can't set up a private link to be used by more than one tenant. 
 * Exporting a Power BI report as PDF or PowerPoint is not supported when you enable Azure Private Link in Power BI.
