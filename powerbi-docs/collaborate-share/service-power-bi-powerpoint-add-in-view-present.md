@@ -18,8 +18,7 @@ As soon as you add a live Power BI report page or visual to PowerPoint, you can 
 
 ![Screenshot of Power BI report page in PowerPoint, with controls labeled.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-report-page-controls.png)
 
-Click for option details
-|||
+|Options table|Click for option details|
 |:---------|:---------|
 |[Info](#data-info)     | [Add-in options](#add-in-options)        |
 |[Data options](#data-options)     | [Expand/collapse toolbar](#expandcollapse-toolbar)        |
