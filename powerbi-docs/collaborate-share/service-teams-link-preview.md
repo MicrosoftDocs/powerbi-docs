@@ -1,8 +1,8 @@
 ---
 title: Get a Power BI link preview in Microsoft Teams
 description: When you paste a link to your reports, dashboards, and apps into the Microsoft Teams message box, the link preview shows information about the link.
-author: maggiesMSFT
-ms.author: maggies
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

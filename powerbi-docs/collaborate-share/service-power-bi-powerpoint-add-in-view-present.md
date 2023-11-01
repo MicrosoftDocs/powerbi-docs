@@ -1,8 +1,8 @@
 ---
 title: View and present live Power BI data in PowerPoint
 description: Learn how to work with live Power BI data in PowerPoint.
-author: paulinbar
-ms.author: painbar
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
