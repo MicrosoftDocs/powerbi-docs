@@ -1,8 +1,8 @@
 ---
 title: About storytelling with Power BI in PowerPoint
 description: Learn about enhancing data storytelling in PowerPoint with live, interactive Power BI data using the Power BI add-in for PowerPoint.
-author: paulinbar
-ms.author: painbar
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -23,7 +23,7 @@ The add-in currently supports adding individual report pages and individual visu
 * When you add a whole report page, the left-hand page navigation pane isn't brought in by the add-in, but any page navigation visuals on the report page itself will function normally as they do in the Power BI service.
 * Adding individual visuals is useful when you want your slide to focus on a single chart, graph, or table.
 
-You can add report pages or visuals to PowerPoint presentations starting from either PowerPoint or Power BI. For Power BI to be used as the starting point, Power BI storytelling functionality must be [enabled in your organization](../admin/service-admin-portal-export-sharing.md#enable-power-bi-add-in-for-powerpoint).
+You can add report pages or visuals to PowerPoint presentations starting from either PowerPoint or Power BI. For Power BI to be used as the starting point, Power BI storytelling functionality must be [enabled in your organization](/fabric/admin/service-admin-portal-export-sharing#enable-power-bi-add-in-for-powerpoint).
 
 To start adding live Power BI data to your presentations, see [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md).
 

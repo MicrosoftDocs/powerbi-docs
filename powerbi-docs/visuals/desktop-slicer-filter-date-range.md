@@ -29,7 +29,7 @@ In this video, Will walks through creating a date range slicer.
 > [!NOTE]  
 > This video uses earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/zIZPA0UrJyA]
 
 ## Create the relative date range slicer
 

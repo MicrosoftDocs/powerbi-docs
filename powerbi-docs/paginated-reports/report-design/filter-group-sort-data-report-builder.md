@@ -156,11 +156,11 @@ FROM Production.Product
   
  [Add interactive sort to a table or matrix (Power BI Report Builder)](/sql/reporting-services/report-design/add-interactive-sort-to-a-table-or-matrix-report-builder-and-ssrs)  
   
- [Set a no data message for a data region (Power BI Report Builder)](/sql/reporting-services/report-data/set-a-no-data-message-for-a-data-region-report-builder-and-ssrs)  
+ [Set a no data message for a data region (Power BI Report Builder)](../report-data/set-no-data-message-data-region-report-builder.md)  
   
  [Create a recursive hierarchy group (Power BI Report Builder)](/sql/reporting-services/report-design/create-a-recursive-hierarchy-group-report-builder-and-ssrs)  
   
- [Add or delete a group in a data region (Power BI Report Builder)](/sql/reporting-services/report-design/add-or-delete-a-group-in-a-data-region-report-builder-and-ssrs)  
+ [Add or delete a group in a data region (Power BI Report Builder)](add-delete-group-data-region-report-builder.md)  
   
  [Display headers and footers with a group (Power BI Report Builder)](/sql/reporting-services/report-design/display-headers-and-footers-with-a-group-report-builder-and-ssrs)  
   

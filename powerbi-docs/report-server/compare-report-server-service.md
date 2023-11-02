@@ -1,5 +1,5 @@
 ---
-title: Comparing Power BI Report Server and the Power BI service
+title: Compare Power BI Report Server and the Power BI service
 description: This article compares the features of Power BI Report Server and the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,11 +8,11 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc, intro-overview
-ms.date: 05/25/2023
+ms.date: 10/30/2023
 #Customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
 ---
 
-# Comparing Power BI Report Server and the Power BI service
+# Compare Power BI Report Server and the Power BI service
 
 Power BI Report Server and the Power BI service have many similarities and some key differences. This table explains which is which.
 
@@ -20,7 +20,8 @@ Power BI Report Server and the Power BI service have many similarities and some 
 
 | Features | Power BI Report Server | Power BI Service | Notes |
 |---------|---------|---------|---------|
-| Analyze in Excel | No | Yes | [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) 
+| Analyze in Excel | No | Yes | [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) |
+| Bookmarks | No | Yes| Bookmarks in the [Power BI service](../consumer/end-user-bookmarks.md) |
 | Deployment | On-premises or hosted cloud | Cloud | Power BI Report Server can be deployed in Azure VMs (hosted cloud) if licensed through Power BI Premium or SQL Server Enterprise with Software Assurance|
 | Data sources | Cloud and/or on-premises | Cloud and/or on-premises |  |
 | License | Power BI Premium or SQL Server EE with Software Assurance (SA) | Power BI Pro and/or Power BI Premium | |  
@@ -48,7 +49,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Row-level security (RLS) | Yes | Yes | Available in both DirectQuery (data source) & Import mode <br><br>Row-level security in the [Power BI service](../enterprise/service-admin-rls.md) <br><br>Row-level security in [Power BI Report Server](row-level-security-report-server.md) |
 | Many-to-many relationships | No | Yes | [Apply many-to-many relationships](../transform-model/desktop-many-to-many-relationships.md) in Power BI Desktop |
 | Cross-report drillthrough | No | Yes | [Use cross-report drillthrough](../create-reports/desktop-cross-report-drill-through.md) |
-| Full-screen mode | No | Yes | [Full-screen mode](../consumer/end-user-focus.md) in the Power BI service |
+| Full-screen mode | Yes | Yes | [Full-screen mode](../consumer/end-user-focus.md) in the Power BI service |
 | R scripts and visuals | No | Yes | [Create R visuals](../create-reports/desktop-r-visuals.md) and run R scripts in Power BI Desktop and publish them to the Power BI service. You can't save Power BI reports with R scripts or visuals to Power BI Report Server.  |
 | Python scripts and visuals | No | Yes | [Create Python scripts](../connect-data/desktop-python-scripts.md) and visuals in Power BI Desktop and publish them to the Power BI service. You can't save Power BI reports with Python scripts or visuals to Power BI Report Server. |
 | Preview features | No | Yes | [Opt in for Power BI service preview](../consumer/end-user-preview-features.md) features |
@@ -60,7 +61,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 
 ## Considerations and limitations
 
-These considerations and limitations apply to Power BI Report Sever.
+These considerations and limitations apply to Power BI Report Server.
 
 The following Power BI service features are not supported within Power BI Report Server:
 

@@ -1,8 +1,8 @@
 ---
 title: Migrate from Azure Analysis Services to Power BI Premium or Power BI Embedded
 description: Guidance to help you migrate your Azure Analysis Services (AAS) data models to Power BI Premium or Power BI Embedded.
-author: minewiskan
-ms.author: owend
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -101,7 +101,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | Analysis Service engine semantic modeling | Yes | Yes |
 | **Model management** |||
 | [Incremental refresh](../connect-data/incremental-refresh-overview.md), which uses policies to automate partition management and can help deliver near real-time reporting (see hybrid tables) | No | Yes |
-| [Deployment pipelines](../create-reports/deployment-pipelines-overview.md), which manage the lifecycle of Power BI content | No | Yes |
+| [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines), which manage the lifecycle of Power BI content | No | Yes |
 | [Scheduled refresh](../connect-data/refresh-scheduled-refresh.md), which keeps cached dataset data current | No | Yes |
 | [Enhanced refresh](../connect-data/asynchronous-refresh.md), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes |
 | [Backup and restore](../enterprise/service-premium-backup-restore-dataset.md) | Yes | Yes |
@@ -117,8 +117,8 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Data hub](../connect-data/service-data-hub.md) integration, which helps users discover, explore, and use Power BI datasets | No | Yes |
 | [Data lineage view](../collaborate-share/service-data-lineage.md) and [dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md), which help users understand and assess Power BI item dependencies | No | Yes |
 | **Monitoring and diagnostic logging** |||
-| [Premium capacity metrics app](../enterprise/service-premium-metrics-app.md), which provides monitoring capabilities for Power BI capacities | No | Yes |
-| [Power BI audit log](../admin/service-admin-auditing.md#use-the-audit-log), which tracks user activities across Power BI and Microsoft 365 | No | Yes |
+| [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app), which provides monitoring capabilities for Power BI capacities | No | Yes |
+| [Power BI audit log](../enterprise/service-admin-auditing.md#use-the-audit-log), which tracks user activities across Power BI and Microsoft 365 | No | Yes |
 | [Azure Log Analytics (LA) integration](../transform-model/log-analytics/desktop-log-analytics-overview.md), which allows administrators to configure a Log Analytics connection for a Power BI workspace | Yes | Yes  |
 | [Metric alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-types#metric-alerts), which provide a way to get notified when one of your multi-dimensional metrics crosses a threshold | Yes | No |
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md), which allows diagnostic logging tool connections, including SQL Server Profiler | Yes | Yes |
@@ -273,15 +273,15 @@ AAS integrates with Azure Monitor for [diagnostic logging](/azure/analysis-servi
 
 Power BI Premium also supports [logging to Log Analytics workspaces](../transform-model/log-analytics/desktop-log-analytics-overview.md). Currently, the events sent to Log Analytics are mainly AS engine events. However, not all events supported for AAS are supported for Power BI. The Log Analytics schema for Power BI contains differences compared to AAS, which means existing queries on AAS may not work in Power BI.
 
-Power BI offers another diagnostic logging capability that isn't offered in AAS. For more information, see [Use the Premium metrics app](../enterprise/service-premium-metrics-app.md).
+Power BI offers another diagnostic logging capability that isn't offered in AAS. For more information, see [Use the Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app).
 
 SQL Server Extended Events (xEvents) are supported in AAS but not in Power BI Premium. For more information, see [Monitor Analysis Services with SQL Server Extended Events](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events).
 
 ### Business-to-business (B2B)
 
-Both AAS and Power BI support [Azure AD B2B collaboration](/azure/active-directory/external-identities/what-is-b2b), which enables and governs sharing with external users. Notably, the User Principal Name (UPN) format required by AAS is different to Power BI.
+Both AAS and Power BI support [Microsoft Entra B2B collaboration](/azure/active-directory/external-identities/what-is-b2b), which enables and governs sharing with external users. Notably, the User Principal Name (UPN) format required by AAS is different to Power BI.
 
-To identify the user, Power BI utilizes a unique name claim in Azure AD while AAS uses an email claim. While there may be many instances where these two identifiers align, the unique name format is more stringent. If using dynamic RLS in Power BI, ensure that the value in the user identity table matches the account used to sign in to Power BI.
+To identify the user, Power BI utilizes a unique name claim in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) while AAS uses an email claim. While there may be many instances where these two identifiers align, the unique name format is more stringent. If using dynamic RLS in Power BI, ensure that the value in the user identity table matches the account used to sign in to Power BI.
 
 ### Scale-out
 

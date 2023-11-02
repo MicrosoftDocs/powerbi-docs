@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Advanced data preparation"
 description: "Learn how Power BI advanced data preparation is about improving the reach and reusability of dataflows."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -42,7 +42,7 @@ Separate workspaces, organized by dataflow purpose, are helpful when dataflow ou
 The focus of this advanced data preparation scenario is on:
 
 - The use of separate dataflows based on purpose: staging, transformation, or final. We recommend using *composable building blocks* to obtain greater reuse, in various combinations, to support specific user requirements. Composable building blocks are described later in this article.
-- The use of separate workspaces that support dataflow *creators* or dataflow *consumers*. Data modelers, who consume dataflows, may be on different teams and/or have different use cases.
+- The use of separate workspaces that support dataflow *creators* or dataflow *consumers*. Data modelers, who consume dataflows, might be on different teams and/or have different use cases.
 - The use of linked tables (also known as *linked entities*), computed tables (also known as *computed entities*), and the enhanced compute engine.
 
 > [!NOTE]
@@ -107,7 +107,7 @@ A transformation dataflow includes all the transformation steps required to prep
 
 #### Final dataflow
 
-A final dataflow represents the prepared output. Some additional transformations may occur based on the use case and purpose. For analytics, a [star schema](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#build-a-star-schema) table (dimension or fact) is the preferred design of the final dataflow.
+A final dataflow represents the prepared output. Some additional transformations might occur based on the use case and purpose. For analytics, a [star schema](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#build-a-star-schema) table (dimension or fact) is the preferred design of the final dataflow.
 
 Computed tables are visible to data modelers that are granted the workspace **viewer** role. This table type is described in the [types of dataflow tables](#types-of-dataflow-tables) topic below.
 
@@ -157,7 +157,7 @@ A dataflow is a source of data for datasets. In most cases, multiple data refres
 
 ### Azure Data Lake Storage Gen2
 
-An ADLS Gen2 account is a specific type of Azure storage account that has the [hierarchical namespace](/azure/storage/blobs/create-data-lake-storage-account) enabled. ADLS Gen2 has [performance, management, and security advantages](/azure/storage/blobs/data-lake-storage-introduction) for operating analytical workloads. By default, Power BI dataflows use internal storage, which is a built-in data lake account managed by the Power BI service. Optionally, organizations may *bring their own data lake* by connecting to an ADLS Gen2 account in their organization.
+An ADLS Gen2 account is a specific type of Azure storage account that has the [hierarchical namespace](/azure/storage/blobs/create-data-lake-storage-account) enabled. ADLS Gen2 has [performance, management, and security advantages](/azure/storage/blobs/data-lake-storage-introduction) for operating analytical workloads. By default, Power BI dataflows use internal storage, which is a built-in data lake account managed by the Power BI service. Optionally, organizations can *bring their own data lake* by connecting to an ADLS Gen2 account in their organization.
 
 Here are some advantages of using your own data lake:
 
@@ -190,7 +190,7 @@ A data gateway is required when:
 
 ### System oversight
 
-The [activity log](../admin/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements. In the advanced data preparation scenario, the activity log data is helpful to track the management and use of dataflows.
+The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements. In the advanced data preparation scenario, the activity log data is helpful to track the management and use of dataflows.
 
 ## Next steps
 

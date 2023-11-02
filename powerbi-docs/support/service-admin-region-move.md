@@ -1,19 +1,19 @@
 ---
 title: Move Power BI between regions
 description: If the default region for your organization's Power BI data isn't optimal, you might want to move to another region. You can't move regions by yourself. This article describes how to work with support to move between regions. 
-author: kfollis
+author: mihart
 ms.author: hfeng
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting 
-ms.date: 07/05/2023
+ms.date: 10/27/2023
 ms.custom: template-how-to; subject-moving-resources
 ---
 
 # Move between regions
 
 > [!IMPORTANT]
-> At this time, we only offer the tenant migration service to customers with Power BI Premium capacities. We currently don't support tenant migration for Fabric. 
+> At this time, we only offer the tenant migration service to customers with a P (Premium) SKU.  
 
 The location selected during sign-up determines your default data region. However, this region might not be optimal if most of your users are located in a different geographic location. You might want to move to another region to reduce latency or to ensure data governance. You can’t move your organization’s tenant between regions by yourself. Self-service migration of Power BI resources stored in Azure isn’t supported. If you need to change your default data location from the current region to another region, you have to contact Microsoft support to manage the migration for you.
 
@@ -32,8 +32,8 @@ The migration process moves all tenant data to the new region. The GUID assigned
 
 ### Awareness
 
-- **The end-to-end migration process may take up to six months**. We prioritize service reliability and deployment schedules can change, so we may need to reschedule during migration at any time. We can't guarantee successful migration due to inconsistent data or bugs.
-- During the migration process, it's possible to encounter unforeseen issues that may result in multiple failures. Allow for multiple attempts to ensure a successful migration.
+- **The end-to-end migration process might take up to six months**. We prioritize service reliability and deployment schedules can change, so we might need to reschedule during migration at any time. We can't guarantee successful migration due to inconsistent data or bugs.
+- During the migration process, it's possible to encounter unforeseen issues that might result in multiple failures. Allow for multiple attempts to ensure a successful migration.
 
 - Migration requires about six hours of down time. During migration, users can't access Power BI and an error message similar to the one shown in the following screenshot is displayed. The actual down time depends on the volume of data to be migrated.
 
@@ -78,9 +78,9 @@ To find out the best way to contact support, read [Power BI support options](ser
    
    Select **See solutions** to move to the next screen.
 
-     :::image type="content" source="media\service-admin-region-move\ppac-new-support-request.png" alt-text="Screen capture showing field entries for a new support request for a region move in the Power Platform Admin Center.":::
+     :::image type="content" source="media\service-admin-region-move\support-request-dialog.png" alt-text="Screen capture showing field entries for a new support request for a region move in the Power Platform Admin Center.":::
 
-1. Select **Next** to continue to **Select your support plan**. Choose your support plan. Add a description and include the information in the following table:
+1. Select the arrow button to continue to **Select your support plan**. Choose your support plan. Add a description and include the information in the following table:
 
    |Information needed | How to find the information |
    |---|---|

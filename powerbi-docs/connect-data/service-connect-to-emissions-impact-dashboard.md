@@ -6,7 +6,7 @@ ms.author: rosode
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 04/08/2023
+ms.date: 09/27/2023
 LocalizationGroup: Connect to services
 ---
 
@@ -18,11 +18,7 @@ Accurate carbon accounting requires good information from partners, vendors, and
 
 ## Prerequisites
 
-To install the Emissions Impact Dashboard for Azure in Power BI and connect it to your data, make sure you have the following before installing the app:
-
-* A Power BI Pro license. If you don’t have a Power BI Pro license, [get a free trial now](https://powerbi.microsoft.com/power-bi-pro).
-
-* An admin role with read/write permissions on your Azure tenant. If you don't have these permissions, contact an Azure admin who has read/write permissions.
+To install the Emissions Impact Dashboard for Azure in Power BI and connect it to your data, make sure you have a Power BI Pro license. If you don’t have a Power BI Pro license, [get a free trial now](https://powerbi.microsoft.com/power-bi-pro).
 
 The Emissions Impact Dashboard for Azure is supported for EA Direct, MCA, and MPA accounts with direct billing relationships with Microsoft.
 

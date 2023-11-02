@@ -7,13 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/23/2022
+ms.date: 08/21/2023
 LocalizationGroup: Connect to data
 ---
 
 # Use DirectQuery in Power BI Desktop
 
-When you connect to any data source with Power BI Desktop, you can import a copy of the data. For some data sources, you can also connect directly to the data source without importing data by using DirectQuery. For a full listing of data sources that support DirectQuery, see [Data sources supported by DirectQuery](power-bi-data-sources.md).
+When you connect to any data source with Power BI Desktop, you can import a copy of the data. For some data sources, you can also connect directly to the data source without importing data by using DirectQuery. 
+
+To determine whether a data source supports DirectQuery, view the full listing of available data sources found in the article [Connectors in Power Query](/power-query/connectors/) which also applies to Power BI, select the article that describes the data source you're interested in from the list of supported connectors, then see the section in that connector's article titled **Capabilities supported**. If DirectQuery isn't listed in that section for the data source's article, DirectQuery isn't supported for that data connector.
 
 Here are the differences between using import and DirectQuery connectivity modes:
 

@@ -25,7 +25,7 @@ Watch Amanda customize her X- and Y-axes. She'll also demonstrate the different 
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9DeAKM4SNJM" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/9DeAKM4SNJM]
 
 ## Prerequisites
 

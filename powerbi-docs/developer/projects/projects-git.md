@@ -13,7 +13,7 @@ ms.date: 05/31/2023
 # Power BI Desktop projects Git integration
 
 > [!IMPORTANT]
-> Power BI Desktop projects is currently in **PREVIEW**. This information relates to a prerelease feature that may be substantially modified before being released for General Availability (GA). Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Power BI Desktop projects is currently in **preview**.
 
 Git integration in Microsoft Visual Studio Code (VS Code) enables Pro BI developers working with Power BI Desktop projects to streamline development processes, source control, and collaboration with Git repositories.
 
@@ -54,6 +54,6 @@ With Git integration, you can not only backup your work, but also track your cha
 
 ## See also
 
-[Power BI Desktop projects Azure DevOps integration](projects-git.md)  
+[Power BI Desktop projects Azure DevOps integration](projects-azdo.md)  
 [Power BI Desktop project dataset folder](projects-dataset.md)  
 [Power BI Desktop project report folder](projects-report.md)  

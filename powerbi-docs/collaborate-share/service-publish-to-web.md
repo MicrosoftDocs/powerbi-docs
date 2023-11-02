@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 03/23/2023
+ms.date: 09/07/2023
 LocalizationGroup: Share your work
 ---
 
@@ -24,8 +24,8 @@ With the Power BI **Publish to web** option, you can easily embed interactive Po
 ## Prerequisites
 
 - You need a Microsoft Power BI license to publish to web from My Workspace. 
-- You need a Microsoft Power BI Pro license to publish to web from group workspaces. 
-- Publish to web is available for reports you can edit in your personal and group workspaces.  
+- You need a Microsoft Power BI Pro or Premium Per User license to publish to web from workspaces. 
+- Publish to web is available for reports you can edit in your My Workspace and workspaces.  
 - It isn't available for reports shared with you, or ones relying on row-level security to secure data. 
 - Your report viewers don't need to be Power BI users.
 
@@ -169,7 +169,7 @@ The data is cached for one hour from the time it is retrieved. If you update the
 
 ## Find your Power BI administrator
 
-The Power BI admin portal has settings that control who can publish to the web. Work with your organization's [Power BI administrator](../admin/service-admin-role.md) to change the [Publish to web tenant settings](../admin/service-admin-portal-export-sharing.md#publish-to-web) in the admin portal.
+The Power BI admin portal has settings that control who can publish to the web. Work with your organization's [Power BI administrator](../admin/service-admin-role.md) to change the [Publish to web tenant settings](/fabric/admin/service-admin-portal-export-sharing#publish-to-web) in the admin portal.
 
 For smaller organizations or individuals who signed up for Power BI, you may not have a Power BI administrator yet. Follow our [process for admin takeover](/azure/active-directory/users-groups-roles/domains-admin-takeover). Once you have a Power BI administrator, they can enable creating embed codes for you.
 
@@ -178,13 +178,14 @@ Established organizations usually already have a Power BI administrator. People 
 - Global administrators
 - Users with the Fabric administrator role in Azure Active Directory
 
-You need to [find one of these people](/microsoft-365/business-video/admin-center-overview#who-has-admin-permissions-in-my-business) in your organization and ask them to update the [Publish to web tenant settings](../admin/service-admin-portal-export-sharing.md#publish-to-web) in the admin portal.
+You need to [find one of these people](/microsoft-365/business-video/admin-center-overview#who-has-admin-permissions-in-my-business) in your organization and ask them to update the [Publish to web tenant settings](/fabric/admin/service-admin-portal-export-sharing#publish-to-web) in the admin portal.
 
 ## Considerations and limitations
 
-Publish to web is supported for the vast majority of data sources and reports in the Power BI service. However, the following kinds of reports aren't currently supported or available with Publish to web:
+Publish to web is supported for the vast majority of data sources and reports in the Power BI service. However, the following kinds of reports are currently *not* supported or available with Publish to web:
 
 - Reports using row-level security.
+- Reports connecting to data using DirectQuery. Connect using composite or import mode instead. Read about the [differences between the modes](../connect-data/service-dataset-modes-understand.md).
 - Reports using any Live Connection data source, including Analysis Services Tabular hosted on-premises, Analysis Services Multidimensional, and Azure Analysis Services.
 - Reports using a [shared dataset](../connect-data/service-datasets-across-workspaces.md) that is stored in a different workspace from the report.
 - [Shared and certified datasets](../connect-data/service-datasets-share.md).
@@ -201,6 +202,7 @@ Publish to web is supported for the vast majority of data sources and reports in
 - License enforcement for custom visuals.
 - Uncertified visuals from the organizational store, when the global tenant switch of the organization for uncertified visuals is on.
 - Public visuals from the organizational store, when the global tenant switch of the organization doesn't allow visuals created using the Power BI SDK.
+- The user who created the embed code needs to maintain access to the report for the embed code to work. This includes requiring a Pro or Premium Per User license as required by the workspace. 
 - Paginated reports
 
 ## Next steps

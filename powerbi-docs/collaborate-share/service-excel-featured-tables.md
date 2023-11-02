@@ -1,8 +1,8 @@
 ---
 title: Access Power BI featured tables in Excel
 description: Learn how to use featured tables to link your data in Microsoft Excel to data from Power BI.
-author: maggiesMSFT
-ms.author: maggies
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
@@ -126,7 +126,7 @@ Excel caches the data returned for the entire row. Anyone you share the Excel fi
 
 ## Administrative control
 
-Power BI admins can control who in the organization can use featured tables in the Excel Data Types Gallery. See [Allow connections to featured tables](../admin/service-admin-portal-export-sharing.md#allow-connections-to-featured-tables) in the Admin portal article for details. 
+Power BI admins can control who in the organization can use featured tables in the Excel Data Types Gallery. See [Allow connections to featured tables](/fabric/admin/service-admin-portal-export-sharing#allow-connections-to-featured-tables) in the Admin portal article for details. 
  
 ### Auditing
 

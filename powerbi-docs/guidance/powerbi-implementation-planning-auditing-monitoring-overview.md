@@ -1,13 +1,13 @@
 ---
 title: "Power BI implementation planning: Auditing and monitoring"
 description: "An introduction to the Power BI auditing and monitoring planning articles."
-author: data-goblin
-ms.author: v-kurtbuhler
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/25/2023
+ms.date: 08/31/2023
 ---
 
 # Power BI implementation planning: Auditing and monitoring
@@ -16,8 +16,8 @@ ms.date: 04/25/2023
 
 This article introduces the Power BI auditing and monitoring articles. These articles are targeted at multiple audiences:
 
-- **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators may need to collaborate with information security and other relevant teams.
-- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They may need to collaborate with Power BI administrators, information security teams, and other relevant teams.
+- **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators might need to collaborate with information security and other relevant teams.
+- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
 - **Content creators and workspace administrators:** Users who need to understand usage and adoption for the content that they've created, published, and shared with others in the organization.
 
 The terms _auditing_ and _monitoring_ are closely related.
@@ -92,7 +92,7 @@ It's useful to understand which users are most active. The types of questions yo
 > [!TIP]
 > For analytical reporting, it's important that you add classifications to the data model to analyze users based on their level of usage, or to analyze content based on its level of usage. For more information, see [Create classifications](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#create-classifications)
 
-For more information about the Power BI activity log, see [Access user activity data](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data).
+For more information about the Power BI activity log, see [Access user activity data](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data). For more information about pre-built reports, see [What is the admin monitoring workspace?](/fabric/admin/monitoring-workspace).
 
 ### Understand published items
 
@@ -104,7 +104,7 @@ A tenant inventory is helpful to:
 
 - **Understand how much content you have and where:** Because the tenant inventory includes all published items, it represents a complete inventory at that time. You can use it to identify where content is published, and its dependencies and lineage.
 - **Examine the ratio of datasets to reports:** You can use lineage information from the tenant inventory to determine the extent to which data reuse occurs. For example, if you discover many duplicate datasets, it could justify user training on [shared datasets](/power-bi/connect-data/service-datasets-across-workspaces). You might also decide that a consolidation project to reduce the number of datasets is justified.
-- **Understand trends between points in time:** You can compare multiple snapshots to identify trends. For example, you might find that a large number of new items are published every month. Or you may you discover that users are republishing a new report (with a different report name) every time they modify it. Those types of discoveries should prompt you to improve user training.
+- **Understand trends between points in time:** You can compare multiple snapshots to identify trends. For example, you might find that a large number of new items are published every month. Or you might you discover that users are republishing a new report (with a different report name) every time they modify it. Those types of discoveries should prompt you to improve user training.
 - **Scrutinize user permissions:** You can gain valuable insight into how user permissions are assigned. For example, you might routinely analyze which users have access to what content. You might undertake further investigation to determine whether asset oversharing is occurring. One approach you can take is to correlate certain [sensitivity labels](powerbi-implementation-planning-info-protection.md) (such as _Highly Restricted_) with high numbers of user permission assignments.
 - **Understand lineage and find highly used data sources and gateways:** By correlating the lineage information from the tenant inventory with user activities, you can identify the most frequently used data sources and gateways.
 - **Find unused content:** You can compare your tenant inventory to the activity log to find unused (or under-utilized) content. For example, there are 20 reports in a workspace, yet only 12 reports have recent data in the activity log. You can investigate why the other eight reports aren't used, and whether they should be retired. Discovery of unused content might help you detect Power BI solutions that need further development because they aren't useful.
@@ -132,13 +132,14 @@ Auditing data helps you understand what's happening in your Power BI tenant. Thi
 
 Auditing data helps you to:
 
-- **Govern the Power BI tenant:** Find out whether users are following your [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies. For example, you might have a governance policy that requires all content that's published to a particular workspace be [certified](/power-bi/collaborate-share/service-endorse-content#certify-content). Or, you might have guidelines for when [groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) (rather than users) should be used for security. The [activity log](/power-bi/admin/service-admin-auditing), your tenant inventory (described previously), and [admin APIs](/rest/api/power-bi/) are helpful resources to help you govern your Power BI tenant.
-- **Review security:** Determine whether there are [security](powerbi-implementation-planning-security-overview.md) concerns. For example, you might see overuse of sharing from a personal workspace. Or you may see unrelated content published to a single [workspace](powerbi-implementation-planning-workspaces-overview.md) (which leads to more complicated security for the items in such a broadly defined workspace). The [activity log](/power-bi/admin/service-admin-auditing), your tenant inventory (described previously), and the [admin APIs](/rest/api/power-bi/) are helpful for security auditing.
+- **Govern the Power BI tenant:** Find out whether users are following your [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies. For example, you might have a governance policy that requires all content that's published to a particular workspace be [certified](/power-bi/collaborate-share/service-endorse-content#certify-content). Or, you might have guidelines for when [groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) (rather than users) should be used for security. The [activity log](/power-bi/enterprise/service-admin-auditing), your tenant inventory (described previously), and [admin APIs](/rest/api/power-bi/) are helpful resources to help you govern your Power BI tenant.
+- **Review security:** Determine whether there are [security](powerbi-implementation-planning-security-overview.md) concerns. For example, you might see overuse of sharing from a personal workspace. Or you might see unrelated content published to a single [workspace](powerbi-implementation-planning-workspaces-overview.md) (which leads to more complicated security for the items in such a broadly defined workspace). The [activity log](/power-bi/enterprise/service-admin-auditing), your tenant inventory (described previously), and the [admin APIs](/rest/api/power-bi/) are helpful for security auditing.
 - **Minimize security issues:** Use the activity log data to avoid or minimize the effect of security issues. For example, you might detect that an organization-wide sharing link was used in an unexpected way. By noticing this event in the activity log shortly after it happens, you can take action to resolve the issue before the link is used inappropriately.
 - **Monitor tenant setting changes:** Use the activity log data to determine when a [tenant setting](/power-bi/admin/service-admin-portal-about-tenant-settings) has changed. If you see that an unexpected change occurred, or that it was done by an unexpected user, you can act quickly to correct or revert the setting.
 - **Review data sources:** Determine whether unknown or unexpected data sources are used by datasets, dataflows, or datamarts. You might also determine what types of data source are in use (such as files or databases). You might also check whether files are stored in an appropriate location (such as OneDrive for work or school).
 - **Information protection:** Review how sensitivity labels are used to reduce the risk of data leakage and misuse of data. For more information, see the [information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) series of articles.
 - **Mentoring and user enablement:** Take action to change user behaviors when necessary. As you gain more knowledge about what users need and what actions they are taking, you can influence [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) activities.
+- **Monitor tenant setting changes:** Use the activity log data to determine when a [tenant setting](/power-bi/admin/service-admin-portal-about-tenant-settings) has changed. If you see that an unexpected change has occurred, or that it was done by an unexpected user, you can act quickly to correct or revert the setting. You can also use the [Get Tenant Settings](/rest/api/fabric/admin/tenants/get-tenant-settings) REST API to regularly extract a snapshot of the tenant settings.
 
 ### Improve compliance
 
@@ -160,10 +161,10 @@ Because auditing data contains information about actual user activities, it can 
 
 You can use the auditing data to:
 
-- **Understand the mix of user licenses:** To reduce cost, consider reassigning unused [user licenses](/power-bi/fundamentals/service-features-license-type) (Pro or PPU) to other users. You may also be able to reassign a user to a Free user license. When there are many consumers who only view content, it can be more cost effective to use a [Power BI Premium](/power-bi/fundamentals/service-features-license-type#premium-capacity) (P SKU) capacity with Free user licenses (known as unlimited content distribution).
+- **Understand the mix of user licenses:** To reduce cost, consider reassigning unused [user licenses](/power-bi/fundamentals/service-features-license-type) (Pro or PPU) to other users. You might also be able to reassign a user to a Free user license. When there are many consumers who only view content, it can be more cost effective to use a [Power BI Premium](/power-bi/fundamentals/service-features-license-type#premium-capacity) (P SKU) capacity with Free user licenses (known as unlimited content distribution).
 - **Assess the use of capacity licenses:** Assess whether a Power BI capacity (purchased with a P SKU, EM SKU, or A SKU) is [sized](/power-bi/enterprise/service-premium-what-is#capacity-nodes) appropriately for your workload and usage patterns. To balance cost with decentralized management needs, you might consider using multiple decentralized capacities (for example, three P1 capacities that are each managed by a different team). To reduce cost, you might provision one larger capacity (for example, a P3 capacity that's managed by a centralized team).
 - **Monitor the use of capacity autoscale:** Determine whether [Autoscale](/power-bi/enterprise/service-premium-auto-scale) (available with Power BI Premium) is set up in a cost-effective way. If autoscale is invoked too frequently, it can be more cost-effective to scale up to a higher P SKU (for example, from a P1 capacity to a P2 capacity). Or, you could scale out to more capacities (for example, provision another P1 capacity).
-- **Perform chargebacks:** Perform intercompany chargebacks of Power BI costs based on which users are using the service. In this situation, you should determine which [activities](/power-bi/admin/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) in the activity log are important, and correlate those activities to business units or departments.
+- **Perform chargebacks:** Perform intercompany chargebacks of Power BI costs based on which users are using the service. In this situation, you should determine which [activities](/power-bi/enterprise/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) in the activity log are important, and correlate those activities to business units or departments.
 - **View trials:** The activity log records when users sign up for a [PPU trial](/power-bi/fundamentals/service-self-service-signup-purchase-for-power-bi#information-about-power-bi-trials). That information can prepare you to purchase a full license for those users before their trial period ends.
 
 ### Performance monitoring

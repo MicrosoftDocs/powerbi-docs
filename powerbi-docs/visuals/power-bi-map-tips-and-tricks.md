@@ -66,7 +66,7 @@ Add latitude and longitude values to your dataset. This data removes any ambigui
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/ajTPGNpthcg]
 
 ### 4. Use Place category for columns with full location information
 

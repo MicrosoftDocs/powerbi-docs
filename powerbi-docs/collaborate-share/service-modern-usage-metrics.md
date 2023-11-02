@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/13/2023
+ms.date: 10/30/2023
 LocalizationGroup: Dashboards
 ---
 
@@ -27,7 +27,7 @@ If you create reports in workspaces, you have access to improved usage metrics r
 
 - You need a Power BI Pro or Premium Per User (PPU) license to run and access the usage metrics data. However, the usage metrics feature captures usage information from all users, regardless of the license they're assigned.
 - To access usage metrics for a report, you must have edit access to the report.
-- Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal-audit-usage.md).
+- Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](/fabric/admin/service-admin-portal-audit-usage).
 
 ## Create and view a new usage metrics report
 
@@ -85,16 +85,16 @@ The improved usage metrics report includes the following report pages:
 | --- | --- | --- |
 | Report usage | Report views/Report opens | A Report View is recorded each time someone opens a report and represents unique landings on the report. It answers the question, "How often is the report accessed?" This definition of a Report View differs from previous usage metrics reports. Changing report pages is no longer considered an additional Report View. Instead, changing report pages counts for the next metric, Report Page Views. Activities such as sharing and pinning are no longer considered in usage metrics. |
 | Report usage | Report Page views | A Report Page View is recorded every time someone views a report page. It represents total views across any pages. It answers the question, "How often are report pages accessed?" So changing report pages counts for Report Page Views. See [Considerations and Limitations](#considerations-and-limitations) for important details. |
-| Report usage | Unique viewers | A viewer is someone who opened the report at least once during the time period (based on the Azure AD user account). |
+| Report usage | Unique viewers | A viewer is someone who opened the report at least once during the time period, based on the Azure AD user account. |
 | Report usage | View trend | The view trend reflects view count changes over time. It compares the first half of the selected time period with the second half. |
-| Report usage | Date slicer | You can change the time period on the Report usage page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report usage page, you can determine the earliest and latest date for which usage data is available for the selected report. |
+| Report usage | Date slicer | You can change the time period on the Report usage page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report usage page, you can set the earliest and latest date for which usage data is available for the selected report. |
 | Report usage | Rank | Based on view count, the rank shows the popularity of a report in comparison to all other reports in the organization. A rank of one would mean the report has the most views of all reports in the organization.   |
 | Report usage | Report views per day | Usage is counted at the report level and doesn't consider Report Page Views. |
-| Report usage | Report viewers per day | Total number of different users who viewed the report (based on the Azure AD user account). |
-| Report usage | Distribution method | How users got access to the report, such as being members of a workspace, having the report shared with them, or installing an app. |
-| Report usage | Platform slicer | If the report was accessed via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
+| Report usage | Report viewers per day | Total number of different users who viewed the report, based on the Azure AD user account. |
+| Report usage | Distribution method | How users got access to the report, such as by being members of a workspace, having the report shared with them, or installing an app. |
+| Report usage | Platform slicer | If users accessed the report via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
 | Report usage | Users with report views | Shows the list of users who opened the report sorted by view count. |
-| Report usage | Pages | If the report has more than one page, slice the report by the page(s) that was viewed. "Blank" means either a report page was added within 24 hours of the new page appearing in the slicer list, or report pages have been deleted. "Blank" captures these types of situations. |
+| Report usage | Pages | If the report has more than one page, slice the report by the pages that were viewed. "Blank" means either a report page was added within 24 hours of the new page appearing in the slicer list, or report pages have been deleted. "Blank" captures these types of situations. |
 | Report performance | Typical opening time | The typical report opening time corresponds to the 50th percentile of the time it takes to open the report. In other words, it is the time below which 50% of the open-report actions are completed. The Report performance page also breaks down the typical report opening time by consumption method and browser type. At present, we measure the performance for the initial report load and first page viewed. The measurement starts when the report is requested and ends when the last visual completes rendering. Report interactions such as slicing, filtering, or changing pages are not included in performance metrics.  |
 | Report performance | Opening time trend | The opening time trend reflects open-report performance changes over time. It compares the opening times for the report of the first half of the selected time period with the opening times of the second half. |
 | Report performance | Date slicer | You can change the time period on the Report performance page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report performance page, you can determine the earliest and latest date for which usage data is available for the selected report. |
@@ -102,6 +102,15 @@ The improved usage metrics report includes the following report pages:
 | Report performance | seven-day performance | The performance for 25%, 50%, and 75% of the open report actions calculated across the past seven days for each date. |
 | Report performance | Consumption method | How users opened the report, such as via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
 | Report performance | Browsers | What browser the users used to open the report, such as Firefox, Edge, and Chrome. |
+| Report list | Active reports | What reports are being used across the workspace. |
+| Report list | Total views | Total report opens across the workspace. |
+| Report list | Total viewers | Total report viewers across the workspace. |
+| Report list | View trend | The view trend reflects view count changes over time. It compares the first half of the selected time period with the second half. |
+| Report list | Unused  reports | Count of reports that have not been opened over time. |
+| Report list | Report usage (table) | Shows which reports contribute to individual counts shown in cards. Shows report open percentages, users interacting with report, viewing trends and days. |
+| Report list | Distribution method | How users got access to the report, such as being members of a workspace, having the report shared with them, or installing an app. |
+| Report list | Platform slicer | If the report was accessed via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
+| Report list | Unique viewers | A viewer is someone who opened the report at least once during the time period (based on the Azure AD user account). Shows number of report opens by individual viewers. |
 
 ### Worked example of View and Viewer metrics
 
@@ -163,7 +172,7 @@ If dataset owners in your workspace leave, are no longer a part of your organiza
 
 ## Disable usage metrics reports
 
-Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization. See [Audit and usage metrics](../admin/service-admin-portal-audit-usage.md) in the Admin portal article for details on these settings.
+Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization. See [Audit and usage metrics](/fabric/admin/service-admin-portal-audit-usage) in the Admin portal article for details on these settings.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and edit settings.
@@ -183,7 +192,7 @@ If user information is excluded, the usage report refers to users as 'Unnamed Us
 
     ![Screenshot of disabling per-user metrics.](media/service-modern-usage-metrics/power-bi-admin-disable-per-user-metrics.png)
 
-When disabling usage metrics for their entire organization, admins can use the Delete all existing usage metrics content option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
+When admins disable usage metrics for their entire organization, they can use the **Delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and configure the Per-user data in usage metrics for content creators setting.
@@ -303,7 +312,7 @@ In addition to the above differences between previous and improved usage metrics
 - Performance data and Report Page View metrics rely on the client/device sending data to Power BI. Depending on network latency, ad blockers, firewalls, and network rules set by your organization, this data may never reach Power BI. Therefore, the performance and Report Page View data may not include all views or all users.
 - Certain types of views aren't included in performance measurements. For example, when a user selects a link to a report in an email message, the Report View is accounted for in the report usage but there is no event in the performance metrics.
 - Report performance metrics aren't available for Paginated Reports. The Pages tab on the Report usage page as well as the charts on the Report performance page don't show data for these types of reports.
-- User masking isn't working as expected when using nested groups. If your organization has disabled Per-user data in usage metrics for content creators in the Power BI admin portal tenant settings, only the members on the top level are being masked. Members of subgroups are still visible.
+- User masking isn't working as expected when using nested groups. Nested groups (subgroups) are groups that are members of existing groups. If your organization has disabled Per-user data in usage metrics for content creators in the Power BI admin portal tenant settings, only the members on the top level are being masked. Members of subgroups are still visible.
 - If you're using user masking in an embed scenario in your report, the usage metrics dataset refresh will fail.
 - Initializing the Usage Metrics Report dataset might take a few minutes, resulting in showing a blank usage metrics report because the Power BI user interface does not wait for the refresh to finish. Check the refresh history in the Usage Metrics Report dataset settings to verify that the refresh operation succeeded.
 - Initializing the Usage Metrics Report dataset might fail due to a timeout encountered during refresh. Refer to the [Troubleshooting section](#troubleshoot-refresh-issues) below to resolve this or any general refresh issue.
@@ -321,14 +330,17 @@ In addition to the above differences between previous and improved usage metrics
     - Dataset re-initialization
        - Each time a new dataset is created, a new report could be created.
 - The usage metrics report is not supported in My Workspace.
+- During the process of [disaster recovery (while Business continuity and disaster recovery (BCDR)](/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery) is in progress) any new incoming data experiencing data loss may be irrecoverable.
+- Certain metrics in usage metrics report aren't included in audit logs. For example, report page views aren't part of audit logs.
+- When a report is deleted, the ReportIds can show up in the usage metrics but not be available in the Reports dataset.
+- Customers may be unable to view or download the usage metrics semantic model from Power BI service.
 
 ## Frequently asked questions
 
-In addition to the above considerations and limitations, the following questions and answers about usage metrics might be helpful for users and administrators:
+In addition to the above considerations and limitations, the following questions and answers about usage metrics might be helpful for users and administrators.
 
 #### **Why do I see fewer Report Page Views than Report Views, shouldn't they be at least the same?** 
 Report Views rely on server telemetry that is generated when the report is first opened. Once a report is open, its page definitions are already loaded onto the user's device. Report Page Views rely on usage information from the user's device reaching Power BI. This can sometimes be blocked, as described in [Considerations and Limitations](#considerations-and-limitations).
-
 
 #### **I can't run usage metrics on a report.**
 You can only see usage metrics for reports you own or have permissions to edit.
@@ -343,7 +355,7 @@ The usage report includes activity data up until the last complete day based on 
 Note that it might take up to 24 hours for new activity data to appear in the usage report.
 
 #### **What is the data source for the usage data?**
-The Usage Metrics Report dataset imports data from a Power BI-internal usage metrics store by using a custom Usage Metrics Data Connector. You can update the credentials for the Usage Metrics Data Connector on the Usage Metrics Report dataset settings page.
+The Usage Metrics Report dataset imports data from a Power BI internal usage metrics store by using a custom Usage Metrics Data Connector. You can update the credentials for the Usage Metrics Data Connector on the Usage Metrics Report dataset settings page.
 
 #### **How can I connect to the data? Or change the default report?**
 You can create a copy of the read-only, pre-built usage report. The report copy connects to the same Usage Metrics Report dataset and enables you to edit the report details.

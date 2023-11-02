@@ -1,8 +1,8 @@
 ---
 title: What's new in the Power BI add-in for PowerPoint
 description: Learn about new features that have been added to the Power BI add-in for PowerPoint.
-author: paulinbar
-ms.author: painbar
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

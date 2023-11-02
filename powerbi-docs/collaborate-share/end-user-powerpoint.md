@@ -1,8 +1,8 @@
 ---
 title: Export entire reports to PowerPoint
 description: Learn how to export a Power BI report to PowerPoint.
-author: mihart
-ms.author: mihart
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: mihart
 ms.custom: contperf-fy20q4 
 ms.service: powerbi
@@ -94,7 +94,7 @@ There are a few considerations and limitations to keep in mind when you work wit
  
 ### If you don't see the **Export** option
 * Make sure that you're viewing a report (not a dashboard).
-* It's possible that your administrator has disabled this feature. Contact your administrator for details. Administrators: See [Export reports as PowerPoint presentations or PDF documents](../admin/service-admin-portal-export-sharing.md#export-reports-as-powerpoint-presentations-or-pdf-documents).
+* It's possible that your administrator has disabled this feature. Contact your administrator for details. Administrators: See [Export reports as PowerPoint presentations or PDF documents](/fabric/admin/service-admin-portal-export-sharing#export-reports-as-powerpoint-presentations-or-pdf-documents).
 
 ### Visuals that aren't supported
 The following aren't supported for **Export to PowerPoint**.  Either the **PowerPoint** export option will be greyed out or won't be listed at all on the **Export** dropdown. In some cases, such as for R visuals, the report will export but the visual will render as a gray box with an error message.
