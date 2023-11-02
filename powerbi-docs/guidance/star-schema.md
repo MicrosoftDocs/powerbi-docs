@@ -47,7 +47,7 @@ As described in this article, you should strive to develop optimized Power BI da
 
 Star schema design and many related concepts introduced in this article are highly relevant to developing Power BI models that are optimized for performance and usability.
 
-Consider that each Power BI report visual generates a query that is sent to the Power BI model (which the Power BI service calls a dataset). These queries are used to filter, group, and summarize model data. A well-designed model, then, is one that provides tables for filtering and grouping, and tables for summarizing. This design fits well with star schema principles:
+Consider that each Power BI report visual generates a query that is sent to the Power BI model (which the Power BI service calls a semantic model). These queries are used to filter, group, and summarize model data. A well-designed model, then, is one that provides tables for filtering and grouping, and tables for summarizing. This design fits well with star schema principles:
 
 - Dimension tables support *filtering* and *grouping*
 - Fact tables support *summarization*
