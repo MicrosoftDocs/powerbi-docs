@@ -1,8 +1,8 @@
 ---
 title: Get a Power BI service subscription for your organization
 description: How to sign up for a Power BI service subscription as an admin and purchase licenses in bulk.
-author: kfollis
-ms.author: kfollis
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin

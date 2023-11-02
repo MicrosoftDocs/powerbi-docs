@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 09/18/2023
-ms.custom: licensing support, has-azure-ad-ps-ref
+ms.custom: licensing support, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 LocalizationGroup: Administration
 ---
 # Enable or disable self-service sign-up and purchasing
