@@ -25,7 +25,7 @@ Add a personal comment or start a conversation about a dashboard or report with 
 ## How to use the Comments feature
 Comments can be added to an entire dashboard, individual visuals on a dashboard, a report page, a paginated report, and individual visuals on a report page. Add a general comment or add a comment targeted at specific colleagues. Comments can be up to 2,000 characters, including @mentions of other users and spaces.
 
-When you add a comment to a report, Power BI captures the current filter and slicer values, and creates a [bookmark](end-user-bookmarks.md). So, when you select or respond to a comment, the report page or report visual may change to show you the filter and slicer selections that were active when the comment was first added.  
+When you add a comment to a report, Power BI captures the current filter and slicer values, and creates a [bookmark](end-user-bookmarks.md). So, when you select or respond to a comment, the report page or report visual might change to show you the filter and slicer selections that were active when the comment was first added.  
 
 :::image type="content" source="media/end-user-comment/power-bi-comment.gif" alt-text="An animation showing the Comments section being opened and then the bookmark on a comment is selected.":::
 
