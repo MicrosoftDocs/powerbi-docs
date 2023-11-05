@@ -72,7 +72,7 @@ Some critical items to address early in a Power BI implementation include:
 - [Power BI tenant setting](/power-bi/admin/service-admin-portal-about-tenant-settings) decisions, which should be documented.
 - [Workspace management](../collaborate-share/service-new-workspaces.md) decisions, which should be documented.
 - Considerations and preferences related to data and [content distribution methods](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md), such as apps, workspaces, sharing, subscriptions, and embedding of content.
-- Preferences related to [semantic model modes](../connect-data/service-dataset-modes-understand.md)—[previously known as dataset modes](/power-bi/connect-data/service-datasets-rename), such as use of Import mode, DirectQuery mode, or combining the two modes in a [composite model](composite-model-guidance.md).
+- Preferences related to [semantic model modes](../connect-data/service-dataset-modes-understand.md)—[previously known as dataset modes](../connect-data/service-datasets-rename.md), such as use of Import mode, DirectQuery mode, or combining the two modes in a [composite model](composite-model-guidance.md).
 - [Securing data and access](../enterprise/service-admin-power-bi-security.md).
 - Working with [shared semantic models](../connect-data/service-datasets-share.md) for reusability.
 - Applying [data certification](../collaborate-share/service-endorsement-overview.md) to promote the use of authoritative and trustworthy data.
