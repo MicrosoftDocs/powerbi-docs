@@ -13,7 +13,7 @@ ms.date: 04/06/2022
 
 This article targets Power BI Desktop data modelers. It describes star schema design and its relevance to developing Power BI data models optimized for performance and usability.
 
-This article isn't intended to provide a complete discussion on star schema design. For more details, refer directly to published content, like **The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling** (3rd edition, 2013) by Ralph Kimball et al.
+This article isn't intended to provide a complete discussion on star schema design. For more details, refer directly to published content, like *The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling* (3rd edition, 2013) by Ralph Kimball and others.
 
 ## Star schema overview
 

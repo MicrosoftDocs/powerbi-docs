@@ -10,7 +10,7 @@ ms.date: 07/19/2023
 ---
 # Plan translation for multiple-language reports in Power BI
 
-When it comes to localizing Power BI artifacts, such as datasets and reports, there are three types of translations.
+When it comes to localizing Power BI items, such as semantic models ([previously known as datasets](/power-bi/connect-data/service-datasets-rename)) and reports, there are three types of translations.
 
 - Metadata translation
 - Report label translation
@@ -26,7 +26,7 @@ You can follow along with the example multiple-language report discussed in this
 
 ## Metadata translation
 
-*Metadata translation* provides localized values for dataset object properties. The object types that support metadata translation include tables, columns, measures, hierarchies, and hierarchy levels. Metadata translation rarely provides a complete solution by itself.
+*Metadata translation* provides localized values for semantic model object properties. The object types that support metadata translation include tables, columns, measures, hierarchies, and hierarchy levels. Metadata translation rarely provides a complete solution by itself.
 
 The following screenshot shows how metadata translations provide German names for the measures displayed in Card visuals.
 
@@ -36,33 +36,33 @@ Metadata translation is also used to display column names and measure names in t
 
 :::image type="content" source="./media/multiple-language-translation/display-column-name-translate.png" alt-text="Screenshot shows a Power BI report with a table with column names and measures in German." lightbox="./media/multiple-language-translation/display-column-name-translate.png":::
 
-Metadata translations are the easiest to create, manage, and integrate into a Power BI report. By applying the features of Translations Builder to generate machine translations, you can add the metadata translations you need to build and test a Power BI report. Adding metadata translations to your dataset is an essential first step. For more information, see [Create multiple-language reports with Translations Builder](translation-builder.md).
+Metadata translations are the easiest to create, manage, and integrate into a Power BI report. By applying the features of Translations Builder to generate machine translations, you can add the metadata translations you need to build and test a Power BI report. Adding metadata translations to your semantic model is an essential first step. For more information, see [Create multiple-language reports with Translations Builder](translation-builder.md).
 
 ### Power BI support for metadata translation
 
-*Metadata translation* is the main localization feature in Power BI to build multiple-language reports. In Power BI, metadata translation support is integrated at the dataset level.
+*Metadata translation* is the main localization feature in Power BI to build multiple-language reports. In Power BI, metadata translation support is integrated at the semantic model level.
 
-A metadata translation represents the property for a dataset object that's been translated for a specific language. If your dataset contains a table with an English name of *Products*, you can add translations for the **Caption** property of this table object to provide alternative names. These names appear when the report is rendered in a different language.
+A metadata translation represents the property for a semantic model object that's been translated for a specific language. If your semantic model contains a table with an English name of *Products*, you can add translations for the **Caption** property of this table object to provide alternative names. These names appear when the report is rendered in a different language.
 
-In addition to the **Caption** property, which tracks an object's display name, dataset objects also support adding metadata translations for two other properties, which are **Description** and **DisplayFolder**.
+In addition to the **Caption** property, which tracks an object's display name, semantic model objects also support adding metadata translations for two other properties, which are **Description** and **DisplayFolder**.
 
-When you begin designing a dataset that uses metadata translation, you can assume that you always need translations for the **Caption** property. If you require support for metadata translation for report authors who create and edit reports in the Power BI service, you also need to provide metadata translations for the **Description** and **DisplayFolder** properties.
+When you begin designing a semantic model that uses metadata translation, you can assume that you always need translations for the **Caption** property. If you require support for metadata translation for report authors who create and edit reports in the Power BI service, you also need to provide metadata translations for the **Description** and **DisplayFolder** properties.
 
-Power BI reports and datasets that support metadata translation can only run in workspaces that are associated with a dedicated capacity created using Power BI Premium or the Power BI Embedded Service. Multiple-language reports don't load correctly when launched from a workspace in the shared capacity. If you're working in a Power BI workspace that doesn't display a diamond that indicates a Premium workspace, multiple-language reports might not work as expected.
+Power BI reports and semantic models that support metadata translation can only run in workspaces that are associated with a dedicated capacity created using Power BI Premium or the Power BI Embedded Service. Multiple-language reports don't load correctly when launched from a workspace in the shared capacity. If you're working in a Power BI workspace that doesn't display a diamond that indicates a Premium workspace, multiple-language reports might not work as expected.
 
-Power BI support for metadata translations only applies to datasets. Power BI Desktop and the Power BI service don't support storing or loading translations for text values stored as part of the report layout.
+Power BI support for metadata translations only applies to semantic models. Power BI Desktop and the Power BI service don't support storing or loading translations for text values stored as part of the report layout.
 
-:::image type="content" source="./media/multiple-language-translation/pbix-file-structure.png" alt-text="Diagram shows the report layout, which doesn't support localization, next to the dataset definition, which supports localization.":::
+:::image type="content" source="./media/multiple-language-translation/pbix-file-structure.png" alt-text="Diagram shows the report layout, which doesn't support localization, next to the semantic model definition, which supports localization.":::
 
 If you add a textbox or button to a Power BI report and then add a hard-coded text value for a string displayed to the user, that text value is stored in the report layout. It can't be localized. Avoid using hard-coded text values. Page tabs display names can't be localized. You can design multiple-language reports so that page tabs are hidden and never displayed to the user.
 
 ## Report label translation
 
-*Report label translation* provides localized values for text elements on a report that aren't directly associated with a dataset object. Examples of report labels include the report title, section headings, and button captions. Here are examples of report label translations with the report title and the captions of navigation buttons.
+*Report label translation* provides localized values for text elements on a report that aren't directly associated with a semantic model object. Examples of report labels include the report title, section headings, and button captions. Here are examples of report label translations with the report title and the captions of navigation buttons.
 
 :::image type="content" source="./media/multiple-language-translation/report-title-translate.png" alt-text="Screenshot shows Power BI report tabs with values translated to German." lightbox="./media/multiple-language-translation/report-title-translate.png":::
 
-Report label translations are harder to create and manage than metadata translations because Power BI provides no built-in feature to track or integrate them. Translations Builder solves this problem using a *Localized Labels* table, which is a hidden table in the dataset of a report. Add measures that track the required translations for each report label.
+Report label translations are harder to create and manage than metadata translations because Power BI provides no built-in feature to track or integrate them. Translations Builder solves this problem using a *Localized Labels* table, which is a hidden table in the semantic model of a report. Add measures that track the required translations for each report label.
 
 <!--- For more information about a Localized Labels table, see **Understanding the Localized Labels Table**.--->
 

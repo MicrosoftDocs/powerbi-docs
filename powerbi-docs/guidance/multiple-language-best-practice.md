@@ -10,34 +10,34 @@ ms.date: 07/21/2023
 ---
 # Use best practices to localize Power BI reports
 
-When it comes to localizing software, there are some universal principles to keep in mind. The first is to plan for localization from the start of any project. It's harder to add localization support to an existing dataset or report that was initially built without any regard for internationalization or localization.
+When it comes to localizing software, there are some universal principles to keep in mind. The first is to plan for localization from the start of any project. It's harder to add localization support to an existing semantic model ([previously known as a dataset](/power-bi/connect-data/service-datasets-rename)) or report that was initially built without any regard for internationalization or localization.
 
 This fact is especially true with Power BI reports because there are so many popular design techniques that don't support localization. Much of the work for adding localization support to existing Power BI reports involves undoing things that don't support localization. Only after that work can you move forward with design techniques that do support localization.
 
-## Package a dataset and reports in project files
+## Package a semantic model and reports in project files
 
-Before you proceed, you need to decide how to package your dataset definitions and report layouts for distribution. There are two popular approaches used by content creators who work with Power BI Desktop.
+Before you proceed, you need to decide how to package your semantic model definitions and report layouts for distribution. There are two popular approaches used by content creators who work with Power BI Desktop.
 
 - Single .pbix project file
-- Multiple project files with a shared dataset
+- Multiple project files with a shared semantic model
 
 For adding multiple-language support to a Power BI solution, choose either of these approaches.
 
 ### Single project file
 
-You can package both a report layout and its underlying dataset definition together. Deploy a reporting solution like this by publishing the project into a Power BI service workspace. If you need to update either the report layout or the dataset definition, upgrade by publishing an updated version of the .pbix project file.
+You can package both a report layout and its underlying semantic model definition together. Deploy a reporting solution like this by publishing the project into a Power BI service workspace. If you need to update either the report layout or the semantic model definition, upgrade by publishing an updated version of the .pbix project file.
 
-:::image type="content" source="./media/multiple-language-best-practice/single-pbix-scenario.png" alt-text="Diagram shows a report layout and dataset definition in a single pbix file.":::
+:::image type="content" source="./media/multiple-language-best-practice/single-pbix-scenario.png" alt-text="Diagram shows a report layout and semantic model definition in a single pbix file.":::
 
-### Shared dataset
+### Shared semantic model
 
-The single project file approach doesn't always provide the flexibility you need. Maybe one team is responsible for creating and updating datasets while other teams are responsible for building reports. It might make sense to share a dataset with reports in separate .pbix project files.
+The single project file approach doesn't always provide the flexibility you need. Maybe one team is responsible for creating and updating semantic models while other teams are responsible for building reports. It might make sense to share a semantic model with reports in separate .pbix project files.
 
-:::image type="content" source="./media/multiple-language-best-practice/shared-dataset-scenario.png" alt-text="Diagram shows two report layouts in separate files associated with a dataset definition in a third file that also has an unused report.":::
+:::image type="content" source="./media/multiple-language-best-practice/shared-semantic-model-scenario.png" alt-text="Diagram shows two report layouts in separate files associated with a semantic model definition in a third file that also has an unused report.":::
 
-To use the shared dataset approach, create one .pbix project file with a dataset and an empty report, which remains unused. After this dataset has been deployed to the Power BI service, report builders can connect to it using Power BI Desktop to create report-only .pbix files.
+To use the shared semantic model approach, create one .pbix project file with a semantic model and an empty report, which remains unused. After this semantic model has been deployed to the Power BI service, report builders can connect to it using Power BI Desktop to create report-only .pbix files.
 
-This approach makes it possible for the teams building reports to build .pbix project files with report layouts that can be deployed and updated independently of the underlying dataset. For more information, see [Connect to datasets](../connect-data/desktop-report-lifecycle-datasets.md).
+This approach makes it possible for the teams building reports to build .pbix project files with report layouts that can be deployed and updated independently of the underlying semantic model. For more information, see [Connect to semantic models](../connect-data/desktop-report-lifecycle-datasets.md).
 
 ## Account for text size
 

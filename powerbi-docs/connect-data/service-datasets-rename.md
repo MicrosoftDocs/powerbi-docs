@@ -6,8 +6,8 @@ ms.author: v-myerspeter
 ms.reviewer: painbar
 ms.service: powerbi
 ms.subservice: pbi-data-sources
-ms.topic: concept
-ms.date: 11/02/2023
+ms.topic: conceptual
+ms.date: 11/14/2023
 LocalizationGroup: Share your work
 ---
 
@@ -18,7 +18,7 @@ Microsoft has renamed the Power BI _dataset_ content type to _semantic model_.
 The rename was necessary for two main reasons.
 
 - The term _dataset_ is considered too generic. It has different meanings in the context of other data-related activities, especially now that Power BI is one of many experiences in [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview).
-- The term _semantic model_ better reflects the rich functionality of Analysis Services data models, upon which Power BI reports and dashboards are based.
+- The term _semantic model_ better reflects the rich functionality of Analysis Services data models, upon which Power BI reports are based.
 
 > [!IMPORTANT]
 > This change is a rename only. There's no interruption to usage or service. You can expect a continuation of service because administrators, developers, and other users aren't required to make any changes.
@@ -57,12 +57,13 @@ The following concepts aren't affected.
   - Hybrid dataset
   - PubNub dataset
 - All [Power BI REST API operations](/rest/api/power-bi/) related to datasets
+- [Power BI activity log operations](../enterprise/service-admin-auditing#operations-available-in-the-audit-and-activity-logs)
 - Other types of datasets that aren't related to Power BI, for example, [Azure Open Datasets](/azure/open-datasets/dataset-catalog)
 
 ## Next steps
 
 For more information related to this article, check out the following resources.
 
-- Blog post: [Datasets renamed to semantic models](https://todo.com#link-to-christian-wades-blog-post)
+- Blog post: [Datasets renamed to semantic models](https://aka.ms/DatasetRename)
 - Questions? Try asking the [Fabric Community](https://community.fabric.microsoft.com/).
 - Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/).
