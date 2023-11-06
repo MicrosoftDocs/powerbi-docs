@@ -165,30 +165,30 @@ landingContent:
             url: migrate-azure-analysis-services-to-powerbi-premium.md
 
   # Card (optional)
-  - title: Adoption roadmap
+  - title: Fabric adoption roadmap
     linkLists:
       - linkListType: concept
         links:
           - text: Overview
-            url: powerbi-adoption-roadmap-overview.md
+            url: fabric-adoption-roadmap-overview.md
           - text: Data culture
-            url: powerbi-adoption-roadmap-data-culture.md
+            url: fabric-adoption-roadmap-data-culture.md
           - text: Executive sponsorship
-            url: powerbi-adoption-roadmap-executive-sponsorship.md
+            url: fabric-adoption-roadmap-executive-sponsorship.md
           - text: Content ownership
-            url: powerbi-adoption-roadmap-content-ownership-and-management.md
+            url: fabric-adoption-roadmap-content-ownership-and-management.md
           - text: Content delivery scope
-            url: powerbi-adoption-roadmap-content-delivery-scope.md
+            url: fabric-adoption-roadmap-content-delivery-scope.md
           - text: Center of Excellence
-            url: powerbi-adoption-roadmap-center-of-excellence.md
+            url: fabric-adoption-roadmap-center-of-excellence.md
           - text: Governance
-            url: powerbi-adoption-roadmap-governance.md
+            url: fabric-adoption-roadmap-governance.md
           - text: Mentoring and user enablement
-            url: powerbi-adoption-roadmap-mentoring-and-user-enablement.md
+            url: fabric-adoption-roadmap-mentoring-and-user-enablement.md
           - text: Community of practice
-            url: powerbi-adoption-roadmap-community-of-practice.md
+            url: fabric-adoption-roadmap-community-of-practice.md
           - text: User support
-            url: powerbi-adoption-roadmap-user-support.md
+            url: fabric-adoption-roadmap-user-support.md
 
   # Card (optional)
   - title: Implementation planning
@@ -225,5 +225,5 @@ landingContent:
             url: center-of-excellence-establish.md
           - text: BI solution architecture in the COE
             url: center-of-excellence-business-intelligence-solution-architecture.md
-          - text: Adoption roadmap
-            url: powerbi-adoption-roadmap-center-of-excellence.md
+          - text: Fabric adoption roadmap
+            url: fabric-adoption-roadmap-center-of-excellence.md
