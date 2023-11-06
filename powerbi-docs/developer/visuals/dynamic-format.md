@@ -12,9 +12,9 @@ ms.date: 10/12/2023
 
 # Power BI custom visual dynamic format API
 
-From API version 4.2, developers can create visuals with [dynamic string formats](../../create-reports/desktop-dynamic-format-strings.md) support.
+From API version 4.2, developers can create reports with [dynamic string formats](../../create-reports/desktop-dynamic-format-strings.md) support.
 
-## How to use the dynamic format
+## Enable the dynamic format support for visual
 
 To allow the visual to operate with dynamic format strings, the following fields should be added in the `capabilitites.json`:
 
@@ -34,9 +34,11 @@ To allow the visual to operate with dynamic format strings, the following fields
 }
 ```
 
-After that, the custom visual will receive a dynamic format string through the `update()` options as shown on the screenshot. 
+## How to use the dynamic string format
 
-:::image type="content" source="media/dynamic-format/dynamic-format-strings-example.png" alt-text="Format change warning":::
+When dynamic string format is enabled, the custom visual will receive additional format strings through the `update()` options as shown in the screenshot. 
+
+:::image type="content" source="media/dynamic-format/dynamic-format-strings-example.png" alt-text="Screenshot of update options content with dynamic format strings.":::
 
 There are two arrays inside of `options.dataViews[0].categorical.values[0]`:
 1. `values` - values from the dataset
