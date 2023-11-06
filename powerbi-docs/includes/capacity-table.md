@@ -14,12 +14,12 @@ ms.custom: include file
 | **Capacity SKUs** | **V-cores** | **Max memory (GB)**<sup>1, 2, 3</sup> | **DirectQuery/Live connection (per second)**<sup>1, 2</sup> | **Max memory per query (GB)**<sup>1, 2</sup> | **Model refresh parallelism**<sup>2</sup> | **Dataflow parallel tasks**<sup>5</sup>  |
 | EM1/A1            |   1 |   3 |   3.75 |  1  |   5  |  4 |
 | EM2/A2            |   2 |   5 |   7.5  |  2  |  10  |  8 |
-| EM3/A3            |   4 |  10 |  15    |  2  |  20  | 16 |
-| P1/A4             |   8 |  25 |  30    |  6  |  40  | 32 |
-| P2/A5             |  16 |  50 |  60    |  6  |  80  | 64 |
+| EM3/A3            |   4 |  10 |  15    |  5  |  20  | 16 |
+| P1/A4             |   8 |  25 |  30    |  10  |  40  | 32 |
+| P2/A5             |  16 |  50 |  60    |  10  |  80  | 64 |
 | P3/A6             |  32 | 100 | 120    | 10  | 160  | 64 |
-| P4/A7<sup>4</sup> |  64 | 200 | 240    | 10  | 320  | 64 |
-| P5/A8<sup>4</sup> | 128 | 400 | 480    | 10  | 640  | 64 |
+| P4/A7<sup>4</sup> |  64 | 200 | 240    | 20  | 320  | 64 |
+| P5/A8<sup>4</sup> | 128 | 400 | 480    | 40  | 640  | 64 |
 
 <sup>1</sup> The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) doesn't currently expose these metrics.
 
