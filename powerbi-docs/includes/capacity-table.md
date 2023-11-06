@@ -21,7 +21,7 @@ ms.custom: include file
 | P4/A7<sup>4</sup> |  64 | 200 | 240    | 10  | 320  | 64 |
 | P5/A8<sup>4</sup> | 128 | 400 | 480    | 10  | 640  | 64 |
 
-<sup>1</sup> The [Power BI Premium Utilization and Metrics app](./../enterprise/service-premium-install-app.md) doesn't currently expose these metrics.
+<sup>1</sup> The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) doesn't currently expose these metrics.
 
 <sup>2</sup> These limits only apply to the dataset workload per capacity.
 

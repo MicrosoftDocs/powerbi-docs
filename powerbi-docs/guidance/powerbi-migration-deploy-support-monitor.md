@@ -1,8 +1,8 @@
 ﻿---
 title: Deploy to Power BI
 description: Guidance on deploying, supporting, and monitoring content when migrating to Power BI.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -31,7 +31,7 @@ The output from this stage is a production solution ready for use by the busines
 
 For IT-managed solutions, or solutions that are critical to business productivity, there's generally a test environment. A test environment sits between development and production, and it's not necessary for all Power BI solutions. A test workspace can serve as a stable location, separated from development, for user acceptance testing (UAT) to occur before release to production.
 
-If your content has been published to a workspace on Premium capacity, [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) can simplify the deployment process to development, test, and production workspaces. Alternatively, publishing may be done manually or with [PowerShell scripts](https://powerbi.microsoft.com/blog/duplicating-workspaces-by-using-power-bi-cmdlets/).
+If your content has been published to a workspace on Premium capacity, [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) can simplify the deployment process to development, test, and production workspaces. Alternatively, publishing can be done manually or with [PowerShell scripts](https://powerbi.microsoft.com/blog/duplicating-workspaces-by-using-power-bi-cmdlets/).
 
 ### Deploy to test workspace
 
@@ -48,7 +48,7 @@ Key activities during a deployment to the test workspace typically include:
 
 ### Conduct user acceptance testing
 
-Generally, UAT involves business users who are subject matter experts. Once verified, they provide their approval that the new content is accurate, meets requirements, and may be deployed for wider consumption by others.
+Generally, UAT involves business users who are subject matter experts. Once verified, they provide their approval that the new content is accurate, meets requirements, and can be deployed for wider consumption by others.
 
 The extent to which this UAT process is formal, including written sign-offs, will depend on your change management practices.
 
@@ -58,30 +58,30 @@ There are several considerations for deploying to the production environment.
 
 ### Conduct a staged deployment
 
-If you're trying to minimize risk and user disruption, or if there are other concerns, you may opt to perform a staged deployment. The first deployment to production may involve a smaller group of pilot users. With a pilot, feedback can be actively requested from the pilot users.
+If you're trying to minimize risk and user disruption, or if there are other concerns, you might opt to perform a staged deployment. The first deployment to production might involve a smaller group of pilot users. With a pilot, feedback can be actively requested from the pilot users.
 
 Expand permissions in the production workspace, or the app, gradually until all target users have permission to the new Power BI solution.
 
 > [!TIP]
-> Use the [Power BI Activity Log](../admin/service-admin-auditing.md) to understand how consumers are adopting and using the new Power BI solution.
+> Use the [Power BI Activity Log](../enterprise/service-admin-auditing.md) to understand how consumers are adopting and using the new Power BI solution.
 
 ### Handle additional components
 
-During the deployment process, you may need to work with your Power BI administrators to address other requirements that are needed to support the entire solution, such as:
+During the deployment process, you might need to work with your Power BI administrators to address other requirements that are needed to support the entire solution, such as:
 
-- **Gateway maintenance:** A [new data source](../connect-data/service-gateway-data-sources.md) registration in the data gateway may be required.
-- **Gateway drivers and connectors:** A new proprietary data source may require installation of a new driver or custom connector on each server in the gateway cluster.
-- **Create a new Premium capacity:** You may be able to use an existing [Premium capacity](../enterprise/service-premium-what-is.md). Or, there may be situations when a new Premium capacity is warranted. It could be the case when you purposely wish to separate a departmental workload.
+- **Gateway maintenance:** A [new data source](../connect-data/service-gateway-data-sources.md) registration in the data gateway might be required.
+- **Gateway drivers and connectors:** A new proprietary data source might require installation of a new driver or custom connector on each server in the gateway cluster.
+- **Create a new Premium capacity:** You might be able to use an existing [Premium capacity](../enterprise/service-premium-what-is.md). Or, there might be situations when a new Premium capacity is warranted. It could be the case when you purposely wish to separate a departmental workload.
 - **Set up a Power BI dataflow:** Data preparation activities can be set up once in a [Power BI dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) using Power Query Online. It helps avoid replicating data preparation work in many different Power BI Desktop files.
 - **Register a new organizational visual:** [Organizational visual](../developer/visuals/power-bi-custom-visuals-organization.md) registration can be done in the admin portal for custom visuals that didn't originate from AppSource.
-- **Set featured content:** A tenant setting exists that controls who may [feature content](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/) in the Power BI service home page.
+- **Set featured content:** A tenant setting exists that controls who can [feature content](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/) in the Power BI service home page.
 - **Set up sensitivity labels:** All [sensitivity labels](../enterprise/service-security-data-protection-overview.md) are integrated with Microsoft Purview Information Protection.
 
 ### Deploy to production workspace
 
 Key activities during a deployment to the production workspace typically include:
 
-- **Change management:** If necessary, obtain approval to deploy, and communicate deployment to the user population using your standard change management practices. There may be an approved change management window during which production deployments are allowed. Usually, it's applicable to IT-managed content and much less frequently applied to self-service content.
+- **Change management:** If necessary, obtain approval to deploy, and communicate deployment to the user population using your standard change management practices. There might be an approved change management window during which production deployments are allowed. Usually, it's applicable to IT-managed content and much less frequently applied to self-service content.
 - **Rollback plan:** With a migration, the expectation is that it's the migration of a new solution for the first time. If content does already exist, it's wise to have a plan to revert to the previous version, should it become necessary. Having previous versions of the Power BI Desktop files (using SharePoint or OneDrive versioning) works well for this purpose.
 - **Connection strings and parameters:** Adjust dataset connection strings when the data source differs between test and production. [Parameterization](../connect-data/service-parameters.md) can be used effectively for this purpose.
 - **Data refresh:** [Schedule the dataset refresh](../connect-data/refresh-scheduled-refresh.md) for any imported datasets.
@@ -132,7 +132,7 @@ At some point, the reports migrated to Power BI should be disabled in the legacy
 
 ## Monitor the solution
 
-Events from the [Power BI activity log](../admin/service-admin-auditing.md) can be used to understand usage patterns of the new solution (or the [execution log](/sql/reporting-services/report-server/report-server-executionlog-and-the-executionlog3-view) for content deployed to Power BI Report Server). Analyzing the activity log can help determine whether actual use differs from expectations. It can also validate that the solution is adequately supported.
+Events from the [Power BI activity log](../enterprise/service-admin-auditing.md) can be used to understand usage patterns of the new solution (or the [execution log](/sql/reporting-services/report-server/report-server-executionlog-and-the-executionlog3-view) for content deployed to Power BI Report Server). Analyzing the activity log can help determine whether actual use differs from expectations. It can also validate that the solution is adequately supported.
 
 Here's some questions that can be addressed by reviewing the activity log:
 
@@ -161,7 +161,7 @@ Having a formal support process, staffed by IT with support tickets, is also ess
 > [!NOTE]
 > The different types of [internal and external support](powerbi-adoption-roadmap-user-support.md#types-of-user-support) are described in the Power BI adoption roadmap.
 
-You may also have a [Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md) that acts like internal consultants who support, educate, and govern Power BI in the organization. A COE can be responsible for curating helpful Power BI content in an internal portal.
+You might also have a [Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md) that acts like internal consultants who support, educate, and govern Power BI in the organization. A COE can be responsible for curating helpful Power BI content in an internal portal.
 
 Lastly, it should be clear to content consumers to know who to contact with questions about the content, and to have a mechanism for providing feedback on issues or improvements.
 

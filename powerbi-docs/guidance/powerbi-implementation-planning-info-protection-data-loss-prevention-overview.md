@@ -1,13 +1,13 @@
 ---
 title: "Power BI implementation planning: Information protection and data loss prevention"
 description: "An introduction to the information protection and data loss prevention for Power BI articles."
-author: paulinbar
-ms.author: painbar
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/12/2022
+ms.date: 09/29/2023
 ---
 
 # Power BI implementation planning: Information protection and data loss prevention
@@ -17,7 +17,7 @@ ms.date: 12/12/2022
 This article introduces the Power BI information protection and data loss prevention (DLP) articles. These articles are targeted at multiple audiences:
 
 - **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators need to collaborate with information security teams and other relevant teams.
-- **Center of Excellence, IT, and BI teams:** The teams that are responsible for overseeing Power BI in the organization. They may need to collaborate with Power BI administrators, information security teams, and other relevant teams.
+- **Center of Excellence, IT, and BI teams:** The teams that are responsible for overseeing Power BI in the organization. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
 
 > [!IMPORTANT]
 > Information protection and DLP is a significant organization-wide undertaking. Its scope and impact are far greater than Power BI alone. This type of initiative requires funding, prioritization, and planning. Expect to involve several cross-functional teams in your planning, usage, and oversight efforts.
@@ -30,6 +30,10 @@ The focus for this set of articles includes:
 - **What:** An overview of what the end-to-end process involves.
 - **Who:** Which teams participate in the end-to-end process.
 - **Prerequisites:** The things that need to be in place before the information protection and DLP capabilities can be enabled for Power BI.
+
+
+> [!IMPORTANT]
+> The **Power BI administrator** role has been renamed. The new name of the role is **Fabric administrator**.
 
 ## Protect organizational data
 
@@ -101,7 +105,7 @@ When a dataset has been published to the Power BI service and it's in a Premium 
 This type of DLP policy for Power BI allows security administrators to monitor and detect when unauthorized sensitive data is uploaded to the Power BI service. They can depend on alerts to act quickly. Policy tips are also used to guide content creators and owners on how to properly handle sensitive data. For more information about DLP for Power BI, see [Data loss prevention for Power BI](powerbi-implementation-planning-data-loss-prevention.md).
 
 > [!TIP]
-> Having properly classified data allows you to correlate, analyze, and report on it. In most cases, you'll need to correlate data from multiple sources to form a complete understanding. You can capture data by using tools like the [Power BI scanner APIs](/power-bi/enterprise/service-admin-metadata-scanning) and the [Power BI activity log](/power-bi/admin/service-admin-auditing). For more information about these topics, as well as audit logs in the Microsoft Purview compliance portal, see [Auditing of information protection and data loss prevention for Power BI](powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md).
+> Having properly classified data allows you to correlate, analyze, and report on it. In most cases, you'll need to correlate data from multiple sources to form a complete understanding. You can capture data by using tools like the [Power BI scanner APIs](/power-bi/enterprise/service-admin-metadata-scanning) and the [Power BI activity log](/power-bi/enterprise/service-admin-auditing). For more information about these topics, as well as audit logs in the Microsoft Purview compliance portal, see [Auditing of information protection and data loss prevention for Power BI](powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md).
 
 ### Use data encryption
 

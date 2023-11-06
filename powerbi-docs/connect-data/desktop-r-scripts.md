@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 04/14/2023
+ms.date: 10/09/2023
 LocalizationGroup: Connect to data
 ---
 # Run R scripts in Power BI Desktop
@@ -16,7 +16,7 @@ You can run R scripts directly in Power BI Desktop and import the resulting data
 
 ## Install R
 
-To run R scripts in Power BI Desktop, you need to install R on your local machine. You can download and install R for free from many locations, including the [Microsoft R Application Network](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). The current release supports Unicode characters and spaces (empty characters) in the installation path.
+To run R scripts in Power BI Desktop, you need to install R on your local machine. You can download and install R for free from many locations, including the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). The current release supports Unicode characters and spaces (empty characters) in the installation path.
 
 ## Run R scripts
 

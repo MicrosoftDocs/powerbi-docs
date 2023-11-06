@@ -56,13 +56,13 @@ There are several [types of Fabric administrators](/power-bi/admin/service-admin
 | --- | --- | --- |
 | Fabric administrator | Tenant | Manages tenant settings and other settings in the Fabric portal. All general references to _administrator_ in this article refer to this type of administrator. |
 | Power BI Premium capacity administrator | One capacity | Manages workspaces, workloads, and monitors the health of a Premium capacity. |
-| Power BI gateway administrator | One gateway | Manages gateway data source configuration, credentials, and users assignments. May also handle gateway software updates (or collaborate with infrastructure team on updates). |
+| Power BI gateway administrator | One gateway | Manages gateway data source configuration, credentials, and users assignments. Might also handle gateway software updates (or collaborate with infrastructure team on updates). |
 | Power BI workspace administrator | One workspace | Manages workspace settings and access. |
 
 The Fabric ecosystem of workloads is broad and deep. There are many ways that Fabric integrates with other systems and platforms. From time to time, it will be necessary to work with other system administrators and IT professionals, such as:
 
 - Global Microsoft 365 administrator
-- Azure Active Directory (Azure AD) administrator
+- Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) administrator
 - Teams administrator
 - OneDrive administrator
 - SharePoint administrator
@@ -99,7 +99,7 @@ Here's a list of common questions asked by confused and frustrated users:
 - Why can't I certify a dataset?
 
 > [!CAUTION]
-> An administrator may discover situations that aren't ideal, such as too many data exports in the activity log. Resist the urge to disable the feature entirely. Prohibiting features leads to user frustration, and leads users to find workarounds. Before disabling a setting, find out why users are relying on certain techniques. Perhaps a solution needs to be redesigned, or additional user education and training could mitigate the concerns. The bottom line: knowledge sharing is an effective form of governance.
+> An administrator might discover situations that aren't ideal, such as too many data exports in the activity log. Resist the urge to disable the feature entirely. Prohibiting features leads to user frustration, and leads users to find workarounds. Before disabling a setting, find out why users are relying on certain techniques. Perhaps a solution needs to be redesigned, or additional user education and training could mitigate the concerns. The bottom line: knowledge sharing is an effective form of governance.
 
 Because there's no reader role to view tenant settings, it can be a challenge for users to know what's enabled or disabled. Consider publishing a document to your [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) that describes the tenant settings.
 
@@ -206,7 +206,7 @@ Suggestions for managing Premium capacity:
 
 [Autoscale](/power-bi/enterprise/service-premium-auto-scale) is intended to handle occasional or unexpected bursts in Premium usage levels. Autoscale can respond to these bursts by automatically increasing CPU resources to support the increased workload.
 
-Automated scaling up reduces the risk of performance and user experience challenges in exchange for a financial impact. If the Premium capacity isn't well-managed, autoscale may trigger more often than expected. In this case, the [Premium metrics app](/power-bi/enterprise/service-premium-metrics-app) can help you to determine underlying issues and do capacity planning.
+Automated scaling up reduces the risk of performance and user experience challenges in exchange for a financial impact. If the Premium capacity isn't well-managed, autoscale might trigger more often than expected. In this case, the [Premium metrics app](/power-bi/enterprise/service-premium-metrics-app) can help you to determine underlying issues and do capacity planning.
 
 #### Decentralized Premium capacity management
 
@@ -225,7 +225,7 @@ Here's an example that describes one way you could manage your capacity.
 
 The previous example has several advantages.
 
-- Separate [capacity administrators](/power-bi/enterprise/service-admin-premium-manage#manage-user-permissions) may be configured for each capacity. Therefore, it facilitates decentralized management situations.
+- Separate [capacity administrators](/power-bi/enterprise/service-admin-premium-manage#manage-user-permissions) can be set up for each capacity. Therefore, it facilitates decentralized management situations.
 - If a capacity isn't well-managed, the effect is confined to that capacity only. The other capacities aren't impacted.
 - Billing and chargebacks to other business units are straightforward.
 - Different workspaces can be easily assigned to the separate capacities.
@@ -261,7 +261,7 @@ There are three types of gateways.
 
 The On-premises data gateway (standard mode) and Virtual network data gateway support specific data source types that can be registered, together with connection details and how credentials are stored. Users can be granted permission use the gateway data source so that they can schedule a refresh or run DirectQuery queries.
 
-Certain aspects of gateway management can be done effectively on a decentralized basis to balance agility and control. For example, the Operations group may have a gateway dedicated to its team of self-service content creators and data owners.
+Certain aspects of gateway management can be done effectively on a decentralized basis to balance agility and control. For example, the Operations group might have a gateway dedicated to its team of self-service content creators and data owners.
 
 Decentralized gateway management works best when it's a joint effort as follows.
 
@@ -292,7 +292,7 @@ Managed by IT:
 
 ## User licenses
 
-Every user needs a commercial license, which is integrated with an Azure AD identity. The user license may be Free, Power BI Pro, or Power BI Premium Per User.
+Every user needs a commercial license, which is integrated with a Microsoft Entra identity. The user license could be Free, Power BI Pro, or Power BI Premium Per User.
 
 A user license is obtained via a subscription, which authorizes a certain number of licenses with a start and end date.
 
@@ -332,21 +332,21 @@ Consider disabling trials only when:
 - There's a valid need, such as a regulatory requirement, to control access to the Power BI service closely.
 
 > [!TIP]
-> Don't introduce too many barriers to obtaining a Power BI license. Users who need to get work done will find a way, and that way may involve workarounds that aren't ideal. For instance, without a license to use the Power BI service, people may rely far too much on sharing files on a file system or via email when significantly better approaches are available.
+> Don't introduce too many barriers to obtaining a Power BI license. Users who need to get work done will find a way, and that way might involve workarounds that aren't ideal. For instance, without a license to use the Power BI service, people might rely far too much on sharing files on a file system or via email when significantly better approaches are available.
 
 ## Cost management
 
-Managing and optimizing the cost of cloud services, like Fabric, is an important activity. Here are several activities you may want to consider.
+Managing and optimizing the cost of cloud services, like Fabric, is an important activity. Here are several activities you can consider.
 
-- Analyze who is using—and, more to the point, not using—their allocated Power BI licenses and make necessary adjustments. Power BI usage is analyzed using the [activity log](/power-bi/admin/service-admin-auditing).
+- Analyze who is using—and, more to the point, not using—their allocated Power BI licenses and make necessary adjustments. Power BI usage is analyzed using the [activity log](/power-bi/enterprise/service-admin-auditing).
 - Analyze the cost effectiveness of [Premium capacity](/power-bi/enterprise/service-premium-what-is) or [Premium Per User](/power-bi/enterprise/service-premium-per-user-faq#using-premium-per-user--ppu-). In addition to the [additional features](/power-bi/enterprise/service-premium-per-user-faq#using-premium-per-user--ppu-), perform a cost/benefit analysis to determine whether capacity licensing is more cost-effective when there are a large number of consumers.
-- Carefully [monitor and manage Premium capacity](/power-bi/enterprise/service-premium-metrics-app). Understanding usage patterns over time will allow you to predict when to purchase [more capacity](/power-bi/enterprise/service-premium-what-is#capacity-nodes). For example, you may choose to scale up a single capacity from a P1 to P2, or scale out from one P1 capacity to two P1 capacities.
+- Carefully [monitor and manage Premium capacity](/power-bi/enterprise/service-premium-metrics-app). Understanding usage patterns over time will allow you to predict when to purchase [more capacity](/power-bi/enterprise/service-premium-what-is#capacity-nodes). For example, you might choose to scale up a single capacity from a P1 to P2, or scale out from one P1 capacity to two P1 capacities.
 - If there are occasional spikes in the level of usage, use of [autoscale](/power-bi/enterprise/service-premium-auto-scale) with [Power BI Premium](/power-bi/enterprise/service-premium-concepts) is recommended to ensure the user experience isn't interrupted. Autoscale will scale up capacity resources for 24 hours, then scale them back down to normal levels (if sustained activity isn't present). Manage autoscale cost by constraining the maximum number of v-cores, and/or with spending limits set in Azure (because autoscale is supported by the Azure Power BI Embedded service). Due to the pricing model, autoscale is best suited to handle occasional unplanned increases in usage.
 - For Azure data sources, co-locate them in the same region as your Power BI tenant whenever possible. It will avoid incurring [Azure egress charges](https://azure.microsoft.com/pricing/details/bandwidth/). Data egress charges are minimal, but at scale can add up to be considerable unplanned costs.
 
 ## Security, information protection, and data loss prevention
 
-Security, information protection, and data loss prevention (DLP) are joint responsibilities among all content creators, consumers, and administrators. That's no small task because there's sensitive information everywhere: personal data, customer data, or customer-authored data, protected health information, intellectual property, proprietary organizational information, just to name a few. Governmental, industry, and contractual regulations may have a significant impact on the [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies that you create related to security.
+Security, information protection, and data loss prevention (DLP) are joint responsibilities among all content creators, consumers, and administrators. That's no small task because there's sensitive information everywhere: personal data, customer data, or customer-authored data, protected health information, intellectual property, proprietary organizational information, just to name a few. Governmental, industry, and contractual regulations could have a significant impact on the [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies that you create related to security.
 
 The [Power BI security whitepaper](whitepaper-powerbi-security.md) is an excellent resource for understanding the breadth of considerations, including aspects that Microsoft manages. This section will introduce several topics that customers are responsible for managing.
 
@@ -354,7 +354,7 @@ The [Power BI security whitepaper](whitepaper-powerbi-security.md) is an excelle
 
 Some organizations ask Power BI users to accept a self-service user acknowledgment. It's a document that explains the user's responsibilities and expectations for safeguarding organizational data.
 
-One way to automate its implementation is with an [Azure AD terms of use policy](/azure/active-directory/conditional-access/terms-of-use). The user is required to view and agree to the policy before they're permitted to visit the Power BI service for the first time. You can also require it to be acknowledged on a recurring basis, like an annual renewal.
+One way to automate its implementation is with a [Microsoft Entra terms of use policy](/azure/active-directory/conditional-access/terms-of-use). The user is required to view and agree to the policy before they're permitted to visit the Power BI service for the first time. You can also require it to be acknowledged on a recurring basis, like an annual renewal.
 
 ### Data security
 
@@ -362,13 +362,13 @@ In a [cloud shared responsibility model](/azure/security/fundamentals/shared-res
 
 The COE should provide [documentation and training](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) where relevant to assist content creators with best practices (particularly situations for dealing with ultra-sensitive data).
 
-Administrators can be help by following best practices themselves. Administrators can also raise concerns when they see issues that could be discovered when [managing workspaces](/power-bi/admin/service-admin-portal-workspaces), [auditing user activities](/power-bi/admin/service-admin-auditing), or managing [gateway credentials and users](/power-bi/connect-data/service-gateway-data-sources#add-a-data-source). There are also several [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings) that are usually restricted except for a few users (for instance, the ability to [publish to web](/power-bi/admin/service-admin-portal-export-sharing#publish-to-web) or the ability to [publish apps to the entire organization](/fabric/admin/service-admin-portal-content-pack-app#publish-content-packs-and-apps-to-the-entire-organization)).
+Administrators can be help by following best practices themselves. Administrators can also raise concerns when they see issues that could be discovered when [managing workspaces](/power-bi/admin/service-admin-portal-workspaces), [auditing user activities](/power-bi/enterprise/service-admin-auditing), or managing [gateway credentials and users](/power-bi/connect-data/service-gateway-data-sources#add-a-data-source). There are also several [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings) that are usually restricted except for a few users (for instance, the ability to [publish to web](/power-bi/admin/service-admin-portal-export-sharing#publish-to-web) or the ability to [publish apps to the entire organization](/fabric/admin/service-admin-portal-content-pack-app#publish-content-packs-and-apps-to-the-entire-organization)).
 
 ### External guest users
 
 External users—such as partners, customers, vendors, and consultants—are a common occurrence for some organizations, and rare for others. How you handle external users is a governance decision.
 
-External user access is controlled by [tenant settings](/power-bi/admin/service-admin-portal-export-sharing) and certain Azure AD settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Azure AD B2B](whitepaper-azure-b2b-power-bi.md) whitepaper.
+External user access is controlled by [tenant settings](/power-bi/admin/service-admin-portal-export-sharing) and certain Microsoft Entra ID settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md) whitepaper.
 
 ### Information protection and data loss prevention
 
@@ -444,7 +444,7 @@ Every month, Microsoft releases new Power BI features and functionality. To be e
 
 > [!div class="checklist"]
 > - **Verify who is permitted to be a Fabric administrator:** If possible, reduce the number of people granted the Fabric administrator role if it's more than a few people.
-> - **Use PIM for occasional administrators:** If you have people who _occasionally_ need Fabric administrator rights, consider implementing [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM) in Azure AD. It's designed to assign just-in-time role permissions that expire after a few hours.
+> - **Use PIM for occasional administrators:** If you have people who _occasionally_ need Fabric administrator rights, consider implementing [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM) in Microsoft Entra ID. It's designed to assign just-in-time role permissions that expire after a few hours.
 > - **Train administrators:** Check the status of cross-training and documentation in place for handling Fabric administration responsibilities. Ensure that a backup person is trained so that needs can be met timely, in a consistent way.
 
 **Improve management of the Power BI service:**
@@ -521,7 +521,7 @@ Use questions like those found below to assess system oversight.
 - Are there atypical administration settings enabled or disabled? For example, is the entire organization allowed to publish to web (we strongly advise restricting this feature).
 - Do administration settings and policies align with, or inhibit, business the way user work?
 - Is there a process in place to critically appraise new settings and decide how to set them? Alternatively, are only the most restrictive settings set as a precaution?
-- Are Azure AD security groups used to manage who can do what?
+- Are Microsoft Entra ID security groups used to manage who can do what?
 - Do central teams have visibility of effective [auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md) tools?
 - Do monitoring solutions depict information about the data assets, user activities, or both?
 - Are auditing and monitoring tools actionable? Are there clear thresholds and actions set, or do monitoring reports simply describe what's in the data estate?
@@ -537,11 +537,11 @@ The following maturity levels will help you assess the current state of your Pow
 
 | **Level** | **State of system oversight** |
 | --- | --- |
-| 100: Initial | &bull; Tenant settings are configured independently by one or more administrators based on their best judgment. </br></br>&bull; Architecture needs, such as gateways and capacities, are satisfied on an as-needed basis. However, there isn't a strategic plan. </br></br>&bull; Power BI activity logs are unused, or selectively used for tactical purposes. |
-| 200: Repeatable | &bull; The tenant settings purposefully align with established governance guidelines and policies. All tenant settings are reviewed regularly. </br></br>&bull; A small number of specific administrators are selected. All administrators have a good understanding of what users are trying to accomplish in Power BI, so they're in a good position to support users. </br></br>&bull; A well-defined process exists for users to request licenses and software. Request forms are easy for users to find. Self-service purchasing settings are specified. </br></br>&bull; Sensitivity labels are configured in Microsoft 365. However, use of labels remains inconsistent. The advantages of data protection aren't well understood by users. |
-| 300: Defined | &bull; The tenant settings are fully documented in the centralized portal for users to reference, including how to request access to the correct groups. </br></br>&bull; Cross-training and documentation exist for administrators to ensure continuity, stability, and consistency. </br></br>&bull; Sensitivity labels are assigned to content consistently. The advantages of using sensitivity labels for data protection are understood by users. </br></br>&bull; An automated process is in place to export Power BI activity log and API data to a secure location for reporting and auditing. |
-| 400: Capable | &bull; Administrators work closely with the COE and governance teams to provide oversight of Power BI. A balance of user empowerment and governance is successfully achieved. </br></br>&bull; Decentralized management of data architecture (such as gateways or capacity management) is effectively handled to balance agility and control. </br></br>&bull; Automated policies are set up and actively monitored in Microsoft Defender for Cloud Apps for data loss prevention. </br></br>&bull; Power BI activity log and API data is actively analyzed to monitor and audit Power BI activities. Proactive action is taken based on the data. |
-| 500: Efficient | &bull; The Fabric administrators work closely with the COE actively stay current. Blog posts and release plans from the Power BI product team are reviewed frequently to plan for upcoming changes. </br></br>&bull; Regular cost management analysis is done to ensure user needs are met in a cost-effective way. </br></br>&bull; The Fabric REST API is used to retrieve tenant setting values on a regular basis. </br></br>&bull; Power BI activity log and API data is actively used to inform and improve adoption and governance efforts. |
+| 100: Initial | &bull;&nbsp;Tenant settings are configured independently by one or more administrators based on their best judgment. <br/><br/>&bull;&nbsp;Architecture needs, such as gateways and capacities, are satisfied on an as-needed basis. However, there isn't a strategic plan. <br/><br/>&bull;&nbsp;Power BI activity logs are unused, or selectively used for tactical purposes. |
+| 200: Repeatable | &bull;&nbsp;The tenant settings purposefully align with established governance guidelines and policies. All tenant settings are reviewed regularly. <br/><br/>&bull;&nbsp;A small number of specific administrators are selected. All administrators have a good understanding of what users are trying to accomplish in Power BI, so they're in a good position to support users. <br/><br/>&bull;&nbsp;A well-defined process exists for users to request licenses and software. Request forms are easy for users to find. Self-service purchasing settings are specified. <br/><br/>&bull;&nbsp;Sensitivity labels are configured in Microsoft 365. However, use of labels remains inconsistent. The advantages of data protection aren't well understood by users. |
+| 300: Defined | &bull;&nbsp;The tenant settings are fully documented in the centralized portal for users to reference, including how to request access to the correct groups. <br/><br/>&bull;&nbsp;Cross-training and documentation exist for administrators to ensure continuity, stability, and consistency. <br/><br/>&bull;&nbsp;Sensitivity labels are assigned to content consistently. The advantages of using sensitivity labels for data protection are understood by users. <br/><br/>&bull;&nbsp;An automated process is in place to export Power BI activity log and API data to a secure location for reporting and auditing. |
+| 400: Capable | &bull;&nbsp;Administrators work closely with the COE and governance teams to provide oversight of Power BI. A balance of user empowerment and governance is successfully achieved. <br/><br/>&bull;&nbsp;Decentralized management of data architecture (such as gateways or capacity management) is effectively handled to balance agility and control. <br/><br/>&bull;&nbsp;Automated policies are set up and actively monitored in Microsoft Defender for Cloud Apps for data loss prevention. <br/><br/>&bull;&nbsp;Power BI activity log and API data is actively analyzed to monitor and audit Power BI activities. Proactive action is taken based on the data. |
+| 500: Efficient | &bull;&nbsp;The Fabric administrators work closely with the COE actively stay current. Blog posts and release plans from the Power BI product team are reviewed frequently to plan for upcoming changes. <br/><br/>&bull;&nbsp;Regular cost management analysis is done to ensure user needs are met in a cost-effective way. <br/><br/>&bull;&nbsp;The Fabric REST API is used to retrieve tenant setting values on a regular basis. <br/><br/>&bull;&nbsp;Power BI activity log and API data is actively used to inform and improve adoption and governance efforts. |
 
 ## Next steps
 

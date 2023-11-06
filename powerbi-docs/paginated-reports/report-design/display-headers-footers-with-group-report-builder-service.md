@@ -60,7 +60,7 @@ ms.reviewer: rpatkar
 ## Next steps
 
 - [Page headers and footers in a paginated report](page-headers-footers-report-builder-service.md)  
-- [Tablix Data Region Cells, Rows, and Columns (Report Builder) and SSRS](/sql/reporting-services/report-design/tablix-data-region-report-builder-and-ssrs)
+- [Tablix Data Region Cells, Rows, and Columns (Report Builder) and SSRS](../../paginated-reports/report-builder-tables-matrices-lists.md)
  
   
   

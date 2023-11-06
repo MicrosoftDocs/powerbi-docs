@@ -6,7 +6,7 @@ ms.author: jessicamo
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 09/07/2023
+ms.date: 10/18/2023
 ms.custom: known-issue-498
 ---
 
@@ -16,7 +16,7 @@ When you select **Export data** on a tabular visual's options menu and choose to
 
 **APPLIES TO:** ✔️ Power BI
 
-**Status:** Open
+**Status:** Fixed: October 18, 2023
 
 **Problem area:** Consume and View
 

@@ -64,7 +64,7 @@ In Power BI paginated reports, expressions are used throughout the report defini
  [Expression Examples (Power BI Report Builder)](report-builder-expression-examples.md)
  [Report Parameters (Power BI Report Builder)](../parameters/report-builder-parameters.md)   
  [Filter Equation Examples (Report Builder and SSRS)](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs)   
- [Filter, Group, and Sort Data (Report Builder and SSRS)](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
+ [Filter, Group, and Sort Data (Report Builder and SSRS)](../report-design/filter-group-sort-data-report-builder.md)
  [Page Headers and Footers (Report Builder)](../report-design/page-headers-footers-report-builder-service.md)
  [Formatting Text and Placeholders (Report Builder and SSRS)](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
  [Hide an Item (Report Builder and SSRS)](/sql/reporting-services/report-builder/hide-an-item-report-builder-and-ssrs)  
