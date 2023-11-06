@@ -26,7 +26,7 @@ To enable service principal authentication for Power BI read-only APIs, follow t
 
     >[!IMPORTANT]
     > Make sure the app you use doesn't have any admin-consent required permissions for Power BI set on it in the Azure portal. [See how to check whether your app has any such permissions](#how-to-check-if-your-app-has-admin-consent-required-permissions). 
-1. Create a new **Security Group** in Azure Active Directory. [Read more about how to create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). You can skip this step if you already have a security group you would like to use.
+1. Create a new **Security Group** in Azure Active Directory. [Read more about how to create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). You can skip this step if you already have a security group you would like to use. Only cloud security groups are supported.
     Make sure to select **Security** as the Group type.
 
     ![Screenshot of new group creation dialog in Azure portal.](media/read-only-apis-service-principal-auth/azure-portal-new-group-dialog.png)
