@@ -36,7 +36,7 @@ To allow the visual to operate with dynamic format strings, the following fields
 
 ## How to use the dynamic string format
 
-When dynamic string format is enabled, the custom visual will receive additional format strings through the `update()` options as shown in the screenshot. 
+When dynamic string format is enabled, the custom visual receives format strings through the `update()` options as shown in the screenshot. 
 
 :::image type="content" source="media/dynamic-format/dynamic-format-strings-example.png" alt-text="Screenshot of update options content with dynamic format strings.":::
 
