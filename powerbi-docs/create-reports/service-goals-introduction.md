@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Get started with metrics
 ms.topic: how-to
-ms.date: 05/02/2023
+ms.date: 11/03/2023
 ms.custom: intro-get-started
 ---
 # Get started with metrics in Power BI
@@ -144,5 +144,6 @@ Scorecards do have metric-level permissions roles. While workspace permissions g
 - [Create connected metrics in Power BI](service-goals-create-connected.md)
 - [Stay on top of your metrics in Power BI](service-goals-check-in.md)
 - [Protect your scorecard with metric-level permissions](service-goals-set-permissions.md)
+- [Metrics admin settings](/fabric/admin/service-admin-portal-goals-settings)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
