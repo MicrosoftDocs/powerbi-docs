@@ -343,7 +343,7 @@ Use questions like those found below to assess mentoring and user enablement.
 - When users exhibit behavior that creates governance risks, are they punished or do they undergo education and mentorship?
 - What training materials are in place to educate people about governance processes and policies?
 - Where's the central documentation maintained? Who maintains it?
-- Do central resources exist, like organizational design guidelines, [themes](/power-bi/create-reports/desktop-report-themes), or [template files](fabric-adoption-roadmap-mentoring-and-user-enablement.md#template-files)?
+- Do central resources exist, like organizational design guidelines, [themes](/power-bi/create-reports/desktop-report-themes), or [template files](fabric-adoption-roadmap-mentoring-and-user-enablement.md#power-bi-template-files)?
 
 ## Maturity levels
 

@@ -47,7 +47,7 @@ Common COE responsibilities include:
 - Conducting [co-development projects](fabric-adoption-roadmap-mentoring-and-user-enablement.md#co-development-projects) and [best practices reviews](fabric-adoption-roadmap-mentoring-and-user-enablement.md#best-practices-reviews) in order to actively help business units deliver solutions.
 - Managing the [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal).
 - Producing, curating, and promoting [training materials](fabric-adoption-roadmap-mentoring-and-user-enablement.md#training).
-- Creating [documentation](fabric-adoption-roadmap-mentoring-and-user-enablement.md#documentation) and other resources, such as [template files](fabric-adoption-roadmap-mentoring-and-user-enablement.md#template-files), to encourage consistent use of standards and best practices.
+- Creating [documentation](fabric-adoption-roadmap-mentoring-and-user-enablement.md#documentation) and other resources, such as [template files](fabric-adoption-roadmap-mentoring-and-user-enablement.md#power-bi-template-files), to encourage consistent use of standards and best practices.
 - Applying, communicating, and assisting with [governance](fabric-adoption-roadmap-governance.md) guidelines.
 - Handling and assisting with [system oversight](fabric-adoption-roadmap-system-oversight.md) and Fabric administration.
 - Responding to [user support](fabric-adoption-roadmap-user-support.md) issues escalated from the help desk.

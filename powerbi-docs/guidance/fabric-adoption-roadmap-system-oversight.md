@@ -161,7 +161,7 @@ A few data architecture considerations that affect adoption include:
 
 - Where does Fabric fit into the organization's entire data architecture? Are there other existing components such as an enterprise data warehouse (EDW) or a data lake that will be important to factor into plans?
 - Is Fabric used end-to-end for data preparation, data modeling, and data presentation or is Fabric used for only some of those capabilities?
-- Are [managed self-service](fabric-adoption-roadmap-content-ownership-and-management.md#managed-self-service-bi) patterns followed to find the best balance between data reusability and report creator flexibility?
+- Are [managed self-service](fabric-adoption-roadmap-content-ownership-and-management.md#managed-self-service) patterns followed to find the best balance between data reusability and report creator flexibility?
 - Where will users consume the content? Generally, the three main ways to deliver content are: the Fabric portal, Power BI Report Server, and embedded in custom applications. Additionally, [Microsoft Teams](https://powerbi.microsoft.com/blog/guide-to-enabling-your-organization-to-use-power-bi-in-microsoft-teams/) is a convenient alternative for users who spend a lot of time in Teams.
 - Who is responsible for managing and maintaining the data architecture? Is it a centralized team, or a decentralized team? How is the [COE](fabric-adoption-roadmap-center-of-excellence.md) represented in this team? Are certain skillsets required?
 - What [data sources](/power-bi/connect-data/desktop-data-sources) are the most important? What types of data will we be acquiring?

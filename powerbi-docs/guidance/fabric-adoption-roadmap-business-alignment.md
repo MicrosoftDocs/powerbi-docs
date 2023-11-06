@@ -69,7 +69,7 @@ Your business strategy should be well aligned with your data and BI strategy. To
 
 A key aspect of effective business alignment is balancing user enablement and risk mitigation. This balance is an important aspect of your [governance strategy](fabric-adoption-roadmap-governance.md#governance-strategy), together with other activities related to compliance, security and privacy, that can include:
 
-- Transparently document and justify compliance criteria, [key governance decisions](fabric-adoption-roadmap-governance.md#key-power-bi-governance-decisions), and [policies](fabric-adoption-roadmap-governance.md#data-policies) so that content creators and consumers know what's expected of them.
+- Transparently document and justify compliance criteria, [key governance decisions](fabric-adoption-roadmap-governance.md#key-fabric-governance-decisions), and [policies](fabric-adoption-roadmap-governance.md#data-policies) so that content creators and consumers know what's expected of them.
 - Regularly [audit and assess](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md) activities to identify risk areas or strong deviations from the desired behaviors.
 - Provide mechanisms for content owners, content creators, and content consumers to request clarification or provide feedback about existing policies.
 

@@ -90,7 +90,7 @@ Common characteristics of maturity level 300 include:
 - The [COE](fabric-adoption-roadmap-center-of-excellence.md) is established. It has clear goals and scope of responsibilities.
 - The internal [community of practice](fabric-adoption-roadmap-community-of-practice.md) gains traction with the participation of a growing number of users.
 - [Champions](fabric-adoption-roadmap-community-of-practice.md#champions-network) emerge in the internal user community.
-- Initial investments in [training](fabric-adoption-roadmap-mentoring-and-user-enablement.md#training), [documentation](fabric-adoption-roadmap-mentoring-and-user-enablement.md#documentation), and resources (such as [template files](fabric-adoption-roadmap-mentoring-and-user-enablement.md#template-files)) are made.
+- Initial investments in [training](fabric-adoption-roadmap-mentoring-and-user-enablement.md#training), [documentation](fabric-adoption-roadmap-mentoring-and-user-enablement.md#documentation), and resources (such as [template files](fabric-adoption-roadmap-mentoring-and-user-enablement.md#power-bi-template-files)) are made.
 - An initial [governance](fabric-adoption-roadmap-governance.md) model is in place.
 - There's an active and engaged [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md).
 - [Roles and responsibilities](fabric-adoption-roadmap-governance.md#roles-and-responsibilities) for all analytics stakeholders are well understood.
