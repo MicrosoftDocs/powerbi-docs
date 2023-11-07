@@ -21,7 +21,7 @@ There are three primary strategies for how data, analytics, and business intelli
 
 The organization's data culture is the driver for why, how, and by whom each of these three content ownership strategies is implemented.
 
-:::image type="content" source="media/fabric-adoption-roadmap-content-ownership-and-management/content-ownership.png" alt-text="Diagram shows content ownership responsibilities for the three types of BI delivery, which are described in the table below." border="false":::
+:::image type="content" source="media/fabric-adoption-roadmap-content-ownership-and-management/content-ownership.png" alt-text="Diagram shows content ownership responsibilities for the three types of business intelligence delivery, which are described in the table below." border="false":::
 
 The areas in the above diagram include:
 
@@ -221,7 +221,7 @@ The following maturity levels will help you assess the current state of your con
 
 | **Level** | **State of content ownership and management** |
 | --- | --- |
-| 100: Initial | &bull;&nbsp;Self-service content creators own and manage content in an uncontrolled way, without a specific strategy. <br/><br/>&bull;&nbsp;A high ratio of datasets to reports exists. When many datasets exist only support one report, it indicates opportunities to improve data reusability, improve trustworthiness, reduce maintenance, and reduce the number of duplicate datasets. <br/><br/>&bull;&nbsp;Discrepancies between different reports is common, causing distrust of content produced by others. |
+| 100: Initial | &bull;&nbsp;Self-service content creators own and manage content in an uncontrolled way, without a specific strategy. <br/><br/>&bull;&nbsp;A high ratio of datasets to reports exists. When many datasets exist only support one report, it indicates opportunities to improve data reusability, improve trustworthiness, reduce maintenance, and reduce the number of duplicate datasets. <br/><br/>&bull;&nbsp;Discrepancies between different reports are common, causing distrust of content produced by others. |
 | 200: Repeatable | &bull;&nbsp;A plan is in place for which content ownership and management strategy to use and in which circumstances. <br/><br/>&bull;&nbsp;Initial steps are taken to improve the consistency and trustworthiness levels for self-service efforts. <br/><br/>&bull;&nbsp;Guidance for the user community is available that includes expectations for self-service versus enterprise content. <br/><br/>&bull;&nbsp;Roles and responsibilities are clear and well understood by everyone involved. |
 | 300: Defined | &bull;&nbsp;Managed self-service is a priority and an area of investment to further advance the data culture. The priority is to allow report creators the flexibility they need while using well-managed, secure, and trustworthy data sources. <br/><br/>&bull;&nbsp;Report branding is consistently used to indicate who produced the content. <br/><br/>&bull;&nbsp;A [mentoring program](fabric-adoption-roadmap-mentoring-and-user-enablement.md) exists to educate self-service content creators on how to apply best practices and make good decisions. |
 | 400: Capable | &bull;&nbsp;Criteria are defined to align governance requirements for self-service versus enterprise content. <br/><br/>&bull;&nbsp;There's a plan in place for how to request and handle ownership transfers. <br/><br/>&bull;&nbsp;Managed self-service—and techniques for the reuse of data—are commonly used and well-understood. |

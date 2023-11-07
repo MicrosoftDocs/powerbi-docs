@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Content delivery scope"
-description: "Develop scopes for how data, analytics, and BI content is owned and managed to drive strong and successful adoption of Microsoft Fabric."
+description: "Develop scopes for how data, analytics, and business intelligence (BI) content is owned and managed to drive strong and successful adoption of Microsoft Fabric."
 author: peter-myers
 ms.author: v-myerspeter
 ms.reviewer: maroche

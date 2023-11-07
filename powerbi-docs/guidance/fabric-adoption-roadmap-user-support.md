@@ -26,7 +26,7 @@ If a user has an issue, do they know what their options are to resolve it?
 
 The following diagram shows some common types of user support that organizations employ successfully:
 
-:::image type="content" source="media/fabric-adoption-roadmap-user-support/user-support.png" alt-text="Diagram shows the four types of internal Power BI user support, and the two types of external support, which are described in the table below." border="false":::
+:::image type="content" source="media/fabric-adoption-roadmap-user-support/user-support.png" alt-text="Diagram shows the four types of internal Fabric user support, and the two types of external support, which are described in the table below." border="false":::
 
 The six types of user support shown in the above diagram include:
 

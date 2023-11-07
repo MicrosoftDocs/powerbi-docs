@@ -75,7 +75,7 @@ Here are some examples of solution-level changes.
 - Changes in calculation logic for KPIs or measures.
 - Changes in how master data or hierarchies for business attributes are mapped, grouped, or described.
 - Changes in data freshness, detail, format, or complexity.
-- Introduction of advanced analytics concepts, like predictive analytics or prescriptive analytics, or general statistics (if the user community aren't familiar with these concepts, already).
+- Introduction of advanced analytics concepts, like predictive analytics or prescriptive analytics, or general statistics (if the user community isn't familiar with these concepts, already).
 - Changes in the presentation of data, like:
   - Styling, colors, and other formatting choices for visuals.
   - The type of visualization.
