@@ -6,7 +6,7 @@ ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
-ms.custom: cat-fabric
+ms.custom: fabric-cat
 ms.date: 11/06/2023
 ---
 
