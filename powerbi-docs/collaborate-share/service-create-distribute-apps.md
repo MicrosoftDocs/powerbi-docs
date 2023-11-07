@@ -19,7 +19,7 @@ In Power BI, you can create official packaged content, then distribute it to a b
 
 :::image type="content" source="media/service-create-distribute-apps/power-bi-apps.png" alt-text="Screenshot of Power BI Apps." lightbox="media/service-create-distribute-apps/power-bi-apps.png":::
 
-Here are the steps to publishing an app in power BI:
+Here are the steps to publishing an app in Power BI:
 
 - [Create the app](#create-and-publish-your-app)
 - [Add content to the app](#add-content-to-the-app)
@@ -227,7 +227,7 @@ The Permission management page contains these tabs:
 
 ## Change your published app
 
-After you publish your app, you may want to change or update it. 
+After you publish your app, you might want to change or update it. 
 
 1. Open the workspace that corresponds to the app. If you're a workspace Admin or Member, you can also open the workspace right from the app, by selecting the **Edit app** pencil.
    
