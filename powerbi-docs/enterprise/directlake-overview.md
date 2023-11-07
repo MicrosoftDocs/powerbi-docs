@@ -102,7 +102,7 @@ The following table lists guardrails for Direct Lake mode semantic models:
 | F256/P3     | 5,000                   | 5,000                | 6,000                     | Unlimited                         |
 | F512/P4     | 10,000                  | 10,000               | 12,000                    | Unlimited                         |
 | F1024/P5    | 10,000                  | 10,000               | 24,000                    | Unlimited                         |
-| F2048       |                         |                      | 24,000                    | Unlimited                         |
+| F2048       | 10,000                  | 10,000               | 24,000                    | Unlimited                         |
 
 Depending on your Fabric or Power BI SKU, additional **Capacity unit**, **Max memory per model**, and **Max memory per query** limits also apply to Direct Lake models. To learn more, see [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
 

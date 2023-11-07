@@ -109,29 +109,10 @@ There are multiple options to load data into a Lakehouse, including data pipelin
 
     :::image type="content" source="media/directlake-create-lakehouse/directlake-web-modeling.png" alt-text="Screenshot showing Web modeling in Power BI.":::
 
-When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and query the model through XMLA endpoints in much the same way as any other model. During **preview**, XMLA write operations are not yet supported.
-
-## Configure a Direct Lake model with a fixed identity
-
-1. In your Direct Lake model's settings, expand **Gateway and cloud connections**. Note that your Direct Lake model has a SQL Server data source pointing to a lakehouse or data warehouse in Fabric.
-
-    :::image type="content" source="media/directlake-create-lakehouse/directlake-settings-fixed-identity.png" alt-text="Direct Lake model settings":::
-
-1. In the **Maps to** listbox, select **Create a connection**. A **New connection** pane appears with some data source information already entered for you. Specify a connection name.
-
-1. In **Authentication method**, select **OAuth 2.0** or **Service Principal**,  and then specify credentials for the fixed identity you want to use.
-
-    :::image type="content" source="media/directlake-create-lakehouse/directlake-settings-fixed-identity-new-connection.png" alt-text="Specify authentication credentials in new connection settings":::
-
-1. In **Single sign-on**, ensure **SSO via Azure AD for DirectQuery queries** is *not* selected.
-
-    :::image type="content" source="media/directlake-create-lakehouse/directlake-settings-fixed-identity-new-connection-sso.png" alt-text="Ensure Use SSO in new connection settings is not selected":::
-
-1. Configure any additional parameters if needed and then click **Create**.
-
-1. In the Direct Lake model settings, verify the data source is now associated with the non-SSO cloud connection.
+When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and query the model through XMLA endpoints in much the same way as any other model.
 
 ## See also
 
+[Specify a fixed identity for a Direct Lake model](directlake-fixed-identity.md)
 [Direct Lake overview](directlake-overview.md)  
 [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md)  
