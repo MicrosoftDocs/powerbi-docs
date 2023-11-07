@@ -37,7 +37,9 @@
       items:
       - name: Direct Lake overview
         href: directlake-overview.md
-      - name: Analyze query processing for Direct Lake datasets
+      - name: Create a Lakehouse for Direct Lake
+        href: directlake-create-lakehouse.md
+      - name: Analyze query processing for Direct Lake models
         href: directlake-analyze-qp.md
   - name: Licensing
     expanded: false
