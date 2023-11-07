@@ -13,7 +13,7 @@
       href: known-issues/known-issue-535-new-card-visual-formatting-appears-disappears.md
     - name: Unable to sign in on 32-bit Power BI Desktop
       href: known-issues/known-issue-533-unable-sign-in-32-bit-desktop.md
-    - name: Sign in fails for securely embedded reports using Chrome browser
+    - name: Sign in fails for securely embedded reports using Chrome or Microsoft Edge browser
       href: known-issues/known-issue-532-sign-in-fails-securely-embedded-reports-using-chrome-browser.md
     - name: Dataflow REST API returns more data sources and gateways than expected
       href: known-issues/known-issue-526-dataflow-rest-api-returns-more-data-sources-gateways.md
