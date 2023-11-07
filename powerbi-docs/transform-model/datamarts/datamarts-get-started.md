@@ -237,7 +237,8 @@ The following is a list of settings available for each datamart.
 | Data source credentials | Lets you get data source information and edit credentials.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-12.png" alt-text="Screenshot of the datamart source credentials menu."::: |
 | Schedule refresh | Data refresh information for the datamart, based on the schedule defined by the user.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-13.png" alt-text="Screenshot of the datamart scheduled refresh menu."::: |
 | Sensitivity label | Sensitivity label applied on datamart, which also gets propagated on the downstream auto-generated dataset, reports, and so on.<br> :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-14.png" alt-text="Screenshot of the datamart sensitivity label settings."::: <br><br>The sensitivity labels propagation to downstream dataset, reports won't happen in the following scenarios:<ul><li>Sensitivity label downgrade<li>Specific items when the sensitivity label was manually set</ul> |
-| Endorsement and discovery | You can endorse your datamart and auto-generated dataset independently. <br>:::image type="content" source="media/datamarts-create-reports/datamarts-endorsement.png" alt-text="Screenshot of the endorsement and discovery setting."::: |
+| Endorsement and discovery | You can endorse your datamart and auto-generated dataset independently. <br>:::image type="content" source="media/datamarts-get-started
+/datamarts-endorsement.png" alt-text="Screenshot of the endorsement and discovery setting."::: |
 
 The following table shows settings for auto-generated datasets. When these settings are applied on an auto-generated dataset, they're also applied to datamart as well.
 
