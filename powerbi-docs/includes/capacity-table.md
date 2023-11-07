@@ -10,7 +10,7 @@ ms.custom: include file
 ---
 
 | Capacity |       |                  |      | Semantic model |        |     |       |          | Dataflow |
-| -------- | ----- | ---------------- | ---- | -------------- | ------ | --- | ----- | -------- | --- |
+| -------- | ----- | ---------------- | ---- | -------------- | ------ | --- | ----- | -------- | -------- |
 |**Fabric SKU** | **Capacity Units** | **Power BI SKU** | **Power BI v-cores** | **Max memory (GB)**<sup>1, 2, 3</sup> | **DirectQuery/Live connection (per second)**<sup>1, 2</sup> | **Max memory per query (GB)**<sup>1, 2</sup> | **Model refresh parallelism**<sup>2</sup> | **Direct Lake rows per table** (in millions)  | **Dataflow parallel tasks**<sup>5</sup> |
 | F2       |     2 | N/A               |     |                |   2    |  1  |     1 |   300     |         |
 | F4       |     4 | N/A               |     |                |   2    |  1  |     2 |   300     |         |
