@@ -64,7 +64,7 @@ By default, Premium capacities support workloads associated with running Power B
 
 Deleting a Premium capacity is possible and won't result in the deletion of its workspaces and content. Instead, it moves any assigned workspaces to shared capacity. When the Premium capacity was created in a different region, the workspace is moved to shared capacity of the home region.
 
-Capacities have limited resources, defined by each capacity SKU. Resources consumption by Power BI items (such as reports and dashboards) across capacities can be tracked using the [metrics app](service-premium-install-app.md).
+Capacities have limited resources, defined by each capacity SKU. Resources consumption by Power BI items (such as reports and dashboards) across capacities can be tracked using the [Microsoft Fabric Capacity Metrics](/fabric/enterprise/metrics-app-install) app.
 
 ### Assigning workspaces to capacities
 
@@ -101,7 +101,7 @@ A typical item's usage pattern will dictate its CPU power spend, which if exhaus
 
 #### How to decide when to turn on autoscale? 
 
-Using the Power BI Premium [Capacity Utilization and Metrics app](service-premium-install-app.md) will indicate cases of overload impact in the *overloaded minutes* visual, in the overview page. You can evaluate the severity of the impact of those overload minutes by using the evidence page, where you can track how much impact an overload moment had, what Power BI items it impacted and how many users got affected. If based on your evaluation the impact is too high, you should turn on autoscale.  
+Using the Power BI Premium [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app-install) will indicate cases of overload impact in the *overloaded minutes* visual, in the overview page. You can evaluate the severity of the impact of those overload minutes by using the evidence page, where you can track how much impact an overload moment had, what Power BI items it impacted and how many users got affected. If based on your evaluation the impact is too high, you should turn on autoscale.  
 
 #### How to decide when to scale up to a higher SKU?
 
@@ -115,9 +115,3 @@ Using the Power BI Premium [Capacity Utilization and Metrics app](service-premiu
 
 >[!div class="nextstepaction"]
 >[Using autoscale with Premium](service-premium-auto-scale.md)
-
->[!div class="nextstepaction"]
->[Install the metrics app](service-premium-install-app.md)
-
->[!div class="nextstepaction"]
->[Using the Premium metrics app](service-premium-metrics-app.md)

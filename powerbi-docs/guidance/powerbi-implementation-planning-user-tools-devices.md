@@ -36,7 +36,7 @@ Software installations are usually the responsibility of the IT department. To e
 
 - **Process for users to request software installation.** There are several ways to handle software installation requests:
   - Common tools can be included in a standard machine setup. IT teams sometimes refer to it as the _standard build_.
-  - Certain applications might be installed automatically based on job role. The software that's installed could be based on an attribute in the [user profile](/azure/active-directory/fundamentals/how-to-manage-user-profile-info) in Microsoft Entra ID (Azure Active Directory).
+  - Certain applications might be installed automatically based on job role. The software that's installed could be based on an attribute in the [user profile](/azure/active-directory/fundamentals/how-to-manage-user-profile-info) in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)).
   - For custom requests, using a standard request form works well. A form (rather than email) builds up a history of requests. When prerequisites or more licenses are required, approval can be included in the workflow.
 - **Process for installing software updates.** The timely installation of software updates is important. The goal is to stay as current as possible. Be aware that users can read online what's possible and might become confused or frustrated when newer features aren't available to them. For more information, see [Client tools](#client-tools) later in this article.
 
@@ -103,8 +103,8 @@ The following table lists the most common tools and applications that are availa
 | Power BI Report Builder | Report creators who develop paginated reports that will be published to the Power BI service or to Power BI Report Server. |
 | Power BI App for Teams | Content creators and consumers who interact with content in the Power BI service, when their preference is to remain within the Microsoft Teams application. |
 | Power BI Mobile Application | Content creators and consumers who interact with and manage content that's been published to the Power BI service (or Power BI Report Server) using iOS, Android, or Windows 10 applications. |
-| Excel | Content creators who develop Excel-based reports in workbooks that may include PivotTables, charts, slicers, and more. Optionally, Excel workbooks can be viewed in the Power BI service when they're stored in SharePoint or OneDrive for work or school. |
-| Third-party tools | Advanced content creators may optionally use third-party tools and extend the built-in capabilities for purposes such as [advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) and [enterprise content publishing](powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md). |
+| Excel | Content creators who develop Excel-based reports in workbooks that might include PivotTables, charts, slicers, and more. Optionally, Excel workbooks can be viewed in the Power BI service when they're stored in SharePoint or OneDrive for work or school. |
+| Third-party tools | Advanced content creators can optionally use third-party tools and extend the built-in capabilities for purposes such as [advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) and [enterprise content publishing](powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md). |
 
 ### Choose an authoring tool
 
@@ -112,10 +112,10 @@ When choosing an authoring tool, there are some key factors you should consider.
 
 - **Is browser-based authoring desirable?** To improve ease of use and reduce friction, Power BI (and other Fabric workloads) supports browser-based functionality for both content consumption as well as content creation. That's an advantage because a web browser is readily available to all users, regardless of the desktop operating system they use (including Mac users).
 - **What's the desired development experience?** Consider that Power BI Desktop can be used to create data models and interactive reports, whereas Power BI Report Builder is a design tool for creating [paginated reports](report-paginated-or-power-bi.md). Also, [third-party tools](/power-bi/enterprise/service-premium-connect-tools#client-applications-and-tools) offer extra functionality to developers that isn't available in Power BI Desktop. Because development experience differs among tools, the requirements for each specific solution should factor into your decision on which tool to use.
-- **What's the desired publishing experience?** Advanced content creators and content owners may prefer to publish content by using a [third-party tool](/power-bi/enterprise/service-premium-connect-tools#client-applications-and-tools) (such as ALM Toolkit to compare and merge models). The requirements for each specific solution should be considered.
+- **What's the desired publishing experience?** Advanced content creators and content owners might prefer to publish content by using a [third-party tool](/power-bi/enterprise/service-premium-connect-tools#client-applications-and-tools) (such as ALM Toolkit to compare and merge models). The requirements for each specific solution should be considered.
 - **What's the preferred way to access and/or manage datasets?** Rather than using the standard Power Query experience, advanced content creators might prefer to read and/or write to datasets with their tool of choice by using the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools). The requirements for each specific solution should be considered.
 - **How easily can you keep client tools updated?** Some organizations find it challenging to install frequent updates of client applications. In this case, users might prefer to use a web browser whenever possible.
-- **What are the skills and expertise of the users?** There may be existing knowledge and preferences that impact which tool is selected. This choice impacts both initial development activities, and also whoever will [support users](powerbi-adoption-roadmap-user-support.md) and maintain existing solutions.
+- **What are the skills and expertise of the users?** There might be existing knowledge and preferences that impact which tool is selected. This choice impacts both initial development activities, and also whoever will [support users](powerbi-adoption-roadmap-user-support.md) and maintain existing solutions.
 - **How will versioning be managed?** Version control can be accomplished in multiple ways. When working in a client tool, self-service users might prefer to use [OneDrive or SharePoint](/power-bi/create-reports/desktop-sharepoint-save-share#version-history), whereas more advanced users might prefer [Git integration with client tools](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools). When working in the Power BI service, [Git workspace integration](/fabric/cicd/git-integration/manage-branches#develop-using-another-workspace) is available.
 
 > [!TIP]
@@ -141,7 +141,7 @@ There are some types of Power BI items that can be created in the web-based expe
 - Dashboards
 - Scorecards
 
-A Fabric solution can be created end-to-end in a browser. The solution may include Power BI items, and also non-Power BI items (such as a lakehouse).
+A Fabric solution can be created end-to-end in a browser. The solution can include Power BI items, and also non-Power BI items (such as a lakehouse).
 
 > [!IMPORTANT]
 > When choosing to create content in the browser, it's important that you educate content creators where to save content. For example, it's easy to save a new report to a personal workspace, but that's [not always an ideal choice](powerbi-implementation-planning-workspaces-workspace-level-planning.md#appropriate-use-of-personal-workspaces). Also, it's important to consider how versioning will be handled (such as [Git integration](/fabric/cicd/git-integration/intro-to-git-integration)).
@@ -158,7 +158,7 @@ Here are some points to consider when using Power BI Desktop.
 - Power BI Desktop is usually updated every month. Regular updates allow users to access new features quickly. However, rolling out frequent updates in a large organization requires planning. For more information, see [Client tools](#client-tools) later in this article.
 
 > [!NOTE]
-> There are many options and settings in Power BI Desktop that significantly affect the user experience. Not all settings can be programmatically maintained with [group policy](#group-policy-settings) or [registry](#registry-settings) settings (described later in this article). One key setting relates to preview features that users can enable in Power BI Desktop. However, preview features are subject to change, have limited support, and may not always work in the same way in the Power BI service (during the preview period).
+> There are many options and settings in Power BI Desktop that significantly affect the user experience. Not all settings can be programmatically maintained with [group policy](#group-policy-settings) or [registry](#registry-settings) settings (described later in this article). One key setting relates to preview features that users can enable in Power BI Desktop. However, preview features are subject to change, have limited support, and might not always work in the same way in the Power BI service (during the preview period).
 >
 > We recommend that you only use preview features to evaluate and learn new functionality. Preview features shouldn't be used for mission-critical production content.
 
@@ -176,7 +176,7 @@ For users who publish content to _both_ the Power BI service and Power BI Report
     - Content creators are assured that the content they publish is compatible with the report server.
     - Fewer tools are simpler to manage.
   - **Cons:**
-    - Some features that are only supported in the Power BI service aren't available in the Report Server version of Power BI Desktop. Therefore, content creators may find it limiting.
+    - Some features that are only supported in the Power BI service aren't available in the Report Server version of Power BI Desktop. Therefore, content creators might find it limiting.
     - New features are slower to become available.
     - Preview features aren't available.
 - **Option 2:** Run both versions—Power BI Desktop, and Power BI Desktop for Report Server—side by side.
@@ -185,7 +185,7 @@ For users who publish content to _both_ the Power BI service and Power BI Report
     - New features for the standard Power BI Desktop are available more quickly.
     - Preview features for the standard Power BI Desktop are available to use, at the content creator's discretion.
   - **Cons:**
-    - Content creators must be prepared for complexity because they need to remember which version to use when, based on the target deployment location. The risk is that when a .pbix file from the newer version is inadvertently published to Power BI Report Server, it may not function correctly. For example, data model queries fail, data refresh fails, or reports don't render properly.
+    - Content creators must be prepared for complexity because they need to remember which version to use when, based on the target deployment location. The risk is that when a .pbix file from the newer version is inadvertently published to Power BI Report Server, it might not function correctly. For example, data model queries fail, data refresh fails, or reports don't render properly.
     - Content creators need to be aware of the default behavior when they directly open [.pbix files](/power-bi/report-server/install-powerbi-desktop#file-extension-association) (instead of opening them from within Power BI Desktop).
 
 #### Microsoft Excel
@@ -211,7 +211,7 @@ Here are some important points to consider when determining whether Excel is an 
 
 - [Certain prerequisites](/power-bi/collaborate-share/service-connect-excel-power-bi-datasets#requirements) must be in place to allow users to connect to a Power BI dataset from Excel.
 - In some organizations, users have the 32-bit version of Excel installed rather than the 64-bit version. The 64-bit version of Excel can support larger data volumes, and generally performs better than the 32-bit version. All data providers must also align with this choice.
-- Some features in Power BI Desktop aren't available in the Excel data model, or they're released on a significantly slower cadence. Therefore, complex modeling requirements may not be (easily) possible in Excel.
+- Some features in Power BI Desktop aren't available in the Excel data model, or they're released on a significantly slower cadence. Therefore, complex modeling requirements might not be (easily) possible in Excel.
 - Some connectors and data sources that are available in Power BI Desktop aren't available in Excel.
 
 > [!TIP]
@@ -228,11 +228,11 @@ Paginated reports are best suited to highly formatted, or print-ready, reports s
 
 Here are some important points to consider when deciding on using Power BI Report Builder.
 
-- Approach working in Power BI Report Builder with a different mindset than when you work in Power BI Desktop. A paginated report always focuses on the creation of one individual report (conversely, a dataset created in Power BI Desktop may serve many different reports).
+- Approach working in Power BI Report Builder with a different mindset than when you work in Power BI Desktop. A paginated report always focuses on the creation of one individual report (conversely, a dataset created in Power BI Desktop can serve many different reports).
 - Developing paginated reports involves more skill than creating Power BI reports. However, the main benefit is fine-grained control over data retrieval, layout, and placement.
 - A paginated report is concerned with both data retrieval and layout. You're required to develop a query (known as a _dataset_—not to be confused with a Power BI dataset) to retrieve data from an external data source, which might involve writing a native query statement (in DAX, T-SQL, or other language). The dataset belongs to one report, so it can't be published and used by other paginated reports.
 - Report consumers become accustomed to the built-in interactivity of Power BI reports. However, report interactivity isn't a strength of paginated reports. Attempting to achieve similar interactivity in paginated reports can be challenging or impossible.
-- If you need to access data by using a database stored procedure (such as an Azure SQL database stored procedure), that's possible with paginated reports.
+- If you need to access data by using a database stored procedure (such as an Azure SQL Database stored procedure), that's possible with paginated reports.
 - There are some [feature differences](/power-bi/paginated-reports/paginated-reports-faq#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) and unsupported capabilities depending on whether the paginated report is published to the Power BI service or Power BI Report Server. We recommend that you conduct a proof of concept to determine what's possible for your target environment.
 
 > [!TIP]
@@ -284,7 +284,7 @@ Here are several ways that organizations can manage [installations and updates o
 | Manual installation | No | You can manually download and install an executable (.exe) file from the [Microsoft Download Center](https://aka.ms/pbiSingleInstaller). However, be aware that the user who installs the software must have local administrator rights—in most organizations, those rights are restricted. If you choose to use this approach (and it isn't managed by IT), there's a risk that users will end up with different versions of Power BI Desktop installed, possibly resulting in compatibility issues. Also, with this approach, every user will need to be notified to install quick fix engineering (QFE) releases, also known as _bug fixes_, when they come out. |
 | IT-managed systems | Depends upon the setup | You can use a variety of IT-managed organizational deployment methods, like Microsoft System Center or Microsoft Application Virtualization (App-V). This option is best suited for organizations that need to manage many installations at scale or in a customized way. |
 
-It's important that user devices have adequate system resources. To be productive, content creators who work with large data volumes may need system resources that exceed the [minimum requirements](/power-bi/fundamentals/desktop-get-the-desktop#minimum-requirements)—especially memory (RAM) and CPU. IT may have suggested machine specifications based on their experience with other content creators.
+It's important that user devices have adequate system resources. To be productive, content creators who work with large data volumes might need system resources that exceed the [minimum requirements](/power-bi/fundamentals/desktop-get-the-desktop#minimum-requirements)—especially memory (RAM) and CPU. IT might have suggested machine specifications based on their experience with other content creators.
 
 All content creators collaborating on Power BI development should use the same version of the software—especially Power BI Desktop, which is usually updated every month. We recommend that you make updates automatically available to users because:
 
@@ -293,16 +293,16 @@ All content creators collaborating on Power BI development should use the same v
 - Users can take advantage of new capabilities, and their experience is aligned to announcements and documentation. It can impact adoption and user satisfaction when content creators learn about new capabilities and features, yet they experience long delays between software updates.
 - Only the latest version of Power BI Desktop is supported by Microsoft. If a user has an issue and files a support ticket, they'll be asked by Microsoft support to upgrade their software to the latest version.
 
-In addition to Power BI Desktop (described previously), you may need to install and manage other Microsoft tools or third-party tools on user devices, including mobile devices. For a list of possible tools, see [Available tools for authoring](#available-tools-for-authoring) earlier in this article.
+In addition to Power BI Desktop (described previously), you might need to install and manage other Microsoft tools or third-party tools on user devices, including mobile devices. For a list of possible tools, see [Available tools for authoring](#available-tools-for-authoring) earlier in this article.
 
 Users who create and manage files located in Fabric OneLake might also benefit from [OneLake File Explorer](/fabric/onelake/onelake-file-explorer). This tool allows them to conveniently upload, download, edit, or delete files in OneLake by using Windows file explorer.
 
 > [!NOTE]
-> Your IT department may have managed device policies in place. These policies could control what software can be installed, and how it's managed.
+> Your IT department might have managed device policies in place. These policies could control what software can be installed, and how it's managed.
 
 ### Client tool prerequisites
 
-Content creators that have client tools installed, such as Power BI Desktop, may require specific prerequisite software or packages.
+Content creators that have client tools installed, such as Power BI Desktop, might require specific prerequisite software or packages.
 
 - **WebView2:** (Mandatory) For content creators running Power BI Desktop, the [Microsoft Edge WebView2 Runtime](/power-bi/fundamentals/desktop-get-the-desktop#minimum-requirements) is a prerequisite. WebView2 allows the embedding of web technologies (such as HTML, CSS, and JavaScript) in Power BI Desktop in a secure way. WebView2 will already be installed if the user device has the latest version of Windows or has Microsoft 365 applications installed and monthly updates are enabled.
 - **.NET Framework:** (Mandatory) For content creators running Power BI Desktop or a third-party tool, the [.NET Framework](/dotnet/framework/get-started/overview) is a prerequisite. The .NET Framework is a technology that supports building and running Windows apps. Power BI Desktop requires a [specific version, or later](/power-bi/fundamentals/desktop-get-the-desktop#minimum-requirements).
@@ -311,10 +311,10 @@ Content creators that have client tools installed, such as Power BI Desktop, may
 
 ### Data connectivity components
 
-Depending on your data sources, you may need to install drivers, connectors, or providers on user devices. These components enable data connectivity when a user works in a client tool (such as Power BI Desktop) or a third-party tool.
+Depending on your data sources, you might need to install drivers, connectors, or providers on user devices. These components enable data connectivity when a user works in a client tool (such as Power BI Desktop) or a third-party tool.
 
-- **Drivers:** A _driver_ is a software component that connects to other systems. For example, to connect to an [Oracle](/power-query/connectors/oracle-database#prerequisites) database, you may need the Oracle Data Access Client software. Or, to connect to [SAP HANA](/power-query/connectors/sap-hana/overview#prerequisites), you may need an ODBC driver.
-- **Custom connectors:** A [custom data source connector](/power-bi/connect-data/desktop-connector-extensibility) may be required when connecting to a legacy or proprietary system.
+- **Drivers:** A _driver_ is a software component that connects to other systems. For example, to connect to an [Oracle](/power-query/connectors/oracle-database#prerequisites) database, you'll need the Oracle Data Access Client software. Or, to connect to [SAP HANA](/power-query/connectors/sap-hana/overview#prerequisites), you'll need an ODBC driver.
+- **Custom connectors:** A [custom data source connector](/power-bi/connect-data/desktop-connector-extensibility) might be required when connecting to a legacy or proprietary system.
 - **Excel provider:** The [Analyze in Excel](/power-bi/collaborate-share/service-connect-power-bi-datasets-excel) provider allows users to create visualizations in Excel while connected to an existing shared dataset that's been published to the Power BI service.
 - **Analysis Services client libraries:** When connecting to an Analysis Services source, a [client library](/analysis-services/client-libraries) needs to be installed.
 - **Access Database OLE DB provider:** When connecting to an Access database, an [OLE DB provider](/power-query/connectors/access-database#prerequisites) needs to be installed.
@@ -332,7 +332,7 @@ Content creators that have client tools installed, such as Power BI Desktop, sho
 There are two main ways to handle versioning of development files.
 
 - **Teams, OneDrive for Business, SharePoint:** Self-service content creators often [save files](/power-bi/create-reports/desktop-sharepoint-save-share) in Teams, OneDrive for work or school, or SharePoint. Users find these tools are familiar and simple to use. Shared libraries can be organized, secured for appropriate coworkers, and versioning is built in.
-- **Source control plug-ins:** Advanced content creators may need to integrate with a source control tool. For example, this typically involves installing [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for source control, then using a source control management tool like [Visual Studio Code](/training/modules/work-source-control-git/) to commit content changes to a remote repository, such as [Azure DevOps Repos](/azure/devops/repos/get-started/what-is-repos). For Power BI Desktop, [developer mode](/power-bi/developer/projects/) can be used. In this mode, content is saved as a Power BI project (.pbip) file, which is compatible for use with your preferred source control system. When working with Fabric, [Git integration](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools) is supported for working with a client tool.
+- **Source control plug-ins:** Advanced content creators might need to integrate with a source control tool. For example, this typically involves installing [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for source control, then using a source control management tool like [Visual Studio Code](/training/modules/work-source-control-git/) to commit content changes to a remote repository, such as [Azure DevOps Repos](/azure/devops/repos/get-started/what-is-repos). For Power BI Desktop, [developer mode](/power-bi/developer/projects/) can be used. In this mode, content is saved as a Power BI project (.pbip) file, which is compatible for use with your preferred source control system. When working with Fabric, [Git integration](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools) is supported for working with a client tool.
 
 For more information, see [Strategy for file locations](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-file-locations).
 
@@ -352,7 +352,7 @@ To use a custom visual in Power BI Desktop, it must first be installed on the ma
     - When each content creator downloads what they need from AppSource, it can lead to incompatibilities when users have different versions installed.
     - A content creator might download a visual that hasn't yet been tested or approved for use in the organization.
     - The developer of the visual needs to follow a strict [publishing process](/power-bi/developer/visuals/office-store). Although it strengthens security and improves stability, the process can make it challenging to release a bug fix quickly,
-- **Import a visual file:** A content creator may [import a visual file](/power-bi/developer/visuals/import-visual#import-a-visual-file-from-your-local-computer-into-power-bi) into Power BI Desktop.
+- **Import a visual file:** A content creator can [import a visual file](/power-bi/developer/visuals/import-visual#import-a-visual-file-from-your-local-computer-into-power-bi) into Power BI Desktop.
   - **Advantages:**
     - Visuals that are available publicly, or privately distributed, can be installed. That includes internally developed visuals or proprietary visuals purchased from a vendor.
     - Allows a way to obtain a visual file outside of AppSource.
@@ -383,7 +383,7 @@ To use a custom visual in Power BI Desktop, it must first be installed on the ma
 > Also, before you approve the use of a new custom visual, it's critical that you evaluate any security and data privacy risks because:
 >
 > - Visuals execute JavaScript code and have access to the data that they visualize.
-> - Visuals can transmit data to an external service. For example, a visual may need to transmit data to an API to run an AI algorithm or to render a map. Just because a visual transmits data to an external service, it doesn't mean it's untrustworthy. A visual that transmits data can't be certified.
+> - Visuals can transmit data to an external service. For example, a visual might need to transmit data to an API to run an AI algorithm or to render a map. Just because a visual transmits data to an external service, it doesn't mean it's untrustworthy. A visual that transmits data can't be certified.
 
 ### Group policy settings
 
@@ -405,7 +405,7 @@ Here are several common uses of registry settings related to Power BI Desktop.
 
 - Disable [notifications](/power-bi/fundamentals/desktop-get-the-desktop#disable-notifications) that a software update is available. That's useful when you're certain that IT will obtain the Power BI Desktop update, perform validations, and then push updates to user devices through their normal process.
 - Set the global [privacy level](/power-bi/enterprise/desktop-privacy-levels). It's wise to set this setting to _Organizational_ as the default because it can help to avoid data privacy violations when different data sources are merged.
-- Disable the Power BI Desktop [sign-in form](/power-bi/admin/desktop-admin-sign-in-form). Disabling the form is useful when organizational machines are automatically signed in. In this case, the user doesn't ever need to be prompted.
+- Disable the Power BI Desktop [sign-in form](/power-bi/enterprise/desktop-admin-sign-in-form). Disabling the form is useful when organizational machines are automatically signed in. In this case, the user doesn't ever need to be prompted.
 - Tune [Query Editor performance](/power-bi/create-reports/desktop-evaluation-configuration). This setting is useful when you need to influence query execution behavior by changing defaults.
 - Disable the [external tools](/power-bi/transform-model/desktop-external-tools#disabling-the-external-tools-ribbon) ribbon tab. You might disable the ribbon tab when you know you can't approve or support the use of external tools.
 
@@ -418,7 +418,7 @@ Many users like to interact with Power BI content on a mobile device, such as a 
 
 You can specify app protection policies and device protection policies for managed and unmanaged devices by using [Microsoft Intune](/power-bi/enterprise/service-admin-mobile-intune). Intune is a software service that provides mobile device and application management, and it supports mobile application management (MAM) policies. Policies can be set at various [levels of protection](/mem/intune/apps/app-protection-policy#app-protection-policy-data-protection-framework).
 
-Optionally, a mobile device management (MDM) solution from Microsoft 365, or a third party, may also be used to [customize](/power-bi/consumer/mobile/mobile-app-configuration) the behavior of Power BI mobile apps. The Power BI app for Windows also supports [Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
+Optionally, a mobile device management (MDM) solution from Microsoft 365, or a third party, might also be used to [customize](/power-bi/consumer/mobile/mobile-app-configuration) the behavior of Power BI mobile apps. The Power BI app for Windows also supports [Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
 
 Here are several ways that you might choose to use MAM and MDM policies.
 

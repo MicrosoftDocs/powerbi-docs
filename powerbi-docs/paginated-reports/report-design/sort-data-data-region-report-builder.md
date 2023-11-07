@@ -21,7 +21,7 @@ ms.reviewer: saurkumar
   
 - In a gauge data region, you do not typically need to sort data because the gauge displays a single value relative to a range. If you do need sort data in a gauge, you must first define a group, and then set the sort expression for the group.  
   
- For more information, see [Filter, group, and sort data (Power BI Report Builder)](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs).  
+ For more information, see [Filter, group, and sort data (Power BI Report Builder)](filter-group-sort-data-report-builder.md).  
   
  For a tablix data region, you can also add an interactive sort button to the top of a column header to provide the user with the ability to change the sort order of groups or detail rows. For more information, see [Interactive sort (Power BI Report Builder)](/sql/reporting-services/report-design/interactive-sort-report-builder-and-ssrs).  
 

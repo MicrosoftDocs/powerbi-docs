@@ -1,8 +1,8 @@
 ---
 title: "Power BI modeling guidance for Power Platform"
 description: "Guidance on how to create Power BI data models for Dataverse, PowerApps, and Dynamics 365."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -83,7 +83,7 @@ You can also consider using [incremental refresh](/power-bi/connect-data/increme
 
 When there's a need to enforce role-based security, it can directly influence the choice of Power BI model framework.
 
-Dataverse can enforce complex [role-based security](/power-platform/admin/wp-security-cds) to control access of specific records to specific users. For example, a salesperson may be permitted to see only their sales opportunities, while the sales manager can see all sales opportunities for all salespeople. You can tailor the level of complexity based on the needs of your organization.
+Dataverse can enforce complex [role-based security](/power-platform/admin/wp-security-cds) to control access of specific records to specific users. For example, a salesperson might be permitted to see only their sales opportunities, while the sales manager can see all sales opportunities for all salespeople. You can tailor the level of complexity based on the needs of your organization.
 
 A DirectQuery model based on Dataverse can connect by using the security context of the report user. That way, the report user will only see the data they're permitted to access. This approach can simplify the report design, providing performance is acceptable.
 
@@ -121,7 +121,7 @@ Resist combining multiple topic areas into a single model just because the repor
 
 ### Design a star schema
 
-Dataverse developers and administrators who are comfortable with the Dataverse schema may be tempted to reproduce the same schema in Power BI. This approach is an anti-pattern, and it's probably the toughest to overcome because it just *feels right* to maintain consistency.
+Dataverse developers and administrators who are comfortable with the Dataverse schema might be tempted to reproduce the same schema in Power BI. This approach is an anti-pattern, and it's probably the toughest to overcome because it just *feels right* to maintain consistency.
 
 Dataverse, as a relational model, is well suited for its purpose. However, it's not designed as an analytic model that's optimized for [analytical reports](/learn/modules/power-bi-effective-structure/1-introduction). The most prevalent pattern for modeling analytics data is a *star schema* design. Star schema is a mature modeling approach widely adopted by relational data warehouses. It requires modelers to classify their model tables as either dimension or fact. Reports can filter or group by using dimension table columns and summarize fact table columns.
 
@@ -367,9 +367,9 @@ For more information on table storage modes including dual storage, see [Manage 
 
 ### Enable single-sign on
 
-When you publish a DirectQuery model to the Power BI service, you can use the dataset settings to enable single sign-on (SSO) by using Azure Active Directory (Azure AD) OAuth2 for your report users. You should enable this option when Dataverse queries must execute in the security context of the report user.
+When you publish a DirectQuery model to the Power BI service, you can use the dataset settings to enable single sign-on (SSO) by using Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) OAuth2 for your report users. You should enable this option when Dataverse queries must execute in the security context of the report user.
 
-When the SSO option is enabled, Power BI sends the report user's authenticated Azure AD credentials in the queries to Dataverse. This option enables Power BI to honor the security settings that are set up in the data source.
+When the SSO option is enabled, Power BI sends the report user's authenticated Microsoft Entra credentials in the queries to Dataverse. This option enables Power BI to honor the security settings that are set up in the data source.
 
 :::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/enable-single-sign-on.png" alt-text="Screenshot shows the dataset credentials window with the SSO option enabled." border="false":::
 
@@ -401,7 +401,7 @@ in
     dbo_account
 ```
 
-When you publish the model to the Power BI service, you must enable single sign-on (SSO) so that Power BI will send the report user's authenticated Azure AD credentials to Dataverse.
+When you publish the model to the Power BI service, you must enable single sign-on (SSO) so that Power BI will send the report user's authenticated Microsoft Entra credentials to Dataverse.
 
 ### Create supplementary import models
 

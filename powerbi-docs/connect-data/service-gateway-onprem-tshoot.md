@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 08/31/2022
+ms.date: 11/01/2023
 LocalizationGroup: Gateways 
 ---
 
@@ -26,7 +26,7 @@ At the end of configuration, the Power BI service is called again to validate th
 ## Data sources
 
 > [!NOTE]
-> Not all data sources have dedicated articles detailing their connection settings or configuration. For many data sources and non-Microsoft connectors, connection options may vary between Power BI Desktop, and **Manage gateways > Data source settings** configurations in the Power BI service. In such cases, the default settings provided are the currently supported scenarios for Power BI. 
+> Not all data sources have dedicated articles detailing their connection settings or configuration. For many data sources and non-Microsoft connectors, connection options might vary between Power BI Desktop, and **Manage gateways > Data source settings** configurations in the Power BI service. In such cases, the default settings provided are the currently supported scenarios for Power BI. 
 
 ### Error: Unable to Connect. Details: "Invalid connection credentials"
 
@@ -144,7 +144,7 @@ The exact limitation is 10 GB of uncompressed data per table. If you're hitting 
 
 A few different scenarios could be responsible for this error
 
-- Gateway process may have restarted when the dataset refresh was in progress.
+- Gateway process might have restarted when the dataset refresh was in progress.
 - The gateway machine is cloned where gateway is running. We should not clone gateway machine.
 
 ## Reports
@@ -299,12 +299,6 @@ When you use the gateway for a scheduled refresh, **Refresh history** can help y
     ![Refresh history display](media/service-gateway-onprem-tshoot/refresh-history.png)
 
 For more information about troubleshooting refresh scenarios, see [Troubleshoot refresh scenarios](refresh-troubleshooting-refresh-scenarios.md).
-
-## Fiddler trace
-
-[Fiddler](https://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic. You can see the back and forth with the Power BI service from the client machine. This traffic list might show errors and other related information.
-
-![Using the Fiddler trace](media/service-gateway-onprem-tshoot/fiddler.png)
 
 ## Next steps
 

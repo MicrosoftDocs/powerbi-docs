@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 12/13/2022
+ms.date: 10/23/2023
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -21,7 +21,7 @@ The following table lists some of the Premium enhancements.
 |Enhancement           |Details  |
 |----------------------|---------|
 |Purchase Premium for individuals in your organization  |See [Power BI Premium Per User (PPU)](service-premium-per-user-faq.yml). |
-|Improved metrics      |Capacity performance depends only on the amount of CPU usage. Metrics can be easily understood using the [Power BI Premium Capacity Utilization and Metrics](service-premium-metrics-app.md) app. |
+|Improved metrics      |Capacity performance depends only on the amount of CPU usage. Metrics can be easily understood using the [Microsoft Fabric Capacity Metrics](/fabric/enterprise/metrics-app) app. |
 |Autoscale             |An optional feature that prevents slowdowns caused by throttling on overloaded capacities. When enabled, if the load on the capacity exceeds the capacity limits, [autoscale](service-premium-auto-scale.md) automatically adds one v-core at a time for 24-hour periods. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. |
 
 ## Capacities and SKUs
@@ -78,7 +78,7 @@ You can schedule and run as many refreshes as required at any given time, and th
 
 When monitoring Power BI Premium and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), you only need to take into consideration one aspect: *how much CPU your capacity requires to serve the load at any moment*. To monitor your capacity, use the [Power BI Premium Capacity Utilization and Metrics](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbipremiumcapacitymonitoringreport?tab=Overview) app.
 
-To install the app, see [Install the Premium metrics app](service-premium-install-app.md). You can learn how to use the app in the article [Use the Premium metrics app](service-premium-metrics-app.md).
+To install the app, see [Install the Microsoft Fabric capacity metrics app](/fabric/enterprise/metrics-app-install). You can learn how to use the app in the article [Microsoft Fabric Capacity Metrics](/fabric/enterprise/metrics-app).
 
 Here's what happens when you exceed your CPU limit per the SKU size you purchased:
 
@@ -113,6 +113,13 @@ The following known limitations currently apply to Power BI Premium.
     | ADOMD          | 19.12.7.0  |
 
     In some cases, manually installing the most recent client libraries may be necessary to reduce potential connection and operation errors. To learn more about verifying existing installed client library versions and manually installing the most recent versions, see [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true).
+
+* **Datasets compatibility** - Some datasets are incompatible with the Power BI service modern infrastructure:
+    * Datasets created in Power BI service from CSV files.
+    * Datasets in the [admin monitoring workspace](/fabric/admin/monitoring-workspace) and usage metrics models.
+    * Datasets that still use 1103 compatibility level.
+    * [Push datasets](../connect-data/service-real-time-streaming.md#push-dataset).
+    * Datasets that use deprecated features such as content packs.
 
 ## Next steps
 

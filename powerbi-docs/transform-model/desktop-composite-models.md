@@ -330,7 +330,7 @@ When working with DirectQuery for Power BI datasets and Analysis Services, consi
     For more information on using date columns versus date hierarchies, see [apply auto date or time in Power BI Desktop](desktop-auto-date-time.md).
 
 * The maximum length of a chain of models is three. Extending beyond the chain length of three isn't supported and results in errors.
-* A discourage chaining flag can be set on a model to prevent a chain from being created or extended. See Manage DirectQuery connections to a published dataset for more information.
+* A discourage chaining flag can be set on a model to prevent a chain from being created or extended. See [Manage DirectQuery connections to a published dataset](../connect-data/desktop-discourage-directquery-connections-to-dataset.md) for more information.
 * The connection to a Power BI dataset or Analysis Services model won't be shown in Power Query.
 
 The following **limitations** apply when working with DirectQuery for Power BI datasets and Analysis Services:
@@ -422,7 +422,8 @@ To summarize:
 * If the source model updates its OLS rules, those changes will only affect the composite model when it's refreshed.  
 
 ### Loading a subset of tables from a Power BI dataset or Analysis Services model
-When connecting to a Power BI dataset or Analysis Services model using a DirectQuery connection, you can decide which tables to connect to. You can also choose to automatically add any table that might get added to the dataset or model after you make the connection to your model. When you connect to a perspective your model will contain all tables in the dataset or model and any tables not included in the perspective will be hidden. Moreover, any table that might get added to the perspective will be added automatically.
+When connecting to a Power BI dataset or Analysis Services model using a DirectQuery connection, you can decide which tables to connect to. You can also choose to automatically add any table that might get added to the dataset or model after you make the connection to your model. When you connect to a perspective your model will contain all tables in the dataset or model and any tables not included in the perspective will be hidden. Moreover, any table that might get added to the perspective will be added automatically. In the **Settings** menu you can decide to automatically connect to tables that are added to the dataset or model after you first set up the connection.
+
 This dialog won't be shown for live connections.
 
 >[!NOTE]
@@ -430,6 +431,24 @@ This dialog won't be shown for live connections.
 
 :::image type="content" source="media/desktop-composite-models/directquery-datasets-subset.png" alt-text="Dialog that allows specifying what tables to load from a Power BI dataset or Analysis Services model.":::
 
+### Setting up deduplication rules
+You can specify deduplication rules to keep measure and table names unique in a composite model by using the **Settings** option in the dialog shown above:
+
+:::image type="content" source="media/desktop-composite-models/directquery-datasets-deduplication-rules.png" alt-text="Dialog that allows specifying deduplication rules to apply when loading from a Power BI dataset or Analysis Services model.":::
+
+In the example above we have decided to add ' (marketing)' as a suffix to any table or measure name that is in conflict with another source in the composite model. 
+Note that you can: 
+- enter a text to be added to the name of conflicting tables or measures
+- specify whether you want the text to be added to the table or measure name as a prefix or a suffix 
+- apply the deduplication rule to tables, measures or both 
+- Choose to apply the deduplication rule only when a name conflict occurs or apply it all the time. The default is to apply the rule only when duplication occurs. In our example, any table or measure from the marketing source that does not have a duplicate in the sales source will not get a name change. 
+
+After you make the connections and set up the deduplication rule, your field list will show both ‘Customer’ and ‘Customer (marketing)’ according to the deduplication rule set up in our example:
+
+:::image type="content" source="media/desktop-composite-models/directquery-datasets-name-deduplication-rules-effect.png" alt-text="Dialog that allows specifying deduplication rules to apply when loading from a Power BI dataset or Analysis Services model.":::
+
+
+If you do not specify a deduplication rule or the deduplication rules you specified do not resolve the name conflict the standard deduplication rules  are still applied. The standard deduplication rules add a number to the name of a the conflicting item. In case of a name conflict on the 'Customer' table one of the 'Customer' tables will be renamed 'Customer 2'.
 
 ## Considerations and limitations
 
