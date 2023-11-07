@@ -111,7 +111,7 @@ There are multiple options to load data into a Lakehouse, including data pipelin
 
 When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and query the model through XMLA endpoints in much the same way as any other model. During **preview**, XMLA write operations are not yet supported.
 
-### To configure a Direct Lake model with a fixed identity
+## Configure a Direct Lake model with a fixed identity
 
 1. In your Direct Lake model's settings, expand **Gateway and cloud connections**. Note that your Direct Lake model has a SQL Server data source pointing to a lakehouse or data warehouse in Fabric.
 
