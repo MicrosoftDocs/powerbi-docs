@@ -48,7 +48,7 @@ To see the **Copilot** button in your report, you first need to select a semanti
 
     Otherwise select **Create a report that shows** and provide guidance on what you want in the report.
 
-1. If you need help writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts.md) for guidance.
+1. If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts.md) for guidance.
 
 ## Create a summary
 

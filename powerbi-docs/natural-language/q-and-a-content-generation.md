@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 10/31/2023
+ms.date: 11/08/2023
 ---
 # How Q&A generates visuals
 
@@ -31,6 +31,7 @@ To learn more about Copilot-powered features in Q&A, see [Enhance Q&A with Copil
 
 ## Next steps
 
-To learn more about ways to improve the quality of your Q&A outputs, see [Best practices to optimize Q&A](q-and-a-best-practices.md).
+Learn more about:
 
-To learn more about Copilot and other Copilot-powered capabilities in Power BI, see Overview of Copilot in Power BI (../create-reports/copilot-introduction.md).
+- Ways to improve the quality of your Q&A outputs, see [Best practices to optimize Q&A](q-and-a-best-practices.md).
+- Copilot and other Copilot-powered capabilities in Power BI, see [Overview of Copilot in Power BI](../create-reports/copilot-introduction.md).
