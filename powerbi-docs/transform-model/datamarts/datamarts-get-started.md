@@ -238,11 +238,11 @@ The following is a list of settings available for each datamart.
 | Schedule refresh | Data refresh information for the datamart, based on the schedule defined by the user.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-13.png" alt-text="Screenshot of the datamart scheduled refresh menu."::: |
 | Sensitivity label | Sensitivity label applied on datamart, which also gets propagated on the downstream auto-generated semantic model, reports, and so on.<br> :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-14.png" alt-text="Screenshot of the datamart sensitivity label settings."::: <br><br>The sensitivity labels propagation to downstream semantic model, reports won't happen in the following scenarios:<ul><li>Sensitivity label downgrade<li>Specific items when the sensitivity label was manually set</ul> |
 
+
 The following table shows settings for auto-generated semantic models. When these settings are applied on an auto-generated semantic model, they're also applied to datamart as well.
 
 | Setting | Details |
 | --- | --- |
-| Endorsement and discovery | :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-15.png" alt-text="Screenshot of the endorsement and discovery setting."::: |
 | Request access | :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-16.png" alt-text="Screenshot of the request access setting."::: |
 | Q&amp;A | :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-17.png" alt-text="Screenshot of the Q and A setting."::: |
 | Query caching | :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-18.png" alt-text="Screenshot of the query caching setting."::: |
