@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 01/12/2023
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 # Creating a dataflow
@@ -127,7 +127,7 @@ To import a dataflow, select the import box and upload the file. Power BI create
 
 ## Next steps
 
-By putting your data into a dataflow you can use Power BI Desktop and the Power BI service to create datasets, reports, dashboards, and apps. These new resources can give you insights into your business activities. The following articles go into more detail about common usage scenarios for dataflows:
+By putting your data into a dataflow you can use Power BI Desktop and the Power BI service to create semantic models, reports, dashboards, and apps. These new resources can give you insights into your business activities. The following articles go into more detail about common usage scenarios for dataflows:
 
 * [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
 * [Configure and consume a dataflow](dataflows-configure-consume.md)

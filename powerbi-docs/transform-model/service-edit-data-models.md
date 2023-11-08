@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 05/04/2023
+ms.date: 11/10/2023
 ms.custom: references_regions
 LocalizationGroup: Transform and shape data
 ---
@@ -17,7 +17,7 @@ Power BI allows users to modify existing data models in the Power BI service usi
 
 
 ## Enable the preview feature
-Editing data models in the Power BI service is automatically enabled for datasets stored in *My Workspace*. To open the data model for datasets stored in collaborative workspaces, you must turn on the preview feature for that workspace by completing the following steps:
+Editing data models in the Power BI service is automatically enabled for semantic models stored in *My Workspace*. To open the data model for semantic models stored in collaborative workspaces, you must turn on the preview feature for that workspace by completing the following steps:
 
 1. In the Power BI service, select **Settings** for the workspace where you want to enable the preview feature.
 
@@ -27,27 +27,27 @@ Editing data models in the Power BI service is automatically enabled for dataset
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-02.png" alt-text="Screenshot of enable preview feature." lightbox="media/service-edit-data-models/service-edit-data-models-02.png":::
 
-3. Select **Save** to see the new experience for datasets in your workspace.
+3. Select **Save** to see the new experience for semantic models in your workspace.
 
 > [!NOTE]
-> Enabling the *edit data models in the Power BI service* preview doesn't apply to editing a dataset through an API or an XMLA endpoint.
+> Enabling the *edit data models in the Power BI service* preview doesn't apply to editing a semantic model through an API or an XMLA endpoint.
 
 ## Open the data model
-You can open the data model for your dataset in the following ways:
+You can open the data model for your semantic model in the following ways:
 
-* From the workspace content list, select **More options (...)** for the dataset and select **Open data model**.
+* From the workspace content list, select **More options (...)** for the semantic model and select **Open data model**.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-03.png" alt-text="Screenshot of opening the data model from the more options menu." lightbox="media/service-edit-data-models/service-edit-data-models-03.png":::
 
-* From the data hub content list, select **More options (...)** for the dataset and select **Open data model**.
+* From the data hub content list, select **More options (...)** for the semantic model and select **Open data model**.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-04.png" alt-text="Screenshot of opening the data model from the data hub content list." lightbox="media/service-edit-data-models/service-edit-data-models-04.png":::
 
-* From the dataset details page, select **Open data model**.
+* From the semantic model details page, select **Open data model**.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-05.png" alt-text="Screenshot of opening the data model from the open data model button." lightbox="media/service-edit-data-models/service-edit-data-models-05.png":::
 
-* From **edit mode** for a report connected to the dataset, select **Open data model** to open the corresponding data model in another tab.
+* From **edit mode** for a report connected to the semantic model, select **Open data model** to open the corresponding data model in another tab.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-06.png" alt-text="Screenshot of opening the data model in edit mode." lightbox="media/service-edit-data-models/service-edit-data-models-06.png":::
 
@@ -180,7 +180,7 @@ You can define [security roles](../enterprise/service-admin-rls.md) by taking th
     :::image type="content" source="media/service-edit-data-models/service-edit-data-models-18.png" alt-text="Screenshot of assigning users to the security role." lightbox="media/service-edit-data-models/service-edit-data-models-18.png":::
 
 ### Create layouts
-You can create [layouts](desktop-modeling-view.md) of your model that contain only a subset of the tables in your model. This reorganization can help provide a clearer view into the tables you want to work with, and make working with complex datasets easier. To create a new layout with only a subset of the tables, select the **+** button next to the *All tables* tab along the bottom of the window.
+You can create [layouts](desktop-modeling-view.md) of your model that contain only a subset of the tables in your model. This reorganization can help provide a clearer view into the tables you want to work with, and make working with complex semantic models easier. To create a new layout with only a subset of the tables, select the **+** button next to the *All tables* tab along the bottom of the window.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-19.png" alt-text="Screenshot of the plus button used to create a layout.":::
 
@@ -190,17 +190,17 @@ You can then drag a table from the **Data** pane onto the new layout. Right-clic
 
 
 ### Create reports
-You can create a new report from the data model editing in the service experience by selecting the **New report** button in the ribbon. This opens a new browser tab to the report editing canvas to a new report that is built on the dataset. 
+You can create a new report from the data model editing in the service experience by selecting the **New report** button in the ribbon. This opens a new browser tab to the report editing canvas to a new report that is built on the semantic model. 
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-21.png" alt-text="Screenshot of selecting the new report button from the ribbon.":::
 
-When you save your new report, you're prompted to choose a workspace, provided you have write permissions for that workspace. If you don't have write permissions, or if you're a free user and the dataset resides in a Premium-capacity workspace, the new report is saved in your *My workspace*.
+When you save your new report, you're prompted to choose a workspace, provided you have write permissions for that workspace. If you don't have write permissions, or if you're a free user and the semantic model resides in a Premium-capacity workspace, the new report is saved in your *My workspace*.
 
 ## AutoSave
 As you made changes to your data model, your changes are automatically saved. Changes are permanent with no option to undo.
 
 ## Permissions
-A user must have write and build [dataset permissions](../connect-data/service-datasets-permissions.md) in order to open and edit the corresponding data model in the Power BI service.
+A user must have write and build [semantic model permissions](../connect-data/service-datasets-permissions.md) in order to open and edit the corresponding data model in the Power BI service.
 
 ## Enabling data model editing in the admin portal
 Power BI administrators can enable or disable data model editing in the service for the entire organization or for specific security groups, using the setting found in the Power BI **admin portal**, as shown in the following image.
@@ -226,8 +226,8 @@ You can monitor the effect editing data models in the service has on your Power 
 
 |Operation  |Description  |Workload |Type  |
 |---------|---------|---------|---------|
-|Web Modeling read     |A data model read operation in the dataset web modeling user experience         |Datasets	|Interactive         |
-|Web Modeling write     |A data model write operation in the dataset web modeling user experience         |Datasets	|Interactive         |
+|Web Modeling read     |A data model read operation in the semantic model web modeling user experience         |Semantic models	|Interactive         |
+|Web Modeling write     |A data model write operation in the semantic model web modeling user experience         |Semantic models	|Interactive         |
 
 
 
@@ -235,18 +235,18 @@ You can monitor the effect editing data models in the service has on your Power 
 
 There are a few limitations for this release of editing data models in the Power BI service, which fall into a handful of categories.
 
-### Unsupported datasets
+### Unsupported semantic models
 
-The following scenarios don't support opening the data model for a dataset in the service:
-* Datasets that have incremental refresh.
-* Datasets that have been deployed by a deployment pipeline.
-* Datasets modified by an XMLA endpoint.
-* Datasets that haven't yet been upgraded to enhanced metadata format. You can upgrade to enhanced metadata format by opening the corresponding pbix in Desktop and republishing. 
-* Datasets that have automatic aggregations configured.
-* Datasets that have a live connection.
-* Not all datasets in Pro workspaces are currently supported in UAE North.
+The following scenarios don't support opening the data model for a semantic model in the service:
+* Semantic models that have incremental refresh.
+* Semantic models that have been deployed by a deployment pipeline.
+* Semantic models modified by an XMLA endpoint.
+* Semantic models that haven't yet been upgraded to enhanced metadata format. You can upgrade to enhanced metadata format by opening the corresponding pbix in Desktop and republishing. 
+* Semantic models that have automatic aggregations configured.
+* Semantic models that have a live connection.
+* Not all semantic models in Pro workspaces are currently supported in UAE North.
 
-To see which limitation is preventing you from opening your data model, hover over the **Open data model** button in the dataset details page. This displays a tooltip indicating which limitation is causing the **Open data model** button to be disabled.
+To see which limitation is preventing you from opening your data model, hover over the **Open data model** button in the semantic model details page. This displays a tooltip indicating which limitation is causing the **Open data model** button to be disabled.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-23.png" alt-text="Screenshot of hovering over the open data model button.":::
 
@@ -269,8 +269,8 @@ There are still many functional gaps between the model view in Power BI desktop 
 * Q&A setup and configuration including editing synonyms
 * Classifying sensitivity of your report
 * External tools integration
-* When modifying your data model within the Service, creating a relationship between DirectQuery tables from the same Power BI dataset or Azure Analysis Services instance will not be properly prevented. Like Desktop, this scenario is not supported, but no error will be generated when you try to perform this action.
-* When modifying your data model within the Service, changing the name of data fields will not automatically update in existing visuals in downstream artifacts that depend on that dataset.
+* When modifying your data model within the Service, creating a relationship between DirectQuery tables from the same Power BI semantic model or Azure Analysis Services instance will not be properly prevented. Like Desktop, this scenario is not supported, but no error will be generated when you try to perform this action.
+* When modifying your data model within the Service, changing the name of data fields will not automatically update in existing visuals in downstream artifacts that depend on that semantic model.
 
 ### Accessibility
 Full accessibility isn’t currently supported for data model editing in the Power BI service.
