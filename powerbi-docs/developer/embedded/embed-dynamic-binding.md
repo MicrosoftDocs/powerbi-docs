@@ -1,12 +1,12 @@
 ---
-title: Connect a Power BI report to a semantic model using dynamic binding
+title: Connect a Power BI report to a dataset using dynamic binding
 description: Learn how to embed a Power BI report using dynamic binding.
 author: mberdugo
 ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 11/08/2023
+ms.date: 06/07/2022
 ---
 
 # Connect a report to a semantic model using dynamic binding
@@ -33,11 +33,11 @@ Dynamic binding is supported for both *Embedding for your organization* and *Emb
 |*Embedding for your customers*     |App owns data         |Access token for non-Power BI users         |Must include permissions for both the report and the dynamically bound semantic model. Use the [API for generating an embed token for multiple items](/rest/api/power-bi/embed-token/generate-token), to generate an embed token that supports multiple items.         |
 
 >[!NOTE]
-> The maximum number of data sources allowed per user is 1000. This limit implies that the combined number of datas sources used in the dynamic binding between reports and semantic models by this user cannot exceed 1000.
+> The maximum number of data sources allowed per user is 1000. This limit implies that the combined number of datas sources used in the dynamic binding between reports and semantic modelts by this user cannot exceed 1000.
 
 ## Adjusting the config object
 
-For dynamic binding to work, you need to add `datasetBinding` to the config object. To learn how this is done, see [Bind semantic models dynamically to a report](/javascript/api/overview/powerbi/bind-report-datasets).
+For dynamic binding to work, you need to add `datasetBinding` to the config object. To learn how this is done, see [Bind datasets dynamically to a report](/javascript/api/overview/powerbi/bind-report-datasets).
 
 ## Next steps
 
