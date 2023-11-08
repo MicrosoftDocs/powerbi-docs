@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/05/2019
+ms.date: 11/10/2023
 ---
 
 # Data reduction techniques for Import modeling
@@ -18,9 +18,9 @@ Import models are loaded with data that is compressed and optimized and then sto
 
 Despite the efficiencies achieved by the VertiPaq storage engine, it is important that you strive to minimize the data that is to be loaded into your models. It is especially true for large models, or models that you anticipate will grow to become large over time. Four compelling reasons include:
 
-- Larger model sizes may not be supported by your capacity. Shared capacity can host models up to 1 GB in size, while Premium capacities can host larger models depending on the SKU. For further information, read the [Power BI Premium support for large datasets](../enterprise/service-premium-what-is.md) article.
+- Larger model sizes may not be supported by your capacity. Shared capacity can host models up to 1 GB in size, while Premium capacities can host larger models depending on the SKU. For further information, read the [Power BI Premium support for large semantic models](../enterprise/service-premium-what-is.md) article.
 - Smaller model sizes reduce contention for capacity resources, in particular memory. It allows more models to be concurrently loaded for longer periods of time, resulting in lower eviction rates.
-- Smaller models achieve faster data refresh, resulting in lower latency reporting, higher dataset refresh throughput, and less pressure on source system and capacity resources.
+- Smaller models achieve faster data refresh, resulting in lower latency reporting, higher semantic model refresh throughput, and less pressure on source system and capacity resources.
 - Smaller table row counts can result in faster calculation evaluations, which can deliver better overall query performance.
 
 There are eight different data reduction techniques covered in this article. These techniques include:
@@ -49,7 +49,7 @@ We recommend that you design models with exactly the right number of columns bas
 
 Model tables should be loaded with as few rows as possible. It can be achieved by loading filtered rowsets into model tables for two different reasons: to filter by entity or by time. Removing rows is referred to as _horizontal filtering_.
 
-**Filtering by entity** involves loading a subset of source data into the model. For example, instead of loading sales facts for all sales regions, only load facts for a single region. This design approach will result in many smaller models, and it can also eliminate the need to define row-level security (but will require granting specific dataset permissions in the Power BI service, and creating "duplicate" reports that connect to each dataset). You can leverage the use of Power Query parameters and Power BI Template files to simplify management and publication. For further information, read the [Deep Dive into Query Parameters and Power BI Templates](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/) blog entry.
+**Filtering by entity** involves loading a subset of source data into the model. For example, instead of loading sales facts for all sales regions, only load facts for a single region. This design approach will result in many smaller models, and it can also eliminate the need to define row-level security (but will require granting specific semantic model permissions in the Power BI service, and creating "duplicate" reports that connect to each semantic model). You can leverage the use of Power Query parameters and Power BI Template files to simplify management and publication. For further information, read the [Deep Dive into Query Parameters and Power BI Templates](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/) blog entry.
 
 **Filtering by time** involves limiting the amount of _data history_ loaded into fact-type tables (and limiting the date rows loaded into the model date tables). We suggest you don't automatically load all available history, unless it is a known reporting requirement. It is helpful to understand that time-based Power Query filters can be parameterized, and even set to use relative time periods (relative to the refresh date, for example, the past five years). Also, bear in mind that retrospective changes to time filters will not break reports; it will just result in less (or more) data history available in reports.
 
