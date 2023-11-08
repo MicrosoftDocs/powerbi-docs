@@ -68,28 +68,25 @@ The local storage API has four methods:
   * PrivilegeStatus.NotSupported – when the api is not supported (see limitations)
   * PrivilegeStatus.Allowed – when it is allowed to use the api
 
-best practice: before using the get set remove use the status method to check the status of the api, this will make your visual behave more properly. 
+best practice: before using the get set remove use the status method to check the status of the api, this will make your visual behave more properly.
 
-get: 
-this method expects one parameter: 
-key – the key you want to get its value. 
+get:
+this method expects one parameter:
+key – the key you want to get its value.
 returns a promise that resolves with the value if the key exists and reject otherwise  
 
-
 set:  
-expects two parameters: 
-key – the key you want to set its value. 
-data – the value for the key 
-returns a promise that resolves to struct of the type  StorageV2ResultInfo, or rejects if an error occurred. 
+expects two parameters:
+key – the key you want to set its value.
+data – the value for the key
+returns a promise that resolves to struct of the type  StorageV2ResultInfo, or rejects if an error occurred.
 
-remove: 
-expects one parameter: 
-key – the key of the pair you want to remove. 
+remove:
+expects one parameter:
+key – the key of the pair you want to remove.
 
- 
-
-How to use the local storage api: 
-First you need to add declaration to the privileges array in visual capabilities (see this link https://learn.microsoft.com/en-us/power-bi/developer/visuals/capabilities#define-privileges:~:text=pbiviz.json%20file.-,Define%20privileges,-A%20JSON%20privilege 
+How to use the local storage api:
+First you need to add declaration to the [privileges array in visual capabilities](./capabilities.md#define-privileges)
 
 ```typescript
 import IVisualLocalStorageV2Service = powerbi.extensibility.IVisualLocalStorageV2Service; 
