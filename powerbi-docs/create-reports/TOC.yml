@@ -98,6 +98,20 @@
           href: dynamics-quick-create-report.md
         - name: Create a quick report in Jupyter
           href: jupyter-quick-report.md
+    - name: Copilot for Power BI
+      items: 
+        - name: Introduction to Copilot for Power BI
+          href: copilot-introduction.md
+        - name: Evaluate your data for Copilot
+          href: copilot-evaluate-data.md
+        - name: Create a report with Copilot
+          href: copilot-create-report.md
+        - name: Write successful prompts for Copilot
+          href: copilot-prompts.md
+        - name: Create a narrative summary visual of a page
+          href: copilot-create-narrative.md
+        - name: Create a quick summary of a page
+          href: copilot-summarize-page.md
     - name: Enable automatic page refresh
       href: desktop-automatic-page-refresh.md
     - name: Examine report elements with Performance Analyzer
