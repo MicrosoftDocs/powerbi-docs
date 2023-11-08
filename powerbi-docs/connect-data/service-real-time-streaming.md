@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/03/2023
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 # Real-time streaming in Power BI
@@ -217,7 +217,7 @@ Streaming semantic models are designed to display the latest data. You can use t
 For push semantic models, if you have a timestamp in the schema, you can try creating a report visual with the `last N` filter.
 
 #### How can you do modeling on real-time semantic models?
-Modeling isn't possible on a streaming semantic model, because the data isn't stored permanently. For a push semantic model, you can use the [create dataset REST API](/rest/api/power-bi/push-datasets/datasets-post-dataset) to create a dataset with relationship and measures, and use the [update table REST APIs](/rest/api/power-bi/push-datasets/datasets-put-table) to add measures to existing tables.
+Modeling isn't possible on a streaming semantic model, because the data isn't stored permanently. For a push semantic model, you can use the [create semantic model REST API](/rest/api/power-bi/push-datasets/datasets-post-dataset) to create a semantic model with relationship and measures, and use the [update table REST APIs](/rest/api/power-bi/push-datasets/datasets-put-table) to add measures to existing tables.
 
 #### How can you clear all the values on a push or streaming semantic model?
 On a push semantic model, you can use the [delete rows REST API](/rest/api/power-bi/push-datasets/datasets-delete-rows) call. There's no way to clear data from a streaming semantic model, although the data will clear itself after an hour.
