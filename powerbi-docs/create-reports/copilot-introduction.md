@@ -45,7 +45,7 @@ Read [Evaluate your data for use with Copilot for Power BI](copilot-evaluate-dat
 
 ## Feature overview: Copilot capabilities
 
-Copilot provides a summary of your dataset and an outline of suggested pages for your report [link to create report article] and [link to create-narrative]. Then it generates those pages for the report.
+Copilot provides a summary of your dataset and an outline of suggested pages for your report. Then it generates those pages for the report.
 
 After you open a blank report with a semantic model, Copilot can generate:  
 
