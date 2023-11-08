@@ -76,10 +76,10 @@ Here are some advantages of using Power BI dataflows:
 
 - Dataset creators use the same familiar Power Query interface found in Power BI Desktop.
 - Data preparation and data transformation logic defined by a dataflow can be reused many times because it's centralized.
-- When data preparation logic changes are made to the dataflow, it may not require updating dependent data models. Removing or renaming columns, or changing column data types, will require updating dependent data models.
+- When data preparation logic changes are made to the dataflow, it might not require updating dependent data models. Removing or renaming columns, or changing column data types, will require updating dependent data models.
 - Pre-prepared data can easily be made available to Power BI dataset creators. Reuse is particularly helpful for commonly used tables—especially [dimension tables](star-schema.md#star-schema-overview), like date, customer, and product.
 - The level of effort required by dataset creators is reduced because the data preparation work has been *decoupled* from the data modeling work.
-- Fewer dataset creators need direct access to source systems. Source systems can be complex to query and may require specialized access permissions.
+- Fewer dataset creators need direct access to source systems. Source systems can be complex to query and could require specialized access permissions.
 - The number of refreshes executed on source systems is reduced because dataset refreshes connect to dataflows, and not to the source systems from which dataflows extract data.
 - Dataflow data represents a snapshot in time, and promotes consistency when used by many datasets.
 - Decoupling data preparation logic into dataflows can help improve dataset refresh success. If a dataflow refresh fails, datasets will refresh using the last successful dataflow refresh.
@@ -106,7 +106,7 @@ As previously mentioned, a dataflow is a source of data for datasets. In most ca
 
 ### Azure Data Lake Storage Gen2
 
-In Microsoft Azure, an ADLS Gen2 account is a specific type of Azure Storage account that has the [hierarchical namespace](/azure/storage/blobs/create-data-lake-storage-account) enabled. ADLS Gen2 has [performance, management, and security advantages](/azure/storage/blobs/data-lake-storage-introduction) for operating analytical workloads. By default, Power BI dataflows use internal storage, which is a built-in data lake account managed by the Power BI service. Optionally, organizations may *bring their own data lake* by connecting to their organization's ADLS Gen2 account.
+In Microsoft Azure, an ADLS Gen2 account is a specific type of Azure Storage account that has the [hierarchical namespace](/azure/storage/blobs/create-data-lake-storage-account) enabled. ADLS Gen2 has [performance, management, and security advantages](/azure/storage/blobs/data-lake-storage-introduction) for operating analytical workloads. By default, Power BI dataflows use internal storage, which is a built-in data lake account managed by the Power BI service. Optionally, organizations can *bring their own data lake* by connecting to their organization's ADLS Gen2 account.
 
 Here are some advantages of using the organization's data lake account:
 
@@ -115,7 +115,7 @@ Here are some advantages of using the organization's data lake account:
 
 ### Tenant-level storage
 
-The [Azure connections](../admin/service-admin-portal-azure-connections.md) section of the Admin portal includes a setting to configure a connection to an ADLS Gen2 account. Configuring this setting enables *bring your own data lake*. Once configured, you may [set workspaces to use that data lake account](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connect-to-an-azure-data-lake-gen-2-at-a-workspace-level).
+The [Azure connections](../admin/service-admin-portal-azure-connections.md) section of the Admin portal includes a setting to configure a connection to an ADLS Gen2 account. Configuring this setting enables *bring your own data lake*. Once set up, you can [set workspaces to use that data lake account](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connect-to-an-azure-data-lake-gen-2-at-a-workspace-level).
 
 > [!IMPORTANT]
 > Setting [Azure connections](../admin/service-admin-portal-azure-connections.md) does not mean that all dataflows in the Power BI tenant are stored in this account by default. In order to use an explicit storage account (instead of internal storage), each workspace must be specifically connected.
@@ -156,7 +156,7 @@ A data gateway is required when:
 
 ### System oversight
 
-The [activity log](../admin/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements. With a self-service data preparation scenario, it's particularly helpful to track usage of dataflows.
+The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements. With a self-service data preparation scenario, it's particularly helpful to track usage of dataflows.
 
 ## Next steps
 

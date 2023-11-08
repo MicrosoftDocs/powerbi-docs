@@ -35,7 +35,7 @@ The scenario diagram depicts the following user actions, tools, and features:
 | --- | --- |
 | ![Item 1.](media/common/icon-01-red-30x30.png) | Dataset creator A develops a model using Power BI Desktop. For a dataset that's intended for reuse, it's common (but not required) for the creator to belong to a centralized team that supports users across organizational boundaries (such as IT, enterprise BI, or the Center of Excellence). |
 | ![Item 2.](media/common/icon-02-red-30x30.png) | Power BI Desktop connects to data from one or more data sources. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | Data model development is done in Power BI Desktop. Additional effort is made to create a well-designed and user-friendly model because it may be used as a data source by many self-service report creators. |
+| ![Item 3.](media/common/icon-03-red-30x30.png) | Data model development is done in Power BI Desktop. Additional effort is made to create a well-designed and user-friendly model so it can be used as a data source by many self-service report creators. |
 | ![Item 4.](media/common/icon-04-red-30x30.png) | When ready, dataset creator A publishes their Power BI Desktop file (.pbix) *that contains only a model* to the Power BI service. |
 | ![Item 5.](media/common/icon-05-red-30x30.png) | The dataset is published to a workspace dedicated to storing and securing shared datasets. Since the dataset is intended for reuse, it's [endorsed](../collaborate-share/service-endorse-content.md) (certified or promoted, as appropriate). The dataset is also marked as [discoverable](../collaborate-share/service-discovery.md) to further encourage its reuse. The [lineage view](../collaborate-share/service-data-lineage.md) in the Power BI service can be used to track dependencies that exist between Power BI items. |
 | ![Item 6.](media/common/icon-06-red-30x30.png) | [Data discovery in the data hub](../connect-data/service-data-hub.md) is enabled because the dataset is marked as discoverable. Discoverability allows the existence of a dataset to be visible in the data hub by other Power BI content creators who are looking for data. |
@@ -88,7 +88,7 @@ The [data hub](../connect-data/service-data-hub.md) helps report creators find, 
 
 ### Request dataset access
 
-A report creator may find a dataset in the [data hub](../connect-data/service-data-hub.md) that they want to use. If they don't have Build permission for the dataset, they can request access. Depending on the [request access setting](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) for the dataset, an email will be submitted to the dataset owner or custom instructions will be presented to the person who is requesting access.
+A report creator might find a dataset in the [data hub](../connect-data/service-data-hub.md) that they want to use. If they don't have Build permission for the dataset, they can request access. Depending on the [request access setting](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) for the dataset, an email will be submitted to the dataset owner or custom instructions will be presented to the person who is requesting access.
 
 ### Publish to separate workspaces
 
@@ -109,7 +109,7 @@ Typically, a data gateway is required when accessing data sources that reside wi
 
 ### System oversight
 
-The [activity log](../admin/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements. With a customizable managed self-service BI scenario, it's particularly helpful to track usage of the original shared dataset as well as dependent datasets.
+The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements. With a customizable managed self-service BI scenario, it's particularly helpful to track usage of the original shared dataset as well as dependent datasets.
 
 ## Next steps
 

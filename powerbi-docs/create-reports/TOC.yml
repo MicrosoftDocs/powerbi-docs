@@ -216,7 +216,7 @@
       href: service-interact-with-a-report-in-editing-view.md
     - name: Analyze in Excel
       href: ../collaborate-share/service-analyze-in-excel.md
-    - name: Work with aggregates in the service
+    - name: Work with aggregates
       href: service-aggregates.md
     - name: Create a QR code for a report
       href: service-create-qr-code-for-report.md
@@ -632,16 +632,18 @@
           href: ../paginated-reports/report-design/create-invoices-forms-lists-report-builder.md
       - name: Control page breaks, headings, columns, and rows
         href: ../paginated-reports/report-design/control-page-breaks-headings-columns-rows-report-builder.md
-      - name: Interactive sort and links
+      - name: Interactive sort, document maps, and links
         items:
         - name: Interactive sort and links
           href: ../paginated-reports/report-design/interactive-sort-links-report-builder.md
-        - name: Interactive sort in a paginated report
+        - name: Interactive sort
           href: ../paginated-reports/report-design/interactive-sort-report-builder.md
-        - name: Add a bookmark to a paginated report
+        - name: Add a bookmark
           href: ../paginated-reports/report-design/add-bookmark-report-report-builder.md
-        - name: Add a hyperlink to a URL in a paginated report
+        - name: Add a hyperlink to a URL
           href: ../paginated-reports/report-design/add-hyperlink-url-report-builder.md
+        - name: Add a document map
+          href: ../paginated-reports/report-builder-add-document-map.md
       - name: Add a border to a paginated report
         href: ../paginated-reports/report-design/add-border-report-report-builder.md
       - name: Add a page break to a paginated report

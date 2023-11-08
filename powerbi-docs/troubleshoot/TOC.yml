@@ -9,6 +9,14 @@
       href: known-issues/power-bi-known-issues.md
     - name: Active known issues for Fabric + Power BI - interactive report
       href: https://support.fabric.microsoft.com/known-issues
+    - name: New card visual formatting appears or disappears in Service
+      href: known-issues/known-issue-535-new-card-visual-formatting-appears-disappears.md
+    - name: Unable to sign in on 32-bit Power BI Desktop
+      href: known-issues/known-issue-533-unable-sign-in-32-bit-desktop.md
+    - name: Sign in fails for securely embedded reports using Chrome or Microsoft Edge browser
+      href: known-issues/known-issue-532-sign-in-fails-securely-embedded-reports-using-chrome-browser.md
+    - name: Dataflow REST API returns more data sources and gateways than expected
+      href: known-issues/known-issue-526-dataflow-rest-api-returns-more-data-sources-gateways.md
     - name: Combo chart custom labels don't display
       href: known-issues/known-issue-523-combo-chart-custom-labels-dont-display.md
     - name: Failures in the Fabric Capacity Metrics app
@@ -29,7 +37,7 @@
       href: known-issues/known-issue-443-deployment-pipeline-stuck-loading.md 
     - name: Workspace setting 'large dataset storage format' isn't persistent 
       href: known-issues/known-issue-432-workspace-setting-large-dataset-storage-format-not-persistent.md
-    - name: Tenant admin settings may not save correctly
+    - name: Tenant admin settings might not save correctly
       href: known-issues/known-issue-427-tenant-admin-settings-may-not-save-correctly.md
     - name: New org app content doesn't show in first load
       href: known-issues/known-issue-430-newly-added-content-org-app-doesnt-show.md

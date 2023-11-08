@@ -67,7 +67,7 @@ Common characteristics of maturity level 100 include:
 
 ### Maturity level 200 – Repeatable
 
-Level 200 is referred to as _repeatable_ or _managed_. At this point on the maturity curve, data management is planned and executed. Defined processes exist, though these processes may not apply uniformly throughout the organization.
+Level 200 is referred to as _repeatable_ or _managed_. At this point on the maturity curve, data management is planned and executed. Defined processes exist, though these processes might not apply uniformly throughout the organization.
 
 Common characteristics of maturity level 200 include:
 
@@ -86,7 +86,7 @@ Level 300 is referred to as _defined_. At this point on the maturity curve, a se
 Common characteristics of maturity level 300 include:
 
 - Measurable success is achieved for the effective use of analytics.
-- Progress is made on the standardization of repeatable practices. However, less-than-optimal aspects may still exist due to early uncontrolled growth.
+- Progress is made on the standardization of repeatable practices. However, less-than-optimal aspects could still exist due to early uncontrolled growth.
 - The [COE](powerbi-adoption-roadmap-center-of-excellence.md) is established. It has clear goals and scope of responsibilities.
 - The internal [community of practice](powerbi-adoption-roadmap-community-of-practice.md) gains traction with the participation of a growing number of users.
 - Power BI [champions](powerbi-adoption-roadmap-community-of-practice.md#champions-network) emerge in the internal user community.
@@ -145,7 +145,7 @@ User adoption occurs on an individual user basis, but it's measured and analyzed
 Common characteristics of stage 1 user adoption include:
 
 - An individual has heard of, or been initially exposed to, analytics in some way.
-- An individual may have access to a tool, such as Power BI, but isn't yet actively using it.
+- An individual might have access to a tool, such as Power BI, but isn't yet actively using it.
 
 ### User adoption stage 2 – Understanding
 
@@ -194,7 +194,7 @@ Common characteristics of phase 1 solution adoption include:
 
 - Exploration and experimentation are the main approaches to testing out new ideas. Exploration of new ideas can occur through informal self-service BI, or through a formal proof of concept (POC), which is purposely narrow in scope. The goal is to confirm requirements, validate assumptions, address unknowns, and mitigate risks.
 - A small group of users test the proof of concept solution and provide useful feedback.
-- For simplicity, all exploration—and initial feedback—may occur within local user tools (such as Power BI Desktop or Excel). Use of the Fabric portal may be limited at this time.
+- For simplicity, all exploration—and initial feedback—could occur within local user tools (such as Power BI Desktop or Excel). Use of the Fabric portal might be limited at this time.
 
 ### Solution phase 2 – Functional
 
@@ -203,7 +203,7 @@ Common characteristics of phase 2 solution adoption include:
 - The solution is functional and meets the basic set of user requirements. There are likely plans to iterate on improvements and enhancements.
 - The solution is deployed to the Fabric portal.
 - All necessary supporting components are in place (for example, a gateway to support scheduled data refresh).
-- Target users are aware of the solution and show interest in using it. Potentially, it may be a limited preview release, and may not yet be ready to promote to a production [workspace](/power-bi/collaborate-share/service-create-the-new-workspaces).
+- Target users are aware of the solution and show interest in using it. Potentially, it could be a limited preview release, and might not yet be ready to promote to a production [workspace](/power-bi/collaborate-share/service-create-the-new-workspaces).
 
 ### Solution phase 3 – Valuable
 
@@ -230,7 +230,7 @@ Common characteristics of phase 4 solution adoption include:
 - Expectations for support of the solution are clear, especially if there are service level agreements.
 - The solution aligns with organizational [governance](powerbi-adoption-roadmap-governance.md) guidelines and practices.
 - Most content is [certified](/power-bi/collaborate-share/service-endorse-content) since it's critical in nature.
-- Formal user acceptance testing for new changes may occur, particularly for IT-managed content.
+- Formal user acceptance testing for new changes might occur, particularly for IT-managed content.
 
 ## Next steps
 

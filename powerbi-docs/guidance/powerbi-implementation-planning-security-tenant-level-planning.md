@@ -17,9 +17,9 @@ ms.date: 02/19/2023
 This tenant-level security planning article is primarily targeted at:
 
 - **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization.
-- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They may need to collaborate with Power BI administrators, information security teams, and other relevant teams.
+- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
 
-This article may also be relevant for self-service Power BI creators who create, publish, and manage content in workspaces.
+This article might also be relevant for self-service Power BI creators who create, publish, and manage content in workspaces.
 
 The series of articles is intended to expand upon the content in the [Power BI security white paper](whitepaper-powerbi-security.md). While the Power BI security white paper focuses on key technical topics such as authentication, data residency, and network isolation, the primary goal of the series is to provide you with considerations and decisions to help you plan for security and privacy.
 
@@ -77,7 +77,7 @@ Here are a few examples of high-level security strategies. You might choose to m
 > [!IMPORTANT]
 > When considering network isolation, work with your IT infrastructure and networking teams before you change any of the Power BI tenant settings. Azure Private Link allows for enhanced _inbound_ security through private endpoints, while an Azure VNet gateway allows for enhanced _outbound_ security when connecting to data sources. Azure VNet gateway is Microsoft-managed rather than customer-managed, so it eliminates the overhead of installing and monitoring on-premises gateways.
 
-Some of your organizational-level decisions will result in firm governance policies, particularly when they relate to compliance. Other organizational-level decisions may result in guidance that you can provide to content creators who are responsible for managing and securing their own content. The resulting policies and guidelines should be included in your [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal), [training](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#training) materials, and [communication plan](powerbi-adoption-roadmap-community-of-practice.md#communication-plan).
+Some of your organizational-level decisions will result in firm governance policies, particularly when they relate to compliance. Other organizational-level decisions might result in guidance that you can provide to content creators who are responsible for managing and securing their own content. The resulting policies and guidelines should be included in your [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal), [training](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#training) materials, and [communication plan](powerbi-adoption-roadmap-community-of-practice.md#communication-plan).
 
 > [!TIP]
 > See the other articles in this series for additional suggestions that relate to security planning for [report consumers](powerbi-implementation-planning-security-report-consumer-planning.md) and [content creators](powerbi-implementation-planning-security-content-creator-planning.md).
@@ -91,7 +91,7 @@ Some of your organizational-level decisions will result in firm governance polic
 > - **Identify high-level security strategies:** Determine which security requirements are important enough that they should be included in a governance policy.
 > - **Collaborate with other administrators:** Contact the relevant system administrator(s) to discuss how to meet security requirements and what technical prerequisites exist. Plan for doing a technical proof of concept.
 > - **Update Power BI tenant settings:** Set up each relevant Power BI tenant setting. Schedule follow-up reviews regularly.
-> - **Create and publish user guidance:** Create documentation for the high-level security strategies. Include details about the process and how a user may request an exemption from the standard process. Make this information available in your centralized portal and training materials.
+> - **Create and publish user guidance:** Create documentation for the high-level security strategies. Include details about the process and how a user can request an exemption from the standard process. Make this information available in your centralized portal and training materials.
 > - **Update training materials:** For the high-level security strategies, determine which requirements or guidelines you should include in user training materials.
 
 ## Integration with Microsoft Entra ID
@@ -99,7 +99,7 @@ Some of your organizational-level decisions will result in firm governance polic
 Power BI security is built upon the foundation of a [Microsoft Entra](/azure/active-directory/fundamentals/active-directory-whatis) tenant. The following Microsoft Entra ID concepts are relevant to the security of a [Power BI tenant](powerbi-implementation-planning-tenant-setup.md).
 
 - **User access:** Access to the Power BI service requires a user account (in addition to a Power BI [license](/power-bi/fundamentals/service-features-license-type): Free, Power BI Pro, or Premium Per User - PPU). You can add both internal users and guest users to Microsoft Entra ID, or they can be synchronized with an on-premises Active Directory (AD). For more information about guest users, see [Strategy for external users](#strategy-for-external-users).
-- **Security groups:** Microsoft Entra security groups are required when making certain features available in the Power BI [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings). You may also need groups to effectively secure Power BI workspace content or for distributing content. For more information, see [Strategy for using groups](#strategy-for-using-groups).
+- **Security groups:** Microsoft Entra security groups are required when making certain features available in the Power BI [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings). You might also need groups to effectively secure Power BI workspace content or for distributing content. For more information, see [Strategy for using groups](#strategy-for-using-groups).
 - **Conditional access policies:** You can set up conditional access to the Power BI service and the Power BI mobile app. Microsoft Entra [conditional access](/azure/active-directory/conditional-access/overview) can restrict authentication in various situations. For example, you could enforce policies that:
   - Require multifactor authentication for some or all users.
   - Allow only devices that comply with organizational policies.
@@ -108,10 +108,10 @@ Power BI security is built upon the foundation of a [Microsoft Entra](/azure/act
   - Block connectivity for a risky sign-on.
   - Allow only certain types of devices to connect.
   - Conditionally allow or deny access to Power BI for specific users.
-- **Service principals:** You may need to create a Microsoft Entra [app registration](/azure/active-directory/develop/quickstart-register-app) to provision a service principal. Service principal authentication is a recommended practice when a Power BI administrator wants to run unattended, scheduled, scripts that extract data by using the Power BI [admin APIs](/rest/api/power-bi/admin). Service principals are also useful when [embedding Power BI content](/power-bi/developer/embedded/embed-service-principal) in a custom application.
-- **Real-time policies:** You may choose to set up [real-time session control or access control policies](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls), which involves both Microsoft Entra ID and [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps). For example, you can prohibit the download of a report in the Power BI service when it has a specific sensitivity label. For more information, see the [information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) articles.
+- **Service principals:** You might need to create a Microsoft Entra [app registration](/azure/active-directory/develop/quickstart-register-app) to provision a service principal. Service principal authentication is a recommended practice when a Power BI administrator wants to run unattended, scheduled, scripts that extract data by using the Power BI [admin APIs](/rest/api/power-bi/admin). Service principals are also useful when [embedding Power BI content](/power-bi/developer/embedded/embed-service-principal) in a custom application.
+- **Real-time policies:** You can choose to set up [real-time session control or access control policies](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls), which involves both Microsoft Entra ID and [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps). For example, you can prohibit the download of a report in the Power BI service when it has a specific sensitivity label. For more information, see the [information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) articles.
 
-It may be difficult to find the right balance between unrestricted access and overly restrictive access (which frustrates users). The best strategy is to work with your Microsoft Entra ID administrator to understand what's currently set up. Try to remain responsive to the needs of the business while being mindful of necessary restrictions.
+It might be difficult to find the right balance between unrestricted access and overly restrictive access (which frustrates users). The best strategy is to work with your Microsoft Entra ID administrator to understand what's currently set up. Try to remain responsive to the needs of the business while being mindful of necessary restrictions.
 
 > [!TIP]
 > Many organizations have an on-premises Active Directory (AD) environment that they synchronize with Microsoft Entra ID in the cloud. This setup is known as a [hybrid identity](/azure/active-directory/hybrid/whatis-hybrid-identity) solution, which is out of scope for this article. The important concept to understand is that users, groups, and service principals must exist in Microsoft Entra ID for cloud-based services like Power BI to work. Having a hybrid identity solution will work for Power BI. We recommend talking to your Microsoft Entra ID administrators about the best solution for your organization.
@@ -135,8 +135,8 @@ Power BI supports [Microsoft Entra Business-to-Business](/azure/active-directory
 There are advantages when an external user is from another organization that also has Microsoft Entra ID set up.
 
 - **Home tenant manages the credentials:** The user's home tenant stays in control of their identity and management of credentials. You don't need to synchronize identities.
-- **Home tenant manages the user's status:** When a user leaves that organization and the account is removed or disabled, with immediate effect, the user will no longer have access to your Power BI content. It's a significant advantage because you may not know when someone has left their organization.
-- **Flexibility for user licensing:** There are cost-effective [licensing options](whitepaper-azure-b2b-power-bi.md#licensing). An external user may already have a Power BI Pro or PPU license, in which case you don't need to assign one to them. It's also possible to grant them access to content in a Premium capacity workspace by assigning a Free license to them.
+- **Home tenant manages the user's status:** When a user leaves that organization and the account is removed or disabled, with immediate effect, the user will no longer have access to your Power BI content. It's a significant advantage because you might not know when someone has left their organization.
+- **Flexibility for user licensing:** There are cost-effective [licensing options](whitepaper-azure-b2b-power-bi.md#licensing). An external user might already have a Power BI Pro or PPU license, in which case you don't need to assign one to them. It's also possible to grant them access to content in a Premium capacity workspace by assigning a Free license to them.
 
 ### Key settings
 
@@ -182,7 +182,7 @@ The goal for [in-place dataset sharing](/power-bi/collaborate-share/service-data
 There are several security aspects for making in-place dataset sharing work.
 
 - **Tenant setting: _Allow guest users to work with shared datasets in their own tenants_:** This setting specifies whether the external data sharing feature can be used. It needs to be enabled for either of the other two settings (shown next) to take effect. It's enabled or disabled for the entire organization by the Power BI administrator.
-- **Tenant setting: _Allow specific users to turn on external data sharing_:** This setting specifies which groups of users may share data externally. The groups of users permitted here will be allowed to use the third setting (described next). This setting is managed by the Power BI administrator.
+- **Tenant setting: _Allow specific users to turn on external data sharing_:** This setting specifies which groups of users can share data externally. The groups of users permitted here will be allowed to use the third setting (described next). This setting is managed by the Power BI administrator.
 - **Dataset setting: _External sharing_:** This setting specifies whether that specific dataset can be used by external users. This setting is managed by content creators and owners for each specific dataset.
 - **Dataset permission: _Read_ and _Build_:** The standard dataset permissions to support content creators are still in place.
 
@@ -224,11 +224,11 @@ There can be risk associated with Power BI Desktop files and Excel workbooks bec
 > [!TIP]
 > It's easy to overlook the files that are stored outside of the Power BI service. We recommend that you consider them when you're planning for security.
 
-Here are some of the types of files that may be involved in a Power BI implementation.
+Here are some of the types of files that might be involved in a Power BI implementation.
 
 - **Source files**
-  - **Power BI Desktop files:** The original files (.pbix) for content that's published to the Power BI service. When the file contains a data model, it may contain imported data.
-  - **Excel workbooks:** Excel workbooks (.xlsx) may include connections to datasets in the Power BI service. They may also contain exported data. They may even be original workbooks for content that's published to the Power BI service (as a workbook item in a workspace).
+  - **Power BI Desktop files:** The original files (.pbix) for content that's published to the Power BI service. When the file contains a data model, it might contain imported data.
+  - **Excel workbooks:** Excel workbooks (.xlsx) might include connections to datasets in the Power BI service. They might also contain exported data. They might even be original workbooks for content that's published to the Power BI service (as a workbook item in a workspace).
   - **Paginated report files:** The original report files (.rdl) files for content that's published to the Power BI service.
   - **Source data files:** Flat files (for example, .csv or .txt) or Excel workbooks that contain source data that's been imported into a Power BI model.
 - **Exported and other files**
@@ -250,7 +250,7 @@ Here are some recommendations for working with files.
 There are [tenant settings](/power-bi/admin/service-admin-portal-export-sharing) in the admin portal that control which export formats users are permitted to use when exporting from the Power BI service. It's important to review and set these settings. It's a complementary activity to planning for the file locations that should be used for the exported files.
 
 > [!TIP]
-> Certain export formats support end-to-end information protection by using encryption. Due to regulatory requirements, some organizations have a valid need to restrict which export formats users may use. The [Information protection for Power BI](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) article describes factors to consider when deciding which export formats to enable or disable in the tenant settings. In most cases, we recommend that you restrict exporting capabilities only when you must meet specific regulatory requirements. You can use the [Power BI activity log](/power-bi/admin/service-admin-auditing) to identify which users are performing many exports. You can then teach these users about more efficient and secure alternatives.
+> Certain export formats support end-to-end information protection by using encryption. Due to regulatory requirements, some organizations have a valid need to restrict which export formats users can use. The [Information protection for Power BI](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) article describes factors to consider when deciding which export formats to enable or disable in the tenant settings. In most cases, we recommend that you restrict exporting capabilities only when you must meet specific regulatory requirements. You can use the [Power BI activity log](/power-bi/enterprise/service-admin-auditing) to identify which users are performing many exports. You can then teach these users about more efficient and secure alternatives.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -299,10 +299,10 @@ Consider the following use cases for groups.
 | **Supporting the Power BI user community** | Includes help desk users who directly interact with the user community to handle Power BI support issues. This email address (and Teams site, if applicable) is available and visible to the user population. | &bull;&nbsp;Power BI user support |
 | **Providing escalated support** | Includes specific users, usually from the Power BI COE, who provide escalated support. This email address (and Teams site, if applicable) is typically private, for use only by the user support team. | &bull;&nbsp;Power BI escalated user support |
 | **Administering the Power BI service** | Includes specific users who are allowed to administer the Power BI service. Optionally, members of this group can be correlated to the role in Microsoft 365 to simplify management. | &bull;&nbsp;Power BI administrators |
-| **Notifying allowed features and gradual roll outs of features** | Includes users allowed for a specific tenant setting in the admin portal (if the feature will be limited), or if the feature is to be rolled out gradually to groups of users. Many of the tenant settings will require you to create a new Power BI-specific group. | &bull;&nbsp;Power BI workspace creators </br></br>&bull;&nbsp;Power BI external data sharing |
-| **Managing data gateways** | Includes one or more groups of users who are allowed to administer a gateway cluster. There may be several groups of this type when there are multiple gateways or when decentralized teams manage gateways. | &bull;&nbsp;Power BI gateway administrators </br></br>&bull;&nbsp;Power BI gateway data source creators </br></br>&bull;&nbsp;Power BI gateway data source owners </br></br>&bull;&nbsp;Power BI gateway data source users |
-| **Managing Premium capacities** | Includes users allowed to manage a Premium capacity. There may be several groups of this type when there are multiple capacities or when decentralized teams manage capacities. | &bull;&nbsp;Power BI capacity contributors |
-| **Securing workspaces, apps, and items** | Many groups that are based on subject areas and allowed access for managing security of Power BI workspace roles, app permissions, and per-item permissions. | &bull;&nbsp;Power BI workspace administrators </br></br>&bull;&nbsp;Power BI workspace members </br></br>&bull;&nbsp;Power BI workspace contributors </br></br>&bull;&nbsp;Power BI workspace viewers </br></br>&bull;&nbsp;Power BI app viewers |
+| **Notifying allowed features and gradual roll outs of features** | Includes users allowed for a specific tenant setting in the admin portal (if the feature will be limited), or if the feature is to be rolled out gradually to groups of users. Many of the tenant settings will require you to create a new Power BI-specific group. | &bull;&nbsp;Power BI workspace creators <br/><br/>&bull;&nbsp;Power BI external data sharing |
+| **Managing data gateways** | Includes one or more groups of users who are allowed to administer a gateway cluster. There might be several groups of this type when there are multiple gateways or when decentralized teams manage gateways. | &bull;&nbsp;Power BI gateway administrators <br/><br/>&bull;&nbsp;Power BI gateway data source creators <br/><br/>&bull;&nbsp;Power BI gateway data source owners <br/><br/>&bull;&nbsp;Power BI gateway data source users |
+| **Managing Premium capacities** | Includes users allowed to manage a Premium capacity. There might be several groups of this type when there are multiple capacities or when decentralized teams manage capacities. | &bull;&nbsp;Power BI capacity contributors |
+| **Securing workspaces, apps, and items** | Many groups that are based on subject areas and allowed access for managing security of Power BI workspace roles, app permissions, and per-item permissions. | &bull;&nbsp;Power BI workspace administrators <br/><br/>&bull;&nbsp;Power BI workspace members <br/><br/>&bull;&nbsp;Power BI workspace contributors <br/><br/>&bull;&nbsp;Power BI workspace viewers <br/><br/>&bull;&nbsp;Power BI app viewers |
 | **Deploying content** | Includes the users that can deploy content by using a Power BI [deployment pipeline](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines). This group is used in conjunction with workspace permissions. | &bull;&nbsp;Power BI deployment pipeline administrators |
 | **Automating administrative operations** | Includes the service principals that are allowed to use Power BI APIs for embedding or administrative purposes. | &bull;&nbsp;Power BI service principals |
 
@@ -384,7 +384,7 @@ When a content creator or owner requests a new group, ideally they use a form to
 **Checklist** - When creating your strategy for how to use groups, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Decide on the strategy for the use of groups:** Determine the use cases and purposes you'll need to use groups. Be specific about when security may be applied by using user accounts versus when a group is required or preferred.
+> - **Decide on the strategy for the use of groups:** Determine the use cases and purposes you'll need to use groups. Be specific about when security should be applied by using user accounts versus when a group is required or preferred.
 > - **Create a naming convention for Power BI-specific groups:** Ensure that a consistent naming convention is in use for groups that will support Power BI communication, features, administration, or security.
 > - **Decide who is allowed to create groups:** Clarify whether all group creation is required to go through IT. Or whether certain individuals (like satellite members of the COE) can be granted permission to create groups for their business unit.
 > - **Create a process for how to request a new group:** Create a form for users to request the creation of a new group. Ensure that there's a process in place to respond quickly to new requests. Bear in mind that if requests are delayed, users might be tempted to start assigning permissions to individuals accounts.

@@ -14,7 +14,7 @@ ms.date: 06/22/2023
 
 [!INCLUDE [applies-yes-service-no-report-builder-no-desktop](../../includes/applies-yes-service-no-report-builder-no-desktop.md)]
 
-In this article, you learn how to create a paginated report with all the data from your Power BI dataset, and then export it. The feature lets you quickly create a paginated report on the web, and apply styling. You can then export it using the rich export functionality of paginated reports, which retains the applied formatting & styling.
+In this article, you learn how to create a paginated report with all the data from your Power BI semantic model, and then export it. The feature lets you quickly create a paginated report on the web, and apply styling. You can then export it using the rich export functionality of paginated reports, which retains the applied formatting & styling.
 
 You can use the feature to create paginated reports in any workspace in the Power BI service, including workspaces that aren't in a Power BI Premium capacity.
 
@@ -201,7 +201,7 @@ After saving the report, you can preview it. Select **Reading view** on the top 
 ## Considerations and limitations
 
 - You can create a paginated report in any workspace.
-- You can't create a paginated report from Power BI datasets based on a live connection.
+- You can't create a paginated report from Power BI semantic models based on a live connection.
 - The online editor does *not* replicate all existing Power BI Report Builder functionality.  
 
 ## Next steps

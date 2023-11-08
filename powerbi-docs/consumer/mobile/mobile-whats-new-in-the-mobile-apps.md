@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/13/2023
+ms.date: 10/22/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,12 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## October 2023
+
+### Cross-cloud sharing support
+
+The Power BI mobile app's support for accessing Power BI content shared with you from external organizations now allows you even to open links to items shared with you from other Power BI clouds.
 
 ## September 2023
 

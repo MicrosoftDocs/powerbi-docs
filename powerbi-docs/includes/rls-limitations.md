@@ -2,7 +2,7 @@
 author: davidiseminger
 ms.service: powerbi
 ms.topic: include
-ms.date: 12/27/2022
+ms.date: 11/02/2023
 ms.author: davidi
 ---
 
@@ -15,3 +15,5 @@ You can see the current limitations for row-level security on cloud models here:
 * Service principals can't be added to an RLS role. Accordingly, RLS won’t be applied for apps using a service principal as the final effective identity.
 * Only Import and DirectQuery connections are supported. Live connections to Analysis Services are handled in the on-premises model.
 * The Test as role/View as role feature doesn't work for DirectQuery models with single sign-on (SSO) enabled.
+* The Test as role/view as role feature will show only reports from datasets workspace.
+* The Test as role/View as role feature doesn't work for paginated reports.

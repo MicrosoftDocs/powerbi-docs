@@ -1,15 +1,15 @@
 ---
 title: View and present live Power BI data in PowerPoint
 description: Learn how to work with live Power BI data in PowerPoint.
-author: paulinbar
-ms.author: painbar
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/19/2023
+ms.date: 11/01/2023
 ---
 
 # View and present live Power BI data in PowerPoint
@@ -18,7 +18,7 @@ As soon as you add a live Power BI report page or visual to PowerPoint, you can 
 
 ![Screenshot of Power BI report page in PowerPoint, with controls labeled.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-report-page-controls.png)
 
-| Click for option details ||
+|Options table|Click for option details|
 |:---------|:---------|
 |[Info](#data-info)     | [Add-in options](#add-in-options)        |
 |[Data options](#data-options)     | [Expand/collapse toolbar](#expandcollapse-toolbar)        |
@@ -146,7 +146,7 @@ Expands or collapses the toolbar across the bottom of the report or visual. This
 
 ![Screenshot of Power BI add-in for PowerPoint add-in side pane.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-addin-sidebar.png)
 * **Delete**: Removes the add-in from the PowerPoint slide.
-* **Reload**: Reloads the report page or visual. Use this option if the visuals in a report have been changed, added or deleted. The report page reloads every time PowerPoint is opened, so you need to use this option only if the report has changed while you’ve had PowerPoint open.
+* **Reload**: The report page reloads every time PowerPoint is opened, so you need to use this option only if the report has changed while you’ve had PowerPoint open.
 
     If all you want to do is refresh the data, use the **Refresh** option in the [Data options](#data-options) menu instead.
 

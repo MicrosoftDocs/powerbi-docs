@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 02/21/2023
+ms.date: 10/24/2023
 LocalizationGroup: Transform and shape data
 ---
 # Perform common query tasks in Power BI Desktop
@@ -23,13 +23,11 @@ The common query tasks demonstrated here are:
 * Create custom columns
 * Query formulas
 
-You can use a couple data connections to complete these tasks. The data is available for you to download or connect to, in case you want to step through these tasks yourself.
+You can use multiple data connections to complete these tasks. The data from the sample Excel workbook is available for you to download or connect to, in case you want to step through these tasks yourself.
 
-The first data connection is [an Excel workbook](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx), which you can download and save locally. The other is a Web resource:
+The first data connection is [an Excel workbook](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx), which you can download and save locally. 
 
-<https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/>
-
-Common query tasks begin at the steps necessary to connect to both of those data sources.
+You can also find a web data source on your own, if you'd like to follow along with your own data. 
 
 ## Connect to data
 
@@ -49,7 +47,7 @@ Connecting to different types of data is a similar process. To connect to a Web 
 
 The **From Web** dialog box appears, where you can type in the URL of the webpage.
 
-:::image type="content" source="media/desktop-common-query-tasks/datasources_fromwebbox.png" alt-text="Screenshot of the From Web dialog box showing a connection to the data source from a URL.":::
+:::image type="content" source="../fundamentals/media/desktop-getting-started/getting-started-8.png" alt-text="Screenshot of the From Web dialog box showing a connection to the data source from a URL.":::
 
 Select **OK**. Like before, Power BI Desktop inspects the webpage data and shows preview options in the **Navigator** dialog box. When you select a table, it displays a preview of the data.
 
