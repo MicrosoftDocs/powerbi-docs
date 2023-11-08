@@ -47,7 +47,7 @@ You revoke permissions for a third-party app by going to the Office 365 My Apps 
 
 On the **Office 365 My apps** site, here's how to revoke third-party permissions:
 
-1. Go to [Office 365 My Apps site](https://portal.office.com/myapps).
+1. Go to [Office 365 My Apps site](https://www.office.com/apps?auth=2).
 
 2. On the **My apps** page, locate the third-party app.
 
