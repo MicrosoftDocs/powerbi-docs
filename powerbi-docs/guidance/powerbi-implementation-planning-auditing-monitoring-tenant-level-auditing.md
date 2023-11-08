@@ -1299,7 +1299,7 @@ You can choose to send requests directly to the APIs. Alternatively, you can add
 The Microsoft Graph SDKs [support several languages](/graph/sdks/sdks-overview#supported-languages), and there's also the [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) modules. Other SDKs are available for Python, C#, and other languages.
 
 > [!IMPORTANT]
-> The Microsoft Graph PowerShell module replaces the Azure AD PowerShell modules and MSOnline (MSOL) modules, which are both deprecated. You shouldn't create new solutions with deprecated modules. The Microsoft Graph PowerShell module has many [features and benefits](/powershell/microsoftgraph/overview?view=graph-powershell-1.0#microsoft-graph-powershell-features--benefits&preserve-view=true). For more information, see [Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell](/powershell/microsoftgraph/migration-steps).
+> The Microsoft Graph PowerShell module replaces the Azure AD PowerShell modules and MSOnline (MSOL) modules, which are both deprecated. You shouldn't create new solutions with deprecated modules. The Microsoft Graph PowerShell module has many [features and benefits](/powershell/microsoftgraph/overview). For more information, see [Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell](/powershell/microsoftgraph/migration-steps).
 
 You can install the Microsoft Graph PowerShell modules from the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). Because Microsoft Graph works with many Microsoft 365 services, there are many PowerShell [modules](https://github.com/microsoftgraph/msgraph-sdk-powershell/wiki/MS-Graph-PowerShell-Modules) that you install.
 
