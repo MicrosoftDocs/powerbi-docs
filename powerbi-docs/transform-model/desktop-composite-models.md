@@ -281,7 +281,7 @@ The chain in the previous image is of length three, which is the maximum length.
 
 ### Permissions and licensing
 
-Users accessing reports need to have proper [permissions to all semantic models and models in the chain that's formed by the semantic model](#chaining) that they want to access and the semantic models on which the reports are based. This permission can be Read or Build depending on whether they need to view the reports or make changes and create new reports. Also notice that [these tenant switches](#managing-composite-models-on-power-bi-datasets) should be enabled for the user.
+Users accessing reports need to have proper [permissions to all semantic models and models in the chain that's formed by the semantic model](#chaining) that they want to access and the semantic models on which the reports are based. This permission can be Read or Build depending on whether they need to view the reports or make changes and create new reports. Also notice that [these tenant switches](#managing-composite-models-on-power-bi-semantic-models) should be enabled for the user.
 
 > [!NOTE]
 > Refer to this blogpost for important information about [permissions required for composite models on Power BI semantic models and Analysis Services models](https://powerbi.microsoft.com/blog/announcing-general-availability-for-composite-models-on-power-bi-datasets-and-analysis-services-models/).
@@ -432,11 +432,11 @@ This dialog won't be shown for live connections.
 :::image type="content" source="media/desktop-composite-models/directquery-datasets-subset.png" alt-text="Dialog that allows specifying what tables to load from a Power BI semantic model or Analysis Services model.":::
 
 ### Setting up deduplication rules
-You can specify deduplication rules to keep measure and table names unique in a composite model by using the **Settings** option in the dialog shown above:
+You can specify deduplication rules to keep measure and table names unique in a composite model by using the **Settings** option in the dialog shown previously:
 
-:::image type="content" source="media/desktop-composite-models/directquery-semantic models-deduplication-rules.png" alt-text="Dialog that allows specifying deduplication rules to apply when loading from a Power BI semantic model or Analysis Services model.":::
+:::image type="content" source="media/desktop-composite-models/directquery-datasets-deduplication-rules.png" alt-text="Dialog that allows specifying deduplication rules to apply when loading from a semantic model.":::
 
-In the example above we have decided to add ' (marketing)' as a suffix to any table or measure name that is in conflict with another source in the composite model. 
+In the previous example we have decided to add ' (marketing)' as a suffix to any table or measure name that is in conflict with another source in the composite model. 
 Note that you can: 
 - enter a text to be added to the name of conflicting tables or measures
 - specify whether you want the text to be added to the table or measure name as a prefix or a suffix 
