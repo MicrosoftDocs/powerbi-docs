@@ -27,7 +27,7 @@ To use BYOK, you must upload data to the Power BI service from a Power BI Deskto
 - Analysis Services Live Connection
 - Excel workbooks, unless data is first imported into Power BI Desktop
 - [Push semantic models](/rest/api/power-bi/pushdatasets)
-- [Streaming semantic models](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
+- [Streaming semantic models](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-semantic-model-in-power-bi)
 - [Power BI metrics](../create-reports/service-goals-introduction.md) don't currently support BYOK
 
 
