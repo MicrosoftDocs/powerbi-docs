@@ -350,9 +350,7 @@ Things to keep in mind about publishing apps:
 - The support site URL is shown in the item information card.
 - By default, all the newly added content, to an already published app, is marked as invisible. You must go to each audience group and manually unhide it.
 - Having multiple audiences isn't fully supported in deployment pipelines. Content visibility of new content that you add to an org app must still be managed manually via audience management.
-- Links to the Power BI portal (app.powerbi.com) cannot be opened in the content area.
-- Adding a dashboard from another workspace is not supported.
-- External links in the content preview page during app publish/update are not "previewable."
+- Only embed links can be opened in the content area.
 - Apps can have a maximum of 200 dashboards.
 - If you include a report that uses chained datasets, also known as [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Azure AD Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
 
