@@ -84,7 +84,7 @@ To learn more about tool support through the XMLA endpoint, see [Semantic model 
 
 ## Fallback
 
-Power BI semantic models in Direct Lake mode read delta tables directly from OneLake. However, in some cases a Direct Lake model can encounter memory pressure that prevents loading columns required to process a DAX query, or features that don’t support Direct Lake mode, like SQL views in a Warehouse. In these situations, models can fall back to DirectQuery mode to avoid failing the DAX query. In DirectQuery mode, Direct Lake models use native T-SQL queries to retrieve the results from the T-SQL endpoint of the Lakehouse or Warehouse, which can impact DAX query performance. You can disable fallback to DirectQuery mode if you prefer to process DAX queries in pure Direct Lake mode, which can be helpful when analyzing query processing for a Direct Lake model to identify if and how often fallbacks occur. To learn more about DirectQuery mode, see [Semantic model modes in the Power BI service](/powerbi-docs/connect-data/service-dataset-modes-understand#directquery-mode.md).
+Power BI semantic models in Direct Lake mode read delta tables directly from OneLake. However, in some cases a Direct Lake model can encounter memory pressure that prevents loading columns required to process a DAX query, or features that don’t support Direct Lake mode, like SQL views in a Warehouse. In these situations, models can fall back to DirectQuery mode to avoid failing the DAX query. In DirectQuery mode, Direct Lake models use native T-SQL queries to retrieve the results from the T-SQL endpoint of the Lakehouse or Warehouse, which can impact DAX query performance. You can disable fallback to DirectQuery mode if you prefer to process DAX queries in pure Direct Lake mode, which can be helpful when analyzing query processing for a Direct Lake model to identify if and how often fallbacks occur. To learn more about DirectQuery mode, see [Semantic model modes in the Power BI service](../connect-data/service-dataset-modes-understand.md#directquery-mode).
 
 ***Guardrails*** define limits for Direct Lake mode beyond which a fallback to DirectQuery mode is necessary to process DAX queries. For details about how to determine the number of parquet files and row groups for a delta table, refer to the [Delta table properties reference](/azure/databricks/delta/table-properties#delta-table-properties). 
 
@@ -141,14 +141,6 @@ You may want to disable if, for example, you need to allow completion of data pr
 - Embedded scenarios that rely on embedded entities are not yet supported.
 
 - Tables based on TSQL-based views cannot be queried in Direct Lake mode. DAX queries that use these model tables fallback to DirectQuery mode.
-
-- When creating a Direct Lake model in a QSO-enabled workspace, you must sync it manually by using the following PowerShell commands with the Power BI Management cmdlets installed (replace WorkspaceID and DatasetID with the GUIDs of your workspace and model):
-
-    ```powershell
-    Login-PowerBI
-    Invoke-PowerBIRestMethod -Url 'groups/WorkspaceId/datasets/DatasetId/sync' -Method Post | ConvertFrom-Json | Format-List
-    
-    ```
 
 ## Get started
 
