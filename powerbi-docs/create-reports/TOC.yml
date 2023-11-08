@@ -440,6 +440,8 @@
       href: ../natural-language/end-user-q-and-a-tutorial.md  
     - name: Q&A data sources
       href: ../natural-language/q-and-a-data-sources.md
+    - name: Enhance Q&A with Copilot
+      href: ../natural-language/q-and-a-copilot-enhancements.md
     - name: Q&A tooling introduction
       href: ../natural-language/q-and-a-tooling-intro.md
     - name: Q&A tooling advanced
