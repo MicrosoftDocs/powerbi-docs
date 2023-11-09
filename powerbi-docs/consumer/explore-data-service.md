@@ -1,5 +1,5 @@
 ---
-title: "Explore your data in the Power BI service (Preview)"
+title: "Explore your data in the Power BI service (preview)"
 description: In this article, you learn how to explore your data in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,10 +7,10 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/16/2023
+ms.date: 11/08/2023
 ---
 
-# Explore your data in the Power BI service (Preview)
+# Explore your data in the Power BI service (preview)
 
 In Power BI, sometimes you just want to do some ad hoc exploration of your data. Maybe you're an analyst who just got access to a new semantic model or data source, and you want to spend time learning about it before you build a report off it. Or maybe you're a business user who needs to answer a specific question about the data to include in a PowerPoint presentation, but the report you’re using doesn’t answer your exact question. Creating a new report from scratch in these cases is a big hurdle, when you just need a quick answer or screenshot for a slide deck.
 
@@ -94,11 +94,11 @@ When you do so on the visual, the matrix also updates accordingly.
 
 As you build out your exploration, you can also take advantage of a new filtering experience. Select the **Add filter** button on the top left to quickly add filters on the fields already in your visual or pick from any fields in your dataset in the **All data** section.  
 
-:::image type="content" source="media/explore-data-service/add-new-filter-trip-purpose.png" alt-text="Screenshot showing adding a new filter for trip purpose." lightbox="media/explore-data-service/add-new-filter-trip-purpose.png":::
+:::image type="content" source="media/explore-data-service/add-new-filter-trip-purpose-1.png" alt-text="Screenshot showing adding a new filter for trip purpose." lightbox="media/explore-data-service/add-new-filter-trip-purpose-1.png":::
 
 In this exploration experience, the filters are added as pills at the top of view, so you can easily see what the current filter state is and quickly modify it on the fly.  
 
-:::image type="content" source="media/explore-data-service/apply-filter-trip-purpose-honeymoon.png" alt-text="Screenshot showing applying the trip purpose filter." lightbox="media/explore-data-service/apply-filter-trip-purpose-honeymoon.png":::
+:::image type="content" source="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png" alt-text="Screenshot showing applying the trip purpose filter." lightbox="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png":::
  
 
 ## 4. Save and share your exploration 
@@ -149,14 +149,15 @@ You can share this new report as with other reports by using the **Share** butto
 - Exploration authors need build permissions on the dataset to create an exploration and open the Explore dialog.
 - When you save, the destination workspace must be in a Premium capacity. 
 - Changing a sensitivity label on a dataset doesn't currently propagate down to the exploration that you create for it.
+- There is currently a known issue when you attempt to save an exploration from the Datamart SQL editor entry point. We’re working on a fix.
+- Explore isn't currently supported for streaming datasets. 
+- If you save to **My workspace**, you may need to refresh your page to see the newly saved exploration artifact.
 
 ### To share
 
-Exploration users need a Power BI Pro or PPU license to share.
-
-When you share, Power BI prompts you to grant build permissions to the underlying dataset so the recipient can view. If you skip this second dialog, the recipient can't see the exploration and has to ask you for permissions.
-
-Explorations aren't currently shown in lineage view as related to the dataset.
+- Exploration users need a Power BI Pro or PPU license to share.
+- When you share, Power BI prompts you to grant build permissions to the underlying dataset so the recipient can view. If you skip this second dialog, the recipient can't see the exploration and has to ask you for permissions.
+- Explorations aren't currently shown in lineage view as related to the dataset.
 
 ### Entry points
 
@@ -164,7 +165,7 @@ Explore isn't currently available from datasets and reports on the Power BI serv
 
 ### Supported visuals 
 
-All native and public custom visuals are supported with the exception of these visuals: 
+All native visuals are supported with the exception of these visuals: 
 
 - Matrix
 - Q&A
@@ -173,6 +174,8 @@ All native and public custom visuals are supported with the exception of these v
 - Paginated reports
 - Power Apps
 - Power Automate
+
+Custom visuals are coming soon.
 
 ## Next steps
 
