@@ -61,32 +61,28 @@ export class Visual implements IVisual {
 
 The local storage API has four methods:
 
-* *status*: returns the status of the local storage v2 api
+* *status*: Returns the status of the local storage v2 API.
 
-  * PrivilegeStatus.DisabledByAdmin- when the tenant admin switch is off.
-  * PrivilegeStatus.NotDeclared – when the visual has no declaration for the local storage in the privileges array.
-  * PrivilegeStatus.NotSupported – when the api is not supported (see limitations)
-  * PrivilegeStatus.Allowed – when it is allowed to use the api
+  * PrivilegeStatus.DisabledByAdmin: the tenant admin switch is off
+  * PrivilegeStatus.NotDeclared: the visual has no declaration for the local storage in the privileges array
+  * PrivilegeStatus.NotSupported: the API isn't supported (see limitations)
+  * PrivilegeStatus.Allowed: the API is supported and allowed
 
-best practice: before using the get set remove use the status method to check the status of the api, this will make your visual behave more properly.
+  Before using the *get*, *set*, or *remove* methods, use the *status* method to check the status of the API and ensure that your visual behaves as expected.
 
-get:
-this method expects one parameter:
-key – the key you want to get its value.
-returns a promise that resolves with the value if the key exists and reject otherwise  
+* *get*: Returns a promise that resolves with the value if the key exists, and rejects otherwise. This method expects one parameter:
+  * key – the key you want to get its value
+  
+* *set*: Returns a promise that resolves to a *struct* of the type `StorageV2ResultInfo`, or rejects if an error occurred.
+This method expects two parameters:
+  * key – the key you want to set its value
+  * data – the value for the key
 
-set:  
-expects two parameters:
-key – the key you want to set its value.
-data – the value for the key
-returns a promise that resolves to struct of the type  StorageV2ResultInfo, or rejects if an error occurred.
+* *remove*:
+This method expects one parameter:
+  * key – the key of the pair you want to remove
 
-remove:
-expects one parameter:
-key – the key of the pair you want to remove.
-
-How to use the local storage api:
-First you need to add declaration to the [privileges array in visual capabilities](./capabilities.md#define-privileges)
+To use the local storage API, add a declaration to the [privileges array in visual capabilities.](./capabilities.md#define-privileges)
 
 ```typescript
 import IVisualLocalStorageV2Service = powerbi.extensibility.IVisualLocalStorageV2Service; 
@@ -148,7 +144,7 @@ export class Visual implements IVisual {
 
 ### [Considerations and limitations Version 1](#tab/v1)
 
-* The local storage limit is 1mb per GUID.
+* The local storage limit is 1 mb per GUID.
 * Data can be shared between visuals with the same GUID only.
 * Data can't be shared with another instance of Power BI Desktop.
 * The local storage API isn't activated by default. To activate it for your Power BI visual, send a request to Power BI visuals support, `pbicvsupport@microsoft.com`.
@@ -158,7 +154,7 @@ export class Visual implements IVisual {
 
 ### [Considerations and limitations Version 2](#tab/v2)
 
-* The custom visuals local storage limit is 100KB.
+* The custom visuals local storage limit is 100 KB.
 * Data can be shared between visuals with the same GUID, same environment and for the same user only.
 * The API is supported in the following environments:
   * Web
@@ -166,14 +162,14 @@ export class Visual implements IVisual {
   * SaaS Embed
   * Mobile
   * Report Server
-* The API is not supported in export to PDF, ptpx scenarios.
-* The API is supported only when there is a user signed in.
+* The API isn't supported in export to PDF, ptpx scenarios.
+* The API is supported only when there's a user signed in.
 * A visual’s data will be cleared 29 days after the most recent modification time.
 * This API is privileged API.
 * The key (parameter provided to *set*, *get*, *Remove*) has the following restrictions:
-  * Length must be less than 128 characters
+  * Length must be fewer than 128 characters
   * Can't contain the character '|'
-* The API can be not supported for many reasons such as not supported environment or the browser’s local storage is not available, so consider checking the status of the API before using the set/get/remove methods, and even if supported can fail, so anyway you should handle errors.
+* The API can be not supported for many reasons such as not supported environment or the browser’s local storage isn't available. Consider checking the status of the API before using the set/get/remove methods. Even if it's supported, it might fail, so error handling is important..
 
 ---
 
