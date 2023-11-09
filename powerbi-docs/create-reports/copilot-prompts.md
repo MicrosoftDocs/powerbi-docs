@@ -7,7 +7,7 @@ ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 10/25/2023
+ms.date: 11/09/2023
 LocalizationGroup: Create reports
 ---
 
@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Here are some samples of prompts that work well with Copilot for Power BI.
+Here are some examples of prompts that work well with Copilot for Power BI. Use these prompts as examples. They may not generate the same outcome as these report pages. Each sample prompt is paired with a report page that Copilot generated based on the interpretation of that prompt. Your prompts help Copilot understand what you're looking for, but they may not produce a page that's exactly what you want. It's a starting point for report page creation. Use the user interface to modify the report page that Copilot created. Also, see the [Considerations and limitations section](#considerations-and-limitations) for features that currently don't work.
 
 ## Sales performance by product
 

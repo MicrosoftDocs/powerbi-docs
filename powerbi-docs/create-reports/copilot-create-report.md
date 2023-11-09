@@ -1,5 +1,5 @@
 ---
-title: Create a report with Copilot for the Power BI service
+title: Create report pages with Copilot for the Power BI service
 description: Using Copilot, you can quickly create a Power BI report.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,15 +7,15 @@ ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/01/2023
+ms.date: 11/09/2023
 LocalizationGroup: Create reports
 ---
 
-# Create a report with Copilot for the Power BI service
+# Create report pages with Copilot for the Power BI service
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-When you use Copilot for Power BI, you can quickly create reports with just a few clicks. Copilot can save you hours of effort building your report pages.
+When you use Copilot for Power BI, you can quickly create report pages with just a few clicks. Copilot can save you hours of effort building your report pages.
 
 :::image type="content" source="media/copilot-create-report/copilot-create-internet-sales-trends.png" alt-text="Screenshot showing Copilot creating internet sales trend report page." lightbox="media/copilot-create-report/copilot-create-internet-sales-trends.png":::
 

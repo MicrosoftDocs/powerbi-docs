@@ -1,21 +1,21 @@
 ---
-title: Evaluate your data for use with Copilot for Power BI service
-description: Before you start using Copilot with a semantic model, evaluate your data.
+title: Update your data model to work well with Copilot for Power BI
+description: Before you start using Copilot with your semantic model, evaluate your data to see if there are ways you can improve its performance.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 10/19/2023
+ms.date: 11/09/2023
 LocalizationGroup: Create reports
 ---
 
-# Evaluate your data for use with Copilot for Power BI service
+# Update your data model to work well with Copilot for Power BI
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Before you start using Copilot with a semantic model, evaluate your data. You may need to do some clean-up work on your semantic model so that Copilot can derive insights from it.
+Before you start using Copilot with your semantic model, evaluate your data. You may need to do some clean-up work on your semantic model so that Copilot can derive insights from it.
 
 ## Considerations
 

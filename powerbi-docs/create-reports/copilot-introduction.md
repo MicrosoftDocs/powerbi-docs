@@ -7,7 +7,7 @@ ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 10/19/2023
+ms.date: 11/09/2023
 LocalizationGroup: Create reports
 ---
 

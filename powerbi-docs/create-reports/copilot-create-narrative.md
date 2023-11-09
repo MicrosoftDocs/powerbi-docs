@@ -7,7 +7,7 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/01/2023
+ms.date: 11/09/2023
 LocalizationGroup: Create reports
 ---
 
