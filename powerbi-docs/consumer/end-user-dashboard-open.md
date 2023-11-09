@@ -1,6 +1,6 @@
 ---
 title: View a Power BI dashboard
-description: Learn how to open and view a Power BI dashboard to highlight specific information from the underlying reports and datasets.
+description: Learn how to open and view a Power BI dashboard to highlight specific information from the underlying reports and semantic models.
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
@@ -16,7 +16,7 @@ ms.custom:
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 
-Power BI *business users* spend a lot of time viewing dashboards. Dashboards are designed to highlight specific information from the underlying reports and datasets. And Power BI business users rely on that information for tracking, monitoring, answering questions, testing, and more--in order to make data-driven business decisions.
+Power BI *business users* spend a lot of time viewing dashboards. Dashboards are designed to highlight specific information from the underlying reports and semantic models. And Power BI business users rely on that information for tracking, monitoring, answering questions, testing, and more--in order to make data-driven business decisions.
 
 :::image type="content" source="media/end-user-dashboard-open/power-bi-new-dashboard.png" alt-text="Screenshot of the Sales and Marketing Sample dashboard.":::
 
