@@ -22,9 +22,9 @@ You can directly download the [Financial Sample Excel workbook](https://go.micro
 
 You can also download sample data from Power BI Desktop.
 
-1. Select **Try a sample dataset** from the **Add data to your report** screen.
+1. Select **Try a sample semantic model** from the **Add data to your report** screen.
 
-   :::image type="content" source="media/sample-financial-download/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Power BI Desktop, highlighting Try a sample dataset." lightbox="media/sample-financial-download/power-bi-desktop-canvas-sample-dataset.png":::
+   :::image type="content" source="media/sample-financial-download/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Power BI Desktop, highlighting Try a sample semantic model." lightbox="media/sample-financial-download/power-bi-desktop-canvas-sample-dataset.png":::
 
 1. In the **Two ways to use sample data** dialog, choose **Load sample data**.
 
