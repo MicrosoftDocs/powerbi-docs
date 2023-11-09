@@ -19,7 +19,7 @@ LocalizationGroup: Share your work
 
 To overcome this problem, authorized users who have an [Admin or Member role](service-roles-new-workspaces.md) in the workspace where an endorsed semantic model resides can mark that semantic model as discoverable. After the semantic model has been marked as discoverable, it will be listed in the [data hub](../connect-data/service-data-hub.md), even for users who don't have access to it. They can then request [build permission](../connect-data/service-datasets-build-permissions.md) on the semantic model by whatever [access request mechanism](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) is provided.
 
-To be operable in an organization, semantic model discovery must be set up by a Power BI administrator. See [How to set up semantic model discoverability in an organization](#how-to-set-up-dataset-discovery-in-an-organization).
+To be operable in an organization, semantic model discovery must be set up by a Power BI administrator. See [How to set up semantic model discoverability in an organization](#how-to-set-up-semantic-model-discovery-in-an-organization).
 
 ## How to mark a semantic model as discoverable
 
