@@ -48,7 +48,7 @@ The data being visualized within the report is always based on the data currentl
 
 This makes it very easy to iteratively explore your data, jumping back and forth between filtering in the grid and visualizing with Power BI, until you find the insights you’re looking for. 
 
-## Save the report and dataset
+## Save the report and semantic model
 
 Once you’ve finished your exploration and are ready to save, just select the **Save** button in the app bar, give it a name, and pick a workspace. If your organization has enabled sensitivity label, set a label. You can save to any workspace that you have a Contributor, Member, or Admin role assigned. As a free user, you can save to your personal My Workspace.
 
@@ -56,9 +56,9 @@ Once you’ve finished your exploration and are ready to save, just select the *
 
 Once you've saved the report, we give you a link to access it in the Power BI service. Selecting the link opens the report in a new tab. Once you save this report, it becomes a normal Power BI report. You can share it, package it in an app, subscribe to email updates, or even download the .pbix to make further modifications. 
 
-The dataset that gets saved through this flow is automatically configured as DirectQuery with single sign-on (SSO) enabled. Thus, it will always be up to date and respect Dataverse security settings. Of course, once you’ve saved the report and dataset, you can go into the dataset’s settings and change it later. 
+The semantic model that gets saved through this flow is automatically configured as DirectQuery with single sign-on (SSO) enabled. Thus, it will always be up to date and respect Dataverse security settings. Of course, once you’ve saved the report and semantic model, you can go into the semantic model’s settings and change it later. 
 
-If you already have credentials in Power BI configured for the specific Dataverse environment you’re connecting to, and it isn’t set to SSO, we don’t automatically override this. Instead, we ask you to decide how you want to handle your credentials. You can choose to either keep what’s already stored in Power BI or override it to use SSO. If you decide to keep what’s already in Power BI, your report may show different data when you view it in the Power BI service. If you decide to override, this also updates your existing datasets connected to the same source. 
+If you already have credentials in Power BI configured for the specific Dataverse environment you’re connecting to, and it isn’t set to SSO, we don’t automatically override this. Instead, we ask you to decide how you want to handle your credentials. You can choose to either keep what’s already stored in Power BI or override it to use SSO. If you decide to keep what’s already in Power BI, your report may show different data when you view it in the Power BI service. If you decide to override, this also updates your existing semantic models connected to the same source. 
 
 Once the report is in the Power BI service, that is where you’ll access it going forward. However, if you’d like to make it a standardized report included in your app, you can always choose to [embed it back into the app](/power-apps/maker/model-driven-apps/embed-powerbi-report-in-system-form).
 
