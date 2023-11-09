@@ -17,64 +17,27 @@ LocalizationGroup: Create reports
 
 Before you start using Copilot with your semantic model, evaluate your data. You may need to do some clean-up work on your semantic model so that Copilot can derive insights from it.
 
-## Considerations
+## Criteria for Datasets
 
-Review these elements.
+The following table lists the criteria will help you create accurate reports with Copilot. These items are recommendations that can help in generating accurate Power BI reports.  
 
-| Data quality dimension | Check | Threshold/Criteria  |
-|-----|------|------|
-| [Completeness](#completeness) | Missing or null values  | <5% of the total values |
-| Validity (requires a predefined set of valid values)   | Data values that are out of expected range  | <1% of the total values |
-| [Consistency](#consistency) | Check for inconsistent values (like differing formats for date)  | 80% consistency  |
-| Uniqueness | Duplicate rows or values where they shouldn't be  | 0 duplicate rows/values |
-| [Size of the semantic model ](#size-of-the-semantic-model)| Enough rows and columns for diverse report generation | >1000 rows and >10 columns (TBD)  |
-| Visualization variety  | Presence of numerical, categorical, and temporal data | At least 1 of each type |
-| [Data relationships](#data-relationships) | Presence of keys to connect different tables (if applicable) | At least one key for joining tables |
-| [Calculated fields/measures](#calculated-columns-and-measures)  | Presence of columns that are derived from other columns | Dependent on the report requirements  |
+|Element  | Consideration  | Description  | Example  |
+|Table Linking  | Define Clear Relationships  | Ensure that all relationships between tables are clearly defined and logical, indicating which are one-to-many, many-to-one, or many-to-many.  | "Sales" table connected to "Date" table by "DateID" field.  |
+|Measures  | Standardized Calculation Logic  | Measures should have standardized, clear calculation logic that is easy to explain and understand.  | "Total Sales" calculated as the sum of "SaleAmount" from the "Sales" table.  |
+|Measures  | Naming Conventions  | Names for measures should clearly reflect their calculation and purpose.  | Use "Average_Customer_Rating" instead of "AvgRating".  |
+|Measures  | Predefined Measures  | Include a set of predefined measures that users are most likely to request in reports.  | "Year_To_Date_Sales", "Month_Over_Month_Growth", etc.  |
+|Fact Tables  | Clear Delineation  | Clearly delineate fact tables, which hold the measurable, quantitative data for analysis.  | "Transactions", "Sales", "Visits".  |
+|Dimension Tables  | Supportive Descriptive Data  | Create dimension tables that contain the descriptive attributes related to the quantitative measures in fact tables.  | "Product_Details", "Customer_Information".  |
+|Hierarchies  | Logical Groupings  | Establish clear hierarchies within the data, especially for dimension tables that could be used to drill down in reports.  | A "Time" hierarchy that breaks down from "Year" to "Quarter" to "Month" to "Day".  |
+|Column Names  | Unambiguous Labels  | Column names should be unambiguous and self-explanatory, avoiding the use of IDs or codes that require additional lookup without context.  | Use "Product_Name" instead of "ProdID".  |
+|Column Data Types  | Correct and Consistent  | Apply correct and consistent data types for columns across all tables to ensure that measures calculate correctly and to enable proper sorting and filtering.  | Ensure numeric columns used in calculations are not set as text data types.  |
+|Relationship Types  | Clearly Specified  | Clearly specify the nature of relationships (active or inactive) and their cardinality to ensure accurate report generation.  | Mark whether a relationship is "One-to-One", "One-to-Many", or "Many-to-Many".  |
+|Data Consistency  | Standardized Values  | Maintain standardized values within columns to ensure consistency in filters and reporting.  | If you have a "Status" column, consistently use "Open", "Closed", "Pending", etc.  |
+|Key Performance Indicators (KPIs)  | Predefined and Relevant  | Establish a set of KPIs that are relevant to the business context and are commonly used in reports.  | "Return on Investment (ROI)", "Customer Acquisition Cost (CAC)", "Lifetime Value (LTV)".  |
+|Refresh Schedules  | Transparent and Scheduled  | Clearly communicate the refresh schedules of the data to ensure users understand the timeliness of the data they are analyzing.  | Indicate if the data is real-time, daily, weekly, etc.  |
+|Security  | Role-Level Definitions  | Define security roles for different levels of data access if there are sensitive elements that not all users should see.  | Sales team members can see sales data but not HR data.  |
+|Metadata  | Documentation of Structure  | Document the structure of the data model, including tables, columns, relationships, and measures, for reference.  | A data dictionary or model diagram provided as a reference.  |
 
-## Size of the semantic model 
-
-You can determine the size of a semantic model simply by counting the number of records (rows) and features (columns) it has. This metric is important because semantic models that are too small can lead to underfitting, and semantic models that are too big can lead to too many computational resources being used.
-
-Because of size constraints that exist in large language models (LLMs) like GPT, Copilot can't process semantic model schemas that are very large. In simplest terms, this limitation means that if your semantic model has too many tables, columns, and relationships, it may be too complex for Copilot to handle.
-
-## Data quality
-
-Evaluating data quality can be more complex and involves looking at several aspects:
-
-- [Completeness](#completeness)
-- [Consistency](#consistency)
-- [Timeliness](#timeliness)
-- [Data relationships](#data-relationships)
-- [Calculated columns and measures](#calculated-columns-and-measures) 
-
-### Completeness 
-
-Are there missing values in the semantic model? Missing data can reduce the effectiveness of a model or introduce bias. 
-
-### Consistency 
-
-Are data formats and categories consistently used across the semantic model? Inconsistent data can lead to problems in inference. 
-
-### Timeliness 
-
-Is the data current and up to date? Old data might not represent the current situation, especially for rapidly changing environments. 
-
-## Data relationships
-
-- Does the semantic model contain multiple tables that are related by certain keys? 
-
-- Are there fields in the semantic model that are derived from other fields? 
-
-- Does the semantic model contain nested or hierarchical data? 
-
-## Calculated columns and measures  
-
-- Does the semantic model contain columns that are calculated from other fields in the same table or across tables? 
-
-- Does the semantic model contain measures which are calculations aggregated from the data model? 
-
-- How relevant are these calculated columns and measures to the summaries or visuals you expect the model to generate? 
 
 ## Next steps
 

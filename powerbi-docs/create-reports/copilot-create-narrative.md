@@ -19,7 +19,7 @@ In Power BI Desktop and the Power BI service, you can use Copilot for Power BI t
 
 ## Before you start
 
-You may need to do some clean-up work on your report. The narrative visual pulls information from what is on the report canvas, not the underlying semantic model, so clearly named visuals and axes are important for the visual to glean highlights, lowlights, and insights from the report. Read the article [Evaluate your data before using Copilot](copilot-evaluate-data.md) to see if you need to modify your semantic model.
+You may need to do some clean-up work on your report. The narrative visual pulls information from what is on the report canvas, not the underlying semantic model, so clearly named visuals and axes are important for the visual to glean highlights, lowlights, and insights from the report. Read the article [Update your data model to work well with Copilot](copilot-evaluate-data.md) to see if you need to modify your semantic model.
 
 ## Get started
 

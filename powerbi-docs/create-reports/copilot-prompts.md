@@ -61,5 +61,5 @@ We always welcome your feedback about our products, but especially during public
 - [Create a report with Copilot for Power BI](copilot-create-report.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
 - [Create a quick page summary with Copilot for the Power BI service](copilot-summarize-page.md)
-- [Evaluate your data for use with Copilot for Power BI](copilot-evaluate-data.md)
+- [Update your data model to work well with Copilot](copilot-evaluate-data.md)
 - Frequently asked questions about Copilot for Power BI (copilot-faq-fabric.yml)

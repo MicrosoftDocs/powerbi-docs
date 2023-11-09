@@ -102,7 +102,7 @@
       items: 
         - name: Introduction to Copilot for Power BI
           href: copilot-introduction.md
-        - name: Evaluate your data for Copilot
+        - name: Update your data model to work well with Copilot
           href: copilot-evaluate-data.md
         - name: Create a report with Copilot
           href: copilot-create-report.md

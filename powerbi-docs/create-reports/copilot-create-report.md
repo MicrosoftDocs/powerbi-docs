@@ -21,7 +21,7 @@ When you use Copilot for Power BI, you can quickly create report pages with just
 
 ## Before you start
 
-You may need to do some clean-up work on your dataset. Read the article [Evaluate your data before using Copilot](copilot-evaluate-data.md) to see if you need to modify your semantic model so that Copilot will get insights from it.
+You may need to do some clean-up work on your dataset. Read the article [Update your data model to work well with Copilot](copilot-evaluate-data.md) to see if you need to modify your semantic model so that Copilot will get insights from it.
 
 ## Get started
 
@@ -46,7 +46,11 @@ To see the **Copilot** button in your report, you first need to select a semanti
 
     :::image type="content" source="media/copilot-create-report/copilot-create-page.png" alt-text="Screenshot showing selecting the Create page button.":::
 
-    Otherwise select **Create a report that shows** and provide guidance on what you want in the report.
+    Copilot creates that page. 
+
+    :::image type="content" source="media/copilot-create-report/copilot-create-sales-comparison-page-2.png" alt-text="Screenshot of Copilot creating the Sales Comparison page." lightbox="media/copilot-create-report/copilot-create-sales-comparison-page-2.png":::
+
+    Continue creating the pages that Copilot suggests. Otherwise select **Create a report that shows** and provide guidance on what you want in the report.
 
 1. If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts.md) for guidance.
 
