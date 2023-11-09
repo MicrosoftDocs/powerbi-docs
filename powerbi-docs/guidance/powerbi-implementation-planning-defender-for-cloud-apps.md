@@ -190,7 +190,7 @@ When an activity is blocked in real time, it's important to provide the user wit
 
 Some types of policies in Defender for Cloud Apps can have a customized message. Here are two examples of user notifications.
 
-**Example 1:** You can define a real-time session control policy that prevents all exports and downloads when the sensitivity label for the Power BI item (like a report or dataset) is set to _Highly Restricted_. The customized block message in Defender for Cloud Apps reads: _Files with a Highly Restricted label are not permitted to be downloaded from the Power BI service. Please view the content online in the Power BI service. Contact the Power BI support team with any questions._
+**Example 1:** You can define a real-time session control policy that prevents all exports and downloads when the sensitivity label for the Power BI item (like a report or semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md)) is set to _Highly Restricted_. The customized block message in Defender for Cloud Apps reads: _Files with a Highly Restricted label are not permitted to be downloaded from the Power BI service. Please view the content online in the Power BI service. Contact the Power BI support team with any questions._
 
 **Example 2:** You can define a real-time access policy that prevents a user from signing in to the Power BI service when they're not using a machine managed by the organization. The customized block message in Defender for Cloud Apps reads: _The Power BI service might not be accessed on a personal device. Please use the device provided by the organization. Contact the Power BI support team with any questions._
 
@@ -214,7 +214,7 @@ You can set up each alert with a low, medium, or high severity. The severity lev
 
 Here are two examples of administrator alerts.
 
-**Example 1:** You can define a real-time session control policy that prevents all exports and downloads when the sensitivity label for the Power BI item (like a report or dataset) is set to _Highly Restricted_. It has a helpful customized block message for the user. However, in this situation there isn't a need to generate an alert.
+**Example 1:** You can define a real-time session control policy that prevents all exports and downloads when the sensitivity label for the Power BI item (like a report or semantic model) is set to _Highly Restricted_. It has a helpful customized block message for the user. However, in this situation there isn't a need to generate an alert.
 
 **Example 2:** You can define an activity policy that tracks whether an external user has viewed a highly privileged report that's provided to the board of directors. A high severity alert can be set up to ensure that the activity is promptly investigated.
 

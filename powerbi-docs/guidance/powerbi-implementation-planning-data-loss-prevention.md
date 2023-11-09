@@ -47,9 +47,9 @@ Broadly, there are two different services that can implement data loss preventio
 
 ### Microsoft Purview DLP policies for Power BI
 
-A [DLP policy for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi) is set up in the Microsoft Purview compliance portal. It can detect sensitive data in a dataset that's been published to a Premium workspace in the Power BI service.
+A [DLP policy for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi) is set up in the Microsoft Purview compliance portal. It can detect sensitive data in a semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) that's been published to a Premium workspace in the Power BI service.
 
-The goal for this type of DLP policy is to bring awareness to users and inform administrators of where sensitive data is stored. The DLP policy can generate user notifications and administrator alerts based on sensitive information types or sensitivity labels. For example, you can determine whether credit card information or personally identifiable information (PII) is stored in a dataset.
+The goal for this type of DLP policy is to bring awareness to users and inform administrators of where sensitive data is stored. The DLP policy can generate user notifications and administrator alerts based on sensitive information types or sensitivity labels. For example, you can determine whether credit card information or personally identifiable information (PII) is stored in a semantic model.
 
 > [!NOTE]
 > DLP for Power BI is the focus of this article.
@@ -88,18 +88,18 @@ There's a hierarchical precedence to the list of DLP policies, as well as to DLP
 A DLP policy for Power BI that's set up in the Microsoft Purview compliance portal can be based on either a [sensitivity label](/microsoft-365/compliance/sensitivity-labels) or a [sensitive information type](/microsoft-365/compliance/sensitive-information-type-learn-about).
 
 > [!IMPORTANT]
-> Although you can assign sensitivity labels to most types of items in Power BI, the DLP policies described in this article are focused specifically on datasets. The dataset must be published to a Premium workspace.
+> Although you can assign sensitivity labels to most types of items in Power BI, the DLP policies described in this article are focused specifically on semantic models. The semantic model must be published to a Premium workspace.
 
 #### Sensitivity label
 
 You can use sensitivity labels to classify content, ranging from less sensitive to more sensitive.
 
-When a DLP policy for Power BI is invoked, a _sensitivity label rule_ checks datasets (that are published to the Power BI service) for the presence of a certain sensitivity label. As described in the [Information protection for Power BI](powerbi-implementation-planning-info-protection.md) article, a label can be assigned either by a user or by an automated process (for example, an inherited label or a default label).
+When a DLP policy for Power BI is invoked, a _sensitivity label rule_ checks semantic models (that are published to the Power BI service) for the presence of a certain sensitivity label. As described in the [Information protection for Power BI](powerbi-implementation-planning-info-protection.md) article, a label can be assigned either by a user or by an automated process (for example, an inherited label or a default label).
 
 Here are some examples of when you might create a DLP rule based on a sensitivity label.
 
-- **Regulatory compliance:** You have a sensitivity label that's reserved for data that's subject to a particular regulatory requirement. You want to raise an alert for your security administrators when users assign that sensitivity label to a dataset in the Power BI service.
-- **Reminders for content creators about confidential data:** You have a sensitivity label that's used for confidential data. You want to generate a user notification when a user views the dataset details page within the [data hub](/power-bi/connect-data/service-data-hub?tabs=datasets) in the Power BI service. For instance, you could remind users about how to appropriately handle confidential data.
+- **Regulatory compliance:** You have a sensitivity label that's reserved for data that's subject to a particular regulatory requirement. You want to raise an alert for your security administrators when users assign that sensitivity label to a semantic model in the Power BI service.
+- **Reminders for content creators about confidential data:** You have a sensitivity label that's used for confidential data. You want to generate a user notification when a user views the semantic model details page within the [data hub](/power-bi/connect-data/service-data-hub?tabs=semantic-models) in the Power BI service. For instance, you could remind users about how to appropriately handle confidential data.
 
 Other considerations about user notifications and alerts are described in this next section of this article.
 
@@ -140,12 +140,12 @@ You'll find many pre-configured SITs in the Microsoft Purview compliance portal.
 
 If the pre-configured SITs don't meet your needs, or you have proprietary data patterns, you can create a [custom SIT](/microsoft-365/compliance/create-a-custom-sensitive-information-type). For example, you can create a custom SIT to match the pattern of your employee ID number.
 
-Once the SIT is set up, a DLP policy for Power BI is invoked when a dataset is uploaded or refreshed. At that time, a _sensitive information type rule_ will check datasets (in the Power BI service) for the presence of sensitive information types.
+Once the SIT is set up, a DLP policy for Power BI is invoked when a semantic model is uploaded or refreshed. At that time, a _sensitive information type rule_ will check semantic models (in the Power BI service) for the presence of sensitive information types.
 
 Here are some examples of when you might create a DLP rule based on a sensitive information type.
 
-- **Regulatory compliance:** You have a sensitive information type that's subject to regulatory requirements. You want to generate an alert for your security administrators when that type of data is detected within a dataset in the Power BI service.
-- **Internal requirements:** You have a sensitive information type that needs special handling. To meet internal requirements, you want to generate a user notification when a user views the dataset settings or the dataset details page in the [data hub](/power-bi/connect-data/service-data-hub?tabs=datasets) (in the Power BI service).
+- **Regulatory compliance:** You have a sensitive information type that's subject to regulatory requirements. You want to generate an alert for your security administrators when that type of data is detected within a semantic model in the Power BI service.
+- **Internal requirements:** You have a sensitive information type that needs special handling. To meet internal requirements, you want to generate a user notification when a user views the semantic model settings or the semantic model details page in the [data hub](/power-bi/connect-data/service-data-hub?tabs=semantic-models) (in the Power BI service).
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -166,13 +166,13 @@ When you've identified use cases for DLP with sensitivity labels and SITs, you s
 - **Specific:** Correlating the message to the rule makes it far easier to understand.
 - **Actionable:** Offering a suggestion for what the user needs to do, or how to find more information.
 
-For DLP in Power BI, user notifications appear in the dataset settings. They also appear across the top of the dataset details page in the data hub, as shown in the following screenshot. In this instance, the notification reads: _This data contains credit cards. That type of data is not permitted in Power BI per the Data Classification, Protection, and Usage policy._
+For DLP in Power BI, user notifications appear in the semantic model settings. They also appear across the top of the semantic model details page in the data hub, as shown in the following screenshot. In this instance, the notification reads: _This data contains credit cards. That type of data is not permitted in Power BI per the Data Classification, Protection, and Usage policy._
 
 :::image type="content" source="media/powerbi-implementation-planning-data-loss-prevention/data-loss-prevention-user-notification.png" alt-text="Screenshot shows a DLP user notification across the top of the data hub page." border="false":::
 
 You can define one or more rules for each DLP policy. Each rule can optionally have a different policy tip that will be displayed to users.
 
-Consider the following example of how you could define a DLP policy for detecting financial data stored within datasets in the Power BI service. The DLP policy uses SITs and it has two rules.
+Consider the following example of how you could define a DLP policy for detecting financial data stored within semantic models in the Power BI service. The DLP policy uses SITs and it has two rules.
 
 - **Rule 1:** The first rule detects credit card numbers. The customized policy tip text reads: _This data contains credit card numbers. That type of data is not permitted in Power BI per the Data Classification and Protection policy._
 - **Rule 2:** The second rule detects financial accounts. The customized policy tip text reads: _This data contains sensitive financial information. It requires the use of the Highly Restricted label. Please refer to the Data Classification and Protection Policy for requirements when storing financial data._
@@ -210,17 +210,17 @@ Each alert can be defined by a severity level, which can be low, medium, or high
 
 Here are two examples of how alerts can be used.
 
-**Example 1:** You've defined a DLP policy for detecting financial data stored in datasets in the Power BI service. The DLP policy uses sensitive information types. It has two rules.
+**Example 1:** You've defined a DLP policy for detecting financial data stored in semantic models in the Power BI service. The DLP policy uses sensitive information types. It has two rules.
 
 - **Rule 1:** This rule detects credit card numbers. Alerting is enabled with a high severity. An email is generated too.
 - **Rule 2:** This rule detects financial accounts. Alerting is enabled with a high severity.
 
-**Example 2:** You've defined a DLP policy that's invoked when the _Highly Restricted\Executive Committee and Board Members_ sensitivity label is assigned to a dataset in the Power BI service. It doesn't generate a user notification. In this situation, you might not want to generate an alert because you only want to log the occurrence. If needed, you can obtain more information from the [activity explorer](powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md#microsoft-purview-activity-explorer).
+**Example 2:** You've defined a DLP policy that's invoked when the _Highly Restricted\Executive Committee and Board Members_ sensitivity label is assigned to a semantic model in the Power BI service. It doesn't generate a user notification. In this situation, you might not want to generate an alert because you only want to log the occurrence. If needed, you can obtain more information from the [activity explorer](powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md#microsoft-purview-activity-explorer).
 
 When an email alert is required, we recommend that you use a mail-enabled security group. For example, you might use a group named _Security and Privacy Admin Alerting_.
 
 > [!TIP]
-> Keep in mind that DLP rules for Power BI are checked every time that a dataset is uploaded or refreshed. That means an alert could be generated each time the dataset is refreshed. Regular or frequent data refreshes could result in an overwhelming number of logged events and alerts.
+> Keep in mind that DLP rules for Power BI are checked every time that a semantic model is uploaded or refreshed. That means an alert could be generated each time the semantic model is refreshed. Regular or frequent data refreshes could result in an overwhelming number of logged events and alerts.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -234,7 +234,7 @@ When an email alert is required, we recommend that you use a mail-enabled securi
 
 ### Workspaces in scope
 
-A [DLP policy for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi) that's set up in the Microsoft Purview compliance portal is intended to target datasets. Specifically, it supports scanning datasets that have been published to a Premium workspace.
+A [DLP policy for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi) that's set up in the Microsoft Purview compliance portal is intended to target semantic models. Specifically, it supports scanning semantic models that have been published to a Premium workspace.
 
 You can set up the DLP policy to scan all Premium workspaces. Optionally, you can choose to include, or exclude, specific workspaces. For example, you might exclude certain development or test workspaces that are considered lower risk (particularly if they don't contain real production data). Alternatively, you might create separate policies for certain development or test workspaces.
 
