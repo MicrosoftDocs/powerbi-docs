@@ -29,13 +29,13 @@ This permission allows an application to view all dashboards you have access to.
   
 This permission allows an application to view all reports you have access to. This access includes reports that you own, have gotten from apps, and are in groups that you belong to. Part of viewing the report, means that the application can also see the data within it. The application can't make any modifications to the reports themselves. Among other things, this permission can be used by an application to embed your report content into its experiences.
 
-### View all Datasets
+### View all Semantic models
   
-This permission allows an application to list all datasets that you have access to. This access includes datasets that you own, have gotten from apps, and are in groups that you belong to. An application can see the names of all your datasets and their structure including table and column names. This permission gives rights to read the data in a dataset. The permission doesn't give the application rights to add or make changes to a dataset.
+This permission allows an application to list all semantic models that you have access to. This access includes semantic models that you own, have gotten from apps, and are in groups that you belong to. An application can see the names of all your semantic models and their structure including table and column names. This permission gives rights to read the data in a semantic model. The permission doesn't give the application rights to add or make changes to a semantic model.
 
-### Read and Write all Datasets
+### Read and Write all Semantic models
   
-This permission allows an application to list all datasets that you have access to. This access includes datasets that you own, have gotten from apps, and are in groups that you belong to. An application can see the names of all your datasets and their structure including table and column names. This permission gives rights to read and write the data in a dataset. The application can also create new datasets, or make modifications to existing ones. This permission is commonly used by an application to send to data directly to Power BI.
+This permission allows an application to list all semantic models that you have access to. This access includes semantic models that you own, have gotten from apps, and are in groups that you belong to. An application can see the names of all your semantic models and their structure including table and column names. This permission gives rights to read and write the data in a semantic model. The application can also create new semantic models, or make modifications to existing ones. This permission is commonly used by an application to send to data directly to Power BI.
 
 ### View user's Groups
   
