@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 08/17/2022
+ms.date: 08/17/2023
 ---
 
 # Migrate multi-customer applications to the service principal profiles model
@@ -58,11 +58,11 @@ If you don't have one workspace per customer, use the corresponding profile to c
 
 ### Organize items in workspaces
 
-You should now have a profile and a workspace for each customer. If you created new workspaces in the previous step, you need to import items (like reports and datasets) into these workspaces. The datasets you import depend on your current solution:
+You should now have a profile and a workspace for each customer. If you created new workspaces in the previous step, you need to import items (like reports and semantic models) into these workspaces. The semantic models you import depend on your current solution:
 
-* If your app uses a separate dataset for each customer, the dataset design can work as it is.
+* If your app uses a separate semantic model for each customer, the semantic model design can work as it is.
 
-* If your app uses one dataset with row level security (RLS) to provide different data to different customers, you can get better scalability by creating [a separate dataset for each customer](embed-multi-tenancy.md#a-separate-database-for-each-customer) and using profiles as described in this article.
+* If your app uses one semantic model with row level security (RLS) to provide different data to different customers, you can get better scalability by creating [a separate semantic model for each customer](embed-multi-tenancy.md#a-separate-database-for-each-customer) and using profiles as described in this article.
 * After overcoming scalability limitations by using profiles and separate data sources, you can get even more data separation by using [RLS](embedded-row-level-security.md) with profiles.
   * If you rely on Dynamic RLS, the name of the profile will be returned in the DAX function `UserName()`.
   * If you use static RLS and override roles when generating the embed token, you can continue doing this.
