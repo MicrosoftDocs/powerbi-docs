@@ -90,7 +90,7 @@ Usage metrics reports don't show up in **Recent**, **Workspaces**, **Favorites**
 To dig into the report data, or to build your own reports against the underlying semantic model, you have two options: 
 
 - Make a copy of the report in the Power BI service. See [Save a copy of the Usage Metrics report](#save-a-copy-of-the-usage-metrics-report) later in this article for details.
-- Connect to the semantic model from Power BI Desktop. For every workspace, the semantic model has the name "Report Usage Metrics Model." See [Establish a connection to a published semantic model](../connect-data/desktop-report-lifecycle-dataset.md#establish-a-power-bi-service-live-connection-to-the-published-semantic-model) for details.
+- Connect to the semantic model from Power BI Desktop. For every workspace, the semantic model has the name "Report Usage Metrics Model." See [Establish a connection to a published semantic model](../connect-data/desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-semantic-model) for details.
 
     ![Screenshot showing Connect to a usage report semantic model.](media/service-usage-metrics/power-bi-usage-dataset.png)
 
