@@ -30,7 +30,7 @@ Select the **Title** to view more information about that specific known issue.
 |  522      |  Capacity Management  |  [Failures in the Fabric Capacity Metrics app](known-issue-522-failures-fabric-capacity-metrics-app.md)    | October 10, 2023  |
 |  482      |  Account & License  |  [Power BI Desktop sign-in prompt shows unsupported personal Microsoft accounts](known-issue-482-desktop-sign-in-prompt-shows-unsupported-personal-microsoft-accounts.md)    | August 10, 2023  |
 |  471      |  Embedded, REST API or PowerShell  |  [Power BI Embedded setup tool isn't responsive](known-issue-471-embedded-setup-tool-isnt-responsive.md)    | August 10, 2023  |
-|  461      |  Create and Author Data            |  [A scheduled refresh of a dataset intermittently hangs when connected to a dataflow](known-issue-461-scheduled-refresh-dataset-hangs.md)    | July 27, 2023  |
+|  461      |  Create and Author Data            |  [A scheduled refresh of a semantic model intermittently hangs when connected to a dataflow](known-issue-461-scheduled-refresh-dataset-hangs.md)    | July 27, 2023  |
 |  222      |  Consume and View                  |  [Search strings that include Japanese symbols don't return matches](known-issue-222-search-strings-japanese-symbols-dont-work.md)   |  August 3, 2022  |
 
 ## Recently closed known issues

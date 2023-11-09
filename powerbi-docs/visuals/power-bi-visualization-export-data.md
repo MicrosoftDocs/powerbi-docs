@@ -119,7 +119,7 @@ In this example, our Excel export shows one total for each city. Since we filter
 
 ### Export ***underlying*** data
 
-Select this option if you want to see the data in the visual ***and*** additional data from the dataset (see chart below for details). If your visualization has an aggregate, selecting **Underlying data** removes the aggregate. In this example, the Excel export shows one row for every single **City** row in our dataset and the discount percent for that single entry. Power BI flattens the data, it doesn't aggregate it.
+Select this option if you want to see the data in the visual ***and*** additional data from the semantic model (see chart below for details). If your visualization has an aggregate, selecting **Underlying data** removes the aggregate. In this example, the Excel export shows one row for every single **City** row in our semantic model and the discount percent for that single entry. Power BI flattens the data, it doesn't aggregate it.
 
 For some data, **underlying** is disabled. Build permissions may be required to see more data than is currently displayed in the visual (underlying data). These permissions protect the data from being inappropriately viewed, reused, or shared with anyone other than the intended audience.
 

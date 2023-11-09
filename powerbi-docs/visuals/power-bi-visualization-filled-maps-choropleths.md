@@ -163,7 +163,7 @@ You can also apply various formatting options to a filled map visual.
 
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-format-colors-min-max.png" alt-text="Screenshot that shows how to set the minimum and maximum colors for the color-shaded map.":::
 
-   If your dataset requires a third primary color in the gradient, select the **Add a middle color** option and configure the extra options.
+   If your semantic model requires a third primary color in the gradient, select the **Add a middle color** option and configure the extra options.
 
 1. When you're done setting the colors, select **OK**.
 
@@ -227,11 +227,11 @@ For more information about using the **Filters** pane, see [Add a filter to a re
 
 Map data can be ambiguous. For example, there's a Paris, France, but there's also a Paris, Texas. Geographic location data is often stored in separate columns with one column for city names and another column for the corresponding state or province. When you supply Bing with only one column of data, such as for the city name, Bing might not distinguish data for one city location from another of the same name.
 
-If your dataset already contains latitude and longitude data, Power BI has special fields to help make the map data unambiguous. You can drag the field that contains your latitude data onto the **Latitude** section on the **Visualizations** > **Build visual** pane. You can use this same approach for your longitude data. 
+If your semantic model already contains latitude and longitude data, Power BI has special fields to help make the map data unambiguous. You can drag the field that contains your latitude data onto the **Latitude** section on the **Visualizations** > **Build visual** pane. You can use this same approach for your longitude data. 
 
 :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-set-latitude-longitude.png" alt-text="Screenshot that shows how to set the latitude and longitude options for a filled map in Power BI." border="false":::
 
-If you don't have access to latitude and longitude data, but you have edit access to the dataset, follow the instructions in [Maps in Power View](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7) to update your dataset.
+If you don't have access to latitude and longitude data, but you have edit access to the semantic model, follow the instructions in [Maps in Power View](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7) to update your semantic model.
 
 For more information about map visualizations in Power BI, see [Tips and tricks for map visualizations](./power-bi-map-tips-and-tricks.md).
 

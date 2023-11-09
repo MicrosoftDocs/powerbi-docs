@@ -85,7 +85,7 @@ R visuals in the Power BI service have a few limitations:
 
 * R visuals support is limited to the packages identified [in Learn which R packages are supported](../connect-data/service-r-packages-support.md). There currently is no support for custom packages.
 * Data size limitations – data used by the R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image. Additionally, the input data has a limit of 250 MB.
-* If the input dataset of an R Visual has a column that contains a string value longer than 32766 characters, that value is truncated.
+* If the input semantic model of an R Visual has a column that contains a string value longer than 32766 characters, that value is truncated.
 * Resolution - all R visuals are displayed at 72 DPI.
 * Plotting device - only plotting to the default device is supported. 
 * Calculation time limitation – if an R visual calculation exceeds 60 seconds the script times out, resulting in an error.

@@ -20,7 +20,7 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 :::image type="content" source="media/end-user-q-and-a/power-bi-example.png" alt-text="Image showing the Q&A question and resulting line chart.":::
 
-Use Q&A to explore your data using natural language capabilities and receive answers in the form of charts and graphs. Unlike a search engine, Q&A only provides results about the data in Power BI datasets.
+Use Q&A to explore your data using natural language capabilities and receive answers in the form of charts and graphs. Unlike a search engine, Q&A only provides results about the data in Power BI semantic models.
 
 To learn how to use Q&A, see [Explore your data and create visuals using Q&A](../natural-language/q-and-a-intro.md)
 
@@ -72,7 +72,7 @@ Choose **Power BI Settings** > **Dashboards**. Make sure there's a check mark ne
 
 **Question**: I'm not getting the results I'd like to see when I type a question.
 
-**Answer**: Select the option to contact the report or dashboard owner. You can find the report or dashboard owner from the Q&A dashboard page or the Q&A visual. Or, you can look up the owner from the Power BI header.  There are [many things the owner can do to improve the Q&A results](../natural-language/q-and-a-tooling-intro.md). For example, the owner can rename columns in the dataset to use terms that are easily understood (`CustomerFirstName` instead of `CustFN`). Since the owner knows the dataset, they can also come up with helpful questions and add them to the Q&A suggested questions.
+**Answer**: Select the option to contact the report or dashboard owner. You can find the report or dashboard owner from the Q&A dashboard page or the Q&A visual. Or, you can look up the owner from the Power BI header.  There are [many things the owner can do to improve the Q&A results](../natural-language/q-and-a-tooling-intro.md). For example, the owner can rename columns in the semantic model to use terms that are easily understood (`CustomerFirstName` instead of `CustFN`). Since the owner knows the semantic model, they can also come up with helpful questions and add them to the Q&A suggested questions.
 
 ![Screenshot of Display contact information.](media/end-user-q-and-a/power-bi-contact.png)
 
