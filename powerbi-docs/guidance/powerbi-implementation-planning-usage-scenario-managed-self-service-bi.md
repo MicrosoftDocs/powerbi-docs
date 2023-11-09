@@ -77,7 +77,7 @@ Because shared datasets are intended for reuse, it's helpful to [endorse](../col
 
 ### Dataset discovery
 
-The [data hub](../connect-data/service-data-hub.md) helps report creators find, explore, and use datasets across the organization. In addition to dataset endorsement, [enabling dataset discovery](/power-bi/connect-data/service-data-hub#make-your-dataset-discoverable) is critical for promoting its reuse. A discoverable dataset is visible in the data hub for report creators who are searching for data.
+The [data hub](../connect-data/service-data-hub.md) helps report creators find, explore, and use datasets across the organization. In addition to dataset endorsement, [enabling dataset discovery](/power-bi/connect-data/service-data-hub#make-your-semantic-model-discoverable) is critical for promoting its reuse. A discoverable dataset is visible in the data hub for report creators who are searching for data.
 
 > [!NOTE]
 > If a dataset isn't configured to be discoverable, only Power BI users with Build permission can find it.
@@ -104,7 +104,7 @@ First, there's clarity on who's responsible for managing content in which worksp
 
 ### Dependency and impact analysis
 
-When a shared dataset is used by many reports, those reports can exist in many workspaces. The [lineage view](../collaborate-share/service-data-lineage.md) helps identify and understand the downstream dependencies. When planning a dataset change, first perform [impact analysis](../collaborate-share/service-dataset-impact-analysis.md#perform-dataset-impact-analysis) to understand which dependent reports might require editing or testing.
+When a shared dataset is used by many reports, those reports can exist in many workspaces. The [lineage view](../collaborate-share/service-data-lineage.md) helps identify and understand the downstream dependencies. When planning a dataset change, first perform [impact analysis](../collaborate-share/service-dataset-impact-analysis.md#perform-semantic-model-impact-analysis) to understand which dependent reports might require editing or testing.
 
 ### Gateway setup
 
