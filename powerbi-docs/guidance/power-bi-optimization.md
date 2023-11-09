@@ -7,7 +7,7 @@ ms.reviewer: nisrinivasan
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/15/2022
+ms.date: 11/10/2023
 ---
 
 # Optimization guide for Power BI

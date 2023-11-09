@@ -16,9 +16,9 @@ Business intelligence is a collaborative activity. It's important to establish s
 
 :::image type="content" source="media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png" alt-text="Screenshot shows datasets where you can select a shared dataset." lightbox="media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png":::
 
-In Power BI, dataset creators can control who has access to their data by using the [Build permission](service-datasets-build-permissions.md). Dataset creators can also *certify* or *promote* datasets so others can discover them. That way, report authors know which datasets are high quality and official, and they can use those datasets wherever they author in Power BI. Administrators have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
+In Power BI, dataset creators can control who has access to their data by using the [Build permission](service-datasets-build-permissions.md). Semantic model creators can also *certify* or *promote* datasets so others can discover them. That way, report authors know which datasets are high quality and official, and they can use those datasets wherever they author in Power BI. Administrators have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
 
-## Dataset sharing and workspaces
+## Semantic model sharing and workspaces
 
 Building reports based on datasets in different workspaces, and copying reports to different workspaces, are tightly coupled with the [workspace](../collaborate-share/service-create-the-new-workspaces.md):
 

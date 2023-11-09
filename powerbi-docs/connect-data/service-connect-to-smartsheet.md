@@ -60,7 +60,7 @@ You've installed the Smartsheet template app. That means you've also created the
 
     ![Smartsheet content list](media/service-connect-to-smartsheet/power-bi-smartsheet-workspace-content.png)
 
-2. Select **Reports** and **Datasets** to see the other elements in the workspace.
+2. Select **Reports** and **Semantic models** to see the other elements in the workspace.
 
     Read about [distributing apps](../collaborate-share/service-create-distribute-apps.md) to your colleagues.
 

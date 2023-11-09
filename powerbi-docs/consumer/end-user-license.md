@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 Ms.custom: css_fy20Q4
 ms.topic: how-to
-ms.date: 11/04/2022
+ms.date: 10/27/2023
 ms.custom: licensing support
 LocalizationGroup: consumers
 ---
@@ -34,6 +34,12 @@ This article describes the capabilities of each license type and how the locatio
 Each user of the Power BI service has either a *free* license, a *Pro* license, or a *Premium per-user* license. If you're a Power BI business user, you're probably using a free license that's managed by your Power BI administrator.
 
 It's possible to have more than one license at the same time. The service always delivers you the experience equal to the most permissive license you currently have.
+
+>[!NOTE]
+>
+>* A [Power BI Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is needed for publishing content to a Power BI app workspace.
+>* Only **P SKU**s and **F SKU**s larger than F32 allow free Power BI users to consume Power BI apps and shared content in Power BI service. Smaller **F SKU**s require a Pro license to consume Power BI content.
+
 
 ## Power BI Premium capacity subscription
 
@@ -127,6 +133,8 @@ The Power BI Pro designer can share and collaborate with other Pro users in eith
 - If you sign up for a free license by selecting a **Try it free** button, it never expires unless you cancel it. If your trial upgrade ends or if your organization removes your Pro or Premium license, your free license is still available to you.
 
 - A free user license for the Power BI service is perfect for someone exploring or using it for personal data analysis and visualizations by using **My workspace**. A free standalone user doesn't use Power BI to collaborate with colleagues. Standalone users with free licenses can't view content shared by others or share their own content with other Power BI users.
+
+
 
 ## Next steps
 

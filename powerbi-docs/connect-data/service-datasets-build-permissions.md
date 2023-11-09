@@ -28,7 +28,7 @@ Users get Build permission for a dataset in a few different ways:
 
 - Users that have at least a Contributor role in a workspace have Build permission on the datasets in that workspace, as well as permission to copy reports in that workspace. For more information about roles in workspaces, see [Roles in workspaces in Power BI](../collaborate-share/service-roles-new-workspaces.md).
  
-- Dataset owners can assign Build permission to specific users or security groups on the  **Manage permissions** page. For more information, see [Manage dataset access permissions](service-datasets-manage-access-permissions.md).
+- Semantic model owners can assign Build permission to specific users or security groups on the  **Manage permissions** page. For more information, see [Manage dataset access permissions](service-datasets-manage-access-permissions.md).
 
 - A user with an Admin or Member role in the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets. For more information, see [Create and manage multiple audiences](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences).
 

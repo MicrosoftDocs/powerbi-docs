@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 10/04/2023
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 # Dataflows considerations and limitations
@@ -118,13 +118,13 @@ Dataflows that exist in Premium have the following considerations and limitation
 
 
 
-## Dataflow usage in datasets
+## Dataflow usage in semantic models
 
-* When creating a dataset in Power BI Desktop, and then publishing it to the Power BI service, ensure the credentials used in Power BI Desktop for the dataflows data source are the same credentials used when the dataset is published to the service.
-  1. Failing to ensure those credentials are the same results in a *Key not found* error upon dataset refresh
+* When creating a semantic model in Power BI Desktop, and then publishing it to the Power BI service, ensure the credentials used in Power BI Desktop for the dataflows data source are the same credentials used when the semantic model is published to the service.
+  1. Failing to ensure those credentials are the same results in a *Key not found* error upon semantic model refresh
 
 > [!NOTE]
-> If the dataflow structure is changed, such as a new or renamed column, the dataset will not show the change, and the change may also cause a data refresh to fail in the Power BI service for the dataset, until refreshed in Power BI Desktop and re-published.
+> If the dataflow structure is changed, such as a new or renamed column, the semantic model will not show the change, and the change may also cause a data refresh to fail in the Power BI service for the semantic model, until refreshed in Power BI Desktop and re-published.
 
 ## Dataflows and named connections
 

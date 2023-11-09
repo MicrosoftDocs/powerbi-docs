@@ -1,8 +1,8 @@
 ---
 title: Close your Power BI account
 description: Learn how to close your individual Power BI account by using settings in the Power BI app.
-author: kfollis
-ms.author: kfollis
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin

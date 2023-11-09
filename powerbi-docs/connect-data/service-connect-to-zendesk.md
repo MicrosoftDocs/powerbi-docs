@@ -76,7 +76,7 @@ You've installed the Zendesk template app. That means you've also created the Ze
 
     ![Zendesk content list](media/service-connect-to-zendesk/power-bi-zendesk-content-list.png)
 
-2. Select **Reports** and **Datasets** to see the other elements in the workspace.
+2. Select **Reports** and **Semantic models** to see the other elements in the workspace.
 
     Read about [distributing apps](../collaborate-share/service-create-distribute-apps.md) to your colleagues.
 

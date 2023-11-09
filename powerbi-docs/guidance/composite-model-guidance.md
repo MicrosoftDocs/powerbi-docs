@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/24/2023
+ms.date: 11/10/2023
 ---
 
 # Composite model guidance in Power BI Desktop

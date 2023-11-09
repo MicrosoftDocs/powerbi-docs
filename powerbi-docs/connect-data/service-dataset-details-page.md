@@ -1,16 +1,16 @@
 ---
-title: Dataset details page
+title: Semantic model details page
 description: Learn about the information and actions available to you on the dataset details page.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
-ms.search.form: Dataset details
+ms.search.form: Semantic model details
 ms.topic: conceptual
 ms.date: 05/02/2023
 LocalizationGroup: Share your work
 ---
-# Dataset details
+# Semantic model details
 
 The dataset details page helps you explore, monitor, and leverage datasets. When you select a dataset in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that dataset opens.
 
@@ -109,7 +109,7 @@ To preview a datasets's data from the dataset details page, select a table or co
 
 If you don't see the side panel, select **Show tables** on the action bar.
 
-:::image type="content" source="./media/service-dataset-details-page/dataset-details-page-show-tables-option.png" alt-text="Screenshot of Show tables option on Dataset details page.":::
+:::image type="content" source="./media/service-dataset-details-page/dataset-details-page-show-tables-option.png" alt-text="Screenshot of Show tables option on Semantic model details page.":::
 
 An entirely filled parent checkbox on the dataset's table indicates that all its sub-tables and columns have been selected. A partially filled parent checkbox means that only a subset of them has been selected.
 

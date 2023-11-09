@@ -33,6 +33,6 @@ By using third-party tools, you can discourage DirectQuery connections to a data
 
 ## Next steps
 - [Using DirectQuery in Power BI](desktop-directquery-about.md)
-- [Datasets in the Power BI service](service-dataset-modes-understand.md)
+- [Semantic models in the Power BI service](service-dataset-modes-understand.md)
 - [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md)
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/)

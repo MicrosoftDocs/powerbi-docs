@@ -91,7 +91,7 @@ Use the settings in the table below to control workload behavior. Settings with 
 |---------------------------------|----------------------------------------|
 | **Max Memory (%)**<sup>1</sup> | The maximum percentage of available memory that datasets can use in a capacity. |
 | **XMLA Endpoint** | Specifies that connections from client applications honor the security group membership set at the workspace and app levels. For more information, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md). |
-| **[Max Intermediate Row Set Count](#max-intermediate-row-set-count)** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483646. The upper limit may need to be further constrained based on what the datasource supports. |
+| **[Max Intermediate Row Set Count](#max-intermediate-row-set-count)** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483646. The upper limit might need to be further constrained based on what the datasource supports. |
 | **[Max Offline Dataset Size (GB)](#max-offline-dataset-size)** | The maximum size of the offline dataset in memory. This is the compressed size on disk. The default value is 0, which is the highest limit defined by SKU. The allowable range is between 0 and the capacity size limit. |
 | **[Max Result Row Count](#max-result-row-set-count)** | The maximum number of rows returned in a DAX query. The default value is 2147483647, and the allowable range is between 100000 and 2147483647. |
 | **[Query Memory Limit (%)](#query-memory-limit)** | The maximum percentage of available memory in the workload that can be used for executing an MDX or DAX query. The default value is 0, which results in SKU-specific automatic query memory limit being applied. |
@@ -139,15 +139,13 @@ Use this setting to control the impact of resource-intensive or poorly designed 
 
 This setting applies to all DAX and MDX queries that are executed by Power BI reports, Analyze in Excel reports, as well as other tools that might connect over the XMLA endpoint.
 
-Data refresh operations may also execute DAX queries as part of refreshing the dashboard tiles and visual caches after the data in the dataset has been refreshed. Such queries may also potentially fail because of this setting, and this could lead to the data refresh operation being shown in a failed state, even though the data in the dataset was successfully updated.
+Data refresh operations might also execute DAX queries as part of refreshing the dashboard tiles and visual caches after the data in the dataset has been refreshed. Such queries might also potentially fail because of this setting, and this could lead to the data refresh operation being shown in a failed state, even though the data in the dataset was successfully updated.
 
 The default setting is 0, which results in the following SKU-specific automatic query memory limit being applied.
 
 |                                  | EM1/A1   | EM2/A2   | EM3/A3   | P1/A4   | P2/A5   | P3/A6   | P4/A7   | P5/A8   |
 |----------------------------------|----------|----------|----------|---------|---------|---------|---------|---------|
-| **Automatic Query Memory Limit** | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   | 10 GB   | 10 GB   |
-
-To safeguard the performance of the system, a hard ceiling of 10 GB is enforced for all queries executed by Power BI reports, regardless of the query memory limit configured by the user. This hard ceiling doesn't apply to queries issued by tools that use the Analysis Services protocol (also known as XMLA). Users should consider simplifying the query or its calculations if the query is too memory intensive.
+| **Automatic Query Memory Limit** | 1 GB     | 2 GB     | 5 GB     | 10 GB    | 10 GB    | 10 GB   | 20 GB   | 40 GB   |
 
 The query limit for a workspace that isn't assigned to a Premium capacity is 1GB.
 
@@ -157,7 +155,7 @@ Use this setting to maintain better control of long-running queries, which can c
 
 This setting applies to all DAX and MDX queries that are executed by Power BI reports, Analyze in Excel reports, as well as other tools that might connect over the XMLA endpoint.
 
-Data refresh operations may also execute DAX queries as part of refreshing the dashboard tiles and visual caches after the data in the dataset has been refreshed. Such queries may also potentially fail because of this setting, and this could lead to the data refresh operation being shown in a failed state, even though the data in the dataset was successfully updated.
+Data refresh operations might also execute DAX queries as part of refreshing the dashboard tiles and visual caches after the data in the dataset has been refreshed. Such queries might also potentially fail because of this setting, and this could lead to the data refresh operation being shown in a failed state, even though the data in the dataset was successfully updated.
 
 This setting applies to a single query and not the length of time it takes to run all of the queries associated with updating a dataset or report. Consider the following example:
 
@@ -201,7 +199,7 @@ The Analysis Services XMLA-based server properties setting is enabled by default
 
 3. Expand **Workloads**.
 
-4. Under *datasets*, select the setting you want for the **Observe XMLA-based workspace settings (which may override capacity settings)** switch.
+4. Under *datasets*, select the setting you want for the **Observe XMLA-based workspace settings (which might override capacity settings)** switch.
 
     :::image type="content" source="media/service-admin-premium-workloads/disable-xmla.png" alt-text="Screenshot that shows the admin setting for disabling the analysis services server properties.":::
 

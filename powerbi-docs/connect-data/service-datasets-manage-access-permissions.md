@@ -78,7 +78,7 @@ The shared report links tab lists [links that have been created to shared report
 
 ## Next steps
 
-* [Dataset permissions](./service-datasets-permissions.md)
+* [Semantic model permissions](./service-datasets-permissions.md)
 * [Share access to a dataset](./service-datasets-share.md)
 * [Use datasets across workspaces](./service-datasets-across-workspaces.md)
 * [Share a report via link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)

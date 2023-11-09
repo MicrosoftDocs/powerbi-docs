@@ -30,7 +30,7 @@ Some of the effects of turning off this setting are listed below:
 
 As a Power BI admin, you can provide a URL for the **Learn more** link on the **Endorsement** setting page.  See [Enable content certification](../admin/service-admin-setup-certification.md) for detail. This link can go to documentation about your certification process. If you don't provide a destination for the **Learn more** link, by default it points to the [Endorse your content](../collaborate-share/service-endorse-content.md) article.
 
-![Dataset certification Learn more](media/service-datasets-admin-across-workspaces/service-admin-certification-setup-dialog.png)
+![Semantic model certification Learn more](media/service-datasets-admin-across-workspaces/service-admin-certification-setup-dialog.png)
 
 ## Next steps
 
