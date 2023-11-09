@@ -204,7 +204,7 @@ In the [**Power BI Admin portal**](../../admin/service-admin-portal.md), go to *
 
 ## Step 4 - Add the service principal to your workspace
 
-Your Azure AD app can access your Power BI reports, dashboards, and datasets only when it has access to your Power BI workspace. You provide that access by adding the app's service principal or its security group to your workspace as a member or admin.
+Your Azure AD app can access your Power BI reports, dashboards, and semantic models only when it has access to your Power BI workspace. You provide that access by adding the app's service principal or its security group to your workspace as a member or admin.
 
 There are three ways to add a service principal or its security group to your workspace:
 
