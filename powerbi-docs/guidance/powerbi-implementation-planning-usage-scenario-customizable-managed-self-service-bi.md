@@ -81,7 +81,7 @@ Because shared datasets are intended for reuse, it's helpful to [endorse](../col
 
 ### Dataset discovery
 
-The [data hub](../connect-data/service-data-hub.md) helps report creators find, explore, and use datasets across the organization. In addition to dataset endorsement, [enabling dataset discovery](../collaborate-share/service-discovery.md#how-to-mark-a-dataset-as-discoverable) is critical for promoting its reuse. A discoverable dataset is visible in the data hub for report creators who are searching for data.
+The [data hub](../connect-data/service-data-hub.md) helps report creators find, explore, and use datasets across the organization. In addition to dataset endorsement, [enabling dataset discovery](../collaborate-share/service-discovery.md#how-to-mark-a-semantic-model-as-discoverable) is critical for promoting its reuse. A discoverable dataset is visible in the data hub for report creators who are searching for data.
 
 > [!NOTE]
 > If a dataset isn't configured to be discoverable, only Power BI users with Build permission can find it.
@@ -98,7 +98,7 @@ First, there's clarity on who's responsible for managing content in which worksp
 
 ### Dependency and impact analysis
 
-When a shared dataset is used by other datasets or reports, those dependent objects can exist in many workspaces. The [lineage view](../collaborate-share/service-data-lineage.md) helps identify and understand the downstream dependencies. When planning a dataset change, first perform [impact analysis](../collaborate-share/service-dataset-impact-analysis.md#perform-dataset-impact-analysis) to understand which datasets or reports should be edited or tested.
+When a shared dataset is used by other datasets or reports, those dependent objects can exist in many workspaces. The [lineage view](../collaborate-share/service-data-lineage.md) helps identify and understand the downstream dependencies. When planning a dataset change, first perform [impact analysis](../collaborate-share/service-dataset-impact-analysis.md#perform-semantic-model-impact-analysis) to understand which datasets or reports should be edited or tested.
 
 ### Gateway setup
 
