@@ -166,7 +166,7 @@ In Power BI content, a data model refers to a map of data structures in a table 
 
 Dataflows ingest, transform, integrate, and enrich big data by defining data source connections, ETL logic, refresh schedules, and more. Formerly data pool.
 
-### Dataset
+### Semantic model
 
 A collection of data used to create visualizations and reports.
 
