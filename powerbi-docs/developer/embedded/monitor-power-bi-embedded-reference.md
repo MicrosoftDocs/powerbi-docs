@@ -114,7 +114,7 @@ The following table shows an event example.
 | Success | 1 | 1 = success. 0 = failure (for example, a 1 means success of a permissions check and a 0 means a failure of that check). |
 | Error | 0 | Error number of a given event. |
 | ConnectionID | 3 | Unique connection ID. |
-| DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | ID of the dataset in which the statement of the user is running. |
+| DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | ID of the semantic model in which the statement of the user is running. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Session GUID. |
 | SPID | 180 | Server process ID. This process ID uniquely identifies a user session. This ID directly corresponds to the session GUID used by XML/A. |
 | ClientProcessID | null | The process ID of the client application. |
