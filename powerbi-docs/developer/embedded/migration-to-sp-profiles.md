@@ -67,7 +67,7 @@ You should now have a profile and a workspace for each customer. If you created 
   * If you rely on Dynamic RLS, the name of the profile will be returned in the DAX function `UserName()`.
   * If you use static RLS and override roles when generating the embed token, you can continue doing this.
 
-Once the items are ready, import them into the relevant workspaces. To automate the process, consider using the [Import API](embed-multi-tenancy.md#import-reports-and-datasets).
+Once the items are ready, import them into the relevant workspaces. To automate the process, consider using the [Import API](embed-multi-tenancy.md#import-reports-and-semantic-models).
 
 ## Change the application codes to use profiles
 

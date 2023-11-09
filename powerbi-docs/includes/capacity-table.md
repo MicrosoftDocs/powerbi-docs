@@ -25,7 +25,7 @@ ms.custom: include file
 
 <sup>2</sup> These limits only apply to the semantic model workload per capacity.
 
-<sup>3</sup> The *Max memory (GB)* column under the *Semantic model* header represents an upper bound for the semantic model size. However, an amount of memory must be reserved for operations such as refreshes and queries on the semantic model. The maximum semantic model size permitted on a capacity might be smaller than the numbers in this column. For more information, see [Memory allocation](./../enterprise/service-premium-what-is.md#d-memory-allocation).
+<sup>3</sup> The *Max memory (GB)* column under the *Semantic model* header represents an upper bound for the semantic model size. However, an amount of memory must be reserved for operations such as refreshes and queries on the semantic model. The maximum semantic model size permitted on a capacity might be smaller than the numbers in this column. For more information, see [Memory allocation](./../enterprise/service-premium-what-is.md#semantic-model-memory-allocation).
 
 <sup>4</sup> These SKUs aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 

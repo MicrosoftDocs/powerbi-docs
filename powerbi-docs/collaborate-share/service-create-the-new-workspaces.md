@@ -139,7 +139,7 @@ On the **Premium** tab in the **Settings** pane, you can choose settings related
 
     :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-premium-per-user.png" alt-text="Screenshot of Choose Premium or Premium Per User.":::
 
-1. Choose **Default storage limit**. Read more about [enabling large datasets](../enterprise/service-premium-large-models.md#enable-large-datasets).
+1. Choose **Default storage limit**. Read more about [enabling large datasets](../enterprise/service-premium-large-models.md#enable-large-semantic-models).
 
 ## Give users access to your workspace
 

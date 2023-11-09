@@ -105,7 +105,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Scheduled refresh](../connect-data/refresh-scheduled-refresh.md), which keeps cached dataset data current | No | Yes |
 | [Enhanced refresh](../connect-data/asynchronous-refresh.md), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes |
 | [Backup and restore](../enterprise/service-premium-backup-restore-dataset.md) | Yes | Yes |
-| [Dataset workload settings](../enterprise/service-admin-premium-workloads.md#datasets), which control Premium capacity workloads | No | Yes |
+| [Dataset workload settings](../enterprise/service-admin-premium-workloads.md#semantic-models), which control Premium capacity workloads | No | Yes |
 | [Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties | Yes | Yes  |
 | [Alias server names](/azure/analysis-services/analysis-services-server-alias), which allow connecting to an Analysis Services server instance by using a shorter alias | Yes | No |
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md) enabled APIs for scripting and compatibility with services for automation and ALM including Azure Functions, Azure Automation and Azure DevOps | Yes | Yes |
@@ -251,7 +251,7 @@ For information on how to set up gateway data sources for Power BI Premium, see 
 
 ### Server properties
 
-Unlike AAS, Power BI Premium doesn't support [server properties](/analysis-services/server-properties/server-properties-in-analysis-services). Instead, you manage [Premium capacity settings](../enterprise/service-admin-premium-workloads.md#datasets).
+Unlike AAS, Power BI Premium doesn't support [server properties](/analysis-services/server-properties/server-properties-in-analysis-services). Instead, you manage [Premium capacity settings](../enterprise/service-admin-premium-workloads.md#semantic-models).
 
 ### Link files
 

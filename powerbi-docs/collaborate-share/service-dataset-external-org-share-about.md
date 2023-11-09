@@ -28,7 +28,7 @@ This article provides a basic introduction to in-place dataset sharing in Power 
 
 - Existing limitations for Azure AD B2B in Power BI and B2B collaboration in Azure AD still apply to in-place dataset sharing.  
 
-- Live connect mode isn't currently supported for in-place dataset sharing. Power BI will need to change queries in the DirectQuery mode, which consumes resources on shared capacity or a Premium capacity. For more information on DirectQuery versus LiveConnect, see [Data refresh in Power BI](../connect-data/refresh-data.md#datasets-in-directquery-mode).
+- Live connect mode isn't currently supported for in-place dataset sharing. Power BI will need to change queries in the DirectQuery mode, which consumes resources on shared capacity or a Premium capacity. For more information on DirectQuery versus LiveConnect, see [Data refresh in Power BI](../connect-data/refresh-data.md#semantic-models-in-directquery-mode).
 
 - If **Private Links** and **Block Public Internet Access** are enabled for a Provider’s Power BI tenant, consumers won't see datasets shared by this provider in their own tenant. 
 
