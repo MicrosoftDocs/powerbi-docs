@@ -141,7 +141,7 @@ $activities[0]
 
 If your task is to track user activities across Power BI and Microsoft 365, you work with auditing in Microsoft Purview or use PowerShell. Auditing relies on functionality in Exchange Online, which automatically supports Power BI.
 
-You can filter the audit data by date range, user, dashboard, report, dataset, and activity type. You can also download the activities in a comma-separated value (csv) file to analyze offline.
+You can filter the audit data by date range, user, dashboard, report, semantic model, and activity type. You can also download the activities in a comma-separated value (csv) file to analyze offline.
 
 ### Audit log requirements
 
@@ -202,13 +202,13 @@ You can search for audit log entries for activities done by specific users. Ente
 
 ### Search the audit logs by file, folder, or site
 
-You can use the **File, folder, or site** field to determine who accessed a file, folder, or site, on the **Audit** page. Records can be searched by file name, folder name, or URL. Don't use any spaces or special characters. For example, you can enter all or part of the name of a dataset to find who has interacted with it recently.
+You can use the **File, folder, or site** field to determine who accessed a file, folder, or site, on the **Audit** page. Records can be searched by file name, folder name, or URL. Don't use any spaces or special characters. For example, you can enter all or part of the name of a semantic model to find who has interacted with it recently.
 
 In the example shown below, the search term *sales* was entered in the **File, folder, or site** field.
 
 [![Screenshot of the Audit log search with file, folder, or site field called out.](media/service-admin-auditing/search-audit-log-by-file.png)](media/service-admin-auditing/search-audit-log-by-file.png#lightbox)
 
-The search results for the "sales" filter show user activity for the Contoso Q2 Division Sales dataset.
+The search results for the "sales" filter show user activity for the Contoso Q2 Division Sales semantic model.
 
 [![Screenshot of the Audit log search results for a file search.](media/service-admin-auditing/search-audit-log-by-file-results.png)](media/service-admin-auditing/search-audit-log-by-file-results.png#lightbox)
 
@@ -305,23 +305,23 @@ The following operations are available in both the audit and activity logs.
 | Added user to Power BI gateway cluster | AddUsersToGatewayCluster | |
 | Added user to Power BI gateway cluster datasource | AddUsersToGatewayClusterDatasource | |
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used     |
-| Analyzed Power BI dataset  | AnalyzedByExternalApplication   | Generated when users interact with the service      |
-| Analyzed Power BI report    | AnalyzeInExcel   | Generated when a user selects **Analyze in Excel** on a report or dataset in the service and successfully generates an Excel workbook |
+| Analyzed Power BI semantic model  | AnalyzedByExternalApplication   | Generated when users interact with the service      |
+| Analyzed Power BI report    | AnalyzeInExcel   | Generated when a user selects **Analyze in Excel** on a report or semantic model in the service and successfully generates an Excel workbook |
 | Applied a change to model in Power BI | ApplyChangeToPowerBIModel | A user makes a change to an existing model. This occurs whenever any edit is made to the model (ex: write a DAX measure, manage relationships, etc.) |
 | [Applied sensitivity label to Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
 | Assigned a workspace to a deployment pipeline | AssignWorkspaceToPipeline  | |
 | Attached dataflow storage account     | AttachedDataflowStorageAccount | |
 | Binded monikers to Power BI datasources | BindMonikersToDatasources | |
-| Binded Power BI dataset to gateway  | BindToGateway        |     |
+| Binded Power BI semantic model to gateway  | BindToGateway        |     |
 | Canceled Power BI dataflow refresh    | CancelDataflowRefresh |    |
 | Changed capacity state        | ChangeCapacityState  |      |
 | Changed capacity user assignment      | UpdateCapacityUsersAssignment   |    |
-| Changed Power BI dataset connections   | SetAllConnections         |         |
+| Changed Power BI semantic model connections   | SetAllConnections         |         |
 | Changed Power BI gateway admins   | ChangeGatewayAdministrators  |       |
 | Changed Power BI gateway data source users  | ChangeGatewayDatasourceUsers   |       |
 | [Changed sensitivity label for Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md) | SensitivityLabelChanged  | |
 | Completed an artifact access request action in Power BI | ArtifactAccessRequest | |
-| Connected to Power BI dataset from external app | ConnectFromExternalApplication | |
+| Connected to Power BI semantic model from external app | ConnectFromExternalApplication | |
 | Copied Power BI dashboard | CopyDashboard | |
 | Copied Power BI report | CopyReport  |  |
 | Created a Power BI scorecard metric | CreateGoal | |
@@ -333,8 +333,8 @@ The following operations are available in both the audit and activity logs.
 | Created Power BI app      | CreateApp           |       |
 | Created Power BI dashboard    | CreateDashboard  |       |
 | Created Power BI dataflow      | CreateDataflow            |                        |
-| Created Power BI dataset         | CreateDataset          |           |
-| Created Power BI dataset from external app | CreateDatasetFromExternalApplication | |
+| Created Power BI semantic model         | CreateDataset          |           |
+| Created Power BI semantic model from external app | CreateDatasetFromExternalApplication | |
 | Created Power BI email subscription   | CreateEmailSubscription       |            |
 | Created Power BI folder   | CreateFolder           |              |
 | Created Power BI gateway        | CreateGateway     |              |
@@ -359,9 +359,9 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI comment   | DeleteComment      |      |
 | Deleted Power BI dashboard      | DeleteDashboard       | Not currently used     |
 | Deleted Power BI dataflow    | DeleteDataflow       | Not currently used     |
-| Deleted Power BI dataset     | DeleteDataset         |         |
-| Deleted Power BI dataset from external app | DeleteDatasetFromExternalApplication | |
-| Deleted Power BI dataset rows | DeleteDatasetRows |Indicates that the [Push Datasets - Datasets DeleteRows](/rest/api/power-bi/push-datasets/datasets-delete-rows) API was called   |
+| Deleted Power BI semantic model     | DeleteDataset         |         |
+| Deleted Power BI semantic model from external app | DeleteDatasetFromExternalApplication | |
+| Deleted Power BI semantic model rows | DeleteDatasetRows |Indicates that the [Push Datasets - Datasets DeleteRows](/rest/api/power-bi/push-datasets/datasets-delete-rows) API was called   |
 | Deleted Power BI email subscription   | DeleteEmailSubscription   |          |
 | Deleted Power BI folder   | DeleteFolder   |   |
 | Deleted Power BI folder access     | DeleteFolderAccess     | Not currently used        |
@@ -375,18 +375,18 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI report    | DeleteReport   |    |
 | Deleted a Power BI template app or a workspace for a template app | DeleteTemplateApp | |
 | [Deleted sensitivity label from Power BI item](../enterprise/service-security-sensitivity-label-audit-schema.md)  | SensitivityLabelRemoved | |
-| Deleted snapshot for user in Power BI tenant | DeleteSnapshot | Generated when a user deletes a snapshot that describes a dataset |
+| Deleted snapshot for user in Power BI tenant | DeleteSnapshot | Generated when a user deletes a snapshot that describes a semantic model |
 | Deployed to a pipeline stage     | DeployAlmPipeline    |        |
-| Discovered Power BI dataset data sources      | GetDatasources       | |
+| Discovered Power BI semantic model data sources      | GetDatasources       | |
 | Downloaded Power BI report     | DownloadReport                   |       |
 | Edited Power BI app endorsement | EditContentProviderProperties | |
 | Edited Power BI certification permission    | EditCertificationPermission    | Not currently used    |
 | Edited Power BI dashboard      | EditDashboard        | Not currently used       |
 | Edited Power BI dataflow endorsement | EditDataflowProperties | |
-| Edited Power BI dataset    | EditDataset         |       |
-| Edited Power BI dataset endorsement | EditDatasetProperties | |
-| Edited Power BI dataset from external app | EditDatasetFromExternalApplication | |
-| Edited Power BI dataset properties    | EditDatasetProperties     |  |
+| Edited Power BI semantic model    | EditDataset         |       |
+| Edited Power BI semantic model endorsement | EditDatasetProperties | |
+| Edited Power BI semantic model from external app | EditDatasetFromExternalApplication | |
+| Edited Power BI semantic model properties    | EditDatasetProperties     |  |
 | Edited Power BI report   | EditReport    |        |
 | Edited Power BI report endorsement | EditReportProperties | |
 | Encrypted credentials for Power BI gateway datasource | | |
@@ -408,7 +408,7 @@ The following operations are available in both the audit and activity logs.
 | Inserted or updated current value connection of Power BI metric | UpsertGoalCurrentValueConnection | |
 | Inserted or updated target value connection of Power BI metric | | |
 | Inserted Power BI note | InsertNote | |
-| Inserted snapshot for user in Power BI tenant | InsertSnapshot | Generated when user uploads a snapshot that describes their dataset |
+| Inserted snapshot for user in Power BI tenant | InsertSnapshot | Generated when user uploads a snapshot that describes their semantic model |
 | Installed Power BI app    | InstallApp     |       |
 | Installed Power BI template app | InstallTemplateApp | |
 | Mapped user principal names for tenant | | |
@@ -437,8 +437,8 @@ The following operations are available in both the audit and activity logs.
 | Renamed Power BI dashboard   | RenameDashboard   |     |
 | Requested account key for Power BI storage | AcquireStorageAccountKey | |
 | Requested Power BI dataflow refresh   | RequestDataflowRefresh       | Not currently used      |
-| Requested Power BI dataset refresh   | RefreshDataset     |       |
-| Requested Power BI dataset refresh from external app | RefreshDatasetFromExternalApplication | |
+| Requested Power BI semantic model refresh   | RefreshDataset     |       |
+| Requested Power BI semantic model refresh from external app | RefreshDatasetFromExternalApplication | |
 | Requested SAS token for Power BI storage | AcquireStorageSASFromExternalApplication | |
 | Restored Power BI workspace | RestoreWorkspace | |
 | Retrieved all Power BI gateway cluster datasources | GetAllGatewayClusterDatasources | |
@@ -446,10 +446,10 @@ The following operations are available in both the audit and activity logs.
 | Retrieved allowed Power BI gateway regions | GetGatewayRegions | |
 | Retrieved a model from Power BI | GetPowerBIDataModel | A user opens the **Open data model** experience or resyncs a data model. |
 | Retrieved authentication details for Power BI gateway cluster datasource | | |
-| Retrieved data sources from Power BI dataset | GetDatasetDatasourcesAsAdmin | |
+| Retrieved data sources from Power BI semantic model | GetDatasetDatasourcesAsAdmin | |
 | Retrieved data sources from Power BI dataflow | GetDataflowDatasourcesAsAdmin | |
 | Retrieved metrics of Power BI scorecard | GetGoal | |
-| Retrieved links between datasets and dataflows |GetDatasetToDataflowsLinksAsAdmin | |
+| Retrieved links between semantic models and dataflows |GetDatasetToDataflowsLinksAsAdmin | |
 | Retrieved list of datasource users for Power BI gateway cluster | | |
 | Retrieved list of modified workspaces in Power BI tenant | GetModifiedWorkspacesAPI | |
 | Retrieved list of Power BI gateway installer principals | | |
@@ -468,8 +468,8 @@ The following operations are available in both the audit and activity logs.
 | Retrieved Power BI dashboards for user | GetUserDashboardsAsAdmin | |
 | Retrieved Power BI dataflows | GetDataflowsAsAdmin | |
 | Retrieved Power BI dataflows for user | GetUserDataflowsAsAdmin | |
-| Retrieved Power BI datasets | GetDatasetsAsAdmin | |
-| Retrieved Power BI datasets for user | GetUserDatasetsAsAdmin  | |
+| Retrieved Power BI semantic models | GetDatasetsAsAdmin | |
+| Retrieved Power BI semantic models for user | GetUserDatasetsAsAdmin  | |
 | Retrieved Power BI data sources for user | GetUserDatasourcesAsAdmin | |
 | Retrieved Power BI gateway cluster datasource | | |
 | Retrieved Power BI gateway cluster datasources | | |
@@ -494,25 +494,25 @@ The following operations are available in both the audit and activity logs.
 | Retrieved Power BI tenant keys | GetTenantKeysAsAdmin | |
 | Retrieved Power BI workspaces | GetWorkspaces | |
 | Retrieved scan result in Power BI tenant | GetWorkspacesInfoResult | |
-| Retrieved snapshots for user in Power BI tenant | GetSnapshots | Generated when user retrieves snapshots that describe a dataset such as when a user visits the data hub |
+| Retrieved snapshots for user in Power BI tenant | GetSnapshots | Generated when user retrieves snapshots that describe a semantic model such as when a user visits the data hub |
 | Retrieved status of Power BI gateway cluster | GetGatewayClusterStatus | |
 | Retrieved status of Power BI gateway cluster datasource | | |
 | Retrieved upstream dataflows from Power BI dataflow | GetDataflowUpstreamDataflowsAsAdmin | |
 | Rotated Power BI gateway tenant key | | |
-| Saved an autogenerated dataset to Power BI | SaveAutogeneratedDataset | After exploring an autogenerated Power BI dataset in an external application, a user saved it to the Power BI service.|
+| Saved an autogenerated semantic model to Power BI | SaveAutogeneratedDataset | After exploring an autogenerated Power BI semantic model in an external application, a user saved it to the Power BI service.|
 | Saved an autogenerated report to Power BI | SaveAutogeneratedReport | After exploring an autogenerated Power BI report in an external application, a user saved it to the Power BI service.|
 | Sent a scan request in Power BI tenant | GetWorkspacesInfoAPI | |
 | Set dataflow storage location for a workspace   | SetDataflowStorageLocationForWorkspace      | |
 | Set scheduled refresh on Power BI dataflow        | SetScheduledRefreshOnDataflow               |     |
-| Set scheduled refresh on Power BI dataset         | SetScheduledRefresh                         |     |
+| Set scheduled refresh on Power BI semantic model         | SetScheduledRefresh                         |     |
 | Shared Power BI dashboard     | ShareDashboard            |           |
-| Shared Power BI dataset | ShareDataset | |
+| Shared Power BI semantic model | ShareDataset | |
 | Shared Power BI report    | ShareReport    |                                          |
 | Started Power BI extended trial       | OptInForExtendedProTrial         | Not currently used               |
 | Started Power BI trial       | OptInForProTrial        |      |
 | Tested Power BI gateway datasource connection with single sign-on | | |
 | Took over a Power BI datasource  | TakeOverDatasource          |   |
-| Took over Power BI dataset     | TakeOverDataset                |          |
+| Took over Power BI semantic model     | TakeOverDataset                |          |
 | Took ownership of Power BI dataflow | TookOverDataflow| |
 | Unpublished Power BI app      | UnpublishApp      |     |
 | Update capacity resource governance settings      | UpdateCapacityResourceGovernanceSettings    | Not currently in Microsoft 365 admin center |
@@ -530,8 +530,8 @@ The following operations are available in both the audit and activity logs.
 | Updated Power BI access request settings | | |
 | Updated Power BI app   | UpdateApp     |       |
 | Updated Power BI dataflow    | UpdateDataflow     |    |
-| Updated Power BI dataset data sources   | UpdateDatasources  |   |
-| Updated Power BI dataset parameters    | UpdateDatasetParameters     |    |
+| Updated Power BI semantic model data sources   | UpdateDatasources  |   |
+| Updated Power BI semantic model parameters    | UpdateDatasetParameters     |    |
 | Updated Power BI discoverable model settings | UpdateDiscoverableModelSettings | Generated when a report is set to feature on home |
 | Updated Power BI email subscription               | UpdateEmailSubscription                     |     |
 | Updated Power BI folder                           | UpdateFolder                                |    |
@@ -540,7 +540,7 @@ The following operations are available in both the audit and activity logs.
 | Updated Power BI gateway data source credentials  | UpdateDatasourceCredentials                 |         |
 | Updated Power BI workspace | UpdateWorkspace | |
 | Updated Power BI workspace access | UpdateWorkspaceAccess | |
-| Updated snapshots for user in Power BI tenant | UpdateSnapshot | Generated when user updates snapshots that describe their datasets |
+| Updated snapshots for user in Power BI tenant | UpdateSnapshot | Generated when user updates snapshots that describe their semantic models |
 | Updated the Power BI gateway | | |
 | Updated the Power BI datasource | | |
 | Updated settings for Power BI template app | UpdateTemplateAppSettings | |
