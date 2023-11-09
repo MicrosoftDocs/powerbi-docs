@@ -74,7 +74,7 @@ When connecting to a standalone Direct Lake model through the XMLA endpoint, the
 
 - The `Mode` property of Direct Lake partitions is set to `directLake`.
 
-- Direct Lake partitions use shared expressions called `DatabaseQuery` to define data sources. The expression points to the SQL endpoint of a Lakehouse. Direct Lake uses the SQL endpoint to discover the Lakehouse schema but loads the data directly from the delta tables (unless Direct Lake must fallback to DirectQuery mode for any reason).
+- Direct Lake partitions use shared expressions to define data sources. The expression points to the SQL endpoint of a Lakehouse. Direct Lake uses the SQL endpoint to discover the Lakehouse schema but loads the data directly from the delta tables (unless Direct Lake must fallback to DirectQuery mode for any reason).
 
 Here's an example XMLA query in SSMS:
 
@@ -86,23 +86,25 @@ To learn more about tool support through the XMLA endpoint, see [Semantic model 
 
 Power BI semantic models in Direct Lake mode read delta tables directly from OneLake. However, if a DAX query on a Direct Lake model exceeds limits for the SKU, or uses features that don’t support Direct Lake mode, like SQL views in a Warehouse, the query can fall back to DirectQuery mode. In DirectQuery mode, queries use T-SQL to retrieve the results from the T-SQL endpoint of the Lakehouse or Warehouse, which can impact DAX query performance. You can disable fallback to DirectQuery mode if you prefer to process DAX queries in pure Direct Lake mode. Disabling fallback is recommended if you don’t need fallback to DirectQuery. It can also be helpful when analyzing query processing for a Direct Lake model to identify if and how often fallbacks occur. To learn more about DirectQuery mode, see [Semantic model modes in the Power BI service](../connect-data/service-dataset-modes-understand.md#directquery-mode).
 
-***Guardrails*** define limits for Direct Lake mode beyond which a fallback to DirectQuery mode is necessary to process DAX queries. For details about how to determine the number of parquet files and row groups for a delta table, refer to the [Delta table properties reference](/azure/databricks/delta/table-properties#delta-table-properties). 
+***Guardrails*** define resource limits for Direct Lake mode beyond which a fallback to DirectQuery mode is necessary to process DAX queries. For details about how to determine the number of parquet files and row groups for a delta table, refer to the [Delta table properties reference](/azure/databricks/delta/table-properties#delta-table-properties).
 
-The following table lists guardrails for Direct Lake mode semantic models:
+For Direct Lake semantic models, **Max Memory** represents the upper memory resource limit for how much data can be paged in. In effect, it's not a guardrail because exceeding it does not cause a fallback to DirectQuery; however, it can have a performance impact if the amount of data is large enough to cause paging in and out of the model data from the OneLake data.
 
-| Fabric/Power BI SKUs |Parquet files per table | Row groups per table | Rows per table (millions) | Max model size on disk/in OneLake |
-|-------------|-------------------------|-------------------------|------------------------|-----------------------------------|
-| F2          | 1,000                   | 1,000                | 300                       | 10                                |
-| F4          | 1,000                   | 1,000                | 300                       | 10                                |
-| F8          | 1,000                   | 1,000                | 300                       | 10                                |
-| F16         | 1,000                   | 1,000                | 300                       | 20                                |
-| F32         | 1,000                   | 1,000                | 300                       | 40                                |
-| F64/FT1/P1  | 5,000                   | 5,000                | 1,500                     | Unlimited                         |
-| F128/P2     | 5,000                   | 5,000                | 3,000                     | Unlimited                         |
-| F256/P3     | 5,000                   | 5,000                | 6,000                     | Unlimited                         |
-| F512/P4     | 10,000                  | 10,000               | 12,000                    | Unlimited                         |
-| F1024/P5    | 10,000                  | 10,000               | 24,000                    | Unlimited                         |
-| F2048       | 10,000                  | 10,000               | 24,000                    | Unlimited                         |
+The following table lists both resource guardrails and MaxMemory:
+
+| Fabric/Power BI SKUs |Parquet files per table | Row groups per table | Rows per table (millions) | Max model size on disk/OneLake (GB) | Max memory (GB) |
+|-------------|-------------------------|-------------------------|------------------------|-----------------------------------|-----------------------------------|
+| F2          | 1,000                   | 1,000                | 300                       | 10                                |                               |
+| F4          | 1,000                   | 1,000                | 300                       | 10                                |                               |
+| F8          | 1,000                   | 1,000                | 300                       | 10                                |3                               |
+| F16         | 1,000                   | 1,000                | 300                       | 20                                |5                               |
+| F32         | 1,000                   | 1,000                | 300                       | 40                                |10                                |
+| F64/FT1/P1  | 5,000                   | 5,000                | 1,500                     | Unlimited                         |25                                |
+| F128/P2     | 5,000                   | 5,000                | 3,000                     | Unlimited                         |50                                |
+| F256/P3     | 5,000                   | 5,000                | 6,000                     | Unlimited                         |100                                |
+| F512/P4     | 10,000                  | 10,000               | 12,000                    | Unlimited                         |200                                |
+| F1024/P5    | 10,000                  | 10,000               | 24,000                    | Unlimited                         |400                                |
+| F2048       | 10,000                  | 10,000               | 24,000                    | Unlimited                         |                                |
 
 Depending on your Fabric or Power BI SKU, additional **Capacity unit**, **Max memory per model**, and **Max memory per query** limits also apply to Direct Lake models. To learn more, see [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
 
