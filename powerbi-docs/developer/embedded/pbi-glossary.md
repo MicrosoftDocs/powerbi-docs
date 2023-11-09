@@ -47,11 +47,11 @@ To write lines, text, or stamps on a snapshot copy of a tile, report, or visual 
 
 ### App, apps
 
-A bundle of dashboards, reports, and datasets. It also refers to the mobile apps for consuming content, such as Power BI app for iOS.
+A bundle of dashboards, reports, and semantic models. It also refers to the mobile apps for consuming content, such as Power BI app for iOS.
 
 ### AppSource
 
-Centralized online repository where you can browse and discover dashboards, reports, datasets, and apps to download.
+Centralized online repository where you can browse and discover dashboards, reports, semantic models, and apps to download.
 
 ### ArcGIS for Power BI
 
@@ -117,7 +117,7 @@ The areas on the navigation pane are *containers*. In the nav pane you'll find c
 
 ### Content
 
-Content for the Power BI service is generally dashboards, reports, and apps. It can also include workbooks and datasets.
+Content for the Power BI service is generally dashboards, reports, and apps. It can also include workbooks and semantic models.
 
 ### Content list
 
@@ -184,7 +184,7 @@ Power BI Premium. The shape of the icon that signifies a workspace is a Premium 
 
 ### Dimension
 
-Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a dataset, dimensions are a way to group [*measures*](#measure) into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country/region, or marketing campaign.
+Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a semantic model, dimensions are a way to group [*measures*](#measure) into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country/region, or marketing campaign.
 
 ### Drill up, drill down, drill through
 
@@ -229,7 +229,7 @@ In the Power BI developer offering, the process of integrating analytics into ap
 
 ### Explicit measures
 
-Power BI uses explicit measures and implicit measures (see definition below). Explicit measures are created by report designers and saved with the dataset. They're displayed in Power BI as fields, and can therefore be used over and over. For example, a report designer creates an explicit measure *TotalInvoice* that sums all invoice amounts. Colleagues who use that dataset and who have edit access to the report, can select and use that field to create a visual. When an explicit measure is added or dragged onto a report canvas, Power BI doesn't apply an aggregation.  Creating explicit measures requires edit access to the dataset.
+Power BI uses explicit measures and implicit measures (see definition below). Explicit measures are created by report designers and saved with the semantic model. They're displayed in Power BI as fields, and can therefore be used over and over. For example, a report designer creates an explicit measure *TotalInvoice* that sums all invoice amounts. Colleagues who use that semantic model and who have edit access to the report, can select and use that field to create a visual. When an explicit measure is added or dragged onto a report canvas, Power BI doesn't apply an aggregation.  Creating explicit measures requires edit access to the semantic model.
 
 ## F
 
@@ -289,7 +289,7 @@ See [**quick insights**](#quick-insights).
 
 ### Item
 
-A component type of the Power BI workspace that includes dashboards, reports, datasets, and data flows.
+A component type of the Power BI workspace that includes dashboards, reports, semantic models, and data flows.
 Formerly known as artifacts.
 
 ## J
@@ -451,7 +451,7 @@ Power BI Desktop report *designers* use publish to refer to sending a Power BI D
 
 ### Q&A
 
-The ability to type natural language questions about a dataset and get responses in the form of visualizations. Appears in the Power BI service and Desktop.
+The ability to type natural language questions about a semantic model and get responses in the form of visualizations. Appears in the Power BI service and Desktop.
 
 ### Q&A virtual analyst
 
@@ -489,7 +489,7 @@ The container in the nav pane that holds all the individual [items](#item) (repo
 
 ### Related content
 
-Shows the individual pieces of content that contribute to the current content. For example, for a dashboard, you can see the reports and datasets providing the data and visualizations on the dashboard.
+Shows the individual pieces of content that contribute to the current content. For example, for a dashboard, you can see the reports and semantic models providing the data and visualizations on the dashboard.
 
 ### Relative links
 
@@ -497,7 +497,7 @@ Links from dashboard tiles to other dashboards and reports that have been shared
 
 ### Report
 
-A multi-perspective view into a single dataset, with visualizations that represent different findings and insights from that dataset. It can have a single visualization or many, a single page or many pages.  
+A multi-perspective view into a single semantic model, with visualizations that represent different findings and insights from that semantic model. It can have a single visualization or many, a single page or many pages.  
 
 ### Report editor
 
@@ -591,7 +591,7 @@ A client organization that is served from a web service (SaaS) which also serves
 
 ### Tiles
 
-A [tile](/power-bi/create-reports/service-dashboard-tiles) is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.
+A [tile](/power-bi/create-reports/service-dashboard-tiles) is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, semantic model, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.
 
 ### Time series
 
@@ -629,7 +629,7 @@ An Excel workbook to be used as a data source. Workbooks can contain a data mode
 
 ### Workspace
 
-Containers for dashboards, reports, and datasets in Power BI. Users can collaborate on the content in any workspace except My workspace. The contents can be bundled into a Power BI app. Those stored in Premium capacity can be shared with Free users. Personal workspaces (under My workspace) can be hosted in Premium capacity.
+Containers for dashboards, reports, and semantic models in Power BI. Users can collaborate on the content in any workspace except My workspace. The contents can be bundled into a Power BI app. Those stored in Premium capacity can be shared with Free users. Personal workspaces (under My workspace) can be hosted in Premium capacity.
 
 ## X
 
@@ -647,8 +647,5 @@ The axis along the side, the vertical axis.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Basic concepts for Power BI service consumer](../../consumer/end-user-basic-concepts.md)
-
-> [!div class="nextstepaction"]
-> [Basic concepts for designers](../../fundamentals/service-basic-concepts.md)
+* [Basic concepts for Power BI service consumer](../../consumer/end-user-basic-concepts.md)
+* [Basic concepts for designers](../../fundamentals/service-basic-concepts.md)

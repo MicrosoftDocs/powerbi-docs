@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/17/2023
+ms.date: 11/09/2023
 
 ---
 
@@ -272,7 +272,7 @@ For an Azure AD app to be able to access the Power BI content and APIs, a Power 
 
 ## Step 7 - Enable workspace access
 
-To enable your Azure AD app access objects such as reports, dashboards and datasets in the Power BI service, add the *service principal* or *master user*, as a *member* or *admin* to your workspace.
+To enable your Azure AD app access objects such as reports, dashboards and semantic models in the Power BI service, add the *service principal* or *master user*, as a *member* or *admin* to your workspace.
 
 1. Sign in to Power BI service.
 

@@ -46,10 +46,10 @@ The entry shows information about the semantic model, and a few select actions.
 
 There are two different kinds of endorsed semantic models. Semantic model owners can *promote* a semantic model that they recommend to you. Also, the Power BI admin can designate experts in your organization who can *certify* semantic models for everyone to use. Promoted and certified semantic models both display *badges* that you see both when looking for a semantic model, and in the list of semantic models in a workspace. The name of the person who certified a semantic model is displayed in a tooltip during the semantic model discovery experience. Hover over the **Certified** label and you see it.
 
-- In the Power BI service: **Data hub**.
+- In the Power BI service: **OneLake data hub**.
 - In Power BI Desktop: **Get data** > **Power BI semantic models**.
 
-  In **Data hub**, select **Endorsed in your org**.
+  In **OneLake data hub**, select **Endorsed in your org**.
 
   :::image type="content" source="media/service-semantic models-across-workspaces/power-bi-semantic model-promoted.png" alt-text="Screenshot shows a semantic model with Promoted and Certified labels." lightbox="media/service-semantic models-across-workspaces/power-bi-semantic model-promoted.png":::
 
