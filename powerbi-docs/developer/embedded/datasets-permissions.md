@@ -12,7 +12,7 @@ ms.topic: reference
 ms.date: 11/09/2023
 ---
 
-# Semantic model permissions
+# Semantic model REST API permissions
 
 This article describes Power BI permissions in general, and semantic model permissions in the context of the [Power BI REST APIs](/rest/api/power-bi/).
 
