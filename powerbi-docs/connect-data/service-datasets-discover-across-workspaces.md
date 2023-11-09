@@ -21,7 +21,7 @@ Learn how you can create reports in your own workspaces based on semantic models
 
 In both cases, the semantic model discovery experience starts in the **Data hub**. You see all the semantic models that you have access to, regardless of where they are:
 
-:::image type="content" source="media/service-semantic models-across-workspaces/power-bi-select-semantic model.png" alt-text="Screenshot shows an option to select a semantic model." lightbox="media/service-semantic models-across-workspaces/power-bi-select-semantic model.png":::
+:::image type="content" source="media/service-semantic models-across-workspaces/power-bi-select-dataset.png" alt-text="Screenshot shows an option to select a semantic model." lightbox="media/service-datasets-across-workspaces/power-bi-select-dataset.png":::
 
 One of the semantic models is labeled **Promoted**. Learn about that label in [Find an endorsed semantic model](#find-an-endorsed-semantic model), later in this article.
 
@@ -40,7 +40,7 @@ You can save the report to the current workspace in the Power BI service, or pub
 
 The entry shows information about the semantic model, and a few select actions.
 
-:::image type="content" source="media/service-semantic models-across-workspaces/power-bi-semantic model-actions.png" alt-text="Screenshot shows actions for selected semantic model." lightbox="media/service-semantic models-across-workspaces/power-bi-semantic model-actions.png":::
+:::image type="content" source="media/service-datasets-across-workspaces/power-bi-dataset-actions.png" alt-text="Screenshot shows actions for selected semantic model." lightbox="media/service-datasets-across-workspaces/power-bi-dataset-actions.png":::
 
 ## Find an endorsed semantic model
 
@@ -51,9 +51,9 @@ There are two different kinds of endorsed semantic models. Semantic model owners
 
   In **OneLake data hub**, select **Endorsed in your org**.
 
-  :::image type="content" source="media/service-semantic models-across-workspaces/power-bi-semantic model-promoted.png" alt-text="Screenshot shows a semantic model with Promoted and Certified labels." lightbox="media/service-semantic models-across-workspaces/power-bi-semantic model-promoted.png":::
+  :::image type="content" source="media/service-datasets-across-workspaces/power-bi-dataset-promoted.png" alt-text="Screenshot shows a semantic model with Promoted and Certified labels." lightbox="media/service-datasets-across-workspaces/power-bi-dataset-promoted.png":::
 
 ## Next steps
 
-- [Use semantic models across workspaces](service-semantic models-across-workspaces.md)
+- [Use semantic models across workspaces](service-datasets-across-workspaces.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
