@@ -83,6 +83,8 @@ Then you use this parameter with **UserId** in a [*filter*](#use-userid-in-a-fil
 
 1. Select **OK**.
 
+## Considerations and limitations
+* The Test as role/View as role feature doesn't work for paginated reports.
 ## Next steps
 
 [Power BI Report Builder](report-builder-power-bi.md)
