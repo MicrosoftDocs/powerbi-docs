@@ -9,7 +9,7 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 11/08/2023
+ms.date: 11/09/2023
 ---
 
 # Semantic model permissions
