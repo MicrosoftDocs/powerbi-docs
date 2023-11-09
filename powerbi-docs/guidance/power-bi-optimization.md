@@ -21,7 +21,7 @@ This article provides guidance that enables developers and administrators to pro
 
 ## Optimizing the data model
 
-The data model supports the entire visualization experience. Data models are either hosted in the Power BI ecosystem or externally (using DirectQuery or Live Connection), and in Power BI they are referred to as *semantic models*. It's important to understand your options, and to choose the appropriate semantic model type for your solution. There are three semantic model modes: Import, DirectQuery, and Composite. For more information, see [Semantic models in the Power BI service](../connect-data/service-datasets-understand.md), and  [Semantic model modes in the Power BI service](../connect-data/service-dataset-modes-understand.md).
+The data model supports the entire visualization experience. Data models are either hosted in the Power BI ecosystem or externally (by using DirectQuery or Live Connection), and in Power BI they are referred to as *semantic models*—[previously known as datasets](../connect-data/service-datasets-rename.md). It's important to understand your options, and to choose the appropriate semantic model type for your solution. There are three semantic model modes: Import, DirectQuery, and Composite. For more information, see [Semantic models in the Power BI service](../connect-data/service-datasets-understand.md), and  [Semantic model modes in the Power BI service](../connect-data/service-dataset-modes-understand.md).
 
 For specific semantic model mode guidance, see:
 
@@ -52,7 +52,7 @@ There are several recommendations for optimizing Power BI report designs.
 
 #### Apply the most restrictive filters
 
-The more data that a visual needs to display, the slower that visual is to load. While this principle seems obvious, it's easy to forget. For example: suppose you have a large semantic model. Atop of that semantic model, you build a report with a table. End users use slicers on the page to get to the rows they want—typically, they're only interested in a few dozen rows.
+The more data that a visual needs to display, the slower that visual is to load. While this principle seems obvious, it's easy to forget. For example: suppose you have a large semantic model. Based on that semantic model, you build a report with a table. End users use slicers on the page to get to the rows they want—typically, they're only interested in a few dozen rows.
 
 A common mistake is to leave the default view of the table unfiltered—that is, all 100M+ rows. The data for these rows loads into memory and is uncompressed at every refresh. This processing creates huge demands for memory. The solution: use the "Top N" filter to reduce the max number of items that the table displays. You can set the max item to larger than what users would need, for example, 10,000. The result is the end-user experience doesn't change, but memory use drops greatly. And most importantly, performance improves.
 
