@@ -70,7 +70,7 @@ If you embed reports with the same filters, bookmarks, and slicers, save the rep
 When embedding multiple reports to the same space, don't generate a new [iFrame](pbi-glossary.md#inline-frame-iframe) for each report. Instead, embed the new report in the same iFrame to overwrite the previous report. Use `powerbi.embed(element, config)` with a different config to embed the new report.
 
 > [!NOTE]
-> Embedding reports using embed for your customers (also known as an 'app owns data' scenario), requires the use of an embed token with permissions to all reports and datasets. For more information, see the [generate token API](/rest/api/power-bi/embed-token/generate-token).
+> Embedding reports using embed for your customers (also known as an 'app owns data' scenario), requires the use of an embed token with permissions to all reports and semantic models. For more information, see the [generate token API](/rest/api/power-bi/embed-token/generate-token).
 
 ## Multiple visuals
 
@@ -80,18 +80,18 @@ When embedding multiple visuals into a single iFrame, consider the following poi
 
 * Power BI uses iFrames to embed a report. Sometimes you might want to add more content between the visuals (for example, text or graphics that don't come from the report). In that case, you might need a different iFrame to render different visuals. For best performance, try and arrange the visuals so that you use the fewest iFrames possible. To reduce the number of iFrames, consider using the [custom-layout feature](/javascript/api/overview/powerbi/custom-layout).
 
-* If you have visuals from different reports or different datasets, consider joining the datasets and creating a new report so that you can include all the visuals in the same iFrame.
+* If you have visuals from different reports or different semantic models, consider joining the semantic models and creating a new report so that you can include all the visuals in the same iFrame.
 
-* Another alternative, if you have noncontiguous regions, or data from multiple datasets, is to create a [dashboard](/power-bi/create-reports/service-dashboard-tiles) and pin the visuals to it. This allows you to:
+* Another alternative, if you have noncontiguous regions, or data from multiple semantic models, is to create a [dashboard](/power-bi/create-reports/service-dashboard-tiles) and pin the visuals to it. This allows you to:
 
   * Embed the individual [tiles](/javascript/api/overview/powerbi/embed-dashboard-tile) into noncontiguous iFrames. Dashboard tiles are lighter than reports and load faster.
-  * Embed the entire dashboard into one iFrame. This allows you to have visuals from different reports or datasets in one iFrame without creating a new report.
+  * Embed the entire dashboard into one iFrame. This allows you to have visuals from different reports or semantic models in one iFrame without creating a new report.
 
   Keep in mind, however, that dashboard tiles aren't interactive and don't [refresh](/power-bi/connect-data/refresh-data) with the same frequency as visuals.
 
 ## Query caching
 
-Organizations with Power BI Premium capacity or Power BI Embedded capacity can take advantage of query caching to speed up reports associated with a dataset.
+Organizations with Power BI Premium capacity or Power BI Embedded capacity can take advantage of query caching to speed up reports associated with a semantic model.
 
 [Learn more about query caching in Power BI](../../connect-data/power-bi-query-caching.md).
 

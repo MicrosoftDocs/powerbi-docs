@@ -46,7 +46,7 @@ For a detailed tutorial on optimizing performance, see the [Optimize a model for
 
 ## Determine your minimum SKU
 
-The following table summarizes all the limitations that are dependent on the capacity size. To determine the minimum SKU for your capacity, check the *Max memory (GB)* column under the *Dataset* header. Also, keep in mind the [current limitations](../../enterprise/service-premium-gen2-what-is.md#considerations-and-limitations).
+The following table summarizes all the limitations that are dependent on the capacity size. To determine the minimum SKU for your capacity, check the *Max memory (GB)* column under the *Sme* header. Also, keep in mind the [current limitations](../../enterprise/service-premium-gen2-what-is.md#considerations-and-limitations).
 
 [!INCLUDE [Power BI capacity and SKUs](../../includes/capacity-table.md)]
 
