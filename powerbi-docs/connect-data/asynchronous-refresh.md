@@ -252,7 +252,7 @@ Power BI uses dynamic memory management to optimize capacity memory. If the mode
 
 ```
 
-The solution is to rerun the refresh operation. To learn more about dynamic memory management and model eviction, see [Model eviction](../enterprise/service-premium-large-models.md#dataset-eviction).
+The solution is to rerun the refresh operation. To learn more about dynamic memory management and model eviction, see [Model eviction](../enterprise/service-premium-large-models.md#semantic-model-eviction).
 
 #### Refresh operation time limits
 

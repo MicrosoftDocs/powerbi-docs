@@ -77,7 +77,7 @@ Because shared semantic models are intended for reuse, it's helpful to [endorse]
 
 ### Semantic model discovery
 
-The [data hub](../connect-data/service-data-hub.md) helps report creators find, explore, and use semantic models across the organization. In addition to semantic model endorsement, [enabling dataset discovery](/power-bi/connect-data/service-data-hub#make-your-semantic-model-discoverable) is critical for promoting its reuse. A discoverable semantic model is visible in the data hub for report creators who are searching for data.
+The [OneLake data hub](../connect-data/service-data-hub.md) helps report creators find, explore, and use semantic models across the organization. In addition to semantic model endorsement, [enabling semantic model discovery](/power-bi/connect-data/service-data-hub#make-your-semantic-model-discoverable) is critical for promoting its reuse. A discoverable semantic model is visible in the data hub for report creators who are searching for data.
 
 > [!NOTE]
 > If a semantic model isn't configured to be discoverable, only Power BI users with Build permission can find it.
