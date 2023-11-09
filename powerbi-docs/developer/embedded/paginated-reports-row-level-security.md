@@ -66,7 +66,7 @@ You can use **UserId** as a *filter* or in a *query* to the data source.
 
 6. In the **Dataset Properties** window, verify that the expression is *your selected parameter = UserID*, and click **OK**.
 
-    ![Power BI Report Builder dataset properties](media/paginated-reports-row-level-security/verify.png)
+    ![Power BI Report Builder semantic model properties](media/paginated-reports-row-level-security/verify.png)
 
 ### Using a query
 
