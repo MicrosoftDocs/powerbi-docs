@@ -21,7 +21,7 @@ Learn how you can create reports in your own workspaces based on semantic models
 
 In both cases, the semantic model discovery experience starts in the **Data hub**. You see all the semantic models that you have access to, regardless of where they are:
 
-:::image type="content" source="media/service-semantic models-across-workspaces/power-bi-select-dataset.png" alt-text="Screenshot shows an option to select a semantic model." lightbox="media/service-datasets-across-workspaces/power-bi-select-dataset.png":::
+:::image type="content" source="media/service-datasets-across-workspaces/power-bi-select-dataset.png" alt-text="Screenshot shows an option to select a semantic model." lightbox="media/service-datasets-across-workspaces/power-bi-select-dataset.png":::
 
 One of the semantic models is labeled **Promoted**. Learn about that label in [Find an endorsed semantic model](#find-an-endorsed-semantic model), later in this article.
 
