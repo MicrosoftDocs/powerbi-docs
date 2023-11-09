@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 07/17/2023
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 
@@ -19,7 +19,7 @@ This article describes the ways you can share your datamarts and manage its perm
 
 Once a datamart has been created, you can share it for downstream consumption by other users in your organization. Sharing a datamart enables the recipient to access the datamart in the following ways:  
 * **SQL connection string:** Connect to the datamart’s underlying SQL connection string and query the datamart from SQL client tools.
-* **Auto-generated dataset:** Build content based on the datamart’s underlying dataset, by providing *Build* permissions.
+* **Auto-generated semantic model:** Build content based on the datamart’s underlying semantic model, by providing *Build* permissions.
 
 There are a few ways to share a datamart, described in the following sections. 
 
@@ -57,7 +57,7 @@ You can also select the **Share datamart** button from the information panel its
 
 Regardless of which way you choose to share a datamart, the **Grant people access** window appears so you can enter the names or email addresses of the people or groups (distribution groups or security groups) in your organization with whom you want to grant access to the datamart. 
 
-You can choose whether recipients can reshare the datamart with others in the organization, by selecting the checkbox next to **Allow recipients to share this datamart**. There's an option to allow users to create Power BI reports (from scratch, autocreate, paginated reports) on top of the default dataset that is connected to the datamart by selecting the checkbox next to **Build reports on the default dataset**. Both of these options are selected by default. 
+You can choose whether recipients can reshare the datamart with others in the organization, by selecting the checkbox next to **Allow recipients to share this datamart**. There's an option to allow users to create Power BI reports (from scratch, autocreate, paginated reports) on top of the default semantic model that is connected to the datamart by selecting the checkbox next to **Build reports on the default semantic model**. Both of these options are selected by default. 
 
 You can also choose to send recipients a message to provide more context, by typing a message into the **Add a message (optional)** field in the **Grant people access** window. 
 
@@ -73,7 +73,7 @@ The following image highlights the **SQL connection string** in a datamart infor
 
 :::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-07.png" alt-text="Screenshot of SQL connection string for a datamart." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-07.png":::
 
-Users can build reports with the datamart or use Analyze in Excel, and can also connect to the datamart or underlying dataset from Power BI Desktop.
+Users can build reports with the datamart or use Analyze in Excel, and can also connect to the datamart or underlying semantic model from Power BI Desktop.
 
 The following image highlights the **Create a report** entry point in a datamart information window.
 
