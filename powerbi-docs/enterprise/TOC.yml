@@ -39,6 +39,8 @@
         href: directlake-overview.md
       - name: Analyze query processing for Direct Lake semantic models
         href: directlake-analyze-qp.md
+    - name: OneLake integration for semantic models (Preview)
+      href: onelake-integration-overview.md
   - name: Licensing
     expanded: false
     items:
