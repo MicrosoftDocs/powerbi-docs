@@ -98,7 +98,7 @@ Notice that the opportunity count in the app matches the count in the upper left
 
 ## Clean up resources
 
-If you don't want to use the Opportunity Analysis Sample anymore, you can delete the dashboard, report, and dataset.
+If you don't want to use the Opportunity Analysis Sample anymore, you can delete the dashboard, report, and semantic model.
 
 ## Considerations and limitations
 For troubleshooting information, see [Power Apps visual for Power BI](/powerapps/maker/canvas-apps/powerapps-custom-visual#limitations-of-the-power-apps-visual)

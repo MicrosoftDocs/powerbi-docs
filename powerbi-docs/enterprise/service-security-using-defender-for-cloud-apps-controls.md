@@ -70,7 +70,7 @@ Defender for Cloud Apps activity policies enable administrators to define their 
 * **Encrypting sensitivity label downgrade.** For example, alert me when a report that had a **Highly confidential** sensitivity label is now classified as **Public**.
 
 > [!NOTE]
-> The unique identifiers (IDs) of Power BI artifacts and sensitivity labels can be found using [Power BI REST APIs](/rest/api/power-bi/). See [Get datasets](/rest/api/power-bi/datasets/getdatasets) or [Get reports](/rest/api/power-bi/reports/getreports).
+> The unique identifiers (IDs) of Power BI artifacts and sensitivity labels can be found using [Power BI REST APIs](/rest/api/power-bi/). See [Get semantic models](/rest/api/power-bi/datasets/getdatasets) or [Get reports](/rest/api/power-bi/reports/getreports).
 
 Custom activity policies are configured in the Defender for Cloud Apps portal. For more information, see [Activity policies](/defender-cloud-apps/user-activity-policies).
 

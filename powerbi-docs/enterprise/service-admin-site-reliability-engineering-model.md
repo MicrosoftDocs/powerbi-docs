@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 03/30/2023
+ms.date: 11/10/2023
 LocalizationGroup: Administration
 ---
 
@@ -24,7 +24,7 @@ Power BI is a native cloud offering and global service, supporting the following
 * Serving 260,000 organizations and 97% of Fortune 500 companies
 * Deployed in 52 Azure regions around the world
 * Executes nearly 20 million queries per hour at peak
-* Ingests over 90 petabytes of data per month into customer datasets
+* Ingests over 90 petabytes of data per month into customer semantic models
 * Employs 149 clusters powered by more than 350,000 cores
 
 Despite absorbing six straight years of triple-digit growth and substantial new capabilities, the Power BI service exhibits strong service reliability and operational excellence. As the service grew and large enterprises deployed it at scale to hundreds of thousands of users, the need for exceptional reliability became essential. The reliability results shown in the following table are the direct consequence of engineering, tools, and culture changes made by the Power BI team over the past few years, and are highlighted in this article.
@@ -82,10 +82,10 @@ One way in which the Power BI team enables exponential service growth is by usin
 
 SRE team members use their unique skill set and considerable live site experience, and also partner with feature teams to enhance SLIs and alerts provided by the product team in numerous ways. Some of the ways they enhance SLIs include:
 
-* **Anomaly Alerts:** SREs develop monitors that consider typical usage and operational patterns within a given production environment and alert when significant deviations occur. *Example: Datasets refresh latency increases by 50% relative to similar usage periods.*
-* **Customer/Environment-Specific Alerts:** SREs develop monitors that detect when specific customers, provisioned capacities, or deployed clusters deviate from expected behavior. *Example: A single capacity owned by a customer is failing to load datasets for querying.*
-* **Fine-Grained Alerts:** SREs consider subsets of the population that might experience issues independently of the broader population. For such cases, specific alerts are crafted to ensure that alerts will in fact fire if those less common scenarios fail despite lower volume. *Example: Refreshing datasets that use the GitHub connector are failing.*
-* **Perceived Reliability Alerts:** SREs also craft alerts that detect cases when customers are unsuccessful due to any type of error. This can include failures from user errors and indicate a need for improved documentation or a modified user experience. These alerts also can notify engineers of unexpected system errors that might otherwise be misclassified as a user error. *Example: Dataset refresh fails due to incorrect credentials.*
+* **Anomaly Alerts:** SREs develop monitors that consider typical usage and operational patterns within a given production environment and alert when significant deviations occur. *Example: semantic models refresh latency increases by 50% relative to similar usage periods.*
+* **Customer/Environment-Specific Alerts:** SREs develop monitors that detect when specific customers, provisioned capacities, or deployed clusters deviate from expected behavior. *Example: A single capacity owned by a customer is failing to load semantic models for querying.*
+* **Fine-Grained Alerts:** SREs consider subsets of the population that might experience issues independently of the broader population. For such cases, specific alerts are crafted to ensure that alerts will in fact fire if those less common scenarios fail despite lower volume. *Example: Refreshing semantic models that use the GitHub connector are failing.*
+* **Perceived Reliability Alerts:** SREs also craft alerts that detect cases when customers are unsuccessful due to any type of error. This can include failures from user errors and indicate a need for improved documentation or a modified user experience. These alerts also can notify engineers of unexpected system errors that might otherwise be misclassified as a user error. *Example: semantic model refresh fails due to incorrect credentials.*
 
 Another critical role of the SRE team is to automate TSG actions to the extent possible through Azure Automation. In cases where complete automation is not possible, the SRE team defines actions to *enrich* an alert with useful and incident-specific diagnostic information to accelerate subsequent investigation. Such enrichment is paired with prescriptive guidance in a corresponding TSG so that live site engineers can either take a specific action to mitigate the incident or quickly escalate to SMEs for more investigation. Alerts with enrichment are also candidates for complete automation when possible and when incident volume/severity provides a sufficiently high ROI.
 
@@ -126,7 +126,7 @@ Beyond review of specific postmortems, the SRE team also generates reports on ag
 
 The Power BI team has a comprehensive set of Objective Key Results (OKRs) that are used to ensure overall service health, customer satisfaction, and engineer happiness. OKRs can be divided into two categories:
 
-* **Service Health OKRs:** These OKRs directly or indirectly measure the health of scenarios or components in the service and often are tracked by monitoring/alerting. *Example: A single capacity owned by a customer is failing to load datasets for querying.*
+* **Service Health OKRs:** These OKRs directly or indirectly measure the health of scenarios or components in the service and often are tracked by monitoring/alerting. *Example: A single capacity owned by a customer is failing to load semantic models for querying.*
 * **Live Site Health OKRs:** These OKRs directly or indirectly measure how efficiently and effectively live site operations are addressing service incidents and outages described in previous sections. *Example: Time To Notify (TTN) customers of an impacting incident.*
 
 The following table shows the major live site health OKRs.

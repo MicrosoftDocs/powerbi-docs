@@ -41,7 +41,7 @@
         href: directlake-create-lakehouse.md
       - name: Specify a fixed identity
         href: directlake-fixed-identity.md
-      - name: Analyze query processing for Direct Lake models
+      - name: Analyze query processing
         href: directlake-analyze-qp.md
   - name: Licensing
     expanded: false
@@ -98,17 +98,17 @@
         href: service-premium-concepts.md
       - name: Performance smoothing
         href: service-premium-smoothing.md                    
-      - name: Backup and restore Power BI Premium datasets
+      - name: Backup and restore Power BI Premium semantic models
         href: service-premium-backup-restore-dataset.md
       - name: Using autoscale with Power BI Premium
         href: service-premium-auto-scale.md
       - name: Configure workloads
         href: service-admin-premium-workloads.md
-      - name: Configure large datasets
+      - name: Configure large semantic models
         href: service-premium-large-models.md
       - name: Automation with service principals
         href: service-premium-service-principal.md
-      - name: Dataset connectivity with the XMLA endpoint
+      - name: Semantic model connectivity with the XMLA endpoint
         href: service-premium-connect-tools.md
       - name: Interactive and background operations
         href: service-premium-interactive-background-operations.md
@@ -192,18 +192,18 @@
       href: service-security-private-links-on-premises.md      
     - name: Configure mobile apps with Intune
       href: service-admin-mobile-intune.md   
-  - name: Dataset scale-out (preview)
+  - name: Semantic model scale-out (preview)
     expanded: false
     items:
-    - name: Dataset scale-out overview
+    - name: Semantic model scale-out overview
       href: service-premium-scale-out.md
-    - name: Configure dataset scale-out
+    - name: Configure semantic model scale-out
       href: service-premium-scale-out-configure.md
-    - name: Test dataset scale-out
+    - name: Test semantic model scale-out
       href: service-premium-scale-out-test.md
     - name: Synchronize scale-out replicas   
       href: service-premium-scale-out-sync-replica.md  
-    - name: Compare dataset scale-out replicas      
+    - name: Compare semantic model scale-out replicas      
       href: service-premium-scale-out-app.md                     
   - name: Automation tools
     expanded: false

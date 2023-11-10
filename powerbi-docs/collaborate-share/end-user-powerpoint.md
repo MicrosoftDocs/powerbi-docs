@@ -125,7 +125,7 @@ The following aren't supported for **Export to PowerPoint**.  Either the **Power
 
 ### General
 * Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PowerPoint.
-* Dataset refresh operations using an XMLA endpoint.
+* Semantic model refresh operations using an XMLA endpoint.
 * If the report uses a custom font, that font will be replaced with a default font.
 * [URL filters](../collaborate-share/service-url-filters.md) aren't currently respected when you choose **Current Values** for your export.
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.

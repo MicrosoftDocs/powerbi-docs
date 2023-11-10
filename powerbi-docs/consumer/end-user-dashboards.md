@@ -28,13 +28,13 @@ The visualizations on the dashboard are called *tiles* and are *pinned* to the d
 >
 >To view dashboards that colleagues share with you, you must have a Pro or Premium Per User (PPU) license or the content must be shared with you from a workspace in Premium capacity. For more information, see [Power BI license types](end-user-license.md).
 
-The visualizations on a dashboard come from reports, and each report is based on one dataset. You can think of a dashboard as an entryway into the underlying reports and datasets. Select a visualization to take you to the report that was used to create it.
+The visualizations on a dashboard come from reports, and each report is based on one semantic model. You can think of a dashboard as an entryway into the underlying reports and semantic models. Select a visualization to take you to the report that was used to create it.
 
-![Diagram showing the relationship between dashboards, reports, and datasets.](media/end-user-dashboards/power-bi-diagram.png)
+![Diagram showing the relationship between dashboards, reports, and semantic models.](media/end-user-dashboards/power-bi-diagram.png)
 
 ## Advantages of dashboards
 
-Dashboards are a great way to monitor your business, find answers, and see your most important metrics at a glance. The visualizations on a dashboard can come from one or more underlying datasets or reports. A dashboard can combine on-premises and cloud data, which provides a consolidated view regardless of where the data lives.
+Dashboards are a great way to monitor your business, find answers, and see your most important metrics at a glance. The visualizations on a dashboard can come from one or more underlying semantic models or reports. A dashboard can combine on-premises and cloud data, which provides a consolidated view regardless of where the data lives.
 
 A dashboard isn't just a pretty picture, it's an interactive canvas. The tiles update as the underlying data changes.
 
@@ -46,10 +46,10 @@ How you interact with Power BI depends on your job role. As a consumer or busine
 | --- | --- | --- |
 | **Pages** | One page | One or more pages |
 |**Ask a question about your data (Power BI Q&A) field** | Yes, almost always available | No Q&A field |
-| **Data sources** | One or more report or dataset per dashboard |A single dataset per report |
+| **Data sources** | One or more report or semantic model per dashboard |A single semantic model per report |
 | **Filtering** | No, you can't filter or slice | Yes, there are many ways to filter, highlight, and slice |
 | **Set alerts** | Yes, you can create email alerts when certain conditions are met | No, you can't set alerts |
-| **Can see underlying dataset tables and fields** |No. Can export data but can't see the dataset tables and fields in the dashboard itself |Yes. Can see dataset tables and fields and values that you have permissions to see |
+| **Can see underlying semantic model tables and fields** |No. Can export data but can't see the semantic model tables and fields in the dashboard itself |Yes. Can see semantic model tables and fields and values that you have permissions to see |
 
 ## Next steps
 

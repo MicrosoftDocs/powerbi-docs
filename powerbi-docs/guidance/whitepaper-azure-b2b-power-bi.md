@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/18/2023
+ms.date: 11/10/2023
 LocalizationGroup: Conceptual
 ---
 
@@ -328,7 +328,7 @@ Commonly when working with multiple external suppliers, Contoso needs to ensure 
 
 ### User-based security
 
-One of the most powerful features of Power BI is Row Level Security. This feature allows Contoso to create a single report and dataset but still apply different security rules for each user. For an in-depth explanation, see [Row-level security (RLS)](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/).
+One of the most powerful features of Power BI is Row Level Security. This feature allows Contoso to create a single report and semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) but still apply different security rules for each user. For an in-depth explanation, see [Row-level security (RLS)](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/).
 
 Power BI's integration with Microsoft Entra B2B allows Contoso to assign Row Level Security rules to guest users as soon as they're invited to the Contoso tenant. As we have seen before, Contoso can add guest users through either planned or ad-hoc invites. If Contoso wants to enforce row level security, it's strongly recommended to use planned invites to add the guest users ahead of time and assigning them to the security roles before sharing the content. If Contoso instead uses ad-hoc invites, there might be a short period of time where the guest users won't be able to see any data.
 
@@ -345,7 +345,7 @@ To make sure Contoso can filter data based on who is connecting, two roles are c
 
 ![Managing roles](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_28.png)
 
-Whenever roles are defined in the report, a user must be assigned to a specific role for them to get access to any data. The assignment of roles happens inside the Power BI service ( **Datasets > Security** ).
+Whenever roles are defined in the report, a user must be assigned to a specific role for them to get access to any data. The assignment of roles happens inside the Power BI service ( **Semantic models > Security** ).
 
 ![Setting security](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_29.png)
 

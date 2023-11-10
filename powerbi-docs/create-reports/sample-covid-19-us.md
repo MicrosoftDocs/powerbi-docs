@@ -93,7 +93,7 @@ When you follow the steps, choose the following options:
 1. Data Source Credentials Authentication Method: Anonymous
 1. Privacy level setting for this data source: Public
 
-To test your refresh setting, select the [Refresh now](../connect-data/refresh-data.md#data-refresh) option, available from the dataset item.
+To test your refresh setting, select the [Refresh now](../connect-data/refresh-data.md#data-refresh) option, available from the semantic model item.
 
 The refreshed data is loaded each time the schedule runs. The underlying data is provided by Center for Systems Science and Engineering (CSSE) at Johns Hopkins University and may not update as frequently as your refresh schedule. Check the [COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University website](https://github.com/CSSEGISandData/COVID-19) to know when the underlying data was last updated.
 

@@ -66,7 +66,7 @@ To learn more about viewing apps, see [Power BI apps](end-user-apps.md)
 
 ### Reports
 
-A Power BI report is a multi-perspective view into a dataset, with visuals that represent different findings and insights from that dataset. A report can have a single visual or pages full of visuals. Reports are created by Power BI *designers* who distribute and share the reports with *business users* like you.
+A Power BI report is a multi-perspective view into a semantic model, with visuals that represent different findings and insights from that semantic model. A report can have a single visual or pages full of visuals. Reports are created by Power BI *designers* who distribute and share the reports with *business users* like you.
 
 ![Art showing the same report on both a cellphone and a computer browser.](./media/end-user-reading-view/power-bi-report-phone.png)
 
@@ -174,7 +174,7 @@ Hover over a visual to make it active, and select **More options** (...) to open
 Learn more about [sorting visuals](end-user-search-sort.md)
 
 ### Show the data used to create a visualization
-A Power BI visualization is constructed using data from underlying datasets. If you're interested in seeing behind-the-scenes, Power BI lets you *display* the data that is being used to create the visual. When you select **Show as a table**, Power BI displays the data below (or next to) the visualization.
+A Power BI visualization is constructed using data from underlying semantic models. If you're interested in seeing behind-the-scenes, Power BI lets you *display* the data that is being used to create the visual. When you select **Show as a table**, Power BI displays the data below (or next to) the visualization.
 
 With a visual active, select **More options** (...) and choose **Show as a table**.
    
@@ -192,7 +192,7 @@ This article has been a quick overview of just some of the things *business user
 ## Clean up resources
 - If you connected to an app, from the nav pane, select **Apps** to open the Apps content list. Hover over the app to delete, and select the trashcan icon.
 
-- If you imported or connected to a Power BI sample report, from the nav pane, open **My workspace**. Using the tabs at the top, locate the dashboard, report, and dataset, and select the trashcan icon for each.
+- If you imported or connected to a Power BI sample report, from the nav pane, open **My workspace**. Using the tabs at the top, locate the dashboard, report, and semantic model, and select the trashcan icon for each.
 
 ## Next steps
 [Power BI for business users](end-user-consumer.md)

@@ -40,8 +40,8 @@ With these two examples in mind, consider two specific aspects of workspace purp
 
 The primary objective of a workspace in the Fabric portal is to facilitate [collaboration](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports#collaborate-in-a-workspace) among multiple people. There are many ways that collaboration can happen in a workspace:
 
-- **Team-based development:** Multiple people can work together to build, test, and publish content. One user might work on the design of a [lakehouse](/fabric/data-engineering/lakehouse-overview). Another user might work on the design of the dataset, while other users might focus on building reports.
-- **Testing and validations:** Users might need to perform data validations for new content. Subject matter experts from the business unit might need to perform user acceptance testing (UAT), or a data quality team might need to validate the accuracy of the dataset.
+- **Team-based development:** Multiple people can work together to build, test, and publish content. One user might work on the design of a [lakehouse](/fabric/data-engineering/lakehouse-overview). Another user might work on the design of the semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)), while other users might focus on building reports.
+- **Testing and validations:** Users might need to perform data validations for new content. Subject matter experts from the business unit might need to perform user acceptance testing (UAT), or a data quality team might need to validate the accuracy of the semantic model.
 - **Enhancements:** Stakeholders and consumers of the content might suggest enhancements to the content as circumstances change.
 - **Ownership transfer:** Another person or team might [take over responsibility](powerbi-adoption-roadmap-content-ownership-and-management.md#ownership-transfers) for content that was created by someone else.
 
@@ -237,7 +237,7 @@ Disadvantages of option 3 include:
 
 Separating _data workspaces_ from _reporting workspaces_ is a common practice for decoupling data assets from analytical assets.
 
-- A _data workspace_ is dedicated to storing and securing data items such as a lakehouse, warehouse, data pipeline, dataflow, or dataset.
+- A _data workspace_ is dedicated to storing and securing data items such as a lakehouse, warehouse, data pipeline, dataflow, or semantic model.
 - A _reporting workspace_ is focused more on the downstream analytical activities. It's dedicated to storing and securing items such as reports, dashboards, and metrics. Reporting workspaces primarily (but not necessarily exclusively) include Power BI content.
 
 > [!TIP]
@@ -245,13 +245,13 @@ Separating _data workspaces_ from _reporting workspaces_ is a common practice fo
 
 The advantages for separating data workspaces from reporting workspaces include:
 
-- Critical organizational data, such as an [endorsed](/power-bi/collaborate-share/service-endorse-content) lakehouse or dataset, can reside in a specific workspace that's designed to make reusable data available at enterprise scale. Common examples include:
-  - Report creators can locate and reuse trustworthy [shared datasets](/power-bi/connect-data/service-datasets-across-workspaces) more easily. For more information, see the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) usage scenario.
-  - Dataset creators can locate trustworthy dataflows or lakehouse tables more easily. For more information, see the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario and the [advanced self-service data preparation](powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md) usage scenario.
+- Critical organizational data, such as an [endorsed](/power-bi/collaborate-share/service-endorse-content) lakehouse or semantic model, can reside in a specific workspace that's designed to make reusable data available at enterprise scale. Common examples include:
+  - Report creators can locate and reuse trustworthy [shared semantic models](/power-bi/connect-data/service-datasets-across-workspaces) more easily. For more information, see the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) usage scenario.
+  - Semantic model creators can locate trustworthy dataflows or lakehouse tables more easily. For more information, see the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario and the [advanced self-service data preparation](powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md) usage scenario.
 - Access management can be centralized for critical organizational data. Managing access separately for the data workspace compared with reporting workspace(s) is useful when different people are responsible for data and reports. With managed self-service BI, it's common to have many report creators and fewer data creators.
-- Limiting who can edit and manage datasets minimizes the risk of unintentional changes, especially to critical data items that are reused for many purposes or by many users. Physical separation reduces the chances of inadvertent, or unapproved, changes. This extra layer of protection is helpful for [certified](/power-bi/collaborate-share/service-endorse-content#certify-content) datasets, which are relied upon for their quality and trustworthiness.
-- Co-ownership scenarios are clarified. When shared datasets are delivered from a centralized BI or IT team, while reports are published by self-service content creators (in business units), it's a good practice to segregate the datasets into a separate workspace. This approach avoids the ambiguity of co-ownership scenarios because ownership and responsibility per workspace is more clearly defined.
-- Row-level security (RLS) is enforced. When you encourage creators to work in different workspaces, they won't have unnecessary edit permission to the original dataset. The advantage is that [RLS](/power-bi/enterprise/service-admin-rls) and/or [object-level security (OLS)](/analysis-services/tabular-models/object-level-security) will be enforced for content creators (and also content viewers).
+- Limiting who can edit and manage semantic models minimizes the risk of unintentional changes, especially to critical data items that are reused for many purposes or by many users. Physical separation reduces the chances of inadvertent, or unapproved, changes. This extra layer of protection is helpful for [certified](/power-bi/collaborate-share/service-endorse-content#certify-content) semantic models, which are relied upon for their quality and trustworthiness.
+- Co-ownership scenarios are clarified. When shared semantic models are delivered from a centralized BI or IT team, while reports are published by self-service content creators (in business units), it's a good practice to segregate the semantic models into a separate workspace. This approach avoids the ambiguity of co-ownership scenarios because ownership and responsibility per workspace is more clearly defined.
+- Row-level security (RLS) is enforced. When you encourage creators to work in different workspaces, they won't have unnecessary edit permission to the original semantic model. The advantage is that [RLS](/power-bi/enterprise/service-admin-rls) and/or [object-level security (OLS)](/analysis-services/tabular-models/object-level-security) will be enforced for content creators (and also content viewers).
 
 The disadvantages for separating data workspaces from reporting workspaces include:
 
@@ -267,7 +267,7 @@ The disadvantages for separating data workspaces from reporting workspaces inclu
 
 > [!div class="checklist"]
 > - **Determine your objectives for data reuse:** Decide how to achieve data reuse as part of a managed self-service BI strategy.
-> - **Update the tenant setting for who can use datasets across workspaces:** Determine whether this capability can be granted to all users. If you decide to limit who can use datasets across workspaces, consider using a group such as _Fabric approved report creators_.
+> - **Update the tenant setting for who can use semantic models across workspaces:** Determine whether this capability can be granted to all users. If you decide to limit who can use semantic models across workspaces, consider using a group such as _Fabric approved report creators_.
 
 ## Workspace access
 
@@ -322,7 +322,7 @@ The effective use of groups for workspace roles can require considerable plannin
 Lastly, the examples show one workspace - _Quarterly Financials_ - but often it's possible to manage a collection of workspaces with one set of groups. For example, multiple workspaces owned and managed by the finance team might be able to use the same groups.
 
 > [!NOTE]
-> You'll often plan security more broadly, taking into consideration dataset [Read](/power-bi/connect-data/service-datasets-manage-access-permissions) and [Build](/power-bi/connect-data/service-datasets-build-permissions) permission requirements, and [row-level security (RLS)](/power-bi/enterprise/service-admin-rls) requirements. For more information about what to consider for supporting report consumers and content creators, see the [security planning](powerbi-implementation-planning-security-overview.md) articles. For the purposes of this article, the focus is only on workspace roles as part of the workspace planning process.
+> You'll often plan security more broadly, taking into consideration semantic model [Read](/power-bi/connect-data/service-datasets-manage-access-permissions) and [Build](/power-bi/connect-data/service-datasets-build-permissions) permission requirements, and [row-level security (RLS)](/power-bi/enterprise/service-admin-rls) requirements. For more information about what to consider for supporting report consumers and content creators, see the [security planning](powerbi-implementation-planning-security-overview.md) articles. For the purposes of this article, the focus is only on workspace roles as part of the workspace planning process.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -408,7 +408,7 @@ It's possible to connect a workspace to an Azure Data Lake Storage Gen2 (ADLS Ge
 - **Storage of Power BI dataflows data:** If you choose to bring-your-own-data-lake, the data for Power BI dataflows (Gen1) could be accessed directly in Azure. Direct access to [dataflow storage in ADLS Gen2](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) is helpful when you want other users or processes to view or access the data. It's especially helpful when your goal is to reuse dataflows data beyond Power BI. There are two choices for assigning storage:
   - [Tenant-level storage](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md#tenant-level-storage), which is helpful when centralizing all data for Power BI dataflows into one ADLS Gen2 account is desired.
   - [Workspace-level storage](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md#workspace-level-storage), which is helpful when business units manage their own data lake or have certain data residency requirements.
-- **Backup and restore for Power BI datasets:** The [Power BI dataset backup and restore feature](/power-bi/enterprise/service-premium-backup-restore-dataset) is supported for workspaces that are assigned to capacity or PPU. This feature uses the same ADLS Gen2 account that's used for storing Power BI dataflows data (described in the previous bullet point). Dataset backups are helpful for:
+- **Backup and restore for Power BI semantic models:** The [Power BI semantic model backup and restore feature](/power-bi/enterprise/service-premium-backup-restore-dataset) is supported for workspaces that are assigned to capacity or PPU. This feature uses the same ADLS Gen2 account that's used for storing Power BI dataflows data (described in the previous bullet point). Semantic model backups are helpful for:
   - Complying with data retention requirements
   - Storing routine backups as part of a disaster recovery strategy
   - Storing backups in another region
@@ -422,22 +422,22 @@ It's possible to connect a workspace to an Azure Data Lake Storage Gen2 (ADLS Ge
 **Checklist** - When considering workspace integration with ADLS Gen2, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Decide whether the workspace will be used in ways that require Azure Storage:** Consider whether a bring-your-own-data-lake scenario would be useful for the storage of dataflows and/or whether you have requirements to use the dataset backup and restore functionality.
-> - **Determine which Azure Storage account will be used:** Select an Azure Storage account that has the [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled (ADLS Gen2) for tenant-level (centralized) storage of dataflows data or dataset backups. Ensure you have the Azure Storage account information readily available.
+> - **Decide whether the workspace will be used in ways that require Azure Storage:** Consider whether a bring-your-own-data-lake scenario would be useful for the storage of dataflows and/or whether you have requirements to use the semantic model backup and restore functionality.
+> - **Determine which Azure Storage account will be used:** Select an Azure Storage account that has the [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled (ADLS Gen2) for tenant-level (centralized) storage of dataflows data or semantic model backups. Ensure you have the Azure Storage account information readily available.
 > - **Configure the tenant-level storage account:** In the Fabric admin portal, set the tenant-level ADLS Gen2 storage account.
 > - **Decide whether workspace administrators can connect a storage account:** Have discussions to understand the needs of decentralized teams, and whether individual teams are currently maintaining their own Azure Storage accounts. Decide whether this capability should be enabled.
 > - **Configure the admin setting for workspace-level storage:** In the Fabric admin portal, enable the option that allows workspace administrators to connect their own storage account.
-> - **Set the workspace-level Azure Storage connections:** Specify the Azure Storage account for each individual workspace. You must set the storage account prior to creating any Power BI dataflows in the workspace. If you intend to use dataset backups, ensure the workspace license mode is set to capacity or PPU.
+> - **Set the workspace-level Azure Storage connections:** Specify the Azure Storage account for each individual workspace. You must set the storage account prior to creating any Power BI dataflows in the workspace. If you intend to use semantic model backups, ensure the workspace license mode is set to capacity or PPU.
 > - **Update your workspace management documentation:** Ensure that your workspace management documentation includes information about how to assign ADLS Gen2 storage accounts correctly. Make the information available in your centralized portal and training materials.
 
 ### Workspace integration with Azure Log Analytics
 
-[Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview) is a service within [Azure Monitor](/azure/azure-monitor/#features). You can use Azure Log Analytics to review diagnostic data generated by the Analysis Services engine, which hosts Power BI datasets. Workspace-level logs are useful for analyzing performance and trends, performing data refresh analysis, analyzing XMLA endpoint operations, and more. Azure Log Analytics is available only for workspaces assigned to capacity or PPU.
+[Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview) is a service within [Azure Monitor](/azure/azure-monitor/#features). You can use Azure Log Analytics to review diagnostic data generated by the Analysis Services engine, which hosts Power BI semantic models. Workspace-level logs are useful for analyzing performance and trends, performing data refresh analysis, analyzing XMLA endpoint operations, and more. Azure Log Analytics is available only for workspaces assigned to capacity or PPU.
 
 > [!NOTE]
 > Although the names are similar, the data sent to [Azure Log Analytics](/power-bi/transform-model/log-analytics/desktop-log-analytics-overview) is different from the data captured by the [Power BI activity log](/power-bi/enterprise/service-admin-auditing). The data sent to Azure Log Analytics is concerned with [events](/power-bi/transform-model/log-analytics/desktop-log-analytics-configure#events-and-schema) generated by the Analysis Services engine (for example, _Query begin_ and _Query end_ events). Conversely, the activity log is concerned with tracking [user activities](/power-bi/enterprise/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) (for example, _View report_ or _Edit report_ events).
 
-For more information about dataset event logs, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md).
+For more information about semantic model event logs, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md).
 
 For more information about how to set up Azure Log Analytics for use with Power BI, see [Configuring Azure Log Analytics for Power BI](/power-bi/transform-model/log-analytics/desktop-log-analytics-configure). Be sure to understand the prerequisites you must have in place to make the integration work.
 
@@ -468,9 +468,9 @@ Here are some suggestions for how to set these key settings to improve the exper
 - **Workspace image:** Consistent use of workspace images can be helpful for users when they're scanning a list of workspaces. Consider using an image to help users determine:
   - The domain or subject area
   - Which business unit or team owns and manages the content
-  - Whether it's a data workspace (one that's dedicated to storing reusable items, such as a lakehouse, warehouse, data pipeline, dataflow, or dataset)
+  - Whether it's a data workspace (one that's dedicated to storing reusable items, such as a lakehouse, warehouse, data pipeline, dataflow, or semantic model)
   - Whether it's a reporting workspace (one that's dedicated to storing analytical items, such as reports, dashboards, or metrics)
-- **Data model settings:** Allows workspace members, administrators, and users with Build permission on the dataset(s) to edit Power BI data models by using the web interface. This setting is used together with the _Users can edit data models in the Power BI service_ tenant setting. This setting should align with your decisions and processes for how content is created, managed, and deployed. Also, consider your method for [version control](#workspace-lifecycle-management) as described earlier in this article.
+- **Data model settings:** Allows workspace members, administrators, and users with Build permission on the semantic model(s) to edit Power BI data models by using the web interface. This setting is used together with the _Users can edit data models in the Power BI service_ tenant setting. This setting should align with your decisions and processes for how content is created, managed, and deployed. Also, consider your method for [version control](#workspace-lifecycle-management) as described earlier in this article.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 

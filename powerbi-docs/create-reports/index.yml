@@ -163,7 +163,7 @@ landingContent:
             url: ../learning-catalog/paginated-reports-online-course.md
       - linkListType: how-to-guide
         links:
-          - text: "Create a report on a shared dataset"
+          - text: "Create a report on a shared semantic model"
             url: ../paginated-reports/report-builder-shared-datasets.md
 
   # Card (optional)

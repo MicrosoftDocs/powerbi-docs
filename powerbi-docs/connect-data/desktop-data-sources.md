@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/18/2023
+ms.date: 11/10/2023
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -106,7 +106,7 @@ The **Database** category provides the following data connections:
 
 The **Microsoft Fabric (Preview)** category provides the following data connections:
 
-* Power BI datasets
+* Power BI semantic models
 * Dataflows
 * Datamarts (preview)
 * Warehouses (preview)
