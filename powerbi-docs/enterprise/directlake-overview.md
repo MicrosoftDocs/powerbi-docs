@@ -92,19 +92,19 @@ For Direct Lake semantic models, **Max Memory** represents the upper memory reso
 
 The following table lists both resource guardrails and MaxMemory:
 
-| Fabric/Power BI SKUs |Parquet files per table | Row groups per table | Rows per table (millions) | Max memory (GB) |
-|-------------|-------------------------|-------------------------|------------------------|-------------------------|
-| F2          | 1,000                   | 1,000                | 300                       |3                        |
-| F4          | 1,000                   | 1,000                | 300                       |3                        |
-| F8          | 1,000                   | 1,000                | 300                       |3                        |
-| F16         | 1,000                   | 1,000                | 300                       |5                        |
-| F32         | 1,000                   | 1,000                | 300                       |10                       |
-| F64/FT1/P1  | 5,000                   | 5,000                | 1,500                     |25                       |
-| F128/P2     | 5,000                   | 5,000                | 3,000                     |50                       |
-| F256/P3     | 5,000                   | 5,000                | 6,000                     |100                      |
-| F512/P4     | 10,000                  | 10,000               | 12,000                    |200                      |
-| F1024/P5    | 10,000                  | 10,000               | 24,000                    |400                      |
-| F2048       | 10,000                  | 10,000               | 24,000                    |400                      |
+| Fabric/Power BI SKUs |Parquet files per table | Row groups per table | Rows per table (millions) | Max model size on disk/OneLake (GB) | Max memory (GB) |
+|-------------|-------------------------|-------------------------|------------------------|-------------------------|-------------------------|
+| F2          | 1,000                   | 1,000                | 300                       | 10                       |3                       |
+| F4          | 1,000                   | 1,000                | 300                       | 10                       |3                       |
+| F8          | 1,000                   | 1,000                | 300                       | 10                       |3                       |
+| F16         | 1,000                   | 1,000                | 300                       | 20                       |5                       |
+| F32         | 1,000                   | 1,000                | 300                       | 40                       |10                      |
+| F64/FT1/P1  | 5,000                   | 5,000                | 1,500                     | Unlimited                |25                      |
+| F128/P2     | 5,000                   | 5,000                | 3,000                     | Unlimited                |50                      |
+| F256/P3     | 5,000                   | 5,000                | 6,000                     | Unlimited                |100                     |
+| F512/P4     | 10,000                  | 10,000               | 12,000                    | Unlimited                |200                     |
+| F1024/P5    | 10,000                  | 10,000               | 24,000                    | Unlimited                |400                     |
+| F2048       | 10,000                  | 10,000               | 24,000                    | Unlimited                |400                     |
 
 Depending on your Fabric or Power BI SKU, additional **Capacity unit** and **Max memory per query** limits also apply to Direct Lake models. To learn more, see [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
 
