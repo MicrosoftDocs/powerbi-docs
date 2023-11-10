@@ -106,7 +106,7 @@ The following table lists both resource guardrails and MaxMemory:
 | F1024/P5    | 10,000                  | 10,000               | 24,000                    | Unlimited                |400                     |
 | F2048       | 10,000                  | 10,000               | 24,000                    | Unlimited                |400                     |
 
-<a name="mm">1</a> - If exceeded, Max model size on disk/Onelake will cause all queries to the model to fallback to DirectQuery unlike other guardrails that are evaluated per query.
+<a name="mm">1</a> - If exceeded, Max model size on disk/Onelake will cause all queries to the model to fallback to DirectQuery, unlike other guardrails that are evaluated per query.
 
 Depending on your Fabric or Power BI SKU, additional **Capacity unit** and **Max memory per query** limits also apply to Direct Lake models. To learn more, see [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
 
