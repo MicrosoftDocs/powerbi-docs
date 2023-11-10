@@ -29,26 +29,26 @@ Dashboards can be opened from many locations in the Power BI service. One way to
 
 :::image type="content" source="media/end-user-dashboard-open/power-bi-workspace.png" alt-text="Screenshot of the navigation pane with Workspaces highlighted.":::
 
-If that workspace contains a dashboard, you'll see the following icon.
+If that workspace contains a dashboard, you see the following icon.
 
 :::image type="icon" source="media/end-user-dashboard-open/power-bi-dashboard.png":::
 
-Once you've identified a dashboard, open it by selecting it and the dashboard will fill your Power BI canvas.
+Once you identified a dashboard, open it by selecting it and the dashboard fills your Power BI canvas.
 
 On the left navigation pane, view and open dashboards from:
 
 - **Home**
 - **Browse**, 
-  - **Recent** - if you've recently visited a dashboard
-  - **Favorites** - if you've [set a dashboard as a favorite](end-user-favorite.md)
-  - **Shared with me** - if a colleague has [shared a dashboard with you](../collaborate-share/end-user-shared-with-me.md)
+  - **Recent** - if you recently visited a dashboard
+  - **Favorites** - if you [set a dashboard as a favorite](end-user-favorite.md)
+  - **Shared with me** - if a colleague [shared a dashboard with you](../collaborate-share/end-user-shared-with-me.md)
 - **Data hub** - contains content from across your organization
 - **Apps** - most apps contain both dashboards and reports
-- **Workspaces**, including **My workspace** - if you've downloaded any of the [Power BI samples](../create-reports/sample-datasets.md) or other content or if colleagues have shared content with you. 
+- **Workspaces**, including **My workspace** - if you downloaded any of the [Power BI samples](../create-reports/sample-datasets.md) or other content or if colleagues have shared content with you. 
 
 
 ## Next steps
 * Back to [dashboard overview](end-user-dashboards.md).
 
 * Get comfortable with dashboards by taking a tour of one of our [sample dashboards](../create-reports/sample-tutorial-connect-to-the-samples.md).    
-* Learn about [dashboard tiles](end-user-tiles.md) and what will happen when you select one.
+* Learn about [dashboard tiles](end-user-tiles.md) and what happens when you select one.
