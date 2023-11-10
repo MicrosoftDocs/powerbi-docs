@@ -1,6 +1,6 @@
 ---
-title: Create a narrative summary visual with Copilot for Power BI
-description: When you're using Copilot, you can quickly create a narrative summary of your report.
+title: Create a narrative visual with Copilot for Power BI
+description: When you're using Copilot, you can quickly create a narrative of your report.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cnews
@@ -11,11 +11,11 @@ ms.date: 11/09/2023
 LocalizationGroup: Create reports
 ---
 
-# Create a narrative summary visual with Copilot for Power BI
+# Create a narrative visual with Copilot for Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In Power BI Desktop and the Power BI service, you can use Copilot for Power BI to quickly create a narrative summary of a report page with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals that you select. You can curate the tone and specificity of the summary with suggested and custom prompts.
+In Power BI Desktop and the Power BI service, you can use Copilot for Power BI to quickly create a narrative about a report page with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals that you select. You can curate the tone and specificity of the narrative with suggested and custom prompts.
 
 ## Before you start
 
