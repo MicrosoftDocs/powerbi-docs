@@ -86,7 +86,7 @@ Now that you have content in your workspace, you can package it in a template ap
    > 
    > The view, edit, and export controls on this tab apply only to the Power BI service. Once you download the *.pbix* file, it is no longer in the service. It puts a copy of your data, unprotected, in a location chosen by the user. You then no longer have any control over what the user can do with it.
    > 
-   > If you want to limit access to your queries and measures while still allowing your users to add their own data sources, consider checking only the **Export or externally connect to data** options. This enables users to add their own data sources without being able to edit your dataset. For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
+   > If you want to limit access to your queries and measures while still allowing your users to add their own data sources, consider checking only the **Export or externally connect to data** options. This enables users to add their own data sources without being able to edit your semantic model. For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
 
 1. Parameters are created in the original *.pbix* file (learn more about [creating query parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)). You use the capabilities on this tab to help the app installer configure the app after installation when they connect to their data.
 

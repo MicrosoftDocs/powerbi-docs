@@ -57,7 +57,7 @@ One of the most basic and effective ways to improve the Q&A visual experience is
 
    [![Screenshot of the Q and A synonyms page.](media/q-and-a-tooling-intro/qna-setup-menu-synonyms-tab.png)](media/q-and-a-tooling-intro/qna-setup-menu-synonyms-tab.png#lightbox)
 
-   The dialog shows all the columns, tables, and respective terms and synonyms that users can use when asking questions against the dataset. You can quickly see all the terms in one place and add or remove terms for multiple columns. 
+   The dialog shows all the columns, tables, and respective terms and synonyms that users can use when asking questions against the semantic model. You can quickly see all the terms in one place and add or remove terms for multiple columns. 
 
    **Approved synonyms** If you have a field called brand, you might decide to add a term called "label," so a user can use this word instead of being required to use the word brand. When Q&A is processing inputs, Q&A then treats the mentions of "label" as references to that field in your data. You can select **Add** to type in a new term.
 
@@ -91,6 +91,8 @@ As new synonyms get shared within your organization, you can select the refresh 
 Some terms and phrases can't be defined with simple mappings to terms in your data model. These terms, which qualify other terms or relate them together, must be understood as a part of a phrase. For example, “show me popular titles” requires Q&A to understand what a title is, and what makes a title popular. 
 
 These linguistic relationships (or [*phrasings*](q-and-a-tooling-advanced.md#phrasings-in-the-linguistic-schema)) come in a wide variety of types. You can teach Q&A to recognize words as they relate to terms in your data using the Q&A setup menu. 
+
+Select **Review questions** to see a list of semantic models being used in the Power BI service for your tenant. The **Review questions** page also displays the semantic model owner, workspace, and last refreshed date. From here, you can select a semantic model and see what questions users have been asking. The data also shows words that weren't recognized. All data shown here is for the last 28 days.
 
 [![Screenshot of the Relationships page](media/q-and-a-tooling-intro/qna-setup-menu-relationships-tab.png)](media/q-and-a-tooling-intro/qna-setup-menu-relationships-tab.png#lightbox)
 

@@ -39,7 +39,7 @@ With parameters, you can filter the report for one or more values, even if those
 
 ### Field types
 
-Field type can be a number, datetime, or string and the type used must match the type set in the dataset.  For example, specifying a table column of type "string" doesn't work if you're looking for a datetime or numeric value in a dataset column set as a date, such as Table/StringColumn eq 1.
+Field type can be a number, datetime, or string and the type used must match the type set in the semantic model.  For example, specifying a table column of type "string" doesn't work if you're looking for a datetime or numeric value in a semantic model column set as a date, such as Table/StringColumn eq 1.
 
 * **Strings** must be enclosed with single quotes, as in 'manager name'.
 * **Numbers** require no special formatting. See [Numeric data types](#numeric-data-types) in this article for details.

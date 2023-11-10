@@ -1,6 +1,6 @@
 ---
 title: Download a sample template app from AppSource
-description: Learn how to download the sample template app, which includes dashboards, reports, and datasets that you can modify and distribute to your colleagues.
+description: Learn how to download the sample template app, which includes dashboards, reports, and semantic models that you can modify and distribute to your colleagues.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: 
@@ -35,7 +35,7 @@ Because you installed it, you can also open the *workspace* and edit the element
 
 :::image type="content" source="media/sample-sales-marketing-template-app/power-bi-app-edit-pencil-2.png" alt-text="Screenshot of the Power BI service, highlighting the pencil icon.":::
 
-Now you see the dashboard, report, and dataset from the template app in the list view of the workspace. Here in the workspace, you can edit each of them.
+Now you see the dashboard, report, and semantic model from the template app in the list view of the workspace. Here in the workspace, you can edit each of them.
 
 :::image type="content" source="media/sample-sales-marketing-template-app/power-bi-sales-marketing-workspace-2.png" alt-text="Screenshot of the Sales & Marketing workspace.":::
 

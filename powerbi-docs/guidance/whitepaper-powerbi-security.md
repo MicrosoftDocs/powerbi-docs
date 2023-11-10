@@ -13,7 +13,7 @@ LocalizationGroup: Conceptual
 
 # Power BI security white paper
 
-**Summary:** Power BI is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, datasets, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
+**Summary:** Power BI is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, semantic models ([previously known as semantic models](../connect-data/service-datasets-rename.md)), and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
 
 <!-- cspell:disable -->
 
@@ -30,7 +30,7 @@ LocalizationGroup: Conceptual
 
 ## Introduction
 
-Power BI is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, datasets, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
+Power BI is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, semantic models, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
 
 The world is rapidly changing; organizations are going through an accelerated digital transformation, and we're seeing a massive increase in remote working, increased customer demand for online services, and increased use of advanced technologies in operations and business decision-making. And all of this is powered by the cloud.
 
@@ -216,19 +216,19 @@ In most scenarios, Azure Storage is utilized to persist the data of Power BI art
 
 All data persisted by Power BI is encrypted by default using Microsoft-managed keys. Customer data stored in Azure SQL Databases is fully encrypted using [Azure SQL's Transparent Data Encryption (TDE)](/azure/sql-database/transparent-data-encryption-azure-sql) technology. Customer data stored in Azure Blob storage is encrypted using [Azure Storage Encryption](/azure/storage/common/storage-service-encryption).
 
-Optionally, organizations can utilize Power BI Premium to use their own keys to encrypt data at rest that is imported into a dataset. This approach is often described as bring your own key (BYOK). Utilizing BYOK helps ensure that even in case of a service operator error, customer data won't be exposed – something that can't easily be achieved using transparent service-side encryption. See [Bring your own encryption keys for Power BI](../enterprise/service-encryption-byok.md) for more information.
+Optionally, organizations can utilize Power BI Premium to use their own keys to encrypt data at rest that is imported into a semantic model. This approach is often described as bring your own key (BYOK). Utilizing BYOK helps ensure that even in case of a service operator error, customer data won't be exposed – something that can't easily be achieved using transparent service-side encryption. See [Bring your own encryption keys for Power BI](../enterprise/service-encryption-byok.md) for more information.
 
-Power BI datasets allow for various data source connection modes that determine whether the data source data is persisted in the service or not.
+Power BI semantic models allow for various data source connection modes that determine whether the data source data is persisted in the service or not.
 
-|Dataset Mode (Kind)   |Data Persisted in Power BI |
+|Semantic Model Mode (Kind)   |Data Persisted in Power BI |
 |----------------------|---------------------------|
 |Import                |Yes |
-|Direct Query          |No |
+|DirectQuery           |No |
 |Live Connect          |No |
 |Composite             |If contains an Import data source |
 |Streaming             |If configured to persist |
 
-Regardless of the dataset mode utilized, Power BI may temporarily cache any retrieved data to optimize query and report load performance.
+Regardless of the semantic model mode utilized, Power BI may temporarily cache any retrieved data to optimize query and report load performance.
 
 ### Data in processing
 
@@ -242,7 +242,7 @@ Power BI requires all incoming HTTP traffic to be encrypted using TLS 1.2 or abo
 
 When connecting to a data source, a user can choose to import a copy of the data into Power BI or to connect directly to the data source.
 
-In the case of import, a user establishes a connection based on the user's sign in and accesses the data with the credential. After the dataset is published to the Power BI service, Power BI always uses this user's credential to import data. Once data is imported, viewing the data in reports and dashboards doesn't access the underlying data source. Power BI supports single sign-on authentication for selected data sources. If the connection is configured to use single sign-on, the dataset owner's credentials are used to connect to the data source.
+In the case of import, a user establishes a connection based on the user's sign in and accesses the data with the credential. After the semantic model is published to the Power BI service, Power BI always uses this user's credential to import data. Once data is imported, viewing the data in reports and dashboards doesn't access the underlying data source. Power BI supports single sign-on authentication for selected data sources. If the connection is configured to use single sign-on, the semantic model owner's credentials are used to connect to the data source.
 
 If a data source is connected directly using preconfigured credentials, the preconfigured credentials are used to connect to the data source when any user views the data. If a data source is connected directly using single sign-on, the current user's credentials are used to connect to the data source when a user views the data. When used with single sign-on, Row Level Security (RLS) and/or object-level security (OLS) can be implemented on the data source. This allows users to view only data they have privileges to access. When the connection is to data sources in the cloud, Microsoft Entra ID authentication is used for single sign-on; for on-premises data sources, Kerberos, Security Assertion Markup Language (SAML), and Microsoft Entra ID are supported.
 
@@ -290,7 +290,7 @@ Independent Software Vendors (ISVs) and solution providers have two main modes o
 
 In an [embed for your organization](../developer/embedded/embed-sample-for-your-organization.md) scenario, Microsoft Entra users access their own Power BI content through portals customized by their enterprises and ITs. All Power BI policies and capabilities described in this paper such as Row Level Security (RLS) and object-level security (OLS) are automatically applied to all users independently of whether they access Power BI through the [Power BI portal](https://app.powerbi.com/) or through customized portals.
 
-In an [embed for your customers](../developer/embedded/embed-sample-for-customers.md) scenario, ISVs typically own Power BI tenants and Power BI artifacts (dashboards, reports, datasets etc.). It's the responsibility of an ISV back-end service to authenticate its end users and decide which artifacts and which access level is appropriate for that end user. ISV policy decisions are encrypted in an [embed token](/rest/api/power-bi/embedtoken) generated by Power BI and passed to the ISV back-end for further distribution to the end users according to the business logic of the ISV. End users using a browser or other client applications aren't able to decrypt or modify embed tokens. Client-side SDKs such as [Power BI Client APIs](/javascript/api/overview/powerbi/) automatically append the encrypted embed token to Power BI requests as an *Authorization: EmbedToken* header. Based on this header, Power BI will enforce all policies (such as access or RLS) precisely as was specified by the ISV during generation.
+In an [embed for your customers](../developer/embedded/embed-sample-for-customers.md) scenario, ISVs typically own Power BI tenants and Power BI items (dashboards, reports, semantic models, and others). It's the responsibility of an ISV back-end service to authenticate its end users and decide which artifacts and which access level is appropriate for that end user. ISV policy decisions are encrypted in an [embed token](/rest/api/power-bi/embedtoken) generated by Power BI and passed to the ISV back-end for further distribution to the end users according to the business logic of the ISV. End users using a browser or other client applications aren't able to decrypt or modify embed tokens. Client-side SDKs such as [Power BI Client APIs](/javascript/api/overview/powerbi/) automatically append the encrypted embed token to Power BI requests as an *Authorization: EmbedToken* header. Based on this header, Power BI will enforce all policies (such as access or RLS) precisely as was specified by the ISV during generation.
 
 To enable embedding and automation, and to generate the embed tokens described above, Power BI exposes a rich set of [REST APIs](/rest/api/power-bi/embedtoken). These Power BI REST APIs support both user [delegated](/azure/active-directory/develop/v2-permissions-and-consent) and [service principal](../enterprise/service-premium-service-principal.md) Microsoft Entra methods of authentication and authorization.
 
@@ -300,11 +300,11 @@ Power BI embedded analytics and its REST APIs support all Power BI network isola
 
 Power BI currently supports two broad categories of AI features in the product today: AI visuals and AI enrichments. The visual-level AI features include capabilities such as Key-Influencers, Decomposition-Tree, Smart-Narrative, Anomaly Detection, R-visual, Python-visual, Clustering, Forecasting, Q&A, Quick-Insights etc. The AI enrichment capabilities include capabilities such as AutoML, Azure Machine Learning, CognitiveServices, R/Python transforms etc.
 
-Most of the features mentioned above are supported in both Shared and Premium workspaces today. However, AutoML and CognitiveServices are supported only in Premium workspaces, due to IP restrictions. Today, with the AutoML integration in Power BI, a user can build and train a custom ML model (for example, Prediction, Classification, Regression, etc.) and apply it to get predictions while loading data into a dataflow defined in a Premium workspace. Additionally, Power BI users can apply several CognitiveServices APIs, such as TextAnalytics and ImageTagging, to transform data before loading it into a dataflow/dataset defined in a Premium workspace.
+Most of the features mentioned above are supported in both Shared and Premium workspaces today. However, AutoML and CognitiveServices are supported only in Premium workspaces, due to IP restrictions. Today, with the AutoML integration in Power BI, a user can build and train a custom ML model (for example, Prediction, Classification, Regression, etc.) and apply it to get predictions while loading data into a dataflow defined in a Premium workspace. Additionally, Power BI users can apply several CognitiveServices APIs, such as TextAnalytics and ImageTagging, to transform data before loading it into a dataflow/semantic model defined in a Premium workspace.
 
-The Premium AI enrichment features can be best viewed as a collection of stateless AI functions/transforms that can be used by Power BI users in their data integration pipelines used by a Power BI dataset or dataflow. Note that these functions can also be accessed from current dataflow/dataset authoring environments in the Power BI Service and Power BI Desktop. These AI functions/transforms always run in a Premium workspace/capacity. These functions are surfaced in Power BI as a data source that requires a Microsoft Entra token for the Power BI user who is using the AI function. These AI data sources are special because they don't surface any of their own data and they only supply these functions/transforms. During execution, these features don't make any outbound calls to other services to transmit the customer's data. Let us look at the Premium scenarios individually to understand the communication patterns and relevant security-related details pertaining to them.
+The Premium AI enrichment features can be best viewed as a collection of stateless AI functions/transforms that can be used by Power BI users in their data integration pipelines used by a Power BI semantic model or dataflow. Note that these functions can also be accessed from current dataflow/semantic model authoring environments in the Power BI Service and Power BI Desktop. These AI functions/transforms always run in a Premium workspace/capacity. These functions are surfaced in Power BI as a data source that requires a Microsoft Entra token for the Power BI user who is using the AI function. These AI data sources are special because they don't surface any of their own data and they only supply these functions/transforms. During execution, these features don't make any outbound calls to other services to transmit the customer's data. Let us look at the Premium scenarios individually to understand the communication patterns and relevant security-related details pertaining to them.
 
-For training and applying an AutoML model, Power BI uses the Azure AutoML SDK and runs all the training in the customer's Power BI capacity. During training iterations, Power BI calls an experimentation Azure Machine Learning service to select a suitable model and hyper-parameters for the current iteration. In this outbound call, only relevant experiment metadata (for example, accuracy, ml algorithm, algorithm parameters, etc.) from the previous iteration is sent. The AutoML training produces an ONNX model and training report data that is then saved in the dataflow. Later, Power BI users can then apply the trained ML model as a transform to operationalize the ML model on a scheduled basis. For TextAnalytics and ImageTagging APIs, Power BI doesn't directly call the CognitiveServices service APIs, but rather uses an internal SDK to run the APIs in the Power BI Premium capacity. Today these APIs are supported in both Power BI dataflows and datasets. While authoring a dataset in Power BI Desktop, users can only access this functionality if they have access to a Premium Power BI workspace. Hence customers are prompted to supply their Microsoft Entra credentials.
+For training and applying an AutoML model, Power BI uses the Azure AutoML SDK and runs all the training in the customer's Power BI capacity. During training iterations, Power BI calls an experimentation Azure Machine Learning service to select a suitable model and hyper-parameters for the current iteration. In this outbound call, only relevant experiment metadata (for example, accuracy, ml algorithm, algorithm parameters, etc.) from the previous iteration is sent. The AutoML training produces an ONNX model and training report data that is then saved in the dataflow. Later, Power BI users can then apply the trained ML model as a transform to operationalize the ML model on a scheduled basis. For TextAnalytics and ImageTagging APIs, Power BI doesn't directly call the CognitiveServices service APIs, but rather uses an internal SDK to run the APIs in the Power BI Premium capacity. Today these APIs are supported in both Power BI dataflows and semantic models. While authoring a data model in Power BI Desktop, users can only access this functionality if they have access to a Premium Power BI workspace. Hence customers are prompted to supply their Microsoft Entra credentials.
 
 ## Network isolation
 
@@ -353,7 +353,7 @@ This feature will be available in public preview soon.
 
 Power BI supports the use of service principals. Store any service principal credentials used for encrypting or accessing Power BI in a Key Vault, assign proper access policies to the vault, and regularly review access permissions.
 
-See [Automate Premium workspace and dataset tasks with service principals](../enterprise/service-premium-service-principal.md) for additional details.
+See [Automate Premium workspace and semantic model tasks with service principals](../enterprise/service-premium-service-principal.md) for additional details.
 
 ## Microsoft Purview for Power BI
 
@@ -366,15 +366,15 @@ When information protection is enabled in Power BI:
 * Sensitive data, both in the Power BI service and in Power BI Desktop, can be classified and labeled using the same sensitivity labels used in Office and in Azure.
 * Governance policies can be enforced when Power BI content is exported to Excel, PowerPoint, PDF, Word, or *.pbix* files, to help ensure that data is protected even when it leaves Power BI.
 * It's easy to classify and protect *.pbix* files in Power BI Desktop, just like it's done in Excel, Word, and PowerPoint applications. Files can be easily tagged according to their level of sensitivity. Even further, they can be encrypted if they contain business-confidential data, ensuring that only authorized users can edit these files.
-* Excel workbooks automatically inherit sensitivity labels when they connect to Power BI (preview), making it possible to maintain end-to-end classification and apply protection when Power BI datasets are analyzed in Excel.
+* Excel workbooks automatically inherit sensitivity labels when they connect to Power BI (preview), making it possible to maintain end-to-end classification and apply protection when Power BI semantic models are analyzed in Excel.
 * Sensitivity labels applied to Power BI reports and dashboards are visible in the Power BI iOS and Android mobile apps.
 * Sensitivity labels persist when a Power BI report is embedded in Teams, SharePoint, or a secure website. This helps organizations maintain classification and protection upon export when embedding Power BI content.
-* Label inheritance upon the creation of new content in the Power BI service ensures that labels applied to datasets or datamarts in the Power BI service will be applied to new content created on top of those datasets and datamarts.
+* Label inheritance upon the creation of new content in the Power BI service ensures that labels applied to semantic models or datamarts in the Power BI service will be applied to new content created on top of those semantic models and datamarts.
 * [Power BI admin scan APIs](/rest/api/power-bi/admin/workspaceinfo_getscanresult) can extract a Power BI item's sensitivity label, enabling Power BI and InfoSec admins to monitor labeling in the Power BI service and produce executive reports.
 * Power BI admin APIs enable central teams to programmatically apply sensitivity labels to content in the Power BI service.
 * Central teams can create mandatory label policies to enforce applying labels on new or edited content in Power BI.
 * Central teams can create default label policies to ensure that a sensitivity label is applied to all new or changed Power BI content.
-* Automatic downstream sensitivity labeling in the Power BI service ensures that when a label on a dataset or datamart is applied or changed, the label will automatically be applied or changed on all downstream content connected to the dataset or datamart.
+* Automatic downstream sensitivity labeling in the Power BI service ensures that when a label on a semantic model or datamart is applied or changed, the label will automatically be applied or changed on all downstream content connected to the semantic model or datamart.
 
 For more information, see [Sensitivity labels in Power BI](../enterprise/service-security-sensitivity-label-overview.md).
 
@@ -384,13 +384,13 @@ Microsoft Purview's DLP policies can help organizations reduce the risk of sensi
 
 When DLP policies for Power BI are set up:
 
-* All datasets within the workspaces specified in the policy are evaluated by the policy.
+* All semantic models within the workspaces specified in the policy are evaluated by the policy.
 * You can detect when sensitive data is uploaded into your Premium capacities. DLP policies can detect:
     * Sensitivity labels.
     * Sensitive info types. Over 260 types are supported. Sensitive info type detection relies on Microsoft Purview content scanning.
-* When you encounter a dataset identified as sensitive, you can see a customized policy tip that helps you understand what you should do.
-* If you are a dataset owner, you can override a policy and prevent your dataset from being identified as "sensitive" if you have a valid reason for doing so.
-* If you are a dataset owner, you can report an issue with a policy if you conclude that a sensitive info type has been falsely identified.
+* When you encounter a semantic model identified as sensitive, you can see a customized policy tip that helps you understand what you should do.
+* If you are a semantic model owner, you can override a policy and prevent your semantic model from being identified as "sensitive" if you have a valid reason for doing so.
+* If you are a semantic model owner, you can report an issue with a policy if you conclude that a sensitive info type has been falsely identified.
 * Automatic risk mitigations, such as alerts to the security admin, can be invoked.
 
 For more information, see [Data loss prevention policies for Power BI](../enterprise/service-security-dlp-policies-for-power-bi-overview.md).
@@ -423,9 +423,9 @@ The following questions are common security questions and answers for Power BI. 
 
 **How do users connect to, and gain access to data sources while using Power BI?**
 
-* Power BI manages credentials to data sources for each user for cloud credentials or for connectivity through a personal gateway. Data sources managed by an on-premises data gateway can be shared across the enterprise and permissions to these data sources can be managed by the Gateway Admin. When configuring a dataset, the user is allowed to select a credential from their personal store or use an on-premises data gateway to use a shared credential.
+* Power BI manages credentials to data sources for each user for cloud credentials or for connectivity through a personal gateway. Data sources managed by an on-premises data gateway can be shared across the enterprise and permissions to these data sources can be managed by the Gateway Admin. When configuring a semantic model, the user is allowed to select a credential from their personal store or use an on-premises data gateway to use a shared credential.
 
-    In the import case, a user establishes a connection based on the user's sign in and accesses the data with the credential. After the dataset is published to Power BI service, Power BI always uses this user's credential to import data. Once data is imported, viewing the data in reports and dashboard doesn't access the underlying data source. Power BI supports single sign-on authentication for selected data sources. If the connection is configured to use single sign-on, the dataset owner's credential is used to connect with the data source.
+    In the import case, a user establishes a connection based on the user's sign in and accesses the data with the credential. After the semantic model is published to Power BI service, Power BI always uses this user's credential to import data. Once data is imported, viewing the data in reports and dashboard doesn't access the underlying data source. Power BI supports single sign-on authentication for selected data sources. If the connection is configured to use single sign-on, the semantic model owner's credential is used to connect with the data source.
 
     For reports that are connected with DirectQuery, the data source is connected directly using a preconfigured credential, the preconfigured credential is used to connect to the data source when any user views the data. If a data source is connected directly using single sign-on, the current user's credential is used to connect to the data source when the user views the data. When using with single sign-on, Row Level Security (RLS) and/or object-level security (OLS) can be implemented on the data source, and this allows users to view data they have privileges to access. When the connection is to data sources in the cloud, Microsoft Entra authentication is used for single sign-on; for on-premises data sources, Kerberos, SAML, and Microsoft Entra ID are supported.
 
@@ -437,7 +437,7 @@ The following questions are common security questions and answers for Power BI. 
 
     [Object-level security (OLS)](https://powerbi.microsoft.com/blog/object-level-security-ols-now-available-for-public-preview-in-power-bi-premium/) can be used to secure sensitive tables or columns. However, unlike row-level security, object-level security also secures object names and metadata. This helps prevent malicious users from discovering even the existence of such objects. Secured tables and columns are obscured in the field list when using reporting tools like Excel or Power BI, and moreover, users without permissions can't access secured metadata objects via DAX or any other method. From the standpoint of users without proper access permissions, secured tables and columns simply don't exist.
 
-    Object-level security, together with row-level security, enables enhanced enterprise grade security on reports and datasets, ensuring that only users with the requisite permissions have access to view and interact with sensitive data.
+    Object-level security, together with row-level security, enables enhanced enterprise grade security on reports and semantic models, ensuring that only users with the requisite permissions have access to view and interact with sensitive data.
 
 **How is data transferred to Power BI?**
 
@@ -455,7 +455,7 @@ The following questions are common security questions and answers for Power BI. 
 
 * For **non-Role Level Security (RLS)** enabled data sources, if a dashboard, report, or data model is shared with other users through Power BI, the data is then available for users with whom it's shared to view and interact with. Power BI *does not* reauthenticate users against the original source of the data; once data is uploaded into Power BI, the user who authenticated against the source data is responsible for managing which other users and groups can view the data.
 
-  When data connections are made to an **RLS**-capable data source, such as an Analysis Services data source, only dashboard data is cached in Power BI. Each time a report or dataset is viewed or accessed in Power BI that uses data from the RLS-capable data source, the Power BI service accesses the data source to get data based on the user's credentials, and if sufficient permissions exist, the data is loaded into the report or data model for that user. If authentication fails, the user will see an error.
+  When data connections are made to an **RLS**-capable data source, such as an Analysis Services data source, only dashboard data is cached in Power BI. Each time a report or semantic model is viewed or accessed in Power BI that uses data from the RLS-capable data source, the Power BI service accesses the data source to get data based on the user's credentials, and if sufficient permissions exist, the data is loaded into the report or data model for that user. If authentication fails, the user will see an error.
 
   For more information, see the [Authentication to Data Sources](#authentication-to-data-sources) section earlier in this document.
 

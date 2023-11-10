@@ -68,7 +68,7 @@
         href: mobile-apps-view-phone-report.md
       - name: "View on-premises reports in the mobile apps"
         href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-      - name: "Refresh datasets"
+      - name: "Refresh semantic models"
         href: mobile-apps-dataset-refresh.md
       - name: "Set up a launch item"
         href: mobile-apps-launch-item.md

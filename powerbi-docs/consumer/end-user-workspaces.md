@@ -25,7 +25,7 @@ LocalizationGroup: Consumers
 ## Types of workspaces
 **My Workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *business users*, **My workspace** remains empty because your job doesn't involve creating new content. *Business users*, by definition, consume data created by others and use that data to make business decisions. If you find that you're creating content, consider reading [the Power BI articles for designers](../create-reports/index.yml) instead.
 
-**Workspaces** contain all the content for a specific app. When a *designer* creates an app, they bundle together all the content that's necessary for that app to be utilized. Content might include dashboards, reports, and datasets. Not every app will contain these three pieces of content. An app might contain only one dashboard, or three of each content type, or even 20 reports. It all depends on what the *designer* includes in the app. Commonly, app workspaces shared with *business users* don't include the datasets.
+**Workspaces** contain all the content for a specific app. When a *designer* creates an app, they bundle together all the content that's necessary for that app to be utilized. Content might include dashboards, reports, and semantic models. Not every app will contain these three pieces of content. An app might contain only one dashboard, or three of each content type, or even 20 reports. It all depends on what the *designer* includes in the app. Commonly, app workspaces shared with *business users* don't include the semantic models.
 
 The following **Azure Decom** workspace contains several reports and a dashboard.
 
@@ -36,7 +36,7 @@ The following **Azure Decom** workspace contains several reports and a dashboard
 Access permissions determine what you can do in a workspace, so teams can collaborate. When *designers* grant access to a workspace, they add individuals or groups to one of the workspace roles: **Viewer**, **Member**, **Contributor**, or **Admin**. 
 
 
-As a Power BI *business user*, you'll typically interact in workspaces using the **Viewer** role. But a *designer* could also assign you to the **Member** or **Contributor** role. The Viewer role lets you view and interact with content (dashboards, reports, apps) created by others and shared with you. And because the Viewer role can't access the underlying dataset, it's a safe way to interact with content and not have to worry that you'll "hurt" the underlying data.
+As a Power BI *business user*, you'll typically interact in workspaces using the **Viewer** role. But a *designer* could also assign you to the **Member** or **Contributor** role. The Viewer role lets you view and interact with content (dashboards, reports, apps) created by others and shared with you. And because the Viewer role can't access the underlying semantic model, it's a safe way to interact with content and not have to worry that you'll "hurt" the underlying data.
 
 
 For a detailed list of what you can do as a *business user* with the Viewer role, see [Power BI features for business users](end-user-features.md).

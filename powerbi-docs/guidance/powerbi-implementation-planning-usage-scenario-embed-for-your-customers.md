@@ -115,9 +115,9 @@ The application can set up and automate operations, and it can respond to user-i
 
 ### Enforce data permissions
 
-When the app users should only have access to view a subset of data, you need to develop a solution that restricts access to Power BI dataset data. The reason might be because some users aren't permitted to view specific data, such as sales results of other sales regions. Achieving this requirement commonly involves setting up row-level security (RLS), which involves defining roles and rules that filter model data.
+When the app users should only have access to view a subset of data, you need to develop a solution that restricts access to Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) data. The reason might be because some users aren't permitted to view specific data, such as sales results of other sales regions. Achieving this requirement commonly involves setting up row-level security (RLS), which involves defining roles and rules that filter model data.
 
-When you use the _For your customers scenario_, the app must set the effective identity of the embed token to restrict access to data. This effective identity determines how Power BI will connect to the model and how it will enforce RLS roles. How you set up the effective identity depends on the type of Power BI dataset.
+When you use the _For your customers scenario_, the app must set the effective identity of the embed token to restrict access to data. This effective identity determines how Power BI will connect to the model and how it will enforce RLS roles. How you set up the effective identity depends on the type of Power BI semantic model.
 
 For more information about RLS roles for embedded content, see [Enforce data permissions for Power BI embedded analytics](/training/modules/power-bi-embedded-permissions-analytics/).
 
@@ -125,12 +125,12 @@ For more information about RLS roles for embedded content, see [Enforce data per
 
 Multiple organizations can use a multitenancy app, where each organization is a tenant. A multitenancy app that embeds Power BI analytics can use the _Embed for your customers_ scenario because the app users include external users. When designing a multitenancy app, you can choose from two different tenancy models.
 
-The recommended approach is to use the _workspace separation_ model. You can achieve this approach by creating one Power BI workspace for each tenant. Each workspace contains Power BI artifacts that are specific to that tenant, and the datasets connect to a separate database for each tenant.
+The recommended approach is to use the _workspace separation_ model. You can achieve this approach by creating one Power BI workspace for each tenant. Each workspace contains Power BI artifacts that are specific to that tenant, and the semantic models connect to a separate database for each tenant.
 
 > [!TIP]
 > For more information about the workspace separation model, see [Automate workspace separation](/training/modules/power-bi-embedded-automate/workspace-separation). For more information about scalable multitenancy apps, see [Service principal profiles for multitenancy apps in Power BI Embedded](/power-bi/developer/embedded/embed-multi-tenancy).
 
-Alternatively, the single multi-customer database model is available. When you use this model, your solution will achieve separation with a single workspace that includes a set of Power BI items that are shared across all tenants. RLS roles, which are defined in the datasets, will help filter the data more securely to ensure that organizations only view their own data.
+Alternatively, the single multi-customer database model is available. When you use this model, your solution will achieve separation with a single workspace that includes a set of Power BI items that are shared across all tenants. RLS roles, which are defined in the semantic models, will help filter the data more securely to ensure that organizations only view their own data.
 
 ### No-code embedding
 
@@ -138,7 +138,7 @@ Developing a programmatic solution requires skill, time, and effort. Consider th
 
 ### Gateway setup
 
-Typically, a [data gateway](/power-bi/connect-data/service-gateway-onprem) is required when accessing data sources that reside within the private organizational network or a virtual network. The two purposes of a gateway are to [refresh imported data](/power-bi/connect-data/refresh-data), or view a report that queries a live connection or [DirectQuery](/power-bi/connect-data/desktop-directquery-about) dataset.
+Typically, a [data gateway](/power-bi/connect-data/service-gateway-onprem) is required when accessing data sources that reside within the private organizational network or a virtual network. The two purposes of a gateway are to [refresh imported data](/power-bi/connect-data/refresh-data), or view a report that queries a live connection or [DirectQuery](/power-bi/connect-data/desktop-directquery-about) semantic model.
 
 > [!NOTE]
 > A centralized [data gateway](/power-bi/connect-data/service-gateway-personal-mode#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in _standard mode_ is strongly recommended over gateways in [personal mode](/power-bi/connect-data/service-gateway-personal-mode). In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).

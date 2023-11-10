@@ -645,6 +645,29 @@ valueFormatter.create({});
 // returns: an instance of IValueFormatter.
 ```
 
+## format
+
+Alternative way to format the value without creating `IValueFormatter`. Useful for cases with [dynamic formats string](./dynamic-format.md)
+
+```typescript
+import { format } from "powerbi-visuals-utils-formattingutils";
+import format = valueFormatter.format;
+
+function format(value: any, format?: string, allowFormatBeautification?: boolean, cultureSelector?: string): string;
+```
+
+### Example of using format
+
+```typescript
+import { valueFormatter } from "powerbi-visuals-utils-formattingutils";
+
+const value = 12
+const format = '¥ #,0'
+valueFormatter.format(value, format);
+
+// returns: formatted value as string (¥ 12)
+```
+
 ## Next steps
 
 [Add the local language to your Power BI visual](localization.md)  

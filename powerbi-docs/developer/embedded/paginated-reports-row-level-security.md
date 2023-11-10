@@ -44,7 +44,7 @@ You can use **UserId** as a *filter* or in a *query* to the data source.
 
 ### Filter the data
 
-1. In the **Dataset Properties** window, from the left pane, select **Filter**.
+1. In the **Semantic model Properties** window, from the left pane, select **Filter**.
 
     ![Screenshot of the Power BI Report Builder filter.](media/paginated-reports-row-level-security/filter.png)
 
@@ -64,13 +64,13 @@ You can use **UserId** as a *filter* or in a *query* to the data source.
 
     ![Power BI Report Builder UserID](media/paginated-reports-row-level-security/userid.png)
 
-6. In the **Dataset Properties** window, verify that the expression is *your selected parameter = UserID*, and click **OK**.
+6. In the **Semantic model Properties** window, verify that the expression is *your selected parameter = UserID*, and click **OK**.
 
-    ![Power BI Report Builder dataset properties](media/paginated-reports-row-level-security/verify.png)
+    ![Power BI Report Builder semantic model properties](media/paginated-reports-row-level-security/verify.png)
 
 ### Using a query
 
-1. In the **Dataset Properties** window, from the left navigation pane, select **Parameters** and click **Add**.
+1. In the **Semantic model Properties** window, from the left navigation pane, select **Parameters** and click **Add**.
 
     ![Power BI Report Builder parameters](media/paginated-reports-row-level-security/parameters.png)
 

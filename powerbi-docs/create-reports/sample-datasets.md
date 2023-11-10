@@ -21,8 +21,8 @@ Power BI offers different kinds of samples for different purposes. There are bui
 
 - The [Sales & Returns sample](#sales--returns-sample-pbix-file) Power BI report (*.pbix* file). You can view it in the Data Stories Gallery, open and explore it in Power BI Desktop, or upload it to the Power BI service.
 - The [Artificial Intelligence sample](sample-artificial-intelligence.md) Power BI report. In the report, explore the Power BI artificial intelligence features such as key influencers, root-cause analysis in a decomposition tree, and anomaly detection. Select **Learn** in the Power BI service navigation pane to download a copy from the **Learning Center**.
-- A [sample template app](sample-sales-marketing-template-app.md). Download it from AppSource, also right in the Power BI service. Template apps include dashboards, reports, and datasets. You can modify them, then distribute them to your colleagues.
-- [Eight original built-in samples](#eight-original-samples) in the Power BI service, with dashboards, reports, and datasets. You install them right in the Power BI service. The built-in samples are also available as Power BI reports (*.pbix*) and Excel workbooks (*.xlsx*).
+- A [sample template app](sample-sales-marketing-template-app.md). Download it from AppSource, also right in the Power BI service. Template apps include dashboards, reports, and semantic models. You can modify them, then distribute them to your colleagues.
+- [Eight original built-in samples](#eight-original-samples) in the Power BI service, with dashboards, reports, and semantic models. You install them right in the Power BI service. The built-in samples are also available as Power BI reports (*.pbix*) and Excel workbooks (*.xlsx*).
 - [Excel workbook](#download-sample-excel-files) versions of the built-in samples, containing the data model. Explore the data model in the Power Pivot add-in for Excel or use the Excel workbook as a data source for a Power BI report.
 - A [Financial data sample workbook](sample-financial-download.md), a simple flat table in an Excel file available for download. It contains anonymized data with fictitious products, with sales divided by segments and countries/regions. It makes a useful basic data source for a Power BI report.
 - An Excel workbook version of the [AdventureWorks dimensional model](desktop-dimensional-model-report.md), in a tutorial to walk you through creating a Power BI report with the data.
@@ -47,7 +47,7 @@ You can explore it these ways:
 
 ## Updated samples
 
-There are revised versions of some of the original samples. These new versions take the original datasets and incorporate the latest visualizations.
+There are revised versions of some of the original samples. These new versions take the original semantic models and incorporate the latest visualizations.
 
 - Competitive Marketing Analysis. Take a tour of the [Competitive Marketing Analysis](sample-competitive-marketing-analysis.md) sample.
 - Corporate Spend. Take a tour of the [Corporate Spend](sample-corporate-spend.md) sample.
@@ -162,7 +162,7 @@ This industry sample focuses on one of the typical supply chain challenges: supp
 
 ## Install built-in samples
 
-Let's start with the *built-in samples*. The built-in samples are available in the Power BI service. You don't have to leave Power BI to find them. These samples are each a bundle of one or more dashboards, datasets, and reports that you can use with the Power BI service. These built-in samples aren't available for Power BI Desktop.
+Let's start with the *built-in samples*. The built-in samples are available in the Power BI service. You don't have to leave Power BI to find them. These samples are each a bundle of one or more dashboards, semantic models, and reports that you can use with the Power BI service. These built-in samples aren't available for Power BI Desktop.
 
 1. Open the Power BI service (`app.powerbi.com`) and sign in.
 
@@ -176,7 +176,7 @@ Let's start with the *built-in samples*. The built-in samples are available in t
 
 1. Select the sample. It opens in Reading mode.
 
-1. Power BI imports the built-in sample. It adds a new report, and dataset to **My workspace**. Some samples also include a dashboard. Use the samples to take Power BI for a test run.  
+1. Power BI imports the built-in sample. It adds a new report, and semantic model to **My workspace**. Some samples also include a dashboard. Use the samples to take Power BI for a test run.  
 
    :::image type="content" source="media/sample-datasets/power-bi-retail-analysis-workspace.png" alt-text="Screenshot shows the new content in a workspace." lightbox="media/sample-datasets/power-bi-retail-analysis-workspace.png" border="true":::
 
@@ -235,7 +235,7 @@ Each of the built-in samples is also available as an Excel workbook. The Excel w
 1. Save the downloaded file. Where you save the file makes a difference.
 
    - :::image type="icon" source="media/sample-datasets/power-bi-local-file2.png"::: **Local**: If you save your file to a local drive on your computer, you can publish the files to Power BI from Excel. After you've published it, there's no remaining relationship between your local file and the file in the Power BI service.
-   - :::image type="icon" source="media/sample-datasets/power-bi-onedrive-file.png"::: **OneDrive - Business**: If you have OneDrive for work or school and you sign in with the same account as Power BI, you can easily keep your work in your Excel file in sync with Power BI. Power BI and OneDrive are both in the cloud. Power BI connects to your file on OneDrive about every hour. If Power BI detects any changes to the files in OneDrive, it automatically updates your datasets, reports, and dashboards in the Power BI service.
+   - :::image type="icon" source="media/sample-datasets/power-bi-onedrive-file.png"::: **OneDrive - Business**: If you have OneDrive for work or school and you sign in with the same account as Power BI, you can easily keep your work in your Excel file in sync with Power BI. Power BI and OneDrive are both in the cloud. Power BI connects to your file on OneDrive about every hour. If Power BI detects any changes to the files in OneDrive, it automatically updates your semantic models, reports, and dashboards in the Power BI service.
    - :::image type="icon" source="media/sample-datasets/save-sharepoint-logo.png"::: **SharePoint team sites**: Saving your Power BI files to SharePoint team sites is much the same as saving to OneDrive for work or school. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
 1. You can use the files as [data sources in Power BI Desktop](../connect-data/service-excel-workbook-files.md), or **Publish to Power BI** from Excel to the Power BI service. When you publish, choose one of these options:
@@ -245,7 +245,7 @@ Each of the built-in samples is also available as an Excel workbook. The Excel w
 
 ### Explore Excel samples in Excel
 
-Want to understand how the data in these Excel workbooks gets converted to Power BI datasets and reports? Opening the Excel samples *in Excel* and exploring the worksheets provides some of the answers.
+Want to understand how the data in these Excel workbooks gets converted to Power BI semantic models and reports? Opening the Excel samples *in Excel* and exploring the worksheets provides some of the answers.
 
 - When you first open a sample workbook in Excel, you might see two warnings. The first warning says the workbook is in Protected View. Select **Enable Editing**. The second warning might say that the workbook has external data connections. Select **Enable Content**.
 - There's only one Excel sheet, the Info sheet. It provides information about obviEnce, the company that created the sample, and explains how to see the data in Power Pivot.

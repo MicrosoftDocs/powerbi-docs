@@ -19,7 +19,7 @@ The API keeps track of user selections and which data points to display. The dat
 
 This API is useful in the following scenarios:
 
-* For custom visuals that use datasets with group on keys
+* For custom visuals that use semantic models with group on keys
 * Migrating visuals that used an older API (earlier than 2.2) to a newer API
 * Allow selections using identifying index arrays
 
@@ -43,7 +43,7 @@ For example, if the visual received the following data view update:
 
 The array is of type number[] and it contains the identity fields of the items that the user selected.
 
-The identityIndex corresponds to the index of the value in the dataset's value array (see the following example).
+The identityIndex corresponds to the index of the value in the semantic model's value array (see the following example).
 
 :::image type="content" source="./media/identity-filter-api/array-values.png" alt-text="Screenshot showing array values of names.":::
 
