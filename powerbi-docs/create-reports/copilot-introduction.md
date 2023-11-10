@@ -77,7 +77,6 @@ We always welcome your feedback about our products, but especially during public
 - [Create a report with Copilot for Power BI](copilot-create-report.md)
 - [Write Copilot prompts that produce results](copilot-prompts.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
-- [Create a quick page summary with Copilot for the Power BI service](copilot-summarize-page.md)
 - Frequently asked questions about Copilot for Power BI and Fabric(/fabric/get-started/copilot-faq-fabric)
 - "How Copilot works: Privacy, security, and responsible use for Copilot" article in the Fabric documentation (/fabric/get-started/copilot-privacy-security)
 - "Copilot tenant settings (preview)" article in the Fabric documentation (/fabric/admin/service-admin-portal-copilot)

@@ -22,6 +22,7 @@ Before you start using Copilot with your semantic model, evaluate your data. You
 The following table lists the criteria will help you create accurate reports with Copilot. These items are recommendations that can help in generating accurate Power BI reports.  
 
 |Element  | Consideration  | Description  | Example  |
+|---------|---------|---------|-----|
 |Table Linking  | Define Clear Relationships  | Ensure that all relationships between tables are clearly defined and logical, indicating which are one-to-many, many-to-one, or many-to-many.  | "Sales" table connected to "Date" table by "DateID" field.  |
 |Measures  | Standardized Calculation Logic  | Measures should have standardized, clear calculation logic that is easy to explain and understand.  | "Total Sales" calculated as the sum of "SaleAmount" from the "Sales" table.  |
 |Measures  | Naming Conventions  | Names for measures should clearly reflect their calculation and purpose.  | Use "Average_Customer_Rating" instead of "AvgRating".  |
@@ -37,7 +38,6 @@ The following table lists the criteria will help you create accurate reports wit
 |Refresh Schedules  | Transparent and Scheduled  | Clearly communicate the refresh schedules of the data to ensure users understand the timeliness of the data they are analyzing.  | Indicate if the data is real-time, daily, weekly, etc.  |
 |Security  | Role-Level Definitions  | Define security roles for different levels of data access if there are sensitive elements that not all users should see.  | Sales team members can see sales data but not HR data.  |
 |Metadata  | Documentation of Structure  | Document the structure of the data model, including tables, columns, relationships, and measures, for reference.  | A data dictionary or model diagram provided as a reference.  |
-
 
 ## Next steps
 

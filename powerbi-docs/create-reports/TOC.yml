@@ -110,8 +110,6 @@
           href: copilot-prompts.md
         - name: Create a narrative summary visual of a page
           href: copilot-create-narrative.md
-        - name: Create a quick summary of a page
-          href: copilot-summarize-page.md
     - name: Enable automatic page refresh
       href: desktop-automatic-page-refresh.md
     - name: Examine report elements with Performance Analyzer
