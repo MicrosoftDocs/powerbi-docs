@@ -80,4 +80,4 @@ We always welcome your feedback about our products, but especially during public
 - Frequently asked questions about Copilot for Power BI and Fabric(/fabric/get-started/copilot-faq-fabric)
 - "How Copilot works: Privacy, security, and responsible use for Copilot" article in the Fabric documentation (/fabric/get-started/copilot-privacy-security)
 - "Copilot tenant settings (preview)" article in the Fabric documentation (/fabric/admin/service-admin-portal-copilot)
-- Enhance Q&A with Copilot for Power BI (../natural-language/q-and-a-copilot-enhancements.md)
+- [Enhance Q&A with Copilot for Power BI](../natural-language/q-and-a-copilot-enhancements.md)

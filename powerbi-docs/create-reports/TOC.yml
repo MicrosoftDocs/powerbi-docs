@@ -100,9 +100,9 @@
           href: jupyter-quick-report.md
     - name: Copilot for Power BI
       items: 
-        - name: Introduction to Copilot for Power BI
+        - name: Intro to Copilot for Power BI
           href: copilot-introduction.md
-        - name: Update your data model to work well with Copilot
+        - name: Update a data model to work with Copilot
           href: copilot-evaluate-data.md
         - name: Create a report with Copilot
           href: copilot-create-report.md
@@ -110,6 +110,8 @@
           href: copilot-prompts.md
         - name: Create a narrative summary visual of a page
           href: copilot-create-narrative.md
+        - name: Enhance Q&A with Copilot
+          href: ../natural-language/q-and-a-copilot-enhancements.md
     - name: Enable automatic page refresh
       href: desktop-automatic-page-refresh.md
     - name: Examine report elements with Performance Analyzer
