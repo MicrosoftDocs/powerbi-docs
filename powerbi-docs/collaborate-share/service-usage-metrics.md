@@ -18,7 +18,7 @@ Usage metrics help you understand the impact of your dashboards and reports. Whe
 
 Interested in the new usage report? It's currently in preview. See [Monitor usage metrics in the workspaces (preview)](service-modern-usage-metrics.md) for details.
 
-Usage metrics reports are read-only. However, you can copy a usage metrics report. Copying creates a standard Power BI report that you can edit. You can also build your own reports in Power BI Desktop based on the underlying dataset, which contains usage metrics for all dashboards or all reports in a workspace. To begin with, the copied report shows metrics just for the selected dashboard or report. You can remove the default filter and have access to the underlying dataset, with all the usage metrics of the selected workspace. You may even see the names of specific users, if your admin has allowed that.
+Usage metrics reports are read-only. However, you can copy a usage metrics report. Copying creates a standard Power BI report that you can edit. You can also build your own reports in Power BI Desktop based on the underlying semantic model, which contains usage metrics for all dashboards or all reports in a workspace. To begin with, the copied report shows metrics just for the selected dashboard or report. You can remove the default filter and have access to the underlying semantic model, with all the usage metrics of the selected workspace. You may even see the names of specific users, if your admin has allowed that.
 
 ![Screenshot showing usage metrics report.](media/service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
 
@@ -87,12 +87,12 @@ When you select **Usage metrics** or the icon ![usage metrics icon.](media/servi
 
 Usage metrics reports don't show up in **Recent**, **Workspaces**, **Favorites**, or other content lists. They can't be added to an app. If you pin a tile from a usage metrics report to a dashboard, you can't add that dashboard to an app.
 
-To dig into the report data, or to build your own reports against the underlying dataset, you have two options: 
+To dig into the report data, or to build your own reports against the underlying semantic model, you have two options: 
 
 - Make a copy of the report in the Power BI service. See [Save a copy of the Usage Metrics report](#save-a-copy-of-the-usage-metrics-report) later in this article for details.
-- Connect to the dataset from Power BI Desktop. For every workspace, the dataset has the name "Report Usage Metrics Model." See [Establish a connection to a published dataset](../connect-data/desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
+- Connect to the semantic model from Power BI Desktop. For every workspace, the semantic model has the name "Report Usage Metrics Model." See [Establish a connection to a published semantic model](../connect-data/desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-semantic-model) for details.
 
-    ![Screenshot showing Connect to a usage report dataset.](media/service-usage-metrics/power-bi-usage-dataset.png)
+    ![Screenshot showing Connect to a usage report semantic model.](media/service-usage-metrics/power-bi-usage-dataset.png)
 
 ## Which metrics are reported?
 
@@ -113,7 +113,7 @@ To dig into the report data, or to build your own reports against the underlying
 
 ## Save a copy of the Usage Metrics report
 
-Use **Save as** to convert the usage metrics report to a regular Power BI report that you can customize to meet your specific needs. Better yet, the underlying dataset includes the usage details for all dashboards or reports in the workspace. This opens up more possibilities. You could, for example, create a report that compares the dashboards in your workspace, based on usage. Or you could create a usage metrics dashboard for your Power BI app by aggregating usage across all the content distributed within that app.  See how to remove the filter and [see all usage metrics for the workspace](#see-all-workspace-usage-metrics) later in this article.
+Use **Save as** to convert the usage metrics report to a regular Power BI report that you can customize to meet your specific needs. Better yet, the underlying semantic model includes the usage details for all dashboards or reports in the workspace. This opens up more possibilities. You could, for example, create a report that compares the dashboards in your workspace, based on usage. Or you could create a usage metrics dashboard for your Power BI app by aggregating usage across all the content distributed within that app.  See how to remove the filter and [see all usage metrics for the workspace](#see-all-workspace-usage-metrics) later in this article.
 
 ### Create a copy of the usage report
 
@@ -131,10 +131,10 @@ When you create a copy of the read-only, pre-built usage report, Power BI create
     
 ### Create a custom report in Power BI Desktop
 
-You can use Power BI Desktop to build custom usage metrics reports based on the underlying dataset. See [Establish a connection to a published dataset](../connect-data/desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details. 
+You can use Power BI Desktop to build custom usage metrics reports based on the underlying semantic model. See [Establish a connection to a published semantic model](../connect-data/desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-semantic-model) for details. 
 
 > [!NOTE]
-> Power BI Desktop uses a Live Connection to the Report Usage Metrics Model dataset. This cannot be changed to DirectQuery since the dataset is owned by Power BI. Attempting to do so will result in an error in Power BI Desktop.
+> Power BI Desktop uses a Live Connection to the Report Usage Metrics Model semantic model. This cannot be changed to DirectQuery since the semantic model is owned by Power BI. Attempting to do so will result in an error in Power BI Desktop.
 
 ## See *all* workspace usage metrics
 

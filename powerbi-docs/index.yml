@@ -182,7 +182,7 @@ conceptualContent:
               text: Design reports for accessibility
             - url: paginated-reports/report-builder-shared-datasets.md
               itemType: concept
-              text: Create a paginated report based on a shared dataset
+              text: Create a paginated report based on a shared semantic model
             - url: create-reports/power-bi-customize-button.md
               itemType: how-to-guide
               text: Customize buttons in reports

@@ -71,7 +71,7 @@ landingContent:
         links:
           - text: "Data refresh"
             url: refresh-data.md
-          - text: "Incremental refresh for datasets"
+          - text: "Incremental refresh for semantic models"
             url: ../connect-data/incremental-refresh-overview.md
       - linkListType: how-to-guide
         links:

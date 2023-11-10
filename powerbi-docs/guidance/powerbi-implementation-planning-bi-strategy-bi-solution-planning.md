@@ -23,7 +23,7 @@ This article helps you to plan solutions that support your business intelligence
 A BI strategy is a plan to implement, use, and manage data and analytics. You define your BI strategy by starting with [BI strategic planning](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md). Strategic planning helps you to identify your BI goals and priorities. To determine the path to progress toward your BI goals, you describe specific objectives by using [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md). You then achieve progress toward your BI objectives by planning and deploying BI solutions.
 
 > [!NOTE]
-> In this series, we define _solutions_ as processes or tools built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a data lakehouse, a Power BI dataset or report.
+> In this series, we define _solutions_ as processes or tools built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a data lakehouse, a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) or report.
 
 There are many approaches to plan and implement BI solutions. This article describes one approach that you can take to plan and implement BI solutions that support your BI strategy.
 

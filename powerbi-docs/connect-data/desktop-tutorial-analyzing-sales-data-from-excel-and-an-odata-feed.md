@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial
-ms.date: 02/09/2023
+ms.date: 11/10/2023
 LocalizationGroup: Learn more
 ---
 # Tutorial: Analyze sales data from Excel and an OData feed
@@ -19,7 +19,7 @@ In this tutorial, you combine data from two data sources:
 * An Excel workbook with product information
 * An OData feed containing orders data
 
-You're going to import each dataset and do transformation and aggregation operations. Then, you can use the two source's data to produce a sales analysis report with interactive visualizations. Later, apply these techniques to SQL Server queries, CSV files, and other data sources in Power BI Desktop.
+You're going to import each semantic model and do transformation and aggregation operations. Then, you can use the two source's data to produce a sales analysis report with interactive visualizations. Later, apply these techniques to SQL Server queries, CSV files, and other data sources in Power BI Desktop.
 
 >[!NOTE]
 >In Power BI Desktop, there are often a few ways to accomplish a task. For example, you can right-click or use a **More options** menu on a column or cell to see more ribbon selections. Several alternate methods are described in the following steps.
@@ -185,11 +185,11 @@ Once the data is loaded, the queries appear in the **Fields** list in the Power 
 
 :::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/queries-in-fields-list.png" alt-text="Screenshot that shows the Fields list."::: 
 
-## Manage the relationship between the datasets
+## Manage the relationship between the semantic models
 
-Power BI Desktop doesn't require you to combine queries to report on them. However, you can use the relationships between datasets, based on common fields, to extend, and enrich your reports. Power BI Desktop may detect relationships automatically, or you can create them in the Power BI Desktop **Manage Relationships** dialog box. For more information, see [Create and manage relationships in Power BI Desktop](../transform-model/desktop-create-and-manage-relationships.md).
+Power BI Desktop doesn't require you to combine queries to report on them. However, you can use the relationships between semantic models, based on common fields, to extend, and enrich your reports. Power BI Desktop may detect relationships automatically, or you can create them in the Power BI Desktop **Manage Relationships** dialog box. For more information, see [Create and manage relationships in Power BI Desktop](../transform-model/desktop-create-and-manage-relationships.md).
 
-The shared `ProductID` field creates a relationship between this tutorial's `Orders` and `Products` datasets.
+The shared `ProductID` field creates a relationship between this tutorial's `Orders` and `Products` semantic models.
 
 1. In Power BI Desktop **Report** view, select **Manage relationships** in the **Modeling** ribbon tab's **Relationships** area.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 12/21/2022
+ms.date: 11/10/2023
 LocalizationGroup: Model your data
 ---
 # Create and manage relationships in Power BI Desktop
@@ -230,7 +230,7 @@ There are three options that can be selected and enabled:
 
 * **Import relationships from data sources on first load**: This option is selected by default. When it's selected, Power BI checks for relationships defined in your data source, such as foreign key/primary key relationships in your data warehouse. If such relationships exist, they're mirrored into the Power BI data model when you initially load data. This option enables you to quickly begin working with your model, rather than requiring you find or define those relationships yourself.
 
-* **Update or delete relationships when refreshing data**: This option is unselected by default. If you select it, Power BI checks for changes in data source relationships when your dataset is refreshed. If those relationships changed or are removed, Power BI mirrors those changes in its own data model, updating or deleting them to match.
+* **Update or delete relationships when refreshing data**: This option is unselected by default. If you select it, Power BI checks for changes in data source relationships when your semantic model is refreshed. If those relationships changed or are removed, Power BI mirrors those changes in its own data model, updating or deleting them to match.
 
    > [!WARNING]
    > If you're using row-level security that relies on the defined relationships, we don't recommend selecting this option. If you remove a relationship that your RLS settings rely on, your model might become less secure.

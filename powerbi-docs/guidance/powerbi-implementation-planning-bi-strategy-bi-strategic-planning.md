@@ -27,7 +27,7 @@ In short, this article describes how you can perform strategic planning to defin
 > [!NOTE]
 > In this series, we define _goals_ as high-level descriptions of what you want to achieve. In contrast, _objectives_ are specific, actionable targets that help you achieve a goal. While a goal describes the desired future state, objectives describe the path to get there.
 >
-> Further, we define _solutions_ as processes or tools built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a data lakehouse, a Power BI dataset or report.
+> Further, we define _solutions_ as processes or tools built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a data lakehouse, a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) or report.
 
 The following high-level diagram depicts how to conduct BI strategic planning.
 

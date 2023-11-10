@@ -42,7 +42,7 @@ You don't need a Power BI license to explore the sample in Power BI Desktop. You
 
 1. Select the sample. It opens in Reading mode.
 
-1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
+1. Power BI imports the built-in sample, adding a new dashboard, report, and semantic model to your current workspace.
 
     :::image type="content" source="media/sample-supplier-quality/supplier-quality-entry.png" alt-text="Screenshot that shows the Opportunity Analysis sample entries in the workspace.":::
 
@@ -76,7 +76,7 @@ If you want to get and use the Excel file in the Power BI service, follow these 
 
    There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
 
-1. In the Power BI service, the exported data appears as a dataset in the selected workspace. Select **More options** (...) > **Auto-create report**.
+1. In the Power BI service, the exported data appears as a semantic model in the selected workspace. Select **More options** (...) > **Auto-create report**.
 
 1. Select **Save**, enter a name for your report, and then choose **Save**.
 

@@ -45,9 +45,9 @@ You can get the data for this tutorial using one of two methods.
 
 ### Get data in Power BI Desktop
 
-When you open Power BI Desktop, select **Try a sample dataset** from the blank canvas.
+When you open Power BI Desktop, select **Try a sample semantic model** from the blank canvas.
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Try a sample dataset on the canvas."::: 
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Try a sample semantic model on the canvas."::: 
 
 If you've landed on this tutorial from Power BI Desktop, go ahead and choose **Load data**.
 

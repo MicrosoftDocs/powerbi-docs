@@ -52,7 +52,7 @@ Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's ta
 
     :::image type="content" source="./media/end-user-experience/power-bi-my-workspace-new.png" alt-text="Screenshot shows the Power BI screen with a red border around My workspace.":::
 
-    The sample includes one report, one dashboard, and one dataset. Most content shared with business users doesn't include direct access to the underlying datasets, but the samples, which are designed for all users, include datasets.
+    The sample includes one report, one dashboard, and one semantic model. Most content shared with business users doesn't include direct access to the underlying semantic models, but the samples, which are designed for all users, include semantic models.
 
 
 ## View workspace content
@@ -60,7 +60,7 @@ The sample content is organized within the context of a workspace. Every busines
 
 **My workspace** stores all of the content that you own and create. Think of it as your personal sandbox or work area for your own content. Any sample data that you download from the Power BI Learning Center, is saved in your **My workspace**. 
 
-A workspace is much more than a simple listing of content. On this page, you can learn a lot about the workspace's dashboards, reports, and datasets. Workspace owners assign permissions to content in a workspace. Your permissions may allow you to take **More actions (...)** on the content in a workspace. Since we're using sample content that is saved in your **My workspace**, you have owner-level permissions by default.
+A workspace is much more than a simple listing of content. On this page, you can learn a lot about the workspace's dashboards, reports, and semantic models. Workspace owners assign permissions to content in a workspace. Your permissions may allow you to take **More actions (...)** on the content in a workspace. Since we're using sample content that is saved in your **My workspace**, you have owner-level permissions by default.
 
 ![Screenshot showing App workspace screen with More actions menu displayed for the report.](./media/end-user-experience/power-bi-more-action.png)
 
@@ -163,11 +163,11 @@ And we'll end this tutorial with a helpful tip. If you have questions about a da
 :::image type="content" source="./media/end-user-experience/power-bi-owner.png" alt-text="Screenshot showing the title menu where contact information is.":::
 
 ## Clean up resources
-You can now delete the sample report, dashboard, and dataset from your **My workspace** if you wish.   
+You can now delete the sample report, dashboard, and semantic model from your **My workspace** if you wish.   
 
 1. Open the Power BI service (app.powerbi.com) and select **My workspace**.  
 
-3. Hover over the report and select **More options (...)** > **Delete**. Repeat to remove the dashboard and dataset.
+3. Hover over the report and select **More options (...)** > **Delete**. Repeat to remove the dashboard and semantic model.
 
    :::image type="content" source="./media/end-user-experience/power-bi-delete.png" alt-text="Screenshot showing the more options dropdown on the My workspace page.":::
 

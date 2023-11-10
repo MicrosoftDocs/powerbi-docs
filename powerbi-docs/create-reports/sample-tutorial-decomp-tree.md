@@ -15,7 +15,7 @@ LocalizationGroup: Samples
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In this tutorial, you start with a built-in Power BI sample dataset and create a report with a *decomposition tree*. A decomposition tree is an interactive visual for ad hoc exploration and conducting root cause analysis. It's also an artificial intelligence (AI) visualization. You can ask it to find the next category, or *dimension*, to drill down into based on certain criteria. For more information, see [Create and view decomposition tree visuals in Power BI](../visuals/power-bi-visualization-decomposition-tree.md).
+In this tutorial, you start with a built-in Power BI sample semantic model and create a report with a *decomposition tree*. A decomposition tree is an interactive visual for ad hoc exploration and conducting root cause analysis. It's also an artificial intelligence (AI) visualization. You can ask it to find the next category, or *dimension*, to drill down into based on certain criteria. For more information, see [Create and view decomposition tree visuals in Power BI](../visuals/power-bi-visualization-decomposition-tree.md).
 
 :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-final.png" alt-text="Screenshot shows the completed decomposition tree." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-final.png":::
 
@@ -46,19 +46,19 @@ To open a Power BI *.pbix* file, you need to [get Power BI Desktop](../fundament
 
 1. Select the sample. It opens in Reading mode.
 
-1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
+1. Power BI imports the built-in sample, adding a new dashboard, report, and semantic model to your current workspace.
 
-### Create a report from the dataset
+### Create a report from the semantic model
 
-On the **Datasets + dataflows** tab, you have several options for exploring your dataset. In this tutorial, you're going to explore the dataset by creating your own report from scratch.
+On the **Semantic models + dataflows** tab, you have several options for exploring your semantic model. In this tutorial, you're going to explore the semantic model by creating your own report from scratch.
 
-:::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot shows the Retail Analysis Sample dataset entry." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png":::
+:::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot shows the Retail Analysis Sample semantic model entry." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png":::
 
 1. Select **More options** (**...**) > **Create report**.
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png" alt-text="Screenshot shows the Create report menu item.":::
 
-   The dataset opens in report editing mode.
+   The semantic model opens in report editing mode.
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png" alt-text="Screenshot shows a brand-new report in edit mode." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png":::
 
