@@ -35,17 +35,17 @@ highlightedContent:
       itemType: get-started
       url: /fabric/get-started/microsoft-fabric-overview
     # Card
-    - title: New name for Power BI datasets
+    - title: "Power BI Premium features"
       itemType: concept
-      url: connect-data/service-datasets-rename.md
+      url: enterprise/service-premium-features.md
     # Card
     - title: Get started with DAX
       itemType: training
       url: /training/paths/dax-power-bi/?WT.mc_id=powerbi_landingpage-docs-link
     # Card
-    - title: "Power BI Premium features"
+    - title: New name for Power BI datasets
       itemType: concept
-      url: enterprise/service-premium-features.md
+      url: connect-data/service-datasets-rename.md
     # Card
     - title: Edit data models in the Power BI service
       itemType: how-to-guide
