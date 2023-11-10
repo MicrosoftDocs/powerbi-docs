@@ -82,17 +82,17 @@ In previous versions of the Power BI service, you access the **Get data** featur
 
 :::image type="content" source="../create-reports/media/service-experience-changes/experience-old-get-data.png" alt-text="Screenshot that shows the Get Data link at the bottom of the navigation pane.":::
 
-The new process for loading data into Power BI is now centered on the **Create** page. On this page, you can choose to enter your data or select from existing datasets. There's also an option to help you build your first report.
+The new process for loading data into Power BI is now centered on the **Create** page. On this page, you can choose to enter your data or select from existing semantic models. There's also an option to help you build your first report.
 
 :::image type="content" source="../create-reports/media/service-experience-changes/experience-new-get-data.png" alt-text="Screenshot showing the new experience for loading data in the Power BI service." border="false":::
 
-The **Paste or manually enter data** option lets you copy and paste data into a Power Query table, or enter data manually. After the data is present, you can create a report or dataset.
+The **Paste or manually enter data** option lets you copy and paste data into a Power Query table, or enter data manually. After the data is present, you can create a report or semantic model.
 
 :::image type="content" source="../create-reports/media/service-experience-changes/experience-manual-data-entry.png" alt-text="Screenshot that shows the Power Query UX for adding data manually in the Power BI service." border="false":::
 
-The **Pick a published dataset** option opens the **OneLake data hub** so you can browse available datasets. Choose a dataset and the type of report to create.
+The **Pick a published semantic model** option opens the **OneLake data hub** so you can browse available semantic models. Choose a semantic model and the type of report to create.
 
-:::image type="content" source="../create-reports/media/service-experience-changes/experience-choose-published-data.png" alt-text="Screenshot that shows available datasets in the OneLake data hub in the Power BI service." border="false":::
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-choose-published-data.png" alt-text="Screenshot that shows available semantic models in the OneLake data hub in the Power BI service." border="false":::
 
 The [Get started creating in the Power BI service](service-get-started.md#step-1-add-data-to-create-a-report) tutorial describes another way to load data into the Power BI service.
 

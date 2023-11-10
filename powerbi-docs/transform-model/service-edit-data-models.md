@@ -263,7 +263,6 @@ There are still many functional gaps between the model view in Power BI desktop 
 * Changing to and from the data category ‘barcode’
 * Connecting to new data sources
 * Transforming data using Power Query editor
-* Manage relationships dialog
 * View as dialog
 * Autodetect relationships
 * Q&A setup and configuration including editing synonyms

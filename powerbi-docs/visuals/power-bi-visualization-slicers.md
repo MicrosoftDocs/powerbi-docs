@@ -1,6 +1,6 @@
 ---
 title: Slicers in Power BI
-description: A Power BI slicer is an alternate way of filtering. It narrows the portion of the dataset shown in the other visualizations in a report you design.
+description: A Power BI slicer is an alternate way of filtering. It narrows the portion of the semantic model shown in the other visualizations in a report you design.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: 'mihart'
@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-Suppose you want your report readers to be able to look at overall sales metrics, but also highlight performance for individual district managers and different time frames. You could create separate reports or comparative charts. You could add filters in the Filters pane. Or you could use *slicers*. Slicers are another way of filtering. They're displayed on the report page, and narrow the portion of the dataset that's shown in the other report visualizations.
+Suppose you want your report readers to be able to look at overall sales metrics, but also highlight performance for individual district managers and different time frames. You could create separate reports or comparative charts. You could add filters in the Filters pane. Or you could use *slicers*. Slicers are another way of filtering. They're displayed on the report page, and narrow the portion of the semantic model that's shown in the other report visualizations.
 
 ![Animation of Slicer in action.](media/power-bi-visualization-slicers/slicer2.gif)
 
