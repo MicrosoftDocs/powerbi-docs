@@ -21,7 +21,7 @@ Power BI Q&A supports the following configurations of data sources in the Power 
 - Import mode
 - Live connect to Azure Analysis Services
 - Live connect to SQL Server Analysis Services (with a gateway)
-- Power BI datasets
+- Power BI semantic models
 
 In each of these configurations, row-level security is also supported.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/13/2023
+ms.date: 11/10/2023
 LocalizationGroup: Connect to data
 ---
 # Use OneDrive for work or school links in Power BI Desktop
@@ -45,7 +45,7 @@ In Power BI Desktop, you can use the link that you just copied to the clipboard.
 
    :::image type="content" source="media/desktop-use-onedrive-business-links/odb-links_06.png" alt-text="Screenshot of the Power BI Desktop credential prompt, showing Windows or Organizational account selection." border="true":::
 
-   A **Navigator** dialog appears. It allows you to select from the list of tables, sheets, and ranges found in the Excel workbook. From there, you can use the OneDrive for work or school file just like any other Excel file. You can create reports and use it in datasets like you would with any other data source.
+   A **Navigator** dialog appears. It allows you to select from the list of tables, sheets, and ranges found in the Excel workbook. From there, you can use the OneDrive for work or school file just like any other Excel file. You can create reports and use it in semantic models like you would with any other data source.
 
 > [!NOTE]
 > To use a OneDrive for work or school file as a data source in the Power BI service, with **Service Refresh** enabled for that file, make sure you select **OAuth2** as the **Authentication method** when you configure refresh settings. Otherwise, you might encounter an error when you attempt to connect or to refresh, such as, *Failed to update data source credentials*. Selecting **OAuth2** as the authentication method avoids that credentials error.

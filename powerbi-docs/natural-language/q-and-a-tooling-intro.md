@@ -46,7 +46,7 @@ Q&A tooling is only available in Power BI Desktop, and currently only supports i
 
    [![Screenshot of the Q and A Field synonyms page with fields expanded.](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-expanded.png)](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-expanded.png#lightbox)
 
-   The dialog shows all the columns, tables, and respective terms and synonyms that users can use when asking questions against the dataset. You can quickly see all the terms in one place and add or remove terms for multiple columns. 
+   The dialog shows all the columns, tables, and respective terms and synonyms that users can use when asking questions against the semantic model. You can quickly see all the terms in one place and add or remove terms for multiple columns. 
 
    - Add terms - If you have a field called sales, you might decide to add a term called revenue, so a user can use this word instead of being required to use the word sales. Select **Add** to quickly add a new term.
 
@@ -77,7 +77,7 @@ As new synonyms get shared within your organization, you can select the refresh 
 
 ## Review questions
 
-Select **Review questions** to see a list of datasets being used in the Power BI service for your tenant. The **Review questions** page also displays the dataset owner, workspace, and last refreshed date. From here, you can select a dataset and see what questions users have been asking. The data also shows words that weren't recognized. All data shown here is for the last 28 days.
+Select **Review questions** to see a list of semantic models being used in the Power BI service for your tenant. The **Review questions** page also displays the semantic model owner, workspace, and last refreshed date. From here, you can select a semantic model and see what questions users have been asking. The data also shows words that weren't recognized. All data shown here is for the last 28 days.
 
 :::image type="content" source="media/q-and-a-tooling-intro/qna-tooling-review-questions.png" alt-text="Screenshot of the Q and A Review questions page." lightbox="media/q-and-a-tooling-intro/qna-tooling-review-questions.png":::
 

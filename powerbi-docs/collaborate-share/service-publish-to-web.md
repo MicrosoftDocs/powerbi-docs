@@ -124,7 +124,7 @@ After you create your Publish to web embed code and share it, the report updates
 
 ### Data refresh
 
-Data refreshes are automatically reflected in your embedded report or visual. When data is refreshed for an import data model in the Power BI service, the service clears the data cache, making data update quickly. To disable automatic refresh, select **don't refresh** on the schedule for the dataset the report uses.  
+Data refreshes are automatically reflected in your embedded report or visual. When data is refreshed for an import data model in the Power BI service, the service clears the data cache, making data update quickly. To disable automatic refresh, select **don't refresh** on the schedule for the semantic model the report uses.  
 
 ### Heavy usage
 
@@ -149,7 +149,7 @@ The **Manage embed codes** page includes a status column. By default, embed code
 | --- | --- |
 | **Active** |The report is available for Internet users to view and interact with. |
 | **Blocked** |The report content violates the [Power BI Terms of Service](https://powerbi.microsoft.com/terms-of-service). Microsoft has blocked it. Contact support if you believe the content was blocked in error. |
-| **Not supported** |The report's dataset is using row-level security, or another unsupported configuration. See the [**Considerations and imitations**](#considerations-and-limitations) section for a complete list. |
+| **Not supported** |The report's semantic model is using row-level security, or another unsupported configuration. See the [**Considerations and imitations**](#considerations-and-limitations) section for a complete list. |
 | **Infringed** |The embed code is outside the defined tenant policy. This status typically occurs when an embed code was created and then the **Publish to web** tenant setting was changed to exclude the user owning the embed code. If the tenant setting is disabled, or the user is no longer allowed to create embed codes, existing embed codes show an **Infringed** status. See the [Find your Power BI administrator](#find-your-power-bi-administrator) section in this article for details. |
 
 ## Report a concern with Publish to web content
@@ -187,15 +187,15 @@ Publish to web is supported for the vast majority of data sources and reports in
 - Reports using row-level security.
 - Reports connecting to data using DirectQuery. Connect using composite or import mode instead. Read about the [differences between the modes](../connect-data/service-dataset-modes-understand.md).
 - Reports using any Live Connection data source, including Analysis Services Tabular hosted on-premises, Analysis Services Multidimensional, and Azure Analysis Services.
-- Reports using a [shared dataset](../connect-data/service-datasets-across-workspaces.md) that is stored in a different workspace from the report.
-- [Shared and certified datasets](../connect-data/service-datasets-share.md).
+- Reports using a [shared semantic model](../connect-data/service-datasets-across-workspaces.md) that is stored in a different workspace from the report.
+- [Shared and certified semantic models](../connect-data/service-datasets-share.md).
 - Reports shared to you directly or through an app.
 - Reports in a workspace in which you aren't an edit member.
 - "R" and Python visuals aren't currently supported in Publish to web reports.
 - Exporting data from visuals in a report that has been published to the web.
 - Q&A for Power BI visuals.
 - Reports containing report-level DAX measures.
-- Single sign-on data query models, including [composite models on Power BI datasets or Azure Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md).
+- Single sign-on data query models, including [composite models on Power BI semantic models or Azure Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md).
 - Secure confidential or proprietary information.
 - The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](../developer/embedded/embed-sample-for-your-organization.md) approach to embedding.
 - Admins can block public internet access, as described in [Private links for accessing Power BI](../enterprise/service-security-private-links.md). In that case, the Publish to Web option is grayed out for your tenant in the Power BI admin portal.

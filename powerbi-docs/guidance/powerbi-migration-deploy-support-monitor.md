@@ -37,10 +37,10 @@ If your content has been published to a workspace on Premium capacity, [deployme
 
 Key activities during a deployment to the test workspace typically include:
 
-- **Connection strings and parameters:** Adjust dataset connection strings if the data source differs between development and test. [Parameterization](../connect-data/service-parameters.md) can be used to effectively manage connection strings.
-- **Workspace content:** Publish datasets and reports to the test workspace, and create dashboards.
+- **Connection strings and parameters:** Adjust semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) connection strings if the data source differs between development and test. [Parameterization](../connect-data/service-parameters.md) can be used to effectively manage connection strings.
+- **Workspace content:** Publish semantic models and reports to the test workspace, and create dashboards.
 - **App.** Publish an [app](../consumer/end-user-apps.md) using the content from the test workspace, if it will form part of the UAT process. Usually, app permissions are restricted to a small number of people involved with UAT.
-- **Data refresh:** [Schedule the dataset refresh](../connect-data/refresh-scheduled-refresh.md) for any Import datasets for the period when UAT is actively occurring.
+- **Data refresh:** [Schedule the semantic model refresh](../connect-data/refresh-scheduled-refresh.md) for any Import semantic models for the period when UAT is actively occurring.
 - **Security:** Update or verify [workspace roles](../collaborate-share/service-roles-new-workspaces.md). Testing workspace access includes a small number of people who are involved with UAT.
 
 > [!NOTE]
@@ -83,12 +83,12 @@ Key activities during a deployment to the production workspace typically include
 
 - **Change management:** If necessary, obtain approval to deploy, and communicate deployment to the user population using your standard change management practices. There might be an approved change management window during which production deployments are allowed. Usually, it's applicable to IT-managed content and much less frequently applied to self-service content.
 - **Rollback plan:** With a migration, the expectation is that it's the migration of a new solution for the first time. If content does already exist, it's wise to have a plan to revert to the previous version, should it become necessary. Having previous versions of the Power BI Desktop files (using SharePoint or OneDrive versioning) works well for this purpose.
-- **Connection strings and parameters:** Adjust dataset connection strings when the data source differs between test and production. [Parameterization](../connect-data/service-parameters.md) can be used effectively for this purpose.
-- **Data refresh:** [Schedule the dataset refresh](../connect-data/refresh-scheduled-refresh.md) for any imported datasets.
-- **Workspace content:** Publish datasets and reports to the production workspace, and create dashboards. [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) can simplify the process to deploy to development, test, and production workspaces if your content has been published to workspaces on Premium capacity.
+- **Connection strings and parameters:** Adjust semantic model connection strings when the data source differs between test and production. [Parameterization](../connect-data/service-parameters.md) can be used effectively for this purpose.
+- **Data refresh:** [Schedule the semantic model refresh](../connect-data/refresh-scheduled-refresh.md) for any imported semantic models.
+- **Workspace content:** Publish semantic models and reports to the production workspace, and create dashboards. [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) can simplify the process to deploy to development, test, and production workspaces if your content has been published to workspaces on Premium capacity.
 - **App:** If apps are part of your content distribution strategy, publish an [app](../consumer/end-user-apps.md) using the content from the production workspace.
 - **Security:** Update and verify [workspace roles](../collaborate-share/service-roles-new-workspaces.md) based on your content distribution and collaboration strategy.
-- **Dataset settings:** Update and verify settings for each dataset, including:
+- **Semantic model settings:** Update and verify settings for each semantic model, including:
   - [Endorsement](../collaborate-share/service-endorse-content.md) (such as certified or promoted)
   - Gateway connection or data source credentials
   - Scheduled refresh

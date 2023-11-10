@@ -1,6 +1,6 @@
 ---
 title: Object-level security (OLS) with Power BI
-description: How to configure object-level security for imported datasets, within the Power BI service.
+description: How to configure object-level security for imported semantic models, within the Power BI service.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer:
@@ -18,7 +18,7 @@ Object-level security (OLS) enables model authors to secure specific tables or c
 
 Like RLS, OLS is also defined within model roles. Currently, you can't create OLS definitions natively in Power BI Desktop.
 
-To create roles on **Power BI Desktop** datasets, use [external tools](../transform-model/desktop-external-tools.md) such as [Tabular Editor](https://tabulareditor.com).  
+To create roles on **Power BI Desktop** semantic models, use [external tools](../transform-model/desktop-external-tools.md) such as [Tabular Editor](https://tabulareditor.com).  
 
 ### Configure object level security using tabular editor
 
@@ -53,9 +53,9 @@ To create roles on **Power BI Desktop** datasets, use [external tools](../transf
 6. After you define object-level security for the roles, save your changes.
   :::image type="content" source="./media/service-admin-ols/save-roles.png" alt-text="Screenshot of saving role definitions.":::
 
-7. In Power BI Desktop, publish your dataset to the Power BI Service.
+7. In Power BI Desktop, publish your semantic model to the Power BI Service.
 
-8. In the Power BI Service, navigate to the **Security** page by selecting the **more options** menu on the dataset, and assign members or groups to their appropriate roles.
+8. In the Power BI Service, navigate to the **Security** page by selecting the **more options** menu on the semantic model, and assign members or groups to their appropriate roles.
 
 The OLS rules are now defined. Users without the required permission will receive a message that the field can't be found for all report visuals using that field.
 
@@ -63,9 +63,9 @@ The OLS rules are now defined. Users without the required permission will receiv
 
 ## Considerations and limitations
 
-* OLS only applies to *Viewers* in a workspace. Workspace members assigned *Admin*, *Member*, or *Contributor* have edit permission for the dataset and, therefore, OLS doesn’t apply to them. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
+* OLS only applies to *Viewers* in a workspace. Workspace members assigned *Admin*, *Member*, or *Contributor* have edit permission for the semantic model and, therefore, OLS doesn’t apply to them. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 
-* Datasets with OLS configured for one or more table or column objects aren't supported with these Power BI features:
+* Semantic models with OLS configured for one or more table or column objects aren't supported with these Power BI features:
 
   * Q&A visualizations
   * Quick insights visualizations

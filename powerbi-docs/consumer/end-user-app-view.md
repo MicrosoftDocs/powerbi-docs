@@ -115,7 +115,7 @@ Apps have different layouts, visuals, colors, and options, but they all have mos
 
 You can explore the associated workspace if you've been given access. When you install or download a template app, the Power BI service creates a workspace for you. When you install an organizational app, it might not include access to the workspace. For more information, see [Collaborate in workspaces](end-user-workspaces.md). Select **Power BI** (number 2) to return to **Home** and choose **Workspaces**. 
 
-![Screenshot of the Sales and Marketing workspace showing one report and one dataset.](./media/end-user-app-view/power-bi-new-workspace.png)
+![Screenshot of the Sales and Marketing workspace showing one report and one semantic model.](./media/end-user-app-view/power-bi-new-workspace.png)
 
 ### Share reports and dashboards from an app
 

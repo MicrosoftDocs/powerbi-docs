@@ -24,9 +24,9 @@ To help ensure comprehensive protection and governance of sensitive data, you ca
 
 **In the Power BI service**:
 
-* Users must apply a sensitivity label before they can save new reports, dashboards, or datasets.
+* Users must apply a sensitivity label before they can save new reports, dashboards, or semantic models.
 * Users must apply a sensitivity label before they can save changes to the settings or content of existing, unlabeled reports and dashboards.
-* If users try to import data from an unlabeled *.pbix* file, a prompt requires them to select a label before the import can continue. The label they select is applied to the resulting dataset and report in the service. **It is not applied to the *.pbix* file itself**.
+* If users try to import data from an unlabeled *.pbix* file, a prompt requires them to select a label before the import can continue. The label they select is applied to the resulting semantic model and report in the service. **It is not applied to the *.pbix* file itself**.
 
 **In Power BI Desktop**:
 

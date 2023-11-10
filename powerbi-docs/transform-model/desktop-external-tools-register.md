@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 11/10/2023
 LocalizationGroup: Create reports
 ---
 
@@ -47,7 +47,7 @@ Files in that specified location with the **.pbitool.json** extension are loaded
 
 ## Example
 
-The following *.pbitool.json file launches powershell.exe from the External Tools ribbon and runs a script called pbiToolsDemo.ps1. The script passes the server name and port number in the -Server parameter and the dataset name in the -Database parameter.
+The following *.pbitool.json file launches powershell.exe from the External Tools ribbon and runs a script called pbiToolsDemo.ps1. The script passes the server name and port number in the -Server parameter and the semantic model name in the -Database parameter.
 
 ```json
 { 

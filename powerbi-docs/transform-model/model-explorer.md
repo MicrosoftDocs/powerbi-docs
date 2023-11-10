@@ -1,13 +1,13 @@
 ---
 title: Use Model explorer in Power BI (preview)
-description: Learn how to use Model explorer to see and work with complex datasets in a visual format in Power BI.
+description: Learn how to use Model explorer to see and work with complex semantic models in a visual format in Power BI.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 10/10/2023
+ms.date: 11/10/2023
 LocalizationGroup: Transform and shape data
 ---
 

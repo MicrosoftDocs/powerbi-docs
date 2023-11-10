@@ -151,7 +151,7 @@ You can create your paginated report using [Power BI Report Builder](../../pagin
 
 Follow the steps in the [embed content for your customers](embed-sample-for-customers.md) tutorial. Skip [Step 4 - Create and publish a Power BI report](embed-sample-for-customers.md#step-4---create-and-publish-a-power-bi-report) and work with the paginated report you uploaded, instead of the sample report suggested in the tutorial.
 
-* To use a **Power BI dataset** as a data source:
+* To use a **Power BI semantic model** as a data source:
 
   * Make sure the tenant setting [*Allow XMLA endpoints and Analyze in Excel with on-premises datasets*](../../enterprise/service-premium-connect-tools.md#security) is enabled.
   * In the Power BI portal, set the **XMLA endpoint** to *Read Only* or *Read Write* as described in [enable read-write for a Premium capacity](/power-bi/enterprise/service-premium-connect-tools#to-enable-read-write-for-a-premium-capacity). You only need to set up the endpoint once per capacity.
@@ -159,7 +159,7 @@ Follow the steps in the [embed content for your customers](embed-sample-for-cust
 
 * To use a **single sign-on (SSO)** enabled data source:
 
-  * Power BI supports SSO-enabled data sources if the data sources directly connect to the paginated report or connect to a Power BI dataset that's the data source of the paginated report.
+  * Power BI supports SSO-enabled data sources if the data sources directly connect to the paginated report or connect to a Power BI semantic model that's the data source of the paginated report.
   * When you embed a paginated report with SSO-enabled data sources, you must provide the identity blob for the data source in the [`DatasourceIdentity`](/rest/api/power-bi/embed-token/generate-token#datasourceidentity) at the time you generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token).
 
 ### [Embed for your organization](#tab/organization)
@@ -179,9 +179,9 @@ For more information on embedding tokens, see [Embedded analytics access tokens]
 * For a full list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md#natively-supported-data-sources).
 * You must use a **service principal**. You can't have a master user.
 * You can't work with a [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
-* When you embed a paginated report with a Power BI dataset, two conditions apply:
-  * The paginated report and the Power BI dataset must reside in a Premium per capacity or Embedded workspace (they can reside in two different workspaces).
-  * The person who generates the embed token must have *Write* permissions in the workspaces of both the report and the dataset.
+* When you embed a paginated report with a Power BI semantic model, two conditions apply:
+  * The paginated report and the Power BI semantic model must reside in a Premium per capacity or Embedded workspace (they can reside in two different workspaces).
+  * The person who generates the embed token must have *Write* permissions in the workspaces of both the report and the semantic model.
 * You can't currently embed a paginated report connected to Azure Analysis Services with single sign-on (SSO) enabled.
 
 ### [Embed for your organization limitations](#tab/organization)
