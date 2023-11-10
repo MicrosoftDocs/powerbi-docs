@@ -35,9 +35,9 @@ highlightedContent:
       itemType: get-started
       url: /fabric/get-started/microsoft-fabric-overview
     # Card
-    - title: Export Power BI embedded analytics reports API
+    - title: New name for Power BI datasets
       itemType: concept
-      url: developer/embedded/export-to.md
+      url: connect-data/service-datasets-rename.md
     # Card
     - title: Get started with DAX
       itemType: training
