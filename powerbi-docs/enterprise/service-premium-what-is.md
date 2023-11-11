@@ -30,8 +30,6 @@ The following table lists some of the Premium enhancements.
 
 [!INCLUDE [capacity and SKUs](../includes/capacity-and-skus.md)]
 
-The table below describes the resources and limits of each SKU.
-
 [!INCLUDE [Power BI capacity and SKUs](../includes/capacity-table.md)]
 
 ## Subscriptions and licensing
