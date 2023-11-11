@@ -27,7 +27,7 @@ In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md
 
 ## How to pin a tile from Q&A
 
-1. Open a dashboard that has at least one tile pinned from a report. When you ask a question, Power BI looks for the answer in any dataset that has a tile pinned to that dashboard.
+1. Open a dashboard that has at least one tile pinned from a report. When you ask a question, Power BI looks for the answer in any semantic model that has a tile pinned to that dashboard.
 1. In the question box at the top of your dashboard, start typing what you want to know about your data.
 
    :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png" alt-text="Screenshot of the Q&A question box.":::
@@ -56,11 +56,11 @@ In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md
 
 ## Considerations and troubleshooting
 
-* When you start typing a question, Q&A immediately begins searching for the best answer from all datasets associated with the current dashboard. The "current dashboard" is the dashboard listed in the top nav pane. For example, this question is being asked in the **Retail Analysis Sample** dashboard.
+* When you start typing a question, Q&A immediately begins searching for the best answer from all semantic models associated with the current dashboard. The "current dashboard" is the dashboard listed in the top nav pane. For example, this question is being asked in the **Retail Analysis Sample** dashboard.
 
   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar-2.png" alt-text="screenshot of the tile pinned to the dashboard.":::
 
-* **How does Q&A know which datasets to use**? Q&A has access to all datasets that have at least one visualization pinned to that dashboard.
+* **How does Q&A know which semantic models to use**? Q&A has access to all semantic models that have at least one visualization pinned to that dashboard.
 
 * **Don't see the question box**? Check with your Power BI administrator. The administrator has the ability to disable Q&A.
 

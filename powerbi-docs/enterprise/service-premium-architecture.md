@@ -18,12 +18,12 @@ The most significant update in the architecture of Premium is the way capacities
 
 In the original version of Power BI Premium, v-cores were reserved physical computing nodes in the cloud, with differences in the number of v-cores and the amount of onboard memory according to the customer's licensing SKU. Customer administrators were required to keep track of how busy these nodes were, using the *Premium metrics app*. They had to use the app and other tools to determine how much capacity their users required to meet their computing needs.
 
-In Premium, v-cores are implemented on regional clusters of physical nodes in the cloud, which are shared by all tenants using Premium capacities in that Power BI region. The regional cluster is further divided into specialized groups of nodes, where each group handles a different Power BI workload (datasets, dataflows, or paginated reports). These specialized groups of nodes help avoid resource contention between fundamentally different workloads running on the same node.
+In Premium, v-cores are implemented on regional clusters of physical nodes in the cloud, which are shared by all tenants using Premium capacities in that Power BI region. The regional cluster is further divided into specialized groups of nodes, where each group handles a different Power BI workload (semantic models, dataflows, or paginated reports). These specialized groups of nodes help avoid resource contention between fundamentally different workloads running on the same node.
 
 >[!NOTE]
 >Power BI Premium provides logical segregation of data between different customers, and is compliant with ISO 27017. For more details see [ISO/IEC 27017:2015](/azure/compliance/offerings/offering-iso-27017).
 
-Administrators have the ability to [tweak and configure workload settings](service-admin-premium-workloads.md) for their capacity. This can be used to reduce resource contention between workloads (datasets, dataflows, paginated reports, and AI), and adjust other settings such as memory limits and timeouts based on the capacity usage patterns.
+Administrators have the ability to [tweak and configure workload settings](service-admin-premium-workloads.md) for their capacity. This can be used to reduce resource contention between workloads (semantic models, dataflows, paginated reports, and AI), and adjust other settings such as memory limits and timeouts based on the capacity usage patterns.
 
 The contents of workspaces assigned to a Premium capacity is stored on your organizations capacity's storage layer, which is implemented on top of capacity-specific Azure storage blob containers, similar to the original version of Premium. This approach enables features like BYOK to be used for your data.
 
@@ -31,7 +31,7 @@ When the content needs to be viewed or refreshed, it is read from the storage la
 
 As your capacity renders and refreshes more content, it uses more computation nodes, each with enough resources to complete operations fast and successfully. This means your capacity may use multiple computational nodes and in some cases, content might even move between nodes due to the Power BI service performing internal load-balancing across nodes or resources. When such load balancing occurs, Power BI makes sure content movement doesn't impact end-user experiences.
 
-There are several positive outcomes from distributing the processing of content (datasets, dataflows, paginated reports and other workloads) across multiple nodes.
+There are several positive outcomes from distributing the processing of content (semantic models, dataflows, paginated reports and other workloads) across multiple nodes.
 
 * The shared nodes are at least as large as an original Premium P3 node, which means there are more v-cores to perform any operations, which can increase performance by up to 16x when comparing to an original Premium P1.
 

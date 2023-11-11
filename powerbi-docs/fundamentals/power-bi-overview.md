@@ -40,11 +40,11 @@ How you use Power BI depends on your role in a project or on a team. Other peopl
 
 For example, you might primarily use the Power BI service to view reports and dashboards. Your number-crunching, business-report-creating coworker might make extensive use of Power BI Desktop or Power BI Report Builder to create reports, then publish those reports to the Power BI service, where you view them. Another coworker, in sales, might mainly use the Power BI Mobile app to monitor progress on sales quotas, and to drill into new sales lead details.
 
-If you're a developer, you might use Power BI APIs to push data into datasets or to embed dashboards and reports into your own custom applications. Have an idea for a new visual? Build it yourself and share it with others.  
+If you're a developer, you might use Power BI APIs to push data into semantic models or to embed dashboards and reports into your own custom applications. Have an idea for a new visual? Build it yourself and share it with others.  
 
 You also might use each element of Power BI at different times, depending on what you're trying to achieve or your role for a given project.
 
-How you use Power BI can be based on which feature or service of Power BI is the best tool for your situation. For example, you can use Power BI Desktop to create reports for your own team about customer engagement statistics and you can view inventory and manufacturing progress in a real-time dashboard in the Power BI service. You can create a paginated report of mailable invoices, based on a Power BI dataset. Each part of Power BI is available to you, which is why it's so flexible and compelling.
+How you use Power BI can be based on which feature or service of Power BI is the best tool for your situation. For example, you can use Power BI Desktop to create reports for your own team about customer engagement statistics and you can view inventory and manufacturing progress in a real-time dashboard in the Power BI service. You can create a paginated report of mailable invoices, based on a Power BI semantic model. Each part of Power BI is available to you, which is why it's so flexible and compelling.
 
 Explore documents that pertain to your role:
 
@@ -67,7 +67,7 @@ Here's a detailed [comparison of Power BI Desktop and the Power BI service](../f
 
 ### Use the deployment pipeline tool
 
-In the Power BI service, you can use the [deployment pipeline tool](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) to test your content before you release it to your users. The deployment pipeline tool can help you deploy reports, dashboards, datasets, and paginated reports. Read about how to [get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines) in the Power BI service.
+In the Power BI service, you can use the [deployment pipeline tool](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) to test your content before you release it to your users. The deployment pipeline tool can help you deploy reports, dashboards, semantic models, and paginated reports. Read about how to [get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines) in the Power BI service.
 
 ## Paginated reports in the Power BI service
 

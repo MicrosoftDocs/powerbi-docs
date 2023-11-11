@@ -141,9 +141,9 @@ To view a report in OneDrive for Business or SharePoint Online, you must:
 -	The ability to view files in Microsoft Teams isn't currently supported.
 -	B2B users and anonymous users can't view Power BI files in the browser. They're directed to download the file to their device and view it in Power BI Desktop.
 -	If the capability is turned off for your organization, the OneDrive and SharePoint file isn't copied into the Power BI service.
--	The reports and datasets created through this OneDrive and SharePoint experience are stored in special, system-generated workspaces hosted on shared capacity. Users aren't meant to access these workspaces outside of the OneDrive and SharePoint experience. 
+-	The reports and semantic models created through this OneDrive and SharePoint experience are stored in special, system-generated workspaces hosted on shared capacity. Users aren't meant to access these workspaces outside of the OneDrive and SharePoint experience. 
 
-## Dataset mode
+## Semantic model mode
 
 To view a Power BI file in OneDrive or SharePoint, the data must be in **import** mode. Files with other modes prompt you to download the file to open locally in Power BI Desktop.
 

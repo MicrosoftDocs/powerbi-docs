@@ -126,7 +126,7 @@
     - name: Import translation sheets
       href: translation-sheet-import.md
     - name: Manage enterprise-level translations
-      href: translation-manage-dataset-enterprise.md
+      href: translation-manage-data-model-enterprise.md
     - name: Implement data translation
       href: data-translation.md
     - name: Support data translations

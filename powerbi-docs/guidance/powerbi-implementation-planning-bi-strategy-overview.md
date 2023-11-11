@@ -64,7 +64,7 @@ The diagram depicts the following concepts.
 > [!NOTE]
 > In this series, _goals_ are high-level descriptions of what you want to achieve. In contrast, _objectives_ are specific, actionable targets to help you achieve a goal. While a goal describes the desired future state, objectives describe the path to get there.
 >
-> Further, _solutions_ are processes or tools built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a data lakehouse, or a Power BI dataset or report.
+> Further, _solutions_ are processes or tools built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a data lakehouse, or a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) or report.
 
 Consider the following, high-level example for a hypothetical organization.
 
@@ -145,7 +145,7 @@ To achieve their BI goals, the BI team conducts tactical planning to identify an
 In this example, the BI objectives are:
 
 - **Data literacy:** Ensure that 90 percent of the salespeople complete the data literacy program.
-- **Content ownership:** Adopt the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) usage scenario, where central teams manage central, certified Power BI datasets and reports. Some self-service content creators can connect to these datasets for their own analysis and reporting needs.
+- **Content ownership:** Adopt the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) usage scenario, where central teams manage central, certified Power BI semantic models and reports. Some self-service content creators can connect to these semantic models for their own analysis and reporting needs.
 - **Mentoring and user enablement:** Create a [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) to share [training resources](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#training-resources-and-approaches), [template files](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#template-files), and host weekly [office hours](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#office-hours) Q&A sessions.
 - **Governance:** Draft a [tenant-wide monitoring solution](powerbi-implementation-planning-auditing-monitoring-tenant-level-monitoring.md) for user activities based on data from the [Power BI activity log](/power-bi/enterprise/service-admin-auditing), and identify data democratization and data discovery priorities for the next quarter.
 - **Data engineering:** Design and start a proof of concept for a [medallion lakehouse architecture](/azure/databricks/lakehouse/medallion) to store the sales and profitability data.
@@ -157,10 +157,10 @@ In this example, the BI objectives are:
 To achieve its objectives, the organization aims to design and deploy the following BI solutions.
 
 - Central BI teams will work to store profitability data for customers and products in a unified lakehouse.
-- Central BI teams will publish an enterprise semantic model as a Power BI dataset that includes all data required for central reporting and key self-service reporting scenarios.
-- Security rules applied to the Power BI dataset enforce that salespeople can only access data for their assigned customers.
+- Central BI teams will publish an enterprise semantic model as a Power BI semantic model that includes all data required for central reporting and key self-service reporting scenarios.
+- Security rules applied to the Power BI semantic model enforce that salespeople can only access data for their assigned customers.
 - Central BI teams will create central reports that show aggregate sales and profitability across regions and product groups. These central reports will support more sophisticated analysis by using interactive visualizations.
-- Salespeople can connect directly to the BI dataset to perform [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) and answer specific, one-off business questions.
+- Salespeople can connect directly to the BI semantic model to perform [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) and answer specific, one-off business questions.
 
 > [!NOTE]
 > This example describes a simple scenario for the purpose of explaining the three planning levels of a BI strategy. In reality, your strategic BI goals, objectives, and BI solutions are likely to be more complex.

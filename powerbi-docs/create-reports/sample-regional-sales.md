@@ -36,7 +36,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
 1. Select the sample. It opens the report in Reading mode.
 
-   Power BI imports the built-in sample, adding a report and a dataset to your **My workspace**.
+   Power BI imports the built-in sample, adding a report and a semantic model to your **My workspace**.
 
 ### Get the .pbix file for this sample
 
@@ -52,7 +52,7 @@ If you'd like to view it in the Power BI service, you can publish it there.
 
 1. In the **Publish to Power BI** dialog box, choose a workspace, and then **Select**.
 
-   Power BI imports the sample, adding the report and dataset to your selected workspace.
+   Power BI imports the sample, adding the report and semantic model to your selected workspace.
 
 ## Open the Regional Sales Sample report
 
@@ -62,7 +62,7 @@ To open the Regional Sales report, go to your workspace and select that report:
 
 If you're following along in Power BI Desktop, open the *.pbix* file to see the report.
 
-You can edit current visualizations and create your own visualizations that use the dataset for this sample. This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
+You can edit current visualizations and create your own visualizations that use the semantic model for this sample. This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
 Select **Edit** in the **Power BI** header bar to explore in the editing view:
 
@@ -75,7 +75,7 @@ Select **Reading view** to leave Edit mode. Save or discard your changes.
 
 ## Explore the Sales Overview report page
 
-A report can have several pages that work with the same dataset. The visuals display different data from the dataset.
+A report can have several pages that work with the same semantic model. The visuals display different data from the semantic model.
 
 :::image type="content" source="media/sample-regional-sales/power-bi-tiles.png" alt-text="Screenshot shows four visualizations from the sample report." lightbox="media/sample-regional-sales/power-bi-tiles.png":::
 

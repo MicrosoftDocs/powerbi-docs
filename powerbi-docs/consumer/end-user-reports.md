@@ -16,7 +16,7 @@ LocalizationGroup: Reports
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyn.md)]
 
-A Power BI report is a multi-perspective view into a dataset, with visuals that represent findings and insights from that dataset. A report can have a single visual or many pages full of visuals. Depending on your job role, you might be someone who designs reports, or you might be a business user who consumes reports. This article is for business users.
+A Power BI report is a multi-perspective view into a semantic model, with visuals that represent findings and insights from that semantic model. A report can have a single visual or many pages full of visuals. Depending on your job role, you might be someone who designs reports, or you might be a business user who consumes reports. This article is for business users.
 
 ## The parts of a report
 
@@ -32,11 +32,11 @@ If you're new to Power BI, read [Basic concepts for the Power BI service busines
 
 ## Advantages of reports
 
-Power BI bases a report on a single dataset. Report designers create the visuals in a report to represent pieces of information. The visuals aren't static. They update as the underlying data changes. You interact with the visuals and filters as you dig into the data to discover insights and find answers. Like a dashboard, a report is interactive and customizable. The extent of what you can do with a report depends on your role and the permissions the report designer assigns to you.
+Power BI bases a report on a single semantic model. Report designers create the visuals in a report to represent pieces of information. The visuals aren't static. They update as the underlying data changes. You interact with the visuals and filters as you dig into the data to discover insights and find answers. Like a dashboard, a report is interactive and customizable. The extent of what you can do with a report depends on your role and the permissions the report designer assigns to you.
 
 ## Safely interact with content
 
-As you explore and interact with your content by filtering, slicing, subscribing, and exporting, you can't corrupt the reports. Your work doesn't affect the underlying dataset or the original shared dashboards, reports, and apps.
+As you explore and interact with your content by filtering, slicing, subscribing, and exporting, you can't corrupt the reports. Your work doesn't affect the underlying semantic model or the original shared dashboards, reports, and apps.
 
 > [!NOTE]
 > You can't damage your data. The Power BI service is a great place for you to explore and experiment without worrying about breaking something.
@@ -54,10 +54,10 @@ Your changes won't affect underlying data, but that doesn't mean you can't save 
 | **Capability** | **Dashboards** | **Reports** |
 | --- | --- | --- |
 | **Pages** | One page | One or more pages |
-| **Data sources** | One or more report or dataset per dashboard |A single dataset per report |
+| **Data sources** | One or more report or semantic model per dashboard |A single semantic model per report |
 | **Filtering** | No, you can't filter or slice | Yes, there are many ways to filter, highlight, and slice |
 | **Set alerts** | Yes, you can create email alerts when certain conditions are met | No, you can't set alerts |
-| **Can see underlying dataset tables and fields** |No. Can export data but can't see the dataset tables and fields in the dashboard itself |Yes. Can see dataset tables and fields and values that you have permissions to see |
+| **Can see underlying semantic model tables and fields** |No. Can export data but can't see the semantic model tables and fields in the dashboard itself |Yes. Can see semantic model tables and fields and values that you have permissions to see |
 | **Customization** | No  | Yes, you can filter, export, view related content, add bookmarks, generate QR codes, and analyze in Excel |
 
 <!--| Available in Power BI Desktop |No |Yes, can create and view reports in Desktop |
@@ -73,7 +73,7 @@ Or you may be a *business user*, someone who receives reports from others. You'l
 * Learn how to [open a report](end-user-report-open.md) and all the [interactions available to business users](end-user-reading-view.md).
 * Get comfortable with reports by taking a tour of a [sample](../create-reports/sample-tutorial-connect-to-the-samples.md).  
 * Explore [Dashboards in the Power BI service](end-user-dashboards.md).  
-* To see which dataset the report is using and which dashboards are showing visuals from the report, see [View related content in the Power BI service](end-user-related.md).
+* To see which semantic model the report is using and which dashboards are showing visuals from the report, see [View related content in the Power BI service](end-user-related.md).
 
 > [!TIP]
 > If you didn't find what you're looking for here, use the table of contents on this page to browse more articles. 

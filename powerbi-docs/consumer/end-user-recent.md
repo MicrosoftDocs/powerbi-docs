@@ -17,7 +17,7 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-**Recent** content contains the last items you visited in the Power BI service. Recent content includes: dashboards, reports, apps, datasets, workspaces, and workbooks. When you select **Recent** on the Home pane, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending.
+**Recent** content contains the last items you visited in the Power BI service. Recent content includes: dashboards, reports, apps, semantic models, workspaces, and workbooks. When you select **Recent** on the Home pane, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending.
 
 :::image type="content" source="./media/end-user-recent/power-bi-recents-new.png" alt-text="Screenshot showing Power BI service recent content list.":::
 

@@ -20,7 +20,7 @@ In [part 1](power-bi-report-add-visualizations-i.md) of this series of two artic
 
 ## Create a new visualization
 
-In this tutorial, you use the Retail Analysis Sample dataset to create a few visualizations.
+In this tutorial, you use the Retail Analysis Sample semantic model to create a few visualizations.
 
 ## Prerequisites
 

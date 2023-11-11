@@ -12,7 +12,7 @@ LocalizationGroup: Samples
 ---
 # Competitive Marketing Analysis sample for Power BI: Take a tour
 
-The Competitive Marketing Analysis sample contains a report and dataset for a fictitious manufacturing company named VanArsdel Ltd. The VanArsdel Chief Marketing Officer (CMO) created this report to keep an eye on the industry and the company's market share, product volume, sales, and sentiment.
+The Competitive Marketing Analysis sample contains a report and semantic model for a fictitious manufacturing company named VanArsdel Ltd. The VanArsdel Chief Marketing Officer (CMO) created this report to keep an eye on the industry and the company's market share, product volume, sales, and sentiment.
 
 :::image type="content" source="media/sample-competitive-marketing-analysis/power-bi-marketing-analysis-report.png" alt-text="Screenshot of a page of the Competitive Marketing Analysis sample." lightbox="media/sample-competitive-marketing-analysis/power-bi-marketing-analysis-report.png":::
 
@@ -41,7 +41,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
 1. Select the sample. It opens the report in Reading mode.
 
-   Power BI imports the built-in sample, adding a report and a dataset to your **My workspace**.
+   Power BI imports the built-in sample, adding a report and a semantic model to your **My workspace**.
 
 ### Get the .pbix file for this sample
 
@@ -57,7 +57,7 @@ If you'd like to view it in the Power BI service, you can publish it there.
 
 1. In the **Publish to Power BI** dialog box, choose a workspace, and then **Select**.
 
-   Power BI imports the sample, adding the report and dataset to your selected workspace.
+   Power BI imports the sample, adding the report and semantic model to your selected workspace.
 
 ## Explore the report
 
@@ -67,7 +67,7 @@ To open the Competitive Marketing Analysis report, go to your workspace and sele
 
 If you're following along in Power BI Desktop, open the *.pbix* file to see the report.
 
-You can edit current visualizations and create your own visualizations that use the dataset for this sample. This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
+You can edit current visualizations and create your own visualizations that use the semantic model for this sample. This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
 Select **Edit** in the **Power BI** header bar to explore in the editing view:
 
@@ -158,7 +158,7 @@ Power BI can also help you understand the causes of your data. Right-click on **
 
 ## Create a Competitive Marketing Analysis dashboard
 
-A Power BI *dashboard* is a single page that contains visualizations that can come from one or more reports, and each report is based on one dataset. You can also generate visualizations on the dashboard by using the *Ask a question about your data* feature to explore the data associated with a report. Think of a dashboard as an entryway into the underlying reports and datasets. Select a visualization to take you to the report that was used to create it.
+A Power BI *dashboard* is a single page that contains visualizations that can come from one or more reports, and each report is based on one semantic model. You can also generate visualizations on the dashboard by using the *Ask a question about your data* feature to explore the data associated with a report. Think of a dashboard as an entryway into the underlying reports and semantic models. Select a visualization to take you to the report that was used to create it.
 
 To create a dashboard in the Power BI service:
 
@@ -184,7 +184,7 @@ For more information, see [Introduction to dashboards for Power BI designers](se
 
 ## Use Q&A to dig deeper in the dashboard
 
-A dashboard offers the ability to ask questions about data in natural language to create visuals. It doesn't matter how you create your dashboard or which tiles it has. You can ask questions about any dataset attached to your dashboard.
+A dashboard offers the ability to ask questions about data in natural language to create visuals. It doesn't matter how you create your dashboard or which tiles it has. You can ask questions about any semantic model attached to your dashboard.
 
 In this section, use the dashboard to find out, which segments drive sales? Do they match the industry trend?
 

@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/18/2023
+ms.date: 11/10/2023
 LocalizationGroup: Connect to data
 ---
 # Create and share cloud data sources in the Power BI service (Preview)
 
-With Power BI, you can create, share, and manage cloud connections for datasets and paginated reports, datamarts, and dataflows, as well as Power Query Online experiences in *Get data*, all within the Power BI service user experience.
+With Power BI, you can create, share, and manage cloud connections for semantic models and paginated reports, datamarts, and dataflows, as well as Power Query Online experiences in *Get data*, all within the Power BI service user experience.
 
 This article shows you how to create a shareable cloud connection, and then shows you how to share that connection with others. Creating and sharing shareable cloud connections have many advantages, as described in [advantages of shareable cloud connections](service-connect-cloud-data-sources.md#advantages-of-shareable-cloud-connections).
 
@@ -47,25 +47,25 @@ The **Manage users** window appears, where you can search users by name or by th
 Once you've found the user and assigned permission, select **Share** at the bottom of the **Manage users** window to apply your selections.
 
 
-## Assign a shared cloud connection to a dataset
+## Assign a shared cloud connection to a semantic model
 
-Once you've created a shareable cloud connection, you can assign it to a dataset.
+Once you've created a shareable cloud connection, you can assign it to a semantic model.
 
-Open the settings for the dataset to which you want the shareable connection to apply, and expand the **Gateway and cloud connections** section. You'll notice that the connection is mapped to a *Personal Cloud Connection* by default.
+Open the settings for the semantic model to which you want the shareable connection to apply, and expand the **Gateway and cloud connections** section. You'll notice that the connection is mapped to a *Personal Cloud Connection* by default.
 
 :::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-06.png" alt-text="Screenshot of cloud connection defaulting to personal cloud connection.":::
 
 From the **Maps to** drop down, select the name of the shareable connection you created and want to use, then select **Apply**.
 
-:::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-07.png" alt-text="Screenshot of selecting a shareable cloud connection for a dataset.":::
+:::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-07.png" alt-text="Screenshot of selecting a shareable cloud connection for a semantic model.":::
 
-That's it, you've now assigned your shareable cloud connection to the dataset.
+That's it, you've now assigned your shareable cloud connection to the semantic model.
 
 If you haven't created a shareable cloud connection yet when you're using this screen, you can select the **Create a connection** option from the drop-down to be taken to the **Manage connections and gateways** experience, and all the connection details from the data source for which you selected the **Create a connection** drop-down are prepopulated in the **Create new cloud connection** form. 
 
 ## Granular access control
 
-Power BI enforces granular access control for shareable cloud connections. Access control for all data types can be enabled at the tenant, workspace, and dataset level. The following image shows how access control can be enforced at the tenant, the workspace, or the dataset. Each setting provides granular access control, with different priority.
+Power BI enforces granular access control for shareable cloud connections. Access control for all data types can be enabled at the tenant, workspace, and semantic model level. The following image shows how access control can be enforced at the tenant, the workspace, or the semantic model. Each setting provides granular access control, with different priority.
 
 :::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-08.png" alt-text="Screenshot of granular access control.":::
 
