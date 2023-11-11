@@ -58,7 +58,29 @@ Capacity administrators automatically have their My workspaces assigned to Premi
 
 ## Semantic model memory allocation
 
-With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), there's a limit on the memory available for each semantic model based on the SKU. For example, in a Premium P1 capacity, any semantic model that exceeds 25 GB in memory usage would result in failures. You can find the semantic model memory upper limits for each SKU, in the *Max memory per semantic model* column of the [Capacities and SKUs](#capacities-and-skus) table.
+With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), there's a limit on the memory available for each semantic model based on the SKU. For example, in a Premium P1 capacity, any semantic model that exceeds 25 GB in memory usage would result in failures. You can find the semantic model memory upper limits for each SKU, in the table below.
+
+| SKU | Max memory (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> | Direct Lake rows per table** (in millions)  |
+| ----- | --- | ------ | -- | ----- | ------ |
+| F2    |   3 |   2    |  1 |     1 |    300 |
+| F4    |   3 |   2    |  1 |     2 |    300 |
+| F8    |   3 |   3.75 |  1 |     5 |    300 |
+| F16   |   5 |   7.5  |  2 |    10 |    300 |
+| F32   |  10 |  15    |  5 |    20 |    300 |
+| F64   |  25 |  30    | 10 |    40 |  1,500 |
+| F128  |  50 |  60    | 10 |    80 |  3,000 |
+| F256  | 100 | 120    | 10 |   160 |  6,000 |
+| F512  | 200 | 240    | 20 |   320 | 12,000 |
+| F1024 | 400 | 480    | 40 |   640 | 24,000 |
+| F2048 | 400 | 960    | 40 | 1,280 | 24,000 |
+
+<sup>1</sup> The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) doesn't currently expose these metrics.
+
+<sup>2</sup> These limits only apply to the semantic model workload per capacity.
+
+<sup>3</sup> The *Max memory (GB)* column under the *Semantic model* header represents an upper bound for the semantic model size. However, an amount of memory must be reserved for operations such as refreshes and queries on the semantic model. The maximum semantic model size permitted on a capacity might be smaller than the numbers in this column. For more information, see [Memory allocation](./../enterprise/service-premium-what-is.md#semantic-model-memory-allocation).    
+
+### Semantic model operations
 
 Semantic model operations such as queries are subject to individual memory limits. To illustrate the restriction, consider a semantic model with an in-memory footprint of 1 GB, and a user initiating an on-demand refresh while interacting with a report based on the same semantic model. Three separate actions determine the amount of memory attributed to the original semantic model, which may be larger than two times the semantic model size. The total amount of memory used by one Power BI item can't exceed the SKU's *Max memory per semantic model* allocation.
 
@@ -95,6 +117,26 @@ When using *Power BI Premium* and [Power BI Embedded](../developer/embedded/embe
 * **SKU availability** - Paginated reports running on Power BI Premium can run reports across all available embedded and Premium SKUs, including the EM1-EM3 and A1-A3 SKUs. Billing is calculated per CPU hour, across a 24-hour period.
 
 * **Enhanced security and code isolation** - Code isolation occurs at a per-user level, rather than at a per-capacity level.
+
+## Dataflows Gen1
+
+Each SKU can run a set number of Dataflows Gen1 [parallel tasks](/power-query/dataflows/what-licenses-do-you-need-in-order-to-use-dataflows#power-bi-premium), as listed in this table.
+
+| Fabric SKU | Dataflow parallel tasks |
+| ---------- | ----------------------- |
+| F2         |                         |
+| F4         |                         |
+| F8         |  4                      |
+| F16        |  8                      |
+| F32        | 16                      |
+| F64        | 32                      |
+| F128       | 64                      |
+| F256       | 64                      |
+| F512       | 64                      |
+| F1024      | 64                      |
+| F2048      |                         |
+
+To learn about Dataflow Gen2, see [Getting from Dataflow Generation 1 to Dataflow Generation 2](/fabric/data-factory/dataflows-gen2-overview).
 
 ## Considerations and limitations
 
