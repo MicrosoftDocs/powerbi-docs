@@ -12,7 +12,16 @@ ms.date: 2/28/2023
 
 # Power BI visuals API changelog
 
-This page contains a quick summary of the API versions. Versions listed here are considered stable and will not change.
+This page contains a quick summary of the existing API versions and what to expect in the upcoming version. Versions listed here are considered stable and will not change.
+
+## Coming soon
+
+* **Power BI Custom Visuals Authentication API**: This API will allow Custom Visuals to obtain Azure Active Directory (AAD) access tokens through Single Sign-On (SSO), facilitating secure and efficient user-contextual operations.  
+* **Local storage API**: A new version of local storage API will be available for all custom visuals and will be controlled by a global admin sitting which will be *on* by default. Turning off the global setting by admin will disable both the legacy API and the new version of the API.
+* **On-object support for custom visuals**: We will support on object support for custom visuals to optimize the user experience and provide a unified authoring experience on par with out of the box visuals.
+* **Dynamic drill control**: This feature allows the visual to enable or disable the drill feature dynamically using an API call.
+  * When the drill feature is enabled, all the functionalities of drilldown and expand/collapse features will be available. This includes API calls, context menu commands, header drill buttons, and support for hierarchy data.
+  * When the drill feature is disabled, these functionalities will not be available.
 
 ## API v5.4.0
 
