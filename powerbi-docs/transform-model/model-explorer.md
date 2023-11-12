@@ -28,7 +28,6 @@ In **Power BI** when you have a local model open, navigate to **Model view**. In
 
 :::image type="content" source="media/model-explorer/model-explorer-02.png" alt-text="Screenshot of Model explorer areas and how they operate in Power BI.":::
 
-
 ## Items shown in Model explorer
 
 A semantic model can have many different items not shown in the **Data** pane because they're not used directly on visuals, but such items impact how the report and model data behave for report authors and consumers.
@@ -38,6 +37,16 @@ A semantic model can have many different items not shown in the **Data** pane be
 The semantic model is all the metadata about your data, and it impacts how your data shows in reports and DAX queries. A properties pane shows the properties of the semantic model.
 
 :::image type="content" source="media/model-explorer/model-explorer-03.png" alt-text="Screenshot of the semantic model information in Model explorer.":::
+
+##### Discourage implicit measures
+
+An implicit measure occurs when, in the **Report view**, you use a data column from the **Data pane** directly in the visual. The visual allows you to aggregate it as a SUM, AVERAGE, MIN, MAX, or some other basic aggregation, which becomes an implicit measure. Enabling the **discourage implicit measure** property on a semantic model discourages the creation of such implicit measures by no longer showing the summation symbol next to the data columns in the **Data pane**, and blocks adding the data columns to the visuals directly on aggregation axis or as values, and in visual conditional formatting. Existing implicit measures already created in visuals will continue to work. 
+
+:::image type="content" source="media/calculation-groups/calculation-groups-03.png" alt-text="Screenshot of Report view and creation of implicit measures in visuals.":::
+
+Model authors would want to set this property to ensure measures are used when aggregating data when the measure’s DAX expression contains logic that should always be applied. Enabling this property can also lead to performance improvement with the **Filter pane** by not generating queries to show counts of each value. 
+
+A measure or explicit measure occurs when you create a **New measure** and define the DAX expression to aggregate a data column. Explicit measures can also have conditional logic and filters, taking full advantage of what you can do with DAX. Learn more in the [Create your own measures](desktop-tutorial-create-measures.md) tutorial article.
 
 #### Calculation groups
 
