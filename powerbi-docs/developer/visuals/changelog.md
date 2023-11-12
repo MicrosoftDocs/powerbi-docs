@@ -20,13 +20,13 @@ This page contains a quick summary of the existing API versions and what to expe
 * **Local storage API**: A new version of local storage API available for all custom visuals and controlled by a global admin setting that will be *on* by default. The admin can Turn off the global setting to disable both the legacy API and the new version of the API.
 * **On-object support for custom visuals**: We'll support on object support for custom visuals to optimize the user experience and provide a unified authoring experience on par with out of the box visuals.
 * **Dynamic drill control**: This feature allows the visual to enable or disable the drill feature dynamically using an API call.
-  * When the drill feature is enabled, all the functionalities of drilldown and expand/collapse features are available. This includes API calls, context menu commands, header drill buttons, and support for hierarchy data.
+  * When the drill feature is enabled, all the functionalities of drilldown and expand/collapse features are available. These functionalities include API calls, context menu commands, header drill buttons, and support for hierarchy data.
   * When the drill feature is disabled, these functionalities aren't available.
 
 ## API v5.4.0
 
 * [Improved keyboard navigation](./supportskeyboardfocus-feature.md#enhanced-keyboard-accessibility): Improves accessibility and usability of your visuals by providing more options for interacting with visual using the keyboard.
-* [Detect filter use in reports](./detect-filter-api.md): Detect if there are any filters are applied to a report.
+* [Detect filter use in reports](./detect-filter-api.md): Detect if there are any filters applied to a report.
 * Supports Desktop May 2023
 
 ## API v5.3.0
