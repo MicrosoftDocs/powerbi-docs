@@ -9,7 +9,7 @@ ms.date: 11/05/2023
 ms.custom: include file
 ---
 
-| SKU   | Capacity Units (CU) | Power BI SKU      | Power BI v-cores | Rows per table (millions)<sup>1</sup> |Max model size on disk/OneLake1 (GB)<sup>1</sup> |
+| SKU   | Capacity Units (CU) | Power BI SKU      | Power BI v-cores | Rows per table (millions)<sup>1</sup> |Max model size on disk/OneLake1 (GB)<sup>1</sup>  |
 | ----- | ------------------- | ----------------- | ---------------- | ------------------------- | --------- |
 | F2    |                   2 | N/A               |              N/A |    300                    | 10        |
 | F4    |                   4 | N/A               |              N/A |    300                    | 10        |
@@ -26,5 +26,3 @@ ms.custom: include file
 <sup>1</sup> Guardrail values that affect [fallback](../enterprise/directlake-overview.md) to DirectQuery.
 
 <sup>2</sup> These SKUs aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
-
-guardrail columns that affect fallback to DQ with a learn more link (to Owen’s doc).
