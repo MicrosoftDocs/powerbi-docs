@@ -97,9 +97,13 @@ By creating [shortcuts](/fabric/onelake/onelake-shortcuts) for your semantic mod
 
 - During preview, shortcut tables built on top of the exported model in Lakehouse can't be queried by using the SQL endpoint.
 
+- During preview, [Multi-Geo](/fabric/admin/service-admin-premium-multi-geo) capacities are not yet supported.
+
 - For users with *contributor* permissions for exported model tables but only *viewer* permissions for the workspace, a model folder appears in Lakehouse explorer, but an error is returned when selected.
 
 - Measures, DirectQuery tables, hybrid tables, calculation group tables, and system managed aggregation tables can't be exported to Delta format tables.
+
+- Only a single version of the delta tables are exported and stored on OneLake. Old versions of the delta tables are deleted after a successful export. Other execution engines which use the older but now deleted version of the data can have transient failures.
 
 ## See also
 
