@@ -103,7 +103,7 @@ The following table describes the resources of each Power BI SKU.
 
 [!INCLUDE [Power BI capacity and SKUs](../../includes/capacity-table.md)]
 
-More information about  SKU limits, is available here:
+More information about SKU limits, is available here:
 
 * F SKUs - [Microsoft Fabric licenses](/fabric/enterprise/licenses#capacity-and-skus).
 

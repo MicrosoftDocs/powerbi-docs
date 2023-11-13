@@ -26,7 +26,9 @@ Power BI Premium provides enhancements to Power BI, and a comprehensive portfoli
 
 ## Capacities and SKUs
 
-Capacity is a dedicated set of resources reserved for exclusive use. It offers dependable, consistent performance for your content. Each capacity offers a selection of SKUs, and each SKU provides different resource tiers for computing power. The type of SKU you require, depends on the type of solution you wish to deploy.
+[!INCLUDE [what is capacity](../../includes/what-is-capacity.md)]
+
+[!INCLUDE [capacity and SKUs](../../includes/capacity-and-skus.md)]
 
 [!INCLUDE [Power BI capacity and SKUs](../includes/capacity-table.md)]
 
