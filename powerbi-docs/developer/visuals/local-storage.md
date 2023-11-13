@@ -155,21 +155,21 @@ export class Visual implements IVisual {
 ### [Considerations and limitations Version 2](#tab/v2)
 
 * The custom visuals local storage limit is 100 KB.
-* Data can be shared between visuals with the same GUID, same environment and for the same user only.
+* Data can be shared between visuals with the same GUID, same environment, and for the same user only.
 * The API is supported in the following environments:
   * Web
   * Desktop
   * SaaS Embed
   * Mobile
   * Report Server
-* The API isn't supported in export to PDF, ptpx scenarios.
-* The API is supported only when there's a user signed in.
+* The API isn't supported in export to PDF or ptpx scenarios.
+* The API is supported only when a user is signed in.
 * A visual’s data will be cleared 29 days after the most recent modification time.
 * This API is privileged API.
 * The key (parameter provided to *set*, *get*, *Remove*) has the following restrictions:
   * Length must be fewer than 128 characters
   * Can't contain the character '|'
-* The API can be not supported for many reasons such as not supported environment or the browser’s local storage isn't available. Consider checking the status of the API before using the set/get/remove methods. Even if it's supported, it might fail, so error handling is important..
+* There are many reasons this API might not be supported. For example,the environment might not be supported or the browser’s local storage isn't available. Consider checking the status of the API before using the *set/get/remove* methods. Even if the API is supported, it might fail, so error handling is important.
 
 ---
 
