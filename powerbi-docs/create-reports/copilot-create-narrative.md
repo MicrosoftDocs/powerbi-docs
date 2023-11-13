@@ -1,5 +1,5 @@
 ---
-title: Create a narrative visual with Copilot for Power BI
+title: Create a narrative with Copilot for Power BI
 description: When you're using Copilot, you can quickly create a narrative of your report.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,11 +7,11 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/09/2023
+ms.date: 11/13/2023
 LocalizationGroup: Create reports
 ---
 
-# Create a narrative visual with Copilot for Power BI
+# Create a narrative with Copilot for Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
@@ -29,14 +29,8 @@ To see the **Copilot** button in your report, you first need to select a semanti
 
 In the Power BI service, you need to be in an appropriate workspace to see the Narratives with Copilot visual button in the Visualizations pane. The Copilot visual button is the same as the old narratives visual button. For details on what makes an appropriate workspace, see [Considerations and limitations](#considerations-and-limitations) in this article.
 
-1. The **Narrative** visual needs content to summarize, so in the Power BI service, select the **OneLake data hub**, select **More options** next to a semantic model, and select **Create report**.
-1. In the new report, select the **Copilot** button, and in the Copilot pane, select **Suggest content for this report**. 
-
-     :::image type="content" source="media/copilot-create-narrative/copilot-suggest-content-this-report.png" alt-text="Screenshot of Suggest content for this report.":::
-
-    In the suggested outline, select **Create** for the page with the data that you want the Copilot narrative to summarize.
-
-    :::image type="content" source="media/copilot-create-narrative/copilot-create-page.png" alt-text="Screenshot of Create this page.":::
+1. The **Narrative** visual needs content to summarize, so in the Power BI service, select the **OneLake data hub**, select **More options** next to a semantic model.
+1. Select **Create report**.
 
 ### [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -47,19 +41,14 @@ If you're not signed in to Power BI Desktop, you still see the Copilot entry poi
 
 ---
 
-3. Create a space on the page for the narrative visualization.
+3. In the **Visualizations** pane, select the **Narrative** icon. 
+1. In **Choose a narrative type**, select the **Copilot** button to use the new narrative visual.
 
-1. In the **Visualizations** pane, select the **Narrative** icon.
+    :::image type="content" source="media/copilot-create-narrative/copilot-fork-option.png" alt-text="copilot-fork-option.png" alt-text="Choose a narrative type, select Copilot." lightbox="media/copilot-create-narrative/copilot-fork-option.png" alt-text="copilot-fork-option.png":::
 
-    :::image type="content" source="media/copilot-create-narrative/visualizations-pane-narrative-icon.png" alt-text="Screenshot of Narrative icon in Visualizations pane.":::
+1. Select an option in the **Create a narrative with Copilot** dialog, and select **Create**. 
 
-1. Select **Copilot** or **Custom**, depending on how much you want to direct the narrative.
-
-    :::image type="content" source="media/copilot-create-narrative/copilot-choose-narrative-type.png" alt-text="Screenshot of Choose a narrative type." lightbox="media/copilot-create-narrative/copilot-choose-narrative-type.png":::
-
-1. Select an option in the **Create a summary with Copilot** dialog, and select **Create**.
-
-    :::image type="content" source="media/copilot-create-narrative/copilot-create-summary.png" alt-text="Screenshot of Create a summary." lightbox="media/copilot-create-narrative/copilot-create-summary.png":::
+     :::image type="content" source="media/copilot-create-narrative/create-narrative-dialog.png" alt-text="select an option in the Create a narrative with Copilot dialog." lightbox="media/copilot-create-narrative/create-narrative-dialog.png":::
 
 1. You can include or exclude individual visuals or pages, or summarize the entire report.
 
@@ -67,37 +56,39 @@ If you're not signed in to Power BI Desktop, you still see the Copilot entry poi
 
 1. Read through the summary to make sure it's accurate.
 
-    :::image type="content" source="media/copilot-create-narrative/copilot-created-summary.png" alt-text="Screenshot of the summary that Copilot created." lightbox="media/copilot-create-narrative/copilot-created-summary.png":::
+    :::image type="content" source="media/copilot-create-narrative/check-summary.png" alt-text="Read the summary to make sure it's accurate." lightbox="media/copilot-create-narrative/check-summary.png" :::
 
 1. To change the narrative, in the **Adjust your summary with Copilot**, give instructions to change it, or use one of the suggested prompts.
 
 1. Select the footnotes to view references to specific visuals in the summary.
 
-    :::image type="content" source="media/copilot-create-narrative/copilot-narrative-select-footnote.png" alt-text="Screenshot showing selecting a footnote.":::
+    :::image type="content" source="media/copilot-create-narrative/reference-hover.png" alt-text="hover over a footnote to see the reference.":::
 
     Power BI highlights the visual that the footnote refers to.
 
-    :::image type="content" source="media/copilot-create-narrative/copilot-narrative-view-footnote-reference.png" alt-text="Screenshot showing highlighted visual.":::
+    :::image type="content" source="media/copilot-create-narrative/highlighted-referenced-visual.png" alt-text="visual.":::
+    alt-text="Screenshot showing highlighted visual." lightbox="media/copilot-create-narrative/highlighted-referenced-visual.png":::
 
-    You can switch back and forth between the previous "smart narrative" visual and the new narrative visual with Copilot by selecting the icon next to the title. The summary content isn't lost when you switch back and forth. This may help as you can't yet edit the body of the Copilot summary. You can copy and paste it into the smart narrative body for more involved editing.
+    You can switch back and forth between the previous "smart narrative" visual and the new narrative visual with Copilot by selecting the icon next to the title. The summary content isn't lost when you switch back and forth. Switching may help, as you can't yet edit the body of the Copilot summary. For control over the generated summary, use custom prompts to specify tone or formatting, direct the summary to specific portions of the report, or clarify requests. You can copy and paste it into the smart narrative body for more involved editing.
 
 ## Save the report
 
-When you're satisfied with the report, you save the report just like any other report. If you close and reopen the report that Copilot generated in the Power BI service, the report is in Reading view and you don't see Copilot.
+When you're satisfied with the narrative, you save the report just like any other report. If you close and reopen the report that Copilot generated in the Power BI service, the report opens in Reading view and you don't see Copilot.
 
-- Select **Edit** to see the **Copilot** button again. 
+- Select **Edit** to see the **Copilot** button again.
 
 ## Considerations and limitations
 
 - Authors: To author a copilot narratives visual in the Power BI service, the workspace needs to have a paid dedicated capacity. The workspace needs to be a paid Premium or F64 or higher.
 - Viewers: To view a Copilot visual in the service, viewers need read access to the *workspace*, not just the *report*.
-- You can't edit the visual after Power BI generates it. However, you can change it by using prompts.
+- You can't edit the visual after Power BI generates it. However, you can change it by using prompts. The summary only takes into account the data that's visualized on the selected page.
 - The summary only takes into account the data that's visualized on the page.
 - The accuracy of the public preview may be limited.
-- The public preview summary capabilities may not cover all visual types. For example, it doesn't support key influencers yet.
+- Users need to refresh the summary visual when they update or filter a page, report, or data, to see an updated summary.
+- Filtering and slicing affect the visual, but cross-highlighting (selecting visuals) doesn't impact the summary.
 - If you open a report that Copilot generated in Power BI Desktop, you won't see the **Copilot** button. The initial release is limited to the Power BI service.
-- Report creation with Copilot is only enabled for Power BI and not for any other sections of Fabric, such as Data Factory, etc.
-- The public preview summary capabilities don't cover all visual types. For example, it doesn't yet support key influencers.
+- Report creation with Copilot is only enabled for Power BI and not for any other sections of Fabric, such as Data Factory.
+- The public preview narrative doesn't yet support all visual types.  For example, it doesn't yet support key influencers.
 
 ## Next steps
 
