@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/05/2023
+ms.date: 11/13/2023
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -58,7 +58,7 @@ Capacity administrators automatically have their My workspaces assigned to Premi
 
 With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), there's a limit on the memory available for each semantic model based on the SKU. For example, in a Premium P1 capacity, any semantic model that exceeds 25 GB in memory usage would result in failures. Memory upper limits and other constraints for each SKU are listed in the table below.
 
-| SKU | Max memory (GB)<sup>1, 2</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> | Direct Lake rows per table (in millions)<sup>3</sup>  | Max model size on disk/OneLake1 (GB)<sup>1</sup>  |
+| SKU | Max memory (GB)<sup>1, 2</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> | Direct Lake rows per table (in millions)<sup>3</sup>  | Max Direct Lake model size on OneLake (GB)<sup>1, 3</sup> |
 | ----- | --- | ------ | -- | ----- | ------ | --------- |
 | F2    |   3 |   2    |  1 |     1 |    300 | 10        |
 | F4    |   3 |   2    |  1 |     2 |    300 | 10        |
@@ -76,9 +76,9 @@ With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-a
 
 <sup>2</sup> The *Max memory (GB)* column under the *Semantic model* header represents an upper bound for the semantic model size. However, an amount of memory must be reserved for operations such as refreshes and queries on the semantic model. The maximum semantic model size permitted on a capacity might be smaller than the numbers in this column.
 
-<sup>3</sup> Guardrail values that affect [fallback](../enterprise/directlake-overview.md#fallback) to DirectQuery.
+<sup>3</sup> These limits apply to Direct Lake tables and models, and are guardrails that affect fallback to DirectQuery. Direct Lake semantic models have additional constraints that are based on SKUs, as listed in [fallback](../enterprise/directlake-overview.md#fallback).
 
-### Semantic model operations
+### Semantic model memory usage
 
 Semantic model operations such as queries are subject to individual memory limits. To illustrate the restriction, consider a semantic model with an in-memory footprint of 1 GB, and a user initiating an on-demand refresh while interacting with a report based on the same semantic model. Three separate actions determine the amount of memory attributed to the original semantic model, which may be larger than two times the semantic model size. The total amount of memory used by one Power BI item can't exceed the SKU's *Max memory per semantic model* allocation.
 
@@ -132,7 +132,7 @@ Each SKU can run a set number of Dataflows Gen1 [parallel tasks](/power-query/da
 | F256       | 64                      |
 | F512       | 64                      |
 | F1024      | 64                      |
-| F2048      |                         |
+| F2048      | 64                      |
 
 To learn about Dataflow Gen2, see [Getting from Dataflow Generation 1 to Dataflow Generation 2](/fabric/data-factory/dataflows-gen2-overview).
 
@@ -142,7 +142,7 @@ The following known limitations currently apply to Power BI Premium.
 
 * **Rendering visuals** - There's a 225-second limitation for rendering Power BI visuals. Visuals that take longer to render, will be timed-out and won't display.
 
-* **Throttling** - Throttling can occur in Power BI Premium capacities. Concurrency limits are applied per session. An error message will appear when too many operations are being processed concurrently. To mitigate throttling, you can use [autoscale](service-premium-auto-scale.md). When autoscale is enabled, if CPU consumption exceeds the additional limits, throttling will still take place.
+* **Throttling** - Throttling can occur in Power BI Premium capacities. Concurrency limits are applied per session. An error message will appear when too many operations are being processed concurrently. To mitigate throttling, you can use [autoscale](service-premium-auto-scale.md). When autoscale is enabled, if CPU consumption exceeds the additional limits, throttling will still take place. To read more about throttling in Fabric, see [The Fabric throttling policy](/fabric/enterprise/throttling).
 
 * **Client library version** - [Client applications and tools](service-premium-connect-tools.md#client-applications-and-tools) that connect to and work with semantic models on Premium capacities through the [XMLA endpoint](service-premium-connect-tools.md) require Analysis Services client libraries. Most client applications and tools install the most recent client libraries with regular updates, so manually installing the client libraries isn't usually necessary. Regardless of the client application or tool version, the following minimum client library versions are required.
 
