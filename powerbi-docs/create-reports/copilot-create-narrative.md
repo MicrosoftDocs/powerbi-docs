@@ -44,11 +44,11 @@ If you're not signed in to Power BI Desktop, you still see the Copilot entry poi
 3. In the **Visualizations** pane, select the **Narrative** icon. 
 1. In **Choose a narrative type**, select the **Copilot** button to use the new narrative visual.
 
-    :::image type="content" source="media/copilot-create-narrative/copilot-fork-option.png" alt-text="copilot-fork-option.png" alt-text="Choose a narrative type, select Copilot." lightbox="media/copilot-create-narrative/copilot-fork-option.png" alt-text="copilot-fork-option.png":::
+    :::image type="content" source="media/copilot-create-narrative/copilot-fork-option.png" alt-text="Screenshot showing Choose a narrative type, select Copilot." lightbox="media/copilot-create-narrative/copilot-fork-option.png":::
 
 1. Select an option in the **Create a narrative with Copilot** dialog, and select **Create**. 
 
-     :::image type="content" source="media/copilot-create-narrative/create-narrative-dialog.png" alt-text="select an option in the Create a narrative with Copilot dialog." lightbox="media/copilot-create-narrative/create-narrative-dialog.png":::
+     :::image type="content" source="media/copilot-create-narrative/create-narrative-dialog.png" alt-text="Screenshot showing select an option in the Create a narrative with Copilot dialog." lightbox="media/copilot-create-narrative/create-narrative-dialog.png":::
 
 1. You can include or exclude individual visuals or pages, or summarize the entire report.
 
@@ -56,18 +56,17 @@ If you're not signed in to Power BI Desktop, you still see the Copilot entry poi
 
 1. Read through the summary to make sure it's accurate.
 
-    :::image type="content" source="media/copilot-create-narrative/check-summary.png" alt-text="Read the summary to make sure it's accurate." lightbox="media/copilot-create-narrative/check-summary.png" :::
+    :::image type="content" source="media/copilot-create-narrative/check-summary.png" alt-text="Screenshot showing Read the summary to make sure it's accurate." lightbox="media/copilot-create-narrative/check-summary.png" :::
 
 1. To change the narrative, in the **Adjust your summary with Copilot**, give instructions to change it, or use one of the suggested prompts.
 
 1. Select the footnotes to view references to specific visuals in the summary.
 
-    :::image type="content" source="media/copilot-create-narrative/reference-hover.png" alt-text="hover over a footnote to see the reference.":::
+    :::image type="content" source="media/copilot-create-narrative/reference-hover.png" alt-text="Screenshot showing hover over a footnote to see the reference.":::
 
     Power BI highlights the visual that the footnote refers to.
 
-    :::image type="content" source="media/copilot-create-narrative/highlighted-referenced-visual.png" alt-text="visual.":::
-    alt-text="Screenshot showing highlighted visual." lightbox="media/copilot-create-narrative/highlighted-referenced-visual.png":::
+    :::image type="content" source="media/copilot-create-narrative/highlighted-referenced-visual.png" alt-text="Screenshot showing highlighted visual." lightbox="media/copilot-create-narrative/highlighted-referenced-visual.png":::
 
     You can switch back and forth between the previous "smart narrative" visual and the new narrative visual with Copilot by selecting the icon next to the title. The summary content isn't lost when you switch back and forth. Switching may help, as you can't yet edit the body of the Copilot summary. For control over the generated summary, use custom prompts to specify tone or formatting, direct the summary to specific portions of the report, or clarify requests. You can copy and paste it into the smart narrative body for more involved editing.
 
