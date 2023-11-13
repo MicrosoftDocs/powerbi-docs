@@ -76,7 +76,7 @@ With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-a
 
 <sup>2</sup> The *Max memory (GB)* column under the *Semantic model* header represents an upper bound for the semantic model size. However, an amount of memory must be reserved for operations such as refreshes and queries on the semantic model. The maximum semantic model size permitted on a capacity might be smaller than the numbers in this column.
 
-<sup>3</sup> Guardrail values that affect [fallback](../enterprise/directlake-overview.md) to DirectQuery.
+<sup>3</sup> Guardrail values that affect [fallback](../enterprise/directlake-overview.md#fallback) to DirectQuery.
 
 ### Semantic model operations
 
