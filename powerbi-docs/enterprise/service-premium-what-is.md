@@ -58,7 +58,7 @@ Capacity administrators automatically have their My workspaces assigned to Premi
 
 With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), there's a limit on the memory available for each semantic model based on the SKU. For example, in a Premium P1 capacity, any semantic model that exceeds 25 GB in memory usage would result in failures. Memory upper limits and other constraints for each SKU are listed in the table below.
 
-| SKU | Max memory (GB)<sup>1, 2</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> | Direct Lake rows per table (in millions)<sup>3</sup>  | Max Direct Lake model size on OneLake (GB)<sup>1, 3</sup> |
+| SKU | Max memory (GB)<sup>1, 2</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> | Direct Lake rows per table (in millions)<sup>1, 3</sup>  | Max Direct Lake model size on OneLake (GB)<sup>1, 3</sup> |
 | ----- | --- | ------ | -- | ----- | ------ | --------- |
 | F2    |   3 |   2    |  1 |     1 |    300 | 10        |
 | F4    |   3 |   2    |  1 |     2 |    300 | 10        |
@@ -122,8 +122,8 @@ Each SKU can run a set number of Dataflows Gen1 [parallel tasks](/power-query/da
 
 | Fabric SKU | Dataflow parallel tasks |
 | ---------- | ----------------------- |
-| F2         |                         |
-| F4         |                         |
+| F2         |  2                      |
+| F4         |  2                      |
 | F8         |  4                      |
 | F16        |  8                      |
 | F32        | 16                      |
