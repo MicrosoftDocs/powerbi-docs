@@ -1,6 +1,6 @@
 ---
 title: View a report
-description: This topic shows Power BI business users and end users how to open and view a Power BI report from a dashboard, an app, or a report that's been shared with you.
+description: This topic shows Power BI business users and end users how to open and view a Power BI report from a dashboard, an app, or a report that was shared with you.
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
@@ -18,7 +18,7 @@ A Power BI report is one or more pages of organized visuals. Power BI designers 
 
 Explore the following guidance to learn how to open a report from the Browse page and from a dashboard.
 
-## Open a report that's been shared with you
+## Open a report that was shared with you
 
 Power BI designers can share a report with you by sending an email link or by adding the report to your Power BI content. These reports are located under **Shared with me** in the **Browse** tab.
 
@@ -80,7 +80,7 @@ Most dashboard [tiles](end-user-tiles.md) are pinned from reports. Selecting a t
 
     :::image type="content" source="./media/end-user-report-open/power-bi-dashboards.png" alt-text="Screenshot showing a dashboard and a tile is selected.":::
 
-2. The associated report opens to the *YTD Category Trend Analysis* page because this is where the chart is located in the report.
+2. The associated report opens to the *YTD Category Trend Analysis* page because this is the report page where the chart is located.
 
     :::image type="content" source="./media/end-user-report-open/power-bi-report-tab.png" alt-text="Screenshot showing the YTD Category Trend Analysis page.":::
 
@@ -100,5 +100,5 @@ As you get more comfortable navigating the Power BI service, you'll figure out w
 
 ## Next steps
 
-[Open and view a dashboard](end-user-dashboard-open.md)  
+[Open and view a dashboard](end-user-dashboard-open.md)     
 [Explore the report Filters pane](end-user-report-filter.md)
