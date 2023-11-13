@@ -14,9 +14,9 @@ LocalizationGroup: Premium
 
 # What is Power BI Premium?
 
-Power BI Premium provides enhancements to Power BI, and a comprehensive portfolio of [Premium features](service-premium-features.md).
+This article describes Power BI Premium operations and considerations, to view a high level description of how Microsoft Fabric works, see [Microsoft Fabric concepts and licenses](/fabric/enterprise/licenses).
 
-The following table lists some of the Premium enhancements.
+Power BI Premium provides enhancements to Power BI, and a comprehensive portfolio of [Premium features](service-premium-features.md). The following table lists some of the Premium enhancements.
 
 |Enhancement           |Details  |
 |----------------------|---------|
@@ -26,9 +26,7 @@ The following table lists some of the Premium enhancements.
 
 ## Capacities and SKUs
 
-[!INCLUDE [what is capacity](../includes/what-is-capacity.md)]
-
-[!INCLUDE [capacity and SKUs](../includes/capacity-and-skus.md)]
+Capacity is a dedicated set of resources reserved for exclusive use. It offers dependable, consistent performance for your content. Each capacity offers a selection of SKUs, and each SKU provides different resource tiers for computing power. The type of SKU you require, depends on the type of solution you wish to deploy.
 
 [!INCLUDE [Power BI capacity and SKUs](../includes/capacity-table.md)]
 
@@ -54,29 +52,29 @@ Workspaces reside within capacities. Each Power BI user has a personal workspace
 
 Capacity administrators automatically have their My workspaces assigned to Premium capacities.
 
-## Semantic model memory allocation
+## Semantic model SKU limitation
 
-With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), there's a limit on the memory available for each semantic model based on the SKU. For example, in a Premium P1 capacity, any semantic model that exceeds 25 GB in memory usage would result in failures. You can find the semantic model memory upper limits for each SKU, in the table below.
+With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), there's a limit on the memory available for each semantic model based on the SKU. For example, in a Premium P1 capacity, any semantic model that exceeds 25 GB in memory usage would result in failures. Memory upper limits and other constraints for each SKU are listed in the table below.
 
-| SKU | Max memory (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> | Direct Lake rows per table** (in millions)  |
-| ----- | --- | ------ | -- | ----- | ------ |
-| F2    |   3 |   2    |  1 |     1 |    300 |
-| F4    |   3 |   2    |  1 |     2 |    300 |
-| F8    |   3 |   3.75 |  1 |     5 |    300 |
-| F16   |   5 |   7.5  |  2 |    10 |    300 |
-| F32   |  10 |  15    |  5 |    20 |    300 |
-| F64   |  25 |  30    | 10 |    40 |  1,500 |
-| F128  |  50 |  60    | 10 |    80 |  3,000 |
-| F256  | 100 | 120    | 10 |   160 |  6,000 |
-| F512  | 200 | 240    | 20 |   320 | 12,000 |
-| F1024 | 400 | 480    | 40 |   640 | 24,000 |
-| F2048 | 400 | 960    | 40 | 1,280 | 24,000 |
+| SKU | Max memory (GB)<sup>1, 2</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> | Direct Lake rows per table (in millions)<sup>3</sup>  | Max model size on disk/OneLake1 (GB)<sup>1</sup>  |
+| ----- | --- | ------ | -- | ----- | ------ | --------- |
+| F2    |   3 |   2    |  1 |     1 |    300 | 10        |
+| F4    |   3 |   2    |  1 |     2 |    300 | 10        |
+| F8    |   3 |   3.75 |  1 |     5 |    300 | 10        |
+| F16   |   5 |   7.5  |  2 |    10 |    300 | 20        |
+| F32   |  10 |  15    |  5 |    20 |    300 | 40        |
+| F64   |  25 |  30    | 10 |    40 |  1,500 | Unlimited |
+| F128  |  50 |  60    | 10 |    80 |  3,000 | Unlimited |
+| F256  | 100 | 120    | 10 |   160 |  6,000 | Unlimited |
+| F512  | 200 | 240    | 20 |   320 | 12,000 | Unlimited |
+| F1024 | 400 | 480    | 40 |   640 | 24,000 | Unlimited |
+| F2048 | 400 | 960    | 40 | 1,280 | 24,000 | Unlimited |
 
 <sup>1</sup> The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) doesn't currently expose these metrics.
 
-<sup>2</sup> These limits only apply to the semantic model workload per capacity.
+<sup>2</sup> The *Max memory (GB)* column under the *Semantic model* header represents an upper bound for the semantic model size. However, an amount of memory must be reserved for operations such as refreshes and queries on the semantic model. The maximum semantic model size permitted on a capacity might be smaller than the numbers in this column. For more information, see [Memory allocation](./../enterprise/service-premium-what-is.md#semantic-model-sku-limitations).
 
-<sup>3</sup> The *Max memory (GB)* column under the *Semantic model* header represents an upper bound for the semantic model size. However, an amount of memory must be reserved for operations such as refreshes and queries on the semantic model. The maximum semantic model size permitted on a capacity might be smaller than the numbers in this column. For more information, see [Memory allocation](./../enterprise/service-premium-what-is.md#semantic-model-memory-allocation).    
+<sup>3</sup> Guardrail values that affect [fallback](../enterprise/directlake-overview.md) to DirectQuery.
 
 ### Semantic model operations
 

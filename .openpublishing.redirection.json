@@ -5578,9 +5578,19 @@
         },
         {
             "source_path": "powerbi-docs/guidance/translation-manage-dataset-enterprise.md",
-            "redirect_url": "/power-bi/guidance/translation-manage-data-model-enterprise.md",
+            "redirect_url": "/power-bi/guidance/translation-manage-data-model-enterprise",
             "redirect_document_id": false
-        }                                                                                                                                                                                                       
+        },
+        {
+            "source_path": "powerbi-docs/includes/what-is-capacity.md",
+            "redirect_url": "/powerbi-docs/enterprise/service-premium-what-is",           
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/includes/capacity-and-skus.md",
+            "redirect_url": "/powerbi-docs/enterprise/service-premium-what-is",           
+            "redirect_document_id": false
+        }                                                                                                                                                                                                                          
   ]          
 
 }
