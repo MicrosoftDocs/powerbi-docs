@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 02/01/2023
+ms.date: 11/01/2023
 #This article teaches business users how to find and open a report if it has been shared directly or shared via an app, so that the consumer can view and interact with the report.
 ---
 # View a report in the Power BI service for business users
@@ -24,23 +24,19 @@ Power BI designers can share a report with you by sending an email link or by ad
 
 1. Open the Power BI service (app.powerbi.com), and sign in if you're prompted.
 
-    :::image type="content" source="./media/end-user-report-open/power-bi-home-full-screen.png" alt-text="Screenshot showing the Home page of the Power BI service.":::
+2. On the navigation pane, select **Browse**, and on the **Browse** page, select **Shared**.
 
-2. On the navigation pane, select **Browse**, and on the **Browse** page, select **Shared with me**.
+    :::image type="content" source="./media/end-user-report-open/power-bi-browse.png" alt-text="Screenshot showing the Browse page and Shared with me is outlined.":::
 
-    :::image type="content" source="./media/end-user-report-open/power-bi-share.png" alt-text="Screenshot showing the Browse page and Shared with me is outlined.":::
-
-3. The report icon :::image type="icon" source="./media/end-user-report-open/power-bi-report-icon.png"::: is displayed next to the report name. Open the **Sales and Marketing Sample** report.
-
-     :::image type="content" source="./media/end-user-report-open/power-bi-report-sample.png" alt-text="Screenshot showing the Sales and Marketing Sample report from the Shared with me list.":::
+3. The report icon :::image type="icon" source="./media/end-user-report-open/power-bi-report.png"::: is displayed next to the report name. Open the **Sales and Marketing Sample** report.
 
 4. Notice the tabs along the left side. Each tab represents a report page. Select the **YTD Category** tab to open the **YTD Category Trend Analysis** page.
 
-   :::image type="content" source="./media/end-user-report-open/power-bi-report-open.png" alt-text="Screenshot showing the YTD Category Trend Analysis page open." lightbox="./media/end-user-report-open/power-bi-report-open.png":::
+   :::image type="content" source="./media/end-user-report-open/power-bi-open-report.png" alt-text="Screenshot showing the YTD Category Trend Analysis page open.":::
 
 5. Expand the **Filters** pane along the right side. Filters that are applied to this report page, or to the entire report, are displayed here. You can change these filters to see the impact on your visuals and report.
 
-    :::image type="content" source="./media/end-user-report-open/power-bi-filters-inline.png" alt-text="Screenshot showing the Power BI service with Filters expanded." lightbox="./media/end-user-report-open/power-bi-filters-inline.png":::
+    :::image type="content" source="./media/end-user-report-open/power-bi-display-filters.png" alt-text="Screenshot showing the Power BI service with Filters expanded.":::
 
 6. Hover over a visual to show the actions you can perform. To see the filters applied to a specific visual, select the filter icon.
 
@@ -58,11 +54,11 @@ There are many ways for you to interact with a report to discover insights and m
 
 ## Open a report that's in an app
 
-The apps you receive from colleagues are located on the Home page and in the Apps container on your navigation pane. An [app](end-user-apps.md) is a collection of dashboards and reports that a Power BI designer compiles for you.
+The apps you receive from colleagues are located on the **Home** page and in the **Apps** container on your navigation pane. An [app](end-user-apps.md) is a collection of dashboards and reports that a Power BI designer compiles for you.
 
 You must have a Power BI Pro license to open an app unless the app workspace is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). A user with any Power BI license can have access to reports stored in Premium capacity.  
 
-You can follow along in this tutorial with Microsoft sample content.
+Follow along with Microsoft sample content.
 
 1. In your browser, go to appsource.microsoft.com.
 2. Search for "Sales & Marketing" and select **Microsoft sample - Sales & Marketing**.
@@ -72,7 +68,7 @@ You can follow along in this tutorial with Microsoft sample content.
 
 5. Scroll down and select **My Apps**.
 
-   :::image type="content" source="./media/end-user-report-open/power-bi-apps-new.png" alt-text="Screenshot shows the My apps section of Power BI Home.":::
+   :::image type="content" source="./media/end-user-report-open/power-bi-my-apps.png" alt-text="Screenshot shows the My apps section of Power BI Home.":::
 
 6. Select your new **Sales and Marketing** app to open it. Depending on the options set by the app designer, the app opens to a dashboard or a report. This app opens to a dashboard.  
 
