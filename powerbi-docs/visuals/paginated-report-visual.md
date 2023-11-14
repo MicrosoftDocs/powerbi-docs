@@ -16,7 +16,7 @@ ms.date: 09/07/2023
 
 In this article, you learn how to use the paginated report visual for Power BI reports. This native Power BI visual allows you to render any paginated report you’ve uploaded to the service in a Power BI report.  
 
-This visual brings the power of paginated reports to your Power BI reports. You can map fields from your Power BI dataset to be used as parameter values for your paginated report visual. The ability to map fields provides a fully interactive experience like any other visual.
+This visual brings the power of paginated reports to your Power BI reports. You can map fields from your Power BI semantic model to be used as parameter values for your paginated report visual. The ability to map fields provides a fully interactive experience like any other visual.
 
 The paginated report visual is designed to integrate a paginated report with other visuals in a Power BI report. It enables large data exports, detail drills, and generating documents. If you are migrating paginated report content from on premises, or find that the paginated report visual is the only element on a page, consider using the paginated report directly.
 
@@ -109,16 +109,16 @@ You can decide whether report filters are automatically applied to the paginated
 - The paginated report visual has a built-in 30,000-value data reduction limit due to the [Power BI visual maximum of 30,000](../visuals/power-bi-data-points.md?#power-bi-visuals). If any field used in the visual contains more than 30,000 values, a data reduction algorithm kicks in and drops the rows that are above the limit. As a result, the paginated report may show incorrect results due to missing data from report parameters. To work around this, try to use filters to filter out unnecessary values, or map the report parameters to fields with fewer values.
 - The duration of the paginated report session is capped by the expiration time of your access token. Currently there's no support to automatically refresh the token. After the session expires, a dialog prompts you to refresh the visual and start a new rendering session.
 
-### Using a Power BI dataset with a date parameter
+### Using a Power BI semantic model with a date parameter
 
 > [!NOTE]
 > Versions of Power BI Report Builder 15.7.01704.0001 and above allow you to use date parameters with the paginated report visual without having to follow these next steps. [Download the newest version of Power BI Report Builder](https://aka.ms/pbireportbuilder).
 
-When you use a Power BI dataset as the data source for your paginated report and set up a date parameter in your query that then automatically generates the parameter table and parameter, using that parameter in a paginated report parameter will fail. The paginated report visually treats the parameter as a text field and fails to match the Power BI date field. You have three work-around options:
+When you use a Power BI semantic model as the data source for your paginated report and set up a date parameter in your query that then automatically generates the parameter table and parameter, using that parameter in a paginated report parameter will fail. The paginated report visually treats the parameter as a text field and fails to match the Power BI date field. You have three work-around options:
 
 - From the same Power BI data source, create a new dataset with only the date values. Use this dataset as the available values for your parameter, setting the data type of the parameter as Date/Time.
 - Manually change the DAX query text in the auto-generated dataset to remove the part that sets the parameter to be a text value.  
-- Change the Power BI dataset using Power Query to add a column that formats the date field as a text field.
+- Change the Power BI semantic model using Power Query to add a column that formats the date field as a text field.
 
 ## Next steps
 

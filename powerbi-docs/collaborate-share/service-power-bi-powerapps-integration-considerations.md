@@ -24,7 +24,7 @@ Since actions such as exporting a solution or adding a solution involve removing
 
 ## Cross-geo operations
 
-Working with Power Apps solutions, you can add Power BI report and dataset components from Power BI workspaces to a solution. If the report or the dataset you selected to add to your solution is in a different geography than the Power Apps environment you are trying to move it to, it is called a cross-geo operation. Another example of a situation where cross-geo operations might take place is when the dedicated target environment workspace in Power BI (that was created automatically when the first Power BI component was added to the solution), is not located in the same geography as the Power Apps environment.
+Working with Power Apps solutions, you can add Power BI report and semantic model components from Power BI workspaces to a solution. If the report or the semantic model you selected to add to your solution is in a different geography than the Power Apps environment you are trying to move it to, it is called a cross-geo operation. Another example of a situation where cross-geo operations might take place is when the dedicated target environment workspace in Power BI (that was created automatically when the first Power BI component was added to the solution), is not located in the same geography as the Power Apps environment.
 
 The Power BI/Power Apps solutions integration supports cross-geo operations, provided that information sharing between the Power Platform environment and the Power BI workspaces has been [enabled](#enabling-and-disabling-cross-geo-operations).
 

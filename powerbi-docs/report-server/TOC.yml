@@ -68,7 +68,7 @@
         href: ../paginated-reports/paginated-reports-enter-data.md
       - name: "Work with KPIs"
         href: /sql/reporting-services/working-with-kpis-in-reporting-services
-      - name: "Access shared datasets as OData feeds"
+      - name: "Access shared semantic models as OData feeds"
         href: access-dataset-odata.md
       - name: "Change data source connection strings with PowerShell"
         href: connect-data-source-apis.md

@@ -15,7 +15,7 @@ LocalizationGroup: Administration
 
 Metadata scanning facilitates governance over your organization's Power BI data by making it possible to quickly catalog and report on all the metadata of your organization's Power BI artifacts. It accomplishes this using a set of Admin REST APIs that are collectively known as the *scanner APIs*.
 
-With the scanner APIs, you can extract information such as artifact name, owner, sensitivity label, endorsement status, and last refresh. For datasets, you can also extract the metadata of some of the objects they contain, such as table and column names, measures, DAX expressions, mashup queries, and so forth. The metadata of these dataset internal objects is referred to as subartifact metadata.
+With the scanner APIs, you can extract information such as artifact name, owner, sensitivity label, endorsement status, and last refresh. For semantic models, you can also extract the metadata of some of the objects they contain, such as table and column names, measures, DAX expressions, mashup queries, and so forth. The metadata of these semantic model internal objects is referred to as subartifact metadata.
 
 For a more extensive list of the artifact and subartifact metadata that metadata scanning returns, see the [documentation for the Admin - WorkspaceInfo GetScanResult API](/rest/api/power-bi/admin/workspace-info-get-scan-result).
 
@@ -64,10 +64,10 @@ Divide this list into chunks of up to 100 workspaces, and get the data for these
 
 ## Considerations and limitations
 
-* Datasets that haven't been refreshed or republished will be returned in API responses but without their subartifact information and expressions. For example, dataset name and lineage are included in the response, but not the dataset's table and column names.
-* Datasets containing only **DirectQuery** tables will return subartifact metadata only if some sort of action has been taken on the dataset, such as someone building a report on top of it, someone viewing a report based on it, etc.
-* [Real-time datasets](../connect-data/service-real-time-streaming.md), datasets with [object-level security](https://powerbi.microsoft.com/blog/object-level-security-ols-is-now-generally-available-in-power-bi-premium-and-pro/), datasets with a live connection to *AS-Azure* and *AS on-premises*, and Excel full fidelity datasets aren't supported for subartifact metadata. For unsupported datasets, the response returns the reason for not getting the subartifact metadata from the dataset. It's found in a field named **schemaRetrievalError**, for example, **schemaRetrievalError: Unsupported request. RealTime dataset are not supported**.
-* The API doesn't return subartifact metadata for datasets that are larger than 1 GB in shared workspaces. In Premium workspaces, there's no size limitation on datasets.
+* Semantic models that haven't been refreshed or republished will be returned in API responses but without their subartifact information and expressions. For example, semantic model name and lineage are included in the response, but not the semantic model's table and column names.
+* Semantic models containing only **DirectQuery** tables will return subartifact metadata only if some sort of action has been taken on the semantic model, such as someone building a report on top of it, someone viewing a report based on it, etc.
+* [Real-time datasets](../connect-data/service-real-time-streaming.md), semantic models with [object-level security](https://powerbi.microsoft.com/blog/object-level-security-ols-is-now-generally-available-in-power-bi-premium-and-pro/), semantic models with a live connection to *AS-Azure* and *AS on-premises*, and Excel full fidelity datasets aren't supported for subartifact metadata. For unsupported datasets, the response returns the reason for not getting the subartifact metadata from the dataset. It's found in a field named **schemaRetrievalError**, for example, **schemaRetrievalError: Unsupported request. RealTime dataset are not supported**.
+* The API doesn't return subartifact metadata for semantic models that are larger than 1 GB in shared workspaces. In Premium workspaces, there's no size limitation on semantic models.
 
 ## Licensing
 

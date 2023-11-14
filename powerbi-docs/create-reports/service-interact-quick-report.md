@@ -47,7 +47,7 @@ If the report that you’re visualizing is based on a single table, select the *
 
 ### Report with multiple tables
  
-If the report that you’re visualizing is based on a dataset with multiple tables, the **Show data table** button becomes a dropdown menu where you pick the table you want to view.
+If the report that you’re visualizing is based on a semantic model with multiple tables, the **Show data table** button becomes a dropdown menu where you pick the table you want to view.
 
 :::image type="content" source="media/service-interact-quick-report/show-data-table-dropdown.png" alt-text="Screenshot showing Show data table dropdown menu.":::
 
@@ -89,8 +89,8 @@ When going through this creation process, you’re creating a model behind the s
 
 | Feature | Status |Details |
 |---------|---------|---------|
-|Application lifecycle management (ALM) | Not currently supported | ALM doesn't work for web-authored datasets. |
-| Template apps | Not currently supported | You can't create template apps from workspaces with web-authored datasets. |
+|Application lifecycle management (ALM) | Not currently supported | ALM doesn't work for web-authored semantic models. |
+| Template apps | Not currently supported | You can't create template apps from workspaces with web-authored semantic models. |
 
 ## Next steps
 

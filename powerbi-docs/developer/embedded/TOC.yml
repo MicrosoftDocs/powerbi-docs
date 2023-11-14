@@ -125,7 +125,7 @@
         href: /rest/api/power-bi/
       - name: "Push datasets limitations"
         href: push-datasets-limitations.md
-      - name: "Datasets permissions"
+      - name: "Semantic models permissions"
         href: datasets-permissions.md            
     - name: "Power BI Developer in a Day course"
       href: ../../learning-catalog/developer-online-course.md

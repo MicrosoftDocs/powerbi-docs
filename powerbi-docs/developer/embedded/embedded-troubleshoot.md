@@ -134,7 +134,7 @@ After assigning the policy, wait approximately 15-20 seconds for propagation bef
 
 `GenerateToken` can fail with effective identity supplied for a few different reasons:
 
-* The dataset doesn't support effective identity.
+* The semantic model doesn't support effective identity.
 * Username wasn't provided.
 * Role wasn't provided.
 * `DatasetId` wasn't provided.
@@ -249,11 +249,11 @@ After acquiring the IError object, you should look at the appropriate common err
 
 In the *user owns data* scenario, sometimes users will get a 401 error that resolves itself after they access the Power BI portal. When the 401 error happens, add the [RefreshUser Permissions](/rest/api/power-bi/users/refresh-user-permissions) call in the app as explained in [Update user permissions](embed-sample-for-your-organization.md#update-user-permissions).
 
-## Datasets
+## Semantic models
 
 ### Manage which portion of the data your users can see
 
-Any user with read permissions for a dataset can see the entire schema (tables, columns and measures) and all the data. You can't control viewing permissions to raw and aggregated data separately in the same dataset.
+Any user with read permissions for a semantic model can see the entire schema (tables, columns and measures) and all the data. You can't control viewing permissions to raw and aggregated data separately in the same semantic model.
 
 To manage which portion of the data your users can view, use one of the following methods:
 
@@ -261,7 +261,7 @@ To manage which portion of the data your users can view, use one of the followin
 
 * [Object level security (OLS)](/analysis-services/tabular-models/object-level-security).
 
-* Separate the data into different datasets. For example, you can create a dataset that only contains aggregated data and give your users access to only that dataset.
+* Separate the data into different semantic models. For example, you can create a semantic model that only contains aggregated data and give your users access to only that semantic model.
 
 ## Content rendering
 

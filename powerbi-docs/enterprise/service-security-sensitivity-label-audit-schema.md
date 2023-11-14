@@ -12,7 +12,7 @@ LocalizationGroup: Data from files
 ---
 # Audit schema for sensitivity labels in Power BI
 
-Whenever a sensitivity label on a dataset, report, dashboard, or dataflow is applied, changed, or removed, that activity is recorded in the audit log for Power BI. You can track these activities in the unified audit log or in the Power BI activity log. For more information, see [Track user activities in Power BI](../admin/service-admin-auditing.md).
+Whenever a sensitivity label on a semantic model, report, dashboard, or dataflow is applied, changed, or removed, that activity is recorded in the audit log for Power BI. You can track these activities in the unified audit log or in the Power BI activity log. For more information, see [Track user activities in Power BI](../admin/service-admin-auditing.md).
 
 This article documents the information in the Power BI auditing schema that's specific to sensitivity labels. It covers the following activity keys:
 
@@ -38,7 +38,7 @@ This field indicates the type of item the label change took place on.
 |--|---------|
 |1|Dashboard|
 |2|Report|
-|3|Dataset|
+|3|Semantic model|
 |7|Dataflow|
 
 ## ActionSource

@@ -21,7 +21,7 @@ LocalizationGroup: Share your work
 
 Power BI designers create official packaged content, then distribute the content to a broad audience organized as an *app*. Apps are created in workspaces where members can collaborate on Power BI content with their colleagues. They publish the finished app to individuals, large groups of people in an organization, or an entire organization. An app can have permissions that are different than the permissions set on a workspace. This capability makes it easier for designers to manage permissions on an app.
 
-An app combines related content, like dashboards, spreadsheets, datasets, and reports, all in one place. An app has one or more of each content type bundled together. There are many ways a designer can share an app. You can learn more about how apps are shared in the [Get a new app](#get-a-new-app) section below.
+An app combines related content, like dashboards, spreadsheets, semantic models, and reports, all in one place. An app has one or more of each content type bundled together. There are many ways a designer can share an app. You can learn more about how apps are shared in the [Get a new app](#get-a-new-app) section below.
 
 There's a unique type of app called a [template app](../connect-data/service-template-apps-install-distribute.md). A Power BI Pro or Premium Per User license is required to install, customize, and distribute a template app. Power BI partners use the content from template apps to build and package analytical data into a new app. They then deploy that app to other Power BI tenants through an available platform, like AppSource or their own web service.  
 

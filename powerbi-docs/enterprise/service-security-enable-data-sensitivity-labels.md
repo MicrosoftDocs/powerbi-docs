@@ -15,7 +15,7 @@ In order for [sensitivity labels from Microsoft Purview Information Protection](
 
 When sensitivity labels are enabled:
 
-* Specified users and security groups in the organization can classify and [apply sensitivity labels](./service-security-apply-data-sensitivity-labels.md) to their Power BI content. In the Power BI service, this means their reports, dashboards, datasets, and dataflows. In Power BI Desktop, it means their *.pbix* files.
+* Specified users and security groups in the organization can classify and [apply sensitivity labels](./service-security-apply-data-sensitivity-labels.md) to their Power BI content. In the Power BI service, this means their reports, dashboards, semantic models, and dataflows. In Power BI Desktop, it means their *.pbix* files.
 * In the service, all members of the organization will be able to see those labels. In Desktop, only members of the organization who have the labels published to them will be able to see the labels.
 
 Enabling sensitivity labels requires an Azure Information Protection license. See [Licensing and requirements](#licensing-and-requirements) for detail.

@@ -104,7 +104,7 @@ The following aren't supported for **Export to PDF**.  Either the **PDF** export
 * You can share a dashboard with someone outside of your organization--someone who isn't in your Power BI tenant. However, that user can't export the shared dashboard's associated reports to PDF. For example, if you're aaron@contoso.com, you can share with cassie@northwinds.com. But cassie@northwinds.com can't export the associated reports to PDF.
 
 ### General
-* Dataset refresh operations using an XMLA endpoint.
+* Semantic model refresh operations using an XMLA endpoint.
 * In the Power BI service, URL filters aren't currently respected when you choose **Current Values** for your export.
 * Visuals [displayed as a Data table or displayed with "Show as a table"](../consumer/end-user-show-data.md) will be included in the export, but the visual will display in its default state, without the table. 
 * The process of exporting the report to PDF might take a few minutes to complete, so be patient. Factors that can affect the time required include the structure of the report and the current load on the Power BI service or Power BI Desktop.

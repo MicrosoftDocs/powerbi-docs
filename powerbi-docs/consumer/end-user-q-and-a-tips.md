@@ -39,7 +39,7 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 |  |Examples: Order year is before 2012? Price equals between 10 and 20? Is the age of John greater than 40? Total sales in 200-300?              |
 |**Equality (Value)**     |   is, equal, equal to, in, of, for, within, is in, is on |
 |   | Examples: Which products are green? Order date equals 2012. Is the age of John 40? Total sales that aren't equal to 200? Order date of 1/1/2016. 10 in price? Green for color?              |
-|**Names**     |       If a column in the dataset contains the phrase "name" (for example, EmployeeName), Q&A understands the values in that column are names. You can ask questions like "which employees are named robert."          |
+|**Names**     |       If a column in the semantic model contains the phrase "name" (for example, EmployeeName), Q&A understands the values in that column are names. You can ask questions like "which employees are named robert."          |
 |**Pronouns**  | he, him, himself, his, she, herself, her, hers, it, itself, its, they, their, them, themselves, theirs, this, these, that, those|
 |**Query commands**     |    sorted, sort by, direction, group, group by, by, show, list, display, give me, name, just, only, arrange, rank, compare, to, with, against, alphabetically, ascending, descending, order             |
 |**Range**     |      greater, more, larger, above, over, >, less, smaller, fewer, below, under, <,  at least, no less than, >=, at most, no more than, <=, in, between, in the range of, from, later, earlier, sooner, after, on, at, later than, after, since, starting with, starting from, ending with           |
@@ -57,8 +57,8 @@ Q&A does its best to understand and answer the question being asked. It tries to
 - Autocompletes words and questions. It uses various strategies, including autocompleting recognized words, stored questions, and previously used questions that returned valid responses. If more than one autocomplete option is available, they're presented in a dropdown list.
 - Corrects spelling.
 - Provides a preview of the answer in the form of a visual. The visual updates as you type and edits the question (it doesn't wait for you to press Enter).
-- Suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
-- Restates the question based on the data in the underlying dataset(s). Q&A replaces the words you used with synonyms from the underlying dataset(s). By reading the restatement, you know whether Q&A understood your question or not.
+- Suggests replacement terms from the underlying semantic model(s) when you move the cursor back in the question box.
+- Restates the question based on the data in the underlying semantic model(s). Q&A replaces the words you used with synonyms from the underlying semantic model(s). By reading the restatement, you know whether Q&A understood your question or not.
 - Adds a double underline to words it doesn't understand.
 - Adds a single underline to words it does understand.
 - Allows you to contact the report or dashboard owner when your term isn't found or your question doesn't get results.
