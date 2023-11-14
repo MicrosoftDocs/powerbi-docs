@@ -110,7 +110,7 @@ Now generate a table of contents across your report pages.
 
 "Make a table of contents for this report that contains a brief description of what each page is about." 
 
-:::image type="content" source="media/copilot-prompts/table-contents.png" alt-text="Screenshot showing create a table of contents.":::
+:::image type="content" source="media/copilot-prompts/table-contents.png" alt-text="Screenshot showing create a table of contents." lightbox="media/copilot-prompts/table-contents.png":::
 
 
 ### Create a narrative answer about something specific
@@ -119,7 +119,7 @@ Create a narrative answer investigating something specific in your report.  For 
 
 "Generate a summary explaining the relationship between revenue, location, and primary interest."
 
-:::image type="content" source="media/copilot-prompts/explain-relationship.png" alt-text="Screenshot showing summary explaining the relationship between revenue, location, and primary interest.":::
+:::image type="content" source="media/copilot-prompts/explain-relationship.png" alt-text="Screenshot showing summary explaining the relationship between revenue, location, and primary interest." lightbox="media/copilot-prompts/explain-relationship.png":::
 
  
 ### Considerations and limitations for the narrative visual
