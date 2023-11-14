@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/23/2023
+  ms.date: 11/13/2023
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -35,9 +35,9 @@ highlightedContent:
       itemType: get-started
       url: /fabric/get-started/microsoft-fabric-overview
     # Card
-    - title: "Power BI Premium features"
-      itemType: concept
-      url: enterprise/service-premium-features.md
+    - title: Create report pages with Copilot
+      itemType: how-to-guide
+      url: create-reports/copilot-create-report.md
     # Card
     - title: Get started with DAX
       itemType: training
