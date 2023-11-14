@@ -6,7 +6,7 @@ ms.author: jessicamo
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 10/10/2023
+ms.date: 11/15/2023
 ms.custom: known-issue-522
 ---
 
@@ -16,7 +16,7 @@ If you use an old version of the Fabric Capacity Metrics app, you might see refr
 
 **APPLIES TO:** ✔️ Power BI
 
-**Status:** Open
+**Status:** Fixed: November 15, 2023
 
 **Problem area:** Capacity Management
 
