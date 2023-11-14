@@ -8,7 +8,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 02/13/2023
+ms.date: 11/13/2023
 ms.custom: contperf-fy21q1
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
@@ -162,13 +162,9 @@ In Power BI content, a data model refers to a map of data structures in a table 
 
 Dataflows ingest, transform, integrate, and enrich big data by defining data source connections, Extract Transform Load (ETL) logic, refresh schedules, and more. Formerly called "data pool".
 
-**semantic model**
+**dataset**
 
-A **semantic model** is a collection of data used to create visualizations and reports.
-
-**Desktop** or **Power BI Desktop**
-
-Free Power BI tool used primarily be report designers, admins, and developers.
+Refer to **semantic model**.
 
 **diamond**
 
@@ -499,6 +495,14 @@ Software as a service is a way of delivering applications over the internet as a
 **screenshot**
 
 Simple screenshots of a report can be emailed using the send a screenshot feature.
+
+**semantic model**
+
+A **semantic model** is a collection of data used to create visualizations and reports.
+
+**Desktop** or **Power BI Desktop**
+
+Free Power BI tool used primarily be report designers, admins, and developers.
 
 **service**
 
