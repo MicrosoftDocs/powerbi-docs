@@ -133,7 +133,7 @@ To safeguard the performance of the system, an additional SKU-specific hard ceil
 |  F256/P3/A6  | 10 GB             |
 |  F512/P4/A7  | 10 GB             |
 |  F1024/P5/A8 | 10 GB             |
-|  F2048/P5/A8 | 10 GB             |
+|  F2048       | 10 GB             |
 
 <sup>1</sup>Hard ceiling for Max Offline semantic model size (small storage format).
 
@@ -167,7 +167,7 @@ The default setting is 0, which results in the following SKU-specific automatic 
 |  F256/P3/A6  | 10 GB                        |
 |  F512/P4/A7  | 20 GB                        |
 |  F1024/P5/A8 | 40 GB                        |
-|  F2048/P5/A8 | 40 GB                        |
+|  F2048       | 40 GB                        |
 
 The query limit for a workspace that isn't assigned to a Premium capacity is 1GB.
 

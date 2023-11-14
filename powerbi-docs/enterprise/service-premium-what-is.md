@@ -56,7 +56,7 @@ Capacity administrators automatically have their My workspaces assigned to Premi
 
 ## Semantic model SKU limitation
 
-With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), there's a limit on the memory available for each semantic model based on the SKU. For example, in a Premium P1 capacity, any semantic model that exceeds 25 GB in memory usage would result in failures. Memory upper limits and other constraints for each SKU are listed in the table below.
+With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), there are memory limits and other constraints for each SKU listed in the table below.
 
 | SKU | Max memory (GB)<sup>1, 2</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> | Direct Lake rows per table (in millions)<sup>1, 3</sup>  | Max Direct Lake model size on OneLake (GB)<sup>1, 3</sup> |
 | ----- | --- | ------ | -- | ----- | ------ | --------- |
