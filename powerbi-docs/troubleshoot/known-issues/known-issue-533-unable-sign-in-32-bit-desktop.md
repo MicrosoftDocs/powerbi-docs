@@ -6,7 +6,7 @@ ms.author: jessicamo
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 10/25/2023
+ms.date: 11/15/2023
 ms.custom: known-issue-533
 ---
 
@@ -16,7 +16,7 @@ You can't sign in using the Power BI Desktop 32-bit version 2.122.746.0.
 
 **APPLIES TO:** ✔️ Power BI
 
-**Status:** Open
+**Status:** Fixed: November 15, 2023
 
 **Problem area:** Account & License
 
