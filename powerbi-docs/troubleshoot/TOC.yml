@@ -9,6 +9,8 @@
       href: known-issues/power-bi-known-issues.md
     - name: Active known issues for Fabric + Power BI - interactive report
       href: https://support.fabric.microsoft.com/known-issues
+    - name: Closing a Dataflow Gen1 takes you to the wrong workspace
+      href: known-issues/known-issue-546-closing-dataflow-gen1-takes-wrong-workspace.md
     - name: New card visual formatting appears or disappears in Service
       href: known-issues/known-issue-535-new-card-visual-formatting-appears-disappears.md
     - name: Unable to sign in on 32-bit Power BI Desktop

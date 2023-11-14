@@ -5577,6 +5577,81 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-business-alignment.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-center-of-excellence.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-center-of-excellence",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-change-management.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-change-management",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-community-of-practice.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-community-of-practice",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-conclusion.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-conclusion",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-content-delivery-scope.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-content-delivery-scope",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-content-ownership-and-management.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-content-ownership-and-management",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-data-culture.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-data-culture",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-executive-sponsorship.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-executive-sponsorship",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-governance.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-governance",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-maturity-levels.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-maturity-levels",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-mentoring-and-user-enablement.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-mentoring-and-user-enablement",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-overview.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-system-oversight.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-system-oversight",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-user-support.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-user-support",
+            "redirect_document_id": true
+        },
+        {                                                                                                                                                                                                         
             "source_path": "powerbi-docs/guidance/translation-manage-dataset-enterprise.md",
             "redirect_url": "/power-bi/guidance/translation-manage-data-model-enterprise.md",
             "redirect_document_id": false
