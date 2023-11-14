@@ -3,11 +3,11 @@ title: Write Copilot prompts that produce results in Power BI
 description: Read about samples of prompts that help Copilot produce useful visuals in Power BI.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: guptamaya
+ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 11/09/2023
+ms.date: 11/13/2023
 LocalizationGroup: Create reports
 ---
 
@@ -15,33 +15,39 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Here are some examples of prompts that work well with Copilot for Power BI. Use these prompts as examples. They may not generate the same outcome as these report pages. Each sample prompt is paired with a report page that Copilot generated based on the interpretation of that prompt. Your prompts help Copilot understand what you're looking for, but they may not produce a page that's exactly what you want. It's a starting point for report page creation. Use the user interface to modify the report page that Copilot created. Also, see the [Considerations and limitations section](#considerations-and-limitations) for features that currently don't work.
+Here are some examples of prompts that work well with Copilot for Power BI. Use these prompts as examples.
 
-## Sales performance by product
+## Prompts for creating report pages
+
+Each sample prompt is paired with a report page that Copilot generated based on the interpretation of that prompt. Your prompts help Copilot understand what you're looking for, but they may not produce a page that's exactly what you want. It's a starting point for report page creation. Use the user interface to modify the report page that Copilot created. 
+
+Also, see the [Considerations and limitations section](#considerations-and-limitations-for-visuals-prompts) for features that currently don't work.
+
+### Sales performance by product
 
 "Create a page to analyze the sales amount, revenue, and profit margin of different products, categories, and subcategories over time and across regions."
 
-:::image type="content" source="media/copilot-introduction/copilot-prompt-product-analysis.png" alt-text="Screenshot showing Copilot sample prompt for sales performance." lightbox="media/copilot-introduction/copilot-prompt-product-analysis.png":::
+:::image type="content" source="media/copilot-prompts/copilot-prompt-product-analysis.png" alt-text="Screenshot showing Copilot sample prompt for sales performance." lightbox="media/copilot-prompts/copilot-prompt-product-analysis.png":::
 
-## Customer segmentation and loyalty
+### Customer segmentation and loyalty
 
 "Create a page to identify and compare the characteristics, behaviors, and preferences of different customer segments based on demographic, geographic, and transactional data."
 
-:::image type="content" source="media/copilot-introduction/copilot-prompt-customer-segmentation.png" alt-text="Screenshot showing Copilot sample prompt for Customer segmentation." lightbox="media/copilot-introduction/copilot-prompt-customer-segmentation.png":::
+:::image type="content" source="media/copilot-prompts/copilot-prompt-customer-segmentation.png" alt-text="Screenshot showing Copilot sample prompt for Customer segmentation." lightbox="media/copilot-prompts/copilot-prompt-customer-segmentation.png":::
 
-## Promotion effectiveness and ROI
+### Promotion effectiveness and ROI
 
 "Create a page to evaluate the impact and return on investment of various promotions on sales, revenue, and customer acquisition and retention."
 
-:::image type="content" source="media/copilot-introduction/copilot-prompt-promotion-analysis.png" alt-text="Screenshot showing Copilot sample prompt for Promotion effectiveness." lightbox="media/copilot-introduction/copilot-prompt-promotion-analysis.png":::
+:::image type="content" source="media/copilot-prompts/copilot-prompt-promotion-analysis.png" alt-text="Screenshot showing Copilot sample prompt for Promotion effectiveness." lightbox="media/copilot-prompts/copilot-prompt-promotion-analysis.png":::
 
-## Inventory and supply chain management
+### Inventory and supply chain management
 
 "Create a page to monitor and optimize the inventory levels, reorder points, safety stock, and product costs of different products and product lines based on demand, lead time, and manufacturing costs."
 
-:::image type="content" source="media/copilot-introduction/copilot-prompt-inventory-optimization.png" alt-text="Screenshot showing Copilot sample prompt for Inventory and supply chain management." lightbox="media/copilot-introduction/copilot-prompt-inventory-optimization.png":::
+:::image type="content" source="media/copilot-prompts/copilot-prompt-inventory-optimization.png" alt-text="Screenshot showing Copilot sample prompt for Inventory and supply chain management." lightbox="media/copilot-prompts/copilot-prompt-inventory-optimization.png":::
 
-## Considerations and limitations 
+### Considerations and limitations for visuals prompts
 
 We're continuously working to improve the quality of the report pages, including visuals and summaries generated by Copilot. Here are the current limitations.
 
@@ -51,6 +57,78 @@ We're continuously working to improve the quality of the report pages, including
 - Copilot can't make layout changes. For example, if you tell Copilot to resize the visuals, or to align all the visuals perfectly, it won't work.
 - Copilot can't understand complex intent. For example, suppose you frame a prompt like: "Generate a report to show incidents by team, incident type, owner of the incident, and do this for only 30 days." This prompt is complex, and Copilot will probably generate irrelevant visuals.
 - Copilot doesn't produce a message for the skills that it doesn't support. For example, if you ask Copilot to edit or add a slicer, it won't complete the instruction successfully as mentioned above. Unfortunately, it will *not* give an error message either.  
+
+## Prompts for creating a narrative visual
+
+Each sample prompt is paired with a narrative that Copilot generated based on the interpretation of that prompt. Your prompts help Copilot understand what you're looking for, but they may not produce a narrative that's exactly what you want.  
+
+Modify an existing narrative.  You can use the custom prompt area to modify an existing narrative to adjust the tone, formatting, or tweak the summary to your needs. Following are some examples.
+
+### The original narrative
+
+Here's the original narrative from the suggested prompt:
+
+:::image type="content" source="media/copilot-prompts/suggested-prompt-1.png" alt-text="Screenshot showing original narrative from the suggested prompt." lightbox"media/copilot-prompts/suggested-prompt-1.png":::
+
+### First modification: Custom prompt
+
+First we modify the narrative with this custom prompt:
+
+"Shorten this summary and bold the key information" 
+
+:::image type="content" source="media/copilot-prompts/shortened-summary.png" alt-text="Screenshot showing Shorten this summary and bold the key information." lightbox="media/copilot-prompts/shortened-summary.png":::
+
+### Second modification: Custom prompt
+
+This time, we again modify the summary by using a different custom prompt:
+
+"Make the first bullet point about length of stay."
+
+:::image type="content" source="media/copilot-prompts/length-of-stay-summary.png" alt-text="Screenshot showing Make the first bullet point about length of stay." lightbox="media/copilot-prompts/length-of-stay-summary.png":::
+ 
+### Third modification: Custom prompt
+
+This time, we again modify the summary by using a different custom prompt: 
+
+"Add the question "What are the factors that influence customer retention and return rate?"
+
+:::image type="content" source="media/copilot-prompts/modified-question-prompt.png" alt-text="Screenshot showing factors that influence customer retention and return rate." lightbox="media/copilot-prompts/modified-question-prompt.png":::
+
+
+## Starting from scratch
+
+This time we start from scratch, using custom prompts to generate a narrative. Help the summary focus on one aspect of your data. 
+
+"Generate a summary focused on tourism in Hawaii."
+
+:::image type="content" source="media/copilot-prompts/summary-about-hawaii.png" alt-text="Screenshot showing Generate a summary focused on tourism in Hawaii." lightbox="media/copilot-prompts/summary-about-hawaii.png":::
+
+ 
+### Create a table of contents
+
+Now generate a table of contents across your report pages. 
+
+"Make a table of contents for this report that contains a brief description of what each page is about." 
+
+:::image type="content" source="media/copilot-prompts/table-contents.png" alt-text="Screenshot showing create a table of contents.":::
+
+
+### Create a narrative answer about something specific
+
+Create a narrative answer investigating something specific in your report.  For example, this prompt: 
+
+"Generate a summary explaining the relationship between revenue, location, and primary interest."
+
+:::image type="content" source="media/copilot-prompts/explain-relationship.png" alt-text="Screenshot showing summary explaining the relationship between revenue, location, and primary interest.":::
+
+ 
+### Considerations and limitations for the narrative visual
+
+- The visual is in public preview, and therefore may not be 100% accurate.  We are working to continually improve accuracy every day. 
+- The visual is not designed to answer specific questions and may not be accurate in providing a response. 
+- You cannot edit the generated narrative text directly. 
+- Custom prompts aren't designed for immersive, directing editing experiences, for example, "delete the third word in the third paragraph, and add a line in between the fourth and fifth lines."  It's meant as a helpful tool to tweak the narrative, not fully edit.
+- The visual is designed to produce text only.
 
 ## Send feedback
 
