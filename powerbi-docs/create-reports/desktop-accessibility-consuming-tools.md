@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/30/2023
+ms.date: 11/14/2023
 LocalizationGroup: Create reports
 ---
 # Consume Power BI reports by using accessibility features
@@ -105,18 +105,15 @@ To exit the **Show data** view and return to a report, press **Esc**.
 
 ### Show Visuals as Tables (preview)
 
-Some users may prefer to consume data in a tabular format depending on their different learning styles and usage of assistive technologies. If you'd like to present your  report in tabular format, you can press **Ctrl + Shift + F11** to switch to **Show Visuals as Table** view mode. With a single action, all pages in your report will display most visuals in a table or matrix format, while still allowing interaction and cross-filtering capabilities. 
-
+Some users might prefer to consume data in a tabular format depending on their different learning styles and usage of assistive technologies. If you'd like to present your report in tabular format, you can press **Ctrl + Shift + F11** to switch to **Show Visuals as Table** view mode. With a single action, all pages in your report will display most visuals in a table or matrix format, while still allowing interaction and cross-filtering capabilities. 
 
 To activate, select **View > Show visuals as tables**. To revert back to original visuals, select **View > Show original visuals**. Or simply use the keyboard shortcut **Ctrl + Shift + F11** to toggle between the two views. 
 
 Limitations & Notes: 
 
-* Show Visuals as Tables does not apply to dashboards
+* Show Visuals as Tables doesn't apply to dashboards
 * Show Visuals as Tables only applies to the current report you are viewing (each new report will need to be activated)
-* Show Visuals as Tables does not apply to the following visuals: slicers, cards, smart narrative, Power Apps, Pagainated Report, Key Influencers, Q&A
-
-
+* Show Visuals as Tables doesn't apply to the following visuals: slicers, cards, smart narrative, Power Apps, Paginated Report, Key Influencers, Q&A
 
 ## Next steps
 
