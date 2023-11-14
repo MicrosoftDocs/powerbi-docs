@@ -30,7 +30,7 @@ You must have a Power BI service account to be able to download data. If you're 
    > [!Note]
    > Be sure to choose the sample that's described in the tutorial, quickstart, or article that you're using. 
    
-Power BI imports the sample, and adds a new dashboard, report, and dataset to **My workspace**.
+Power BI imports the sample, and adds a new dashboard, report, and semantic model to **My workspace**.
    
 :::image type="content" source="media/mobile-apps-download-samples/power-bi-service-sample-dashboard.png" alt-text="Screenshot shows imported samples in My workspace in the Power BI service.":::
 

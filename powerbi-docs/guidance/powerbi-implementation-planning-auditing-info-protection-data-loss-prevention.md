@@ -57,7 +57,7 @@ When you've implemented [DLP for Power BI](powerbi-implementation-planning-data-
 
 The [data protection metrics report](/power-bi/enterprise/service-security-data-protection-metrics-report) is a dedicated report in the Power BI admin portal. It summarizes how sensitivity labels are assigned to content in your Power BI tenant.
 
-- **What to look for:** You can gain a quick sense for how frequently sensitivity labels are applied to each type of item (for example, dataset or report) in the Power BI service.
+- **What to look for:** You can gain a quick sense for how frequently sensitivity labels are applied to each type of item (for example, semantic model or report) in the Power BI service.
 - **Actions to take:** Review this report to become familiar with how much content doesn't have a label applied.
 - **Where to find this data:** Power BI administrators can find the data protection metrics report in the Power BI admin portal.
 
@@ -66,7 +66,7 @@ The [data protection metrics report](/power-bi/enterprise/service-security-data-
 
 ## Power BI scanner APIs
 
-The [Power BI scanner APIs](/power-bi/enterprise/service-admin-metadata-scanning) allow you to scan the metadata in your Power BI tenant. The metadata of Power BI items, like datasets and reports, can help you to monitor and review self-service user activity.
+The [Power BI scanner APIs](/power-bi/enterprise/service-admin-metadata-scanning) allow you to scan the metadata in your Power BI tenant. The metadata of Power BI items, like semantic models and reports, can help you to monitor and review self-service user activity.
 
 For example, you might discover that content in a financial workspace has been assigned to three different sensitivity labels. If any of these labels aren't appropriate for financial data, you can apply more suitable labels.
 

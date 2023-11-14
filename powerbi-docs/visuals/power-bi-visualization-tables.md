@@ -78,7 +78,7 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
 You can create a table like the one shown at the beginning of this article and display sales values by item category.
 
-1. On the **Data** pane, expand **Item** and select the **Category** checkbox. Power BI automatically creates a table that lists all the categories in the Retail Analysis Sample dataset.
+1. On the **Data** pane, expand **Item** and select the **Category** checkbox. Power BI automatically creates a table that lists all the categories in the Retail Analysis Sample semantic model.
 
     :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-1.png" alt-text="Screenshot that shows the Category checkbox selected and the default table visual created by Power BI." border="false":::
 

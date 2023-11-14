@@ -1,5 +1,5 @@
 ---
-title: Large datasets, data point limits, and data strategies
+title: Large semantic models, data point limits, and data strategies
 description: Power BI strategies used to render visualizations include data reduction, dynamic limits, and data limits for visuals.
 author: mihart
 ms.author: mihart
@@ -14,17 +14,17 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]
 
-When rendering a visual in Power BI, the visualization must be quick and accurate. That requires underlying algorithms configured for each visual type. Visuals in Power BI must be flexible enough to handle different sizes of datasets. Some datasets have only a handful of data points, while other datasets have petabytes of data points. This article explains the strategies used by Power BI to render visualizations.
+When rendering a visual in Power BI, the visualization must be quick and accurate. That requires underlying algorithms configured for each visual type. Visuals in Power BI must be flexible enough to handle different sizes of semantic models. Some semantic models have only a handful of data points, while other semantic models have petabytes of data points. This article explains the strategies used by Power BI to render visualizations.
 
 ## Data reduction strategies
-Every visual employs one or more *data reduction strategies* to handle the potentially large volumes of data being analyzed. Even a simple table employs a strategy to avoid loading the entire dataset to the client.  The reduction strategy being used varies by visual type. Each visual selects from the supported *data reduction strategies* as part of generating the data request sent to the server.
+Every visual employs one or more *data reduction strategies* to handle the potentially large volumes of data being analyzed. Even a simple table employs a strategy to avoid loading the entire semantic model to the client.  The reduction strategy being used varies by visual type. Each visual selects from the supported *data reduction strategies* as part of generating the data request sent to the server.
 
 Each visual controls the parameters on those strategies to influence the overall amount of data.
 
 ## Strategies
 For each strategy, there are defaults based on the shape and type of data being visualized. But the defaults can be overridden, in the Power BI Formatting pane, to provide the right user experience.
 
-* **Data Windowing** (Segmentation): Allow users to scroll through the data in a visual by progressively loading fragments of the overall dataset.
+* **Data Windowing** (Segmentation): Allow users to scroll through the data in a visual by progressively loading fragments of the overall semantic model.
 * **TopN**: Show only the first N items.
 * **Simple Sample**: Show the first, last, and N evenly distributed items in between.
 * **BottomN**: Show only the last N items.  Useful for monitoring frequently updated data.

@@ -81,7 +81,7 @@ This object has corresponding methods to create `selections` for different types
 
 ### Create selections for categorical data view mapping
 
-Let's review how selections represent categorical data view mapping for a sample dataset:
+Let's review how selections represent categorical data view mapping for a sample semantic model:
 
 | Manufacturer | Type | Value |
 | - | - | - |

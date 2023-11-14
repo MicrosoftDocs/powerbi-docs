@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/17/2023
+ms.date: 11/10/2023
 LocalizationGroup: Administration
 ---
 
@@ -28,7 +28,7 @@ The **WFE** cluster uses Azure AD to authenticate clients, and provide tokens fo
 
 ![Diagram showing the Power BI Architecture focused on the WFE cluster.](media/service-admin-power-bi-security/pbi_security_v2_wfe.png)
 
-The **Back-End** cluster determines how authenticated clients interact with the Power BI service. The **Back-End** cluster manages visualizations, user dashboards, datasets, reports, data storage, data connections, data refresh, and other aspects of interacting with the Power BI service. The **Gateway Role** acts as a gateway between user requests and the Power BI service. Users don't interact directly with any roles other than the **Gateway Role**. **Azure API Management**  eventually handles the **Gateway Role**.
+The **Back-End** cluster determines how authenticated clients interact with the Power BI service. The **Back-End** cluster manages visualizations, user dashboards, semantic models, reports, data storage, data connections, data refresh, and other aspects of interacting with the Power BI service. The **Gateway Role** acts as a gateway between user requests and the Power BI service. Users don't interact directly with any roles other than the **Gateway Role**. **Azure API Management**  eventually handles the **Gateway Role**.
 
 ![Diagram showing the Power BI architecture diagram focused on the Back-End cluster.](media/service-admin-power-bi-security/pbi_security_v2_backend_updated.png)
 
@@ -56,9 +56,9 @@ Platform security for Power BI also includes multi-tenant environment security, 
 
 For more information, see [Microsoft Trust Center, Products and services that run on trust](https://www.microsoft.com/trust-center/product-overview).
 
-As described earlier, on-premises AD servers use a Power BI sign-in to map to a UPN for credentials. However, users must understand the sensitivity of the data they share. After you securely connect to a data source, and then share reports, dashboards, or datasets with others, the recipients are granted access to the report. Recipients don't have to sign in to the data source.
+As described earlier, on-premises AD servers use a Power BI sign-in to map to a UPN for credentials. However, users must understand the sensitivity of the data they share. After you securely connect to a data source, and then share reports, dashboards, or semantic models with others, the recipients are granted access to the report. Recipients don't have to sign in to the data source.
 
-An exception is connecting to **SQL Server Analysis Services** using the **On-premises data gateway**. Dashboards are cached in Power BI, but access to underlying reports or datasets initiates authentication for each user that attempts to access the report or dataset. Access will only be granted if the user has sufficient credentials to access the data. For more information, see [On-premises data gateway in-depth](../connect-data/service-gateway-onprem-indepth.md).
+An exception is connecting to **SQL Server Analysis Services** using the **On-premises data gateway**. Dashboards are cached in Power BI, but access to underlying reports or semantic models initiates authentication for each user that attempts to access the report or semantic model. Access will only be granted if the user has sufficient credentials to access the data. For more information, see [On-premises data gateway in-depth](../connect-data/service-gateway-onprem-indepth.md).
 
 ## Enforcing TLS version usage
 
