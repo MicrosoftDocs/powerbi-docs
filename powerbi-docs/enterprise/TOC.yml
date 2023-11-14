@@ -43,6 +43,8 @@
         href: directlake-fixed-identity.md
       - name: Analyze query processing
         href: directlake-analyze-qp.md
+    - name: OneLake integration for semantic models (Preview)
+      href: onelake-integration-overview.md
   - name: Licensing
     expanded: false
     items:
