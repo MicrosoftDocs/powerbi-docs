@@ -6,6 +6,8 @@ ms.author: owend
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
+ms.custom:
+  - ignite-2023-fabric
 ms.topic: conceptual
 ms.date: 05/16/2023
 LocalizationGroup: Admin
