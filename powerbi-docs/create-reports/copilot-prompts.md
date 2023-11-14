@@ -68,7 +68,7 @@ Modify an existing narrative.  You can use the custom prompt area to modify an e
 
 Here's the original narrative from the suggested prompt:
 
-:::image type="content" source="media/copilot-prompts/suggested-prompt-1.png" alt-text="Screenshot showing original narrative from the suggested prompt." lightbox"media/copilot-prompts/suggested-prompt-1.png":::
+:::image type="content" source="media/copilot-prompts/suggested-prompt-1.png" alt-text="Screenshot showing original narrative from the suggested prompt." lightbox="media/copilot-prompts/suggested-prompt-1.png":::
 
 ### First modification: Custom prompt
 
