@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 07/10/2023
+ms.date: 11/15/2023
 ---
 # Refresh semantic models from the Power BI apps for mobile devices
 
