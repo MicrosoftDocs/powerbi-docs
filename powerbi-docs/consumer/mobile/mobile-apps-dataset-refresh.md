@@ -6,11 +6,11 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 07/10/2023
+ms.date: 11/15/2023
 ---
 # Refresh semantic models from the Power BI apps for mobile devices
 
-As the owner of a semantic model, or a user who has access to the semantic model, you can view semantic model info and refresh status, as well as trigger semantic model refresh, directly from your Power BI mobile app. In addition, whenever a semantic model you own has a scheduled refresh failure, you and [whoever you've specified to receive scheduled refresh failure notifications](../../connect-data/refresh-data.md#getting-refresh-failure-notifications) will get a notification in the app, so that the issue can be addressed in a timely manner.
+As the owner of a semantic model ([previously known as a Power BI dataset](../../connect-data/service-datasets-rename.md)), or a user who has access to the semantic model, you can view semantic model info and refresh status, as well as trigger semantic model refresh, directly from your Power BI mobile app. In addition, whenever a semantic model you own has a scheduled refresh failure, you and [whoever you've specified to receive scheduled refresh failure notifications](../../connect-data/refresh-data.md#getting-refresh-failure-notifications) will get a notification in the app, so that the issue can be addressed in a timely manner.
 
 Semantic model support in the mobile apps focuses on viewing semantic model info and refresh status, and triggering semantic model refresh to address simple scheduled refresh errors. Use the Power BI service to perform more advanced semantic model management tasks and to handle more complicated semantic model refresh errors.
 
