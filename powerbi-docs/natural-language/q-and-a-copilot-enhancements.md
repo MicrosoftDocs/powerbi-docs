@@ -12,7 +12,7 @@ ms.date: 11/14/2023
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-The Q&A visual and its [natural language processing capabilities](q-and-a-content-generation.md) aren't reliant on generative AI. However, you can use Copilot for Power BI to quickly improve the Q&A visual's ability to understand user questions.
+The Q&A visual and its natural language processing capabilities aren't reliant on generative AI. However, you can use Copilot for Power BI to quickly improve the Q&A visual's ability to understand user questions.
 
 :::image type="content" source="media/q-and-a-copilot-enhancements/q-and-a-copilot-suggestions.png" alt-text="Copilot makes synonym suggestions.":::
 
