@@ -278,7 +278,7 @@ conceptualContent:
             - url: https://www.microsoft.com/cloudskillschallenge/ignite/registration/2023?ocid=ignite23_CSC_pbidocs_card
               itemType: concept
               text: Skill up with the Cloud Skills Challenge 
-            - url: https://community.fabric.microsoft.com/t5/Fabric-User-Groups/ct-p/fbc_usergroups
+            - url: /training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
               itemType: concept
               text: Explore our learning paths 
             - url: fundamentals/fabric-get-started.md
@@ -329,6 +329,9 @@ conceptualContent:
             - url: https://community.fabric.microsoft.com/t5/Fabric-User-Groups/ct-p/fbc_usergroups
               itemType: concept
               text: Join a user group
+            - url: https://ideas.fabric.microsoft.com/
+              itemType: concept
+              text: "Vote and contribute product ideas"
             - url: https://powerbi.microsoft.com/blog/
               itemType: concept
               text: "Update blog: What's new"
