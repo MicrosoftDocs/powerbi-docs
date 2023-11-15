@@ -5653,9 +5653,9 @@
         },
         {                                                                                                                                                                                                         
             "source_path": "powerbi-docs/guidance/translation-manage-dataset-enterprise.md",
-            "redirect_url": "/power-bi/guidance/translation-manage-data-model-enterprise.md",
+            "redirect_url": "/power-bi/guidance/translation-manage-data-model-enterprise",
             "redirect_document_id": false
-        }                                                                                                                                                                                                       
+        }                                                                                                                                                                                                                        
   ]          
 
 }

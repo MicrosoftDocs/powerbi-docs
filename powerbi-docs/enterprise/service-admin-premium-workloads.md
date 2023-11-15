@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 07/20/2023
+ms.date: 11/13/2023
 LocalizationGroup: Premium
 ---
 
@@ -121,9 +121,21 @@ This setting is applicable for models in both small semantic model storage forma
 
 To safeguard the performance of the system, an additional SKU-specific hard ceiling for max offline semantic model size is applied, regardless of the configured value. The additional SKU-specific hard ceiling in the below table does not apply to Power BI semantic models stored in large semantic model storage format.
 
-|                                               | EM1/A1   | EM2/A2   | EM3/A3   | P1/A4   | P2/A5  | P3/A6   | P4/A7  | P5/A8 |
-|-----------------------------------------------|----------|----------|----------|---------|--------|---------|--------|-------|
-| **Hard ceiling for Max Offline Semantic model Size** | 3 GB     | 5 GB     | 6 GB     | 10 GB   | 10 GB  | 10 GB   | 10 GB  | 10 GB |
+| SKU          | Limit<sup>1</sup> |
+| ------------ | ----------------- |
+|   F2         |  1 GB             |
+|   F4         |  2 GB             |
+|   F8/EM1/A1  |  3 GB             |
+|   F16/EM2/A2 |  5 GB             |
+|   F32/EM3/A3 |  6 GB             |
+|   F64/P1/A4  | 10 GB             |
+|  F128/P2/A5  | 10 GB             |
+|  F256/P3/A6  | 10 GB             |
+|  F512/P4/A7  | 10 GB             |
+|  F1024/P5/A8 | 10 GB             |
+|  F2048       | 10 GB             |
+
+<sup>1</sup>Hard ceiling for Max Offline semantic model size (small storage format).
 
 #### Max Result Row Set Count
 
@@ -143,9 +155,19 @@ Data refresh operations might also execute DAX queries as part of refreshing the
 
 The default setting is 0, which results in the following SKU-specific automatic query memory limit being applied.
 
-|                                  | EM1/A1   | EM2/A2   | EM3/A3   | P1/A4   | P2/A5   | P3/A6   | P4/A7   | P5/A8   |
-|----------------------------------|----------|----------|----------|---------|---------|---------|---------|---------|
-| **Automatic Query Memory Limit** | 1 GB     | 2 GB     | 5 GB     | 10 GB    | 10 GB    | 10 GB   | 20 GB   | 40 GB   |
+| SKU          | Automatic Query Memory Limit |
+| ------------ | ---------------------------- |
+|   F2         |  1 GB                        |
+|   F4         |  1 GB                        |
+|   F8/EM1/A1  |  1 GB                        |
+|   F16/EM2/A2 |  2 GB                        |
+|   F32/EM3/A3 |  5 GB                        |
+|   F64/P1/A4  | 10 GB                        |
+|  F128/P2/A5  | 10 GB                        |
+|  F256/P3/A6  | 10 GB                        |
+|  F512/P4/A7  | 20 GB                        |
+|  F1024/P5/A8 | 40 GB                        |
+|  F2048       | 40 GB                        |
 
 The query limit for a workspace that isn't assigned to a Premium capacity is 1GB.
 
