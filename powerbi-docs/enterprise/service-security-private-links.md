@@ -351,6 +351,14 @@ There are a few considerations to keep in mind while working with private endpoi
 * Private links resource REST APIs don't support tags.
 * You can't set up a private link to be used by more than one tenant. 
 * Exporting a Power BI report as PDF or PowerPoint is not supported when you enable Azure Private Link in Power BI.
+* The following URLs must be accessible from the client browser which are required for auth:
+
+ - `login.microsoftonline.com`
+ - `aadcdn.msauth.net`
+ - `msauth.net`
+ - `msftauth.net`
+ - `graph.microsoft.com`
+ - `login.live.com`, though this may be different based on account type.
 
 ## Next steps
 
