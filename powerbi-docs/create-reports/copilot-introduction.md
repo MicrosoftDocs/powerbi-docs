@@ -60,7 +60,7 @@ Learn more [narrative visuals](copilot-create-narrative.md).
 
 To use the narrative visual in Copilot reports and create Copilot reports:
 
-- Your tenant admin has to enable the Copilot setting at the tenant level. See the article "Copilot tenant settings (preview)" (fabric/admin/service-admin-portal-copilot)
+- Your tenant admin has to enable the Copilot setting at the tenant level. See the article [Copilot tenant settings (preview)](/fabric/admin/service-admin-portal-copilot)
 - The workspace has to be running on F64 or Premium capacity, for you to access Copilot for the Power BI service.
 - You need either read or write access to the workspace that's on F64 or Premium capacity.
 - If you have limited GPU capacity, Copilot may be throttled.
@@ -79,8 +79,8 @@ Read [Update your data model to work well with Copilot](copilot-evaluate-data.md
 
 For answers to common questions related to business data security and privacy to help your organization get started with Copilot for Fabric, see the articles in the Fabric documentation: 
 
-- Overview of Copilot for Fabric (preview) (/fabric/get-started/copilot-fabric-overview) 
-- "Privacy, security, and responsible use for Copilot for Power BI" (/fabric/get-started/copilot-power-bi-privacy-security) 
+- [Overview of Copilot for Fabric (preview)](/fabric/get-started/copilot-fabric-overview) 
+- [Privacy, security, and responsible use for Copilot for Power BI](/fabric/get-started/copilot-power-bi-privacy-security) 
 
 ## Send feedback
 
@@ -93,8 +93,8 @@ We always welcome your feedback about our products, but especially during public
 - [Write Copilot prompts for creating report pages in Power BI](copilot-prompts-report-pages.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
 - [Write Copilot prompts for creating narrative visuals in Power BI](copilot-prompts-narratives.md)
-- Overview of Copilot for Fabric (preview) (/fabric/get-started/copilot-fabric-overview)
-- Frequently asked questions about Copilot for Power BI and Fabric(/fabric/get-started/copilot-faq-fabric)
-- "Privacy, security, and responsible use for Copilot" article in the Fabric documentation (/fabric/get-started/copilot-privacy-security)
-- "Copilot tenant settings (preview)" article in the Fabric documentation (/fabric/admin/service-admin-portal-copilot)
+- [Overview of Copilot for Fabric (preview)](/fabric/get-started/copilot-fabric-overview)
+- [Frequently asked questions about Copilot for Power BI and Fabric](/fabric/get-started/copilot-faq-fabric)
+- [Privacy, security, and responsible use for Copilot](/fabric/get-started/copilot-privacy-security) article in the Fabric documentation 
+- [Copilot tenant settings (preview)](/fabric/admin/service-admin-portal-copilot) article in the Fabric documentation 
 - [Enhance Q&A with Copilot for Power BI](../natural-language/q-and-a-copilot-enhancements.md)
