@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/26/2023
+ms.date: 11/15/23
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -136,7 +136,7 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 
 ## Considerations and limitations
 - Rendering the report uses some of your capacity. It's classified as a **Background** activity.
-- Your recipient semantic model has a limit of 50 rows of recipients. If the recipient list exceeds 50 rows at any point, only the first 50 recipients receive the subscription email, and the subscription creator receives an error email. 
+- During the Preview of dynamic per recipient subscriptions, your recipient semantic model has a limit of 50 rows of recipients. If the recipient list exceeds 50 rows at any point, only the first 50 recipients receive the subscription email, and the subscription creator receives an error email. 
 - Receiving the subscription email doesn't guarantee access to the report. Report access must be set separately.
 - [Parameter values attempt to map to the *value* and not to the *label*](../paginated-reports/parameters/associate-query-parameter-report-parameter-report-builder.md#associate-a-query-parameter-with-a-report-parameter)  
 - As a Preview feature, it’s not available to customers located in Sovereign Clouds.  
