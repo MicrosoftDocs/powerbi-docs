@@ -1,5 +1,5 @@
 ---
-title: Write Copilot prompts that produce results in Power BI 
+title: Write Copilot prompts for creating report pages in Power BI 
 description: Read about samples of prompts that help Copilot produce useful visuals in Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -19,7 +19,7 @@ Here are some examples of prompts that work well with Copilot for Power BI. Use 
 
 Each sample prompt is paired with a report page that Copilot generated based on the interpretation of that prompt. Your prompts help Copilot understand what you're looking for, but they may not produce a page that's exactly what you want. It's a starting point for report page creation. Use the user interface to modify the report page that Copilot created. 
 
-Also, see the [Considerations and limitations section](#considerations-and-limitations-for-visuals-prompts).
+Also, see the [Considerations and limitations section](copilot-create-report.md#considerations-and-limitations) in the article "Create report pages with Copilot for the Power BI service."
 
 ## Sales performance by product
 

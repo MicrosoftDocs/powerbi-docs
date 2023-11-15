@@ -21,7 +21,7 @@ Each sample prompt is paired with a narrative that Copilot generated based on th
 
 Modify an existing narrative.  You can use the custom prompt area to modify an existing narrative to adjust the tone, formatting, or tweak the summary to your needs. Following are some examples.
 
-Also, see the [Considerations and limitations section](#considerations-and-limitations-for-visuals-prompts) for features that currently don't work.
+Also, see the [Considerations and limitations section](copilot-create-narrative.md#considerations-and-limitations) in the article "Create a narrative with Copilot for Power BI" for features that currently don't work.
 
 ## Start from scratch
 

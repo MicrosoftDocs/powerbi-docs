@@ -56,8 +56,6 @@ Learn more [narrative visuals](copilot-create-narrative.md).
 
 ## Considerations and limitations
 
-
-
 ### Power BI service
 
 To use the narrative visual in Copilot reports and create Copilot reports:
@@ -92,8 +90,9 @@ We always welcome your feedback about our products, but especially during public
 
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)
 - [Create a report with Copilot for Power BI](copilot-create-report.md)
-- [Write Copilot prompts that produce results](copilot-prompts.md)
+- [Write Copilot prompts for creating report pages in Power BI](copilot-prompts-report-pages.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
+- [Write Copilot prompts for creating narrative visuals in Power BI](copilot-prompts-narratives.md)
 - Overview of Copilot for Fabric (preview) (/fabric/get-started/copilot-fabric-overview)
 - Frequently asked questions about Copilot for Power BI and Fabric(/fabric/get-started/copilot-faq-fabric)
 - "Privacy, security, and responsible use for Copilot" article in the Fabric documentation (/fabric/get-started/copilot-privacy-security)
