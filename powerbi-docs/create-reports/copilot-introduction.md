@@ -54,7 +54,7 @@ Learn more [narrative visuals](copilot-create-narrative.md).
 
     :::image type="content" source="media/copilot-introduction/q-and-a-copilot-suggestions.png" alt-text="Copilot can add suggestions for synonyms.":::
 
-## Considerations and limitations
+## Copilot requirements
 
 ### Power BI service
 
