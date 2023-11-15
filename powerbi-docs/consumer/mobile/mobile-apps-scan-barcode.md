@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 01/20/2023
+ms.date: 11/12/2023
 ---
 
 # Scan barcodes from the mobile app to get filtered data
