@@ -7,7 +7,7 @@ ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 11/09/2023
+ms.date: 11/14/2023
 LocalizationGroup: Create reports
 ---
 
@@ -17,7 +17,7 @@ LocalizationGroup: Create reports
 
 Before you start using Copilot with your semantic model, evaluate your data. You may need to do some clean-up work on your semantic model so that Copilot can derive insights from it.
 
-## Criteria for Datasets
+## Considerations for datasets for Copilot use
 
 The following table lists the criteria will help you create accurate reports with Copilot. These items are recommendations that can help in generating accurate Power BI reports.  
 

@@ -7,7 +7,7 @@ ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 11/09/2023
+ms.date: 11/14/2023
 LocalizationGroup: Create reports
 ---
 
@@ -15,39 +15,61 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-This article is to help you get started creating reports with Copilot for Power BI and evaluating the results. Power BI has introduced generative AI that allows you to create reports automatically by selecting the topic for a report or by prompting Copilot on a particular topic, and to generate a text summary of a report page. The following sections cover the details of the features and how to use Copilot.
+Copilot for Microsoft Fabric Public Preview is available in Power BI. It helps you use the transformational power of generative AI to help in you get the most from your data. This article provides an overview of the capabilities that were introduced for Power BI. 
 
-For answers to common questions related to business data security and privacy to help your organization get started with Copilot for Fabric, see the articles in the Fabric documentation:
+## Get started with report creation
 
-- Overview of Copilot for Fabric (preview) (/fabric/get-started/copilot-fabric-overview)
-- "Privacy, security, and responsible use for Copilot for Power BI" (fabric/get-started/copilot-power-bi-privacy-security)
+Power BI has introduced generative AI that allows you to create reports automatically by selecting the topic for a report or by prompting Copilot on a particular topic, and create a narrative visual that generates a summary of your report using generative AI. The following sections cover the details of the features and how to use Copilot.
 
-:::image type="content" source="media/copilot-introduction/copilot-suggest-content.png" alt-text="Screenshot showing asking Copilot to suggest content.":::
+:::image type="content" source="media/copilot-introduction/copilot-internet-sales-analysis.png" alt-text="Screenshot showing Copilot suggested report page.":::
 
 ## Feature overview: Copilot capabilities
 
-You can interact with Copilot in several different ways in Power BI. The main and most obvious way is to open the Copilot pane and ask Copilot to create a report page, or a summary of a page. Copilot can provide a summary of your dataset and an outline of suggested pages for your report.
+You can interact with Copilot in several different ways in Power BI. The main and most obvious way is to open the Copilot pane and ask Copilot to create a report page, or a summary of a page. 
 
-Copilot can generate:  
+Copilot can also create a narrative visual that summarizes a page or a whole report. 
+
+And Copilot can generate synonyms for Q&A, to help your report readers find what they're looking for in your reports.
+
+What follows are examples of what Copilot can generate.
+
+### A report outline of suggested pages
+
+Copilot can provide a summary of your dataset and an outline of suggested pages for your report. Copilot creates a starting point. It might not be perfect, and it might not be exactly what you had in mind. But once you have the starting point, you can modify it from there to be exactly what you want.
 
 - A [report outline of suggested pages for your report](copilot-create-report.md): for example, what each page in the report will be about, and how many pages it will create.  
 - The visuals for the individual pages.
-- A [narrative visual describing the current page](copilot-create-narrative.md).
+
+### A narrative visual
+
+With Copilot, you can create a visual that generates a text summary of the data visualized in your report canvas.  The visual offers suggested prompts, and a space that allows you to direct the summary for your specific needs, offering an easy to read, useful guide for the end user. The summary updates in keeping with slicers and filters, and as the data refreshes. 
+
+Learn more [narrative visuals](copilot-create-narrative.md).
+
+:::image type="content" source="media/copilot-introduction/narrative-questions-leadership.png" alt-text="Narrative visual answering questions.":::
+
+### Synonyms to enhance Q&A
+
 - [Synonyms that you can add to Q&A](../natural-language/q-and-a-copilot-enhancements.md) to improve the Q&A visual's ability to understand user questions.
 
-## Copilot requirements
+    :::image type="content" source="media/copilot-introduction/q-and-a-copilot-suggestions.png" alt-text="Copilot can add suggestions for synonyms.":::
+
+## Considerations and limitations
+
+
 
 ### Power BI service
 
-To use the summary skill in Copilot reports and create Copilot reports:
+To use the narrative visual in Copilot reports and create Copilot reports:
 
-- Your tenant admin has enabled the Copilot setting at the tenant level. See the article "Copilot tenant settings (preview)" (fabric/admin/service-admin-portal-copilot)
-- If the workspace is running on F64 or Premium capacity, then you can access Copilot for the Power BI service.
-- You can have either read or write access to the workspace that's on F64 or Premium capacity.
+- Your tenant admin has to enable the Copilot setting at the tenant level. See the article "Copilot tenant settings (preview)" (fabric/admin/service-admin-portal-copilot)
+- The workspace has to be running on F64 or Premium capacity, for you to access Copilot for the Power BI service.
+- You need either read or write access to the workspace that's on F64 or Premium capacity.
+- If you have limited GPU capacity, Copilot may be throttled.
 
 ### Power BI Desktop
 
-You need write access to a workspace that is on F64 or Power BI Premium in the Power BI service, where you plan to publish the report.
+- You need write access to a workspace that is on F64 or Power BI Premium in the Power BI service, where you plan to publish the report.
 
 ## Before you start using Copilot
 
@@ -57,16 +79,10 @@ You need write access to a workspace that is on F64 or Power BI Premium in the P
 
 Read [Update your data model to work well with Copilot](copilot-evaluate-data.md) for more tips.
 
-## Considerations and limitations
+For answers to common questions related to business data security and privacy to help your organization get started with Copilot for Fabric, see the articles in the Fabric documentation: 
 
-We're continuously working to improve the quality of the report pages, including visuals and summaries generated by Copilot. Here are the current limitations.
-
-- You can't tell it which kind of visual to create.
-- Copilot can't modify the visuals after it has generated them.
-- Copilot can't add filters or set slicers if you specify them in the prompts. For example, if you say: "Create a sales report for the last 30 days." Copilot can't interpret 30 days as a date filter.
-- Copilot can't make layout changes. For example, if you tell Copilot to resize the visuals, or to align all the visuals perfectly, it won't work.
-- Copilot can't understand complex intent. For example, suppose you frame a prompt like: "Generate a report to show incidents by team, incident type, owner of the incident, and do this for only 30 days." This prompt is complex, and Copilot will probably generate irrelevant visuals.
-- Copilot doesn't produce a message for the skills that it doesn't support. For example, if you ask Copilot to edit or add a slicer, it won't complete the instruction successfully as mentioned above. Unfortunately, it will *not* give an error message either.  
+- Overview of Copilot for Fabric (preview) (/fabric/get-started/copilot-fabric-overview) 
+- "Privacy, security, and responsible use for Copilot for Power BI" (/fabric/get-started/copilot-power-bi-privacy-security) 
 
 ## Send feedback
 
@@ -78,7 +94,8 @@ We always welcome your feedback about our products, but especially during public
 - [Create a report with Copilot for Power BI](copilot-create-report.md)
 - [Write Copilot prompts that produce results](copilot-prompts.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
+- Overview of Copilot for Fabric (preview) (/fabric/get-started/copilot-fabric-overview)
 - Frequently asked questions about Copilot for Power BI and Fabric(/fabric/get-started/copilot-faq-fabric)
-- "How Copilot works: Privacy, security, and responsible use for Copilot" article in the Fabric documentation (/fabric/get-started/copilot-privacy-security)
+- "Privacy, security, and responsible use for Copilot" article in the Fabric documentation (/fabric/get-started/copilot-privacy-security)
 - "Copilot tenant settings (preview)" article in the Fabric documentation (/fabric/admin/service-admin-portal-copilot)
 - [Enhance Q&A with Copilot for Power BI](../natural-language/q-and-a-copilot-enhancements.md)

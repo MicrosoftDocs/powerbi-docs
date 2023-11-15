@@ -104,12 +104,14 @@
           href: copilot-introduction.md
         - name: Update a data model to work with Copilot
           href: copilot-evaluate-data.md
-        - name: Create a report with Copilot
+        - name: Create report pages with Copilot
           href: copilot-create-report.md
-        - name: Write successful prompts for Copilot
-          href: copilot-prompts.md
-        - name: Create a narrative summary visual of a page
+        - name: Write prompts for Copilot report pages
+          href: copilot-prompts-report-pages.md
+        - name: Create a narrative visual of a page
           href: copilot-create-narrative.md
+        - name: Write prompts for Copilot narratives
+          href: copilot-prompts-narratives.md
         - name: Enhance Q&A with Copilot
           href: ../natural-language/q-and-a-copilot-enhancements.md
     - name: Enable automatic page refresh
