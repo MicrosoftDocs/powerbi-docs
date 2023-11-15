@@ -129,7 +129,7 @@ Power BI Desktop for Power BI Report Server doesn't support information protecti
 Sensitivity labels are supported in the following sovereign clouds:
 
 * [US Government](/power-bi/enterprise/service-govus-overview): GCC, GCC High, DoD
-* China: Customers in China must enable rights management for the tenant and add the Microsoft Purview Information Protection Sync Service service principle, as described in steps 1 and 2 under [Configure Azure Information Protection for customers in China](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection.md?view=o365-21vianet&preserve-view=true).
+* China: Customers in China must enable rights management for the tenant and add the Microsoft Purview Information Protection Sync Service service principle, as described in steps 1 and 2 under [Configure Azure Information Protection for customers in China](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection#configure-aip-for-customers-in-china).
 
 ## Sensitivity label support in template apps
 
