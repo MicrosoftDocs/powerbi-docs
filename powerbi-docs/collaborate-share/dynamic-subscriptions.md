@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/26/2023
+ms.date: 11/15/2023
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -18,13 +18,13 @@ LocalizationGroup: Common tasks
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a paginated report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which parameters are applied to their version of the report. 
-The dynamic subscription parameters are stored in a separate Power BI semantic model. The semantic model defines the mapping between recipients and respective parameters. When it’s time to send out the report, the latest data available in your semantic model will determine who receives a subscription and with what parameter(s) applied. 
+The dynamic subscription parameters are stored in a separate Power BI semantic model. The semantic model defines the mapping between recipients and respective parameters. When it’s time to send out the report, the latest data available in your semantic model determines who receives a subscription and with what parameter applied. 
 
 :::image type="content" source="media/dynamic-subscriptions/power-bi-paginated-report.png" alt-text="Screenshot of a paginated report.":::
 
 > [!IMPORTANT]
 > Dynamic subscriptions is currently in PREVIEW and only available for paginated reports.
-> This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> This information relates to a prerelease product that might be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 
 
@@ -36,7 +36,7 @@ The dynamic subscription parameters are stored in a separate Power BI semantic m
 
 ## Create a dynamic subscription
 
-Have you wanted to create one subscription that sends customized views of a report to your subscribers based on parameters that you set? Perhaps you're a training director and want to send a report to various managers, each interested in the completion progress of their employees. Now you can create a subscription and customize the report so that each manager only sees data related to their own employees. This is done by connecting to a Power BI semantic model that defines the mapping between recipients and parameters. When it's time to send out the report, the latest data available in this semantic model determines which manager receives a report in their inbox, and what parameters are applied to that report.
+Do you want to create one subscription that sends customized views of a report to your subscribers based on parameters that you set? Perhaps you're a training director and want to send a report to various managers, each interested in the completion progress of their employees. Now you can create a subscription and customize the report so that each manager only sees data related to their own employees. To do this, Power BI connects to a semantic model that defines the mapping between recipients and parameters. When it's time to send out the report, the latest data available in this semantic model determines which manager receives a report in their inbox, and what parameters are applied to that report.
 
 For users familiar with SQL Server Reporting Services (SSRS), this feature is similar to data-driven subscriptions. 
 
@@ -61,13 +61,13 @@ Start with a paginated report that has parameters. You know that the report has 
 
 1. Highlight the Power BI semantic model that contains your recipient data. Recipient data includes columns for email address, parameters that can be varied per recipient, and optionally, attachment type and email subject. 
 
-    In some organizations, there might be a corporate employee Power BI semantic model that fits the purpose. Or, you may need to create a new semantic model that contains email addresses, and values for report parameters. The critical piece of data is the email addresses. In order for you to set the parameters on a per-recipient basis, the semantic model needs to include the email addresses of all potential recipients. Select **Next**. In this example, our parameter mapping semantic model is named **Training data**. 
+    In some organizations, there might be a corporate employee Power BI semantic model that fits the purpose. Or, you might need to create a new semantic model that contains email addresses, and values for report parameters. The critical piece of data is the email addresses. In order for you to set the parameters on a per-recipient basis, the semantic model needs to include the email addresses of all potential recipients. Select **Next**. In this example, our parameter mapping semantic model is named **Training data**. 
 
     :::image type="content" source="media/dynamic-subscriptions/power-bi-training-data.png" alt-text="Screenshot of the Power BI service showing Connect to recipient data step of the wizard, with Training data outlined in red.":::
 
 ### Select and filter data
 
-The **Select and filter data** window lists the fields that can be set dynamically. In this example we have a field for email address and we have several parameters. Select the columns from your semantic model that you want to be varied for each recipient. Email address and parameters can be set dynamically based on data in the Power BI semantic model. 
+The **Select and filter data** window lists the fields that can be set dynamically. In this example, we have a field for email address and we have several parameters. Select the columns from your semantic model that you want to be varied for each recipient. Email address and parameters can be set dynamically based on data in the Power BI semantic model. 
 
 1. The **Select and filter data** window displays the list of fields from the *Training data* semantic model that can be used to dynamically filter your *Manager training* report subscription. In this example, we have **Email address**, **Email subject**, **Report parameters**, and **Attachment file type**. These fields from the *Training data* semantic model can be tied to the subscription. 
 
@@ -95,12 +95,12 @@ In the **Email details** window, name the subscription, add recipients and a sub
 
 ### Select the parameters
 
-The **Parameters** window displays all of your report parameters, and you choose which to set dynamically based on a column in the Power BI semantic model. Paginated reports allow you to specify the view of the report people receive in the subscription by setting the parameters in the **Parameters** window. For each parameter, decide whether to use the current value, default value, or dynamic value. For our scenario, sending training completion reports to managers, it makes sense to use the Manager name dynamic parameter and the Employee name dynamic parameter. But there are other scenarios where you might want to use a mix of static and dynamic parameters. For example, if your report had continent and country-region data, you might want to set the continent as South America and use dynamic parameters for the countries.
+The **Parameters** window displays all of your report parameters, and you choose which to set dynamically based on a column in the Power BI semantic model. Paginated reports allow you to specify the view of the report people receive in the subscription by setting the parameters in the **Parameters** window. For each parameter, decide whether to use the current value, default value, or dynamic value. For our scenario, sending training completion reports to managers, it makes sense to use the Manager name dynamic parameter and the Employee name dynamic parameter. But there are other scenarios where you might want to use a mix of static and dynamic parameters. For example, if your report had continent and country-region data, you might want to set the continent as South America and use dynamic parameters for the country-regions.
 
 :::image type="content" source="media/dynamic-subscriptions/power-bi-employee-parameter.png" alt-text="Screenshot of the Power BI service showing dynamic parameter options on the Parameters window.":::
 
 - **Current** uses the value from the currently selected active version of the report. To update the current values, re-render the paginated report with different values, open the **Subscribe to report** wizard, and select **Current**.
-- **Default** uses the value set by the report author. For example, if the report author has set expression-based parameters (for example, the default is always today's date), the subscription uses that as the default value. 
+- **Default** uses the value set by the report author. For example, if the report author set expression-based parameters (for example, the default is always today's date), the subscription uses that as the default value. 
 - **Get from data** lets you select a column from your semantic model to define a different parameter for each recipient.  
 
 ### Set the schedule
@@ -108,7 +108,7 @@ The **Parameters** window displays all of your report parameters, and you choose
 In the **Set the schedule** window, create a schedule for your dynamic subscription. 
 1. Select a Start date and optionally, an End date for your subscription. By default, the start date is the date you created the subscription and the end date is one year later. You can change it to any date in the future at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You receive notifications before the scheduled end date to ask if you'd like to extend it.
 
-1. Use the **Repeat** dropdown to select a frequency for your subscription. You may choose daily, weekly, or monthly. You also have the option to adjust your time zone. 
+1. Use the **Repeat** dropdown to select a frequency for your subscription. You might choose daily, weekly, or monthly. You also can adjust your time zone. 
  
     > [!TIP]
    > To receive a subscription email only on certain days, select Weekly and then select the week day checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
@@ -136,7 +136,7 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 
 ## Considerations and limitations
 - Rendering the report uses some of your capacity. It's classified as a **Background** activity.
-- Your recipient semantic model has a limit of 50 rows of recipients. If the recipient list exceeds 50 rows at any point, only the first 50 recipients receive the subscription email, and the subscription creator receives an error email. 
+- During the Preview of dynamic per recipient subscriptions, your recipient semantic model has a limit of 50 rows of recipients. If the recipient list exceeds 50 rows at any point, only the first 50 recipients receive the subscription email, and the subscription creator receives an error email. 
 - Receiving the subscription email doesn't guarantee access to the report. Report access must be set separately.
 - [Parameter values attempt to map to the *value* and not to the *label*](../paginated-reports/parameters/associate-query-parameter-report-parameter-report-builder.md#associate-a-query-parameter-with-a-report-parameter)  
 - As a Preview feature, it’s not available to customers located in Sovereign Clouds.  
