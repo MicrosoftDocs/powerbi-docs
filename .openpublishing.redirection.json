@@ -5237,8 +5237,8 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/admin/service-admin-portal-content-pack-app.md",
-            "redirect_url": "/fabric/admin/service-admin-portal-content-pack-app",
+            "source_path": "powerbi-docs/admin/service-admin-portal-app.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-app",
             "redirect_document_id": false
         },
         {
