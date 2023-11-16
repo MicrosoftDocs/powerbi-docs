@@ -41,7 +41,7 @@ You can also export paginated reports to many formats:
 
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-page-thru-report.png" alt-text="Screenshot of the Page through feature to view the report highlighted.":::
 
-4. To **Search** for content the report, type all or part of the content you are looking for in the report. This will search for content across all pages of the report.
+4. To **Search**, type all or part of the content you are looking for in the report. This will search for the content across all pages of the report.
    
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-search.png" alt-text="Screenshot of Search highlighted.":::
 
@@ -56,7 +56,9 @@ You can also export paginated reports to many formats:
 
 ## Considerations and Limitations 
 - You can only search in "Web layout"
-- Switching between "Web layout" and "Print layout" won't re-enable the Search box. Please re-open the report. 
+- You need at least one letter/number/character to Search
+- Search will not work if there are over 300 rows/page
+- You can only sort on one column
 
 ## Next steps
 
