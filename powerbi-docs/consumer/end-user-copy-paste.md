@@ -7,7 +7,7 @@ ms.reviewer: maggie.tsang
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/18/2023
+ms.date: 11/16/2023
 LocalizationGroup: Visualizations
 ---
 # Copy a visual and then paste it into another application
@@ -75,6 +75,8 @@ A: We currently support native Power BI visuals and certified custom visuals. Th
 * Python visuals
 * R visuals
 * PowerApps visuals
+* [Licensed visuals](../developer/visuals/licensing-faq.yml#what-are-licensed-visuals)
+* [AppSource visuals that are available only for your organization](/fabric/admin/organizational-visuals#add-a-visual-from-appsoruce)
 
 A: The ability to copy a visual can be turned off by your IT department or Power BI administrator.
 
