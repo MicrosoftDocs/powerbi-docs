@@ -33,7 +33,7 @@ You can also export paginated reports to many formats:
 
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-in-service.png" alt-text="Screenshot of the workspace in the Power BI service and a paginated report highlighted.":::
 
-2. If the report has parameters, they won't appear when you first open it. Select **Parameters**, then select **View Report**. You will see a notification of the fields required to open the report. You can change the parameters at any time.</br></br>The following example shows a report with a parameter that requires the selection of a company.
+2. If the report has **Required** parameters, they won't appear when you first open it. Select **Parameters**, then select **View Report**. You will see a notification of the fields required to open the report. You can change the parameters at any time.</br></br>The following example shows a report with a parameter that requires the selection of a company.
 
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-select-parameters.png" alt-text="Screenshot of the Parameters to view the report with the required field highlighted.":::
 
@@ -43,11 +43,11 @@ You can also export paginated reports to many formats:
 
 4. To **Search** for content the report, type all or part of the content you are looking for in the report. This will search for content across all pages of the report.
    
-    :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-search.png" alt-text="Screenshot the Export button highlighted, and the dropdown menu open.":::
+    :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-search.png" alt-text="Screenshot of Search highlighted.":::
 
 5. You can also sort by clicking on the **sort** icon on the report.
    
-    :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-sort.png" alt-text="Screenshot the Export button highlighted, and the dropdown menu open.":::
+    :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-sort.png" alt-text="Screenshot of sort highlighted.":::
    
 
 6. To export your report to a different format, select **Export**. Then choose the format you want to use from the dropdown menu.
