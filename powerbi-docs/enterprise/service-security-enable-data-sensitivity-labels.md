@@ -14,8 +14,8 @@ In order for [sensitivity labels from Microsoft Purview Information Protection](
 
 When sensitivity labels are enabled:
 
-* Specified users and security groups in the organization can classify and [apply sensitivity labels](./service-security-apply-data-sensitivity-labels.md) to their Power BI content. In the Power BI service, this means their reports, dashboards, semantic models, and dataflows. In Power BI Desktop, it means their *.pbix* files.
-* In the service, all members of the organization will be able to see those labels. In Desktop, only members of the organization who have the labels published to them will be able to see the labels.
+* Specified users and security groups in the organization can [apply sensitivity labels](/fabric/get-started/apply-sensitivity-labels) to their Fabric content. In the Fabric service, this means any Fabric item. In Power BI Desktop, it means their *.pbix* files.
+* In the service, all members of the organization can see those labels. In Desktop, only members of the organization who have the labels published to them can see the labels.
 
 Enabling sensitivity labels requires an Azure Information Protection license. See [Licensing and requirements](#licensing-and-requirements) for detail.
 
@@ -57,11 +57,11 @@ To enable sensitivity labels on your tenant:
 
 1. Expand the  **Allow users to apply sensitivity labels for content** setting.
 
-1. Turn the toggle switch on.
+1. Turn on the toggle switch.
 
 1. Define who can apply and change sensitivity labels on Fabric items:
 
-    * Select **The entire organization** if you want everyone in the origanization to be able to apply and change labels on items. This is the default setting.
+    * Select **The entire organization** if you want everyone in the organization to be able to apply and change labels on items. This is the default setting.
 
     * Select **Specific security groups** if you want to allow this capability for only certain users. Make sure that the security group(s) you specify contain only users who you want to be able to apply and change sensitivity labels on items.
 
