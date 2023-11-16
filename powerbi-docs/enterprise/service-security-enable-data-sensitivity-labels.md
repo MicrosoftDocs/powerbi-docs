@@ -53,9 +53,7 @@ To enable sensitivity labels on your tenant:
 
 1. Choose **Tenant settings** on the navigation pane.
 
-1. Expand the **Information protection** section.
-
-1. Expand the  **Allow users to apply sensitivity labels for content** setting.
+1. Find the **Information protection** section and expand **Allow users to apply sensitivity labels for content**.
 
 1. Turn on the toggle switch.
 
