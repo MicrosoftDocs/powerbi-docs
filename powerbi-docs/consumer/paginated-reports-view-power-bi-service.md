@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: View a paginated report
 ms.topic: how-to
-ms.date: 01/23/2023
+ms.date: 11/23/2023
 ---
 
 # View a paginated report in the Power BI service
@@ -33,17 +33,30 @@ You can also export paginated reports to many formats:
 
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-in-service.png" alt-text="Screenshot of the workspace in the Power BI service and a paginated report highlighted.":::
 
-1. If the report has parameters, they won't appear when you first open it. Select **Parameters**, then select **View Report**. You will see a notification of the fields required to open the report. You can change the parameters at any time.</br></br>The following example shows a report with a parameter that requires the selection of a company.
+2. If the report has parameters, they won't appear when you first open it. Select **Parameters**, then select **View Report**. You will see a notification of the fields required to open the report. You can change the parameters at any time.</br></br>The following example shows a report with a parameter that requires the selection of a company.
 
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-select-parameters.png" alt-text="Screenshot of the Parameters to view the report with the required field highlighted.":::
 
-1. When you have a multiple-page report, use the page through feature. You can use the arrows at the top of the page or type a page number in the box. Look at the following example to see where to find the page through feature.
+3. When you have a multiple-page report, use the page through feature. You can use the arrows at the top of the page or type a page number in the box. Look at the following example to see where to find the page through feature.
 
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-page-thru-report.png" alt-text="Screenshot of the Page through feature to view the report highlighted.":::
 
-1. To export your report to a different format, select **Export**. Then choose the format you want to use from the dropdown menu.
+4. To **Search** for content the report, type all or part of the content you are looking for in the report. This will search for content across all pages of the report.
+   
+    :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-search.png" alt-text="Screenshot the Export button highlighted, and the dropdown menu open.":::
+
+5. You can also sort by clicking on the **sort** icon on the report.
+   
+    :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-sort.png" alt-text="Screenshot the Export button highlighted, and the dropdown menu open.":::
+   
+
+6. To export your report to a different format, select **Export**. Then choose the format you want to use from the dropdown menu.
 
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-export.png" alt-text="Screenshot the Export button highlighted, and the dropdown menu open.":::
+
+## Considerations and Limitations 
+- You can only search in "Web layout"
+- Switching between "Web layout" and "Print layout" won't re-enable the Search box. Please re-open the report. 
 
 ## Next steps
 
