@@ -43,11 +43,11 @@ You can also export paginated reports to many formats:
 
 4. To **Search** for content the report, type all or part of the content you are looking for in the report. This will search for content across all pages of the report.
    
-    :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-search.png" alt-text="Screenshot of Search highlighted.":::
+    :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-search.png" alt-text="Screenshot of Search highlighted.":::
 
 5. You can also sort by clicking on the **sort** icon on the report.
    
-    :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-sort.png" alt-text="Screenshot of sort highlighted.":::
+    :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-sort.png" alt-text="Screenshot of sort highlighted.":::
    
 
 6. To export your report to a different format, select **Export**. Then choose the format you want to use from the dropdown menu.
