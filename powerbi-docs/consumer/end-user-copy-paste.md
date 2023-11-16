@@ -75,7 +75,7 @@ A: We currently support native Power BI visuals and certified custom visuals. Th
 * Python visuals
 * R visuals
 * PowerApps visuals
-* [Licensed visuals](../developer/visuals/licensing-faq.yml#what-are-licensed-visuals)
+* [Licensed visuals](../developer/visuals/licensing-faq.yml#what-are-licensed-visuals-)
 * [AppSource visuals that are available only for your organization](/fabric/admin/organizational-visuals#add-a-visual-from-appsoruce)
 
 A: The ability to copy a visual can be turned off by your IT department or Power BI administrator.
