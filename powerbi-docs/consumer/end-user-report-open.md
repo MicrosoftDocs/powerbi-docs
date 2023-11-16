@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/01/2023
+ms.date: 11/16/2023
 #This article teaches business users how to find and open a report if it has been shared directly or shared via an app, so that the consumer can view and interact with the report.
 ---
 # View a report in the Power BI service for business users
@@ -26,7 +26,7 @@ Power BI designers can share a report with you by sending an email link or by ad
 
 2. On the navigation pane, select **Browse**, and on the **Browse** page, select **Shared**.
 
-    :::image type="content" source="./media/end-user-report-open/power-bi-browse.png" alt-text="Screenshot showing the Browse page and Shared with me is outlined.":::
+    :::image type="content" source="./media/end-user-report-open/power-bi-browse-shared.png" alt-text="Screenshot showing the Browse page and Shared with me is outlined.":::
 
 3. The report icon :::image type="icon" source="./media/end-user-report-open/power-bi-report.png"::: is displayed next to the report name. Open the **Sales and Marketing Sample** report.
 
