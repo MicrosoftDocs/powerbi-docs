@@ -205,6 +205,26 @@ However, this option is disabled in these three scenarios:
 - You've selected **Install this app automatically** on the **Setup** tab. We don't allow automatic installation of an app for an entire organization 
 - You're a guest user who has been assigned a workspace role. 
 - Your admin doesn't allow you to assign an app to your entire organization. You can ask your admin to change this setting in the [Content pack and app tenant settings](/fabric/admin/service-admin-portal-content-pack-app#publish-content-packs-and-apps-to-the-entire-organization) section of tenant settings in the Admin portal. 
+## Change the settings for users who don’t have access
+IMAGE GOES HERE!
+You can control what users see when they attempt to view an app but do not have access. 
+
+The default setting triggers the access request flow. Users will see they are denied access and can submit a request for access. 
+
+But you may also display a custom message. Some organizations have processes and systems outside of Power BI for reviewing and managing access requests. The custom message setting is a chance for you to explain or link to how a user can get access to the Power BI app. 
+### Change the access request behavior 
+You can change the default access request behavior for a Power BI app by going to the Power BI app’s settings and configuring the **Access requests** options as desired. 
+IMAGE GOES HERE!
+The default option (not selected in the preceding image) is for access requests to come to you via email. [See the section below for more on managing access requests.](#manage-app-access-requests) 
+
+The second option is for you to provide instructions about how a user can get access to your Power BI app, rather than receiving requests via email. You might choose this option, for example, if your organization uses an automated system for handling access requests. When users who don't have access to your Power BI app try view it, they see a message with the instructions you provide. 
+
+The **Custom message** text area in the preceding **Access requests** example shows sample instructions. Instructions can be rich text with formatting and links. The following example shows the instructions users see when they try to view a Power BI app they don’t have access to. 
+
+Image Goes Here!
+
+> [!NOTE]
+> Custom messages are not supported on Power BI mobile apps for iOS and Android. If you choose to show a custom message to users who do not have access to your Power BI app, users on mobile will see the default access request flow.
 
 ## Manage app access requests
 
