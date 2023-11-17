@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 07/05/2023
+ms.date: 11/16/2023
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -81,7 +81,7 @@ If your subscription is ready, select **Save**. To make your subscription more p
     > [!CAUTION]
     > Sensitivity labels are not applied to a subscription's email or preview image. To protect against this, turn off **Preview image**.  
     
-You receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.
+You receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day. All dates/times are normalized to UTC when checking for the first dataset refresh of the day. 
 
 > [!NOTE]
 > To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**.
