@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 06/30/2022
+ms.date: 11/15/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 #Customer intent: as a report creator, I want to understand when to use a KPI to visualize my data because there are so many different visual types, I want to be sure that a KPI is the best choice for my intent.  
@@ -123,7 +123,8 @@ KPIs are also available on your mobile devices. It gives you the option to be al
 
 ## Considerations and troubleshooting
 
-If your KPI doesn't look like the one above, it may be because you didn't sort by **FiscalMonth**. KPIs don't have a sort option. You'll need to start again and sort by **FiscalMonth** *before* you convert your visualization to a KPI.
+- If your KPI doesn't look like the one above, it may be because you didn't sort by **FiscalMonth**. KPIs don't have a sort option. You'll need to start again and sort by **FiscalMonth** *before* you convert your visualization to a KPI.   
+- In general, if your KPI doesn't display a trend axis, make sure that the column in the **Value** well is continuous and doesn't include a null value.
 
 ## Next steps
 
