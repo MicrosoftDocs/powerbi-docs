@@ -78,12 +78,12 @@ In the initial phase, the goal is to identify what's most important. Focus on wh
 Here are some questions you should answer.
 
 - **What key questions do you need to answer?** There's a large volume of auditing data you can explore. The most effective way to approach auditing is to focus on answering specific questions.
-- **What are your [adoption](powerbi-adoption-roadmap-overview.md) and [data culture](powerbi-adoption-roadmap-data-culture.md) goals?** For example, perhaps you have a goal to increase the number of self-service BI content creators in the organization. In that case, you'll need to measure user activities related to creating, editing, and publishing content.
+- **What are your [adoption](fabric-adoption-roadmap.md) and [data culture](fabric-adoption-roadmap-data-culture.md) goals?** For example, perhaps you have a goal to increase the number of self-service BI content creators in the organization. In that case, you'll need to measure user activities related to creating, editing, and publishing content.
 - **What immediate risks are present?** For example, you might know oversharing of content has occurred in the past. User training has since been enhanced, and you now want to audit security settings and activities on an ongoing basis.
 - **Are there current key performance indicators (KPIs) or organizational goals?** For example, perhaps you have an organizational KPI that relates to digital transformation or becoming a more data-driven organization. Tenant-level auditing data can help you measure whether your Power BI implementation is aligned with these goals.
 
 > [!TIP]
-> Verify auditing requirements and set priorities with your [executive sponsor](powerbi-adoption-roadmap-executive-sponsorship.md) and [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md). It's tempting to extract auditing data and start creating reports based on a lot of interesting data. However, it's unlikely that you'll derive high value from your auditing solution when it isn't driven by questions you need to answer and actions you intend to take.
+> Verify auditing requirements and set priorities with your [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md) and [Center of Excellence](fabric-adoption-roadmap-center-of-excellence.md). It's tempting to extract auditing data and start creating reports based on a lot of interesting data. However, it's unlikely that you'll derive high value from your auditing solution when it isn't driven by questions you need to answer and actions you intend to take.
 
 For more ideas about ways that you can use auditing data, see [Auditing and monitoring overview](powerbi-implementation-planning-auditing-monitoring-overview.md).
 
@@ -1580,7 +1580,7 @@ Here are some useful fact tables (subjects) that you can include in the data mod
 - **Workspace roles:** A point-in-time snapshot of workspace role assignments.
 - **User licenses:** A point-in-time snapshot of user licenses. While you might be tempted to store the user license in the **Users** dimension table, that approach won't support the analysis of license changes and trends over time.
 - **User group memberships:** A point-in-time snapshot of users (and service principals) assigned to a security group.
-- **Community activities:** Includes community-related facts such as training events. For example, you could analyze Power BI user activities compared to training attendance. This data could help the Center of Excellence identify potential new [champions](powerbi-adoption-roadmap-community-of-practice.md#champions-network).
+- **Community activities:** Includes community-related facts such as training events. For example, you could analyze Power BI user activities compared to training attendance. This data could help the Center of Excellence identify potential new [champions](fabric-adoption-roadmap-community-of-practice.md#champions-network).
 
 Fact tables shouldn't include columns that report creators will filter. Instead, those columns belong to related dimension tables. Not only is this design more efficient for queries, but it also promotes reuse of dimension tables by multiple facts (known as _drill across_). That last point is important to produce a useful and user-friendly data model that's extensible when you add new fact tables (subjects).
 
@@ -1620,7 +1620,7 @@ Consider the following classifications for _user usage_.
 - **Inactive user:** No activity recorded in the last nine months.
 
 > [!TIP]
-> It's helpful to know who your occasional or inactive users are, especially when they have Pro or PPU licenses (which involve cost). It's also helpful to know who your frequent and most active users are. Consider inviting them to join [office hours](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#office-hours) or attend [training](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#training). Your most active content creators might be candidates to join your [champions network](powerbi-adoption-roadmap-community-of-practice.md#champions-network).
+> It's helpful to know who your occasional or inactive users are, especially when they have Pro or PPU licenses (which involve cost). It's also helpful to know who your frequent and most active users are. Consider inviting them to join [office hours](fabric-adoption-roadmap-mentoring-and-user-enablement.md#office-hours) or attend [training](fabric-adoption-roadmap-mentoring-and-user-enablement.md#training). Your most active content creators might be candidates to join your [champions network](fabric-adoption-roadmap-community-of-practice.md#champions-network).
 
 ##### Content usage classification
 
@@ -1703,7 +1703,7 @@ This list isn't all-inclusive. It's intended to provide you with ideas about how
 
 ### Take action based on the data
 
-Auditing data is valuable because it helps you to understand what's happening in your Power BI tenant. While it might seem obvious, explicitly acting on what you learn from the audit data can be easily overlooked. For that reason, we recommend that you assign someone who's responsible for tracking measurable improvements, rather than just reviewing auditing reports. That way, you can make gradual, measurable advances in your adoption and [level of maturity](powerbi-adoption-roadmap-maturity-levels.md) with Power BI.
+Auditing data is valuable because it helps you to understand what's happening in your Power BI tenant. While it might seem obvious, explicitly acting on what you learn from the audit data can be easily overlooked. For that reason, we recommend that you assign someone who's responsible for tracking measurable improvements, rather than just reviewing auditing reports. That way, you can make gradual, measurable advances in your adoption and [level of maturity](fabric-adoption-roadmap-maturity-levels.md) with Power BI.
 
 You can take many different actions based on your goals and what you learn from the auditing data. The remainder of this section provides you with several ideas.
 
@@ -1721,7 +1721,7 @@ Here are some actions you might take based on how content is used.
 Here are some actions you might take based on user activities.
 
 - **First publishing action by a new user:** Identify when a user type changes from consumer to creator, which you can identify when they publish content for the first time. It's a great opportunity to send them a standard email that provides guidance and links to useful resources.
-- **Engagement with the most frequent content creators:** Invite your most active creators to join your [champions network](powerbi-adoption-roadmap-community-of-practice.md#champions-network), or to get involved with your [community of practice](powerbi-adoption-roadmap-community-of-practice.md).
+- **Engagement with the most frequent content creators:** Invite your most active creators to join your [champions network](fabric-adoption-roadmap-community-of-practice.md#champions-network), or to get involved with your [community of practice](fabric-adoption-roadmap-community-of-practice.md).
 - **License management:** Verify whether inactive creators still need a Pro or PPU license.
 - **User trial activation:** A trial license activation can prompt you to assign a permanent license to the user before their trial ends.
 
@@ -1734,7 +1734,7 @@ Here are some user training opportunities that you might identify from the audit
 - **Significant report views from a personal workspace:** Contact a user who owns content that has a high number of report views. Teach them how standard workspaces are better than personal workspaces.
 
 > [!TIP]
-> You can also improve your training content or documentation by reviewing questions answered by your [internal Power BI community](powerbi-adoption-roadmap-user-support.md#internal-community-support) and issues submitted to the [help desk](powerbi-adoption-roadmap-user-support.md#help-desk-support).
+> You can also improve your training content or documentation by reviewing questions answered by your [internal Power BI community](fabric-adoption-roadmap-user-support.md#internal-community-support) and issues submitted to the [help desk](fabric-adoption-roadmap-user-support.md#help-desk-support).
 
 #### Security
 
@@ -1762,7 +1762,7 @@ Here are some situations that you might encounter. Consider explicitly looking f
 - Unexpected or excessive use of subscriptions.
 - Unexpected use of [personal gateways](/power-bi/connect-data/service-gateway-personal-mode).
 
-The specific actions to be taken in each situation will depend on your governance policies. For more information, see [Governance](powerbi-adoption-roadmap-governance.md) in the Power BI adoption roadmap.
+The specific actions to be taken in each situation will depend on your governance policies. For more information, see [Governance](fabric-adoption-roadmap-governance.md) in the Fabric adoption roadmap.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 

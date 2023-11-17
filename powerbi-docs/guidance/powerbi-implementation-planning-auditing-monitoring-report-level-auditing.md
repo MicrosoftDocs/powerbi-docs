@@ -20,7 +20,7 @@ This report-level auditing article is targeted at multiple audiences:
 - **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators might need to collaborate with IT, security, internal audit, and other relevant teams.
 - **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators and other relevant teams.
 
-The concepts covered in this article apply primarily to solutions created for three [content delivery scopes](powerbi-adoption-roadmap-content-delivery-scope.md), specifically enterprise BI, departmental BI, and team BI. Creators of personal BI solutions might find the information in this article useful as well; however, they're not the primary target.
+The concepts covered in this article apply primarily to solutions created for three [content delivery scopes](fabric-adoption-roadmap-content-delivery-scope.md), specifically enterprise BI, departmental BI, and team BI. Creators of personal BI solutions might find the information in this article useful as well; however, they're not the primary target.
 
 This article focuses on auditing and monitoring of reports and visuals. However, achieving good performance for a report and its visuals isn't possible when the underlying semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) and/or data source doesn't perform well. For information about auditing and monitoring of semantic models, dataflows, and datamarts, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md).
 
@@ -35,7 +35,7 @@ To effectively monitor reports, we recommend that you define what report perform
 
 Ideally, performance is a primary concern during the report design process. Here are several situations when you might choose to set performance targets.
 
-- When validating or reviewing a new report (especially when you expect it to have a [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) to a large number of users).
+- When validating or reviewing a new report (especially when you expect it to have a [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md) to a large number of users).
 - Before [endorsing](/power-bi/collaborate-share/service-endorse-content) a report (particularly when it's to be certified).
 - Prior to [publishing](/power-bi/create-reports/desktop-upload-desktop-files) a report to a production workspace.
 - When including a report in a [Power BI app](/power-bi/collaborate-share/service-create-distribute-apps).
@@ -146,13 +146,13 @@ Data is logged when a user interacts with a report element. Logged data includes
 Depending on their experience level, and how roles and responsibilities are divided, a report creator might need assistance to resolve performance issues. That's especially true when trying to understand why a query or calculation is slow. Assistance for a report creator could come in the form of:
 
 - **Collaborating with a data creator:** The root cause of performance issues is often related to the design of the data model.
-- **User support:** Assistance is often [intra-team support](powerbi-adoption-roadmap-user-support.md#intra-team-support) from close colleagues or [internal community support](powerbi-adoption-roadmap-user-support.md#internal-community-support) from other Power BI users in the organization. In some situations, it could also involve [help desk support](powerbi-adoption-roadmap-user-support.md#help-desk-support).
-- **Skills mentoring from the Center of Excellence:** Assistance could also be in the form of [skills mentoring](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#skills-mentoring) activities, such as [office hours](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#office-hours).
+- **User support:** Assistance is often [intra-team support](fabric-adoption-roadmap-user-support.md#intra-team-support) from close colleagues or [internal community support](fabric-adoption-roadmap-user-support.md#internal-community-support) from other Power BI users in the organization. In some situations, it could also involve [help desk support](fabric-adoption-roadmap-user-support.md#help-desk-support).
+- **Skills mentoring from the Center of Excellence:** Assistance could also be in the form of [skills mentoring](fabric-adoption-roadmap-mentoring-and-user-enablement.md#skills-mentoring) activities, such as [office hours](fabric-adoption-roadmap-mentoring-and-user-enablement.md#office-hours).
 
 Some organizations have specific requirements for [endorsed](/power-bi/collaborate-share/service-endorse-content) (certified or promoted) reports. That's particularly true for reports that are widely used throughout the organization. In that case, you might be required (or encouraged) to verify Performance Analyzer results before publishing the report, or before it's certified.
 
 > [!TIP]
-> Well-performing reports have a positive impact on [solution adoption](powerbi-adoption-roadmap-maturity-levels.md#solution-adoption-phases). We recommend that you encourage report creators to test report performance before publishing a new solution to the Power BI service. You should also encourage them to retest performance when significant changes are made to an existing solution (report or semantic model).
+> Well-performing reports have a positive impact on [solution adoption](fabric-adoption-roadmap-maturity-levels.md#solution-adoption-phases). We recommend that you encourage report creators to test report performance before publishing a new solution to the Power BI service. You should also encourage them to retest performance when significant changes are made to an existing solution (report or semantic model).
 >
 > For more information about optimization techniques, see [Optimization guide for Power BI](power-bi-optimization.md).
 

@@ -64,8 +64,8 @@ When you determine specific devices, clients, or web browsers contribute to slow
 For more information about this article, check out the following resources:
 
 - [Power BI guidance](index.yml)
+- [Fabric adoption roadmap](fabric-adoption-roadmap.md)
 - [Monitoring report performance](monitor-report-performance.md)
 - [Performance Analyzer](../create-reports/desktop-performance-analyzer.md)
-- [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Questions? [Try asking the Power BI community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

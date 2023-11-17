@@ -132,13 +132,13 @@ When there's an apparent service outage or degradation, Power BI administrators 
 
 For more information about Power BI support, see [How to contact support](/power-bi/support/service-support-options).
 
-For more information about how to support users in your organization, see [User support](powerbi-adoption-roadmap-user-support.md).
+For more information about how to support users in your organization, see [User support](fabric-adoption-roadmap-user-support.md).
 
 ### Power BI email notifications
 
 You can receive alert notifications by email to inform you when there's a service outage, interruption, or degradation occurring in your Power BI tenant. These notifications are available only for Premium workspaces.
 
-To set up email alerts, enable the _Receive email notifications for service outages or incidents_ [tenant setting](/fabric/admin/service-admin-portal-help-support#receive-email-notifications-for-service-outages-or-incidents). Because its purpose is to send email, you must assign a mail-enabled security group to this setting. We recommend that you use a group name like _Power BI System Support_. You should add your Power BI administrators, key personnel from your [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md) (COE), and your [help desk](powerbi-adoption-roadmap-user-support.md#help-desk-support) that handles user support to this group.
+To set up email alerts, enable the _Receive email notifications for service outages or incidents_ [tenant setting](/fabric/admin/service-admin-portal-help-support#receive-email-notifications-for-service-outages-or-incidents). Because its purpose is to send email, you must assign a mail-enabled security group to this setting. We recommend that you use a group name like _Power BI System Support_. You should add your Power BI administrators, key personnel from your [Center of Excellence](fabric-adoption-roadmap-center-of-excellence.md) (COE), and your [help desk](fabric-adoption-roadmap-user-support.md#help-desk-support) that handles user support to this group.
 
 > [!TIP]
 > When you need to notify your internal users, we recommend that your COE sends a customized message that uses non-technical language. That way, the message can include additional context, and use the preferred communication platform, like a Teams channel.

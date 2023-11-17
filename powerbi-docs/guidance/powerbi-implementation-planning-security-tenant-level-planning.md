@@ -61,9 +61,9 @@ A Power BI administrator belongs to at least one of these [built-in roles](/micr
 
 You'll need to make some tenant-level decisions that relate to security and privacy. The tactics taken and the decisions you make will rely on:
 
-- Your [data culture](powerbi-adoption-roadmap-data-culture.md). The goal is to encourage a data culture that understands that security and protection of data is everyone's responsibility.
-- Your [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) strategies. The level of centralized and decentralized content management significantly affects how security is handled.
-- Your [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) strategies. The number of people who will view content will influence how security should be handled for the content.
+- Your [data culture](fabric-adoption-roadmap-data-culture.md). The goal is to encourage a data culture that understands that security and protection of data is everyone's responsibility.
+- Your [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) strategies. The level of centralized and decentralized content management significantly affects how security is handled.
+- Your [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md) strategies. The number of people who will view content will influence how security should be handled for the content.
 - Your requirements to comply with global, national/regional, and industry regulations.
 
 Here are a few examples of high-level security strategies. You might choose to make decisions that impact the entire organization.
@@ -77,7 +77,7 @@ Here are a few examples of high-level security strategies. You might choose to m
 > [!IMPORTANT]
 > When considering network isolation, work with your IT infrastructure and networking teams before you change any of the Power BI tenant settings. Azure Private Link allows for enhanced _inbound_ security through private endpoints, while an Azure VNet gateway allows for enhanced _outbound_ security when connecting to data sources. Azure VNet gateway is Microsoft-managed rather than customer-managed, so it eliminates the overhead of installing and monitoring on-premises gateways.
 
-Some of your organizational-level decisions will result in firm governance policies, particularly when they relate to compliance. Other organizational-level decisions might result in guidance that you can provide to content creators who are responsible for managing and securing their own content. The resulting policies and guidelines should be included in your [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal), [training](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#training) materials, and [communication plan](powerbi-adoption-roadmap-community-of-practice.md#communication-plan).
+Some of your organizational-level decisions will result in firm governance policies, particularly when they relate to compliance. Other organizational-level decisions might result in guidance that you can provide to content creators who are responsible for managing and securing their own content. The resulting policies and guidelines should be included in your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal), [training](fabric-adoption-roadmap-mentoring-and-user-enablement.md#training) materials, and [communication plan](fabric-adoption-roadmap-community-of-practice.md#communication-plan).
 
 > [!TIP]
 > See the other articles in this series for additional suggestions that relate to security planning for [report consumers](powerbi-implementation-planning-security-report-consumer-planning.md) and [content creators](powerbi-implementation-planning-security-content-creator-planning.md).

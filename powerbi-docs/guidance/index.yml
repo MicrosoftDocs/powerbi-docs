@@ -169,8 +169,8 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Overview
-            url: fabric-adoption-roadmap-overview.md
+          - text: Introduction
+            url: fabric-adoption-roadmap.md
           - text: Data culture
             url: fabric-adoption-roadmap-data-culture.md
           - text: Executive sponsorship

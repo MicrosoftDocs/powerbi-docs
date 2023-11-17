@@ -5655,7 +5655,12 @@
             "source_path": "powerbi-docs/guidance/translation-manage-dataset-enterprise.md",
             "redirect_url": "/power-bi/guidance/translation-manage-data-model-enterprise",
             "redirect_document_id": false
-        }                                                                                                                                                                                                                        
+        },
+        {
+            "source_path": "powerbi-docs/guidance/fabric-adoption-roadmap-overview.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap",
+            "redirect_document_id": true
+        }                                                                                                                                                                                                                      
   ]          
 
 }
