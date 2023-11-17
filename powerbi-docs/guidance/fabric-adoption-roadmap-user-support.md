@@ -116,7 +116,7 @@ In addition to the internal user support approaches discussed in this article, t
 
 Check the [Fabric support website](https://support.fabric.microsoft.com/support/) for high-priority issues that broadly affect all customers. Global Microsoft 365 administrators have access to additional support issue details within the Microsoft 365 portal.
 
-Refer to the comprehensive [Fabric documentation](/fabric/). It's an authoritative resource that can aid troubleshooting and search for information. You can prioritize results from the documentation site. For example, enter a site-targeted search request into your web search engine, like `power bi dataset site:learn.microsoft.com`.
+Refer to the comprehensive [Fabric documentation](/fabric/). It's an authoritative resource that can aid troubleshooting and search for information. You can prioritize results from the documentation site. For example, enter a site-targeted search request into your web search engine, like `power bi gateway site:learn.microsoft.com`.
 
 ### Power BI Pro and Premium Per User end-user support
 

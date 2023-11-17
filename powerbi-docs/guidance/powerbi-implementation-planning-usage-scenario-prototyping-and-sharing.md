@@ -14,7 +14,7 @@ ms.date: 02/27/2022
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-As described in the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md), exploration, experimentation, and obtaining useful feedback from a small group of users is the purpose of [phase 1 of solution adoption](powerbi-adoption-roadmap-maturity-levels.md#solution-adoption-phases).
+As described in the [Fabric adoption roadmap](fabric-adoption-roadmap.md), exploration, experimentation, and obtaining useful feedback from a small group of users is the purpose of [phase 1 of solution adoption](fabric-adoption-roadmap-maturity-levels.md#solution-adoption-phases).
 
 A prototype—or proof of concept (POC)—is a Power BI solution that's intended to address unknowns and mitigate risk. This solution can be shared with others to get feedback during development iterations. The solution might be a temporary, short-lived solution, or it might ultimately evolve into a solution that's fully validated and released. Creating a prototype is commonly done for [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) and [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenarios (and can occasionally be done for [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) scenarios).
 

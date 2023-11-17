@@ -18,7 +18,7 @@ This article concludes the series on Microsoft Fabric adoption. The strategic an
 
 This series covered the following aspects of Fabric adoption.
 
-- [Adoption overview](fabric-adoption-roadmap-overview.md)
+- [Adoption introduction](fabric-adoption-roadmap.md)
 - [Adoption maturity levels](fabric-adoption-roadmap-maturity-levels.md)
 - [Data culture](fabric-adoption-roadmap-data-culture.md)
 - [Executive sponsorship](fabric-adoption-roadmap-executive-sponsorship.md)

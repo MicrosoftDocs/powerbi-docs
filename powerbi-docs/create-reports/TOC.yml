@@ -439,7 +439,11 @@
     - name: Get started with Q&A
       href: ../natural-language/q-and-a-intro.md
     - name: Use Power BI Q&A on a dashboard
-      href: ../natural-language/end-user-q-and-a-tutorial.md  
+      href: ../natural-language/end-user-q-and-a-tutorial.md
+    - name: Use Power BI Q&A in a report
+      href: ../natural-language/power-bi-tutorial-q-and-a.md  
+    - name: Add a Q&A visual to a report
+      href: ../visuals/power-bi-visualization-q-and-a.md
     - name: Q&A data sources
       href: ../natural-language/q-and-a-data-sources.md
     - name: Enhance Q&A with Copilot
@@ -450,8 +454,6 @@
       href: ../natural-language/q-and-a-tooling-advanced.md
     - name: Q&A limitations
       href: ../natural-language/q-and-a-limitations.md
-    - name: Create a Q&A visual in a report
-      href: ../visuals/power-bi-visualization-q-and-a.md
     - name: Teach Q&A to understand
       href: ../natural-language/q-and-a-tooling-teach-q-and-a.md
     - name: Q&A best practices

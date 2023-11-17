@@ -293,7 +293,7 @@ Also, if users need to use real-time access policies or session policies in Defe
 
 ## User documentation and training
 
-Before rolling out Defender for Cloud Apps, we recommend that you create and publish user documentation. A SharePoint page or a wiki page in your [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) can work well because it will be easy to maintain. A document uploaded to a shared library or Teams site is a good solution, too.
+Before rolling out Defender for Cloud Apps, we recommend that you create and publish user documentation. A SharePoint page or a wiki page in your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) can work well because it will be easy to maintain. A document uploaded to a shared library or Teams site is a good solution, too.
 
 The goal of the documentation is to achieve a seamless user experience. Preparing user documentation will also help you make sure you've considered everything.
 
@@ -312,7 +312,7 @@ FAQs and examples are especially helpful for user documentation.
 
 ## User support
 
-It's important to verify who will be responsible for [user support](powerbi-adoption-roadmap-user-support.md). It's common that using Defender for Cloud Apps to monitor Power BI is done by a centralized IT help desk.
+It's important to verify who will be responsible for [user support](fabric-adoption-roadmap-user-support.md). It's common that using Defender for Cloud Apps to monitor Power BI is done by a centralized IT help desk.
 
 You might need to create documentation for the help desk and conduct some knowledge transfer sessions to ensure the help desk is ready to respond to support requests.
 

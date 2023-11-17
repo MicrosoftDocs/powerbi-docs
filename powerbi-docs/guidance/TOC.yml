@@ -173,8 +173,8 @@
         href: powerbi-migration-learn-from-customers.md
   - name: Fabric adoption roadmap
     items: 
-      - name: "Overview"
-        href: fabric-adoption-roadmap-overview.md
+      - name: "Introduction"
+        href: fabric-adoption-roadmap.md
       - name: "Maturity levels"
         href: fabric-adoption-roadmap-maturity-levels.md
       - name: "Data culture"

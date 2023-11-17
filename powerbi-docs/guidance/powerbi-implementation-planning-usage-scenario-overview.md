@@ -24,9 +24,9 @@ The Power BI ecosystem is diverse and can be implemented in different ways. In t
 Use the scenarios to help you with Power BI architecture planning and implementation decisions. Here are some suggestions:
 
 - Initially read the scenarios in the order they're documented. Become familiar with the concepts and how the scenarios build upon each other.
-- Focus on the scenarios that align well with your [data culture](powerbi-adoption-roadmap-data-culture.md). Also consider how [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) is handled, as well as [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) when determining which usage scenarios are a good fit.
+- Focus on the scenarios that align well with your [data culture](fabric-adoption-roadmap-data-culture.md). Also consider how [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) is handled, as well as [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md) when determining which usage scenarios are a good fit.
 - Consider which areas of your BI operations could be strengthened in your organization. For example, if your goal is to reduce the level of data duplication, focus on the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario. If your goal is to improve efficiency of data preparation efforts, focus on the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) scenario.
-- Determine if there are ways to use Power BI that will bring additional value or reduce risk for your organization. For example, if your goal is to achieve a balance between centralization and decentralization (described further in the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) articles), consider the [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) scenario.
+- Determine if there are ways to use Power BI that will bring additional value or reduce risk for your organization. For example, if your goal is to achieve a balance between centralization and decentralization (described further in the [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) articles), consider the [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) scenario.
 - After understanding the areas of your BI operations that you want to implement or strengthen, create a project plan that defines tactical steps to arrive at your desired future state.
 
 > [!TIP]
@@ -34,7 +34,7 @@ Use the scenarios to help you with Power BI architecture planning and implementa
 
 ## Content collaboration and delivery scenarios
 
-The following usage scenarios are about *content collaboration and delivery*. These initial four scenarios focus primarily on [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md), and [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md). They are inter-related, building upon each other in a way that aligns with how business intelligence teams evolve and grow over time. They can be thought of as the building blocks that other scenarios build upon—particularly the [self-service BI scenarios](#self-service-bi-scenarios) that are described in the next section. Therefore, it's a good idea to review those scenarios first.
+The following usage scenarios are about *content collaboration and delivery*. These initial four scenarios focus primarily on [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md), and [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md). They are inter-related, building upon each other in a way that aligns with how business intelligence teams evolve and grow over time. They can be thought of as the building blocks that other scenarios build upon—particularly the [self-service BI scenarios](#self-service-bi-scenarios) that are described in the next section. Therefore, it's a good idea to review those scenarios first.
 
 - **[Personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md):** The content creator has a lot of freedom and flexibility to create content for individual usage. This scenario describes using a personal workspace for private usage.
 - **[Team BI](powerbi-implementation-planning-usage-scenario-team-bi.md):** The primary focus is on informal collaboration among team members who work closely together on a team. This scenario describes using a workspace for both collaboration and distribution. It also showcases the value of using Microsoft Teams for collaboration between Power BI creators and consumers.
@@ -42,7 +42,7 @@ The following usage scenarios are about *content collaboration and delivery*. Th
 - **[Enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md):** The primary focus is on content distribution at scale. This scenario describes using Premium capacity to distribute content to a larger number of read-only consumers who have a Power BI free license.
 
     > [!NOTE]
-    > Additional information about [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) and [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) are described in the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md).
+    > Additional information about [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) and [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md) are described in the [Fabric adoption roadmap](fabric-adoption-roadmap.md).
 
 ## Self-service BI scenarios
 
@@ -58,7 +58,7 @@ The self-service BI scenarios presented here primarily emphasize the use of *man
 - **[Prototyping and sharing](powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md):** Prototyping techniques are very useful for validating requirements for visuals and calculations by subject matter experts. Prototyping solutions might be temporary, short-lived solutions, or they might ultimately evolve into a solution that's fully validated and released. This scenario describes using Power BI Desktop during an interactive prototyping session. It's followed by sharing in the Power BI service when additional feedback is needed from a subject matter expert.
 
     > [!NOTE]
-    > Additional information about [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md), and [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md), which affect self-service BI activities and decisions, are described in the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md).
+    > Additional information about [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md), and [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md), which affect self-service BI activities and decisions, are described in the [Fabric adoption roadmap](fabric-adoption-roadmap.md).
 
 ## Content management and deployment scenarios
 
