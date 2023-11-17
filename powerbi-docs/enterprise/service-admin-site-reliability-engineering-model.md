@@ -146,7 +146,7 @@ Finally, a foundational element of Power BI service resiliency is ensuring that 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Power BI adoption roadmap: Governance](../guidance/powerbi-adoption-roadmap-governance.md)
+> [Fabric adoption roadmap: Governance](../guidance/fabric-adoption-roadmap-governance.md)
 
 > [!div class="nextstepaction"]
 > [Release management and deployment process](service-admin-release-management.md)

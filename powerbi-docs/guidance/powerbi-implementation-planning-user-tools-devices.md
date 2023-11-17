@@ -21,18 +21,18 @@ This article introduces key considerations for planning user tools and managing 
 - **IT and infrastructure teams:** Technical staff who installs, updates, and manages user devices and machines.
 - **Content creators and content owners:** Users who need to communicate with colleagues and make requests for what they need to have installed.
 
-One important aspect of analytics adoption is ensuring that content consumers and content creators have the software applications they need. The effective management of tools–particularly for users who create content–leads to increased [user adoption](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages) and reduces [user support](powerbi-adoption-roadmap-user-support.md) costs.
+One important aspect of analytics adoption is ensuring that content consumers and content creators have the software applications they need. The effective management of tools–particularly for users who create content–leads to increased [user adoption](fabric-adoption-roadmap-maturity-levels.md#user-adoption-stages) and reduces [user support](fabric-adoption-roadmap-user-support.md) costs.
 
 ## Requests for new tools
 
-How you handle requests for new tools and software applications is a [governance](powerbi-adoption-roadmap-governance.md) decision. Many users who are new to the organization, or are just getting started with analytics, don't know what to request. To simplify the process, consider handling the following requests together:
+How you handle requests for new tools and software applications is a [governance](fabric-adoption-roadmap-governance.md) decision. Many users who are new to the organization, or are just getting started with analytics, don't know what to request. To simplify the process, consider handling the following requests together:
 
 - Software requests
 - User license requests
 - Training requests
 - Data access requests
 
-Software installations are usually the responsibility of the IT department. To ensure an optimal user experience, it's critical that IT collaborate with the [Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md) on key decisions and processes, such as:
+Software installations are usually the responsibility of the IT department. To ensure an optimal user experience, it's critical that IT collaborate with the [Center of Excellence (COE)](fabric-adoption-roadmap-center-of-excellence.md) on key decisions and processes, such as:
 
 - **Process for users to request software installation.** There are several ways to handle software installation requests:
   - Common tools can be included in a standard machine setup. IT teams sometimes refer to it as the _standard build_.
@@ -48,7 +48,7 @@ Software installations are usually the responsibility of the IT department. To e
 > - **Decide how to handle software requests:** Clarify who's responsible for receiving and fulfilling new requests for software installation.
 > - **Confirm whether prerequisites are required:** Determine what organizational prerequisites exist related to training, funding, licensing, and approvals prior to requesting software to be installed.
 > - **Create a tracking system:** Create a system to track the status and history of software requests.
-> - **Create guidance for users:** Provide documentation in the [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) for how to request new tools and software applications. Consider co-locating this guidance with how to request licenses, training, and access to data.
+> - **Create guidance for users:** Provide documentation in the [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) for how to request new tools and software applications. Consider co-locating this guidance with how to request licenses, training, and access to data.
 
 ## Plan for consumer tools
 
@@ -68,7 +68,7 @@ The most common ways that a consumer can access Power BI content include:
 > [!NOTE]
 > This list isn't intended to be an all-inclusive list of ways to access Power BI content.
 
-Because the user experience can vary slightly between different web browsers, we recommend that you document browser recommendations in your [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal). For more information, see [Supported browsers for Power BI](/power-bi/fundamentals/power-bi-browsers).
+Because the user experience can vary slightly between different web browsers, we recommend that you document browser recommendations in your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal). For more information, see [Supported browsers for Power BI](/power-bi/fundamentals/power-bi-browsers).
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -115,7 +115,7 @@ When choosing an authoring tool, there are some key factors you should consider.
 - **What's the desired publishing experience?** Advanced content creators and content owners might prefer to publish content by using a [third-party tool](/power-bi/enterprise/service-premium-connect-tools#client-applications-and-tools) (such as ALM Toolkit to compare and merge models). The requirements for each specific solution should be considered.
 - **What's the preferred way to access and/or manage semantic models?** Rather than using the standard Power Query experience, advanced content creators might prefer to read and/or write to semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)) with their tool of choice by using the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools). The requirements for each specific solution should be considered.
 - **How easily can you keep client tools updated?** Some organizations find it challenging to install frequent updates of client applications. In this case, users might prefer to use a web browser whenever possible.
-- **What are the skills and expertise of the users?** There might be existing knowledge and preferences that impact which tool is selected. This choice impacts both initial development activities, and also whoever will [support users](powerbi-adoption-roadmap-user-support.md) and maintain existing solutions.
+- **What are the skills and expertise of the users?** There might be existing knowledge and preferences that impact which tool is selected. This choice impacts both initial development activities, and also whoever will [support users](fabric-adoption-roadmap-user-support.md) and maintain existing solutions.
 - **How will versioning be managed?** Version control can be accomplished in multiple ways. When working in a client tool, self-service users might prefer to use [OneDrive or SharePoint](/power-bi/create-reports/desktop-sharepoint-save-share#version-history), whereas more advanced users might prefer [Git integration with client tools](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools). When working in the Power BI service, [Git workspace integration](/fabric/cicd/git-integration/manage-branches#develop-using-another-workspace) is available.
 
 > [!TIP]
@@ -378,7 +378,7 @@ To use a custom visual in Power BI Desktop, it must first be installed on the ma
 > If your organization is highly concerned about data privacy and data leakage, consider governing all custom visuals through the organizational visuals repository.
 
 > [!TIP]
-> How you distribute custom visuals is a [governance](powerbi-adoption-roadmap-governance.md) consideration. We recommend that you carefully evaluate the features of each visual, considering its cost and support model so you can sufficiently support your content creators.
+> How you distribute custom visuals is a [governance](fabric-adoption-roadmap-governance.md) consideration. We recommend that you carefully evaluate the features of each visual, considering its cost and support model so you can sufficiently support your content creators.
 >
 > Also, before you approve the use of a new custom visual, it's critical that you evaluate any security and data privacy risks because:
 >

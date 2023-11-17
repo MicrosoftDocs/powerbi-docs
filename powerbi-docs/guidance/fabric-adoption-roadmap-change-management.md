@@ -54,7 +54,7 @@ Here are some examples of process-level changes.
 - Change of central team structure (for example, forming a [Center of Excellence](fabric-adoption-roadmap-center-of-excellence.md)).
 - Changes in [governance](fabric-adoption-roadmap-governance.md) policies.
 - [Migration](powerbi-migration-overview.md) from other analytics products to Fabric, and the changes this migration involves, like:
-  - The [separation of datasets and reports](report-separate-from-model.md), and a model-based approach to analytics.
+  - The [separation of semantic models and reports](report-separate-from-model.md), and a model-based approach to analytics.
   - Transitioning from exports or static reports to interactive analytical reports, which can involve filtering and cross-filtering.
   - Moving from distributing reports as PowerPoint files or flat files to accessing reports directly from the Fabric portal.
   - Shifting from information in tables, paginated reports, and spreadsheets to interactive visualizations and charts.
@@ -68,7 +68,7 @@ Here are some examples of process-level changes.
 Solution-level changes are changes that affect a single solution or set of solutions. These changes limit their impact to the user community of those solutions and their dependent processes. Although solution-level changes typically have a lower impact, they also tend to occur more frequently.
 
 > [!NOTE]
-> In the context of this article, a _solution_ is built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a lakehouse, a dataset, or a report. The considerations for change management described in this article are relevant for all types of solutions, and not only reporting projects.
+> In the context of this article, a _solution_ is built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a lakehouse, a semantic model, or a report. The considerations for change management described in this article are relevant for all types of solutions, and not only reporting projects.
 
 Here are some examples of solution-level changes.
 
@@ -80,7 +80,7 @@ Here are some examples of solution-level changes.
   - Styling, colors, and other formatting choices for visuals.
   - The type of visualization.
   - How data is grouped or summarized (such as changing from different measures of central tendency, like average, median, or geometric mean).
-- Changes in how content consumers interact with data (like connecting to a [shared dataset](/power-bi/connect-data/desktop-report-lifecycle-datasets) instead of exporting information for [personal usage scenarios](powerbi-implementation-planning-usage-scenario-personal-bi.md)).
+- Changes in how content consumers interact with data (like connecting to a [shared semantic model](/power-bi/connect-data/desktop-report-lifecycle-datasets) instead of exporting information for [personal usage scenarios](powerbi-implementation-planning-usage-scenario-personal-bi.md)).
 
 How you prepare change management plans and activities will depend on the types of change. To successfully and sustainably manage change, we recommend that you implement incremental changes.
 

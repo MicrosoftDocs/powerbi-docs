@@ -24,7 +24,7 @@ The rename was necessary for two main reasons.
 > This change is a rename only. There's no interruption to usage or service. You can expect a continuation of service because administrators, developers, and other users aren't required to make any changes.
 
 > [!TIP]
-> To avoid confusion and support requests, be sure to notify your [community of practice](../guidance/powerbi-adoption-roadmap-community-of-practice.md) of this change.
+> To avoid confusion and support requests, be sure to notify your [community of practice](../guidance/fabric-adoption-roadmap-community-of-practice.md) of this change.
 
 ## Name changes
 

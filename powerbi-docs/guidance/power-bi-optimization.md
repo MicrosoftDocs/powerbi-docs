@@ -107,6 +107,6 @@ For more information about this article, check out the following resources:
 
 - [Power BI guidance](index.yml)
 - [Monitoring report performance](monitor-report-performance.md)
-- [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md)
+- [Fabric adoption roadmap](fabric-adoption-roadmap.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

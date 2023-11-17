@@ -14,7 +14,7 @@ ms.date: 05/26/2022
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-As described in the [Power BI adoption roadmap](powerbi-adoption-roadmap-content-ownership-and-management.md#managed-self-service-bi), *managed self-service BI* is characterized by a blended approach that emphasizes *discipline at the core* and *flexibility at the edge*. The data architecture is usually maintained by a single team of centralized BI experts, while reporting responsibility belongs to creators within departments or business units.
+As described in the [Fabric adoption roadmap](fabric-adoption-roadmap-content-ownership-and-management.md#managed-self-service), *managed self-service BI* is characterized by a blended approach that emphasizes *discipline at the core* and *flexibility at the edge*. The data architecture is usually maintained by a single team of centralized BI experts, while reporting responsibility belongs to creators within departments or business units.
 
 However, when the core data architecture doesn't include all data required, semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) creators can extend, personalize, or customize existing shared semantic models. New specialized semantic models can be created that meet business requirements not met by existing centrally delivered semantic models. Importantly, there's no duplication of core data. This usage scenario is called *customizable managed self-service BI*.
 

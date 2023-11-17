@@ -535,7 +535,7 @@ Here are some of the key pieces of information that you might include in your da
 - **Downloads allowed and/or offline access:** Describes whether offline access is permitted. It can also define whether downloads are permitted to organizational or personal devices.
 - **How to request an exception:** Describes whether a user can request an exception to the standard policy, and how that can be done.
 - **Audit frequency:** Specifies the frequency of compliance reviews. Higher sensitive labels should involve more frequent and thorough auditing processes.
-- **Other metadata:** A [data policy](/power-bi/guidance/powerbi-adoption-roadmap-governance#data-policies) requires more metadata, such as policy owner, approver, and effective date.
+- **Other metadata:** A [data policy](/power-bi/guidance/fabric-adoption-roadmap-governance#data-policies) requires more metadata, such as policy owner, approver, and effective date.
 
 > [!TIP]
 > When creating your data classification and protection policy, focus on making it a straightforward reference for users. It should be as short and clear as possible. If it's too complex, users won't always take the time to understand it.
@@ -556,7 +556,7 @@ One way to automate the implementation of a policy, such as the data classificat
 
 Before rolling out information protection functionality, we recommend that you create and publish guidance documentation for your users. The goal of the documentation is to achieve a seamless user experience. Preparing the guidance for your users will also help you make sure you've considered everything.
 
-You can publish the guidance as part of the sensitivity label's [custom help page](/power-bi/enterprise/service-security-sensitivity-label-custom-help-link). A SharePoint page or a wiki page in your [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) can work well because it will be easy to maintain. A document uploaded to a shared library or Teams site is also a good approach. The URL for the custom help page is specified in the Microsoft Purview compliance portal when you publish the label policy.
+You can publish the guidance as part of the sensitivity label's [custom help page](/power-bi/enterprise/service-security-sensitivity-label-custom-help-link). A SharePoint page or a wiki page in your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) can work well because it will be easy to maintain. A document uploaded to a shared library or Teams site is also a good approach. The URL for the custom help page is specified in the Microsoft Purview compliance portal when you publish the label policy.
 
 > [!TIP]
 > The [custom help page](/power-bi/enterprise/service-security-sensitivity-label-custom-help-link) is an important resource. Links to it are made available in various applications and services.
@@ -589,7 +589,7 @@ FAQs and examples are especially helpful for user documentation.
 
 ## User support
 
-It's important to verify who will be responsible for [user support](powerbi-adoption-roadmap-user-support.md). It's common that sensitivity labels are supported by a centralized IT help desk.
+It's important to verify who will be responsible for [user support](fabric-adoption-roadmap-user-support.md). It's common that sensitivity labels are supported by a centralized IT help desk.
 
 You might need to create guidance for the help desk (sometimes known as a _runbook_). You might also need to conduct knowledge transfer sessions to ensure that the help desk is ready to respond to support requests.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 09/18/2023
+ms.date: 11/17/2023
 LocalizationGroup: Model your data
 ---
 # Create measures for data analysis in Power BI Desktop
@@ -44,7 +44,7 @@ Janice notices that even without specifying a calculation, one has been provided
 But Janice needs a measure to calculate sales projections for the coming year, which will be based on last year's sales multiplied by 1.06 to account for the expected 6 percent increase in business. For this calculation, Janice will create a measure. Janice creates a new measure by using the *New Measure* feature, then enters the following DAX formula:
 
 ```dax
-    Projected Sales = SUM('Sales'[Last Years Sales])*1.06
+    Projected Sales = SUM('Reseller Sales'[Last Years Sales])*1.06
 ```
 
 Janice then drags the new Projected Sales measure into the chart.
