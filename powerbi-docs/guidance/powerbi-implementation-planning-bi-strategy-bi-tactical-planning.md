@@ -92,7 +92,7 @@ Here are some examples of quick-win or high-impact objectives.
 - Minor changes that improve existing solutions for a large number of end users.
 - Solution audits and optimizations that improve performance and reduce capacity usage and costs.
 - Training initiatives for key users.
-- Setting up a centralized portal to consolidate a user [community of practice](powerbi-adoption-roadmap-community-of-practice.md).
+- Setting up a centralized portal to consolidate a user [community of practice](fabric-adoption-roadmap-community-of-practice.md).
 - Creating shared, central themes, templates, and design guidelines for reports.
 
 ### Identify other objectives
@@ -100,14 +100,14 @@ Here are some examples of quick-win or high-impact objectives.
 Once you've identified time-sensitive, high-priority, and quick-win objectives, you should next identify and describe objectives for adoption, governance, and implementation. Identify objectives that you can achieve in the next quarter and that directly address the weaknesses and opportunities that you identified in your [data culture](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#complete-the-data-culture-assessment) and [technical assessments](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#complete-the-technical-assessment). Describe how achieving these objectives will help make progress toward the BI goals in the next 12-18 months.
 
 > [!TIP]
-> Refer to the relevant sections of the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md) and the [Power BI implementation planning](powerbi-implementation-planning-introduction.md) to help you identify and describe your objectives.
+> Refer to the relevant sections of the [Fabric adoption roadmap](fabric-adoption-roadmap.md) and the [Power BI implementation planning](powerbi-implementation-planning-introduction.md) to help you identify and describe your objectives.
 
 > [!IMPORTANT]
 > When identifying your objectives, remember that the successful implementation of your BI strategy is more likely when you aim for an evolution instead of a revolution from your current state. _Evolution_ implies that you strive for gradual change over time. Small but consistent, sustained progress is better than an abundance of change that risks disruption to ongoing activities.
 
 #### Adoption
 
-First, identify your adoption objectives. These objectives can address many areas, but typically describe the actions you'll take to improve overall [organizational adoption](powerbi-adoption-roadmap-maturity-levels.md#organizational-adoption-maturity-levels) and [data culture](powerbi-adoption-roadmap-data-culture.md).
+First, identify your adoption objectives. These objectives can address many areas, but typically describe the actions you'll take to improve overall [organizational adoption](fabric-adoption-roadmap-maturity-levels.md#organizational-adoption-maturity-levels) and [data culture](fabric-adoption-roadmap-data-culture.md).
 
 Here are some examples of adoption objectives.
 
@@ -119,7 +119,7 @@ Here are some examples of adoption objectives.
 
 #### Governance
 
-Next, identify your [governance](powerbi-adoption-roadmap-governance.md) objectives. These objectives should describe how you'll sustainably enable users to answer business problems with data, while mitigating risks to data security or compliance. These governance objectives should be motivated by, and closely tied to, your adoption objectives.
+Next, identify your [governance](fabric-adoption-roadmap-governance.md) objectives. These objectives should describe how you'll sustainably enable users to answer business problems with data, while mitigating risks to data security or compliance. These governance objectives should be motivated by, and closely tied to, your adoption objectives.
 
 Here are some examples of governance objectives.
 
@@ -137,15 +137,15 @@ Here are some examples of governance objectives.
 
 Finally, identify your implementation objectives. These objectives have two purposes. They:
 
-- **Support adoption and governance objectives:** Describe the solutions you build and initiatives you enact to achieve your adoption and governance objectives. These solutions help you work toward improving [organizational adoption](powerbi-adoption-roadmap-maturity-levels.md#organizational-adoption-maturity-levels) and [user adoption](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages).
-- **Support business data needs:** Describe specific solutions you'll build to address the prioritized needs that the working team described in [BI strategic planning](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md). With these solutions, you should aim to achieve or improve [solution adoption](powerbi-adoption-roadmap-maturity-levels.md#solution-adoption-phases).
+- **Support adoption and governance objectives:** Describe the solutions you build and initiatives you enact to achieve your adoption and governance objectives. These solutions help you work toward improving [organizational adoption](fabric-adoption-roadmap-maturity-levels.md#organizational-adoption-maturity-levels) and [user adoption](fabric-adoption-roadmap-maturity-levels.md#user-adoption-stages).
+- **Support business data needs:** Describe specific solutions you'll build to address the prioritized needs that the working team described in [BI strategic planning](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md). With these solutions, you should aim to achieve or improve [solution adoption](fabric-adoption-roadmap-maturity-levels.md#solution-adoption-phases).
 
 Implementation objectives typically describe either initiatives you'll enact or solutions that you'll build.
 
 - **Initiatives:** Processes, training resources, and policies that support other objectives. Initiatives are typically non-technical instruments that support users or processes. Examples of initiatives include:
   - Processes for self-service content creators so that they can request access to tools, data, or training.
-  - Governance [data policies](powerbi-adoption-roadmap-governance.md#data-policies) that describe how certain data should be accessed and used.
-  - A curated, moderated [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) for the user [community of practice](powerbi-adoption-roadmap-community-of-practice.md).
+  - Governance [data policies](fabric-adoption-roadmap-governance.md#data-policies) that describe how certain data should be accessed and used.
+  - A curated, moderated [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) for the user [community of practice](fabric-adoption-roadmap-community-of-practice.md).
 - **Solutions:** Processes or tools built to directly address specific business problems or data needs for users. Examples of solutions include:
   - An actionable [monitoring solution](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md) that allows governance teams to follow up on governance and adoption objectives.
   - A unified data lakehouse that delivers business-ready data for consumption by content creators planning other downstream analytical solutions.
@@ -200,7 +200,7 @@ To appraise the skills and knowledge of teams for organizational readiness, ask 
 
 #### Anticipate change management efforts
 
-[Change management](powerbi-adoption-roadmap-change-management.md) is a crucial part of successful adoption and implementation. It's essential that you prepare and support people at all levels of the organization to successfully adopt new behaviors, tools, and processes for working with data. Consider who will be responsible for change management activities and what resources are available to effectively follow through on change management.
+[Change management](fabric-adoption-roadmap-change-management.md) is a crucial part of successful adoption and implementation. It's essential that you prepare and support people at all levels of the organization to successfully adopt new behaviors, tools, and processes for working with data. Consider who will be responsible for change management activities and what resources are available to effectively follow through on change management.
 
 After you've favorably assessed organizational readiness, you should proceed with step 2 of tactical planning to define success and how it's measured.
 

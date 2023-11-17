@@ -54,7 +54,7 @@ The concept of data culture can be difficult to define and measure. Even though 
 Data culture outcomes aren't specifically mandated. Rather, the state of the data culture is the result of following the governance rules as they're enforced (or the lack of governance rules). Leaders at all levels need to actively demonstrate through their actions what's important to them, including how they praise, recognize, and reward staff members who take initiative.
 
 > [!TIP]
-> If you can take for granted that your efforts to develop a data solution (such as a dataset, a lakehouse, or a report) will be valued and appreciated, that's an excellent indicator of a healthy data culture. Sometimes, however, it depends on what your immediate manager values most.
+> If you can take for granted that your efforts to develop a data solution (such as a semantic model—[previously known as a dataset](/power-bi/connect-data/service-datasets-rename), a lakehouse, or a report) will be valued and appreciated, that's an excellent indicator of a healthy data culture. Sometimes, however, it depends on what your immediate manager values most.
 
 The initial motivation for establishing a data culture often comes from a specific strategic business problem or initiative. It might be:
 
@@ -74,7 +74,7 @@ _Data discovery_ is the ability to effectively locate relevant data assets acros
 
 Data discovery is a slightly different concept from _search_, because:
 
-- Data discovery allows users to see metadata for an item, like the name of a dataset, even if they don't currently have access to it. After a user is aware of its existence, that user can go through the standard process to request access to the item.
+- Data discovery allows users to see metadata for an item, like the name of a semantic model, even if they don't currently have access to it. After a user is aware of its existence, that user can go through the standard process to request access to the item.
 - Search allows users to locate an existing item when they already have security access to the item.
 
 > [!TIP]
@@ -84,7 +84,7 @@ Data discovery contributes to adoption efforts and the implementation of governa
 
 - Encouraging the use of trusted high-quality data sources.
 - Encouraging users to take advantage of existing investments in available data assets.
-- Promoting the use and enrichment of existing data items (such as a lakehouse, data warehouse, data pipeline, dataflow, or dataset) or reporting items (such as reports, dashboards, or metrics).
+- Promoting the use and enrichment of existing data items (such as a lakehouse, data warehouse, data pipeline, dataflow, or semantic model) or reporting items (such as reports, dashboards, or metrics).
 - Helping people understand who owns and manages data assets.
 - Establishing connections between consumers, creators, and owners.
 
@@ -105,7 +105,7 @@ Use questions like those found below to assess data discovery.
 - Can end users find and use existing reports, or do they insist on data exports to create their own?
 - Do end users know which reports to use to address specific business questions or find specific data?
 - Are people using the appropriate data sources and tools, or resisting them in favor of legacy ones?
-- Do analysts understand how to enrich existing certified datasets with new data—for example, by using a [Power BI composite model](/power-bi/transform-model/desktop-composite-models)?
+- Do analysts understand how to enrich existing certified semantic models with new data—for example, by using a [Power BI composite model](/power-bi/transform-model/desktop-composite-models)?
 - How consistent are data items in their quality, completeness, and naming conventions?
 - Can data item owners follow [data lineage](/power-bi/collaborate-share/service-data-lineage) to perform impact analysis of data items?
 
@@ -128,7 +128,7 @@ The following maturity levels can help you assess your current state of data dis
 Data democratization refers to putting data into the hands of more users who are responsible for solving business problems. It's about enabling more users to make better data-driven decisions.
 
 > [!NOTE]
-> The concept of data democratization doesn't imply a lack of security or a lack of justification based on job role. As part of a healthy data culture, data democratization helps reduce _shadow IT_ by providing datasets that:
+> The concept of data democratization doesn't imply a lack of security or a lack of justification based on job role. As part of a healthy data culture, data democratization helps reduce _shadow IT_ by providing semantic models that:
 >
 > - Are secured, governed, and well managed.
 > - Meet business needs in cost-effective and timely ways.

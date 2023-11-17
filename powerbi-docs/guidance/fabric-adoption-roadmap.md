@@ -21,7 +21,7 @@ Advancing adoption and cultivating a data culture is about more than implementin
 
 The diagram depicts the following areas of the Microsoft Fabric adoption roadmap.
 
-:::image type="content" source="media/fabric-adoption-roadmap-overview/roadmap-overview.png" alt-text="Diagram shows the 12 high-level areas of Fabric adoption, which are described in the table below." border="false":::
+:::image type="content" source="media/fabric-adoption-roadmap/roadmap-overview.png" alt-text="Diagram shows the 12 high-level areas of Fabric adoption, which are described in the table below." border="false":::
 
 The areas in the above diagram include:
 

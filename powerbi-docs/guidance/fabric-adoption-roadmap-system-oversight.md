@@ -74,7 +74,7 @@ The Fabric ecosystem of workloads is broad and deep. There are many ways that Fa
 - Networking team
 - Security and compliance team
 
-The remainder of this article discusses the most common activities that a Fabric administrator does. It focuses on those activities that are important to carry out effectively when taking a strategic approach to [organizational adoption](fabric-adoption-roadmap-overview.md).
+The remainder of this article discusses the most common activities that a Fabric administrator does. It focuses on those activities that are important to carry out effectively when taking a strategic approach to [organizational adoption](fabric-adoption-roadmap.md).
 
 ## Service management
 
@@ -96,7 +96,7 @@ Here's a list of common questions asked by confused and frustrated users:
 - Why can't I create a workspace?
 - Why can't I export data?
 - Why doesn't my custom visual work?
-- Why can't I certify a dataset?
+- Why can't I certify a semantic model ([previously known as a dataset](/power-bi/connect-data/service-datasets-rename))?
 
 > [!CAUTION]
 > An administrator might discover situations that aren't ideal, such as too many data exports in the activity log. Resist the urge to disable the feature entirely. Prohibiting features leads to user frustration, and leads users to find workarounds. Before disabling a setting, find out why users are relying on certain techniques. Perhaps a solution needs to be redesigned, or additional user education and training could mitigate the concerns. The bottom line: knowledge sharing is an effective form of governance.
@@ -165,8 +165,8 @@ A few data architecture considerations that affect adoption include:
 - Where will users consume the content? Generally, the three main ways to deliver content are: the Fabric portal, Power BI Report Server, and embedded in custom applications. Additionally, [Microsoft Teams](https://powerbi.microsoft.com/blog/guide-to-enabling-your-organization-to-use-power-bi-in-microsoft-teams/) is a convenient alternative for users who spend a lot of time in Teams.
 - Who is responsible for managing and maintaining the data architecture? Is it a centralized team, or a decentralized team? How is the [COE](fabric-adoption-roadmap-center-of-excellence.md) represented in this team? Are certain skillsets required?
 - What [data sources](/power-bi/connect-data/desktop-data-sources) are the most important? What types of data will we be acquiring?
-- What [dataset connectivity mode](/power-bi/connect-data/service-dataset-modes-understand) and [storage mode](/power-bi/transform-model/desktop-storage-mode) choices (for example, Direct Lake, import, live connection, DirectQuery, or composite model frameworks) are the best fit for the use cases?
-- To what extent is data reusability encouraged using [lakehouses](/fabric/data-engineering/lakehouse-overview), [warehouses](/fabric/data-warehouse/data-warehousing), and [shared datasets](/power-bi/connect-data/desktop-report-lifecycle-datasets)?
+- What [semantic model connectivity mode](/power-bi/connect-data/service-dataset-modes-understand) and [storage mode](/power-bi/transform-model/desktop-storage-mode) choices (for example, Direct Lake, import, live connection, DirectQuery, or composite model frameworks) are the best fit for the use cases?
+- To what extent is data reusability encouraged using [lakehouses](/fabric/data-engineering/lakehouse-overview), [warehouses](/fabric/data-warehouse/data-warehousing), and [shared semantic models](/power-bi/connect-data/desktop-report-lifecycle-datasets)?
 - To what extent is the reusability of data preparation logic and advanced data preparation encouraged by using [data pipelines](/fabric/data-factory/data-factory-overview#data-pipelines), [notebooks](/fabric/data-engineering/how-to-use-notebook), and [dataflows](/power-bi/transform-model/dataflows/dataflows-introduction-self-service)?
 
 It's important for administrators to become fully aware of Fabric's technical capabilities—as well as the needs and goals of their stakeholders—before they make architectural decisions.
@@ -183,8 +183,8 @@ The use of capacity can play a significant role in your strategy for creating, m
 - [Unlimited Power BI content distribution](/power-bi/enterprise/service-premium-what-is#unlimited-content-sharing) to large numbers of read-only users. Content consumption by users with a free Power BI license is available in Premium capacity only, not PPU. Content consumption by free users is also available with an F64 Fabric capacity license or higher.
 - Access to [Fabric experiences](/fabric/enterprise/licenses#workspace) for producing end-to-end analytics.
 - [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) to manage the publication of content to development, test, and production workspaces. They're highly recommended for critical content to improve release stability.
-- [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools), which is an industry standard protocol for managing and publishing a dataset, or querying the dataset from any XMLA-compliant tool.
-- Increased model size limits, including [large dataset](/power-bi/enterprise/service-premium-large-models) support.
+- [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools), which is an industry standard protocol for managing and publishing a semantic model, or querying the semantic model from any XMLA-compliant tool.
+- Increased model size limits, including [large semantic model](/power-bi/enterprise/service-premium-large-models) support.
 - More frequent [data refreshes](/power-bi/connect-data/refresh-data#power-bi-refresh-types).
 - [Storage of data](powerbi-implementation-planning-tenant-setup.md#location-for-data-storage) in a specific geographic area that's different from the home region.
 
@@ -200,7 +200,7 @@ Overseeing the health of Fabric capacity is an essential ongoing activity for ad
 Suggestions for managing Fabric capacity:
 
 - Define who is responsible for managing the capacity. Confirm the roles and responsibilities so that it's clear what action will be taken, why, when, and by whom.
-- Create a specific set of criteria for content that will be published to capacity. It's especially relevant when a single capacity is used by multiple business units because the potential exists to disrupt other users if the capacity isn't well-managed. Consider requiring a [best practices review](fabric-adoption-roadmap-mentoring-and-user-enablement.md#best-practices-reviews) (such as reasonable dataset size and efficient calculations) before publishing new content to a production capacity.
+- Create a specific set of criteria for content that will be published to capacity. It's especially relevant when a single capacity is used by multiple business units because the potential exists to disrupt other users if the capacity isn't well-managed. Consider requiring a [best practices review](fabric-adoption-roadmap-mentoring-and-user-enablement.md#best-practices-reviews) (such as reasonable semantic model size and efficient calculations) before publishing new content to a production capacity.
 - Regularly use the [Fabric capacity metrics app](/fabric/enterprise/metrics-app) to understand resource utilization and patterns for the capacity. Most importantly, look for consistent patterns of overutilization, which will contribute to user disruptions. An analysis of usage patterns should also make you aware if the capacity is underutilized, indicating more value could be gained from the investment.
 - Set the [tenant setting](/power-bi/support/service-interruption-notifications#enable-notifications) so Fabric notifies you if the [capacity becomes overloaded](https://powerbi.microsoft.com/blog/announcing-timely-premium-capacity-overload-alerts/), or if an outage or incident occurs.
 
@@ -234,7 +234,7 @@ The previous example has several advantages.
 
 However, the previous example has disadvantages, too.
 
-- The [limits per capacity](/power-bi/enterprise/service-premium-what-is#capacity-nodes) are lower. The maximum memory size allowed for datasets isn't the entire P3 capacity node size that was purchased. Rather, it's the assigned capacity size where the dataset is hosted.
+- The [limits per capacity](/power-bi/enterprise/service-premium-what-is#capacity-nodes) are lower. The maximum memory size allowed for semantic models isn't the entire P3 capacity node size that was purchased. Rather, it's the assigned capacity size where the semantic model is hosted.
 - It's more likely one of the smaller capacities will need to be scaled up at some point in time.
 - There are more capacities to manage in the tenant.
 
@@ -254,7 +254,7 @@ There are three types of gateways.
 
 - **On-premises data gateway (standard mode)** is a gateway service that supports connections to registered data sources for many users to use. The gateway software installations and updates are installed on a machine that's managed by the customer.
 - **On-premises data gateway (personal mode)** is a gateway service that supports data refresh only. This gateway mode is typically installed on the PC of a content creator. It supports use by one user only. It doesn't support live connection or DirectQuery connections.
-- **Virtual network data gateway** is a Microsoft managed service that supports connectivity for many users. Specifically, it supports connectivity for datasets and dataflows stored in workspaces assigned to Premium capacity or Premium Per User.
+- **Virtual network data gateway** is a Microsoft managed service that supports connectivity for many users. Specifically, it supports connectivity for semantic models and dataflows stored in workspaces assigned to Premium capacity or Premium Per User.
 
 > [!TIP]
 > The decision of [who can install gateway software](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) is a governance decision. For most organizations, use of the data gateway in standard mode, or a virtual network data gateway, should be strongly encouraged. They're far more scalable, manageable, and auditable than data gateways in personal mode.
@@ -380,7 +380,7 @@ External user access is controlled by [tenant settings](/power-bi/admin/service-
 Fabric supports capabilities for information protection and data loss prevention (DLP) in the following ways.
 
 - **Information protection:** [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) (formerly known as Microsoft Information Protection) includes capabilities for discovering, classifying, and protecting data. A key principle is that data can be better protected once it's been classified. The key building block for classifying data is [sensitivity labels](/power-bi/enterprise/service-security-sensitivity-label-overview). For more information, see [Information protection for Power BI planning](powerbi-implementation-planning-info-protection.md).
-- **Data loss prevention for Power BI:** Microsoft Purview Data Loss Prevention (formerly known as Office 365 Data Loss Prevention) supports [DLP policies for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi). By using sensitivity labels or sensitive information types, DLP policies for Power BI help an organization locate sensitive datasets. For more information, see [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention.md).
+- **Data loss prevention for Power BI:** Microsoft Purview Data Loss Prevention (formerly known as Office 365 Data Loss Prevention) supports [DLP policies for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi). By using sensitivity labels or sensitive information types, DLP policies for Power BI help an organization locate sensitive semantic models. For more information, see [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention.md).
 - **Microsoft Defender for Cloud Apps:** [Microsoft Defender for Cloud Apps](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls) (formerly known as Microsoft Cloud App Security) supports policies that help protect data, including real-time controls when users interact with the Power BI service. For more information, see [Defender for Cloud Apps for Power BI planning](powerbi-implementation-planning-defender-for-cloud-apps.md).
 
 ### Data residency
@@ -417,14 +417,14 @@ You can retrieve auditing data to build an auditing solution, manage content pro
 | Audit content shared to entire organization | [REST API to check use of widely shared links](/rest/api/power-bi/admin/widely-shared-artifacts-links-shared-to-whole-organization) |
 | Audit tenant settings | [REST API to check tenant settings](/rest/api/fabric/admin/tenants/get-tenant-settings) |
 | Publish content | [REST API to deploy items from a deployment pipeline](/rest/api/power-bi/pipelines/selective-deploy) or [clone a report to another workspace](/rest/api/power-bi/reports/clone-report-in-group) |
-| Manage content | [REST API to refresh a dataset](/rest/api/power-bi/datasets/refresh-dataset-in-group) or [take over ownership of a dataset](/rest/api/power-bi/datasets/take-over-in-group) |
+| Manage content | [REST API to refresh a semantic model](/rest/api/power-bi/datasets/refresh-dataset-in-group) or [take over ownership of a semantic model](/rest/api/power-bi/datasets/take-over-in-group) |
 | Manage gateway data sources | [REST API to update credentials for a gateway data source](/rest/api/power-bi/gateways/update-datasource) |
 | Export content | [REST API to export a report](/rest/api/power-bi/reports/export-report-in-group) |
 | Create workspaces | [REST API to create a new workspace](/rest/api/power-bi/groups/create-group) |
 | Manage workspace permissions | [REST API to assign user permissions to a workspace](/rest/api/power-bi/groups/update-group-user) |
 | Update workspace name or description | [REST API to update workspace attributes](/rest/api/power-bi/admin/groups-update-group-as-admin) |
 | Restore a workspace | [REST API to restore a deleted workspace](/rest/api/power-bi/admin/groups-restore-deleted-group-as-admin) |
-| Programmatically retrieve a query result from a dataset | [REST API to run a DAX query against a dataset](/rest/api/power-bi/datasets/execute-queries-in-group) |
+| Programmatically retrieve a query result from a semantic model | [REST API to run a DAX query against a semantic model](/rest/api/power-bi/datasets/execute-queries-in-group) |
 | Assign workspaces to capacity | [REST API to assign workspaces to capacity](/rest/api/power-bi/admin/capacities-assign-workspaces-to-capacity) |
 | Programmatically change a data model | [Tabular Object Model (TOM) API](/analysis-services/tom/tom-pbi-datasets) |
 | Embed Power BI content in custom applications | [Power BI embedded analytics client APIs](/javascript/api/overview/powerbi/) |
