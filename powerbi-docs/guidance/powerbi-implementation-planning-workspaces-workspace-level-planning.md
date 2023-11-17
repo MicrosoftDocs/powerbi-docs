@@ -43,9 +43,9 @@ The primary objective of a workspace in the Fabric portal is to facilitate [coll
 - **Team-based development:** Multiple people can work together to build, test, and publish content. One user might work on the design of a [lakehouse](/fabric/data-engineering/lakehouse-overview). Another user might work on the design of the semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)), while other users might focus on building reports.
 - **Testing and validations:** Users might need to perform data validations for new content. Subject matter experts from the business unit might need to perform user acceptance testing (UAT), or a data quality team might need to validate the accuracy of the semantic model.
 - **Enhancements:** Stakeholders and consumers of the content might suggest enhancements to the content as circumstances change.
-- **Ownership transfer:** Another person or team might [take over responsibility](powerbi-adoption-roadmap-content-ownership-and-management.md#ownership-transfers) for content that was created by someone else.
+- **Ownership transfer:** Another person or team might [take over responsibility](fabric-adoption-roadmap-content-ownership-and-management.md#ownership-transfers) for content that was created by someone else.
 
-One of the key areas of the Power BI adoption roadmap is [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md). The type of collaboration that will occur in a workspace will differ based on the approach used for content ownership and management:
+One of the key areas of the Fabric adoption roadmap is [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md). The type of collaboration that will occur in a workspace will differ based on the approach used for content ownership and management:
 
 - **Business-led self-service BI:** Content is owned and managed by the content creators within a business unit or department. In this scenario, most collaboration in the workspace occurs among users within that business unit.
 - **Managed self-service BI:** Data is owned and managed by a centralized team, whereas various content creators from business units take responsibility for reports and dashboards. In this scenario, it's highly likely that multiple workspaces will be needed to securely facilitate collaboration by multiple teams of people.
@@ -60,7 +60,7 @@ One of the key areas of the Power BI adoption roadmap is [content ownership and 
 > - **Consider expectations for content ownership and management:** Think about how the different content ownership and management approaches (business-led self-service BI, managed self-service BI, and enterprise BI) will influence how you design and use workspaces.
 
 > [!TIP]
-> When your needs can't be met by a single approach, be prepared to be flexible and use a different [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) strategy for different workspaces. The strategy can be based on the scenario as well as the team members that are involved.
+> When your needs can't be met by a single approach, be prepared to be flexible and use a different [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) strategy for different workspaces. The strategy can be based on the scenario as well as the team members that are involved.
 
 ### Intent for content viewing
 
@@ -73,7 +73,7 @@ There are several different ways to approach content distribution in the Power B
 - **Reports can be shared:** Use of [per-item permissions](/power-bi/collaborate-share/service-share-dashboards) (links or direct access) is useful when there's a need to provide read-only access to a single item within a workspace. We recommend that you use app permissions and workspace roles more frequently than sharing because they're easier to maintain. For more information, see [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#per-item-permissions).
 - **Reports can be embedded in another application and viewed there:** Sometimes the intention is for consumers to view Power BI content that's embedded in another application. Embedding content is useful when it makes sense for the user to remain in the application to increase efficiency and stay within its workflow.
 
-Another key area of the Power BI adoption roadmap is [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md). The ways that a workspace will support content distribution will differ based on the content delivery scope:
+Another key area of the Fabric adoption roadmap is [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md). The ways that a workspace will support content distribution will differ based on the content delivery scope:
 
 - **Personal BI:** Content is intended for use by the creator. Since sharing content with others isn't an objective, personal BI is done within a personal workspace (described in the next topic).
 - **Team BI:** Content is shared with a relatively small number of colleagues who work closely together. In this scenario, most workspaces are informal, collaborative workspaces.
@@ -94,7 +94,7 @@ Another key area of the Power BI adoption roadmap is [content delivery scope](po
 > - **Consider expectations for content delivery scope:** Consider how the different content delivery scopes (personal BI, team BI, departmental BI, and enterprise BI) will influence how you design and use workspaces.
 
 > [!TIP]
-> Be prepared to be flexible. You can use a different content viewing strategy for workspaces based on the scenario as well as the team members that are involved. Also, don't be afraid to use different [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) approaches for workspaces when it can be justified.
+> Be prepared to be flexible. You can use a different content viewing strategy for workspaces based on the scenario as well as the team members that are involved. Also, don't be afraid to use different [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md) approaches for workspaces when it can be justified.
 
 ### Appropriate use of personal workspaces
 
@@ -103,7 +103,7 @@ There are two types of workspaces:
 - **Personal workspaces:** Every user has a personal workspace. A personal workspace can be used for publishing certain types of content to the Fabric portal. Its primary purpose is to support [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) usage scenarios.
 - **Workspaces:** The primary purpose of a [workspace](/power-bi/collaborate-share/service-new-workspaces) is to support collaboration among multiple users. Secondarily, a workspace can also be used for viewing content.
 
-Using a personal workspace for anything other than learning [personal BI](powerbi-adoption-roadmap-content-delivery-scope.md#personal-bi), temporary content, or testing purposes can be risky because content in a personal workspace is managed and maintained by one person. Further, a personal workspace doesn't support collaboration with others.
+Using a personal workspace for anything other than learning [personal BI](fabric-adoption-roadmap-content-delivery-scope.md#personal-bi), temporary content, or testing purposes can be risky because content in a personal workspace is managed and maintained by one person. Further, a personal workspace doesn't support collaboration with others.
 
 To allow the creation of any type of Fabric item (like a lakehouse or warehouse), a workspace must be added to a [Fabric capacity](/fabric/enterprise/licenses#capacity). That's true for both standard workspaces as well as personal workspaces. Therefore, you can govern who's able to create certain types of items within a personal workspace by way of its capacity assignment.
 
@@ -120,11 +120,11 @@ A personal workspace is limited in its options to share content with others. You
 > - **Create and publish documentation about personal workspaces:** Create useful documentation or FAQs for your users about how to effectively use personal workspaces. Make the information available in your centralized portal and training materials.
 
 > [!NOTE]
-> For more information, see these Power BI adoption roadmap topics: [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal), [training](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#training), and [documentation](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#documentation).
+> For more information, see these Fabric adoption roadmap topics: [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal), [training](fabric-adoption-roadmap-mentoring-and-user-enablement.md#training), and [documentation](fabric-adoption-roadmap-mentoring-and-user-enablement.md#documentation).
 
 ## Workspace ownership
 
-One of the most important things to consider when planning workspaces is determining the [ownership and stewardship](powerbi-adoption-roadmap-content-ownership-and-management.md#ownership-and-stewardship) roles and responsibilities. The goal is to have clarity on exactly who is accountable for creating, maintaining, publishing, securing, and supporting the content in each workspace.
+One of the most important things to consider when planning workspaces is determining the [ownership and stewardship](fabric-adoption-roadmap-content-ownership-and-management.md#ownership-and-stewardship) roles and responsibilities. The goal is to have clarity on exactly who is accountable for creating, maintaining, publishing, securing, and supporting the content in each workspace.
 
 Clarity on ownership is particularly relevant when responsibilities for creating and managing data are decentralized—or distributed—among departments and business units. This concept is also sometimes referred to as a _data mesh_ architecture. For more information about data mesh, see [What is data mesh?](/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/what-is-data-mesh).
 

@@ -87,7 +87,7 @@ Here are some examples of when a best practices review could be beneficial.
 - The finance team would like to [assign a workspace to a capacity](/power-bi/enterprise/service-admin-premium-manage#assign-a-workspace-to-a-capacity). A review of the workspace content is required to ensure sound development practices are followed. This type of review is common when the capacity is shared among multiple business units. (A review might not be required when the capacity is assigned to only one business unit.)
 - The operations team is creating a new Fabric solution they expect to be widely used. They would like to request a best practices review before it goes into user acceptance testing (UAT), or before a request is submitted to the change management board.
 
-A best practices review is most often focused on the dataset design, though the review can encompass all types of data items (such as a lakehouse, data warehouse, data pipeline, dataflow, or dataset). The review can also encompass reporting items (such as reports, dashboards, or metrics).
+A best practices review is most often focused on the semantic model ([previously known as a dataset](/power-bi/connect-data/service-datasets-rename)) design, though the review can encompass all types of data items (such as a lakehouse, data warehouse, data pipeline, dataflow, or semantic model). The review can also encompass reporting items (such as reports, dashboards, or metrics).
 
 Before content is deployed, a best practices review can be used to verify other design decisions, like:
 
@@ -97,10 +97,10 @@ Before content is deployed, a best practices review can be used to verify other 
 - [Data preparation](/power-bi/transform-model/desktop-query-overview) steps are clean, orderly, and [efficient](power-query-folding.md).
 - [Connectivity mode](/power-bi/connect-data/service-dataset-modes-understand) and [storage mode](/power-bi/transform-model/desktop-storage-mode) choices (for example, Direct Lake, import, live connection, DirectQuery, and composite model frameworks) are appropriate.
 - Location for data sources, like flat files, and original Power BI Desktop files are suitable (preferably stored in a backed-up location with versioning and appropriate security, such as [Teams files or a SharePoint shared library](/microsoft-365/community/should-i-store-my-files-in-teams-or-sharepoint-an-understanding-of-behind-the-scenes)).
-- [Datasets](/power-bi/connect-data/desktop-data-view) are well-designed, clean, and understandable, and use a [star schema](star-schema.md) design.
+- [Semantic models](/power-bi/connect-data/desktop-data-view) are well-designed, clean, and understandable, and use a [star schema](star-schema.md) design.
 - [Relationships](/power-bi/transform-model/desktop-relationships-understand) are configured correctly.
 - [DAX calculations](/power-bi/transform-model/desktop-quickstart-learn-dax-basics) use efficient coding practices (particularly if the data model is large).
-- The dataset size is within a reasonable limit and [data reduction techniques](import-modeling-data-reduction.md) are applied.
+- The semantic model size is within a reasonable limit and [data reduction techniques](import-modeling-data-reduction.md) are applied.
 - [Row-level security (RLS)](rls-guidance.md) appropriately enforces data permissions.
 - Data is accurate and has been validated against the authoritative source(s).
 - Approved common definitions and terminology are used.
@@ -115,7 +115,7 @@ Once the content has been deployed, the best practices review isn't necessarily 
 - [Sensitivity labels](/power-bi/enterprise/service-security-apply-data-sensitivity-labels) are correctly assigned.
 - Fabric item [endorsement](/power-bi/collaborate-share/service-endorse-content) (certified or promoted) is appropriate.
 - [Data refresh](/power-bi/connect-data/refresh-data) is configured correctly, failure notifications include the proper users, and uses the appropriate [data gateway](/data-integration/gateway/service-gateway-onprem) in standard mode (if applicable).
-- All appropriate dataset [best practices rules](https://powerbi.microsoft.com/blog/best-practice-rules-to-improve-your-models-performance-and-design-v1-1/) are followed and, preferably, are automated via a community tool called Best Practices Analyzer for maximum efficiency and productivity.
+- All appropriate semantic model [best practices rules](https://powerbi.microsoft.com/blog/best-practice-rules-to-improve-your-models-performance-and-design-v1-1/) are followed and, preferably, are automated via a community tool called Best Practices Analyzer for maximum efficiency and productivity.
 
 ### Extended support
 
@@ -162,7 +162,7 @@ Making sure your self-service users (particularly content creators and owners) h
 You'll find the greatest return on investment with creating custom training materials for _organizational-specific_ processes, while relying on content produced by others for everything else. It's also useful to have a short training class that focuses primarily on topics like how to find documentation, getting help, and interacting with the community.
 
 > [!TIP]
-> One of the goals of training is to help users learn new skills while helping them avoid bad habits. It can be a balancing act. For instance, you don't want to overwhelm new users by adding in a lot of complexity and friction to a beginner-level class for report creators. However, it's a great investment to make newer content creators aware of things that could otherwise take them a while to figure out. An ideal example is teaching the ability to use a [live connection](/power-bi/connect-data/desktop-report-lifecycle-datasets) to report from an existing dataset. By teaching this concept at the earliest logical time, you can save a less experienced creator thinking they always need one dataset for every report (and encourage the good habit of reusing existing datasets across reports).
+> One of the goals of training is to help users learn new skills while helping them avoid bad habits. It can be a balancing act. For instance, you don't want to overwhelm new users by adding in a lot of complexity and friction to a beginner-level class for report creators. However, it's a great investment to make newer content creators aware of things that could otherwise take them a while to figure out. An ideal example is teaching the ability to use a [live connection](/power-bi/connect-data/desktop-report-lifecycle-datasets) to report from an existing semantic model. By teaching this concept at the earliest logical time, you can save a less experienced creator thinking they always need one semantic model for every report (and encourage the good habit of reusing existing semantic models across reports).
 
 Some larger organizations experience continual employee transfers and turnover. Such frequent change results in an increased need for a repeatable set of training resources.
 
@@ -187,7 +187,7 @@ The advantages of encouraging knowledge sharing among colleagues are described i
 The types of users you might target for training include:
 
 - Content owners, subject matter experts (SMEs), and workspace administrators
-- Data creators (for example, users who create datasets for report creators to use, or who create dataflows, lakehouses, or warehouses for other dataset creators to use)
+- Data creators (for example, users who create semantic models for report creators to use, or who create dataflows, lakehouses, or warehouses for other semantic model creators to use)
 - Report creators
 - Content consumers and viewers
 - Satellite COE members and the [champions network](fabric-adoption-roadmap-community-of-practice.md#champions-network)
@@ -286,10 +286,10 @@ Power BI template files can improve efficiency and help people learn during the 
 
 - Reports can use examples of good visualization practices
 - Reports can incorporate organizational branding and design standards
-- Datasets can include the structure for commonly used tables, like a date table
+- Semantic models can include the structure for commonly used tables, like a date table
 - Helpful DAX calculations can be included, like a year-over-year (YoY) calculation
 - Common parameters can be included, like a data source connection string
-- An example of report and/or dataset documentation can be included
+- An example of report and/or semantic model documentation can be included
 
 > [!NOTE]
 > Providing templates not only saves your content creators time, it also helps them move quickly beyond a blank page in an empty solution.
@@ -301,7 +301,7 @@ A [Power BI project](/power-bi/developer/projects/projects-overview) is a .pbip 
 You can use Power BI project files with [Power BI Desktop developer mode](/power-bi/developer/projects/) for:
 
 - Advanced editing and authoring (for example, in a code editor such as Visual Studio Code).
-- Purposeful separation of dataset and report items (unlike the .pbix or .pbit files).
+- Purposeful separation of semantic model and report items (unlike the .pbix or .pbit files).
 - Enabling multiple content creators and developers to work on the same project concurrently.
 - Integrating with source control (such as by using Fabric Git integration).
 - Using continuous integration and continuous delivery (CI/CD) techniques to automate integration, testing and deployment of changes, or versions of content.

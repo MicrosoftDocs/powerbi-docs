@@ -16,7 +16,7 @@ This article targets Power BI administrators who need to access and analyze data
 
 There are other manual and programmatic ways to retrieve Power BI activities. For more information, see the [Access user activity data](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data).
 
-Analyzing the Power BI activity log is crucial for governance, compliance, and to track [adoption](powerbi-adoption-roadmap-overview.md) efforts. For more information about the Power BI activity log, see [Track user activities in Power BI](/power-bi/enterprise/service-admin-auditing).
+Analyzing the Power BI activity log is crucial for governance, compliance, and to track [adoption](fabric-adoption-roadmap.md) efforts. For more information about the Power BI activity log, see [Track user activities in Power BI](/power-bi/enterprise/service-admin-auditing).
 
 > [!TIP]
 > We recommend that you fully review the [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md) article. This article covers planning, key decisions, prerequisites, and key solution development activities to consider when building an end-to-end auditing solution.
@@ -642,6 +642,6 @@ For more information related to this article, check out the following resources:
 
 - [Track user activities in Power BI](/power-bi/enterprise/service-admin-auditing)
 - Power BI implementation planning: [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md)
-- Power BI adoption roadmap: [Auditing and monitoring](powerbi-adoption-roadmap-system-oversight.md#auditing-and-monitoring)
+- Fabric adoption roadmap: [Auditing and monitoring](fabric-adoption-roadmap-system-oversight.md#auditing-and-monitoring)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

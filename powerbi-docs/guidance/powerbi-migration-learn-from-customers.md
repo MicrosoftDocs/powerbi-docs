@@ -68,9 +68,9 @@ With such a high volume of BI assets, change management for the business-owned r
 
 ### Create an internal community
 
-The company established a [Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md) to provide internal training classes and resources. The COE also serves as an internal consultancy group that's ready to assist content authors with technical issues, resolution of roadblocks, and best practice guidance.
+The company established a [Center of Excellence (COE)](fabric-adoption-roadmap-center-of-excellence.md) to provide internal training classes and resources. The COE also serves as an internal consultancy group that's ready to assist content authors with technical issues, resolution of roadblocks, and best practice guidance.
 
-There's also an [internal Power BI community](powerbi-adoption-roadmap-community-of-practice.md), which has been a massive success counting in excess of 1,600 members. The community is managed in Yammer. Members can ask internally relevant questions and receive answers adhering to best practices and framed within organizational constraints. This type of user-to-user interaction alleviates much of the support burden from the COE. However, the COE does monitor the questions and answers, and it gets involved in conversations when appropriate.
+There's also an [internal Power BI community](fabric-adoption-roadmap-community-of-practice.md), which has been a massive success counting in excess of 1,600 members. The community is managed in Yammer. Members can ask internally relevant questions and receive answers adhering to best practices and framed within organizational constraints. This type of user-to-user interaction alleviates much of the support burden from the COE. However, the COE does monitor the questions and answers, and it gets involved in conversations when appropriate.
 
 An extension of the internal community is the newer Power BI expert network. It includes a small number of pre-selected Power BI champions from within the organization. They are highly skilled Power BI practitioners from the business units, who are enthusiastic champions, and who actively want to solve challenges within the business. Members of the Power BI expert network are expected to abide by best practices and guidelines established by the COE, and help the broader internal Power BI community understand and implement them. Although the Power BI expert network collaborates with the COE, and can receive dedicated training, Power BI experts operate independently from the COE. Each Power BI expert can define the parameters for how they operate, bearing in mind they have other responsibilities and priorities in their official role.
 
@@ -138,7 +138,7 @@ Early on, the company had many personal gateways. Using an on-premises data gate
 
 ### Formalize your support plan
 
-As the adoption of Power BI grew within the organization, the company found that a [multi-tier support approach](powerbi-adoption-roadmap-user-support.md) worked well:
+As the adoption of Power BI grew within the organization, the company found that a [multi-tier support approach](fabric-adoption-roadmap-user-support.md) worked well:
 
 - **Layer 1: Intra-team:** People learn from, and teach, each other on a day-to-day basis.
 - **Layer 2: Power BI community:** People ask questions of the internal Teams community to learn from each other and communicate important information.
@@ -149,7 +149,7 @@ As the adoption of Power BI grew within the organization, the company found that
 
 ### Invest in training and governance
 
-Over the past year, the company improved its internal training offerings and enhanced its [data governance](powerbi-adoption-roadmap-governance.md) program. The governance committee includes key members from each of the distributed analytics groups, plus the [COE](powerbi-adoption-roadmap-center-of-excellence.md).
+Over the past year, the company improved its internal training offerings and enhanced its [data governance](fabric-adoption-roadmap-governance.md) program. The governance committee includes key members from each of the distributed analytics groups, plus the [COE](fabric-adoption-roadmap-center-of-excellence.md).
 
 There are now six internal Power BI courses in their internal catalog. The [Dashboard in a Day](https://powerbi.microsoft.com/diad/) course remains a popular course for beginners. To help users deepen their skills, they deliver a series of three Power BI courses and two DAX courses.
 

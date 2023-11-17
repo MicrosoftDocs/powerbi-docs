@@ -14,7 +14,7 @@ ms.date: 02/19/2023
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-As described in the [Power BI adoption roadmap](powerbi-adoption-roadmap-content-delivery-scope.md#personal-bi), *personal BI* is about enabling an individual to gain analytical value. It's also about allowing them to perform business tasks more efficiently with the use of data, information, and analytics. Personal BI is sometimes thought of as the entry point for *self-service BI*.
+As described in the [Fabric adoption roadmap](fabric-adoption-roadmap-content-delivery-scope.md#personal-bi), *personal BI* is about enabling an individual to gain analytical value. It's also about allowing them to perform business tasks more efficiently with the use of data, information, and analytics. Personal BI is sometimes thought of as the entry point for *self-service BI*.
 
 In personal BI scenarios, the content creator has a lot of freedom and flexibility to create content for individual usage. Simplicity and speed are usually high priorities. There's no sharing or collaboration in this usage scenario—those topics are covered in the [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md), [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md), and [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenario articles.
 
@@ -52,7 +52,7 @@ The following are some key points to emphasize about the personal BI scenario.
 
 ### Reliance on personal workspace
 
-Use of the [personal workspace](../fundamentals/service-basic-concepts.md#workspaces) can be thought of like an *analytical sandbox*. For many organizations, personal content is subject to little governance or formal oversight. However, it's still wise to educate content creators on [guidelines to be successful with personal BI](powerbi-adoption-roadmap-content-delivery-scope.md#personal-bi). Use of the sharing feature available within a personal workspace isn't depicted in this usage scenario since the focus is individual analytics.
+Use of the [personal workspace](../fundamentals/service-basic-concepts.md#workspaces) can be thought of like an *analytical sandbox*. For many organizations, personal content is subject to little governance or formal oversight. However, it's still wise to educate content creators on [guidelines to be successful with personal BI](fabric-adoption-roadmap-content-delivery-scope.md#personal-bi). Use of the sharing feature available within a personal workspace isn't depicted in this usage scenario since the focus is individual analytics.
 
 > [!IMPORTANT]
 > Limit the use of personal workspaces and ensure no mission-critical content is stored in them. Although a Power BI administrator can access and govern a user's [personal workspace](/power-bi/admin/service-admin-portal-workspaces#govern-my-workspaces), storing critical content in personal workspaces does represent risk to the organization.
@@ -73,7 +73,7 @@ Typically, a data gateway is required when accessing data sources that reside wi
 
 ### Information protection
 
-[Information protection](powerbi-adoption-roadmap-system-oversight.md#information-protection-and-data-loss-prevention) policies can be applied to content in the Power BI service. Some organizations have a [mandatory label policy](../enterprise/service-security-sensitivity-label-mandatory-label-policy.md) that requires a sensitivity label be assigned, even within a personal workspace.
+[Information protection](fabric-adoption-roadmap-system-oversight.md#information-protection-and-data-loss-prevention) policies can be applied to content in the Power BI service. Some organizations have a [mandatory label policy](../enterprise/service-security-sensitivity-label-mandatory-label-policy.md) that requires a sensitivity label be assigned, even within a personal workspace.
 
 ### System oversight
 

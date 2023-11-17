@@ -259,9 +259,9 @@ conceptualContent:
         # Card
         - title: Best practices guidance
           links:
-            - url: guidance/powerbi-adoption-roadmap-overview.md
+            - url: guidance/fabric-adoption-roadmap.md
               itemType: concept
-              text: Power BI adoption roadmap
+              text: Fabric adoption roadmap
             - url: guidance/powerbi-implementation-planning-introduction.md
               itemType: concept
               text: Power BI implementation planning

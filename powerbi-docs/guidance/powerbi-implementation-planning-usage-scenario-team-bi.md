@@ -16,7 +16,7 @@ ms.date: 02/27/2022
 
 Once a valuable BI solution is created, it's time to collaborate with colleagues. The goal is to deliver additional value beyond what can be achieved with the [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) scenario.
 
-As described in the [Power BI adoption roadmap](powerbi-adoption-roadmap-content-delivery-scope.md#team-bi), *team BI* focuses on a small team of people who work closely together. Collaborating and sharing content with each other in an informal way is usually a key objective of team BI (more formal delivery of content is covered in the [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) and [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenarios).
+As described in the [Fabric adoption roadmap](fabric-adoption-roadmap-content-delivery-scope.md#team-bi), *team BI* focuses on a small team of people who work closely together. Collaborating and sharing content with each other in an informal way is usually a key objective of team BI (more formal delivery of content is covered in the [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) and [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenarios).
 
 Sometimes when working with close colleagues, collaboration for small teams can be done simply within a workspace. A workspace can be thought of as a way to informally view content (without the formality of publishing a Power BI app, which is covered in the [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) scenario) by members of a small team.
 

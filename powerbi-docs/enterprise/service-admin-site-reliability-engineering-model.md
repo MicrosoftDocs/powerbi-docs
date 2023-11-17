@@ -135,7 +135,7 @@ The following table shows the major live site health OKRs.
 
 The time required for the Power BI team to react to incidents as measured by TTN, TTA, and TTM significantly exceeds targets. Alert automation directly correlates with the team’s ability to sustain exponential service growth, while continuing to meet or exceed target response times for incident alerting, notification, and mitigation. Over a two-year period, the Power BI SRE team added automation to deflect more than 82% of incidents and to enrich an additional six percent with details that empower engineers to quickly take action to mitigate incidents when they occur. The approach also enables SMEs to focus on features and proactive quality improvements instead of repeatedly being engaged for reactive incident investigations.
 
-The above OKRs are actively tracked by the Power BI live site team, and the Senior Leadership Team, to ensure that the team continues to meet or exceed the baseline required to support substantial service growth, to maintain a sustainable live site workload, and to ensure high customer satisfaction.
+The above OKRs are actively tracked by the Power BI live site team, and the Senior Leadership Team, to ensure that the team continues to meet or exceed the baseline required to support substantial service growth, to maintain a sustainable live site workload, and to ensure high customer satisfaction.s
 
 ## What's next
 
@@ -146,7 +146,7 @@ Finally, a foundational element of Power BI service resiliency is ensuring that 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Power BI adoption roadmap: Governance](../guidance/powerbi-adoption-roadmap-governance.md)
+> [Fabric adoption roadmap: Governance](../guidance/fabric-adoption-roadmap-governance.md)
 
 > [!div class="nextstepaction"]
 > [Release management and deployment process](service-admin-release-management.md)
