@@ -32,7 +32,7 @@ In an organization, many users are _content creators_. Content creators produce 
 The foundation of a well-governed self-service BI system begins with content creators and owners. They create and validate semantic models and reports. In many cases, content creators also set up permissions to manage security for their content.
 
 > [!TIP]
-> We recommend that you foster a [data culture](powerbi-adoption-roadmap-data-culture.md) that makes security and protection of data a normal part of everyone's role. To achieve that objective, user education, support, and training is essential.
+> We recommend that you foster a [data culture](fabric-adoption-roadmap-data-culture.md) that makes security and protection of data a normal part of everyone's role. To achieve that objective, user education, support, and training is essential.
 
 For purposes of security and permissions, consider that there are two types of content creators: data creators and report creators. They can be responsible for creating and managing [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) or [self-service BI](powerbi-implementation-planning-usage-scenario-overview.md#self-service-bi-scenarios) content.
 
@@ -49,7 +49,7 @@ Here are some common data creator scenarios.
 
 Data creators are often found in enterprise BI teams and in the Center of Excellence (COE). They also have a key role to play in decentralized business units and departments that maintain and manage their own data.
 
-For other considerations about business-led BI, managed self-service BI, and enterprise BI, see the [Content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article.
+For other considerations about business-led BI, managed self-service BI, and enterprise BI, see the [Content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) article.
 
 ### Report creators
 
@@ -120,7 +120,7 @@ The remainder of this article describes considerations for content creator permi
 
 ## Discover content for creators
 
-Users can rely on _[data discovery](powerbi-adoption-roadmap-data-culture.md#data-discovery)_ to find semantic models and datamarts. Data discovery is a Power BI feature that allows content creators to locate existing data assets—even when they don't have any permissions for that content.
+Users can rely on _[data discovery](fabric-adoption-roadmap-data-culture.md#data-discovery)_ to find semantic models and datamarts. Data discovery is a Power BI feature that allows content creators to locate existing data assets—even when they don't have any permissions for that content.
 
 Discovery of existing data is useful for:
 
@@ -148,7 +148,7 @@ The _Request access_ message reads: _For standard sales reporting of MTD/QTD/YTD
 :::image type="content" source="media/powerbi-implementation-planning-security-content-creator-planning/request-semantic-model-access.png" alt-text="Screenshot of the request access message in the data hub, for a semantic model that's set to be discoverable." border="false":::
 
 > [!NOTE]
-> Your [data culture](powerbi-adoption-roadmap-data-culture.md) and your stance on [data democratization](powerbi-adoption-roadmap-data-culture.md#data-democratization) should strongly influence whether you enable data discovery. For more information about data discovery, see the [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) usage scenario.
+> Your [data culture](fabric-adoption-roadmap-data-culture.md) and your stance on [data democratization](fabric-adoption-roadmap-data-culture.md#data-democratization) should strongly influence whether you enable data discovery. For more information about data discovery, see the [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) usage scenario.
 
 There are three tenant settings related to discovery.
 
@@ -248,7 +248,7 @@ Take care to ensure that only trusted and reliable individuals are workspace adm
 
 We recommend that there are at least two administrators so that one serves as a backup should the primary administrator be unavailable. A workspace that doesn't have an administrator is known as an _orphaned workspace_. The orphaned status occurs when a user leaves the organization and there's no alternative administrator assigned to the workspace. For more information about how to detect and rectify orphaned workspaces, see the [View workspaces](/power-bi/admin/service-admin-portal-workspaces) article.
 
-Ideally, you should be able to determine who's responsible for the workspace content by who the workspace administrators and members are (and the contacts specified for the workspace). However, some organizations adopt a [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) strategy that restricts workspace creation to specific users or groups. They typically have an established [workspace creation process](powerbi-implementation-planning-workspaces-tenant-level-planning.md#workspace-creation-process) that is managed by the IT department. In this case, the workspace administrators would be the IT department rather than the users who directly create and publish the content.
+Ideally, you should be able to determine who's responsible for the workspace content by who the workspace administrators and members are (and the contacts specified for the workspace). However, some organizations adopt a [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) strategy that restricts workspace creation to specific users or groups. They typically have an established [workspace creation process](powerbi-implementation-planning-workspaces-tenant-level-planning.md#workspace-creation-process) that is managed by the IT department. In this case, the workspace administrators would be the IT department rather than the users who directly create and publish the content.
 
 #### Workspace member
 

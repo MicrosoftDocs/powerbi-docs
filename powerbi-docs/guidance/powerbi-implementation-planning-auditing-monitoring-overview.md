@@ -40,7 +40,7 @@ This article describes some valuable ways you can use auditing data.
 
 ### Analyze adoption efforts
 
-As described in the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md), adoption isn't just about _using_ the technology regularly; it's also about using it _effectively_. Adopting a technology like Power BI can be considered from [three inter-related perspectives](powerbi-adoption-roadmap-maturity-levels.md):
+As described in the [Fabric adoption roadmap](fabric-adoption-roadmap.md), adoption isn't just about _using_ the technology regularly; it's also about using it _effectively_. Adopting a technology like Power BI can be considered from [three inter-related perspectives](fabric-adoption-roadmap-maturity-levels.md):
 
 - **Organizational adoption:** The effectiveness of Power BI governance. It also refers to data management practices that support and enable business intelligence (BI) efforts.
 - **User adoption:** The extent to which Power BI consumers and creators continually increase their knowledge. It's concerned with whether they're actively using Power BI, and whether they're using it in an effective way.
@@ -87,7 +87,7 @@ It's useful to understand which users are most active. The types of questions yo
 - Which content creators publish the content that's used by the most content consumers?
 - How many distinct (licensed) users are there? What percentage of those users are active?
 - Are there content creators who are assigned a Power BI Pro or Power BI Premium Per User (PPU) license, but aren't actively using that license?
-- Are the most active users members of your Power BI [champions network](powerbi-adoption-roadmap-community-of-practice.md#champions-network)?
+- Are the most active users members of your Power BI [champions network](fabric-adoption-roadmap-community-of-practice.md#champions-network)?
 
 > [!TIP]
 > For analytical reporting, it's important that you add classifications to the data model to analyze users based on their level of usage, or to analyze content based on its level of usage. For more information, see [Create classifications](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#create-classifications)
@@ -122,9 +122,9 @@ Based on actual user data, here are some examples of the types of actions you mi
 
 - **Provide helpful information to users:** When you see an activity for the first time (for example, the first time a user publishes a report), you can send them an email with information about your internal best practices for [workspaces](powerbi-implementation-planning-workspaces-overview.md) and [security](powerbi-implementation-planning-security-overview.md).
 - **Teach users a better way:** When you see certain activities that concern you (for example, a significant and recurring number of report exports), you can contact the user. You can then explain the downsides of their actions and provide them with a better alternative.
-- **Include in office hours:** Based on recent activities, you can choose to discuss a relevant topic during [office hours](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#office-hours).
-- **Improve training curriculum:** To better prepare new users (and avoid the same missteps you see happening with existing users), you can improve or expand your [training](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#training) content. You might also conduct some cross-training sessions for your [support](powerbi-adoption-roadmap-user-support.md) team.
-- **Improve the centralized portal:** To improve consistency, you can invest time by adding or changing the guidance and resources available in your [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal).
+- **Include in office hours:** Based on recent activities, you can choose to discuss a relevant topic during [office hours](fabric-adoption-roadmap-mentoring-and-user-enablement.md#office-hours).
+- **Improve training curriculum:** To better prepare new users (and avoid the same missteps you see happening with existing users), you can improve or expand your [training](fabric-adoption-roadmap-mentoring-and-user-enablement.md#training) content. You might also conduct some cross-training sessions for your [support](fabric-adoption-roadmap-user-support.md) team.
+- **Improve the centralized portal:** To improve consistency, you can invest time by adding or changing the guidance and resources available in your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal).
 
 ### Mitigate risk
 
@@ -132,13 +132,13 @@ Auditing data helps you understand what's happening in your Power BI tenant. Thi
 
 Auditing data helps you to:
 
-- **Govern the Power BI tenant:** Find out whether users are following your [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies. For example, you might have a governance policy that requires all content that's published to a particular workspace be [certified](/power-bi/collaborate-share/service-endorse-content#certify-content). Or, you might have guidelines for when [groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) (rather than users) should be used for security. The [activity log](/power-bi/enterprise/service-admin-auditing), your tenant inventory (described previously), and [admin APIs](/rest/api/power-bi/) are helpful resources to help you govern your Power BI tenant.
+- **Govern the Power BI tenant:** Find out whether users are following your [governance](fabric-adoption-roadmap-governance.md) guidelines and policies. For example, you might have a governance policy that requires all content that's published to a particular workspace be [certified](/power-bi/collaborate-share/service-endorse-content#certify-content). Or, you might have guidelines for when [groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) (rather than users) should be used for security. The [activity log](/power-bi/enterprise/service-admin-auditing), your tenant inventory (described previously), and [admin APIs](/rest/api/power-bi/) are helpful resources to help you govern your Power BI tenant.
 - **Review security:** Determine whether there are [security](powerbi-implementation-planning-security-overview.md) concerns. For example, you might see overuse of sharing from a personal workspace. Or you might see unrelated content published to a single [workspace](powerbi-implementation-planning-workspaces-overview.md) (which leads to more complicated security for the items in such a broadly defined workspace). The [activity log](/power-bi/enterprise/service-admin-auditing), your tenant inventory (described previously), and the [admin APIs](/rest/api/power-bi/) are helpful for security auditing.
 - **Minimize security issues:** Use the activity log data to avoid or minimize the effect of security issues. For example, you might detect that an organization-wide sharing link was used in an unexpected way. By noticing this event in the activity log shortly after it happens, you can take action to resolve the issue before the link is used inappropriately.
 - **Monitor tenant setting changes:** Use the activity log data to determine when a [tenant setting](/power-bi/admin/service-admin-portal-about-tenant-settings) has changed. If you see that an unexpected change occurred, or that it was done by an unexpected user, you can act quickly to correct or revert the setting.
 - **Review data sources:** Determine whether unknown or unexpected data sources are used by semantic models, dataflows, or datamarts. You might also determine what types of data source are in use (such as files or databases). You might also check whether files are stored in an appropriate location (such as OneDrive for work or school).
 - **Information protection:** Review how sensitivity labels are used to reduce the risk of data leakage and misuse of data. For more information, see the [information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) series of articles.
-- **Mentoring and user enablement:** Take action to change user behaviors when necessary. As you gain more knowledge about what users need and what actions they are taking, you can influence [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) activities.
+- **Mentoring and user enablement:** Take action to change user behaviors when necessary. As you gain more knowledge about what users need and what actions they are taking, you can influence [mentoring and user enablement](fabric-adoption-roadmap-mentoring-and-user-enablement.md) activities.
 - **Monitor tenant setting changes:** Use the activity log data to determine when a [tenant setting](/power-bi/admin/service-admin-portal-about-tenant-settings) has changed. If you see that an unexpected change has occurred, or that it was done by an unexpected user, you can act quickly to correct or revert the setting. You can also use the [Get Tenant Settings](/rest/api/fabric/admin/tenants/get-tenant-settings) REST API to regularly extract a snapshot of the tenant settings.
 
 ### Improve compliance
@@ -157,7 +157,7 @@ The following table provides several examples.
 
 ### Manage licenses and costs
 
-Because auditing data contains information about actual user activities, it can help you [manage costs](powerbi-adoption-roadmap-system-oversight.md#cost-management) in various ways.
+Because auditing data contains information about actual user activities, it can help you [manage costs](fabric-adoption-roadmap-system-oversight.md#cost-management) in various ways.
 
 You can use the auditing data to:
 

@@ -45,9 +45,9 @@ This permission allows an application to list all groups that you're a member of
 
 You revoke permissions for a third-party app by going to the Office 365 My Apps site.
 
-On the **Office 365 My apps** site, here's how to revoke third-party permissions:
+On the **Microsoft My apps** site, here's how to revoke third-party permissions:
 
-1. Go to [Office 365 My Apps site](https://portal.office.com/myapps).
+1. Go to [Microsoft My Apps site](https://myapplications.microsoft.com/).
 
 2. On the **My apps** page, locate the third-party app.
 
