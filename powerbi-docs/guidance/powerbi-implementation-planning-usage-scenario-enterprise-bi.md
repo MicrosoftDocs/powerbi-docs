@@ -14,7 +14,7 @@ ms.date: 11/17/2022
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-As described in the [Fabric adoption roadmap](fabric-adoption-roadmap-content-delivery-scope.md#enterprise-bi), *enterprise BI* is characterized by having a significantly larger number of content consumers, compared to a much smaller number of authors who create and publish content.
+As described in the [Fabric adoption roadmap](fabric-adoption-roadmap-content-delivery-scope.md#enterprise), *enterprise BI* is characterized by having a significantly larger number of content consumers, compared to a much smaller number of authors who create and publish content.
 
 The distinction between the enterprise BI and the [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) scenarios is the use of [Power BI Premium capacity](../enterprise/service-premium-what-is.md), which allows content to be widely [distributed to consumers](../fundamentals/service-features-license-type.md) who have a Power BI free license. Consumers can include users within the organization, as well as [guest users](whitepaper-azure-b2b-power-bi.md), who are external to the organization.
 

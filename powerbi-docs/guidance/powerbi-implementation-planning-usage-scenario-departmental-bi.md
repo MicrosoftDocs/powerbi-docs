@@ -14,7 +14,7 @@ ms.date: 02/27/2022
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-As described in the [Fabric adoption roadmap](fabric-adoption-roadmap-content-delivery-scope.md#departmental-bi), *departmental BI* focuses on distributing content to a larger number of users. These users are typically members of a department or business unit.
+As described in the [Fabric adoption roadmap](fabric-adoption-roadmap-content-delivery-scope.md#departmental), *departmental BI* focuses on distributing content to a larger number of users. These users are typically members of a department or business unit.
 
 When teams grow larger, it becomes impractical to use a workspace effectively for the distribution of all reports (as described in the [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) scenario). A more effective way to handle larger departmental BI scenarios is to use the workspace for collaboration and distribute workspace content as an app to consumers.
 

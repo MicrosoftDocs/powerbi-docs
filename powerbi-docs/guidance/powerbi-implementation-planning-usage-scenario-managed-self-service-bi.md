@@ -14,7 +14,7 @@ ms.date: 05/26/2022
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-As described in the [Fabric adoption roadmap](fabric-adoption-roadmap-content-ownership-and-management.md#managed-self-service-bi), *managed self-service BI* is characterized by a blended approach that emphasizes *discipline at the core* and *flexibility at the edge*. The data architecture is usually maintained by a single team of centralized BI experts, while reporting responsibility belongs to creators within departments or business units.
+As described in the [Fabric adoption roadmap](fabric-adoption-roadmap-content-ownership-and-management.md#managed-self-service), *managed self-service BI* is characterized by a blended approach that emphasizes *discipline at the core* and *flexibility at the edge*. The data architecture is usually maintained by a single team of centralized BI experts, while reporting responsibility belongs to creators within departments or business units.
 
 Usually, there are many more report creators than semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) creators. These report creators can exist in any area of the organization. Because self-service report creators often need to quickly produce content, a blended approach allows them to focus on producing reports that support timely decision-making without the additional effort of creating a semantic model.
 

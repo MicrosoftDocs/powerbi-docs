@@ -103,7 +103,7 @@ There are two types of workspaces:
 - **Personal workspaces:** Every user has a personal workspace. A personal workspace can be used for publishing certain types of content to the Fabric portal. Its primary purpose is to support [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) usage scenarios.
 - **Workspaces:** The primary purpose of a [workspace](/power-bi/collaborate-share/service-new-workspaces) is to support collaboration among multiple users. Secondarily, a workspace can also be used for viewing content.
 
-Using a personal workspace for anything other than learning [personal BI](fabric-adoption-roadmap-content-delivery-scope.md#personal-bi), temporary content, or testing purposes can be risky because content in a personal workspace is managed and maintained by one person. Further, a personal workspace doesn't support collaboration with others.
+Using a personal workspace for anything other than learning [personal BI](fabric-adoption-roadmap-content-delivery-scope.md#personal), temporary content, or testing purposes can be risky because content in a personal workspace is managed and maintained by one person. Further, a personal workspace doesn't support collaboration with others.
 
 To allow the creation of any type of Fabric item (like a lakehouse or warehouse), a workspace must be added to a [Fabric capacity](/fabric/enterprise/licenses#capacity). That's true for both standard workspaces as well as personal workspaces. Therefore, you can govern who's able to create certain types of items within a personal workspace by way of its capacity assignment.
 
