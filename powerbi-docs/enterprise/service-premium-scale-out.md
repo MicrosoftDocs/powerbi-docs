@@ -7,14 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 07/25/2023
+ms.date: 11/19/2023
 LocalizationGroup: Premium
 ---
 
 # Power BI semantic model scale-out
-
-> [!IMPORTANT]
-> Semantic model scale-out is currently in **preview**.
 
 Semantic model scale-out helps Power BI deliver fast performance while your reports and dashboards are consumed by a large audience. Semantic model scale-out uses your Premium capacity to host one or more read-only *replicas* of your *primary* semantic model. By increasing throughput, the read-only replicas ensure performance doesn’t slow down when multiple users submit queries at the same time.
 
@@ -119,14 +116,10 @@ Power BI semantic model scale-out is enabled by default for a tenant. Power BI t
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Configure semantic model scale-out](service-premium-scale-out-configure.md)
+* [Configure semantic model scale-out](service-premium-scale-out-configure.md)
 
-> [!div class="nextstepaction"]
-> [Tutorial: Test semantic model scale-out](service-premium-scale-out-test.md)
+* [Tutorial: Test semantic model scale-out](service-premium-scale-out-test.md)
 
-> [!div class="nextstepaction"]
-> [Synchronize scale-out replicas](service-premium-scale-out-sync-replica.md)
+* [Synchronize scale-out replicas](service-premium-scale-out-sync-replica.md)
 
-> [!div class="nextstepaction"]
-> [Compare semantic model scale-out replicas](service-premium-scale-out-app.md)
+* [Compare semantic model scale-out replicas](service-premium-scale-out-app.md)
