@@ -618,9 +618,65 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-At the final step you should get visual with context menu:
+At the final step you should get a visual with context menu:
 
 ![Animation shows a context menu for the visual with options to drill down or drill up.](media\drill-down-support\dev-visual-drilldown-demo.gif)
+
+## Dynamic drill-down control
+
+>[!NOTE]
+> This feature is available from API version 5.7.0.
+
+The dynamic drill control feature allows the visual to enable or disable the drill feature dynamically using an [API call](./drilldown-api.md#dynamic-drill-control). When the drill feature is enabled, all the drilldown functionalities and expand/collapse features are available, including API calls, context menu commands, header drill buttons, and support for hierarchy data. When it's disabled, these functionalities aren't available.
+
+The following images show an example of a visual with the dynamic drill control feature enabled and disabled:
+
+### [Drill enabled](#tab/drill-enabled)
+
+:::image type="content" source="media/drill-down-support/drill-enabled.png" alt-text="Screenshot of a visual with drilldown disabled displaying each continent with all the countries in that continent displayed under it.":::
+
+### [Drill disabled](#tab/drill-disabled)
+
+:::image type="content" source="media/drill-down-support/drill-disabled.png" alt-text="Screenshot of a visual with drilldown enabled showing the population of each continent with Ocenana expanded to show Australia and New Zealand.":::
+
+---
+
+To support the dynamic drill control feature, add the following code to the capabilities.json file:
+
+* To disable drill by default:
+
+  ```json
+      "drilldown": {
+          "roles": [
+              "Rows",
+              "Columns"
+          ],
+          "canDisableDrill": { 
+              "disabledByDefault": true
+          }
+      },
+  ```
+
+* To enable drill by default:
+
+  ```json
+      "drilldown": {
+          "roles": [
+              "Rows",
+              "Columns"
+          ],
+          "canDisableDrill": {}
+      },
+  ```
+
+The `canDisableDrill` property indicates that the visual supports this feature. Without this property the API call isn't respected.  
+The `disabledByDefault` property indicates whether or not to disable the drill feature by default.
+
+Note: The `disabledByDefault` property acts on the following:
+•	Adding new visual to the canvas
+•	On conversion visual from a visual that doesn't support this feature.
+For example:
+When converting sourceVisual to targetVisual, the targetVisual's disabledByDefault property will be considered only if sourceVisual doesn't support this feature.
 
 ## Next steps
 
