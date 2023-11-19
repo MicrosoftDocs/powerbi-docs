@@ -27,7 +27,7 @@ In the Power BI service, you can apply sensitivity labels to reports, dashboards
 
 Here are the requirements to apply sensitivity labels in the Power BI service:
 
-- You must have a [Power BI Pro or Premium Per User (PPU) license](./service-admin-purchasing-power-bi-pro.md) and edit permissions on the content you want to label. Note: If you have a Free license, you can apply sensitivity labels on the content in your *My workspace*, provided that the other requirements listed here have been met.
+- You must have a [Power BI Pro or Premium Per User (PPU) license](./service-admin-purchasing-power-bi-pro.md) and edit permissions on the content you want to label. Note: If you have a Free license, you can only apply sensitivity labels to items in your *My workspace* (provided that the other requirements listed here have been met); you won't be able to apply them to items in any other workspace.
 - Sensitivity labels must be enabled for your organization. Contact your Power BI admin for information about your configuration.
 - You must belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
 - All [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) must be met.
