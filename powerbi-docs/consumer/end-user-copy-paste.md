@@ -75,13 +75,14 @@ A: We currently support native Power BI visuals and certified custom visuals. Th
 * Python visuals
 * R visuals
 * PowerApps visuals
-* [Licensed visuals](../developer/visuals/licensing-faq.yml#what-are-licensed-visuals-)
-* [AppSource visuals that are managed in your organizational store](/fabric/admin/organizational-visuals#add-a-visual-from-appsoruce)
 
 A: The ability to copy a visual can be turned off by your IT department or Power BI administrator.
 
 Q: Why is my visual not pasting correctly?  
-A: There are limitations for custom visuals and animated visuals.
+A: There are limitations for custom visuals and animated visuals. The following are some examples of visuals that won't paste correctly:
+
+* [Licensed visuals](../developer/visuals/licensing-faq.yml#what-are-licensed-visuals-)
+* [AppSource visuals that are managed in your organizational store](/fabric/admin/organizational-visuals#add-a-visual-from-appsoruce)
 
 Q: Can I copy a visual from my embedded Power BI report?  
 A: *Copy visual* is supported only in the **embed for your organization** scenario. It isn't available in the **embed for your customers** scenario.

@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/16/2023
+ms.date: 07/19/2022
 ---
 
 # Drilldown API
@@ -43,11 +43,3 @@ public update(options: VisualUpdateOptions) {
             this.host.drill(args);
         }
 ```
-
-## Dynamic drill control
-
-The dynamic drill control feature allows the visual to enable or disable the drill feature dynamically using an API call.
-When the drill feature is enabled, all the functionalities of drilldown and expand/collapse features will be available.
-This includes API calls, context menu commands, header drill buttons, and support for hierarchy data.
-When the drill feature is disabled, these functionalities will not be available
-

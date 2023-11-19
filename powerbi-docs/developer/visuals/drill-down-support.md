@@ -8,7 +8,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/16/2023
+ms.date: 10/12/2022
 ---
 
 # Add drill-down support
@@ -618,17 +618,9 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-At the final step you should get a visual with context menu:
+At the final step you should get visual with context menu:
 
 ![Animation shows a context menu for the visual with options to drill down or drill up.](media\drill-down-support\dev-visual-drilldown-demo.gif)
-
-## Dynamic drill-down control
-
->[!NOTE]
-> This feature is available from API version 5.7.0.
-
-The dynamic drill control feature allows the visual to enable or disable the drill feature dynamically using an [API call](./drilldown-api.md#dynamic-drill-control). When the drill feature is enabled, all the functionalities of drilldown and expand/collapse features are available, including API calls, context menu commands, header drill buttons, and support for hierarchy data. When it's disabled, these functionalities are not available.
-
 
 ## Next steps
 
