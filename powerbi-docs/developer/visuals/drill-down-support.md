@@ -79,7 +79,7 @@ For example:
 }
 ```
 
-### Create the visual with drill-down support
+### Create a visual with drill-down support
 
 To create a visual with drill-down support, run the following command:
 
