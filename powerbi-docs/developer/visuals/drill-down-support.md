@@ -713,62 +713,62 @@ The following example shows how to self-migrate an older visual to one that uses
 
 1. Add the following to the *visual.ts* file:
 
-  ```typescript
-      export class Visual implements IVisual {
-   	  //...
-        private isCalledToDisableDrillInMigrationScenario = false;
-        private drillMigration = { disabledByDefault: true };
+   ```typescript
+       export class Visual implements IVisual {
+   	   //...
+         private isCalledToDisableDrillInMigrationScenario = false;
+         private drillMigration = { disabledByDefault: true };
+     
+         constructor(options: VisualConstructorOptions) {
+             //...
+             this.host = options.host;
+             //...
+         }
     
-        constructor(options: VisualConstructorOptions) {
-            //...
-            this.host = options.host;
-            //...
-        }
-    
-        private update(options: VisualUpdateOptions) {
+         private update(options: VisualUpdateOptions) {
 
             this.handleSelfDrillMigration(options);
-            //...
-        }
+             //...
+         }
     
-        private handleSelfDrillMigration(options: VisualUpdateOptions): void {
-            if (options && options.dataViews && options.dataViews[0] && options.dataViews[0].metadata) {
-                const metadata = options.dataViews[0].metadata;
-                if (metadata && metadata.dataRoles) {
-                    const isDrillDisabled = metadata.dataRoles.isDrillDisabled;
-                    if (isDrillDisabled === undefined) {
-                        return;
-                    }
-                    // Continue in case the visual is already migrated
-                    if (!this.formattingSettings.DrillMigration.isMigrated) {
-                        // Persist the isMigrated property when the drill has the correct state
-                        if (this.drillMigration.disabledByDefault === isDrillDisabled) {
-                            this.persistMigrationProperty();
-                        } else if (!this.isCalledToDisableDrillInMigrationScenario) {
-                            // Use the API call only once
-                            this.host.setCanDrill(!this.drillMigration.disabledByDefault);
-                            this.isCalledToDisableDrillInMigrationScenario = true;
-                        }
-                    }
-                }
-            }
-        }
+         private handleSelfDrillMigration(options: VisualUpdateOptions): void {
+             if (options && options.dataViews && options.dataViews[0] && options.dataViews[0].metadata) {
+                 const metadata = options.dataViews[0].metadata;
+                 if (metadata && metadata.dataRoles) {
+                     const isDrillDisabled = metadata.dataRoles.isDrillDisabled;
+                     if (isDrillDisabled === undefined) {
+                         return;
+                     }
+                     // Continue in case the visual is already migrated
+                     if (!this.formattingSettings.DrillMigration.isMigrated) {
+                         // Persist the isMigrated property when the drill has the correct state
+                         if (this.drillMigration.disabledByDefault === isDrillDisabled) {
+                             this.persistMigrationProperty();
+                         } else if (!this.isCalledToDisableDrillInMigrationScenario) {
+                             // Use the API call only once
+                             this.host.setCanDrill(!this.drillMigration.disabledByDefault);
+                             this.isCalledToDisableDrillInMigrationScenario = true;
+                         }
+                     }
+                 }
+             }
+         }
     
-        private persistMigrationProperty(): void {
-            let property = {
-                merge: [{
-                    objectName: "DrillMigration",
-                    properties: {
-                        isMigrated: true
-                    },
-                    selector: null
-                }]
-            };
-            this.host.persistProperties(property);
-        }
-    }
+         private persistMigrationProperty(): void {
+             let property = {
+                 merge: [{
+                     objectName: "DrillMigration",
+                     properties: {
+                         isMigrated: true
+                     },
+                     selector: null
+                 }]
+             };
+             this.host.persistProperties(property);
+         }
+     }
 
-  ```
+   ```
 
 The first time the visual is opened after adding this code, the DrillMigration variable is set to true and the visual opens in the default state.
 
