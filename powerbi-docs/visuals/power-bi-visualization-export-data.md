@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/28/2023
+ms.date: 11/20/2023
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY, sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -28,7 +28,7 @@ To see the data that's used to create a visual, [you can display that data in Po
 
 If you do have permissions to the data, you can see, and export the data that Power BI uses to create a visualization.
 
-If you don't have permissions to the data, you can't be able to export or open in Excel. Often, data is confidential or limited to specific users. For details, see the [Considerations and limitations](#considerations-and-limitations) section at the end of this document. If you're working in the Power BI service, you can contact your Power BI administrator, or you can look up the contact information for the dashboard owner to request export permissions. To find the owner, select the dropdown next to the report title.
+If you don't have permissions to the data, you can't export or open in Excel. Often, data is confidential or limited to specific users. For details, see the [Considerations and limitations](#considerations-and-limitations) section at the end of this document. If you're working in the Power BI service, you can contact your Power BI administrator, or you can look up the contact information for the dashboard owner to request export permissions. To find the owner, select the dropdown next to the report title.
 
 :::image type="content" source="media/power-bi-visualization-export-data/power-bi-contact.png" alt-text="Dashboard displaying contact information.":::
 
@@ -54,9 +54,9 @@ Security and Power BI administrators can use [Microsoft Defender for Cloud Apps]
 
    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-more-actions.png" alt-text="Screenshot of a visualization with the ellipsis button called out.":::
 
-1. If the tile was pinned from a report with a sensitivity label, you see this warning. Consider the sensitivity of your content before deciding whether to export or not.
+1. If the tile was pinned from a report with a sensitivity label, you see this warning. Consider the sensitivity of your content before deciding whether to export or not. To export data with a sensitivity label, open the report page that contains the original visual and export the data from there instead.  
 
-   :::image type="content" source="media/power-bi-visualization-export-data/power-bi-sensitivity.png" alt-text="Screenshot of sensitivity warning.":::
+   :::image type="content" source="media/power-bi-visualization-export-data/power-bi-export-sensitivity.png" alt-text="Screenshot of sensitivity warning.":::
 
 1. Power BI exports the data to a *.csv* file. If you've filtered the visualization, then the .csv export is filtered as well. Your browser prompts you to save or open the file. By default, your export is saved to your local Downloads folder.
 
@@ -93,13 +93,19 @@ Power BI gives you the option to export the summarized data or underlying data. 
 - **Summarized data**
 - **Underlying data**
 
-:::image type="content" source="media/power-bi-visualization-export-data/power-bi-export-options.png" alt-text="Window showing options for Summarized data and Underlying data.":::
+:::image type="content" source="media/power-bi-visualization-export-data/power-bi-export-option.png" alt-text="Window showing options for Current layout, Summarized data, and Underlying data.":::
 
 ### Export ***summarized*** data
 
 Select the option for **Summarized data** if you want to export data for what you see in that visual. This type of export shows you only the data (columns and measures) that is being used to create the visual.  Since this visual has a hierarchy, your export contains aggregated data for the full hierarchy. So, even though your current view of the chart shows two columns (two Country/Regions), your summarized data display four rows--one for each **City** in the hierarchy.
 
 If the visual has filters applied, then the data you export is also filtered. If your visual has aggregates (sum, average, and so on), the export is also aggregated.
+
+Select the **File format** for your export. You have three options. The first two support sensitivity labels. The third option, exporting to .csv, does not support sensitivity labels. 
+
+- Excel .xlsx file with live connections (up to 500,000 rows max)
+- Excel .xlsx file (up to 150,000 row max)
+- .csv file (up to 30,000 row max). 
 
 For help understanding aggregates, see [Aggregates in Power BI](../create-reports/service-aggregates.md).
 
@@ -135,7 +141,7 @@ When you select  **Export**, your browser prompts you to save the file. Once sav
 
 ### Export underlying data details
 
-What you see when you select **Underlying data** can vary. Understanding these details may require the help of your admin or IT department. In Power BI Desktop or the Power BI service, in the reporting view, a *measure* shows in the **Fields** list with a calculator icon :::image type="icon" source="/power-bi/transform-model/media/desktop-field-list/field-list-09b.png":::. Measures can be created in Power BI Desktop.
+What you see when you select **Underlying data** can vary. Understanding these details may require the help of your admin or IT department. In Power BI Desktop or the Power BI service, in the reporting view, a *measure* shows in the **Fields** list with a calculator icon :::image type="icon" source="media/power-bi-visualization-export-data/power-bi-calculator.png":::. Measures can be created in Power BI Desktop.
 
 | Visual contains | What you see in export  |
 |---------------- | ---------------------------|
