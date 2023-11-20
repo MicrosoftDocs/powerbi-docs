@@ -35,13 +35,13 @@ To learn more about how queries are used, see [DAX queries](/dax/dax-queries) in
 
 In Power BI Desktop, select the **DAX Query View** icon on the left side.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-icon.png" alt-text="DAX query view icon in Power BI Desktop":::
+:::image type="content" source="media/dax-query-view/dax-query-view-icon.png" alt-text="Screenshot of the DAX query view icon in Power BI Desktop.":::
 
 ## DAX query view layout
 
 Let's take a closer look at DAX query view in Power BI Desktop.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-layout.png" alt-text="DAX query view layout":::
+:::image type="content" source="media/dax-query-view/dax-query-view-layout.png" alt-text="Diagram that shows the DAX query view layout." lightbox="media/dax-query-view/dax-query-view-layout.png":::
 
 DAX query view has these elements:
 
@@ -49,7 +49,7 @@ DAX query view has these elements:
 
 The DAX query view ribbon has common actions used when writing DAX queries.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-ribbon.png" alt-text="DAX query view ribbon":::
+:::image type="content" source="media/dax-query-view/dax-query-view-ribbon.png" alt-text="Screenshot of the DAX query view ribbon.":::
 
 Let's take a closer look at elements in the ribbon:
 
@@ -57,7 +57,7 @@ Let's take a closer look at elements in the ribbon:
 
 Click the **Format query** ribbon button or use SHIFT+ALT+F to format the current query. The query is indented with tabs. DAX functions are changed to UPPERCASE, and additional lines are added. Formatting your DAX query is considered a best practice and improves the DAX query readability. The formatting also indents in such a way that you can collapse and expand sections of the query.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-format-query.png" alt-text="Format query":::
+:::image type="content" source="media/dax-query-view/dax-query-view-format-query.png" alt-text="Screenshot of the Format query button.":::
 
 #### Comment and Uncomment
 
@@ -67,33 +67,33 @@ Click the **Uncomment** ribbon button to remove **//** at the beginning of any l
 
 You can also use CTRL+/ to toggle between comment and uncomment.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-comment.png" alt-text="Comment or Uncomment in DAX query view ribbon":::
+:::image type="content" source="media/dax-query-view/dax-query-view-comment.png" alt-text="Screenshot of the Comment and Uncomment buttons in the DAX query view ribbon.":::
 
 #### Find and Replace
 
 Click on the **Find** ribbon button or use CTRL+F to search for text in the DAX query editor. Find includes options to match case, match whole word, use a regular expression, and cycle through all matches for the current query. You can also click the chevron to the left of the **Find** box to enter Replace.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-find.png" alt-text="Find in DAX query view ribbon":::
+:::image type="content" source="media/dax-query-view/dax-query-view-find.png" alt-text="Screenshot of the find button in the DAX query view ribbon." lightbox="media/dax-query-view/dax-query-view-find.png":::
 
 Click on the **Replace** button in the ribbon or use CTRL+H to search for and replace text in the DAX query editor. Replace includes options to preserve the case and replace one at a time or all at once.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-replace.png" alt-text="Replace in the DAX query view ribbon":::
+:::image type="content" source="media/dax-query-view/dax-query-view-replace.png" alt-text="Screenshot of the Replace capability in the DAX query view ribbon." lightbox="media/dax-query-view/dax-query-view-replace.png":::
 
 #### Command palette
 
 Click the **Command palette** ribbon button or use CTRL+ALT+P to open the command palette box. You can search for additional DAX query editor actions and see their associated keyboard shortcuts.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-command-pallette.png" alt-text="DAX query view command pallette":::
+:::image type="content" source="media/dax-query-view/dax-query-view-command-pallette.png" alt-text="Screenshot of the DAX query view command pallette.":::
 
 #### Command bar
 
 The DAX query view command bar includes the most important actions when using DAX query view. The **Run** button executes the DAX query or the selected lines of a query. The status of a query after it runs appears in the lower status bar.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-command-bar.png" alt-text="DAX query view command bar":::
+:::image type="content" source="media/dax-query-view/dax-query-view-command-bar.png" alt-text="Screenshot of the DAX query view command bar.":::
 
 When a query is running, the button becomes a **Cancel** button, which can be used to stop a running query.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-cancel.png" alt-text="DAX query view cancel":::
+:::image type="content" source="media/dax-query-view/dax-query-view-cancel.png" alt-text="Screenshot of the DAX query view cance..":::
 
 ### DAX query editor
 
@@ -105,7 +105,7 @@ DAX query editor has the following elements:
 
 Type in your query and get help with suggestions and Intellisense while editing.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-intellisense.png" alt-text="DAX query editor intellisense":::
+:::image type="content" source="media/dax-query-view/dax-query-view-intellisense.png" alt-text="Screenshot of the DAX query editor intellisense.":::
 
 Use ENTER or TAB to add the highlighted intellisense, or SHIFT+ENTER or ALT+ENTER to move to another line without adding the intellisense option. Clicking ESC closes any of the overlays.
 
@@ -113,7 +113,7 @@ Use ENTER or TAB to add the highlighted intellisense, or SHIFT+ENTER or ALT+ENTE
 
 When a measure is included in the DAX query, you can hover on it to see the expression, name, and description.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-measure.png" alt-text="Hover to see measure expression":::
+:::image type="content" source="media/dax-query-view/dax-query-view-measure.png" alt-text="Screenshot of the hover to see measure expression feature.":::
 
 #### Click to see measure lightbulb quick actions
 
@@ -130,23 +130,23 @@ The lightbulb quick actions and CodeLens can be used together in a complete work
 1. In the context menu of a measure, choose Quick queries, then Evaluate to have the query created for you in a new Query tab.
 1. Click on the measure in the query to Define or Define with references, adding the DEFINE statement.
 1. Make expression updates to the measure, then run the DAX query to show the change.
-1. When the change as expected, then use the CodeLens Update model: Overwrite measure to save it back to the model.
+1. When the change appears as expected, then use the CodeLens Update model: Overwrite measure to save it back to the model.
 
 Here's a more visual way to understand the workflow:
 
- :::image type="content" source="media/dax-query-view/dax-query-view-workflow.png" alt-text="Workflow":::
+ :::image type="content" source="media/dax-query-view/dax-query-view-workflow.png" alt-text="Diagram of the workflow." lightbox="media/dax-query-view/dax-query-view-workflow.png":::
 
 ### Results grid
 
 When a query is run, the results are shown in the **Results** grid.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-results-grid.png" alt-text="Results grid":::
+:::image type="content" source="media/dax-query-view/dax-query-view-results-grid.png" alt-text="Screenshot of the results grid." lightbox="media/dax-query-view/dax-query-view-results-grid.png":::
 
 If there's more than one EVALUATE statement in the query editor, then multiple results can be returned. You can use the **Result** dropdown to switch between them. The **Copy** button copies the entire grid as a tab delimited table with headers. The grid can be resized using the upper right hand corner arrows or manually with the cursor on the border between the result grid and the query editor.
 
 If the query results in an error, the results grid shows it.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-results-grid-error.png" alt-text="Error message in results grid":::
+:::image type="content" source="media/dax-query-view/dax-query-view-results-grid-error.png" alt-text="Screenshot of the error message in the results grid." lightbox="media/dax-query-view/dax-query-view-results-grid-error.png":::
 
 A copy button transfers the error to your clipboard. The beginning of the error indicates where in the query the error is. In the image above the error is:
 
@@ -158,7 +158,7 @@ And "**Query (4, 23)**" indicates the error is on line 4 and at character 23.
 
 DAX query view can have multiple query tabs, which can be renamed or removed. They also show the current state of the query.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-query-tabs.png" alt-text="Query tabs":::
+:::image type="content" source="media/dax-query-view/dax-query-view-query-tabs.png" alt-text="Screenshot of the Query tabs.":::
 
 Each tab includes a status indicator:
 
@@ -186,7 +186,7 @@ Define all measures in the model creates a query with all the measure expression
 
 - **Show top 100 rows** creates a query by using SELECTCOLUMNS() to show the top 100 rows of the table. The columns are listed on each line to allow for easy modification by commenting out lines. An ORDER BY is also included to specify your sort order.
 
-    :::image type="content" source="media/dax-query-view/dax-query-view-shoq-top-100.png" alt-text="Show top 100 rows":::
+    :::image type="content" source="media/dax-query-view/dax-query-view-shoq-top-100.png" alt-text="Screenshot of the show top 100 rows." lightbox="media/dax-query-view/dax-query-view-shoq-top-100.png":::
 
 - **Show column statistics** creates a query showing statistical information for every column in your table. See many of the expressions for how to aggregate columns as MIN, MAX, AVERAGE, COUNT, and more.
 
@@ -196,25 +196,25 @@ Define all measures in the model creates a query with all the measure expression
 
 - **Show data preview** creates a query using DISTINCT() to see the values of a column.  
 
-    :::image type="content" source="media/dax-query-view/dax-query-view-show-data-preview.png" alt-text="Show data preview":::
+    :::image type="content" source="media/dax-query-view/dax-query-view-show-data-preview.png" alt-text="Screenshot of the show data preview.":::
 
 - **Show column statistics** creates a query showing statistical information for this specific column. See many expressions for how to aggregate the column as MIN, MAX, AVERAGE, COUNT, and more. The query returned varies depending on the data type of the column, showing different statistics for numeric, text, and date columns.
 
-    :::image type="content" source="media/dax-query-view/dax-query-view-show-column-preview.png" alt-text="Show column preview":::
+    :::image type="content" source="media/dax-query-view/dax-query-view-show-column-preview.png" alt-text="Screenshot of the show column preview." lightbox="media/dax-query-view/dax-query-view-show-column-preview.png":::
 
 ##### Measures
 
 - **Evaluate** creates a query to show the result of the measure. SUMMARIZECOLUMNS() is used so you can add in any group by columns to show the measure by specific groups such as Country, Product, etc.
 
-    :::image type="content" source="media/dax-query-view/dax-query-view-measure-evaluate.png" alt-text="Evaluate measure":::
+    :::image type="content" source="media/dax-query-view/dax-query-view-measure-evaluate.png" alt-text="Screenshot of evaluate measure.":::
 
 - **Define and evaluate** creates a query to show the result of the measure and show the measure’s expression in a DEFINE statement that can then be modified.
 
-    :::image type="content" source="media/dax-query-view/dax-query-view-measure-define-evaluate.png" alt-text="Define and evaluate measure":::
+    :::image type="content" source="media/dax-query-view/dax-query-view-measure-define-evaluate.png" alt-text="Screenshot of the define and evaluate measure.":::
 
 - **Define with references and evaluate** creates a query to show the result of the measure and show not only the measure’s expression in a DEFINE statement that can be modified, but also any other measures referenced in the measure expression. Edit any part in the full context of the measure.
 
-    :::image type="content" source="media/dax-query-view/dax-query-view-measure-define-with-references-evaluate.png" alt-text="Define with references and evaluate":::
+    :::image type="content" source="media/dax-query-view/dax-query-view-measure-define-with-references-evaluate.png" alt-text="Screenshot of define with references and evaluate.":::
 
 ## Getting visual DAX queries from Performance Analyzer
 
@@ -222,7 +222,7 @@ Visuals in Report view get data from the model by creating a DAX query. The visu
 
 In **Report view**, go to the **Optimize** ribbon, then click **Performance Analyzer**. Click **Start recording**, then **Refresh visuals**. In the table below, expand a visual to see options to copy query or run in DAX query view. Clicking on **Run** in DAX query view takes the visual query, adds it as a new Query tab in DAX query view, and then runs it.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-performance-analyzer.png" alt-text="Visual DAX queries in Performance Analyzer":::
+:::image type="content" source="media/dax-query-view/dax-query-view-performance-analyzer.png" alt-text="Screenshot of the visual DAX queries in Performance Analyzer feature." lightbox="media/dax-query-view/dax-query-view-performance-analyzer.png":::
 
 ## Considerations and limitations
 
