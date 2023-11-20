@@ -693,7 +693,7 @@ If, however, you want to keep the same GUID, keep in mind the following points:
 
   * Disable the drill to receive all the data, using the `setCanDrill` API.
 
-The following example shows how to self-migrate an older visual to one that has synamic drill control:
+The following example shows how to self-migrate an older visual to one that uses dynamic drill control:
 
 1. Add the following object to the capabilities.json file:
 
@@ -769,6 +769,8 @@ The following example shows how to self-migrate an older visual to one that has 
     }
 
   ```
+
+The first time the visual is opened after adding this code, the DrillMigration variable is set to true and the visual opens in the default state.
 
 ## Considerations and limitations
 
