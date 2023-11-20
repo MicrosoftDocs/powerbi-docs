@@ -627,7 +627,7 @@ Finally, you should get a visual with context menu:
 >[!NOTE]
 > This feature is available from API version 5.7.0.
 
-The dynamic drill control feature allows the visual to enable or disable the drill feature dynamically using an [API call](./drilldown-api.md#dynamic-drill-control). When the drill feature is enabled, all the drilldown functionalities and expand/collapse features are available, including API calls, context menu commands, header drill buttons, and support for hierarchy data. When it's disabled, these functionalities aren't available.
+The dynamic drill control feature allows the visual to enable or disable the drill feature dynamically using an [API call](./drilldown-api.md#how-to-use-the-dynamic-drill-control-api). When the drill feature is enabled, all the drilldown functionalities and expand/collapse features are available, including API calls, context menu commands, header drill buttons, and support for hierarchy data. When it's disabled, these functionalities aren't available.
 
 The following images show an example of a visual with the dynamic drill control feature enabled and disabled:
 
