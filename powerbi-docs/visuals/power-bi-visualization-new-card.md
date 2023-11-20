@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-The new card is a helpful visual that presents important metrics such as total sales, profit growth, count of opportunities,and performance status. You can create cards for the metrics that align with your objectives and key results (OKRs) and display them grouped in a single visual container.
+The new card is a helpful visual that presents important metrics such as total sales, profit growth, count of opportunities, and performance status. You can create cards for the metrics that align with your objectives and key results (OKRs) and display them grouped in a single visual container.
 
 :::image type="content" source="media/power-bi-visualization-new-card/power-bi-opportunities-card.png" alt-text="Screenshot of card visualization.":::
 
@@ -29,7 +29,7 @@ Sharing your report with a Power BI colleague requires that you both have indivi
 
 ## Get the sample 
 
-If you want to follow along, this tutorial uses the Retail Analysis Sample.
+If you want to follow along, this article uses the Retail Analysis Sample.
 
 1. Download the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) to your desktop.
 
@@ -146,6 +146,6 @@ The new card visual provides a wide range of options for customization. To bette
 * The new card visual currently doesn't support scrolling or pagination. As a result, if the container is small and you add multiple cards, they may appear in a reduced size.
 
 ## Next steps
-[Combo charts in Power BI](power-bi-visualization-combo-chart.md)
 
-[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
+- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
