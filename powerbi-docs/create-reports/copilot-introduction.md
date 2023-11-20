@@ -21,7 +21,7 @@ Copilot for Microsoft Fabric Public Preview is available in Power BI. It helps y
 
 Power BI has introduced generative AI that allows you to create reports automatically by selecting the topic for a report or by prompting Copilot on a particular topic, and create a narrative visual that generates a summary of your report using generative AI. The following sections cover the details of the features and how to use Copilot.
 
-:::image type="content" source="media/copilot-introduction/copilot-internet-sales-analysis.png" alt-text="Screenshot showing Copilot suggested report page.":::
+:::image type="content" source="media/copilot-introduction/copilot-internet-sales-analysis.png" alt-text="Screenshot showing Copilot suggested report page." lightbox="media/copilot-introduction/copilot-internet-sales-analysis.png":::
 
 ## Feature overview: Copilot capabilities
 
