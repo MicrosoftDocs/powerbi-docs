@@ -16,10 +16,10 @@ The **Drilldown API** allows you to create a visual that can trigger a drilldown
 
 The API enables the visual to show next level, expand to next level, or drill up based on the parameters passed to the API. For more information about drilling down, see [Drill down support](drill-down-support.md).
 
+## How to use the drilldown API
+
 > [!NOTE]
 > The **Drilldown API** is available from API version 4.7.0 To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
-
-## How to use the drilldown API
 
 Add the following to the *capabilities.json* file:
 
@@ -44,14 +44,12 @@ public update(options: VisualUpdateOptions) {
         }
 ```
 
-## Dynamic drill control
+## How to use the dynamic drill control API
 
 > [!NOTE]
 > The **Dynamic drill control API** is available from API version 5.7.0
 
 The dynamic drill control feature allows the visual to [enable or disable the drill feature](./drill-down-support.md#dynamic-drill-down-control) dynamically using an API call.
-
-### How to use the dynamic drill control API
 
 To support the dynamic drill control feature, add the following code to the capabilities.json file:
 
@@ -91,6 +89,3 @@ The `disabledByDefault` property indicates whether or not to disable the drill f
 > * Convert a visual from one that doesn't support this feature.
 >
 > For example, if you convert a *sourceVisual* to *targetVisual*, the *targetVisual*'s `disabledByDefault` property is considered only if the *sourceVisual* doesn't support this feature. If *sourceVisual* does support this feature, the *targetVisual* keeps the *sourceVisual*'s state and not the default.
-
-
-
