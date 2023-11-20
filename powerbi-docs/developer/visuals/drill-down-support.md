@@ -13,13 +13,13 @@ ms.date: 10/12/2022
 
 # Add drill-down support
 
-When a visual has a hierarchy, you can allow users to use the Power BI drill-down feature to reveal additional details.
+When a visual has a hierarchy, you can allow users to use the Power BI drill-down feature to reveal more details.
 
-Read more about the Power BI drill-down feature [here](./../../consumer/end-user-drill.md)
+Read more about the Power BI drill-down feature at [Drill mode in the Power BI service](./../../consumer/end-user-drill.md).
 
 ## Enable drill-down support in the visual
 
-To support drill-down actions in your visual, add a new field to `capabilities.json` named `drill-down`. This field has one  property called `roles` which contains the name of the dataRole you want to enable drill-down actions on.
+To support drill-down actions in your visual, add a new field to `capabilities.json` named `drill-down`. This field has one property called `roles` that contains the name of the dataRole you want to enable drill-down actions on.
 
 ```json
     "drilldown": {
@@ -87,7 +87,7 @@ Run
 pbiviz new testDrillDown -t default
 ```
 
-to create a default sample visual. And apply the above sample of `capabilities.json` to the newly created visual.
+To create a default sample visual. And apply the above sample of `capabilities.json` to the newly created visual.
 
 Create the property for `div` container to hold HTML elements of the visual:
 
@@ -152,7 +152,7 @@ export class Visual implements IVisual {
 }
 ```
 
-Update the `update` method of the visual to create `button`s:
+To create `button`s, update the `update` visual's method:
 
 ```typescript
 export class Visual implements IVisual {
@@ -236,7 +236,7 @@ After those steps you should get following visual:
 
 ## Add context menu to visual elements
 
-In this step you'll add context menu to the button's on the visual:
+In this step you add context menu to the button's on the visual:
 
 ![Context menu in the visual](media/drill-down-support/dev-visual-drilldown-context-menu.png)
 
@@ -321,7 +321,7 @@ In the final step you should get visual with selections and context menu:
 
 Prepare sample data to test the visual with matrix data view mappings:
 
-|   Row1   |   Row2   |   Row3   |   Column1   |   Column2   |   Column3   |   Values   |
+|   Row 1   |   Row 2   |   Row 3   |   Column 1   |   Column 2   |   Column 3   |   Values   |
 |-----|-----|------|-------|-------|-------|-------|
 |   R1   |   R11   |   R111   |   C1   |   C11   |   C111   |   1   |
 |   R1   |   R11   |   R112   |   C1   |   C11   |   C112   |   2   |
@@ -618,7 +618,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-At the final step you should get a visual with context menu:
+Finally, you should get a visual with context menu:
 
 ![Animation shows a context menu for the visual with options to drill down or drill up.](media\drill-down-support\dev-visual-drilldown-demo.gif)
 
