@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 11/20/2023
 LocalizationGroup: Connect to data
 ---
 # Use R in Power Query Editor
