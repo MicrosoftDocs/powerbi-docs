@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 11/20/2023
 LocalizationGroup: Create reports
 ---
 
@@ -83,7 +83,7 @@ Click on the **Replace** button in the ribbon or use CTRL+H to search for and re
 
 Click the **Command palette** ribbon button or use CTRL+ALT+P to open the command palette box. You can search for additional DAX query editor actions and see their associated keyboard shortcuts.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-command-pallette.png" alt-text="Screenshot of the DAX query view command pallette.":::
+:::image type="content" source="media/dax-query-view/dax-query-view-command-palette.png" alt-text="Screenshot of the DAX query view command palette.":::
 
 #### Command bar
 
@@ -93,7 +93,7 @@ The DAX query view command bar includes the most important actions when using DA
 
 When a query is running, the button becomes a **Cancel** button, which can be used to stop a running query.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-cancel.png" alt-text="Screenshot of the DAX query view cance..":::
+:::image type="content" source="media/dax-query-view/dax-query-view-cancel.png" alt-text="Screenshot of the DAX query view cancel.":::
 
 ### DAX query editor
 
