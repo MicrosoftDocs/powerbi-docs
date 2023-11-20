@@ -79,15 +79,15 @@ For example:
 }
 ```
 
-## Create the visual with drill-down support
+### Create the visual with drill-down support
 
-Run
+To create a visual with drill-down support, run the following command:
 
 ```cmd
 pbiviz new testDrillDown -t default
 ```
 
-To create a default sample visual. And apply the above sample of `capabilities.json` to the newly created visual.
+To create a default sample visual, apply the above [sample](#enable-drill-down-support-in-the-visual) of `capabilities.json` to the newly created visual.
 
 Create the property for `div` container to hold HTML elements of the visual:
 
@@ -234,7 +234,7 @@ After those steps you should get following visual:
 
 ![Dev visual with buttons](media/drill-down-support/dev-visual-drilldown1.png)
 
-## Add context menu to visual elements
+### Add context menu to visual elements
 
 In this step you add context menu to the button's on the visual:
 
@@ -317,9 +317,9 @@ In the final step you should get visual with selections and context menu:
 
 ![Animation shows selecting Drill down and Drill up from the visual context menu.](media/drill-down-support/dev-visual-drilldown-demo.gif)
 
-## Add drill-down support for matrix data view mapping
+### Add drill-down support for matrix data view mapping
 
-Prepare sample data to test the visual with matrix data view mappings:
+To test the visual with matrix data view mappings, first prepare sample data :
 
 |   Row 1   |   Row 2   |   Row 3   |   Column 1   |   Column 2   |   Column 3   |   Values   |
 |-----|-----|------|-------|-------|-------|-------|
@@ -342,7 +342,7 @@ Prepare sample data to test the visual with matrix data view mappings:
 |   R2   |   R23   |   R232   |   C2   |   C23   |   C232   |   18   |
 |   R2   |   R23   |   R233   |   C2   |   C23   |   C233   |   19   |
 
-Apply following dataview mapping for the visual:
+Then apply the following dataview mapping to the visual:
 
 ```json
 {
