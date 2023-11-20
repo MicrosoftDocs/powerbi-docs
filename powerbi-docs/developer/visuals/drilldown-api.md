@@ -93,7 +93,7 @@ Then use the API call to enable or disable the drill as needed:
 
 ### Migrate an existing visual to use the dynamic drill control API
 
-Using the drilldown feature represents a breaking change. Therefore, for the smoothest transition, we recommend using a new visual GUID for the new version.
+Using the drilldown feature represents a breaking change. Therefore, for the smoothest transition, we recommend that you use **a new visual GUID** for the new version.
 
 If, however, you want to keep the same GUID, keep in mind the following points:
 
