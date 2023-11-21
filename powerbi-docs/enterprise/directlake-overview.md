@@ -6,6 +6,8 @@ ms.author: owend
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
+ms.custom:
+  - ignite-2023-fabric
 ms.topic: conceptual
 ms.date: 11/09/2023
 LocalizationGroup: Admin
@@ -154,6 +156,8 @@ You may want to disable if, for example, you need to allow completion of data pr
 - Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same model. Composite models are not yet supported.
 
 - DateTime relationships are not supported in Direct Lake models.
+
+- Calculated columns and calculated tables are not yet supported.
 
 - Some data types may not be supported.
 
