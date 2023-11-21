@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/16/2023
+ms.date: 11/20/2023
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -18,6 +18,9 @@ LocalizationGroup: Common tasks
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 Subscribe yourself and others to Power BI reports, dashboards, and paginated reports. You receive an email on a schedule you set. The email contains a snapshot and link to the report or dashboard or a full attachment of the report or dashboard. If you're a workspace administrator, learn how to manage subscriptions in your workspace, including how to take over subscriptions owned by others.
+
+> [!IMPORTANT]
+> Subscribing others requires a paid license (Pro or PPU). For information about licenses, see [Fabric and Power BI licenses and subscriptions](../consumer/end-user-license.md).
 
 ## Subscribe to a report or dashboard in the Power BI service 
 
@@ -99,16 +102,13 @@ Sensitivity labels are applied to subscription email attachments but not to the 
 
 To create a subscription that includes others, in addition to the [requirements necessary to create your own subscriptions](#requirements), you also need:
 
-- A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
+- A Pro or PPU license with Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 
 - To be part of the organization. [B2B guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others only themselves. For more information, read [B2B guest users can set up and be subscribed to email subscriptions](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
 
 - If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can still subscribe others. However, they must also have a Power BI Pro or Premium Per User (PPU) license. 
 
     :::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
-
-> [!NOTE] 
-> B2B guest users can only subscribe themselves. 
 
 ### Use group email aliases 
 When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../enterprise/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
