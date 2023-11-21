@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/19/2023
+ms.date: 11/21/2023
 LocalizationGroup: Premium
 ---
 
@@ -28,6 +28,18 @@ The following table shows the required synchronization for each refresh method w
 | XMLA              | Manual sync required <sup>[1](#setting)</sup>|
 
 <a name="setting">1</a> - With `autoSyncReadOnlyReplicas` in `queryScaleOutSettings` set to false.
+
+## Replica management
+
+The number of read-only replicas is determined based on the amount of CPU used by your queries. The maximum number of replicas depends on your [SKU](./service-premium-what-is.md#capacities-and-skus).
+
+* **A new replica is created** - When your CPU usage increases and consistently stays high.
+
+* **A new replica not created** - The following conditions prevent a new replica from being created, even when CPU use increases and consistently stays high. When these conditions occur, it's likely your capacity is throttled.
+    * Other datasets with interactive queries in the same capacity consume a lot of CPU.
+    * The replica is for a dataset with interactive queries that consumes a lot of CPU.
+
+* **A replica is removed** - When CPU use reduces and consistently stays low, a replica is removed.
 
 ## Prerequisites
 
@@ -106,13 +118,26 @@ Power BI semantic model scale-out is enabled by default for a tenant. Power BI t
 
 * When deleting a Power BI scale-out semantic model, and creating another semantic model with the same name, allow five minutes to pass before creating the new semantic model. It might take Power BI a while to remove the replicas of the primary semantic model.
 
-* Backup and restore operations are not supported for Power BI scale-out semantic models. If you want to restore a semantic model, disable scale-out before you restore the semantic model. After the restore operation ends, you can enable scale-out again.
-
 * When Power BI semantic model scale-out is enabled, changes to the following features, are not supported:
     * Model roles for RLS and OLS
     * Tables that use DirectQuery and Dual data sources
 
     To make changes to these features, disable scale-out and allow a few minutes for the change to take place before reenabling.
+
+* Discovering role memberships using the [Dynamic Management View (DMV)](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services) TMSCHEMA_ROLE_MEMBERSHIPS rowset, doesn't return any results when run against the read-only replica.
+
+* A Power BI [Live connection](../connect-data/service-live-connect-dq-datasets.md#live-connection) always connects to the read-only replica, even if the connection string uses `?readwrite`.
+
+* The DBSCHEMA_CATALOGS and DISCOVER_XML_METADATA the [Dynamic Management View (DMV)](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services) rowsets, return read-write replica information when using `?readonly` in the connection string.
+
+* SQL server profiler doesn't work with the `?readonly` connection string.
+
+* These operations trigger auto-sync even when auto sync is turned off (`AutoSync=Off`).
+    * Migrating a workspace from one capacity to another.
+    * BYOK re-encryption or conversion.
+    * Restoring a semantic model using the public XMLA endpoint.
+
+* Converting [Azure files](/azure/storage/files/storage-files-introduction) (`PremiumFiles`) to [Analysis Services backup files (ABF)](/analysis-services/multidimensional-models/backup-and-restore-of-analysis-services-databases) disables scale-out and loses all sync information.
 
 ## Next steps
 
