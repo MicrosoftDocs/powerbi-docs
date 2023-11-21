@@ -292,9 +292,9 @@
       href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
     - name: Basic area charts
       href: ../visuals/power-bi-visualization-basic-area-chart.md
-    - name: Create card visuals (big number tiles)
+    - name: Create card visuals with big number tiles
       href: ../visuals/power-bi-visualization-card.md
-    - name: Create a card (new) visualization (big number tiles)
+    - name: Create a new card visual with big number tiles
       href: ../visuals/power-bi-visualization-new-card.md
     - name: Combo charts
       href: ../visuals/power-bi-visualization-combo-chart.md
