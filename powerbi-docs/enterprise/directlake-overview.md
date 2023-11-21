@@ -86,7 +86,7 @@ To learn more about tool support through the XMLA endpoint, see [Semantic model 
 
 ## Fallback
 
-Power BI semantic models in Direct Lake mode read delta tables directly from OneLake. However, if a DAX query on a Direct Lake model exceeds limits for the SKU, or uses features that don’t support Direct Lake mode, like SQL views in a Warehouse, the query can fall back to DirectQuery mode. In DirectQuery mode, queries use SQL to retrieve the results from the SQL endpoint of the Lakehouse or Warehouse, which can impact DAX query performance. You can disable fallback to DirectQuery mode if you prefer to process DAX queries in pure Direct Lake mode. Disabling fallback is recommended if you don’t need fallback to DirectQuery. It can also be helpful when analyzing query processing for a Direct Lake model to identify if and how often fallbacks occur. To learn more about DirectQuery mode, see [Semantic model modes in the Power BI service](../connect-data/service-dataset-modes-understand.md#directquery-mode).
+Power BI semantic models in Direct Lake mode read delta tables directly from OneLake. However, if a DAX query on a Direct Lake model exceeds limits for the SKU, or uses features that don’t support Direct Lake mode, like SQL views in a Warehouse, the query can fall back to DirectQuery mode. In DirectQuery mode, queries use SQL to retrieve the results from the SQL endpoint of the Lakehouse or Warehouse, which can impact DAX query performance. You can [disable fallback](#fallback-behavior) to DirectQuery mode if you want to process DAX queries in pure Direct Lake mode only. Disabling fallback is recommended if you don’t need fallback to DirectQuery. It can also be helpful when analyzing query processing for a Direct Lake model to identify if and how often fallbacks occur. To learn more about DirectQuery mode, see [Semantic model modes in the Power BI service](../connect-data/service-dataset-modes-understand.md#directquery-mode).
 
 ***Guardrails*** define resource limits for Direct Lake mode beyond which a fallback to DirectQuery mode is necessary to process DAX queries. For details about how to determine the number of parquet files and row groups for a delta table, refer to the [Delta table properties reference](/azure/databricks/delta/table-properties#delta-table-properties).
 
@@ -112,7 +112,28 @@ The following table lists both resource guardrails and MaxMemory:
 
 Depending on your Fabric or Power BI SKU, additional **Capacity unit** and **Max memory per query** limits also apply to Direct Lake models. To learn more, see [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
 
-### Analyze query processing
+#### Fallback behavior
+
+Direct Lake models include the **DirectLakeBehavior** property, which has three options:
+
+**Automatic** - (Default) Specifies queries fall back to *DirectQuery* mode if data can't be efficiently loaded into memory.
+
+**DirectLakeOnly** - Specifies all queries use Direct Lake mode only. Fallback to DirectQuery mode is disabled. If data can't be loaded into memory, an error is returned. Use this setting to determine if DAX queries fail to load data into memory, forcing an error to be returned.
+
+**DirectQueryOnly** - Specifies all queries use DirectQuery mode only. Use this setting to test fallback performance.
+
+The DirectLakeBehavior property can be configured by using Tabular Object Model (TOM) or Tabular Model Scripting Language (TMSL).
+
+The following example specifies all queries use Direct Lake mode only:
+
+```csharp
+// Disable fallback to DirectQuery mode.
+//
+database.Model.DirectLakeBehavior = DirectLakeBehavior.DirectLakeOnly = 1;
+database.Model.SaveChanges();
+```
+
+## Analyze query processing
 
 To determine if a report visual's DAX queries to the data source are providing the best performance by using Direct Lake mode, or falling back to DirectQuery mode, you can use Performance analyzer in Power BI Desktop, SQL Server Profiler, or other third party tools to analyze queries. To learn more, see [Analyze query processing for Direct Lake models](directlake-analyze-qp.md).
 
@@ -148,7 +169,7 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 - Embedded scenarios that rely on embedded entities are not yet supported.
 
-- Tables based on TSQL-based views cannot be queried in Direct Lake mode. DAX queries that use these model tables fallback to DirectQuery mode.
+- Tables based on T-SQL-based views cannot be queried in Direct Lake mode. DAX queries that use these model tables fallback to DirectQuery mode.
 
 ## Get started
 
