@@ -116,9 +116,9 @@ Depending on your Fabric or Power BI SKU, additional **Capacity unit** and **Max
 
 Direct Lake models include the **DirectLakeBehavior** property, which has three options:
 
-**Automatic** - (Default) Specifies queries fall back to *DirectQuery* mode if an issue prevents efficient loading data into memory.
+**Automatic** - (Default) Specifies queries fall back to *DirectQuery* mode if data can't be efficiently loaded into memory.
 
-**DirectLakeOnly** - Specifies all queries use Direct Lake mode only. Fallback to DirectQuery mode is disabled. If an issue prevents loading data into memory, an error is returned. Use this setting to determine if DAX queries fail to load data into memory, forcing an error to be returned.
+**DirectLakeOnly** - Specifies all queries use Direct Lake mode only. Fallback to DirectQuery mode is disabled. If data can't be loaded into memory, an error is returned. Use this setting to determine if DAX queries fail to load data into memory, forcing an error to be returned.
 
 **DirectQueryOnly** - Specifies all queries use DirectQuery mode only. Use this setting to test fallback performance.
 
