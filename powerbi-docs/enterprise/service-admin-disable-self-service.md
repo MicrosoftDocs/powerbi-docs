@@ -39,4 +39,4 @@ Turning off self-service sign-up keeps users from exploring Power BI for data vi
 
 ## Next steps
 
-[Learn how to enable and disable licenses and subscriptions](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins)
+[Learn how to enable and disable licenses and subscriptions](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
