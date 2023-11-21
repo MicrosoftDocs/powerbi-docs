@@ -29,8 +29,8 @@ The dynamic subscription parameters are stored in a separate Power BI semantic m
 
 
 ## Prerequisites
-- A paginated report with parameters to share that is saved in a workspace backed by a capacity ([Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric (Preview) trial](/fabric/get-started/fabric-trial), or [Microsoft Fabric capacity](/fabric/enterprise/licenses))
-- Build permissions to a Power BI semantic model that contains the email addresses of your recipients and parameter values that should be applied for each recipient  
+- A paginated report with parameters to share that is saved in a workspace backed by a capacity ([Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric trial](/fabric/get-started/fabric-trial), or [Microsoft Fabric capacity](/fabric/enterprise/licenses)).
+- Build permissions to a Power BI semantic model that contains the email addresses of your recipients and parameter values that should be applied for each recipient.  
 - A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [Roles in workspaces](service-roles-new-workspaces.md).
 - A Power BI semantic model that contains recipient data. Recipient data includes recipient email addresses and the parameters that you're interested in assigning for each recipient. 
 
@@ -87,7 +87,7 @@ In the **Email details** window, name the subscription, add recipients separated
 
     :::image type="content" source="media/dynamic-subscriptions/power-bi-email.png" alt-text="Screenshot of the Power BI service showing dynamic parameter options on the Email details window.":::
 
-1. Optionally, add a message and use the toggles to add a link to the report in Power BI and to include a preview image of the first page of the report in the email. The preview image shows the report with the recipient's unique parameters applied.
+1. Add optional details. Type a message to recipients. Use the toggles to add a link to the report in Power BI and to include a preview image of the report in the email.  The preview image is the first page of the report. The preview image shows the report with the recipient's unique parameters applied.
 
 1. Select the **Attach full report** dropdown to display the list of options. Select a format. Sensitivity labels are applied to the email attachment and the attachment respects all privacy labels for the report. The size of the attachment is limited to less than 25 MB.  
 
@@ -138,7 +138,7 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 - Rendering the report uses some of your capacity. It's classified as a **Background** activity.
 - During the Preview of dynamic per recipient subscriptions, your recipient semantic model has a limit of 50 rows of recipients. If the recipient list exceeds 50 rows at any point, only the first 50 recipients receive the subscription email, and the subscription creator receives an error email. 
 - Receiving the subscription email doesn't guarantee access to the report. Report access must be set separately.
-- [Parameter values attempt to map to the *value* and not to the *label*](../paginated-reports/parameters/associate-query-parameter-report-parameter-report-builder.md#associate-a-query-parameter-with-a-report-parameter)  
+- [Parameter values attempt to map to the *value* and not to the *label*](../paginated-reports/parameters/associate-query-parameter-report-parameter-report-builder.md#associate-a-query-parameter-with-a-report-parameter).  
 - As a Preview feature, it’s not available to customers located in Sovereign Clouds.  
 
 ## Next steps
