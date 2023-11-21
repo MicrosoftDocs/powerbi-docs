@@ -136,6 +136,8 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 - DateTime relationships are not supported in Direct Lake models.
 
+- Calculated columns and calculated tables are not yet supported.
+
 - Some data types may not be supported.
 
 - Direct Lake tables do not support complex delta table column types. Binary and Guid semantic types are also unsupported. You must convert these data types into strings or other supported data types.

@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 11/20/2023
 LocalizationGroup: Connect to data
 ---
 # Use R in Power Query Editor
@@ -63,7 +63,7 @@ To demonstrate using R in Power Query Editor, this example uses a stock market s
 
    :::image type="content" source="media/desktop-r-in-query-editor/r-in-query-editor_5d.png" alt-text="[Screenshot shows Power Query Editor with Run R Script selected." lightbox="media/desktop-r-in-query-editor/r-in-query-editor_5d.png":::
 
-1. For this example, enter the following script code in the **Script** box of the **Run R script** window. Replace *&lt;Your File Path&gt;* with the path to *EuStockMarkets_NA.csv* on your local file system, for example, *C:/Users/admin/Documents/Microsoft/EuStockMarkets_NA.csv*.
+1. For this example, enter the following script code in the **Script** box of the **Run R script** window.
 
     ```r
        library(mice)
