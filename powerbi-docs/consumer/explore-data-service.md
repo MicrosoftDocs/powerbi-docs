@@ -25,7 +25,7 @@ Introducing the public preview of the new Explore feature, where you have a ligh
 1. [Begin exploring by building your matrix or PivotTable](#2-begin-exploring-by-building-your-matrix-or-visual) by adding fields from the data pane.
 
     > [!NOTE]
-    > A matrix is like a PivotTable in Excel.
+    > A matrix is like a [PivotTable in Excel](https://support.microsoft.com/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576).
 
 1. [Add filters if you need them](#3-add-filters-if-you-need-them). 
 
@@ -133,23 +133,20 @@ Or select **Copy link** and send it by another means.
 Continue to add your recipients' email addresses and share. You should be immediately prompted to share the underlying dataset so the recipients can view the contents of your exploration. If you're not prompted, ensure that you [share the dataset](../connect-data/service-datasets-share.md) with read permissions.
 
 > [!NOTE]
-> Usually for reports, sharing the underlying dataset is done behind the scenes. We’re working to remove this extra step.
+> Usually for reports, sharing the underlying dataset is done behind the scenes.
 
 You may want to save your exploration as a report instead. You can do so by choosing **Save**, then **Save as report**. This saves your exploration as a single page report matching the layout when saved. For example, if you're viewing both the matrix and the visual, you get one page with a matrix on the top half and the visual on the bottom half of the page.  
 
 You can share this new report as with other reports by using the **Share** button.
 
-
-
-
-## Considerations and limitations 
+## Considerations and limitations
 
 ### To create
 
 - Exploration authors need build permissions on the dataset to create an exploration and open the Explore dialog.
 - When you save, the destination workspace must be in a Premium capacity. 
 - Changing a sensitivity label on a dataset doesn't currently propagate down to the exploration that you create for it.
-- There is currently a known issue when you attempt to save an exploration from the Datamart SQL editor entry point. We’re working on a fix.
+- There is currently a known issue when you attempt to save an exploration from the Datamart SQL editor entry point.
 - Explore isn't currently supported for streaming datasets. 
 - If you save to **My workspace**, you may need to refresh your page to see the newly saved exploration artifact.
 
@@ -174,8 +171,6 @@ All native visuals are supported with the exception of these visuals:
 - Paginated reports
 - Power Apps
 - Power Automate
-
-Custom visuals are coming soon.
 
 ## Next steps
 
