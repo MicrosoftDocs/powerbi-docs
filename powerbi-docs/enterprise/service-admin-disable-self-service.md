@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/18/2023
+ms.date: 11/21/2023
 ms.custom: licensing support, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 LocalizationGroup: Administration
 ---
@@ -36,3 +36,7 @@ Turning off self-service sign-up keeps users from exploring Power BI for data vi
 - Your organization prohibits use of the Power BI service due to data privacy or other concerns and needs to closely control the assignment of Power BI free licenses.
 - You want to ensure that all Power BI Pro or Premium Per User licenses fall under an enterprise agreement that takes advantage of a negotiated or discounted licensing rate.
 - Current users with a Power BI free license are prompted to try or directly purchase a Power BI Pro license. Your organization might not want these users to upgrade because of security, privacy, or expense.
+
+## Next steps
+
+[Learn how to enable and disable licenses and subscriptions](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins)
