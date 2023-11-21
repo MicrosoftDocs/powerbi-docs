@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/22/2023
+ms.date: 11/12/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,12 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## November 2023
+
+### Semantic model: the new name for Power BI datasets
+
+Microsoft has renamed the Power BI *dataset* content type to *semantic model*. For more information, see [New name for Power BI datasets](../../connect-data/service-datasets-rename.md).
 
 ## October 2023
 
@@ -59,11 +65,11 @@ Now it's easy to quickly switch between web and mobile layouts when you're devel
 
 ## July 2023
 
-### Dataset refresh (iOS and Android)
+### Semantic model refresh (iOS and Android)
 
-Now you can view dataset info and refresh status, and even refresh datasets manually, right from the mobile app! Moreover, whenever one of your datasets has a refresh failure, you'll get notified in the mobile app so that you can start addressing the issue right away. [Check out the details](./mobile-apps-dataset-refresh.md)!
+Now you can view semantic model info and refresh status, and even refresh semantic models manually, right from the mobile app! Moreover, whenever one of your semantic models has a refresh failure, you'll get notified in the mobile app so that you can start addressing the issue right away. [Check out the details](./mobile-apps-dataset-refresh.md)!
 
-:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-app-dataset-refresh.png" alt-text="Screenshot showing the dataset info page in the Power BI app for mobile devices." border="false":::
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-app-dataset-refresh.png" alt-text="Screenshot showing the semantic model info page in the Power BI app for mobile devices." border="false":::
 
 ## May 2023
 
@@ -548,7 +554,7 @@ This month we've added support for cross-report drillthrough. You can now tap on
 
 #### Data sensitivity labels
 
-You can now see sensitivity labels that content owners have set on reports, dashboards, datasets, and dataflows to classify the sensitivity of their data. Sensitivity labels determine how content can be shared with other users. [Learn more about data sensitivity labels in Power BI](../../enterprise/service-security-data-protection-overview.md).
+You can now see sensitivity labels that content owners have set on reports, dashboards, semantic models, and dataflows to classify the sensitivity of their data. Sensitivity labels determine how content can be shared with other users. [Learn more about data sensitivity labels in Power BI](../../enterprise/service-security-data-protection-overview.md).
 
 #### Support for custom app navigation (Windows)
 
@@ -854,7 +860,7 @@ We've added support for conditional access (CA) and Microsoft Intune mobile devi
 
 #### Improved permission management
 
-We've made some changes that allow for more precise management of user permissions for datasets, dashboards, and reports.
+We've made some changes that allow for more precise management of user permissions for semantic models, dashboards, and reports.
 
 #### Auto-installed apps
 
@@ -1075,7 +1081,7 @@ The Apple Watch mobile app has been improved for Watch OS3
 
 #### Android phones
 **Added manual tile refresh**
-You can now manually refresh your dashboard tiles. For tiles based on DirectQuery, this will retrieve the latest data from the dataset.
+You can now manually refresh your dashboard tiles. For tiles based on DirectQuery, this will retrieve the latest data from the semantic model.
 
 #### Windows 10 phones
 **Geographic filtering**
@@ -1233,7 +1239,7 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 
 **Pinch to zoom** Use pinch-to-zoom on your tablet to examine dashboards in greater detail.
 
-**Notifications** Get notified when your datasets, reports, and dashboards update with new data.
+**Notifications** Get notified when your semantic models, reports, and dashboards update with new data.
 
 **Report gallery** Open your reports directly in the report gallery.​
 

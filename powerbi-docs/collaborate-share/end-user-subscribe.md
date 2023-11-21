@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 07/05/2023
+ms.date: 11/16/2023
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -81,7 +81,7 @@ If your subscription is ready, select **Save**. To make your subscription more p
     > [!CAUTION]
     > Sensitivity labels are not applied to a subscription's email or preview image. To protect against this, turn off **Preview image**.  
     
-You receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.
+You receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day. All dates/times are normalized to UTC when checking for the first dataset refresh of the day. 
 
 > [!NOTE]
 > To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**.
@@ -177,7 +177,7 @@ To review a subscription, select the arrow to the left of the subscription.
 
 :::image type="content" source="./media/end-user-subscribe/power-bi-subscription-reviews.png" alt-text="Screenshot showing all the details for one subscription.":::
 
-To test out your subscription, select the  **Run now** to send the email to you right away. It doesn't trigger a data refresh of the underlying dataset. 
+To test out your subscription, select the  **Run now** to send the email to you right away. It doesn't trigger a data refresh of the underlying semantic model. 
 
 ## Manage subscriptions
 Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the users assigned the *Admin* role. Admins in the workspace can edit and take over all subscriptions inside the workspace. The Fabric admin can view logs, and turn certain subscription features on and off.
@@ -317,7 +317,7 @@ If you have an existing subscription to a paginated report, and you want to upda
 
 ### Considerations unique to paginated report subscriptions
 
-- You can subscribe other users in your organization to paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions.
+- You can subscribe other users in your organization to paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI semantic models. Keep in mind the report attachment reflects the data based on your permissions.
 - You can set up an unlimited number of subscriptions per paginated report. 
 - B2B guest users can only create subscriptions for themselves.
 - The maximum attachment size is 25 MB.
@@ -334,11 +334,11 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 **General**
   
 - If you aren't able to use the subscription feature, contact your system administrator or IT help desk. Your organization may have disabled this feature or a maximum subscriber limit may have been reached.
-- Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
+- Power BI automatically pauses refresh on semantic models associated with dashboards and reports that haven't been visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
 - On Daylight savings day, you won't receive your subscription emails but will receive two emails per subscription the day after. 
 
 **Row-level security (RLS)**
-- For Power BI reports, dashboards, or paginated reports that use a dataset with row-level security (RLS), use caution when creating subscriptions for yourself and others. Power BI warns you that the data contains RLS, but customers often scroll past the warning message. 
+- For Power BI reports, dashboards, or paginated reports that use a semantic model with row-level security (RLS), use caution when creating subscriptions for yourself and others. Power BI warns you that the data contains RLS, but customers often scroll past the warning message. 
 
   The static image sent in the subscription email displays data ***based on the owner of the subscription***. For this reason, when creating subscriptions, be careful to ensure that confidential information isn't included in the static image. Other than that static image, the report or dashboard itself opens (or not) and displays data based on the user's permissions.  
 
@@ -353,7 +353,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 
 **Unsupported features**    
 
-* Dataset refresh operations using an XMLA endpoint.
+* Semantic model refresh operations using an XMLA endpoint.
 * Email subscriptions aren't supported when  **Block public internet access** is enabled in Power BI. In this case, all subscriptions will fail.
 
 * The following Power BI visuals aren't supported.  When you subscribe to a report containing these visuals, they display an error symbol. 

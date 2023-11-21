@@ -1,19 +1,19 @@
 ---
 title: How to apply sensitivity labels in Power BI
-description: Learn how to apply sensitivity labels on your Power BI reports, dashboards, datasets, dataflows, and .pbix files.
+description: Learn how to apply sensitivity labels on your Power BI reports, dashboards, semantic models, dataflows, and .pbix files.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.custom: video-RE4M5Gj
 ms.topic: how-to
-ms.date: 07/05/2023
+ms.date: 11/16/2023
 LocalizationGroup: Data from files
 ---
 
 # How to apply sensitivity labels in Power BI
 
-Sensitivity labels from Microsoft Purview Information Protection on your reports, dashboards, datasets, dataflows, and **.pbix** files can guard your sensitive content against unauthorized data access and leakage. Labeling your data correctly with sensitivity labels ensures that only authorized people can access your data. This article shows you how to apply sensitivity labels in the Power BI service and in Power BI Desktop.
+Sensitivity labels from Microsoft Purview Information Protection on your reports, dashboards, semantic models, dataflows, and **.pbix** files can guard your sensitive content against unauthorized data access and leakage. Labeling your data correctly with sensitivity labels ensures that only authorized people can access your data. This article shows you how to apply sensitivity labels in the Power BI service and in Power BI Desktop.
 
 For more information, see [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md).
 
@@ -23,18 +23,18 @@ The product team would love to get your **[feedback](https://forms.office.com/pa
 
 ## Apply sensitivity labels in the Power BI service
 
-In the Power BI service, you can apply sensitivity labels to reports, dashboards, datasets, and dataflows.
+In the Power BI service, you can apply sensitivity labels to reports, dashboards, semantic models, and dataflows.
 
 Here are the requirements to apply sensitivity labels in the Power BI service:
 
-- You must have a [Power BI Pro or Premium Per User (PPU) license](./service-admin-purchasing-power-bi-pro.md) and edit permissions on the content you want to label.
+- You must have a [Power BI Pro or Premium Per User (PPU) license](./service-admin-purchasing-power-bi-pro.md) and edit permissions on the content you want to label. Note: If you have a Free license, you can only apply sensitivity labels to items in your *My workspace* (provided that the other requirements listed here have been met); you won't be able to apply them to items in any other workspace.
 - Sensitivity labels must be enabled for your organization. Contact your Power BI admin for information about your configuration.
 - You must belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
 - All [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) must be met.
 
 ### View sensitivity labels
 
-When data protection is enabled on your tenant, sensitivity labels appear in the **Sensitivity** column in the list view of dashboards, reports, datasets, and dataflows.
+When data protection is enabled on your tenant, sensitivity labels appear in the **Sensitivity** column in the list view of dashboards, reports, semantic models, and dataflows.
 
 :::image type="content" source="media/service-security-apply-data-sensitivity-labels/sensitivity-labels.png" alt-text="Screenshot of a workspace with the sensitivity column highlighted." lightbox="media/service-security-apply-data-sensitivity-labels/sensitivity-labels.png" border="false":::
 
@@ -54,21 +54,21 @@ The following image shows how to set the sensitivity label for a dashboard to _H
 > [!NOTE]
 > If the **Sensitivity label** setting isn't available, you might not have the correct [usage rights](service-security-sensitivity-label-change-enforcement.md) to change the setting. If you're not able to change a sensitivity label, consider asking the person who originally applied the label to make the change. You can also contact the Microsoft 365/Office security administrator and request the necessary usage rights for the label.
 
-### Set the sensitivity label on a dataset or dataflow
+### Set the sensitivity label on a semantic model or dataflow
 
-You can apply or change the sensitivity label on a dataset or dataflow by following similar steps:
+You can apply or change the sensitivity label on a semantic model or dataflow by following similar steps:
 
-1. On the **More options...** menu for a dataset or dataflow, select **Settings**.
-1. In the **Settings** view, select the **Datasets** or **Dataflows** tab, depending on your configuration.
+1. On the **More options...** menu for a semantic model or dataflow, select **Settings**.
+1. In the **Settings** view, select the **Semantic models** or **Dataflows** tab, depending on your configuration.
 1. Expand the **Sensitivity label** section.
 1. Select the appropriate sensitivity label in the drop-down list.
 1. Select **Apply** to save the modified settings.
 
-The following images show how to set the sensitivity label for a dataset to _General_:
+The following images show how to set the sensitivity label for a semantic model to _General_:
 
-:::image type="content" source="media/service-security-apply-data-sensitivity-labels/set-sensitivity-label-dataset.png" alt-text="Screenshot that shows how to open the settings for a dataset." lightbox="media/service-security-apply-data-sensitivity-labels/set-sensitivity-label-dataset.png" border="false":::
+:::image type="content" source="media/service-security-apply-data-sensitivity-labels/set-sensitivity-label-dataset.png" alt-text="Screenshot that shows how to open the settings for a semantic model." lightbox="media/service-security-apply-data-sensitivity-labels/set-sensitivity-label-dataset.png" border="false":::
 
-:::image type="content" source="media/service-security-apply-data-sensitivity-labels/set-sensitivity-label-dataset-settings.png" alt-text="Screenshot that shows how to set the sensitivity label for a dataset." lightbox="media/service-security-apply-data-sensitivity-labels/set-sensitivity-label-dataset-settings.png" border="false":::
+:::image type="content" source="media/service-security-apply-data-sensitivity-labels/set-sensitivity-label-dataset-settings.png" alt-text="Screenshot that shows how to set the sensitivity label for a semantic model." lightbox="media/service-security-apply-data-sensitivity-labels/set-sensitivity-label-dataset-settings.png" border="false":::
 
 > [!NOTE]
 > If the **Sensitivity label** setting isn't available, you might not have the correct [usage rights](service-security-sensitivity-label-change-enforcement.md) to change the setting. If you're not able to change a sensitivity label, consider asking the person who originally applied the label to make the change. You can also contact the Microsoft 365/Office security administrator and request the necessary usage rights for the label.
@@ -107,11 +107,11 @@ After you apply the sensitivity label, it's visible in the status bar.
 
 ### Work with sensitivity labels on uploaded or downloaded files
 
-When you publish a .pbix file to the Power BI service from Power BI Desktop, or when you upload a .pbix file to the Power BI service directly via the **OneLake data hub**, the .pbix file's label is applied to both the report and the dataset that are created in the service.
+When you publish a .pbix file to the Power BI service from Power BI Desktop, or when you upload a .pbix file to the Power BI service directly via the **OneLake data hub**, the .pbix file's label is applied to both the report and the semantic model that are created in the service.
 
 If the .pbix file you're publishing or uploading replaces existing assets (that is, the file has the same name as the .pbix file), you see a dialog prompt. At the prompt, choose whether to keep the labels on the assets or have the .pbix file's label overwrite those labels. If the .pbix file is unlabeled, the labels in the service are retained.
 
-When you download a .pbix file from the Power BI service by using the **Download this file** option, if both the report and dataset to download have labels and the two labels are different, the label applied to the .pbix file is the more restrictive of the two.
+When you download a .pbix file from the Power BI service by using the **Download this file** option, if both the report and semantic model to download have labels and the two labels are different, the label applied to the .pbix file is the more restrictive of the two.
 
 ## Remove sensitivity labels
 

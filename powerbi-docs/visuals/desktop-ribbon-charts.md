@@ -78,7 +78,7 @@ The following steps create a ribbon chart to illustrate the rank for categories 
 
    1. On the **Visualizations** pane, for the chart **X-axis**, make sure only the **Month** and **Day** fields are listed under **OpenDate**.
    
-      The sample dataset contains data for one year only, so we can remove the **Year** and **Quarter** data from the **X-axis**.
+      The sample semantic model contains data for one year only, so we can remove the **Year** and **Quarter** data from the **X-axis**.
 
    1. On the **Data** pane, expand **Sales**, expand **This Year Sales**, and then select the **Value** checkbox.
 

@@ -718,7 +718,7 @@ The resulting visual looks like this:
 
 Power BI creates a hierarchical data structure. The root of the tree hierarchy includes the data from the **Parents** column of the `Category` data role with children from the **Children** column of the data role table.
 
-Dataset:
+Semantic model:
 
 | Parents | Children | Grandchildren | Columns | Values |
 |-----|-----|------|-------|-------|
@@ -949,10 +949,10 @@ The *count* is set to the maximum number of values that the data view can accept
 
 There are four types of data reduction algorithm settings:
 
-* `top`: The first *count* values are taken from the dataset.
-* `bottom`: The last *count* values are taken from the dataset.
+* `top`: The first *count* values are taken from the semantic model.
+* `bottom`: The last *count* values are taken from the semantic model.
 * `sample`: The first and last items are included, and *count* number of items with equal intervals between them.
-For example, if you have a dataset [0, 1, 2, ... 100] and a *count* of 9, you receive the values [0, 10, 20 ... 100].
+For example, if you have a semantic model [0, 1, 2, ... 100] and a *count* of 9, you receive the values [0, 10, 20 ... 100].
 * `window`: Loads one *window* of data points at a time containing *count* elements. Currently, `top` and `window` are equivalent. In the future, a windowing setting will be fully supported.
 
 By default, all Power BI visuals have the top data reduction algorithm applied with the *count* set to 1000 data points. This default is equivalent to setting the following properties in the *capabilities.json* file:

@@ -9,6 +9,8 @@
       href: known-issues/power-bi-known-issues.md
     - name: Active known issues for Fabric + Power BI - interactive report
       href: https://support.fabric.microsoft.com/known-issues
+    - name: Closing a Dataflow Gen1 takes you to the wrong workspace
+      href: known-issues/known-issue-546-closing-dataflow-gen1-takes-wrong-workspace.md
     - name: New card visual formatting appears or disappears in Service
       href: known-issues/known-issue-535-new-card-visual-formatting-appears-disappears.md
     - name: Unable to sign in on 32-bit Power BI Desktop
@@ -31,11 +33,11 @@
       href: known-issues/known-issue-471-embedded-setup-tool-isnt-responsive.md
     - name: Embedded report shows a black bar in edit mode
       href: known-issues/known-issue-465-embedded-report-shows-black-bar.md
-    - name: A scheduled refresh of a dataset intermittently hangs when connected to a dataflow
+    - name: A scheduled refresh of a semantic model intermittently hangs when connected to a dataflow
       href: known-issues/known-issue-461-scheduled-refresh-dataset-hangs.md   
     - name: Deployment pipeline stuck in loading
       href: known-issues/known-issue-443-deployment-pipeline-stuck-loading.md 
-    - name: Workspace setting 'large dataset storage format' isn't persistent 
+    - name: Workspace setting 'large semantic model storage format' isn't persistent 
       href: known-issues/known-issue-432-workspace-setting-large-dataset-storage-format-not-persistent.md
     - name: Tenant admin settings might not save correctly
       href: known-issues/known-issue-427-tenant-admin-settings-may-not-save-correctly.md

@@ -78,6 +78,8 @@
       href: bookmarks-support.md
     - name: "Add context menu support"
       href: context-menu.md
+    - name: "Add dynamic format strings support"
+      href: dynamic-format.md
     - name: "Add drill-down support"
       href: drill-down-support.md
     - name: "Add colors to your visual" 

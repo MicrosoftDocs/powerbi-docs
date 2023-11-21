@@ -18,7 +18,7 @@ LocalizationGroup: Reports
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 > [!IMPORTANT]
-> **This article is for Power BI service users who don't have edit permissions for a report or dataset. If you're a report designer, administrator, or owner, see [Sort one column by another column in Power BI](../create-reports/desktop-sort-by-column.md) for information that is more relevant to you**.
+> **This article is for Power BI service users who don't have edit permissions for a report or semantic model. If you're a report designer, administrator, or owner, see [Sort one column by another column in Power BI](../create-reports/desktop-sort-by-column.md) for information that is more relevant to you**.
 
 In the Power BI service, you can highlight important information in a visual by sorting data fields, like numeric data (such as sales figures) or text data (such as state names). After you sort a visual, you can [save a personalized version](#save-your-sort-order-changes) of your changes. The Power BI service provides flexibility and quick menus that allow you to efficiently sort your visuals.
 
@@ -72,9 +72,9 @@ For more information, see [Personalize visuals in a report](end-user-personalize
 
 Sometimes you want to sort your data by using a field that isn't included in the visual. For example, you might want to sort by month in sequential order (and not in alphabetical order) or you might want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  
 
-- To learn how to sort by a different field in the dataset, see [Sort one column by another column in Power BI](../create-reports/desktop-sort-by-column.md). To use this feature, you must have edit permissions for the report.
+- To learn how to sort by a different field in the semantic model, see [Sort one column by another column in Power BI](../create-reports/desktop-sort-by-column.md). To use this feature, you must have edit permissions for the report.
 
-- If you're the report designer, you can create new columns in the dataset to address sorting issues with values, such as dates and numbers. The designer's contact information is listed in the report title's menu.
+- If you're the report designer, you can create new columns in the semantic model to address sorting issues with values, such as dates and numbers. The designer's contact information is listed in the report title's menu.
 
 ![Menu from the title showing contact information.](media/end-user-change-sort/power-bi-heading.png)
 

@@ -14,7 +14,7 @@ ms.date: 02/27/2022
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-As described in the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md), exploration, experimentation, and obtaining useful feedback from a small group of users is the purpose of [phase 1 of solution adoption](powerbi-adoption-roadmap-maturity-levels.md#solution-adoption-phases).
+As described in the [Fabric adoption roadmap](fabric-adoption-roadmap.md), exploration, experimentation, and obtaining useful feedback from a small group of users is the purpose of [phase 1 of solution adoption](fabric-adoption-roadmap-maturity-levels.md#solution-adoption-phases).
 
 A prototype—or proof of concept (POC)—is a Power BI solution that's intended to address unknowns and mitigate risk. This solution can be shared with others to get feedback during development iterations. The solution might be a temporary, short-lived solution, or it might ultimately evolve into a solution that's fully validated and released. Creating a prototype is commonly done for [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) and [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenarios (and can occasionally be done for [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) scenarios).
 
@@ -73,7 +73,7 @@ The scenario diagram depicts [sharing](../collaborate-share/service-share-dashbo
 
 ### Gateway setup
 
-Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the scenario diagram).
+Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md) (not depicted in the scenario diagram).
 
 > [!NOTE]
 > For team, departmental, and enterprise BI scenarios, a centralized [data gateway](../connect-data/service-gateway-personal-mode.md#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in *standard mode* is strongly recommended over gateways in *[personal mode](../connect-data/service-gateway-personal-mode.md)*. In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).

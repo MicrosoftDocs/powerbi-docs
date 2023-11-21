@@ -98,6 +98,22 @@
           href: dynamics-quick-create-report.md
         - name: Create a quick report in Jupyter
           href: jupyter-quick-report.md
+    - name: Copilot for Power BI
+      items: 
+        - name: Intro to Copilot for Power BI
+          href: copilot-introduction.md
+        - name: Update a data model to work with Copilot
+          href: copilot-evaluate-data.md
+        - name: Create report pages with Copilot
+          href: copilot-create-report.md
+        - name: Write prompts for Copilot report pages
+          href: copilot-prompts-report-pages.md
+        - name: Create a narrative visual of a page
+          href: copilot-create-narrative.md
+        - name: Write prompts for Copilot narratives
+          href: copilot-prompts-narratives.md
+        - name: Enhance Q&A with Copilot
+          href: ../natural-language/q-and-a-copilot-enhancements.md
     - name: Enable automatic page refresh
       href: desktop-automatic-page-refresh.md
     - name: Examine report elements with Performance Analyzer
@@ -224,7 +240,7 @@
       href: power-bi-personalize-visuals.md
     - name: Export a report to Power BI Desktop (Preview)
       href: service-export-to-pbix.md
-    - name: Publish datasets and reports
+    - name: Publish semantic models and reports
       href: desktop-upload-desktop-files.md
     - name: Troubleshoot Power BI Desktop publishing
       href: desktop-troubleshoot-publish.md
@@ -423,17 +439,21 @@
     - name: Get started with Q&A
       href: ../natural-language/q-and-a-intro.md
     - name: Use Power BI Q&A on a dashboard
-      href: ../natural-language/end-user-q-and-a-tutorial.md  
+      href: ../natural-language/end-user-q-and-a-tutorial.md
+    - name: Use Power BI Q&A in a report
+      href: ../natural-language/power-bi-tutorial-q-and-a.md  
+    - name: Add a Q&A visual to a report
+      href: ../visuals/power-bi-visualization-q-and-a.md
     - name: Q&A data sources
       href: ../natural-language/q-and-a-data-sources.md
+    - name: Enhance Q&A with Copilot
+      href: ../natural-language/q-and-a-copilot-enhancements.md
     - name: Q&A tooling introduction
       href: ../natural-language/q-and-a-tooling-intro.md
     - name: Q&A tooling advanced
       href: ../natural-language/q-and-a-tooling-advanced.md
     - name: Q&A limitations
       href: ../natural-language/q-and-a-limitations.md
-    - name: Create a Q&A visual in a report
-      href: ../visuals/power-bi-visualization-q-and-a.md
     - name: Teach Q&A to understand
       href: ../natural-language/q-and-a-tooling-teach-q-and-a.md
     - name: Q&A best practices
@@ -562,7 +582,7 @@
         href: ../paginated-reports/report-builder-planning-report.md
       - name: Design tips
         href: ../paginated-reports/report-builder-design-tips.md
-      - name: Link multiple data regions to the same dataset
+      - name: Link multiple data regions to the same semantic model
         href: ../paginated-reports/report-design/linking-multiple-data-regions-to-same-dataset-report-builder.md
       - name: Format paginated report items
         items:
@@ -700,7 +720,7 @@
         href: ../paginated-reports/report-design/sort-data-data-region-report-builder.md
       - name: Add a filter to a paginated report
         href: ../paginated-reports/report-design/add-filter-report-builder.md
-      - name: Add filters to datasets, data regions, and groups
+      - name: Add filters to semantic models, data regions, and groups
         href: ../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md
       - name: Commonly used filters
         href: ../paginated-reports/report-design/commonly-used-filters-report-builder-and-service.md
@@ -868,7 +888,7 @@
         href: ../paginated-reports/report-design/add-data-bound-image-report-builder-service.md
       - name: Add a background image to a paginated report
         href: ../paginated-reports/report-design/add-background-image-report-builder-service.md
-    - name: Data sources and datasets
+    - name: Data sources and semantic models
       items: 
       - name: Introduction to paginated report data
         href: ../paginated-reports/report-data/report-data.md
@@ -880,9 +900,9 @@
         href: ../paginated-reports/paginated-reports-odbc-support.md
       - name: Create an embedded data source
         href: ../paginated-reports/paginated-reports-embedded-data-source.md
-      - name: Report embedded datasets
+      - name: Report embedded semantic models
         href: ../paginated-reports/report-data/report-embedded-datasets-report-builder.md
-      - name: Create an embedded dataset
+      - name: Create an embedded semantic model
         href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
       - name: Set a No Data message for a data region
         href: ../paginated-reports/report-data/set-no-data-message-data-region-report-builder.md
@@ -890,15 +910,15 @@
         href: ../paginated-reports/report-data/report-data-pane.md
       - name: Create data connection strings
         href: ../paginated-reports/report-data/data-connections-data-sources-connection-strings-report-builder.md
-      - name: Dataset fields collection
+      - name: semantic model fields collection
         href: ../paginated-reports/report-data/dataset-fields-collection-report-builder.md
-      - name: Dataset properties options
+      - name: semantic model properties options
         href: ../paginated-reports/report-data/dataset-properties-dialog-box-options-report-builder.md
-      - name: Set time-out values for paginated report dataset processing
+      - name: Set time-out values for paginated report semantic model processing
         href: ../paginated-reports/report-design/setting-time-out-values-for-report-dataset-processing.md
       - name: Use a text-based query designer
         href: ../paginated-reports/report-data/text-based-query-designer-user-interface-report-builder.md
-      - name: Add a filter to a dataset
+      - name: Add a filter to a semantic model
         href: ../paginated-reports/report-data/add-filter-to-dataset.md
     - name: Data from external sources
       items:
@@ -938,9 +958,9 @@
           href: ../paginated-reports/expressions/built-in-collections-built-in-globals-and-users-references-report-builder.md
         - name: "Built-in collections: Report and group variables references"
           href: ../paginated-reports/expressions/built-in-collections-report-group-variables-references-report-builder.md
-        - name: "Built-in collections: Dataset Fields collection references in a paginated report"
+        - name: "Built-in collections: semantic model Fields collection references in a paginated report"
           href: ../paginated-reports/expressions/built-in-collections-dataset-fields-collection-references-report-builder.md
-        - name: "Built-in collections: DataSources and DataSets references in a paginated report"
+        - name: "Built-in collections: DataSources and semantic models references in a paginated report"
           href: ../paginated-reports/expressions/built-in-collections-datasources-and-datasets-references-report-builder.md
         - name: "Built-in collections in expressions in a paginated report"
           href: ../paginated-reports/expressions/built-in-collections-in-expressions-report-builder.md
@@ -1120,7 +1140,7 @@
       href: ../paginated-reports/paginated-reports-enter-data.md
     - name: Edit a paginated report from the Power BI service
       href: ../paginated-reports/paginated-reports-edit-service.md
-    - name: Create a report with a Power BI shared dataset
+    - name: Create a report with a Power BI shared semantic model
       href: ../paginated-reports/report-builder-shared-datasets.md
     - name: Create a paginated report from a Power BI report
       href: ../paginated-reports/paginated-reports-download-rdl.md

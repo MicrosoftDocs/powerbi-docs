@@ -33,7 +33,7 @@ KPIs are a great choice:
 
 A designer bases a KPI visual on a specific measure. The intention of the KPI is to help you evaluate the current value and status of a metric against a defined target. A KPI visual requires a *base* measure that evaluates to a value, a *target* measure or value, and a *threshold* or *goal*.
 
-A KPI dataset needs to contain goal values for a KPI. If your dataset doesn't contain goal values, you can create them by adding an Excel sheet with goals to your data model or PBIX file.
+A KPI semantic model needs to contain goal values for a KPI. If your semantic model doesn't contain goal values, you can create them by adding an Excel sheet with goals to your data model or PBIX file.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -55,7 +55,7 @@ To follow along, use the [Retail Analysis sample](../create-reports/sample-retai
 
     :::image type="content" source="media/power-bi-visualization-kpi/get-data-samples.png" alt-text="Screenshot of Discover content link to Samples.":::
 
-1. Choose **Retail Analysis Sample**. Power BI loads the sample dataset.
+1. Choose **Retail Analysis Sample**. Power BI loads the sample semantic model.
 
 1. From the menubar, select **Edit** :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-edit-icon.png":::.
 
