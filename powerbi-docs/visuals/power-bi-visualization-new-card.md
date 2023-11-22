@@ -1,27 +1,27 @@
 ---
-title: Create a new card visualization 
-description: The new card visual allows you to display individual and group callouts in a single container, with a wide range of formatting settings available to customize its appearance completely.
+title: Create a "new" card visualization 
+description: The "new" card visual allows you to display individual and group callouts in a single container, with a wide range of formatting settings available to customize its appearance completely.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/20/2023
+ms.date: 11/21/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
 
-# Create a new card visualization in Power BI Desktop (preview)
+# Create a "new" card visualization in Power BI Desktop (preview)
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-The new card is a helpful visual that presents important metrics such as total sales, profit growth, count of opportunities, and performance status. You can create cards for the metrics that align with your objectives and key results (OKRs) and display them grouped in a single visual container.
+The "new" card is a helpful visual that presents important metrics such as total sales, profit growth, count of opportunities, and performance status. You can create cards for the metrics that align with your objectives and key results (OKRs) and display them grouped in a single visual container.
 
 :::image type="content" source="media/power-bi-visualization-new-card/power-bi-opportunities-card.png" alt-text="Screenshot of card visualization.":::
 
 > [!IMPORTANT]
-> The new card visual is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> The "new" card visual is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 ## Prerequisites 
 
@@ -48,17 +48,13 @@ If you want to follow along, this article uses the Retail Analysis Sample.
 
 The first method to create a new card is to use the ribbon in Power BI Desktop.
 
-1. In the ribbon, select **Insert** > **Visual gallery**.
+1. In the **Insert** ribbon, select **Visual gallery**, select the **Card (new)** visual icon.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/ribbon-1.png" alt-text="Screenshot showing the Insert menu with the visual gallery ribbon expanded to show a variety of visual options." lightbox="media/power-bi-visualization-new-card/ribbon-1.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/insert-visual-gallery-new-card.png" alt-text="Screenshot showing the Insert menu with the visual gallery ribbon expanded to show a variety of visual options." lightbox="media/power-bi-visualization-new-card/insert-visual-gallery-new-card.png":::
 
-1. In the Visual gallery menu, select the **Card (new)** visual icon.
+1. To add fields or measures, select fields in the Data pane. Each data field that you add is displayed as a distinct card.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/ribbon-2.png" alt-text="Screenshot showing the Ribbon with the Card (New) visual selected and the menu expanded." lightbox="media/power-bi-visualization-new-card/ribbon-2.png":::
-
-1. To add fields or measures, select **Add data**. Each data field that you add is displayed as a distinct card.
-
-   :::image type="content" source="media/power-bi-visualization-new-card/ribbon-3.png" alt-text="Screenshot showing a card with both the Store count and Total Sales fields visible. The Data section, where the fields were added, is also shown in the same view." lightbox="media/power-bi-visualization-new-card/ribbon-3.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/add-data-data-pane.png.png" alt-text="Screenshot showing a card with both the Store count and Total Sales fields. The Data pane, where the fields were added, is shown in the same view." lightbox="media/power-bi-visualization-new-card/add-data-data-pane.png":::
 
 # [On the report canvas](#tab/On-the-report-canvas)
 
@@ -76,22 +72,21 @@ Create a card directly from the report canvas.
 
    :::image type="content" source="media/power-bi-visualization-new-card/canvas-3.png" alt-text="Screenshot showing a card with both the Store count and Total Sales fields visible. The Data section, where the fields were added, is also shown in the same view." lightbox="media/power-bi-visualization-new-card/canvas-3.png":::
 
-
 # [In the data pane](#tab/In-the-data-pane)
 
 Another way to create a new card visual is to start from the Data pane.
 
 1. On the report canvas, right-click to display a menu, then select **Add visual**.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/pane-1.png" alt-text="Screenshot showing a menu that appears when the user performs a right click on the canvas. The menu shows an option to add a new visual." lightbox="media/power-bi-visualization-new-card/pane-1.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/report-canvas-add-visual.png" alt-text="Screenshot showing a menu that appears when the user performs a right click on the canvas. The menu shows an option to add a new visual." lightbox="media/power-bi-visualization-new-card/report-canvas-add-visual.png":::
 
 1. In the Data pane, select some measures or fields.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/pane-2.png" alt-text="This image shows a card (new) created by selecting two fields from the data pane." lightbox="media/power-bi-visualization-new-card/pane-2.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/data-pane-new-visual.png" alt-text="This image shows a card (new) created by selecting two fields from the data pane." lightbox="media/power-bi-visualization-new-card/data-pane-new-visual.png":::
 
-1. In the On-object menu, expand the Visual types dropdown to select the **Card (new) visual** icon. In the On-object menu, we can see the **Data fields** in the visual.
+1. On the **Home** ribbon, select the **Visual gallery** and select the **Card (new) visual**.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/pane-3.png" alt-text="Screenshot showing a card with both the Store count and Total Sales fields visible. The Data section, where the fields were added, is also shown in the same view." lightbox="media/power-bi-visualization-new-card/pane-3.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/visual-gallery-new-card-style.png" alt-text="Screenshot showing a card with both the Store count and Total Sales fields visible. The Data section, where the fields were added, is also shown in the same view." lightbox="media/power-bi-visualization-new-card/visual-gallery-new-card-style.png":::
 
 ---
 
