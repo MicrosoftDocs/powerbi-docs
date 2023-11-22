@@ -37,7 +37,7 @@ sections:
 
           |Feature description  |Per User  |Per Capacity  |
           |---------|---------|---------|
-          |Model size limit     | 100 GB        | 25-400 GB<sup>1</sup>        |
+          |Model size limit     | 100 GB<sup>2</sup>        | 25-400 GB<sup>1,2</sup>        |
           |Refresh rate     | 48/day        | 48/day        |
           |AI capabilities (AutoML, Impact Analysis, Cognitive Services)     | ✔        | ✔        |
           |Advanced dataflows features, such as DirectQuery     | ✔        | ✔        |
@@ -52,6 +52,7 @@ sections:
           |Bring Your Own Key (BYOK)     | ✔ *       | ✔        |        
 
           <sup>1</sup> Depending on the type of SKU you have. For more details, see [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
+          <sup>2</sup> The Model size limit represents an upper bound for the semantic model size. However, an amount of memory must be reserved for operations such as refreshes and queries on the semantic model. The maximum semantic model size permitted on a capacity might be smaller than the numbers shown here.
 
           > [!NOTE]
           > Premium Per User (PPU) only supports BYOK when it's enabled across the entire tenant.
