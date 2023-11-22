@@ -1,6 +1,6 @@
 ---
 title: The authentication API in Power BI custom visuals
-description: This article describes the API used to obtain access tokens for single sign on (SSO) users.
+description: This article describes the API used to obtain access tokens for single sign-on (SSO) users.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
@@ -12,11 +12,11 @@ ms.date: 06/19/2022
 
 # Authentication API
 
-The SSO Authentication API enables visuals to obtain Microsoft Entra ID (formally known as AAD) access tokens for signed-in users, facilitating single sign-on authentication.
+The SSO Authentication API enables visuals to obtain Microsoft Entra ID (formally known as Azure AD) access tokens for signed-in users, facilitating single sign-on authentication.
 
 Power BI admins can enable or disable the API through a [global switch](/fabric/admin/organizational-settings). The default setting is Off.
 
-The API is applicable only for AppSource visuals, providing enhanced security and control. Visuals that are under development can be tested in debug mode before they are published.
+The API is applicable only for AppSource visuals, providing enhanced security and control. Visuals that are under development can be tested in debug mode before they're published.
 
 It's important to note that uncertified visuals are eligible to use the API, as certified visuals are restricted from making external calls.
 
@@ -31,7 +31,7 @@ The following environments are supported:
 
 ## Unsupported environments
 
-The following environments are not yet supported:
+The following environments aren't yet supported:
 
 * Sovereign clouds
 * RS Service
@@ -79,7 +79,7 @@ The newly exposed **AcquireAADTokenService** contains two methods:
 
   * *Allowed*: The privilege is allowed in the current environment.
   * *NotDeclared*: The privilege declaration is missing in visual capabilities section.
-  * *NotSupported*: The privilege is not supported in the current environment.
+  * *NotSupported*: The privilege isn't supported in the current environment.
   * *DisabledByAdmin*: The privilege usage is denied by tenant administrator.
 
 The following sample code demonstrates how to acquire a Microsoft Entra ID token using the API:
@@ -97,8 +97,8 @@ Authentication is blocked if any of the following conditions apply:​
 
 * The admin or user hasn't given consent.
 
-* The ISV has not preauthorized the Power BI application.
+* The ISV hasn't preauthorized the Power BI application.
 
 * The format of the AADAuthentication Privilege parameter is invalid.
 
-* The visual is not publicly approved and is not in Debug Visual mode.
+* The visual isn't publicly approved and isn't in Debug Visual mode.
