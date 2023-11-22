@@ -54,7 +54,7 @@ The first method to create a new card is to use the ribbon in Power BI Desktop.
 
 1. To add fields or measures, select fields in the Data pane. Each data field that you add is displayed as a distinct card.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/add-data-data-pane.png.png" alt-text="Screenshot showing a card with both the Store count and Total Sales fields. The Data pane, where the fields were added, is shown in the same view." lightbox="media/power-bi-visualization-new-card/add-data-data-pane.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/add-data-data-pane.png" alt-text="Screenshot showing a card with both the Store count and Total Sales fields. The Data pane, where the fields were added, is shown in the same view." lightbox="media/power-bi-visualization-new-card/add-data-data-pane.png":::
 
 # [On the report canvas](#tab/On-the-report-canvas)
 
