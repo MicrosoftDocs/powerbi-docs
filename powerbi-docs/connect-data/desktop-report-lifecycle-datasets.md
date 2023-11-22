@@ -109,7 +109,7 @@ When you use the Power BI service live connection, keep a few considerations and
 
 - Only users with Build permission for a semantic model can connect to a published semantic model by using the Power BI service live connection.
 - Hidden columns will become visible to users with Build permissions when they create live connections to the semantic model in Power BI Desktop.
-- Free users only see semantic models that are in their **My Workspace** and in Premium-based workspaces.
+- Free users only see datasets that are in their **My Workspace** and in Premium or Fabric based workspaces.
 - Because this connection is live, left navigation and modeling are disabled. The behavior is similar to a SQL Server Analysis Services (SSAS) connection. However, composite models in Power BI make it possible to combine data from different sources. For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
 - Because this connection is live, row-level security (RLS) and similar connection behaviors are enforced. This behavior is the same as when connected to SSAS.
 - If the owner modifies the original shared *.pbix* file, the shared semantic model and report in the Power BI service are overwritten. Reports based on the semantic model aren't overwritten, but any changes to the semantic model reflect in the report.
