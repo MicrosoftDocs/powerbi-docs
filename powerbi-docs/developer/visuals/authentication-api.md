@@ -14,7 +14,7 @@ ms.date: 06/19/2022
 
 The SSO Authentication API enables visuals to obtain Microsoft Entra ID (formally known as Azure AD) access tokens for signed-in users, facilitating single sign-on authentication.
 
-Power BI admins can enable or disable the API through a [global switch](/fabric/admin/organizational-settings). The default setting is Off.
+Power BI admins can enable or disable the API through a [global switch](/fabric/admin/organizational-visuals). The default setting is Off.
 
 The API is applicable only for AppSource visuals, providing enhanced security and control. Visuals that are under development can be tested in debug mode before they're published.
 
