@@ -52,6 +52,7 @@ sections:
           |Bring Your Own Key (BYOK)     | ✔ *       | ✔        |        
 
           <sup>1</sup> Depending on the type of SKU you have. For more details, see [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
+          
           <sup>2</sup> The Model size limit represents an upper bound for the semantic model size. However, an amount of memory must be reserved for operations such as refreshes and queries on the semantic model. The maximum semantic model size permitted on a capacity might be smaller than the numbers shown here.
 
           > [!NOTE]
