@@ -33,7 +33,7 @@ The following table shows the required synchronization for each refresh method w
 
 The number of read-only replicas is determined based on the amount of CPU used by your queries. The maximum number of replicas depends on your [SKU](./service-premium-what-is.md#capacities-and-skus).
 
-A new read-only replica is created if the current CPU usage across all active read-only replicas for a semantic model si high, and stays high. However, other capacity CPU usages might trigger throttling. Throttling can prevent read-only replicas from reaching a sustained high CPU usage. In such cases, a new scale out read-only replica isn't created. Here are a few examples of CPU usage that can trigger throttling:
+A new read-only replica is created if the current CPU usage across all active read-only replicas for a semantic model is high, and stays high. However, other capacity CPU usages might trigger throttling. Throttling can prevent read-only replicas from reaching a sustained high CPU usage. In such cases, a new scale out read-only replica isn't created. Here are a few examples of CPU usage that can trigger throttling:
 
 * There are other semantic models in the capacity with interactive queries that consume CPU.
 
