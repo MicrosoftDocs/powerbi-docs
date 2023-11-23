@@ -33,13 +33,13 @@ The following table shows the required synchronization for each refresh method w
 
 The number of read-only replicas is determined based on the amount of CPU used by your queries. The maximum number of replicas depends on your [SKU](./service-premium-what-is.md#capacities-and-skus).
 
-* **A new replica is created** - When your CPU usage increases and consistently stays high.
+A new read-only replica is created if the current CPU usage across all active read-only replicas for a semantic model si high, and stays high. However, other capacity CPU usages might trigger throttling. Throttling can prevent read-only replicas from reaching a sustained high CPU usage. In such cases, a new scale out read-only replica isn't created. Here are a few examples of CPU usage that can trigger throttling:
 
-* **A new replica not created** - The following conditions prevent a new replica from being created, even when CPU use increases and consistently stays high. When these conditions occur, it's likely your capacity is throttled.
-    * Other datasets with interactive queries in the same capacity consume a lot of CPU.
-    * The replica is for a dataset with interactive queries that consumes a lot of CPU.
+* There are other semantic models in the capacity with interactive queries that consume CPU.
 
-* **A replica is removed** - When CPU use reduces and consistently stays low, a replica is removed.
+* The replica is for a read-write semantic model with interactive queries that consume CPU. For example, queries or sessions that target the read-write replica explicitly, that is, don't use `?readonly` in the connection string.
+
+A replica is removed when CPU use reduces and consistently stays low.
 
 ## Prerequisites
 
@@ -118,15 +118,18 @@ Power BI semantic model scale-out is enabled by default for a tenant. Power BI t
 
 * When deleting a Power BI scale-out semantic model, and creating another semantic model with the same name, allow five minutes to pass before creating the new semantic model. It might take Power BI a while to remove the replicas of the primary semantic model.
 
-* When Power BI semantic model scale-out is enabled, changes to the following features, are not supported:
-    * Model roles for RLS and OLS
-    * Tables that use DirectQuery and Dual data sources
+* When Power BI semantic model scale-out is enabled and `autoSyncReadOnlyReplicas=false`, changes to the following features, are not supported:
+    * Adding or deleting roles
+    * Updating the set of role memberships for any role
+    * Modifying a data source
+    * Deleting data sources used by a DirectQuery or a Dual table
+    * Changes to object-level security (OLS) or dynamic row-level security (RLS) expressions
 
     To make changes to these features, disable scale-out and allow a few minutes for the change to take place before reenabling.
 
 * Discovering role memberships using the [Dynamic Management View (DMV)](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services) TMSCHEMA_ROLE_MEMBERSHIPS rowset, doesn't return any results when run against the read-only replica.
 
-* A Power BI [Live connection](../connect-data/service-live-connect-dq-datasets.md#live-connection) always connects to the read-only replica, even if the connection string uses `?readwrite`.
+* Reports that use a [Live connection](../connect-data/service-live-connect-dq-datasets.md#live-connection) always connect to the read-only replica, even if the connection string uses `?readwrite`. However, in Power BI Desktop, live connection reports using `?readwrite` connect to the read-write replica.
 
 * The DBSCHEMA_CATALOGS and DISCOVER_XML_METADATA the [Dynamic Management View (DMV)](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services) rowsets, return read-write replica information when using `?readonly` in the connection string.
 
@@ -134,10 +137,12 @@ Power BI semantic model scale-out is enabled by default for a tenant. Power BI t
 
 * These operations trigger auto-sync even when auto sync is turned off (`AutoSync=Off`).
     * Migrating a workspace from one capacity to another.
-    * BYOK re-encryption or conversion.
+    * Switching (or rotating) the version of the key used for Bring your own encryption keys (BYOK).
+    * Moving a semantic model's workspace from a capacity that doesn't use BYOK to a capacity that uses BYOK.
+    * Moving a semantic model's workspace from a capacity that uses BYOK to a capacity that doesn't uses BYOK.
     * Restoring a semantic model using the public XMLA endpoint.
 
-* Converting [Azure files](/azure/storage/files/storage-files-introduction) (`PremiumFiles`) to [Analysis Services backup files (ABF)](/analysis-services/multidimensional-models/backup-and-restore-of-analysis-services-databases) disables scale-out and loses all sync information.
+* Disabling [Large semantic model storage format](service-premium-large-models.md) disables scale-out and loses all sync information.
 
 ## Next steps
 
