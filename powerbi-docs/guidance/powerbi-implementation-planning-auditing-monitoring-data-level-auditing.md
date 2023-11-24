@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/20/2023
+ms.date: 11/24/2023
 ---
 
 # Power BI implementation planning: Data-level auditing
@@ -108,6 +108,8 @@ There are several ways to access the events that are sent to Azure Log Analytics
 
 > [!TIP]
 > Because there's a high volume of semantic model trace events, we recommend that you develop a DirectQuery model to analyze the data. A DirectQuery model allows you to query the data in near-real time. The events usually arrive within five minutes.
+
+For more information, see [Govern Azure connections](powerbi-implementation-planning-tenant-administration.md#govern-azure-connections).
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 

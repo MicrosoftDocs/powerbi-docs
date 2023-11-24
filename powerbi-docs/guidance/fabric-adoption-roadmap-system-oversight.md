@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 11/06/2023
+ms.date: 11/24/2023
 ---
 
 # Microsoft Fabric adoption roadmap: System oversight
@@ -50,7 +50,7 @@ The types of activities that an administrator will do on a day-to-day basis will
 > [!TIP]
 > The best type of person to serve as a Fabric administrator is one who has enough knowledge about the tools and workloads to understand what self-service users need to accomplish. With this understanding, the administrator can balance user empowerment and governance.
 
-There are several [types of Fabric administrators](/power-bi/admin/service-admin-administering-power-bi-in-your-organization#administrator-roles-related-to-power-bi). The following table describes the roles that are used most often on a regular basis.
+In addition to the [Fabric administrator](/admin/service-admin-administering-power-bi-in-your-organization#administrator-roles-related-to-power-bi), there are other roles which use the term _administrator_. The following table describes the roles that are commonly and regularly used.
 
 | **Role** | **Scope** | **Description** |
 | --- | --- | --- |
@@ -59,78 +59,22 @@ There are several [types of Fabric administrators](/power-bi/admin/service-admin
 | Data gateway administrator | One gateway | Manages gateway data source configuration, credentials, and users assignments. Might also handle gateway software updates (or collaborate with infrastructure team on updates). |
 | Workspace administrator | One workspace | Manages workspace settings and access. |
 
-The Fabric ecosystem of workloads is broad and deep. There are many ways that Fabric integrates with other systems and platforms. From time to time, it will be necessary to work with other system administrators and IT professionals, such as:
+The Fabric ecosystem of workloads is broad and deep. There are many ways that Fabric integrates with other systems and platforms. From time to time, it'll be necessary to work with other administrators and IT professionals. For more information, see [Collaborate with other administrators](powerbi-implementation-planning-tenant-administration.md#collaborate-with-other-administrators).
 
-- Global Microsoft 365 administrator
-- Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) administrator
-- Teams administrator
-- OneDrive administrator
-- SharePoint administrator
-- Database administrator
-- Licensing and billing administrator
-- Intune administrator
-- Desktop support team
-- Infrastructure team
-- Networking team
-- Security and compliance team
-
-The remainder of this article discusses the most common activities that a Fabric administrator does. It focuses on those activities that are important to carry out effectively when taking a strategic approach to [organizational adoption](fabric-adoption-roadmap.md).
+The remainder of this article provides an overview of the most common activities that a Fabric administrator does. It focuses on activities that are important to carry out effectively when taking a strategic approach to [organizational adoption](fabric-adoption-roadmap.md).
 
 ## Service management
 
-Overseeing the tenant is a crucial aspect to ensure that all users have a good experience with Fabric.
+Overseeing the tenant is a crucial aspect to ensure that all users have a good experience with Power BI. A few of the key governance responsibilities of a Fabric administrator include:
 
-### Tenant settings
+- **Tenant settings:** Control which Power BI features and capabilities are enabled, and for which users in your organization.
+- **Domains:** Group together two or more workspaces that have similar characteristics.
+- **Workspaces:** Review and manage workspaces in the tenant.
+- **Embed codes:** Govern which reports have been published publicly on the internet.
+- **Organizational visuals:** Register and manage organizational visuals.
+- **Azure connections:** Integrate with Azure services to provide additional functionality.
 
-Proper management of [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings) in the Fabric portal is critical. Tenant settings are the main way to control which capabilities are enabled, and for which groups of users in your organization.
-
-It's essential that tenant settings align with governance guidelines and policies, and with how the COE makes decisions. If a Fabric administrator independently decides which settings to enable or disable, that's a clear indicator of an opportunity to improve and refine your governance processes.
-
-> [!IMPORTANT]
-> Changing the tenant settings should go through a change control process with an approval mechanism. All changes should be documented, including who made the change, when, and why.
-
-Because content creators and consumers can easily read online about available features, it can be frustrating for users when capabilities don't function as expected. It can lead to dissatisfied users and less effective [organizational adoption, user adoption, and solution adoption](fabric-adoption-roadmap-maturity-levels.md).
-
-Here's a list of common questions asked by confused and frustrated users:
-
-- Why can't I create a workspace?
-- Why can't I export data?
-- Why doesn't my custom visual work?
-- Why can't I certify a semantic model ([previously known as a dataset](/power-bi/connect-data/service-datasets-rename))?
-
-> [!CAUTION]
-> An administrator might discover situations that aren't ideal, such as too many data exports in the activity log. Resist the urge to disable the feature entirely. Prohibiting features leads to user frustration, and leads users to find workarounds. Before disabling a setting, find out why users are relying on certain techniques. Perhaps a solution needs to be redesigned, or additional user education and training could mitigate the concerns. The bottom line: knowledge sharing is an effective form of governance.
-
-Because there's no reader role to view tenant settings, it can be a challenge for users to know what's enabled or disabled. Consider publishing a document to your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) that describes the tenant settings.
-
-The following activities apply when reviewing and validating each tenant setting:
-
-- Tenant setting:
-  - Enabled, or
-  - Disabled
-- Tenant setting applicable to:
-  - The entire organization, or
-  - Limited to specific security group(s):
-    - Does a suitable security group already exist?, or
-    - Does a new security group need to be created?
-
-### Admin portal
-
-As described in the [maturity levels](fabric-adoption-roadmap-maturity-levels.md) article, organizational adoption refers to the effectiveness of governance and data management practices to support and enable enterprise and self-service data and BI scenarios. Active management in accordance with adoption goals helps ensure that all your users have a good experience with analytic tools.
-
-Key topics for managing Fabric include:
-
-- [Tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings)
-- [Auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md) and the [Microsoft Purview hub](/fabric/governance/use-microsoft-purview-hub)
-- [Workspace management and access](/power-bi/admin/service-admin-portal-workspaces)
-- [Domains](/fabric/governance/domains)
-- [Premium capacity and Premium Per User settings](/power-bi/admin/service-admin-portal-capacity-settings)
-- [Embed codes](/power-bi/admin/service-admin-portal-embed-codes)
-- [Organizational visuals](/power-bi/admin/service-admin-portal-organizational-visuals)
-- [Azure connections](/power-bi/admin/service-admin-portal-azure-connections)
-- [Custom branding](/power-bi/admin/service-admin-portal-custom-branding)
-- [Protection metrics](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md)
-- [Featured content](/power-bi/admin/service-admin-portal-featured-content)
+For more information, see [Tenant administration](powerbi-implementation-planning-tenant-administration.md).
 
 ## User machines and devices
 
