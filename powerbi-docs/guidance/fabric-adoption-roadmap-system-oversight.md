@@ -35,8 +35,8 @@ A key governance decision is who to assign as a Fabric administrator. It's a cen
 
 The Fabric administrator role is a high privilege role because:
 
-- **User experience:** Settings that are managed by a Fabric administrator have a significant effect on user capabilities and user experience (described in the [Tenant settings](#tenant-settings) section below).
-- **Full security access:** Fabric administrators can update access permissions for workspaces in the tenant. The result is that an administrator can allow permission to view or download data and reports as they see fit (described in the [Tenant settings](#tenant-settings) section below).
+- **User experience:** Settings that are managed by a Fabric administrator have a significant effect on user capabilities and user experience. For more information, see [Govern tenant settings](powerbi-implementation-planning-tenant-administration.md#govern-tenant-settings).
+- **Full security access:** Fabric administrators can update access permissions for workspaces in the tenant. The result is that an administrator can allow permission to view or download data and reports as they see fit. For more information, see [Govern tenant settings](powerbi-implementation-planning-tenant-administration.md#govern-tenant-settings).
 - **Personal workspace access:** Fabric administrators can access contents and govern the [personal workspace](/power-bi/admin/service-admin-portal-workspaces#govern-my-workspaces) of any user.
 - **Metadata:** Fabric administrators can view all tenant metadata, including all user activities that occur in the Fabric portal (described in the [Auditing and monitoring](#auditing-and-monitoring) section below).
 
@@ -45,7 +45,7 @@ The Fabric administrator role is a high privilege role because:
 
 ### Roles and responsibilities
 
-The types of activities that an administrator will do on a day-to-day basis will differ between organizations. What's important, and given priority in your [data culture](#tenant-settings), will heavily influence what an administrator does to support business-led self-service, managed self-service, and enterprise data and BI scenarios. For more information, see the [Content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) article.
+The types of activities that an administrator will do on a day-to-day basis will differ between organizations. What's important, and given priority in your data culture, will heavily influence [what an administrator does](powerbi-implementation-planning-tenant-administration.md#define-scope-of-responsibilities) to support business-led self-service, managed self-service, and enterprise data and BI scenarios. For more information, see the [Content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) article.
 
 > [!TIP]
 > The best type of person to serve as a Fabric administrator is one who has enough knowledge about the tools and workloads to understand what self-service users need to accomplish. With this understanding, the administrator can balance user empowerment and governance.
