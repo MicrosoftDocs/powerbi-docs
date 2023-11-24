@@ -88,7 +88,6 @@ Here are some common reasons why a Fabric administrator collaborates with [other
 - **Device setup and installations:** You might need to work with IT, an infrastructure team, or a desktop support team in order to install, update, or manage [user devices](powerbi-implementation-planning-user-tools-devices.md).
 - **Subscriptions and license purchasing:** The Billing admin role in Microsoft 365 is required to manage subscriptions and purchase licenses. A billing administrator might also be responsible for cost analysis and management. For more information about centralized and decentralized (self-service) ways to manage licenses, see [User licenses](fabric-adoption-roadmap-system-oversight.md#user-licenses).
 - **License assignment and user management:** The License admin role in Microsoft 365 is required to assign licenses (that have been purchased) to specific users. The User admin role is required to manage the properties of a user. It's helpful to work with a user administrator when you're planning to implement automation based on user properties (for example, automatic license assignment or automatic group assignment). For more information, see [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles).
-
 - **Microsoft Entra administrators:** There are [various reasons](powerbi-implementation-planning-tenant-setup.md#microsoft-entra-administrators) why you need to work with Microsoft Entra ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) administrators. Often, reasons include the need to set up or manage users, groups, and service principals. For more information, see [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md).
 - **Source data access:** You might have to work with a system administrator or database administrator in order to get access to data on behalf of [content creators](powerbi-implementation-planning-security-content-creator-planning.md#creating-new-content). Sometimes, it might also be necessary to request access on behalf of content consumers when semantic models—[previously known as datasets](/power-bi/connect-data/service-datasets-rename)—[enforce data security based on the identity](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity) of content consumers.
 - **Data loss prevention and data classification:** You might need to collaborate with your [Microsoft Purview](/training/modules/manage-power-bi-artifacts-use-microsoft-purview/) administrator for governance and information protection.
@@ -98,7 +97,6 @@ Here are some common reasons why a Fabric administrator collaborates with [other
 - **Lifecycle management:** When deploying and managing changes to content, you might need to collaborate with a [deployment pipeline administrator](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#permissions) or an [Azure DevOps administrator](/fabric/cicd/git-integration/git-integration-process#permissions).
 - **Premium capacity management:** You might need to collaborate with a capacity administrator when [managing a Premium capacity](/power-bi/enterprise/service-admin-premium-manage).
 - **Data gateway management:** You might need to collaborate with a [gateway administrator](/data-integration/gateway/manage-security-roles#gateway-roles) to manage and secure an on-premises data gateway.
-
 - **Power Platform administration:** You might need to integrate solutions between Power BI and other Power Platform apps (such as Power Automate or Power Apps).
 - **Azure administration:** You might need to work with an Azure administrator to set up, access, and secure other [Azure services](/power-bi/connect-data/service-azure-and-power-bi) that you want to integrate with Power BI.
 - **Security administration and auditing:** Your organization could have specific compliance, security, or privacy requirements. In this case, you might need to collaborate with your security team to identify and mitigate risks.
@@ -149,12 +147,12 @@ Here are some common questions that confused and frustrated users ask.
 
 The remainder of this section describes the following process to manage tenant settings.
 
-- [Step 1: Review tenant settings](#step-1-review-tenant-settings)
-- [Step 2: Decide on tenant settings](#step-2-decide-on-tenant-settings)
-- [Step 3: Update tenant settings](#step-3-update-tenant-settings)
-- [Step 4: Document tenant settings](#step-4-document-tenant-settings)
-- [Step 5: Manage tenant settings](#step-5-manage-tenant-settings)
-- [Step 6: Audit tenant settings](#step-6-audit-tenant-settings)
+1. [Review tenant settings](#step-1-review-tenant-settings)
+1. [Decide on tenant settings](#step-2-decide-on-tenant-settings)
+1. [Update tenant settings](#step-3-update-tenant-settings)
+1. [Document tenant settings](#step-4-document-tenant-settings)
+1. [Manage tenant settings](#step-5-manage-tenant-settings)
+1. [Audit tenant settings](#step-6-audit-tenant-settings)
 
 #### Step 1: Review tenant settings
 
@@ -178,7 +176,6 @@ The following table presents how you could record the current state of your tena
 | **Date last reviewed** | **Tenant setting** | **Current value** | **Security groups allowed** | **Security groups not allowed** | **Tenant setting delegated to other admins** |
 | --- | --- | --- | --- | --- | --- |
 | Oct 15, 2023 | Create workspaces | Enabled for specific security groups | Power BI workspace creators, Power BI administrators, Power BI COE, Power BI support | N/A | N/A |
-| --- | --- | --- | --- | --- | --- |
 | Oct 15, 2023 | Export to Excel | Enabled for entire organization except specific security groups | N/A | Sales Team-Europe | N/A |
 | Nov 1, 2023 | Use semantic models across workspaces | Enabled for entire organization | N/A | N/A | N/A |
 | Nov 1, 2023 | Certification | Enabled for specific security groups | Power BI certification SMEs | N/A | Domain admins can enable / disable |
@@ -214,7 +211,6 @@ The following table presents how you might record your decisions.
 | **Date of decision** | **Decision made** | **Decision makers involved** | **Decision approved by** | **Tenant setting affected** | **Pending action** |
 | --- | --- | --- | --- | --- | --- |
 | Oct 15, 2023 | The COE will train approved content creators on best practices for creating and managing workspaces. Approved creators can be from any business unit. | COE and stakeholders | Ellis Turner (executive sponsor) and Taylor Phillips (COE lead) | Create workspaces | Review existing members of the _Power BI workspace creators_ group |
-| --- | --- | --- | --- | --- | --- |
 | Oct 15, 2023 | Export to Excel will be permitted. The COE will track the action in the activity log and contact users who overuse it. A temporary limitation for the Sales Team-Europe exists due to an issue currently under investigation. | COE and security | Ellis Turner (executive sponsor) and Jessie Irwin (Chief Technology Officer) | Export to Excel | Follow up on Europe issue in 60 days |
 | Nov 1, 2023 | We strongly encourage the use of shared semantic models to encourage data reuse, minimize data silos, and reduce data duplication. | COE | Ellis Turner (executive sponsor) | Use semantic models across workspaces | N/A |
 | Nov 1, 2023 | The COE will train approved content creators on the process and requirements for certifying reports and data assets. Approved creators can be from any business unit. | COE and stakeholders | Ellis Turner (executive sponsor) and Taylor Phillips (COE lead) | Certification | Review existing members of the _Power BI certification SMEs_ group |
@@ -247,7 +243,7 @@ Here are some aspects to consider for documentation.
 - **Provide a summary of current settings to users:** The tenant setting values are one type of [documentation](fabric-adoption-roadmap-mentoring-and-user-enablement.md#documentation) that can be made available to your community of users in your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal). It's a helpful reference for a user who, for example, doesn't understand why a feature isn't available to them. The documentation can also help users know which security group to request to join should they want to use a feature. To reduce the level of manual effort, the latest snapshot results from the REST API can be distributed to users as a Power BI report. Depending on your needs, you might need to merge the snapshot of data with other data that's manually maintained (such as the description of the tenant setting, justification for the setting, links to additional information, or link to a form to request access).
 
 > [!NOTE]
-> As described in Step 2 above, you'll also have documentation related to the decision-making process. Typically, that type of documentation is available only to the COE and administrators (rather than all Power BI users). For a simplified example, see Step 2 above.
+> As previously described in Step 2, you'll also have documentation related to the decision-making process. Typically, that type of documentation is available only to the COE and administrators (rather than all Power BI users). For a simplified example, see Step 2.
 
 #### Step 5: Manage tenant settings
 
@@ -391,7 +387,7 @@ There are two ways you can compile a list of current workspaces.
 
 - View the list of workspaces in the [admin portal](/power-bi/admin/service-admin-portal-workspaces). The list can be exported to a CSV file.
 - Programmatically extract a [tenant inventory](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-tenant-inventory-data) by using an [admin API](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#choose-a-user-api-or-admin-api) by using:
-  - The _metadata scanning__APIs (also known as the _scanner APIs_). This set of APIs allows you to locate changed workspaces asynchronously. Because it's able to extract incrementally changed workspaces, it's best suited to larger organizations with a large number of workspaces. For more information, see [Metadata scanning APIs](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#metadata-scanning-apis).
+  - The _metadata scanning_ APIs (also known as the _scanner APIs_). This set of APIs allows you to locate changed workspaces asynchronously. Because it's able to extract incrementally changed workspaces, it's best suited to larger organizations with a large number of workspaces. For more information, see [Metadata scanning APIs](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#metadata-scanning-apis).
   - The _Get Groups As Admin_ REST API or the _Get-PowerBIWorkspace_ PowerShell cmdlet. These methods return data for all workspaces in the tenant, so they're best suited to smaller organizations with lower data volumes. For more information, see [Groups API or workspaces cmdlet](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#groups-apis-or-workspaces-cmdlet).
 
 #### Step 2: Decide on workspaces
@@ -456,7 +452,7 @@ Depending on roles and responsibilities, secondary administrator activities migh
 You should have a process to regularly audit workspaces. Here are some actions to identify when you audit workspaces by using the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data).
 
 - **The _Create workspaces_ tenant setting has changed:** Look for changed tenant setting values in the activity log by using the _UpdatedAdminFeatureSwitch_ activity. The item name will be _CreateAppWorkspaces_.
-- **A Fabric administrator has obtained access to a user's personal workspace:** Look for the _AddAdminPersonalWorkspaceAccess_ activity. The workspace name will be in the format of _PersonalWorkspace-NameOfUser_. No activity is logged when the system automatically revokes access after 24 hours.
+- **A Fabric administrator has obtained access to a user's personal workspace:** Look for the _AddAdminPersonalWorkspaceAccess_ activity. The workspace name will be in the format of _PersonalWorkspace-NameOfUser_. No activity is logged when the system automatically revokes access, which happens after 24 hours.
 - **A new workspace has been created:** Look for the _CreateFolder_ activity.
 - **An existing workspace has changed:** Look for the _UpdateFolder_ activity.
 - **Access for a workspace has changed:** Look for the _UpdateWorkspaceAccess_ activity or the _UpdateFolderAccess_ activity.
@@ -487,7 +483,7 @@ When you use the [Publish to web](/power-bi/collaborate-share/service-publish-to
 Regularly reviewing and [managing embed codes](/power-bi/admin/service-admin-portal-embed-codes) is a key responsibility of the Fabric administrator. It's an especially critical responsibility because it involves verifying reports that have been published publicly on the internet.
 
 > [!CAUTION]
-> Some administrators mistakenly believe that an internal application or intranet site is a safe location to embed a Publish to web report. We strongly discourage using this technique in this way because reports published via _Publish to web_—regardless of where you embed them—can be discovered with a search engine. The appropriate practice to embed Power BI content for internal audiences is to use the [API embedding](/power-bi/developer/embedded/embed-sample-for-your-organization) functionality, or to use the [no-code embed](/power-bi/collaborate-share/service-embed-secure) technique. For more information, see the [Embed for your organization](powerbi-implementation-planning-usage-scenario-embed-for-your-organization.md) usage scenario.
+> Some administrators mistakenly believe that an internal application or intranet site is a safe location to embed a Publish to web report. We strongly discourage using this technique in this way because reports published via _Publish to web_—regardless of where you embed them—can be discovered with a search engine. The appropriate practice to embed Power BI content for internal audiences is to use the [API embedding](/power-bi/developer/embedded/embed-sample-for-your-organization) functionality, or to use the [no-code embed](/power-bi/collaborate-share/service-embed-secure) technique. For more information, see the [embed for your organization](powerbi-implementation-planning-usage-scenario-embed-for-your-organization.md) usage scenario.
 
 #### Step 1: Review embed codes
 
