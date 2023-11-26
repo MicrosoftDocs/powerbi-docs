@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 09/17/2023
+ms.date: 11/24/2023
 ---
 
 # Power BI implementation planning: User tools and devices
@@ -384,6 +384,8 @@ To use a custom visual in Power BI Desktop, it must first be installed on the ma
 >
 > - Visuals execute JavaScript code and have access to the data that they visualize.
 > - Visuals can transmit data to an external service. For example, a visual might need to transmit data to an API to run an AI algorithm or to render a map. Just because a visual transmits data to an external service, it doesn't mean it's untrustworthy. A visual that transmits data can't be certified.
+
+For more information, see [Govern organizational visuals](powerbi-implementation-planning-tenant-administration.md#govern-organizational-visuals).
 
 ### Group policy settings
 
