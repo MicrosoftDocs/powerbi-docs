@@ -114,12 +114,12 @@ Embed a report within an app, and share it directly with users.
 
 Now the end user can go to the team site in SharePoint Online and view the reports on the page.
 
-## Multi-factor authentication
+## Multifactor authentication
 
-If your Power BI environment requires you to sign in using multi-factor authentication, you might be asked to sign in with a security device to verify your identity. This can occur if you didn't sign in to SharePoint Online using multi-factor authentication. Your Power BI environment requires a security device to validate an account.
+If your Power BI environment requires you to sign in using multifactor authentication, you might be asked to sign in with a security device to verify your identity. This can occur if you didn't sign in to SharePoint Online using multifactor authentication. Your Power BI environment requires a security device to validate an account.
 
 > [!NOTE]
-> Power BI doesn't support multi-factor authentication with Azure Active Directory 2.0. Users will see an error message. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
+> Power BI doesn't support multifactor authentication with Azure Active Directory 2.0. Users will see an error message. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
 
 ## Web part settings
 
@@ -159,7 +159,7 @@ Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per
   
   * Sign out of SharePoint and sign back in. Be sure to close all browser windows before signing back in.
 
-  * If your user account requires multi-factor authentication (MFA), sign in to SharePoint with your MFA device (phone app, smart card, etc.).
+  * If your user account requires multifactor authentication (MFA), sign in to SharePoint with your MFA device (phone app, smart card, etc.).
   
   * Azure B2B Guest user accounts aren't supported. Users see the Power BI logo that shows the part is loading, but it doesn't show the report.
 
