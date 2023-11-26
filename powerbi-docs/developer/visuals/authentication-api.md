@@ -12,13 +12,11 @@ ms.date: 06/19/2022
 
 # Authentication API
 
-The SSO Authentication API enables visuals to obtain Microsoft Entra ID (formally known as Azure AD) access tokens for signed-in users, facilitating single sign-on authentication.
+The Authentication API enables visuals to obtain Microsoft Entra ID (formally known as Azure AD) access tokens for signed-in users, facilitating single sign-on authentication.
 
 Power BI admins can enable or disable the API through a [global switch](/fabric/admin/organizational-visuals). The default setting is Off.
 
 The API is applicable only for AppSource visuals, providing enhanced security and control. Visuals that are under development can be tested in debug mode before they're published.
-
-It's important to note that uncertified visuals are eligible to use the API, as certified visuals are restricted from making external calls.
 
 ## Supported environments
 
@@ -47,7 +45,7 @@ In the *capabilities.json* file, add the "AADAuthentication" privilege with your
     {
         "name": "AADAuthentication",
         "parameters": [
-            "https://contoso.com/visuals/visual_guid"
+            "https://contoso.com/"
         ]
     }
 ]
@@ -55,27 +53,10 @@ In the *capabilities.json* file, add the "AADAuthentication" privilege with your
 
 In the *pbiviz.json* file, set the API version to 5.7.0 or higher:
 
-```json
-{
-  "visual": {
-    "name": "AuthAppTestVisual",
-    "displayName": "AuthAppTestVisual",
-    "guid": "AuthAppTestVisual",
-    "visualClassName": "Visual",
-    "version": "1.0.0",
-    "description": "AuthAppTestVisual",
-    "supportUrl": "AuthAppTestVisual",
-    "gitHubUrl": "AuthAppTestVisual"
-  },
-  "apiVersion": "5.7.0",
-  "author": { "name": "", "email": "" },
-}
-```
-
 The newly exposed **AcquireAADTokenService** contains two methods:
 
 * *acquireAADToken*: Returns the token for the visual or null if it can't be fetched.
-* *acquireAADTokenStatus*: Returns one of the following privilege statuses associated with acquiring the token.
+* *acquireAADTokenstatus*: Returns one of the following privilege statuses associated with acquiring the token.
 
   * *Allowed*: The privilege is allowed in the current environment.
   * *NotDeclared*: The privilege declaration is missing in visual capabilities section.
