@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.custom: video-RWUWA9
 ms.topic: conceptual
-ms.date: 09/21/2023
+ms.date: 11/24/2023
 ---
 
 # Power BI implementation planning
@@ -27,15 +27,14 @@ When you implement Power BI, there are many subject areas to consider. The follo
 - [Tenant setup](powerbi-implementation-planning-tenant-setup.md)
 - [User tools and devices](powerbi-implementation-planning-user-tools-devices.md)
 - Subscriptions, licenses, and trials
-- Roles and responsibilities
-- Power BI service administration
+- [Tenant administration](powerbi-implementation-planning-tenant-administration.md)
 - [Workspaces](powerbi-implementation-planning-workspaces-overview.md)
 - Data management
 - Content deployment
 - Content distribution and sharing
 - [Security](powerbi-implementation-planning-security-overview.md)
 - [Information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md)
-- Power BI Premium
+- Capacity management
 - Data gateways
 - Integration with other services
 - [Auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md)
