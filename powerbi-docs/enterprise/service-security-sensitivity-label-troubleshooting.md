@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 12/12/2022
+ms.date: 11/26/2023
 LocalizationGroup: Data from files
 ---
 
@@ -96,8 +96,6 @@ Protected *.pbix* files can be only opened by a user who has an appropriate lice
 In rare cases, it may happen that no one has the necessary usage rights for the relevant label except the person that set the label. Then, if that one person leaves the organization or changes aliases within the organization, all access to the .pbix file will be lost. The solution for regaining access to the file in such cases is to either change or remove the sensitivity label on the file using the [set](/rest/api/power-bi/admin/information-protection-set-labels-as-admin)/[remove](/rest/api/power-bi/admin/information-protection-remove-labels-as-admin) sensitivity label Admin APIs. Contact your Power BI admin for assistance (only admins can run the Admin APIs).
 
 ### Can't save a labeled *.pbix* file in Desktop
-
-If the label applied to a *.pbix* file hasn't been published to the user in the Microsoft Purview compliance portal, the user won't be able to save the file in Desktop. 
 
 Power BI Desktop users may experience problems saving their work when internet connectivity is lost, such as after going offline. With no internet connection, some actions related to sensitivity labels and rights management might not complete properly. In such cases it's recommended to go back online and try saving again. 
 
