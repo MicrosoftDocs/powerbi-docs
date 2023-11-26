@@ -33,7 +33,7 @@ The following environments aren't yet supported:
 
 * Sovereign clouds
 * RS Service
-* Embed
+* Embedded
 * Teams (Microsoft Entra ID dialogs aren't supported in Teams)
 
 ## How to use the Authentication API
@@ -61,7 +61,7 @@ The newly exposed **AcquireAADTokenService** contains two methods:
   * *Allowed*: The privilege is allowed in the current environment.
   * *NotDeclared*: The privilege declaration is missing in visual capabilities section.
   * *NotSupported*: The privilege isn't supported in the current environment.
-  * *DisabledByAdmin*: The privilege usage is denied by tenant administrator.
+  * *DisabledByAdmin*: The tenant administrator denied privilege usage.
 
 The following sample code demonstrates how to acquire a Microsoft Entra ID token using the API:
 
@@ -76,9 +76,9 @@ Authentication is blocked if any of the following conditions apply:​
 
 * The user isn't signed in (in Desktop).
 
-* The admin or user hasn't given consent.
+* The admin or user didn't give consent.
 
-* The ISV hasn't preauthorized the Power BI application.
+* The ISV didn't preauthorize the Power BI application.
 
 * The format of the AADAuthentication Privilege parameter is invalid.
 
