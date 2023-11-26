@@ -39,7 +39,7 @@ This article covers how to:
 
 ## Prerequisites
 
-- You just need a [Power BI free license](../consumer/end-user-features.md) to explore the samples in the Power BI service, and save them to your My workspace. 
+You just need a [Fabric free license](../consumer/end-user-features.md) to explore the samples in the Power BI service, and save them to your My workspace.
 
 ## Get the sample
 
