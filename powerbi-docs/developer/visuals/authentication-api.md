@@ -66,6 +66,38 @@ The newly exposed **AcquireAADTokenService** contains two methods:
 The following sample code demonstrates how to acquire a Microsoft Entra ID token using the API:
 
 ```typescript
+export class Visual implements IVisual {
+    private acquireAADTokenService: IAcquireAADTokenService;
+    private host: IVisualHost;
+    private settings: VisualSettings;
+    private target: HTMLElement;
+    private textNode: HTMLElement;
+
+    constructor(options: VisualConstructorOptions) {
+        console.log('Visual constructor', options);
+        this.target = options.element;
+        this.host = options.host;
+        this.acquireAADTokenService = this.host.acquireAADTokenService;
+        
+        if (document) {
+            this.acquireAADTokenService.acquireAADTokenstatus()
+                .then((status) => {
+                    if (status === PrivilegeStatus.Allowed) {
+                        this.acquireAADTokenService.acquireAADToken()
+                            .then((token) => {
+                                if (token.accessToken) {
+                                    this.textNode.setAttribute('value', token.accessToken);
+                                } else {
+                                    this.textNode.setAttribute('value', "fail");
+                                }
+                            })
+                    }
+                    else {
+                        // fallback
+                    }
+                });
+        }
+    }
 ```
 
 ## Considerations and limitations
