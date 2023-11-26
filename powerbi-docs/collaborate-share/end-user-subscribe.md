@@ -91,14 +91,14 @@ You receive an email and snapshot of the report or dashboard on the schedule you
 
 ## Sensitivity labels
 
-Sensitivity labels are applied to subscription email attachments but not to the subscription's email text or preview images. 
+Sensitivity labels are applied to subscription email attachments but not to the subscription's email text or preview images.
+
 - Creating a subscription that attaches a copy of a report (including paginated report) to the subscription email is a Power BI Pro feature.  
-- For users with free subscriptions, the subscription email for a report (including paginated report) do not contain a sensitivity label in the email text or the subscription preview image. 
+- For users with free subscriptions, the subscription emails for a report (including paginated report) do not contain a sensitivity label in the email text or the subscription preview image.
 - To ensure that your subscription has a sensitivity label, turn off **Preview image** in the **Subscriptions** screen. 
-- For subscriptions to dashboards, there isn't an option to attach a copy of the dashboard to the email. So, the subscription email won't have a sensitivity label in the text or preview image. 
+- For subscriptions to dashboards, there isn't an option to attach a copy of the dashboard to the email. So, the subscription email won't have a sensitivity label in the text or preview image.
 
-
-## Subscribe others 
+## Subscribe others
 
 To create a subscription that includes others, in addition to the [requirements necessary to create your own subscriptions](#requirements), you also need:
 
