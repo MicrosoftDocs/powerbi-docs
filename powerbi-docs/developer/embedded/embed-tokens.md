@@ -110,7 +110,7 @@ The *embed for your organization* solution uses an interactive authentication fl
 >
 >   * All users with Pro licenses.
 >   * All users with PPU licenses.
->   * A [capacity](embedded-capacity.md). This configuration allows all users to have free licenses.
+>   * A [capacity](embedded-capacity.md) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus). This configuration allows all users to have free licenses.
 
 This diagram shows an example of the authentication flow for the *embed for your organization* solution.
 

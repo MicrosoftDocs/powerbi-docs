@@ -14,9 +14,9 @@ LocalizationGroup: Administration
 
 # Licensing the Power BI service for users in your organization
 
-Everyone who uses the Power BI service must have a license. What a user can do depends on the type of **per-user license** that they have. Licenses are Fabric free, Power BI Pro, or Power BI Premium Per User (PPU). The level of access provided by their license depends on whether the workspace is a **Premium** workspace or not.
+Everyone who uses the Power BI service must have a license. What a user can do depends on the type of **per-user license** that they have. Licenses are Fabric free, Pro, or Power BI Premium Per User (PPU). The level of access provided by their license depends on whether the workspace is a **Premium** workspace or not.
 
-There are two ways for users to get a license, from an administrator or self-service. Self-service sign up capabilities and a work or school email account are needed for users to get their own free, Pro, or Premium Per User license. Administrators can get a Power BI license subscription and then assign licenses to users.
+There are two ways for users to get a license, from an administrator or self-service. Self-service sign up capabilities and a work or school email account are needed for users to get their own free, Pro, or Premium Per User license. Administrators can get a Fabric license subscription and then assign licenses to users.
 
 This article is for administrators who can purchase services and per-user licensing. For more information about how users can get their own license, see [Signing up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
 
@@ -54,7 +54,7 @@ To assign a **Fabric free** license to all existing users:
 
 1. From your global admin or billing admin account, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 1. On the navigation menu, select **Billing** and then select **Purchase services**.
-1. Search or scroll to locate the Power BI (free) offer. Select **Details**.
+1. Search or scroll to locate the Fabric (free) offer. Select **Details**.
 1. Select the number of licenses you want, and then select **Buy**.
 
     :::image type="content" source="media/service-admin-licensing-organization/m365-assign-2021.png" alt-text="Screenshot showing the Fabric free subscription dialog.":::
