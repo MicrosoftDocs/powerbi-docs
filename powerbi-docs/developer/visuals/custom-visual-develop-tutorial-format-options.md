@@ -110,7 +110,7 @@ Now let's add new group called *color* for configuring the circle color and thic
     ```typescript
     import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
 
-    import FormattingSettingsCard = formattingSettings.Card;
+    import FormattingSettingsCard = formattingSettings.SimpleCard;
     import FormattingSettingsSlice = formattingSettings.Slice;
     import FormattingSettingsModel = formattingSettings.Model;
 
@@ -118,17 +118,20 @@ Now let's add new group called *color* for configuring the circle color and thic
         public circleColor = new formattingSettings.ColorPicker({
             name: "circleColor",
             displayName: "Color",
-            value: { value: "#ffffff" }
+            value: { value: "#ffffff" },
+            show: true
         });
 
         public circleThickness = new formattingSettings.NumUpDown({
             name: "circleThickness",
             displayName: "Thickness",
-            value: 2
+            value: 2,
+            show: true
         });
 
         public name: string = "circle";
         public displayName: string = "Circle";
+        public show: boolean = true;
         public slices: FormattingSettingsSlice[] = [this.circleColor, this.circleThickness]
     }
 
@@ -181,7 +184,7 @@ Now let's add new group called *color* for configuring the circle color and thic
 11. In the **update** method, after the declaration of the **radius** variable, add the following code.
 
     ```typescript
-    this.visualSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettings, options.dataViews);
+    this.visualSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettings, options.dataViews[0]);
     this.visualSettings.circle.circleThickness.value = Math.max(0, this.visualSettings.circle.circleThickness.value);
     this.visualSettings.circle.circleThickness.value = Math.min(10, this.visualSettings.circle.circleThickness.value);
     ```
