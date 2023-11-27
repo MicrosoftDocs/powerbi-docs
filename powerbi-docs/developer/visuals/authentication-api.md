@@ -45,7 +45,7 @@ In the *capabilities.json* file, add the "AADAuthentication" privilege with your
     {
         "name": "AADAuthentication",
         "parameters": [
-            "https://contoso.com/"
+            "https://contoso.com"
         ]
     }
 ]
