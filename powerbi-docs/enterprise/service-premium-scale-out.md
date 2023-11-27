@@ -31,9 +31,9 @@ The following table shows the required synchronization for each refresh method w
 
 ## Replica management
 
-Scale-out creates one read-write semantic model replica, and as many read-only replicas as needed. All write operations are directed to the read-write replica. As a result, there's a high interactive CPU usage on the read-write replica. For example, by queries or sessions that target the read-write replica explicitly, that is, don't use `?readonly` in the connection string. In such cases, a new replica isn't added since the load cannot be distributed.
+Scale-out creates one read-write semantic model replica, and as many read-only replicas as needed. All write operations are directed to the read-write replica. This includes queries on sessions that target the read-write replica explicitly, that is, don't use `?readonly` in the connection string. These queries can cause high interactive CPU usage on the read-write replica. In such cases, a new replica isn't created because the query load targeting the read-write replica can't be distributed to read-only replicas.
 
-The number of read-only replicas is determined based on the amount of CPU used by your queries. The maximum number of replicas depends on your [SKU](./service-premium-what-is.md#capacities-and-skus). A new read-only replica is created if the current CPU usage across all active read-only replicas for a semantic model is high, and stays high. However, other capacity CPU usages might trigger throttling. Throttling can prevent read-only replicas from reaching a sustained high CPU usage. In such cases, a new scale out read-only replica isn't created.
+The number of read-only replicas is determined based on the amount of CPU used by your queries. The maximum number of replicas depends on your [SKU](./service-premium-what-is.md#capacities-and-skus). A new read-only replica is created if the current CPU usage across all active read-only replicas for a semantic model is high, and stays high. However, the current load on the capacity might by high enough to cause [throttling](/fabric/enterprise/throttling) if more replicas are added. Throttling prevents additional read-only replicas from reaching a sustained high CPU usage. In such cases, a new scale out read-only replica isn't created.
 
 A replica is removed when CPU use reduces and consistently stays low.
 
