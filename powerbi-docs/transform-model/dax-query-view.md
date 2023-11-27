@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 11/20/2023
+ms.date: 11/21/2023
 LocalizationGroup: Create reports
 ---
 
@@ -20,14 +20,14 @@ With DAX query view in Power BI, you can view and work with Data Analysis Expres
 
 ## DAX queries
 
-In Power BI, DAX *expressions* are used to define different types of calculations for your data, but can also be used to define role security. DAX *queries*, on the other hand, can be used to return data from the model.
+In Power BI, DAX *formulas* are used to define different types of calculations for your data, but can also be used to define role security. DAX *queries*, on the other hand, can be used to return data from the model.
 
 DAX queries are similar to SQL queries in that they can show you data you already have. DAX queries don't create items in the model or visuals in the report.
 
 DAX queries have two main parts:
 
 - An **EVALUATE** statement, which is required. It specifies what and how data is returned in the query.
-- A **DEFINE** statement, which is optional. It allows you to define DAX expressions, such as a measure, to use in the query. Measures can be added to the model using CodeLens when used in DEFINE.
+- A **DEFINE** statement, which is optional. It allows you to define DAX formulas, such as a measure, to use in the query. Measures can be added to the model using CodeLens when used in DEFINE.
 
 To learn more about how queries are used, see [DAX queries](/dax/dax-queries) in the DAX reference.
 
@@ -109,19 +109,19 @@ Type in your query and get help with suggestions and Intellisense while editing.
 
 Use ENTER or TAB to add the highlighted intellisense, or SHIFT+ENTER or ALT+ENTER to move to another line without adding the intellisense option. Clicking ESC closes any of the overlays.
 
-#### Hover to see measure expressions
+#### Hover to see measure formulas
 
-When a measure is included in the DAX query, you can hover on it to see the expression, name, and description.
+When a measure is included in the DAX query, you can hover on it to see the formula, name, and description.
 
-:::image type="content" source="media/dax-query-view/dax-query-view-measure.png" alt-text="Screenshot of the hover to see measure expression feature.":::
+:::image type="content" source="media/dax-query-view/dax-query-view-measure.png" alt-text="Screenshot of the hover to see measure formula feature.":::
 
 #### Click to see measure lightbulb quick actions
 
-Clicking on a measure in an EVALUATE statement in a query without a DEFINE statement shows the quick actions lightbulb. Click on **Define** or **Define with references** to create a DEFINE statement with this measure’s expression with or without the reference measure DAX expressions.
+Clicking on a measure in an EVALUATE statement in a query without a DEFINE statement shows the quick actions lightbulb. Click on **Define** or **Define with references** to create a DEFINE statement with this measure’s formula with or without the reference measure DAX formulas.
 
 #### Update model measures using CodeLens  
 
-Using DEFINE MEASURE is helpful when creating measures. You can edit multiple measures in one window and then run the query to see the results of all or just some of them with specific group by columns. You don't need to create a table visual in Report view and switch back and forth between measure expressions. CodeLens takes this one step further by providing prompts when the measure already exists in the model, or if it doesn't, it can add it.
+Using DEFINE MEASURE is helpful when creating measures. You can edit multiple measures in one window and then run the query to see the results of all or just some of them with specific group by columns. You don't need to create a table visual in Report view and switch back and forth between measure formulas. CodeLens takes this one step further by providing prompts when the measure already exists in the model, or if it doesn't, it can add it.
 
 #### Measure update workflow
 
@@ -180,7 +180,7 @@ The **Data** pane context menu includes **Quick queries**. Use quick queries to 
 
 ##### Anywhere
 
-Define all measures in the model creates a query with all the measure expressions shown in a query. Easily search all your measure expressions.
+Define all measures in the model creates a query with all the measure formulas shown in a query. Easily search all your measure formulas.
 
 ##### Tables
 
@@ -188,9 +188,9 @@ Define all measures in the model creates a query with all the measure expression
 
     :::image type="content" source="media/dax-query-view/dax-query-view-shoq-top-100.png" alt-text="Screenshot of the show top 100 rows." lightbox="media/dax-query-view/dax-query-view-shoq-top-100.png":::
 
-- **Show column statistics** creates a query showing statistical information for every column in your table. See many of the expressions for how to aggregate columns as MIN, MAX, AVERAGE, COUNT, and more.
+- **Show column statistics** creates a query showing statistical information for every column in your table. See many of the formulas for how to aggregate columns as MIN, MAX, AVERAGE, COUNT, and more.
 
-- **Define all measures in this table** creates a query with this table’s measure expressions shown in a query.
+- **Define all measures in this table** creates a query with this table’s measure formulas shown in a query.
 
 ##### Columns
 
@@ -198,7 +198,7 @@ Define all measures in the model creates a query with all the measure expression
 
     :::image type="content" source="media/dax-query-view/dax-query-view-show-data-preview.png" alt-text="Screenshot of the show data preview.":::
 
-- **Show column statistics** creates a query showing statistical information for this specific column. See many expressions for how to aggregate the column as MIN, MAX, AVERAGE, COUNT, and more. The query returned varies depending on the data type of the column, showing different statistics for numeric, text, and date columns.
+- **Show column statistics** creates a query showing statistical information for this specific column. See many formulas for how to aggregate the column as MIN, MAX, AVERAGE, COUNT, and more. The query returned varies depending on the data type of the column, showing different statistics for numeric, text, and date columns.
 
     :::image type="content" source="media/dax-query-view/dax-query-view-show-column-preview.png" alt-text="Screenshot of the show column preview." lightbox="media/dax-query-view/dax-query-view-show-column-preview.png":::
 
@@ -208,11 +208,11 @@ Define all measures in the model creates a query with all the measure expression
 
     :::image type="content" source="media/dax-query-view/dax-query-view-measure-evaluate.png" alt-text="Screenshot of evaluate measure.":::
 
-- **Define and evaluate** creates a query to show the result of the measure and show the measure’s expression in a DEFINE statement that can then be modified.
+- **Define and evaluate** creates a query to show the result of the measure and show the measure’s formula in a DEFINE statement that can then be modified.
 
     :::image type="content" source="media/dax-query-view/dax-query-view-measure-define-evaluate.png" alt-text="Screenshot of the define and evaluate measure.":::
 
-- **Define with references and evaluate** creates a query to show the result of the measure and show not only the measure’s expression in a DEFINE statement that can be modified, but also any other measures referenced in the measure expression. Edit any part in the full context of the measure.
+- **Define with references and evaluate** creates a query to show the result of the measure and show not only the measure’s formula in a DEFINE statement that can be modified, but also any other measures referenced in the measure formula. Edit any part in the full context of the measure.
 
     :::image type="content" source="media/dax-query-view/dax-query-view-measure-define-with-references-evaluate.png" alt-text="Screenshot of define with references and evaluate.":::
 
@@ -228,7 +228,7 @@ In **Report view**, go to the **Optimize** ribbon, then click **Performance Anal
 
 DAX query view is currently in **preview**. Keep the following in mind:
 
-- Update model: Overwrite measure CodeLens removes comments in the DAX expression.
+- Update model: Overwrite measure CodeLens removes comments in the DAX formula.
 - Update model: Overwrite measures CodeLens doesn't show with only formatting changes.
 - Update model: Overwrite measures CodeLens can bring in additional lines when there is a syntax error.
 - 500+ lines in DAX query editor has noticeable lag when typing.

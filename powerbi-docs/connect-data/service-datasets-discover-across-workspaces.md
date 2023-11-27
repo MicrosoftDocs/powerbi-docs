@@ -32,7 +32,7 @@ The semantic models in this list meet at least one of the following conditions:
 - The semantic model is in your **My workspace**.
 
 > [!NOTE]
-> If you're a free user, you see only semantic models in your **My workspace**, or semantic models for which you have Build permission that are in Premium-capacity workspaces.
+> If you're a free user, you see only datasets in your **My workspace**, or datasets for which you have Build permission that are in Premium or Fabric capacity workspaces.
 
 When you select **Create**, you create a live connection to the semantic model. The report creation experience opens with the full semantic model available. You haven't made a copy of the semantic model. The semantic model still resides in its original location. You can use all tables and measures in the semantic model to build your own reports. Row-level security (RLS) restrictions on the semantic model are in effect, so you only see data you have permissions to see based on your RLS role.
 
