@@ -16,7 +16,7 @@ ms.date: 11/17/2022
 
 As described in the [Fabric adoption roadmap](fabric-adoption-roadmap-content-delivery-scope.md#enterprise), *enterprise BI* is characterized by having a significantly larger number of content consumers, compared to a much smaller number of authors who create and publish content.
 
-The distinction between the enterprise BI and the [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) scenarios is the use of [Power BI Premium capacity](../enterprise/service-premium-what-is.md), which allows content to be widely [distributed to consumers](../fundamentals/service-features-license-type.md) who have a Power BI free license. Consumers can include users within the organization, as well as [guest users](whitepaper-azure-b2b-power-bi.md), who are external to the organization.
+The distinction between the enterprise BI and the [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) scenarios is the use of [Power BI Premium capacity](../enterprise/service-premium-what-is.md), which allows content to be widely [distributed to consumers](../fundamentals/service-features-license-type.md) who have a Fabric free license. Consumers can include users within the organization, as well as [guest users](whitepaper-azure-b2b-power-bi.md) who are external to the organization.
 
 Large enterprise BI implementations often employ a centralized approach. Enterprise Power BI content is commonly maintained by a centralized team, for use broadly throughout the organization. The centralized team responsible for content management is usually IT, BI, or the [Center of Excellence (COE)](fabric-adoption-roadmap-center-of-excellence.md).
 
@@ -43,9 +43,9 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 6.](media/common/icon-06-red-30x30.png) | Power BI Report Builder queries data from one or more data source types. A paginated report is produced to meet requirements for a highly formatted, print-ready report. |
 | ![Item 7.](media/common/icon-07-red-30x30.png) | When ready, report creators publish their Power BI Report Builder file (.rdl) to the Power BI service. |
 | ![Item 8.](media/common/icon-08-red-30x30.png) | Multiple Power BI item types can be published to a [Premium workspace](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings). |
-| ![Item 9.](media/common/icon-09-red-30x30.png) | In the enterprise BI scenario, use of [Premium capacity](../enterprise/service-premium-what-is.md) (rather than Premium Per User) is depicted. This choice is made to support content delivery to many content viewers who have a free Power BI license. |
+| ![Item 9.](media/common/icon-09-red-30x30.png) | In the enterprise BI scenario, use of [Premium capacity](../enterprise/service-premium-what-is.md) (rather than Premium Per User) is depicted. This choice is made to support content delivery to many content viewers who have a free Fabric license. |
 | ![Item 10](media/common/icon-10-red-30x30.png) | Some, or all, reports and dashboards are published as a [Power BI app](../consumer/end-user-apps.md). The purpose of the app is to provide a set of related content for consumers to view in a user-friendly way. |
-| ![Item 11.](media/common/icon-11-red-30x30.png) | Power BI app users are assigned read-only permissions. App permissions are managed separately from the workspace. In an enterprise BI scenario, users with any type of Power BI license (free, Power BI Pro, or PPU) can be assigned as a viewer of the app. This feature applies only when the workspace is assigned a license mode of **Premium per capacity** (free users cannot access workspace content when it's assigned a license mode of **Premium per user** or **Embedded**). |
+| ![Item 11.](media/common/icon-11-red-30x30.png) | Power BI app users are assigned read-only permissions. App permissions are managed separately from the workspace. In an enterprise BI scenario, users with any type of Power BI license (Fabric (free), Power BI Pro, or PPU) can be assigned as a viewer of the app. This feature applies only when the workspace is assigned a license mode of **Premium per capacity** (free users cannot access workspace content when it's assigned a license mode of **Premium per user** or **Embedded**). |
 | ![Item 12.](media/common/icon-12-red-30x30.png) | The Power BI mobile apps are also available for viewing app and workspace content. |
 | ![Item 13.](media/common/icon-13-red-30x30.png) | Users who frequently work in Microsoft Teams might find it convenient to manage or [view Power BI content directly in Teams](../collaborate-share/service-collaborate-microsoft-teams.md). |
 | ![Item 14.](media/common/icon-14-red-30x30.png) | Users assigned to the administrator, member, or contributor workspace roles can publish and manage workspace content. |
@@ -90,7 +90,7 @@ Power BI app users are granted read-only permission to the app, and these permis
 
 For enterprise BI, it's a best practice to limit workspace access to those who are responsible for content authoring, development, and quality assurance activities. Typically, only a small number of people genuinely require workspace access. Consumers can access the content by opening the Power BI app, rather than opening the workspace.
 
-### Distribute content to Power BI free license users
+### Distribute content to Fabric free license users
 
 Users with a Power BI free license (or Power BI Pro or PPU license) can view content when granted app access or are added to a workspace role—provided the workspace is assigned to Premium capacity. This ability to distribute content to users with a free license is not available for any of the other workspace license modes, including **Pro**, **Premium per user**, or **Embedded**.
 

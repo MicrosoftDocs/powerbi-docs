@@ -94,7 +94,7 @@ To restore the interactive view, select the Show as Saved Image option again. Th
 
 ## Share your presentation
 
-When you share the presentation with others, to be able to view the data in the presentation they'll need an active Power BI account and a Power BI Free license, as well as access to the data. If the Power BI report or visual isn't located in a Premium capacity, they'll need a Power BI Pro license. None of this applies if you've frozen the view as a static image.
+When you share the presentation with others, to be able to view the data in the presentation they'll need an active Power BI account and a Microsoft Fabric free license, as well as access to the data. If the Power BI report or visual isn't located in a Premium capacity or Fabric F64 or greater capacity, they'll need a Power BI Pro license. None of this applies if you've frozen the view as a static image.
 
 To make sure people in your organization can access the report or visual and take advantage of the live data experience, when you add a live report page or visual to a presentation, be sure to use the link generated in Power BI by the [Share > PowerPoint option](./service-power-bi-powerpoint-add-in-install.md). This ensures that the people in your org who you shared the presentation with will be able to see the live data when they open the presentation.
 

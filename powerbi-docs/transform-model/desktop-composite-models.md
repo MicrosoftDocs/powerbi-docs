@@ -286,7 +286,7 @@ Users accessing reports need to have proper [permissions to all semantic models 
 > [!NOTE]
 > Refer to this blogpost for important information about [permissions required for composite models on Power BI semantic models and Analysis Services models](https://powerbi.microsoft.com/blog/announcing-general-availability-for-composite-models-on-power-bi-datasets-and-analysis-services-models/).
 
-If any semantic model in the chain is in a Premium Per User workspace, the user accessing it needs a [Premium Per User license](../fundamentals/service-features-license-type.md#premium-per-user-ppu-license). If any semantic model in the chain is in a Pro workspace, the user accessing it needs a [Pro license](../fundamentals/service-features-license-type.md#pro-license). If all the semantic models in the chain are on [Premium capacities](../fundamentals/service-features-license-type.md#premium-capacity), a user can access it using a [Free license](../fundamentals/service-features-license-type.md#free-per-user-license).
+If any dataset in the chain is in a Premium Per User workspace, the user accessing it needs a [Premium Per User license](../fundamentals/service-features-license-type.md#premium-per-user-ppu-license). If any dataset in the chain is in a Pro workspace, the user accessing it needs a [Pro license](../fundamentals/service-features-license-type.md#pro-license). If all the datasets in the chain are on [Premium capacities](../fundamentals/service-features-license-type.md#premium-capacity) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus), a user can access it using a [Free license](../fundamentals/service-features-license-type.md#free-per-user-license).
 
 ### Security warning
 

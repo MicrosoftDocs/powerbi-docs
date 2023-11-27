@@ -194,7 +194,7 @@ You can create a new report from the data model editing in the service experienc
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-21.png" alt-text="Screenshot of selecting the new report button from the ribbon.":::
 
-When you save your new report, you're prompted to choose a workspace, provided you have write permissions for that workspace. If you don't have write permissions, or if you're a free user and the semantic model resides in a Premium-capacity workspace, the new report is saved in your *My workspace*.
+When you save your new report, you're prompted to choose a workspace, provided you have write permissions for that workspace. If you don't have write permissions, or if you're a free user and the semantic model resides in a Premium-capacity or Fabric F64 or greater workspace, the new report is saved in your *My workspace*.
 
 ## AutoSave
 As you made changes to your data model, your changes are automatically saved. Changes are permanent with no option to undo.
