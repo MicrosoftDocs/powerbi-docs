@@ -66,38 +66,23 @@ The newly exposed **AcquireAADTokenService** contains two methods:
 The following sample code demonstrates how to acquire a Microsoft Entra ID token using the API:
 
 ```typescript
-export class Visual implements IVisual {
-    private acquireAADTokenService: IAcquireAADTokenService;
-    private host: IVisualHost;
-    private settings: VisualSettings;
-    private target: HTMLElement;
-    private textNode: HTMLElement;
-
-    constructor(options: VisualConstructorOptions) {
-        console.log('Visual constructor', options);
-        this.target = options.element;
-        this.host = options.host;
-        this.acquireAADTokenService = this.host.acquireAADTokenService;
-        
-        if (document) {
-            this.acquireAADTokenService.acquireAADTokenstatus()
-                .then((status) => {
-                    if (status === PrivilegeStatus.Allowed) {
-                        this.acquireAADTokenService.acquireAADToken()
-                            .then((token) => {
-                                if (token.accessToken) {
-                                    this.textNode.setAttribute('value', token.accessToken);
-                                } else {
-                                    this.textNode.setAttribute('value', "fail");
-                                }
-                            })
-                    }
-                    else {
-                        // fallback
-                    }
-                });
-        }
+// Step 1: Check the status of AAD token acquisition
+const acquireTokenStatus = await this.acquireAADTokenService.acquireAADTokenStatus();
+ 
+// Step 2: Verify if acquiring the token is allowed
+if (acquireTokenStatus === PrivilegeStatus.Allowed) {
+ 
+    // Step 3: Acquire the AAD token
+    const { accessToken }: AcquireAADTokenResult = await this.acquireAADTokenService.acquireAADToken();
+ 
+    // Step 4: Confirm successful acquisition of the access token
+    if (accessToken) {
+ 
+        // Step 5: Call your backend API with the obtained token
     }
+}
+ 
+// Step 6: Handle unsuccessful AAD token acquisition
 ```
 
 ## Considerations and limitations
