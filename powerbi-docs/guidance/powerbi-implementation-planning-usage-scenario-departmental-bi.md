@@ -79,7 +79,7 @@ For departmental BI, it's a best practice to limit workspace access to those who
 All content creators and consumers of the workspace or the Power BI app must have a [Power BI Pro or Power BI Premium Per User (PPU) license](https://powerbi.microsoft.com/pricing/).
 
 > [!NOTE]
-> There's one exception to the requirement of a Power BI Pro or PPU license: When the workspace is assigned to Premium capacity, Power BI free license users (with proper permissions) can view the workspace (and/or app) content. This approach is described in the [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenario.
+> There's one exception to the requirement of a Power BI Pro or PPU license: When the workspace is assigned to Premium capacity or Fabric F64 or greater capacity, Fabric free license users (with proper permissions) can view the workspace (and/or app) content. This approach is described in the [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenario.
 
 ### Reuse existing semantic models
 

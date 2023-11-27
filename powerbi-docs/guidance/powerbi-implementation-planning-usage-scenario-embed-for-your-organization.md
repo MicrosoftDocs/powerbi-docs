@@ -85,7 +85,7 @@ The authentication flow is _interactive authentication_ with Microsoft Entra ID.
 
 ### Licensing
 
-There's no specific licensing requirement to embed for your organization. What matters is that the app user has permission and an appropriate Power BI license to view (or create or edit) the content. It's even possible to embed content from a personal workspace when the app user only has a Power BI (free) license.
+There's no specific licensing requirement to embed for your organization. What matters is that the app user has permission and an appropriate Power BI license to view (or create or edit) the content. It's even possible to embed content from a personal workspace when the app user only has a Fabric (free) license.
 
 ### Power BI client APIs
 

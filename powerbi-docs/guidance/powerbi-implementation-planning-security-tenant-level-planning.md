@@ -53,6 +53,7 @@ A Power BI administrator belongs to at least one of these [built-in roles](/micr
 **Checklist** - When planning for who will be a Power BI administrator, key decisions and actions include:
 
 > [!div class="checklist"]
+>
 > - **Identify who's currently assigned the administrator role:** Verify who's assigned to one of the Power BI administration roles: Fabric admin, Power Platform admin, and Global administrator.
 > - **Determine who should manage the Power BI service:** If there are too many Power BI administrators, create a plan to reduce the total number. If there are users assigned as Power BI administrators who aren't well suited to such a high-privilege role, create a plan to resolve the issue.
 > - **Clarify roles and responsibilities:** For each Power BI administrator, ensure that their responsibilities are clear. Verify that appropriate cross-training has occurred.
@@ -87,6 +88,7 @@ Some of your organizational-level decisions will result in firm governance polic
 **Checklist** - When planning your high-level security strategies, key decisions and actions include:
 
 > [!div class="checklist"]
+>
 > - **Identify regulatory requirements related to security:** Investigate and document each requirement, including how you'll ensure compliance.
 > - **Identify high-level security strategies:** Determine which security requirements are important enough that they should be included in a governance policy.
 > - **Collaborate with other administrators:** Contact the relevant system administrator(s) to discuss how to meet security requirements and what technical prerequisites exist. Plan for doing a technical proof of concept.
@@ -121,6 +123,7 @@ It might be difficult to find the right balance between unrestricted access and 
 **Checklist** - When identifying needs for Microsoft Entra ID integration, key decisions and actions include:
 
 > [!div class="checklist"]
+>
 > - **Work with Microsoft Entra ID administrators:** Collaborate with your Microsoft Entra ID administrators to find out what existing Microsoft Entra policies are in place. Determine whether there are any policies (current or planned) that'll affect the user experience in the Power BI service and/or in the Power BI mobile applications.
 > - **Decide when user access versus service principal should be used:** For automated operations, decide when to use a service principal instead of user access.
 > - **Create or update user guidance:** Determine whether there are security topics that you'll need to document for the Power BI user community. That way, they'll know what to expect for using groups and conditional access policies.
@@ -136,7 +139,7 @@ There are advantages when an external user is from another organization that als
 
 - **Home tenant manages the credentials:** The user's home tenant stays in control of their identity and management of credentials. You don't need to synchronize identities.
 - **Home tenant manages the user's status:** When a user leaves that organization and the account is removed or disabled, with immediate effect, the user will no longer have access to your Power BI content. It's a significant advantage because you might not know when someone has left their organization.
-- **Flexibility for user licensing:** There are cost-effective [licensing options](whitepaper-azure-b2b-power-bi.md#licensing). An external user might already have a Power BI Pro or PPU license, in which case you don't need to assign one to them. It's also possible to grant them access to content in a Premium capacity workspace by assigning a Free license to them.
+- **Flexibility for user licensing:** There are cost-effective [licensing options](whitepaper-azure-b2b-power-bi.md#licensing). An external user may already have a Power BI Pro or PPU license, in which case you don't need to assign one to them. It's also possible to grant them access to content in a Premium capacity or Fabric F64 or greater capacity workspace by assigning a Fabric (free) license to them.
 
 ### Key settings
 
@@ -205,6 +208,7 @@ The Power BI _Allow email subscriptions to be sent to external users_ tenant set
 **Checklist** - When planning for how to handle external guest users, key decisions and actions include:
 
 > [!div class="checklist"]
+>
 > - **Identify requirements for external users in Power BI:** Determine what use cases there are for external collaboration. Clarify the scenarios for using Power BI with Microsoft Entra B2B. Determine whether collaboration with external users is a common or rare occurrence.
 > - **Determine the current Microsoft Entra ID settings:** Collaborate with your Microsoft Entra ID administrator to find out how external collaboration is currently set up. Determine what the impact will be on using B2B with Power BI.
 > - **Decide how to invite external users:** Collaborate with your Microsoft Entra ID administrators to decide how guest accounts will be created in Microsoft Entra ID. Decide whether ad hoc invitations will be allowed. Decide to what extent the planned invitation approach will be used. Ensure that the entire process is understood and documented.
@@ -257,6 +261,7 @@ There are [tenant settings](/power-bi/admin/service-admin-portal-export-sharing)
 **Checklist** - When planning for file locations, the key decisions and actions include:
 
 > [!div class="checklist"]
+>
 > - **Identify where files should be located:** Decide where files should be stored. Determine whether there are specific locations that shouldn't be used.
 > - **Create and publish documentation about file locations:** Create user documentation that clarifies the responsibilities for managing and securing files. It should also describe any locations where files should (or shouldn't) be stored. Publish this information to your centralized portal and training materials.
 > - **Set the tenant settings for exports:** Review and set each tenant setting related to export formats you want to support.
@@ -384,6 +389,7 @@ When a content creator or owner requests a new group, ideally they use a form to
 **Checklist** - When creating your strategy for how to use groups, key decisions and actions include:
 
 > [!div class="checklist"]
+>
 > - **Decide on the strategy for the use of groups:** Determine the use cases and purposes you'll need to use groups. Be specific about when security should be applied by using user accounts versus when a group is required or preferred.
 > - **Create a naming convention for Power BI-specific groups:** Ensure that a consistent naming convention is in use for groups that will support Power BI communication, features, administration, or security.
 > - **Decide who is allowed to create groups:** Clarify whether all group creation is required to go through IT. Or whether certain individuals (like satellite members of the COE) can be granted permission to create groups for their business unit.
