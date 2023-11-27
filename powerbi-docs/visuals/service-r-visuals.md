@@ -60,7 +60,6 @@ As another example, the following image shows the error message that appears whe
 
 :::image type="content" source="media/service-r-visuals/r-visuals-service-5.png" alt-text="Screenshot showing a runtime error.":::
 
-
 ## Licensing
 
 R visuals require a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license to render in reports, refresh, filter, and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../enterprise/service-admin-purchasing-power-bi-pro.md)
@@ -69,15 +68,12 @@ Free users of Power BI can only consume tiles shared with them in Premium worksp
 
 The following table describes R visuals capabilities based on licensing.
 
-
 |  |Author R visuals in Power BI Desktop  | Create PBI service reports with R visuals |View R visuals in reports  |  
 |---------|---------|---------|---------|
 |**Guest** (Power BI embedded)     |  Supported|  Not supported      | Supported in Premium/Azure capacity only  |  
 |**Unmanaged tenant** (domain not verified) | Supported | Not supported |  Not supported | 
 |**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported in Premium capacity only    |  
 **Managed tenant** with Pro or PPU license     |   Supported      | Supported      | Supported    | 
-
-
 
 ## Considerations and limitations
 
@@ -99,20 +95,20 @@ R visuals in the Power BI service have a few limitations:
 * R visuals have the ability to convert text labels into graphical elements. Doing so in the Power BI service requires the following extra step:
   
   * Add the following line at the beginning of the R script:
-    
-```powerbi_rEnableShowText =  1```
+
+     ```powerbi_rEnableShowText =  1```
 
 * Chinese, Japanese, and Korean fonts require all of the following steps to work properly in the Power BI service:
   
-  * First, install the R package *showtext* and all of its dependencies. You can do install it by running the following script:
-    
-```install.packages("showtext")```
+  1. Install the R package *showtext* and all of its dependencies. You can do install it by running the following script:
 
-  * Next, add the following line at the beginning of the R script:
-    
-```R script
-powerbi_rEnableShowTextForCJKLanguages =  1
-```
+     ```install.packages("showtext")```
+
+  1. Add the following line at the beginning of the R script:
+
+    ```R script
+      powerbi_rEnableShowTextForCJKLanguages =  1
+    ```
 
 ## Overview of R packages
 
