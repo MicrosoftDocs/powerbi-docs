@@ -98,7 +98,7 @@ Each license mode option requires the purchase of a billable product that is a c
 Capacities represent the computational resources that are required to process workloads, such as report rendering and data refresh. Reserved capacities are isolated from other customers' workloads, so they offer scale that can deliver dependable and consistent performance.
 
 > [!NOTE]
-> It's not possible to use the _Embed for your customers_ scenario in production environments with the Power BI (free), Power BI Pro, or Power BI PPU licenses.
+> It's not possible to use the _Embed for your customers_ scenario in production environments with the Fabric (free), Power BI Pro, or Power BI PPU licenses.
 
 For more information about products and licensing, see [Select the appropriate Power BI embedded analytics product](/training/modules/power-bi-embedded-select).
 
