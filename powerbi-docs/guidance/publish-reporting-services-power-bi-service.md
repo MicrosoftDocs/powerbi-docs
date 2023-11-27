@@ -28,7 +28,7 @@ You can migrate reports without downtime to your report servers or disruption to
 
 ### Personal workspace
 
-You can publish and share paginated reports to your personal workspace with a Power BI free license.
+You can publish and share paginated reports to your My Workspace with a Fabric free license.
 
 ### Other workspaces
 
