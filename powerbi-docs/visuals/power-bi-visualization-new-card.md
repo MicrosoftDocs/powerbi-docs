@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/21/2023
+ms.date: 11/27/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -82,7 +82,7 @@ Another way to create a new card visual is to start from the Data pane.
 
 1. In the Data pane, select some measures or fields.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/data-pane-new-visual.png" alt-text="This image shows a card (new) created by selecting two fields from the data pane." lightbox="media/power-bi-visualization-new-card/data-pane-new-visual.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/data-pane-new-visual.png" alt-text="Screenshot showing a card (new) created by selecting two fields from the data pane." lightbox="media/power-bi-visualization-new-card/data-pane-new-visual.png":::
 
 1. On the **Home** ribbon, select the **Visual gallery** and select the **Card (new) visual**.
 
@@ -127,7 +127,7 @@ The new card visual provides a wide range of options for customization. To bette
 
 1. To modify a single card, under **Apply settings to** select a series and adjust **Fill Color** and **Border Color**.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/format-8.png" alt-text="This image shows a card with the Total Sales series selected and filled with a green color that is 90% transparent." lightbox="media/power-bi-visualization-new-card/format-8.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/format-8.png" alt-text="Screenshot showing a card with the Total Sales series selected and filled with a green color that is 90% transparent." lightbox="media/power-bi-visualization-new-card/format-8.png":::
 
 ## Considerations and limitations (preview)
 
