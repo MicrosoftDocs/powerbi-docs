@@ -1,5 +1,5 @@
 ---
-title: The dynamic drill down API in Power BI visuals
+title: The dynamic drill-down API in Power BI visuals
 description: This article explains how to create a Power BI custom visual allows the user to enable or disable drill down support.
 author: mberdugo
 ms.author: monaberdugo
@@ -15,7 +15,7 @@ ms.date: 07/19/2022
 >[!NOTE]
 > This feature is available from API version 5.7.0.
 
-The dynamic drill control feature allows the visual to enable or disable the [drill feature](./drill-down-support.md) dynamically using an [API call](#how-to-use-the-dynamic-drill-control-api). When the drill feature is enabled, all the drilldown functionalities and [expand/collapse features](./dataview-mappings.md#expand-and-collapse-row-headers) are available, including API calls, context menu commands, header drill buttons, and support for hierarchy data. When it's disabled, these functionalities aren't available.
+The dynamic drill control feature allows the visual to enable or disable the [drill feature](./drill-down-support.md) dynamically using an [API call](#how-to-use-the-dynamic-drill-control-api). When the drill feature is enabled, all the drilldown functionalities and [expand/collapse features](./dataview-mappings.md#expand-and-collapse-row-headers) are available, including API calls, context menu commands, header drill buttons, and support for hierarchy data. When disabled, these functionalities aren't available.
 
 The following images show an example of a visual with the dynamic drill control feature enabled and disabled:
 
@@ -102,7 +102,7 @@ To support the dynamic drill control feature, add the following code to the capa
       },
   ```
 
-The `canDisableDrill` property indicates that the visual supports this feature. Without this property the API call isn't respected.  
+The `canDisableDrill` property indicates that the visual supports this feature. Without this property, the API call isn't respected.  
 The `disabledByDefault` property indicates whether or not to disable the drill feature by default.
 
 > [!NOTE]
