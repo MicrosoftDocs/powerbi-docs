@@ -85,10 +85,11 @@ A: There are limitations for custom visuals and animated visuals. The following 
 * [AppSource visuals that are managed in your organizational store](/fabric/admin/organizational-visuals#add-a-visual-from-appsoruce)
 
 Q: Can I copy a visual from my embedded Power BI report?  
+test 123
 A: *Copy visual* is supported only in the **embed for your organization** scenario. It isn't available in the **embed for your customers** scenario.
 
 Q: Can I copy a visual filters and slicers in my report?
-test
+
 A: No, copying visuals is not supported for filters and slicers. This includes visuals that use filter APIs. 
 
 ## Next steps
