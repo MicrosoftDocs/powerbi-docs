@@ -194,7 +194,7 @@
       href: service-security-private-links-on-premises.md      
     - name: Configure mobile apps with Intune
       href: service-admin-mobile-intune.md   
-  - name: Semantic model scale-out (preview)
+  - name: Semantic model scale-out
     expanded: false
     items:
     - name: Semantic model scale-out overview

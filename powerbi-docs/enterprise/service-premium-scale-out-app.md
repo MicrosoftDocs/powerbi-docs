@@ -7,14 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 07/25/2023
+ms.date: 11/21/2023
 LocalizationGroup: Premium
 ---
 
 # Compare semantic model scale-out replicas
-
-> [!IMPORTANT]
-> Semantic model scale-out is currently in **preview**.
 
 This article provides a few Visual Studio app examples for comparing semantic model properties when Power BI semantic model scale-out is enabled.
 
@@ -138,14 +135,10 @@ Console.Read();
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Power BI semantic model scale-out](service-premium-scale-out.md)
+* [Power BI semantic model scale-out](service-premium-scale-out.md)
 
-> [!div class="nextstepaction"]
-> [Configure semantic model scale-out](service-premium-scale-out-configure.md)
+* [Configure semantic model scale-out](service-premium-scale-out-configure.md)
 
-> [!div class="nextstepaction"]
-> [Tutorial: Test semantic model scale-out](service-premium-scale-out-test.md)
+* [Tutorial: Test semantic model scale-out](service-premium-scale-out-test.md)
 
-> [!div class="nextstepaction"]
-> [Synchronize scale-out replicas](service-premium-scale-out-sync-replica.md)
+* [Synchronize scale-out replicas](service-premium-scale-out-sync-replica.md)
