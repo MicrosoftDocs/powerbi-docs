@@ -151,8 +151,6 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 - Direct Lake models created or modified by using XMLA-based tools cannot be opened in the Web modelling feature.
 
-- If using the Web modeling experience, if a column change is made to an *existing* delta table, for example, a new column is added, the column data type is changed, or a column is renamed, that change is not automatically reflected in the model. For the model to reflect the change, the table must be removed from the model and then added back. To remove the table from the model, in the Web modeling experience's **Edit model** dialog, deselect the table and confirm. Then select it and confirm to add the table back.
-
 - Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same model. Composite models are not yet supported.
 
 - DateTime relationships are not supported in Direct Lake models.
@@ -170,6 +168,14 @@ You may want to disable if, for example, you need to allow completion of data pr
 - Embedded scenarios that rely on embedded entities are not yet supported.
 
 - Tables based on T-SQL-based views cannot be queried in Direct Lake mode. DAX queries that use these model tables fallback to DirectQuery mode.
+
+- Currently, when creating a new Direct Lake semantic model from either the Lakehouse or SQL endpoint, measures, relationships, and other model properties such as display format string from the default/auto-generated model are also included. Changes to these model properties are allowed.
+
+- Currently, for an *existing* Direct Lake model, if your'e using the **Edit data model** experience in the Power BI service, one or more of the following can apply:
+    - If a column change is made to an *existing* delta table, for example, a new column is added, the column data type is changed, or a column is renamed, that change is not automatically reflected in the model. For the model to reflect the change, the table must be removed from the model and then added back. To remove the table, select **Edit tables**, deselect the table, and then **Confirm**. Select **Edit tables** again, then select the table again and confirm. All measures in the table must be moved to other tables or removed from the table before you can remove the table.
+    - A table rename is made to an existing delta table in the Lakehouse,  that change is not automatically reflected in the model. For the model to reflect the change, the table must be selected again from **Edit tables**. The table with the old name remains in the model and any visuals using this table show an error. This table cannot be removed directly but can be hidden. To remove it, in the Lakehouse, rename the table back to the original name. You can then remove it by unchecking the box in the Edit tables dialog. When removed from the model, the table can be renamed in the Lakehouse and then brought back in by using the Edit tables dialog.
+    - An existing delta table is removed from the Lakehouse, that change isn't automatically reflected in the model. The table remains and any visuals using the table show an error. The table can't be removed but can be hidden.
+    - An *existing* measure, relationship, or other model property from the default/auto-generated model is removed, changed, or added, that change isn't automatically reflected in the model. For the model to reflect the change, the table with the updates must be removed and then added back. To remove the table, select **Edit tables**, deselect the table and then confirm. Then select **Edit tables**, select it again and confirm. All measures in the table will need to be moved to other tables or removed before you can remove the table. In future feature updates, options for keeping these changes or not will be added.
 
 ## Get started
 
