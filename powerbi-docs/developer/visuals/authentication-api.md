@@ -55,8 +55,8 @@ In the *pbiviz.json* file, set the API version to 5.7.0 or higher:
 
 The newly exposed **AcquireAADTokenService** contains two methods:
 
-* *acquireAADToken*: Returns the token for the visual or null if it can't be fetched.
-* *acquireAADTokenstatus*: Returns one of the following privilege statuses associated with acquiring the token.
+* **acquireAADToken**: Returns the token for the visual or null if it can't be fetched.
+* **acquireAADTokenstatus**: Returns one of the following privilege statuses associated with acquiring the token.
 
   * *Allowed*: The privilege is allowed in the current environment.
   * *NotDeclared*: The privilege declaration is missing in visual capabilities section.

@@ -12,11 +12,11 @@ ms.date: 11/22/2023
 
 # Microsoft Entra ID application setup
 
-In order for an ISV to use the Microsoft Entra ID authentication API, the ISV must register the app in Microsoft Entra, and the tenant admin has to consent. This article describes both these steps.
+To leverage the Authentication API, the ISV must first register an application in Microsoft Entra ID and preauthorize the Power BI applications with a dedicated scope for each visual. The tenant admin then needs to grant consent. This article outlines both of these essential steps.
 
 ## Register the app in Microsoft Entra
 
-1. Navigate to [Microsoft Entra ID App registrations](https://ms.portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps).
+1. Navigate to [Microsoft Entra ID App registrations](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps).
 
 1. Select **+ New Registration**
 
@@ -36,7 +36,7 @@ In order for an ISV to use the Microsoft Entra ID authentication API, the ISV mu
 1. Select the **+ Add a scope** button and enter your application URI in the right hand **Add a scope** window. Configure the registered Microsoft Entra ID application URI with your private domain. The URI must meet the following requirements.
 
    * It should start with *https://*.
-   * It shouldn't contain *onmicrosoft.com*.  
+   * It should not contain *onmicrosoft.com*.  
    * It should exclude spaces and URL-encoded spaces.
 
 1. Select **Save and continue**.
