@@ -57,12 +57,12 @@ Use of the [personal workspace](../fundamentals/service-basic-concepts.md#worksp
 > [!IMPORTANT]
 > Limit the use of personal workspaces and ensure no mission-critical content is stored in them. Although a Power BI administrator can access and govern a user's [personal workspace](/power-bi/admin/service-admin-portal-workspaces#govern-my-workspaces), storing critical content in personal workspaces does represent risk to the organization.
 
-### Use of Power BI free license
+### Use of Fabric free license
 
-For personal use, which by definition means there's no sharing or collaboration with others, [only certain capabilities of the Power BI service](../consumer/end-user-features.md#feature-list) are available to a user with a Power BI free license. When using a free license, most activities to create and publish content to the Power BI service are limited to their personal workspace.
+For personal use, which by definition means there's no sharing or collaboration with others, [only certain capabilities of the Power BI service](../consumer/end-user-features.md#feature-list) are available to a user with a Fabric free license. When using a free license, most activities to create and publish content to the Power BI service are limited to their personal workspace.
 
 > [!TIP]
-> The [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenario describes how users with a Power BI free license can view content when it's hosted in a Premium capacity.
+> The [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenario describes how users with a Fabric free license can view content when it's hosted in a Premium capacity.
 
 ### Gateway setup
 

@@ -308,7 +308,7 @@ The controls along the left edge of Power BI service.
 
 ### License
 
-Your level of access is determined by the Power BI license associated with your account and the capacity type where content is stored. For example, in shared capacity, a user with a Power BI Pro license can collaborate only with users who are also assigned a Pro license. In shared capacity, a free license enables access to only the user’s personal workspace. However, when content is in Premium capacity, users with a Pro license can share that content with users who are assigned a free license.
+Your level of access is determined by the Power BI license associated with your account and the capacity type where content is stored. For example, in shared capacity, a user with a Power BI Pro license can collaborate only with users who are also assigned a Pro license. In shared capacity, a free license enables access to only the user’s personal workspace. However, when content is in Premium capacity or Fabric F64 or greater capacity, users with a Pro license can share that content with users who are assigned a free license.
 
 A license is assigned to a user and can be a free or Pro license. Depending on how the license was acquired, it may be paid or unpaid. The accounts are either: per-user or organizational. Per-user accounts are available as *free* or *Pro*.  A Power BI *free* user is either using stand-alone Power BI Desktop or is using Power BI service stand-alone or is using Power BI service within an organization that has a Premium organizational subscription. The Power BI per-user *Pro* account is a paid monthly subscription that allows for collaboration and sharing of content with other *Pro* users.
 
@@ -629,7 +629,7 @@ An Excel workbook to be used as a data source. Workbooks can contain a data mode
 
 ### Workspace
 
-Containers for dashboards, reports, and semantic models in Power BI. Users can collaborate on the content in any workspace except My workspace. The contents can be bundled into a Power BI app. Those stored in Premium capacity can be shared with Free users. Personal workspaces (under My workspace) can be hosted in Premium capacity.
+Containers for dashboards, reports, and datasets in Power BI. Users can collaborate on the content in any workspace except My workspace. The contents can be bundled into a Power BI app. Those stored in Premium capacity or Fabric F64 or greater capacity can be shared with Free users. Personal workspaces (under My workspace) can be hosted in Premium capacity.
 
 ## X
 

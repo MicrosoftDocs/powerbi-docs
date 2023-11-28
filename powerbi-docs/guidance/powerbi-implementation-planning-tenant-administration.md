@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 11/24/2023
+ms.date: 11/27/2023
 ---
 
 # Power BI implementation planning: Tenant administration
@@ -370,7 +370,7 @@ Here are several reasons why a Fabric administrator might get involved with mana
 - **Manage workspace roles.** A Fabric administrator has permission to manage workspace roles for all workspaces in the tenant. That's helpful when a centralized team manages workspace access. It's also helpful when the workspace is in an orphaned state (indicating there's no workspace administrator) which can happen as a result of employment terminations or transfers.
 - **Reassign a workspace.** To unlock other features, sometimes the workspace [license mode](/fabric/enterprise/licenses#workspace) for a workspace needs to be updated. For example, a Fabric administrator can change a workspace from **Pro** or **Premium per user (PPU)** to a capacity.
 - **Determine the type of workspace.** A Fabric administrator can review the [SKU tier](/power-bi/enterprise/service-admin-premium-manage) that a workspace is assigned to. For example, the administrator can quickly determine that there are four workspaces in the tenant currently assigned to PPU.
-- **Locate and/or recover deleted workspaces.** The [workspace state](/power-bi/admin/service-admin-portal-workspaces#workspace-states) can indicate that a workspace has been deleted. For a brief period, a Fabric administrator can restore a workspace if it was deleted in error. Or, they can [restore a deleted personal workspace](/power-bi/admin/service-admin-portal-workspaces#restore-a-deleted-my-workspace-as-an-app-workspace) as a standard workspace.
+- **Locate and/or recover deleted workspaces.** The [workspace state](/power-bi/admin/service-admin-portal-workspaces#workspace-states) can indicate that a workspace has been deleted. For a brief period, a Fabric administrator can restore a workspace if it was deleted in error. Or, they can [restore a deleted personal workspace](/power-bi/admin/service-admin-portal-workspaces#restore-a-deleted-my-workspace-as-an-app-workspace) as a standard workspace. For more information, see [Workspace retention](/fabric/admin/portal-workspaces#workspace-retention).
 - **Update workspace name.** A Fabric administrator can rename a workspace, perhaps because its name doesn't conform to the established [naming convention](powerbi-implementation-planning-workspaces-tenant-level-planning.md#workspace-naming-conventions).
 
 > [!NOTE]

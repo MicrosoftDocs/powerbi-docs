@@ -9,7 +9,7 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 07/18/2023
 ms.custom: sample-Retail-Analysis
-LocalizationGroup: Visualizations
+LocalizationGroup: Visualizations 
 ---
 
 # Create card visualizations

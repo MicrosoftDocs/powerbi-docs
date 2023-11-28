@@ -42,7 +42,7 @@ Metrics are a Pro feature. Users can access various aspects of the experience de
 |Permission  |Minimum requirements  |
 |---------|---------|
 |Author and share scorecards and metrics, and perform check-ins | Power BI Pro license |
-|View scorecards and metrics  | Power BI Premium capacity + Free user <br><br>OR <br><br>Power BI Pro license |
+|View scorecards and metrics  | Power BI Premium or Fabric F64 or greater capacity + Free user <br><br>OR <br><br>Power BI Pro license |
 |View scorecard samples and author scorecards in My Workspace  |  Free user |
 
 If you don’t meet the minimum requirements for any of these, contact your Power BI administrator before you begin.  

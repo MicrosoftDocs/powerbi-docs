@@ -24,7 +24,7 @@ Use this chart to help determine which type of license you need. Power BI Deskto
 
 | Scenario  | Creator  | Consumer |
 |-----------|----------|----------|
-| You create a report in Power BI Desktop (.PBIX). Then you publish it to your My Workspace on the Power BI service. | As a creator, you only need the free Desktop app and a free Power BI license to publish to your My Workspace in the Power BI service for your own use. A paid Power BI Pro or PPU license is required to share content in My Workspace with others. | Consumers can't see content in other people's My Workspace unless the owners decide to share. To see shared My Workspace content requires a paid license. |
+| You create a report in Power BI Desktop (.PBIX). Then you publish it to your My Workspace on the Power BI service. | As a creator, you only need the free Desktop app and a free Fabric license to publish to your My Workspace in the Power BI service for your own use. A paid Power BI Pro or PPU license is required to share content in My Workspace with others. | Consumers can't see content in other people's My Workspace unless the owners decide to share. To see shared My Workspace content requires a paid license. |
 | You create a report in Power BI Desktop (.PBIX) and share the PBIX file to other people who open the file in Power BI Desktop | No licensing needed, only the Power BI Desktop app to be downloaded and installed. | No licensing needed, only the Power BI Desktop app to be downloaded and installed. |
 | You create a report in Power BI Desktop (.PBIX) and publish it to a shared workspace in the Power BI service. |   Paid license needed to publish to shared workspaces. | Paid license required to view the content unless the workspace is hosted in Premium capacity. For workspaces in Premium capacity, the consumer only needs a free license to view that report. |
 | You're sent a link to a report hosted on the Power BI service and want to view it. | You need a paid license to share a link. You need a free license to share a link to a report that is in Premium capacity. | A paid license is required to view the report unless the report is hosted in Premium capacity. For reports hosted in Premium capacity, the consumer only needs a free license to view that report. |
@@ -39,7 +39,7 @@ Before you start the self-service process, it's important to learn which types o
 
 ## Use self-service sign-up to get an individual Power BI license
 
-Follow these steps to sign up for a Power BI service account. Once you complete this process, you'll have a Power BI (free) license that you can use to try the Power BI service on your own using My Workspace, consume content from a Power BI workspace assigned to a Power BI Premium capacity, or initiate an individual Power BI trial. For more information, see [Power BI features by license type](service-features-license-type.md).
+Follow these steps to sign up for a Power BI service account. Once you complete this process, you'll have a Fabric (free) license that you can use to try the Power BI service on your own using My Workspace, consume content from a Power BI workspace assigned to a Power BI Premium capacity, or initiate an individual Power BI trial. For more information, see [Power BI features by license type](service-features-license-type.md).
 
 The exact steps for sign up can vary depending on your organization and what you select to start the process. For this reason, you might not be presented with all of the screens shown below. There are many different ways to sign up for the Power BI service as an individual, and the steps in this article apply to the two most common.
 
@@ -53,18 +53,16 @@ The exact steps for sign up can vary depending on your organization and what you
    ![Screenshot of Power BI service showing the Try Power BI for free prompt.](media/service-self-service-signup-for-power-bi/power-bi-start-free.png)
 
    Or, select an email link to a Power BI dashboard, report, or app.
-   
+
     ![Screenshot of Power BI service showing an email being sent from powerbi.com.](media/service-self-service-signup-for-power-bi/power-bi-emails.png)
 
 1. When prompted, sign in using your organizational account.
 
     ![Screenshot of Power BI service showing a prompt to enter new email address.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-sign-in.png)
 
-
 1. In this example, Microsoft 365 recognizes you and knows that you already have at least one other Microsoft service installed. Select **Sign in**.
 
     ![Screenshot of Power BI service showing that Microsoft recognizes the email.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-sign-up.png)
-
 
 1. You might receive one of these dialog boxes:
 
@@ -88,7 +86,7 @@ Congratulations on signing into your Power BI account for the first time! You no
 
 In some organizations, your default Power BI account might be a Power BI Pro license. For example, some versions of Microsoft 365 include a Power BI Pro license. To learn how to look up your user license, see [what license do I have?](../consumer/end-user-license.md)
 
-If a Power BI (free) license is sufficient, you don't have to do anything else. To take advantage of Power BI Pro or Premium Per User features, you can upgrade your license to PPU using self-service purchase.
+If a Fabric (free) license is sufficient, you don't have to do anything else. To take advantage of Power BI Pro or Premium Per User features, you can upgrade your license to PPU using self-service purchase.
 
 ### Trial expiration
 
@@ -108,7 +106,7 @@ To purchase a Power BI Pro license, select **Buy now** when prompted, or visit [
 
 ![Screenshot of Power BI service showing the Power BI Buy now dialog.](media/service-self-service-signup-for-power-bi/power-bi-buy.png)
 
-Enter your email address. In this example, the individual already has a free Power BI license and is recognized by Microsoft.
+Enter your email address. In this example, the individual already has a free Fabric license and is recognized by Microsoft.
 
 ![Screenshot of sign in page for purchasing Power BI Pro.](media/service-self-service-signup-for-power-bi/power-bi-purchases-pro.png)
 
