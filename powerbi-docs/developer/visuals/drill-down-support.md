@@ -205,7 +205,7 @@ button {
 }
 ```
 
-Prepare sample data to test the visual:
+Prepare sample data for testing the visual:
 
 |   H1  |   H2    | H3  |   VALUES  |
 |-----|-----|------|-------|
@@ -236,11 +236,11 @@ After those steps you should get following visual:
 
 ### Add context menu to visual elements
 
-In this step you add context menu to the button's on the visual:
+To add a context menu to the buttons on the visual:
 
 ![Context menu in the visual](media/drill-down-support/dev-visual-drilldown-context-menu.png)
 
-To create context menu, save `host` object in the properties of the visual and call `createSelectionManager` method to the create selection manager to display a context menu by using Power BI Visuals API.
+Save `host` object in the properties of the visual and call `createSelectionManager` method to the create selection manager to display a context menu by using Power BI Visuals API.
 
 ```typescript
 "use strict";
@@ -319,7 +319,7 @@ In the final step you should get visual with selections and context menu:
 
 ### Add drill-down support for matrix data view mapping
 
-To test the visual with matrix data view mappings, first prepare sample data :
+To test the visual with matrix data view mappings, first prepare sample data:
 
 |   Row 1   |   Row 2   |   Row 3   |   Column 1   |   Column 2   |   Column 3   |   Values   |
 |-----|-----|------|-------|-------|-------|-------|
@@ -622,179 +622,7 @@ Finally, you should get a visual with context menu:
 
 ![Animation shows a context menu for the visual with options to drill down or drill up.](media\drill-down-support\dev-visual-drilldown-demo.gif)
 
-## Dynamic drill-down control
-
->[!NOTE]
-> This feature is available from API version 5.7.0.
-
-The dynamic drill control feature allows the visual to enable or disable the drill feature dynamically using an [API call](./drilldown-api.md#how-to-use-the-dynamic-drill-control-api). When the drill feature is enabled, all the drilldown functionalities and [expand/collapse features](./dataview-mappings.md#expand-and-collapse-row-headers) are available, including API calls, context menu commands, header drill buttons, and support for hierarchy data. When it's disabled, these functionalities aren't available.
-
-The following images show an example of a visual with the dynamic drill control feature enabled and disabled:
-
-### [Drill enabled](#tab/drill-enabled)
-
-:::image type="content" source="media/drill-down-support/drill-enabled.png" alt-text="Screenshot of a visual with drilldown disabled displaying each continent with all the countries in that continent displayed under it.":::
-
-### [Drill disabled](#tab/drill-disabled)
-
-:::image type="content" source="media/drill-down-support/drill-disabled.png" alt-text="Screenshot of a visual with drilldown enabled showing the population of each continent with Ocenana expanded to show Australia and New Zealand.":::
-
----
-
-The dynamic drill control feature includes the following API elements:
-
-* The `isDrillDisabled` flag in the `DataRolesInfo`:
-
-  ```typescript
-   export interface DataRolesInfo {
-        //…
-        isDrillDisabled?: boolean; // ----- NEW -----
-    }
-  ```  
-
-* The `setCanDrill` method in the `IVisualHost` interface:
-
-  ```typescript
-    export interface IVisualHost extends extensibility.IVisualHost {
-        //…
-        setCanDrill: (drillAllowed: boolean) => void; // ----- NEW -----
-    }
-  ```
-
-To identify whether the drill is disabled, use the `isDrillDisabled` property in the update method:
-
-```typescript
-    private update(options: VisualUpdateOptions) {
-   //…
-   const isDrillDisabled = options.dataViews[0].metadata.dataRoles.isDrillDisabled;
-   //…
-    }
-```
-
-Then use the API call to enable or disable the drill as needed:
-
-* To enable:
-  `this.host.setCanDrill(true /* drillAllowed */);`
-
-* To disable:
-  `this.host.setCanDrill(false /* drillAllowed */);`
-
-### Migrate an existing visual to use the dynamic drill control API
-
-Using the drilldown feature represents a breaking change. Therefore, for the smoothest transition, we recommend that you use **a new visual GUID** for the new version.
-
-If, however, you want to keep the same GUID, keep in mind the following points:
-
-* When you migrate from a nondrillable version to a new drillable version, some data might not be provided in the `dataView` due to the hierarchical data support introduced as part of the drill feature. The dynamic drill control feature doesn't offer automatic support for this issue but can be used to manage the migration process.
-
-* For self-migration of the visual, the visual should take the following actions:
-
-  * Identify the first time the new version is loaded instead of the older version, and apply the `persistProperties` API.
-
-  * Disable the drill to receive all the data, using the `setCanDrill` API.
-
-The following example shows how to self-migrate an older visual to one that uses dynamic drill control:
-
-1. Add the following object to the capabilities.json file:
-
-    ```json
-    "DrillMigration": {
-      "displayName": "Drill Migration",
-      "properties": {
-          "isMigrated": {
-              "displayName": "Is Drill Migrated",
-              "type": {
-                  "bool": true
-              }
-          }
-      }
-    },
-    ```
-
-1. Add the following to the *visual.ts* file:
-
-   ```typescript
-   export class Visual implements IVisual {
-       //...
-         private isCalledToDisableDrillInMigrationScenario = false;
-         private drillMigration = { disabledByDefault: true };
-         constructor(options: VisualConstructorOptions) {
-          //...
-          this.host = options.host;
-          //...
-         }
-         private update(options: VisualUpdateOptions) {
-            this.handleSelfDrillMigration(options);
-             //...
-         }
-         private handleSelfDrillMigration(options: VisualUpdateOptions): void {
-             if (options && options.dataViews && options.dataViews[0] && options.dataViews[0].metadata) {
-                 const metadata = options.dataViews[0].metadata;
-                 if (metadata && metadata.dataRoles) {
-                     const isDrillDisabled = metadata.dataRoles.isDrillDisabled;
-                     if (isDrillDisabled === undefined) {
-                         return;
-                     }
-                     // Continue in case the visual is already migrated
-                     if (!metadata.objects?.DrillMigration?.isMigrated) {
-                         // Persist the isMigrated property when the drill has the correct state
-                         if (this.drillMigration.disabledByDefault === isDrillDisabled) {
-                             this.persistMigrationProperty();
-                         } else if (!this.isCalledToDisableDrillInMigrationScenario) {
-                             // Use the API call only once
-                             this.host.setCanDrill(!this.drillMigration.disabledByDefault);
-                             this.isCalledToDisableDrillInMigrationScenario = true;
-                         }
-                     }
-                 }
-             }
-         }
-         private persistMigrationProperty(): void {
-             let property = {
-                 merge: [{
-                     objectName: "DrillMigration",
-                     properties: {
-                         isMigrated: true
-                     },
-                     selector: null
-                 }]
-             };
-             this.host.persistProperties(property);
-         }
-     }
-   ```
-
-The first time the visual is opened after adding this code, the DrillMigration variable is set to true and the visual opens in the default state.
-
-## Considerations and limitations
-
-* The drill state isn't saved after disabling the drill. If you reenable the drill after disabling it, only the first level is displayed regardless of what was displayed before it was disabled.
-
-* The expand/collapse state isn't saved after disabling the drill. All the rows are collapsed once the drill is reenabled.
-
-* The API call isn't supported for dashboards.
-
-* Data view mapping conditions: Use `"max": 1` for all conditions for the drillable role to limit the visual to showing only one field when drill is disabled. For example:
-  * For categorical data view:
-
-     ```json
-     "conditions": [
-         { "category": { "min": 1 }, "measure": { "max": 1 }}
-     ]
-     ```
-
-  * For matrix data view:
-
-     ```json
-     "conditions": [
-        { "Rows": { "max": 0 }, "Columns": { "max": 0 }, "Value": { "min": 1 } },
-        { "Rows": { "min": 1 }, "Columns": { "min": 0 }, "Value": { "min": 0 } },
-        { "Rows": { "min": 0 }, "Columns": { "min": 1 }, "Value": { "min": 0 } },
-     ]
-     ```
-
 ## Related content
 
 * [How to use the dynamic drill control API](./drilldown-api.md)
-
-For more information, see [Understand data view mapping in Power BI visuals](dataview-mappings.md).
+* [Dynamic drilldown control](./dynamic-drilldown.md)

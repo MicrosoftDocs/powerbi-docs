@@ -44,48 +44,6 @@ public update(options: VisualUpdateOptions) {
         }
 ```
 
-## How to use the dynamic drill control API
+## Related content
 
-> [!NOTE]
-> The **Dynamic drill control API** is available from API version 5.7.0
-
-The dynamic drill control feature allows the visual to [enable or disable the drill feature](./drill-down-support.md#dynamic-drill-down-control) dynamically using an API call.
-
-To support the dynamic drill control feature, add the following code to the capabilities.json file:
-
-* To disable drill by default:
-
-  ```json
-      "drilldown": {
-          "roles": [
-              "Rows",
-              "Columns"
-          ],
-          "canDisableDrill": { 
-              "disabledByDefault": true
-          }
-      },
-  ```
-
-* To enable drill by default:
-
-  ```json
-      "drilldown": {
-          "roles": [
-              "Rows",
-              "Columns"
-          ],
-          "canDisableDrill": {}
-      },
-  ```
-
-The `canDisableDrill` property indicates that the visual supports this feature. Without this property the API call isn't respected.  
-The `disabledByDefault` property indicates whether or not to disable the drill feature by default.
-
-> [!NOTE]
-> The `disabledByDefault` property takes effect when you do one of the following actions:
->
-> * Add a new visual to the canvas
-> * Convert a visual from one that doesn't support this feature.
->
-> For example, if you convert a *sourceVisual* to *targetVisual*, the *targetVisual*'s `disabledByDefault` property is considered only if the *sourceVisual* doesn't support this feature. If *sourceVisual* does support this feature, the *targetVisual* keeps the *sourceVisual*'s state and not the default.
+[Dynamic drilldown control](dynamic-drilldown.md)
