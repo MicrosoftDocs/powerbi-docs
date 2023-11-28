@@ -624,5 +624,5 @@ Finally, you should get a visual with context menu:
 
 ## Related content
 
-* [How to use the dynamic drill control API](./drilldown-api.md)
+* [How to use the drill down support API](./drilldown-api.md)
 * [Dynamic drilldown control](./dynamic-drilldown.md)
