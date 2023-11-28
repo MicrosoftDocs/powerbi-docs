@@ -627,7 +627,7 @@ Finally, you should get a visual with context menu:
 >[!NOTE]
 > This feature is available from API version 5.7.0.
 
-The dynamic drill control feature allows the visual to enable or disable the drill feature dynamically using an [API call](./drilldown-api.md#how-to-use-the-dynamic-drill-control-api). When the drill feature is enabled, all the drilldown functionalities and expand/collapse features are available, including API calls, context menu commands, header drill buttons, and support for hierarchy data. When it's disabled, these functionalities aren't available.
+The dynamic drill control feature allows the visual to enable or disable the drill feature dynamically using an [API call](./drilldown-api.md#how-to-use-the-dynamic-drill-control-api). When the drill feature is enabled, all the drilldown functionalities and [expand/collapse features](./dataview-mappings.md#expand-and-collapse-row-headers) are available, including API calls, context menu commands, header drill buttons, and support for hierarchy data. When it's disabled, these functionalities aren't available.
 
 The following images show an example of a visual with the dynamic drill control feature enabled and disabled:
 
@@ -714,23 +714,19 @@ The following example shows how to self-migrate an older visual to one that uses
 1. Add the following to the *visual.ts* file:
 
    ```typescript
-       export class Visual implements IVisual {
-   	   //...
+   export class Visual implements IVisual {
+       //...
          private isCalledToDisableDrillInMigrationScenario = false;
          private drillMigration = { disabledByDefault: true };
-     
          constructor(options: VisualConstructorOptions) {
-             //...
-             this.host = options.host;
-             //...
+          //...
+          this.host = options.host;
+          //...
          }
-    
          private update(options: VisualUpdateOptions) {
-
             this.handleSelfDrillMigration(options);
              //...
          }
-    
          private handleSelfDrillMigration(options: VisualUpdateOptions): void {
              if (options && options.dataViews && options.dataViews[0] && options.dataViews[0].metadata) {
                  const metadata = options.dataViews[0].metadata;
@@ -740,7 +736,7 @@ The following example shows how to self-migrate an older visual to one that uses
                          return;
                      }
                      // Continue in case the visual is already migrated
-                     if (!this.formattingSettings.DrillMigration.isMigrated) {
+                     if (!metadata.objects?.DrillMigration?.isMigrated) {
                          // Persist the isMigrated property when the drill has the correct state
                          if (this.drillMigration.disabledByDefault === isDrillDisabled) {
                              this.persistMigrationProperty();
@@ -753,7 +749,6 @@ The following example shows how to self-migrate an older visual to one that uses
                  }
              }
          }
-    
          private persistMigrationProperty(): void {
              let property = {
                  merge: [{
@@ -767,7 +762,6 @@ The following example shows how to self-migrate an older visual to one that uses
              this.host.persistProperties(property);
          }
      }
-
    ```
 
 The first time the visual is opened after adding this code, the DrillMigration variable is set to true and the visual opens in the default state.
@@ -799,6 +793,8 @@ The first time the visual is opened after adding this code, the DrillMigration v
      ]
      ```
 
-## Next steps
+## Related content
+
+* [How to use the dynamic drill control API](./drilldown-api.md)
 
 For more information, see [Understand data view mapping in Power BI visuals](dataview-mappings.md).
