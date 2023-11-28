@@ -25,8 +25,6 @@ Global and billing administrators can get a Power BI subscription for their orga
 > [!NOTE]
 >
 > A Microsoft 365 E5 subscription includes Power BI Pro licenses. To learn how to manage licenses, see [View and manage user licenses](service-admin-manage-licenses.md).
->
->
 
 To purchase Power BI Pro licenses on the Microsoft 365 admin center:
 
@@ -40,7 +38,7 @@ To purchase Power BI Pro licenses on the Microsoft 365 admin center:
 
 1. Select multiple offers to compare or select **Details** to purchase an offer.
 
-1. Under **Select license quantity**, select the number of licenses you want to buy, and then select a billing frequency. Select **Buy**.  If you haven't previously used it, you can start a **Power BI (free)** trial subscription. The free trial subscription includes 25 user licenses and expires after one month. You can only get one free trial.
+1. Under **Select license quantity**, select the number of licenses you want to buy, and then select a billing frequency. Select **Buy**.  If you haven't previously used it, you can start a **Fabric (free)** trial subscription. The free trial subscription includes 25 user licenses and expires after one month. You can only get one free trial.
 
    :::image type="content" source="media/service-admin-org-subscription/power-bi-pro-purchase.png" alt-text="Screenshot showing example purchase options for Power B I Pro.":::
 
