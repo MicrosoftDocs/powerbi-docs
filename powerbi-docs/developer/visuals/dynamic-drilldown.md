@@ -159,7 +159,7 @@ The first time the visual is opened after adding this code, the DrillMigration v
 > [!NOTE]
 > The **Dynamic drill control API** is available from API version 5.7.0
 
-The dynamic drill control feature allows the visual to [enable or disable the drill feature](./drill-down-support.md#dynamic-drill-down-control) dynamically using an API call.
+The dynamic drill control feature allows the visual to enable or disable the [drill feature](./drill-down-support.md) dynamically using an API call.
 
 To support the dynamic drill control feature, add the following code to the capabilities.json file:
 
