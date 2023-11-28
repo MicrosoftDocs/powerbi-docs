@@ -645,7 +645,7 @@ The dynamic drill control feature includes the following API elements:
 
 * The `isDrillDisabled` flag in the `DataRolesInfo`:
 
-  ```json
+  ```typescript
    export interface DataRolesInfo {
         //…
         isDrillDisabled?: boolean; // ----- NEW -----
@@ -663,7 +663,7 @@ The dynamic drill control feature includes the following API elements:
 
 To identify whether the drill is disabled, use the `isDrillDisabled` property in the update method:
 
-```json
+```typescript
     private update(options: VisualUpdateOptions) {
    //…
    const isDrillDisabled = options.dataViews[0].metadata.dataRoles.isDrillDisabled;
