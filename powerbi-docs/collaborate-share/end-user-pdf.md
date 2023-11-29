@@ -8,7 +8,7 @@ ms.reviewer: mibruhjell
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 02/15/2023
+ms.date: 11/27/2023
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
@@ -117,6 +117,7 @@ The following aren't supported for **Export to PDF**.  Either the **PDF** export
 * While we look to provide a consistent experience, we can't guarantee the exported PDF from the Power BI service will always match the exported PDF from a local Power BI Desktop file.
 * We can't guarantee precise fidelity for Power BI reports. The resolution of exported report pages is 1280 pixels x 720 pixels. 
 * Visuals with scrollbars are exported in their default state.  The visual will display all possible rows, starting with the first row. Even if you have the visual scrolled down, when exported, the visual will display unscrolled. 
+* Export to PDF supports Unicode 6 and earlier. If, for example, Unicode 7 is used, Power BI export will display that image as a blank box. 
 
     ![Export visual with scrollbars.](media/end-user-pdf/export-to-pdf-03.png)
 

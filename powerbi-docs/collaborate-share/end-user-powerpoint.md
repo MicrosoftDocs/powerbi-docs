@@ -132,6 +132,7 @@ The following aren't supported for **Export to PowerPoint**.  Either the **Power
 * Visuals [displayed as a Data table or displayed with "Show as a table"](../consumer/end-user-show-data.md) will export the visual in its default state, without the table.   
 * Visuals in a drill-down state will be exported in their default state. 
 * Export to PowerPoint isn't currently supported for tenants in the China North region. 
+* Export to PDF supports Unicode 6 and earlier. If, for example, Unicode 7 is used, Power BI export will display that image as a blank box. 
 
 ## Next steps
 [Add a live Power BI report page in PowerPoint](service-power-bi-powerpoint-add-in-install.md)    
