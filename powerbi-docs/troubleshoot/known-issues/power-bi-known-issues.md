@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting    
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 11/23/2023
+ms.date: 11/30/2023
 ms.custom:  
 ---
 
@@ -22,6 +22,8 @@ Select the **Title** to view more information about that specific known issue.
 
 |  Issue ID |  Area                              |  Title  |  Issues publish date |  
 |-----------|------------------------------------|---------|----------------------|
+|  571      |  Capacity Management  |  [Contributor can't update organizational app](known-issue-571-contributor-can-not-update-organizational-app.md)    | November 30, 2023  |
+|  570      |  Capacity Management  |  [Version 17 of the Fabric Capacity Metrics app doesn't work](known-issue-570-version-17-capacity-metrics-app-does-not-work.md)    | November 30, 2023  |
 |  552      |  Consume and View  |  [Autoscale not triggered by carry forward accumulated usage](known-issue-552-autoscale-not-triggered-carry-forward-accumulated-usage.md)    | November 22, 2023  |
 |  546      |  Consume and View  |  [Closing a Dataflow Gen1 takes you to the wrong workspace](known-issue-546-closing-dataflow-gen1-takes-wrong-workspace.md)    | November 15, 2023  |
 |  535      |  Consume and View  |  [New card visual formatting appears or disappears in Service](known-issue-535-new-card-visual-formatting-appears-disappears.md)    | October 25, 2023  |
