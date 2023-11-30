@@ -113,8 +113,8 @@ In Power BI paginated reports, add a group to a data region when you want to org
 ## Next steps  
  [Report and group variables collections references (Power BI Report Builder)](/sql/reporting-services/report-design/built-in-collections-report-and-group-variables-references-report-builder)   
  [Group expression examples (Power BI Report Builder)](../expressions/group-expression-examples-report-builder.md)   
- [Filter, group, and sort data (Power BI Report Builder)](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
- [Tablix data region (Power BI Report Builder)](/sql/reporting-services/report-design/tablix-data-region-report-builder-and-ssrs)   
+ [Filter, group, and sort data (Power BI Report Builder)](filter-group-sort-data-report-builder.md)   
+ [Tablix data region (Power BI Report Builder)](../../paginated-reports/report-builder-tables-matrices-lists.md)   
  [Tables (Power BI Report Builder)](/sql/reporting-services/report-design/tables-report-builder-and-ssrs)   
  [Matrices (Power BI Report Builder)](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs)   
  [Lists (Power BI Report Builder)](/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs)   

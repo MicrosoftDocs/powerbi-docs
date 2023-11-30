@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 07/12/2023
+ms.date: 09/06/2023
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -17,7 +17,7 @@ LocalizationGroup: Share your work
 
 *Sharing* is the easiest way to give people access to your reports and dashboards in the Power BI service. You can share with people inside or outside your organization.
 
-When you share a report or dashboard, the people you share it with can view it and interact with it, but can't edit it. The recipients see the same data that you see in the reports and dashboards. They also get access to the entire underlying dataset, unless row-level security (RLS) is applied to it.  The coworkers you share with can reshare with their coworkers if you allow them to. 
+When you share a report or dashboard, the people you share it with can view it and interact with it, but can't edit it. The recipients see the same data that you see in the reports and dashboards. They also get access to the entire underlying semantic model, unless row-level security (RLS) is applied to it.  The coworkers you share with can reshare with their coworkers if you allow them to. 
 
 Some users are unable to share their reports and dashboards with others because they don't have the necessary license or subscription. They can, however, receive reports and dashboards shared by colleagues. To learn more, see [Working with content shared with you](end-user-shared-with-me.md).
 
@@ -36,6 +36,12 @@ Sujata demonstrates how to share in the Power BI service.
 - You need a [Power BI Pro or Premium Per User (PPU) license](../fundamentals/service-features-license-type.md), whether you share content inside or outside your organization. 
 - Your recipients also need Power BI Pro or Premium Per User (PPU) licenses, unless the content is in a [Premium capacity](../enterprise/service-premium-what-is.md). 
 - If you want to allow recipients to edit a shared report, you have to assign the user a workspace role that allows editing. To learn more about role-level permissions and how to assign roles, read [Roles in workspaces](service-roles-new-workspaces.md).
+
+>[!NOTE]
+>
+>* Only **P SKU**s and **F SKU**s larger than F32 allow users with a Microsoft Fabric free license who have Viewer role on the workspace containing the content to consume Power BI apps and shared content in the Power BI service. Smaller **F SKU**s require a Pro license to consume Power BI content.
+>* The **F SKU** is part of Fabric. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
+
 
 ### Where you can share
 
@@ -105,7 +111,7 @@ This type of link allows specific people or groups to access the report. If you 
 Links that give access to **People in your organization** or **Specific people** will always include at least read access. However, you can also specify if you want the link to include or exclude the following permissions as well:
 
 - Reshare permissions (included by default) – allows recipients to share the report to others
-- Build permissions (excluded by default) – allows recipients to build their own reports in other workspaces based on the data associated with the report. Read more about [creating reports based on datasets from different workspaces](../connect-data/service-datasets-discover-across-workspaces.md).
+- Build permissions (excluded by default) – allows recipients to build their own reports in other workspaces based on the data associated with the report. Read more about [creating reports based on semantic models from different workspaces](../connect-data/service-datasets-discover-across-workspaces.md).
 
 Links for **People with existing access** don't have any other settings because these links don't give any access to the report.
 
@@ -185,7 +191,7 @@ To remove a user's access to the dashboard, select the ellipsis (**...**) next t
       
 ![Screenshot of More options, Remove access dashboard.](media/service-share-dashboards/power-bi-more-options-remove-access.png)
 
-In the **Remove access** dialog, decide if you also want to remove access to related content, such as reports and datasets. It's best to also remove access to related content; otherwise, the related content may not display properly.
+In the **Remove access** dialog, decide if you also want to remove access to related content, such as reports and semantic models. It's best to also remove access to related content; otherwise, the related content may not display properly.
 
  ![Screenshot of the Remove access dialog.](media/service-share-dashboards/power-bi-share-remove-access.png)
 
@@ -215,9 +221,9 @@ At most, you can share with 100 users or groups in a single share action. Howeve
 
 Things to keep in mind about sharing reports and dashboards:
 * Both reports and dashboards can be shared to users through direct access; however, only reports can be shared via links that give access to the report and underlying data.
-* If you have reshare permissions to the underlying dataset, when you share a report or dashboard with colleagues you're also sharing the underlying dataset. Your colleagues get access to the entire dataset unless [row-level security (RLS)](../enterprise/service-admin-rls.md) limits their access. Report authors may customize user experiences when viewing or interacting with reports. For example, authors may hide columns or limit the actions on visuals. These customized user experiences don't restrict what data users can access in the dataset. Use [row-level security (RLS)](../enterprise/service-admin-rls.md) in the dataset so that each person's credentials determine which data they can access.
-* Everyone you successfully share your dashboard with can see it and interact with the related reports in [Reading view](../consumer/end-user-reading-view.md#reading-view). In general, they can't create reports or save changes to existing reports. However, if you select **Allow recipients to build content with the data associated with this dashboard**, they can create their own reports in other workspaces based on the dataset for this dashboard.
-* Although no one can see or download the dataset, they can access the dataset directly by using the Analyze in Excel feature. An admin can restrict the ability to use Analyze in Excel for everyone in a group. However, the restriction is for everyone in that group and for every workspace the group belongs to.
+* If you have reshare permissions to the underlying semantic model, when you share a report or dashboard with colleagues you're also sharing the underlying semantic model. Your colleagues get access to the entire semantic model unless [row-level security (RLS)](../enterprise/service-admin-rls.md) limits their access. Report authors may customize user experiences when viewing or interacting with reports. For example, authors may hide columns or limit the actions on visuals. These customized user experiences don't restrict what data users can access in the semantic model. Use [row-level security (RLS)](../enterprise/service-admin-rls.md) in the semantic model so that each person's credentials determine which data they can access.
+* Everyone you successfully share your dashboard with can see it and interact with the related reports in [Reading view](../consumer/end-user-reading-view.md#reading-view). In general, they can't create reports or save changes to existing reports. However, if you select **Allow recipients to build content with the data associated with this dashboard**, they can create their own reports in other workspaces based on the semantic model for this dashboard.
+* Although no one can see or download the semantic model, they can access the semantic model directly by using the Analyze in Excel feature. An admin can restrict the ability to use Analyze in Excel for everyone in a group. However, the restriction is for everyone in that group and for every workspace the group belongs to.
 * Everyone can manually [refresh the data](../connect-data/refresh-data.md).
 * You can't share reports that are distributed to you in an app. Ask the app owner to add the person you want to share the report with and republish the app.
 * If you use Microsoft Exchange Online for email, you can enter the email address of a distribution group to share with its members. 

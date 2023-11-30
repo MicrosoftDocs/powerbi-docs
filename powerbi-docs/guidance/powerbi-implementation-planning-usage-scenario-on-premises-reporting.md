@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: On-premises reporting"
 description: "Learn how Power BI on-premises reporting is about customer-managed reporting."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -16,7 +16,7 @@ ms.date: 02/07/2022
 
 The *on-premises reporting* scenario is one of several *hybrid and custom scenarios* for deploying Power BI solutions without using the Power BI service.
 
-This scenario involves using [Power BI Report Server](../report-server/get-started.md), which is an on-premises portal for publishing, sharing, and consuming business intelligence content within the organizational network. It's useful when the organization needs an alternative to the cloud-based Power BI service for deploying some (or all) BI content. For example, a fully customer-managed platform may be necessary for regulatory, legal, or intellectual property reasons.
+This scenario involves using [Power BI Report Server](../report-server/get-started.md), which is an on-premises portal for publishing, sharing, and consuming business intelligence content within the organizational network. It's useful when the organization needs an alternative to the cloud-based Power BI service for deploying some (or all) BI content. For example, a fully customer-managed platform could be necessary for regulatory, legal, or intellectual property reasons.
 
 ## Scenario diagram
 
@@ -39,7 +39,7 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 9.](media/common/icon-09-red-30x30.png) | Report consumers can also view reports using [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md). |
 | ![Item 10.](media/common/icon-10-red-30x30.png) | Server administrators manage the Windows server infrastructure. |
 | ![Item 11.](media/common/icon-11-red-30x30.png) | Database administrators manage Power BI Report Server, including the Report Server databases, and SQL Server Agent. |
-| ![Item 12.](media/common/icon-12-red-30x30.png) | SQL Server Agent jobs periodically [refresh import datasets](../report-server/configure-scheduled-refresh.md). |
+| ![Item 12.](media/common/icon-12-red-30x30.png) | SQL Server Agent jobs periodically [refresh import semantic models](../report-server/configure-scheduled-refresh.md)—[previously known as datasets](../connect-data/service-datasets-rename.md). |
 | ![Item 13.](media/common/icon-13-red-30x30.png) | Administrators oversee and monitor activity in Power BI Report Server. |
 
 ## Key points
@@ -76,7 +76,7 @@ Additional configurations must be done to enable remote mobile access to Power B
 
 There are two ways to [license Power BI Report Server](../report-server/get-started.md#licensing-power-bi-report-server): Power BI Premium and SQL Server Enterprise Edition with Software Assurance.
 
-With the purchase of Power BI Premium capacity, Power BI Report Server may be installed on an on-premises server, provided it has the same number of cores as the capacity node's v-cores. This way, it's possible to adopt a hybrid approach supporting publication of content to the Power BI service (cloud) and to Power BI Report Server (on-premises or hosted cloud in Azure).
+With the purchase of Power BI Premium capacity, Power BI Report Server can be installed on an on-premises server, provided it has the same number of cores as the capacity node's v-cores. This way, it's possible to adopt a hybrid approach supporting publication of content to the Power BI service (cloud) and to Power BI Report Server (on-premises or hosted cloud in Azure).
 
 > [!NOTE]
 > When licensing Power BI Report Server as part of the Premium capacity feature set, it's only available with the P SKUs. The other capacity-based SKUs (EM and A SKUs) do not offer this benefit, nor does Power BI Premium Per User (PPU).

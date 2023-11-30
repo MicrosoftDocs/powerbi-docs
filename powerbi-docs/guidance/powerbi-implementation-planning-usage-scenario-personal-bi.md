@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Personal BI"
 description: "Learn how Power BI personal BI is about private analytics for an individual."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -14,7 +14,7 @@ ms.date: 02/19/2023
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-As described in the [Power BI adoption roadmap](powerbi-adoption-roadmap-content-delivery-scope.md#personal-bi), *personal BI* is about enabling an individual to gain analytical value. It's also about allowing them to perform business tasks more efficiently with the use of data, information, and analytics. Personal BI is sometimes thought of as the entry point for *self-service BI*.
+As described in the [Fabric adoption roadmap](fabric-adoption-roadmap-content-delivery-scope.md#personal), *personal BI* is about enabling an individual to gain analytical value. It's also about allowing them to perform business tasks more efficiently with the use of data, information, and analytics. Personal BI is sometimes thought of as the entry point for *self-service BI*.
 
 In personal BI scenarios, the content creator has a lot of freedom and flexibility to create content for individual usage. Simplicity and speed are usually high priorities. There's no sharing or collaboration in this usage scenario—those topics are covered in the [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md), [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md), and [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenario articles.
 
@@ -52,32 +52,32 @@ The following are some key points to emphasize about the personal BI scenario.
 
 ### Reliance on personal workspace
 
-Use of the [personal workspace](../fundamentals/service-basic-concepts.md#workspaces) can be thought of like an *analytical sandbox*. For many organizations, personal content is subject to little governance or formal oversight. However, it's still wise to educate content creators on [guidelines to be successful with personal BI](powerbi-adoption-roadmap-content-delivery-scope.md#personal-bi). Use of the sharing feature available within a personal workspace isn't depicted in this usage scenario since the focus is individual analytics.
+Use of the [personal workspace](../fundamentals/service-basic-concepts.md#workspaces) can be thought of like an *analytical sandbox*. For many organizations, personal content is subject to little governance or formal oversight. However, it's still wise to educate content creators on [guidelines to be successful with personal BI](fabric-adoption-roadmap-content-delivery-scope.md#personal). Use of the sharing feature available within a personal workspace isn't depicted in this usage scenario since the focus is individual analytics.
 
 > [!IMPORTANT]
 > Limit the use of personal workspaces and ensure no mission-critical content is stored in them. Although a Power BI administrator can access and govern a user's [personal workspace](/power-bi/admin/service-admin-portal-workspaces#govern-my-workspaces), storing critical content in personal workspaces does represent risk to the organization.
 
-### Use of Power BI free license
+### Use of Fabric free license
 
-For personal use, which by definition means there's no sharing or collaboration with others, [only certain capabilities of the Power BI service](../consumer/end-user-features.md#feature-list) are available to a user with a Power BI free license. When using a free license, most activities to create and publish content to the Power BI service are limited to their personal workspace.
+For personal use, which by definition means there's no sharing or collaboration with others, [only certain capabilities of the Power BI service](../consumer/end-user-features.md#feature-list) are available to a user with a Fabric free license. When using a free license, most activities to create and publish content to the Power BI service are limited to their personal workspace.
 
 > [!TIP]
-> The [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenario describes how users with a Power BI free license can view content when it's hosted in a Premium capacity.
+> The [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenario describes how users with a Fabric free license can view content when it's hosted in a Premium capacity.
 
 ### Gateway setup
 
-Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a [live connection](../connect-data/desktop-directquery-about.md#live-connections) or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the scenario diagram).
+Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a [live connection](../connect-data/desktop-directquery-about.md#live-connections) or [DirectQuery](../connect-data/desktop-directquery-about.md) semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md) (not depicted in the scenario diagram).
 
 > [!NOTE]
-> A data gateway in *personal mode* is most frequently installed on the machine of an individual user. Therefore, a data gateway in personal mode is best-suited to personal BI usage scenarios. Your organization may restrict individuals from installing data gateways, in which case the content creator can use a data gateway in standard mode (typically set up and managed by IT).
+> A data gateway in *personal mode* is most frequently installed on the machine of an individual user. Therefore, a data gateway in personal mode is best-suited to personal BI usage scenarios. Your organization can restrict individuals from installing data gateways, in which case the content creator can use a data gateway in standard mode (typically set up and managed by IT).
 
 ### Information protection
 
-[Information protection](powerbi-adoption-roadmap-system-oversight.md#information-protection-and-data-loss-prevention) policies can be applied to content in the Power BI service. Some organizations have a [mandatory label policy](../enterprise/service-security-sensitivity-label-mandatory-label-policy.md) that requires a sensitivity label be assigned, even within a personal workspace.
+[Information protection](fabric-adoption-roadmap-system-oversight.md#information-protection-and-data-loss-prevention) policies can be applied to content in the Power BI service. Some organizations have a [mandatory label policy](../enterprise/service-security-sensitivity-label-mandatory-label-policy.md) that requires a sensitivity label be assigned, even within a personal workspace.
 
 ### System oversight
 
-The [activity log](../admin/service-admin-auditing.md) records user activities that occur in the Power BI service, and it extends to personal workspaces. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and detect risky activities. Auditing and governance requirements are typically less stringent for personal BI scenarios.
+The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service, and it extends to personal workspaces. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and detect risky activities. Auditing and governance requirements are typically less stringent for personal BI scenarios.
 
 ## Next steps
 

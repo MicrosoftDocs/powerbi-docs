@@ -1,13 +1,13 @@
 ---
 title: Power BI for US government customers - Overview
 description: US government customers can add a Power BI subscription to their Microsoft 365 government plan. Learn how to sign up, connect, and review feature availability in this service description. 
-author: kfollis
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/22/2023
+ms.date: 11/20/2023
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -144,6 +144,7 @@ If a release is planned for an environment, we include the quarter of estimated 
 |[Data Protection (MIP labels)](./service-security-sensitivity-label-overview.md)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|
 |[Dataflows - Direct Query](../transform-model/dataflows/dataflows-configure-consume.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|Not planned |
 |[Dataflows - SQL Compute engine optimization](../transform-model/dataflows/dataflows-premium-features.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|Not planned |
+| Datamarts  |Not planned |Not planned |Not planned |
 |[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|
 |[Large models](service-premium-large-models.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)| Not planned |
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)| ![Image of "Available" button.](../media/yes.png)<sup>3</sup> | ![Image of "Available" button.](../media/yes.png)<sup>3</sup> | ![Image of "Available" button.](../media/yes.png)<sup>3</sup> |

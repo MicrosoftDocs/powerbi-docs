@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 11/21/2022
+ms.date: 11/16/2023
 LocalizationGroup: Data from files
 ---
 # Mandatory label policy for Power BI
@@ -24,9 +24,9 @@ To help ensure comprehensive protection and governance of sensitive data, you ca
 
 **In the Power BI service**:
 
-* Users must apply a sensitivity label before they can save new reports, dashboards, or datasets.
+* Users must apply a sensitivity label before they can save new reports, dashboards, or semantic models.
 * Users must apply a sensitivity label before they can save changes to the settings or content of existing, unlabeled reports and dashboards.
-* If users try to import data from an unlabeled *.pbix* file, a prompt requires them to select a label before the import can continue. The label they select is applied to the resulting dataset and report in the service. **It is not applied to the *.pbix* file itself**.
+* If users try to import data from an unlabeled *.pbix* file, a prompt requires them to select a label before the import can continue. The label they select is applied to the resulting semantic model and report in the service. **It is not applied to the *.pbix* file itself**.
 
 **In Power BI Desktop**:
 
@@ -60,6 +60,7 @@ Where:
 
 ## Considerations and limitations
 * Mandatory labeling in Power BI covers most common scenarios, but there may be some less common flows that still allow a user to create or edit unlabeled content.
+* Mandatory labeling in Power BI doesn't apply when a semantic model is created by uploading an Excel or .csv file. When a user creates a semantic model by uploading an Excel file or a .csv file, they aren't required to apply a sensitivity label, and the semantic model can be created unlabeled. However, the next time it's modified and saved, the user will be required to supply a label.
 * The mandatory label policy setting for Power BI is independent of the mandatory label policy setting for files and email.
 * Mandatory labeling in Power BI isn't supported for service principals and APIs. Service principals and APIs aren't subject to mandatory label policies.
 * Mandatory labeling in Power BI isn't supported for [external guest users (B2B users)](service-admin-azure-ad-b2b.md). B2B users aren't subject to mandatory label policies.

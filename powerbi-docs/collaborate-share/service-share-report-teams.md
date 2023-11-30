@@ -1,8 +1,8 @@
 ---
 title: Chat in Microsoft Teams directly from the Power BI service
-description: Learn how to share Power BI dashboards, reports, and datasets directly to Microsoft Teams from the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+description: Learn how to share Power BI dashboards, reports, and semantic models directly to Microsoft Teams from the Power BI service.
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -14,7 +14,7 @@ ms.date: 01/10/2023
 
 # Chat in Microsoft Teams directly from the Power BI service
 
-You can open a Teams chat about Power BI dashboards, reports, visuals, and datasets directly from the Power BI service. Use the **Chat in Teams** feature to quickly start conversations when you view reports, dashboards, and [datasets](../connect-data/service-dataset-details-page.md#supported-actions) in the Power BI service.
+You can open a Teams chat about Power BI dashboards, reports, visuals, and semantic models directly from the Power BI service. Use the **Chat in Teams** feature to quickly start conversations when you view reports, dashboards, and [semantic models](../connect-data/service-dataset-details-page.md#supported-actions) in the Power BI service.
 
 ## Requirements
 
@@ -24,11 +24,11 @@ See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft
 
 ## Chat about Power BI content in Microsoft Teams
 
-Follow these steps to share links to reports, dashboards, visuals, and datasets in the Power BI service, and in Microsoft Teams channels and chats.
+Follow these steps to share links to reports, dashboards, visuals, and semantic models in the Power BI service, and in Microsoft Teams channels and chats.
 
 1. In either the Power BI service or in Microsoft Teams, select one of these options:
 
-   * **Chat in Teams** in the action bar of a dashboard, report, or dataset:
+   * **Chat in Teams** in the action bar of a dashboard, report, or semantic model:
 
        :::image type="content" source="media/service-share-report-teams/service-teams-share-to-teams-action-bar-button.png" alt-text="Screenshot that shows the Chat in Teams button in the action bar.":::
     

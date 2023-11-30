@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/23/2023
+ms.date: 11/10/2023
 ms.custom: video-l2wy4XgQIu0
 LocalizationGroup: Data from files
 ---
@@ -31,7 +31,7 @@ Power BI supports importing or connecting to workbooks created in Excel 2007 and
 >
 > After October 31, 2023:
 > - You can download existing local workbooks from your Power BI workspace.
-> - You can publish your Excel data model as a Power BI dataset and schedule refresh.
+> - You can publish your Excel data model as a Power BI semantic model and schedule refresh.
 > - You can import Excel workbooks from OneDrive and SharePoint Document libraries to view them in Power BI.
 >
 > If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](#migrating-your-excel-workbooks).  
@@ -68,7 +68,7 @@ Assign data specific data types in Excel to improve your Power BI experience. Po
 
 ## Import or upload Excel data
 
-There are two ways to explore Excel data in Power BI: upload and import. When you upload your workbook, it appears in Power BI just like it would in Excel Online. But you also have some great features to help you pin elements from your worksheets to your dashboards. When you import your data, Power BI imports any supported data in tables and any data model into a new Power BI dataset.
+There are two ways to explore Excel data in Power BI: upload and import. When you upload your workbook, it appears in Power BI just like it would in Excel Online. But you also have some great features to help you pin elements from your worksheets to your dashboards. When you import your data, Power BI imports any supported data in tables and any data model into a new Power BI semantic model.
 
 <a name="one-excel-workbook--two-ways-to-use-it"></a>
 
@@ -106,7 +106,7 @@ You can't use **Upload** to get files from personal OneDrive accounts, but you c
 
 ### Import Excel data into Power BI
 
-To import Excel data into Power BI, in **My workspace**, select **New** > **Dataset** > **Excel**, and then find the file.
+To import Excel data into Power BI, in **My workspace**, select **New** > **Semantic model** > **Excel**, and then find the file.
 
 The **My files** list allows you to add files from your documents folder and other personal sources.
 
@@ -114,11 +114,11 @@ You can use the **Quick access** list on the left side of the window to add file
 
 Select **Browse this device** to add files from the device you're currently using.
 
-When you import Excel data, Power BI imports any supported data in tables and any data model into a new Power BI dataset.
+When you import Excel data, Power BI imports any supported data in tables and any data model into a new Power BI semantic model.
 
 You should import your data if you used **Get & Transform Data** or **Power Pivot** to load data into a data model. 
 
-If you upload from OneDrive for Business, when you save changes, Power BI synchronizes them with the dataset in Power BI, usually within about an hour. You can also select **Publish** to export your changes immediately. Any visualizations in reports and dashboards also update, based on the following refresh triggers:
+If you upload from OneDrive for Business, when you save changes, Power BI synchronizes them with the semantic model in Power BI, usually within about an hour. You can also select **Publish** to export your changes immediately. Any visualizations in reports and dashboards also update, based on the following refresh triggers:
 
 |Report tiles  |Dashboard tiles  |
 |---------|---------|
@@ -142,15 +142,15 @@ Watch this video to learn more about how to make sure your Excel workbooks are r
 
 Where you save your workbook file makes a difference.
 
-- **Local**. If you save your workbook file to a drive on your computer or another location in your organization, you can load your file into Power BI. Your file actually remains on the source drive. When you import the file, Power BI creates a new dataset and loads data and any data model from the workbook into the dataset.
+- **Local**. If you save your workbook file to a drive on your computer or another location in your organization, you can load your file into Power BI. Your file actually remains on the source drive. When you import the file, Power BI creates a new semantic model and loads data and any data model from the workbook into the semantic model.
 
   Local Excel workbooks open in Excel Online within Power BI. Unlike Excel workbooks stored on OneDrive or SharePoint team sites, you can't edit local Excel files within Power BI.
 
-  Excel also has a **Publish** command on the **File** menu. Using this **Publish** command is effectively the same as using **Upload** > **Browse** from Power BI. If you regularly make changes to the workbook, it's often easier to update your dataset in Power BI.
+  Excel also has a **Publish** command on the **File** menu. Using this **Publish** command is effectively the same as using **Upload** > **Browse** from Power BI. If you regularly make changes to the workbook, it's often easier to update your semantic model in Power BI.
 
-- **OneDrive for Business**. Signing in to OneDrive for Business with the same account as Power BI is the most effective way to keep your work in Excel in sync with your Power BI dataset, reports, and dashboards. Both Power BI and OneDrive are in the cloud, and Power BI connects to your workbook file on OneDrive about once an hour. If Power BI finds any changes, it automatically updates your Power BI dataset, reports, and dashboards.
+- **OneDrive for Business**. Signing in to OneDrive for Business with the same account as Power BI is the most effective way to keep your work in Excel in sync with your Power BI semantic model, reports, and dashboards. Both Power BI and OneDrive are in the cloud, and Power BI connects to your workbook file on OneDrive about once an hour. If Power BI finds any changes, it automatically updates your Power BI semantic model, reports, and dashboards.
 
-  As when you have a file saved to a local drive, you can use **Publish** in Excel to update your Power BI dataset and reports immediately. Otherwise, Power BI automatically synchronizes, usually within an hour.
+  As when you have a file saved to a local drive, you can use **Publish** in Excel to update your Power BI semantic model and reports immediately. Otherwise, Power BI automatically synchronizes, usually within an hour.
 
 - **SharePoint team site**. Saving your Power BI Desktop files to a SharePoint team site is almost the same as saving them to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
@@ -169,9 +169,9 @@ For local Excel workbooks uploaded to a Power BI workspace, use the **Download E
 
 ![Screenshot that shows the download Excel file option for local workbooks.](media/service-excel-workbook-files/download-local-workbook.png)  
 
-To refresh data in Excel data models, you'll need to publish the data model as a Power BI dataset. We recommend using the Power BI Desktop to import the model because it upgrades your data model to the latest version. This gives you the best future experience. Use the **Import** from **Power Query, Power Pivot, Power View** option on Power BI Desktop's **File** menu. 
+To refresh data in Excel data models, you'll need to publish the data model as a Power BI semantic model. We recommend using the Power BI Desktop to import the model because it upgrades your data model to the latest version. This gives you the best future experience. Use the **Import** from **Power Query, Power Pivot, Power View** option on Power BI Desktop's **File** menu. 
 
-To build new workbooks connected to a semantic data model in your Excel workbook, you should first publish the data model as a Power BI dataset. Then in Excel use the **From Power BI (Microsoft)** option to connect your workbook to the dataset. This option is available in the **Data ribbon**, under **Get Data** in the **From Power Platform** menu.
+To build new workbooks connected to a semantic data model in your Excel workbook, you should first publish the data model as a Power BI semantic model. Then in Excel use the **From Power BI (Microsoft)** option to connect your workbook to the semantic model. This option is available in the **Data ribbon**, under **Get Data** in the **From Power Platform** menu.
 
 For cases where you include a workbook in a Power BI organizational app, remember to republish the app with the new items.
 
@@ -225,8 +225,8 @@ To use PowerShell, first install the required **MicrosoftPowerBIMgmt** module. S
 
 ## Next steps
 
-- **Explore your data**. After you upload data and reports from your file into Power BI, you can select the new dataset to explore the data. When you select the workbook, it opens in Power BI the same as if it were in Excel Online.
+- **Explore your data**. After you upload data and reports from your file into Power BI, you can select the new semantic model to explore the data. When you select the workbook, it opens in Power BI the same as if it were in Excel Online.
 
-- **Schedule refresh**. If your Excel workbook connects to external data sources, or if you imported from a local drive, you can set up scheduled refresh to make sure your dataset or report is always up-to-date. In most cases, setting up scheduled refresh is easy to do. For more information, see [Data refresh in Power BI](refresh-data.md).
+- **Schedule refresh**. If your Excel workbook connects to external data sources, or if you imported from a local drive, you can set up scheduled refresh to make sure your semantic model or report is always up-to-date. In most cases, setting up scheduled refresh is easy to do. For more information, see [Data refresh in Power BI](refresh-data.md).
 
 - [**Publish to Power BI from Microsoft Excel**](service-publish-from-excel.md).

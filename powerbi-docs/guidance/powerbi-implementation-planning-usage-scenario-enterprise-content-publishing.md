@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Enterprise content publishing"
 description: "An explanation of how content creators and technical owners use Azure DevOps to manage and publish Power BI content"
-author: data-goblin
-ms.author: v-kurtbuhler
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -17,7 +17,7 @@ ms.date: 04/20/2023
 When content creators collaborate to deliver analytical solutions that are important to the organization, they must ensure timely and reliable delivery of content to consumers. Technical teams address this challenge by using a process called _[DevOps](/devops/what-is-devops)_. DevOps allows teams to automate and scale processes by adopting practices that improve and accelerate delivery.
 
 > [!NOTE]
-> Data teams that address the same challenges may also practice _DataOps_. DataOps builds upon DevOps principles, but DataOps includes additional practices specific to data management, such as data quality assurance and governance. We refer to DevOps in this article, but be aware that the underlying principles can also apply to DataOps.
+> Data teams that address the same challenges might also practice _DataOps_. DataOps builds upon DevOps principles, but DataOps includes additional practices specific to data management, such as data quality assurance and governance. We refer to DevOps in this article, but be aware that the underlying principles can also apply to DataOps.
 
 Content creators and consumers benefit from several advantages when adopting DevOps practices to publish Power BI content. The following points are a high-level overview of how this process works.
 
@@ -58,13 +58,13 @@ The scenario diagram depicts the following user actions, processes, and features
 | ![Item 8.](media/common/icon-08-red-30x30.png) | A release pipeline publishes content to the development workspace. This is the first release pipeline that initially imports content to the Power BI service. Other release pipelines later promote content through development, test, and production workspaces. |
 | ![Item 9.](media/common/icon-09-red-30x30.png) | A release manager controls deployment to test and production workspaces by using an Azure Pipelines release approval. In enterprise content publishing, a release manager typically plans and coordinates the content release to test and production environments. They coordinate and communicate with content creators, stakeholders, and users. |
 | ![Item 10.](media/common/icon-10-red-30x30.png) | Release pipelines promote content by using Power BI deployment pipelines with the Power BI REST APIs. The test release pipeline promotes content from the development workspace to the test workspace. The production release pipeline promotes content from test workspace to the production workspace. |
-| ![Item 11.](media/common/icon-11-red-30x30.png) | After deployment, release pipelines perform post-deployment activities. Activities can include setting dataset credentials or updating the Power BI app for test and production workspaces. |
+| ![Item 11.](media/common/icon-11-red-30x30.png) | After deployment, release pipelines perform post-deployment activities. Activities can include setting semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) credentials or updating the Power BI app for test and production workspaces. |
 | ![Item 12.](media/common/icon-12-red-30x30.png) | Azure Pipelines publishes content to a development workspace. Separate workspaces are set up for test and production environments. Power BI deployment pipelines deploy content from development to test workspaces, and from test to production workspaces once approved. |
 | ![Item 13.](media/common/icon-13-red-30x30.png) | Reviewers within the test workspace perform user acceptance testing (UAT). |
 | ![Item 14.](media/common/icon-14-red-30x30.png) | Workspaces are set to **Premium per user**, **Premium per capacity**, or **Embedded** [license mode](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings), to allow using Power BI deployment pipelines and the XMLA read/write endpoint. |
 | ![Item 15.](media/common/icon-15-red-30x30.png) | Content viewers access the content by using the production workspace or a Power BI app. |
 | ![Item 16.](media/common/icon-16-red-30x30.png) | To connect to data sources that reside within a private organizational network, an on-premises data gateway is required. You can set up Azure Pipelines to perform gateway configuration activities by using the Power BI REST APIs (not shown in this scenario diagram). |
-| ![Item 17.](media/common/icon-17-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. Content that's deemed critical enough to have separate development, test, and production workspaces may be subject to stricter governance requirements than less critical content. |
+| ![Item 17.](media/common/icon-17-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. Content that's deemed critical enough to have separate development, test, and production workspaces could be subject to stricter governance requirements than less critical content. |
 | ![Item 18.](media/common/icon-18-red-30x30.png) | DevOps administrators oversee and monitor repository and pipeline activity in Azure DevOps. |
 
 > [!TIP]
@@ -80,7 +80,7 @@ Tracking changes during the content lifecycle is important to ensure stable and 
 
 Content creators typically develop data models in Tabular Editor to support better version control. Unlike a data model that you develop in Power BI Desktop, a data model developed in [Tabular Editor](https://www.tabulareditor.com/) is saved in human-readable metadata format. This format enables data model object-level version control. You should use object-level version control when collaborating with multiple people on the same data model. For more information, see the [advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md#tabular-editor) usage scenario. It isn't possible to see changes that you made in a Power BI Desktop file (.pbix), such as the report definition or data model. For example, you can't track changes to a report page, such as the visuals used, their positions, and their field mappings or formatting.
 
-Content creators store data model metadata files and .pbix files in a central remote repository, like Azure Repos. These files are curated by a _[technical owner](powerbi-adoption-roadmap-content-ownership-and-management.md#ownership-and-stewardship)_. While a content creator develops a solution, a technical owner is responsible for managing the solution and reviewing the changes, and merging them into a single solution. Azure Repos provides sophisticated options for tracking and managing changes. This approach differs from the approach described in the [self-service content publishing](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md) usage scenario, where the creator uses OneDrive storage with version tracking. Maintaining a well-curated, documented repository is essential because it's the foundation of all content and collaboration.
+Content creators store data model metadata files and .pbix files in a central remote repository, like Azure Repos. These files are curated by a _[technical owner](fabric-adoption-roadmap-content-ownership-and-management.md#ownership-and-stewardship)_. While a content creator develops a solution, a technical owner is responsible for managing the solution and reviewing the changes, and merging them into a single solution. Azure Repos provides sophisticated options for tracking and managing changes. This approach differs from the approach described in the [self-service content publishing](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md) usage scenario, where the creator uses OneDrive storage with version tracking. Maintaining a well-curated, documented repository is essential because it's the foundation of all content and collaboration.
 
 Here are some key considerations to help you set up a remote repository for version control.
 
@@ -94,7 +94,7 @@ Here are some key considerations to help you set up a remote repository for vers
 
 ### Collaboration with Azure DevOps
 
-As a solution increases in scope and complexity, it may become necessary for multiple content creators and owners to work in collaboration. Content creators and owners communicate and collaborate in a central, organized hub by using Azure DevOps.
+As a solution increases in scope and complexity, it might become necessary for multiple content creators and owners to work in collaboration. Content creators and owners communicate and collaborate in a central, organized hub by using Azure DevOps.
 
 To collaborate and communicate in Azure DevOps, you use supporting services.
 
@@ -117,7 +117,7 @@ The diagram depicts the following user actions, processes, and features.
 | ![Item 2.](media/common/icon-02-red-30x30.png) | The content creator commits their changes to a local repository during development. |
 | ![Item 3.](media/common/icon-03-red-30x30.png) | The content creator links their changes to work items that are managed in Azure Boards. Works items describe specific developments, improvements, or bug fixes scoped to their branch. |
 | ![Item 4.](media/common/icon-04-red-30x30.png) | The content creator regularly commits their changes. When ready, the content creator publishes their branch to the remote repository. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | To test their changes, the content creator deploys their solution to a development workspace (not shown in this diagram). Once tested, the content creator opens a pull request to merge their changes into the _release_ branch. The release branch is the latest working version, and it may contain changes from other members of the development team. |
+| ![Item 5.](media/common/icon-05-red-30x30.png) | To test their changes, the content creator deploys their solution to a development workspace (not shown in this diagram). Once tested, the content creator opens a pull request to merge their changes into the _release_ branch. The release branch is the latest working version, and it can contain changes from other members of the development team. |
 | ![Item 6.](media/common/icon-06-red-30x30.png) | A technical owner is responsible for reviewing the pull request and merging changes. When they approve the pull request, they merge the feature branch into the release branch. |
 | ![Item 7.](media/common/icon-07-red-30x30.png) | A successful merge triggers deployment of the solution to a test workspace (not shown in this diagram). Users test the solution in user acceptance testing (UAT). If extra development is required, content creators can make other changes to the development branch, which must be merged to the test branch after the content owner reviews a new pull request. |
 | ![Item 8.](media/common/icon-08-red-30x30.png) | The technical owner opens a pull request to merge the release branch into the _production_ branch (sometimes known as the _main_ branch) once UAT is complete. The production branch contains the latest version of the solution that's deployed to the production workspace for content consumers. |
@@ -171,17 +171,17 @@ There are three types of Azure Pipelines that you can set up to test, manage, an
 - Release pipelines.
 
 > [!NOTE]
-> It's not necessary to have all three of these pipelines in your publishing solution. Depending on your workflow and needs, you may set up one or more of the variants of the pipelines described in this article to automate content publication. This ability to customize the pipelines is an advantage of Azure Pipelines over the built-in Power BI deployment pipelines. For example, you don't have to have a validation pipeline; you can use only use build and release pipelines.
+> It's not necessary to have all three of these pipelines in your publishing solution. Depending on your workflow and needs, you might set up one or more of the variants of the pipelines described in this article to automate content publication. This ability to customize the pipelines is an advantage of Azure Pipelines over the built-in Power BI deployment pipelines. For example, you don't have to have a validation pipeline; you can use only use build and release pipelines.
 
 #### Validation pipelines
 
 Validation pipelines perform basic quality checks of data models before they're published to a development workspace. Typically, changes in a branch of the remote repository trigger the pipeline to validate those changes with automated testing.
 
-Examples of automated testing include scanning the data model for best practice rule violations by using [Best Practice Analyzer](https://powerbi.microsoft.com/blog/best-practice-rules-to-improve-your-models-performance/) (BPA), or by running DAX queries against a published dataset. The results of these tests are then stored in the remote repository for documentation and auditing purposes. Data models that fail validation shouldn't be published. Instead, the pipeline should notify content creators of the issues.
+Examples of automated testing include scanning the data model for best practice rule violations by using [Best Practice Analyzer](https://powerbi.microsoft.com/blog/best-practice-rules-to-improve-your-models-performance/) (BPA), or by running DAX queries against a published semantic model. The results of these tests are then stored in the remote repository for documentation and auditing purposes. Data models that fail validation shouldn't be published. Instead, the pipeline should notify content creators of the issues.
 
 #### Build pipelines
 
-Build pipelines prepare data models for publication to the Power BI service. These pipelines combine serialized model metadata into a single file that's later published by a release pipeline (described in the release pipelines diagram). A build pipeline may also make other changes to the metadata, like modifying parameter values. The build pipelines produce deployment artifacts that consist of data model metadata (for data models) and Power BI Desktop files (.pbix) that are ready for publication to the Power BI service.
+Build pipelines prepare data models for publication to the Power BI service. These pipelines combine serialized model metadata into a single file that's later published by a release pipeline (described in the release pipelines diagram). A build pipeline can also make other changes to the metadata, like modifying parameter values. The build pipelines produce deployment artifacts that consist of data model metadata (for data models) and Power BI Desktop files (.pbix) that are ready for publication to the Power BI service.
 
 #### Release pipelines
 
@@ -210,7 +210,7 @@ The diagram depicts the following user actions, processes, and features of the f
 | ![Item 8.](media/common/icon-08-red-30x30.png) | The production release pipeline deploys content by using the Power BI REST API deploy operations, which run the Power BI deployment pipeline. |
 | ![Item 9.](media/common/icon-09-red-30x30.png) | The Power BI deployment pipeline promotes content from the test workspace to the production workspace. After deployment, the release pipeline performs post-deployment activities by using the Power BI REST APIs (not shown in the diagram). |
 
-The following diagram depicts the second approach. This approach doesn't use deployment pipelines. Instead, it uses release pipelines to publish content to test and production workspaces from Azure DevOps. Notably, this second approach doesn't require Premium licensing when you publish only Power BI Desktop files with the Power BI REST APIs. It does involve more setup effort and complexity, because you must manage deployment outside of Power BI. Development teams that already use DevOps for data solutions outside of Power BI may be more familiar with this approach. Development teams that use this approach can consolidate deployment of data solutions in Azure DevOps.
+The following diagram depicts the second approach. This approach doesn't use deployment pipelines. Instead, it uses release pipelines to publish content to test and production workspaces from Azure DevOps. Notably, this second approach doesn't require Premium licensing when you publish only Power BI Desktop files with the Power BI REST APIs. It does involve more setup effort and complexity, because you must manage deployment outside of Power BI. Development teams that already use DevOps for data solutions outside of Power BI might be more familiar with this approach. Development teams that use this approach can consolidate deployment of data solutions in Azure DevOps.
 
 :::image type="content" source="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/azure-pipelines-publish-content-approach-2-inline.png" alt-text="Image shows a diagram of the second approach as described in the previous paragraph. Items in the diagram are described in the table." lightbox="media/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing/azure-pipelines-publish-content-approach-2-expanded.png" border="false":::
 
@@ -226,7 +226,7 @@ The diagram depicts the following user actions, processes, and features in the s
 | ![Item 6.](media/common/icon-06-red-30x30.png) | A release approval or on-demand trigger activates the production release pipeline. |
 | ![Item 7.](media/common/icon-07-red-30x30.png) | The development release pipeline publishes content to the production workspace by using the XMLA endpoint (for data model metadata) or Power BI REST APIs (for Power BI Desktop files, which can contain data models and reports). The development pipeline uses the Tabular Editor command-line interface (CLI) to deploy data model metadata by using the XMLA endpoint. After deployment, the release pipeline performs post-deployment activities by using the Power BI REST APIs (not shown in the diagram). |
 
-Release pipelines should manage [post-deployment activities](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md#post-deployment-activities). These activities could include setting dataset credentials or updating the Power BI app for test and production workspaces. We recommend that you [set up notifications](/azure/devops/organizations/notifications/about-notifications?view=azure-devops&preserve-view=true) to inform relevant people about deployment activities.
+Release pipelines should manage [post-deployment activities](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md#post-deployment-activities). These activities could include setting semantic model credentials or updating the Power BI app for test and production workspaces. We recommend that you [set up notifications](/azure/devops/organizations/notifications/about-notifications?view=azure-devops&preserve-view=true) to inform relevant people about deployment activities.
 
 > [!TIP]
 > Using a repository for version control allows content creators to create a rollback process. The rollback process can reverse the last deployment by restoring the previous version. Consider creating a separate set of Azure Pipelines that you can trigger to roll back production changes. Think carefully about what processes and approvals are required to initiate a rollback. Ensure that these processes are documented.
@@ -238,7 +238,7 @@ A Power BI deployment pipeline consists of three stages: development, test, and 
 An Azure Pipelines release pipeline uses the Power BI REST APIs to [deploy content by using a Power BI deployment pipeline](/fabric/cicd/deployment-pipelines/pipeline-automation). [Access to both the workspace and the deployment pipeline](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#permissions) is required for the users conducting a deployment. We recommend that you [plan deployment pipeline access](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md#access-for-deployment-pipeline) so that pipeline users can view deployment history and compare content.
 
 > [!TIP]
-> When you [separate data workspaces from reporting workspaces](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-item-types), consider using Azure Pipelines to orchestrate content publishing with multiple Power BI deployment pipelines. Datasets are deployed first, and then they're refreshed. Lastly, reports are deployed. This approach helps you simplify deployment.
+> When you [separate data workspaces from reporting workspaces](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-item-types), consider using Azure Pipelines to orchestrate content publishing with multiple Power BI deployment pipelines. Semantic model are deployed first, and then they're refreshed. Lastly, reports are deployed. This approach helps you simplify deployment.
 
 ### Premium licensing
 
@@ -247,11 +247,11 @@ Power BI deployment pipelines and the XMLA read/write endpoint are [Premium feat
 PPU is a cost-effective way to manage enterprise content publishing for development and test workspaces, which typically have few users. This approach has the added advantage of isolating development and test workloads from production workloads.
 
 > [!NOTE]
-> You can still set up enterprise content publishing without a Premium license, as described by the second approach in the [release pipeline](#azure-pipelines) section. In the second approach, you use Azure Pipelines to manage deployment of Power BI Desktop files to development, test, and production workspaces. However, you can't deploy model metadata by using the XMLA endpoint because it's not possible to publish a metadata format dataset with the Power BI REST APIs. Also, it's not possible to promote content through environments with deployment pipelines without a Premium license.
+> You can still set up enterprise content publishing without a Premium license, as described by the second approach in the [release pipeline](#azure-pipelines) section. In the second approach, you use Azure Pipelines to manage deployment of Power BI Desktop files to development, test, and production workspaces. However, you can't deploy model metadata by using the XMLA endpoint because it's not possible to publish a metadata format semantic model with the Power BI REST APIs. Also, it's not possible to promote content through environments with deployment pipelines without a Premium license.
 
 ### Gateway setup
 
-Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The two purposes of a gateway are to [refresh imported data](/power-bi/connect-data/refresh-data), and view a report that queries a live connection or [DirectQuery](/power-bi/connect-data/desktop-directquery-about) dataset (not depicted in the scenario diagram).
+Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The two purposes of a gateway are to [refresh imported data](/power-bi/connect-data/refresh-data), and view a report that queries a live connection or [DirectQuery](/power-bi/connect-data/desktop-directquery-about) semantic model (not depicted in the scenario diagram).
 
 When working with multiple environments, it's common to set up development, test, and production connections to different source systems. In this case, use [data source rules and parameter rules](/fabric/cicd/deployment-pipelines/create-rules) to manage values that differ between environments. You can use Azure Pipelines to manage gateways by using the [gateway operations](/rest/api/power-bi/gateways) of the Power BI REST APIs.
 
@@ -260,7 +260,7 @@ When working with multiple environments, it's common to set up development, test
 
 ### System oversight
 
-The [activity log](/power-bi/admin/service-admin-auditing) records events that occur in the Power BI service. Power BI administrators can use the activity log to [audit](powerbi-implementation-planning-auditing-monitoring-overview.md) deployment activities.
+The [activity log](/power-bi/enterprise/service-admin-auditing) records events that occur in the Power BI service. Power BI administrators can use the activity log to [audit](powerbi-implementation-planning-auditing-monitoring-overview.md) deployment activities.
 
 You can use the Power BI [metadata scanning APIs](/power-bi/enterprise/service-admin-metadata-scanning) to create a tenant inventory. The API results are helpful to verify which items have been deployed to each workspace, to check lineage, and to validate security settings.
 

@@ -40,6 +40,11 @@ You can use the export feature in various ways. Here are a couple of examples:
 
 ## Using the API
 
+### License requirements
+
+* The report you're exporting must reside in a workspace backed by a Premium, Embedded, or Fabric capacity.
+* The `exportToFile` API, has [limited support](#concurrent-requests) in [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
+
 ### Rendering events
 
 To make sure the export doesn't begin before the visual finishes rendering, use the ["Rendering" events API](../visuals/event-service.md) and only begin the export when rendering is finished.
@@ -49,9 +54,6 @@ To make sure the export doesn't begin before the visual finishes rendering, use 
 The API is asynchronous. When the [exportToFile](/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
 When the export is complete, the polling API call returns a [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL is available for 24 hours.
-
->[!Note]
->Exporting a Power BI report to file using the exportToFile API, isn't supported for Power BI Pro licenses.
 
 ## Supported features
 
@@ -117,9 +119,9 @@ You can authenticate using a user (or master user) or a [service principal](embe
 
 ### Row Level Security (RLS)
 
-When using a Power BI dataset that has Row Level Security (RLS) defined as a data source, you can export a report showing data that's only visible to certain users. For example, if you're exporting a sales report that's defined with regional roles, you can programmatically filter the report so that only a certain region is displayed.
+When using a Power BI semantic model that has Row Level Security (RLS) defined as a data source, you can export a report showing data that's only visible to certain users. For example, if you're exporting a sales report that's defined with regional roles, you can programmatically filter the report so that only a certain region is displayed.
 
-To export using RLS, you must have read permission for the Power BI dataset the report is using as a data source.
+To export using RLS, you must have read permission for the Power BI semantic model the report is using as a data source.
 
 Here's an example of supplying an effective user name for RLS.
 
@@ -171,7 +173,7 @@ Here's an example for supplying an effective identity (user name) with an access
 
 ## Concurrent requests
 
-The `exportToFile` API supports concurrent export job requests. The maximum number of concurrent report pages depends on the type and number of SKUs you have. The maximum number of [concurrent paginated report render requests](../../paginated-reports/paginated-capacity-planning.md#concurrent-requests), is 500. To avoid exceeding the limit and getting a *Too Many Requests (429)* error, either distribute the load over time or across capacities.
+The `exportToFile` supports a limited number of concurrent requests. The maximum number of [concurrent paginated report render requests](../../paginated-reports/paginated-capacity-planning.md#concurrent-requests) is 500. To avoid exceeding the limit and getting a Too Many Requests (429) error, either distribute the load over time or across capacities.
 
 With [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml), the `exportToFile` API allows just *one* request in a five-minute window. Multiple requests within the five-minute window result in a *Too Many Requests* (429) error.
 
@@ -343,11 +345,11 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 ## Considerations and limitations
 
-* Exporting a paginated report that has a Power BI dataset as its data source, isn't supported in the following cases:
+* Exporting a paginated report that has a Power BI semantic model as its data source, isn't supported in the following cases:
 
   * The caller is a [service principal profile](./embed-multi-tenancy.md).
-  * One of the dataset's data sources is configured with single sign-on (SSO) enabled and an effective identity was provided.
-  * The Power BI dataset has DirectQuery to Azure Analysis Services or to another Power BI dataset, and an effective identity was provided.
+  * One of the semantic model's data sources is configured with single sign-on (SSO) enabled and an effective identity was provided.
+  * The Power BI semantic model has DirectQuery to Azure Analysis Services or to another Power BI semantic model, and an effective identity was provided.
 
 * Exporting a paginated report that has Azure Analysis Services data source configured with single sign-on (SSO) enabled, isn't supported in the following cases:
 

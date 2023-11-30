@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.search.form: Visualization types in Power BI
 ms.topic: conceptual
-ms.date: 09/01/2022
+ms.date: 10/27/2023
 ms.custom: retail-analysis-sample-PBIX
 LocalizationGroup: Visualizations
 ---
@@ -104,7 +104,7 @@ For more information, see [Funnel Charts in Power BI](power-bi-visualization-fun
 
 A radial gauge chart has a circular arc and displays a single value that measures progress toward a goal. The goal, or target value, is represented by the line (needle). Progress toward that goal is represented by the shading. And the value that represents that progress is shown in bold inside the arc. All possible values are spread evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
 
-In the example above, we are a car retailer, tracking our Sales team's average sales per month. Our goal is $200,000 and represented by the location of the needle. The minimum possible average sales is $100,000 and we've set the maximum as $250,000. The blue shading shows that we're currently averaging approximately $180,000 this month. Luckily, we still have another week to reach our goal.
+In the example above, we are a car retailer, tracking our Sales team's average sales per month. Our goal is 200,000 and represented by the location of the needle. The minimum possible average sales is 100,000 and we've set the maximum as 250,000. The blue shading shows that we're currently averaging approximately $180,000 this month. Luckily, we still have another week to reach our goal.
 
 Radial gauges are a great choice to:
 
@@ -245,7 +245,7 @@ For more information, see [Ribbon charts in Power BI](desktop-ribbon-charts.md).
 
 ### Scatter, bubble, and dot plot chart
 
-A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points may be distributed evenly or unevenly across the horizontal axis, depending on the data.
+A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points might be distributed evenly or unevenly across the horizontal axis, depending on the data.
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-scatter-chart.png" alt-text="Screenshot of a scatter chart, with points at the intersection of the x and y axis.":::
 
@@ -306,7 +306,7 @@ For more information, see [Add an image widget to a dashboard](../create-reports
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/table-type.png" alt-text="Screenshot of a Table visual.":::
 
-A table is a grid that contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons where you are looking at many values for a single category. For example, this table displays five different measures for Category.
+A table is a grid that contains related data in a logical series of rows and columns. It might also contain headers and a row for totals. Tables work well with quantitative comparisons where you are looking at many values for a single category. For example, this table displays five different measures for Category.
 
 Tables are a great choice:
 

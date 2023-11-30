@@ -8,14 +8,15 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 08/22/2023
+ms.date: 11/15/2023
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## August 2023 Update (2.120.731.0)
 
-August is full of sunshine, dry grass, bored summer students and a fine collection of updates for Power BI Desktop and the Power BI service. 
+## November 2023 Update (2.123.326.0)
+
+We're all thankful for the platefuls of updates to Power BI this November, with all sorts of update helpings for BI Desktop and the Power BI service. 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -30,7 +31,7 @@ You can also watch the entire [Power BI monthly update video](#power-bi-monthly-
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
+Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering might differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
 > [!IMPORTANT]
 > Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the most recent version of Power BI Desktop is supported; customers who contact support for Power BI Desktop will be asked to upgrade to the most recent version. 
@@ -43,47 +44,67 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Reporting
-* New switcher layout   [[video]](https://youtu.be/oVT0JrOLwS8?t=65)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989123) 
-* New bubble range scaling setting  [[video]](https://youtu.be/oVT0JrOLwS8?t=78)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989124) 
-* On-object interactions (updates) (Preview) [[video]](https://youtu.be/oVT0JrOLwS8?t=154)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989125) 
+* Button slicer (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157940) 
+* Reference labels (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157941) 
+* Enhance your Q&A visual with suggested synonyms from Copilot  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157942)  [[article]](https://aka.ms/Copilot-PBI-Docs)
+* On-object interaction updates  [[video]](https://youtu.be/HiWiXyZHRsE?t=74)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157943)  
+* Azure Maps visual now aggregates multiple data points at the same location  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157944)
+* Narrative visual with Copilot  [[video]](https://youtu.be/HiWiXyZHRsE?t=168)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25229-_Toc149834303)  
+
+
 
 ### Modeling
-* Updates to ORDERBY function  [[video]](https://youtu.be/oVT0JrOLwS8?t=237)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989129) 
+* Datasets renamed to semantic models  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157947) 
+* Power BI semantic models support for Direct Lake on Synapse Data Warehouse  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157948) [[article]](../enterprise/directlake-overview.md)
+* DAX query view to write and run DAX queries on your model  [[video]](https://youtu.be/HiWiXyZHRsE?t=469)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157949)  [[article]](https://aka.ms/dax-queries)
+* Edit your data model in the Power BI service (updates)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157950) 
 
 
 ### Data connectivity
-* New modern data connectivity and discovery experience in dataflows  [[video]](https://youtu.be/oVT0JrOLwS8?t=295)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989132) 
-* Lakehouses (connector update)  [[video]](https://youtu.be/oVT0JrOLwS8?t=337)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989133) 
+* Azure Resource Graph (new connector)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-5179-_Toc150331934) 
+* Many connector updates  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-5179-_Toc150331935) 
+
 
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
 
 ### Visuals
-* Many new and updated visuals  [[video]](https://youtu.be/oVT0JrOLwS8?t=630) [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989141)
+* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157965)
 
 
 # [Power BI service](#tab/powerbi-service)
 
 The following updates are new to the Power BI service this month:
 
-* XMLA write support for Direct Lake datasets  [[video]](https://youtu.be/oVT0JrOLwS8?t=361)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989135) 
-* Automatic replica synchronization for dataset scale-out  [[video]](https://youtu.be/oVT0JrOLwS8?t=443)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/#post-24381-_Toc142989136) 
-
+* Explore (preview) [[video]](https://youtu.be/HiWiXyZHRsE?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157954) 
+* Copilot for Power BI in Microsoft Fabric (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25278-_Toc150852524)  [[article]](https://aka.ms/Copilot-PBI-Docs)
+* OneLake integration for Import-mode semantic models (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157955) 
+* RLS/OLS security and stored credentials for Direct Lake semantic models (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157956)  [[article]](../enterprise/directlake-overview.md)
+* Stored credentials for Direct Lake semantic model  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157956) 
+* Sharable cloud connections for semantic models (generally available)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157957) 
+* Semantic model scale-out (generally available)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157958)  [[article]](../enterprise/service-premium-scale-out-configure.md)
+* Show visuals as tables (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157959)  [[article]](../create-reports/desktop-accessibility-consuming-tools.md)
+* Advanced filtering for paginated reports  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157960)  [[article]](../paginated-reports/web-authoring/filters-paginated-service.md)
 
 ---
 
+### Other
+* Enhanced accessibility in paginated reports authored in Report Builder  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2023-feature-summary/#post-24646-25278-_Toc150157976)  [[article]](../paginated-reports/report-builder/paginated-accessible-structure-type-overwrite.md)
 
-For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-august-2023-feature-summary/).
+
+For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/).
 
 
 ### Power BI monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post.
 
-> [!VIDEO https://www.youtube.com/embed/oVT0JrOLwS8]
+> [!VIDEO https://www.youtube.com/embed/HiWiXyZHRsE]
 
 > [!NOTE]
 > The video might use earlier versions of Power BI Desktop or the Power BI service.
+
+
 
 ## More videos
 

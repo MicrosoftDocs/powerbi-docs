@@ -1,41 +1,38 @@
 ---
-title: Compare Power BI dataset scale-out replicas
-description: Learn how to compare Power BI dataset replicas when using the Power BI dataset scale-out feature
+title: Compare Power BI semantic model scale-out replicas
+description: Learn how to compare Power BI semantic model replicas when using the Power BI semantic model scale-out feature
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 07/25/2023
+ms.date: 11/21/2023
 LocalizationGroup: Premium
 ---
 
-# Compare dataset scale-out replicas
+# Compare semantic model scale-out replicas
 
-> [!IMPORTANT]
-> Dataset scale-out is currently in **preview**.
+This article provides a few Visual Studio app examples for comparing semantic model properties when Power BI semantic model scale-out is enabled.
 
-This article provides a few Visual Studio app examples for comparing dataset properties when Power BI dataset scale-out is enabled.
-
-The `syncStatus` REST API shows if the read-write dataset and read-only replicas are in sync. You can also use the Tabular Object Model (TOM) to build a custom application that connects to both datasets and compares timestamps, metadata, and query results between them.
+The `syncStatus` REST API shows if the read-write semantic model and read-only replicas are in sync. You can also use the Tabular Object Model (TOM) to build a custom application that connects to both semantic models and compares timestamps, metadata, and query results between them.
 
 ## App 1 - Check the database object properties
 
-Use the code below to build an app that checks the [LastUpdate](/analysis-services/assl/properties/lastupdate-element-assl), [LastProcessed](/analysis-services/assl/properties/lastprocessed-element-assl) and [LastSchemaUpdate](/analysis-services/assl/properties/lastschemaupdate-element-assl) properties of your datasets. Before the app performs the checks, it needs to call the `Refresh()` method, to get the replica's metadata.
+Use the code below to build an app that checks the [LastUpdate](/analysis-services/assl/properties/lastupdate-element-assl), [LastProcessed](/analysis-services/assl/properties/lastprocessed-element-assl) and [LastSchemaUpdate](/analysis-services/assl/properties/lastschemaupdate-element-assl) properties of your semantic models. Before the app performs the checks, it needs to call the `Refresh()` method, to get the replica's metadata.
 
-Replace `<WorkspaceUrl>` with your workspace's URL, and `<DatasetName>` with your dataset's name.
+Replace `<WorkspaceUrl>` with your workspace's URL, and `<Semantic modelName>` with your semantic model's name.
 
 ```typescript
 string workspaceUrl = "<WorkspaceUrl>";  // Replace <WorkspaceUrl> with the URL of your workspace
-string datasetName = "<DatasetName>";  // Replace <DatasetName> with the name of your dataset 
+string datasetName = "<Semantic modelName>";  // Replace <Semantic modelName> with the name of your semantic model 
 using (var workspace_readwrite = new Microsoft.AnalysisServices.Tabular.Server()) 
 using (var workspace_readonly = new Microsoft.AnalysisServices.Tabular.Server()) 
 {
     workspace_readwrite.Connect(workspaceUrl + "?readwrite"); 
     workspace_readonly.Connect(workspaceUrl + "?readonly"); 
-    var datasetRW = workspace_readwrite.Databases.FindByName(datasetName); 
-    var datasetRO = workspace_readonly.Databases.FindByName(datasetName); 
+    var datasetRW = workspace_readwrite.Databases.FindByName(semantic modelName); 
+    var datasetRO = workspace_readonly.Databases.FindByName(semantic modelName); 
 
     if (datasetRW == null || datasetRO == null) 
     { 
@@ -51,13 +48,13 @@ Console.WriteLine("Test completed. Press any key to exit.");
 Console.Read(); 
 ```
 
-## App 2 - Compare the dataset's metadata
+## App 2 - Compare the semantic model's metadata
 
-Use the code below to compare the metadata of the primary read-write dataset with the metadata of a read-only replica. Replace `<WorkspaceUrl>` with your workspace's URL, and `<DatasetName>` with your dataset's name.
+Use the code below to compare the metadata of the primary read-write semantic model with the metadata of a read-only replica. Replace `<WorkspaceUrl>` with your workspace's URL, and `<DatasetName>` with your semantic model's name.
 
 ```typescript
 string workspaceUrl = "<WorkspaceUrl>";  // Replace <WorkspaceUrl> with the URL of your workspace 
-string datasetName = "<DatasetName>";  // Replace <DatasetName> with the name of your dataset 
+string datasetName = "<DatasetName>";  // Replace <DatasetName> with the name of your semantic model 
 using (var workspace_readwrite = new Microsoft.AnalysisServices.Tabular.Server()) 
 using (var workspace_readonly = new Microsoft.AnalysisServices.Tabular.Server()) 
 { 
@@ -87,13 +84,13 @@ Console.WriteLine("Test completed. Press any key to exit.");
 Console.Read(); 
 ```
 
-## App 3 - Query the dataset data
+## App 3 - Query the semantic model data
 
-Use `ADOMD.NET` to query the data in the replicas. Replace `<WorkspaceUrl>` with your workspace's URL, and `<DatasetName>` with your dataset's name.
+Use `ADOMD.NET` to query the data in the replicas. Replace `<WorkspaceUrl>` with your workspace's URL, and `<DatasetName>` with your semantic model's name.
 
 ```typescript
 string workspaceUrl = "<WorkspaceUrl>";  // Replace WorkspaceUrl with the URL of your workspace 
-string datasetName = "<DatasetName>";  // Replace DatasetName with the name of your dataset 
+string datasetName = "<DatasetName>";  // Replace DatasetName with the name of your semantic model 
 string daxQuery = "Evaluate SUMMARIZECOLUMNS(RefreshTimeTable[Time])"; 
 using (var connectionRW = new Microsoft.AnalysisServices.AdomdClient.AdomdConnection()) 
 using (var connectionRO = new Microsoft.AnalysisServices.AdomdClient.AdomdConnection()) 
@@ -138,14 +135,10 @@ Console.Read();
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Power BI dataset scale-out](service-premium-scale-out.md)
+* [Power BI semantic model scale-out](service-premium-scale-out.md)
 
-> [!div class="nextstepaction"]
-> [Configure dataset scale-out](service-premium-scale-out-configure.md)
+* [Configure semantic model scale-out](service-premium-scale-out-configure.md)
 
-> [!div class="nextstepaction"]
-> [Tutorial: Test dataset scale-out](service-premium-scale-out-test.md)
+* [Tutorial: Test semantic model scale-out](service-premium-scale-out-test.md)
 
-> [!div class="nextstepaction"]
-> [Synchronize scale-out replicas](service-premium-scale-out-sync-replica.md)
+* [Synchronize scale-out replicas](service-premium-scale-out-sync-replica.md)

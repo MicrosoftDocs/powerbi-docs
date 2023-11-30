@@ -1,15 +1,15 @@
 ---
 title: View Power BI files in OneDrive and SharePoint
 description: Learn how to view Power BI Desktop files in SharePoint document libraries and OneDrive for Business.
-author: LukaszPawlowski-MS
-ms.author: lukaszp
+author: ajburnle
+ms.author: ajburnle
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: View Power BI file in SharePoint and OneDrive
 ms.topic: how-to
 ms.custom: 
-ms.date: 05/08/2023
-
+ms.date: 10/11/2023
 LocalizationGroup: Share your work
 ---
 # View Power BI files in OneDrive and SharePoint
@@ -17,16 +17,13 @@ LocalizationGroup: Share your work
 You can quickly view Power BI files in OneDrive and SharePoint without needing to install Power BI Desktop or download the file locally. Viewing Power BI files in your browser enables collaboration and a streamlined workflow before publishing through the Power BI Service.
 
 > [!NOTE]
-> This is prerelease documentation and some capabilities may not be available in your tenant. 
+> This is public preview documentation and some capabilities may not be available in your tenant. 
 
 ## Enable viewing Power BI files in OneDrive and SharePoint
 
-> [!NOTE]
-> Viewing Power BI files in OneDrive and SharePoint is currently **disabled by default**. Work with your Power BI Admin to enable this capability. The capability will be turned **on by default** the first week of October, 2023 unless action is taken by your admin. 
+Viewing Power BI files in OneDrive for Business and SharePoint is enabled **by default**. 
 
-Currently, admins must [**enable** the capability in the Admin portal](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-items-saved-in-onedrive-and-sharepoint-preview).
-
-If you **do not** want to have the capability to view files in OneDrive and SharePoint on by default in your tenant starting the first week of October, your admin will need to [**disable** the capability in the Admin portal](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview---update) by Septemeber 29th. .
+If you **do not** want this capability on in your tenant, your admin will need to [**disable** the capability in the Admin portal](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview).
 
 If the capability isn't enabled in your tenant, you can't view a Power BI report in your browser. Instead, you're directed to download the file to your device. You can then open the file in Power BI Desktop. For the optimal viewing experience, we encourage admins to enable the functionality. 
 
@@ -140,13 +137,13 @@ To view a report in OneDrive for Business or SharePoint Online, you must:
 -	These capabilities aren't available in a sovereign cloud tenant.
 -	Power BI files can be viewed with a size limit up to 1 GB.
 -	When you open the Preview experience, you're required to authenticate before you can view the file. 
--	Row-level security isn't supported at this time. 
+-	Reports with row-level security are not currently supported. You need to download and view these files in Power BI Desktop. 
 -	The ability to view files in Microsoft Teams isn't currently supported.
 -	B2B users and anonymous users can't view Power BI files in the browser. They're directed to download the file to their device and view it in Power BI Desktop.
 -	If the capability is turned off for your organization, the OneDrive and SharePoint file isn't copied into the Power BI service.
--	The reports and datasets created through this OneDrive and SharePoint experience are stored in special, system-generated workspaces hosted on shared capacity. Users aren't meant to access these workspaces outside of the OneDrive and SharePoint experience. 
+-	The reports and semantic models created through this OneDrive and SharePoint experience are stored in special, system-generated workspaces hosted on shared capacity. Users aren't meant to access these workspaces outside of the OneDrive and SharePoint experience. 
 
-## Dataset mode
+## Semantic model mode
 
 To view a Power BI file in OneDrive or SharePoint, the data must be in **import** mode. Files with other modes prompt you to download the file to open locally in Power BI Desktop.
 
@@ -194,3 +191,12 @@ Admins can see the workspaces created in the Power BI service on the **Workspace
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-workspace.png" alt-text="Screenshot of Power BI admin workspace creation naming." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-workspace.png":::
 
 Admins can't modify workspaces (delete, modify access) from the Power BI Service. 
+
+When you open a Power BI report in OneDrive or SharePoint the data is stored in your Power BI [home tenant region](../admin/service-admin-where-is-my-tenant-located.md) until the file is deleted or unopened for a few days. 
+
+### Collaborating on reports 
+
+When collaborating on reports with other coauthors, the best practice is to store files in a **SharePoint** document library where all coauthors have access. This allows all collaborators to open the report in Power BI Desktop directly from SharePoint, make edits, and easily save changes to the file in SharePoint. 
+
+When files are stored in an individual’s **OneDrive** library other coauthors won’t be able to save changes to the OneDrive location unless they have edit access to the folder of the OneDrive file. If sharing a report with a colleague is mainly for viewing purposes either OneDrive or SharePoint is a viable option. Once the ability to **Open in App** on a shared link is released, users will be able to make and save edits to reports stored in either OneDrive or SharePoint through taking the open in app action.  
+

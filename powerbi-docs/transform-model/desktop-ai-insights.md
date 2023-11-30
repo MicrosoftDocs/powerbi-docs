@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: build-2023, build-2023-dataai
 ms.topic: how-to
-ms.date: 08/10/2023
+ms.date: 11/10/2023
 LocalizationGroup: Connect to data
 ---
 # Use AI Insights in Power BI Desktop
@@ -97,7 +97,7 @@ The first time you use AI Insights on a new data source, Power BI Desktop prompt
 :::image type="content" source="media/desktop-ai-insights/ai-insights-05.png" alt-text="Screenshot of a warning that states Information is required about data privacy.":::
 
 > [!NOTE]
-> Refreshes of the dataset in Power BI will only work for data sources where the privacy level is set to public or organizational.
+> Refreshes of the semantic model in Power BI will only work for data sources where the privacy level is set to public or organizational.
 
 After you invoke the function, the result is added as a new column to the table. The transformation is also added as an applied step in the query.
 
@@ -107,7 +107,7 @@ In the cases of image tagging and key phrase extraction, the results can return 
 
 While editing in Power Query and performing refreshes in Power BI Desktop, Text Analytics and Vision use the Premium capacity that was selected in Power Query Editor. After Text Analytics or Vision publishes the report, they use the Premium capacity of the workspace into which it was published.
 
-Reports with applied Text Analytics and Vision functions should be published to a workspace that is on a Premium capacity, otherwise refreshing the dataset fails.
+Reports with applied Text Analytics and Vision functions should be published to a workspace that is on a Premium capacity, otherwise refreshing the semantic model fails.
 
 ### Manage impact on a Premium capacity
 
@@ -119,7 +119,7 @@ Report authors can select the Premium capacity on which to run AI Insights. By d
 
 #### Monitor with the Capacity Metrics app
 
-Premium capacity owners can monitor the impact of Text Analytics and Vision functions on a capacity with the [Power BI Premium Capacity Metrics app](../enterprise/service-premium-metrics-app.md). The app provides detailed metrics on the health of the AI workloads within your capacity. The top chart shows the memory consumption by AI workloads. Premium capacity admins can set the memory limit for the AI workload per capacity. When memory usage reaches the memory limit, you can consider increasing the memory limit or moving some workspaces to a different capacity.
+Premium capacity owners can monitor the impact of Text Analytics and Vision functions on a capacity with the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app). The app provides detailed metrics on the health of the AI workloads within your capacity. The top chart shows the memory consumption by AI workloads. Premium capacity admins can set the memory limit for the AI workload per capacity. When memory usage reaches the memory limit, you can consider increasing the memory limit or moving some workspaces to a different capacity.
 
 ### Compare Power Query and Power Query Online
 
@@ -210,5 +210,4 @@ This article provided an overview of integrating Machine Learning into Power BI 
 * [Tutorial: Using Cognitive Services in Power BI](../connect-data/service-tutorial-use-cognitive-services.md)
 * [Cognitive Services in Power BI](./dataflows/dataflows-machine-learning-integration.md)
 * [Azure Machine Learning integration in Power BI](./dataflows/dataflows-machine-learning-integration.md)
-* [Monitoring Premium capacities with the app](../enterprise/service-premium-metrics-app.md)
 * [AI metrics in the Premium capacity metrics app](https://powerbi.microsoft.com/blog/ai-metrics-now-available-in-power-bi-premium-capacity-metrics-app/)

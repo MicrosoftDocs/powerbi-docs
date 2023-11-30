@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 07/24/2023
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 # Dataflows considerations and limitations
@@ -53,7 +53,7 @@ More about supported dataflows REST APIs can be found in the [REST API reference
 
 * Exporting and Importing a dataflow gives that dataflow a new ID.
 
-* Importing dataflows that contain linked tables doesn't fix the existing references within the dataflow (these queries should be fixed manually before importing the dataflow).
+* Importing dataflows that contain linked tables doesn't update the existing references within the dataflow (these queries should be updated manually before importing the dataflow).
 
 * When you deploy a dataflow, you can use the conflict handlers *GenerateUniqueName* and *Abort* parameters to either abort the operation when it already exists or instruct the API to automatically create a unique name instead. Dataflows can be overwritten with the *CreateOrOverwrite* parameter, if they have initially been created using the import API.
 
@@ -116,44 +116,15 @@ Dataflows that exist in Premium have the following considerations and limitation
 
 * The approximate number of containers can be found out by dividing the total memory allocated to the workload by the amount of memory allocated to a container.
 
-**Unsupported connectors:**
-
-Some connectors aren't supported for dataflows and datamarts in Premium workspaces. When using an unsupported connector, you may receive the following error: *Expression.Error: The import "<"connector name">"* matches no exports. Did you miss a module reference?
-
-The following connectors aren't supported for dataflows and datamarts in Premium workspaces:
-
-* Linkar
-* Actian
-* AmazonAthena
-* AmazonOpenSearchService
-* BIConnector
-* DataVirtuality
-* DenodoForPowerBI
-* Exasol
-* Foundry
-* Indexima
-* IRIS
-* JethroODBC
-* Kyligence
-* MariaDB
-* MarkLogicODBC
-* OpenSearchProject
-* QubolePresto
-* SingleStoreODBC
-* StarburstPresto
-* TibcoTdv
-
-The use of the previous list of connectors with dataflows or datamarts is only supported workspaces that aren't Premium.
 
 
+## Dataflow usage in semantic models
 
-## Dataflow usage in datasets
-
-* When creating a dataset in Power BI Desktop, and then publishing it to the Power BI service, ensure the credentials used in Power BI Desktop for the dataflows data source are the same credentials used when the dataset is published to the service.
-  1. Failing to ensure those credentials are the same results in a *Key not found* error upon dataset refresh
+* When creating a semantic model in Power BI Desktop, and then publishing it to the Power BI service, ensure the credentials used in Power BI Desktop for the dataflows data source are the same credentials used when the semantic model is published to the service.
+  1. Failing to ensure those credentials are the same results in a *Key not found* error upon semantic model refresh
 
 > [!NOTE]
-> If the dataflow structure is changed, such as a new or renamed column, the dataset will not show the change, and the change may also cause a data refresh to fail in the Power BI service for the dataset, until refreshed in Power BI Desktop and re-published.
+> If the dataflow structure is changed, such as a new or renamed column, the semantic model will not show the change, and the change may also cause a data refresh to fail in the Power BI service for the semantic model, until refreshed in Power BI Desktop and re-published.
 
 ## Dataflows and named connections
 

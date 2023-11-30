@@ -28,7 +28,7 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 * A **Power BI Pro** account. [Sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-* An R engine. You can download one free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
+* An R engine. You can download one free from many locations, including the [Microsoft R Open download page](https://www.microsoft.com/download/details.aspx?id=51205) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
 * [Power BI Desktop](../../fundamentals/desktop-get-the-desktop.md).
 * [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later for Windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
 
@@ -83,7 +83,7 @@ In this tutorial, you learn how to:
       plot(dataset)
       ```
 
-      This command creates a scatter chart using the values in the dataset as input.
+      This command creates a scatter chart using the values in the semantic model as input.
 
 8. Select the **Run script** icon to see the result.
 
@@ -96,8 +96,8 @@ The R-script can be modified to create other types of visuals. Let's create a li
 1. Paste the following R code into the **R script editor**:
 
    ```r
-   x <- dataset[,1] # get the first column from dataset
-   y <- dataset[,2] # get the second column from dataset
+   x <- dataset[,1] # get the first column from semantic model
+   y <- dataset[,2] # get the second column from semantic model
 
    columnNames = colnames(dataset) # get column names
 

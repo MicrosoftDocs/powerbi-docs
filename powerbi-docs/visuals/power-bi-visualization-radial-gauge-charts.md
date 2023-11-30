@@ -121,7 +121,7 @@ You can modify the gauge chart to show a target value. This action creates a _ne
 
 Power BI uses the **Value** field on the **Visualizations** > **Build** visual pane to automatically set the minimum and maximum values for the gauge. You can rely on the calculations from Power BI or set your own values.
 
-Let's see how you can set the maximum value to the highest gross sales number in your dataset.
+Let's see how you can set the maximum value to the highest gross sales number in your semantic model.
 
 1. On the **Data** pane, select and drag the **Gross Sales** field to the **Maximum value** option on the **Visualizations** pane.
 

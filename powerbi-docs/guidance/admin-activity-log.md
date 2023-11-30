@@ -1,8 +1,8 @@
 ---
 title: Access the Power BI activity log
 description: Guidance and sample PowerShell script code to work with the Power BI activity log.
-author: data-goblin
-ms.author: v-kurtbuhler
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -12,11 +12,11 @@ ms.date: 04/25/2022
 
 # Access the Power BI activity log
 
-This article targets Power BI administrators who need to access and analyze data sourced from the [Power BI activity log](/power-bi/admin/service-admin-auditing). It focuses on the programmatic retrieval of Power BI activities by using the [Get-PowerBIActivityEvent](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent) cmdlet from the Power BI Management module. Up to 30 days of history is available. This cmdlet uses the [Get Activity Events](/rest/api/power-bi/admin/get-activity-events) Power BI REST API operation, which is an admin API. PowerShell cmdlets add a layer of abstraction on top of the underlying APIs. Therefore, the PowerShell cmdlet simplifies access to the Power BI activity log.
+This article targets Power BI administrators who need to access and analyze data sourced from the [Power BI activity log](/power-bi/enterprise/service-admin-auditing). It focuses on the programmatic retrieval of Power BI activities by using the [Get-PowerBIActivityEvent](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent) cmdlet from the Power BI Management module. Up to 30 days of history is available. This cmdlet uses the [Get Activity Events](/rest/api/power-bi/admin/get-activity-events) Power BI REST API operation, which is an admin API. PowerShell cmdlets add a layer of abstraction on top of the underlying APIs. Therefore, the PowerShell cmdlet simplifies access to the Power BI activity log.
 
 There are other manual and programmatic ways to retrieve Power BI activities. For more information, see the [Access user activity data](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data).
 
-Analyzing the Power BI activity log is crucial for governance, compliance, and to track [adoption](powerbi-adoption-roadmap-overview.md) efforts. For more information about the Power BI activity log, see [Track user activities in Power BI](/power-bi/admin/service-admin-auditing).
+Analyzing the Power BI activity log is crucial for governance, compliance, and to track [adoption](fabric-adoption-roadmap.md) efforts. For more information about the Power BI activity log, see [Track user activities in Power BI](/power-bi/enterprise/service-admin-auditing).
 
 > [!TIP]
 > We recommend that you fully review the [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md) article. This article covers planning, key decisions, prerequisites, and key solution development activities to consider when building an end-to-end auditing solution.
@@ -185,7 +185,7 @@ Sometimes you might want to investigate one specific type of activity for a seri
 
 The script declares two variables:
 
-- `$ActivityType`: The [operation name](https://aka.ms/PBIActivityLogOperations) for the activity that you're investigating.
+- `$ActivityType`: The [operation name](/power-bi/enterprise/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) for the activity that you're investigating.
 - `$NbrOfDaysToCheck`: How many days you're interested in checking. It performs a loop working backward from the current day. The maximum value allowed is 30 days (because the earliest date that you can retrieve is 30 days before the current day).
 
 ```powershell
@@ -213,7 +213,7 @@ For($LoopNbr=0; $LoopNbr -le $NbrOfDaysToCheck; $LoopNbr++)
 ```
 
 > [!TIP]
-> You can use this looping technique to check any of the [operations](/power-bi/admin/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) recorded in the activity log.
+> You can use this looping technique to check any of the [operations](/power-bi/enterprise/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) recorded in the activity log.
 
 ### Sample response 3
 
@@ -323,7 +323,7 @@ Sometimes you might want to investigate several related activities. This example
 The script declares the following variables:
 
 - `$NbrOfDaysToCheck`: How many days you're interested in checking. It performs a loop that works backward from the current day. The maximum value allowed is 30 days (because the earliest date that you can retrieve is 30 days before the current day).
-- `$Activity1`: The [operation name](https://aka.ms/PBIActivityLogOperations) for the first activity that you're investigating. In this example, it's searching for Power BI app creation activities.
+- `$Activity1`: The [operation name](/power-bi/enterprise/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) for the first activity that you're investigating. In this example, it's searching for Power BI app creation activities.
 - `$Activity2`: The second operation name. In this example, it's searching for Power BI app update activities.
 - `$Activity3`: The third operation name. In this example, it's searching for Power BI app installation activities.
 
@@ -629,7 +629,7 @@ There are several advantages to using the [Get-PowerBIActivityEvent](/powershell
 
 - The cmdlet allows you to request one day of activity each time you make a call by using the cmdlet. Whereas when you communicate with the API directly, you can only request one hour per API request.
 - The cmdlet handles continuation tokens for you. If you use the API directly, you need to check the continuation token to determine whether there are any more results to come. Some APIs need to use pagination and continuation tokens for performance reasons when they return a large amount of data. They return the first set of records, then with a continuation token you can make a subsequent API call to retrieve the next set of records. You continue calling the API until a continuation token isn't returned. Using the continuation token is a way to consolidate multiple API requests so that you can consolidate a logical set of results. For an example of using a continuation token, see [Activity Events REST API](/rest/api/power-bi/admin/get-activity-events#get-the-next-set-of-audit-activity-events-by-sending-the-continuation-token-to-the-api-example).
-- The cmdlet handles Azure Active Directory (Azure AD) access token expirations for you. After you've authenticated, your access token expires after one hour (by default). In this case, the cmdlet automatically requests a refresh token for you. If you communicate with the API directly, you need to request a refresh token.
+- The cmdlet handles Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) access token expirations for you. After you've authenticated, your access token expires after one hour (by default). In this case, the cmdlet automatically requests a refresh token for you. If you communicate with the API directly, you need to request a refresh token.
 
 For more information, see [Choose APIs or PowerShell cmdlets](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#choose-apis-or-powershell-cmdlets).
 
@@ -640,8 +640,8 @@ For more information, see [Choose APIs or PowerShell cmdlets](powerbi-implementa
 
 For more information related to this article, check out the following resources:
 
-- [Track user activities in Power BI](/power-bi/admin/service-admin-auditing)
+- [Track user activities in Power BI](/power-bi/enterprise/service-admin-auditing)
 - Power BI implementation planning: [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md)
-- Power BI adoption roadmap: [Auditing and monitoring](powerbi-adoption-roadmap-system-oversight.md#auditing-and-monitoring)
+- Fabric adoption roadmap: [Auditing and monitoring](fabric-adoption-roadmap-system-oversight.md#auditing-and-monitoring)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

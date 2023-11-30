@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 08/30/2023
+ms.date: 11/10/2023
 ---
 
 # Change log for Power BI Desktop
@@ -16,7 +16,44 @@ This change log is for Power BI Desktop and lists new items along with bug fixes
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+
+## October 2023 QFE 1
+
+*Version: 2.122.1066.0, Released: November 01, 2023*
+
+Bug fixes/improvements:
  
+
+* 32-bit sign-in fix. Customers can now sign in to 32-bit Power BI Desktop.
+* CDM connector fix.
+* Telemetry fix.
+* Print PDF fix. Customers can now print and open .pdf files.
+* Semantic model fix. It's now confirmed whether a report object exists before showing Power BI semantic model *Unable to connect* dialog.
+* The freshness requirement for collecting AS logs and traces has been removed. 
+
+
+ 
+## September 2023 QFE 2
+
+*Version: 2.121.903.0, Released: September 25, 2023*
+
+Bug fixes/improvements:
+
+* Formula bar fix. An error message now appears when a user types an expression in the formula bar that results in an error from AS and reverting their expression.
+* Fix to data exporting. Customers exporting data from a visual are no longer restricted to 300 rows.
+ 
+
+
+
+## September 2023 QFE 1
+
+*Version: 2.121.762.0, Released: September 18, 2023*
+ 
+Bug fixes/improvements:
+
+* Fix to On Object. Now customers can select all sections on Pie/Donut chart.
+ 
+
 
 ## August 2023 QFE 1
 
@@ -143,7 +180,7 @@ Bug fixes/improvements:
 *Version:2.114.803.0, Released: February 21, 2023*
 
 Bug fixes/improvements:
-* Fix for Proxy models regression. Customers can now convert PBI Datasets and AS Live models with format strings to Direct Query and refresh existing models.
+* Fix for Proxy models regression. Customers can now convert PBI semantic models and AS Live models with format strings to Direct Query and refresh existing models.
 * Fix for creating Power Apps and Power Automate visuals.
 * Fix for windows and dialogs rendering in some multimonitor configurations.
 * Filter pane regression fix. Filter card input will now show blank values as default when advanced filtering is selected.
@@ -230,7 +267,7 @@ Bug fixes/improvements:
 *Version: 2.107.841.0, Released: July 21, 2022*
 
 Bug fixes/improvements:
-- Fix for SAP BW: now customers will be able to retrieve a full dataset when querying SAP BW and using paging operations (Table.skip, Table.FirstN etc.) even if the data exceeds the page size.
+- Fix for SAP BW: now customers will be able to retrieve a full semantic model when querying SAP BW and using paging operations (Table.skip, Table.FirstN etc.) even if the data exceeds the page size.
 - Fix for SAP HANA: now when creating new connections or refreshing data, a display name will be shown instead of a technical column name in the fields well.
 
 
@@ -291,7 +328,7 @@ Bug fixes/improvements:
 - Fix for the conditional formatting regression: conditional formatting for action > page navigation will work. 
 - Fix for fields well description: a multiline field's tooltip won't be cut off and will be fully visible.
 - Mashup engine fix: headers will be requested just once when accessing headers on paged HTTP values.
-- Fix for a DirectQuery connection to a dataset in workspace with a '/' in the name. 
+- Fix for a DirectQuery connection to a semantic model in workspace with a '/' in the name. 
 - Fix for perspective selection in the proxy models navigator.
 
 ## December 2021 QFE 3
@@ -427,7 +464,7 @@ Bug fixes/improvements:
 Bug fixes/improvements:
 - Fix for Adobe Analytics Connector V1 endpoint token not renewed issue.
 - Fix for a frown error that could occur in the model view while loading older PBIX files: now no frown dialog will be shown. 
-- Fix for a model view bug: now users can't create relationships between DirectQuery tables from the same Power BI dataset or Azure Analysis Services instance as this scenario isn't supported.
+- Fix for a model view bug: now users can't create relationships between DirectQuery tables from the same Power BI semantic model or Azure Analysis Services instance as this scenario isn't supported.
 
 ## April 2021 QFE 1
 

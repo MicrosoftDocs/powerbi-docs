@@ -2,12 +2,12 @@
 title: Create a Q&A visual in a report
 description: Learn how to create and format a Q&A visual in a report in Power BI Desktop or the Power BI service.
 author: maggiesMSFT
-ms.author: maggies
+ms.author: mihart
 ms.reviewer: rien
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 07/27/2023
+ms.date: 09/28/2023
 ms.custom: sample-salesandmarketingsample
 ---
 
@@ -15,13 +15,13 @@ ms.custom: sample-salesandmarketingsample
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-The Q&A visual allows users to ask natural language questions and get answers in the form of a visual. *Consumers* can use the Q&A functionality to quickly get answers to their data. *Designers* can use the Q&A features to quickly create visuals. If you're a report designer, this article is for you. You can double-click anywhere on a report and use natural language to get started.
+The Q&A visual allows users to ask natural language questions and get answers in the form of a visual. Business users can use the Q&A functionality to quickly get answers from their report data. *Designers* can use the Q&A features to quickly create visuals. If you're a report designer, this article is for you. You can double-click anywhere on a report and use natural language to get started.
 
-In this article, you create, format, and customize a Q&A visual. This visual type supports themes and other default formatting options available in Power BI. After you create the visual, it behaves like any other Power BI visual and supports cross-filtering, cross-highlighting, and bookmarks. 
+In this article, you create, format, and customize a Q&A visual. This visual type supports themes and other default formatting options available in Power BI. After you create the visual and save the report, the Q&A visual is available to your report users. Report users use the Q&A visual to ask questions about the data in the report, and see the answers to those questions in the form of charts and graphs. The one Q&A visual can be used over and over again. If the end user has edit permissions, they can save the charts and graphs as standalone visuals in the report. If the end user doesn't have edit permissions, they can use the Q&A visual to explore the report data but can't save the answers to their questions (in the form of charts and graphs) to the report. The Q&A visual behaves like any other Power BI visual and supports cross-filtering, cross-highlighting, and bookmarks. 
 
 The following demonstration video shows how to ask questions and use suggestions with the Q&A visual in Power BI. When Power BI successfully interprets the _question_, it displays the corresponding data as the _answer_. When you select a column or data point in the Q&A visual, Power BI cross-highlights and cross-filters the related data in other visuals in the report.
 
-![Demonstration that shows how to use the Q&A visual in Power BI.](../natural-language/media/qna-visual-walkthrough.gif)
+![Demonstration that shows how to use the Q&A visual in Power BI.](media/power-bi-visualization-q-and-a/qna-visual-walkthrough.gif)
 
 If you're looking for more background about Q&A in Power BI, see [Introduction to Power BI Q&A](../natural-language/q-and-a-intro.md).
 
@@ -71,7 +71,7 @@ This tutorial uses the Sales and Marketing Sample in the Power BI service.
 ---
 
 > [!NOTE]
-> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+> If you want to share your report with a colleague, you both need to have individual Power BI paid licenses. If both parties don't have individual Power BI paid licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Create a Q&A visual with a suggested question
 
@@ -103,7 +103,7 @@ In this exercise, we select a suggested question from Power BI to create a custo
 
 In the previous example, you selected a suggested question from Power BI to create a custom Q&A visual. In this exercise, you enter your own question. As you enter your question text, Power BI assists you with autocompletion by showing suggestions and providing text feedback.
 
-If you're unsure what question to ask or what text to use, select the **Show all suggestions** link on the report canvas to see all the suggestions from Power BI. Another approach is to scan the data fields in the **Data** pane. You can get ideas for specific topical questions to ask and unique terms for the dataset to use in your query.
+If you're unsure what question to ask or what text to use, select the **Show all suggestions** link on the report canvas to see all the suggestions from Power BI. Another approach is to scan the data fields in the **Data** pane. You can get ideas for specific topical questions to ask and unique terms for the semantic model to use in your query.
 
 The following image shows the report canvas with all Power BI suggestions visible and some of the **Data** pane fields expanded. After you select the link to see all suggestions from Power BI, the link option changes to show _fewer_ suggestions.
 
@@ -119,9 +119,9 @@ The following image shows the report canvas with all Power BI suggestions visibl
 
 1. Enter more text for the current question. 
 
-   As you enter more text for the question, Power BI lets you know when it doesn't understand the question and tries to help. In this example, Power BI suggests a different way to word the question by using terminology from the dataset. The suggested terms are underlined in blue.
+   As you enter more text for the question, Power BI lets you know when it doesn't understand the question and tries to help. In this example, Power BI suggests a different way to word the question by using terminology from the semantic model. The suggested terms are underlined in blue.
 
-   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-define.png" alt-text="Screenshot of the Q&A question field with suggested terms from the dataset underlined in blue and corresponding suggested questions from Power BI." border="false":::
+   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-define.png" alt-text="Screenshot of the Q&A question field with suggested terms from the semantic model underlined in blue and corresponding suggested questions from Power BI." border="false":::
 
    With Power BI's help, we're able to ask a question with all recognizable terms. Power BI displays the results as a line chart.
 
@@ -143,7 +143,7 @@ The Q&A visual can be customized by using options on the **Visualizations** > **
 
 ### Apply a theme
 
-When you select a theme, the theme is applied to the entire report page. There are many themes to choose from. Explore the themes and test them on your report to find a presentation that works well for your dataset and users. 
+When you select a theme, the theme is applied to the entire report page. There are many themes to choose from. Explore the themes and test them on your report to find a presentation that works well for your semantic model and users. 
 
 1. On the Power BI menu bar, select **View**, and then select the **Themes** drop-down menu.
 
@@ -203,7 +203,7 @@ To access advanced features for your Q&A visual, select the gear icon :::image t
 
 :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-qna-tooling.png" alt-text="Screenshot that shows how to open the Q&A Tooling pane." border="false":::
 
-Use the **Tooling** pane to teach Q&A terms it doesn't recognize, how to manage those terms, and how to manage the suggested questions for this dataset and report. In the **Tooling** pane, you can also review questions users have asked in this Q&A visual and see questions flagged by users. For more information, see [Intro to Q&A tooling to train Power BI Q&A](../natural-language/q-and-a-tooling-intro.md).
+Use the **Tooling** pane to teach Q&A terms it doesn't recognize, how to manage those terms, and how to manage the suggested questions for this semantic model and report. In the **Tooling** pane, you can also review questions users have asked in this Q&A visual and see questions flagged by users. For more information, see [Intro to Q&A tooling to train Power BI Q&A](../natural-language/q-and-a-tooling-intro.md).
 
 :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-qna-tooling-pane.png" alt-text="Screenshot that shows the Q&A Tooling pane.":::
 
@@ -213,7 +213,7 @@ Keep in mind the following points when creating Q&A visuals in Power BI.
 
 - If you encounter an error when creating a Q&A visual, check the [Q&A limitations](../natural-language/q-and-a-limitations.md) article. Confirm your data source configuration is supported.  
 
-- The Q&A visual integrates with Microsoft Office and Bing to attempt to match unrecognized common words with fields in your dataset.  
+- The Q&A visual integrates with Microsoft Office and Bing to attempt to match unrecognized common words with fields in your semantic model.  
 
 ## Next steps
 

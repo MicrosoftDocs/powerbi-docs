@@ -15,7 +15,7 @@ LocalizationGroup: Samples
 > [!NOTE]
 > For an updated version of this sample, see [Employee Hiring and History: Take a tour](sample-employee-hiring-history.md).
 
-The Human Resources built-in sample contains a dashboard, report, and dataset for a human resources department. In this sample, the human resources department has the same reporting model across different companies, even when they differ by industry or size. This sample looks at new hires, active employees, and employees who have left. It strives to uncover any trends in the hiring strategy. The main objectives are to understand:
+The Human Resources built-in sample contains a dashboard, report, and semantic model for a human resources department. In this sample, the human resources department has the same reporting model across different companies, even when they differ by industry or size. This sample looks at new hires, active employees, and employees who have left. It strives to uncover any trends in the hiring strategy. The main objectives are to understand:
 
 - Who you hire
 - Biases in your hiring strategy
@@ -35,7 +35,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the built-in sample in the Power BI service
 
@@ -45,7 +45,7 @@ You don't need a Power BI license to explore the samples in Power BI Desktop. Yo
 
 1. Select the sample. It opens in Reading mode.
 
-1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
+1. Power BI imports the built-in sample, adding a new dashboard, report, and semantic model to your current workspace.
 
    :::image type="content" source="media/sample-human-resources/hr-sample-entry.png" alt-text="Screenshot shows the Human Resources Sample dashboard link.":::
 
@@ -77,9 +77,9 @@ If you want to get and use the Excel file in the Power BI service, follow these 
 
 1. Select a workspace, such as **My workspace**, and choose **Export**.
 
-   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
+   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-semantic models.md#explore-excel-samples-in-excel).
 
-1. In the Power BI service, the exported data appears as a dataset in the selected workspace. Select **More options** (...) > **Auto-create report**.
+1. In the Power BI service, the exported data appears as a semantic model in the selected workspace. Select **More options** (...) > **Auto-create report**.
 
 1. Select **Save**, enter a name for your report, and then choose **Save**.
 
@@ -190,7 +190,7 @@ The last area to explore is bad hires. Bad hires are defined as employees who di
 
 No matter whether you downloaded the dashboard or created your own, you can use Q&A in the dashboard to discover other details in the data. Let's get more specific.
 
-In the [Q&A question box](power-bi-tutorial-q-and-a.md) in the dashboard, you can ask a question about your data by using natural language. Q&A recognizes the words you type and figures out where in your dataset to find the answer.
+In the [Q&A question box](power-bi-tutorial-q-and-a.md) in the dashboard, you can ask a question about your data by using natural language. Q&A recognizes the words you type and figures out where in your semantic model to find the answer.
 
 1. Select the Q&A question box. Even before you start typing, Q&A displays suggestions to help form your question.
 
