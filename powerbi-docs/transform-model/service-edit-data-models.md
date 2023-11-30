@@ -139,6 +139,16 @@ For example, you could change the data type for multiple columns by holding down
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-11.png" alt-text="Screenshot of setting properties." lightbox="media/service-edit-data-models/service-edit-data-models-11.png":::
 
+### Set your own date table
+To set a **date table**, select the table you want to use as a date table in the **Data** pane, then right-click the table and choose **Mark as date table > Mark as date table** in the menu that appears as shown in the following image.
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-34.png" alt-text="Screenshot of mark as date table entry from the Data pane." lightbox="media/service-edit-data-models/service-edit-data-models-34.png":::
+
+Next, specify the date column by selecting it from the dropdown menu within the **Mark as date table** dialog.
+
+:::image type="content" source="media/service-edit-data-models/service-edit-data-models-35.png" alt-text="Screenshot of the mark as date table dialog." lightbox="media/service-edit-data-models/service-edit-data-models-35.png":::
+
+Setting your own date table follows the same behavior as what exists in Power BI Desktop. Further details on column validation, scenarios for creating your own date table, and impact on date hierarchies can be found in the [date tables documentation](desktop-date-tables.md)
 
 ### Define row-level security roles and rules
 You can define [security roles](../enterprise/service-admin-rls.md) by taking the following steps:
@@ -253,12 +263,9 @@ To see which limitation is preventing you from opening your data model, hover ov
 
 ### Limitations
 There are still many functional gaps between the model view in Power BI desktop and service. Functionality not yet supported in the service includes:
-* Renaming and deleting tables that are not calculated tables
-* Renaming and deleting columns that are not calculated columns
 * Setting a table as a feature table
 * Configuring any feature table properties
 * Editing the sort by property for a column 
-* Creating and configuring a custom date table
 * Changing the storage mode of a table 
 * Changing to and from the data category ‘barcode’
 * Connecting to new data sources
