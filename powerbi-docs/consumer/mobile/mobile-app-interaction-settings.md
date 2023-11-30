@@ -22,7 +22,7 @@ The Power BI mobile app has a number of configurable "interaction" settings that
 | [Multi-select versus single select of data points on report visuals](#multi-select) |✔|✔|✔|✔|
 | [Docked versus dynamic report footer](#docked-report-footer) |✔|✔|||
 | [Button-initiated report refresh versus pull-to-refresh](#report-refresh) |✔||||
-| [Improve link opening](#improve-link-opening) ||✔||✔|
+| [Improve link opening](#improve-link-opening-ios) ||✔||✔|
 
 To get to the interaction settings, tap your profile picture to open the [side panel](./mobile-apps-home-page.md#header), choose **Settings**, and find the interaction settings in the **Preferences** section.
 
